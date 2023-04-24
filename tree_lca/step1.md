@@ -16,7 +16,7 @@ To solve this problem, we need to consider the following requirements:
 
 Consider the following binary tree:
 
-<pre>
+```txt
           _10_
         /      \
        5        9
@@ -24,7 +24,7 @@ Consider the following binary tree:
      12  3    18  20
         / \       /
        1   8     40
-</pre>
+```
 
 We can test our function with the following inputs and expected outputs:
 

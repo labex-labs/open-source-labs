@@ -14,7 +14,7 @@ Given a binary search tree and a node in it, find the in-order successor of that
 
 ## Example Usage
 
-<pre>
+```txt
           _5_
         /     \
        3       8
@@ -30,4 +30,4 @@ In: 4     Out: 5
 In: 5     Out: 6
 In: 8     Out: 9
 In: 15    Out: None
-</pre>
+```

@@ -24,7 +24,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * None -> Exception
 * < 1 -> Exception
 * 15 ->
@@ -45,7 +45,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
     '14',
     'FizzBuzz'
 ]
-</pre>
+```
 
 ## Algorithm
 

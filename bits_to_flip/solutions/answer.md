@@ -27,11 +27,11 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 - A or B is None -> Exception
 - General case
-<pre>
+```txt
     A = 11101
     B = 01111
     Result: 2
-<pre>
+```txt
 
 ## Algorithm
 

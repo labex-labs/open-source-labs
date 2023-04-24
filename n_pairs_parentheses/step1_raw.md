@@ -17,11 +17,11 @@ Problem: Find all valid combinations of n-pairs of parentheses.
 
 ## Example Usage
 
-<pre>
+```txt
 * None -> Exception
 * Negative -> Exception
 * 0 -> []
 * 1 -> ['()']
 * 2 -> ['(())', '()()']
 * 3 -> ['((()))', '(()())', '(())()', '()(())', '()()()']
-</pre>
+```

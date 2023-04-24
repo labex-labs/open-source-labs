@@ -31,7 +31,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - items or total weight is 0 -> 0
 - General case
 
-<pre>
+```txt
 total_weight = 8
 items
   v | w
@@ -46,7 +46,7 @@ items
   v | w
 b 4 | 2
 d 9 | 5 
-</pre>
+```
 
 ## Algorithm
 
@@ -54,7 +54,7 @@ We'll use bottom up dynamic programming to build a table.
 
 The solution for the top down approach is also provided below.
 
-<pre>
+```txt
 v = value
 w = weight
 
@@ -77,7 +77,7 @@ if j >= item[i].weight:
                   T[i - 1][j])
 else:
     T[i][j] = T[i - 1][j]
-</pre>
+```
 
 Complexity:
 

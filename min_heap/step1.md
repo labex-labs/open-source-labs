@@ -18,30 +18,30 @@ The implementation should meet the following requirements:
 
 Consider the following min heap:
 
-<pre>
+```txt
           _5_
         /     \
        20     15
       / \    /  \
      22  40 25
-</pre>
+```
 
 - `extract_min()`: removes and returns the minimum value in the heap, which is 5. The resulting heap is:
 
-<pre>
+```txt
           _15_
         /      \
        20      25
       / \     /  \
      22  40 
-</pre>
+```
 
 - `insert(2)`: inserts the value 2 into the heap while maintaining the heap property. The resulting heap is:
 
-<pre>
+```txt
           _2_
         /     \
        20      5
       / \     / \
      22  40  25  15
-</pre>
+```

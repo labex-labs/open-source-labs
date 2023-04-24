@@ -19,7 +19,7 @@ To solve this challenge, the following requirements must be met:
 
 ## Example Usage
 
-<pre>
+```txt
 Valid:
       5
     /   \
@@ -35,4 +35,4 @@ Invalid:
    5     8
   / \   /
  4   9 7
-</pre>
+```

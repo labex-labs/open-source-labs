@@ -23,20 +23,20 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * None -> TypeError
 * [] -> []
 * [0] -> []
 * [0, 1] -> [1, 0]
 * [0, 1, 2] -> [2, 0, 0]
 * [1, 2, 3, 4] -> [24, 12, 8, 6]
-</pre>
+```
 
 ## Algorithm
 
 ### Brute force:
 
-<pre>
+```txt
 sum = 1
  |
 [1, 2, 3, 4]
@@ -61,7 +61,7 @@ repeat for every element in the input list to obtain:
 
 [24, 12, 8, 6]
  
-</pre>
+```
 
 Complexity:
 
@@ -70,7 +70,7 @@ Complexity:
 
 ### Greedy
 
-<pre>
+```txt
 input  = [1, 2, 3, 4]
 result = [2*3*4, 1*3*4, 1*2*4, 1*2*3]
 
@@ -83,7 +83,7 @@ input  = [1,         2,     3,     4]
 before = [1,         1,   1*2, 1*2*3]
 after  = [2*3*4, 1*3*4, 1*2*4,     1]
 result = [   24,    12,     8,     6] 
-</pre>
+```
 
 Complexity:
 

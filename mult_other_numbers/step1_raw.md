@@ -15,11 +15,11 @@ Problem: Given a list of ints, find the products of every other int for each ind
 
 ## Example Usage
 
-<pre>
+```txt
 * None -> TypeError
 * [] -> []
 * [0] -> []
 * [0, 1] -> [1, 0]
 * [0, 1, 2] -> [2, 0, 0]
 * [1, 2, 3, 4] -> [24, 12, 8, 6]
-</pre>
+```

@@ -15,7 +15,7 @@ Problem: Determine if a tree is a valid binary search tree.
 
 ## Example Usage
 
-<pre>
+```txt
 Valid:
       5
     /   \
@@ -31,4 +31,4 @@ Invalid:
    5     8
   / \   /
  4   9 7
-</pre>
+```

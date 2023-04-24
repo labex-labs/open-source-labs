@@ -17,7 +17,7 @@ Problem: Find the second largest node in a binary search tree.
 
 - None or single node -> Exception
 
-<pre>
+```txt
 Input:
                 _10_
               _/    \_          
@@ -36,4 +36,4 @@ Input:
                / \
               3   7
 Output: 7
-</pre>
+```

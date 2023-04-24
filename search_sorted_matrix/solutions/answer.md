@@ -40,7 +40,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Algorithm
 
-<pre>
+```txt
 
 Find 60 (val = 60)
 
@@ -59,7 +59,7 @@ If we start at the upper right corner, we just need to use these cases:
 * If the start of a col > val, look left
 * If the end of a row < val, look down
 
-</pre>
+```
 
 Complexity:
 

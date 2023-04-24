@@ -28,7 +28,7 @@ To solve this problem, we need to consider the following requirements:
 
 Consider the following graph:
 
-<pre>
+```txt
 graph.add_edge('a', 'b', weight=5)
 graph.add_edge('a', 'c', weight=3)
 graph.add_edge('a', 'e', weight=2)
@@ -48,23 +48,23 @@ graph.add_edge('g', 'i', weight=2)
 graph.add_edge('h', 'c', weight=2)
 graph.add_edge('h', 'f', weight=2)
 graph.add_edge('h', 'g', weight=2)
-</pre>
+```
 
 We can find the shortest path between node 'a' and node 'i' using the ShortestPath class:
 
-<pre>
+```txt
 shortest_path = ShortestPath(graph)
 result = shortest_path.find_shortest_path('a', 'i')
-</pre>
+```
 
 The expected result is:
 
-<pre>
+```txt
 ['a', 'c', 'd', 'g', 'i']
-</pre>
+```
 
 We can also check the weight of the shortest path:
 
-<pre>
+```txt
 self.assertEqual(shortest_path.path_weight['i'], 8)
-</pre>
+```

@@ -20,23 +20,23 @@ The following examples illustrate the usage of the function:
 - None input -> -1
 - Empty array -> -1
 
-<pre>
+```txt
 a[i]  -4 -2  2  6  6  6  6 10
   i    0  1  2  3  4  5  6  7
-</pre>
+```
 
 Result: 2
 
-<pre>
+```txt
 a[i]  -4 -2  1  6  6  6  6 10
   i    0  1  2  3  4  5  6  7
-</pre>
+```
 
 Result: 6
 
-<pre>
+```txt
 a[i]  -4 -2  1  6  6  6  7 10
   i    0  1  2  3  4  5  6  7
-</pre>
+```
 
 Result: -1

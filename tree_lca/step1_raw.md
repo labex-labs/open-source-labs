@@ -13,7 +13,7 @@ Problem: Find the lowest common ancestor in a binary tree.
 
 ## Example Usage
 
-<pre>
+```txt
           _10_
         /      \
        5        9
@@ -21,7 +21,7 @@ Problem: Find the lowest common ancestor in a binary tree.
      12  3    18  20
         / \       /
        1   8     40
-</pre>
+```
 
 - 0, 5 -> None
 - 5, 0 -> None

@@ -29,14 +29,14 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - 0 -> 0
 - -1 -> -1
 - General case
-<pre>
+```txt
     input  = 0000 1001 1111 0110
     result = 0000 0110 1111 1001
-<pre>
+```txt
 
 ## Algorithm
 
-<pre>
+```txt
 * Isolate the odd bits with a mask:
     0000 1001 1111 0110  num
     1010 1010 1010 1010  mask
@@ -60,7 +60,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
     0000 0010 1010 1000  even
     --------------------------------
     0000 0110 1111 1001  odd | even
-</pre>
+```
 
 Complexity:
 

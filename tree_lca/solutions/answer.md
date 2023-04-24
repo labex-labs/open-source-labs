@@ -21,7 +21,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
           _10_
         /      \
        5        9
@@ -29,7 +29,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
      12  3    18  20
         / \       /
        1   8     40
-</pre>
+```
 
 - 0, 5 -> None
 - 5, 0 -> None

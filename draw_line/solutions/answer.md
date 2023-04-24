@@ -46,7 +46,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
   - Fill the bytes with 1111 1111
 - If x1 and x2 are in the same byte
 
-<pre>
+```txt
     x1 = 2
     x2 = 6
 
@@ -81,10 +81,10 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
            0011 1110  left & right
 
     Set screen[x1//8] or screen[x2//8] |= mask
-</pre>
+```
 
 - Else
-<pre>
+```txt
     If our starting partial byte is:
            0000 1111
 
@@ -104,7 +104,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
     Set screen[x1//8] |= start mask
     Set screen[x2//8] |= end mask
-</pre>
+```
 
 Complexity:
 

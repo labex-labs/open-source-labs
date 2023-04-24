@@ -25,7 +25,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * None -> TypeError
 * [0, 1, 0, 3, 12] -> [1, 3, 12, 0, 0]
 * [1, 0] -> [1, 0]
@@ -33,7 +33,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 * [0] -> [0]
 * [1] -> [1]
 * [1, 1] -> [1, 1]
-</pre>
+```
 
 ## Algorithm
 
@@ -43,7 +43,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
     - pos++
 - Fill input[pos:] with zeroes
 
-<pre>
+```txt
  |
 [0, 1, 0, 3, 12]
  ^
@@ -77,7 +77,7 @@ Fill right with zeroes:
            ^
 [1, 3, 12, 0, 0]
               ^
-</pre>
+```
 
 Complexity:
 

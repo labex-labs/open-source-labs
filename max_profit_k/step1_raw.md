@@ -19,7 +19,7 @@ Problem: Given a list of stock prices on each consecutive day, determine the max
 
 ## Example Usage
 
-<pre>
+```txt
 * Prices: None or k: None -> None
 * Prices: [] or k <= 0 -> []
 * Prices: [0, -1, -2, -3, -4, -5]
@@ -33,4 +33,4 @@ Problem: Given a list of stock prices on each consecutive day, determine the max
             Type.BUY  day: 3 price: 1, 
             Type.SELL day: 2 price: 7, 
             Type.BUY  day: 0 price: 2])
-</pre>
+```

@@ -29,7 +29,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Algorithm
 
-<pre>
+```txt
 Input: ['ram', 'act', 'arm', 'bat', 'cat', 'tab']
 
 Sort the chars for each item:
@@ -50,7 +50,7 @@ Use a map of sorted chars to each item to group anagrams:
 }
 
 Result: ['arm', 'ram', 'act', 'cat', 'bat', 'tab']
-</pre>
+```
 
 Complexity:
 

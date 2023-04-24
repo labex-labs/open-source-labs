@@ -42,7 +42,7 @@ We can use the following bit manipulation trick to determine this:
 
 Here's an example why:
 
-<pre>
+```txt
 0000 1000 = n
 0000 0001 = 1
 0000 0111 = n-1
@@ -50,7 +50,7 @@ Here's an example why:
 0000 1000 = n
 0000 0111 = n-1
 0000 0000 = n & n-1, result = 0
-</pre>
+```
 
 Complexity:
 

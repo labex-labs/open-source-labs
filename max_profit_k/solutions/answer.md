@@ -27,7 +27,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * Prices: None or k: None -> None
 * Prices: [] or k <= 0 -> []
 * Prices: [0, -1, -2, -3, -4, -5]
@@ -41,13 +41,13 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
             Type.BUY  day: 3 price: 1, 
             Type.SELL day: 2 price: 7, 
             Type.BUY  day: 0 price: 2])
-</pre>
+```
 
 ## Algorithm
 
 We'll use bottom up dynamic programming to build a table.
 
-<pre>
+```txt
 
 The rows (i) represent the prices.
 The columns (j) represent the number of transactions (k).
@@ -75,7 +75,7 @@ max_diff = max(max_diff,
 T[i][j] = max(T[i][j - 1],
               prices[j] + max_diff)
 
-</pre>
+```
 
 Complexity:
 

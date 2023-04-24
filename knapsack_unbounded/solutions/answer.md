@@ -33,7 +33,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - items or total weight is 0 -> 0
 - General case
 
-<pre>
+```txt
 total_weight = 8
 items
   v | w
@@ -43,7 +43,7 @@ b 3 | 2
 c 7 | 4
 
 max value = 14 
-</pre>
+```
 
 ## Algorithm
 
@@ -51,7 +51,7 @@ We'll use bottom up dynamic programming to build a table.
 
 Taking what we learned with the 0/1 knapsack problem, we could solve the problem like the following:
 
-<pre>
+```txt
 
 v = value
 w = weight
@@ -69,11 +69,11 @@ i b | 3 | 2 || 0 | 1 | 3 | 4 | 6 | 7 |  9 | 10 | 12  |
 i = row
 j = col
 
-</pre>
+```
 
 However, unlike the 0/1 knapsack variant, we don't actually need to keep space of O(n \* w), where n is the number of items and w is the total weight. We just need a single array that we update after we process each item:
 
-<pre>
+```txt
 
     -------------------------------------------------
     | v | w || 0 | 1 | 2 | 3 | 4 | 5 |  6 |  7 |  8  |
@@ -95,7 +95,7 @@ if j >= items[i].weight:
     T[j] = max(items[i].value + T[j - items[i].weight],
                T[j])
 
-</pre>
+```
 
 Complexity:
 

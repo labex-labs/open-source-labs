@@ -32,24 +32,24 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - None input -> -1
 - Empty array -> -1
 
-<pre>
+```txt
 a[i]  -4 -2  2  6  6  6  6 10
   i    0  1  2  3  4  5  6  7
-</pre>
+```
 
 Result: 2
 
-<pre>
+```txt
 a[i]  -4 -2  1  6  6  6  6 10
   i    0  1  2  3  4  5  6  7
-</pre>
+```
 
 Result: 6
 
-<pre>
+```txt
 a[i]  -4 -2  1  6  6  6  7 10
   i    0  1  2  3  4  5  6  7
-</pre>
+```
 
 Result: -1
 
@@ -59,19 +59,19 @@ We'll use a binary search to split the search space in half on each iteration. T
 
 In the example below, we see that i == 5 cannot be the magic index, otherwise a[5] would have to equal 5 (note a[4] == 6).
 
-<pre>
+```txt
 a[i]  -4 -2  2  6  6  6  6 10
   i    0  1  1  3  4  5  6  7
                   mid
-</pre>
+```
 
 Similarly, in the example below we can further trim the left search space.
 
-<pre>
+```txt
 a[i]  -4 -2  2  2  2  6  6 10
   i    0  1  2  3  4  5  6  7
                   mid
-</pre>
+```
 
 - Calculate mid
 - If mid == array[mid], return mid

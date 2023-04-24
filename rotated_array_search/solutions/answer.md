@@ -39,7 +39,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ### General case without dupes
 
-<pre>
+```txt
 
 index                   0   1   2   3   4   5   6   7   8   9
 input                 [ 1,  3,  5,  6,  7,  8,  9, 10, 12, 14]
@@ -66,11 +66,11 @@ input[start] <= input[mid]: Right half is rotated
 input[end] >= input[mid]: Left half is sorted
 1 is not within input[left] to input[mid-1] on the left side, go right
 
-</pre>
+```
 
 ### General case with dupes
 
-<pre>
+```txt
 
                         s                   m               e
 index                   0   1   2   3   4   5   6   7   8   9
@@ -82,7 +82,7 @@ input rotated 1x      [ 1,  1,  2,  1,  1,  1,  1,  1,  1,  1]
 
 input[start] == input[mid] == input[end], search both sides
 
-</pre>
+```
 
 Complexity:
 

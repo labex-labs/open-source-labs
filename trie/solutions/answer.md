@@ -25,7 +25,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 
 root node is denoted by ''
 
@@ -62,7 +62,7 @@ list_words
 
 * List empty
 * List general case
-</pre>
+```
 
 ## Algorithm
 

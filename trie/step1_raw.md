@@ -17,7 +17,7 @@ Problem: Implement a trie with find, insert, remove, and list_words methods.
 
 ## Example Usage
 
-<pre>
+```txt
 
          root
        /  |  \
@@ -52,4 +52,4 @@ list_words
 
 * List empty
 * List general case
-</pre>
+```

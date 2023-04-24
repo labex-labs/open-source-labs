@@ -33,21 +33,21 @@ Example: [(2, 3), (3, 5), (7, 9), (8, 10)] -> [(2, 5), (7, 10)]
 
 ## Test Cases
 
-<pre>
+```txt
 * None input -> TypeError
 * [] - []
 * [(2, 3), (7, 9)] -> [(2, 3), (7, 9)]
 * [(2, 3), (3, 5), (7, 9), (8, 10)] -> [(2, 5), (7, 10)]
 * [(2, 3), (3, 5), (7, 9), (8, 10), (1, 11)] -> [(1, 11)]
 * [(2, 3), (3, 8), (7, 9), (8, 10)] -> [(2, 10)]
-</pre>
+```
 
 ## Algorithm
 
 - Sort the tuples based on start time
 - Check each adjacent tuple to see if they can be merged
 
-<pre>
+```txt
 Case: * [(2, 3), (3, 8), (7, 9), (8, 10)] -> [(2, 10)]
 
 * Sort by start time (already sorted)
@@ -82,7 +82,7 @@ Overlap with (2, 9) (8, 10):
                    0       1       2       3
 sorted_array = [(2, 3), (3, 8), (7, 9), (8, 10)]
 merged_array = [(2, 10)]
-</pre>
+```
 
 Complexity:
 

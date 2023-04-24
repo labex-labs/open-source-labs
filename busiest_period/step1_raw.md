@@ -29,7 +29,7 @@ Problem: Given an array of (unix_timestamp, num_people, EventType.ENTER or Event
 - [] -> None
 - General case
 
-<pre>
+```txt
 timestamp  num_people  event_type
 1          2           EventType.ENTER
 3          1           EventType.ENTER
@@ -39,4 +39,4 @@ timestamp  num_people  event_type
 9          2           EventType.EXIT
 
 result = Period(7, 8)
-</pre>
+```

@@ -17,7 +17,7 @@ Problem: Return all subsets of a set.
 
 ## Example Usage
 
-<pre>
+```txt
 * None -> None
 * [] -> [[]]
 * ['a'] -> [[], 
@@ -34,4 +34,4 @@ Problem: Return all subsets of a set.
                       ['a', 'c'], 
                       ['b', 'c'],
                       ['a', 'b', 'c']]
-</pre>
+```

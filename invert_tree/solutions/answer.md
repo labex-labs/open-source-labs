@@ -23,7 +23,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 Input:
      5
    /   \
@@ -37,7 +37,7 @@ Output:
   7     2
  / \   / \
 9   6 3   1
-</pre>
+```
 
 ## Algorithm
 

@@ -33,7 +33,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 We'll use bottom up dynamic programming to build a table.
 
-<pre>
+```txt
 Init a temp array of size len(input) to 1.  
 We'll use l and r to iterate through the input.
 Array prev will hold the index of the prior smaller value, used to reconstruct the final sequence.
@@ -57,7 +57,7 @@ index:  0  1  2  3  4  5  6
 input:  3  4 -1  0  6  2  3
 temp:   1  2  1  2  3  3  4
 prev:   x  0  x  2  1  3  5
-</pre>
+```
 
 Complexity:
 

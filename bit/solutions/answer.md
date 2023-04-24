@@ -60,14 +60,14 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ### get_bit
 
-<pre>
+```txt
 indices  7 6 5 4  3 2 1 0  index = 3
 --------------------------------------------------
 input    1 0 0 0  1 1 1 0  0b10001110
 mask     0 0 0 0  1 0 0 0  1 << index
 --------------------------------------------------
 result   0 0 0 0  1 0 0 0  number & mask != 0
-</pre>
+```
 
 Complexity:
 
@@ -76,14 +76,14 @@ Complexity:
 
 ### set_bit
 
-<pre>
+```txt
 indices  7 6 5 4  3 2 1 0  index = 4
 --------------------------------------------------
 input    1 0 0 0  1 1 1 0  0b10001110
 mask     0 0 0 1  0 0 0 0  1 << index
 --------------------------------------------------
 result   1 0 0 1  1 1 1 0  number | mask
-</pre>
+```
 
 Complexity:
 
@@ -92,7 +92,7 @@ Complexity:
 
 ### clear_bit
 
-<pre>
+```txt
 indices  7 6 5 4  3 2 1 0  index = 3
 --------------------------------------------------
 input    1 0 0 0  1 1 1 0  0b10001110
@@ -100,7 +100,7 @@ mask     0 0 0 0  1 0 0 0  1 << index
 mask     1 1 1 1  0 1 1 1  ~(1 << index)
 --------------------------------------------------
 result   1 0 0 0  0 1 1 0  number & mask
-</pre>
+```
 
 Complexity:
 
@@ -109,7 +109,7 @@ Complexity:
 
 ### clear_bits_msb_to_index
 
-<pre>
+```txt
 indices  7 6 5 4  3 2 1 0  index = 3
 --------------------------------------------------
 input    1 0 0 0  1 1 1 0  0b10001110
@@ -117,7 +117,7 @@ mask     0 0 0 0  1 0 0 0  1 << index
 mask     0 0 0 0  0 1 1 1  (1 << index) - 1
 --------------------------------------------------
 result   0 0 0 0  0 1 1 1  number & mask
-</pre>
+```
 
 Complexity:
 
@@ -126,7 +126,7 @@ Complexity:
 
 ### clear_bits_index_to_lsb
 
-<pre>
+```txt
 indices  7 6 5 4  3 2 1 0  index = 3
 --------------------------------------------------
 input    1 0 0 0  1 1 1 0  0b10001110
@@ -135,7 +135,7 @@ mask     0 0 0 0  1 1 1 1  (1 << index + 1) - 1
 mask     1 1 1 1  0 0 0 0  ~((1 << index + 1) - 1)
 --------------------------------------------------
 result   1 0 0 0  0 0 0 0  number & mask
-</pre>
+```
 
 Complexity:
 

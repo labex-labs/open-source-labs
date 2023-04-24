@@ -17,7 +17,7 @@ Problem: Move all zeroes in a list to the end.
 
 ## Example Usage
 
-<pre>
+```txt
 * None -> TypeError
 * [0, 1, 0, 3, 12]
 * [1, 0] -> [1, 0]
@@ -25,4 +25,4 @@ Problem: Move all zeroes in a list to the end.
 * [0] -> [0]
 * [1] -> [1]
 * [1, 1] -> [1, 1]
-</pre>
+```

@@ -36,7 +36,7 @@ Say we are given 4 billion integers, which is 2^32 integers. The number of non-n
 
 To simplify this exercise, we'll work with an input of up to 32 ints that we'll map to a bit vector of 32 bits.
 
-<pre>
+```txt
 
 input = [0, 1, 2, 3, 4...28, 29, 31]
 
@@ -49,7 +49,7 @@ result = 30
 * Loop through each item in the input, setting bit_vector[item] = True.
 * Loop through the bit_vector, return the first index where bit_vector[item] == False.
 
-</pre>
+```
 
 Complexity:
 

@@ -49,7 +49,7 @@ Complexity:
 
 ### Optimized
 
-<pre>
+```txt
 * Loop through each num in nums
     * Calculate the cache_target = target - num
 
@@ -109,7 +109,7 @@ cache
 5 in cache, success, output matching indices: cache[num] and current iteration index
 
 output = [2, 4]
-</pre>
+```
 
 Complexity:
 

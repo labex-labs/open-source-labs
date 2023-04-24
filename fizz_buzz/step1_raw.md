@@ -16,7 +16,7 @@ Problem: Implement Fizz Buzz.
 
 ## Example Usage
 
-<pre>
+```txt
 * None -> Exception
 * < 1 -> Exception
 * 15 ->
@@ -37,4 +37,4 @@ Problem: Implement Fizz Buzz.
     '14',
     'FizzBuzz'
 ]
-</pre>
+```

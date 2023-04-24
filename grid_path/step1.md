@@ -19,7 +19,7 @@ The requirements for this algorithm are as follows:
 
 Consider the following grid:
 
-<pre>
+```txt
 o = valid cell
 x = invalid cell
 
@@ -32,11 +32,11 @@ x = invalid cell
 5  o  o  o  x
 6  o  x  o  x
 7  o  x  o  o
-</pre>
+```
 
 - General case:
 
-```
+```txt
 expected = [(0, 0), (1, 0), (2, 0),
             (2, 1), (3, 1), (4, 1),
             (5, 1), (5, 2), (6, 2),

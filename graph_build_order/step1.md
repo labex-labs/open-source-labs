@@ -25,7 +25,7 @@ The output should be: d, f, c, b, g, a, e
 
 Note that the edge direction is down, meaning that a project depends on the projects below it.
 
-<pre>
+```txt
     f     d
    /|\    |
   c | b   g
@@ -33,6 +33,6 @@ Note that the edge direction is down, meaning that a project depends on the proj
     a |
     |/
     e
-</pre>
+```
 
 If the input contains a cyclic graph, the output should be None.

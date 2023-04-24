@@ -27,13 +27,13 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * None -> None
 * '' -> ''
 * 'AABC' -> ['AABC', 'AACB', 'ABAC', 'ABCA',
              'ACAB', 'ACBA', 'BAAC', 'BACA',
              'BCAA', 'CAAB', 'CABA', 'CBAA']
-</pre>
+```
 
 ## Algorithm
 

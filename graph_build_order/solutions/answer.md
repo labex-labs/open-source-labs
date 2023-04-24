@@ -31,7 +31,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 Note: Edge direction is down
 
-<pre>
+```txt
     f     d
    /|\    |
   c | b   g
@@ -39,7 +39,7 @@ Note: Edge direction is down
     a |
     |/
     e
-</pre>
+```
 
 Test a graph with a cycle, output should be None
 

@@ -19,10 +19,10 @@ Problem: Find all permutations of an input string.
 
 ## Example Usage
 
-<pre>
+```txt
 * None -> None
 * '' -> ''
 * 'AABC' -> ['AABC', 'AACB', 'ABAC', 'ABCA',
              'ACAB', 'ACBA', 'BAAC', 'BACA',
              'BCAA', 'CAAB', 'CABA', 'CBAA']
-</pre>
+```

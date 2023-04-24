@@ -24,12 +24,12 @@ The program should meet the following requirements:
 
 Here is an example of the program's usage:
 
-<pre>
+```txt
 i      = 2
 j      = 6
 n      = 0000 0100 0000 0000
 m      = 0000 0000 0001 0011
 result = 0000 0100 0100 1100
-</pre>
+```
 
 In this example, `m` is inserted into `n` such that `m` starts at bit `j=6` and ends at bit `i=2`. The resulting 16-bit number is `0000 0100 0100 1100`.

@@ -24,7 +24,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - Insert into an empty tree
 - Insert general case (left and right insert)
 
-<pre>
+```txt
           _5_
         /     \
        20     15
@@ -46,7 +46,7 @@ insert(2):
        20      5
       / \     / \
      22  40  25  15
-</pre>
+```
 
 ## Algorithm
 
@@ -54,7 +54,7 @@ A heap is a complete binary tree where each node is smaller than its children.
 
 ### extract_min
 
-<pre>
+```txt
           _5_
         /     \
        20     15
@@ -79,17 +79,17 @@ Bubble down 25: Swap 25 and 15 (the smaller child)
      22  40 
 
 Return 5
-</pre>
+```
 
 We'll use an array to represent the tree, here are the indices:
 
-<pre>
+```txt
           _0_
         /     \
        1       2
       / \     / \
      3   4   
-</pre>
+```
 
 To get to a child, we take 2 _ index + 1 (left child) or 2 _ index + 2 (right child).
 
@@ -102,7 +102,7 @@ Complexity:
 
 ### insert
 
-<pre>
+```txt
           _5_
         /     \
        20     15
@@ -133,17 +133,17 @@ Bubble up 2: Swap 2 and 5
        20     5
       / \    / \
      22  40 25  15
-</pre>
+```
 
 We'll use an array to represent the tree, here are the indices:
 
-<pre>
+```txt
           _0_
         /     \
        1       2
       / \     / \
      3   4   5   6
-</pre>
+```
 
 To get to a parent, we take (index - 1) // 2.
 

@@ -16,7 +16,7 @@ To generate the power set of a set, we need to meet the following requirements:
 
 ## Example Usage
 
-<pre>
+```txt
 * None -> None
 * [] -> [[]]
 * ['a'] -> [[], 
@@ -33,4 +33,4 @@ To generate the power set of a set, we need to meet the following requirements:
                       ['a', 'c'], 
                       ['b', 'c'],
                       ['a', 'b', 'c']]
-</pre>
+```

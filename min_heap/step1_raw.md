@@ -16,7 +16,7 @@ Problem: Implement a min heap with extract_min and insert methods.
 - Insert into an empty tree
 - Insert general case (left and right insert)
 
-<pre>
+```txt
           _5_
         /     \
        20     15
@@ -38,4 +38,4 @@ insert(2):
        20      5
       / \     / \
      22  40  25  15
-</pre>
+```

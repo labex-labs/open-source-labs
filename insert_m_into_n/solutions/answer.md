@@ -27,17 +27,17 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - Negative index for i or j -> Exception
 - General case
 
-<pre>
+```txt
 i = 2, j = 6
                     j    i
 n      = 0000 0100 0011 1101
 m      = 0000 0000 0001 0011
 result = 0000 0100 0100 1101
-</pre>
+```
 
 ## Algorithm
 
-<pre>
+```txt
                     j    i
 n      = 0000 0100 0011 1101
 m      = 0000 0000 0001 0011
@@ -60,7 +60,7 @@ n2     = 0000 0100 0000 0001
 mask2  = 0000 0000 0100 1100   m << i
 --------------------------------------------------
 result = 0000 0100 0100 1101   n2 | mask2
-</pre>
+```
 
 Complexity:
 

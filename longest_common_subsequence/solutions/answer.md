@@ -40,7 +40,7 @@ result: 'BCDE'
 
 We'll use bottom up dynamic programming to build a table.
 
-<pre>
+```txt
 
 The rows (i) represent str0.
 The columns (j) represent str1.
@@ -68,7 +68,7 @@ if str1[j] != str0[i]:
         T[i - 1][j])
 else:
     T[i][j] = T[i - 1][j - 1] + 1
-</pre>
+```
 
 Complexity:
 

@@ -25,7 +25,7 @@ Problem: Given a knapsack with a total weight capacity and a list of items with 
 - items or total weight is 0 -> 0
 - General case
 
-<pre>
+```txt
 total_weight = 8
 items
   v | w
@@ -35,4 +35,4 @@ b 3 | 2
 c 7 | 4
 
 max value = 14 
-</pre>
+```

@@ -25,7 +25,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 None -> exception
 
-<pre>
+```txt
 Valid:
       5
     /   \
@@ -41,7 +41,7 @@ Invalid:
    5     8
     \   
     20
-</pre>
+```
 
 ## Algorithm
 

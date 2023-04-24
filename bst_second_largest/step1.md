@@ -22,7 +22,7 @@ Here are some examples of how to use this function:
 
 - None or single node -> Exception
 
-<pre>
+```txt
 Input:
                 _10_
               _/    \_          
@@ -41,4 +41,4 @@ Input:
                / \
               3   7
 Output: 7
-</pre>
+```

@@ -35,7 +35,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Algorithm
 
-<pre>
+```txt
                      i                 k
 A = [1,  3,  5,  7,  9,  None,  None,  None]
              j
@@ -101,7 +101,7 @@ B = [4,  5,  6]
 
 A = [1, 3, 4, 5, 5, 6, 7, 9]
 
-</pre>
+```
 
 Complexity:
 

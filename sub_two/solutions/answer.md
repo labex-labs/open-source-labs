@@ -19,22 +19,22 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * None input -> TypeError
 * 7, 5 -> 2
 * -5, -7 -> 2
 * -5, 7 -> -12
 * 5, -7 -> 12
-</pre>
+```
 
 ## Algorithm
 
 We'll look at the following example, subtracting a and b:
 
-<pre>
+```txt
 a 0110 = 6 
 b 0101 = 5
-</pre>
+```
 
 First, subtract a and b, without worrying about the borrow (0-0=0, 0-1=1, 1-1=0):
 

@@ -25,7 +25,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * None -> None
 * '' -> ['']
 * 'a' -> ['a', '']
@@ -35,7 +35,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 * 'aabc' -> ['a', 'aa', 'aab', 'aabc', 
              'aac', 'ab', 'abc', 'ac', 
              'b', 'bc', 'c', '']
-</pre>
+```
 
 ## Algorithm
 
@@ -62,7 +62,7 @@ We are doubling the number of operations every time we add an element to the res
 
 Note, you could also use the following method to solve this problem:
 
-<pre>
+```txt
 number binary  subset
 0      000      {}
 1      001      {c}
@@ -72,7 +72,7 @@ number binary  subset
 5      101      {a,c}
 6      110      {a,b}
 7      111      {a,b,c}
-</pre>
+```
 
 ## Code
 

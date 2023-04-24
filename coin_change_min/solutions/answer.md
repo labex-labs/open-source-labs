@@ -41,7 +41,7 @@ We'll use top down dynamic programming with memoization.
 - Set memo[total] to the min value + 1
 - Return the memo[total]
 
-<pre>
+```txt
 total: 5
 coins: [1,2,3]
 memo key: total value: min ways
@@ -68,7 +68,7 @@ memo = {
     1, 2, 3
    /
   0
-</pre>
+```
 
 Complexity:
 

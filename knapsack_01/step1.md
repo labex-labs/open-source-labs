@@ -19,7 +19,7 @@ To solve the Knapsack problem, we need to consider the following requirements:
 
 Here is an example of how to use the Knapsack algorithm:
 
-<pre>
+```txt
 total_weight = 8
 items
   v | w
@@ -34,6 +34,6 @@ items
   v | w
 b 4 | 2
 d 9 | 5 
-</pre>
+```
 
 In this example, we have a knapsack with a total weight capacity of 8 and four items with their respective values and weights. We need to select the items that maximize the total value while keeping the weight within the capacity of the knapsack. The optimal solution is to select items b and d, which have a total value of 13 and a total weight of 7.

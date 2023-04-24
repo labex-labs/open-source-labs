@@ -34,7 +34,7 @@ Problem: Find the shortest path between two nodes in a graph.
 
 The constraints state we don't have to check for negative edges, so we test with the general case.
 
-<pre>
+```txt
 graph.add_edge('a', 'b', weight=5)
 graph.add_edge('a', 'c', weight=3)
 graph.add_edge('a', 'e', weight=2)
@@ -58,4 +58,4 @@ shortest_path = ShortestPath(graph)
 result = shortest_path.find_shortest_path('a', 'i')
 self.assertEqual(result, ['a', 'c', 'd', 'g', 'i'])
 self.assertEqual(shortest_path.path_weight['i'], 8)
-</pre>
+```

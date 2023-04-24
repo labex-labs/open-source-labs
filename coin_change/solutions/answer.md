@@ -33,7 +33,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 We'll use a bottom-up dynamic programming approach.
 
-<pre>
+```txt
 The rows (i) represent the coin values.
 The columns (j) represent the totals.
 
@@ -60,7 +60,7 @@ else:
     T[i][j] = T[i - 1][j]
 
 The answer will be in the bottom right corner of the matrix.
-</pre>
+```
 
 Complexity:
 

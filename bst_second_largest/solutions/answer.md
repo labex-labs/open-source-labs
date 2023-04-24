@@ -25,7 +25,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 - None or single node -> Exception
 
-<pre>
+```txt
 Input:
                 _10_
               _/    \_          
@@ -44,11 +44,11 @@ Input:
                / \
               3   7
 Output: 7
-</pre>
+```
 
 ## Algorithm
 
-<pre>
+```txt
 
 If there is no right node, the second largest is the right most left subtree:
 
@@ -76,7 +76,7 @@ Eventually we'll get to the following scenario:
 
 If the right node has no children, the second largest is the current node.
 
-</pre>
+```
 
 Complexity:
 

@@ -29,7 +29,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 We'll use bottom up dynamic programming to build a table.
 
-<pre>
+```txt
 
   0    1    2    3
 [2,3][3,6][6,4][4,5]
@@ -73,11 +73,11 @@ min cost = T[0][cols-1] = 124
 for k in range(i, j):
     T[i][j] = minimum of (T[i][k] + T[k+1][j] +
                           m[i].first * m[k].second * m[j].second) for all k
-</pre>
+```
 
 ### Explanation of k
 
-<pre>
+```txt
   0    1    2    3
 [2,3][3,6][6,4][4,5]
 
@@ -116,7 +116,7 @@ T[i][k] + T[k+1][j] + m[i].first * m[k].second * m[j].second
 T[0][2] + T[3][3] + 2 * 4 * 5
 84 + 0 + 40 = 124
 
-</pre>
+```
 
 Complexity:
 

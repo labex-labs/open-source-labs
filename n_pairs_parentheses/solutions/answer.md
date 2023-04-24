@@ -25,14 +25,14 @@ This notebook was prepared by [Rishi Rajasekaran](https://github.com/rishihot55)
 
 ## Test Cases
 
-<pre>
+```txt
 * None -> Exception
 * Negative -> Exception
 * 0 -> []
 * 1 -> ['()']
 * 2 -> ['(())', '()()']
 * 3 -> ['((()))', '(()())', '(())()', '()(())', '()()()']
-</pre>
+```
 
 # Algorithm
 

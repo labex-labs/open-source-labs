@@ -37,7 +37,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - [] -> None
 - General case
 
-<pre>
+```txt
 timestamp  num_people  event_type
 3          2           EventType.EXIT
 1          2           EventType.ENTER
@@ -47,7 +47,7 @@ timestamp  num_people  event_type
 8          2           EventType.EXIT
 
 result = Period(7, 8)
-</pre>
+```
 
 ## Algorithm
 
@@ -63,7 +63,7 @@ For each interval in the data set:
 
 Sorted:
 
-<pre>
+```txt
 timestamp  num_people  event_type       curr_people  max_people       max_period
 1          2           EventType.ENTER  2            2                [1, 3]
 3          1           EventType.ENTER  3            2 (not updated)  [1, 3]
@@ -71,7 +71,7 @@ timestamp  num_people  event_type       curr_people  max_people       max_period
 7          3           EventType.ENTER  4            4                [7, 8]
 8          2           EventType.EXIT   2            4                [7, 8]
 9          2           EventType.EXIT   0            4                [7, 8]
-</pre>
+```
 
 Complexity:
 

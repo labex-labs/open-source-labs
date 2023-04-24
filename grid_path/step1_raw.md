@@ -19,7 +19,7 @@ Problem: Implement an algorithm to have a robot move from the upper left corner 
 
 ## Example Usage
 
-<pre>
+```txt
 o = valid cell
 x = invalid cell
 
@@ -32,7 +32,7 @@ x = invalid cell
 5  o  o  o  x
 6  o  x  o  x
 7  o  x  o  o
-</pre>
+```
 
 - General case
 

@@ -21,25 +21,25 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 ## Test Cases
 
-<pre>
+```txt
 * None input -> TypeError
 * negative input -> ValueError
 * 9 -> 9
 * 138 -> 3
 * 65536 -> 7
-</pre>
+```
 
 ## Algorithm
 
 The naive solution simply isolates each digit with with modulo and integer division. We'll add each isolated digit to a list and sum the values.
 
-<pre>
+```txt
 138 % 10 = 8 -> isolated
 138 // 10 = 13
 13 % 10 = 3 -> isolated
 13 // 10 = 1
 1 % 10 = 1 -> isolated
-</pre>
+```
 
 A more optimal solution exists, by recognizing this is a digital root. See the [Wikipedia article](https://en.wikipedia.org/wiki/Digital_root) for more information.
 

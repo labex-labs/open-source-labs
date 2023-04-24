@@ -54,7 +54,7 @@ Complexity:
 
 ### Greedy:
 
-<pre>
+```txt
  0   1  2  3   4  5
 [5, -2, 3, 1, -1, 4] -> 60
 
@@ -99,7 +99,7 @@ max_prod_of_two = 15
 max_num = 5
 min_prod_of_two = -10
 min_num = -2
-</pre>
+```
 
 Complexity:
 

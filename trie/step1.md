@@ -23,7 +23,7 @@ To complete this challenge, the following requirements must be met:
 
 The following examples demonstrate the usage of the trie methods:
 
-<pre>
+```txt
 
          root
        /  |  \
@@ -58,4 +58,4 @@ list_words
 
 * List empty
 * List general case
-</pre>
+```

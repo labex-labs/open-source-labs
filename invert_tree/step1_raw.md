@@ -15,7 +15,7 @@ Problem: Invert a binary tree.
 
 ## Example Usage
 
-<pre>
+```txt
 Input:
      5
    /   \
@@ -29,4 +29,4 @@ Output:
   7     2
  / \   / \
 9   6 3   1
-</pre>
+```
