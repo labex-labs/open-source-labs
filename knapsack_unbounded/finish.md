@@ -1,0 +1,3 @@
+# Summary
+
+The Knapsack Unbounded problem is a variation of the Knapsack problem where items can be selected multiple times. To solve this problem, the items can be replaced once they are placed in the knapsack, and an item cannot be split. The input items cannot have a weight or value of 0, and only the total value needs to be returned. The inputs may not be valid, so validation is required, and the inputs are sorted by val/weight. Memory constraints are not an issue. The Knapsack Unbounded problem can be used in various scenarios, such as resource allocation and financial portfolio optimization.

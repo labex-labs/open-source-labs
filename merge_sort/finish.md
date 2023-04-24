@@ -1,0 +1,3 @@
+# Summary
+
+Merge sort is a popular sorting algorithm that uses the divide-and-conquer approach to sort an array. To implement merge sort in Python, the algorithm should use the divide-and-conquer approach, handle arrays of any length, work for both integers and strings, sort the array in ascending order, have a time complexity of O(n log n), and be implemented in Python. The algorithm should raise an exception if the input is None, return an empty array if the input is an empty array, return the same array if the input contains only one element, and sort the array correctly if the left and right subarrays have different lengths.

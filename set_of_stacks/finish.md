@@ -1,0 +1,3 @@
+# Summary
+
+In this challenge, we implemented a SetOfStacks class that wraps a list of stacks, where each stack is bound by a capacity. The class provides functionalities to push and pop elements onto and from the stacks, and automatically creates or removes stacks as needed. The implementation meets the requirements of using an existing stack class, binding all stacks by the same capacity, and fitting in memory. The SetOfStacks class can be used in various scenarios, such as pushing and popping elements on empty or non-empty stacks, creating new stacks when a capacity is reached, and destroying stacks when they become empty.
