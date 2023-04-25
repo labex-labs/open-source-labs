@@ -1,5 +1,4 @@
-%%writefile graph.py
-from enum import Enum  # Python 2 users: Run pip install enum34
+from enum import Enum
 
 
 class State(Enum):
@@ -67,4 +66,4 @@ class Graph:
             raise TypeError('key cannot be None')
         self.add_edge(src_key, dst_key, weight)
         self.add_edge(dst_key, src_key, weight)
-%run graph.py
+

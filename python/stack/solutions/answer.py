@@ -1,4 +1,3 @@
-%%writefile stack.py
 class Node(object):
 
     def __init__(self, data, next=None):
@@ -26,4 +25,3 @@ class Stack(object):
 
     def is_empty(self):
         return self.peek() is None
-%run stack.py

@@ -1,4 +1,4 @@
-from enum import Enum  # Python 2 users: Run pip install enum34
+from enum import Enum
 
 
 class State(Enum):

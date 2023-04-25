@@ -1,4 +1,3 @@
-%%writefile priority_queue.py
 import sys
 
 
@@ -40,4 +39,3 @@ class PriorityQueue(object):
                 node.key = new_key
                 return node
         return None
-%run priority_queue.py

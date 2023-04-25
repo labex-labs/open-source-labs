@@ -1,4 +1,3 @@
-%%writefile bst.py
 class Node(object):
 
     def __init__(self, data):
@@ -42,4 +41,4 @@ class Bst(object):
                 return node.right
             else:
                 return self._insert(node.right, data)
-%run bst.py
+

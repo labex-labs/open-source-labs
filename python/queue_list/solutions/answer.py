@@ -1,4 +1,3 @@
-%%writefile queue_list.py
 class Node(object):
 
     def __init__(self, data):
@@ -34,4 +33,3 @@ class Queue(object):
         else:
             self.head = self.head.next
         return data
-%run queue_list.py

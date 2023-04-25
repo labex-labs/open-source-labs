@@ -1,9 +1,3 @@
-%%writefile min_heap.py
-from __future__ import division
-
-import sys
-
-
 class MinHeap(object):
 
     def __init__(self):
@@ -69,4 +63,3 @@ class MinHeap(object):
                 return left_child_index
             else:
                 return right_child_index
-%run min_heap.py

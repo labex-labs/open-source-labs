@@ -1,4 +1,3 @@
-%%writefile trie.py
 from collections import OrderedDict
 
 
@@ -75,4 +74,3 @@ class Trie(object):
             if child.terminates:
                 result.append(curr_word + key)
             self._list_words(child, curr_word + key, result)
-%run trie.py

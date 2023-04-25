@@ -1,4 +1,3 @@
-%%writefile linked_list.py
 class Node(object):
 
     def __init__(self, data, next=None):
@@ -97,4 +96,3 @@ class LinkedList(object):
             data.append(curr_node.data)
             curr_node = curr_node.next
         return data
-%run linked_list.py
