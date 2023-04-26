@@ -5,6 +5,8 @@ def validate_index(func):
                 raise IndexError('Invalid index')
         return func(self, *args, **kwargs)
     return validate_index_wrapper
+
+
 class Bit(object):
 
     def __init__(self, number):
