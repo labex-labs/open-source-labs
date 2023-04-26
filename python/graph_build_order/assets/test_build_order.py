@@ -30,8 +30,8 @@ class TestBuildOrder(unittest.TestCase):
         self.assertTrue(processed_nodes[2].key in expected_result1)
         self.assertTrue(processed_nodes[3].key in expected_result1)
         self.assertTrue(processed_nodes[4].key in expected_result1)
-        self.assertTrue(processed_nodes[5].key is 'a')
-        self.assertTrue(processed_nodes[6].key is 'e')
+        self.assertTrue(processed_nodes[5].key == 'a')
+        self.assertTrue(processed_nodes[6].key == 'e')
 
         print('Success: test_build_order')
 
