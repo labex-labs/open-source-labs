@@ -1,0 +1,39 @@
+name: proofreading
+on:
+  push:
+    branches:
+      - master
+jobs:
+  Proofreading:
+    if: github.repository_owner == 'labex-labs'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Get md changed files
+        id: changed-files-specific-md
+        uses: tj-actions/changed-files@v35
+      - name: Formatting md files
+        run: |
+          npm i -g prettier prettier-plugin-sh
+          echo ${{ steps.changed-files-specific-md.outputs.all_changed_files }}
+          npx prettier --write ${{ steps.changed-files-specific-md.outputs.all_changed_files }}
+        continue-on-error: true
+      - name: Get py changed files
+        id: changed-files-specific-py
+        uses: tj-actions/changed-files@v35
+        with:
+          files: |
+            **/*.py
+      - name: Formatting py files
+        run: |
+          pip install black
+          black ${{ steps.changed-files-specific-py.outputs.all_changed_files }}
+        continue-on-error: true
+      - name: Git commit
+        uses: stefanzweifel/git-auto-commit-action@v4.3.0
+        with:
+          commit_message: Formatting documents
+          branch: ${{ github.head_ref }}
