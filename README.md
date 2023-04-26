@@ -1,5 +1,5 @@
 # Open-Source Challenges
 
-These Challenges come from the open-source world. We follow licenses, optimize content and provide learning support through LabEx.
+The challenges of this repo come from the open-source world. Under the license of the agreement, we have adapted and are compatible with LabEx. The `index.json` file indicates the source and open-source license of the corresponding challenge. The adapted challenge continues to use the original open-source license.
 
-The `index.json` of each Challenge contains information about the open-source license and source of the Challenge.
+Special thanks to the original creators of the challenges. ❤️
