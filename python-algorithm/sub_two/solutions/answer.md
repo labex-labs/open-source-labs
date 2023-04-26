@@ -32,7 +32,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 We'll look at the following example, subtracting a and b:
 
 ```txt
-a 0110 = 6 
+a 0110 = 6
 b 0101 = 5
 ```
 

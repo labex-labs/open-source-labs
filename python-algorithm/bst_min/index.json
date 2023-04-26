@@ -1,59 +1,55 @@
 {
-    "type": "challenge",
-    "title": "Bst Min",
-    "description": "In computer science, a binary search tree (BST) is a binary tree data structure in which each node has at most two children, which are referred to as the left child and the right child. A binary search tree is a binary tree where the value of each node is greater than or equal to the values in its left subtree and less than or equal to the values in its right subtree. The height of a binary search tree is the number of edges between the tree's root and its furthest leaf. In this challenge, we will create a binary search tree with minimal height from a sorted array.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Bst Min",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check if all tests are passed",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have the correct output format.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "algorithm/graphs_trees"
-                ],
-                "solutions": [
-                    "answer.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Bst Min",
+  "description": "In computer science, a binary search tree (BST) is a binary tree data structure in which each node has at most two children, which are referred to as the left child and the right child. A binary search tree is a binary tree where the value of each node is greater than or equal to the values in its left subtree and less than or equal to the values in its right subtree. The height of a binary search tree is the number of edges between the tree's root and its furthest leaf. In this challenge, we will create a binary search tree with minimal height from a sorted array.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Bst Min",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": ["algorithm/graphs_trees"],
+        "solutions": ["answer.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_bst_min.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_bst_min.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "answer.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "answer.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "Apache-2.0",
-        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+  }
 }

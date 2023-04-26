@@ -28,7 +28,7 @@ Valid:
  4     6
         \
          7
-        
+
 Invalid:
       5
     /   \

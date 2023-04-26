@@ -6,7 +6,6 @@ from answer import *
 
 
 class TestQueue(unittest.TestCase):
-
     # TODO: It would be better if we had unit tests for each
     # method in addition to the following end-to-end test
     def test_end_to_end(self):

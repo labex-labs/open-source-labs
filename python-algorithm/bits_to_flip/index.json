@@ -1,59 +1,55 @@
 {
-    "type": "challenge",
-    "title": "Bits To Flip",
-    "description": "In computer science, bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a word. Bit manipulation is used in cryptography, error detection and correction algorithms, digital signal processing, and many other fields. In this challenge, we will determine the number of bits to flip to convert int a to int b.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Bits To Flip",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check if all tests are passed",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have the correct output format.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "algorithm/bit_manipulation"
-                ],
-                "solutions": [
-                    "answer.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Bits To Flip",
+  "description": "In computer science, bit manipulation is the act of algorithmically manipulating bits or other pieces of data shorter than a word. Bit manipulation is used in cryptography, error detection and correction algorithms, digital signal processing, and many other fields. In this challenge, we will determine the number of bits to flip to convert int a to int b.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Bits To Flip",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": ["algorithm/bit_manipulation"],
+        "solutions": ["answer.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_bits_to_flip.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_bits_to_flip.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "answer.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "answer.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "Apache-2.0",
-        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+  }
 }

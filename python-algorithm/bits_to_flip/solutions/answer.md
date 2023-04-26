@@ -27,7 +27,8 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 
 - A or B is None -> Exception
 - General case
-```txt
+
+````txt
     A = 11101
     B = 01111
     Result: 2
@@ -64,7 +65,7 @@ class Bits(object):
             count += c & 1
             c >>= 1
         return count
-```
+````
 
 ## Unit Test
 

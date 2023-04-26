@@ -33,7 +33,7 @@ Consider the following min heap:
         /      \
        20      25
       / \     /  \
-     22  40 
+     22  40
 ```
 
 - `insert(2)`: inserts the value 2 into the heap while maintaining the heap property. The resulting heap is:

@@ -20,6 +20,7 @@ Here are some examples of how to use this function:
 - 0 -> Exception
 - negative int -> Exception
 - General case:
+
 ```txt
     * Input:         0000 0000 1101 0111
     * Next largest:  0000 0000 1101 1011

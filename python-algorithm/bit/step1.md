@@ -53,6 +53,7 @@ Here are some examples of how to use the implemented functions:
   expected = 0b10000000
   ```
 - `update_bit`:
+
   ```
   number   = 0b10001110
   index = 3

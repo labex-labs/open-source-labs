@@ -1,59 +1,55 @@
 {
-    "type": "challenge",
-    "title": "Rotation",
-    "description": "In computer science, string rotation is a process of moving the characters in a string to the left or right. A string rotation of another string is a process of taking a string and moving its characters in a circular fashion. For example, the string \"abcde\" can be rotated to form the string \"cdeab\". In this challenge, we are going to determine if a string s1 is a rotation of another string s2.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Rotation",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check if all tests are passed",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have the correct output format.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "algorithm/arrays_strings"
-                ],
-                "solutions": [
-                    "answer.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Rotation",
+  "description": "In computer science, string rotation is a process of moving the characters in a string to the left or right. A string rotation of another string is a process of taking a string and moving its characters in a circular fashion. For example, the string \"abcde\" can be rotated to form the string \"cdeab\". In this challenge, we are going to determine if a string s1 is a rotation of another string s2.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Rotation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": ["algorithm/arrays_strings"],
+        "solutions": ["answer.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_rotation.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_rotation.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "answer.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "answer.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "Apache-2.0",
-        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+  }
 }

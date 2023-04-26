@@ -45,7 +45,7 @@ max value = 13
 items
   v | w
 b 4 | 2
-d 9 | 5 
+d 9 | 5
 ```
 
 ## Algorithm
@@ -58,7 +58,7 @@ The solution for the top down approach is also provided below.
 v = value
 w = weight
 
-               j              
+               j
     -------------------------------------------------
     | v | w || 0 | 1 | 2 | 3 | 4 | 5 | 6  | 7  | 8  |
     -------------------------------------------------

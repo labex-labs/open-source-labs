@@ -18,6 +18,7 @@ Problem: Given two 16 bit numbers, n and m, and two indices i, j, insert m into 
 - None as an input -> Exception
 - Negative index for i or j -> Exception
 - General case
+
 ```txt
 i      = 2
 j      = 6

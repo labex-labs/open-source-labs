@@ -1,59 +1,55 @@
 {
-    "type": "challenge",
-    "title": "Sort Stack",
-    "description": "In computer science, a stack is a data structure that follows the Last In First Out (LIFO) principle. Sorting a stack means arranging its elements in a specific order. In this challenge, we will sort a stack using another stack as a buffer.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Sort Stack",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check if all tests are passed",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have the correct output format.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "algorithm/stacks_queues"
-                ],
-                "solutions": [
-                    "answer.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Sort Stack",
+  "description": "In computer science, a stack is a data structure that follows the Last In First Out (LIFO) principle. Sorting a stack means arranging its elements in a specific order. In this challenge, we will sort a stack using another stack as a buffer.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Sort Stack",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": ["algorithm/stacks_queues"],
+        "solutions": ["answer.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_sort_stack.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_sort_stack.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "answer.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "answer.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "Apache-2.0",
-        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+  }
 }

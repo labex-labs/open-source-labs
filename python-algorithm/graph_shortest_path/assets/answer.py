@@ -41,7 +41,6 @@ class PriorityQueue(object):
 
 
 class State(Enum):
-
     unvisited = 0
     visiting = 1
     visited = 2

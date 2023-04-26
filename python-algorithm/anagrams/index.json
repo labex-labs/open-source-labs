@@ -1,59 +1,55 @@
 {
-    "type": "challenge",
-    "title": "Anagrams",
-    "description": "An anagram is a word or phrase formed by rearranging the letters of a different word or phrase. For example, \"listen\" and \"silent\" are anagrams of each other. In this challenge, we will be sorting an array of strings so that all anagrams are next to each other.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Anagrams",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check if all tests are passed",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have the correct output format.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [
-                    "algorithm/sorting_searching"
-                ],
-                "solutions": [
-                    "answer.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Anagrams",
+  "description": "An anagram is a word or phrase formed by rearranging the letters of a different word or phrase. For example, \"listen\" and \"silent\" are anagrams of each other. In this challenge, we will be sorting an array of strings so that all anagrams are next to each other.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Anagrams",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if all tests are passed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have the correct output format.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": ["algorithm/sorting_searching"],
+        "solutions": ["answer.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_anagrams.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_anagrams.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "answer.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "answer.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "Apache-2.0",
-        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
+  }
 }

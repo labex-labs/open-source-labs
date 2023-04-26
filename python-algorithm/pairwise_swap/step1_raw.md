@@ -21,6 +21,7 @@ Problem: Swap the odd and even bits of a positive integer with as few operations
 - 0 -> 0
 - -1 -> -1
 - General case
+
 ```txt
     input  = 1001 1111 0110
     result = 0110 1111 1001

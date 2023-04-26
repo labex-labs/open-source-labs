@@ -11,7 +11,6 @@ from enum import Enum
 
 
 class State(Enum):
-
     unvisited = 0
     visiting = 1
     visited = 2

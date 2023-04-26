@@ -33,7 +33,7 @@ max value = 13
 items
   v | w
 b 4 | 2
-d 9 | 5 
+d 9 | 5
 ```
 
 In this example, we have a knapsack with a total weight capacity of 8 and four items with their respective values and weights. We need to select the items that maximize the total value while keeping the weight within the capacity of the knapsack. The optimal solution is to select items b and d, which have a total value of 13 and a total weight of 7.

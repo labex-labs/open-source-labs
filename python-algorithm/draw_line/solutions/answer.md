@@ -84,12 +84,13 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 ```
 
 - Else
+
 ```txt
     If our starting partial byte is:
            0000 1111
 
     Build start mask:
-    
+
     start  0000 0001  1
            0001 0000  1 << 1 << start offset
            0000 1111  (1 << 1 << start offset) - 1
@@ -98,7 +99,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
            1111 1100
 
     Build end mask:
-    
+
     end    1000 0000  0x10000000
            1111 1100  0x10000000 >> end offset
 

@@ -2,7 +2,6 @@ from __future__ import division
 
 
 class Bits(object):
-
     MAX_BITS = 32
 
     def print_binary(self, num):

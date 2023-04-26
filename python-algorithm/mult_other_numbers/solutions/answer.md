@@ -60,7 +60,7 @@ results = [24]
 repeat for every element in the input list to obtain:
 
 [24, 12, 8, 6]
- 
+
 ```
 
 Complexity:
@@ -82,7 +82,7 @@ We'll then multiple these two together to form the result.
 input  = [1,         2,     3,     4]
 before = [1,         1,   1*2, 1*2*3]
 after  = [2*3*4, 1*3*4, 1*2*4,     1]
-result = [   24,    12,     8,     6] 
+result = [   24,    12,     8,     6]
 ```
 
 Complexity:

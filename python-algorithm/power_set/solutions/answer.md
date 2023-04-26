@@ -32,8 +32,8 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 * 'ab' -> ['a', 'ab', 'b', '']
 * 'abc' -> ['a', 'ab', 'abc', 'ac',
             'b', 'bc', 'c', '']
-* 'aabc' -> ['a', 'aa', 'aab', 'aabc', 
-             'aac', 'ab', 'abc', 'ac', 
+* 'aabc' -> ['a', 'aa', 'aab', 'aabc',
+             'aac', 'ab', 'abc', 'ac',
              'b', 'bc', 'c', '']
 ```
 

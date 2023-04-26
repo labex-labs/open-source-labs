@@ -30,14 +30,14 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
        20     15
       / \    /  \
      22  40 25
-     
+
 extract_min(): 5
 
           _15_
         /      \
        20      25
       / \     /  \
-     22  40 
+     22  40
 
 insert(2):
 
@@ -68,7 +68,7 @@ Move the right most element to the root: 25
         /      \
        20      15
       / \     /  \
-     22  40 
+     22  40
 
 Bubble down 25: Swap 25 and 15 (the smaller child)
 
@@ -76,7 +76,7 @@ Bubble down 25: Swap 25 and 15 (the smaller child)
         /      \
        20      25
       / \     /  \
-     22  40 
+     22  40
 
 Return 5
 ```
@@ -88,7 +88,7 @@ We'll use an array to represent the tree, here are the indices:
         /     \
        1       2
       / \     / \
-     3   4   
+     3   4
 ```
 
 To get to a child, we take 2 _ index + 1 (left child) or 2 _ index + 2 (right child).

@@ -19,8 +19,10 @@ Problem: Determine the number of bits to flip to convert int a to int b'.
 
 - A or B is None -> Exception
 - General case
-```txt
+
+````txt
     A = 11101
     B = 01111
     Result: 2
 ```txt
+````

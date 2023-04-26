@@ -44,8 +44,8 @@ Sort the chars for each item:
 Use a map of sorted chars to each item to group anagrams:
 
 {
-    'amr': ['ram', 'arm'], 
-    'act': ['act', 'cat'], 
+    'amr': ['ram', 'arm'],
+    'act': ['act', 'cat'],
     'abt': ['bat', 'tab']
 }
 

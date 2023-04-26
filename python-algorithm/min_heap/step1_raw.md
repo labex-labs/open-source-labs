@@ -22,14 +22,14 @@ Problem: Implement a min heap with extract_min and insert methods.
        20     15
       / \    /  \
      22  40 25
-     
+
 extract_min(): 5
 
           _15_
         /      \
        20      25
       / \     /  \
-     22  40 
+     22  40
 
 insert(2):
 

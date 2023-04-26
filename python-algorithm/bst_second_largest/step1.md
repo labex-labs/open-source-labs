@@ -25,7 +25,7 @@ Here are some examples of how to use this function:
 ```txt
 Input:
                 _10_
-              _/    \_          
+              _/    \_
              5        15
             / \       / \
            3   8     12  20
@@ -36,7 +36,7 @@ Output: 20
 
 Input:
                  10
-                 /  
+                 /
                 5
                / \
               3   7

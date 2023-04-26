@@ -27,10 +27,10 @@ Problem: Given a list of stock prices on each consecutive day, determine the max
     * (0, [])
 * Prices: [2, 5, 7, 1, 4, 3, 1, 3] k: 3
     * (max profit, list of transactions)
-    * (10, [Type.SELL day: 7 price: 3, 
-            Type.BUY  day: 6 price: 1, 
-            Type.SELL day: 4 price: 4, 
-            Type.BUY  day: 3 price: 1, 
-            Type.SELL day: 2 price: 7, 
+    * (10, [Type.SELL day: 7 price: 3,
+            Type.BUY  day: 6 price: 1,
+            Type.SELL day: 4 price: 4,
+            Type.BUY  day: 3 price: 1,
+            Type.SELL day: 2 price: 7,
             Type.BUY  day: 0 price: 2])
 ```

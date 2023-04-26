@@ -37,5 +37,5 @@ max value = 13
 items
   v | w
 b 4 | 2
-d 9 | 5 
+d 9 | 5
 ```

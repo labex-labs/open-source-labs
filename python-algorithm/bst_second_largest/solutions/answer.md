@@ -28,7 +28,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 ```txt
 Input:
                 _10_
-              _/    \_          
+              _/    \_
              5        15
             / \       / \
            3   8     12  20
@@ -39,7 +39,7 @@ Output: 20
 
 Input:
                  10
-                 /  
+                 /
                 5
                / \
               3   7
@@ -53,7 +53,7 @@ Output: 7
 If there is no right node, the second largest is the right most left subtree:
 
                  10
-                 /  
+                 /
                 5
                / \
               3   7
@@ -61,7 +61,7 @@ If there is no right node, the second largest is the right most left subtree:
 If there is a right node and the right node has children, recurse to that right child:
 
                 _10_
-              _/    \_          
+              _/    \_
              5        15
             / \       / \
            3   8     12  20

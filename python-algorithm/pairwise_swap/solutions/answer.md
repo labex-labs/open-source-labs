@@ -29,7 +29,8 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
 - 0 -> 0
 - -1 -> -1
 - General case
-```txt
+
+````txt
     input  = 0000 1001 1111 0110
     result = 0000 0110 1111 1001
 ```txt
@@ -60,7 +61,7 @@ This notebook was prepared by [Donne Martin](https://github.com/donnemartin). So
     0000 0010 1010 1000  even
     --------------------------------
     0000 0110 1111 1001  odd | even
-```
+````
 
 Complexity:
 

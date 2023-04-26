@@ -24,7 +24,6 @@ class Period(object):
 
 
 class EventType(Enum):
-
     ENTER = 0
     EXIT = 1
 

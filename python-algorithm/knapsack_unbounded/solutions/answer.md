@@ -42,7 +42,7 @@ a 1 | 1
 b 3 | 2
 c 7 | 4
 
-max value = 14 
+max value = 14
 ```
 
 ## Algorithm
@@ -56,7 +56,7 @@ Taking what we learned with the 0/1 knapsack problem, we could solve the problem
 v = value
 w = weight
 
-               j              
+               j
     -------------------------------------------------
     | v | w || 0 | 1 | 2 | 3 | 4 | 5 |  6 |  7 |  8  |
     -------------------------------------------------

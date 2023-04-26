@@ -34,5 +34,5 @@ a 1 | 1
 b 3 | 2
 c 7 | 4
 
-max value = 14 
+max value = 14
 ```

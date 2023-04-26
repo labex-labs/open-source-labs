@@ -19,18 +19,18 @@ To generate the power set of a set, we need to meet the following requirements:
 ```txt
 * None -> None
 * [] -> [[]]
-* ['a'] -> [[], 
+* ['a'] -> [[],
             ['a']]
-* ['a', 'b'] -> [[], 
-                 ['a'], 
-                 ['b'], 
+* ['a', 'b'] -> [[],
+                 ['a'],
+                 ['b'],
                  ['a', 'b']]
-* ['a', 'b', 'c'] -> [[], 
-                      ['a'], 
-                      ['b'], 
+* ['a', 'b', 'c'] -> [[],
+                      ['a'],
+                      ['b'],
                       ['c'],
-                      ['a', 'b'], 
-                      ['a', 'c'], 
+                      ['a', 'b'],
+                      ['a', 'c'],
                       ['b', 'c'],
                       ['a', 'b', 'c']]
 ```

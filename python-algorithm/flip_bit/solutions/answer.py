@@ -1,5 +1,4 @@
 class Bits(object):
-
     MAX_BITS = 32
 
     def _build_seen_list(self, num):
