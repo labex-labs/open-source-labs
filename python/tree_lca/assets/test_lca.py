@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestLowestCommonAncestor(unittest.TestCase):
-
     def test_lca(self):
         node10 = Node(10)
         node5 = Node(5)
@@ -36,7 +36,7 @@ class TestLowestCommonAncestor(unittest.TestCase):
         self.assertEqual(binary_tree.lca(root, node12, node40), node10)
         self.assertEqual(binary_tree.lca(root, node9, node20), node9)
         self.assertEqual(binary_tree.lca(root, node3, node5), node5)
-        print('Success: test_lca')
+        print("Success: test_lca")
 
 
 def main():
@@ -44,5 +44,5 @@ def main():
     test.test_lca()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

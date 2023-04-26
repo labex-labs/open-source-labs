@@ -1,12 +1,10 @@
 class Node(object):
-
     def __init__(self, data):
         # TODO: Implement me
         pass
 
 
 class Stack(object):
-
     def __init__(self, top=None):
         # TODO: Implement me
         pass

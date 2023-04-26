@@ -1,34 +1,34 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestPalindrome(unittest.TestCase):
-
     def test_palindrome(self):
-        print('Test: Empty list')
+        print("Test: Empty list")
         linked_list = MyLinkedList()
         self.assertEqual(linked_list.is_palindrome(), False)
 
-        print('Test: Single element list')
+        print("Test: Single element list")
         head = Node(1)
         linked_list = MyLinkedList(head)
         self.assertEqual(linked_list.is_palindrome(), False)
 
-        print('Test: Two element list, not a palindrome')
+        print("Test: Two element list, not a palindrome")
         linked_list.append(2)
         self.assertEqual(linked_list.is_palindrome(), False)
 
-        print('Test: General case: Palindrome with even length')
-        head = Node('a')
+        print("Test: General case: Palindrome with even length")
+        head = Node("a")
         linked_list = MyLinkedList(head)
-        linked_list.append('b')
-        linked_list.append('b')
-        linked_list.append('a')
+        linked_list.append("b")
+        linked_list.append("b")
+        linked_list.append("a")
         self.assertEqual(linked_list.is_palindrome(), True)
 
-        print('Test: General case: Palindrome with odd length')
+        print("Test: General case: Palindrome with odd length")
         head = Node(1)
         linked_list = MyLinkedList(head)
         linked_list.append(2)
@@ -37,7 +37,7 @@ class TestPalindrome(unittest.TestCase):
         linked_list.append(1)
         self.assertEqual(linked_list.is_palindrome(), True)
 
-        print('Success: test_palindrome')
+        print("Success: test_palindrome")
 
 
 def main():
@@ -45,5 +45,5 @@ def main():
     test.test_palindrome()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestSolution(unittest.TestCase):
-
     def test_find_busiest_period(self):
         solution = Solution()
         self.assertRaises(TypeError, solution.find_busiest_period, None)
@@ -19,7 +19,7 @@ class TestSolution(unittest.TestCase):
             Data(8, 2, EventType.EXIT),
         ]
         self.assertEqual(solution.find_busiest_period(data), Period(7, 8))
-        print('Success: test_find_busiest_period')
+        print("Success: test_find_busiest_period")
 
 
 def main():
@@ -27,5 +27,5 @@ def main():
     test.test_find_busiest_period()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data, next_node=None):
         pass
         # TODO: Implement me
@@ -10,7 +9,6 @@ class Node(object):
 
 
 class LinkedList(object):
-
     def __init__(self, head=None):
         pass
         # TODO: Implement me

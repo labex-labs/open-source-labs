@@ -1,10 +1,9 @@
 class Solution(object):
-
     def add_digits(self, num):
         if num is None:
-            raise TypeError('num cannot be None')
+            raise TypeError("num cannot be None")
         if num < 0:
-            raise ValueError('num cannot be negative')
+            raise ValueError("num cannot be negative")
         digits = []
         while num != 0:
             digits.append(num % 10)
@@ -17,9 +16,9 @@ class Solution(object):
 
     def add_digits_optimized(self, num):
         if num is None:
-            raise TypeError('num cannot be None')
+            raise TypeError("num cannot be None")
         if num < 0:
-            raise ValueError('num cannot be negative')
+            raise ValueError("num cannot be negative")
         if num == 0:
             return 0
         elif num % 9 == 0:

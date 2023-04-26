@@ -1,8 +1,7 @@
 class Array(object):
-
     def search_sorted_array(self, array, val):
         if array is None or val is None:
-            raise TypeError('array or val cannot be None')
+            raise TypeError("array or val cannot be None")
         if not array:
             return None
         return self._search_sorted_array(array, val, start=0, end=len(array) - 1)

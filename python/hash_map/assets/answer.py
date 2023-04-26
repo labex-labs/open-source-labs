@@ -1,12 +1,10 @@
 class Item(object):
-
     def __init__(self, key, value):
         # TODO: Implement me
         pass
 
 
 class HashTable(object):
-
     def __init__(self, size):
         # TODO: Implement me
         pass

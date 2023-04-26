@@ -1,10 +1,9 @@
 class Solution(object):
-
     def longest_substr(self, string, k):
         if string is None:
-            raise TypeError('string cannot be None')
+            raise TypeError("string cannot be None")
         if k is None:
-            raise TypeError('k cannot be None')
+            raise TypeError("k cannot be None")
         low_index = 0
         max_length = 0
         chars_to_index_map = {}

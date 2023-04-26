@@ -1,14 +1,13 @@
 import sys
 
-class Node(object):
 
+class Node(object):
     def __init__(self, data, next=None):
         self.data = data
         self.next = next
 
 
 class Stack(object):
-
     def __init__(self, top=None):
         self.top = top
 
@@ -30,7 +29,6 @@ class Stack(object):
 
 
 class StackMin(Stack):
-
     def __init__(self, top=None):
         # TODO: Implement me
         pass

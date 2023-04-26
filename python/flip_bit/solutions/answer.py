@@ -1,7 +1,7 @@
 class Bits(object):
 
     MAX_BITS = 32
-    
+
     def _build_seen_list(self, num):
         seen = []
         looking_for = 0
@@ -15,10 +15,10 @@ class Bits(object):
             num >>= 1
         seen.append(count)
         return seen
-    
+
     def flip_bit(self, num):
         if num is None:
-            raise TypeError('num cannot be None')
+            raise TypeError("num cannot be None")
         if num == -1:
             return self.MAX_BITS
         if num == 0:

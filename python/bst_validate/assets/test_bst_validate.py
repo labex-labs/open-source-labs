@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestBstValidate(unittest.TestCase):
-
     def test_bst_validate_empty(self):
         bst = BstValidate(None)
         bst.validate()
@@ -28,7 +28,7 @@ class TestBstValidate(unittest.TestCase):
         bst.root.left.right = invalid
         self.assertEqual(bst.validate(), False)
 
-        print('Success: test_bst_validate')
+        print("Success: test_bst_validate")
 
 
 def main():
@@ -37,5 +37,5 @@ def main():
     test.test_bst_validate()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

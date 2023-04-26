@@ -1,8 +1,7 @@
 class Solution(object):
-
     def move_zeroes(self, nums):
         if nums is None:
-            raise TypeError('nums cannot be None')
+            raise TypeError("nums cannot be None")
         pos = 0
         for num in nums:
             if num != 0:

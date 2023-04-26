@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestGraph(unittest.TestCase):
-
     def create_graph(self):
         graph = Graph()
         for key in range(0, 6):
@@ -48,7 +48,7 @@ class TestGraph(unittest.TestCase):
 
         self.assertEqual(graph.nodes[0] < graph.nodes[1], True)
 
-        print('Success: test_graph')
+        print("Success: test_graph")
 
     def test_graph_undirected(self):
         graph = self.create_graph()
@@ -63,7 +63,7 @@ class TestGraph(unittest.TestCase):
         self.assertEqual(graph.nodes[1].adj_weights[graph.nodes[2].key], 3)
         self.assertEqual(graph.nodes[2].adj_weights[graph.nodes[1].key], 3)
 
-        print('Success: test_graph_undirected')
+        print("Success: test_graph_undirected")
 
 
 def main():
@@ -72,5 +72,5 @@ def main():
     test.test_graph_undirected()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

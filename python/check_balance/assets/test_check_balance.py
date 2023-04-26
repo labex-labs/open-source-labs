@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestCheckBalance(unittest.TestCase):
-
     def test_check_balance_empty(self):
         bst = BstBalance(None)
         bst.check_balance()
@@ -36,7 +36,7 @@ class TestCheckBalance(unittest.TestCase):
         bst.insert(7)
         self.assertEqual(bst.check_balance(), True)
 
-        print('Success: test_check_balance')
+        print("Success: test_check_balance")
 
 
 def main():
@@ -45,5 +45,5 @@ def main():
     test.test_check_balance()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

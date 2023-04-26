@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data, next=None):
         self.next = next
         self.data = data
@@ -9,7 +8,6 @@ class Node(object):
 
 
 class LinkedList(object):
-
     def __init__(self, head=None):
         self.head = head
 
@@ -98,9 +96,7 @@ class LinkedList(object):
         return data
 
 
-
 class MyLinkedList(LinkedList):
-
     def is_palindrome(self):
         if self.head is None or self.head.next is None:
             return False

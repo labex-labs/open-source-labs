@@ -9,7 +9,6 @@ class State(Enum):
 
 
 class Node:
-
     def __init__(self, key):
         self.key = key
         self.visit_state = State.unvisited
@@ -33,7 +32,6 @@ class Node:
 
 
 class Graph:
-
     def __init__(self):
         self.nodes = {}  # Key = key, val = Node
 

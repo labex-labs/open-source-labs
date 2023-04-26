@@ -1,8 +1,7 @@
 class Solution(object):
-
     def mult_other_numbers_brute(self, array):
         if array is None:
-            raise TypeError('array cannot be None')
+            raise TypeError("array cannot be None")
         if not array:
             return array
         if len(array) == 1:
@@ -19,7 +18,7 @@ class Solution(object):
 
     def mult_other_numbers(self, array):
         if array is None:
-            raise TypeError('array cannot be None')
+            raise TypeError("array cannot be None")
         if not array:
             return array
         if len(array) == 1:

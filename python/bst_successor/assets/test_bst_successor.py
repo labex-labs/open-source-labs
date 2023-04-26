@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestBstSuccessor(unittest.TestCase):
-
     def test_bst_successor_empty(self):
         bst_successor = BstSuccessor()
         bst_successor.get_next(None)
@@ -33,7 +33,7 @@ class TestBstSuccessor(unittest.TestCase):
         self.assertEqual(bst_successor.get_next(nodes[8]), 9)
         self.assertEqual(bst_successor.get_next(nodes[15]), None)
 
-        print('Success: test_bst_successor')
+        print("Success: test_bst_successor")
 
 
 def main():
@@ -42,5 +42,5 @@ def main():
     test.assertRaises(TypeError, test.test_bst_successor_empty)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

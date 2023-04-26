@@ -1,31 +1,41 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestPowerSet(unittest.TestCase):
-
     def test_power_set(self):
-        input_set = ''
-        expected = ['']
+        input_set = ""
+        expected = [""]
         self.run_test(input_set, expected)
-        input_set = 'a'
-        expected = ['a', '']
+        input_set = "a"
+        expected = ["a", ""]
         self.run_test(input_set, expected)
-        input_set = 'ab'
-        expected = ['a', 'ab', 'b', '']
+        input_set = "ab"
+        expected = ["a", "ab", "b", ""]
         self.run_test(input_set, expected)
-        input_set = 'abc'
-        expected = ['a', 'ab', 'abc', 'ac',
-                    'b', 'bc', 'c', '']
+        input_set = "abc"
+        expected = ["a", "ab", "abc", "ac", "b", "bc", "c", ""]
         self.run_test(input_set, expected)
-        input_set = 'aabc'
-        expected = ['a', 'aa', 'aab', 'aabc', 
-                    'aac', 'ab', 'abc', 'ac', 
-                    'b', 'bc', 'c', '']
+        input_set = "aabc"
+        expected = [
+            "a",
+            "aa",
+            "aab",
+            "aabc",
+            "aac",
+            "ab",
+            "abc",
+            "ac",
+            "b",
+            "bc",
+            "c",
+            "",
+        ]
         self.run_test(input_set, expected)
-        print('Success: test_power_set')
+        print("Success: test_power_set")
 
     def run_test(self, input_set, expected):
         combinatoric = Combinatoric()
@@ -38,5 +48,5 @@ def main():
     test.test_power_set()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

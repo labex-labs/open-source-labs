@@ -1,12 +1,10 @@
 class Node(object):
-
     def __init__(self, data, next=None):
         self.data = data
         self.next = next
 
 
 class Stack(object):
-
     def __init__(self, top=None):
         self.top = top
 
@@ -26,8 +24,8 @@ class Stack(object):
     def is_empty(self):
         return self.peek() is None
 
-class MyStack(Stack):
 
+class MyStack(Stack):
     def sort(self):
         buff = MyStack()
         while not self.is_empty():
@@ -39,8 +37,9 @@ class MyStack(Stack):
                     self.push(buff.pop())
                 buff.push(temp)
         return buff
-class MyStackSimplified(Stack):
 
+
+class MyStackSimplified(Stack):
     def sort(self):
         buff = MyStack()
         while not self.is_empty():

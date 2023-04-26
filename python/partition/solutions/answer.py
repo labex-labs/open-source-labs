@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data, next=None):
         self.next = next
         self.data = data
@@ -9,7 +8,6 @@ class Node(object):
 
 
 class LinkedList(object):
-
     def __init__(self, head=None):
         self.head = head
 
@@ -97,8 +95,8 @@ class LinkedList(object):
             curr_node = curr_node.next
         return data
 
-class MyLinkedList(LinkedList):
 
+class MyLinkedList(LinkedList):
     def partition(self, data):
         if self.head is None:
             return

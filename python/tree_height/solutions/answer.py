@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data):
         self.data = data
         self.left = None
@@ -11,13 +10,12 @@ class Node(object):
 
 
 class Bst(object):
-
     def __init__(self, root=None):
         self.root = root
 
     def insert(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         if self.root is None:
             self.root = Node(data)
             return self.root
@@ -42,10 +40,9 @@ class Bst(object):
             else:
                 return self._insert(node.right, data)
 
-class BstHeight(Bst):
 
+class BstHeight(Bst):
     def height(self, node):
         if node is None:
             return 0
-        return 1 + max(self.height(node.left),
-                       self.height(node.right))
+        return 1 + max(self.height(node.left), self.height(node.right))

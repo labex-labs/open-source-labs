@@ -2,10 +2,9 @@ import math
 
 
 class PrimeGenerator(object):
-
     def generate_primes(self, max_num):
         if max_num is None:
-            raise TypeError('max_num cannot be None')
+            raise TypeError("max_num cannot be None")
         array = [True] * max_num
         array[0] = False
         array[1] = False
@@ -16,7 +15,7 @@ class PrimeGenerator(object):
         return array
 
     def _cross_off(self, array, prime):
-        for index in range(prime*prime, len(array), prime):
+        for index in range(prime * prime, len(array), prime):
             # Start with prime*prime because if we have a k*prime
             # where k < prime, this value would have already been
             # previously crossed off

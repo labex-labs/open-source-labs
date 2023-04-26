@@ -1,5 +1,4 @@
 class Math(object):
-
     def fib_iterative(self, n):
         # TODO: Implement me
         pass

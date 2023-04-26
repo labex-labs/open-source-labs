@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestBits(unittest.TestCase):
-
     def test_new_int(self):
         bits = Bits()
         max_size = 32
@@ -16,7 +16,7 @@ class TestBits(unittest.TestCase):
         self.assertEqual(bits.new_int(data, max_size), 30)
         data = [item for item in range(32)]
         self.assertEqual(bits.new_int(data, max_size), None)
-        print('Success: test_find_int_excluded_from_input')
+        print("Success: test_find_int_excluded_from_input")
 
 
 def main():
@@ -24,5 +24,5 @@ def main():
     test.test_new_int()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

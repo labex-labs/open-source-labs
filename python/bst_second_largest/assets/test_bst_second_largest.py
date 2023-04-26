@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestBstSecondLargest(unittest.TestCase):
-
     def test_bst_second_largest(self):
         bst = Solution(None)
         self.assertRaises(TypeError, bst.find_second_largest)
@@ -27,7 +27,7 @@ class TestBstSecondLargest(unittest.TestCase):
         node3 = bst.insert(3)
         node7 = bst.insert(7)
         self.assertEqual(bst.find_second_largest(), node7)
-        print('Success: test_bst_second_largest')
+        print("Success: test_bst_second_largest")
 
 
 def main():
@@ -35,5 +35,5 @@ def main():
     test.test_bst_second_largest()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestMergeRanges(unittest.TestCase):
-
     def test_merge_ranges(self):
         solution = Solution()
         self.assertRaises(TypeError, solution.merge_ranges, None)
@@ -19,7 +19,7 @@ class TestMergeRanges(unittest.TestCase):
         array = [(2, 3), (3, 5), (7, 9), (8, 10), (1, 11)]
         expected = [(1, 11)]
         self.assertEqual(solution.merge_ranges(array), expected)
-        print('Success: test_merge_ranges')
+        print("Success: test_merge_ranges")
 
 
 def main():
@@ -27,5 +27,5 @@ def main():
     test.test_merge_ranges()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

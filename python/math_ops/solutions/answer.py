@@ -2,7 +2,6 @@ from __future__ import division
 
 
 class Solution(object):
-
     def __init__(self, upper_limit=100):
         self.max = None
         self.min = None
@@ -17,7 +16,7 @@ class Solution(object):
 
     def insert(self, val):
         if val is None:
-            raise TypeError('val cannot be None')
+            raise TypeError("val cannot be None")
         if self.max is None or val > self.max:
             self.max = val
         if self.min is None or val < self.min:

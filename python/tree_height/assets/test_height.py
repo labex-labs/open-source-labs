@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestHeight(unittest.TestCase):
-
     def test_height(self):
         bst = BstHeight(Node(5))
         self.assertEqual(bst.height(bst.root), 1)
@@ -15,7 +15,7 @@ class TestHeight(unittest.TestCase):
         bst.insert(3)
         self.assertEqual(bst.height(bst.root), 3)
 
-        print('Success: test_height')
+        print("Success: test_height")
 
 
 def main():
@@ -23,5 +23,5 @@ def main():
     test.test_height()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

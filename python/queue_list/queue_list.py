@@ -1,12 +1,10 @@
 class Node(object):
-
     def __init__(self, data):
         self.data = data
         self.next = None
 
 
 class Queue(object):
-
     def __init__(self):
         self.head = None
         self.tail = None

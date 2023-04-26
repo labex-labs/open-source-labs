@@ -1,5 +1,4 @@
 class Stacks(object):
-
     def __init__(self, num_stacks, stack_size):
         # TODO: Implement me
         pass

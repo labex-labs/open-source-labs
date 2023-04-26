@@ -1,5 +1,4 @@
 class Solution(object):
-
     def max_xor(self, lower, upper):
         result = 0
         for l in range(lower, upper + 1):

@@ -1,8 +1,7 @@
 class SortedMatrix(object):
-
     def find_val(self, matrix, val):
         if matrix is None or val is None:
-            raise TypeError('matrix and val cannot be None')
+            raise TypeError("matrix and val cannot be None")
         row = 0
         col = len(matrix[0]) - 1
         while row < len(matrix) and col >= 0:

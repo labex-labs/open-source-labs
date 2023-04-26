@@ -1,5 +1,4 @@
 class Solution(object):
-
     def __init__(self, upper_limit=100):
         # TODO: Implement me
         pass

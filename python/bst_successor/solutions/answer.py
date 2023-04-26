@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data):
         self.data = data
         self.left = None
@@ -11,13 +10,12 @@ class Node(object):
 
 
 class Bst(object):
-
     def __init__(self, root=None):
         self.root = root
 
     def insert(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         if self.root is None:
             self.root = Node(data)
             return self.root
@@ -42,11 +40,11 @@ class Bst(object):
             else:
                 return self._insert(node.right, data)
 
-class BstSuccessor(object):
 
+class BstSuccessor(object):
     def get_next(self, node):
         if node is None:
-            raise TypeError('node cannot be None')
+            raise TypeError("node cannot be None")
         if node.right is not None:
             return self._left_most(node.right)
         else:

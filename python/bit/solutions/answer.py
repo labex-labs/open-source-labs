@@ -2,16 +2,16 @@ def validate_index(func):
     def validate_index_wrapper(self, *args, **kwargs):
         for arg in args:
             if arg < 0:
-                raise IndexError('Invalid index')
+                raise IndexError("Invalid index")
         return func(self, *args, **kwargs)
+
     return validate_index_wrapper
 
 
 class Bit(object):
-
     def __init__(self, number):
         if number is None:
-            raise TypeError('number cannot be None')
+            raise TypeError("number cannot be None")
         self.number = number
 
     @validate_index
@@ -46,7 +46,7 @@ class Bit(object):
     @validate_index
     def update_bit(self, index, value):
         if value is None or value not in (0, 1):
-            raise Exception('Invalid value')
+            raise Exception("Invalid value")
         if self.get_bit(index) == value:
             return self.number
         if value:

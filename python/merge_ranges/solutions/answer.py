@@ -1,8 +1,7 @@
 class Solution(object):
-
     def merge_ranges(self, array):
         if array is None:
-            raise TypeError('array cannot be None')
+            raise TypeError("array cannot be None")
         if not array:
             return array
         sorted_array = sorted(array)

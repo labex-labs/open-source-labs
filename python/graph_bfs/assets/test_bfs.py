@@ -1,11 +1,11 @@
 from answer import *
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 
 
 class Results(object):
-
     def __init__(self):
         self.results = []
 
@@ -23,7 +23,6 @@ class Results(object):
 
 
 class TestBfs(unittest.TestCase):
-
     def __init__(self, *args, **kwargs):
         super(TestBfs, self).__init__()
         self.results = Results()
@@ -44,7 +43,7 @@ class TestBfs(unittest.TestCase):
         graph.bfs(nodes[0], self.results.add_result)
         self.assertEqual(str(self.results), "[0, 1, 4, 5, 3, 2]")
 
-        print('Success: test_bfs')
+        print("Success: test_bfs")
 
 
 def main():
@@ -52,5 +51,5 @@ def main():
     test.test_bfs()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

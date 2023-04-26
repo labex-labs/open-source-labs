@@ -1,5 +1,6 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
@@ -9,18 +10,18 @@ class TestStack(unittest.TestCase):
     # TODO: It would be better if we had unit tests for each
     # method in addition to the following end-to-end test
     def test_end_to_end(self):
-        print('Test: Empty stack')
+        print("Test: Empty stack")
         stack = Stack()
         self.assertEqual(stack.peek(), None)
         self.assertEqual(stack.pop(), None)
 
-        print('Test: One element')
+        print("Test: One element")
         top = Node(5)
         stack = Stack(top)
         self.assertEqual(stack.pop(), 5)
         self.assertEqual(stack.peek(), None)
 
-        print('Test: More than one element')
+        print("Test: More than one element")
         stack = Stack()
         stack.push(1)
         stack.push(2)
@@ -34,7 +35,7 @@ class TestStack(unittest.TestCase):
         self.assertEqual(stack.peek(), None)
         self.assertEqual(stack.is_empty(), True)
 
-        print('Success: test_end_to_end')
+        print("Success: test_end_to_end")
 
 
 def main():
@@ -42,5 +43,5 @@ def main():
     test.test_end_to_end()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

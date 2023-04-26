@@ -1,22 +1,22 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestRemoveDupes(unittest.TestCase):
-
     def test_remove_dupes(self, linked_list):
-        print('Test: Empty list')
+        print("Test: Empty list")
         linked_list.remove_dupes()
         self.assertEqual(linked_list.get_all_data(), [])
 
-        print('Test: One element list')
+        print("Test: One element list")
         linked_list.insert_to_front(2)
         linked_list.remove_dupes()
         self.assertEqual(linked_list.get_all_data(), [2])
 
-        print('Test: General case, duplicates')
+        print("Test: General case, duplicates")
         linked_list.insert_to_front(1)
         linked_list.insert_to_front(1)
         linked_list.insert_to_front(3)
@@ -27,11 +27,11 @@ class TestRemoveDupes(unittest.TestCase):
         linked_list.remove_dupes()
         self.assertEqual(linked_list.get_all_data(), [1, 3, 2])
 
-        print('Test: General case, no duplicates')
+        print("Test: General case, no duplicates")
         linked_list.remove_dupes()
         self.assertEqual(linked_list.get_all_data(), [1, 3, 2])
 
-        print('Success: test_remove_dupes\n')
+        print("Success: test_remove_dupes\n")
 
 
 def main():
@@ -40,5 +40,5 @@ def main():
     test.test_remove_dupes(linked_list)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,12 +1,10 @@
 class Node(object):
-
     def __init__(self, data, next=None):
         self.data = data
         self.next = next
 
 
 class Stack(object):
-
     def __init__(self, top=None):
         self.top = top
 
@@ -26,8 +24,8 @@ class Stack(object):
     def is_empty(self):
         return self.peek() is None
 
-class StackWithCapacity(Stack):
 
+class StackWithCapacity(Stack):
     def __init__(self, top=None, capacity=10):
         # TODO: Implement me
         pass
@@ -46,7 +44,6 @@ class StackWithCapacity(Stack):
 
 
 class SetOfStacks(object):
-
     def __init__(self, indiv_stack_capacity):
         # TODO: Implement me
         pass

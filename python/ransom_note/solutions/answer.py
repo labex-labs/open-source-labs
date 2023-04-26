@@ -1,8 +1,7 @@
 class Solution(object):
-
     def match_note_to_magazine(self, ransom_note, magazine):
         if ransom_note is None or magazine is None:
-            raise TypeError('ransom_note or magazine cannot be None')
+            raise TypeError("ransom_note or magazine cannot be None")
         seen_chars = {}
         for char in magazine:
             if char in seen_chars:

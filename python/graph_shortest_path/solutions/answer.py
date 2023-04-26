@@ -1,18 +1,17 @@
 import sys
 from enum import Enum
 
-class PriorityQueueNode(object):
 
+class PriorityQueueNode(object):
     def __init__(self, obj, key):
         self.obj = obj
         self.key = key
 
     def __repr__(self):
-        return str(self.obj) + ': ' + str(self.key)
+        return str(self.obj) + ": " + str(self.key)
 
 
 class PriorityQueue(object):
-
     def __init__(self):
         self.array = []
 
@@ -49,7 +48,6 @@ class State(Enum):
 
 
 class Node:
-
     def __init__(self, key):
         self.key = key
         self.visit_state = State.unvisited
@@ -65,36 +63,35 @@ class Node:
 
     def add_neighbor(self, neighbor, weight=0):
         if neighbor is None or weight is None:
-            raise TypeError('neighbor or weight cannot be None')
+            raise TypeError("neighbor or weight cannot be None")
         neighbor.incoming_edges += 1
         self.adj_weights[neighbor.key] = weight
         self.adj_nodes[neighbor.key] = neighbor
 
     def remove_neighbor(self, neighbor):
         if neighbor is None:
-            raise TypeError('neighbor cannot be None')
+            raise TypeError("neighbor cannot be None")
         if neighbor.key not in self.adj_nodes:
-            raise KeyError('neighbor not found')
+            raise KeyError("neighbor not found")
         neighbor.incoming_edges -= 1
         del self.adj_weights[neighbor.key]
         del self.adj_nodes[neighbor.key]
 
 
 class Graph:
-
     def __init__(self):
         self.nodes = {}  # Key = key, val = Node
 
     def add_node(self, key):
         if key is None:
-            raise TypeError('key cannot be None')
+            raise TypeError("key cannot be None")
         if key not in self.nodes:
             self.nodes[key] = Node(key)
         return self.nodes[key]
 
     def add_edge(self, source_key, dest_key, weight=0):
         if source_key is None or dest_key is None:
-            raise KeyError('Invalid key')
+            raise KeyError("Invalid key")
         if source_key not in self.nodes:
             self.add_node(source_key)
         if dest_key not in self.nodes:
@@ -103,17 +100,15 @@ class Graph:
 
     def add_undirected_edge(self, src_key, dst_key, weight=0):
         if src_key is None or dst_key is None:
-            raise TypeError('key cannot be None')
+            raise TypeError("key cannot be None")
         self.add_edge(src_key, dst_key, weight)
         self.add_edge(dst_key, src_key, weight)
 
 
-
 class ShortestPath(object):
-
     def __init__(self, graph):
         if graph is None:
-            raise TypeError('graph cannot be None')
+            raise TypeError("graph cannot be None")
         self.graph = graph
         self.previous = {}  # Key: node key, val: prev node key, shortest path
         self.path_weight = {}  # Key: node key, val: weight, shortest path
@@ -124,15 +119,16 @@ class ShortestPath(object):
             # Add each node's shortest path weight to the priority queue
             self.previous[key] = None
             self.path_weight[key] = sys.maxsize
-            self.remaining.insert(
-                PriorityQueueNode(key, self.path_weight[key]))
+            self.remaining.insert(PriorityQueueNode(key, self.path_weight[key]))
 
     def find_shortest_path(self, start_node_key, end_node_key):
         if start_node_key is None or end_node_key is None:
-            raise TypeError('Input node keys cannot be None')
-        if (start_node_key not in self.graph.nodes or
-                end_node_key not in self.graph.nodes):
-            raise ValueError('Invalid start or end node key')
+            raise TypeError("Input node keys cannot be None")
+        if (
+            start_node_key not in self.graph.nodes
+            or end_node_key not in self.graph.nodes
+        ):
+            raise ValueError("Invalid start or end node key")
         # Set the start node's shortest path weight to 0
         # and update the value in the priority queue
         self.path_weight[start_node_key] = 0
@@ -147,8 +143,9 @@ class ShortestPath(object):
                 # Node's path:
                 # Adjacent node's edge weight + the min node's
                 # shortest path weight
-                new_weight = (min_node.adj_weights[adj_key] +
-                    self.path_weight[min_node_key])
+                new_weight = (
+                    min_node.adj_weights[adj_key] + self.path_weight[min_node_key]
+                )
                 # Only update if the newly calculated path is
                 # less than the existing node's shortest path
                 if self.path_weight[adj_key] > new_weight:

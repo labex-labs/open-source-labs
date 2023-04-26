@@ -1,10 +1,9 @@
 class Bits(object):
-
     def insert_m_into_n(self, m, n, i, j):
         if None in (m, n, i, j):
-            raise TypeError('Argument cannot be None')
+            raise TypeError("Argument cannot be None")
         if i < 0 or j < 0:
-            raise ValueError('Index cannot be negative')
+            raise ValueError("Index cannot be negative")
         left_mask = -1 << (j + 1)
         right_mask = (1 << i) - 1
         n_mask = left_mask | right_mask

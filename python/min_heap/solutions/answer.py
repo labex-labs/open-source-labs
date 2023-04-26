@@ -1,5 +1,4 @@
 class MinHeap(object):
-
     def __init__(self):
         self.array = []
 
@@ -22,7 +21,7 @@ class MinHeap(object):
 
     def insert(self, key):
         if key is None:
-            raise TypeError('key cannot be None')
+            raise TypeError("key cannot be None")
         self.array.append(key)
         self._bubble_up(index=len(self.array) - 1)
 
@@ -32,8 +31,10 @@ class MinHeap(object):
         index_parent = (index - 1) // 2
         if self.array[index] < self.array[index_parent]:
             # Swap the indices and recurse
-            self.array[index], self.array[index_parent] = \
-                self.array[index_parent], self.array[index]
+            self.array[index], self.array[index_parent] = (
+                self.array[index_parent],
+                self.array[index],
+            )
             self._bubble_up(index_parent)
 
     def _bubble_down(self, index):
@@ -42,8 +43,10 @@ class MinHeap(object):
             return
         if self.array[index] > self.array[min_child_index]:
             # Swap the indices and recurse
-            self.array[index], self.array[min_child_index] = \
-                self.array[min_child_index], self.array[index]
+            self.array[index], self.array[min_child_index] = (
+                self.array[min_child_index],
+                self.array[index],
+            )
             self._bubble_down(min_child_index)
 
     def _find_smaller_child(self, index):

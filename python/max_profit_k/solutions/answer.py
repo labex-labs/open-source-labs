@@ -7,29 +7,29 @@ class Type(Enum):
 
 
 class Transaction(object):
-
     def __init__(self, type, day, price):
         self.type = type
         self.day = day
         self.price = price
 
     def __eq__(self, other):
-        return self.type == other.type and \
-            self.day == other.day and \
-            self.price == other.price
+        return (
+            self.type == other.type
+            and self.day == other.day
+            and self.price == other.price
+        )
 
     def __repr__(self):
-        return str(self.type) + ' day: ' + \
-            str(self.day) + ' price: ' + \
-            str(self.price)
+        return str(self.type) + " day: " + str(self.day) + " price: " + str(self.price)
+
+
 import sys
 
 
 class StockTrader(object):
-
     def find_max_profit(self, prices, k):
         if prices is None or k is None:
-            raise TypeError('prices or k cannot be None')
+            raise TypeError("prices or k cannot be None")
         if not prices or k <= 0:
             return []
         num_rows = k + 1  # 0th transaction for dp table
@@ -50,7 +50,7 @@ class StockTrader(object):
 
     def find_max_profit_optimized(self, prices, k):
         if prices is None or k is None:
-            raise TypeError('prices or k cannot be None')
+            raise TypeError("prices or k cannot be None")
         if not prices or k <= 0:
             return []
         num_rows = k + 1
@@ -62,12 +62,8 @@ class StockTrader(object):
                 if i == 0 or j == 0:
                     T[i][j] = 0
                     continue
-                max_diff = max(
-                    max_diff,
-                    T[i - 1][j - 1] - prices[j - 1])
-                T[i][j] = max(
-                    T[i][j - 1],
-                    prices[j] + max_diff)
+                max_diff = max(max_diff, T[i - 1][j - 1] - prices[j - 1])
+                T[i][j] = max(T[i][j - 1], prices[j] + max_diff)
         return self._find_max_profit_transactions(T, prices)
 
     def _find_max_profit_transactions(self, T, prices):

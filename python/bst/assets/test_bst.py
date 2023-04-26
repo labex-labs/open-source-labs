@@ -1,6 +1,7 @@
 from answer import *
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 
 
@@ -26,7 +27,6 @@ def post_order_traversal(node, visit_func):
 
 
 class Results(object):
-
     def __init__(self):
         self.results = []
 
@@ -44,7 +44,6 @@ class Results(object):
 
 
 class TestTree(unittest.TestCase):
-
     def __init__(self, *args, **kwargs):
         super(TestTree, self).__init__()
         self.results = Results()
@@ -57,7 +56,7 @@ class TestTree(unittest.TestCase):
         bst.insert(1)
         bst.insert(3)
         in_order_traversal(bst.root, self.results.add_result)
-        self.assertEqual(str(self.results), '[1, 2, 3, 5, 8]')
+        self.assertEqual(str(self.results), "[1, 2, 3, 5, 8]")
         self.results.clear_results()
 
     def test_tree_two(self):
@@ -68,9 +67,9 @@ class TestTree(unittest.TestCase):
         bst.insert(4)
         bst.insert(5)
         in_order_traversal(bst.root, self.results.add_result)
-        self.assertEqual(str(self.results), '[1, 2, 3, 4, 5]')
+        self.assertEqual(str(self.results), "[1, 2, 3, 4, 5]")
 
-        print('Success: test_tree')
+        print("Success: test_tree")
 
 
 def main():
@@ -79,5 +78,5 @@ def main():
     test.test_tree_two()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

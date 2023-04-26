@@ -1,9 +1,8 @@
 class CompressString(object):
-
     def compress(self, string):
         if string is None or not string:
             return string
-        result = ''
+        result = ""
         prev_char = string[0]
         count = 0
         for char in string:
@@ -17,4 +16,4 @@ class CompressString(object):
         return result if len(result) < len(string) else string
 
     def _calc_partial_result(self, prev_char, count):
-        return prev_char + (str(count) if count > 1 else '')
+        return prev_char + (str(count) if count > 1 else "")

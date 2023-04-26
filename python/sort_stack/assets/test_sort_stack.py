@@ -1,12 +1,12 @@
 from random import randint
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestSortStack(unittest.TestCase):
-
     def get_sorted_stack(self, stack, numbers):
         for x in numbers:
             stack.push(x)
@@ -14,15 +14,15 @@ class TestSortStack(unittest.TestCase):
         return sorted_stack
 
     def test_sort_stack(self, stack):
-        print('Test: Empty stack')
+        print("Test: Empty stack")
         sorted_stack = self.get_sorted_stack(stack, [])
         self.assertEqual(sorted_stack.pop(), None)
 
-        print('Test: One element stack')
+        print("Test: One element stack")
         sorted_stack = self.get_sorted_stack(stack, [1])
         self.assertEqual(sorted_stack.pop(), 1)
 
-        print('Test: Two or more element stack (general case)')
+        print("Test: Two or more element stack (general case)")
         num_items = 10
         numbers = [randint(0, 10) for x in range(num_items)]
         sorted_stack = self.get_sorted_stack(stack, numbers)
@@ -31,7 +31,7 @@ class TestSortStack(unittest.TestCase):
             sorted_numbers.append(sorted_stack.pop())
         self.assertEqual(sorted_numbers, sorted(numbers, reverse=True))
 
-        print('Success: test_sort_stack')
+        print("Success: test_sort_stack")
 
 
 def main():
@@ -40,5 +40,5 @@ def main():
     test.test_sort_stack(MyStackSimplified())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,5 +1,4 @@
 class Bits(object):
-
     def get_next_largest(self, num):
         # TODO: Implement me
         pass

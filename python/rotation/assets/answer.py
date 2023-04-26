@@ -1,5 +1,4 @@
 class Rotation(object):
-
     def is_substring(self, s1, s2):
         # TODO: Implement me
         pass

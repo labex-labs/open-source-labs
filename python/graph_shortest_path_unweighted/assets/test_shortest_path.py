@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestShortestPath(unittest.TestCase):
-
     def test_shortest_path(self):
         nodes = []
         graph = GraphShortestPath()
@@ -24,7 +24,7 @@ class TestShortestPath(unittest.TestCase):
         self.assertEqual(graph.shortest_path(nodes[0].key, nodes[0].key), [0])
         self.assertEqual(graph.shortest_path(nodes[4].key, nodes[5].key), None)
 
-        print('Success: test_shortest_path')
+        print("Success: test_shortest_path")
 
 
 def main():
@@ -32,5 +32,5 @@ def main():
     test.test_shortest_path()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

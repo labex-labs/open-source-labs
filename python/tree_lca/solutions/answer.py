@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, key, left=None, right=None):
         self.key = key
         self.left = left
@@ -7,13 +6,13 @@ class Node(object):
 
     def __repr__(self):
         return str(self.key)
-class BinaryTree(object):
 
+
+class BinaryTree(object):
     def lca(self, root, node1, node2):
         if None in (root, node1, node2):
             return None
-        if (not self._node_in_tree(root, node1) or
-                not self._node_in_tree(root, node2)):
+        if not self._node_in_tree(root, node1) or not self._node_in_tree(root, node2):
             return None
         return self._lca(root, node1, node2)
 
@@ -37,18 +36,18 @@ class BinaryTree(object):
             return root
         else:
             return left_node if left_node is not None else right_node
-class LcaResult(object):
 
+
+class LcaResult(object):
     def __init__(self, node, is_ancestor):
         self.node = node
         self.is_ancestor = is_ancestor
 
 
 class BinaryTreeOptimized(object):
-
     def lca(self, root, node1, node2):
         if root is None:
-            raise TypeError('root cannot be None')
+            raise TypeError("root cannot be None")
         result = self._lca(root, node1, node2)
         if result.is_ancestor:
             return result.node
@@ -68,9 +67,10 @@ class BinaryTreeOptimized(object):
         if left_result.node is not None and right_result.node is not None:
             return LcaResult(curr_node, is_ancestor=True)
         elif curr_node is node1 or curr_node is node2:
-            is_ancestor = left_result.node is not None or \
-                right_result.node is not None
+            is_ancestor = left_result.node is not None or right_result.node is not None
             return LcaResult(curr_node, is_ancestor)
         else:
-            return LcaResult(left_result.node if left_result.node is not None \
-                                 else right_result.node, is_ancestor=False)
+            return LcaResult(
+                left_result.node if left_result.node is not None else right_result.node,
+                is_ancestor=False,
+            )

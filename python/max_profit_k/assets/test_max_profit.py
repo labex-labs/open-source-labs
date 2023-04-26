@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestMaxProfit(unittest.TestCase):
-
     def test_max_profit(self):
         stock_trader = StockTrader()
         self.assertRaises(TypeError, stock_trader.find_max_profit, None, None)
@@ -16,25 +16,13 @@ class TestMaxProfit(unittest.TestCase):
         prices = [2, 5, 7, 1, 4, 3, 1, 3]
         profit, transactions = stock_trader.find_max_profit(prices, k)
         self.assertEqual(profit, 10)
-        self.assertTrue(Transaction(Type.SELL,
-                                day=7,
-                                price=3) in transactions)
-        self.assertTrue(Transaction(Type.BUY,
-                                day=6,
-                                price=1) in transactions)
-        self.assertTrue(Transaction(Type.SELL,
-                                day=4,
-                                price=4) in transactions)
-        self.assertTrue(Transaction(Type.BUY,
-                                day=3,
-                                price=1) in transactions)
-        self.assertTrue(Transaction(Type.SELL,
-                                day=2,
-                                price=7) in transactions)
-        self.assertTrue(Transaction(Type.BUY,
-                                day=0,
-                                price=2) in transactions)
-        print('Success: test_max_profit')
+        self.assertTrue(Transaction(Type.SELL, day=7, price=3) in transactions)
+        self.assertTrue(Transaction(Type.BUY, day=6, price=1) in transactions)
+        self.assertTrue(Transaction(Type.SELL, day=4, price=4) in transactions)
+        self.assertTrue(Transaction(Type.BUY, day=3, price=1) in transactions)
+        self.assertTrue(Transaction(Type.SELL, day=2, price=7) in transactions)
+        self.assertTrue(Transaction(Type.BUY, day=0, price=2) in transactions)
+        print("Success: test_max_profit")
 
 
 def main():
@@ -42,5 +30,5 @@ def main():
     test.test_max_profit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

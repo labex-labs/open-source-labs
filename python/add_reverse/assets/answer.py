@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data, next=None):
         self.next = next
         self.data = data
@@ -9,7 +8,6 @@ class Node(object):
 
 
 class LinkedList(object):
-
     def __init__(self, head=None):
         self.head = head
 
@@ -99,7 +97,6 @@ class LinkedList(object):
 
 
 class MyLinkedList(LinkedList):
-
     def add_reverse(self, first_list, second_list):
         # TODO: Implement me
         pass

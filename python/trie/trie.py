@@ -2,7 +2,6 @@ from collections import OrderedDict
 
 
 class Node(object):
-
     def __init__(self, key, parent=None, terminates=False):
         self.key = key
         self.terminates = False
@@ -11,13 +10,12 @@ class Node(object):
 
 
 class Trie(object):
-
     def __init__(self):
-        self.root = Node('')
+        self.root = Node("")
 
     def find(self, word):
         if word is None:
-            raise TypeError('word cannot be None')
+            raise TypeError("word cannot be None")
         node = self.root
         for char in word:
             if char in node.children:
@@ -28,7 +26,7 @@ class Trie(object):
 
     def insert(self, word):
         if word is None:
-            raise TypeError('word cannot be None')
+            raise TypeError("word cannot be None")
         node = self.root
         parent = None
         for char in word:
@@ -41,19 +39,19 @@ class Trie(object):
 
     def remove(self, word):
         if word is None:
-            raise TypeError('word cannot be None')
+            raise TypeError("word cannot be None")
         node = self.find(word)
         if node is None:
-            raise KeyError('word does not exist')
+            raise KeyError("word does not exist")
         node.terminates = False
         parent = node.parent
         while parent is not None:
-            # As we are propagating the delete up the 
+            # As we are propagating the delete up the
             # parents, if this node has children, stop
             # here to prevent orphaning its children.
             # Or
             # if this node is a terminating node that is
-            # not the terminating node of the input word, 
+            # not the terminating node of the input word,
             # stop to prevent removing the associated word.
             if node.children or node.terminates:
                 return
@@ -63,7 +61,7 @@ class Trie(object):
 
     def list_words(self):
         result = []
-        curr_word = ''
+        curr_word = ""
         self._list_words(self.root, curr_word, result)
         return result
 

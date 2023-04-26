@@ -1,24 +1,24 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestDeleteNode(unittest.TestCase):
-
     def test_delete_node(self):
-        print('Test: Empty list, null node to delete')
+        print("Test: Empty list, null node to delete")
         linked_list = MyLinkedList(None)
         linked_list.delete_node(None)
         self.assertEqual(linked_list.get_all_data(), [])
 
-        print('Test: One node')
+        print("Test: One node")
         head = Node(2)
         linked_list = MyLinkedList(head)
         linked_list.delete_node(head)
         self.assertEqual(linked_list.get_all_data(), [None])
 
-        print('Test: Multiple nodes')
+        print("Test: Multiple nodes")
         linked_list = MyLinkedList(None)
         node0 = linked_list.insert_to_front(2)
         node1 = linked_list.insert_to_front(3)
@@ -27,7 +27,7 @@ class TestDeleteNode(unittest.TestCase):
         linked_list.delete_node(node1)
         self.assertEqual(linked_list.get_all_data(), [1, 4, 2])
 
-        print('Test: Multiple nodes, delete last element')
+        print("Test: Multiple nodes, delete last element")
         linked_list = MyLinkedList(None)
         node0 = linked_list.insert_to_front(2)
         node1 = linked_list.insert_to_front(3)
@@ -36,7 +36,7 @@ class TestDeleteNode(unittest.TestCase):
         linked_list.delete_node(node0)
         self.assertEqual(linked_list.get_all_data(), [1, 4, 3, None])
 
-        print('Success: test_delete_node')
+        print("Success: test_delete_node")
 
 
 def main():
@@ -44,5 +44,5 @@ def main():
     test.test_delete_node()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -1,18 +1,18 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestAddReverse(unittest.TestCase):
-
     def test_add_reverse(self):
-        print('Test: Empty list(s)')
+        print("Test: Empty list(s)")
         self.assertEqual(MyLinkedList().add_reverse(None, None), None)
         self.assertEqual(MyLinkedList().add_reverse(Node(5), None), None)
         self.assertEqual(MyLinkedList().add_reverse(None, Node(10)), None)
 
-        print('Test: Add values of different lengths')
+        print("Test: Add values of different lengths")
         # Input 1: 6->5->None
         # Input 2: 9->8->7
         # Result: 5->4->8
@@ -24,7 +24,7 @@ class TestAddReverse(unittest.TestCase):
         result = MyLinkedList().add_reverse(first_list, second_list)
         self.assertEqual(result.get_all_data(), [5, 4, 8])
 
-        print('Test: Add values of same lengths')
+        print("Test: Add values of same lengths")
         # Input 1: 6->5->4
         # Input 2: 9->8->7
         # Result: 5->4->2->1
@@ -39,7 +39,7 @@ class TestAddReverse(unittest.TestCase):
         result = MyLinkedList().add_reverse(first_list, second_list)
         self.assertEqual(result.get_all_data(), [5, 4, 2, 1])
 
-        print('Success: test_add_reverse')
+        print("Success: test_add_reverse")
 
 
 def main():
@@ -47,5 +47,5 @@ def main():
     test.test_add_reverse()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

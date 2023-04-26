@@ -7,16 +7,16 @@ class Bits(object):
 
     def print_binary(self, num):
         if num is None or num >= 1 or num <= 0:
-            return 'ERROR'
-        result = ['0', '.']
+            return "ERROR"
+        result = ["0", "."]
         fraction = 0.5
         while num:
             if num >= fraction:
-                result.append('1')
+                result.append("1")
                 num -= fraction
             else:
-                result.append('0')
+                result.append("0")
             if len(result) > self.MAX_BITS:
-                return 'ERROR'
+                return "ERROR"
             fraction /= 2
-        return ''.join(result)
+        return "".join(result)

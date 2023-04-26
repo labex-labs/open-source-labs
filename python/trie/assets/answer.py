@@ -2,14 +2,12 @@ from collections import OrderedDict
 
 
 class Node(object):
-
     def __init__(self, data, parent=None, terminates=False):
         # TODO: Implement me
         pass
 
 
 class Trie(object):
-
     def __init__(self):
         # TODO: Implement me
         pass

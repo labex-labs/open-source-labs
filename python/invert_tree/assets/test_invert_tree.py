@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestInvertTree(unittest.TestCase):
-
     def test_invert_tree(self):
         root = Node(5)
         bst = InverseBst(root)
@@ -23,7 +23,7 @@ class TestInvertTree(unittest.TestCase):
         self.assertEqual(result.left.right, node6)
         self.assertEqual(result.right.left, node3)
         self.assertEqual(result.right.right, node1)
-        print('Success: test_invert_tree')
+        print("Success: test_invert_tree")
 
 
 def main():
@@ -31,5 +31,5 @@ def main():
     test.test_invert_tree()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

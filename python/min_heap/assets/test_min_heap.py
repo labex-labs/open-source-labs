@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from answer import *
 
 
 class TestMinHeap(unittest.TestCase):
-
     def test_min_heap(self):
         heap = MinHeap()
         self.assertEqual(heap.peek_min(), None)
@@ -41,13 +41,13 @@ class TestMinHeap(unittest.TestCase):
         while heap:
             mins.append(heap.extract_min())
         self.assertEqual(mins, [3, 5, 15, 20, 22, 40])
-        print('Success: test_min_heap')
+        print("Success: test_min_heap")
 
-        
+
 def main():
     test = TestMinHeap()
     test.test_min_heap()
 
-    
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

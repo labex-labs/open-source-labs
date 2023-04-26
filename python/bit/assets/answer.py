@@ -1,5 +1,4 @@
 class Bit(object):
-
     def __init__(self, number):
         # TODO: Implement me
         pass

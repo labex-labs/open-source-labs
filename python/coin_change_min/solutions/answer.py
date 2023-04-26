@@ -2,10 +2,9 @@ import sys
 
 
 class CoinChanger(object):
-
     def make_change(self, coins, total):
         if coins is None or total is None:
-            raise TypeError('coins or total cannot be None')
+            raise TypeError("coins or total cannot be None")
         if not coins or total == 0:
             return 0
         cache = {}

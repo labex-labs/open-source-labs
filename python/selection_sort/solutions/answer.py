@@ -1,8 +1,7 @@
 class SelectionSort(object):
-
     def sort(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         if len(data) < 2:
             return data
         for i in range(len(data) - 1):
@@ -16,7 +15,7 @@ class SelectionSort(object):
 
     def sort_iterative_alt(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         if len(data) < 2:
             return data
         for i in range(len(data) - 1):
@@ -25,7 +24,7 @@ class SelectionSort(object):
 
     def sort_recursive(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         if len(data) < 2:
             return data
         return self._sort_recursive(data, start=0)

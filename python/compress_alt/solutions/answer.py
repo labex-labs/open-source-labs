@@ -51,13 +51,15 @@ def compress_string(string):
 
     # Convert the characters in the list to a string
     return "".join(compressed_string)
+
+
 def split_to_blocks(string):
-    block = ''
-    for char, next_char in zip(string, string[1:] + ' '):
+    block = ""
+    for char, next_char in zip(string, string[1:] + " "):
         block += char
         if char is not next_char:
             yield block
-            block = ''
+            block = ""
 
 
 def compress_block(block):
@@ -71,5 +73,5 @@ def compress_string(string):
     if string is None or not string:
         return string
     compressed = (compress_block(block) for block in split_to_blocks(string))
-    result = ''.join(compressed)
+    result = "".join(compressed)
     return result if len(result) < len(string) else string

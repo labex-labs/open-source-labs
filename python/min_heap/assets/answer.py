@@ -1,12 +1,11 @@
 class MinHeap(object):
-
     def __init__(self):
         # TODO: Implement me
         pass
 
     def extract_min(self):
         # TODO: Implement me
-        pass    
+        pass
 
     def peek_min(self):
         # TODO: Implement me

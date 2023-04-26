@@ -1,5 +1,4 @@
 class CoinChanger(object):
-
     def make_change(self, coins, total):
         if coins is None or total is None:
             return None

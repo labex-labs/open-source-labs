@@ -2,10 +2,9 @@ from collections import OrderedDict
 
 
 class Anagram(object):
-
     def group_anagrams(self, items):
         if items is None:
-            raise TypeError('items cannot be None')
+            raise TypeError("items cannot be None")
         if not items:
             return items
         anagram_map = OrderedDict()

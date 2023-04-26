@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data):
         self.data = data
         self.left = None
@@ -11,13 +10,12 @@ class Node(object):
 
 
 class Bst(object):
-
     def __init__(self, root=None):
         self.root = root
 
     def insert(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         if self.root is None:
             self.root = Node(data)
             return self.root
@@ -44,7 +42,6 @@ class Bst(object):
 
 
 class BstDfs(Bst):
-
     def in_order_traversal(self, node, visit_func):
         # TODO: Implement me
         pass
@@ -53,6 +50,6 @@ class BstDfs(Bst):
         # TODO: Implement me
         pass
 
-    def post_order_traversal(self,node, visit_func):
+    def post_order_traversal(self, node, visit_func):
         # TODO: Implement me
         pass

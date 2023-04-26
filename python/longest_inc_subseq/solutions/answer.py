@@ -1,8 +1,7 @@
 class Subsequence(object):
-
     def longest_inc_subseq(self, seq):
         if seq is None:
-            raise TypeError('seq cannot be None')
+            raise TypeError("seq cannot be None")
         if not seq:
             return []
         temp = [1] * len(seq)

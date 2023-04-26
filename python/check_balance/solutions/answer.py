@@ -1,5 +1,4 @@
 class Node(object):
-
     def __init__(self, data):
         self.data = data
         self.left = None
@@ -11,13 +10,12 @@ class Node(object):
 
 
 class Bst(object):
-
     def __init__(self, root=None):
         self.root = root
 
     def insert(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         if self.root is None:
             self.root = Node(data)
             return self.root
@@ -42,8 +40,8 @@ class Bst(object):
             else:
                 return self._insert(node.right, data)
 
-class BstBalance(Bst):
 
+class BstBalance(Bst):
     def _check_balance(self, node):
         if node is None:
             return 0
@@ -60,6 +58,6 @@ class BstBalance(Bst):
 
     def check_balance(self):
         if self.root is None:
-            raise TypeError('root cannot be None')
+            raise TypeError("root cannot be None")
         height = self._check_balance(self.root)
         return height != -1

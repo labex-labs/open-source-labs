@@ -1,8 +1,7 @@
 class StringCompare(object):
-
     def longest_common_subseq(self, str0, str1):
         if str0 is None or str1 is None:
-            raise TypeError('str input cannot be None')
+            raise TypeError("str input cannot be None")
         # Add one to number of rows and cols for the dp table's
         # first row of 0's and first col of 0's
         num_rows = len(str0) + 1
@@ -13,11 +12,10 @@ class StringCompare(object):
                 if i == 0 or j == 0:
                     T[i][j] = 0
                 elif str0[j - 1] != str1[i - 1]:
-                    T[i][j] = max(T[i][j - 1],
-                                  T[i - 1][j])
+                    T[i][j] = max(T[i][j - 1], T[i - 1][j])
                 else:
                     T[i][j] = T[i - 1][j - 1] + 1
-        results = ''
+        results = ""
         i = num_rows - 1
         j = num_cols - 1
         # Walk backwards to determine the subsequence
@@ -31,6 +29,6 @@ class StringCompare(object):
                 i -= 1
                 j -= 1
             else:
-                raise Exception('Error constructing table')
+                raise Exception("Error constructing table")
         # Walking backwards results in a string in reverse order
-        return results[::-1]                
+        return results[::-1]

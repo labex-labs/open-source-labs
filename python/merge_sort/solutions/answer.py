@@ -2,10 +2,9 @@ from __future__ import division
 
 
 class MergeSort(object):
-
     def sort(self, data):
         if data is None:
-            raise TypeError('data cannot be None')
+            raise TypeError("data cannot be None")
         return self._sort(data)
 
     def _sort(self, data):

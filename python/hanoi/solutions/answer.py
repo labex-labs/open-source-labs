@@ -1,12 +1,10 @@
 class Node(object):
-
     def __init__(self, data, next=None):
         self.data = data
         self.next = next
 
 
 class Stack(object):
-
     def __init__(self, top=None):
         self.top = top
 
@@ -28,10 +26,9 @@ class Stack(object):
 
 
 class Hanoi(object):
-
     def move_disks(self, num_disks, src, dest, buff):
         if src is None or dest is None or buff is None:
-            raise TypeError('Cannot have a None input')
+            raise TypeError("Cannot have a None input")
         self._move_disks(num_disks, src, dest, buff)
 
     def _move_disks(self, num_disks, src, dest, buff):
