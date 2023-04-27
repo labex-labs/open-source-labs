@@ -281,7 +281,6 @@ class Sync:
                         print(f"↑ Adding {data_path} {r['msg'].upper()}")
                 except Exception as e:
                     print(f"× Error {filepath} {e}")
-                    print(data)
         # Delete records not in this repo
         repo_path_dicts = [
             path for path in path_dicts if path_dicts[path]["repo_name"] == self.repo
