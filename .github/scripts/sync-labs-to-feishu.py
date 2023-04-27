@@ -176,9 +176,9 @@ class Sync:
                 lab_skills.extend(skills)
                 skills_raw[f"step{i+1}"] = skills
         # Get record is from skills tree table
-        if len(lab_skills) > 0:
-            in_skills_tree = []
-            not_in_skills_tree = []
+        in_skills_tree = []
+        not_in_skills_tree = []
+        if len(lab_skills) > 0:         
             for skill in lab_skills:
                 skill_id = skills_dict.get(skill)
                 if skill_id != None:
