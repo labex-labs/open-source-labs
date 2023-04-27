@@ -1,0 +1,44 @@
+{
+  "type": "challenge",
+  "title": "Clone Missing Submodules",
+  "description": "In Git, submodules are repositories within repositories. They allow you to include other repositories as dependencies in your project. When you clone a Git repository that contains submodules, the submodules are not automatically cloned. This can cause issues when trying to build or run the project. In this challenge, you will learn how to clone missing submodules and checkout commits.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Clone Missing Submodules",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/clone"],
+        "solutions": ["step1-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-git"
+  }
+}
