@@ -1,44 +1,48 @@
 {
-  "type": "challenge",
-  "title": "Create a commit by a different author",
-  "description": "Git is a popular version control system used by developers to manage their codebase. One of the essential features of Git is the ability to create commits, which are snapshots of the code at a particular point in time. By default, Git uses the user's name and email to identify the author of a commit. However, there may be situations where you need to create a commit by a different author. In this challenge, you will learn how to create a commit by a different author in Git.",
-  "difficulty": "Beginner",
-  "time": 15,
-  "details": {
-    "steps": [
-      {
-        "title": "Create a commit by a different author",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Check the answer",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": false
-          }
+    "type": "challenge",
+    "title": "Create a commit by a different author",
+    "description": "Git is a popular version control system used by developers to manage their codebase. One of the essential features of Git is the ability to create commits, which are snapshots of the code at a particular point in time. By default, Git uses the user's name and email to identify the author of a commit. However, there may be situations where you need to create a commit by a different author. In this challenge, you will learn how to create a commit by a different author in Git.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Create a commit by a different author",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "git/commit"
+                ],
+                "solutions": [
+                    "step1-solution.md"
+                ]
+            }
         ],
-        "skills": [],
-        "solutions": ["step1-solution.md"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": []
+        }
     },
-    "finish": {
-      "text": "finish.md"
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
     },
-    "assets": {
-      "host01": []
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-git"
     }
-  },
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
 }
