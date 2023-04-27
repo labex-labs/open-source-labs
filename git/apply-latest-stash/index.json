@@ -1,44 +1,48 @@
 {
-  "type": "challenge",
-  "title": "Apply the Latest Stash",
-  "description": "In Git, a stash is a way to save changes that are not yet ready to be committed. It allows you to temporarily save your work and switch to another branch or commit without losing any changes. When you're ready to continue working on your changes, you can apply the stash to your working directory. In this challenge, you will learn how to apply the latest stash to your Git repository.",
-  "difficulty": "Beginner",
-  "time": 15,
-  "details": {
-    "steps": [
-      {
-        "title": "Apply the Latest Stash",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Check the answer",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": false
-          }
+    "type": "challenge",
+    "title": "Apply the Latest Stash",
+    "description": "In Git, a stash is a way to save changes that are not yet ready to be committed. It allows you to temporarily save your work and switch to another branch or commit without losing any changes. When you're ready to continue working on your changes, you can apply the stash to your working directory. In this challenge, you will learn how to apply the latest stash to your Git repository.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Apply the Latest Stash",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "git/stash"
+                ],
+                "solutions": [
+                    "step1-solution.md"
+                ]
+            }
         ],
-        "skills": [],
-        "solutions": ["step1-solution.md"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": []
+        }
     },
-    "finish": {
-      "text": "finish.md"
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
     },
-    "assets": {
-      "host01": []
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-git"
     }
-  },
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
 }
