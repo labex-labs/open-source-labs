@@ -1,0 +1,27 @@
+---
+title: View commits in a specific date range
+---
+
+Prints all commits in the specified date range.
+
+- Use `git log --since=<date-from> --until=<date-to>` to view a log of all commits between `<date-from>` and `<date-to>`.
+- You can use only `--since=<date-from>` to see all commits since a specific date or only `--until=<date-to>` to view all commits up to a specific date
+- Use arrow keys to navigate, press <kbd>Q</kbd> to exit.
+
+```shell
+git log [--since= [--until= < date-from > ] < date-to > ]
+```
+
+```shell
+git log --since='Apr 1 2023' --until='Apr 4 2023'
+# commit c191f90c7766ee6d5f24e90b552a6d446f0d02e4
+# Author: labex
+# Date: Tue Apr 6 11:11:08 2023 +0300
+# [...]
+
+git log --since='2 weeks ago'
+# commit c191f90c7766ee6d5f24e90b552a6d446f0d02e4
+# Author: labex
+# Date: Tue Apr 6 11:11:08 2023 +0300
+# [...]
+```
