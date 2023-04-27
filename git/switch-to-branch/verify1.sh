@@ -1,2 +1,2 @@
 #!/bin/zsh
-history | grep -v grep | grep "git checkout"
+cat ~/.zsh_history | grep -v grep | grep "git checkout"

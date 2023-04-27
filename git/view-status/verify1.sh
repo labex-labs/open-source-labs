@@ -1,4 +1,4 @@
 #!/bin/zsh
-history | grep -v grep | grep "git status"
-history | grep -v grep | grep "git add"
-history | grep -v grep | grep "git add""
+cat ~/.zsh_history | grep -v grep | grep "git status"
+cat ~/.zsh_history | grep -v grep | grep "git add"
+cat ~/.zsh_history | grep -v grep | grep "git add""

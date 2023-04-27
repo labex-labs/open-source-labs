@@ -1,2 +1,2 @@
 #!/bin/zsh
-history | grep -v grep | grep "git fetch"
+cat ~/.zsh_history | grep -v grep | grep "git fetch"
