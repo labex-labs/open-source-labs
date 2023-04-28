@@ -1,0 +1,2 @@
+def average(*args):
+    pass

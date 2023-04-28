@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from knapsack_unbounded import *
 
 
 class TestKnapsack(unittest.TestCase):

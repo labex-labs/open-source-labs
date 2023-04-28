@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from reverse_string import *
 
 
 class TestReverse(unittest.TestCase):

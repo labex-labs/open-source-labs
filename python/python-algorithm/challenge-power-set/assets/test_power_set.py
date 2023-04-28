@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from power_set import *
 
 
 class TestPowerSet(unittest.TestCase):

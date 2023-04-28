@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from fibonacci import *
 
 
 class TestFib(unittest.TestCase):

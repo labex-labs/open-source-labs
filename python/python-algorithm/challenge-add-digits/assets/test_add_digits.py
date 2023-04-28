@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from add_digits import *
 
 
 class TestAddDigits(unittest.TestCase):

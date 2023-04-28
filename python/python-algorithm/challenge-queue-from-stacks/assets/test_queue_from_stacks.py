@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from queue_from_stacks import *
 
 
 class TestQueueFromStacks(unittest.TestCase):

@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from sub_two import *
 
 
 class TestSubTwo(unittest.TestCase):

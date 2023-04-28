@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from pairwise_swap import *
 
 
 class TestBits(unittest.TestCase):

@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from set_of_stacks import *
 
 
 class TestSetOfStacks(unittest.TestCase):

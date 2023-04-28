@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from longest_substr import *
 
 
 class TestSolution(unittest.TestCase):

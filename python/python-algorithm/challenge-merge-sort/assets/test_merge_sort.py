@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from merge_sort import *
 
 
 class TestMergeSort(unittest.TestCase):

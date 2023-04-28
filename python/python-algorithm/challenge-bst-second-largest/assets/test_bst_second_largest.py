@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from bst_second_largest import *
 
 
 class TestBstSecondLargest(unittest.TestCase):

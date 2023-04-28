@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from grid_path import *
 
 
 class TestGridPath(unittest.TestCase):

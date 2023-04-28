@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from search_sorted_array import *
 
 
 class TestArray(unittest.TestCase):

@@ -1,0 +1,2 @@
+def reverse(itr):
+    pass
