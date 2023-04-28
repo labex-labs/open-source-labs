@@ -15,7 +15,7 @@ def to_roman_numeral(num):
         (1, "I"),
     ]
     res = ""
-    for (n, roman) in lookup:
+    for n, roman in lookup:
         (d, num) = divmod(num, n)
         res += roman * d
         pass

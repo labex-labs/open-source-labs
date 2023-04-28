@@ -7,7 +7,6 @@ from math import floor
 
 
 class TestSymmetricDifferenceBy(unittest.TestCase):
-    
     def test_symmetric_difference_by(self):
         a = [2.1, 1.2]
         b = [2.3, 3.4]

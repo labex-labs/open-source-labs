@@ -7,7 +7,6 @@ from math import floor
 
 
 class TestUnionBy(unittest.TestCase):
-    
     def test_union_by(self):
         a = [2.1]
         b = [1.2, 2.3]
