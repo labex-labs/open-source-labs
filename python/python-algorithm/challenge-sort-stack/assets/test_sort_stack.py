@@ -3,7 +3,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from solution import *
 
 
 class TestSortStack(unittest.TestCase):
