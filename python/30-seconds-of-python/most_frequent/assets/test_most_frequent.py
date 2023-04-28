@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from most_frequent import *
 
 def most_frequent(lst):

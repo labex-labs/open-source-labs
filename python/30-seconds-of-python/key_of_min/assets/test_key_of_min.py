@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from key_of_min import *
 
 def key_of_min(d):

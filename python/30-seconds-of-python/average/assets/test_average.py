@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from average import *
 
 class TestAverage(unittest.TestCase):

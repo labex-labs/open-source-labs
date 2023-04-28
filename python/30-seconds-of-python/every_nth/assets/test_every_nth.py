@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from every_nth import *
 
 def every_nth(lst, nth):

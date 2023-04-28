@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from has_duplicates import *
 
 def has_duplicates(lst):

@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from from_iso_date import *
 
 from datetime import datetime

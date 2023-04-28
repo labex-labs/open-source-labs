@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from hamming_distance import *
 
 class TestHammingDistance(unittest.TestCase):

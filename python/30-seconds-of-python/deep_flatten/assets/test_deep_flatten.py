@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from deep_flatten import *
 from collections.abc import Iterable
 

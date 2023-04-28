@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from initialize_2d_list import *
 
 class TestInitialize2DList(unittest.TestCase):

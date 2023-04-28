@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from keys_only import *
 
 def keys_only(flat_dict):

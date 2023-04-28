@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from sort_by_indexes import *
 
 class TestSortByIndexes(unittest.TestCase):

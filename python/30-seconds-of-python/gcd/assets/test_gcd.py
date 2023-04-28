@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from gcd import *
 from functools import reduce
 from math import gcd as _gcd

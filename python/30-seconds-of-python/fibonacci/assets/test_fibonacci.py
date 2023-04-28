@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from fibonacci import *
 
 class TestFibonacci(unittest.TestCase):

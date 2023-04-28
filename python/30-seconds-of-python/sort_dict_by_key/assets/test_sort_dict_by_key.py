@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from sort_dict_by_key import *
 
 class TestSortDictByKey(unittest.TestCase):

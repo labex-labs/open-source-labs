@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from split_lines import *
 
 class TestSplitLines(unittest.TestCase):

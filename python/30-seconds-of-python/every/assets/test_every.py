@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from every import *
 
 def every(lst, fn = lambda x: x):

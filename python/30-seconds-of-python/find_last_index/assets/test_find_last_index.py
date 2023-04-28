@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from find_last_index import *
 
 class TestFindLastIndex(unittest.TestCase):

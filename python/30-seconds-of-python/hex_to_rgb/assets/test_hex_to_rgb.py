@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from hex_to_rgb import *
 
 def hex_to_rgb(hex):

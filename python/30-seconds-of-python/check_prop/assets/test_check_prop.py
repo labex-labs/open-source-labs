@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from check_prop import *
 
 class TestCheckProp(unittest.TestCase):

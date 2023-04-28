@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from key_of_max import *
 
 def key_of_max(d):

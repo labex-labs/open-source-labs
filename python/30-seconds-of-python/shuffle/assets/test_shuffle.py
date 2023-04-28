@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from shuffle import *
 from copy import deepcopy
 from random import randint

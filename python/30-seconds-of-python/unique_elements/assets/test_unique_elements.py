@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from unique_elements import *
 
 def unique_elements(li):

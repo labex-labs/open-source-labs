@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from celsius_to_fahrenheit import *
 
 class TestCelsiusToFahrenheit(unittest.TestCase):

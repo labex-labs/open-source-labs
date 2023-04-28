@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from pad_number import *
 
 class TestPadNumber(unittest.TestCase):

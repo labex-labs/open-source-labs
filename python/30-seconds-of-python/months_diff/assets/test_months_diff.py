@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from datetime import datetime
 from months_diff import months_diff
 

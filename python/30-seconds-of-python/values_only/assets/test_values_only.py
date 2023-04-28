@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from values_only import *
 
 class TestValuesOnly(unittest.TestCase):

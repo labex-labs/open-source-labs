@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from min_n import *
 
 class TestMinN(unittest.TestCase):

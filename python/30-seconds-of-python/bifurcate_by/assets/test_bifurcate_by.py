@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from bifurcate_by import *
 
 def bifurcate_by(lst, fn):

@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from decapitalize import *
 
 def decapitalize(s, upper_rest = False):

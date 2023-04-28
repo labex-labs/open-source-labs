@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from map_dictionary import *
 
 def map_dictionary(itr, fn):

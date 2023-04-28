@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from sum_by import *
 
 def sum_by(lst, fn):

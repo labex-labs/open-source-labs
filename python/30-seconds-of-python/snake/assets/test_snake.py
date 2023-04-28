@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from snake import *
 
 class TestSnake(unittest.TestCase):

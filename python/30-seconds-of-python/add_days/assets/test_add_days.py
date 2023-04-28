@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from add_days import *
 
 from datetime import datetime, timedelta

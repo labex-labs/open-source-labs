@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from key_in_dict import *
 
 class TestKeyInDict(unittest.TestCase):

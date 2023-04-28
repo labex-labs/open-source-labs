@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from collect_dictionary import *
 from collections import defaultdict
 

@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from index_of_all import *
 
 def index_of_all(lst, value):

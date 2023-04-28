@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from have_same_contents import *
 
 class TestHaveSameContents(unittest.TestCase):

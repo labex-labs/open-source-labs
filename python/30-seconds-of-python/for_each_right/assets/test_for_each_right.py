@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from for_each_right import *
 
 class TestForEachRight(unittest.TestCase):

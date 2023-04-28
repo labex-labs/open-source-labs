@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from find_key import *
 
 class TestFindKey(unittest.TestCase):

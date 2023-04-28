@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from symmetric_difference_by import *
 
 class TestSymmetricDifferenceBy(unittest.TestCase):

@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from filter_non_unique import *
 from collections import Counter
 

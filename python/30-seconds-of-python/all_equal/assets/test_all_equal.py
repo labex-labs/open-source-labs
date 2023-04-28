@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from all_equal import *
 
 class TestAllEqual(unittest.TestCase):

@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from capitalize_every_word import *
 
 def capitalize_every_word(s):

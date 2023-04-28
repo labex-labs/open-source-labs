@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from sum_of_powers import *
 
 class TestSumOfPowers(unittest.TestCase):

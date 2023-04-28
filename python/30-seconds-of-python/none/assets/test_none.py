@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from none import *
 
 def none(lst, fn = lambda x: x):

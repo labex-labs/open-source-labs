@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from geometric_progression import *
 
 class TestGeometricProgression(unittest.TestCase):

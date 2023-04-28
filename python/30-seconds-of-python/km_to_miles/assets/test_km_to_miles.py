@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from km_to_miles import *
 
 class TestKmToMiles(unittest.TestCase):

@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from dict_to_list import *
 
 class TestDictToList(unittest.TestCase):

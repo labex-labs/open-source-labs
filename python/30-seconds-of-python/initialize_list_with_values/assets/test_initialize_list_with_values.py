@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from initialize_list_with_values import *
 
 def initialize_list_with_values(n, val = 0):

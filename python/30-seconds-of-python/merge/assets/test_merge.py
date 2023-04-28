@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from merge import *
 
 def merge(*args, fill_value=None):

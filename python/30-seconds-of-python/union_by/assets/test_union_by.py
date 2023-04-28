@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append("/home/labex/project")
 from union_by import *
 
 class TestUnionBy(unittest.TestCase):
