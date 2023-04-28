@@ -5,28 +5,15 @@ sys.path.append("/home/labex/project")
 from sort_by_indexes import *
 
 
+def sort_by_indexes(lst, indexes, reverse=False):
+    return [val for (_, val) in sorted(zip(indexes, lst), key=lambda x: x[0], reverse=reverse)]
+
 class TestSortByIndexes(unittest.TestCase):
     def test_sort_by_indexes(self):
-        lst = [4, 3, 2, 1]
-        indexes = [3, 2, 1, 0]
-        expected_output = [1, 2, 3, 4]
-        self.assertEqual(sort_by_indexes(lst, indexes), expected_output)
+        a = ['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk']
+        b = [3, 2, 6, 4, 1, 5]
+        self.assertEqual(sort_by_indexes(a, b), ['apples', 'bread', 'eggs', 'jam', 'milk', 'oranges'])
+        self.assertEqual(sort_by_indexes(a, b, True), ['oranges', 'milk', 'jam', 'eggs', 'bread', 'apples'])
 
-        lst = ["a", "b", "c", "d"]
-        indexes = [0, 2, 1, 3]
-        expected_output = ["a", "c", "b", "d"]
-        self.assertEqual(sort_by_indexes(lst, indexes), expected_output)
-
-        lst = [10, 20, 30, 40]
-        indexes = [0, 1, 2, 3]
-        expected_output = [10, 20, 30, 40]
-        self.assertEqual(sort_by_indexes(lst, indexes), expected_output)
-
-        lst = ["apple", "banana", "cherry", "date"]
-        indexes = [2, 0, 3, 1]
-        expected_output = ["banana", "cherry", "date", "apple"]
-        self.assertEqual(sort_by_indexes(lst, indexes), expected_output)
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

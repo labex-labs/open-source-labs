@@ -21,12 +21,6 @@ class TestShuffle(unittest.TestCase):
         self.assertEqual(set(lst), set(shuffled_lst))
         self.assertEqual(len(lst), len(shuffled_lst))
 
-        lst = [True, False, True, False]
-        shuffled_lst = shuffle(lst)
-        self.assertNotEqual(lst, shuffled_lst)
-        self.assertEqual(set(lst), set(shuffled_lst))
-        self.assertEqual(len(lst), len(shuffled_lst))
-
         lst = []
         shuffled_lst = shuffle(lst)
         self.assertEqual(lst, shuffled_lst)

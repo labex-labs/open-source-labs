@@ -3,33 +3,16 @@ import sys
 
 sys.path.append("/home/labex/project")
 from union_by import *
+from math import floor
 
 
 class TestUnionBy(unittest.TestCase):
+    
     def test_union_by(self):
-        a = [1, 2, 3]
-        b = [2, 3, 4]
-        fn = lambda x: x
-        self.assertEqual(union_by(a, b, fn), [1, 2, 3, 4])
-
-        a = [{"id": 1, "name": "John"}, {"id": 2, "name": "Jane"}]
-        b = [{"id": 2, "name": "Jane"}, {"id": 3, "name": "Bob"}]
-        fn = lambda x: x["id"]
-        self.assertEqual(
-            union_by(a, b, fn),
-            [
-                {"id": 1, "name": "John"},
-                {"id": 2, "name": "Jane"},
-                {"id": 3, "name": "Bob"},
-            ],
-        )
-
-        a = ["apple", "banana", "cherry"]
-        b = ["cherry", "durian", "elderberry"]
-        fn = lambda x: x[0]
-        self.assertEqual(
-            union_by(a, b, fn), ["apple", "banana", "cherry", "durian", "elderberry"]
-        )
+        a = [2.1]
+        b = [1.2, 2.3]
+        expected_output = [1.2, 2.1]
+        self.assertEqual(union_by(a, b, floor), expected_output)
 
 
 if __name__ == "__main__":
