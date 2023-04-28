@@ -1,0 +1,2 @@
+def transpose(lst):
+    pass

@@ -1,0 +1,2 @@
+def compact(lst):
+    pass
