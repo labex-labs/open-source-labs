@@ -1,3 +1,3 @@
 def fibonacci(n):
-  if n <= 0:
-    pass
+    if n <= 0:
+        pass

@@ -1,2 +1,2 @@
 def split_lines(s):
-  return s.split('\n')
+    return s.split("\n")

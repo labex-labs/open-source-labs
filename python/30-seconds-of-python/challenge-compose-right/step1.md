@@ -23,4 +23,3 @@ assert add_and_square(1, 2) == 9
 ```
 
 In the example above, we define two functions `add` and `square`. We then use the `compose_right` function to create a new function `add_and_square` that first adds two numbers and then squares the result. We then call the `add_and_square` function with the arguments `1` and `2`, which returns `9`.
-

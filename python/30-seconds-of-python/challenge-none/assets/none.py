@@ -1,2 +1,2 @@
-def none(lst, fn = lambda x: x):
+def none(lst, fn=lambda x: x):
     pass

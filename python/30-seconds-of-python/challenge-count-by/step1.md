@@ -22,4 +22,3 @@ count_by(['one', 'two', 'three'], len) # {3: 2, 5: 1}
 In the first example, the function `floor` is used to group the elements of the list `[6.1, 4.2, 6.3]`. The resulting dictionary has two keys: `6` and `4`, with values `2` and `1`, respectively.
 
 In the second example, the function `len` is used to group the elements of the list `['one', 'two', 'three']`. The resulting dictionary has two keys: `3` and `5`, with values `2` and `1`, respectively.
-

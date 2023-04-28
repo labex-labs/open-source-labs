@@ -1,7 +1,9 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from all_equal import *
+
 
 class TestAllEqual(unittest.TestCase):
     def test_all_equal(self):
@@ -13,6 +15,7 @@ class TestAllEqual(unittest.TestCase):
         self.assertFalse(all_equal([1, 1, 2, 1, 1]))
         self.assertFalse(all_equal(["a", "b", "c", "d"]))
         self.assertFalse(all_equal([]))
-        
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     unittest.main()

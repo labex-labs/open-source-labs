@@ -1,4 +1,5 @@
 from collections import Counter
 
+
 def filter_unique(lst):
-  return [item for item, count in Counter(lst).items() if count > 1]
+    return [item for item, count in Counter(lst).items() if count > 1]

@@ -1,2 +1,2 @@
-def every(lst, fn = lambda x: x):
+def every(lst, fn=lambda x: x):
     pass

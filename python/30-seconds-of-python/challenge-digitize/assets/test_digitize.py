@@ -1,10 +1,13 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from digitize import *
 
+
 def digitize(n):
     return list(map(int, str(n)))
+
 
 class TestDigitize(unittest.TestCase):
     def test_digitize(self):
@@ -14,5 +17,6 @@ class TestDigitize(unittest.TestCase):
         self.assertEqual(digitize(0), [0])
         self.assertEqual(digitize(987654321), [9, 8, 7, 6, 5, 4, 3, 2, 1])
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

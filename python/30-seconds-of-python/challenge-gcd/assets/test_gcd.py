@@ -1,12 +1,15 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from gcd import *
 from functools import reduce
 from math import gcd as _gcd
 
+
 def gcd(numbers):
-  return reduce(_gcd, numbers)
+    return reduce(_gcd, numbers)
+
 
 class TestGcd(unittest.TestCase):
     def test_gcd(self):
@@ -16,5 +19,6 @@ class TestGcd(unittest.TestCase):
         self.assertEqual(gcd([7, 14, 21]), 7)
         self.assertEqual(gcd([100, 200, 300]), 100)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

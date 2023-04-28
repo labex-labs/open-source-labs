@@ -10,4 +10,3 @@ Write a function `find_last_index(lst, fn)` that takes a list `lst` and a functi
 find_last_index([1, 2, 3, 4], lambda n: n % 2 == 1) # 2
 find_last_index([2, 4, 6, 8], lambda n: n % 2 == 1) # -1
 ```
-

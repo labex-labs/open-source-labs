@@ -1,2 +1,2 @@
 def has_duplicates(lst):
-  return len(lst) != len(set(lst))
+    return len(lst) != len(set(lst))

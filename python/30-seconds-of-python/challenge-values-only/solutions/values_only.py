@@ -1,2 +1,2 @@
 def values_only(flat_dict):
-  return list(flat_dict.values())
+    return list(flat_dict.values())

@@ -20,8 +20,8 @@ map_values(users, lambda u : u['age']) # {'fred': 40, 'pebbles': 1}
 
 ### Constraints
 
-* The function should work for any dictionary and function that meet the requirements.
-* The function should not modify the original dictionary.
+- The function should work for any dictionary and function that meet the requirements.
+- The function should not modify the original dictionary.
 
 ## Summary
 

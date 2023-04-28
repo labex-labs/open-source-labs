@@ -1,10 +1,13 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from index_of_all import *
 
+
 def index_of_all(lst, value):
     return [i for i, x in enumerate(lst) if x == value]
+
 
 class TestIndexOfAll(unittest.TestCase):
     def test_index_of_all(self):

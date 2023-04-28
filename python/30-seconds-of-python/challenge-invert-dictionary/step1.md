@@ -16,4 +16,3 @@ ages = {
 }
 invert_dictionary(ages) # { 10: 'Peter', 11: 'Isabel', 9: 'Anna' }
 ```
-

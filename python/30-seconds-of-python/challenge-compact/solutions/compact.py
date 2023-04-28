@@ -1,2 +1,2 @@
 def compact(lst):
-  return list(filter(None, lst))
+    return list(filter(None, lst))

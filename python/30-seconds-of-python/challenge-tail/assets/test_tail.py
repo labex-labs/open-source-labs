@@ -1,5 +1,6 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from tail import *
 
@@ -18,7 +19,8 @@ class TestTail(unittest.TestCase):
         self.assertEqual(tail([None, 1, 2]), [1, 2])
 
     def test_list_with_strings(self):
-        self.assertEqual(tail(['a', 'b', 'c']), ['b', 'c'])
+        self.assertEqual(tail(["a", "b", "c"]), ["b", "c"])
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

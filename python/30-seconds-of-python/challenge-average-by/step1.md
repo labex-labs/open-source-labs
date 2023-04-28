@@ -21,4 +21,3 @@ assert average_by([1, 2, 3, 4, 5]) == 3.0
 assert average_by([1, 2, 3, 4, 5], lambda x: x**2) == 11.0
 assert average_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda x: x['n']) == 5.0
 ```
-

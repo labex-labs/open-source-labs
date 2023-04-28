@@ -1,8 +1,10 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from datetime import datetime
 from months_diff import months_diff
+
 
 class TestMonthsDiff(unittest.TestCase):
     def test_months_diff(self):
@@ -31,5 +33,6 @@ class TestMonthsDiff(unittest.TestCase):
         end = datetime(2022, 1, 1)
         self.assertEqual(months_diff(start, end), 25)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

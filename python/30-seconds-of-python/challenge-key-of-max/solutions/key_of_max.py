@@ -1,2 +1,2 @@
 def key_of_max(d):
-  return max(d, key = d.get)
+    return max(d, key=d.get)

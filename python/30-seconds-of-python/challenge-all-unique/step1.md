@@ -18,4 +18,3 @@ has_duplicates([1, 2, 3, 4, 5, 5]) # True
 has_duplicates(['apple', 'banana', 'orange', 'banana']) # True
 has_duplicates([]) # False
 ```
-

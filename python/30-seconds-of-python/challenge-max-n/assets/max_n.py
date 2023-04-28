@@ -1,2 +1,2 @@
-def max_n(lst, n = 1):
+def max_n(lst, n=1):
     pass

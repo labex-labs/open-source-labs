@@ -1,12 +1,15 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from days_diff import *
 
 from datetime import date
 
+
 def days_diff(start, end):
     return (end - start).days
+
 
 class TestDaysDiff(unittest.TestCase):
     def test_days_diff(self):
@@ -22,5 +25,6 @@ class TestDaysDiff(unittest.TestCase):
         end = date(2022, 1, 1)
         self.assertEqual(days_diff(start, end), 365)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

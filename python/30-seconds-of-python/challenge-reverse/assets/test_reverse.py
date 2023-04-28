@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from reverse import *
 
 
 class TestReverse(unittest.TestCase):
-    
     def test_reverse(self):
         self.assertEqual(reverse([1, 2, 3]), [3, 2, 1])
         self.assertEqual(reverse("hello"), "olleh")

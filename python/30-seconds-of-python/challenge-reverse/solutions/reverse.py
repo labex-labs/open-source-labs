@@ -1,2 +1,2 @@
 def reverse(itr):
-  return itr[::-1]
+    return itr[::-1]

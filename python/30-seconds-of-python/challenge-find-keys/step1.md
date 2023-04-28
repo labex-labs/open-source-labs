@@ -18,4 +18,3 @@ find_keys(ages, 10) # [ 'Peter', 'Anna' ]
 ```
 
 In this example, the `find_keys()` function is called with a dictionary `ages` and a value `10`. The function returns a list of keys that have the value `10`, which are `'Peter'` and `'Anna'`.
-

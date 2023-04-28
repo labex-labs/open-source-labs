@@ -12,4 +12,3 @@ To solve this problem, you can use a `for` loop to iterate through each value in
 includes_any([1, 2, 3, 4], [2, 9]) # True
 includes_any([1, 2, 3, 4], [8, 9]) # False
 ```
-

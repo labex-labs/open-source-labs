@@ -16,4 +16,3 @@ To solve this problem, you can use the following steps:
 all_equal([1, 2, 3, 4, 5, 6]) # False
 all_equal([1, 1, 1, 1]) # True
 ```
-

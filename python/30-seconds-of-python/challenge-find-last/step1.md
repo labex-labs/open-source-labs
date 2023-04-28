@@ -14,4 +14,3 @@ find_last([2, 4, 6, 8], lambda n: n % 2 == 1) # None
 ```
 
 In the first example, the function should return `3` because it is the last odd number in the list. In the second example, the function should return `None` because there are no odd numbers in the list.
-

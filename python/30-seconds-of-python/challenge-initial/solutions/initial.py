@@ -1,2 +1,2 @@
 def initial(lst):
-  return lst[:-1]
+    return lst[:-1]

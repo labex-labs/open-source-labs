@@ -1,4 +1,5 @@
 import re
 
-def words(s, pattern = '[a-zA-Z-]+'):
+
+def words(s, pattern="[a-zA-Z-]+"):
     pass

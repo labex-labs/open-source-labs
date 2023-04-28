@@ -16,4 +16,3 @@ bifurcate_by(['beep', 'boop', 'foo', 'bar'], lambda x: x[0] == 'b')
 ```
 
 In the example above, the function is called with a list of strings and a filtering function that checks if the first character of each string is 'b'. The function returns a list of two lists, where the first list contains all the strings that start with 'b', and the second list contains all the other strings.
-

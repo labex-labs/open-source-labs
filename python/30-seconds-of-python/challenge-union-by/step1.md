@@ -12,9 +12,9 @@ To solve this problem, you can follow these steps:
 
 The function should have the following input parameters:
 
-* `a`: a list of elements
-* `b`: a list of elements
-* `fn`: a function that takes an element and returns a value
+- `a`: a list of elements
+- `b`: a list of elements
+- `fn`: a function that takes an element and returns a value
 
 The function should return a list of elements.
 
@@ -29,4 +29,3 @@ union_by([2.1], [1.2, 2.3], floor) # [2.1, 1.2]
 ```
 
 In this example, `union_by()` takes in two lists `[2.1]` and `[1.2, 2.3]`, and a function `floor()`. The function applies `floor()` to each element of both lists, creating a set of `{2}`. Then, it uses a list comprehension to keep only the values not contained in the set, which is `[1.2]`. Finally, it creates a set from the previous result and `[2.1]`, which is `{1.2, 2.1}`, and transforms it into a list `[1.2, 2.1]`.
-

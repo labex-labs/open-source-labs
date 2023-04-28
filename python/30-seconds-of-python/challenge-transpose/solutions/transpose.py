@@ -1,2 +1,2 @@
 def transpose(lst):
-  return list(zip(*lst))
+    return list(zip(*lst))

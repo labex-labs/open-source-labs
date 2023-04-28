@@ -1,2 +1,2 @@
 def longest_item(*args):
-  return max(args, key = len)
+    return max(args, key=len)

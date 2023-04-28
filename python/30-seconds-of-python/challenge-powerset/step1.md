@@ -1,6 +1,7 @@
 # Powerset Challenge
 
 ## Problem
+
 Write a Python function called `powerset(iterable)` that takes an iterable as an argument and returns the powerset of the iterable. The function should follow these steps:
 
 1. Convert the given value to a list.
@@ -8,7 +9,7 @@ Write a Python function called `powerset(iterable)` that takes an iterable as an
 3. Use `itertools.chain.from_iterable()` and `list()` to consume the generator and return a list.
 
 ## Example
+
 ```py
 powerset([1, 2]) # [(), (1,), (2,), (1, 2)]
 ```
-

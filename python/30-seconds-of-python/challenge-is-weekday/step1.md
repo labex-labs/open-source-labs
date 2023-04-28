@@ -23,4 +23,3 @@ assert is_weekday(date(2022, 11, 14)) == True
 assert is_weekday(date(2022, 11, 12)) == False
 assert is_weekday(date(2022, 11, 13)) == False
 ```
-

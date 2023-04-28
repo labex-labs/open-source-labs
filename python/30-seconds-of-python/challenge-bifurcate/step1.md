@@ -16,4 +16,3 @@ bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True])
 ```
 
 In the above example, the filter is `[True, True, False, True]`. The first two elements of `lst` pass the filter, so they are added to the first list. The third element does not pass the filter, so it is added to the second list. The fourth element passes the filter, so it is added to the first list.
-

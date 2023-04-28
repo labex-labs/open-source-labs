@@ -16,9 +16,9 @@ To solve this problem, you can follow these steps:
 
 The function should have the following input parameters:
 
-* `a`: a list of elements
-* `b`: a list of elements
-* `fn`: a function that takes an element and returns a value
+- `a`: a list of elements
+- `b`: a list of elements
+- `fn`: a function that takes an element and returns a value
 
 The function should return a list of elements.
 

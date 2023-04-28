@@ -1,7 +1,9 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from kebab import *
+
 
 class TestKebab(unittest.TestCase):
     def test_kebab(self):
@@ -11,7 +13,11 @@ class TestKebab(unittest.TestCase):
         self.assertEqual(kebab("kebab-case-string"), "kebab-case-string")
         self.assertEqual(kebab("1234"), "1234")
         self.assertEqual(kebab("Hello World 123"), "hello-world-123")
-        self.assertEqual(kebab("ThisIsAReallyLongStringWithNoSpaces"), "this-is-a-really-long-string-with-no-spaces")
+        self.assertEqual(
+            kebab("ThisIsAReallyLongStringWithNoSpaces"),
+            "this-is-a-really-long-string-with-no-spaces",
+        )
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

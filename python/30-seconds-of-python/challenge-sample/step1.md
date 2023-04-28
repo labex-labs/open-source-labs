@@ -11,4 +11,3 @@ Write a function `random_element(lst)` that takes a list as an argument and retu
 ```py
 random_element([3, 7, 9, 11]) # 9
 ```
-

@@ -1,7 +1,9 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from intersection_by import *
+
 
 class TestIntersectionBy(unittest.TestCase):
     def test_intersection_by(self):

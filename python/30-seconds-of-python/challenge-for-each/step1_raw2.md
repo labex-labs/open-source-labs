@@ -6,7 +6,7 @@ In Python, it is common to need to execute a function for each element in a list
 
 ## Problem
 
-Write a function `for_each(itr, fn)` that takes a list `itr` and a function `fn` as arguments. The function should execute `fn` once for each element in `itr`. 
+Write a function `for_each(itr, fn)` that takes a list `itr` and a function `fn` as arguments. The function should execute `fn` once for each element in `itr`.
 
 ## Example
 

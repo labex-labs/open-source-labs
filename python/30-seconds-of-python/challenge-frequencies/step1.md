@@ -17,4 +17,3 @@ Your function should return the dictionary with the unique values and their freq
 ```py
 value_frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
 ```
-

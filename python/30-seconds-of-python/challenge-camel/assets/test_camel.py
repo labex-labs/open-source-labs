@@ -1,7 +1,9 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from camel import *
+
 
 class TestCamel(unittest.TestCase):
     def test_camel(self):
@@ -11,5 +13,6 @@ class TestCamel(unittest.TestCase):
         self.assertEqual(camel("HELLO_WORLD"), "helloWorld")
         self.assertEqual(camel("hElLo_WoRlD"), "helloWorld")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

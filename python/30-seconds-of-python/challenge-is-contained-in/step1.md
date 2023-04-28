@@ -19,4 +19,3 @@ assert is_contained_in([1, 2, 3], [3, 2, 1]) == True
 assert is_contained_in([1, 2, 3], [3, 2, 2, 1]) == False
 assert is_contained_in([1, 2, 3], [4, 5, 6]) == False
 ```
-

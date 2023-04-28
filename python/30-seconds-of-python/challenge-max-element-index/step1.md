@@ -17,4 +17,3 @@ max_element_index([5, 8, 9, 7, 10, 3, 0]) # 4
 ```
 
 In this example, the maximum value in the list `[5, 8, 9, 7, 10, 3, 0]` is `10`, which occurs at index `4`. Therefore, the function should return `4`.
-

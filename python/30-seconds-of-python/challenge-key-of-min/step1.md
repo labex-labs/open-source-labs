@@ -13,4 +13,3 @@ key_of_min({'a':4, 'b':0, 'c':13}) # 'b'
 ```
 
 In this example, the dictionary `{'a':4, 'b':0, 'c':13}` is passed as an argument to the `key_of_min()` function. The function returns the key `'b'`, which corresponds to the minimum value in the dictionary.
-

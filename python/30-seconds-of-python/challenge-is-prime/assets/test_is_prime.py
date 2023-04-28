@@ -1,14 +1,17 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from is_prime import *
 
 from math import sqrt
 
+
 def is_prime(n):
-  if n <= 1 or (n % 2 == 0 and n > 2):
-    return False
-  return all(n % i for i in range(3, int(sqrt(n)) + 1, 2))
+    if n <= 1 or (n % 2 == 0 and n > 2):
+        return False
+    return all(n % i for i in range(3, int(sqrt(n)) + 1, 2))
+
 
 class TestIsPrime(unittest.TestCase):
     def test_prime_numbers(self):
@@ -115,5 +118,6 @@ class TestIsPrime(unittest.TestCase):
         self.assertFalse(is_prime(98))
         self.assertFalse(is_prime(99))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

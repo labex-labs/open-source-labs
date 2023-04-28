@@ -14,4 +14,3 @@ longest_item('this', 'is', 'a', 'testcase') # 'testcase'
 longest_item([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]) # [1, 2, 3, 4, 5]
 longest_item([1, 2, 3], 'foobar') # 'foobar'
 ```
-

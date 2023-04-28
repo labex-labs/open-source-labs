@@ -1,2 +1,2 @@
 def head(lst):
-  return lst[0]
+    return lst[0]

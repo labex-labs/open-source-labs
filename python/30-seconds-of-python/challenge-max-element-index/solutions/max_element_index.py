@@ -1,2 +1,2 @@
 def max_element_index(arr):
-  return arr.index(max(arr))
+    return arr.index(max(arr))

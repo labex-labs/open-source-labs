@@ -16,4 +16,3 @@ ages = {
 }
 values_only(ages) # [10, 11, 9]
 ```
-

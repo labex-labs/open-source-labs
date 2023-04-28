@@ -1,2 +1,2 @@
-def decapitalize(s, upper_rest = False):
+def decapitalize(s, upper_rest=False):
     pass

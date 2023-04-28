@@ -25,4 +25,3 @@ def filter_unique(lst):
 assert filter_unique([1, 2, 2, 3, 4, 4, 5]) == [2, 4]
 assert filter_unique(['a', 'b', 'c', 'b', 'd', 'e', 'e']) == ['b', 'e']
 ```
-

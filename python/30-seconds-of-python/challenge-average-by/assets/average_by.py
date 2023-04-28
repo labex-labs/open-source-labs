@@ -1,2 +1,2 @@
-def average_by(lst, fn = lambda x: x):
+def average_by(lst, fn=lambda x: x):
     pass

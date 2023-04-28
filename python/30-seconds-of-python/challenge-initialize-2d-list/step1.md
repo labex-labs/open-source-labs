@@ -11,4 +11,3 @@ initialize_2d_list(2, 2, 0) # [[0, 0], [0, 0]]
 initialize_2d_list(3, 3, "x") # [["x", "x", "x"], ["x", "x", "x"], ["x", "x", "x"]]
 initialize_2d_list(2, 3) # [[None, None], [None, None], [None, None]]
 ```
-

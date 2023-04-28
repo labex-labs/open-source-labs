@@ -1,11 +1,11 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from weighted_average import *
 
 
 class TestWeightedAverage(unittest.TestCase):
-    
     def test_weighted_average(self):
         self.assertAlmostEqual(weighted_average([1, 2, 3], [0.25, 0.25, 0.5]), 2.5)
         self.assertAlmostEqual(weighted_average([4, 5, 6], [0.1, 0.2, 0.7]), 5.5)

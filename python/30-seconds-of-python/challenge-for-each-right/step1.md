@@ -12,6 +12,5 @@ for_each_right([1, 2, 3], print) # 3 2 1
 
 ### Constraints
 
-* The function should work for any list and function.
-* The function should not modify the original list.
-
+- The function should work for any list and function.
+- The function should not modify the original list.

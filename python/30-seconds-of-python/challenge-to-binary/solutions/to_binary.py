@@ -1,2 +1,2 @@
 def to_binary(n):
-  return bin(n)
+    return bin(n)
