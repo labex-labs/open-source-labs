@@ -12,3 +12,7 @@ class TestCountOccurrences(unittest.TestCase):
         self.assertEqual(count_occurrences(["a", "b", "c", "c", "d"], "c"), 2)
         self.assertEqual(count_occurrences([], 5), 0)
         self.assertEqual(count_occurrences([True, False, True], False), 1)
+
+
+if __name__ == "__main__":
+    unittest.main()

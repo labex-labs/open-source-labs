@@ -26,3 +26,7 @@ class TestFindLastIndex(unittest.TestCase):
         lst = []
         fn = lambda x: x > 0
         self.assertEqual(find_last_index(lst, fn), -1)
+
+
+if __name__ == "__main__":
+    unittest.main()

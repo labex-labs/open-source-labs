@@ -16,3 +16,7 @@ class TestRoll(unittest.TestCase):
         self.assertEqual(roll([1, 2, 3, 4, 5], 5), [1, 2, 3, 4, 5])
         self.assertEqual(roll([1, 2, 3, 4, 5], -2), [3, 4, 5, 1, 2])
         self.assertEqual(roll([], 2), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

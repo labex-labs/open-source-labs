@@ -16,3 +16,7 @@ class TestFilterUnique(unittest.TestCase):
         self.assertEqual(filter_unique([1, 2, 2, 3, 4, 4, 5]), [2, 4])
         self.assertEqual(filter_unique(["a", "b", "c", "c", "d", "d", "d"]), ["c", "d"])
         self.assertEqual(filter_unique([]), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

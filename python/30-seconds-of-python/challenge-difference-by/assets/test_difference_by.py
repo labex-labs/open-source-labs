@@ -12,3 +12,7 @@ class TestDifferenceBy(unittest.TestCase):
         fn = lambda x: int(x)
         result = difference_by(a, b, fn)
         self.assertEqual(result, [1.2])
+
+
+if __name__ == "__main__":
+    unittest.main()

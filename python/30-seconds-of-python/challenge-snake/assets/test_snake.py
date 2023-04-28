@@ -13,3 +13,7 @@ class TestSnake(unittest.TestCase):
         self.assertEqual(snake("CamelCaseTest"), "camel_case_test")
         self.assertEqual(snake("ALLCAPS"), "allcaps")
         self.assertEqual(snake(""), "")
+
+
+if __name__ == "__main__":
+    unittest.main()

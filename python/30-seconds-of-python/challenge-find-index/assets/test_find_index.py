@@ -22,3 +22,7 @@ class TestFindIndex(unittest.TestCase):
         lst = []
         fn = lambda x: x > 0
         self.assertRaises(StopIteration, find_index, lst, fn)
+
+
+if __name__ == "__main__":
+    unittest.main()

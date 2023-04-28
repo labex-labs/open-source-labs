@@ -18,3 +18,7 @@ class TestFindIndexOfAll(unittest.TestCase):
         lst = [True, False, True, False, True]
         fn = lambda x: x == True
         self.assertEqual(find_index_of_all(lst, fn), [0, 2, 4])
+
+
+if __name__ == "__main__":
+    unittest.main()

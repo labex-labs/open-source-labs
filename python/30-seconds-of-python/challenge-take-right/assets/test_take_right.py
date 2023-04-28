@@ -17,3 +17,7 @@ class TestTakeRight(unittest.TestCase):
     def test_take_right_with_large_n(self):
         self.assertEqual(take_right([1, 2, 3, 4, 5], 10), [1, 2, 3, 4, 5])
         self.assertEqual(take_right("hello", 10), "hello")
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -11,3 +11,7 @@ class TestIntersection(unittest.TestCase):
         self.assertEqual(intersection([1, 2, 3], [4, 5, 6]), [])
         self.assertEqual(intersection([1, 2, 3], [1, 2, 3]), [1, 2, 3])
         self.assertEqual(intersection([], []), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

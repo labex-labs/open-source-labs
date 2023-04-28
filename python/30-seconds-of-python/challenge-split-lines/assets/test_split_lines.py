@@ -30,3 +30,7 @@ class TestSplitLines(unittest.TestCase):
         s = "Hello\tWorld"
         expected_output = ["Hello\tWorld", ""]
         self.assertEqual(split_lines(s), expected_output)
+
+
+if __name__ == "__main__":
+    unittest.main()

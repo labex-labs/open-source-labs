@@ -20,3 +20,7 @@ class TestCheckProp(unittest.TestCase):
         self.assertTrue(check_prop(fn2, prop2)(obj1))
         self.assertFalse(check_prop(fn1, prop1)(obj2))
         self.assertTrue(check_prop(fn2, prop2)(obj2))
+
+
+if __name__ == "__main__":
+    unittest.main()

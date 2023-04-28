@@ -30,3 +30,7 @@ class TestUnionBy(unittest.TestCase):
         self.assertEqual(
             union_by(a, b, fn), ["apple", "banana", "cherry", "durian", "elderberry"]
         )
+
+
+if __name__ == "__main__":
+    unittest.main()

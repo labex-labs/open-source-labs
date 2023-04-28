@@ -20,3 +20,7 @@ class TestInitializeListWithRange(unittest.TestCase):
 
     def test_end_less_than_start(self):
         self.assertEqual(initialize_list_with_range(-5, -1), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

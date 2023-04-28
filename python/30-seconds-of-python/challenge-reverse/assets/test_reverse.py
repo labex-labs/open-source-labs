@@ -11,3 +11,7 @@ class TestReverse(unittest.TestCase):
         self.assertEqual(reverse("hello"), "olleh")
         self.assertEqual(reverse((4, 5, 6)), (6, 5, 4))
         self.assertEqual(reverse([]), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

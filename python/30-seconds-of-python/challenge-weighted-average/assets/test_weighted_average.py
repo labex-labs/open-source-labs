@@ -12,3 +12,7 @@ class TestWeightedAverage(unittest.TestCase):
         self.assertAlmostEqual(weighted_average([10, 20, 30], [0.5, 0.3, 0.2]), 15.5)
         self.assertAlmostEqual(weighted_average([0, 0, 0], [0.25, 0.25, 0.5]), 0)
         self.assertAlmostEqual(weighted_average([-1, 0, 1], [0.5, 0.25, 0.25]), 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

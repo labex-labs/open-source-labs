@@ -18,3 +18,7 @@ class TestSymmetricDifferenceBy(unittest.TestCase):
         fn = lambda x: len(x)
         result = symmetric_difference_by(a, b, fn)
         self.assertEqual(result, ["apple", "cherry", "orange", "kiwi"])
+
+
+if __name__ == "__main__":
+    unittest.main()

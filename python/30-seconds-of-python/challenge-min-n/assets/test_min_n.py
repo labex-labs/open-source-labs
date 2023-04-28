@@ -12,3 +12,7 @@ class TestMinN(unittest.TestCase):
         self.assertEqual(min_n([1, 1, 1, 1, 1], 2), [1, 1])
         self.assertEqual(min_n([1]), [1])
         self.assertEqual(min_n([]), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

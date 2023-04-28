@@ -18,3 +18,7 @@ class TestInvertDictionary(unittest.TestCase):
         obj = {1: "one", 2: "two", 3: "three"}
         expected_output = {"one": 1, "two": 2, "three": 3}
         self.assertEqual(invert_dictionary(obj), expected_output)
+
+
+if __name__ == "__main__":
+    unittest.main()

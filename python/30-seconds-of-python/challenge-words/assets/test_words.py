@@ -19,3 +19,7 @@ class TestWords(unittest.TestCase):
         self.assertEqual(
             words("Hello-World", pattern="[a-zA-Z]+-?[a-zA-Z]+"), ["Hello-World"]
         )
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -25,3 +25,7 @@ class TestCountBy(unittest.TestCase):
         lst = [1, 1, 1, 1, 1, 1]
         expected = {1: 6}
         self.assertEqual(count_by(lst), expected)
+
+
+if __name__ == "__main__":
+    unittest.main()

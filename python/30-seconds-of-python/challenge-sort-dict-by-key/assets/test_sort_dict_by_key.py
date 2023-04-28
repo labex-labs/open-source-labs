@@ -22,3 +22,7 @@ class TestSortDictByKey(unittest.TestCase):
         d = {"a": 1}
         expected_output = {"a": 1}
         self.assertEqual(sort_dict_by_key(d), expected_output)
+
+
+if __name__ == "__main__":
+    unittest.main()

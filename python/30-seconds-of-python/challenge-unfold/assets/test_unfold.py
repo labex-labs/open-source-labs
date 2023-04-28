@@ -24,3 +24,7 @@ class TestUnfold(unittest.TestCase):
 
     def test_negative_case(self):
         self.assertEqual(unfold(lambda x: (x, x - 1) if x > 0 else False, -5), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

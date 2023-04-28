@@ -18,3 +18,7 @@ class TestMinBy(unittest.TestCase):
         lst = [(1, 2), (3, 4), (5, 6)]
         fn = lambda x: x[1]
         self.assertEqual(min_by(lst, fn), (1, 2))
+
+
+if __name__ == "__main__":
+    unittest.main()

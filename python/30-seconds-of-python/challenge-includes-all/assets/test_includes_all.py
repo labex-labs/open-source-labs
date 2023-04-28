@@ -13,3 +13,7 @@ class TestIncludesAll(unittest.TestCase):
         self.assertFalse(includes_all(["a", "b", "c"], ["a", "d"]))
         self.assertTrue(includes_all([], []))
         self.assertFalse(includes_all([], [1, 2, 3]))
+
+
+if __name__ == "__main__":
+    unittest.main()

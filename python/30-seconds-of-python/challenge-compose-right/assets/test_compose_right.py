@@ -21,3 +21,7 @@ class TestComposeRight(unittest.TestCase):
         self.assertEqual(composed(5), 7)
         self.assertEqual(composed(10), 17)
         self.assertEqual(composed(0), -3)
+
+
+if __name__ == "__main__":
+    unittest.main()

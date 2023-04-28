@@ -21,3 +21,7 @@ class TestChunk(unittest.TestCase):
         self.assertEqual(chunk([1, 2, 3, 4, 5], 3), [[1, 2, 3], [4, 5]])
         self.assertEqual(chunk([1, 2, 3, 4, 5], 1), [[1], [2], [3], [4], [5]])
         self.assertEqual(chunk([], 2), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

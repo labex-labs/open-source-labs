@@ -11,3 +11,7 @@ class TestCompact(unittest.TestCase):
         self.assertEqual(compact([None, 0, "", False, [], {}]), [])
         self.assertEqual(compact([1, 2, 3]), [1, 2, 3])
         self.assertEqual(compact([]), [])
+
+
+if __name__ == "__main__":
+    unittest.main()

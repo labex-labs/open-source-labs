@@ -11,3 +11,7 @@ class TestIntersectionBy(unittest.TestCase):
         b = [2, 4, 6, 8, 10]
         fn = lambda x: x * 2
         self.assertEqual(intersection_by(a, b, fn), [1, 2, 3, 4, 5])
+
+
+if __name__ == "__main__":
+    unittest.main()

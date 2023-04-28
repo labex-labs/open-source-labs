@@ -23,3 +23,7 @@ class TestCastList(unittest.TestCase):
 
     def test_integer(self):
         self.assertEqual(cast_list(123), [123])
+
+
+if __name__ == "__main__":
+    unittest.main()

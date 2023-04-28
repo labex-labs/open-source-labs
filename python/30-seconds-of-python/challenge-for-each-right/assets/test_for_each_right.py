@@ -16,3 +16,7 @@ class TestForEachRight(unittest.TestCase):
         result = []
         for_each_right(lst, lambda x: result.append(x.upper()))
         self.assertEqual(result, ["C", "B", "A"])
+
+
+if __name__ == "__main__":
+    unittest.main()

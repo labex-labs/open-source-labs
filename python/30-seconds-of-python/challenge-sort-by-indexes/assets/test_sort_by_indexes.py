@@ -26,3 +26,7 @@ class TestSortByIndexes(unittest.TestCase):
         indexes = [2, 0, 3, 1]
         expected_output = ["banana", "cherry", "date", "apple"]
         self.assertEqual(sort_by_indexes(lst, indexes), expected_output)
+
+
+if __name__ == "__main__":
+    unittest.main()
