@@ -1,55 +1,59 @@
 {
-  "type": "challenge",
-  "title": "Partition",
-  "description": "In computer science, partitioning is the act of dividing a data set into multiple parts. In this challenge, we will partition a linked list around a given value x.",
-  "difficulty": "Beginner",
-  "time": 15,
-  "details": {
-    "steps": [
-      {
-        "title": "Partition",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Check if all tests are passed",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have the correct output format.",
-            "timeout": 0,
-            "showstderr": true
-          }
+    "type": "challenge",
+    "title": "Partition",
+    "description": "In computer science, partitioning is the act of dividing a data set into multiple parts. In this challenge, we will partition a linked list around a given value x.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Partition",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if all tests are passed",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have the correct output format.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "algorithm/linked_lists"
+                ],
+                "solutions": [
+                    "partition.py"
+                ]
+            }
         ],
-        "skills": ["algorithm/linked_lists"],
-        "solutions": ["answer.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_partition.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
         },
-        {
-          "file": "answer.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_partition.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "partition.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
         }
-      ]
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
     }
-  },
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "license": {
-    "name": "Apache-2.0",
-    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
 }

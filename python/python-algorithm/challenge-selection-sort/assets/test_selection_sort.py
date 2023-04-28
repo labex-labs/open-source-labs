@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from selection_sort import *
 
 
 class TestSelectionSort(unittest.TestCase):

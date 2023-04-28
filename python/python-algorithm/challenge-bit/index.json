@@ -1,55 +1,59 @@
 {
-  "type": "challenge",
-  "title": "Bit",
-  "description": "Bit manipulation is a fundamental concept in computer science and is widely used in various fields. It involves manipulating individual bits that make up a binary number. In Python, we can perform common bit manipulation operations such as getting a bit, setting a bit, clearing a bit, and updating a bit. In this challenge, we will implement these operations.",
-  "difficulty": "Beginner",
-  "time": 15,
-  "details": {
-    "steps": [
-      {
-        "title": "Bit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Check if all tests are passed",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have the correct output format.",
-            "timeout": 0,
-            "showstderr": true
-          }
+    "type": "challenge",
+    "title": "Bit",
+    "description": "Bit manipulation is a fundamental concept in computer science and is widely used in various fields. It involves manipulating individual bits that make up a binary number. In Python, we can perform common bit manipulation operations such as getting a bit, setting a bit, clearing a bit, and updating a bit. In this challenge, we will implement these operations.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Bit",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if all tests are passed",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have the correct output format.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "algorithm/bit_manipulation"
+                ],
+                "solutions": [
+                    "bit.py"
+                ]
+            }
         ],
-        "skills": ["algorithm/bit_manipulation"],
-        "solutions": ["answer.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_bit.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
         },
-        {
-          "file": "answer.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_bit.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "bit.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
         }
-      ]
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
     }
-  },
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "license": {
-    "name": "Apache-2.0",
-    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
 }

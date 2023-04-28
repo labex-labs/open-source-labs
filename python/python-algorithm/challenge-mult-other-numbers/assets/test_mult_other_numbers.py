@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from mult_other_numbers import *
 
 
 class TestMultOtherNumbers(unittest.TestCase):

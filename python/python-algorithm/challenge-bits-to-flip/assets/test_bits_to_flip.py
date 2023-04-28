@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from bits_to_flip import *
 
 
 class TestBits(unittest.TestCase):

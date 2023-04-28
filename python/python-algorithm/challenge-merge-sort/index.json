@@ -1,55 +1,59 @@
 {
-  "type": "challenge",
-  "title": "Merge Sort",
-  "description": "Merge sort is a popular sorting algorithm that uses the divide-and-conquer approach to sort an array. It is a stable, comparison-based algorithm that has a time complexity of O(n log n).",
-  "difficulty": "Beginner",
-  "time": 15,
-  "details": {
-    "steps": [
-      {
-        "title": "Merge Sort",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Check if all tests are passed",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have the correct output format.",
-            "timeout": 0,
-            "showstderr": true
-          }
+    "type": "challenge",
+    "title": "Merge Sort",
+    "description": "Merge sort is a popular sorting algorithm that uses the divide-and-conquer approach to sort an array. It is a stable, comparison-based algorithm that has a time complexity of O(n log n).",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Merge Sort",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if all tests are passed",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have the correct output format.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "algorithm/sorting_searching"
+                ],
+                "solutions": [
+                    "merge_sort.py"
+                ]
+            }
         ],
-        "skills": ["algorithm/sorting_searching"],
-        "solutions": ["answer.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_merge_sort.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
         },
-        {
-          "file": "answer.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_merge_sort.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "merge_sort.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
         }
-      ]
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
     }
-  },
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "license": {
-    "name": "Apache-2.0",
-    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
 }

@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from two_sum import *
 
 
 class TestTwoSum(unittest.TestCase):

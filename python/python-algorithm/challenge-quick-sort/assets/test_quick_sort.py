@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from quick_sort import *
 
 
 class TestQuickSort(unittest.TestCase):

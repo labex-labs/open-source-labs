@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from merge_ranges import *
 
 
 class TestMergeRanges(unittest.TestCase):

@@ -1,55 +1,59 @@
 {
-  "type": "challenge",
-  "title": "N Pairs Parentheses",
-  "description": "In computer science, the problem of generating all valid combinations of n-pairs of parentheses is a classic problem. It is often used as an example problem in computer science courses and coding interviews.",
-  "difficulty": "Beginner",
-  "time": 15,
-  "details": {
-    "steps": [
-      {
-        "title": "N Pairs Parentheses",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Check if all tests are passed",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have the correct output format.",
-            "timeout": 0,
-            "showstderr": true
-          }
+    "type": "challenge",
+    "title": "N Pairs Parentheses",
+    "description": "In computer science, the problem of generating all valid combinations of n-pairs of parentheses is a classic problem. It is often used as an example problem in computer science courses and coding interviews.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "N Pairs Parentheses",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check if all tests are passed",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have the correct output format.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [
+                    "algorithm/recursion_dynamic"
+                ],
+                "solutions": [
+                    "n_pairs_parentheses.py"
+                ]
+            }
         ],
-        "skills": ["algorithm/recursion_dynamic"],
-        "solutions": ["answer.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_n_pairs_parentheses.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
         },
-        {
-          "file": "answer.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_n_pairs_parentheses.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "n_pairs_parentheses.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
         }
-      ]
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "Apache-2.0",
+        "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
+        "repo": "https://github.com/donnemartin/interactive-coding-challenges"
     }
-  },
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "license": {
-    "name": "Apache-2.0",
-    "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
-    "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
 }

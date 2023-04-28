@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from kth_to_last_elem import *
 
 
 class Test(unittest.TestCase):

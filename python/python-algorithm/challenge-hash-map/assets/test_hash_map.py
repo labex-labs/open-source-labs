@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from hash_map import *
 
 
 class TestHashMap(unittest.TestCase):

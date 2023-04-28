@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from longest_increasing_subseq import *
 
 
 class TestLongestIncreasingSubseq(unittest.TestCase):

@@ -2,7 +2,7 @@ import unittest
 import sys
 
 sys.path.append("/home/labex/project")
-from answer import *
+from build_order import *
 
 
 class TestBuildOrder(unittest.TestCase):
