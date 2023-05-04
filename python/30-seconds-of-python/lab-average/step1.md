@@ -1,4 +1,4 @@
-# Average 
+# Average
 
 Write a function called `average` that takes in two or more numbers and returns their average. Your function should follow these guidelines:
 
