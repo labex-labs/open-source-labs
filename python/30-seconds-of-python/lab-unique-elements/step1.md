@@ -1,7 +1,5 @@
 # Unique Elements in List
 
-## Problem
-
 Write a Python function called `unique_elements` that takes a list as input and returns a new list containing only the unique elements. Your function should perform the following steps:
 
 - Create a `set` from the list to discard duplicated values.
@@ -13,10 +11,11 @@ Your function should have the following signature:
 def unique_elements(li: List) -> List:
 ```
 
-## Example
+```py
+def unique_elements(li):
+  return list(set(li))
+```
 
-```python
-assert unique_elements([1, 2, 2, 3, 4, 3]) == [1, 2, 3, 4]
-assert unique_elements(['a', 'b', 'c', 'a', 'd']) == ['a', 'b', 'c', 'd']
-assert unique_elements([]) == []
+```py
+unique_elements([1, 2, 2, 3, 4, 3]) # [1, 2, 3, 4]
 ```

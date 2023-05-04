@@ -1,7 +1,5 @@
 # Pad String
 
-## Problem
-
 Write a function `pad(s: str, length: int, char: str = ' ') -> str` that pads a string on both sides with the specified character, if it's shorter than the specified length. The function should take in three parameters:
 
 - `s`: a string that needs to be padded
@@ -10,7 +8,12 @@ Write a function `pad(s: str, length: int, char: str = ' ') -> str` that pads a 
 
 The function should return the padded string.
 
-## Example
+```py
+from math import floor
+
+def pad(s, length, char = ' '):
+  return s.rjust(floor((len(s) + length)/2), char).ljust(length, char)
+```
 
 ```py
 pad('cat', 8) # '  cat   '

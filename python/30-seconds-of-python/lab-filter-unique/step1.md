@@ -1,7 +1,5 @@
 # Filter Unique List Values
 
-## Problem
-
 Write a Python function called `filter_unique(lst)` that takes a list as an argument and returns a new list with only the non-unique values. To solve this problem, you can follow these steps:
 
 1. Use `collections.Counter` to get the count of each value in the list.
@@ -19,9 +17,13 @@ def filter_unique(lst):
     # your code here
 ```
 
-## Example
+```py
+from collections import Counter
 
-```python
-assert filter_unique([1, 2, 2, 3, 4, 4, 5]) == [2, 4]
-assert filter_unique(['a', 'b', 'c', 'b', 'd', 'e', 'e']) == ['b', 'e']
+def filter_unique(lst):
+  return [item for item, count in Counter(lst).items() if count > 1]
+```
+
+```py
+filter_unique([1, 2, 2, 3, 4, 4, 5]) # [2, 4]
 ```

@@ -1,7 +1,5 @@
 # Sum of powers Challenge
 
-## Problem
-
 Write a Python function called `sum_of_powers` that takes in three parameters:
 
 - `end` - an integer representing the end of the range (inclusive)
@@ -15,10 +13,13 @@ To solve this problem, you can follow these steps:
 1. Use `range()` in combination with a list comprehension to create a list of elements in the desired range raised to the given `power`.
 2. Use `sum()` to add the values together.
 
-## Example
+```py
+def sum_of_powers(end, power = 2, start = 1):
+  return sum([(i) ** power for i in range(start, end + 1)])
+```
 
 ```py
-sum_of_powers(10) # returns 385
-sum_of_powers(10, 3) # returns 3025
-sum_of_powers(10, 3, 5) # returns 2925
+sum_of_powers(10) # 385
+sum_of_powers(10, 3) # 3025
+sum_of_powers(10, 3, 5) # 2925
 ```

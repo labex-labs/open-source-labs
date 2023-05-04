@@ -1,7 +1,5 @@
 # Initialize List with Values
 
-## Problem
-
 Write a function `initialize_list_with_values(n, val=0)` that takes in two parameters:
 
 - `n` (integer) representing the length of the list to be created.
@@ -9,9 +7,11 @@ Write a function `initialize_list_with_values(n, val=0)` that takes in two param
 
 The function should return a list of length `n` filled with the specified value.
 
-## Example
+```py
+def initialize_list_with_values(n, val = 0):
+  return [val for x in range(n)]
+```
 
 ```py
 initialize_list_with_values(5, 2) # [2, 2, 2, 2, 2]
-initialize_list_with_values(3) # [0, 0, 0]
 ```

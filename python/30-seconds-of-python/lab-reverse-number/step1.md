@@ -1,7 +1,5 @@
 # Reverse Number Challenge
 
-## Problem
-
 Write a function `reverse_number(n)` that takes a number as an argument and returns the reverse of that number. The function should meet the following requirements:
 
 - The function should reverse the number, regardless of whether it is positive or negative.
@@ -10,7 +8,12 @@ Write a function `reverse_number(n)` that takes a number as an argument and retu
 - The function should not use any built-in functions that directly convert a number to a string (e.g. `str()`).
 - The function should not use any built-in functions that directly convert a string to a number (e.g. `int()` or `float()`).
 
-## Example
+```py
+from math import copysign
+
+def reverse_number(n):
+  return copysign(float(str(n)[::-1].replace('-', '')), n)
+```
 
 ```py
 reverse_number(981) # 189

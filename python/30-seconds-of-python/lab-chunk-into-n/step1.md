@@ -1,7 +1,5 @@
 # Split List into N Chunks
 
-## Problem
-
 Write a Python function called `chunk_into_n(lst, n)` that takes a list `lst` and an integer `n` as input and returns a list of `n` smaller lists, each containing an equal number of elements from the original list. If the original list cannot be split evenly into `n` smaller lists, the final chunk should contain the remaining elements.
 
 To solve this problem, you can follow these steps:
@@ -17,11 +15,17 @@ Your function should have the following signature:
 def chunk_into_n(lst: list, n: int) -> list:
 ```
 
-## Example
+```py
+from math import ceil
 
-```python
-assert chunk_into_n([1, 2, 3, 4, 5, 6, 7], 4) == [[1, 2], [3, 4], [5, 6], [7]]
-assert chunk_into_n([1, 2, 3, 4, 5, 6, 7], 3) == [[1, 2, 3], [4, 5, 6], [7]]
-assert chunk_into_n([1, 2, 3, 4, 5, 6, 7], 2) == [[1, 2, 3, 4], [5, 6, 7]]
-assert chunk_into_n([1, 2, 3, 4, 5, 6, 7], 1) == [[1, 2, 3, 4, 5, 6, 7]]
+def chunk_into_n(lst, n):
+  size = ceil(len(lst) / n)
+  return list(
+    map(lambda x: lst[x * size:x * size + size],
+    list(range(n)))
+  )
+```
+
+```py
+chunk_into_n([1, 2, 3, 4, 5, 6, 7], 4) # [[1, 2], [3, 4], [5, 6], [7]]
 ```

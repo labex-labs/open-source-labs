@@ -1,7 +1,5 @@
 # Mapped List Average
 
-## Problem
-
 Write a function called `average_by(lst, fn = lambda x: x)` that takes a list `lst` and a function `fn` as arguments. The function `fn` should be used to map each element of the list to a value. The function should then calculate the average of the mapped values and return it.
 
 If the `fn` argument is not provided, the function should use the default identity function, which simply returns the element itself.
@@ -14,10 +12,12 @@ Your function should meet the following requirements:
 
 Function signature: `def average_by(lst, fn = lambda x: x) -> float:`
 
-## Example
+```py
+def average_by(lst, fn = lambda x: x):
+  return sum(map(fn, lst), 0.0) / len(lst)
+```
 
 ```py
-assert average_by([1, 2, 3, 4, 5]) == 3.0
-assert average_by([1, 2, 3, 4, 5], lambda x: x**2) == 11.0
-assert average_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda x: x['n']) == 5.0
+average_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda x: x['n'])
+# 5.0
 ```

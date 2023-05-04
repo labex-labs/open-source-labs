@@ -1,7 +1,5 @@
 # Number in Range
 
-## Problem
-
 Write a function `in_range(n, start, end = 0)` that takes in three parameters:
 
 - `n`: a number to check if it falls within the range
@@ -10,7 +8,10 @@ Write a function `in_range(n, start, end = 0)` that takes in three parameters:
 
 The function should return `True` if the given number `n` falls within the specified range, and `False` otherwise. If the `end` parameter is not specified, the range is considered to be from `0` to `start`.
 
-## Example
+```py
+def in_range(n, start, end = 0):
+  return start <= n <= end if end >= start else end <= n <= start
+```
 
 ```py
 in_range(3, 2, 5) # True

@@ -1,7 +1,5 @@
 # Fibonacci Challenge
 
-## Problem
-
 Write a function called `fibonacci(n)` that takes an integer `n` as its parameter and returns a list containing the Fibonacci sequence up until the nth term.
 
 To solve this problem, you can follow these steps:
@@ -12,7 +10,16 @@ To solve this problem, you can follow these steps:
 4. Use a while loop to add the sum of the last two numbers of the `sequence` list to the end of the list, until the length of the list reaches `n`.
 5. Return the `sequence` list.
 
-## Example
+```py
+def fibonacci(n):
+  if n <= 0:
+    return [0]
+  sequence = [0, 1]
+  while len(sequence) <= n:
+    next_value = sequence[len(sequence) - 1] + sequence[len(sequence) - 2]
+    sequence.append(next_value)
+  return sequence
+```
 
 ```py
 fibonacci(7) # [0, 1, 1, 2, 3, 5, 8, 13]

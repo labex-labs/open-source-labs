@@ -1,7 +1,5 @@
 # Geometric Progression Challenge
 
-## Problem
-
 Write a function called `geometric_progression` that takes in three parameters:
 
 - `end`: an integer representing the end of the range (inclusive)
@@ -14,7 +12,13 @@ If `step` equals `1`, the function should return an error.
 
 You should use `range()`, `math.log()`, and `math.floor()` and a list comprehension to create a list of the appropriate length, applying the step for each element.
 
-## Example
+```py
+from math import floor, log
+
+def geometric_progression(end, start=1, step=2):
+  return [start * step ** i for i in range(floor(log(end / start)
+          / log(step)) + 1)]
+```
 
 ```py
 geometric_progression(256) # [1, 2, 4, 8, 16, 32, 64, 128, 256]

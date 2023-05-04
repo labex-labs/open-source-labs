@@ -1,7 +1,5 @@
 # Invert a Dictionary
 
-## Problem
-
 Write a function `invert_dictionary(obj)` that takes a dictionary `obj` as input and returns a new dictionary with the keys and values inverted. The input dictionary will have non-unique hashable values. If two or more keys have the same value, the function should append the keys to a list in the output dictionary.
 
 To solve this problem, you can follow these steps:
@@ -12,7 +10,15 @@ To solve this problem, you can follow these steps:
 
 Function signature: `def invert_dictionary(obj: dict) -> dict:`
 
-## Example
+```py
+from collections import defaultdict
+
+def collect_dictionary(obj):
+  inv_obj = defaultdict(list)
+  for key, value in obj.items():
+    inv_obj[value].append(key)
+  return dict(inv_obj)
+```
 
 ```py
 ages = {
@@ -20,5 +26,5 @@ ages = {
   'Isabel': 10,
   'Anna': 9,
 }
-invert_dictionary(ages) # { 10: ['Peter', 'Isabel'], 9: ['Anna'] }
+collect_dictionary(ages) # { 10: ['Peter', 'Isabel'], 9: ['Anna'] }
 ```

@@ -1,7 +1,5 @@
 # Snakecase String
 
-## Problem
-
 Write a Python function called `snake` that takes a string as its argument and returns the string in snake case. The function should perform the following steps:
 
 1. Use `re.sub()` to match all words in the string, `str.lower()` to lowercase them.
@@ -10,7 +8,15 @@ Write a Python function called `snake` that takes a string as its argument and r
 
 Your function should be able to handle strings with a mix of uppercase and lowercase letters, spaces, hyphens, and underscores.
 
-## Example
+```py
+from re import sub
+
+def snake(s):
+  return '_'.join(
+    sub('([A-Z][a-z]+)', r' \1',
+    sub('([A-Z]+)', r' \1',
+    s.replace('-', ' '))).split()).lower()
+```
 
 ```py
 snake('camelCase') # 'camel_case'

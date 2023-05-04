@@ -1,7 +1,5 @@
 # Arithmetic Progression
 
-## Problem
-
 Write a function `arithmetic_progression(n, lim)` that takes in two positive integers `n` and `lim` and returns a list of numbers in the arithmetic progression starting with `n` and up to `lim`. The function should use `range()` and `list()` with the appropriate start, step, and end values to generate the list.
 
 ### Input
@@ -12,7 +10,10 @@ Write a function `arithmetic_progression(n, lim)` that takes in two positive int
 
 - A list of numbers in the arithmetic progression starting with `n` and up to `lim`.
 
-## Example
+```py
+def arithmetic_progression(n, lim):
+  return list(range(n, lim + 1, n))
+```
 
 ```py
 arithmetic_progression(5, 25) # [5, 10, 15, 20, 25]

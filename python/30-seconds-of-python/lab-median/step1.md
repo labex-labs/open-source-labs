@@ -1,7 +1,5 @@
 # Median Challenge
 
-## Problem
-
 Write a Python function called `find_median` that takes a list of numbers as an argument and returns the median of the list. Your function should perform the following steps:
 
 1. Sort the numbers of the list using `list.sort()`.
@@ -10,9 +8,16 @@ Write a Python function called `find_median` that takes a list of numbers as an 
 
 Your function should not use any built-in Python libraries or functions that directly solve the problem.
 
-## Example
+```py
+def median(list):
+  list.sort()
+  list_length = len(list)
+  if list_length % 2 == 0:
+    return (list[int(list_length / 2) - 1] + list[int(list_length / 2)]) / 2
+  return float(list[int(list_length / 2)])
+```
 
 ```py
-find_median([1, 2, 3]) # 2.0
-find_median([1, 2, 3, 4]) # 2.5
+median([1, 2, 3]) # 2.0
+median([1, 2, 3, 4]) # 2.5
 ```

@@ -1,7 +1,5 @@
 # Find Parity Outliers
 
-## Problem
-
 Write a function `find_parity_outliers(nums)` that takes a list of integers `nums` as an argument and returns a list of all the parity outliers in `nums`.
 
 To solve this problem, you can follow these steps:
@@ -10,10 +8,16 @@ To solve this problem, you can follow these steps:
 2. Use `collections.Counter.most_common()` to get the most common parity.
 3. Use a list comprehension to find all elements that do not match the most common parity.
 
-## Example
+```py
+from collections import Counter
+
+def find_parity_outliers(nums):
+  return [
+    x for x in nums
+    if x % 2 != Counter([n % 2 for n in nums]).most_common()[0][0]
+  ]
+```
 
 ```py
 find_parity_outliers([1, 2, 3, 4, 6]) # [1, 3]
 ```
-
-In the example above, the majority of the elements in the list are even, so the parity outliers are the odd elements 1 and 3.

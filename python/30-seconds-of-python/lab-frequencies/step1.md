@@ -1,7 +1,5 @@
 ## Value Frequencies
 
-## Problem
-
 Write a Python function called `value_frequencies(lst)` that takes a list as an argument and returns a dictionary with the unique values of the list as keys and their frequencies as the values.
 
 To solve this problem, you can follow these steps:
@@ -12,8 +10,16 @@ To solve this problem, you can follow these steps:
 
 Your function should return the dictionary with the unique values and their frequencies.
 
-## Example
+```py
+from collections import defaultdict
+
+def frequencies(lst):
+  freq = defaultdict(int)
+  for val in lst:
+    freq[val] += 1
+  return dict(freq)
+```
 
 ```py
-value_frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
+frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
 ```

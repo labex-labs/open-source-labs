@@ -1,7 +1,5 @@
 # List Union Based on Function
 
-## Problem
-
 Write a function `union_by(a, b, fn)` that takes in two lists `a` and `b`, and a function `fn`. The function should return a list that contains every element that exists in any of the two lists once, after applying the provided function to each element of both.
 
 To solve this problem, you can follow these steps:
@@ -18,14 +16,14 @@ The function should have the following input parameters:
 
 The function should return a list of elements.
 
-## Example
+```py
+def union_by(a, b, fn):
+  _a = set(map(fn, a))
+  return list(set(a + [item for item in b if fn(item) not in _a]))
+```
 
-Here's an example of what `union_by()` should do:
-
-```python
+```py
 from math import floor
 
 union_by([2.1], [1.2, 2.3], floor) # [2.1, 1.2]
 ```
-
-In this example, `union_by()` takes in two lists `[2.1]` and `[1.2, 2.3]`, and a function `floor()`. The function applies `floor()` to each element of both lists, creating a set of `{2}`. Then, it uses a list comprehension to keep only the values not contained in the set, which is `[1.2]`. Finally, it creates a set from the previous result and `[2.1]`, which is `{1.2, 2.1}`, and transforms it into a list `[1.2, 2.1]`.

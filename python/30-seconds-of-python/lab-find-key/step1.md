@@ -1,7 +1,5 @@
 # Find the Key of a Value in a Dictionary
 
-## Problem
-
 Write a function `find_key(dict, val)` that finds the first key in the provided dictionary that has the given value.
 
 Your function should:
@@ -10,7 +8,10 @@ Your function should:
 - Use `dictionary.items()` and `next()` to return the first key that has a value equal to `val`.
 - Return the key as output.
 
-## Example
+```py
+def find_key(dict, val):
+  return next(key for key, value in dict.items() if value == val)
+```
 
 ```py
 ages = {

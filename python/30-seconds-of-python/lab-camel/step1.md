@@ -1,10 +1,14 @@
 # Camelcase String
 
-## Problem
-
 You are given a string that may contain spaces, hyphens, or underscores. Your task is to convert the string to camelcase by removing the spaces, hyphens, or underscores and capitalizing the first letter of each word except the first one. The first letter of the resulting string should be in lowercase.
 
-## Example
+```py
+from re import sub
+
+def camel(s):
+  s = sub(r"(_|-)+", " ", s).title().replace(" ", "")
+  return ''.join([s[0].lower(), s[1:]])
+```
 
 ```py
 camel('some_database_field_name') # 'someDatabaseFieldName'

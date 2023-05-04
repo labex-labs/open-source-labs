@@ -1,7 +1,5 @@
 # List Difference Based on Function
 
-## Problem
-
 Create a function called `difference_by(a, b, fn)` that takes in three parameters:
 
 - `a`: a list of elements
@@ -15,9 +13,15 @@ To solve this problem, you can follow these steps:
 1. Create a `set`, using `map()` to apply `fn` to each element in `b`.
 2. Use a list comprehension in combination with `fn` on `a` to only keep values not contained in the previously created set, `_b`.
 
-## Example
+```py
+def difference_by(a, b, fn):
+  _b = set(map(fn, b))
+  return [item for item in a if fn(item) not in _b]
+```
 
 ```py
+from math import floor
+
 difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2]
 difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x'])
 # [ { x: 2 } ]

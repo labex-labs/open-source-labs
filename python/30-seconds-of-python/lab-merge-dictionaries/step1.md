@@ -1,12 +1,16 @@
 # Merge Dictionaries
 
-## Problem
-
 Write a function `merge_dictionaries(*dicts)` that takes in two or more dictionaries as arguments and returns a new dictionary that contains all the key-value pairs from the input dictionaries.
 
 Your function should create a new dictionary and loop over the input dictionaries, using `dictionary.update()` to add the key-value pairs from each one to the result.
 
-## Example
+```py
+def merge_dictionaries(*dicts):
+  res = dict()
+  for d in dicts:
+    res.update(d)
+  return res
+```
 
 ```py
 ages_one = {

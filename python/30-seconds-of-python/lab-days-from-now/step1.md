@@ -1,7 +1,5 @@
 # Days from now
 
-## Problem
-
 Write a function `days_from_now(n)` that takes an integer `n` as input and returns the date of `n` days from today.
 
 To solve this problem, you can follow these steps:
@@ -11,11 +9,13 @@ To solve this problem, you can follow these steps:
 3. Use the `timedelta` method to add `n` days to the current date.
 4. Return the new date.
 
-## Example
+```py
+from datetime import timedelta, date
 
-```python
->>> days_from_now(5)
-datetime.date(2022, 12, 28)
->>> days_from_now(10)
-datetime.date(2022, 1, 2)
+def days_from_now(n):
+  return date.today() + timedelta(n)
+```
+
+```py
+days_from_now(5) # date(2020, 11, 02)
 ```

@@ -1,7 +1,5 @@
 # Date Range Challenge
 
-## Problem
-
 Write a Python function called `daterange(start, end)` that takes two `datetime.date` objects as arguments and returns a list of all the dates between them. The list should include the start date but not the end date.
 
 To solve this problem, you can follow these steps:
@@ -10,7 +8,12 @@ To solve this problem, you can follow these steps:
 2. Use `int()` to convert the result to an integer and `range()` to iterate over each day.
 3. Use a list comprehension and `datetime.timedelta` to create a list of `datetime.date` objects.
 
-## Example
+```py
+from datetime import timedelta, date
+
+def daterange(start, end):
+  return [start + timedelta(n) for n in range(int((end - start).days))]
+```
 
 ```py
 from datetime import date

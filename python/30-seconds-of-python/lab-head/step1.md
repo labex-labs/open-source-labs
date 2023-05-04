@@ -1,7 +1,5 @@
 # List Head Function
 
-## Problem
-
 Write a Python function called `head(lst)` that takes a list as its argument and returns the first element of the list.
 
 Your function should have the following requirements:
@@ -11,7 +9,10 @@ Your function should have the following requirements:
 - The function should return the first element of the list
 - The function should not modify the original list
 
-## Example
+```py
+def head(lst):
+  return lst[0]
+```
 
 ```py
 head([1, 2, 3]) # 1

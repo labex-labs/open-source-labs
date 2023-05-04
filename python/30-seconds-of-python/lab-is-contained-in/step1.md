@@ -1,7 +1,5 @@
 # List Containment
 
-## Problem
-
 Write a function `is_contained_in(a, b)` that takes two lists as arguments and returns `True` if all the elements of list `a` are contained in list `b`, regardless of order. Otherwise, the function should return `False`.
 
 To solve this problem, you can use the following approach:
@@ -11,11 +9,14 @@ To solve this problem, you can use the following approach:
 3. If any value appears more times in list `a` than in list `b`, return `False`.
 4. If all values in list `a` appear in list `b` at least as many times as they appear in list `a`, return `True`.
 
-## Example
+```py
+def is_contained_in(a, b):
+  for v in set(a):
+    if a.count(v) > b.count(v):
+      return False
+  return True
+```
 
-```python
-assert is_contained_in([1, 4], [2, 4, 1]) == True
-assert is_contained_in([1, 2, 3], [3, 2, 1]) == True
-assert is_contained_in([1, 2, 3], [3, 2, 2, 1]) == False
-assert is_contained_in([1, 2, 3], [4, 5, 6]) == False
+```py
+is_contained_in([1, 4], [2, 4, 1]) # True
 ```
