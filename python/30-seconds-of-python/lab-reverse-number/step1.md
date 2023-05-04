@@ -1,4 +1,4 @@
-# Reverse Number Challenge
+# Reverse Number
 
 Write a function `reverse_number(n)` that takes a number as an argument and returns the reverse of that number. The function should meet the following requirements:
 

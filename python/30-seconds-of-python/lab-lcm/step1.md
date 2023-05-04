@@ -1,4 +1,4 @@
-# Least Common Multiple Challenge
+# Least Common Multiple
 
 Write a function `lcm(numbers)` that takes a list of numbers as an argument and returns their least common multiple. Your function should use the following formula to calculate the LCM of two numbers `x` and `y`: `lcm(x, y) = x * y / gcd(x, y)`, where `gcd(x, y)` is the greatest common divisor of `x` and `y`.
 

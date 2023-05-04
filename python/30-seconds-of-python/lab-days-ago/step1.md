@@ -1,4 +1,4 @@
-# Days Ago Challenge
+# Days Ago
 
 Your task is to write a function called `days_ago(n)` that takes an integer `n` as an argument and returns the date of `n` days ago from today.
 

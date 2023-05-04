@@ -1,4 +1,4 @@
-# Degrees to Radians Challenge
+# Degrees to Radians
 
 Write a function `degrees_to_rads(deg)` that takes an angle in degrees as an argument and returns the angle in radians. Your function should use the following formula to convert degrees to radians:
 

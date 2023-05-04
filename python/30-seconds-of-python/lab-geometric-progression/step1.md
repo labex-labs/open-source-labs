@@ -1,4 +1,4 @@
-# Geometric Progression Challenge
+# Geometric Progression
 
 Write a function called `geometric_progression` that takes in three parameters:
 

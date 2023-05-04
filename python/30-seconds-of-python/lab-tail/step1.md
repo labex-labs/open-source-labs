@@ -1,4 +1,4 @@
-# List Tail Challenge
+# List Tail
 
 Write a function `tail(lst)` that takes a list as an argument and returns all elements in the list except for the first one. If the list contains only one element, return the whole list.
 

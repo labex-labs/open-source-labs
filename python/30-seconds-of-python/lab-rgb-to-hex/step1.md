@@ -1,4 +1,4 @@
-# RGB to Hex Conversion Challenge
+# RGB to Hex Conversion
 
 Write a function `rgb_to_hex(r, g, b)` that takes in three integers representing the values of the red, green, and blue components of a color, and returns a string representing the hexadecimal color code. The output string should be in the format `RRGGBB`, where `RR`, `GG`, and `BB` are two-digit hexadecimal values representing the red, green, and blue components respectively.
 

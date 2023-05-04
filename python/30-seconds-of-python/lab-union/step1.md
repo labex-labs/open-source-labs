@@ -1,4 +1,4 @@
-# List Union Challenge
+# List Union
 
 Write a Python function called `list_union(a, b)` that takes two lists as input and returns a new list containing all the unique elements from both lists. Your function should perform the following steps:
 

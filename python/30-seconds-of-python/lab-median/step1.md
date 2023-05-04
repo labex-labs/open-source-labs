@@ -1,4 +1,4 @@
-# Median Challenge
+# Median
 
 Write a Python function called `find_median` that takes a list of numbers as an argument and returns the median of the list. Your function should perform the following steps:
 

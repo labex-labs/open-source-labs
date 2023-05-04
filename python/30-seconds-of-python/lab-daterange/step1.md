@@ -1,4 +1,4 @@
-# Date Range Challenge
+# Date Range
 
 Write a Python function called `daterange(start, end)` that takes two `datetime.date` objects as arguments and returns a list of all the dates between them. The list should include the start date but not the end date.
 

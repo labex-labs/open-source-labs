@@ -1,4 +1,4 @@
-# String to Words Challenge
+# String to Words
 
 Write a function `string_to_words(s: str, pattern: str = '[a-zA-Z-]+') -> List[str]` that takes a string `s` and an optional `pattern` string as arguments and returns a list of words in the string.
 

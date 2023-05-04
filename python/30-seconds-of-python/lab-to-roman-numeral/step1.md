@@ -1,4 +1,4 @@
-# Integer to Roman Numeral Challenge
+# Integer to Roman Numeral
 
 Write a function `to_roman_numeral(num)` that takes an integer `num` between 1 and 3999 (inclusive) and returns its Roman numeral representation as a string.
 

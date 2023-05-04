@@ -1,4 +1,4 @@
-# String to Slug Challenge
+# String to Slug
 
 Write a function `slugify(s)` that takes a string `s` as an argument and returns a slug. The function should perform the following operations:
 

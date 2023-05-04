@@ -1,4 +1,4 @@
-# Clamp Number Challenge
+# Clamp Number
 
 Write a function `clamp_number(num, a, b)` that takes in three parameters:
 

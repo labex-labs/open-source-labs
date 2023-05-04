@@ -1,4 +1,4 @@
-# List Intersection Challenge
+# List Intersection
 
 Write a function `list_intersection(a, b)` that takes two lists `a` and `b` as input and returns a new list containing only the elements that are present in both `a` and `b`. If there are no common elements, the function should return an empty list.
 

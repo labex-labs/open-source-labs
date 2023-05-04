@@ -1,4 +1,4 @@
-# Radians to Degrees Challenge
+# Radians to Degrees
 
 Write a Python function called `rads_to_degrees` that takes a single argument `rad`, which is a float representing an angle in radians. The function should return the angle in degrees as a float. You can use the following formula to convert an angle from radians to degrees:
 

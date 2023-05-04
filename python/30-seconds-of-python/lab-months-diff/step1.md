@@ -1,4 +1,4 @@
-# Date Difference Challenge
+# Date Difference
 
 Write a function called `months_diff(start, end)` that takes in two date objects and returns the month difference between them. The function should:
 

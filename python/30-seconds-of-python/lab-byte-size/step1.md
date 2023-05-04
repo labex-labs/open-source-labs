@@ -1,6 +1,6 @@
 # Byte Size of String
 
-Write a function `byte_size(s)` that takes a string `s` as input and returns its byte size. The byte size of a string is the number of bytes required to store the string in memory. To calculate the byte size of a string, you need to encode the string using a specific encoding scheme. In this challenge, you will use the UTF-8 encoding scheme.
+Write a function `byte_size(s)` that takes a string `s` as input and returns its byte size. The byte size of a string is the number of bytes required to store the string in memory. To calculate the byte size of a string, you need to encode the string using a specific encoding scheme. In this lab, you will use the UTF-8 encoding scheme.
 
 To calculate the byte size of a string, you can follow these steps:
 

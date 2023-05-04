@@ -1,4 +1,4 @@
-# Sort Dictionary Challenge
+# Sort Dictionary
 
 Write a function called `sort_dict_by_value(d, reverse=False)` that takes a dictionary `d` and sorts it by its values. The function should return a new dictionary with the same keys as the original dictionary, but with the values sorted in ascending order. If the `reverse` parameter is set to `True`, the function should sort the dictionary in descending order.
 

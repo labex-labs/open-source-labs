@@ -1,4 +1,4 @@
-# Powerset Challenge
+# Powerset
 
 Write a Python function called `powerset(iterable)` that takes an iterable as an argument and returns the powerset of the iterable. The function should follow these steps:
 

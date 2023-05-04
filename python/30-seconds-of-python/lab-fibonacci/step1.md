@@ -1,4 +1,4 @@
-# Fibonacci Challenge
+# Fibonacci
 
 Write a function called `fibonacci(n)` that takes an integer `n` as its parameter and returns a list containing the Fibonacci sequence up until the nth term.
 

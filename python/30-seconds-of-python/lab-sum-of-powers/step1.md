@@ -1,4 +1,4 @@
-# Sum of powers Challenge
+# Sum of powers
 
 Write a Python function called `sum_of_powers` that takes in three parameters:
 

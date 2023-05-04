@@ -1,4 +1,4 @@
-# Hamming Distance Challenge
+# Hamming Distance
 
 Write a function `hamming_distance(a, b)` that takes two integers as arguments and returns the Hamming distance between them. The function should perform the following steps:
 

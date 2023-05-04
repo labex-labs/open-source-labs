@@ -1,4 +1,4 @@
-# String Anagram Challenge
+# String Anagram
 
 Write a function `is_anagram(s1, s2)` that takes two strings as arguments and returns `True` if they are anagrams of each other, and `False` otherwise. The function should be case-insensitive, ignore spaces, punctuation, and special characters.
 
