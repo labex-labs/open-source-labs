@@ -12,7 +12,7 @@ The implementation of `draw_line` must meet the following requirements:
 - The corresponding bits in `screen` must be set to draw the line.
 - It may be assumed that the implementation fits memory.
 
-### Example Usage
+## Example Usage
 
 The following examples illustrate the expected behavior of `draw_line`:
 

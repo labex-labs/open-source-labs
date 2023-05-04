@@ -1,0 +1,54 @@
+{
+    "type": "lab",
+    "title": "Split list into chunks",
+    "description": "In Python, we often need to split a list into smaller lists of a specified size. This can be useful for various purposes, such as processing data in batches or displaying data in a paginated format. In this challenge, you will be tasked with writing a function that can split a list into smaller lists of a specified size.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Split list into chunks",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": []
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_chunk.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "chunk.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+    }
+}

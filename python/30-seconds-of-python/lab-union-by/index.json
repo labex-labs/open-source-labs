@@ -1,0 +1,54 @@
+{
+    "type": "lab",
+    "title": "List Union Based on Function",
+    "description": "In Python, we can use the `set()` function to get the union of two lists. However, sometimes we need to apply a function to each element of both lists before getting the union. In this challenge, you will create a function that returns the union of two lists based on a provided function.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "List Union Based on Function",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": []
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_union_by.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "union_by.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+    }
+}

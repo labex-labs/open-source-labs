@@ -1,0 +1,54 @@
+{
+    "type": "lab",
+    "title": "Decapitalize String",
+    "description": "In Python, strings are immutable, meaning that they cannot be changed once they are created. However, there are times when we need to modify a string, such as when we want to decapitalize the first letter. This can be useful when dealing with user input or when formatting strings for display purposes. In this challenge, you will be tasked with writing a function that decapitalizes the first letter of a string.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Decapitalize String",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": []
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_decapitalize.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "decapitalize.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+    }
+}

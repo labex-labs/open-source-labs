@@ -1,0 +1,54 @@
+{
+    "type": "lab",
+    "title": "Compose Functions",
+    "description": "Function composition is a technique used in functional programming to combine two or more functions to form a new function. In Python, we can use the `functools.reduce()` function to perform right-to-left function composition.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Compose Functions",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": []
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_compose.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "compose.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+    }
+}

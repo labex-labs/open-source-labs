@@ -12,7 +12,7 @@ Write a function `arithmetic_progression(n, lim)` that takes in two positive int
 
 - A list of numbers in the arithmetic progression starting with `n` and up to `lim`.
 
-### Example
+## Example
 
 ```py
 arithmetic_progression(5, 25) # [5, 10, 15, 20, 25]

@@ -1,0 +1,54 @@
+{
+    "type": "lab",
+    "title": "List Intersection Based on Function",
+    "description": "In Python, we can find the intersection of two lists using the `set()` and `intersection()` methods. However, what if we want to find the intersection based on a specific function applied to each element in both lists? In this challenge, you will create a function that takes in two lists and a function, and returns a list of elements that exist in both lists, after applying the provided function to each list element of both.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "List Intersection Based on Function",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": []
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "test_intersection_by.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "intersection_by.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+    }
+}

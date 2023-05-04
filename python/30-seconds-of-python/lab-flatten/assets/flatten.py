@@ -1,0 +1,2 @@
+def flatten(lst):
+    pass

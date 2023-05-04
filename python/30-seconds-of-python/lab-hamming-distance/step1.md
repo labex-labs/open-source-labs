@@ -1,0 +1,16 @@
+# Hamming Distance
+
+Write a function `hamming_distance(a, b)` that takes two integers as arguments and returns the Hamming distance between them. The function should perform the following steps:
+
+1. Use the XOR operator (`^`) to find the bit difference between the two numbers.
+2. Use `bin()` to convert the result to a binary string.
+3. Convert the string to a list and use `count()` of `str` class to count and return the number of `1`s in it.
+
+```py
+def hamming_distance(a, b):
+  return bin(a ^ b).count('1')
+```
+
+```py
+hamming_distance(2, 3) # 1
+```

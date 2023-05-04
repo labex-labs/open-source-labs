@@ -20,7 +20,7 @@ def unfold(fn, seed):
 
 - A list that is produced by the generator, using the iterator function.
 
-### Example
+## Example
 
 ```python
 f = lambda n: False if n > 50 else [-n, n + 10]
