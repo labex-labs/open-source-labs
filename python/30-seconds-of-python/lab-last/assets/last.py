@@ -1,0 +1,2 @@
+def last(lst):
+    pass
