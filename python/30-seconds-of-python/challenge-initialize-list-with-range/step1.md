@@ -16,7 +16,7 @@ The function should return a list of the appropriate length, filled with the des
 
 - A list containing the numbers in the specified range.
 
-### Example
+## Example
 
 ```python
 initialize_list_with_range(5) # [0, 1, 2, 3, 4, 5]

@@ -4,7 +4,7 @@
 
 Write a function called `min_by(lst, fn)` that takes a list `lst` and a function `fn` as arguments. The function should map each element in the list to a value using the provided function, and then return the minimum value.
 
-### Example
+## Example
 
 ```py
 min_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 2

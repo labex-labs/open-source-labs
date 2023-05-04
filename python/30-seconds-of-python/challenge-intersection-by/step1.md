@@ -13,7 +13,7 @@ Write a function `intersection_by(a, b, fn)` that takes in two lists `a` and `b`
 
 - A list of elements that exist in both lists, after applying the provided function to each list element of both.
 
-### Example
+## Example
 
 ```py
 intersection_by([2.1, 1.2], [2.3, 3.4], floor) # [2.1]
