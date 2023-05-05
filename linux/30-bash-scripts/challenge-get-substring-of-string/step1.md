@@ -7,6 +7,7 @@ The problem is to extract a substring from a given string in Bash. The substring
 ## Requirements
 
 To solve this problem, we need to follow the below requirements:
+
 - Create a Bash script file with a name of your choice.
 - Define a string variable with the desired string value.
 - Use the Bash built-in syntax `${string:position:length}` to extract the substring from the string.

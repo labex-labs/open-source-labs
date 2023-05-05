@@ -10,4 +10,3 @@ Create a bash script named `add_numbers.sh` that prompts the user to enter two i
 * Prompt the user to enter two integer values
 * Use double brackets to perform the addition operation
 * Print the result of the addition operation
-

@@ -10,4 +10,3 @@ You need to create a Bash program that prints "Hello World" to the terminal. You
 - You should have access to a Linux or macOS terminal.
 - You should have a text editor installed on your system.
 - You should have a basic understanding of Bash syntax.
-
