@@ -19,18 +19,18 @@ In this challenge, we will focus on passing a string value from a Bash function.
 To pass a string value from a Bash function, we can create a function that returns a string value and then use that value in our script. Here is an example:
 
 ```bash
-#!/bin/bash  
-function greeting() {  
-  
-str="Hello, $name"  
-echo $str  
-  
-}  
-  
-echo "Enter your name"  
-read name  
-  
-val=$(greeting)  
+#!/bin/bash
+function greeting() {
+
+  str="Hello, $name"
+  echo $str
+
+}
+
+echo "Enter your name"
+read name
+
+val=$(greeting)
 echo "Return value of the function is $val"
 ```
 

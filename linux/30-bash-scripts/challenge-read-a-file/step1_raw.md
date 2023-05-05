@@ -1,6 +1,6 @@
 ### Read a File:
 
-You can read any file line by line in bash by using loop. Create a file named, ‘**read\_file.sh**’ and add the following code to read an existing file named, ‘**book.txt**’.
+You can read any file line by line in bash by using loop. Create a file named, ‘**read_file.sh**’ and add the following code to read an existing file named, ‘**book.txt**’.
 
 #!/bin/bash  
 file\='book.txt'  
@@ -10,7 +10,7 @@ done < $file
 
 Run the file with bash command.
 
-$ bash read\_file.sh
+$ bash read_file.sh
 
 Run the following command to check the original content of ‘**book.txt**’ file.
 
@@ -21,4 +21,3 @@ $ cat book.txt
 ![](https://linuxhint.com/wp-content/uploads/2018/07/h24.png)
 
 You can check the following link to know the different ways to [read file in bash](https://linuxhint.com/read_file_line_by_line_bash/).
-

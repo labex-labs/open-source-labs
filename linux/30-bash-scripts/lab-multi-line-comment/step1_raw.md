@@ -19,4 +19,3 @@ $ bash multiline-comment.sh
 ![](https://linuxhint.com/wp-content/uploads/2018/07/h5.png)
 
 You can check the following link to know more about the use of [bash comment](https://linuxhint.com/bash_comments/).
-

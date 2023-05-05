@@ -2,27 +2,27 @@
 
 ## Introduction
 
-In Bash scripting, comments are used to add notes or explanations to the code. These comments are ignored by the interpreter and are only meant for human readers. 
+In Bash scripting, comments are used to add notes or explanations to the code. These comments are ignored by the interpreter and are only meant for human readers.
 
 ## Problem
 
-The problem is to understand how to use comments in Bash scripting. 
+The problem is to understand how to use comments in Bash scripting.
 
 ## Requirements
 
-To add comments in Bash scripting, use the `#` symbol at the beginning of the line. The comment can be a single line or multiple lines. It is recommended to use comments to explain the purpose of the code, add notes, or provide instructions. 
+To add comments in Bash scripting, use the `#` symbol at the beginning of the line. The comment can be a single line or multiple lines. It is recommended to use comments to explain the purpose of the code, add notes, or provide instructions.
 
 ## Solution
 
 To demonstrate the use of comments, create a new file named `comment_example.sh` and add the following script with a single-line comment:
 
 ```bash
-#!/bin/bash  
+#!/bin/bash
 
-# Add two numeric values  
-((sum=25+35))  
+# Add two numeric values
+((sum = 25 + 35))
 
-# Print the result  
+# Print the result
 echo $sum
 ```
 

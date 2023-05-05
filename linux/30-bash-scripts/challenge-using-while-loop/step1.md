@@ -13,4 +13,3 @@ Create a Bash file named **while_example.sh** that demonstrates the use of the *
 - The Bash file should be executable.
 - The Bash file should output the value of **count** in each iteration of the **while** loop.
 - The Bash file should terminate after the **while** loop ends.
-

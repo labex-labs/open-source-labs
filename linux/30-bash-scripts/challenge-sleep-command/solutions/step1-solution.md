@@ -17,4 +17,3 @@ To run the script, save it with the name **sleep_example.sh** and run the follow
 ```bash
 bash sleep_example.sh
 ```
-

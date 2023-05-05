@@ -16,4 +16,3 @@ bash user_input.sh
 ```
 
 When you run the script, it will prompt you to enter your name. After you enter your name, it will display a welcome message that includes your name.
-

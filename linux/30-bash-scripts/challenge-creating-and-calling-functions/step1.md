@@ -11,4 +11,3 @@ You have been tasked with creating a Bash script that contains a function. The f
 - The function should output the message "I like bash programming".
 - The function should be called from within the script.
 - The script should be run using the `bash` command.
-

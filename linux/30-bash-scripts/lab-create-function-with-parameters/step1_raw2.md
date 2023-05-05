@@ -16,8 +16,8 @@ To complete this challenge, you will need to create a Bash script named `functio
 #!/bin/bash
 
 Rectangle_Area() {
-    area=$(($1 * $2))
-    echo "Area is : $area"
+  area=$(($1 * $2))
+  echo "Area is : $area"
 }
 
 Rectangle_Area 10 20

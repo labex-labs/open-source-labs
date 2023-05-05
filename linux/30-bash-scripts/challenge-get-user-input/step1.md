@@ -10,4 +10,3 @@ Create a Bash script named 'user_input.sh' that takes input from the user and di
 - The script should prompt the user to enter their name.
 - The script should display a welcome message that includes the user's name.
 - The script should be named 'user_input.sh'.
-

@@ -33,4 +33,3 @@ echo "The area of the rectangle is: $area"
 ```
 
 Save the file and make it executable using the command `chmod +x rectangle-area.sh`. Then, run the script using the command `./rectangle-area.sh`.
-

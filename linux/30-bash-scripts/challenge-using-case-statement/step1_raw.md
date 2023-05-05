@@ -1,9 +1,9 @@
 ### Using Case Statement:
 
-**Case** statement is used as the alternative of **if-elseif-else** statement. The starting and ending block of this statement is defined by ‘**case**’ and ‘**esac**’. Create a new file named, ‘**case\_example.sh**’ and add the following script. The output of the following script will be same to the previous **else if** example.
+**Case** statement is used as the alternative of **if-elseif-else** statement. The starting and ending block of this statement is defined by ‘**case**’ and ‘**esac**’. Create a new file named, ‘**case_example.sh**’ and add the following script. The output of the following script will be same to the previous **else if** example.
 
-#!/bin/bash  
-  
+#!/bin/bash
+
 echo "Enter your lucky number"  
 read n  
 case $n in  
@@ -19,9 +19,8 @@ esac
 
 Run the file with bash command.
 
-$ bash case\_example.sh
+$ bash case_example.sh
 
 ![](data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20725%20318'%3E%3C/svg%3E)
 
 ![](https://linuxhint.com/wp-content/uploads/2018/07/h13.png)
-

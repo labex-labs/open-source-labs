@@ -8,17 +8,14 @@ Here is the solution to the problem:
 echo "Enter your lucky number"
 read n
 
-if [ $n -eq 101 ];
-then
-echo "You got 1st prize"
-elif [ $n -eq 510 ];
-then
-echo "You got 2nd prize"
-elif [ $n -eq 999 ];
-then
-echo "You got 3rd prize"
+if [ $n -eq 101 ]; then
+  echo "You got 1st prize"
+elif [ $n -eq 510 ]; then
+  echo "You got 2nd prize"
+elif [ $n -eq 999 ]; then
+  echo "You got 3rd prize"
 else
-echo "Sorry, try for the next time"
+  echo "Sorry, try for the next time"
 fi
 ```
 
@@ -27,4 +24,3 @@ Save the script as `elseif_example.sh` and run it with the following command:
 ```bash
 bash elseif_example.sh
 ```
-

@@ -18,14 +18,14 @@ Create a Bash script named `make_directory.sh` that takes a new directory name f
 ## Solution
 
 ```bash
-#!/bin/bash  
-echo "Enter directory name"  
-read newdir  
+#!/bin/bash
+echo "Enter directory name"
+read newdir
 if [ ! -d "$newdir" ]; then
-    mkdir "$newdir"
-    echo "Directory created successfully"
+  mkdir "$newdir"
+  echo "Directory created successfully"
 else
-    echo "Error: Directory already exists"
+  echo "Error: Directory already exists"
 fi
 ```
 

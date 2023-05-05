@@ -19,4 +19,3 @@ sleep 5s
 ## Requirements
 
 To complete this challenge, you need to have a basic understanding of Bash commands and how to create and run Bash scripts. You also need to have access to a Linux or Unix operating system.
-

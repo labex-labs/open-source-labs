@@ -6,7 +6,7 @@ Bash is a powerful scripting language that can read input from command line argu
 
 ## Problem
 
-Create a Bash script named "command_line.sh" that reads two command line arguments and prints the total number of arguments and the argument values as output. 
+Create a Bash script named "command_line.sh" that reads two command line arguments and prints the total number of arguments and the argument values as output.
 
 ## Requirements
 
@@ -18,9 +18,9 @@ Create a Bash script named "command_line.sh" that reads two command line argumen
 ## Solution
 
 ```bash
-#!/bin/bash  
-echo "Total arguments : $#"  
-echo "1st Argument = $1"  
+#!/bin/bash
+echo "Total arguments : $#"
+echo "1st Argument = $1"
 echo "2nd argument = $2"
 ```
 

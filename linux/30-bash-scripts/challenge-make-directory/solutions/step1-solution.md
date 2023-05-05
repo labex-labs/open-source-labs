@@ -1,14 +1,14 @@
 ## Solution
 
 ```bash
-#!/bin/bash  
-echo "Enter directory name"  
-read newdir  
+#!/bin/bash
+echo "Enter directory name"
+read newdir
 if [ ! -d "$newdir" ]; then
-    mkdir "$newdir"
-    echo "Directory created successfully"
+  mkdir "$newdir"
+  echo "Directory created successfully"
 else
-    echo "Error: Directory already exists"
+  echo "Error: Directory already exists"
 fi
 ```
 
@@ -17,4 +17,3 @@ Save the above code in a file named `make_directory.sh`. Run the script with the
 ```bash
 bash make_directory.sh
 ```
-

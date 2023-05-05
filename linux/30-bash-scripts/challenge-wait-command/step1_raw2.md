@@ -11,6 +11,7 @@ The **wait** command is a built-in command in Linux that waits for a process to 
 ## Requirements
 
 To complete this challenge, you need to create a Bash script named **wait_example.sh** that does the following:
+
 - Prints a message "Wait command" to the console.
 - Runs a process in the background using the "&" operator.
 - Stores the process ID of the background process in a variable named "process_id".
@@ -22,10 +23,10 @@ To complete this challenge, you need to create a Bash script named **wait_exampl
 Here is an example script that demonstrates the use of the **wait** command:
 
 ```bash
-#!/bin/bash  
-echo "Wait command" &  
-process_id=$!  
-wait $process_id  
+#!/bin/bash
+echo "Wait command" &
+process_id=$!
+wait $process_id
 echo "Exited with status $?"
 ```
 

@@ -1,52 +1,50 @@
 {
-    "type": "challenge",
-    "title": "Make Directory by Checking Existence",
-    "description": "In Bash scripting, it is important to check the existence of a directory before creating it. This challenge will demonstrate how to create a directory by checking its existence in the current location.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Make Directory by Checking Existence",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "step1-solution.md"
-                ]
-            }
+  "type": "challenge",
+  "title": "Make Directory by Checking Existence",
+  "description": "In Bash scripting, it is important to check the existence of a directory before creating it. This challenge will demonstrate how to create a directory by checking its existence in the current location.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Make Directory by Checking Existence",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
-        },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "directory_exist.sh",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        "skills": [],
+        "solutions": ["step1-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "directory_exist.sh",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/labex-labs/open-source-challenges/blob/master/LICENSE",
-        "repo": "https://github.com/labex-labs/open-source-challenges"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/labex-labs/open-source-challenges/blob/master/LICENSE",
+    "repo": "https://github.com/labex-labs/open-source-challenges"
+  }
 }

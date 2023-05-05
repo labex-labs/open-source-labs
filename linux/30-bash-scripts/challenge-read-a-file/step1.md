@@ -12,4 +12,3 @@ You have a file named 'book.txt' that contains some text. Your task is to read t
 - The file name should be stored in a variable.
 - The script should be executable.
 - The original content of the file should be checked using the 'cat' command.
-

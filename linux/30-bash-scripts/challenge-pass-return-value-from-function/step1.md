@@ -9,4 +9,3 @@ In this challenge, we will focus on passing a string value from a Bash function.
 - A Bash script editor
 - Basic knowledge of Bash scripting
 - Access to a Linux or Unix operating system
-

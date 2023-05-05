@@ -20,15 +20,15 @@ Create a Bash script named `date_parse.sh` that will separate the day, month, ye
 Add the following code to `date_parse.sh`:
 
 ```bash
-#!/bin/bash  
-Year=$(date +%Y)  
-Month=$(date +%m)  
-Day=$(date +%d)  
-Hour=$(date +%H)  
-Minute=$(date +%M)  
-Second=$(date +%S)  
-echo $(date)  
-echo "Current Date is: $Day-$Month-$Year"  
+#!/bin/bash
+Year=$(date +%Y)
+Month=$(date +%m)
+Day=$(date +%d)
+Hour=$(date +%H)
+Minute=$(date +%M)
+Second=$(date +%S)
+echo $(date)
+echo "Current Date is: $Day-$Month-$Year"
 echo "Current Time is: $Hour:$Minute:$Second"
 ```
 

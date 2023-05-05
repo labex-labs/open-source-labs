@@ -21,21 +21,20 @@ Create a Bash file named **while_example.sh** that demonstrates the use of the *
 ## Solution
 
 ```bash
-#!/bin/bash  
-valid=true  
-count=1  
-while $valid  
-do  
-echo $count  
-if [ $count -eq 5 ];  
-then  
-break  
-fi  
-((count++))  
+#!/bin/bash
+valid=true
+count=1
+while $valid; do
+  echo $count
+  if [ $count -eq 5 ]; then
+    break
+  fi
+  ((count++))
 done
 ```
 
 To run the Bash file, use the following command:
+
 ```
 bash while_example.sh
 ```

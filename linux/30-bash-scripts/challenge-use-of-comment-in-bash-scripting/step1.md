@@ -2,9 +2,8 @@
 
 ## Problem
 
-The problem is to understand how to use comments in Bash scripting. 
+The problem is to understand how to use comments in Bash scripting.
 
 ## Requirements
 
-To add comments in Bash scripting, use the `#` symbol at the beginning of the line. The comment can be a single line or multiple lines. It is recommended to use comments to explain the purpose of the code, add notes, or provide instructions. 
-
+To add comments in Bash scripting, use the `#` symbol at the beginning of the line. The comment can be a single line or multiple lines. It is recommended to use comments to explain the purpose of the code, add notes, or provide instructions.

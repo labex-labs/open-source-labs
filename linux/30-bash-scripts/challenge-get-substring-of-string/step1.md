@@ -13,4 +13,3 @@ To solve this problem, we need to follow the below requirements:
 - Use the Bash built-in syntax `${string:position:length}` to extract the substring from the string.
 - Replace `string` with the name of the string variable, `position` with the starting position of the substring, and `length` with the length of the substring.
 - Print the extracted substring using the `echo` command.
-

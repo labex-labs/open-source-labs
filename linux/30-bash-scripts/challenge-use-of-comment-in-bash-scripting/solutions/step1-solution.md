@@ -3,12 +3,12 @@
 To demonstrate the use of comments, create a new file named `comment_example.sh` and add the following script with a single-line comment:
 
 ```bash
-#!/bin/bash  
+#!/bin/bash
 
-# Add two numeric values  
-((sum=25+35))  
+# Add two numeric values
+((sum = 25 + 35))
 
-# Print the result  
+# Print the result
 echo $sum
 ```
 
@@ -23,4 +23,3 @@ The output will be:
 ```bash
 60
 ```
-

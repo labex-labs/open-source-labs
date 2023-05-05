@@ -18,4 +18,3 @@ To run the script, use the following command:
 ```bash
 bash append_file.sh
 ```
-

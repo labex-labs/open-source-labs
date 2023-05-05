@@ -33,4 +33,3 @@ $ ./First.sh
 ![](https://linuxhint.com/wp-content/uploads/2018/07/h2.png)
 
 ![](https://linuxhint.com/wp-content/uploads/2018/07/h2.png)
-

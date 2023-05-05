@@ -11,4 +11,3 @@ Create a Bash script named `command_line_names.sh` that reads two arguments, `X`
 - The script must be able to handle arguments passed in any order.
 - The script must gracefully handle any errors or missing arguments.
 - The script must print the sum of `X` and `Y`.
-

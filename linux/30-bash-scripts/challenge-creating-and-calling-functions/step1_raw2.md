@@ -21,12 +21,11 @@ You have been tasked with creating a Bash script that contains a function. The f
 To create the function, open a new file named `function_example.sh` and add the following code:
 
 ```bash
-#!/bin/bash  
-function F1()  
-{  
-echo 'I like bash programming'  
-}  
-  
+#!/bin/bash
+function F1() {
+  echo 'I like bash programming'
+}
+
 F1
 ```
 

@@ -32,7 +32,7 @@ nano First.sh
 3. Add the following Bash script to the file and save it:
 
 ```bash
-#!/bin/bash  
+#!/bin/bash
 echo "Hello World"
 ```
 
@@ -45,7 +45,7 @@ bash First.sh
 or
 
 ```bash
-chmod a+x First.sh  
+chmod a+x First.sh
 ./First.sh
 ```
 

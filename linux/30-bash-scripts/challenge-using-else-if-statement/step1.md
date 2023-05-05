@@ -15,4 +15,3 @@ The problem is to create a Bash script that uses the **else if** statement to ch
   - 999: 3rd prize
 - If the user's lucky number matches one of the values, the script should print a message indicating the prize the user has won.
 - If the user's lucky number does not match any of the values, the script should print a message indicating that the user did not win a prize.
-

@@ -20,19 +20,19 @@ Create a Bash script named `directory_exist.sh` that prompts the user to enter a
 ## Solution
 
 ```bash
-#!/bin/bash  
-echo "Enter directory name"  
-read ndir  
-if [ -d "$ndir" ]  
-then  
-echo "Directory exist"  
-else  
-`mkdir $ndir`  
-echo "Directory created"  
+#!/bin/bash
+echo "Enter directory name"
+read ndir
+if [ -d "$ndir" ]; then
+  echo "Directory exist"
+else
+  $(mkdir $ndir)
+  echo "Directory created"
 fi
 ```
 
 To run the script, use the following command:
+
 ```
 bash directory_exist.sh
 ```

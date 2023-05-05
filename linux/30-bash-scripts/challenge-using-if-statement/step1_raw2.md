@@ -6,7 +6,7 @@ Bash is a popular Unix shell and command language. It is widely used for automat
 
 ## Problem
 
-Create a Bash script that checks if a number is one digit or two digits. The script should take a number as input and output "It is a one digit number" if the number is less than 10, and "It is a two digit number" if the number is greater than or equal to 10. 
+Create a Bash script that checks if a number is one digit or two digits. The script should take a number as input and output "It is a one digit number" if the number is less than 10, and "It is a two digit number" if the number is greater than or equal to 10.
 
 ## Requirements
 
@@ -21,11 +21,10 @@ Create a Bash script that checks if a number is one digit or two digits. The scr
 ```bash
 #!/bin/bash
 read -p "Enter a number: " n
-if [ $n -lt 10 ];
-then
-    echo "It is a one digit number"
+if [ $n -lt 10 ]; then
+  echo "It is a one digit number"
 else
-    echo "It is a two digit number"
+  echo "It is a two digit number"
 fi
 ```
 

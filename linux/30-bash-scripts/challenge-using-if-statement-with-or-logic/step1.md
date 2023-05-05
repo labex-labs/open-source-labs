@@ -8,4 +8,3 @@ Create a Bash script named `if_with_OR.sh` that takes a number input from the us
 
 - Bash shell
 - Text editor
-

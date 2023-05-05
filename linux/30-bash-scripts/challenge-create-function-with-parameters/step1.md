@@ -8,9 +8,8 @@ Create a Bash script named `function_parameter.sh`, containing a function called
 
 To successfully complete this challenge, the script should:
 
-* Declare a function named `Rectangle_Area`
-* Read in two parameters (e.g. width and height)
-* Calculate the area of a rectangle based on the provided parameters
-* Print the result
-* Call the `Rectangle_Area` function with two sample parameters (e.g. 10 and 20)
-
+- Declare a function named `Rectangle_Area`
+- Read in two parameters (e.g. width and height)
+- Calculate the area of a rectangle based on the provided parameters
+- Print the result
+- Call the `Rectangle_Area` function with two sample parameters (e.g. 10 and 20)
