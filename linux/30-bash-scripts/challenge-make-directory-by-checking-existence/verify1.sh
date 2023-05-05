@@ -1,3 +1,5 @@
 #!/bin/zsh
-cd /home/labex/project
-bash directory_exist.sh | grep 
+cd /tmp
+cp /home/labex/project/directory_exist.sh .
+echo "testdir" | bash directory_exist.sh
+ls | grep "testdir"

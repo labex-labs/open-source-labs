@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-bash case_example.sh | grep 
+echo "101" | bash case_example.sh | grep "1st"
