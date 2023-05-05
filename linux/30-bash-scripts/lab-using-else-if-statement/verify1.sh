@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-bash elseif_example.sh | grep 
+echo "101" |bash elseif_example.sh | grep "1st"

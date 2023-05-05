@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-bash comment_example.sh | grep 
+bash comment_example.sh | grep 60
