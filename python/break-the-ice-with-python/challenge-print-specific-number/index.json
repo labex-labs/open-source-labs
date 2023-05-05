@@ -1,0 +1,59 @@
+{
+    "type": "challenge",
+    "title": "Print Specific Number",
+    "description": "Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200",
+    "difficulty": "Beginner",
+    "time": 10,
+    "details": {
+        "steps": [
+            {
+                "title": "Please replace this text with the title of the step",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Please replace this text with the target of the verify script",
+                        "file": "verify1.sh",
+                        "hint": "Please replace this text with the hint of the verify script",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "Please copy the skill ID from the official skill tree"
+                ],
+                "solutions": [
+                    "step1-solution.py"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "step1_test.py",
+                    "target": "/tmp",
+                    "chmod": "ugo+rwx"
+                  },
+                  {
+                    "file": "step1.py",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                  }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "vnc-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+    }
+}
