@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Here is an example script that demonstrates the use of the **wait** command:
 

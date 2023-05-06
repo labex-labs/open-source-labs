@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Add the following code to `date_parse.sh`:
 

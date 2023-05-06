@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 1. Open your terminal and type the following command to print "Hello World" to the terminal:
 

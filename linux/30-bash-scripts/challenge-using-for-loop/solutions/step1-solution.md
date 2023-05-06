@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 The following code can be used to create the 'for_example.sh' script.
 

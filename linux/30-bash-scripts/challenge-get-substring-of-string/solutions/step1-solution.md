@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Here is an example Bash script that demonstrates how to get a substring of a string:
 

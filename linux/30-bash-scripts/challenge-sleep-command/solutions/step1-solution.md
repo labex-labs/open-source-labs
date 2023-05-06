@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 To use the **sleep** command, you can create a Bash script and add the following code:
 

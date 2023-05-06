@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Create a new Bash script named `rectangle-area.sh` and add the following code:
 

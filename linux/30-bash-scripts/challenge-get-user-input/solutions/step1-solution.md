@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Here is an example script that meets the requirements:
 

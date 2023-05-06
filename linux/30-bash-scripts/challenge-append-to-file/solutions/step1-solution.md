@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Here is the Bash script that appends new content to the 'book.txt' file:
 

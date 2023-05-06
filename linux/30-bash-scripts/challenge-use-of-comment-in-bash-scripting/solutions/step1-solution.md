@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 To demonstrate the use of comments, create a new file named `comment_example.sh` and add the following script with a single-line comment:
 

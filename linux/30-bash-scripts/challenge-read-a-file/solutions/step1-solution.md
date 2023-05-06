@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 To solve this problem, we can create a Bash script named 'read_file.sh' and use a loop to read the file line by line. The file name should be stored in a variable for easy modification. Here's the code:
 

@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Create a file named `delete_file.sh` with the following code:
 

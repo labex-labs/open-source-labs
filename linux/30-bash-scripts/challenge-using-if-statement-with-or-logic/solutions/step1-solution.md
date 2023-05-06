@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Use the following code in the `if_with_OR.sh` file:
 

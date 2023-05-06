@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Create a new file named `echo_example.sh` and add the following script:
 

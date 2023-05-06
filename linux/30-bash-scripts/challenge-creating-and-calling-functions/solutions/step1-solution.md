@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 To create the function, open a new file named `function_example.sh` and add the following code:
 

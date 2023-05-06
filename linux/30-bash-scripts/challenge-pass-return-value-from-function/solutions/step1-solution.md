@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 To pass a string value from a Bash function, we can create a function that returns a string value and then use that value in our script. Here is an example:
 

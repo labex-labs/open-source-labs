@@ -1,4 +1,4 @@
-## Solution
+# Solution
 
 Here is the solution to the problem:
 
