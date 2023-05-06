@@ -1,0 +1,49 @@
+{
+    "type": "lab",
+    "title": "Random Numbers",
+    "description": "This challenge aims to test your ability to generate random numbers using the `math/rand` package in Golang.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Random Numbers",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": []
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "random-numbers.go",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-3.0",
+        "url": "http://creativecommons.org/licenses/by/3.0/",
+        "repo": "https://github.com/mmcgrana/gobyexample"
+    }
+}

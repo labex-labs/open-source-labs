@@ -1,0 +1,52 @@
+{
+    "type": "challenge",
+    "title": "Testing and Benchmarking",
+    "description": "This challenge aims to demonstrate the importance of unit testing and benchmarking in writing principled Go programs. The `testing` package provides the tools needed to write unit tests, and the `go test` command runs tests.",
+    "difficulty": "Beginner",
+    "time": 15,
+    "details": {
+        "steps": [
+            {
+                "title": "Testing and Benchmarking",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the answer",
+                        "file": "verify1.sh",
+                        "hint": "Please make sure you have completed the required actions.",
+                        "timeout": 0,
+                        "showstderr": true
+                    }
+                ],
+                "skills": [],
+                "solutions": [
+                    "main_test.go"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "main_test.go",
+                    "target": "/home/labex/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-3.0",
+        "url": "http://creativecommons.org/licenses/by/3.0/",
+        "repo": "https://github.com/mmcgrana/gobyexample"
+    }
+}
