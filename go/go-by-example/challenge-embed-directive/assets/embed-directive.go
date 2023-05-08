@@ -1,7 +1,38 @@
+// `//go:embed` is a [compiler
+// directive](https://pkg.go.dev/cmd/compile#hdr-Compiler_Directives) that
+// allows programs to include arbitrary files and folders in the Go binary at
+// build time. Read more about the embed directive
+// [here](https://pkg.go.dev/embed).
+package main
 
-// TODO: Embed the contents of the folder into a variable of type `embed.FS`.
-// Hint: Use the `//go:embed` directive with wildcards.
-// TODO: Print the contents of `single_file.txt`.
-// TODO: Print the contents of `single_file.txt` as a byte slice.
-// TODO: Retrieve the contents of `file1.hash` from the embedded folder and print it.
-// TODO: Retrieve the contents of `file2.hash` from the embedded folder and print it.
+// Import the `embed` package; if you don't use any exported
+// identifiers from this package, you can do a blank import with `_ "embed"`.
+import (
+	"embed"
+)
+
+// `embed` directives accept paths relative to the directory containing the
+// Go source file. This directive embeds the contents of the file into the
+// `string` variable immediately following it.
+//
+//go:embed folder/single_file.txt
+var fileString string
+
+// Or embed the contents of the file into a `[]byte`.
+//
+//go:embed folder/single_file.txt
+var fileByte []byte
+
+// We can also embed multiple files or even folders with wildcards. This uses
+// a variable of the [embed.FS type](https://pkg.go.dev/embed#FS), which
+// implements a simple virtual file system.
+//
+//go:embed folder/single_file.txt
+//go:embed folder/*.hash
+var folder embed.FS
+
+func main() {
+    // TODO
+	// Print out the contents of `single_file.txt`.
+	// Retrieve some files from the embedded folder.
+}

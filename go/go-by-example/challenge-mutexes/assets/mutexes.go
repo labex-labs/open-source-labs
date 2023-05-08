@@ -1,33 +1,37 @@
+// In the previous example we saw how to manage simple
+// counter state using [atomic operations](atomic-counters).
+// For more complex state we can use a [_mutex_](https://en.wikipedia.org/wiki/Mutual_exclusion)
+// to safely access data across multiple goroutines.
 
-// TODO: Use a mutex to synchronize access to the counters map.
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+// Container holds a map of counters; since we want to
+// update it concurrently from multiple goroutines, we
+// add a `Mutex` to synchronize access.
+// Note that mutexes must not be copied, so if this
+// `struct` is passed around, it should be done by
+// pointer.
 type Container struct {
+	mu       sync.Mutex
 	counters map[string]int
 }
 
-// TODO: Implement the inc method to increment the named counter.
-func (c *Container) inc(name string) {
-	c.counters[name]++
-}
-
 func main() {
-	c := Container{
-		counters: map[string]int{"a": 0, "b": 0},
-	}
-
-	var wg sync.WaitGroup
-
-	doIncrement := func(name string, n int) {
-		for i := 0; i < n; i++ {
-			// TODO: Call the inc method to increment the named counter.
-		}
-		wg.Done()
-	}
-
-	wg.Add(3)
-	go doIncrement("a", 10000)
-	go doIncrement("a", 10000)
-	go doIncrement("b", 10000)
-
-	wg.Wait()
-	// TODO: Use fmt.Println to print the counters map.
+    // TODO
+	// Lock the mutex before accessing `counters`; unlock
+	// it at the end of the function using a [defer](defer)
+	// statement.
+	// Note that the zero value of a mutex is usable as-is, so no
+	// initialization is required here.
+	// This function increments a named counter
+	// in a loop.
+	// Run several goroutines concurrently; note
+	// that they all access the same `Container`,
+	// and two of them access the same counter.
+	// Wait for the goroutines to finish
 }

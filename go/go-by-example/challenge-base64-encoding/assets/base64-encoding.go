@@ -1,12 +1,26 @@
+// Go provides built-in support for [base64
+// encoding/decoding](https://en.wikipedia.org/wiki/Base64).
 
-// TODO: Encode the given string using standard base64 encoding
-sEnc := b64.StdEncoding.EncodeToString([]byte(data))
+package main
 
-// TODO: Decode the standard encoded string
-sDec, _ := b64.StdEncoding.DecodeString(sEnc)
+// This syntax imports the `encoding/base64` package with
+// the `b64` name instead of the default `base64`. It'll
+// save us some space below.
+import (
+	b64 "encoding/base64"
+	"fmt"
+)
 
-// TODO: Encode the given string using URL-compatible base64 encoding
-uEnc := b64.URLEncoding.EncodeToString([]byte(data))
-
-// TODO: Decode the URL-compatible encoded string
-uDec, _ := b64.URLEncoding.DecodeString(uEnc)
+func main() {
+    // TODO
+	// Here's the `string` we'll encode/decode.
+	// Go supports both standard and URL-compatible
+	// base64. Here's how to encode using the standard
+	// encoder. The encoder requires a `[]byte` so we
+	// convert our `string` to that type.
+	// Decoding may return an error, which you can check
+	// if you don't already know the input to be
+	// well-formed.
+	// This encodes/decodes using a URL-compatible base64
+	// format.
+}

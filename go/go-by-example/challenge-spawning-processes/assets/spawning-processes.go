@@ -1,32 +1,45 @@
+// Sometimes our Go programs need to spawn other, non-Go
+// processes.
 
-// TODO: Spawn an external process that takes no arguments or input and prints something to stdout.
-// Use the `exec.Command` helper to create an object to represent this external process.
-// Use the `Output` method to run the command, wait for it to finish, and collect its standard output.
-dateCmd := exec.Command("date")
-dateOut, err := dateCmd.Output()
+package main
 
-// TODO: Spawn an external process that takes arguments and prints something to stdout.
-// Use the `exec.Command` helper to create an object to represent this external process.
-// Use the `Output` method to run the command, wait for it to finish, and collect its standard output.
-// Handle errors that may arise during the execution of the command.
-_, err = exec.Command("date", "-x").Output()
+import (
+	"fmt"
+	"io"
+	"os/exec"
+)
 
-// TODO: Spawn an external process that takes input from stdin and prints something to stdout.
-// Use the `exec.Command` helper to create an object to represent this external process.
-// Use `StdinPipe` and `StdoutPipe` to grab input/output pipes.
-// Write some input to the process, read the resulting output, and wait for the process to exit.
-grepCmd := exec.Command("grep", "hello")
-grepIn, _ := grepCmd.StdinPipe()
-grepOut, _ := grepCmd.StdoutPipe()
-grepCmd.Start()
-grepIn.Write([]byte("hello grep\ngoodbye grep"))
-grepIn.Close()
-grepBytes, _ := io.ReadAll(grepOut)
-grepCmd.Wait()
-
-// TODO: Spawn an external process that takes a full command with a string.
-// Use the `exec.Command` helper to create an object to represent this external process.
-// Use the `Output` method to run the command, wait for it to finish, and collect its standard output.
-// Handle errors that may arise during the execution of the command.
-lsCmd := exec.Command("bash", "-c", "ls -a -l -h")
-lsOut, err := lsCmd.Output()
+func main() {
+    // TODO
+	// We'll start with a simple command that takes no
+	// arguments or input and just prints something to
+	// stdout. The `exec.Command` helper creates an object
+	// to represent this external process.
+	// The `Output` method runs the command, waits for it
+	// to finish and collects its standard output.
+	//  If there were no errors, `dateOut` will hold bytes
+	// with the date info.
+	// `Output` and other methods of `Command` will return
+	// `*exec.Error` if there was a problem executing the
+	// command (e.g. wrong path), and `*exec.ExitError`
+	// if the command ran but exited with a non-zero return
+	// code.
+	// Next we'll look at a slightly more involved case
+	// where we pipe data to the external process on its
+	// `stdin` and collect the results from its `stdout`.
+	// Here we explicitly grab input/output pipes, start
+	// the process, write some input to it, read the
+	// resulting output, and finally wait for the process
+	// to exit.
+	// We omitted error checks in the above example, but
+	// you could use the usual `if err != nil` pattern for
+	// all of them. We also only collect the `StdoutPipe`
+	// results, but you could collect the `StderrPipe` in
+	// exactly the same way.
+	// Note that when spawning commands we need to
+	// provide an explicitly delineated command and
+	// argument array, vs. being able to just pass in one
+	// command-line string. If you want to spawn a full
+	// command with a string, you can use `bash`'s `-c`
+	// option:
+}

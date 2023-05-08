@@ -1,11 +1,17 @@
+// Go has built-in support for _multiple return values_.
+// This feature is used often in idiomatic Go, for example
+// to return both result and error values from a function.
 
-func swap(a, b int) (int, int) {
-	// TODO: Swap the values of a and b and return them in reverse order.
-}
+package main
 
+import "fmt"
+
+// The `(int, int)` in this function signature shows that
+// the function returns 2 `int`s.
 func main() {
-	a, b := 3, 5
-	fmt.Println(a, b)
-	a, b = swap(a, b)
-	fmt.Println(a, b)
+    // TODO
+	// Here we use the 2 different return values from the
+	// call with _multiple assignment_.
+	// If you only want a subset of the returned values,
+	// use the blank identifier `_`.
 }
