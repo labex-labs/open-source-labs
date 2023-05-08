@@ -2,7 +2,7 @@ import unittest
 import ast
 import sys
 
-sys.path.append("/home/labex/project")
+sys.path.append("/home/project")
 
 from catch_the_exceptions import divide
 
@@ -16,6 +16,7 @@ class TestDivideFunction(unittest.TestCase):
         with open('/home/labex/project/catch_the_exceptions.py', 'r') as f:
             source = f.read()
         tree = ast.parse(source)
+        divide()
         for node in ast.walk(tree):
             if isinstance(node, ast.Try):
                 if not node.handlers:
