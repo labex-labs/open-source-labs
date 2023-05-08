@@ -1,3 +1,2 @@
-$ go run channel-buffering.go 
-buffered
-channel
+cd /home/labex/project
+go run channel-buffering.go | grep "buffered"

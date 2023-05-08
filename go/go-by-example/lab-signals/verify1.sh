@@ -2,8 +2,5 @@
 # signal. By typing `ctrl-C` (which the
 # terminal shows as `^C`) we can send a `SIGINT` signal,
 # causing the program to print `interrupt` and then exit.
-$ go run signals.go
-awaiting signal
-^C
-interrupt
-exiting
+cd /home/labex/project
+go run signals.go | grep "awaiting signal"

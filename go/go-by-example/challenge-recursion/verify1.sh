@@ -1,3 +1,2 @@
-$ go run recursion.go 
-5040
-13
+cd /home/labex/project
+go run recursion.go | grep "5040"

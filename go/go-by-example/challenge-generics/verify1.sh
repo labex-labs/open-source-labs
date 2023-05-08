@@ -1,3 +1,2 @@
-$ go run generics.go
-keys: [4 1 2]
-list: [10 13 23]
+cd /home/labex/project
+go run generics.go | grep "keys: [4 1 2]"

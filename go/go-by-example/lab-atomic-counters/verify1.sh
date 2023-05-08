@@ -4,8 +4,5 @@
 # runs, because the goroutines would interfere with
 # each other. Moreover, we'd get data race failures
 # when running with the `-race` flag.
-$ go run atomic-counters.go
-ops: 50000
-
-# Next we'll look at mutexes, another tool for managing
-# state.
+cd /home/labex/project
+go run atomic-counters.go | grep "ops: 50000"

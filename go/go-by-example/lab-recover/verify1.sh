@@ -1,3 +1,2 @@
-$ go run recover.go
-Recovered. Error:
- a problem
+cd /home/labex/project
+go run recover.go | grep "Recovered. Error:"

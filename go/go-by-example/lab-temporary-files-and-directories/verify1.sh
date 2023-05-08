@@ -1,3 +1,2 @@
-$ go run temporary-files-and-directories.go
-Temp file name: /tmp/sample610887201
-Temp dir name: /tmp/sampledir898854668
+cd /home/labex/project
+go run temporary-files-and-directories.go | grep "Temp file name: /tmp/sample610887201"

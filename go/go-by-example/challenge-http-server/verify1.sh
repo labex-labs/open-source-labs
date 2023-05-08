@@ -1,6 +1,2 @@
-# Run the server in the background.
-$ go run http-servers.go &
-
-# Access the `/hello` route.
-$ curl localhost:8090/hello
-hello
+cd /home/labex/project
+go run http-clients.go | grep "Response status: 200 OK"

@@ -1,4 +1,2 @@
-$ go run non-blocking-channel-operations.go 
-no message received
-no message sent
-no activity
+cd /home/labex/project
+go run non-blocking-channel-operations.go | grep "no message received"

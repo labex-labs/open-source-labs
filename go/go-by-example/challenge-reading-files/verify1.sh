@@ -1,11 +1,6 @@
-$ echo "hello" > /tmp/dat
-$ echo "go" >>   /tmp/dat
-$ go run reading-files.go
-hello
-go
-5 bytes: hello
-2 bytes @ 6: go
-2 bytes @ 6: go
-5 bytes: hello
-
-# Next we'll look at writing files.
+cd /home/labex/project
+echo "hello" > /tmp/dat
+cd /home/labex/project
+echo "go" >>   /tmp/dat
+cd /home/labex/project
+go run reading-files.go | grep "hello"

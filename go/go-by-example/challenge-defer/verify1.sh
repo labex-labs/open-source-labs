@@ -1,6 +1,4 @@
 # Running the program confirms that the file is closed
 # after being written.
-$ go run defer.go
-creating
-writing
-closing
+cd /home/labex/project
+go run defer.go | grep "creating"

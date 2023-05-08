@@ -1,9 +1,2 @@
-$ go run templates.go 
-Value: some text
-Value: 5
-Value: [Go Rust C++ C#]
-Name: Jane Doe
-Name: Mickey Mouse
-yes 
-no 
-Range: Go Rust C++ C# 
+cd /home/labex/project
+go run templates.go | grep "Value: some text"
