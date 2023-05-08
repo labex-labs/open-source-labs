@@ -1,7 +1,14 @@
+// Go has various value types including strings,
+// integers, floats, booleans, etc. Here are a few
+// basic examples.
 
-func calculate(a int, b int) (int, int) {
-	// TODO: Calculate the sum and product of a and b
-	sum := TODO
-	product := TODO
-	return sum, product
+package main
+
+import "fmt"
+
+func main() {
+    // TODO
+	// Strings, which can be added together with `+`.
+	// Integers and floats.
+	// Booleans, with boolean operators as you'd expect.
 }

@@ -1,18 +1,35 @@
+// Sometimes we'd like our Go programs to intelligently
+// handle [Unix signals](https://en.wikipedia.org/wiki/Unix_signal).
+// For example, we might want a server to gracefully
+// shutdown when it receives a `SIGTERM`, or a command-line
+// tool to stop processing input if it receives a `SIGINT`.
+// Here's how to handle signals in Go with channels.
 
-// TODO: Create a buffered channel to receive `os.Signal` notifications.
-sigs := make(chan os.Signal, 1)
+package main
 
-// TODO: Register the channel to receive notifications of specified signals using `signal.Notify`.
-signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
+import (
+	"fmt"
+	"os"
+	"os/signal"
+	"syscall"
+)
 
-// TODO: Create a goroutine to execute a blocking receive for signals.
-go func() {
-    // TODO: When it gets one, print it out and then notify the program that it can finish.
-    sig := <-sigs
-    fmt.Println()
-    fmt.Println(sig)
-    done <- true
-}()
-
-// TODO: Wait for the expected signal and then exit.
-<-done
+func main() {
+    // TODO
+	// Go signal notification works by sending `os.Signal`
+	// values on a channel. We'll create a channel to
+	// receive these notifications. Note that this channel
+	// should be buffered.
+	// `signal.Notify` registers the given channel to
+	// receive notifications of the specified signals.
+	// We could receive from `sigs` here in the main
+	// function, but let's see how this could also be
+	// done in a separate goroutine, to demonstrate
+	// a more realistic scenario of graceful shutdown.
+	// This goroutine executes a blocking receive for
+	// signals. When it gets one it'll print it out
+	// and then notify the program that it can finish.
+	// The program will wait here until it gets the
+	// expected signal (as indicated by the goroutine
+	// above sending a value on `done`) and then exit.
+}

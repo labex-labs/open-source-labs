@@ -1,24 +1,23 @@
+// [Timers](timers) are for when you want to do
+// something once in the future - _tickers_ are for when
+// you want to do something repeatedly at regular
+// intervals. Here's an example of a ticker that ticks
+// periodically until we stop it.
 
-// Create a ticker that ticks every 500ms until we stop it.
-// Use a channel to await the values as they arrive.
-// Use the `select` statement to receive values from the channel.
-// Stop the ticker after 1600ms.
+package main
 
-func tickerFunc() {
-    ticker := // TODO: Create a ticker that ticks every 500ms
-    done := make(chan bool)
+import (
+	"fmt"
+	"time"
+)
 
-    go func() {
-        for {
-            select {
-            case <-done:
-                return
-            case t := <-ticker.C:
-                fmt.Println("Tick at", t)
-            }
-        }
-    }()
-
-    // TODO: Stop the ticker after 1600ms
-    fmt.Println("Ticker stopped")
+func main() {
+    // TODO
+	// Tickers use a similar mechanism to timers: a
+	// channel that is sent values. Here we'll use the
+	// `select` builtin on the channel to await the
+	// values as they arrive every 500ms.
+	// Tickers can be stopped like timers. Once a ticker
+	// is stopped it won't receive any more values on its
+	// channel. We'll stop ours after 1600ms.
 }

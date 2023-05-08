@@ -1,10 +1,37 @@
+// Sometimes we'll want to sort a collection by something
+// other than its natural order. For example, suppose we
+// wanted to sort strings by their length instead of
+// alphabetically. Here's an example of custom sorts
+// in Go.
 
-// TODO: Implement the byLength type as an alias for the []string type.
+package main
 
-// TODO: Implement the sort.Interface on the byLength type.
+import (
+	"fmt"
+	"sort"
+)
 
-// TODO: Implement the Len and Swap functions on the byLength type.
+// In order to sort by a custom function in Go, we need a
+// corresponding type. Here we've created a `byLength`
+// type that is just an alias for the builtin `[]string`
+// type.
+type byLength []string
 
-// TODO: Implement the Less function on the byLength type to hold the actual custom sorting logic.
+// We implement `sort.Interface` - `Len`, `Less`, and
+// `Swap` - on our type so we can use the `sort` package's
+// generic `Sort` function. `Len` and `Swap`
+// will usually be similar across types and `Less` will
+// hold the actual custom sorting logic. In our case we
+// want to sort in order of increasing string length, so
+// we use `len(s[i])` and `len(s[j])` here.
+func main() {
+    // TODO
 
-// TODO: Convert the original fruits slice to byLength, and then use sort.Sort on that typed slice.
+// With all of this in place, we can now implement our
+
+// custom sort by converting the original `fruits` slice
+
+// to `byLength`, and then use `sort.Sort` on that typed
+
+// slice.
+}

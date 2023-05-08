@@ -1,18 +1,29 @@
+// Go's _structs_ are typed collections of fields.
+// They're useful for grouping data together to form
+// records.
 
-// newPerson constructs a new person struct with the given name.
-func newPerson(name string) *person {
-	// TODO: Construct a new person struct with the given name.
-	// Set the age field to 42.
-	// Return a pointer to the newly created person struct.
+package main
+
+import "fmt"
+
+// This `person` struct type has `name` and `age` fields.
+type person struct {
+	name string
+	age  int
 }
 
+// `newPerson` constructs a new person struct with the given name.
 func main() {
-	// TODO: Print a new struct with name "Bob" and age 20.
-	// TODO: Print a new struct with name "Alice" and age 30.
-	// TODO: Print a new struct with name "Fred" and age 0.
-	// TODO: Print a pointer to a new struct with name "Ann" and age 40.
-	// TODO: Print a new struct constructed using the `newPerson` function with name "Jon".
-	// TODO: Print the name field of a struct with name "Sean" and age 50.
-	// TODO: Print the age field of a struct pointer to a struct with name "Sean" and age 50.
-	// TODO: Update the age field of a struct pointer to a struct with name "Sean" and age 50 to 51.
+    // TODO
+	// You can safely return a pointer to local variable
+	// as a local variable will survive the scope of the function.
+	// This syntax creates a new struct.
+	// You can name the fields when initializing a struct.
+	// Omitted fields will be zero-valued.
+	// An `&` prefix yields a pointer to the struct.
+	// It's idiomatic to encapsulate new struct creation in constructor functions
+	// Access struct fields with a dot.
+	// You can also use dots with struct pointers - the
+	// pointers are automatically dereferenced.
+	// Structs are mutable.
 }
