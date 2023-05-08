@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run errors.go | grep "f1 worked: 10"
+/usr/local/go/bin/go run errors.go | grep "f1 worked: 10"

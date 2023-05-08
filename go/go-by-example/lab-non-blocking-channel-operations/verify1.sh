@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run non-blocking-channel-operations.go | grep "no message received"
+/usr/local/go/bin/go run non-blocking-channel-operations.go | grep "no message received"

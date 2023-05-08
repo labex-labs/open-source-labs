@@ -3,4 +3,4 @@
 # for `FOO` that we set in the program, but that
 # `BAR` is empty.
 cd /home/labex/project
-go run environment-variables.go | grep "FOO: 1"
+/usr/local/go/bin/go run environment-variables.go | grep "FOO: 1"

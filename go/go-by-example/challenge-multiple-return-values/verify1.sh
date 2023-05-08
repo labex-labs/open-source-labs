@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run multiple-return-values.go | grep "3"
+/usr/local/go/bin/go run multiple-return-values.go | grep "3"

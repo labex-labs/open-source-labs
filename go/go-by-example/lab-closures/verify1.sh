@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run closures.go | grep "1"
+/usr/local/go/bin/go run closures.go | grep "1"

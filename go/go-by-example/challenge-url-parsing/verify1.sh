@@ -2,4 +2,4 @@
 # Running our URL parsing program shows all the different
 # pieces that we extracted.
 cd /home/labex/project
-go run url-parsing.go | grep "postgres"
+/usr/local/go/bin/go run url-parsing.go | grep "postgres"

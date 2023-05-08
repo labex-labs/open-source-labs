@@ -2,4 +2,4 @@
 # Running this program shows the first operation timing
 # out and the second succeeding.
 cd /home/labex/project
-go run timeouts.go | grep "timeout 1"
+/usr/local/go/bin/go run timeouts.go | grep "timeout 1"

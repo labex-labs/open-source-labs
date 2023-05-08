@@ -3,4 +3,4 @@
 # state management example completes about 80,000
 # total operations.
 cd /home/labex/project
-go run stateful-goroutines.go | grep "readOps: 71708"
+/usr/local/go/bin/go run stateful-goroutines.go | grep "readOps: 71708"

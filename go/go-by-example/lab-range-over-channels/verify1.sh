@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run range-over-channels.go | grep "one"
+/usr/local/go/bin/go run range-over-channels.go | grep "one"

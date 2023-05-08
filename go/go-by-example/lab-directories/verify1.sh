@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run directories.go | grep "Listing subdir/parent"
+/usr/local/go/bin/go run directories.go | grep "Listing subdir/parent"

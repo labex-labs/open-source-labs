@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run functions.go | grep "1+2 = 3"
+/usr/local/go/bin/go run functions.go | grep "1+2 = 3"

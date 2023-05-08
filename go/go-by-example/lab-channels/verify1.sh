@@ -3,4 +3,4 @@
 # successfully passed from one goroutine to another via
 # our channel.
 cd /home/labex/project
-go run channels.go | grep "ping"
+/usr/local/go/bin/go run channels.go | grep "ping"

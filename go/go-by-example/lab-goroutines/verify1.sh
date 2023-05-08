@@ -3,6 +3,6 @@
 # blocking call first, then the output of the two
 # goroutines. The goroutines' output may be interleaved,
 # because goroutines are being run concurrently by the
-# Go runtime.
+# /usr/local/go/bin/go runtime.
 cd /home/labex/project
-go run goroutines.go | grep "direct : 0"
+/usr/local/go/bin/go run goroutines.go | grep "direct : 0"

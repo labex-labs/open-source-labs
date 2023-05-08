@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run interfaces.go | grep "{3 4}"
+/usr/local/go/bin/go run interfaces.go | grep "{3 4}"

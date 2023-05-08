@@ -2,4 +2,4 @@
 # Running the program shows that the counters
 # updated as expected.
 cd /home/labex/project
-go run mutexes.go | grep "map[a:20000 b:10000]"
+/usr/local/go/bin/go run mutexes.go | grep "map[a:20000 b:10000]"

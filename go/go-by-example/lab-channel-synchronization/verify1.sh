@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run channel-synchronization.go  | grep "working...done                  "
+/usr/local/go/bin/go run channel-synchronization.go  | grep "working...done                  "

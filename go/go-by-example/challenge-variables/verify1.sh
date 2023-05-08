@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run variables.go | grep "initial"
+/usr/local/go/bin/go run variables.go | grep "initial"

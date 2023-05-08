@@ -8,4 +8,4 @@ echo 'filter' >> /tmp/lines
 
 # Then use the line filter to get uppercase lines.
 cd /home/labex/project
-cat /tmp/lines | go run line-filters.go | grep "HELLO"
+cat /tmp/lines | /usr/local/go/bin/go run line-filters.go | grep "HELLO"

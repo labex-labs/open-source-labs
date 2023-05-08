@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run string-functions.go | grep "Contains:   true"
+/usr/local/go/bin/go run string-functions.go | grep "Contains:   true"

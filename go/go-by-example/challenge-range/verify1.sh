@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run range.go | grep "sum: 9"
+/usr/local/go/bin/go run range.go | grep "sum: 9"

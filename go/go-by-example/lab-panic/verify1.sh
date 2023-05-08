@@ -8,4 +8,4 @@
 # to see the program try to create a temp file, comment
 # the first panic out.
 cd /home/labex/project
-go run panic.go | grep "panic: a problem"
+/usr/local/go/bin/go run panic.go | grep "panic: a problem"

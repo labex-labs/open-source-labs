@@ -4,4 +4,4 @@
 # despite doing about 5 seconds of total work because
 # there are 3 workers operating concurrently.
 cd /home/labex/project
-time go run worker-pools.go | grep "worker 1 started  job 1"
+time /usr/local/go/bin/go run worker-pools.go | grep "worker 1 started  job 1"

@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run templates.go | grep "Value: some text"
+/usr/local/go/bin/go run templates.go | grep "Value: some text"

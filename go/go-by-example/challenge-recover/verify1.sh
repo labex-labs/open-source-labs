@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run recover.go | grep "Recovered. Error:"
+/usr/local/go/bin/go run recover.go | grep "Recovered. Error:"

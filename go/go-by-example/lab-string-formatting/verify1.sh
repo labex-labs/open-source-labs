@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run string-formatting.go | grep "struct1: {1 2}"
+/usr/local/go/bin/go run string-formatting.go | grep "struct1: {1 2}"

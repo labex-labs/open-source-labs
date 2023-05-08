@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run structs.go | grep "{Bob 20}"
+/usr/local/go/bin/go run structs.go | grep "{Bob 20}"

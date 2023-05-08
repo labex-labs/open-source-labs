@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run json.go | grep "true"
+/usr/local/go/bin/go run json.go | grep "true"

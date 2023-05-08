@@ -6,4 +6,4 @@
 # each other. Moreover, we'd get data race failures
 # when running with the `-race` flag.
 cd /home/labex/project
-go run atomic-counters.go | grep "ops: 50000"
+/usr/local/go/bin/go run atomic-counters.go | grep "ops: 50000"

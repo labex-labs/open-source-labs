@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-go run values.go | grep "golang"
+/usr/local/go/bin/go run values.go | grep "golang"

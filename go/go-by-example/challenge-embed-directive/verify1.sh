@@ -12,4 +12,4 @@ cd /home/labex/project
 echo "456" > folder/file2.hash
 
 cd /home/labex/project
-go run embed-directive.go | grep "hello go"
+/usr/local/go/bin/go run embed-directive.go | grep "hello go"
