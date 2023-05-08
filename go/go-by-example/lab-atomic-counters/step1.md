@@ -23,7 +23,6 @@ ops: 50000
 
 # Next we'll look at mutexes, another tool for managing
 # state.
-
 ```
 
 ## Solution

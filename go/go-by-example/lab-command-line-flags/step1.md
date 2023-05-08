@@ -3,6 +3,7 @@
 ## Problem
 
 Implement a Golang program that parses command-line flags and outputs the parsed options and any trailing positional arguments. The program should support the following flags:
+
 - `word`: a string flag with a default value of `"foo"`.
 - `numb`: an integer flag with a default value of `42`.
 - `fork`: a boolean flag with a default value of `false`.
@@ -61,10 +62,10 @@ tail: [a1 a2 a3 -numb=7]
 # generated help text for the command-line program.
 $ ./command-line-flags -h
 Usage of ./command-line-flags:
-  -fork=false: a bool
-  -numb=42: an int
-  -svar="bar": a string var
-  -word="foo": a string
+-fork=false: a bool
+-numb=42: an int
+-svar="bar": a string var
+-word="foo": a string
 
 # If you provide a flag that wasn't specified to the
 # `flag` package, the program will print an error message
@@ -73,7 +74,6 @@ $ ./command-line-flags -wat
 flag provided but not defined: -wat
 Usage of ./command-line-flags:
 ...
-
 ```
 
 ## Solution

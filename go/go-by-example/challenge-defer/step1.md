@@ -19,5 +19,4 @@ $ go run defer.go
 creating
 writing
 closing
-
 ```

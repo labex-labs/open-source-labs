@@ -13,8 +13,7 @@ The `sum` function takes an integer slice and returns the sum of all the integer
 ## Example
 
 ```sh
-$ go run recursion.go 
+$ go run recursion.go
 5040
 13
-
 ```

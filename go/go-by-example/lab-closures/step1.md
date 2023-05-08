@@ -21,7 +21,6 @@ $ go run closures.go
 
 # The last feature of functions we'll look at for now is
 # recursion.
-
 ```
 
 ## Solution

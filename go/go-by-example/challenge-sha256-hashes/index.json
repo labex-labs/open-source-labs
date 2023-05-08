@@ -1,52 +1,50 @@
 {
-    "type": "challenge",
-    "title": "SHA256 Hashes",
-    "description": "This challenge aims to demonstrate how to compute SHA256 hashes in Go. SHA256 hashes are commonly used to compute short identities for binary or text blobs.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "SHA256 Hashes",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "sha256-hashes.go"
-                ]
-            }
+  "type": "challenge",
+  "title": "SHA256 Hashes",
+  "description": "This challenge aims to demonstrate how to compute SHA256 hashes in Go. SHA256 hashes are commonly used to compute short identities for binary or text blobs.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "SHA256 Hashes",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
-        },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "sha256-hashes.go",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        "skills": [],
+        "solutions": ["sha256-hashes.go"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "sha256-hashes.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-3.0",
-        "url": "http://creativecommons.org/licenses/by/3.0/",
-        "repo": "https://github.com/mmcgrana/gobyexample"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-3.0",
+    "url": "http://creativecommons.org/licenses/by/3.0/",
+    "repo": "https://github.com/mmcgrana/gobyexample"
+  }
 }

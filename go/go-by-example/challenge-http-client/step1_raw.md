@@ -1,18 +1,22 @@
 # Golang Challenge: HTTP Client
 
 ## Introduction
+
 This challenge aims to test your ability to use the `net/http` package in Golang to issue HTTP requests.
 
 ## Problem
+
 You are required to write a program that sends an HTTP GET request to a server and prints the HTTP response status and the first 5 lines of the response body.
 
 ## Requirements
+
 - The program should use the `net/http` package to issue an HTTP GET request.
 - The program should print the HTTP response status.
 - The program should print the first 5 lines of the response body.
 - The program should handle errors gracefully.
 
 ## TODO
+
 ```go
 // TODO: Write code to issue an HTTP GET request to a server.
 // TODO: Print the HTTP response status.
@@ -21,6 +25,7 @@ You are required to write a program that sends an HTTP GET request to a server a
 ```
 
 ## Example
+
 ```
 Response status: 200 OK
 <!doctype html>
@@ -33,4 +38,5 @@ Response status: 200 OK
 ```
 
 ## Summary
+
 In this challenge, you have learned how to use the `net/http` package in Golang to issue HTTP requests and handle errors.

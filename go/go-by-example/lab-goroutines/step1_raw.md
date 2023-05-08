@@ -1,12 +1,15 @@
 # Goroutines
 
 ## Introduction
+
 This challenge is designed to test your understanding of goroutines in Golang. Goroutines are lightweight threads of execution that allow for concurrent execution of functions.
 
 ## Problem
+
 The problem to be solved in this challenge is to create and run goroutines to execute functions concurrently.
 
 ## Requirements
+
 - The `f` function should print out its input string and a counter variable three times.
 - The `main` function should call the `f` function synchronously and print out "direct" and a counter variable three times.
 - The `main` function should call the `f` function asynchronously using a goroutine and print out "goroutine" and a counter variable three times.
@@ -14,6 +17,7 @@ The problem to be solved in this challenge is to create and run goroutines to ex
 - The `main` function should wait for the goroutines to finish executing before printing out "done".
 
 ## TODO
+
 ```
 func f(from string) {
 	for i := 0; i < 3; i++ {
@@ -41,6 +45,7 @@ func main() {
 ```
 
 ## Example
+
 ```
 direct : 0
 direct : 1
@@ -53,4 +58,5 @@ done
 ```
 
 ## Summary
+
 In this challenge, you learned how to create and run goroutines to execute functions concurrently. You also learned how to start a goroutine to execute an anonymous function and how to wait for goroutines to finish executing.

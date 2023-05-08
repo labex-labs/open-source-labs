@@ -18,9 +18,8 @@ The problem to be solved in this challenge is to sort slices of strings and inte
 # slices and `true` as the result of our `AreSorted` test.
 $ go run sorting.go
 Strings: [a b c]
-Ints:    [2 4 7]
-Sorted:  true
-
+Ints: [2 4 7]
+Sorted: true
 ```
 
 ## Solution

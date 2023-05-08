@@ -18,7 +18,6 @@ The problem to be solved in this challenge is to understand how to define and us
 $ go run generics.go
 keys: [4 1 2]
 list: [10 13 23]
-
 ```
 
 ## Solution

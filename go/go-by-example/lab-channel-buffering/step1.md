@@ -12,10 +12,9 @@ By default, channels in Golang are unbuffered, meaning that they only accept sen
 ## Example
 
 ```sh
-$ go run channel-buffering.go 
+$ go run channel-buffering.go
 buffered
 channel
-
 ```
 
 ## Solution

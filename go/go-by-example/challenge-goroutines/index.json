@@ -1,52 +1,50 @@
 {
-    "type": "challenge",
-    "title": "Goroutines",
-    "description": "This challenge is designed to test your understanding of goroutines in Golang. Goroutines are lightweight threads of execution that allow for concurrent execution of functions.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Goroutines",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "goroutines.go"
-                ]
-            }
+  "type": "challenge",
+  "title": "Goroutines",
+  "description": "This challenge is designed to test your understanding of goroutines in Golang. Goroutines are lightweight threads of execution that allow for concurrent execution of functions.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Goroutines",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
-        },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "goroutines.go",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        "skills": [],
+        "solutions": ["goroutines.go"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "goroutines.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-3.0",
-        "url": "http://creativecommons.org/licenses/by/3.0/",
-        "repo": "https://github.com/mmcgrana/gobyexample"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-3.0",
+    "url": "http://creativecommons.org/licenses/by/3.0/",
+    "repo": "https://github.com/mmcgrana/gobyexample"
+  }
 }

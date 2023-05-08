@@ -14,19 +14,18 @@ Complete the code below to print the output of various string functions provided
 
 ```sh
 $ go run string-functions.go
-Contains:   true
-Count:      2
-HasPrefix:  true
-HasSuffix:  true
-Index:      1
-Join:       a-b
-Repeat:     aaaaa
-Replace:    f00
-Replace:    f0o
-Split:      [a b c d e]
-ToLower:    test
-ToUpper:    TEST
-
+Contains: true
+Count: 2
+HasPrefix: true
+HasSuffix: true
+Index: 1
+Join: a-b
+Repeat: aaaaa
+Replace: f00
+Replace: f0o
+Split: [a b c d e]
+ToLower: test
+ToUpper: TEST
 ```
 
 ## Solution

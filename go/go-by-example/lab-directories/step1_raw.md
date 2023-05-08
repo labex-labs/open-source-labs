@@ -1,12 +1,15 @@
 # Directories
 
 ## Introduction
+
 In this challenge, you will learn how to work with directories in Go. Go provides several useful functions for working with directories in the file system.
 
 ## Problem
+
 Create a Go program that creates a new sub-directory in the current working directory, creates a hierarchy of directories, including parents, lists directory contents, changes the current working directory, and visits a directory recursively.
 
 ## Requirements
+
 - Create a new sub-directory in the current working directory.
 - When creating temporary directories, it's good practice to `defer` their removal. `os.RemoveAll` will delete a whole directory tree (similarly to `rm -rf`).
 - Create a hierarchy of directories, including parents with `MkdirAll`. This is similar to the command-line `mkdir -p`.
@@ -15,6 +18,7 @@ Create a Go program that creates a new sub-directory in the current working dire
 - Visit a directory recursively, including all its sub-directories. `Walk` accepts a callback function to handle every file or directory visited.
 
 ## TODO
+
 ```
 // Create a new sub-directory in the current working
 // directory.
@@ -94,6 +98,7 @@ return nil
 ```
 
 ## Example
+
 ```
 Listing subdir/parent
   child true
@@ -112,4 +117,5 @@ Visiting subdir
 ```
 
 ## Summary
+
 In this challenge, you learned how to work with directories in Go. You learned how to create a new sub-directory, create a hierarchy of directories, list directory contents, change the current working directory, and visit a directory recursively.

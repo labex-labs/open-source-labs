@@ -15,16 +15,15 @@ In this challenge, you are required to demonstrate the use of the `text/template
 ## Example
 
 ```sh
-$ go run templates.go 
+$ go run templates.go
 Value: some text
 Value: 5
 Value: [Go Rust C++ C#]
 Name: Jane Doe
 Name: Mickey Mouse
-yes 
-no 
-Range: Go Rust C++ C# 
-
+yes
+no
+Range: Go Rust C++ C#
 ```
 
 ## Solution

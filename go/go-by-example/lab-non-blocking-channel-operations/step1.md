@@ -13,11 +13,10 @@ The problem to be solved in this challenge is to implement non-blocking channel 
 ## Example
 
 ```sh
-$ go run non-blocking-channel-operations.go 
+$ go run non-blocking-channel-operations.go
 no message received
 no message sent
 no activity
-
 ```
 
 ## Solution

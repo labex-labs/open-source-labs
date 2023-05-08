@@ -1,16 +1,20 @@
 # Rate Limiting
 
 ## Introduction
+
 The challenge demonstrates how to implement rate limiting in Go using goroutines, channels, and tickers.
 
 ## Problem
+
 The problem is to limit the handling of incoming requests to maintain quality of service and control resource utilization.
 
 ## Requirements
+
 - Go programming language
 - Basic understanding of goroutines, channels, and tickers
 
 ## TODO
+
 ```go
 // First we'll look at basic rate limiting. Suppose
 // we want to limit our handling of incoming requests.
@@ -70,6 +74,7 @@ for req := range burstyRequests {
 ```
 
 ## Example
+
 ```
 request 1 2021-10-01 12:00:00.000000001 +0000 UTC
 request 2 2021-10-01 12:00:00.200000001 +0000 UTC
@@ -84,4 +89,5 @@ request 5 2021-10-01 12:00:01.200000001 +0000 UTC
 ```
 
 ## Summary
+
 The challenge demonstrates how to implement rate limiting in Go using goroutines, channels, and tickers to control resource utilization and maintain quality of service.

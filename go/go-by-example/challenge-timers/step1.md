@@ -22,5 +22,4 @@ The challenge requires the implementation of a timer that waits for a specified 
 $ go run timers.go
 Timer 1 fired
 Timer 2 stopped
-
 ```

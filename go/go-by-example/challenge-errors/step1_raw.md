@@ -1,12 +1,15 @@
 # {{ errors }}
 
 ## Introduction
+
 The purpose of this challenge is to understand how to handle errors in Golang.
 
 ## Problem
+
 The challenge provides two functions that return an error if the input argument is 42. The first function returns a basic error value, while the second function uses a custom type to represent the error.
 
 ## Requirements
+
 - The `errors` package must be imported.
 - The `f1` function must return an error if the input argument is 42.
 - The `f2` function must return an error of type `argError` if the input argument is 42.
@@ -17,6 +20,7 @@ The challenge provides two functions that return an error if the input argument 
 - The `main` function must demonstrate how to programmatically use the data in a custom error.
 
 ## TODO
+
 ```go
 // By convention, errors are the last return value and
 // have type `error`, a built-in interface.
@@ -92,6 +96,7 @@ func main() {
 ```
 
 ## Example
+
 ```
 f1 worked: 10
 f1 failed: can't work with 42
@@ -102,4 +107,5 @@ can't work with it
 ```
 
 ## Summary
+
 This challenge demonstrates how to handle errors in Golang using the `error` interface and custom error types. It also shows how to programmatically use the data in a custom error.

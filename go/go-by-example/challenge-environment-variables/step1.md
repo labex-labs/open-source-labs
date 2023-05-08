@@ -19,7 +19,7 @@ In this challenge, you will need to set, get, and list environment variables.
 # `BAR` is empty.
 $ go run environment-variables.go
 FOO: 1
-BAR: 
+BAR:
 
 # The list of keys in the environment will depend on your
 # particular machine.
@@ -35,5 +35,4 @@ $ BAR=2 go run environment-variables.go
 FOO: 1
 BAR: 2
 ...
-
 ```

@@ -27,11 +27,9 @@ $ go run random-numbers.go
 5,87
 5,87
 
-
 # See the [`math/rand`](https://pkg.go.dev/math/rand)
 # package docs for references on other random quantities
 # that Go can provide.
-
 ```
 
 ## Solution

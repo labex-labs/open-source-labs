@@ -2,7 +2,7 @@
 
 ## Problem
 
-In some cases, we want our Go programs to handle Unix signals intelligently. For instance, we might want a server to shut down gracefully when it receives a `SIGTERM`, or a command-line tool to stop processing input if it receives a `SIGINT`. 
+In some cases, we want our Go programs to handle Unix signals intelligently. For instance, we might want a server to shut down gracefully when it receives a `SIGTERM`, or a command-line tool to stop processing input if it receives a `SIGINT`.
 
 ## Requirements
 
@@ -24,7 +24,6 @@ awaiting signal
 ^C
 interrupt
 exiting
-
 ```
 
 ## Solution

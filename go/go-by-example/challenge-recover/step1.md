@@ -14,6 +14,5 @@ The `mayPanic` function in the provided code will panic when called. Your task i
 ```sh
 $ go run recover.go
 Recovered. Error:
- a problem
-
+a problem
 ```

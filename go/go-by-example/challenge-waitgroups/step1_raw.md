@@ -1,17 +1,21 @@
 # waitgroups
 
 ## Introduction
+
 The `waitgroups` challenge is designed to help you understand how to use a wait group to wait for multiple goroutines to finish.
 
 ## Problem
+
 The problem to be solved in this challenge is to launch several goroutines and increment the WaitGroup counter for each. Then, we need to wait for all the goroutines launched to finish.
 
 ## Requirements
+
 - Basic knowledge of Golang.
 - Understanding of concurrency in Golang.
 - Familiarity with the `sync` package.
 
 ## TODO
+
 Complete the code block marked with the TODO keyword to launch several goroutines and increment the WaitGroup counter for each. Then, wait for all the goroutines launched to finish.
 
 ```go
@@ -40,6 +44,7 @@ wg.Wait()
 ```
 
 ## Example
+
 ```
 Worker 1 starting
 Worker 2 starting
@@ -54,4 +59,5 @@ Worker 5 done
 ```
 
 ## Summary
+
 In this challenge, we learned how to use a wait group to wait for multiple goroutines to finish. We also learned how to launch several goroutines and increment the WaitGroup counter for each. Finally, we saw how to wait for all the goroutines launched to finish.

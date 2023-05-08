@@ -14,7 +14,7 @@ To complete this challenge, you will need to have a basic understanding of Go sy
 # Note that while slices are different types than arrays,
 # they are rendered similarly by `fmt.Println`.
 $ go run slices.go
-emp: [  ]
+emp: [ ]
 set: [a b c]
 get: c
 len: 3
@@ -24,7 +24,7 @@ sl1: [c d e]
 sl2: [a b c d e]
 sl3: [c d e f]
 dcl: [g h i]
-2d:  [[0] [1 2] [2 3 4]]
+2d: [[0] [1 2] [2 3 4]]
 
 # Check out this [great blog post](https://go.dev/blog/slices-intro)
 # by the Go team for more details on the design and
@@ -32,7 +32,6 @@ dcl: [g h i]
 
 # Now that we've seen arrays and slices we'll look at
 # Go's other key builtin data structure: maps.
-
 ```
 
 ## Solution

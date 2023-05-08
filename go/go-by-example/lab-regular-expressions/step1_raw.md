@@ -1,12 +1,15 @@
 # Regular Expressions
 
 ## Introduction
+
 This challenge demonstrates how to use regular expressions in Golang.
 
 ## Problem
+
 The challenge requires you to complete the code to perform various regular expression-related tasks in Golang.
 
 ## Requirements
+
 - Use the `regexp` package to perform regular expression-related tasks.
 - Use `MatchString` to test whether a pattern matches a string.
 - Use `Compile` to optimize a `Regexp` struct.
@@ -23,6 +26,7 @@ The challenge requires you to complete the code to perform various regular expre
 - Use `ReplaceAllFunc` to transform matched text with a given function.
 
 ## TODO
+
 Complete the following code blocks marked with `TODO`:
 
 ```go
@@ -98,6 +102,7 @@ fmt.Println(string(out))
 ```
 
 ## Example
+
 ```
 true
 true
@@ -115,4 +120,5 @@ a PEACH
 ```
 
 ## Summary
+
 This challenge demonstrates how to use regular expressions in Golang to perform various tasks such as testing whether a pattern matches a string, finding the match for the regexp, and replacing subsets of strings with other values.

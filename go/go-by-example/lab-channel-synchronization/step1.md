@@ -7,6 +7,7 @@ The problem to be solved in this challenge is to create a goroutine that perform
 ## Requirements
 
 To complete this challenge, you will need to:
+
 - Create a function named `worker` that takes a channel of type `bool` as a parameter.
 - Inside the `worker` function, perform some work and then send a value to the channel to notify that the work is done.
 - In the `main` function, create a channel of type `bool` with a buffer size of 1.
@@ -16,13 +17,12 @@ To complete this challenge, you will need to:
 ## Example
 
 ```sh
-$ go run channel-synchronization.go      
-working...done                  
+$ go run channel-synchronization.go
+working...done
 
 # If you removed the `<- done` line from this program, the
 # program would exit before the `worker` even
 # started.
-
 ```
 
 ## Solution

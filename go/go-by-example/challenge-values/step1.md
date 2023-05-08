@@ -19,5 +19,4 @@ golang
 false
 true
 false
-
 ```

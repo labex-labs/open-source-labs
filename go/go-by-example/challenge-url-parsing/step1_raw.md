@@ -1,12 +1,15 @@
 # Golang Challenge: URL Parsing
 
 ## Introduction
+
 The purpose of this challenge is to demonstrate how to parse URLs in Go.
 
 ## Problem
+
 The challenge requires parsing a sample URL that includes a scheme, authentication info, host, port, path, query params, and query fragment. The parsed URL should be used to extract the individual components of the URL.
 
 ## Requirements
+
 - The `url` and `net` packages should be imported.
 - The sample URL should be parsed and checked for errors.
 - The scheme, authentication info, host, port, path, query params, and query fragment should be extracted from the parsed URL.
@@ -14,6 +17,7 @@ The challenge requires parsing a sample URL that includes a scheme, authenticati
 - The `ParseQuery` function should be used to parse the query params into a map.
 
 ## TODO
+
 ```go
 // We'll parse this example URL, which includes a
 // scheme, authentication info, host, port, path,
@@ -61,6 +65,7 @@ fmt.Println(m["k"][0])
 ```
 
 ## Example
+
 ```
 postgres
 user:pass
@@ -77,4 +82,5 @@ v
 ```
 
 ## Summary
+
 The Golang Challenge: URL Parsing requires parsing a sample URL and extracting the individual components of the URL. The `url` and `net` packages are used to parse and extract the URL components.

@@ -13,7 +13,7 @@ You need to write a Go program that writes a string and bytes into a file and us
 
 ```sh
 # Try running the file-writing code.
-$ go run writing-files.go 
+$ go run writing-files.go
 wrote 5 bytes
 wrote 7 bytes
 wrote 9 bytes
@@ -29,5 +29,4 @@ buffered
 
 # Next we'll look at applying some of the file I/O ideas
 # we've just seen to the `stdin` and `stdout` streams.
-
 ```

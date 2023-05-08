@@ -15,13 +15,12 @@ The code provided defines a struct type called `rect` with two fields, `width` a
 ## Example
 
 ```sh
-$ go run methods.go 
-area:  50
+$ go run methods.go
+area: 50
 perim: 30
-area:  50
+area: 50
 perim: 30
 
 # Next we'll look at Go's mechanism for grouping and
 # naming related sets of methods: interfaces.
-
 ```

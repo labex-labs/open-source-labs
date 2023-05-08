@@ -18,5 +18,4 @@ initial
 true
 0
 apple
-
 ```

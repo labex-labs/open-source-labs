@@ -37,7 +37,6 @@ false
 
 # Next we'll look at the related idea of time relative to
 # the Unix epoch.
-
 ```
 
 ## Solution

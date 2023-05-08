@@ -1,12 +1,15 @@
 # Closing Channels
 
 ## Introduction
+
 In Golang, closing a channel can be used to communicate completion to the channel's receivers. This challenge will demonstrate how to use a channel to communicate work to be done from the `main()` goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker.
 
 ## Problem
+
 In this challenge, you need to modify the given code to close the `jobs` channel when there are no more jobs for the worker. You also need to use the `done` channel to notify when all the jobs have been completed.
 
 ## Requirements
+
 - Use a buffered channel `jobs` to communicate work to be done from the `main()` goroutine to a worker goroutine.
 - Use a channel `done` to notify when all the jobs have been completed.
 - Use a worker goroutine to repeatedly receive from `jobs` with `j, more := <-jobs`.
@@ -15,6 +18,7 @@ In this challenge, you need to modify the given code to close the `jobs` channel
 - Use the [synchronization](channel-synchronization) approach to await the worker.
 
 ## TODO
+
 ```go
 // Here's the worker goroutine. It repeatedly receives
 // from `jobs` with `j, more := <-jobs`. In this
@@ -52,6 +56,7 @@ fmt.Println("sent all jobs")
 ```
 
 ## Example
+
 ```
 sent job 1
 received job 1
@@ -64,4 +69,5 @@ received all jobs
 ```
 
 ## Summary
+
 In this challenge, you learned how to use a channel to communicate work to be done from the `main()` goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker. You also learned how to use the `done` channel to notify when all the jobs have been completed.

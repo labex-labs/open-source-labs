@@ -1,16 +1,20 @@
 # Writing Files
 
 ## Introduction
+
 This challenge aims to test your ability to write files in Go. You will learn how to write a string or bytes into a file and how to use buffered writers.
 
 ## Problem
+
 You need to write a Go program that writes a string and bytes into a file and uses buffered writers.
 
 ## Requirements
+
 - The program should write a string and bytes into a file.
 - The program should use buffered writers.
 
 ## TODO
+
 Complete the following code to meet the requirements of the challenge. Use the TODO keyword to mark the code that needs to be completed.
 
 ```
@@ -76,13 +80,17 @@ func main() {
 ```
 
 ## Example
+
 The output of the program should be:
+
 ```
 wrote 5 bytes
 wrote 7 bytes
 wrote 9 bytes
 ```
+
 The content of the file should be:
+
 ```
 some
 writes
@@ -92,4 +100,5 @@ Hello
 ```
 
 ## Summary
+
 In this challenge, you learned how to write a string or bytes into a file and how to use buffered writers in Go.

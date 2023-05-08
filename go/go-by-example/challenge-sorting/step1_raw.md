@@ -1,18 +1,22 @@
 # Sorting
 
 ## Introduction
+
 The Go programming language provides a built-in package named `sort` that implements sorting for builtins and user-defined types. In this challenge, we will focus on sorting for builtins.
 
 ## Problem
+
 The problem to be solved in this challenge is to sort slices of strings and integers using the `sort` package.
 
 ## Requirements
+
 - The `sort` package must be imported.
 - The `sort.Strings()` function must be used to sort a slice of strings.
 - The `sort.Ints()` function must be used to sort a slice of integers.
 - The `sort.IntsAreSorted()` function must be used to check if a slice of integers is already sorted.
 
 ## TODO
+
 Complete the following code to sort the given slices of strings and integers using the `sort` package:
 
 ```
@@ -41,6 +45,7 @@ func main() {
 ```
 
 ## Example
+
 ```
 Strings: [a b c]
 Ints:    [2 4 7]
@@ -48,4 +53,5 @@ Sorted:  true
 ```
 
 ## Summary
+
 The `sort` package in Go provides a simple and efficient way to sort slices of built-in types. By using the `sort.Strings()`, `sort.Ints()`, and `sort.IntsAreSorted()` functions, we can easily sort and check if a slice is already sorted.

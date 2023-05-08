@@ -22,5 +22,4 @@ server: hello handler started
 ^C
 server: context canceled
 server: hello handler ended
-
 ```

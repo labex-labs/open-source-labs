@@ -7,6 +7,7 @@ The problem to be solved is to demonstrate the use of constants in Golang for ch
 ## Requirements
 
 The Challenge has the following requirements:
+
 - Use the `const` keyword to declare a constant value.
 - Constants should be of character, string, boolean, and numeric values.
 - A constant statement can appear anywhere a `var` statement can.
@@ -17,10 +18,9 @@ The Challenge has the following requirements:
 ## Example
 
 ```sh
-$ go run constant.go 
+$ go run constant.go
 constant
 6e+11
 600000000000
 -0.28470407323754404
-
 ```

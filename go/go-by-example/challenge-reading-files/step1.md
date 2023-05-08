@@ -13,7 +13,7 @@ You need to read files in your Go program and perform different operations on th
 
 ```sh
 $ echo "hello" > /tmp/dat
-$ echo "go" >>   /tmp/dat
+$ echo "go" >> /tmp/dat
 $ go run reading-files.go
 hello
 go
@@ -23,5 +23,4 @@ go
 5 bytes: hello
 
 # Next we'll look at writing files.
-
 ```

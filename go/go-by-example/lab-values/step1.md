@@ -19,7 +19,6 @@ golang
 false
 true
 false
-
 ```
 
 ## Solution

@@ -1,52 +1,50 @@
 {
-    "type": "challenge",
-    "title": "Line Filters",
-    "description": "The Line Filters challenge is a common type of program that reads input on stdin, processes it, and then prints some derived result to stdout. The purpose of this challenge is to write a Go program that reads input text and modifies it according to specific requirements.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Line Filters",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "line-filters.go"
-                ]
-            }
+  "type": "challenge",
+  "title": "Line Filters",
+  "description": "The Line Filters challenge is a common type of program that reads input on stdin, processes it, and then prints some derived result to stdout. The purpose of this challenge is to write a Go program that reads input text and modifies it according to specific requirements.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Line Filters",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
-        },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "line-filters.go",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        "skills": [],
+        "solutions": ["line-filters.go"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "line-filters.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-3.0",
-        "url": "http://creativecommons.org/licenses/by/3.0/",
-        "repo": "https://github.com/mmcgrana/gobyexample"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-3.0",
+    "url": "http://creativecommons.org/licenses/by/3.0/",
+    "repo": "https://github.com/mmcgrana/gobyexample"
+  }
 }

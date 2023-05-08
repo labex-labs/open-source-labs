@@ -1,17 +1,22 @@
 # Golang Challenge: Select
 
 ## Introduction
+
 This challenge aims to test your knowledge of Go's `select` statement, which allows you to wait on multiple channel operations.
 
 ## Problem
+
 In this challenge, you are given two channels, `c1` and `c2`, which will receive a value after some amount of time. Your task is to use `select` to await both of these values simultaneously, printing each one as it arrives.
 
 ## Requirements
+
 - You should use the `select` statement to wait on both channels.
 - You should print the value received from each channel as it arrives.
 
 ## TODO
+
 Complete the following code block:
+
 ```go
 // For our example we'll select across two channels.
 c1 := make(chan string)
@@ -42,10 +47,12 @@ for i := 0; i < 2; i++ {
 ```
 
 ## Example
+
 ```
 received one
 received two
 ```
 
 ## Summary
+
 This challenge tests your ability to use the `select` statement in Go to wait on multiple channel operations. By completing this challenge, you will gain a better understanding of how to use `select` to coordinate concurrent goroutines.

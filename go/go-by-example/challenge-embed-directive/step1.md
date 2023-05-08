@@ -27,6 +27,4 @@ hello go
 hello go
 123
 456
-
-
 ```

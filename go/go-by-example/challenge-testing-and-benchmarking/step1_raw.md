@@ -1,12 +1,15 @@
 # Testing and Benchmarking
 
 ## Introduction
+
 This challenge aims to demonstrate the importance of unit testing and benchmarking in writing principled Go programs. The `testing` package provides the tools needed to write unit tests, and the `go test` command runs tests.
 
 ## Problem
+
 The problem to be solved in this challenge is to test and benchmark a simple implementation of an integer minimum function named `IntMin`.
 
 ## Requirements
+
 - The `testing` package must be imported.
 - The `IntMin` function must take two integer parameters and return an integer.
 - The `TestIntMinBasic` function must test the `IntMin` function for basic input values.
@@ -14,6 +17,7 @@ The problem to be solved in this challenge is to test and benchmark a simple imp
 - The `BenchmarkIntMin` function must benchmark the `IntMin` function.
 
 ## TODO
+
 ```go
 // TODO: Write a test function named TestIntMinBasic to test the IntMin function for basic input values.
 
@@ -23,6 +27,7 @@ The problem to be solved in this challenge is to test and benchmark a simple imp
 ```
 
 ## Example
+
 ```
 $ go test -v
 === RUN   TestIntMinBasic
@@ -48,4 +53,5 @@ ok  	example	0.002s
 ```
 
 ## Summary
+
 This challenge demonstrated how to write unit tests and benchmark functions using the `testing` package in Go. The `TestIntMinBasic` function tested the `IntMin` function for basic input values, while the `TestIntMinTableDriven` function used a table-driven style to test the `IntMin` function. The `BenchmarkIntMin` function benchmarked the `IntMin` function to measure its performance.

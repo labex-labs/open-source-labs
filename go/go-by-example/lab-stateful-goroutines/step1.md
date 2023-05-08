@@ -31,7 +31,6 @@ writeOps: 7177
 # use whichever approach feels most natural, especially
 # with respect to understanding the correctness of your
 # program.
-
 ```
 
 ## Solution

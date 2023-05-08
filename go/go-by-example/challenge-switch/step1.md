@@ -12,7 +12,7 @@ In this challenge, you need to complete the `switch` statement to print out the 
 ## Example
 
 ```sh
-$ go run switch.go 
+$ go run switch.go
 Write 2 as two
 It's a weekday
 It's after noon

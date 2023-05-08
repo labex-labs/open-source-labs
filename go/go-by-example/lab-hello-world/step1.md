@@ -21,7 +21,7 @@ hello world
 # binaries. We can do this using `go build`.
 $ go build hello-world.go
 $ ls
-hello-world	hello-world.go
+hello-world hello-world.go
 
 # We can then execute the built binary directly.
 $ ./hello-world
@@ -29,7 +29,6 @@ hello world
 
 # Now that we can run and build basic Go programs, let's
 # learn more about the language.
-
 ```
 
 ## Solution

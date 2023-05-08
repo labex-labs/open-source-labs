@@ -13,13 +13,12 @@ In the given code, we have two functions `plus` and `plusPlus`. The `plus` funct
 ## Example
 
 ```sh
-$ go run functions.go 
+$ go run functions.go
 1+2 = 3
 1+2+3 = 6
 
 # There are several other features to Go functions. One is
 # multiple return values, which we'll look at next.
-
 ```
 
 ## Solution

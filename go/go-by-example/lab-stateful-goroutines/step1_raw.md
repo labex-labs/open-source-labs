@@ -1,12 +1,15 @@
 # Stateful Goroutines
 
 ## Introduction
+
 This challenge aims to demonstrate how to use channels and goroutines to synchronize access to shared state across multiple goroutines.
 
 ## Problem
+
 In concurrent programming, it is essential to synchronize access to shared state to avoid race conditions and data corruption. This challenge presents a scenario where a single goroutine owns the state, and other goroutines send messages to read or write the state.
 
 ## Requirements
+
 - Use channels to issue read and write requests to the state-owning goroutine.
 - Use `readOp` and `writeOp` structs to encapsulate requests and responses.
 - Use a map to store the state.
@@ -15,7 +18,9 @@ In concurrent programming, it is essential to synchronize access to shared state
 - Use `time` package to add a delay between operations.
 
 ## TODO
+
 Complete the following code blocks:
+
 ```go
 type readOp struct {
 	key  int
@@ -71,10 +76,12 @@ for w := 0; w < 10; w++ {
 ```
 
 ## Example
+
 ```
 readOps: 1000
 writeOps: 100
 ```
 
 ## Summary
+
 This challenge demonstrated how to use channels and goroutines to synchronize access to shared state. By having a single goroutine own the state and using channels to issue read and write requests, we can avoid race conditions and data corruption.

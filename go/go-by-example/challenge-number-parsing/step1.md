@@ -17,7 +17,7 @@ Parsing numbers from strings is a common task in many programs. This challenge r
 ## Example
 
 ```sh
-$ go run number-parsing.go 
+$ go run number-parsing.go
 1.234
 123
 456
@@ -26,5 +26,4 @@ $ go run number-parsing.go
 strconv.ParseInt: parsing "wat": invalid syntax
 
 # Next we'll look at another common parsing task: URLs.
-
 ```
