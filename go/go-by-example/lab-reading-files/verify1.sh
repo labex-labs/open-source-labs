@@ -1,3 +1,4 @@
+#!/bin/zsh
 cd /home/labex/project
 echo "hello" > /tmp/dat
 cd /home/labex/project

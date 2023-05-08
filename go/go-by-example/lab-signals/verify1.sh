@@ -1,3 +1,4 @@
+#!/bin/zsh
 # When we run this program it will block waiting for a
 # signal. By typing `ctrl-C` (which the
 # terminal shows as `^C`) we can send a `SIGINT` signal,

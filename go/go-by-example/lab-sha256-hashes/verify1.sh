@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Running the program computes the hash and prints it in
 # a human-readable hex format.
 cd /home/labex/project

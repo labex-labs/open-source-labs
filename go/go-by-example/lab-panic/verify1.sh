@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Running this program will cause it to panic, print
 # an error message and goroutine traces, and exit with
 # a non-zero status.

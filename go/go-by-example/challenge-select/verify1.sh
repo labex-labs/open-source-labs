@@ -1,3 +1,4 @@
+#!/bin/zsh
 # We receive the values `"one"` and then `"two"` as
 # expected.
 cd /home/labex/project

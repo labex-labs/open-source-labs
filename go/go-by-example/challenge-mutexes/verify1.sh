@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Running the program shows that the counters
 # updated as expected.
 cd /home/labex/project

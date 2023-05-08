@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Depending on where you run this sample, some of the
 # generated numbers may be different. Note that on
 # the Go playground seeding with `time.Now()` still

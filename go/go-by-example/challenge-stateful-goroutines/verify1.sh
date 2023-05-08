@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Running our program shows that the goroutine-based
 # state management example completes about 80,000
 # total operations.
