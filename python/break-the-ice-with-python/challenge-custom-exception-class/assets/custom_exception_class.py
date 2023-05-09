@@ -10,10 +10,7 @@ Constructor parameters:
 
 num = int(input())
 
-try:
-    pass
-except:
-    pass
+pass
 
 # TODO: Catching exceptions raised for custom purposes with num variables and try/expect statements
 # Note: Do not change the existing code
