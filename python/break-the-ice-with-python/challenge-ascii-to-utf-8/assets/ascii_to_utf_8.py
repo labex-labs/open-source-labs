@@ -13,8 +13,8 @@ def ASCIItoUTf8():
     # TODO: implement this function
 
     """ 
-    Hints: 1. Use the `input()` function to get the string to convert.
-           2. Use `encode()` function to convert.
+    Hints: 1. Use the input function to get the string to convert.
+           2. Use encode function to convert.
     """
 
     # Note: Do not change the existing code
