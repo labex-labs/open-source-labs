@@ -1,0 +1,50 @@
+{
+  "type": "challenge",
+  "title": "Test if File Exist",
+  "description": "In Bash, you can check the existence of a file using various options. This challenge focuses on using the '-f' option to test the file existence.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Test if File Exist",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [],
+        "solutions": ["step1-solution.md"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "file_exist.sh",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/labex-labs/open-source-challenges/blob/master/LICENSE",
+    "repo": "https://github.com/labex-labs/open-source-challenges"
+  }
+}
