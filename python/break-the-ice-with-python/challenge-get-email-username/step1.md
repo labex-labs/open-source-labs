@@ -4,7 +4,7 @@ Assuming that we have some email addresses in the "username@companyname.com" for
 
 ## Example
 
-The following email address is given as input to the program:
+If the following email address is given as input to the program:
 
 ```bash
 john@google.com

@@ -4,7 +4,7 @@ Write a program which accepts a sequence of words separated by whitespace as inp
 
 ## Example
 
-The following words is given as input to the program:
+If the following words is given as input to the program:
 
 ```bash
 2 cats and 3 dogs.

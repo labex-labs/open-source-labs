@@ -5,7 +5,7 @@ Write a program to read an ASCII string and to convert it to a unicode string en
 
 ## Example
 
-The following words is given as input to the program:
+If the following words is given as input to the program:
 
 ```bash
 python
