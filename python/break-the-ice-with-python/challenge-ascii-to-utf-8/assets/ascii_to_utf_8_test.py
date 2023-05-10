@@ -18,4 +18,4 @@ class TestGetEmailUsername(unittest.TestCase):
             self.assertEqual(ascii_to_utf_8(), expected_output)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
