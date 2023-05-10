@@ -1,7 +1,6 @@
 from unittest.mock import patch
 import unittest
 import sys
-import re
 
 sys.path.append("/home/labex/project")
 
