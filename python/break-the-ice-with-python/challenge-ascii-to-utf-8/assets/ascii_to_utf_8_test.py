@@ -4,7 +4,7 @@ import sys
 
 sys.path.append("/home/labex/project")
 
-from ascii_to_utf_8 import ASCIItoUTf8
+from ascii_to_utf_8 import ascii_to_utf_8
 
 class TestGetEmailUsername(unittest.TestCase):
     def test_get_email_username(self):
@@ -15,7 +15,7 @@ class TestGetEmailUsername(unittest.TestCase):
         # Redirect standard input to simulate user input
         with patch('builtins.input', return_value=user_input):
             # Call the function and check the output
-            self.assertEqual(ASCIItoUTf8(), expected_output)
+            self.assertEqual(ascii_to_utf_8(), expected_output)
 
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
