@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd /tmp 
-echo "123" | python3 *_test.py
+echo "123" | python3 ascii_to_utf_8_test.py
