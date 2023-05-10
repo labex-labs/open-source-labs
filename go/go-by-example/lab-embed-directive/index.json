@@ -1,0 +1,49 @@
+{
+  "type": "lab",
+  "title": "Golang Challenge: Embed Directive",
+  "description": "This challenge aims to test your understanding of the `embed` package in Golang. The `embed` package allows programs to include arbitrary files and folders in the Go binary at build time.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Golang Challenge: Embed Directive",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "embed-directive.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-3.0",
+    "url": "http://creativecommons.org/licenses/by/3.0/",
+    "repo": "https://github.com/mmcgrana/gobyexample"
+  }
+}
