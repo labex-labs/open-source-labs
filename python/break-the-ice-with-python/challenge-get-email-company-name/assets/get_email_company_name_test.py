@@ -18,4 +18,4 @@ class TestGetEmailUsername(unittest.TestCase):
             self.assertEqual(get_email_company_name(), expected_output)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()
