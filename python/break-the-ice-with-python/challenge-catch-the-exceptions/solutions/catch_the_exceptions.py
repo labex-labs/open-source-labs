@@ -1,4 +1,5 @@
 def divide():
+
     return 5/0
 
 
