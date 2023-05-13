@@ -6,18 +6,82 @@ You are working on a feature branch in the `git-playground` repository and you n
 
 ## Example
 
-1. Clone the `git-playground` repository from the link https://github.com/git-tutorial/git-tutorial.git.
-2. Change to the `git-playground` directory.
-3. Create a new branch called `feature-branch`.
-4. Make some changes to the files in the repository, add "some changes" to the README.md file. 
-5. Save the changes to a stash.
-6. Switch to the `master` branch.
-7. Make some changes to the files in the repository,add "some bug fixes" to the README.md file. 
-8. Switch back to the `feature-branch`.
-9. Apply the stash.
-10. Check the status of the repository.
+1. Clone the `git-playground` repository:
+
+```
+git clone https://github.com/labex-labs/git-playground.git
+```
+
+2. Change to the `git-playground` directory:
+
+```
+cd git-playground
+```
+
+3. Create a new branch called `feature-branch`:
+
+```
+git checkout -b feature-branch
+```
+
+4. Make some changes to the files in the repository:
+
+```
+echo "some changes" >> README.md
+```
+
+5. Save the changes to a stash:
+
+```
+git stash save "my changes"
+```
+
+6. Switch to the `master` branch:
+
+```
+git checkout master
+```
+
+7. Make some changes to the files in the repository:
+
+```
+echo "some bug fixes" >> README.md
+```
+
+8. Save the changes to a stash:
+
+```
+git stash save "some bug fixes"
+```
+
+9. Switch back to the `feature-branch`:
+
+```
+git checkout feature-branch
+```
+
+10.Add all modified and new files in your current working directory to the Git staging area.
+
+```
+git add .
+```
+
+11.View all saved stashes:
+
+```
+git stash list
+```
+
+12. Apply the stash.
+
+13. Check the status of the repository:
+
+```
+git status
+```
 
 This is the result after completing the challenge:
 
+![<an-example-result>](assets/challenge-apply-stash-step1-1.png)
 
 You should see that the changes you made before stashing are now applied.
