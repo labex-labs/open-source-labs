@@ -12,6 +12,8 @@ git submodule add <upstream-path> <local-path>
 Suppose you have a Git repository named `my-project` and you want to add a submodule from the Git repository `https://github.com/labex-labs/git-playground.git` to a directory named `git-playground` in your local repository. Here's how you can do it:
 
 ```shell
+git init my-project
+cd my-project
 git submodule add https://github.com/labex-labs/git-playground.git git-playground
 ```
 
