@@ -44,19 +44,37 @@ git checkout master
 echo "some bug fixes" >> README.md
 ```
 
-8. Switch back to the `feature-branch`:
+8. Save the changes to a stash:
+
+```
+git stash save "some bug fixes"
+```
+
+9. Switch back to the `feature-branch`:
 
 ```
 git checkout feature-branch
 ```
 
-9. Apply the stash:
+10.Add all modified and new files in your current working directory to the Git staging area.
 
 ```
-git stash apply
+git add .
 ```
 
-10. Check the status of the repository:
+11.View all saved stashes:
+
+```
+git stash list
+```
+
+12.Apply the stash:
+
+```
+git stash apply stash@{0}
+```
+
+13. Check the status of the repository:
 
 ```
 git status
