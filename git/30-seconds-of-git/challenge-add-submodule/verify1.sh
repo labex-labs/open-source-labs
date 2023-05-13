@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git submodule"
+cat ~/.zsh_history | grep -v grep | grep "git submodule add"
