@@ -1,5 +1,5 @@
 #!/bin/zsh
-git clone https://github.com/labex-labs/git-playground.git
+git clone https://github.com/labex-labs/git-playground.git /home/labex/project
 cd /home/labex/project/git-playground
 git checkout -b feature-branch
 echo "some changes" >> README.md
