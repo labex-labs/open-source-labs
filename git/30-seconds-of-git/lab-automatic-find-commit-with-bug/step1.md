@@ -2,7 +2,7 @@
 
 Your task is to use Git's `bisect` command to find the commit that introduced a bug in the `https://github.com/labex-labs/git-playground` repository. The bug causes the `npm test` command to fail.
 
-1. Run `git clone https://github.com/username/git-playground.git` to clone the `https://github.com/labex-labs/git-playground` repository.
+1. Run `git clone https://github.com/labex-labs/git-playground` to clone the `https://github.com/labex-labs/git-playground` repository.
 2. Run `npm install` to install the project dependencies.
 3. Run `npm test` to see the failing test.
 4. Use `git bisect start` to start the `bisect` process.
