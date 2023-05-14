@@ -9,7 +9,7 @@ Your task is to use Git's `bisect` command to find the commit that introduced a 
 1. Clone the `https://github.com/labex-labs/git-playground` repository.
 2. Run `npm install` to install the project dependencies.
 3. Run `npm test` to see the failing test.
-4. tart the `bisect` process.
+4. Start the `bisect` process.
 5. Use the git log --full-history command to see the full history of commits.
 6. Use a command to mark a `<commit>` as "good", indicating it is known to be bug-free.
 6. Use a command to mark a different `<commit>` as "bad" indicating it has the bug.
