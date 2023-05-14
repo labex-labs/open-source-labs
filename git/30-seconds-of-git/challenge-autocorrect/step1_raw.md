@@ -8,7 +8,7 @@ Configures git to autocorrect mistyped commands.
 
 ```shell
 git config --global help.autocorrect 1
-```
+``` 
 
 ```shell
 git config --global help.autocorrect 1
