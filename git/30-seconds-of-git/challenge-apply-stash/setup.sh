@@ -1,6 +1,6 @@
 #!/bin/zsh
 git clone https://github.com/labex-labs/git-playground.git /home/labex/project/
-cd /home/labex/project/git-playground
+cd /home/labex/project/
 git checkout -b feature-branch
 echo "some changes" >> README.md
 git stash save "my changes"
