@@ -1,3 +1,3 @@
 #!/bin/zsh
-cd /home/labex/project/git-playground/master
-git status |& grep -q "error\|conflict"
+cd /home/labex/project/git-playground
+git status |& grep -qi "error\|conflict"
