@@ -4,7 +4,7 @@
 
 Your task is to add a new submodule to a Git repository. You will need to add the submodule from an upstream repository to a local directory in your repository.  
 
-You have a Git repository called `my-project` and you add a submodule from the Git repository `https://github.com/labex-labs/git-playground.git` to a directory called `git-playground` in your local repository.
+You have a Git repository called `git-playground` and you add a submodule from the Git repository `https://github.com/labex-labs/git-playground.git` to a directory called `git-playground` in your local repository.
 
 ## Example
 
