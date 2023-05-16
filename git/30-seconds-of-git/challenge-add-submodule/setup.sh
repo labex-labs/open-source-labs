@@ -1,3 +1,5 @@
 #!/bin/zsh
 cd /home/labex/project
-git clone https://github.com/labex-labs/git-playground.git
+git init my-project
+cd my-project
+mkdir git-playground
