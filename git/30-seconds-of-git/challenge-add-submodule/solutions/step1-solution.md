@@ -3,8 +3,6 @@ git submodule add <upstream-path> <local-path>
 ```
 
 ```shell
-git submodule add https://github.com/labex-labs/git-playground.git ./git-playground
+git submodule add https://github.com/microsoft/vscode.git ./git-playground
 
-# Creates the directory containing the submodule from
-# "https://github.com/labex-labs/git-playground.git"
 ```
