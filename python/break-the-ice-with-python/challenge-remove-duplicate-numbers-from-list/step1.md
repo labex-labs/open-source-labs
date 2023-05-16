@@ -18,4 +18,4 @@ Then, the output of the program should be:
 
 ## Hints
 
-- Use `set()` to store a number of values without duplicate.
+- Use `remove()` to remove an item from a list.
