@@ -1,2 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git submodule add https://github.com/labex-labs/git-playground.git git-playground"
+cd /home/labex/project/my-project
+git submodule status | grep git-playground
