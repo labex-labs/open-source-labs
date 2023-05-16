@@ -1,2 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git stash apply "
+cd /home/labex/project/git-playground/master
+git status |& grep -q "error\|conflict"
