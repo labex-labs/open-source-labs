@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "Counting Characters in Strings",
+  "description": "In this challenge, you will write a program which count and print the numbers of each character in a string input by console.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Counting Characters in Strings",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing counting_characters_in_strings.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/input",
+          "python/format_specifiers",
+          "python/print"
+        ],
+        "solutions": ["counting_characters_in_strings.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "counting_characters_in_strings.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

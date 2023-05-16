@@ -1,0 +1,55 @@
+{
+  "type": "challenge",
+  "title": "Get Program Execution Time",
+  "description": "In this challenge, you will write a program to print the running time of execution of \"1+1\" for 10000000 times.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Get Program Execution Time",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing get_program_execution_time.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/time",
+          "python/print",
+          "python/range",
+          "python/for_loop"
+        ],
+        "solutions": ["get_program_execution_time.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "get_program_execution_time.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

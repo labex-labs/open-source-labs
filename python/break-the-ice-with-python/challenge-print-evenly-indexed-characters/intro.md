@@ -1,0 +1,1 @@
+# Print Evenly Indexed Characters
