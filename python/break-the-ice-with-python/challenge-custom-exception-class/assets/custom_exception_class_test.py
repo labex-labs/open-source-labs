@@ -5,6 +5,7 @@ sys.path.append("/home/labex/project")
 
 from custom_exception_class import CustomException
 
+
 class TestCustomException(unittest.TestCase):
     def test_input_less_than_10(self):
         with self.assertRaises(CustomException) as cm:
