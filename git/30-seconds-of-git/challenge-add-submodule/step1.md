@@ -12,4 +12,3 @@ This is the result after completing the challenge:
 
 ![an_example_reulet](assets/challenge-add-submodule-step1-1.png)
 
-This will create a new directory named `git-playground` in your local repository, which will contain the submodule from the upstream repository.
