@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Get Digit Words",
+  "description": "In this challenge, you will implement a function to get the words composed of digits only from a sequence of words separated by whitespace.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Get Digit Words",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing get_digit_words.py",
+            "file": "verify1.sh",
+            "hint": "Please use the input function to enter a sequence of words separated by whitespace and return its words composing of digits only.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/function_basic",
+          "python/input",
+          "python/for_loop",
+          "python/return_values",
+          "python/print"
+        ],
+        "solutions": ["get_digit_words.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "get_digit_words.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
