@@ -6,7 +6,7 @@ As a developer, you want to automate the process of creating upstream branches o
 
 ## Example
 
-For this challenge, you will fork the https://github.com/labex-labs/git-playground repository to your account, using the git-playground repository on your account to automatically create the upstream branch on push.
+For this challenge, you will fork the https://github.com/labex-labs/git-playground repository to your account, using the `git-playground` repository on your account to automatically create the upstream branch on push.
 
 1. On the GitHub website, log in to your account and find https://github.com/labex-labs/git-playground to fork the repository to your account.
 
