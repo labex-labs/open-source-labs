@@ -1,5 +1,5 @@
 #!/bin/zsh
 cd /home/labex/project
-git init my-project
+mkdir my-project
 cd /home/labex/project/my-project
-git checkout master
+git init
