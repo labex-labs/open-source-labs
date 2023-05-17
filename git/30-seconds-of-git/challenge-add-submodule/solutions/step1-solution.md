@@ -3,6 +3,6 @@ git submodule add <upstream-path> <local-path>
 ```
 
 ```shell
-git submodule add https://github.com/labex-labs/git-playground.git /home/labex/project/my-project/git-playground
-
+cd my-project
+git submodule add https://github.com/labex-labs/git-playground.git ./git-playground
 ```
