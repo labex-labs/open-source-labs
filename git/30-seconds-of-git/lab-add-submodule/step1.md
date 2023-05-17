@@ -14,7 +14,7 @@ Suppose you have a Git repository named `my-project` and you want to add a submo
 ```shell
 git init my-project
 cd my-project
-git submodule add https://github.com/labex-labs/git-playground.git git-playground
+git submodule add https://github.com/labex-labs/git-playground.git ./git-playground
 ```
 
 This will create a new directory named `git-playground` in your local repository, which will contain the submodule from the upstream repository.
