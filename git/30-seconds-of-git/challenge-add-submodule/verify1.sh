@@ -1,3 +1,3 @@
 #!/bin/zsh
-cd /home/labex/project/git-playground
+cd /home/labex/project/my-project
 git submodule status | grep git-playground
