@@ -24,3 +24,7 @@ git config --global help.autocorrect 1
 ```
 
 5. Try mistyping a git command, such as `git sttaus`. Git will automatically correct the command and run `git status` instead.
+
+This is the result after completing the lab:
+
+![<result>](assets/challenge-autocorrect-step1-1.jpg)
