@@ -6,27 +6,13 @@ You have been given a Git repository named `https://github.com/labex-labs/git-pl
 
 ## Example
 
-1. Clone the repository using the following command:
+1. Change into the repository directory.
 
-```shell
-git clone https://github.com/labex-labs/git-playground.git
-```
+2. Create branches called `patch-1` on the `master` branch.
 
-2. Change into the repository directory:
+3. Use a command to find all the branches containing the commit with the hash `d22f46b`:
 
-```shell
-cd git-playground
-```
+The output should be:
 
-3. Use the `git branch --contains` command to find all the branches containing the commit with the hash `3050fc0d3`:
+![<result>](assets/branches-containing-commit-step1-1.png)
 
-```shell
-git branch --contains 3050fc0d3
-```
-
-4. The output should be:
-
-```shell
-patch-1
-patch-2
-```
