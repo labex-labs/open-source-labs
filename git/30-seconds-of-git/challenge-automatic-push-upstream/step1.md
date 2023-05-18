@@ -20,6 +20,8 @@ For this challenge, you will fork the https://github.com/labex-labs/git-playgrou
 
 6. Push your changes to a new branch called `new-feature`, which does not exist in the remote repository.
 
+7. Verify that the new branch has been created on the remote repository.
+
 This is the result after completing the challenge:
 
 ![<result>](assets/challenge-automatic-push-upstream-step1-1.png)
