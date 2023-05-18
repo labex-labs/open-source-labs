@@ -17,4 +17,6 @@ cd my-project
 git submodule add https://github.com/labex-labs/git-playground.git ./git-playground
 ```
 
-This will create a new directory named `git-playground` in your local repository, which will contain the submodule from the upstream repository.
+This is the result after completing the lab:
+
+![<result>](assets/challenge-add-submodule-step1-1.png)
