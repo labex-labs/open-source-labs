@@ -16,4 +16,3 @@ Assume that you have cloned the repository `https://github.com/labex-labs/git-pl
 The output should show the new URL instead of the old one:
 
 ![<result>](assets/challenge-change-remote-url-step1-1.png)
-
