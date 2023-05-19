@@ -6,8 +6,8 @@ Suppose you are working on a project with a team of developers, and one of your 
 
 ## Example
 
-Let's say you are working on a project hosted on the `https://github.com/labex-labs/git-playground` repository. You have made some changes to the code, e.g. `Fix the bug` is added to the `README`.md file in your GitHub account, and you need to make a commit on behalf of your colleague `John Doe`, who cannot commit these changes himself.
+Let's say you are working on a project hosted on the `https://github.com/labex-labs/git-playground` repository. You have made some changes to the code, e.g. "Fix the bug" is added to the `README`.md file in your GitHub account, and you need to make a commit on behalf of your colleague John Doe, who cannot commit these changes himself.
 
-This command will create a new commit with the message `Fix the bug` and attribute it to `John Doe`:
+This command will create a new commit with the message "Fix the bug" and attribute it to John Doe:
 
 ![<result>](assets/challenge-commit-set-author-step1-1.png)
