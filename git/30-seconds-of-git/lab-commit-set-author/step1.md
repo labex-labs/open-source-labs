@@ -11,8 +11,18 @@ git commit -m < message > --author="<name> <email>"
 Let's say you are working on a project hosted on the `https://github.com/labex-labs/git-playground` repository. You have made some changes to the code, and you need to create a commit on behalf of your colleague, John Doe, who is not available to commit the changes himself. To do this, you can use the following command:
 
 ```shell
+git clone https://github.com/labex-labs/git-playground
+cd git-playground
+git config --global user.email "your email"
+git config --global user.name "your username"
+echo "Fix the network bug" > README.md
+git add .
 git add .
 git commit -m "Fix the bug" --author="John Doe <john.doe@example.com>"
 ```
 
 This command will create a new commit with the message "Fix the bug" and attribute it to John Doe.
+
+This is the finished result:
+
+![<result>](assets/challenge-commit-set-author-step1-1.png)
