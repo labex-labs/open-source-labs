@@ -6,17 +6,8 @@ Suppose you are working on a project with a team of developers, and one of your 
 
 ## Example
 
-To create a commit by a different author, you can use the following command:
+Let's say you are working on a project hosted on the `https://github.com/labex-labs/git-playground` repository. You have made some changes to the code, e.g. `Fix the bug` is added to the `README`.md file in your GitHub account, and you need to make a commit on behalf of your colleague `John Doe`, who cannot commit these changes himself.
 
-```shell
-git commit -m < message > --author="<name> <email>"
-```
+This command will create a new commit with the message `Fix the bug` and attribute it to `John Doe`:
 
-Let's say you are working on a project hosted on the `https://github.com/labex-labs/git-playground` repository. You have made some changes to the code, and you need to create a commit on behalf of your colleague, John Doe, who is not available to commit the changes himself. To do this, you can use the following command:
-
-```shell
-git add .
-git commit -m "Fix the bug" --author="John Doe <john.doe@example.com>"
-```
-
-This command will create a new commit with the message "Fix the bug" and attribute it to John Doe.
+![<result>](assets/challenge-commit-set-author-step1-1.png)
