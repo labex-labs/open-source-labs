@@ -6,33 +6,13 @@ You have just made a commit to your Git repository, but you realized that the au
 
 ## Example
 
-To change the last commit's author, you can use the `git commit --amend` command. This command allows you to modify the last commit in your Git repository. Here's an example of how you can change the author's name and email address:
+To change the last commit's author, you can use a command. This command allows you to modify the last commit in your Git repository.
 
-1. Clone the Git repository named `https://github.com/labex-labs/git-playground` to your local machine.
-
-```shell
-git clone https://github.com/labex-labs/git-playground.git
-```
-
-2. Make some changes to the files in the repository.
-
-```shell
-cd git-playground
-echo "Hello, World!" > hello.txt
-git add hello.txt
-git commit -m "Initial commit"
-```
-
-3. Use the `git commit --amend` command to modify the last commit's author.
-
-```shell
-git commit --amend --author="Duck Quackers <cool.duck@qua.ck>"
-```
-
+1. Configure Git's identity information using your GitHub account.
+2. Make some changes to the files in the repository. For example, add the text `Hello, World` to the file `hello`.txt and create a new commit with the commit message set to `Initial commit`.
+3. Use a command to change the author of the last commit to `Duck Quackers`, whose email address is `cool.duck@qua.ck`.
 4. Verify that the author's information has been updated.
 
-```shell
-git log
-```
+You should see that the last commit's author is now `Duck Quackers`:
 
-You should see that the last commit's author is now `Duck Quackers`.
+![<result>](assets/challenge-commit-amend-author-step1-1.png)
