@@ -17,7 +17,6 @@ git config --global user.email "your email"
 git config --global user.name "your username"
 echo "Fix the network bug" > README.md
 git add .
-git add .
 git commit -m "Fix the bug" --author="John Doe <john.doe@example.com>"
 ```
 
