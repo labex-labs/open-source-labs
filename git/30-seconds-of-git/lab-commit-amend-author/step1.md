@@ -17,7 +17,7 @@ echo "Hello, World" > hello.txt
 git add hello.txt
 git commit -m "Initial commit"
 ```
-3. Use the `git commit --amend` command to modify the last commit's author:
+3. Use the `git commit --amend` command to modify the last commit's author and save the contents:
 ```shell
 git commit --amend --author="Duck Quackers <cool.duck@qua.ck>"
 ```
