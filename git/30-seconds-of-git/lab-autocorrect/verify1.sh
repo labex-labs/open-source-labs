@@ -1,3 +1,4 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git config"
-cat ~/.zsh_history | grep -v grep | grep "git sttaus"
+cd /home/labex/project/git-playground
+git sttaus | grep "On branch"
+
