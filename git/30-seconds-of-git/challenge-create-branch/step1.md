@@ -3,7 +3,7 @@
 ## Problem
 
 You are working on a project in a Git repository named `https://github.com/labex-labs/git-playground`. You need to create a new branch named `feature-1` to work on a new feature.
-
+  
 ## Example
 
 1. Clone the repository:
