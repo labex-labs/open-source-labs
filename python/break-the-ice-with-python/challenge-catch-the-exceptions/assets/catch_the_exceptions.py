@@ -7,18 +7,14 @@ def divide():
     Returns:
     expression: a non-zero number divided by 0.
     """
+    try:
+        result = 1 / 0
+        return result
+    except ZeroDivisionError:
+        print("Error: Division by zero occurred.")
+        return None
 
-    # TODO: implement this function
-    # Note: Do not change the existing code
-
-    pass
-
-
-pass
-
-"""TODO
-
-Catch and handle exceptions with try except blocks
-"""
-
-# Note: The specific exception type is 'ZeroDivisionError'
+ 
+result = divide()
+if result is not None:
+    print("Result:", result)
