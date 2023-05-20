@@ -1,4 +1,4 @@
 #!/bin/zsh
 cd /home/labex/project/git-playground
-git config --list | grep "user.email=jane.doe@example.com" | grep "user.name=Jane Doe"
+if git config --list | grep -q "user.email=jane.doe@example.com" && git config --list | grep -q "user.name=Jane Doe"; then echo "True"; fi
    
