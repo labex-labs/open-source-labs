@@ -1,11 +1,11 @@
 # Create a New Branch
 
-You are working on a project in a Git repository named `https://github.com/labex-labs/git-playground`. You need to create a new branch named `feature-1` to work on a new feature.
+For this lab, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.You are working on a project in a Git repository named `https://github.com/your-username/git-playground`. You need to create a new branch named `feature-1` to work on a new feature.
 
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/labex-labs/git-playground.git
+git clone https://github.com/your-username/git-playground.git
 ```
 
 2. Navigate to the repository directory:
@@ -32,15 +32,13 @@ git checkout -b feature-1
 git branch
 ```
 
-6. Make changes to the code and commit them:
-
-```shell
-git add .
-git commit -m "Added new feature"
-```
-
-7. Push the changes to the remote repository:
+6. Push the changes to the remote repository:
 
 ```shell
 git push -u origin feature-1
 ```
+
+This is what happens when you run the `git branch -r` command:
+
+![<result>](assets/challenge-create-branch-step1-1.png)
+
