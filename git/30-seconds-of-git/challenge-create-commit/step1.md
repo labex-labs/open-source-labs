@@ -8,7 +8,7 @@ You have made some changes to your code and want to save them as a snapshot in y
 
 To create a commit, you first need to stage the changes you want to include in the commit. Let's assume you have cloned the `https://github.com/labex-labs/git-playground` repository and made some changes to the `README.md` file. To create a commit with the message "Update README.md", follow these steps:
 
-1. Stage the changes using the `git add` command:
+1. Add "hello" to the `README`.md file and stage the changes using the `git add` command:
 
    ```
    git add README.md
