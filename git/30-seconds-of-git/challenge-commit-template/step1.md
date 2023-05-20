@@ -6,7 +6,7 @@ Without a commit message template, developers may be tempted to write vague or u
 
 ## Example
 
-For this challenge, fork the Git repository named "https://github.com/labex-labs/git-playground" into your GitHub account.
+For this challenge, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.
 
 1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
 2. Configure your GitHub account and navigate to the repository directory.
