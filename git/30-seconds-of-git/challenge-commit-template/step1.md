@@ -6,9 +6,9 @@ Without a commit message template, developers may be tempted to write vague or u
 
 ## Example
 
-For this challenge, fork the Git repository named "https://github.com/labex-labs/git-playground" into your GitHub account.
+For this challenge, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.
 
-1. Cloning the repository to your local machine from `https://github.com/your-username/git-playground`.
+1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
 2. Configure your GitHub account and navigate to the repository directory.
 3. Create a new file named `commit-template` in the repository directory.
 4. Open the `commit-template` file in a text editor and add the following lines:
@@ -39,7 +39,7 @@ Add a new line to the README.md file with the text "test", to test the Git commi
 11. Give your account permissions to the environment.
 12. Push your changes to the remote repository.
 
-Checking with `git log --oneline origin/master` gives the following results:
+Check with `git log --oneline origin/master` gives the following results:
 
 ![<result>](assets/challenge-commit-template-step1-1.png)
 
