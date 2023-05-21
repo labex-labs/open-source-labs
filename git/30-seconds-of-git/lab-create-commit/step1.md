@@ -13,6 +13,7 @@ For this lab, fork the Git repository named `https://github.com/labex-labs/git-p
    ```
    git config --global user.name "your-name"
    git config --global user.email "your-email"
+   ```
 3. Stage the changes using the `git add` command:
    ```
    echo "hello" > README.md
