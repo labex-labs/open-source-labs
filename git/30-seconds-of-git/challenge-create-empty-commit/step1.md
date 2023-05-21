@@ -17,6 +17,6 @@ For this challenge, fork the Git repository named `https://github.com/labex-labs
 3. Use a command to create an empty commit with the message "Empty commit".
 4. Verify that the empty commit was created.
 
-This is where you run `git log --name-status HEAD^. .HEAD` and the result:
+This is where you run `git log --name-status HEAD^..HEAD` and the result:
 
 ![<result>](assets/challenge-create-empty-commit-step1-1.png)
