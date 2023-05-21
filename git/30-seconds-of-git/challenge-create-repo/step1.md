@@ -23,6 +23,7 @@ Let's say you want to clone the Git repository named `https://github.com/labex-l
 Here are the finished results:
 
 ![<result>](assets/challenge-create-repo-step1-1.png)
+![<result>](assets/challenge-create-repo-step1-2.png)
 
 
 
