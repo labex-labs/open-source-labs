@@ -1,3 +1,2 @@
 #!/bin/zsh
-command=$(history | tail -n 2 | head -n 1);
-[ "${command#git rev-parse --abbrev-ref HEAD}" != "$command" ] && [ "$(git rev-parse --abbrev-ref HEAD)" = "feature-branch" ] && echo "True"
+(cd /home/labex/project/git-playground && cat ~/.zsh_history | grep -v grep | grep "git rev-parse --abbrev-ref HEAD") && (cd /home/labex/project/git-playground && git rev-parse --abbrev-ref HEAD | grep "feature-branch") && echo "True"
