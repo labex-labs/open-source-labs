@@ -1,0 +1,1 @@
+# Static Method of Class

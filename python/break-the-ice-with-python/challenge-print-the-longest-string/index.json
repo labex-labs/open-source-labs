@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Print the Longest String",
+  "description": "A sentence or two",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Print the Longest String",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing print_the_longest_string.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/len",
+          "python/input",
+          "python/print"
+        ],
+        "solutions": [
+          "print_the_longest_string.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "print_the_longest_string.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
