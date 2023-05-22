@@ -6,13 +6,12 @@ You have created a local branch in your Git repository, and you no longer need i
 
 ## Example
 
-1. Clone the `git-playground` repository from `https://github.com/labex-labs/git-playground.git`.
-2. Navigate to the cloned repository.
-3. Create a new branch named `feature-1`.
-4. View current branches.
-5. Switch back to the `master` branch.
-6. Delete the `feature-1` branch.
-7. Verify that the branch has been deleted.
+1. Navigate to the cloned repository.
+2. Create a new branch named `feature-1`.
+3. View current branches.
+4. Switch back to the `master` branch.
+5. Delete the `feature-1` branch.
+6. Verify that the branch has been deleted.
 
 Output:
 
