@@ -5,4 +5,5 @@ def find_runner_up_scores():
     arr = sorted(arr)
     print(arr[-2])
 
+
 find_runner_up_scores()
