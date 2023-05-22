@@ -1,4 +1,4 @@
-def ASCIItoUTf8():
+def ascii_to_utf_8():
     pass
 
     """A function that read an ASCII string and to convert it to a unicode string encoded by utf-8
@@ -20,4 +20,4 @@ def ASCIItoUTf8():
     # Note: Do not change the existing code
 
 
-ASCIItoUTf8()
+ascii_to_utf_8()

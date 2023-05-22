@@ -4,7 +4,7 @@ import sys
 
 sys.path.append("/home/labex/project")
 
-from get_email_username import GetEmailUsername
+from get_email_username import get_email_username
 
 class TestGetEmailUsername(unittest.TestCase):
     def test_get_email_username(self):
@@ -15,7 +15,7 @@ class TestGetEmailUsername(unittest.TestCase):
         # Redirect standard input to simulate user input
         with patch('builtins.input', return_value=user_input):
             # Call the function and check the output
-            self.assertEqual(GetEmailUsername(), expected_output)
+            self.assertEqual(get_email_username(), expected_output)
 
 
 if __name__ == '__main__':

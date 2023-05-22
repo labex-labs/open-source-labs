@@ -1,7 +1,7 @@
 import re
 
 
-def GetDigitWords():
+def get_digit_words():
     pass
 
     """A function that returns the words composed of digits only
@@ -20,4 +20,4 @@ def GetDigitWords():
     # Note: Do not change the existing code
 
 
-GetDigitWords()
+get_digit_words()

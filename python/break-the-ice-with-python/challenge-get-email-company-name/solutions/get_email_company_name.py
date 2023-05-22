@@ -1,6 +1,6 @@
 import re
 
-def GetEmailCompanyName():
+def get_email_company_name():
     email = input()
     pattern = "\w+@(\w+).com"
     ans = re.findall(pattern, email)
@@ -8,4 +8,4 @@ def GetEmailCompanyName():
 
     return ans
 
-GetEmailCompanyName()
+get_email_company_name()

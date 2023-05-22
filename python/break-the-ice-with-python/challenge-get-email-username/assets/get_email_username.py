@@ -1,4 +1,4 @@
-def GetEmailUsername():
+def get_email_username():
     pass
 
     """A function that returns the email username
@@ -20,4 +20,4 @@ def GetEmailUsername():
     # Note: Do not change the existing code
 
 
-GetEmailUsername()
+get_email_username()

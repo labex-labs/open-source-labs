@@ -1,4 +1,4 @@
-def GetDigitWords():
+def get_digit_words():
     words = input().split()
     ans = []
     for word in words:
@@ -9,4 +9,4 @@ def GetDigitWords():
     return ans
 
 
-GetDigitWords()
+get_digit_words()

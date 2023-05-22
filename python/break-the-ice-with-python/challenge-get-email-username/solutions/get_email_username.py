@@ -1,4 +1,4 @@
-def GetEmailUsername():
+def get_email_username():
     email = input()
     email = email.split('@')
     print(email[0])
@@ -6,4 +6,4 @@ def GetEmailUsername():
     return email[0]
 
 
-GetEmailUsername()
+get_email_username()
