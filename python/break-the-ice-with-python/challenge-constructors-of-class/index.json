@@ -1,0 +1,58 @@
+{
+  "type": "challenge",
+  "title": "Constructors of Class",
+  "description": "A sentence or two",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Constructors of Class",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing constructors_of_class.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/attributes",
+          "python/round"
+        ],
+        "solutions": [
+          "constructors_of_class.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "constructors_of_class.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

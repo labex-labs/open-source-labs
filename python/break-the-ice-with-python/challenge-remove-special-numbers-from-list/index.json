@@ -1,0 +1,54 @@
+{
+  "type": "challenge",
+  "title": "Remove Special Numbers from List",
+  "description": "In this challenge, you will write a program to print the list after removing numbers which are divisible by 5 and 7 in [12,24,35,70,88,120,155].",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Remove Special Numbers from List",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing remove_special_numbers_from_list.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/list_comprehension",
+          "python/print"
+        ],
+        "solutions": ["remove_special_numbers_from_list.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "remove_special_numbers_from_list.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}

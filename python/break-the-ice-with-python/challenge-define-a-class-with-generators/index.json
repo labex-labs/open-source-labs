@@ -1,0 +1,58 @@
+{
+  "type": "challenge",
+  "title": "Define a Class with Generators",
+  "description": "A sentence or two",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Define a Class with Generators",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing define_a_class_with_generators.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/generator",
+          "python/class",
+          "python/method_objects",
+          "python/yield_values",
+          "python/int"
+        ],
+        "solutions": [
+          "define_a_class_with_generators.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "define_a_class_with_generators.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  }
+}
