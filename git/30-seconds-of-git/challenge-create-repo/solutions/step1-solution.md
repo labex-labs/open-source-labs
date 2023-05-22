@@ -9,6 +9,4 @@ git init # Initializes a repo in /home/labex/project/my_project
 cd /home/labex/project
 git init my_project # Initializes a repo in /home/labex/project/my_project
 
-cd /home/labex/project
-git clone https://github.com/labex-labs/git-playground
 ```
