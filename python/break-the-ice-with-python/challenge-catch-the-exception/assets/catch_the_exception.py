@@ -9,6 +9,7 @@ def divide():
     """
 
     # TODO: implement this function
+
     # Note: Do not change the existing code
 
     pass
@@ -16,9 +17,8 @@ def divide():
 
 pass
 
-"""TODO
+# TODO: catch and handle exceptions with try except blocks
 
-Catch and handle exceptions with try except blocks
-"""
+# Hints: use "try/except" to catch exceptions
 
 # Note: The specific exception type is 'ZeroDivisionError'

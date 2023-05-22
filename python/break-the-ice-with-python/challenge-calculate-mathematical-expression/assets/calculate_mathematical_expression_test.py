@@ -6,7 +6,7 @@ from calculate_mathematical_expression import calculate_mathematical_expression
 
 
 class TestGenerate(unittest.TestCase):
-    def test_generate(self):
+    def test_calculate_mathematical_expression(self):
         # Test case 1: user_input = '2 + 2'
         user_input = '2 + 2'
         expected_output = 4
