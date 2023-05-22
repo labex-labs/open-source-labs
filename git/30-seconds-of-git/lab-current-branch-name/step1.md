@@ -10,16 +10,16 @@ To check the current branch, you can use the following command:
 git rev-parse --abbrev-ref HEAD
 ```
 
-This will print the name of the current branch to the console. For example, if you're currently on the `main` branch, the output will be:
+This will print the name of the current branch to the console. For example, if you're currently on the `master` branch, the output will be:
 
 ```shell
-main
+master
 ```
 
 If you switch to a different branch, such as `feature-branch`, the output will change accordingly:
 
 ```shell
-git checkout feature-branch
+git checkout -b feature-branch
 git rev-parse --abbrev-ref HEAD
 ```
 
