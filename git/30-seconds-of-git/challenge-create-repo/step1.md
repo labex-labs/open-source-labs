@@ -1,7 +1,7 @@
 # Create a New Repository
 
 ## Problem
-  
+
 You have been tasked with creating a new Git repository for a project. You need to set up all the configuration files needed by Git and ensure that the repository is properly initialized.
 
 ## Example
@@ -16,6 +16,3 @@ Suppose you want to create a new Git repository for a project called `my_project
 There is the finished result:
 
 ![<result>](assets/challenge-create-repo-step1-2.png)
-
-
-
