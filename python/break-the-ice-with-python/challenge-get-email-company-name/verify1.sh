@@ -1,5 +1,5 @@
 #!/bin/zsh
 
 cd /tmp 
-echo "john@google.com" | python3 get_email_company_name.py
+echo "john@google.com" | python3 *_test.py
 

@@ -1,7 +1,6 @@
 from unittest.mock import patch
 import unittest
 import sys
-import re
 
 sys.path.append("/home/labex/project")
 
@@ -19,4 +18,4 @@ class TestGetEmailUsername(unittest.TestCase):
             self.assertEqual(GetDigitWords(), expected_output)
 
 if __name__ == '__main__':
-    unittest.main(argv=['first-arg-is-ignored'], exit=False)
+    unittest.main()

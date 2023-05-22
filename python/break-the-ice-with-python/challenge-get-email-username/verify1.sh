@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd /tmp                                                                                                           
-python3 get_email_username.py
+echo "john@google.com" | python3 *_test.py
