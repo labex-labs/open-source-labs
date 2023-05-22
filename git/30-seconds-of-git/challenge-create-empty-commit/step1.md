@@ -4,13 +4,13 @@
 
 You need to create an empty commit in your Git repository. This can be useful in several scenarios, such as:
 
-- Triggering a build process  
+- Triggering a build process
 - Creating a placeholder commit
 - Marking a specific point in the repository's history
 
 ## Example
 
-For this challenge, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.Configure your github account in the environment.You will use the Git repository named `https://github.com/your-username/git-playground` directory. 
+For this challenge, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.Configure your github account in the environment.You will use the Git repository named `https://github.com/your-username/git-playground` directory.
 
 1. Clone the repository to your local machine.
 2. Navigate to the repository's directory and configure your github account in the environment.
