@@ -1,4 +1,4 @@
-def ASCIItoUTf8():
+def ascii_to_utf_8():
     s = input()
     u = s.encode('utf-8')
     print(u)
@@ -6,4 +6,4 @@ def ASCIItoUTf8():
     return u
 
 
-ASCIItoUTf8()
+ascii_to_utf_8()
