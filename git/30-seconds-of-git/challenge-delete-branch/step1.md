@@ -6,7 +6,7 @@ You have created a local branch in your Git repository, and you no longer need i
 
 ## Example
 
-1. Clone the `git-playground` repository.
+1. Clone the `git-playground` repository from `https://github.com/labex-labs/git-playground.git`.
 2. Navigate to the cloned repository.
 3. Create a new branch named `feature-1`.
 4. View current branches.
