@@ -1,5 +1,5 @@
 ```shell
-git checkout -b < branch > [-t < remote > / < branch > ]  
+git checkout -b < branch > [-t < remote > / < branch > ]
 ```
 
 ```shell
