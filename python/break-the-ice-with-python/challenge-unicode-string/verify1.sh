@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-cd /tmp && python3 unicode_string_test.py
+cd /tmp && python3 *_test.py

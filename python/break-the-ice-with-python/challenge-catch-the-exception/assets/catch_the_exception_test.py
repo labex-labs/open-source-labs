@@ -3,7 +3,7 @@ import sys
 
 sys.path.append("/home/labex/project")
 
-from catch_the_exceptions import divide
+from catch_the_exception import divide
 
 
 class TestDivideFunction(unittest.TestCase):

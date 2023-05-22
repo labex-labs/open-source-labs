@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd /tmp 
-python3 get_digit_words_test.py
+echo "2 cats and 3 dogs." | python3 *_test.py
