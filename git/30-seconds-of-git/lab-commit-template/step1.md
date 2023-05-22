@@ -25,6 +25,7 @@ For this lab, fork the Git repository named `https://github.com/labex-labs/git-p
 8. Use the command `git add README.md` to stage the change.
 9. Use the command `git commit` to open the commit message editor.
 10. Please note that the submission message editor now includes the submission message template you created in step 4. Fill in the template with a description of the type, subject, body and footer of your changes, e.g:
+
 ```
 feat: Add test to README.md
 
@@ -34,6 +35,7 @@ Add a new line to the README.md file with the text "test", to test the Git commi
 
 # Related issue(s): none
 ```
+
 11. Save and close the commit message editor.
 12. Give your account permissions to the environment.
 13. Use the command `git push` to push your changes to the remote repository.
