@@ -1,7 +1,7 @@
 import ast
 import unittest
 
-file_path = 'E:\\VSCode\\github\\open-source-challenges\\python\\break-the-ice-with-python\\challenge-print-some-python-documents\\assets\\print_some_python_documents.py'
+file_path = '/home/labex/project/print_some_python_documents.py'
 
 class DocStringVisitor(ast.NodeVisitor):
     def __init__(self):

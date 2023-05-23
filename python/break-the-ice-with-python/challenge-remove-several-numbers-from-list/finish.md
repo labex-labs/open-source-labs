@@ -1,1 +1,2 @@
 # Summary
+ The program takes a list of numbers and removes the 2nd to 4th numbers using list comprehension. The resulting list is printed as output. The program also provides hints on using list comprehension and the `enumerate()` function to delete elements from a list.

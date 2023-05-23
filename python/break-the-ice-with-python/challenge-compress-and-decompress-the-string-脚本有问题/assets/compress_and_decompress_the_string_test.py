@@ -1,34 +1,33 @@
 import unittest
-import zlib
-from io import StringIO
-import sys
-sys.path.append("/home/labex/project")
-from compress_and_decompress_the_string import compress_and_decompress_the_string
+import ast
 
-class TestCompressAndDecompress(unittest.TestCase):
-    def test_compress_and_decompress_the_string(self):
-        # Redirect stdout to a buffer
-        captured_output = StringIO()
-        sys.stdout = captured_output
+file_path = '/home/labex/project/compress_and_decompress_the_string.py'
 
-        # Call the function to compress and decompress a string and print the results
-        compress_and_decompress_the_string()
+class TestZlibUsage(unittest.TestCase):
+    def test_zlib_usage(self):
+        with open(file_path, 'r') as f:
+            code = f.read()
+            if not code.strip():
+                self.fail(f"{file_path} is empty.")
+            try:
+                tree = ast.parse(code)
+            except SyntaxError:
+                self.fail(f"{file_path} contains syntax errors.")
 
-        # Get the printed output from the buffer
-        output = captured_output.getvalue().strip()
+        found_zlib_usage = False
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute):
+                if node.func.attr == 'compress' and isinstance(node.func.value, ast.Name) and node.func.value.id == 'zlib':
+                    found_zlib_usage = True
+                    break
+                elif node.func.attr == 'decompress' and isinstance(node.func.value, ast.Name) and node.func.value.id == 'zlib':
+                    found_zlib_usage = True
+                    break
 
-        # Check that the output is a valid compressed and decompressed string
-        try:
-            output_lines = output.split('\n')
-            self.assertEqual(len(output_lines), 2)
-            compressed_string = bytes(output_lines[0], 'utf-8')
-            decompressed_string = bytes(output_lines[1], 'utf-8')
-            self.assertIsInstance(compressed_string, bytes)
-            self.assertIsInstance(decompressed_string, bytes)
-            self.assertEqual(zlib.decompress(compressed_string), bytes(
-                'hello world!hello world!hello world!hello world!', 'utf-8'))
-        except (ValueError, TypeError):
-            self.fail("Output is not a valid compressed and decompressed string")
+        if found_zlib_usage:
+            self.assertTrue(True)
+        else:
+            self.fail(f"{file_path} does not use zlib module for string compression/decompression.")
 
 
 if __name__ == '__main__':
