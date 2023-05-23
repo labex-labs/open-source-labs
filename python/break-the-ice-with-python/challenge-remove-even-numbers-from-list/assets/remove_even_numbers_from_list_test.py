@@ -20,7 +20,8 @@ class TestRemoveEvenNumbers(unittest.TestCase):
         # Check that the output is a valid list of odd numbers
         try:
             odd_numbers = re.findall(r'\d+', output)
-            print(odd_numbers)
+            if len(odd_numbers) == 0:
+                self.fail("Output is empty")
             for number in odd_numbers:
                 self.assertTrue(int(number) % 2 != 0)
         except (ValueError, TypeError):

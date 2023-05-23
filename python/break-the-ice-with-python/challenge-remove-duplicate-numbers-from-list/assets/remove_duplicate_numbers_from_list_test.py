@@ -23,6 +23,8 @@ class TestRemoveDuplicatesFromList(unittest.TestCase):
         try:
             numbers = list(map(int, re.findall(r'\d+', output)))
             expected = [12, 24, 35, 88, 120, 155]
+            if len(numbers) == 0:
+                self.fail("Output is empty")
             for number in numbers:
                 self.assertIn(number, expected)
         except (ValueError, TypeError):

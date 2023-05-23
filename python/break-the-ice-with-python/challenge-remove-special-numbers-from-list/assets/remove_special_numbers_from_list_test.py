@@ -20,6 +20,8 @@ class TestRemoveSpecialNumbers(unittest.TestCase):
         # Check that the output is a valid list of numbers
         try:
             numbers = re.findall(r'\d+', output)
+            if len(numbers) == 0:
+                self.fail("Output is empty")
             for number in numbers:
                 self.assertTrue(int(number) % 35 != 0)
         except (ValueError, TypeError):
