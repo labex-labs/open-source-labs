@@ -152,6 +152,7 @@ class Sync:
                 "Jquery": "jQuery",
                 "Javascript": "JavaScript",
                 "Es6": "ES6",
+                "Js": "JavaScript",
             }
             if lab_direction in directions_map.keys():
                 lab_direction = directions_map[lab_direction]
