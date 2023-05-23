@@ -4,9 +4,7 @@ Write a program to read an ASCII string and to convert it to a unicode string en
 
 ## Preparation
 
-Before we start writing the code, we should open the `ascii_to_utf_8.py` file in WebIDE.
-
-File path is `/home/labex/project/ascii_to_utf_8.py`
+Before we start writing the code, we should open the `/home/labex/project/ascii_to_utf_8.py` file in WebIDE.
 
 ## Start writing code
 
