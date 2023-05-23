@@ -1,6 +1,3 @@
-import re
-
-
 def get_digit_words():
     pass
 
