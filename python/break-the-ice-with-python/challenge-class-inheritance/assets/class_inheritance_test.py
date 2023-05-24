@@ -1,8 +1,10 @@
 import unittest
 import sys
+
 # Add the path to the project directory
 sys.path.append("/home/labex/project")
 from class_inheritance import Person, Male, Female
+
 
 class TestPerson(unittest.TestCase):
     def test_person(self):
@@ -20,5 +22,6 @@ class TestPerson(unittest.TestCase):
         female = Female()
         self.assertEqual(female.getGender(), "Female")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

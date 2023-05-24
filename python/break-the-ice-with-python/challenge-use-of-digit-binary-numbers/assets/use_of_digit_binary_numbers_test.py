@@ -8,6 +8,7 @@ sys.path.append("/home/labex/project")
 # Import the code to be tested
 from use_of_digit_binary_numbers import use_of_digit_binary_numbers
 
+
 class TestYour(unittest.TestCase):
     def test_output(self):
         # Redirect standard input and output to buffer
@@ -17,7 +18,7 @@ class TestYour(unittest.TestCase):
         sys.stdout = StringIO()
 
         # Input test data
-        test_input = '1010,10100,111111,1001,1100\n'
+        test_input = "1010,10100,111111,1001,1100\n"
         sys.stdin.write(test_input)
         sys.stdin.seek(0)
 
@@ -30,8 +31,9 @@ class TestYour(unittest.TestCase):
         sys.stdout = stdout
 
         # Check if the output matches the expected result
-        expected_output = '1010,10100\n'
+        expected_output = "1010,10100\n"
         self.assertEqual(output, expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

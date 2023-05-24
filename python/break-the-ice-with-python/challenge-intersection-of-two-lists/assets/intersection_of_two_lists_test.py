@@ -1,6 +1,7 @@
 import unittest
 import re
 import sys
+
 # Add the path to the project directory
 sys.path.append("/home/labex/project")
 from io import StringIO
@@ -21,14 +22,14 @@ class TestIntersectionOfLists(unittest.TestCase):
 
         # Check that the output is a valid list of numbers
         try:
-            numbers = list(map(int, re.findall(r'\d+', output)))
+            numbers = list(map(int, re.findall(r"\d+", output)))
             expected = [35]
             self.assertListEqual(numbers, expected)
         except (ValueError, TypeError):
             self.fail("Output is not a valid list of numbers")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Add the path to the project directory
     sys.path.append("/home/labex/project")
     unittest.main()

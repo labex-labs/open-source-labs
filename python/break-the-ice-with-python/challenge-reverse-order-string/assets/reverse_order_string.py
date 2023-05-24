@@ -16,4 +16,5 @@ def reverse_order_string():
 
     # Note: Do not change the existing code
 
+
 reverse_order_string()

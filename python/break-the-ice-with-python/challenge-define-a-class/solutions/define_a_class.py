@@ -1,4 +1,4 @@
-class IOstring():
+class IOstring:
     def __init__(self):
         self.s = ""
 

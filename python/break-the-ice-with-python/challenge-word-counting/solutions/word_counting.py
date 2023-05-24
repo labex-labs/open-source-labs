@@ -12,7 +12,7 @@ def word_counting():
 
     print(len(word_list))
     for word in word_list:
-        print(word_dict[word], end=' ')
+        print(word_dict[word], end=" ")
 
 
 word_counting()
