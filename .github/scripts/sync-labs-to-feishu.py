@@ -231,6 +231,10 @@ class Sync:
         records = self.feishu.get_bitable_records(
             self.app_token, self.table_id, params=""
         )
+        print(f"Found {len(records)} labs in Feishu.")
+        # Drop Duplicate records
+        records = list({v["fields"]["PATH"]: v for v in records}.values())
+        print(f"Found {len(records)} labs in Feishu after deduplication.")
         # Make a dict of path and record_id and repo_name
         path_dicts = {
             r["fields"]["PATH"]: {
@@ -239,7 +243,6 @@ class Sync:
             }
             for r in records
         }
-        print(f"Found {len(path_dicts)} labs in Feishu, start syncing...")
         # Get all skills from feishu
         skills = self.feishu.get_bitable_records(
             self.app_token, self.skills_table_id, params=""
