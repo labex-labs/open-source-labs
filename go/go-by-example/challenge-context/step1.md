@@ -1,4 +1,4 @@
-#  Context
+# Context
 
 ## Problem
 
