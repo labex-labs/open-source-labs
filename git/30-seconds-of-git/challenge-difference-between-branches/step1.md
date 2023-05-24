@@ -1,4 +1,4 @@
-# Git Challenge: View Difference Between Two Branches
+# Difference Between Branches
 
 ## Problem
 
