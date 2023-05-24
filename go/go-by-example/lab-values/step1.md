@@ -1,4 +1,4 @@
-# Golang Value Types Challenge
+# Value Types
 
 ## Problem
 
