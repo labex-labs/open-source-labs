@@ -6,13 +6,8 @@ You have been working on a project in a Git repository and have created multiple
 
 ## Example
 
-To complete this challenge, you will use the Git repository named `https://github.com/labex-labs/git-playground`. Follow the steps below:
+To complete this challenge, you will use the Git repository named `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Navigate to the repository directory using the command `cd git-playground`.
-3. Create a new file in the repository directory using the command `touch newfile.txt`.
-4. Add the new file to the staging area using the command `git add newfile.txt`.
-5. Create a stash using the command `git stash save "new file added"`.
-6. Repeat steps 3-5 to create multiple stashes.
-7. Delete all stashes using the command `git stash clear`.
-8. Verify that all stashes have been deleted using the command `git stash list`.
+1. See the current stash.
+2. Delete all stashes using the command.
+3. Verify that all stashes have been deleted.
