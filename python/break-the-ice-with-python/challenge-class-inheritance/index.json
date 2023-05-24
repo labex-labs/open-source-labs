@@ -1,0 +1,56 @@
+{
+  "type": "challenge",
+  "title": "Class Inheritance",
+  "description": "In this challenge, you will define a class Person and its two child classes: Male and Female.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Class Inheritance",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing class_inheritance.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/inheritance",
+          "python/method_objects",
+          "python/return_values",
+          "python/print"
+        ],
+        "solutions": ["class_inheritance.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "class_inheritance.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Print Evenly Indexed Characters",
+  "description": "In this challenge, you will write a program which accepts a string from console and print the characters that have even indexes.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Print Evenly Indexed Characters",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing print_evenly_indexed_characters.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/list_comprehension",
+          "python/manipulating_strings",
+          "python/range",
+          "python/len",
+          "python/math_operator"
+        ],
+        "solutions": ["print_evenly_indexed_characters.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "print_evenly_indexed_characters.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

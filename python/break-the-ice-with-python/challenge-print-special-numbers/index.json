@@ -1,0 +1,59 @@
+{
+  "type": "challenge",
+  "title": "Print Special Numbers",
+  "description": "In this challenge, you will write a program using generator to print the numbers which can be divisible by 5 and 7 between 0 and n.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Print Special Numbers",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing print_special_numbers.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/yield_values",
+          "python/input",
+          "python/print",
+          "python/list_comprehension",
+          "python/str",
+          "python/range",
+          "python/for_loop"
+        ],
+        "solutions": ["print_special_numbers.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "print_special_numbers.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

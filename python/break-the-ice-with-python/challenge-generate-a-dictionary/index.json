@@ -1,0 +1,58 @@
+{
+  "type": "challenge",
+  "title": "Generate a Dictionary",
+  "description": "A sentence or two",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate a Dictionary",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing generate_a_dictionary.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/dict",
+          "python/list_comprehension",
+          "python/input",
+          "python/int",
+          "python/range"
+        ],
+        "solutions": [
+          "generate_a_dictionary.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "generate_a_dictionary.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Calculate the Factorial",
+  "description": "A sentence or two",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Calculate the Factorial",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing calculate_the_factorial.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/range",
+          "python/input",
+          "python/int",
+          "python/math_operator"
+        ],
+        "solutions": [
+          "calculate_the_factorial.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "calculate_the_factorial.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

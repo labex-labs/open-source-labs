@@ -1,0 +1,55 @@
+{
+  "type": "challenge",
+  "title": "the Frequency of the Words",
+  "description": "A sentence or two",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "the Frequency of the Words",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing the_frequency_of_the_words.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/sorted",
+          "python/set",
+          "python/input",
+          "python/print"
+        ],
+        "solutions": ["the_frequency_of_the_words.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "the_frequency_of_the_words.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

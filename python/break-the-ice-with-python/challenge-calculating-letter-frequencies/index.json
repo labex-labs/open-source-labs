@@ -1,0 +1,56 @@
+{
+  "type": "challenge",
+  "title": "Calculating Letter Frequencies",
+  "description": "In this challenge, your task is to count the frequency of letters of the given string and print the letters in descending order of frequency.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Calculating Letter Frequencies",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing calculating_letter_frequencies.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/lambda_function",
+          "python/dict",
+          "python/sorted",
+          "python/input",
+          "python/print"
+        ],
+        "solutions": ["calculating_letter_frequencies.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "calculating_letter_frequencies.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
