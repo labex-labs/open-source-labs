@@ -24,12 +24,12 @@ Suppose that a GitHub repository called `git-playground` has been cloned from yo
    origin/master
    origin/feature-branch
    ```
-3. Use the `git push -d <remote> <branch>` command to delete the specified remote `<branch>` on the given `<remote>`.
+4. Use the `git push -d <remote> <branch>` command to delete the specified remote `<branch>` on the given `<remote>`.
    ```shell
    git push -d origin feature-branch
    ```
    This command deletes the `feature-branch` remote branch on the `origin` remote repository.
-4. Use the `git branch -r` command again to verify that the remote branch has been deleted.
+5. Use the `git branch -r` command again to verify that the remote branch has been deleted.
    ```shell
    git branch -r
    ```
