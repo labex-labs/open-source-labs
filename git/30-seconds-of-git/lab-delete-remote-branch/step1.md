@@ -9,19 +9,20 @@ Suppose that a GitHub repository called `git-playground` has been cloned from yo
    git clone https://github.com/your-username/git-playground.git
    cd git-playground
    ```
-2. Use the `git branch -r` command to list all the remote branches.
+2. Add the `feature-branch` branch to the `origin` remote repository:
+   ```shell
+   git checkout -b feature-branch
+   git push -u origin feature-branch
+   ```
+3. Use the `git branch -r` command to list all the remote branches.
    ```shell
    git branch -r
    ```
    The output should include the `feature-branch` remote branch:
    ```
-   origin/HEAD -> origin/main
+   origin/HEAD -> origin/master
    origin/master
-   ```
-3. Add the `feature-branch` branch to the `origin` remote repository:
-   ```shell
-   git checkout -b feature-branch
-   git push -u origin feature-branch
+   origin/feature-branch
    ```
 3. Use the `git push -d <remote> <branch>` command to delete the specified remote `<branch>` on the given `<remote>`.
    ```shell
