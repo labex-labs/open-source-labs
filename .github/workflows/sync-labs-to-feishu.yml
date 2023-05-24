@@ -1,6 +1,8 @@
 name: sync-labs-to-feishu
 
 on:
+  schedule:
+    - cron: "0 1/6 * * *"
   workflow_dispatch:
 
 jobs:
