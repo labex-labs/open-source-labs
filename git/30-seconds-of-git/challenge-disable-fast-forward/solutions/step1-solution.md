@@ -3,7 +3,8 @@ git config [--global] --add merge.ff false
 ```
 
 ```shell
-git config --global --add merge.ff false
+git config --global --add merge.ff false 
+
 
 git checkout master
 git merge my-branch

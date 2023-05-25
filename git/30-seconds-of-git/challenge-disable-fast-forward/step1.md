@@ -3,8 +3,8 @@
 ## Problem
 
 By default, Git uses fast forward merging to merge branches that have no divergent commits. This means that if you have a branch with no new commits, Git will simply move the pointer of the branch you are merging into to the latest commit of the branch you are merging from. While this can be useful in some cases, it can also cause issues, especially when working on larger projects with multiple contributors. For example, if two developers are working on the same branch and both make changes, fast forward merging can cause conflicts that are difficult to resolve.
-
-## Example
+   
+## Example 
 
 To disable fast forward merging, you can use the `git config` command. First, clone the `git-playground` repository:
 
