@@ -6,7 +6,7 @@ Suppose you are working on a project with a team of developers, and the project 
 
 ## Example
 
-To demonstrate how to fetch the latest changes from a remote repository, we will use the `git-playground` repository hosted on GitHub. 
+You will use the `git-playground` repository hosted on GitHub. 
 
 1. Change your working directory to the `git-playground` directory.
 2. Fetch the latest changes from the remote repository.
