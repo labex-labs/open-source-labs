@@ -1,0 +1,53 @@
+{
+  "type": "lab",
+  "title": "Generate a Number List",
+  "description": "In this lab, you will write a program to generate a list with 5 random numbers between 100 and 200 inclusive.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate a Number List",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing generate_a_number_list.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/random",
+          "python/range",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "generate_a_number_list.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "type": "lab",
+  "title": "Determine what Day of the Week",
+  "description": "In this lab, you are given a date. Your task is to find what the day is on that date.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Determine what Day of the Week",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing determine_what_day_of_the_week.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/calendar",
+          "python/map",
+          "python/int",
+          "python/input"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "determine_what_day_of_the_week.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

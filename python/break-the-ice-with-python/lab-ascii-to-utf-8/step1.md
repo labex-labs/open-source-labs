@@ -30,7 +30,7 @@ This Python code defines a function called `ascii_to_utf_8` which uses the `inpu
 You can run the following command in the terminal to execute.
 
 ```bash
-python /home/labex/project/ascii_to_utf_8.py
+python3 /home/labex/project/ascii_to_utf_8.py
 ```
 
 Or you can just click the button like this ![Run Python File](./assets/run_python_file_button.jpg "Run Python File") in the top right corner to execute.

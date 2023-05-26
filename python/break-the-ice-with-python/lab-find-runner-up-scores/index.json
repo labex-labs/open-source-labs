@@ -1,0 +1,58 @@
+{
+  "type": "lab",
+  "title": "Find Runner up Scores",
+  "description": "In this lab, you are given scores. Store them in a list and find the score of the runner-up.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Find Runner up Scores",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing find_runner_up_scores.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/int",
+          "python/input",
+          "python/map",
+          "python/list",
+          "python/list_comprehension",
+          "python/set",
+          "python/sorted",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "find_runner_up_scores.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
