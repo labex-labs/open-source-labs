@@ -1,0 +1,56 @@
+{
+  "type": "lab",
+  "title": "Remove Several Numbers from List",
+  "description": "In this lab, you will write a program to print the list after removing the 2nd - 4th numbers in [12,24,35,70,88,120,155].",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Remove Several Numbers from List",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing remove_several_numbers_from_list.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/list_comprehension",
+          "python/enumerate",
+          "python/if_else",
+          "python/for_loop",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "remove_several_numbers_from_list.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}

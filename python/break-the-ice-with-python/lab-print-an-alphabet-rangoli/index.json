@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Print an Alphabet Rangoli",
+  "description": "In this lab, your task is to print an alphabet rangoli of size N.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Print an Alphabet Rangoli",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing print_an_alphabet_rangoli.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/manipulating_strings",
+          "python/list",
+          "python/list_comprehension",
+          "python/range",
+          "python/map",
+          "python/len"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "print_an_alphabet_rangoli.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
