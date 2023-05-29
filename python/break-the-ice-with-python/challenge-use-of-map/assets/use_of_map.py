@@ -12,9 +12,7 @@ def use_of_map():
 
     # TODO: implement this function
 
- 
     # Hints: Use map() to generate a list
-
 
     # Note: Do not change the existing code
 

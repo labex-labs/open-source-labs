@@ -1,6 +1,3 @@
-
-
-
 def compute_the_distance():
     pass
 

@@ -21,4 +21,5 @@ def print_a_tuple():
 
     # Note: Do not change the existing code
 
+
 print_a_tuple()
