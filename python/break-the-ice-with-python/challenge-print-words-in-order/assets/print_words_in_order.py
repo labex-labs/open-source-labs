@@ -16,5 +16,4 @@ def print_words_in_order():
 
     # Note: Do not change the existing code
 
-
 print_words_in_order()

@@ -1,9 +1,7 @@
 import sys
-
 sys.path.append("/home/labex/project")
 import unittest
 from inheritance_of_class import Square
-
 
 class TestSquare(unittest.TestCase):
     def test_area(self):
@@ -12,6 +10,5 @@ class TestSquare(unittest.TestCase):
         square2 = Square()
         self.assertEqual(square2.area(), 0, "Area calculation is incorrect")
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

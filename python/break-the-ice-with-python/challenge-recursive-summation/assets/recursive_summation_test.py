@@ -1,10 +1,8 @@
 import unittest
 from io import StringIO
 import sys
-
 sys.path.append("/home/labex/project")
 from recursive_summation import rec
-
 
 class TestRec(unittest.TestCase):
     def test_rec(self):
@@ -26,6 +24,5 @@ class TestRec(unittest.TestCase):
         expected_output = "15"
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-cd /tmp
+cd /tmp                                                                                                           
 echo "without,hello,bag,world" | python3 *_test.py

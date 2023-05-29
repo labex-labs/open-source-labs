@@ -8,7 +8,6 @@ sys.path.append("/home/labex/project")
 # Import the code to be tested
 from check_the_validity_of_password import check
 
-
 class TestYour(unittest.TestCase):
     def test_output(self):
         # Redirect standard input and output to buffer
@@ -18,12 +17,12 @@ class TestYour(unittest.TestCase):
         sys.stdout = StringIO()
 
         # Input test data
-        test_input = "ABd1234@1,a F1#,2w3E*,2We3345\n"
+        test_input = 'ABd1234@1,a F1#,2w3E*,2We3345\n'
         sys.stdin.write(test_input)
         sys.stdin.seek(0)
 
         # Run the code
-        s = input().split(",")
+        s = input().split(',')
         lst = filter(check, s)
         print(",".join(lst))
 
@@ -33,9 +32,8 @@ class TestYour(unittest.TestCase):
         sys.stdout = stdout
 
         # Check if the output matches the expected result
-        expected_output = "ABd1234@1\n"
+        expected_output = 'ABd1234@1\n'
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
