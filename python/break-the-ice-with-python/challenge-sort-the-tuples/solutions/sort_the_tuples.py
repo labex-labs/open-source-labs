@@ -1,8 +1,8 @@
 def sort_the_tuples():
     lst = []
     while True:
-        s = input().split(",")
-        if not s[0]:  # breaks for blank input
+        s = input().split(',')
+        if not s[0]:                          # breaks for blank input
             break
         lst.append(tuple(s))
 

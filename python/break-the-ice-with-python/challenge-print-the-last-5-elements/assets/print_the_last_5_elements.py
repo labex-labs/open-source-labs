@@ -21,5 +21,4 @@ def print_the_last_5_elements():
 
     # Note: Do not change the existing code
 
-
 print_the_last_5_elements()

@@ -1,10 +1,8 @@
 import unittest
 import sys
-
 sys.path.append("/home/labex/project")
 from io import StringIO
 from calculating_letter_frequencies import calculating_letter_frequencies
-
 
 class TestCalculatingLetterFrequencies(unittest.TestCase):
     def test_calculating_letter_frequencies(self):
@@ -24,6 +22,5 @@ class TestCalculatingLetterFrequencies(unittest.TestCase):
         expected_output = "l 2\ne 1\nh 1\no 1"
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

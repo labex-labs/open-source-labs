@@ -1,6 +1,5 @@
 import re
 
-
 def get_email_company_name():
     email = input()
     pattern = "\w+@(\w+).com"
@@ -8,6 +7,5 @@ def get_email_company_name():
     print(ans)
 
     return ans
-
 
 get_email_company_name()

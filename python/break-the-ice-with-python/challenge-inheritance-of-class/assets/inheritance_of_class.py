@@ -1,4 +1,4 @@
-class Shape:
+class Shape():
     pass
 
     """A class named `Shape` and its subclass `Square`.

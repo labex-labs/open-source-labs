@@ -1,5 +1,5 @@
 def sqr(x):
-    return x * x
+    return x*x
 
 
 def use_of_map():

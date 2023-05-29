@@ -1,5 +1,5 @@
 def square_each_odd_number():
-    seq = input().split(",")
+    seq = input().split(',')
     lst = [int(i) for i in seq]
 
     def flt(i):  # Define a filter function

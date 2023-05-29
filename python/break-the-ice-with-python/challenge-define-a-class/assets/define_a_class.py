@@ -1,4 +1,4 @@
-class IOstring:
+class IOstring():
     pass
 
     """A class has at least two methods

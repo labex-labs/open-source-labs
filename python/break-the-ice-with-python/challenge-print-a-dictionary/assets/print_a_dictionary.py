@@ -20,5 +20,4 @@ def print_a_dictionary():
 
     # Note: Do not change the existing code
 
-
 print_a_dictionary()

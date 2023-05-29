@@ -4,13 +4,10 @@ import unittest
 
 sys.path.append("/home/labex/project")
 
-
 class TestCar(unittest.TestCase):
     def test_car_class(self):
         # Load the module
-        spec = importlib.util.spec_from_file_location(
-            "Car", "/home/labex/project/define_a_class_with_parameters.py"
-        )
+        spec = importlib.util.spec_from_file_location("Car", "/home/labex/project/define_a_class_with_parameters.py")
         car = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(car)
 
@@ -22,12 +19,8 @@ class TestCar(unittest.TestCase):
                 # Check if the class has a name instance attribute
                 car_instance = Car()
                 if hasattr(car_instance, "name"):
-                    self.assertEqual(
-                        Car.name, "Car", "The class has a name class attribute."
-                    )
-                    self.assertIsNone(
-                        car_instance.name, "The class has a name instance attribute."
-                    )
+                    self.assertEqual(Car.name, "Car", "The class has a name class attribute.")
+                    self.assertIsNone(car_instance.name, "The class has a name instance attribute.")
                 else:
                     self.fail("The class does not have a name instance attribute.")
             else:
@@ -35,6 +28,5 @@ class TestCar(unittest.TestCase):
         else:
             self.fail("The class does not exist in the module.")
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
