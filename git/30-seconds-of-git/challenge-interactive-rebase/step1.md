@@ -17,3 +17,4 @@ To complete this challenge, you will use the Git repository named `https://githu
 7. Save and close the file.
 8. If there are merge conflicts or you need to make changes, you can continue the rebase when ready using `git rebase --continue` or abort it using `git rebase --abort`.
 9. Once the rebase is complete, push the changes to the remote repository using the command `git push -u origin my-branch`.
+    
