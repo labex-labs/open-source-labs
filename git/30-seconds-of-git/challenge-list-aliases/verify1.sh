@@ -1,2 +1,2 @@
 #!/bin/zsh
-cd /home/labex/project/git-playground && history | grep "git config -l" | tail -n 1 | tee output.txt | awk '{$1=""; print $0}' | sh | grep -q "co=checkout" && grep -q "st=status" && grep -q "rb=rebase" && echo "True"
+cd /home/labex/project/git-playground && history | grep "git config -l" | awk '{$1=""; print $1}' | tail -n 1 | xargs -I {} sh -c '!{}' | grep -q "co=checkout" && grep -q "st=status" && grep -q "rb=rebase" && echo "True"
