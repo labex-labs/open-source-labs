@@ -1,6 +1,7 @@
 import unittest
 from io import StringIO
 import sys
+
 sys.path.append("/home/labex/project")
 from get_program_execution_time import get_program_execution_time
 
@@ -29,5 +30,5 @@ class TestProgramExecutionTime(unittest.TestCase):
         sys.stdout = sys.__stdout__
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -5,11 +5,13 @@ sys.path.append("/home/labex/project")
 
 from print_half_of_a_tuple import print_half_of_a_tuple
 
+
 class TestPrintHalfOfATuple(unittest.TestCase):
     def test_print_half_of_a_tuple(self):
         # Redirect stdout to a buffer
         from io import StringIO
         import sys
+
         buffer = StringIO()
         sys.stdout = buffer
 
@@ -23,5 +25,6 @@ class TestPrintHalfOfATuple(unittest.TestCase):
         expected_output = "1 2 3 4 5 \n6 7 8 9 10"
         self.assertEqual(output, expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

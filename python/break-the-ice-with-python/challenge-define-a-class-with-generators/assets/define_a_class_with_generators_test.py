@@ -8,6 +8,7 @@ sys.path.append("/home/labex/project")
 # Import the code to be tested
 from define_a_class_with_generators import Divisible
 
+
 class TestYour(unittest.TestCase):
     def test_output(self):
         # Redirect standard input and output to buffer
@@ -17,7 +18,7 @@ class TestYour(unittest.TestCase):
         sys.stdout = StringIO()
 
         # Input test data
-        test_input = '21\n'
+        test_input = "21\n"
         sys.stdin.write(test_input)
         sys.stdin.seek(0)
 
@@ -33,8 +34,9 @@ class TestYour(unittest.TestCase):
         sys.stdout = stdout
 
         # Check if the output matches the expected result
-        expected_output = '0\n7\n14\n21\n'
+        expected_output = "0\n7\n14\n21\n"
         self.assertEqual(output, expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

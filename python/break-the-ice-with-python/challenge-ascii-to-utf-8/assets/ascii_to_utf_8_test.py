@@ -6,16 +6,18 @@ sys.path.append("/home/labex/project")
 
 from ascii_to_utf_8 import ascii_to_utf_8
 
+
 class TestAsciiToUtf8(unittest.TestCase):
     def test_ascii_to_utf_8(self):
         # Simulate user input
         user_input = "python"
-        expected_output = b'python'
+        expected_output = b"python"
 
         # Redirect standard input to simulate user input
-        with patch('builtins.input', return_value=user_input):
+        with patch("builtins.input", return_value=user_input):
             # Call the function and check the output
             self.assertEqual(ascii_to_utf_8(), expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

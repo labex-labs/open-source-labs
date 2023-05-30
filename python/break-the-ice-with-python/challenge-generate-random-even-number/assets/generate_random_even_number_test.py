@@ -1,8 +1,10 @@
 import unittest
 from io import StringIO
 import sys
+
 sys.path.append("/home/labex/project")
 from generate_random_even_number import generate_random_even_number
+
 
 class TestRandomEvenNumber(unittest.TestCase):
     def test_random_even_number(self):
@@ -25,5 +27,6 @@ class TestRandomEvenNumber(unittest.TestCase):
         except ValueError:
             self.fail("Output is not a valid integer")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

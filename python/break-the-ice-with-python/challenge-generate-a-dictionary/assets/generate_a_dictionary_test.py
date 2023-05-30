@@ -18,7 +18,7 @@ class TestYour(unittest.TestCase):
         sys.stdout = StringIO()
 
         # 输入测试数据
-        test_input = '5\n'
+        test_input = "5\n"
         sys.stdin.write(test_input)
         sys.stdin.seek(0)
 
@@ -31,9 +31,9 @@ class TestYour(unittest.TestCase):
         sys.stdout = stdout
 
         # 检查输出是否与预期结果匹配
-        expected_output = '{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}\n'
+        expected_output = "{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}\n"
         self.assertEqual(output, expected_output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

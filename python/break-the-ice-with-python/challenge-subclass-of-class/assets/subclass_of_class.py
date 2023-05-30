@@ -1,4 +1,4 @@
-class American():
+class American:
     pass
 
     """A class named "American"

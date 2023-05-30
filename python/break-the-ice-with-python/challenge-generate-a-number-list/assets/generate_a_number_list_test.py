@@ -1,8 +1,10 @@
 import unittest
 from io import StringIO
 import sys
+
 sys.path.append("/home/labex/project")
 from generate_a_number_list import generate_a_number_list
+
 
 class TestNumberList(unittest.TestCase):
     def test_generate_a_number_list(self):
@@ -28,5 +30,6 @@ class TestNumberList(unittest.TestCase):
         except (ValueError, TypeError):
             self.fail("Output is not a valid list of integers")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -1,8 +1,12 @@
 import unittest
 from io import StringIO
 import sys
+
 sys.path.append("/home/labex/project")
-from calculating_number_of_digits_and_letters import calculating_number_of_digits_and_letters
+from calculating_number_of_digits_and_letters import (
+    calculating_number_of_digits_and_letters,
+)
+
 
 class TestCalculatingNumberOfDigitsAndLetters(unittest.TestCase):
     def test_calculating_number_of_digits_and_letters(self):
@@ -22,5 +26,6 @@ class TestCalculatingNumberOfDigitsAndLetters(unittest.TestCase):
         expected_output = "Digit - 3\nLetter - 5"
         self.assertEqual(output, expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
