@@ -1,0 +1,25 @@
+name: sync-labs-to-feishu-full
+
+on:
+  schedule:
+    - cron: "0 0 1/10 * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    if: github.repository_owner == 'labex-labs'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - name: Sync to Feishu
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+        run: |
+          pip install requests
+          pip install jsonschema
+          python .github/scripts/sync-labs-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --schema .github/scripts/lab_schema.json
