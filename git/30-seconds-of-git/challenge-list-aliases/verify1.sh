@@ -1,2 +1,2 @@
 #!/bin/zsh
-history | grep "git config -l | grep alias | sed 's/^alias\.//g'" | tail -n 1 | xargs -I {} sh -c "{} | grep -E '^(co=checkout|rb=rebase|st=status)$'"
+history | grep "sed 's/^alias\.//g'" | tail -n 1 | sh | grep -q "st=status\|co=checkout\|rb=rebase" && echo "True"
