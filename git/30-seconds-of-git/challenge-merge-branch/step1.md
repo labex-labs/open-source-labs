@@ -6,10 +6,15 @@ Your task is to merge a branch into the current branch using Git. You will need 
 
 ## Example
 
-To complete this challenge, you will need to use the Git repository named `https://github.com/labex-labs/git-playground`. Follow these steps to merge the `feature-branch` into the `main` branch:
+To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Use the command `git checkout main` to switch to the `main` branch.
-3. Use the command `git merge feature-branch` to merge the `feature-branch` into the `main` branch.
+1. Clone the repository to your local machine using the command `git clone https://github.com/your-username/git-playground`.
+2. Switch to the `master` branch.
+3. Merge the `feature-branch` into the `master` branch.
 4. Resolve any conflicts that may arise during the merge process.
-5. Use the command `git push` to push the changes to the remote repository.
+5. Push the changes to the remote repository.
+
+This is the result of running `git branch --merged master`:
+
+![<result>](assets/challenge-merge-branch-step1-1.png)
+

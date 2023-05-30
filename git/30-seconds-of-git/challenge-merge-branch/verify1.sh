@@ -1,3 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
-cat ~/.zsh_history | grep -v grep | grep "git merge"
+cd /home/labex/project/git-playground
+git branch --merged master | grep "feature-branch"
