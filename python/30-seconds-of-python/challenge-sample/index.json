@@ -1,57 +1,63 @@
 {
-    "type": "challenge",
-    "title": "Random Element in List",
-    "description": "In Python, you can easily get a random element from a list using the `random` module. This module provides a function called `choice()` which returns a random element from a given list. In this challenge, you will be asked to write a function that takes a list as an argument and returns a random element from that list.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Random Element in List",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "sample.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Random Element in List",
+  "description": "In Python, you can easily get a random element from a list using the `random` module. This module provides a function called `choice()` which returns a random element from a given list. In this challenge, you will be asked to write a function that takes a list as an argument and returns a random element from that list.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Random Element in List",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": [
+          "python/random",
+          "python/list",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": [
+          "sample.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_sample.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_sample.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "sample.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "sample.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
-        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-python"
+  }
 }

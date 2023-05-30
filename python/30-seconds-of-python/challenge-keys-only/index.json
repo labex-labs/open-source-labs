@@ -1,57 +1,63 @@
 {
-    "type": "challenge",
-    "title": "Dictionary Keys",
-    "description": "In Python, a dictionary is a collection of key-value pairs. Each key is unique and is used to access its corresponding value. Sometimes, we may need to extract only the keys from a dictionary. In this challenge, you are tasked with creating a function that takes a flat dictionary as input and returns a list of all its keys.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Dictionary Keys",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "keys_only.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Dictionary Keys",
+  "description": "In Python, a dictionary is a collection of key-value pairs. Each key is unique and is used to access its corresponding value. Sometimes, we may need to extract only the keys from a dictionary. In this challenge, you are tasked with creating a function that takes a flat dictionary as input and returns a list of all its keys.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Dictionary Keys",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": [
+          "python/list",
+          "python/dict",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": [
+          "keys_only.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_keys_only.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_keys_only.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "keys_only.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "keys_only.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
-        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-python"
+  }
 }

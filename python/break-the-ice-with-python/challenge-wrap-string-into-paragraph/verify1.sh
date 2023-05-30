@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-cd /tmp
+cd /tmp                                                                                                           
 echo -e "ABCDEFGHIJKLIMNOQRSTUVWXYZ\n4" | python3 *_test.py

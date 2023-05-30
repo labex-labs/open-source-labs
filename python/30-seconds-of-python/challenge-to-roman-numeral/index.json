@@ -1,57 +1,64 @@
 {
-    "type": "challenge",
-    "title": "Integer to Roman Numeral Challenge",
-    "description": "Roman numerals are a numeral system that originated in ancient Rome. They are still used today in various contexts, such as in the numbering of book chapters and movie sequels. In this challenge, you will be tasked with creating a function that converts an integer between 1 and 3999 (inclusive) to its Roman numeral representation.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Integer to Roman Numeral Challenge",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "to_roman_numeral.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Integer to Roman Numeral Challenge",
+  "description": "Roman numerals are a numeral system that originated in ancient Rome. They are still used today in various contexts, such as in the numbering of book chapters and movie sequels. In this challenge, you will be tasked with creating a function that converts an integer between 1 and 3999 (inclusive) to its Roman numeral representation.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Integer to Roman Numeral Challenge",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": [
+          "python/divmod",
+          "python/string",
+          "python/math_operator",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": [
+          "to_roman_numeral.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_to_roman_numeral.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_to_roman_numeral.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "to_roman_numeral.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "to_roman_numeral.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
-        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-python"
+  }
 }

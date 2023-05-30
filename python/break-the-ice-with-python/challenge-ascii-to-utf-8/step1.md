@@ -2,6 +2,7 @@
 
 Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
 
+
 ## Example
 
 The following words is given as input to the program:

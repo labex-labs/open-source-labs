@@ -1,4 +1,4 @@
-class American:
+class American():
     pass
 
     """A class named "American" which has a static method called "printNationality"

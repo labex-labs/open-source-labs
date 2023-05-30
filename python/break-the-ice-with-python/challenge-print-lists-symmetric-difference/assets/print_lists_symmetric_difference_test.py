@@ -1,10 +1,8 @@
 import unittest
 import sys
-
 sys.path.append("/home/labex/project")
 from io import StringIO
 from print_lists_symmetric_difference import print_lists_symmetric_difference
-
 
 class TestPrintListsSymmetricDifference(unittest.TestCase):
     def test_print_lists_symmetric_difference(self):
@@ -24,6 +22,5 @@ class TestPrintListsSymmetricDifference(unittest.TestCase):
         expected_output = "5\n9\n11\n12"
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

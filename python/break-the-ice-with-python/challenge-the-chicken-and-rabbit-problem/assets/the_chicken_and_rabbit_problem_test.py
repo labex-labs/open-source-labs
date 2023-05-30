@@ -1,11 +1,9 @@
 import unittest
 import sys
-
 # Add the path to the project directory
 sys.path.append("/home/labex/project")
 from io import StringIO
 from the_chicken_and_rabbit_problem import solve
-
 
 class TestSolve(unittest.TestCase):
     def test_solve(self):
@@ -26,6 +24,5 @@ class TestSolve(unittest.TestCase):
         expected_output = "(23, 12)"
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

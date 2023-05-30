@@ -1,1 +1,1 @@
-raise RuntimeError("something wrong")
+raise RuntimeError('something wrong')

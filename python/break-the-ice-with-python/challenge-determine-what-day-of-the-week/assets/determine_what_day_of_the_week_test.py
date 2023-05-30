@@ -1,10 +1,8 @@
 import unittest
 import sys
-
 sys.path.append("/home/labex/project")
 from io import StringIO
 from determine_what_day_of_the_week import determine_what_day_of_the_week
-
 
 class TestDetermineWhatDayOfTheWeek(unittest.TestCase):
     def test_determine_what_day_of_the_week(self):
@@ -24,6 +22,5 @@ class TestDetermineWhatDayOfTheWeek(unittest.TestCase):
         expected_output = "WEDNESDAY"
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

@@ -1,6 +1,5 @@
 import unittest
 import sys
-
 # Add the path to the project directory
 sys.path.append("/home/labex/project")
 from io import StringIO
@@ -25,6 +24,5 @@ class TestReverseOrderString(unittest.TestCase):
         expected_output = "dlrow olleh"
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-cd /tmp
+cd /tmp                                                                                                           
 echo "hello python!" | python3 *_test.py

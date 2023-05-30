@@ -12,7 +12,9 @@ def use_of_filter():
 
     # TODO: implement this function
 
+ 
     # Hints: use filter() to filter elements of a list
+
 
     # Note: Do not change the existing code
 
