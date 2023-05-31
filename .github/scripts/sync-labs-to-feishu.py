@@ -220,7 +220,7 @@ class Sync:
         }
         return data
 
-    def sync(self, skip: bool, noskill:bool, path=".") -> None:
+    def sync(self, skip: bool, noskill: bool, path=".") -> None:
         """Sync labs from github to feishu
 
         Args:
@@ -314,7 +314,9 @@ class Sync:
         repo_path_dicts = [
             path for path in path_dicts if path_dicts[path]["repo_name"] == self.repo
         ]
-        print(f"Found {len(repo_path_dicts)} labs in this Repo, checking if need delete...")
+        print(
+            f"Found {len(repo_path_dicts)} labs in this Repo, checking if need delete..."
+        )
         deleted = 0
         for path in repo_path_dicts:
             if path not in data_paths:
@@ -341,7 +343,10 @@ if __name__ == "__main__":
         "--skip", type=bool, default=False, help="Skip updating existing labs in Feishu"
     )
     parser.add_argument(
-        "--noskill", type=bool, default=False, help="Only updating no skills labs in Feishu"
+        "--noskill",
+        type=bool,
+        default=False,
+        help="Only updating no skills labs in Feishu",
     )
     args = parser.parse_args()
 
