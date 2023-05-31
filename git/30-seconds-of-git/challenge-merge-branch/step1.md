@@ -9,8 +9,8 @@ Your task is to merge a branch into the current branch using Git. You will need 
 To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
 1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
-2. Add the `feature-branch-A` branch and make changes to the files.
-3. Add the changes to the staging area and commit.
+2. Create a `feature-branch-A` branch and add "hello" to `file2.txt`.
+3. Add the changes to the staging area and commit with the message "fix file2.txt".
 4. Switch to the `master` branch.
 5. Merge the `feature-branch-A` into the `master` branch.
 4. Resolve any conflicts that may arise during the merge process.
