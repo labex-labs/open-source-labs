@@ -9,7 +9,7 @@ To complete this experiment, you will use the Git repository `git-playground` fr
 1. Clone the `https://github.com/your-username/git-playground` repository to your local machine.
 2. Checkout the `master` branch.
 3. Make some changes to the codebase, add them and commit them with the message "Add new feature to master branch".
-4. Create a new branch called "feature-branch" and switch to the "master" branch.
+4. Create a new branch called "feature-branch" and switch to the "feature-branch" branch.
 5. Move the last commit from `master` to `feature-branch`.
 6. Verify that the changes are now in the `feature-branch`.
 
