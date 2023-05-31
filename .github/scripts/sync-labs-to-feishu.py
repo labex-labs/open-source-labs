@@ -220,7 +220,7 @@ class Sync:
         }
         return data
 
-    def sync(self, skip: bool, noskill: bool, path=".") -> None:
+    def sync(self, skip: bool, path=".") -> None:
         """Sync labs from github to feishu
 
         Args:
@@ -236,28 +236,13 @@ class Sync:
         records = list({v["fields"]["PATH"]: v for v in records}.values())
         print(f"Found {len(records)} labs in Feishu after deduplication.")
         # Make a full dict of path and record_id and repo_name
-        path_dicts_full = {
+        path_dicts = {
             r["fields"]["PATH"]: {
                 "record_id": r["record_id"],
                 "repo_name": r["fields"]["REPO_NAME"],
             }
             for r in records
         }
-        # Make a dict of path and record_id and repo_name only on skills
-        path_dicts_no_skills = {
-            r["fields"]["PATH"]: {
-                "record_id": r["record_id"],
-                "repo_name": r["fields"]["REPO_NAME"],
-            }
-            for r in records
-            if len(r["fields"]["SKILLS_ID"]) == 0
-        }
-        if noskill:
-            path_dicts = path_dicts_no_skills
-            print(f"NO SKILL MODE: Only update {len(path_dicts)} labs in Feishu.")
-        else:
-            path_dicts = path_dicts_full
-            print(f"FULL MODE: Update {len(path_dicts)} labs in Feishu.")
         # Get all skills from feishu
         skills = self.feishu.get_bitable_records(
             self.app_token, self.skills_table_id, params=""
@@ -342,13 +327,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--skip", type=bool, default=False, help="Skip updating existing labs in Feishu"
     )
-    parser.add_argument(
-        "--noskill",
-        type=bool,
-        default=False,
-        help="Only updating no skills labs in Feishu",
-    )
     args = parser.parse_args()
 
     sync = Sync(args.appid, args.appsecret, args.repo, args.schema)
-    sync.sync(skip=args.skip, noskill=args.noskill)
+    sync.sync(skip=args.skip)
