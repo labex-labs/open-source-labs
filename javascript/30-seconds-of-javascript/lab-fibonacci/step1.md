@@ -1,20 +1,22 @@
-# Fibonacci
+# Fibonacci Sequence
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate the Fibonacci sequence in JavaScript, follow these steps:
 
-Generates an array, containing the Fibonacci sequence, up until the nth term.
+1. Open the Terminal/SSH and type `node`.
+2. Use `Array.from()` to create an empty array of the specific length, initializing the first two values (`0` and `1`).
+3. Use `Array.prototype.reduce()` and `Array.prototype.concat()` to add values into the array, using the sum of the last two values, except for the first two.
+4. Call the `fibonacci()` function and pass the desired length of the sequence as an argument.
 
-- Use `Array.from()` to create an empty array of the specific length, initializing the first two values (`0` and `1`).
-- Use `Array.prototype.reduce()` and `Array.prototype.concat()` to add values into the array, using the sum of the last two values, except for the first two.
+Here's the code:
 
 ```js
-const fibonacci = n =>
+const fibonacci = (n) =>
   Array.from({ length: n }).reduce(
     (acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i),
     []
   );
-```
 
-```js
 fibonacci(6); // [0, 1, 1, 2, 3, 5]
 ```
+
+This will generate an array containing the Fibonacci sequence up until the nth term.

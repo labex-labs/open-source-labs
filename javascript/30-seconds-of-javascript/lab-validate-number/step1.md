@@ -1,22 +1,25 @@
-# Validate Number
+# Number Validation Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To validate if a given input is a number, follow these steps:
 
-Checks if the given value is a number.
-
-- Use `parseFloat()` to try to convert `n` to a number.
-- Use `Number.isNaN()` and logical not (`!`) operator to check if `num` is a number.
-- Use `Number.isFinite()` to check if `num` is finite.
+- Open the Terminal/SSH and type `node` to start practicing coding.
+- Use `parseFloat()` to try to convert the input to a number.
+- Use `Number.isNaN()` and logical not (`!`) operator to check if the input is a number.
+- Use `Number.isFinite()` to check if the input is finite.
 - Use `Number` and the loose equality operator (`==`) to check if the coercion holds.
 
-```js
-const validateNumber = n => {
-  const num = parseFloat(n);
-  return !Number.isNaN(num) && Number.isFinite(num) && Number(n) == n;
-}
-```
+Here's the code for the `validateNumber` function:
 
 ```js
-validateNumber('10'); // true
-validateNumber('a'); // false
+const validateNumber = (input) => {
+  const num = parseFloat(input);
+  return !Number.isNaN(num) && Number.isFinite(num) && Number(input) == input;
+};
+```
+
+You can use the `validateNumber` function as follows:
+
+```js
+validateNumber("10"); // true
+validateNumber("a"); // false
 ```

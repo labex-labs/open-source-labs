@@ -1,16 +1,17 @@
-# Filter Out Matching Array Elements
+# How to Filter Out Matching Array Elements in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To filter out elements in a JavaScript array that have one or more specified values, follow these steps:
 
-Filters out the elements of an array that have one of the specified values.
+1. Open the Terminal or SSH and type `node` to start practicing coding.
+2. Use the `Array.prototype.includes()` method to find the values to exclude.
+3. Use the `Array.prototype.filter()` method to create a new array with the excluded elements.
 
-- Use `Array.prototype.includes()` to find values to exclude.
-- Use `Array.prototype.filter()` to create an array excluding them.
-
-```js
-const without = (arr, ...args) => arr.filter(v => !args.includes(v));
-```
+Here is an example code snippet:
 
 ```js
+const without = (arr, ...args) => arr.filter((v) => !args.includes(v));
+
 without([2, 1, 2, 3], 1, 2); // [3]
 ```
+
+In this example, the `without` function takes an array `arr` and one or more arguments `args`. The function uses the `filter()` method to create a new array that excludes any elements that match any of the specified values in `args`. The `includes()` method is used to check if the value is in `args`. Finally, the function returns the new array with the excluded elements.

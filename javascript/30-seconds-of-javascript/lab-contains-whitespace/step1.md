@@ -1,16 +1,18 @@
-# Check if String Contains Whitespace
+# Checking for Whitespace in a String
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a string contains whitespace characters, follow the steps below:
 
-Checks if the given string contains any whitespace characters.
-
+- Open the Terminal/SSH and type `node` to start practicing coding.
 - Use `RegExp.prototype.test()` with an appropriate regular expression to check if the given string contains any whitespace characters.
+- Here's an example code snippet:
 
-```js
-const containsWhitespace = str => /\s/.test(str);
-```
+  ```js
+  const containsWhitespace = (str) => /\s/.test(str);
+  ```
 
-```js
-containsWhitespace('lorem'); // false
-containsWhitespace('lorem ipsum'); // true
-```
+- To test the function, call `containsWhitespace` with a string as an argument. It will return `true` if the string contains whitespace characters, otherwise `false`.
+
+  ```js
+  containsWhitespace("lorem"); // false
+  containsWhitespace("lorem ipsum"); // true
+  ```

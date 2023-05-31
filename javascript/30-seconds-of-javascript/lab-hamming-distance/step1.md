@@ -1,18 +1,18 @@
-# Hamming Distance
+# Hamming Distance Calculation
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To calculate the Hamming distance between two values, follow these steps:
 
-Calculates the Hamming distance between two values.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the XOR operator (`^`) to find the bit difference between the two numbers.
+3. Convert the result to a binary string using `Number.prototype.toString()`.
+4. Count the number of `1`s in the string using `String.prototype.match()`.
+5. Return the count.
 
-- Use the XOR operator (`^`) to find the bit difference between the two numbers.
-- Convert to a binary string using `Number.prototype.toString()`.
-- Count and return the number of `1`s in the string, using `String.prototype.match()`.
+Here's the code for the `hammingDistance` function:
 
 ```js
 const hammingDistance = (num1, num2) =>
-  ((num1 ^ num2).toString(2).match(/1/g) || '').length;
+  ((num1 ^ num2).toString(2).match(/1/g) || "").length;
 ```
 
-```js
-hammingDistance(2, 3); // 1
-```
+You can test the function by running `hammingDistance(2, 3); // 1`.

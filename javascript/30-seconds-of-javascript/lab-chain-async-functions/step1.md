@@ -1,13 +1,11 @@
-# Chain Async Functions
+# Chaining Asynchronous Functions
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To chain asynchronous functions, open the Terminal/SSH and type `node`. Then, loop through an array of functions containing asynchronous events, and call the `next` function when each asynchronous event has completed.
 
-Chains asynchronous functions.
-
-- Loop through an array of functions containing asynchronous events, calling `next` when each asynchronous event has completed.
+Here's a code snippet that demonstrates how to chain asynchronous functions:
 
 ```js
-const chainAsync = fns => {
+const chainAsync = (fns) => {
   let curr = 0;
   const last = fns[fns.length - 1];
   const next = () => {
@@ -16,20 +14,18 @@ const chainAsync = fns => {
   };
   next();
 };
-```
 
-```js
 chainAsync([
-  next => {
-    console.log('0 seconds');
+  (next) => {
+    console.log("0 seconds");
     setTimeout(next, 1000);
   },
-  next => {
-    console.log('1 second');
+  (next) => {
+    console.log("1 second");
     setTimeout(next, 1000);
   },
   () => {
-    console.log('2 second');
-  }
+    console.log("2 second");
+  },
 ]);
 ```

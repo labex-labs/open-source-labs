@@ -1,10 +1,6 @@
-# Check if Bottom of Page Is Visible
+# How to Check if the Bottom of the Page Is Visible
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the bottom of the page is visible.
-
-- Use `Window.scrollY`, `Element.scrollHeight` and `Element.clientHeight` to determine if the bottom of the page is visible.
+To check if the bottom of the page is visible, you can use the following code:
 
 ```js
 const bottomVisible = () =>
@@ -13,6 +9,6 @@ const bottomVisible = () =>
     document.documentElement.clientHeight);
 ```
 
-```js
-bottomVisible(); // true
-```
+To use this code, open the Terminal/SSH and type `node`. Then, use `Window.scrollY`, `Element.scrollHeight`, and `Element.clientHeight` to determine if the bottom of the page is visible.
+
+You can test the function by calling `bottomVisible()`, which will return `true` if the bottom of the page is visible.

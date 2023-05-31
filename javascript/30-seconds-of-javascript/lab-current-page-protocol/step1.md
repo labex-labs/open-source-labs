@@ -1,15 +1,9 @@
-# Current Page Protocol
+# Retrieving Current Page Protocol
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Gets the protocol being used on the current page.
-
-- Use `Window.location.protocol` to get the protocol (`http:` or `https:`) of the current page.
+To retrieve the protocol (`http:` or `https:`) of the current page, use the following code snippet:
 
 ```js
 const getProtocol = () => window.location.protocol;
 ```
 
-```js
-getProtocol(); // 'https:'
-```
+To practice coding, open the Terminal/SSH and type `node`.

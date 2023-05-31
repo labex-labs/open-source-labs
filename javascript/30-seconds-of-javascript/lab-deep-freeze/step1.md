@@ -1,27 +1,32 @@
-# Deep Freeze Object
+# How to Deep Freeze an Object in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To deep freeze an object in JavaScript, follow these steps:
 
-Deep freezes an object.
+1. Use `Object.keys()` to get all the properties of the passed object.
+2. Iterate over the properties using `Array.prototype.forEach()`.
+3. Call `Object.freeze()` recursively on all properties that are objects, applying `deepFreeze()` as necessary.
+4. Finally, use `Object.freeze()` to freeze the given object.
 
-- Use `Object.keys()` to get all the properties of the passed object, `Array.prototype.forEach()` to iterate over them.
-- Call `Object.freeze()` recursively on all properties, applying `deepFreeze()` as necessary.
-- Finally, use `Object.freeze()` to freeze the given object.
+Here's the code:
 
 ```js
-const deepFreeze = obj => {
-  Object.keys(obj).forEach(prop => {
-    if (typeof obj[prop] === 'object') deepFreeze(obj[prop]);
+const deepFreeze = (obj) => {
+  Object.keys(obj).forEach((prop) => {
+    if (typeof obj[prop] === "object") deepFreeze(obj[prop]);
   });
   return Object.freeze(obj);
 };
 ```
 
+You can test the deep frozen object using the following code:
+
 ```js
-'use strict';
+"use strict";
 
 const val = deepFreeze([1, [2, 3]]);
 
 val[0] = 3; // not allowed
 val[1][0] = 4; // not allowed as well
 ```
+
+The above code will throw an error because the `val` object is deeply frozen and cannot be modified.

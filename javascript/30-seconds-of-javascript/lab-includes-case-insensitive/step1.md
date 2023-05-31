@@ -1,17 +1,19 @@
 # Case-Insensitive Substring Search
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a string contains a substring regardless of the case, follow these steps:
 
-Checks if a string contains a substring, case-insensitive.
-
-- Use the `RegExp` constructor with the `'i'` flag to create a regular expression, that matches the given `searchString`, ignoring the case.
+- Use the `RegExp` constructor with the `'i'` flag to create a regular expression that matches the given `searchString`, ignoring the case.
 - Use `RegExp.prototype.test()` to check if the string contains the substring.
+
+Here is an example code snippet:
 
 ```js
 const includesCaseInsensitive = (str, searchString) =>
-  new RegExp(searchString, 'i').test(str);
+  new RegExp(searchString, "i").test(str);
 ```
 
+To test this function, you can run:
+
 ```js
-includesCaseInsensitive('Blue Whale', 'blue'); // true
+includesCaseInsensitive("Blue Whale", "blue"); // true
 ```

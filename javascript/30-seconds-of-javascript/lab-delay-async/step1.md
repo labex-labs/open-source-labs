@@ -1,19 +1,15 @@
-# Delay Async Function Execution
+# How to Delay Execution of an Async Function in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Delays the execution of an asynchronous function.
-
-- Delay executing part of an `async` function, by putting it to sleep, returning a `Promise`.
+To delay the execution of an asynchronous function in JavaScript, you can use the `sleep` function below, which returns a `Promise` that resolves after a certain amount of time. Here's an example of how to delay the execution of part of an `async` function using `sleep`:
 
 ```js
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-```
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-```js
 async function sleepyWork() {
   console.log("I'm going to sleep for 1 second.");
   await sleep(1000);
-  console.log('I woke up after 1 second.');
+  console.log("I woke up after 1 second.");
 }
 ```
+
+To use this function, simply call `sleepyWork()` and the console will log the messages with a 1 second delay between them.

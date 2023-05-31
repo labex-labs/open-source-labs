@@ -1,19 +1,22 @@
 # Array Symmetric Difference
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To find the symmetric difference between two arrays and include duplicate values, follow these steps:
 
-Returns the symmetric difference between two arrays, without filtering out duplicate values.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Create a `Set` from each array to get the unique values of each one.
+3. Use `Array.prototype.filter()` on each of them to only keep values not contained in the other.
 
-- Create a `Set` from each array to get the unique values of each one.
-- Use `Array.prototype.filter()` on each of them to only keep values not contained in the other.
+Here's the code:
 
 ```js
 const symmetricDifference = (a, b) => {
   const sA = new Set(a),
     sB = new Set(b);
-  return [...a.filter(x => !sB.has(x)), ...b.filter(x => !sA.has(x))];
+  return [...a.filter((x) => !sB.has(x)), ...b.filter((x) => !sA.has(x))];
 };
 ```
+
+You can use the following examples to test the function:
 
 ```js
 symmetricDifference([1, 2, 3], [1, 2, 4]); // [3, 4]

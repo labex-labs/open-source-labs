@@ -1,15 +1,15 @@
-# Maximum Subarray
+# Maximum Subarray Algorithm
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To practice coding, open the Terminal/SSH and type `node`. This algorithm finds a contiguous subarray with the largest sum within an array of numbers. To implement this algorithm, follow these steps:
 
-Finds a contiguous subarray with the largest sum within an array of numbers.
-
-- Use a greedy approach to keep track of the current `sum` and the current maximum, `maxSum`. Set `maxSum` to `-Infinity` to make sure that the highest negative value is returned, if all values are negative.
+- Use a greedy approach to keep track of the current `sum` and the current maximum, `maxSum`. Set `maxSum` to `-Infinity` to ensure that the highest negative value is returned, if all values are negative.
 - Define variables to keep track of the maximum start index, `sMax`, maximum end index, `eMax` and current start index, `s`.
 - Use `Array.prototype.forEach()` to iterate over the values and add the current value to the `sum`.
 - If the current `sum` is greater than `maxSum`, update the index values and the `maxSum`.
 - If the `sum` is below `0`, reset it to `0` and update the value of `s` to the next index.
 - Use `Array.prototype.slice()` to return the subarray indicated by the index variables.
+
+Here's the JavaScript code for the algorithm:
 
 ```js
 const maxSubarray = (...arr) => {
@@ -35,8 +35,9 @@ const maxSubarray = (...arr) => {
 
   return arr.slice(sMax, eMax + 1);
 };
-
 ```
+
+Here's an example of how to use the function:
 
 ```js
 maxSubarray(-2, 1, -3, 4, -1, 2, 1, -5, 4); // [4, -1, 2, 1]

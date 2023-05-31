@@ -1,18 +1,11 @@
-# Environment Is Browser
+# Checking if Environment is a Browser
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if the current runtime environment is a browser, use the `Array.prototype.includes()` method on the `typeof` values of both `Window` and `Document`. These globals are usually only available in a browser environment unless they were explicitly defined. This method will return `true` if one of them is `undefined`. The `typeof` allows checking for the existence of globals without throwing a `ReferenceError`. If both of them are not `undefined`, then the current environment is assumed to be a browser.
 
-Determines if the current runtime environment is a browser so that front-end modules can run on the server (Node) without throwing errors.
-
-- Use `Array.prototype.includes()` on the `typeof` values of both `Window` and `Document` (globals usually only available in a browser environment unless they were explicitly defined), which will return `true` if one of them is `undefined`.
-- `typeof` allows globals to be checked for existence without throwing a `ReferenceError`.
-- If both of them are not `undefined`, then the current environment is assumed to be a browser.
+Use the following code to determine if the current environment is a browser:
 
 ```js
-const isBrowser = () => ![typeof window, typeof document].includes('undefined');
+const isBrowser = () => ![typeof window, typeof document].includes("undefined");
 ```
 
-```js
-isBrowser(); // true (browser)
-isBrowser(); // false (Node)
-```
+When you call `isBrowser()`, it will return `true` if the environment is a browser and `false` if it is Node.

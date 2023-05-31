@@ -1,16 +1,19 @@
-# RGB to Array
+# Converting RGB String to an Array
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To convert an `rgb()` color string to an array of values, follow these steps:
 
-Converts an `rgb()` color string to an array of values.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `String.prototype.match()` to get an array of 3 strings with the numeric values.
+3. Use `Array.prototype.map()` in combination with `Number` to convert them into an array of numeric values.
 
-- Use `String.prototype.match()` to get an array of 3 string with the numeric values.
-- Use `Array.prototype.map()` in combination with `Number` to convert them into an array of numeric values.
+Here's the code that you can use:
 
 ```js
-const toRGBArray = rgbStr => rgbStr.match(/\d+/g).map(Number);
+const toRGBArray = (rgbStr) => rgbStr.match(/\d+/g).map(Number);
 ```
 
+To test the function, call it with an `rgb()` color string as the argument, like this:
+
 ```js
-toRGBArray('rgb(255, 12, 0)'); // [255, 12, 0]
+toRGBArray("rgb(255, 12, 0)"); // [255, 12, 0]
 ```

@@ -1,12 +1,14 @@
-# Get Nested Value in Object Based on Array of Keys
+# How to Retrieve a Nested Value in an Object Using an Array of Keys
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To retrieve a specific value from a nested JSON object, you can use the `deepGet` function. This function takes in an object and an array of keys, and returns the target value if it exists in the object.
 
-Gets the target value in a nested JSON object, based on the `keys` array.
+To use the `deepGet` function:
 
-- Compare the keys you want in the nested JSON object as an `Array`.
-- Use `Array.prototype.reduce()` to get the values in the nested JSON object one by one.
-- If the key exists in the object, return the target value, otherwise return `null`.
+- Create an array of the keys you want to retrieve from the nested JSON object.
+- Call the `deepGet` function with the object and the array of keys.
+- The function will return the target value if it exists, or `null` if it does not.
+
+Here is the code for the `deepGet` function:
 
 ```js
 const deepGet = (obj, keys) =>
@@ -16,16 +18,20 @@ const deepGet = (obj, keys) =>
   );
 ```
 
+And here is an example of how to use the `deepGet` function:
+
 ```js
 let index = 2;
 const data = {
   foo: {
     foz: [1, 2, 3],
     bar: {
-      baz: ['a', 'b', 'c']
-    }
-  }
+      baz: ["a", "b", "c"],
+    },
+  },
 };
-deepGet(data, ['foo', 'foz', index]); // get 3
-deepGet(data, ['foo', 'bar', 'baz', 8, 'foz']); // null
+deepGet(data, ["foo", "foz", index]); // returns 3
+deepGet(data, ["foo", "bar", "baz", 8, "foz"]); // returns null
 ```
+
+To start practicing coding, open the Terminal/SSH and type `node`.

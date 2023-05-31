@@ -1,17 +1,17 @@
-# User Prefers Dark Color Scheme
+# Checking User's Dark Color Scheme Preference
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the user color scheme preference is `dark`.
-
-- Use `Window.matchMedia()` with the appropriate media query to check the user color scheme preference.
+To check if the user prefers a dark color scheme, use `Window.matchMedia()` with the appropriate media query.
 
 ```js
 const prefersDarkColorScheme = () =>
   window &&
   window.matchMedia &&
-  window.matchMedia('(prefers-color-scheme: dark)').matches;
+  window.matchMedia("(prefers-color-scheme: dark)").matches;
 ```
+
+To start practicing coding, open the Terminal/SSH and type `node`.
+
+Example usage:
 
 ```js
 prefersDarkColorScheme(); // true

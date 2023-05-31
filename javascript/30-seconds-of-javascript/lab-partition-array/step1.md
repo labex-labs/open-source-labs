@@ -1,11 +1,15 @@
-# Partition Array
+# Partition Array Algorithm
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To partition an array, follow these steps:
 
-Applies `fn` to each value in `arr`, splitting it each time the provided function returns a new value.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Apply the provided function `fn` to each value in the given array `arr`.
+3. Split the array each time `fn` returns a new value.
+4. Use `Array.prototype.reduce()` to create an accumulator object that holds the resulting array and the last value returned from `fn`.
+5. Use `Array.prototype.push()` to add each value in `arr` to the appropriate partition in the accumulator array.
+6. Return the resulting array.
 
-- Use `Array.prototype.reduce()` with an accumulator object that will hold the resulting array and the last value returned from `fn`.
-- Use `Array.prototype.push()` to add each value in `arr` to the appropriate partition in the accumulator array.
+Here is the code implementation:
 
 ```js
 const partitionBy = (arr, fn) =>
@@ -20,8 +24,10 @@ const partitionBy = (arr, fn) =>
   ).res;
 ```
 
+Example usage:
+
 ```js
 const numbers = [1, 1, 3, 3, 4, 5, 5, 5];
-partitionBy(numbers, n => n % 2 === 0); // [[1, 1, 3, 3], [4], [5, 5, 5]]
-partitionBy(numbers, n => n); // [[1, 1], [3, 3], [4], [5, 5, 5]]
+partitionBy(numbers, (n) => n % 2 === 0); // [[1, 1, 3, 3], [4], [5, 5, 5]]
+partitionBy(numbers, (n) => n); // [[1, 1], [3, 3], [4], [5, 5, 5]]
 ```

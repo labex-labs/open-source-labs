@@ -1,16 +1,22 @@
-# Date Is Weekend
+# Checking if Date is a Weekend
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a given date is a weekend, follow these steps:
 
-Checks if the given date is a weekend.
-
-- Use `Date.prototype.getDay()` to check weekend by using a modulo operator (`%`).
+- Open the Terminal/SSH and type `node` to start practicing coding.
+- Use `Date.prototype.getDay()` method to get the day of the week as a number (0-6), with Sunday being 0 and Saturday being 6.
+- Check if the day is a weekend by using a modulo operator (`%`) and comparing it to 0 or 6.
 - Omit the argument, `d`, to use the current date as default.
+
+Here's an example code snippet that you can use:
 
 ```js
 const isWeekend = (d = new Date()) => d.getDay() % 6 === 0;
 ```
 
+To test the function, simply call it without any argument:
+
 ```js
-isWeekend(); // 2018-10-19 (if current date is 2018-10-18)
+isWeekend(); // true or false (depending on the current date)
 ```
+
+This will return `true` if the current date is a weekend (Saturday or Sunday) and `false` otherwise.

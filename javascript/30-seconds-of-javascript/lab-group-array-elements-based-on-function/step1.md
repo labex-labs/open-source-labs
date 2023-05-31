@@ -1,24 +1,17 @@
-# Group Array Elements Based on Function
+# JavaScript Function to Group Array Elements
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To group elements in arrays, you can use the `zipWith` function.
 
-Creates an array of elements, grouped based on the position in the original arrays and using a function to specify how grouped values should be combined.
+Here's how it works:
 
-- Check if the last argument provided is a function.
-- Use `Math.max()` to get the longest array in the arguments.
-- Use `Array.from()` to create an array with appropriate length and a mapping function to create array of grouped elements.
-- If lengths of the argument arrays vary, `undefined` is used where no value could be found.
+- The function takes an unlimited number of arrays as arguments.
+- It checks if the last argument is a function.
+- It uses `Math.max()` to find the length of the longest array.
+- It creates a new array of grouped elements using `Array.from()` and a mapping function.
+- If the lengths of the argument arrays vary, `undefined` is used where no value could be found.
 - The function is invoked with the elements of each group.
 
-```js
-const zipWith = (...array) => {
-  const fn =
-    typeof array[array.length - 1] === 'function' ? array.pop() : undefined;
-  return Array.from({ length: Math.max(...array.map(a => a.length)) }, (_, i) =>
-    fn ? fn(...array.map(a => a[i])) : array.map(a => a[i])
-  );
-};
-```
+Here's an example usage of the `zipWith` function:
 
 ```js
 zipWith([1, 2], [10, 20], [100, 200], (a, b, c) => a + b + c); // [111, 222]
@@ -27,6 +20,8 @@ zipWith(
   [10, 20],
   [100, 200],
   (a, b, c) =>
-    (a != null ? a : 'a') + (b != null ? b : 'b') + (c != null ? c : 'c')
+    (a != null ? a : "a") + (b != null ? b : "b") + (c != null ? c : "c")
 ); // [111, 222, '3bc']
 ```
+
+To use the `zipWith` function, open the Terminal/SSH and type `node`.

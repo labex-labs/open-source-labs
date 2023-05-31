@@ -1,14 +1,14 @@
-# Number Is Power of Ten
+# Check If a Number Is a Power of Ten
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a number is a power of ten, open the Terminal/SSH and type `node`.
 
-Checks if the given number is a power of `10`.
-
-- Use `Math.log10()` and the modulo operator (`%`) to determine if `n` is a power of `10`.
+Here's the code you can use to determine if `n` is a power of `10`:
 
 ```js
-const isPowerOfTen = n => Math.log10(n) % 1 === 0;
+const isPowerOfTen = (n) => Math.log10(n) % 1 === 0;
 ```
+
+Use `isPowerOfTen()` function to determine whether a given number is a power of ten.
 
 ```js
 isPowerOfTen(1); // true

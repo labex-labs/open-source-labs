@@ -1,11 +1,12 @@
-# Order Array of Objects Based on Property Order
+# How to Order an Array of Objects Based on Property Order
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To order an array of objects based on a property order, follow these steps:
 
-Sorts an array of objects, ordered by a property, based on the array of orders provided.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Array.prototype.reduce()` to create an object from the `order` array with the values as keys and their original index as the value.
+3. Use `Array.prototype.sort()` to sort the given array, skipping elements for which `prop` is empty or not in the `order` array.
 
-- Use `Array.prototype.reduce()` to create an object from the `order` array with the values as keys and their original index as the value.
-- Use `Array.prototype.sort()` to sort the given array, skipping elements for which `prop` is empty or not in the `order` array.
+Here's an example code snippet for ordering an array of objects based on a property order:
 
 ```js
 const orderWith = (arr, prop, order) => {
@@ -21,16 +22,18 @@ const orderWith = (arr, prop, order) => {
 };
 ```
 
+You can use the `orderWith` function to order an array of objects based on a property order. For example:
+
 ```js
 const users = [
-  { name: 'fred', language: 'Javascript' },
-  { name: 'barney', language: 'TypeScript' },
-  { name: 'frannie', language: 'Javascript' },
-  { name: 'anna', language: 'Java' },
-  { name: 'jimmy' },
-  { name: 'nicky', language: 'Python' },
+  { name: "fred", language: "Javascript" },
+  { name: "barney", language: "TypeScript" },
+  { name: "frannie", language: "Javascript" },
+  { name: "anna", language: "Java" },
+  { name: "jimmy" },
+  { name: "nicky", language: "Python" },
 ];
-orderWith(users, 'language', ['Javascript', 'TypeScript', 'Java']);
+orderWith(users, "language", ["Javascript", "TypeScript", "Java"]);
 /*
 [
   { name: 'fred', language: 'Javascript' },

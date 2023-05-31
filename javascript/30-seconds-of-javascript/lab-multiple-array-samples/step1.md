@@ -1,12 +1,6 @@
-# N Random Elements in Array
+# Code Practice: Getting Random Elements from an Array
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Gets `n` random elements at unique keys from an array up to the size of the array.
-
-- Shuffle the array using the [Fisher-Yates algorithm](https://github.com/30-seconds/30-seconds-of-code#shuffle).
-- Use `Array.prototype.slice()` to get the first `n` elements.
-- Omit the second argument, `n`, to get only one element at random from the array.
+To practice coding, open the Terminal/SSH and type `node`. The following code utilizes the Fisher-Yates algorithm to shuffle an array and retrieve `n` random, unique elements at unique keys from the array, up to the size of the array.
 
 ```js
 const sampleSize = ([...arr], n = 1) => {
@@ -18,6 +12,8 @@ const sampleSize = ([...arr], n = 1) => {
   return arr.slice(0, n);
 };
 ```
+
+To use this code, call `sampleSize()` with an array and an optional number `n` of elements to retrieve. If `n` is not provided, the function will return only one element at random from the array.
 
 ```js
 sampleSize([1, 2, 3], 2); // [3, 1]

@@ -1,15 +1,11 @@
-# Selection Sort
+# Selection Sort Algorithm
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start coding, open the Terminal/SSH and type `node`.
 
-Sorts an array of numbers, using the selection sort algorithm.
-
-- Use the spread operator (`...`) to clone the original array, `arr`.
-- Use a `for` loop to iterate over elements in the array.
-- Use `Array.prototype.slice()` and `Array.prototype.reduce()` to find the index of the minimum element in the subarray to the right of the current index. Perform a swap, if necessary.
+The following function sorts an array of numbers using the selection sort algorithm:
 
 ```js
-const selectionSort = arr => {
+const selectionSort = (arr) => {
   const a = [...arr];
   for (let i = 0; i < a.length; i++) {
     const min = a
@@ -21,6 +17,10 @@ const selectionSort = arr => {
 };
 ```
 
+To use the function, pass an array of numbers to `selectionSort()`, like this:
+
 ```js
 selectionSort([5, 1, 4, 2, 3]); // [1, 2, 3, 4, 5]
 ```
+
+The function works by cloning the original array using the spread operator (`...`). It then iterates over the array using a `for` loop. Using `Array.prototype.slice()` and `Array.prototype.reduce()`, it finds the index of the minimum element in the subarray to the right of the current index. If necessary, it performs a swap.

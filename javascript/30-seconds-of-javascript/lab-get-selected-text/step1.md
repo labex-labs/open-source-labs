@@ -1,15 +1,15 @@
-# Get Selected Text
+# Retrieving Selected Text
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Gets the currently selected text.
-
-- Use `Window.getSelection()` and `Selection.toString()` to get the currently selected text.
+To retrieve the currently selected text, use the following code snippet:
 
 ```js
 const getSelectedText = () => window.getSelection().toString();
 ```
 
+You can call the `getSelectedText` function to retrieve the selected text, which will be returned as a string. For example:
+
 ```js
 getSelectedText(); // 'Lorem ipsum'
 ```
+
+To get started with coding practice, open the Terminal/SSH and type `node`.

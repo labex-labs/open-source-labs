@@ -1,15 +1,18 @@
-# Head of Array
+# How to Get the First Element of an Array in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To get the first element of an array in JavaScript, you can use the `head` function. Here's how you can use it:
 
-Returns the head of an array.
-
-- Check if `arr` is truthy and has a `length` property.
-- Use `arr[0]` if possible to return the first element, otherwise return `undefined`.
+1. Open the Terminal/SSH.
+2. Type `node` to start practicing coding.
+3. Use the following code to get the head of an array:
 
 ```js
-const head = arr => (arr && arr.length ? arr[0] : undefined);
+const head = (arr) => (arr && arr.length ? arr[0] : undefined);
 ```
+
+4. Call the `head` function with an array as its argument to get the first element. If the array is empty or falsy, the function will return `undefined`.
+
+Here are some examples:
 
 ```js
 head([1, 2, 3]); // 1

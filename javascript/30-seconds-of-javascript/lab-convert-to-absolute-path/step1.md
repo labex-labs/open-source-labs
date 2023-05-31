@@ -1,16 +1,14 @@
-# Convert to Absolute Path
+# How to Convert a Tilde Path to an Absolute Path in Node.js
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Converts a tilde path to an absolute path.
-
-- Use `String.prototype.replace()` with a regular expression and `os.homedir()` to replace the `~` in the start of the path with the home directory.
+To begin coding practice in Node.js, open the Terminal or SSH and type `node`. To convert a tilde path to an absolute path, use the following code:
 
 ```js
-const untildify = str =>
-  str.replace(/^~($|\/|\\)/, `${require('os').homedir()}$1`);
+const untildify = (str) =>
+  str.replace(/^~($|\/|\\)/, `${require("os").homedir()}$1`);
 ```
 
+The code uses `String.prototype.replace()` with a regular expression and `os.homedir()` to replace the `~` at the beginning of the path with the home directory. Here is an example of how to use the `untildify` function:
+
 ```js
-untildify('~/node'); // '/Users/aUser/node'
+untildify("~/node"); // returns '/Users/aUser/node'
 ```

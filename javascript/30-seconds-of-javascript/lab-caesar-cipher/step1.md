@@ -1,14 +1,16 @@
 # Caesar Cipher
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To use the Caesar cipher, follow these steps:
 
-Encrypts or decrypts a given string using the Caesar cipher.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Call the `caesarCipher` function with the string to be encrypted or decrypted, the shift value, and a boolean indicating whether to decrypt or not.
+3. The `caesarCipher` function uses the modulo (`%`) operator and the ternary operator (`?`) to calculate the correct encryption or decryption key.
+4. It uses the spread operator (`...`) and `Array.prototype.map()` to iterate over the letters of the given string.
+5. It uses `String.prototype.charCodeAt()` and `String.fromCharCode()` to convert each letter appropriately, ignoring special characters, spaces, etc.
+6. It uses `Array.prototype.join()` to combine all the letters into a string.
+7. If you want to decrypt an encrypted string, pass `true` to the last parameter, `decrypt`, when calling the `caesarCipher` function.
 
-- Use the modulo (`%`) operator and the ternary operator (`?`) to calculate the correct encryption/decryption key.
-- Use the spread operator (`...`) and `Array.prototype.map()` to iterate over the letters of the given string.
-- Use `String.prototype.charCodeAt()` and `String.fromCharCode()` to convert each letter appropriately, ignoring special characters, spaces etc.
-- Use `Array.prototype.join()` to combine all the letters into a string.
-- Pass `true` to the last parameter, `decrypt`, to decrypt an encrypted string.
+Here is the code for the `caesarCipher` function:
 
 ```js
 const caesarCipher = (str, shift, decrypt = false) => {
@@ -23,11 +25,13 @@ const caesarCipher = (str, shift, decrypt = false) => {
         return String.fromCharCode(((c - 97 + n) % 26) + 97);
       return l;
     })
-    .join('');
+    .join("");
 };
 ```
 
+Here are some examples of how to use the `caesarCipher` function:
+
 ```js
-caesarCipher('Hello World!', -3); // 'Ebiil Tloia!'
-caesarCipher('Ebiil Tloia!', 23, true); // 'Hello World!'
+caesarCipher("Hello World!", -3); // 'Ebiil Tloia!'
+caesarCipher("Ebiil Tloia!", 23, true); // 'Hello World!'
 ```

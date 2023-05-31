@@ -1,32 +1,44 @@
-# Calculate SHA-256 Hash (Browser)
+# How to Calculate SHA-256 Hash in a Browser
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Creates a hash for a value using the [SHA-256](https://en.wikipedia.org/wiki/SHA-2) algorithm.
-Returns a promise.
-
-- Use the [SubtleCrypto](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto) API to create a hash for the given value.
-- Create a new `TextEncoder` and use it to encode `val`. Pass its value to `SubtleCrypto.digest()` to generate a digest of the given data.
-- Use `DataView.prototype.getUint32()` to read data from the resolved `ArrayBuffer`.
-- Convert the data to its hexadecimal representation using `Number.prototype.toString()`. Add the data to an array using `Array.prototype.push()`.
-- Finally, use `Array.prototype.join()` to combine values in the array of `hexes` into a string.
+To calculate the SHA-256 hash of a value in a browser, use the following code snippet:
 
 ```js
-const hashBrowser = val =>
-  crypto.subtle
-    .digest('SHA-256', new TextEncoder('utf-8').encode(val))
-    .then(h => {
-      let hexes = [],
-        view = new DataView(h);
-      for (let i = 0; i < view.byteLength; i += 4)
-        hexes.push(('00000000' + view.getUint32(i).toString(16)).slice(-8));
-      return hexes.join('');
+const hashBrowser = (val) => {
+  return crypto.subtle
+    .digest("SHA-256", new TextEncoder("utf-8").encode(val))
+    .then((h) => {
+      const hexes = [];
+      const view = new DataView(h);
+      for (let i = 0; i < view.byteLength; i += 4) {
+        hexes.push(("00000000" + view.getUint32(i).toString(16)).slice(-8));
+      }
+      return hexes.join("");
     });
+};
 ```
+
+This function creates a hash for a value using the SHA-256 algorithm and returns a promise. To use it, pass the value to be hashed as an argument.
+
+For example, to hash the following JSON object:
+
+```js
+{
+  a: 'a',
+  b: [1, 2, 3, 4],
+  foo: { c: 'bar' }
+}
+```
+
+Use the following code:
 
 ```js
 hashBrowser(
-  JSON.stringify({ a: 'a', b: [1, 2, 3, 4], foo: { c: 'bar' } })
+  JSON.stringify({ a: "a", b: [1, 2, 3, 4], foo: { c: "bar" } })
 ).then(console.log);
-// '04aa106279f5977f59f9067fa9712afc4aedc6f5862a8defc34552d8c7206393'
+```
+
+This will output the following SHA-256 hash:
+
+```
+04aa106279f5977f59f9067fa9712afc4aedc6f5862a8defc34552d8c7206393
 ```

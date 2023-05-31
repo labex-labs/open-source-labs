@@ -1,15 +1,14 @@
-# Quotient and Module of Division
+# Code Practice: Quotient and Module of Division
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To practice coding, open the Terminal/SSH and type `node`. This code returns an array that consists of the quotient and remainder of the given numbers.
 
-Returns an array consisting of the quotient and remainder of the given numbers.
-
-- Use `Math.floor()` to get the quotient of the division `x / y`.
-- Use the modulo operator (`%`) to get the remainder of the division `x / y`.
+To get the quotient of the division `x / y`, use `Math.floor()`. To get the remainder of the division `x / y`, use the modulo operator (`%`).
 
 ```js
 const divmod = (x, y) => [Math.floor(x / y), x % y];
 ```
+
+For example:
 
 ```js
 divmod(8, 3); // [2, 2]

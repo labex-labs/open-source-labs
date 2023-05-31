@@ -1,19 +1,27 @@
-# Trigger Event on HTML Element
+# How to Trigger an Event on an HTML Element
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To trigger an event on a specific element in HTML, follow these steps:
 
-Triggers a specific event on a given element, optionally passing custom data.
+1. Open the Terminal/SSH to start coding practice.
+2. Create a new event using the `CustomEvent` constructor and specify the `eventType` and details.
+3. Use `EventTarget.dispatchEvent()` to trigger the new event on the element.
+4. To pass custom data to the event, include the `detail` argument.
 
-- Use the `CustomEvent` constructor to create an event from the specified `eventType` and details.
-- Use `EventTarget.dispatchEvent()` to trigger the newly created event on the given element.
-- Omit the third argument, `detail`, if you do not want to pass custom data to the triggered event.
+Here's an example of how to trigger an event on an HTML element:
 
 ```js
 const triggerEvent = (el, eventType, detail) =>
   el.dispatchEvent(new CustomEvent(eventType, { detail }));
 ```
 
+To trigger a click event on an element with the ID `myId`, use the following code:
+
 ```js
-triggerEvent(document.getElementById('myId'), 'click');
-triggerEvent(document.getElementById('myId'), 'click', { username: 'bob' });
+triggerEvent(document.getElementById("myId"), "click");
+```
+
+To pass custom data to the event, include it as an object in the `detail` argument:
+
+```js
+triggerEvent(document.getElementById("myId"), "click", { username: "bob" });
 ```

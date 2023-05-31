@@ -1,15 +1,18 @@
 # Drop Array Elements From the Right
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To remove a specified number of elements from the right of an array, follow these steps:
 
-Creates a new array with `n` elements removed from the right.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Array.prototype.slice()` to remove the specified number of elements from the right.
+3. If you want to remove only one element, you can omit the last argument, `n`, and the default value of `1` will be used.
 
-- Use `Array.prototype.slice()` to remove the specified number of elements from the right.
-- Omit the last argument, `n`, to use a default value of `1`.
+Here's an example code snippet:
 
 ```js
 const dropRight = (arr, n = 1) => arr.slice(0, -n);
 ```
+
+You can test this function with the following examples:
 
 ```js
 dropRight([1, 2, 3]); // [1, 2]

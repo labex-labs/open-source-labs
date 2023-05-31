@@ -1,16 +1,19 @@
-# Offset Array Elements
+# How to Offset Array Elements in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To move a specified number of elements to the end of a JavaScript array, follow these steps:
 
-Moves the specified amount of elements to the end of the array.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the `Array.prototype.slice()` method twice to get the elements after the specified index and the elements before that.
+3. Use the spread operator (`...`) to combine the two arrays into one.
+4. If the `offset` is negative, the elements will be moved from the end to the start of the array.
 
-- Use `Array.prototype.slice()` twice to get the elements after the specified index and the elements before that.
-- Use the spread operator (`...`) to combine the two into one array.
-- If `offset` is negative, the elements will be moved from end to start.
+Here's an example code snippet that implements the `offset` function:
 
 ```js
 const offset = (arr, offset) => [...arr.slice(offset), ...arr.slice(0, offset)];
 ```
+
+You can then call the function with your desired array and offset values:
 
 ```js
 offset([1, 2, 3, 4, 5], 2); // [3, 4, 5, 1, 2]

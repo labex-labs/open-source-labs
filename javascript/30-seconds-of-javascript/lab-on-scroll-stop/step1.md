@@ -1,21 +1,21 @@
-# Handle Scroll Stop
+# Handling Scroll Stop
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start coding, open the Terminal/SSH and type `node`.
 
-Runs the callback whenever the user has stopped scrolling.
+This script runs a callback function when the user stops scrolling:
 
 - Use `EventTarget.addEventListener()` to listen for the `'scroll'` event.
-- Use `setTimeout()` to wait `150` ms until calling the given `callback`.
+- Use `setTimeout()` to wait `150` ms before calling the given `callback`.
 - Use `clearTimeout()` to clear the timeout if a new `'scroll'` event is fired in under `150` ms.
 
 ```js
-const onScrollStop = callback => {
-  let isScrolling;
+const handleScrollStop = (callback) => {
+  let scrollTimeout;
   window.addEventListener(
-    'scroll',
-    e => {
-      clearTimeout(isScrolling);
-      isScrolling = setTimeout(() => {
+    "scroll",
+    (e) => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
         callback();
       }, 150);
     },
@@ -25,7 +25,7 @@ const onScrollStop = callback => {
 ```
 
 ```js
-onScrollStop(() => {
-  console.log('The user has stopped scrolling');
+handleScrollStop(() => {
+  console.log("The user has stopped scrolling.");
 });
 ```

@@ -1,18 +1,12 @@
-# User Prefers Light Color Scheme
+# Check User Preference for Light Color Scheme and Open Terminal/SSH to Start Coding
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the user color scheme preference is `light`.
-
-- Use `Window.matchMedia()` with the appropriate media query to check the user color scheme preference.
+To determine if the user prefers a light color scheme, use the `Window.matchMedia()` method with the appropriate media query. Here's an example code snippet:
 
 ```js
 const prefersLightColorScheme = () =>
   window &&
   window.matchMedia &&
-  window.matchMedia('(prefers-color-scheme: light)').matches;
+  window.matchMedia("(prefers-color-scheme: light)").matches;
 ```
 
-```js
-prefersLightColorScheme(); // true
-```
+Once you've checked the user preference, you can proceed to open the Terminal/SSH and start practicing coding by typing `node`.

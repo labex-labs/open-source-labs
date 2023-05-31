@@ -1,19 +1,23 @@
-# Omit Object Keys
+# Remove Keys from Object
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To remove specific keys from an object, use the `omit` function which takes an object and an array of keys to remove.
 
-Omits the key-value pairs corresponding to the given keys from an object.
-
-- Use `Object.keys()`, `Array.prototype.filter()` and `Array.prototype.includes()` to remove the provided keys.
-- Use `Array.prototype.reduce()` to convert the filtered keys back to an object with the corresponding key-value pairs.
+- The `Object.keys()` method is used to get all the keys of the object
+- The `Array.prototype.filter()` method is then used to remove the specified keys from the list of keys
+- Finally, `Array.prototype.reduce()` is used to create a new object with the remaining key-value pairs
 
 ```js
-const omit = (obj, arr) =>
+const omit = (obj, keysToRemove) =>
   Object.keys(obj)
-    .filter(k => !arr.includes(k))
-    .reduce((acc, key) => ((acc[key] = obj[key]), acc), {});
+    .filter((key) => !keysToRemove.includes(key))
+    .reduce((newObj, key) => {
+      newObj[key] = obj[key];
+      return newObj;
+    }, {});
 ```
 
+Example usage:
+
 ```js
-omit({ a: 1, b: '2', c: 3 }, ['b']); // { 'a': 1, 'c': 3 }
+omit({ a: 1, b: "2", c: 3 }, ["b"]); // { 'a': 1, 'c': 3 }
 ```

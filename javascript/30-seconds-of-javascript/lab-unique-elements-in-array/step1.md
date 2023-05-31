@@ -1,16 +1,20 @@
-# Unique Values in Array
+# How to Find Unique Values in Array with JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To find all unique values in an array, you can follow these steps in JavaScript:
 
-Finds all unique values in an array.
+1. Create a `Set` from the given array to discard duplicated values.
+2. Use the spread operator (`...`) to convert the `Set` back to an array.
 
-- Create a `Set` from the given array to discard duplicated values.
-- Use the spread operator (`...`) to convert it back to an array.
-
-```js
-const uniqueElements = arr => [...new Set(arr)];
-```
+Here's an example code snippet:
 
 ```js
-uniqueElements([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
+const getUniqueValues = (arr) => [...new Set(arr)];
 ```
+
+You can call the function and pass an array to it, like this:
+
+```js
+getUniqueValues([1, 2, 2, 3, 4, 4, 5]); // [1, 2, 3, 4, 5]
+```
+
+This will return an array with all the unique values from the original array, without any duplicates.

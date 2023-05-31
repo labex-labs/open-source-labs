@@ -1,16 +1,25 @@
-# Type of Value
+# Function to Get Type of Value
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Returns the native type of a value.
-
-- Return `'undefined'` or `'null'` if the value is `undefined` or `null`.
-- Otherwise, use `Object.prototype.constructor` and `Function.prototype.name` to get the name of the constructor.
+To get the type of a value, use the following function:
 
 ```js
-const getType = v =>
-  (v === undefined ? 'undefined' : v === null ? 'null' : v.constructor.name);
+const getType = (v) => {
+  if (v === undefined) {
+    return "undefined";
+  }
+
+  if (v === null) {
+    return "null";
+  }
+
+  return v.constructor.name;
+};
 ```
+
+- The function returns `'undefined'` or `'null'` if the value is `undefined` or `null`.
+- Otherwise, it returns the name of the constructor by using `Object.prototype.constructor` and `Function.prototype.name`.
+
+Example usage:
 
 ```js
 getType(new Set([1, 2, 3])); // 'Set'

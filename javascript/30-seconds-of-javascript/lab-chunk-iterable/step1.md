@@ -1,12 +1,12 @@
 # Chunk Iterable
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To chunk an iterable into smaller arrays of a specified size, follow these steps:
 
-Chunks an iterable into smaller arrays of a specified size.
-
-- Use a `for...of` loop over the given iterable, using `Array.prototype.push()` to add each new value to the current `chunk`.
-- Use `Array.prototype.length` to check if the current `chunk` is of the desired `size` and `yield` the value if it is.
-- Finally, use `Array.prototype.length` to check the final `chunk` and `yield` it if it's non-empty.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use a `for...of` loop over the given iterable, using `Array.prototype.push()` to add each new value to the current `chunk`.
+3. Check if the current `chunk` is of the desired `size` using `Array.prototype.length` and `yield` the value if it is.
+4. Check the final `chunk` using `Array.prototype.length` and `yield` it if it's non-empty.
+5. Use the following code:
 
 ```js
 const chunkify = function* (itr, size) {
@@ -21,6 +21,8 @@ const chunkify = function* (itr, size) {
   if (chunk.length) yield chunk;
 };
 ```
+
+6. Use this code to test the function:
 
 ```js
 const x = new Set([1, 2, 1, 3, 4, 1, 2, 5]);

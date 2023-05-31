@@ -1,13 +1,18 @@
-# Change Color Lightness
+# How to Change the Lightness of an HSL Color
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To change the lightness value of an `hsl()` color string, follow these steps:
 
-Changes the lightness value of an `hsl()` color string.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
 
-- Use `String.prototype.match()` to get an array of 3 strings with the numeric values.
-- Use `Array.prototype.map()` in combination with `Number` to convert them into an array of numeric values.
-- Make sure the lightness is within the valid range (between `0` and `100`), using `Math.max()` and `Math.min()`.
-- Use a template literal to create a new `hsl()` string with the updated value.
+2. Use `String.prototype.match()` to get an array of three strings with the numeric values from the `hsl()` string.
+
+3. Use `Array.prototype.map()` in combination with `Number` to convert the strings into an array of numeric values.
+
+4. Ensure the lightness value falls within the valid range (between `0` and `100`) using `Math.max()` and `Math.min()`.
+
+5. Use a template literal to create a new `hsl()` string with the updated lightness value.
+
+Here's an example code snippet that implements these steps:
 
 ```js
 const changeLightness = (delta, hslStr) => {
@@ -22,7 +27,9 @@ const changeLightness = (delta, hslStr) => {
 };
 ```
 
+You can then call the `changeLightness()` function with a delta value and an `hsl()` string to get a new `hsl()` string with the updated lightness value. For example:
+
 ```js
-changeLightness(10, 'hsl(330, 50%, 50%)'); // 'hsl(330, 50%, 60%)'
-changeLightness(-10, 'hsl(330, 50%, 50%)'); // 'hsl(330, 50%, 40%)'
+changeLightness(10, "hsl(330, 50%, 50%)"); // 'hsl(330, 50%, 60%)'
+changeLightness(-10, "hsl(330, 50%, 50%)"); // 'hsl(330, 50%, 40%)'
 ```

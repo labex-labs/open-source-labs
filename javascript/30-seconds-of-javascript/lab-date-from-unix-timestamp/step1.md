@@ -1,15 +1,18 @@
-# Date From Unix Timestamp
+# How to Create a Date Object from Unix Timestamp
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To create a `Date` object from a Unix timestamp, follow these steps:
 
-Creates a `Date` object from a Unix timestamp.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Multiply the timestamp by `1000` to convert it to milliseconds.
+3. Use the `Date` constructor to create a new `Date` object.
 
-- Convert the timestamp to milliseconds by multiplying with `1000`.
-- Use the `Date` constructor to create a new `Date` object.
+Here's an example code snippet:
 
 ```js
-const fromTimestamp = timestamp => new Date(timestamp * 1000);
+const fromTimestamp = (timestamp) => new Date(timestamp * 1000);
 ```
+
+You can use this function to convert a Unix timestamp to a `Date` object like this:
 
 ```js
 fromTimestamp(1602162242); // 2020-10-08T13:04:02.000Z

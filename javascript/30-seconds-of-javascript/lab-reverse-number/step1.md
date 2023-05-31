@@ -1,17 +1,20 @@
-# Reverse Number
+# Reversing a Number
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To reverse a number using JavaScript, you can use the `reverseNumber()` function with the following steps:
 
-Reverses a number.
+1. Convert the number `n` to a string using `Object.prototype.toString()`.
+2. Use `String.prototype.split()`, `Array.prototype.reverse()` and `Array.prototype.join()` to get the reversed value of `n` as a string.
+3. Convert the string back to a number using `parseFloat()`.
+4. Preserve the sign of the number using `Math.sign()`.
 
-- Use `Object.prototype.toString()` to convert `n` to a string.
-- Use `String.prototype.split()`, `Array.prototype.reverse()` and `Array.prototype.join()` to get the reversed value of `n` as a string.
-- Use `parseFloat()` to convert the string to a number and `Math.sign()` to preserve its sign.
+Here's the code for the `reverseNumber()` function:
 
 ```js
-const reverseNumber = n =>
-  parseFloat(`${n}`.split('').reverse().join('')) * Math.sign(n);
+const reverseNumber = (n) =>
+  parseFloat(`${n}`.split("").reverse().join("")) * Math.sign(n);
 ```
+
+You can test the function with these examples:
 
 ```js
 reverseNumber(981); // 189

@@ -1,12 +1,10 @@
-# Ungroup Array Elements Based on Function
+# How to Ungroup Array Elements Based on a Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+If you need to ungroup elements in an array produced by `zip` and apply a function, you can use `unzipWith`. Here's how you can implement it:
 
-Creates an array of elements, ungrouping the elements in an array produced by [zip](/js/s/zip) and applying the provided function.
-
-- Use `Math.max()` and the spread operator (`...`) to get the longest subarray in the array, `Array.prototype.map()` to make each element an array.
-- Use `Array.prototype.reduce()` and `Array.prototype.forEach()` to map grouped values to individual arrays.
-- Use `Array.prototype.map()` and the spread operator (`...`) to apply `fn` to each individual group of elements.
+1. Use `Math.max()` and the spread operator (`...`) to get the longest subarray in the array and `Array.prototype.map()` to make each element an array.
+2. Use `Array.prototype.reduce()` and `Array.prototype.forEach()` to map grouped values to individual arrays.
+3. Use `Array.prototype.map()` and the spread operator (`...`) to apply `fn` to each individual group of elements.
 
 ```js
 const unzipWith = (arr, fn) =>
@@ -14,11 +12,13 @@ const unzipWith = (arr, fn) =>
     .reduce(
       (acc, val) => (val.forEach((v, i) => acc[i].push(v)), acc),
       Array.from({
-        length: Math.max(...arr.map(x => x.length))
-      }).map(x => [])
+        length: Math.max(...arr.map((x) => x.length)),
+      }).map((x) => [])
     )
-    .map(val => fn(...val));
+    .map((val) => fn(...val));
 ```
+
+To use `unzipWith`, open the Terminal/SSH and type `node`. Then, you can run the following example:
 
 ```js
 unzipWith(
@@ -30,3 +30,5 @@ unzipWith(
 );
 // [3, 30, 300]
 ```
+
+This will create an array of elements by ungrouping the elements in the input array produced by `zip` and applying the provided function.

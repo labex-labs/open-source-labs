@@ -1,20 +1,14 @@
 # Geometric Progression
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate a geometric progression, use the `geometricProgression` function. This function takes three arguments: `end`, `start` (optional), and `step` (optional).
 
-Initializes an array containing the numbers in the specified range where `start` and `end` are inclusive and the ratio between two terms is `step`.
-Returns an error if `step` equals `1`.
+The `end` parameter specifies the end value of the progression. If you omit the `start` parameter, it defaults to `1`. If you omit the `step` parameter, it defaults to `2`.
 
-- Use `Array.from()`, `Math.log()` and `Math.floor()` to create an array of the desired length, `Array.prototype.map()` to fill with the desired values in a range.
-- Omit the second argument, `start`, to use a default value of `1`.
-- Omit the third argument, `step`, to use a default value of `2`.
+The function initializes an array containing the numbers in the specified range where `start` and `end` are inclusive and the ratio between two terms is `step`. It returns an error if `step` equals `1`.
 
-```js
-const geometricProgression = (end, start = 1, step = 2) =>
-  Array.from({
-    length: Math.floor(Math.log(end / start) / Math.log(step)) + 1,
-  }).map((_, i) => start * step ** i);
-```
+To create the array, the function uses `Array.from()`, `Math.log()`, and `Math.floor()`. It then fills the array with the desired values in a range using `Array.prototype.map()`.
+
+Here's an example usage:
 
 ```js
 geometricProgression(256); // [1, 2, 4, 8, 16, 32, 64, 128, 256]

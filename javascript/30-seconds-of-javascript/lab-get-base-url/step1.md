@@ -1,16 +1,20 @@
-# Get Base URL
+# Retrieving Base URL
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To retrieve the base URL from a given URL, follow these steps:
 
-Gets the current URL without any parameters or fragment identifiers.
-
-- Use `String.prototype.replace()` with an appropriate regular expression to remove everything after either `'?'` or `'#'`, if found.
+1. Open the Terminal/SSH.
+2. Type `node` to start practicing coding.
+3. Use the following JavaScript function to get the current URL without any parameters or fragment identifiers:
 
 ```js
-const getBaseURL = url => url.replace(/[?#].*$/, '');
+const getBaseURL = (url) => url.replace(/[?#].*$/, "");
 ```
 
+4. Replace `url` with the URL you want to retrieve the base URL from.
+5. The function will remove everything after either `'?'` or `'#'`, if found, and return the base URL.
+6. Here's an example:
+
 ```js
-getBaseURL('http://url.com/page?name=Adam&surname=Smith');
+getBaseURL("http://url.com/page?name=Adam&surname=Smith");
 // 'http://url.com/page'
 ```

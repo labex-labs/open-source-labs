@@ -1,14 +1,18 @@
-# Number Has Decimal Digits
+# How to Check if a Number Has Decimal Digits
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a number has any decimal digits, you can use the modulo operator in JavaScript. Follow these steps:
 
-Checks if a number has any decimals digits
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the modulo (`%`) operator to check if the number is divisible by `1`.
+3. If the result is not equal to zero, then the number has decimal digits.
 
-- Use the modulo (`%`) operator to check if the number is divisible by `1` and return the result.
+Here's an example code to check if a number has decimal digits:
 
 ```js
-const hasDecimals = num => num % 1 !== 0;
+const hasDecimals = (num) => num % 1 !== 0;
 ```
+
+You can test the function by calling it with different numbers, like this:
 
 ```js
 hasDecimals(1); // false

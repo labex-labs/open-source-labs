@@ -1,12 +1,13 @@
-# Weighted Sample
+# How to Get a Weighted Sample from an Array in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To randomly get an element from an array based on the provided weights, follow these steps:
 
-Gets a random element from an array, using the provided `weights` as the probabilities for each element.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Array.prototype.reduce()` to create an array of partial sums for each value in `weights`.
+3. Use `Math.random()` to generate a random number and `Array.prototype.findIndex()` to find the correct index based on the array previously produced.
+4. Finally, return the element of `arr` with the produced index.
 
-- Use `Array.prototype.reduce()` to create an array of partial sums for each value in `weights`.
-- Use `Math.random()` to generate a random number and `Array.prototype.findIndex()` to find the correct index based on the array previously produced.
-- Finally, return the element of `arr` with the produced index.
+Here is the code to achieve this:
 
 ```js
 const weightedSample = (arr, weights) => {
@@ -21,6 +22,8 @@ const weightedSample = (arr, weights) => {
   ];
 };
 ```
+
+You can test this function by passing an array and its corresponding weights as arguments:
 
 ```js
 weightedSample([3, 7, 9, 11], [0.1, 0.2, 0.6, 0.1]); // 9

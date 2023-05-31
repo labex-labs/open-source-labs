@@ -1,24 +1,24 @@
-# Get All Images in Element
+# Code Snippet: Getting All Images within an Element
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Fetches all images from within an element and puts them into an array.
-
-- Use `Element.getElementsByTagName()` to get all `<img>` elements inside the provided element.
-- Use `Array.prototype.map()` to map every `src` attribute of each `<img>` element.
-- If `includeDuplicates` is `false`, create a new `Set` to eliminate duplicates and return it after spreading into an array.
-- Omit the second argument, `includeDuplicates`, to discard duplicates by default.
+To fetch all images from within an HTML element and store them in an array, you can use the code below:
 
 ```js
-const getImages = (el, includeDuplicates = false) => {
-  const images = [...el.getElementsByTagName('img')].map(img =>
-    img.getAttribute('src')
+const getImages = (element, includeDuplicates = false) => {
+  const images = [...element.getElementsByTagName("img")].map((img) =>
+    img.getAttribute("src")
   );
   return includeDuplicates ? images : [...new Set(images)];
 };
 ```
 
+In this code:
+
+- `element` is the HTML element in which you want to find the images.
+- `includeDuplicates` is an optional argument that determines whether to include or exclude duplicate images from the result. If it is set to `true`, the function will return all images, including duplicates. If it is set to `false` or omitted, the function will return only the unique images.
+
+To use this function, open the Terminal/SSH and type `node`. Then, call the function with the desired element and `includeDuplicates` value:
+
 ```js
-getImages(document, true); // ['image1.jpg', 'image2.png', 'image1.png', '...']
-getImages(document, false); // ['image1.jpg', 'image2.png', '...']
+getImages(document, true); // returns an array of all images within the document, including duplicates
+getImages(document, false); // returns an array of all unique images within the document
 ```

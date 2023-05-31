@@ -1,18 +1,19 @@
-# Check if Object Has Value
+# Function to Check if an Object Contains a Specific Value
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the target value exists in a JSON object.
-
-- Use `Object.values()` to get all the values of the object.
-- Use `Array.prototype.includes()` to check if the target value is included in the values array.
+To check if an object contains a specific value, use the following function:
 
 ```js
 const hasValue = (obj, value) => Object.values(obj).includes(value);
 ```
 
+To use this function, pass in the object you want to search and the target value as arguments. The function will return `true` if the object contains the value and `false` if it does not.
+
+Here's an example:
+
 ```js
 const obj = { a: 100, b: 200 };
-hasValue(obj, 100); // true
-hasValue(obj, 999); // false
+console.log(hasValue(obj, 100)); // true
+console.log(hasValue(obj, 999)); // false
 ```
+
+To get started with coding, open the Terminal/SSH and type `node`.

@@ -1,17 +1,16 @@
-# Sort Characters in String
+# Here's how to sort characters in a string:
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Alphabetically sorts the characters in a string.
-
-- Use the spread operator (`...`), `Array.prototype.sort()` and  `String.prototype.localeCompare()` to sort the characters in `str`.
-- Recombine using `Array.prototype.join()`.
+Use the following code to sort the characters in a string alphabetically:
 
 ```js
-const sortCharactersInString = str =>
-  [...str].sort((a, b) => a.localeCompare(b)).join('');
+const sortCharactersInString = (str) =>
+  [...str].sort((a, b) => a.localeCompare(b)).join("");
 ```
 
+To start, open the Terminal/SSH and type `node` to begin practicing coding.
+
+Example usage:
+
 ```js
-sortCharactersInString('cabbage'); // 'aabbceg'
+sortCharactersInString("cabbage"); // 'aabbceg'
 ```

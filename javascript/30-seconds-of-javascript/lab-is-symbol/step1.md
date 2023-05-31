@@ -1,15 +1,13 @@
-# Value Is Symbol
+# Checking if a Value is a Symbol in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the given argument is a symbol.
-
-- Use `typeof` to check if a value is classified as a symbol primitive.
+To check if a value is a symbol primitive in JavaScript, you can use the `typeof` operator. Here's an example code snippet that you can use:
 
 ```js
-const isSymbol = val => typeof val === 'symbol';
+const isSymbol = (val) => typeof val === "symbol";
 ```
 
+You can call the `isSymbol` function and pass a symbol as an argument to check if it returns `true`. Here's an example:
+
 ```js
-isSymbol(Symbol('x')); // true
+isSymbol(Symbol("x")); // true
 ```

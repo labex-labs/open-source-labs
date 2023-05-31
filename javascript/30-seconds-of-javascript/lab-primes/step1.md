@@ -1,22 +1,28 @@
-# Primes Up to Given Number
+# Generating Primes Using Sieve of Eratosthenes
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate primes up to a given number using the Sieve of Eratosthenes, follow these steps:
 
-Generates primes up to a given number, using the Sieve of Eratosthenes.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Create an array containing numbers from `2` to the given number.
+3. Use `Array.prototype.filter()` to filter out the values that are divisible by any number from `2` to the square root of the provided number.
+4. Return the resulting array containing primes.
 
-- Generate an array from `2` to the given number.
-- Use `Array.prototype.filter()` to filter out the values divisible by any number from `2` to the square root of the provided number.
+Here's the JavaScript code to generate primes up to a given number:
 
 ```js
-const primes = num => {
+const generatePrimes = (num) => {
   let arr = Array.from({ length: num - 1 }).map((x, i) => i + 2),
-    sqroot = Math.floor(Math.sqrt(num)),
-    numsTillSqroot = Array.from({ length: sqroot - 1 }).map((x, i) => i + 2);
-  numsTillSqroot.forEach(x => (arr = arr.filter(y => y % x !== 0 || y === x)));
+    sqrt = Math.floor(Math.sqrt(num)),
+    numsTillSqrt = Array.from({ length: sqrt - 1 }).map((x, i) => i + 2);
+  numsTillSqrt.forEach(
+    (x) => (arr = arr.filter((y) => y % x !== 0 || y === x))
+  );
   return arr;
 };
 ```
 
+You can call the function `generatePrimes()` by passing the desired number as an argument. For example:
+
 ```js
-primes(10); // [2, 3, 5, 7]
+generatePrimes(10); // [2, 3, 5, 7]
 ```

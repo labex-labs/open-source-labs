@@ -1,29 +1,27 @@
-# HTTP Get
+# HTTP Get Request
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To make a GET request to a given URL in JavaScript using `XMLHttpRequest` web API, follow the steps below:
 
-Makes a `GET` request to the passed URL.
-
-- Use the `XMLHttpRequest` web API to make a `GET` request to the given `url`.
-- Handle the `onload` event, by calling the given `callback` the `responseText`.
-- Handle the `onerror` event, by running the provided `err` function.
-- Omit the third argument, `err`, to log errors to the console's `error` stream by default.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the `httpGet` function provided below to make the GET request.
+3. Pass the URL as the first argument to the `httpGet` function.
+4. Pass the `callback` function as the second argument to handle the `onload` event and receive the `responseText`.
+5. Pass the `err` function as the third argument to handle the `onerror` event. If you omit the third argument, errors will be logged to the console's `error` stream by default.
 
 ```js
 const httpGet = (url, callback, err = console.error) => {
   const request = new XMLHttpRequest();
-  request.open('GET', url, true);
+  request.open("GET", url, true);
   request.onload = () => callback(request.responseText);
   request.onerror = () => err(request);
   request.send();
 };
 ```
 
+To test the `httpGet` function, use the following code:
+
 ```js
-httpGet(
-  'https://jsonplaceholder.typicode.com/posts/1',
-  console.log
-); /*
+httpGet("https://jsonplaceholder.typicode.com/posts/1", console.log); /*
 Logs: {
   "userId": 1,
   "id": 1,

@@ -1,18 +1,20 @@
-# Array to HTML List
+# Converting Array to HTML List
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To begin coding, launch the Terminal/SSH and enter `node`.
 
-Converts the given array elements into `<li>` tags and appends them to the list of the given id.
+This function converts the given array elements into `<li>` tags and adds them to the list with the given id.
 
-- Use `Array.prototype.map()` and `Document.querySelector()` to create a list of html tags.
+Use `Array.prototype.map()` and `Document.querySelector()` to generate a list of HTML tags.
 
 ```js
 const arrayToHTMLList = (arr, listID) =>
-  document.querySelector(`#${listID}`).innerHTML += arr
-    .map(item => `<li>${item}</li>`)
-    .join('');
+  (document.querySelector(`#${listID}`).innerHTML += arr
+    .map((item) => `<li>${item}</li>`)
+    .join(""));
 ```
 
+Example usage:
+
 ```js
-arrayToHTMLList(['item 1', 'item 2'], 'myListID');
+arrayToHTMLList(["item 1", "item 2"], "myListID");
 ```

@@ -1,15 +1,9 @@
-# Environment Is Travis CI
+# Checking if the Environment is Travis CI
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the current environment is [Travis CI](https://travis-ci.org/).
-
-- Check if the current environment has the `TRAVIS` and `CI` environment variables ([reference](https://docs.travis-ci.com/user/environment-variables/#Default-Environment-Variables)).
+To check if you're running on Travis CI, use the `isTravisCI()` function. This function checks if the `TRAVIS` and `CI` environment variables are present.
 
 ```js
-const isTravisCI = () => 'TRAVIS' in process.env && 'CI' in process.env;
+const isTravisCI = () => "TRAVIS" in process.env && "CI" in process.env;
 ```
 
-```js
-isTravisCI(); // true (if code is running on Travis CI)
-```
+To start coding on Travis CI, open the Terminal/SSH and type `node`.

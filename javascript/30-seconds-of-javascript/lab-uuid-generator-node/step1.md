@@ -1,21 +1,24 @@
-# Generate UUID (Node.js)
+# Generating UUID in Node.js
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate a UUID in Node.js, follow the steps below:
 
-Generates a UUID in Node.JS.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the `crypto.randomBytes()` method to generate a UUID that is compliant with [RFC4122](https://www.ietf.org/rfc/rfc4122.txt) version 4.
+3. Convert the generated UUID to a proper UUID (hexadecimal string) using the `Number.prototype.toString()` method.
+4. Alternatively, you can use the [`crypto.randomUUID()`](https://nodejs.org/api/crypto.html#cryptorandomuuidoptions) method that provides similar functionality.
 
-- Use `crypto.randomBytes()` to generate a UUID, compliant with [RFC4122](https://www.ietf.org/rfc/rfc4122.txt) version 4.
-- Use `Number.prototype.toString()` to convert it to a proper UUID (hexadecimal string).
-- [`crypto.randomUUID()`](https://nodejs.org/api/crypto.html#cryptorandomuuidoptions) provides similar functionality.
+Here's an example code snippet to generate UUID in Node.js:
 
 ```js
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 const UUIDGeneratorNode = () =>
-  ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+  ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
     (c ^ (crypto.randomBytes(1)[0] & (15 >> (c / 4)))).toString(16)
   );
 ```
+
+You can call the `UUIDGeneratorNode()` method to generate a UUID.
 
 ```js
 UUIDGeneratorNode(); // '79c7c136-60ee-40a2-beb2-856f1feabefc'

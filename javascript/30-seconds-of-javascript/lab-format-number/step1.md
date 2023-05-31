@@ -1,14 +1,18 @@
-# Format Number
+# Number Formatting Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To format a number using the local number format order, follow these steps:
 
-Formats a number using the local number format order.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Number.prototype.toLocaleString()` method to convert a number to using the local number format separators.
+3. Pass the number you want to format as an argument to the function.
 
-- Use `Number.prototype.toLocaleString()` to convert a number to using the local number format separators.
+Here's an example implementation:
 
 ```js
-const formatNumber = num => num.toLocaleString();
+const formatNumber = (num) => num.toLocaleString();
 ```
+
+And here are some examples of how to use the function:
 
 ```js
 formatNumber(123456); // '123,456' in `en-US`

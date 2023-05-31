@@ -1,16 +1,19 @@
-# Initialize Array With Values
+# Function to Initialize an Array with Specified Values
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start practicing coding, open the Terminal/SSH and type `node`.
 
-Initializes and fills an array with the specified values.
+This function initializes an array with the specified values:
 
 - Use the `Array()` constructor to create an array of the desired length.
 - Use `Array.prototype.fill()` to fill it with the desired values.
-- Omit the last argument, `val`, to use a default value of `0`.
+- If no value is specified, it defaults to `0`.
 
 ```js
-const initializeArrayWithValues = (n, val = 0) => Array(n).fill(val);
+const initializeArrayWithValues = (length, value = 0) =>
+  Array(length).fill(value);
 ```
+
+Example usage:
 
 ```js
 initializeArrayWithValues(5, 2); // [2, 2, 2, 2, 2]

@@ -1,16 +1,16 @@
 # Memoize Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start coding, open the Terminal/SSH and type `node`. This function returns the memoized (cached) function. Here are the steps to use this function:
 
-Returns the memoized (cached) function.
+1. Instantiate a new `Map` object to create an empty cache.
+2. Return a function that takes a single argument which will be supplied to the memoized function. Before executing the function, check if the output for that specific input value is already cached. If it is, return the cached output; otherwise, store and return it.
+3. Use the `function` keyword to allow the memoized function to have its `this` context changed if necessary.
+4. Set the `cache` as a property on the returned function to allow access to it.
 
-- Create an empty cache by instantiating a new `Map` object.
-- Return a function which takes a single argument to be supplied to the memoized function by first checking if the function's output for that specific input value is already cached, or store and return it if not.
-- The `function` keyword must be used in order to allow the memoized function to have its `this` context changed if necessary.
-- Allow access to the `cache` by setting it as a property on the returned function.
+Here's the code that implements the memoize function:
 
 ```js
-const memoize = fn => {
+const memoize = (fn) => {
   const cache = new Map();
   const cached = function (val) {
     return cache.has(val)
@@ -22,10 +22,11 @@ const memoize = fn => {
 };
 ```
 
+To see how this function works, you can use it with the `anagrams` function. Here's an example:
+
 ```js
-// See the `anagrams` snippet.
 const anagramsCached = memoize(anagrams);
-anagramsCached('javascript'); // takes a long time
-anagramsCached('javascript'); // returns virtually instantly since it's cached
+anagramsCached("javascript"); // takes a long time
+anagramsCached("javascript"); // returns virtually instantly since it's cached
 console.log(anagramsCached.cache); // The cached anagrams map
 ```

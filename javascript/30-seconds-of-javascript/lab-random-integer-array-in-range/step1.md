@@ -1,11 +1,14 @@
-# Random Integer Array in Range
+# Generating a Random Integer Array in a Specific Range
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate an array of random integers within a specific range, follow these steps:
 
-Generates an array of `n` random integers in the specified range.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Array.from()` to create an empty array of the desired length.
+3. Use `Math.random()` to generate random numbers and map them to the specified range. Use `Math.floor()` to convert them into integers.
+4. The function `randomIntArrayInRange()` takes three arguments: `min`, `max`, and an optional argument `n` (default value is 1).
+5. Call the `randomIntArrayInRange()` function with the desired `min`, `max`, and `n` values to generate the random integer array.
 
-- Use `Array.from()` to create an empty array of the specific length.
-- Use `Math.random()` to generate random numbers and map them to the desired range, using `Math.floor()` to make them integers.
+Here's the code:
 
 ```js
 const randomIntArrayInRange = (min, max, n = 1) =>
@@ -14,6 +17,8 @@ const randomIntArrayInRange = (min, max, n = 1) =>
     () => Math.floor(Math.random() * (max - min + 1)) + min
   );
 ```
+
+Example usage:
 
 ```js
 randomIntArrayInRange(12, 35, 10); // [ 34, 14, 27, 17, 30, 27, 20, 26, 21, 14 ]

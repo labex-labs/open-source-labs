@@ -1,19 +1,19 @@
 # Consecutive Element Subarrays
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Creates an array of `n`-tuples of consecutive elements.
-
-- Use `Array.prototype.slice()` and `Array.prototype.map()` to create an array of appropriate length.
-- Populate the array with `n`-tuples of consecutive elements from `arr`.
-- If `n` is greater than the length of `arr`, return an empty array.
+To practice coding, open the Terminal/SSH and type `node`. The following code creates an array of `n`-tuples of consecutive elements.
 
 ```js
 const aperture = (n, arr) =>
-  n > arr.length
-    ? []
-    : arr.slice(n - 1).map((v, i) => arr.slice(i, i + n));
+  n > arr.length ? [] : arr.slice(n - 1).map((v, i) => arr.slice(i, i + n));
 ```
+
+To use the function:
+
+- Call `aperture(n, arr)` function with `n` as the number of consecutive elements and `arr` as the array of numbers.
+- The function returns an array of `n`-tuples of consecutive elements from `arr`.
+- If `n` is greater than the length of `arr`, the function returns an empty array.
+
+Example usage:
 
 ```js
 aperture(2, [1, 2, 3, 4]); // [[1, 2], [2, 3], [3, 4]]

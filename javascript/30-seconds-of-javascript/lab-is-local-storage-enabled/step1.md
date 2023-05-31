@@ -1,11 +1,6 @@
-# Check if localStorage Is Enabled
+# Checking for localStorage Accessibility
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if `localStorage` is enabled.
-
-- Use a `try...catch` block to return `true` if all operations complete successfully, `false` otherwise.
-- Use `Storage.setItem()` and `Storage.removeItem()` to test storing and deleting a value in `Window.localStorage`.
+To check if `localStorage` is accessible, use the following code:
 
 ```js
 const isLocalStorageEnabled = () => {
@@ -20,6 +15,6 @@ const isLocalStorageEnabled = () => {
 };
 ```
 
-```js
-isLocalStorageEnabled(); // true, if localStorage is accessible
-```
+This function uses a `try...catch` block to test if `Storage.setItem()` and `Storage.removeItem()` operations can be performed successfully. If the operations complete successfully, the function returns `true`, indicating that `localStorage` is enabled. If an error is thrown, the function returns `false`, indicating that `localStorage` is not enabled.
+
+To test if `localStorage` is enabled, call the `isLocalStorageEnabled()` function. If it returns `true`, `localStorage` is accessible.

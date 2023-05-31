@@ -1,21 +1,20 @@
-# Date of Tomorrow
+# Obtaining Tomorrow's Date
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To practice coding, you may begin by opening the Terminal/SSH and typing `node`. Once you have done this, you can obtain tomorrow's date with the following steps:
 
-Results in a string representation of tomorrow's date.
+1. Use the `Date` constructor to get the current date.
+2. Increment it by one using `Date.prototype.getDate()`.
+3. Set the value to the result using `Date.prototype.setDate()`.
+4. Use `Date.prototype.toISOString()` to return a string in `yyyy-mm-dd` format.
 
-- Use the `Date` constructor to get the current date.
-- Increment it by one using `Date.prototype.getDate()` and set the value to the result using `Date.prototype.setDate()`.
-- Use `Date.prototype.toISOString()` to return a string in `yyyy-mm-dd` format.
+Here is the code you can use:
 
 ```js
 const tomorrow = () => {
-  let d = new Date();
-  d.setDate(d.getDate() + 1);
-  return d.toISOString().split('T')[0];
+  let currentDate = new Date();
+  currentDate.setDate(currentDate.getDate() + 1);
+  return currentDate.toISOString().split("T")[0];
 };
 ```
 
-```js
-tomorrow(); // 2018-10-19 (if current date is 2018-10-18)
-```
+Once you have entered this code, you can obtain tomorrow's date by calling the function `tomorrow()`. For example, if today's date is 2018-10-18, the output will be `2018-10-19`.

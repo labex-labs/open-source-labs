@@ -1,21 +1,19 @@
-# Bifurcate Array Based on Function
+# Function to Split an Array into Two Groups
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To split an array into two groups based on the result of a given function, follow these steps:
 
-Splits values into two groups, based on the result of the given filtering function.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the `Array.prototype.reduce()` and `Array.prototype.push()` methods to add elements to groups. This is based on the value returned by the given function `fn` for each element.
+3. If `fn` returns a truthy value for any element, add it to the first group. Otherwise, add it to the second group.
 
-- Use `Array.prototype.reduce()` and `Array.prototype.push()` to add elements to groups, based on the value returned by `fn` for each element.
-- If `fn` returns a truthy value for any element, add it to the first group, otherwise add it to the second group.
+Here's the code:
 
 ```js
 const bifurcateBy = (arr, fn) =>
-  arr.reduce((acc, val, i) => (acc[fn(val, i) ? 0 : 1].push(val), acc), [
-    [],
-    [],
-  ]);
+  arr.reduce(
+    (acc, val, i) => (acc[fn(val, i) ? 0 : 1].push(val), acc),
+    [[], []]
+  );
 ```
 
-```js
-bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b');
-// [ ['beep', 'boop', 'bar'], ['foo'] ]
-```
+For example, if you call `bifurcateBy(['beep', 'boop', 'foo', 'bar'], x => x[0] === 'b')`, the function will return `[ ['beep', 'boop', 'bar'], ['foo'] ]`.

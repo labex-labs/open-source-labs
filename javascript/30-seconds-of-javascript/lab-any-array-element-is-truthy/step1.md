@@ -1,17 +1,18 @@
-# Test if Any Array Element Is Truthy
+# Testing if Any Array Element is Truthy
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start practicing coding, open the Terminal/SSH and type `node`.
 
-Checks if the provided predicate function returns `true` for at least one element in a collection.
+To check if any element in a collection returns `true` based on a provided function, use `Array.prototype.some()`. If you want to use the `Boolean` function as default, you may omit the second argument, `fn`.
 
-- Use `Array.prototype.some()` to test if any elements in the collection return `true` based on `fn`.
-- Omit the second argument, `fn`, to use `Boolean` as a default.
+Here is an example code:
 
 ```js
 const any = (arr, fn = Boolean) => arr.some(fn);
 ```
 
+You can test it using the following examples:
+
 ```js
-any([0, 1, 2, 0], x => x >= 2); // true
+any([0, 1, 2, 0], (x) => x >= 2); // true
 any([0, 0, 1, 0]); // true
 ```

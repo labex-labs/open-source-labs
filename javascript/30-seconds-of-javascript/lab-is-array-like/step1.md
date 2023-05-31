@@ -1,19 +1,22 @@
-# Value Is Array-Like
+# Check if Value is Array-Like
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a value is array-like, follow these steps:
 
-Checks if the provided argument is array-like (i.e. is iterable).
-
-- Check if the provided argument is not `null` and that its `Symbol.iterator` property is a function.
+1. Open Terminal/SSH.
+2. Type `node`.
+3. Use the following code to check if the provided argument is iterable:
 
 ```js
-const isArrayLike = obj =>
-  obj != null && typeof obj[Symbol.iterator] === 'function';
+const isArrayLike = (obj) =>
+  obj != null && typeof obj[Symbol.iterator] === "function";
 ```
+
+4. The function will return `true` if the provided argument is an array-like object, and `false` otherwise.
+5. For example:
 
 ```js
 isArrayLike([1, 2, 3]); // true
-isArrayLike(document.querySelectorAll('.className')); // true
-isArrayLike('abc'); // true
+isArrayLike(document.querySelectorAll(".className")); // true
+isArrayLike("abc"); // true
 isArrayLike(null); // false
 ```

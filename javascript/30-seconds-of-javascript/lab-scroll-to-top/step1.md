@@ -1,23 +1,23 @@
-# Scroll Page to Top
+# How to Smooth-Scroll to the Top of a Page
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To smooth-scroll to the top of a web page, follow these steps:
 
-Smooth-scrolls to the top of the page.
+1. Open the Terminal/SSH and type `node` to start coding practice.
+2. Determine the distance from the top of the page using `Document.documentElement` or `Document.body` and `Element.scrollTop`.
+3. Scroll by a fraction of the distance from the top.
+4. Use `Window.requestAnimationFrame()` to animate the scrolling.
 
-- Get distance from top using `Document.documentElement` or `Document.body` and `Element.scrollTop`.
-- Scroll by a fraction of the distance from the top.
-- Use `Window.requestAnimationFrame()` to animate the scrolling.
+Here's an example code snippet that implements these steps:
 
 ```js
 const scrollToTop = () => {
-  const c = document.documentElement.scrollTop || document.body.scrollTop;
-  if (c > 0) {
+  const distanceFromTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
+  if (distanceFromTop > 0) {
     window.requestAnimationFrame(scrollToTop);
-    window.scrollTo(0, c - c / 8);
+    window.scrollTo(0, distanceFromTop - distanceFromTop / 8);
   }
 };
 ```
 
-```js
-scrollToTop(); // Smooth-scrolls to the top of the page
-```
+To trigger the smooth-scrolling effect, simply call the `scrollToTop()` function.

@@ -1,28 +1,32 @@
 # Unescape HTML
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+This function unescapes escaped HTML characters. To use it, follow these steps:
 
-Unescapes escaped HTML characters.
-
-- Use `String.prototype.replace()` with a regexp that matches the characters that need to be unescaped.
-- Use the function's callback to replace each escaped character instance with its associated unescaped character using a dictionary (object).
+1. Open the Terminal/SSH.
+2. Type `node`.
+3. Copy and paste the following code:
 
 ```js
-const unescapeHTML = str =>
+const unescapeHTML = (str) =>
   str.replace(
     /&amp;|&lt;|&gt;|&#39;|&quot;/g,
-    tag =>
+    (tag) =>
       ({
-        '&amp;': '&',
-        '&lt;': '<',
-        '&gt;': '>',
-        '&#39;': "'",
-        '&quot;': '"'
+        "&amp;": "&",
+        "&lt;": "<",
+        "&gt;": ">",
+        "&#39;": "'",
+        "&quot;": '"',
       }[tag] || tag)
   );
 ```
 
+4. Call the `unescapeHTML` function and pass it a string with escaped characters.
+5. The function will return the unescaped string.
+
+Example usage:
+
 ```js
-unescapeHTML('&lt;a href=&quot;#&quot;&gt;Me &amp; you&lt;/a&gt;');
+unescapeHTML("&lt;a href=&quot;#&quot;&gt;Me &amp; you&lt;/a&gt;");
 // '<a href="#">Me & you</a>'
 ```

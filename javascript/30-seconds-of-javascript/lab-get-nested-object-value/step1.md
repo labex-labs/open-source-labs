@@ -1,29 +1,34 @@
-# Get Nested Object Property From Path String
+# How to Retrieve Nested Object Properties from Path Strings
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To practice coding, open the Terminal/SSH and type `node`.
 
-Retrieves a set of properties indicated by the given selectors from an object.
+The following function retrieves a set of properties from an object by using selectors specified in a path string. To achieve this, follow these steps:
 
-- Use `Array.prototype.map()` for each selector, `String.prototype.replace()` to replace square brackets with dots.
-- Use `String.prototype.split()` to split each selector.
-- Use `Array.prototype.filter()` to remove empty values and `Array.prototype.reduce()` to get the value indicated by each selector.
+1. Use `Array.prototype.map()` to iterate through each selector, and apply `String.prototype.replace()` to replace square brackets with dots.
+2. Use `String.prototype.split()` to split each selector into an array of strings.
+3. Use `Array.prototype.filter()` to remove any empty values.
+4. Use `Array.prototype.reduce()` to retrieve the value indicated by each selector.
+
+Here is the function:
 
 ```js
 const get = (from, ...selectors) =>
-  [...selectors].map(s =>
+  [...selectors].map((s) =>
     s
-      .replace(/\[([^\[\]]*)\]/g, '.$1.')
-      .split('.')
-      .filter(t => t !== '')
+      .replace(/\[([^\[\]]*)\]/g, ".$1.")
+      .split(".")
+      .filter((t) => t !== "")
       .reduce((prev, cur) => prev && prev[cur], from)
   );
 ```
 
+You can use this function to retrieve values from a nested object using a path string. Here is an example:
+
 ```js
 const obj = {
-  selector: { to: { val: 'val to select' } },
-  target: [1, 2, { a: 'test' }],
+  selector: { to: { val: "val to select" } },
+  target: [1, 2, { a: "test" }],
 };
-get(obj, 'selector.to.val', 'target[0]', 'target[2].a');
+get(obj, "selector.to.val", "target[0]", "target[2].a");
 // ['val to select', 1, 'test']
 ```

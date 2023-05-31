@@ -1,18 +1,21 @@
-# Initialize 2D Array
+# Initializing a 2D Array in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Initializes a 2D array of given width and height and value.
-
-- Use `Array.from()` and `Array.prototype.map()` to generate `h` rows where each is a new array of size `w`.
-- Use `Array.prototype.fill()` to initialize all items with value `val`.
-- Omit the last argument, `val`, to use a default value of `null`.
+To initialize a 2D array in JavaScript, you can use the following code:
 
 ```js
-const initialize2DArray = (w, h, val = null) =>
-  Array.from({ length: h }).map(() => Array.from({ length: w }).fill(val));
+const initialize2DArray = (width, height, value = null) => {
+  return Array.from({ length: height }).map(() =>
+    Array.from({ length: width }).fill(value)
+  );
+};
 ```
+
+This code uses `Array.from()` and `Array.prototype.map()` to create an array of `height` rows, where each row is a new array of `width` length. It also uses `Array.prototype.fill()` to set all items in the array to the `value` parameter. If no `value` is provided, it defaults to `null`.
+
+You can call the function like this:
 
 ```js
 initialize2DArray(2, 2, 0); // [[0, 0], [0, 0]]
 ```
+
+This will create a 2D array with width of 2, height of 2, and all values set to 0.

@@ -1,14 +1,14 @@
-# Logical Not
+# Using Logical Not Operator in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start practicing coding in JavaScript, open the Terminal/SSH and type `node`.
 
-Returns the logical inverse of the given value.
-
-- Use the logical not (`!`) operator to return the inverse of the given value.
+The logical not operator (`!`) returns the inverse of the given value. Below is an example implementation of the logical not function in JavaScript:
 
 ```js
-const not = a => !a;
+const not = (a) => !a;
 ```
+
+You can use the `not` function to return the inverse of a given value. Here are some examples:
 
 ```js
 not(true); // false

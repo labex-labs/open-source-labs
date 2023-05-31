@@ -1,37 +1,40 @@
-# Hex to RGB
+# Hex to RGB Conversion
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To convert a hexadecimal color code (with or without a `#` prefix) to an RGB string, follow these steps:
 
-Converts a color code to an `rgb()` or `rgba()` string if alpha value is provided.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the bitwise right-shift operator and mask bits with the `&` (and) operator.
+3. If the color code is 3-digits, first convert it to the 6-digit version.
+4. If an alpha value is provided alongside the 6-digit hex, return an `rgba()` string.
 
-- Use bitwise right-shift operator and mask bits with `&` (and) operator to convert a hexadecimal color code (with or without prefixed with `#`) to a string with the RGB values.
-- If it's 3-digit color code, first convert to 6-digit version.
-- If an alpha value is provided alongside 6-digit hex, give `rgba()` string in return.
+Here is the JavaScript code for the conversion:
 
 ```js
-const hexToRGB = hex => {
+const hexToRGB = (hex) => {
   let alpha = false,
-    h = hex.slice(hex.startsWith('#') ? 1 : 0);
-  if (h.length === 3) h = [...h].map(x => x + x).join('');
+    h = hex.slice(hex.startsWith("#") ? 1 : 0);
+  if (h.length === 3) h = [...h].map((x) => x + x).join("");
   else if (h.length === 8) alpha = true;
   h = parseInt(h, 16);
   return (
-    'rgb' +
-    (alpha ? 'a' : '') +
-    '(' +
+    "rgb" +
+    (alpha ? "a" : "") +
+    "(" +
     (h >>> (alpha ? 24 : 16)) +
-    ', ' +
+    ", " +
     ((h & (alpha ? 0x00ff0000 : 0x00ff00)) >>> (alpha ? 16 : 8)) +
-    ', ' +
+    ", " +
     ((h & (alpha ? 0x0000ff00 : 0x0000ff)) >>> (alpha ? 8 : 0)) +
-    (alpha ? `, ${h & 0x000000ff}` : '') +
-    ')'
+    (alpha ? `, ${h & 0x000000ff}` : "") +
+    ")"
   );
 };
 ```
 
+You can use the `hexToRGB` function with the following examples:
+
 ```js
-hexToRGB('#27ae60ff'); // 'rgba(39, 174, 96, 255)'
-hexToRGB('27ae60'); // 'rgb(39, 174, 96)'
-hexToRGB('#fff'); // 'rgb(255, 255, 255)'
+hexToRGB("#27ae60ff"); // 'rgba(39, 174, 96, 255)'
+hexToRGB("27ae60"); // 'rgb(39, 174, 96)'
+hexToRGB("#fff"); // 'rgb(255, 255, 255)'
 ```

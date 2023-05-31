@@ -1,23 +1,27 @@
-# Object to Pairs
+# Converting an Object to Pairs
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To convert an object to an array of key-value pairs, use the `toPairs` function. To get started with coding, open the Terminal/SSH and type `node`.
 
-Creates an array of key-value pair arrays from an object or other iterable.
+The `toPairs` function works in the following way:
 
-- Check if `Symbol.iterator` is defined and, if so, use `Array.prototype.entries()` to get an iterator for the given iterable.
-- Use `Array.from()` to convert the result to an array of key-value pair arrays.
-- If `Symbol.iterator` is not defined for `obj`, use `Object.entries()` instead.
+- First, it checks if `Symbol.iterator` is defined for the given iterable object.
+- If `Symbol.iterator` is defined, it uses `Array.prototype.entries()` to get an iterator for the object and then converts the result to an array of key-value pair arrays using `Array.from()`.
+- If `Symbol.iterator` is not defined for the object, it uses `Object.entries()` instead.
+
+Here's the code for the `toPairs` function:
 
 ```js
-const toPairs = obj =>
+const toPairs = (obj) =>
   obj[Symbol.iterator] instanceof Function && obj.entries instanceof Function
     ? Array.from(obj.entries())
     : Object.entries(obj);
 ```
 
+You can use the `toPairs` function with various types of objects, such as:
+
 ```js
 toPairs({ a: 1, b: 2 }); // [['a', 1], ['b', 2]]
 toPairs([2, 4, 8]); // [[0, 2], [1, 4], [2, 8]]
-toPairs('shy'); // [['0', 's'], ['1', 'h'], ['2', 'y']]
-toPairs(new Set(['a', 'b', 'c', 'a'])); // [['a', 'a'], ['b', 'b'], ['c', 'c']]
+toPairs("shy"); // [['0', 's'], ['1', 'h'], ['2', 'y']]
+toPairs(new Set(["a", "b", "c", "a"])); // [['a', 'a'], ['b', 'b'], ['c', 'c']]
 ```

@@ -1,23 +1,24 @@
-# Element Contains Another Element
+# Checking if an Element Contains Another Element
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if an element contains another element:
 
-Checks if the `parent` element contains the `child` element.
+1. Ensure that the parent element and child element are not the same.
+2. Use the `Node.contains()` method to check if the parent element contains the child element.
 
-- Check that `parent` is not the same element as `child`.
-- Use `Node.contains()` to check if the `parent` element contains the `child` element.
+Here's an example code snippet:
 
 ```js
 const elementContains = (parent, child) =>
   parent !== child && parent.contains(child);
 ```
 
+You can then use the `elementContains()` function to check if an element contains another element, as shown below:
+
 ```js
 elementContains(
-  document.querySelector('head'),
-  document.querySelector('title')
-);
-// true
-elementContains(document.querySelector('body'), document.querySelector('body'));
-// false
+  document.querySelector("head"),
+  document.querySelector("title")
+); // true
+
+elementContains(document.querySelector("body"), document.querySelector("body")); // false
 ```

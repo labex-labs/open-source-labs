@@ -1,14 +1,12 @@
-# Logical Nor
+# How to use Logical Nor in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if none of the arguments are `true`.
-
-- Use the logical not (`!`) operator to return the inverse of the logical or (`||`) of the two given values.
+To start coding in JavaScript, access the Terminal/SSH and type `node`. Logical Nor checks if none of the given arguments are true. To return the inverse of the logical or of two values, use the logical not (`!`) operator. Here's an example:
 
 ```js
-const nor = (a, b) => !(a||b);
+const nor = (a, b) => !(a || b);
 ```
+
+And here are some outputs:
 
 ```js
 nor(true, true); // false

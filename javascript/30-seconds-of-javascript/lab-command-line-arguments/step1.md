@@ -1,17 +1,16 @@
 # Command-Line Arguments
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To get the command-line arguments passed to a Node.js script, follow these steps:
 
-Gets the command-line arguments passed to a Node.js script.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `process.argv` to get an array of all command-line arguments.
+3. Use `Array.prototype.slice()` to remove the first two elements, which are the path of the Node.js executable and the file being executed.
 
-- Use `process.argv` to get an array of all command-line arguments.
-- Use `Array.prototype.slice()` to remove the first two elements (path of the Node.js executable and the file being executed).
+Here's an example code snippet that demonstrates how to get the command-line arguments using the `getCmdArgs` function:
 
 ```js
 const getCmdArgs = () => process.argv.slice(2);
-```
 
-```js
-// node my-script.js --name=John --age=30
+// Example usage: node my-script.js --name=John --age=30
 getCmdArgs(); // ['--name=John', '--age=30']
 ```

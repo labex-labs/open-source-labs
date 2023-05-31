@@ -1,17 +1,18 @@
-# Truncate String
+# Truncate a String in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To truncate a string in JavaScript, you can use the `truncateString` function. This function takes two arguments: `str` (the string to be truncated) and `num` (the maximum length of the truncated string).
 
-Truncates a string up to a specified length.
+The `truncateString` function checks if the length of the `str` is greater than `num`. If it is, the function truncates the string to the desired length and appends `'...'` to the end. If not, it returns the original string.
 
-- Determine if `String.prototype.length` is greater than `num`.
-- Return the string truncated to the desired length, with `'...'` appended to the end or the original string.
+Here's the code for the `truncateString` function:
 
 ```js
 const truncateString = (str, num) =>
-  str.length > num ? str.slice(0, num > 3 ? num - 3 : num) + '...' : str;
+  str.length > num ? str.slice(0, num > 3 ? num - 3 : num) + "..." : str;
 ```
 
+And here's an example of how to use the `truncateString` function:
+
 ```js
-truncateString('boomerang', 7); // 'boom...'
+truncateString("boomerang", 7); // 'boom...'
 ```

@@ -1,14 +1,18 @@
-# Pad Number
+# How to Pad a Number in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To pad a number in JavaScript, follow these steps:
 
-Pads a given number to the specified length.
-
-- Use `String.prototype.padStart()` to pad the number to specified length, after converting it to a string.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the `String.prototype.padStart()` method to pad the number to the specified length, after converting it to a string.
+3. The `padNumber()` function below demonstrates this approach.
+4. Pass the number and the desired length as arguments to the function.
+5. The function returns the padded number as a string.
 
 ```js
-const padNumber = (n, l) => `${n}`.padStart(l, '0');
+const padNumber = (n, l) => `${n}`.padStart(l, "0");
 ```
+
+Example usage:
 
 ```js
 padNumber(1234, 6); // '001234'

@@ -1,18 +1,22 @@
-# Disjointed Iterables
+# Checking for Disjointed Iterables
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if two iterables have no common values, you can use the `isDisjoint` function.
 
-Checks if the two iterables are disjointed (have no common values).
+Here's how to use it:
 
-- Use the `Set` constructor to create a new `Set` object from each iterable.
-- Use `Array.prototype.every()` and `Set.prototype.has()` to check that the two iterables have no common values.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Create a new `Set` object from each iterable using the `Set` constructor.
+3. Use `Array.prototype.every()` and `Set.prototype.has()` to check that the two iterables have no common values.
 
 ```js
 const isDisjoint = (a, b) => {
-  const sA = new Set(a), sB = new Set(b);
-  return [...sA].every(v => !sB.has(v));
+  const sA = new Set(a),
+    sB = new Set(b);
+  return [...sA].every((v) => !sB.has(v));
 };
 ```
+
+Here are some examples:
 
 ```js
 isDisjoint(new Set([1, 2]), new Set([3, 4])); // true

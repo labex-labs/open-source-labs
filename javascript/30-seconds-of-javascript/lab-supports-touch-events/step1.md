@@ -1,16 +1,3 @@
-# Device Supports Touch Events
+# Check if Device Supports Touch Events
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if touch events are supported.
-
-- Check if `'ontouchstart'` exists in the `Window`.
-
-```js
-const supportsTouchEvents = () =>
-  window && 'ontouchstart' in window;
-```
-
-```js
-supportsTouchEvents(); // true
-```
+To check if touch events are supported, simply check if `'ontouchstart'` exists in the `Window`. You can do this by typing `const supportsTouchEvents = () => window && 'ontouchstart' in window;` in the Terminal/SSH and running `supportsTouchEvents();`. If the output is `true`, then touch events are supported.

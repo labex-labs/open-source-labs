@@ -1,16 +1,19 @@
-# HSL to Array
+# Convert HSL to Array
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To convert an `hsl()` color string to an array of values, follow these steps:
 
-Converts an `hsl()` color string to an array of values.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `String.prototype.match()` to get an array of 3 strings with the numeric values.
+3. Use `Array.prototype.map()` in combination with `Number` to convert them into an array of numeric values.
 
-- Use `String.prototype.match()` to get an array of 3 string with the numeric values.
-- Use `Array.prototype.map()` in combination with `Number` to convert them into an array of numeric values.
+Here's the code to convert an `hsl()` color string to an array of numeric values:
 
 ```js
-const toHSLArray = hslStr => hslStr.match(/\d+/g).map(Number);
+const toHSLArray = (hslStr) => hslStr.match(/\d+/g).map(Number);
 ```
 
+Example usage:
+
 ```js
-toHSLArray('hsl(50, 10%, 10%)'); // [50, 10, 10]
+toHSLArray("hsl(50, 10%, 10%)"); // [50, 10, 10]
 ```

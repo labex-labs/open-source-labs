@@ -1,15 +1,19 @@
-# Copy Sign to Number
+# Function to Copy the Sign of One Number to Another
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start practicing coding, open the Terminal/SSH and type `node`.
 
-Returns the absolute value of the first number, but the sign of the second.
+The `copySign` function returns the absolute value of the first number, but with the sign of the second number. To accomplish this:
 
-- Use `Math.sign()` to check if the two numbers have the same sign.
-- Return `x` if they do, `-x` otherwise.
+1. Use `Math.sign()` to check if the two numbers have the same sign.
+2. Return `x` if they do, `-x` otherwise.
+
+Here is the code for the `copySign` function:
 
 ```js
-const copySign = (x, y) => Math.sign(x) === Math.sign(y) ? x : -x;
+const copySign = (x, y) => (Math.sign(x) === Math.sign(y) ? x : -x);
 ```
+
+You can test the function using the following code:
 
 ```js
 copySign(2, 3); // 2

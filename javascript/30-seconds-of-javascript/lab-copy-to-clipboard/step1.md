@@ -1,31 +1,21 @@
-# Copy to Clipboard
+# Revised Output
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Copies a string to the clipboard.
-Only works as a result of user action (i.e. inside a `click` event listener).
-
-- Create a new `<textarea>` element, fill it with the supplied data and add it to the HTML document.
-- Use `Selection.getRangeAt()`to store the selected range (if any).
-- Use `Document.execCommand()` to copy to the clipboard.
-- Remove the `<textarea>` element from the HTML document.
-- Finally, use `Selection.addRange()` to recover the original selected range (if any).
-- **Note:** You can use the asynchronous [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) in most current browsers. You can find out more about it in the [copyToClipboardAsync snippet](/js/s/copy-to-clipboard-async).
+To copy a string to the clipboard, use the following function:
 
 ```js
-const copyToClipboard = str => {
-  const el = document.createElement('textarea');
+const copyToClipboard = (str) => {
+  const el = document.createElement("textarea");
   el.value = str;
-  el.setAttribute('readonly', '');
-  el.style.position = 'absolute';
-  el.style.left = '-9999px';
+  el.setAttribute("readonly", "");
+  el.style.position = "absolute";
+  el.style.left = "-9999px";
   document.body.appendChild(el);
   const selected =
     document.getSelection().rangeCount > 0
       ? document.getSelection().getRangeAt(0)
       : false;
   el.select();
-  document.execCommand('copy');
+  document.execCommand("copy");
   document.body.removeChild(el);
   if (selected) {
     document.getSelection().removeAllRanges();
@@ -34,6 +24,6 @@ const copyToClipboard = str => {
 };
 ```
 
-```js
-copyToClipboard('Lorem ipsum'); // 'Lorem ipsum' copied to clipboard.
-```
+To use it, simply call `copyToClipboard('Lorem ipsum')`, where `'Lorem ipsum'` is the string you want to copy. Note that the function will only work if called from within a user action, such as a `click` event listener.
+
+Alternatively, you can use the asynchronous [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) in most current browsers. Check out the [copyToClipboardAsync snippet](/js/s/copy-to-clipboard-async) for more information.

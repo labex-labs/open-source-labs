@@ -1,17 +1,11 @@
-# Round Number to Given Precision
+# Here's how to round a number to a given precision in JavaScript:
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Rounds a number to a specified amount of digits.
-
-- Use `Math.round()` and template literals to round the number to the specified number of digits.
-- Omit the second argument, `decimals`, to round to an integer.
-
-```js
+```
 const round = (n, decimals = 0) =>
   Number(`${Math.round(`${n}e${decimals}`)}e-${decimals}`);
 ```
 
-```js
-round(1.005, 2); // 1.01
-```
+- Use `Math.round()` and template literals to round the number to the specified number of digits.
+- If you want to round to an integer, omit the second argument, `decimals`.
+- To start practicing coding, open the Terminal/SSH and type `node`.
+- For example, `round(1.005, 2)` will return `1.01`.

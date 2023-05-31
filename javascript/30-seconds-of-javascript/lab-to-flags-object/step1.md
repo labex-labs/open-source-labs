@@ -1,15 +1,17 @@
-# Array to Flags Object
+# Converting Array to Flags Object
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+If you want to start practicing coding, open the Terminal/SSH and type `node`.
 
-Converts an array of strings into an object mapping to true.
+The following function converts an array of strings into an object that maps to true.
 
-- Use `Array.prototype.reduce()` to convert the array into an object, where each array value is used as a key whose value is set to `true`.
+To do this, we use `Array.prototype.reduce()`. This method converts the array into an object, where each array value serves as a key whose value is set to `true`.
 
 ```js
-const flags = arr => arr.reduce((acc, str) => ({...acc, [str]: true }), {});
+const flags = (arr) => arr.reduce((acc, str) => ({ ...acc, [str]: true }), {});
 ```
 
+Here's an example:
+
 ```js
-flags(['red', 'green']); // { red: true, green: true }
+flags(["red", "green"]); // { red: true, green: true }
 ```

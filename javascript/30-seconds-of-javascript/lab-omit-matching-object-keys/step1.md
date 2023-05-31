@@ -1,20 +1,18 @@
-# Omit Matching Object Keys
+# Removing Object Keys Based on Callback Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To remove object keys based on a callback function, use `omitBy` function.
 
-Creates an object composed of the properties the given function returns falsy for.
-
-- Use `Object.keys()` and `Array.prototype.filter()` to remove the keys for which `fn` returns a truthy value.
-- Use `Array.prototype.reduce()` to convert the filtered keys back to an object with the corresponding key-value pairs.
-- The callback function is invoked with two arguments: (value, key).
+- `omitBy` creates an object consisting of properties that return falsy for the given function.
+- `Object.keys()` and `Array.prototype.filter()` are used to remove keys for which `fn` returns a truthy value.
+- `Array.prototype.reduce()` converts the filtered keys back to an object with the corresponding key-value pairs.
+- The callback function takes two arguments: `value` and `key`.
+- The example below shows how `omitBy` is used to remove numeric keys from an object.
 
 ```js
 const omitBy = (obj, fn) =>
   Object.keys(obj)
-    .filter(k => !fn(obj[k], k))
+    .filter((k) => !fn(obj[k], k))
     .reduce((acc, key) => ((acc[key] = obj[key]), acc), {});
-```
 
-```js
-omitBy({ a: 1, b: '2', c: 3 }, x => typeof x === 'number'); // { b: '2' }
+omitBy({ a: 1, b: "2", c: 3 }, (x) => typeof x === "number"); // { b: '2' }
 ```

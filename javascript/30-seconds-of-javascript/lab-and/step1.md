@@ -1,16 +1,9 @@
-# Logical And
+# Using Logical And Operator
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if both arguments are `true`.
-
-- Use the logical and (`&&`) operator on the two given values.
+To practice coding, open the Terminal/SSH and type `node`. Then, use the logical and (`&&`) operator to check if both arguments are `true`. Here's an example code:
 
 ```js
 const and = (a, b) => a && b;
-```
-
-```js
 and(true, true); // true
 and(true, false); // false
 and(false, false); // false

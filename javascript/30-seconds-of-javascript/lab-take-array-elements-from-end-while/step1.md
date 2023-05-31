@@ -1,14 +1,12 @@
-# Remove Array Elements From the End While Condition Is Met
+# Removing Array Elements From the End Until a Condition Is Met
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start practicing coding, open the Terminal/SSH and type `node`.
 
-Removes elements from the end of an array until the passed function returns `false`.
-Returns the removed elements.
+Here's a function that removes elements from the end of an array until the passed function returns `false`. It then returns the removed elements.
 
-- Create a reversed copy of the array, using the spread operator (`...`) and `Array.prototype.reverse()`.
-- Loop through the reversed copy, using a `for...of` loop over `Array.prototype.entries()` until the returned value from the function is falsy.
-- Return the removed elements, using `Array.prototype.slice()`.
-- The callback function, `fn`, accepts a single argument which is the value of the element.
+To use it, create a reversed copy of the array using the spread operator (`...`) and `Array.prototype.reverse()`. Then, loop through the reversed copy using a `for...of` loop over `Array.prototype.entries()` until the returned value from the function is falsy.
+
+The callback function, `fn`, accepts a single argument which is the value of the element. Finally, return the removed elements using `Array.prototype.slice()`.
 
 ```js
 const takeRightWhile = (arr, fn) => {
@@ -18,6 +16,8 @@ const takeRightWhile = (arr, fn) => {
 };
 ```
 
+Here's an example of how to use the function:
+
 ```js
-takeRightWhile([1, 2, 3, 4], n => n >= 3); // [3, 4]
+takeRightWhile([1, 2, 3, 4], (n) => n >= 3); // [3, 4]
 ```

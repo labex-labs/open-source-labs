@@ -1,8 +1,8 @@
-# Transform Object
+# Object Transformation
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start practicing coding, open the Terminal/SSH and type `node`.
 
-Applies a function against an accumulator and each key in the object (from left to right).
+The `transform` function applies a specified function against an accumulator and each key in the object, from left to right. Here's how to use it:
 
 - Use `Object.keys()` to iterate over each key in the object.
 - Use `Array.prototype.reduce()` to apply the specified function against the given accumulator.
@@ -11,6 +11,8 @@ Applies a function against an accumulator and each key in the object (from left 
 const transform = (obj, fn, acc) =>
   Object.keys(obj).reduce((a, k) => fn(a, obj[k], k, obj), acc);
 ```
+
+Here's an example:
 
 ```js
 transform(

@@ -1,15 +1,16 @@
-# Check if Array Elements Are Equal
+# Checking for Equality of Array Elements
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if all the elements in an array are the same, you can use the `Array.prototype.every()` method, which compares all elements with the first one.
 
-Checks if all elements in an array are equal.
-
-- Use `Array.prototype.every()` to check if all the elements of the array are the same as the first one.
-- Elements in the array are compared using the strict comparison operator, which does not account for `NaN` self-inequality.
+Here's how you can implement it:
 
 ```js
-const allEqual = arr => arr.every(val => val === arr[0]);
+const allEqual = (arr) => arr.every((val) => val === arr[0]);
 ```
+
+Note that the `strict comparison` operator is used to compare the elements. This operator doesn't account for `NaN` self-inequality.
+
+Example usage:
 
 ```js
 allEqual([1, 2, 3, 4, 5, 6]); // false

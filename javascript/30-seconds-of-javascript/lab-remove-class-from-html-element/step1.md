@@ -1,16 +1,20 @@
-# Remove Class From HTML Element
+# How to Remove a Class from an HTML Element using JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To remove a class from an HTML element using JavaScript, follow these steps:
 
-Removes a class from an HTML element.
+1. Use the `Element.classList` property to access the class list of the element.
+2. Call the `DOMTokenList.remove()` method on the class list, passing the name of the class to remove as an argument.
 
-- Use `Element.classList` and `DOMTokenList.remove()` to remove the specified class from the element.
+Here's an example function that removes a class from an element:
 
 ```js
 const removeClass = (el, className) => el.classList.remove(className);
 ```
 
+To use this function, pass in the element you want to modify and the name of the class you want to remove:
+
 ```js
-removeClass(document.querySelector('p.special'), 'special');
-// The paragraph will not have the 'special' class anymore
+removeClass(document.querySelector("p.special"), "special");
 ```
+
+After running this code, the `p.special` element will no longer have the `special` class.

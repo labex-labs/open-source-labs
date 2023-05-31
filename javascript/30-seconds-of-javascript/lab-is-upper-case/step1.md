@@ -1,17 +1,18 @@
-# String Is Uppercase
+# Function to Check if a String is Uppercase
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a string is in uppercase, follow these steps:
 
-Checks if a string is upper case.
+1. Open the Terminal/SSH.
+2. Type `node`.
+3. Use the function `isUpperCase()` to convert the given string to uppercase, using `String.prototype.toUpperCase()`, and compare it to the original string.
+4. The function will return `true` if the string is in uppercase and `false` if it is not.
 
-- Convert the given string to upper case, using `String.prototype.toUpperCase()` and compare it to the original.
+Here is an example code:
 
 ```js
-const isUpperCase = str => str === str.toUpperCase();
-```
+const isUpperCase = (str) => str === str.toUpperCase();
 
-```js
-isUpperCase('ABC'); // true
-isUpperCase('A3@$'); // true
-isUpperCase('aB4'); // false
+console.log(isUpperCase("ABC")); // true
+console.log(isUpperCase("A3@$")); // true
+console.log(isUpperCase("aB4")); // false
 ```

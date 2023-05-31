@@ -1,14 +1,12 @@
-# Clone RegExp
+# Cloning a Regular Expression
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Clones a regular expression.
-
-- Use the `RegExp` constructor, `RegExp.prototype.source` and `RegExp.prototype.flags` to clone the given regular expression.
+To clone a regular expression, use the `RegExp` constructor, `RegExp.prototype.source`, and `RegExp.prototype.flags`.
 
 ```js
-const cloneRegExp = regExp => new RegExp(regExp.source, regExp.flags);
+const cloneRegExp = (regExp) => new RegExp(regExp.source, regExp.flags);
 ```
+
+This code will create a clone of the given regular expression. For example:
 
 ```js
 const regExp = /lorem ipsum/gi;

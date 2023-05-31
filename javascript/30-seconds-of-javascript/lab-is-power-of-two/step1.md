@@ -1,15 +1,17 @@
-# Number Is Power of Two
+# Check If a Number Is a Power of Two
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a number is a power of two, follow these steps:
 
-Checks if the given number is a power of `2`.
-
-- Use the bitwise binary AND operator (`&`) to determine if `n` is a power of `2`.
-- Additionally, check that `n` is not falsy.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the bitwise binary AND operator (`&`) to determine if the number (`n`) is a power of `2`.
+3. Additionally, check that `n` is not falsy.
+4. The following code functionally checks if `n` is a power of two:
 
 ```js
-const isPowerOfTwo = n => !!n && (n & (n - 1)) == 0;
+const isPowerOfTwo = (n) => !!n && (n & (n - 1)) == 0;
 ```
+
+Here are some examples of how to use the `isPowerOfTwo` function:
 
 ```js
 isPowerOfTwo(0); // false

@@ -1,26 +1,39 @@
-# Remove Elements From Array
+# Removing Elements From Array
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To remove elements from an array, you can use the `Array.prototype.splice()` method, which mutates the original array, or you can use the `shank` function provided below, which returns a new array.
 
-Has the same functionality as [`Array.prototype.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice), but returning a new array instead of mutating the original array.
+## Shank Function
 
-- Use `Array.prototype.slice()` and `Array.prototype.concat()` to get an array with the new contents after removing existing elements and/or adding new elements.
-- Omit the second argument, `index`, to start at `0`.
-- Omit the third argument, `delCount`, to remove `0` elements.
-- Omit the fourth argument, `elements`, in order to not add any new elements.
+The `shank` function has the following syntax:
 
 ```js
-const shank = (arr, index = 0, delCount = 0, ...elements) =>
-  arr
-    .slice(0, index)
-    .concat(elements)
-    .concat(arr.slice(index + delCount));
+const shank = (arr, index = 0, delCount = 0, ...elements) => {
+  // code goes here
+};
 ```
 
+- `arr`: the array to modify.
+- `index`: the index at which to start removing elements. If omitted, it defaults to `0`.
+- `delCount`: the number of elements to remove. If omitted, it defaults to `0`.
+- `elements`: the elements to insert at the `index` position. If omitted, no elements are added.
+
+The `shank` function uses `Array.prototype.slice()` and `Array.prototype.concat()` to get a new array with the new contents after removing existing elements and/or adding new elements.
+
+## Examples
+
 ```js
-const names = ['alpha', 'bravo', 'charlie'];
-const namesAndDelta = shank(names, 1, 0, 'delta');
-// [ 'alpha', 'delta', 'bravo', 'charlie' ]
-const namesNoBravo = shank(names, 1, 1); // [ 'alpha', 'charlie' ]
+const names = ["alpha", "bravo", "charlie"];
+const namesAndDelta = shank(names, 1, 0, "delta");
+console.log(namesAndDelta); // [ 'alpha', 'delta', 'bravo', 'charlie' ]
+
+const namesNoBravo = shank(names, 1, 1);
+console.log(namesNoBravo); // [ 'alpha', 'charlie' ]
+
 console.log(names); // ['alpha', 'bravo', 'charlie']
 ```
+
+In the first example, the `shank` function inserts the string `'delta'` at index `1` of the `names` array, resulting in a new array with the elements `['alpha', 'delta', 'bravo', 'charlie']`.
+
+In the second example, the `shank` function removes the element at index `1` of the `names` array, resulting in a new array with the elements `['alpha', 'charlie']`.
+
+Note that the original `names` array is not modified by either call to the `shank` function.

@@ -1,27 +1,34 @@
-# Walk Through Object
+# Code Walk Through Object Keys
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate a list of all the keys of a given object, use the following steps:
 
-Creates a generator, that walks through all the keys of a given object.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
 
-- Use recursion.
-- Define a generator function, `walk`, that takes an object and an array of keys.
-- Use a `for...of` loop and `Object.keys()` to iterate over the keys of the object.
-- Use `typeof` to check if each value in the given object is itself an object.
-- If so, use the `yield*` expression to recursively delegate to the same generator function, `walk`, appending the current `key` to the array of keys. Otherwise, `yield` an array of keys representing the current path and the value of the given `key`.
-- Use the `yield*` expression to delegate to the `walk` generator function.
+2. Define a generator function called `walk` that takes an object and an array of keys. Use recursion to walk through all the keys of the object.
+
+3. Inside the `walk` function, use a `for...of` loop and `Object.keys()` to iterate over the keys of the object.
+
+4. Use `typeof` to check if each value in the given object is itself an object. If the value is an object, use the `yield*` expression to recursively delegate to the same generator function, `walk`, appending the current `key` to the array of keys.
+
+5. Otherwise, `yield` an array of keys representing the current path and the value of the given `key`.
+
+6. Use the `yield*` expression to delegate to the `walk` generator function.
+
+Here's the code:
 
 ```js
 const walkThrough = function* (obj) {
   const walk = function* (x, previous = []) {
     for (let key of Object.keys(x)) {
-      if (typeof x[key] === 'object') yield* walk(x[key], [...previous, key]);
+      if (typeof x[key] === "object") yield* walk(x[key], [...previous, key]);
       else yield [[...previous, key], x[key]];
     }
   };
   yield* walk(obj);
 };
 ```
+
+To test the code, create an object and use the `walkThrough` function to generate a list of all its keys:
 
 ```js
 const obj = {
@@ -30,18 +37,18 @@ const obj = {
   c: {
     d: 10,
     e: 20,
-    f: [30, 40]
+    f: [30, 40],
   },
   g: [
     {
       h: 10,
-      i: 20
+      i: 20,
     },
     {
-      j: 30
+      j: 30,
     },
-    40
-  ]
+    40,
+  ],
 };
 [...walkThrough(obj)];
 /*

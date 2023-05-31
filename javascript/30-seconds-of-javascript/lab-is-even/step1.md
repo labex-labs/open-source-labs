@@ -1,16 +1,15 @@
-# Number Is Even
+# Check if a Number is Even
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the given number is even.
-
-- Checks whether a number is odd or even using the modulo (`%`) operator.
-- Returns `true` if the number is even, `false` if the number is odd.
+To practice coding, open the Terminal/SSH and type `node`. Use the following code to check if a number is even or odd:
 
 ```js
-const isEven = num => num % 2 === 0;
+const isEven = (num) => num % 2 === 0;
 ```
 
+The code above uses the modulo (`%`) operator to check whether a number is odd or even. If the number is even, the function returns `true`. If it's odd, the function returns `false`.
+
+Here is an example of how to use the `isEven` function:
+
 ```js
-isEven(3); // false
+isEven(3); // returns false
 ```

@@ -1,17 +1,19 @@
-# Array Symmetric Difference Based on Function
+# A Function to Find Array Symmetric Difference
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To find symmetric difference between two arrays using a provided function as a comparator, follow these steps:
 
-Returns the symmetric difference between two arrays, using a provided function as a comparator.
-
-- Use `Array.prototype.filter()` and `Array.prototype.findIndex()` to find the appropriate values.
+1. Open Terminal/SSH and type `node` to start practicing coding.
+2. Use `Array.prototype.filter()` and `Array.prototype.findIndex()` methods to find the appropriate values.
+3. Use the given code to perform the operation.
 
 ```js
 const symmetricDifferenceWith = (arr, val, comp) => [
-  ...arr.filter(a => val.findIndex(b => comp(a, b)) === -1),
-  ...val.filter(a => arr.findIndex(b => comp(a, b)) === -1)
+  ...arr.filter((a) => val.findIndex((b) => comp(a, b)) === -1),
+  ...val.filter((a) => arr.findIndex((b) => comp(a, b)) === -1),
 ];
 ```
+
+For example, consider the following input:
 
 ```js
 symmetricDifferenceWith(
@@ -20,3 +22,5 @@ symmetricDifferenceWith(
   (a, b) => Math.round(a) === Math.round(b)
 ); // [1, 1.2, 3.9]
 ```
+
+The above code will return `[1, 1.2, 3.9]` as the symmetric difference between the two arrays.

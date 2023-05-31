@@ -1,11 +1,12 @@
-# Weighted Average
+# How to Calculate Weighted Average in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To calculate the weighted average of two or more numbers in JavaScript, follow these steps:
 
-Calculates the weighted average of two or more numbers.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Array.prototype.reduce()` to create the weighted sum of the values and the sum of the weights.
+3. Divide the weighted sum of the values by the sum of the weights to get the weighted average.
 
-- Use `Array.prototype.reduce()` to create the weighted sum of the values and the sum of the weights.
-- Divide them with each other to get the weighted average.
+Here's the JavaScript code for the `weightedAverage` function:
 
 ```js
 const weightedAverage = (nums, weights) => {
@@ -20,6 +21,8 @@ const weightedAverage = (nums, weights) => {
   return sum / weightSum;
 };
 ```
+
+You can use the `weightedAverage` function to calculate the weighted average of an array of numbers and an array of weights like this:
 
 ```js
 weightedAverage([1, 2, 3], [0.6, 0.2, 0.3]); // 1.72727

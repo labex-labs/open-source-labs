@@ -1,15 +1,11 @@
-# Array Is Sorted
+# Code Practice: Check if an Array is Sorted
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To practice coding, open the Terminal/SSH and type `node`.
 
-Checks if a numeric array is sorted.
-
-- Calculate the ordering `direction` for the first pair of adjacent array elements.
-- Return `0` if the given array is empty, only has one element or the `direction` changes for any pair of adjacent array elements.
-- Use `Math.sign()` to covert the final value of `direction` to `-1` (descending order) or `1` (ascending order).
+Here's a function to check if a numeric array is sorted:
 
 ```js
-const isSorted = arr => {
+const isSorted = (arr) => {
   if (arr.length <= 1) return 0;
   const direction = arr[1] - arr[0];
   for (let i = 2; i < arr.length; i++) {
@@ -18,6 +14,10 @@ const isSorted = arr => {
   return Math.sign(direction);
 };
 ```
+
+To use it, pass an array of numbers to `isSorted()`. The function will return `1` if the array is sorted in ascending order, `-1` if it's sorted in descending order, and `0` if it's not sorted.
+
+Here are some examples:
 
 ```js
 isSorted([0, 1, 2, 2]); // 1

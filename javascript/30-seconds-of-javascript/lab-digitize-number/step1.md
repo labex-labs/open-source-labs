@@ -1,16 +1,19 @@
-# Digitize Number
+# How to Digitize a Number
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To digitize a number in JavaScript, follow these steps:
 
-Converts a number to an array of digits, removing its sign if necessary.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Math.abs()` to remove the sign of the number.
+3. Convert the number to a string and use the spread operator (`...`) to create an array of digits.
+4. Use `Array.prototype.map()` and `parseInt()` to convert each digit to an integer.
 
-- Use `Math.abs()` to strip the number's sign.
-- Convert the number to a string, using the spread operator (`...`) to build an array.
-- Use `Array.prototype.map()` and `parseInt()` to transform each value to an integer.
+Here's the code for the `digitize` function:
 
 ```js
-const digitize = n => [...`${Math.abs(n)}`].map(i => parseInt(i));
+const digitize = (n) => [...`${Math.abs(n)}`].map((i) => parseInt(i));
 ```
+
+Example usage:
 
 ```js
 digitize(123); // [1, 2, 3]

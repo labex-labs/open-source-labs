@@ -1,15 +1,17 @@
-# Radians to Degrees
+# Converting Radians to Degrees
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To convert an angle from radians to degrees, follow these steps:
 
-Converts an angle from radians to degrees.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the following formula: `degrees = radians * (180 / Math.PI)`
+3. Replace `radians` in the formula with the value you want to convert.
+4. The result will be in degrees.
 
-- Use `Math.PI` and the radian to degree formula to convert the angle from radians to degrees.
+Here's an example:
 
 ```js
-const radsToDegrees = rad => (rad * 180.0) / Math.PI;
-```
-
-```js
+const radsToDegrees = (rad) => (rad * 180.0) / Math.PI;
 radsToDegrees(Math.PI / 2); // 90
 ```
+
+This will convert `π/2` radians to `90` degrees.

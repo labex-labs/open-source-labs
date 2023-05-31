@@ -1,12 +1,6 @@
 # Date Range Generator
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Creates a generator, that generates all dates in the given range using the given step.
-
-- Use a `while` loop to iterate from `start` to `end`, using `yield` to return each date in the range, using the `Date` constructor.
-- Use `Date.prototype.getDate()` and `Date.prototype.setDate()` to increment by `step` days after returning each subsequent value.
-- Omit the third argument, `step`, to use a default value of `1`.
+To generate all dates in a given range using a given step, use the following code in Terminal/SSH and type `node`:
 
 ```js
 const dateRangeGenerator = function* (start, end, step = 1) {
@@ -18,7 +12,13 @@ const dateRangeGenerator = function* (start, end, step = 1) {
 };
 ```
 
+This creates a generator that uses a `while` loop to iterate from `start` to `end`, using `Date` constructor to return each date in the range and increments by `step` days using `Date.prototype.getDate()` and `Date.prototype.setDate()`.
+
+To use a default value of `1` for `step`, omit the third argument.
+
+Here's an example of how to use the `dateRangeGenerator`:
+
 ```js
-[...dateRangeGenerator(new Date('2021-06-01'), new Date('2021-06-04'))];
+[...dateRangeGenerator(new Date("2021-06-01"), new Date("2021-06-04"))];
 // [ 2021-06-01, 2021-06-02, 2021-06-03 ]
 ```

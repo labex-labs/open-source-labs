@@ -1,12 +1,12 @@
-# Drop Array Elements From the Right Based on Function
+# Dropping Array Elements from Right Based on Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To drop elements from the end of an array until a certain condition is met, follow these steps:
 
-Removes elements from the end of an array until the passed function returns `true`.
-Returns the remaining elements in the array.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Loop through the array using `Array.prototype.slice()` to drop the last element of the array until the passed `func` returns `true`.
+3. Return the remaining elements in the array.
 
-- Loop through the array, using `Array.prototype.slice()` to drop the last element of the array until the value returned from `func` is `true`.
-- Return the remaining elements.
+Here's an example implementation:
 
 ```js
 const dropRightWhile = (arr, func) => {
@@ -16,6 +16,8 @@ const dropRightWhile = (arr, func) => {
 };
 ```
 
+You can use this function like this:
+
 ```js
-dropRightWhile([1, 2, 3, 4], n => n < 3); // [1, 2]
+dropRightWhile([1, 2, 3, 4], (n) => n < 3); // [1, 2]
 ```

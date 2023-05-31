@@ -1,13 +1,6 @@
-# Sum of Powers in Range
+# Function to Calculate Sum of Powers in a Given Range
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Calculates the sum of the powers of all the numbers from `start` to `end` (both inclusive).
-
-- Use `Array.prototype.fill()` to create an array of all the numbers in the target range.
-- Use `Array.prototype.map()` and the exponent operator (`**`) to raise them to `power` and `Array.prototype.reduce()` to add them together.
-- Omit the second argument, `power`, to use a default power of `2`.
-- Omit the third argument, `start`, to use a default starting value of `1`.
+To calculate the sum of the powers of all the numbers within a specified range (including both endpoints), use the following function:
 
 ```js
 const sumPower = (end, power = 2, start = 1) =>
@@ -17,8 +10,18 @@ const sumPower = (end, power = 2, start = 1) =>
     .reduce((a, b) => a + b, 0);
 ```
 
+Here's how you can use this function:
+
+- Call `sumPower(end)` to calculate the sum of squares of all numbers from 1 to `end`.
+- Call `sumPower(end, power)` to calculate the sum of `power`th powers of all numbers from 1 to `end`.
+- Call `sumPower(end, power, start)` to calculate the sum of `power`th powers of all numbers from `start` to `end`.
+
+Note that the second and third arguments (`power` and `start`) are optional, and default to `2` and `1` respectively if not provided.
+
+Example:
+
 ```js
-sumPower(10); // 385
-sumPower(10, 3); // 3025
-sumPower(10, 3, 5); // 2925
+sumPower(10); // Returns 385 (sum of squares of numbers from 1 to 10)
+sumPower(10, 3); // Returns 3025 (sum of cubes of numbers from 1 to 10)
+sumPower(10, 3, 5); // Returns 2925 (sum of cubes of numbers from 5 to 10)
 ```

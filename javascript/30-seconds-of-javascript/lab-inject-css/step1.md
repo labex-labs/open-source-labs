@@ -1,25 +1,24 @@
-# Inject CSS
+# How to Inject CSS into a Document
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To inject CSS into a document, use the following steps:
 
-Injects the given CSS code into the current document
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Create a new `style` element using `Document.createElement()`, and set its type to `text/css`.
+3. Use `Element.innerText` to set the value to the given CSS string.
+4. Use `Document.head` and `Element.appendChild()` to append the new element to the document head.
+5. Return the newly created `style` element.
 
-- Use `Document.createElement()` to create a new `style` element and set its type to `text/css`.
-- Use `Element.innerText` to set the value to the given CSS string.
-- Use `Document.head` and `Element.appendChild()` to append the new element to the document head.
-- Return the newly created `style` element.
+Here is an example of how to use the `injectCSS` function to inject CSS code into a document:
 
 ```js
-const injectCSS = css => {
-  let el = document.createElement('style');
-  el.type = 'text/css';
+const injectCSS = (css) => {
+  let el = document.createElement("style");
+  el.type = "text/css";
   el.innerText = css;
   document.head.appendChild(el);
   return el;
 };
-```
 
-```js
-injectCSS('body { background-color: #000 }');
+injectCSS("body { background-color: #000 }");
 // '<style type="text/css">body { background-color: #000 }</style>'
 ```

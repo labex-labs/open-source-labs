@@ -1,10 +1,10 @@
-# Shuffle Array
+# Array Shuffling Algorithm
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To shuffle an array in JavaScript, use the Fisher-Yates algorithm. This algorithm reorders the elements of the array randomly and returns a new array.
 
-Randomizes the order of the values of an array, returning a new array.
+To start practicing coding, open the Terminal/SSH and type `node`.
 
-- Use the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Fisher_and_Yates'_original_method) to reorder the elements of the array.
+Here's the code for the Fisher-Yates algorithm:
 
 ```js
 const shuffle = ([...arr]) => {
@@ -17,7 +17,9 @@ const shuffle = ([...arr]) => {
 };
 ```
 
+To shuffle an array, pass the array to the `shuffle` function and it will return the shuffled array. For example:
+
 ```js
 const foo = [1, 2, 3];
-shuffle(foo); // [2, 3, 1], foo = [1, 2, 3]
+shuffle(foo); // returns [2, 3, 1], and foo is still [1, 2, 3]
 ```

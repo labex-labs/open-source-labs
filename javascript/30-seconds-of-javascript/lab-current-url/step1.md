@@ -1,15 +1,13 @@
-# Current URL
+# Get Current URL
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Returns the current URL.
-
-- Use `Window.location.href` to get the current URL.
+To retrieve the current URL, use `Window.location.href`. Here's a function that you can use:
 
 ```js
-const currentURL = () => window.location.href;
+const getCurrentURL = () => window.location.href;
 ```
 
+To get the current URL, simply call the function `getCurrentURL()`. For example:
+
 ```js
-currentURL(); // 'https://www.google.com/'
+getCurrentURL(); // 'https://www.google.com/'
 ```

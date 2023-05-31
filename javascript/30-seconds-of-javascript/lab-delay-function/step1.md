@@ -1,22 +1,24 @@
-# Delay Function Execution
+# How to Delay Function Execution in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To delay the execution of a function in JavaScript, you can use the `setTimeout()` method. Here's how to do it:
 
-Invokes the provided function after `ms` milliseconds.
-
-- Use `setTimeout()` to delay execution of `fn`.
-- Use the spread (`...`) operator to supply the function with an arbitrary number of arguments.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the following syntax to delay the execution of a function `fn` by `ms` milliseconds:
 
 ```js
 const delay = (fn, ms, ...args) => setTimeout(fn, ms, ...args);
 ```
 
+3. To pass arguments to the function, use the spread (`...`) operator like this:
+
 ```js
 delay(
-  function(text) {
+  function (text) {
     console.log(text);
   },
   1000,
-  'later'
+  "later"
 ); // Logs 'later' after one second.
 ```
+
+With this code, the provided function `fn` will be invoked after the specified number of milliseconds (`ms`). The `...args` parameter allows you to pass an arbitrary number of arguments to the function.

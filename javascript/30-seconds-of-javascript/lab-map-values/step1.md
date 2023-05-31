@@ -1,11 +1,11 @@
-# Map Object Values
+# Function to Map Object Values
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To map the values of an object using a provided function to generate a new object with the same keys, follow these steps:
 
-Maps the values of an object using the provided function, generating a new object with the same keys.
-
-- Use `Object.keys()` to iterate over the object's keys.
-- Use `Array.prototype.reduce()` to create a new object with the same keys and mapped values using `fn`.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Object.keys()` to iterate over the keys of the object.
+3. Use `Array.prototype.reduce()` to create a new object with the same keys and mapped values using the provided function `fn`.
+4. The code below demonstrates the implementation of the `mapValues` function.
 
 ```js
 const mapValues = (obj, fn) =>
@@ -15,10 +15,12 @@ const mapValues = (obj, fn) =>
   }, {});
 ```
 
+Here is an example usage of the `mapValues` function:
+
 ```js
 const users = {
-  fred: { user: 'fred', age: 40 },
-  pebbles: { user: 'pebbles', age: 1 }
+  fred: { user: "fred", age: 40 },
+  pebbles: { user: "pebbles", age: 1 },
 };
-mapValues(users, u => u.age); // { fred: 40, pebbles: 1 }
+mapValues(users, (u) => u.age); // { fred: 40, pebbles: 1 }
 ```

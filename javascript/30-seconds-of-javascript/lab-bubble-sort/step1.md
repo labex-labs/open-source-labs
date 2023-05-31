@@ -1,17 +1,23 @@
-# Bubble Sort
+# Bubble Sort Algorithm
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To practice coding, open the Terminal/SSH and type `node` to start. The bubble sort algorithm sorts an array of numbers.
 
-Sorts an array of numbers, using the bubble sort algorithm.
+Steps to sort an array using the bubble sort algorithm:
 
-- Declare a variable, `swapped`, that indicates if any values were swapped during the current iteration.
-- Use the spread operator (`...`) to clone the original array, `arr`.
-- Use a `for` loop to iterate over the elements of the cloned array, terminating before the last element.
-- Use a nested `for` loop to iterate over the segment of the array between `0` and `i`, swapping any adjacent out of order elements and setting `swapped` to `true`.
-- If `swapped` is `false` after an iteration, no more changes are needed, so the cloned array is returned.
+1. Declare a variable, `swapped`, that indicates if any values were swapped during the current iteration.
+
+2. Use the spread operator (`...`) to clone the original array, `arr`.
+
+3. Use a `for` loop to iterate over the elements of the cloned array, terminating before the last element.
+
+4. Use a nested `for` loop to iterate over the segment of the array between `0` and `i`, swapping any adjacent out of order elements and setting `swapped` to `true`.
+
+5. If `swapped` is `false` after an iteration, no more changes are needed, so the cloned array is returned.
+
+Example code:
 
 ```js
-const bubbleSort = arr => {
+const bubbleSort = (arr) => {
   let swapped = false;
   const a = [...arr];
   for (let i = 1; i < a.length; i++) {
@@ -26,8 +32,6 @@ const bubbleSort = arr => {
   }
   return a;
 };
-```
 
-```js
 bubbleSort([2, 1, 4, 3]); // [1, 2, 3, 4]
 ```

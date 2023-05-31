@@ -1,11 +1,6 @@
-# Left Substring Generator
+# Code Practice: Left Substring Generator
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Generates all left substrings of a given string.
-
-- Use `String.prototype.length` to terminate early if the string is empty.
-- Use a `for...in` loop and `String.prototype.slice()` to `yield` each substring of the given string, starting at the beginning.
+To generate all left substrings of a given string, use the `leftSubstrGenerator` function provided below.
 
 ```js
 const leftSubstrGenerator = function* (str) {
@@ -14,7 +9,11 @@ const leftSubstrGenerator = function* (str) {
 };
 ```
 
+To use the function, open the Terminal/SSH and type `node`. Then, enter the function with a string argument:
+
 ```js
-[...leftSubstrGenerator('hello')];
+[...leftSubstrGenerator("hello")];
 // [ 'h', 'he', 'hel', 'hell', 'hello' ]
 ```
+
+The function uses `String.prototype.length` to terminate early if the string is empty and a `for...in` loop with `String.prototype.slice()` to `yield` each substring of the given string, starting at the beginning.

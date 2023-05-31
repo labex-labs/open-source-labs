@@ -1,12 +1,16 @@
-# RGB to HSB
+# RGB to HSB Conversion
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To convert a RGB color tuple to HSB format, you can follow these steps:
 
-Converts a RGB color tuple to HSB format.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the [RGB to HSB conversion formula](https://en.wikipedia.org/wiki/HSL_and_HSV#From_RGB) to convert the RGB color tuple to the appropriate HSB format.
+3. The input parameters range is [0, 255], while the resulting values have a range of:
 
-- Use the [RGB to HSB conversion formula](https://en.wikipedia.org/wiki/HSL_and_HSV#From_RGB) to convert to the appropriate format.
-- The range of all input parameters is [0, 255].
-- The range of the resulting values is H: [0, 360], S: [0, 100], B: [0, 100].
+- H: [0, 360]
+- S: [0, 100]
+- B: [0, 100]
+
+Here is the function in JavaScript:
 
 ```js
 const RGBToHSB = (r, g, b) => {
@@ -16,10 +20,18 @@ const RGBToHSB = (r, g, b) => {
   const v = Math.max(r, g, b),
     n = v - Math.min(r, g, b);
   const h =
-    n === 0 ? 0 : n && v === r ? (g - b) / n : v === g ? 2 + (b - r) / n : 4 + (r - g) / n;
+    n === 0
+      ? 0
+      : n && v === r
+      ? (g - b) / n
+      : v === g
+      ? 2 + (b - r) / n
+      : 4 + (r - g) / n;
   return [60 * (h < 0 ? h + 6 : h), v && (n / v) * 100, v * 100];
 };
 ```
+
+You can call the function like this:
 
 ```js
 RGBToHSB(252, 111, 48);

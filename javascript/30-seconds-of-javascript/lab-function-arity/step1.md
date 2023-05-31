@@ -1,16 +1,27 @@
-# Function Arity
+# How to Create a Function with a Specific Number of Arguments
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To create a function that accepts a specific number of arguments and ignores any additional arguments, follow these steps:
 
-Creates a function that accepts up to `n` arguments, ignoring any additional arguments.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
 
-- Call the provided function, `fn`, with up to `n` arguments, using `Array.prototype.slice()` and the spread operator (`...`).
+2. Use the following code to create your function:
 
 ```js
-const ary = (fn, n) => (...args) => fn(...args.slice(0, n));
+const ary =
+  (fn, n) =>
+  (...args) =>
+    fn(...args.slice(0, n));
 ```
+
+3. Call the function you just created, `ary`, with two arguments: the function you want to limit the arguments for (`fn`) and the number of arguments you want to limit it to (`n`).
+
+4. Now you can use the new function to limit the number of arguments for any function you want. To do this, call your new function with the spread operator (`...`) and the arguments you want to limit.
+
+Here's an example of how to use your new function:
 
 ```js
 const firstTwoMax = ary(Math.max, 2);
-[[2, 6, 'a'], [6, 4, 8], [10]].map(x => firstTwoMax(...x)); // [6, 6, 10]
+[[2, 6, "a"], [6, 4, 8], [10]].map((x) => firstTwoMax(...x)); // [6, 6, 10]
 ```
+
+In this example, `firstTwoMax` is a new function that limits the `Math.max` function to only accept the first two arguments. The `map` method is used to apply the new function to each array in the outer array, returning the maximum of the first two elements of each inner array.

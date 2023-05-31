@@ -1,17 +1,15 @@
-# Call Function Once
+# Ensuring a Function is Called Only Once
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To ensure that a function is called only once, you can use the `once` function. To start practicing coding, open the Terminal/SSH and type `node`. The `once` function utilizes a closure and a flag named `called`. The flag is set to `true` once the function is called for the first time, preventing it from being called again.
 
-Ensures a function is called only once.
+In order to allow the function to have its `this` context changed, such as in an event listener, you must use the `function` keyword. The supplied function must have the context applied. Additionally, the function can be supplied with an arbitrary number of arguments using the rest/spread (`...`) operator.
 
-- Utilizing a closure, use a flag, `called`, and set it to `true` once the function is called for the first time, preventing it from being called again.
-- In order to allow the function to have its `this` context changed (such as in an event listener), the `function` keyword must be used, and the supplied function must have the context applied.
-- Allow the function to be supplied with an arbitrary number of arguments using the rest/spread (`...`) operator.
+Here is an example implementation of the `once` function:
 
 ```js
-const once = fn => {
+const once = (fn) => {
   let called = false;
-  return function(...args) {
+  return function (...args) {
     if (called) return;
     called = true;
     return fn.apply(this, args);
@@ -19,10 +17,12 @@ const once = fn => {
 };
 ```
 
+You can use the `once` function to call a function only once, like this:
+
 ```js
-const startApp = function(event) {
+const startApp = function (event) {
   console.log(this, event); // document.body, MouseEvent
 };
-document.body.addEventListener('click', once(startApp));
+document.body.addEventListener("click", once(startApp));
 // only runs `startApp` once upon click
 ```

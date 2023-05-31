@@ -1,14 +1,14 @@
-# Logical Or
+# Using the Logical OR Operator in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To begin coding practice, open the Terminal/SSH and enter `node`. The logical OR operator (`||`) checks if at least one of the given arguments is `true`.
 
-Checks if at least one of the arguments is `true`.
-
-- Use the logical or (`||`) operator on the two given values.
+Here's an example of using the logical OR operator:
 
 ```js
 const or = (a, b) => a || b;
 ```
+
+And here are some examples of the output when using the operator:
 
 ```js
 or(true, true); // true

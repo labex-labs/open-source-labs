@@ -1,20 +1,19 @@
-# Remove Attributes
+# Function to Remove Attributes
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Removes all attributes from an HTML element.
-
-- Use `Element.attributes` and `Object.values()` to get all the attributes of the element.
-- Use `Array.prototype.forEach()` and object destructuring to get the name of each attribute and `Element.removeAttribute()` to remove it from the element.
+To remove all attributes from an HTML element, you can use the following function:
 
 ```js
-const removeAttributes = element =>
-  Object.values(element.attributes).forEach(({ name }) =>
-    element.removeAttribute(name)
-  );
+const removeAttributes = (element) => {
+  Object.values(element.attributes).forEach(({ name }) => {
+    element.removeAttribute(name);
+  });
+};
 ```
 
+To use this function, simply pass the element you want to modify as an argument. For example:
+
 ```js
-removeAttributes(document.querySelector('p.special'));
-// The paragraph will not have the 'special' class anymore
+removeAttributes(document.querySelector("p.special"));
 ```
+
+This will remove all attributes from the `p` element with the class `special`.

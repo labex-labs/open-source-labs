@@ -1,21 +1,26 @@
-# Get Meridiem Suffix of Integer
+# How to Get the Meridiem Suffix of an Integer
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To get started with coding, open the Terminal/SSH and type `node`.
 
-Converts an integer to a suffixed string, adding `am` or `pm` based on its value.
+Here's a function that converts an integer to a 12-hour format string with a meridiem suffix.
 
-- Use the modulo operator (`%`) and conditional checks to transform an integer to a stringified 12-hour format with meridiem suffix.
+To do this, use the modulo operator (`%`) and conditional checks.
 
 ```js
-const getMeridiemSuffixOfInteger = num =>
-  num === 0 || num === 24
-    ? 12 + 'am'
-    : num === 12
-    ? 12 + 'pm'
-    : num < 12
-    ? (num % 12) + 'am'
-    : (num % 12) + 'pm';
+const getMeridiemSuffixOfInteger = (num) => {
+  if (num === 0 || num === 24) {
+    return "12am";
+  } else if (num === 12) {
+    return "12pm";
+  } else if (num < 12) {
+    return num + "am";
+  } else {
+    return (num % 12) + "pm";
+  }
+};
 ```
+
+Here are some examples of how to use this function:
 
 ```js
 getMeridiemSuffixOfInteger(0); // '12am'
@@ -23,3 +28,5 @@ getMeridiemSuffixOfInteger(11); // '11am'
 getMeridiemSuffixOfInteger(13); // '1pm'
 getMeridiemSuffixOfInteger(25); // '1pm'
 ```
+
+This function takes an integer as an argument and returns a string with the meridiem suffix.

@@ -1,28 +1,21 @@
-# Check if Value Is of Type
+# Function to Check if Value Is of Type
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a provided value is of a specified type, follow these steps:
 
-Checks if the provided value is of the specified type.
-
-- Ensure the value is not `undefined` or `null` using `Array.prototype.includes()`.
-- Use `Object.prototype.constructor` to compare the constructor property on the value with `type` to check if the provided value is of the specified `type`.
+- Ensure that the value is not `undefined` or `null` by using `Array.prototype.includes()`.
+- Use `Object.prototype.constructor` to compare the constructor property on the value with the specified `type`.
+- The function `is()` below performs these checks and returns `true` if the value is of the specified type, and `false` otherwise.
 
 ```js
 const is = (type, val) => ![, null].includes(val) && val.constructor === type;
 ```
 
+You can use `is()` to check if a value is of various types, such as `Array`, `ArrayBuffer`, `Map`, `RegExp`, `Set`, `WeakMap`, `WeakSet`, `String`, `Number`, and `Boolean`. For example:
+
 ```js
 is(Array, [1]); // true
-is(ArrayBuffer, new ArrayBuffer()); // true
 is(Map, new Map()); // true
-is(RegExp, /./g); // true
-is(Set, new Set()); // true
-is(WeakMap, new WeakMap()); // true
-is(WeakSet, new WeakSet()); // true
-is(String, ''); // true
-is(String, new String('')); // true
+is(String, ""); // true
 is(Number, 1); // true
-is(Number, new Number(1)); // true
 is(Boolean, true); // true
-is(Boolean, new Boolean(true)); // true
 ```

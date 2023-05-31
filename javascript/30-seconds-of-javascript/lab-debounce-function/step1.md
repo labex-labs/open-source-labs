@@ -1,26 +1,25 @@
 # Debounce Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To create a debounced function that delays invoking the provided function until at least `ms` milliseconds have elapsed since its last invocation, follow these steps:
 
-Creates a debounced function that delays invoking the provided function until at least `ms` milliseconds have elapsed since its last invocation.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Each time the debounced function is invoked, clear the current pending timeout with `clearTimeout()`. Use `setTimeout()` to create a new timeout that delays invoking the function until at least `ms` milliseconds have elapsed.
+3. Use `Function.prototype.apply()` to apply the `this` context to the function and provide the necessary arguments.
+4. Omit the second argument, `ms`, to set the timeout at a default of `0` ms.
 
-- Each time the debounced function is invoked, clear the current pending timeout with `clearTimeout()`. Use `setTimeout()` to create a new timeout that delays invoking the function until at least `ms` milliseconds have elapsed.
-- Use `Function.prototype.apply()` to apply the `this` context to the function and provide the necessary arguments.
-- Omit the second argument, `ms`, to set the timeout at a default of `0` ms.
+Here's an example of how to use the `debounce` function:
 
 ```js
 const debounce = (fn, ms = 0) => {
   let timeoutId;
-  return function(...args) {
+  return function (...args) {
     clearTimeout(timeoutId);
     timeoutId = setTimeout(() => fn.apply(this, args), ms);
   };
 };
-```
 
-```js
 window.addEventListener(
-  'resize',
+  "resize",
   debounce(() => {
     console.log(window.innerWidth);
     console.log(window.innerHeight);

@@ -1,18 +1,18 @@
-# Array Intersection
+# Finding Array Intersection
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Returns the elements that exist in both arrays, filtering duplicate values.
-
-- Create a `Set` from `b`, then use `Array.prototype.filter()` on `a` to only keep values contained in `b`.
+To find the common elements between two arrays and remove duplicates, use the following code:
 
 ```js
-const intersection = (a, b) => {
-  const s = new Set(b);
-  return [...new Set(a)].filter(x => s.has(x));
+const intersection = (arr1, arr2) => {
+  const set = new Set(arr2);
+  return [...new Set(arr1)].filter((elem) => set.has(elem));
 };
 ```
+
+To use this code, open the Terminal/SSH and type `node`. Then call the `intersection` function with two arrays as arguments, like this:
 
 ```js
 intersection([1, 2, 3], [4, 3, 2]); // [2, 3]
 ```
+
+This will return an array containing the elements that exist in both arrays, with duplicates removed.

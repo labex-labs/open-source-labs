@@ -1,11 +1,9 @@
 # Range Generator
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate a range of values using a given step, use the following `rangeGenerator` function. Open the Terminal/SSH and type `node` to start coding.
 
-Creates a generator, that generates all values in the given range using the given step.
-
-- Use a `while` loop to iterate from `start` to `end`, using `yield` to return each value and then incrementing by `step`.
-- Omit the third argument, `step`, to use a default value of `1`.
+- Use a `while` loop and `yield` to return each value, starting from `start` and ending at `end`.
+- If you want to use a default step of `1`, omit the third argument.
 
 ```js
 const rangeGenerator = function* (start, end, step = 1) {
@@ -16,6 +14,8 @@ const rangeGenerator = function* (start, end, step = 1) {
   }
 };
 ```
+
+Here's an example of how to use the `rangeGenerator` function:
 
 ```js
 for (let i of rangeGenerator(6, 10)) console.log(i);

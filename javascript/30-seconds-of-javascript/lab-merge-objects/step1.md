@@ -1,11 +1,11 @@
-# Merge Objects
+# Object Merge Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To merge two or more objects, follow the given steps:
 
-Creates a new object from the combination of two or more objects.
-
-- Use `Array.prototype.reduce()` combined with `Object.keys()` to iterate over all objects and keys.
-- Use `Object.prototype.hasOwnProperty()` and `Array.prototype.concat()` to append values for keys existing in multiple objects.
+1. Open the Terminal/SSH and type `node` to start coding.
+2. Use `Array.prototype.reduce()` along with `Object.keys()` to iterate over all objects and keys.
+3. Use `Object.prototype.hasOwnProperty()` and `Array.prototype.concat()` to append values for keys existing in multiple objects.
+4. Use the given code snippet to create a new object from the combination of two or more objects.
 
 ```js
 const merge = (...objs) =>
@@ -21,16 +21,23 @@ const merge = (...objs) =>
   );
 ```
 
+For example, consider the following objects:
+
 ```js
 const object = {
   a: [{ x: 2 }, { y: 4 }],
-  b: 1
+  b: 1,
 };
 const other = {
   a: { z: 3 },
   b: [2, 3],
-  c: 'foo'
+  c: "foo",
 };
+```
+
+When you merge these two objects using the `merge()` function, you get the following result:
+
+```js
 merge(object, other);
 // { a: [ { x: 2 }, { y: 4 }, { z: 3 } ], b: [ 1, 2, 3 ], c: 'foo' }
 ```

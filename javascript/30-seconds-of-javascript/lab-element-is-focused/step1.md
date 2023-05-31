@@ -1,15 +1,15 @@
-# Element Is Focused
+# Checking if an Element is Focused
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the given element is focused.
-
-- Use `Document.activeElement` to determine if the given element is focused.
+To check if an element is focused, use the `Document.activeElement` property.
 
 ```js
-const elementIsFocused = el => (el === document.activeElement);
+const elementIsFocused = (el) => el === document.activeElement;
 ```
 
+Call the `elementIsFocused` function with the element you want to check as an argument. It will return `true` if the element is focused.
+
+Example:
+
 ```js
-elementIsFocused(el); // true if the element is focused
+elementIsFocused(el); // true
 ```

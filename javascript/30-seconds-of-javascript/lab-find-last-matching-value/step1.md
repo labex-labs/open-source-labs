@@ -1,16 +1,13 @@
-# Find Last Matching Value
+# JavaScript Function for Finding the Last Matching Value
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Finds the last element for which the provided function returns a truthy value.
-
-- Use `Array.prototype.filter()` to remove elements for which `fn` returns falsy values.
-- Use `Array.prototype.pop()` to get the last element in the filtered array.
+To find the last element in an array that satisfies a given condition, use the following JavaScript function:
 
 ```js
 const findLast = (arr, fn) => arr.filter(fn).pop();
 ```
 
-```js
-findLast([1, 2, 3, 4], n => n % 2 === 1); // 3
-```
+To use this function, pass in the array you want to search and a function that returns a truthy value for the elements you want to match.
+
+For example, `findLast([1, 2, 3, 4], n => n % 2 === 1);` will return `3`, as it finds the last odd number in the array.
+
+To start practicing coding, open the Terminal/SSH and type `node`.

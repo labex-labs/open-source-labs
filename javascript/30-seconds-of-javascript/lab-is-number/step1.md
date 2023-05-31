@@ -1,18 +1,17 @@
-# Value Is Number
+# Checking if a Value is a Number in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a value is a number in JavaScript, you can use the `typeof` operator to determine if the value is classified as a number primitive. To prevent issues with `NaN`, which has a `typeof` equal to `number` and is not equal to itself, you can also check if the value is equal to itself using `val === val`.
 
-Checks if the given argument is a number.
-
-- Use `typeof` to check if a value is classified as a number primitive.
-- To safeguard against `NaN`, check if `val === val` (as `NaN` has a `typeof` equal to `number` and is the only value not equal to itself).
+Here's an example function that checks if a given value is a number:
 
 ```js
-const isNumber = val => typeof val === 'number' && val === val;
+const isNumber = (val) => typeof val === "number" && val === val;
 ```
+
+You can use this function like so:
 
 ```js
 isNumber(1); // true
-isNumber('1'); // false
+isNumber("1"); // false
 isNumber(NaN); // false
 ```

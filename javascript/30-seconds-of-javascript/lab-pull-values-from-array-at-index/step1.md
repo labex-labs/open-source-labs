@@ -1,14 +1,16 @@
-# Pull Values From Array at Index
+# How to Pull Values From Array at Index
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To pull out specific values from an array at certain indexes, follow these steps:
 
-Mutates the original array to filter out the values at the specified indexes.
-Returns the removed elements.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `Array.prototype.filter()` and `Array.prototype.includes()` to filter out the values that are not needed and store them in a new array called `removed`.
+3. Set `Array.prototype.length` to `0` to mutate the original array by resetting its length.
+4. Use `Array.prototype.push()` to re-populate the original array with only the pulled values.
+5. Use `Array.prototype.push()` to keep track of the removed values.
+6. The function `pullAtIndex` takes two arguments: the original array and an array of indexes to pull out.
+7. The function returns an array of removed values.
 
-- Use `Array.prototype.filter()` and `Array.prototype.includes()` to pull out the values that are not needed.
-- Set `Array.prototype.length` to mutate the passed in an array by resetting its length to `0`.
-- Use `Array.prototype.push()` to re-populate it with only the pulled values.
-- Use `Array.prototype.push()` to keep track of pulled values.
+Example usage:
 
 ```js
 const pullAtIndex = (arr, pullArr) => {
@@ -17,13 +19,11 @@ const pullAtIndex = (arr, pullArr) => {
     .map((v, i) => (pullArr.includes(i) ? removed.push(v) : v))
     .filter((v, i) => !pullArr.includes(i));
   arr.length = 0;
-  pulled.forEach(v => arr.push(v));
+  pulled.forEach((v) => arr.push(v));
   return removed;
 };
-```
 
-```js
-let myArray = ['a', 'b', 'c', 'd'];
+let myArray = ["a", "b", "c", "d"];
 let pulled = pullAtIndex(myArray, [1, 3]);
 // myArray = [ 'a', 'c' ] , pulled = [ 'b', 'd' ]
 ```

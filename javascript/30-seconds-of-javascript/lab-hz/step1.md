@@ -1,12 +1,11 @@
-# Hertz Frequency of Function
+# Function Frequency Calculation
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To measure the frequency of a function execution per second (hz/hertz), use the `hz` function. You can do this by following these steps:
 
-Measures the number of times a function is executed per second (hz/hertz).
-
-- Use `performance.now()` to get the difference in milliseconds before and after the iteration loop to calculate the time elapsed executing the function `iterations` times.
-- Return the number of cycles per second by converting milliseconds to seconds and dividing it by the time elapsed.
-- Omit the second argument, `iterations`, to use the default of 100 iterations.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `performance.now()` to get the difference in milliseconds before and after the iteration loop to calculate the time elapsed executing the function `iterations` times.
+3. Convert milliseconds to seconds and divide it by the time elapsed to return the number of cycles per second.
+4. If you want to use the default of 100 iterations, omit the second argument, `iterations`.
 
 ```js
 const hz = (fn, iterations = 100) => {
@@ -16,8 +15,12 @@ const hz = (fn, iterations = 100) => {
 };
 ```
 
+Here's an example of using the `hz` function to compare the performance of two functions that calculate the sum of an array of 10,000 numbers:
+
 ```js
-const numbers = Array(10000).fill().map((_, i) => i);
+const numbers = Array(10000)
+  .fill()
+  .map((_, i) => i);
 
 const sumReduce = () => numbers.reduce((acc, n) => acc + n, 0);
 const sumForLoop = () => {
@@ -29,3 +32,5 @@ const sumForLoop = () => {
 Math.round(hz(sumReduce)); // 572
 Math.round(hz(sumForLoop)); // 4784
 ```
+
+In this example, `sumReduce` is faster than `sumForLoop` because it has a lower frequency of function execution.

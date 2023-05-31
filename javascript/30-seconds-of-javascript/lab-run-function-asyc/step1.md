@@ -1,30 +1,32 @@
-# Run Function Asynchronously
+# Asynchronous Function Execution Using Web Workers
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To execute a function without blocking the UI, use a Web Worker to run the function in a separate thread. Here's how:
 
-Runs a function in a separate thread by using a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers), allowing long running functions to not block the UI.
-
-- Create a `Worker` using a `Blob` object URL, the contents of which should be the stringified version of the supplied function.
-- Immediately post the return value of calling the function back.
-- Return a `Promise`, listening for `onmessage` and `onerror` events and resolving the data posted back from the worker, or throwing an error.
+1. Create a `Worker` using a `Blob` object URL, with the contents being the stringified version of the function to be executed.
+2. Immediately post the return value of calling the function back.
+3. Return a `Promise`, listening for `onmessage` and `onerror` events and resolving the data posted back from the worker, or throwing an error.
 
 ```js
-const runAsync = fn => {
+const runAsync = (fn) => {
   const worker = new Worker(
     URL.createObjectURL(new Blob([`postMessage((${fn})());`]), {
-      type: 'application/javascript; charset=utf-8'
+      type: "application/javascript; charset=utf-8",
     })
   );
-  return new Promise((res, rej) => {
+  return new Promise((resolve, reject) => {
     worker.onmessage = ({ data }) => {
-      res(data), worker.terminate();
+      resolve(data);
+      worker.terminate();
     };
-    worker.onerror = err => {
-      rej(err), worker.terminate();
+    worker.onerror = (error) => {
+      reject(error);
+      worker.terminate();
     };
   });
 };
 ```
+
+Note that the function supplied to `runAsync` should not use closures because everything gets stringified and becomes literal. Therefore, all variables and functions must be defined inside. Here are some examples:
 
 ```js
 const longRunningFunction = () => {
@@ -35,11 +37,7 @@ const longRunningFunction = () => {
 
   return result;
 };
-/*
-  NOTE: Since the function is running in a different context, closures are not supported.
-  The function supplied to `runAsync` gets stringified, so everything becomes literal.
-  All variables and functions must be defined inside.
-*/
+
 runAsync(longRunningFunction).then(console.log); // 209685000000
 runAsync(() => 10 ** 3).then(console.log); // 1000
 let outsideVariable = 50;

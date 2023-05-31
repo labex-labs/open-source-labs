@@ -1,15 +1,16 @@
-# Random Boolean Value
+# How to Generate a Random Boolean Value in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate a random boolean value in JavaScript, follow these steps:
 
-Generates a random boolean value.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the `Math.random()` method to generate a random number.
+3. Check if the random number is greater than or equal to `0.5`.
+4. Return `true` if the number is greater than or equal to `0.5`, otherwise return `false`.
 
-- Use `Math.random()` to generate a random number and check if it is greater than or equal to `0.5`.
+Here's a concise implementation of the code:
 
 ```js
 const randomBoolean = () => Math.random() >= 0.5;
 ```
 
-```js
-randomBoolean(); // true
-```
+You can test the function by calling `randomBoolean()` which will return either `true` or `false`.

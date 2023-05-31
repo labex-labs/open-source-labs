@@ -1,11 +1,12 @@
 # Right Substring Generator
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To generate all right substrings of a given string, follow these steps:
 
-Generates all right substrings of a given string.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use `String.prototype.length` to stop the iteration early if the string is empty.
+3. Use a `for...in` loop and `String.prototype.slice()` to `yield` each substring of the given string, starting from the end.
 
-- Use `String.prototype.length` to terminate early if the string is empty.
-- Use a `for...in` loop and `String.prototype.slice()` to `yield` each substring of the given string, starting at the end.
+Here's the code snippet:
 
 ```js
 const rightSubstrGenerator = function* (str) {
@@ -14,7 +15,9 @@ const rightSubstrGenerator = function* (str) {
 };
 ```
 
+Example usage:
+
 ```js
-[...rightSubstrGenerator('hello')];
+[...rightSubstrGenerator("hello")];
 // [ 'o', 'lo', 'llo', 'ello', 'hello' ]
 ```

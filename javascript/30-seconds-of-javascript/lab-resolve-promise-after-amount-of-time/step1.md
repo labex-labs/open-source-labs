@@ -1,20 +1,24 @@
-# Resolve Promise After Given Amount of Time
+# Creating a Promise with a Delay
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To create a new promise that resolves after a specific amount of time, follow these steps:
 
-Creates a promise that resolves after a given amount of time to the provided value.
+1. Use the `Promise` constructor to create a new promise.
+2. Inside the promise's executor function, use `setTimeout()` to call the promise's `resolve` function with the provided `value` after the specified `delay`.
 
-- Use the `Promise` constructor to create a new promise.
-- Use `setTimeout()` to call the promise's `resolve` function with the passed `value` after the specified `delay`.
+Here's an example implementation of `resolveAfter()`:
 
 ```js
 const resolveAfter = (value, delay) =>
-  new Promise(resolve => {
-    setTimeout(() => resolve(value, delay));
+  new Promise((resolve) => {
+    setTimeout(() => resolve(value), delay);
   });
 ```
 
+Now you can call `resolveAfter()` to get a promise that resolves to the provided value after the specified delay:
+
 ```js
-resolveAfter('Hello', 1000);
+resolveAfter("Hello", 1000);
 // Returns a promise that resolves to 'Hello' after 1s
 ```
+
+To start practicing coding, open the Terminal or SSH and type `node`.

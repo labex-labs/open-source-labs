@@ -1,15 +1,16 @@
-# NTH Root of Number
+# How to Calculate the Nth Root of a Number
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To calculate the nth root of a number:
 
-Calculates the nth root of a given number.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the formula `Math.pow(x, 1/n)` to calculate `x` to the power of `1/n`.
+3. The result of this calculation is equal to the nth root of `x`.
 
-- Use `Math.pow()` to calculate `x` to the power of `1 / n` which is equal to the nth root of `x`.
+Here's an example code snippet:
 
 ```js
 const nthRoot = (x, n) => Math.pow(x, 1 / n);
+nthRoot(32, 5); // Output: 2
 ```
 
-```js
-nthRoot(32, 5); // 2
-```
+This code will calculate the nth root of 32 (where n is 5) and return the output as 2.

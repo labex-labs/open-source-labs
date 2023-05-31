@@ -1,20 +1,26 @@
-# Reverse Compose Functions
+# Reversing Function Composition
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To start practicing coding, open the Terminal/SSH and type `node`.
 
-Performs left-to-right function composition.
+Here's how to perform left-to-right function composition:
 
-- Use `Array.prototype.reduce()` to perform left-to-right function composition.
-- The first (leftmost) function can accept one or more arguments; the remaining functions must be unary.
+- Use `Array.prototype.reduce()` method to perform left-to-right function composition.
+- The first (leftmost) function can accept one or more arguments, while the remaining functions must be unary.
 
 ```js
 const composeRight = (...fns) =>
-  fns.reduce((f, g) => (...args) => g(f(...args)));
+  fns.reduce(
+    (f, g) =>
+      (...args) =>
+        g(f(...args))
+  );
 ```
+
+For example:
 
 ```js
 const add = (x, y) => x + y;
-const square = x => x * x;
+const square = (x) => x * x;
 const addAndSquare = composeRight(add, square);
 addAndSquare(1, 2); // 9
 ```

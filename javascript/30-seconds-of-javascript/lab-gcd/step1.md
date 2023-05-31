@@ -1,12 +1,10 @@
-# Greatest Common Divisor
+# How to Calculate the Greatest Common Divisor
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To calculate the greatest common divisor between two or more numbers/arrays using code, follow these steps:
 
-Calculates the greatest common divisor between two or more numbers/arrays.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
 
-- The inner `_gcd` function uses recursion.
-- Base case is when `y` equals `0`. In this case, return `x`.
-- Otherwise, return the GCD of `y` and the remainder of the division `x / y`.
+2. Use the following code:
 
 ```js
 const gcd = (...arr) => {
@@ -14,6 +12,14 @@ const gcd = (...arr) => {
   return [...arr].reduce((a, b) => _gcd(a, b));
 };
 ```
+
+3. The `gcd` function uses recursion.
+
+4. The base case is when `y` equals `0`. In this case, the function returns `x`.
+
+5. Otherwise, the function returns the GCD of `y` and the remainder of the division `x / y`.
+
+6. To test the function, use the following code:
 
 ```js
 gcd(8, 36); // 4

@@ -1,17 +1,17 @@
-# Value Is Nil
+# How to Check if a Value is Null or Undefined in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Checks if the specified value is `null` or `undefined`.
-
-- Use the strict equality operator to check if the value of `val` is equal to `null` or `undefined`.
+To determine if a value is `null` or `undefined` in JavaScript, you can use the strict equality operator (`===`). Here's an example code snippet that checks if the specified value is `null` or `undefined`:
 
 ```js
-const isNil = val => val === undefined || val === null;
+const isNil = (val) => val === undefined || val === null;
 ```
+
+You can use this function to check if a value is `null` or `undefined`, like this:
 
 ```js
 isNil(null); // true
 isNil(undefined); // true
-isNil(''); // false
+isNil(""); // false
 ```
+
+To start practicing coding in JavaScript, you can open the Terminal/SSH and type `node`.

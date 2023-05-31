@@ -1,13 +1,14 @@
-# Record Animation Frames
+# Guide to Record Animation Frames
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To record animation frames, follow the steps below:
 
-Invokes the provided callback on each animation frame.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use recursion to invoke the provided callback on each animation frame.
+3. If `running` is `true`, continue invoking `Window.requestAnimationFrame()`, which invokes the provided callback.
+4. To allow manual control of the recording, return an object with two methods `start` and `stop`.
+5. Omit the second argument, `autoStart`, to implicitly call `start` when the function is invoked.
 
-- Use recursion.
-- Provided that `running` is `true`, continue invoking `Window.requestAnimationFrame()` which invokes the provided callback.
-- Return an object with two methods `start` and `stop` to allow manual control of the recording.
-- Omit the second argument, `autoStart`, to implicitly call `start` when the function is invoked.
+Use the following code to record animation frames:
 
 ```js
 const recordAnimationFrames = (callback, autoStart = true) => {
@@ -34,8 +35,10 @@ const recordAnimationFrames = (callback, autoStart = true) => {
 };
 ```
 
+Example usage of the code:
+
 ```js
-const cb = () => console.log('Animation frame fired');
+const cb = () => console.log("Animation frame fired");
 const recorder = recordAnimationFrames(cb);
 // logs 'Animation frame fired' on each animation frame
 recorder.stop(); // stops logging

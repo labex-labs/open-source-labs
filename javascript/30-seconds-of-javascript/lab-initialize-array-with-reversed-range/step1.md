@@ -1,13 +1,6 @@
-# Initialize Array With Reversed Range
+# How to Initialize an Array with a Reversed Range in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
-
-Initializes an array containing the numbers in the specified range (in reverse) where `start` and `end` are inclusive with their common difference `step`.
-
-- Use `Array.from()` to create an array of the desired length, `(end - start + 1) / step`.
-- Use `Array.prototype.map()` to fill the array with the desired values in the given range.
-- Omit the second argument, `start`, to use a default value of `0`.
-- Omit the last argument, `step`, to use a default value of `1`.
+To initialize an array with a reversed range in JavaScript, use the following function:
 
 ```js
 const initializeArrayWithRangeRight = (end, start = 0, step = 1) =>
@@ -16,8 +9,14 @@ const initializeArrayWithRangeRight = (end, start = 0, step = 1) =>
   );
 ```
 
+This function creates an array containing the numbers in the specified range in reverse order. The `start` and `end` parameters are inclusive, and the `step` parameter specifies the common difference between the numbers in the range.
+
+To use the function, call it with the desired `end`, `start`, and `step` values as arguments, like this:
+
 ```js
 initializeArrayWithRangeRight(5); // [5, 4, 3, 2, 1, 0]
 initializeArrayWithRangeRight(7, 3); // [7, 6, 5, 4, 3]
 initializeArrayWithRangeRight(9, 0, 2); // [8, 6, 4, 2, 0]
 ```
+
+If you omit the `start` argument, it defaults to `0`. If you omit the `step` argument, it defaults to `1`.

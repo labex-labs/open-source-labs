@@ -1,11 +1,11 @@
-# Least Common Multiple
+# Calculating Least Common Multiple
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To calculate the least common multiple of two or more numbers, follow these steps:
 
-Calculates the least common multiple of two or more numbers.
-
-- Use the greatest common divisor (GCD) formula and the fact that `lcm(x, y) = x * y / gcd(x, y)` to determine the least common multiple.
-- The GCD formula uses recursion.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Use the greatest common divisor (GCD) formula and the fact that `lcm(x, y) = x * y / gcd(x, y)` to determine the least common multiple.
+3. The GCD formula uses recursion.
+4. Implement the following code in JavaScript:
 
 ```js
 const lcm = (...arr) => {
@@ -14,6 +14,8 @@ const lcm = (...arr) => {
   return [...arr].reduce((a, b) => _lcm(a, b));
 };
 ```
+
+Example usage:
 
 ```js
 lcm(12, 7); // 84

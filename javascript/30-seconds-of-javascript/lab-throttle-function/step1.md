@@ -1,42 +1,22 @@
 # Throttle Function
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To use the throttle function, follow these steps:
 
-Creates a throttled function that only invokes the provided function at most once per every `wait` milliseconds
+1. Open the Terminal/SSH.
+2. Type `node` to start practicing coding.
+3. The throttle function creates a throttled function that only invokes the provided function at most once per every `wait` milliseconds.
+4. To create the throttled function, use `setTimeout()` and `clearTimeout()` to throttle the given method, `fn`.
+5. Use `Function.prototype.apply()` to apply the `this` context to the function and provide the necessary `arguments`.
+6. Use `Date.now()` to keep track of the last time the throttled function was invoked.
+7. Use a variable, `inThrottle`, to prevent a race condition between the first execution of `fn` and the next loop.
+8. Omit the second argument, `wait`, to set the timeout at a default of `0` ms.
 
-- Use `setTimeout()` and `clearTimeout()` to throttle the given method, `fn`.
-- Use `Function.prototype.apply()` to apply the `this` context to the function and provide the necessary `arguments`.
-- Use `Date.now()` to keep track of the last time the throttled function was invoked.
-- Use a variable, `inThrottle`, to prevent a race condition between the first execution of `fn` and the next loop.
-- Omit the second argument, `wait`, to set the timeout at a default of `0` ms.
-
-```js
-const throttle = (fn, wait) => {
-  let inThrottle, lastFn, lastTime;
-  return function() {
-    const context = this,
-      args = arguments;
-    if (!inThrottle) {
-      fn.apply(context, args);
-      lastTime = Date.now();
-      inThrottle = true;
-    } else {
-      clearTimeout(lastFn);
-      lastFn = setTimeout(function() {
-        if (Date.now() - lastTime >= wait) {
-          fn.apply(context, args);
-          lastTime = Date.now();
-        }
-      }, Math.max(wait - (Date.now() - lastTime), 0));
-    }
-  };
-};
-```
+Here is an example of using the throttle function:
 
 ```js
 window.addEventListener(
-  'resize',
-  throttle(function(evt) {
+  "resize",
+  throttle(function (evt) {
     console.log(window.innerWidth);
     console.log(window.innerHeight);
   }, 250)

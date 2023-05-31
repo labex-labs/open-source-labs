@@ -1,20 +1,24 @@
-# Palindrome
+# How to Check if a String is a Palindrome in JavaScript?
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To check if a given string is a palindrome in JavaScript, follow these steps:
 
-Checks if the given string is a palindrome.
+1. Open the Terminal/SSH and type `node` to start practicing coding.
+2. Normalize the string to lowercase using `String.prototype.toLowerCase()` method.
+3. Remove non-alphanumeric characters from the string using `String.prototype.replace()` method and a regular expression `[\W_]`.
+4. Split the normalized string into individual characters using the spread operator (`...`).
+5. Reverse the array of characters using `Array.prototype.reverse()` method.
+6. Join the reversed array of characters into a string using `Array.prototype.join()` method.
+7. Compare the reversed string to the normalized string to determine if it's a palindrome.
 
-- Normalize the string to `String.prototype.toLowerCase()` and use `String.prototype.replace()` to remove non-alphanumeric characters from it.
-- Use the spread operator (`...`) to split the normalized string into individual characters.
-- Use `Array.prototype.reverse()`, `Array.prototype.join()` and compare the result to the normalized string.
+Here's an example code snippet that implements the above steps:
 
 ```js
-const palindrome = str => {
-  const s = str.toLowerCase().replace(/[\W_]/g, '');
-  return s === [...s].reverse().join('');
+const palindrome = (str) => {
+  const normalizedStr = str.toLowerCase().replace(/[\W_]/g, "");
+  return normalizedStr === [...normalizedStr].reverse().join("");
 };
+
+console.log(palindrome("taco cat")); // true
 ```
 
-```js
-palindrome('taco cat'); // true
-```
+In the above example, the `palindrome()` function takes a string argument and returns `true` if the string is a palindrome, and `false` otherwise. The function uses the steps outlined above to check if the string is a palindrome.

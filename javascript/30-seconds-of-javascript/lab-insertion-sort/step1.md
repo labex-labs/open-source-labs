@@ -1,16 +1,16 @@
-# Insertion Sort
+# Insertion Sort Algorithm in JavaScript
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To practice coding, open the Terminal/SSH and type `node`. This algorithm sorts an array of numbers using the insertion sort method. Follow these steps to implement this algorithm:
 
-Sorts an array of numbers, using the insertion sort algorithm.
+1. Use `Array.prototype.reduce()` to iterate over all the elements in the given array.
+2. If the `length` of the accumulator is `0`, add the current element to it.
+3. Use `Array.prototype.some()` to iterate over the results in the accumulator until the correct position is found.
+4. Use `Array.prototype.splice()` to insert the current element into the accumulator.
 
-- Use `Array.prototype.reduce()` to iterate over all the elements in the given array.
-- If the `length` of the accumulator is `0`, add the current element to it.
-- Use `Array.prototype.some()` to iterate over the results in the accumulator until the correct position is found.
-- Use `Array.prototype.splice()` to insert the current element into the accumulator.
+Here's the code to implement insertion sort in JavaScript:
 
 ```js
-const insertionSort = arr =>
+const insertionSort = (arr) =>
   arr.reduce((acc, x) => {
     if (!acc.length) return [x];
     acc.some((y, j) => {
@@ -27,6 +27,8 @@ const insertionSort = arr =>
     return acc;
   }, []);
 ```
+
+You can test the algorithm with the following code:
 
 ```js
 insertionSort([6, 3, 4, 1]); // [1, 3, 4, 6]

@@ -1,14 +1,14 @@
-# Generator to Array
+# Converting Generator Output to Array
 
-> To start practicing coding, open the Terminal/SSH and type `node`.
+To convert the output of a generator function to an array, use the spread operator (`...`). To start practicing coding, open the Terminal/SSH and type `node`.
 
-Converts the output of a generator function to an array.
-
-- Use the spread operator (`...`) to convert the output of the generator function to an array.
+Here's an example function that converts a generator to an array:
 
 ```js
-const generatorToArray = gen => [...gen];
+const generatorToArray = (gen) => [...gen];
 ```
+
+You can use this function as follows:
 
 ```js
 const s = new Set([1, 2, 1, 3, 1, 4]);
