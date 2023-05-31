@@ -1,10 +1,8 @@
 import unittest
 from io import StringIO
 import sys
-
 sys.path.append("/home/labex/project")
 from generate_special_random_numbers import generate_special_random_numbers
-
 
 class TestSpecialRandomNumbers(unittest.TestCase):
     def test_special_random_numbers(self):
@@ -27,6 +25,5 @@ class TestSpecialRandomNumbers(unittest.TestCase):
         except ValueError:
             self.fail("Output is not a valid integer")
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

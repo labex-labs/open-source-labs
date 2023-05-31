@@ -1,10 +1,8 @@
 import unittest
 from io import StringIO
 import sys
-
 sys.path.append("/home/labex/project")
 from shuffle_and_print_the_list import shuffle_and_print_the_list
-
 
 class TestShuffleList(unittest.TestCase):
     def test_shuffle_list(self):
@@ -31,6 +29,7 @@ class TestShuffleList(unittest.TestCase):
         except (ValueError, TypeError):
             self.fail("Output is not a valid list of integers")
 
+        
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

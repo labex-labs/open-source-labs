@@ -1,6 +1,5 @@
 import unittest
 import sys
-
 sys.path.append("/home/labex/project")
 from io import StringIO
 from print_an_alphabet_rangoli import rangoli
@@ -24,6 +23,5 @@ class TestRangoli(unittest.TestCase):
         expected_output = "--------e--------\n------e-d-e------\n----e-d-c-d-e----\n--e-d-c-b-c-d-e--\ne-d-c-b-a-b-c-d-e\n--e-d-c-b-c-d-e--\n----e-d-c-d-e----\n------e-d-e------\n--------e--------"
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

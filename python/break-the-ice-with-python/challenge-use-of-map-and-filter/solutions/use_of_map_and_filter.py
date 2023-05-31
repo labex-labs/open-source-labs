@@ -3,7 +3,7 @@ def even(x):
 
 
 def squer(x):
-    return x * x
+    return x*x
 
 
 def use_of_map_and_filter():

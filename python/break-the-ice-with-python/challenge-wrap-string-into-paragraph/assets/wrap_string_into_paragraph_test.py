@@ -1,10 +1,8 @@
 import unittest
 import sys
-
 sys.path.append("/home/labex/project")
 from io import StringIO
 from wrap_string_into_paragraph import wrap_string_into_paragraph
-
 
 class TestWrapStringIntoParagraph(unittest.TestCase):
     def test_wrap_string_into_paragraph(self):
@@ -24,6 +22,5 @@ class TestWrapStringIntoParagraph(unittest.TestCase):
         expected_output = "Hello\nworld!\nThis is a\nlong\nstring\nthat needs\nto be\nwrapped\ninto\nmultiple\nlines."
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

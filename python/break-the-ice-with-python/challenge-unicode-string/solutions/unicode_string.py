@@ -1,2 +1,2 @@
-unicodeString = "hello world!"
+unicodeString = u"hello world!"
 print(unicodeString)

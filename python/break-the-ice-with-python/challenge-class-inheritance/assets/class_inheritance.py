@@ -2,7 +2,6 @@ class Person(object):
     def getGender(self):
         return "Unknown"
 
-
 pass
 
 

@@ -8,7 +8,6 @@ sys.path.append("/home/labex/project")
 # 导入被测试的代码
 from generate_a_list_and_a_tuple import generate_a_list_and_a_tuple
 
-
 class TestYour(unittest.TestCase):
     def test_output(self):
         # 重定向标准输入输出到缓冲区
@@ -18,7 +17,7 @@ class TestYour(unittest.TestCase):
         sys.stdout = StringIO()
 
         # 输入测试数据
-        test_input = "1,2,3,4,5\n"
+        test_input = '1,2,3,4,5\n'
         sys.stdin.write(test_input)
         sys.stdin.seek(0)
 
@@ -31,9 +30,8 @@ class TestYour(unittest.TestCase):
         sys.stdout = stdout
 
         # 检查输出是否与预期结果匹配
-        expected_output = "['1', '2', '3', '4', '5']\n('1', '2', '3', '4', '5')\n"
+        expected_output = '[\'1\', \'2\', \'3\', \'4\', \'5\']\n(\'1\', \'2\', \'3\', \'4\', \'5\')\n'
         self.assertEqual(output, expected_output)
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
