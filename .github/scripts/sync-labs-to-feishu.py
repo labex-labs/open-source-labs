@@ -278,7 +278,11 @@ class Sync:
                     if data_path in path_dicts:
                         if skip:
                             # Skip record
-                            print(f"↓ Skipping {data_path}")
+                            print(f"↓ Skipping {data_path} because of skip=True")
+                            continue
+                        elif len(data["SKILLS_ID"]) == 0:
+                            # Skip record
+                            print(f"↓ Skipping {data_path} because of no skills")
                             continue
                         else:
                             # Update record
