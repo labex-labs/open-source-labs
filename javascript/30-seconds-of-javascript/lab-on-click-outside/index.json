@@ -1,0 +1,51 @@
+{
+    "type": "lab",
+    "title": "Handle Click Outside",
+    "description": "In this lab, we will explore how to handle click events that occur outside a specific element on a web page using JavaScript. We will create a function that listens for 'click' events on the document and checks if the clicked element is a descendant of the specified element. If not, a callback function is executed. This technique is useful for implementing features such as closing a dropdown menu or a modal when a user clicks outside of it.",
+    "difficulty": "Beginner",
+    "time": 10,
+    "details": {
+        "steps": [
+            {
+                "title": "Handle Click Outside",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Open the Terminal/SSH and type 'node'",
+                        "file": "verify1.sh",
+                        "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": [
+                    "js/browser",
+                    "js/event"
+                ]
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "",
+                    "target": "/tmp"
+                }
+            ]
+        }
+    },
+    "backend": {
+        "imageid": "vnc-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-code"
+    }
+}

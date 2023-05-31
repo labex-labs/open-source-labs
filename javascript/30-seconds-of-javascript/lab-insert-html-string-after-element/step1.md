@@ -1,0 +1,17 @@
+# Insert HTML String After Element
+
+> To start practicing coding, open the Terminal/SSH and type `node`.
+
+Inserts an HTML string after the end of the specified element.
+
+- Use `Element.insertAdjacentHTML()` with a position of `'afterend'` to parse `htmlString` and insert it after the end of `el`.
+
+```js
+const insertAfter = (el, htmlString) =>
+  el.insertAdjacentHTML('afterend', htmlString);
+```
+
+```js
+insertAfter(document.getElementById('myId'), '<p>after</p>');
+// <div id="myId">...</div> <p>after</p>
+```

@@ -1,0 +1,16 @@
+# Value Is Boolean
+
+> To start practicing coding, open the Terminal/SSH and type `node`.
+
+Checks if the given argument is a native boolean element.
+
+- Use `typeof` to check if a value is classified as a boolean primitive.
+
+```js
+const isBoolean = val => typeof val === 'boolean';
+```
+
+```js
+isBoolean(null); // false
+isBoolean(false); // true
+```
