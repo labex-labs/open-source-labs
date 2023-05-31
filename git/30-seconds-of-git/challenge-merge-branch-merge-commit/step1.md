@@ -6,7 +6,7 @@ As a developer, you may need to merge a branch into the current branch, creating
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.Suppose you are working on a project with a team of developers, and you need to merge a branch named `feature-branch` into the `master` branch. Here are the steps you would take:
+To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.Suppose you are working on a project with a team of developers, and you need to merge a branch named `feature-branch` into the `master` branch.
 
 1. Clone a repository from `https://github.com/your-username/git-playground.git`.
 2. Create an empty branch `feature-branch` and modify the `README.md` file.
