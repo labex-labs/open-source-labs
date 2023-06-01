@@ -10,6 +10,6 @@ When you run the command, Git will remove any loose objects (objects that are no
 
 For example, let's say you have a Git repository named `git-playground` located in your home directory and optimize this repository.
 
-This will optimize the `git-playground` repository by removing any loose objects and packing the remaining objects into a new set of pack files.
+This is the result of optimising the `git-playground' repository by removing all loose objects and packing the remaining objects into a new set of pack files:
 
 ![<result>](assets/challenge-optimize-repository-step1-1.png)
