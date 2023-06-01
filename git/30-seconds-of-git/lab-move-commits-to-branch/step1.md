@@ -17,8 +17,8 @@ git checkout master
 git add .
 git commit -m "Add new feature to master branch"
 git branch feature-branch
+git reset HEAD~1 --hard # Remove the commit from `master`
 git checkout feature-branch
-git cherry-pick master
 git log # Verify that the changes are now in `feature-branch`
 ```
 
