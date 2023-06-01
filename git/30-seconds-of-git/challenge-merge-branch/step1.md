@@ -13,10 +13,9 @@ To complete this experiment, you will use the Git repository `git-playground` fr
 3. Add the changes to the staging area and commit with the message "fix file2.txt".
 4. Switch to the `master` branch.
 5. Merge the `feature-branch-A` into the `master` branch.
-4. Resolve any conflicts that may arise during the merge process.
-5. Push the changes to the remote repository.
+6. Resolve any conflicts that may arise during the merge process.
+7. Push the changes to the remote repository.
 
 This is the result of running `git log`:
 
 ![<result>](assets/challenge-merge-branch-step1-1.png)
-
