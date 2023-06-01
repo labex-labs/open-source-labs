@@ -7,8 +7,10 @@ The `git gc` command stands for "Git garbage collector". It is used to clean up 
 To optimize the local repository, you can use the `git gc` command with the `--prune=now` and `--aggressive` options. For example, let's say you have a Git repository named `git-playground` located in your home directory. To optimize this repository, you would run the following command:
 
 ```shell
-cd ~/git-playground
+cd git-playground
 git gc --prune=now --aggressive
 ```
 
-This will optimize the `git-playground` repository by removing any loose objects and packing the remaining objects into a new set of pack files.
+This will optimize the `git-playground` repository by removing any loose objects and packing the remaining objects into a new set of pack files:
+
+![<result>](assets/challenge-optimize-repository-step1-1.png)
