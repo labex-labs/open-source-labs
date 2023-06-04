@@ -1,3 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git push"
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
+(cd /home/labex/project/git-playground && git log -r | grep "Added new feature") && echo "True"
