@@ -6,10 +6,8 @@ git push --all < remote > --force
 ```
 
 ```shell
-git filter-branch --force --index-filter \
-  "git rm --cached --ignore-unmatch config/apiKeys.json" \
-  --prune-empty --tag-name-filter cat -- --all
-# Purges `config/apiKeys.json` from history
+git filter-branch --force --index-filter  "git rm --cached --ignore-unmatch file1.txt" --prune-empty --tag-name-filter cat -- --all
+# Purges `file1.txt` from history
 git push origin --force --all
 # Force pushes the changes to the remote repository
 ```

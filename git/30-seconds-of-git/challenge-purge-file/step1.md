@@ -6,14 +6,12 @@ Suppose you accidentally committed a file containing sensitive information, such
 
 ## Example
 
-In this challenge, you will be working with the `git-playground` repository located at `https://github.com/labex-labs/git-playground`. This repository contains a file named `secret.txt` that should never have been committed.
+To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.This repository contains a file named `file1.txt` that should never have been committed.Please purge `file1.txt` from the repository's history.
 
-To purge `secret.txt` from the repository's history, follow these steps:
+1. Clone the repository to your local machine from `git clone https://github.com/your-username/git-playground`.
+2. Navigate to the repository's directory.
+3. Delete the file from the repository's index.
+4. Rewrite the repository's history, removing all instances of `file1.txt`.
+5. Force push the changes to the remote repository.
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Navigate to the repository's directory using the command `cd git-playground`.
-3. Use the command `git rm --cached --ignore-unmatch secret.txt` to delete the file from the repository's index.
-4. Use the command `git filter-branch --force --index-filter "git rm --cached --ignore-unmatch secret.txt" --prune-empty --tag-name-filter cat -- --all` to rewrite the repository's history, removing all instances of `secret.txt`.
-5. Use the command `git push origin --force --all` to force push the changes to the remote repository.
-
-After completing these steps, `secret.txt` will be completely removed from the repository's history.
+After completing these steps, `file1.txt` will be completely removed from the repository's history and after running `git log -r`, you will not see the commit on `file1.txt`.
