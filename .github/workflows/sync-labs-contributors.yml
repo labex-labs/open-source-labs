@@ -1,0 +1,32 @@
+name: sync-labs-contributors
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+  workflow_dispatch:
+
+jobs:
+  SyncLabsContributors:
+    if: github.repository_owner == 'labex-labs'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - name: sync-labs-contributors
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          pip install requests
+          python .github/scripts/sync-labs-contributors.py --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY
+      - name: Formatting index.json
+        run: |
+          npm i -g prettier prettier-plugin-sh
+          npx prettier --write "**/index.json"
+      - name: Git commit
+        uses: stefanzweifel/git-auto-commit-action@v4.3.0
+        with:
+          commit_message: Updated Contributors
+          branch: ${{ github.head_ref }}
