@@ -1,6 +1,6 @@
 # Button Swing Animation
 
-This code block creates a swing animation on a button when it's clicked. The animation uses a `transform` property to make the button swing back and forth. To play the animation only once, the `animation-iteration-count` property is set to 1. 
+This code block creates a swing animation on a button when it's clicked. The animation uses a `transform` property to make the button swing back and forth. To play the animation only once, the `animation-iteration-count` property is set to 1.
 
 ```html
 <button class="button-swing">Submit</button>

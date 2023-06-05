@@ -1,6 +1,6 @@
 # Focus Within
 
-To change the appearance of a form if any of its children are focused, use the pseudo-class `:focus-within` to apply styles to a parent element if any child element gets focused. The code can be written in `index.html` and `style.css`. 
+To change the appearance of a form if any of its children are focused, use the pseudo-class `:focus-within` to apply styles to a parent element if any child element gets focused. The code can be written in `index.html` and `style.css`.
 
 Here's an example:
 

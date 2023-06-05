@@ -3,11 +3,13 @@
 To create a progress bar that shows the scroll percentage of a page, follow these steps:
 
 1. Add the following code to `index.html`:
+
 ```html
 <div id="scroll-progress"></div>
 ```
 
 2. Add the following code to `style.css`:
+
 ```css
 body {
   min-height: 200vh;
@@ -24,6 +26,7 @@ body {
 ```
 
 3. Use `EventTarget.addEventListener()` and `Element.scrollTop` to determine the scroll percentage of the document and apply it to the `width` of the element. Add the following JavaScript code to your project:
+
 ```js
 const scrollProgress = document.getElementById("scroll-progress");
 const height =

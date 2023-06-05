@@ -1,6 +1,6 @@
 # Hiding Empty Elements
 
-To hide elements with no content, use the `:empty` pseudo-class to select them. 
+To hide elements with no content, use the `:empty` pseudo-class to select them.
 
 Here's an example of how to use it:
 

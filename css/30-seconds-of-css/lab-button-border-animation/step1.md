@@ -3,6 +3,7 @@
 This code creates a border animation on hover for a button. The code is written in `index.html` and `style.css`.
 
 To create the animation:
+
 - Two boxes `24px` wide will be created using `::before` and `::after` pseudo-elements, positioned above and below the button.
 - On hover, the `width` of the boxes will extend to `100%` and the change will be animated using `transition`.
 

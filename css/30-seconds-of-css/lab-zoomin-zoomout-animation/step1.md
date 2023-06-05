@@ -33,6 +33,6 @@ Here is an example code block:
     transform: scale(1, 1);
   }
 }
-``` 
+```
 
 This will create a box with a zoom in zoom out animation.

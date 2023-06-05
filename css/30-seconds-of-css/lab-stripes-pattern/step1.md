@@ -21,7 +21,7 @@ To create a stripes background pattern, follow these steps:
 
 2. Use the `background-color` property to set the background to white.
 
-3. Use the `background-image` property with a `linear-gradient()` value to create vertical stripes. 
+3. Use the `background-image` property with a `linear-gradient()` value to create vertical stripes.
 
 4. Use the `background-size` property to specify the size of the pattern.
 

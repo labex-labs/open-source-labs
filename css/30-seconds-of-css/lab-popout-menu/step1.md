@@ -3,6 +3,7 @@
 To reveal an interactive popout menu on hover/focus, write the code in `index.html` and `style.css`.
 
 Use the following CSS properties and selectors to achieve the desired result:
+
 - `position: relative` for the parent element.
 - `position: absolute`, `visibility: hidden`, and `left: 100%` for the popout menu.
 - `:hover`, `:focus`, and `:focus-within` pseudo-class selectors to apply `visibility: visible` to the popout menu when the parent element is hovered/focused.

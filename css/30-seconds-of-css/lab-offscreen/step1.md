@@ -1,6 +1,7 @@
 # Offscreen
 
 To hide an element completely in the DOM while still allowing it to be accessible, use the following steps:
+
 - Remove all borders, padding, and overflow of the element.
 - Use `clip` to define that no part of the element is shown.
 - Set the `height` and `width` of the element to `1px` and negate them using `margin: -1px`.

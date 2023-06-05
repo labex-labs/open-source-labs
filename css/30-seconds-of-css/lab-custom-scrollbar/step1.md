@@ -1,8 +1,9 @@
 # Custom Scrollbar
 
-This code customizes the scrollbar style for elements with scrollable overflow. The code can be written in `index.html` and `style.css`. 
+This code customizes the scrollbar style for elements with scrollable overflow. The code can be written in `index.html` and `style.css`.
 
 Here are the steps to style the scrollbar element, track, and thumb:
+
 - Use `::-webkit-scrollbar` to style the scrollbar element.
 - Use `::-webkit-scrollbar-track` to style the scrollbar track (the background of the scrollbar).
 - Use `::-webkit-scrollbar-thumb` to style the scrollbar thumb (the draggable element).

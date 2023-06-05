@@ -29,13 +29,16 @@ This code block creates a typewriter effect animation by defining two animations
 }
 
 @keyframes typing {
-  75%, 100% {
+  75%,
+  100% {
     max-width: calc(var(--characters) * 1ch);
   }
 }
 
 @keyframes blink {
-  0%, 75%, 100% {
+  0%,
+  75%,
+  100% {
     opacity: 1;
   }
   25% {

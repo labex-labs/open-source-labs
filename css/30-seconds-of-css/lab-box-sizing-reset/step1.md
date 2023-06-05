@@ -1,6 +1,6 @@
 # Box-Sizing Reset
 
-This code block contains the necessary code to reset the box-model and ensure that the `width` and `height` properties are not affected by `border` or `padding`. 
+This code block contains the necessary code to reset the box-model and ensure that the `width` and `height` properties are not affected by `border` or `padding`.
 
 To achieve this:
 
@@ -36,6 +36,6 @@ Here's an example code block:
 .content-box {
   box-sizing: content-box;
 }
-``` 
+```
 
 Note that the `box-sizing` property is set to `border-box` for all `div` elements, and then overridden for the `.content-box` class with a value of `content-box`. The `*` selector, along with `::before` and `::after` pseudo-elements, is used to ensure that all elements inherit the `box-sizing` property from their parent elements.

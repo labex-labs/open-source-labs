@@ -1,6 +1,6 @@
 # Shifting Card
 
-This code creates a card that shifts on hover. 
+This code creates a card that shifts on hover.
 
 To achieve this effect, follow these steps:
 

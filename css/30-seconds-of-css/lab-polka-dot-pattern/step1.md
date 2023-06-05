@@ -8,7 +8,7 @@ This code block creates a polka dot background pattern. Follow these instruction
    - Set `width` and `height` to `240px`.
    - Set `background-color` to black (`#000`).
    - Use `background-image` with two `radial-gradient()` values to create two dots.
-   - Use `background-size` to specify the pattern's size. 
+   - Use `background-size` to specify the pattern's size.
    - Use `background-position` to appropriately place the two gradients.
    - Set `background-repeat` to `repeat`.
 4. Note that the fixed `height` and `width` of the element is for demonstration purposes only.

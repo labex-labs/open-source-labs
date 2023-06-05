@@ -6,18 +6,54 @@ To create the mosaic, a responsive grid layout is used (`display: grid`), and th
 
 ```html
 <div class="image-mosaic">
-  <div class="card card-tall card-wide" style="background-image: url('https://picsum.photos/id/564/1200/800')"></div>
-  <div class="card card-tall" style="background-image: url('https://picsum.photos/id/566/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/575/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/626/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/667/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/678/800/530')"></div>
-  <div class="card card-wide" style="background-image: url('https://picsum.photos/id/695/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/683/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/693/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/715/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/610/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/599/800/530')"></div>
+  <div
+    class="card card-tall card-wide"
+    style="background-image: url('https://picsum.photos/id/564/1200/800')"
+  ></div>
+  <div
+    class="card card-tall"
+    style="background-image: url('https://picsum.photos/id/566/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/575/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/626/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/667/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/678/800/530')"
+  ></div>
+  <div
+    class="card card-wide"
+    style="background-image: url('https://picsum.photos/id/695/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/683/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/693/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/715/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/610/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/599/800/530')"
+  ></div>
 </div>
 ```
 

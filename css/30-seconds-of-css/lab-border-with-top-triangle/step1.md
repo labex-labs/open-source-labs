@@ -1,6 +1,7 @@
 # Creating a Content Container with a Triangle at the Top
 
 To create a content container with a triangle at the top, follow these steps:
+
 1. Open the `index.html` and `style.css` files.
 2. In the HTML file, create a `div` element with the class of `container` and add the text "Border with top triangle" inside it.
 3. In the CSS file, set the `position` of the `container` class to `relative`, `background` to `#ffffff`, `padding` to `15px`, `border` to `1px solid #dddddd`, and `margin-top` to `20px`.
