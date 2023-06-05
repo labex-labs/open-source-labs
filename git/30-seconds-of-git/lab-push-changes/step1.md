@@ -28,4 +28,4 @@ git push origin master
 
 This is the result of running `git log -r`:
 
-![<result>](assets/challenge-push-changes-step1-1.png)
+![<result>](./assets/challenge-push-changes-step1-1.png)
