@@ -17,4 +17,4 @@ To complete this experiment, you will use the Git repository `git-playground` fr
 
 This is the result of running `git log -r`:
 
-![<result>](assets/challenge-push-changes-step1-1.png)
+![<result>](./assets/challenge-push-changes-step1-1.png)
