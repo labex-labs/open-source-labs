@@ -19,3 +19,7 @@ You have been working on a project and have made changes to the local `master` b
    ```shell
    git status
    ```
+
+This is the finished result：
+
+![<result>](./assets/challenge-reset-master-step1-1.png)
