@@ -15,4 +15,4 @@ To complete this experiment, you will use the Git repository `git-playground` fr
 
 This is the result of running `git branch -a`:
 
-![<result>](assets/challenge-rename-remote-branch-step1-1.png)
+![<result>](./assets/challenge-rename-remote-branch-step1-1.png)
