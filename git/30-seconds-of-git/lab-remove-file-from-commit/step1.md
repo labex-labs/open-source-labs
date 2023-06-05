@@ -24,4 +24,4 @@ After running these commands, the file `file1.txt` will be removed from the last
 
 This is what happens when you remove `file1.txt` from Git version control:
 
-![<result>](assets/challenge-remove-file-from-commit-step1-1.png)
+![<result>](./assets/challenge-remove-file-from-commit-step1-1.png)
