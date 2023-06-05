@@ -4,7 +4,8 @@ git commit —-amend
 ```
 
 ```shell
-git rm —-cached "git-playground.txt"
-git commit —-amend
-# Removes `git-playground.txt` from the last commit
+git rm --cached "file1.txt"
+git status
+git commit --amend
+# Removes `file1.txt` from the last commit
 ```
