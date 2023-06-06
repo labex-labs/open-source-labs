@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git reset"
+(cat ~/.zsh_history | grep -v grep | grep "git reset") && (cat ~/.zsh_history | grep -v grep | grep 'git commit -m "Add hello.txt file"') && (cat ~/.zsh_history | grep -v grep | grep 'git commit -m "Update hello.txt file"') && (cat ~/.zsh_history | grep -v grep | grep 'git commit -m "Update hello.txt file again"') && (cd /home/labex/project/git-playground && cat hello.txt | grep "Hello, World") && echo "True"
