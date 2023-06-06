@@ -6,6 +6,6 @@ git reset [--hard] HEAD~<n>
 git reset HEAD~1
 # Rewinds back 1 commits but keeps changes in the working directory
 
-git reset --hard HEAD~3
-# Rewinds back 3 commits and deletes changes
+git reset --hard HEAD~1
+# Rewinds back 1 commits and deletes changes
 ```
