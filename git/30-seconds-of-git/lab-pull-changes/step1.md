@@ -12,9 +12,18 @@ git clone https://github.com/labex-labs/git-playground.git
 ```shell
 cd git-playground
 ```
-3. Pull the latest changes from the remote repository, use the following command:
+3. Identify the commit hash with the commit message "Initial commit", and revert the repository to a version containing only that hash:
 ```shell
-git pull
+git log --oneline
+git checkout b00b937
+```
+4. Pull the latest changes from the `master` branch of the remote repository:
+```shell
+git pull origin master
 ```
 
 After running the `git pull` command, you should see a message indicating that your local copy of the repository is up to date with the remote repository.
+
+This is the result after pulling:
+
+![<result>](./assets/challenge-pull-changes-step1-1.png)
