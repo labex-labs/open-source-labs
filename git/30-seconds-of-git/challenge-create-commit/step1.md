@@ -10,4 +10,4 @@ For this challenge, fork the Git repository named `https://github.com/labex-labs
 
 This is the result of running the `git log` command:
 
-![<result>](assets/challenge-create-commit-step1-1.png)
+![<result>](./assets/challenge-create-commit-step1-1.png)

@@ -38,4 +38,4 @@ git merge --no-ff -m "Merge feature-branch" feature-branch
 
 This is the result of running `git log`.
 
-![<result>](assets/challenge-merge-branch-merge-commit-step1-1.png)
+![<result>](./assets/challenge-merge-branch-merge-commit-step1-1.png)

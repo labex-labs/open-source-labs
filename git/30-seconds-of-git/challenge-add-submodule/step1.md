@@ -10,4 +10,4 @@ Suppose you have a Git repository called `my-project` and you want to add a subm
 
 This is the result after completing the challenge:
 
-![an_example_reulet](assets/challenge-add-submodule-step1-1.png)
+![an_example_reulet](./assets/challenge-add-submodule-step1-1.png)

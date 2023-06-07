@@ -42,4 +42,4 @@ Add a new line to the README.md file with the text "test", to test the Git commi
 
 Check with `git log --oneline origin/master` gives the following results:
 
-![<result>](assets/challenge-commit-template-step1-1.png)
+![<result>](./assets/challenge-commit-template-step1-1.png)

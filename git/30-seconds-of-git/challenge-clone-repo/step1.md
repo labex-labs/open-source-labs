@@ -10,4 +10,4 @@ Clone the repository from `https://github.com/labex-labs/git-playground.git` int
 
 There is the results after completing the challenge:
 
-![<result>](assets/challenge-clone-repo-step1-2.png)
+![<result>](./assets/challenge-clone-repo-step1-2.png)
