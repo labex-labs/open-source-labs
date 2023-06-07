@@ -2,7 +2,7 @@
 
 You are working on a project using Git and accidentally deleted a file that you need. Fortunately, you know the commit where the file was deleted. Your task is to restore the deleted file using Git.
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Follow the steps below:
+To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Follow the steps below:
 
 1. Clone the repository to your local machine using the command `git clone https://github.com/your-username/git-playground`.
 2. Navigate to the repository directory using the command `cd git-playground`.
