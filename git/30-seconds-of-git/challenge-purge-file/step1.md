@@ -6,7 +6,7 @@ Suppose you accidentally committed a file containing sensitive information, such
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.This repository contains a file named `file1.txt` that should never have been committed.Please purge `file1.txt` from the repository's history.
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. This repository contains a file named `file1.txt` that should never have been committed. Please purge `file1.txt` from the repository's history.
 
 1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
 2. Navigate to the repository's directory.
