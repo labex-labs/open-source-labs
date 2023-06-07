@@ -15,4 +15,4 @@ Suppose you want to create a new Git repository for a project called `my_project
 
 There is the finished result:
 
-![<result>](assets/challenge-create-repo-step1-2.png)
+![<result>](./assets/challenge-create-repo-step1-2.png)

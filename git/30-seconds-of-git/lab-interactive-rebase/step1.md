@@ -17,4 +17,4 @@ To complete this lab,you will fork `https://github.com/labex-labs/git-playground
 
 Running `git log origin/my-branch` will give you a result that looks like this:
 
-![<result>](assets/challenge-interactive-rebase-step1-1.png)
+![<result>](./assets/challenge-interactive-rebase-step1-1.png)

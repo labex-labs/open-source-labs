@@ -27,4 +27,4 @@ git config --global help.autocorrect 1
 
 This is the result after completing the lab:
 
-![<result>](assets/challenge-autocorrect-step1-1.jpg)
+![<result>](./assets/challenge-autocorrect-step1-1.jpg)

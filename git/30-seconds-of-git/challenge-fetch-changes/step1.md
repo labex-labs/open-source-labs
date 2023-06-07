@@ -14,4 +14,4 @@ You will use the `git-playground` repository hosted on GitHub.
 
 This is the result of running `git log origin/master`:
 
-![<result>](assets/challenge-fetch-changes-step1-1.png)
+![<result>](./assets/challenge-fetch-changes-step1-1.png)

@@ -19,4 +19,4 @@ Suppose your GitHub account clones a repository called `git-playground` from a f
 
 The output should display the difference between the `feature-1` and `feature-2` branches.This shows how the final result will look like：
 
-![<result>](assets/challenge-difference-between-branches-step1-1.png)
+![<result>](./assets/challenge-difference-between-branches-step1-1.png)

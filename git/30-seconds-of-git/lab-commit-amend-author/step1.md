@@ -35,4 +35,4 @@ git log
 
 You should see that the last commit's author is now `Duck Quackers`:
 
-![<result>](assets/challenge-commit-amend-author-step1-1.png)
+![<result>](./assets/challenge-commit-amend-author-step1-1.png)
