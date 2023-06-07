@@ -1,0 +1,99 @@
+# Debugging the Application
+
+In the application, click on `Signup` to create a new user. Fill out the registration form and click `Submit`
+
+![](./assets/app_debug_signup2.png)
+
+Click `Yes` to confirm.
+
+![](./assets/app_debug_signup_confirm.png)
+
+Test out the login.
+
+![](./assets/app_debug_login2.png)
+
+Oh no!
+
+![](./assets/app_debug_login_fail2.png)
+
+#### Configure Remote Debugging
+
+Tomcat supports remote debugging the Java Platform Debugger Architecture (JPDA). Remote debugging was enabled when the tomcat image (registration-webserver) was built.
+
+To configure remote debugging in Eclipse, click on `Run` > `Debug Configurations ...`
+
+![](./assets/eclipse_debug_configure2.png)
+
+Select `Remote Java Application` and click on `Launch New Configuration` icon
+
+![](./assets/eclipse_debug_configure_new.png)
+
+Enter a `Name` for the configuration. Select the project using the `browse` button. Click on `Apply` to save the configuration and click on `Debug` to start the debugging connection between Tomcat and Eclipse.
+
+![](./assets/eclipse_debug_configure_docker.png)
+
+#### Finding the Error
+
+Since the problem is with the password, lets see how the password is set in the User class. In the User class, the setter for password is scrambled using [rot13](https://en.wikipedia.org/wiki/ROT13) before it is saved to the database.
+
+![](./assets/eclipse_debug_User_password.png)
+
+Try registering a new user using the debugger. In Eclipse, change the view or Perspective to the debugger by clicking on `Window` > `Perspective` > `Open Perspective` > `Debug`
+
+![](./assets/eclipse_debug_perspective.png)
+
+Eclipse will switch to the debug perspective. Since we enable remote debugging earlier, you should see the Daemon Threads for Tomcat in the debug window. Set a breakpoint for in the User class where the password is set.
+
+![](./assets/eclipse_debug_User_breakpoint.png)
+
+Register a new user with the username of 'Moby' and with 'm0by' as the password, click `Submit`, click `yes`
+
+![](./assets/app_register_moby2.png)
+
+Eclipse will display the code at the breakpoint and the value of password in the variables window. Note that the value is `m0by`
+
+![](./assets/eclipse_debug_User_moby.png)
+
+Click on `resume` or press `F8` to let the code run.
+
+![](./assets/eclipse_debug_resume.png)
+
+Next, set a breakpoint on the getPassword in the User class to see the value returned for password. You can also toggle off the breakpoint for setPassword.
+
+![](./assets/eclipse_debug_User_getPassword.png)
+
+Try to log into the application. Look at the value for password in the Eclipse variables window, note that it is `z0ol` which is `m0by` using ROT13.
+
+![](./assets/eclipse_debug_User_show_user.png)
+
+In this MVC application the UserController uses the findByLogin method in the UserServiceImpl class which uses the findByUsername method to retrieve the information from the database. It then checks to see if the password from the form matches the user password. Since the password from the login form is not scrambled using ROT13, it does not match the user password and you cannot log into the application.
+
+To fix this, apply ROT13 to the password by adding
+
+```
+import com.docker.UserSignup.utit.Rot13
+
+String passwd = Rot13.rot13(password);
+```
+
+![](./assets/eclipse_debug_UserServiceImpl_code.png)
+
+Set a breakpoint in UserServiceImpl on the findByLogin method. Log in again and look at the values for the breakpoint. The 'passwd' variable is `z0ol` which matches the password for the user moby.
+
+![](./assets/eclipse_debug_UserServiceImpl_values.png)
+
+Continue (`F8`) and you should successfully log in.
+
+![](./assets/app_debug_success.png)
+
+{:.quiz}
+True or false: You have to restart a container after you make changes to the code or they won't be reflected in the application
+
+- ( ) True
+- (x) False
+
+{:.quiz}
+True or false: Debugging a Java app running in a container requires a special plugin for the IDE
+
+- ( ) True
+- (x) False
