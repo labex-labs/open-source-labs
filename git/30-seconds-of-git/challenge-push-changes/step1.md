@@ -6,7 +6,7 @@ As a developer, you may need to push your local changes to a remote repository t
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.You have made some changes to the `master` branch and want to push them to the remote repository.
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. You have made some changes to the `master` branch and want to push them to the remote repository.
 
 1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
 2. Ensure that your local branch is up to date with the remote branch.
