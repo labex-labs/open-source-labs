@@ -2,7 +2,7 @@
 
 ## Problem
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.You have a Git repository named `https://github.com/your-username/git-playground`. You have created a branch named `feature-1` and pushed it to the remote. Now you want to rename the branch to `new-feature-1` both locally and on the remote.
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. You have a Git repository named `https://github.com/your-username/git-playground`. You have created a branch named `feature-1` and pushed it to the remote. Now you want to rename the branch to `new-feature-1` both locally and on the remote.
 
 ## Example
 
