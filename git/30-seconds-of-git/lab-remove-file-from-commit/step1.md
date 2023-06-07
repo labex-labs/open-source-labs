@@ -2,7 +2,7 @@
 
 You have added a file to the last commit that you didn't intend to include. You want to remove the file from the last commit without changing its message.
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.Suppose you have a Git repository named `git-playground` with a file named `file1.txt` that you accidentally added to the last commit.Here are the steps to remove the file from the last commit:
+To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Suppose you have a Git repository named `git-playground` with a file named `file1.txt` that you accidentally added to the last commit. Here are the steps to remove the file from the last commit:
 
 1. Create the `git-playground.txt` file and modify the `file1.txt` file and add them to the staging area at the same time, committing them with the message "add git-playground.txt":
 ```shell
