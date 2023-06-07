@@ -6,7 +6,7 @@ As a developer, you have been working on a project and have made several commits
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
 1. Clone the repository to your local machine.
 2. Create a new branch called `rewind-commits`.
