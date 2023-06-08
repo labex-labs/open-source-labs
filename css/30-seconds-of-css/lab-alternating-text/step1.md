@@ -1,17 +1,15 @@
 # Alternating Text
 
-To create an alternating text animation:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Add a `<span>` for the text that will be alternated.
-2. Define an animation called `alternating-text` that hides the `<span>` by setting `display: none`.
-3. In JavaScript, define an array of words to be alternated and use the first word to initialize the `<span>`.
-4. Add an event listener to the `'animationiteration'` event using `EventTarget.addEventListener()`. This will run the `listener()` function whenever an iteration of the animation is completed.
-5. In the `listener()` function, update the content of the `<span>` to the next word in the array using `Element.innerHTML`.
+To create an alternating text animation, follow these steps:
 
+1. Create a `<span>` element with a class of "alternating" and an `id` of "alternating-text" to hold the text that will be alternated:
 ```html
 <p>I love coding in <span class="alternating" id="alternating-text"></span>.</p>
 ```
 
+2. In the CSS, define an animation called `alternating-text` that will make the `<span>` element disappear by setting `display: none`:
 ```css
 .alternating {
   animation-name: alternating-text;
@@ -27,16 +25,23 @@ To create an alternating text animation:
 }
 ```
 
+3. In JavaScript, define an array of the different words that will be alternated and use the first word to initialize the content of the `<span>` element:
 ```js
-const texts = ["Java", "Python", "C", "C++", "C#", "Javascript"];
-const element = document.getElementById("alternating-text");
+const texts = ['Java', 'Python', 'C', 'C++', 'C#', 'Javascript'];
+const element = document.getElementById('alternating-text');
 
 let i = 0;
-const listener = (e) => {
+element.innerHTML = texts[0];
+```
+
+4. Use `EventTarget.addEventListener()` to define an event listener for the `'animationiteration'` event. This will run the event handler whenever an iteration of the animation is completed. In the event handler, use `Element.innerHTML` to display the next element in the `texts` array as the content of the `<span>` element:
+```js
+const listener = e => {
   i = i < texts.length - 1 ? i + 1 : 0;
   element.innerHTML = texts[i];
 };
 
-element.innerHTML = texts[0];
-element.addEventListener("animationiteration", listener, false);
+element.addEventListener('animationiteration', listener, false);
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

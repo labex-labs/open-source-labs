@@ -1,68 +1,68 @@
 {
-  "type": "lab",
-  "title": "Reset All Styles",
-  "description": "In this lab, we will explore the concept of resetting all styles to their default values using the `all` property in CSS. This technique can be used to quickly remove all inherited or custom styles from an element and start fresh. By the end of this lab, you will have a better understanding of how to use the `all` property and its limitations.",
-  "difficulty": "Beginner",
-  "time": 10,
-  "details": {
-    "steps": [
-      {
-        "title": "Reset All Styles",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Check the running status of the web service.",
-            "file": "verify1-0.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": false
-          },
-          {
-            "name": "Check the status of index.html modification.",
-            "file": "verify1-1.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": false
-          },
-          {
-            "name": "Check the status of style.css modification.",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": false
-          }
+    "type": "lab",
+    "title": "Reset All Styles",
+    "description": "In this lab, we will explore the concept of resetting all styles to default values using the `all` property. By the end of this lab, you will have a clear understanding of how to use this property to reset all styles, both inherited and non-inherited, to their original values. This will allow you to quickly and easily reset the styling of an element without having to individually reset each property.",
+    "difficulty": "Beginner",
+    "time": 10,
+    "details": {
+        "steps": [
+            {
+                "title": "Reset All Styles",
+                "text": "step1.md",
+                "verify": [
+                    {
+                        "name": "Check the running status of the web service.",
+                        "file": "verify1-0.sh",
+                        "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
+                        "timeout": 0,
+                        "showstderr": false
+                    },
+                    {
+                        "name": "Check the status of index.html modification.",
+                        "file": "verify1-1.sh",
+                        "hint": "Please follow the steps to complete the lab.",
+                        "timeout": 0,
+                        "showstderr": false
+                    },
+                    {
+                        "name": "Check the status of style.css modification.",
+                        "file": "verify1-2.sh",
+                        "hint": "Please follow the steps to complete the lab.",
+                        "timeout": 0,
+                        "showstderr": false
+                    }
+                ],
+                "skills": []
+            }
         ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
+        "intro": {
+            "text": "intro.md",
+            "background": "setup.sh"
         },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+            "host01": [
+                {
+                    "file": "index.html",
+                    "target": "~/project",
+                    "chmod": "ugo+rwx"
+                },
+                {
+                    "file": "style.css",
+                    "target": "~/project",
+                    "chmod": "ugo+rwx"
+                }
+            ]
         }
-      ]
+    },
+    "backend": {
+        "imageid": "webide-ubuntu:2204"
+    },
+    "license": {
+        "name": "CC-BY-4.0",
+        "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+        "repo": "https://github.com/30-seconds/30-seconds-of-code"
     }
-  },
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
 }

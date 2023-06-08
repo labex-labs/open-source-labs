@@ -1,21 +1,23 @@
 # Input With Prefix
 
+`index.html` and `style.css` have already been provided in the VM.
+
 To create an input with a visual, non-editable prefix, follow these steps:
 
-1. Use `display: flex` to create a container element.
+1. Use `display: flex` to create a container element with the class `.input-box`.
 2. Remove the border and outline from the `<input>` field and apply them to the parent element instead to make it look like an input box.
 3. Use the `:focus-within` pseudo-class selector to style the parent element accordingly when the user interacts with the `<input>` field.
 
-Here's the code block you can use to create the input box with a prefix:
+Here is the HTML code:
 
 ```html
 <div class="input-box">
   <span class="prefix">+30</span>
-  <input type="tel" placeholder="210 123 4567" />
+  <input type="tel" placeholder="210 123 4567"/>
 </div>
 ```
 
-And here's the CSS code block that you can use to style the input box:
+And here is the CSS code:
 
 ```css
 .input-box {
@@ -49,3 +51,5 @@ And here's the CSS code block that you can use to style the input box:
   border-color: #777;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

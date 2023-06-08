@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore how to create a menu overlay that appears when a user hovers over an image. By using HTML and CSS, we will create an animation that slides the image and reveals a menu containing links. This technique can be used to add interactivity and engagement to websites and can be customized to fit any design.
+In this lab, we will explore the creation of a menu overlay that appears when the user hovers over an image. This interactive feature is a great way to enhance the user experience and provide easy access to important links. By using HTML and CSS, we will build a responsive and visually appealing menu that slides in and out smoothly.

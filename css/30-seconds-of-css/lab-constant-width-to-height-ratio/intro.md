@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the concept of maintaining a constant width to height ratio for HTML elements using CSS. Through this lab, you will learn how to apply padding-top on the ::before pseudo-element to ensure that an element retains a proportionate height value even when the width changes. By the end of this lab, you will have a solid understanding of this essential CSS technique.
+In this lab, we will explore how to create a constant width to height ratio for elements with varying widths. By using the `padding-top` property on a `::before` pseudo-element, we can ensure that the height of the element remains proportionate to its width. This technique can be used to create responsive squares and other shapes with specific aspect ratios.

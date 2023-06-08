@@ -1,78 +1,72 @@
 # Image Overlay on Hover
 
-To create an image overlay effect on hover, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In `index.html`, use the `<figure>` and `<figcaption>` elements to wrap the image and text respectively. Add the `hover-img` class to the `<figure>` element.
+To display an image overlay effect on hover, follow these steps:
 
+1. Use the `::before` and `::after` pseudo-elements for the top and bottom bars of the overlay respectively. Set their `opacity`, `transform` and `transition` to produce the desired effect.
+2. Use the `<figcaption>` for the text of the overlay. Set `display: flex`, `flex-direction: column` and `justify-content: center` to center the text into the image.
+3. Use the `:hover` pseudo-selector to update the `opacity` and `transform` of all the elements and display the overlay.
+
+Here's the HTML code to use:
 ```html
 <figure class="hover-img">
-  <img src="https://picsum.photos/id/200/440/320.jpg" />
+  <img src="https://picsum.photos/id/200/440/320.jpg"/>
   <figcaption>
-    <h3>Lorem <br />Ipsum</h3>
+    <h3>Lorem <br/>Ipsum</h3>
   </figcaption>
 </figure>
 ```
 
-2. In `style.css`, apply the following styles to the `.hover-img` class:
-
+And here's the CSS code to use:
 ```css
 .hover-img {
-  background-color: #000;
-  color: #fff;
   display: inline-block;
   margin: 8px;
+  width: 100%;
   max-width: 320px;
   min-width: 240px;
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: 100%;
+  background-color: #000;
+  color: #fff;
 }
-```
 
-3. Apply the following styles to all child elements of `.hover-img`:
-
-```css
 .hover-img * {
   box-sizing: border-box;
   transition: all 0.45s ease;
 }
-```
 
-4. Use the `::before` and `::after` pseudo-elements to create the top and bottom bars of the overlay respectively. Apply the following styles:
-
-```css
 .hover-img::before,
 .hover-img::after {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: 32px solid rgba(0, 0, 0, 0.5);
-  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  content: "";
-  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
   z-index: 1;
   opacity: 0;
   transform: scaleY(2);
+  transition: all 0.3s ease;
 }
-```
 
-5. Apply the following styles to the `<img>` element to ensure it is aligned with the text:
+.hover-img::before {
+  content: '';
+  top: 0;
+  bottom: auto;
+}
 
-```css
 .hover-img img {
   vertical-align: top;
   max-width: 100%;
   backface-visibility: hidden;
 }
-```
 
-6. Apply the following styles to the `<figcaption>` element to center the text:
-
-```css
 .hover-img figcaption {
   position: absolute;
   top: 0;
@@ -80,7 +74,6 @@ To create an image overlay effect on hover, follow these steps:
   left: 0;
   right: 0;
   align-items: center;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,18 +87,14 @@ To create an image overlay effect on hover, follow these steps:
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-```
 
-7. Finally, use the `:hover` pseudo-selector to update the opacity and transform of all the elements and display the overlay:
-
-```css
 .hover-img:hover::before,
 .hover-img:hover::after {
   transform: scale(1);
   opacity: 1;
 }
 
-.hover-img:hover > img {
+.hover-img:hover img {
   opacity: 0.7;
 }
 
@@ -113,3 +102,5 @@ To create an image overlay effect on hover, follow these steps:
   opacity: 1;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

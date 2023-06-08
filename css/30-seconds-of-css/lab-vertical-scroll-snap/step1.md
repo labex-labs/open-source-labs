@@ -1,28 +1,30 @@
 # Vertical Scroll Snap
 
-To create a scrollable container that snaps on elements when scrolling vertically, you can write the code in `index.html` and `style.css`. Here are the steps to follow:
+`index.html` and `style.css` have already been provided in the VM.
 
-- Create a vertical layout using `display: grid` and `grid-auto-flow: row`.
-- To create a snap effect on vertical scroll, use `scroll-snap-type: y mandatory` and `overscroll-behavior-y: contain`.
-- You can use `scroll-snap-align` with either `start`, `stop` or `center` to change the snap alignment.
+Revised content:
 
-Use the following HTML code:
+This code creates a scrollable container that snaps to elements while scrolling. To achieve this effect, the following steps are taken:
+
+1. `display: grid` and `grid-auto-flow: row` are used to create a vertical layout.
+2. `scroll-snap-type: y mandatory` and `overscroll-behavior-y: contain` are used to create the snap effect on vertical scroll.
+3. `scroll-snap-align` with either `start`, `stop` or `center` can be used to change the snap alignment.
+
+Here's the HTML and CSS code:
 
 ```html
 <div class="vertical-snap">
-  <a href="#"><img src="https://picsum.photos/id/1067/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/122/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/188/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/249/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/257/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/259/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/283/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/288/640/640" /></a>
-  <a href="#"><img src="https://picsum.photos/id/299/640/640" /></a>
+  <a href="#"><img src="https://picsum.photos/id/1067/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/122/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/188/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/249/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/257/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/259/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/283/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/288/640/640"></a>
+  <a href="#"><img src="https://picsum.photos/id/299/640/640"></a>
 </div>
 ```
-
-And the following CSS code:
 
 ```css
 .vertical-snap {
@@ -48,3 +50,5 @@ And the following CSS code:
   border-radius: 1rem;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

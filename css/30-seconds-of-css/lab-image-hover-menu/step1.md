@@ -1,22 +1,20 @@
 # Menu on Image Hover
 
-To create a menu overlay that appears when a user hovers over an image, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Wrap the `<img>` element in a `<figure>` tag and add a `<div>` element to contain the menu links.
-2. Use the `opacity` and `right` CSS attributes to animate the image on hover, creating a sliding effect.
-3. Set the `left` attribute of the `<div>` to the negative of the element's `width`. Reset it to `0` when hovering over the parent element to slide in the menu.
-4. Use `display: flex`, `flex-direction: column` and `justify-content: center` on the `<div>` to vertically center the menu items.
-
-Here's the code you can use in your `index.html` and `style.css` files:
+To display a menu overlay when the user hovers over an image, use a `<figure>` to wrap the `<img>` element and a `<div>` element that will contain the menu links. Apply the following CSS properties to animate the image on hover, creating a sliding effect:
+- `opacity`
+- `right`
+Set the `left` attribute of the `<div>` to the negative of the element's `width`. Reset it to `0` when hovering over the parent element to slide in the menu. Finally, use `display: flex`, `flex-direction: column` and `justify-content: center` on the `<div>` to vertically center the menu items.
 
 ```html
 <figure class="hover-menu">
-  <img src="https://picsum.photos/id/1060/800/480.jpg" />
-  <div>
-    <a href="#">Home</a>
-    <a href="#">Pricing</a>
-    <a href="#">About</a>
-  </div>
+	<img src="https://picsum.photos/id/1060/800/480.jpg"/>
+	<div>
+		<a href="#">Home</a>
+		<a href="#">Pricing</a>
+		<a href="#">About</a>
+	</div>
 </figure>
 ```
 
@@ -44,7 +42,7 @@ Here's the code you can use in your `index.html` and `style.css` files:
   top: 0;
   right: 0;
   opacity: 1;
-  transition: 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
 }
 
 .hover-menu div {
@@ -55,7 +53,7 @@ Here's the code you can use in your `index.html` and `style.css` files:
   height: 100%;
   padding: 8px 4px;
   background: #000;
-  transition: 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +67,7 @@ Here's the code you can use in your `index.html` and `style.css` files:
   opacity: 0.8;
   padding: 5px 15px;
   position: relative;
-  transition: 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .hover-menu div a:hover {
@@ -86,3 +84,5 @@ Here's the code you can use in your `index.html` and `style.css` files:
   opacity: 1;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

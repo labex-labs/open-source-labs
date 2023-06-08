@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore how to create a separator between two blocks using an SVG shape in CSS. We will use the `::after` pseudo-element to create the separator and set its background image to an SVG shape. We will also learn how to set the color of the separator using the `background` property of the parent element. This lab will help you add visual interest to your web designs by creating a stylish separator.
+In this lab, we will be exploring how to create a shape separator using CSS. The separator will use an SVG shape to visually divide two different blocks. By using the `::after` pseudo-element and setting the parent element's background color, we can easily customize the separator to match the overall design of our webpage. This lab will provide hands-on experience in creating a visually appealing and functional separator using CSS.

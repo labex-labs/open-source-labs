@@ -1,15 +1,16 @@
 # Custom Checkbox
 
-To create a styled checkbox with an animation on state change, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Use an `<svg>` element to create the check `<symbol>` and insert it via the `<use>` element to create a reusable SVG icon.
-2. Create a `.checkbox-container` and use flexbox to create the appropriate layout for the checkboxes.
-3. Hide the `<input>` element and use the associated `label` to display a checkbox and the provided text.
-4. Use `stroke-dashoffset` to animate the check symbol on state change.
-5. Use `transform: scale(0.9)` via a CSS animation to create a zoom animation effect.
+To create a styled checkbox with animation on state change:
 
-Here's the code for the checkbox:
+1. Create a check symbol as an `<svg>` element with a `<symbol>` element inside. Use the `<use>` element to insert it as a reusable SVG icon.
+2. Create a container div with a class of `.checkbox-container`. Use flexbox to create the appropriate layout for the checkboxes.
+3. Hide the `<input>` element and associate a label with it to display a checkbox and the provided text.
+4. To animate the check symbol on state change, use `stroke-dashoffset`.
+5. To create a zoom animation effect, use `transform: scale(0.9)` via a CSS animation.
 
+HTML:
 ```html
 <svg class="checkbox-symbol">
   <symbol id="check" viewbox="0 0 12 10">
@@ -44,8 +45,7 @@ Here's the code for the checkbox:
 </div>
 ```
 
-And here's the CSS:
-
+CSS:
 ```css
 .checkbox-symbol {
   position: absolute;
@@ -146,3 +146,5 @@ And here's the CSS:
   }
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

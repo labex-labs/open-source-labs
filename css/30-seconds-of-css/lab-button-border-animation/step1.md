@@ -1,13 +1,12 @@
 # Button Border Animation
 
-This code creates a border animation on hover for a button. The code is written in `index.html` and `style.css`.
+`index.html` and `style.css` have already been provided in the VM.
 
-To create the animation:
+Revised:
 
-- Two boxes `24px` wide will be created using `::before` and `::after` pseudo-elements, positioned above and below the button.
-- On hover, the `width` of the boxes will extend to `100%` and the change will be animated using `transition`.
+To create a border animation on hover, you can use the `::before` and `::after` pseudo-elements to generate two boxes that are `24px` wide and positioned above and below the box. Then, apply the `:hover` pseudo-class to increase the `width` of those elements to `100%` on hover and animate the transition using `transition`.
 
-Here is the code:
+Here's an example code snippet:
 
 ```html
 <button class="animated-border-button">Submit</button>
@@ -27,7 +26,7 @@ Here is the code:
 .animated-border-button::after {
   border: 0 solid transparent;
   transition: all 0.3s;
-  content: "";
+  content: '';
   height: 0;
   position: absolute;
   width: 24px;
@@ -50,3 +49,5 @@ Here is the code:
   width: 100%;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

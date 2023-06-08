@@ -1,15 +1,20 @@
-# Customizing Stylized Quotation Marks
+# Stylized Quotation Marks
 
-To customize the style of inline quotation marks, use the `quotes` property to customize the characters used for the opening and closing quotes of a `<q>` element. The code for the HTML and CSS files are `index.html` and `style.css`, respectively.
+`index.html` and `style.css` have already been provided in the VM.
 
-Here's an example code snippet:
+To customize the inline quotation marks, modify the `quotes` property within a `<q>` element. 
 
-```html
-<p><q>Do or do not, there is no try.</q> – Yoda</p>
+For example:
 ```
-
-```css
+<p>
+  <q>Do or do not, there is no try.</q> – Yoda
+</p>
+```
+can be styled with curly quotes using CSS: 
+```
 q {
   quotes: "“" "”";
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

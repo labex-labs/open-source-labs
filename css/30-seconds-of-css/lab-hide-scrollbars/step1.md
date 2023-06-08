@@ -1,35 +1,32 @@
-# Hiding Scroll Bars
+# Hide Scroll Bars
 
-To hide scrollbars on an element while allowing it to be scrollable, use the following code in your `index.html` and `style.css` files:
+`index.html` and `style.css` have already been provided in the VM.
+
+To allow an element to be scrollable while hiding the scrollbars, follow these steps:
+- Use `overflow: auto` to enable scrolling on the element.
+- Use `scrollbar-width: none` to hide the scrollbars on Firefox.
+- Use `display: none` on the `::-webkit-scrollbar` pseudo-element to hide the scrollbars on WebKit browsers (such as Chrome, Edge, and Safari).
+
+Here's an example implementation:
 
 ```html
-<div class="no-scrollbars">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum id
-    leo a consectetur. Integer justo magna, ultricies vel enim vitae, egestas
-    efficitur leo. Ut nulla orci, rutrum eu augue sed, tempus pellentesque quam.
-  </p>
+<div class="scrollable">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum id leo a consectetur. Integer justo magna, ultricies vel enim vitae, egestas efficitur leo. Ut nulla orci, rutrum eu augue sed, tempus pellentesque quam.</p>
 </div>
 ```
 
 ```css
-div {
+.scrollable {
   width: 200px;
   height: 100px;
-}
-
-.no-scrollbars {
   overflow: auto;
   scrollbar-width: none;
 }
 
-.no-scrollbars::-webkit-scrollbar {
+/* Hide scrollbars on WebKit browsers */
+.scrollable::-webkit-scrollbar {
   display: none;
 }
 ```
 
-Here's what each line of CSS does:
-
-- `overflow: auto` allows the element to be scrollable.
-- `scrollbar-width: none` hides scrollbars on Firefox.
-- `display: none` on the `::-webkit-scrollbar` pseudo-element hides scrollbars on WebKit browsers like Chrome, Edge, and Safari.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

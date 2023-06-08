@@ -1,14 +1,23 @@
-# Animated Underline Effect on Hover
+# Hover Underline Animation
 
-This code creates an animated underline effect when the user hovers over the text. To implement it, follow the instructions below:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Add the following HTML code to `index.html`:
+To create an animated underline effect when the user hovers over the text, follow these steps:
+
+1. Use `display: inline-block` to make the underline span just the width of the text content.
+2. Use the `::after` pseudo-element with `width: 100%` and `position: absolute` to place it below the content.
+3. Use `transform: scaleX(0)` to initially hide the pseudo-element.
+4. Use the `:hover` pseudo-class selector to apply `transform: scaleX(1)` and display the pseudo-element on hover.
+5. Animate `transform` using `transform-origin: left` and an appropriate `transition`.
+6. Remove the `transform-origin` property to make the transform originate from the center of the element.
+
+Here is an example HTML code to apply the effect to a text element:
 
 ```html
 <p class="hover-underline-animation">Hover this text to see the effect!</p>
 ```
 
-2. Add the following CSS code to `style.css`:
+And here is the corresponding CSS code:
 
 ```css
 .hover-underline-animation {
@@ -18,15 +27,15 @@ This code creates an animated underline effect when the user hovers over the tex
 }
 
 .hover-underline-animation::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
+  transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: #0087ca;
   transform-origin: bottom right;
-  transform: scaleX(0);
   transition: transform 0.25s ease-out;
 }
 
@@ -36,16 +45,4 @@ This code creates an animated underline effect when the user hovers over the tex
 }
 ```
 
-The CSS code above uses the following properties:
-
-- `display: inline-block` to make the underline span just the width of the text content.
-- `position: relative` to establish the containing block for the `::after` pseudo-element.
-- `color: #0087ca` to set the text color.
-- `::after` pseudo-element with `width: 100%` and `position: absolute` to place it below the content.
-- `transform-origin: bottom right` to set the origin of the scaling transformation to the bottom right corner of the element.
-- `transform: scaleX(0)` to initially hide the pseudo-element.
-- `transition: transform 0.25s ease-out` to animate the transformation over a duration of 0.25 seconds.
-- `:hover` pseudo-class selector to apply `transform: scaleX(1)` and display the pseudo-element on hover.
-- `transform-origin: bottom left` to set the origin of the scaling transformation to the bottom left corner of the element.
-
-You can modify the CSS properties to customize the animation to your liking.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

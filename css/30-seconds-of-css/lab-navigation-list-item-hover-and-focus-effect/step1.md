@@ -1,13 +1,14 @@
-# Custom Navigation Item Hover and Focus Effect
+# Navigation List Item Hover and Focus Effect
 
-This code block creates a custom hover and focus effect for navigation items using CSS transformations. The effect is achieved with the following steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Add the `::before` pseudo-element to the list item anchor to create a hover effect. Hide it using `transform: scale(0)`.
+To create a custom hover and focus effect for navigation items, use CSS transformations as follows:
+
+1. Use the `::before` pseudo-element at the list item anchor to create a hover effect. Hide it using `transform: scale(0)`.
 2. Use the `:hover` and `:focus` pseudo-class selectors to transition the pseudo-element to `transform: scale(1)` and show its colored background.
-3. Use `z-index` to ensure that the pseudo-element does not cover the anchor element.
+3. Prevent the pseudo-element from covering the anchor element by using `z-index`.
 
-To implement this effect, add the following HTML code to your `index.html` file:
-
+You can use the following HTML code for your navigation menu:
 ```html
 <nav class="hover-nav">
   <ul>
@@ -18,8 +19,7 @@ To implement this effect, add the following HTML code to your `index.html` file:
 </nav>
 ```
 
-Then, add the following CSS code to your `style.css` file:
-
+And apply the following CSS rules:
 ```css
 .hover-nav ul {
   list-style: none;
@@ -42,7 +42,7 @@ Then, add the following CSS code to your `style.css` file:
   z-index: 0;
 }
 
-li a::before {
+.hover-nav li a::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -55,8 +55,10 @@ li a::before {
   transition: transform 0.5s ease-in-out;
 }
 
-li a:hover::before,
-li a:focus::before {
+.hover-nav li a:hover::before,
+.hover-nav li a:focus::before {
   transform: scale(1);
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

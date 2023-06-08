@@ -1,12 +1,16 @@
 # Bouncing Loader
 
-This code block creates a bouncing loader animation in `index.html` and `style.css`. Follow these steps to create the animation:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Define a bouncing animation using the `opacity` and `transform` properties with `@keyframes`. Use a single axis translation on `transform: translate3d()` to achieve better animation performance.
-2. Create a parent container, `.bouncing-loader`, for the bouncing circles. Use `display: flex` and `justify-content: center` to position them in the center.
-3. Make the three bouncing circle `<div>` elements circular by giving them the same `width`, `height`, and `border-radius: 50%`.
+To create a bouncing loader animation:
+
+1. Define a `@keyframes` animation that uses the `opacity` and `transform` properties, with a single axis translation on `transform: translate3d()` for better performance.
+2. Create a parent container with the class `.bouncing-loader` that uses `display: flex` and `justify-content: center` to center the bouncing circles.
+3. Give the three `<div>` elements for the bouncing circles the same `width`, `height`, and `border-radius: 50%` to make them circular.
 4. Apply the `bouncing-loader` animation to each of the three bouncing circles.
 5. Use a different `animation-delay` for each circle and `animation-direction: alternate` to create the appropriate effect.
+
+Here is the HTML code:
 
 ```html
 <div class="bouncing-loader">
@@ -15,6 +19,8 @@ This code block creates a bouncing loader animation in `index.html` and `style.c
   <div></div>
 </div>
 ```
+
+And here is the CSS code:
 
 ```css
 @keyframes bouncing-loader {
@@ -46,3 +52,5 @@ This code block creates a bouncing loader animation in `index.html` and `style.c
   animation-delay: 0.4s;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

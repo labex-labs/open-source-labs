@@ -1,15 +1,14 @@
 # Button Grow Animation
 
-To create a grow animation on hover, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Open `index.html` and `style.css`.
-2. Add the following HTML code to create a button with a class of "button-grow":
+To create a grow animation on hover, you can use an appropriate `transition` to animate changes to the element. Use the `:hover` pseudo-class to change the `transform` property to `scale(1.1)`. This will grow the element when the user hovers over it.
+
+Here is an example code snippet you can use:
 
 ```html
 <button class="button-grow">Submit</button>
 ```
-
-3. Add the following CSS code to style the button and create the grow animation on hover:
 
 ```css
 .button-grow {
@@ -27,4 +26,4 @@ To create a grow animation on hover, follow these steps:
 }
 ```
 
-The `transition` property is used to animate changes to the element, and the `:hover` pseudo-class is used to change the `transform` property to `scale(1.1)`, which grows the element when the user hovers over it.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

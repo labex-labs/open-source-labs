@@ -1,8 +1,15 @@
-# Floating Section Headings in a List
+# List With Floating Section Headings
 
-To create a list with floating section headings for each section, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Add the code in `index.html` and `style.css`.
+To create a list with floating headings for each section, follow these steps:
+
+1. Apply `overflow-y: auto` to the list container to allow for vertical overflow.
+2. Use `display: grid` on the inner container (`<dl>`) to create a layout with two columns.
+3. Set headings (`<dt>`) to `grid-column: 1` and content (`<dd>`) to `grid-column: 2`.
+4. Finally, apply `position: sticky` and `top: 0.5rem` to headings to create a floating effect.
+
+Here is the HTML code:
 
 ```html
 <div class="container">
@@ -42,6 +49,8 @@ To create a list with floating section headings for each section, follow these s
 </div>
 ```
 
+And here is the CSS code:
+
 ```css
 .container {
   display: grid;
@@ -50,7 +59,7 @@ To create a list with floating section headings for each section, follow these s
 }
 
 .floating-stack {
-  background: #455a64;
+  background: #455A64;
   color: #fff;
   height: 80vh;
   width: 320px;
@@ -94,43 +103,4 @@ To create a list with floating section headings for each section, follow these s
 }
 ```
 
-2. Use `overflow-y: auto` to allow the list container to overflow vertically.
-
-```css
-.floating-stack {
-  overflow-y: auto;
-}
-```
-
-3. Use `display: grid` on the inner container (`<dl>`) to create a layout with two columns.
-
-```css
-.floating-stack > dl {
-  display: grid;
-  grid-template-columns: 2.5rem 1fr;
-  align-items: center;
-}
-```
-
-4. Set headings (`<dt>`) to `grid-column: 1` and content (`<dd>`) to `grid-column: 2`.
-
-```css
-.floating-stack dt {
-  grid-column: 1;
-}
-
-.floating-stack dd {
-  grid-column: 2;
-}
-```
-
-5. Finally, apply `position: sticky` and `top: 0.5rem` to headings to create a floating effect.
-
-```css
-.floating-stack dt {
-  position: sticky;
-  top: 0.5rem;
-}
-```
-
-This will create a list with floating section headings for each section.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
