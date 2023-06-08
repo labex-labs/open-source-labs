@@ -8,6 +8,7 @@ To generate a UUID compliant with [RFC4122](https://www.ietf.org/rfc/rfc4122.txt
 4. Implement the following code:
 
 ```js
+const crypto = require("crypto");
 const UUIDGeneratorBrowser = () =>
   ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
     (

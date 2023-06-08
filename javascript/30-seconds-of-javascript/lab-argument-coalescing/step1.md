@@ -1,6 +1,10 @@
 # Using Argument Coalescing
 
-To start coding, open the Terminal/SSH and type `node`. Argument coalescing is a technique used to return the first defined, non-null argument in a list of arguments. To achieve this, use `Array.prototype.find()` and `Array.prototype.includes()` to find the first value that is not equal to `undefined` or `null`.
+To start coding, open the Terminal/SSH and type `node`.
+
+Argument coalescing is a technique used to return the first defined, non-null argument in a list of arguments.
+
+To achieve this, use `Array.prototype.find()` and `Array.prototype.includes()` to find the first value that is not equal to `undefined` or `null`.
 
 Here's an example of how to use argument coalescing in JavaScript:
 
