@@ -165,6 +165,7 @@ class Sync:
         lab_difficulty = index.get("difficulty", None)
         lab_backend = index.get("backend").get("imageid", None)
         lab_steps = index.get("details").get("steps")
+        lab_contributors = index.get("contributors", [])
         # Count Verify scripts
         lab_scripts = sum(
             [
@@ -212,6 +213,7 @@ class Sync:
             "SKILLS_ERROR": list(set(not_in_skills_tree)),
             "DESC_WORDS": lab_desc_words,
             "DESC": lab_desc,
+            "CONTRIBUTORS": list(lab_contributors),
             "GITHUB": {
                 "link": f"https://github.com/{self.repo}/tree/master/{path_slug}",
                 "text": "OPEN IN GITHUB",

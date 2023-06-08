@@ -32,4 +32,4 @@ git log origin/master
 
 This will show you the latest commits on the `origin/master` branch.This is the result of running `git log origin/master`:
 
-![<result>](assets/challenge-fetch-changes-step1-1.png)
+![<result>](./assets/challenge-fetch-changes-step1-1.png)

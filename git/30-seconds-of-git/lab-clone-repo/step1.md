@@ -20,5 +20,5 @@ This will create a new directory named `my-project` in your current working dire
 
 Here are the results after completing the lab:
 
-![<result>](assets/challenge-clone-repo-step1-1.png)
-![<result>](assets/challenge-clone-repo-step1-2.png)
+![<result>](./assets/challenge-clone-repo-step1-1.png)
+![<result>](./assets/challenge-clone-repo-step1-2.png)

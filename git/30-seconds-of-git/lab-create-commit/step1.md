@@ -28,4 +28,4 @@ The `-m` option allows you to specify a commit message. Make sure the message is
 
 This is the result of running the `git log` command:
 
-![<result>](assets/challenge-create-commit-step1-1.png)
+![<result>](./assets/challenge-create-commit-step1-1.png)

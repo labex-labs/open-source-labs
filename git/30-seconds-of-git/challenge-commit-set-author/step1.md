@@ -10,4 +10,4 @@ Let's say you are working on a project hosted on the `https://github.com/labex-l
 
 This command will create a new commit with the message "Fix the bug" and attribute it to John Doe:
 
-![<result>](assets/challenge-commit-set-author-step1-1.png)
+![<result>](./assets/challenge-commit-set-author-step1-1.png)

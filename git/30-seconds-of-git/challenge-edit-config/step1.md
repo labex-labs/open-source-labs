@@ -15,4 +15,4 @@ In this example, we will use the Git repository named `https://github.com/labex-
 
 This is the result after completion:
 
-![<result>](assets/challenge-edit-config-step1-1.png)
+![<result>](./assets/challenge-edit-config-step1-1.png)

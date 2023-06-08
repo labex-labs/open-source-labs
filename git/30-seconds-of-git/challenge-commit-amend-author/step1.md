@@ -15,4 +15,4 @@ To change the last commit's author, you can use a command. This command allows y
 
 You should see that the last commit's author is now `Duck Quackers`:
 
-![<result>](assets/challenge-commit-amend-author-step1-1.png)
+![<result>](./assets/challenge-commit-amend-author-step1-1.png)

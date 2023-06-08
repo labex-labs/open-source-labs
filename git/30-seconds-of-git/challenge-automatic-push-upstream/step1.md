@@ -18,4 +18,4 @@ For this challenge, you will fork the https://github.com/labex-labs/git-playgrou
 
 This is the result after completing the challenge:
 
-![<result>](assets/challenge-automatic-push-upstream-step1-1.png)
+![<result>](./assets/challenge-automatic-push-upstream-step1-1.png)

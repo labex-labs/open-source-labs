@@ -24,4 +24,4 @@ git log # Verify that the changes are now in `feature-branch`
 
 This is the result of running `git log`:
 
-![<result>](assets/challenge-move-commits-to-branch-step1-1.png)
+![<result>](./assets/challenge-move-commits-to-branch-step1-1.png)

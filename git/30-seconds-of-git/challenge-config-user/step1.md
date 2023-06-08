@@ -14,4 +14,4 @@ For this challenge, we will be using the Git repository named `https://github.co
 
 This is the result after completing the challenge:
 
-![<result>](assets/challenge-config-user-step1-1.png)
+![<result>](./assets/challenge-config-user-step1-1.png)

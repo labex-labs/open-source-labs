@@ -15,4 +15,4 @@ To complete this experiment, you will use the Git repository `git-playground` fr
 
 This is the result of running `git log`:
 
-![<result>](assets/challenge-move-commits-to-branch-step1-1.png)
+![<result>](./assets/challenge-move-commits-to-branch-step1-1.png)
