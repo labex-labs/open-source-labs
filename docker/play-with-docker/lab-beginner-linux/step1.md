@@ -1,12 +1,18 @@
-# In this lab, we will look at some basic Docker commands and a simple build-ship-run workflow. We'll start by running some simple containers, then we'll use a Dockerfile to build a custom app. Finally, we'll look at how to use bind mounts to modify a running container as you might if you were actively developing using Docker.
+# Prerequisites
 
-> **Difficulty**: Beginner (assumes no familiarity with Docker)
+You will need all of the following to complete this lab:
 
-> **Time**: Approximately 30 minutes
+- A clone of the lab's GitHub repo.
+- A DockerID.
 
-> **Tasks**:
+## Clone the Lab's GitHub Repo
 
-> - [Task 0: Prerequisites](#Task_0)
-> - [Task 1: Run some simple Docker containers](#Task_1)
-> - [Task 2: Package and run a custom app using Docker](#Task_2)
-> - [Task 3: Modify a Running Website](#Task_3)
+Use the following command to clone the lab's repo from GitHub (you can click the command or manually type it). This will make a copy of the lab's repo in a new sub-directory called `linux_tweet_app`.
+
+```bash
+git clone https://github.com/dockersamples/linux_tweet_app
+```
+
+## Make sure you have a DockerID
+
+If you do not have a DockerID (a free login used to access Docker Hub), please visit [Docker Hub](https://hub.docker.com) and register for one. You will need this for later steps.
