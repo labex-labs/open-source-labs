@@ -1,7 +1,5 @@
-# Open-Source Challenges
+# Open-Source Labs
 
-The challenges of this repo come from the open-source world. Under the license of the agreement, we have adapted and are compatible with LabEx.
+The labs in this repository are sourced from the open-source community and have been adapted to be compatible with LabEx under the terms of the agreement. The `index.json` file displays the source and open-source license for each challenge, which remains unchanged even after adaptation.
 
-The `index.json` file shows the source and open-source license of the corresponding challenge. The adapted challenge still uses the original open-source license.
-
-Special thanks to the original creators of the challenges. ❤️
+We extend our heartfelt gratitude to the original creators of these labs. ❤️
