@@ -1,50 +1,47 @@
-# ENTRYPOINT vs COMMAND
+# Image Inspection
 
-In the 2 previous Dockerfile, we used CMD to define the command to be ran when a container is launched. As we have seen, there are several ways to define the command, using ENTRYPOINT and/or CMD.
-We will illustrate this on a new Dockerfile, named Dockerfile-v3, that as the following content.
+As we have already seen with containers, and as we will see with other Docker's components (volume, network, ...), the **inspect** command is available for the image API and it returns all the information of the image provided.
 
-```dockerfile
-FROM alpine
-ENTRYPOINT ["ping"]
-CMD ["localhost"]
-```
-
-Here, we define the **ping** command as the ENTRYPOINT and the **localhost** as the CMD, the command that will be ran by default is the concatenation of ENTRYPOINT and CMD: **ping localhost**. This command can be seen as a wrapper around the **ping** utility to which we can change the address we provide as a parameter.
-
-Let's create an image based on this new file.
+The alpine image should already be present locally, if it's not, run the following command to pull it.
 
 ```bash
-docker image build -f Dockerfile-v3 -t ping:v0.1 .
+docker image pull alpine
 ```
 
-We can run this image without specifying any command:
+Once we are sure it is there let's inspect it.
 
 ```bash
-docker container run ping:v0.1
+docker image inspect alpine
 ```
 
-That should give a result like the following one.
+There is a lot of information in there:
 
-```
-PING localhost (127.0.0.1): 56 data bytes
-64 bytes from 127.0.0.1: seq=0 ttl=64 time=0.046 ms
-64 bytes from 127.0.0.1: seq=1 ttl=64 time=0.046 ms
-64 bytes from 127.0.0.1: seq=2 ttl=64 time=0.046 ms
-64 bytes from 127.0.0.1: seq=3 ttl=64 time=0.046 ms
-64 bytes from 127.0.0.1: seq=4 ttl=64 time=0.047 ms
-```
+- the layers the image is composed of
+- the driver used to store the layers
+- the architecture / os it has been created for
+- metadata of the image
+- ...
 
-You can also override the default CMD indicating another IP address. We will use **8.8.8.8** which is the IP of a Google's DNS.
+We will not go into all the details now but it's interesing to see an example of the Go template notation that enables to extract the part of information we need in just a simple command.
+
+Let's get the list of layers (only one for alpine)
 
 ```bash
-docker container run ping:v0.1 8.8.8.8
+docker image inspect --format "{{ "{{ json .RootFS.Layers "}}}}" alpine | python -m json.tool
 ```
 
-That should return the following.
+```
+[
+    "sha256:60ab55d3379d47c1ba6b6225d59d10e1f52096ee9d5c816e42c635ccc57a5a2b"
+]
+```
 
+Let's try another example to query only the Architecture information
+
+```bash
+docker image inspect --format "{{ "{{ .Architecture "}}}}" alpine
 ```
-PING 8.8.8.8 (8.8.8.8): 56 data bytes
-64 bytes from 8.8.8.8: seq=0 ttl=38 time=9.235 ms
-64 bytes from 8.8.8.8: seq=1 ttl=38 time=8.590 ms
-64 bytes from 8.8.8.8: seq=2 ttl=38 time=8.585 ms
-```
+
+This should return **amd64**.
+
+Feel free to play with the Go template format and get familiar with it as it's really handy.

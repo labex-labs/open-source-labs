@@ -1,14 +1,19 @@
-# Creating services
+# Scaling up
 
-The next step is to create a service and list out the services. This creates a single service called `web` that runs the latest nginx, type the below commands in the first terminal:
+We will be performing these actions in the first terminal. Next let's inspect the service:
 
 ```bash
-docker service create -p 80:80 --name web nginx:latest
-docker service ls
+docker service inspect web
 ```
 
-You can check that nginx is running by executing the following command:
+That's lots of info! Now, let's scale the service:
 
 ```bash
-curl http://localhost:80
+docker service scale web=15
+```
+
+Docker has spread the 15 services evenly over all of the nodes
+
+```bash
+docker service ps web
 ```

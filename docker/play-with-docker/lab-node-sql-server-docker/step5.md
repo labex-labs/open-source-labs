@@ -1,51 +1,33 @@
-# Task 3: Switch to high availability in swarm mode
+# Add a reverse proxy to improve performance
 
-Swarm mode lets you join several Docker servers together and treat them as a single unit. You deploy your app as services to the swarm, and Docker runs containers across all the servers.
+[Node.js](https://nodejs.org/en/) is a good server platform, but it's easy to improve performance by putting a reverse proxy in front of the Node.js application. The proxy is the public entrypoint to the app, and it handles requests from users.
 
-You can run multiple instances of a container to deal with scale, and if a server goes down and you lose containers, Docker starts replacement containers on other servers.
+[Nginx](http://nginx.org) is a popular open source web server which you can easily configure as a reverse proxy. The [Nginx configuration](https://github.com/dockersamples/node-bulletin-board/blob/v4/bulletin-board-proxy/nginx.conf) in this part makes use of browser and server caching, which reduces the load on the web application and improves performance.
 
-First clear down all the containers from part 2:
-
-```bash
-docker container rm --force $(docker container ls --quiet)
-```
-
-Now switch to swarm mode:
+Switch to the v4 code branch:
 
 ```bash
-docker swarm init --advertise-addr $(hostname -i)
+git checkout v4
 ```
 
-This creates a single-node swarm. The output of the command shows you how to join other Docker servers to the swarm - all you need are more servers running Docker in the same network. You can scale Docker swarm up to hundreds of nodes.
-
-The normal `docker` commands still work in swarm mode. Switch to the v3 source code branch:
-
-```bash
-git checkout v3
-```
-
-And build the application with Docker Compose:
+And use Docker Compose to build the application:
 
 ```bash
 docker-compose build
 ```
 
-Version 3 has the same source code, but the [Dockerfile for v3](https://github.com/dockersamples/node-bulletin-board/blob/v3/bulletin-board-app/Dockerfile) of the the web app includes a `HEALTHCHECK` instruction. That tells Docker how to test if the application is healthy, and unhealthy containers are stopped and replaced with new ones.
-
-You use the same Docker Compose file format to deploy in swarm mode, and there are some additional options available. Deploy version 3 of the app using the [docker-stack.yml](https://github.com/dockersamples/node-bulletin-board/blob/v3/docker-stack.yml) file:
+Now you have `v4` Docker images for all the application parts, you can upgrade the running stack using the new [docker-stack.yml](https://github.com/dockersamples/node-bulletin-board/blob/v4/docker-stack.yml) file:
 
 ```bash
 docker stack deploy -c docker-stack.yml bb
 ```
 
-A stack is a way to group many services together, so you can manage them as one unit. You can see the services in the stack, which tells you if the application is up:
+Version 4 adds a proxy server to the stack which publishes port `80`, so now you can browse to the app on the standard HTTP port:
 
-```bash
-docker stack services bb
-```
+[Click here for v4 of the app](/){:data-term=".term1"}{:data-port="80"}
 
-[Click here for v3 of the app](/){:data-term=".term1"}{:data-port="8080"}
+The web application looks the same, but behind the scenes all the hard work is being done by the Nginx proxy. You can open developer tools on your browser and inspect the network responses - Nginx has added browser caching hints, and it's also using a local cache to reduce traffic to the Node.js app.
 
-You'll see the application behaviour is exactly the same - containers are running from the same Docker images, but now they're being scheduled by Docker swarm.
+There are also several instances of the proxy container running - Docker swarm load-balances incoming requests between those containers. If you had multiple servers in the swarm, you would be able to scale up to handle your incoming workload.
 
-Docker swarm also supports rolling updates for applications running as stacks. In the next part you'll add more functionality to the app, by running a web proxy.
+In the final part you'll add monitoring to the application, so you can see what the Node.js container is doing.

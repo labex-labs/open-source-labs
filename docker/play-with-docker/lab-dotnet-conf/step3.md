@@ -1,19 +1,17 @@
-# Task 2: Build the application image
+# Run a .NET Core container!
 
-The `Dockerfile` has `dotnet` commands to restore NuGet packages and publish the app:
+A Docker image is a complete packaged app. You can share it on [Docker Hub](https://hub.docker.com), which is how thousands of open-source and commercial projects now distribute their software.
 
-```bash
-cat Dockerfile
-```
+Your image contains the .NET Core 3.0 runtime, together with the assemblies and configuration for the demo app.
 
-> Even if you're not familiar with the [Dockerfile syntax](https://docs.docker.com/engine/reference/builder/), you can kind of work out that this is a script to compile the app and package it up to run
-
-You run the script with the `docker image build` command, which produces a container package called a _Docker image_:
+You run the app by running a container from the image:
 
 ```bash
-docker image build --tag dotnetconf:19 .
+docker container run dotnetconf:19
 ```
 
-You'll see lots of download progress bars, and some familiar output from MSBuild.
+> Scroll up to read the message from .NET Bot - that's your .NET Conf code!
 
-The final message `Successfully tagged dotnetconf:19` tells you the image has been built and given the tag `dotnetconf:19` - which is just the image name.
+If you want to learn more about what's happened here and how you can use Docker to build cross-platform apps that run on Windows, Linux, Itenal and Arm - check out this blog post:
+
+- [Docker + Arm Virtual Meetup Recap: Building Multi-arch Apps with Buildx](https://blog.docker.com/2019/09/docker-arm-virtual-meetup-multi-arch-with-buildx/).

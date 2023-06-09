@@ -1,75 +1,68 @@
-# Package and run a custom app using Docker
+# Run an interactive Ubuntu container
 
-In this step you'll learn how to package your own apps as Docker images using a [Dockerfile](https://docs.docker.com/engine/reference/builder/).
+You can run a container based on a different version of Linux than is running on your Docker host.
 
-The Dockerfile syntax is straightforward. In this task, we're going to create a simple NGINX website from a Dockerfile.
+In the next example, we are going to run an Ubuntu Linux container on top of an Alpine Linux Docker host (Play With Docker uses Alpine Linux for its nodes).
 
-## Build a simple website image
-
-Let's have a look at the Dockerfile we'll be using, which builds a simple website that allows you to send a tweet.
-
-1. Make sure you're in the `linux_tweet_app` directory.
+1. Run a Docker container and access its shell.
 
    ```bash
-   cd ~/linux_tweet_app
+   docker container run --interactive --tty --rm ubuntu bash
    ```
 
-2. Display the contents of the Dockerfile.
+   In this example, we're giving Docker three parameters:
+
+   - `--interactive` says you want an interactive session.
+   - `--tty` allocates a pseudo-tty.
+   - `--rm` tells Docker to go ahead and remove the container when it's done executing.
+
+   The first two parameters allow you to interact with the Docker container.
+
+   We're also telling the container to run `bash` as its main process (PID 1).
+
+   When the container starts you'll drop into the bash shell with the default prompt `root@<container id>:/#`. Docker has attached to the shell in the container, relaying input and output between your local session and the shell session in the container.
+
+2. Run the following commands in the container.
+
+   `ls /` will list the contents of the root directory in the container, `ps aux` will show running processes in the container, `cat /etc/issue` will show which Linux distro the container is running, in this case Ubuntu 20.04.3 LTS.
 
    ```bash
-   cat Dockerfile
+   ls /
    ```
-
-   ```
-   FROM nginx:latest
-
-   COPY index.html /usr/share/nginx/html
-   COPY linux.png /usr/share/nginx/html
-
-   EXPOSE 80 443
-
-   CMD ["nginx", "-g", "daemon off;"]
-   ```
-
-   Let's see what each of these lines in the Dockerfile do.
-
-   - [FROM](https://docs.docker.com/engine/reference/builder/#from) specifies the base image to use as the starting point for this new image you're creating. For this example we're starting from `nginx:latest`.
-   - [COPY](https://docs.docker.com/engine/reference/builder/#copy) copies files from the Docker host into the image, at a known location. In this example, `COPY` is used to copy two files into the image: `index.html`. and a graphic that will be used on our webpage.
-   - [EXPOSE](https://docs.docker.com/engine/reference/builder/#expose) documents which ports the application uses.
-   - [CMD](https://docs.docker.com/engine/reference/builder/#cmd) specifies what command to run when a container is started from the image. Notice that we can specify the command, as well as run-time arguments.
-
-3. In order to make the following commands more copy/paste friendly, export an environment variable containing your DockerID (if you don't have a DockerID you can get one for free via [Docker Hub](https://hub.docker.com)).
-
-   You will have to manually type this command as it requires your unique DockerID.
-
-   `export DOCKERID=<your docker id>`
-
-4. Echo the value of the variable back to the terminal to ensure it was stored correctly.
 
    ```bash
-   echo $DOCKERID
+   ps aux
    ```
-
-5. Use the `docker image build` command to create a new Docker image using the instructions in the Dockerfile.
-
-   - `--tag` allows us to give the image a custom name. In this case it's comprised of our DockerID, the application name, and a version. Having the Docker ID attached to the name will allow us to store it on Docker Hub in a later step
-   - `.` tells Docker to use the current directory as the build context
-
-   Be sure to include period (`.`) at the end of the command.
 
    ```bash
-   docker image build --tag $DOCKERID/linux_tweet_app:1.0 .
+   cat /etc/issue
    ```
 
-   The output below shows the Docker daemon executing each line in the Dockerfile
+3. Type `exit` to leave the shell session. This will terminate the `bash` process, causing the container to exit.
+
+   ```bash
+   exit
+   ```
+
+   > **Note:** As we used the `--rm` flag when we started the container, Docker removed the container when it stopped. This means if you run another `docker container ls --all` you won't see the Ubuntu container.
+
+4. For fun, let's check the version of our host VM.
+
+   ```bash
+   cat /etc/issue
+   ```
+
+   You should see:
 
    ```
-   Sending build context to Docker daemon  32.77kB
-   Step 1/5 : FROM nginx:latest
-   latest: Pulling from library/nginx
-   afeb2bfd31c0: Pull complete
-   7ff5d10493db: Pull complete
-   d2562f1ae1d0: Pull complete
-   Digest: sha256:af32e714a9cc3157157374e68c818b05ebe9e0737aac06b55a09da374209a8f9
-   Status: Downloaded newer image for nginx:latest
+   Welcome to Alpine Linux 3.8
+   Kernel \r on an \m (\l)
    ```
+
+Notice that our host VM is running Alpine Linux, yet we were able to run an Ubuntu container. As previously mentioned, the distribution of Linux inside the container does not need to match the distribution of Linux running on the Docker host.
+
+However, Linux containers require the Docker host to be running a Linux kernel. For example, Linux containers cannot run directly on Windows Docker hosts. The same is true of Windows containers - they need to run on a Docker host with a Windows kernel.
+
+Interactive containers are useful when you are putting together your own image. You can run a container and verify all the steps you need to deploy your app, and capture them in a Dockerfile.
+
+> You _can_ [commit](https://docs.docker.com/engine/reference/commandline/commit/) a container to make an image from it - but you should avoid that wherever possible. It's much better to use a repeatable [Dockerfile](https://docs.docker.com/engine/reference/builder/) to build your image. You'll see that shortly.

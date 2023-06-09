@@ -1,65 +1,76 @@
-# Image creation from a container
+# Image creation using a Dockerfile
 
-Let's start by running an interactive shell in a ubuntu container.
+We will use a simple example in this section and build a hello world application in Node.js. We will start by creating a file in which we retrieve the hostname and display it.
+
+Copy the following content into index.js file.
+
+```js
+var os = require("os");
+var hostname = os.hostname();
+console.log("hello from " + hostname);
+```
+
+We will dockerrize this application and start by creating a Dockerfile for this purpose. We will use **alpine** as the base image, add a Node.js runtime and then copy our source code. We will also specify the default command to be ran upon container creation.
+
+Create a file named Dockerfile and copy the following content into it.
+
+```dockerfile
+FROM alpine
+RUN apk update && apk add nodejs
+COPY . /app
+WORKDIR /app
+CMD ["node","index.js"]
+```
+
+Let's build our first image out of this Dockerfile, we will name it hello:v0.1
 
 ```bash
-docker container run -ti ubuntu bash
+docker image build -t hello:v0.1 .
 ```
 
-As we've done in the previous lab, we will install the figlet package in this container.
+We then create a container to check it is running fine.
 
 ```bash
-apt-get update
-apt-get install -y figlet
+docker container run hello:v0.1
 ```
 
-We then exit from this container
+You should then have an output similar to the following one (the ID will be different though).
+
+```
+hello from 92d79b6de29f
+```
+
+There are always several ways to write a Dockerfile, we can start from a Linux distribution and then install a runtime (as we did above) or use images where this has already been done for us.
+
+To illustrate that, we will now create a new Dockerfile but we will use the **mhart/alpine-node:6.9.4** image. This is not an official image but it's a very well known and used one.
+
+Create a new Dockerfile named Dockerfile-v2 and make sure it has the following content.
+
+```dockerfile
+FROM mhart/alpine-node:6.9.4
+COPY . /app
+WORKDIR /app
+CMD ["node","index.js"]
+```
+
+Basically, it is not that different from the previous one, it just uses a base image that embeds alpine and a Node.js runtime so we do not have to install it ourself. In this example, installing Node.js is not a big deal, but it is really helpful to use image where a runtime (or else) is already packages when using more complex environments.
+
+We will now create a new image using this Dockerfile.
 
 ```bash
-exit
+docker image build -f Dockerfile-v2 -t hello:v0.2 .
 ```
 
-Get the ID of this container using the ls command (do not forget the -a option as the non running container are not returned by the ls command).
+Note: as we do not use the default name for our Dockerfile, we use the -f option to point towards the one we need to use.
+
+We now run a container from this image.
 
 ```bash
-docker container ls -a
+docker container run hello:v0.2
 ```
 
-Run the following command, using the ID retreived, in order to commit the container and create an image out of it.
+Once again, the output will look like the following.
 
 ```
-docker container commit CONTAINER_ID
+hello from 4094ff6bffbd
 ```
-
-Once it has been commited, we can see the newly created image in the list of available images.
-
-```bash
-docker image ls
-```
-
-From the previous command, get the ID of the newly created image and tag it so it's named **ourfiglet**.
-
-```
-docker image tag IMAGE_ID ourfiglet
-```
-
-Now we will run a container based on the newly created image named **ourfiglet**, and specify the command to be ran such as it uses the figlet package.
-
-```bash
-docker container run ourfiglet figlet hello
-```
-
-As figlet is present in our **ourfiglet** image, the command ran returns the following output.
-
-```
- _          _ _
-| |__   ___| | | ___
-| '_ \ / _ \ | |/ _ \
-| | | |  __/ | | (_) |
-|_| |_|\___|_|_|\___/
-
-```
-
-This example shows that we can create a container, add all the libraries and binaries in it and then commit this one in order to create an image. We can then use that image as we would do for any other images. This approach is not the recommended one as it is not very portable.
-
-In the following we will see how images are usually created, using a Dockerfile, which is a text file that contains all the instructions to build an image.

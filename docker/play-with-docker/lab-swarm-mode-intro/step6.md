@@ -1,17 +1,33 @@
-# Updating nodes
+# Scaling down
 
-You can also drain a particular node, that is remove all services from that node. The services will automatically be rescheduled on other nodes.
+You can also scale down the service
 
 ```bash
-docker node update --availability drain node2
+docker service scale web=10
 ```
+
+Lets check our service status
 
 ```bash
 docker service ps web
 ```
 
-You can check out the nodes and see that `node2` is still active but drained.
+Now bring `node2` back online and show it's new availability
 
 ```bash
-docker node ls
+docker node update --availability active node2
 ```
+
+```bash
+docker node inspect node2 --pretty
+```
+
+{:.quiz}
+Which of these can you do with Docker Swarm Mode?
+
+- [x] add a node
+- [x] start a service
+- [x] end a service
+- [x] list all service
+- [x] scale up the number of replicas of a service
+- [x] take a node out of the swarm

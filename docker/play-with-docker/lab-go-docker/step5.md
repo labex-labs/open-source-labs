@@ -7,7 +7,7 @@ case, you need to put the root certificates in your
 container too, because Go won't bundle those into your
 binary.
 
-### Installing the SSL certificates
+## Installing the SSL certificates
 
 Three again, there are multiple options available, but
 the easiest one is to use a package from an existing

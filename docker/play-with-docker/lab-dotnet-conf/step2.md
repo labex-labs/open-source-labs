@@ -1,25 +1,19 @@
-# Task 1: Grab the code
+# Build the application image
 
-The Play-with-Docker environment is already set up with Docker and Git, so you're good to go.
-
-### Clone the source code from GitHub
-
-Clone the application source into your local session:
-
-> Just click the text in these boxes to send the command to your terminal
+The `Dockerfile` has `dotnet` commands to restore NuGet packages and publish the app:
 
 ```bash
-git clone https://github.com/dockersamples/dotnetconf19.git
+cat Dockerfile
 ```
 
-Now browse to the source code folder `dotnetconf19`:
+> Even if you're not familiar with the [Dockerfile syntax](https://docs.docker.com/engine/reference/builder/), you can kind of work out that this is a script to compile the app and package it up to run
+
+You run the script with the `docker image build` command, which produces a container package called a _Docker image_:
 
 ```bash
-cd dotnetconf19
+docker image build --tag dotnetconf:19 .
 ```
 
-In there you'll see a folder called `src` which contains the .NET code and a file called `Dockerfile` whch contains the instructions to build and package the app:
+You'll see lots of download progress bars, and some familiar output from MSBuild.
 
-```bash
-ls
-```
+The final message `Successfully tagged dotnetconf:19` tells you the image has been built and given the tag `dotnetconf:19` - which is just the image name.

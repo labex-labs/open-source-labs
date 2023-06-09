@@ -16,3 +16,13 @@ git clone https://github.com/dockersamples/linux_tweet_app
 ## Make sure you have a DockerID
 
 If you do not have a DockerID (a free login used to access Docker Hub), please visit [Docker Hub](https://hub.docker.com) and register for one. You will need this for later steps.
+
+## Run some simple Docker containers
+
+There are different ways to use containers. These include:
+
+1. **To run a single task:** This could be a shell script or a custom app.
+2. **Interactively:** This connects you to the container similar to the way you SSH into a remote server.
+3. **In the background:** For long-running services like websites and databases.
+
+In this lab, you'll try each of those options and see how Docker manages the workload.

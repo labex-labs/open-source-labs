@@ -1,22 +1,14 @@
-# Show members of swarm
+# Creating services
 
-Type the below command in the first terminal:
+The next step is to create a service and list out the services. This creates a single service called `web` that runs the latest nginx, type the below commands in the first terminal:
 
 ```bash
-docker node ls
+docker service create -p 80:80 --name web nginx:latest
+docker service ls
 ```
 
-That last line will show you a list of all the nodes, something like this:
+You can check that nginx is running by executing the following command:
 
-```
-ID                           HOSTNAME  STATUS  AVAILABILITY  MANAGE
-R STATUS
-kytp4gq5mrvmdbb0qpifdxeiv *  node1     Ready   Active        Leader
-lz1j4d6290j8lityk4w0cxls5    node2     Ready   Active
-```
-
-If you try to execute an administrative command in a non-leader node `worker`, you'll get an error. Try it here:
-
-```.term2
-docker node ls
+```bash
+curl http://localhost:80
 ```

@@ -1,43 +1,56 @@
-# Init your swarm
-
-Let's create a Docker Swarm first. Open up the first instance and initiate Swarm mode cluster.
+# Creating WordPress service
 
 ```bash
-docker swarm init --advertise-addr $(hostname -i)
+docker service create \
+           --replicas 4 \
+           --name wordpressapp \
+           --network net1 \
+           --env WORDPRESS_DB_HOST=wordpressdb \
+           --env WORDPRESS_DB_PASSWORD=mysql123 \
+          wordpress:latest
 ```
 
-This node becomes a master node. The output displays a command to add a worker node to this swarm as shown below:
+The above command creates a service named "wordpressapp" which belongs to "net1" network which runs 4 copies of wordpressapp container.
+As output, this command displays a service ID as:
 
 ```
-Swarm initialized: current node (xf323rkhg80qy2pywkjkxqusp) is now a manager.
-
-To add a worker to this swarm, run the following command:
-
-    docker swarm join \
-    --token SWMTKN-1-089phhmfamjor1o1qj8s0l4wdhyvegphg6vtt9p3s8c35upltk-eecvhhtz1f2vpjhvc70v6v
-vzb \
-    10.0.50.3:2377
-
-To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructi
-ons.
+m4hca6rliz8wer2aojayv01r5
 ```
 
-The above token ID is unique for every swarm mode cluster and hence might differ for your setup.
-From the output above, copy the join command (_watch out for newlines_).
+Listing out the services:
 
-Next, Open up the new instance and paste the below command. This should join the new node to the swarm mode cluster and this new node becomes a worker node. In my case, the command would look something like this:
-
-```
- docker swarm join \
-    --token SWMTKN-1-089phhmfamjor1o1qj8s0l4wdhyvegphg6vtt9p3s8c35upltk-eecvhhtz1f2vpjhvc70v6v
-vzb \
-    10.0.50.3:2377
+```bash
+docker service ls
 ```
 
 Output:
 
 ```
-$ docker swarm join --token SWMTKN-1-089phhmfamjor1o1qj8s0l4wdhyvegphg6vtt9p3s8c35upltk-eecvhh
-tz1f2vpjhvc70v6vvzb 10.0.50.3:2377
-This node joined a swarm as a worker.
+ID                  NAME                MODE                REPLICAS            IMAGE
+ID                  NAME                MODE                REPLICAS            IMAGE
+ip9a8zl9rke2        wordpressdb         replicated          1/1                 mysql:latest
+m4hca6rliz8w        wordpressapp        replicated          4/4                 wordpress:late
+st
+```
+
+You can list the tasks of the wordpressapp service using the command:
+
+```bash
+docker service ps wordpressapp
+```
+
+Output:
+
+```
+ID                  NAME                IMAGE               NODE                DESIRED STATE
+      CURRENT STATE                ERROR               PORTS
+zg7wpvs1rbki        wordpressapp.1      wordpress:latest    node2               Running
+      Running 58 seconds ago
+8rybe5m4urik        wordpressapp.2      wordpress:latest    node1               Running
+      Running about a minute ago
+scia4v5i1znj        wordpressapp.3      wordpress:latest    node2               Running
+      Running 58 seconds ago
+4avyixggcb8n        wordpressapp.4      wordpress:latest    node1               Running
+      Running about a minute ago
+
 ```

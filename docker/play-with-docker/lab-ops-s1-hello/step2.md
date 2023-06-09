@@ -1,17 +1,23 @@
-# 1.0 Running your first container
+# Docker Images
 
-It's time to get your hands dirty! As with all things technical, a "hello world" app is good place to start. Type or click the code below to run your first Docker container:
+In this rest of this lab, you are going to run an [Alpine Linux](http://www.alpinelinux.org/) container. Alpine is a lightweight Linux distribution so it is quick to pull down and run, making it a popular starting point for many other images.
+
+To get started, let's run the following in our terminal:
 
 ```bash
-docker container run hello-world
+docker image pull alpine
 ```
 
-That's it: your first container. The _hello-world_ container output tells you a bit about what just happened. Essentially, the Docker engine running in your terminal tried to find an **image** named hello-world. Since you just got started there are no images stored locally (`Unable to find image...`) so Docker engine goes to its default **Docker registry**, which is [Docker Hub](https://hub.docker.com), to look for an image named "hello-world". It finds the image there, pulls it down, and then runs it in a container. And hello-world's only function is to output the text you see in your terminal, after which the container exits.
+The `pull` command fetches the alpine **image** from the **Docker registry** and saves it in our system. In this case the registry is **[Docker Hub](https://hub.docker.com)**. You can change the registry, but that's a different lab.
 
-![Hello world explainer](/images/ops-basics-hello-world.svg)
+You can use the `docker image` command to see a list of all images on your system.
 
-If you are familiar with VMs, you may be thinking this is pretty much just like running a virtual machine, except with a central repository of VM images. And in this simple example, that is basically true. But as you go through these exercises you will start to see important ways that Docker and containers differ from VMs. For now, the simple explanation is this:
+```bash
+docker image ls
+```
 
-- The VM is a _hardware_ abstraction: it takes physical CPUs and RAM from a host, and divides and shares it across several smaller virtual machines. There is an OS and application running inside the VM, but the virtualization software usually has no real knowledge of that.
-- A container is an _application_ abstraction: the focus is really on the OS and the application, and not so much the hardware abstraction.
-  Many customers actually use both VMs and containers today in their environments and, in fact, may run containers inside of VMs.
+```
+REPOSITORY              TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+alpine                 latest              c51f86c28340        4 weeks ago         1.109 MB
+hello-world             latest              690ed74de00f        5 months ago        960 B
+```

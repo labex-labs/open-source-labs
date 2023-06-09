@@ -1,9 +1,9 @@
-# Step 2: Link Extractor Module with Full URI and Anchor Text
+# Step 3: Link Extractor API Service
 
-Checkout the `step2` branch and list files in it.
+Checkout the `step3` branch and list files in it.
 
 ```bash
-git checkout step2
+git checkout step3
 tree
 ```
 
@@ -11,113 +11,142 @@ tree
 .
 ├── Dockerfile
 ├── README.md
-└── linkextractor.py
+├── linkextractor.py
+├── main.py
+└── requirements.txt
 
-0 directories, 3 files
+0 directories, 5 files
 ```
 
-In this step the `linkextractor.py` script is updated with the following functional changes:
+The following changes have been made in this step:
 
-- Paths are normalized to full URLs
-- Reporting both links and anchor texts
-- Usable as a module in other scripts
+- Added a server script `main.py` that utilizes the link extraction module written in the last step
+- The `Dockerfile` is updated to refer to the `main.py` file instead
+- Server is accessible as a WEB API at `http://<hostname>[:<prt>]/api/<url>`
+- Dependencies are moved to the `requirements.txt` file
+- Needs port mapping to make the service accessible outside of the container (the `Flask` server used here listens on port `5000` by default)
 
-Let's have a look at the updated script:
+Let's first look at the `Dockerfile` for changes:
 
 ```bash
-cat linkextractor.py
+cat Dockerfile
+```
+
+```dockerfile
+FROM       python:3
+LABEL      maintainer="Sawood Alam <@ibnesayeed>"
+
+WORKDIR    /app
+COPY       requirements.txt /app/
+RUN        pip install -r requirements.txt
+
+COPY       *.py /app/
+RUN        chmod a+x *.py
+
+CMD        ["./main.py"]
+```
+
+Since we have started using `requirements.txt` for dependencies, we no longer need to run `pip install` command for individual packages.
+The `ENTRYPOINT` directive is replaced with the `CMD` and it is referring to the `main.py` script that has the server code it because we do not want to use this image for one-off commands now.
+
+The `linkextractor.py` module remains unchanged in this step, so let's look into the newly added `main.py` file:
+
+```bash
+cat main.py
 ```
 
 ```py
 #!/usr/bin/env python
 
-import sys
-import requests
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+from flask import Flask
+from flask import request
+from flask import jsonify
+from linkextractor import extract_links
 
-def extract_links(url):
-    res = requests.get(url)
-    soup = BeautifulSoup(res.text, "html.parser")
-    base = url
-    # TODO: Update base if a <base> element is present with the href attribute
-    links = []
-    for link in soup.find_all("a"):
-        links.append({
-            "text": " ".join(link.text.split()) or "[IMG]",
-            "href": urljoin(base, link.get("href"))
-        })
-    return links
+app = Flask(__name__)
 
-if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("\nUsage:\n\t{} <URL>\n".format(sys.argv[0]))
-        sys.exit(1)
-    for link in extract_links(sys.argv[-1]):
-        print("[{}]({})".format(link["text"], link["href"]))
+@app.route("/")
+def index():
+    return "Usage: http://<hostname>[:<prt>]/api/<url>"
+
+@app.route("/api/<path:url>")
+def api(url):
+    qs = request.query_string.decode("utf-8")
+    if qs != "":
+        url += "?" + qs
+    links = extract_links(url)
+    return jsonify(links)
+
+app.run(host="0.0.0.0")
 ```
 
-The link extraction logic is abstracted into a function `extract_links` that accepts a URL as a parameter and returns a list of objects containing anchor texts and normalized hyperlinks.
-This functionality can now be imported into other scripts as a module (which we will utilize in the next step).
+Here, we are importing `extract_links` function from the `linkextractor` module and converting the returned list of objects into a JSON response.
 
-Now, let's build a new image and see these changes in effect:
+It's time to build a new image with these changes in place:
 
 ```bash
-docker image build -t linkextractor:step2 .
+docker image build -t linkextractor:step3 .
 ```
 
-We have used a new tag `linkextractor:step2` for this image so that we don't overwrite the image from the `step1` to illustrate that they can co-exist and containers can be run using either of these images.
+Then run the container in detached mode (`-d` flag) so that the terminal is available for other commands while the container is still running.
+Note that we are mapping the port `5000` of the container with the `5000` of the host (using `-p 5000:5000` argument) to make it accessible from the host.
+We are also assigning a name (`--name=linkextractor`) to the container to make it easier to see logs and kill or remove the container.
 
 ```bash
-docker image ls
+docker container run -d -p 5000:5000 --name=linkextractor linkextractor:step3
 ```
 
-```
-REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
-linkextractor       step2               be2939eada96        3 seconds ago        931MB
-linkextractor       step1               673d045a822f        About a minute ago   931MB
-python              3                   a9d071760c82        2 weeks ago          923MB
-```
-
-Running a one-off container using the `linkextractor:step2` image should now yield an improved output:
+If things go well, we should be able to see the container being listed in `Up` condition:
 
 ```bash
-docker container run -it --rm linkextractor:step2 https://training.play-with-docker.com/
+docker container ls
 ```
 
 ```
-[Play with Docker classroom](https://training.play-with-docker.com/)
-[About](https://training.play-with-docker.com/about/)
-[IT Pros and System Administrators](https://training.play-with-docker.com/#ops)
-[Developers](https://training.play-with-docker.com/#dev)
-[Stage 1: The Basics](https://training.play-with-docker.com/ops-stage1)
-[Stage 2: Digging Deeper](https://training.play-with-docker.com/ops-stage2)
-[Stage 3: Moving to Production](https://training.play-with-docker.com/ops-stage3)
-[Stage 1: The Basics](https://training.play-with-docker.com/dev-stage1)
-[Stage 2: Digging Deeper](https://training.play-with-docker.com/dev-stage2)
-[Stage 3: Moving to Staging](https://training.play-with-docker.com/dev-stage3)
-[Full list of individual labs](https://training.play-with-docker.com/alacart)
-[[IMG]](https://twitter.com/intent/tweet?text=Play with Docker Classroom&url=https://training.play-with-docker.com/&via=docker&related=docker)
-[[IMG]](https://facebook.com/sharer.php?u=https://training.play-with-docker.com/)
-[[IMG]](https://plus.google.com/share?url=https://training.play-with-docker.com/)
-[[IMG]](http://www.linkedin.com/shareArticle?mini=true&url=https://training.play-with-docker.com/&title=Play%20with%20Docker%20Classroom&source=https://training.play-with-docker.com)
-[[IMG]](https://2018.dockercon.com/)
-[DockerCon 2018 in San Francisco](https://2018.dockercon.com/)
-[training.docker.com](https://success.docker.com/training/)
-[Register here](https://community.docker.com/registrations/groups/4316)
-[Docker, Inc.](https://docker.com)
-[[IMG]](https://www.docker.com)
-[[IMG]](https://www.facebook.com/docker.run)
-[[IMG]](https://twitter.com/docker)
-[[IMG]](https://www.github.com/play-with-docker/play-with-docker.github.io)
+CONTAINER ID        IMAGE                 COMMAND             CREATED             STATUSPORTS                    NAMES
+d69c0150a754        linkextractor:step3   "./main.py"         9 seconds ago       Up 8 seconds0.0.0.0:5000->5000/tcp   linkextractor
 ```
 
-Running a container using the previous image `linkextractor:step1` should still result in the old output:
+We can now make an HTTP request in the form `/api/<url>` to talk to this server and fetch the response containing extracted links:
 
 ```bash
-docker container run -it --rm linkextractor:step1 https://training.play-with-docker.com/
+curl -i http://localhost:5000/api/http://example.com/
 ```
 
-So far, we have learned how to containerize a script with its necessary dependencies to make it more portable.
-We have also learned how to make changes in the application and build different variants of Docker images that can co-exist.
-In the next step we will build a web service that will utilize this script and will make the service run inside a Docker container.
+```json
+HTTP/1.0 200 OK
+Content-Type: application/json
+Content-Length: 78
+Server: Werkzeug/0.14.1 Python/3.7.0
+Date: Sun, 23 Sep 2018 20:52:56 GMT
+
+[{"href":"http://www.iana.org/domains/example","text":"More information..."}]
+```
+
+Now, we have the API service running that accepts requests in the form `/api/<url>` and responds with a JSON containing hyperlinks and anchor texts of all the links present in the web page at give `<url>`.
+
+Since the container is running in detached mode, so we can't see what's happening inside, but we can see logs using the name `linkextractor` we assigned to our container:
+
+```bash
+docker container logs linkextractor
+```
+
+```
+* Serving Flask app "main" (lazy loading)
+* Environment: production
+  WARNING: Do not use the development server in a production environment.
+  Use a production WSGI server instead.
+* Debug mode: off
+* Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+172.17.0.1 - - [23/Sep/2018 20:52:56] "GET /api/http://example.com/ HTTP/1.1" 200 -
+```
+
+We can see the messages logged when the server came up, and an entry of the request log when we ran the `curl` command.
+Now we can kill and remove this container:
+
+```bash
+docker container rm -f linkextractor
+```
+
+In this step we have successfully ran an API service listening on port `5000`.
+This is great, but APIs and JSON responses are for machines, so in the next step we will run a web service with a human-friendly web interface in addition to this API service.

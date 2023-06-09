@@ -1,94 +1,68 @@
-# Image creation from a container
+# Image creation using a Dockerfile
 
-Let's start by running an interactive shell in a ubuntu container:
+Instead of creating a static binary image, we can use a file called a _Dockerfile_ to create an image. The final result is essentially the same, but with a Dockerfile we are supplying the instructions for building the image, rather than just the raw binary files. This is useful because it becomes much easier to manage changes, especially as your images get bigger and more complex.
+
+For example, if a new version of figlet is released we would either have to re-create our image from scratch, or run our image and upgrade the installed version of figlet. In contrast, a Dockerfile would include the `apt-get` commands we used to install figlet so that we - or anybody using the Dockerfile - could simply recompose the image using those instructions.
+
+It is kind of like the old adage:
+
+> _Give a sysadmin an image and their app will be up-to-date for a day, give a sysadmin a Dockerfile and their app will always be up-to-date_.
+
+Ok, maybe that's a bit of a stretch but Dockerfiles are powerful because they allow us to manage _how_ an image is built, rather than just managing binaries. In practice, Dockerfiles can be managed the same way you might manage source code: they are simply text files so almost any version control system can be used to manage Dockerfiles over time.
+
+We will use a simple example in this section and build a "hello world" application in Node.js. Do not be concerned if you are not familiar with Node.js: Docker (and this exercise) does not require you to know all these details.
+
+We will start by creating a file in which we retrieve the hostname and display it.
+NOTE: You should be at the Docker host's command line (`$`). If you see a command line that looks similar to `root@abcd1234567:/#` then you are probably still inside your ubuntu container from the previous exercise. Type `exit` to return to the host command line.
+
+Type the following content into a file named _index.js_. You can use vi, vim or several other Linux editors in this exercise. If you need assistance with the Linux editor commands to do this follow this footnote[^2].
+
+```
+var os = require("os");
+var hostname = os.hostname();
+console.log("hello from " + hostname);
+```
+
+The file we just created is the javascript code for our server. As you can probably guess, Node.js will simply print out a "hello" message. We will Docker-ize this application by creating a Dockerfile. We will use **alpine** as the base OS image, add a Node.js runtime and then copy our source code in to the container. We will also specify the default command to be run upon container creation.
+
+Create a file named _Dockerfile_ and copy the following content into it. Again, help creating this file with Linux editors is here [^3].
+
+```dockerfile
+FROM alpine
+RUN apk update && apk add nodejs
+COPY . /app
+WORKDIR /app
+CMD ["node","index.js"]
+```
+
+Let's build our first image out of this Dockerfile and name it _hello:v0.1_:
 
 ```bash
-docker container run -ti ubuntu bash
+docker image build -t hello:v0.1 .
 ```
 
-As you know from earlier labs, you just grabbed the image called "ubuntu" from Docker Store and are now running the bash shell inside that container.[^1]
+This is what you just completed:
+![build container from dockerfile](/images/ops-images-dockerfile.svg)
 
-To customize things a little bit we will install a package called [figlet](http://www.figlet.org "make large letters out of ordinary text") in this container. Your container should still be running so type the following commands at your ubuntu container command line:
+We then start a container to check that our applications runs correctly:
 
 ```bash
-apt-get update
-apt-get install -y figlet
-figlet "hello docker"
+docker container run hello:v0.1
 ```
 
-You should see the words "hello docker" printed out in large ascii characters on the screen. Go ahead and exit from this container
-
-```bash
-exit
-```
-
-Now let us pretend this new figlet application is quite useful and you want to share it with the rest of your team. You _could_ tell them to do exactly what you did above and install figlet in to their own container, which is simple enough in this example. But if this was a real world application where you had just installed several packages and run through a number of configuration steps the process could get cumbersome and become quite error prone. Instead, it would be easier to create an _image_ you can share with your team.
-
-To start, we need to get the ID of this container using the ls command (do not forget the -a option as the non running container are not returned by the ls command).
-
-```bash
-docker container ls -a
-```
-
-Before we create our own image, we might want to inspect all the changes we made. Try typing the command `docker container diff <container ID>` for the container you just created. You should see a list of all the files that were added to or changed in the container when you installed figlet. Docker keeps track of all of this information for us. This is part of the _layer_ concept we will explore in a few minutes.
-
-Now, to create an image we need to "commit" this container. Commit creates an image locally on the system running the Docker engine. Run the following command, using the container ID you retrieved, in order to commit the container and create an image out of it.
+You should then have an output similar to the following one (the ID will be different though).
 
 ```
-docker container commit CONTAINER_ID
+hello from 92d79b6de29f
 ```
 
-That's it - you have created your first image! Once it has been commited, we can see the newly created image in the list of available images.
+**What just happened?**
+We created two files: our application code (index.js) is a simple bit of javascript code that prints out a message. And the Dockerfile is the instructions for Docker engine to create our custom container. This Dockerfile does the following:
 
-```bash
-docker image ls
-```
+1. Specifies a base image to pull **FROM** - the _alpine_ image we used in earlier labs.
+2. Then it **RUN**s two commands (_apk update_ and _apk add_) inside that container which installs the Node.js server.
+3. Then we told it to **COPY** files from our working directory in to the container. The only file we have right now is our _index.js_.
+4. Next we specify the **WORKDIR** - the directory the container should use when it starts up
+5. And finally, we gave our container a command (**CMD**) to run when the container starts.
 
-You should see something like this:
-
-```
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-<none>              <none>              a104f9ae9c37        46 seconds ago      160MB
-ubuntu              latest              14f60031763d        4 days ago          120MB
-```
-
-Note that the image we pulled down in the first step (ubuntu) is listed here along with our own custom image. Except our custom image has no information in the REPOSITORY or TAG columns, which would make it tough to identify exactly what was in this container if we wanted to share amongst multiple team members.
-
-Adding this information to an image is known as _tagging_ an image. From the previous command, get the ID of the newly created image and tag it so it's named **ourfiglet**:
-
-```
-docker image tag <IMAGE_ID> ourfiglet
-docker image ls
-```
-
-Now we have the more friendly name "ourfiglet" that we can use to identify our image.
-
-```
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-ourfiglet           latest              a104f9ae9c37        5 minutes ago       160MB
-ubuntu              latest              14f60031763d        4 days ago          120MB
-```
-
-Here is a graphical view of what we just completed:
-![commit container to image](/images/ops-images-commit.svg)
-
-Now we will run a container based on the newly created _ourfiglet_ image:
-
-```bash
-docker container run ourfiglet figlet hello
-```
-
-As the figlet package is present in our _ourfiglet_ image, the command returns the following output:
-
-```
- _          _ _
-| |__   ___| | | ___
-| '_ \ / _ \ | |/ _ \
-| | | |  __/ | | (_) |
-|_| |_|\___|_|_|\___/
-
-```
-
-This example shows that we can create a container, add all the libraries and binaries in it and then commit it in order to create an image. We can then use that image just as we would for images pulled down from the Docker Store. We still have a slight issue in that our image is only stored locally. To share the image we would want to _push_ the image to a registry somewhere. This is beyond the scope of this lab (and you should not enter any personal login information in these labs) but you can get a free Docker ID, run these labs, and push to the [Docker Community Hub](https://hub.docker.com/) from your own system using [Docker for Windows](https://www.docker.com/docker-windows) or [Docker for Mac](https://www.docker.com/docker-mac) if you want to try this out.
-
-As mentioned above, this approach of manually installing software in a container and then committing it to a custom image is just one way to create an image. It works fine and is quite common. However, there is a more powerful way to create images. In the following exercise we will see how images are created using a _Dockerfile_, which is a text file that contains all the instructions to build an image.
+Recall that in previous labs we put commands like `echo "hello world"` on the command line. With a Dockerfile we can specify precise commands to run for everyone who uses this container. Other users do not have to build the container themselves once you push your container up to a repository (which we will cover later) or even know what commands are used. The _Dockerfile_ allows us to specify _how_ to build a container so that we can repeat those steps precisely everytime and we can specify _what_ the container should do when it runs. There are actually multiple methods for specifying the commands and accepting parameters a container will use, but for now it is enough to know that you have the tools to create some pretty powerful containers.

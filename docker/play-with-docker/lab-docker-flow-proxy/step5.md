@@ -1,50 +1,100 @@
-# Bonus
+# Deploy a Microservice Application
 
-We can add a Swarm visualizer service :
+We have see how we can leverage Docker labels to dynamically customize our LoadBalancing routing rules, and how docker-compose can be used to create and link services together.
 
-```bash
-cat <<EOF > visualizer.yml
-version: "3"
+Now let's try to launch a **more complicated** Microservice application.
 
-services:
-  visu:
-    image: dockersamples/visualizer
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
-    networks:
-      - proxy_public
-    ports:
-      - 81:8080
-    deploy:
-      replicas: 1
-      placement:
-        constraints: [node.role == manager]
-      restart_policy:
-        condition: on-failure
+We will uses **Docker's vote** microservice application with custom labels to be used within our Docker Flow Proxy loadbalancer.
 
-networks:
-  proxy_public:
-    external: true
+<img src="https://github.com/allamand/example-voting-app/raw/master/proxy_voting.png" width="600">
 
-EOF
-```
+The voting application is composed of :
 
-#### launch the container
+- A Python webapp which lets you vote between two options
+- A Redis queue which collects new votes
+- A Java worker which consumes votes and stores them in…
+- A Postgres database backed by a Docker volume
+- A Node.js webapp which shows the results of the voting in real time
+
+## Run voting microservice application
+
+First you need to Retrieve voting-app application
 
 ```bash
-docker stack deploy visu --compose-file visualizer.yml
+git clone https://github.com/allamand/example-voting-app.git
 ```
+
+Go to the stack directory
 
 ```bash
-docker service ps visu_visu
+cd example-voting-app
 ```
 
-> wait few second for the service to start
+and launch the app using docker-compose file, you can view the **docker-compose-flow-proxy.yml** file
 
-We can now target directly the port 81 of our swarm cluster and docker will direclty reach our Visualizer service
+```bash
+docker stack deploy cloud -c docker-compose-flow-proxy.yml
+```
 
-- [Link to Visualizer service](/){:data-term=".term1"}{:data-port="81"}
+> This command will build each part of the microservice from sources.
+> It may take a little time to get all services up & running (time to download images..)
+> You can take a coffee since this may take a little to finish ;
 
-This should be something like :
+### Rewriting Paths
 
-![](./assets/visualizer.png)
+In this example, we need the incoming requests that starts with `/vote/` or `/result/` to be routed to the according services by the proxy.
+But each of our service needs traffic to be send on `/`, so we need the Proxy to **rewrite** the Path while sending the request.
+
+For that we are using specific docker-flow labels `reqPathSearch` and `reqPathReplace`:
+
+```
+      labels:
+        - com.df.notify=true
+        - com.df.distribute=true
+        - com.df.servicePath=/vote/
+        - com.df.reqPathSearch=/vote/
+        - com.df.reqPathReplace=/
+        - com.df.port=80
+
+```
+
+To monitor the setup state, you can use:
+
+```bash
+docker stack ps cloud
+```
+
+> Be carreful, the Output shows two state columns :
+
+> - **Desired State** which represents what you are asking to swarm
+> - **Current State** which is the current state of the container (which may be stuck in Preparing for a moment while downloading the images).
+
+Once all containers are in the **Running** state, you can start test the application.
+
+While the application is working you can take a look at the docker-compose file we are deploying :
+
+```bash
+cat docker-compose-flow-proxy.yml
+```
+
+We can view the updated configuration on the proxy API
+
+```bash
+curl http://localhost:8080/v1/docker-flow-proxy/config
+```
+
+### You can now make your Vote!!
+
+- [Link to vote service](/vote/){:data-term=".term1"}{:data-port="80"}
+
+### And See the results of votes
+
+- [Link to result service](/result/){:data-term=".term1"}{:data-port="80"}
+
+You can see the logs of the services :
+
+```bash
+docker service logs --tail=10 cloud_vote
+```
+
+> You are now able to deploy any stack on Docker Swarm Mode using docker-compose and **Docker Flow Proxy**!

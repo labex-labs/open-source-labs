@@ -1,17 +1,30 @@
-# Understanding Image Names
+# Pushing and Pulling from the Local Registry
 
-Typically we work with images from Docker Store, which is the default registry for Docker. Commands using just the image repository name work fine, like this:
+Docker uses the hostname from the full image name to determine which registry to use. We can build images and include the local registry hostname in the image tag, or use the `docker tag` command to add a new tag to an existing image.
+
+These commands pull a public image from Docker Store, tag it for use in the private registry with the full name `127.0.0.1:5000/hello-world`, and then push it to the registry:
 
 ```bash
-docker pull hello-world
+docker tag hello-world 127.0.0.1:5000/hello-world
+docker push 127.0.0.1:5000/hello-world
 ```
 
-`hello-world` is the repository name, which we are using as a short form of the full image name. The full name is `docker.io/hello-world:latest`. That breaks down into three parts:
+When you push the image to your local registry, you'll see similar output to when you push a public image to the Hub:
 
-- `docker.io` - the hostname of the registry which stores the image;
-- `hello-world` - the repository name, in this case in `{imageName}` format;
-- `latest` - the image tag.
+```
+The push refers to a repository [127.0.0.1:5000/hello-world]
+a55ad2cda2bf: Pushed
+cfbe7916c207: Pushed
+fe4c16cbf7a4: Pushed
+latest: digest: sha256:79e028398829da5ce98799e733bf04ac2ee39979b238e4b358e321ec549da5d6 size: 948
+```
 
-If a tag isn't specified, then the default `latest` is used. If a registry hostname isn't specified then the default `docker.io` for Docker Store is used. If you want to use images with any other registry, you need to explicitly specify the hostname - the default is always Docker Store.
+On your machine, you can remove the new image tag and the original image, and pull it again from the local registry to verify it was correctly stored:
 
-With a local registry, the hostname and the custom port used by the registry is the full registry address, e.g. `127.0.0.1:5000`. In this sample we'll just be using `127.0.0.1:5000` as that's already been added to the daemon.
+```bash
+docker rmi 127.0.0.1:5000/hello-world
+docker rmi hello-world
+docker pull 127.0.0.1:5000/hello-world
+```
+
+That exercise shows the registry works correctly, but at the moment it's not very useful because all the image data is stored in the container's writable storage area, which will be lost when the container is removed. To store the data outside of the container, we need to mount a host directory when we start the container.

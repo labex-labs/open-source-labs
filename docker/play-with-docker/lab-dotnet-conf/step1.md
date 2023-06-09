@@ -1,13 +1,25 @@
-# Welcome to Docker's [.NET Conf](https://www.dotnetconf.net) challenge!
+# Grab the code
 
-This lab gets you using .NET Core in Docker containers. You'll experience compiling code, packaging apps and running containers, using the latest .NET Core 3.0 release.
+The Play-with-Docker environment is already set up with Docker and Git, so you're good to go.
 
-> **Difficulty**: Beginner (assumes no familiarity with Docker)
+## Clone the source code from GitHub
 
-> **Time**: Approximately 5 minutes
+Clone the application source into your local session:
 
-> **Tasks**:
+> Just click the text in these boxes to send the command to your terminal
 
-> - [Task 1: Grab the code](#Task_1)
-> - [Task 2: Build the application image](#Task_2)
-> - [Task 3: Run a .NET Core container!](#Task_3)
+```bash
+git clone https://github.com/dockersamples/dotnetconf19.git
+```
+
+Now browse to the source code folder `dotnetconf19`:
+
+```bash
+cd dotnetconf19
+```
+
+In there you'll see a folder called `src` which contains the .NET code and a file called `Dockerfile` whch contains the instructions to build and package the app:
+
+```bash
+ls
+```

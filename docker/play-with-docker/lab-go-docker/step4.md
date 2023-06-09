@@ -13,7 +13,7 @@ libraries.
 
 How do we work around that?
 
-### Re-using another distro's libc
+## Re-using another distro's libc
 
 One solution is to use a base image that _has_ the essential
 libraries needed by those Go programs to function. Almost any
@@ -27,7 +27,7 @@ Note: you _cannot_ use Alpine
 in that case, since Alpine is using the musl library instead
 of the GNU libc.
 
-### Bring your own libc
+## Bring your own libc
 
 Another solution is to surgically extract the files needed,
 and place them in your container with `COPY`. The resulting
@@ -38,7 +38,7 @@ dirty job, and they would rather not go into more details.
 If you want to see for yourself, look around `ldd` and the
 Name Service Switch plugins mentioned earlier.
 
-### Producing static binaries with `netgo`
+## Producing static binaries with `netgo`
 
 We can also instruct Go to _not_ use the system's libc, and
 substitute Go's `netgo` library, which comes with a native

@@ -1,38 +1,33 @@
-# Task 0: Prerequisites
+# Run v1 of the app in a container
 
-You will need:
+The first version of the application uses a single container, running the Node.js application, and the data is only stored on the client's browser.
 
-- a copy of the application source code
-- a Docker ID
-
-### Clone the source code from GitHub
-
-Use the following command to clone the application source code from GitHub (you can click the command or manually type it). This will make a copy of the lab's repo in a new sub-directory called `node-bulletin-board`.
+Switch to the `v1` source code branch:
 
 ```bash
-git clone https://github.com/dockersamples/node-bulletin-board.git
+git checkout v1
 ```
 
-And browse to the source code folder:
+Now build the Docker image, which uses this [Dockerfile](https://github.com/dockersamples/node-bulletin-board/blob/v1/bulletin-board-app/Dockerfile) to package the source code on top of the official Node.js image:
 
 ```bash
-cd node-bulletin-board
+docker image build --tag $dockerId/bb-app:v1 --file bulletin-board-app/Dockerfile ./bulletin-board-app
 ```
 
-### Save your Docker ID
-
-You need a Docker ID to push your images to Docker Hub. If you don't have one, [create a free Docker ID at Docker Hub](https://hub.docker.com).
-
-Now save your Docker ID in an environment variable - **you need to type this command manually with your own Docker ID**:
-
-```
-export dockerId='your-docker-id'
-```
-
-> Be sure to use your own Docker ID. Mine is `sixeyed`, so the command I run is `export dockerId='sixeyed'`.
-
-Check your Docker ID gets displayed when you read the variable:
+When that completes you will have version 1 of the app in an image stored locally. Run a container from that image to start the app:
 
 ```bash
-echo $dockerId
+docker container run --detach --publish 8080:8080 $dockerId/bb-app:v1
 ```
+
+Docker will start a container from the application image, which runs `npm start` to start the app. You can browse to the application on port 8080:
+
+[Click here for v1 of the app](/){:data-term=".term1"}{:data-port="8080"}
+
+You'll see the bulletin board application, and you can add and remove events:
+
+![Bulletin Board sample app](../images/node-sql-server-docker-bulletin-board.jpg)
+
+If you make some changes and refresh the browser, you'll see your changes get lost. That's because the events are only stored in memory on the client.
+
+In the next step you'll fix that.

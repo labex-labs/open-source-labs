@@ -1,47 +1,84 @@
-# Image Inspection
+# Filesystem exploration
 
-As we have already seen with containers, and as we will see with other Docker's components (volume, network, ...), the **inspect** command is available for the image API and it returns all the information of the image provided.
-
-The alpine image should already be present locally, if it's not, run the following command to pull it.
+We first stop and remove all containers from your host (you might not be able to remove images if containers are using some of the layers).
 
 ```bash
-docker image pull alpine
+docker container stop $(docker container ls -aq)
+docker container rm $(docker container ls -aq)
 ```
 
-Once we are sure it is there let's inspect it.
+Note: containers can also be removed in a non graceful way:
+
+```
+docker container rm -f $(docker container ls -aq)
+```
+
+We also remove all the images
 
 ```bash
-docker image inspect alpine
+docker image rm $(docker image ls -q)
 ```
 
-There is a lot of information in there:
-
-- the layers the image is composed of
-- the driver used to store the layers
-- the architecture / os it has been created for
-- metadata of the image
-- ...
-
-We will not go into all the details now but it's interesing to see an example of the Go template notation that enables to extract the part of information we need in just a simple command.
-
-Let's get the list of layers (only one for alpine)
+We will now have a look inside the **/var/lib/docker/overlay2** folder where the image and container layers are stored.
 
 ```bash
-docker image inspect --format "{{ "{{ json .RootFS.Layers "}}}}" alpine | python -m json.tool
+ls /var/lib/docker/overlay2
 ```
 
-```
-[
-    "sha256:60ab55d3379d47c1ba6b6225d59d10e1f52096ee9d5c816e42c635ccc57a5a2b"
-]
-```
+As we do not have any images yet, there should not be anything in this folder.
 
-Let's try another example to query only the Architecture information
+Let's pull an nginx image
 
 ```bash
-docker image inspect --format "{{ "{{ .Architecture "}}}}" alpine
+docker image pull nginx
 ```
 
-This should return **amd64**.
+You should get something like the following where we can see that 3 layers are pulled.
 
-Feel free to play with the Go template format and get familiar with it as it's really handy.
+```
+Using default tag: latest
+latest: Pulling from library/nginx
+5040bd298390: Pull complete
+d7a91cdb22f0: Pull complete
+9cac4850e5df: Pull complete
+Digest: sha256:33ff28a2763feccc1e1071a97960b7fef714d6e17e2d0ff573b74825d0049303
+Status: Downloaded newer image for nginx:latest
+```
+
+If we have a look to the changes that occurs in the /var/lib/docker/overlay2 folder
+
+```bash
+ls /var/lib/docker/overlay2
+```
+
+we can see the following:
+
+```
+261fed39e3aca63326758681c96cad5bfe7eeeabafda23408bee0f5ae365d3fd
+28f7998921ca5e4b28231b59b619394ba73571b5127a9c28cc9bacb3db706d2a
+backingFsBlockDev
+c1ae1be1c1c62dbaacf26bb9a5cde02e30d5364e06a437d0626f31c55af82a58
+l
+```
+
+Some folders, with names that looks like hash, were created. Those are the layers which, merged together, build the image filesystem.
+
+Let's run a container based on nginx.
+
+```bash
+docker container run -d nginx
+```
+
+We can now see 2 additional folders (ID, ID-init), those ones correspond to the read-write layer of the running container.
+
+```
+11995e6da1dc5acab33aceacea3656d3795a4fb136c3a65b37d40b97747b5f84
+11995e6da1dc5acab33aceacea3656d3795a4fb136c3a65b37d40b97747b5f84-init
+261fed39e3aca63326758681c96cad5bfe7eeeabafda23408bee0f5ae365d3fd
+28f7998921ca5e4b28231b59b619394ba73571b5127a9c28cc9bacb3db706d2a
+backingFsBlockDev
+c1ae1be1c1c62dbaacf26bb9a5cde02e30d5364e06a437d0626f31c55af82a58
+l
+```
+
+Feel free to go into those folder and explore their filesystems.
