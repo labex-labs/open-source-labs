@@ -2,8 +2,6 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Revised:
-
 To create a shadow box around the text when it is hovered, follow these steps:
 
 1. Set `transform: perspective(1px)` to give the element a 3D space by affecting the distance between the Z plane and the user, and `translateZ(0)` to reposition the `p` element along the z-axis in 3D space.

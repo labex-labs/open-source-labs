@@ -2,8 +2,6 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Revised content:
-
 This code creates a scrollable container that snaps to elements while scrolling. To achieve this effect, the following steps are taken:
 
 1. `display: grid` and `grid-auto-flow: row` are used to create a vertical layout.

@@ -2,7 +2,7 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Here are revised instructions for creating a horizontally scrollable image gallery:
+Here are the instructions for creating a horizontally scrollable image gallery:
 
 1. To position the `.thumbnails` at the bottom of the container, set `position: absolute; bottom: 8px;` for the `.thumbnails` class.
 2. To create a snap effect on horizontal scroll, use `scroll-snap-type: x mandatory` and `overscroll-behavior-x: contain`. Snap elements to the start of the container using `scroll-snap-align: start`.

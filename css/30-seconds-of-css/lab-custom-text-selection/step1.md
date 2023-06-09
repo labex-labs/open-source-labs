@@ -2,7 +2,7 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Revised: To modify the style of selected text, utilize the `::selection` pseudo-selector. Here's an example code snippet to select and style text within a paragraph element:
+To modify the style of selected text, utilize the `::selection` pseudo-selector. Here's an example code snippet to select and style text within a paragraph element:
 
 ```html
 <p class="custom-text-selection">Select some of this text.</p>

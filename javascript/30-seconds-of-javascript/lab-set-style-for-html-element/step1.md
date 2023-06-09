@@ -1,4 +1,4 @@
-# Here's a revised version of the given sentences:
+# Set Style for Element
 
 To set the value of a CSS rule for a specific HTML element, use `HTMLElement.style` and specify the rule and value. For example, you can use the following function to set the style of an element:
 

@@ -2,8 +2,6 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Revised:
-
 To create a border animation on hover, you can use the `::before` and `::after` pseudo-elements to generate two boxes that are `24px` wide and positioned above and below the box. Then, apply the `:hover` pseudo-class to increase the `width` of those elements to `100%` on hover and animate the transition using `transition`.
 
 Here's an example code snippet:

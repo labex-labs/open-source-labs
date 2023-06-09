@@ -13,7 +13,7 @@ To create a progress bar that shows the scroll percentage of a webpage, follow t
 7. In the event listener function, calculate the scroll percentage of the document using the formula `(scrollTop / height) * 100`.
 8. Set the `width` of the `scroll-progress` element to the scroll percentage using the `style` property.
 
-Here is the revised code:
+Here is the code:
 
 ```html
 <div id="scroll-progress"></div>

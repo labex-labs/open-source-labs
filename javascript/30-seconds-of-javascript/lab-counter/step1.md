@@ -1,4 +1,4 @@
-# Revised Counter
+# Counter
 
 To start practicing coding, open the Terminal/SSH and type `node`.
 

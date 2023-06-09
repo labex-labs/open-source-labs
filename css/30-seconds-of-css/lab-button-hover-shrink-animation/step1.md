@@ -2,8 +2,6 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Revised:
-
 To create a shrink animation on hover for an element, you can use an appropriate `transition` property to animate changes and the `:hover` pseudo-class to trigger the animation. For example, if you want to shrink a button with class `button-shrink` when a user hovers over it, you can add the following CSS:
 
 ```css
