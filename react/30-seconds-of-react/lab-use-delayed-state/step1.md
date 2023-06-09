@@ -19,7 +19,7 @@ const useDelayedState = (initialState, condition) => {
     if (!loaded && condition) setState({ state: initialState, loaded: true });
   }, [condition, loaded]);
 
-  const updateState = newState => {
+  const updateState = (newState) => {
     if (!loaded) return;
     setState({ state: newState, loaded });
   };
@@ -40,7 +40,7 @@ const App = () => {
 
   React.useEffect(() => {
     const handle = setTimeout(() => {
-      setBranches(['master', 'staging', 'test', 'dev']);
+      setBranches(["master", "staging", "test", "dev"]);
     }, 2000);
     return () => {
       handle && clearTimeout(handle);
@@ -50,8 +50,8 @@ const App = () => {
   return (
     <div>
       <p>Selected branch: {selectedBranch}</p>
-      <select onChange={e => setSelectedBranch(e.target.value)}>
-        {branches.map(branch => (
+      <select onChange={(e) => setSelectedBranch(e.target.value)}>
+        {branches.map((branch) => (
           <option key={branch} value={branch}>
             {branch}
           </option>
@@ -61,9 +61,7 @@ const App = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

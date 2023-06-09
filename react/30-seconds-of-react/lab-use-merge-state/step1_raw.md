@@ -10,8 +10,8 @@ Creates a stateful value, and a function to update it by merging the new state p
 const useMergeState = (initialState = {}) => {
   const [value, setValue] = React.useState(initialState);
 
-  const mergeState = newState => {
-    if (typeof newState === 'function') newState = newState(value);
+  const mergeState = (newState) => {
+    if (typeof newState === "function") newState = newState(value);
     setValue({ ...value, ...newState });
   };
 
@@ -21,13 +21,13 @@ const useMergeState = (initialState = {}) => {
 
 ```jsx
 const MyApp = () => {
-  const [data, setData] = useMergeState({ name: 'John', age: 20 });
+  const [data, setData] = useMergeState({ name: "John", age: 20 });
 
   return (
     <>
       <input
         value={data.name}
-        onChange={e => setData({ name: e.target.value })}
+        onChange={(e) => setData({ name: e.target.value })}
       />
       <button onClick={() => setData(({ age }) => ({ age: age - 1 }))}>
         -
@@ -40,7 +40,5 @@ const MyApp = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

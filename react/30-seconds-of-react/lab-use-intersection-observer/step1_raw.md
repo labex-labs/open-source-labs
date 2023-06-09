@@ -35,16 +35,13 @@ const MyApp = () => {
 
   return (
     <div>
-      <div style={{ height: '100vh' }}>Scroll down</div>
-      <div style={{ height: '100vh' }} ref={ref}>
-        <p>{onScreen ? 'Element is on screen.' : 'Scroll more!'}</p>
+      <div style={{ height: "100vh" }}>Scroll down</div>
+      <div style={{ height: "100vh" }} ref={ref}>
+        <p>{onScreen ? "Element is on screen." : "Scroll more!"}</p>
       </div>
     </div>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
-
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

@@ -52,7 +52,7 @@ const MyComponent = ({ name }) => {
   return (
     <input
       value={val}
-      onChange={e => {
+      onChange={(e) => {
         setVal(e.target.value);
       }}
     />
@@ -60,13 +60,13 @@ const MyComponent = ({ name }) => {
 };
 
 const MyApp = () => {
-  const [name, setName] = React.useState('my-value');
+  const [name, setName] = React.useState("my-value");
   return (
     <>
       <MyComponent name={name} />
       <input
         value={name}
-        onChange={e => {
+        onChange={(e) => {
           setName(e.target.value);
         }}
       />
@@ -74,7 +74,5 @@ const MyApp = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

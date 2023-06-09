@@ -10,7 +10,7 @@ Checks if the code is running on the browser or the server.
 
 ```jsx
 const isDOMavailable = !!(
-  typeof window !== 'undefined' &&
+  typeof window !== "undefined" &&
   window.document &&
   window.document.createElement
 );
@@ -29,9 +29,9 @@ const useSSR = () => {
     () => ({
       isBrowser: inBrowser,
       isServer: !inBrowser,
-      canUseWorkers: typeof Worker !== 'undefined',
+      canUseWorkers: typeof Worker !== "undefined",
       canUseEventListeners: inBrowser && !!window.addEventListener,
-      canUseViewport: inBrowser && !!window.screen
+      canUseViewport: inBrowser && !!window.screen,
     }),
     [inBrowser]
   );
@@ -44,13 +44,11 @@ const useSSR = () => {
 ```
 
 ```jsx
-const SSRChecker = props => {
+const SSRChecker = (props) => {
   let { isBrowser, isServer } = useSSR();
 
-  return <p>{isBrowser ? 'Running on browser' : 'Running on server'}</p>;
+  return <p>{isBrowser ? "Running on browser" : "Running on server"}</p>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <SSRChecker />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<SSRChecker />);
 ```

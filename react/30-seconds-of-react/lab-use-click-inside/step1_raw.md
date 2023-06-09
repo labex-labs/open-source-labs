@@ -8,15 +8,15 @@ Handles the event of clicking inside the wrapped component.
 
 ```jsx
 const useClickInside = (ref, callback) => {
-  const handleClick = e => {
+  const handleClick = (e) => {
     if (ref.current && ref.current.contains(e.target)) {
       callback();
     }
   };
   React.useEffect(() => {
-    document.addEventListener('click', handleClick);
+    document.addEventListener("click", handleClick);
     return () => {
-      document.removeEventListener('click', handleClick);
+      document.removeEventListener("click", handleClick);
     };
   });
 };
@@ -31,12 +31,12 @@ const ClickBox = ({ onClickInside }) => {
       className="click-box"
       ref={clickRef}
       style={{
-        border: '2px dashed orangered',
+        border: "2px dashed orangered",
         height: 200,
         width: 400,
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       <p>Click inside this element</p>
@@ -44,7 +44,7 @@ const ClickBox = ({ onClickInside }) => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <ClickBox onClickInside={() => alert('click inside')} />
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <ClickBox onClickInside={() => alert("click inside")} />
 );
 ```

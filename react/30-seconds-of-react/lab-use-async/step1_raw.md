@@ -9,15 +9,15 @@ Handles asynchronous calls.
 - Return an object containing the properties of `state` (`value`, `error` and `loading`) and the `run` function.
 
 ```jsx
-const useAsync = fn => {
+const useAsync = (fn) => {
   const initialState = { loading: false, error: null, value: null };
   const stateReducer = (_, action) => {
     switch (action.type) {
-      case 'start':
+      case "start":
         return { loading: true, error: null, value: null };
-      case 'finish':
+      case "finish":
         return { loading: false, error: null, value: action.value };
-      case 'error':
+      case "error":
         return { loading: false, error: action.error, value: null };
     }
   };
@@ -26,11 +26,11 @@ const useAsync = fn => {
 
   const run = async (args = null) => {
     try {
-      dispatch({ type: 'start' });
+      dispatch({ type: "start" });
       const value = await fn(args);
-      dispatch({ type: 'finish', value });
+      dispatch({ type: "finish", value });
     } catch (error) {
-      dispatch({ type: 'error', error });
+      dispatch({ type: "error", error });
     }
   };
 
@@ -39,15 +39,15 @@ const useAsync = fn => {
 ```
 
 ```jsx
-const RandomImage = props => {
-  const imgFetch = useAsync(url =>
-    fetch(url).then(response => response.json())
+const RandomImage = (props) => {
+  const imgFetch = useAsync((url) =>
+    fetch(url).then((response) => response.json())
   );
 
   return (
     <div>
       <button
-        onClick={() => imgFetch.run('https://dog.ceo/api/breeds/image/random')}
+        onClick={() => imgFetch.run("https://dog.ceo/api/breeds/image/random")}
         disabled={imgFetch.isLoading}
       >
         Load image
@@ -67,7 +67,5 @@ const RandomImage = props => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RandomImage />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<RandomImage />);
 ```

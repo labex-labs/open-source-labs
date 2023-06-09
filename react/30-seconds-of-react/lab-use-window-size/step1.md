@@ -24,12 +24,12 @@ const handleResize = () =>
 
 ```jsx
 React.useEffect(() => {
-  window.addEventListener('resize', handleResize);
+  window.addEventListener("resize", handleResize);
 
   handleResize();
 
   return () => {
-    window.removeEventListener('resize', handleResize);
+    window.removeEventListener("resize", handleResize);
   };
 }, []);
 ```
@@ -47,12 +47,12 @@ const useWindowSize = () => {
     setWindowSize({ width: window.innerWidth, height: window.innerHeight });
 
   React.useEffect(() => {
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -73,9 +73,7 @@ const MyApp = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

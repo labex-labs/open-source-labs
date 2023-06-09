@@ -9,7 +9,7 @@ const DataList = ({ data, isOrdered = false }) => {
   const list = data.map((value, index) => (
     <li key={`${index}_${value}`}>{value}</li>
   ));
-  
+
   return isOrdered ? <ol>{list}</ol> : <ul>{list}</ul>;
 };
 ```
@@ -17,14 +17,14 @@ const DataList = ({ data, isOrdered = false }) => {
 Here's an example of how you can use this component:
 
 ```jsx
-const names = ['John', 'Paul', 'Mary'];
-ReactDOM.createRoot(document.getElementById('root')).render(
+const names = ["John", "Paul", "Mary"];
+ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <DataList data={names} />
     <DataList data={names} isOrdered={true} />
   </>
 );
-``` 
+```
 
 In this example, we're passing an array of names to the `DataList` component and rendering it twice. The first time, we're rendering an unordered list, while the second time we're rendering an ordered list.
 

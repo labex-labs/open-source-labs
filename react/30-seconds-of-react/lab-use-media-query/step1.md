@@ -13,7 +13,10 @@ This function checks if the current environment matches a given media query and 
 
 ```jsx
 const useMediaQuery = (query, whenTrue, whenFalse) => {
-  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') {
+  if (
+    typeof window === "undefined" ||
+    typeof window.matchMedia === "undefined"
+  ) {
     return whenFalse;
   }
 
@@ -33,17 +36,15 @@ const useMediaQuery = (query, whenTrue, whenFalse) => {
 ```jsx
 const ResponsiveText = () => {
   const text = useMediaQuery(
-    '(max-width: 400px)',
-    'Less than 400px wide',
-    'More than 400px wide'
+    "(max-width: 400px)",
+    "Less than 400px wide",
+    "More than 400px wide"
   );
 
   return <span>{text}</span>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <ResponsiveText />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<ResponsiveText />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

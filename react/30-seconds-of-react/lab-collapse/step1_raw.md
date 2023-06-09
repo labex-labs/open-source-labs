@@ -32,10 +32,10 @@ const Collapse = ({ collapsed, children }) => {
         className="collapse-button"
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
-        {isCollapsed ? 'Show' : 'Hide'} content
+        {isCollapsed ? "Show" : "Hide"} content
       </button>
       <div
-        className={`collapse-content ${isCollapsed ? 'collapsed' : 'expanded'}`}
+        className={`collapse-content ${isCollapsed ? "collapsed" : "expanded"}`}
         aria-expanded={isCollapsed}
       >
         {children}
@@ -46,7 +46,7 @@ const Collapse = ({ collapsed, children }) => {
 ```
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Collapse>
     <h1>This is a collapse</h1>
     <p>Hello world!</p>

@@ -6,19 +6,17 @@ Resolves to `useEffect()` on the server and `useLayoutEffect()` on the client.
 
 ```jsx
 const useIsomorphicEffect =
-  typeof window !== 'undefined' ? React.useLayoutEffect : React.useEffect;
+  typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
 ```
 
 ```jsx
 const MyApp = () => {
   useIsomorphicEffect(() => {
-    window.console.log('Hello');
+    window.console.log("Hello");
   }, []);
 
   return null;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

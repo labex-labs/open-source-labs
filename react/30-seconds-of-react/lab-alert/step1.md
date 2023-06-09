@@ -27,8 +27,12 @@ Here's the updated code:
 
 ```css
 @keyframes leave {
-  0% { opacity: 1 }
-  100% { opacity: 0 }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .alert {
@@ -72,7 +76,7 @@ Here's the updated code:
 }
 
 .alert .close::after {
-  content: 'x';
+  content: "x";
 }
 ```
 
@@ -101,7 +105,7 @@ const Alert = ({ isDefaultShown = false, timeout = 250, type, message }) => {
   return (
     isShown && (
       <div
-        className={`alert ${type} ${isLeaving ? 'leaving' : ''}`}
+        className={`alert ${type} ${isLeaving ? "leaving" : ""}`}
         role="alert"
       >
         <button className="close" onClick={closeAlert} />
@@ -113,7 +117,7 @@ const Alert = ({ isDefaultShown = false, timeout = 250, type, message }) => {
 ```
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Alert type="info" message="This is info" />
 );
 ```

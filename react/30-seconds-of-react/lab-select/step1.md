@@ -31,17 +31,17 @@ Here's an example of how to use this component:
 
 ```jsx
 const choices = [
-  ['grapefruit', 'Grapefruit'],
-  ['lime', 'Lime'],
-  ['coconut', 'Coconut'],
-  ['mango', 'Mango'],
+  ["grapefruit", "Grapefruit"],
+  ["lime", "Lime"],
+  ["coconut", "Coconut"],
+  ["mango", "Mango"],
 ];
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Select
     values={choices}
     selectedValue="lime"
-    onValueChange={val => console.log(val)}
+    onValueChange={(val) => console.log(val)}
   />
 );
 ```

@@ -11,19 +11,19 @@ This function executes a callback function every time the window is scrolled. To
 Here's the revised code:
 
 ```jsx
-const useOnWindowScroll = callback => {
+const useOnWindowScroll = (callback) => {
   const listener = React.useRef(null);
 
   React.useEffect(() => {
     if (listener.current) {
-      window.removeEventListener('scroll', listener.current);
+      window.removeEventListener("scroll", listener.current);
     }
     listener.current = () => {
       callback(window.pageYOffset);
     };
-    window.addEventListener('scroll', listener.current);
+    window.addEventListener("scroll", listener.current);
     return () => {
-      window.removeEventListener('scroll', listener.current);
+      window.removeEventListener("scroll", listener.current);
     };
   }, [callback]);
 };
@@ -33,11 +33,11 @@ To test the function, you can use it in a component like this:
 
 ```jsx
 const App = () => {
-  useOnWindowScroll(scrollY => console.log(`scroll Y: ${scrollY}`));
-  return <p style={{ height: '300vh' }}>Scroll and check the console</p>;
+  useOnWindowScroll((scrollY) => console.log(`scroll Y: ${scrollY}`));
+  return <p style={{ height: "300vh" }}>Scroll and check the console</p>;
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
 This will log the vertical scroll position of the window every time it's scrolled.

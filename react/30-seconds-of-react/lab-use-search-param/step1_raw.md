@@ -7,7 +7,7 @@ Tracks the browser's location search param.
 - Use the `useEffect()` hook to set appropriate event listeners to update the state variable when mounting and clean them up when unmounting.
 
 ```jsx
-const useSearchParam = param => {
+const useSearchParam = (param) => {
   const getValue = React.useCallback(
     () => new URLSearchParams(window.location.search).get(param),
     [param]
@@ -20,14 +20,14 @@ const useSearchParam = param => {
       setValue(getValue());
     };
 
-    window.addEventListener('popstate', onChange);
-    window.addEventListener('pushstate', onChange);
-    window.addEventListener('replacestate', onChange);
+    window.addEventListener("popstate", onChange);
+    window.addEventListener("pushstate", onChange);
+    window.addEventListener("replacestate", onChange);
 
     return () => {
-      window.removeEventListener('popstate', onChange);
-      window.removeEventListener('pushstate', onChange);
-      window.removeEventListener('replacestate', onChange);
+      window.removeEventListener("popstate", onChange);
+      window.removeEventListener("pushstate", onChange);
+      window.removeEventListener("replacestate", onChange);
     };
   }, []);
 
@@ -37,26 +37,24 @@ const useSearchParam = param => {
 
 ```jsx
 const MyApp = () => {
-  const post = useSearchParam('post');
+  const post = useSearchParam("post");
 
   return (
     <>
-      <p>Post param value: {post || 'null'}</p>
+      <p>Post param value: {post || "null"}</p>
       <button
         onClick={() =>
-          history.pushState({}, '', location.pathname + '?post=42')
+          history.pushState({}, "", location.pathname + "?post=42")
         }
       >
         View post 42
       </button>
-      <button onClick={() => history.pushState({}, '', location.pathname)}>
+      <button onClick={() => history.pushState({}, "", location.pathname)}>
         Exit
       </button>
     </>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

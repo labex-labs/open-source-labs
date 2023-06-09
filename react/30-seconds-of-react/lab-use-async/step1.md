@@ -2,7 +2,7 @@
 
 > `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
 
-This code creates a custom hook that handles asynchronous calls. It accepts a handler function, `fn`, and returns an object containing the properties of `state` (`value`, `error`, and `loading`) and an asynchronous `run` function. The `run` function runs the provided callback, `fn`, while using `dispatch` to update `state` as necessary. 
+This code creates a custom hook that handles asynchronous calls. It accepts a handler function, `fn`, and returns an object containing the properties of `state` (`value`, `error`, and `loading`) and an asynchronous `run` function. The `run` function runs the provided callback, `fn`, while using `dispatch` to update `state` as necessary.
 
 ```jsx
 const useAsync = (fn) => {
@@ -10,11 +10,11 @@ const useAsync = (fn) => {
 
   const stateReducer = (state, action) => {
     switch (action.type) {
-      case 'start':
+      case "start":
         return { loading: true, error: null, value: null };
-      case 'finish':
+      case "finish":
         return { loading: false, error: null, value: action.value };
-      case 'error':
+      case "error":
         return { loading: false, error: action.error, value: null };
       default:
         return state;
@@ -25,11 +25,11 @@ const useAsync = (fn) => {
 
   const run = async (args = null) => {
     try {
-      dispatch({ type: 'start' });
+      dispatch({ type: "start" });
       const value = await fn(args);
-      dispatch({ type: 'finish', value });
+      dispatch({ type: "finish", value });
     } catch (error) {
-      dispatch({ type: 'error', error });
+      dispatch({ type: "error", error });
     }
   };
 
@@ -44,9 +44,7 @@ const RandomImage = (props) => {
   return (
     <div>
       <button
-        onClick={() =>
-          imgFetch.run('https://dog.ceo/api/breeds/image/random')
-        }
+        onClick={() => imgFetch.run("https://dog.ceo/api/breeds/image/random")}
         disabled={imgFetch.loading}
       >
         Load image
@@ -66,7 +64,7 @@ const RandomImage = (props) => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(<RandomImage />);
+ReactDOM.createRoot(document.getElementById("root")).render(<RandomImage />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

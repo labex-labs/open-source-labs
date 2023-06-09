@@ -47,14 +47,14 @@ You can use the component by passing in an array of objects and a list of proper
 
 ```jsx
 const people = [
-  { name: 'John', surname: 'Smith', age: 42 },
-  { name: 'Adam', surname: 'Smith', gender: 'male' },
+  { name: "John", surname: "Smith", age: 42 },
+  { name: "Adam", surname: "Smith", gender: "male" },
 ];
-const propertyNames = ['name', 'surname', 'age'];
+const propertyNames = ["name", "surname", "age"];
 
 ReactDOM.render(
   <MappedTable data={people} propertyNames={propertyNames} />,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 

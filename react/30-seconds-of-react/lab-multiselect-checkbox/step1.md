@@ -12,14 +12,14 @@ This code renders a list of checkboxes and sends the selected value(s) to the pa
 const MultiselectCheckbox = ({ options, onChange }) => {
   const [data, setData] = React.useState(options);
 
-  const toggle = index => {
+  const toggle = (index) => {
     const newData = [...data];
     newData[index] = {
       ...newData[index],
-      checked: !newData[index].checked
+      checked: !newData[index].checked,
     };
     setData(newData);
-    onChange(newData.filter(item => item.checked));
+    onChange(newData.filter((item) => item.checked));
   };
 
   return (
@@ -42,12 +42,12 @@ const MultiselectCheckbox = ({ options, onChange }) => {
 Here is an example of how to use it:
 
 ```jsx
-const options = [{ label: 'Item One' }, { label: 'Item Two' }];
+const options = [{ label: "Item One" }, { label: "Item Two" }];
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <MultiselectCheckbox
     options={options}
-    onChange={selected => {
+    onChange={(selected) => {
       console.log(selected);
     }}
   />

@@ -2,9 +2,10 @@
 
 > `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
 
-This function renders a `<textarea>` element that is not controlled by the parent component. It uses a callback function to pass the value of the input to the parent component. 
+This function renders a `<textarea>` element that is not controlled by the parent component. It uses a callback function to pass the value of the input to the parent component.
 
 To use this function:
+
 - Pass the `defaultValue` prop from the parent component as the initial value of the input field.
 - Use the `onChange` event to trigger the `onValueChange` callback and send the new value to the parent.
 
@@ -29,11 +30,12 @@ const TextArea = ({
 ```
 
 Example usage:
+
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <TextArea
     placeholder="Insert some text here..."
-    onValueChange={val => console.log(val)}
+    onValueChange={(val) => console.log(val)}
   />
 );
 ```

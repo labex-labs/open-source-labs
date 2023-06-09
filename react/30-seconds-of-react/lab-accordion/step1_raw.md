@@ -33,7 +33,7 @@ const AccordionItem = ({ label, isCollapsed, handleClick, children }) => {
         {label}
       </button>
       <div
-        className={`accordion-item ${isCollapsed ? 'collapsed' : 'expanded'}`}
+        className={`accordion-item ${isCollapsed ? "collapsed" : "expanded"}`}
         aria-expanded={isCollapsed}
       >
         {children}
@@ -45,11 +45,11 @@ const AccordionItem = ({ label, isCollapsed, handleClick, children }) => {
 const Accordion = ({ defaultIndex, onItemClick, children }) => {
   const [bindIndex, setBindIndex] = React.useState(defaultIndex);
 
-  const changeItem = itemIndex => {
-    if (typeof onItemClick === 'function') onItemClick(itemIndex);
+  const changeItem = (itemIndex) => {
+    if (typeof onItemClick === "function") onItemClick(itemIndex);
     if (itemIndex !== bindIndex) setBindIndex(itemIndex);
   };
-  const items = children.filter(item => item.type.name === 'AccordionItem');
+  const items = children.filter((item) => item.type.name === "AccordionItem");
 
   return (
     <>
@@ -67,7 +67,7 @@ const Accordion = ({ defaultIndex, onItemClick, children }) => {
 ```
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Accordion defaultIndex="1" onItemClick={console.log}>
     <AccordionItem label="A" index="1">
       Lorem ipsum

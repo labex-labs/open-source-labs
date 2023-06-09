@@ -22,12 +22,10 @@ const useEffectOnce = (callback, when) => {
 const App = () => {
   const [clicked, setClicked] = React.useState(false);
   useEffectOnce(() => {
-    console.log('mounted');
+    console.log("mounted");
   }, clicked);
   return <button onClick={() => setClicked(true)}>Click me</button>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```

@@ -42,29 +42,29 @@ const App = () => {
   const [mutationCount, setMutationCount] = React.useState(0);
 
   const incrementMutationCount = React.useCallback(() => {
-    setMutationCount(count => count + 1);
+    setMutationCount((count) => count + 1);
   }, []);
 
   useMutationObserver(mutationRef, incrementMutationCount);
 
-  const [content, setContent] = React.useState('Hello world');
+  const [content, setContent] = React.useState("Hello world");
 
   return (
     <>
       <label htmlFor="content-input">Edit this to update the text:</label>
       <textarea
         id="content-input"
-        style={{ width: '100%' }}
+        style={{ width: "100%" }}
         value={content}
-        onChange={e => setContent(e.target.value)}
+        onChange={(e) => setContent(e.target.value)}
       />
-      <div style={{ width: '100%' }} ref={mutationRef}>
+      <div style={{ width: "100%" }} ref={mutationRef}>
         <div
           style={{
-            resize: 'both',
-            overflow: 'auto',
-            maxWidth: '100%',
-            border: '1px solid black',
+            resize: "both",
+            overflow: "auto",
+            maxWidth: "100%",
+            border: "1px solid black",
           }}
         >
           <h2>Resize or change the content:</h2>
@@ -78,7 +78,7 @@ const App = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

@@ -9,7 +9,7 @@ Checks if the client is online or offline.
 
 ```jsx
 const getOnLineStatus = () =>
-  typeof navigator !== 'undefined' && typeof navigator.onLine === 'boolean'
+  typeof navigator !== "undefined" && typeof navigator.onLine === "boolean"
     ? navigator.onLine
     : true;
 
@@ -20,12 +20,12 @@ const useNavigatorOnLine = () => {
   const setOffline = () => setStatus(false);
 
   React.useEffect(() => {
-    window.addEventListener('online', setOnline);
-    window.addEventListener('offline', setOffline);
+    window.addEventListener("online", setOnline);
+    window.addEventListener("offline", setOffline);
 
     return () => {
-      window.removeEventListener('online', setOnline);
-      window.removeEventListener('offline', setOffline);
+      window.removeEventListener("online", setOnline);
+      window.removeEventListener("offline", setOffline);
     };
   }, []);
 
@@ -37,10 +37,10 @@ const useNavigatorOnLine = () => {
 const StatusIndicator = () => {
   const isOnline = useNavigatorOnLine();
 
-  return <span>You are {isOnline ? 'online' : 'offline'}.</span>;
+  return <span>You are {isOnline ? "online" : "offline"}.</span>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <StatusIndicator />
 );
 ```

@@ -6,7 +6,7 @@ To ensure the proper use of `useEffect()` on the server and `useLayoutEffect()` 
 
 ```jsx
 const useIsomorphicEffect =
-  typeof window !== 'undefined' ? React.useLayoutEffect : React.useEffect;
+  typeof window !== "undefined" ? React.useLayoutEffect : React.useEffect;
 ```
 
 Then, in your code, you can use `useIsomorphicEffect()` as shown in this example:
@@ -14,16 +14,14 @@ Then, in your code, you can use `useIsomorphicEffect()` as shown in this example
 ```jsx
 const MyApp = () => {
   useIsomorphicEffect(() => {
-    window.console.log('Hello');
+    window.console.log("Hello");
   }, []);
 
   return null;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
-``` 
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
+```
 
 This will log 'Hello' in the console when the component mounts, and will work correctly on both the server and the client.
 

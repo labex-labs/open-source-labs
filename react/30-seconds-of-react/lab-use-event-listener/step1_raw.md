@@ -16,7 +16,7 @@ const useEventListener = (type, handler, el = window) => {
   }, [handler]);
 
   React.useEffect(() => {
-    const listener = e => savedHandler.current(e);
+    const listener = (e) => savedHandler.current(e);
 
     el.addEventListener(type, listener);
 
@@ -38,14 +38,14 @@ const MyApp = () => {
     [setCoords]
   );
 
-  useEventListener('mousemove', updateCoords);
+  useEventListener("mousemove", updateCoords);
 
   return (
-    <p>Mouse coordinates: {coords.x}, {coords.y}</p>
+    <p>
+      Mouse coordinates: {coords.x}, {coords.y}
+    </p>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

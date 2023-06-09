@@ -19,7 +19,7 @@ Renders a tree view of a JSON object or array with collapsible content.
 }
 
 div.tree-element::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 24px;
   left: 1px;
@@ -59,26 +59,26 @@ const TreeView = ({
   name = null,
   isLast = true,
   isChildElement = false,
-  isParentToggled = true
+  isParentToggled = true,
 }) => {
   const [isToggled, setIsToggled] = React.useState(toggled);
   const isDataArray = Array.isArray(data);
 
   return (
     <div
-      className={`tree-element ${isParentToggled && 'collapsed'} ${
-        isChildElement && 'is-child'
+      className={`tree-element ${isParentToggled && "collapsed"} ${
+        isChildElement && "is-child"
       }`}
     >
       <span
-        className={isToggled ? 'toggler' : 'toggler closed'}
+        className={isToggled ? "toggler" : "toggler closed"}
         onClick={() => setIsToggled(!isToggled)}
       />
       {name ? <strong>&nbsp;&nbsp;{name}: </strong> : <span>&nbsp;&nbsp;</span>}
-      {isDataArray ? '[' : '{'}
-      {!isToggled && '...'}
+      {isDataArray ? "[" : "{"}
+      {!isToggled && "..."}
       {Object.keys(data).map((v, i, a) =>
-        typeof data[v] === 'object' ? (
+        typeof data[v] === "object" ? (
           <TreeView
             key={`${name}-${v}-${i}`}
             data={data[v]}
@@ -90,16 +90,16 @@ const TreeView = ({
         ) : (
           <p
             key={`${name}-${v}-${i}`}
-            className={isToggled ? 'tree-element' : 'tree-element collapsed'}
+            className={isToggled ? "tree-element" : "tree-element collapsed"}
           >
-            {isDataArray ? '' : <strong>{v}: </strong>}
+            {isDataArray ? "" : <strong>{v}: </strong>}
             {data[v]}
-            {i === a.length - 1 ? '' : ','}
+            {i === a.length - 1 ? "" : ","}
           </p>
         )
       )}
-      {isDataArray ? ']' : '}'}
-      {!isLast ? ',' : ''}
+      {isDataArray ? "]" : "}"}
+      {!isLast ? "," : ""}
     </div>
   );
 };
@@ -108,27 +108,27 @@ const TreeView = ({
 ```jsx
 const data = {
   lorem: {
-    ipsum: 'dolor sit',
+    ipsum: "dolor sit",
     amet: {
-      consectetur: 'adipiscing',
+      consectetur: "adipiscing",
       elit: [
-        'duis',
-        'vitae',
+        "duis",
+        "vitae",
         {
-          semper: 'orci'
+          semper: "orci",
         },
         {
-          est: 'sed ornare'
+          est: "sed ornare",
         },
-        'etiam',
-        ['laoreet', 'tincidunt'],
-        ['vestibulum', 'ante']
-      ]
+        "etiam",
+        ["laoreet", "tincidunt"],
+        ["vestibulum", "ante"],
+      ],
     },
-    ipsum: 'primis'
-  }
+    ipsum: "primis",
+  },
 };
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <TreeView data={data} name="data" />
 );
 ```

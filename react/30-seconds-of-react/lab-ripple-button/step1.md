@@ -31,7 +31,7 @@ const RippleButton = ({ children, onClick }) => {
   return (
     <button
       className="ripple-button"
-      onClick={e => {
+      onClick={(e) => {
         const rect = e.target.getBoundingClientRect();
         setCoords({ x: e.clientX - rect.left, y: e.clientY - rect.top });
         onClick && onClick(e);
@@ -42,7 +42,7 @@ const RippleButton = ({ children, onClick }) => {
           className="ripple"
           style={{
             left: coords.x,
-            top: coords.y
+            top: coords.y,
           }}
         />
       )}
@@ -55,8 +55,8 @@ const RippleButton = ({ children, onClick }) => {
 You can use this component like this:
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RippleButton onClick={e => console.log(e)}>Click me</RippleButton>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <RippleButton onClick={(e) => console.log(e)}>Click me</RippleButton>
 );
 ```
 

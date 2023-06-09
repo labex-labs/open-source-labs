@@ -7,15 +7,15 @@ Executes a callback whenever the window is scrolled.
 - Use `EventTarget.removeEventListener()` to remove any existing listeners and clean up when the component unmounts.
 
 ```jsx
-const useOnWindowScroll = callback => {
+const useOnWindowScroll = (callback) => {
   const listener = React.useRef(null);
 
   React.useEffect(() => {
     if (listener.current)
-      window.removeEventListener('scroll', listener.current);
-    listener.current = window.addEventListener('scroll', callback);
+      window.removeEventListener("scroll", listener.current);
+    listener.current = window.addEventListener("scroll", callback);
     return () => {
-      window.removeEventListener('scroll', listener.current);
+      window.removeEventListener("scroll", listener.current);
     };
   }, [callback]);
 };
@@ -24,10 +24,8 @@ const useOnWindowScroll = callback => {
 ```jsx
 const App = () => {
   useOnWindowScroll(() => console.log(`scroll Y: ${window.pageYOffset}`));
-  return <p style={{ height: '300vh' }}>Scroll and check the console</p>;
+  return <p style={{ height: "300vh" }}>Scroll and check the console</p>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```

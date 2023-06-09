@@ -2,7 +2,7 @@
 
 > `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
 
-Create a `Star` component that renders each individual star with the appropriate appearance based on the parent component's state. Then, define a `StarRating` component that uses the `useState()` hook to define the `rating` and `selection` state variables with the appropriate initial values. 
+Create a `Star` component that renders each individual star with the appropriate appearance based on the parent component's state. Then, define a `StarRating` component that uses the `useState()` hook to define the `rating` and `selection` state variables with the appropriate initial values.
 
 In `StarRating`, create a method named `hoverOver` that updates `selection` according to the provided `event`. If `event` is not provided or it is `null`, reset `selection` to `0`. Use the `.data-star-id` attribute of the event's target to determine the value of `selection`.
 
@@ -19,7 +19,7 @@ Next, create an array of 5 elements using `Array.from()` and create individual `
 const Star = ({ marked, starId }) => {
   return (
     <span data-star-id={starId} className="star" role="button">
-      {marked ? '\u2605' : '\u2606'}
+      {marked ? "\u2605" : "\u2606"}
     </span>
   );
 };
@@ -28,10 +28,10 @@ const StarRating = ({ value }) => {
   const [rating, setRating] = React.useState(parseInt(value) || 0);
   const [selection, setSelection] = React.useState(0);
 
-  const hoverOver = event => {
+  const hoverOver = (event) => {
     let val = 0;
-    if (event && event.target && event.target.getAttribute('data-star-id'))
-      val = event.target.getAttribute('data-star-id');
+    if (event && event.target && event.target.getAttribute("data-star-id"))
+      val = event.target.getAttribute("data-star-id");
     setSelection(val);
   };
 
@@ -39,7 +39,9 @@ const StarRating = ({ value }) => {
     <div
       onMouseLeave={() => hoverOver(null)}
       onMouseOver={hoverOver}
-      onClick={e => setRating(e.target.getAttribute('data-star-id') || rating)}
+      onClick={(e) =>
+        setRating(e.target.getAttribute("data-star-id") || rating)
+      }
     >
       {Array.from({ length: 5 }, (v, i) => (
         <Star

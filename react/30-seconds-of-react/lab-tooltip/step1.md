@@ -49,7 +49,7 @@ const Tooltip = ({ children, text, ...rest }) => {
 
   return (
     <div className="tooltip-container">
-      <div className={show ? 'tooltip-box visible' : 'tooltip-box'}>
+      <div className={show ? "tooltip-box visible" : "tooltip-box"}>
         {text}
         <span className="tooltip-arrow" />
       </div>
@@ -68,7 +68,7 @@ const Tooltip = ({ children, text, ...rest }) => {
 To use the tooltip component, call `ReactDOM.createRoot()` with the following code:
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Tooltip text="Simple tooltip">
     <button>Hover me!</button>
   </Tooltip>

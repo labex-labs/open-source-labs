@@ -20,7 +20,7 @@ const useFetch = (url, options) => {
         const abortController = new AbortController();
         const signal = abortController.signal;
         setAbort(abortController.abort);
-        const res = await fetch(url, {...options, signal});
+        const res = await fetch(url, { ...options, signal });
         const json = await res.json();
         setResponse(json);
       } catch (error) {
@@ -30,7 +30,7 @@ const useFetch = (url, options) => {
     fetchData();
     return () => {
       abort();
-    }
+    };
   }, []);
 
   return { response, error, abort };
@@ -38,8 +38,8 @@ const useFetch = (url, options) => {
 ```
 
 ```jsx
-const ImageFetch = props => {
-  const res = useFetch('https://dog.ceo/api/breeds/image/random', {});
+const ImageFetch = (props) => {
+  const res = useFetch("https://dog.ceo/api/breeds/image/random", {});
   if (!res.response) {
     return <div>Loading...</div>;
   }
@@ -51,7 +51,5 @@ const ImageFetch = props => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <ImageFetch />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<ImageFetch />);
 ```

@@ -18,9 +18,9 @@ const useUnload = (fn) => {
 
   React.useEffect(() => {
     const callback = callbackRef.current;
-    window.addEventListener('beforeunload', callback);
+    window.addEventListener("beforeunload", callback);
     return () => {
-      window.removeEventListener('beforeunload', callback);
+      window.removeEventListener("beforeunload", callback);
     };
   }, [callbackRef]);
 };
@@ -28,14 +28,14 @@ const useUnload = (fn) => {
 const App = () => {
   useUnload((e) => {
     e.preventDefault();
-    const exit = confirm('Are you sure you want to leave?');
+    const exit = confirm("Are you sure you want to leave?");
     if (exit) window.close();
   });
 
   return <div>Try closing the window.</div>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

@@ -26,14 +26,14 @@ const useHash = () => {
   }, []);
 
   React.useEffect(() => {
-    window.addEventListener('hashchange', hashChangeHandler);
+    window.addEventListener("hashchange", hashChangeHandler);
     return () => {
-      window.removeEventListener('hashchange', hashChangeHandler);
+      window.removeEventListener("hashchange", hashChangeHandler);
     };
   }, []);
 
   const updateHash = React.useCallback(
-    newHash => {
+    (newHash) => {
       if (newHash !== hash) window.location.hash = newHash;
     },
     [hash]
@@ -46,21 +46,19 @@ const MyApp = () => {
   const [hash, setHash] = useHash();
 
   React.useEffect(() => {
-    setHash('#list');
+    setHash("#list");
   }, []);
 
   return (
     <>
       <p>Current hash value: {hash}</p>
       <p>Edit hash: </p>
-      <input value={hash} onChange={e => setHash(e.target.value)} />
+      <input value={hash} onChange={(e) => setHash(e.target.value)} />
     </>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

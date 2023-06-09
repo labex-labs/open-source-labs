@@ -2,9 +2,10 @@
 
 > `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
 
-This code renders a Modal component that can be controlled through events. To use the component, you can import `Modal` once and then display it by passing a boolean value to the `isVisible` attribute. 
+This code renders a Modal component that can be controlled through events. To use the component, you can import `Modal` once and then display it by passing a boolean value to the `isVisible` attribute.
 
 The Modal component has the following features:
+
 - It defines a `keydownHandler` function that handles all keyboard events and calls `onClose` when the `Esc` key is pressed.
 - It uses the `useEffect()` hook to add or remove the `keydown` event listener to the `Document`, calling `keydownHandler` for every event.
 - It adds a styled `<span>` element that acts as a close button, calling `onClose` when clicked.
@@ -15,7 +16,7 @@ The Modal component has the following features:
 const Modal = ({ isVisible = false, title, content, footer, onClose }) => {
   const keydownHandler = ({ key }) => {
     switch (key) {
-      case 'Escape':
+      case "Escape":
         onClose();
         break;
       default:
@@ -23,13 +24,13 @@ const Modal = ({ isVisible = false, title, content, footer, onClose }) => {
   };
 
   React.useEffect(() => {
-    document.addEventListener('keydown', keydownHandler);
-    return () => document.removeEventListener('keydown', keydownHandler);
+    document.addEventListener("keydown", keydownHandler);
+    return () => document.removeEventListener("keydown", keydownHandler);
   });
 
   return !isVisible ? null : (
     <div className="modal" onClick={onClose}>
-      <div className="modal-dialog" onClick={e => e.stopPropagation()}>
+      <div className="modal-dialog" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h3 className="modal-title">{title}</h3>
           <span className="modal-close" onClick={onClose}>
@@ -148,9 +149,7 @@ const App = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

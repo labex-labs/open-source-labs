@@ -46,17 +46,17 @@ Here is the CSS code to style the tabbed menu and view:
 Here is the updated JavaScript code to implement the `Tabs` component:
 
 ```jsx
-const TabItem = props => <div {...props} />;
+const TabItem = (props) => <div {...props} />;
 
 const Tabs = ({ defaultIndex = 0, onTabClick, children }) => {
   const [bindIndex, setBindIndex] = React.useState(defaultIndex);
-  
-  const changeTab = newIndex => {
-    if (typeof onTabClick === 'function') onTabClick(newIndex);
+
+  const changeTab = (newIndex) => {
+    if (typeof onTabClick === "function") onTabClick(newIndex);
     setBindIndex(newIndex);
   };
-  
-  const items = children.filter(item => item.type.name === 'TabItem');
+
+  const items = children.filter((item) => item.type.name === "TabItem");
 
   return (
     <div className="wrapper">
@@ -65,7 +65,7 @@ const Tabs = ({ defaultIndex = 0, onTabClick, children }) => {
           <button
             key={`tab-btn-${index}`}
             onClick={() => changeTab(index)}
-            className={bindIndex === index ? 'focus' : ''}
+            className={bindIndex === index ? "focus" : ""}
           >
             {label}
           </button>
@@ -76,7 +76,7 @@ const Tabs = ({ defaultIndex = 0, onTabClick, children }) => {
           <div
             {...props}
             className={`tab-content ${
-              bindIndex === props.index ? 'selected' : ''
+              bindIndex === props.index ? "selected" : ""
             }`}
             key={`tab-content-${props.index}`}
           />
@@ -90,7 +90,7 @@ const Tabs = ({ defaultIndex = 0, onTabClick, children }) => {
 Finally, here is an example of how to use the `Tabs` component:
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Tabs defaultIndex={1} onTabClick={console.log}>
     <TabItem label="A" index={1}>
       Lorem ipsum

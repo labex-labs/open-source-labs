@@ -5,12 +5,12 @@
 This code snippet defines a custom React hook called `useGetSet` that creates a stateful value and returns a pair of functions for getting and setting its value. The `Counter` component uses this hook to implement a delayed increment of a count displayed in a button.
 
 ```jsx
-const useGetSet = initialState => {
+const useGetSet = (initialState) => {
   const stateRef = React.useRef(initialState);
   const [, update] = React.useReducer(() => ({}), {});
 
   const getState = React.useCallback(() => stateRef.current, []);
-  const setState = React.useCallback(newState => {
+  const setState = React.useCallback((newState) => {
     stateRef.current = newState;
     update();
   }, []);
@@ -29,7 +29,7 @@ const Counter = () => {
   return <button onClick={onClick}>Count: {getCount()}</button>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Counter />);
+ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

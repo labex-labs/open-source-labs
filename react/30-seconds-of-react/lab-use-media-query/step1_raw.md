@@ -9,7 +9,7 @@ Checks if the current environment matches a given media query and returns the ap
 
 ```jsx
 const useMediaQuery = (query, whenTrue, whenFalse) => {
-  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined')
+  if (typeof window === "undefined" || typeof window.matchMedia === "undefined")
     return whenFalse;
 
   const mediaQuery = window.matchMedia(query);
@@ -28,15 +28,13 @@ const useMediaQuery = (query, whenTrue, whenFalse) => {
 ```jsx
 const ResponsiveText = () => {
   const text = useMediaQuery(
-    '(max-width: 400px)',
-    'Less than 400px wide',
-    'More than 400px wide'
+    "(max-width: 400px)",
+    "Less than 400px wide",
+    "More than 400px wide"
   );
 
   return <span>{text}</span>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <ResponsiveText />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<ResponsiveText />);
 ```

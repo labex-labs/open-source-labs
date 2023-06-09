@@ -17,17 +17,17 @@ const useHover = () => {
   const nodeRef = React.useRef();
 
   const callbackRef = React.useCallback(
-    node => {
+    (node) => {
       if (nodeRef.current) {
-        nodeRef.current.removeEventListener('mouseover', handleMouseOver);
-        nodeRef.current.removeEventListener('mouseout', handleMouseOut);
+        nodeRef.current.removeEventListener("mouseover", handleMouseOver);
+        nodeRef.current.removeEventListener("mouseout", handleMouseOut);
       }
 
       nodeRef.current = node;
 
       if (nodeRef.current) {
-        nodeRef.current.addEventListener('mouseover', handleMouseOver);
-        nodeRef.current.addEventListener('mouseout', handleMouseOut);
+        nodeRef.current.addEventListener("mouseover", handleMouseOver);
+        nodeRef.current.addEventListener("mouseout", handleMouseOut);
       }
     },
     [handleMouseOver, handleMouseOut]
@@ -41,10 +41,8 @@ const useHover = () => {
 const MyApp = () => {
   const [hoverRef, isHovering] = useHover();
 
-  return <div ref={hoverRef}>{isHovering ? 'Hovering' : 'Not hovering'}</div>;
+  return <div ref={hoverRef}>{isHovering ? "Hovering" : "Not hovering"}</div>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

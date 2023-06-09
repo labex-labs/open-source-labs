@@ -2,7 +2,7 @@
 
 > `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
 
-This component renders a string as plaintext, with URLs converted to appropriate link elements. 
+This component renders a string as plaintext, with URLs converted to appropriate link elements.
 
 To achieve this, it uses `String.prototype.split()` and `String.prototype.match()` with a regular expression to find URLs in the given string. The matched URLs are then returned as `<a>` elements, dealing with missing protocol prefixes if necessary. The remaining parts of the string are rendered as plaintext.
 
@@ -10,7 +10,8 @@ Here is the revised code:
 
 ```jsx
 const AutoLink = ({ text }) => {
-  const urlRegex = /((?:https?:\/\/)?(?:(?:[a-z0-9]?(?:[a-z0-9\-]{1,61}[a-z0-9])?\.[^\.|\s])+[a-z\.]*[a-z]+|(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3})(?::\d{1,5})*[a-z0-9.,_\/~#&=;%+?\-\\(\\)]*)/gi;
+  const urlRegex =
+    /((?:https?:\/\/)?(?:(?:[a-z0-9]?(?:[a-z0-9\-]{1,61}[a-z0-9])?\.[^\.|\s])+[a-z\.]*[a-z]+|(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3})(?::\d{1,5})*[a-z0-9.,_\/~#&=;%+?\-\\(\\)]*)/gi;
 
   const renderText = () => {
     return text.split(urlRegex).map((word, index) => {
@@ -18,7 +19,7 @@ const AutoLink = ({ text }) => {
       if (urlMatch) {
         const url = urlMatch[0];
         return (
-          <a key={index} href={url.startsWith('http') ? url : `http://${url}`}>
+          <a key={index} href={url.startsWith("http") ? url : `http://${url}`}>
             {url}
           </a>
         );
@@ -30,7 +31,7 @@ const AutoLink = ({ text }) => {
   return <div>{renderText()}</div>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <AutoLink text="foo bar baz http://example.org bar" />
 );
 ```

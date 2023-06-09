@@ -10,7 +10,7 @@ First, the `useBodyScrollLock` function is defined, which uses the `useLayoutEff
 const useBodyScrollLock = () => {
   React.useLayoutEffect(() => {
     const originalStyle = window.getComputedStyle(document.body).overflow;
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     return () => (document.body.style.overflow = originalStyle);
   }, []);
 };
@@ -25,14 +25,15 @@ const Modal = ({ onClose }) => {
   return (
     <div
       style={{
-        zIndex: 100, background: 'rgba(0,0,0,0.25)', display: 'flex',
-        justifyContent: 'center', alignItems: 'center'
+        zIndex: 100,
+        background: "rgba(0,0,0,0.25)",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
       onClick={onClose}
     >
-      <p
-        style={{ padding: 8, borderRadius: 8, background: '#fff' }}
-      >
+      <p style={{ padding: 8, borderRadius: 8, background: "#fff" }}>
         Scroll locked! <br /> Click me to unlock
       </p>
     </div>
@@ -49,8 +50,10 @@ const MyApp = () => {
   return (
     <div
       style={{
-        height: '400vh', textAlign: 'center', paddingTop: 100,
-        background: 'linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb)'
+        height: "400vh",
+        textAlign: "center",
+        paddingTop: 100,
+        background: "linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb)",
       }}
     >
       <button onClick={() => setModalOpen(true)}>Open modal</button>
@@ -59,9 +62,7 @@ const MyApp = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

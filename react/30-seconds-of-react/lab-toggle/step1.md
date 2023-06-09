@@ -29,20 +29,18 @@ const Toggle = ({ defaultToggled = false }) => {
   const [isToggleOn, setIsToggleOn] = React.useState(defaultToggled);
 
   return (
-    <label className={isToggleOn ? 'toggle on' : 'toggle off'}>
+    <label className={isToggleOn ? "toggle on" : "toggle off"}>
       <input
         type="checkbox"
         checked={isToggleOn}
         onChange={() => setIsToggleOn(!isToggleOn)}
       />
-      {isToggleOn ? 'ON' : 'OFF'}
+      {isToggleOn ? "ON" : "OFF"}
     </label>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Toggle />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<Toggle />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

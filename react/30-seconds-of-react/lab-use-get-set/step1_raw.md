@@ -7,14 +7,14 @@ Creates a stateful value, returning a getter and a setter function.
 - Use the `useMemo()` hook to memoize a pair of functions. The first one will return the current value of the `state` ref and the second one will update it and force a re-render.
 
 ```jsx
-const useGetSet = initialState => {
+const useGetSet = (initialState) => {
   const state = React.useRef(initialState);
   const [, update] = React.useReducer(() => ({}));
 
   return React.useMemo(
     () => [
       () => state.current,
-      newState => {
+      (newState) => {
         state.current = newState;
         update();
       },
@@ -36,7 +36,5 @@ const Counter = () => {
   return <button onClick={onClick}>Count: {getCount()}</button>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Counter />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
 ```

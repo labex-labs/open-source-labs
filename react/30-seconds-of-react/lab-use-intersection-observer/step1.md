@@ -41,17 +41,15 @@ const MyApp = () => {
 
   return (
     <div>
-      <div style={{ height: '100vh' }}>Scroll down</div>
-      <div style={{ height: '100vh' }} ref={ref}>
-        <p>{onScreen ? 'Element is on screen.' : 'Scroll more!'}</p>
+      <div style={{ height: "100vh" }}>Scroll down</div>
+      <div style={{ height: "100vh" }} ref={ref}>
+        <p>{onScreen ? "Element is on screen." : "Scroll more!"}</p>
       </div>
     </div>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

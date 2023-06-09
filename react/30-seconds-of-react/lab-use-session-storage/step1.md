@@ -27,7 +27,7 @@ const useSessionStorage = (keyName, defaultValue) => {
     }
   });
 
-  const setValue = newValue => {
+  const setValue = (newValue) => {
     try {
       window.sessionStorage.setItem(keyName, JSON.stringify(newValue));
     } catch (err) {}
@@ -42,14 +42,12 @@ You can use this hook in your app like this:
 
 ```jsx
 const MyApp = () => {
-  const [name, setName] = useSessionStorage('name', 'John');
+  const [name, setName] = useSessionStorage("name", "John");
 
-  return <input value={name} onChange={e => setName(e.target.value)} />;
+  return <input value={name} onChange={(e) => setName(e.target.value)} />;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

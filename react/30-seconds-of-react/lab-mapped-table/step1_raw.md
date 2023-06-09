@@ -10,16 +10,16 @@ Renders a table with rows dynamically created from an array of objects and a lis
 
 ```jsx
 const MappedTable = ({ data, propertyNames }) => {
-  let filteredData = data.map(v =>
+  let filteredData = data.map((v) =>
     Object.keys(v)
-      .filter(k => propertyNames.includes(k))
+      .filter((k) => propertyNames.includes(k))
       .reduce((acc, key) => ((acc[key] = v[key]), acc), {})
   );
   return (
     <table>
       <thead>
         <tr>
-          {propertyNames.map(val => (
+          {propertyNames.map((val) => (
             <th key={`h_${val}`}>{val}</th>
           ))}
         </tr>
@@ -27,7 +27,7 @@ const MappedTable = ({ data, propertyNames }) => {
       <tbody>
         {filteredData.map((val, i) => (
           <tr key={`i_${i}`}>
-            {propertyNames.map(p => (
+            {propertyNames.map((p) => (
               <td key={`i_${i}_${p}`}>{val[p]}</td>
             ))}
           </tr>
@@ -40,11 +40,11 @@ const MappedTable = ({ data, propertyNames }) => {
 
 ```jsx
 const people = [
-  { name: 'John', surname: 'Smith', age: 42 },
-  { name: 'Adam', surname: 'Smith', gender: 'male' }
+  { name: "John", surname: "Smith", age: 42 },
+  { name: "Adam", surname: "Smith", gender: "male" },
 ];
-const propertyNames = ['name', 'surname', 'age'];
-ReactDOM.createRoot(document.getElementById('root')).render(
+const propertyNames = ["name", "surname", "age"];
+ReactDOM.createRoot(document.getElementById("root")).render(
   <MappedTable data={people} propertyNames={propertyNames} />
 );
 ```

@@ -9,9 +9,14 @@ To use the function, provide an `email` prop with the recipient's email address,
 The link is rendered with the provided `children` as its content.
 
 ```jsx
-const Mailto = ({ email, subject = '', body = '', children }) => {
-  const params = (subject || body) ? `?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}` : '';
-  
+const Mailto = ({ email, subject = "", body = "", children }) => {
+  const params =
+    subject || body
+      ? `?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+          body
+        )}`
+      : "";
+
   return <a href={`mailto:${email}${params}`}>{children}</a>;
 };
 ```
@@ -19,7 +24,7 @@ const Mailto = ({ email, subject = '', body = '', children }) => {
 Example usage:
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Mailto email="foo@bar.baz" subject="Hello & Welcome" body="Hello world!">
     Mail me!
   </Mailto>

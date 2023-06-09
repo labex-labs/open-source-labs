@@ -38,8 +38,8 @@ const DataTable = ({ data }) => {
 To use this component with an array of people's names, for example, you can call it as follows:
 
 ```jsx
-const people = ['John', 'Jesse'];
-ReactDOM.createRoot(document.getElementById('root')).render(
+const people = ["John", "Jesse"];
+ReactDOM.createRoot(document.getElementById("root")).render(
   <DataTable data={people} />
 );
 ```

@@ -9,20 +9,20 @@ Copies the given text to the clipboard.
 - Return the `copied` state variable and the `copy` callback.
 
 ```jsx
-const useCopyToClipboard = text => {
-  const copyToClipboard = str => {
-    const el = document.createElement('textarea');
+const useCopyToClipboard = (text) => {
+  const copyToClipboard = (str) => {
+    const el = document.createElement("textarea");
     el.value = str;
-    el.setAttribute('readonly', '');
-    el.style.position = 'absolute';
-    el.style.left = '-9999px';
+    el.setAttribute("readonly", "");
+    el.style.position = "absolute";
+    el.style.left = "-9999px";
     document.body.appendChild(el);
     const selected =
       document.getSelection().rangeCount > 0
         ? document.getSelection().getRangeAt(0)
         : false;
     el.select();
-    const success = document.execCommand('copy');
+    const success = document.execCommand("copy");
     document.body.removeChild(el);
     if (selected) {
       document.getSelection().removeAllRanges();
@@ -43,17 +43,15 @@ const useCopyToClipboard = text => {
 ```
 
 ```jsx
-const TextCopy = props => {
-  const [copied, copy] = useCopyToClipboard('Lorem ipsum');
+const TextCopy = (props) => {
+  const [copied, copy] = useCopyToClipboard("Lorem ipsum");
   return (
     <div>
       <button onClick={copy}>Click to copy</button>
-      <span>{copied && 'Copied!'}</span>
+      <span>{copied && "Copied!"}</span>
     </div>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <TextCopy />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<TextCopy />);
 ```

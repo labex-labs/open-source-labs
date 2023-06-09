@@ -75,13 +75,13 @@ Renders a tag input field.
 ```jsx
 const TagInput = ({ tags }) => {
   const [tagData, setTagData] = React.useState(tags);
-  const removeTagData = indexToRemove => {
+  const removeTagData = (indexToRemove) => {
     setTagData([...tagData.filter((_, index) => index !== indexToRemove)]);
   };
-  const addTagData = event => {
-    if (event.target.value !== '') {
+  const addTagData = (event) => {
+    if (event.target.value !== "") {
       setTagData([...tagData, event.target.value]);
-      event.target.value = '';
+      event.target.value = "";
     }
   };
   return (
@@ -101,7 +101,7 @@ const TagInput = ({ tags }) => {
       </ul>
       <input
         type="text"
-        onKeyUp={event => (event.key === 'Enter' ? addTagData(event) : null)}
+        onKeyUp={(event) => (event.key === "Enter" ? addTagData(event) : null)}
         placeholder="Press enter to add a tag"
       />
     </div>
@@ -110,7 +110,7 @@ const TagInput = ({ tags }) => {
 ```
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <TagInput tags={['Nodejs', 'MongoDB']} />
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <TagInput tags={["Nodejs", "MongoDB"]} />
 );
 ```

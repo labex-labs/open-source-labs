@@ -23,7 +23,7 @@ const useSessionStorage = (keyName, defaultValue) => {
     }
   });
 
-  const setValue = newValue => {
+  const setValue = (newValue) => {
     try {
       window.sessionStorage.setItem(keyName, JSON.stringify(newValue));
     } catch (err) {}
@@ -36,12 +36,10 @@ const useSessionStorage = (keyName, defaultValue) => {
 
 ```jsx
 const MyApp = () => {
-  const [name, setName] = useSessionStorage('name', 'John');
+  const [name, setName] = useSessionStorage("name", "John");
 
-  return <input value={name} onChange={e => setName(e.target.value)} />;
+  return <input value={name} onChange={(e) => setName(e.target.value)} />;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

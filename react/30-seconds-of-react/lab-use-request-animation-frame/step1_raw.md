@@ -7,11 +7,11 @@ Runs an animating function, calling it before every repaint.
 - Use the `useEffect()` hook with an empty array to initialize the value of `requestRef` using `Window.requestAnimationFrame()`. Use the returned value and `Window.cancelAnimationFrame()` to clean up when the component unmounts.
 
 ```jsx
-const useRequestAnimationFrame = callback => {
+const useRequestAnimationFrame = (callback) => {
   const requestRef = React.useRef();
   const previousTimeRef = React.useRef();
 
-  const animate = time => {
+  const animate = (time) => {
     if (previousTimeRef.current) callback(time - previousTimeRef.current);
     previousTimeRef.current = time;
     requestRef.current = requestAnimationFrame(animate);
@@ -28,14 +28,12 @@ const useRequestAnimationFrame = callback => {
 const Counter = () => {
   const [count, setCount] = React.useState(0);
 
-  useRequestAnimationFrame(deltaTime => {
-    setCount(prevCount => (prevCount + deltaTime * 0.01) % 100);
+  useRequestAnimationFrame((deltaTime) => {
+    setCount((prevCount) => (prevCount + deltaTime * 0.01) % 100);
   });
 
   return <p>{Math.round(count)}</p>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Counter />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
 ```

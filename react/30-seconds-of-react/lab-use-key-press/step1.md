@@ -26,12 +26,12 @@ const useKeyPress = (targetKey) => {
   };
 
   React.useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('keyup', handleKeyUp);
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("keyup", handleKeyUp);
 
     return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('keyup', handleKeyUp);
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("keyup", handleKeyUp);
     };
   }, [targetKey]);
 
@@ -43,12 +43,12 @@ Here's an example usage of `useKeyPress()` in a React component:
 
 ```jsx
 const MyApp = () => {
-  const isWKeyPressed = useKeyPress('w');
+  const isWKeyPressed = useKeyPress("w");
 
-  return <p>The "w" key is {!isWKeyPressed ? 'not ' : ''}pressed!</p>;
+  return <p>The "w" key is {!isWKeyPressed ? "not " : ""}pressed!</p>;
 };
 
-ReactDOM.render(<MyApp />, document.getElementById('root'));
+ReactDOM.render(<MyApp />, document.getElementById("root"));
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

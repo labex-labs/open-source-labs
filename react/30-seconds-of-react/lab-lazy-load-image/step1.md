@@ -18,7 +18,7 @@ const LazyLoadImage = ({
   src,
   className,
   loadInitially = false,
-  observerOptions = { root: null, rootMargin: '200px 0px' },
+  observerOptions = { root: null, rootMargin: "200px 0px" },
   ...props
 }) => {
   const observerRef = React.useRef(null);
@@ -26,7 +26,7 @@ const LazyLoadImage = ({
   const [isLoaded, setIsLoaded] = React.useState(loadInitially);
 
   const observerCallback = React.useCallback(
-    entries => {
+    (entries) => {
       if (entries[0].isIntersecting) {
         observerRef.current.disconnect();
         setIsLoaded(true);
@@ -38,7 +38,7 @@ const LazyLoadImage = ({
   React.useEffect(() => {
     if (loadInitially) return;
 
-    if ('loading' in HTMLImageElement.prototype) {
+    if ("loading" in HTMLImageElement.prototype) {
       setIsLoaded(true);
       return;
     }
@@ -56,10 +56,10 @@ const LazyLoadImage = ({
   return (
     <img
       alt={alt}
-      src={isLoaded ? src : ''}
+      src={isLoaded ? src : ""}
       ref={imgRef}
       className={className}
-      loading={loadInitially ? undefined : 'lazy'}
+      loading={loadInitially ? undefined : "lazy"}
       {...props}
     />
   );
@@ -69,7 +69,7 @@ const LazyLoadImage = ({
 To use this `LazyLoadImage` component, simply call it with the `src` and `alt` attributes of the image:
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <LazyLoadImage
     src="https://picsum.photos/id/1080/600/600"
     alt="Strawberries"

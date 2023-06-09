@@ -20,7 +20,7 @@ const ControlledInput = ({ value, onValueChange, ...rest }) => {
 
 ```jsx
 const Form = () => {
-  const [value, setValue] = React.useState('');
+  const [value, setValue] = React.useState("");
 
   return (
     <ControlledInput
@@ -32,7 +32,5 @@ const Form = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Form />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<Form />);
 ```

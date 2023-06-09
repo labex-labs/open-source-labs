@@ -3,18 +3,18 @@
 Creates an error dispatcher.
 
 - Use the `useState()` hook to create a state variable that holds the error.
-- Use the `useEffect()` hook to `throw` the error whenever it's  truthy.
+- Use the `useEffect()` hook to `throw` the error whenever it's truthy.
 - Use the `useCallback()` hook to update the state and return the cached function.
 
 ```jsx
-const useError = err => {
+const useError = (err) => {
   const [error, setError] = React.useState(err);
 
   React.useEffect(() => {
     if (error) throw error;
   }, [error]);
 
-  const dispatchError = React.useCallback(err => {
+  const dispatchError = React.useCallback((err) => {
     setError(err);
   }, []);
 
@@ -27,13 +27,11 @@ const ErrorButton = () => {
   const dispatchError = useError();
 
   const clickHandler = () => {
-    dispatchError(new Error('Error!'));
+    dispatchError(new Error("Error!"));
   };
 
   return <button onClick={clickHandler}>Throw error</button>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <ErrorButton />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<ErrorButton />);
 ```

@@ -8,7 +8,7 @@ Listens for changes in the pressed state of a given key.
 - Use `EventTarget.removeEventListener()` to perform cleanup after the component is unmounted.
 
 ```jsx
-const useKeyPress = targetKey => {
+const useKeyPress = (targetKey) => {
   const [keyPressed, setKeyPressed] = React.useState(false);
 
   const downHandler = ({ key }) => {
@@ -20,12 +20,12 @@ const useKeyPress = targetKey => {
   };
 
   React.useEffect(() => {
-    window.addEventListener('keydown', downHandler);
-    window.addEventListener('keyup', upHandler);
+    window.addEventListener("keydown", downHandler);
+    window.addEventListener("keyup", upHandler);
 
     return () => {
-      window.removeEventListener('keydown', downHandler);
-      window.removeEventListener('keyup', upHandler);
+      window.removeEventListener("keydown", downHandler);
+      window.removeEventListener("keyup", upHandler);
     };
   }, []);
 
@@ -35,12 +35,10 @@ const useKeyPress = targetKey => {
 
 ```jsx
 const MyApp = () => {
-  const wPressed = useKeyPress('w');
+  const wPressed = useKeyPress("w");
 
-  return <p>The "w" key is {!wPressed ? 'not ' : ''}pressed!</p>;
+  return <p>The "w" key is {!wPressed ? "not " : ""}pressed!</p>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

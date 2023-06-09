@@ -36,30 +36,30 @@ Here is the JSX for the component:
 ```jsx
 const FileDrop = ({ onDrop }) => {
   const [drag, setDrag] = React.useState(false);
-  const [filename, setFilename] = React.useState('');
+  const [filename, setFilename] = React.useState("");
   const dropRef = React.useRef(null);
   let dragCounter = 0;
 
-  const handleDrag = e => {
+  const handleDrag = (e) => {
     e.preventDefault();
     e.stopPropagation();
   };
 
-  const handleDragIn = e => {
+  const handleDragIn = (e) => {
     e.preventDefault();
     e.stopPropagation();
     dragCounter++;
     if (e.dataTransfer.items && e.dataTransfer.items.length > 0) setDrag(true);
   };
 
-  const handleDragOut = e => {
+  const handleDragOut = (e) => {
     e.preventDefault();
     e.stopPropagation();
     dragCounter--;
     if (dragCounter === 0) setDrag(false);
   };
 
-  const handleDrop = e => {
+  const handleDrop = (e) => {
     e.preventDefault();
     e.stopPropagation();
     setDrag(false);
@@ -73,15 +73,15 @@ const FileDrop = ({ onDrop }) => {
 
   React.useEffect(() => {
     const div = dropRef.current;
-    div.addEventListener('dragenter', handleDragIn);
-    div.addEventListener('dragleave', handleDragOut);
-    div.addEventListener('dragover', handleDrag);
-    div.addEventListener('drop', handleDrop);
+    div.addEventListener("dragenter", handleDragIn);
+    div.addEventListener("dragleave", handleDragOut);
+    div.addEventListener("dragover", handleDrag);
+    div.addEventListener("drop", handleDrop);
     return () => {
-      div.removeEventListener('dragenter', handleDragIn);
-      div.removeEventListener('dragleave', handleDragOut);
-      div.removeEventListener('dragover', handleDrag);
-      div.removeEventListener('drop', handleDrop);
+      div.removeEventListener("dragenter", handleDragIn);
+      div.removeEventListener("dragleave", handleDragOut);
+      div.removeEventListener("dragover", handleDrag);
+      div.removeEventListener("drop", handleDrop);
     };
   }, []);
 
@@ -89,7 +89,7 @@ const FileDrop = ({ onDrop }) => {
     <div
       ref={dropRef}
       className={
-        drag ? 'filedrop drag' : filename ? 'filedrop ready' : 'filedrop'
+        drag ? "filedrop drag" : filename ? "filedrop ready" : "filedrop"
       }
     >
       {filename && !drag ? <div>{filename}</div> : <div>Drop a file here!</div>}

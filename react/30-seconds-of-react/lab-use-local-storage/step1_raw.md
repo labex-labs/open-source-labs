@@ -23,7 +23,7 @@ const useLocalStorage = (keyName, defaultValue) => {
     }
   });
 
-  const setValue = newValue => {
+  const setValue = (newValue) => {
     try {
       window.localStorage.setItem(keyName, JSON.stringify(newValue));
     } catch (err) {}
@@ -36,12 +36,10 @@ const useLocalStorage = (keyName, defaultValue) => {
 
 ```jsx
 const MyApp = () => {
-  const [name, setName] = useLocalStorage('name', 'John');
+  const [name, setName] = useLocalStorage("name", "John");
 
-  return <input value={name} onChange={e => setName(e.target.value)} />;
+  return <input value={name} onChange={(e) => setName(e.target.value)} />;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 ```

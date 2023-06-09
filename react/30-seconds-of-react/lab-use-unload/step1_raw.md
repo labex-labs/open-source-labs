@@ -7,14 +7,14 @@ Handles the `beforeunload` window event.
 - Use `EventTarget.removeEventListener()` to perform cleanup after the component is unmounted.
 
 ```jsx
-const useUnload = fn => {
+const useUnload = (fn) => {
   const cb = React.useRef(fn);
 
   React.useEffect(() => {
     const onUnload = cb.current;
-    window.addEventListener('beforeunload', onUnload);
+    window.addEventListener("beforeunload", onUnload);
     return () => {
-      window.removeEventListener('beforeunload', onUnload);
+      window.removeEventListener("beforeunload", onUnload);
     };
   }, [cb]);
 };
@@ -22,14 +22,12 @@ const useUnload = fn => {
 
 ```jsx
 const App = () => {
-  useUnload(e => {
+  useUnload((e) => {
     e.preventDefault();
-    const exit = confirm('Are you sure you want to leave?');
+    const exit = confirm("Are you sure you want to leave?");
     if (exit) window.close();
   });
   return <div>Try closing the window.</div>;
 };
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```

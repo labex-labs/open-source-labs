@@ -18,7 +18,7 @@ const useTimeout = (callback, delay) => {
   React.useEffect(() => {
     const tick = () => {
       savedCallback.current();
-    }
+    };
     if (delay !== null) {
       let id = setTimeout(tick, delay);
       return () => clearTimeout(id);
@@ -28,7 +28,7 @@ const useTimeout = (callback, delay) => {
 ```
 
 ```jsx
-const OneSecondTimer = props => {
+const OneSecondTimer = (props) => {
   const [seconds, setSeconds] = React.useState(0);
   useTimeout(() => {
     setSeconds(seconds + 1);
@@ -37,7 +37,5 @@ const OneSecondTimer = props => {
   return <p>{seconds}</p>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <OneSecondTimer />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<OneSecondTimer />);
 ```

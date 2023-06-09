@@ -12,7 +12,7 @@ To store the previous state or props, you can create a custom hook. Here are the
 4. Return the `ref.current` value.
 
 ```jsx
-const usePrevious = value => {
+const usePrevious = (value) => {
   const ref = React.useRef();
   React.useEffect(() => {
     ref.current = value;
@@ -38,10 +38,8 @@ const Counter = () => {
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Counter />
-);
-``` 
+ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
+```
 
 The `Counter` component displays the current and previous values of `value`. When the `Increment` button is clicked, `value` is updated and the previous value is stored using the `usePrevious` hook.
 

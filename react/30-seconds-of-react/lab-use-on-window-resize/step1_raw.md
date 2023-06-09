@@ -7,15 +7,15 @@ Executes a callback whenever the window is resized.
 - Use `EventTarget.removeEventListener()` to remove any existing listeners and clean up when the component unmounts.
 
 ```jsx
-const useOnWindowResize = callback => {
+const useOnWindowResize = (callback) => {
   const listener = React.useRef(null);
 
   React.useEffect(() => {
     if (listener.current)
-      window.removeEventListener('resize', listener.current);
-    listener.current = window.addEventListener('resize', callback);
+      window.removeEventListener("resize", listener.current);
+    listener.current = window.addEventListener("resize", callback);
     return () => {
-      window.removeEventListener('resize', listener.current);
+      window.removeEventListener("resize", listener.current);
     };
   }, [callback]);
 };
@@ -29,7 +29,5 @@ const App = () => {
   return <p>Resize the window and check the console</p>;
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ```

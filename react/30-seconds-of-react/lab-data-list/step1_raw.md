@@ -13,8 +13,8 @@ const DataList = ({ isOrdered = false, data }) => {
 ```
 
 ```jsx
-const names = ['John', 'Paul', 'Mary'];
-ReactDOM.createRoot(document.getElementById('root')).render(
+const names = ["John", "Paul", "Mary"];
+ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <DataList data={names} />
     <DataList data={names} isOrdered />

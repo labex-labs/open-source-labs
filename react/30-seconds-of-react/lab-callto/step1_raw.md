@@ -12,7 +12,7 @@ const Callto = ({ phone, children }) => {
 ```
 
 ```jsx
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Callto phone="+302101234567">Call me!</Callto>
 );
 ```

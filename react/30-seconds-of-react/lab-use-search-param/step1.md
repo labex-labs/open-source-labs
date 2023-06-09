@@ -21,7 +21,7 @@ const getValue = React.useCallback(
 const [value, setValue] = React.useState(getValue);
 ```
 
-3. Set appropriate event listeners to update the state variable when mounting and clean them up when unmounting using the `useEffect()` hook. 
+3. Set appropriate event listeners to update the state variable when mounting and clean them up when unmounting using the `useEffect()` hook.
 
 ```jsx
 React.useEffect(() => {
@@ -29,14 +29,14 @@ React.useEffect(() => {
     setValue(getValue());
   };
 
-  window.addEventListener('popstate', onChange);
-  window.addEventListener('pushstate', onChange);
-  window.addEventListener('replacestate', onChange);
+  window.addEventListener("popstate", onChange);
+  window.addEventListener("pushstate", onChange);
+  window.addEventListener("replacestate", onChange);
 
   return () => {
-    window.removeEventListener('popstate', onChange);
-    window.removeEventListener('pushstate', onChange);
-    window.removeEventListener('replacestate', onChange);
+    window.removeEventListener("popstate", onChange);
+    window.removeEventListener("pushstate", onChange);
+    window.removeEventListener("replacestate", onChange);
   };
 }, []);
 ```
@@ -45,29 +45,27 @@ Here's an example of how to use this custom hook in a component:
 
 ```jsx
 const MyApp = () => {
-  const post = useSearchParam('post');
+  const post = useSearchParam("post");
 
   return (
     <>
-      <p>Post param value: {post || 'null'}</p>
+      <p>Post param value: {post || "null"}</p>
       <button
         onClick={() =>
-          history.pushState({}, '', location.pathname + '?post=42')
+          history.pushState({}, "", location.pathname + "?post=42")
         }
       >
         View post 42
       </button>
-      <button onClick={() => history.pushState({}, '', location.pathname)}>
+      <button onClick={() => history.pushState({}, "", location.pathname)}>
         Exit
       </button>
     </>
   );
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <MyApp />
-);
-``` 
+ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
+```
 
 This example creates a `MyApp` component that uses the `useSearchParam` custom hook to track the value of the `post` parameter in the location search. The `post` value is displayed in a paragraph tag. Two buttons are also included to demonstrate how to change the location search parameter value.
 
