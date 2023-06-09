@@ -12,7 +12,7 @@ This hook returns a stateful value that is persisted in `localStorage`, along wi
 6. When `name` is updated, use `Storage.setItem()` to create the new key, update the `nameRef`, and use `Storage.removeItem()` to remove the previous key from `Window.localStorage`.
 7. Note that the hook is meant for use with primitive values (i.e. not objects) and doesn't account for changes to `Window.localStorage` due to other code. Both of these issues can be easily handled (e.g. JSON serialization and handling the `'storage'` event).
 
-Here is the updated code:
+Here is the code:
 
 ```jsx
 const usePersistedState = (name, defaultValue) => {

@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Revised:
-
 The following code renders a password input field with a reveal button. It uses the `useState()` hook to create the `shown` state variable and set its initial value to `false`. When the `Show/Hide` button is clicked, the `setShown` function is called, toggling the `type` of the input between `'text'` and `'password'`.
 
 ```jsx

@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Revised:
-
 The `beforeunload` window event can be handled using the following steps:
 
 1. Create a ref for the callback function, `fn`, using the `useRef()` hook.

@@ -6,7 +6,7 @@ This component renders a string as plaintext, with URLs converted to appropriate
 
 To achieve this, it uses `String.prototype.split()` and `String.prototype.match()` with a regular expression to find URLs in the given string. The matched URLs are then returned as `<a>` elements, dealing with missing protocol prefixes if necessary. The remaining parts of the string are rendered as plaintext.
 
-Here is the revised code:
+Here is the code:
 
 ```jsx
 const AutoLink = ({ text }) => {

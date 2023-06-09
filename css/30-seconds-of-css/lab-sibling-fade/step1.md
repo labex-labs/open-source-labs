@@ -2,8 +2,6 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Revised:
-
 To fade out the siblings of a hovered item:
 
 1. Animate changes to `opacity` using the `transition` property.

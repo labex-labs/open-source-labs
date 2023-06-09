@@ -2,10 +2,6 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-Here's a revised version of the content:
-
----
-
 This code creates a responsive container with a specific aspect ratio using CSS custom properties and `calc()` function. Follow these steps to achieve this:
 
 1. Define the desired aspect ratio using a CSS custom property, `--aspect-ratio`.

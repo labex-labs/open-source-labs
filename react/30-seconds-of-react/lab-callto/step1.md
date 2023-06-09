@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's a revised version of the content:
-
 To create a link that calls a phone number, use the `Callto` component. This component creates an `<a>` element with an appropriate `href` attribute. To render the link, specify the phone number using the `phone` prop, and the link text using the `children` prop.
 
 ```jsx

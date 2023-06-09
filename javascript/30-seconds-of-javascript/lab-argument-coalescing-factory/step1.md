@@ -1,4 +1,4 @@
-# Revised Argument Coalescing Factory Code
+# Argument Coalescing Factory Code
 
 To begin coding, open Terminal/SSH and type `node`. This function returns the first argument that evaluates to `true` based on the validator passed as an argument.
 

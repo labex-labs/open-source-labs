@@ -12,7 +12,7 @@ To render an accordion menu with multiple collapsible content elements, you can 
 6. Define `changeItem`, which will be executed when clicking an `AccordionItem`'s `<button>`.
 7. `changeItem` executes the passed callback, `onItemClick`, and updates `bindIndex` based on the clicked element.
 
-Here is the revised code:
+Here is the code:
 
 ```css
 .accordion-item.collapsed {

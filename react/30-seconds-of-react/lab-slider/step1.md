@@ -6,7 +6,7 @@ To create a slider in React, use the `Slider` component and pass in the `min`, `
 
 In the `Slider` component, set the `type` of the `<input>` element to `"range"` to create a slider. Use the `defaultValue` prop passed down from the parent as the uncontrolled input field's initial value. Use the `onChange` event to fire the `onValueChange` callback and send the new value to the parent.
 
-Here's the revised code for the `Slider` component:
+Here's the code for the `Slider` component:
 
 ```jsx
 const Slider = ({

@@ -2,10 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's the revised content:
-
----
-
 Renders an alert component with the `type` prop.
 
 The `Alert` component takes in the following props:
@@ -23,7 +19,7 @@ The component does the following:
 - Defines a `closeAlert` function to set the component as removed from the DOM by displaying a fading out animation and setting `isShown` to `false` via `setTimeout()`.
 - Renders the alert component if `isShown` is `true`. The component has the appropriate styles based on the `type` prop and fades out if `isLeaving` is `true`.
 
-Here's the updated code:
+Here's the code:
 
 ```css
 @keyframes leave {

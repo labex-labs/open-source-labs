@@ -2,7 +2,7 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-To change the appearance of a form when any of its child elements are focused, use the pseudo-class `:focus-within` to apply styles to the parent element. For example, in the given HTML code, if any of the input fields are focused, the `form` element will have a green background. To apply styles to the child elements, use appropriate CSS selectors like `label` and `input`. Here's an updated version of the code:
+To change the appearance of a form when any of its child elements are focused, use the pseudo-class `:focus-within` to apply styles to the parent element. For example, in the given HTML code, if any of the input fields are focused, the `form` element will have a green background. To apply styles to the child elements, use appropriate CSS selectors like `label` and `input`.
 
 ```html
 <form>

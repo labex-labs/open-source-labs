@@ -1,4 +1,4 @@
-# Revised Detect Language Function
+# Detect Language Function
 
 The following code detects the preferred language of the current user. It uses `Navigator.language` or the first value of `Navigator.languages` if available. If neither are available, it returns the `defaultLang` value, which is set to `'en-US'` by default.
 

@@ -10,7 +10,7 @@ This component renders a table with rows that are dynamically created from an ar
 - Use `Array.prototype.map()` to render each object in the `filteredData` array as a `<tr>` element containing a `<td>` for each key in the object.
 - Note that this component does not work with nested objects and will break if there are nested objects inside any of the properties specified in `propertyNames`.
 
-Here's the revised code:
+Here's the code:
 
 ```jsx
 const MappedTable = ({ data, propertyNames }) => {

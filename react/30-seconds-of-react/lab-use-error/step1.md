@@ -2,10 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's a revised version of the content:
-
----
-
 This code creates an error dispatcher. It uses three React hooks to manage the error state and dispatch it to the user interface.
 
 Here's how the code works:
@@ -26,7 +22,7 @@ Here's an example of how to use the `useError()` hook in a component:
 
 4. Render a button that calls `clickHandler` when clicked.
 
-Here's the revised code:
+Here's the code:
 
 ```jsx
 const useError = (err = null) => {

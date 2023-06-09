@@ -2,10 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's a revised version of the content:
-
----
-
 This function creates a `Set` object with state and a set of functions that can manipulate the state.
 
 To use this function:

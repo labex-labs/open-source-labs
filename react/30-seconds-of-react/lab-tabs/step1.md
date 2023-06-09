@@ -2,10 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here is a revised version of the content:
-
----
-
 To render a tabbed menu and view component, follow these steps:
 
 1. Define a `Tabs` component. Use the `useState()` hook to set the `bindIndex` state variable to `defaultIndex`.
@@ -43,7 +39,7 @@ Here is the CSS code to style the tabbed menu and view:
 }
 ```
 
-Here is the updated JavaScript code to implement the `Tabs` component:
+Here is the JavaScript code to implement the `Tabs` component:
 
 ```jsx
 const TabItem = (props) => <div {...props} />;

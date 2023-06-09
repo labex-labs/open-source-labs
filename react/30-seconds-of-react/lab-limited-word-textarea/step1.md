@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's a revised version:
-
 ```jsx
 // Renders a textarea component with a word limit.
 const LimitedWordTextarea = ({ rows, cols, value, limit }) => {

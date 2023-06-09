@@ -2,7 +2,7 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-This code renders a list of checkboxes and sends the selected value(s) to the parent component using a callback function. Here are the revised steps to create it:
+This code renders a list of checkboxes and sends the selected value(s) to the parent component using a callback function. Here are the steps to create it:
 
 1. Use the `useState()` hook to initialize the `data` state variable with the `options` prop.
 2. Create a `toggle` function that updates the `data` state variable with the selected option(s) and calls the `onChange` callback function with them.

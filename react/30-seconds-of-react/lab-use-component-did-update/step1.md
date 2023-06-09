@@ -10,7 +10,7 @@ This code provides a custom hook called `useComponentDidUpdate` that executes a 
 4. If a second argument `condition` is provided, the hook will only execute if any of its dependencies change.
 5. This hook behaves like the `componentDidUpdate()` lifecycle method of class components.
 
-Here is the revised code:
+Here is the code:
 
 ```jsx
 const useComponentDidUpdate = (callback, condition) => {

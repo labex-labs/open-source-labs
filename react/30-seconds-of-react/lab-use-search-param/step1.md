@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Revised:
-
 To track the browser's location search param, use the following steps:
 
 1. Create a callback using the `useCallback()` hook. The callback should use the `URLSearchParams` constructor to get the current value of the desired parameter.

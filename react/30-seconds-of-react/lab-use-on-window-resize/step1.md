@@ -10,7 +10,7 @@ This code executes a callback function every time the window is resized. To impl
 
 3. Clean up by removing any existing listeners with `EventTarget.removeEventListener()` when the component unmounts.
 
-Here's the revised code:
+Here's the code:
 
 ```jsx
 const useOnWindowResize = (callback) => {

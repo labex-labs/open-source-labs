@@ -4,7 +4,7 @@
 
 To check if the code is running on a browser or server, create a custom hook that uses `typeof`, `Window`, `Window.document`, and `Document.createElement()` to determine if the DOM is available. Use the `useState()` hook to define the `inBrowser` state variable and the `useEffect()` hook to update it and clean up at the end. Use the `useMemo()` hook to memoize the return values of the custom hook.
 
-Here is the revised code:
+Here is the code:
 
 ```jsx
 const isDOMavailable = !!(

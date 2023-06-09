@@ -28,8 +28,6 @@ const UserCard = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(<UserCard />);
 ```
 
-Revised explanation:
-
 To create a stateful value with a default fallback, use the `useState()` hook in React. Check if the initial value is either `null` or `undefined`. If it is, return the `defaultState` instead, otherwise return the actual `value` state and the `setValue` function. The refactored code above shows how to implement this functionality in a custom hook called `useDefault`.
 
 In the example provided, `useDefault` is used to create a `user` state with a default value of `{ name: 'Adam' }`. The initial state is set to `{ name: 'John' }`. In the `UserCard` component, `user` is displayed along with an input field to update its name. A clear button is also provided to reset the state to `null`. Finally, the component is rendered using `ReactDOM.createRoot()`.

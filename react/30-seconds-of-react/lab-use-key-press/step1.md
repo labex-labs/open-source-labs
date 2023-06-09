@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Revised:
-
 This function listens for changes in the pressed state of a given key. To use it:
 
 - Call `useKeyPress()` with the target key as an argument.

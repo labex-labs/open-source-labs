@@ -2,10 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's the revised content:
-
----
-
 This code renders a carousel component. Here are the steps it takes:
 
 1. It uses the `useState()` hook to create the `active` state variable and initializes it to `0` (the index of the first item in the carousel).

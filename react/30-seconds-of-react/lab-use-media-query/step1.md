@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Revised:
-
 This function checks if the current environment matches a given media query and returns the appropriate value.
 
 - First, check if `Window` and `Window.matchMedia()` exist. If not (e.g. in an SSR environment or unsupported browser), return `whenFalse`.

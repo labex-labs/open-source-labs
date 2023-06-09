@@ -2,10 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's the revised content:
-
----
-
 Create a table element with two columns, `ID` and `Value`, where each row is generated dynamically from an array of primitive values.
 
 To accomplish this, use the `Array.prototype.map()` method to create a new array of JSX elements representing each item in the input `data` array as a `<tr>` element with an appropriate `key`. Within each `<tr>`, add two `<td>` elements to display the row's index and value respectively.

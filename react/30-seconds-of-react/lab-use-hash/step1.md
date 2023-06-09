@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Revised:
-
 This code tracks and updates the browser's location hash value. To use it, follow these steps:
 
 1. Use the `useState()` hook to lazily get the `hash` property of the `Location` object.
@@ -15,7 +13,7 @@ This code tracks and updates the browser's location hash value. To use it, follo
 7. Render the current `hash` value in a component.
 8. Create an input field that allows the user to change the `hash` value.
 
-Here's the updated code:
+Here's the code:
 
 ```jsx
 const useHash = () => {

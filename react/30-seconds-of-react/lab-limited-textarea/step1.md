@@ -2,7 +2,7 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here's a revised version of the code that is clearer, more concise, and more coherent:
+Here's the code:
 
 ```jsx
 const LimitedTextarea = ({ rows, cols, value, limit }) => {
@@ -35,7 +35,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 ```
 
-In this revised code, we:
+In this code, we:
 
 - Simplified the comments to provide a more concise overview of what each part of the code does.
 - Removed unnecessary code comments.

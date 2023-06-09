@@ -22,7 +22,7 @@ To render a toggle component, follow these steps:
 }
 ```
 
-Here's the revised code:
+Here's the code:
 
 ```jsx
 const Toggle = ({ defaultToggled = false }) => {

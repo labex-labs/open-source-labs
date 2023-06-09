@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Revised:
-
 This code handles the event of clicking outside of a wrapped component. It works by creating a custom hook that takes a `ref` and a `callback` to handle the `click` event. The `useEffect()` hook is used to append and clean up the `click` event, while the `useRef()` hook is used to create a `ref` for the click component and pass it to the `useClickOutside` hook.
 
 ```jsx

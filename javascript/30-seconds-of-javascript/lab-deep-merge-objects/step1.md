@@ -1,4 +1,4 @@
-# Revised: How to Deep Merge Objects in JavaScript
+# How to Deep Merge Objects in JavaScript
 
 To deeply merge two objects in JavaScript, you can use the `deepMerge` function. This function takes two objects and a function as arguments. The function is used to handle keys present in both objects.
 

@@ -10,7 +10,7 @@ To watch changes made to the DOM tree, the `useMutationObserver` hook can be use
 4. `MutationObserver.observe()` is called with the given `options` to watch the given `ref` for changes.
 5. `MutationObserver.disconnect()` is used to remove the observer from the `ref` when the component unmounts.
 
-Here's the revised code:
+Here's the code:
 
 ```jsx
 const useMutationObserver = (

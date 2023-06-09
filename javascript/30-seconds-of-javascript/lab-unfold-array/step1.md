@@ -1,4 +1,4 @@
-# Revised Unfold Array
+# Unfold Array
 
 To create an array using an iterator function and an initial seed value, follow these steps:
 

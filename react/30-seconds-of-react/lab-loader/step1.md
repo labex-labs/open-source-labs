@@ -2,10 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Here is the revised content:
-
----
-
 **Renders a spinning loader component.**
 
 To render a spinning loader component, follow these steps:

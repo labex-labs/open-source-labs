@@ -8,7 +8,7 @@ This function executes a callback function every time the window is scrolled. To
 2. Use the `useEffect()` hook and `EventTarget.addEventListener()` to listen to the `'scroll'` event of the `Window` object, and assign the listener reference to `listener.current`.
 3. Use `EventTarget.removeEventListener()` to remove any existing listeners when the component unmounts.
 
-Here's the revised code:
+Here's the code:
 
 ```jsx
 const useOnWindowScroll = (callback) => {

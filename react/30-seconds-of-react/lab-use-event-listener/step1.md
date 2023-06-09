@@ -9,7 +9,7 @@ This function adds an event listener for the specified event type on the given e
 3. Use the `useEffect()` hook to add an event listener to the given element and clean up when unmounting.
 4. Omit the last argument, `el`, to use the `Window` by default.
 
-Here's the revised code:
+Here's the code:
 
 ```jsx
 const useEventListener = (type, handler, el = window) => {
