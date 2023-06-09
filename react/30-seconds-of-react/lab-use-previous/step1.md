@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Rewritten:
-
 To store the previous state or props, you can create a custom hook. Here are the steps:
 
 1. Define a custom hook that takes a `value` argument.

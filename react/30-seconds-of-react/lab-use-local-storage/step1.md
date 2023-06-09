@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Rewritten:
-
 This function creates a value that is saved to `localStorage` and a function to modify it. Here's how it works:
 
 1. To create the value, use the `useState()` hook with a function to initialize it lazily.

@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Rewritten:
-
 This code snippet provides a controlled `<input>` element that utilizes a callback function to inform its parent about any updates to its value. Here's how it works:
 
 - The controlled input field's value is determined by the `value` prop passed down from the parent.

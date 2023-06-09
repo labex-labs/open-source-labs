@@ -2,8 +2,6 @@
 
 > `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
-Refactored:
-
 - The `useMap()` hook creates a stateful `Map` object and a set of functions to manipulate it using React hooks.
 - The `useState()` hook initializes the `Map` state with the `initialValue`.
 - The `useMemo()` hook creates a set of non-mutating actions that manipulate the `map` state variable using the state setter to create a new `Map` every time.
