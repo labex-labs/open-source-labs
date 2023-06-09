@@ -1,4 +1,4 @@
-# Revised Flat Iterator Explanation
+# Flat Iterator Explanation
 
 To create a generator that iterates over an iterable and flattens nested iterables, follow these steps:
 

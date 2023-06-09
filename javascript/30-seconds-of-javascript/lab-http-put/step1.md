@@ -13,7 +13,7 @@ To make a `PUT` request to a specified URL using `XMLHttpRequest` web API, follo
 9. In your code, create a `data` variable that contains a JSON string with the data to be sent in the request.
 10. Call the `httpPut` function with the `url`, `data`, and a callback function that logs the response to the console.
 
-Here's the updated code:
+Here's the code:
 
 ```js
 const httpPut = (url, data, callback, err = console.error) => {

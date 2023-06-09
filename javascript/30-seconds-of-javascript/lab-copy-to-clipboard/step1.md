@@ -1,4 +1,4 @@
-# Revised Output
+# Output
 
 To copy a string to the clipboard, use the following function:
 

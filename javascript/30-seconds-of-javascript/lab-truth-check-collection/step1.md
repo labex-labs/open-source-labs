@@ -1,4 +1,4 @@
-# Refactored Truth Check Collection Function
+# Truth Check Collection Function
 
 To practice coding, type `node` in Terminal/SSH.
 
