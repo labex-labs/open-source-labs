@@ -1,6 +1,6 @@
 # React useGetSet Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code snippet defines a custom React hook called `useGetSet` that creates a stateful value and returns a pair of functions for getting and setting its value. The `Counter` component uses this hook to implement a delayed increment of a count displayed in a button.
 

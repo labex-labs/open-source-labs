@@ -1,6 +1,6 @@
 # React useIntersectionObserver Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To observe visibility changes for a given element, follow these steps:
 

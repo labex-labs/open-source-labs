@@ -1,6 +1,6 @@
 # Uncontrolled Select Element
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This is a component that renders a controlled `<select>` element. The component accepts an array of values and a callback function to pass the selected value to its parent component. Here are the steps to use this component:
 

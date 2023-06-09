@@ -1,6 +1,6 @@
 # React useForm Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To create a stateful value from the fields in a form, you can use the `useState()` hook to create a state variable for the values in the form. Then, create a function that updates the state variable based on the appropriate event triggered by a form field.
 

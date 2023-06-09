@@ -1,6 +1,6 @@
 # Stateful Checkbox With Multiple Selection
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code renders a list of checkboxes and sends the selected value(s) to the parent component using a callback function. Here are the revised steps to create it:
 

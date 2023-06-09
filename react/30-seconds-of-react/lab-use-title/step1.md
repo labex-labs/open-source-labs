@@ -1,6 +1,6 @@
 # React useTitle Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To set the title of the page, you can use the `useTitle` custom hook. This hook uses `typeof` to check if the `Document` is defined. If it is defined, the `useRef()` hook is used to store the original title of the `Document`. The `useEffect()` hook is then used to set `Document.title` to the passed value when the component mounts and clean up when unmounting.
 

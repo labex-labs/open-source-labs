@@ -1,6 +1,6 @@
 # React useInterval Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To implement `setInterval()` in a declarative manner, you can create a custom hook that takes a `callback` and a `delay`. The first step is to use the `useRef()` hook to create a `ref` for the callback function. Then, use a `useEffect()` hook to remember the latest `callback` whenever it changes. Finally, use a `useEffect()` hook dependent on `delay` to set up the interval and clean up.
 

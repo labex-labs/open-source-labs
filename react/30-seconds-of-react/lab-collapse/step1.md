@@ -1,6 +1,6 @@
 # Collapsible Content
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This function renders a collapsible component with a button that toggles the visibility of its content. Here's how to use it:
 

@@ -1,6 +1,6 @@
 # Textarea With Character Limit
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 Here's a revised version of the code that is clearer, more concise, and more coherent:
 

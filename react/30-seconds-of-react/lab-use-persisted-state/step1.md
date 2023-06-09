@@ -1,6 +1,6 @@
 # React usePersistedState Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This hook returns a stateful value that is persisted in `localStorage`, along with a function that can be used to update it. To use it, follow these steps:
 

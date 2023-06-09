@@ -1,6 +1,6 @@
 # Uncontrolled Textarea Element
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This function renders a `<textarea>` element that is not controlled by the parent component. It uses a callback function to pass the value of the input to the parent component.
 

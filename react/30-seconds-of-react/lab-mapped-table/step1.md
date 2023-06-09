@@ -1,6 +1,6 @@
 # Object Table View
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This component renders a table with rows that are dynamically created from an array of objects and a list of property names. To achieve this:
 

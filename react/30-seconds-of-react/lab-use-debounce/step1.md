@@ -1,6 +1,6 @@
 # React useDebounce Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To debounce a given value, you can create a custom hook that takes a `value` and a `delay`. Use the `useState()` hook to store the debounced value, and the `useEffect()` hook to update the debounced value every time `value` is updated. To delay invoking the setter of the previous state variable by `delay` ms, use `setTimeout()`. To clean up when dismounting the component, use `clearTimeout()`. This is particularly useful when dealing with user input.
 

@@ -1,6 +1,6 @@
 # React useDelayedState Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To delay the creation of a stateful value until a condition is met, follow these steps:
 

@@ -1,6 +1,6 @@
 # React useTimeout Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To implement `setTimeout()` in a declarative manner, create a custom hook that takes a `callback` and a `delay`. Use the `useRef()` hook to create a `ref` for the callback function, and use the `useEffect()` hook to remember the latest callback. Then, use the `useEffect()` hook to set up the timeout and clean up.
 

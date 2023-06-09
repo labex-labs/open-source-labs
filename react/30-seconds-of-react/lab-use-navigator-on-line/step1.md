@@ -1,6 +1,6 @@
 # React useNavigatorOnLine Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To check if the client is online or offline, you can create a `getOnLineStatus` function that utilizes the `Navigator.onLine` web API. Then, to implement this functionality in a React component, you can use the `useNavigatorOnLine` custom hook. This hook creates a state variable called `status` using the `useState()` hook and sets it to the value returned by `getOnLineStatus()`. The `useEffect()` hook is used to add event listeners for when the online/offline status changes, update the `status` state variable accordingly, and clean up those listeners when the component unmounts. Finally, the `isOnline` variable returned by `useNavigatorOnLine()` can be used to render a message indicating whether the client is online or offline.
 

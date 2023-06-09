@@ -1,6 +1,6 @@
 # Countdown Timer
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code creates a countdown timer that prints a message when it reaches zero. To implement it, the following steps are taken:
 

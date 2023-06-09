@@ -1,6 +1,6 @@
 # React useOnWindowScroll Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This function executes a callback function every time the window is scrolled. To implement it:
 

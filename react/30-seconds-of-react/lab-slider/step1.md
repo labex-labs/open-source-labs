@@ -1,6 +1,6 @@
 # Uncontrolled Range Input
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To create a slider in React, use the `Slider` component and pass in the `min`, `max`, `defaultValue`, and `onValueChange` props.
 

@@ -1,6 +1,6 @@
 # React useOnWindowResize Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code executes a callback function every time the window is resized. To implement it, you should follow these steps:
 

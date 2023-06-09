@@ -1,6 +1,6 @@
 # React useComponentDidUpdate Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code provides a custom hook called `useComponentDidUpdate` that executes a provided `callback` function whenever a component is updated. Here are the steps that the hook follows:
 

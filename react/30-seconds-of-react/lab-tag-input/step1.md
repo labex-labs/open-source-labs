@@ -1,6 +1,6 @@
 # Tag Input Field
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To render a tag input field, you can define a `TagInput` component using the `useState()` hook to initialize an array from the `tags` prop. Use `Array.prototype.map()` on the collected nodes to render the list of tags. To add a new tag, define the `addTagData` method, which will be executed when the `Enter` key is pressed. The `addTagData` method calls `setTagData` to add the new tag using the spread (`...`) operator to prepend the existing tags and add the new tag at the end of the `tagData` array. To remove a tag, define the `removeTagData` method, which will be executed on clicking the delete icon in the tag. Use `Array.prototype.filter()` in the `removeTagData` method to remove the tag using its `index` to filter it out from the `tagData` array.
 

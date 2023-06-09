@@ -1,6 +1,6 @@
 # React useComponentWillUnmount Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To execute a callback immediately before a component is unmounted and destroyed, you can use the `useEffect()` hook with an empty array as the second argument. Return the provided callback to be executed only once before cleanup. This behavior is similar to the `componentWillUnmount()` lifecycle method of class components. You can also use the following code snippet to create a custom hook `useComponentWillUnmount()` that takes an `onUnmountHandler` function as an argument and executes it before the component is unmounted:
 

@@ -1,6 +1,6 @@
 # Button With Ripple Effect
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code renders a button component that creates a rippling effect when clicked. Here's how it works:
 

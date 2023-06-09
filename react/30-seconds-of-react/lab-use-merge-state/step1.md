@@ -1,6 +1,6 @@
 # React useMergeState Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To create a stateful value and a function to update it by merging the new state provided, use the `useState()` hook to create a state variable and initialize it to `initialState`. Create a function that will update the state variable by merging the new state provided with the existing one. If the new state is a function, call it with the previous state as the argument and use the result. If no argument is provided, the state variable will be initialized with an empty object (`{}`). The following code demonstrates how to implement this using the `useMergeState` custom hook:
 

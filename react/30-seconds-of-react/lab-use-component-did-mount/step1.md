@@ -1,6 +1,6 @@
 # React useComponentDidMount Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To execute a callback function immediately after a component is mounted, you can use the `useEffect()` hook with an empty array as the second argument. This will ensure that the provided callback is executed only once when the component is mounted. The `useComponentDidMount()` function shown below uses this hook to implement the same behavior as the `componentDidMount()` lifecycle method of class components.
 

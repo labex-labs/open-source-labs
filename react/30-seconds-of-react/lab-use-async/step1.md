@@ -1,6 +1,6 @@
 # React useAsync Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code creates a custom hook that handles asynchronous calls. It accepts a handler function, `fn`, and returns an object containing the properties of `state` (`value`, `error`, and `loading`) and an asynchronous `run` function. The `run` function runs the provided callback, `fn`, while using `dispatch` to update `state` as necessary.
 

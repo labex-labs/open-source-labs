@@ -1,6 +1,6 @@
 # Collapsible Accordion
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To render an accordion menu with multiple collapsible content elements, you can follow these steps:
 

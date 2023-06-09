@@ -1,6 +1,6 @@
 # React useCopyToClipboard Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To copy the given text to the clipboard, use the `copyToClipboard` snippet provided in `/js/s/copy-to-clipboard/` along with the `useState()` hook to initialize the `copied` variable. To create a callback for the `copyToClipboard` method, use the `useCallback()` hook. To reset the `copied` state variable when the `text` changes, use the `useEffect()` hook. Finally, return the `copied` state variable and the `copy` callback.
 

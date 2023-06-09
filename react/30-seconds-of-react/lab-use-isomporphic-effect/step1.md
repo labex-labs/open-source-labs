@@ -1,6 +1,6 @@
 # React useIsomporphicEffect Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To ensure the proper use of `useEffect()` on the server and `useLayoutEffect()` on the client, you can use `typeof` to check if the `Window` object is defined. If it is, return `useLayoutEffect()`, otherwise return `useEffect()`. Here is an example of how to implement this:
 

@@ -1,6 +1,6 @@
 # Data List
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This function renders a list of items from an array of primitive values. It can be used to conditionally render an ordered or unordered list based on the value of the `isOrdered` prop. To render each item from the `data` array, it uses `Array.prototype.map()` to create a `<li>` element with a unique `key` for every item.
 

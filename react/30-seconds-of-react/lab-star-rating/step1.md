@@ -1,6 +1,6 @@
 # Star Rating
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 Create a `Star` component that renders each individual star with the appropriate appearance based on the parent component's state. Then, define a `StarRating` component that uses the `useState()` hook to define the `rating` and `selection` state variables with the appropriate initial values.
 

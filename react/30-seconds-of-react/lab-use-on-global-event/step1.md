@@ -1,6 +1,6 @@
 # React useOnGlobalEvent Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This function executes a callback function whenever an event occurs on the global object. To implement this function:
 

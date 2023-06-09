@@ -1,6 +1,6 @@
 # Uncontrolled Input Field
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This code renders an uncontrolled `<input>` element that uses a callback function to inform its parent about value updates. To use it:
 

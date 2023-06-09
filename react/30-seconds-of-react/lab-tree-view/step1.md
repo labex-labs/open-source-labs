@@ -1,6 +1,6 @@
 # Expandable Object Tree View
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 The following code renders a collapsible tree view of a JSON object or array. By using the `useState()` hook to create the `isToggled` state variable, you can determine the initial state of the content (collapsed/expanded) by passing the `toggled` prop. The appearance of the component is determined based on `isParentToggled`, `isToggled`, `name`, and checking for `Array.isArray()` on `data`.
 

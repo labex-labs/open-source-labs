@@ -1,6 +1,6 @@
 # React useEffectOnce Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 The code below implements a function `useEffectOnce(callback, when)` that runs a `callback` only once when a `when` condition becomes true.
 

@@ -1,6 +1,6 @@
 # React useSessionStorage Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To create a stateful value that is persisted to `sessionStorage`, and a function to update it, follow these steps:
 

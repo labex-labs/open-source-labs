@@ -1,6 +1,6 @@
 # React useToggler Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To create a boolean state variable that can be toggled between its two states, follow these steps:
 

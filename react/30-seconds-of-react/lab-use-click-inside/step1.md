@@ -1,6 +1,6 @@
 # React useClickInside Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To handle a click event inside a component, you can create a custom hook called `useClickInside` that takes a `ref` and a `callback`. Use the `useEffect()` hook to append and clean up the `click` event, and the `useRef()` hook to create a `ref` for your click component and pass it to the `useClickInside` hook. Here's the code:
 

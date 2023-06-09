@@ -1,6 +1,6 @@
 # React useUpdate Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To force a component to re-render when called, use the `useReducer()` hook to create a new object every time it's updated and return its dispatch. Here is an example implementation of `useUpdate()` function:
 

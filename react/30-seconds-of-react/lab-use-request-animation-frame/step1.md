@@ -1,6 +1,6 @@
 # React useRequestAnimationFrame Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 To run an animating function before every repaint, use the `useRef()` hook to create `requestRef` and `previousTimeRef` variables. Then, define an `animate()` function that updates these variables, runs the `callback`, and calls `Window.requestAnimationFrame()` perpetually. Lastly, use the `useEffect()` hook with an empty array to initialize the value of `requestRef` with `Window.requestAnimationFrame()`, and use the returned value and `Window.cancelAnimationFrame()` to clean up when the component unmounts.
 

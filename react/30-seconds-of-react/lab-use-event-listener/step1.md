@@ -1,6 +1,6 @@
 # React useEventListener Hook
 
-> `index.html` and `script.js` have already been provided in the VM.. In general, you only need to add code to `script.js` and `style.css`.
+> `index.html` and `script.js` have already been provided in the VM. In general, you only need to add code to `script.js` and `style.css`.
 
 This function adds an event listener for the specified event type on the given element. To use this function, follow these steps:
 
