@@ -9,6 +9,7 @@ git stash save
 git stash save -u
 # Creates a new stash, including untracked files
 
-git stash save "Bugfix WIP"
-# Creates a new stash with the message "Bugfix WIP"
+git stash save "My changes"
+# Creates a new stash with the message "My changes"
+git stash apply
 ```
