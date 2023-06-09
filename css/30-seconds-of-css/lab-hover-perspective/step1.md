@@ -1,11 +1,16 @@
-# Applying a Perspective Transform with a Hover Animation
+# Perspective Transform on Hover
 
-To apply a perspective transform with a hover animation to an element, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In `index.html` and `style.css`, create a container element with two child elements having the class `image-card`.
-2. Use the CSS `transform` property with the `perspective()` and `rotateY()` functions to create a perspective for the element. Set the `rotateY()` value to positive for the left element and negative for the right element.
-3. Use a CSS `transition` to update the `transform` attribute's value on hover.
-4. Change the `rotateY()` value to a smaller angle on hover to create a mirror perspective effect.
+To create a perspective transform with a hover animation on an element:
+
+1. Use the `transform` property with the `perspective()` and `rotateY()` functions to apply a perspective to the element. For example, to create a left perspective, use `transform: perspective(1500px) rotateY(15deg);`. To create a right perspective, use `transform: perspective(1500px) rotateY(-15deg);`.
+
+2. Use the `transition` property to animate the `transform` property when the element is hovered. For example, `transition: transform 1s ease 0s;`.
+
+3. To mirror the perspective effect from left to right, change the `rotateY()` value to negative on the right perspective. For example, use `transform: perspective(1500px) rotateY(-15deg);`.
+
+Example HTML:
 
 ```html
 <div class="card-container">
@@ -14,12 +19,9 @@ To apply a perspective transform with a hover animation to an element, follow th
 </div>
 ```
 
-```css
-.card-container {
-  display: flex;
-  justify-content: center;
-}
+Example CSS:
 
+```css
 .image-card {
   display: inline-block;
   box-sizing: border-box;
@@ -32,9 +34,8 @@ To apply a perspective transform with a hover animation to an element, follow th
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
-.perspective-left,
-.perspective-right {
-  transform: perspective(1500px);
+.perspective-left {
+  transform: perspective(1500px) rotateY(15deg);
   transition: transform 1s ease 0s;
 }
 
@@ -42,17 +43,14 @@ To apply a perspective transform with a hover animation to an element, follow th
   transform: perspective(3000px) rotateY(5deg);
 }
 
+.perspective-right {
+  transform: perspective(1500px) rotateY(-15deg);
+  transition: transform 1s ease 0s;
+}
+
 .perspective-right:hover {
   transform: perspective(3000px) rotateY(-5deg);
 }
-
-.perspective-left {
-  transform-origin: right center;
-  transform: rotateY(15deg) perspective(1500px);
-}
-
-.perspective-right {
-  transform-origin: left center;
-  transform: rotateY(-15deg) perspective(1500px);
-}
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

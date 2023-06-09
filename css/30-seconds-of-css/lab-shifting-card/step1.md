@@ -1,20 +1,16 @@
 # Shifting Card
 
-This code creates a card that shifts on hover.
+`index.html` and `style.css` have already been provided in the VM.
 
-To achieve this effect, follow these steps:
+To create a card that shifts on hover, follow these steps:
 
-1. Set the `perspective` property on the `.container` element to enable the shifting effect.
-
-2. Add a `transition` property to the `.card` element's `transform` property.
-
+1. Set the appropriate `perspective` on the `.container` element to allow for the shifting effect.
+2. Add a `transition` for the `transform` property of the `.card` element.
 3. Use `Document.querySelector()` to select the `.card` element and add event listeners for the `mousemove` and `mouseout` events.
+4. Use `Element.getBoundingClientRect()` to get the `x`, `y`, `width`, and `height` of the `.card` element.
+5. Calculate the relative distance as a value between `-1` and `1` for the `x` and `y` axes and apply it through the `transform` property.
 
-4. Use `Element.getBoundingClientRect()` to obtain the `.card` element's `x`, `y`, `width`, and `height`.
-
-5. Calculate the relative distance for the `x` and `y` axes as a value between `-1` and `1`, and apply it through the `transform` property.
-
-Here's the HTML:
+Here is the sample HTML and CSS code for the card:
 
 ```html
 <div class="container">
@@ -29,8 +25,6 @@ Here's the HTML:
   </div>
 </div>
 ```
-
-Here's the CSS:
 
 ```css
 .container {
@@ -62,7 +56,7 @@ Here's the CSS:
 }
 ```
 
-Here's the JavaScript:
+And here is the JavaScript code to add the hover effect:
 
 ```js
 const card = document.querySelector(".shifting-card");
@@ -86,3 +80,5 @@ const handleOut = (e) => {
 card.addEventListener("mousemove", handleMove);
 card.addEventListener("mouseout", handleOut);
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

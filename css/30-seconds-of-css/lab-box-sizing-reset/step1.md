@@ -1,13 +1,10 @@
 # Box-Sizing Reset
 
-This code block contains the necessary code to reset the box-model and ensure that the `width` and `height` properties are not affected by `border` or `padding`.
+`index.html` and `style.css` have already been provided in the VM.
 
-To achieve this:
+To ensure that the `width` and `height` of an element are not affected by `border` or `padding`, use the `box-sizing: border-box` CSS property. This includes the `padding` and `border` in the calculation of the element's `width` and `height`. If you want to inherit the `box-sizing` property from a parent element, use `box-sizing: inherit`.
 
-- Set `box-sizing: border-box` to include the width and height of `padding` and `border` when calculating the element's `width` and `height`.
-- Use `box-sizing: inherit` to pass down the `box-sizing` property from parent to child elements.
-
-Here's an example code block:
+Here's an example of using `box-sizing` property with two `div` elements:
 
 ```html
 <div class="box">border-box</div>
@@ -31,6 +28,7 @@ Here's an example code block:
   color: white;
   border: 1px solid #ba1b1d;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .content-box {
@@ -38,4 +36,6 @@ Here's an example code block:
 }
 ```
 
-Note that the `box-sizing` property is set to `border-box` for all `div` elements, and then overridden for the `.content-box` class with a value of `content-box`. The `*` selector, along with `::before` and `::after` pseudo-elements, is used to ensure that all elements inherit the `box-sizing` property from their parent elements.
+In this example, the first `div` element has `box-sizing: border-box`, and the second `div` element has `box-sizing: content-box`.
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

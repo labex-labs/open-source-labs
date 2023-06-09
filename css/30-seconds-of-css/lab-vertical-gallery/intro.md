@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will be exploring CSS programming by creating a responsive image gallery with a vertical scroll. The purpose of this lab is to help you understand how to use flexbox, scroll-snap, and scrollbar styling in CSS to create a visually appealing image gallery that is both functional and easy to use. By the end of this lab, you will have a better understanding of how to create dynamic and responsive layouts in CSS.
+In this lab, we will explore the basics of CSS programming by creating a simple image gallery with a vertical scroll. You will learn how to use flexbox and scroll-snap properties to create a smooth scroll effect, hide scrollbars, and style the scrollbar thumb. By the end of this lab, you will have gained a better understanding of how to use CSS to create responsive and interactive web designs.

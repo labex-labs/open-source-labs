@@ -1,16 +1,16 @@
 # Hamburger Button
 
-To create a hamburger button that transitions to a cross button on hover, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Add a `.hamburger-menu` container `div` that contains three bars - top, middle, and bottom.
-2. Set the container to `display: flex` with `flex-flow: column wrap` to ensure that the bars are aligned vertically.
+To create a hamburger menu that transitions to a cross button on hover, follow these steps:
+
+1. Use a `.hamburger-menu` container `div` which contains the top, bottom, and middle bars.
+2. Set the container to `display: flex` with `flex-flow: column wrap`.
 3. Add distance between the bars using `justify-content: space-between`.
-4. Set the height and width of the container to `2.5rem` to ensure that the button is of a reasonable size.
-5. Set `cursor: pointer` to indicate that the button is clickable.
-6. Set the height, background, border radius, and margin of the bars using `.hamburger-menu .bar` selector.
-7. Set `transform-origin: left` so that the bars rotate around the left point.
-8. Set `transition: all 0.5s` to ensure that the animation is smooth.
-9. Use `transform: rotate()` to rotate the top and bottom bars by 45 degrees and `opacity: 0` to fade the middle bar on hover.
+4. Use `transform: rotate()` to rotate the top and bottom bars by 45 degrees and `opacity: 0` to fade the middle bar on hover.
+5. Use `transform-origin: left` so that the bars rotate around the left point.
+
+Here's the corresponding HTML code:
 
 ```html
 <div class="hamburger-menu">
@@ -19,6 +19,8 @@ To create a hamburger button that transitions to a cross button on hover, follow
   <div class="bar bottom"></div>
 </div>
 ```
+
+And here's the CSS code:
 
 ```css
 .hamburger-menu {
@@ -51,3 +53,5 @@ To create a hamburger button that transitions to a cross button on hover, follow
   transform: rotate(-45deg);
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

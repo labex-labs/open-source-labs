@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore how to create a unique hover effect for links using CSS. Specifically, we will learn how to create a squiggle effect that adds some personality and whimsy to our website. By using a combination of a repeating linear-gradient and an animated SVG, we can create a fun and engaging user experience that sets our website apart.
+In this lab, we will learn how to create a Squiggle Link Hover Effect using CSS. This effect creates a squiggly animation when hovering over a link, adding a fun and dynamic element to your website. By using a linear-gradient background and an SVG with a squiggly path, we can achieve this effect with just a few lines of code.

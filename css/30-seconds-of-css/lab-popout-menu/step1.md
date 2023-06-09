@@ -1,24 +1,25 @@
 # Popout Menu
 
-To reveal an interactive popout menu on hover/focus, write the code in `index.html` and `style.css`.
+`index.html` and `style.css` have already been provided in the VM.
 
-Use the following CSS properties and selectors to achieve the desired result:
+To reveal an interactive popout menu on hover/focus, follow these steps:
 
-- `position: relative` for the parent element.
-- `position: absolute`, `visibility: hidden`, and `left: 100%` for the popout menu.
-- `:hover`, `:focus`, and `:focus-within` pseudo-class selectors to apply `visibility: visible` to the popout menu when the parent element is hovered/focused.
+1. Use `left: 100%` in the CSS to position the popout menu to the right of the parent element.
+2. Use `visibility: hidden` instead of `display: none` to hide the popout menu initially, to allow for transitions to be applied.
+3. Apply `:hover`, `:focus`, and `:focus-within` pseudo-class selectors to the parent element to display the popout menu when it's hovered/focused.
+4. Use the following HTML and CSS code:
 
-HTML code:
+HTML:
 
-```html
+```
 <div class="reference" tabindex="0">
   <div class="popout-menu">Popout menu</div>
 </div>
 ```
 
-CSS code:
+CSS:
 
-```css
+```
 .reference {
   position: relative;
   background: tomato;
@@ -30,7 +31,7 @@ CSS code:
   position: absolute;
   visibility: hidden;
   left: 100%;
-  background: #9c27b0;
+  background: #9C27B0;
   color: white;
   padding: 16px;
 }
@@ -41,3 +42,5 @@ CSS code:
   visibility: visible;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

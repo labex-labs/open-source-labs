@@ -1,13 +1,15 @@
 # Pulse Loader
 
+`index.html` and `style.css` have already been provided in the VM.
+
 To create a pulse effect loader animation using the `animation-delay` property, follow these steps:
 
-1. Define an animation at two points in the cycle using `@keyframes`. At `0%`, both `<div>` elements should be positioned at the center with no `width` or `height`. At `100%`, both elements should have increased `width` and `height`, but their `position` should be reset to `0`.
+1. Use `@keyframes` to define an animation for two `<div>` elements. Set the starting point (`0%`) for both elements to have no `width` or `height` and to be positioned at the center. For the ending point (`100%`), have both elements increase in `width` and `height`, but reset their `position` to `0`.
 2. Use `opacity` to transition from `1` to `0` when animating to give the `<div>` elements a disappearing effect as they expand.
-3. Set a predefined `width` and `height` for the parent container, `.ripple-loader`, and use `position: relative` to position its children.
-4. Use `animation-delay` on the second `<div>` element so that each element starts its animation at a different time.
+3. Set a predefined `width` and `height` for the parent container, `.ripple-loader`. Use `position: relative` to position its children.
+4. Use `animation-delay` on the second `<div>` element, so that each element starts its animation at a different time.
 
-Here's the code for the HTML and CSS:
+Here is the HTML and CSS code to achieve this:
 
 ```html
 <div class="ripple-loader">
@@ -51,3 +53,5 @@ Here's the code for the HTML and CSS:
   }
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

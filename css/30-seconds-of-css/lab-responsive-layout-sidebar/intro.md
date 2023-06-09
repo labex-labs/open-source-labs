@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will be focusing on CSS programming and creating a responsive layout with a sidebar using the CSS `display: grid` property. The purpose of this lab is to teach you how to create a flexible and dynamic layout that can adapt to different screen sizes and devices. By the end of this lab, you will have a better understanding of CSS grid and be able to create responsive designs for your web projects.
+In this lab, we will be exploring the world of CSS programming. The main objective of this lab is to provide hands-on experience with creating a responsive layout with a sidebar. By the end of this lab, you will have a better understanding of how to use `display: grid` and `minmax()` properties to create an effective and visually appealing layout.

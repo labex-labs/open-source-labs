@@ -1,8 +1,19 @@
-# How to Create a Stripes Background Pattern
+# Stripes Background Pattern
 
-To create a stripes background pattern, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In the `index.html` and `style.css` files, write the following code:
+This code creates a vertical stripe pattern on a white background.
+
+To create the pattern:
+
+- Set the `background-color` property to white.
+- Use `background-image` with a `linear-gradient()` value to create a vertical stripe.
+- Set the `background-size` property to specify the size of each stripe.
+- Set `background-repeat` to `repeat` to allow the pattern to fill the element.
+
+Note that the fixed `width` and `height` of the element are for demonstration purposes only.
+
+Here's an example code snippet:
 
 ```html
 <div class="stripes"></div>
@@ -19,10 +30,4 @@ To create a stripes background pattern, follow these steps:
 }
 ```
 
-2. Use the `background-color` property to set the background to white.
-
-3. Use the `background-image` property with a `linear-gradient()` value to create vertical stripes.
-
-4. Use the `background-size` property to specify the size of the pattern.
-
-Note that the fixed `height` and `width` of the element is for demonstration purposes only.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

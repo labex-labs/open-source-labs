@@ -1,19 +1,22 @@
 # Hover Shadow Box Animation
 
-This code creates a shadow box around the text when it is hovered. To implement this, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In the `style.css` file, set the `transform` property of the `.hover-shadow-box-animation` class to `perspective(1px) translateZ(0)`. This creates a 3D space effect and repositions the `p` element along the z-axis.
-2. Use the `box-shadow` property to make the box transparent.
-3. Use the `transition-property` property to enable transitions for both `box-shadow` and `transform`.
-4. Use the `:hover`, `:active`, and `:focus` pseudo-class selectors to apply a new `box-shadow` and `transform: scale(1.2)` to change the scale of the text.
+To create a shadow box around the text when it is hovered, follow these steps:
 
-To use the code, add the following `html` code to your `index.html` file:
+1. Set `transform: perspective(1px)` to give the element a 3D space by affecting the distance between the Z plane and the user, and `translateZ(0)` to reposition the `p` element along the z-axis in 3D space.
+2. Use `box-shadow` to make the box transparent.
+3. Enable transitions for both `box-shadow` and `transform` by using the `transition-property` property.
+4. Apply a new `box-shadow` and `transform: scale(1.2)` to change the scale of the text by using the `:hover`, `:active`, and `:focus` pseudo-class selectors.
+5. Add the class `hover-shadow-box-animation` to the `p` element.
+
+Here's the HTML code:
 
 ```html
 <p class="hover-shadow-box-animation">Box it!</p>
 ```
 
-And add the following `css` code to your `style.css` file:
+And here's the CSS code:
 
 ```css
 .hover-shadow-box-animation {
@@ -22,8 +25,7 @@ And add the following `css` code to your `style.css` file:
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   margin: 10px;
-  transition-duration: 0.3s;
-  transition-property: box-shadow, transform;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .hover-shadow-box-animation:hover,
@@ -33,3 +35,5 @@ And add the following `css` code to your `style.css` file:
   transform: scale(1.2);
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

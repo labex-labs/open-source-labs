@@ -1,6 +1,8 @@
 # Image Text Overlay
 
-To display a text on top of an image using an overlay, write the code in `index.html` and `style.css`. Use `backdrop-filter` to apply a `blur(14px)` and `brightness(80%)` effect, which makes the text readable regardless of the background image and color.
+`index.html` and `style.css` have already been provided in the VM.
+
+To display text on top of an image with an overlay, use the `backdrop-filter` property to apply a `blur(14px)` and `brightness(80%)` effect. This ensures that the text is readable regardless of the background image and color. Here is an example HTML code:
 
 ```html
 <div>
@@ -9,7 +11,7 @@ To display a text on top of an image using an overlay, write the code in `index.
 </div>
 ```
 
-The CSS code should be as follows:
+And the corresponding CSS code:
 
 ```css
 div {
@@ -27,3 +29,5 @@ div {
   backdrop-filter: blur(14px) brightness(80%);
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

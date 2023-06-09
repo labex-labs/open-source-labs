@@ -1,4 +1,4 @@
-# Revised Debounce Promise
+# Debounce Promise
 
 To create a debounced function that returns a promise, delaying invoking the provided function until at least `ms` milliseconds have elapsed since the last time it was invoked, use the following steps:
 

@@ -1,8 +1,10 @@
 # Zebra Striped List
 
-To create a striped list with alternating background colors, write the code in `index.html` and `style.css`. Use the `:nth-child(odd)` or `:nth-child(even)` pseudo-class selectors to apply a different `background-color` to elements based on their position in a group of siblings. Note that you can use this technique to apply different styles to other HTML elements like `<div>`, `<tr>`, `<p>`, `<ol>`, etc.
+`index.html` and `style.css` have already been provided in the VM.
 
-Here's an example code block:
+To create a list with alternating background colors, use the `:nth-child(odd)` or `:nth-child(even)` pseudo-class selectors to apply a different `background-color` to elements based on their position among siblings. This can be applied to various HTML elements such as `<div>`, `<tr>`, `<p>`, `<ol>`, etc.
+
+Here's an example of how to create a striped list with `<li>` elements:
 
 ```html
 <ul>
@@ -14,10 +16,10 @@ Here's an example code block:
 </ul>
 ```
 
-To apply the alternating background colors, add the following code block to `style.css`:
-
 ```css
 li:nth-child(odd) {
   background-color: #999;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

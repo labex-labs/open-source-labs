@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will be exploring CSS programming by creating a custom radio button with animation on state change. This lab will help you to understand how to style radio buttons and create animation effects using CSS. By the end of this lab, you will have a better understanding of how to create custom CSS styles and animations for your web projects.
+In this lab, we will explore CSS programming concepts by creating a custom radio button with animation on state change. The lab will guide you through the process of using flexbox to create a layout for the radio buttons, resetting the styles on the `<input>` element, and using the `::before` element to create the inner circle of the radio button. By the end of the lab, you will have a better understanding of CSS styling and animation techniques.

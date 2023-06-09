@@ -1,17 +1,13 @@
 # Fullscreen
 
-To apply styles to an element when in fullscreen mode, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Use the `:fullscreen` CSS pseudo-element selector to select and style an element that is displayed in fullscreen mode.
-
-2. Use a `<button>` and `Element.requestFullscreen()` to create a button that makes the element fullscreen for the purposes of previewing the style.
-
-Here is an example code block that demonstrates this technique:
+To style an element in fullscreen mode, you can use the `:fullscreen` CSS pseudo-element selector. You can also create a button that makes the element fullscreen for preview purposes using a `<button>` and `Element.requestFullscreen()`. Here's an example code:
 
 ```html
 <div class="container">
   <p>
-    <em>Click the button below to enter the element into fullscreen mode.</em>
+    <em>Click the button below to enter the element into fullscreen mode. </em>
   </p>
   <div class="element" id="element">
     <p>I change color in fullscreen mode!</p>
@@ -45,13 +41,17 @@ Here is an example code block that demonstrates this technique:
   font-size: 3em;
 }
 
+/* For Internet Explorer */
 .element:-ms-fullscreen p {
   visibility: visible;
 }
 
+/* For modern browsers */
 .element:fullscreen {
   background-color: #e4708a;
   width: 100vw;
   height: 100vh;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

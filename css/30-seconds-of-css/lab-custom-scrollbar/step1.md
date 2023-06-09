@@ -1,14 +1,8 @@
 # Custom Scrollbar
 
-This code customizes the scrollbar style for elements with scrollable overflow. The code can be written in `index.html` and `style.css`.
+`index.html` and `style.css` have already been provided in the VM.
 
-Here are the steps to style the scrollbar element, track, and thumb:
-
-- Use `::-webkit-scrollbar` to style the scrollbar element.
-- Use `::-webkit-scrollbar-track` to style the scrollbar track (the background of the scrollbar).
-- Use `::-webkit-scrollbar-thumb` to style the scrollbar thumb (the draggable element).
-
-Please note that this technique only works on WebKit-based browsers since scrollbar styling doesn't appear to be on any standards track.
+To customize the scrollbar style for elements with scrollable overflow, you can use `::-webkit-scrollbar` to style the scrollbar element, `::-webkit-scrollbar-track` to style the scrollbar track (the background of the scrollbar), and `::-webkit-scrollbar-thumb` to style the scrollbar thumb (the draggable element). However, note that this technique only works on WebKit-based browsers, and scrollbar styling is not on any standards track. Here is an example of how to use these selectors in HTML and CSS:
 
 ```html
 <div class="custom-scrollbar">
@@ -41,3 +35,5 @@ Please note that this technique only works on WebKit-based browsers since scroll
   border-radius: 12px;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

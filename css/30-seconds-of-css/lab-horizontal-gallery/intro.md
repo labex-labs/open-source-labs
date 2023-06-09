@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will work on a CSS programming project to create a horizontally scrollable image gallery with a snap effect. We will use various CSS properties and JavaScript methods to achieve this functionality, including `scroll-snap-type`, `overscroll-behavior-x`, `scroll-snap-align`, and `Element.scrollTo()`. Through this lab, you will learn how to create a dynamic image gallery that enhances user experience and engagement.
+In this lab, we will delve into the world of CSS programming to create a responsive image gallery with a horizontal scroll. The purpose of this lab is to teach you how to use CSS properties to create a visually appealing and interactive gallery that allows users to scroll through images seamlessly. By the end of this lab, you will have a solid understanding of how to create a horizontal scrollable image gallery using CSS.

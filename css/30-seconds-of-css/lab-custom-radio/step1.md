@@ -1,13 +1,15 @@
 # Custom Radio Button
 
-This code creates a styled radio button with animation on state change. To use it, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Create a `.radio-container` element using flexbox to create the appropriate layout for the radio buttons.
+To create a styled radio button with animation on state change, follow these steps:
+
+1. Create a `.radio-container` using flexbox to create the appropriate layout for the radio buttons.
 2. Reset the styles on the `<input>` and use it to create the outline and background of the radio button.
-3. Use the `::before` pseudo-element to create the inner circle of the radio button.
-4. Use `transform: scale(1)` and a CSS transition to create an animation effect on state change.
+3. Use the `::before` element to create the inner circle of the radio button.
+4. Create an animation effect on state change by using `transform: scale(1)` and a CSS transition.
 
-Here's the code you need to add to your `index.html` and `style.css` files:
+Here is an example HTML snippet:
 
 ```html
 <div class="radio-container">
@@ -18,15 +20,12 @@ Here's the code you need to add to your `index.html` and `style.css` files:
 </div>
 ```
 
+And here is the corresponding CSS:
+
 ```css
 .radio-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  height: 64px;
-  background-color: #ffffff;
-  color: #222;
 }
 
 .radio-container * {
@@ -38,9 +37,8 @@ Here's the code you need to add to your `index.html` and `style.css` files:
   width: 16px;
   height: 16px;
   margin: 0;
-  border-radius: 50%;
   border: 1px solid #cccfdb;
-  background-color: #ffffff;
+  border-radius: 50%;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -53,12 +51,12 @@ Here's the code you need to add to your `index.html` and `style.css` files:
   height: 6px;
   border-radius: 50%;
   transform: scale(0);
-  transition: transform 0.3s ease-in-out;
+  transition: 0.3s transform ease-in-out;
   box-shadow: inset 6px 6px #ffffff;
 }
 
 .radio-input:checked {
-  background-color: #0077ff;
+  background: #0077ff;
   border-color: #0077ff;
 }
 
@@ -69,9 +67,8 @@ Here's the code you need to add to your `index.html` and `style.css` files:
 .radio {
   cursor: pointer;
   padding: 6px 8px;
-}
-
-.radio:not(:last-child) {
   margin-right: 6px;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

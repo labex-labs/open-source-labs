@@ -1,17 +1,19 @@
-# Hiding Empty Elements
+# Hide Empty Elements
 
-To hide elements with no content, use the `:empty` pseudo-class to select them.
+`index.html` and `style.css` have already been provided in the VM.
 
-Here's an example of how to use it:
+To hide elements with no content, use the `:empty` pseudo-class. For example, if you have the following HTML code:
 
 ```html
 <p>Lorem ipsum dolor sit amet. <button></button></p>
 ```
 
+You can use the following CSS code to hide the button element with no content:
+
 ```css
-:empty {
+p:empty {
   display: none;
 }
 ```
 
-In this example, any element with no content (such as the button in the paragraph) will be hidden. You can write this code in `index.html` and `style.css`.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

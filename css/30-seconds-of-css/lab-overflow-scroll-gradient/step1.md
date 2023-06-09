@@ -1,14 +1,14 @@
 # Overflow Scroll Gradient
 
-This code block adds a gradient effect to an overflowing element to indicate that there is more content available to be scrolled. The `index.html` and `style.css` files should be used to write the code.
+`index.html` and `style.css` have already been provided in the VM.
 
-To implement this effect, follow these steps:
+To add a fading gradient to an overflowing element and indicate that there is more content to be scrolled, follow these steps:
 
 1. Use the `::after` pseudo-element to create a `linear-gradient()` that fades from `transparent` to `white` (top to bottom).
-2. Use `position: absolute`, `width` and `height` to place and size the pseudo-element in its parent.
-3. Use `pointer-events: none` to exclude the pseudo-element from mouse events, so that text behind it remains selectable/interactive.
+2. Position and size the pseudo-element in its parent using `position: absolute`, `width`, and `height`.
+3. Exclude the pseudo-element from mouse events by using `pointer-events: none`, allowing text behind it to still be selectable/interactive.
 
-The following code can be used in your `index.html` file:
+Here is an example HTML and CSS code snippet:
 
 ```html
 <div class="overflow-scroll-gradient">
@@ -24,8 +24,6 @@ The following code can be used in your `index.html` file:
   </div>
 </div>
 ```
-
-And this code can be used in your `style.css` file:
 
 ```css
 .overflow-scroll-gradient {
@@ -51,3 +49,5 @@ And this code can be used in your `style.css` file:
   line-height: 1.2;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

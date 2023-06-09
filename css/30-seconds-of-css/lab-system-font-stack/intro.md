@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the concept of system font stack in CSS. You will learn how to use native fonts of different operating systems to create a consistent and familiar user experience for your website or application. By the end of the lab, you will be able to define a font stack that works across various platforms and browsers.
+In this lab, we will explore the concept of system font stacks in CSS. You will learn how to define a list of fonts that the browser will look for on the user's operating system, and how to use this technique to achieve a native app feel on your web pages. By the end of the lab, you will have a solid understanding of how to implement system font stacks in your own projects.

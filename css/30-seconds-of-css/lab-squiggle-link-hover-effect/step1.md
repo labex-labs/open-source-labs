@@ -1,8 +1,10 @@
 # Squiggle Link Hover Effect
 
-To create a squiggle effect when hovering over a link, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In `style.css`, create a repeating background for the link using a `linear-gradient`:
+To create a squiggle effect when hovering over a link, you can follow these steps:
+
+1. Create a repeating background for the link using a `linear-gradient`.
 
 ```css
 a.squiggle {
@@ -15,7 +17,7 @@ a.squiggle {
 }
 ```
 
-2. Create a `:hover` state for the link with a `background-image` of a data URL containing an SVG with a squiggly path and an animation:
+2. Create a `:hover` state for the link with a `background-image` of a data URL containing an SVG with a squiggly path and an animation.
 
 ```css
 a.squiggle:hover {
@@ -24,7 +26,7 @@ a.squiggle:hover {
 }
 ```
 
-3. In `index.html`, add the link with the class `squiggle`:
+3. Use the HTML code below to add the link to the page.
 
 ```html
 <p>
@@ -32,3 +34,5 @@ a.squiggle:hover {
   gracefully.
 </p>
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

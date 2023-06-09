@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will learn how to customize the appearance of the scrollbar using CSS. We will use the `::-webkit-scrollbar` pseudo-element to style the scrollbar, including the track and thumb. By the end of this lab, you will be able to create custom scrollbars that match the design of your website or application.
+In this lab, we will be exploring how to customize the scrollbar style using CSS. We will use the `::-webkit-scrollbar` property to style the scrollbar, including the scrollbar track and thumb. By the end of this lab, you will have a better understanding of how to create custom scrollbars and enhance the user experience of your website.

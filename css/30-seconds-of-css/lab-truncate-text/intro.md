@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the concept of truncating text using CSS. You will learn how to use the `overflow`, `white-space`, and `text-overflow` properties to create a single line of text that ends with an ellipsis if it exceeds a specified width. By the end of this lab, you will be able to apply this technique to your own projects to ensure that text fits neatly within its container.
+In this lab, we will dive into the world of CSS programming and learn how to truncate text that exceeds one line's width. By using the combination of `overflow`, `white-space`, and `text-overflow` properties, we will be able to display an ellipsis at the end of the truncated text. Through this lab, we will gain a deeper understanding of how to optimize the display of text on websites.

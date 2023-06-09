@@ -1,12 +1,8 @@
 # Button Shrink Animation
 
-This code creates a shrink animation on hover for a button element. The code is written in `index.html` and `style.css`.
+`index.html` and `style.css` have already been provided in the VM.
 
-To animate changes to the button, an appropriate `transition` is used. When the user hovers over the button, the `transform` property is changed to `scale(0.8)`, shrinking the element.
-
-```html
-<button class="button-shrink">Submit</button>
-```
+To create a shrink animation on hover for an element, you can use an appropriate `transition` property to animate changes and the `:hover` pseudo-class to trigger the animation. For example, if you want to shrink a button with class `button-shrink` when a user hovers over it, you can add the following CSS:
 
 ```css
 .button-shrink {
@@ -23,3 +19,11 @@ To animate changes to the button, an appropriate `transition` is used. When the 
   transform: scale(0.8);
 }
 ```
+
+This will apply a transition effect to all properties of the button when there is a change, and when the user hovers over it, the button will shrink to 80% of its original size. The HTML code for the button is as follows:
+
+```html
+<button class="button-shrink">Submit</button>
+```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

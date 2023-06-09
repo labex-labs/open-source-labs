@@ -1,8 +1,10 @@
 # Disable Selection
 
-To make the content of an element unselectable, add the CSS property `user-select: none`. However, note that this method is not secure for preventing users from copying content.
+`index.html` and `style.css` have already been provided in the VM.
 
-Example usage:
+To make an element's content unselectable, add the CSS property `user-select: none` to the selector. However, this method is not entirely secure to prevent users from copying content.
+
+Example:
 
 ```html
 <p>You can select me.</p>
@@ -14,3 +16,5 @@ Example usage:
   user-select: none;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
