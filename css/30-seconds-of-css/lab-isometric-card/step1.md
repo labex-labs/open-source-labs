@@ -2,7 +2,7 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-To create an isometric card, use `transform` with `rotateX()` and `rotateY()` along with a `box-shadow`. You can also add a `transition` to animate the card and create a lift effect when the user hovers over it. 
+To create an isometric card, use `transform` with `rotateX()` and `rotateY()` along with a `box-shadow`. You can also add a `transition` to animate the card and create a lift effect when the user hovers over it.
 
 Here's an example code snippet:
 

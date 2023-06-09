@@ -8,12 +8,8 @@ Creates a responsive layout with a content area and a sidebar.
 
 ```html
 <div class="container">
-  <main>
-    This element is 1fr large.
-  </main>
-  <aside>
-    Min: 150px / Max: 20%
-  </aside>
+  <main>This element is 1fr large.</main>
+  <aside>Min: 150px / Max: 20%</aside>
 </div>
 ```
 
@@ -24,7 +20,8 @@ Creates a responsive layout with a content area and a sidebar.
   height: 100px;
 }
 
-main, aside {
+main,
+aside {
   padding: 12px;
   text-align: center;
 }

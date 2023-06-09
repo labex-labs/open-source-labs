@@ -11,6 +11,7 @@ To create a styled checkbox with animation on state change:
 5. To create a zoom animation effect, use `transform: scale(0.9)` via a CSS animation.
 
 HTML:
+
 ```html
 <svg class="checkbox-symbol">
   <symbol id="check" viewbox="0 0 12 10">
@@ -46,6 +47,7 @@ HTML:
 ```
 
 CSS:
+
 ```css
 .checkbox-symbol {
   position: absolute;

@@ -16,7 +16,7 @@ Vertically and horizontally centers a child element within its parent element, u
 
 ```css
 .container {
-  border: 1px solid #9C27B0;
+  border: 1px solid #9c27b0;
   height: 250px;
   width: 250px;
 }

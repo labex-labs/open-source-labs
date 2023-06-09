@@ -9,12 +9,12 @@ Displays a menu overlay when the user hovers over the image.
 
 ```html
 <figure class="hover-menu">
-	<img src="https://picsum.photos/id/1060/800/480.jpg"/>
-	<div>
-		<a href="#">Home</a>
-		<a href="#">Pricing</a>
-		<a href="#">About</a>
-	</div>
+  <img src="https://picsum.photos/id/1060/800/480.jpg" />
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Pricing</a>
+    <a href="#">About</a>
+  </div>
 </figure>
 ```
 

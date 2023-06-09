@@ -27,7 +27,7 @@ Here is the HTML and CSS code to achieve this:
 
 .ripple-loader div {
   position: absolute;
-  border: 4px solid #454ADE;
+  border: 4px solid #454ade;
   border-radius: 50%;
   animation: ripple-loader 1s ease-out infinite;
 }

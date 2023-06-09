@@ -75,7 +75,8 @@ Creates a responsive image mosaic.
   background: #353535;
   font-size: 3rem;
   color: #fff;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem
+      0.175rem;
   height: 100%;
   width: 100%;
   border-radius: 4px;

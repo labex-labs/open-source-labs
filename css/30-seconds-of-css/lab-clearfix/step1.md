@@ -14,7 +14,7 @@ To ensure that an element self-clears its children when using `float` to build l
 
 ```css
 .clearfix::after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }

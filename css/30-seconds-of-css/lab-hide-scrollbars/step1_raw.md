@@ -8,7 +8,11 @@ Hides scrollbars on an element, while still allowing it to be scrollable.
 
 ```html
 <div class="no-scrollbars">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum id leo a consectetur. Integer justo magna, ultricies vel enim vitae, egestas efficitur leo. Ut nulla orci, rutrum eu augue sed, tempus pellentesque quam.</p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean interdum id
+    leo a consectetur. Integer justo magna, ultricies vel enim vitae, egestas
+    efficitur leo. Ut nulla orci, rutrum eu augue sed, tempus pellentesque quam.
+  </p>
 </div>
 ```
 

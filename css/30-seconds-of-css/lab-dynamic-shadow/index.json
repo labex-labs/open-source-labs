@@ -1,68 +1,68 @@
 {
-    "type": "lab",
-    "title": "Dynamic Shadow",
-    "description": "In this lab, we will explore how to create dynamic shadows using CSS. You will learn how to use the `::after` pseudo-element and various CSS properties such as `background`, `filter`, `opacity`, and `z-index` to create an effect that mimics a box-shadow, but is based on the colors of the element itself. By the end of this lab, you will be able to add an extra layer of depth and dimensionality to your designs.",
-    "difficulty": "Beginner",
-    "time": 10,
-    "details": {
-        "steps": [
-            {
-                "title": "Dynamic Shadow",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the running status of the web service.",
-                        "file": "verify1-0.sh",
-                        "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
-                        "timeout": 0,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check the status of index.html modification.",
-                        "file": "verify1-1.sh",
-                        "hint": "Please follow the steps to complete the lab.",
-                        "timeout": 0,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check the status of style.css modification.",
-                        "file": "verify1-2.sh",
-                        "hint": "Please follow the steps to complete the lab.",
-                        "timeout": 0,
-                        "showstderr": false
-                    }
-                ],
-                "skills": []
-            }
+  "type": "lab",
+  "title": "Dynamic Shadow",
+  "description": "In this lab, we will explore how to create dynamic shadows using CSS. You will learn how to use the `::after` pseudo-element and various CSS properties such as `background`, `filter`, `opacity`, and `z-index` to create an effect that mimics a box-shadow, but is based on the colors of the element itself. By the end of this lab, you will be able to add an extra layer of depth and dimensionality to your designs.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Dynamic Shadow",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the running status of the web service.",
+            "file": "verify1-0.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of index.html modification.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of style.css modification.",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "index.html",
-                    "target": "~/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "style.css",
-                    "target": "~/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
-        "repo": "https://github.com/30-seconds/30-seconds-of-code"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
 }

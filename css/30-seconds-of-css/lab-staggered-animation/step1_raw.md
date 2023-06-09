@@ -9,7 +9,7 @@ Creates a staggered animation for the elements of a list.
 
 ```html
 <div class="container">
-  <input type="checkbox" name="menu" id="menu" class="menu-toggler">
+  <input type="checkbox" name="menu" id="menu" class="menu-toggler" />
   <label for="menu" class="menu-toggler-label">Menu</label>
   <ul class="stagger-menu">
     <li style="--i: 0">Home</li>
@@ -50,7 +50,7 @@ Creates a staggered animation for the elements of a list.
   transform: translateX(100%);
   transition-property: opacity, transform;
   transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.750, -0.015, 0.565, 1.055);
+  transition-timing-function: cubic-bezier(0.75, -0.015, 0.565, 1.055);
 }
 
 .menu-toggler:checked ~ .stagger-menu li {

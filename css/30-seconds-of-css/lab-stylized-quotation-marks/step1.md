@@ -2,15 +2,18 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-To customize the inline quotation marks, modify the `quotes` property within a `<q>` element. 
+To customize the inline quotation marks, modify the `quotes` property within a `<q>` element.
 
 For example:
+
 ```
 <p>
   <q>Do or do not, there is no try.</q> – Yoda
 </p>
 ```
-can be styled with curly quotes using CSS: 
+
+can be styled with curly quotes using CSS:
+
 ```
 q {
   quotes: "“" "”";

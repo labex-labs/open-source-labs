@@ -24,7 +24,7 @@ Reveals an interactive popout menu on hover/focus.
   position: absolute;
   visibility: hidden;
   left: 100%;
-  background: #9C27B0;
+  background: #9c27b0;
   color: white;
   padding: 16px;
 }

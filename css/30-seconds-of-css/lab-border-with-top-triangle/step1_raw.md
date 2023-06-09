@@ -22,7 +22,7 @@ Creates a content container with a triangle at the top.
 
 .container::before,
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 100%;
   left: 19px;

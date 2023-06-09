@@ -44,13 +44,18 @@ Creates a two sided card which rotates on hover.
 
 .card-side.back {
   transform: rotateY(-180deg);
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 }
 
 .card-side.front {
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 
 .card:hover .card-side.front {

@@ -3,18 +3,19 @@
 `index.html` and `style.css` have already been provided in the VM.
 
 To display a menu overlay when the user hovers over an image, use a `<figure>` to wrap the `<img>` element and a `<div>` element that will contain the menu links. Apply the following CSS properties to animate the image on hover, creating a sliding effect:
+
 - `opacity`
 - `right`
-Set the `left` attribute of the `<div>` to the negative of the element's `width`. Reset it to `0` when hovering over the parent element to slide in the menu. Finally, use `display: flex`, `flex-direction: column` and `justify-content: center` on the `<div>` to vertically center the menu items.
+  Set the `left` attribute of the `<div>` to the negative of the element's `width`. Reset it to `0` when hovering over the parent element to slide in the menu. Finally, use `display: flex`, `flex-direction: column` and `justify-content: center` on the `<div>` to vertically center the menu items.
 
 ```html
 <figure class="hover-menu">
-	<img src="https://picsum.photos/id/1060/800/480.jpg"/>
-	<div>
-		<a href="#">Home</a>
-		<a href="#">Pricing</a>
-		<a href="#">About</a>
-	</div>
+  <img src="https://picsum.photos/id/1060/800/480.jpg" />
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Pricing</a>
+    <a href="#">About</a>
+  </div>
 </figure>
 ```
 

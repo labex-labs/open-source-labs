@@ -10,11 +10,13 @@ To create a content container with a triangle at the top, follow these steps:
 4. Position the `::after` triangle `1px` to the right of the `::before` triangle to allow for the left border to be shown.
 
 Here is an example HTML code for the container:
+
 ```html
 <div class="container">Border with top triangle</div>
 ```
 
 And here is the corresponding CSS code:
+
 ```css
 .container {
   position: relative;
@@ -26,7 +28,7 @@ And here is the corresponding CSS code:
 
 .container::before,
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 100%;
   left: 19px;

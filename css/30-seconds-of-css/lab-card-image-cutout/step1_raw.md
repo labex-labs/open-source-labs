@@ -10,9 +10,11 @@ Creates a card with an image cutout.
 <div class="container">
   <div class="card">
     <figure>
-      <img alt="" src="https://picsum.photos/id/447/400/400"/>
+      <img alt="" src="https://picsum.photos/id/447/400/400" />
     </figure>
-    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
   </div>
 </div>
 ```

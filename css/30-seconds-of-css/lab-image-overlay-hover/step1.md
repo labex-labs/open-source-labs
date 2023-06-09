@@ -9,16 +9,18 @@ To display an image overlay effect on hover, follow these steps:
 3. Use the `:hover` pseudo-selector to update the `opacity` and `transform` of all the elements and display the overlay.
 
 Here's the HTML code to use:
+
 ```html
 <figure class="hover-img">
-  <img src="https://picsum.photos/id/200/440/320.jpg"/>
+  <img src="https://picsum.photos/id/200/440/320.jpg" />
   <figcaption>
-    <h3>Lorem <br/>Ipsum</h3>
+    <h3>Lorem <br />Ipsum</h3>
   </figcaption>
 </figure>
 ```
 
 And here's the CSS code to use:
+
 ```css
 .hover-img {
   display: inline-block;
@@ -40,7 +42,7 @@ And here's the CSS code to use:
 
 .hover-img::before,
 .hover-img::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -56,7 +58,7 @@ And here's the CSS code to use:
 }
 
 .hover-img::before {
-  content: '';
+  content: "";
   top: 0;
   bottom: auto;
 }

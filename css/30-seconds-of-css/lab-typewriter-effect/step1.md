@@ -40,13 +40,16 @@ And here's the CSS code:
 }
 
 @keyframes typing {
-  75%, 100% {
+  75%,
+  100% {
     max-width: calc(var(--characters) * 1ch);
   }
 }
 
 @keyframes blink {
-  0%, 75%, 100% {
+  0%,
+  75%,
+  100% {
     opacity: 1;
   }
   25% {
@@ -58,11 +61,11 @@ And here's the CSS code:
 And finally, here's the JavaScript code:
 
 ```js
-const typeWriter = document.getElementById('typewriter-text');
-const text = 'Lorem ipsum dolor sit amet.';
+const typeWriter = document.getElementById("typewriter-text");
+const text = "Lorem ipsum dolor sit amet.";
 
 typeWriter.innerHTML = text;
-typeWriter.style.setProperty('--characters', text.length);
+typeWriter.style.setProperty("--characters", text.length);
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

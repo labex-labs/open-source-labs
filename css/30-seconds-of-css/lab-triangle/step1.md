@@ -18,7 +18,7 @@ Here's an example code snippet:
 .triangle {
   width: 0;
   height: 0;
-  border-top: 20px solid #9C27B0;
+  border-top: 20px solid #9c27b0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
 }

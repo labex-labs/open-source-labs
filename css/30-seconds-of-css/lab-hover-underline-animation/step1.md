@@ -27,7 +27,7 @@ And here is the corresponding CSS code:
 }
 
 .hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);

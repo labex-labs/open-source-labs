@@ -9,7 +9,7 @@ Creates an input with a visual, non-editable prefix.
 ```html
 <div class="input-box">
   <span class="prefix">+30</span>
-  <input type="tel" placeholder="210 123 4567"/>
+  <input type="tel" placeholder="210 123 4567" />
 </div>
 ```
 

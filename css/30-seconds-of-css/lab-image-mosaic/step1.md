@@ -6,18 +6,54 @@ To create a responsive image mosaic, use `display: grid` to create a responsive 
 
 ```html
 <div class="image-mosaic">
-  <div class="card card-tall card-wide" style="background-image: url('https://picsum.photos/id/564/1200/800')"></div>
-  <div class="card card-tall" style="background-image: url('https://picsum.photos/id/566/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/575/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/626/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/667/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/678/800/530')"></div>
-  <div class="card card-wide" style="background-image: url('https://picsum.photos/id/695/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/683/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/693/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/715/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/610/800/530')"></div>
-  <div class="card" style="background-image: url('https://picsum.photos/id/599/800/530')"></div>
+  <div
+    class="card card-tall card-wide"
+    style="background-image: url('https://picsum.photos/id/564/1200/800')"
+  ></div>
+  <div
+    class="card card-tall"
+    style="background-image: url('https://picsum.photos/id/566/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/575/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/626/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/667/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/678/800/530')"
+  ></div>
+  <div
+    class="card card-wide"
+    style="background-image: url('https://picsum.photos/id/695/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/683/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/693/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/715/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/610/800/530')"
+  ></div>
+  <div
+    class="card"
+    style="background-image: url('https://picsum.photos/id/599/800/530')"
+  ></div>
 </div>
 ```
 
@@ -33,10 +69,12 @@ To create a responsive image mosaic, use `display: grid` to create a responsive 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #353535 url('https://picsum.photos/id/564/1200/800') center / cover no-repeat;
+  background: #353535 url("https://picsum.photos/id/564/1200/800") center /
+    cover no-repeat;
   font-size: 3rem;
   color: #fff;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem
+      0.175rem;
   height: 100%;
   width: 100%;
   border-radius: 4px;

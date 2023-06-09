@@ -8,7 +8,7 @@ To display an image with a text overlay, use the `<figure>` and `<figcaption>` e
 <figure class="text-overlay-image">
   <img src="https://picsum.photos/id/971/400/400.jpg" />
   <figcaption>
-    <h3>Business <br/>Pricing</h3>
+    <h3>Business <br />Pricing</h3>
   </figcaption>
 </figure>
 ```

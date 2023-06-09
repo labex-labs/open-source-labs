@@ -6,7 +6,10 @@ Creates a squiggle effect when hovering over a link.
 - Create a `:hover` state for the link with a `background-image` of a data URL containing an SVG with a squiggly path and an animation.
 
 ```html
-<p>The <a class="squiggle" href="#">magnificent octopus</a> swam along gracefully.</p>
+<p>
+  The <a class="squiggle" href="#">magnificent octopus</a> swam along
+  gracefully.
+</p>
 ```
 
 ```css

@@ -53,9 +53,9 @@ Creates a typewriter effect animation.
 ```
 
 ```js
-const typeWriter = document.getElementById('typewriter-text');
-const text = 'Lorem ipsum dolor sit amet.';
+const typeWriter = document.getElementById("typewriter-text");
+const text = "Lorem ipsum dolor sit amet.";
 
 typeWriter.innerHTML = text;
-typeWriter.style.setProperty('--characters', text.length);
+typeWriter.style.setProperty("--characters", text.length);
 ```

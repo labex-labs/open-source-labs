@@ -14,15 +14,15 @@ Creates a horizontally scrollable image gallery.
 <div class="gallery-container">
   <div class="thumbnails"></div>
   <div class="slides">
-    <div><img src="https://picsum.photos/id/1067/540/720"></div>
-    <div><img src="https://picsum.photos/id/122/540/720"></div>
-    <div><img src="https://picsum.photos/id/188/540/720"></div>
-    <div><img src="https://picsum.photos/id/249/540/720"></div>
-    <div><img src="https://picsum.photos/id/257/540/720"></div>
-    <div><img src="https://picsum.photos/id/259/540/720"></div>
-    <div><img src="https://picsum.photos/id/283/540/720"></div>
-    <div><img src="https://picsum.photos/id/288/540/720"></div>
-    <div><img src="https://picsum.photos/id/299/540/720"></div>
+    <div><img src="https://picsum.photos/id/1067/540/720" /></div>
+    <div><img src="https://picsum.photos/id/122/540/720" /></div>
+    <div><img src="https://picsum.photos/id/188/540/720" /></div>
+    <div><img src="https://picsum.photos/id/249/540/720" /></div>
+    <div><img src="https://picsum.photos/id/257/540/720" /></div>
+    <div><img src="https://picsum.photos/id/259/540/720" /></div>
+    <div><img src="https://picsum.photos/id/283/540/720" /></div>
+    <div><img src="https://picsum.photos/id/288/540/720" /></div>
+    <div><img src="https://picsum.photos/id/299/540/720" /></div>
   </div>
 </div>
 ```
@@ -83,36 +83,36 @@ Creates a horizontally scrollable image gallery.
 ```
 
 ```js
-const slideGallery = document.querySelector('.slides');
-const slides = slideGallery.querySelectorAll('div');
-const thumbnailContainer = document.querySelector('.thumbnails');
+const slideGallery = document.querySelector(".slides");
+const slides = slideGallery.querySelectorAll("div");
+const thumbnailContainer = document.querySelector(".thumbnails");
 const slideCount = slides.length;
 const slideWidth = 540;
 
 const highlightThumbnail = () => {
   thumbnailContainer
-    .querySelectorAll('div.highlighted')
-    .forEach(el => el.classList.remove('highlighted'));
+    .querySelectorAll("div.highlighted")
+    .forEach((el) => el.classList.remove("highlighted"));
   const index = Math.floor(slideGallery.scrollLeft / slideWidth);
   thumbnailContainer
     .querySelector(`div[data-id="${index}"]`)
-    .classList.add('highlighted');
+    .classList.add("highlighted");
 };
 
-const scrollToElement = el => {
+const scrollToElement = (el) => {
   const index = parseInt(el.dataset.id, 10);
   slideGallery.scrollTo(index * slideWidth, 0);
 };
 
 thumbnailContainer.innerHTML += [...slides]
   .map((slide, i) => `<div data-id="${i}"></div>`)
-  .join('');
+  .join("");
 
-thumbnailContainer.querySelectorAll('div').forEach(el => {
-  el.addEventListener('click', () => scrollToElement(el));
+thumbnailContainer.querySelectorAll("div").forEach((el) => {
+  el.addEventListener("click", () => scrollToElement(el));
 });
 
-slideGallery.addEventListener('scroll', e => highlightThumbnail());
+slideGallery.addEventListener("scroll", (e) => highlightThumbnail());
 
 highlightThumbnail();
 ```

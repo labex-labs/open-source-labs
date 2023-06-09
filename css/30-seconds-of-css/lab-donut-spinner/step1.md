@@ -5,11 +5,13 @@
 To indicate the loading of content, create a donut spinner with a semi-transparent `border` for the whole element. Exclude one side to serve as the loading indicator for the donut. Then, define and use an appropriate animation, using `transform: rotate()` to rotate the element. Here's an example code in HTML and CSS:
 
 HTML:
+
 ```html
 <div class="donut"></div>
 ```
 
 CSS:
+
 ```css
 @keyframes donut-spin {
   0% {

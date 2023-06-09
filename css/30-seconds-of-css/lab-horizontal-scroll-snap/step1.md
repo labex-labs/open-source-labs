@@ -11,6 +11,7 @@ To create a horizontally scrollable container that snaps on elements when scroll
 Here's an example HTML and CSS code you can use:
 
 HTML
+
 ```
 <div class="horizontal-snap">
   <a href="#"><img src="https://picsum.photos/id/1067/640/640"></a>
@@ -26,6 +27,7 @@ HTML
 ```
 
 CSS
+
 ```
 .horizontal-snap {
   display: grid;

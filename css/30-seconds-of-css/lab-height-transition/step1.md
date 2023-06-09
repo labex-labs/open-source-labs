@@ -31,9 +31,9 @@ This code snippet transitions an element's height from `0` to `auto` when its he
 ```
 
 ```js
-let el = document.querySelector('.el');
+let el = document.querySelector(".el");
 let height = el.scrollHeight;
-el.style.setProperty('--max-height', height + 'px');
+el.style.setProperty("--max-height", height + "px");
 ```
 
 Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

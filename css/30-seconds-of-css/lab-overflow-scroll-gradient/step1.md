@@ -31,7 +31,7 @@ Here is an example HTML and CSS code snippet:
 }
 
 .overflow-scroll-gradient::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   width: 250px;

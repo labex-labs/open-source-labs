@@ -23,7 +23,7 @@ Creates a border animation on hover.
 .animated-border-button::after {
   border: 0 solid transparent;
   transition: all 0.3s;
-  content: '';
+  content: "";
   height: 0;
   position: absolute;
   width: 24px;

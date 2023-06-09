@@ -14,6 +14,7 @@ This code creates a horizontally scrollable image gallery. The following steps a
 8. A handler for the `'scroll'` event is registered using `Document.querySelector()` and `EventTarget.addEventListener()`. The `.thumbnails` and `.scrollbar` elements are updated to match the current scroll position using the `scrollThumb` function.
 
 HTML:
+
 ```html
 <div class="gallery-container">
   <div class="thumbnails"></div>
@@ -21,20 +22,21 @@ HTML:
     <div class="thumb"></div>
   </div>
   <div class="slides">
-    <div><img src="https://picsum.photos/id/1067/540/720"></div>
-    <div><img src="https://picsum.photos/id/122/540/720"></div>
-    <div><img src="https://picsum.photos/id/188/540/720"></div>
-    <div><img src="https://picsum.photos/id/249/540/720"></div>
-    <div><img src="https://picsum.photos/id/257/540/720"></div>
-    <div><img src="https://picsum.photos/id/259/540/720"></div>
-    <div><img src="https://picsum.photos/id/283/540/720"></div>
-    <div><img src="https://picsum.photos/id/288/540/720"></div>
-    <div><img src="https://picsum.photos/id/299/540/720"></div>
+    <div><img src="https://picsum.photos/id/1067/540/720" /></div>
+    <div><img src="https://picsum.photos/id/122/540/720" /></div>
+    <div><img src="https://picsum.photos/id/188/540/720" /></div>
+    <div><img src="https://picsum.photos/id/249/540/720" /></div>
+    <div><img src="https://picsum.photos/id/257/540/720" /></div>
+    <div><img src="https://picsum.photos/id/259/540/720" /></div>
+    <div><img src="https://picsum.photos/id/283/540/720" /></div>
+    <div><img src="https://picsum.photos/id/288/540/720" /></div>
+    <div><img src="https://picsum.photos/id/299/540/720" /></div>
   </div>
 </div>
 ```
 
 CSS:
+
 ```css
 .gallery-container {
   display: flex;
@@ -97,10 +99,11 @@ CSS:
 ```
 
 JavaScript:
+
 ```js
-const slideGallery = document.querySelector('.slides');
-const slides = slideGallery.querySelectorAll('div');
-const scrollbarThumb = document.querySelector('.thumb');
+const slideGallery = document.querySelector(".slides");
+const slides = slideGallery.querySelectorAll("div");
+const scrollbarThumb = document.querySelector(".thumb");
 const slideCount = slides.length;
 const slideHeight = 720;
 const marginTop = 16;
@@ -110,22 +113,22 @@ const scrollThumb = () => {
   scrollbarThumb.style.height = `${((index + 1) / slideCount) * slideHeight}px`;
 };
 
-const scrollToElement = el => {
+const scrollToElement = (el) => {
   const index = parseInt(el.dataset.id, 10);
   slideGallery.scrollTo(0, index * slideHeight + marginTop);
 };
 
-document.querySelector('.thumbnails').innerHTML += [...slides]
+document.querySelector(".thumbnails").innerHTML += [...slides]
   .map(
-    (slide, i) => `<img src="${slide.querySelector('img').src}" data-id="${i}">`
+    (slide, i) => `<img src="${slide.querySelector("img").src}" data-id="${i}">`
   )
-  .join('');
+  .join("");
 
-document.querySelectorAll('.thumbnails img').forEach(el => {
-  el.addEventListener('click', () => scrollToElement(el));
+document.querySelectorAll(".thumbnails img").forEach((el) => {
+  el.addEventListener("click", () => scrollToElement(el));
 });
 
-slideGallery.addEventListener('scroll', e => scrollThumb());
+slideGallery.addEventListener("scroll", (e) => scrollThumb());
 
 scrollThumb();
 ```

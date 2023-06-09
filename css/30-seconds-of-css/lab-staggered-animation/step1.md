@@ -13,7 +13,7 @@ Here is the HTML and CSS code to achieve this effect:
 
 ```html
 <div class="container">
-  <input type="checkbox" name="menu" id="menu" class="menu-toggler">
+  <input type="checkbox" name="menu" id="menu" class="menu-toggler" />
   <label for="menu" class="menu-toggler-label">Menu</label>
   <ul class="stagger-menu">
     <li style="--i: 0">Home</li>
@@ -52,7 +52,8 @@ Here is the HTML and CSS code to achieve this effect:
   font-size: 18px;
   opacity: 0;
   transform: translateX(100%);
-  transition: opacity 0.3s cubic-bezier(0.750, -0.015, 0.565, 1.055), transform 0.3s cubic-bezier(0.750, -0.015, 0.565, 1.055);
+  transition: opacity 0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055), transform
+      0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055);
 }
 
 .menu-toggler:checked ~ .stagger-menu li {

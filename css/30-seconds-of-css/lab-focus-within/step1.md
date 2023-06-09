@@ -16,13 +16,13 @@ To change the appearance of a form when any of its child elements are focused, u
 
 ```css
 form {
-  border: 2px solid #52B882;
+  border: 2px solid #52b882;
   padding: 8px;
   border-radius: 2px;
 }
 
 form:focus-within {
-  background: #7CF0BD;
+  background: #7cf0bd;
 }
 
 label {

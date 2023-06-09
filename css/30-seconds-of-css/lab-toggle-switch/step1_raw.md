@@ -24,7 +24,7 @@ Creates a toggle switch with CSS only.
 }
 
 .switch::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 18px;
   height: 18px;
@@ -35,11 +35,11 @@ Creates a toggle switch with CSS only.
   transition: all 0.3s;
 }
 
-input[type='checkbox']:checked + .switch::after {
+input[type="checkbox"]:checked + .switch::after {
   transform: translateX(20px);
 }
 
-input[type='checkbox']:checked + .switch {
+input[type="checkbox"]:checked + .switch {
   background-color: #7983ff;
 }
 

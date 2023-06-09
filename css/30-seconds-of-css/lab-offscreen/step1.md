@@ -3,6 +3,7 @@
 `index.html` and `style.css` have already been provided in the VM.
 
 This technique completely hides an element in the DOM while still making it accessible. To achieve this, you can follow these steps:
+
 - Remove all borders and padding and hide the element's overflow.
 - Use `clip` to ensure that no part of the element is shown.
 - Set the `height` and `width` of the element to `1px` and negate them using `margin: -1px`.

@@ -15,7 +15,7 @@ Vertically and horizontally centers a child element within its parent element us
 
 ```css
 .parent {
-  border: 1px solid #9C27B0;
+  border: 1px solid #9c27b0;
   height: 250px;
   position: relative;
   width: 250px;

@@ -30,7 +30,7 @@ Truncates text that is longer than one line.
 }
 
 .truncate-text-multiline::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;

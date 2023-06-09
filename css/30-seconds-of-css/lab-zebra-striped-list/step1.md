@@ -2,7 +2,7 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-To create a list with alternating background colors, use the `:nth-child(odd)` or `:nth-child(even)` pseudo-class selectors to apply a different `background-color` to elements based on their position among siblings. This can be applied to various HTML elements such as `<div>`, `<tr>`, `<p>`, `<ol>`, etc. 
+To create a list with alternating background colors, use the `:nth-child(odd)` or `:nth-child(even)` pseudo-class selectors to apply a different `background-color` to elements based on their position among siblings. This can be applied to various HTML elements such as `<div>`, `<tr>`, `<p>`, `<ol>`, etc.
 
 Here's an example of how to create a striped list with `<li>` elements:
 

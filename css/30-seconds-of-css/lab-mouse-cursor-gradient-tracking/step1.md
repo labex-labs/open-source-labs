@@ -39,7 +39,7 @@ And here is the CSS code:
 
 .mouse-cursor-gradient-tracking::before {
   --size: 0;
-  content: '';
+  content: "";
   position: absolute;
   left: var(--x);
   top: var(--y);
@@ -58,13 +58,13 @@ And here is the CSS code:
 Finally, here is the JavaScript code:
 
 ```js
-let btn = document.querySelector('.mouse-cursor-gradient-tracking');
-btn.addEventListener('mousemove', e => {
+let btn = document.querySelector(".mouse-cursor-gradient-tracking");
+btn.addEventListener("mousemove", (e) => {
   let rect = e.target.getBoundingClientRect();
   let x = e.clientX - rect.left;
   let y = e.clientY - rect.top;
-  btn.style.setProperty('--x', x + 'px');
-  btn.style.setProperty('--y', y + 'px');
+  btn.style.setProperty("--x", x + "px");
+  btn.style.setProperty("--y", y + "px");
 });
 ```
 

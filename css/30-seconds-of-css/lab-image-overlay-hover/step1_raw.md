@@ -8,9 +8,9 @@ Displays an image overlay effect on hover.
 
 ```html
 <figure class="hover-img">
-  <img src="https://picsum.photos/id/200/440/320.jpg"/>
+  <img src="https://picsum.photos/id/200/440/320.jpg" />
   <figcaption>
-    <h3>Lorem <br/>Ipsum</h3>
+    <h3>Lorem <br />Ipsum</h3>
   </figcaption>
 </figure>
 ```
@@ -44,7 +44,7 @@ Displays an image overlay effect on hover.
   bottom: 0;
   left: 0;
   right: 0;
-  content: '';
+  content: "";
   transition: all 0.3s ease;
   z-index: 1;
   opacity: 0;

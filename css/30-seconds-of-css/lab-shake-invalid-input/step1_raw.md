@@ -7,7 +7,7 @@ Creates a shake animation on invalid input.
 - Use the `:invalid` pseudo-class to apply an `animation` to make the element shake.
 
 ```html
- <input type="text" placeholder="Letters only" pattern="[A-Za-z]*" />
+<input type="text" placeholder="Letters only" pattern="[A-Za-z]*" />
 ```
 
 ```css

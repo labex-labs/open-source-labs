@@ -21,7 +21,7 @@ Creates a shadow similar to `box-shadow` but based on the colors of the element 
 }
 
 .dynamic-shadow::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;

@@ -33,7 +33,7 @@ A hover effect where the gradient follows the mouse cursor.
 
 .mouse-cursor-gradient-tracking::before {
   --size: 0;
-  content: '';
+  content: "";
   position: absolute;
   left: var(--x);
   top: var(--y);
@@ -50,12 +50,12 @@ A hover effect where the gradient follows the mouse cursor.
 ```
 
 ```js
-let btn = document.querySelector('.mouse-cursor-gradient-tracking');
-btn.addEventListener('mousemove', e => {
+let btn = document.querySelector(".mouse-cursor-gradient-tracking");
+btn.addEventListener("mousemove", (e) => {
   let rect = e.target.getBoundingClientRect();
   let x = e.clientX - rect.left;
   let y = e.clientY - rect.top;
-  btn.style.setProperty('--x', x + 'px');
-  btn.style.setProperty('--y', y + 'px');
+  btn.style.setProperty("--x", x + "px");
+  btn.style.setProperty("--y", y + "px");
 });
 ```

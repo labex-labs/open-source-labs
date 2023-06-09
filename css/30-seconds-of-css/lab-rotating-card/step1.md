@@ -3,12 +3,14 @@
 `index.html` and `style.css` have already been provided in the VM.
 
 To create a two-sided card that rotates on hover, follow these steps:
+
 1. Set the `backface-visibility` of the cards to `none` to prevent the backside from being visible by default.
 2. Initially, set `rotateY(-180deg)` for the back side of the card and `rotateY(0deg)` for the front side of the card.
 3. Upon hover, set `rotateY(180deg)` for the front side of the card and `rotateY(0deg)` for the back side of the card.
 4. Set the appropriate `perspective` value to create the rotate effect.
 
 Here is an example HTML and CSS code:
+
 ```html
 <div class="card">
   <div class="card-side front">
@@ -46,11 +48,11 @@ Here is an example HTML and CSS code:
 
 .card-side.back {
   transform: rotateY(-180deg);
-  background: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  background: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
 }
 
 .card-side.front {
-  background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 
 .card:hover .card-side.front {

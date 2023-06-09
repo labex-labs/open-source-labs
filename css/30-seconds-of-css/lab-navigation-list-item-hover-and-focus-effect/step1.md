@@ -9,6 +9,7 @@ To create a custom hover and focus effect for navigation items, use CSS transfor
 3. Prevent the pseudo-element from covering the anchor element by using `z-index`.
 
 You can use the following HTML code for your navigation menu:
+
 ```html
 <nav class="hover-nav">
   <ul>
@@ -20,6 +21,7 @@ You can use the following HTML code for your navigation menu:
 ```
 
 And apply the following CSS rules:
+
 ```css
 .hover-nav ul {
   list-style: none;

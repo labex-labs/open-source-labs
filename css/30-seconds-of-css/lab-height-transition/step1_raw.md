@@ -29,7 +29,7 @@ Transitions an element's height from `0` to `auto` when its height is unknown.
 ```
 
 ```js
-let el = document.querySelector('.el');
+let el = document.querySelector(".el");
 let height = el.scrollHeight;
-el.style.setProperty('--max-height', height + 'px');
+el.style.setProperty("--max-height", height + "px");
 ```

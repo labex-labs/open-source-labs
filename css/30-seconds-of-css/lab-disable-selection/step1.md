@@ -2,7 +2,7 @@
 
 `index.html` and `style.css` have already been provided in the VM.
 
-To make an element's content unselectable, add the CSS property `user-select: none` to the selector. However, this method is not entirely secure to prevent users from copying content. 
+To make an element's content unselectable, add the CSS property `user-select: none` to the selector. However, this method is not entirely secure to prevent users from copying content.
 
 Example:
 

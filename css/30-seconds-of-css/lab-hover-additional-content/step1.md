@@ -9,12 +9,15 @@ To create a card that displays additional content on hover, follow these steps:
 3. Set `transition: 0.3s ease all` to create a smooth transition effect on hover/focus.
 
 Here is an example HTML code for the card:
+
 ```html
 <div class="card">
-  <img src="https://picsum.photos/id/404/367/267"/>
+  <img src="https://picsum.photos/id/404/367/267" />
   <h3>Lorem ipsum</h3>
   <div class="focus-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> <a href="#">Link to source</a>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+      <a href="#">Link to source</a>
     </p>
   </div>
 </div>
@@ -27,7 +30,7 @@ And here is the CSS code to style the card:
   width: 300px;
   height: 280px;
   padding: 0;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   box-sizing: border-box;
   overflow: hidden;
@@ -63,12 +66,12 @@ And here is the CSS code to style the card:
   line-height: 1.5;
 }
 
-.card:hover img, 
+.card:hover img,
 .card:focus-within img {
   margin-top: -80px;
 }
 
-.card:hover h3, 
+.card:hover h3,
 .card:focus-within h3 {
   padding: 8px 12px 0;
 }

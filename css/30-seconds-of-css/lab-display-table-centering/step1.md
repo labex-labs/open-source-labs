@@ -5,32 +5,38 @@
 To center a child element both vertically and horizontally within its parent element, follow these steps:
 
 1. Add a container element with a fixed `height` and `width`.
+
 ```html
-<div class="container">
+<div class="container"></div>
 ```
 
 2. Add the child element inside the container element and give it a class of `.center`.
+
 ```html
   <div class="center"><span>Centered content</span></div>
 </div>
 ```
 
 3. In the CSS, apply the following styles to the container element:
-  - Set `height` and `width` to the desired fixed values.
-  - Add a border (optional).
+
+- Set `height` and `width` to the desired fixed values.
+- Add a border (optional).
+
 ```css
 .container {
-  border: 1px solid #9C27B0;
+  border: 1px solid #9c27b0;
   height: 250px;
   width: 250px;
 }
 ```
 
 4. In the CSS, apply the following styles to the child element:
-  - Use `display: table` to make the `.center` element behave like a `<table>` element.
-  - Set `height` and `width` to `100%` to make the element fill the available space within its parent element.
-  - Use `display: table-cell` on the child element to make it behave like a `<td>` element.
-  - Use `text-align: center` and `vertical-align: middle` on the child element to center it horizontally and vertically.
+
+- Use `display: table` to make the `.center` element behave like a `<table>` element.
+- Set `height` and `width` to `100%` to make the element fill the available space within its parent element.
+- Use `display: table-cell` on the child element to make it behave like a `<td>` element.
+- Use `text-align: center` and `vertical-align: middle` on the child element to center it horizontally and vertically.
+
 ```css
 .center {
   display: table;

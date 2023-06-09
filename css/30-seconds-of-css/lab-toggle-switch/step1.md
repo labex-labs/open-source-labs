@@ -32,7 +32,7 @@ Here's the CSS code:
 }
 
 .switch::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 18px;
   height: 18px;
@@ -43,11 +43,11 @@ Here's the CSS code:
   transition: all 0.3s;
 }
 
-input[type='checkbox']:checked + .switch::after {
+input[type="checkbox"]:checked + .switch::after {
   transform: translateX(20px);
 }
 
-input[type='checkbox']:checked + .switch {
+input[type="checkbox"]:checked + .switch {
   background-color: #7983ff;
 }
 

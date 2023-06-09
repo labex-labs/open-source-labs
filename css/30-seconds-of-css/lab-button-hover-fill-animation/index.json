@@ -1,68 +1,68 @@
 {
-    "type": "lab",
-    "title": "Button Fill Animation",
-    "description": "In this lab, we will learn how to create a fill animation on hover for a button using CSS. We will use the `:hover` pseudo-class to change the `background` and `color` of the button when the user hovers over it, and also add a transition effect to animate the changes. By the end of this lab, you will be able to enhance the user experience on your website by adding engaging hover effects to your buttons.",
-    "difficulty": "Beginner",
-    "time": 10,
-    "details": {
-        "steps": [
-            {
-                "title": "Button Fill Animation",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the running status of the web service.",
-                        "file": "verify1-0.sh",
-                        "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
-                        "timeout": 0,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check the status of index.html modification.",
-                        "file": "verify1-1.sh",
-                        "hint": "Please follow the steps to complete the lab.",
-                        "timeout": 0,
-                        "showstderr": false
-                    },
-                    {
-                        "name": "Check the status of style.css modification.",
-                        "file": "verify1-2.sh",
-                        "hint": "Please follow the steps to complete the lab.",
-                        "timeout": 0,
-                        "showstderr": false
-                    }
-                ],
-                "skills": []
-            }
+  "type": "lab",
+  "title": "Button Fill Animation",
+  "description": "In this lab, we will learn how to create a fill animation on hover for a button using CSS. We will use the `:hover` pseudo-class to change the `background` and `color` of the button when the user hovers over it, and also add a transition effect to animate the changes. By the end of this lab, you will be able to enhance the user experience on your website by adding engaging hover effects to your buttons.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "details": {
+    "steps": [
+      {
+        "title": "Button Fill Animation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the running status of the web service.",
+            "file": "verify1-0.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of index.html modification.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of style.css modification.",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "index.html",
-                    "target": "~/project",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "style.css",
-                    "target": "~/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
-        "repo": "https://github.com/30-seconds/30-seconds-of-code"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
 }

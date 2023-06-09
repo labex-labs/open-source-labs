@@ -7,7 +7,7 @@ Displays a text on top of an image using an overlay.
 ```html
 <div>
   <h3 class="text-overlay">Hello, World</h3>
-  <img src="https://picsum.photos/id/1050/1200/800">
+  <img src="https://picsum.photos/id/1050/1200/800" />
 </div>
 ```
 

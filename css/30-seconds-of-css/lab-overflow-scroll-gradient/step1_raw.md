@@ -27,7 +27,7 @@ Adds a fading gradient to an overflowing element to better indicate there is mor
 }
 
 .overflow-scroll-gradient::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   width: 250px;

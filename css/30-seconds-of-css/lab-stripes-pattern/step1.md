@@ -5,6 +5,7 @@
 This code creates a vertical stripe pattern on a white background.
 
 To create the pattern:
+
 - Set the `background-color` property to white.
 - Use `background-image` with a `linear-gradient()` value to create a vertical stripe.
 - Set the `background-size` property to specify the size of each stripe.

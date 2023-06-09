@@ -13,7 +13,7 @@ To create a circular shape using pure CSS, use the `border-radius: 50%` property
   border-radius: 50%;
   width: 32px;
   height: 32px;
-  background: #9C27B0;
+  background: #9c27b0;
 }
 ```
 

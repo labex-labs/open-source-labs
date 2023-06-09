@@ -7,15 +7,15 @@ To create a 3-tile layout, use `display: inline-block` instead of `float`, `flex
 ```html
 <div class="tiles">
   <div class="tile">
-    <img src="https://via.placeholder.com/200x150">
+    <img src="https://via.placeholder.com/200x150" />
     <h2>30 Seconds of CSS</h2>
   </div>
   <div class="tile">
-    <img src="https://via.placeholder.com/200x150">
+    <img src="https://via.placeholder.com/200x150" />
     <h2>30 Seconds of CSS</h2>
   </div>
   <div class="tile">
-    <img src="https://via.placeholder.com/200x150">
+    <img src="https://via.placeholder.com/200x150" />
     <h2>30 Seconds of CSS</h2>
   </div>
 </div>

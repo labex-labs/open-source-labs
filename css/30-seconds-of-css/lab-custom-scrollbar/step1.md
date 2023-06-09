@@ -26,12 +26,12 @@ To customize the scrollbar style for elements with scrollable overflow, you can 
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #1E3F20;
+  background: #1e3f20;
   border-radius: 12px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #4A7856;
+  background: #4a7856;
   border-radius: 12px;
 }
 ```

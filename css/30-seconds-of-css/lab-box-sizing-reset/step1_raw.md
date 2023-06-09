@@ -27,9 +27,9 @@ div {
   height: 120px;
   padding: 8px;
   margin: 8px;
-  background: #F24333;
+  background: #f24333;
   color: white;
-  border: 1px solid #BA1B1D;
+  border: 1px solid #ba1b1d;
   border-radius: 4px;
 }
 

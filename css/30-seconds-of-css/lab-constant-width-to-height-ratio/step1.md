@@ -12,18 +12,18 @@ Then, add the following CSS code:
 
 ```css
 .constant-width-to-height-ratio {
-  background: #9C27B0;
+  background: #9c27b0;
   width: 50%;
 }
 
 .constant-width-to-height-ratio::before {
-  content: '';
+  content: "";
   padding-top: 100%;
   float: left;
 }
 
 .constant-width-to-height-ratio::after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }

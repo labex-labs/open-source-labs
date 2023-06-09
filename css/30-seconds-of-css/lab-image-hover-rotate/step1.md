@@ -6,7 +6,7 @@ To create a rotate effect for an image on hover, use the `scale()`, `rotate()`, 
 
 ```html
 <figure class="hover-rotate">
-  <img src="https://picsum.photos/id/669/600/800.jpg"/>
+  <img src="https://picsum.photos/id/669/600/800.jpg" />
 </figure>
 ```
 

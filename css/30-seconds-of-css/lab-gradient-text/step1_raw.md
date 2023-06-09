@@ -12,7 +12,7 @@ Gives text a gradient color.
 
 ```css
 .gradient-text {
-  background: linear-gradient(#70D6FF, #00072D);
+  background: linear-gradient(#70d6ff, #00072d);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 32px;

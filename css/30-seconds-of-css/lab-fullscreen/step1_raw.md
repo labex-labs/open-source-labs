@@ -7,10 +7,16 @@ Applies styles to an element when in fullscreen mode.
 
 ```html
 <div class="container">
-  <p><em>Click the button below to enter the element into fullscreen mode. </em></p>
-  <div class="element" id="element"><p>I change color in fullscreen mode!</p></div>
+  <p>
+    <em>Click the button below to enter the element into fullscreen mode. </em>
+  </p>
+  <div class="element" id="element">
+    <p>I change color in fullscreen mode!</p>
+  </div>
   <br />
-  <button onclick="var el = document.getElementById('element'); el.requestFullscreen();">
+  <button
+    onclick="var el = document.getElementById('element'); el.requestFullscreen();"
+  >
     Go Full Screen!
   </button>
 </div>

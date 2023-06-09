@@ -14,11 +14,11 @@ Uses an SVG shape to create a separator between two different blocks.
 .shape-separator {
   position: relative;
   height: 48px;
-  background: #9C27B0;
+  background: #9c27b0;
 }
 
 .shape-separator::after {
-  content: '';
+  content: "";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12'%3E%3Cpath d='m12 0l12 12h-24z' fill='transparent'/%3E%3C/svg%3E");
   position: absolute;
   width: 100%;

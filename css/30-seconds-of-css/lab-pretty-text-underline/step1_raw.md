@@ -10,7 +10,9 @@ Provides a nicer alternative to `text-decoration: underline` where descenders do
 
 ```html
 <div class="container">
-  <p class="pretty-text-underline">Pretty text underline without clipping descenders.</p>
+  <p class="pretty-text-underline">
+    Pretty text underline without clipping descenders.
+  </p>
 </div>
 ```
 
@@ -23,8 +25,8 @@ Provides a nicer alternative to `text-decoration: underline` where descenders do
 
 .pretty-text-underline {
   display: inline;
-  text-shadow: 1px 1px #f5f6f9, -1px 1px #f5f6f9, -1px -1px #f5f6f9,
-    1px -1px #f5f6f9;
+  text-shadow: 1px 1px #f5f6f9, -1px 1px #f5f6f9, -1px -1px #f5f6f9, 1px -1px
+      #f5f6f9;
   background-image: linear-gradient(90deg, currentColor 100%, transparent 100%);
   background-position: bottom;
   background-repeat: no-repeat;
