@@ -1,14 +1,18 @@
 # Dynamic Shadow
 
-To create a dynamic shadow based on the element's own colors, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Write the code in `index.html` and `style.css`.
-2. Use the `::after` pseudo-element with `position: absolute` and `width` and `height` equal to `100%` to fill the available space in the parent element.
-3. Use `background: inherit` to inherit the `background` of the parent element.
-4. Slightly offset the pseudo-element with `top`, create a shadow with `filter: blur()`, and make it semi-transparent with `opacity`.
-5. Position the parent element above the pseudo-element with `z-index: 1` on the parent and `z-index: -1` on the pseudo-element.
+To create a shadow that is based on the colors of an element, follow these steps:
 
-Here is an example code block:
+1. Use the `::after` pseudo-element with `position: absolute` and `width` and `height` set to `100%` to fill the available space in the parent element.
+
+2. Inherit the `background` of the parent element by using `background: inherit`.
+
+3. Slightly offset the pseudo-element using `top`. Then, use `filter: blur()` to create a shadow, and set `opacity` to make it semi-transparent.
+
+4. Position the pseudo-element behind its parent by setting `z-index: -1`. Set `z-index: 1` on the parent element.
+
+Here's an example HTML and CSS code:
 
 ```html
 <div class="dynamic-shadow"></div>
@@ -35,3 +39,5 @@ Here is an example code block:
   z-index: -1;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

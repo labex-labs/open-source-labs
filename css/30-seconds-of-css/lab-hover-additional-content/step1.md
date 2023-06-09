@@ -1,8 +1,14 @@
-# How to Create a Card with Additional Content on Hover
+# Show Additional Content on Hover
+
+`index.html` and `style.css` have already been provided in the VM.
 
 To create a card that displays additional content on hover, follow these steps:
 
-1. Add the following HTML code to your `index.html` file:
+1. Use `overflow: hidden` on the card to hide any elements that overflow vertically.
+2. Use the `:hover` and `:focus-within` pseudo-class selectors to change the card's styling when the element is hovered, focused, or any of its descendants are focused.
+3. Set `transition: 0.3s ease all` to create a smooth transition effect on hover/focus.
+
+Here is an example HTML code for the card:
 
 ```html
 <div class="card">
@@ -17,7 +23,7 @@ To create a card that displays additional content on hover, follow these steps:
 </div>
 ```
 
-2. Add the following CSS code to your `style.css` file:
+And here is the CSS code to style the card:
 
 ```css
 .card {
@@ -71,8 +77,4 @@ To create a card that displays additional content on hover, follow these steps:
 }
 ```
 
-This code will create a card with an image, a heading, and additional content. The additional content will be hidden until the card is hovered over or focused on. The following CSS styles are used to create this effect:
-
-- `overflow: hidden` is used to hide elements that overflow vertically.
-- The `:hover` and `:focus-within` pseudo-class selectors are used to change the card's styling if the element is hovered, focused or any of its descendants are focused.
-- `transition: 0.3s ease all` is used to create a transition effect on hover/focus.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

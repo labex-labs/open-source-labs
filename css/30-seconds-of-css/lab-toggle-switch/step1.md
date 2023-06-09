@@ -1,18 +1,24 @@
 # Toggle Switch
 
+`index.html` and `style.css` have already been provided in the VM.
+
+Here's a more concise and clearer version of the content:
+
 To create a toggle switch with CSS only, follow these steps:
 
 1. Associate the `<label>` with the checkbox `<input>` element using the `for` attribute.
 2. Use the `::after` pseudo-element of the `<label>` to create a circular knob for the switch.
-3. Change the position of the knob and the `background-color` of the switch using the `:checked` pseudo-class selector with `transform: translateX(20px)`.
-4. Visually hide the `<input>` element by using `position: absolute` and `left: -9999px`.
+3. Use the `:checked` pseudo-class selector to change the position of the knob, using `transform: translateX(20px)` and the `background-color` of the switch.
+4. Visually hide the `<input>` element using `position: absolute` and `left: -9999px`.
 
-Here is the code to create the toggle switch:
+Here's the HTML code:
 
 ```html
 <input type="checkbox" id="toggle" class="offscreen" />
 <label for="toggle" class="switch"></label>
 ```
+
+Here's the CSS code:
 
 ```css
 .switch {
@@ -50,3 +56,5 @@ input[type="checkbox"]:checked + .switch {
   left: -9999px;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

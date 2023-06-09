@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will learn how to create a smooth height transition for an element with unknown height using CSS. We will use the `max-height` property and `transition` property to create the animation, and `overflow: hidden` to prevent content overflow. Additionally, we will utilize JavaScript to dynamically set the `max-height` property to the element's current height. By the end of this lab, you will be able to create elegant height transitions for any element with unknown height.
+In this lab, we will explore how to smoothly transition an element's height from `0` to `auto` when its height is unknown. This technique is useful for creating dropdown menus, accordions, and other animated content. By using CSS `transition`, `max-height`, and `overflow` properties, as well as JavaScript to dynamically set the height value, we can create a seamless and visually appealing user experience.

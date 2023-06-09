@@ -1,12 +1,17 @@
-# How to Display an Image with Text Overlay
+# Image With Text Overlay
 
-To display an image with a text overlay, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In your HTML file (`index.html`), create a `figure` element with a class of `text-overlay-image`.
-2. Inside the `figure` element, add an `img` element with the source URL of your desired image.
-3. Also inside the `figure` element, add a `figcaption` element.
-4. Inside the `figcaption` element, add your desired text. Use HTML tags as needed to format the text.
-5. In your CSS file (`style.css`), add the following styles to the `.text-overlay-image` class:
+To display an image with a text overlay, use the `<figure>` and `<figcaption>` elements. Use the `linear-gradient` property in CSS to create the overlay effect over the image. Here is an example code snippet:
+
+```html
+<figure class="text-overlay-image">
+  <img src="https://picsum.photos/id/971/400/400.jpg" />
+  <figcaption>
+    <h3>Business <br />Pricing</h3>
+  </figcaption>
+</figure>
+```
 
 ```css
 .text-overlay-image {
@@ -17,11 +22,7 @@ To display an image with a text overlay, follow these steps:
   max-height: 400px;
   width: 100%;
 }
-```
 
-6. Next, add the following styles to the `.text-overlay-image figcaption` selector:
-
-```css
 .text-overlay-image figcaption {
   box-sizing: border-box;
   position: absolute;
@@ -35,19 +36,12 @@ To display an image with a text overlay, follow these steps:
   background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
   color: #fff;
   padding: 16px;
-  font-family: sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  font-size: 28px;
+  font: 700 28px/1.2 sans-serif;
 }
-```
 
-7. Finally, add the following styles to the `.text-overlay-image figcaption h3` selector:
-
-```css
 .text-overlay-image figcaption h3 {
   margin: 0;
 }
 ```
 
-This will create a text overlay effect over the image using a linear gradient. The `h3` element within the `figcaption` will be styled with white text on top of the gradient.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

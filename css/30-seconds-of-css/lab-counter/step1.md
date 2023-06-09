@@ -1,12 +1,14 @@
 # Counter
 
+`index.html` and `style.css` have already been provided in the VM.
+
 To create a custom list counter that accounts for nested list elements, follow these steps:
 
-- In `index.html` and `style.css`, use `counter-reset` to initialize a variable counter (default `0`), the name of which is the value of the attribute (i.e. `counter`).
-- Use `counter-increment` on the variable counter for each countable element (i.e. each `<li>`).
-- Use `counters()` to display the value of each variable counter as part of the `content` of the `::before` pseudo-element for each countable element (i.e. each `<li>`). The second value passed to it (`'.'`) acts as the delimiter for nested counters.
+1. Use `counter-reset` to initialize a variable counter (default `0`), with the name being the value of the attribute (e.g. `counter`).
+2. Use `counter-increment` on the variable counter for each countable element (e.g. each `<li>`).
+3. Use `counters()` to display the value of each variable counter as part of the `content` of the `::before` pseudo-element for each countable element (e.g. each `<li>`). The second value passed to it (`'.'`) acts as the delimiter for nested counters.
 
-Example code:
+Here is an example HTML code:
 
 ```html
 <ul>
@@ -23,6 +25,8 @@ Example code:
 </ul>
 ```
 
+And here is the CSS code to apply the custom list counter:
+
 ```css
 ul {
   counter-reset: counter;
@@ -34,3 +38,5 @@ li::before {
   content: counters(counter, ".") " ";
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

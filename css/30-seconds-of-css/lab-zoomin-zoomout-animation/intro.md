@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore CSS and its capabilities for styling web pages. Specifically, we will learn how to use CSS to control layout, typography, colors, and other visual aspects of a website. By the end of the lab, you will have a solid understanding of CSS and be able to create visually appealing and responsive web pages.
+In this lab, we will explore the fundamentals of CSS programming. Through a series of exercises, we will learn how to use CSS to style HTML elements and create visually appealing web pages. By the end of the lab, you will have a solid understanding of CSS syntax and be able to apply it to your own web development projects.

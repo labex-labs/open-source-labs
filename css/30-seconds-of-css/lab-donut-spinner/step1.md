@@ -1,14 +1,16 @@
 # Donut Spinner
 
-This code creates a donut spinner that can be used to indicate the loading of content. To create the spinner:
+`index.html` and `style.css` have already been provided in the VM.
 
-- Write the code in `index.html` and `style.css`.
-- Use a semi-transparent `border` for the whole element, except for one side that serves as the loading indicator for the donut.
-- Define and use an appropriate animation, using `transform: rotate()` to rotate the element.
+To indicate the loading of content, create a donut spinner with a semi-transparent `border` for the whole element. Exclude one side to serve as the loading indicator for the donut. Then, define and use an appropriate animation, using `transform: rotate()` to rotate the element. Here's an example code in HTML and CSS:
+
+HTML:
 
 ```html
 <div class="donut"></div>
 ```
+
+CSS:
 
 ```css
 @keyframes donut-spin {
@@ -30,3 +32,5 @@ This code creates a donut spinner that can be used to indicate the loading of co
   animation: donut-spin 1.2s linear infinite;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

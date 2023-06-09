@@ -1,13 +1,15 @@
 # Staggered Animation
 
-To create a staggered animation for the elements of a list, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In `style.css`, set `opacity: 0` and `transform: translateX(100%)` for the list elements to make them transparent and move them to the right.
-2. Specify the same `transition` properties for the list elements, except for `transition-delay`.
-3. Use inline styles to assign a value for `--i` to each list element. This value will be used for `transition-delay` to create the stagger effect.
-4. Use the `:checked` pseudo-class selector for the checkbox in `index.html` to style the list elements. Set `opacity` to `1` and `transform` to `translateX(0)` to make them appear and slide into view.
+This code creates a staggered animation for a list's elements. To do this:
 
-Here's the code:
+1. Make the list elements transparent and move them all the way to the right by setting `opacity: 0` and `transform: translateX(100%)`.
+2. Specify the same `transition` properties for list elements, except `transition-delay`.
+3. Use inline styles to specify a value for `--i` for each list element. This will be used for `transition-delay` to create the stagger effect.
+4. Use the `:checked` pseudo-class selector for the checkbox to style list elements. To make them appear and slide into view, set `opacity` to `1` and `transform` to `translateX(0)`.
+
+Here is the HTML and CSS code to achieve this effect:
 
 ```html
 <div class="container">
@@ -50,9 +52,8 @@ Here's the code:
   font-size: 18px;
   opacity: 0;
   transform: translateX(100%);
-  transition-property: opacity, transform;
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.75, -0.015, 0.565, 1.055);
+  transition: opacity 0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055), transform
+      0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055);
 }
 
 .menu-toggler:checked ~ .stagger-menu li {
@@ -61,3 +62,5 @@ Here's the code:
   transition-delay: calc(0.055s * var(--i));
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

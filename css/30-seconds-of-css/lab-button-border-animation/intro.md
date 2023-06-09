@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will learn how to create a button border animation using CSS. The purpose of this lab is to demonstrate how to use pseudo-elements and the `:hover` pseudo-class to create a simple yet effective animation that enhances the user experience. By the end of this lab, you will have a better understanding of CSS animation techniques and how to apply them to your own projects.
+In this lab, we will explore how to create a button border animation on hover using CSS. By using the `::before` and `::after` pseudo-elements, we can add two boxes above and below the button and transition their width to `100%` on hover. This lab will help you to enhance your CSS skills and add interactivity to your web pages.

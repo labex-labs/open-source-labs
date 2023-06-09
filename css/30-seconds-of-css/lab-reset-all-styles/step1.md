@@ -1,6 +1,8 @@
 # Reset All Styles
 
-To reset all styles to their default values, use the `all` property in the `style.css` file. This will not affect the `direction` and `unicode-bidi` properties. Here's an example code block in `index.html`:
+`index.html` and `style.css` have already been provided in the VM.
+
+To reset all styles to their default values, use the `all` property. This property will not affect the `direction` and `unicode-bidi` properties. Here's an example of how to use it:
 
 ```html
 <div class="reset-all-styles">
@@ -13,12 +15,10 @@ To reset all styles to their default values, use the `all` property in the `styl
 </div>
 ```
 
-And the corresponding CSS code:
-
 ```css
 .reset-all-styles {
   all: initial;
 }
 ```
 
-This will reset all styles, including inherited styles, to their default values.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

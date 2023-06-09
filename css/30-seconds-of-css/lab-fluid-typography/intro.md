@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the concept of fluid typography in CSS. The purpose of this lab is to learn how to create text that scales according to the viewport width, making it responsive and adaptable to different screen sizes. By using the `clamp()` function and a simple formula, we will be able to achieve a visually pleasing and functional design for our web pages.
+In this lab, we will learn how to implement fluid typography using CSS. Fluid typography ensures that the text scales according to the viewport width, making it more responsive and accessible for different screen sizes. By using the `clamp()` function and a formula to calculate responsive values for `font-size`, we can create a more dynamic and user-friendly design.

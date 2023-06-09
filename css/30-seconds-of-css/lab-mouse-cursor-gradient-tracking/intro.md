@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the world of CSS programming by creating a responsive website layout. Through this lab, you will learn how to use CSS to style web pages, create page layouts, and implement responsive design techniques to ensure that your website looks great on all devices. By the end of this lab, you will have gained a strong foundation in CSS programming and be able to use these skills to create your own professional-looking websites.
+In this lab, we will explore CSS programming by creating a mouse cursor gradient tracking effect on a button. This lab will teach you how to use CSS variables to track the position of the mouse cursor and update the dimensions of a gradient. You will also learn how to use JavaScript to handle mouse events and update CSS variables dynamically.

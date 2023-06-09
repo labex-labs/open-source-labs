@@ -1,15 +1,16 @@
-# Code for Creating a List with Sticky Headings
+# List With Sticky Section Headings
 
-To create a list with sticky headings, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In your HTML file, add a container div with a class of "container" and a list with a class of "sticky-stack".
-2. Set the overflow-y property of the list to auto.
-3. Set the position of each heading (dt) to sticky and set the top property to 0.
-4. Add the necessary styling to your CSS file.
+To create a list with sticky headings for each section, follow these steps:
 
-Here is an example code block:
+1. Allow the list container (`<dl>`) to overflow vertically by using `overflow-y: auto`.
+2. Stick the headings (`<dt>`) to the top of the container by setting their `position` to `sticky` and applying `top: 0`.
+3. Use the following HTML and CSS code:
 
-```html
+HTML:
+
+```
 <div class="container">
   <dl class="sticky-stack">
     <dt>A</dt>
@@ -45,7 +46,9 @@ Here is an example code block:
 </div>
 ```
 
-```css
+CSS:
+
+```
 .container {
   display: grid;
   place-items: center;
@@ -79,3 +82,5 @@ Here is an example code block:
   margin-top: 1rem;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

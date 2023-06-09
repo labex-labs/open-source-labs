@@ -1,14 +1,16 @@
 # Mouse Cursor Gradient Tracking
 
+`index.html` and `style.css` have already been provided in the VM.
+
 To create a hover effect where the gradient follows the mouse cursor, follow these steps:
 
-1. In your `style.css` file, declare two CSS variables, `--x` and `--y`, that will be used to track the position of the mouse on the button.
-2. Declare a CSS variable, `--size`, that will be used to modify the gradient's dimensions.
-3. To create the gradient at the correct position, use the `background: radial-gradient(circle closest-side, pink, transparent)` property.
-4. To register a handler for the `'mousemove'` event, use `Document.querySelector()` and `EventTarget.addEventListener()`.
-5. To update the values of the `--x` and `--y` CSS variables, use `Element.getBoundingClientRect()` and `CSSStyleDeclaration.setProperty()`.
+1. Declare two CSS variables, `--x` and `--y`, to track the position of the mouse on the button.
+2. Declare a CSS variable, `--size`, to modify the gradient's dimensions.
+3. Use `background: radial-gradient(circle closest-side, pink, transparent)` to create the gradient at the correct position.
+4. Register a handler for the `'mousemove'` event using `Document.querySelector()` and `EventTarget.addEventListener()`.
+5. Update the values of the `--x` and `--y` CSS variables using `Element.getBoundingClientRect()` and `CSSStyleDeclaration.setProperty()`.
 
-Here's an example of the HTML code you can use:
+Here is the HTML code for the button:
 
 ```html
 <button class="mouse-cursor-gradient-tracking">
@@ -16,7 +18,7 @@ Here's an example of the HTML code you can use:
 </button>
 ```
 
-And here's an example of the corresponding CSS code:
+And here is the CSS code:
 
 ```css
 .mouse-cursor-gradient-tracking {
@@ -53,7 +55,7 @@ And here's an example of the corresponding CSS code:
 }
 ```
 
-Finally, here's an example of the JavaScript code you can use:
+Finally, here is the JavaScript code:
 
 ```js
 let btn = document.querySelector(".mouse-cursor-gradient-tracking");
@@ -65,3 +67,5 @@ btn.addEventListener("mousemove", (e) => {
   btn.style.setProperty("--y", y + "px");
 });
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

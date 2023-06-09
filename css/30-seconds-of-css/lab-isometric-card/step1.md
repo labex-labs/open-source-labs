@@ -1,10 +1,14 @@
 # Isometric Card
 
-This code block creates an isometric card. The code is written in `index.html` and `style.css`.
+`index.html` and `style.css` have already been provided in the VM.
 
-To create the card, use `transform` with `rotateX()` and `rotateY()`, as well as a `box-shadow`. The card is contained within a `div` with a class of `isometric-card`. The card has a width of `240px`, a height of `320px`, and a `border-radius` of `2rem`. The `background-color` is `#fcfcfc`.
+To create an isometric card, use `transform` with `rotateX()` and `rotateY()` along with a `box-shadow`. You can also add a `transition` to animate the card and create a lift effect when the user hovers over it.
 
-To animate the card, add a `transition` that creates a lift effect when the user hovers over it. The `transition` should include `ease-in-out` and have a duration of `0.4s` for the `transform` property, and `0.3s` for the `box-shadow` property.
+Here's an example code snippet:
+
+```html
+<div class="isometric-card"></div>
+```
 
 ```css
 .isometric-card {
@@ -27,3 +31,5 @@ To animate the card, add a `transition` that creates a lift effect when the user
     54px 54px 28px -10px rgba(34, 33, 81, 0.15);
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

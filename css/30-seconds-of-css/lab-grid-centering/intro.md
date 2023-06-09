@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the concept of grid centering in CSS. We will learn how to use the `display: grid` property to create a grid layout and `justify-content: center` and `align-items: center` properties to horizontally and vertically center a child element within a parent element. By the end of this lab, you will have a better understanding of how to use CSS Grid to create visually appealing and centered content.
+In this lab, we will explore the concept of grid centering using CSS. You will learn how to horizontally and vertically center a child element within a parent element using the `grid` layout. By the end of this lab, you will have a solid understanding of how to use `justify-content` and `align-items` properties to create a perfectly centered layout.

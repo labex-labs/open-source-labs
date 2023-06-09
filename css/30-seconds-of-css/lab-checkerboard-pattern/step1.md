@@ -1,10 +1,22 @@
 # Checkerboard Background Pattern
 
-To create a checkerboard background pattern, write the following code in `index.html` and `style.css`:
+`index.html` and `style.css` have already been provided in the VM.
+
+To create a checkerboard background pattern, follow these steps:
+
+1. Set the `background-color` property to white.
+2. Use `background-image` with two `linear-gradient()` values, each with a different angle to create the checkerboard pattern. For example, set one angle to `45deg` and the other to `-45deg`.
+3. Specify the pattern's size using `background-size`. For instance, `60px 60px` will create a 60-by-60 pixel pattern.
+4. Use `background-repeat` to set the repetition of the pattern. For example, `repeat` will make the pattern repeat in both directions.
+5. Note that the `height` and `width` properties of the element are fixed to 240px for demonstration purposes.
+
+Here's an example HTML element with the `.checkerboard` class:
 
 ```html
 <div class="checkerboard"></div>
 ```
+
+And here's the corresponding CSS:
 
 ```css
 .checkerboard {
@@ -25,9 +37,4 @@ To create a checkerboard background pattern, write the following code in `index.
 }
 ```
 
-Follow these steps to create the pattern:
-
-- Use `background-color` to set a white background.
-- Use `background-image` with two `linear-gradient()` values. Give each one a different angle to create the checkerboard pattern.
-- Use `background-size` to specify the pattern's size.
-- Note that the fixed `height` and `width` of the element is for demonstration purposes only.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

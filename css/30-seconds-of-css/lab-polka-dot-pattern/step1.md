@@ -1,21 +1,22 @@
 # Polka Dot Background Pattern
 
-This code block creates a polka dot background pattern. Follow these instructions to implement it in your project:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Open `index.html` and `style.css`.
-2. In `index.html`, create a `div` element with the class `polka-dot`.
-3. In `style.css`, add the following rules to the `.polka-dot` selector:
-   - Set `width` and `height` to `240px`.
-   - Set `background-color` to black (`#000`).
-   - Use `background-image` with two `radial-gradient()` values to create two dots.
-   - Use `background-size` to specify the pattern's size.
-   - Use `background-position` to appropriately place the two gradients.
-   - Set `background-repeat` to `repeat`.
-4. Note that the fixed `height` and `width` of the element is for demonstration purposes only.
+To create a polka dot background pattern, you can follow these steps:
+
+1. Set the `background-color` property to black.
+2. Use the `background-image` property with two `radial-gradient()` values to create two dots.
+3. Specify the pattern's size using the `background-size` property. Use `background-position` to appropriately place the two gradients.
+4. Set `background-repeat` to `repeat`.
+5. Note that the fixed `height` and `width` of the element is for demonstration purposes only.
+
+Here's an example HTML code for a div element with class `polka-dot`:
 
 ```html
 <div class="polka-dot"></div>
 ```
+
+And here's the corresponding CSS code:
 
 ```css
 .polka-dot {
@@ -29,3 +30,5 @@ This code block creates a polka dot background pattern. Follow these instruction
   background-repeat: repeat;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

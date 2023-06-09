@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore a technique to create a pretty text underline that does not clip descenders. By using a combination of `text-shadow` and `background-image` with `linear-gradient()`, we can create an attractive and functional underline for our text. This lab will guide you through the necessary CSS code to implement this technique in your projects.
+In this lab, we will learn how to create a pretty text underline that does not clip descenders using CSS. By using a combination of text-shadow and background-image with linear-gradient, we can create a gradient that will act as the actual underline while ensuring that the text remains selectable. This technique provides a more visually appealing alternative to text-decoration: underline.

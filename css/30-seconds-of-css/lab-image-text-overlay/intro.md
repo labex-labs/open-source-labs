@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the basics of CSS programming and how to style web pages using CSS. The purpose of this lab is to provide a hands-on learning experience for beginners to understand the fundamentals of CSS such as selectors, properties, and values. By the end of this lab, you will be able to create visually appealing web pages using CSS.
+In this lab, we will dive into the world of CSS programming. The purpose of this lab is to help you gain a better understanding of CSS and its role in web development. You will learn how to style HTML elements, apply different types of CSS selectors, and create responsive layouts using CSS.

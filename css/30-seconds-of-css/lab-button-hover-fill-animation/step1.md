@@ -1,11 +1,8 @@
 # Button Fill Animation
 
-To create a fill animation on hover, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. In `index.html` and `style.css`, set a `color` and `background` for the button.
-2. Use an appropriate `transition` to animate changes to the button element.
-3. Use the `:hover` pseudo-class to change the `background` and `color` of the button when the user hovers over it.
-4. Add the class `animated-fill-button` to the `button` element in `index.html`.
+To create a fill animation on hover, you can set the `color` and `background` properties and apply an appropriate `transition` to animate the changes. To trigger the animation on hover, use the `:hover` pseudo-class to change the `background` and `color` properties of the element. Here's an example code snippet:
 
 ```html
 <button class="animated-fill-button">Submit</button>
@@ -26,3 +23,5 @@ To create a fill animation on hover, follow these steps:
   color: #fff;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

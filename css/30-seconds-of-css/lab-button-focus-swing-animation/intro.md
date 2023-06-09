@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will learn how to create a button swing animation using CSS. The animation will be triggered when the button is in focus, and it will use the `transform` property to create a swinging effect. We will also use the `animation` and `keyframes` properties to define the animation's behavior.
+In this lab, we will explore CSS programming by learning how to create and modify stylesheets to control the appearance of web pages. You will gain hands-on experience with various CSS properties and selectors to create visually appealing and responsive designs. By the end of the lab, you will have a solid understanding of CSS and be able to apply your knowledge to create professional-looking websites.

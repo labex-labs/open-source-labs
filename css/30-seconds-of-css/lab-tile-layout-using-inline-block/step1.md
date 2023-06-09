@@ -1,13 +1,8 @@
 # 3-Tile Layout
 
-To create a 3-tile layout without using `float`, `flex`, or `grid`, use `display: inline-block`. In `index.html` and `style.css`, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Set the width of `.tiles` to `600px`.
-2. Set `font-size` to `0` for `.tiles` to avoid whitespace and to `20px` for `<h2>` elements to display the text.
-3. Inside `.tiles`, create three equal-width columns using `width` and `calc` to divide the width of the container.
-4. In each column, create a `.tile` div that contains an image and an `<h2>` element with the text you want to display.
-
-**Note:** Be aware that if you use relative units (e.g. `em`), using `font-size: 0` to fight whitespace between blocks might cause side effects.
+To create a 3-tile layout, use `display: inline-block` instead of `float`, `flex`, or `grid`. Use `width` in combination with `calc` to divide the width of the container evenly into 3 columns. To avoid whitespace, set `font-size` to `0` for `.tiles` and to `20px` for `<h2>` elements to display the text. Note that using `font-size: 0` to fight whitespace between blocks might cause side effects if you use relative units (e.g. `em`).
 
 ```html
 <div class="tiles">
@@ -42,3 +37,5 @@ To create a 3-tile layout without using `float`, `flex`, or `grid`, use `display
   font-size: 20px;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

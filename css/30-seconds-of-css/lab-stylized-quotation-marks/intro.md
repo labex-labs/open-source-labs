@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will explore the `quotes` property in CSS and learn how to customize the style of inline quotation marks. We will use the `<q>` element to add quotes to our text and then apply different characters for the opening and closing quotes using the `quotes` property. By the end of this lab, you will have a solid understanding of how to use this property to add a personal touch to your web pages.
+In this lab, we will explore the `quotes` property in CSS, which allows us to customize the quotation marks used for inline quotes. We will learn how to use this property to define our own opening and closing quote characters, and apply them to `<q>` elements in our HTML. By the end of this lab, you will have a better understanding of how to add a personal touch to the styling of your web pages.

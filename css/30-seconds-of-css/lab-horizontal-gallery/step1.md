@@ -1,14 +1,18 @@
-# Horizontal Scrollable Image Gallery
+# Image Gallery With Horizontal Scroll
 
-To create a horizontally scrollable image gallery, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-1. Position the `.thumbnails` at the bottom of the container using `position: absolute`.
-2. Use `scroll-snap-type: x mandatory` and `overscroll-behavior-x: contain` to create a snap effect on horizontal scroll. Snap elements to the start of the container using `scroll-snap-align: start`.
-3. Hide scrollbars using `scrollbar-width: none` and styling the pseudo-element `::-webkit-scrollbar` to `display: none`.
-4. Define a `scrollToElement` function using `Element.scrollTo()`, which scrolls the gallery to the given item.
+Here are revised instructions for creating a horizontally scrollable image gallery:
+
+1. To position the `.thumbnails` at the bottom of the container, set `position: absolute; bottom: 8px;` for the `.thumbnails` class.
+2. To create a snap effect on horizontal scroll, use `scroll-snap-type: x mandatory` and `overscroll-behavior-x: contain`. Snap elements to the start of the container using `scroll-snap-align: start`.
+3. Hide scrollbars by setting `scrollbar-width: none`. To style the pseudo-element `::-webkit-scrollbar`, add `display: none;`.
+4. Define a `scrollToElement` function using `Element.scrollTo()` that scrolls the gallery to the given item.
 5. Populate the `.thumbnails` element using `Array.prototype.map()` and `Array.prototype.join()`. Give each thumbnail a `data-id` attribute with the index of the image.
-6. Register a handler for the `'click'` event on each thumbnail by using `Document.querySelectorAll()` to get all the thumbnail elements, then use `Array.prototype.forEach()` to register the handler using `EventTarget.addEventListener()` and the `scrollToElement` function.
+6. Register a handler for the `'click'` event on each thumbnail using `Document.querySelectorAll()` and `Array.prototype.forEach()`. Use `EventTarget.addEventListener()` and the `scrollToElement` function.
 7. Register a handler for the `'scroll'` event using `Document.querySelector()` and `EventTarget.addEventListener()`. Update the `.thumbnails` element to match the current scroll position using the `highlightThumbnail` function.
+
+Here is the HTML code for the gallery:
 
 ```html
 <div class="gallery-container">
@@ -26,6 +30,8 @@ To create a horizontally scrollable image gallery, follow these steps:
   </div>
 </div>
 ```
+
+Here is the CSS code for the gallery:
 
 ```css
 .gallery-container {
@@ -82,10 +88,13 @@ To create a horizontally scrollable image gallery, follow these steps:
 }
 ```
 
+And here is the JavaScript code for the gallery:
+
 ```js
 const slideGallery = document.querySelector(".slides");
+const slides = slideGallery.querySelectorAll("div");
 const thumbnailContainer = document.querySelector(".thumbnails");
-const slideCount = slideGallery.querySelectorAll("div").length;
+const slideCount = slides.length;
 const slideWidth = 540;
 
 const highlightThumbnail = () => {
@@ -103,7 +112,7 @@ const scrollToElement = (el) => {
   slideGallery.scrollTo(index * slideWidth, 0);
 };
 
-thumbnailContainer.innerHTML += [...slideGallery.querySelectorAll("div")]
+thumbnailContainer.innerHTML += [...slides]
   .map((slide, i) => `<div data-id="${i}"></div>`)
   .join("");
 
@@ -115,3 +124,5 @@ slideGallery.addEventListener("scroll", (e) => highlightThumbnail());
 
 highlightThumbnail();
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

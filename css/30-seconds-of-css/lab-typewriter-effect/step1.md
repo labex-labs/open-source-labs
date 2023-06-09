@@ -1,12 +1,23 @@
 # Typewriter Effect
 
-This code block creates a typewriter effect animation by defining two animations: `typing` to animate the characters and `blink` to animate the caret. It uses the `::after` pseudo-element to add the caret to the container element. The text for the inner element is set using JavaScript and the `--characters` variable containing the character count. This variable is used to animate the text. Finally, `white-space: nowrap` and `overflow: hidden` are used to make content invisible as necessary.
+`index.html` and `style.css` have already been provided in the VM.
+
+To create a typewriter effect animation, follow these steps:
+
+1. Define two animations, `typing` and `blink`. `typing` animates the characters, and `blink` animates the caret.
+2. Use the `::after` pseudo-element to add the caret to the container element.
+3. Use JavaScript to set the text for the inner element and set the `--characters` variable, which contains the character count. This variable is used to animate the text.
+4. Use `white-space: nowrap` and `overflow: hidden` to make content invisible as necessary.
+
+Here's the HTML code:
 
 ```html
 <div class="typewriter-effect">
   <div class="text" id="typewriter-text"></div>
 </div>
 ```
+
+And here's the CSS code:
 
 ```css
 .typewriter-effect {
@@ -47,6 +58,8 @@ This code block creates a typewriter effect animation by defining two animations
 }
 ```
 
+And finally, here's the JavaScript code:
+
 ```js
 const typeWriter = document.getElementById("typewriter-text");
 const text = "Lorem ipsum dolor sit amet.";
@@ -54,3 +67,5 @@ const text = "Lorem ipsum dolor sit amet.";
 typeWriter.innerHTML = text;
 typeWriter.style.setProperty("--characters", text.length);
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

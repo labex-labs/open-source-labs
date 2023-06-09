@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, we will learn how to create a simple but effective image rotate effect on hover using CSS. This effect can be useful for adding a touch of interactivity to your website or application, and can make your images stand out. By using the `scale()`, `rotate()`, and `transition` properties, we can create a smooth and visually appealing animation that is sure to impress.
+In this lab, we will learn how to create a hover effect that rotates an image using CSS properties. By using `scale()`, `rotate()`, and `transition`, we can make the image appear to rotate when the user hovers over the parent element. We will also use `overflow: hidden` to hide the excess from the image transformation, creating a clean and polished effect.

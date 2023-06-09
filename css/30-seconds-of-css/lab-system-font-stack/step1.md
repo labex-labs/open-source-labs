@@ -1,22 +1,8 @@
 # System Font Stack
 
-To achieve a native app feel, the system font stack uses the native font of the operating system. The code can be written in `index.html` and `style.css`.
+`index.html` and `style.css` have already been provided in the VM.
 
-The font is defined using `font-family`. The browser looks for each successive font and falls back to the next one if it cannot find the font on the system or defined in CSS.
-
-The following fonts are used for different operating systems:
-
-- `-apple-system` and `BlinkMacSystemFont` are San Francisco fonts used on iOS, macOS (Chrome excluded) and macOS Chrome respectively.
-- `'Segoe UI'` is used on Windows 10.
-- `Roboto` is used on Android.
-- `Oxygen-Sans` is used on Linux with KDE.
-- `Ubuntu` is used on Ubuntu (all variants).
-- `Cantarell` is used on Linux with GNOME Shell.
-- `'Helvetica Neue'` and `Helvetica` are used on macOS 10.10 and below.
-- `Arial` is a widely supported font.
-- `sans-serif` is the fallback sans serif font if none of the other fonts are supported.
-
-Here's an example of how to use the system font stack in HTML and CSS:
+To achieve a native app feel, use the native font of the operating system. Define a list of fonts using `font-family`. The browser looks for each successive font, preferring the first one if possible, and falls back to the next if it cannot find the font (on the system or defined in CSS). Use `-apple-system` for San Francisco on iOS and macOS (not Chrome), and `BlinkMacSystemFont` for San Francisco on macOS Chrome. For Windows 10, use `'Segoe UI'`, for Android use `Roboto`, for Linux with KDE use `Oxygen-Sans`, for Ubuntu (all variants) use `Ubuntu`, and for Linux with GNOME Shell use `Cantarell`. For macOS 10.10 and below, use `'Helvetica Neue'` and `Helvetica`. For a fallback sans serif font that is widely supported by all operating systems, use `Arial`. To apply the system font to a specific text, use the following HTML and CSS:
 
 ```html
 <p class="system-font-stack">This text uses the system font.</p>
@@ -29,3 +15,5 @@ Here's an example of how to use the system font stack in HTML and CSS:
     sans-serif;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

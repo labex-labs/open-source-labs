@@ -1,19 +1,23 @@
 # Transform Centering
 
-To vertically and horizontally center a child element within its parent element using CSS transforms, follow these steps:
+`index.html` and `style.css` have already been provided in the VM.
 
-- Set the `position` of the parent to `relative` and the child to `absolute` to position it relative to its parent.
-- Offset the child element 50% from the left and top edge of the containing block by using `left: 50%` and `top: 50%`.
-- Use `transform: translate(-50%, -50%)` to negate its position, so that it is vertically and horizontally centered.
-- Note that the fixed `height` and `width` of the parent element is only for demonstration purposes.
+To vertically and horizontally center a child element within its parent using CSS transforms, follow these steps:
 
-Here is an example of the HTML and CSS code:
+1. Set the `position` property of the parent element to `relative` and that of the child element to `absolute` to position it relative to its parent.
+2. Use `left: 50%` and `top: 50%` to offset the child element 50% from the left and top edge of the parent element.
+3. Use `transform: translate(-50%, -50%)` to negate its position, so that it is both vertically and horizontally centered.
+4. Note that the fixed `height` and `width` of the parent element are for demonstration purposes only.
+
+Here is an example HTML code:
 
 ```html
 <div class="parent">
   <div class="child">Centered content</div>
 </div>
 ```
+
+And here is the corresponding CSS code:
 
 ```css
 .parent {
@@ -31,3 +35,5 @@ Here is an example of the HTML and CSS code:
   text-align: center;
 }
 ```
+
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
