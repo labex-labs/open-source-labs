@@ -16,7 +16,7 @@ git config --global core.editor "vim"
 ```
 4. Make a change to a file and stage it for commit:
 ```shell
-echo "Hello, Git!" > hello.txt
+echo "Hello, Git" > hello.txt
 git add hello.txt
 ```
 5. Commit the change:
