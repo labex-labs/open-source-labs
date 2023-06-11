@@ -21,7 +21,7 @@ git status
 ```
 4. Alternatively, you can use a fileglob to add all files with a `.js` extension:
 ```shell
-git add src/*.js
+git add *.js
 ```
 5. View the status of the current working directory and staging area again:
 ```shell
