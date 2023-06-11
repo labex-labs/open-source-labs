@@ -15,6 +15,6 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 5. Create a new file called `hello.txt` and write the string "Hello, World" into it. Add the newly created file `hello.txt` to the Git staging area and commit it, using the commit message "Add hello.txt" to describe the changes made in this commit.
 6. Push your changes to the remote repository. Git will push your changes to a branch named `my-branch` on the remote repository.
 
-This is the result of running `git log -r`:
+This is the result of running `git log`:
 
 ![<result>](./assets/challenge-set-default-push-branch-step1-1.png)
