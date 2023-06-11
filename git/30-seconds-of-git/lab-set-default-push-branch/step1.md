@@ -22,7 +22,7 @@ To complete this lab, you will use the Git repository `git-playground` from your
    ```
 5. Make some changes to the repository and commit them:
    ```
-   echo "Hello, World!" > hello.txt
+   echo "Hello, World" > hello.txt
    git add hello.txt
    git commit -m "Add hello.txt"
    ```
