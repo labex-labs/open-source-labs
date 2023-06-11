@@ -6,7 +6,9 @@ You want to configure the text editor used by Git to your preferred editor.
 
 ## Example
 
-1. Clone the `git-playground` repository from `https://github.com/labex-labs/git-playground.git`.
+To complete this challenges, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+
+1. Clone the `git-playground` repository from `https://github.com/your-username/git-playground.git`.
 2. Navigate to the cloned repository.
 3. Configure Git to use your preferred text editor (in this example, we will use vim).
 4. Update the contents of the `hello.txt` file to "Hello, Git" and stage it for commit.
