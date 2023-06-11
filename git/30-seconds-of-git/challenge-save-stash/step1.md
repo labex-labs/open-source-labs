@@ -20,34 +20,3 @@ Let's say you're working on a branch named `feature` in the `git-playground` rep
 This is the finished result:
 
 ![<result>](./assets/challenge-save-stash-step1-1.png)
-
-
-1. First, navigate to the `git-playground` directory:
-
-```shell
-cd git-playground
-```
-
-2. Make some changes to the files in the directory:
-
-```shell
-echo "Some changes" >> README.md
-```
-
-3. Save your changes to a stash:
-
-```shell
-git stash save "My changes"
-```
-
-4. Switch to a different branch:
-
-```shell
-git checkout master
-```
-
-5. Apply your stash:
-
-```shell
-git stash apply
-```
