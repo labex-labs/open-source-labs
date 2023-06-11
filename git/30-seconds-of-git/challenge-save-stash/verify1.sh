@@ -1,2 +1,2 @@
 #!/bin/zsh
-git stash apply | grep "error"
+cd /home/labex/project/git-playground && git stash apply | grep "error"
