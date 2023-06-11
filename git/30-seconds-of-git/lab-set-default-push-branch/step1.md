@@ -32,5 +32,5 @@ To complete this lab, you will use the Git repository `git-playground` from your
    ```
    Git will push your changes to a branch named `my-branch` on the remote repository.
 
-This is the result of running `git log -r`:
+This is the result of running `git log`:
 ![<result>](./assets/challenge-set-default-push-branch-step1-1.png)
