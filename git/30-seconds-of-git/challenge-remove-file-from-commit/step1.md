@@ -1,4 +1,4 @@
-# Git Challenge: Remove a File from the Last Commit
+# Remove a File from the Last Commit
 
 ## Problem
 
