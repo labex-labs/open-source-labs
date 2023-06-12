@@ -1,75 +1,104 @@
-# Selectively remove syscalls
+# Write a seccomp profile
 
-In this step you will see how applying changes to the `default.json` profile can be a good way to fine-tune which syscalls are available to containers.
+It is possible to write Docker seccomp profiles from scratch. You can also edit existing profiles. In this step you will learn about the syntax and behavior of Docker seccomp profiles.
 
-The `default-no-chmod.json` profile is a modification of the `default.json` profile with the `chmod()`, `fchmod()`, and `chmodat()` syscalls removed from its whitelist.
+The layout of a Docker seccomp profile looks like the following:
 
-1. Start a new container with the `default-no-chmod.json` profile and attempt to run the `chmod 777 / -v` command.
-
-   ```bash
-   docker run --rm -it --security-opt seccomp=./seccomp-profiles/default-no-chmod.json alpine sh
-   ```
-
-   and then from inside the container:
-
-   ```bash
-   chmod 777 / -v
-   ```
-
-   ```
-   chmod: /: Operation not permitted
-   ```
-
-The command fails because the `chmod 777 / -v` command uses some of the `chmod()`, `fchmod()`, and `chmodat()` syscalls that have been removed from the whitelist of the `default-no-chmod.json` profile.
-
-2. Exit the container.
-
-```bash
-exit
+```json
+{
+    "defaultAction": "SCMP_ACT_ERRNO",
+    "architectures": [
+        "SCMP_ARCH_X86_64",
+        "SCMP_ARCH_X86",
+        "SCMP_ARCH_X32"
+    ],
+    "syscalls": [
+        {
+            "name": "accept",
+            "action": "SCMP_ACT_ALLOW",
+            "args": []
+        },
+        {
+            "name": "accept4",
+            "action": "SCMP_ACT_ALLOW",
+            "args": []
+        },
+        ...
+    ]
+}
 ```
 
-3. Start another new container with the `default.json` profile and run the same `chmod 777 / -v`.
+The most authoritative source for how to write Docker seccomp profiles is the structs used to deserialize the JSON.
 
-   ```bash
-   docker run --rm -it --security-opt seccomp=./seccomp-profiles/default.json alpine sh
-   ```
+- [https://github.com/docker/engine-api/blob/c15549e10366236b069e50ef26562fb24f5911d4/types/seccomp.go](https://github.com/docker/engine-api/blob/c15549e10366236b069e50ef26562fb24f5911d4/types/seccomp.go)
+- [https://github.com/opencontainers/runtime-spec/blob/6be516e2237a6dd377408e455ac8b41faf48bdf6/specs-go/config.go#L502](https://github.com/opencontainers/runtime-spec/blob/6be516e2237a6dd377408e455ac8b41faf48bdf6/specs-go/config.go#L502)
 
-   and then from inside the container:
+The table below lists the possible *actions* in order of precedence. Higher actions overrule lower actions.
 
-   ```bash
-   chmod 777 / -v
-   ```
+| Action         | Description                                                              |
+|----------------|--------------------------------------------------------------------------|
+| SCMP_ACT_KILL  | Kill with a exit status of `0x80 + 31 (SIGSYS) = 159`                    |
+| SCMP_ACT_TRAP  | Send a `SIGSYS` signal without executing the system call                 |
+| SCMP_ACT_ERRNO | Set `errno` without executing the system call                            |
+| SCMP_ACT_TRACE | Invoke a ptracer to make a decision or set `errno` to `-ENOSYS`          |
+| SCMP_ACT_ALLOW | Allow                                                                    |
 
-   ```
-   mode of '/' changed to 0777 (rwxrwxrwx)
-   ```
+The most important actions for Docker users are `SCMP_ACT_ERRNO` and `SCMP_ACT_ALLOW`.
 
-The command succeeds this time because the `default.json` profile has the `chmod()`, `fchmod()`, and `chmodat` syscalls included in its whitelist.
+Profiles can contain more granular filters based on the value of the arguments to the system call.
 
-4. Exit the container.
-
-```bash
-exit
+```json
+{
+    ...
+    "syscalls": [
+        {
+            "name": "accept",
+            "action": "SCMP_ACT_ALLOW",
+            "args": [
+                {
+                    "index": 0,
+                    "op": "SCMP_CMP_MASKED_EQ",
+                    "value": 2080505856,
+                    "valueTwo": 0
+                }
+            ]
+        }
+    ]
+}
 ```
 
-5. Check both profiles for the presence of the `chmod()`, `fchmod()`, and `chmodat()` syscalls.
+* `index` is the index of the system call argument
+* `op` is the operation to perform on the argument. It can be one of:
+    * SCMP_CMP_NE - not equal
+    * SCMP_CMP_LT - less than
+    * SCMP_CMP_LE - less than or equal to
+    * SCMP_CMP_EQ - equal to
+    * SCMP_CMP_GE - greater or equal to
+    * SCMP_CMP_GT - greater than
+    * SCMP_CMP_MASKED_EQ - masked equal: true if `(value & arg == valueTwo)`
+* `value` is a parameter for the operation
+* `valueTwo` is used only for SCMP_CMP_MASKED_EQ
 
-   Be sure to perform these commands from the command line of your Docker Host and not from inside of the container created in the previous step.
+The rule only matches if **all** args match. Add multiple rules to achieve the effect of an OR. 
 
-   ```bash
-   cat ./seccomp-profiles/default.json | grep chmod
-   ```
+`strace` can be used to get a list of all system calls made by a program.
+It's a very good starting point for writing seccomp policies.
+Here's an example of how we can list all system calls made by `ls`:
 
-   ```
-   "name": "chmod",
-   "name": "fchmod",
-   "name": "fchmodat",
-   ```
+```.term1
+strace -c -f -S name ls 2>&1 1>/dev/null | tail -n +3 | head -n -2 | awk '{print $(NF)}'
+```
+```
+access
+arch_prctl
+brk
+close
+execve
+<SNIP>
+statfs
+write
+```
 
-   ```bash
-   cat ./seccomp-profiles/default-no-chmod.json | grep chmod
-   ```
+The output above shows the syscalls that will need to be enabled for a container running the `ls` program to work, in addition to the syscalls required to start a container.
 
-   The output above shows that the `default-no-chmod.json` profile contains no **chmod** related syscalls in the whitelist.
-
-In this step you saw how removing particular syscalls from the `default.json` profile can be a powerful way to start fine tuning the security of your containers.
+In this step you learned the format and syntax of Docker seccomp profiles. You also learned the order of preference for actions, as well as how to determine the syscalls needed by an individual program.
