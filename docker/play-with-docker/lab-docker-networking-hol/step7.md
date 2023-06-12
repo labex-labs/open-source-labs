@@ -1,68 +1,98 @@
-# Step 2: Connect a container
+# Overlay Networking
 
-The **bridge** network is the default network for new containers. This means that unless you specify a different network, all new containers will be connected to the **bridge** network.
+## Step 4: Test the network
 
-Create a new container by running `docker run -dt ubuntu sleep infinity`.
+To complete this step you will need the IP address of the service task running on **node2** that you saw in the previous step (`10.0.0.3`).
 
-```bash
-docker run -dt ubuntu sleep infinity
+Execute the following commands from the first terminal.
+
+```.term1
+docker network inspect overnet
 ```
 
 ```
-Unable to find image 'ubuntu:latest' locally
-latest: Pulling from library/ubuntu
-d54efb8db41d: Pull complete
-f8b845f45a87: Pull complete
-e8db7bf7c39f: Pull complete
-9654c40e9079: Pull complete
-6d9ef359eaaa: Pull complete
-Digest: sha256:dd7808d8792c9841d0b460122f1acf0a2dd1f56404f8d1e56298048885e45535
-Status: Downloaded newer image for ubuntu:latest
-846af8479944d406843c90a39cba68373c619d1feaa932719260a5f5afddbf71
+[
+    {
+        "Name": "overnet",
+        "Id": "wlqnvajmmzskn84bqbdi1ytuy",
+        "Created": "2017-04-04T09:35:47.362263887Z",
+        "Scope": "swarm",
+        "Driver": "overlay",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "10.0.0.0/24",
+                    "Gateway": "10.0.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Containers": {
+            "d676496d18f76c34d3b79fbf6573a5672a81d725d7c8704b49b4f797f6426454": {
+                "Name": "myservice.2.nlozn82wsttv75cs9vs3ju7vs",
+                "EndpointID": "36638a55fcf4ada2989650d0dde193bc2f81e0e9e3c153d3e9d1d85e89a642e6",
+                "MacAddress": "02:42:0a:00:00:04",
+                "IPv4Address": "10.0.0.4/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {
+            "com.docker.network.driver.overlay.vxlanid_list": "4097"
+        },
+        "Labels": {},
+        "Peers": [
+            {
+                "Name": "node1-f6a6f8e18a9d",
+                "IP": "10.0.0.5"
+            },
+            {
+                "Name": "node2-507a763bed93",
+                "IP": "10.0.0.6"
+            }
+        ]
+    }
+]
 ```
 
-This command will create a new container based on the `ubuntu:latest` image and will run the `sleep` command to keep the container running in the background. You can verify our example container is up by running `docker ps`.
+Notice that the IP address listed for the service task (container) running is different to the IP address for the service task running on the second node. Note also that they are on the same "overnet" network.
 
-```bash
+Run a `docker ps` command to get the ID of the service task so that you can log in to it in the next step.
+
+```.term1
 docker ps
 ```
 
 ```
-CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
-846af8479944        ubuntu              "sleep infinity"    55 seconds ago      Up 54 seconds                           heuristic_boyd
-```
-
-As no network was specified on the `docker run` command, the container will be added to the **bridge** network.
-
-Run the `brctl show` command again.
-
-```bash
-brctl show
-```
-
-```
-bridge name	bridge id		STP enabled	interfaces
-docker0		8000.024252ed52f7	no		vethd630437
-```
-
-Notice how the **docker0** bridge now has an interface connected. This interface connects the **docker0** bridge to the new container just created.
-
-You can inspect the **bridge** network again, by running `docker network inspect bridge`, to see the new container attached to it.
-
-```bash
-docker network inspect bridge
-```
-
-```
-<Snip>
-        "Containers": {
-            "846af8479944d406843c90a39cba68373c619d1feaa932719260a5f5afddbf71": {
-                "Name": "heuristic_boyd",
-                "EndpointID": "1265c418f0b812004d80336bafdc4437eda976f166c11dbcc97d365b2bfa91e5",
-                "MacAddress": "02:42:ac:11:00:02",
-                "IPv4Address": "172.17.0.2/16",
-                "IPv6Address": ""
-            }
-        },
+CONTAINER ID        IMAGE                                                                            COMMAND                  CREATED             STATUS              PORTS                           NAMES
+d676496d18f7        ubuntu@sha256:dd7808d8792c9841d0b460122f1acf0a2dd1f56404f8d1e56298048885e45535   "sleep infinity"         10 minutes ago      Up 10 minutes                                       myservice.2.nlozn82wsttv75cs9vs3ju7vs
 <Snip>
 ```
+
+Log on to the service task. Be sure to use the container `ID` from your environment as it will be different from the example shown below. We can do this by running `docker exec -it <CONTAINER ID> /bin/bash`.
+
+```
+docker exec -it yourcontainerid /bin/bash
+root@d676496d18f7:/#
+```
+
+Install the ping command and ping the service task running on the second node where it had a IP address of `10.0.0.3` from the `docker network inspect overnet` command.
+
+```.term1
+apt-get update && apt-get install -y iputils-ping
+```
+
+Now, lets ping `10.0.0.3`.
+
+```
+root@d676496d18f7:/# ping -c5 10.0.0.3
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+^C
+--- 10.0.0.3 ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 2998ms
+```
+
+The output above shows that both tasks from the **myservice** service are on the same overlay network spanning both nodes and that they can use this network to communicate.

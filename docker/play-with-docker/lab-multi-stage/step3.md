@@ -1,36 +1,30 @@
-# The old way of doing things
+# The builder pattern
 
-Let's build the Docker image with all the Golang toolchain and see how big the image comes out as:
-
-```bash
-docker build -t alexellis2/href-counter:sdk . -f Dockerfile.build
-```
-
-Now check the size of the image:
+Type in `cat builder.sh` so you can see how the builder pattern uses two separate Dockerfiles. This will help us get the context for the next step where we will use a single Dockerfile.
 
 ```bash
-docker images |grep href-counter
+./build.sh
 ```
 
 ```
-docker images |grep href-counter
-href-counter        sdk                 131c782e8c35        30 second
-s ago      692MB
+#!/bin/sh
+echo Building alexellis2/href-counter:build
+
+docker build -t alexellis2/href-counter:build . -f Dockerfile.build
+docker create --name extract alexellis2/href-counter:build
+docker cp extract:/go/src/github.com/alexellis/href-counter/app ./app
+docker rm -f extract
+
+echo Building alexellis2/href-counter:latest
+docker build -t alexellis2/href-counter:latest .
 ```
 
-The `docker history` command will show you that the layers we added during the build are only a small part of the resulting image (about 20MB +/-):
+As you can see there are quite a few intermediate steps required to create an optimized image using the _Builder pattern_.
+
+Let's see how big the Docker image came out as:
 
 ```bash
-docker history alexellis2/href-counter:sdk |head -n 4
+docker images |grep alexellis2/href-counter
 ```
 
-```
-IMAGE               CREATED             CREATED BY
-                   SIZE                COMMENT
-f8b1953fb9c7        1 second ago        /bin/sh -c CGO_ENABLED=0 GOOS=linux go bui...   5.64MB
-5d24895500e8        9 seconds ago       /bin/sh -c #(nop) COPY file:d3eec1f1fefbec...   1.71kB
-d83dc0785057        9 seconds ago       /bin/sh -c go get -d -v golang.org/x/net/html   13.6MB
-c6f59b210906        11 seconds ago      /bin/sh -c #(nop) WORKDIR /go/src/github.c...   0B
-```
-
-The image is quite large, but this Golang package can be built into a very small binary with no external dependencies, then added to an Alpine Linux base image.
+This is much smaller than when we built our first image with the Golang SDK included.

@@ -1,4 +1,4 @@
-# Step 2.2 - Join Worker nodes to the Swarm
+# Join Worker nodes to the Swarm
 
 You will perform the following procedure on **node2** and **node3**. Towards the end of the procedure you will switch back to **node1**.
 
@@ -36,9 +36,3 @@ yu3hbegvwsdpy9esh9t2lr431    node2   Ready   Active
 The `docker node ls` command shows you all of the nodes that are in the swarm as well as their roles in the swarm. The `*` identifies the node that you are issuing the command from.
 
 Congratulations! You have configured a swarm with one manager node and two worker nodes.
-
-# Section 3: Deploy applications across multiple hosts
-
-Now that you have a swarm up and running, it is time to deploy our really simple sleep application.
-
-You will perform the following procedure from **node1**.

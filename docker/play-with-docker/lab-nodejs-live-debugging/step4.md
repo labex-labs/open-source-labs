@@ -1,53 +1,35 @@
-# Start debugging
+# Fix the bug
 
-Open up the app directory in VSCode. Head over to the debugger by clicking the bug icon in the left-hand sidebar.
+Replace the `> ` with `>=` in the conditional on the next line:
 
-![Image of VS Code with debugger icon highlighted](../images/debugger-icon.png "Image of Visual Studio Code with debugger icon highlighted")
+![Image of VS Code line 24 to fix](../images/fixing-line.png "Image of Visual Studio Code line 24 to fix")
 
-Create a boilerplate debugger config by clicking the gear icon and selecting “Node.js” in the dropdown.
+Now save the file. A second or two later, you should see the debugger detach and then reattach (the yellow line highlighting the breakpoint will disappear and reappear). This is because several things have just happened:
 
-![Image of VS Code with gear icon highlighted](../images/gear-icon.png "Image of Visual Studio Code with gear icon highlighted")
+- Upon saving the file, Docker detected the filesystem change event and proxied it through to the container.
+- nodemon detected the event and restarted the application. You can confirm this by looking at your terminal: there should be a line that reads “restarting due to changes…”
+- Finally, VSCode detected that the remote debugger had gone away and reattached.
 
-![Image of VS Code dropdown list](../images/dropdown.png "Image of Visual Studio Code dropdown list")
+The debugger is now attached again. However, your browser tab might have errored out – go refresh it if so.
 
-A JSON file will be created and displayed. Replace its contents with the following:
+You can now step through the debugger once again and see that the lines cycle properly – no more `undefined`.
 
-```
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Attach",
-            "type": "node",
-            "request": "attach",
-            "port": 5858,
-            "address": "localhost",
-            "restart": true,
-            "sourceMaps": false,
-            "outDir": null,
-            "localRoot": "${workspaceRoot}",
-            "remoteRoot": "/code"
-        }
-    ]
-}
-```
+![Animated image of VS Code hitting the breakpoint with line fixed](../images/attach.png "Animated image of Visual Studio Code hitting the breakpoint with line fixed")
 
-There are three important changes here:
+Remove the breakpoint and detach the debugger by clicking the stop button. Go back to the browser window and enjoy the updated experience.
 
-- The whole “Launch” config has been deleted – you’re using Compose to launch the app, not VSCode, so it’s unnecessary.
-- `restart` is set to true, so that the debugger re-attaches when the app restarts.
-- `remoteRoot` is set to the path of the code directory inside the container, because it’s almost certainly different than the path to the code on your machine.
+![Animated image of browser without error](../images/attach.png "Animated image of browser without error")
 
-With the “Attach” config selected, click the “play” button to start the debugger.
-![Image of VS Code attach icon](../images/attach.png "Image of Visual Studio Code attach icon")
+And that's it, you're done!
 
-Now go back to app.js and find the line that reads `lineIndex += 1` line, just after we initialize the `message` variable. Set a breakpoint by clicking in the gutter, just to the left of the line number.
-![Image of VS Code breakpoint](../images/breakpoint.png "Image of Visual Studio Code breakpoint")
+{:.quiz}
+True or false: You have to restart a container after you make changes to the code or they won't be reflected in the application
 
-If your browser window is still open and refreshing, in a second or two you should see it hit the breakpoint. If not, go back and refresh it – VSCode will pop back to the front as soon as the debugger hits it.
+- ( ) True
+- (x) False
 
-Hit the Play button at the top to resume code execution. It’ll hit the breakpoint every time the browser refreshes, which is every 2 seconds. You can see it cycling through the lines, and then the bug shows up – right after the last line, message gets set to undefined.
-![Animated image of VS Code hititng breakpoint](../images/hitting-breakpoint.gif "Animated image of VS Code hititng breakpoint")
+{:.quiz}
+True or false: Debugging a NodeJS app running in a container requires a special plugin for the IDE
 
-The reason becomes clear if you open up the “Closure” section under “VARIABLES”: `lineIndex` has incremented to 4 – the length of the `LINES` array – when it should have been reset after getting to 3. We’ve got an off-by-one error.
-![Image of VS Code lineIndex value](../images/variables.png "Image of Visual Studio Code lineIndex value")
+- ( ) True
+- (x) False

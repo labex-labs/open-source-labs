@@ -1,4 +1,4 @@
-# Step 2.1 - Create a Manager node
+# Create a Manager node
 
 In this step you'll initialize a new Swarm, join a single worker node, and verify the operations worked.
 

@@ -1,84 +1,43 @@
-# Usage of the Volume API
+# Mount host's folder into a container
 
-The volume API introduced in Docker 1.9 enables to perform operations on volume very easily.
+The last item we will talk about is named bind-mount and consist of mounting a host's folder into a container's folder. This is done using the **-v** option of the **docker container run** command. Instead of specifying one single path (as we did when defining volumes) we will specified 2 paths separated by a column.
 
-First have a look at the commands available in the volume API.
+```
+docker container run -v HOST_PATH:CONTAINER_PATH [OPTIONS] IMAGE [CMD]
+```
+
+Note: HOST_PATH and CONTAINER_PATH can be a folder or file. None of the Paths have to exist before starting the Container as they will be created automatically during the start.
+
+## 1st case
+
+Let's run an alpine container bind mounting the local /tmp folder inside the container /data folder.
 
 ```bash
-docker volume --help
+docker container run -ti -v /tmp:/data alpine sh
 ```
 
-We will start with the create command, and create a volume named **html**.
+We end up in a shell inside our container. By default, there is no /data folder in an alpine distribution. What is the impact of the bind-mount ?
 
 ```bash
-docker volume create --name html
+ls /data
 ```
 
-If we list the existing volume, our **html** volume should be the only one.
+The /data folder has been created inside the container and it contains the content of the /tmp folder of the host. We can now, from the container, change files on the host and the other way round.
+
+## 2nd case
+
+Let's run a nginx container bind mounting the local /tmp folder inside the /usr/share/nginx/html folder of the container.
 
 ```bash
-docker volume ls
+docker container run -ti -v /tmp:/usr/share/nginx/html nginx bash
 ```
 
-The output should be something like
-
-```
-DRIVER              VOLUME NAME
-[other previously created volumes]
-local               html
-```
-
-In the volume API, like for almost all the other Docker's API, there is an **inspect** command. Let's use it against the **html** volume.
+Are the default index.html and 50x.html files still there in the container's /usr/share/nginx/html folder ?
 
 ```bash
-docker volume inspect html
+ls /usr/share/nginx/html
 ```
 
-The output should be the following one.
+No ! The content of the container's folder has been overridden with the content of the host folder.
 
-```
-[
-    {
-        "Driver": "local",
-        "Labels": {},
-        "Mountpoint": "/var/lib/docker/volumes/html/_data",
-        "Name": "html",
-        "Options": {},
-        "Scope": "local"
-    }
-]
-```
-
-The **Mountpoint** defined here is the path on the Docker host where the volume can be accessed. We can note that this path uses the name of the volume instead of the auto-generated ID we saw in the example above.
-
-We can now use this volume and mount it on a specific path of a container. We will use a Nginx image and mount the **html** volume onto **/usr/share/nginx/html** folder within the container.
-
-Note: /usr/share/nginx/html is the default folder served by nginx. It contains 2 files: index.html and 50x.html
-
-```bash
-docker container run --name www -d -p 8080:80 -v html:/usr/share/nginx/html nginx
-```
-
-Note: we use the -p option to map the nginx default port (80) to a port on the host (8080). We will come back to this in the lesson dedicated to the networking.
-
-From the host, let's have a look at the content of the volume.
-
-```bash
-ls /var/lib/docker/volumes/html/_data
-```
-
-The content of the **/usr/share/nginx/html** folder of the **www** container has been copied into the **/var/lib/docker/volumes/html/\_data** folder on the host.
-
-Let's have a look at the nginx's [welcome page](/){:data-term=".term1"}{:data-port="8080"}
-
-From our host, we can now modify the index.html file and verify the changes are taken into account within the container.
-
-```bash
-cat<<END >/var/lib/docker/volumes/html/_data/index.html
-SOMEONE HERE ?
-END
-```
-
-Let's have a look at the nginx's [welcome page](/){:data-term=".term1"}{:data-port="8080"}. We can see the changes we have done in the index.html.
-
-Note: please reload the page if you cannot see the changes.
+**Bind-mounting** is very usefull in development as it enables, for instance, to share source code on the host with the container.

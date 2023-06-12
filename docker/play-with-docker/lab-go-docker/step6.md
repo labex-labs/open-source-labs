@@ -14,7 +14,7 @@ Beyond the fact that Go is really good fit for a project
 that Docker, we hope that we showed you how Go and Docker
 can benefit from each other and work really well together!
 
-### Acknowledgements
+## Acknowledgements
 
 This was initially presented during the hack day at GopherCon 2016.
 

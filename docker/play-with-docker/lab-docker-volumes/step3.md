@@ -1,89 +1,57 @@
-# Defining a volume in a Dockerfile
+# Defining a volume at runtime
 
-We will now see how volumes come into the picture to handle the data persistency.
+We have seen volume defined in a Dockerfile, we will see they can also be defined at runtime using the **-v** flag of the **docker container run** command.
 
-We will start by creating a Dockerfile based on alpine and define the /data as a volume.
-This means that anything written by a container in /data will be persisted outside of the Union filesystem.
+Let's create a container from the alpine image, we'll use the -d option so it runs in background and also define a volume on /data as we've done previously.
+In order the PID 1 process remains active, we use the following command that pings Google DNS and log the output in a file within the /data folder.
 
-Create a Dockerfile with the following content
-
-```dockerfile
-FROM alpine
-VOLUME ["/data"]
-ENTRYPOINT ["/bin/sh"]
+```
+ping 8.8.8.8 > /data/ping.txt
 ```
 
-Note: we specify **/bin/sh** as the ENTRYPOINT so that if no command is provided in interactive mode we will end up in a shell inside our container.
-
-Let's build an image from this Dockerfile.
+The container is ran that way:
 
 ```bash
-docker image build -t img1 .
+docker container run --name c3 -d -v /data alpine sh -c 'ping 8.8.8.8 > /data/ping.txt'
 ```
 
-We will then create a container in interactive mode (using -ti flags) from this image and name it c2.
+Let's inspect the container and get the **Mounts** key using the Go template notation.
 
 ```bash
-docker container run --name c2 -ti img1
+docker container inspect -f "{{ "{{ json .Mounts "}}}}" c3 | jq
 ```
 
-We should then end up in a shell within the container. From there, we will go into /data and create a hello.txt file.
-
-```bash
-cd /data
-touch hello.txt
-ls
-```
-
-Let's exit the container making sure it remains running: use the Control-P / Control-Q combination for this.
-Use the following command to make sure it's still running.
-
-```bash
-docker container ls
-```
-
-Note: the container, named c2, should be listed there.
-
-We will now inspect this container in order to get the location of the volume (defined on /data) on the host.
-We can use the inspect command and then scroll into the output until we find the **Mounts** key...
-
-```bash
-docker container inspect c2
-```
-
-Or we can directly use the Go template notation and get the content of the **Mounts** keys right away.
-
-```bash
-docker container inspect -f "{{ "{{ json .Mounts "}}}}"  c2 | jq
-```
-
-You should then get an output like the following (the ID will not be the same though)
+We have pretty much the same output as we had when we defined the volume in the Dockerfile.
 
 ```
 [
-    {
-        "Destination": "/data",
-        "Driver": "local",
-        "Mode": "",
-        "Name": "2f5b7c6b77494934293fc7a09198dd3c20406f05272121728632a4aab545401c",
-        "Propagation": "",
-        "RW": true,
-        "Source": "/var/lib/docker/volumes/2f5b7c6b77494934293fc7a09198dd3c20406f05272121728632a4aab545401c/_data",
-        "Type": "volume"
-    }
+  {
+    "Type": "volume",
+    "Name": "af621cde2717307e5bf91be850c5a00474d58b8cdc8d6e37f2e373631c2f1331",
+    "Source": "/var/lib/docker/volumes/af621cde2717307e5bf91be850c5a00474d58b8cdc8d6e37f2e373631c2f1331/_data",
+    "Destination": "/data",
+    "Driver": "local",
+    "Mode": "",
+    "RW": true,
+    "Propagation": ""
+  }
 ]
 ```
 
-This output shows that the volume defined in /data is stored in **/var/lib/docker/volumes/2f5...01c/\_data** on the host (removing part of the ID for a better readability).
+If we use the folder defined in the **Source** key, and check the content of the ping.txt within the /data folder, we get something similar to the following.
 
-Copy your own path (the one under the **Source** key) and make sure the **hello.txt** file we created (from within the container) is there.
-
-We now remove the c2 container.
-
-```bash
-docker container stop c2 && docker container rm c2
+```
+tail -f /var/lib/docker/volumes/OUR_ID/_data/ping.txt
+64 bytes from 8.8.8.8: seq=34 ttl=37 time=0.462 ms
+64 bytes from 8.8.8.8: seq=35 ttl=37 time=0.436 ms
+64 bytes from 8.8.8.8: seq=36 ttl=37 time=0.512 ms
+64 bytes from 8.8.8.8: seq=37 ttl=37 time=0.487 ms
+64 bytes from 8.8.8.8: seq=38 ttl=37 time=0.409 ms
+64 bytes from 8.8.8.8: seq=39 ttl=37 time=0.438 ms
+64 bytes from 8.8.8.8: seq=40 ttl=37 time=0.477 ms
+...
 ```
 
-Check that the folder defined under the **Source** key is still there and contains **hello.txt** file.
+The ping.txt file is updated regularly by the command running in the **c3** container.
 
-From the above, we can see that a volume bypasses the union filesystem and is not dependent on a container's lifecycle.
+Stopping and removing the container will obviously stop the ping command but the /data/ping.txt file will still be there. Give it a try :)

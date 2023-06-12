@@ -1,7 +1,10 @@
-# The application
+# Clone the voting-app
 
-The voting app is a very handy multi containers application often used for demo purposes during meetup and conferences.
+Let's retrieve the voting app code from Github and go into the application folder.
 
-It basically allow users to vote between cat and dog (but could be "space" or "tab" too if you feel like it).
+Ensure you are in the first terminal and do the below:
 
-This application is available on Github and updated very frequently when new features are developed.
+```bash
+git clone https://github.com/docker/example-voting-app
+cd example-voting-app
+```

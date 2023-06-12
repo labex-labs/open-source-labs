@@ -1,6 +1,27 @@
-# So far we have explored using single instances of containers running on a single host, much like a developer might do when working on a single service application or like an IT adminstrator might do on a test rig. Production applications are usually much more complex and this single server model will not work to coordinate 10s or 100s of containers and the network connections amongst them, not to mention the need to ensure availability and the ability to scale.
+# Initialize Your Swarm
 
-For real applications IT users and app teams need more sophisticated tools. Docker supplies two such tools: **_Docker Compose_** and **_Docker Swarm Mode_**. The two tools have some similarities but some important differences:
+First thing we need to do is tell our Docker hosts we want to use Docker Swarm Mode. Swarms _can_ be just a single node, but that is unusual as you would have no high availability capabilities and you would severely limit your scalability. Most production swarms have at least three _manager_ nodes in them and many _worker_ nodes. Three managers is the minimum to have a true high-availability cluster with quorum. Note that manager nodes can run your container tasks the same as a worker node, but this functionality can also be separated so that managers only perform the management tasks.
 
-- **Compose** is used to control multiple containers on a single system. Much like the _Dockerfile_ we looked at to build an image, there is a text file that describes the application: which images to use, how many instances, the network connections, etc. But _Compose_ only runs on a single system so while it is useful, we are going to skip _Compose_<sup id="a1">[1](#fn-compose)</sup> and go straight to _Docker Swarm Mode_.
-- **Swarm Mode** tells Docker that you will be running many Docker engines and you want to coordinate operations across all of them. Swarm mode combines the ability to not only define the application architecture, like Compose, but to define and maintain high availability levels, scaling, load balancing, and more. With all this functionality, _Swarm mode_ is used more often in production environments than its more simplistic cousin, Compose.
+Initializing Docker Swarm Mode is easy. In the first terminal window labeled [node1] enter the following:
+
+```bash
+docker swarm init --advertise-addr $(hostname -i)
+```
+
+That's it - you now have your first Swarm manager and it is listening on the IP address returned by the (hostname -i) command. You should see some output that looks like this:
+
+```
+Swarm initialized: current node (tjocs7ul557phkmp6mkpjmu3f) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join --token <token> <host>
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+```
+
+In the output of your swarm init, you are given a command in the middle that looks like `docker swarm join -token SWMTKN-X-abcdef.....` which you use to join workers nodes to the swarm. You are also given a second command `docker swarm join-token manager` for adding additional managers.
+
+We are going to add a worker. Copy the "docker swarm join..." command from your manager's output and paste it in the 2nd terminal window on your screen. _Make sure to copy the entire command - it's likely to break across multiple lines - and do not copy the sample command above because your token will be different_.
+
+You now officially have a Docker Swarm! Currently, you have one manager and one worker. As hinted at above, you would almost always have 3 or more manager nodes and several worker nodes in order to maintain high availability and scalability, but one of each is enough to get started.

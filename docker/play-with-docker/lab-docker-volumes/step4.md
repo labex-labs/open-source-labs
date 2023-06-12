@@ -1,57 +1,84 @@
-# Defining a volume at runtime
+# Usage of the Volume API
 
-We have seen volume defined in a Dockerfile, we will see they can also be defined at runtime using the **-v** flag of the **docker container run** command.
+The volume API introduced in Docker 1.9 enables to perform operations on volume very easily.
 
-Let's create a container from the alpine image, we'll use the -d option so it runs in background and also define a volume on /data as we've done previously.
-In order the PID 1 process remains active, we use the following command that pings Google DNS and log the output in a file within the /data folder.
-
-```
-ping 8.8.8.8 > /data/ping.txt
-```
-
-The container is ran that way:
+First have a look at the commands available in the volume API.
 
 ```bash
-docker container run --name c3 -d -v /data alpine sh -c 'ping 8.8.8.8 > /data/ping.txt'
+docker volume --help
 ```
 
-Let's inspect the container and get the **Mounts** key using the Go template notation.
+We will start with the create command, and create a volume named **html**.
 
 ```bash
-docker container inspect -f "{{ "{{ json .Mounts "}}}}" c3 | jq
+docker volume create --name html
 ```
 
-We have pretty much the same output as we had when we defined the volume in the Dockerfile.
+If we list the existing volume, our **html** volume should be the only one.
+
+```bash
+docker volume ls
+```
+
+The output should be something like
+
+```
+DRIVER              VOLUME NAME
+[other previously created volumes]
+local               html
+```
+
+In the volume API, like for almost all the other Docker's API, there is an **inspect** command. Let's use it against the **html** volume.
+
+```bash
+docker volume inspect html
+```
+
+The output should be the following one.
 
 ```
 [
-  {
-    "Type": "volume",
-    "Name": "af621cde2717307e5bf91be850c5a00474d58b8cdc8d6e37f2e373631c2f1331",
-    "Source": "/var/lib/docker/volumes/af621cde2717307e5bf91be850c5a00474d58b8cdc8d6e37f2e373631c2f1331/_data",
-    "Destination": "/data",
-    "Driver": "local",
-    "Mode": "",
-    "RW": true,
-    "Propagation": ""
-  }
+    {
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/html/_data",
+        "Name": "html",
+        "Options": {},
+        "Scope": "local"
+    }
 ]
 ```
 
-If we use the folder defined in the **Source** key, and check the content of the ping.txt within the /data folder, we get something similar to the following.
+The **Mountpoint** defined here is the path on the Docker host where the volume can be accessed. We can note that this path uses the name of the volume instead of the auto-generated ID we saw in the example above.
 
-```
-tail -f /var/lib/docker/volumes/OUR_ID/_data/ping.txt
-64 bytes from 8.8.8.8: seq=34 ttl=37 time=0.462 ms
-64 bytes from 8.8.8.8: seq=35 ttl=37 time=0.436 ms
-64 bytes from 8.8.8.8: seq=36 ttl=37 time=0.512 ms
-64 bytes from 8.8.8.8: seq=37 ttl=37 time=0.487 ms
-64 bytes from 8.8.8.8: seq=38 ttl=37 time=0.409 ms
-64 bytes from 8.8.8.8: seq=39 ttl=37 time=0.438 ms
-64 bytes from 8.8.8.8: seq=40 ttl=37 time=0.477 ms
-...
+We can now use this volume and mount it on a specific path of a container. We will use a Nginx image and mount the **html** volume onto **/usr/share/nginx/html** folder within the container.
+
+Note: /usr/share/nginx/html is the default folder served by nginx. It contains 2 files: index.html and 50x.html
+
+```bash
+docker container run --name www -d -p 8080:80 -v html:/usr/share/nginx/html nginx
 ```
 
-The ping.txt file is updated regularly by the command running in the **c3** container.
+Note: we use the -p option to map the nginx default port (80) to a port on the host (8080). We will come back to this in the lesson dedicated to the networking.
 
-Stopping and removing the container will obviously stop the ping command but the /data/ping.txt file will still be there. Give it a try :)
+From the host, let's have a look at the content of the volume.
+
+```bash
+ls /var/lib/docker/volumes/html/_data
+```
+
+The content of the **/usr/share/nginx/html** folder of the **www** container has been copied into the **/var/lib/docker/volumes/html/\_data** folder on the host.
+
+Let's have a look at the nginx's [welcome page](/){:data-term=".term1"}{:data-port="8080"}
+
+From our host, we can now modify the index.html file and verify the changes are taken into account within the container.
+
+```bash
+cat<<END >/var/lib/docker/volumes/html/_data/index.html
+SOMEONE HERE ?
+END
+```
+
+Let's have a look at the nginx's [welcome page](/){:data-term=".term1"}{:data-port="8080"}. We can see the changes we have done in the index.html.
+
+Note: please reload the page if you cannot see the changes.

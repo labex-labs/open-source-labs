@@ -1,24 +1,80 @@
-# Predictive Load-balancing name using Docker Flow Proxy
-
-In this course, we will leverage the power of Docker Swarm Mode, released with Docker 1.13, and the great features of vfarcic **[Docker Flow Proxy](http://proxy.dockerflow.com/swarm-mode-stack/)** which provide an easy way to reconfigure proxy every time a new service is deployed, or when a service is scaled. It uses docker **service labels** to define the metadata and rules for its dynamically-configured routing rules to send traffic from the PRoxy to real applications (regardless of the host they are within a Docker Swarm Cluster).
-
-Docker Flow Proxy is composed on two parts :
-
-- [swarm-listener](https://github.com/vfarcic/docker-flow-swarm-listener)
-- [Docker Flow: Proxy](https://github.com/vfarcic/docker-flow-proxy)
-
-The purpose of `swarm-listener` is to monitore swarm services (add, remove, scale..) and to send requests to the proxy whenever a service is created or destroyed.
-It must be running on a `Swarm Manager` and will queries Docker API in search for newly created services.
-
-It uses docker **service's labels** (`com.df.*`) to define the metadata and rules for dynamically configure routing rules of the Proxy.
-
-### First we will enable the Swarm mode
-
-> In this tutorial, we will only use a 2 node swarm cluster, but it will work exactly the same way with more nodes!
+# show members of the swarm
 
 ```bash
-docker swarm init --advertise-addr=$(hostname -i)
-docker swarm join-token manager
+docker node ls
 ```
 
-> Copy the join command output and paste it in the other terminal to form a 2 node swarm cluster.
+If you correctly execute, the above command, you must see 2 nodes:
+
+```
+
+$ docker node ls
+ID                           HOSTNAME  STATUS  AVAILABILITY  MANAGER STATUS
+7p167ggf1wi3ox52z8ga2myu6 *  node1     Ready   Active        Leader
+og1irjjh2fjtwt7dko7ht0qnq    node2     Ready   Active        Reachable
+```
+
+## Create Docker Flow Proxy Docker Containers
+
+We will start by creating a Docker Compose file named proxy.yml, which will defines our 2 services `proxy` and `swarm-listener` of our Docker Flow Proxy stack :
+
+> You can Click on the grey box to automatically copy the content on the terminal (don't mess with the order of commands ;)
+
+```bash
+cat <<EOF > proxy.yml
+version: "3"
+
+services:
+
+
+  proxy:
+    image: vfarcic/docker-flow-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+    environment:
+      - LISTENER_ADDRESS=swarm-listener
+      - MODE=swarm
+    networks:
+      - public
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+
+
+  swarm-listener:
+    image: vfarcic/docker-flow-swarm-listener
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - public
+    environment:
+      - DF_NOTIFY_CREATE_SERVICE_URL=http://proxy:8080/v1/docker-flow-proxy/reconfigure
+      - DF_NOTIFY_REMOVE_SERVICE_URL=http://proxy:8080/v1/docker-flow-proxy/remove
+    deploy:
+      replicas: 1
+      placement:
+        constraints: [node.role == manager]
+      restart_policy:
+        condition: on-failure
+
+networks:
+  public:
+    driver: overlay
+    ipam:
+      driver: default
+      config:
+      - subnet: 10.1.0.0/24
+
+EOF
+```
+
+- We are using version 3 of compose file (mandatory for docker stack deploy)
+- We are using image from vfarcic on docker Hub
+- Docker will create an overlay networks named **public**, on which will will add each container we want to publish
+- We uses constraints to deploy the swarm-listener service on a swarm manager (as it needs to listen to swarm events)
+- We gives the proxy service the address of the swarm-listener
+- We gives the swarm-listener 2 API endpoint to reconfigure the Proxy through environment variables.
+- `DF_NOTIFY_*` environments variables defines the url of the Proxy API for reconfiguration.

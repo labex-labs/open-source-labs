@@ -1,33 +1,51 @@
-# Task 4: Add a reverse proxy to improve performance
+# Add monitoring and an application dashboard
 
-[Node.js](https://nodejs.org/en/) is a good server platform, but it's easy to improve performance by putting a reverse proxy in front of the Node.js application. The proxy is the public entrypoint to the app, and it handles requests from users.
+Docker swarm makes it super easy to scale containers, but before you go to production witrh a Dockerized application, you'll want monitoring in place so you can see what all those containers are doing.
 
-[Nginx](http://nginx.org) is a popular open source web server which you can easily configure as a reverse proxy. The [Nginx configuration](https://github.com/dockersamples/node-bulletin-board/blob/v4/bulletin-board-proxy/nginx.conf) in this part makes use of browser and server caching, which reduces the load on the web application and improves performance.
+Two open-source technologies are very popular in the Docker ecosystem for monitoring containers. [Prometheus](https://prometheus.io) is an instrumentation server that collects and stores metrics from your containers, and [Grafana](https://grafana.com) is an analytics UI that plugs into Prometheus to show dashboards.
 
-Switch to the v4 code branch:
+In this part you'll add Prometheus and Grafana to your application.
+
+First switch to the v5 code branch:
 
 ```bash
-git checkout v4
+git checkout v5
 ```
 
-And use Docker Compose to build the application:
+Now build the application, which will build images from [the Prometheus Dockerfile](https://github.com/dockersamples/node-bulletin-board/blob/v5/bulletin-board-metrics/Dockerfile) and [the Grafana Dockerfile](https://github.com/dockersamples/node-bulletin-board/blob/v5/bulletin-board-dashboard/Dockerfile):
 
 ```bash
 docker-compose build
 ```
 
-Now you have `v4` Docker images for all the application parts, you can upgrade the running stack using the new [docker-stack.yml](https://github.com/dockersamples/node-bulletin-board/blob/v4/docker-stack.yml) file:
+You have `v5` images for all the application components now. Upgrade the stack to the v5 [docker-stack.yml](https://github.com/dockersamples/node-bulletin-board/blob/v5/docker-stack.yml) file:
 
-```bash
+```
 docker stack deploy -c docker-stack.yml bb
 ```
 
-Version 4 adds a proxy server to the stack which publishes port `80`, so now you can browse to the app on the standard HTTP port:
+[Click here for v5 of the app](/){:data-term=".term1"}{:data-port="80"}
 
-[Click here for v4 of the app](/){:data-term=".term1"}{:data-port="80"}
+The UX is the same, but now the Prometheus container is scraping metrics from the Node.js container, every 5 seconds.
 
-The web application looks the same, but behind the scenes all the hard work is being done by the Nginx proxy. You can open developer tools on your browser and inspect the network responses - Nginx has added browser caching hints, and it's also using a local cache to reduce traffic to the Node.js app.
+To see the application metrics in Grafana, you need to configure the dashboard:
 
-There are also several instances of the proxy container running - Docker swarm load-balances incoming requests between those containers. If you had multiple servers in the swarm, you would be able to scale up to handle your incoming workload.
+[Click here for Grafana](/){:data-term=".term1"}{:data-port="3000"}
 
-In the final part you'll add monitoring to the application, so you can see what the Node.js container is doing.
+Log in to Grafana with the credentials `admin` / `admin`.
+
+Add a new data source with the following details:
+
+- Name: **prometheus**
+
+- Type: **Prometheus**
+
+- URL: **http://bb-metrics:9090**
+
+![Grafana data source](../images/node-sql-server-docker-grafana-data-source.jpg)
+
+From the Grafana icon, click _Dashboards... Import_ and load the JSON dashboard file from [v5 /dashboard.json](https://github.com/dockersamples/node-bulletin-board/blob/v5/bulletin-board-dashboard/dashboard.json). Select the Prometheus data store.
+
+You'll now see the application dashboard - send some load into the app by refreshing the browser, and the graphs will be populated:
+
+![Grafana dashboard](img/grafana-dashboard.jpg)

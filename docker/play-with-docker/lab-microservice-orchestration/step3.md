@@ -1,89 +1,127 @@
-# Step 0: Basic Link Extractor Script
+# Step 1: Containerized Link Extractor Script
 
-Checkout the `step0` branch and list files in it.
+Checkout the `step1` branch and list files in it.
 
 ```bash
-git checkout step0
+git checkout step1
 tree
 ```
 
 ```
 .
+├── Dockerfile
 ├── README.md
 └── linkextractor.py
 
-0 directories, 2 files
+0 directories, 3 files
 ```
 
-The `linkextractor.py` file is the interesting one here, so let's look at its contents:
+We have added one new file (i.e., `Dockerfile`) in this step.
+Let's look into its contents:
 
 ```bash
-cat linkextractor.py
+cat Dockerfile
 ```
 
-```py
-#!/usr/bin/env python
+```dockerfile
+FROM       python:3
+LABEL      maintainer="Sawood Alam <@ibnesayeed>"
 
-import sys
-import requests
-from bs4 import BeautifulSoup
+RUN        pip install beautifulsoup4
+RUN        pip install requests
 
-res = requests.get(sys.argv[-1])
-soup = BeautifulSoup(res.text, "html.parser")
-for link in soup.find_all("a"):
-    print(link.get("href"))
+WORKDIR    /app
+COPY       linkextractor.py /app/
+RUN        chmod a+x linkextractor.py
+
+ENTRYPOINT ["./linkextractor.py"]
 ```
 
-This is a simple Python script that imports three packages: `sys` from the standard library and two popular third-party packages `requests` and `bs4`.
-User-supplied command line argument (which is expected to be a URL to an HTML page) is used to fetch the page using the `requests` package, then parsed using the `BeautifulSoup`.
-The parsed object is then iterated over to find all the anchor elements (i.e., `<a>` tags) and print the value of their `href` attribute that contains the hyperlink.
+Using this `Dockerfile` we can prepare a Docker image for this script.
+We start from the official `python` Docker image that contains Python's run-time environment as well as necessary tools to install Python packages and dependencies.
+We then add some metadata as labels (this step is not essential, but is a good practice nonetheless).
+Next two instructions run the `pip install` command to install the two third-party packages needed for the script to function properly.
+We then create a working directory `/app`, copy the `linkextractor.py` file in it, and change its permissions to make it an executable script.
+Finally, we set the script as the entrypoint for the image.
 
-However, this seemingly simple script might not be the easiest one to run on a machine that does not meet its requirements.
-The `README.md` file suggests how to run it, so let's give it a try:
+So far, we have just described how we want our Docker image to be like, but didn't really build one.
+So let's do just that:
 
 ```bash
-./linkextractor.py http://example.com/
+docker image build -t linkextractor:step1 .
 ```
 
+This command should yield an output as illustrated below:
+
 ```
-bash: ./linkextractor.py: Permission denied
+Sending build context to Docker daemon  171.5kB
+Step 1/8 : FROM       python:3
+
+... [OUTPUT REDACTED] ...
+
+Successfully built 226196ada9ab
+Successfully tagged linkextractor:step1
 ```
 
-When we tried to execute it as a script, we got the `Permission denied` error.
-Let's check the current permissions on this file:
+We have created a Docker image named `linkextractor:step1` based on the `Dockerfile` illustrated above.
+If the build was successful, we should be able to see it in the list of image:
 
 ```bash
-ls -l linkextractor.py
+docker image ls
 ```
 
 ```
--rw-r--r--    1 root     root           220 Sep 23 16:26 linkextractor.py
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+linkextractor       step1               e067c677be37        2 seconds ago       931MB
+python              3                   a9d071760c82        2 weeks ago         923MB
 ```
 
-This current permission `-rw-r--r--` indicates that the script is not set to be executable.
-We can either change it by running `chmod a+x linkextractor.py` or run it as a Python program instead of a self-executing script as illustrated below:
+This image should have all the necessary ingredients packaged in it to run the script anywhere on a machine that supports Docker.
+Now, let's run a one-off container with this image and extract links from some live web pages:
 
 ```bash
-python3 linkextractor.py
+docker container run -it --rm linkextractor:step1 http://example.com/
 ```
 
-```py
-Traceback (most recent call last):
-  File "linkextractor.py", line 5, in <module>
-    from bs4 import BeautifulSoup
-ImportError: No module named bs4
+This outputs a single link that is present in the simple [example.com](http://example.com/) web page:
+
+```
+http://www.iana.org/domains/example
 ```
 
-Here we got the first `ImportError` message because we are missing the third-party package needed by the script.
-We can install that Python package (and potentially other missing packages) using one of the many techniques to make it work, but it is too much work for such a simple script, which might not be obvious for those who are not familiar with Python's ecosystem.
+Let's try it on a web page with more links in it:
 
-Depending on which machine and operating system you are trying to run this script on, what software is already installed, and how much access you have, you might face some of these potential difficulties:
+```bash
+docker container run -it --rm linkextractor:step1 https://training.play-with-docker.com/
+```
 
-- Is the script executable?
-- Is Python installed on the machine?
-- Can you install software on the machine?
-- Is `pip` installed?
-- Are `requests` and `beautifulsoup4` Python libraries installed?
+```
+/
+/about/
+#ops
+#dev
+/ops-stage1
+/ops-stage2
+/ops-stage3
+/dev-stage1
+/dev-stage2
+/dev-stage3
+/alacart
+https://twitter.com/intent/tweet?text=Play with Docker Classroom&url=https://training.play-with-docker.com/&via=docker&related=docker
+https://facebook.com/sharer.php?u=https://training.play-with-docker.com/
+https://plus.google.com/share?url=https://training.play-with-docker.com/
+http://www.linkedin.com/shareArticle?mini=true&url=https://training.play-with-docker.com/&title=Play%20with%20Docker%20Classroom&source=https://training.play-with-docker.com
+https://2018.dockercon.com/
+https://2018.dockercon.com/
+https://success.docker.com/training/
+https://community.docker.com/registrations/groups/4316
+https://docker.com
+https://www.docker.com
+https://www.facebook.com/docker.run
+https://twitter.com/docker
+https://www.github.com/play-with-docker/play-with-docker.github.io
+```
 
-This is where application containerization tools like Docker come in handy.
-In the next step we will try to containerize this script and make it easier to execute.
+This looks good, but we can improve the output.
+For example, some links are relative, we can convert them into full URLs and also provide the anchor text they are linked to.
+In the next step we will make these changes and some other improvements to the script.

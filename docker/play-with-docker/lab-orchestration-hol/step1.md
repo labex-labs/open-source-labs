@@ -1,19 +1,4 @@
-# In this lab you will play around with the container orchestration features of Docker. You will deploy a simple application to a single host and learn how that works. Then, you will configure Docker Swarm Mode, and learn to deploy the same simple application across multiple hosts. You will then see how to scale the application and move the workload across different hosts easily.
-
-> **Difficulty**: Beginner
-
-> **Time**: Approximately 30 minutes
-
-> **Tasks**:
->
-> - [Section #1 - What is Orchestration](#basics)
-> - [Section #2 - Configure Swarm Mode](#start-cluster)
-> - [Section #3 - Deploy applications across multiple hosts](#multi-application)
-> - [Section #4 - Scale the application](#scale-application)
-> - [Section #5 - Drain a node and reschedule the containers](#recover-application)
-> - [Cleaning Up](#cleanup)
-
-# Section 1: What is Orchestration
+# What is Orchestration
 
 So, what is Orchestration anyways? Well, Orchestration is probably best described using an example. Let's say that you have an application that has high traffic along with high-availability requirements. Due to these requirements, you typically want to deploy across at least 3+ machines, so that in the event a host fails, your application will still be accessible from at least two others. Obviously, this is just an example and your use-case will likely have its own requirements, but you get the idea.
 
@@ -23,7 +8,7 @@ But, with Orchestration tooling, you can typically off-load much of this manual 
 
 If you are typically only using `docker run` to deploy your applications, then you could likely really benefit from using Docker Compose, Docker Swarm mode, or both Docker Compose and Swarm.
 
-# Section 2: Configure Swarm Mode
+## Configure Swarm Mode
 
 Real-world applications are typically deployed across multiple hosts as discussed earlier. This improves application performance and availability, as well as allowing individual application components to scale independently. Docker has powerful native tools to help you do this.
 

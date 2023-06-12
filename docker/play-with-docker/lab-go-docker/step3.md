@@ -12,7 +12,7 @@ a container, _without anything else_, and it should work.
 
 Let's try this!
 
-### The `scratch` image
+## The `scratch` image
 
 There is a special image in the Docker ecosystem: `scratch`.
 This is an empty image. It doesn't need to be created or
@@ -68,7 +68,7 @@ docker image ls hello
 
 If we did everything right, this image should be about 2 MB. Not bad!
 
-### Building something without pushing to GitHub
+## Building something without pushing to GitHub
 
 Of course, if we had to push to GitHub each time we wanted to compile,
 we would waste a lot of time.
