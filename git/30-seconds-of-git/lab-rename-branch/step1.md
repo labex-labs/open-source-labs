@@ -10,7 +10,7 @@ To rename the branch, follow these steps:
 
 1. Open the terminal and navigate to the local repository directory.
 2. Use the `git checkout -b old-branch` command to create a branch named `old-branch` and use the `git branch -m <old-name> <new-name>` command to rename the branch. In our example, the command would be `git branch -m old-branch new-branch`.
-3. Verify that the branch has been renamed by using the `git branch` command. 
+3. Verify that the branch has been renamed by using the `git branch` command.
 
 The output should show the new branch name:
 

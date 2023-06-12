@@ -13,7 +13,7 @@ Suppose you will create a branch named `old-branch` to work on a new feature. Af
 To rename the branch, follow these steps:
 
 1. Open the terminal and navigate to the local repository directory.
-2. Create a branch named `old-branch` and rename the branch to `new-branch`. 
+2. Create a branch named `old-branch` and rename the branch to `new-branch`.
 3. Verify that the branch has been renamed.
 
 The output should show the new branch name:
