@@ -10,7 +10,7 @@ To create a list with sticky headings for each section, follow these steps:
 
 HTML:
 
-```
+```html
 <div class="container">
   <dl class="sticky-stack">
     <dt>A</dt>
@@ -48,7 +48,7 @@ HTML:
 
 CSS:
 
-```
+```css
 .container {
   display: grid;
   place-items: center;
