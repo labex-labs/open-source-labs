@@ -1,4 +1,4 @@
 #!/bin/zsh
 
+touch /home/labex/project/lab.ipynb
 pip install scikit-learn
-touch /home/project/labex/lab.ipynb
