@@ -87,7 +87,7 @@ We got you covered:
 
 ```bash
 docker container run --rm golang sh -c \
-    "go get github.com/golang/example/hello/... && exec hello"
+  "go get github.com/golang/example/hello/... && exec hello"
 ```
 
 Wait a minute, what are all those bells and whistles?

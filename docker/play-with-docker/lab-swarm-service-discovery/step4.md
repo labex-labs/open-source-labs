@@ -2,12 +2,12 @@
 
 ```bash
 docker service create \
-           --replicas 4 \
-           --name wordpressapp \
-           --network net1 \
-           --env WORDPRESS_DB_HOST=wordpressdb \
-           --env WORDPRESS_DB_PASSWORD=mysql123 \
-          wordpress:latest
+  --replicas 4 \
+  --name wordpressapp \
+  --network net1 \
+  --env WORDPRESS_DB_HOST=wordpressdb \
+  --env WORDPRESS_DB_PASSWORD=mysql123 \
+  wordpress:latest
 ```
 
 The above command creates a service named "wordpressapp" which belongs to "net1" network which runs 4 copies of wordpressapp container.

@@ -9,7 +9,7 @@ docker build -t alexellis2/href-counter:sdk . -f Dockerfile.build
 Now check the size of the image:
 
 ```bash
-docker images |grep href-counter
+docker images | grep href-counter
 ```
 
 ```
@@ -21,7 +21,7 @@ s ago      692MB
 The `docker history` command will show you that the layers we added during the build are only a small part of the resulting image (about 20MB +/-):
 
 ```bash
-docker history alexellis2/href-counter:sdk |head -n 4
+docker history alexellis2/href-counter:sdk | head -n 4
 ```
 
 ```

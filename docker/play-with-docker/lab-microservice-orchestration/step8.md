@@ -102,20 +102,20 @@ cat api/Dockerfile
 ```
 
 ```dockerfile
-FROM       ruby:2.6
-LABEL      maintainer="Sawood Alam <@ibnesayeed>"
+FROM ruby:2.6
+LABEL maintainer="Sawood Alam <@ibnesayeed>"
 
-ENV        LANG C.UTF-8
-ENV        REDIS_URL="redis://localhost:6379"
+ENV LANG C.UTF-8
+ENV REDIS_URL="redis://localhost:6379"
 
-WORKDIR    /app
-COPY       Gemfile /app/
-RUN        bundle install
+WORKDIR /app
+COPY Gemfile /app/
+RUN bundle install
 
-COPY       linkextractor.rb /app/
-RUN        chmod a+x linkextractor.rb
+COPY linkextractor.rb /app/
+RUN chmod a+x linkextractor.rb
 
-CMD        ["./linkextractor.rb", "-o", "0.0.0.0"]
+CMD ["./linkextractor.rb", "-o", "0.0.0.0"]
 ```
 
 Above `Dockerfile` is written for the Ruby script and it is pretty much self-explanatory.

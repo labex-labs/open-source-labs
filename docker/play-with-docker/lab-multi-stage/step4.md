@@ -65,5 +65,5 @@ docker run hello-world-lab
 The resulting size of hello-world is very small:
 
 ```bash
-docker images |grep hello-world-lab
+docker images | grep hello-world-lab
 ```

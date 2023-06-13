@@ -32,7 +32,7 @@ Below are some useful commands from both.
 The following command will start a new container using Alpine Linux, install the `libcap` package and then list capabilities.
 
 ```bash
- docker run --rm -it alpine sh -c 'apk add -U libcap; capsh --print'
+docker run --rm -it alpine sh -c 'apk add -U libcap; capsh --print'
 ```
 
 ```

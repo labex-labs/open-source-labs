@@ -74,7 +74,7 @@ Let's have a look at the nginx's [welcome page](/){:data-term=".term1"}{:data-po
 From our host, we can now modify the index.html file and verify the changes are taken into account within the container.
 
 ```bash
-cat<<END >/var/lib/docker/volumes/html/_data/index.html
+cat << END > /var/lib/docker/volumes/html/_data/index.html
 SOMEONE HERE ?
 END
 ```

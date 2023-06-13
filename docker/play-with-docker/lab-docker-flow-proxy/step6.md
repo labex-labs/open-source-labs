@@ -3,7 +3,7 @@
 We can add a Swarm visualizer service :
 
 ```bash
-cat <<EOF > visualizer.yml
+cat << EOF > visualizer.yml
 version: "3"
 
 services:

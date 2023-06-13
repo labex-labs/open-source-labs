@@ -6,10 +6,10 @@ Background containers are how you'll run most applications. Here's a simple exam
 
    ```bash
    docker container run \
-   --detach \
-   --name mydb \
-   -e MYSQL_ROOT_PASSWORD=my-secret-pw \
-   mysql:latest
+     --detach \
+     --name mydb \
+     -e MYSQL_ROOT_PASSWORD=my-secret-pw \
+     mysql:latest
    ```
 
    - `--detach` will run the container in the background.
@@ -69,7 +69,7 @@ Background containers are how you'll run most applications. Here's a simple exam
    Let's look at the processes running inside the container.
 
    ```bash
-     docker container top mydb
+   docker container top mydb
    ```
 
    You should see the MySQL daemon (`mysqld`) is running in the container.
@@ -87,7 +87,7 @@ Background containers are how you'll run most applications. Here's a simple exam
 
    ```bash
    docker exec -it mydb \
-   mysql --user=root --password=$MYSQL_ROOT_PASSWORD --version
+     mysql --user=root --password=$MYSQL_ROOT_PASSWORD --version
    ```
 
    You will see the MySQL version number, as well as a handy warning.

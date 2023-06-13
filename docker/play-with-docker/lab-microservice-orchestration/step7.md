@@ -37,12 +37,12 @@ cat www/Dockerfile
 ```
 
 ```dockerfile
-FROM       php:7-apache
-LABEL      maintainer="Sawood Alam <@ibnesayeed>"
+FROM php:7-apache
+LABEL maintainer="Sawood Alam <@ibnesayeed>"
 
-ENV        API_ENDPOINT="http://localhost:5000/api/"
+ENV API_ENDPOINT="http://localhost:5000/api/"
 
-COPY       . /var/www/html/
+COPY . /var/www/html/
 ```
 
 This is a rather simple `Dockerfile` that uses the official `php:7-apache` image as the base and copies all the files from the `./www` folder into the `/var/www/html/` folder of the image.

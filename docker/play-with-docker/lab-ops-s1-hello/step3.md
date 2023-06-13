@@ -44,7 +44,7 @@ docker container run alpine /bin/sh
 Wait, nothing happened! Is that a bug? No! In fact, something did happen. You started a 3rd instance of the alpine container and it ran the command `/bin/sh` and then exited. You did not supply any additional commands to `/bin/sh` so it just launched the shell, exited the shell, and then stopped the container. What you might have _expected_ was an interactive shell where you could type some commands. Docker has a facility for that by adding a flag to run the container in an interactive terminal. For this example, type the following:
 
 ```bash
- docker container run -it alpine /bin/sh
+docker container run -it alpine /bin/sh
 ```
 
 You are now inside the container running a Linux shell and you can try out a few commands like `ls -l`, `uname -a` and others. Note that Alpine is a small Linux OS so several commands might be missing. Exit out of the shell and container by typing the `exit` command.

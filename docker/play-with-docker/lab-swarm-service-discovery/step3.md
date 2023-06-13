@@ -32,12 +32,12 @@ v7sp7ev6xfoo        ingress             overlay             swarm
 
 ```bash
 docker service create \
-           --replicas 1 \
-           --name wordpressdb \
-           --network net1 \
-           --env MYSQL_ROOT_PASSWORD=mysql123 \
-           --env MYSQL_DATABASE=wordpress \
-          mysql:latest
+  --replicas 1 \
+  --name wordpressdb \
+  --network net1 \
+  --env MYSQL_ROOT_PASSWORD=mysql123 \
+  --env MYSQL_DATABASE=wordpress \
+  mysql:latest
 ```
 
 The above command creates a service named "wordpressdb" which belongs to "net1" network which runs a single replica of the container. It displays service ID as an output as shown:

@@ -33,15 +33,15 @@ The most authoritative source for how to write Docker seccomp profiles is the st
 - [https://github.com/docker/engine-api/blob/c15549e10366236b069e50ef26562fb24f5911d4/types/seccomp.go](https://github.com/docker/engine-api/blob/c15549e10366236b069e50ef26562fb24f5911d4/types/seccomp.go)
 - [https://github.com/opencontainers/runtime-spec/blob/6be516e2237a6dd377408e455ac8b41faf48bdf6/specs-go/config.go#L502](https://github.com/opencontainers/runtime-spec/blob/6be516e2237a6dd377408e455ac8b41faf48bdf6/specs-go/config.go#L502)
 
-The table below lists the possible *actions* in order of precedence. Higher actions overrule lower actions.
+The table below lists the possible _actions_ in order of precedence. Higher actions overrule lower actions.
 
-| Action         | Description                                                              |
-|----------------|--------------------------------------------------------------------------|
-| SCMP_ACT_KILL  | Kill with a exit status of `0x80 + 31 (SIGSYS) = 159`                    |
-| SCMP_ACT_TRAP  | Send a `SIGSYS` signal without executing the system call                 |
-| SCMP_ACT_ERRNO | Set `errno` without executing the system call                            |
-| SCMP_ACT_TRACE | Invoke a ptracer to make a decision or set `errno` to `-ENOSYS`          |
-| SCMP_ACT_ALLOW | Allow                                                                    |
+| Action         | Description                                                     |
+| -------------- | --------------------------------------------------------------- |
+| SCMP_ACT_KILL  | Kill with a exit status of `0x80 + 31 (SIGSYS) = 159`           |
+| SCMP_ACT_TRAP  | Send a `SIGSYS` signal without executing the system call        |
+| SCMP_ACT_ERRNO | Set `errno` without executing the system call                   |
+| SCMP_ACT_TRACE | Invoke a ptracer to make a decision or set `errno` to `-ENOSYS` |
+| SCMP_ACT_ALLOW | Allow                                                           |
 
 The most important actions for Docker users are `SCMP_ACT_ERRNO` and `SCMP_ACT_ALLOW`.
 
@@ -67,19 +67,19 @@ Profiles can contain more granular filters based on the value of the arguments t
 }
 ```
 
-* `index` is the index of the system call argument
-* `op` is the operation to perform on the argument. It can be one of:
-    * SCMP_CMP_NE - not equal
-    * SCMP_CMP_LT - less than
-    * SCMP_CMP_LE - less than or equal to
-    * SCMP_CMP_EQ - equal to
-    * SCMP_CMP_GE - greater or equal to
-    * SCMP_CMP_GT - greater than
-    * SCMP_CMP_MASKED_EQ - masked equal: true if `(value & arg == valueTwo)`
-* `value` is a parameter for the operation
-* `valueTwo` is used only for SCMP_CMP_MASKED_EQ
+- `index` is the index of the system call argument
+- `op` is the operation to perform on the argument. It can be one of:
+  - SCMP_CMP_NE - not equal
+  - SCMP_CMP_LT - less than
+  - SCMP_CMP_LE - less than or equal to
+  - SCMP_CMP_EQ - equal to
+  - SCMP_CMP_GE - greater or equal to
+  - SCMP_CMP_GT - greater than
+  - SCMP_CMP_MASKED_EQ - masked equal: true if `(value & arg == valueTwo)`
+- `value` is a parameter for the operation
+- `valueTwo` is used only for SCMP_CMP_MASKED_EQ
 
-The rule only matches if **all** args match. Add multiple rules to achieve the effect of an OR. 
+The rule only matches if **all** args match. Add multiple rules to achieve the effect of an OR.
 
 `strace` can be used to get a list of all system calls made by a program.
 It's a very good starting point for writing seccomp policies.
@@ -88,6 +88,7 @@ Here's an example of how we can list all system calls made by `ls`:
 ```.term1
 strace -c -f -S name ls 2>&1 1>/dev/null | tail -n +3 | head -n -2 | awk '{print $(NF)}'
 ```
+
 ```
 access
 arch_prctl

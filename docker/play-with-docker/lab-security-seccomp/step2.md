@@ -7,7 +7,7 @@ Docker uses seccomp in _filter mode_ and has its own JSON-based DSL that allows 
 The following example command starts an interactive container based off the Alpine image and starts a shell process. It also applies the seccomp profile described by `<profile>.json` to it.
 
 ```bash
-docker run -it --rm --security-opt seccomp=<profile>.json alpine sh ...
+docker run -it --rm --security-opt seccomp= alpine sh ... < profile > .json
 ```
 
 The above command sends the JSON file from the client to the daemon where it is compiled into a BPF program using a [thin Go wrapper around libseccomp](https://github.com/seccomp/libseccomp-golang).

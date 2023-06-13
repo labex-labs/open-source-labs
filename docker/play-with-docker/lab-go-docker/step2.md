@@ -12,7 +12,7 @@ to replace `golang` with `golang:1.5`:
 
 ```bash
 docker container run --rm golang:1.5 sh -c \
-    "go get github.com/golang/example/hello/... && exec hello"
+  "go get github.com/golang/example/hello/... && exec hello"
 ```
 
 You can see all the versions (and variants) available on the

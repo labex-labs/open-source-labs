@@ -21,7 +21,7 @@ We will start by creating a Docker Compose file named proxy.yml, which will defi
 > You can Click on the grey box to automatically copy the content on the terminal (don't mess with the order of commands ;)
 
 ```bash
-cat <<EOF > proxy.yml
+cat << EOF > proxy.yml
 version: "3"
 
 services:

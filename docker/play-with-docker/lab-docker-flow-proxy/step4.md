@@ -7,7 +7,7 @@ The **swarm-listener** service is listening to **docker swarm events** informati
 We can set a label to inform the proxy to route the traffic according to the target service URI Path using `com.df.*` rules labels:
 
 ```bash
-cat <<EOF > http.yml
+cat << EOF > http.yml
 version: "3"
 
 services:

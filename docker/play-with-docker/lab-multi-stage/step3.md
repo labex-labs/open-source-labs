@@ -24,7 +24,7 @@ As you can see there are quite a few intermediate steps required to create an op
 Let's see how big the Docker image came out as:
 
 ```bash
-docker images |grep alexellis2/href-counter
+docker images | grep alexellis2/href-counter
 ```
 
 This is much smaller than when we built our first image with the Golang SDK included.
