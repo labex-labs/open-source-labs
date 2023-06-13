@@ -6,15 +6,13 @@ To customize the inline quotation marks, modify the `quotes` property within a `
 
 For example:
 
-```
-<p>
-  <q>Do or do not, there is no try.</q> – Yoda
-</p>
+```html
+<p><q>Do or do not, there is no try.</q> – Yoda</p>
 ```
 
 can be styled with curly quotes using CSS:
 
-```
+```css
 q {
   quotes: "“" "”";
 }
