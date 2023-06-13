@@ -1,3 +1,2 @@
 #!/bin/zsh
-(cat ~/.zsh_history | grep -v grep | grep "git add") && (cat ~/.zsh_history | grep -v grep | grep "cd git-playground") && echo "True"
-
+(cd /home/labex/project/git-playground | git diff --cached | grep "1.py") && (cd /home/labex/project/git-playground | git diff --cached | grep "2.py")&&(cd /home/labex/project/git-playground | git diff --cached | grep "index.html") && (cd /home/labex/project/git-playground | git diff --cached | grep "one.js") && (cd /home/labex/project/git-playground | git diff --cached | grep "style.css") && (cd /home/labex/project/git-playground | git diff --cached | grep "two.js")&&echo "True"
