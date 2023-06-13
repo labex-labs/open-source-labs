@@ -1,4 +1,4 @@
-# One-Class SVM using SGD versus One-Class SVM with Stochastic Gradient Descent
+# One-Class SVM With Stochastic Gradient Descent
 
 ## Introduction
 

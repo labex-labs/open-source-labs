@@ -1,4 +1,4 @@
-# Topic Extraction from Text Using Non-negative Matrix Factorization and Latent Dirichlet Allocation
+# Topic Extraction From Text
 
 ## Introduction
 
