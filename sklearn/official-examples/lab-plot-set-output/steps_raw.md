@@ -1,4 +1,4 @@
-# Scikit-Learn Tutorial: Using `set_output` API
+# Using `set_output` API
 
 ## Introduction
 

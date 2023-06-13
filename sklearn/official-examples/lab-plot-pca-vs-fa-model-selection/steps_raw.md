@@ -1,4 +1,4 @@
-# Model Selection with Probabilistic PCA and Factor Analysis (FA)
+# Model Selection With Probabilistic PCA and Factor Analysis
 
 ## Introduction
 

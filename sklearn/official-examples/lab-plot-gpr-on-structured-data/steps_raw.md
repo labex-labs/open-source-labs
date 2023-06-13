@@ -1,4 +1,4 @@
-# Lab: Gaussian Processes on Discrete Data Structures
+# Gaussian Processes on Discrete Data Structures
 
 ## Introduction
 

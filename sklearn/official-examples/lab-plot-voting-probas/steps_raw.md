@@ -1,4 +1,4 @@
-# Scikit-Learn Tutorial: Class Probabilities with VotingClassifier
+# Class Probabilities with VotingClassifier
 
 ## Introduction
 

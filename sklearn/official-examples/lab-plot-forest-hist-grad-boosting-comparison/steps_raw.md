@@ -1,4 +1,4 @@
-# Comparing Random Forests and Histogram Gradient Boosting Models for Regression
+# Comparing Random Forests and Histogram Gradient Boosting
 
 ## Introduction
 

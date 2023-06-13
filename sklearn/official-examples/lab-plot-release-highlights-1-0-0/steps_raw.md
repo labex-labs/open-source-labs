@@ -1,4 +1,4 @@
-# Scikit-Learn Tutorial: Building a Quantile Regression Model
+# Building a Quantile Regression Model
 
 ## Introduction
 

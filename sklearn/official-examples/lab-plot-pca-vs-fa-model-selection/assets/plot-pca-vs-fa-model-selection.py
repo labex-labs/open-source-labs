@@ -1,6 +1,6 @@
 """
 ===============================================================
-Model selection with Probabilistic PCA and Factor Analysis (FA)
+Model Selection With Probabilistic PCA and Factor Analysis
 ===============================================================
 
 Probabilistic PCA and Factor Analysis are probabilistic models.
