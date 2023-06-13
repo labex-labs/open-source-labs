@@ -1,13 +1,13 @@
 {
   "type": "lab",
-  "title": "Bias-Variance Decomposition With Bagging",
-  "description": "In this lab, we will explore the concept of bias-variance decomposition and how it relates to single estimators versus bagging ensembles. We will use scikit-learn to generate and visualize toy regression problems and compare the expected mean squared error of a single estimator versus a bagging ensemble of decision trees.",
+  "title": "Dimensionality Reduction With Pipeline and GridSearchCV",
+  "description": "This lab demonstrates the use of `Pipeline` and `GridSearchCV` in scikit-learn to optimize over different classes of estimators in a single CV run. We will be using a support vector classifier to predict hand-written digits from the popular MNIST dataset.",
   "difficulty": "Beginner",
   "time": 15,
   "details": {
     "steps": [
       {
-        "title": "Import Required Libraries",
+        "title": "Import necessary libraries and load data",
         "text": "step1.md",
         "verify": [
           {
@@ -21,7 +21,7 @@
         "skills": []
       },
       {
-        "title": "Set the Parameters",
+        "title": "Create a pipeline and define parameter grid",
         "text": "step2.md",
         "verify": [
           {
@@ -35,7 +35,7 @@
         "skills": []
       },
       {
-        "title": "Generate Data",
+        "title": "Create a GridSearchCV object and fit data",
         "text": "step3.md",
         "verify": [
           {
@@ -49,7 +49,7 @@
         "skills": []
       },
       {
-        "title": "Define the Models to Compare",
+        "title": "Plot results",
         "text": "step4.md",
         "verify": [
           {
@@ -63,26 +63,12 @@
         "skills": []
       },
       {
-        "title": "Train the Models and Compute the Expected Mean Squared Error",
+        "title": "Caching transformers within a Pipeline",
         "text": "step5.md",
         "verify": [
           {
             "name": "Test the implementation of step5",
             "file": "verify5.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Interpret the Results",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Test the implementation of step6",
-            "file": "verify6.sh",
             "hint": "Please follow the steps to complete the lab.",
             "timeout": 0,
             "showstderr": true
@@ -101,7 +87,7 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "lab.ipynb",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         }
