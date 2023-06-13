@@ -19,7 +19,9 @@ jobs:
         env:
           APP_ID: ${{ secrets.APP_ID }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git clone https://huhuhang:$GH_TOKEN@github.com/labex-labs/scripts /tmp/scripts
           pip install requests
           pip install jsonschema
-          python .github/scripts/sync-labs-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --schema .github/scripts/lab_schema.json --skip true
+          python /tmp/scripts/sync-labs-to-feishu.py --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --schema .github/scripts/lab_schema.json --skip true
