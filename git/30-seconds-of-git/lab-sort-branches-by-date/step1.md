@@ -30,5 +30,7 @@ This will display a list of all local branches and sort them based on the date o
 
 This is the finished result:
 
+```shell
 * feature-branch
   master
+```
