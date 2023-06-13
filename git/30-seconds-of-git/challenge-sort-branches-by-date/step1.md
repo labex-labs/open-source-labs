@@ -6,19 +6,16 @@ You have a Git repository with multiple branches, and you want to sort them by d
 
 ## Example
 
-For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`.
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
-1. Once you have cloned the repository, navigate to the directory.
-
-2. Now, sort the branches by date.
+1. The repository has been cloned, navigate to the directory.
+2. View the commit history and sort the branches by date.
 
 This will display a list of all local branches and sort them based on the date of their last commit. You can use the arrow keys to navigate the list, and press <kbd>Q</kbd> to exit.
 
 This is the finished result:
 
 ```shell
-* master
-  one-branch
-  three-branch
-  two-branch
+* feature-branch
+  master
 ```
