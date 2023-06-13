@@ -12,15 +12,23 @@ git clone https://github.com/labex-labs/git-playground.git
 ```shell
 cd git-playground
 ```
-3. Create branches named `one-branch`, `two-branch` and `three-branch` in that order:
+3. To switch a remote branch to a local branch, use the command `git checkout -b feature-branch origin/feature-branch` to switch the remote `origin/feature-branch` branch to the local branch:
 ```shell
-git branch one-branch
-git branch two-branch
-git branch three-branch
+git fetch origin
+git checkout -b feature-branch origin/feature-branch
 ```
-4. Now, to sort the branches by date, use the following command:
+4. View the commit history and sort the branches by date.
+```shell
+git log
+```
+5. Now, to sort the branches by date, use the following command:
 ```shell
 git branch --sort=-committerdate
 ```
 
 This will display a list of all local branches and sort them based on the date of their last commit. You can use the arrow keys to navigate the list, and press <kbd>Q</kbd> to exit.
+
+This is the finished result:
+
+* feature-branch
+  master
