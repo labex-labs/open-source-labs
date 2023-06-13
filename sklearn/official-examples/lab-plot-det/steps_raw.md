@@ -1,4 +1,4 @@
-# Detection Error Tradeoff (DET) Curve Tutorial
+# Detection Error Tradeoff Curve Tutorial
 
 ## Introduction
 
