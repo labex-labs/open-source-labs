@@ -1,13 +1,13 @@
 {
   "type": "lab",
-  "title": "Combine Predictors Using Stacking",
-  "description": "In this lab, we will be using the Stacking method to blend several estimators to make predictions. In this strategy, some estimators are individually fitted on some training data while a final estimator is trained using the stacked predictions of these base estimators. We will be using the Ames Housing dataset to predict the final logarithmic price of the houses. We will use 3 learners, linear and non-linear and use a ridge regressor to combine their outputs together. We will also compare the performance of each individual predictor as well as of the stack of the regressors.",
+  "title": "Comparison Between Grid Search and Successive Halving",
+  "description": "This lab compares two popular parameter search algorithms in machine learning: Grid Search and Successive Halving. We will be using the scikit-learn library in Python to perform the comparison. These algorithms are used to find the best hyperparameters for a given machine learning model.",
   "difficulty": "Beginner",
   "time": 15,
   "details": {
     "steps": [
       {
-        "title": "Step 1: Download the dataset",
+        "title": "Import the necessary libraries and dataset",
         "text": "step1.md",
         "verify": [
           {
@@ -21,7 +21,7 @@
         "skills": []
       },
       {
-        "title": "Step 2: Make pipeline to preprocess the data",
+        "title": "Perform Grid Search",
         "text": "step2.md",
         "verify": [
           {
@@ -35,7 +35,7 @@
         "skills": []
       },
       {
-        "title": "Step 3: Stack of predictors on a single data set",
+        "title": "Perform Successive Halving",
         "text": "step3.md",
         "verify": [
           {
@@ -49,7 +49,7 @@
         "skills": []
       },
       {
-        "title": "Step 4: Measure and plot the results",
+        "title": "Visualize the Results",
         "text": "step4.md",
         "verify": [
           {
@@ -73,7 +73,7 @@
     "assets": {
       "host01": [
         {
-          "file": "plot-stack-predictors.py",
+          "file": "plot-successive-halving-heatmap.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         }
