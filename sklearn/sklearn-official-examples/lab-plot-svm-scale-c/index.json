@@ -1,0 +1,77 @@
+{
+  "type": "lab",
+  "title": "Scaling Regularization Parameter for SVMs",
+  "description": "This lab demonstrates the effect of scaling the regularization parameter when using Support Vector Machines (SVMs) for classification. In SVM classification, we are interested in a risk minimization for the equation:\n\n```math\nC \\sum_{i=1, n} \\mathcal{L} (f(x_i), y_i) + \\Omega (w)\n```\n\nwhere:\n\n- `C` is used to set the amount of regularization\n- `L` is a loss function of our samples and our model parameters.\n- `\u03a9` is a penalty function of our model parameters",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries and Generate Synthetic Dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "L1-Penalty Case",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "L2-Penalty Case",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step3",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-svm-scale-c.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

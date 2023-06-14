@@ -1,0 +1,119 @@
+{
+  "type": "lab",
+  "title": "Active Learning Withel Propagation",
+  "description": "This lab demonstrates an active learning technique to learn handwritten digits using label propagation. The Label Propagation is a semi-supervised learning method that uses a graph-based approach to propagate labels across data points. Active learning is a process that allows us to iteratively select data points to label, and use these labeled points to retrain the model.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Load the Digits Dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Shuffle and Split Data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Train Label Propagation Model",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step3",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Select Most Uncertain Points",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step4",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Label the Most Uncertain Points",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step5",
+            "file": "verify5.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Repeat",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step6",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-label-propagation-digits-active-learning.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

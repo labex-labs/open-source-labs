@@ -1,0 +1,91 @@
+{
+  "type": "lab",
+  "title": "Combine Predictors Using Stacking",
+  "description": "In this lab, we will be using the Stacking method to blend several estimators to make predictions. In this strategy, some estimators are individually fitted on some training data while a final estimator is trained using the stacked predictions of these base estimators. We will be using the Ames Housing dataset to predict the final logarithmic price of the houses. We will use 3 learners, linear and non-linear and use a ridge regressor to combine their outputs together. We will also compare the performance of each individual predictor as well as of the stack of the regressors.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Download the dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Make pipeline to preprocess the data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Stack of predictors on a single data set",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step3",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Measure and plot the results",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step4",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-stack-predictors.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

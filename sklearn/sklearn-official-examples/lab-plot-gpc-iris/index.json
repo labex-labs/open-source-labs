@@ -1,0 +1,91 @@
+{
+  "type": "lab",
+  "title": "Gaussian Process Classification on Iris Dataset",
+  "description": "In this lab, we will explore how to use Gaussian Process Classification (GPC) on the Iris dataset. The Iris dataset is a famous dataset that contains information about the length and width of the sepal and petal of three different species of Iris flowers. We will use scikit-learn to implement GPC, which is a probabilistic approach for classification tasks.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Importing necessary libraries and dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Defining the kernel function",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a mesh to plot in",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step3",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Plotting the predicted probabilities",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step4",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-gpc-iris.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

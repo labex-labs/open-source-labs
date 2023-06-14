@@ -1,0 +1,91 @@
+{
+  "type": "lab",
+  "title": "GMM Initialization",
+  "description": "In this lab, we will learn about different initialization methods for Gaussian Mixture Models (GMM). We will use scikit-learn library to generate sample data and visualize the clustering results. There are four different methods for the initialization parameter _init_param_: `kmeans` (default), `random`, `random_from_data`, and `k-means++`.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Import libraries and generate sample data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Define a function to get initial means",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Plot the sample data and initialization centers",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step3",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Interpret the results",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step4",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-gmm-init.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

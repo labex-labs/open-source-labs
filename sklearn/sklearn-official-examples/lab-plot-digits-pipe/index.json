@@ -1,0 +1,147 @@
+{
+  "type": "lab",
+  "title": "Plot Digits Pipe",
+  "description": "In this lab, we will build a pipeline for dimensionality reduction and classification using Principal Component Analysis (PCA) and Logistic Regression. We will use the scikit-learn library to perform unsupervised dimensionality reduction on the digits dataset using PCA. We will then use a logistic regression model for classification. We will use GridSearchCV to set the dimensionality of the PCA and find the best combination of PCA truncation and classifier regularization.",
+  "difficulty": "Beginner",
+  "time": 40,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Define Pipeline Components",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Load Dataset and Define Parameters for GridSearchCV",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step3",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Perform GridSearchCV",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step4",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Print Best Parameters and Score",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step5",
+            "file": "verify5.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Plot PCA Spectrum",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step6",
+            "file": "verify6.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Find Best Classifier Results",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step7",
+            "file": "verify7.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Plot Classification Accuracy",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step8",
+            "file": "verify8.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-digits-pipe.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}
