@@ -1,0 +1,105 @@
+{
+  "type": "lab",
+  "title": "Matplotlib Image Antialiasing Tutorial",
+  "description": "This tutorial will guide you through the process of antialiasing an image using Matplotlib in Python. Antialiasing is a technique used to smooth out jagged edges and reduce distortion in images. In this tutorial, we will use Matplotlib to generate a 450x450 pixel image with varying frequency content. We will then subsample the image from 450 data pixels to either 125 pixels or 250 pixels to demonstrate how antialiasing can be used to reduce the Moir\u00e9 patterns caused by high-frequency data being subsampled.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Image",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step1",
+            "file": "verify1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Subsample Image with 'nearest' Interpolation",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step2",
+            "file": "verify2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Subsample Image with 'antialiased' Interpolation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step3",
+            "file": "verify3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Upsample Image with 'nearest' Interpolation",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step4",
+            "file": "verify4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Upsample Image with 'antialiased' Interpolation",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the implementation of step5",
+            "file": "verify5.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "image-antialiasing.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}
