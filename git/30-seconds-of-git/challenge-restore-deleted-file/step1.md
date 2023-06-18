@@ -6,19 +6,17 @@ You are working on a project using Git and accidentally deleted a file that you 
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+To complete this experiment, you will use the Git repository `git-playground` from `https://github.com/labex-labs/git-playground.git`.
 
-1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
-2. Navigate to the repository directory.
-3. Create a new file called `example.txt`.
-4. Add and commit the file to the repository.
-5. Delete the `example.txt` file.
-6. View the commit history.
-7. Identify the commit where the file was deleted.
-8. Restore the deleted file by checking out the commit before the deletion.
+1. Identifies a commit where a file was deleted with the message "Added file2.txt".
+2. Restore the deleted file by checking out the commit before the deletion.
 
-This is the result of running `git status`:
+This will restore the `file2.txt` file to your local repository.
 
-![<result>](./assets/challenge-restore-deleted-file-step1-1.png)
-
-This will restore the `example.txt` file to your local repository.
+This is the result of running the `ll` command:
+```shell
+total 12K
+-rw-r--r-- 1 labex labex 15 Jun 18 18:05 file1.txt
+-rw-r--r-- 1 labex labex 15 Jun 18 18:13 file2.txt
+-rw-r--r-- 1 labex labex 32 Jun 18 18:05 README.md
+```

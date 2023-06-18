@@ -1,14 +1,10 @@
 ```shell
-git checkout <commit>^ -- <file>
+git checkout <commit> -- <file>
 ```
 
 ```shell
-echo "This is an example file" > example.txt
-git add example.txt
-git commit -m "Add example.txt file"
-rm example.txt
 git log --oneline
-# "example.txt" was deleted in the commit `0ed86a3`
-git checkout 0ed86a3^ -- example.txt
-# Restores the example.txt file
+# "file2.txt" was deleted in the commit `d22f46b`
+git checkout d22f46b -- file2.txt
+# Restores the file2.txt file
 ```
