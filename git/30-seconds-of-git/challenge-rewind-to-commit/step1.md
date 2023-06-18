@@ -15,5 +15,5 @@ To complete this experiment, you will use the Git repository `git-playground` fr
 
 This is the result of running `git log --oneline`:
 ```shell
-b00b937 (HEAD -> master) Initial commit
+c0d30f305 (HEAD -> master) Initial commit
 ```
