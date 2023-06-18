@@ -1,2 +1,2 @@
 #!/bin/zsh
-(cd /home/labex/project/git-playground && git config push.default | grep "current") && (cd /home/labex/project/git-playground && git log origin/my-branch | grep "Add hello.txt") && echo "True"
+(cd /home/labex/project/git-playground && git config push.default | grep "current") && (cd /home/labex/project/git-playground && git branch -vv --no-color | grep "origin/my-branch") && echo "True"
