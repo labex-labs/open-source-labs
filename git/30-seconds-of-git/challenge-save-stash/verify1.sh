@@ -1,2 +1,2 @@
 #!/bin/zsh
-(cd /home/labex/project/git-playground && git stash list | grep "On feature: My changes") && (cat ~/.zsh_history | grep -v grep | grep "git stash apply") && echo "True"
+(cd /home/labex/project/git-playground && git stash list | grep "On feature: My changes") && (cd /home/labex/project/git-playground && git status | less -R | grep "modified:   README.md") && echo "True"
