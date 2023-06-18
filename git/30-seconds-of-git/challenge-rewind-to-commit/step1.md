@@ -1,4 +1,4 @@
-# Git Challenge: Rewind to a Specific Commit
+# Rewind to a Specific Commit
 
 ## Problem
 
@@ -6,19 +6,14 @@ As a developer, you may need to undo changes made to your codebase. For example,
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+To complete this experiment, you will use the Git repository `git-playground` from `https://github.com/labex-labs/git-playground.git`.
 
-1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
-2. Navigate to the repository.
-3. Create a new file called `hello.txt` with the text "Hello, World" and add it to the Git staging area. Then commit the changes with the message "Add hello.txt file".
-4. Update the contents of the file `hello.txt` to "Hello, Git" and add the changes to the Git staging area. Then use the "Update hello.txt file" message to commit the changes.
-5. Update the contents of the file `hello.txt` to "Hello, Labex" and add the changes to the Git staging area. Then use the "Update hello.txt file again" message to commit the changes again.
-6. View the commit history of the repository.
-7. Make sure that the commit message you want to rewind to is the "Add hello.txt file" commit hash.
-8. Rewind back to the commit hash.
-9. View the changes made to your codebase.
+1. View the commit history of the repository.
+2. Make sure that the commit message you want to rewind to is the "Initial commit" commit hash.
+3. Rewind back to the commit hash.
+4. View the commit history of the repository again.
 
-This is the result of running `cat hello.txt`:
+This is the result of running `git log --oneline`:
 ```shell
-Hello, World
+b00b937 (HEAD -> master) Initial commit
 ```
