@@ -8,4 +8,5 @@ git reset HEAD~1
 
 git reset --hard HEAD~3
 # Rewinds back 3 commits and deletes changes
+git push -f origin rewind-commits
 ```
