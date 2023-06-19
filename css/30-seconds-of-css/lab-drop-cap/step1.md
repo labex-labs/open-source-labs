@@ -1,6 +1,6 @@
 # Drop Cap
 
-> You can write the code in `index.html` and `style.css`..
+> You can write the code in `index.html` and `style.css`.
 
 Makes the first letter of the first paragraph bigger than the rest of the text.
 
