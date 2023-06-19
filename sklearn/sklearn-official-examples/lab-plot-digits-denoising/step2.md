@@ -14,5 +14,3 @@ X_test_noisy = X_test + noise
 noise = rng.normal(scale=0.25, size=X_train.shape)
 X_train_noisy = X_train + noise
 ```
-
-

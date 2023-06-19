@@ -33,5 +33,3 @@ axs[1].set_title("Samples from posterior distribution")
 fig.suptitle("Exp-Sine-Squared kernel", fontsize=18)
 plt.tight_layout()
 ```
-
-

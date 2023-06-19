@@ -13,5 +13,3 @@ centers = [[1, 1], [-1, -1], [1, -1]]
 n_clusters = len(centers)
 X, labels_true = make_blobs(n_samples=3000, centers=centers, cluster_std=0.7)
 ```
-
-

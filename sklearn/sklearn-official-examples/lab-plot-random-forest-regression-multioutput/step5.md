@@ -6,5 +6,3 @@ We will create a `MultiOutputRegressor` using a random forest regressor as the u
 regr_multirf = MultiOutputRegressor(RandomForestRegressor(n_estimators=100, max_depth=max_depth, random_state=0))
 regr_multirf.fit(X_train, y_train)
 ```
-
-

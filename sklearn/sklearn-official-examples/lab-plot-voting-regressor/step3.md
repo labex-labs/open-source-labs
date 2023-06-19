@@ -15,5 +15,3 @@ reg3.fit(X, y)
 ereg = VotingRegressor([("gb", reg1), ("rf", reg2), ("lr", reg3)])
 ereg.fit(X, y)
 ```
-
-

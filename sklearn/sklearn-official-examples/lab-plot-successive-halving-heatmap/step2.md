@@ -8,5 +8,3 @@ gs = GridSearchCV(estimator=clf, param_grid=param_grid)
 gs.fit(X, y)
 gs_time = time() - tic
 ```
-
-

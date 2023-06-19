@@ -39,5 +39,3 @@ for ds_cnt, (X, y) in enumerate(datasets):
     ax.set_xticks(())
     ax.set_yticks(())
 ```
-
-

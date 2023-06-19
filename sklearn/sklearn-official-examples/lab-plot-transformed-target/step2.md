@@ -19,5 +19,3 @@ ax1.set_title("Transformed target distribution")
 f.suptitle("Synthetic data", y=1.05)
 plt.tight_layout()
 ```
-
-

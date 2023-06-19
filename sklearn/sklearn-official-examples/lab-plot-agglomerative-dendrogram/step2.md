@@ -6,5 +6,3 @@ We will use the `load_iris()` function from the `sklearn.datasets` module to loa
 iris = load_iris()
 X = iris.data
 ```
-
-

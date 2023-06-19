@@ -11,5 +11,3 @@ scaler.fit(X_train)
 X_test_scaled = scaler.transform(X_test)
 X_test_scaled.head()
 ```
-
-

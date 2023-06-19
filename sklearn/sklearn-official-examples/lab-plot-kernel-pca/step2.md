@@ -16,5 +16,3 @@ test_ax.scatter(X_test[:, 0], X_test[:, 1], c=y_test)
 test_ax.set_xlabel("Feature #0")
 _ = test_ax.set_title("Testing data")
 ```
-
-

@@ -18,5 +18,3 @@ X_test = np.r_[X + 2, X - 2]
 # Generate some abnormal novel observations
 X_outliers = np.random.uniform(low=-4, high=4, size=(20, 2))
 ```
-
-

@@ -19,5 +19,3 @@ display = PrecisionRecallDisplay.from_predictions(
 )
 _ = display.ax_.set_title("2-class Precision-Recall curve")
 ```
-
-

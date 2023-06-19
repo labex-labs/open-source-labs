@@ -7,5 +7,3 @@ from sklearn.feature_extraction.image import grid_to_graph
 
 connectivity = grid_to_graph(*rescaled_coins.shape)
 ```
-
-

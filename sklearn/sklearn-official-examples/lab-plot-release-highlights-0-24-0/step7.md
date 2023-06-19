@@ -32,5 +32,3 @@ display.figure_.suptitle(
 )
 display.figure_.subplots_adjust(hspace=0.3)
 ```
-
-

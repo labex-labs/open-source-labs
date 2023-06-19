@@ -14,5 +14,3 @@ X_test = X[-20:, indices]
 y_train = y[:-20]
 y_test = y[-20:]
 ```
-
-

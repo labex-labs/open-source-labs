@@ -19,5 +19,3 @@ ax.set_title(
 ax.set_xticks(())
 ax.set_yticks(())
 ```
-
-

@@ -34,5 +34,3 @@ for i in range(len(degrees)):
 
 plt.show()
 ```
-
-

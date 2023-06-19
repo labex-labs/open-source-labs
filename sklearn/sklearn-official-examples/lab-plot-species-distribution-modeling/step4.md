@@ -33,5 +33,3 @@ MM_bunch = create_species_bunch(
     "microryzomys_minutus_0", data.train, data.test, data.coverages, xgrid, ygrid
 )
 ```
-
-

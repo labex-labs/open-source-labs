@@ -13,5 +13,3 @@ y_prob = gp.predict_proba(xx)[:, 1]
 y_true = y_true.reshape((res, res))
 y_prob = y_prob.reshape((res, res))
 ```
-
-

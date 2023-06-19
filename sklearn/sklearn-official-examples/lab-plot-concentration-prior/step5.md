@@ -12,5 +12,3 @@ X = np.vstack(
 )
 y = np.concatenate([np.full(samples[j], j, dtype=int) for j in range(n_components)])
 ```
-
-

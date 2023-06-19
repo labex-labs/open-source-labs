@@ -23,5 +23,3 @@ rfecv.fit(X, y)
 
 print(f"Optimal number of features: {rfecv.n_features_}")
 ```
-
-

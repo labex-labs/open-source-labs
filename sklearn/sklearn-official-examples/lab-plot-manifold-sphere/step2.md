@@ -29,5 +29,3 @@ ax.view_init(40, -10)
 
 sphere_data = np.array([x, y, z]).T
 ```
-
-

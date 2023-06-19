@@ -7,5 +7,3 @@ sr_lle, sr_err = manifold.locally_linear_embedding(sr_points, n_neighbors=12, n_
 
 sr_tsne = manifold.TSNE(n_components=2, perplexity=40, random_state=0).fit_transform(sr_points)
 ```
-
-

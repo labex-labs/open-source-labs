@@ -13,5 +13,3 @@ X, y = datasets.make_circles(
 red = y == 0
 green = y == 1
 ```
-
-

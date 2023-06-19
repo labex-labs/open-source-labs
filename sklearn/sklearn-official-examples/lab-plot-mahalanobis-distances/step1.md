@@ -21,5 +21,3 @@ outliers_cov = np.eye(n_features)
 outliers_cov[np.arange(1, n_features), np.arange(1, n_features)] = 7.0
 X[-n_outliers:] = np.dot(np.random.randn(n_outliers, n_features), outliers_cov)
 ```
-
-

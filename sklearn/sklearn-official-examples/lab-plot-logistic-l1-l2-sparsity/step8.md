@@ -10,5 +10,3 @@ We will set the titles and labels for the subplots.
 
     axes_row[0].set_ylabel("C = %s" % C)
 ```
-
-

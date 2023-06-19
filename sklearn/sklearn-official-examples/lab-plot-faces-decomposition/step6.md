@@ -10,5 +10,3 @@ batch_dict_estimator = decomposition.MiniBatchDictionaryLearning(
 batch_dict_estimator.fit(faces_centered)
 plot_gallery("Dictionary learning", batch_dict_estimator.components_[:n_components])
 ```
-
-

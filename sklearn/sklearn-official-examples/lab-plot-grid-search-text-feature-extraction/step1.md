@@ -30,5 +30,3 @@ print(f"Loading 20 newsgroups dataset for {len(data_train.target_names)} categor
 print(data_train.target_names)
 print(f"{len(data_train.data)} documents")
 ```
-
-

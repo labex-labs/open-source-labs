@@ -31,5 +31,3 @@ def plot_hyperplane(c, color):
 for i, color in zip(clf.classes_, colors):
         plot_hyperplane(i, color)
 ```
-
-

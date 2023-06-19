@@ -18,5 +18,3 @@ from sklearn.linear_model import SGDOneClassSVM
 from sklearn.kernel_approximation import Nystroem
 from sklearn.pipeline import make_pipeline
 ```
-
-

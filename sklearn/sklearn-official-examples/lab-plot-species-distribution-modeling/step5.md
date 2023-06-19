@@ -12,5 +12,3 @@ train_cover_std = (BV_bunch.cov_train - mean) / std
 clf = svm.OneClassSVM(nu=0.1, kernel="rbf", gamma=0.5)
 clf.fit(train_cover_std)
 ```
-
-

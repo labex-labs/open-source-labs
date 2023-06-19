@@ -18,5 +18,3 @@ plot_gallery(
     kmeans_estimator.cluster_centers_[:n_components],
 )
 ```
-
-

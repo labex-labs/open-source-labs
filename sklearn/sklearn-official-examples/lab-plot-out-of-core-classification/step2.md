@@ -52,5 +52,3 @@ def stream_reuters_documents(data_path=None):
         for doc in parser.parse(open(filename, "rb")):
             yield doc
 ```
-
-

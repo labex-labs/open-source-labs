@@ -6,5 +6,3 @@ In this step, we estimate an empirical covariance matrix of the dataset using th
 # Estimate an empirical covariance matrix of the dataset
 emp_cov = EmpiricalCovariance().fit(X).covariance_
 ```
-
-

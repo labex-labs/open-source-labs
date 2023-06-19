@@ -21,5 +21,3 @@ def highlight_min(x):
 
 results.style.apply(highlight_min)
 ```
-
-

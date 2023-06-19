@@ -27,5 +27,3 @@ for clf, title, ax in zip(models, titles, sub.flatten()):
 
 plt.show()
 ```
-
-

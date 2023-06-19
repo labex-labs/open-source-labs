@@ -12,5 +12,3 @@ print("Log-loss of")
 print(f" * uncalibrated classifier: {score:.3f}")
 print(f" * calibrated classifier: {cal_score:.3f}")
 ```
-
-

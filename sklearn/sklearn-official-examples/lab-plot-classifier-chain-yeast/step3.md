@@ -11,5 +11,3 @@ chain_jaccard_scores = [
     for Y_pred_chain in Y_pred_chains
 ]
 ```
-
-

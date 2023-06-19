@@ -9,5 +9,3 @@ h = 0.05  # step size in the mesh
 cmap_light = ListedColormap(["#FFAAAA", "#AAFFAA", "#AAAAFF"])
 cmap_bold = ListedColormap(["#FF0000", "#00FF00", "#0000FF"])
 ```
-
-

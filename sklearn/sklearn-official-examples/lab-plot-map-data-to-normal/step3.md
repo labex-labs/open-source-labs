@@ -32,5 +32,3 @@ loc_a, loc_b = 100, 105
 X_a, X_b = rng.normal(loc=loc_a, size=size), rng.normal(loc=loc_b, size=size)
 X_bimodal = np.concatenate([X_a, X_b], axis=0)
 ```
-
-

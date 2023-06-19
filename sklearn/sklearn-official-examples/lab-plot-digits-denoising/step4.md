@@ -18,5 +18,3 @@ kernel_pca = KernelPCA(
 pca.fit(X_train_noisy)
 _ = kernel_pca.fit(X_train_noisy)
 ```
-
-

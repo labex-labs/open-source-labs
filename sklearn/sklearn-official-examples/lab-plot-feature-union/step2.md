@@ -7,5 +7,3 @@ iris = load_iris()
 
 X, y = iris.data, iris.target
 ```
-
-

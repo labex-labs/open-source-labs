@@ -15,5 +15,3 @@ gaussian_process = GaussianProcessRegressor(kernel=kernel, n_restarts_optimizer=
 gaussian_process.fit(X_train, y_train)
 gaussian_process.kernel_
 ```
-
-

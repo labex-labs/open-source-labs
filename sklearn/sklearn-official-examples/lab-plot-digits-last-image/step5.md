@@ -14,5 +14,3 @@ accuracy = accuracy_score(y_test, y_pred)
 # Print the accuracy of the model
 print("Accuracy:", accuracy)
 ```
-
-

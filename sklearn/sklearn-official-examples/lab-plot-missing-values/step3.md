@@ -13,5 +13,3 @@ mses_california[0], stds_california[0] = get_full_score(X_california, y_californ
 mses_diabetes[0], stds_diabetes[0] = get_full_score(X_diabetes, y_diabetes)
 x_labels.append("Full data")
 ```
-
-

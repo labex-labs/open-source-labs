@@ -15,5 +15,3 @@ clf2 = LinearDiscriminantAnalysis(solver="lsqr", shrinkage="auto")
 oa = OAS(store_precision=False, assume_centered=False)
 clf3 = LinearDiscriminantAnalysis(solver="lsqr", covariance_estimator=oa)
 ```
-
-

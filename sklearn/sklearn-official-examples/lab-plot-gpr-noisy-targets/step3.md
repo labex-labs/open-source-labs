@@ -20,5 +20,3 @@ plt.xlabel("$x$")
 plt.ylabel("$f(x)$")
 _ = plt.title("Gaussian process regression on noise-free dataset")
 ```
-
-

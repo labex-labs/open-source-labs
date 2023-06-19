@@ -17,5 +17,3 @@ t0 = time.time()
 mbk.fit(X)
 t_mini_batch = time.time() - t0
 ```
-
-

@@ -22,5 +22,3 @@ ax[1].set_ylabel("Count of pixels")
 ax[1].set_title("Distribution of the pixel values")
 _ = fig.suptitle("Original Image of a Raccoon Face")
 ```
-
-

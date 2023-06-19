@@ -11,5 +11,3 @@ noise = noise + noise.T
 noise[np.arange(noise.shape[0]), np.arange(noise.shape[0])] = 0
 similarities += noise
 ```
-
-

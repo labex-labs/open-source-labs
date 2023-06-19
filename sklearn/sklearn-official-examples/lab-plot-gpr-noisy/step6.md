@@ -17,5 +17,3 @@ _ = plt.title(
     fontsize=8,
 )
 ```
-
-

@@ -39,5 +39,3 @@ for weights in ["uniform", "distance"]:
 
 plt.show()
 ```
-
-

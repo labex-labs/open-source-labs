@@ -27,5 +27,3 @@ varied = datasets.make_blobs(
     n_samples=n_samples, cluster_std=[1.0, 2.5, 0.5], random_state=random_state
 )
 ```
-
-

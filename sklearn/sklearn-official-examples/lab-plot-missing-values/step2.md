@@ -26,5 +26,3 @@ stds_california = np.zeros(5)
 mses_diabetes = np.zeros(5)
 stds_diabetes = np.zeros(5)
 ```
-
-

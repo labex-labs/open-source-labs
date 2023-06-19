@@ -32,5 +32,3 @@ anomaly_algorithms = [
     ),
 ]
 ```
-
-

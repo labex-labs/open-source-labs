@@ -15,5 +15,3 @@ prec_ = model.precision_
 lw_cov_, _ = ledoit_wolf(X)
 lw_prec_ = linalg.inv(lw_cov_)
 ```
-
-

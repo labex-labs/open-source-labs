@@ -28,5 +28,3 @@ _ = ax.set_title(
     f"Information-criterion for model selection (training time {fit_time:.2f}s)"
 )
 ```
-
-

@@ -8,5 +8,3 @@ for X, y in data_list:
         X, y, test_size=0.2, random_state=0
     )
 ```
-
-

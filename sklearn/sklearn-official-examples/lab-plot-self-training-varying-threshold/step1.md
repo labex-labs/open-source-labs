@@ -12,5 +12,3 @@ from sklearn.utils import shuffle
 ```
 
 First, we will import the necessary libraries for this lab.
-
-

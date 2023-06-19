@@ -19,5 +19,3 @@ train_sizes, _, test_scores_svm, fit_times_svm, score_times_svm = learning_curve
     svc, **common_params
 )
 ```
-
-

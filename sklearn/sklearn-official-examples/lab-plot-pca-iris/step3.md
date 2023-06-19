@@ -24,5 +24,3 @@ ax.yaxis.set_ticklabels([])
 ax.zaxis.set_ticklabels([])
 plt.show()
 ```
-
-

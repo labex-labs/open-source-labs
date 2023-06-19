@@ -20,5 +20,3 @@ def bicluster_ncut(i):
 bicluster_ncuts = list(bicluster_ncut(i) for i in range(len(newsgroups.target_names)))
 best_idx = np.argsort(bicluster_ncuts)[:5]
 ```
-
-

@@ -17,5 +17,3 @@ bdt_discrete = AdaBoostClassifier(
 bdt_real.fit(X_train, y_train)
 bdt_discrete.fit(X_train, y_train)
 ```
-
-

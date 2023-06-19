@@ -25,5 +25,3 @@ for ax_idx, estimator in enumerate([naive_bayes, svc]):
     ax[ax_idx].legend(handles[:2], ["Training Score", "Test Score"])
     ax[ax_idx].set_title(f"Learning Curve for {estimator.__class__.__name__}")
 ```
-
-

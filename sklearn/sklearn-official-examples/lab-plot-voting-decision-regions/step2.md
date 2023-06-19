@@ -23,5 +23,3 @@ clf2.fit(X, y)
 clf3.fit(X, y)
 eclf.fit(X, y)
 ```
-
-

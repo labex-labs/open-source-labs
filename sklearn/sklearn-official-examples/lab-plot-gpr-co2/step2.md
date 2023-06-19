@@ -20,5 +20,3 @@ co2_kernel = (
     long_term_trend_kernel + seasonal_kernel + irregularities_kernel + noise_kernel
 )
 ```
-
-

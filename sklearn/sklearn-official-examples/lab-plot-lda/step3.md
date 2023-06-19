@@ -30,5 +30,3 @@ for n_features in n_features_range:
     acc_clf2.append(score_clf2 / n_averages)
     acc_clf3.append(score_clf3 / n_averages)
 ```
-
-

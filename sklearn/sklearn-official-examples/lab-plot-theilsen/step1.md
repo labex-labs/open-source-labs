@@ -18,5 +18,3 @@ noise = 0.1 * np.random.randn(n_samples)
 y = w * x + c + noise
 X = x[:, np.newaxis]
 ```
-
-

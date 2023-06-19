@@ -24,5 +24,3 @@ for n_components in N_COMPONENTS:
     # Print the accuracy of the model
     print(f"Linear SVM score on {n_components} PolynomialCountSketch features: {ps_lsvm_score:.2f}%")
 ```
-
-

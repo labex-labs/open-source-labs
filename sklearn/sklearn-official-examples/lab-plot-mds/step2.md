@@ -11,5 +11,3 @@ X_true = X_true.reshape((n_samples, 2))
 # Center the data
 X_true -= X_true.mean()
 ```
-
-

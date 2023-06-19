@@ -20,5 +20,3 @@ plot_gallery(X_test, prediction_titles, h, w)
 ```
 
 We visualize the predictions by plotting a gallery of portraits with their predicted and true names.
-
-

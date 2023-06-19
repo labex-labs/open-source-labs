@@ -7,5 +7,3 @@ digits = datasets.load_digits()
 images = digits.images
 X = np.reshape(images, (len(images), -1))
 ```
-
-

@@ -11,5 +11,3 @@ diabetes_X_test = diabetes_X[-20:]
 diabetes_y_train = diabetes_y[:-20]
 diabetes_y_test = diabetes_y[-20:]
 ```
-
-

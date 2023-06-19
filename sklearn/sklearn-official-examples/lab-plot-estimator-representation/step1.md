@@ -11,5 +11,3 @@ lr = LogisticRegression(penalty="l1")
 # Display the estimator
 print(lr)
 ```
-
-

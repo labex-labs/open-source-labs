@@ -37,5 +37,3 @@ X = minmax_scale(X, feature_range=(0, 1))  # 0-1 scaling
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=0)
 ```
-
-

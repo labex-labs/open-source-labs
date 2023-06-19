@@ -8,5 +8,3 @@ start = time.time()
 gb.fit(X_train, y_train)
 time_gb.append(time.time() - start)
 ```
-
-

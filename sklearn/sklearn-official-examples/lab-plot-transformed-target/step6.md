@@ -20,5 +20,3 @@ y_trans = quantile_transform(
     y.to_frame(), n_quantiles=900, output_distribution="normal", copy=True
 ).squeeze()
 ```
-
-

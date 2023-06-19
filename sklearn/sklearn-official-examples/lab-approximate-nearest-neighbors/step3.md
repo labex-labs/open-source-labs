@@ -57,5 +57,3 @@ class NMSlibTransformer(TransformerMixin, BaseEstimator):
 
         return kneighbors_graph
 ```
-
-

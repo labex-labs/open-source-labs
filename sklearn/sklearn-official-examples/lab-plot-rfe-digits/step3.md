@@ -5,5 +5,3 @@ After fitting the data to the RFE object, we can rank the features based on thei
 ```python
 ranking = rfe.ranking_.reshape(digits.images[0].shape)
 ```
-
-

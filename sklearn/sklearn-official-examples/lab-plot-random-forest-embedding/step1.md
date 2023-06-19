@@ -11,5 +11,3 @@ from sklearn.ensemble import RandomTreesEmbedding, ExtraTreesClassifier
 from sklearn.decomposition import TruncatedSVD
 from sklearn.naive_bayes import BernoulliNB
 ```
-
-

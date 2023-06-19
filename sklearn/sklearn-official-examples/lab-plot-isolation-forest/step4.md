@@ -18,5 +18,3 @@ plt.axis("square")
 plt.legend(handles=handles, labels=["outliers", "inliers"], title="true class")
 plt.show()
 ```
-
-

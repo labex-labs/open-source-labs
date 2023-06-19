@@ -10,5 +10,3 @@ n_samples, n_features = X.shape
 
 print(f"The dataset consists of {n_samples} samples and {n_features} features")
 ```
-
-

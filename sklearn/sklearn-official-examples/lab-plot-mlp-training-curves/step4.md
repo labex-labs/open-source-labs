@@ -12,5 +12,3 @@ data_sets = [
     datasets.make_moons(noise=0.3, random_state=0),
 ]
 ```
-
-

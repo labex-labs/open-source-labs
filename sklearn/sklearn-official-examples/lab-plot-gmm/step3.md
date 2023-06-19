@@ -24,5 +24,3 @@ plt.legend(loc="best")
 plt.title("Gaussian Mixture Model")
 plt.show()
 ```
-
-

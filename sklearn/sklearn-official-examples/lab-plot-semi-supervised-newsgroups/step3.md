@@ -18,5 +18,3 @@ print(
     % f1_score(y_test, y_pred, average="micro")
 )
 ```
-
-

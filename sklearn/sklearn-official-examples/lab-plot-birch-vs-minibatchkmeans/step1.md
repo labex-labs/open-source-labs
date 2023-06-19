@@ -17,5 +17,3 @@ import matplotlib.colors as colors
 from sklearn.cluster import Birch, MiniBatchKMeans
 from sklearn.datasets import make_blobs
 ```
-
-

@@ -11,5 +11,3 @@ from sklearn.utils import check_random_state
 from sklearn.cluster import MiniBatchKMeans
 from sklearn.cluster import KMeans
 ```
-
-

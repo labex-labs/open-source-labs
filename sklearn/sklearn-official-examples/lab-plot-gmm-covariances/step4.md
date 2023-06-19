@@ -13,5 +13,3 @@ estimators = {
 
 n_estimators = len(estimators)
 ```
-
-

@@ -32,5 +32,3 @@ gbdt_model = make_pipeline(
 )
 gbdt_model.fit(X_train_linear, y_train_linear)
 ```
-
-

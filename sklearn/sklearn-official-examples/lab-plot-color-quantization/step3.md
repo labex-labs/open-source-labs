@@ -24,5 +24,3 @@ t0 = time()
 labels = kmeans.predict(image_array)
 print(f"done in {time() - t0:0.3f}s.")
 ```
-
-

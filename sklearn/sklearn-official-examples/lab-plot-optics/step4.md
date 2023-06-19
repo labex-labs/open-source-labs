@@ -16,5 +16,3 @@ labels_200 = cluster_optics_dbscan(
     eps=2,
 )
 ```
-
-

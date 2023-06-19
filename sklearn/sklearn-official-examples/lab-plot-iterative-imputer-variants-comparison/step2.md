@@ -12,5 +12,3 @@ X_full = X_full[::10]
 y_full = y_full[::10]
 n_samples, n_features = X_full.shape
 ```
-
-

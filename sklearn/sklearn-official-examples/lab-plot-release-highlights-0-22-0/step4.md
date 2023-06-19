@@ -11,5 +11,3 @@ y = [0, 0, 1, 1]
 gbdt = HistGradientBoostingClassifier(min_samples_leaf=1).fit(X, y)
 print(gbdt.predict(X))
 ```
-
-

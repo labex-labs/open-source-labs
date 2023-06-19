@@ -14,5 +14,3 @@ C5 = [3, -2] + 1.6 * np.random.randn(n_points_per_cluster, 2)
 C6 = [5, 6] + 2 * np.random.randn(n_points_per_cluster, 2)
 X = np.vstack((C1, C2, C3, C4, C5, C6))
 ```
-
-

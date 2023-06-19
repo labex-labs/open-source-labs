@@ -22,5 +22,3 @@ with TemporaryDirectory(prefix="sklearn_cache_") as tmpdir:
     estimator.set_params(isomap__n_neighbors=5)
     estimator.fit(X)
 ```
-
-

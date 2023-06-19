@@ -5,5 +5,3 @@ We will split the dataset into a training set and a test set. The training set w
 ```python
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
 ```
-
-

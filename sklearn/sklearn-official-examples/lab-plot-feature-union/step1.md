@@ -10,5 +10,3 @@ from sklearn.datasets import load_iris
 from sklearn.decomposition import PCA
 from sklearn.feature_selection import SelectKBest
 ```
-
-

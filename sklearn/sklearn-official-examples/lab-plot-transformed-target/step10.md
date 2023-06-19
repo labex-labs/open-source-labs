@@ -1,4 +1,4 @@
-#  Plot actual vs predicted values and residuals vs predicted values for both models
+# Plot actual vs predicted values and residuals vs predicted values for both models
 
 We plot actual vs predicted values and residuals vs predicted values for both models and add the score in the legend of each axis.
 

@@ -33,5 +33,3 @@ plt.legend()
 fig.suptitle("Monotonic constraints effect on partial dependences")
 plt.show()
 ```
-
-

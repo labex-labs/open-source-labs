@@ -17,5 +17,3 @@ plt.title("Original Image")
 plt.imshow(china)
 plt.show()
 ```
-
-

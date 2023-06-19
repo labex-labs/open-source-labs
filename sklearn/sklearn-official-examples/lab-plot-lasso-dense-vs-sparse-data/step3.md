@@ -7,5 +7,3 @@ alpha = 1
 sparse_lasso = Lasso(alpha=alpha, fit_intercept=False, max_iter=1000)
 dense_lasso = Lasso(alpha=alpha, fit_intercept=False, max_iter=1000)
 ```
-
-

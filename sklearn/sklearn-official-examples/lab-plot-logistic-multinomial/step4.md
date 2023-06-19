@@ -17,5 +17,3 @@ for i, color in zip(clf.classes_, colors):
             X[idx, 0], X[idx, 1], c=color, cmap=plt.cm.Paired, edgecolor="black", s=20
         )
 ```
-
-

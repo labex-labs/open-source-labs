@@ -12,5 +12,3 @@ start_time = time.time()
 lasso_lars_ic = make_pipeline(StandardScaler(), LassoLarsIC(criterion="aic")).fit(X, y)
 fit_time = time.time() - start_time
 ```
-
-

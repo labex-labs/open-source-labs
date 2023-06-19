@@ -50,5 +50,3 @@ def best_low_complexity(cv_results):
     ]
     return best_idx
 ```
-
-
