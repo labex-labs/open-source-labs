@@ -1,4 +1,4 @@
-# Lab: Test Coverage
+# Test Coverage
 
 ## Introduction
 
