@@ -2,7 +2,7 @@
 
 As a developer, you have been working on a project and have made several commits. However, you realize that the last few commits contain errors and you need to go back to a previous version of your code. You need to use Git to rewind your commits and get back to the previous version of your code.
 
-To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.Follow these steps:
+To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Follow these steps:
 
 1. Clone the repository to your local machine:
 ```shell
