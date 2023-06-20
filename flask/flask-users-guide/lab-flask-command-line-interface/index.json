@@ -1,0 +1,122 @@
+{
+  "type": "lab",
+  "title": "Flask Command Line Interface",
+  "description": "In this lab, you will learn how to use the Flask Command Line Interface (CLI) to manage your Flask application. The Flask CLI provides a set of commands that can help you run the development server, create custom commands, and more.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Flask",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Create a Flask Application",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Run the Development Server",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Create a Custom Command",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Register Commands with the Flask Application",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204",
+    "services": [
+      {
+        "type": "iframe",
+        "name": "HTTP 5000",
+        "port": 5000
+      }
+    ]
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
+    "repo": "https://github.com/pallets/flask"
+  }
+}
