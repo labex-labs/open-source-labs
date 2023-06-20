@@ -1,3 +1,3 @@
 # Summary
 
-In this lab, you learned how to set up a Flask application by creating a Flask instance, configuring the application, and running it. You also added a simple route to display a "Hello, World!" message.
+Congratulations, you've successfully created and run your first Flask application! This basic application can serve as a starting point for more complex projects. Flask's flexibility and simplicity make it a great choice for web development in Python.

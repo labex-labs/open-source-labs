@@ -1,15 +1,18 @@
-# Implement the index view
+# Register Blueprint
 
-In the `blog.py` file, add the following code to implement the index view:
+Next, we'll register the blueprint with our application.
 
 ```python
-@bp.route('/')
-def index():
-    db = get_db()
-    posts = db.execute(
-        'SELECT p.id, title, body, created, author_id, username'
-        ' FROM post p JOIN user u ON p.author_id = u.id'
-        ' ORDER BY created DESC'
-    ).fetchall()
-    return render_template('blog/index.html', posts=posts)
+# flaskr/__init__.py
+
+def create_app():
+    app = ...
+    # existing code omitted
+
+    # import and register the blueprint from the factory using app.register_blueprint()
+    from . import blog
+    app.register_blueprint(blog.bp)
+    app.add_url_rule('/', endpoint='index')
+
+    return app
 ```

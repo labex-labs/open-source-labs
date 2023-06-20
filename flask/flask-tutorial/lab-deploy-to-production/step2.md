@@ -1,21 +1,15 @@
-# Configure the Secret Key
+# Install the Application on the Server
 
-It's important to change the default value of the `SECRET_KEY` in production to enhance security. Follow the steps below to configure the secret key:
-
-1. Generate a random secret key by running the following command:
+Copy the wheel file to your server. Once it's there, set up a new Python virtual environment and install the wheel file using pip:
 
 ```bash
-$ python -c 'import secrets; print(secrets.token_hex())'
+# Install the wheel file
+pip install flaskr-1.0.0-py3-none-any.whl
 ```
 
-Example output: `'192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'`
+Since this is a new environment, you need to initialize the database again:
 
-2. Create the `config.py` file in the instance folder and copy the generated secret key into it:
-
-```python
-# .venv/var/flaskr-instance/config.py
-
-SECRET_KEY = '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'
+```bash
+# Initialize the database
+flask --app flaskr init-db
 ```
-
-You can also set any other necessary configuration in this file.

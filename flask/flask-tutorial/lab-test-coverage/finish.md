@@ -1,3 +1,3 @@
 # Summary
 
-In this lab, you learned about test coverage in Flask applications. You wrote unit tests for different parts of the application, including the factory, database, authentication, and blog views. You also learned how to run the tests and measure the code coverage. Test coverage is an important tool for ensuring the quality of your code and identifying areas that need improvement.
+In this lab, we have learnt how to write unit tests for a Flask application using `pytest` and `coverage`. These tools help us ensure our application works as expected and identify areas that need improvement. Writing tests for your code is a good practice as it helps you catch bugs before they become a problem.

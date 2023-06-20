@@ -1,6 +1,6 @@
-# Create the First View: Register
+# Implement Registration View
 
-The first view we will create is the registration view. This view will handle requests to the `/auth/register` URL. It will display a form for users to fill out and handle the submission of the form.
+Now, let's implement the registration view in `flaskr/auth.py`. This view will render a registration form and handle form submission.
 
 ```python
 # flaskr/auth.py
@@ -13,7 +13,6 @@ def register():
         db = get_db()
         error = None
 
-        # Validate the input
         if not username:
             error = 'Username is required.'
         elif not password:
@@ -21,7 +20,6 @@ def register():
 
         if error is None:
             try:
-                # Insert the new user into the database
                 db.execute(
                     "INSERT INTO user (username, password) VALUES (?, ?)",
                     (username, generate_password_hash(password)),

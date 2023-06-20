@@ -1,33 +1,39 @@
-# Make the Project Installable
+# Make Project Installable
 
 ## Introduction
 
-In this lab, you will learn how to make your Python Flask project installable. Making your project installable allows you to build a wheel file, which can then be installed in any other environment. This makes it easier to deploy your project and use standard Python tools for managing dependencies.
+In this lab, we will learn how to make a Python Flask project installable. This will make the project deployable and manageable using standard Python tools. This process is beneficial as it allows the project to be installed in different environments, manage dependencies, and isolate test environments.
 
 ## Steps
 
 ### Step 1: Describe the Project
 
-The first step is to create a `pyproject.toml` file that describes your project and its dependencies. This file is used by the setuptools build backend to build your project.
+First, we need to create a `pyproject.toml` file to describe our project and how to build it.
+
+The `pyproject.toml` file should look like this:
 
 ```toml
 # pyproject.toml
 
 [project]
-name = "flaskr"
-version = "1.0.0"
+name = "flaskr" # name of the project
+version = "1.0.0" # version of the project
 dependencies = [
-    "flask",
+    "flask", # dependencies of the project
 ]
 
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+requires = ["setuptools"] # required build system
+build-backend = "setuptools.build_meta" # backend build system
 ```
 
-You also need to create a `MANIFEST.in` file to specify non-Python files to include in the build.
+### Step 2: Include Necessary Files
 
-```
+The setuptools build backend needs another file named `MANIFEST.in` to include non-Python files in the project.
+
+Create a `MANIFEST.in` with the following content:
+
+```none
 # MANIFEST.in
 
 include flaskr/schema.sql
@@ -36,39 +42,28 @@ graft flaskr/templates
 global-exclude *.pyc
 ```
 
-### Step 2: Install the Project
+This tells the build to copy everything in the `static` and `templates` directories, and the `schema.sql` file, while excluding all bytecode files.
 
-To install your project, use `pip` in your virtual environment.
+### Step 3: Install the Project
 
-```bash
-$ pip install -e .
+Next, we will use `pip` to install the project in the virtual environment.
+
+Run the following command in your terminal:
+
+```none
+pip install -e .
 ```
 
-This command tells `pip` to find the `pyproject.toml` file in the current directory and install the project in editable mode. This means that any changes you make to your local code will only require re-installation if you change the project's metadata, such as its dependencies.
+This tells pip to find `pyproject.toml` in the current directory and install the project in editable or development mode. Editable mode means that as you make changes to your local code, you'll only need to re-install if you change the project's metadata.
 
-You can verify that the project is installed by running `pip list`.
+To verify the installation, use the `pip list` command:
 
-```bash
-$ pip list
-
-Package Version Location
--------------- --------- ----------------------------------
-click 6.7
-Flask 1.0
-flaskr 1.0.0 /home/user/Projects/flask-tutorial
-itsdangerous 0.24
-Jinja2 2.10
-MarkupSafe 1.0
-pip 9.0.3
-setuptools 39.0.1
-Werkzeug 0.14.1
-wheel 0.30.0
+```none
+pip list
 ```
 
-### Step 3: Test the Project
-
-Once the project is installed, you can continue running it as before. The `--app` flag is still set to `flaskr`, and `flask run` will still start the application. The only difference now is that you can run the application from anywhere, not just the project directory.
+The output should show the installed project and its dependencies.
 
 ## Summary
 
-By making your Python Flask project installable, you can easily deploy it in different environments using standard Python tools. This allows you to manage dependencies, isolate test environments, and use your project as a library in other projects.
+In this lab, we learned how to make a Python Flask project installable. We started by describing the project and including necessary files. We then installed the project in a virtual environment. Now, the project can be run from any location, not just the project directory.

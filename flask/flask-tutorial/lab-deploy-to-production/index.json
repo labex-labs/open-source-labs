@@ -1,13 +1,13 @@
 {
   "type": "lab",
-  "title": "Deploy to Production",
-  "description": "This lab provides a step-by-step guide on how to deploy a Python Flask application to a production server. It covers building and installing the application, configuring the secret key, and running the application with a production server.",
+  "title": "Deploy Flask Application",
+  "description": "In this lab, we will learn how to deploy a Flask application to a server. We will create a distribution file for our application and install it on the server. The lab assumes you have a basic understanding of Flask, Python's virtual environments, and the command line.",
   "difficulty": "Beginner",
-  "time": 15,
+  "time": 20,
   "details": {
     "steps": [
       {
-        "title": "Build and Install",
+        "title": "Build the Application",
         "text": "step1.md",
         "verify": [
           {
@@ -21,7 +21,7 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Configure the Secret Key",
+        "title": "Install the Application on the Server",
         "text": "step2.md",
         "verify": [
           {
@@ -35,12 +35,26 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Run with a Production Server",
+        "title": "Configure the Secret Key",
         "text": "step3.md",
         "verify": [
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Run the Application with a Production Server",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
             "hint": "You need to run the Flask service on HTTP 5000.",
             "timeout": 0,
             "showstderr": false

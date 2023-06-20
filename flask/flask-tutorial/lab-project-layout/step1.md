@@ -1,8 +1,8 @@
-# Create the Project Directory
+# Create Project Directory
 
-Create a project directory for your Flask application and navigate into it using the following commands:
+Start by creating a new directory for your Flask project and navigate into it using the terminal.
 
-```shell
-$ mkdir flask-tutorial
-$ cd flask-tutorial
+```bash
+mkdir flask-tutorial
+cd flask-tutorial
 ```

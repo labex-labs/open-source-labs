@@ -1,3 +1,3 @@
 # Summary
 
-By making your Python Flask project installable, you can easily deploy it in different environments using standard Python tools. This allows you to manage dependencies, isolate test environments, and use your project as a library in other projects.
+In this lab, we learned how to make a Python Flask project installable. We started by describing the project and including necessary files. We then installed the project in a virtual environment. Now, the project can be run from any location, not just the project directory.

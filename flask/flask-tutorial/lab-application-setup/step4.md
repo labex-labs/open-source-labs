@@ -1,28 +1,18 @@
-# Create the Instance Folder
+# Running the Application
 
-Ensure that the instance folder exists by creating it if it doesn't already exist.
+With your application set up and configured, you can now run it using the `flask` command. Be sure to run this command from the top-level `flask-tutorial` directory, not the `flaskr` package.
 
-```python
-# flaskr/__init__.py
+```bash
+flask --app flaskr run --debug
+```
 
-# ...
+You should see output similar to this:
 
-def create_app(test_config=None):
-    app = Flask(__name__, instance_relative_config=True)
-    app.config.from_mapping(
-        SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
-    )
-
-    if test_config is None:
-        app.config.from_pyfile('config.py', silent=True)
-    else:
-        app.config.from_mapping(test_config)
-
-    try:
-        os.makedirs(app.instance_path)
-    except OSError:
-        pass
-
-    # ...
+```bash
+ * Serving Flask app "flaskr"
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: nnn-nnn-nnn
 ```

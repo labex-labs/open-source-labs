@@ -1,14 +1,20 @@
-# Define and Access the Database
+# Flask Database Lab
 
 ## Introduction
 
-In this lab, you will learn how to define and access a database in a Flask application. We will be using SQLite as our database, which is a built-in database in Python. SQLite is convenient because it doesn't require setting up a separate database server. However, for larger applications, you may want to consider switching to a different database.
+In this lab, we will learn how to define and access a SQLite database using the Python Flask framework. We will set up a SQLite database, establish a connection with it, create tables, and initialize the database.
 
 ## Steps
 
-### Step 1: Connect to the Database
+### Step 1: Setting up the Database
 
-The first step is to create a connection to the SQLite database. We will use the `sqlite3` module, which is built-in to Python. The connection will be created within the `get_db()` function.
+First, we need to set up a SQLite database to store users and posts. SQLite is a convenient choice as it doesn't require a separate database server and is in-built in Python.
+
+In our Flask application, we will create a connection to the SQLite database. This connection is typically tied to the request in web applications, and it is closed after the work is finished.
+
+The connection is established using the `sqlite3.connect` function and we use the Flask's special object `g` to store and reuse the connection.
+
+Create a new Python file `db.py` and add the following code:
 
 ```python
 # flaskr/db.py
@@ -17,40 +23,34 @@ import sqlite3
 from flask import current_app, g
 
 def get_db():
+    # Check if 'db' is not in 'g'
     if 'db' not in g:
+        # Establish a connection to the database
         g.db = sqlite3.connect(
             current_app.config['DATABASE'],
             detect_types=sqlite3.PARSE_DECLTYPES
         )
+        # Return rows that behave like dicts
         g.db.row_factory = sqlite3.Row
 
     return g.db
-```
-
-In this code, we first check if a connection to the database already exists in the `g` object, which is unique for each request. If it doesn't exist, we create a new connection using the `sqlite3.connect()` method. We also set the `row_factory` to `sqlite3.Row` to allow accessing the columns by name.
-
-### Step 2: Close the Database Connection
-
-To ensure that the database connection is closed properly after each request, we need to define a function to close the connection. This function will be called `close_db()`.
-
-```python
-# flaskr/db.py
 
 def close_db(e=None):
+    # Pop 'db' from 'g' and close the connection if it exists
     db = g.pop('db', None)
 
     if db is not None:
         db.close()
 ```
 
-In this code, we check if a connection exists in the `g` object and close it if it does. We also remove the connection from the `g` object.
+### Step 2: Creating Tables
 
-### Step 3: Initialize the Database
+In SQLite, data is stored in tables and columns. We need to create these before we can store and retrieve data. Our application will store users in the `user` table, and posts in the `post` table.
 
-Next, we need to create the tables in the SQLite database. We will define the SQL commands to create the tables in a separate file called `schema.sql`.
+Create a new SQL file `schema.sql` and add the following code:
 
 ```sql
--- flaskr/schema.sql
+# flaskr/schema.sql
 
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS post;
@@ -71,9 +71,9 @@ CREATE TABLE post (
 );
 ```
 
-In this code, we drop any existing tables and then create two new tables: `user` and `post`.
+### Step 3: Initializing the Database
 
-To execute these SQL commands and initialize the database, we need to define the `init_db()` function.
+Next, we will add Python functions that will run the SQL commands to create the tables. Add the following functions to the `db.py` file:
 
 ```python
 # flaskr/db.py
@@ -83,13 +83,19 @@ def init_db():
 
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
+
+@click.command('init-db')
+def init_db_command():
+    """Clear the existing data and create new tables."""
+    init_db()
+    click.echo('Initialized the database.')
 ```
 
-In this code, we use the `get_db()` function to get a database connection and then execute the SQL commands from the `schema.sql` file.
+### Step 4: Registering with the Application
 
-### Step 4: Register with the Application
+The `close_db` and `init_db_command` functions need to be registered with the application instance to be used by the application. Since we're using a factory function, we will write a function that takes an application and does the registration.
 
-To ensure that the `close_db()` and `init_db()` functions are used by the application, we need to register them with the Flask application instance. We will define a function called `init_app()` to handle this registration.
+Add the following function to the `db.py` file:
 
 ```python
 # flaskr/db.py
@@ -99,19 +105,32 @@ def init_app(app):
     app.cli.add_command(init_db_command)
 ```
 
-In this code, we use the `teardown_appcontext()` method to register the `close_db()` function to be called when cleaning up after returning the response. We also use the `cli.add_command()` method to add the `init_db_command` as a new command that can be called with the `flask` command.
+Then, import and call this function from the factory. Add the following code to the `__init__.py` file:
 
-### Step 5: Initialize the Database File
+```python
+# flaskr/__init__.py
 
-Now that we have registered the `init_db()` function with the app, we can use the `flask` command to initialize the database file.
+def create_app():
+    app = ...
+    # existing code omitted
+
+    from . import db
+    db.init_app(app)
+
+    return app
+```
+
+### Step 5: Initializing the Database File
+
+Now that `init-db` has been registered with the app, it can be called using the `flask` command.
+
+Run the `init-db` command:
 
 ```shell
-$ flask --app flaskr init-db
+flask --app flaskr init-db
 Initialized the database.
 ```
 
-This command will create a `flaskr.sqlite` file in the `instance` folder of your project.
-
 ## Summary
 
-In this lab, you learned how to define and access a database in a Flask application using SQLite. You learned how to connect to the database, close the database connection, initialize the database tables, and register the database functions with the Flask application.
+In this lab, we have learned how to define and access a SQLite database using the Python Flask framework. We created a connection to the database, created tables, and initialized the database. This is fundamental for any web application that needs to store and retrieve data from a database.

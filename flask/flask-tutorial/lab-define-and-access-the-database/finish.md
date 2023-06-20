@@ -1,3 +1,3 @@
 # Summary
 
-In this lab, you learned how to define and access a database in a Flask application using SQLite. You learned how to connect to the database, close the database connection, initialize the database tables, and register the database functions with the Flask application.
+In this lab, we have learned how to define and access a SQLite database using the Python Flask framework. We created a connection to the database, created tables, and initialized the database. This is fundamental for any web application that needs to store and retrieve data from a database.

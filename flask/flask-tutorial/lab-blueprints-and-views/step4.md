@@ -1,6 +1,6 @@
-# Create the Login View
+# Implement Login View
 
-The login view will handle requests to the `/auth/login` URL. It will display a login form and handle the submission of the form.
+Next, we will implement the login view in `flaskr/auth.py`. This view will handle user login functionality.
 
 ```python
 # flaskr/auth.py

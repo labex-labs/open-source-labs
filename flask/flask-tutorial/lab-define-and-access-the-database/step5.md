@@ -1,10 +1,10 @@
-# Initialize the Database File
+# Initializing the Database File
 
-Now that we have registered the `init_db()` function with the app, we can use the `flask` command to initialize the database file.
+Now that `init-db` has been registered with the app, it can be called using the `flask` command.
+
+Run the `init-db` command:
 
 ```shell
-$ flask --app flaskr init-db
+flask --app flaskr init-db
 Initialized the database.
 ```
-
-This command will create a `flaskr.sqlite` file in the `instance` folder of your project.

@@ -1,12 +1,17 @@
-# Create the Logout View
+# Implement Login Required Decorator
 
-The logout view will handle requests to the `/auth/logout` URL. It will clear the user's session and redirect them to the homepage.
+We will also need a decorator to protect our views that require a user to be logged in. This decorator will be implemented in `flaskr/auth.py`.
 
 ```python
 # flaskr/auth.py
 
-@bp.route('/logout')
-def logout():
-    session.clear()
-    return redirect(url_for('index'))
+def login_required(view):
+    @functools.wraps(view)
+    def wrapped_view(**kwargs):
+        if g.user is None:
+            return redirect(url_for('auth.login'))
+
+        return view(**kwargs)
+
+    return wrapped_view
 ```

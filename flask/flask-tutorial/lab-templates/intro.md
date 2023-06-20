@@ -1,5 +1,5 @@
 # Introduction
 
-In this lab, we will learn how to use templates in Flask to render dynamic HTML pages. Templates allow us to separate the presentation logic from the business logic in our Flask application, making our code more modular and maintainable.
+In this lab, we will learn how to create and use templates in Flask. Templates are a crucial part of web applications. They allow us to generate dynamic HTML pages that can display different data each time they are loaded. We'll be using the Jinja2 template engine that comes bundled with Flask.
 
 > Note: You need to create the code file yourself and run it in the environment. You can preview the Flask service status on HTTP 5000.

@@ -1,29 +1,20 @@
 # Describe the Project
 
-The first step is to create a `pyproject.toml` file that describes your project and its dependencies. This file is used by the setuptools build backend to build your project.
+First, we need to create a `pyproject.toml` file to describe our project and how to build it.
+
+The `pyproject.toml` file should look like this:
 
 ```toml
 # pyproject.toml
 
 [project]
-name = "flaskr"
-version = "1.0.0"
+name = "flaskr" # name of the project
+version = "1.0.0" # version of the project
 dependencies = [
-    "flask",
+    "flask", # dependencies of the project
 ]
 
 [build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-```
-
-You also need to create a `MANIFEST.in` file to specify non-Python files to include in the build.
-
-```
-# MANIFEST.in
-
-include flaskr/schema.sql
-graft flaskr/static
-graft flaskr/templates
-global-exclude *.pyc
+requires = ["setuptools"] # required build system
+build-backend = "setuptools.build_meta" # backend build system
 ```

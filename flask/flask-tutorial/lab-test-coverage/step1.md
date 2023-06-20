@@ -1,7 +1,7 @@
-# Setting up the Test Environment
+# Install Pytest and Coverage
 
-To get started, you need to set up the test environment. Install the necessary packages by running the following command:
+Firstly, we need to install `pytest` and `coverage`. These are testing and code measurement tools respectively. Run the following command in your terminal to install:
 
 ```bash
-$ pip install pytest coverage
+pip install pytest coverage
 ```

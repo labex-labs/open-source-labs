@@ -1,17 +1,16 @@
-# Run with a Production Server
+# Configure the Secret Key
 
-Running the Flask application with the built-in development server is not recommended for production environments. Instead, use a production WSGI server like `Waitress`. Follow the steps below to run the application with Waitress:
-
-1. Install Waitress in the virtual environment:
+In a production environment, you should change the secret key to a random value. To generate a random secret key, run the following command:
 
 ```bash
-$ pip install waitress
+# Generate a random secret key
+python -c 'import secrets; print(secrets.token_hex())'
 ```
 
-2. Use the following command to start the Waitress server and specify the application to run:
+Create a `config.py` file in the instance folder and set `SECRET_KEY` to the generated value.
 
-```bash
-$ waitress-serve --call 'flaskr:create_app'
+```python
+# .venv/var/flaskr-instance/config.py
+
+SECRET_KEY = 'your_generated_secret_key'
 ```
-
-The server will start running and listening on a specific address (e.g., `http://0.0.0.0:8080`).

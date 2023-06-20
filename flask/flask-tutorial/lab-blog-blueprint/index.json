@@ -1,13 +1,13 @@
 {
   "type": "lab",
-  "title": "Flask Blog Blueprint",
-  "description": "In this lab, you will learn how to implement a blog blueprint using Flask. The blog blueprint will allow users to create, edit, and delete blog posts. We will cover the following steps:\n\n1. Define and register the blueprint\n2. Implement the index view to display all posts\n3. Implement the create view to allow users to create new posts\n4. Implement the update view to allow users to edit existing posts\n5. Implement the delete view to allow users to delete posts",
+  "title": "Flask Blog Application Lab",
+  "description": "In this lab, we'll walk through creating a blog application using Flask, a popular web framework in Python. This application will list all blog posts, allow logged-in users to create posts, and let authors edit or delete their own posts.",
   "difficulty": "Beginner",
-  "time": 25,
+  "time": 30,
   "details": {
     "steps": [
       {
-        "title": "Define and register the blueprint",
+        "title": "Define Blueprint",
         "text": "step1.md",
         "verify": [
           {
@@ -21,7 +21,7 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Implement the index view",
+        "title": "Register Blueprint",
         "text": "step2.md",
         "verify": [
           {
@@ -35,7 +35,7 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Implement the create view",
+        "title": "Create Blog Index",
         "text": "step3.md",
         "verify": [
           {
@@ -49,7 +49,7 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Implement the update view",
+        "title": "Post Creation",
         "text": "step4.md",
         "verify": [
           {
@@ -63,12 +63,26 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Implement the delete view",
+        "title": "Post Update",
         "text": "step5.md",
         "verify": [
           {
             "name": "Test the completion of step 5",
             "file": "verify5.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Post Deletion",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
             "hint": "You need to run the Flask service on HTTP 5000.",
             "timeout": 0,
             "showstderr": false

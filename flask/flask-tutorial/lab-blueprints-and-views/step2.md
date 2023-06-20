@@ -1,6 +1,6 @@
 # Register the Blueprint
 
-To use the Blueprint in your Flask application, you need to register it with the application. In the factory function of your Flask application, import the Blueprint module and register it using the `app.register_blueprint()` function.
+After creating the blueprint, we need to register it with our application. This is done in the application factory function in `flaskr/__init__.py`.
 
 ```python
 # flaskr/__init__.py
@@ -9,6 +9,7 @@ def create_app():
     app = ...
     # existing code omitted
 
+    # Import and register the blueprint
     from . import auth
     app.register_blueprint(auth.bp)
 

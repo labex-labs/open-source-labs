@@ -1,21 +1,23 @@
-# Writing Tests for the Factory
+# Test Database Connection
 
-The factory is responsible for creating the Flask application. In this step, you will write tests for the factory to ensure that it works correctly.
+After testing the factory, we will test the database connection. These tests ensure that the database connection is established and closed as expected.
 
-Create a file named `test_factory.py` in the `tests` directory and add the following code:
+Here is the code to add in `tests/test_db.py`:
 
 ```python
-from flaskr import create_app
+# tests/test_db.py
 
+import sqlite3
+import pytest
+from flaskr.db import get_db
 
-def test_config():
-    assert not create_app().testing
-    assert create_app({'TESTING': True}).testing
+def test_get_close_db(app):
+    with app.app_context():
+        db = get_db()
+        assert db is get_db()
 
+    with pytest.raises(sqlite3.ProgrammingError) as e:
+        db.execute('SELECT 1')
 
-def test_hello(client):
-    response = client.get('/hello')
-    assert response.data == b'Hello, World!'
+    assert 'closed' in str(e.value)
 ```
-
-This code defines two test functions: `test_config` and `test_hello`. The `test_config` function checks that the application is correctly configured based on the configuration passed to the factory. The `test_hello` function sends a GET request to the `/hello` route and checks that the response data is "Hello, World!".

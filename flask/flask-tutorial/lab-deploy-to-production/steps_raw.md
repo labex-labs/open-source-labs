@@ -1,87 +1,80 @@
-# Deploy to Production
+# Deploy Flask Application
 
 ## Introduction
 
-This lab provides a step-by-step guide on how to deploy a Python Flask application to a production server. It covers building and installing the application, configuring the secret key, and running the application with a production server.
+In this lab, we will learn how to deploy a Flask application to a server. We will create a distribution file for our application and install it on the server. The lab assumes you have a basic understanding of Flask, Python's virtual environments, and the command line.
 
 ## Steps
 
-### Step 1: Build and Install
+### Step 1: Build the Application
 
-To deploy the Flask application, we need to create a distribution file called a wheel file. Follow the steps below to build and install the application:
-
-1. Install the `build` tool by running the following command:
+First, we need to create a wheel file for our application. We will use the `build` tool for this. Install the `build` tool using pip if you haven't already:
 
 ```bash
-$ pip install build
+# Install the build tool
+pip install build
 ```
 
-2. Build the wheel file using the `build` tool:
+Now, use the `build` tool to create the wheel file:
 
 ```bash
-$ python -m build --wheel
+# Build the wheel file
+python -m build --wheel
 ```
 
-3. Locate the generated wheel file in the `dist` folder. The file name will be in the format of `{project name}-{version}-{python tag}-{abi tag}-{platform tag}`.
+The wheel file should be in the `dist` directory with a name like `flaskr-1.0.0-py3-none-any.whl`.
 
-4. Copy the wheel file to the production server.
+### Step 2: Install the Application on the Server
 
-5. Set up a new virtual environment on the production server.
-
-6. Install the wheel file using `pip`:
+Copy the wheel file to your server. Once it's there, set up a new Python virtual environment and install the wheel file using pip:
 
 ```bash
-$ pip install flaskr-1.0.0-py3-none-any.whl
+# Install the wheel file
+pip install flaskr-1.0.0-py3-none-any.whl
 ```
 
-7. Run the `init-db` command to create the database in the instance folder:
+Since this is a new environment, you need to initialize the database again:
 
 ```bash
-$ flask --app flaskr init-db
+# Initialize the database
+flask --app flaskr init-db
 ```
 
-Note: If Flask detects that it's installed (not in editable mode), it uses a different directory for the instance folder. You can find it at `.venv/var/flaskr-instance` instead.
+### Step 3: Configure the Secret Key
 
-### Step 2: Configure the Secret Key
-
-It's important to change the default value of the `SECRET_KEY` in production to enhance security. Follow the steps below to configure the secret key:
-
-1. Generate a random secret key by running the following command:
+In a production environment, you should change the secret key to a random value. To generate a random secret key, run the following command:
 
 ```bash
-$ python -c 'import secrets; print(secrets.token_hex())'
+# Generate a random secret key
+python -c 'import secrets; print(secrets.token_hex())'
 ```
 
-Example output: `'192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'`
-
-2. Create the `config.py` file in the instance folder and copy the generated secret key into it:
+Create a `config.py` file in the instance folder and set `SECRET_KEY` to the generated value.
 
 ```python
 # .venv/var/flaskr-instance/config.py
 
-SECRET_KEY = '192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'
+SECRET_KEY = 'your_generated_secret_key'
 ```
 
-You can also set any other necessary configuration in this file.
+### Step 4: Run the Application with a Production Server
 
-### Step 3: Run with a Production Server
+For a production environment, you should use a WSGI server instead of the built-in development server. We will use Waitress as our WSGI server.
 
-Running the Flask application with the built-in development server is not recommended for production environments. Instead, use a production WSGI server like `Waitress`. Follow the steps below to run the application with Waitress:
-
-1. Install Waitress in the virtual environment:
+First, install Waitress:
 
 ```bash
-$ pip install waitress
+# Install Waitress
+pip install waitress
 ```
 
-2. Use the following command to start the Waitress server and specify the application to run:
+Now, tell Waitress to serve your application:
 
 ```bash
-$ waitress-serve --call 'flaskr:create_app'
+# Run the application with Waitress
+waitress-serve --call 'flaskr:create_app'
 ```
-
-The server will start running and listening on a specific address (e.g., `http://0.0.0.0:8080`).
 
 ## Summary
 
-In this lab, you learned how to deploy a Python Flask application to a production server. You built and installed the application using a wheel file, configured the secret key for security, and ran the application with a production WSGI server like Waitress.
+In this lab, we learned how to deploy a Flask application to a production server. We built our application into a wheel file, installed it on the server, configured the secret key, and ran the application with a production WSGI server.

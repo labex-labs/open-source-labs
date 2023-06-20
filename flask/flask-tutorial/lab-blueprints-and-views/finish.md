@@ -1,3 +1,3 @@
 # Summary
 
-In this tutorial, we learned how to use blueprints and views in Flask to organize our code and handle requests. Blueprints allow us to group related views and other code together, making our application more modular and maintainable. We also implemented user authentication and created a decorator to require authentication for certain views.
+In this lab, we have learned how to use Flask blueprints to structure our application. We have created a blueprint for user authentication and implemented registration, login, and logout views. We also implemented a decorator to protect views that require a user to be logged in. With this knowledge, you can now structure your Flask applications in a modular and scalable manner.

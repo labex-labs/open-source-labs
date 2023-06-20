@@ -1,6 +1,6 @@
-# Create the Flask Application
+# Create a Basic Flask App
 
-Create a simple Flask application in a file named `hello.py` using the following code:
+Create a simple Flask application in a file named `hello.py`.
 
 ```python
 # hello.py
@@ -11,5 +11,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
+    # Defines a route that returns a string
     return 'Hello, World!'
 ```

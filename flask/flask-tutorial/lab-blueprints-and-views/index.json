@@ -1,9 +1,9 @@
 {
   "type": "lab",
-  "title": "Python Flask Tutorial: Blueprints and Views",
-  "description": "This tutorial will guide you through the process of creating and using blueprints and views in Flask. Blueprints are a way to organize a group of related views and other code. Views are the code that responds to requests made to your Flask application.",
+  "title": "Flask Blueprint Lab",
+  "description": "In this lab, we will walk through how to create and use Flask blueprints to structure your application using views. Flask blueprints allow you to group related views, code, and resources together making your application modular and scalable. We will create a simple application which will include user authentication and blog posts functionality.",
   "difficulty": "Beginner",
-  "time": 35,
+  "time": 30,
   "details": {
     "steps": [
       {
@@ -35,7 +35,7 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Create the First View: Register",
+        "title": "Implement Registration View",
         "text": "step3.md",
         "verify": [
           {
@@ -49,7 +49,7 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Create the Login View",
+        "title": "Implement Login View",
         "text": "step4.md",
         "verify": [
           {
@@ -63,7 +63,7 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Implement User Authentication",
+        "title": "Implement Logout View",
         "text": "step5.md",
         "verify": [
           {
@@ -77,26 +77,12 @@
         "skills": ["python/flask"]
       },
       {
-        "title": "Create the Logout View",
+        "title": "Implement Login Required Decorator",
         "text": "step6.md",
         "verify": [
           {
             "name": "Test the completion of step 6",
             "file": "verify6.sh",
-            "hint": "You need to run the Flask service on HTTP 5000.",
-            "timeout": 0,
-            "showstderr": false
-          }
-        ],
-        "skills": ["python/flask"]
-      },
-      {
-        "title": "Require Authentication in Other Views",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "Test the completion of step 7",
-            "file": "verify7.sh",
             "hint": "You need to run the Flask service on HTTP 5000.",
             "timeout": 0,
             "showstderr": false

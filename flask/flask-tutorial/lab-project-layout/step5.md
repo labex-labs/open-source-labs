@@ -1,15 +1,10 @@
-# Set Up Version Control (Optional)
+# Set Up Version Control
 
-It is recommended to use version control for your projects. Initialize a Git repository and create a `.gitignore` file to exclude unnecessary files:
+It's a good practice to use version control systems like Git. Create a `.gitignore` file to exclude files that are not needed in the repository.
 
-```shell
-$ git init
-$ touch .gitignore
-```
+```bash
+# .gitignore
 
-Add the following content to the `.gitignore` file:
-
-```
 .venv/
 *.pyc
 __pycache__/

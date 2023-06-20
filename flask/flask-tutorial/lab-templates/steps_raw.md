@@ -1,115 +1,80 @@
-# Flask Templates Lab
+# Flask Template Lab
 
 ## Introduction
 
-In this lab, we will learn how to use templates in Flask to render dynamic HTML pages. Templates allow us to separate the presentation logic from the business logic in our Flask application, making our code more modular and maintainable.
+In this lab, we will learn how to create and use templates in Flask. Templates are a crucial part of web applications. They allow us to generate dynamic HTML pages that can display different data each time they are loaded. We'll be using the Jinja2 template engine that comes bundled with Flask.
 
 ## Steps
 
-### Step 1: Set up the project
+### Step 1: Creating the Base Layout
 
-Create a new directory for your Flask project and navigate to it in your terminal.
+Our first step is to create a base layout that will be used for all our pages. This base layout will include the common elements of our application like the navigation bar and the page title.
 
-### Step 2: Install Flask
+```html
+<!-- flaskr/templates/base.html -->
+<!DOCTYPE html>
+<title>{% block title %}{% endblock %} - Flaskr</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+<nav>
+  <h1>Flaskr</h1>
+  <ul>
+    {% if g.user %}
+    <li><span>{{ g.user['username'] }}</span></li>
+    <li><a href="{{ url_for('auth.logout') }}">Log Out</a> {% else %}</li>
 
-Install Flask using the following command:
-
-```python
-pip install flask
+    <li><a href="{{ url_for('auth.register') }}">Register</a></li>
+    <li>
+      <a href="{{ url_for('auth.login') }}">Log In</a>
+      {% endif %}
+    </li>
+  </ul>
+</nav>
+<section class="content">
+  <header>{% block header %}{% endblock %}</header>
+  {% for message in get_flashed_messages() %}
+  <div class="flash">{{ message }}</div>
+  {% endfor %} {% block content %}{% endblock %}
+</section>
 ```
 
-### Step 3: Create the Flask application
+### Step 2: Register Template
 
-Create a new Python file called `app.py` and add the following code:
+Next, we will create a template for the registration page. This template will extend our base layout and fill in the specific content for this page.
 
-```python
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return 'Hello, Flask!'
-
-if __name__ == '__main__':
-    app.run(debug=True)
-```
-
-Run the Flask application using the following command:
-
-```shell
-python app.py
-```
-
-Open your web browser and navigate to `http://127.0.0.1:5000`. You should see the message "Hello, Flask!" displayed in your browser.
-
-### Step 4: Create the templates directory
-
-Create a new directory called `templates` in your project directory. This is where we will store our HTML templates.
-
-### Step 5: Create the base template
-
-Create a new file called `base.html` inside the `templates` directory and add the following code:
-
-```html+jinja
-<!doctype html>
-<html>
-<head>
-    <title>{% block title %}Flask App{% endblock %}</title>
-</head>
-<body>
-    <header>
-        {% block header %}
-        <h1>Flask App</h1>
-        {% endblock %}
-    </header>
-    <section class="content">
-        {% block content %}
-        <p>Welcome to my Flask App!</p>
-        {% endblock %}
-    </section>
-</body>
-</html>
-```
-
-### Step 6: Create a child template
-
-Create a new file called `child.html` inside the `templates` directory and add the following code:
-
-```html+jinja
-{% extends 'base.html' %}
-
-{% block header %}
-    <h1>Child Template</h1>
-{% endblock %}
-
-{% block content %}
-    <p>This is the content of the child template.</p>
+```html
+<!-- flaskr/templates/auth/register.html -->
+{% extends 'base.html' %} {% block header %}
+<h1>{% block title %}Register{% endblock %}</h1>
+{% endblock %} {% block content %}
+<form method="post">
+  <label for="username">Username</label>
+  <input name="username" id="username" required />
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" required />
+  <input type="submit" value="Register" />
+</form>
 {% endblock %}
 ```
 
-### Step 7: Update the Flask application
+### Step 3: Login Template
 
-Update the `app.py` file to render the child template. Replace the `index` function with the following code:
+Similarly, we will create a template for the login page. This template will also extend our base layout and fill in the specific content for this page.
 
-```python
-from flask import render_template
-
-@app.route('/')
-def index():
-    return render_template('child.html')
+```html
+<!-- flaskr/templates/auth/login.html -->
+{% extends 'base.html' %} {% block header %}
+<h1>{% block title %}Log In{% endblock %}</h1>
+{% endblock %} {% block content %}
+<form method="post">
+  <label for="username">Username</label>
+  <input name="username" id="username" required />
+  <label for="password">Password</label>
+  <input type="password" name="password" id="password" required />
+  <input type="submit" value="Log In" />
+</form>
+{% endblock %}
 ```
-
-### Step 8: Test the application
-
-Restart the Flask application using the following command:
-
-```shell
-python app.py
-```
-
-Open your web browser and navigate to `http://127.0.0.1:5000`. You should see the header "Child Template" and the content "This is the content of the child template."
 
 ## Summary
 
-In this lab, we learned how to use templates in Flask to render dynamic HTML pages. We created a base template and a child template, and used the `render_template` function to render the child template. Templates allow us to separate the presentation logic from the business logic in our Flask application, making our code more modular and maintainable.
+In this lab, we learned how to create and use templates in Flask. We created a base layout that includes the common elements of our application, and then we created specific templates for the registration and login pages that extend this base layout and fill in their specific content. This allows us to keep our code DRY (Don't Repeat Yourself), making it more maintainable and less prone to errors.

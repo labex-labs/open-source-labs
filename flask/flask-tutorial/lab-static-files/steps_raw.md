@@ -1,20 +1,26 @@
-# Static Files Lab
+# Styling Flask Application
 
 ## Introduction
 
-In this lab, you will learn how to add style to your Flask application using static files. Static files, such as CSS, JavaScript, and images, are served directly to the client without any modification. By adding CSS to your Flask application, you can enhance the visual appearance of your HTML templates.
+In this lab, we will learn how to add CSS to our Flask application to make it visually appealing. We will use static files, specifically a CSS file, to style our application. Static files are files that don't change, such as CSS files, JavaScript files, and images.
 
 ## Steps
 
-### Step 1: Create the static directory
+### Step 1: Create CSS file
 
-1. Create a new directory called `static` in your Flask project directory.
-2. Inside the `static` directory, create a new file called `style.css`.
+First, we need to create a CSS file that will hold our styles. In Flask, static files are stored in a directory named `static`. Let's create a CSS file named `style.css` in the `flaskr/static` directory.
 
-### Step 2: Add CSS styles to `style.css`
+```bash
+# Navigate to the static directory
+cd flaskr/static
 
-1. Open the `style.css` file.
-2. Copy and paste the following CSS code into the file:
+# Create style.css file
+touch style.css
+```
+
+### Step 2: Add CSS rules
+
+Next, copy the following CSS rules into the `style.css` file. These rules will style various HTML elements in our application.
 
 ```css
 /* flaskr/static/style.css */
@@ -24,156 +30,28 @@ html {
   background: #eee;
   padding: 1rem;
 }
-
 body {
   max-width: 960px;
   margin: 0 auto;
   background: white;
 }
-
-h1 {
-  font-family: serif;
-  color: #377ba8;
-  margin: 1rem 0;
-}
-
-a {
-  color: #377ba8;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid lightgray;
-}
-
-nav {
-  background: lightgray;
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
-}
-
-nav h1 {
-  flex: auto;
-  margin: 0;
-}
-
-nav h1 a {
-  text-decoration: none;
-  padding: 0.25rem 0.5rem;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a,
-nav ul li span,
-header .action {
-  display: block;
-  padding: 0.5rem;
-}
-
-.content {
-  padding: 0 1rem 1rem;
-}
-
-.content > header {
-  border-bottom: 1px solid lightgray;
-  display: flex;
-  align-items: flex-end;
-}
-
-.content > header h1 {
-  flex: auto;
-  margin: 1rem 0 0.25rem 0;
-}
-
-.flash {
-  margin: 1em 0;
-  padding: 1em;
-  background: #cae6f6;
-  border: 1px solid #377ba8;
-}
-
-.post > header {
-  display: flex;
-  align-items: flex-end;
-  font-size: 0.85em;
-}
-
-.post > header > div:first-of-type {
-  flex: auto;
-}
-
-.post > header h1 {
-  font-size: 1.5em;
-  margin-bottom: 0;
-}
-
-.post .about {
-  color: slategray;
-  font-style: italic;
-}
-
-.post .body {
-  white-space: pre-line;
-}
-
-.content:last-child {
-  margin-bottom: 0;
-}
-
-.content form {
-  margin: 1em 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.content label {
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
-.content input,
-.content textarea {
-  margin-bottom: 1em;
-}
-
-.content textarea {
-  min-height: 12em;
-  resize: vertical;
-}
-
-input.danger {
-  color: #cc2f2e;
-}
-
-input[type="submit"] {
-  align-self: start;
-  min-width: 10em;
-}
+/* More CSS rules... */
 ```
 
-### Step 3: Link the CSS file in the base.html template
+### Step 3: Link CSS file in HTML
 
-1. Open the `base.html` file in the `templates` directory.
-2. Locate the `<head>` section of the HTML file.
-3. Add the following line of code inside the `<head>` section:
+Now, we need to link our CSS file in the HTML templates. Flask automatically adds a `static` view that serves static files. We can use the `url_for` function in the `base.html` template to link our CSS file.
 
 ```html+jinja
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!-- base.html -->
+
+{{ url_for('static', filename='style.css') }}
 ```
 
-### Step 4: Test the CSS styles
+### Step 4: Verify the changes
 
-1. Start your Flask development server.
-2. Open your web browser and navigate to `http://127.0.0.1:5000/auth/login`.
-3. The login page should now have the CSS styles applied.
+To verify the changes, start your Flask application and navigate to the login page at http://127.0.0.1:5000/auth/login. The page should now be styled according to the rules in the `style.css` file.
 
 ## Summary
 
-In this lab, you learned how to add CSS styles to your Flask application using static files. By creating a `style.css` file in the `static` directory and linking it in your HTML templates, you can enhance the visual appearance of your application.
+In this lab, we learned how to add styles to our Flask application using a CSS file. We created a CSS file, added some CSS rules, and then linked the CSS file in our HTML templates using Flask's `url_for` function. Now, our Flask application looks much more visually appealing. Remember, if you make changes to a static file, you may need to refresh the browser page or clear your browser's cache to see the changes.

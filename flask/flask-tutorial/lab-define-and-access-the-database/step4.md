@@ -1,6 +1,8 @@
-# Register with the Application
+# Registering with the Application
 
-To ensure that the `close_db()` and `init_db()` functions are used by the application, we need to register them with the Flask application instance. We will define a function called `init_app()` to handle this registration.
+The `close_db` and `init_db_command` functions need to be registered with the application instance to be used by the application. Since we're using a factory function, we will write a function that takes an application and does the registration.
+
+Add the following function to the `db.py` file:
 
 ```python
 # flaskr/db.py
@@ -10,4 +12,17 @@ def init_app(app):
     app.cli.add_command(init_db_command)
 ```
 
-In this code, we use the `teardown_appcontext()` method to register the `close_db()` function to be called when cleaning up after returning the response. We also use the `cli.add_command()` method to add the `init_db_command` as a new command that can be called with the `flask` command.
+Then, import and call this function from the factory. Add the following code to the `__init__.py` file:
+
+```python
+# flaskr/__init__.py
+
+def create_app():
+    app = ...
+    # existing code omitted
+
+    from . import db
+    db.init_app(app)
+
+    return app
+```
