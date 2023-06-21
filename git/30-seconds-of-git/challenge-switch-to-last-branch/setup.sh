@@ -3,4 +3,4 @@ cd /home/labex/project
 git clone https://github.com/labex-labs/git-playground.git
 cd /home/labex/project/git-playgrund
 git fetch origin
-git checkout feature-branch
+git checkout -b feature-branch
