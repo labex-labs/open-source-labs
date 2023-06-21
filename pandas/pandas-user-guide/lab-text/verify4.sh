@@ -1,4 +1,6 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep ''
+git diff | grep 'contains'
+git diff | grep 'match'
+git diff | grep 'str'

@@ -1,4 +1,5 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep ''
+git diff | grep 'array'
+git diff | grep 'Int64'
