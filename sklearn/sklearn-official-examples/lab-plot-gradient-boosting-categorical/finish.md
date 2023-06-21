@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we compared four different pipelines for handling categorical features in Gradient Boosting estimators using the Ames Housing dataset. We found that dropping categorical features led to poorer prediction performance, and that the three models that used categorical features had comparable error rates. One-hot encoding the categorical features was by far the slowest method, while treating the categorical features as ordinal values and using the native categorical support of the HistGradientBoostingRegressor estimator had similar fit times. When the total number of splits was limited, the native categorical support strategy performed the best.

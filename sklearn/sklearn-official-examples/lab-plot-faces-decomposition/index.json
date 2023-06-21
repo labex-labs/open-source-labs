@@ -1,0 +1,203 @@
+{
+  "type": "lab",
+  "title": "Faces Dataset Decompositions",
+  "description": "This lab applies different unsupervised matrix decomposition (dimension reduction) methods from the module `sklearn.decomposition` to the Olivetti faces dataset. The Olivetti faces dataset consists of 400 faces of size 64x64 pixels from 40 individuals, each captured with different facial expressions and lighting conditions.",
+  "difficulty": "Beginner",
+  "time": 60,
+  "details": {
+    "steps": [
+      {
+        "title": "Dataset Preparation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Eigenfaces - PCA using randomized SVD",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Non-negative components - NMF",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Independent components - FastICA",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Sparse components - MiniBatchSparsePCA",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Dictionary learning",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Cluster centers - MiniBatchKMeans",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Factor Analysis components - FA",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Decomposition: Dictionary learning",
+        "text": "step9.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 9",
+            "file": "verify9.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": ": Dictionary learning - positive dictionary",
+        "text": "step10.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 10",
+            "file": "verify10.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": ": Dictionary learning - positive code",
+        "text": "step11.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 11",
+            "file": "verify11.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": ": Dictionary learning - positive dictionary & code",
+        "text": "step12.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 12",
+            "file": "verify12.sh",
+            "hint": "You need to practice the code in plot-faces-decomposition.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-faces-decomposition.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}
