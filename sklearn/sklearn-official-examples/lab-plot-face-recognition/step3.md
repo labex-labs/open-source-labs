@@ -10,5 +10,3 @@ X_test = scaler.transform(X_test)
 ```
 
 We split the dataset into a training set and a test set and preprocess the data by scaling the input data using the `StandardScaler()` function.
-
-

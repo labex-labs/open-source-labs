@@ -11,5 +11,3 @@ covars = np.array(
 samples = np.array([200, 500, 200])
 means = np.array([[0.0, -0.70], [0.0, 0.0], [0.0, 0.70]])
 ```
-
-

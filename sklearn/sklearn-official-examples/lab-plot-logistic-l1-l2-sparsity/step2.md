@@ -7,5 +7,3 @@ X, y = datasets.load_digits(return_X_y=True)
 X = StandardScaler().fit_transform(X)
 y = (y > 4).astype(int)
 ```
-
-

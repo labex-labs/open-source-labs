@@ -36,5 +36,3 @@ def add_missing_values(X_full, y_full):
 X_miss_california, y_miss_california = add_missing_values(X_california, y_california)
 X_miss_diabetes, y_miss_diabetes = add_missing_values(X_diabetes, y_diabetes)
 ```
-
-

@@ -10,5 +10,3 @@ labels = np.full(n_samples, -1.0)
 labels[0] = outer
 labels[-1] = inner
 ```
-
-

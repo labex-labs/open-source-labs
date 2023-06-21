@@ -20,5 +20,3 @@ plt.plot(y)
 plt.title("Original Signal")
 plt.show()
 ```
-
-

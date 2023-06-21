@@ -25,5 +25,3 @@ X_filtered = np.vstack(
 )  # Unevenly sized blobs
 y_filtered = [0] * 500 + [1] * 100 + [2] * 10
 ```
-
-

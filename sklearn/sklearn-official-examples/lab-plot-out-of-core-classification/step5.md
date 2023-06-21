@@ -8,5 +8,3 @@ def iter_minibatches(doc_iter, minibatch_size):
         yield X_text, y
         X_text, y = get_minibatch(doc_iter, minibatch_size)
 ```
-
-

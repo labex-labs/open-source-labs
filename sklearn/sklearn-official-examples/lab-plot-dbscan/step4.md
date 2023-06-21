@@ -10,5 +10,3 @@ print(f"Adjusted Rand Index: {metrics.adjusted_rand_score(labels_true, labels):.
 print(f"Adjusted Mutual Information: {metrics.adjusted_mutual_info_score(labels_true, labels):.3f}")
 print(f"Silhouette Coefficient: {metrics.silhouette_score(X, labels):.3f}")
 ```
-
-

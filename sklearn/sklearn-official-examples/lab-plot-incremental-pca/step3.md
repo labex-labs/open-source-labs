@@ -7,5 +7,3 @@ n_components = 2
 ipca = IncrementalPCA(n_components=n_components, batch_size=10)
 X_ipca = ipca.fit_transform(X)
 ```
-
-

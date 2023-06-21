@@ -10,5 +10,3 @@ plt.xlabel("True Values")
 plt.ylabel("Predictions")
 plt.show()
 ```
-
-

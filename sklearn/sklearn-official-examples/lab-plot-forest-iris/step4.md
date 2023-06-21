@@ -10,5 +10,3 @@ models = [
     AdaBoostClassifier(DecisionTreeClassifier(max_depth=3), n_estimators=n_estimators),
 ]
 ```
-
-

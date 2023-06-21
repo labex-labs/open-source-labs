@@ -24,5 +24,3 @@ COLORS = np.array(
 # ensure same distributions
 RANDOM_SEED = np.random.randint(2**10)
 ```
-
-

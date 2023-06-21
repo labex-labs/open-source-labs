@@ -10,5 +10,3 @@ models = (
 )
 models = (clf.fit(X, y) for clf in models)
 ```
-
-

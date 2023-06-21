@@ -7,5 +7,3 @@ We will compare the estimated coefficients of the true model, the linear model, 
 print("Estimated coefficients (true, linear regression, RANSAC):")
 print(coef, lr.coef_, ransac.estimator_.coef_)
 ```
-
-

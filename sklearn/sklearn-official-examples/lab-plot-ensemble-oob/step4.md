@@ -16,5 +16,3 @@ for label, clf in ensemble_clfs:
         oob_error = 1 - clf.oob_score_
         error_rate[label].append((i, oob_error))
 ```
-
-

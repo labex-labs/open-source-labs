@@ -63,5 +63,3 @@ class SequenceKernel(GenericKernelMixin, Kernel):
         cloned.theta = theta
         return cloned
 ```
-
-

@@ -8,5 +8,3 @@ y_pred_ols = reg_ols.fit(X_train, y_train).predict(X_test)
 r2_score_ols = r2_score(y_test, y_pred_ols)
 print("OLS R2 score", r2_score_ols)
 ```
-
-

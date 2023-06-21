@@ -39,5 +39,3 @@ for name, model in models.items():
     result = {"model": name, "cv_results": pd.DataFrame(grid_search.cv_results_)}
     results.append(result)
 ```
-
-

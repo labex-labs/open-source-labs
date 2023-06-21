@@ -13,5 +13,3 @@ clf = clf.fit(X_train_pca, y_train)
 ```
 
 We train a SVM classification model using the transformed data. We use `RandomizedSearchCV()` to find the best hyperparameters for the SVM model.
-
-

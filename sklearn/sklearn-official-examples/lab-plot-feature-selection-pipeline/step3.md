@@ -5,5 +5,3 @@ We will now train the pipeline on the training subset using the `fit` method. Du
 ```python
 anova_svm.fit(X_train, y_train)
 ```
-
-

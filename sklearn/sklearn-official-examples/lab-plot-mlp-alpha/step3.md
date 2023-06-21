@@ -21,5 +21,3 @@ for alpha in alphas:
     )
     names.append(f"alpha {alpha:.2f}")
 ```
-
-

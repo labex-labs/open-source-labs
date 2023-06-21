@@ -18,5 +18,3 @@ roc_auc = metrics.auc(fpr, tpr)
 plt.text(-35, -70, "AUC: %.3f" % roc_auc, ha="right")
 print("\n Area under the ROC curve : %f" % roc_auc)
 ```
-
-

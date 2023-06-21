@@ -7,5 +7,3 @@ from sklearn.model_selection import cross_val_predict
 
 y_pred = cross_val_predict(lr, X, y, cv=10)
 ```
-
-

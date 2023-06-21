@@ -15,5 +15,3 @@ sample_weight = rng.lognormal(size=n_samples)
 # normalize the sample weights
 normalized_weights = sample_weight * (n_samples / (sample_weight.sum()))
 ```
-
-

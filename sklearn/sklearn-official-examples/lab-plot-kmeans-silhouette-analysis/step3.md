@@ -97,5 +97,3 @@ for n_clusters in range_n_clusters:
 
 plt.show()
 ```
-
-

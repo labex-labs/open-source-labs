@@ -9,5 +9,3 @@ raw_model = ridge.fit(X_train, y_train)
 print("Raw Model score on training set: ", raw_model.score(X_train, y_train))
 print("Raw Model score on test set: ", raw_model.score(X_test, y_test))
 ```
-
-

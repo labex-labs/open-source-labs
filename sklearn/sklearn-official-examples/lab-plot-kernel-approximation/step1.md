@@ -14,5 +14,3 @@ from sklearn.decomposition import PCA
 # The digits dataset
 digits = datasets.load_digits(n_class=9)
 ```
-
-

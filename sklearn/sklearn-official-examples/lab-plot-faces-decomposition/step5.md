@@ -13,5 +13,3 @@ plot_gallery(
     batch_pca_estimator.components_[:n_components],
 )
 ```
-
-

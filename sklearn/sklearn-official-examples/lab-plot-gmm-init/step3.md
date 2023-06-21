@@ -47,5 +47,3 @@ for n, method in enumerate(methods):
 plt.suptitle("GMM iterations and relative time taken to initialize")
 plt.show()
 ```
-
-

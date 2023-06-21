@@ -37,5 +37,3 @@ print(
 svm_weights_selected = np.abs(clf_selected[-1].coef_).sum(axis=0)
 svm_weights_selected /= svm_weights_selected.sum()
 ```
-
-

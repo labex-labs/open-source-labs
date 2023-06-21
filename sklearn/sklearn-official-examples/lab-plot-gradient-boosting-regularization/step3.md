@@ -17,5 +17,3 @@ original_params = {
     "min_samples_split": 5,
 }
 ```
-
-

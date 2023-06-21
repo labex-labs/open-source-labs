@@ -15,5 +15,3 @@ plt.xlim(1, 30)
 plt.legend()
 _ = plt.title("Models log-likelihood")
 ```
-
-

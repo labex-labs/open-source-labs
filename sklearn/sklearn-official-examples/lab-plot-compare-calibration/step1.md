@@ -19,5 +19,3 @@ X_train, X_test, y_train, y_test = train_test_split(
     test_size=100_000 - train_samples,
 )
 ```
-
-

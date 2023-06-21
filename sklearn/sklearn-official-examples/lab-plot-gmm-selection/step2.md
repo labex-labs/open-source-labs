@@ -11,5 +11,3 @@ plt.title("Gaussian Mixture components")
 plt.axis("equal")
 plt.show()
 ```
-
-

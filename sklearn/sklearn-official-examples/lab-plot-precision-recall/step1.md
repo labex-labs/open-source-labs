@@ -33,5 +33,3 @@ classifier = make_pipeline(
 )
 classifier.fit(X_train, y_train)
 ```
-
-

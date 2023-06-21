@@ -8,5 +8,3 @@ import numpy as np
 from scipy.special import expit
 from sklearn.linear_model import LinearRegression, LogisticRegression
 ```
-
-

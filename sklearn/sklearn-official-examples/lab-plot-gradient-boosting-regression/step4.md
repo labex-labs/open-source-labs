@@ -25,5 +25,3 @@ plt.ylabel("Deviance")
 fig.tight_layout()
 plt.show()
 ```
-
-

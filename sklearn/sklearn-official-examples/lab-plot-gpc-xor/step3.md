@@ -36,5 +36,3 @@ for i, kernel in enumerate(kernels):
 plt.tight_layout()
 plt.show()
 ```
-
-

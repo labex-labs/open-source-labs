@@ -9,5 +9,3 @@ n_test = 1000  # Size of the test set
 noise = 0.1  # Standard deviation of the noise
 np.random.seed(0)
 ```
-
-

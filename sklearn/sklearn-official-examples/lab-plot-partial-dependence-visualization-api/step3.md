@@ -34,5 +34,3 @@ tree_disp.axes_[0, 0].legend()
 tree_disp.axes_[0, 1].legend()
 plt.show()
 ```
-
-

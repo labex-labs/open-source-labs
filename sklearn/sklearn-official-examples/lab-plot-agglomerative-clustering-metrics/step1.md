@@ -40,5 +40,3 @@ for i, (phi, a) in enumerate([(0.5, 0.15), (0.5, 0.6), (0.3, 0.2)]):
 X = np.array(X)
 y = np.array(y)
 ```
-
-

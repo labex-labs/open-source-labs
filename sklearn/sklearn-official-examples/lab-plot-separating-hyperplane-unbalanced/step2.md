@@ -15,5 +15,3 @@ X, y = make_blobs(
     shuffle=False,
 )
 ```
-
-

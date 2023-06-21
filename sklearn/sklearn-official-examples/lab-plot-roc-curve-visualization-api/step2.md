@@ -6,5 +6,3 @@ Next, we will plot the ROC curve using the `RocCurveDisplay.from_estimator` func
 svc_disp = RocCurveDisplay.from_estimator(svc, X_test, y_test)
 svc_disp.show()
 ```
-
-

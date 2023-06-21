@@ -16,5 +16,3 @@ ls30 = (LabelSpreading().fit(X, y_30), y_30, "Label Spreading 30% data")
 ls50 = (LabelSpreading().fit(X, y_50), y_50, "Label Spreading 50% data")
 ls100 = (LabelSpreading().fit(X, y), y, "Label Spreading 100% data")
 ```
-
-

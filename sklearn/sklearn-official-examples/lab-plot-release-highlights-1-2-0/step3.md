@@ -13,5 +13,3 @@ hist_no_interact = HistGradientBoostingRegressor(
 )
 hist_no_interact.fit(X, y)
 ```
-
-

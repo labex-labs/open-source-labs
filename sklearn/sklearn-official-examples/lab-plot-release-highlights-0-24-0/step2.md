@@ -22,5 +22,3 @@ cat_features[5] = True
 # fit the model
 clf.fit(data.data, data.target, categorical_features=cat_features)
 ```
-
-

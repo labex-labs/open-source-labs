@@ -6,5 +6,3 @@ We will use the scikit-learn library's `kmeans_plusplus` function to calculate s
 # Calculate seeds from k-means++
 centers_init, indices = kmeans_plusplus(X, n_clusters=4, random_state=0)
 ```
-
-

@@ -15,5 +15,3 @@ X, y = make_blobs(n_samples=25000, centers=n_centers, random_state=0)
 # Use all colors that matplotlib provides by default.
 colors_ = cycle(colors.cnames.keys())
 ```
-
-

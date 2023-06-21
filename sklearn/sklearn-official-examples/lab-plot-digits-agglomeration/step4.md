@@ -7,5 +7,3 @@ agglo = cluster.FeatureAgglomeration(connectivity=connectivity, n_clusters=32)
 agglo.fit(X)
 X_reduced = agglo.transform(X)
 ```
-
-

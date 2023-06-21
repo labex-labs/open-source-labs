@@ -111,5 +111,3 @@ class View:
         else:
             raise ValueError("surface type unknown")
 ```
-
-

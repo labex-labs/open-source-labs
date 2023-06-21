@@ -9,5 +9,3 @@ axs[0].set_title("LLE Embedding of Swiss Roll")
 axs[1].scatter(sr_tsne[:, 0], sr_tsne[:, 1], c=sr_color)
 _ = axs[1].set_title("t-SNE Embedding of Swiss Roll")
 ```
-
-

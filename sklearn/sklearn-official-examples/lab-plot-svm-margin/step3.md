@@ -12,5 +12,3 @@ for name, penalty in (("unreg", 1), ("reg", 0.05)):
     xx = np.linspace(-5, 5)
     yy = a * xx - (clf.intercept_[0]) / w[1]
 ```
-
-

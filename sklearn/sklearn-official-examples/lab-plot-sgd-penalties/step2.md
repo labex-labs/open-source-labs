@@ -9,5 +9,3 @@ np.random.seed(42)
 X = np.random.randn(200, 2)
 y = np.repeat([1, -1], 100)
 ```
-
-

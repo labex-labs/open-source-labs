@@ -13,5 +13,3 @@ ax.legend(loc="lower center")
 ax.set_ylim(-20, 10)
 plt.show()
 ```
-
-

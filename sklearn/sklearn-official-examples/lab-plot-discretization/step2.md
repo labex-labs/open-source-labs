@@ -8,5 +8,3 @@ X = rnd.uniform(-3, 3, size=100)
 y = np.sin(X) + rnd.normal(size=len(X)) / 3
 X = X.reshape(-1, 1)
 ```
-
-

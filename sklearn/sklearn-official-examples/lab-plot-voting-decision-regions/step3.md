@@ -22,5 +22,3 @@ for idx, clf, tt in zip(
 
 plt.show()
 ```
-
-

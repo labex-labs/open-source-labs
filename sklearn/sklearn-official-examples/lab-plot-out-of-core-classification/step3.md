@@ -34,5 +34,3 @@ test_stats["n_test"] += len(y_test)
 test_stats["n_test_pos"] += sum(y_test)
 print("Test set is %d documents (%d positive)" % (len(y_test), sum(y_test)))
 ```
-
-

@@ -23,5 +23,3 @@ print(
     % metrics.silhouette_score(X, labels, metric="sqeuclidean")
 )
 ```
-
-

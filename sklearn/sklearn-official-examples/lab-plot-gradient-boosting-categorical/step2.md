@@ -13,5 +13,3 @@ dropper = make_column_transformer(
 )
 hist_dropped = make_pipeline(dropper, HistGradientBoostingRegressor(random_state=42))
 ```
-
-

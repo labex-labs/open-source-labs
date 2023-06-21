@@ -42,5 +42,3 @@ plt.legend(loc="upper right")
 
 plt.title("Decision Boundary")
 ```
-
-

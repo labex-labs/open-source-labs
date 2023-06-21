@@ -13,5 +13,3 @@ digits = load_digits()
 pca = PCA(n_components=15, whiten=False)
 data = pca.fit_transform(digits.data)
 ```
-
-

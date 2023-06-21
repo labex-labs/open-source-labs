@@ -30,5 +30,3 @@ for n_clusters in (30, 3):
 
 plt.show()
 ```
-
-

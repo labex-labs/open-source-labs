@@ -8,5 +8,3 @@ import matplotlib.pyplot as plt
 from scipy.linalg import toeplitz, cholesky
 from sklearn.covariance import LedoitWolf, OAS
 ```
-
-

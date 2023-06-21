@@ -11,5 +11,3 @@ clf = SVC(kernel='linear')
 # Train the classifier on the training data
 clf.fit(X_train, y_train)
 ```
-
-

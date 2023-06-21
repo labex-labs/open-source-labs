@@ -9,5 +9,3 @@ ConfusionMatrixDisplay.from_estimator(
 ```
 
 We predict the target values using the test data and evaluate the model performance using the `classification_report()` function. We also plot the confusion matrix using the `ConfusionMatrixDisplay()` function.
-
-

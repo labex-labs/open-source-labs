@@ -68,5 +68,3 @@ plt.xticks(())
 plt.yticks(())
 plt.show()
 ```
-
-

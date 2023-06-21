@@ -20,5 +20,3 @@ plt.title("Elastic Net Path")
 plt.axis("tight")
 plt.show()
 ```
-
-

@@ -44,5 +44,3 @@ ax[0, 1].set_title("Available Kernels")
 # Show plot
 plt.show()
 ```
-
-

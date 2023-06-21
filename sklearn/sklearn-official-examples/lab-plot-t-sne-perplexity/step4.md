@@ -14,5 +14,3 @@ tsne = manifold.TSNE(
 Y = tsne.fit_transform(X)
 t1 = time()
 ```
-
-

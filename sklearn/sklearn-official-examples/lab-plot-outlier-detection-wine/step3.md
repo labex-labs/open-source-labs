@@ -24,5 +24,3 @@ plt.ylabel("ash")
 plt.xlabel("malic_acid")
 plt.show()
 ```
-
-

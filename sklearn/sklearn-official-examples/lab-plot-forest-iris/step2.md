@@ -11,5 +11,3 @@ plot_step = 0.02  # fine step width for decision surface contours
 plot_step_coarser = 0.5  # step widths for coarse classifier guesses
 RANDOM_SEED = 13  # fix the seed on each iteration
 ```
-
-

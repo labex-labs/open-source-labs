@@ -7,5 +7,3 @@ We will now fit a GMM to the dataset using the GaussianMixture class from scikit
 clf = mixture.GaussianMixture(n_components=2, covariance_type="full")
 clf.fit(X_train)
 ```
-
-

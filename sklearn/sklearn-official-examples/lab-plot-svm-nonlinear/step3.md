@@ -6,5 +6,3 @@ In this step, we will train the SVM classifier with RBF kernel using the generat
 clf = svm.NuSVC(gamma="auto")
 clf.fit(X, Y)
 ```
-
-

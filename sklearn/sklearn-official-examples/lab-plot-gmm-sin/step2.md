@@ -16,5 +16,3 @@ for i in range(X.shape[0]):
     X[i, 0] = x + np.random.normal(0, 0.1)
     X[i, 1] = 3.0 * (np.sin(x) + np.random.normal(0, 0.2))
 ```
-
-

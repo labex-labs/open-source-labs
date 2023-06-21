@@ -13,5 +13,3 @@ for i, y_pred in enumerate(clf.staged_predict_proba(X)):
 
 best_n_estimators = np.argmin(test_scores) + 1
 ```
-
-

@@ -13,5 +13,3 @@ gpr = GaussianProcessRegressor(kernel=kernel, alpha=0.0)
 gpr.fit(X_train, y_train)
 y_mean, y_std = gpr.predict(X, return_std=True)
 ```
-
-

@@ -16,5 +16,3 @@ plt.xlim(0, 5)
 plt.ylim(-0.25, 1.5)
 plt.legend(loc="best")
 ```
-
-

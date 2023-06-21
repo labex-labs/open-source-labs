@@ -6,5 +6,3 @@ Let's first fit a linear regression model to the training data using scikit-lear
 model = LinearRegression()
 model.fit(X_train, y_train)
 ```
-
-

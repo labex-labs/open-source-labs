@@ -5,5 +5,3 @@ In this step, we will define the hyperparameters for the DecisionTreeClassifier 
 ```python
 scoring = {"AUC": "roc_auc", "Accuracy": make_scorer(accuracy_score)}
 ```
-
-

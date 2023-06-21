@@ -24,5 +24,3 @@ print(
     % (train_samples, n_features, n_classes)
 )
 ```
-
-

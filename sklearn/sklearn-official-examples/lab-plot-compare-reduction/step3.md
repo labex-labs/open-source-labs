@@ -6,5 +6,3 @@ We will create a `GridSearchCV` object using the pipeline and parameter grid we 
 grid = GridSearchCV(pipe, n_jobs=1, param_grid=param_grid)
 grid.fit(X, y)
 ```
-
-

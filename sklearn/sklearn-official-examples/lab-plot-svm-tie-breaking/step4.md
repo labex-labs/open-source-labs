@@ -21,5 +21,3 @@ In this step, we will create the decision boundary for the two models. We will u
         extent=(xlim[0], xlim[1], ylim[1], ylim[0]),
     )
 ```
-
-

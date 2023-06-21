@@ -12,5 +12,3 @@ X2, y2 = make_gaussian_quantiles(
 X = np.concatenate((X1, X2))
 y = np.concatenate((y1, -y2 + 1))
 ```
-
-

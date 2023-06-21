@@ -12,5 +12,3 @@ mbk_means_cluster_centers = mbk.cluster_centers_[order]
 k_means_labels = pairwise_distances_argmin(X, k_means_cluster_centers)
 mbk_means_labels = pairwise_distances_argmin(X, mbk_means_cluster_centers)
 ```
-
-

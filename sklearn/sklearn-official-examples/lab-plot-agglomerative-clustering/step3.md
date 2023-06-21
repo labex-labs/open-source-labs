@@ -5,5 +5,3 @@ Create a graph capturing local connectivity. Larger number of neighbors will giv
 ```python
 knn_graph = kneighbors_graph(X, 30, include_self=False)
 ```
-
-

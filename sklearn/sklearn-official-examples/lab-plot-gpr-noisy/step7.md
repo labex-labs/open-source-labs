@@ -34,5 +34,3 @@ plt.ylabel("Noise-level")
 plt.title("Log-marginal-likelihood")
 plt.show()
 ```
-
-

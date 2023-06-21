@@ -13,5 +13,3 @@ lsvm_score = 100 * lsvm.score(X_test, y_test)
 # Print the accuracy of the baseline model
 print(f"Linear SVM score on raw features: {lsvm_score:.2f}%")
 ```
-
-

@@ -28,5 +28,3 @@ sns.catplot(
 )
 plt.show()
 ```
-
-

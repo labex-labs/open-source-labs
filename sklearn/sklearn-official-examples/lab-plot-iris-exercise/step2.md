@@ -15,5 +15,3 @@ y_train = y[: int(0.9 * n_sample)]
 X_test = X[int(0.9 * n_sample) :]
 y_test = y[int(0.9 * n_sample) :]
 ```
-
-

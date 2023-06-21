@@ -12,5 +12,3 @@ plot_gallery(
     "Eigenfaces - PCA using randomized SVD", pca_estimator.components_[:n_components]
 )
 ```
-
-

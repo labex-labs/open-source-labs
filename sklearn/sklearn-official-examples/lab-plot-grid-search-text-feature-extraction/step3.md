@@ -23,5 +23,3 @@ random_search.fit(data_train.data, data_train.target)
 test_accuracy = random_search.score(data_test.data, data_test.target)
 
 ```
-
-

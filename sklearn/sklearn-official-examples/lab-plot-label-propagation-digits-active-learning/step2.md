@@ -17,5 +17,3 @@ n_total_samples = len(y)
 n_labeled_points = 10
 unlabeled_indices = np.arange(n_total_samples)[n_labeled_points:]
 ```
-
-

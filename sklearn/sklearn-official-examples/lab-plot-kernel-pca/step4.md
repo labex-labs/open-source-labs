@@ -11,5 +11,3 @@ kernel_pca = KernelPCA(
 
 X_test_kernel_pca = kernel_pca.fit(X_train).transform(X_test)
 ```
-
-

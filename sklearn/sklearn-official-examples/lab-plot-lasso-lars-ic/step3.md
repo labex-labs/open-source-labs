@@ -18,5 +18,3 @@ index_alpha_path_aic = np.flatnonzero(
 )[0]
 
 ```
-
-

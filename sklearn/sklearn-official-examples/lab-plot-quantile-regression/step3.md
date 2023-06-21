@@ -95,5 +95,3 @@ plt.xlabel("x")
 plt.ylabel("y")
 _ = plt.title("Quantiles of asymmetric Pareto distributed target")
 ```
-
-

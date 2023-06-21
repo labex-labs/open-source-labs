@@ -12,5 +12,3 @@ orig_coins = coins()
 smoothened_coins = gaussian_filter(orig_coins, sigma=2)
 rescaled_coins = rescale(smoothened_coins, 0.2, mode="reflect", anti_aliasing=False)
 ```
-
-

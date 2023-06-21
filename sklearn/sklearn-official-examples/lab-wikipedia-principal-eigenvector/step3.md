@@ -42,5 +42,3 @@ X, redirects, index_map = get_adjacency_matrix(
 )
 names = {i: name for name, i in index_map.items()}
 ```
-
-

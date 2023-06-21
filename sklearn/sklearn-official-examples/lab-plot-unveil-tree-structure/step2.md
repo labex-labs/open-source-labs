@@ -55,5 +55,3 @@ for i in range(n_nodes):
             )
         )
 ```
-
-

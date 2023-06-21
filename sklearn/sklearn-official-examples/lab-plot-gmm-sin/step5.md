@@ -15,5 +15,3 @@ dpgmm = mixture.BayesianGaussianMixture(
     random_state=2,
 ).fit(X)
 ```
-
-

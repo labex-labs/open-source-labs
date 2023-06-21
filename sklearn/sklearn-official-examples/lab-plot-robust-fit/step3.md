@@ -18,5 +18,3 @@ colors = {
 linestyle = {"OLS": "-", "Theil-Sen": "-.", "RANSAC": "--", "HuberRegressor": "--"}
 lw = 3
 ```
-
-

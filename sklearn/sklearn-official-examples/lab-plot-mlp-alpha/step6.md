@@ -54,5 +54,3 @@ We will fit each classifier on each dataset and plot the decision boundaries. We
         )
         i += 1
 ```
-
-

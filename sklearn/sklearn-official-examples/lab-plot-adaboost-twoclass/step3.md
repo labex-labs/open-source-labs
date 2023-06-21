@@ -9,5 +9,3 @@ bdt = AdaBoostClassifier(
 
 bdt.fit(X, y)
 ```
-
-

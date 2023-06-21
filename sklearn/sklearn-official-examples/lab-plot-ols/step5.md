@@ -16,5 +16,3 @@ print("Mean squared error: %.2f"
 print("Coefficient of determination: %.2f"
       % r2_score(diabetes_y_test, diabetes_y_pred))
 ```
-
-

@@ -19,5 +19,3 @@ X_homo = X + sigma * rng.randn(n_samples, n_features)
 sigmas = sigma * rng.rand(n_features) + sigma / 2.0
 X_hetero = X + rng.randn(n_samples, n_features) * sigmas
 ```
-
-

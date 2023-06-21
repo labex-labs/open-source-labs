@@ -16,5 +16,3 @@ n_samples, n_features = X.shape
 random_state = np.random.RandomState(0)
 X = np.concatenate([X, random_state.randn(n_samples, 200 * n_features)], axis=1)
 ```
-
-

@@ -19,5 +19,3 @@ X_test, y_test = fetch_20newsgroups(
     return_X_y=True,
 )
 ```
-
-

@@ -24,5 +24,3 @@ dt = DecisionTreeClassifier(max_depth=9, min_samples_leaf=1)
 dt.fit(X_train, y_train)
 dt_err = 1.0 - dt.score(X_test, y_test)
 ```
-
-

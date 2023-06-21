@@ -22,5 +22,3 @@ S_hessian = lle_hessian.fit_transform(S_points)
 lle_mod = manifold.LocallyLinearEmbedding(method="modified", **params)
 S_mod = lle_mod.fit_transform(S_points)
 ```
-
-

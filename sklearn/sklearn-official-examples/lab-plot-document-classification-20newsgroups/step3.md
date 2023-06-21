@@ -26,5 +26,3 @@ _ = ax.set_title(
 
 _ = plot_feature_effects().set_title("Average feature effects on filtered documents")
 ```
-
-

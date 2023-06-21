@@ -7,5 +7,3 @@ n_samples = 10000
 random_state = 0
 X, _ = make_blobs(n_samples=n_samples, centers=2, random_state=random_state)
 ```
-
-

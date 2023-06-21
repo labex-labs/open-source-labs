@@ -8,5 +8,3 @@ In this step, we will compute the nearest neighbors graph using KNeighborsTransf
 # nearest neighbors graph as required by its own n_neighbors parameter.
 graph_model = KNeighborsTransformer(n_neighbors=max(n_neighbors_list), mode="distance")
 ```
-
-

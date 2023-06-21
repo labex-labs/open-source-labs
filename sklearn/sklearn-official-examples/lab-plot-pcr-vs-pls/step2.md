@@ -14,5 +14,3 @@ axes[1].set(xlabel="Projected data onto second PCA component", ylabel="y")
 plt.tight_layout()
 plt.show()
 ```
-
-

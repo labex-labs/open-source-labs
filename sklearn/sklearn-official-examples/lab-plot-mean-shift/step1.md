@@ -8,5 +8,3 @@ from sklearn.cluster import MeanShift, estimate_bandwidth
 from sklearn.datasets import make_blobs
 import matplotlib.pyplot as plt
 ```
-
-

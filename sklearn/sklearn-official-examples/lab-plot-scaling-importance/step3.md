@@ -57,5 +57,3 @@ for ax in (ax1, ax2):
 
 _ = plt.tight_layout()
 ```
-
-

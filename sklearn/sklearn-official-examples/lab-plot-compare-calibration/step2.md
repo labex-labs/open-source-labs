@@ -67,5 +67,3 @@ for i, (_, name) in enumerate(clf_list):
 plt.tight_layout()
 plt.show()
 ```
-
-

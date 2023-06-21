@@ -6,5 +6,3 @@ In this step, we will learn a Naive Bayes classifier on the transformed data.
 nb = BernoulliNB()
 nb.fit(X_transformed, y)
 ```
-
-

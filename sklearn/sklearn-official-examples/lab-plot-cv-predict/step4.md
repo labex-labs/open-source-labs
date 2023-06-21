@@ -29,5 +29,3 @@ fig.suptitle("Plotting cross-validated predictions")
 plt.tight_layout()
 plt.show()
 ```
-
-

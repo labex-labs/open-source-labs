@@ -25,5 +25,3 @@ forest = RandomForestClassifier(n_estimators=750, n_jobs=n_jobs, random_state=42
 
 forest.fit(X, y)
 ```
-
-

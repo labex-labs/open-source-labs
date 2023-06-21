@@ -9,5 +9,3 @@ y_train = iris.target[train_index]
 X_test = iris.data[test_index]
 y_test = iris.target[test_index]
 ```
-
-

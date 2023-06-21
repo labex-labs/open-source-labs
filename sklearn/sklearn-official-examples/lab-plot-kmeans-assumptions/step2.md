@@ -22,5 +22,3 @@ axs[1, 1].set_title("Unevenly Sized Blobs")
 plt.suptitle("Ground truth clusters").set_y(0.95)
 plt.show()
 ```
-
-

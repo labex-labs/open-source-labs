@@ -8,5 +8,3 @@ spectral = manifold.SpectralEmbedding(
 )
 S_spectral = spectral.fit_transform(S_points)
 ```
-
-

@@ -13,5 +13,3 @@ scaler2.set_output(transform="pandas")
 X_test_df = scaler2.transform(X_test)
 print(f"Configured pandas output type: {type(X_test_df).__name__}")
 ```
-
-

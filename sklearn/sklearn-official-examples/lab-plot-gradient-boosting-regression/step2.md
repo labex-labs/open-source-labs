@@ -13,5 +13,3 @@ params = {
     "loss": "squared_error",
 }
 ```
-
-
