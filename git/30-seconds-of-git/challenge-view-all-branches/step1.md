@@ -10,8 +10,8 @@ You have been working on a Git repository named `https://github.com/labex-labs/g
 2. View a list of all local branches:
 
 You will see a list of all local branches in the repository. Use the arrow keys to navigate through the list and press <kbd>Q</kbd> to exit:
-  ```
-    five-branch
+  ```shell
+        five-branch
     four-branch
   * master
     one-branch
