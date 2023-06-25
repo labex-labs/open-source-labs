@@ -1,4 +1,6 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep ''
+git diff | grep 'arange'
+git diff | grep 'array'
+git diff | grep '<'
