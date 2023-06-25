@@ -2,7 +2,7 @@
 
 Imagine you have just committed some changes to your Git repository, but you realize that you made a typo in the commit message. You want to correct the mistake without changing the actual changes you made. How can you do this?
 
-To demonstrate how to change the last commit's message, we will use the Git repository named `https://github.com/labex-labs/git-playground`. To demonstrate how to change the last commit's message, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Follow these steps:
+To demonstrate how to change the last commit's message, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Follow these steps:
 
 1. Clone the repository to your local machine:
    ```
@@ -13,10 +13,10 @@ To demonstrate how to change the last commit's message, we will use the Git repo
    cd git-playground
    ```
 3. Correct the commit message of the last commit to read "Fix the network bug":
-```
-git commit --amend -m "Fix the network bug"
-```
-   This will open your default text editor where you can modify the commit message. Save and close the editor to complete the process.
+   ```
+   git commit --amend -m "Fix the network bug"
+   ```
+   This will open your default text editor where you can modify the commit message. Save and       close the editor to complete the process.
 4. Verify that the commit message has been changed:
    ```
    git log --oneline
