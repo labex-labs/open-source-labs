@@ -31,5 +31,3 @@ def text_stats(posts):
 
 text_stats_transformer = FunctionTransformer(text_stats)
 ```
-
-

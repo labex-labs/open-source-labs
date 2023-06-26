@@ -10,5 +10,3 @@ from sklearn.datasets import make_biclusters
 from sklearn.cluster import SpectralCoclustering
 from sklearn.metrics import consensus_score
 ```
-
-

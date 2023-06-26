@@ -25,5 +25,3 @@ for X, y in datasets:
         X, y, test_size=0.4, random_state=42
     )
 ```
-
-

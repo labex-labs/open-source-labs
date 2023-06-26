@@ -8,5 +8,3 @@ from sklearn.svm import SVC
 # Set up the SVM classifier
 rbf_svc = (SVC(kernel="rbf", gamma=0.5).fit(X, y), y, "SVC with rbf kernel")
 ```
-
-

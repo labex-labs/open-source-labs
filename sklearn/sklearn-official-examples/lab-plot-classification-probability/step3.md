@@ -21,5 +21,3 @@ classifiers = {
     "GPC": GaussianProcessClassifier(kernel),
 }
 ```
-
-

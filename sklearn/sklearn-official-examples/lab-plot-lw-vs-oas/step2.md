@@ -10,5 +10,3 @@ r = 0.1
 real_cov = toeplitz(r ** np.arange(n_features))
 coloring_matrix = cholesky(real_cov)
 ```
-
-

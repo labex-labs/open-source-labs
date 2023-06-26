@@ -43,5 +43,3 @@ plt.ylabel("inertia")
 plt.legend(plots, legends)
 plt.title("Mean inertia for various k-means init across %d runs" % n_runs)
 ```
-
-

@@ -17,5 +17,3 @@ X, y = make_classification(
     random_state=0,
 )
 ```
-
-

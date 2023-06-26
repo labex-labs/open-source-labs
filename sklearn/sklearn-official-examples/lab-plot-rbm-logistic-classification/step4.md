@@ -22,5 +22,3 @@ print(
     % (metrics.classification_report(Y_test, Y_pred))
 )
 ```
-
-

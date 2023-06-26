@@ -13,5 +13,3 @@ assert d == 3
 # Reshape the image into a 2D numpy array
 image_array = np.reshape(china, (w * h, d))
 ```
-
-

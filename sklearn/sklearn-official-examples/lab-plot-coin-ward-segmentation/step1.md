@@ -24,5 +24,3 @@ rescaled_coins = rescale(
 
 X = np.reshape(rescaled_coins, (-1, 1))
 ```
-
-

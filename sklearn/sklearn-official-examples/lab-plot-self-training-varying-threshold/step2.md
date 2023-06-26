@@ -9,5 +9,3 @@ total_samples = y.shape[0]
 ```
 
 The `breast_cancer` dataset is loaded and shuffled. We then copy the true labels to `y_true`, and remove all labels except for the first 50 samples from `y`. This will be used to simulate a semi-supervised learning scenario.
-
-

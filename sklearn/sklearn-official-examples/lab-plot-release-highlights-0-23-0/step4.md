@@ -43,5 +43,3 @@ disp.axes_[0, 0].set_xlim(-1, 1)
 plt.legend()
 plt.show()
 ```
-
-

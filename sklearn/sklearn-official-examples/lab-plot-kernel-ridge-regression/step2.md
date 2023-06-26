@@ -21,5 +21,3 @@ kr = GridSearchCV(
     param_grid={"alpha": [1e0, 0.1, 1e-2, 1e-3], "gamma": np.logspace(-2, 2, 5)},
 )
 ```
-
-

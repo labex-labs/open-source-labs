@@ -23,5 +23,3 @@ pipeline = Pipeline(
     ]
 )
 ```
-
-

@@ -15,5 +15,3 @@ training_noisy_target = target[training_sample_indices] + 0.5 * rng.randn(
     len(training_sample_indices)
 )
 ```
-
-

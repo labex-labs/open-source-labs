@@ -5,5 +5,3 @@ We need to install the `nmslib` and `pynndescent` packages. These packages can b
 ```python
 !pip install nmslib pynndescent
 ```
-
-

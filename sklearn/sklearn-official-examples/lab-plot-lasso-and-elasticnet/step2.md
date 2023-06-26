@@ -15,5 +15,3 @@ y_pred_lasso = lasso.predict(X_test)
 r2_score_lasso = r2_score(y_test, y_pred_lasso)
 print(f"Lasso r^2 on test data : {r2_score_lasso:.3f}")
 ```
-
-

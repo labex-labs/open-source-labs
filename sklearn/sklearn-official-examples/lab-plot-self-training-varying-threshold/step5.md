@@ -7,5 +7,3 @@ amount_iterations = np.empty((x_values.shape[0], n_splits))
 ```
 
 We define arrays to store the results of our experiment.
-
-

@@ -14,5 +14,3 @@ coloring_matrix = np.random.normal(size=(n_features, n_features))
 X_train = np.dot(base_X_train, coloring_matrix)
 X_test = np.dot(base_X_test, coloring_matrix)
 ```
-
-

@@ -42,5 +42,3 @@ percentiles = n_feature_influence(
 )
 plot_n_features_influence(percentiles, percentile)
 ```
-
-

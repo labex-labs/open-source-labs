@@ -22,5 +22,3 @@ param_grid = {"gamma": gammas, "C": Cs}
 
 clf = SVC(random_state=rng)
 ```
-
-

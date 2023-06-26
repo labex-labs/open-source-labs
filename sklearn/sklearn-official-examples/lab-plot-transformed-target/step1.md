@@ -18,5 +18,3 @@ X, y = make_regression(n_samples=10_000, noise=100, random_state=0)
 y = np.expm1((y + abs(y.min())) / 200)
 y_trans = np.log1p(y)
 ```
-
-

@@ -42,5 +42,3 @@ plt.legend()
 plt.title(BV_bunch.name)
 plt.axis("equal")
 ```
-
-

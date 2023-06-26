@@ -6,5 +6,3 @@ We will get the class probabilities for the first sample in the dataset and stor
 class1_1 = [pr[0, 0] for pr in probas]
 class2_1 = [pr[0, 1] for pr in probas]
 ```
-
-

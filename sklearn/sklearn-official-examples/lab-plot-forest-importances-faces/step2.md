@@ -18,5 +18,3 @@ plt.title("Pixel importances using impurity values")
 plt.colorbar()
 plt.show()
 ```
-
-

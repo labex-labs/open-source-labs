@@ -18,5 +18,3 @@ plt.xlabel("Data points")
 plt.title("Data with Outliers")
 plt.show()
 ```
-
-

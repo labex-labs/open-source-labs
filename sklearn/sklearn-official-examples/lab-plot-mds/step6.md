@@ -13,5 +13,3 @@ X_true = clf.fit_transform(X_true)
 pos = clf.fit_transform(pos)
 npos = clf.fit_transform(npos)
 ```
-
-

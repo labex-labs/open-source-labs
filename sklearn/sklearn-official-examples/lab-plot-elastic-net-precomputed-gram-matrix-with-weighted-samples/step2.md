@@ -8,5 +8,3 @@ X_centered = X - np.average(X, axis=0, weights=normalized_weights)
 X_scaled = X_centered * np.sqrt(normalized_weights)[:, np.newaxis]
 gram = np.dot(X_scaled.T, X_scaled)
 ```
-
-

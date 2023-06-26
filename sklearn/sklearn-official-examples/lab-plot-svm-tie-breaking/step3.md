@@ -8,5 +8,3 @@ for break_ties, title, ax in zip((False, True), titles, sub.flatten()):
         kernel="linear", C=1, break_ties=break_ties, decision_function_shape="ovr"
     ).fit(X, y)
 ```
-
-

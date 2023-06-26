@@ -12,5 +12,3 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn import datasets
 from sklearn.exceptions import ConvergenceWarning
 ```
-
-

@@ -36,5 +36,3 @@ for node_id in node_index:
         )
     )
 ```
-
-

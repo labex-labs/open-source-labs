@@ -13,5 +13,3 @@ def uniform_labelings_scores(score_func, n_samples, n_clusters_range, n_runs=5):
             scores[i, j] = score_func(labels_a, labels_b)
     return scores
 ```
-
-

@@ -47,5 +47,3 @@ def plot_gpr_samples(gpr_model, n_samples, ax):
     ax.set_ylabel("y")
     ax.set_ylim([-3, 3])
 ```
-
-

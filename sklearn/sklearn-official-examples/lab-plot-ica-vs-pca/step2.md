@@ -6,5 +6,3 @@ In this step, we use PCA algorithm to find orthogonal directions in the raw feat
 pca = PCA()
 S_pca_ = pca.fit(X).transform(X)
 ```
-
-

@@ -14,5 +14,3 @@ true_coef[true_coef < 0] = 0
 y = np.dot(X, true_coef)
 y += 5 * np.random.normal(size=(n_samples,))
 ```
-
-

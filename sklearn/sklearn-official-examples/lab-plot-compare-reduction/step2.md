@@ -28,5 +28,3 @@ param_grid = [
 ]
 reducer_labels = ["PCA", "NMF", "KBest(mutual_info_classif)"]
 ```
-
-

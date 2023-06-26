@@ -1,4 +1,4 @@
-#  ROC AUC now supports multiclass classification
+# ROC AUC now supports multiclass classification
 
 The roc_auc_score function can also be used in multi-class classification.
 

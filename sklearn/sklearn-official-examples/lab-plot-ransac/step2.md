@@ -7,5 +7,3 @@ We will fit a linear model to the data using scikit-learn's LinearRegression cla
 lr = linear_model.LinearRegression()
 lr.fit(X, y)
 ```
-
-

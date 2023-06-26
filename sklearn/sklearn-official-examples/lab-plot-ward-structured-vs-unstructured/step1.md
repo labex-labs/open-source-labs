@@ -11,5 +11,3 @@ X, _ = make_swiss_roll(n_samples, noise=noise)
 # Make it thinner
 X[:, 1] *= 0.5
 ```
-
-

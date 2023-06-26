@@ -35,5 +35,3 @@ plt.title(
 )
 plt.show()
 ```
-
-

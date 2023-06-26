@@ -17,5 +17,3 @@ brr_poly = make_pipeline(
 y_ard, y_ard_std = ard_poly.predict(X_plot, return_std=True)
 y_brr, y_brr_std = brr_poly.predict(X_plot, return_std=True)
 ```
-
-

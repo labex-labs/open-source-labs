@@ -45,5 +45,3 @@ for kernel in ("linear", "rbf", "poly"):
 
     print(f"Accuracy with {kernel} kernel: {clf.score(X_test, y_test)}")
 ```
-
-

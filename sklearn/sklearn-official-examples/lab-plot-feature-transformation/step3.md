@@ -12,5 +12,3 @@ random_tree_embedding = RandomTreesEmbedding(
 rt_model = make_pipeline(random_tree_embedding, LogisticRegression(max_iter=1000))
 rt_model.fit(X_train_linear, y_train_linear)
 ```
-
-

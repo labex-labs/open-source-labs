@@ -8,5 +8,3 @@ digits = load_digits()
 X = digits.images.reshape((len(digits.images), -1))
 y = digits.target
 ```
-
-

@@ -10,5 +10,3 @@ clf = GridSearchCV(estimator=svm, param_grid=p_grid, cv=4)
 clf.fit(X_iris, y_iris)
 non_nested_score = clf.best_score_
 ```
-
-

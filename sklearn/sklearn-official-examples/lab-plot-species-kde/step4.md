@@ -32,5 +32,3 @@ def construct_grids(batch):
 # Call the function and store the results in xgrid and ygrid
 xgrid, ygrid = construct_grids(data)
 ```
-
-

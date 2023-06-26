@@ -17,5 +17,3 @@ with warnings.catch_warnings():
     warnings.filterwarnings("ignore", category=ConvergenceWarning, module="sklearn")
     mlp.fit(X_train, y_train)
 ```
-
-

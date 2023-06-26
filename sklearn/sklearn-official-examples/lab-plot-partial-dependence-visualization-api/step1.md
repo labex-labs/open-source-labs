@@ -15,5 +15,3 @@ mlp = make_pipeline(
 tree.fit(X, y)
 mlp.fit(X, y)
 ```
-
-

@@ -35,5 +35,3 @@ ax2.set_xlabel("scaled proline")
 ax2.set_ylabel("scaled hue")
 _ = ax2.set_title("KNN with scaling")
 ```
-
-

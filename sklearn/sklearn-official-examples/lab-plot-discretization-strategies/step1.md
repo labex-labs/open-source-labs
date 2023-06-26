@@ -8,5 +8,3 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import KBinsDiscretizer
 from sklearn.datasets import make_blobs
 ```
-
-

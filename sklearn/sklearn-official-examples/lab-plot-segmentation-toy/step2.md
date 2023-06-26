@@ -7,5 +7,3 @@ from sklearn.feature_extraction import image
 
 graph = image.img_to_graph(img, mask=mask)
 ```
-
-

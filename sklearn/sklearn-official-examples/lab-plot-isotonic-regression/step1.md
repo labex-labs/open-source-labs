@@ -11,5 +11,3 @@ from sklearn.linear_model import LinearRegression
 from sklearn.isotonic import IsotonicRegression
 from sklearn.utils import check_random_state
 ```
-
-

@@ -13,5 +13,3 @@ plot_results(
     r"for $\gamma_0=0.01$.",
 )
 ```
-
-

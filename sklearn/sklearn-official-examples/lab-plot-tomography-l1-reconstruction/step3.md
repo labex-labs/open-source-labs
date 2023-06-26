@@ -9,5 +9,3 @@ data = generate_synthetic_data()
 proj = proj_operator @ data.ravel()[:, np.newaxis]
 proj += 0.15 * np.random.randn(*proj.shape)
 ```
-
-

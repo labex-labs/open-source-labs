@@ -25,5 +25,3 @@ duration = time() - t0
 print(f"done in {duration:.3f} s")
 print(f"Found {len(vectorizer.get_feature_names_out())} unique terms")
 ```
-
-

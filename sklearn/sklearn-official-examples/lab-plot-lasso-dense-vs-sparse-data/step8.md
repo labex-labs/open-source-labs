@@ -11,5 +11,3 @@ t0 = time()
 dense_lasso.fit(Xs, y)
 print(f"Dense Lasso done in  {(time() - t0):.3f}s")
 ```
-
-

@@ -57,5 +57,3 @@ def plot_ellipse(splot, mean, cov, color):
     splot.set_xticks(())
     splot.set_yticks(())
 ```
-
-

@@ -12,5 +12,3 @@ plt.barh(pos, feature_importance[sorted_idx], align="center")
 plt.yticks(pos, np.array(diabetes.feature_names)[sorted_idx])
 plt.title("Feature Importance (MDI)")
 ```
-
-

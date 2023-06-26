@@ -61,5 +61,3 @@ params.update({"learning_rate": 0.2, "max_features": 2})
 clf = ensemble.GradientBoostingClassifier(**params)
 clf.fit(X_train, y_train)
 ```
-
-

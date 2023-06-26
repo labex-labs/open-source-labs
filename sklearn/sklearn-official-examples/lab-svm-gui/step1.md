@@ -8,5 +8,3 @@ Before getting started, make sure you have the following packages installed:
 - scikit-learn
 
 You can install these packages using pip.
-
-

@@ -19,5 +19,3 @@ knots = splt.bsplines_[0].t
 axes[1].vlines(knots[3:-3], ymin=0, ymax=0.8, linestyles="dashed")
 plt.show()
 ```
-
-

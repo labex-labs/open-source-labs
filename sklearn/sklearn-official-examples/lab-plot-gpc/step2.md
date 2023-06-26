@@ -8,5 +8,3 @@ rng = np.random.RandomState(0)
 X = rng.uniform(0, 5, 100)[:, np.newaxis]
 y = np.array(X[:, 0] > 2.5, dtype=int)
 ```
-
-

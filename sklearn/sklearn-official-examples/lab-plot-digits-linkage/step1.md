@@ -9,5 +9,3 @@ from time import time
 from sklearn import manifold, datasets
 from sklearn.cluster import AgglomerativeClustering
 ```
-
-

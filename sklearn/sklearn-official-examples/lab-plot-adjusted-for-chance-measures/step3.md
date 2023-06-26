@@ -41,5 +41,3 @@ plt.ylim(bottom=-0.05, top=1.05)
 plt.legend(plots, names, bbox_to_anchor=(0.5, 0.5))
 plt.show()
 ```
-
-

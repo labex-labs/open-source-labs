@@ -8,5 +8,3 @@ X, y = make_regression(
     n_samples=20, n_features=1, random_state=0, noise=4.0, bias=100.0
 )
 ```
-
-

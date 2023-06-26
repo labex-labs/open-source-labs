@@ -15,5 +15,3 @@ from sklearn.preprocessing import MinMaxScaler
 
 X, y = load_digits(return_X_y=True)
 ```
-
-

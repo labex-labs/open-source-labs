@@ -10,5 +10,3 @@ from sklearn.linear_model import Lasso
 from sklearn.linear_model import Ridge
 import matplotlib.pyplot as plt
 ```
-
-

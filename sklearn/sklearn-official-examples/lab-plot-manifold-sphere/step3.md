@@ -25,5 +25,3 @@ for i, method in enumerate(methods):
     ax.yaxis.set_major_formatter(NullFormatter())
     plt.axis("tight")
 ```
-
-

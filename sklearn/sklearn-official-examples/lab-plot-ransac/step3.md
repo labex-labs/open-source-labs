@@ -9,5 +9,3 @@ ransac.fit(X, y)
 inlier_mask = ransac.inlier_mask_
 outlier_mask = np.logical_not(inlier_mask)
 ```
-
-

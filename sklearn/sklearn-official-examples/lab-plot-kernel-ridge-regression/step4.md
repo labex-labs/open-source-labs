@@ -30,5 +30,3 @@ plt.ylabel("target")
 plt.title("SVR versus Kernel Ridge")
 _ = plt.legend()
 ```
-
-

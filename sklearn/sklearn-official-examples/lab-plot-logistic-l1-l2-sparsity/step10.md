@@ -1,4 +1,4 @@
-#  Display Visualization
+# Display Visualization
 
 We will display the subplots.
 

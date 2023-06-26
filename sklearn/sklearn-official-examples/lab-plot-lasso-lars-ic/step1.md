@@ -7,5 +7,3 @@ from sklearn.datasets import load_diabetes
 
 X, y = load_diabetes(return_X_y=True, as_frame=True)
 ```
-
-

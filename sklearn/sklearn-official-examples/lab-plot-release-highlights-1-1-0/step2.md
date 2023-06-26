@@ -36,5 +36,3 @@ log_reg_input_features = log_reg[:-1].get_feature_names_out()
 pd.Series(log_reg[-1].coef_.ravel(), index=log_reg_input_features).plot.bar()
 plt.tight_layout()
 ```
-
-

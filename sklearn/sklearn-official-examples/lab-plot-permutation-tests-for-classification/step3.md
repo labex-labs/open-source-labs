@@ -7,5 +7,3 @@ score_rand, perm_scores_rand, pvalue_rand = permutation_test_score(
     clf, X_rand, y, scoring="accuracy", cv=cv, n_permutations=1000
 )
 ```
-
-

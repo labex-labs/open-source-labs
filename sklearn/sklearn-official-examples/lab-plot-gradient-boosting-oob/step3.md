@@ -11,5 +11,3 @@ for i in range(1, params['n_estimators'] + 1):
     scores = -1 * cross_val_score(clf, X, y, cv=5, scoring='neg_log_loss')
     cv_scores.append(scores.mean())
 ```
-
-

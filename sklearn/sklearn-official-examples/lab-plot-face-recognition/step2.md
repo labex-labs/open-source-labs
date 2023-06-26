@@ -11,5 +11,3 @@ n_classes = target_names.shape[0]
 ```
 
 We download the dataset using the `fetch_lfw_people()` function from scikit-learn. We then explore the dataset by getting the number of samples, height, and width of the images. We also get the input data `X`, target `y`, target names `target_names`, and number of classes `n_classes`.
-
-

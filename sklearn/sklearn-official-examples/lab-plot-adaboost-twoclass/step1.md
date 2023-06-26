@@ -11,5 +11,3 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.datasets import make_gaussian_quantiles
 from sklearn.inspection import DecisionBoundaryDisplay
 ```
-
-

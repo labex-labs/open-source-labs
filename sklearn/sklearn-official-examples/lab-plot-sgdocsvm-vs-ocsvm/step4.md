@@ -20,5 +20,3 @@ n_error_outliers_sgd = y_pred_outliers_sgd[y_pred_outliers_sgd == 1].size
 Z_sgd = pipe_sgd.decision_function(np.c_[xx.ravel(), yy.ravel()])
 Z_sgd = Z_sgd.reshape(xx.shape)
 ```
-
-

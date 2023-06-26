@@ -12,5 +12,3 @@ for strategy in ("mean", "median"):
         estimator, X_missing, y_missing, scoring="neg_mean_squared_error", cv=N_SPLITS
     )
 ```
-
-

@@ -21,5 +21,3 @@ plt.xlabel("data")
 plt.ylabel("target")
 _ = plt.title("Limitation of a linear model such as ridge")
 ```
-
-

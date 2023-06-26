@@ -18,5 +18,3 @@ data_list = [
 names = ["Iris Data", "Classification Data", "Hastie Data"]
 n_estimators = 200
 ```
-
-

@@ -20,5 +20,3 @@ plt.legend((l1[-1], l2[-1]), ("Lasso", "Positive Lasso"), loc="lower left")
 plt.axis("tight")
 plt.show()
 ```
-
-

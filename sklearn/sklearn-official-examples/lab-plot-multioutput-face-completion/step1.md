@@ -23,5 +23,3 @@ y_train = train[:, n_pixels // 2 :]
 X_test = test[:, : (n_pixels + 1) // 2]
 y_test = test[:, n_pixels // 2 :]
 ```
-
-

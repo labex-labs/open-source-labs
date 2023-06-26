@@ -24,5 +24,3 @@ for i, n_samples in enumerate(n_samples_range):
         oa_mse[i, j] = oa.error_norm(real_cov, scaling=False)
         oa_shrinkage[i, j] = oa.shrinkage_
 ```
-
-

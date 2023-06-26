@@ -13,5 +13,3 @@ cmap = colors.LinearSegmentedColormap(
 )
 plt.cm.register_cmap(cmap=cmap)
 ```
-
-

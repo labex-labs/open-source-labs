@@ -15,5 +15,3 @@ co2_data = co2_data.resample("M").mean().dropna(axis="index", how="any")
 X = (co2_data.index.year + co2_data.index.month / 12).to_numpy().reshape(-1, 1)
 y = co2_data["co2"].to_numpy()
 ```
-
-

@@ -19,5 +19,3 @@ st50 = (
     "Self-training 50% data",
 )
 ```
-
-

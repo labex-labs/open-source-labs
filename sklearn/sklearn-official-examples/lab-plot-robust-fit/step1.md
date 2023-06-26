@@ -39,5 +39,3 @@ y_errors_large[::3] = 10
 X_errors_large = X.copy()
 X_errors_large[::3] = 10
 ```
-
-

@@ -1,4 +1,4 @@
-#  Use Grid Search to Tune Hyperparameters
+# Use Grid Search to Tune Hyperparameters
 
 In this step, we will use grid search to tune the hyperparameters of our pipeline.
 

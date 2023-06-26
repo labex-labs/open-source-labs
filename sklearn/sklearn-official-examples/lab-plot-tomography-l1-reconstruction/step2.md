@@ -44,5 +44,3 @@ def generate_synthetic_data():
     res = np.logical_and(mask > mask.mean(), mask_outer)
     return np.logical_xor(res, ndimage.binary_erosion(res))
 ```
-
-

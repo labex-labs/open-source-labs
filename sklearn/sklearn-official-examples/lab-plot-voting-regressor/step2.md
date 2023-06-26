@@ -6,5 +6,3 @@ Next, we will load the diabetes dataset into our program using the `load_diabete
 # Load the diabetes dataset
 X, y = load_diabetes(return_X_y=True)
 ```
-
-

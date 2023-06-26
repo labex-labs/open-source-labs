@@ -12,5 +12,3 @@ from sklearn.utils import check_random_state
 
 import mpl_toolkits.mplot3d
 ```
-
-

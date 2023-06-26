@@ -2,7 +2,7 @@
 
 We will apply NMF with two different objective functions: the Frobenius norm and the generalized Kullback-Leibler divergence. The latter is equivalent to Probabilistic Latent Semantic Indexing.
 
-````python
+```python
 from sklearn.decomposition import NMF
 
 n_components = 10
@@ -137,3 +137,4 @@ plot_top_words(
 )
 
 
+```

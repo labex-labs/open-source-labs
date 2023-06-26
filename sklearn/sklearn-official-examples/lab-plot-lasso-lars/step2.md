@@ -7,5 +7,3 @@ from sklearn import linear_model
 
 _, _, coefs = linear_model.lars_path(X, y, method="lasso", verbose=True)
 ```
-
-

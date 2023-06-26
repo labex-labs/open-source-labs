@@ -76,5 +76,3 @@ fig.update_layout(
     title=dict(x=0.5, text="Speed-score trade-off of tree-based ensembles"),
 )
 ```
-
-

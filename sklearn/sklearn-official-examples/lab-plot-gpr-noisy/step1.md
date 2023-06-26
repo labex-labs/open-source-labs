@@ -15,5 +15,3 @@ def target_generator(X, add_noise=False):
 X = np.linspace(0, 5, num=30).reshape(-1, 1)
 y = target_generator(X, add_noise=False)
 ```
-
-

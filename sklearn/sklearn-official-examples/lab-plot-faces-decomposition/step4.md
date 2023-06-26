@@ -12,5 +12,3 @@ plot_gallery(
     "Independent components - FastICA", ica_estimator.components_[:n_components]
 )
 ```
-
-

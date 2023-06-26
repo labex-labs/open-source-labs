@@ -26,5 +26,3 @@ print(
     f"{np.sum((X - X_reconstructed) ** 2) / np.sum(X**2):.5f}",
 )
 ```
-
-

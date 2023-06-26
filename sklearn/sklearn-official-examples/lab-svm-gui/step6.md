@@ -85,5 +85,3 @@ class ControllBar:
             side=Tk.LEFT
         )
 ```
-
-

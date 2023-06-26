@@ -57,5 +57,3 @@ def bench_k_means(kmeans, name, data, labels):
     )
     print(formatter_result.format(*results))
 ```
-
-

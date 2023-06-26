@@ -25,5 +25,3 @@ bench_k_means(kmeans=kmeans, name="PCA-based", data=data, labels=labels)
 
 print(82 * "_")
 ```
-
-

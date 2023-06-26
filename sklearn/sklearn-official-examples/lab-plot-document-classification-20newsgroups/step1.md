@@ -59,5 +59,3 @@ def load_dataset(verbose=False, remove=()):
 
 X_train, X_test, y_train, y_test, feature_names, target_names = load_dataset(verbose=True)
 ```
-
-

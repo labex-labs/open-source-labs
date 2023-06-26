@@ -28,5 +28,3 @@ for quantile, hist in hist_quantiles.items():
     ax.plot(X_1d, hist.predict(X), label=quantile)
 _ = ax.legend(loc="lower left")
 ```
-
-

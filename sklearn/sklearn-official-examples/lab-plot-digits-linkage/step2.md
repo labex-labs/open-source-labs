@@ -8,5 +8,3 @@ X, y = digits.data, digits.target
 n_samples, n_features = X.shape
 np.random.seed(0)
 ```
-
-

@@ -17,5 +17,3 @@ for i, color in zip(clf.classes_, colors):
 plt.title("Decision surface of multi-class SGD")
 plt.axis("tight")
 ```
-
-

@@ -27,5 +27,3 @@ mask = img.astype(bool)
 img = img.astype(float)
 img += 1 + 0.2 * np.random.randn(*img.shape)
 ```
-
-

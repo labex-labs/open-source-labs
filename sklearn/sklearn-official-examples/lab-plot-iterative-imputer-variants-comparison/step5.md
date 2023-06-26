@@ -31,5 +31,3 @@ for impute_estimator, tol in zip(estimators, tolerances):
         estimator, X_missing, y_missing, scoring="neg_mean_squared_error", cv=N_SPLITS
     )
 ```
-
-

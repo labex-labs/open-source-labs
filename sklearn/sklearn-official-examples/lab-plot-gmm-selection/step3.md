@@ -27,5 +27,3 @@ grid_search = GridSearchCV(
 )
 grid_search.fit(X)
 ```
-
-

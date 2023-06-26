@@ -18,5 +18,3 @@ n_samples = 4000
 n_components = 4
 x_squared_norms = row_norms(X, squared=True)
 ```
-
-

@@ -17,5 +17,3 @@ print("Linear Regression on original targets:")
 for key, val in score.items():
     print(f"{key}: {val}")
 ```
-
-

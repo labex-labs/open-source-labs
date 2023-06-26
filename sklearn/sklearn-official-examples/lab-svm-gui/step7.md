@@ -12,5 +12,3 @@ def main(argv):
     model.add_observer(view)
     Tk.mainloop()
 ```
-
-

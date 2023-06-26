@@ -16,5 +16,3 @@ ax.xaxis.set_major_formatter(NullFormatter())
 ax.yaxis.set_major_formatter(NullFormatter())
 plt.axis("tight")
 ```
-
-

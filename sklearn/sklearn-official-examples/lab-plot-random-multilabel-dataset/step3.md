@@ -17,5 +17,3 @@ ax2.set_ylim(bottom=0, auto=True)
 
 plt.show()
 ```
-
-

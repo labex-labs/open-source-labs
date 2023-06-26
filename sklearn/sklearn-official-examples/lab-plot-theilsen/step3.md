@@ -25,5 +25,3 @@ for name, estimator in estimators:
         label="%s (fit time: %.2fs)" % (name, elapsed_time),
     )
 ```
-
-

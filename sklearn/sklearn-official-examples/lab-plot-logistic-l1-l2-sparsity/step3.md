@@ -5,5 +5,3 @@ We will define the regularization parameter `C` and the L1 ratio `l1_ratio` for 
 ```python
 l1_ratio = 0.5
 ```
-
-

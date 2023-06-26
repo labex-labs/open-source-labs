@@ -18,5 +18,3 @@ df = pd.DataFrame(
     }
 )
 ```
-
-

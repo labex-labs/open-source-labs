@@ -9,5 +9,3 @@ ms.fit(X)
 labels = ms.labels_
 cluster_centers = ms.cluster_centers_
 ```
-
-

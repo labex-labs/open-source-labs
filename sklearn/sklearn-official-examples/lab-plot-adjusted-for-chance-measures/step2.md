@@ -20,5 +20,3 @@ def fixed_classes_uniform_labelings_scores(
             scores[i, j] = score_func(labels_a, labels_b)
     return scores
 ```
-
-

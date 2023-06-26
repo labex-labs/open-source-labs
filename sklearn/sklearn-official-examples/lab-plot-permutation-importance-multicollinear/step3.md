@@ -27,5 +27,3 @@ ax2.set_yticklabels(dendro["ivl"])
 fig.tight_layout()
 plt.show()
 ```
-
-

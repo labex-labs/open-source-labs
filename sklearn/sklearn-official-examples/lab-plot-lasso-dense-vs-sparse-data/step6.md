@@ -8,5 +8,3 @@ Xs[Xs < 2.5] = 0.0
 Xs_sp = sparse.coo_matrix(Xs)
 Xs_sp = Xs_sp.tocsc()
 ```
-
-

@@ -14,5 +14,3 @@ y = iris.target
 X = X[y != 0, :2]
 y = y[y != 0]
 ```
-
-

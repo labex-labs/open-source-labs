@@ -19,5 +19,3 @@ logistic.C = 6000
 # Training RBM-Logistic Pipeline
 rbm_features_classifier.fit(X_train, Y_train)
 ```
-
-

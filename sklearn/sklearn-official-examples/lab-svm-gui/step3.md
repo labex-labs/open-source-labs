@@ -27,5 +27,3 @@ class Model:
         y = data[:, 2]
         dump_svmlight_file(X, y, file)
 ```
-
-

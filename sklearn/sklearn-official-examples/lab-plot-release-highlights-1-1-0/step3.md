@@ -15,5 +15,3 @@ enc.infrequent_categories_
 encoded = enc.transform(np.array([["dog"], ["snake"], ["cat"], ["rabbit"]]))
 pd.DataFrame(encoded, columns=enc.get_feature_names_out())
 ```
-
-

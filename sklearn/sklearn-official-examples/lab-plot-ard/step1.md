@@ -14,5 +14,3 @@ X, y, true_weights = make_regression(
     random_state=42,
 )
 ```
-
-

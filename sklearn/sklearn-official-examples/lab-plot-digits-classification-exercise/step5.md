@@ -11,5 +11,3 @@ logistic_score = logistic.score(X_test, y_test)
 
 print("Logistic Regression score: %f" % logistic_score)
 ```
-
-
