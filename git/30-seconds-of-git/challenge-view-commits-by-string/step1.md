@@ -8,10 +8,7 @@ As a developer, you may need to find all the commits that modified a specific st
 
 Suppose you are working on a project hosted on GitHub called `git-playground`. You want to find all the commits that modified the string "Git Playground" in the `README.md` file. Here's how you can do it:
 
-1. Navigate to the repository directory:
-```shell
-cd git-playground
-```
+1. Navigate to the repository directory.
 2. Find all the commits that modified the string "Git Playground" in the `README.md` file and use the arrow keys to navigate through the list of commits. Press <kbd>Q</kbd> to exit the log.
 
 Git will output a list of all the commits that modified the string "Git Playground" in the `README.md` file:
