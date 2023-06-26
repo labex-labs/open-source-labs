@@ -2,7 +2,7 @@
 
 Your task is to retrieve all commits made by a specific author in the `git-playground` repository. This repository contains a collection of sample projects that you can use to practice your Git skills.
 
-To complete this challenge, you will need to use the `git log` command with the `--author` option. This will allow you to filter the commit history to only show commits made by the specified author.
+To complete this lab, you will need to use the `git log` command with the `--author` option. This will allow you to filter the commit history to only show commits made by the specified author.
 
 To retrieve all commits made by the author "huhuhang" in the `git-playground` repository, you can use the following command:
 
