@@ -9,7 +9,9 @@ def f(x):
 
 # Define another function that uses the first function
 def integrate_f(a, b, N):
-    s = 0
-    dx = (b - a) / N
-    for
+       s = 0
+       dx = (b - a) / N
+       for i in range(N):
+           s += f(a + i * dx)
+       return s * dx
 ```

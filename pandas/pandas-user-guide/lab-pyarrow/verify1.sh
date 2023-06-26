@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-cd ~/project
-git diff | grep ''
+cd /tmp                                                                                                           
+python3 pyarrow_test_1.py
