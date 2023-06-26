@@ -35,7 +35,8 @@ touch hello.txt
 ls
 ```
 
-Let's exit the container making sure it remains running: use the Control-P / Control-Q combination for this.
+Open another terminal or use the Control-P / Control-Q combination for this.
+
 Use the following command to make sure it's still running.
 
 ```bash
