@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep -oE 'result\s*=\s*df.\s*\+\s*df.'
+git diff | grep -E "\w+\s*=\s*\w+\s*\+\s*\w+"
