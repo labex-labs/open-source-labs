@@ -27,7 +27,7 @@
           {
             "name": "See the contents of the /data folder",
             "file": "verify1-3.sh",
-            "hint": "Plaese input 'ls /var/lib/docker/overlay2/[YOUR_ID]/diff/data' command",
+            "hint": "Plaese input 'sudo ls /var/lib/docker/overlay2/[YOUR_ID]/diff/data' command",
             "timeout": 0,
             "showstderr": true
           },
@@ -81,13 +81,6 @@
         "text": "step3.md",
         "verify": [
           {
-            "name": "Ping Google DNS and log the output in a file within the `/data` folder",
-            "file": "verify3-1.sh",
-            "hint": "Please input 'ping 8.8.8.8 > /data/ping.txt' command",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
             "name": "Run a container called c3 with alpine image",
             "file": "verify3-2.sh",
             "hint": "Please input docker run --name c3 -d -v /data alpine sh -c 'ping 8.8.8.8 > /data/ping.txt' command",
@@ -104,7 +97,7 @@
           {
             "name": "Check the content of the `ping.txt` within the `/data` folder",
             "file": "verify3-4.sh",
-            "hint": "Please input 'tail -f /var/lib/docker/volumes/OUR_ID/_data/ping.txt' command",
+            "hint": "Please input 'sudo tail -f /var/lib/docker/volumes/OUR_ID/_data/ping.txt' command",
             "timeout": 0,
             "showstderr": true
           }
@@ -139,14 +132,7 @@
           {
             "name": "See the content of the html volume",
             "file": "verify4-4.sh",
-            "hint": "Please input 'ls /var/lib/docker/volumes/html/_data' command",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Modify the `index.html` file",
-            "file": "verify4-5.sh",
-            "hint": "Please modify the index.html file",
+            "hint": "Please input 'sudo ls /var/lib/docker/volumes/html/_data' command",
             "timeout": 0,
             "showstderr": true
           }

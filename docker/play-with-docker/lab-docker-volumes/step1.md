@@ -32,7 +32,7 @@ docker inspect c1
 Or we can directly use the Go template notation and get the content of the `GraphDriver` keys right away.
 
 ```bash
-docker inspect -f "{{ json .GraphDriver }}" c1 | jq
+docker inspect -f "{{ json .GraphDriver }}" c1
 ```
 
 You should then get an output like the following (the ID will not be the same though)
@@ -54,7 +54,7 @@ From our host, if we inspect the folder which path is specified in `UpperDir`, w
 Try the below command, to see the contents of the `/data` folder:
 
 ```
-ls /var/lib/docker/overlay2/[YOUR_ID]/diff/data
+sudo ls /var/lib/docker/overlay2/[YOUR_ID]/diff/data
 ```
 
 What happen if we remove our `c1` container now ? Let's try.

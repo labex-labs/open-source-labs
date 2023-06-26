@@ -54,7 +54,7 @@ docker inspect c2
 Or we can directly use the Go template notation and get the content of the `Mounts` keys right away.
 
 ```bash
-docker inspect -f "{{ json .Mounts }}" c2 | jq
+docker inspect -f "{{ json .Mounts }}" c2
 ```
 
 You should then get an output like the following (the ID will not be the same though)

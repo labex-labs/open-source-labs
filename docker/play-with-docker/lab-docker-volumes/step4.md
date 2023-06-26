@@ -64,21 +64,9 @@ docker run --name www -d -p 8080:80 -v html:/usr/share/nginx/html nginx
 From the host, let's have a look at the content of the volume.
 
 ```bash
-ls /var/lib/docker/volumes/html/_data
+sudo ls /var/lib/docker/volumes/html/_data
 ```
 
 The content of the `/usr/share/nginx/html` folder of the `www` container has been copied into the `/var/lib/docker/volumes/html/\_data` folder on the host.
 
 Let's have a look at the nginx's [welcome page](/){:data-term=".term1"}{:data-port="8080"}
-
-From our host, we can now modify the `index.html` file and verify the changes are taken into account within the container.
-
-```bash
-cat << END > /var/lib/docker/volumes/html/_data/index.html
-SOMEONE HERE ?
-END
-```
-
-Let's have a look at the nginx's [welcome page](/){:data-term=".term1"}{:data-port="8080"}. We can see the changes we have done in the `index.html`.
-
-> Note: please reload the page if you cannot see the changes.
