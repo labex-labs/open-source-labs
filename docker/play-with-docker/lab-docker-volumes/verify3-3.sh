@@ -1,1 +1,3 @@
-cat ~/.zsh_history | grep docker | grep inspect | grep c3
+#!/bin/zsh
+
+cat ~/.zsh_history | grep docker | grep inspect | grep Mounts | grep c3
