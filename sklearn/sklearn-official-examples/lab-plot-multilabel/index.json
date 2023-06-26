@@ -4,6 +4,7 @@
   "description": "This lab demonstrates a multi-label document classification problem using scikit-learn. The dataset is generated randomly based on the following process:\n\n- Pick the number of labels: n ~ Poisson(n_labels)\n- N times, choose a class c: c ~ Multinomial(theta)\n- Pick the document length: k ~ Poisson(length)\n- K times, choose a word: w ~ Multinomial(theta_c)\n\nIn this process, rejection sampling is used to ensure that n is more than 2, and that the document length is never zero. Likewise, classes that have already been chosen are rejected. The documents that are assigned to both classes are plotted surrounded by two colored circles.",
   "difficulty": "Beginner",
   "time": 20,
+  "fee_type": "free",
   "details": {
     "steps": [
       {
@@ -83,11 +84,10 @@
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
+  "contributors": ["huhuhang"],
   "license": {
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  },
-  "contributors": ["huhuhang"],
-  "fee_type": "free"
+  }
 }
