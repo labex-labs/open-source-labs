@@ -1,9 +1,5 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep 'read_csv'
+git diff | grep 'air_quality_stations'
 git diff | grep 'merge'
-git diff | grep 'how'
-git diff | grep 'left'
-git diff | grep 'on'
-git diff | grep 'location'
