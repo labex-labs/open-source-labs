@@ -66,5 +66,3 @@ def plot_feature_effects():
 
 _ = plot_feature_effects().set_title("Average feature effect on the original data")
 ```
-
-

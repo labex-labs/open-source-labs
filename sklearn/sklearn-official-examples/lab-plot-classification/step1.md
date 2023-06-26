@@ -9,5 +9,3 @@ from matplotlib.colors import ListedColormap
 from sklearn import neighbors, datasets
 from sklearn.inspection import DecisionBoundaryDisplay
 ```
-
-

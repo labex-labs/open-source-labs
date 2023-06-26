@@ -8,5 +8,3 @@ S_ica_ = ica.fit(X).transform(X)  # Estimate the sources
 
 S_ica_ /= S_ica_.std(axis=0)
 ```
-
-

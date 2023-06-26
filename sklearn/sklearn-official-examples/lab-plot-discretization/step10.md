@@ -1,4 +1,4 @@
-#  Visualize the Results
+# Visualize the Results
 
 In this step, we will visualize the results of the linear regression and decision tree models before and after discretization.
 

@@ -16,5 +16,3 @@ datasets = [
     14.0 * (np.random.RandomState(42).rand(n_samples, 2) - 0.5),
 ]
 ```
-
-

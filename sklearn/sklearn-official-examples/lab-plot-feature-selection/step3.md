@@ -14,5 +14,3 @@ plt.xlabel("Feature number")
 plt.ylabel(r"Univariate score ($-Log(p_{value})$)")
 plt.show()
 ```
-
-

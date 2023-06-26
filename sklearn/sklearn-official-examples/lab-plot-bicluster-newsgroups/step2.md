@@ -12,5 +12,3 @@ def number_normalizer(tokens):
     """
     return ("#NUMBER" if token[0].isdigit() else token for token in tokens)
 ```
-
-

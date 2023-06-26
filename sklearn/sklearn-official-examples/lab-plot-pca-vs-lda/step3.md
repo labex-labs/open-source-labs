@@ -16,5 +16,3 @@ plt.legend(loc="best", shadow=False, scatterpoints=1)
 plt.title("LDA of Iris Dataset")
 plt.show()
 ```
-
-

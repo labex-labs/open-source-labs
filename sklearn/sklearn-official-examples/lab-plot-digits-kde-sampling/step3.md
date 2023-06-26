@@ -7,5 +7,3 @@ We use the best estimator to sample 44 new points from the data. We then transfo
 new_data = kde.sample(44, random_state=0)
 new_data = pca.inverse_transform(new_data)
 ```
-
-

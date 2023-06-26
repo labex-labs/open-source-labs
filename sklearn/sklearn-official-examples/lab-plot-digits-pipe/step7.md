@@ -9,5 +9,3 @@ best_clfs = results.groupby(components_col).apply(
     lambda g: g.nlargest(1, "mean_test_score")
 )
 ```
-
-

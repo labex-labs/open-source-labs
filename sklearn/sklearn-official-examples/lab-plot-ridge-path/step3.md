@@ -12,5 +12,3 @@ for a in alphas:
     ridge.fit(X, y)
     coefs.append(ridge.coef_)
 ```
-
-

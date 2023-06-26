@@ -6,5 +6,3 @@ In this step, we will perform an inverse transform on the reduced dataset to res
 X_restored = agglo.inverse_transform(X_reduced)
 images_restored = np.reshape(X_restored, images.shape)
 ```
-
-

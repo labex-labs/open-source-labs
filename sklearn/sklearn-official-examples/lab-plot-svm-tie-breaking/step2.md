@@ -5,5 +5,3 @@ In this step, we will create a sample dataset using the `make_blobs` function fr
 ```python
 X, y = make_blobs(random_state=27)
 ```
-
-

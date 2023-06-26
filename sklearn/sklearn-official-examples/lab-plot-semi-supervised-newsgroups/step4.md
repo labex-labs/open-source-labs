@@ -14,5 +14,3 @@ st_pipeline = Pipeline(
     ]
 )
 ```
-
-

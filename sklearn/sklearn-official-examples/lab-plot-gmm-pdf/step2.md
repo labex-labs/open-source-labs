@@ -18,5 +18,3 @@ stretched_gaussian = np.dot(np.random.randn(n_samples, 2), C)
 # concatenate the two datasets into the final training set
 X_train = np.vstack([shifted_gaussian, stretched_gaussian])
 ```
-
-

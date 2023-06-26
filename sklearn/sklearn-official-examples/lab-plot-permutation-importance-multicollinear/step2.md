@@ -22,5 +22,3 @@ ax2.boxplot(
 fig.tight_layout()
 plt.show()
 ```
-
-

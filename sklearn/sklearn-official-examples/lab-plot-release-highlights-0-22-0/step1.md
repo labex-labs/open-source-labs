@@ -24,5 +24,3 @@ rfc_disp.figure_.suptitle("ROC curve comparison")
 
 plt.show()
 ```
-
-

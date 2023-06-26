@@ -8,5 +8,3 @@ rng = np.random.RandomState(0)
 X = rng.randn(200, 2)
 Y = np.logical_xor(X[:, 0] > 0, X[:, 1] > 0)
 ```
-
-

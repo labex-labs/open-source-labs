@@ -11,5 +11,3 @@ for i, (C, axes_row) in enumerate(zip((1, 0.1, 0.01), axes)):
     clf_l2_LR.fit(X, y)
     clf_en_LR.fit(X, y)
 ```
-
-

@@ -85,5 +85,3 @@ plt.title("One-vs-Rest ROC curves")
 plt.legend()
 plt.show()
 ```
-
-

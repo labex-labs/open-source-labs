@@ -34,5 +34,3 @@ def plot_on_dataset(X, y, ax, name):
     for mlp, label, args in zip(mlps, labels, plot_args):
         ax.plot(mlp.loss_curve_, label=label, **args)
 ```
-
-

@@ -17,5 +17,3 @@ from sklearn.pipeline import make_pipeline
 from pynndescent import PyNNDescentTransformer
 import nmslib
 ```
-
-

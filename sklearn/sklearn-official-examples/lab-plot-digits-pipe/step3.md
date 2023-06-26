@@ -10,5 +10,3 @@ param_grid = {
     "logistic__C": np.logspace(-4, 4, 4),
 }
 ```
-
-

@@ -7,5 +7,3 @@ Next, we need to train the SVM model using SGD. We will use the `SGDClassifier` 
 clf = SGDClassifier(loss="hinge", alpha=0.01, max_iter=200)
 clf.fit(X, Y)
 ```
-
-

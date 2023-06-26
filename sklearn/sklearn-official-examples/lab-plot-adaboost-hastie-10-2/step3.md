@@ -22,5 +22,3 @@ ada_real_err_train = np.zeros((n_estimators,))
 for i, y_pred in enumerate(ada_real.staged_predict(X_train)):
     ada_real_err_train[i] = zero_one_loss(y_pred, y_train)
 ```
-
-

@@ -7,5 +7,3 @@ X, y = fetch_openml(
     "mnist_784", version=1, return_X_y=True, as_frame=False, parser="pandas"
 )
 ```
-
-

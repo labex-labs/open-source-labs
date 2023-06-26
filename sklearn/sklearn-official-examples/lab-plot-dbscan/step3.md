@@ -16,5 +16,3 @@ n_noise_ = list(labels).count(-1)
 print("Estimated number of clusters: %d" % n_clusters_)
 print("Estimated number of noise points: %d" % n_noise_)
 ```
-
-

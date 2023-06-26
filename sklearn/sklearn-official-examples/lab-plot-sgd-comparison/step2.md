@@ -18,5 +18,3 @@ classifiers = [
     ("LogisticRegression", LogisticRegression(max_iter=1000))
 ]
 ```
-
-

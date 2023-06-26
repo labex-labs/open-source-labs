@@ -22,5 +22,3 @@ S /= S.std(axis=0)  # Standardize data
 A = np.array([[1, 1, 1], [0.5, 2, 1.0], [1.5, 1.0, 2.0]])  # Mixing matrix
 X = np.dot(S, A.T)  # Generate observations
 ```
-
-

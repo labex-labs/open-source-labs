@@ -22,5 +22,3 @@ kmeans = KMeans(n_init="auto").fit(X_train)
 # calculate the completeness score
 print(completeness_score(kmeans.predict(X_test), y_test))
 ```
-
-

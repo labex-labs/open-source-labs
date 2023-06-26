@@ -15,5 +15,3 @@ We will calculate the sparsity (percentage of zero coefficients) and scores for 
     score_l2_LR = clf_l2_LR.score(X, y)
     score_en_LR = clf_en_LR.score(X, y)
 ```
-
-

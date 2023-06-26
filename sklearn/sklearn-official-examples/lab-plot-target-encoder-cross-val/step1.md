@@ -5,5 +5,3 @@ First, we need to install the required libraries. We will be using Scikit-learn,
 ```python
 !pip install scikit-learn pandas matplotlib
 ```
-
-

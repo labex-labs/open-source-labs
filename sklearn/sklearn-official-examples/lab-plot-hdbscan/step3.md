@@ -17,5 +17,3 @@ plot(X, dbs.labels_, parameters=params, ax=axes[1])
 hdb = HDBSCAN().fit(X)
 plot(X, hdb.labels_, hdb.probabilities_)
 ```
-
-

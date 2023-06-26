@@ -26,5 +26,3 @@ for i in range(NUM_TRIALS):
 
 score_difference = non_nested_score - nested_scores.mean()
 ```
-
-

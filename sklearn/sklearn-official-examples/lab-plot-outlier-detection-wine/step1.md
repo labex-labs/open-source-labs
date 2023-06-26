@@ -13,5 +13,3 @@ from sklearn.datasets import load_wine
 X1 = load_wine()["data"][:, [1, 2]]  # two clusters
 X2 = load_wine()["data"][:, [6, 9]]  # "banana"-shaped
 ```
-
-

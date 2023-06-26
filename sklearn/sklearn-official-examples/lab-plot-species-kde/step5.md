@@ -11,5 +11,3 @@ xy = np.vstack([Y.ravel(), X.ravel()]).T
 xy = xy[land_mask]
 xy *= np.pi / 180.0
 ```
-
-

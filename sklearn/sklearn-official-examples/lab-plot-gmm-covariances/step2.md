@@ -3,5 +3,3 @@
 ```python
 iris = datasets.load_iris()
 ```
-
-

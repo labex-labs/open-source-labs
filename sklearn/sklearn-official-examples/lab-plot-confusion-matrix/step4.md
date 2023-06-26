@@ -5,5 +5,3 @@ We will train a support vector machine (SVM) classifier using a linear kernel. W
 ```python
 classifier = svm.SVC(kernel="linear", C=0.01).fit(X_train, y_train)
 ```
-
-

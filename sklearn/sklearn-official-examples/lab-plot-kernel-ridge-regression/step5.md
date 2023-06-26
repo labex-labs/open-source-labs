@@ -43,5 +43,3 @@ plt.ylabel("Time (seconds)")
 plt.title("Execution Time")
 _ = plt.legend(loc="best")
 ```
-
-

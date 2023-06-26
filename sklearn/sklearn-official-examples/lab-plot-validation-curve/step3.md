@@ -16,5 +16,3 @@ train_scores, test_scores = validation_curve(
     n_jobs=2,
 )
 ```
-
-

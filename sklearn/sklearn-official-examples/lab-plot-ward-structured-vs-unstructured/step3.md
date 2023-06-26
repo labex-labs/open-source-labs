@@ -17,5 +17,3 @@ for l in np.unique(label):
         edgecolor="k",
     )
 ```
-
-

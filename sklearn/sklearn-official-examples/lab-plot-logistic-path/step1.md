@@ -14,5 +14,3 @@ y = y[y != 2]
 
 X /= X.max() # Normalize X to speed-up convergence
 ```
-
-

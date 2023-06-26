@@ -15,5 +15,3 @@ n_folds = 5
 clf = GridSearchCV(lasso, tuned_parameters, cv=n_folds, refit=False)
 clf.fit(X, y)
 ```
-
-

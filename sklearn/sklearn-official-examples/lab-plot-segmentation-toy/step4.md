@@ -14,5 +14,3 @@ axs[1].matshow(label_im)
 
 plt.show()
 ```
-
-

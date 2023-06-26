@@ -7,5 +7,3 @@ plt.title("Nearest Centroid Classification")
 plt.xlabel("Sepal length")
 plt.ylabel("Sepal width")
 ```
-
-

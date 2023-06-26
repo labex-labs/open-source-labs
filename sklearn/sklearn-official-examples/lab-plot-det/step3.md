@@ -23,5 +23,3 @@ ax_det.grid(linestyle="--")
 plt.legend()
 plt.show()
 ```
-
-

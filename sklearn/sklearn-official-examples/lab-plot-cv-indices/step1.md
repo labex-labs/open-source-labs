@@ -44,5 +44,3 @@ def visualize_groups(classes, groups, name):
 
 visualize_groups(y, groups, "no groups")
 ```
-
-

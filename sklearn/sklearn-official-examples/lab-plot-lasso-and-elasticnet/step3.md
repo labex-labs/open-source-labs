@@ -13,5 +13,3 @@ y_pred_ard = ard.predict(X_test)
 r2_score_ard = r2_score(y_test, y_pred_ard)
 print(f"ARD r^2 on test data : {r2_score_ard:.3f}")
 ```
-
-

@@ -14,5 +14,3 @@ X += 0.3 * np.random.normal(size=n_samples)
 
 X = X[:, np.newaxis]
 ```
-
-

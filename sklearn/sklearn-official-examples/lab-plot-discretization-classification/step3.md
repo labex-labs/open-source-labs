@@ -52,5 +52,3 @@ classifiers = [
 
 names = [get_name(e).replace("StandardScaler + ", "") for e, _ in classifiers]
 ```
-
-

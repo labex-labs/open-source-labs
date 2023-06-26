@@ -12,5 +12,3 @@ Import the necessary libraries:
 - NeighborhoodComponentsAnalysis
 - make_pipeline
 - StandardScaler
-
-

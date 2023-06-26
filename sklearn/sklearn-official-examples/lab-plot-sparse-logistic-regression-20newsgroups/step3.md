@@ -52,5 +52,3 @@ for model in models:
         % (model_params["iters"][-1], model, times[-1])
     )
 ```
-
-

@@ -15,5 +15,3 @@ plt.matshow(data, cmap=plt.cm.Blues)
 plt.title("Original dataset")
 _ = plt.show()
 ```
-
-

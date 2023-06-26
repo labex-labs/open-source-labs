@@ -6,5 +6,3 @@ In this step, we will load the data from the scikit-learn library. We will use t
 # Load the compressed data
 data = fetch_species_distributions()
 ```
-
-

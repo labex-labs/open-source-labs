@@ -17,5 +17,3 @@ ConfusionMatrixDisplay.from_predictions(
     true_labels, predicted_labels, labels=lp_model.classes_
 )
 ```
-
-

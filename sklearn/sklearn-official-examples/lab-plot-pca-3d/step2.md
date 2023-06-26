@@ -10,5 +10,3 @@ y = np.random.normal(scale=0.5, size=(30000))
 x = np.random.normal(scale=0.5, size=(30000))
 z = np.random.normal(scale=0.1, size=len(x))
 ```
-
-

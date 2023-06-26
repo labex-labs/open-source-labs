@@ -23,5 +23,3 @@ preprocessor = ColumnTransformer(
 X_out = preprocessor.fit_transform(X)
 X_out.sample(n=5, random_state=0)
 ```
-
-

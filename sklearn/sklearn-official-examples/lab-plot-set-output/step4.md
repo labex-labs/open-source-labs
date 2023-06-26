@@ -13,5 +13,3 @@ clf = make_pipeline(
 clf.set_output(transform="pandas")
 clf.fit(X_train, y_train)
 ```
-
-

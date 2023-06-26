@@ -26,5 +26,3 @@ wdisp = DecisionBoundaryDisplay.from_estimator(
     ax=ax,
 )
 ```
-
-

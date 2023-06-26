@@ -22,5 +22,3 @@ glm.fit(X_train, y_train)
 # calculate the model's score
 print(glm.score(X_test, y_test))
 ```
-
-

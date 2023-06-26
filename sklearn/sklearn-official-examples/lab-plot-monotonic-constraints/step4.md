@@ -6,5 +6,3 @@ We will now fit another model on the same data but with monotonic constraints on
 gbdt_with_monotonic_cst = HistGradientBoostingRegressor(monotonic_cst=[1, -1])
 gbdt_with_monotonic_cst.fit(X, y)
 ```
-
-

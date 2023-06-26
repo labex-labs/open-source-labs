@@ -10,5 +10,3 @@ from sklearn import datasets
 from sklearn.neighbors import NearestCentroid
 from sklearn.inspection import DecisionBoundaryDisplay
 ```
-
-

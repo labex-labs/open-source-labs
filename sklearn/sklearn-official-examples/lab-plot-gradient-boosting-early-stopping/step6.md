@@ -29,5 +29,3 @@ plt.ylabel("Fit Time")
 
 plt.show()
 ```
-
-

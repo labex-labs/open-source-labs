@@ -8,5 +8,3 @@ nmf_estimator = decomposition.NMF(n_components=n_components, tol=5e-3)
 nmf_estimator.fit(faces)  # original non- negative dataset
 plot_gallery("Non-negative components - NMF", nmf_estimator.components_[:n_components])
 ```
-
-

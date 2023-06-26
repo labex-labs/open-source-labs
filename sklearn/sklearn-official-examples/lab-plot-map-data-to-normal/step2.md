@@ -7,5 +7,3 @@ N_SAMPLES = 1000
 FONT_SIZE = 6
 BINS = 30
 ```
-
-

@@ -6,5 +6,3 @@ In this step, we will visualize the dataset using a scatter plot.
 plt.scatter(X, y, color='black')
 plt.show()
 ```
-
-

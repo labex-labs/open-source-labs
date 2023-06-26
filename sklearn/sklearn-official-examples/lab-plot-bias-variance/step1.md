@@ -8,5 +8,3 @@ import matplotlib.pyplot as plt
 from sklearn.ensemble import BaggingRegressor
 from sklearn.tree import DecisionTreeRegressor
 ```
-
-

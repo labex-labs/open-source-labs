@@ -32,5 +32,3 @@ Finally, we display the visual representation of the pipeline:
 set_config(display="diagram")
 pipe
 ```
-
-

@@ -12,5 +12,3 @@ Then, we can create a GPC model and train it using the data.
 gp = GaussianProcessClassifier(kernel=kernel)
 gp.fit(X, y)
 ```
-
-

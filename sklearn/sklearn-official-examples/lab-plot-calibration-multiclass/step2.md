@@ -19,5 +19,3 @@ clf.fit(X_train, y_train)
 cal_clf = CalibratedClassifierCV(clf, method="sigmoid", cv="prefit")
 cal_clf.fit(X_valid, y_valid)
 ```
-
-

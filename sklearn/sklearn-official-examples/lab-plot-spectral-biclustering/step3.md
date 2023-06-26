@@ -15,5 +15,3 @@ score = consensus_score(
 )
 print(f"consensus score: {score:.1f}")
 ```
-
-

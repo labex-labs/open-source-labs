@@ -33,5 +33,3 @@ ensemble_clfs = [
     ),
 ]
 ```
-
-

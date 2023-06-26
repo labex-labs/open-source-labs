@@ -102,5 +102,3 @@ class ReutersParser(HTMLParser):
         self.topics.append(self.topic_d)
         self.topic_d = ""
 ```
-
-

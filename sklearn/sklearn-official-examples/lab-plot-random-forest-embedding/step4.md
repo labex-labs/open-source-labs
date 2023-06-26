@@ -6,5 +6,3 @@ In this step, we will visualize the result after dimensionality reduction using 
 svd = TruncatedSVD(n_components=2)
 X_reduced = svd.fit_transform(X_transformed)
 ```
-
-

@@ -16,5 +16,3 @@ unlabeled_set = indices[n_labeled_points:]
 y_train = np.copy(y)
 y_train[unlabeled_set] = -1
 ```
-
-

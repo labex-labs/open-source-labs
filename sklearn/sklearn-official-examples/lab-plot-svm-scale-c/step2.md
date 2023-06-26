@@ -35,5 +35,3 @@ axes[1].set_title("Scaling C by 1 / n_samples")
 
 _ = fig.suptitle("Effect of scaling C with L1 penalty")
 ```
-
-

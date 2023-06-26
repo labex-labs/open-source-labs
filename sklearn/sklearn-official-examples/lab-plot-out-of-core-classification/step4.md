@@ -17,5 +17,3 @@ def get_minibatch(doc_iter, size, pos_class=positive_class):
     X_text, y = zip(*data)
     return X_text, np.asarray(y, dtype=int)
 ```
-
-

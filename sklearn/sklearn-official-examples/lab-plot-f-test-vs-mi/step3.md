@@ -6,5 +6,3 @@ We will now calculate the F-test score for each feature. F-test captures only li
 f_test, _ = f_regression(X, y)
 f_test /= np.max(f_test)
 ```
-
-

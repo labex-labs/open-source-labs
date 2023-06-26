@@ -11,5 +11,3 @@ ax.set_ylabel("Sepal width")
 ax.set_zlabel("Petal length")
 plt.show()
 ```
-
-

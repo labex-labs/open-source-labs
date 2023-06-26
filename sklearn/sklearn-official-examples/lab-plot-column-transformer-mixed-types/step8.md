@@ -5,5 +5,3 @@ In this step, we will evaluate the performance of our pipeline by calculating th
 ```python
 print("model score: %.3f" % clf.score(X_test, y_test))
 ```
-
-

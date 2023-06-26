@@ -12,5 +12,3 @@ md_scaling = manifold.MDS(
 )
 S_scaling = md_scaling.fit_transform(S_points)
 ```
-
-

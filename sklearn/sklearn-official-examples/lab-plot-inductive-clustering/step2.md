@@ -6,5 +6,3 @@ In this step, we will train a clustering algorithm on the generated training dat
 clusterer = AgglomerativeClustering(n_clusters=3)
 cluster_labels = clusterer.fit_predict(X)
 ```
-
-

@@ -52,5 +52,3 @@ def plot_results(figure_title):
 
 plot_results("Gradient Boosting on Ames Housing")
 ```
-
-

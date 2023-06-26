@@ -8,5 +8,3 @@ X = iris.data[:, 0:2]  # we only take the first two features for visualization
 y = iris.target
 n_features = X.shape[1]
 ```
-
-

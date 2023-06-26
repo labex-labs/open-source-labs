@@ -12,5 +12,3 @@ pipe = Pipeline(
 
 X, y = load_digits(return_X_y=True)
 ```
-
-

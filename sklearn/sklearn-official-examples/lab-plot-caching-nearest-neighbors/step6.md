@@ -7,5 +7,3 @@ In this step, we will tune the hyperparameters of the classifier using GridSearc
     grid_model = GridSearchCV(full_model, param_grid)
     grid_model.fit(X, y)
 ```
-
-

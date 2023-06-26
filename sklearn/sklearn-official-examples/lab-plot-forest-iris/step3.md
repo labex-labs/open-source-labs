@@ -6,5 +6,3 @@ In this step, we will load the iris dataset.
 # Load data
 iris = load_iris()
 ```
-
-

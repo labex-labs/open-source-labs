@@ -28,5 +28,3 @@ ct = ColumnTransformer(
 clf = make_pipeline(ct, SelectPercentile(percentile=50), LogisticRegression())
 clf.fit(X_train, y_train)
 ```
-
-

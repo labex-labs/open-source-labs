@@ -9,5 +9,3 @@ import matplotlib.pyplot as plt
 from sklearn import datasets, cluster
 from sklearn.feature_extraction.image import grid_to_graph
 ```
-
-

@@ -6,5 +6,3 @@ Next, we will generate sample data using the `make_blobs` function from the `skl
 centers = [[1, 1], [-1, -1], [1, -1]]
 X, _ = make_blobs(n_samples=10000, centers=centers, cluster_std=0.6)
 ```
-
-

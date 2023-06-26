@@ -11,5 +11,3 @@ with TemporaryDirectory(prefix="sklearn_graph_cache_") as tmpdir:
         steps=[("graph", graph_model), ("classifier", classifier_model)], memory=tmpdir
     )
 ```
-
-

@@ -11,5 +11,3 @@ coef_ = clf.best_estimator_.steps[-1][1].coef_
 coef_ = clf.best_estimator_.steps[0][1].inverse_transform(coef_)
 coef_agglomeration_ = coef_.reshape(size, size)
 ```
-
-

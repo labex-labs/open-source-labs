@@ -23,5 +23,3 @@ def ricker_matrix(width, resolution, n_components):
     D /= np.sqrt(np.sum(D**2, axis=1))[:, np.newaxis]
     return D
 ```
-
-

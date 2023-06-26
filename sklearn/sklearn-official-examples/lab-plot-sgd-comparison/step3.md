@@ -25,5 +25,3 @@ plt.xlabel("Proportion of training data")
 plt.ylabel("Test error rate")
 plt.show()
 ```
-
-

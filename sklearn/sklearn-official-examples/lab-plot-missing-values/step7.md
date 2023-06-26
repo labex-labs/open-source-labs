@@ -26,5 +26,3 @@ x_labels.append("Iterative Imputation")
 mses_diabetes = mses_diabetes * -1
 mses_california = mses_california * -1
 ```
-
-

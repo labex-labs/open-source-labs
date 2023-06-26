@@ -6,5 +6,3 @@ We need to flatten the images to turn each 2-D array of grayscale values from sh
 n_samples = len(digits.images)
 data = digits.images.reshape((n_samples, -1))
 ```
-
-

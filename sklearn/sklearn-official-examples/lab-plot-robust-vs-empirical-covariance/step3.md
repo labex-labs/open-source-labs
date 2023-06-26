@@ -7,5 +7,3 @@ In this step, we estimate a robust covariance matrix of the dataset using the Mi
 mcd = MinCovDet().fit(X)
 robust_cov = mcd.covariance_
 ```
-
-

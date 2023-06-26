@@ -24,5 +24,3 @@ def make_data(random_state, n_samples_per_center, grid_size, scale):
 
 X, y = make_data(random_state, n_samples_per_center, grid_size, scale)
 ```
-
-

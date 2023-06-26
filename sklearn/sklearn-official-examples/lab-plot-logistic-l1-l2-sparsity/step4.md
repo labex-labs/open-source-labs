@@ -5,5 +5,3 @@ We will create subplots to visualize the coefficients of the models for varying 
 ```python
 fig, axes = plt.subplots(3, 3)
 ```
-
-

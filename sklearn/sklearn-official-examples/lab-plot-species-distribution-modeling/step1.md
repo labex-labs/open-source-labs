@@ -12,5 +12,3 @@ from sklearn.utils import Bunch
 from sklearn.datasets import fetch_species_distributions
 from sklearn import svm, metrics
 ```
-
-

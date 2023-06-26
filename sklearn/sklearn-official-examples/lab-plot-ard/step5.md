@@ -22,5 +22,3 @@ y_plot = np.sqrt(X_plot) * np.sin(X_plot)
 X_plot = np.concatenate((X, X_plot.reshape((-1, 1))))
 y_plot = np.concatenate((y - noise, y_plot))
 ```
-
-

@@ -12,5 +12,3 @@ import matplotlib as mpl
 
 from sklearn import mixture
 ```
-
-

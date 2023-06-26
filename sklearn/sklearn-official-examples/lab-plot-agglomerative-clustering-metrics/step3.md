@@ -32,5 +32,3 @@ for index, metric in enumerate(["cosine", "euclidean", "cityblock"]):
     plt.suptitle("Interclass %s distances" % metric, size=18, y=1)
     plt.tight_layout()
 ```
-
-

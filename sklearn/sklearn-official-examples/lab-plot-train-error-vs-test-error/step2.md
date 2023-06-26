@@ -17,5 +17,3 @@ i_alpha_optim = np.argmax(test_errors)
 alpha_optim = alphas[i_alpha_optim]
 print("Optimal regularization parameter : %s" % alpha_optim)
 ```
-
-

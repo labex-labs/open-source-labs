@@ -11,5 +11,3 @@ t0 = time.time()
 k_means.fit(X)
 t_batch = time.time() - t0
 ```
-
-

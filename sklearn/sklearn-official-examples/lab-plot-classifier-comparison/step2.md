@@ -44,5 +44,3 @@ for ds_cnt, ds in enumerate(datasets):
     ax.set_yticks(())
     i += 1
 ```
-
-

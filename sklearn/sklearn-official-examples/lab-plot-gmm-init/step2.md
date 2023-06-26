@@ -10,5 +10,3 @@ def get_initial_means(X, init_params, r):
     ).fit(X)
     return gmm.means_
 ```
-
-

@@ -9,5 +9,3 @@ import matplotlib.pyplot as plt
 tree.plot_tree(clf)
 plt.show()
 ```
-
-

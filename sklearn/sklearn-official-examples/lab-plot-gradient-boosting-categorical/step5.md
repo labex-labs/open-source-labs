@@ -11,5 +11,3 @@ hist_native = make_pipeline(
     ),
 ).set_output(transform="pandas")
 ```
-
-

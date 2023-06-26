@@ -18,5 +18,3 @@ regr_2.fit(X, y)
 y_1 = regr_1.predict(X)
 y_2 = regr_2.predict(X)
 ```
-
-

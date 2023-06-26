@@ -8,5 +8,3 @@ from sklearn import datasets
 # Load the digits dataset
 digits = datasets.load_digits()
 ```
-
-

@@ -12,5 +12,3 @@ t0 = time()
 labels_random = pairwise_distances_argmin(codebook_random, image_array, axis=0)
 print(f"done in {time() - t0:0.3f}s.")
 ```
-
-

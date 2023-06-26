@@ -6,5 +6,3 @@ The next step is to load the data provided by Phillips et. al. (2006). The datas
 data = fetch_species_distributions()
 species_names = ["Bradypus Variegatus", "Microryzomys Minutus"]
 ```
-
-

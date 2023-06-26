@@ -60,5 +60,3 @@ for n_components in n_components_range:
     plt.ylabel("Distribution of samples pairs")
     plt.title("Histogram of pairwise distance rates for n_components=%d" % n_components)
 ```
-
-

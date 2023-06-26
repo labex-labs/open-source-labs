@@ -16,5 +16,3 @@ loglik_lw = lw.fit(X_train).score(X_test)
 oa = OAS()
 loglik_oa = oa.fit(X_train).score(X_test)
 ```
-
-

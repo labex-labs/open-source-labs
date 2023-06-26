@@ -15,5 +15,3 @@ grid_search = GridSearchCV(
     SVC(), tuned_parameters, scoring=["precision", "recall"], refit=refit_strategy
 )
 ```
-
-

@@ -6,5 +6,3 @@ We will fit the model and get the separating hyperplane using the `SVC` function
 wclf = svm.SVC(kernel="linear", class_weight={1: 10})
 wclf.fit(X, y)
 ```
-
-

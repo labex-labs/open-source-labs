@@ -11,5 +11,3 @@ param_dist = {
     "criterion": ["gini", "entropy"],
 }
 ```
-
-

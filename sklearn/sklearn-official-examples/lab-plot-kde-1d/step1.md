@@ -59,5 +59,3 @@ for axi in ax[1, :]:
 # Show plot
 plt.show()
 ```
-
-

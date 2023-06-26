@@ -21,5 +21,3 @@ for i, D in enumerate((D_fixed, D_multi)):
     plt.axis("off")
 plt.show()
 ```
-
-

@@ -11,5 +11,3 @@ from sklearn.svm import SVC
 from sklearn.decomposition import PCA
 from sklearn.cross_decomposition import CCA
 ```
-
-

@@ -24,5 +24,3 @@ parameter_grid = {
 }
 
 ```
-
-

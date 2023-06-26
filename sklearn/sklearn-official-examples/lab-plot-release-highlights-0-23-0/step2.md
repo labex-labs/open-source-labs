@@ -25,5 +25,3 @@ preprocessor = make_column_transformer(
 clf = make_pipeline(preprocessor, LogisticRegression())
 clf
 ```
-
-

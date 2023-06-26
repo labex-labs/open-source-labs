@@ -15,5 +15,3 @@ index_alpha_path_bic = np.flatnonzero(
     lasso_lars_ic[-1].alphas_ == lasso_lars_ic[-1].alpha_
 )[0]
 ```
-
-

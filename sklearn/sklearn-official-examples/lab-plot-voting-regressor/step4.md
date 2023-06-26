@@ -11,5 +11,3 @@ pred2 = reg2.predict(xt)
 pred3 = reg3.predict(xt)
 pred4 = ereg.predict(xt)
 ```
-
-

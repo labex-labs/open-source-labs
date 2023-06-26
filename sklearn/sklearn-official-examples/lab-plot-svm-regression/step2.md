@@ -15,5 +15,3 @@ svrs = [svr_rbf, svr_lin, svr_poly]
 for svr in svrs:
     svr.fit(X, y)
 ```
-
-

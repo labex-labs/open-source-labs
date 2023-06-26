@@ -23,5 +23,3 @@ ax.set_ylim(ylim)
 plt.title('L1 Penalty')
 plt.show()
 ```
-
-

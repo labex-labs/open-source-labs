@@ -22,5 +22,3 @@ for assign_labels in ("kmeans", "discretize", "cluster_qr"):
     t1 = time.time()
     labels = labels.reshape(rescaled_coins.shape)
 ```
-
-

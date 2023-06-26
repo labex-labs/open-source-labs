@@ -54,5 +54,3 @@ for est_idx, (name, (estimator, param_grid)) in enumerate(zip(names, classifiers
         horizontalalignment="right",
     )
 ```
-
-

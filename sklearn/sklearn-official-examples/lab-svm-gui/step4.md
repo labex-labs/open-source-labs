@@ -68,5 +68,3 @@ class Controller:
         if self.fitted:
             self.fit()
 ```
-
-

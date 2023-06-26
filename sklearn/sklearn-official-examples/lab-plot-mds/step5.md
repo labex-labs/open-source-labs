@@ -16,5 +16,3 @@ nmds = manifold.MDS(
 )
 npos = nmds.fit_transform(similarities, init=pos)
 ```
-
-

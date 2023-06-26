@@ -68,5 +68,3 @@ plot_args = [
     {"c": "black", "linestyle": "-"},
 ]
 ```
-
-

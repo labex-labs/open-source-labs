@@ -11,5 +11,3 @@ regr_1.fit(X, y)
 regr_2.fit(X, y)
 regr_3.fit(X, y)
 ```
-
-

@@ -8,5 +8,3 @@ pca = PCA(n_components=3)
 pca.fit(Y)
 components = pca.components_
 ```
-
-

@@ -27,5 +27,3 @@ i = 3
 relate_point(X, i, ax)
 plt.show()
 ```
-
-

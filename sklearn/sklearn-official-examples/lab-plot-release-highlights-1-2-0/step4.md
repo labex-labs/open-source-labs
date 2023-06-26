@@ -56,5 +56,3 @@ _ = PartialDependenceDisplay.from_estimator(
     ax=ax,
 )
 ```
-
-

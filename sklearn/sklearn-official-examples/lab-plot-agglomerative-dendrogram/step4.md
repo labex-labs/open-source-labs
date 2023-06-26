@@ -5,5 +5,3 @@ We will fit the agglomerative clustering model using the `fit()` method of the m
 ```python
 model = model.fit(X)
 ```
-
-
