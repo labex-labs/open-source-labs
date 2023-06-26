@@ -1,10 +1,6 @@
-# Grab the code
+# Clone the Source Code from GitHub
 
-The Play-with-Docker environment is already set up with Docker and Git, so you're good to go.
-
-## Clone the source code from GitHub
-
-Clone the application source into your local session:
+Clone the application source into `/home/labex/project` path:
 
 > Just click the text in these boxes to send the command to your terminal
 

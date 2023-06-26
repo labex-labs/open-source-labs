@@ -1,4 +1,4 @@
-# Run a .NET Core container!
+# Run a .NET Core Container
 
 A Docker image is a complete packaged app. You can share it on [Docker Hub](https://hub.docker.com), which is how thousands of open-source and commercial projects now distribute their software.
 
@@ -7,7 +7,7 @@ Your image contains the .NET Core 3.0 runtime, together with the assemblies and 
 You run the app by running a container from the image:
 
 ```bash
-docker container run dotnetconf:19
+docker run dotnetconf:19
 ```
 
 > Scroll up to read the message from .NET Bot - that's your .NET Conf code!

@@ -1,4 +1,4 @@
-# Build the application image
+# Build the Application Image
 
 The `Dockerfile` has `dotnet` commands to restore NuGet packages and publish the app:
 
@@ -8,10 +8,10 @@ cat Dockerfile
 
 > Even if you're not familiar with the [Dockerfile syntax](https://docs.docker.com/engine/reference/builder/), you can kind of work out that this is a script to compile the app and package it up to run
 
-You run the script with the `docker image build` command, which produces a container package called a _Docker image_:
+You run the script with the `docker build` command, which produces a container package called a _Docker image_:
 
 ```bash
-docker image build --tag dotnetconf:19 .
+docker build --tag dotnetconf:19 .
 ```
 
 You'll see lots of download progress bars, and some familiar output from MSBuild.

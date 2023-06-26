@@ -1,66 +1,52 @@
 {
   "type": "lab",
-  "title": ".NET Conf 2019",
-  "description": "Lab description",
+  "title": "Docker's .NET Conf",
+  "description": "This lab gets you using .NET Core in Docker containers.",
   "difficulty": "Beginner",
-  "time": 5,
+  "time": 15,
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Clone the Source Code from GitHub",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify step 1",
+            "name": "Clone the application source into `/home/labex/project` path",
             "file": "verify1.sh",
-            "hint": "Hint for step 1",
+            "hint": "Please input 'git clone https://github.com/dockersamples/dotnetconf19.git' command",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["git/clone"]
       },
       {
-        "title": "Step 2",
+        "title": "Build the Application Image",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify step 2",
+            "name": "Check if a image called dotnetconf:19 exists",
             "file": "verify2.sh",
-            "hint": "Hint for step 1",
+            "hint": "Please use 'docker build' command to create a image called dotnetconf:19",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["docker/build"]
       },
       {
-        "title": "Step 3",
+        "title": "Run a .NET Core Container",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Verify step 3",
+            "name": "Run a app with dotnetconf:19 image",
             "file": "verify3.sh",
-            "hint": "Hint for step 1",
+            "hint": "Please input 'docker run dotnetconf:19' command",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify step 4",
-            "file": "verify4.sh",
-            "hint": "Hint for step 1",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
+        "skills": ["docker/run"]
       }
     ],
     "intro": {
