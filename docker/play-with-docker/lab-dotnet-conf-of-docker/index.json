@@ -1,0 +1,77 @@
+{
+  "type": "lab",
+  "title": "Docker's .NET Conf",
+  "description": "This lab gets you using .NET Core in Docker containers.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "details": {
+    "steps": [
+      {
+        "title": "Clone the Source Code from GitHub",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Clone the application source into `/home/labex/project` path",
+            "file": "verify1.sh",
+            "hint": "Please input 'git clone https://github.com/dockersamples/dotnetconf19.git' command",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/clone"]
+      },
+      {
+        "title": "Build the Application Image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if a image called dotnetconf:19 exists",
+            "file": "verify2.sh",
+            "hint": "Please use 'docker build' command to create a image called dotnetconf:19",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["docker/build"]
+      },
+      {
+        "title": "Run a .NET Core Container",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Run a app with dotnetconf:19 image",
+            "file": "verify3.sh",
+            "hint": "Please input 'docker run dotnetconf:19' command",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["docker/run"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  },
+  "license": {
+    "name": " Apache-2.0",
+    "url": "https://github.com/play-with-docker/play-with-docker.github.io/blob/master/LICENSE",
+    "repo": "https://github.com/play-with-docker/play-with-docker.github.io"
+  },
+  "contributors": ["huhuhang"]
+}
