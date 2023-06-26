@@ -3,6 +3,9 @@
 First, let's enable CoW in pandas. This can be done using the `copy_on_write` configuration option in pandas. Here are two ways you can enable CoW globally.
 
 ```python
+# Importing the pandas and numpy libraries
+import pandas as pd
+
 # Enable CoW using set_option
 pd.set_option("mode.copy_on_write", True)
 
