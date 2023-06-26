@@ -1,80 +1,178 @@
 {
   "type": "lab",
   "title": "Docker Volumes",
-  "description": "Lab description",
+  "description": "In this lab, we will illustrate the concept of volume.",
   "difficulty": "Beginner",
-  "time": 10,
+  "time": 25,
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Data Persistency without a Volume",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify step 1",
-            "file": "verify1.sh",
-            "hint": "Hint for step 1",
+            "name": "Run an interactive shell within an alpine container named c1",
+            "file": "verify1-1.sh",
+            "hint": "Please input 'docker run --name c1 -it alpine sh' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Get the location of the container's layer",
+            "file": "verify1-2.sh",
+            "hint": "Please use 'docker inspect' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "See the contents of the /data folder",
+            "file": "verify1-3.sh",
+            "hint": "Plaese input 'ls /var/lib/docker/overlay2/[YOUR_ID]/diff/data' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Remove c1 container",
+            "file": "verify1-4.sh",
+            "hint": "Please input 'docker rm c1' command",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["docker/run","docker/inspect","docker/rm"]
       },
       {
-        "title": "Step 2",
+        "title": "Defining a Volume in a Dockerfile",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify step 2",
-            "file": "verify2.sh",
-            "hint": "Hint for step 1",
+            "name": "Check if image called img1 exists",
+            "file": "verify2-1.sh",
+            "hint": "Please use 'docker build' command to create a images called img1",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Run a container called c2 with img1 image",
+            "file": "verify2-2.sh",
+            "hint": "Please input 'docker run --name c2 -it img1' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Get the location of the volume (defined on `/data`) on the host",
+            "file": "verify2-3.sh",
+            "hint": "Please use 'docker inspect' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "remove the `c2` container",
+            "file": "verify2-4.sh",
+            "hint": "Please input 'docker stop c2 && docker rm c2' command",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["docker/build","docker/run","docker/ps","docker/inspect","docker/stop","docker/rm"]
       },
       {
-        "title": "Step 3",
+        "title": "Defining a Volume at Runtime",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Verify step 3",
-            "file": "verify3.sh",
-            "hint": "Hint for step 1",
+            "name": "Ping Google DNS and log the output in a file within the `/data` folder",
+            "file": "verify3-1.sh",
+            "hint": "Please input 'ping 8.8.8.8 > /data/ping.txt' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Run a container called c3 with alpine image",
+            "file": "verify3-2.sh",
+            "hint": "Please input docker run --name c3 -d -v /data alpine sh -c 'ping 8.8.8.8 > /data/ping.txt' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Get the `Mounts` key",
+            "file": "verify3-3.sh",
+            "hint": "Please use 'docker inspect' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check the content of the `ping.txt` within the `/data` folder",
+            "file": "verify3-4.sh",
+            "hint": "Please input 'tail -f /var/lib/docker/volumes/OUR_ID/_data/ping.txt' command",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["docker/run","docker/inspect"]
       },
       {
-        "title": "Step 4",
+        "title": "Usage of the Volume API",
         "text": "step4.md",
         "verify": [
           {
-            "name": "Verify step 4",
-            "file": "verify4.sh",
-            "hint": "Hint for step 1",
+            "name": "Create a volume called html",
+            "file": "verify4-1.sh",
+            "hint": "Please input 'docker volume create --name html' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Use `inspect` command to `html` volume.",
+            "file": "verify4-2.sh",
+            "hint": "Please input 'docker volume inspect html' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Run a container with nginx image",
+            "file": "verify4-3.sh",
+            "hint": "Please input 'docker run --name www -d -p 8080:80 -v html:/usr/share/nginx/html nginx' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "See the content of the html volume",
+            "file": "verify4-4.sh",
+            "hint": "Please input 'ls /var/lib/docker/volumes/html/_data' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Modify the `index.html` file",
+            "file": "verify4-5.sh",
+            "hint": "Please modify the index.html file",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["docker/volume","docker/run"]
       },
       {
-        "title": "Step 5",
+        "title": "Mount Host's Folder into a Container",
         "text": "step5.md",
         "verify": [
           {
-            "name": "Verify step 5",
-            "file": "verify5.sh",
-            "hint": "Hint for step 1",
+            "name": "Run an `alpine` container bind mounting the local `/tmp` folder inside the container `/data` folder",
+            "file": "verify5-1.sh",
+            "hint": "Please input 'docker run -it -v /tmp:/data alpine sh' command",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Run a `nginx` container bind mounting the local `/tmp` folder inside the `/usr/share/nginx/html` folder of the container",
+            "file": "verify5-2.sh",
+            "hint": "Please input 'docker run -it -v /tmp:/usr/share/nginx/html nginx bash' command",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["docker/run"]
       }
     ],
     "intro": {

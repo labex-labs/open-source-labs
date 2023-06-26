@@ -1,9 +1,9 @@
-# Defining a volume at runtime
+# Defining a Volume at Runtime
 
-We have seen volume defined in a Dockerfile, we will see they can also be defined at runtime using the **-v** flag of the **docker container run** command.
+We have seen volume defined in a Dockerfile, we will see they can also be defined at runtime using the `-v` flag of the `docker run` command.
 
-Let's create a container from the alpine image, we'll use the -d option so it runs in background and also define a volume on /data as we've done previously.
-In order the PID 1 process remains active, we use the following command that pings Google DNS and log the output in a file within the /data folder.
+Let's create a container from the `alpine` image, we'll use the `-d` option so it runs in background and also define a volume on `/data` as we've done previously.
+In order the PID 1 process remains active, we use the following command that pings Google DNS and log the output in a file within the `/data` folder.
 
 ```
 ping 8.8.8.8 > /data/ping.txt
@@ -12,13 +12,13 @@ ping 8.8.8.8 > /data/ping.txt
 The container is ran that way:
 
 ```bash
-docker container run --name c3 -d -v /data alpine sh -c 'ping 8.8.8.8 > /data/ping.txt'
+docker run --name c3 -d -v /data alpine sh -c 'ping 8.8.8.8 > /data/ping.txt'
 ```
 
-Let's inspect the container and get the **Mounts** key using the Go template notation.
+Let's inspect the container and get the `Mounts` key using the Go template notation.
 
 ```bash
-docker container inspect -f "{{ "{{ json .Mounts "}}}}" c3 | jq
+docker inspect -f "{{ json .Mounts }}" c3 | jq
 ```
 
 We have pretty much the same output as we had when we defined the volume in the Dockerfile.
@@ -38,7 +38,7 @@ We have pretty much the same output as we had when we defined the volume in the 
 ]
 ```
 
-If we use the folder defined in the **Source** key, and check the content of the ping.txt within the /data folder, we get something similar to the following.
+If we use the folder defined in the `Source` key, and check the content of the `ping.txt` within the `/data` folder, we get something similar to the following.
 
 ```
 tail -f /var/lib/docker/volumes/OUR_ID/_data/ping.txt
@@ -52,6 +52,6 @@ tail -f /var/lib/docker/volumes/OUR_ID/_data/ping.txt
 ...
 ```
 
-The ping.txt file is updated regularly by the command running in the **c3** container.
+The `ping.txt` file is updated regularly by the command running in the `c3` container.
 
-Stopping and removing the container will obviously stop the ping command but the /data/ping.txt file will still be there. Give it a try :)
+Stopping and removing the container will obviously stop the ping command but the `/data/ping.txt` file will still be there. Give it a try :)
