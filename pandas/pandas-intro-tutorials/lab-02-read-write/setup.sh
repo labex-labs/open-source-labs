@@ -7,3 +7,4 @@ git add .
 git commit -m 'init'
 
 pip install pandas
+pip3 install openpyxl
