@@ -11,5 +11,3 @@ y_pred_nnls = reg_nnls.fit(X_train, y_train).predict(X_test)
 r2_score_nnls = r2_score(y_test, y_pred_nnls)
 print("NNLS R2 score", r2_score_nnls)
 ```
-
-

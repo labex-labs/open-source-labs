@@ -28,5 +28,3 @@ def dataset_cov():
     y = np.hstack((np.zeros(n), np.ones(n)))
     return X, y
 ```
-
-

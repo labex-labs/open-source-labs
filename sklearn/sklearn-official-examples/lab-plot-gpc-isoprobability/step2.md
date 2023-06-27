@@ -32,5 +32,3 @@ X = np.array(
 # Observations
 y = np.array(g(X) > 0, dtype=int)
 ```
-
-

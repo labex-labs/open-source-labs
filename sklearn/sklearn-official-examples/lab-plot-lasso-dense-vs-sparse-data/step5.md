@@ -6,5 +6,3 @@ We compare the coefficients of the dense Lasso model and the sparse Lasso model 
 coeff_diff = linalg.norm(sparse_lasso.coef_ - dense_lasso.coef_)
 print(f"Distance between coefficients : {coeff_diff:.2e}")
 ```
-
-

@@ -47,5 +47,3 @@ def plot_cv_indices(cv, X, y, group, ax, n_splits, lw=10):
     ax.set_title("{}".format(type(cv).__name__), fontsize=15)
     return ax
 ```
-
-

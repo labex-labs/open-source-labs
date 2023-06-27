@@ -17,5 +17,3 @@ mlp_disp = PartialDependenceDisplay.from_estimator(
     mlp, X, ["age", "bmi"], ax=ax, line_kw={"color": "red"}
 )
 ```
-
-

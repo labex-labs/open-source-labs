@@ -9,5 +9,3 @@ from sklearn import svm
 clf = svm.SVC(kernel="linear", C=1000)
 clf.fit(X, y)
 ```
-
-

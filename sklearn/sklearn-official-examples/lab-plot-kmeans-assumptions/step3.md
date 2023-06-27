@@ -31,5 +31,3 @@ axs[1, 1].set_title("Unevenly Sized Blobs")
 plt.suptitle("Unexpected KMeans clusters").set_y(0.95)
 plt.show()
 ```
-
-

@@ -18,5 +18,3 @@ ax0.axvline(
 )
 ax0.legend(prop=dict(size=12))
 ```
-
-

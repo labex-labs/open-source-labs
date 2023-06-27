@@ -17,5 +17,3 @@ def compute_prediction(X, model_name):
         y_pred = clf.fit(X).decision_function(X)
     return y_pred
 ```
-
-

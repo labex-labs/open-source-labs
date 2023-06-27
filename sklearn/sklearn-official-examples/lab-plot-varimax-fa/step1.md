@@ -29,5 +29,3 @@ plt.colorbar(im).ax.set_ylabel("$r$", rotation=0)
 ax.set_title("Iris feature correlation matrix")
 plt.tight_layout()
 ```
-
-

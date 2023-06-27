@@ -16,5 +16,3 @@ plt.xlabel("$x$")
 plt.ylabel("$f(x)$")
 _ = plt.title("True generative process")
 ```
-
-

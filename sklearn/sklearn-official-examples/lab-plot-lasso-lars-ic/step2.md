@@ -9,5 +9,3 @@ from sklearn.pipeline import make_pipeline
 
 lasso_lars_ic = make_pipeline(StandardScaler(), LassoLarsIC(criterion="aic")).fit(X, y)
 ```
-
-

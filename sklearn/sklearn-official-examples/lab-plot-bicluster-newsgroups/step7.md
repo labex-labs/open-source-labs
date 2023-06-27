@@ -8,5 +8,3 @@ kmeans = MiniBatchKMeans(
 )
 y_kmeans = kmeans.fit_predict(X)
 ```
-
-

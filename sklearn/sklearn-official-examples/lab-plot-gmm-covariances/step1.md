@@ -8,5 +8,3 @@ from sklearn import datasets
 from sklearn.mixture import GaussianMixture
 from sklearn.model_selection import StratifiedKFold
 ```
-
-

@@ -12,5 +12,3 @@ from sklearn.datasets import make_moons, make_circles, make_classification
 from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import make_pipeline
 ```
-
-

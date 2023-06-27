@@ -32,5 +32,3 @@ def load_mnist(n_samples=None, class_0="0", class_1="8"):
 X, y = load_mnist(n_samples=10000)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=0)
 ```
-
-

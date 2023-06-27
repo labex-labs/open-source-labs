@@ -7,5 +7,3 @@ We will train the model using logistic regression with L1 penalty and SAGA algor
 clf = LogisticRegression(C=50.0 / train_samples, penalty="l1", solver="saga", tol=0.1)
 clf.fit(X_train, y_train)
 ```
-
-

@@ -28,5 +28,3 @@ def token_freqs(doc):
         freq[tok] += 1
     return freq
 ```
-
-

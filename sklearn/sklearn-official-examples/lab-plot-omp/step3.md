@@ -7,5 +7,3 @@ plt.xlim(0, 512)
 plt.title("Sparse signal")
 plt.stem(idx, w[idx])
 ```
-
-

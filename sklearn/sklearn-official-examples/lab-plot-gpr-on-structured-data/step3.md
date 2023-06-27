@@ -18,5 +18,3 @@ plt.title("Regression on sequences")
 plt.legend()
 plt.show()
 ```
-
-

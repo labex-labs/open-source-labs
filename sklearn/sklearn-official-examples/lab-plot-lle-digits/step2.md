@@ -38,5 +38,3 @@ def plot_embedding(X, title):
     ax.set_title(title)
     ax.axis("off")
 ```
-
-

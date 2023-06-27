@@ -70,5 +70,3 @@ def plot_subfigure(X, Y, subplot, title, transform):
         plt.ylabel("Second principal component")
         plt.legend(loc="upper left")
 ```
-
-

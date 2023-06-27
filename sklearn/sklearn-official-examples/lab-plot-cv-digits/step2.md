@@ -7,5 +7,3 @@ from sklearn import svm
 
 svc = svm.SVC(kernel="linear")
 ```
-
-

@@ -6,5 +6,3 @@ We will only take the first two features of the Iris dataset, which are the sepa
 X = iris.data[:, :2]
 y = iris.target
 ```
-
-

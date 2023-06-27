@@ -7,5 +7,3 @@ After generating the dataset, we will fit the classifier using `LogisticRegressi
 clf = LogisticRegression(C=1e5)
 clf.fit(X, y)
 ```
-
-

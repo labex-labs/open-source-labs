@@ -12,5 +12,3 @@ X, y = load_iris(return_X_y=True)
 rng = np.random.RandomState(0)
 X = np.hstack((X, 2 * rng.random((X.shape[0], 36))))
 ```
-
-

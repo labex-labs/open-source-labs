@@ -68,5 +68,3 @@ for n, (name, estimator) in enumerate(estimators):
 plt.subplots_adjust(right=0.75)
 plt.show()
 ```
-
-

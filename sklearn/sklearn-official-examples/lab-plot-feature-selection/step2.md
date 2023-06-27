@@ -10,5 +10,3 @@ selector.fit(X_train, y_train)
 scores = -np.log10(selector.pvalues_)
 scores /= scores.max()
 ```
-
-

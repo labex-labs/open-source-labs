@@ -10,5 +10,3 @@ plt.figure(1, figsize=(3, 3))
 plt.imshow(digits.images[-1], cmap=plt.cm.gray_r, interpolation="nearest")
 plt.show()
 ```
-
-

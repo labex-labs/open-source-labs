@@ -20,5 +20,3 @@ y_train = f(x_train)
 X_train = x_train[:, np.newaxis]
 X_plot = x_plot[:, np.newaxis]
 ```
-
-

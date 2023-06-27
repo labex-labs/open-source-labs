@@ -5,5 +5,3 @@ We will define different values for the regularization parameter, alpha. We will
 ```python
 alphas = np.logspace(-1, 1, 5)
 ```
-
-

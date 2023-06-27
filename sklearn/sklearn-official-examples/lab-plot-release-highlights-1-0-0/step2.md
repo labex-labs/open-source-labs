@@ -5,5 +5,3 @@ We will generate some random data using scikit-learn's `make_regression` functio
 ```python
 X, y = make_regression(n_samples=1000, n_features=10, noise=20)
 ```
-
-

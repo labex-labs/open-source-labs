@@ -21,5 +21,3 @@ plt.xlabel("alpha")
 plt.axhline(np.max(scores), linestyle="--", color=".5")
 plt.xlim([alphas[0], alphas[-1]])
 ```
-
-

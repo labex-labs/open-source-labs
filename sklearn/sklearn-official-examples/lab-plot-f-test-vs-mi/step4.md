@@ -6,5 +6,3 @@ We will now calculate the mutual information score for each feature. Mutual info
 mi = mutual_info_regression(X, y)
 mi /= np.max(mi)
 ```
-
-

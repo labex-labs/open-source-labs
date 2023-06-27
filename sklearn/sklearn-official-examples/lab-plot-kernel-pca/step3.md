@@ -9,5 +9,3 @@ pca = PCA(n_components=2)
 
 X_test_pca = pca.fit(X_train).transform(X_test)
 ```
-
-

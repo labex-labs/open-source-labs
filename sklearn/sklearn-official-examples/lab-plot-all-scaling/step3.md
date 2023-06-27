@@ -16,5 +16,3 @@ distributions = [
     ("Data after power transformation (Box-Cox)", PowerTransformer(method="box-cox").fit_transform(X)),
 ]
 ```
-
-

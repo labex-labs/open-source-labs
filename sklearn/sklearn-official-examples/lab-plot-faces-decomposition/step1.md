@@ -68,5 +68,3 @@ def plot_gallery(title, images, n_col=n_col, n_row=n_row, cmap=plt.cm.gray):
 
 plot_gallery("Faces from dataset", faces_centered[:n_components])
 ```
-
-

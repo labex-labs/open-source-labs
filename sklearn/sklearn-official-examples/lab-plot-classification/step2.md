@@ -5,5 +5,3 @@ We will then load the Iris dataset using the `load_iris()` function from the `da
 ```python
 iris = datasets.load_iris()
 ```
-
-

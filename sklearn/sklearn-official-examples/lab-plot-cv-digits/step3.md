@@ -5,5 +5,3 @@ We will test different values of the regularization parameter C, which controls 
 ```python
 C_s = np.logspace(-10, 0, 10)
 ```
-
-

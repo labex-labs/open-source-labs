@@ -13,5 +13,3 @@ X, y = make_blobs(
     random_state=1,
 )  # For reproducibility
 ```
-
-

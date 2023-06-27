@@ -30,5 +30,3 @@ ax1.set_title("Ridge regression \n with target transformation")
 f.suptitle("Synthetic data", y=1.05)
 plt.tight_layout()
 ```
-
-

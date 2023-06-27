@@ -33,5 +33,3 @@ for i in range(n_repeat):
 
 X_test, y_test = generate(n_samples=n_test, noise=noise, n_repeat=n_repeat)
 ```
-
-

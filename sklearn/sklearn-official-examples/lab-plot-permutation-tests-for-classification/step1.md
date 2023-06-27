@@ -14,5 +14,3 @@ n_uncorrelated_features = 20
 rng = np.random.RandomState(seed=0)
 X_rand = rng.normal(size=(X.shape[0], n_uncorrelated_features))
 ```
-
-

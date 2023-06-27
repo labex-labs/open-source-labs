@@ -20,6 +20,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git clone https://huhuhang:$GH_TOKEN@github.com/labex-labs/scripts /tmp/scripts
+      - name: set-fee-type
+        run: |
+          python /tmp/scripts/set-fee-type.py --path . --type free
       - name: sync-labs-contributors
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}

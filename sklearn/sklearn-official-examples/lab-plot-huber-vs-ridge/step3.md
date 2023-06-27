@@ -12,5 +12,3 @@ y_outliers[2:] += y.max() + y.mean() / 4.0
 X = np.vstack((X, X_outliers))
 y = np.concatenate((y, y_outliers))
 ```
-
-

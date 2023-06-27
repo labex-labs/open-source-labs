@@ -18,5 +18,3 @@ gradient_boosting = GradientBoostingClassifier(
 )
 _ = gradient_boosting.fit(X_train_ensemble, y_train_ensemble)
 ```
-
-

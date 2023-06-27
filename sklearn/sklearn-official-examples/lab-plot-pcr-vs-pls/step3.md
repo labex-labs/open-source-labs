@@ -19,5 +19,3 @@ pca = pcr.named_steps["pca"]  # retrieve the PCA step of the pipeline
 pls = PLSRegression(n_components=1)
 pls.fit(X_train, y_train)
 ```
-
-

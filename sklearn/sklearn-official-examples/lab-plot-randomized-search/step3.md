@@ -26,5 +26,3 @@ print(
 # print results
 report(random_search.cv_results_)
 ```
-
-

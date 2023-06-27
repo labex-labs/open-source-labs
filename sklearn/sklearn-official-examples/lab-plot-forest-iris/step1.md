@@ -15,5 +15,3 @@ from sklearn.ensemble import (
 )
 from sklearn.tree import DecisionTreeClassifier
 ```
-
-

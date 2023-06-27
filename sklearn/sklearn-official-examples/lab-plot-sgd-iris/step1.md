@@ -28,5 +28,3 @@ mean = X.mean(axis=0)
 std = X.std(axis=0)
 X = (X - mean) / std
 ```
-
-

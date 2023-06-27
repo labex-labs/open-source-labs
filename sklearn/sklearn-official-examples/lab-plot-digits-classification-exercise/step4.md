@@ -11,5 +11,3 @@ knn_score = knn.score(X_test, y_test)
 
 print("KNN score: %f" % knn_score)
 ```
-
-

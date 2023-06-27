@@ -12,5 +12,3 @@ X, y_true = make_blobs(
 )
 X = X[:, ::-1]
 ```
-
-

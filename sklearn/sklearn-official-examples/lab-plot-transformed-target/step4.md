@@ -17,5 +17,3 @@ print("\nLinear Regression on transformed targets:")
 for key, val in score.items():
     print(f"{key}: {val}")
 ```
-
-

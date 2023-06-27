@@ -9,5 +9,3 @@ clf = LogisticRegression(
 
 print("training score : %.3f (%s)" % (clf.score(X, y), "ovr"))
 ```
-
-

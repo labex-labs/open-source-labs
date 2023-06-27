@@ -18,5 +18,3 @@ clf = Pipeline(
     steps=[("preprocessor", preprocessor), ("classifier", LogisticRegression())]
 )
 ```
-
-

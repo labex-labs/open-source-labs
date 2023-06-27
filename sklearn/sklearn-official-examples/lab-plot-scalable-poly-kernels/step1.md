@@ -22,5 +22,3 @@ mm = make_pipeline(MinMaxScaler(), Normalizer())
 X_train = mm.fit_transform(X_train)
 X_test = mm.transform(X_test)
 ```
-
-

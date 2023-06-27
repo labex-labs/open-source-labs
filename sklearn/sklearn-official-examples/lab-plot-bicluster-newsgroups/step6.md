@@ -9,5 +9,3 @@ cocluster = SpectralCoclustering(
 cocluster.fit(X)
 y_cocluster = cocluster.row_labels_
 ```
-
-

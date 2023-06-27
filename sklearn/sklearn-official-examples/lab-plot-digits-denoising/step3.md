@@ -17,5 +17,3 @@ plot_digits(
     X_test_noisy, f"Noisy test images\nMSE: {np.mean((X_test - X_test_noisy) ** 2):.2f}"
 )
 ```
-
-

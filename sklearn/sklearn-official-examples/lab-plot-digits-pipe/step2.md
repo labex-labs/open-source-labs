@@ -13,5 +13,3 @@ logistic = LogisticRegression(max_iter=10000, tol=0.1)
 
 pipe = Pipeline(steps=[("scaler", scaler), ("pca", pca), ("logistic", logistic)])
 ```
-
-

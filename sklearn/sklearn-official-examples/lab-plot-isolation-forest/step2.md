@@ -12,5 +12,3 @@ plt.legend(handles=handles, labels=["outliers", "inliers"], title="true class")
 plt.title("Gaussian inliers with \nuniformly distributed outliers")
 plt.show()
 ```
-
-

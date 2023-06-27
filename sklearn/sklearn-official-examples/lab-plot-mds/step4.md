@@ -14,5 +14,3 @@ mds = manifold.MDS(
 )
 pos = mds.fit(similarities).embedding_
 ```
-
-

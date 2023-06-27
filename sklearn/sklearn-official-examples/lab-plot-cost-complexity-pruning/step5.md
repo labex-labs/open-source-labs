@@ -6,5 +6,3 @@ We will remove the trivial tree with only one node from the list of decision tre
 clfs = clfs[:-1]
 ccp_alphas = ccp_alphas[:-1]
 ```
-
-

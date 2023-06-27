@@ -100,5 +100,3 @@ def refit_strategy(cv_results):
 
     return fastest_top_recall_high_precision_index
 ```
-
-

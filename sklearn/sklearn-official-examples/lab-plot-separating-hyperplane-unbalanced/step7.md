@@ -9,5 +9,3 @@ plt.legend(
     loc="upper right",
 )
 ```
-
-

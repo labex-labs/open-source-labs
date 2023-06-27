@@ -17,5 +17,3 @@ hist_one_hot = make_pipeline(
     one_hot_encoder, HistGradientBoostingRegressor(random_state=42)
 )
 ```
-
-

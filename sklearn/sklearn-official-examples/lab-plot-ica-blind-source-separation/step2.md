@@ -17,5 +17,3 @@ assert np.allclose(X, np.dot(S_, A_.T) + ica.mean_)
 pca = PCA(n_components=3)
 H = pca.fit_transform(X)  # Reconstruct signals based on orthogonal components
 ```
-
-

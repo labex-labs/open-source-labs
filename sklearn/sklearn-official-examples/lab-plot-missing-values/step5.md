@@ -16,5 +16,3 @@ mses_diabetes[2], stds_diabetes[2] = get_impute_knn_score(
 )
 x_labels.append("KNN Imputation")
 ```
-
-

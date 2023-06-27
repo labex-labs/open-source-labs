@@ -6,5 +6,3 @@ In this step, we will declare the inductive learning model that will be used to 
 classifier = RandomForestClassifier(random_state=42)
 inductive_learner = InductiveClusterer(clusterer, classifier).fit(X)
 ```
-
-

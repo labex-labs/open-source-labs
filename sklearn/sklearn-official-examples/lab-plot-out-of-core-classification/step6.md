@@ -42,5 +42,3 @@ for i, (X_train_text, y_train) in enumerate(minibatch_iterators):
     if i % 3 == 0:
         print("\n")
 ```
-
-

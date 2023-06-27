@@ -14,5 +14,3 @@ score_iris, perm_scores_iris, pvalue_iris = permutation_test_score(
     clf, X, y, scoring="accuracy", cv=cv, n_permutations=1000
 )
 ```
-
-

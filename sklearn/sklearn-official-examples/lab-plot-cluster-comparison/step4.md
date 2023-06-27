@@ -38,5 +38,3 @@ gmm = mixture.GaussianMixture(
     n_components=params["n_clusters"], covariance_type="full"
 )
 ```
-
-

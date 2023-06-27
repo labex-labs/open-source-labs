@@ -21,5 +21,3 @@ y_scaler = StandardScaler()
 y_train = y_scaler.fit_transform(y_train[:, None])[:, 0]
 y_test = y_scaler.transform(y_test[:, None])[:, 0]
 ```
-
-

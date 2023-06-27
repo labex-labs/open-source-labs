@@ -13,5 +13,3 @@ disp = ConfusionMatrixDisplay.from_estimator(
     normalize=None,
 )
 ```
-
-

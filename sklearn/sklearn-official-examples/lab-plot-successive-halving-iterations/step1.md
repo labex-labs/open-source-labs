@@ -12,5 +12,3 @@ from scipy.stats import randint
 from sklearn.experimental import enable_halving_search_cv
 from sklearn.model_selection import HalvingRandomSearchCV
 ```
-
-

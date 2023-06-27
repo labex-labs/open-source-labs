@@ -13,5 +13,3 @@ ksvm_score = 100 * ksvm.score(X_test, y_test)
 # Print the accuracy of the kernelized SVM
 print(f"Kernel-SVM score on raw features: {ksvm_score:.2f}%")
 ```
-
-

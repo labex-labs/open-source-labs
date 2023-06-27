@@ -9,5 +9,3 @@ from matplotlib import cm
 from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.gaussian_process.kernels import DotProduct, ConstantKernel as C
 ```
-
-

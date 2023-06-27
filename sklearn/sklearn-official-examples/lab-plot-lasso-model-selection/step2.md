@@ -15,5 +15,3 @@ X_random = pd.DataFrame(
 X = pd.concat([X, X_random], axis=1)
 X[X.columns[::3]].head()
 ```
-
-

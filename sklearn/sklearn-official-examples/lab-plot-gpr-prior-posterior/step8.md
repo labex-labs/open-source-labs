@@ -28,5 +28,3 @@ axs[1].set_title("Samples from posterior distribution")
 fig.suptitle("Matérn kernel", fontsize=18)
 plt.tight_layout()
 ```
-
-

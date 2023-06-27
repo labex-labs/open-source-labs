@@ -13,5 +13,3 @@ pls1.fit(X, y)
 print("Estimated betas")
 print(np.round(pls1.coef_, 1))
 ```
-
-

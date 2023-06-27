@@ -20,5 +20,3 @@ for idx, ax in enumerate(axs.ravel()):
     ax.axis("off")
 _ = fig.suptitle("A selection from the 64-dimensional digits dataset", fontsize=16)
 ```
-
-

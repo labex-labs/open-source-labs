@@ -6,5 +6,3 @@ We will print the best parameters and score obtained from the GridSearchCV.
 print("Best parameter (CV score=%0.3f):" % search.best_score_)
 print(search.best_params_)
 ```
-
-

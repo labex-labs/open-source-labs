@@ -11,5 +11,3 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.datasets import load_digits
 from sklearn.pipeline import Pipeline
 ```
-
-

@@ -12,5 +12,3 @@ for real_test_predict, discrete_test_predict in zip(
     real_test_errors.append(1.0 - accuracy_score(real_test_predict, y_test))
     discrete_test_errors.append(1.0 - accuracy_score(discrete_test_predict, y_test))
 ```
-
-

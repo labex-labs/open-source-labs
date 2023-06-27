@@ -6,5 +6,3 @@ In this step, we will use the KBinsDiscretizer class to discretize the input fea
 enc = KBinsDiscretizer(n_bins=10, encode="onehot")
 X_binned = enc.fit_transform(X)
 ```
-
-

@@ -12,5 +12,3 @@ In this step, we will plot the decision boundary created in the previous step. W
     ax.set_title(title)
     ax.set_aspect("equal")
 ```
-
-

@@ -21,5 +21,3 @@ X = np.concatenate([X, random_state.randn(n_samples, 200 * n_features)], axis=1)
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, stratify=y, random_state=0)
 ```
-
-

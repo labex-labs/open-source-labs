@@ -14,5 +14,3 @@ feature_mapping = {
     "AveOccup": "Average house occupancy",
 }
 ```
-
-

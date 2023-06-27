@@ -6,5 +6,3 @@ We will fit a model on the generated data without any constraints to see how the
 gbdt_no_cst = HistGradientBoostingRegressor()
 gbdt_no_cst.fit(X, y)
 ```
-
-

@@ -12,5 +12,3 @@ from sklearn.neighbors import KNeighborsClassifier, NeighborhoodComponentsAnalys
 from sklearn.pipeline import Pipeline
 from sklearn.inspection import DecisionBoundaryDisplay
 ```
-
-

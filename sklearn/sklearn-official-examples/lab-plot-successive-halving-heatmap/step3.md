@@ -10,5 +10,3 @@ gsh = HalvingGridSearchCV(
 gsh.fit(X, y)
 gsh_time = time() - tic
 ```
-
-

@@ -13,5 +13,3 @@ y_pred_enet = enet.predict(X_test)
 r2_score_enet = r2_score(y_test, y_pred_enet)
 print(f"ElasticNet r^2 on test data : {r2_score_enet:.3f}")
 ```
-
-

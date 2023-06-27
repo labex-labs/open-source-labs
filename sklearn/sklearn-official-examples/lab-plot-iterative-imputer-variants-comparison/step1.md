@@ -18,5 +18,3 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import cross_val_score
 ```
-
-

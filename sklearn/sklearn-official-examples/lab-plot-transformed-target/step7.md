@@ -18,5 +18,3 @@ ax1.set_title("Transformed target distribution")
 f.suptitle("Ames housing data: selling price", y=1.05)
 plt.tight_layout()
 ```
-
-

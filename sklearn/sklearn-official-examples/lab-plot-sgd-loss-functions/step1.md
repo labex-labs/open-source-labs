@@ -13,5 +13,3 @@ def modified_huber_loss(y_true, y_pred):
     loss[z >= 1.0] = 0
     return loss
 ```
-
-

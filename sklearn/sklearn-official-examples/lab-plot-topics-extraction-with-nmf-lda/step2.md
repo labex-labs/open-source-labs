@@ -19,5 +19,3 @@ tf_vectorizer = CountVectorizer(
 )
 tf = tf_vectorizer.fit_transform(data_samples)
 ```
-
-

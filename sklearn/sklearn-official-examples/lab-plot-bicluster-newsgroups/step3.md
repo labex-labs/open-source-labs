@@ -8,5 +8,3 @@ class NumberNormalizingVectorizer(TfidfVectorizer):
         tokenize = super().build_tokenizer()
         return lambda doc: list(number_normalizer(tokenize(doc)))
 ```
-
-

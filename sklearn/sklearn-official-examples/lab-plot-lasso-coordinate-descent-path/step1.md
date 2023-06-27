@@ -11,5 +11,3 @@ X, y = datasets.load_diabetes(return_X_y=True)
 # Standardize data
 X /= X.std(axis=0)
 ```
-
-

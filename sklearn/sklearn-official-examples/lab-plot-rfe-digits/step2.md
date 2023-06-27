@@ -10,5 +10,3 @@ svc = SVC(kernel="linear", C=1)
 rfe = RFE(estimator=svc, n_features_to_select=1, step=1)
 rfe.fit(X, y)
 ```
-
-

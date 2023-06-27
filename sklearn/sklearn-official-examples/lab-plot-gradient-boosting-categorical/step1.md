@@ -37,5 +37,3 @@ numerical_columns_subset = [
 X = X[categorical_columns_subset + numerical_columns_subset]
 X[categorical_columns_subset] = X[categorical_columns_subset].astype("category")
 ```
-
-

@@ -13,5 +13,3 @@ X, labels_true = make_blobs(
 
 X = StandardScaler().fit_transform(X)
 ```
-
-

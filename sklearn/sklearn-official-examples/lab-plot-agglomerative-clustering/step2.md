@@ -13,5 +13,3 @@ X = np.concatenate((x, y))
 X += 0.7 * np.random.randn(2, n_samples)
 X = X.T
 ```
-
-

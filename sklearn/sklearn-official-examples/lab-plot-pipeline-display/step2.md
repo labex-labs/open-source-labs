@@ -31,5 +31,3 @@ Finally, we display the visual representation of the pipeline:
 ```python
 pipe
 ```
-
-

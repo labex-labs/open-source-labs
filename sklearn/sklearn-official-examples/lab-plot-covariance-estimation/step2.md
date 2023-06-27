@@ -15,5 +15,3 @@ real_cov = np.dot(coloring_matrix.T, coloring_matrix)
 emp_cov = empirical_covariance(X_train)
 loglik_real = -log_likelihood(emp_cov, linalg.inv(real_cov))
 ```
-
-

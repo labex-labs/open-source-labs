@@ -12,5 +12,3 @@ mses_california[3], stds_california[3] = get_impute_mean(
 mses_diabetes[3], stds_diabetes[3] = get_impute_mean(X_miss_diabetes, y_miss_diabetes)
 x_labels.append("Mean Imputation")
 ```
-
-

@@ -10,5 +10,3 @@ ytrain = np.array(
 )
 Xtrain *= np.pi / 180.0  # Convert lat/long to radians
 ```
-
-

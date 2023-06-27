@@ -14,5 +14,3 @@ grid = GridSearchCV(
 
 grid.fit(X, y)
 ```
-
-

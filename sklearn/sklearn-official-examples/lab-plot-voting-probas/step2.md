@@ -9,5 +9,3 @@ eclf = VotingClassifier(
     weights=[1, 1, 5],
 )
 ```
-
-

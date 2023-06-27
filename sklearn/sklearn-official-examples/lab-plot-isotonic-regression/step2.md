@@ -8,5 +8,3 @@ x = np.arange(n)
 rs = check_random_state(0)
 y = rs.randint(-50, 50, size=(n,)) + 50.0 * np.log1p(np.arange(n))
 ```
-
-

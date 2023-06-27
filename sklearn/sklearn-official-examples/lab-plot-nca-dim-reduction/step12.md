@@ -1,3 +1,3 @@
-#  Display plots
+# Display plots
 
 Display the plots using `plt.show()`.

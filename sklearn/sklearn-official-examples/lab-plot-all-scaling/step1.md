@@ -13,5 +13,3 @@ dataset = fetch_california_housing()
 X_full, y_full = dataset.data, dataset.target
 feature_names = dataset.feature_names
 ```
-
-

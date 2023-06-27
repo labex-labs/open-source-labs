@@ -62,5 +62,3 @@ for dataset_name, (X, y) in datasets:
                 " (transform)"
             )
 ```
-
-

@@ -1,4 +1,5 @@
 # Apply LDA
+
 We will apply LDA models with tf features.
 
 ```python
@@ -22,4 +23,4 @@ print("done in %0.3fs." % (time() - t0))
 
 tf_feature_names = tf_vectorizer.get_feature_names_out()
 plot_top_words(lda, tf_feature_names, n_top_words, "Topics in LDA model")
-````
+```

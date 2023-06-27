@@ -81,5 +81,3 @@ plt.ylabel("target")
 _ = plt.title("Gaussian process regressor")
 
 ```
-
-

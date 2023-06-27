@@ -13,5 +13,3 @@ from sklearn.linear_model import SGDClassifier
 # load digits dataset
 X, y = load_digits(return_X_y=True, n_class=3)
 ```
-
-

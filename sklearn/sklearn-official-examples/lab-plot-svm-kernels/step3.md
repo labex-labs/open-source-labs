@@ -8,5 +8,3 @@ for kernel in ("linear", "poly", "rbf"):
     clf = svm.SVC(kernel=kernel, gamma=2)
     clf.fit(X, Y)
 ```
-
-

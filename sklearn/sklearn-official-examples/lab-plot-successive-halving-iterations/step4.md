@@ -15,5 +15,3 @@ rsh = HalvingRandomSearchCV(
     estimator=clf, param_distributions=param_dist, factor=2, random_state=rng
 )
 ```
-
-

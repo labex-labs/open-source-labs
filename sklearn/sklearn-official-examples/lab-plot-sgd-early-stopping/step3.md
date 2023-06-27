@@ -30,5 +30,3 @@ columns = [
 ]
 results_df = pd.DataFrame(results, columns=columns)
 ```
-
-

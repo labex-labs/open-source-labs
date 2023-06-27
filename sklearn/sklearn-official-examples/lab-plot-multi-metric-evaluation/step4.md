@@ -14,5 +14,3 @@ gs = GridSearchCV(
 gs.fit(X, y)
 results = gs.cv_results_
 ```
-
-

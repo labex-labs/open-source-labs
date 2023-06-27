@@ -10,5 +10,3 @@ threshold = np.sort(importance)[-3] + 0.01
 sfm = SelectFromModel(ridge, threshold=threshold).fit(X, y)
 print(f"Features selected by SelectFromModel: {feature_names[sfm.get_support()]}")
 ```
-
-

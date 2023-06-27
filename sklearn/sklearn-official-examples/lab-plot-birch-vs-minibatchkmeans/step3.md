@@ -32,5 +32,3 @@ for ind, (birch_model, info) in enumerate(zip(birch_models, final_step)):
     ax.set_autoscaley_on(False)
     ax.set_title("BIRCH %s" % info)
 ```
-
-

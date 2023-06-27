@@ -13,5 +13,3 @@ plot_samples(
     r"for $\gamma_0=0.01$ sampled with $2000$ samples.",
 )
 ```
-
-

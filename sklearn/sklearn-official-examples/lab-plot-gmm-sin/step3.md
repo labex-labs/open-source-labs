@@ -8,5 +8,3 @@ gmm = mixture.GaussianMixture(
     n_components=10, covariance_type="full", max_iter=100
 ).fit(X)
 ```
-
-

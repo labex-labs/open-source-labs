@@ -21,5 +21,3 @@ ada_real = AdaBoostClassifier(
 )
 ada_real.fit(X_train, y_train)
 ```
-
-

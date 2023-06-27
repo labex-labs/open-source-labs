@@ -9,5 +9,3 @@ Z = clf.decision_function(np.c_[xx.ravel(), yy.ravel()])
 Z = Z.reshape(xx.shape)
 no_weights = ax.contour(xx, yy, Z, levels=[0], linestyles=["solid"])
 ```
-
-

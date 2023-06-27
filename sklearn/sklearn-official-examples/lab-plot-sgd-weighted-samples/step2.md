@@ -9,5 +9,3 @@ y = [1] * 10 + [-1] * 10
 sample_weight = 100 * np.abs(np.random.randn(20))
 sample_weight[:10] *= 10
 ```
-
-

@@ -6,5 +6,3 @@ ridge = BayesianRidge()
 cachedir = tempfile.mkdtemp()
 mem = Memory(location=cachedir, verbose=1)
 ```
-
-

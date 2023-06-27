@@ -18,5 +18,3 @@ print(f"Elapsed time: {time.time() - st:.3f}s")
 print(f"Number of pixels: {label.size}")
 print(f"Number of clusters: {np.unique(label).size}")
 ```
-
-
