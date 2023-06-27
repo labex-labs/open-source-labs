@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep -E '[.Age.][[:space:]]*>[[:space:]]*'
+git diff | grep -E '[[:space:]]*>[[:space:]]*'
