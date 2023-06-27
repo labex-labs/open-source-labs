@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep '\[\\"Age\\", \\"Sex\\"\]'
+git diff | grep 'Sex'
