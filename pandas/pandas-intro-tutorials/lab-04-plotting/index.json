@@ -1,0 +1,180 @@
+{
+  "type": "lab",
+  "title": "Pandas Plotting Tutorial",
+  "description": "In this lab, we will learn how to create plots using Pandas, a powerful data manipulation library in Python. We will use real air quality data for practical illustrations. By the end of this lab, you should be able to use Pandas to create line plots, scatter plots, box plots, and customize your plots.",
+  "difficulty": "Beginner",
+  "time": 40,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Necessary Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/pandas",
+          "python/matplotlib"
+        ]
+      },
+      {
+        "title": "Load the Data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/read_csv",
+          "pandas/head"
+        ]
+      },
+      {
+        "title": "Create a Line Plot",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/plot",
+          "matplotlib/show"
+        ]
+      },
+      {
+        "title": "Create a Plot for a Specific Column",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/square_brackets",
+          "pandas/plot",
+          "matplotlib/show"
+        ]
+      },
+      {
+        "title": "Create a Scatter Plot",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/plot_scatter",
+          "matplotlib/show"
+        ]
+      },
+      {
+        "title": "Create a Box Plot",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/plot_box",
+          "matplotlib/show"
+        ]
+      },
+      {
+        "title": "Create Subplots for Each Column",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/plot_area",
+          "matplotlib/show"
+        ]
+      },
+      {
+        "title": "Customize and Save the Plot",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "You need to practice the code in 04-plotting.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "matplotlib/sub_plot",
+          "pandas/plot_area",
+          "matplotlib/xy_label",
+          "matplotlib/savefig",
+          "matplotlib/show"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "04-plotting.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "data/air_quality_no2.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
+    "repo": "https://github.com/pandas-dev/pandas"
+  }
+}
