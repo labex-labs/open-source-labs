@@ -9,5 +9,3 @@ plt.xlabel("X")
 plt.ylabel("y")
 plt.show()
 ```
-
-

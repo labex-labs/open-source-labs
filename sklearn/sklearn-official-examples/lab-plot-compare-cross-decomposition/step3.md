@@ -22,5 +22,3 @@ print("Estimated B")
 print(np.round(pls2.coef_, 1))
 pls2.predict(X)
 ```
-
-

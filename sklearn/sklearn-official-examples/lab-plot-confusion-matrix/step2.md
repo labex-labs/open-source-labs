@@ -8,5 +8,3 @@ X = iris.data
 y = iris.target
 class_names = iris.target_names
 ```
-
-

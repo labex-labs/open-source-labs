@@ -15,5 +15,3 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, stratify=y)
 clf = make_pipeline(StandardScaler(), LogisticRegression(random_state=0))
 clf.fit(X_train, y_train)
 ```
-
-

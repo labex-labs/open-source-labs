@@ -25,5 +25,3 @@ ax.set_ylabel("Features")
 fig.tight_layout()
 plt.show()
 ```
-
-

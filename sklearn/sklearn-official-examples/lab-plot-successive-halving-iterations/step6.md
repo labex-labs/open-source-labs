@@ -39,5 +39,3 @@ ax.set_xlabel("iterations", fontsize=15)
 plt.tight_layout()
 plt.show()
 ```
-
-

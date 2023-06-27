@@ -22,5 +22,3 @@ print(
     f"{feature_names[sfs.get_support()].tolist()}"
 )
 ```
-
-

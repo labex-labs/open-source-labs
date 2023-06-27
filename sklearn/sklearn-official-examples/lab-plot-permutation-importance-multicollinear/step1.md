@@ -11,5 +11,3 @@ clf = RandomForestClassifier(n_estimators=100, random_state=42)
 clf.fit(X_train, y_train)
 print("Accuracy on test data: {:.2f}".format(clf.score(X_test, y_test)))
 ```
-
-

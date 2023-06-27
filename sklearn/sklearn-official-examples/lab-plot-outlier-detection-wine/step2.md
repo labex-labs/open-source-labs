@@ -13,5 +13,3 @@ classifiers = {
 }
 colors = ["m", "g", "b"]
 ```
-
-

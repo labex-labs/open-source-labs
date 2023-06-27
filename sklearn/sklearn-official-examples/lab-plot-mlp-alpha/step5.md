@@ -21,5 +21,3 @@ We will plot each dataset and color the training and testing points differently.
     ax.set_yticks(())
     i += 1
 ```
-
-

@@ -34,5 +34,3 @@ plot_results(
     X, gmm.predict(X), gmm.means_, gmm.covariances_, 0, "Expectation-maximization"
 )
 ```
-
-

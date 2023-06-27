@@ -39,5 +39,3 @@ y_kr = kr.predict(X_plot)
 kr_predict = time.time() - t0
 print("KRR prediction for %d inputs in %.3f s" % (X_plot.shape[0], kr_predict))
 ```
-
-

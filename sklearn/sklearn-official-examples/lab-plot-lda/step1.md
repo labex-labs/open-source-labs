@@ -22,5 +22,3 @@ def generate_data(n_samples, n_features):
         X = np.hstack([X, np.random.randn(n_samples, n_features - 1)])
     return X, y
 ```
-
-

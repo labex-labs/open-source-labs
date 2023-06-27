@@ -9,5 +9,3 @@ plt.xlim(0, 512)
 plt.title("Recovered signal from noisy measurements")
 plt.stem(idx_r, coef[idx_r])
 ```
-
-

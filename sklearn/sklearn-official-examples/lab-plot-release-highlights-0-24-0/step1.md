@@ -33,5 +33,3 @@ rsh = HalvingRandomSearchCV(
 rsh.fit(X, y)
 print(rsh.best_params_)
 ```
-
-

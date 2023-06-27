@@ -31,5 +31,3 @@ y += 0.2 * rng.normal(0, 1, n_samples)
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, shuffle=False)
 ```
-
-

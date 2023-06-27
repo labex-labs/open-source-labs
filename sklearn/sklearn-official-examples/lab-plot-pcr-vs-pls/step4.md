@@ -28,5 +28,3 @@ We print the R-squared scores of both estimators, which further confirms that PL
 print(f"PCR r-squared {pcr.score(X_test, y_test):.3f}")
 print(f"PLS r-squared {pls.score(X_test, y_test):.3f}")
 ```
-
-

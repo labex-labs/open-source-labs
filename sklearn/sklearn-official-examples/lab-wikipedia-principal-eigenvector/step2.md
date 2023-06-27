@@ -53,5 +53,3 @@ def get_redirects(redirects_filename):
 # Loading the redirect files
 redirects = get_redirects(redirects_filename)
 ```
-
-

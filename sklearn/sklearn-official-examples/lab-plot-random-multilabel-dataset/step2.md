@@ -32,5 +32,3 @@ def plot_2d(ax, n_labels=1, n_classes=3, length=50):
 ```
 
 This function generates the dataset using the `make_multilabel_classification` function with the specified parameters. Then, it plots the dataset using the `scatter` function of Matplotlib library. The function returns the class probabilities and feature probabilities.
-
-

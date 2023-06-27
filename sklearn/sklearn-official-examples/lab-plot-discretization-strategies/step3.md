@@ -57,5 +57,3 @@ for ds_cnt, X in enumerate(X_list):
 plt.tight_layout()
 plt.show()
 ```
-
-

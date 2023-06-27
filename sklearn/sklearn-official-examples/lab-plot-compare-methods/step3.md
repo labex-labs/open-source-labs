@@ -6,5 +6,3 @@ Isomap seeks a lower-dimensional embedding that maintains geodesic distances bet
 isomap = manifold.Isomap(n_neighbors=n_neighbors, n_components=n_components, p=1)
 S_isomap = isomap.fit_transform(S_points)
 ```
-
-

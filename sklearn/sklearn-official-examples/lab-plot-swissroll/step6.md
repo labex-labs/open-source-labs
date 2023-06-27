@@ -11,5 +11,3 @@ ax.set_title("Swiss-Hole in Ambient Space")
 ax.view_init(azim=-66, elev=12)
 _ = ax.text2D(0.8, 0.05, s="n_samples=1500", transform=ax.transAxes)
 ```
-
-

@@ -24,5 +24,3 @@ X = prng.multivariate_normal(np.zeros(n_features), cov, size=n_samples)
 X -= X.mean(axis=0)
 X /= X.std(axis=0)
 ```
-
-

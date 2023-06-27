@@ -1,4 +1,4 @@
-#  Sample from Bayesian GMM with High Concentration Prior
+# Sample from Bayesian GMM with High Concentration Prior
 
 We will now sample from the Bayesian Gaussian Mixture Model with a Dirichlet process prior and a high value of the concentration prior.
 

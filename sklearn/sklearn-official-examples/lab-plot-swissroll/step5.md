@@ -5,5 +5,3 @@ We generate the Swiss-Hole dataset by adding a hole to the Swiss Roll dataset us
 ```python
 sh_points, sh_color = datasets.make_swiss_roll(n_samples=1500, hole=True, random_state=0)
 ```
-
-

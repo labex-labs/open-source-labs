@@ -7,5 +7,3 @@ pca = decomposition.PCA(n_components=3)
 pca.fit(X)
 X = pca.transform(X)
 ```
-
-

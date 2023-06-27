@@ -18,5 +18,3 @@ plt.yticks(np.arange(len(X)), X)
 plt.title("Sequence similarity under the kernel")
 plt.show()
 ```
-
-

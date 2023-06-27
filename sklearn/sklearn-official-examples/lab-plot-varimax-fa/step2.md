@@ -32,5 +32,3 @@ fig.suptitle("Factors")
 plt.tight_layout()
 plt.show()
 ```
-
-

@@ -13,5 +13,3 @@ n_samples = 30
 X = np.sort(np.random.rand(n_samples))
 y = true_fun(X) + np.random.randn(n_samples) * 0.1
 ```
-
-

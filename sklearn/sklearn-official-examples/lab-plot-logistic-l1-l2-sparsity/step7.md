@@ -8,5 +8,3 @@ We will visualize the coefficients of the models for each penalty and `C` value.
         ax.set_xticks(())
         ax.set_yticks(())
 ```
-
-

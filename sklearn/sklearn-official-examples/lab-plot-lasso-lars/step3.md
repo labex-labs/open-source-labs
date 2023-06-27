@@ -18,5 +18,3 @@ plt.title("LASSO Path")
 plt.axis("tight")
 plt.show()
 ```
-
-

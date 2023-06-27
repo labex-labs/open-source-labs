@@ -13,5 +13,3 @@ X /= X.std(axis=0)
 
 y = np.dot(X, coef.ravel())
 ```
-
-

@@ -6,5 +6,3 @@ We define the range of values for the decision function `f(x)`.
 xmin, xmax = -4, 4
 xx = np.linspace(xmin, xmax, 100)
 ```
-
-

@@ -10,5 +10,3 @@ X, y = make_blobs(
     random_state=42,
 )
 ```
-
-

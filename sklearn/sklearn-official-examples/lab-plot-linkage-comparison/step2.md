@@ -117,5 +117,3 @@ for i_dataset, (dataset, algo_params) in enumerate(datasets):
 
 plt.show()
 ```
-
-

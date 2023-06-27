@@ -22,5 +22,3 @@ data = fetch_20newsgroups(
 print("%d documents" % len(data.filenames))
 print("%d categories" % len(data.target_names))
 ```
-
-

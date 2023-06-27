@@ -22,5 +22,3 @@ plt.axis("tight")
 plt.axis("off")
 plt.suptitle("Ground truth", size=20, y=1)
 ```
-
-

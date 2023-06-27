@@ -19,5 +19,3 @@ for idx, scale in enumerate((1, 0.5, 3)):
     hdb.fit(X)
     plot(X, hdb.labels_, hdb.probabilities_, ax=axes[idx], parameters={"scale": scale})
 ```
-
-

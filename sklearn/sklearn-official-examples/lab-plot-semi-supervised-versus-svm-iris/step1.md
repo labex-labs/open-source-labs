@@ -14,5 +14,3 @@ iris = datasets.load_iris()
 X = iris.data[:, :2] # We will only use the first two features for visualization purposes
 y = iris.target
 ```
-
-

@@ -14,5 +14,3 @@ score_funcs = [
     ("AMI", metrics.adjusted_mutual_info_score),
 ]
 ```
-
-

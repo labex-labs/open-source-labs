@@ -8,5 +8,3 @@ coefs_cv = pd.Series(
 ).sort_values()
 _ = coefs_cv.plot(kind="barh")
 ```
-
-

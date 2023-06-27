@@ -32,5 +32,3 @@ def construct_grids(batch):
 # Construct the map grid
 xgrid, ygrid = construct_grids(data)
 ```
-
-

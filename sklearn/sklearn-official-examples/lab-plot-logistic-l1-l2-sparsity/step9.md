@@ -11,5 +11,3 @@ We will print the sparsity and scores for each model.
     print("{:<40} {:.2f}".format("Score with Elastic-Net penalty:", score_en_LR))
     print("{:<40} {:.2f}".format("Score with L2 penalty:", score_l2_LR))
 ```
-
-

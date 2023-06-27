@@ -5,5 +5,3 @@ We will now train the SGDClassifier model on the iris dataset with the help of t
 ```python
 clf = SGDClassifier(alpha=0.001, max_iter=100).fit(X, y)
 ```
-
-

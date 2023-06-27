@@ -30,5 +30,3 @@ axs[0, 0].set_xlabel("x")
 axs[1, 0].set_xlabel("Residuals")
 _ = axs[1, 1].set_xlabel("Residuals")
 ```
-
-

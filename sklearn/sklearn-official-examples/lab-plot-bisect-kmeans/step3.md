@@ -9,5 +9,3 @@ clustering_algorithms = {
     "K-Means": KMeans,
 }
 ```
-
-

@@ -23,5 +23,3 @@ self_training_model = SelfTrainingClassifier(svc)
 # fit the model
 self_training_model.fit(iris.data, iris.target)
 ```
-
-

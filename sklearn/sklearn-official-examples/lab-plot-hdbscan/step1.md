@@ -13,5 +13,3 @@ X, labels_true = make_blobs(n_samples=750, centers=centers, cluster_std=[0.4, 0.
 plt.scatter(X[:,0], X[:,1])
 plt.show()
 ```
-
-

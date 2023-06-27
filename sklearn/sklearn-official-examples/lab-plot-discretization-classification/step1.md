@@ -18,5 +18,3 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.utils._testing import ignore_warnings
 from sklearn.exceptions import ConvergenceWarning
 ```
-
-

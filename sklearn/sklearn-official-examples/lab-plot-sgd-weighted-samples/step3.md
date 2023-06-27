@@ -15,5 +15,3 @@ ax.scatter(
     edgecolor="black",
 )
 ```
-
-

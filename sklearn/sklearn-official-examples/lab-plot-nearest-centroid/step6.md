@@ -8,5 +8,3 @@ DecisionBoundaryDisplay.from_estimator(
     clf, X, cmap=cmap_light, ax=ax, response_method="predict"
 )
 ```
-
-

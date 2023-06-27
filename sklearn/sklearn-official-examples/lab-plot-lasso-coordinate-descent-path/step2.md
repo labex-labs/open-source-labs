@@ -26,5 +26,3 @@ plt.title("Lasso Path")
 plt.axis("tight")
 plt.show()
 ```
-
-

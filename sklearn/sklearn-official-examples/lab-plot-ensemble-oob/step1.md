@@ -10,5 +10,3 @@ from sklearn.ensemble import RandomForestClassifier
 
 RANDOM_STATE = 123
 ```
-
-

@@ -17,5 +17,3 @@ data, _ = fetch_20newsgroups(
 )
 data_samples = data[:n_samples]
 ```
-
-

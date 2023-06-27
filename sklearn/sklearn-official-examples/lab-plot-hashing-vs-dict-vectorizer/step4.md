@@ -13,5 +13,3 @@ duration = time() - t0
 print(f"done in {duration:.3f} s")
 print(f"Found {len(np.unique(X.nonzero()[1]))} unique tokens")
 ```
-
-

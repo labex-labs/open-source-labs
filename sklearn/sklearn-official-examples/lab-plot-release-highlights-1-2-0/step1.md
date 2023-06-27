@@ -11,5 +11,3 @@ Or, if you are using conda:
 ```python
 conda install -c conda-forge scikit-learn
 ```
-
-

@@ -6,5 +6,3 @@ Now, we will apply the K-Means Clustering algorithm to our data. We will initial
 kmeans = KMeans(n_clusters=3)
 kmeans.fit(X)
 ```
-
-

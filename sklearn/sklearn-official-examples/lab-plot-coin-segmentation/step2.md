@@ -12,5 +12,3 @@ beta = 10
 eps = 1e-6
 graph.data = np.exp(-beta * graph.data / graph.data.std()) + eps
 ```
-
-

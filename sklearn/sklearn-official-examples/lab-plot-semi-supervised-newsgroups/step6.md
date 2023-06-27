@@ -16,5 +16,3 @@ ls_pipeline = Pipeline(
     ]
 )
 ```
-
-

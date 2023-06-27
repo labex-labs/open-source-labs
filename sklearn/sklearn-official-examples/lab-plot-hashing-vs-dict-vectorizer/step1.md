@@ -20,5 +20,3 @@ raw_data, _ = fetch_20newsgroups(subset="train", categories=categories, return_X
 data_size_mb = sum(len(s.encode("utf-8")) for s in raw_data) / 1e6
 print(f"{len(raw_data)} documents - {data_size_mb:.3f}MB")
 ```
-
-

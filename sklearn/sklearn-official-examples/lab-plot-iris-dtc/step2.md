@@ -53,5 +53,3 @@ plt.suptitle("Decision surface of decision trees trained on pairs of features")
 plt.legend(loc="lower right", borderpad=0, handletextpad=0)
 _ = plt.axis("tight")
 ```
-
-

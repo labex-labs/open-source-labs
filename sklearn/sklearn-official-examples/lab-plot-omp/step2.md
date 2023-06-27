@@ -23,5 +23,3 @@ X = X.T
 # distort the clean signal
 y_noisy = y + 0.05 * np.random.randn(len(y))
 ```
-
-

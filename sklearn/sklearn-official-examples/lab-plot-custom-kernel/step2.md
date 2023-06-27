@@ -7,5 +7,3 @@ iris = datasets.load_iris()
 X = iris.data[:, :2]
 Y = iris.target
 ```
-
-

@@ -32,5 +32,3 @@ plt.scatter(
 plt.legend(scatterpoints=1, shadow=False, loc="center")
 _ = plt.title("Raw data (2 classes=outer and inner)")
 ```
-
-

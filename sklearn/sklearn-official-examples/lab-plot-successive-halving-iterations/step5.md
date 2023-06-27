@@ -5,5 +5,3 @@ Fit the `HalvingRandomSearchCV` object to the dataset using the `fit` method. Th
 ```python
 rsh.fit(X, y)
 ```
-
-

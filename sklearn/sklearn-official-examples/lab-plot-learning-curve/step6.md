@@ -34,5 +34,3 @@ for ax_idx, (fit_times, score_times, estimator) in enumerate(
     ax[1, ax_idx].set_ylabel("Score time (s)")
     ax[1, ax_idx].set_xlabel("Number of training samples")
 ```
-
-

@@ -7,5 +7,3 @@ np.random.seed(0)
 X = np.r_[np.random.randn(10, 2) + [1, 1], np.random.randn(10, 2)]
 y = [1] * 10 + [-1] * 10
 ```
-
-

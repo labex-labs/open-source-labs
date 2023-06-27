@@ -73,5 +73,3 @@ for name, transformer in embeddings.items():
     projections[name] = transformer.fit_transform(data, y)
     timing[name] = time() - start_time
 ```
-
-

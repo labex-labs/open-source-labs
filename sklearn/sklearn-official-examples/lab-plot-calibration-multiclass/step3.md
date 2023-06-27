@@ -108,5 +108,3 @@ plt.xlim(-0.05, 1.05)
 plt.ylim(-0.05, 1.05)
 _ = plt.legend(loc="best")
 ```
-
-

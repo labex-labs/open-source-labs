@@ -16,5 +16,3 @@ ward = AgglomerativeClustering(
 ).fit(X)
 label = ward.labels_
 ```
-
-

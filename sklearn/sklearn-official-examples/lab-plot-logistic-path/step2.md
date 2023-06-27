@@ -25,5 +25,3 @@ for c in cs:
 
 coefs_ = np.array(coefs_)
 ```
-
-

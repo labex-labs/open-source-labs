@@ -7,5 +7,3 @@ np.random.seed(0)
 X = np.random.rand(1000, 3)
 y = X[:, 0] + np.sin(6 * np.pi * X[:, 1]) + 0.1 * np.random.randn(1000)
 ```
-
-

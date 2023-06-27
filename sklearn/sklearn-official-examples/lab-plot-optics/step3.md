@@ -6,5 +6,3 @@ We will now run OPTICS clustering algorithm on the generated data. In this examp
 clust = OPTICS(min_samples=50, xi=0.05, min_cluster_size=0.05)
 clust.fit(X)
 ```
-
-

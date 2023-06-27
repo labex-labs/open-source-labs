@@ -9,5 +9,3 @@ X = [[1, 2, np.nan], [3, 4, 3], [np.nan, 6, 5], [8, 8, 7]]
 imputer = KNNImputer(n_neighbors=2)
 print(imputer.fit_transform(X))
 ```
-
-

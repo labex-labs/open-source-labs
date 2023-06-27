@@ -36,5 +36,3 @@ for _ in range(6):
 dt = time.time() - t0
 print("done in %.2fs." % dt)
 ```
-
-

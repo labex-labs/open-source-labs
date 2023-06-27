@@ -19,5 +19,3 @@ hist_ordinal = make_pipeline(
     ordinal_encoder, HistGradientBoostingRegressor(random_state=42)
 )
 ```
-
-

@@ -32,5 +32,3 @@ ax.axes.get_xaxis().set_visible(False)
 ax.axes.get_yaxis().set_visible(False)
 ax.axis("equal")  # so that boundaries are displayed correctly as circles
 ```
-
-

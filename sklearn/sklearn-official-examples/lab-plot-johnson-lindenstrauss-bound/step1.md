@@ -29,5 +29,3 @@ plt.ylabel("Minimum number of dimensions")
 plt.title("Johnson-Lindenstrauss bounds:\nn_samples vs n_components")
 plt.show()
 ```
-
-

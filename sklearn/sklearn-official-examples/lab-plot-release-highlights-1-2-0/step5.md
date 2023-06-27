@@ -8,5 +8,3 @@ X, y = fetch_openml(
 )
 X.head()
 ```
-
-

@@ -50,5 +50,3 @@ ax[1].set_ylabel("Count of pixels")
 ax[1].set_title("Distribution of the pixel values")
 _ = fig.suptitle("Raccoon face compressed using 3 bits and a K-means strategy")
 ```
-
-

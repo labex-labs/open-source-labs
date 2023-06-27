@@ -18,5 +18,3 @@ for k in range(n_relevant_features):
 X = rng.randn(n_samples, n_features)
 Y = np.dot(X, coef.T) + rng.randn(n_samples, n_tasks)
 ```
-
-

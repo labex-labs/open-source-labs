@@ -23,5 +23,3 @@ ax[1].scatter(
 )
 _ = ax[1].set_title("BisectingKMeans")
 ```
-
-

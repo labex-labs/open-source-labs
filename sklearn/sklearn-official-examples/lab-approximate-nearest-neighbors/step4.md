@@ -9,5 +9,3 @@ def load_mnist(n_samples):
     X, y = shuffle(mnist.data, mnist.target, random_state=2)
     return X[:n_samples] / 255, y[:n_samples]
 ```
-
-

@@ -12,5 +12,3 @@ plt.bar(height=importance, x=feature_names)
 plt.title("Feature importances via coefficients")
 plt.show()
 ```
-
-

@@ -13,5 +13,3 @@ X, y = make_blobs(n_samples=40, centers=2, random_state=6)
 plt.scatter(X[:, 0], X[:, 1], c=y, s=30, cmap=plt.cm.Paired)
 plt.show()
 ```
-
-

@@ -20,5 +20,3 @@ n_error_outliers = y_pred_outliers[y_pred_outliers == 1].size
 Z = clf.decision_function(np.c_[xx.ravel(), yy.ravel()])
 Z = Z.reshape(xx.shape)
 ```
-
-

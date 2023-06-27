@@ -6,5 +6,3 @@ We will fit the model and get the separating hyperplane using the `SVC` function
 clf = svm.SVC(kernel="linear", C=1.0)
 clf.fit(X, y)
 ```
-
-

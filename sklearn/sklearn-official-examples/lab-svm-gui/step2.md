@@ -15,5 +15,3 @@ import tkinter as Tk
 from sklearn import svm
 from sklearn.datasets import dump_svmlight_file
 ```
-
-

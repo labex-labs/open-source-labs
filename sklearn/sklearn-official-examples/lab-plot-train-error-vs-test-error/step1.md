@@ -21,5 +21,3 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, train_size=n_samples_train, test_size=n_samples_test, shuffle=False
 )
 ```
-
-

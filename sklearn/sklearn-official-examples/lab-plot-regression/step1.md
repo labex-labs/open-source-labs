@@ -15,5 +15,3 @@ y = np.sin(X).ravel()
 # Add noise to targets
 y[::5] += 1 * (0.5 - np.random.rand(8))
 ```
-
-

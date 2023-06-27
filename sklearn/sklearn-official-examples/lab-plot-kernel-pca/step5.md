@@ -22,5 +22,3 @@ kernel_pca_proj_ax.set_ylabel("Principal component #1")
 kernel_pca_proj_ax.set_xlabel("Principal component #0")
 _ = kernel_pca_proj_ax.set_title("Projection of testing data\n using KernelPCA")
 ```
-
-

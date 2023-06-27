@@ -29,5 +29,3 @@ y_true = newsgroups.target
 
 vectorizer = NumberNormalizingVectorizer(stop_words="english", min_df=5)
 ```
-
-

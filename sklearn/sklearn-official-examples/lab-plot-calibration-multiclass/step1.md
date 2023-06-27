@@ -20,5 +20,3 @@ X_valid, y_valid = X[600:1000], y[600:1000]
 X_train_valid, y_train_valid = X[:1000], y[:1000]
 X_test, y_test = X[1000:], y[1000:]
 ```
-
-

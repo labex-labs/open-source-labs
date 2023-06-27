@@ -17,5 +17,3 @@ plt.matshow(data, cmap=plt.cm.Blues)
 plt.title("Shuffled dataset")
 _ = plt.show()
 ```
-
-

@@ -6,5 +6,3 @@ Next, we will fit a quantile regression model to the training data using scikit-
 quantile_model = QuantileRegressor(alpha=0.5)
 quantile_model.fit(X_train, y_train)
 ```
-
-

@@ -13,5 +13,3 @@ for C in C_s:
     scores.append(np.mean(this_scores))
     scores_std.append(np.std(this_scores))
 ```
-
-

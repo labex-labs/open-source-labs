@@ -15,5 +15,3 @@ plt.legend()
 plt.xlabel("X")
 _ = plt.ylabel("y")
 ```
-
-

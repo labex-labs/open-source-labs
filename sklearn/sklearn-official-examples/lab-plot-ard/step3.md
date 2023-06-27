@@ -19,5 +19,3 @@ plt.xlabel("coefficients")
 plt.tight_layout(rect=(0, 0, 1, 0.95))
 _ = plt.title("Models' coefficients")
 ```
-
-

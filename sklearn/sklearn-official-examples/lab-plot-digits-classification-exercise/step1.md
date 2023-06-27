@@ -7,5 +7,3 @@ from sklearn import datasets
 
 X_digits, y_digits = datasets.load_digits(return_X_y=True)
 ```
-
-

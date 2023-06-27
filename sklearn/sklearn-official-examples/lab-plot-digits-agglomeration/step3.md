@@ -5,5 +5,3 @@ In this step, we will define the connectivity matrix using the `grid_to_graph` f
 ```python
 connectivity = grid_to_graph(*images[0].shape)
 ```
-
-

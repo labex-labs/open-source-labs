@@ -27,5 +27,3 @@ for url, filename in resources:
             f.write(opener.read())
         print()
 ```
-
-

@@ -6,5 +6,3 @@ We calculate the consensus score of biclusters using `consensus_score()` functio
 score = consensus_score(model.biclusters_, (rows[:, row_idx], columns[:, col_idx]))
 print("consensus score: {:.3f}".format(score))
 ```
-
-

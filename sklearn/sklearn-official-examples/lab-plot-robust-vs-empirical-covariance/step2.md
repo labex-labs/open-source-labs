@@ -18,5 +18,3 @@ outliers_offset = 10.0 * (
 )
 X[outliers_index] += outliers_offset
 ```
-
-

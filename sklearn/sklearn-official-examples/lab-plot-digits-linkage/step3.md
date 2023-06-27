@@ -27,5 +27,3 @@ X_red = manifold.SpectralEmbedding(n_components=2).fit_transform(X)
 print("Done.")
 plot_dataset(X_red)
 ```
-
-

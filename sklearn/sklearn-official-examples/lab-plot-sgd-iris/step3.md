@@ -17,5 +17,3 @@ DecisionBoundaryDisplay.from_estimator(
 )
 plt.axis("tight")
 ```
-
-

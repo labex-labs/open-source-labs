@@ -11,5 +11,3 @@ anova_filter = SelectKBest(f_classif, k=3)
 clf = LinearSVC(dual="auto")
 anova_svm = make_pipeline(anova_filter, clf)
 ```
-
-

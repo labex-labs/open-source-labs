@@ -18,5 +18,3 @@ params = {
 clf = GradientBoostingClassifier(**params)
 clf.fit(X, y)
 ```
-
-

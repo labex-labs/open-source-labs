@@ -5,5 +5,3 @@ We will then preprocess the data by scaling the features to a range of [0, 1] us
 ```python
 X_digits = X_digits / X_digits.max()
 ```
-
-

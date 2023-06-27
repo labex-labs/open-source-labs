@@ -24,5 +24,3 @@ def make_ellipses(gmm, ax):
         ax.add_artist(ell)
         ax.set_aspect("equal", "datalim")
 ```
-
-

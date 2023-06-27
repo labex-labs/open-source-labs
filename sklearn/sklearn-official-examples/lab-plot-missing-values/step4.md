@@ -18,5 +18,3 @@ mses_diabetes[1], stds_diabetes[1] = get_impute_zero_score(
 )
 x_labels.append("Zero imputation")
 ```
-
-

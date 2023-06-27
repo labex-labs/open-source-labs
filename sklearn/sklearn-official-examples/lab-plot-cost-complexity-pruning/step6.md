@@ -16,5 +16,3 @@ ax[1].set_ylabel("depth of tree")
 ax[1].set_title("Depth vs alpha")
 fig.tight_layout()
 ```
-
-

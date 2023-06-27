@@ -16,5 +16,3 @@ A = np.array([[1, 1], [0, 2]])  # Mixing matrix
 
 X = np.dot(S, A.T)  # Generate observations
 ```
-
-

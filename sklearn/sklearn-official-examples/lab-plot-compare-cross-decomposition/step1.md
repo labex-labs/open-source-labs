@@ -24,5 +24,3 @@ print(np.round(np.corrcoef(X.T), 2))
 print("Corr(Y)")
 print(np.round(np.corrcoef(Y.T), 2))
 ```
-
-

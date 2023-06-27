@@ -24,5 +24,3 @@ plt.title("Pixelwise variance from \n Factor Analysis (FA)", size=16, wrap=True)
 plt.colorbar(orientation="horizontal", shrink=0.8, pad=0.03)
 plt.show()
 ```
-
-

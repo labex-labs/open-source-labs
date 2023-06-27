@@ -48,5 +48,3 @@ def plot_results(ax1, ax2, estimator, X, y, title, plot_title=False):
         ax1.set_ylabel("Estimated Mixtures")
         ax2.set_ylabel("Weight of each component")
 ```
-
-

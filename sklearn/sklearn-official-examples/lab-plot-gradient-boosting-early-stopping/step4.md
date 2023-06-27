@@ -14,5 +14,3 @@ start = time.time()
 gbes.fit(X_train, y_train)
 time_gbes.append(time.time() - start)
 ```
-
-

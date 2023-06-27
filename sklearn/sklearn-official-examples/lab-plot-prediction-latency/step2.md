@@ -77,5 +77,3 @@ boxplot_runtimes(runtimes, "atomic", configuration)
 runtimes = [1e6 * stats[clf_name]["bulk"] for clf_name in cls_names]
 boxplot_runtimes(runtimes, "bulk (%d)" % configuration["n_test"], configuration)
 ```
-
-

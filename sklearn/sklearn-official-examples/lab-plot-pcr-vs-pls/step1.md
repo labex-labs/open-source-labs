@@ -20,5 +20,3 @@ plt.gca().set(
 plt.legend()
 plt.show()
 ```
-
-

@@ -16,5 +16,3 @@ plt.xlabel(r"Decision function $f(x)$")
 plt.ylabel("$L(y=1, f(x))$")
 plt.show()
 ```
-
-
