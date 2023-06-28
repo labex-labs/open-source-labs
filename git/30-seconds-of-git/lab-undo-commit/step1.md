@@ -16,7 +16,7 @@ To demonstrate how to undo a commit, you will use the Git repository `git-playgr
    ```
    git log
    ```
-   You should see a list of commits, each with a unique identifier (a long string of letters and numbers).
+   You should see a list of commits, each with a unique identifier (a long string of letters and        numbers).
 4. Select a commit with the message "Added file1.txt" and copy its identifier.
 5. Revert the commit using the `git revert` command:
    ```
