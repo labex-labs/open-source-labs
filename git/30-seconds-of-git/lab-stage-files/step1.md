@@ -19,7 +19,7 @@ git add index.html style.css
 ```shell
 git status
 ```
-4. Alternatively, you can use a fileglob to add all files with a `.js` extension:
+4. Alternatively, add all files with a `.js` extension:
 ```shell
 git add *.js
 ```
