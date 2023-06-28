@@ -12,6 +12,7 @@ git restore --staged .
 ```
 
 ```shell
+cd git-playground
 git status
 git restore --staged newfile.txt
 git status
