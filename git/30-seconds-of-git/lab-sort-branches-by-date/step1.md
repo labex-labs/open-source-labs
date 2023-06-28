@@ -28,10 +28,6 @@ git checkout -b two
 ```shell
 git branch --sort=-committerdate
 ```
-6. View the commit history and sort the branches by date.
-```shell
-git log
-```
 
 This will display a list of all local branches and sort them based on the date of their last commit. You can use the arrow keys to navigate the list, and press <kbd>Q</kbd> to exit.
 
