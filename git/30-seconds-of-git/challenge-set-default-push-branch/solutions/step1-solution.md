@@ -9,7 +9,7 @@ git push -u
 ```
 
 ```shell
-Fork from https://github.com/labex-labs/git-playground.git
+# Fork from https://github.com/labex-labs/git-playground.git
 git clone https://github.com/your-username/git-playground.git
 cd git-playground
 git config --global user.name "your-username"
