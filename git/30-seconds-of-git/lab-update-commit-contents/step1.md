@@ -21,4 +21,4 @@ git show HEAD
 ```
 
 This is the content of the late commit:
-![result](./assets/challenge-update-commit-contents.png)
+![<result>](./assets/challenge-update-commit-contents.png)
