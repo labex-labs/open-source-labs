@@ -1,8 +1,6 @@
 ```shell
 git add <pathspec>
-```
 
-```shell
 git add index.html style.css
 # Add the files `index.html` and `style.css` to the staging area
 
@@ -11,4 +9,11 @@ git add *.js
 
 git add .
 # Adds all changes to the staging area
+```
+
+```shell
+cd git-playground
+git add index.html style.css
+git add *.js
+git add .
 ```
