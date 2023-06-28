@@ -6,7 +6,7 @@ You have a Git repository with multiple branches, and you want to sort them by d
 
 ## Example
 
-To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`.
 
 1. The repository has been cloned, navigate to the directory.
 2. Create a branch called `one`, modify the code and commit it.
