@@ -6,7 +6,7 @@ As a developer, you may need to undo changes made to your codebase. For example,
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from `https://github.com/labex-labs/git-playground.git`.
+To complete this challenge, you will use the Git repository `git-playground` from `https://github.com/labex-labs/git-playground.git`.
 
 1. View the commit history of the repository.
 2. Make sure that the commit message you want to rewind to is the "Initial commit" commit hash.
