@@ -12,12 +12,15 @@ To complete this lab, you will use the Git repository `git-playground` from `htt
 6. Run the command `git checkout <commit> -- <file>` to restore the specified `<file>` deleted in the specified `<commit>`. Replace `<commit>` with the commit hash and `<file>` with the name of the deleted file.
 
 For example, if the file `file2.txt` was deleted in the commit `d22f46b`, you would run the following command:
+
 ```shell
 git checkout d22f46b -- file2.txt
 ```
+
 This will restore the `file2.txt` file to your local repository.
 
 This is the result of running the `ll` command:
+
 ```shell
 total 12K
 -rw-r--r-- 1 labex labex 15 Jun 18 18:05 file1.txt
