@@ -1,8 +1,6 @@
 ```shell
 git log -S<string>
-```
 
-```shell
 git log -S"Git Playground" README.md
 
 git log -S"Git Playground"
@@ -10,4 +8,9 @@ git log -S"Git Playground"
 # Author: labex
 # Date: Tue Apr 26 10:10:08 2023 +0300
 # [...]
+```
+
+```shell
+cd git-playground
+git log -S"Git Playground" README.md
 ```
