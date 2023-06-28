@@ -13,4 +13,4 @@ To demonstrate how to edit the last commit, you will use the Git repository `git
 3. Verify that the last commit now includes the changes you made.
 
 This is the content of the late commit:
-![result](./assets/challenge-update-commit-contents.png)
+![<result>](./assets/challenge-update-commit-contents.png)
