@@ -24,3 +24,7 @@ git branch --sort=-committerdate
 ```
 
 This will display a list of all local branches and sort them based on the date of their last commit. You can use the arrow keys to navigate the list, and press <kbd>Q</kbd> to exit.
+
+This is the finished result:
+
+![<result>](./assets/challenge-sort-branches-by-date.png)
