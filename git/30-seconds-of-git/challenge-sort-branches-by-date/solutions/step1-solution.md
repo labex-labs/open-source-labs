@@ -15,5 +15,4 @@ git commit -m "hello.txt"
 git checkout master
 git checkout -b two
 git branch --sort=-committerdate
-git log
 ```
