@@ -16,11 +16,11 @@ echo "world" > git-playground.txt
 git add .
 git commit -m "add git-playground.txt"
 ```
-3. Use `git rm --cached <file>` to remove the specified `<file>` from the index.
+3. Use `git rm --cached <file>` to remove the specified `<file>` from the index:
 ```shell
 git rm --cached file1.txt
 ```
-4. Use `git commit --amend` to update the contents of the last commit, without changing its message.
+4. Use `git commit --amend` to update the contents of the last commit, without changing its message:
 ```shell
 git commit --amend
 ```
