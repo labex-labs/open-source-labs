@@ -8,7 +8,11 @@ To view a summary of changes between two commits, let's say you want to view the
 ```
 cd git-playground
 ```
-2. Run the following command: `git shortlog 3050fc0de..HEAD`, Git will display a summary of the changes between the two commits. You can use the arrow keys to navigate through the summary, and press `Q` to exit.
+2. Run the following command:
+```
+git shortlog 3050fc0de..HEAD
+```
+Git will display a summary of the changes between the two commits. You can use the arrow keys to navigate through the summary, and press `Q` to exit.
 
 Here's an example of what the output might look like:
 
