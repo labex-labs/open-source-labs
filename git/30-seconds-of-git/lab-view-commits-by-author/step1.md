@@ -10,7 +10,7 @@ To retrieve all commits made by the author "huhuhang" in the `git-playground` re
 git log --author="huhuhang"
 ```
 
-This will output a list of all commits made by "huhuhang" in the repository, along with information about the commit message, date, and other details.
+This will output a list of all commits made by "huhuhang" in the repository, along with information about the commit message, date, and other details:
 
 ```shell
 commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/
