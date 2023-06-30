@@ -10,6 +10,7 @@ git clone https://github.com/labex-labs/git-playground.git
 ```
 2. Once you have cloned the repository, navigate to the project directory and run the following command to view a short summary of all the commits:
 ```shell
+cd git-playground
 git log --oneline
 ```
 
