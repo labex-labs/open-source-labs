@@ -6,5 +6,3 @@ In addition to predicting outliers, we can also access the outlier scores for ea
 outlier_scores = estimator.negative_outlier_factor_
 print(outlier_scores)
 ```
-
-#
