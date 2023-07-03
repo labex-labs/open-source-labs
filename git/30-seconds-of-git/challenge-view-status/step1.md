@@ -8,7 +8,7 @@ Your task is to view the current status of the Git repository located at `https:
 
 ## Example
 
-To complete this challenge, you will need to clone the Git repository located at `https://github.com/labex-labs/git-playground`. 
+To complete this challenge, you will need to clone the Git repository located at `https://github.com/labex-labs/git-playground`.
 
 1. Once you have cloned the repository, navigate to the root directory of the repository.
 2. View the current status of the Git repository.
@@ -16,6 +16,7 @@ To complete this challenge, you will need to clone the Git repository located at
 This will output the current status of the working tree. You should see information about which branch you are currently on, whether your branch is up to date with the remote repository, and any untracked or modified files.
 
 The output looks like this:
+
 ```shell
 On branch master
 Your branch is up to date with 'origin/master'.
