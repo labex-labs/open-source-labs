@@ -1,0 +1,59 @@
+{
+  "type": "challenge",
+  "title": "Drag Drop",
+  "description": "In this challenge we will develop a react drag and drop similar to JIRA board without any external library.",
+  "difficulty": "Intermediate",
+  "time": 30,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Drag Drop",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the running status of the web service.",
+            "file": "verify1-0.sh",
+            "hint": "Please use `npm start` to run the project.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check useState.",
+            "file": "verify1-1.sh",
+            "hint": "Please use useState.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["react/use_state"],
+        "solutions": ["App.js"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "project.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/Vasu7389/react-project-ideas/blob/master/LICENSE",
+    "repo": "https://github.com/Vasu7389/react-project-ideas"
+  }
+}
