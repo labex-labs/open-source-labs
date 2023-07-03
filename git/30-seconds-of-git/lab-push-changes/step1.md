@@ -26,6 +26,6 @@ git commit -m "Added new feature"
 git push origin master
 ```
 
-This is the result of running `git log -r`:
+This is the result of running `git log`:
 
 ![<result>](./assets/challenge-push-changes-step1-1.png)
