@@ -13,7 +13,9 @@ Let's start by fitting a linear regression model using OLS.
 from sklearn import linear_model
 
 reg = linear_model.LinearRegression()
-reg.fit([[0, 0], [1, 1], [2, 2]], [0, 1, 2])
+X = [[0, 0], [1, 1], [2, 2]]
+y = [0, 1, 2]
+reg.fit(X, y)
 
 print(reg.coef_)
 ```
