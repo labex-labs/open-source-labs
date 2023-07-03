@@ -13,5 +13,3 @@ for ax in axs:
 
 plt.show()
 ```
-
-#

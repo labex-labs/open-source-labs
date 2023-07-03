@@ -6,5 +6,3 @@ Before we start, we need to import the necessary libraries. In this lab, we will
 import matplotlib.pyplot as plt
 import numpy as np
 ```
-
-#

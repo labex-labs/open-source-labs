@@ -22,5 +22,3 @@ ax.set_ylim(-2.2, 2.2)
 # Show the plot
 plt.show()
 ```
-
-#

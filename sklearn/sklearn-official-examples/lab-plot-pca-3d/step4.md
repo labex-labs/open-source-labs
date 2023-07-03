@@ -39,5 +39,3 @@ ax.plot_surface(x_pca_plane, y_pca_plane, z_pca_plane, alpha=0.2)
 
 plt.show()
 ```
-
-#

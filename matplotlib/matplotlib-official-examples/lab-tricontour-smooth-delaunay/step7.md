@@ -7,5 +7,3 @@ We refine and interpolate the data using a `UniformTriRefiner`.
 refiner = UniformTriRefiner(tri)
 tri_refi, z_test_refi = refiner.refine_field(z_test, subdiv=subdiv)
 ```
-
-#

@@ -6,5 +6,3 @@ In this step, we will create a figure with two subplots for the cumulative distr
 fig = plt.figure(figsize=(9, 4), layout="constrained")
 axs = fig.subplots(1, 2, sharex=True, sharey=True)
 ```
-
-#

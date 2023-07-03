@@ -5,5 +5,3 @@ When data is fitted with an estimator, the parameters are estimated from the dat
 ```python
 print(estimator.estimated_param_)
 ```
-
-#

@@ -5,5 +5,3 @@ The fourth step is to draw the sine curve on the right subplot. We create an arr
 ```python
 sine, = axr.plot(x, np.sin(x))
 ```
-
-#

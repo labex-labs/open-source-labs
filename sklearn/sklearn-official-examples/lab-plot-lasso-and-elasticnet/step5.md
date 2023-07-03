@@ -33,5 +33,3 @@ plt.title(
 )
 plt.tight_layout()
 ```
-
-#

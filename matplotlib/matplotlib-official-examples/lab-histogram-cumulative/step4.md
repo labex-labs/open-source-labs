@@ -20,5 +20,3 @@ axs[1].hist(data, bins=bins, density=True, histtype="step", cumulative=-1,
             label="Reversed cumulative histogram")
 axs[1].plot(x, 1 - y, "k--", linewidth=1.5, label="Theory")
 ```
-
-#

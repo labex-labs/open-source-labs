@@ -6,5 +6,3 @@ We need to define the pixel and DPI values for the barcode. In this example, we 
 pixel_per_bar = 4
 dpi = 100
 ```
-
-#

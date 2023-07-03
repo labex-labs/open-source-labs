@@ -9,5 +9,3 @@ masked_tri = random_gen.randint(0, ntri, int(ntri * init_mask_frac))
 mask_init[masked_tri] = True
 tri.set_mask(mask_init)
 ```
-
-#

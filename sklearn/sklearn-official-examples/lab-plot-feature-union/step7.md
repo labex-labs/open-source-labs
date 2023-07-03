@@ -1,4 +1,4 @@
-# : Transformed Dataset
+# Transformed Dataset
 
 We will use the combined features to transform the dataset.
 

@@ -1,4 +1,4 @@
-# : Tick labels pointing outwards on one side
+# Tick labels pointing outwards on one side
 
 In this step, we will create a subplot with tick labels pointing outwards on one side.
 

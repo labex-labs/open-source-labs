@@ -20,5 +20,3 @@ svc_rbf = svm.SVC(kernel='rbf')
 svc_poly.fit(iris_X_train, iris_y_train)
 svc_rbf.fit(iris_X_train, iris_y_train)
 ```
-
-#

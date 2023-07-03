@@ -1,4 +1,4 @@
-# : Dictionary learning - positive dictionary
+# Dictionary learning - positive dictionary
 
 ```python
 dict_pos_dict_estimator = decomposition.MiniBatchDictionaryLearning(
@@ -16,5 +16,3 @@ plot_gallery(
     cmap=plt.cm.RdBu,
 )
 ```
-
-#

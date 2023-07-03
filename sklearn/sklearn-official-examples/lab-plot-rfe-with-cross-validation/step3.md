@@ -17,5 +17,3 @@ plt.errorbar(
 plt.title("Recursive Feature Elimination \nwith correlated features")
 plt.show()
 ```
-
-#

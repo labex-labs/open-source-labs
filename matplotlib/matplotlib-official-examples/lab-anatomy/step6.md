@@ -49,5 +49,3 @@ annotate(0.65, 0.01, "x Axis", "ax.xaxis")
 annotate(0, 0.36, "y Axis", "ax.yaxis")
 annotate(4.0, 0.7, "Spine", "ax.spines")
 ```
-
-#

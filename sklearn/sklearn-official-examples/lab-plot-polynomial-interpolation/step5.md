@@ -39,5 +39,3 @@ for transformer, label in [
 ax.legend()
 fig.show()
 ```
-
-#

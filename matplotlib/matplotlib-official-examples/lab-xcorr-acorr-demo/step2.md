@@ -6,5 +6,3 @@ Next, we will generate two arrays of random data using NumPy. We will use these 
 np.random.seed(19680801)
 x, y = np.random.randn(2, 100)
 ```
-
-#

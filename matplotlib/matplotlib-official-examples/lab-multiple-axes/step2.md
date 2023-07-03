@@ -14,5 +14,3 @@ axr.set_box_aspect(1 / 3)
 axr.yaxis.set_visible(False)
 axr.xaxis.set_ticks([0, np.pi, 2 * np.pi], ["0", r"$\pi$", r"$2\pi$"])
 ```
-
-#

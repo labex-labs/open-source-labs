@@ -12,5 +12,3 @@ ax.set_title("'bmh' style sheet")
 
 plt.show()
 ```
-
-#

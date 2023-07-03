@@ -69,5 +69,3 @@ ax2.set_title("GridSearch\ntime = {:.3f}s".format(gs_time), fontsize=15)
 
 plt.show()
 ```
-
-#

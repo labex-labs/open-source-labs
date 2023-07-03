@@ -7,5 +7,3 @@ clf = svm.SVC(kernel='linear', C=1).fit(X_train, y_train)
 score = clf.score(X_test, y_test)
 print("Accuracy: ", score)
 ```
-
-#

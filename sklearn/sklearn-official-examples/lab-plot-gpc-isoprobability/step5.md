@@ -37,5 +37,3 @@ plt.clabel(cs, fontsize=11)
 
 plt.show()
 ```
-
-#
