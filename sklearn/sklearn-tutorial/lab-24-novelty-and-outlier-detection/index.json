@@ -1,0 +1,120 @@
+{
+  "type": "lab",
+  "title": "Novelty and Outlier Detection Using Scikit-Learn",
+  "description": "Novelty and outlier detection are techniques used to identify whether a new observation belongs to the same distribution as existing observations or if it should be considered as different. These techniques are commonly used to clean real datasets by identifying abnormal or unusual observations.\n\nThere are two important distinctions in this context:\n\n1. Outlier detection: The training data contains outliers, which are observations that are far from the others. Outlier detection estimators try to fit the regions where the training data is the most concentrated, ignoring the deviant observations.\n2. Novelty detection: The training data is not polluted by outliers, and the goal is to detect whether a new observation is an outlier. In this context, an outlier is also called a novelty.\n\nThe scikit-learn project provides a set of machine learning tools that can be used for both novelty and outlier detection. These tools are implemented using unsupervised learning algorithms, which means they learn patterns from the data without the need for labeled examples.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in 24-novelty-and-outlier-detection.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Load the dataset",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in 24-novelty-and-outlier-detection.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Create an outlier detection estimator",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in 24-novelty-and-outlier-detection.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Fit the model to the training data",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in 24-novelty-and-outlier-detection.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Predict outliers",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in 24-novelty-and-outlier-detection.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Access outlier scores",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in 24-novelty-and-outlier-detection.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "24-novelty-and-outlier-detection.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

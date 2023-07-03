@@ -1,0 +1,106 @@
+{
+  "type": "lab",
+  "title": "Pipelines and Composite Estimators",
+  "description": "In scikit-learn, pipelines and composite estimators are used to combine multiple transformers and estimators into a single model. This is useful when there is a fixed sequence of steps for processing the data, such as feature selection, normalization, and classification. Pipelines can also be used for joint parameter selection and to ensure that statistics from the test data do not leak into the trained model during cross-validation.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Pipeline - Chaining Estimators",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in 33-pipelines-and-composite-estimators.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Nested Parameters",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in 33-pipelines-and-composite-estimators.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Caching Transformers",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in 33-pipelines-and-composite-estimators.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "TransformedTargetRegressor",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in 33-pipelines-and-composite-estimators.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "FeatureUnion - Composite Feature Spaces",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in 33-pipelines-and-composite-estimators.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "33-pipelines-and-composite-estimators.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}
