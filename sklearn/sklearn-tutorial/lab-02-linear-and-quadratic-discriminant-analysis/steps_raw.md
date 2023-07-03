@@ -84,10 +84,6 @@ lda = LinearDiscriminantAnalysis(n_components=2)
 X_lda = lda.fit_transform(X, y)
 ```
 
-### Step 5: Summary
-
-In this lab, we learned how to use LDA and QDA classifiers using scikit-learn. We visualized the decision boundaries for the classifiers and performed dimensionality reduction using LDA. LDA is useful for its closed-form solution and the ability to perform dimensionality reduction, while QDA is more flexible in modeling non-linear decision boundaries. Both classifiers have no hyperparameters to tune, making them easy to use in practice.
-
 ## Summary
 
 Linear and Quadratic Discriminant Analysis (LDA and QDA) are two classic classifiers used in machine learning. LDA uses a linear decision surface, while QDA uses a quadratic decision surface. These classifiers have closed-form solutions and perform well in practice. LDA can also be used for supervised dimensionality reduction.
