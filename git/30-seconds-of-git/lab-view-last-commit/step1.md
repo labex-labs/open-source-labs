@@ -15,7 +15,7 @@ cd git-playground
 ```
 3. View the last commit:
 ```shell
-git log -l
+git log -1
 ```
 
 The output will show you the details of the last commit, including the commit message, author, and date:
