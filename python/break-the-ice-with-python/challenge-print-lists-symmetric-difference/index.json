@@ -1,0 +1,60 @@
+{
+  "type": "challenge",
+  "title": "Print Lists Symmetric Difference",
+  "description": "In this challenge, you are given 2 sets of integers, M and N, print their symmetric difference in ascending order.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Print Lists Symmetric Difference",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing print_lists_symmetric_difference.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/math_operator",
+          "python/list",
+          "python/sorted",
+          "python/set",
+          "python/int",
+          "python/map",
+          "python/input"
+        ],
+        "solutions": ["print_lists_symmetric_difference.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "print_lists_symmetric_difference.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

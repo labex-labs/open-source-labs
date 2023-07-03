@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Compute the Distance",
+  "description": "In this lab, you will write a program to compute the distance from current position after a sequence of movement and original point.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Compute the Distance",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing compute_the_distance.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/math",
+          "python/math_operator",
+          "python/string",
+          "python/round",
+          "python/input"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "compute_the_distance.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

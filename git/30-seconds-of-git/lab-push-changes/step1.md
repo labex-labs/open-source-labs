@@ -12,7 +12,10 @@ git clone https://github.com/your-username/git-playground
 ```shell
 git pull origin master
 ```
-3. Once you have pulled the latest changes from the remote branch, you can make your changes to the local branch.
+3. Once you have pulled the latest changes from the remote branch, you can make your changes to the local branch:
+```shell
+echo "hello" > file2.txt
+```
 4. After making the changes, stage them using the `git add` command:
 ```shell
 git add .

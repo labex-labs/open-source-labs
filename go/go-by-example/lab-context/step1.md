@@ -1,4 +1,4 @@
-# Golang Challenge - Context
+# Context
 
 ## Problem
 

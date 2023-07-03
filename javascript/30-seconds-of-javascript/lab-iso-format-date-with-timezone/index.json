@@ -1,0 +1,55 @@
+{
+  "type": "lab",
+  "title": "Date to ISO Format With Timezone",
+  "description": "In this lab, we will learn how to convert a date into the extended ISO format (ISO 8601), including timezone offset. We will use the `Date.prototype.getTimezoneOffset()` method to get the timezone offset and reverse it. Then, we will define a helper function to normalize any passed number to an integer and pad it to 2 digits using `String.prototype.padStart()`. Finally, we will use the built-in methods in the `Date` prototype to build the ISO 8601 string with timezone offset. By the end of this lab, you will have a better understanding of how to manipulate dates in JavaScript.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Date to ISO Format With Timezone",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Open the Terminal/SSH and type 'node'",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "js/get_time_zone_offset",
+          "js/abs",
+          "js/floor",
+          "js/pad_start"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
+}

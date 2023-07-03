@@ -1,0 +1,79 @@
+{
+  "type": "lab",
+  "title": "Curve Fitting With Bayesian Ridge Regression",
+  "description": "This lab demonstrates how to use Bayesian Ridge Regression to fit a polynomial curve to sinusoidal data. We will generate sinusoidal data with noise, fit it using a cubic polynomial and plot the true and predicted curves with log marginal likelihood (L) of these models, we can determine which one is better.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Generate sinusoidal data with noise",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-bayesian-ridge-curvefit.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Fit by cubic polynomial",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-bayesian-ridge-curvefit.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Plot the true and predicted curves with log marginal likelihood (L)",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-bayesian-ridge-curvefit.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-bayesian-ridge-curvefit.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

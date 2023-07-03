@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Get Email Company Name",
+  "description": "In this lab, you will implement a function to get company names from an email address.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Get Email Company Name",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing get_email_company_name.py",
+            "file": "verify1.sh",
+            "hint": "Please use the input function to enter an email address and return its company names.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/re",
+          "python/function_basic",
+          "python/input",
+          "python/return_values",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "get_email_company_name.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

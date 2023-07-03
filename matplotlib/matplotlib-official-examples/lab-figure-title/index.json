@@ -1,0 +1,65 @@
+{
+  "type": "lab",
+  "title": "Figure Title",
+  "description": "This lab will guide you through the process of creating figures with titles, subtitles, and global labels using the Matplotlib library in Python. You will learn how to create different types of oscillation plots and how to add a global x- or y-label to a figure.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Create a damped and undamped oscillation plot",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in figure-title.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Add global x- and y-labels to a figure",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in figure-title.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "figure-title.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

@@ -6,7 +6,7 @@ The problem to be solved is to demonstrate the use of constants in Golang for ch
 
 ## Requirements
 
-The Challenge has the following requirements:
+The lab has the following requirements:
 
 - Use the `const` keyword to declare a constant value.
 - Constants should be of character, string, boolean, and numeric values.

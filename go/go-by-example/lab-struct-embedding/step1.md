@@ -1,4 +1,4 @@
-# Golang Challenge: Struct Embedding
+# Struct Embedding
 
 ## Problem
 

@@ -1,0 +1,79 @@
+{
+  "type": "lab",
+  "title": "Pretty Text Underline",
+  "description": "In this lab, we will learn how to create a pretty text underline that does not clip descenders using CSS. By using a combination of text-shadow and background-image with linear-gradient, we can create a gradient that will act as the actual underline while ensuring that the text remains selectable. This technique provides a more visually appealing alternative to text-decoration: underline.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Pretty Text Underline",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the running status of the web service.",
+            "file": "verify1-0.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of index.html modification.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of style.css modification.",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "css/text_shadow",
+          "css/background",
+          "css/background_image",
+          "css/linear_gradient",
+          "css/background_position",
+          "css/background_size",
+          "css/background_repeat",
+          "css/selection"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
+}

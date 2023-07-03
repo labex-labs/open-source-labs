@@ -1,4 +1,4 @@
-# Golang Challenge: Text Templates
+# Text Templates
 
 ## Problem
 

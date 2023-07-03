@@ -1,0 +1,185 @@
+{
+  "type": "lab",
+  "title": "Working With Time Deltas",
+  "description": "This lab guides you through the process of working with time deltas in Python using the pandas library. A time delta represents a duration or difference in time. We will explore different ways to construct, manipulate, and operate on time deltas.",
+  "difficulty": "Beginner",
+  "time": 50,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import the Required Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/pandas", "python/numpy", "python/datetime"]
+      },
+      {
+        "title": "Construct a Timedelta",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/timedelta"]
+      },
+      {
+        "title": "Convert to Timedelta",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/to_timedelta"]
+      },
+      {
+        "title": "Perform Operations",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/series", "pandas/date_range", "pandas/max"]
+      },
+      {
+        "title": "Access Attributes",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/timedelta"]
+      },
+      {
+        "title": "Convert to ISO 8601 Duration",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/timedelta"]
+      },
+      {
+        "title": "Create a Timedelta Index",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/timedeltaIndex",
+          "numpy/timedelta64",
+          "python/datetime"
+        ]
+      },
+      {
+        "title": "Use the Timedelta Index",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/timedelta_range", "pandas/series", "numpy/arange"]
+      },
+      {
+        "title": "Perform Operations with Timedelta Index",
+        "text": "step9.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 9",
+            "file": "verify9.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/timedeltaIndex",
+          "pandas/date_range",
+          "pandas/to_list"
+        ]
+      },
+      {
+        "title": " Resample a Timedelta Index",
+        "text": "step10.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 10",
+            "file": "verify10.sh",
+            "hint": "You need to practice coding in timedeltas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/resample", "pandas/mean"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "timedeltas.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
+    "repo": "https://github.com/pandas-dev/pandas"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Summation of Series",
+  "description": "In this challenge, you will write a program to compute 1/2+2/3+3/4+...+n/n+1",
+  "difficulty": "Beginner",
+  "time": 5,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Summation of Series",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing summation_of_series.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/input",
+          "python/for_loop",
+          "python/range",
+          "python/round"
+        ],
+        "solutions": ["summation_of_series.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "summation_of_series.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

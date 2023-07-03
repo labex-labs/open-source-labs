@@ -1,0 +1,58 @@
+{
+  "type": "lab",
+  "title": "Word Counting",
+  "description": "In this lab, you are given words, some words may repeat. For each word, output its number of occurrences.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Word Counting",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing word_counting.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/dict",
+          "python/range",
+          "python/input",
+          "python/len",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "word_counting.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

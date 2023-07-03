@@ -1,0 +1,59 @@
+{
+  "type": "challenge",
+  "title": "Calculate the Value of Formula",
+  "description": "In this challenge, you will write a program that calculates and prints the value according to the given formula.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Calculate the Value of Formula",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing calculate_the_value_of_formula.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/math",
+          "python/str",
+          "python/round",
+          "python/input",
+          "python/manipulating_strings",
+          "python/assignment"
+        ],
+        "solutions": ["calculate_the_value_of_formula.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "calculate_the_value_of_formula.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

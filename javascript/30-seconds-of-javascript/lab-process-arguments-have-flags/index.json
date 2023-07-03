@@ -1,0 +1,50 @@
+{
+  "type": "lab",
+  "title": "Check if Process Arguments Contain Flags",
+  "description": "In this lab, we will explore how to check if process arguments contain flags using JavaScript. You will learn how to use the `Array.prototype.every()` and `Array.prototype.includes()` methods to check if the specified flags are present in the `process.argv` array. Additionally, you will learn how to use regular expressions to prefix the specified flags with `-` or `--` as needed. This lab will help you improve your understanding of JavaScript and how to work with command-line arguments in Node.js.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Check if Process Arguments Contain Flags",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Open the Terminal/SSH and type 'node'",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["js/arr_every", "js/arr_includes"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
+}

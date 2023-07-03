@@ -1,4 +1,4 @@
-# Recover Challenge
+# Recover
 
 ## Problem
 

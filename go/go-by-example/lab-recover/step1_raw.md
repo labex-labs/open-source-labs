@@ -1,8 +1,8 @@
-# Recover Challenge
+# Recover
 
 ## Introduction
 
-In Golang, `recover` is a built-in function that can be used to recover from a panic. This Challenge will test your ability to use `recover` to handle panics.
+In Golang, `recover` is a built-in function that can be used to recover from a panic. This lab will test your ability to use `recover` to handle panics.
 
 ## Problem
 
@@ -48,4 +48,4 @@ Recovered. Error:
 
 ## Summary
 
-In this Challenge, you learned how to use the `recover` function to handle panics in Golang. By using `recover`, you can prevent your program from crashing and continue executing code.
+In this lab, you learned how to use the `recover` function to handle panics in Golang. By using `recover`, you can prevent your program from crashing and continue executing code.

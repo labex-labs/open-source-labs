@@ -1,4 +1,4 @@
-# Golang Challenge: Channel Buffering
+# Channel Buffering
 
 ## Problem
 

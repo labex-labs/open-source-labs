@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Print each Even Numbers",
+  "description": "In this lab, you will write a program which will find all such numbers between 1000 and 2200 (both included) such that each digit of the number is an even number.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Print each Even Numbers",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing print_each_even_numbers.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/str",
+          "python/ord",
+          "python/list",
+          "python/range",
+          "python/manipulating_strings"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "print_each_even_numbers.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

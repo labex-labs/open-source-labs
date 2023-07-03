@@ -1,0 +1,57 @@
+{
+  "type": "challenge",
+  "title": "Inheritance of Class",
+  "description": "In this challenge, you will define a class named \"Shape\" and its subclass \"Square\".",
+  "difficulty": "Beginner",
+  "time": 5,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Inheritance of Class",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing inheritance_of_class.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/attributes"
+        ],
+        "solutions": ["inheritance_of_class.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "inheritance_of_class.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

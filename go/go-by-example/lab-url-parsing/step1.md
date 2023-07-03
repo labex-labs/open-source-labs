@@ -1,4 +1,4 @@
-# Golang Challenge: URL Parsing
+# URL Parsing
 
 ## Problem
 
