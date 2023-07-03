@@ -1,11 +1,7 @@
 # Ordinary Least Squares
 
-#### Introduction:
-
 Ordinary Least Squares (OLS) is a linear regression method that minimizes the sum of squared differences between the observed targets and the predicted targets. Mathematically, it solves a problem of the form:
 $$\min_{w} || X w - y||_2^2$$
-
-#### Code:
 
 Let's start by fitting a linear regression model using OLS.
 
@@ -19,8 +15,6 @@ reg.fit(X, y)
 
 print(reg.coef_)
 ```
-
-#### Explanation:
 
 - We import the `linear_model` module from scikit-learn.
 - We create an instance of `LinearRegression`.

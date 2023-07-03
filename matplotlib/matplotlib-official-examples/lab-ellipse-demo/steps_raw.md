@@ -11,7 +11,7 @@ This lab demonstrates how to use Python Matplotlib to draw ellipses. The lab cov
 
 ### Steps
 
-#### Step 1: Importing Required Libraries
+#### Importing Required Libraries
 
 First, we need to import the required libraries. We will use `numpy` to generate random data, and `matplotlib.pyplot` and `matplotlib.patches` to draw the ellipses.
 
@@ -21,7 +21,7 @@ import numpy as np
 from matplotlib.patches import Ellipse
 ```
 
-#### Step 2: Drawing Individual Ellipses
+#### Drawing Individual Ellipses
 
 In this example, we will draw many ellipses with random sizes, positions, and colors. Each ellipse will be an instance of the `Ellipse` class.
 
@@ -56,7 +56,7 @@ ax.set_ylim(0, 10)
 plt.show()
 ```
 
-#### Step 3: Drawing Ellipses with Different Angles
+#### Drawing Ellipses with Different Angles
 
 In this example, we will draw many ellipses with different angles. We will use a loop to create an `Ellipse` instance for each angle we want to draw.
 

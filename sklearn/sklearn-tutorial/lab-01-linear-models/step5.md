@@ -1,10 +1,6 @@
 # Stochastic Gradient Descent (SGD)
 
-#### Introduction:
-
 Stochastic Gradient Descent (SGD) is a simple yet efficient approach for training linear models. It is particularly useful when the number of samples and features is very large. SGD updates the model parameters using a small subset of the training data at each iteration, which makes it suitable for online learning and out-of-core learning.
-
-#### Code:
 
 Let's fit a logistic regression model using SGD.
 
@@ -14,8 +10,6 @@ clf.fit(X, y)
 
 print(clf.coef_)
 ```
-
-#### Explanation:
 
 - We create an instance of `SGDClassifier` with the `loss` parameter set to "log" to perform logistic regression.
 - We use the `fit` method to fit the model to the training data.

@@ -8,7 +8,7 @@ This lab will guide you through an example of a cross-GUI application using Matp
 
 ### Steps
 
-#### Step 1: Import Libraries
+#### Import Libraries
 
 In this step, we import the necessary libraries for the lab. We use Matplotlib to create the plot and handle events.
 
@@ -21,7 +21,7 @@ from matplotlib.patches import PathPatch
 from matplotlib.path import Path
 ```
 
-#### Step 2: Create the Plot
+#### Create the Plot
 
 In this step, we create a plot with a green path and yellow edges, using the path data provided. We then add a PathPatch object to the plot, which represents the path.
 
@@ -47,7 +47,7 @@ patch = PathPatch(
 ax.add_patch(patch)
 ```
 
-#### Step 3: Create the PathInteractor Class
+#### Create the PathInteractor Class
 
 In this step, we create the PathInteractor class, which handles the event callbacks for the path object. This class allows us to interactively edit the path by dragging markers on the plot.
 
@@ -148,7 +148,7 @@ class PathInteractor:
         self.canvas.blit(self.ax.bbox)
 ```
 
-#### Step 4: Create the Path Interactor
+#### Create the Path Interactor
 
 In this step, we create an instance of the PathInteractor class, passing in the PathPatch object we created earlier.
 
@@ -156,7 +156,7 @@ In this step, we create an instance of the PathInteractor class, passing in the 
 interactor = PathInteractor(patch)
 ```
 
-#### Step 5: Set Plot Properties
+#### Set Plot Properties
 
 In this step, we set the title and axis limits for the plot.
 
@@ -166,7 +166,7 @@ ax.set_xlim(-3, 4)
 ax.set_ylim(-3, 4)
 ```
 
-#### Step 6: Show the Plot
+#### Show the Plot
 
 In this step, we show the plot on the screen.
 

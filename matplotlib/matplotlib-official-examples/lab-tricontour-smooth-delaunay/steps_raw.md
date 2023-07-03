@@ -8,7 +8,7 @@ This tutorial demonstrates how to generate high-resolution tricontouring plots w
 
 ### Steps
 
-#### Step 1: Import Required Libraries
+#### Import Required Libraries
 
 The first step is to import the required libraries. This tutorial will use NumPy and Matplotlib.
 
@@ -18,7 +18,7 @@ import numpy as np
 from matplotlib.tri import TriAnalyzer, Triangulation, UniformTriRefiner
 ```
 
-#### Step 2: Define Test Function
+#### Define Test Function
 
 Next, we define a function that represents the results of an experiment. This function will be used to generate the test data points.
 
@@ -36,7 +36,7 @@ def experiment_res(x, y):
     return (np.max(z) - z) / (np.max(z) - np.min(z))
 ```
 
-#### Step 3: Generate Test Data Points
+#### Generate Test Data Points
 
 We generate a set of random test data points, with x and y values between -1 and 1. We also generate a corresponding set of z values using the `experiment_res` function defined in step 2.
 
@@ -53,7 +53,7 @@ y_test = random_gen.uniform(-1., 1., size=n_test)
 z_test = experiment_res(x_test, y_test)
 ```
 
-#### Step 4: Perform Delaunay Triangulation
+#### Perform Delaunay Triangulation
 
 We perform a Delaunay triangulation on the test data points using the `Triangulation` function from the `matplotlib.tri` module.
 
@@ -63,7 +63,7 @@ tri = Triangulation(x_test, y_test)
 ntri = tri.triangles.shape[0]
 ```
 
-#### Step 5: Mask Some Triangles
+#### Mask Some Triangles
 
 We mask out some of the triangles in the mesh to simulate invalidated data. We randomly select a subset of triangles based on the `init_mask_frac` parameter.
 
@@ -75,7 +75,7 @@ mask_init[masked_tri] = True
 tri.set_mask(mask_init)
 ```
 
-#### Step 6: Improve Triangulation
+#### Improve Triangulation
 
 We use a `TriAnalyzer` to improve the triangulation by removing badly shaped (flat) triangles from the border of the triangulation. We then apply the mask to the triangulation using `set_mask`.
 
@@ -85,7 +85,7 @@ mask = TriAnalyzer(tri).get_flat_tri_mask(min_circle_ratio)
 tri.set_mask(mask)
 ```
 
-#### Step 7: Refine and Interpolate Data
+#### Refine and Interpolate Data
 
 We refine and interpolate the data using a `UniformTriRefiner`.
 
@@ -95,7 +95,7 @@ refiner = UniformTriRefiner(tri)
 tri_refi, z_test_refi = refiner.refine_field(z_test, subdiv=subdiv)
 ```
 
-#### Step 8: Plot the Data
+#### Plot the Data
 
 We plot the refined data using Matplotlib's `tricontour` function.
 
