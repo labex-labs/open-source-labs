@@ -15,6 +15,6 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 5. Submit the changes with the message "Added new feature".
 6. Finally, push the changes to the remote repository.
 
-This is the result of running `git log -r`:
+This is the result of running `git log`:
 
 ![<result>](./assets/challenge-push-changes-step1-1.png)
