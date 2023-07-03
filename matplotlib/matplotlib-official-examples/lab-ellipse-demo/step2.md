@@ -32,5 +32,3 @@ ax.set_ylim(0, 10)
 # Show the plot
 plt.show()
 ```
-
-#

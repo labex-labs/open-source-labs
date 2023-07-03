@@ -5,5 +5,3 @@ Display the GTK4 window.
 ```python
 win.show()
 ```
-
-#

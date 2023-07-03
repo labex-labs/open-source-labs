@@ -13,5 +13,3 @@ plt.plot(t, s1)
 plt.subplot(212)
 plt.plot(t, 2*s1)
 ```
-
-#

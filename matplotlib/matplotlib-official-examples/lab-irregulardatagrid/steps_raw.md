@@ -8,7 +8,7 @@ This lab demonstrates how to create a contour plot of irregularly spaced data in
 
 ### Steps
 
-#### Step 1: Import necessary libraries
+#### Import necessary libraries
 
 We start by importing the necessary libraries for this example: `matplotlib.pyplot` and `numpy`. Additionally, we import `matplotlib.tri` for triangulation of the data.
 
@@ -18,7 +18,7 @@ import numpy as np
 import matplotlib.tri as tri
 ```
 
-#### Step 2: Generate random data
+#### Generate random data
 
 We generate random data using NumPy's `np.random.uniform` method. We generate `npts = 200` data points with x and y values between -2 and 2. We also calculate the z values using the function `z = x * np.exp(-x**2 - y**2)`.
 
@@ -30,7 +30,7 @@ y = np.random.uniform(-2, 2, npts)
 z = x * np.exp(-x**2 - y**2)
 ```
 
-#### Step 3: Interpolation on a grid
+#### Interpolation on a grid
 
 We create a contour plot of irregularly spaced data coordinates via interpolation on a grid. We first create grid values for x and y using `np.linspace`. We then linearly interpolate the data (x, y) on a grid defined by (xi, yi) using `tri.LinearTriInterpolator`. We plot the interpolated data with the usual `axes.Axes.contour`.
 
@@ -54,7 +54,7 @@ fig.colorbar(cntr1, ax=ax1)
 plt.show()
 ```
 
-#### Step 4: Tricontour
+#### Tricontour
 
 We plot the same data using a tricontour plot by directly supplying the unordered, irregularly spaced coordinates to `axes.Axes.tricontour`.
 

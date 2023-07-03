@@ -1,4 +1,4 @@
-# : Customized tick label direction
+# Customized tick label direction
 
 In this step, we will create a subplot with customized tick label direction.
 
@@ -9,5 +9,3 @@ ax.axis["bottom"].set_axis_direction("top")
 ax.axis["right"].set_axis_direction("left")
 ax.axis["top"].set_axis_direction("bottom")
 ```
-
-#

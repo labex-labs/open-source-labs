@@ -22,5 +22,3 @@ ax.set_xlim(right=15)  # adjust xlim to fit labels
 
 plt.show()
 ```
-
-#

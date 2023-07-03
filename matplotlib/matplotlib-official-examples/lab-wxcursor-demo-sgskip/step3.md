@@ -7,5 +7,3 @@ def UpdateStatusBar(self, event):
     if event.inaxes:
         self.statusBar.SetStatusText(f"x={event.xdata}  y={event.ydata}")
 ```
-
-#

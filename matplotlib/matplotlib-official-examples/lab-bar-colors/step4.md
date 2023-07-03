@@ -11,5 +11,3 @@ ax.set_title('Fruit supply by kind and color', color='purple')
 ax.legend(title='Fruit color', title_color='red', labelcolor='green')
 plt.show()
 ```
-
-#

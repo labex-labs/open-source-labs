@@ -11,5 +11,3 @@ sfs_backward = SequentialFeatureSelector(ridge, n_features_to_select=2, directio
 print(f"Features selected by forward sequential selection: {feature_names[sfs_forward.get_support()]}")
 print(f"Features selected by backward sequential selection: {feature_names[sfs_backward.get_support()]}")
 ```
-
-#

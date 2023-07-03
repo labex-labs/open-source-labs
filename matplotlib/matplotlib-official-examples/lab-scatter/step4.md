@@ -6,5 +6,3 @@ In this step, we will create the scatter plot using the Matplotlib library. We w
 plt.scatter(x, y, s=area, c=colors, alpha=0.5)
 plt.show()
 ```
-
-#

@@ -31,7 +31,7 @@ def setup_axes(fig, pos):
 
 We will create three subplots to demonstrate different ways to customize the direction of tick labels.
 
-#### Step 3.1: Tick labels pointing outwards
+#### Tick labels pointing outwards
 
 In this step, we will create a subplot with tick labels pointing outwards.
 
@@ -44,7 +44,7 @@ for axis in ax.axis.values():
     axis.major_ticks.set_tick_out(True)
 ```
 
-#### Step 3.2: Customized tick label direction
+#### Customized tick label direction
 
 In this step, we will create a subplot with customized tick label direction.
 
@@ -56,7 +56,7 @@ ax.axis["right"].set_axis_direction("left")
 ax.axis["top"].set_axis_direction("bottom")
 ```
 
-#### Step 3.3: Tick labels pointing outwards on one side
+#### Tick labels pointing outwards on one side
 
 In this step, we will create a subplot with tick labels pointing outwards on one side.
 

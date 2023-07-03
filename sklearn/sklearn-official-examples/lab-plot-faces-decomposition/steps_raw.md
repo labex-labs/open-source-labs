@@ -199,7 +199,7 @@ plt.show()
 
 We apply MiniBatchDictionaryLearning again, but this time we enforce positivity when finding the dictionary and/or coding coefficients.
 
-#### Step 9.1: Dictionary learning - positive dictionary
+#### Dictionary learning - positive dictionary
 
 ```python
 dict_pos_dict_estimator = decomposition.MiniBatchDictionaryLearning(
@@ -218,7 +218,7 @@ plot_gallery(
 )
 ```
 
-#### Step 9.2: Dictionary learning - positive code
+#### Dictionary learning - positive code
 
 ```python
 dict_pos_code_estimator = decomposition.MiniBatchDictionaryLearning(
@@ -238,7 +238,7 @@ plot_gallery(
 )
 ```
 
-#### Step 9.3: Dictionary learning - positive dictionary & code
+#### Dictionary learning - positive dictionary & code
 
 ```python
 dict_pos_estimator = decomposition.MiniBatchDictionaryLearning(

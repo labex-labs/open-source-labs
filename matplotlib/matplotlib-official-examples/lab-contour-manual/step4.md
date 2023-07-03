@@ -14,5 +14,3 @@ cbar = fig.colorbar(cs)
 ax.set(xlim=(-0.5, 3.5), ylim=(-0.5, 3.5),
        title='User specified filled contours with holes')
 ```
-
-#

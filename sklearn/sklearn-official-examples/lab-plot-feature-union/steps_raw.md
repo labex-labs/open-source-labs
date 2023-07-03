@@ -33,7 +33,7 @@ X, y = iris.data, iris.target
 
 Since the iris dataset is high-dimensional, we will perform feature extraction using PCA and univariate selection.
 
-#### Step 3.1: PCA
+#### PCA
 
 We will use PCA to reduce the dimensionality of the dataset.
 
@@ -41,7 +41,7 @@ We will use PCA to reduce the dimensionality of the dataset.
 pca = PCA(n_components=2)
 ```
 
-#### Step 3.2: Univariate Selection
+#### Univariate Selection
 
 We will use univariate selection to select the most significant features.
 
@@ -49,7 +49,7 @@ We will use univariate selection to select the most significant features.
 selection = SelectKBest(k=1)
 ```
 
-#### Step 3.3: Combined Features
+#### Combined Features
 
 We will combine the features obtained from PCA and univariate selection using the `FeatureUnion` transformer.
 
@@ -57,7 +57,7 @@ We will combine the features obtained from PCA and univariate selection using th
 combined_features = FeatureUnion([("pca", pca), ("univ_select", selection)])
 ```
 
-#### Step 3.4: Transformed Dataset
+#### Transformed Dataset
 
 We will use the combined features to transform the dataset.
 

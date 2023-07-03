@@ -15,5 +15,3 @@ con = ConnectionPatch(
 )
 fig.add_artist(con)
 ```
-
-#

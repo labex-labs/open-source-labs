@@ -6,5 +6,3 @@ We first need to import the necessary libraries, including `numpy` and `matplotl
 import matplotlib.pyplot as plt
 import numpy as np
 ```
-
-#

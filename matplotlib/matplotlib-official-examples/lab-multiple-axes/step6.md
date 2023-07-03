@@ -12,5 +12,3 @@ def animate(i):
     con.xy2 = i, y
     return point, sine, con
 ```
-
-#

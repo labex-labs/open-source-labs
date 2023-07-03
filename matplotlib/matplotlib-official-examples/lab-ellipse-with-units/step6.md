@@ -13,5 +13,3 @@ fig.savefig('arc_compare')
 
 plt.show()
 ```
-
-#

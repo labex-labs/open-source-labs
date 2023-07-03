@@ -1,4 +1,4 @@
-# : Lasso via Least Angle Regression
+# Lasso via Least Angle Regression
 
 We will make the hyperparameter tuning using `LassoLarsCV`.
 

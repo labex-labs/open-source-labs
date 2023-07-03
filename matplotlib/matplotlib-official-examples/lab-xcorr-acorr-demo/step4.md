@@ -16,5 +16,3 @@ The `acorr` function takes the following parameters:
 - `normed`: boolean, whether to normalize the correlation values
 - `maxlags`: integer, the maximum number of lags to calculate the correlation for
 - `lw`: integer, the line width for the plot
-
-#

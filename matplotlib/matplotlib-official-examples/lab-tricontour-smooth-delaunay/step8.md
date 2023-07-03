@@ -17,5 +17,3 @@ ax.tricontour(tri_refi, z_test_refi, levels=levels, cmap='Blues',
 
 plt.show()
 ```
-
-#

@@ -8,7 +8,7 @@ In this lab, we will learn how to create bar chart using Python's Matplotlib lib
 
 ### Steps
 
-#### Step 1: Import Matplotlib Library
+#### Import Matplotlib Library
 
 First, we need to import the Matplotlib library. This can be done using the following code:
 
@@ -16,7 +16,7 @@ First, we need to import the Matplotlib library. This can be done using the foll
 import matplotlib.pyplot as plt
 ```
 
-#### Step 2: Define Data for the Chart
+#### Define Data for the Chart
 
 Next, we need to define the data that we want to use to create the chart. In this example, we will be creating a chart that shows the supply of different types of fruits. We will define the fruit names, the supply counts, the bar colors, and the legend labels as follows:
 
@@ -27,7 +27,7 @@ bar_labels = ['red', 'blue', '_red', 'orange']
 bar_colors = ['tab:red', 'tab:blue', 'tab:red', 'tab:orange']
 ```
 
-#### Step 3: Create the Bar Chart
+#### Create the Bar Chart
 
 Now, we can create the bar chart using the data that we defined in Step 2. We will use the `bar()` method of Matplotlib's `pyplot` module to create the chart. We will also pass in the `label` and `color` parameters to control the legend entries and the bar colors, respectively. The following code demonstrates how to create the bar chart:
 
@@ -40,7 +40,7 @@ ax.legend(title='Fruit color')
 plt.show()
 ```
 
-#### Step 4: Customize the Chart
+#### Customize the Chart
 
 We can customize the chart further by adding axis labels and a title. We can also change the color of the axis labels and the legend title. The following code demonstrates how to customize the chart:
 

@@ -12,5 +12,3 @@ ani = animation.FuncAnimation(
     repeat_delay=100,
 )
 ```
-
-#

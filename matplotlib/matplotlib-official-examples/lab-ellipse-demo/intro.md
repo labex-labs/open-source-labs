@@ -4,7 +4,4 @@ This lab demonstrates how to use Python Matplotlib to draw ellipses. The lab cov
 
 - Drawing individual ellipses
 - Drawing ellipses with different angles
-
-#
-
-> You can write code in `ellipse-demo.ipynb`.
+  > You can write code in `ellipse-demo.ipynb`.

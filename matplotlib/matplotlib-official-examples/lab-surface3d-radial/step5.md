@@ -8,5 +8,3 @@ ax.set_xlabel(r'$\phi_\mathrm{real}$')
 ax.set_ylabel(r'$\phi_\mathrm{im}$')
 ax.set_zlabel(r'$V(\phi)$')
 ```
-
-#

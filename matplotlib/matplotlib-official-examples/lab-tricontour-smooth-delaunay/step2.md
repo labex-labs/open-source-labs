@@ -15,5 +15,3 @@ def experiment_res(x, y):
          2 * (x**2 + y**2))
     return (np.max(z) - z) / (np.max(z) - np.min(z))
 ```
-
-#

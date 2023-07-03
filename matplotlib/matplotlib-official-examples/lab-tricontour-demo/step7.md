@@ -2,7 +2,7 @@
 
 We can create a user-specified triangulation using the `x`, `y`, and `triangles` arrays. We can then create a contour plot using `ax.tricontourf`.
 
-```python
+````python
 xy = np.asarray([
     [-0.101, 0.872], [-0.080, 0.883], [-0.069, 0.888], [-0.054, 0.890],
     [-0.045, 0.897], [-0.057, 0.895], [-0.073, 0.900], [-0.087, 0.898],
@@ -53,7 +53,5 @@ tcf = ax4.tricontourf(x, y, triangles, z)
 fig4.colorbar(tcf)
 ax4.set_title('Contour plot of user-specified triangulation')
 ax4.set_xlabel('Longitude (degrees)')
-ax4.set_ylabel('Latitude (degrees)')
-
-#
-```
+ax4.set_ylabel('Latitude (degrees)')```
+````

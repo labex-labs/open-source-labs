@@ -5,5 +5,3 @@ In this step, we create an instance of the PathInteractor class, passing in the 
 ```python
 interactor = PathInteractor(patch)
 ```
-
-#

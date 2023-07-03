@@ -7,5 +7,3 @@ We perform a Delaunay triangulation on the test data points using the `Triangula
 tri = Triangulation(x_test, y_test)
 ntri = tri.triangles.shape[0]
 ```
-
-#

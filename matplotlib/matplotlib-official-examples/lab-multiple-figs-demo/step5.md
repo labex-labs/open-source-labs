@@ -11,5 +11,3 @@ plt.plot(t, s2, 's')
 ax = plt.gca()
 ax.set_xticklabels([])
 ```
-
-#

@@ -11,5 +11,3 @@ con = ConnectionPatch(
     arrowstyle="-")
 ax2.add_artist(con)
 ```
-
-#

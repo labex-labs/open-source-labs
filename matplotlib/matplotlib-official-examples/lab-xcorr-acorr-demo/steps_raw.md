@@ -8,7 +8,7 @@ The purpose of this lab is to demonstrate the use of cross-correlation and auto-
 
 ### Steps
 
-#### Step 1: Import Libraries
+#### Import Libraries
 
 First, we need to import the necessary libraries. In this lab, we will be using NumPy and Matplotlib.
 
@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 ```
 
-#### Step 2: Generate Random Data
+#### Generate Random Data
 
 Next, we will generate two arrays of random data using NumPy. We will use these arrays to demonstrate cross-correlation and auto-correlation.
 
@@ -26,7 +26,7 @@ np.random.seed(19680801)
 x, y = np.random.randn(2, 100)
 ```
 
-#### Step 3: Plot Cross-Correlation
+#### Plot Cross-Correlation
 
 We will now plot the cross-correlation between the two arrays using the `xcorr` function in Matplotlib.
 
@@ -46,7 +46,7 @@ The `xcorr` function takes the following parameters:
 - `normed`: boolean, whether to normalize the correlation values
 - `lw`: integer, the line width for the plot
 
-#### Step 4: Plot Auto-Correlation
+#### Plot Auto-Correlation
 
 We will now plot the auto-correlation of the `x` array using the `acorr` function in Matplotlib.
 

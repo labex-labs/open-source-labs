@@ -8,7 +8,7 @@ This step-by-step lab demonstrates how to create an animation with multiple subp
 
 ### Steps
 
-#### Step 1: Import Libraries
+#### Import Libraries
 
 The first step is to import the required libraries, including Matplotlib, NumPy, and Matplotlib's animation module.
 
@@ -19,7 +19,7 @@ import matplotlib.animation as animation
 from matplotlib.patches import ConnectionPatch
 ```
 
-#### Step 2: Create the Figure and Subplots
+#### Create the Figure and Subplots
 
 The second step is to create the figure and subplots that will be used for the animation. In this example, we create two subplots side-by-side with different aspect ratios. The left subplot is a unit circle, and the right subplot is an empty plot that will be used to animate a sine curve.
 
@@ -36,7 +36,7 @@ axr.yaxis.set_visible(False)
 axr.xaxis.set_ticks([0, np.pi, 2 * np.pi], ["0", r"$\pi$", r"$2\pi$"])
 ```
 
-#### Step 3: Draw the Circle and Initial Point
+#### Draw the Circle and Initial Point
 
 The third step is to draw the circle and initial point on the left subplot. We create an array of angles to generate the circle, and then plot the sine and cosine of each angle. We also plot a single point at the origin.
 
@@ -46,7 +46,7 @@ axl.plot(np.cos(x), np.sin(x), "k", lw=0.3)
 point, = axl.plot(0, 0, "o")
 ```
 
-#### Step 4: Draw the Sine Curve
+#### Draw the Sine Curve
 
 The fourth step is to draw the sine curve on the right subplot. We create an array of angles, and then plot the sine of each angle. We also save the `sine` plot object, which we will update later in the animation.
 
@@ -54,7 +54,7 @@ The fourth step is to draw the sine curve on the right subplot. We create an arr
 sine, = axr.plot(x, np.sin(x))
 ```
 
-#### Step 5: Draw the Connection Line
+#### Draw the Connection Line
 
 The fifth step is to draw a dotted line connecting the two subplots. We create a `ConnectionPatch` object that connects the origin of the left subplot to the right edge of the right subplot. We also save the `con` patch object, which we will update later in the animation.
 
@@ -72,7 +72,7 @@ con = ConnectionPatch(
 fig.add_artist(con)
 ```
 
-#### Step 6: Define the Animation Function
+#### Define the Animation Function
 
 The sixth step is to define the animation function. This function will be called for each frame of the animation, and will update the position of the point on the left subplot, the position and data of the sine curve on the right subplot, and the position of the connection patch.
 
@@ -87,7 +87,7 @@ def animate(i):
     return point, sine, con
 ```
 
-#### Step 7: Create the Animation
+#### Create the Animation
 
 The seventh step is to create the animation object using the `FuncAnimation` function. We pass in the figure object, the animation function, the interval between frames in milliseconds, the number of frames, and a delay before repeating the animation.
 
@@ -102,7 +102,7 @@ ani = animation.FuncAnimation(
 )
 ```
 
-#### Step 8: Show the Animation
+#### Show the Animation
 
 The final step is to show the animation using the `show` function of the `pyplot` module.
 

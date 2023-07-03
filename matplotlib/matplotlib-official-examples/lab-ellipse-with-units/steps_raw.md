@@ -8,7 +8,7 @@ In this lab, you will learn how to compare the ellipse generated with arcs versu
 
 ### Steps
 
-#### Step 1: Import Libraries
+#### Import Libraries
 
 To begin, we will import the necessary libraries.
 
@@ -18,7 +18,7 @@ import numpy as np
 from matplotlib import patches
 ```
 
-#### Step 2: Set Ellipse Parameters
+#### Set Ellipse Parameters
 
 In this step, we will set the parameters for the ellipse.
 
@@ -28,7 +28,7 @@ width, height = 0.1, 0.3
 angle = -30
 ```
 
-#### Step 3: Generate Ellipse using Arcs
+#### Generate Ellipse using Arcs
 
 In this step, we will generate the ellipse using arcs.
 
@@ -48,7 +48,7 @@ x += xcenter
 y += ycenter
 ```
 
-#### Step 4: Generate Ellipse using Polygonal Approximation
+#### Generate Ellipse using Polygonal Approximation
 
 In this step, we will generate the ellipse using a polygonal approximation.
 
@@ -68,7 +68,7 @@ x += xcenter
 y += ycenter
 ```
 
-#### Step 5: Plot Ellipse using Arcs
+#### Plot Ellipse using Arcs
 
 In this step, we will plot the ellipse using arcs.
 
@@ -84,7 +84,7 @@ e1 = patches.Arc((xcenter, ycenter), width, height,
 ax.add_patch(e1)
 ```
 
-#### Step 6: Plot Ellipse using Polygonal Approximation
+#### Plot Ellipse using Polygonal Approximation
 
 In this step, we will plot the ellipse using a polygonal approximation.
 

@@ -8,7 +8,7 @@ In this tutorial, we will learn how to use the `bar_label` helper function in Ma
 
 ### Steps
 
-#### Step 1: Import Libraries
+#### Import Libraries
 
 First, we need to import the necessary libraries, including `numpy` and `matplotlib`. We will also use the `random` module from `numpy` to generate some random data.
 
@@ -20,7 +20,7 @@ import numpy as np
 np.random.seed(19680801)
 ```
 
-#### Step 2: Vertical Bar Chart Labeling
+#### Vertical Bar Chart Labeling
 
 We will start by creating a vertical bar chart and labeling it using the `bar_label` function. The data we will use is the number of penguins by sex, taken from https://allisonhorst.github.io/palmerpenguins/.
 
@@ -47,7 +47,7 @@ ax.legend()
 plt.show()
 ```
 
-#### Step 3: Horizontal Bar Chart Labeling
+#### Horizontal Bar Chart Labeling
 
 Next, we will create a horizontal bar chart and label it using the `bar_label` function. We will use the data from the previous step, but this time we will generate some random performance data for each person.
 
@@ -72,7 +72,7 @@ ax.set_xlim(right=15)  # adjust xlim to fit labels
 plt.show()
 ```
 
-#### Step 4: Advanced Bar Labeling
+#### Advanced Bar Labeling
 
 In this step, we will show some more advanced things that can be done with bar labels. We will use the same horizontal bar chart as in the previous step.
 
@@ -93,7 +93,7 @@ ax.set_xlim(right=16)
 plt.show()
 ```
 
-#### Step 5: Bar Labeling Using `{}`-Style Format String
+#### Bar Labeling Using `{}`-Style Format String
 
 In this step, we will show how to use a `{}`-style format string to format bar labels. We will use some data on gelato sales by flavor.
 
@@ -107,7 +107,7 @@ ax.set(ylabel='pints sold', title='Gelato sales by flavor', ylim=(0, 8000))
 ax.bar_label(bar_container, fmt='{:,.0f}')
 ```
 
-#### Step 6: Bar Labeling Using a Callable
+#### Bar Labeling Using a Callable
 
 Finally, we will show how to use a callable to format bar labels. We will use some data on running speeds of different animals.
 

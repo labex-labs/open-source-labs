@@ -10,5 +10,3 @@ plt.show()
 ```
 
 This will generate a plot with a grey line format and diamond-shaped markers. The baseline has also been adjusted to 1.1.
-
-#

@@ -5,5 +5,3 @@ We will create the triangulation using `matplotlib.tri.Triangulation`. We do not
 ```python
 triang = tri.Triangulation(x, y)
 ```
-
-#
