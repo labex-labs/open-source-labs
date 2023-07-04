@@ -13,3 +13,5 @@ print(fig.canvas.get_supported_filetypes())
 ```python
 fig.savefig('sales.png', transparent=False, dpi=80, bbox_inches="tight")
 ```
+
+You can open the saved image file using the file explorer in the left sidebar.

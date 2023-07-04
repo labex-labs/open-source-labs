@@ -5,7 +5,8 @@ Another way to change the visual appearance of plots is to set the rcParams in a
 ```python
 import matplotlib.pyplot as plt
 
-plt.style.use('ggplot')
+print(plt.style.available)
+plt.style.use('Solarize_Light2')
 ```
 
 You can also define your own custom styles and use them by calling `.style.use` with the path or URL to the style sheet.

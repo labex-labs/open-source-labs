@@ -13,3 +13,10 @@ print(plt.style.available)
 ```python
 plt.style.use('fivethirtyeight')
 ```
+
+3. Let's show the plot again.
+
+```python
+fig, ax = plt.subplots()
+ax.barh(group_names, group_data)
+```

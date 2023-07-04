@@ -17,3 +17,14 @@ ax.set(xlim=[-10000, 140000],
        ylabel='Company',
        title='Company Revenue')
 ```
+
+3. Show the plot again.
+
+```python
+fig, ax = plt.subplots()
+ax.barh(group_names, group_data)
+labels = ax.get_xticklabels()
+plt.setp(labels, rotation=45, horizontalalignment='right')
+ax.set(xlim=[-10000, 140000], xlabel='Total Revenue', ylabel='Company',
+       title='Company Revenue')
+```
