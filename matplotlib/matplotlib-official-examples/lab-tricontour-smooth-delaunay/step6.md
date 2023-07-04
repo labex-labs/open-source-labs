@@ -7,5 +7,3 @@ We use a `TriAnalyzer` to improve the triangulation by removing badly shaped (fl
 mask = TriAnalyzer(tri).get_flat_tri_mask(min_circle_ratio)
 tri.set_mask(mask)
 ```
-
-#

@@ -26,5 +26,3 @@ for X_transformed, title in [(X_ipca, "Incremental PCA"), (X_pca, "PCA")]:
 
 plt.show()
 ```
-
-#

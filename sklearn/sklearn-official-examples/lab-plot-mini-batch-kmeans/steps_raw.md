@@ -1,4 +1,4 @@
-# Comparing K-Means and MiniBatchKMeans Clustering Algorithms
+# Comparing K-Means and MiniBatchKMeans
 
 ## Introduction
 

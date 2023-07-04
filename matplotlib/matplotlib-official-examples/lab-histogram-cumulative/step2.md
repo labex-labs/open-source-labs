@@ -8,5 +8,3 @@ mu = 200
 sigma = 25
 data = np.random.normal(mu, sigma, size=100)
 ```
-
-#

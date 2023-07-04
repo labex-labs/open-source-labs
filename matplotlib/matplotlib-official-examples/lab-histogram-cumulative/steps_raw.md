@@ -8,7 +8,7 @@ This tutorial demonstrates how to plot the empirical cumulative distribution fun
 
 ### Steps
 
-#### Step 1: Import the necessary libraries
+#### Import the necessary libraries
 
 In this step, we will import the necessary libraries. We will be using the NumPy and Matplotlib libraries for this tutorial.
 
@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 ```
 
-#### Step 2: Set the random seed and generate the data
+#### Set the random seed and generate the data
 
 In this step, we will set the random seed and generate the data. We will generate 100 data points from a normal distribution with a mean of 200 and a standard deviation of 25.
 
@@ -28,7 +28,7 @@ sigma = 25
 data = np.random.normal(mu, sigma, size=100)
 ```
 
-#### Step 3: Create the figure and subplots
+#### Create the figure and subplots
 
 In this step, we will create a figure with two subplots for the cumulative distributions. We will also set the figure size to 9x4.
 
@@ -37,7 +37,7 @@ fig = plt.figure(figsize=(9, 4), layout="constrained")
 axs = fig.subplots(1, 2, sharex=True, sharey=True)
 ```
 
-#### Step 4: Plot the cumulative distributions
+#### Plot the cumulative distributions
 
 In this step, we will plot the cumulative distributions. We will use the `.ecdf` method to plot the ECDF and the complementary ECDF. We will also plot the theoretical CDF using a normal distribution with a mean of 200 and a standard deviation of 25.
 
@@ -60,7 +60,7 @@ axs[1].hist(data, bins=bins, density=True, histtype="step", cumulative=-1,
 axs[1].plot(x, 1 - y, "k--", linewidth=1.5, label="Theory")
 ```
 
-#### Step 5: Label the figure
+#### Label the figure
 
 In this step, we will label the figure. We will add a title, gridlines, and labels for the x and y axes.
 

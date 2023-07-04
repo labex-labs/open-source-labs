@@ -17,5 +17,3 @@ The `xcorr` function takes the following parameters:
 - `maxlags`: integer, the maximum number of lags to calculate the correlation for
 - `normed`: boolean, whether to normalize the correlation values
 - `lw`: integer, the line width for the plot
-
-#

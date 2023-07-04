@@ -1,4 +1,4 @@
-# : Dictionary learning - positive dictionary & code
+# Dictionary learning - positive dictionary & code
 
 ```python
 dict_pos_estimator = decomposition.MiniBatchDictionaryLearning(

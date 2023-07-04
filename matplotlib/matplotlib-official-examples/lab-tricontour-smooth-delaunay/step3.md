@@ -14,5 +14,3 @@ x_test = random_gen.uniform(-1., 1., size=n_test)
 y_test = random_gen.uniform(-1., 1., size=n_test)
 z_test = experiment_res(x_test, y_test)
 ```
-
-#

@@ -109,7 +109,7 @@ _ = ax.set_title(
 
 We will use two different estimators to select the best hyperparameter alpha with integrated cross-validation: `LassoCV` and `LassoLarsCV`. For both algorithms, we will use a 20-fold cross-validation strategy.
 
-#### Step 6.1: Lasso via Coordinate Descent
+#### Lasso via Coordinate Descent
 
 We will make the hyperparameter tuning using `LassoCV`.
 
@@ -121,7 +121,7 @@ model = make_pipeline(StandardScaler(), LassoCV(cv=20)).fit(X, y)
 fit_time = time.time() - start_time
 ```
 
-#### Step 6.2: Lasso via Least Angle Regression
+#### Lasso via Least Angle Regression
 
 We will make the hyperparameter tuning using `LassoLarsCV`.
 

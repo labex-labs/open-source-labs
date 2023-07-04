@@ -11,5 +11,3 @@ colors = [(0, 'red'), (0.5, 'green'), (1, 'blue')]
 # Create a LinearSegmentedColormap object from the list of colors
 cmap = mcolors.LinearSegmentedColormap.from_list('my_cmap', colors)
 ```
-
-#

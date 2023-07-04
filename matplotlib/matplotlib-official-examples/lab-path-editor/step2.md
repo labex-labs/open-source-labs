@@ -23,5 +23,3 @@ patch = PathPatch(
     path, facecolor='green', edgecolor='yellow', alpha=0.5)
 ax.add_patch(patch)
 ```
-
-#

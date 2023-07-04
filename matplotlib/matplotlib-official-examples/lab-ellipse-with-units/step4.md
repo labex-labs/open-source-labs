@@ -17,5 +17,3 @@ x, y = np.dot(R, [x, y])
 x += xcenter
 y += ycenter
 ```
-
-#

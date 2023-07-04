@@ -8,5 +8,3 @@ import numpy as np
 import matplotlib.animation as animation
 from matplotlib.patches import ConnectionPatch
 ```
-
-#

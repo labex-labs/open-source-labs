@@ -1,4 +1,4 @@
-# : Dictionary learning - positive code
+# Dictionary learning - positive code
 
 ```python
 dict_pos_code_estimator = decomposition.MiniBatchDictionaryLearning(
@@ -17,5 +17,3 @@ plot_gallery(
     cmap=plt.cm.RdBu,
 )
 ```
-
-#

@@ -15,5 +15,3 @@ fig2.colorbar(tcf)
 ax2.tricontour(triang, z, linestyles="solid", colors="k", linewidths=2.0)
 ax2.set_title("Hatched Contour plot of Delaunay triangulation")
 ```
-
-#

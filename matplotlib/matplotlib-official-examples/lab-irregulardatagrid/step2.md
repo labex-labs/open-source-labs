@@ -9,5 +9,3 @@ x = np.random.uniform(-2, 2, npts)
 y = np.random.uniform(-2, 2, npts)
 z = x * np.exp(-x**2 - y**2)
 ```
-
-#

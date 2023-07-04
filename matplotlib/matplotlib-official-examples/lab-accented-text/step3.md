@@ -5,5 +5,3 @@ To run the code, you must have Matplotlib installed. You can install Matplotlib 
 ```python
 pip install matplotlib
 ```
-
-#

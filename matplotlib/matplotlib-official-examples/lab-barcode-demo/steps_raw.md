@@ -10,7 +10,7 @@ This lab demonstrates how to create a barcode using Matplotlib in Python. The ba
 
 Follow the below steps to create a barcode using Matplotlib:
 
-#### Step 1: Import the Required Libraries
+#### Import the Required Libraries
 
 We first need to import the necessary libraries, including `numpy` and `matplotlib`.
 
@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 ```
 
-#### Step 2: Create the Binary Array
+#### Create the Binary Array
 
 Next, we need to create the binary array that will be used to generate the barcode. In this example, we will use the following binary array:
 
@@ -31,7 +31,7 @@ code = np.array([
     1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1])
 ```
 
-#### Step 3: Set the Pixel and DPI Values
+#### Set the Pixel and DPI Values
 
 We need to define the pixel and DPI values for the barcode. In this example, we will use a pixel value of 4 and a DPI value of 100.
 
@@ -40,7 +40,7 @@ pixel_per_bar = 4
 dpi = 100
 ```
 
-#### Step 4: Create the Figure and Axes
+#### Create the Figure and Axes
 
 We need to create the figure and axes for the barcode. We will set the figure size to a multiple of the number of data points, and turn off all axis.
 
@@ -50,7 +50,7 @@ ax = fig.add_axes([0, 0, 1, 1])  # span the whole figure
 ax.set_axis_off()
 ```
 
-#### Step 5: Render the Barcode
+#### Render the Barcode
 
 Finally, we can render the barcode using `Axes.imshow`. We will use `code.reshape(1, -1)` to turn the data into a 2D array with one row, `imshow(..., aspect='auto')` to allow for non-square pixels, and `imshow(..., interpolation='nearest')` to prevent blurred edges.
 

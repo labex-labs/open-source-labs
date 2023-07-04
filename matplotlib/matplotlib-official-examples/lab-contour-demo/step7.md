@@ -31,5 +31,3 @@ l, b, w, h = ax.get_position().bounds
 ll, bb, ww, hh = CB.ax.get_position().bounds
 CB.ax.set_position([ll, b + 0.1*h, ww, h*0.8])
 ```
-
-#

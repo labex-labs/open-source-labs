@@ -20,5 +20,3 @@ cached_pipe = Pipeline(
 memory.clear(warn=False)
 rmtree(location)
 ```
-
-#

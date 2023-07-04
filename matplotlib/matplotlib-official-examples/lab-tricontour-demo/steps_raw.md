@@ -10,7 +10,7 @@ Contour plots are a way to represent three-dimensional data on a two-dimensional
 
 ### Steps
 
-#### Step 1: Create the Data
+#### Create the Data
 
 First, we will create the x and y coordinates of the points, as well as the z values. We will use the `np.linspace` function to create evenly spaced arrays of values.
 
@@ -29,7 +29,7 @@ y = (radii * np.sin(angles)).flatten()
 z = (np.cos(radii) * np.cos(3 * angles)).flatten()
 ```
 
-#### Step 2: Create the Triangulation
+#### Create the Triangulation
 
 We will create the triangulation using `matplotlib.tri.Triangulation`. We do not need to specify the triangles, so the Delaunay triangulation of the points will be created automatically.
 
@@ -37,7 +37,7 @@ We will create the triangulation using `matplotlib.tri.Triangulation`. We do not
 triang = tri.Triangulation(x, y)
 ```
 
-#### Step 3: Mask off unwanted triangles
+#### Mask off unwanted triangles
 
 We will use the `set_mask` method to mask off unwanted triangles.
 
@@ -47,7 +47,7 @@ triang.set_mask(np.hypot(x[triang.triangles].mean(axis=1),
                 < min_radius)
 ```
 
-#### Step 4: Create a pcolor plot
+#### Create a pcolor plot
 
 We will create a pcolor plot using `ax.tricontourf` and `fig.colorbar`.
 
@@ -60,7 +60,7 @@ ax1.tricontour(triang, z, colors='k')
 ax1.set_title('Contour plot of Delaunay triangulation')
 ```
 
-#### Step 5: Create a hatched contour plot
+#### Create a hatched contour plot
 
 We can create a hatched contour plot by specifying the `hatches` parameter in `ax.tricontourf`. We can also use a different colormap by specifying the `cmap` parameter.
 
@@ -78,7 +78,7 @@ ax2.tricontour(triang, z, linestyles="solid", colors="k", linewidths=2.0)
 ax2.set_title("Hatched Contour plot of Delaunay triangulation")
 ```
 
-#### Step 6: Generate hatching patterns labeled with no color
+#### Generate hatching patterns labeled with no color
 
 We can generate hatching patterns labeled with no color by specifying the `colors` parameter as `"none"` in `ax.tricontourf`. We can also create a legend for the contour set using `ContourSet.legend_elements`.
 
@@ -98,7 +98,7 @@ artists, labels = tcf.legend_elements(str_format="{:2.1f}".format)
 ax3.legend(artists, labels, handleheight=2, framealpha=1)
 ```
 
-#### Step 7: Create a user-specified triangulation
+#### Create a user-specified triangulation
 
 We can create a user-specified triangulation using the `x`, `y`, and `triangles` arrays. We can then create a contour plot using `ax.tricontourf`.
 
@@ -155,7 +155,7 @@ ax4.set_title('Contour plot of user-specified triangulation')
 ax4.set_xlabel('Longitude (degrees)')
 ax4.set_ylabel('Latitude (degrees)')
 
-#### Step 8: Show the plots
+#### Show the plots
 
 Finally, we will show all the plots using `plt.show()`.
 

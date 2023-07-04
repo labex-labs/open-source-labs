@@ -63,7 +63,7 @@ def add_floating_axis(ax1):
 In this step, add padding to the tick labels on the floating axis. This can be done by setting the `pad` attribute of the `major_ticklabels` object to the desired padding value.
 
 ```python
-### Step 4: Add Padding to Tick Labels
+# Add Padding to Tick Labels
 fig = plt.figure(figsize=(9, 3.))
 fig.subplots_adjust(left=0.01, right=0.99, bottom=0.01, top=0.99, wspace=0.01, hspace=0.01)
 
@@ -82,7 +82,7 @@ plt.show()
 In this step, adjust the padding of the axis label on the floating axis. This can be done by setting the `pad` attribute of the `label` object to the desired padding value.
 
 ```python
-### Step 5: Adjust Axis Label Padding
+# Adjust Axis Label Padding
 fig = plt.figure(figsize=(9, 3.))
 fig.subplots_adjust(left=0.01, right=0.99, bottom=0.01, top=0.99, wspace=0.01, hspace=0.01)
 
@@ -101,7 +101,7 @@ plt.show()
 In this step, adjust the position of the ticks on the floating axis. This can be done by setting the `tick_out` attribute of the `major_ticks` object to `True`.
 
 ```python
-### Step 6: Adjust Tick Position
+# Adjust Tick Position
 fig = plt.figure(figsize=(9, 3.))
 fig.subplots_adjust(left=0.01, right=0.99, bottom=0.01, top=0.99, wspace=0.01, hspace=0.01)
 

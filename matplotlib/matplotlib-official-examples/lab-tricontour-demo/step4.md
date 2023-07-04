@@ -10,5 +10,3 @@ fig1.colorbar(tcf)
 ax1.tricontour(triang, z, colors='k')
 ax1.set_title('Contour plot of Delaunay triangulation')
 ```
-
-#

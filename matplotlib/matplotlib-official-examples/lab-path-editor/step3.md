@@ -98,5 +98,3 @@ class PathInteractor:
         self.ax.draw_artist(self.line)
         self.canvas.blit(self.ax.bbox)
 ```
-
-#

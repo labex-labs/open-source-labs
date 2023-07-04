@@ -7,5 +7,3 @@ ax.imshow(code.reshape(1, -1), cmap='binary', aspect='auto',
           interpolation='nearest')
 plt.show()
 ```
-
-#

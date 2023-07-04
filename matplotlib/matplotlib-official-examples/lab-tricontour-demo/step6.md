@@ -17,5 +17,3 @@ ax3.tricontour(triang, z, n_levels, colors="black", linestyles="-")
 artists, labels = tcf.legend_elements(str_format="{:2.1f}".format)
 ax3.legend(artists, labels, handleheight=2, framealpha=1)
 ```
-
-#

@@ -24,5 +24,3 @@ ax.legend()
 
 plt.show()
 ```
-
-#

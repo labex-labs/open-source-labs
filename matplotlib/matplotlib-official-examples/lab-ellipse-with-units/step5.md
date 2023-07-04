@@ -13,5 +13,3 @@ e1 = patches.Arc((xcenter, ycenter), width, height,
 
 ax.add_patch(e1)
 ```
-
-#

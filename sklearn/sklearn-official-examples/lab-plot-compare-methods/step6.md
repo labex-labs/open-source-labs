@@ -12,5 +12,3 @@ t_sne = manifold.TSNE(
 )
 S_t_sne = t_sne.fit_transform(S_points)
 ```
-
-#

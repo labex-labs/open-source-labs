@@ -11,5 +11,3 @@ ax2.set_title('Tricontour Plot of Irregularly Spaced Data')
 fig.colorbar(cntr2, ax=ax2)
 plt.show()
 ```
-
-#

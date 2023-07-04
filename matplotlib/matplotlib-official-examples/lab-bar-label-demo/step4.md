@@ -18,5 +18,3 @@ ax.set_xlim(right=16)
 
 plt.show()
 ```
-
-#

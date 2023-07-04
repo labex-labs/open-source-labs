@@ -21,5 +21,3 @@ ax1.set_title('Contour Plot of Irregularly Spaced Data Interpolated on a Grid')
 fig.colorbar(cntr1, ax=ax1)
 plt.show()
 ```
-
-#
