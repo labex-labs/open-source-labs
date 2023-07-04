@@ -1,15 +1,9 @@
 # Variables
 
-## Problem
-
 You are required to complete the code to declare and initialize variables of different types in Golang.
-
-## Requirements
 
 - Basic knowledge of Golang syntax
 - Familiarity with variable declaration and initialization in Golang
-
-## Example
 
 ```sh
 $ go run variables.go
@@ -20,7 +14,7 @@ true
 apple
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // In Go, _variables_ are explicitly declared and used by

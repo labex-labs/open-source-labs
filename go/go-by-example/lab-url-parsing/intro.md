@@ -1,3 +1,3 @@
 # URL Parsing
 
-The purpose of this challenge is to demonstrate how to parse URLs in Go.
+The purpose of this lab is to demonstrate how to parse URLs in Go.

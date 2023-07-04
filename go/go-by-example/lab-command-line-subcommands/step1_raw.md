@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your ability to define and use subcommands with their own set of flags in Golang.
-
-## Problem
+This lab aims to test your ability to define and use subcommands with their own set of flags in Golang.
 
 You are required to create a program that supports two subcommands, `foo` and `bar`, each with its own set of flags. The `foo` subcommand should have two flags, `enable` and `name`, while the `bar` subcommand should have one flag, `level`.
-
-## Requirements
 
 - The program should use the `flag` package to define and parse flags.
 - The `foo` subcommand should have two flags, `enable` and `name`, both of type string.
@@ -60,8 +56,6 @@ default:
 }
 ```
 
-## Example
-
 ```
 $ go run main.go foo -enable -name John Doe
 subcommand 'foo'
@@ -80,4 +74,4 @@ expected 'foo' or 'bar' subcommands
 
 ## Summary
 
-In this challenge, you learned how to define and use subcommands with their own set of flags in Golang using the `flag` package. You also learned how to parse the flags for each subcommand and access the trailing positional arguments.
+In this lab, you learned how to define and use subcommands with their own set of flags in Golang using the `flag` package. You also learned how to parse the flags for each subcommand and access the trailing positional arguments.

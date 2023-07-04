@@ -1,15 +1,9 @@
 # Hello World
 
-## Problem
-
 Write a program that prints the message "hello world" to the console.
-
-## Requirements
 
 - The program should use the `fmt` package to print the message.
 - The program should be written in Golang.
-
-## Example
 
 ```sh
 # To run the program, put the code in `hello-world.go` and
@@ -31,7 +25,7 @@ hello world
 # learn more about the language.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Our first program will print the classic "hello world"

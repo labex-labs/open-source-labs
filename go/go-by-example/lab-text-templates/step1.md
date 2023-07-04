@@ -1,18 +1,12 @@
 # Text Templates
 
-## Problem
-
-In this challenge, you are required to demonstrate the use of the `text/template` package to generate dynamic content.
-
-## Requirements
+In this lab, you are required to demonstrate the use of the `text/template` package to generate dynamic content.
 
 - Use the `text/template` package to generate dynamic content.
 - Use the `template.Must` function to panic in case `Parse` returns an error.
 - Use the `{{.FieldName}}` action to access struct fields.
 - Use the `{{if . -}} yes {{else -}} no {{end}}\n` action to provide conditional execution for templates.
 - Use the `{{range .}}{{.}} {{end}}\n` action to loop through slices, arrays, maps, or channels.
-
-## Example
 
 ```sh
 $ go run templates.go
@@ -26,7 +20,7 @@ no
 Range: Go Rust C++ C#
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go offers built-in support for creating dynamic content or showing customized

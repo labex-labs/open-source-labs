@@ -4,11 +4,7 @@
 
 In programming, we often need to create data that is not needed after the program exits. Temporary files and directories are useful for this purpose since they do not pollute the file system over time.
 
-## Problem
-
-In this challenge, you need to create temporary files and directories in Go.
-
-## Requirements
+In this lab, you need to create temporary files and directories in Go.
 
 - Use `os.CreateTemp` to create a temporary file.
 - Use `os.MkdirTemp` to create a temporary directory.
@@ -62,8 +58,6 @@ err = os.WriteFile(fname, []byte{1, 2}, 0666)
 check(err)
 ```
 
-## Example
-
 ```
 Temp file name: /tmp/sample123456
 Temp dir name: /tmp/sampledir123456
@@ -71,4 +65,4 @@ Temp dir name: /tmp/sampledir123456
 
 ## Summary
 
-In this challenge, you learned how to create temporary files and directories in Go using `os.CreateTemp`, `os.MkdirTemp`, `os.RemoveAll`, and `os.WriteFile`. Temporary files and directories are useful for creating data that is not needed after the program exits and do not pollute the file system over time.
+In this lab, you learned how to create temporary files and directories in Go using `os.CreateTemp`, `os.MkdirTemp`, `os.RemoveAll`, and `os.WriteFile`. Temporary files and directories are useful for creating data that is not needed after the program exits and do not pollute the file system over time.
