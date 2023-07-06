@@ -1,5 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep 'data'
-git diff | grep '\n'
+git diff | grep -w 'data'
