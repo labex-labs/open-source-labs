@@ -1,15 +1,9 @@
 # Value Types
 
-## Problem
-
 Your task is to complete the `calculate` function that takes in two integers and returns their sum and product.
-
-## Requirements
 
 - The `calculate` function should take in two integers as parameters.
 - The `calculate` function should return two integers, the sum and product of the input parameters.
-
-## Example
 
 ```sh
 $ go run values.go
@@ -21,7 +15,7 @@ true
 false
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go has various value types including strings,

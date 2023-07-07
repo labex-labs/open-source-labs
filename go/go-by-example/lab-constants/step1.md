@@ -1,10 +1,6 @@
 # Constants
 
-## Problem
-
 The problem to be solved is to demonstrate the use of constants in Golang for character, string, boolean, and numeric values.
-
-## Requirements
 
 The lab has the following requirements:
 
@@ -15,8 +11,6 @@ The lab has the following requirements:
 - A numeric constant has no type until it's given one, such as by an explicit conversion.
 - A number can be given a type by using it in a context that requires one, such as a variable assignment or function call.
 
-## Example
-
 ```sh
 $ go run constant.go
 constant
@@ -25,7 +19,7 @@ constant
 -0.28470407323754404
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go supports _constants_ of character, string, boolean,

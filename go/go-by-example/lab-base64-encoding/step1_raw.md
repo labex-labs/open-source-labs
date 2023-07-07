@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your knowledge of base64 encoding in Golang.
-
-## Problem
+This lab aims to test your knowledge of base64 encoding in Golang.
 
 You are required to write a Golang program that encodes and decodes a given string using both standard and URL-compatible base64 encoding.
-
-## Requirements
 
 - The program should import the `encoding/base64` package with the `b64` name instead of the default `base64`.
 - The program should encode the given string using both standard and URL-compatible base64 encoding.
@@ -31,8 +27,6 @@ uEnc := b64.URLEncoding.EncodeToString([]byte(data))
 uDec, _ := b64.URLEncoding.DecodeString(uEnc)
 ```
 
-## Example
-
 ```
 Encoded using standard base64 encoding: YWJjMTIzIT8kKiYoKSctPUB+
 Decoded using standard base64 decoding: abc123!?$*&()'-=@~
@@ -43,4 +37,4 @@ Decoded using URL-compatible base64 decoding: abc123!?$*&()'-=@~
 
 ## Summary
 
-In this challenge, you learned how to encode and decode a given string using both standard and URL-compatible base64 encoding in Golang.
+In this lab, you learned how to encode and decode a given string using both standard and URL-compatible base64 encoding in Golang.

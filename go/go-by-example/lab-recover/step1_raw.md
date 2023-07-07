@@ -4,11 +4,7 @@
 
 In Golang, `recover` is a built-in function that can be used to recover from a panic. This lab will test your ability to use `recover` to handle panics.
 
-## Problem
-
 The `mayPanic` function in the provided code will panic when called. Your task is to modify the `main` function to recover from the panic and print the error message.
-
-## Requirements
 
 - Use the `recover` function to handle the panic in the `mayPanic` function.
 - Print the error message when a panic occurs.
@@ -38,8 +34,6 @@ func main() {
 	fmt.Println("After mayPanic()")
 }
 ```
-
-## Example
 
 ```
 Recovered. Error:

@@ -1,16 +1,10 @@
 # JSON
 
-## Problem
-
 You are required to complete the code provided to encode and decode JSON data in Golang. The code contains examples of encoding and decoding basic data types, as well as custom data types.
-
-## Requirements
 
 - Basic knowledge of Golang programming language.
 - Familiarity with encoding and decoding JSON data in Golang.
 - Ability to read and understand existing Golang code.
-
-## Example
 
 ```sh
 $ go run json.go
@@ -37,7 +31,7 @@ apple
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go offers built-in support for JSON encoding and

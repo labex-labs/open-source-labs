@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your ability to use the `net/http` package in Golang to issue HTTP requests.
-
-## Problem
+This lab aims to test your ability to use the `net/http` package in Golang to issue HTTP requests.
 
 You are required to write a program that sends an HTTP GET request to a server and prints the HTTP response status and the first 5 lines of the response body.
-
-## Requirements
 
 - The program should use the `net/http` package to issue an HTTP GET request.
 - The program should print the HTTP response status.
@@ -24,8 +20,6 @@ You are required to write a program that sends an HTTP GET request to a server a
 // TODO: Handle errors gracefully.
 ```
 
-## Example
-
 ```
 Response status: 200 OK
 <!doctype html>
@@ -39,4 +33,4 @@ Response status: 200 OK
 
 ## Summary
 
-In this challenge, you have learned how to use the `net/http` package in Golang to issue HTTP requests and handle errors.
+In this lab, you have learned how to use the `net/http` package in Golang to issue HTTP requests and handle errors.
