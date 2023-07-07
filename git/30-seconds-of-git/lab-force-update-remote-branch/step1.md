@@ -2,55 +2,44 @@
 
 When you rewrite history locally, you create a new commit with a different SHA-1 hash. This means that the commit history on your local branch is different from the commit history on the remote branch. If you try to push your changes to the remote branch, Git will reject the push because it will see the commit history as diverged. To solve this problem, you need to force an update of the remote branch.
 
-To demonstrate how to update a remote branch after rewriting history, we will use the `git-playground` repository. This repository contains a simple Python script that prints "Hello, World!" to the console.
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
 1. Clone the `git-playground` repository to your local machine:
-   ```
-   git clone https://github.com/labex-labs/git-playground.git
-   ```
-2. Create a new branch called `feature` and switch to it:
-   ```
-   git checkout -b feature
-   ```
-3. Modify the Python script to print "Hello, Git!" instead of "Hello, World!":
-   ```
-   sed -i 's/World/Git/g' hello.py
-   ```
-4. Commit the changes:
-   ```
-   git commit -am "Update greeting"
-   ```
-5. Push the changes to the remote repository:
-   ```
-   git push origin feature
-   ```
-   This should succeed because you are the only one working on the `feature` branch.
-6. Switch to the `master` branch:
-   ```
-   git checkout master
-   ```
-7. Modify the Python script to print "Hello, Labex!" instead of "Hello, World!":
-   ```
-   sed -i 's/World/Labex/g' hello.py
-   ```
-8. Commit the changes:
-   ```
-   git commit -am "Update greeting"
-   ```
-9. Pull the changes from the remote repository:
-   ```
-   git pull origin master
-   ```
-10. Switch back to the `feature` branch:
-    ```
-    git checkout feature
-    ```
-11. Rebase the `feature` branch onto the `master` branch:
-    ```
-    git rebase master
-    ```
-12. Push the changes to the remote repository:
-    ```
-    git push -f origin feature
-    ```
-    The `-f` flag forces Git to update the remote branch with your changes, even though the commit history has diverged.
+```shell
+git clone https://github.com/your-username/git-playground.git
+```
+2. Update the previous commit message to "Update file2.txt":
+```shell
+git commit --amend
+```
+3. Push changes from local branch to remote repository:
+```shell
+git push
+```
+4. If you can't push it successfully, please force push it:
+```shell
+git push -f origin master
+```
+The `-f` flag forces Git to update the remote branch with your changes, even though the commit history has diverged.
+
+This is the final result:
+```shell
+commit 7d87e34194c7530f97a11f74c7d90e2eb71d315f (HEAD -> master, origin/master, origin/HEAD)
+Author: xiaoshengyunan <1797063828@qq.com>
+Date:   Mon Jul 3 15:31:29 2023 +0800
+
+    Update file2.txt
+
+commit cf80005e40a3c661eb212fcea5fad06f8283f08f (origin/rewind-commits)
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
+
+    Added file1.txt
+
+commit b00b9374a7c549d1af111aa777fdcc868d8a2a01
+Author: Hang <huhuhang@gmail.com>
+Date:   Wed Apr 26 14:16:00 2023 +0800
+
+    Initial commit
+```
+
