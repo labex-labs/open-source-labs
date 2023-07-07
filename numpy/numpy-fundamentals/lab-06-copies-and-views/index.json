@@ -1,0 +1,153 @@
+{
+  "type": "lab",
+  "title": "NumPy Basics Lab",
+  "description": "In this lab, you will learn the basics of working with NumPy arrays. NumPy is a powerful library for numerical computing in Python. It provides efficient data structures and functions for performing mathematical operations on arrays.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding Copies and Views",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice the code in 06-copies-and-views.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "numpy/copy",
+          "numpy/view"
+        ]
+      },
+      {
+        "title": "Creating Views",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice the code in 06-copies-and-views.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/array",
+          "numpy/view",
+          "numpy/array_indexing",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Creating Copies",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice the code in 06-copies-and-views.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/array",
+          "numpy/copy",
+          "numpy/array_indexing",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Indexing Operations",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice the code in 06-copies-and-views.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/arange",
+          "numpy/array_slicing",
+          "numpy/array_indexing",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Other Operations",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice the code in 06-copies-and-views.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/ones",
+          "numpy/transpose",
+          "numpy/shape",
+          "numpy/reshape",
+          "numpy/ravel",
+          "numpy/flatten"
+        ]
+      },
+      {
+        "title": "Determining if an Array is a View or a Copy",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice the code in 06-copies-and-views.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/arange",
+          "numpy/reshape",
+          "numpy/base"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "06-copies-and-views.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
+    "repo": "https://github.com/numpy/numpy"
+  }
+}
