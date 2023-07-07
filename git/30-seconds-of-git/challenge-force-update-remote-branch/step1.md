@@ -15,13 +15,13 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 
 This is the final result:
 ```shell
-commit 7d87e34194c7530f97a11f74c7d90e2eb71d315f (HEAD -> master, origin/master, origin/HEAD)
-Author: xiaoshengyunan <1797063828@qq.com>
-Date:   Mon Jul 3 15:31:29 2023 +0800
+commit b8c530558ecd004156dd05ac7d22d8cf07b2c28e (HEAD -> master, origin/master, origin/HEAD)
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
 
     Update file2.txt
 
-commit cf80005e40a3c661eb212fcea5fad06f8283f08f (origin/rewind-commits)
+commit cf80005e40a3c661eb212fcea5fad06f8283f08f
 Author: Hang <huhuhang@users.noreply.github.com>
 Date:   Wed Apr 26 14:16:25 2023 +0800
 
