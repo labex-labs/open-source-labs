@@ -8,7 +8,7 @@ To complete this lab, you will use the Git repository `git-playground` from your
 ```shell
 git clone https://github.com/your-username/git-playground.git
 ```
-2. Update the previous commit message to "Update file2.txt":
+2. Update a commit with the message "Added file2.txt" to a commit with the message "Update file2.txt":
 ```shell
 git commit --amend
 ```
