@@ -11,7 +11,6 @@ git rm -f 30code
 
 ```shell
 cd git
-git submodule update
 git submodule status
 git submodule deinit -f -- sha1collisiondetection 
 rm -rf .git/modules/sha1collisiondetection
