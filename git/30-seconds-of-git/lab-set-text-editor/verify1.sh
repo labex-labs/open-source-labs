@@ -1,3 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git text"
-cat ~/.zsh_history | grep -v grep | grep "git config"
+(cd /home/labex/project/git-playground && git config --list | grep "core.editor=vim") && (cd /home/labex/project/git-playground && git log | grep "Update hello.txt") && echo "True"
