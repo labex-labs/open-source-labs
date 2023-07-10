@@ -1,3 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git rm"
-cat ~/.zsh_history | grep -v grep | grep "git submodule"
+(cd /home/labex/project/git && ! git submodule status | grep "sha1collisiondetection") && echo "True"
+

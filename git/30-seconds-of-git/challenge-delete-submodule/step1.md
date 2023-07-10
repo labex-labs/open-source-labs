@@ -2,31 +2,17 @@
 
 ## Problem
 
-You have a Git repository that includes a submodule named `submodule1`. You want to delete this submodule from your repository.
+You have a Git repository that includes a submodule named `sha1collisiondetection`. You want to delete this submodule from your repository.
 
 ## Example
 
-For this challenge, we will use the Git repository named `https://github.com/labex-labs/git-playground`. This repository includes a submodule named `submodule1`.
+For this challenge, we will use the Git repository named `https://github.com/git/git`. This repository includes a submodule named `sha1collisiondetection`.
 
-To delete the `submodule1` submodule from the repository, follow these steps:
+To delete the `sha1collisiondetection` submodule from the repository, follow these steps:
 
 1. Open your terminal and navigate to the root directory of your Git repository.
-2. Run the following command to unregister the `submodule1` submodule:
+2. Unregister the `sha1collisiondetection` submodule.
+3. Remove the directory of the `sha1collisiondetection` submodule.
+4. Remove the working tree of the `sha1collisiondetection` submodule.
 
-   ```
-   git submodule deinit -f -- submodule1
-   ```
-
-3. Run the following command to remove the directory of the `submodule1` submodule:
-
-   ```
-   rm -rf .git/modules/submodule1
-   ```
-
-4. Run the following command to remove the working tree of the `submodule1` submodule:
-
-   ```
-   git rm -f submodule1
-   ```
-
-After completing these steps, the `submodule1` submodule will be deleted from your Git repository.
+After these steps, the `sha1collisiondetection` submodule will be removed from your Git repository. If you run the `git submodule status` command, you won't get any information about the submodule.
