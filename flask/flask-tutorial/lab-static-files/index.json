@@ -1,0 +1,98 @@
+{
+  "type": "lab",
+  "title": "Styling Flask Application",
+  "description": "In this lab, we will learn how to add CSS to our Flask application to make it visually appealing. We will use static files, specifically a CSS file, to style our application. Static files are files that don't change, such as CSS files, JavaScript files, and images.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "details": {
+    "steps": [
+      {
+        "title": "Create CSS file",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Add CSS rules",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Link CSS file in HTML",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Verify the changes",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204",
+    "services": [
+      {
+        "type": "iframe",
+        "name": "HTTP 5000",
+        "port": 5000
+      }
+    ]
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
+    "repo": "https://github.com/pallets/flask"
+  }
+}
