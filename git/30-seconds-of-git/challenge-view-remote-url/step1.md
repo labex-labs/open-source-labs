@@ -1,4 +1,4 @@
-# Git Challenge: View the Remote URL
+# View the Remote URL
 
 ## Problem
 
@@ -6,14 +6,10 @@ As a developer, you may need to view the URL of a remote repository for various 
 
 ## Example
 
-For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. To view the remote URL of this repository, follow these steps:
+For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. View the remote URL of this repository.
 
 1. Open your terminal or command prompt.
 2. Navigate to the directory where you have cloned the `git-playground` repository.
-3. Run the following command to view the remote URL:
+3. View the remote URL.
 
-```shell
-git config --get remote.origin.url
-```
-
-4. The output should display the URL of the remote repository, which in this case is `https://github.com/labex-labs/git-playground.git`.
+The output should display the URL of the remote repository, which in this case is `https://github.com/labex-labs/git-playground.git`.
