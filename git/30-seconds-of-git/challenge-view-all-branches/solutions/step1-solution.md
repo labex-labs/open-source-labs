@@ -3,8 +3,6 @@ git branch
 ```
 
 ```shell
+cd git-playground
 git branch
-# master
-# patch-1
-# patch-2
 ```
