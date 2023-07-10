@@ -6,53 +6,12 @@ You have been working on a project in a Git repository named `https://github.com
 
 ## Example
 
-1. Clone the Git repository:
+1. List all the branches in the repository.
+2. Switch to the `feature-1` branch.
+3. Verify that you are now on the `feature-1` branch.
 
-```
-git clone https://github.com/labex-labs/git-playground.git
-```
-
-2. Navigate to the repository directory:
-
-```
-cd git-playground
-```
-
-3. List all the branches in the repository:
-
-```
-git branch
-```
-
-Output:
-
-```
-* main
-  patch-1
-```
-
-4. Switch to the `feature-1` branch:
-
-```
-git checkout feature-1
-```
-
-Output:
-
-```
-Switched to branch 'feature-1'
-```
-
-5. Verify that you are now on the `feature-1` branch:
-
-```
-git branch
-```
-
-Output:
-
-```
-  main
-  patch-1
+This is the final result:
+```shell
 * feature-1
+  master
 ```
