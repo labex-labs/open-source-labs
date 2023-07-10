@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git reset"
+(cd /home/labex/project/git-playground && ! git log --oneline | grep "Added file2.txt") && (cd /home/labex/project/git-playground && ! git log --oneline | grep "Added file1.txt") && echo "True"
