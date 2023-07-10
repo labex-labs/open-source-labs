@@ -1,3 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
-cat ~/.zsh_history | grep -v grep | grep "git branch"
+(cd /home/labex/project/git-playground && ! git branch | grep "new-branch-3") && (cd /home/labex/project/git-playground && ! git branch | grep "new-branch-2") && (cd /home/labex/project/git-playground && ! git branch | grep "new-branch-1") && (cd /home/labex/project/git-playground && ! git branch | grep "new-branch") && (cd /home/labex/project/git-playground && git branch | grep "master") && echo "True"
