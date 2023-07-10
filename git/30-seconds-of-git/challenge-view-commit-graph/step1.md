@@ -1,4 +1,4 @@
-# Git Challenge: View a Visual Graph of the Repository
+# View a Visual Graph of the Repository
 
 ## Problem
 
@@ -6,17 +6,14 @@ As a developer, you may need to view the history of a repository to understand h
 
 ## Example
 
-To view a visual graph of a Git repository, you can use the `git log` command with the `--graph` option. For example, let's say you want to view the history of the `git-playground` repository on GitHub. First, you would need to clone the repository to your local machine:
+To view a visual graph of a Git repository, let's say you want to view the history of the `git-playground` repository on GitHub. 
 
-```shell
-git clone https://github.com/labex-labs/git-playground.git
+1. Once you have cloned the repository, you can navigate to the directory and view the graph.
+2. Display a visual graph of all the commits and branches in the repository, allowing you to see how the code has evolved over time.
+
+This is the final result:
 ```
-
-Once you have cloned the repository, you can navigate to the directory and use the `git log` command to view the graph:
-
-```shell
-cd git-playground
-git log --pretty=oneline --graph --decorate --all
+* d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/master, origin/feature-branch, origin/HEAD) Added file2.txt
+* cf80005e40a3c661eb212fcea5fad06f8283f08f Added file1.txt
+* b00b9374a7c549d1af111aa777fdcc868d8a2a01 Initial commit
 ```
-
-This will display a visual graph of all the commits and branches in the repository, allowing you to see how the code has evolved over time.
