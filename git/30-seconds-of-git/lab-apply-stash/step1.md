@@ -2,64 +2,29 @@
 
 You are working on a feature branch in the `git-playground` repository and you need to switch to another branch to work on a bug fix. However, you have some changes that are not ready to be committed yet. You want to save these changes and switch to the other branch. Once you are done with the bug fix, you want to apply the stash and continue working on your feature branch.
 
-1. Clone the `git-playground` repository:
+The changes have been stashed on the `feature-branch` branch, and the stash message is "my changes".
 
-```
-git clone https://github.com/labex-labs/git-playground.git
-```
-
-2. Change to the `git-playground` directory:
-
-```
+1. Change to the `git-playground` directory:
+```shell
 cd git-playground
 ```
-
-3. Create a new branch called `feature-branch`:
-
-```
-git checkout -b feature-branch
-```
-
-4. Make some changes to the files in the repository:
-
-```
-echo "some changes" >> README.md
-```
-
-5. Save the changes to a stash:
-
-```
-git stash save "my changes"
-```
-
-6. Switch to the `master` branch:
-
-```
+2. Switch to the `master` branch and stash it after fixing the bug, the stash message is "fix the bug":
+```shell
 git checkout master
+echo "hello,world" > file1.txt
+git stash save "fix the bug"
 ```
-
-7. Make some changes to the files in the repository:
-
-```
-echo "some bug fixes" >> README.md
-```
-
-8. Switch back to the `feature-branch`:
-
-```
+3. Switch to the `feature-branch` branch, look at the list of stashes, and apply the stash whose information is "my changes":
+```shell
 git checkout feature-branch
+git stash apply stash@{1}
 ```
 
-9. Apply the stash:
-
+This is the contents of the `README.md` file:
 ```
-git stash apply
-```
-
-10. Check the status of the repository:
-
-```
-git status
+# git-playground
+Git Playground
+some changes
 ```
 
 You should see that the changes you made before stashing are now applied.
