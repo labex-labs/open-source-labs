@@ -8,7 +8,7 @@ The changes have been stashed on the `feature-branch` branch, and the stash mess
 ```shell
 cd git-playground
 ```
-2. Switch to the `master` branch and stash it after fixing the bug, the stash message is "fix the bug":
+2. Switch to the `master` branch and stash it after fixing the bug, the stash message is "fix the bug". Fix the bug by updating the contents of the `file1.txt` file to "hello,world":
 ```shell
 git checkout master
 echo "hello,world" > file1.txt
