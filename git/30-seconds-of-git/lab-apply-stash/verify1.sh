@@ -1,2 +1,4 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git stash"
+(cd /home/labex/project/git-playground && git diff | less -R | grep "# git-playground
+ Git Playground
++some changes") && echo "True"
