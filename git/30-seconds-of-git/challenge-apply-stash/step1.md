@@ -9,7 +9,7 @@ You are working on a feature branch in the `git-playground` repository and you n
 The changes have been stashed on the `feature-branch` branch, and the stash message is "my changes".
 
 1. Change to the `git-playground` directory.
-2. Switch to the `master` branch and stash it after fixing the bug, the stash message is "fixing bug". Fix the bug by updating the contents of the `file1.txt` file to "hello,world".
+2. Switch to the `master` branch and stash it after fixing the bug, the stash message is "fix the bug". Fix the bug by updating the contents of the `file1.txt` file to "hello,world".
 3. Switch to the `feature-branch` branch, look at the list of stashes, and apply the stash whose information is "my changes".
 
 This is the contents of the `README.md` file:
