@@ -1,2 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
+(cd /home/labex/project/git-playground && git checkout feature-1 && ll | grep "hello.txt") && (cd /home/labex/project/git-playground && git checkout feature-2 && ll | grep "hello.txt") &&(cd /home/labex/project/git-playground && git checkout feature-1 && cat hello.txt | grep "hello,world") && (cd /home/labex/project/git-playground && git checkout feature-2 && cat hello.txt | grep "hello,world") && echo "True"
+
