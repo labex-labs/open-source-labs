@@ -2,31 +2,17 @@
 
 ## Problem
 
-You have been given a Git repository named `https://github.com/labex-labs/git-playground`. Your task is to find all the branches that contain the commit with the hash `3050fc0d3`.
+You have been given a Git repository named `https://github.com/labex-labs/git-playground`. Your task is to find all branches that contain a hash with the commit message "Added file2.txt".
 
 ## Example
 
-1. Clone the repository using the following command:
+1. Change into the repository directory.
+2. Find all branches that contain a hash with the commit message "Added file2.txt".
 
+The output should be:
 ```shell
-git clone https://github.com/labex-labs/git-playground.git
-```
-
-2. Change into the repository directory:
-
-```shell
-cd git-playground
-```
-
-3. Use the `git branch --contains` command to find all the branches containing the commit with the hash `3050fc0d3`:
-
-```shell
-git branch --contains 3050fc0d3
-```
-
-4. The output should be:
-
-```shell
-patch-1
-patch-2
+* master
+  new-branch
+  new-branch-1
+  new-branch-2
 ```
