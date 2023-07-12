@@ -12,7 +12,7 @@ To clone the missing submodules and checkout the correct commits, follow these s
 
 1. Change into the repository directory.
 2. Initialize the submodules.
-3. Checkout the correct commits for the submodules.
+3. Checkout to the correct commit of the submodule, i.e. the `master` branch.
 
 Here's the final result:
 ```shell
