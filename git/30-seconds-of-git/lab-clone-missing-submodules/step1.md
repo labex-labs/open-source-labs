@@ -14,7 +14,7 @@ To clone the missing submodules and checkout the correct commits, follow these s
    ```
    git submodule update --init --recursive
    ```
-3. Checkout the correct commits for the submodules:
+3. Checkout to the correct commit of the submodule, i.e. the `master` branch:
    ```
    git submodule foreach git checkout master
    ```
