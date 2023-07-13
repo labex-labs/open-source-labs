@@ -10,7 +10,7 @@ You are working on a project in a Git repository named `https://github.com/your-
 2. Navigate to the directory and configure the identity.
 3. Create and switch to `feature-1` branch and create a text file named `hello.txt` and write the string "hello,world" to it and commit the file with the message "add hello.txt".
 4. Create and switch to `feature-2` branch after switching to `master` branch.
-5. Copy the "hello.txt" file from the "feature-1" branch to the "feature-2" branch and commit it with the commit message "copy hello.txt".
+5. Copy the `hello.txt` file from the `feature-1` branch to the `feature-2` branch and commit it with the commit message "copy hello.txt".
 6. Verify that the `hello.txt` file has been copied to `feature-2` branch.
 
 You should see the `hello.txt` file in the list of files in the `feature-2` branch:
