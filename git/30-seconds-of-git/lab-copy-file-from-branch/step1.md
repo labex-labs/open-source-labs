@@ -24,9 +24,10 @@ git commit -m "add hello.txt"
 git checkout master
 git checkout -b feature-2
 ```
-5. Copy the `hello.txt` file from `feature-1` branch to `feature-2` branch:
+5. Copy the `hello.txt` file from the `feature-1` branch to the `feature-2` branch and commit it with the commit message "copy hello.txt":
 ```shell
 git checkout feature-1 hello.txt
+git commit -am "copy hello.txt"
 ```
 6. Verify that the `hello.txt` file has been copied to `feature-2` branch:
 ```shell
