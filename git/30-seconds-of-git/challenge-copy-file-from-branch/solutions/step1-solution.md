@@ -15,6 +15,7 @@ git commit -m "add hello.txt"
 git checkout master
 git checkout -b feature-2
 git checkout feature-1 hello.txt
+git commit -am "copy hello.txt"
 ll
 # `feature-2` branch now contains the hello.txt file from `feature-1`
 ```
