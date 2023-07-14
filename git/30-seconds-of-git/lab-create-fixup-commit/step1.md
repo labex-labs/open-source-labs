@@ -2,7 +2,7 @@
 
 Suppose you are working on a project with several other developers, and you notice a small error in a commit that was made a few days ago. You want to fix the error, but you don't want to create a new commit and disrupt the work of the other developers. This is where fixup commits come in handy. By creating a fixup commit, you can make the necessary changes without creating a new commit, and the fixup commit will be automatically merged with the original commit during the next rebase.
 
-For example, your task is to write the "hello,world" string to the `hello.txt` file and add it to the most recent commits as a "fixup" commit to be automatically merged in subsequent rebase operations. The most recent commit is the one with the commit message "Added file1.txt".
+For example, your task is to write the string "hello,world" to the `hello.txt` file and add it as a "fixup" commit to one of the previous commits, so that it can be automatically merged in a subsequent rebase operation. This previous commit is the commit with the message "Added file1.txt".
 
 To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
