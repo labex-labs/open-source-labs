@@ -21,7 +21,7 @@ This will create a fixup commit for the specified commit. Note that you must sta
 ```shell
 git rebase --interactive --autosquash HEAD~3
 ```
-This will perform a rebase on the last 3 commits, and automatically merge any fixup commits with their corresponding original commits.
+No need to change text and save to exit when opening the interactive editor. This will perform a rebase on the last 3 commits, and automatically merge any fixup commits with their corresponding original commits.
 
 This is the result of running the `git show HEAD~1` command:
 ```shell
