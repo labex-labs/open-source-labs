@@ -1,4 +1,4 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git add"
-cat ~/.zsh_history | grep -v grep | grep "git commit"
-cat ~/.zsh_history | grep -v grep | grep "git rebase"
+(cd /home/labex/project/git-playground && git show HEAD~1 | less -R | grep "+++ b/hello.txt
+@@ -0,0 +1 @@
++hello,world" ) && echo "True"
