@@ -6,7 +6,7 @@ Suppose you are working on a project with several other developers, and you noti
 
 ## Example
 
-Your task is to write the string "hello,world" to the `hello.txt` file and add it as a "fixup" commit to one of the previous commits, so that it can be automatically merged in a subsequent rebase operation. This previous commit is the commit with the message "Added file1.txt".
+Your task is to write the string "hello,world" to the `hello.txt` file and add it as a "fixup" commit to the commit with the message "Added file1.txt", so that it can be automatically merged in a subsequent rebase operation. 
 
 To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
