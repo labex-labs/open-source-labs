@@ -12,7 +12,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 
 1. Create a `hello.txt` file, write "hello,world" in it and add it to the staging area.
 2. Create a fixup commit for the hash of the "Added file1.txt" commit message.
-3. Once you have created the fixup commit, you can automatically merge the fixup commit with the original commit during the next rebase. When opening the interactive editor, do not change the text and save to exit.
+3. Once you have created the fixup commit, you can automatically merge the fixup commit with the original commit during the next rebase. When opening the interactive editor, you don't need to change the text and save to exit.
 
 This is the result of running the `git show HEAD~1` command:
 ```shell
