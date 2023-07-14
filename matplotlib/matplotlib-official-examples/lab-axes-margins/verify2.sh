@@ -1,4 +1,5 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep ''
+git diff | grep 'set_aspect'
+git diff | grep 'mgrid'
