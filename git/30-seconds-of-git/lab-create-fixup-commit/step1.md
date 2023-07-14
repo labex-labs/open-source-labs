@@ -6,18 +6,25 @@ For example, your task is to write the string "hello,world" to the `hello.txt` f
 
 To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
-1. Create a `hello.txt` file, write "hello,world" in it and add it to the staging area:
+1. Clone the repository, navigate to the directory and configure the identity:
+```shell
+git clone https://github.com/your-username/git-playground.git
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+```
+2. Create a `hello.txt` file, write "hello,world" in it and add it to the staging area:
 ```shell
 echo "hello,world" > hello.txt
 git add .
 ```
-2. To create a fixup commit, you can use the `git commit --fixup <commit>` command:
+3. To create a fixup commit, you can use the `git commit --fixup <commit>` command:
 ```shell
 git commit --fixup cf80005
 # This is the hash of the commit message "Added file1.txt".
 ```
 This will create a fixup commit for the specified commit. Note that you must stage your changes before creating the fixup commit.
-3. Once you have created the fixup commit, you can use the `git rebase --interactive --autosquash` command to automatically merge the fixup commit with the original commit during the next rebase. For example:
+4. Once you have created the fixup commit, you can use the `git rebase --interactive --autosquash` command to automatically merge the fixup commit with the original commit during the next rebase. For example:
 ```shell
 git rebase --interactive --autosquash HEAD~3
 ```
