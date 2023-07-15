@@ -18,7 +18,7 @@ echo "Feature 1" >> file.txt
 git add .
 git commit -m "Add feature 1"
 ```
-3. Switch back to the `master` branch and merge the `feature1` branch with fast-forward merging disabled:
+3. Switch back to the `master` branch, merge the `feature1` branch, disable the forward merge, save and exit without changing the text:
 ```shell
 git checkout master
 git merge --no-ff feature1
