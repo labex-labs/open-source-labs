@@ -1,4 +1,5 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep ''
+git diff | grep 'subplots_adjust'
+git diff | grep 'align_ylabels'
