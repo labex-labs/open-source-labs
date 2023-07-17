@@ -15,6 +15,8 @@ git status
 You should see the following output:
 ```shell
 On branch master
+Your branch is up to date with 'origin/master'.
+
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         new-file.txt
