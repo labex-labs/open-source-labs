@@ -5,6 +5,7 @@ git reset --hard HEAD
 
 ```shell
 cd git-playground
+git status
 git reset --hard HEAD
 git status
 ```
