@@ -1,6 +1,6 @@
 # Use a Formatter
 
-We can also use a formatter to format the contour labels. This will allow us to format the labels in a specific way. In this example, we will use a LogFormatterMathtext to format the labels.
+We can also use a formatter to format the contour labels. This will allow us to format the labels in a specific way. In this example, we will use a `LogFormatterMathtext` to format the labels.
 
 ```python
 fig2, ax2 = plt.subplots()
