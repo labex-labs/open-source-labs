@@ -4,19 +4,11 @@ You are working on a project using Git and have made some changes to your workin
 
 To complete this lab, you will use the Git repository named `https://github.com/labex-labs/git-playground`. Follow these steps:
 
-1. Clone the repository to your local machine:
-```shell
-git clone https://github.com/labex-labs/git-playground.git
-```
-2. Navigate to the repository directory:
+1. Navigate to the repository directory:
 ```shell
 cd git-playground
 ```
-3. Create a new file in the repository directory:
-```shell
-touch new-file.txt
-```
-4. Check the status of your working directory:
+2. Check the status of your working directory:
 ```shell
 git status
 ```
@@ -29,11 +21,11 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-5. Discard all untracked changes to the current branch:
+3. Discard all untracked changes to the current branch:
 ```shell
 git clean -f -d
 ```
-6. Check the status of your working directory again:
+4. Check the status of your working directory again:
 ```shell
 git status
 ```
