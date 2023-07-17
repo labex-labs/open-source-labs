@@ -1,4 +1,5 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep ''
+
+ls /home/labex/project/*.png

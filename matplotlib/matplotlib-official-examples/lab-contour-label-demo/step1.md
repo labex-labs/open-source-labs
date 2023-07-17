@@ -3,6 +3,9 @@
 We will start by defining our surface using numpy and matplotlib. This will give us a dataset to work with.
 
 ```python
+import matplotlib.pyplot as plt
+import numpy as np
+
 delta = 0.025
 x = np.arange(-3.0, 3.0, delta)
 y = np.arange(-2.0, 2.0, delta)
