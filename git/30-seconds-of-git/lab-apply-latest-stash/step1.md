@@ -11,7 +11,6 @@ To apply the latest stash to your Git repository, follow these steps:
 5. Run the command `git stash list` to see a list of your stashes. You should see one stash in the list.
 6. Run the command `git stash apply` to apply the latest stash to your working directory.
 7. Check the `README.md` file to see that your changes have been applied.
-
 ```shell
 git clone https://github.com/labex-labs/git-playground.git
 cd git-playground
@@ -20,4 +19,11 @@ git stash
 git stash list
 git stash apply
 cat README.md
+```
+
+This is the result of running `cat README.md`:
+```shell
+# git-playground
+Git Playground
+This is a new line
 ```
