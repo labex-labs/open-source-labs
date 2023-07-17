@@ -1,6 +1,6 @@
 # Merge a Branch
 
-Your task is to merge a branch into the current branch using Git. You will need to switch to the target branch and then merge the source branch into it. This can be useful when you want to combine changes from a feature branch into the main branch of your project.
+Your task is to merge a branch into the current branch using Git. You will need to switch to the target branch and then merge the source branch into it. This can be useful when you want to combine changes from a `feature-branch-A` into the `master` branch of your project.
 
 To complete this lab, you will use the Git repository git-playground from your GitHub account, which comes from a fork of https://github.com/labex-labs/git-playground.git. Follow these steps to merge the `feature-branch-A` into the `master` branch:
 

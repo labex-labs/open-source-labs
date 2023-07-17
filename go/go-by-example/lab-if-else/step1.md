@@ -1,18 +1,12 @@
 # if-else
 
-## Problem
-
 You are required to complete the `checkNumber` function that takes an integer as input and returns a string. If the number is even, return "even", otherwise return "odd".
-
-## Requirements
 
 - The function should be named `checkNumber`.
 - The function should take an integer as input.
 - The function should return a string.
 - If the number is even, return "even".
 - If the number is odd, return "odd".
-
-## Example
 
 ```sh
 $ go run if-else.go
@@ -25,7 +19,7 @@ $ go run if-else.go
 # for basic conditions.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Branching with `if` and `else` in Go is
