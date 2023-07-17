@@ -4,7 +4,7 @@ By default, Git uses fast forward merging to merge branches that have no diverge
 
 To disable fast forward merging, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
-1. 1. Clone the repository, navigate to the directory and configure the identity:
+1. Clone the repository, navigate to the directory and configure the identity:
 ```shell
 git clone https://github.com/your-username/git-playground.git
 cd git-playground
