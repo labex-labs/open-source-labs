@@ -6,7 +6,7 @@ As a developer, you often need to work on code that is stored in a remote reposi
 
 ## Example
 
-To clone the repository to a specific directory, you will clone the repository to a directory called `my-project` in `/home/labex/project`.
+Clone the repository from `https://github.com/labex-labs/git-playground.git` into a special directory called `my-project` in `/home/labex/project`.
 
 There is the results after completing the challenge:
 
