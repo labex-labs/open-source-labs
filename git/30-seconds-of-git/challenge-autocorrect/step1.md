@@ -14,4 +14,5 @@ You will be using a git repository called the `git-playground` directory.
 
 This is the result after completing the challenge:
 
-![<result>](./assets/assets/challenge-autocorrect-step1-1.jpg)
+![<result>](./assets/challenge-autocorrect-step1-1.jpg)
+

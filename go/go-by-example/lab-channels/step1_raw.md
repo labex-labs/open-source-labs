@@ -2,13 +2,9 @@
 
 ## Introduction
 
-The Channels challenge is designed to test your understanding of channels in Golang. Channels are used to connect concurrent goroutines, allowing values to be sent and received between them.
+The Channels lab is designed to test your understanding of channels in Golang. Channels are used to connect concurrent goroutines, allowing values to be sent and received between them.
 
-## Problem
-
-In this challenge, you are required to create a new channel and send a value into it from a new goroutine. You will then receive the value from the channel and print it out.
-
-## Requirements
+In this lab, you are required to create a new channel and send a value into it from a new goroutine. You will then receive the value from the channel and print it out.
 
 - You must use the `make(chan val-type)` syntax to create a new channel.
 - The channel must be typed by the values it conveys.
@@ -28,12 +24,10 @@ messages := make(chan string)
 // TODO: Receive the value from the `messages` channel and print it out.
 ```
 
-## Example
-
 ```
 ping
 ```
 
 ## Summary
 
-The Channels challenge tests your ability to use channels in Golang to send and receive values between concurrent goroutines. By completing this challenge, you will have a better understanding of how channels work and how they can be used to improve the performance of your Golang programs.
+The Channels lab tests your ability to use channels in Golang to send and receive values between concurrent goroutines. By completing this lab, you will have a better understanding of how channels work and how they can be used to improve the performance of your Golang programs.

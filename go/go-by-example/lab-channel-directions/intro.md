@@ -1,3 +1,3 @@
-# Golang Challenge: Channel Directions
+# Channel Directions
 
-This challenge aims to test your understanding of using channels as function parameters in Golang.
+This lab aims to test your understanding of using channels as function parameters in Golang.
