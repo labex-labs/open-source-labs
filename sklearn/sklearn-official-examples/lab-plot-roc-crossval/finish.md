@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned how to estimate and visualize the variance of the Receiver Operating Characteristic (ROC) metric using cross-validation in Python. We loaded the iris dataset, created noisy features, and classified the dataset with SVM. We then plotted the ROC curves with cross-validation and calculated the mean AUC to see the variability of the classifier output when the training set is split into different subsets. The ROC curves can help us evaluate the performance of a binary classifier and see the trade-off between true positives and false positives. Cross-validation can help us estimate the variability of the classifier output and choose the best model for our problem.

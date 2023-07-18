@@ -1,15 +1,9 @@
 # Atomic Counters
 
-## Problem
-
 The problem is to increment a counter exactly 1000 times using 50 goroutines and the `sync/atomic` package.
-
-## Requirements
 
 - Use the `sync/atomic` package to increment the counter.
 - Use a WaitGroup to wait for all goroutines to finish their work.
-
-## Example
 
 ```sh
 # We expect to get exactly 50,000 operations. Had we
@@ -25,7 +19,7 @@ ops: 50000
 # state.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // The primary mechanism for managing state in Go is
