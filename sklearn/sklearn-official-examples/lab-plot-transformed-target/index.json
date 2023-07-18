@@ -1,0 +1,178 @@
+{
+  "type": "lab",
+  "title": "Scikit-Learn TransformedTargetRegressor",
+  "description": "In this lab, we will learn how to use the TransformedTargetRegressor from the scikit-learn library. We will apply it to two different datasets to observe the benefits of transforming the target values before training a linear regression model. We will use synthetic data and the Ames housing data set to illustrate the impact of transforming the target values.",
+  "difficulty": "Beginner",
+  "time": 50,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries and load synthetic data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Plot the target distributions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Train and evaluate a linear regression model on the original targets",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Train and evaluate a linear regression model on the transformed targets",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Plot actual vs predicted values for both models",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Load and preprocess Ames housing data",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Plot target distributions for Ames housing data",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Train and evaluate a linear regression model on the original targets for Ames housing data",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Train and evaluate a linear regression model on the transformed targets for Ames housing data",
+        "text": "step9.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 9",
+            "file": "verify9.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": " Plot actual vs predicted values and residuals vs predicted values for both models",
+        "text": "step10.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 10",
+            "file": "verify10.sh",
+            "hint": "You need to practice coding in plot-transformed-target.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-transformed-target.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

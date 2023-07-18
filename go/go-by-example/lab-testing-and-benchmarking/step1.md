@@ -1,18 +1,12 @@
 # Testing and Benchmarking
 
-## Problem
-
-The problem to be solved in this challenge is to test and benchmark a simple implementation of an integer minimum function named `IntMin`.
-
-## Requirements
+The problem to be solved in this lab is to test and benchmark a simple implementation of an integer minimum function named `IntMin`.
 
 - The `testing` package must be imported.
 - The `IntMin` function must take two integer parameters and return an integer.
 - The `TestIntMinBasic` function must test the `IntMin` function for basic input values.
 - The `TestIntMinTableDriven` function must test the `IntMin` function using a table-driven style.
 - The `BenchmarkIntMin` function must benchmark the `IntMin` function.
-
-## Example
 
 ```sh
 # Run all tests in the current project in verbose mode.
@@ -47,7 +41,7 @@ ok  	examples/testing-and-benchmarking	0.351s
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Unit testing is an important part of writing

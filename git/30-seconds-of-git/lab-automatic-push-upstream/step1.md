@@ -32,6 +32,7 @@ git push --set-upstream origin new-feature
 ```shell
 git ls-remote --heads origin
 ```
+
 This is the result after completing the lab:
 
 ![<result>](./assets/challenge-automatic-push-upstream-step1-1.png)
