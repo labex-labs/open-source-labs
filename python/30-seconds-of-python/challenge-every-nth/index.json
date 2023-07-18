@@ -1,57 +1,64 @@
 {
-    "type": "challenge",
-    "title": "Every nth element in list",
-    "description": "In Python, we can access elements in a list using their index. Sometimes we may want to extract every `nth` element from a list. In this challenge, you are tasked with writing a function that takes a list and an integer `nth` as arguments and returns a new list containing every `nth` element of the original list.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "Every nth element in list",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "every_nth.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "Every nth element in list",
+  "description": "In Python, we can access elements in a list using their index. Sometimes we may want to extract every `nth` element from a list. In this challenge, you are tasked with writing a function that takes a list and an integer `nth` as arguments and returns a new list containing every `nth` element of the original list.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Every nth element in list",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": [
+          "python/list",
+          "python/list_comprehension",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": ["every_nth.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_every_nth.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_every_nth.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "every_nth.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "every_nth.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
-        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812", "jiaosenvip"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-python"
+  }
 }

@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge is about using tickers in Golang. Tickers are used when you want to do something repeatedly at regular intervals.
+This lab is about using tickers in Golang. Tickers are used when you want to do something repeatedly at regular intervals.
 
-## Problem
-
-In this challenge, you need to create a ticker that ticks every 500ms until we stop it. You will use a channel to await the values as they arrive.
-
-## Requirements
+In this lab, you need to create a ticker that ticks every 500ms until we stop it. You will use a channel to await the values as they arrive.
 
 - Use the `time` package to create a ticker.
 - Use a channel to await the values as they arrive.
@@ -43,8 +39,6 @@ func tickerFunc() {
 }
 ```
 
-## Example
-
 ```
 Tick at 2021-10-01 15:04:00.500 +0800 CST m=+0.501000001
 Tick at 2021-10-01 15:04:01 +0800 CST m=+1.001000001
@@ -55,4 +49,4 @@ Ticker stopped
 
 ## Summary
 
-In this challenge, you learned how to use tickers in Golang. You created a ticker that ticks every 500ms until we stop it, used a channel to await the values as they arrive, and stopped the ticker after 1600ms.
+In this lab, you learned how to use tickers in Golang. You created a ticker that ticks every 500ms until we stop it, used a channel to await the values as they arrive, and stopped the ticker after 1600ms.

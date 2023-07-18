@@ -1,0 +1,108 @@
+{
+  "type": "lab",
+  "title": "Classifier Chain Ensemble",
+  "description": "This lab demonstrates an example of using classifier chain on a multilabel dataset. The Classifier Chain algorithm is a modification of the problem transformation method for multi-label classification. This method exploits the correlation among the classes by building a chain of binary classifiers. Each model gets the predictions of the preceding models in the chain as features. We will use the `yeast` dataset which contains 2417 datapoints each with 103 features and 14 possible labels. Each data point has at least one label. As a baseline we first train a logistic regression classifier for each of the 14 labels. To evaluate the performance of these classifiers we predict on a held-out test set and calculate the Jaccard score for each sample.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Load the yeast dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-classifier-chain-yeast.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Train an independent logistic regression model for each class",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-classifier-chain-yeast.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Train an ensemble of logistic regression classifier chains",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-classifier-chain-yeast.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Take the average prediction of all the chains",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in plot-classifier-chain-yeast.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Plot the Jaccard similarity scores",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in plot-classifier-chain-yeast.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-classifier-chain-yeast.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

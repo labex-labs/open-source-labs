@@ -3,6 +3,6 @@ git diff <branch>..<other-branch>
 ```
 
 ```shell
-git diff patch-1..patch-2
-# Displays the difference between branches `patch-1` and `patch-2`
+git diff feature-1..feature-2
+# Displays the difference between branches `feature-1` and `feature-2`
 ```

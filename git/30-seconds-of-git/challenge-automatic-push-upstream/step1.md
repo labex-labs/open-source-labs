@@ -16,4 +16,3 @@ To complete the challenge, you will use the Git repository `git-playground` in y
 This is the result after completing the challenge:
 
 ![<result>](./assets/challenge-automatic-push-upstream-step1-1.png)
- 
