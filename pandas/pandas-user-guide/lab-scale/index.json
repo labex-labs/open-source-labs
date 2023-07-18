@@ -1,0 +1,139 @@
+{
+  "type": "lab",
+  "title": "Scaling Large Datasets",
+  "description": "This lab focuses on how to scale data analysis to larger datasets using pandas. It covers methods like loading less data, using efficient data types, chunking, and leveraging other libraries like Dask. It is important to note that pandas is more suited for in-memory analytics and might not be the best tool for very large datasets.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/pandas",
+          "python/numpy",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "pandas/date_range",
+          "python/len",
+          "numpy/random",
+          "pandas/dataframe",
+          "python/sorted",
+          "pandas/iloc",
+          "pandas/rename",
+          "pandas/concat",
+          "pandas/to_parquet",
+          "python/range"
+        ]
+      },
+      {
+        "title": "Load Less Data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/read_parquet"]
+      },
+      {
+        "title": "Use Efficient Datatypes",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/to_parquet",
+          "pandas/read_parquet",
+          "pandas/astype",
+          "pandas/copy",
+          "pandas/to_numeric",
+          "pandas/apply"
+        ]
+      },
+      {
+        "title": "Use Chunking",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/pathlib",
+          "pandas/series",
+          "pandas/integer",
+          "pandas/read_parquet",
+          "pandas/add",
+          "pandas/value_counts",
+          "pandas/astype"
+        ]
+      },
+      {
+        "title": "Use Other Libraries",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/dask", "pandas/read_parquet", "pandas/value_counts"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "scale.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
+    "repo": "https://github.com/pandas-dev/pandas"
+  }
+}

@@ -1,15 +1,9 @@
 # Writing Files
 
-## Problem
-
 You need to write a Go program that writes a string and bytes into a file and uses buffered writers.
-
-## Requirements
 
 - The program should write a string and bytes into a file.
 - The program should use buffered writers.
-
-## Example
 
 ```sh
 # Try running the file-writing code.
@@ -31,7 +25,7 @@ buffered
 # we've just seen to the `stdin` and `stdout` streams.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Writing files in Go follows similar patterns to the

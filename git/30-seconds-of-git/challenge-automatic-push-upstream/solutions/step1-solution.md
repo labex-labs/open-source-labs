@@ -3,6 +3,7 @@ git config [--global] --add --bool
 ```
 
 ```shell
-git config --global --add --bool
-# `git push` will automatically create new branches, if they don't exist
+git config --add --bool remote.origin.pushdefault true
+git checkout -b new-feature
+git push --set-upstream origin new-feature
 ```
