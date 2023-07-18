@@ -17,4 +17,3 @@ This is the result of running the `cat README.md` command:
 ![<an-example-result>](./assets/challenge-apply-latest-stash-step1-1.png)
 
 This command reapplies the changes from the lastest saved save to the current working directory, and adds the new line "This is a new line" to the `README.md` file.
-

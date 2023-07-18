@@ -1,10 +1,6 @@
 # Directories
 
-## Problem
-
 Create a Go program that creates a new sub-directory in the current working directory, creates a hierarchy of directories, including parents, lists directory contents, changes the current working directory, and visits a directory recursively.
-
-## Requirements
 
 - Create a new sub-directory in the current working directory.
 - When creating temporary directories, it's good practice to `defer` their removal. `os.RemoveAll` will delete a whole directory tree (similarly to `rm -rf`).
@@ -12,8 +8,6 @@ Create a Go program that creates a new sub-directory in the current working dire
 - `ReadDir` lists directory contents, returning a slice of `os.DirEntry` objects.
 - `Chdir` lets us change the current working directory, similarly to `cd`.
 - Visit a directory recursively, including all its sub-directories. `Walk` accepts a callback function to handle every file or directory visited.
-
-## Example
 
 ```sh
 $ go run directories.go
@@ -33,7 +27,7 @@ subdir/parent/file2 false
 subdir/parent/file3 false
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go has several useful functions for working with
