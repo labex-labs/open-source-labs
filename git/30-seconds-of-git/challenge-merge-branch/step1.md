@@ -6,16 +6,19 @@ Your task is to merge a branch into the current branch using Git. You will need 
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+To complete this challenge, you will use the Git repository git-playground from your GitHub account, which comes from a fork of https://github.com/labex-labs/git-playground.git.
 
-1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
-2. Create a `feature-branch-A` branch and add "hello" to `file2.txt`.
-3. Add the changes to the staging area and commit with the message "fix file2.txt".
-4. Switch to the `master` branch.
-5. Merge the `feature-branch-A` into the `master` branch.
-6. Resolve any conflicts that may arise during the merge process.
-7. Push the changes to the remote repository.
+1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`, navigate to the directory and configure the identity.
+2. Create and switch to `feature-branch-A`, add "hello" to `file2.txt`, add it to the staging area and commit it, the commit message will be "fix file2.txt".
+3. Switch to the `master` branch and merge the `feature-branch-A` into the `master` branch.
+4. Resolve any conflicts that may arise during the merge process.
+5. Push the changes to the remote repository.
 
-This is the result of running `git log`:
+This is the final result:
+```shell
+commit 742e0d4feeec7c5989e2336de7526600301e284e (HEAD -> master, feature-branch-A)
+Author: xiaoshengyunan <1797063828@qq.com>
+Date:   Mon Jul 17 20:35:15 2023 +0800
 
-![<result>](./assets/challenge-merge-branch-step1-1.png)
+    fix file2.txt
+```
