@@ -1,7 +1,5 @@
 # Command-line flags
 
-## Problem
-
 Implement a Golang program that parses command-line flags and outputs the parsed options and any trailing positional arguments. The program should support the following flags:
 
 - `word`: a string flag with a default value of `"foo"`.
@@ -9,13 +7,9 @@ Implement a Golang program that parses command-line flags and outputs the parsed
 - `fork`: a boolean flag with a default value of `false`.
 - `svar`: a string flag that uses an existing variable declared elsewhere in the program.
 
-## Requirements
-
 - The program should use the `flag` package to parse command-line flags.
 - The program should output the parsed options and any trailing positional arguments.
 - The program should support the `word`, `numb`, `fork`, and `svar` flags as described above.
-
-## Example
 
 ```sh
 # To experiment with the command-line flags program it's
@@ -76,7 +70,7 @@ Usage of ./command-line-flags:
 ...
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // [_Command-line flags_](https://en.wikipedia.org/wiki/Command-line_interface#Command-line_option)

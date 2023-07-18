@@ -2,13 +2,9 @@
 
 ## Introduction
 
-The Signals challenge demonstrates how to handle Unix signals in Go programs using channels.
-
-## Problem
+The Signals lab demonstrates how to handle Unix signals in Go programs using channels.
 
 In some cases, we want our Go programs to handle Unix signals intelligently. For instance, we might want a server to shut down gracefully when it receives a `SIGTERM`, or a command-line tool to stop processing input if it receives a `SIGINT`.
-
-## Requirements
 
 - Create a buffered channel to receive `os.Signal` notifications.
 - Register the channel to receive notifications of specified signals using `signal.Notify`.
@@ -38,8 +34,6 @@ go func() {
 <-done
 ```
 
-## Example
-
 ```
 $ go run signals.go
 awaiting signal
@@ -50,4 +44,4 @@ exiting
 
 ## Summary
 
-The Signals challenge demonstrates how to handle Unix signals in Go programs using channels. By creating a buffered channel to receive `os.Signal` notifications and registering the channel to receive notifications of specified signals using `signal.Notify`, we can gracefully handle signals and exit the program when the expected signal is received.
+The Signals lab demonstrates how to handle Unix signals in Go programs using channels. By creating a buffered channel to receive `os.Signal` notifications and registering the channel to receive notifications of specified signals using `signal.Notify`, we can gracefully handle signals and exit the program when the expected signal is received.

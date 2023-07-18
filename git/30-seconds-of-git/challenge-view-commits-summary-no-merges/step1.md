@@ -6,27 +6,17 @@ You have been working on a project with several other developers, and you want t
 
 ## Example
 
-To complete this challenge, you will need to use the Git repository named `https://github.com/labex-labs/git-playground`. Clone the repository to your local machine using the following command:
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
-```shell
-git clone https://github.com/labex-labs/git-playground.git
-```
-
-Once you have cloned the repository, navigate to the directory using the following command:
-
-```shell
-cd git-playground
-```
-
-Now, to view a short summary of all commits excluding merge commits, use the following command:
-
-```shell
-git log --oneline --no-merges
-```
+1. Clone the repository, navigate to the directory and configure the identity.
+2. Create and switch to a branch called `feature1`, create a file called `file.txt` and write `feature 1` into it, add it to the staging area and commit it with the message "Add feature 1".
+3. Switch back to the `master` branch, merge the `feature1` branch, disable the forward merge, save and exit without changing the text.
+4. View a short summary of all commits excluding merge commits.
 
 This will output a list of all the commits made to the repository, excluding any merge commits. The output will look something like this:
-
 ```shell
-3050fc0de Fix network bug
-c191f90c7 Initial commit
+430b986 (feature1) Add feature 1
+d22f46b (origin/master, origin/HEAD) Added file2.txt
+cf80005 Added file1.txt
+b00b937 Initial commit
 ```
