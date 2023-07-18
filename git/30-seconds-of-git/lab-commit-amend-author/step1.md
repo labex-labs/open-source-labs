@@ -8,14 +8,11 @@ To change the last commit's author, you can use the `git commit --amend` command
 ```shell
 git clone https://github.com/labex-labs/git-playground.git
 ```
-2. Configure Git's identity information using your GitHub account and make some changes to the files in the repository:
+2. Configure Git's identity information using your GitHub account:
 ```shell
 cd git-playground
 git config user.email "your email"
 git config user.name "your username"
-echo "Hello, World" > hello.txt
-git add hello.txt
-git commit -m "Initial commit"
 ```
 3. Use the `git commit --amend` command to modify the last commit's author and save the contents:
 ```shell
@@ -27,5 +24,10 @@ git log
 ```
 
 You should see that the last commit's author is now `Duck Quackers`:
+```shell
+commit d5a385cc354f3528472a215b66cbb7c628ba47d5
+Author: Duck Quackers <cool.duck@qua.ck>
+Date:   Wed Apr 26 14:16:25 2023 +0800
 
-![<result>](assets/challenge-commit-amend-author-step1-1.png)
+    Added file2.txt
+```
