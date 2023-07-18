@@ -1,2 +1,4 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git stash apply"
+(cd /home/labex/project/git-playground && cat README.md | grep "This is a new line") && ehco "True"
+
+ 
