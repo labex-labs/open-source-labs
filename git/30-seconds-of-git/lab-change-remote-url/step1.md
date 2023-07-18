@@ -2,9 +2,13 @@
 
 You have cloned a repository from GitHub and made some changes to it. However, you now realize that you need to change the URL of the remote repository. This could be because the original repository has been moved to a different location, or because you want to push your changes to a different remote repository. Your task is to change the remote URL of the repository using Git commands.
 
-Assume that you have cloned the repository `https://github.com/labex-labs/git-playground` to your local machine. To change the remote URL of the repository to `https://github.com/your-username/git-playground`, follow these steps:
+You will need to clone the repository `https://github.com/labex-labs/git-playground` to your local machine. To change the remote URL of the repository to `https://github.com/your-username/git-playground`, follow these steps:
 
-1. Open the terminal or command prompt and navigate to the local repository.
+1. Open a terminal or command prompt, clone the repository and navigate to the local repository.
+   ```
+   git clone https://github.com/labex-labs/git-playground
+   cd git-playground
+   ```
 2. Use the following command to view the current remote URL:
    ```
    git remote -v
