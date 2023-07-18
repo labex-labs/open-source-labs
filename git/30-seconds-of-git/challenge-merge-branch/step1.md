@@ -15,6 +15,7 @@ To complete this challenge, you will use the Git repository git-playground from 
 5. Push the changes to the remote repository.
 
 This is the final result:
+
 ```shell
 commit 742e0d4feeec7c5989e2336de7526600301e284e (HEAD -> master, feature-branch-A)
 Author: xiaoshengyunan <1797063828@qq.com>
