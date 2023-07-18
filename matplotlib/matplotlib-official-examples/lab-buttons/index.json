@@ -1,0 +1,120 @@
+{
+  "type": "lab",
+  "title": "Creating a Simple Button GUI to Modify a Sine Wave Using Matplotlib",
+  "description": "In this lab, you will learn how to create a simple GUI using Matplotlib's `Button` widget. The GUI will allow you to modify a sine wave by changing the frequency using the `Next` and `Previous` buttons.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in buttons.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Set up the initial plot",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in buttons.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/plot",
+          "matplotlib/sub_plot",
+          "numpy/arange",
+          "numpy/sin"
+        ]
+      },
+      {
+        "title": "Create the button callback functions",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in buttons.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/line2d",
+          "matplotlib/draw",
+          "python/len",
+          "numpy/sin"
+        ]
+      },
+      {
+        "title": "Create the `Next` and `Previous` buttons",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in buttons.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/axes", "matplotlib/button"]
+      },
+      {
+        "title": "Display the plot",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in buttons.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/show"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "buttons.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

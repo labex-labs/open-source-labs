@@ -1,14 +1,8 @@
 # Slices
 
-## Problem
+The problem to be solved in this lab is to create and manipulate slices in Go. You will need to create an empty slice with non-zero length, set and get values in the slice, use the `len` function to get the length of the slice, use the `append` function to add new values to the slice, use the `copy` function to copy a slice, and use the slice operator to get a slice of elements from an existing slice.
 
-The problem to be solved in this challenge is to create and manipulate slices in Go. You will need to create an empty slice with non-zero length, set and get values in the slice, use the `len` function to get the length of the slice, use the `append` function to add new values to the slice, use the `copy` function to copy a slice, and use the slice operator to get a slice of elements from an existing slice.
-
-## Requirements
-
-To complete this challenge, you will need to have a basic understanding of Go syntax and the slice data type. You will also need to be familiar with the `make`, `append`, and `copy` functions, as well as the slice operator.
-
-## Example
+To complete this lab, you will need to have a basic understanding of Go syntax and the slice data type. You will also need to be familiar with the `make`, `append`, and `copy` functions, as well as the slice operator.
 
 ```sh
 # Note that while slices are different types than arrays,
@@ -34,7 +28,7 @@ dcl: [g h i]
 # Go's other key builtin data structure: maps.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // _Slices_ are an important data type in Go, giving
