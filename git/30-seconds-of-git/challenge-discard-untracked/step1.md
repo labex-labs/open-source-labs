@@ -14,6 +14,7 @@ To complete this challenge, you will use the Git repository named `https://githu
 4. Check the status of your working directory again.
 
 You should see the following output:
+
 ```shell
 On branch master
 Your branch is up to date with 'origin/master'.

@@ -5,14 +5,19 @@ You are working on a project using Git and have made some changes to your workin
 To complete this lab, you will use the Git repository named `https://github.com/labex-labs/git-playground`. Follow these steps:
 
 1. Navigate to the repository directory:
+
 ```shell
 cd git-playground
 ```
+
 2. Check the status of your working directory:
+
 ```shell
 git status
 ```
+
 You should see the following output:
+
 ```shell
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -23,16 +28,21 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
+
 3. Discard all untracked changes to the current branch:
+
 ```shell
 git clean -f -d
 ```
+
 4. Check the status of your working directory again:
+
 ```shell
 git status
 ```
 
 You should see the following output:
+
 ```shell
 On branch master
 Your branch is up to date with 'origin/master'.
