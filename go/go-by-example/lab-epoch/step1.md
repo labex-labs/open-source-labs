@@ -1,17 +1,11 @@
 # Epoch
 
-## Problem
+The problem to be solved in this lab is to write a Golang program that can calculate the number of seconds, milliseconds, or nanoseconds since the Unix epoch.
 
-The problem to be solved in this challenge is to write a Golang program that can calculate the number of seconds, milliseconds, or nanoseconds since the Unix epoch.
-
-## Requirements
-
-To complete this challenge, you need to have a basic understanding of Golang and the following requirements:
+To complete this lab, you need to have a basic understanding of Golang and the following requirements:
 
 - Familiarity with the `time` package in Golang.
 - Knowledge of how to use the `Unix`, `UnixMilli`, and `UnixNano` functions in the `time` package.
-
-## Example
 
 ```sh
 $ go run epoch.go
@@ -26,7 +20,7 @@ $ go run epoch.go
 # parsing and formatting.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // A common requirement in programs is getting the number

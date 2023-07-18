@@ -3,7 +3,6 @@ git branch -m <old-name> <new-name>
 ```
 
 ```shell
-git checkout master
-git branch -m patch-1 patch-2
-# Renames `patch-1` to `patch-2`
+git branch -m old-branch new-branch
+# Renames `old-branch` to `new-branch`
 ```

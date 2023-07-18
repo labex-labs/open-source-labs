@@ -4,6 +4,17 @@ git merge <source-branch>
 ```
 
 ```shell
+# Fork from https://github.com/labex-labs/git-playground.git
+git clone https://github.com/your-username/git-playground.git
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+git checkout -b feature-branch-A
+echo "hello" > file2.txt
+git add .
+git commit -m "fix file2.txt"
 git checkout master
-git merge patch-1 # Merges the `patch-1` branch into `master`
+git merge feature-branch-A # Merges the `feature-branch-A` branch into `master`
+git push
+git log
 ```

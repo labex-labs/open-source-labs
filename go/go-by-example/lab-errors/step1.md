@@ -1,10 +1,6 @@
 # Errors
 
-## Problem
-
-The challenge provides two functions that return an error if the input argument is 42. The first function returns a basic error value, while the second function uses a custom type to represent the error.
-
-## Requirements
+The lab provides two functions that return an error if the input argument is 42. The first function returns a basic error value, while the second function uses a custom type to represent the error.
 
 - The `errors` package must be imported.
 - The `f1` function must return an error if the input argument is 42.
@@ -14,8 +10,6 @@ The challenge provides two functions that return an error if the input argument 
 - The `main` function must call both `f1` and `f2` with input arguments of 7 and 42.
 - The `main` function must print the result of each function call, along with any error that was returned.
 - The `main` function must demonstrate how to programmatically use the data in a custom error.
-
-## Example
 
 ```sh
 $ go run errors.go
@@ -31,7 +25,7 @@ can't work with it
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // In Go it's idiomatic to communicate errors via an

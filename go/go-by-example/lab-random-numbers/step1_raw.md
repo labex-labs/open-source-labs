@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your ability to generate random numbers using the `math/rand` package in Golang.
-
-## Problem
+This lab aims to test your ability to generate random numbers using the `math/rand` package in Golang.
 
 You are required to write a program that generates random integers and floats within a specified range. The program should also be able to produce varying sequences of numbers by changing the seed.
-
-## Requirements
 
 - The program should use the `math/rand` package to generate random numbers.
 - The program should generate random integers within a specified range.
@@ -17,7 +13,7 @@ You are required to write a program that generates random integers and floats wi
 
 ## TODO
 
-Complete the following code blocks to meet the requirements of the challenge:
+Complete the following code blocks to meet the requirements of the lab:
 
 ```go
 // Generate a random integer between 0 and 100 (inclusive)
@@ -38,8 +34,6 @@ rand.NewSource(42)
 rand.New(s2)
 ```
 
-## Example
-
 ```
 81,87
 0.6645600532184904
@@ -51,4 +45,4 @@ rand.New(s2)
 
 ## Summary
 
-This challenge requires you to generate random numbers using the `math/rand` package in Golang. You should be able to generate random integers and floats within a specified range and produce varying sequences of numbers by changing the seed.
+This lab requires you to generate random numbers using the `math/rand` package in Golang. You should be able to generate random integers and floats within a specified range and produce varying sequences of numbers by changing the seed.

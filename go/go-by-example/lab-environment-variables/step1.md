@@ -1,17 +1,11 @@
 # Environment Variables
 
-## Problem
-
-In this challenge, you will need to set, get, and list environment variables.
-
-## Requirements
+In this lab, you will need to set, get, and list environment variables.
 
 - Use `os.Setenv` to set a key/value pair.
 - Use `os.Getenv` to get a value for a key.
 - Use `os.Environ` to list all key/value pairs in the environment.
 - Use `strings.SplitN` to split the key and value.
-
-## Example
 
 ```sh
 # Running the program shows that we pick up the value
@@ -37,7 +31,7 @@ BAR: 2
 ...
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // [Environment variables](https://en.wikipedia.org/wiki/Environment_variable)
