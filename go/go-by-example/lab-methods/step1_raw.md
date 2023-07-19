@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test the knowledge of the Go programming language's method feature.
-
-## Problem
+This lab aims to test the knowledge of the Go programming language's method feature.
 
 The code provided defines a struct type called `rect` with two fields, `width` and `height`. Two methods are defined for this struct type, `area` and `perim`. The `area` method calculates the area of the rectangle, and the `perim` method calculates the perimeter of the rectangle. The main function calls these two methods and prints their results.
-
-## Requirements
 
 - The `area` method should have a receiver type of `*rect`.
 - The `perim` method should have a receiver type of `rect`.
@@ -33,8 +29,6 @@ func (r rect) perim() int {
 }
 ```
 
-## Example
-
 ```
 area:  50
 perim: 30
@@ -44,4 +38,4 @@ perim: 30
 
 ## Summary
 
-This challenge tests the ability to define methods in Go and use them to perform calculations on struct types. The `area` and `perim` methods are defined for the `rect` struct type, and the `main` function calls these methods and prints their results.
+This lab tests the ability to define methods in Go and use them to perform calculations on struct types. The `area` and `perim` methods are defined for the `rect` struct type, and the `main` function calls these methods and prints their results.

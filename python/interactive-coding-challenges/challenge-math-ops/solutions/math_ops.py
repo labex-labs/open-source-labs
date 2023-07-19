@@ -1,6 +1,3 @@
-from __future__ import division
-
-
 class Solution(object):
     def __init__(self, upper_limit=100):
         self.max = None
