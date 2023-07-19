@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Supervised Learning",
+  "description": "In supervised learning, we want to learn the relationship between two datasets: the observed data `X` and an external variable `y` that we want to predict.\nThere are two main types of supervised learning problems: classification and regression. In classification, the goal is to predict the class or category of an observation, while in regression, the goal is to predict a continuous target variable.\n\nIn this lab, we will explore the concepts of supervised learning and see how to implement them using scikit-learn, a popular machine learning library in Python. We will cover topics such as nearest neighbor classification, linear regression, and support vector machines (SVMs).",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Nearest Neighbor Classification",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in 03-supervised-learning.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Linear Regression",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in 03-supervised-learning.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Support Vector Machines (SVMs)",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in 03-supervised-learning.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "03-supervised-learning.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

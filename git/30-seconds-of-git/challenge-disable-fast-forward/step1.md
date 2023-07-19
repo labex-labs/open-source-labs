@@ -6,33 +6,19 @@ By default, Git uses fast forward merging to merge branches that have no diverge
 
 ## Example
 
-To disable fast forward merging, you can use the `git config` command. First, clone the `git-playground` repository:
+To disable fast forward merging, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 
+1. Clone the repository, navigate to the directory and configure the identity.
+2. Create and switch to a branch called `my-branch`, create a `hello.txt` file and add "hello,world" to it, add it to the staging area and commit it with the message "Added hello.txt".
+3. Disable fast forward merging for all branches.
+4. Switch back to the `mater` branch and merge the `my-branch` branch, save and exit without changing the text.
+
+Now, Git will always create a merge commit, even if it is possible to fast forward:
 ```shell
-git clone https://github.com/labex-labs/git-playground.git
-```
+commit 6e17a776ab51a89ace069614b0caf1c07915a92c (HEAD -> master)
+Merge: ec5ea6d 6d7de91
+Author: xiaoshengyunan <1797063828@qq.com>
+Date:   Mon Jul 17 13:30:44 2023 +0800
 
-Next, navigate to the repository directory:
-
-```shell
-cd git-playground
-```
-
-Now, run the following command to disable fast forward merging:
-
-```shell
-git config --add merge.ff false
-```
-
-This will disable fast forward merging for all branches, even if it is possible. You can use the `--global` flag to configure this option globally:
-
-```shell
-git config --global --add merge.ff false
-```
-
-Now, if you try to merge a branch into another branch, Git will always create a merge commit, even if it is possible to fast forward:
-
-```shell
-git checkout master
-git merge my-branch
+    Merge branch 'my-branch'
 ```
