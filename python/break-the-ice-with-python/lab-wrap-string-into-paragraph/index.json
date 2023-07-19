@@ -1,0 +1,58 @@
+{
+  "type": "lab",
+  "title": "Wrap String into Paragraph",
+  "description": "In this lab, your task is to wrap a given string into a paragraph of width.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Wrap String into Paragraph",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing wrap_string_into_paragraph.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/textwrap",
+          "python/str",
+          "python/input",
+          "python/int",
+          "python/list"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "wrap_string_into_paragraph.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

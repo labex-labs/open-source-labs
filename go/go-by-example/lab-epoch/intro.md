@@ -1,3 +1,3 @@
 # Epoch
 
-The Epoch challenge is a Golang challenge that aims to test your ability to get the number of seconds, milliseconds, or nanoseconds since the Unix epoch.
+The Epoch lab is a Golang lab that aims to test your ability to get the number of seconds, milliseconds, or nanoseconds since the Unix epoch.

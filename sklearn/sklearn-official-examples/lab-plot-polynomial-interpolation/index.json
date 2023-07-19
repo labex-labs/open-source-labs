@@ -1,0 +1,108 @@
+{
+  "type": "lab",
+  "title": "Polynomial and Spline Interpolation",
+  "description": "In this lab, we will learn how to approximate a function with polynomials up to a certain degree using ridge regression. We will show two different ways of doing this given `n_samples` of 1d points `x_i`:\n\n1. `PolynomialFeatures`: generates all monomials up to a specified degree. This gives us the Vandermonde matrix with `n_samples` rows and `degree + 1` columns.\n2. `SplineTransformer`: generates B-spline basis functions. A basis function of a B-spline is a piece-wise polynomial function of degree `degree` that is non-zero only between `degree+1` consecutive knots.\n\nWe will use the `make_pipeline` function to add non-linear features and show how these transformers are well-suited to model non-linear effects with a linear model. We will plot the function, training points, and the interpolation using polynomial features and B-splines. We will also plot all columns of both transformers separately and show the knots of spline. Finally, we will demonstrate the use of periodic splines.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Prepare the Data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-polynomial-interpolation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Polynomial Features Interpolation",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-polynomial-interpolation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "B-Spline Interpolation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-polynomial-interpolation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Plotting the Transformers",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in plot-polynomial-interpolation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Periodic Splines",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in plot-polynomial-interpolation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-polynomial-interpolation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

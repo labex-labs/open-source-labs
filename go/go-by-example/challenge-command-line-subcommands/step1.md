@@ -1,4 +1,4 @@
-# Golang Challenge: Command Line Subcommands
+# Command Line Subcommands
 
 ## Problem
 
