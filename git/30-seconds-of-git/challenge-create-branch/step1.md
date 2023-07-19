@@ -6,7 +6,7 @@ For this challenge, fork the Git repository named `https://github.com/labex-labs
   
 ## Example
 
-1. Clone the repository and navigate to the repository directory.
+1. Clone the repository, navigate to the directory and configure the identity.
 2. Check the current branch.
 3. Create a new branch named `feature-1`.
 4. Verify that you are now on the `feature-1` branch.
