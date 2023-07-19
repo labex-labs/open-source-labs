@@ -18,9 +18,10 @@ For this lab, let's use the repository from `https://github.com/labex-labs/git-p
 #This creates a template with three sections, where "<type>" indicates the type of submission, such as "feat" or "fix", "<subject>" is a short #summary describing the content of the submission, "<body>" is a more detailed description, and "<footer>" can contain other metadata, such as the #associated issue number or other comments.
 ```
 5. Press <kbd>Esc</kbd> and enter the <kbd>:wq</kbd> command, then press <kbd>Enter</kbd> to save your changes and exit the `commit-template` file editor.
-6. Use the command `git config commit.template commit-template` to set the `commit-template` file as the commit message template for the repository.
-7. Use the command `git commit` to open the commit message editor and notice that the commit message editor now contains the commit message template you created in step 4.
-8. Press <kbd>Esc</kbd> and enter the <kbd>:q</kbd> command, then press <kbd>Enter</kbd> to exit the commit message editor.
+6. Use the command `git add commit-template`to add `commit-template` files to the staging area.
+7. Use the command `git config commit.template commit-template` to set the `commit-template` file as the commit message template for the repository.
+8. Use the command `git commit` to open the commit message editor and notice that the commit message editor now contains the commit message template you created in step 4.
+9. Press <kbd>Esc</kbd> and enter the <kbd>:q</kbd> command, then press <kbd>Enter</kbd> to exit the commit message editor.
 
 This is the final result:
 
