@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned how to use the K-Means clustering algorithm to perform color quantization on an image. We loaded and displayed the original image, converted it to floats and reshaped it into a 2D numpy array. We fit the K-Means model on a sub-sample of the image data and used it to predict color indices on the full image. We also predicted color indices on the full image using a random codebook. Finally, we recreated the compressed image using the codebook and labels obtained from the K-Means model and the random codebook, and displayed the original image alongside the quantized images.

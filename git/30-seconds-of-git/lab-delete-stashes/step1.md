@@ -9,6 +9,6 @@ To complete this challenge, you will use the Git repository named `https://githu
 3. Create a new file in the repository directory using the command `touch newfile.txt`.
 4. Add the new file to the staging area using the command `git add newfile.txt`.
 5. Create a stash using the command `git stash save "new file added"`.
-6. Repeat steps 3-5 to create multiple stashes.
+6. Repeat steps 3-5 to create multiple collections. Each time the stash information is different.
 7. Delete all stashes using the command `git stash clear`.
 8. Verify that all stashes have been deleted using the command `git stash list`.

@@ -21,4 +21,4 @@ git config user.name "Jane Doe"
 
 This is the result after completing the lab:
 
-![<result>](assets/challenge-config-user-step1-1.png)
+![<result>](./assets/challenge-config-user-step1-1.png)

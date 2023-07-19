@@ -1,10 +1,6 @@
 # Closing Channels
 
-## Problem
-
-In this challenge, you need to modify the given code to close the `jobs` channel when there are no more jobs for the worker. You also need to use the `done` channel to notify when all the jobs have been completed.
-
-## Requirements
+In this lab, you need to modify the given code to close the `jobs` channel when there are no more jobs for the worker. You also need to use the `done` channel to notify when all the jobs have been completed.
 
 - Use a buffered channel `jobs` to communicate work to be done from the `main()` goroutine to a worker goroutine.
 - Use a channel `done` to notify when all the jobs have been completed.
@@ -12,8 +8,6 @@ In this challenge, you need to modify the given code to close the `jobs` channel
 - Use the special 2-value form of receive to notify on `done` when all the jobs have been completed.
 - Send 3 jobs to the worker over the `jobs` channel, then close it.
 - Use the [synchronization](channel-synchronization) approach to await the worker.
-
-## Example
 
 ```sh
 $ go run closing-channels.go
@@ -30,7 +24,7 @@ received all jobs
 # example: `range` over channels.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // _Closing_ a channel indicates that no more values
