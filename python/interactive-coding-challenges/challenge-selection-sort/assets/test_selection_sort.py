@@ -29,7 +29,7 @@ def main():
     test.test_selection_sort(selection_sort.sort)
     try:
         test.test_selection_sort(selection_sort.sort_recursive)
-        test.test_selection_sort(selection_sort.sor_iterative_alt)
+        test.test_selection_sort(selection_sort.sort_iterative_alt)
     except NameError:
         # Alternate solutions are only defined
         # in the solutions file

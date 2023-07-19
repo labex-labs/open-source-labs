@@ -14,4 +14,4 @@ For this challenge, fork the Git repository named `https://github.com/labex-labs
 
 This is what happens when you run the `git branch -r` command:
 
-![<result>](assets/challenge-create-branch-step1-1.png)
+![<result>](./assets/challenge-create-branch-step1-1.png)

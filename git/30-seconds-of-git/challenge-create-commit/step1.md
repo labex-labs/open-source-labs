@@ -6,17 +6,8 @@ You have made some changes to your code and want to save them as a snapshot in y
 
 ## Example
 
-To create a commit, you first need to stage the changes you want to include in the commit. Let's assume you have cloned the `https://github.com/labex-labs/git-playground` repository and made some changes to the `README.md` file. To create a commit with the message "Update README.md", follow these steps:
+For this challenge, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.To create a commit, you first need to stage the changes you want to include in the commit.Configure your github account in the environment. Let's assume you have cloned the `https://github.com/your-username/git-playground` repository and made some changes to the `README.md` file. Create a commit with the message "Update README.md".
 
-1. Stage the changes using the `git add` command:
+This is the result of running the `git log` command:
 
-   ```
-   git add README.md
-   ```
-
-2. Create the commit using the `git commit` command:
-   ```
-   git commit -m "Update README.md"
-   ```
-
-The `-m` option allows you to specify a commit message. Make sure the message is descriptive and explains what changes the commit contains.
+![<result>](./assets/challenge-create-commit-step1-1.png)

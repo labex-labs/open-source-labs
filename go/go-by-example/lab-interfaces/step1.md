@@ -1,17 +1,11 @@
 # Interfaces
 
-## Problem
-
 The problem is to implement an interface in Go, we just need to implement all the methods in the interface. Here we implement `geometry` on `rect`s and `circle`s.
-
-## Requirements
 
 - Implement an interface in Go.
 - Implement all the methods in the interface.
 - Use a generic `measure` function to work on any `geometry`.
 - Use instances of `circle` and `rect` structs as arguments to `measure`.
-
-## Example
 
 ```sh
 $ go run interfaces.go
@@ -26,7 +20,7 @@ $ go run interfaces.go
 # [great blog post](https://jordanorelli.tumblr.com/post/32665860244/how-to-use-interfaces-in-go).
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // _Interfaces_ are named collections of method

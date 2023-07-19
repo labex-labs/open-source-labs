@@ -1,16 +1,10 @@
 # Execing Processes
 
-## Problem
-
 The problem is to replace the current Go process with another process, such as a non-Go process.
-
-## Requirements
 
 - Go programming language
 - Basic knowledge of Go's `exec` function
 - Familiarity with environment variables
-
-## Example
 
 ```sh
 # When we run our program it is replaced by `ls`.
@@ -26,7 +20,7 @@ drwxr-xr-x 91 mark 3.0K Oct 3 12:50 ..
 # processes covers most use cases for `fork`.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // In the previous example we looked at

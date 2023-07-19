@@ -20,12 +20,10 @@ cd git-playground
 git checkout -b feature-1
 ```
 
-4. Make some changes to the repository and commit them:
+4. View current branches.
 
 ```shell
-echo "Some changes" > changes.txt
-git add changes.txt
-git commit -m "Added changes.txt"
+git branch
 ```
 
 5. Switch back to the `master` branch:
