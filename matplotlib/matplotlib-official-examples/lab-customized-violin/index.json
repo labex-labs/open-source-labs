@@ -7,7 +7,94 @@
   "hidden": false,
   "fee_type": "free",
   "details": {
-    "steps": [],
+    "steps": [
+      {
+        "title": "Create test data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in customized-violin.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/numpy",
+          "numpy/random",
+          "python/range"
+        ]
+      },
+      {
+        "title": "Create a default violin plot",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in customized-violin.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/violin_plot",
+          "matplotlib/title",
+          "matplotlib/xy_label"
+        ]
+      },
+      {
+        "title": "Customize the violin plot appearance",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in customized-violin.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/title",
+          "matplotlib/xy_label",
+          "matplotlib/violin_plot",
+          "matplotlib/set_color",
+          "matplotlib/set_alpha",
+          "matplotlib/scatter",
+          "matplotlib/hv_axline",
+          "numpy/percentile",
+          "numpy/arange",
+          "numpy/array"
+        ]
+      },
+      {
+        "title": "Set axis style",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in customized-violin.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/xy_ticks",
+          "matplotlib/xy_label",
+          "matplotlib/xy_lim",
+          "numpy/arange"
+        ]
+      }
+    ],
     "intro": {
       "text": "intro.md",
       "background": "setup.sh"
@@ -28,7 +115,9 @@
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
-  "contributors": ["huhuhang"],
+  "contributors": [
+    "huhuhang"
+  ],
   "license": {
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
