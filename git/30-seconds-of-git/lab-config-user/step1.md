@@ -13,7 +13,6 @@ git clone https://github.com/labex-labs/git-playground.git
 cd git-playground
 ```
 3. Use the `git config` command to set your user information for the repository. For example, if your email address is `jane.doe@example.com` and your name is `Jane Doe`, you would use the following commands:
-
 ```
 git config user.email "jane.doe@example.com"
 git config user.name "Jane Doe"
