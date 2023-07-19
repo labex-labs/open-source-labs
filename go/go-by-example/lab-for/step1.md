@@ -1,15 +1,9 @@
-# Golang Challenge: `for`
-
-## Problem
+# `for`
 
 The code below contains different types of `for` loops. However, some parts of the code are incomplete, and you need to fill in the blanks to make the code work correctly.
 
-## Requirements
-
 - Basic knowledge of Golang syntax
 - Familiarity with `for` loops in Golang
-
-## Example
 
 ```sh
 $ go run for.go
@@ -29,7 +23,7 @@ loop
 # structures.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // `for` is Go's only looping construct. Here are

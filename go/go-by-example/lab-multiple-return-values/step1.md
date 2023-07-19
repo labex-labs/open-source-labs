@@ -1,15 +1,9 @@
 # Multiple Return Values
 
-## Problem
-
 Complete the `swap` function to return two input parameters in reverse order.
-
-## Requirements
 
 - The `swap` function should take two integers as input parameters.
 - The `swap` function should return two integers in reverse order.
-
-## Example
 
 ```sh
 $ go run multiple-return-values.go
@@ -21,7 +15,7 @@ $ go run multiple-return-values.go
 # feature of Go functions; we'll look at this next.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go has built-in support for _multiple return values_.

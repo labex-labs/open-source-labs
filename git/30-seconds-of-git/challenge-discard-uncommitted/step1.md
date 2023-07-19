@@ -8,9 +8,15 @@ You have made some changes to your local Git repository, but you have not yet co
 
 To complete this challenge, you will use the Git repository named `https://github.com/labex-labs/git-playground` directory. Follow the steps below:
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground.git`.
-2. Navigate to the cloned repository using the command `cd git-playground`.
-3. Make some changes to the files in the repository, but do not commit them.
-4. Use the command `git status` to see the changes you have made.
-5. Discard all uncommitted changes using the command `git reset --hard HEAD`.
-6. Use the command `git status` again to confirm that all changes have been discarded.
+1. Navigate to the cloned repository.
+2. See the changes you have made.
+3. Discard all uncommitted changes.
+4. Confirm that all changes have been discarded.
+
+This is the result of running `git status`:
+```shell
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+```

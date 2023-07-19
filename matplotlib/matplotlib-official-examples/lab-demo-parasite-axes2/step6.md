@@ -1,0 +1,11 @@
+# Add Legend and Color
+
+We will add a legend to the plot and color the labels of each axis to match the color of the corresponding dataset using the `legend()` and `label.set_color()` functions.
+
+```python
+host.legend()
+
+host.axis["left"].label.set_color(p1.get_color())
+par1.axis["right"].label.set_color(p2.get_color())
+par2.axis["right"].label.set_color(p3.get_color())
+```

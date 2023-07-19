@@ -1,4 +1,4 @@
-# Golang Challenge: HTTP Server
+# HTTP Server
 
 ## Introduction
 

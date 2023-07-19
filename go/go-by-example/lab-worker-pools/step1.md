@@ -1,17 +1,11 @@
 # Worker Pools
 
-## Problem
-
 Implement a worker pool that receives work on the `jobs` channel and sends the corresponding results on the `results` channel. The worker pool should have multiple concurrent instances, and each worker should sleep for a second per job to simulate an expensive task.
-
-## Requirements
 
 - Use goroutines and channels to implement the worker pool.
 - The worker pool should have multiple concurrent instances.
 - Each worker should sleep for a second per job to simulate an expensive task.
 - The worker pool should receive work on the `jobs` channel and send the corresponding results on the `results` channel.
-
-## Example
 
 ```sh
 # Our running program shows the 5 jobs being executed by
@@ -33,7 +27,7 @@ worker 2 finished job 5
 real 0m2.358s
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // In this example we'll look at how to implement

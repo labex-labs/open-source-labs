@@ -17,3 +17,8 @@ git clone https://github.com/labex-labs/git-playground.git my-project
 ```
 
 This will create a new directory named `my-project` in your current working directory, which contains a local copy of the `git-playground` repository.
+
+Here are the results after completing the lab:
+
+![<result>](./assets/challenge-clone-repo-step1-1.png)
+![<result>](./assets/challenge-clone-repo-step1-2.png)

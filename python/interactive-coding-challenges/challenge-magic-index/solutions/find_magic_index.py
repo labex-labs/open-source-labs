@@ -1,6 +1,3 @@
-from __future__ import division
-
-
 class MagicIndex(object):
     def find_magic_index(self, array):
         if array is None or not array:
