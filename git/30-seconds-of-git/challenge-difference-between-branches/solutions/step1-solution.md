@@ -11,7 +11,7 @@ echo "hello" >> README.md
 git add .
 git commit -am "Add new content to README.md"
 git checkout feature-2
-echo "world" > index.htm 
+echo "world" > index.html
 git add .
 git commit -am "Update index.html file"
 git diff feature-1..feature-2

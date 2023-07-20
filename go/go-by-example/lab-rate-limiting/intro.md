@@ -1,3 +1,3 @@
 # Rate Limiting
 
-The challenge demonstrates how to implement rate limiting in Go using goroutines, channels, and tickers.
+The lab demonstrates how to implement rate limiting in Go using goroutines, channels, and tickers.

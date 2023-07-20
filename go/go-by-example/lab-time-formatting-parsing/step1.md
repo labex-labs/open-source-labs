@@ -1,10 +1,6 @@
 # Time Formatting and Parsing
 
-## Problem
-
 The problem is to format and parse time in Golang using the provided layouts.
-
-## Requirements
 
 - Use the `time` package to format and parse time.
 - Use the `time.RFC3339` layout to format and parse time.
@@ -13,8 +9,6 @@ The problem is to format and parse time in Golang using the provided layouts.
 - Use the `Format` function to format time.
 - Use the `fmt.Println` function to print the formatted time.
 - Use the `fmt.Printf` function to print the formatted time with extracted components.
-
-## Example
 
 ```sh
 $ go run time-formatting-parsing.go
@@ -28,7 +22,7 @@ Tue Apr 15 18:00:15 2014
 parsing time "8:41PM" as "Mon Jan _2 15:04:05 2006": ...
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go supports time formatting and parsing via
