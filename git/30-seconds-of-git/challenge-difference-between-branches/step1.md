@@ -6,17 +6,28 @@ You have been working on a project with your team, and you have created a branch
 
 ## Example
 
-Suppose your GitHub account clones a repository called `git-playground` from a fork of `https://github.com/labex-labs/git-playground.git`:
+Suppose your GitHub account clones a repository called `git-playground` from `https://github.com/labex-labs/git-playground.git`.
 
-1. Clone the repository to your local machine.
-2. Change to the repository's directory.
-3. Configure your GitHub account in this environment.
-4. Create a new branch named `feature-1`.
-5. Make some changes to the `README.md` file using your favorite text editor and commit the changes.
-6. Create a new branch named `feature-2`.
-7. Make some changes to the `index.html` file using your favorite text editor and commit the changes.
-8. View the difference between the two branches.
+1. Navigate to the repository directory and configure your GitHub identity .
+2. Switch to the `feature-1` branch and add "hello" to the `README.md` file, add it to the staging area and commit, the commit message is "Add new content to README.md".
+3. Switch to the `feature-2` branch and add "world" to the `index.html` file, add it to the staging area and commit, the commit message is "Update index.html file".
+4. View the difference between the two branches.
 
 The output should display the difference between the `feature-1` and `feature-2` branches.This shows how the final result will look like：
-
-![<result>](assets/challenge-difference-between-branches-step1-1.png)
+```shell
+diff --git a/README.md b/README.md
+index b66215f..0164284 100644
+--- a/README.md
++++ b/README.md
+@@ -1,3 +1,2 @@
+ # git-playground
+ Git Playground
+-hello
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..cc628cc
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1 @@
++world
+```
