@@ -1,0 +1,51 @@
+{
+  "type": "lab",
+  "title": "Get Colon Time From Date",
+  "description": "In this lab, we will explore how to extract the time from a `Date` object and format it as a string in the `HH:MM:SS` format. We will use the `Date.prototype.toTimeString()` method to convert the `Date` object to a string, and then use `String.prototype.slice()` to extract the `HH:MM:SS` part of the string. This lab will help you understand how to work with `Date` objects in JavaScript and format them as needed.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Get Colon Time From Date",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Open the Terminal/SSH and type 'node'",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["js/to_time_string", "js/arr_slice"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
+}
