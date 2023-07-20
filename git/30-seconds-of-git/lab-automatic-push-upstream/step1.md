@@ -15,20 +15,14 @@ git config --global user.email "your-email"
 ```
 4. Use the following command to enable automatic upstream branch creation on push:
 ```shell
-git config --add --bool remote.origin.pushdefault true
+git config --global push.default current
 ```
-5. Create and switch to a branch called `new-feature`, add the `hello.txt` file and write "hello,world" in it, add it to the staging area and commit it with the message "Added hello.txt":
+5. Push a new branch called `new-feature`, which does not exist in the remote repository:
 ```shell
 git checkout -b new-feature
-echo "hello,world" >> hello.txt
-git add .
-git commit -m "Added hello.txt"
-```
-6. Push your changes to a new branch called `new-feature`, which does not exist in the remote repository:
-```shell
 git push --set-upstream origin new-feature
 ```
-7. Verify that the new branch has been created on the remote repository:
+6. Verify that the new branch has been created on the remote repository:
 ```shell
 git ls-remote --heads origin
 ```
