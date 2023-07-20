@@ -1,9 +1,9 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn about attribute access
 - Learn how use getattr(), setattr(), and related functions.
 - Experiment with bound methods.
 
-_Files Created:_ `tableformat.py`
+**Files Created:** `tableformat.py`

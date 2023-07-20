@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Higher order functions
 
-_Files Modified:_ `reader.py`
+**Files Modified:** `reader.py`

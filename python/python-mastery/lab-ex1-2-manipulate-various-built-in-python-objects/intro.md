@@ -1,7 +1,5 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Manipulate various built-in Python objects
-
-_Files Created:_ None

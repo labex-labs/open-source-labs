@@ -1,10 +1,10 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Using generators to set up processing pipelines
 
-_Files Created:_ `ticker.py`
+**Files Created:** `ticker.py`
 
 **Note**
 

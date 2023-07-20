@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Review basic file I/O
 
-_Files Created:_ `pcost.py`
+**Files Created:** `pcost.py`

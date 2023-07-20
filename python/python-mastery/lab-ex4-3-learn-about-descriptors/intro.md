@@ -1,9 +1,9 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn about descriptors
 
-_Files Created:_ `descrip.py`
+**Files Created:** `descrip.py`
 
-_Files Modified:_ `validate.py`
+**Files Modified:** `validate.py`

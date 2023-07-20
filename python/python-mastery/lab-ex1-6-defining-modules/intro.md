@@ -1,11 +1,9 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Defining modules
 - Using the import statement
-
-_Files Created:_ None
 
 **Note:**
 For this exercise involving modules, it is

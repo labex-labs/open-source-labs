@@ -1,6 +1,6 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn how to create a Python package
 

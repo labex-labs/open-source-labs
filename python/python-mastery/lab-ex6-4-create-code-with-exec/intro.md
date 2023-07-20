@@ -1,5 +1,5 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn to create code with `exec()`

@@ -1,9 +1,9 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn more about the behavior of inheritance
 - Understand the behavior of super().
 - More cooperative inheritance.
 
-_Files Created:_ `validate.py`
+**Files Created:** `validate.py`

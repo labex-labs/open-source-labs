@@ -1,10 +1,10 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn more about function argument passing conventions
 
-_Files Created:_ `structure.py`, `stock.py`
+**Files Created:** `structure.py`, `stock.py`
 
 **IMPORTANT NOTE**
 

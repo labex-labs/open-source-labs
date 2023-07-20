@@ -1,10 +1,8 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Review of how to define simple functions
 - Exception handling
 
-_Files Created:_ None
-
-_Files Modified:_ `pcost.py`
+**Files Modified:** `pcost.py`

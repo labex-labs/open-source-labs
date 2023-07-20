@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn about mixin classes and cooperative inheritance
 
-_Files Modified:_ `tableformat.py`
+**Files Modified:** `tableformat.py`

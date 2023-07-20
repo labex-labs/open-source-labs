@@ -1,10 +1,10 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Using coroutines to set up processing pipelines
 
-_Files Created:_ `cofollow.py`, `coticker.py`
+**Files Created:** `cofollow.py`, `coticker.py`
 
 **Note**
 

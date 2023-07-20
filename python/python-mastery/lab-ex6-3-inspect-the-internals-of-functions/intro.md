@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn how to inspect the internals of functions
 
-_Files Modified:_ `structure.py`
+**Files Modified:** `structure.py`

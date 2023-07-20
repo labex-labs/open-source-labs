@@ -1,8 +1,8 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Metaclasses in action
 - Explode your brain
 
-_Files Modified:_ `structure.py`, `validate.py`
+**Files Modified:** `structure.py`, `validate.py`

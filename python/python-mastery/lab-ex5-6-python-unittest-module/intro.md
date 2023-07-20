@@ -1,10 +1,10 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn how to use Python's unittest module
 
-_Files Created:_ `teststock.py`
+**Files Created:** `teststock.py`
 
 In this exercise, you will explore the basic mechanics of using
 Python's `unittest` modules.

@@ -1,6 +1,6 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Explore a few definitional aspects of functions/methods
 - Making functions more flexible

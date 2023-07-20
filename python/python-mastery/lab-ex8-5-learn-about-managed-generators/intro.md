@@ -1,10 +1,10 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn about managed generators
 
-_Files Created:_ `multitask.py`, `server.py`
+**Files Created:** `multitask.py`, `server.py`
 
 A generator or coroutine function can never execute without being
 driven by some other code. For example, a generator used for

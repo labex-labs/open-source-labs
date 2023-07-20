@@ -1,9 +1,9 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn how to define a simple decorator functions.
 
-_Files Created:_ `logcall.py`
+**Files Created:** `logcall.py`
 
 _Files Modifie:_ `validate.py`

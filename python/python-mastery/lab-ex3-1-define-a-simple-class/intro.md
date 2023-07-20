@@ -1,10 +1,10 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Define a simple class
 
-_Files Modified:_ `stock.py`
+**Files Modified:** `stock.py`
 
 In [Exercise 1.5](ex1_5.md), you defined a simple class
 `Stock` for representing a holding of stock. In this exercise,

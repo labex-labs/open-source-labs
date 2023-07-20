@@ -1,6 +1,6 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Figure out the most memory-efficient way to store a lot of data.
 - Learn about different ways of representing records including tuples,

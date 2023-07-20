@@ -1,6 +1,6 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn more about closures
 

@@ -1,6 +1,6 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Returning values from functions
 

@@ -1,9 +1,9 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn how to customize iteration using generators
 
-_Files Modified:_ `structure.py`
+**Files Modified:** `structure.py`
 
-_Files Created:_ `follow.py`
+**Files Created:** `follow.py`

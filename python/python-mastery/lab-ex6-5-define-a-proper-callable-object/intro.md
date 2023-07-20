@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn how to define a proper callable object
 
-Files Modified : `validate.py`
+**Files Modified:** `validate.py`

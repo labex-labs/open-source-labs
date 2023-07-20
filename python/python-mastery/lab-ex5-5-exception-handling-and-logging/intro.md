@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn more about exception handling and logging
 
-_Files Modified:_ `reader.py`
+**Files Modified:** `reader.py`

@@ -1,8 +1,8 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn how to encapsulate object internals using private
   attributes, properties, and slots
 
-_Files Modified:_ `stock.py`
+**Files Modified:** `stock.py`

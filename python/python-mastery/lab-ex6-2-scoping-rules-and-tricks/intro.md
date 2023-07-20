@@ -1,8 +1,8 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn more about scoping rules
 - Learn some scoping tricks
 
-_Files modified:_ `structure.py`, `stock.py`
+**Files Modified:** `structure.py`, `stock.py`

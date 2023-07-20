@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Create your first metaclass
 
-_Files Created:_ `mymeta.py`
+**Files Created:** `mymeta.py`

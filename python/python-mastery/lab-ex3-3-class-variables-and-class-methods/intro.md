@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn about class variables and class methods
 
-_Files Modified:_ `stock.py`, `reader.py`
+**Files Modified:** `stock.py`, `reader.py`

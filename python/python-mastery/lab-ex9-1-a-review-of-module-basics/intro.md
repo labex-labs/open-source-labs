@@ -1,5 +1,5 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - A review of module basics

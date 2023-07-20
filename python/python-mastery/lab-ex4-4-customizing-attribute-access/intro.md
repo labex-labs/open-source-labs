@@ -1,6 +1,6 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Learn about customizing attribute access
 - Delegation vs. inheritance

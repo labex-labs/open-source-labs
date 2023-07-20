@@ -1,7 +1,7 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Managing what happens at the `yield` statements
 
-_Files Modified:_ `follow.py`, `cofollow.py`
+**Files Modified:** `follow.py`, `cofollow.py`

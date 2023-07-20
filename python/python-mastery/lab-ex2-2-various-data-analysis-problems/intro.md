@@ -1,6 +1,6 @@
 # Introduction
 
-_Objectives:_
+**Objectives:**
 
 - Work with various containers
 - List/Set/Dict Comprehensions
