@@ -1,4 +1,4 @@
-# Golang Challenge: Channel Synchronization
+# Channel Synchronization
 
 ## Introduction
 

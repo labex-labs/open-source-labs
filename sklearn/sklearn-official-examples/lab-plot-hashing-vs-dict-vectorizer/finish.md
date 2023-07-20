@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored text vectorization by comparing two methods, `FeatureHasher` and `DictVectorizer`, and four special purpose text vectorizers, `CountVectorizer`, `HashingVectorizer`, and `TfidfVectorizer`. We benchmarked the methods for vectorizing and plotted the results. We concluded that `HashingVectorizer` performs better than `CountVectorizer` at the expense of inversibility of the transformation due to hash collisions. Additionally, `DictVectorizer` and `FeatureHasher` perform better than their equivalent text vectorizers on manually tokenized documents since the internal tokenization step of the former vectorizers compiles a regular expression once and then reuses it for all the documents.

@@ -3,8 +3,6 @@ git branch -a --merged
 ```
 
 ```shell
-git checkout master
+cd git-playground
 git branch -a --merged
-# patch-1
-# patch-2
 ```
