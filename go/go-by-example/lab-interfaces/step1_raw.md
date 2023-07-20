@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge is about interfaces in Golang. Interfaces are named collections of method signatures.
-
-## Problem
+This lab is about interfaces in Golang. Interfaces are named collections of method signatures.
 
 The problem is to implement an interface in Go, we just need to implement all the methods in the interface. Here we implement `geometry` on `rect`s and `circle`s.
-
-## Requirements
 
 - Implement an interface in Go.
 - Implement all the methods in the interface.
@@ -24,8 +20,6 @@ Use the TODO keyword to mark the code that needs to be completed.
 // TODO: Implement the geometry interface on the circle type.
 ```
 
-## Example
-
 ```
 {3 4}
 12
@@ -37,4 +31,4 @@ Use the TODO keyword to mark the code that needs to be completed.
 
 ## Summary
 
-This challenge is about implementing an interface in Go. We implemented the `geometry` interface on `rect`s and `circle`s and used a generic `measure` function to work on any `geometry`.
+This lab is about implementing an interface in Go. We implemented the `geometry` interface on `rect`s and `circle`s and used a generic `measure` function to work on any `geometry`.

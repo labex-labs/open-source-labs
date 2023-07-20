@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned how to create arrow plots using Matplotlib. We used the `make_arrow_graph()` function to plot the arrow graph. We customized the arrow graph by changing the arrow property to display, changing the shape of the arrow, adjusting the width and separation of the arrows, changing the transparency of the arrows, and changing the color of the label. We also interpreted the arrow graph by understanding that the length, width, and opacity of the arrows represent the arrow strength, and the labels on the arrows represent the probabilities for the bases and pair transitions.
