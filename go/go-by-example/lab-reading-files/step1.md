@@ -1,15 +1,9 @@
 # Reading Files
 
-## Problem
-
 You need to read files in your Go program and perform different operations on the data in the file.
-
-## Requirements
 
 - You should be familiar with basic Go programming concepts.
 - You should have Go installed on your computer.
-
-## Example
 
 ```sh
 $ echo "hello" > /tmp/dat
@@ -25,7 +19,7 @@ go
 # Next we'll look at writing files.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Reading and writing files are basic tasks needed for

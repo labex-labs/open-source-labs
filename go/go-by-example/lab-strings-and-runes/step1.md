@@ -1,18 +1,12 @@
 # Strings and Runes
 
-## Problem
+The problem to be solved in this lab is to understand how to work with strings and runes in Go. Specifically, the lab will cover how to get the length of a string, how to index into a string, how to count the number of runes in a string, and how to iterate over the runes in a string.
 
-The problem to be solved in this challenge is to understand how to work with strings and runes in Go. Specifically, the challenge will cover how to get the length of a string, how to index into a string, how to count the number of runes in a string, and how to iterate over the runes in a string.
-
-## Requirements
-
-To complete this challenge, you will need:
+To complete this lab, you will need:
 
 - A basic understanding of Go syntax
 - Knowledge of Go strings and runes
 - The Go standard library
-
-## Example
 
 ```sh
 $ go run strings-and-runes.go
@@ -37,7 +31,7 @@ U+0E14 'ด' starts at 12
 U+0E35 'ี' starts at 15
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // A Go string is a read-only slice of bytes. The language

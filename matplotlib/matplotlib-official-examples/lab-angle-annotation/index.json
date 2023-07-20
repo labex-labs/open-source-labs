@@ -1,0 +1,147 @@
+{
+  "type": "lab",
+  "title": "Creating a Scale Invariant Angleel",
+  "description": "In this tutorial, you will learn how to create a scale invariant angle label using Matplotlib. Angle annotation is often used to mark angles between lines or inside shapes with a circular arc. While Matplotlib provides an `~.patches.Arc`, an inherent problem when directly using it for such purposes is that an arc being circular in data space is not necessarily circular in display space. Also, the arc's radius is often best defined in a coordinate system which is independent of the actual data coordinates - at least if you want to be able to freely zoom into your plot without the annotation growing to infinity. This calls for a solution where the arc's center is defined in data space, but its radius in a physical unit like points or pixels, or as a ratio of the Axes dimension.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in angle-annotation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Define `AngleAnnotation` Class",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in angle-annotation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/gca",
+          "matplotlib/set_transform",
+          "matplotlib/add_patch",
+          "matplotlib/identitytransform",
+          "matplotlib/annotate",
+          "matplotlib/figure",
+          "matplotlib/transformedbbox",
+          "matplotlib/transform",
+          "numpy/rad2deg",
+          "numpy/arctan2",
+          "python/property",
+          "python/super",
+          "numpy/interp",
+          "numpy/sign",
+          "matplotlib/window_extent",
+          "matplotlib/position"
+        ]
+      },
+      {
+        "title": "Define Helper Function `plot_angle`",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in angle-annotation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "numpy/array",
+          "numpy/rad2deg",
+          "numpy/cos",
+          "matplotlib/plot"
+        ]
+      },
+      {
+        "title": "Plot Two Crossing Lines and Label Each Angle Between Them with the Above `AngleAnnotation` Tool.",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in angle-annotation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/plot",
+          "python/r_string",
+          "matplotlib/show",
+          "python/zip",
+          "python/dict"
+        ]
+      },
+      {
+        "title": "Showcase Different Text Positions and Size Units",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in angle-annotation.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/title",
+          "matplotlib/margins",
+          "matplotlib/draw",
+          "matplotlib/annotate",
+          "matplotlib/show"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "angle-annotation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}
