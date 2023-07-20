@@ -20,7 +20,7 @@ git config --global push.default current
 5. Push a new branch called `new-feature`, which does not exist in the remote repository:
 ```shell
 git checkout -b new-feature
-git push --set-upstream origin new-feature
+git push
 ```
 6. Verify that the new branch has been created on the remote repository:
 ```shell
