@@ -6,26 +6,7 @@ Write a command that prints the name of the current branch in a Git repository.
 
 ## Example
 
-Suppose you're working on a project stored in the `https://github.com/labex-labs/git-playground` repository. You've made some changes to the `README.md` file and want to commit them to the current branch. However, before doing so, you want to make sure you're on the correct branch.
-
-To check the current branch, you can use the following command:
-
-```shell
-git rev-parse --abbrev-ref HEAD
-```
-
-This will print the name of the current branch to the console. For example, if you're currently on the `main` branch, the output will be:
-
-```shell
-main
-```
-
-If you switch to a different branch, such as `feature-branch`, the output will change accordingly:
-
-```shell
-git checkout feature-branch
-git rev-parse --abbrev-ref HEAD
-```
+Suppose you're working on a project stored in the `https://github.com/labex-labs/git-playground` repository. You want to make sure you're on the correct branch.You switch to a different branch, such as `feature-branch`.
 
 This will output:
 

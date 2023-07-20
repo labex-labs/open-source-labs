@@ -1,14 +1,8 @@
 # Exit
 
-## Problem
+The problem to be solved in this lab is to exit a Go program with a specific status code using the `os.Exit` function.
 
-The problem to be solved in this challenge is to exit a Go program with a specific status code using the `os.Exit` function.
-
-## Requirements
-
-To complete this challenge, you will need to have a basic understanding of Go programming and the `os` package.
-
-## Example
+To complete this lab, you will need to have a basic understanding of Go programming and the `os` package.
 
 ```sh
 #  If you run `exit.go` using `go run`, the exit
@@ -26,7 +20,7 @@ $ echo $?
 # Note that the `!` from our program never got printed.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Use `os.Exit` to immediately exit with a given

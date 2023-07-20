@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to demonstrate how to use mutexes to safely access data across multiple goroutines.
+This lab aims to demonstrate how to use mutexes to safely access data across multiple goroutines.
 
-## Problem
-
-The problem to be solved in this challenge is to increment a named counter in a loop using multiple goroutines, and ensure that the access to the counter is synchronized.
-
-## Requirements
+The problem to be solved in this lab is to increment a named counter in a loop using multiple goroutines, and ensure that the access to the counter is synchronized.
 
 - Use a `Container` struct to hold a map of counters.
 - Use a `Mutex` to synchronize access to the `counters` map.
@@ -54,12 +50,10 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 map[a:20000 b:10000]
 ```
 
 ## Summary
 
-In this challenge, we learned how to use mutexes to safely access data across multiple goroutines. We created a `Container` struct to hold a map of counters, and used a `Mutex` to synchronize access to the `counters` map. We also implemented an `inc` method to increment the named counter, and used the `sync.WaitGroup` struct to wait for the goroutines to finish. Finally, we printed the `counters` map using the `fmt.Println` function.
+In this lab, we learned how to use mutexes to safely access data across multiple goroutines. We created a `Container` struct to hold a map of counters, and used a `Mutex` to synchronize access to the `counters` map. We also implemented an `inc` method to increment the named counter, and used the `sync.WaitGroup` struct to wait for the goroutines to finish. Finally, we printed the `counters` map using the `fmt.Println` function.
