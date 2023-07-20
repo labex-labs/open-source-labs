@@ -29,9 +29,9 @@ juxt(
 juxt(
   (s) => s.length,
   (s) => s.split(" ").join("-")
-)("30 seconds of code"); // [[18], ['30-seconds-of-code']]
+)("happy coding"); // [[18], ['happy-coding']]
 ```
 
 In the first example, the `juxt` function takes three functions as arguments and returns a new function. When that new function is called with the arguments `1, 2, 3`, it applies each of the three functions to those arguments and returns an array of arrays containing the results.
 
-In the second example, the `juxt` function takes two functions as arguments and returns a new function. When that new function is called with the argument `'30 seconds of code'`, it applies each of the two functions to that argument and returns an array of arrays containing the results.
+In the second example, the `juxt` function takes two functions as arguments and returns a new function. When that new function is called with the argument `'happy-coding'`, it applies each of the two functions to that argument and returns an array of arrays containing the results.

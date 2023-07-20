@@ -1,2 +1,4 @@
 #!/bin/zsh
-(cd /home/labex/project/git-playground && git log | grep "fix file2.txt") && (cat ~/.zsh_history | grep -v grep | grep "git merge feature-branch-A") && echo "True"
+(cd /home/labex/project/git-playground && git checkout master && git log | grep "fix file2.txt") && (cd /home/labex/project/git-playground && git checkout feature-branch-A && git log | grep "fix file2.txt")  && echo "True"
+
+
