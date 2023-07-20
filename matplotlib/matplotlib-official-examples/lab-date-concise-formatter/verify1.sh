@@ -1,4 +1,7 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep ''
+git diff | grep 'datetime'
+git diff | grep 'numpy'
+git diff | grep 'matplotlibs'
+git diff | grep 'show'
