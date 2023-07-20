@@ -2,21 +2,33 @@
 
 You are working on a project with a team of developers, and you have made several commits to your branch. However, you realize that some of the commits are unnecessary or need to be combined. You want to clean up your commit history and make it more organized.
 
-To complete this lab,you will fork `https://github.com/labex-labs/git-playground` to your GitHub account and use the Git repository named `https://github.com/your-username/git-playground` in your environment. Follow these steps:
+For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`. Follow these steps:
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/your-username/git-playground`.
-2. Navigate to the directory using the command `cd git-playground`.
-3. Create a new branch using the command `git checkout -b my-branch`.
-4. Make some file changes, e.g. add "hello" to `file1.txt` and add it to the staging area using the commands `echo "hello" > file1.txt` and `git add . `.
-5. Make several commits to the branch using the command `git commit -m "commit message"`.
-6. Run the command `git rebase -i HEAD~3` to perform an interactive rebase of the last 3 commits.
-7. The interactive rebase file will open in your default text editor. You can modify the order of the commits and the action to perform for each one (pick, squash, drop, reword etc.).
-8. Save and close the file.
-9. If there are merge conflicts or you need to make changes, you can continue the rebase when ready using `git rebase --continue` or abort it using `git rebase --abort`.
-10. Once the rebase is complete, push the changes to the remote repository using the command `git push -u origin my-branch`.
+1. Navigate to the directory:
+    ```shell
+    cd git-playground
+    ```
+2. Perform an interactive rebase of the last 2 commits:
+    ```shell
+    git rebase -i HEAD~2
+    ```
+    The interactive rebase file will open in your default text editor. You can modify the order of the commits and the action to perform for each one (pick, squash, drop, reword etc.).
+3. Change "pick" to "squash" in the commit message "Added file2.txt", press <kbd>Esc</kbd> and enter the <kbd>:wq</kbd> command, then press <kbd>Enter</kbd> to save your changes and exit the editor, change the commit message to "Added file1.txt and file2.txt" in the same way and exit.
+4. If there are merge conflicts or you need to make changes, you can continue the rebase when ready using `git rebase --continue` or abort it using `git rebase --abort`.
 
-Running `git log origin/my-branch` will give you a result that looks like this:
+Running `git log` will give you a result that looks like this:
+```shell
+commit 7575ded485555c28ecb09487c68e90639bebbe9d (HEAD -> master)
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
 
-![<result>](assets/challenge-interactive-rebase-step1-1.png)
+    Added file1.txt and file2.txt
 
+commit b00b9374a7c549d1af111aa777fdcc868d8a2a01
+Author: Hang <huhuhang@gmail.com>
+Date:   Wed Apr 26 14:16:00 2023 +0800
+
+    Initial commit
+```
+    
 
