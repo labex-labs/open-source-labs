@@ -8,7 +8,7 @@ For example:
 >>> import reader
 >>> import logging
 >>> logging.basicConfig(level=logging.DEBUG)
->>> port = reader.read_csv_as_dicts('Data/missing.csv', types=[str, int, float])
+>>> port = reader.read_csv_as_dicts('missing.csv', types=[str, int, float])
 WARNING:reader:Row 4: Bad row: ['C', '', '53.08']
 DEBUG:reader:Row 4: Reason: invalid literal for int() with base 10: ''
 WARNING:reader:Row 7: Bad row: ['DIS', '50', 'N/A']

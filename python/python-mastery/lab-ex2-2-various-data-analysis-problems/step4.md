@@ -6,7 +6,7 @@ as dictionaries like this:
 
 ```python
 >>> import readrides
->>> rows = readrides.read_rides_as_dicts('Data/ctabus.csv')
+>>> rows = readrides.read_rides_as_dicts('ctabus.csv')
 >>>
 ```
 

@@ -41,5 +41,5 @@ def print_portfolio(portfolio):
 
 
 if __name__ == "__main__":
-    portfolio = read_portfolio("../../Data/portfolio.csv")
+    portfolio = read_portfolio("../../portfolio.csv")
     print_portfolio(portfolio)

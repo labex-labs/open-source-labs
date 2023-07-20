@@ -58,6 +58,6 @@ def ticker(fmt, fields):
 
 if __name__ == "__main__":
     follow(
-        "../../Data/stocklog.csv",
+        "../../stocklog.csv",
         to_csv(create_ticker(negchange(ticker("text", ["name", "price", "change"])))),
     )

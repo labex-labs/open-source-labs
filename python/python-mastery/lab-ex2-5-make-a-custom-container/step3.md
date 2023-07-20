@@ -63,7 +63,7 @@ Try using this function to read the bus data and look at the memory use.
 ```python
 >>> import tracemalloc
 >>> tracemalloc.start()
->>> columns = read_rides_as_columns('Data/ctabus.csv')
+>>> columns = read_rides_as_columns('ctabus.csv')
 >>> tracemalloc.get_traced_memory()
 ... look at the result ...
 >>>

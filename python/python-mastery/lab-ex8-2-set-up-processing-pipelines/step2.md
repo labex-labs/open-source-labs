@@ -22,7 +22,7 @@ class Ticker(Structure):
 if __name__ == '__main__':
     from follow import follow
     import csv
-    lines = follow('Data/stocklog.csv')
+    lines = follow('stocklog.csv')
     rows = csv.reader(lines)
     records = (Ticker.from_row(row) for row in rows)
     for record in records:

@@ -53,7 +53,7 @@ Add the above classes to the `reader.py` file. Here's how you would use one of t
 ```python
 >>> from reader import DictCSVParser
 >>> parser = DictCSVParser([str, int, float])
->>> port = parser.parse('Data/portfolio.csv')
+>>> port = parser.parse('portfolio.csv')
 >>>
 ```
 
@@ -64,6 +64,6 @@ exactly the same way that it did before. For example:
 ```python
 >>> import reader
 >>> import stock
->>> port = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> port = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>>
 ```

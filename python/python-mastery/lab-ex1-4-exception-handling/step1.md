@@ -8,7 +8,7 @@ written the function, have your program call the function by simply
 adding this statement at the end:
 
 ```python
-print(portfolio_cost('Data/portfolio.dat'))
+print(portfolio_cost('portfolio.dat'))
 ```
 
 Run your program and make sure it produces the same output as

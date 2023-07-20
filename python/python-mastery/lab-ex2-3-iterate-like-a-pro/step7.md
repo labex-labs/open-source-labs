@@ -10,7 +10,7 @@ ridership:
 >>> import tracemalloc
 >>> tracemalloc.start()
 >>> import readrides
->>> rows = readrides.read_rides_as_dicts('Data/ctabus.csv')
+>>> rows = readrides.read_rides_as_dicts('ctabus.csv')
 >>> rt22 = [row for row in rows if row['route'] == '22']
 >>> max(rt22, key=lambda row: row['rides'])
 {'date': '06/11/2008', 'route': '22', 'daytype': 'W', 'rides': 26896}
@@ -27,7 +27,7 @@ and try this:
 >>> import tracemalloc
 >>> tracemalloc.start()
 >>> import csv
->>> f = open('Data/ctabus.csv')
+>>> f = open('ctabus.csv')
 >>> f_csv = csv.reader(f)
 >>> headers = next(f_csv)
 >>> rows = (dict(zip(headers,row)) for row in f_csv)

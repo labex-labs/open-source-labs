@@ -9,7 +9,7 @@ Can you generalize that idea? Specifically, can you make a general
 purpose function `read_csv_as_columns()` that works like this:
 
 ```python
->>> data = read_csv_as_columns('Data/ctabus.csv', types=[str, str, str, int])
+>>> data = read_csv_as_columns('ctabus.csv', types=[str, str, str, int])
 >>> data
 <__main__.DataCollection object at 0x102b45048>
 >>> len(data)

@@ -10,7 +10,7 @@ list. For example:
 >>> import stock
 >>> import reader
 >>> import tableformat
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> tableformat.print_table(portfolio, ['name','shares','price'])
       name     shares      price
 ---------- ---------- ----------

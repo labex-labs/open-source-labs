@@ -39,7 +39,7 @@ conversion function as an argument. For example:
 >>> def make_dict(headers, row):
         return dict(zip(headers, row))
 
->>> lines = open('Data/portfolio.csv')
+>>> lines = open('portfolio.csv')
 >>> convert_csv(lines, make_dict)
 [{'name': 'AA', 'shares': '100', 'price': '32.20'}, {'name': 'IBM', 'shares': '50', 'price': '91.10'},
  {'name': 'CAT', 'shares': '150', 'price': '83.44'}, {'name': 'MSFT', 'shares': '200', 'price': '51.23'},

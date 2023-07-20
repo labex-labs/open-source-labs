@@ -110,7 +110,7 @@ If you've done this right, old code should work exactly as it did before.
 For example:
 
 ```python
->>> rows = readrides.read_rides_as_dicts('Data/ctabus.csv')
+>>> rows = readrides.read_rides_as_dicts('ctabus.csv')
 >>> rows
 <readrides.RideData object at 0x10f5054a8>
 >>> len(rows)

@@ -1,13 +1,13 @@
 # Stuck on the bus
 
-The file `Data/ctabus.csv` is a CSV file containing
+The file `ctabus.csv` is a CSV file containing
 daily ridership data for the Chicago Transit Authority (CTA) bus
 system from January 1, 2001 to August 31, 2013. It contains
 approximately 577000 rows of data. Use Python to view a few lines
 of data to see what it looks like:
 
 ```python
->>> f = open('Data/ctabus.csv')
+>>> f = open('ctabus.csv')
 >>> next(f)
 'route,date,daytype,rides\n'
 >>> next(f)

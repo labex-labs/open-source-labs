@@ -43,4 +43,4 @@ def printer():
 # Example use.
 
 if __name__ == "__main__":
-    follow("../../Data/stocklog.csv", printer())
+    follow("../../stocklog.csv", printer())

@@ -6,7 +6,7 @@ import readrides
 
 tracemalloc.start()
 
-rows = readrides.read_rides_as_dicts("../../Data/ctabus.csv")
+rows = readrides.read_rides_as_dicts("../../ctabus.csv")
 
 # --------------------------------------------------
 # Question 1:  How many bus routes are in Chicago?

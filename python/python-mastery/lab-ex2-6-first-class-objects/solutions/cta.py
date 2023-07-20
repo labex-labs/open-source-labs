@@ -12,14 +12,14 @@ if True:
     import reader
 
     rows = reader.read_csv_as_dicts(
-        "../../Data/ctabus.csv", [sys.intern, sys.intern, sys.intern, int]
+        "../../ctabus.csv", [sys.intern, sys.intern, sys.intern, int]
     )
 else:
     # Part (d) - Challenge
     import colreader
 
     rows = colreader.read_csv_as_columns(
-        "../../Data/ctabus.csv", [sys.intern, sys.intern, sys.intern, int]
+        "../../ctabus.csv", [sys.intern, sys.intern, sys.intern, int]
     )
 
 # --------------------------------------------------

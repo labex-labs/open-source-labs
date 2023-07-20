@@ -12,7 +12,7 @@ a list of attribute names, and prints a nicely formatted table. For example:
 ```python
 >>> import stock
 >>> import tableformat
->>> portfolio = stock.read_portfolio('Data/portfolio.csv')
+>>> portfolio = stock.read_portfolio('portfolio.csv')
 >>> tableformat.print_table(portfolio, ['name','shares','price'])
       name     shares      price
 ---------- ---------- ----------

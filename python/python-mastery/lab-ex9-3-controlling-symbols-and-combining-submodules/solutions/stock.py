@@ -17,6 +17,6 @@ class Stock(Structure):
 
 
 if __name__ == "__main__":
-    portfolio = read_csv_as_instances("../../Data/portfolio.csv", Stock)
+    portfolio = read_csv_as_instances("../../portfolio.csv", Stock)
     formatter = create_formatter("text")
     print_table(portfolio, ["name", "shares", "price"], formatter)

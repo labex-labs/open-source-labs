@@ -5,7 +5,7 @@ most of the work. This function crashes if you run it on data with missing or
 bad data. For example:
 
 ```python
->>> port = read_csv_as_dicts('Data/missing.csv', types=[str, int, float])
+>>> port = read_csv_as_dicts('missing.csv', types=[str, int, float])
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "reader.py", line 24, in read_csv_as_dicts

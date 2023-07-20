@@ -19,4 +19,4 @@ def portfolio_cost(filename):
     return total_cost
 
 
-print(portfolio_cost("../../Data/portfolio3.dat"))
+print(portfolio_cost("../../portfolio3.dat"))

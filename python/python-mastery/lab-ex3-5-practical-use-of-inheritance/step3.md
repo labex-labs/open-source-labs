@@ -18,7 +18,7 @@ Now, use your new class as follows:
 
 ```python
 >>> import stock, reader, tableformat
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> formatter = tableformat.TextTableFormatter()
 >>> tableformat.print_table(portfolio, ['name','shares','price'], formatter)
      name     shares      price

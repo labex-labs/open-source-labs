@@ -4,7 +4,7 @@ Start the exercise by grabbing some rows of data from a CSV file.
 
 ```python
 >>> import csv
->>> f = open('Data/portfolio.csv')
+>>> f = open('portfolio.csv')
 >>> f_csv = csv.reader(f)
 >>> headers = next(f_csv)
 >>> headers

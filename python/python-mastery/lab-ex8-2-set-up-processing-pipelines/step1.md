@@ -7,7 +7,7 @@ Experiment with this concept by performing these steps:
 ```python
 >>> from follow import follow
 >>> import csv
->>> lines = follow('Data/stocklog.csv')
+>>> lines = follow('stocklog.csv')
 >>> rows = csv.reader(lines)
 >>> for row in rows:
         print(row)

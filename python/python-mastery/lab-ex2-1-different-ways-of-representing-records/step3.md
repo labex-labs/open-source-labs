@@ -29,7 +29,7 @@ def read_rides_as_tuples(filename):
 if __name__ == '__main__':
     import tracemalloc
     tracemalloc.start()
-    rows = read_rides_as_tuples('Data/ctabus.csv')
+    rows = read_rides_as_tuples('ctabus.csv')
     print('Memory Use: Current %d, Peak %d' % tracemalloc.get_traced_memory())
 ```
 

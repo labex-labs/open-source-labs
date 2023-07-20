@@ -13,7 +13,7 @@ of data read from files. For example, code such as the following is used:
 
 ```python
 >>> import csv
->>> f = open('Data/portfolio.csv')
+>>> f = open('portfolio.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> row = next(rows)

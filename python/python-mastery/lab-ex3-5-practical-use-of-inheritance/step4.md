@@ -4,7 +4,7 @@ Create a class `CSVTableFormatter` that allows output to be generated in CSV for
 
 ```python
 >>> import stock, reader, tableformat
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> formatter = tableformat.CSVTableFormatter()
 >>> tableformat.print_table(portfolio, ['name','shares','price'], formatter)
 name,shares,price
@@ -22,7 +22,7 @@ Create a class `HTMLTableFormatter` that generates output in HTML format:
 
 ```python
 >>> import stock, reader, tableformat
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> formatter = tableformat.HTMLTableFormatter()
 >>> tableformat.print_table(portfolio, ['name','shares','price'], formatter)
 <tr> <th>name</th> <th>shares</th> <th>price</th> </tr>

@@ -1,6 +1,6 @@
 # Working with files
 
-The file `Data/portfolio.dat` contains a list of lines with information
+The file `portfolio.dat` contains a list of lines with information
 on a portfolio of stocks. The file looks like this:
 
 ```

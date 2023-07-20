@@ -8,7 +8,7 @@ extra square brackets ([]) that appeared when using list comprehensions.
 
 ```python
 >>> from readport import read_portfolio
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> sum(s['shares']*s['price'] for s in portfolio)
 44671.15
 >>> min(s['shares'] for s in portfolio)

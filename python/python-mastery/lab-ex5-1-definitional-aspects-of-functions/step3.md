@@ -8,7 +8,7 @@ To do this, create two new functions `csv_as_dicts(lines, types)` and
 lines. For example:
 
 ```python
->>> file = open('Data/portfolio.csv')
+>>> file = open('portfolio.csv')
 >>> port = reader.csv_as_dicts(file, [str, int, float])
 >>> port
 [{'name': 'AA', 'shares': 100, 'price': 32.2}, {'name': 'IBM', 'shares': 50, 'price': 91.1},
@@ -24,7 +24,7 @@ kinds of input sources. For example:
 ```python
 >>> import gzip
 >>> import stock
->>> file = gzip.open('Data/portfolio.csv.gz')
+>>> file = gzip.open('portfolio.csv.gz')
 >>> port = reader.csv_as_instances(file, stock.Stock)
 >>> port
 [Stock('AA', 100, 32.2), Stock('IBM', 50, 91.1), Stock('CAT', 150, 83.44),

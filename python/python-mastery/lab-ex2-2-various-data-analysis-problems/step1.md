@@ -25,11 +25,11 @@ def read_portfolio(filename):
     return portfolio
 ```
 
-This file reads some simple stock market data in the file `Data/portfolio.csv`. Use
+This file reads some simple stock market data in the file `portfolio.csv`. Use
 the function to read the file and look at the results:
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> from pprint import pprint
 >>> pprint(portfolio)
 [{'name': 'AA', 'price': 32.2, 'shares': 100},

@@ -33,7 +33,7 @@ read a list of `Stock` objects, do this:
 >>> # Read a portfolio of Stock instances
 >>> from reader import read_csv_as_instances
 >>> from stock import Stock
->>> portfolio = read_csv_as_instances('Data/portfolio.csv', Stock)
+>>> portfolio = read_csv_as_instances('portfolio.csv', Stock)
 >>> portfolio
 [<__main__.Stock object at 0x100674748>,
 <__main__.Stock object at 0x1006746d8>,
@@ -58,7 +58,7 @@ Here is another example of how you might use `read_csv_as_instances()` with a co
          def from_row(cls, row):
              return cls(row[0], row[1], row[2], int(row[3]))
 
->>> rides = read_csv_as_instances('Data/ctabus.csv', Row)
+>>> rides = read_csv_as_instances('ctabus.csv', Row)
 >>> len(rides)
 577563
 >>>

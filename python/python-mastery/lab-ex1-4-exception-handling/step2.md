@@ -2,7 +2,7 @@
 
 When writing programs that process data, it is common to encounter
 errors related to bad data (malformed, missing fields, etc.). Modify
-your `pcost.py` program to read the data file `Data/portfolio3.dat`
+your `pcost.py` program to read the data file `portfolio3.dat`
 and run it (hint: it should crash).
 
 Modify your function slightly so that it is able to recover from lines
@@ -19,5 +19,5 @@ Reason: invalid literal for int() with base 10: '-'
 ...
 ```
 
-Try running your program on the `Data/portfolio3.dat` file
+Try running your program on the `portfolio3.dat` file
 again. It should run successfully despite printed warning messages.

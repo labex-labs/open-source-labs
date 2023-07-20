@@ -28,6 +28,6 @@ Once you've done this, you should be able to do things like this:
 >>> s
 Stock('GOOG', 100, 490.1)
 >>> import reader
->>> port = reader.read_csv_as_instances('Data/portfolio.csv', Stock)
+>>> port = reader.read_csv_as_instances('portfolio.csv', Stock)
 >>>
 ```

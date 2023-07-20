@@ -16,7 +16,7 @@ codes. This class is used via multiple inheritance. For example:
 
 ```python
 >>> import stock, reader
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> from tableformat import TextTableFormatter, ColumnFormatMixin, print_table
 >>> class PortfolioFormatter(ColumnFormatMixin, TextTableFormatter):
         formats = ['%s', '%d', '%0.2f']

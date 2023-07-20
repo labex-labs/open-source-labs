@@ -46,7 +46,7 @@ Restart Python and try this:
 >>> tracemalloc.start()
 >>> from sys import intern
 >>> import reader
->>> rows = reader.read_csv_as_dicts('Data/ctabus.csv', [intern, str, str, int])
+>>> rows = reader.read_csv_as_dicts('ctabus.csv', [intern, str, str, int])
 >>> routeids = { id(row['route']) for row in rows }
 >>> len(routeids)
 181
@@ -70,7 +70,7 @@ involving dates as well. What happens if you also cache the date strings?
 >>> tracemalloc.start()
 >>> from sys import intern
 >>> import reader
->>> rows = reader.read_csv_as_dicts('Data/ctabus.csv', [intern, intern, str, int])
+>>> rows = reader.read_csv_as_dicts('ctabus.csv', [intern, intern, str, int])
 >>> tracemalloc.get_traced_memory()
 ... look at result ...
 >>>

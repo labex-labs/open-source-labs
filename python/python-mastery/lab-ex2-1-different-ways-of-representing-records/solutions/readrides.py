@@ -77,6 +77,6 @@ if __name__ == "__main__":
 
     tracemalloc.start()
     read_rides = read_rides_as_tuples  # Change to as_dicts, as_instances, etc.
-    rides = read_rides("../../Data/ctabus.csv")
+    rides = read_rides("../../ctabus.csv")
 
     print("Memory Use: Current %d, Peak %d" % tracemalloc.get_traced_memory())

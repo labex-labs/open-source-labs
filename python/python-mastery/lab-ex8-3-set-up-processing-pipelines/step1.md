@@ -41,7 +41,7 @@ def printer():
 
 # Example use
 if __name__ == '__main__':
-    follow('Data/stocklog.csv',printer())
+    follow('stocklog.csv',printer())
 ```
 
 Run this program and make sure produces output.. Make sure you understand how the different pieces are hooked together.

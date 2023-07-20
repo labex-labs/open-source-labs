@@ -4,7 +4,7 @@ Add a function `read_portfolio()` to your `stock.py` program that
 reads a file of portfolio data into a list of `Stock` objects. Here's how it should work:
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> for s in portfolio:
         print(s)
 

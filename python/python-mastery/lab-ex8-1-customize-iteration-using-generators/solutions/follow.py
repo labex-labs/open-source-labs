@@ -19,7 +19,7 @@ def follow(filename):
 
 # Example use
 if __name__ == "__main__":
-    for line in follow("../../Data/stocklog.csv"):
+    for line in follow("../../stocklog.csv"):
         fields = line.split(",")
         name = fields[0].strip('"')
         price = float(fields[1])

@@ -29,13 +29,13 @@ Now, try a few experiments:
 ```python
 >>> from follow import follow
 >>> # Experiment: Garbage collection of a running generator
->>> f = follow('Data/stocklog.csv')
+>>> f = follow('stocklog.csv')
 >>> next(f)
 '"MO",70.29,"6/11/2007","09:30.09",-0.01,70.25,70.30,70.29,365314\n'
 >>> del f
 Following Done
 >>> # Experiment: Closing a generator
->>> f = follow('Data/stocklog.csv')
+>>> f = follow('stocklog.csv')
 >>> for line in f:
         print(line,end='')
         if 'IBM' in line:
@@ -62,7 +62,7 @@ iteration on a generator if you break out of a for-loop. For example,
 try this:
 
 ```python
->>> f = follow('Data/stocklog.csv')
+>>> f = follow('stocklog.csv')
 >>> for line in f:
         print(line,end='')
         if 'IBM' in line:

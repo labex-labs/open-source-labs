@@ -26,7 +26,7 @@ These two classes are meant to be used together. For example:
 
 ```
 >>> import stock, reader, tableformat
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> formatter = tableformat.TableFormatter()
 >>> tableformat.print_table(portfolio, ['name', 'shares', 'price'], formatter)
 Traceback (most recent call last):

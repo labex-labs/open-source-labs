@@ -4,7 +4,7 @@ Table the data read in part (b) and use it to make a nicely formatted
 table. For example:
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> for s in portfolio:
            print('%10s %10d %10.2f' % (s.name, s.shares, s.price))
 
@@ -23,7 +23,7 @@ produces the same output, but additionally adds some table headers.
 For example:
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> print_portfolio(portfolio)
       name     shares      price
 ---------- ---------- ----------

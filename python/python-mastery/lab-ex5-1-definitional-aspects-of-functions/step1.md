@@ -5,7 +5,7 @@ had a function for reading a CSV into a list of dictionaries. For example:
 
 ```python
 >>> import reader
->>> port = reader.read_csv_as_dicts('Data/portfolio.csv', [str,int,float])
+>>> port = reader.read_csv_as_dicts('portfolio.csv', [str,int,float])
 >>>
 ```
 
@@ -15,7 +15,7 @@ We later expanded to that code to work with instances in
 ```python
 >>> import reader
 >>> from stock import Stock
->>> port = reader.read_csv_as_instances('Data/portfolio.csv', Stock)
+>>> port = reader.read_csv_as_instances('portfolio.csv', Stock)
 >>>
 ```
 

@@ -5,7 +5,7 @@ instead. The final result should be a list of the rows that were successfully
 converted. For example:
 
 ```python
->>> port = read_csv_as_dicts('Data/missing.csv', types=[str, int, float])
+>>> port = read_csv_as_dicts('missing.csv', types=[str, int, float])
 Row 4: Bad row: ['C', '', '53.08']
 Row 7: Bad row: ['DIS', '50', 'N/A']
 Row 8: Bad row: ['GE', '', '37.23']

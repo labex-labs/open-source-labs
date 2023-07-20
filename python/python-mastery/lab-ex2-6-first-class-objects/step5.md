@@ -5,7 +5,7 @@ In this exercise, you have written two functions, `read_csv_as_dicts()` and
 For example:
 
 ```python
->>> data1 = read_csv_as_dicts('Data/ctabus.csv', [str, str, str, int])
+>>> data1 = read_csv_as_dicts('ctabus.csv', [str, str, str, int])
 >>> len(data1)
 577563
 >>> data1[0]
@@ -14,7 +14,7 @@ For example:
 {'route': '4', 'date': '01/01/2001', 'daytype': 'U', 'rides': 9288}
 >>>
 
->>> data2 = read_csv_as_columns('Data/ctabus.csv', [str, str, str, int])
+>>> data2 = read_csv_as_columns('ctabus.csv', [str, str, str, int])
 >>> len(data2)
 577563
 >>> data2[0]

@@ -7,7 +7,7 @@ simply grabbing the file and storing its data in a single string:
 ```python
 >>> # --- RESTART
 >>> import tracemalloc
->>> f = open('Data/ctabus.csv')
+>>> f = open('ctabus.csv')
 >>> tracemalloc.start()
 >>> data = f.read()
 >>> len(data)
@@ -29,7 +29,7 @@ instead? Restart Python and try this:
 ```python
 >>> # --- RESTART
 >>> import tracemalloc
->>> f = open('Data/ctabus.csv')
+>>> f = open('ctabus.csv')
 >>> tracemalloc.start()
 >>> lines = f.readlines()
 >>> len(lines)

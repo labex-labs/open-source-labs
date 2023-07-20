@@ -4,7 +4,7 @@ If you go all the way back to [Exercise 3.1](ex3_1.md), you
 wrote a function `print_portfolio()` that produced a table like this:
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> print_portfolio(portfolio)
       name     shares      price
 ---------- ---------- ----------
@@ -38,7 +38,7 @@ like this:
             formatter.row(rowdata)
 
 >>> import stock, reader
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> from tableformat import TextTableFormatter
 >>> formatter = TextTableFormatter()
 >>> print_table(portfolio,

@@ -9,7 +9,7 @@ Here is how it should work:
 
 ```python
 >>> import reader
->>> portfolio = reader.read_csv_as_dicts('Data/portfolio.csv', [str,int,float])
+>>> portfolio = reader.read_csv_as_dicts('portfolio.csv', [str,int,float])
 >>> for s in portfolio:
          print(s)
 
@@ -26,7 +26,7 @@ Here is how it should work:
 Or, if you wanted to read the CTA data:
 
 ```python
->>> rows = reader.read_csv_as_dicts('Data/ctabus.csv', [str,str,str,int])
+>>> rows = reader.read_csv_as_dicts('ctabus.csv', [str,str,str,int])
 >>> len(rows)
 577563
 >>> rows[0]

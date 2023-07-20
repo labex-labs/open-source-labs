@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     formatter = create_formatter("text")
 
-    lines = follow("../../Data/stocklog.csv")
+    lines = follow("../../stocklog.csv")
     rows = csv.reader(lines)
     records = (Ticker.from_row(row) for row in rows)
     negative = (rec for rec in records if rec.change < 0)

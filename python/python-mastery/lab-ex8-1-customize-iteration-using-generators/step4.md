@@ -4,10 +4,10 @@ Generators can also be a useful way to simply produce a stream of
 data. In this part, we'll explore this idea by writing a generator to
 watch a log file. To start, follow the next instructions carefully.
 
-The program `Data/stocksim.py` is a program that
+The program `stocksim.py` is a program that
 simulates stock market data. As output, the program constantly writes
 real-time data to a file `stocklog.csv`. In a
-command window (not IDLE) go into the `Data/` directory and run this program:
+command window (not IDLE) go into the `` directory and run this program:
 
 ```
 % python3 stocksim.py
@@ -26,7 +26,7 @@ file `follow.py` and put this code in it:
 # follow.py
 import os
 import time
-f = open('Data/stocklog.csv')
+f = open('stocklog.csv')
 f.seek(0, os.SEEK_END)   # Move file pointer 0 bytes from end of file
 
 while True:
@@ -63,7 +63,7 @@ a generator function `follow(filename)`. Make it so the following code
 works:
 
 ```python
->>> for line in follow('Data/stocklog.csv'):
+>>> for line in follow('stocklog.csv'):
           print(line, end='')
 
 ... Should see lines of output produced here ...
@@ -72,7 +72,7 @@ works:
 Modify the stock ticker code so that it looks like this:
 
 ```python
-for line in follow('Data/stocklog.csv'):
+for line in follow('stocklog.csv'):
     fields = line.split(',')
     name = fields[0].strip('"')
     price = float(fields[1])

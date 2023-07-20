@@ -58,7 +58,7 @@ def parse_stock_data(lines):
 
 # Sample use
 if __name__ == "__main__":
-    lines = follow("../../Data/stocklog.dat")
+    lines = follow("../../stocklog.dat")
     records = parse_stock_data(lines)
     for r in records:
         print("%(name)10s %(price)10.2f %(change)10.2f" % r)

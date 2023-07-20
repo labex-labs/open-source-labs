@@ -8,7 +8,7 @@ Your new code should catch situations like this:
 
 ```python
 >>> import stock, reader, tableformat
->>> portfolio = reader.read_csv_as_instances('Data/portfolio.csv', stock.Stock)
+>>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> class MyFormatter:
         def headings(self,headers): pass
         def row(self,rowdata): pass
