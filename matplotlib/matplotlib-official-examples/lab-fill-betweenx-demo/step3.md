@@ -20,6 +20,3 @@ ax.fill_betweenx(y, x1, x2, where=x2 <= x1, facecolor='red', alpha=0.5)
 
 plt.show()
 ```
-
-Output:
-![Using Logical Conditions](https://i.imgur.com/1JnRf0k.png)
