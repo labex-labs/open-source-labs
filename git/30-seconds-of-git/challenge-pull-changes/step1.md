@@ -9,8 +9,7 @@ You are working on a project with a team of developers, and you need to ensure t
 For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`.
 
 1. Change into the directory of the cloned repository.
-2. Identify the commit hash with the commit message "Initial commit", and revert the repository to a version containing only that hash.
-3. Pull the latest changes from the `master` branch of the remote repository.
+2. Pull the latest changes from the `master` branch of the remote repository.
 
 After completing the challenge, you should see a message indicating that your local copy of the repository is up to date with the remote repository.
 
