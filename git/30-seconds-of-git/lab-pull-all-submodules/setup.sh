@@ -1,4 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-git clone https://github.com/labex-labs/git-playground.git
-
+git clone https://github.com/git/git.git 
