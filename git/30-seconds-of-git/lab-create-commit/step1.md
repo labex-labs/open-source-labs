@@ -20,7 +20,7 @@ For this lab, let's use the repository from `https://github.com/labex-labs/git-p
    git add .
    git commit -m "Update README.md"
    ```
-The `-m` option allows you to specify a commit message. Make sure the message is descriptive and explains what changes the commit contains.
+   The `-m` option allows you to specify a commit message. Make sure the message is descriptive and explains what changes the commit contains.
 
 This is the result of running the `git log` command:
 
