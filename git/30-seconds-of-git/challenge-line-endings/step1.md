@@ -12,3 +12,8 @@ To configure the line endings for the `git-playground` repository, follow these 
 2. Navigate to the directory where the `git-playground` repository is located.
 3. Configure the line endings to use UNIX line endings (`\n`).
 4. Verify that the line endings have been configured correctly.
+
+This is the result of running `cat -vet file2.txt`:
+```shell
+This is file2.$
+```
