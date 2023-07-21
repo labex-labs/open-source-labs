@@ -1,9 +1,14 @@
 ```shell
-git config [--global] --add --bool
+git config --global push.default current
 ```
 
 ```shell
-git config --add --bool remote.origin.pushdefault true
+# Fork from https://github.com/labex-labs/git-playground.git
+git clone https://github.com/your-username/git-playground.git
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+git config --global push.default current
 git checkout -b new-feature
-git push --set-upstream origin new-feature
+git push
 ```
