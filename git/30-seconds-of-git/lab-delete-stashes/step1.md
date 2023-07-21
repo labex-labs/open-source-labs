@@ -2,13 +2,11 @@
 
 You have been working on a project in a Git repository and have created multiple stashes to save your changes. Now, you want to delete all stashes to start fresh. However, you are not sure how to do it.
 
-To complete this challenge, you will use the Git repository named `https://github.com/labex-labs/git-playground`. Follow the steps below:
+To complete this lab, you will use the Git repository named `https://github.com/labex-labs/git-playground`. Follow the steps below:
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Navigate to the repository directory using the command `cd git-playground`.
-3. Create a new file in the repository directory using the command `touch newfile.txt`.
-4. Add the new file to the staging area using the command `git add newfile.txt`.
-5. Create a stash using the command `git stash save "new file added"`.
-6. Repeat steps 3-5 to create multiple collections. Each time the stash information is different.
-7. Delete all stashes using the command `git stash clear`.
-8. Verify that all stashes have been deleted using the command `git stash list`.
+1. Navigate to the repository directory using the command `cd git-playground`.
+2. List all stashes using the command `git stash list`. You should see the current stashes.
+3. Delete all stashes at once using the command `git stash clear`.
+4. Verify that all stashes have been deleted using the command `git stash list`.
+
+The stashes you just deleted should no longer be there.
