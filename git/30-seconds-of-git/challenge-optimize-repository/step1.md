@@ -12,4 +12,5 @@ For example, let's say you have a Git repository named `git-playground` located 
 
 This is the result of optimising the `git-playground` repository by removing all loose objects and packing the remaining objects into a new set of pack files:
 
-![<result>](assets/challenge-optimize-repository-step1-1.png)
+![<result>](./assets/challenge-optimize-repository-step1-1.png)
+

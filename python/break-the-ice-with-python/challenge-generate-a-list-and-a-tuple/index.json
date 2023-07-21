@@ -1,0 +1,58 @@
+{
+  "type": "challenge",
+  "title": "Generate a List and a Tuple",
+  "description": "In this challenge, you will write a program which accepts a sequence of comma-separated numbers from console and generates a list and a tuple which contains every number.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Generate a List and a Tuple",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing generate_a_list_and_a_tuple.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/dict",
+          "python/input",
+          "python/manipulating_strings"
+        ],
+        "solutions": ["generate_a_list_and_a_tuple.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "generate_a_list_and_a_tuple.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

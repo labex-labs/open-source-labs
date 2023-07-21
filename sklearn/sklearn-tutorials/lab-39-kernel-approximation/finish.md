@@ -1,0 +1,3 @@
+# Summary
+
+Kernel approximation is a powerful technique that allows us to use kernel methods efficiently, especially for large datasets. In this tutorial, we explored several kernel approximation methods available in scikit-learn, including the Nystroem method, RBF kernel approximation, ACS kernel approximation, SCS kernel approximation, and polynomial kernel approximation using Tensor Sketch. We learned how to use these techniques and discussed their advantages and limitations. By leveraging kernel approximation, we can effectively apply kernel methods to a wide range of machine learning tasks.
