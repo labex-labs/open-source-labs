@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the early stopping strategy for monitoring convergence on a validation score when using Stochastic Gradient Descent to minimize a loss function. We used the `SGDClassifier` model from scikit-learn and the MNIST dataset to illustrate how early stopping can be used to achieve almost the same accuracy as compared to a model built without early stopping, and significantly reduce training time. We defined three different stopping criteria: no stopping criterion, training loss, and validation score, and used a loop to train and evaluate the estimator using each stopping criterion. We then plotted the results using different line styles for each estimator and stopping criterion.

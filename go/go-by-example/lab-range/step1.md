@@ -1,17 +1,11 @@
-# Golang Challenge: Range
+# Range
 
-## Problem
+The problem to be solved in this lab is to demonstrate how to use `range` with slices, arrays, maps, and strings.
 
-The problem to be solved in this challenge is to demonstrate how to use `range` with slices, arrays, maps, and strings.
-
-## Requirements
-
-To complete this challenge, you will need:
+To complete this lab, you will need:
 
 - Basic knowledge of Golang syntax
 - Golang installed on your machine
-
-## Example
 
 ```sh
 $ go run range.go
@@ -25,7 +19,7 @@ key: b
 1 111
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // _range_ iterates over elements in a variety of data

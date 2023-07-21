@@ -3,6 +3,8 @@ git branch -d <branch>
 ```
 
 ```shell
-git checkout master
-git branch -d patch-1 # Deletes the `patch-1` local branch
+cd git-playground
+git branch
+git branch -d feature-1 # Deletes the `feature-1` local branch
+git branch
 ```

@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we compared the performance of two popular ensemble models, Random Forest and Histogram Gradient Boosting, for a regression dataset in terms of score and computation time. We varied the parameters that control the number of trees according to each estimator and plotted the results to visualize the trade-off between elapsed computing time and mean test score. We observed that HGBT models uniformly dominate the RF models in the "test score vs training speed trade-off" and the "test score vs prediction speed" trade-off can also be more favorable to HGBT. HGBT almost always offers a more favorable speed-accuracy trade-off than RF, either with the default hyper-parameters or including the hyper-parameter tuning cost.

@@ -1,6 +1,4 @@
-# Golang Challenge: XML
-
-## Problem
+# XML
 
 You are required to create a struct named `Plant` that can be mapped to XML. The struct should have the following fields:
 
@@ -12,16 +10,12 @@ You should also create a struct named `Nesting` that contains a slice of `Plant`
 
 You should then write code to marshal the `Plant` and `Nesting` structs to XML, and unmarshal XML data into the `Plant` struct.
 
-## Requirements
-
 - The `Plant` struct should be mapped to an XML element named `plant`.
 - The `Id` field of the `Plant` struct should be mapped to an XML attribute named `id`.
 - The `Name` field of the `Plant` struct should be mapped to a nested XML element named `name`.
 - The `Origin` field of the `Plant` struct should be mapped to a nested XML element named `origin`.
 - The `Nesting` struct should be mapped to an XML element named `nesting`.
 - The `Plant` structs in the `Nesting` slice should be nested under `<parent><child>...`.
-
-## Example
 
 ```sh
 $ go run xml.go
@@ -56,7 +50,7 @@ Plant id=27, name=Coffee, origin=[Ethiopia Brazil]
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go offers built-in support for XML and XML-like

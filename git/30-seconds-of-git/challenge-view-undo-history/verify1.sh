@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git reflog"
+(cd /home/labex/project/git-playground && git reflog | grep "reset: moving to") && (cd /home/labex/project/git-playground && git log --oneline | less -R | grep "Added file2.txt") && (cd /home/labex/project/git-playground && git log --oneline | less -R | grep "Added file1.txt") && (cd /home/labex/project/git-playground && git log --oneline | less -R | grep "Initial commit") && echo "True"

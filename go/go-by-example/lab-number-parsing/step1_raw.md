@@ -2,13 +2,9 @@
 
 ## Introduction
 
-The purpose of this challenge is to demonstrate how to parse numbers from strings in Go.
+The purpose of this lab is to demonstrate how to parse numbers from strings in Go.
 
-## Problem
-
-Parsing numbers from strings is a common task in many programs. This challenge requires you to use the built-in `strconv` package to parse different types of numbers from strings.
-
-## Requirements
+Parsing numbers from strings is a common task in many programs. This lab requires you to use the built-in `strconv` package to parse different types of numbers from strings.
 
 - Use the `strconv` package to parse numbers from strings.
 - Parse a float with `ParseFloat`.
@@ -50,8 +46,6 @@ func main() {
 }
 ```
 
-## Example
-
 The output of the completed code should be:
 
 ```
@@ -65,4 +59,4 @@ strconv.Atoi: parsing "wat": invalid syntax
 
 ## Summary
 
-This challenge demonstrated how to parse different types of numbers from strings in Go using the `strconv` package. By completing this challenge, you should have a better understanding of how to handle number parsing in your Go programs.
+This lab demonstrated how to parse different types of numbers from strings in Go using the `strconv` package. By completing this lab, you should have a better understanding of how to handle number parsing in your Go programs.
