@@ -1,0 +1,3 @@
+# Interpret plots
+
+We can see that the first plot shows the signal in the time domain. The second plot shows the magnitude spectrum of the signal, which tells us the strength of the different frequency components in the signal. The third plot shows the logarithmic magnitude spectrum, which is useful for visualizing the entire spectrum when there are very large and very small values. The fourth plot shows the phase spectrum, which tells us the phase shift of each frequency component in the signal. Finally, the fifth plot shows the angle spectrum, which is similar to the phase spectrum but uses radians instead of degrees.

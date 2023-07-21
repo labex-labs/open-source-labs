@@ -14,3 +14,5 @@ Your task is to use Git's `bisect` command to find the commit that introduced a 
 6. Use `git bisect bad <commit>` to mark a different `<commit>` as "bad" indicating it has the bug.
 7. Use `git bisect run npm test` to run the `npm test` command on each subsequent commit to find which commit introduce the bug.
 8. Once the bad commit is found, use `git bisect reset` to reset to the original branch.
+
+

@@ -1,0 +1,141 @@
+{
+  "type": "lab",
+  "title": "Matplotlib Ribbon Box Tutorial",
+  "description": "Matplotlib is a popular data visualization library for Python. This tutorial will guide you through creating a ribbon box chart, a unique way to visualize data. A ribbon box chart is a stacked bar chart where each bar is \"ribbon-like\" and has a gradient color scheme.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Importing libraries and loading data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in demo-ribbon-box.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Creating the RibbonBox class",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in demo-ribbon-box.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/imread",
+          "matplotlib/get_sample_data",
+          "matplotlib/image",
+          "matplotlib/to_rgb",
+          "numpy/stack",
+          "numpy/array",
+          "python/max",
+          "python/int"
+        ]
+      },
+      {
+        "title": "Creating the RibbonBoxImage class",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in demo-ribbon-box.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/axesimage",
+          "matplotlib/set_transform",
+          "matplotlib/draw",
+          "numpy/array",
+          "numpy/shape",
+          "python/super"
+        ]
+      },
+      {
+        "title": "Creating the chart",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in demo-ribbon-box.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/bbox",
+          "matplotlib/transformedbbox",
+          "matplotlib/add_artist",
+          "matplotlib/annotate",
+          "matplotlib/xy_lim",
+          "matplotlib/imshow",
+          "matplotlib/axes",
+          "matplotlib/show",
+          "numpy/arange",
+          "numpy/zeros",
+          "python/zip",
+          "python/str"
+        ]
+      },
+      {
+        "title": "Understanding the chart",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in demo-ribbon-box.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "demo-ribbon-box.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

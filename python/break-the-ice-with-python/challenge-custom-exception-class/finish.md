@@ -1,1 +1,3 @@
 # Summary
+
+To define a custom exception class in Python, we need to create a class that inherits from the built-in Exception class. The custom exception class should take a string message as an attribute. This allows us to provide a specific error message when the exception is raised. By defining our own custom exception classes, we can create more meaningful and informative error messages for our programs.

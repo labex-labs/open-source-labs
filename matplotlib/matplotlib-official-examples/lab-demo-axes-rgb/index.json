@@ -1,0 +1,141 @@
+{
+  "type": "lab",
+  "title": "Matplotlib RGBAxes Tutorial",
+  "description": "Matplotlib is a popular data visualization library in Python. It provides various plotting tools, including 2D and 3D plotting capabilities. In this tutorial, we will use the RGBAxes module of the AxesGrid toolkit in Matplotlib to display RGB channels.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in demo-axes-rgb.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Define a function to get RGB channels",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in demo-axes-rgb.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/get_sample_data",
+          "python/function_basic",
+          "python/return_values"
+        ]
+      },
+      {
+        "title": "Define a function to create a RGB cube",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in demo-axes-rgb.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/numpy", "numpy/shape", "numpy/zeros"]
+      },
+      {
+        "title": "Create a RGBAxes plot",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in demo-axes-rgb.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/figure",
+          "matplotlib/rgbaxes",
+          "matplotlib/imshow"
+        ]
+      },
+      {
+        "title": "Create a RGBAxes plot with separate channels",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in demo-axes-rgb.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/rgbaxes",
+          "matplotlib/get_rgb",
+          "matplotlib/imshow",
+          "matplotlib/xy_ticks",
+          "matplotlib/spines",
+          "matplotlib/set_color"
+        ]
+      },
+      {
+        "title": "Display the plots",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in demo-axes-rgb.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/show"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "demo-axes-rgb.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

@@ -6,24 +6,11 @@ You are working on a project in a Git repository and have made some changes that
 
 ## Example
 
-1. Clone the Git repository named `https://github.com/labex-labs/git-playground` to your local machine.
-2. Navigate to the `git-playground` directory.
-3. Create a new file named `test.txt` and add some content to it.
-4. Use the following command to stash your changes:
-   ```
-   git stash save "Added test.txt"
-   ```
-5. Create another new file named `test2.txt` and add some content to it.
-6. Use the following command to stash your changes:
-   ```
-   git stash save "Added test2.txt"
-   ```
-7. Use the following command to list all stashes:
-   ```
-   git stash list
-   ```
-   You should see output similar to the following:
-   ```
-   stash@{0}: On master: Added test2.txt
-   stash@{1}: On master: Added test.txt
-   ```
+1. Navigate to the `git-playground` directory.
+2. List all stashes.
+
+You should see output similar to the following:
+```
+stash@{0}: On master: Added test2.txt
+stash@{1}: On master: Added test.txt
+```

@@ -17,5 +17,8 @@ git config --global -e
 ```
 
 3. The above command will open the Git configuration file in the default Git text editor. You can modify the settings as per your requirement.
-
 4. Once you have made the necessary changes, save the file and exit the editor.
+
+This is the result after completion:
+
+![<result>](./assets/challenge-edit-config-step1-1.png)

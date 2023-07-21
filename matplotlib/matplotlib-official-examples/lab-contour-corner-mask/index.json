@@ -1,0 +1,124 @@
+{
+  "type": "lab",
+  "title": "Masked Contour Plots With Matplotlib",
+  "description": "In data visualization, contour plots are commonly used to display 3-dimensional data on a 2-dimensional plane. Matplotlib is a widely used plotting library in Python that provides functionalities to create different types of plots, including contour plots. In this lab, we will learn how to create masked contour plots using Matplotlib and how to illustrate the difference between corner masks being enabled and disabled.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Importing Required Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in contour-corner-mask.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Creating Data for Plotting",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in contour-corner-mask.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/meshgrid",
+          "numpy/arange",
+          "numpy/sin",
+          "numpy/cos"
+        ]
+      },
+      {
+        "title": "Masking the Data",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in contour-corner-mask.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/numpy", "numpy/zeros", "numpy/ma", "numpy/array"]
+      },
+      {
+        "title": "Creating the Plot",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in contour-corner-mask.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/contour",
+          "matplotlib/grid_lines",
+          "matplotlib/title",
+          "matplotlib/plot",
+          "matplotlib/show",
+          "numpy/ma",
+          "python/zip"
+        ]
+      },
+      {
+        "title": "Interpretation of Results",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in contour-corner-mask.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "contour-corner-mask.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

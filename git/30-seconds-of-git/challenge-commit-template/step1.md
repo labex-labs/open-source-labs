@@ -6,11 +6,11 @@ Without a commit message template, developers may be tempted to write vague or u
 
 ## Example
 
-For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. Follow these steps to set up a commit message template for this repository:
+For this challenge, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Navigate to the repository directory using the command `cd git-playground`.
-3. Create a new file named `commit-template` in the repository directory using the command `touch commit-template`.
+1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
+2. Configure your GitHub account and navigate to the repository directory.
+3. Create a new file named `commit-template` in the repository directory.
 4. Open the `commit-template` file in a text editor and add the following lines:
 
 ```
@@ -19,13 +19,30 @@ For this challenge, we will be using the Git repository named `https://github.co
 # <body>
 
 # <footer>
+
+#This creates a template with three sections, where "<type>" indicates the type of submission, such as "feat" or "fix", "<subject>" is a short #summary describing the content of the submission, "<body>" is a more detailed description, and "<footer>" can contain other metadata, such as the #associated issue number or other comments.
 ```
 
 5. Save and close the `commit-template` file.
-6. Use the command `git config commit.template commit-template` to set the `commit-template` file as the commit message template for the repository.
-7. Make a change to the codebase using the command `echo "test" >> README.md`.
-8. Use the command `git add README.md` to stage the change.
-9. Use the command `git commit` to open the commit message editor.
-10. Notice that the commit message editor now includes the commit message template you created in step 4. Fill in the template with a type, subject, body, and footer that describe your change.
-11. Save and close the commit message editor.
-12. Use the command `git push` to push your changes to the remote repository.
+6. Set the `commit-template` file as the commit message template for the repository.
+7. Add "test" to the `README`.md file and stage the change.
+8. Open the commit message editor.
+9. Please note that the submission message editor now includes the submission message template you created in step 4. Fill in the template with a description of the type, subject, body and footer of your changes, e.g:
+
+```
+feat: Add test to README.md
+
+Add a new line to the README.md file with the text "test", to test the Git commit message template.
+
+# This change is not expected to affect any existing functionality.
+
+# Related issue(s): none
+```
+
+10. Save and close the commit message editor.
+11. Give your account permissions to the environment.
+12. Push your changes to the remote repository.
+
+Check with `git log --oneline origin/master` gives the following results:
+
+![<result>](./assets/challenge-commit-template-step1-1.png)

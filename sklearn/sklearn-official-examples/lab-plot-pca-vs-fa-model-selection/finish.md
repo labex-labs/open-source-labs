@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we explored the effectiveness of Probabilistic PCA and Factor Analysis models in model selection and covariance estimation. We created a simulated dataset with homoscedastic and heteroscedastic noise, and compared the performance of the models using cross-validation. We also compared the model likelihood to the likelihoods obtained from shrinkage covariance estimators. The results showed that both PCA and FA were effective in recovering the size of the low rank subspace in the presence of homoscedastic noise. However, PCA failed and overestimated the rank when heteroscedastic noise was present. Under appropriate circumstances, the held-out data was more likely for low rank models than for shrinkage models.
