@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-echo -n "" > readrides.py
+rm readrides.py && touch readrides.py
 cat /home/labex/project/readrides.py | grep 'open'
 cat /home/labex/project/readrides.py | grep 'reader'
 cat /home/labex/project/readrides.py | grep 'start'
