@@ -13,6 +13,7 @@ To change the last commit's author, you can use a command. This command allows y
 3. Verify that the author's information has been updated.
 
 You should see that the last commit's author is now `Duck Quackers`:
+
 ```shell
 commit d5a385cc354f3528472a215b66cbb7c628ba47d5
 Author: Duck Quackers <cool.duck@qua.ck>
