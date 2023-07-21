@@ -33,7 +33,7 @@ class SelectionSort(object):
         if data is None:
             return
         if start < len(data) - 1:
-            swap(data, start, self._find_min_index(data, start))
+            self._swap(data, start, self._find_min_index(data, start))
             self._sort_recursive(data, start + 1)
         return data
 

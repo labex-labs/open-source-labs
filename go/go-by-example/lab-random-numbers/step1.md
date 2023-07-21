@@ -1,17 +1,11 @@
 # Random Numbers
 
-## Problem
-
 You are required to write a program that generates random integers and floats within a specified range. The program should also be able to produce varying sequences of numbers by changing the seed.
-
-## Requirements
 
 - The program should use the `math/rand` package to generate random numbers.
 - The program should generate random integers within a specified range.
 - The program should generate random floats within a specified range.
 - The program should be able to produce varying sequences of numbers by changing the seed.
-
-## Example
 
 ```sh
 # Depending on where you run this sample, some of the
@@ -32,7 +26,7 @@ $ go run random-numbers.go
 # that Go can provide.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go's `math/rand` package provides

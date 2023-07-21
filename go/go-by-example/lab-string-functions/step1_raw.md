@@ -2,15 +2,11 @@
 
 ## Introduction
 
-The `strings` package in Golang provides many useful string-related functions. This challenge aims to test your understanding of some of these functions.
-
-## Problem
+The `strings` package in Golang provides many useful string-related functions. This lab aims to test your understanding of some of these functions.
 
 Complete the code below to print the output of various string functions provided by the `strings` package.
 
-## Requirements
-
-- Use the `strings` package to complete the challenge.
+- Use the `strings` package to complete the lab.
 - Use the `fmt.Println` function to print the output.
 - Do not modify the function name or parameters.
 
@@ -43,8 +39,6 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 Contains:   true
 Count:      2
@@ -62,4 +56,4 @@ ToUpper:    TEST
 
 ## Summary
 
-This challenge tests your understanding of the `strings` package in Golang. You should be able to use the various functions provided by the package to manipulate strings.
+This lab tests your understanding of the `strings` package in Golang. You should be able to use the various functions provided by the package to manipulate strings.

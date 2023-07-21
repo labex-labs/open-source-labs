@@ -1,6 +1,6 @@
 # Move Commits to a New Branch
 
-You have been working on a project in the `master` branch of the `https://github.com/labex-labs/git-playground` repository. You realize that some of the changes you made should have been made on a separate branch. You want to move these changes to a new branch called `feature-branch`.
+To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.You have been working on a project in the `master` branch of the `https://github.com/your-username/git-playground` repository. You realize that some of the changes you made should have been made on a separate branch. You want to move these changes to a new branch called `feature-branch`.
 
 1. Clone the repository, navigate to the directory and configure the identity:
 ```shell
@@ -42,3 +42,4 @@ Date:   Fri Jul 21 20:19:22 2023 +0800
 
     Added hello.txt
 ```  
+

@@ -2,13 +2,9 @@
 
 ## Introduction
 
-In some cases, Go programs need to spawn non-Go processes. This challenge aims to demonstrate how to spawn external processes in Go.
+In some cases, Go programs need to spawn non-Go processes. This lab aims to demonstrate how to spawn external processes in Go.
 
-## Problem
-
-The challenge requires the implementation of a Go program that spawns external processes and collects their output.
-
-## Requirements
+The lab requires the implementation of a Go program that spawns external processes and collects their output.
 
 - The program should be able to spawn external processes.
 - The program should be able to collect the output of the external processes.
@@ -50,8 +46,6 @@ lsCmd := exec.Command("bash", "-c", "ls -a -l -h")
 lsOut, err := lsCmd.Output()
 ```
 
-## Example
-
 ```
 > date
 Thu Sep  2 14:22:44 CST 2021
@@ -72,4 +66,4 @@ drwxr-xr-x 1 root root 4.0K Sep  2 14:22 ..
 
 ## Summary
 
-This challenge demonstrated how to spawn external processes in Go using the `exec` package. The program was able to spawn external processes that take no arguments or input, take arguments and print something to stdout, take input from stdin and print something to stdout, and take a full command with a string. The program also handled errors that may arise during the execution of the external processes.
+This lab demonstrated how to spawn external processes in Go using the `exec` package. The program was able to spawn external processes that take no arguments or input, take arguments and print something to stdout, take input from stdin and print something to stdout, and take a full command with a string. The program also handled errors that may arise during the execution of the external processes.

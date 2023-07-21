@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Class Likelihood Ratios to Measure Classification Performance",
+  "description": "In this lab, we will use scikit-learn to demonstrate how to compute the positive and negative likelihood ratios (`LR+`, `LR-`) to assess the predictive power of a binary classifier. These metrics are independent of the proportion between classes in the test set, which makes them very useful when the available data for a study has a different class proportion than the target application. We will go through the following steps:",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Preparing the Data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-likelihood-ratios.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Pre-test vs. Post-test Analysis",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-likelihood-ratios.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Cross-validation of Likelihood Ratios",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-likelihood-ratios.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Invariance with Respect to Prevalence",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in plot-likelihood-ratios.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-likelihood-ratios.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

@@ -1,10 +1,8 @@
-# Golang Challenge: XML
+# XML
 
 ## Introduction
 
-This challenge aims to test your knowledge of working with XML in Golang. You will be required to create a struct that can be mapped to XML, marshal and unmarshal XML data, and use field tags to define the structure of the XML output.
-
-## Problem
+This lab aims to test your knowledge of working with XML in Golang. You will be required to create a struct that can be mapped to XML, marshal and unmarshal XML data, and use field tags to define the structure of the XML output.
 
 You are required to create a struct named `Plant` that can be mapped to XML. The struct should have the following fields:
 
@@ -15,8 +13,6 @@ You are required to create a struct named `Plant` that can be mapped to XML. The
 You should also create a struct named `Nesting` that contains a slice of `Plant` structs. The `Nesting` struct should be mapped to an XML element named `nesting`, and the `Plant` structs should be nested under `<parent><child>...`.
 
 You should then write code to marshal the `Plant` and `Nesting` structs to XML, and unmarshal XML data into the `Plant` struct.
-
-## Requirements
 
 - The `Plant` struct should be mapped to an XML element named `plant`.
 - The `Id` field of the `Plant` struct should be mapped to an XML attribute named `id`.
@@ -73,8 +69,6 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 <plant id="27">
   <name>Coffee</name>
@@ -108,4 +102,4 @@ Plant id=27, name=Coffee, origin=[Ethiopia Brazil]
 
 ## Summary
 
-In this challenge, you learned how to work with XML in Golang. You created a struct that can be mapped to XML, marshaled and unmarshaled XML data, and used field tags to define the structure of the XML output.
+In this lab, you learned how to work with XML in Golang. You created a struct that can be mapped to XML, marshaled and unmarshaled XML data, and used field tags to define the structure of the XML output.
