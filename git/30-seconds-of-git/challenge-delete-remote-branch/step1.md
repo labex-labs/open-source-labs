@@ -6,7 +6,7 @@ Sometimes, you may need to delete a remote branch that is no longer needed. For 
 
 ## Example
 
-Suppose that a GitHub repository called `git-playground` has been cloned from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. You want to delete the remote branch named `feature-branch` that is no longer needed.
+Suppose that a GitHub repository called `git-playground` has been cloned from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. You want to delete the remote branch named `feature-branch` that is no longer needed. 
 
 1. Open the terminal and navigate to the local repository directory.
 2. Add the `feature-branch` branch to the `origin` remote repository.
@@ -15,7 +15,6 @@ Suppose that a GitHub repository called `git-playground` has been cloned from yo
 5. Verify that the remote branch has been deleted.
 
 The output should not include the `feature-branch` remote branch:
-
 ```
 origin/HEAD -> origin/master
 origin/master
