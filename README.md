@@ -14,6 +14,6 @@ You can use the [LabEx CLI](https://github.com/labex-labs/labex-cli) to create a
 
 The labs in this repository are sourced from the open-source community and have been revised to be compatible with LabEx under the terms of the agreement.
 
-The `index.json` file displays the source and open-source license for each challenge, which remains unchanged even after adaptation.
+The `index.json` file displays the source and open-source license for each lab, which remains unchanged even after adaptation.
 
 We extend our heartfelt gratitude to the original creators. ❤️
