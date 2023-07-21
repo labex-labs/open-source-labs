@@ -8,15 +8,11 @@ You are working on a project in your Git repository and have made some changes t
 
 To apply the latest stash to your Git repository, follow these steps:
 
-1. Clone the Git repository named `https://github.com/labex-labs/git-playground` to your local machine.
-2. Navigate to the `git-playground` directory.
-3. Make some changes to the `README.md` file, e.g. write "This is a new line" in the `README.md` file.
-4. Run a command to stash your changes.
-5. Run a command to see a list of your stashes. You should see one stash in the list.
-6. Run a command to apply the latest stash to your working directory.
-7. Check the `README.md` file to see that your changes have been applied.
+1. List of your stashes. You should see one stash in the list.
+2. Apply the latest stash to your working directory.
+3. Check the `README.md` file to see that your changes have been applied.
 
-This is the result after completing the challenge:
+This is the result of running the `cat README.md` command:
 
 ![<an-example-result>](./assets/challenge-apply-latest-stash-step1-1.png)
 
