@@ -3,5 +3,6 @@ git checkout <branch>
 ```
 
 ```shell
-git checkout patch-1 # Switches to the branch named `patch-1`
+cd git-playground
+git checkout feature-1 # Switches to the branch named `feature-1`
 ```

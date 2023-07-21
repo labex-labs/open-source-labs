@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your understanding of non-blocking channel operations in Golang. You will be required to implement non-blocking sends, receives, and multi-way selects using the `select` statement with a `default` clause.
+This lab aims to test your understanding of non-blocking channel operations in Golang. You will be required to implement non-blocking sends, receives, and multi-way selects using the `select` statement with a `default` clause.
 
-## Problem
-
-The problem to be solved in this challenge is to implement non-blocking channel operations using the `select` statement with a `default` clause.
-
-## Requirements
+The problem to be solved in this lab is to implement non-blocking channel operations using the `select` statement with a `default` clause.
 
 - Implement a non-blocking receive on a channel using the `select` statement with a `default` clause.
 - Implement a non-blocking send on a channel using the `select` statement with a `default` clause.
@@ -34,8 +30,6 @@ signals := make(chan bool)
 // If no value is available on either channel, print "no activity".
 ```
 
-## Example
-
 ```
 no message received
 no message sent
@@ -44,4 +38,4 @@ no activity
 
 ## Summary
 
-In this challenge, you learned how to implement non-blocking channel operations using the `select` statement with a `default` clause. You implemented a non-blocking receive, a non-blocking send, and a multi-way non-blocking select.
+In this lab, you learned how to implement non-blocking channel operations using the `select` statement with a `default` clause. You implemented a non-blocking receive, a non-blocking send, and a multi-way non-blocking select.

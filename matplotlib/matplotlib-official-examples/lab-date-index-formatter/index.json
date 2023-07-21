@@ -1,0 +1,141 @@
+{
+  "type": "lab",
+  "title": "Custom Tick Formatter for Time Series",
+  "description": "When plotting daily data such as financial time series, one often wants to leave out days on which there is no data, such as weekends. This allows the data to be plotted at regular intervals without extra spaces for the days with no data. In this lab, we will learn how to use an 'index formatter' to achieve the desired plot.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries and Data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in date-index-formatter.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/numpy",
+          "matplotlib/get_sample_data",
+          "numpy/array"
+        ]
+      },
+      {
+        "title": "Plotting Data with Default Gaps on Weekends",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in date-index-formatter.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/numpy",
+          "matplotlib/sub_plot",
+          "matplotlib/plot",
+          "matplotlib/legend",
+          "matplotlib/line2d",
+          "matplotlib/title",
+          "matplotlib/set_locator",
+          "matplotlib/set_formatter",
+          "matplotlib/dateformatter",
+          "matplotlib/rrulelocator",
+          "numpy/zeros",
+          "numpy/diff",
+          "numpy/timedelta64",
+          "numpy/stack"
+        ]
+      },
+      {
+        "title": "Creating Custom Index Formatter",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in date-index-formatter.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/plot",
+          "matplotlib/set_formatter",
+          "python/round",
+          "python/try_except"
+        ]
+      },
+      {
+        "title": "Using a Callable for Formatter",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in date-index-formatter.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/set_formatter",
+          "python/round",
+          "python/try_except"
+        ]
+      },
+      {
+        "title": "Displaying the Plot",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in date-index-formatter.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/show"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "date-index-formatter.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

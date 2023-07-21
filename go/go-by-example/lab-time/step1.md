@@ -1,15 +1,9 @@
 # Time
 
-## Problem
-
 The code below contains examples of how to work with time and duration in Go. However, some parts of the code are missing. Your task is to complete the code to make it work as expected.
-
-## Requirements
 
 - Basic knowledge of Go programming language.
 - Familiarity with Go's time and duration support.
-
-## Example
 
 ```sh
 $ go run time.go
@@ -39,7 +33,7 @@ false
 # the Unix epoch.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go offers extensive support for times and durations;
