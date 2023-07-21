@@ -29,7 +29,7 @@ def read_rides_as_tuples(filename):
 if __name__ == '__main__':
     import tracemalloc
     tracemalloc.start()
-    rows = read_rides_as_tuples('ctabus.csv')
+    rows = read_rides_as_tuples('/home/labex/project/ctabus.csv')
     print('Memory Use: Current %d, Peak %d' % tracemalloc.get_traced_memory())
 ```
 
@@ -47,4 +47,4 @@ this:
 ```
 
 Look at the resulting memory use. It should be substantially higher
-than in part (b).
+than in step 2.

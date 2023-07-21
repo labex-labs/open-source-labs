@@ -1,12 +1,12 @@
 # Data Analysis Challenge
 
-In the last exercise you just wrote some code to read CSV-data related
+In the last lab you just wrote some code to read CSV-data related
 to the Chicago Transit Authority. For example, you can grab the data
 as dictionaries like this:
 
 ```python
 >>> import readrides
->>> rows = readrides.read_rides_as_dicts('ctabus.csv')
+>>> rows = readrides.read_rides_as_dicts('/home/labex/project/ctabus.csv')
 >>>
 ```
 
@@ -14,7 +14,7 @@ It would be a shame to do all of that work and then do nothing with
 the data.
 
 In this exercise, you task is this: write a program to answer the
-following three questions:
+following four questions:
 
 1. How many bus routes exist in Chicago?
 

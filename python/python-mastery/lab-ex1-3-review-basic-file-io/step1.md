@@ -19,4 +19,4 @@ shares, and the third column is the purchase price of a single share.
 Write a program called `pcost.py` that opens this file, reads
 all lines, and calculates how much it cost to purchase all of the shares
 in the portfolio. To do this, compute the sum of the second column
-multiplied by the third column.
+multiplied by the third column. Finally, output the results of the calculation.

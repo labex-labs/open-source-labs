@@ -15,12 +15,29 @@
           {
             "name": "Test the completion of step 1",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please read the portfolio data in the \"portfolio.dat\" file and print the Floating point number of the total cost of the portfolio.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/string",
+          "python/with_statement",
+          "python/open",
+          "python/for_loop",
+          "python/list",
+          "python/int",
+          "python/float",
+          "python/try_except",
+          "python/repr",
+          "python/print"
+        ],
+        "solutions": [
+          "pcost.py"
+        ]
       },
       {
         "title": "Adding Error Handling",
@@ -29,12 +46,29 @@
           {
             "name": "Test the completion of step 2",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please use \"try\" and \"except\" to catch and print a warning message about lines that can't be parsed.",
             "timeout": 0,
-            "showstderr": false
+            "showstderr": true
           }
         ],
-        "skills": []
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/string",
+          "python/with_statement",
+          "python/open",
+          "python/for_loop",
+          "python/list",
+          "python/int",
+          "python/float",
+          "python/try_except",
+          "python/repr",
+          "python/print"
+        ],
+        "solutions": [
+          "pcost.py"
+        ]
       },
       {
         "title": "Interactive Experimentation",
@@ -43,12 +77,29 @@
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please run \"pcost.py\" program and call the \"portfolio_cost()\" function directly from the interactive interpreter.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/string",
+          "python/with_statement",
+          "python/open",
+          "python/for_loop",
+          "python/list",
+          "python/int",
+          "python/float",
+          "python/try_except",
+          "python/repr",
+          "python/print"
+        ],
+        "solutions": [
+          "pcost.py"
+        ]
       }
     ],
     "intro": {
@@ -61,7 +112,12 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "*.test.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "pcost.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },

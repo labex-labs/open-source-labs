@@ -2,7 +2,9 @@
 
 total_cost = 0.0
 
-with open("../../portfolio.dat", "r") as f:
+filePath = "/home/labex/project/portfolio.dat"
+
+with open(filePath, "r") as f:
     for line in f:
         fields = line.split()
         nshares = int(fields[1])

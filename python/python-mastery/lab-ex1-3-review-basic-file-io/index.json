@@ -15,12 +15,24 @@
           {
             "name": "Test the completion of step 1",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please calculate the data in the file as required and output the result.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/string",
+          "python/with_statement",
+          "python/open",
+          "python/for_loop",
+          "python/list",
+          "python/int",
+          "python/float",
+          "python/print"
+        ],
+        "solutions": [
+          "pcost.py"
+        ]
       }
     ],
     "intro": {
@@ -32,11 +44,6 @@
     },
     "assets": {
       "host01": [
-        {
-          "file": "",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
         {
           "file": "portfolio.dat",
           "target": "/home/labex/project",
