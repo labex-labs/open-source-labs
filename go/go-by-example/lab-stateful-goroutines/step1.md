@@ -1,10 +1,6 @@
 # Stateful Goroutines
 
-## Problem
-
-In concurrent programming, it is essential to synchronize access to shared state to avoid race conditions and data corruption. This challenge presents a scenario where a single goroutine owns the state, and other goroutines send messages to read or write the state.
-
-## Requirements
+In concurrent programming, it is essential to synchronize access to shared state to avoid race conditions and data corruption. This lab presents a scenario where a single goroutine owns the state, and other goroutines send messages to read or write the state.
 
 - Use channels to issue read and write requests to the state-owning goroutine.
 - Use `readOp` and `writeOp` structs to encapsulate requests and responses.
@@ -12,8 +8,6 @@ In concurrent programming, it is essential to synchronize access to shared state
 - Use `resp` channels to indicate success and return values.
 - Use `atomic` package to count read and write operations.
 - Use `time` package to add a delay between operations.
-
-## Example
 
 ```sh
 # Running our program shows that the goroutine-based
@@ -33,7 +27,7 @@ writeOps: 7177
 # program.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // In the previous example we used explicit locking with

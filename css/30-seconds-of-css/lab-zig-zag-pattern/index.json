@@ -1,0 +1,79 @@
+{
+  "type": "lab",
+  "title": "Zig Zag Background Pattern",
+  "description": "In this lab, we will learn how to create a zig zag background pattern using CSS. By using `linear-gradient()` and adjusting the `background-size` and `background-position`, we will be able to create a visually appealing pattern that can be used on various elements of a website. This lab will help improve our CSS skills and give us a better understanding of how to use CSS to create unique designs.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Zig Zag Background Pattern",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the running status of the web service.",
+            "file": "verify1-0.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of index.html modification.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of style.css modification.",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "css/background_color",
+          "css/background_image",
+          "css/background_size",
+          "css/background_repeat",
+          "css/linear_gradient",
+          "css/width",
+          "css/height"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
+}

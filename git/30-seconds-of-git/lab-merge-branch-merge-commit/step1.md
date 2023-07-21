@@ -2,7 +2,7 @@
 
 As a developer, you may need to merge a branch into the current branch, creating a merge commit. This can be a bit tricky if you're not familiar with Git. The problem is to merge a branch into the current branch, creating a merge commit, using the Git repository named `https://github.com/labex-labs/git-playground` directory.
 
-Suppose you are working on a project with a team of developers, and you need to merge a branch named `feature-branch` into the `master` branch. Here are the steps you would take:
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
 1. Clone a repository from `https://github.com/labex-labs/git-playground.git`:
 ```shell
@@ -14,14 +14,14 @@ cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
 ```
-3. Create an empty branch `feature-branch` and modify the `README.md` file:
+3. Create and switch to a branch called `feature-branch`:
 ```shell
 git checkout -b feature-branch
+```
+4. Add "This is a new line." to the `README.md` file, add it to the staging area and commit it, the commit message is "Add new line to README.md":
+```shell
 echo "This is a new line." >> README.md
 git add .
-```
-4. Commit all modified files to the local repository:
-```shell
 git commit -am "Add new line to README.md"
 ```
 5. Switch to the `master` branch:

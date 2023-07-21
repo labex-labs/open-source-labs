@@ -1,3 +1,4 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git add"
-cat ~/.zsh_history | grep -v grep | grep "git commit"
+(cd /home/labex/project/git-playground && git show HEAD | less -R | grep " # git-playground
+ Git Playground
++New content") && echo "True"

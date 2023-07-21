@@ -6,10 +6,10 @@ As a developer, you may need to merge a branch into the current branch, creating
 
 ## Example
 
-Suppose you are working on a project with a team of developers, and you need to merge a branch named `feature-branch` into the `master` branch. Here are the steps you would take:
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Navigate to the directory and configure the identity.
-2. Create an empty branch `feature-branch` and modify the `README.md` file.
+1. Clone the repository, navigate to the directory and configure the identity.
+2. Create and switch to a branch called `feature-branch`.
 3. Add "This is a new line." to the `README.md` file, add it to the staging area and commit it, the commit message is "Add new line to README.md".
 4. Switch to the `master` branch.
 5. Merge the `feature-branch` into the `master` branch,which will create a merge commit with the message "Merge feature-branch".
