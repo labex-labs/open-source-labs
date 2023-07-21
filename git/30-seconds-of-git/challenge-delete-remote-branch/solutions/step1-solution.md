@@ -11,6 +11,6 @@ git config --global user.email "your-email"
 git checkout -b feature-branch
 git push -u origin feature-branch
 git branch -r
-git push -d origin feature-branch # Deletes the `feature-branch` remote branch 
+git push -d origin feature-branch # Deletes the `feature-branch` remote branch
 git branch -r
 ```
