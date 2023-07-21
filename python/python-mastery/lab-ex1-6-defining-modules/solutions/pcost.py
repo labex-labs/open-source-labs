@@ -20,4 +20,4 @@ def portfolio_cost(filename):
 
 
 if __name__ == "__main__":
-    print(portfolio_cost("/home/labex/project/portfolio2.dat"))
+    print(portfolio_cost("/home/labex/project/portfolio.dat"))
