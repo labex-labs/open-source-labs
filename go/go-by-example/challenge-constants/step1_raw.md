@@ -1,4 +1,4 @@
-# Golang Challenge: Constants
+# Constants
 
 ## Introduction
 

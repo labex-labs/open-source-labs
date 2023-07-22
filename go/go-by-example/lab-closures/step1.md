@@ -1,16 +1,10 @@
 # Closures
 
-## Problem
-
 You need to create a function that returns another function. The returned function should increment a variable by one each time it is called. The variable should be unique to each returned function.
-
-## Requirements
 
 - The function `intSeq` should return another function.
 - The returned function should increment a variable by one each time it is called.
 - The variable should be unique to each returned function.
-
-## Example
 
 ```sh
 $ go run closures.go
@@ -23,7 +17,7 @@ $ go run closures.go
 # recursion.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go supports [_anonymous functions_](https://en.wikipedia.org/wiki/Anonymous_function),

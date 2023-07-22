@@ -1,6 +1,3 @@
-from __future__ import division
-
-
 class ReverseString(object):
     def reverse(self, chars):
         if chars:

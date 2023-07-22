@@ -1,4 +1,4 @@
-# Golang Challenge - {{context}}
+# {{context}}
 
 ## Introduction
 
