@@ -6,17 +6,21 @@ As a developer, you are working on a project with multiple branches. You have ma
 
 ## Example
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository to your local machine from `https://github.com/your-username/git-playground`.
-2. Switch to the `feature-branch` branch.
-3. Make some changes to the `README.md` file and commit the changes with the message "Added some changes to README.md".
+1. Navigate to the directory and configure the identity.
+2. Create and switch to a branch called `one-branch`.
+3. Add "hello,world" to the `README.md` file, add it to the staging area and commit it with the message "Added some changes to README.md".
 4. Switch to the `master` branch.
 5. Ensure that your local `master` branch is up to date with the remote repository.
-6. Rebase the `feature-branch` onto the `master` branch.
+6. Rebase the `one-branch` onto the `master` branch.
 7. Resolve any conflicts that arise during the rebase process.
-8. Push your changes to the remote repository.
 
-This is the result of running `git log -r`:
+This is the result of running `git log`:
+```shell
+commit eccff423dd6bf5335f76f2f364fa3b95130ff805 (HEAD -> master, one-branch)
+Author: xiaoshengyunan <@users.noreply.github.com>
+Date:   Sat Jul 22 23:10:04 2023 +0800
 
-![<result>](assets/challenge-rebase-onto-branch-step1-1.png)
+    Added some changes to README.md
+```
