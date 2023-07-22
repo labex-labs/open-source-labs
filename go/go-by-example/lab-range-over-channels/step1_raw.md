@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your ability to iterate over values received from a channel using the `for` and `range` syntax in Golang.
-
-## Problem
+This lab aims to test your ability to iterate over values received from a channel using the `for` and `range` syntax in Golang.
 
 You are required to write a function that takes in a channel of integers and returns the sum of all the integers received from the channel.
-
-## Requirements
 
 - The function should be named `sumInts`.
 - The function should take in a single parameter of type `chan int`.
@@ -29,8 +25,6 @@ func sumInts(c chan int) int {
 }
 ```
 
-## Example
-
 ```go
 c := make(chan int)
 go func() {
@@ -45,4 +39,4 @@ fmt.Println(sumInts(c))
 
 ## Summary
 
-In this challenge, you were tasked with writing a function that sums up all the integers received from a channel using the `for` and `range` syntax in Golang. By completing this challenge, you should have a better understanding of how to iterate over values received from a channel and how to use goroutines to receive values from a channel.
+In this lab, you were tasked with writing a function that sums up all the integers received from a channel using the `for` and `range` syntax in Golang. By completing this lab, you should have a better understanding of how to iterate over values received from a channel and how to use goroutines to receive values from a channel.

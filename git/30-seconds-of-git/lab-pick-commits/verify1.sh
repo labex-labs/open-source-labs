@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git cherry-pick"
+(cd /home/labex/project/git-playground && git checkout one-branch && git log | grep "add hello.txt") && (cd /home/labex/project/git-playground && git checkout one-branch && cat hello.txt | grep "hello,world") && (cd /home/labex/project/git-playground && git checkout master && git log | grep "add hello.txt") && (cd /home/labex/project/git-playground && git checkout master && cat hello.txt | grep "hello,world") && echo "True"

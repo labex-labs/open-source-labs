@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your understanding of Go's time and duration support.
-
-## Problem
+This lab aims to test your understanding of Go's time and duration support.
 
 The code below contains examples of how to work with time and duration in Go. However, some parts of the code are missing. Your task is to complete the code to make it work as expected.
-
-## Requirements
 
 - Basic knowledge of Go programming language.
 - Familiarity with Go's time and duration support.
@@ -67,8 +63,6 @@ fmt.Println(then.Add(diff))
 fmt.Println(then.Add(-diff))
 ```
 
-## Example
-
 ```
 2022-01-01 12:00:00.000000001 +0000 UTC m=+0.000000002
 2009-11-17 20:34:58.651387237 +0000 UTC
@@ -95,4 +89,4 @@ false
 
 ## Summary
 
-This challenge tested your ability to work with Go's time and duration support. You learned how to extract various components of a time value, compare two times, compute the length of a duration, and advance a time by a given duration.
+This lab tested your ability to work with Go's time and duration support. You learned how to extract various components of a time value, compare two times, compute the length of a duration, and advance a time by a given duration.

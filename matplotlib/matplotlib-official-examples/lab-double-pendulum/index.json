@@ -1,0 +1,183 @@
+{
+  "type": "lab",
+  "title": "Double Pendulum Simulation",
+  "description": "The double pendulum is a classic problem in physics and mathematics. It involves two pendulums attached to each other, and the motion of the second pendulum is affected by the motion of the first pendulum. In this lab, we will use Python and Matplotlib to simulate the motion of a double pendulum.",
+  "difficulty": "Beginner",
+  "time": 40,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/collections", "python/numpy"]
+      },
+      {
+        "title": "Set Up Parameters",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/variables"]
+      },
+      {
+        "title": "Define the Derivatives Function",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/zeros",
+          "numpy/sin",
+          "numpy/cos",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ]
+      },
+      {
+        "title": "Set Up Initial Conditions and Integrate the ODE",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "numpy/arange",
+          "numpy/radians",
+          "numpy/empty",
+          "python/len",
+          "python/range"
+        ]
+      },
+      {
+        "title": "Calculate the Position of Each Pendulum",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/numpy", "numpy/sin", "numpy/cos"]
+      },
+      {
+        "title": "Set Up the Plot",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/figure",
+          "matplotlib/sub_plot",
+          "matplotlib/set_aspect",
+          "matplotlib/grid_lines"
+        ]
+      },
+      {
+        "title": "Define the Animation Function",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/collections",
+          "matplotlib/plot",
+          "matplotlib/text_label",
+          "matplotlib/axes",
+          "matplotlib/text_label"
+        ]
+      },
+      {
+        "title": "Create the Animation",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "You need to practice coding in double-pendulum.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/funcanimation",
+          "matplotlib/animation",
+          "matplotlib/show",
+          "python/len"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "double-pendulum.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}
