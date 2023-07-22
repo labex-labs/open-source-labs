@@ -1,4 +1,4 @@
-# Golang Challenge: HTTP Client
+# HTTP Client
 
 ## Introduction
 

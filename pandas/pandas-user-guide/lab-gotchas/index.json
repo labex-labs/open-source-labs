@@ -1,0 +1,169 @@
+{
+  "type": "lab",
+  "title": "Pandas Basics Lab",
+  "description": "Welcome to the Pandas Basics Lab! In this lab, we will explore some fundamental aspects of the Pandas library: DataFrame memory usage, handling if/truth statements, using User Defined Function (UDF) methods, dealing with NA values, differences with NumPy, and thread-safety considerations.",
+  "difficulty": "Beginner",
+  "time": 35,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding DataFrame Memory Usage",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in gotchas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/pandas",
+          "python/numpy",
+          "numpy/random",
+          "pandas/dataframe",
+          "pandas/astype",
+          "pandas/info",
+          "python/dict",
+          "python/list_comprehension"
+        ]
+      },
+      {
+        "title": "Using if/truth Statements with Pandas",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in gotchas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/series",
+          "pandas/any",
+          "python/if_else",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Mutating with User Defined Function (UDF) Methods",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in gotchas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/dataframe",
+          "pandas/apply",
+          "python/list",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ]
+      },
+      {
+        "title": "Dealing with NA Values",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in gotchas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/series",
+          "python/list",
+          "pandas/integer",
+          "pandas/reindex"
+        ]
+      },
+      {
+        "title": "Understanding Differences with NumPy",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in gotchas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/values", "pandas/var"]
+      },
+      {
+        "title": "Considering Thread-safety in Pandas",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in gotchas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Handling Byte-ordering Issues",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice coding in gotchas.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "numpy/array",
+          "python/list",
+          "numpy/newbyteorder",
+          "numpy/byteswap",
+          "pandas/series",
+          "python/range"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "gotchas.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
+    "repo": "https://github.com/pandas-dev/pandas"
+  }
+}

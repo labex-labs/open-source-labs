@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git stash"
+(cd /home/labex/project/git-playground && ! git stash list | grep "stash@") && echo "True"
