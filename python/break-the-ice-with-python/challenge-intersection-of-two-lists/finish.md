@@ -1,0 +1,3 @@
+# Summary
+
+To find the intersection of two lists, the program uses the set intersection operation. The input lists are converted to sets using the `set()` function and then the `&` operator is used to find the common elements. The resulting set is then converted back to a list and returned as output. In the example provided, the program finds that the only common element between the two input lists is 35 and returns it as a list containing only that element.

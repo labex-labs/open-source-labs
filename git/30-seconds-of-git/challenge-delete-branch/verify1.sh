@@ -1,3 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
-cat ~/.zsh_history | grep -v grep | grep "git branch"
+(cd /home/labex/project/git-playground && ! git branch | less -R | grep "feature-1")&& echo "True"

@@ -1,3 +1,3 @@
 # Regular Expressions
 
-This challenge demonstrates how to use regular expressions in Golang.
+This lab demonstrates how to use regular expressions in Golang.

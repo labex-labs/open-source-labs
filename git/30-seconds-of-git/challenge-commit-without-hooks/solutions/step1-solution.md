@@ -7,4 +7,6 @@ git commit --no-verify -m <message>
 git add .
 git commit --no-verify -m "Unsafe commit"
 # Creates a commit with the message "Unsafe commit", without running git hooks
+
+
 ```

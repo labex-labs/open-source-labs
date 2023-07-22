@@ -1,10 +1,6 @@
 # Regular Expressions
 
-## Problem
-
-The challenge requires you to complete the code to perform various regular expression-related tasks in Golang.
-
-## Requirements
+The lab requires you to complete the code to perform various regular expression-related tasks in Golang.
 
 - Use the `regexp` package to perform regular expression-related tasks.
 - Use `MatchString` to test whether a pattern matches a string.
@@ -20,8 +16,6 @@ The challenge requires you to complete the code to perform various regular expre
 - Use `MustCompile` to create global variables with regular expressions.
 - Use `ReplaceAllString` to replace subsets of strings with other values.
 - Use `ReplaceAllFunc` to transform matched text with a given function.
-
-## Example
 
 ```sh
 $ go run regular-expressions.go
@@ -44,7 +38,7 @@ a PEACH
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go offers built-in support for [regular expressions](https://en.wikipedia.org/wiki/Regular_expression).
