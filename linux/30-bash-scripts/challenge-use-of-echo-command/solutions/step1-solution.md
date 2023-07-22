@@ -25,5 +25,8 @@ The output should be:
 
 ```bash
 Printing text with newline
-Printing text without newlineRemoving backslash characters
+Printing text without newline-e 
+Removing 	 backslash 	 characters
+
+
 ```

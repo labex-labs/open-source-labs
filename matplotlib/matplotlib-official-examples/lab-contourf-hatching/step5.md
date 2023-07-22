@@ -1,0 +1,7 @@
+# Display the Plots
+
+Finally, we will display the plots using the `show` function.
+
+```python
+plt.show()
+```

@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Catching the Exception",
+  "description": "In this lab, you will write a function to compute compute a non-zero number divided by 0 and use try/except to catch the exceptions.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Catching the Exception",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing catch_the_exception.py",
+            "file": "verify1.sh",
+            "hint": "Please trigger the ZeroDivisionError exception type and use try/except to catch and handle it",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/math_operator",
+          "python/function_basic",
+          "python/try_except",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "catch_the_exception.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

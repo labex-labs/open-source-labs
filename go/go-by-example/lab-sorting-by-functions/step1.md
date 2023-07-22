@@ -1,18 +1,12 @@
 # Sorting by Functions
 
-## Problem
-
-The problem to be solved in this challenge is to implement a custom sort function in Go that sorts a slice of strings by their length.
-
-## Requirements
+The problem to be solved in this lab is to implement a custom sort function in Go that sorts a slice of strings by their length.
 
 - The `byLength` type should be created as an alias for the `[]string` type.
 - The `sort.Interface` should be implemented on the `byLength` type.
 - The `Len` and `Swap` functions should be implemented on the `byLength` type.
 - The `Less` function should be implemented on the `byLength` type to hold the actual custom sorting logic.
 - The `main` function should convert the original `fruits` slice to `byLength`, and then use `sort.Sort` on that typed slice.
-
-## Example
 
 ```sh
 # Running our program shows a list sorted by string
@@ -27,7 +21,7 @@ $ go run sorting-by-functions.go
 # functions.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Sometimes we'll want to sort a collection by something

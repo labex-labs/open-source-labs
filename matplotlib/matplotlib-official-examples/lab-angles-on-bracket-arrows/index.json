@@ -1,0 +1,133 @@
+{
+  "type": "lab",
+  "title": "Adding Angle Annotations to Bracket Arrows in Matplotlib",
+  "description": "In this lab, you will learn how to add angle annotations to bracket arrow styles created using `FancyArrowPatch` in Matplotlib. Angle annotations are useful for indicating the direction and size of angles in a plot. By the end of this lab, you will be able to create bracket arrow styles with angle annotations and customize them to fit your specific needs.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries and set up plot",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in angles-on-bracket-arrows.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/numpy",
+          "matplotlib/sub_plot",
+          "matplotlib/title",
+          "matplotlib/set"
+        ]
+      },
+      {
+        "title": "Define a function to get the point of a rotated vertical line",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in angles-on-bracket-arrows.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "numpy/rad2deg",
+          "numpy/cos",
+          "numpy/sin"
+        ]
+      },
+      {
+        "title": "Create bracket arrows with angle annotations",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in angles-on-bracket-arrows.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/enumerate",
+          "matplotlib/arrow_patch",
+          "python/f_string",
+          "matplotlib/add_patch",
+          "matplotlib/text_label",
+          "matplotlib/hv_axline"
+        ]
+      },
+      {
+        "title": "Add angle annotation arrows and text",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in angles-on-bracket-arrows.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/zip",
+          "matplotlib/add_patch",
+          "matplotlib/arrow_patch",
+          "matplotlib/text_label"
+        ]
+      },
+      {
+        "title": "Display the plot",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in angles-on-bracket-arrows.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/show"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "angles-on-bracket-arrows.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

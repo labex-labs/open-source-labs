@@ -15,3 +15,4 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 5. Force push the changes to the remote repository.
 
 After completing these steps, `file1.txt` will be completely removed from the repository's history and after running `git log --remotes`, you will not see the commit on `file1.txt`.
+
