@@ -2,7 +2,7 @@
 
 As a developer, you are working on a project with multiple branches. You have made changes to your branch and want to incorporate those changes into another branch. However, you don't want to merge the branches because you want to maintain a clean and linear history. In this case, you can use the `git rebase` command to rebase your branch onto another branch.
 
-For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`. Follow the steps below to complete the challenge:
+For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`. Follow the steps below to complete the lab:
 
 1. Clone the repository, navigate to the directory and configure the identity:
 ```shell
