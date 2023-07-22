@@ -2,31 +2,36 @@
 
 You have added a file to the last commit that you didn't intend to include. You want to remove the file from the last commit without changing its message.
 
-To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Suppose you have a Git repository named `git-playground` with a file named `file1.txt` that you accidentally added to the last commit. Here are the steps to remove the file from the last commit:
+For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`. Suppose you have a Git repository named `git-playground` with a file named `file2.txt` that you accidentally added to the last commit. Here are the steps to remove the file from the last commit:
 
-1. Clone the repository and navigate the directory:
+1. Clone the repository, navigate to the directory and configure the identity:
 ```shell
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground
 cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
 ```
-2. Create the `git-playground.txt` file and modify the `file1.txt` file and add them to the staging area at the same time, committing them with the message "add git-playground.txt":
+2. Use `git rm --cached <file>` to remove the specified `<file>` from the index:
 ```shell
-echo "hello" > file1.txt
-echo "world" > git-playground.txt
-git add .
-git commit -m "add git-playground.txt"
+git rm --cached file2.txt
 ```
-3. Use `git rm --cached <file>` to remove the specified `<file>` from the index:
+3. Use `git commit --amend` to update the contents of the last commit, without changing its message:
 ```shell
-git rm --cached file1.txt
+git commit --amend --allow-empty
 ```
-4. Use `git commit --amend` to update the contents of the last commit, without changing its message:
+If the commit is an empty commit after deleting the file, use `--allow-empty`, otherwise you can leave it out.
+
+After running these commands, the file `file2.txt` will be removed from the last commit without changing its message.
+
+This is what happens when you remove `file2.txt` from Git version control:
 ```shell
-git commit --amend
+On branch master
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt
 ```
-
-After running these commands, the file `file1.txt` will be removed from the last commit without changing its message.
-
-This is what happens when you remove `file1.txt` from Git version control:
-
-![<result>](./assets/challenge-remove-file-from-commit-step1-1.png)
