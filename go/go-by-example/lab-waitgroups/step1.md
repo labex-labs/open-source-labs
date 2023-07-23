@@ -1,16 +1,10 @@
 # waitgroups
 
-## Problem
-
-The problem to be solved in this challenge is to launch several goroutines and increment the WaitGroup counter for each. Then, we need to wait for all the goroutines launched to finish.
-
-## Requirements
+The problem to be solved in this lab is to launch several goroutines and increment the WaitGroup counter for each. Then, we need to wait for all the goroutines launched to finish.
 
 - Basic knowledge of Golang.
 - Understanding of concurrency in Golang.
 - Familiarity with the `sync` package.
-
-## Example
 
 ```sh
 $ go run waitgroups.go
@@ -29,7 +23,7 @@ Worker 3 done
 # is likely to be different for each invocation.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // To wait for multiple goroutines to finish, we can

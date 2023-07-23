@@ -1,3 +1,3 @@
 # Timeouts
 
-The purpose of this challenge is to implement timeouts in Go using channels and `select`.
+The purpose of this lab is to implement timeouts in Go using channels and `select`.

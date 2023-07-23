@@ -1,16 +1,10 @@
 # Spawning Processes
 
-## Problem
-
-The challenge requires the implementation of a Go program that spawns external processes and collects their output.
-
-## Requirements
+The lab requires the implementation of a Go program that spawns external processes and collects their output.
 
 - The program should be able to spawn external processes.
 - The program should be able to collect the output of the external processes.
 - The program should handle errors that may arise during the execution of the external processes.
-
-## Example
 
 ```sh
 # The spawned programs return output that is the same
@@ -31,7 +25,7 @@ drwxr-xr-x 91 mark 3.0K Oct 3 12:50 ..
 -rw-r--r-- 1 mark 1.3K Oct 3 16:28 spawning-processes.go
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Sometimes our Go programs need to spawn other, non-Go

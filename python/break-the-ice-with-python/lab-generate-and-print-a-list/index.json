@@ -1,0 +1,58 @@
+{
+  "type": "lab",
+  "title": "Generate and Print a List",
+  "description": "In this lab, you will define a function which can generate and print a list where the values are square of numbers between 1 and 20 (both included).",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Generate and Print a List",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing generate_and_print_a_list.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/list",
+          "python/list_comprehension",
+          "python/range",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "generate_and_print_a_list.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}
