@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your knowledge of Go's structs, which are typed collections of fields. Structs are useful for grouping data together to form records.
+This lab aims to test your knowledge of Go's structs, which are typed collections of fields. Structs are useful for grouping data together to form records.
 
-## Problem
-
-In this challenge, you need to complete the `newPerson` function that constructs a new person struct with the given name. The `person` struct type has `name` and `age` fields.
-
-## Requirements
+In this lab, you need to complete the `newPerson` function that constructs a new person struct with the given name. The `person` struct type has `name` and `age` fields.
 
 - The `person` struct type must have `name` and `age` fields.
 - The `newPerson` function must construct a new person struct with the given name.
@@ -45,8 +41,6 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 {Bob 20}
 {Alice 30}
@@ -60,4 +54,4 @@ Sean
 
 ## Summary
 
-In this challenge, you learned how to use Go's structs to group data together to form records. You also learned how to create new structs, access struct fields, and update struct fields.
+In this lab, you learned how to use Go's structs to group data together to form records. You also learned how to create new structs, access struct fields, and update struct fields.
