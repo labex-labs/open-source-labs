@@ -14,6 +14,5 @@ git config --global user.email "your-email"
 git checkout feature-branch
 git branch -m feature-branch new-feature-1 # Renamed the local branch to `new-feature-1`
 git push origin --delete feature-branch
-git checkout new-feature-1
 git push origin -u new-feature-1 # Renames the remote branch to `new-feature-1`
 ```
