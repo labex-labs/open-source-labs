@@ -1,6 +1,3 @@
-from __future__ import division
-
-
 class Bits(object):
     MAX_BITS = 32
 
