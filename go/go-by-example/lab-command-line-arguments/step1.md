@@ -1,15 +1,9 @@
 # Command-line arguments
 
-## Problem
-
 The program currently prints out the raw command-line arguments passed to it. However, it needs to be modified to print out specific arguments based on their index.
-
-## Requirements
 
 - Basic knowledge of Golang
 - Familiarity with command-line arguments
-
-## Example
 
 ```sh
 # To experiment with command-line arguments it's best to
@@ -24,7 +18,7 @@ c
 # with flags.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // [_Command-line arguments_](https://en.wikipedia.org/wiki/Command-line_interface#Arguments)

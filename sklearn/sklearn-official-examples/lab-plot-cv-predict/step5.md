@@ -1,0 +1,3 @@
+# Interpret Results
+
+From the visualizations, we can see that the actual versus predicted plot shows a relatively linear relationship with some variation. The residuals versus predicted values plot shows a relatively random pattern with no clear trend, indicating that the linear regression model may be a good fit for the data. However, it is important to note that we used `cross_val_predict` for visualization purposes only. It would be problematic to quantitatively assess the model performance by computing a single performance metric from the concatenated predictions returned by `cross_val_predict` when the different CV folds vary by size and distributions. It is recommended to compute per-fold performance metrics using `cross_val_score` or `cross_validate` instead.

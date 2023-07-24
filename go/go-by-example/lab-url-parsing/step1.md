@@ -1,18 +1,12 @@
-# Golang Challenge: URL Parsing
+# URL Parsing
 
-## Problem
-
-The challenge requires parsing a sample URL that includes a scheme, authentication info, host, port, path, query params, and query fragment. The parsed URL should be used to extract the individual components of the URL.
-
-## Requirements
+The lab requires parsing a sample URL that includes a scheme, authentication info, host, port, path, query params, and query fragment. The parsed URL should be used to extract the individual components of the URL.
 
 - The `url` and `net` packages should be imported.
 - The sample URL should be parsed and checked for errors.
 - The scheme, authentication info, host, port, path, query params, and query fragment should be extracted from the parsed URL.
 - The `SplitHostPort` function should be used to extract the hostname and port from the `Host` field.
 - The `ParseQuery` function should be used to parse the query params into a map.
-
-## Example
 
 ```sh
 # Running our URL parsing program shows all the different
@@ -33,7 +27,7 @@ v
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // URLs provide a [uniform way to locate resources](https://adam.herokuapp.com/past/2010/3/30/urls_are_the_uniform_way_to_locate_resources/).

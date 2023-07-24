@@ -1,3 +1,3 @@
 # Constants
 
-This challenge aims to test your understanding of constants in Golang.
+This lab aims to test your understanding of constants in Golang.

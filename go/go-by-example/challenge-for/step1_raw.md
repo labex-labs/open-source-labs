@@ -1,4 +1,4 @@
-# Golang Challenge: `for`
+# `for`
 
 ## Introduction
 
