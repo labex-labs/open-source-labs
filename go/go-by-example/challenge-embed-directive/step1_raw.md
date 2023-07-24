@@ -1,4 +1,4 @@
-# Golang Challenge: Embed Directive
+# Embed Directive
 
 ## Introduction
 

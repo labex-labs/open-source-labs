@@ -1,10 +1,8 @@
-# Golang Challenge: Constants
+# Constants
 
 ## Introduction
 
-This challenge aims to test your understanding of constants in Golang.
-
-## Problem
+This lab aims to test your understanding of constants in Golang.
 
 The code below declares a constant value and performs arithmetic operations with it. Your task is to complete the TODO sections to make the code work as expected.
 
@@ -42,8 +40,6 @@ func main() {
 }
 ```
 
-## Requirements
-
 - Declare a constant named `n` with a value of `500000000`
 - Declare a constant named `d` that is equal to `3e20` divided by `n`
 - Convert `d` to an `int64` and print it
@@ -61,8 +57,6 @@ func main() {
 // TODO: Call the math.Sin function with n as its argument and print the result
 ```
 
-## Example
-
 ```
 constant
 6e+11
@@ -72,4 +66,4 @@ constant
 
 ## Summary
 
-In this challenge, you learned how to declare and use constants in Golang. Constants can be of character, string, boolean, and numeric values. Constant expressions perform arithmetic with arbitrary precision. A numeric constant has no type until it's given one, such as by an explicit conversion.
+In this lab, you learned how to declare and use constants in Golang. Constants can be of character, string, boolean, and numeric values. Constant expressions perform arithmetic with arbitrary precision. A numeric constant has no type until it's given one, such as by an explicit conversion.

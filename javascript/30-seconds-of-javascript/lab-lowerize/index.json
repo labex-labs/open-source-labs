@@ -1,0 +1,51 @@
+{
+  "type": "lab",
+  "title": "Lowercase Object Keys",
+  "description": "In this lab, we will learn how to convert all the keys of an object to lowercase using JavaScript. We will use `Object.keys()` and `Array.prototype.reduce()` to map the keys to an object and `String.prototype.toLowerCase()` to convert them to lowercase. This technique can be useful when dealing with objects that have inconsistent key casing.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Lowercase Object Keys",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Open the Terminal/SSH and type 'node'",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["js/to_lower_case", "js/arr_reduce", "js/obj_keys"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
+}

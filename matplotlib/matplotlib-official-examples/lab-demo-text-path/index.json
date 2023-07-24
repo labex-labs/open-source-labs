@@ -1,0 +1,162 @@
+{
+  "type": "lab",
+  "title": "Matplotlib TextPath",
+  "description": "The Matplotlib TextPath is a module that enables the creation of a path that outlines the characters of a text. The resulting path can be used for several purposes, such as a clip path for an image. In this lab, you will learn how to use the TextPath module to create and customize text paths for images.",
+  "difficulty": "Beginner",
+  "time": 35,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Install Matplotlib",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in demo-text-path.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "linux/pip"]
+      },
+      {
+        "title": "Import Required Libraries",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in demo-text-path.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Create a PathClippedImagePatch",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in demo-text-path.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/pathpatch",
+          "matplotlib/bboximage",
+          "matplotlib/get_extent",
+          "matplotlib/set_color",
+          "matplotlib/clip_path",
+          "matplotlib/get_transform",
+          "matplotlib/draw",
+          "python/super"
+        ]
+      },
+      {
+        "title": "Create an Offset Box",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in demo-text-path.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/auxtransformbox",
+          "matplotlib/identitytransform",
+          "matplotlib/add_artist"
+        ]
+      },
+      {
+        "title": "Create an Anchored Offset Box",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in demo-text-path.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/anchoredoffsetbox",
+          "matplotlib/add_artist"
+        ]
+      },
+      {
+        "title": "Add Another Text",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in demo-text-path.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/textpath",
+          "matplotlib/pathpatch",
+          "matplotlib/auxtransformbox",
+          "matplotlib/add_artist",
+          "matplotlib/annotationbbox"
+        ]
+      },
+      {
+        "title": "Show the Image",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice coding in demo-text-path.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/imshow", "matplotlib/show"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "demo-text-path.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}
