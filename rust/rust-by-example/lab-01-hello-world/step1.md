@@ -38,8 +38,7 @@ Hello World!
 
 ## Activity
 
-Click 'Run' above to see the expected output. Next, add a new
-line with a second `println!` macro so that the output shows:
+Run above to see the expected output. Next, add a new line with a second `println!` macro so that the output shows:
 
 ```text
 Hello World!
