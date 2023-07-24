@@ -6,7 +6,7 @@ Suppose you have made a commit to your Git repository, but you realize that it c
 
 ## Example
 
-To demonstrate how to undo a commit, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+To demonstrate how to undo a commit, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
 1. View the commit history.
 2. Select a commit with the message "Added file1.txt" and copy its identifier.
@@ -16,9 +16,13 @@ To demonstrate how to undo a commit, you will use the Git repository `git-playgr
 
 You should see a new commit that undoes the changes made by the original commit.
 
-This is the result of running the `ll` command:
-```shell
-total 8.0K
--rw-r--r-- 1 labex labex 15 Jun 24 16:02 file2.txt
--rw-r--r-- 1 labex labex 32 Jun 24 16:02 README.md
+This is the result of running the `git log` command:
+```
+commit 0d01f357a798f8960959546750d89a7e56a04a44 (HEAD -> master)
+Author: xiaoshengyunan <@users.noreply.github.com>
+Date:   Mon Jul 24 21:52:43 2023 +0800
+
+    Revert "Added file1.txt"
+    
+    This reverts commit cf80005e40a3c661eb212fcea5fad06f8283f08f.
 ```
