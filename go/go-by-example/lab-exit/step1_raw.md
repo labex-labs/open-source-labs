@@ -2,15 +2,11 @@
 
 ## Introduction
 
-The {{ exit }} challenge is designed to test your ability to use the `os.Exit` function in Go to immediately exit with a given status.
+The {{ exit }} lab is designed to test your ability to use the `os.Exit` function in Go to immediately exit with a given status.
 
-## Problem
+The problem to be solved in this lab is to exit a Go program with a specific status code using the `os.Exit` function.
 
-The problem to be solved in this challenge is to exit a Go program with a specific status code using the `os.Exit` function.
-
-## Requirements
-
-To complete this challenge, you will need to have a basic understanding of Go programming and the `os` package.
+To complete this lab, you will need to have a basic understanding of Go programming and the `os` package.
 
 ## TODO
 
@@ -29,8 +25,6 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 $ go run main.go
 $ echo $?
@@ -39,4 +33,4 @@ $ echo $?
 
 ## Summary
 
-In this challenge, you learned how to use the `os.Exit` function to immediately exit a Go program with a specific status code. Remember that unlike other programming languages, Go does not use an integer return value from `main` to indicate exit status.
+In this lab, you learned how to use the `os.Exit` function to immediately exit a Go program with a specific status code. Remember that unlike other programming languages, Go does not use an integer return value from `main` to indicate exit status.

@@ -1,4 +1,4 @@
-# Golang Challenge: Base64 Encoding
+# Base64 Encoding
 
 ## Introduction
 
