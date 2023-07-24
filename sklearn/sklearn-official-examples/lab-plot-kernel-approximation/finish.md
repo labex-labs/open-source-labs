@@ -1,0 +1,3 @@
+# Summary
+
+This lab illustrated the approximation of the feature map of an RBF kernel using RBFSampler and Nystroem to approximate the feature map of an RBF kernel for classification with an SVM on the digits dataset. Results using a linear SVM in the original space, a linear SVM using the approximate mappings and using a kernelized SVM were compared. Timings and accuracy for varying amounts of Monte Carlo samplings (in the case of RBFSampler, which uses random Fourier features) and different sized subsets of the training set (for Nystroem) for the approximate mapping were shown. Finally, decision surfaces of the classifiers were visualized projected onto the first two principal components of the data.

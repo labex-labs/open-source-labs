@@ -1,15 +1,9 @@
 # Variadic Functions
 
-## Problem
-
-In this challenge, you need to implement a function named `max` that takes an arbitrary number of integers as arguments and returns the maximum value.
-
-## Requirements
+In this lab, you need to implement a function named `max` that takes an arbitrary number of integers as arguments and returns the maximum value.
 
 - The function `max` should take an arbitrary number of integers as arguments.
 - The function `max` should return the maximum value of the integers passed as arguments.
-
-## Example
 
 ```sh
 $ go run variadic-functions.go
@@ -21,7 +15,7 @@ $ go run variadic-functions.go
 # to form closures, which we'll look at next.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // [_Variadic functions_](https://en.wikipedia.org/wiki/Variadic_function)

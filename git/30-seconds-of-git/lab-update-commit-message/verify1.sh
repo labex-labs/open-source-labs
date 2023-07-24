@@ -1,3 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git add"
-cat ~/.zsh_history | grep -v grep | grep "git commit"
+(cd /home/labex/project/git-playground && git log --oneline | grep "Fix the network bug") && (cd /home/labex/project/git-playground && ! git log --oneline | grep "Added file2.txt") && echo "True"

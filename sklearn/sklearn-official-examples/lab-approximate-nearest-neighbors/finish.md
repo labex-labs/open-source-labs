@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned how to use approximate nearest neighbors in TSNE using Python's scikit-learn library. We imported the required libraries, defined a wrapper class for `nmslib`, defined a function to load the MNIST dataset, benchmarked different nearest neighbors transformers, and visualized TSNE embeddings. We learned that the default `TSNE` estimator with its internal `NearestNeighbors` implementation is roughly equivalent to the pipeline with `TSNE` and `KNeighborsTransformer` in terms of performance. We also learned that the approximate `NMSlibTransformer` is already slightly faster than the exact search on the smallest dataset but this speed difference is expected to become more significant on datasets with a larger number of samples.
