@@ -1,0 +1,3 @@
+# Summary
+
+In this tutorial, we compared Kernel Ridge Regression (KRR) and Support Vector Regression (SVR) using Scikit-Learn. We generated a dataset consisting of a sinusoidal target function and strong noise added to every fifth datapoint. We constructed KRR and SVR models using Scikit-Learn's GridSearchCV to find the best hyperparameters. We compared the fitting and prediction times of SVR and KRR models using the best hyperparameters found. We visualized the learned model of KRR and SVR when both complexity/regularization and bandwidth of the RBF kernel are optimized using grid-search. We also visualized the time for fitting and prediction of KRR and SVR for different sizes of the training set. Finally, we visualized the learning curves of KRR and SVR.

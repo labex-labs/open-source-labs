@@ -1,8 +1,12 @@
 ```shell
 git remote set-url origin <url>
+
+git remote -v #Use the command to view the current remote URL
 ```
 
 ```shell
-git remote set-url origin https://github.com/labex-labs/git-playground
-# The remote URL is now "https://github.com/labex-labs/git-playground"
+cd git-playground
+git remote -v
+git remote set-url origin https://github.com/your-username/git-playground
+git remote -v
 ```

@@ -1,0 +1,59 @@
+{
+  "type": "challenge",
+  "title": "ASCII to UTF-8",
+  "description": "In this challenge, you will write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "ASCII to UTF-8",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing ascii_to_utf_8.py",
+            "file": "verify1.sh",
+            "hint": "Please use the input function to enter an ASCII string and to convert it to a unicode string encoded by utf-8.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/encode",
+          "python/function_basic",
+          "python/input",
+          "python/return_values",
+          "python/print"
+        ],
+        "solutions": ["ascii_to_utf_8.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "ascii_to_utf_8.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

@@ -20,4 +20,3 @@ This is the final result:
 cf80005 (HEAD -> rewind-commits, origin/rewind-commits) Added file1.txt
 b00b937 Initial commit
 ```
-

@@ -1,3 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git add"
-cat ~/.zsh_history | grep -v grep | grep "git commit"
+cd /home/labex/project/git-playground
+git log | grep "Author: John Doe"
