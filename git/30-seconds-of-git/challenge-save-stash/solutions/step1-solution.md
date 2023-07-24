@@ -18,5 +18,6 @@ git checkout -b feature
 echo "Some changes" >> README.md
 git stash save "My changes"
 git checkout master
+git checkout feature
 git stash apply
 ```

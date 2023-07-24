@@ -26,11 +26,12 @@ git stash save "My changes"
 ```shell
 git checkout master
 ```
-6. Apply your stash:
+6. When done making changes on the other branch, switch back to the `feature` branch and apply your stash:
 ```shell
 git stash apply
 ```
 
 This is the finished result:
-
-![<result>](./assets/challenge-save-stash-step1-1.png)
+```shell
+stash@{0}: On feature: My changes
+```
