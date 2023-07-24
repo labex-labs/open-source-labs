@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Intersection of Two Lists",
+  "description": "In this lab, you will write a program to make a list whose elements are intersection of the given lists.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Intersection of Two Lists",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing intersection_of_two_lists.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/math_operator",
+          "python/list",
+          "python/set",
+          "python/print"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "intersection_of_two_lists.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

@@ -1,0 +1,3 @@
+# Changing the matplotlibrc file
+
+The `matplotlibrc` file is a configuration file that allows you to customize all kinds of properties in Matplotlib. It controls the defaults for properties like figure size, line width, colors, fonts, etc. You can modify the `matplotlibrc` file to customize Matplotlib according to your preferences. The file can be located in different places on your system, and Matplotlib looks for it in a specific order. Once a `matplotlibrc` file is found, it takes precedence over other settings. You can use the `matplotlib.matplotlib_fname()` function to display the path of the currently active `matplotlibrc` file.

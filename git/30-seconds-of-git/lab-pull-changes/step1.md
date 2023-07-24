@@ -2,7 +2,7 @@
 
 You are working on a project with a team of developers, and you need to ensure that your local copy of the codebase is up to date with the latest changes made by your team members. To do this, you need to pull the latest changes from the remote repository.
 
-For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. Follow the steps below to complete the challenge:
+For this lab, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. Follow the steps below to complete the challenge:
 
 1. Clone the repository to your local machine using the following command:
 
@@ -16,16 +16,21 @@ git clone https://github.com/labex-labs/git-playground.git
 cd git-playground
 ```
 
-3. Check the status of the repository using the following command:
+3. Identify the commit hash with the commit message "Initial commit", and revert the repository to a version containing only that hash:
 
 ```shell
-git status
+git log --oneline
+git checkout b00b937
 ```
 
-4. You should see a message indicating that your local copy of the repository is behind the remote repository. To pull the latest changes from the remote repository, use the following command:
+4. Pull the latest changes from the `master` branch of the remote repository:
 
 ```shell
-git pull
+git pull origin master
 ```
 
-5. After running the `git pull` command, check the status of the repository again using the `git status` command. You should see a message indicating that your local copy of the repository is up to date with the remote repository.
+After running the `git pull` command, you should see a message indicating that your local copy of the repository is up to date with the remote repository.
+
+This is the result after pulling:
+
+![<result>](./assets/challenge-pull-changes-step1-1.png)

@@ -19,3 +19,5 @@ $ git commit --no-verify -m "Fix typo"
 ```
 
 This creates a new commit with the message "Fix typo" without running the pre-commit hook.
+
+

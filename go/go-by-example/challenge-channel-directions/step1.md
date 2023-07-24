@@ -1,4 +1,4 @@
-# Golang Challenge: Channel Directions
+# Channel Directions
 
 ## Problem
 
