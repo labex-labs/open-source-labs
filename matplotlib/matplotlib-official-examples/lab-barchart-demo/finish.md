@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned how to create a horizontal bar chart using Python's Matplotlib library. We used an example of gym teachers wanting to show parents how their child did across a handful of fitness tests, relative to other children. We defined our data using named tuples, and we defined helper functions to convert integers to ordinal strings and to create score labels for the right y-axis. We defined a plotting function that creates a horizontal bar chart of the percentile rankings for each test, relative to the student's grade and gender cohort. We then called the plotting function with our data and displayed the plot.

@@ -1,18 +1,12 @@
 # Goroutines
 
-## Problem
-
-The problem to be solved in this challenge is to create and run goroutines to execute functions concurrently.
-
-## Requirements
+The problem to be solved in this lab is to create and run goroutines to execute functions concurrently.
 
 - The `f` function should print out its input string and a counter variable three times.
 - The `main` function should call the `f` function synchronously and print out "direct" and a counter variable three times.
 - The `main` function should call the `f` function asynchronously using a goroutine and print out "goroutine" and a counter variable three times.
 - The `main` function should start a goroutine to execute an anonymous function that prints out a message.
 - The `main` function should wait for the goroutines to finish executing before printing out "done".
-
-## Example
 
 ```sh
 # When we run this program, we see the output of the
@@ -35,7 +29,7 @@ done
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // A _goroutine_ is a lightweight thread of execution.

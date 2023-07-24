@@ -1,10 +1,6 @@
 # File Paths
 
-## Problem
-
-In this challenge, you need to use the `filepath` package to perform various operations on file paths, such as constructing paths in a portable way, splitting a path into directory and file components, checking whether a path is absolute, finding the extension of a file, and finding a relative path between two paths.
-
-## Requirements
+In this lab, you need to use the `filepath` package to perform various operations on file paths, such as constructing paths in a portable way, splitting a path into directory and file components, checking whether a path is absolute, finding the extension of a file, and finding a relative path between two paths.
 
 - Use `Join` to construct paths in a portable way.
 - Use `Dir` and `Base` to split a path into directory and file components.
@@ -12,8 +8,6 @@ In this challenge, you need to use the `filepath` package to perform various ope
 - Use `Ext` to find the extension of a file.
 - Use `TrimSuffix` to remove the extension from a file name.
 - Use `Rel` to find a relative path between two paths.
-
-## Example
 
 ```sh
 $ go run file-paths.go
@@ -31,7 +25,7 @@ t/file
 
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // The `filepath` package provides functions to parse

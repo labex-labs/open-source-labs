@@ -1,14 +1,10 @@
-# Golang Challenge: Channel Directions
+# Channel Directions
 
 ## Introduction
 
-This challenge aims to test your understanding of using channels as function parameters in Golang.
+This lab aims to test your understanding of using channels as function parameters in Golang.
 
-## Problem
-
-The problem to be solved in this challenge is to modify the given code to ensure that the channels used as function parameters are specified to only send or receive values.
-
-## Requirements
+The problem to be solved in this lab is to modify the given code to ensure that the channels used as function parameters are specified to only send or receive values.
 
 - Basic knowledge of Golang
 - Understanding of channels and their usage in Golang
@@ -39,12 +35,10 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 passed message
 ```
 
 ## Summary
 
-In this challenge, you learned how to specify if a channel is meant to only send or receive values, which increases the type-safety of the program.
+In this lab, you learned how to specify if a channel is meant to only send or receive values, which increases the type-safety of the program.

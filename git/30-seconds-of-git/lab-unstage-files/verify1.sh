@@ -1,2 +1,4 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git restore"
+(cd /home/labex/project/git-playground && git status | less -R | grep 'Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        newfile.txt"') && echo "true"

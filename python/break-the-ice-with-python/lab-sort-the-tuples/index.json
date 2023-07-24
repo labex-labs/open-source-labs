@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Sort the Tuples",
+  "description": "In this lab, you will write a program to sort the (name, age, score) tuples by ascending order where name is string, age and score are numbers.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Sort the Tuples",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing sort_the_tuples.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/lambda_function",
+          "python/string",
+          "python/input"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "sort_the_tuples.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}
