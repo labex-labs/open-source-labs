@@ -4,11 +4,7 @@
 
 The `filepath` package in Golang provides functions to parse and construct file paths in a way that is portable between operating systems.
 
-## Problem
-
-In this challenge, you need to use the `filepath` package to perform various operations on file paths, such as constructing paths in a portable way, splitting a path into directory and file components, checking whether a path is absolute, finding the extension of a file, and finding a relative path between two paths.
-
-## Requirements
+In this lab, you need to use the `filepath` package to perform various operations on file paths, such as constructing paths in a portable way, splitting a path into directory and file components, checking whether a path is absolute, finding the extension of a file, and finding a relative path between two paths.
 
 - Use `Join` to construct paths in a portable way.
 - Use `Dir` and `Base` to split a path into directory and file components.
@@ -42,8 +38,6 @@ if err != nil {
     panic(err)
 }
 ```
-
-## Example
 
 ```
 p: dir1/dir2/filename

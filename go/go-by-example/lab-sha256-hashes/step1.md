@@ -1,18 +1,12 @@
 # SHA256 Hashes
 
-## Problem
-
 Given a string, compute its SHA256 hash.
-
-## Requirements
 
 - The program should import the `crypto/sha256` and `fmt` packages.
 - The program should use the `sha256.New()` function to create a new hash.
 - The program should use the `Write` function to write the bytes of the string to the hash.
 - The program should use the `Sum` function to get the finalized hash result as a byte slice.
 - The program should print the original string and the hash result in hexadecimal format.
-
-## Example
 
 ```sh
 # Running the program computes the hash and prints it in
@@ -31,7 +25,7 @@ sha256 this string
 # [hash strength](https://en.wikipedia.org/wiki/Cryptographic_hash_function)!
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // [_SHA256 hashes_](https://en.wikipedia.org/wiki/SHA-2) are

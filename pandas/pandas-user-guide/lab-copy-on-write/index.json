@@ -1,0 +1,109 @@
+{
+  "type": "lab",
+  "title": "Understanding Copy-on-Write",
+  "description": "This lab provides a step-by-step guide on understanding and implementing the concept of Copy-On-Write (CoW) in Python Pandas. CoW is an optimization strategy that enhances performance and memory usage by delaying copies as long as possible. It also helps in avoiding accidental modifications of more than one object.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Enabling Copy-On-Write",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in copy-on-write.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["pandas/set_option", "pandas/options"]
+      },
+      {
+        "title": "Understanding CoW with DataFrame",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in copy-on-write.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/options",
+          "pandas/dataframe",
+          "pandas/series",
+          "pandas/iloc",
+          "pandas/square_brackets"
+        ]
+      },
+      {
+        "title": "Understanding Chained Assignment with CoW",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in copy-on-write.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/dataframe",
+          "pandas/series",
+          "pandas/square_brackets"
+        ]
+      },
+      {
+        "title": "Implementing Chained Assignment with CoW",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in copy-on-write.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "pandas/dataframe",
+          "pandas/series",
+          "pandas/loc",
+          "pandas/square_brackets"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "copy-on-write.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
+    "repo": "https://github.com/pandas-dev/pandas"
+  }
+}

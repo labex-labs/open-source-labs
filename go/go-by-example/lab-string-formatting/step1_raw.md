@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge aims to test your knowledge of string formatting in Golang. You will be required to format different types of data such as integers, floats, strings, and structs using various formatting verbs.
-
-## Problem
+This lab aims to test your knowledge of string formatting in Golang. You will be required to format different types of data such as integers, floats, strings, and structs using various formatting verbs.
 
 You are required to format different types of data using various formatting verbs in Golang.
-
-## Requirements
 
 - You must use the `fmt` package to format the data.
 - You must use the correct formatting verb for each data type.
@@ -27,8 +23,6 @@ func stringFormatting() {
     // Left-justify and right-justify the output as required.
 }
 ```
-
-## Example
 
 ```
 struct1: {1 2}
@@ -58,4 +52,4 @@ io: an error
 
 ## Summary
 
-This challenge tested your knowledge of string formatting in Golang. You learned how to format different types of data using various formatting verbs and how to control the width and precision of the output. You also learned how to left-justify or right-justify the output.
+This lab tested your knowledge of string formatting in Golang. You learned how to format different types of data using various formatting verbs and how to control the width and precision of the output. You also learned how to left-justify or right-justify the output.

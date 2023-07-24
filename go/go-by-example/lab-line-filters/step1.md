@@ -1,16 +1,10 @@
 # Line Filters
 
-## Problem
-
-The problem to be solved in this challenge is to write a Go program that reads input text from stdin, capitalizes all the letters in the text, and then prints the modified text to stdout.
-
-## Requirements
+The problem to be solved in this lab is to write a Go program that reads input text from stdin, capitalizes all the letters in the text, and then prints the modified text to stdout.
 
 - The program must read input text from stdin.
 - The program must capitalize all the letters in the input text.
 - The program must print the modified text to stdout.
-
-## Example
 
 ```sh
 # To try out our line filter, first make a file with a few
@@ -24,7 +18,7 @@ HELLO
 FILTER
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // A _line filter_ is a common type of program that reads
