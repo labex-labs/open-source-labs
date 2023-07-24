@@ -1,16 +1,10 @@
 # Functions
 
-## Problem
-
 In the given code, we have two functions `plus` and `plusPlus`. The `plus` function takes two integers as arguments and returns their sum. The `plusPlus` function takes three integers as arguments and returns their sum. Your task is to complete the `plusPlus` function by adding the third integer to the sum of the first two integers.
-
-## Requirements
 
 - The `plus` function should take two integers as arguments and return their sum as an integer.
 - The `plusPlus` function should take three integers as arguments and return their sum as an integer.
 - The `plusPlus` function should use the `plus` function to calculate the sum of the first two integers.
-
-## Example
 
 ```sh
 $ go run functions.go
@@ -21,7 +15,7 @@ $ go run functions.go
 # multiple return values, which we'll look at next.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // _Functions_ are central in Go. We'll learn about

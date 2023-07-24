@@ -8,11 +8,12 @@ Suppose you have made a commit to your Git repository, but you realize that it c
 
 To demonstrate how to undo a commit, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. View the commit history.
-2. Select a commit with the message "Added file1.txt" and copy its identifier.
-3. Revert the commit and Git will open a text editor and let you enter a commit message, leaving the default message in place.
-4. Save and close the text editor.
-5. View the commit history again.
+1. Navigate to the repository directory and configure your GitHub identity.
+2. View the commit history.
+3. Select a commit with the message "Added file1.txt" and copy its identifier.
+4. Revert the commit and Git will open a text editor and let you enter a commit message, leaving the default message in place.
+5. Save and close the text editor.
+6. View the commit history again.
 
 You should see a new commit that undoes the changes made by the original commit.
 

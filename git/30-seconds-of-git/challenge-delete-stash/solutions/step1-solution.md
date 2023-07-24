@@ -3,5 +3,8 @@ git stash drop <stash>
 ```
 
 ```shell
-git stash drop stash@{1} # Deletes `stash@{1}`
+cd git-playground
+git stash list
+git stash drop stash@{0} # Deletes `stash@{0}`
+git stash list
 ```
