@@ -1,57 +1,64 @@
 {
-    "type": "challenge",
-    "title": "List Union Challenge",
-    "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to combine two lists and remove any duplicates to get a new list containing all the unique elements. This process is called list union. In this challenge, you will be asked to write a Python function that takes two lists as input and returns a new list containing all the unique elements from both lists.",
-    "difficulty": "Beginner",
-    "time": 15,
-    "details": {
-        "steps": [
-            {
-                "title": "List Union Challenge",
-                "text": "step1.md",
-                "verify": [
-                    {
-                        "name": "Check the answer",
-                        "file": "verify1.sh",
-                        "hint": "Please make sure you have completed the required actions.",
-                        "timeout": 0,
-                        "showstderr": true
-                    }
-                ],
-                "skills": [],
-                "solutions": [
-                    "union.py"
-                ]
-            }
+  "type": "challenge",
+  "title": "List Union Challenge",
+  "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to combine two lists and remove any duplicates to get a new list containing all the unique elements. This process is called list union. In this challenge, you will be asked to write a Python function that takes two lists as input and returns a new list containing all the unique elements from both lists.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "List Union Challenge",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the answer",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
         ],
-        "intro": {
-            "text": "intro.md",
-            "background": "setup.sh"
+        "skills": [
+          "python/set",
+          "python/list",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": ["union.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_union.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
         },
-        "finish": {
-            "text": "finish.md"
-        },
-        "assets": {
-            "host01": [
-                {
-                    "file": "test_union.py",
-                    "target": "/tmp",
-                    "chmod": "ugo+rwx"
-                },
-                {
-                    "file": "union.py",
-                    "target": "/home/labex/project",
-                    "chmod": "ugo+rwx"
-                }
-            ]
+        {
+          "file": "union.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
         }
-    },
-    "backend": {
-        "imageid": "webide-ubuntu:2204"
-    },
-    "license": {
-        "name": "CC-BY-4.0",
-        "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
-        "repo": "https://github.com/30-seconds/30-seconds-of-python"
+      ]
     }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812", "jiaosenvip"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-python"
+  }
 }
