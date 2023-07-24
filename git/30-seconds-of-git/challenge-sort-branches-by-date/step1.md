@@ -6,10 +6,10 @@ You have a Git repository with multiple branches, and you want to sort them by d
 
 ## Example
 
-To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository and navigate to the directory.
-2. Create a branch called `one`, modify the code and commit it.
+1. Navigate to the repository directory and configure your GitHub identity .
+2. Create a branch called `one`, create a file named `hello.txt` and commit it with the commit message "hello.txt".
 3. Switch to the branch named `master` and create a branch named `two`.
 4. Now, sort the branches by date.
 
