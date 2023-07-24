@@ -2,15 +2,11 @@
 
 ## Introduction
 
-This challenge focuses on Go strings and runes. In Go, strings are read-only slices of bytes, and runes are integers that represent Unicode code points. This challenge will explore how to work with strings and runes in Go.
+This lab focuses on Go strings and runes. In Go, strings are read-only slices of bytes, and runes are integers that represent Unicode code points. This lab will explore how to work with strings and runes in Go.
 
-## Problem
+The problem to be solved in this lab is to understand how to work with strings and runes in Go. Specifically, the lab will cover how to get the length of a string, how to index into a string, how to count the number of runes in a string, and how to iterate over the runes in a string.
 
-The problem to be solved in this challenge is to understand how to work with strings and runes in Go. Specifically, the challenge will cover how to get the length of a string, how to index into a string, how to count the number of runes in a string, and how to iterate over the runes in a string.
-
-## Requirements
-
-To complete this challenge, you will need:
+To complete this lab, you will need:
 
 - A basic understanding of Go syntax
 - Knowledge of Go strings and runes
@@ -21,8 +17,6 @@ To complete this challenge, you will need:
 Complete the following code blocks marked with `TODO`:
 
 - `examineRune` function
-
-## Example
 
 ```
 Len: 12
@@ -47,4 +41,4 @@ U+0E19 'น' starts at 15
 
 ## Summary
 
-This challenge covered how to work with Go strings and runes. It demonstrated how to get the length of a string, how to index into a string, how to count the number of runes in a string, and how to iterate over the runes in a string. By completing this challenge, you should have a better understanding of how to work with strings and runes in Go.
+This lab covered how to work with Go strings and runes. It demonstrated how to get the length of a string, how to index into a string, how to count the number of runes in a string, and how to iterate over the runes in a string. By completing this lab, you should have a better understanding of how to work with strings and runes in Go.

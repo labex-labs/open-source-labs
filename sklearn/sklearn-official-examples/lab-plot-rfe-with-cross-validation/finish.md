@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we went through the process of implementing Recursive Feature Elimination with Cross-Validation (RFECV) using scikit-learn. We generated a classification task with 15 features, out of which 3 were informative, 2 were redundant, and 10 were non-informative. We used logistic regression as the estimator and stratified k-fold cross-validation with 5 folds. We plotted the number of features selected against the cross-validation scores. We found that the optimal number of features was 3, which corresponded to the true generative model. We also noticed a plateau of equivalent scores for 3 to 5 selected features due to the introduction of correlated features.

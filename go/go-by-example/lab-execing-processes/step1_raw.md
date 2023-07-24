@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge focuses on replacing the current Go process with another process using Go's implementation of the classic `exec` function.
-
-## Problem
+This lab focuses on replacing the current Go process with another process using Go's implementation of the classic `exec` function.
 
 The problem is to replace the current Go process with another process, such as a non-Go process.
-
-## Requirements
 
 - Go programming language
 - Basic knowledge of Go's `exec` function
@@ -46,8 +42,6 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 $ go run main.go
 total 16
@@ -58,4 +52,4 @@ drwxr-xr-x  5 user  staff   160B Aug  4 16:29 ..
 
 ## Summary
 
-In this challenge, we learned how to replace the current Go process with another process using Go's implementation of the classic `exec` function. This can be useful when we need to execute a non-Go process from within a Go program.
+In this lab, we learned how to replace the current Go process with another process using Go's implementation of the classic `exec` function. This can be useful when we need to execute a non-Go process from within a Go program.

@@ -1,16 +1,10 @@
 # String Functions
 
-## Problem
-
 Complete the code below to print the output of various string functions provided by the `strings` package.
 
-## Requirements
-
-- Use the `strings` package to complete the challenge.
+- Use the `strings` package to complete the lab.
 - Use the `fmt.Println` function to print the output.
 - Do not modify the function name or parameters.
-
-## Example
 
 ```sh
 $ go run string-functions.go
@@ -28,7 +22,7 @@ ToLower: test
 ToUpper: TEST
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // The standard library's `strings` package provides many

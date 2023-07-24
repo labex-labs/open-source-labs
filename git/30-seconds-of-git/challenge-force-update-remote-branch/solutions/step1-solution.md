@@ -3,11 +3,13 @@ git push -f
 ```
 
 ```shell
-git checkout patch-1
-git pull
-git rebase master
-# Local `patch-1` branch has been rebased onto `master`, thus diverging
-# from the remote `patch-1` branch
-
-git push -f # Force update the remote `patch-1` branch
+# Fork from https://github.com/labex-labs/git-playground.git
+git clone https://github.com/your-username/git-playground.git
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+git commit --amend # Update the commit message to "Update file2.txt".
+git push
+git push -f origin master
+git log
 ```
