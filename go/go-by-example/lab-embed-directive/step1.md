@@ -1,17 +1,11 @@
-# Golang Challenge: Embed Directive
-
-## Problem
+# Embed Directive
 
 Your task is to modify the given code to embed files and folders into the Go binary and print their contents.
-
-## Requirements
 
 - You must use the `embed` package to embed files and folders.
 - You must use the `string` and `[]byte` types to store the contents of the embedded files.
 - You must use the `embed.FS` type to embed multiple files or folders with wildcards.
 - You must print the contents of the embedded files.
-
-## Example
 
 ```sh
 # Use these commands to run the example.
@@ -29,7 +23,7 @@ hello go
 456
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // `//go:embed` is a [compiler

@@ -2,13 +2,9 @@
 
 ## Introduction
 
-The purpose of this challenge is to implement timeouts in Go using channels and `select`.
+The purpose of this lab is to implement timeouts in Go using channels and `select`.
 
-## Problem
-
-When programs connect to external resources or need to bound execution time, timeouts are important. The challenge is to implement timeouts in Go using channels and `select`.
-
-## Requirements
+When programs connect to external resources or need to bound execution time, timeouts are important. The lab is to implement timeouts in Go using channels and `select`.
 
 - Implement timeouts in Go using channels and `select`.
 - Use a buffered channel to prevent goroutine leaks in case the channel is never read.
@@ -58,8 +54,6 @@ case <-time.After(3 * time.Second):
 }
 ```
 
-## Example
-
 ```
 result 1
 result 2
@@ -67,4 +61,4 @@ result 2
 
 ## Summary
 
-In this challenge, we learned how to implement timeouts in Go using channels and `select`. We used a buffered channel to prevent goroutine leaks in case the channel is never read, and `time.After` to await a value to be sent after the timeout. We also used `select` to proceed with the first receive that's ready.
+In this lab, we learned how to implement timeouts in Go using channels and `select`. We used a buffered channel to prevent goroutine leaks in case the channel is never read, and `time.After` to await a value to be sent after the timeout. We also used `select` to proceed with the first receive that's ready.
