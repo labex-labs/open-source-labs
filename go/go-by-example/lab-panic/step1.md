@@ -1,16 +1,10 @@
 # Panic
 
-## Problem
-
-The challenge requires you to use the `panic` function to fail fast on errors that shouldn't occur during normal operation or that you aren't prepared to handle gracefully.
-
-## Requirements
+The lab requires you to use the `panic` function to fail fast on errors that shouldn't occur during normal operation or that you aren't prepared to handle gracefully.
 
 - Basic knowledge of Golang programming language.
 - Familiarity with error handling in Golang.
 - Understanding of the `panic` function in Golang.
-
-## Example
 
 ```sh
 # Running this program will cause it to panic, print
@@ -34,7 +28,7 @@ exit status 2
 # to use error-indicating return values wherever possible.
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // A `panic` typically means something went unexpectedly

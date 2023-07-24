@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned about selecting the best hyperparameter alpha for Lasso regression models. We discussed two approaches: (1) selecting the optimal value of alpha by only using the training set and some information criterion, and (2) selecting the best hyperparameter using cross-validation. We used the diabetes dataset in this example. Both approaches can work similarly, but in-sample hyperparameter selection shows its efficacy in terms of computational performance. However, it can only be used when the number of samples is large enough compared to the number of features. Hyperparameter optimization via cross-validation is a safe strategy that works in different settings.
