@@ -6,13 +6,13 @@ You have just committed changes to your Git repository, but you realize that you
 
 ## Example
 
-To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
 1. Check the commit history.
 2. Undo the last commit, creating a new commit with the inverse of the commit's changes.
 
 This is the result of running the `git log --oneline` command:
-```
+```shell
 532b49b (HEAD -> master) Revert "Added file2.txt"
 d22f46b (origin/master, origin/HEAD) Added file2.txt
 cf80005 Added file1.txt
