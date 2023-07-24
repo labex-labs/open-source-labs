@@ -1,18 +1,12 @@
 # String Formatting
 
-## Problem
-
 You are required to format different types of data using various formatting verbs in Golang.
-
-## Requirements
 
 - You must use the `fmt` package to format the data.
 - You must use the correct formatting verb for each data type.
 - You must be able to format integers, floats, strings, and structs.
 - You must be able to control the width and precision of the output.
 - You must be able to left-justify or right-justify the output.
-
-## Example
 
 ```sh
 $ go run string-formatting.go
@@ -41,7 +35,7 @@ width1: | 12 | 345 \
 io: an error
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Go offers excellent support for string formatting in

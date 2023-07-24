@@ -1,0 +1,58 @@
+{
+  "type": "lab",
+  "title": "Square each Odd Number",
+  "description": "In this lab, you will use a list comprehension to square each odd number in a list.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Square each Odd Number",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing square_each_odd_number.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/string",
+          "python/list_comprehension",
+          "python/math_operator",
+          "python/input",
+          "python/function_basic"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "square_each_odd_number.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

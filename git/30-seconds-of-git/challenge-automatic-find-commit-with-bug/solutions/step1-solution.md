@@ -14,3 +14,5 @@ git bisect run npm test # Run `npm test` for each commit
 # ... some time later the bad commit will be printed
 git bisect reset # Goes to the original branch
 ```
+
+

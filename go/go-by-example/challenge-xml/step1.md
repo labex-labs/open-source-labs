@@ -1,4 +1,4 @@
-# Golang Challenge: XML
+# XML
 
 ## Problem
 

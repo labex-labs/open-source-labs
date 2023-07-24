@@ -1,8 +1,6 @@
 ```shell
 git status [-sb]
-```
 
-```shell
 git status
 # On branch patch-1
 # Your branch is up to date with 'origin/patch-1'.
@@ -16,4 +14,9 @@ git status
 git status -sb
 # ## patch-1...origin/patch-1
 # ?? git-playground.txt
+```
+
+```shell
+cd git-playground
+git status
 ```

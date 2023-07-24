@@ -2,13 +2,9 @@
 
 ## Introduction
 
-In Golang, closing a channel can be used to communicate completion to the channel's receivers. This challenge will demonstrate how to use a channel to communicate work to be done from the `main()` goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker.
+In Golang, closing a channel can be used to communicate completion to the channel's receivers. This lab will demonstrate how to use a channel to communicate work to be done from the `main()` goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker.
 
-## Problem
-
-In this challenge, you need to modify the given code to close the `jobs` channel when there are no more jobs for the worker. You also need to use the `done` channel to notify when all the jobs have been completed.
-
-## Requirements
+In this lab, you need to modify the given code to close the `jobs` channel when there are no more jobs for the worker. You also need to use the `done` channel to notify when all the jobs have been completed.
 
 - Use a buffered channel `jobs` to communicate work to be done from the `main()` goroutine to a worker goroutine.
 - Use a channel `done` to notify when all the jobs have been completed.
@@ -55,8 +51,6 @@ fmt.Println("sent all jobs")
 <-done
 ```
 
-## Example
-
 ```
 sent job 1
 received job 1
@@ -70,4 +64,4 @@ received all jobs
 
 ## Summary
 
-In this challenge, you learned how to use a channel to communicate work to be done from the `main()` goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker. You also learned how to use the `done` channel to notify when all the jobs have been completed.
+In this lab, you learned how to use a channel to communicate work to be done from the `main()` goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker. You also learned how to use the `done` channel to notify when all the jobs have been completed.
