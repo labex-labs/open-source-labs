@@ -35,3 +35,4 @@ This is the finished result:
 ```shell
 stash@{0}: On feature: My changes
 ```
+

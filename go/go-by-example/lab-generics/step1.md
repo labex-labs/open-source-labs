@@ -1,10 +1,6 @@
 # Generics
 
-## Problem
-
-The problem to be solved in this challenge is to understand how to define and use generic functions and types in Golang.
-
-## Requirements
+The problem to be solved in this lab is to understand how to define and use generic functions and types in Golang.
 
 - Understand the concept of generics in Golang.
 - Know how to define generic functions with type parameters and constraints.
@@ -12,15 +8,13 @@ The problem to be solved in this challenge is to understand how to define and us
 - Understand how to define methods on generic types.
 - Know how to invoke generic functions with type inference.
 
-## Example
-
 ```sh
 $ go run generics.go
 keys: [4 1 2]
 list: [10 13 23]
 ```
 
-## Solution
+There is the full code below:
 
 ```go
 // Starting with version 1.18, Go has added support for

@@ -1,0 +1,3 @@
+# Summary
+
+This lab demonstrated how to use quantile regression to create prediction intervals using scikit-learn. We generated synthetic data for a regression problem, applied the function to it, and created observations of the target using a lognormal distribution. We split the data into training and test datasets, fit non-linear quantile and least squares regressors, and created an evenly spaced evaluation set of input values spanning the [0, 10] range. We compared the predicted median with the predicted mean, analyzed the error metrics, and calibrated the confidence interval. Finally, we tuned the hyper-parameters of the quantile regressors.

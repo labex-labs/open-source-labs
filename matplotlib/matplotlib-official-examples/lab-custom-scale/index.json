@@ -1,0 +1,144 @@
+{
+  "type": "lab",
+  "title": "Custom Mercator Latitude Scale in Matplotlib",
+  "description": "Matplotlib is a powerful data visualization library for Python. It provides a number of built-in scales for plotting data, but sometimes you may need a custom scale for your specific use case. In this lab, we will show you how to create a custom scale that uses the Mercator projection for latitude data.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in custom-scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Define the MercatorLatitudeScale class",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in custom-scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/scalebase", "python/class"]
+      },
+      {
+        "title": "Implement the MercatorLatitudeTransform class",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in custom-scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/transform",
+          "numpy/ma",
+          "numpy/log",
+          "numpy/tan",
+          "numpy/cos"
+        ]
+      },
+      {
+        "title": "Implement the InvertedMercatorLatitudeTransform class",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in custom-scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/transform",
+          "numpy/arctan",
+          "numpy/sinh"
+        ]
+      },
+      {
+        "title": "Register the custom scale",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in custom-scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "matplotlib/register_scale"]
+      },
+      {
+        "title": "Use the custom scale",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in custom-scale.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "numpy/radians",
+          "numpy/arange",
+          "matplotlib/plot",
+          "matplotlib/xy_scale",
+          "matplotlib/xy_label",
+          "matplotlib/title",
+          "matplotlib/grid_lines",
+          "matplotlib/show"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "custom-scale.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}
