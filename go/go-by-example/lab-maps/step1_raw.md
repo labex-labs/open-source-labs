@@ -2,13 +2,9 @@
 
 ## Introduction
 
-In Go, maps are built-in associative data types that allow you to store key/value pairs. This challenge will test your ability to create, manipulate, and delete key/value pairs in a map.
+In Go, maps are built-in associative data types that allow you to store key/value pairs. This lab will test your ability to create, manipulate, and delete key/value pairs in a map.
 
-## Problem
-
-In this challenge, you will need to create a map that stores the number of times each word appears in a given string. You will need to split the string into words, and then iterate over each word, adding it to the map if it doesn't already exist, or incrementing its count if it does.
-
-## Requirements
+In this lab, you will need to create a map that stores the number of times each word appears in a given string. You will need to split the string into words, and then iterate over each word, adding it to the map if it doesn't already exist, or incrementing its count if it does.
 
 - You must use a map to store the word counts.
 - You must split the input string into words.
@@ -27,8 +23,6 @@ func wordCount(s string) map[string]int {
 }
 ```
 
-## Example
-
 ```go
 fmt.Println(wordCount("hello world hello")) // Output: map[hello:2 world:1]
 fmt.Println(wordCount("the quick brown fox jumps over the lazy dog")) // Output: map[the:2 quick:1 brown:1 fox:1 jumps:1 over:1 lazy:1 dog:1]
@@ -36,4 +30,4 @@ fmt.Println(wordCount("the quick brown fox jumps over the lazy dog")) // Output:
 
 ## Summary
 
-In this challenge, you learned how to use maps in Go to store key/value pairs. You also learned how to split a string into words, iterate over each word, and add it to a map. By completing this challenge, you should have a better understanding of how to use maps in your Go programs.
+In this lab, you learned how to use maps in Go to store key/value pairs. You also learned how to split a string into words, iterate over each word, and add it to a map. By completing this lab, you should have a better understanding of how to use maps in your Go programs.

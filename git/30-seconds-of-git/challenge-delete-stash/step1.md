@@ -6,10 +6,9 @@ You have a Git repository named `https://github.com/labex-labs/git-playground`. 
 
 ## Example
 
-1. Clone the Git repository using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Change to the repository directory using the command `cd git-playground`.
-3. Create a new file named `test.txt` and add some content to it.
-4. Save the changes to a stash using the command `git stash save "my stash"`.
-5. List all stashes using the command `git stash list`. You should see the stash you just created.
-6. Delete the stash using the command `git stash drop stash@{0}`.
-7. List all stashes again using the command `git stash list`. The stash you just deleted should no longer be there.
+1. Change to the repository directory.
+2. List all stashes. You should see the current stash.
+3. Delete the stash.
+4. List all stashes again.
+
+The stash you just deleted should no longer be there.

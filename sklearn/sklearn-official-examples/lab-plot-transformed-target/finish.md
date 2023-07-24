@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we learned how to use the TransformedTargetRegressor from the scikit-learn library. We applied it to two different datasets to observe the benefits of transforming the target values before training a linear regression model. We used synthetic data and the Ames housing data set to illustrate the impact of transforming the target values. We observed that the logarithmic function linearized the targets, allowing better prediction even with a similar linear model as reported by the median absolute error (MedAE). We also observed that the effect of the transformer was weaker for the Ames housing data set, but still resulted in an increase in R2 and a large decrease of the MedAE.
