@@ -1,0 +1,108 @@
+{
+  "type": "lab",
+  "title": "Kernel Approximation",
+  "description": "This tutorial will guide you through the process of using kernel approximation techniques in scikit-learn.\n\nKernel methods, such as support vector machines (SVM), are powerful techniques for non-linear classification. These methods rely on the concept of a kernel function that maps input data into a high-dimensional feature space. However, working with explicit feature mappings can be computationally expensive, especially for large datasets. Kernel approximation methods provide a solution by generating low-dimensional approximations of the kernel feature space.\n\nIn this tutorial, we will explore several kernel approximation techniques available in scikit-learn, including the Nystroem method, Radial Basis Function (RBF) kernel approximation, Additive Chi Squared (ACS) kernel approximation, Skewed Chi Squared (SCS) kernel approximation, and Polynomial kernel approximation using Tensor Sketch. We will demonstrate how to use these techniques and discuss their advantages and limitations.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Nystroem Method for Kernel Approximation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in 39-kernel-approximation.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Radial Basis Function (RBF) Kernel Approximation",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in 39-kernel-approximation.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Additive Chi Squared (ACS) Kernel Approximation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in 39-kernel-approximation.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Skewed Chi Squared (SCS) Kernel Approximation",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in 39-kernel-approximation.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Polynomial Kernel Approximation via Tensor Sketch",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in 39-kernel-approximation.ipynb.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "39-kernel-approximation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

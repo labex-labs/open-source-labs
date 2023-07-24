@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we demonstrated how to robustly fit a linear model to faulty data using the RANSAC algorithm in scikit-learn. We generated random data using the make_regression dataset, added outliers to the data, fit both a linear model and a RANSAC regressor to the data, predicted the data of the two models, compared their estimated coefficients, and visualized the results. The RANSAC regressor automatically splits the data into inliers and outliers, and the fitted line is determined only by the identified inliers, making it a more robust method for fitting models to data with outliers.

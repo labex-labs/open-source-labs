@@ -2,15 +2,11 @@
 
 ## Introduction
 
-The Slices challenge is designed to test your knowledge of the slice data type in Go. Slices are a more powerful interface to sequences than arrays, and this challenge will help you understand how to use them.
+The Slices lab is designed to test your knowledge of the slice data type in Go. Slices are a more powerful interface to sequences than arrays, and this lab will help you understand how to use them.
 
-## Problem
+The problem to be solved in this lab is to create and manipulate slices in Go. You will need to create an empty slice with non-zero length, set and get values in the slice, use the `len` function to get the length of the slice, use the `append` function to add new values to the slice, use the `copy` function to copy a slice, and use the slice operator to get a slice of elements from an existing slice.
 
-The problem to be solved in this challenge is to create and manipulate slices in Go. You will need to create an empty slice with non-zero length, set and get values in the slice, use the `len` function to get the length of the slice, use the `append` function to add new values to the slice, use the `copy` function to copy a slice, and use the slice operator to get a slice of elements from an existing slice.
-
-## Requirements
-
-To complete this challenge, you will need to have a basic understanding of Go syntax and the slice data type. You will also need to be familiar with the `make`, `append`, and `copy` functions, as well as the slice operator.
+To complete this lab, you will need to have a basic understanding of Go syntax and the slice data type. You will also need to be familiar with the `make`, `append`, and `copy` functions, as well as the slice operator.
 
 ## TODO
 
@@ -48,8 +44,6 @@ l := s[TODO:TODO]
 fmt.Println("l:", TODO)
 ```
 
-## Example
-
 ```
 emp: [  ]
 set: [a b c]
@@ -66,4 +60,4 @@ dcl: [g h i]
 
 ## Summary
 
-The Slices challenge is designed to test your knowledge of the slice data type in Go. By completing this challenge, you will gain a better understanding of how to create and manipulate slices in Go, including how to set and get values in a slice, use the `len` function, use the `append` and `copy` functions, and use the slice operator.
+The Slices lab is designed to test your knowledge of the slice data type in Go. By completing this lab, you will gain a better understanding of how to create and manipulate slices in Go, including how to set and get values in a slice, use the `len` function, use the `append` and `copy` functions, and use the slice operator.
