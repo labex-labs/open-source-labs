@@ -8,7 +8,7 @@ You have a Git repository with multiple branches, and you want to sort them by d
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Navigate to the repository directory and configure your GitHub identity .
+1. Clone the repository, navigate to the directory and configure the identity.
 2. Create a branch called `one`, create a file named `hello.txt` and commit it with the commit message "hello.txt".
 3. Switch to the branch named `master` and create a branch named `two`.
 4. Now, sort the branches by date.
