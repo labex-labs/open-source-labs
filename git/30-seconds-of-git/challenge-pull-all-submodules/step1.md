@@ -6,4 +6,5 @@ You have a Git repository with submodules that need to be updated from their res
 
 ## Example
 
-Assuming you have a Git repository named `git-playground` that contains submodules, you can pull all submodules from their respective remotes.This command updates all submodules in the repository to the latest version available in their respective remotes.
+Assuming you have a Git repository named `git` that contains submodules, you can pull all submodules from their respective remotes.This command updates all submodules in the repository to the latest version available in their respective remotes.
+
