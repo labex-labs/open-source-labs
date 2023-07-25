@@ -9,7 +9,7 @@ First, run the program as main:
 
 ```bash
 python3 pcost.py
-44671.25
+44671.15
 ```
 
 Next, run the program as a library import. You should not see any

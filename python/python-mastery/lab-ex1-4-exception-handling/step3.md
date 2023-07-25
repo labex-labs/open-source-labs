@@ -5,9 +5,9 @@ Run your `pcost.py` program and call the
 interpreter.
 
 ```python
->>> portfolio_cost('portfolio.dat')
+>>> portfolio_cost('/home/labex/project/portfolio.dat')
 44671.15
->>> portfolio_cost('portfolio2.dat')
+>>> portfolio_cost('/home/labex/project/portfolio2.dat')
 19908.75
 >>>
 ```

@@ -11,7 +11,7 @@ with bad data. For example, the conversion functions `int()` and
 input. Use `try` and `except` to catch and print a warning message
 about lines that can't be parsed. For example:
 
-```
+```shell
 Couldn't parse: 'C - 53.08\n'
 Reason: invalid literal for int() with base 10: '-'
 Couldn't parse: 'DIS - 34.20\n'

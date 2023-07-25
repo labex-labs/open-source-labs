@@ -7,7 +7,7 @@ approximately 577000 rows of data. Use Python to view a few lines
 of data to see what it looks like:
 
 ```python
->>> f = open('ctabus.csv')
+>>> f = open('/home/labex/project/ctabus.csv')
 >>> next(f)
 'route,date,daytype,rides\n'
 >>> next(f)

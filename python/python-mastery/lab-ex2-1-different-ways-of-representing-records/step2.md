@@ -29,7 +29,7 @@ instead? Restart Python and try this:
 ```python
 >>> # --- RESTART
 >>> import tracemalloc
->>> f = open('ctabus.csv')
+>>> f = open('/home/labex/project/ctabus.csv')
 >>> tracemalloc.start()
 >>> lines = f.readlines()
 >>> len(lines)

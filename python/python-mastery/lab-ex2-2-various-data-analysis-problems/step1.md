@@ -29,7 +29,7 @@ This file reads some simple stock market data in the file `portfolio.csv`. Use
 the function to read the file and look at the results:
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
+>>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
 >>> from pprint import pprint
 >>> pprint(portfolio)
 [{'name': 'AA', 'price': 32.2, 'shares': 100},
