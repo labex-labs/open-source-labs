@@ -25,4 +25,4 @@ For this lab, let's use the repository from `https://github.com/labex-labs/git-p
 
 This is the final result:
 
-![<result>](assets/challenge-commit-template-step1-1.png)
+![<result>](./assets/challenge-commit-template-step1-1.png)
