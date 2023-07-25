@@ -8,9 +8,9 @@ Suppose you are working on a project with several other developers, and you noti
 
 Your task is to write the string "hello,world" to the `hello.txt` file and add it as a "fixup" commit to the commit with the message "Added file1.txt", so that it can be automatically merged in a subsequent rebase operation. 
 
-To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository, navigate to the directory and configure the identity.
+1. Navigate to the directory and configure the identity.
 2. Create a `hello.txt` file, write "hello,world" in it and add it to the staging area.
 3. Create a fixup commit for the hash of the "Added file1.txt" commit message.
 4. Once you have created the fixup commit, you can automatically merge the fixup commit with the original commit during the next rebase. When opening the interactive editor, you don't need to change the text and save to exit.

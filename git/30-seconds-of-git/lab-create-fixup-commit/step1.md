@@ -4,11 +4,11 @@ Suppose you are working on a project with several other developers, and you noti
 
 For example, your task is to write the string "hello,world" to the `hello.txt` file and add it as a "fixup" commit to the commit with the message "Added file1.txt", so that it can be automatically merged in a subsequent rebase operation. 
 
-To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
 1. Clone the repository, navigate to the directory and configure the identity:
 ```shell
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground
 cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
