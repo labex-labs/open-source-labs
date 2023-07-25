@@ -6,9 +6,9 @@ As a developer, you are working on a project with multiple branches. You have id
 
 ## Example
 
-To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository, navigate to the directory and configure the identity.
+1. Navigate to the directory and configure the identity.
 2. Create and switch to a branch called `one-branch`, create a file called `hello.txt`, write "hello,world" in it, add it to the staging area and commit it with the message "add hello.txt".
 3. Identify the hash of the commit created in the previous step to apply to the `master` branch.
 4. Checkout the `master` branch and apply the change to the `master` branch.
@@ -17,7 +17,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 This is the result of running `git log` on the `master` branch:
 ```shell
 commit e2f3c6af9570f4eac2580dea93ca8133f1547d53 (HEAD -> master)
-Author: xiaoshengyunan <1797063828@qq.com>
+Author: xiaoshengyunan <@users.noreply.github.com>
 Date:   Sat Jul 15 14:30:31 2023 +0800
 
     add hello.txt
