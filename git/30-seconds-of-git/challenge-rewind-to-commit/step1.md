@@ -14,6 +14,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 4. View the commit history of the repository again.
 
 This is the result of running `git log --oneline`:
+
 ```shell
 c0d30f305 (HEAD -> master) Initial commit
 ```
