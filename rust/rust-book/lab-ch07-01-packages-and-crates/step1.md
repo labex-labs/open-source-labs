@@ -82,7 +82,6 @@ in the `src/bin` directory: each file will be a separate binary crate.
 > - **Declaring modules**: In the crate root file, you can declare new modules;
 >   say you declare a “garden” module with `mod garden;`. The compiler will look
 >   for the module’s code in these places:
->
 > - Inline, within curly brackets that replace the semicolon following `mod
 garden`
 > - In the file `src/garden.rs`
@@ -91,7 +90,6 @@ garden`
 >   declare submodules. For example, you might declare `mod vegetables;` in
 >   `src/garden.rs`. The compiler will look for the submodule’s code within the
 >   directory named for the parent module in these places:
->
 > - Inline, directly following `mod vegetables`, within curly brackets instead
 >   of the semicolon
 > - In the file `src/garden/vegetables.rs`

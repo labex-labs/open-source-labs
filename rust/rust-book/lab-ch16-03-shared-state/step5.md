@@ -63,9 +63,9 @@ note: required by a bound in `spawn`
 ```
 
 Wow, that error message is very wordy! Here’s the important part to focus on:
-`` Rc<Mutex<i32>>` cannot be sent between threads safely` [1]. The compiler is
+``Rc<Mutex<i32>>` cannot be sent between threads safely` [1]. The compiler is
 also telling us the reason why: `the trait `Send` is not implemented for
-`Rc<Mutex<i32>> `` [2]. We’ll talk about `Send` in the next section: it’s one of
+`Rc<Mutex<i32>>`` [2]. We’ll talk about `Send` in the next section: it’s one of
 the traits that ensures the types we use with threads are meant for use in
 concurrent situations.
 

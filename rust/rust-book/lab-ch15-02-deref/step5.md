@@ -5,7 +5,7 @@ trait we need to provide implementations for the trait’s required methods. The
 `Deref` trait, provided by the standard library, requires us to implement one
 method named `deref` that borrows `self` and returns a reference to the inner
 data. Listing 15-10 contains an implementation of `Deref` to add to the
-definition of ` MyBox``<T> `.
+definition of `MyBox``<T>`.
 
 Filename: `src/main.rs`
 
