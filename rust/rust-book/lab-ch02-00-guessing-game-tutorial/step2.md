@@ -1,6 +1,6 @@
 # Setting Up a New Project
 
-To set up a new project, go to the `projects` directory that you created in
+To set up a new project, go to the `project` directory that you created in
 Chapter 1 and make a new project using Cargo, like so:
 
 ```bash

@@ -9,7 +9,7 @@ sometimes you might want to opt out.
 
 When a variable is immutable, once a value is bound to a name, you can’t change
 that value. To illustrate this, generate a new project called _variables_ in
-your `projects` directory by using `cargo new variables`.
+your `project` directory by using `cargo new variables`.
 
 Then, in your new `variables` directory, open `src/main.rs` and replace its
 code with the following code, which won’t compile just yet:

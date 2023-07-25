@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-rustc ~/project/*.rs
+ls hello_world

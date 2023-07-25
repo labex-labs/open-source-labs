@@ -4,7 +4,7 @@ An `if` expression allows you to branch your code depending on conditions. You
 provide a condition and then state, “If this condition is met, run this block
 of code. If the condition is not met, do not run this block of code.”
 
-Create a new project called `branches` in your `projects` directory to explore
+Create a new project called `branches` in your `project` directory to explore
 the `if` expression. In the `src/main.rs` file, input the following:
 
 Filename: `src/main.rs`

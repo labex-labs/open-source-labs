@@ -276,7 +276,7 @@ saves an allocation by converting `#name` to a string literal at compile time.
 At this point, `cargo build` should complete successfully in both `hello_macro`
 and `hello_macro_derive`. Let’s hook up these crates to the code in Listing
 19-30 to see the procedural macro in action! Create a new binary project in
-your `projects` directory using `cargo new pancakes`. We need to add
+your `project` directory using `cargo new pancakes`. We need to add
 `hello_macro` and `hello_macro_derive` as dependencies in the `pancakes`
 crate’s `Cargo.toml`. If you’re publishing your versions of `hello_macro` and
 `hello_macro_derive` to *https://crates.io*, they would be regular

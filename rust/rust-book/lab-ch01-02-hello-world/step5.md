@@ -39,7 +39,7 @@ Windows, a file containing debugging information with the _.pdb_ extension.
 From here, you run the _main_ or _main.exe_ file, like this:
 
 ```bash
-./main # or .\main.exe on Windows
+./main
 ```
 
 If your `main.rs` is your “Hello, world!” program, this line prints `Hello,

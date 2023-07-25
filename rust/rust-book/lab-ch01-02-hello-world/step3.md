@@ -18,7 +18,7 @@ fn main() {
 Listing 1-1: A program that prints `Hello, world!`
 
 Save the file and go back to your terminal window in the
-`~/projects/hello_world` directory. On Linux or macOS, enter the following
+`~/project/hello_world` directory. On Linux or macOS, enter the following
 commands to compile and run the file:
 
 ```bash
