@@ -15,7 +15,7 @@ git pull origin master
 ```
 3. Once you have pulled the latest changes from the remote branch, you can make your changes to the local branch:
 ```shell
-echo "hello" > file2.txt
+echo "hello,world" >> file1.txt
 ```
 4. After making the changes, stage them using the `git add` command:
 ```shell
@@ -31,5 +31,10 @@ git push origin master
 ```
 
 This is the result of running `git log`:
+```shell
+commit 1f1949955387a1549f1bb5286d3d0a2b993f87e0 (HEAD -> master,origin/master,origin/HEAD)
+Author: xiaoshengyunan <@users.noreply.github.com>
+Date:   Fri Jul 21 19:26:57 2023 +0800
 
-![<result>](./assets/challenge-push-changes-step1-1.png)
+    Added new feature
+```
