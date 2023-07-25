@@ -13,6 +13,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 3. Change "pick" to "squash" in the commit message "Added file2.txt", press <kbd>Esc</kbd> and enter the <kbd>:wq</kbd> command, then press <kbd>Enter</kbd> to save your changes and exit the editor, change the commit message to "Added file1.txt and file2.txt" in the same way and exit.
 
 Running `git log` will give you a result that looks like this:
+
 ```shell
 commit 7575ded485555c28ecb09487c68e90639bebbe9d (HEAD -> master)
 Author: Hang <huhuhang@users.noreply.github.com>
@@ -26,4 +27,3 @@ Date:   Wed Apr 26 14:16:00 2023 +0800
 
     Initial commit
 ```
-

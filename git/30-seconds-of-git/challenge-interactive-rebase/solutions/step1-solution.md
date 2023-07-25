@@ -9,4 +9,4 @@ cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
 git rebase -i HEAD~3
-```       
+```
