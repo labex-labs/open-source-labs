@@ -2,13 +2,9 @@
 
 ## Introduction
 
-This challenge will cover the basics of environment variables in Unix programs. Environment variables are used to convey configuration information to programs.
+This lab will cover the basics of environment variables in Unix programs. Environment variables are used to convey configuration information to programs.
 
-## Problem
-
-In this challenge, you will need to set, get, and list environment variables.
-
-## Requirements
+In this lab, you will need to set, get, and list environment variables.
 
 - Use `os.Setenv` to set a key/value pair.
 - Use `os.Getenv` to get a value for a key.
@@ -44,8 +40,6 @@ func main() {
 }
 ```
 
-## Example
-
 ```
 FOO: 1
 BAR:
@@ -57,4 +51,4 @@ PWD
 
 ## Summary
 
-In this challenge, you learned how to set, get, and list environment variables in Unix programs. This is a fundamental concept that is used in many programs to convey configuration information.
+In this lab, you learned how to set, get, and list environment variables in Unix programs. This is a fundamental concept that is used in many programs to convey configuration information.

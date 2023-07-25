@@ -6,18 +6,16 @@ You have a Git repository with several detached branches that you no longer need
 
 ## Example
 
-Assuming you have a Git repository named `https://github.com/labex-labs/git-playground`, follow these steps to delete all detached branches:
+To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Do not check "Copy the master branch only".
 
-1. Open your terminal and navigate to the local directory of the Git repository.
-2. Run the command `git fetch --all --prune` to garbage collect any detached branches.
-3. This command will remove all detached branches from your local repository.
-4. To verify that the detached branches have been deleted, run the command `git branch`.
-5. The output should only show the branches that are associated with a specific branch, such as `master` or `develop`.
+1. Clone the repository, navigate to the directory and configure the identity.
+2. Since there is a `feature-branch` branch in the remote repository, switch to `feature-branch`, which will cause the local `feature-branch` to track the `feature-branch` branch of the remote repository and delete the `feature-branch` branch in the remote repository.
+3. View the trace relationship between local branches and the remote branches they track.
+4. Switch back to the `master` branch.
+5. Remove all detached branches from your local repository.
+6. Verify that the detached branches have been deleted.
 
+The output should only show the branches that are associated with a specific branch:
 ```shell
-$ git clone https://github.com/labex-labs/git-playground.git
-$ cd git-playground
-$ git fetch --all --prune
-$ git branch
-* master
+* master d22f46b [origin/master] Added file2.txt
 ```

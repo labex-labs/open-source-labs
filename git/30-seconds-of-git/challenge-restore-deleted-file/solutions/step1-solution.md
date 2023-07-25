@@ -1,9 +1,12 @@
 ```shell
-git checkout <commit>^ -- <file>
+git checkout <commit> -- <file>
 ```
 
 ```shell
-# "labex.txt" was deleted in the commit `3050fc0de`
-git checkout 3050fc0de^ -- "labex.txt"
-# Restores the labex.txt file
+cd git-playground
+git log --oneline
+# "file2.txt" was deleted in the commit `d22f46b`
+git checkout d22f46b -- file2.txt
+# Restores the file2.txt file
+ll
 ```

@@ -1,0 +1,3 @@
+# Interpret Results
+
+We can observe that both HGBT and RF models improve when increasing the number of trees in the ensemble. However, the scores reach a plateau where adding new trees just makes fitting and scoring slower. The RF model reaches such plateau earlier and can never reach the test score of the largest HGBDT model. HGBT models uniformly dominate the RF models in the "test score vs training speed trade-off" and the "test score vs prediction speed" trade-off can also be more favorable to HGBT. HGBT almost always offers a more favorable speed-accuracy trade-off than RF, either with the default hyper-parameters or including the hyper-parameter tuning cost.

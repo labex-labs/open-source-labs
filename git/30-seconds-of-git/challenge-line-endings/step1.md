@@ -10,18 +10,11 @@ To configure the line endings for the `git-playground` repository, follow these 
 
 1. Open the command prompt or terminal on your computer.
 2. Navigate to the directory where the `git-playground` repository is located.
-3. Run the following command to configure the line endings to use UNIX line endings:
+3. Configure the line endings to use UNIX line endings (`\n`).
+4. Verify that the line endings have been configured correctly.
 
-   ```shell
-   git config core.eol lf
-   ```
+This is the result of running `cat -vet file2.txt`:
+```shell
+This is file2.$
+```
 
-   This will configure the line endings to use the UNIX line ending (`\n`).
-
-4. Run the following command to verify that the line endings have been configured correctly:
-
-   ```shell
-   git config core.eol
-   ```
-
-   This will display the current line ending configuration.
