@@ -15,8 +15,9 @@ Let's say you're working on a branch named `feature` in the `git-playground` rep
 3. Add the line "Some changes" to the `README.md` file.
 4. Save your changes to a stash and add a descriptive message "My changes" to that stash.
 5. Switch to a different branch.
-6. Apply your stash.
+6. When done making changes on the other branch, switch back to the `feature` branch and apply your stash.
 
 This is the finished result:
-
-![<result>](./assets/challenge-save-stash-step1-1.png)
+```shell
+stash@{0}: On feature: My changes
+```
