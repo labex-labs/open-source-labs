@@ -1,27 +1,45 @@
 # Move Commits to a New Branch
 
-To complete this experiment, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.You have been working on a project in the `master` branch of the `https://github.com/your-username/git-playground` repository. You realize that some of the changes you made should have been made on a separate branch. You want to move these changes to a new branch called `feature-branch`.
+For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`. You have been working on a project in the `master` branch. You realize that some of the changes you made should have been made on a separate branch. You want to move these changes to a new branch called `feature`.
 
-1. Clone the `https://github.com/your-username/git-playground` repository to your local machine.
-2. Checkout the `master` branch using `git checkout master`.
-3. Make some changes to the codebase, add and commit them using `git add .` and `git commit -m "Add new feature to master branch"`.
-4. Create a new branch called `feature-branch` using `git branch feature-branch`.
-5. Move the last commit from `master` to `feature-branch` using `git checkout feature-branch` and `git cherry-pick master`.
-6. Verify that the changes are now in the `feature-branch` using `git log`.
-
+1. Clone the repository, navigate to the directory and configure the identity:
 ```shell
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground
 cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+```
+2. Checkout the `master` branch:
+``` shell
 git checkout master
-# Make some changes to the codebase
-git add .
-git commit -m "Add new feature to master branch"
-git branch feature-branch
-git reset HEAD~1 --hard # Remove the commit from `master`
-git checkout feature-branch
-git log # Verify that the changes are now in `feature-branch`
+```
+3. Create a file called `hello.txt`, add "hello, world" to it, add it to the staging area and submit it with the message "Added hello.txt":
+```shell
+echo "hello,world" >> hello.txt
+git add . 
+git commit -m "Added hello.txt"
+```
+4. Create a new branch called `feature` without switching to it. When you create a new branch on the `master` branch, the state of the new branch is the same as the `master` branch, i.e., the files in the new branch are the same as the files in the `master` branch, with the same content and version history:
+```shell
+git branch feature
+```
+5. Undo the last commit on `master`:
+``` shell
+git reset HEAD~1 --hard
+```
+6. Check the commit history on the `master` branch and the commit history on the `feature` branch to verify the results:
+```shell
+git log
+git checkout feature
+git log
 ```
 
 This is the result of running `git log`:
+```shell
+commit 7969ab5d6606e2a40c9fd826c732206b835976e9 (HEAD -> feature)
+Author: xiaoshengyunan <@users.noreply.github.com>
+Date:   Fri Jul 21 20:19:22 2023 +0800
 
-![<result>](./assets/challenge-move-commits-to-branch-step1-1.png)
+    Added hello.txt
+```  
+
