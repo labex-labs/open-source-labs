@@ -15,13 +15,14 @@ To demonstrate how to change the last commit's message, let's use the repository
    ```
    git commit --amend -m "Fix the network bug"
    ```
-   This will open your default text editor where you can modify the commit message. Save and       close the editor to complete the process.
+   This will open your default text editor where you can modify the commit message. Save and close the editor to complete the process.
 3. Verify that the commit message has been changed:
    ```
    git log --oneline
    ```
 
 You should see the updated commit message in the log:
+
 ```
 54b830b (HEAD -> master) Fix the network bug
 cf80005 Added file1.txt

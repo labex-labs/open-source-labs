@@ -13,6 +13,7 @@ To demonstrate how to change the last commit's message, let's use the repository
 3. Verify that the commit message has been changed.
 
 You should see the updated commit message in the log:
+
 ```
 54b830b (HEAD -> master) Fix the network bug
 cf80005 Added file1.txt
