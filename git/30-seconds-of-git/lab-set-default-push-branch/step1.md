@@ -33,4 +33,10 @@ To complete this lab, you will use the Git repository `git-playground` from your
    Git will push your changes to a branch named `my-branch` on the remote repository.
 
 This is the result of running `git log`:
-![<result>](./assets/challenge-set-default-push-branch-step1-1.png)
+```shell
+commit 1f1949959887a1549f1bb5286d3d0a2b993f87e0 (HEAD -> my-branch, origin/my-branch)
+Author: xiaoshengyunan <@users.noreply.github.com>
+Date:   Fri Jul 21 19:26:57 2023 +0800
+
+    Add hello.txt
+```
