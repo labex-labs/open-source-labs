@@ -14,7 +14,7 @@ JSX is stricter than HTML. You have to close tags like `<br />`. Your component 
 
 ```js
 // App.js
-function Profile() {
+export default function Profile() {
   return (
     <>
       <h1>Hedy Lamarr</h1>
