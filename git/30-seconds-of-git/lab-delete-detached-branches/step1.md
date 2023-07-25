@@ -11,7 +11,7 @@ cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
 ```
-2. Since there is a `feature-branch` branch in the remote repository, switch to `feature-branch` and delete the `feature-branch` branch in the remote repository:
+2. Since there is a `feature-branch` branch in the remote repository, switch to `feature-branch`, which will cause the local `feature-branch` to track the `feature-branch` branch of the remote repository and delete the `feature-branch` branch in the remote repository：
 ```shell
 git checkout feature-branch
 git push origin --delete feature-branch
