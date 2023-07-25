@@ -13,8 +13,7 @@ fn main() {
 }
 ```
 
-`println!` is a _macro_ that prints text to the
-console.
+`println!` is a _macro_ that prints text to the console.
 
 A binary can be generated using the Rust compiler: `rustc`.
 

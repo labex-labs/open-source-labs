@@ -1,9 +1,6 @@
 # Tuples
 
-A tuple is a collection of values of different types. Tuples are constructed
-using parentheses `()`, and each tuple itself is a value with type signature
-`(T1, T2, ...)`, where `T1`, `T2` are the types of its members. Functions can
-use tuples to return multiple values, as tuples can hold any number of values.
+A tuple is a collection of values of different types. Tuples are constructed using parentheses `()`, and each tuple itself is a value with type signature `(T1, T2, ...)`, where `T1`, `T2` are the types of its members. Functions can use tuples to return multiple values, as tuples can hold any number of values.
 
 ```rust
 // Tuples can be used as function arguments and as return values.
@@ -63,9 +60,7 @@ fn main() {
 
 ## Activity
 
-1. _Recap_: Add the `fmt::Display` trait to the `Matrix` struct in the above
-   example, so that if you switch from printing the debug format `{:?}` to the
-   display format `{}`, you see the following output:
+1. _Recap_: Add the `fmt::Display` trait to the `Matrix` struct in the above example, so that if you switch from printing the debug format `{:?}` to the display format `{}`, you see the following output:
 
    ```text
    ( 1.1 1.2 )
@@ -74,9 +69,7 @@ fn main() {
 
    You may want to refer back to the example for print display.
 
-2. Add a `transpose` function using the `reverse` function as a template, which
-   accepts a matrix as an argument, and returns a matrix in which two elements
-   have been swapped. For example:
+2. Add a `transpose` function using the `reverse` function as a template, which accepts a matrix as an argument, and returns a matrix in which two elements have been swapped. For example:
 
    ```rust
    println!("Matrix:\n{}", matrix);

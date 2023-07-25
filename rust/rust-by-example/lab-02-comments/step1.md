@@ -1,7 +1,6 @@
 # Comments
 
-Any program requires comments, and Rust supports
-a few different varieties:
+Any program requires comments, and Rust supports a few different varieties:
 
 - _Regular comments_ which are ignored by the compiler:
   - `// Line comments which go to the end of the line.`

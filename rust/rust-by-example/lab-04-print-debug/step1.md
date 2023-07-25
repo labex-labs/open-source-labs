@@ -1,13 +1,8 @@
 # Debug
 
-All types which want to use `std::fmt` formatting `traits` require an
-implementation to be printable. Automatic implementations are only provided
-for types such as in the `std` library. All others _must_ be manually
-implemented somehow.
+All types which want to use `std::fmt` formatting `traits` require an implementation to be printable. Automatic implementations are only provided for types such as in the `std` library. All others _must_ be manually implemented somehow.
 
-The `fmt::Debug` `trait` makes this very straightforward. _All_ types can
-`derive` (automatically create) the `fmt::Debug` implementation. This is
-not true for `fmt::Display` which must be manually implemented.
+The `fmt::Debug` `trait` makes this very straightforward. _All_ types can `derive` (automatically create) the `fmt::Debug` implementation. This is not true for `fmt::Display` which must be manually implemented.
 
 ```rust
 // This structure cannot be printed either with `fmt::Display` or
@@ -50,8 +45,7 @@ fn main() {
 }
 ```
 
-So `fmt::Debug` definitely makes this printable but sacrifices some elegance.
-Rust also provides "pretty printing" with `{:#?}`.
+So `fmt::Debug` definitely makes this printable but sacrifices some elegance. Rust also provides "pretty printing" with `{:#?}`.
 
 ```rust
 #[derive(Debug)]

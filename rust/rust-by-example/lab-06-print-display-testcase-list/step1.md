@@ -1,9 +1,6 @@
 # Testcase: List
 
-Implementing `fmt::Display` for a structure where the elements must each be
-handled sequentially is tricky. The problem is that each `write!` generates a
-`fmt::Result`. Proper handling of this requires dealing with _all_ the
-results. Rust provides the `?` operator for exactly this purpose.
+Implementing `fmt::Display` for a structure where the elements must each be handled sequentially is tricky. The problem is that each `write!` generates a `fmt::Result`. Proper handling of this requires dealing with _all_ the results. Rust provides the `?` operator for exactly this purpose.
 
 Using `?` on `write!` looks like this:
 
@@ -13,8 +10,7 @@ Using `?` on `write!` looks like this:
 write!(f, "{}", value)?;
 ```
 
-With `?` available, implementing `fmt::Display` for a `Vec` is
-straightforward:
+With `?` available, implementing `fmt::Display` for a `Vec` is straightforward:
 
 ```rust
 use std::fmt; // Import the `fmt` module.
@@ -52,8 +48,7 @@ fn main() {
 
 ## Activity
 
-Try changing the program so that the index of each element in the vector is also
-printed. The new output should look like this:
+Try changing the program so that the index of each element in the vector is also printed. The new output should look like this:
 
 ```rust
 [0: 1, 1: 2, 2: 3]

@@ -6,12 +6,9 @@ We've seen that formatting is specified via a _format string_:
 - `format!("0x{:X}", foo)` -> `"0xDEADBEEF"`
 - `format!("0o{:o}", foo)` -> `"0o33653337357"`
 
-The same variable (`foo`) can be formatted differently depending on which
-_argument type_ is used: `X` vs `o` vs _unspecified_.
+The same variable (`foo`) can be formatted differently depending on which _argument type_ is used: `X` vs `o` vs _unspecified_.
 
-This formatting functionality is implemented via traits, and there is one trait
-for each argument type. The most common formatting trait is `Display`, which
-handles cases where the argument type is left unspecified: `{}` for instance.
+This formatting functionality is implemented via traits, and there is one trait for each argument type. The most common formatting trait is `Display`, which handles cases where the argument type is left unspecified: `{}` for instance.
 
 ```rust
 use std::fmt::{self, Formatter, Display};
@@ -64,13 +61,11 @@ fn main() {
 }
 ```
 
-You can view a full list of formatting traits and their argument
-types in the `std::fmt` documentation.
+You can view a full list of formatting traits and their argument types in the `std::fmt` documentation.
 
 ## Activity
 
-Add an implementation of the `fmt::Display` trait for the `Color` struct above
-so that the output displays as:
+Add an implementation of the `fmt::Display` trait for the `Color` struct above so that the output displays as:
 
 ```text
 RGB (128, 255, 90) 0x80FF5A
@@ -80,8 +75,6 @@ RGB (0, 0, 0) 0x000000
 
 Three hints if you get stuck:
 
-- The formula for calculating a color in the RGB color space is:
-  `RGB = (R*65536)+(G*256)+B , (when R is RED, G is GREEN and B is BLUE)`.
-  For more see RGB color format & calculation.
+- The formula for calculating a color in the RGB color space is: `RGB = (R*65536)+(G*256)+B , (when R is RED, G is GREEN and B is BLUE)`. For more see RGB color format & calculation.
 - You may need to list each color more than once.
 - You can pad with zeros to a width of 2 with `:0>2`.

@@ -1,18 +1,14 @@
 # Formatted print
 
-Printing is handled by a series of `macros` defined in
-`std::fmt` some of which include:
+Printing is handled by a series of `macros` defined in `std::fmt` some of which include:
 
-- `format!`: write formatted text to `String`
-- `print!`: same as `format!` but the text is printed to the console
-  (io::stdout).
+- `format!`: write formatted text to `String`.
+- `print!`: same as `format!` but the text is printed to the console (io::stdout).
 - `println!`: same as `print!` but a newline is appended.
-- `eprint!`: same as `print!` but the text is printed to the standard error
-  (io::stderr).
+- `eprint!`: same as `print!` but the text is printed to the standard error (io::stderr).
 - `eprintln!`: same as `eprint!` but a newline is appended.
 
-All parse text in the same fashion. As a plus, Rust checks formatting
-correctness at compile time.
+All parse text in the same fashion. As a plus, Rust checks formatting correctness at compile time.
 
 ```rust
 fn main() {
@@ -75,28 +71,19 @@ fn main() {
 }
 ```
 
-`std::fmt` contains many `traits` which govern the display
-of text. The base form of two important ones are listed below:
+`std::fmt` contains many `traits` which govern the display of text. The base form of two important ones are listed below:
 
 - `fmt::Debug`: Uses the `{:?}` marker. Format text for debugging purposes.
-- `fmt::Display`: Uses the `{}` marker. Format text in a more elegant, user
-  friendly fashion.
+- `fmt::Display`: Uses the `{}` marker. Format text in a more elegant, user friendly fashion.
 
-Here, we used `fmt::Display` because the std library provides implementations
-for these types. To print text for custom types, more steps are required.
+Here, we used `fmt::Display` because the std library provides implementations for these types. To print text for custom types, more steps are required.
 
-Implementing the `fmt::Display` trait automatically implements the
-`ToString`] trait which allows us to [convert] the type to [`String`.
+Implementing the `fmt::Display` trait automatically implements the `ToString` trait which allows us to convert the type to `String`.
 
 In _line 43_, `#[allow(dead_code)]` is an [attribute] which only apply to the module after it.
 
 ## Activities
 
-- Fix the issue in the above code (see FIXME) so that it runs without
-  error.
-- Try uncommenting the line that attempts to format the `Structure` struct
-  (see TODO)
-- Add a `println!` macro call that prints: `Pi is roughly 3.142` by controlling
-  the number of decimal places shown. For the purposes of this exercise, use
-  `let pi = 3.141592` as an estimate for pi. (Hint: you may need to check the
-  `std::fmt` documentation for setting the number of decimals to display)
+- Fix the issue in the above code (see FIXME) so that it runs without error.
+- Try uncommenting the line that attempts to format the `Structure` struct (see TODO)
+- Add a `println!` macro call that prints: `Pi is roughly 3.142` by controlling the number of decimal places shown. For the purposes of this exercise, use `let pi = 3.141592` as an estimate for pi. (Hint: you may need to check the `std::fmt` documentation for setting the number of decimals to display)
