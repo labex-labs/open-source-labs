@@ -1,0 +1,63 @@
+{
+  "type": "lab",
+  "title": "Rendering Lists",
+  "description": "This lab will give you an introduction to rendering lists.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Rendering Lists",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the running status of the web service.",
+            "file": "verify1-0.sh",
+            "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Check the status of App.js modification.",
+            "file": "verify1-1.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "react/component"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "demo.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  },
+  "contributors": [
+    "Lotus-7"
+  ],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/facebook/react/blob/main/LICENSE",
+    "repo": "https://react.dev/learn"
+  }
+}
