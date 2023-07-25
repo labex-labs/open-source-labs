@@ -3,8 +3,7 @@ git branch --sort=-committerdate
 ```
 
 ```shell
-# Fork from https://github.com/labex-labs/git-playground.git
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground
 cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
