@@ -1,0 +1,66 @@
+{
+  "type": "lab",
+  "title": "Plot Pca vs Fa Model Selection",
+  "description": "In this lab, we will explore two probabilistic models - Probabilistic PCA and Factor Analysis - and compare their effectiveness in model selection and covariance estimation. We will perform cross-validation on low rank data that is corrupted with homoscedastic or heteroscedastic noise. In addition, we will compare the model likelihood to the likelihoods obtained from shrinkage covariance estimators.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Create the Data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-pca-vs-fa-model-selection.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      },
+      {
+        "title": "Fit the Models",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-pca-vs-fa-model-selection.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-pca-vs-fa-model-selection.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

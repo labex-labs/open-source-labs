@@ -1,15 +1,20 @@
 ```shell
 git branch <branch>
-git reset HEAD~<n> --hard
+git reset HEAD~1 --hard
 git checkout <branch>
 ```
 
 ```shell
-git checkout master
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+echo "hello,world" >> hello.txt
 git add .
-git commit -m "Fix network bug"
-git branch patch-1
-# `patch-1` branch is created containing the commit "Fix network bug"
+git commit -m "Added hello.txt"
+git branch feature
+# `feature` branch is created containing the commit "Added hello.txt"
 git reset HEAD~1 --hard # Remove the commit from `master`
-git checkout patch-1
+git log
+git checkout feature
+git log # Verify that the changes are now in `feature`
 ```

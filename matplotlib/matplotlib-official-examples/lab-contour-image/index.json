@@ -1,0 +1,119 @@
+{
+  "type": "lab",
+  "title": "Matplotlib Contour Image",
+  "description": "In this lab, you will learn how to create a contour image using Python's Matplotlib library. The contour image is a visualization technique that represents a three-dimensional surface using a two-dimensional plot. The contour image consists of contour lines, which are lines that connect points of equal value in the surface, and filled contours, which are regions between the contour lines.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in contour-image.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Define the Data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in contour-image.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/arange",
+          "numpy/meshgrid",
+          "numpy/exp"
+        ]
+      },
+      {
+        "title": "Create the Contour Image",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in contour-image.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "numpy/arange",
+          "matplotlib/normalize",
+          "matplotlib/sub_plot",
+          "matplotlib/flatten",
+          "matplotlib/contour",
+          "matplotlib/colormap",
+          "matplotlib/line_style",
+          "matplotlib/title",
+          "matplotlib/colorbar",
+          "matplotlib/imshow",
+          "matplotlib/xy_lim",
+          "matplotlib/axes_layout",
+          "matplotlib/show",
+          "python/len"
+        ]
+      },
+      {
+        "title": "Display the Contour Image",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in contour-image.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/axes_layout",
+          "matplotlib/show"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "contour-image.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

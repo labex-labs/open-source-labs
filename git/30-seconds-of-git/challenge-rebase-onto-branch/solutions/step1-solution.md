@@ -4,12 +4,16 @@ git rebase <base-branch>
 ```
 
 ```shell
-git checkout patch-1
-git rebase master
-# `patch-1` is rebased onto `master`
-
-git checkout patch-2
-git fetch origin # Fetch latest remote branches
-git rebase origin/master
-# `patch-2` is rebased onto the latest remote `master`
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+git checkout -b one-branch
+echo "hello,world" >> README.md
+git add .
+git commit -am "Added some changes to README.md"
+git checkout master
+git pull
+git rebase feature-branch 
+# `master` is rebased onto `feature-branch`
+git log
 ```

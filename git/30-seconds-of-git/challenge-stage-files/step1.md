@@ -6,20 +6,14 @@ You have been working on a project stored in a Git repository named `https://git
 
 ## Example
 
-Suppose you have made changes to the `index.html` and `style.css` files in the `src` directory of the `git-playground` repository. To add these files to the staging area, you can use the following command:
+1. View all files in the current directory.
+2. Suppose you have made changes to the `index.html` and `style.css` files in the `git-playground` directory of the `git-playground` repository. Add these files to the staging area.
+3. View the status of the current working directory and staging area, including information on which files have been modified, which files have been added to the staging area, etc.
+4. Alternatively, add all files with a `.js` extension in the `src` directory.
+5. View the status of the current working directory and staging area again.
+6. You can also add all changes to the staging area.
+7. View the status of the current working directory and staging area again.
 
-```shell
-git add src/index.html src/style.css
-```
+This is the finished result:
 
-Alternatively, you can use a fileglob to add all files with a `.js` extension in the `src` directory:
-
-```shell
-git add src/*.js
-```
-
-You can also add all changes to the staging area using the following command:
-
-```shell
-git add .
-```
+![<result>](./assets/challenge-stage-files-step1-1.png)

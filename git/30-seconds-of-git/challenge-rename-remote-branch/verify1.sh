@@ -1,4 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git push"
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
-cat ~/.zsh_history | grep -v grep | grep "git branch"
+(cd /home/labex/project/git-playground && git branch -a | less -R | grep "remotes/origin/new-feature-1") && (cd /home/labex/project/git-playground && ! git branch -a | less -R | grep "remotes/origin/feature-branch") && echo "True"
+
