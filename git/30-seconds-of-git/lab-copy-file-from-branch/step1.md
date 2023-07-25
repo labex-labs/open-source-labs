@@ -1,10 +1,10 @@
 # Copy a File from Another Branch
 
-You are working on a project in a Git repository named `https://github.com/your-username/git-playground`. You have two branches named `feature-1` and `feature-2`. You need to copy the file `hello.txt` from `feature-1` branch to `feature-2` branch.
+You are working on a project in a Git repository named `https://github.com/labex-labs/git-playground.git`. You have two branches named `feature-1` and `feature-2`. You need to copy the file `hello.txt` from `feature-1` branch to `feature-2` branch.
 
 1. Clone the repository:
 ```shell
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground.git
 ```
 2. Navigate to the directory and configure the identity:
 ```shell

@@ -6,9 +6,9 @@ By default, Git uses fast forward merging to merge branches that have no diverge
 
 ## Example
 
-To disable fast forward merging, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
+To disable fast forward merging, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository, navigate to the directory and configure the identity.
+1. Navigate to the directory and configure the identity.
 2. Create and switch to a branch called `my-branch`, create a `hello.txt` file and add "hello,world" to it, add it to the staging area and commit it with the message "Added hello.txt".
 3. Disable fast forward merging for all branches.
 4. Switch back to the `mater` branch and merge the `my-branch` branch, save and exit without changing the text.
@@ -17,7 +17,7 @@ Now, Git will always create a merge commit, even if it is possible to fast forwa
 ```shell
 commit 6e17a776ab51a89ace069614b0caf1c07915a92c (HEAD -> master)
 Merge: ec5ea6d 6d7de91
-Author: xiaoshengyunan <1797063828@qq.com>
+Author: xiaoshengyunan <@users.noreply.github.com>
 Date:   Mon Jul 17 13:30:44 2023 +0800
 
     Merge branch 'my-branch'

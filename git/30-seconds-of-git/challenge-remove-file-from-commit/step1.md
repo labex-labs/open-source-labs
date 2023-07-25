@@ -6,14 +6,23 @@ You have added a file to the last commit that you didn't intend to include. You 
 
 ## Example
 
-To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Suppose you have a Git repository named `git-playground` with a file named `file1.txt` that you accidentally added to the last commit.
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`. Suppose you have a Git repository named `git-playground` with a file named `file2.txt` that you accidentally added to the last commit.
 
-1. Create the `git-playground.txt` file and modify the `file1.txt` file and add them to the staging area at the same time, committing them with the message "add git-playground.txt".
-2. Remove the specified `file1.txt` from the index.
+1. Navigate to the repository directory and configure your GitHub identity .
+2. Remove the specified `file2.txt` from the index.
 3. Update the contents of the last commit, without changing its message.
 
-After running these commands, the file `file1.txt` will be removed from the last commit without changing its message.
+After running these commands, the file `file2.txt` will be removed from the last commit without changing its message.
 
-This is what happens when you remove `file1.txt` from Git version control:
+This is what happens when you remove `file2.txt` from Git version control:
+```shell
+On branch master
 
-![<result>](./assets/challenge-remove-file-from-commit-step1-1.png)
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt
+```

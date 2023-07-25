@@ -2,15 +2,17 @@
 
 You have a Git repository with multiple branches, and you want to sort them by date. This will allow you to see which branches have been updated recently and which ones have not. Sorting branches by date can also help you identify branches that may need attention or merging.
 
-To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. 
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository to your local machine using the following command:
+1. Clone the repository to your local machine:
 ```shell
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground
 ```
-2. Once you have cloned the repository, navigate to the directory using the following command:
+2. Navigate to the repository directory and configure your GitHub identity:
 ```shell
 cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
 ```
 3. Create a branch called `one`, modify the code and commit it：
 ```shell

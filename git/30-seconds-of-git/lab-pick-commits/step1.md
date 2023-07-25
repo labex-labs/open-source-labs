@@ -2,11 +2,11 @@
 
 As a developer, you are working on a project with multiple branches. You have identified a specific change that was made in a previous commit that you would like to apply to your current branch. However, you do not want to merge the entire branch as it contains other changes that you do not need. In this scenario, you can use the `git cherry-pick` command to apply the specific change to your current branch.
 
-To complete this lab, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Follow the steps below to complete the challenge:
+For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`. Follow the steps below to complete the challenge:
 
 1. Clone the repository, navigate to the directory and configure the identity:
 ```shell
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground
 cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
@@ -35,7 +35,7 @@ git log
 This is the result of running `git log` on the `master` branch:
 ```shell
 commit e2f3c6af9570f4eac2580dea93ca8133f1547d53 (HEAD -> master)
-Author: xiaoshengyunan <1797063828@qq.com>
+Author: xiaoshengyunan <@users.noreply.github.com>
 Date:   Sat Jul 15 14:30:31 2023 +0800
 
     add hello.txt
