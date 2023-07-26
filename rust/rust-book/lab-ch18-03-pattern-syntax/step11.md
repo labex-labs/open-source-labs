@@ -7,5 +7,3 @@ ways to ignore entire values or parts of values in a pattern: using the `_`
 pattern (which you’ve seen), using the `_` pattern within another pattern,
 using a name that starts with an underscore, or using `..` to ignore remaining
 parts of a value. Let’s explore how and why to use each of these patterns.
-
-#

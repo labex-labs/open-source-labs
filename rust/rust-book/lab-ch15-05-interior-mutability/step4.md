@@ -243,5 +243,3 @@ in the inner vector, we call `borrow` on the `RefCell<Vec<String>>` to get an
 immutable reference to the vector [4].
 
 Now that you’ve seen how to use `RefCell<T>`, let’s dig into how it works!
-
-#

@@ -31,5 +31,3 @@ Listing 3-3: Using a `while` loop to run code while a condition evaluates to
 This construct eliminates a lot of nesting that would be necessary if you used
 `loop`, `if`, `else`, and `break`, and it’s clearer. While a condition
 evaluates to `true`, the code runs; otherwise, it exits the loop.
-
-#

@@ -56,5 +56,3 @@ By implementing the state pattern exactly as it’s defined for object-oriented
 languages, we’re not taking as full advantage of Rust’s strengths as we could.
 Let’s look at some changes we can make to the `blog` crate that can make
 invalid states and transitions into compile-time errors.
-
-#

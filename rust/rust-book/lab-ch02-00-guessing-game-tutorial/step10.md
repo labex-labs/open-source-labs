@@ -94,5 +94,3 @@ $ cargo build
 These lines show that Cargo only updates the build with your tiny change to the
 `src/main.rs` file. Your dependencies haven’t changed, so Cargo knows it can
 reuse what it has already downloaded and compiled for those.
-
-#

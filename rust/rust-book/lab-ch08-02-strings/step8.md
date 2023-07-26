@@ -40,5 +40,3 @@ that returned the byte value, it would return `104`, not `h`.
 The answer, then, is that to avoid returning an unexpected value and causing
 bugs that might not be discovered immediately, Rust doesn’t compile this code
 at all and prevents misunderstandings early in the development process.
-
-#

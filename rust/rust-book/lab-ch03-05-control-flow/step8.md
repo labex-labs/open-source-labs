@@ -49,5 +49,3 @@ count = 2
 remaining = 10
 End count = 2
 ```
-
-#

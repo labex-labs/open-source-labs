@@ -111,5 +111,3 @@ fn main() {
 ```
 
 Running this code will print `number was something other than zero`.
-
-#

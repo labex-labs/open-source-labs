@@ -40,5 +40,3 @@ This rework may seem like overkill for our small program, but we’re refactorin
 in small, incremental steps. After making this change, run the program again to
 verify that the argument parsing still works. It’s good to check your progress
 often, to help identify the cause of problems when they occur.
-
-#

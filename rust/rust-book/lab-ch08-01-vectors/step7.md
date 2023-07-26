@@ -3,7 +3,7 @@
 Like any other `struct`, a vector is freed when it goes out of scope, as
 annotated in Listing 8-10.
 
-```
+```rust
 {
     let v = vec![1, 2, 3, 4];
 

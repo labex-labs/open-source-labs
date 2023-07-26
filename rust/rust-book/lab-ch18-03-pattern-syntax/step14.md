@@ -63,5 +63,3 @@ println!("{:?}", s);
 Listing 18-22: Using an underscore does not bind the value.
 
 This code works just fine because we never bind `s` to anything; it isn’t moved.
-
-#

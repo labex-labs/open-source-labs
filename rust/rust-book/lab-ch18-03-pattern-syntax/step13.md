@@ -59,5 +59,3 @@ Listing 18-19: Ignoring multiple parts of a tuple
 
 This code will print `Some numbers: 2, 8, 32`, and the values `4` and `16` will
 be ignored.
-
-#

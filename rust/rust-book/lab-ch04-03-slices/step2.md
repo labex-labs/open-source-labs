@@ -147,5 +147,3 @@ reference must still be active at that point. Rust disallows the mutable
 reference in `clear` and the immutable reference in `word` from existing at the
 same time, and compilation fails. Not only has Rust made our API easier to use,
 but it has also eliminated an entire class of errors at compile time!
-
-#

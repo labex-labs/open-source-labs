@@ -12,5 +12,3 @@ data type commonly found in functional programming languages. The cons list
 type we’ll define is straightforward except for the recursion; therefore, the
 concepts in the example we’ll work with will be useful any time you get into
 more complex situations involving recursive types.
-
-#

@@ -77,5 +77,3 @@ interrupted by another thread. This could lead to wrong counts—subtle bugs tha
 could in turn lead to memory leaks or a value being dropped before we’re done
 with it. What we need is a type exactly like `Rc<T>` but one that makes changes
 to the reference count in a thread-safe way.
-
-#

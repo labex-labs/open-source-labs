@@ -105,5 +105,3 @@ Hello, world! 10 plus one is 11!
 ```
 
 This runs the code in `adder/src/main.rs`, which depends on the `add_one` crate.
-
-#

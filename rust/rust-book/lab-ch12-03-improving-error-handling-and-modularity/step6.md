@@ -19,5 +19,3 @@ a backtrace
 The line `index out of bounds: the len is 1 but the index is 1` is an error
 message intended for programmers. It won’t help our end users understand what
 they should do instead. Let’s fix that now.
-
-#

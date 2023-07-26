@@ -26,5 +26,3 @@ as planned!
 Management of mutexes can be incredibly tricky to get right, which is why so
 many people are enthusiastic about channels. However, thanks to Rust’s type
 system and ownership rules, you can’t get locking and unlocking wrong.
-
-#

@@ -48,5 +48,3 @@ crate’s dependencies) and open the result in a web browser. Navigate to the
 rendered, as shown in Figure 14-1.
 
 Figure 14-1: HTML documentation for the `add_one` function
-
-#

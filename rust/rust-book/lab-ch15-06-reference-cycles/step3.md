@@ -29,5 +29,3 @@ there won’t be an invalid pointer.
 As an example, rather than using a list whose items know only about the next
 item, we’ll create a tree whose items know about their children items _and_
 their parent items.
-
-#

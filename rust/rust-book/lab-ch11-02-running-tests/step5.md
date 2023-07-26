@@ -22,5 +22,3 @@ displaying `2 filtered out` at the end.
 
 We can’t specify the names of multiple tests in this way; only the first value
 given to `cargo test` will be used. But there is a way to run multiple tests.
-
-#

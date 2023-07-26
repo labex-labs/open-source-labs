@@ -86,5 +86,3 @@ it to handle appropriately.
 
 This pattern of propagating errors is so common in Rust that Rust provides the
 question mark operator `?` to make this easier.
-
-#

@@ -6,5 +6,3 @@ expected. You’ll put unit tests in the `src` directory in each file with the
 code that they’re testing. The convention is to create a module named `tests`
 in each file to contain the test functions and to annotate the module with
 `cfg(test)`.
-
-#

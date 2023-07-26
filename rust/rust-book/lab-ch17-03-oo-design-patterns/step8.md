@@ -78,5 +78,3 @@ The `DraftPost` struct has an `add_text` method, so we can add text to
 method defined! So now the program ensures all posts start as draft posts, and
 draft posts don’t have their content available for display. Any attempt to get
 around these constraints will result in a compiler error.
-
-#

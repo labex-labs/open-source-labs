@@ -165,5 +165,3 @@ yet!
 > were building a real, complete project, this would be a good time to start
 > writing unit tests to check that the code compiles _and_ has the behavior we
 > want.
-
-#

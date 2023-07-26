@@ -52,5 +52,3 @@ maintain the same functionality. The code in the search function isn’t too bad
 but it doesn’t take advantage of some useful features of iterators. We’ll
 return to this example in Chapter 13, where we’ll explore iterators in detail,
 and look at how to improve it.
-
-#

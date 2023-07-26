@@ -44,5 +44,3 @@ we’ll use compiler-driven development here. We’ll write the code that calls 
 functions we want, and then we’ll look at errors from the compiler to determine
 what we should change next to get the code to work. Before we do that, however,
 we’ll explore the technique we’re not going to use as a starting point.
-
-#

@@ -50,5 +50,3 @@ of the slice and indexes into specific locations. This will clarify what the
 Once `Config::build` takes ownership of the iterator and stops using indexing
 operations that borrow, we can move the `String` values from the iterator into
 `Config` rather than calling `clone` and making a new allocation.
-
-#

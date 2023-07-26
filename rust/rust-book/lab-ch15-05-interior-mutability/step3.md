@@ -36,5 +36,3 @@ a compiler error.
 
 Let’s work through a practical example where we can use `RefCell<T>` to mutate
 an immutable value and see why that is useful.
-
-#

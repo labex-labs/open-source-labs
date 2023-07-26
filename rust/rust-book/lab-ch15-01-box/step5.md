@@ -29,5 +29,3 @@ variant. The `Cons` variant holds a value of type `i32` and a value of type
 `List`, and this process continues infinitely, as shown in Figure 15-1.
 
 Figure 15-1: An infinite `List` consisting of infinite `Cons` variants
-
-#

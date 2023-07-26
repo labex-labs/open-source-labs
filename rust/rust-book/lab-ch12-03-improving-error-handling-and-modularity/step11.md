@@ -68,5 +68,3 @@ Rust tells us that our code ignored the `Result` value and the `Result` value
 might indicate that an error occurred. But we’re not checking to see whether or
 not there was an error, and the compiler reminds us that we probably meant to
 have some error-handling code here! Let’s rectify that problem now.
-
-#

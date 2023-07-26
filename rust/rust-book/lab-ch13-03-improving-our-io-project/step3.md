@@ -72,5 +72,3 @@ implements the `Iterator` type and returns `String` items.
 Because we’re taking ownership of `args` and we’ll be mutating `args` by
 iterating over it, we can add the `mut` keyword into the specification of the
 `args` parameter to make it mutable.
-
-#

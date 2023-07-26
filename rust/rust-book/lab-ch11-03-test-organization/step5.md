@@ -7,5 +7,3 @@ whether many parts of your library work together correctly. Units of code that
 work correctly on their own could have problems when integrated, so test
 coverage of the integrated code is important as well. To create integration
 tests, you first need a `tests` directory.
-
-#

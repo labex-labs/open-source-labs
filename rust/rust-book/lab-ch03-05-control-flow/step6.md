@@ -46,5 +46,3 @@ game by guessing the correct number.
 We also used `continue` in the guessing game, which in a loop tells the program
 to skip over any remaining code in this iteration of the loop and go to the
 next iteration.
-
-#

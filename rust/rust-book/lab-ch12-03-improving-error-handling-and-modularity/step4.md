@@ -88,5 +88,3 @@ Now our code more clearly conveys that `query` and `file_path` are related and
 that their purpose is to configure how the program will work. Any code that
 uses these values knows to find them in the `config` instance in the fields
 named for their purpose.
-
-#

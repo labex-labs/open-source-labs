@@ -27,5 +27,3 @@ can’t test the `main` function directly, this structure lets you test all of
 your program’s logic by moving it into functions in `lib.rs`. The code that
 remains in `main.rs` will be small enough to verify its correctness by reading
 it. Let’s rework our program by following this process.
-
-#

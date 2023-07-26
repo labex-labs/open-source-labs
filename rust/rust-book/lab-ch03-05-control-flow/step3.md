@@ -42,5 +42,3 @@ condition, and once it finds one, it doesn’t even check the rest.
 Using too many `else if` expressions can clutter your code, so if you have more
 than one, you might want to refactor your code. Chapter 6 describes a powerful
 Rust branching construct called `match` for these cases.
-
-#

@@ -20,5 +20,3 @@ that come from the `Summary` trait, such as `summarize`. We can call `notify`
 and pass in any instance of `NewsArticle` or `Tweet`. Code that calls the
 function with any other type, such as a `String` or an `i32`, won’t compile
 because those types don’t implement `Summary`.
-
-#

@@ -64,5 +64,3 @@ this allocation up front is slightly more efficient than using `Vec::new`,
 which resizes itself as elements are inserted.
 
 When you run `cargo check` again, it should succeed.
-
-#

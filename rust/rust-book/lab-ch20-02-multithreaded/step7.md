@@ -50,5 +50,3 @@ pub fn build(
     size: usize
 ) -> Result<ThreadPool, PoolCreationError> {
 ```
-
-#

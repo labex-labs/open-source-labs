@@ -33,5 +33,3 @@ running tests. By using the `cfg` attribute, Cargo compiles our test code only
 if we actively run the tests with `cargo test`. This includes any helper
 functions that might be within this module, in addition to the functions
 annotated with `#[test]`.
-
-#

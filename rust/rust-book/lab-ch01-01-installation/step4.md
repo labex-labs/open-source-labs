@@ -18,18 +18,6 @@ If you see this information, you have installed Rust successfully! If you don’
 see this information, check that Rust is in your `%PATH%` system variable as
 follows.
 
-In Windows CMD, use:
-
-```rust
-> echo %PATH%
-```
-
-In PowerShell, use:
-
-```rust
-> echo $env:Path
-```
-
 In Linux and macOS, use:
 
 ```bash

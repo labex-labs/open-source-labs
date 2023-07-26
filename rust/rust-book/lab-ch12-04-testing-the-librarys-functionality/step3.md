@@ -10,5 +10,3 @@ that and implement `search`, our program needs to follow these steps:
 1. Return the list of results that match.
 
 Let’s work through each step, starting with iterating through lines.
-
-#

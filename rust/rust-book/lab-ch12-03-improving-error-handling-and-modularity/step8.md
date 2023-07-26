@@ -45,5 +45,3 @@ function conform to its new type signature.
 Returning an `Err` value from `Config::build` allows the `main` function to
 handle the `Result` value returned from the `build` function and exit the
 process more cleanly in the error case.
-
-#

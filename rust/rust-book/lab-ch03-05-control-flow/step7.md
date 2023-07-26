@@ -30,5 +30,3 @@ and then check whether the `counter` is equal to `10`. When it is, we use the
 `break` keyword with the value `counter * 2`. After the loop, we use a
 semicolon to end the statement that assigns the value to `result`. Finally, we
 print the value in `result`, which in this case is `20`.
-
-#

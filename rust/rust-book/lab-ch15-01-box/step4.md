@@ -96,5 +96,3 @@ The error shows this type “has infinite size.” The reason is that we’ve de
 directly. As a result, Rust can’t figure out how much space it needs to store a
 `List` value. Let’s break down why we get this error. First we’ll look at how
 Rust decides how much space it needs to store a value of a non-recursive type.
-
-#

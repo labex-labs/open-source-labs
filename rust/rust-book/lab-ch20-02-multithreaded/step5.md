@@ -30,5 +30,3 @@ a similar interface as `thread::spawn` in that it takes a closure the pool
 should run for each stream [2]. We need to implement `pool.execute` so it takes
 the closure and gives it to a thread in the pool to run. This code won’t yet
 compile, but we’ll try so that the compiler can guide us in how to fix it.
-
-#

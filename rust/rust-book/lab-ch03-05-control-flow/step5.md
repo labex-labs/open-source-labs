@@ -6,5 +6,3 @@ body to the end and then start immediately back at the beginning. To experiment
 with loops, let’s make a new project called _loops_.
 
 Rust has three kinds of loops: `loop`, `while`, and `for`. Let’s try each one.
-
-#

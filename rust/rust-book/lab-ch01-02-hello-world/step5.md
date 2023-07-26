@@ -22,21 +22,7 @@ $ ls
 main main.rs
 ```
 
-On Linux and macOS, you’ll see two files. With PowerShell on Windows, you’ll
-see the same three files that you would see using CMD. With CMD on Windows, you
-would enter the following:
-
-```bash
-/B > dir %= the /B option says to only show the file names =%
-main.exe
-main.pdb
-main.rs
-```
-
-This shows the source code file with the `.rs` extension, the executable file
-(_main.exe_ on Windows, but _main_ on all other platforms), and, when using
-Windows, a file containing debugging information with the _.pdb_ extension.
-From here, you run the _main_ or _main.exe_ file, like this:
+From here, you run the `main` file, like this:
 
 ```bash
 ./main
@@ -49,8 +35,8 @@ If you’re more familiar with a dynamic language, such as Ruby, Python, or
 JavaScript, you might not be used to compiling and running a program as
 separate steps. Rust is an _ahead-of-time compiled_ language, meaning you can
 compile a program and give the executable to someone else, and they can run it
-even without having Rust installed. If you give someone a _.rb_, _.py_, or
-_.js_ file, they need to have a Ruby, Python, or JavaScript implementation
+even without having Rust installed. If you give someone a `.rb`, `.py`, or
+`.js` file, they need to have a Ruby, Python, or JavaScript implementation
 installed (respectively). But in those languages, you only need one command to
 compile and run your program. Everything is a trade-off in language design.
 

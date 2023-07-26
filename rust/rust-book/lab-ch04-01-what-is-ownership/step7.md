@@ -20,5 +20,3 @@ where the heap data _does_ get copied.
 When you see a call to `clone`, you know that some arbitrary code is being
 executed and that code may be expensive. It’s a visual indicator that something
 different is going on.
-
-#

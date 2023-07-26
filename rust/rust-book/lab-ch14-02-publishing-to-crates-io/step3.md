@@ -18,5 +18,3 @@ authors commonly use in their documentation:
 Most documentation comments don’t need all of these sections, but this is a
 good checklist to remind you of the aspects of your code users will be
 interested in knowing about.
-
-#

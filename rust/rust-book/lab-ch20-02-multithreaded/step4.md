@@ -33,5 +33,3 @@ _/sleep_ in your browser, then _/_ in two more browser tabs, you’ll indeed see
 that the requests to _/_ don’t have to wait for _/sleep_ to finish. However, as
 we mentioned, this will eventually overwhelm the system because you’d be making
 new threads without any limit.
-
-#

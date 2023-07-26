@@ -21,5 +21,3 @@ Listing 8-23: Replacing a value stored with a particular key
 
 This code will print `{"Blue": 25}`. The original value of `10` has been
 overwritten.
-
-#

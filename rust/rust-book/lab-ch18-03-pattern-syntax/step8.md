@@ -60,5 +60,3 @@ element [4] and `Message::ChangeColor` that holds a tuple with three elements
 [5], the pattern is similar to the pattern we specify to match tuples. The
 number of variables in the pattern must match the number of elements in the
 variant we’re matching.
-
-#

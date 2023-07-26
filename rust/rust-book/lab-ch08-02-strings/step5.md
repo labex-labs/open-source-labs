@@ -39,5 +39,3 @@ s.push('l');
 Listing 8-17: Adding one character to a `String` value using `push`
 
 As a result, `s` will contain `lol`.
-
-#

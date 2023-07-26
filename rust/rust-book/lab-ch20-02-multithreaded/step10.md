@@ -196,5 +196,3 @@ each new `Worker`, we clone the `Arc` to bump the reference count so the
 `Worker` instances can share ownership of the receiver [2].
 
 With these changes, the code compiles! We’re getting there!
-
-#

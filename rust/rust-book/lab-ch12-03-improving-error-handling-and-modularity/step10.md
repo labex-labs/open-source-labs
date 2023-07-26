@@ -40,5 +40,3 @@ logic
 The `run` function now contains all the remaining logic from `main`, starting
 from reading the file. The `run` function takes the `Config` instance as an
 argument.
-
-#

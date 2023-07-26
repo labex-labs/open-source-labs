@@ -57,5 +57,3 @@ This pattern has a profound impact on the way Rust code is written. It may seem
 simple right now, but the behavior of code can be unexpected in more
 complicated situations when we want to have multiple variables use the data
 we’ve allocated on the heap. Let’s explore some of those situations now.
-
-#

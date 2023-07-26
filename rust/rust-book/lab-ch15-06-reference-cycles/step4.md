@@ -52,5 +52,3 @@ We clone the `Rc<Node>` in `leaf` and store that in `branch`, meaning the
 `leaf` to `branch`. The reason is that `leaf` has no reference to `branch` and
 doesn’t know they’re related. We want `leaf` to know that `branch` is its
 parent. We’ll do that next.
-
-#

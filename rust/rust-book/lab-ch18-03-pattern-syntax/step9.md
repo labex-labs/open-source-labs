@@ -43,5 +43,3 @@ the pattern binds to the three inner `i32` values. The pattern of the second
 arm also matches a `Message::ChangeColor` enum variant, but the inner enum
 matches `Color::Hsv` instead. We can specify these complex conditions in one
 `match` expression, even though two enums are involved.
-
-#

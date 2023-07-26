@@ -51,5 +51,3 @@ automatically.
 
 After dropping the lock, we can print the mutex value and see that we were able
 to change the inner `i32` to `6` [5].
-
-#

@@ -26,5 +26,3 @@ in `query`
 At the moment, we’re building up functionality. To get the code to compile, we
 need to return a value from the body as we indicated we would in the function
 signature.
-
-#

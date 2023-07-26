@@ -38,5 +38,3 @@ first call to `entry` will insert the key for the Yellow team with the value
 `50` because the Yellow team doesn’t have a value already. The second call to
 `entry` will not change the hash map because the Blue team already has the
 value `10`.
-
-#

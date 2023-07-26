@@ -29,5 +29,3 @@ you’re implementing a trait when you need a certain type signature but the
 function body in your implementation doesn’t need one of the parameters. You
 then avoid getting a compiler warning about unused function parameters, as you
 would if you used a name instead.
-
-#

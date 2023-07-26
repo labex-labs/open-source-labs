@@ -11,5 +11,3 @@ old value with the new value, completely disregarding the old value. You could
 keep the old value and ignore the new value, only adding the new value if the
 key _doesn’t_ already have a value. Or you could combine the old value and the
 new value. Let’s look at how to do each of these!
-
-#

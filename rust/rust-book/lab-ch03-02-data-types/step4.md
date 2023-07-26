@@ -20,5 +20,3 @@ fn main() {
 
 Floating-point numbers are represented according to the IEEE-754 standard. The
 `f32` type is a single-precision float, and `f64` has double precision.
-
-#

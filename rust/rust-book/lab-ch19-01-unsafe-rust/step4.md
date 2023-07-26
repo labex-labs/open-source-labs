@@ -42,5 +42,3 @@ we’re fulfilling the contract of the function.
 Bodies of unsafe functions are effectively `unsafe` blocks, so to perform other
 unsafe operations within an unsafe function, we don’t need to add another
 `unsafe` block.
-
-#

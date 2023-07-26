@@ -86,5 +86,3 @@ some sort of collection.
 >   the `overflowing_*` methods.
 > - Saturate at the value’s minimum or maximum values with the `saturating_*`
 >   methods.
-
-#

@@ -18,5 +18,3 @@ have a reproducible build automatically. In other words, your project will
 remain at 0.8.5 until you explicitly upgrade, thanks to the _Cargo.lock_ file.
 Because the _Cargo.lock_ file is important for reproducible builds, it’s often
 checked into source control with the rest of the code in your project.
-
-#

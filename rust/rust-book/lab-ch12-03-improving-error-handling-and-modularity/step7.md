@@ -46,5 +46,3 @@ technique we used in Listing 9-13 isn’t the best one to use here: a call to
 discussed in Chapter 9. Instead, we’ll use the other technique you learned
 about in Chapter 9—returning a `Result` that indicates either success or an
 error.
-
-#

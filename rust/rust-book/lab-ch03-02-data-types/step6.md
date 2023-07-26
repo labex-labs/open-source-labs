@@ -17,5 +17,3 @@ fn main() {
 The main way to use Boolean values is through conditionals, such as an `if`
 expression. We’ll cover how `if` expressions work in Rust in “Control Flow” on
 page XX.
-
-#

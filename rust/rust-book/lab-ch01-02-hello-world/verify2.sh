@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-ls hello_world
+ls ~/project/hello_world/

@@ -28,5 +28,3 @@ error[E0277]: the type `String` cannot be indexed by `{integer}`
 The error and the note tell the story: Rust strings don’t support indexing. But
 why not? To answer that question, we need to discuss how Rust stores strings in
 memory.
-
-#

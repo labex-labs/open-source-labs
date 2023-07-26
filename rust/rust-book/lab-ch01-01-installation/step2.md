@@ -20,12 +20,6 @@ linker errors, you should install a C compiler, which will typically include a
 linker. A C compiler is also useful because some common Rust packages depend on
 C code and will need a C compiler.
 
-On macOS, you can get a C compiler by running:
-
-```bash
-xcode-select --install
-```
-
 Linux users should generally install GCC or Clang, according to their
 distribution’s documentation. For example, if you use Ubuntu, you can install
 the `build-essential` package.

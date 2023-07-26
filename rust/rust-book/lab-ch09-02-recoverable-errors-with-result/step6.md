@@ -104,5 +104,3 @@ file, creates a new `String`, reads the contents of the file, puts the contents
 into that `String`, and returns it. Of course, using `fs::read_to_string`
 doesn’t give us the opportunity to explain all the error handling, so we did it
 the longer way first.
-
-#

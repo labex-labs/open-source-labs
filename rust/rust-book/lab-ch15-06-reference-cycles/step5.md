@@ -101,5 +101,3 @@ children: RefCell { value: [] } }] } })
 The lack of infinite output indicates that this code didn’t create a reference
 cycle. We can also tell this by looking at the values we get from calling
 `Rc::strong_count` and `Rc::weak_count`.
-
-#

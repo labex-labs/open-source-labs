@@ -34,5 +34,3 @@ pub fn notify<T: Summary>(item1: &T, item2: &T) {
 The generic type `T` specified as the type of the `item1` and `item2`
 parameters constrains the function such that the concrete type of the value
 passed as an argument for `item1` and `item2` must be the same.
-
-#

@@ -57,5 +57,3 @@ additional copies of `rand` will be downloaded. Cargo has ensured that every
 crate in every package in the workspace using the `rand` package will be using
 the same version, saving us space and ensuring that the crates in the workspace
 will be compatible with each other.
-
-#

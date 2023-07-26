@@ -30,5 +30,3 @@ fn main() {
 Each expression in these statements uses a mathematical operator and evaluates
 to a single value, which is then bound to a variable. Appendix B contains a
 list of all operators that Rust provides.
-
-#

@@ -109,5 +109,3 @@ filtered out; finished in 0.00s
 ```
 
 This command runs only the tests in the \_tests/integration`test.rs` file.
-
-#

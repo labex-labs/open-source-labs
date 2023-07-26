@@ -54,5 +54,3 @@ let a = [3; 5];
 The array named `a` will contain `5` elements that will all be set to the value
 `3` initially. This is the same as writing `let a = [3, 3, 3, 3, 3];` but in a
 more concise way.
-
-#

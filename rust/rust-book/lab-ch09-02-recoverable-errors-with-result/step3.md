@@ -31,5 +31,3 @@ Although this code has the same behavior as Listing 9-5, it doesn’t contain an
 you’ve read Chapter 13, and look up the `unwrap_or_else` method in the standard
 library documentation. Many more of these methods can clean up huge nested
 `match` expressions when you’re dealing with errors.
-
-#

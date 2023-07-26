@@ -107,5 +107,3 @@ empty closure [6].
 This code will compile and will store the number of `Worker` instances we
 specified as an argument to `ThreadPool::new`. But we’re _still_ not processing
 the closure that we get in `execute`. Let’s look at how to do that next.
-
-#
