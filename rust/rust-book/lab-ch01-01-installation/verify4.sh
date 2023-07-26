@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-rustc --version
+cat ~/.zsh_history | grep "rustup update"

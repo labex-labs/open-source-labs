@@ -19,7 +19,6 @@ skills = [
     "pointer",
     "reference",
     "slice",
-    "str",
     "tuple",
     "u8",
     "u16",
@@ -96,7 +95,6 @@ skills = [
     "debug_assert_ne",
     "eprint",
     "eprintln",
-    "file",
     "format",
     "format_args",
     "include",
@@ -118,7 +116,6 @@ skills = [
     "write",
     "writeln",
     "selfty",
-    "as",
     "async",
     "await",
     "break",
@@ -133,7 +130,6 @@ skills = [
     "for",
     "if",
     "impl",
-    "in",
     "let",
     "loop",
     "match",
@@ -155,6 +151,8 @@ skills = [
     "use",
     "where",
     "while",
+    "rustc",
+    "rustup",
 ]
 
 
@@ -168,11 +166,30 @@ for root, dirs, files in os.walk("./rust"):
             file_skills = []
             try:
                 # code block begin with ```rust and end with ```
-                code_block = content.split("```rust")[1].split("```")[0]
-                for skill in skills:
-                    if skill in code_block:
-                        file_skills.append(skill)
+                # each content has multiple code blocks
+                if "```rust" in content:
+                    code_blocks = content.split("```rust")[1:]
+                    for code_block in code_blocks:
+                        if "```" in code_block:
+                            code_block = code_block.split("```")[0]
+                            # remove line breaks
+                            code_block = code_block.replace("\n", "")
+                            # split by space
+                            code_block = code_block.split(" ")
+                            for block in code_block:
+                                for skill in skills:
+                                    if skill in code_block:
+                                        file_skills.append(f"rust/{skill}")
             except IndexError:
                 pass
-            if len(file_skills) == 0:
+            try:
+                index_path = os.path.join(root, "index.json")
+                with open(index_path, "r") as f:
+                    index = json.load(f)
+                    steps = index["details"]["steps"]
+                    step_index = int(file.split(".")[0].split("step")[1])
+                    steps[step_index - 1]["skills"] = list(set(file_skills))
+                with open(index_path, "w") as f:
+                    json.dump(index, f, indent=2)
+            except Exception as e:
                 print(file_path)
