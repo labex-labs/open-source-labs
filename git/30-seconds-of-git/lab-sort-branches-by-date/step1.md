@@ -2,7 +2,7 @@
 
 You have a Git repository with multiple branches, and you want to sort them by date. This will allow you to see which branches have been updated recently and which ones have not. Sorting branches by date can also help you identify branches that may need attention or merging.
 
-For this lab, we will be using the Git repository named `https://github.com/labex-labs/git-playground`.
+For this lab, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
 1. Clone the repository to your local machine:
 ```shell
@@ -31,4 +31,8 @@ git checkout -b two
 git branch --sort=-committerdate
 ```
 
-This will display a list of all local branches and sort them based on the date of their last commit. You can use the arrow keys to navigate the list, and press Q to exit.
+This will display a list of all local branches and sort them based on the date of their last commit. You can use the arrow keys to navigate the list, and press <kbd>Q</kbd> to exit.
+
+This is the finished result:
+
+![<result>](./assets/challenge-sort-branches-by-date.png)

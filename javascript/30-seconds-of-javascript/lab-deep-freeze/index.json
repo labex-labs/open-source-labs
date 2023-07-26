@@ -1,0 +1,51 @@
+{
+  "type": "lab",
+  "title": "Deep Freeze Object",
+  "description": "In this lab, we will explore how to deep freeze an object in JavaScript. We will learn how to use the `Object.freeze()` method recursively to freeze all properties of an object, making it immutable. By the end of this lab, you will have a better understanding of how to prevent modifications to objects and ensure data integrity in your JavaScript code.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Deep Freeze Object",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Open the Terminal/SSH and type 'node'",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["js/obj_keys", "js/freeze", "js/arr_for_each"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/tmp"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  }
+}

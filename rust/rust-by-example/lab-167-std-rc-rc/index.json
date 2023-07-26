@@ -1,0 +1,51 @@
+{
+  "type": "lab",
+  "title": "Rc",
+  "description": "In this lab, we explore the usage of `Rc` (Reference Counting) in Rust which allows for managing ownership of a value by keeping track of the number of references.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Rc",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/placeholder"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/rust-by-example"
+  }
+}

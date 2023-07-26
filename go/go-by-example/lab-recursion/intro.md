@@ -1,3 +1,3 @@
 # Recursion
 
-This challenge will test your understanding of recursive functions in Golang.
+This lab will test your understanding of recursive functions in Golang.

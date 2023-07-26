@@ -1,4 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
-cat ~/.zsh_history | grep -v grep | grep "git fetch"
-cat ~/.zsh_history | grep -v grep | grep "git rebase"
+(cd /home/labex/project/git-playground && git checkout one-branch && git log | grep "Added some changes to README.md") && (cd /home/labex/project/git-playground && git checkout master && git log | grep "Added some changes to README.md") && (cd /home/labex/project/git-playground && git checkout master && ! git log | grep "merge") && echo "True"

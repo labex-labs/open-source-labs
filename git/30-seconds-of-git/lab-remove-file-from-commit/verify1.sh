@@ -1,3 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git commit"
-cat ~/.zsh_history | grep -v grep | grep "git rm"
+(cd /home/labex/project/git-playground && ! git show HEAD | less -R | grep "diff") &&(cd /home/labex/project/git-playground && git show HEAD | less -R | grep "Added file2.txt") && echo "True"
+

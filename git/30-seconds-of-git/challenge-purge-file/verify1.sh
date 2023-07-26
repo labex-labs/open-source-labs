@@ -1,4 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git filter-branch"
-cat ~/.zsh_history | grep -v grep | grep "git rm"
-cat ~/.zsh_history | grep -v grep | grep "git push"
+(cd /home/labex/project/git-playground && ! git log --remotes | grep "file1.txt") && echo "True"

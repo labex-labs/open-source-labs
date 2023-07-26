@@ -1,3 +1,3 @@
-# Golang Challenge: Command Line Subcommands
+# Command Line Subcommands
 
-This challenge aims to test your ability to define and use subcommands with their own set of flags in Golang.
+This lab aims to test your ability to define and use subcommands with their own set of flags in Golang.

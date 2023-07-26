@@ -1,16 +1,12 @@
-# Golang Challenge: Range
+# Range
 
 ## Introduction
 
-The `range` keyword is used to iterate over elements in a variety of data structures in Golang. In this challenge, we will explore how to use `range` with different data structures.
+The `range` keyword is used to iterate over elements in a variety of data structures in Golang. In this lab, we will explore how to use `range` with different data structures.
 
-## Problem
+The problem to be solved in this lab is to demonstrate how to use `range` with slices, arrays, maps, and strings.
 
-The problem to be solved in this challenge is to demonstrate how to use `range` with slices, arrays, maps, and strings.
-
-## Requirements
-
-To complete this challenge, you will need:
+To complete this lab, you will need:
 
 - Basic knowledge of Golang syntax
 - Golang installed on your machine
@@ -18,8 +14,6 @@ To complete this challenge, you will need:
 ## TODO
 
 Complete the code blocks marked with `TODO` to demonstrate how to use `range` with different data structures.
-
-## Example
 
 ```
 sum: 9
@@ -34,4 +28,4 @@ key: b
 
 ## Summary
 
-In this challenge, we learned how to use `range` with slices, arrays, maps, and strings in Golang. The `range` keyword provides a convenient way to iterate over elements in different data structures.
+In this lab, we learned how to use `range` with slices, arrays, maps, and strings in Golang. The `range` keyword provides a convenient way to iterate over elements in different data structures.

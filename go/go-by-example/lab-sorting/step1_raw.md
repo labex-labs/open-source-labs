@@ -2,13 +2,9 @@
 
 ## Introduction
 
-The Go programming language provides a built-in package named `sort` that implements sorting for builtins and user-defined types. In this challenge, we will focus on sorting for builtins.
+The Go programming language provides a built-in package named `sort` that implements sorting for builtins and user-defined types. In this lab, we will focus on sorting for builtins.
 
-## Problem
-
-The problem to be solved in this challenge is to sort slices of strings and integers using the `sort` package.
-
-## Requirements
+The problem to be solved in this lab is to sort slices of strings and integers using the `sort` package.
 
 - The `sort` package must be imported.
 - The `sort.Strings()` function must be used to sort a slice of strings.
@@ -43,8 +39,6 @@ func main() {
 	fmt.Println("Sorted: ", s)
 }
 ```
-
-## Example
 
 ```
 Strings: [a b c]

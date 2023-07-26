@@ -1,2 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git rebase"
+(cd /home/labex/project/git-playground && ! git log | grep "Added file2.txt") && (cd /home/labex/project/git-playground && ! git log | grep "Added file1.txt") && (cd /home/labex/project/git-playground && git log | grep "Added file1.txt and file2.txt")&&echo "True"
+
