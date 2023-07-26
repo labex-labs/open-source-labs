@@ -59,7 +59,7 @@ are no parameters; and the curly bracket, `{`, starts the body of the function.
 As you also learned in Chapter 1, `println!` is a macro that prints a string to
 the screen:
 
-```
+```rust
 println!("Guess the number!");
 
 println!("Please input your guess.");

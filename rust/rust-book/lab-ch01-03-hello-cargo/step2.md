@@ -6,6 +6,7 @@ original “Hello, world!” project. Navigate back to your `project` directory
 run the following:
 
 ```bash
+cd ~/project
 cargo new hello_cargo
 cd hello_cargo
 ```
