@@ -1,12 +1,9 @@
 # Bounds
 
-Just like generic types can be bounded, lifetimes (themselves generic)
-use bounds as well. The `:` character has a slightly different meaning here,
-but `+` is the same. Note how the following read:
+Just like generic types can be bounded, lifetimes (themselves generic) use bounds as well. The `:` character has a slightly different meaning here, but `+` is the same. Note how the following read:
 
-1. `T: 'a`: _All_ references in `T` must outlive lifetime `'a`.
-2. `T: Trait + 'a`: Type `T` must implement trait `Trait` and _all_ references
-   in `T` must outlive `'a`.
+1.  `T: 'a`: _All_ references in `T` must outlive lifetime `'a`.
+2.  `T: Trait + 'a`: Type `T` must implement trait `Trait` and _all_ references in `T` must outlive `'a`.
 
 The example below shows the above syntax in action used after keyword `where`:
 

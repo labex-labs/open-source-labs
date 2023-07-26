@@ -1,12 +1,9 @@
 # constants
 
-Rust has two different types of constants which can be declared in any scope
-including global. Both require explicit type annotation:
+Rust has two different types of constants which can be declared in any scope including global. Both require explicit type annotation:
 
 - `const`: An unchangeable value (the common case).
-- `static`: A possibly `mut`able variable with `'static` lifetime.
-  The static lifetime is inferred and does not have to be specified.
-  Accessing or modifying a mutable static variable is `unsafe`.
+- `static`: A possibly `mut`able variable with `'static` lifetime. The static lifetime is inferred and does not have to be specified. Accessing or modifying a mutable static variable is `unsafe`.
 
 ```rust
 // Globals are declared outside all other scopes.

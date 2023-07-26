@@ -1,31 +1,20 @@
 # Variable Scope
 
-Now that we’re past basic Rust syntax, we won’t include all the `fn main() {`
-code in examples, so if you’re following along, make sure to put the following
-examples inside a `main` function manually. As a result, our examples will be a
-bit more concise, letting us focus on the actual details rather than
-boilerplate code.
+Now that we're past basic Rust syntax, we won't include all the `fn main() {` code in examples, so if you're following along, make sure to put the following examples inside a `main` function manually. As a result, our examples will be a bit more concise, letting us focus on the actual details rather than boilerplate code.
 
-As a first example of ownership, we’ll look at the _scope_ of some variables. A
-scope is the range within a program for which an item is valid. Take the
-following variable:
+As a first example of ownership, we'll look at the _scope_ of some variables. A scope is the range within a program for which an item is valid. Take the following variable:
 
 ```rust
 let s = "hello";
 ```
 
-The variable `s` refers to a string literal, where the value of the string is
-hardcoded into the text of our program. The variable is valid from the point at
-which it’s declared until the end of the current _scope_. Listing 4-1 shows a
-program with comments annotating where the variable `s` would be valid.
+The variable `s` refers to a string literal, where the value of the string is hardcoded into the text of our program. The variable is valid from the point at which it's declared until the end of the current _scope_. Listing 4-1 shows a program with comments annotating where the variable `s` would be valid.
 
-```
-{                      // s is not valid here, since it's not yet declared
-    let s = "hello";   // s is valid from this point forward
+    {                      // s is not valid here, since it's not yet declared
+        let s = "hello";   // s is valid from this point forward
 
-    // do stuff with s
-}                      // this scope is now over, and s is no longer valid
-```
+        // do stuff with s
+    }                      // this scope is now over, and s is no longer valid
 
 Listing 4-1: A variable and the scope in which it is valid
 
@@ -34,6 +23,4 @@ In other words, there are two important points in time here:
 - When `s` comes _into_ scope, it is valid.
 - It remains valid until it goes _out of_ scope.
 
-At this point, the relationship between scopes and when variables are valid is
-similar to that in other programming languages. Now we’ll build on top of this
-understanding by introducing the `String` type.
+At this point, the relationship between scopes and when variables are valid is similar to that in other programming languages. Now we'll build on top of this understanding by introducing the `String` type.

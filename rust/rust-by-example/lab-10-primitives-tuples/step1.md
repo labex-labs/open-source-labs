@@ -60,29 +60,29 @@ fn main() {
 
 ## Activity
 
-1. _Recap_: Add the `fmt::Display` trait to the `Matrix` struct in the above example, so that if you switch from printing the debug format `{:?}` to the display format `{}`, you see the following output:
+1.  _Recap_: Add the `fmt::Display` trait to the `Matrix` struct in the above example, so that if you switch from printing the debug format `{:?}` to the display format `{}`, you see the following output:
 
-   ```text
-   ( 1.1 1.2 )
-   ( 2.1 2.2 )
-   ```
+    ```text
+    ( 1.1 1.2 )
+    ( 2.1 2.2 )
+    ```
 
-   You may want to refer back to the example for print display.
+    You may want to refer back to the example for print display.
 
-2. Add a `transpose` function using the `reverse` function as a template, which accepts a matrix as an argument, and returns a matrix in which two elements have been swapped. For example:
+2.  Add a `transpose` function using the `reverse` function as a template, which accepts a matrix as an argument, and returns a matrix in which two elements have been swapped. For example:
 
-   ```rust
-   println!("Matrix:\n{}", matrix);
-   println!("Transpose:\n{}", transpose(matrix));
-   ```
+    ```rust
+    println!("Matrix:\n{}", matrix);
+    println!("Transpose:\n{}", transpose(matrix));
+    ```
 
-   Results in the output:
+    Results in the output:
 
-   ```text
-   Matrix:
-   ( 1.1 1.2 )
-   ( 2.1 2.2 )
-   Transpose:
-   ( 1.1 2.1 )
-   ( 1.2 2.2 )
-   ```
+    ```text
+    Matrix:
+    ( 1.1 1.2 )
+    ( 2.1 2.2 )
+    Transpose:
+    ( 1.1 2.1 )
+    ( 1.2 2.2 )
+    ```

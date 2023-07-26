@@ -1,7 +1,6 @@
 # Pulling `Result`s out of `Option`s
 
-The most basic way of handling mixed error types is to just embed them in each
-other.
+The most basic way of handling mixed error types is to just embed them in each other.
 
 ```rust
 use std::num::ParseIntError;
@@ -27,9 +26,7 @@ fn main() {
 }
 ```
 
-There are times when we'll want to stop processing on errors (like with
-`?`) but keep going when the `Option` is `None`. A
-couple of combinators come in handy to swap the `Result` and `Option`.
+There are times when we'll want to stop processing on errors (like with `?`) but keep going when the `Option` is `None`. A couple of combinators come in handy to swap the `Result` and `Option`.
 
 ```rust
 use std::num::ParseIntError;

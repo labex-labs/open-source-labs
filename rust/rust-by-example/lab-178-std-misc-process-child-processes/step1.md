@@ -1,7 +1,6 @@
 # Child processes
 
-The `process::Output` struct represents the output of a finished child process,
-and the `process::Command` struct is a process builder.
+The `process::Output` struct represents the output of a finished child process, and the `process::Command` struct is a process builder.
 
 ```rust
 use std::process::Command;
@@ -25,5 +24,4 @@ fn main() {
 }
 ```
 
-(You are encouraged to try the previous example with an incorrect flag passed
-to `rustc`)
+(You are encouraged to try the previous example with an incorrect flag passed to `rustc`)

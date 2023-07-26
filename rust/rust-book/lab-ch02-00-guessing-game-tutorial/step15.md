@@ -1,7 +1,6 @@
 # Allowing Multiple Guesses with Looping
 
-The `loop` keyword creates an infinite loop. We’ll add a loop to give users
-more chances at guessing the number:
+The `loop` keyword creates an infinite loop. We'll add a loop to give users more chances at guessing the number:
 
 Filename: `src/main.rs`
 
@@ -23,16 +22,9 @@ loop {
 }
 ```
 
-As you can see, we’ve moved everything from the guess input prompt onward into
-a loop. Be sure to indent the lines inside the loop another four spaces each
-and run the program again. The program will now ask for another guess forever,
-which actually introduces a new problem. It doesn’t seem like the user can quit!
+As you can see, we've moved everything from the guess input prompt onward into a loop. Be sure to indent the lines inside the loop another four spaces each and run the program again. The program will now ask for another guess forever, which actually introduces a new problem. It doesn't seem like the user can quit!
 
-The user could always interrupt the program by using the keyboard shortcut
-ctrl-C. But there’s another way to escape this insatiable monster, as mentioned
-in the `parse` discussion in “Comparing the Guess to the Secret Number” on page
-XX: if the user enters a non-number answer, the program will crash. We can take
-advantage of that to allow the user to quit, as shown here:
+The user could always interrupt the program by using the keyboard shortcut ctrl-C. But there's another way to escape this insatiable monster, as mentioned in the `parse` discussion in "Comparing the Guess to the Secret Number" on page XX: if the user enters a non-number answer, the program will crash. We can take advantage of that to allow the user to quit, as shown here:
 
 ```bash
 $ cargo run
@@ -60,6 +52,4 @@ thread 'main' panicked at 'Please type a number!: ParseIntError
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
-Typing `quit` will quit the game, but as you’ll notice, so will entering any
-other non-number input. This is suboptimal, to say the least; we want the game
-to also stop when the correct number is guessed.
+Typing `quit` will quit the game, but as you'll notice, so will entering any other non-number input. This is suboptimal, to say the least; we want the game to also stop when the correct number is guessed.

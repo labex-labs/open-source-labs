@@ -1,9 +1,6 @@
 # Generic Lifetimes in Functions
 
-We’ll write a function that returns the longer of two string slices. This
-function will take two string slices and return a single string slice. After
-we’ve implemented the `longest` function, the code in Listing 10-19 should
-print `The longest string is abcd`.
+We'll write a function that returns the longer of two string slices. This function will take two string slices and return a single string slice. After we've implemented the `longest` function, the code in Listing 10-19 should print `The longest string is abcd`.
 
 Filename: `src/main.rs`
 
@@ -17,17 +14,11 @@ fn main() {
 }
 ```
 
-Listing 10-19: A `main` function that calls the `longest` function to find the
-longer of two string slices
+Listing 10-19: A `main` function that calls the `longest` function to find the longer of two string slices
 
-Note that we want the function to take string slices, which are references,
-rather than strings, because we don’t want the `longest` function to take
-ownership of its parameters. Refer to “String Slices as Parameters” on page XX
-for more discussion about why the parameters we use in Listing 10-19 are the
-ones we want.
+Note that we want the function to take string slices, which are references, rather than strings, because we don't want the `longest` function to take ownership of its parameters. Refer to "String Slices as Parameters" on page XX for more discussion about why the parameters we use in Listing 10-19 are the ones we want.
 
-If we try to implement the `longest` function as shown in Listing 10-20, it
-won’t compile.
+If we try to implement the `longest` function as shown in Listing 10-20, it won't compile.
 
 Filename: `src/main.rs`
 
@@ -41,8 +32,7 @@ fn longest(x: &str, y: &str) -> &str {
 }
 ```
 
-Listing 10-20: An implementation of the `longest` function that returns the
-longer of two string slices but does not yet compile
+Listing 10-20: An implementation of the `longest` function that returns the longer of two string slices but does not yet compile
 
 Instead, we get the following error that talks about lifetimes:
 
@@ -61,19 +51,6 @@ help: consider introducing a named lifetime parameter
   |           ++++     ++          ++          ++
 ```
 
-The help text reveals that the return type needs a generic lifetime parameter
-on it because Rust can’t tell whether the reference being returned refers to
-`x` or `y`. Actually, we don’t know either, because the `if` block in the body
-of this function returns a reference to `x` and the `else` block returns a
-reference to `y`!
+The help text reveals that the return type needs a generic lifetime parameter on it because Rust can't tell whether the reference being returned refers to `x` or `y`. Actually, we don't know either, because the `if` block in the body of this function returns a reference to `x` and the `else` block returns a reference to `y`!
 
-When we’re defining this function, we don’t know the concrete values that will
-be passed into this function, so we don’t know whether the `if` case or the
-`else` case will execute. We also don’t know the concrete lifetimes of the
-references that will be passed in, so we can’t look at the scopes as we did in
-Listings 10-17 and 10-18 to determine whether the reference we return will
-always be valid. The borrow checker can’t determine this either, because it
-doesn’t know how the lifetimes of `x` and `y` relate to the lifetime of the
-return value. To fix this error, we’ll add generic lifetime parameters that
-define the relationship between the references so the borrow checker can
-perform its analysis.
+When we're defining this function, we don't know the concrete values that will be passed into this function, so we don't know whether the `if` case or the `else` case will execute. We also don't know the concrete lifetimes of the references that will be passed in, so we can't look at the scopes as we did in Listings 10-17 and 10-18 to determine whether the reference we return will always be valid. The borrow checker can't determine this either, because it doesn't know how the lifetimes of `x` and `y` relate to the lifetime of the return value. To fix this error, we'll add generic lifetime parameters that define the relationship between the references so the borrow checker can perform its analysis.

@@ -8,12 +8,9 @@ fn foo() -> ! {
 }
 ```
 
-As opposed to all the other types, this one cannot be instantiated, because the
-set of all possible values this type can have is empty. Note that, it is
-different from the `()` type, which has exactly one possible value.
+As opposed to all the other types, this one cannot be instantiated, because the set of all possible values this type can have is empty. Note that, it is different from the `()` type, which has exactly one possible value.
 
-For example, this function returns as usual, although there is no information
-in the return value.
+For example, this function returns as usual, although there is no information in the return value.
 
 ```rust
 fn some_fn() {
@@ -37,10 +34,7 @@ fn main() {
 }
 ```
 
-Although this might seem like an abstract concept, it is in fact very useful and
-often handy. The main advantage of this type is that it can be cast to any other
-one and therefore used at places where an exact type is required, for instance
-in `match` branches. This allows us to write code like this:
+Although this might seem like an abstract concept, it is in fact very useful and often handy. The main advantage of this type is that it can be cast to any other one and therefore used at places where an exact type is required, for instance in `match` branches. This allows us to write code like this:
 
 ```rust
 fn main() {
@@ -65,5 +59,4 @@ fn main() {
 }
 ```
 
-It is also the return type of functions that loop forever (e.g. `loop {}`) like
-network servers or functions that terminate the process (e.g. `exit()`).
+It is also the return type of functions that loop forever (e.g. `loop {}`) like network servers or functions that terminate the process (e.g. `exit()`).

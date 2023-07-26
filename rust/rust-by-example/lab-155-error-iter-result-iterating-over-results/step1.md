@@ -32,8 +32,7 @@ fn main() {
 
 ## Collect the failed items with `map_err()` and `filter_map()`
 
-`map_err` calls a function with the error, so by adding that to the previous
-`filter_map` solution we can save them off to the side while iterating.
+`map_err` calls a function with the error, so by adding that to the previous `filter_map` solution we can save them off to the side while iterating.
 
 ```rust
 fn main() {
@@ -51,9 +50,7 @@ fn main() {
 
 ## Fail the entire operation with `collect()`
 
-`Result` implements `FromIterator` so that a vector of results (`Vec<Result<T, E>>`)
-can be turned into a result with a vector (`Result<Vec<T>, E>`). Once an
-`Result::Err` is found, the iteration will terminate.
+`Result` implements `FromIterator` so that a vector of results (`Vec<Result<T, E>>`) can be turned into a result with a vector (`Result<Vec<T>, E>`). Once an `Result::Err` is found, the iteration will terminate.
 
 ```rust
 fn main() {
@@ -82,8 +79,7 @@ fn main() {
 }
 ```
 
-When you look at the results, you'll note that everything is still wrapped in
-`Result`. A little more boilerplate is needed for this.
+When you look at the results, you'll note that everything is still wrapped in `Result`. A little more boilerplate is needed for this.
 
 ```rust
 fn main() {

@@ -1,8 +1,6 @@
 # Creating the Second Package in the Workspace
 
-Next, let’s create another member package in the workspace and call it
-`add_one`. Change the top-level `Cargo.toml` to specify the _add_one_ path in
-the `members` list:
+Next, let's create another member package in the workspace and call it `add_one`. Change the top-level `Cargo.toml` to specify the _add_one_ path in the `members` list:
 
 Filename: `Cargo.toml`
 
@@ -24,21 +22,19 @@ Created library $(add_one) package
 
 Your `add` directory should now have these directories and files:
 
-```
-├── Cargo.lock
-├── Cargo.toml
-├── add_one
-│   ├── Cargo.toml
-│   └── src
-│       └── lib.rs
-├── adder
-│   ├── Cargo.toml
-│   └── src
-│       └── main.rs
-└── target
-```
+    ├── Cargo.lock
+    ├── Cargo.toml
+    ├── add_one
+    │   ├── Cargo.toml
+    │   └── src
+    │       └── lib.rs
+    ├── adder
+    │   ├── Cargo.toml
+    │   └── src
+    │       └── main.rs
+    └── target
 
-In the `add_one/src/lib.rs` file, let’s add an `add_one` function:
+In the `add_one/src/lib.rs` file, let's add an `add_one` function:
 
 Filename: `add_one/src/lib.rs`
 
@@ -48,9 +44,7 @@ pub fn add_one(x: i32) -> i32 {
 }
 ```
 
-Now we can have the `adder` package with our binary depend on the `add_one`
-package that has our library. First we’ll need to add a path dependency on
-`add_one` to _adder/Cargo.toml_:
+Now we can have the `adder` package with our binary depend on the `add_one` package that has our library. First we'll need to add a path dependency on `add_one` to _adder/Cargo.toml_:
 
 Filename: `adder/Cargo.toml`
 
@@ -59,13 +53,9 @@ Filename: `adder/Cargo.toml`
 add_one = { path = "../add_one" }
 ```
 
-Cargo doesn’t assume that crates in a workspace will depend on each other, so
-we need to be explicit about the dependency relationships.
+Cargo doesn't assume that crates in a workspace will depend on each other, so we need to be explicit about the dependency relationships.
 
-Next, let’s use the `add_one` function (from the `add_one` crate) in the
-`adder` crate. Open the `adder/src/main.rs` file and add a `use` line at the
-top to bring the new `add_one` library crate into scope. Then change the `main`
-function to call the `add_one` function, as in Listing 14-7.
+Next, let's use the `add_one` function (from the `add_one` crate) in the `adder` crate. Open the `adder/src/main.rs` file and add a `use` line at the top to bring the new `add_one` library crate into scope. Then change the `main` function to call the `add_one` function, as in Listing 14-7.
 
 Filename: `adder/src/main.rs`
 
@@ -83,8 +73,7 @@ fn main() {
 
 Listing 14-7: Using the `add_one` library crate from the `adder` crate
 
-Let’s build the workspace by running `cargo build` in the top-level _add_
-directory!
+Let's build the workspace by running `cargo build` in the top-level _add_ directory!
 
 ```bash
 $ cargo build
@@ -93,9 +82,7 @@ $ cargo build
     Finished dev [unoptimized + debuginfo] target(s) in 0.68s
 ```
 
-To run the binary crate from the `add` directory, we can specify which package
-in the workspace we want to run by using the `-p` argument and the package name
-with `cargo run`:
+To run the binary crate from the `add` directory, we can specify which package in the workspace we want to run by using the `-p` argument and the package name with `cargo run`:
 
 ```bash
 $ cargo run -p adder

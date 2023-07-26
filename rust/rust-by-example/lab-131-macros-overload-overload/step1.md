@@ -1,7 +1,6 @@
 # Overload
 
-Macros can be overloaded to accept different combinations of arguments.
-In that regard, `macro_rules!` can work similarly to a match block:
+Macros can be overloaded to accept different combinations of arguments. In that regard, `macro_rules!` can work similarly to a match block:
 
 ```rust
 // `test!` will compare `$left` and `$right`

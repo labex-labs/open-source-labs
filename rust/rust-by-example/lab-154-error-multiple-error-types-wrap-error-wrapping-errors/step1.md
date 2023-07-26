@@ -84,6 +84,4 @@ fn main() {
 }
 ```
 
-This adds a bit more boilerplate for handling errors and might not be needed in
-all applications. There are some libraries that can take care of the boilerplate
-for you.
+This adds a bit more boilerplate for handling errors and might not be needed in all applications. There are some libraries that can take care of the boilerplate for you.

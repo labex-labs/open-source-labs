@@ -1,30 +1,22 @@
 # String Slices as Parameters
 
-Knowing that you can take slices of literals and `String` values leads us to
-one more improvement on `first_word`, and that’s its signature:
+Knowing that you can take slices of literals and `String` values leads us to one more improvement on `first_word`, and that's its signature:
 
 ```rust
 fn first_word(s: &String) -> &str {
 ```
 
-A more experienced Rustacean would write the signature shown in Listing 4-9
-instead because it allows us to use the same function on both `&String` values
-and `&str` values.
+A more experienced Rustacean would write the signature shown in Listing 4-9 instead because it allows us to use the same function on both `&String` values and `&str` values.
 
 ```rust
 fn first_word(s: &str) -> &str {
 ```
 
-Listing 4-9: Improving the `first_word` function by using a string slice for
-the type of the `s` parameter
+Listing 4-9: Improving the `first_word` function by using a string slice for the type of the `s` parameter
 
-If we have a string slice, we can pass that directly. If we have a `String`, we
-can pass a slice of the `String` or a reference to the `String`. This
-flexibility takes advantage of _deref coercions_, a feature we will cover in
-“Implicit Deref Coercions with Functions and Methods” on page XX.
+If we have a string slice, we can pass that directly. If we have a `String`, we can pass a slice of the `String` or a reference to the `String`. This flexibility takes advantage of _deref coercions_, a feature we will cover in "Implicit Deref Coercions with Functions and Methods" on page XX.
 
-Defining a function to take a string slice instead of a reference to a `String`
-makes our API more general and useful without losing any functionality:
+Defining a function to take a string slice instead of a reference to a `String` makes our API more general and useful without losing any functionality:
 
 Filename: `src/main.rs`
 

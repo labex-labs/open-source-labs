@@ -1,7 +1,6 @@
 # Supertraits
 
-Rust doesn't have "inheritance", but you can define a trait as being a superset
-of another trait. For example:
+Rust doesn't have "inheritance", but you can define a trait as being a superset of another trait. For example:
 
 ```rust
 trait Person {

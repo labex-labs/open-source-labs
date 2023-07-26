@@ -1,11 +1,8 @@
 # Literals
 
-Numeric literals can be type annotated by adding the type as a suffix. As an example,
-to specify that the literal `42` should have the type `i32`, write `42i32`.
+Numeric literals can be type annotated by adding the type as a suffix. As an example, to specify that the literal `42` should have the type `i32`, write `42i32`.
 
-The type of unsuffixed numeric literals will depend on how they are used. If no
-constraint exists, the compiler will use `i32` for integers, and `f64` for
-floating-point numbers.
+The type of unsuffixed numeric literals will depend on how they are used. If no constraint exists, the compiler will use `i32` for integers, and `f64` for floating-point numbers.
 
 ```rust
 fn main() {
@@ -27,11 +24,6 @@ fn main() {
 }
 ```
 
-There are some concepts used in the previous code that haven't been explained
-yet, here's a brief explanation for the impatient readers:
+There are some concepts used in the previous code that haven't been explained yet, here's a brief explanation for the impatient readers:
 
-- `std::mem::size_of_val` is a function, but called with its _full path_. Code
-  can be split in logical units called _modules_. In this case, the
-  `size_of_val` function is defined in the `mem` module, and the `mem` module
-  is defined in the `std` _crate_. For more details, see
-  modules and crates.
+- `std::mem::size_of_val` is a function, but called with its _full path_. Code can be split in logical units called _modules_. In this case, the `size_of_val` function is defined in the `mem` module, and the `mem` module is defined in the `std` _crate_. For more details, see modules and crates.

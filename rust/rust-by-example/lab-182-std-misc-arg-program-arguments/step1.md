@@ -2,8 +2,7 @@
 
 ## Standard Library
 
-The command line arguments can be accessed using `std::env::args`, which
-returns an iterator that yields a `String` for each argument:
+The command line arguments can be accessed using `std::env::args`, which returns an iterator that yields a `String` for each argument:
 
 ```rust
 use std::env;
@@ -29,7 +28,4 @@ I got 3 arguments: ["1", "2", "3"].
 
 ## Crates
 
-Alternatively, there are numerous crates that can provide extra functionality
-when creating command-line applications. The [Rust Cookbook] exhibits best
-practices on how to use one of the more popular command line argument crates,
-`clap`.
+Alternatively, there are numerous crates that can provide extra functionality when creating command-line applications. The \[Rust Cookbook\] exhibits best practices on how to use one of the more popular command line argument crates, `clap`.

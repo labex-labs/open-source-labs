@@ -1,10 +1,6 @@
 # Documentation testing
 
-The primary way of documenting a Rust project is through annotating the source
-code. Documentation comments are written in
-CommonMark Markdown specification and support code blocks in them.
-Rust takes care about correctness, so these code blocks are compiled and used
-as documentation tests.
+The primary way of documenting a Rust project is through annotating the source code. Documentation comments are written in CommonMark Markdown specification and support code blocks in them. Rust takes care about correctness, so these code blocks are compiled and used as documentation tests.
 
 ````rust
 /// First line is a short summary describing function.
@@ -49,8 +45,7 @@ pub fn div(a: i32, b: i32) -> i32 {
 }
 ````
 
-Code blocks in documentation are automatically tested
-when running the regular `cargo test` command:
+Code blocks in documentation are automatically tested when running the regular `cargo test` command:
 
 ```shell
 $ cargo test
@@ -70,13 +65,7 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out
 
 ## Motivation behind documentation tests
 
-The main purpose of documentation tests is to serve as examples that exercise
-the functionality, which is one of the most important
-guidelines. It allows using examples from docs as
-complete code snippets. But using `?` makes compilation fail since `main`
-returns `unit`. The ability to hide some source lines from documentation comes
-to the rescue: one may write `fn try_main() -> Result<(), ErrorType>`, hide it
-and `unwrap` it in hidden `main`. Sounds complicated? Here's an example:
+The main purpose of documentation tests is to serve as examples that exercise the functionality, which is one of the most important guidelines. It allows using examples from docs as complete code snippets. But using `?` makes compilation fail since `main` returns `unit`. The ability to hide some source lines from documentation comes to the rescue: one may write `fn try_main() -> Result<(), ErrorType>`, hide it and `unwrap` it in hidden `main`. Sounds complicated? Here's an example:
 
 ````rust
 /// Using hidden `try_main` in doc tests.

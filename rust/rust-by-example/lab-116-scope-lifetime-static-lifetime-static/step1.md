@@ -1,7 +1,6 @@
 # Static
 
-Rust has a few reserved lifetime names. One of those is `'static`. You
-might encounter it in two situations:
+Rust has a few reserved lifetime names. One of those is `'static`. You might encounter it in two situations:
 
 ```rust
 // A reference with 'static lifetime:
@@ -11,17 +10,13 @@ let s: &'static str = "hello world";
 fn generic<T>(x: T) where T: 'static {}
 ```
 
-Both are related but subtly different and this is a common source for
-confusion when learning Rust. Here are some examples for each situation:
+Both are related but subtly different and this is a common source for confusion when learning Rust. Here are some examples for each situation:
 
 ## Reference lifetime
 
-As a reference lifetime `'static` indicates that the data pointed to by
-the reference lives for the entire lifetime of the running program.
-It can still be coerced to a shorter lifetime.
+As a reference lifetime `'static` indicates that the data pointed to by the reference lives for the entire lifetime of the running program. It can still be coerced to a shorter lifetime.
 
-There are two ways to make a variable with `'static` lifetime, and both
-are stored in the read-only memory of the binary:
+There are two ways to make a variable with `'static` lifetime, and both are stored in the read-only memory of the binary:
 
 - Make a constant with the `static` declaration.
 - Make a `string` literal which has type: `&'static str`.
@@ -64,13 +59,9 @@ fn main() {
 
 ## Trait bound
 
-As a trait bound, it means the type does not contain any non-static
-references. Eg. the receiver can hold on to the type for as long as
-they want and it will never become invalid until they drop it.
+As a trait bound, it means the type does not contain any non-static references. Eg. the receiver can hold on to the type for as long as they want and it will never become invalid until they drop it.
 
-It's important to understand this means that any owned data always passes
-a `'static` lifetime bound, but a reference to that owned data generally
-does not:
+It's important to understand this means that any owned data always passes a `'static` lifetime bound, but a reference to that owned data generally does not:
 
 ```rust
 use std::fmt::Debug;

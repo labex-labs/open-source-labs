@@ -1,12 +1,8 @@
 # `Box`ing errors
 
-A way to write simple code while preserving the original errors is to `Box`
-them. The drawback is that the underlying error type is only known at runtime and not
-statically determined.
+A way to write simple code while preserving the original errors is to `Box` them. The drawback is that the underlying error type is only known at runtime and not statically determined.
 
-The stdlib helps in boxing our errors by having `Box` implement conversion from
-any type that implements the `Error` trait into the trait object `Box<Error>`,
-via `From`.
+The stdlib helps in boxing our errors by having `Box` implement conversion from any type that implements the `Error` trait into the trait object `Box<Error>`, via `From`.
 
 ```rust
 use std::error;

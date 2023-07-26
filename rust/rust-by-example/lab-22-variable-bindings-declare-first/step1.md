@@ -1,8 +1,6 @@
 # Declare first
 
-It's possible to declare variable bindings first, and initialize them later.
-However, this form is seldom used, as it may lead to the use of uninitialized
-variables.
+It's possible to declare variable bindings first, and initialize them later. However, this form is seldom used, as it may lead to the use of uninitialized variables.
 
 ```rust
 fn main() {
@@ -30,5 +28,4 @@ fn main() {
 }
 ```
 
-The compiler forbids use of uninitialized variables, as this would lead to
-undefined behavior.
+The compiler forbids use of uninitialized variables, as this would lead to undefined behavior.

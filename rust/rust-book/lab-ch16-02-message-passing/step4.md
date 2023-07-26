@@ -1,9 +1,6 @@
 # Creating Multiple Producers by Cloning the Transmitter
 
-Earlier we mentioned that `mpsc` was an acronym for _multiple producer, single
-consumer_. Let’s put `mpsc` to use and expand the code in Listing 16-10 to
-create multiple threads that all send values to the same receiver. We can do so
-by cloning the transmitter, as shown in Listing 16-11.
+Earlier we mentioned that `mpsc` was an acronym for _multiple producer, single consumer_. Let's put `mpsc` to use and expand the code in Listing 16-10 to create multiple threads that all send values to the same receiver. We can do so by cloning the transmitter, as shown in Listing 16-11.
 
 Filename: `src/main.rs`
 
@@ -50,28 +47,19 @@ for received in rx {
 
 Listing 16-11: Sending multiple messages from multiple producers
 
-This time, before we create the first spawned thread, we call `clone` on the
-transmitter. This will give us a new transmitter we can pass to the first
-spawned thread. We pass the original transmitter to a second spawned thread.
-This gives us two threads, each sending different messages to the one receiver.
+This time, before we create the first spawned thread, we call `clone` on the transmitter. This will give us a new transmitter we can pass to the first spawned thread. We pass the original transmitter to a second spawned thread. This gives us two threads, each sending different messages to the one receiver.
 
 When you run the code, your output should look something like this:
 
-```
-Got: hi
-Got: more
-Got: from
-Got: messages
-Got: for
-Got: the
-Got: thread
-Got: you
-```
+    Got: hi
+    Got: more
+    Got: from
+    Got: messages
+    Got: for
+    Got: the
+    Got: thread
+    Got: you
 
-You might see the values in another order, depending on your system. This is
-what makes concurrency interesting as well as difficult. If you experiment with
-`thread::sleep`, giving it various values in the different threads, each run
-will be more nondeterministic and create different output each time.
+You might see the values in another order, depending on your system. This is what makes concurrency interesting as well as difficult. If you experiment with `thread::sleep`, giving it various values in the different threads, each run will be more nondeterministic and create different output each time.
 
-Now that we’ve looked at how channels work, let’s look at a different method of
-concurrency.
+Now that we've looked at how channels work, let's look at a different method of concurrency.

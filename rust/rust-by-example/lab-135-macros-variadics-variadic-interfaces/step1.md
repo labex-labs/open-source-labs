@@ -1,8 +1,6 @@
 # Variadic Interfaces
 
-A _variadic_ interface takes an arbitrary number of arguments. For example,
-`println!` can take an arbitrary number of arguments, as determined by the
-format string.
+A _variadic_ interface takes an arbitrary number of arguments. For example, `println!` can take an arbitrary number of arguments, as determined by the format string.
 
 We can extend our `calculate!` macro from the previous section to be variadic:
 

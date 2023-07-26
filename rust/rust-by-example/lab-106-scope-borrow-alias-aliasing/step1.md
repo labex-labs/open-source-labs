@@ -1,9 +1,6 @@
 # Aliasing
 
-Data can be immutably borrowed any number of times, but while immutably
-borrowed, the original data can't be mutably borrowed. On the other hand, only
-_one_ mutable borrow is allowed at a time. The original data can be borrowed
-again only _after_ the mutable reference has been used for the last time.
+Data can be immutably borrowed any number of times, but while immutably borrowed, the original data can't be mutably borrowed. On the other hand, only _one_ mutable borrow is allowed at a time. The original data can be borrowed again only _after_ the mutable reference has been used for the last time.
 
 ```rust
 struct Point { x: i32, y: i32, z: i32 }

@@ -1,8 +1,6 @@
 # `dead_code`
 
-The compiler provides a `dead_code`
-_lint_ that will warn
-about unused functions. An _attribute_ can be used to disable the lint.
+The compiler provides a `dead_code` _lint_ that will warn about unused functions. An _attribute_ can be used to disable the lint.
 
 ```rust
 fn used_function() {}
@@ -19,6 +17,4 @@ fn main() {
 }
 ```
 
-Note that in real programs, you should eliminate dead code. In these examples
-we'll allow dead code in some places because of the interactive nature of the
-examples.
+Note that in real programs, you should eliminate dead code. In these examples we'll allow dead code in some places because of the interactive nature of the examples.

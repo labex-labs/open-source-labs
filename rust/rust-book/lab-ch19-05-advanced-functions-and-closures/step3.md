@@ -1,13 +1,8 @@
 # Returning Closures
 
-Closures are represented by traits, which means you can’t return closures
-directly. In most cases where you might want to return a trait, you can instead
-use the concrete type that implements the trait as the return value of the
-function. However, you can’t do that with closures because they don’t have a
-concrete type that is returnable; you’re not allowed to use the function
-pointer `fn` as a return type, for example.
+Closures are represented by traits, which means you can't return closures directly. In most cases where you might want to return a trait, you can instead use the concrete type that implements the trait as the return value of the function. However, you can't do that with closures because they don't have a concrete type that is returnable; you're not allowed to use the function pointer `fn` as a return type, for example.
 
-The following code tries to return a closure directly, but it won’t compile:
+The following code tries to return a closure directly, but it won't compile:
 
 ```rust
 fn returns_closure() -> dyn Fn(i32) -> i32 {
@@ -35,9 +30,7 @@ type `[closure@src/lib.rs:2:5: 2:14]`, which implements `Fn(i32) -> i32`
   |                         ~~~~~~~~~~~~~~~~~~~
 ```
 
-The error references the `Sized` trait again! Rust doesn’t know how much space
-it will need to store the closure. We saw a solution to this problem earlier.
-We can use a trait object:
+The error references the `Sized` trait again! Rust doesn't know how much space it will need to store the closure. We saw a solution to this problem earlier. We can use a trait object:
 
 ```rust
 fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
@@ -45,7 +38,6 @@ fn returns_closure() -> Box<dyn Fn(i32) -> i32> {
 }
 ```
 
-This code will compile just fine. For more about trait objects, refer to “Using
-Trait Objects That Allow for Values of Different Types” on page XX.
+This code will compile just fine. For more about trait objects, refer to "Using Trait Objects That Allow for Values of Different Types" on page XX.
 
-Next, let’s look at macros!
+Next, let's look at macros!

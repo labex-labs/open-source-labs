@@ -1,8 +1,6 @@
 # `create`
 
-The `create` function opens a file in write-only mode. If the file
-already existed, the old content is destroyed. Otherwise, a new file is
-created.
+The `create` function opens a file in write-only mode. If the file already existed, the old content is destroyed. Otherwise, a new file is created.
 
 ```rust
 static LOREM_IPSUM: &str =
@@ -50,7 +48,6 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
-(As in the previous example, you are encouraged to test this example under
-failure conditions.)
+(As in the previous example, you are encouraged to test this example under failure conditions.)
 
-The [`OpenOptions`] struct can be used to configure how a file is opened.
+The \[`OpenOptions`\] struct can be used to configure how a file is opened.
