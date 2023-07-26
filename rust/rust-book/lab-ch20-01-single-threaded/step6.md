@@ -5,7 +5,7 @@ Let's implement the functionality for returning more than a blank page. Create t
 Filename: `hello.html`
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />

@@ -71,7 +71,7 @@ Here, our response has a status line with status code 404 and the reason phrase 
 Filename: `404.html`
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
