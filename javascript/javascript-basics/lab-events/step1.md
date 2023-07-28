@@ -21,3 +21,5 @@ document.querySelector("html").addEventListener("click", () => {
   alert("Ouch! Stop poking me!");
 });
 ```
+
+> Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.

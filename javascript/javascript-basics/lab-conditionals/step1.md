@@ -7,9 +7,9 @@ Conditionals are code structures used to test if an expression returns true or n
 ```js
 let iceCream = "chocolate";
 if (iceCream === "chocolate") {
-  alert("Yay, I love chocolate ice cream!");
+  console.log("Yay, I love chocolate ice cream!");
 } else {
-  alert("Awwww, but chocolate is my favorite…");
+  console.log("Awwww, but chocolate is my favorite…");
 }
 ```
 

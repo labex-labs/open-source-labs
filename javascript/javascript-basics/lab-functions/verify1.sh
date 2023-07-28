@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-cat ~/.zsh_history | grep 'node'
+curl 0.0.0.0:8080
