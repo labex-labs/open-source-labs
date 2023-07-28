@@ -26,6 +26,8 @@ You can also define your own functions.
 
 In the next example, we create a simple function which takes two numbers as arguments and multiplies them:
 
+> Open the Terminal/SSH and type node to start practicing coding.
+
 ```js
 function multiply(num1, num2) {
   let result = num1 * num2;
