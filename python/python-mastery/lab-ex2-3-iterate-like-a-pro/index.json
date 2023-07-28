@@ -15,12 +15,18 @@
           {
             "name": "Test the completion of step 1",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please grab a few lines of data from the CSV file.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/csv",
+          "python/open",
+          "python/next",
+          "python/list",
+          "python/pprint"
+        ]
       },
       {
         "title": "Basic Iteration and Unpacking",
@@ -29,12 +35,18 @@
           {
             "name": "Test the completion of step 2",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please execute the python program statement in step 2.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/collections",
+          "python/for_loop",
+          "python/list",
+          "python/print",
+          "python/string"
+        ]
       },
       {
         "title": "Counting with enumerate()",
@@ -43,12 +55,16 @@
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please follow the instructions in step 3 to use the \"enumerate()\" function.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/enumerate",
+          "python/for_loop",
+          "python/print"
+        ]
       },
       {
         "title": "Using the zip() function",
@@ -57,12 +73,17 @@
           {
             "name": "Test the completion of step 4",
             "file": "verify4.sh",
-            "hint": "Please check the step 4 carefully.",
+            "hint": "Please follow the instructions in step 4 to use the \"zip()\" function.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/zip",
+          "python/dict",
+          "python/for_loop",
+          "python/print"
+        ]
       },
       {
         "title": "Generator Expressions",
@@ -71,12 +92,20 @@
           {
             "name": "Test the completion of step 5",
             "file": "verify5.sh",
-            "hint": "Please check the step 5 carefully.",
+            "hint": "Please execute the python program statement in step 5.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/next",
+          "python/list_comprehension",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/yield_values",
+          "python/for_loop",
+          "python/print"
+        ]
       },
       {
         "title": "Generator Expressions and Reduction Functions",
@@ -85,12 +114,21 @@
           {
             "name": "Test the completion of step 6",
             "file": "verify6.sh",
-            "hint": "Please check the step 6 carefully.",
+            "hint": "Please execute the python program statement in step 6.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/modules",
+          "python/sum",
+          "python/min",
+          "python/any",
+          "python/all",
+          "python/tuple",
+          "python/str",
+          "python/list_comprehension"
+        ]
       },
       {
         "title": "Saving a lot of memory",
@@ -99,12 +137,24 @@
           {
             "name": "Test the completion of step 7",
             "file": "verify7.sh",
-            "hint": "Please check the step 7 carefully.",
+            "hint": "Please execute the python program statement in step 7.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/modules",
+          "python/tracemalloc",
+          "python/list_comprehension",
+          "python/lambda_function",
+          "python/csv",
+          "python/open",
+          "python/next",
+          "python/zip",
+          "python/dict",
+          "python/max",
+          "python/int"
+        ]
       }
     ],
     "intro": {
@@ -117,7 +167,12 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "readport.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "readrides.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },

@@ -12,3 +12,7 @@ of shares by decrementing the share count. Have it work like this:
 75
 >>>
 ```
+
+## Note:
+
+Complete the `sell(nshares)` function in the `stock.py` file.

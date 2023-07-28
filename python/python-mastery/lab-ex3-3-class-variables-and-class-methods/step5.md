@@ -66,7 +66,7 @@ Here is another example of how you might use `read_csv_as_instances()` with a co
 
 **Discussion**
 
-This exercise illustrates the two most common uses of class variables
+This lab illustrates the two most common uses of class variables
 and class methods. Class variables are often used to hold a global
 parameter (e.g., a configuration setting) that is shared across all
 instances. Sometimes subclasses will inherit from the base class and

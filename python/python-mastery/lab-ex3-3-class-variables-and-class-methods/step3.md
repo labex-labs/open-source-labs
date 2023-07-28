@@ -21,7 +21,7 @@ Decimal('3220.0')
 
 **Design Discussion**
 
-The problem being addressed in this exercise concerns the conversion of data read
+The problem being addressed in this lab concerns the conversion of data read
 from a file. Would it make sense to perform these conversions in the `__init__()`
 method of the `Stock` class instead? For example:
 

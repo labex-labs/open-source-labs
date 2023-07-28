@@ -33,5 +33,5 @@ if __name__ == "__main__":
     from sys import intern
 
     tracemalloc.start()
-    data = read_csv_as_columns("../../ctabus.csv", [intern, intern, intern, int])
+    data = read_csv_as_columns("/home/labex/project/ctabus.csv", [intern, intern, intern, int])
     print(tracemalloc.get_traced_memory())

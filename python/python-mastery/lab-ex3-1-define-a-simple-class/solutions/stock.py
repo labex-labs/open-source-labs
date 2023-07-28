@@ -41,5 +41,5 @@ def print_portfolio(portfolio):
 
 
 if __name__ == "__main__":
-    portfolio = read_portfolio("../../portfolio.csv")
+    portfolio = read_portfolio("/home/labex/project/portfolio.csv")
     print_portfolio(portfolio)

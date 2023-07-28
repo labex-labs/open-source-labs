@@ -15,12 +15,15 @@
           {
             "name": "Test the completion of step 1",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please use the \"getsizeof()\" function as instructed in step 1.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/sys",
+          "python/list"
+        ]
       },
       {
         "title": "Dictionary/Class Growth",
@@ -29,12 +32,15 @@
           {
             "name": "Test the completion of step 2",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please run the python code in step 2.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/sys",
+          "python/dict"
+        ]
       },
       {
         "title": "Changing Your Orientation (to Columns)",
@@ -43,12 +49,23 @@
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please add the code from step 3 to the \"readrides.py\" file and check the memory usage.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/csv",
+          "python/tracemalloc",
+          "python/open",
+          "python/next",
+          "python/list",
+          "python/dict",
+          "python/int"
+        ],
+        "solutions": [
+          "readrides.md"
+        ]
       },
       {
         "title": "Making a Custom Container - The Great Fake Out",
@@ -57,12 +74,25 @@
           {
             "name": "Test the completion of step 4",
             "file": "verify4.sh",
-            "hint": "Please check the step 4 carefully.",
+            "hint": "Please follow the instructions in step 4 to complete the custom container.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/collections",
+          "python/class",
+          "python/method_objects",
+          "python/raise_errors",
+          "python/len",
+          "python/dict",
+          "python/open",
+          "python/next",
+          "python/int"
+        ],
+        "solutions": [
+          "readrides.md"
+        ]
       },
       {
         "title": "Challenge",
@@ -71,12 +101,15 @@
           {
             "name": "Test the completion of step 5",
             "file": "verify5.sh",
-            "hint": "Please check the step 5 carefully.",
+            "hint": "Please run the python code in step 5.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/len",
+          "python/dict"
+        ]
       }
     ],
     "intro": {
@@ -89,7 +122,12 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "cta.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "readrides.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },

@@ -1,3 +1,5 @@
+# Step 5 Solution
+
 # stock.py
 
 from structure import Structure

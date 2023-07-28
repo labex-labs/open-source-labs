@@ -45,4 +45,4 @@ def printer():
 
 # Example use.
 if __name__ == "__main__":
-    follow("../../stocklog.csv", printer())
+    follow("/home/labex/project/stocklog.csv", printer())

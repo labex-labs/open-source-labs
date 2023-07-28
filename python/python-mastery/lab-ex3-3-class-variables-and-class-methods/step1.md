@@ -1,6 +1,6 @@
-# Previous Exercise
+# Previous Lab
 
-Instances of the `Stock` class defined in the previous exercise are
+Instances of the `Stock` class defined in the previous lab are
 normally created as follows:
 
 ```python

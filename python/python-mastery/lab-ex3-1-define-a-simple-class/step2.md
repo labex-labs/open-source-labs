@@ -22,3 +22,7 @@ You already wrote a similar function as part of
 [Exercise 2.3](ex2_3.md). Design discussion: Should
 `read_portfolio()` be a separate function or part of the class
 definition?
+
+## Note:
+
+Add the `read_portfolio()` function in the `stock.py` file.

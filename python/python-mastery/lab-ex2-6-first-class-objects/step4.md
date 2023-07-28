@@ -31,3 +31,7 @@ presents itself as a sequence of dictionaries when accessed however.
 Try using this function with the string interning trick in the last part. How
 much memory does it take to store all of the ride data now? Can you still use
 this function with your earlier CTA analysis code?
+
+## Note:
+
+Complete the `read_csv_as_columns()` function in the `colreader.py` file.
