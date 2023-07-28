@@ -1,0 +1,58 @@
+{
+  "type": "challenge",
+  "title": "Generate the Sentences",
+  "description": "In this challenge, you will write a program to generate all sentences where subject is in [\"I\", \"You\"] and verb is in [\"Play\", \"Love\"] and the object is in [\"Hockey\",\"Football\"].",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Generate the Sentences",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing generate_the_sentences.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/format_specifiers",
+          "python/for_loop",
+          "python/print",
+          "python/list"
+        ],
+        "solutions": ["generate_the_sentences.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "generate_the_sentences.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

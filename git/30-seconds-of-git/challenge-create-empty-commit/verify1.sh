@@ -1,2 +1,3 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git commit"
+(cd /home/labex/project/git-playground && git log --name-status HEAD^..HEAD | grep "Empty commit") && echo "True"
+

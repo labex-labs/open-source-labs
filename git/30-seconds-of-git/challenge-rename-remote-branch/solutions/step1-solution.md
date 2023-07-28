@@ -6,9 +6,13 @@ git push origin -u <new-name>
 ```
 
 ```shell
-git checkout master
-git branch -m patch-1 patch-2 # Renamed the local branch to `patch-2`
-git push origin --delete patch-1
-git checkout patch-2
-git push origin -u patch-2 # Renames the remote branch to `patch-2`
+# Fork from https://github.com/labex-labs/git-playground.git
+git clone https://github.com/your-username/git-playground.git
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+git checkout feature-branch
+git branch -m feature-branch new-feature-1 # Renamed the local branch to `new-feature-1`
+git push origin --delete feature-branch
+git push origin -u new-feature-1 # Renames the remote branch to `new-feature-1`
 ```

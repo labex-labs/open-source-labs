@@ -1,0 +1,57 @@
+{
+  "type": "lab",
+  "title": "Running Code on Cleanup With the Drop Trait",
+  "description": "In this lab, we explore the `Drop` trait in Rust, which allows for customization of cleanup actions when a value goes out of scope, typically used in smart pointers, and can be implemented by providing a `drop` method that is automatically called by Rust, avoiding the need for explicit cleanup code.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Running Code on Cleanup with the Drop Trait",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "rust/fn",
+          "rust/let",
+          "rust/for",
+          "rust/struct",
+          "rust/impl"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/book"
+  }
+}

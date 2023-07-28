@@ -8,8 +8,7 @@ Your task is to retrieve all commits made by a specific author in the `git-playg
 
 Retrieve all commits made by the author "Hang" in the `git-playground` repository.
 
-This will output a list of all commits made by "Hang" in the repository, along with information about the commit message, date, and other details.
-
+This will output a list of all commits made by "Hang" in the repository, along with information about the commit message, date, and other details:
 ```shell
 commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/
 master, origin/feature-branch, origin/HEAD)

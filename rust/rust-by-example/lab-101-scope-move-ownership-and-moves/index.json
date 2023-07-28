@@ -1,0 +1,51 @@
+{
+  "type": "lab",
+  "title": "Ownership and Moves",
+  "description": "In this lab, it is explained that in Rust, variables have ownership of resources and can only have one owner, which prevents resources from being freed multiple times.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Ownership and moves",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/line", "rust/result", "rust/pointer", "rust/let"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/rust-by-example"
+  }
+}

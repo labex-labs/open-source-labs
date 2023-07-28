@@ -1,36 +1,30 @@
-# Git Challenge: Change the Last Commit's Message
+# Change the Last Commit's Message
 
 Imagine you have just committed some changes to your Git repository, but you realize that you made a typo in the commit message. You want to correct the mistake without changing the actual changes you made. How can you do this?
 
-To demonstrate how to change the last commit's message, we will use the Git repository named `https://github.com/labex-labs/git-playground`. Follow these steps:
+To demonstrate how to change the last commit's message, let's use the repository from `https://github.com/labex-labs/git-playground`. Follow these steps:
 
-1. Clone the repository to your local machine:
+1. Clone the repository, navigate to the directory and configure the identity:
    ```
-   git clone https://github.com/labex-labs/git-playground.git
-   ```
-2. Navigate to the repository directory:
-   ```
+   git clone https://github.com/labex-labs/git-playground
    cd git-playground
+   git config --global user.name "your-username"
+   git config --global user.email "your-email"
    ```
-3. Make some changes to the codebase:
+2. Correct the commit message of the last commit to read "Fix the network bug":
    ```
-   echo "print('Hello, World!')" >> hello.py
-   ```
-4. Stage the changes:
-   ```
-   git add .
-   ```
-5. Commit the changes with a typo in the message:
-   ```
-   git commit -m "Add a new line to the helo.py file"
-   ```
-6. Correct the typo in the commit message using `git commit --amend -m <message>`:
-   ```
-   git commit --amend -m "Add a new line to the hello.py file"
+   git commit --amend -m "Fix the network bug"
    ```
    This will open your default text editor where you can modify the commit message. Save and close the editor to complete the process.
-7. Verify that the commit message has been changed:
+3. Verify that the commit message has been changed:
    ```
-   git log
+   git log --oneline
    ```
-   You should see the updated commit message in the log.
+
+You should see the updated commit message in the log:
+
+```
+54b830b (HEAD -> master) Fix the network bug
+cf80005 Added file1.txt
+b00b937 Initial commit
+```

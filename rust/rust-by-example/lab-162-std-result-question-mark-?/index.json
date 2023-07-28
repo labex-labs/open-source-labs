@@ -1,0 +1,61 @@
+{
+  "type": "lab",
+  "title": "?",
+  "description": "In this lab, the `?` operator is introduced as a way to make code cleaner when chaining results.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "?",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "rust/mod",
+          "rust/fn",
+          "rust/enum",
+          "rust/if",
+          "rust/let",
+          "rust/match",
+          "rust/pub",
+          "rust/type",
+          "rust/else"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/rust-by-example"
+  }
+}

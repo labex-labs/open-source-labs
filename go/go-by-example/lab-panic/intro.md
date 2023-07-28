@@ -1,3 +1,3 @@
 # Panic
 
-The `panic` challenge is designed to test your ability to handle unexpected errors in Golang.
+The `panic` lab is designed to test your ability to handle unexpected errors in Golang.

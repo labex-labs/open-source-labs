@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+cargo --version
