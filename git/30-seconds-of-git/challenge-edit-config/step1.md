@@ -10,9 +10,16 @@ In this example, we will use the Git repository named `https://github.com/labex-
 
 1. Open the terminal and navigate to the Git repository directory.
 2. Open the Git configuration file in the Git text editor.
-3. The command will open the Git configuration file in the default Git text editor. You can modify the settings as per your requirement.
-4. Once you have made the necessary changes, save the file and exit the editor.
+3. Change the setting so that the username is `labex_git` and the user email is `labex_git@example.com`.
+4. Once you have made the necessary changes, press <kbd>Esc</kbd> and enter the <kbd>:wq</kbd> command, then press <kbd>Enter</kbd> to save your changes and exit the editor.
 
 This is the result after completion:
-
-![<result>](./assets/challenge-edit-config-step1-1.png)
+```shell
+# This is Git's per-user configuration file.
+[user]
+    name = labex_git
+    email = labex_git@example.com                                    
+# Please adapt and uncomment the following lines:
+#   name = 
+#   email = labex@64b8c76af840a200973e9d16.(none)
+```
