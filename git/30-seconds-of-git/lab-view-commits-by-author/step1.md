@@ -4,14 +4,12 @@ Your task is to retrieve all commits made by a specific author in the `git-playg
 
 To complete this lab, you will need to use the `git log` command with the `--author` option. This will allow you to filter the commit history to only show commits made by the specified author.
 
-To retrieve all commits made by the author "huhuhang" in the `git-playground` repository, you can use the following command:
-
+To retrieve all commits made by the author "Hang" in the `git-playground` repository, you can use the following command:
 ```shell
-git log --author="huhuhang"
+git log --author="Hang"
 ```
 
-This will output a list of all commits made by "huhuhang" in the repository, along with information about the commit message, date, and other details:
-
+This will output a list of all commits made by "Hang" in the repository, along with information about the commit message, date, and other details:
 ```shell
 commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/
 master, origin/feature-branch, origin/HEAD)
