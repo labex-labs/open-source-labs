@@ -8,6 +8,9 @@ You have been working on a project in a Git repository and have created multiple
 
 To complete this challenge, you will use the Git repository named `https://github.com/labex-labs/git-playground`.
 
-1. See the current stash.
-2. Delete all stashes at once.
-3. Verify that all stashes have been deleted.
+1. Navigate to the repository directory.
+2. See the current stash.
+3. Delete all stashes at once.
+4. Verify that all stashes have been deleted.
+
+The stashes you just deleted should no longer be there.

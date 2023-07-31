@@ -1,2 +1,2 @@
 #!/bin/zsh
-(cat ~/.zsh_history | grep -v grep | grep "git fsck --lost-found") && (cat ~/.zsh_history | grep -v grep | grep "cd git-playground") && echo "True"
+(cd /home/labex/project/git-playground/.git/lost-found && ls | less -R | grep "commit") && echo "True"

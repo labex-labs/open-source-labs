@@ -1,7 +1,7 @@
 # Create a New Repository
 
 ## Problem
-
+  
 You have been tasked with creating a new Git repository for a project. You need to set up all the configuration files needed by Git and ensure that the repository is properly initialized.
 
 ## Example

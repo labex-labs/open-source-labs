@@ -1,4 +1,4 @@
-# Git Challenge: Remove a File from the Last Commit
+# Remove a File from the Last Commit
 
 ## Problem
 
@@ -6,18 +6,23 @@ You have added a file to the last commit that you didn't intend to include. You 
 
 ## Example
 
-Suppose you have a Git repository named `git-playground` with a file named `file.txt` that you accidentally added to the last commit. Here are the steps to remove the file from the last commit:
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`. Suppose you have a Git repository named `git-playground` with a file named `file2.txt` that you accidentally added to the last commit.
 
-1. Use `git rm --cached <file>` to remove the specified `<file>` from the index.
+1. Navigate to the repository directory and configure your GitHub identity .
+2. Remove the specified `file2.txt` from the index.
+3. Update the contents of the last commit, without changing its message.
 
+After running these commands, the file `file2.txt` will be removed from the last commit without changing its message.
+
+This is what happens when you remove `file2.txt` from Git version control:
 ```shell
-git rm --cached file.txt
+On branch master
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt
 ```
-
-2. Use `git commit --amend` to update the contents of the last commit, without changing its message.
-
-```shell
-git commit --amend
-```
-
-After running these commands, the file `file.txt` will be removed from the last commit without changing its message.

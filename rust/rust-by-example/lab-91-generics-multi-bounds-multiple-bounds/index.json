@@ -1,0 +1,58 @@
+{
+  "type": "lab",
+  "title": "Multiple Bounds",
+  "description": "In this lab, the code demonstrates the concept of multiple bounds in Rust, where a single type can have multiple bounds applied using the `+` operator.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Multiple bounds",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "rust/vec",
+          "rust/use",
+          "rust/array",
+          "rust/let",
+          "rust/string"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/rust-by-example"
+  }
+}

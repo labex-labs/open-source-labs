@@ -4,10 +4,12 @@ Sometimes, you may need to delete a remote branch that is no longer needed. For 
 
 Suppose that a GitHub repository called `git-playground` has been cloned from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. You want to delete the remote branch named `feature-branch` that is no longer needed. Here are the steps to delete the remote branch:
 
-1. Open the terminal and navigate to the local repository directory.
+1. Clone the repository, navigate to the directory and configure the identity:
    ```shell
    git clone https://github.com/your-username/git-playground.git
    cd git-playground
+   git config --global user.name "your-username"
+   git config --global user.email "your-email"
    ```
 2. Add the `feature-branch` branch to the `origin` remote repository:
    ```shell
@@ -21,8 +23,8 @@ Suppose that a GitHub repository called `git-playground` has been cloned from yo
    The output should include the `feature-branch` remote branch:
    ```
    origin/HEAD -> origin/master
-   origin/master
    origin/feature-branch
+   origin/master
    ```
 4. Use the `git push -d <remote> <branch>` command to delete the specified remote `<branch>` on the given `<remote>`.
    ```shell

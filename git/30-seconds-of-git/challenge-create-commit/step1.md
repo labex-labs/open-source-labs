@@ -6,7 +6,10 @@ You have made some changes to your code and want to save them as a snapshot in y
 
 ## Example
 
-For this challenge, fork the Git repository named `https://github.com/labex-labs/git-playground` into your GitHub account.To create a commit, you first need to stage the changes you want to include in the commit.Configure your github account in the environment. Let's assume you have cloned the `https://github.com/your-username/git-playground` repository and made some changes to the `README.md` file. Create a commit with the message "Update README.md".
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
+
+1. Navigate to the directory and configure the identity in the environment.
+2. Add "hello,labex" to the `README.md` file, add it to the staging area and commit it with the message "Updating README.md".
 
 This is the result of running the `git log` command:
 

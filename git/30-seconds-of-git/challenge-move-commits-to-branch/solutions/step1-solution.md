@@ -1,17 +1,20 @@
 ```shell
 git branch <branch>
-git cherry-pick master
+git reset HEAD~1 --hard
 git checkout <branch>
 ```
 
 ```shell
-git checkout master
-echo "hello" > file1.txt
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+echo "hello,world" >> hello.txt
 git add .
-git commit -m "Add new feature to master branch"
-git branch feature-branch
-# `feature-branch` branch is created containing the commit "Add new feature to master branch"
+git commit -m "Added hello.txt"
+git branch feature
+# `feature` branch is created containing the commit "Added hello.txt"
 git reset HEAD~1 --hard # Remove the commit from `master`
-git checkout feature-branch
-git log # Verify that the changes are now in `feature-branch`
+git log
+git checkout feature
+git log # Verify that the changes are now in `feature`
 ```
