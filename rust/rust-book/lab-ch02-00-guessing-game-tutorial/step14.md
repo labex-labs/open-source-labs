@@ -56,25 +56,37 @@ Ultimately, we want to convert the `String` the program reads as input into a re
 Filename: `src/main.rs`
 
 ```rust
---snip--
+use std::io;
+use rand::Rng;
+use std::cmp::Ordering;
 
-let mut guess = String::new();
+fn main() {
+    println!("Guess the number!");
 
-io::stdin()
-    .read_line(&mut guess)
-    .expect("Failed to read line");
+    let secret_number = rand::thread_rng().gen_range(1..=100);
 
-let guess: u32 = guess
-    .trim()
-    .parse()
-    .expect("Please type a number!");
+    println!("The secret number is: {secret_number}");
 
-println!("You guessed: {guess}");
+    println!("Please input your guess.");
 
-match guess.cmp(&secret_number) {
-    Ordering::Less => println!("Too small!"),
-    Ordering::Greater => println!("Too big!"),
-    Ordering::Equal => println!("You win!"),
+    let mut guess = String::new();
+
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read line");
+
+    let guess: u32 = guess
+        .trim()
+        .parse()
+        .expect("Please type a number!");
+
+    println!("You guessed: {guess}");
+
+    match guess.cmp(&secret_number) {
+        Ordering::Less => println!("Too small!"),
+        Ordering::Greater => println!("Too big!"),
+        Ordering::Equal => println!("You win!"),
+    }
 }
 ```
 
