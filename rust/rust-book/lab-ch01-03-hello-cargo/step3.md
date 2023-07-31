@@ -8,10 +8,10 @@ $ cargo build
     Finished dev [unoptimized + debuginfo] target(s) in 2.85 secs
 ```
 
-This command creates an executable file in _target/debug/hello_cargo_ (or \_target`\debug`{=tex}`\hello`{=tex}_cargo.exe_ on Windows) rather than in your current directory. Because the default build is a debug build, Cargo puts the binary in a directory named _debug_. You can run the executable with this command:
+This command creates an executable file in `target/debug/hello_cargo` rather than in your current directory. Because the default build is a debug build, Cargo puts the binary in a directory named `debug`. You can run the executable with this command:
 
 ```bash
-$ ./target/debug/hello_cargo # or .\target\debug\hello_cargo.exe on Windows
+$ ./target/debug/hello_cargo
 Hello, world!
 ```
 

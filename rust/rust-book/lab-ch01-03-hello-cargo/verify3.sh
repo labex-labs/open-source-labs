@@ -1,4 +1,3 @@
 #!/bin/zsh
 
-cd ~/project/hello_cargo
-cargo build
+cat ~/.zsh_history | grep "cargo build"
