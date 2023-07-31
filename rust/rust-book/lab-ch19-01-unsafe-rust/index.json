@@ -1,0 +1,185 @@
+{
+  "type": "lab",
+  "title": "Unsafe Rust",
+  "description": "In this lab, we will explore unsafe Rust, a feature that allows us to bypass the memory safety guarantees enforced at compile time and gives us extra superpowers, while also understanding the risks and responsibilities involved in using it.",
+  "difficulty": "Beginner",
+  "time": 50,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Unsafe Rust",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Unsafe Superpowers",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Dereferencing a Raw Pointer",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/mut", "rust/let", "rust/num"]
+      },
+      {
+        "title": "Calling an Unsafe Function or Method",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Safe Abstraction over Unsafe Code",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "rust/mut",
+          "rust/use",
+          "rust/fn",
+          "rust/let",
+          "rust/ptr",
+          "rust/unsafe"
+        ]
+      },
+      {
+        "title": "Using extern Functions to Call External Code",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/fn", "rust/extern", "rust/unsafe"]
+      },
+      {
+        "title": "Accessing or Modifying a Mutable Static Variable",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/static", "rust/unsafe", "rust/u32", "rust/mut"]
+      },
+      {
+        "title": "Implementing an Unsafe Trait",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Accessing Fields of a Union",
+        "text": "step9.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 9",
+            "file": "verify9.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "When to Use Unsafe Code",
+        "text": "step10.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 10",
+            "file": "verify10.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/book"
+  }
+}

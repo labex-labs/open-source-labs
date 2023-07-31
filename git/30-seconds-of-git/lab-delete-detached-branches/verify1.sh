@@ -1,4 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git checkout"
-cat ~/.zsh_history | grep -v grep | grep "git fetch"
-cat ~/.zsh_history | grep -v grep | grep "git branch"
+(cd /home/labex/project/git-playground && ! git branch -a | less -R | grep "remotes/origin/feature-branch") && (cd /home/labex/project/git-playground && ! git branch | less -R | grep "feature-branch") && ((cat ~/.zsh_history | grep -v grep | grep "git checkout -b feature-branch") || (cat ~/.zsh_history | grep -v grep | grep "git checkout feature-branch") || (cat ~/.zsh_history | grep -v grep | grep "git branch feature-branch")) && echo "True"

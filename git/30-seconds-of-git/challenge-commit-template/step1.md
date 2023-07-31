@@ -6,26 +6,26 @@ Without a commit message template, developers may be tempted to write vague or u
 
 ## Example
 
-For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. Follow these steps to set up a commit message template for this repository:
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Navigate to the repository directory using the command `cd git-playground`.
-3. Create a new file named `commit-template` in the repository directory using the command `touch commit-template`.
-4. Open the `commit-template` file in a text editor and add the following lines:
-
-```
+1. Navigate to the repository directory and configure your GitHub identity.
+2. Create a new file called `commit-template` in the current directory of the repository.
+3. Open the `commit-template` file in a text editor and add the following lines:
+```shell
 # <type>: <subject>
 
 # <body>
 
 # <footer>
-```
 
-5. Save and close the `commit-template` file.
-6. Use the command `git config commit.template commit-template` to set the `commit-template` file as the commit message template for the repository.
-7. Make a change to the codebase using the command `echo "test" >> README.md`.
-8. Use the command `git add README.md` to stage the change.
-9. Use the command `git commit` to open the commit message editor.
-10. Notice that the commit message editor now includes the commit message template you created in step 4. Fill in the template with a type, subject, body, and footer that describe your change.
-11. Save and close the commit message editor.
-12. Use the command `git push` to push your changes to the remote repository.
+# This creates a template with three sections:
+# "<type>" indicates the type of submission, such as "feat" or "fix"
+# "<subject>" is a short #summary describing the content of the submission
+# "<body>" is a more detailed description
+# "<footer>" can contain other metadata, such as the #associated issue number or other comments.
+```
+4. Press <kbd>Esc</kbd> and enter the <kbd>:wq</kbd> command, then press <kbd>Enter</kbd> to save your changes and exit the `commit-template` file editor.
+5. Add `commit-template` files to the staging area.
+6. Set the `commit-template` file as the commit message template for the repository.
+7. Open the commit message editor and notice that the commit message editor now contains the commit message template you created in step 3.
+8. Press <kbd>Esc</kbd> and enter the <kbd>:q</kbd> command, then press <kbd>Enter</kbd> to exit the commit message editor.

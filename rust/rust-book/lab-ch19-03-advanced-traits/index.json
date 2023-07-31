@@ -1,0 +1,129 @@
+{
+  "type": "lab",
+  "title": "Advanced Traits",
+  "description": "In this lab, we will delve into the more advanced details of traits that were previously covered in \"Traits: Defining Shared Behavior\" on page XX, now that you have a better understanding of Rust.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Advanced Traits",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Associated Types",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "rust/trait",
+          "rust/fn",
+          "rust/for",
+          "rust/impl",
+          "rust/pub",
+          "rust/type"
+        ]
+      },
+      {
+        "title": "Default Generic Type Parameters and Operator Overloading",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/type", "rust/fn", "rust/for", "rust/use"]
+      },
+      {
+        "title": "Disambiguating Between Methods with the Same Name",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/let", "rust/fn", "rust/trait", "rust/for"]
+      },
+      {
+        "title": "Using Supertraits",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/use", "rust/fn", "rust/for", "rust/struct", "rust/let"]
+      },
+      {
+        "title": "Using the Newtype Pattern to Implement External Traits",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/let", "rust/fn", "rust/for", "rust/use"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/book"
+  }
+}

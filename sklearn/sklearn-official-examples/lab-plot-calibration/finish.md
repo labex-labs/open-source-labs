@@ -1,0 +1,3 @@
+# Summary
+
+In this lab, we generated a synthetic dataset, used Gaussian Naive-Bayes for classification, and compared the estimated probability using a Gaussian naive Bayes classifier without calibration, with a sigmoid calibration, and with a non-parametric isotonic calibration. We then plotted the data and the predicted probabilities. By comparing the Brier score losses, we found that only the non-parametric model is able to provide a probability calibration that returns probabilities close to the expected 0.5 for most of the samples belonging to the middle cluster with heterogeneous labels. This results in a significantly improved Brier score.

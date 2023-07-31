@@ -4,7 +4,11 @@ git commit —-amend
 ```
 
 ```shell
-git rm —-cached "git-playground.txt"
-git commit —-amend
-# Removes `git-playground.txt` from the last commit
+cd git-playground
+git config --global user.name "your-username"
+git config --global user.email "your-email"
+git rm --cached "file2.txt"
+git status
+git commit --amend --allow-empty
+# Removes `file2.txt` from the last commit
 ```
