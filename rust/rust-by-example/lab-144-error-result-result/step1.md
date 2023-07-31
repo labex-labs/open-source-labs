@@ -1,7 +1,6 @@
 # `Result`
 
-`Result` is a richer version of the `Option` type that
-describes possible _error_ instead of possible _absence_.
+`Result` is a richer version of the `Option` type that describes possible _error_ instead of possible _absence_.
 
 That is, `Result<T, E>` could have one of two outcomes:
 
@@ -10,14 +9,9 @@ That is, `Result<T, E>` could have one of two outcomes:
 
 By convention, the expected outcome is `Ok` while the unexpected outcome is `Err`.
 
-Like `Option`, `Result` has many methods associated with it. `unwrap()`, for
-example, either yields the element `T` or `panic`s. For case handling,
-there are many combinators between `Result` and `Option` that overlap.
+Like `Option`, `Result` has many methods associated with it. `unwrap()`, for example, either yields the element `T` or `panic`s. For case handling, there are many combinators between `Result` and `Option` that overlap.
 
-In working with Rust, you will likely encounter methods that return the
-`Result` type, such as the `parse()` method. It might not always
-be possible to parse a string into the other type, so `parse()` returns a
-`Result` indicating possible failure.
+In working with Rust, you will likely encounter methods that return the `Result` type, such as the `parse()` method. It might not always be possible to parse a string into the other type, so `parse()` returns a `Result` indicating possible failure.
 
 Let's see what happens when we successfully and unsuccessfully `parse()` a string:
 
@@ -38,17 +32,13 @@ fn main() {
 }
 ```
 
-In the unsuccessful case, `parse()` leaves us with an error for `unwrap()`
-to `panic` on. Additionally, the `panic` exits our program and provides an
-unpleasant error message.
+In the unsuccessful case, `parse()` leaves us with an error for `unwrap()` to `panic` on. Additionally, the `panic` exits our program and provides an unpleasant error message.
 
-To improve the quality of our error message, we should be more specific
-about the return type and consider explicitly handling the error.
+To improve the quality of our error message, we should be more specific about the return type and consider explicitly handling the error.
 
 ## Using `Result` in `main`
 
-The `Result` type can also be the return type of the `main` function if
-specified explicitly. Typically the `main` function will be of the form:
+The `Result` type can also be the return type of the `main` function if specified explicitly. Typically the `main` function will be of the form:
 
 ```rust
 fn main() {
@@ -56,10 +46,7 @@ fn main() {
 }
 ```
 
-However `main` is also able to have a return type of `Result`. If an error
-occurs within the `main` function it will return an error code and print a debug
-representation of the error (using the [`Debug`] trait). The following example
-shows such a scenario and touches on aspects covered in [the following section].
+However `main` is also able to have a return type of `Result`. If an error occurs within the `main` function it will return an error code and print a debug representation of the error (using the \[`Debug`\] trait). The following example shows such a scenario and touches on aspects covered in \[the following section\].
 
 ```rust
 use std::num::ParseIntError;

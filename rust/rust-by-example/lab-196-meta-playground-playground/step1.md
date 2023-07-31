@@ -30,4 +30,4 @@ Additionally, you can add `ignore` if you want `mdbook` to skip your code when i
 
 ## Using it with docs
 
-You may have noticed in some of the official Rust docs a button that says "Run", which opens the code sample up in a new tab in Rust Playground. This feature is enabled if you use the #[doc] attribute called `html_playground_url`.
+You may have noticed in some of the official Rust docs a button that says "Run", which opens the code sample up in a new tab in Rust Playground. This feature is enabled if you use the #\[doc\] attribute called `html_playground_url`.

@@ -1,16 +1,12 @@
 # Capturing
 
-Closures are inherently flexible and will do what the functionality requires
-to make the closure work without annotation. This allows capturing to
-flexibly adapt to the use case, sometimes moving and sometimes borrowing.
-Closures can capture variables:
+Closures are inherently flexible and will do what the functionality requires to make the closure work without annotation. This allows capturing to flexibly adapt to the use case, sometimes moving and sometimes borrowing. Closures can capture variables:
 
 - by reference: `&T`
 - by mutable reference: `&mut T`
 - by value: `T`
 
-They preferentially capture variables by reference and only go lower when
-required.
+They preferentially capture variables by reference and only go lower when required.
 
 ```rust
 fn main() {
@@ -83,8 +79,7 @@ fn main() {
 }
 ```
 
-Using `move` before vertical pipes forces closure
-to take ownership of captured variables:
+Using `move` before vertical pipes forces closure to take ownership of captured variables:
 
 ```rust
 fn main() {

@@ -1,7 +1,6 @@
 # The `use` declaration
 
-The `use` declaration can be used to bind a full path to a new name, for easier
-access. It is often used like this:
+The `use` declaration can be used to bind a full path to a new name, for easier access. It is often used like this:
 
 ```rust
 use crate::deeply::nested::{

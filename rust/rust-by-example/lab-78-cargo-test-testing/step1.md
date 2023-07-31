@@ -1,13 +1,8 @@
 # Testing
 
-As we know testing is integral to any piece of software! Rust has first-class
-support for unit and integration testing ([see this
-chapter](https://doc.rust-lang.org/book/ch11-00-testing.html) in
-TRPL).
+As we know testing is integral to any piece of software! Rust has first-class support for unit and integration testing ([see this chapter](https://doc.rust-lang.org/book/ch11-00-testing.html) in TRPL).
 
-From the testing chapters linked above, we see how to write unit tests and
-integration tests. Organizationally, we can place unit tests in the modules they
-test and integration tests in their own `tests/` directory:
+From the testing chapters linked above, we see how to write unit tests and integration tests. Organizationally, we can place unit tests in the modules they test and integration tests in their own `tests/` directory:
 
 ```txt
 foo
@@ -20,13 +15,9 @@ foo
     └── my_other_test.rs
 ```
 
-Each file in `tests` is a separate
-[integration test](https://doc.rust-lang.org/book/ch11-03-test-organization.html#integration-tests),
-i.e. a test that is meant to test your library as if it were being called from a dependent
-crate.
+Each file in `tests` is a separate [integration test](https://doc.rust-lang.org/book/ch11-03-test-organization.html#integration-tests), i.e. a test that is meant to test your library as if it were being called from a dependent crate.
 
-The Testing chapter elaborates on the three different testing styles:
-Unit, Doc, and Integration.
+The Testing chapter elaborates on the three different testing styles: Unit, Doc, and Integration.
 
 `cargo` naturally provides an easy way to run all of your tests!
 
@@ -70,11 +61,9 @@ test test_foo_bar ... ok
 test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 2 filtered out
 ```
 
-One word of caution: Cargo may run multiple tests concurrently, so make sure
-that they don't race with each other.
+One word of caution: Cargo may run multiple tests concurrently, so make sure that they don't race with each other.
 
-One example of this concurrency causing issues is if two tests output to a
-file, such as below:
+One example of this concurrency causing issues is if two tests output to a file, such as below:
 
 ```rust
 #[cfg(test)]

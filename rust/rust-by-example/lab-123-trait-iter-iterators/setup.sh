@@ -1,3 +1,6 @@
 #!/bin/zsh
 
-sudo apt update && sudo apt install rustc -y
+cd /tmp
+wget https://static.rust-lang.org/rustup/rustup-init.sh
+sudo chmod +x rustup-init.sh
+./rustup-init.sh -y

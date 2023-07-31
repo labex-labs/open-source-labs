@@ -1,11 +1,8 @@
 # `panic!`
 
-The `panic!` macro can be used to generate a panic and start unwinding
-its stack. While unwinding, the runtime will take care of freeing all the
-resources _owned_ by the thread by calling the destructor of all its objects.
+The `panic!` macro can be used to generate a panic and start unwinding its stack. While unwinding, the runtime will take care of freeing all the resources _owned_ by the thread by calling the destructor of all its objects.
 
-Since we are dealing with programs with only one thread, `panic!` will cause the
-program to report the panic message and exit.
+Since we are dealing with programs with only one thread, `panic!` will cause the program to report the panic message and exit.
 
 ```rust
 // Re-implementation of integer division (/)
@@ -34,8 +31,13 @@ fn main() {
 
 Let's check that `panic!` doesn't leak memory.
 
+```{=html}
 <!-- REUSE-IgnoreStart -->
+```
+
+```{=html}
 <!-- Prevent REUSE from parsing the copyright statement in the sample code -->
+```
 
 ```shell
 $ rustc panic.rs && valgrind ./panic
@@ -56,4 +58,6 @@ thread '<main>' panicked at 'division by zero', panic.rs:5
 ==4401== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 
+```{=html}
 <!-- REUSE-IgnoreEnd -->
+```

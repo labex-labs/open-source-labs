@@ -1,13 +1,10 @@
 # Derive
 
-The compiler is capable of providing basic implementations for some traits via
-the `#[derive]` attribute. These traits can still be
-manually implemented if a more complex behavior is required.
+The compiler is capable of providing basic implementations for some traits via the `#[derive]` attribute. These traits can still be manually implemented if a more complex behavior is required.
 
 The following is a list of derivable traits:
 
-- Comparison traits:
-  `Eq`, `PartialEq`, `Ord`, `PartialOrd`.
+- Comparison traits: `Eq`, `PartialEq`, `Ord`, `PartialOrd`.
 - `Clone`, to create `T` from `&T` via a copy.
 - `Copy`, to give a type 'copy semantics' instead of 'move semantics'.
 - `Hash`, to compute a hash from `&T`.

@@ -1,8 +1,6 @@
 # DRY (Don't Repeat Yourself)
 
-Macros allow writing DRY code by factoring out the common parts of functions
-and/or test suites. Here is an example that implements and tests the `+=`, `*=`
-and `-=` operators on `Vec<T>`:
+Macros allow writing DRY code by factoring out the common parts of functions and/or test suites. Here is an example that implements and tests the `+=`, `*=` and `-=` operators on `Vec<T>`:
 
 ```rust
 use std::ops::{Add, Mul, Sub};

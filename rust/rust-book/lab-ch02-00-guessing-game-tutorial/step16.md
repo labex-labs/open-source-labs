@@ -1,6 +1,6 @@
 # Quitting After a Correct Guess
 
-Let’s program the game to quit when the user wins by adding a `break` statement:
+Let's program the game to quit when the user wins by adding a `break` statement:
 
 Filename: `src/main.rs`
 
@@ -17,6 +17,4 @@ match guess.cmp(&secret_number) {
 }
 ```
 
-Adding the `break` line after `You win!` makes the program exit the loop when
-the user guesses the secret number correctly. Exiting the loop also means
-exiting the program, because the loop is the last part of `main`.
+Adding the `break` line after `You win!` makes the program exit the loop when the user guesses the secret number correctly. Exiting the loop also means exiting the program, because the loop is the last part of `main`.

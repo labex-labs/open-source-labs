@@ -1,26 +1,26 @@
 {
   "type": "lab",
-  "title": "Hello World",
-  "description": "In this lab, we have the source code for the traditional Hello World program written in Rust.",
+  "title": "Conditionals",
+  "description": "This lab will give you an introduction to conditionals.",
   "difficulty": "Beginner",
-  "time": 5,
+  "time": 10,
   "hidden": false,
   "fee_type": "free",
   "details": {
     "steps": [
       {
-        "title": "Hello World",
+        "title": "Conditionals",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Test the completion of step 1",
+            "name": "Open the Terminal/SSH and type 'node'",
             "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": ["rust/placeholder"]
+        "skills": ["js/if_else"]
       }
     ],
     "intro": {
@@ -34,8 +34,7 @@
       "host01": [
         {
           "file": "",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
+          "target": "/tmp"
         }
       ]
     }
@@ -43,9 +42,10 @@
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
+  "contributors": ["Lotus-7"],
   "license": {
-    "name": "MIT",
-    "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
-    "repo": "https://github.com/rust-lang/rust-by-example"
+    "name": "CC-BY-SA-2.5",
+    "url": "https://github.com/mdn/content/blob/main/LICENSE.md",
+    "repo": "https://github.com/mdn/content"
   }
 }

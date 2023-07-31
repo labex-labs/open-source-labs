@@ -1,10 +1,8 @@
 # New Type Idiom
 
-The `newtype` idiom gives compile time guarantees that the right type of value is supplied
-to a program.
+The `newtype` idiom gives compile time guarantees that the right type of value is supplied to a program.
 
-For example, an age verification function that checks age in years, _must_ be given
-a value of type `Years`.
+For example, an age verification function that checks age in years, _must_ be given a value of type `Years`.
 
 ```rust
 struct Years(i64);

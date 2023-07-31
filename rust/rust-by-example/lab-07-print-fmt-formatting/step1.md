@@ -2,9 +2,9 @@
 
 We've seen that formatting is specified via a _format string_:
 
-- `format!("{}", foo)` -> `"3735928559"`
-- `format!("0x{:X}", foo)` -> `"0xDEADBEEF"`
-- `format!("0o{:o}", foo)` -> `"0o33653337357"`
+- `format!("{}", foo)` -\> `"3735928559"`
+- `format!("0x{:X}", foo)` -\> `"0xDEADBEEF"`
+- `format!("0o{:o}", foo)` -\> `"0o33653337357"`
 
 The same variable (`foo`) can be formatted differently depending on which _argument type_ is used: `X` vs `o` vs _unspecified_.
 

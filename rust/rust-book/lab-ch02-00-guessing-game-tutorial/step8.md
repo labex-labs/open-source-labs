@@ -1,6 +1,6 @@
 # Testing the First Part
 
-Let’s test the first part of the guessing game. Run it using `cargo run`:
+Let's test the first part of the guessing game. Run it using `cargo run`:
 
 ```bash
 $ cargo run
@@ -13,5 +13,4 @@ Please input your guess.
 You guessed: 6
 ```
 
-At this point, the first part of the game is done: we’re getting input from the
-keyboard and then printing it.
+At this point, the first part of the game is done: we're getting input from the keyboard and then printing it.

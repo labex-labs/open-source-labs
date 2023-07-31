@@ -80,7 +80,7 @@ Here, we used `fmt::Display` because the std library provides implementations fo
 
 Implementing the `fmt::Display` trait automatically implements the `ToString` trait which allows us to convert the type to `String`.
 
-In _line 43_, `#[allow(dead_code)]` is an [attribute] which only apply to the module after it.
+In _line 43_, `#[allow(dead_code)]` is an \[attribute\] which only apply to the module after it.
 
 ## Activities
 

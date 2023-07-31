@@ -1,7 +1,6 @@
 # Traits
 
-Annotation of lifetimes in trait methods basically are similar to functions.
-Note that `impl` may have annotation of lifetimes too.
+Annotation of lifetimes in trait methods basically are similar to functions. Note that `impl` may have annotation of lifetimes too.
 
 ```rust
 // A struct with annotation of lifetimes.

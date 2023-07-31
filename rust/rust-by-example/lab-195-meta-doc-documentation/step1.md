@@ -8,9 +8,7 @@ These commands will appropriately invoke `rustdoc` (and `rustc`) as required.
 
 ## Doc comments
 
-Doc comments are very useful for big projects that require documentation. When
-running `rustdoc`, these are the comments that get compiled into
-documentation. They are denoted by a `///`, and support [Markdown].
+Doc comments are very useful for big projects that require documentation. When running `rustdoc`, these are the comments that get compiled into documentation. They are denoted by a `///`, and support \[Markdown\].
 
 ````rust
 #![crate_name = "doc"]
@@ -57,8 +55,7 @@ fn main() {
 }
 ````
 
-To run the tests, first build the code as a library, then tell `rustdoc` where
-to find the library so it can link it into each doctest program:
+To run the tests, first build the code as a library, then tell `rustdoc` where to find the library so it can link it into each doctest program:
 
 ```shell
 $ rustc doc.rs --crate-type lib

@@ -1,8 +1,6 @@
 # Aliasing
 
-The `type` statement can be used to give a new name to an existing type. Types
-must have `UpperCamelCase` names, or the compiler will raise a warning. The
-exception to this rule are the primitive types: `usize`, `f32`, etc.
+The `type` statement can be used to give a new name to an existing type. Types must have `UpperCamelCase` names, or the compiler will raise a warning. The exception to this rule are the primitive types: `usize`, `f32`, etc.
 
 ```rust
 // `NanoSecond`, `Inch`, and `U64` are new names for `u64`.
@@ -24,5 +22,4 @@ fn main() {
 }
 ```
 
-The main use of aliases is to reduce boilerplate; for example the `io::Result<T>` type
-is an alias for the `Result<T, io::Error>` type.
+The main use of aliases is to reduce boilerplate; for example the `io::Result<T>` type is an alias for the `Result<T, io::Error>` type.

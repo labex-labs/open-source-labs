@@ -1,11 +1,8 @@
 # if Expressions
 
-An `if` expression allows you to branch your code depending on conditions. You
-provide a condition and then state, “If this condition is met, run this block
-of code. If the condition is not met, do not run this block of code.”
+An `if` expression allows you to branch your code depending on conditions. You provide a condition and then state, "If this condition is met, run this block of code. If the condition is not met, do not run this block of code."
 
-Create a new project called `branches` in your `project` directory to explore
-the `if` expression. In the `src/main.rs` file, input the following:
+Create a new project called `branches` in your `project` directory to explore the `if` expression. In the `src/main.rs` file, input the following:
 
 Filename: `src/main.rs`
 
@@ -21,19 +18,9 @@ fn main() {
 }
 ```
 
-All `if` expressions start with the keyword `if`, followed by a condition. In
-this case, the condition checks whether or not the variable `number` has a
-value less than 5. We place the block of code to execute if the condition is
-`true` immediately after the condition inside curly brackets. Blocks of code
-associated with the conditions in `if` expressions are sometimes called _arms_,
-just like the arms in `match` expressions that we discussed in “Comparing the
-Guess to the Secret Number” on page XX.
+All `if` expressions start with the keyword `if`, followed by a condition. In this case, the condition checks whether or not the variable `number` has a value less than 5. We place the block of code to execute if the condition is `true` immediately after the condition inside curly brackets. Blocks of code associated with the conditions in `if` expressions are sometimes called _arms_, just like the arms in `match` expressions that we discussed in "Comparing the Guess to the Secret Number" on page XX.
 
-Optionally, we can also include an `else` expression, which we chose to do
-here, to give the program an alternative block of code to execute should the
-condition evaluate to `false`. If you don’t provide an `else` expression and
-the condition is `false`, the program will just skip the `if` block and move on
-to the next bit of code.
+Optionally, we can also include an `else` expression, which we chose to do here, to give the program an alternative block of code to execute should the condition evaluate to `false`. If you don't provide an `else` expression and the condition is `false`, the program will just skip the `if` block and move on to the next bit of code.
 
 Try running this code; you should see the following output:
 
@@ -45,8 +32,7 @@ $ cargo run
 condition was true
 ```
 
-Let’s try changing the value of `number` to a value that makes the condition
-`false` to see what happens:
+Let's try changing the value of `number` to a value that makes the condition `false` to see what happens:
 
 ```rust
     let number = 7;
@@ -62,9 +48,7 @@ $ cargo run
 condition was false
 ```
 
-It’s also worth noting that the condition in this code _must_ be a `bool`. If
-the condition isn’t a `bool`, we’ll get an error. For example, try running the
-following code:
+It's also worth noting that the condition in this code _must_ be a `bool`. If the condition isn't a `bool`, we'll get an error. For example, try running the following code:
 
 Filename: `src/main.rs`
 
@@ -78,8 +62,7 @@ fn main() {
 }
 ```
 
-The `if` condition evaluates to a value of `3` this time, and Rust throws an
-error:
+The `if` condition evaluates to a value of `3` this time, and Rust throws an error:
 
 ```bash
 $ cargo run
@@ -91,12 +74,7 @@ error[E0308]: mismatched types
   |        ^^^^^^ expected `bool`, found integer
 ```
 
-The error indicates that Rust expected a `bool` but got an integer. Unlike
-languages such as Ruby and JavaScript, Rust will not automatically try to
-convert non-Boolean types to a Boolean. You must be explicit and always provide
-`if` with a Boolean as its condition. If we want the `if` code block to run
-only when a number is not equal to `0`, for example, we can change the `if`
-expression to the following:
+The error indicates that Rust expected a `bool` but got an integer. Unlike languages such as Ruby and JavaScript, Rust will not automatically try to convert non-Boolean types to a Boolean. You must be explicit and always provide `if` with a Boolean as its condition. If we want the `if` code block to run only when a number is not equal to `0`, for example, we can change the `if` expression to the following:
 
 Filename: `src/main.rs`
 
@@ -111,5 +89,3 @@ fn main() {
 ```
 
 Running this code will print `number was something other than zero`.
-
-#

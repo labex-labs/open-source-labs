@@ -16,11 +16,9 @@ match optional {
     // ^ Required because `match` is exhaustive. Doesn't it seem
     // like wasted space?
 };
-
 ```
 
-`if let` is cleaner for this use case and in addition allows various
-failure options to be specified:
+`if let` is cleaner for this use case and in addition allows various failure options to be specified:
 
 ```rust
 fn main() {

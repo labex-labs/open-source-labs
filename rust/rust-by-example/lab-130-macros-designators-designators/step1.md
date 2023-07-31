@@ -1,7 +1,6 @@
 # Designators
 
-The arguments of a macro are prefixed by a dollar sign `$` and type annotated
-with a _designator_:
+The arguments of a macro are prefixed by a dollar sign `$` and type annotated with a _designator_:
 
 ```rust
 macro_rules! create_function {
@@ -62,4 +61,4 @@ These are some of the available designators:
 - `ty` (_type_)
 - `vis` (_visibility qualifier_)
 
-For a complete list, see the [Rust Reference].
+For a complete list, see the \[Rust Reference\].

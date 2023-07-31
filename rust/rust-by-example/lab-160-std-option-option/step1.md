@@ -1,7 +1,6 @@
 # `Option`
 
-Sometimes it's desirable to catch the failure of some parts of a program
-instead of calling `panic!`; this can be accomplished using the `Option` enum.
+Sometimes it's desirable to catch the failure of some parts of a program instead of calling `panic!`; this can be accomplished using the `Option` enum.
 
 The `Option<T>` enum has two variants:
 

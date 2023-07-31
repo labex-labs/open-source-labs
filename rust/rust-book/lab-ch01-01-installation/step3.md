@@ -1,18 +1,24 @@
-# Installing rustup on Windows
+# Troubleshooting
 
-On Windows, go to *https://www.rust-lang.org/tools/install* and follow the
-instructions for installing Rust. At some point in the installation, you’ll
-receive a message explaining that you’ll also need the MSVC build tools for
-Visual Studio 2013 or later.
+To check whether you have Rust installed correctly, open a **new shell** and enter this line:
 
-To acquire the build tools, you’ll need to install Visual Studio 2022 from
-*https://visualstudio.microsoft.com/downloads*. When asked which workloads to
-install, include:
+```bash
+# Open a new terminal first!
+rustc --version
+```
 
-- “Desktop Development with C++”
-- The Windows 10 or 11 SDK
-- The English language pack component, along with any other language pack of
-  your choosing
+You should see the version number, commit hash, and commit date for the latest stable version that has been released, in the following format:
 
-The rest of this book uses commands that work in both _cmd.exe_ and PowerShell.
-If there are specific differences, we’ll explain which to use.
+```bash
+rustc x.y.z (abcabcabc yyyy-mm-dd)
+```
+
+If you see this information, you have installed Rust successfully! If you don't see this information, check that Rust is in your `%PATH%` system variable as follows.
+
+In Linux and macOS, use:
+
+```bash
+echo $PATH
+```
+
+If that's all correct and Rust still isn't working, there are a number of places you can get help. Find out how to get in touch with other Rustaceans (a silly nickname we call ourselves) on the community page at *https://www.rust-lang.org/community*.

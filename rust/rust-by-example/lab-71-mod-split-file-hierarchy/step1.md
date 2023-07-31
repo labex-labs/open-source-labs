@@ -1,7 +1,6 @@
 # File hierarchy
 
-Modules can be mapped to a file/directory hierarchy. Let's break down the
-visibility example in files:
+Modules can be mapped to a file/directory hierarchy. Let's break down the visibility example in files:
 
 ```shell
 $ tree .
@@ -33,7 +32,6 @@ fn main() {
 
     my::nested::function();
 }
-
 ```
 
 In `my.rs`:

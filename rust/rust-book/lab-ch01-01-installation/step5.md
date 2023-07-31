@@ -1,15 +1,11 @@
-# Updating and Uninstalling
+# Local Documentation
 
-Once Rust is installed via `rustup`, updating to a newly released version is
-easy. From your shell, run the following update script:
-
-```bash
-rustup update
-```
-
-To uninstall Rust and `rustup`, run the following uninstall script from your
-shell:
+The installation of Rust also includes a local copy of the documentation so that you can read it offline. Run `rustup doc` to open the local documentation in your browser.
 
 ```bash
-rustup self uninstall
+rustup doc
 ```
+
+Any time a type or function is provided by the standard library and you're not sure what it does or how to use it, use the application programming interface (API) documentation to find out!
+
+**Note: The WebIDE does not support opening local documentation.**

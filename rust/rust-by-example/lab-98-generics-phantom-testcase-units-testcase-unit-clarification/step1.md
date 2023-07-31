@@ -1,7 +1,6 @@
 # Testcase: unit clarification
 
-A useful method of unit conversions can be examined by implementing `Add`
-with a phantom type parameter. The `Add` `trait` is examined below:
+A useful method of unit conversions can be examined by implementing `Add` with a phantom type parameter. The `Add` `trait` is examined below:
 
 ```rust
 // This construction would impose: `Self + RHS = Output`

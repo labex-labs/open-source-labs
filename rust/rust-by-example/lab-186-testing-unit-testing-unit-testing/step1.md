@@ -1,19 +1,13 @@
 # Unit testing
 
-Tests are Rust functions that verify that the non-test code is functioning in
-the expected manner. The bodies of test functions typically perform some setup,
-run the code we want to test, then assert whether the results are what we
-expect.
+Tests are Rust functions that verify that the non-test code is functioning in the expected manner. The bodies of test functions typically perform some setup, run the code we want to test, then assert whether the results are what we expect.
 
-Most unit tests go into a `tests` mod with the `#[cfg(test)]` attribute.
-Test functions are marked with the `#[test]` attribute.
+Most unit tests go into a `tests` mod with the `#[cfg(test)]` attribute. Test functions are marked with the `#[test]` attribute.
 
-Tests fail when something in the test function panics. There are some
-helper macros:
+Tests fail when something in the test function panics. There are some helper macros:
 
 - `assert!(expression)` - panics if expression evaluates to `false`.
-- `assert_eq!(left, right)` and `assert_ne!(left, right)` - testing left and
-  right expressions for equality and inequality respectively.
+- `assert_eq!(left, right)` and `assert_ne!(left, right)` - testing left and right expressions for equality and inequality respectively.
 
 ```rust
 pub fn add(a: i32, b: i32) -> i32 {
@@ -75,9 +69,7 @@ test result: FAILED. 1 passed
 
 ## Tests and `?`
 
-None of the previous unit test examples had a return type. But in Rust 2018,
-your unit tests can return `Result<()>`, which lets you use `?` in them! This
-can make them much more concise.
+None of the previous unit test examples had a return type. But in Rust 2018, your unit tests can return `Result<()>`, which lets you use `?` in them! This can make them much more concise.
 
 ```rust
 fn sqrt(number: f64) -> Result<f64, String> {
@@ -105,10 +97,7 @@ See "The Edition Guide" for more details.
 
 ## Testing panics
 
-To check functions that should panic under certain circumstances, use attribute
-`#[should_panic]`. This attribute accepts optional parameter `expected = ` with
-the text of the panic message. If your function can panic in multiple ways, it helps
-make sure your test is testing the correct panic.
+To check functions that should panic under certain circumstances, use attribute `#[should_panic]`. This attribute accepts optional parameter `expected =` with the text of the panic message. If your function can panic in multiple ways, it helps make sure your test is testing the correct panic.
 
 ```rust
 pub fn divide_non_zero_result(a: u32, b: u32) -> u32 {
@@ -196,8 +185,7 @@ test result: ok. 0 passed
 0 filtered out
 ```
 
-To run multiple tests one may specify part of a test name that matches all the
-tests that should be run.
+To run multiple tests one may specify part of a test name that matches all the tests that should be run.
 
 ```shell
 $ cargo test panic
@@ -224,8 +212,7 @@ test result: ok. 0 passed
 
 ## Ignoring tests
 
-Tests can be marked with the `#[ignore]` attribute to exclude some tests. Or to run
-them with command `cargo test -- --ignored`
+Tests can be marked with the `#[ignore]` attribute to exclude some tests. Or to run them with command `cargo test -- --ignored`
 
 ```rust
 pub fn add(a: i32, b: i32) -> i32 {

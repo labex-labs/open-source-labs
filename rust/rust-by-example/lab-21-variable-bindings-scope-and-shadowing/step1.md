@@ -1,7 +1,6 @@
 # Scope and Shadowing
 
-Variable bindings have a scope, and are constrained to live in a _block_. A
-block is a collection of statements enclosed by braces `{}`.
+Variable bindings have a scope, and are constrained to live in a _block_. A block is a collection of statements enclosed by braces `{}`.
 
 ```rust
 fn main() {

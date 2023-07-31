@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-rustc ~/project/*.rs
+cat ~/.zsh_history | grep "cargo build --release"

@@ -1,14 +1,11 @@
 # Functions
 
-Ignoring [elision], function signatures with lifetimes have a few constraints:
+Ignoring \[elision\], function signatures with lifetimes have a few constraints:
 
 - any reference _must_ have an annotated lifetime.
-- any reference being returned _must_ have the same lifetime as an input or
-  be `static`.
+- any reference being returned _must_ have the same lifetime as an input or be `static`.
 
-Additionally, note that returning references without input is banned if it
-would result in returning references to invalid data. The following example shows
-off some valid forms of functions with lifetimes:
+Additionally, note that returning references without input is banned if it would result in returning references to invalid data. The following example shows off some valid forms of functions with lifetimes:
 
 ```rust
 // One input reference with lifetime `'a` which must live

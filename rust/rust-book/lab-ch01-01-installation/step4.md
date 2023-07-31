@@ -1,42 +1,15 @@
-# Troubleshooting
+# Updating and Uninstalling
 
-To check whether you have Rust installed correctly, open a shell and enter this
-line:
-
-```bash
-rustc --version
-```
-
-You should see the version number, commit hash, and commit date for the latest
-stable version that has been released, in the following format:
-
-```rust
-rustc x.y.z (abcabcabc yyyy-mm-dd)
-```
-
-If you see this information, you have installed Rust successfully! If you don’t
-see this information, check that Rust is in your `%PATH%` system variable as
-follows.
-
-In Windows CMD, use:
-
-```rust
-> echo %PATH%
-```
-
-In PowerShell, use:
-
-```rust
-> echo $env:Path
-```
-
-In Linux and macOS, use:
+Once Rust is installed via `rustup`, updating to a newly released version is easy. From your shell, run the following update script:
 
 ```bash
-echo $PATH
+rustup update
 ```
 
-If that’s all correct and Rust still isn’t working, there are a number of
-places you can get help. Find out how to get in touch with other Rustaceans (a
-silly nickname we call ourselves) on the community page at
-*https://www.rust-lang.org/community*.
+To uninstall Rust and `rustup`, run the following uninstall script from your shell:
+
+```bash
+rustup self uninstall
+```
+
+Enter `N` when prompted to confirm that you want to uninstall Rust.

@@ -1,8 +1,6 @@
 # Channels
 
-Rust provides asynchronous `channels` for communication between threads. Channels
-allow a unidirectional flow of information between two end-points: the
-`Sender` and the `Receiver`.
+Rust provides asynchronous `channels` for communication between threads. Channels allow a unidirectional flow of information between two end-points: the `Sender` and the `Receiver`.
 
 ```rust
 use std::sync::mpsc::{Sender, Receiver};

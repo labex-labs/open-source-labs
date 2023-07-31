@@ -95,7 +95,6 @@ fn main() {
         println!("! {:?}", why.kind());
     });
 }
-
 ```
 
 Here's the expected successful output:

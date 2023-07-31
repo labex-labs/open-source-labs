@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-rustc ~/project/*.rs
+cargo --version
