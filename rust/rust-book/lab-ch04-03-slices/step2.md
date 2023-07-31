@@ -46,7 +46,7 @@ let slice = &s[0..len];
 let slice = &s[..];
 ```
 
-> Note: String slice range indices must occur at valid UTF-8 character boundaries. If you attempt to create a string slice in the middle of a multibyte character, your program will exit with an error. For the purposes of introducing string slices, we are assuming ASCII only in this section; a more thorough discussion of UTF-8 handling is in "Storing UTF-8 Encoded Text with Strings" on page XX.
+> Note: String slice range indices must occur at valid UTF-8 character boundaries. If you attempt to create a string slice in the middle of a multibyte character, your program will exit with an error. For the purposes of introducing string slices, we are assuming ASCII only in this section; a more thorough discussion of UTF-8 handling is in "Storing UTF-8 Encoded Text with Strings".
 
 With all this information in mind, let's rewrite `first_word` to return a slice. The type that signifies "string slice" is written as `&str`:
 

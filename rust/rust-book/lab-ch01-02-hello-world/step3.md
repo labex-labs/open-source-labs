@@ -22,6 +22,6 @@ $ ./main
 Hello, world!
 ```
 
-Regardless of your operating system, the string `Hello, world!` should print to the terminal. If you don't see this output, refer back to "Troubleshooting" on page XX for ways to get help.
+Regardless of your operating system, the string `Hello, world!` should print to the terminal. If you don't see this output, refer back to "Troubleshooting" for ways to get help.
 
 If `Hello, world!` did print, congratulations! You've officially written a Rust program. That makes you a Rust programmer---welcome!

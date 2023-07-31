@@ -74,7 +74,7 @@ help: consider introducing a named lifetime parameter
 
 Rust can't possibly know which of the two arguments we need, so we need to tell it explicitly. Because `contents` is the argument that contains all of our text and we want to return the parts of that text that match, we know `contents` is the argument that should be connected to the return value using the lifetime syntax.
 
-Other programming languages don't require you to connect arguments to return values in the signature, but this practice will get easier over time. You might want to compare this example with the examples in "Validating References with Lifetimes" on page XX.
+Other programming languages don't require you to connect arguments to return values in the signature, but this practice will get easier over time. You might want to compare this example with the examples in "Validating References with Lifetimes".
 
 Now let's run the test:
 

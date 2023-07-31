@@ -80,7 +80,7 @@ fn split_at_mut(
 
 Listing 19-6: Using unsafe code in the implementation of the `split_at_mut` function
 
-Recall from "The Slice Type" on page XX that a slice is a pointer to some data and the length of the slice. We use the `len` method to get the length of a slice \[1\] and the `as_mut_ptr` method to access the raw pointer of a slice \[2\]. In this case, because we have a mutable slice to `i32` values, `as_mut_ptr` returns a raw pointer with the type `*mut i32`, which we've stored in the variable `ptr`.
+Recall from "The Slice Type" that a slice is a pointer to some data and the length of the slice. We use the `len` method to get the length of a slice \[1\] and the `as_mut_ptr` method to access the raw pointer of a slice \[2\]. In this case, because we have a mutable slice to `i32` values, `as_mut_ptr` returns a raw pointer with the type `*mut i32`, which we've stored in the variable `ptr`.
 
 We keep the assertion that the `mid` index is within the slice \[3\]. Then we get to the unsafe code \[4\]: the `slice::from_raw_parts_mut` function takes a raw pointer and a length, and it creates a slice. We use it to create a slice that starts from `ptr` and is `mid` items long \[5\]. Then we call the `add` method on `ptr` with `mid` as an argument to get a raw pointer that starts at `mid`, and we create a slice using that pointer and the remaining number of items after `mid` as the length \[6\].
 

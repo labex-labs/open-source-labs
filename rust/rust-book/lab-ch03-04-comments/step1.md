@@ -35,4 +35,4 @@ fn main() {
 }
 ```
 
-Rust also has another kind of comment, documentation comments, which we'll discuss in "Publishing a Crate to Crates.io" on page XX.
+Rust also has another kind of comment, documentation comments, which we'll discuss in "Publishing a Crate to Crates.io".

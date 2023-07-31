@@ -32,7 +32,7 @@ pub mod hosting {
 
 Listing 7-22: Definitions inside the `front_of_house` module in `src/front_of_house.rs`
 
-Note that you only need to load a file using a `mod` declaration _once_ in your module tree. Once the compiler knows the file is part of the project (and knows where in the module tree the code resides because of where you've put the `mod` statement), other files in your project should refer to the loaded file's code using a path to where it was declared, as covered in "Paths for Referring to an Item in the Module Tree" on page XX. In other words, `mod` is _not_ an "include" operation that you may have seen in other programming languages.
+Note that you only need to load a file using a `mod` declaration _once_ in your module tree. Once the compiler knows the file is part of the project (and knows where in the module tree the code resides because of where you've put the `mod` statement), other files in your project should refer to the loaded file's code using a path to where it was declared, as covered in "Paths for Referring to an Item in the Module Tree". In other words, `mod` is _not_ an "include" operation that you may have seen in other programming languages.
 
 Next, we'll extract the `hosting` module to its own file. The process is a bit different because `hosting` is a child module of `front_of_house`, not of the root module. We'll place the file for `hosting` in a new directory that will be named for its ancestors in the module tree, in this case _src/front_of_house_.
 

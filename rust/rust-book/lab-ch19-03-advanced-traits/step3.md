@@ -52,7 +52,7 @@ This code should look generally familiar: a trait with one method and an associa
 
 When we implemented `Add` for `Point`, we used the default for `Rhs` because we wanted to add two `Point` instances. Let's look at an example of implementing the `Add` trait where we want to customize the `Rhs` type rather than using the default.
 
-We have two structs, `Millimeters` and `Meters`, holding values in different units. This thin wrapping of an existing type in another struct is known as the _newtype pattern_, which we describe in more detail in "Using the Newtype Pattern to Implement External Traits on External Types" on page XX. We want to add values in millimeters to values in meters and have the implementation of `Add` do the conversion correctly. We can implement `Add` for `Millimeters` with `Meters` as the `Rhs`, as shown in Listing 19-15.
+We have two structs, `Millimeters` and `Meters`, holding values in different units. This thin wrapping of an existing type in another struct is known as the _newtype pattern_, which we describe in more detail in "Using the Newtype Pattern to Implement External Traits on External Types". We want to add values in millimeters to values in meters and have the implementation of `Add` do the conversion correctly. We can implement `Add` for `Millimeters` with `Meters` as the `Rhs`, as shown in Listing 19-15.
 
 Filename: `src/lib.rs`
 

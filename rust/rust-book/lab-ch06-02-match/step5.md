@@ -38,7 +38,7 @@ fn reroll() {}
 
 This example also meets the exhaustiveness requirement because we're explicitly ignoring all other values in the last arm; we haven't forgotten anything.
 
-Finally, we'll change the rules of the game one more time so that nothing else happens on your turn if you roll anything other than a 3 or a 7. We can express that by using the unit value (the empty tuple type we mentioned in "The Tuple Type" on page XX) as the code that goes with the `_` arm:
+Finally, we'll change the rules of the game one more time so that nothing else happens on your turn if you roll anything other than a 3 or a 7. We can express that by using the unit value (the empty tuple type we mentioned in "The Tuple Type") as the code that goes with the `_` arm:
 
 ```rust
 let dice_roll = 9;

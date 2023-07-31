@@ -12,7 +12,7 @@ Now the program is getting interesting! There's a lot going on in this little li
 let apples = 5;
 ```
 
-This line creates a new variable named `apples` and binds it to the value 5. In Rust, variables are immutable by default, meaning once we give the variable a value, the value won't change. We'll be discussing this concept in detail in "Variables and Mutability" on page XX. To make a variable mutable, we add `mut` before the variable name:
+This line creates a new variable named `apples` and binds it to the value 5. In Rust, variables are immutable by default, meaning once we give the variable a value, the value won't change. We'll be discussing this concept in detail in "Variables and Mutability". To make a variable mutable, we add `mut` before the variable name:
 
 ```rust
 let apples = 5; // immutable

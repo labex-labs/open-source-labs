@@ -29,4 +29,4 @@ If `x` had been a `None` value instead of `Some(5)`, the patterns in the first t
 
 When the `match` expression is done, its scope ends, and so does the scope of the inner `y`. The last `println!` \[6\] produces `at the end: x = Some(5), y = 10`.
 
-To create a `match` expression that compares the values of the outer `x` and `y`, rather than introducing a shadowed variable, we would need to use a match guard conditional instead. We'll talk about match guards in "Extra Conditionals with Match Guards" on page XX.
+To create a `match` expression that compares the values of the outer `x` and `y`, rather than introducing a shadowed variable, we would need to use a match guard conditional instead. We'll talk about match guards in "Extra Conditionals with Match Guards".

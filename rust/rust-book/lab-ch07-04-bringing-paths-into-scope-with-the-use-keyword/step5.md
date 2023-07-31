@@ -10,7 +10,7 @@ rand = "0.8.5"
 
 Adding `rand` as a dependency in `Cargo.toml` tells Cargo to download the `rand` package and any dependencies from *https://crates.io*, and make `rand` available to our project.
 
-Then, to bring `rand` definitions into the scope of our package, we added a `use` line starting with the name of the crate, `rand`, and listed the items we wanted to bring into scope. Recall that in "Generating a Random Number" on page XX, we brought the `Rng` trait into scope and called the `rand::thread_rng` function:
+Then, to bring `rand` definitions into the scope of our package, we added a `use` line starting with the name of the crate, `rand`, and listed the items we wanted to bring into scope. Recall that in "Generating a Random Number", we brought the `Rng` trait into scope and called the `rand::thread_rng` function:
 
 ```rust
 use rand::Rng;

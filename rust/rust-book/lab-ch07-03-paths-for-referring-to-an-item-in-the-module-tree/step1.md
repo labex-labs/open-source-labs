@@ -13,7 +13,7 @@ Returning to Listing 7-1, say we want to call the `add_to_waitlist` function. Th
 
 We'll show two ways to call the `add_to_waitlist` function from a new function, `eat_at_restaurant`, defined in the crate root. These paths are correct, but there's another problem remaining that will prevent this example from compiling as is. We'll explain why in a bit.
 
-The `eat_at_restaurant` function is part of our library crate's public API, so we mark it with the `pub` keyword. In "Exposing Paths with the pub Keyword" on page XX, we'll go into more detail about `pub`.
+The `eat_at_restaurant` function is part of our library crate's public API, so we mark it with the `pub` keyword. In "Exposing Paths with the pub Keyword", we'll go into more detail about `pub`.
 
 Filename: `src/lib.rs`
 

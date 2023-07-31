@@ -49,7 +49,7 @@ mod tests {
 
 Listing 11-6: A test for `can_hold` that checks whether a larger rectangle can indeed hold a smaller rectangle
 
-Note that we've added a new line inside the `tests` module: `use super::*;` \[1\]. The `tests` module is a regular module that follows the usual visibility rules we covered in "Paths for Referring to an Item in the Module Tree" on page XX. Because the `tests` module is an inner module, we need to bring the code under test in the outer module into the scope of the inner module. We use a glob here, so anything we define in the outer module is available to this `tests` module.
+Note that we've added a new line inside the `tests` module: `use super::*;` \[1\]. The `tests` module is a regular module that follows the usual visibility rules we covered in "Paths for Referring to an Item in the Module Tree". Because the `tests` module is an inner module, we need to bring the code under test in the outer module into the scope of the inner module. We use a glob here, so anything we define in the outer module is available to this `tests` module.
 
 We've named our test `larger_can_hold_smaller` \[2\], and we've created the two `Rectangle` instances that we need \[3\]. Then we called the `assert!` macro and passed it the result of calling `larger.can_hold(&smaller)` \[4\]. This expression is supposed to return `true`, so our test should pass. Let's find out!
 

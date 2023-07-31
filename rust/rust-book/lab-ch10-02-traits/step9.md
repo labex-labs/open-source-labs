@@ -48,4 +48,4 @@ fn returns_summarizable(switch: bool) -> impl Summary {
 }
 ```
 
-Returning either a `NewsArticle` or a `Tweet` isn't allowed due to restrictions around how the `impl Trait` syntax is implemented in the compiler. We'll cover how to write a function with this behavior in "Using Trait Objects That Allow for Values of Different Types" on page XX.
+Returning either a `NewsArticle` or a `Tweet` isn't allowed due to restrictions around how the `impl Trait` syntax is implemented in the compiler. We'll cover how to write a function with this behavior in "Using Trait Objects That Allow for Values of Different Types".

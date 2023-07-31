@@ -58,7 +58,7 @@ impl ThreadPool {
 }
 ```
 
-We chose `usize` as the type of the `size` parameter because we know that a negative number of threads doesn't make any sense. We also know we'll use this `4` as the number of elements in a collection of threads, which is what the `usize` type is for, as discussed in "Integer Types" on page XX.
+We chose `usize` as the type of the `size` parameter because we know that a negative number of threads doesn't make any sense. We also know we'll use this `4` as the number of elements in a collection of threads, which is what the `usize` type is for, as discussed in "Integer Types".
 
 Let's check the code again:
 
@@ -73,9 +73,9 @@ current scope
    |              ^^^^^^^ method not found in `ThreadPool`
 ```
 
-Now the error occurs because we don't have an `execute` method on `ThreadPool`. Recall from "Creating a Finite Number of Threads" on page XX that we decided our thread pool should have an interface similar to `thread::spawn`. In addition, we'll implement the `execute` function so it takes the closure it's given and gives it to an idle thread in the pool to run.
+Now the error occurs because we don't have an `execute` method on `ThreadPool`. Recall from "Creating a Finite Number of Threads" that we decided our thread pool should have an interface similar to `thread::spawn`. In addition, we'll implement the `execute` function so it takes the closure it's given and gives it to an idle thread in the pool to run.
 
-We'll define the `execute` method on `ThreadPool` to take a closure as a parameter. Recall from "Moving Captured Values Out of Closures and the Fn Traits" on page XX that we can take closures as parameters with three different traits: `Fn`, `FnMut`, and `FnOnce`. We need to decide which kind of closure to use here. We know we'll end up doing something similar to the standard library `thread::spawn` implementation, so we can look at what bounds the signature of `thread::spawn` has on its parameter. The documentation shows us the following:
+We'll define the `execute` method on `ThreadPool` to take a closure as a parameter. Recall from "Moving Captured Values Out of Closures and the Fn Traits" that we can take closures as parameters with three different traits: `Fn`, `FnMut`, and `FnOnce`. We need to decide which kind of closure to use here. We know we'll end up doing something similar to the standard library `thread::spawn` implementation, so we can look at what bounds the signature of `thread::spawn` has on its parameter. The documentation shows us the following:
 
 ```rust
 pub fn spawn<F, T>(f: F) -> JoinHandle<T>

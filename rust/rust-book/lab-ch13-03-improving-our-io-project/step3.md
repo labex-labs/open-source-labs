@@ -53,6 +53,6 @@ Listing 13-19: Updating the signature of `Config::build` to expect an iterator
 
 The standard library documentation for the `env::args` function shows that the type of the iterator it returns is `std::env::Args`, and that type implements the `Iterator` trait and returns `String` values.
 
-We've updated the signature of the `Config::build` function so the parameter `args` has a generic type with the trait bounds `impl Iterator<Item = String>` instead of `&[String]`. This usage of the `impl Trait` syntax we discussed in "Traits as Parameters" on page XX means that `args` can be any type that implements the `Iterator` type and returns `String` items.
+We've updated the signature of the `Config::build` function so the parameter `args` has a generic type with the trait bounds `impl Iterator<Item = String>` instead of `&[String]`. This usage of the `impl Trait` syntax we discussed in "Traits as Parameters" means that `args` can be any type that implements the `Iterator` type and returns `String` items.
 
 Because we're taking ownership of `args` and we'll be mutating `args` by iterating over it, we can add the `mut` keyword into the specification of the `args` parameter to make it mutable.

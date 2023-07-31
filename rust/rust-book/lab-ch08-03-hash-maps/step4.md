@@ -18,4 +18,4 @@ Listing 8-22: Showing that keys and values are owned by the hash map once they'r
 
 We aren't able to use the variables `field_name` and `field_value` after they've been moved into the hash map with the call to `insert`.
 
-If we insert references to values into the hash map, the values won't be moved into the hash map. The values that the references point to must be valid for at least as long as the hash map is valid. We'll talk more about these issues in "Validating References with Lifetimes" on page XX.
+If we insert references to values into the hash map, the values won't be moved into the hash map. The values that the references point to must be valid for at least as long as the hash map is valid. We'll talk more about these issues in "Validating References with Lifetimes".

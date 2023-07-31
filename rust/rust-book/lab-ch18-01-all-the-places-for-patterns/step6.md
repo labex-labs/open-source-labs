@@ -48,4 +48,4 @@ error[E0308]: mismatched types
              found tuple `(_, _)`
 ```
 
-To fix the error, we could ignore one or more of the values in the tuple using `_` or `..`, as you'll see in "Ignoring Values in a Pattern" on page XX. If the problem is that we have too many variables in the pattern, the solution is to make the types match by removing variables so the number of variables equals the number of elements in the tuple.
+To fix the error, we could ignore one or more of the values in the tuple using `_` or `..`, as you'll see in "Ignoring Values in a Pattern". If the problem is that we have too many variables in the pattern, the solution is to make the types match by removing variables so the number of variables equals the number of elements in the tuple.

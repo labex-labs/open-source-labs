@@ -1,6 +1,6 @@
 # Implementing the execute Method
 
-Let's finally implement the `execute` method on `ThreadPool`. We'll also change `Job` from a struct to a type alias for a trait object that holds the type of closure that `execute` receives. As discussed in "Creating Type Synonyms with Type Aliases" on page XX, type aliases allow us to make long types shorter for ease of use. Look at Listing 20-19.
+Let's finally implement the `execute` method on `ThreadPool`. We'll also change `Job` from a struct to a type alias for a trait object that holds the type of closure that `execute` receives. As discussed in "Creating Type Synonyms with Type Aliases", type aliases allow us to make long types shorter for ease of use. Look at Listing 20-19.
 
 Filename: `src/lib.rs`
 

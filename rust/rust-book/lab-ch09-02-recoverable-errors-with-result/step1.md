@@ -2,7 +2,7 @@
 
 Most errors aren't serious enough to require the program to stop entirely. Sometimes when a function fails it's for a reason that you can easily interpret and respond to. For example, if you try to open a file and that operation fails because the file doesn't exist, you might want to create the file instead of terminating the process.
 
-Recall from "Handling Potential Failure with Result" on page XX that the `Result` enum is defined as having two variants, `Ok` and `Err`, as follows:
+Recall from "Handling Potential Failure with Result" that the `Result` enum is defined as having two variants, `Ok` and `Err`, as follows:
 
 ```rust
 enum Result<T, E> {

@@ -52,11 +52,11 @@ let list_of_strings: Vec<String> = list_of_numbers
     .collect();
 ```
 
-Note that we must use the fully qualified syntax that we talked about in "Advanced Traits" on page XX because there are multiple functions available named `to_string`.
+Note that we must use the fully qualified syntax that we talked about in "Advanced Traits" because there are multiple functions available named `to_string`.
 
 Here, we're using the `to_string` function defined in the `ToString` trait, which the standard library has implemented for any type that implements `Display`.
 
-Recall from "Enum Values" on page XX that the name of each enum variant that we define also becomes an initializer function. We can use these initializer functions as function pointers that implement the closure traits, which means we can specify the initializer functions as arguments for methods that take closures, like so:
+Recall from "Enum Values" that the name of each enum variant that we define also becomes an initializer function. We can use these initializer functions as function pointers that implement the closure traits, which means we can specify the initializer functions as arguments for methods that take closures, like so:
 
 ```rust
 enum Status {

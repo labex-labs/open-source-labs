@@ -26,4 +26,4 @@ mod tests {
 
 Listing 11-12: Testing a private function
 
-Note that the `internal_adder` function is not marked as `pub`. Tests are just Rust code, and the `tests` module is just another module. As we discussed in "Paths for Referring to an Item in the Module Tree" on page XX, items in child modules can use the items in their ancestor modules. In this test, we bring all of the `test` module's parent's items into scope with `use super::*`, and then the test can call `internal_adder`. If you don't think private functions should be tested, there's nothing in Rust that will compel you to do so.
+Note that the `internal_adder` function is not marked as `pub`. Tests are just Rust code, and the `tests` module is just another module. As we discussed in "Paths for Referring to an Item in the Module Tree", items in child modules can use the items in their ancestor modules. In this test, we bring all of the `test` module's parent's items into scope with `use super::*`, and then the test can call `internal_adder`. If you don't think private functions should be tested, there's nothing in Rust that will compel you to do so.

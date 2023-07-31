@@ -16,7 +16,7 @@ fn main() {
 
 Listing 10-19: A `main` function that calls the `longest` function to find the longer of two string slices
 
-Note that we want the function to take string slices, which are references, rather than strings, because we don't want the `longest` function to take ownership of its parameters. Refer to "String Slices as Parameters" on page XX for more discussion about why the parameters we use in Listing 10-19 are the ones we want.
+Note that we want the function to take string slices, which are references, rather than strings, because we don't want the `longest` function to take ownership of its parameters. Refer to "String Slices as Parameters" for more discussion about why the parameters we use in Listing 10-19 are the ones we want.
 
 If we try to implement the `longest` function as shown in Listing 10-20, it won't compile.
 

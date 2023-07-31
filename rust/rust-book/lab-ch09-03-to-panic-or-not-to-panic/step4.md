@@ -4,7 +4,7 @@ It's advisable to have your code panic when it's possible that your code could e
 
 - The bad state is something that is unexpected, as opposed to something that will likely happen occasionally, like a user entering data in the wrong format.
 - Your code after this point needs to rely on not being in this bad state, rather than checking for the problem at every step.
-- There's not a good way to encode this information in the types you use. We'll work through an example of what we mean in "Encoding States and Behavior as Types" on page XX.
+- There's not a good way to encode this information in the types you use. We'll work through an example of what we mean in "Encoding States and Behavior as Types".
 
 If someone calls your code and passes in values that don't make sense, it's best to return an error if you can so the user of the library can decide what they want to do in that case. However, in cases where continuing could be insecure or harmful, the best choice might be to call `panic!` and alert the person using your library to the bug in their code so they can fix it during development. Similarly, `panic!` is often appropriate if you're calling external code that is out of your control and it returns an invalid state that you have no way of fixing.
 

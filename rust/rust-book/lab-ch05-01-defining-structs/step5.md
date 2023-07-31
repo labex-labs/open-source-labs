@@ -1,6 +1,6 @@
 # Unit-Like Structs Without Any Fields
 
-You can also define structs that don't have any fields! These are called _unit-like structs_ because they behave similarly to `()`, the unit type that we mentioned in "The Tuple Type" on page XX. Unit-like structs can be useful when you need to implement a trait on some type but don't have any data that you want to store in the type itself. We'll discuss traits in Chapter 10. Here's an example of declaring and instantiating a unit struct named `AlwaysEqual`:
+You can also define structs that don't have any fields! These are called _unit-like structs_ because they behave similarly to `()`, the unit type that we mentioned in "The Tuple Type". Unit-like structs can be useful when you need to implement a trait on some type but don't have any data that you want to store in the type itself. We'll discuss traits in Chapter 10. Here's an example of declaring and instantiating a unit struct named `AlwaysEqual`:
 
 Filename: `src/main.rs`
 

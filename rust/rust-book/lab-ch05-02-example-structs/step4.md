@@ -89,7 +89,7 @@ Nice! It's not the prettiest output, but it shows the values of all the fields f
 
 Another way to print out a value using the `Debug` format is to use the `dbg!` macro, which takes ownership of an expression (as opposed to `println!`, which takes a reference), prints the file and line number of where that `dbg!` macro call occurs in your code along with the resultant value of that expression, and returns ownership of the value.
 
-> Note: Calling the `dbg!` macro prints to the standard error console stream (`stderr`), as opposed to `println!`, which prints to the standard output console stream (`stdout`). We'll talk more about `stderr` and `stdout` in "Writing Error Messages to Standard Error Instead of Standard Output" on page XX.
+> Note: Calling the `dbg!` macro prints to the standard error console stream (`stderr`), as opposed to `println!`, which prints to the standard output console stream (`stdout`). We'll talk more about `stderr` and `stdout` in "Writing Error Messages to Standard Error Instead of Standard Output".
 
 Here's an example where we're interested in the value that gets assigned to the `width` field, as well as the value of the whole struct in `rect1`:
 

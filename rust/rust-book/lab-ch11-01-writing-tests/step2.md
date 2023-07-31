@@ -62,11 +62,11 @@ Listing 11-2: The output from running the automatically generated test
 
 Cargo compiled and ran the test. We see the line `running 1 test` \[1\]. The next line shows the name of the generated test function, called `it_works`, and that the result of running that test is `ok` \[2\]. The overall summary `test result: ok.` \[3\] means that all the tests passed, and the portion that reads `1 passed; 0 failed` totals the number of tests that passed or failed.
 
-It's possible to mark a test as ignored so it doesn't run in a particular instance; we'll cover that in "Ignoring Some Tests Unless Specifically Requested" on page XX. Because we haven't done that here, the summary shows `0 ignored`. We can also pass an argument to the `cargo test` command to run only tests whose name matches a string; this is called _filtering_ and we'll cover it in "Running a Subset of Tests by Name" on page XX. Here we haven't filtered the tests being run, so the end of the summary shows `0 filtered out`.
+It's possible to mark a test as ignored so it doesn't run in a particular instance; we'll cover that in "Ignoring Some Tests Unless Specifically Requested". Because we haven't done that here, the summary shows `0 ignored`. We can also pass an argument to the `cargo test` command to run only tests whose name matches a string; this is called _filtering_ and we'll cover it in "Running a Subset of Tests by Name". Here we haven't filtered the tests being run, so the end of the summary shows `0 filtered out`.
 
 The `0 measured` statistic is for benchmark tests that measure performance. Benchmark tests are, as of this writing, only available in nightly Rust. See the documentation about benchmark tests at *https://doc.rust-lang.org/unstable-book/library-features/test.html* to learn more.
 
-The next part of the test output starting at `Doc-tests adder` \[4\] is for the results of any documentation tests. We don't have any documentation tests yet, but Rust can compile any code examples that appear in our API documentation. This feature helps keep your docs and your code in sync! We'll discuss how to write documentation tests in "Documentation Comments as Tests" on page XX. For now, we'll ignore the `Doc-tests` output.
+The next part of the test output starting at `Doc-tests adder` \[4\] is for the results of any documentation tests. We don't have any documentation tests yet, but Rust can compile any code examples that appear in our API documentation. This feature helps keep your docs and your code in sync! We'll discuss how to write documentation tests in "Documentation Comments as Tests". For now, we'll ignore the `Doc-tests` output.
 
 Let's start to customize the test to our own needs. First, change the name of the `it_works` function to a different name, such as `exploration`, like so:
 
@@ -135,7 +135,7 @@ Run the tests again using `cargo test`. The output should look like Listing 11-4
 
 Listing 11-4: Test results when one test passes and one test fails
 
-Instead of `ok`, the line `test tests::another` shows `FAILED` \[1\]. Two new sections appear between the individual results and the summary: the first \[2\] displays the detailed reason for each test failure. In this case, we get the details that `another` failed because it `panicked at 'Make this test fail'` on line 10 in the `src/lib.rs` file. The next section \[3\] lists just the names of all the failing tests, which is useful when there are lots of tests and lots of detailed failing test output. We can use the name of a failing test to run just that test to more easily debug it; we'll talk more about ways to run tests in "Controlling How Tests Are Run" on page XX.
+Instead of `ok`, the line `test tests::another` shows `FAILED` \[1\]. Two new sections appear between the individual results and the summary: the first \[2\] displays the detailed reason for each test failure. In this case, we get the details that `another` failed because it `panicked at 'Make this test fail'` on line 10 in the `src/lib.rs` file. The next section \[3\] lists just the names of all the failing tests, which is useful when there are lots of tests and lots of detailed failing test output. We can use the name of a failing test to run just that test to more easily debug it; we'll talk more about ways to run tests in "Controlling How Tests Are Run".
 
 The summary line displays at the end \[4\]: overall, our test result is `FAILED`. We had one test pass and one test fail.
 

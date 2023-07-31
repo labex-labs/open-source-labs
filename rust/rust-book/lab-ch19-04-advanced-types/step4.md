@@ -21,7 +21,7 @@ let guess: u32 = match guess.trim().parse() {
 
 Listing 19-26: A `match` with an arm that ends in `continue`
 
-At the time, we skipped over some details in this code. In "The match Control Flow Construct" on page XX, we discussed that `match` arms must all return the same type. So, for example, the following code doesn't work:
+At the time, we skipped over some details in this code. In "The match Control Flow Construct", we discussed that `match` arms must all return the same type. So, for example, the following code doesn't work:
 
 ```rust
 let guess = match guess.trim().parse() {

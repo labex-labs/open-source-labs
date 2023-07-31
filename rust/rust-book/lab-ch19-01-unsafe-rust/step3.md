@@ -1,6 +1,6 @@
 # Dereferencing a Raw Pointer
 
-In "Dangling References" on page XX, we mentioned that the compiler ensures references are always valid. Unsafe Rust has two new types called _raw pointers_ that are similar to references. As with references, raw pointers can be immutable or mutable and are written as `*const T` and `*mut T`, respectively. The asterisk isn't the dereference operator; it's part of the type name. In the context of raw pointers, _immutable_ means that the pointer can't be directly assigned to after being dereferenced.
+In "Dangling References", we mentioned that the compiler ensures references are always valid. Unsafe Rust has two new types called _raw pointers_ that are similar to references. As with references, raw pointers can be immutable or mutable and are written as `*const T` and `*mut T`, respectively. The asterisk isn't the dereference operator; it's part of the type name. In the context of raw pointers, _immutable_ means that the pointer can't be directly assigned to after being dereferenced.
 
 Different from references and smart pointers, raw pointers:
 
@@ -55,4 +55,4 @@ Creating a pointer does no harm; it's only when we try to access the value that 
 
 Note also that in Listings 19-1 and 19-3, we created `*const i32` and `*mut i32` raw pointers that both pointed to the same memory location, where `num` is stored. If we instead tried to create an immutable and a mutable reference to `num`, the code would not have compiled because Rust's ownership rules don't allow a mutable reference at the same time as any immutable references. With raw pointers, we can create a mutable pointer and an immutable pointer to the same location and change data through the mutable pointer, potentially creating a data race. Be careful!
 
-With all of these dangers, why would you ever use raw pointers? One major use case is when interfacing with C code, as you'll see in "Calling an Unsafe Function or Method" on page XX. Another case is when building up safe abstractions that the borrow checker doesn't understand. We'll introduce unsafe functions and then look at an example of a safe abstraction that uses unsafe code.
+With all of these dangers, why would you ever use raw pointers? One major use case is when interfacing with C code, as you'll see in "Calling an Unsafe Function or Method". Another case is when building up safe abstractions that the borrow checker doesn't understand. We'll introduce unsafe functions and then look at an example of a safe abstraction that uses unsafe code.

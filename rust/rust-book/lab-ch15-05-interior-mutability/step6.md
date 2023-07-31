@@ -39,7 +39,7 @@ We create a value that is an instance of `Rc<RefCell<i32>>` and store it in a va
 
 We wrap the list `a` in an `Rc<T>` so when we create lists `b` and `c`, they can both refer to `a`, which is what we did in Listing 15-18.
 
-After we've created the lists in `a`, `b`, and `c`, we want to add 10 to the value in `value` \[3\]. We do this by calling `borrow_mut` on `value`, which uses the automatic dereferencing feature we discussed in "Where's the -\> Operator?" on page XX to dereference the `Rc<T>` to the inner `RefCell<T>` value. The `borrow_mut` method returns a `RefMut<T>` smart pointer, and we use the dereference operator on it and change the inner value.
+After we've created the lists in `a`, `b`, and `c`, we want to add 10 to the value in `value` \[3\]. We do this by calling `borrow_mut` on `value`, which uses the automatic dereferencing feature we discussed in "Where's the -\> Operator?" to dereference the `Rc<T>` to the inner `RefCell<T>` value. The `borrow_mut` method returns a `RefMut<T>` smart pointer, and we use the dereference operator on it and change the inner value.
 
 When we print `a`, `b`, and `c`, we can see that they all have the modified value of `15` rather than `5`:
 

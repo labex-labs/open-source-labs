@@ -16,7 +16,7 @@ fn main() {
 
 Listing 19-9: Defining and using an immutable static variable
 
-Static variables are similar to constants, which we discussed in "Constants" on page XX. The names of static variables are in `SCREAMING_SNAKE_CASE` by convention. Static variables can only store references with the `'static` lifetime, which means the Rust compiler can figure out the lifetime and we aren't required to annotate it explicitly. Accessing an immutable static variable is safe.
+Static variables are similar to constants, which we discussed in "Constants". The names of static variables are in `SCREAMING_SNAKE_CASE` by convention. Static variables can only store references with the `'static` lifetime, which means the Rust compiler can figure out the lifetime and we aren't required to annotate it explicitly. Accessing an immutable static variable is safe.
 
 A subtle difference between constants and immutable static variables is that values in a static variable have a fixed address in memory. Using the value will always access the same data. Constants, on the other hand, are allowed to duplicate their data whenever they're used. Another difference is that static variables can be mutable. Accessing and modifying mutable static variables is _unsafe_. Listing 19-10 shows how to declare, access, and modify a mutable static variable named `COUNTER`.
 

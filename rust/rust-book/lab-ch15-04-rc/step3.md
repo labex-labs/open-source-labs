@@ -36,7 +36,7 @@ fn main() {
 
 Listing 15-19: Printing the reference count
 
-At each point in the program where the reference count changes, we print the reference count, which we get by calling the `Rc::strong_count` function. This function is named `strong_count` rather than `count` because the `Rc<T>` type also has a `weak_count`; we'll see what `weak_count` is used for in "Preventing Reference Cycles Using Weak`<T>`{=html}" on page XX.
+At each point in the program where the reference count changes, we print the reference count, which we get by calling the `Rc::strong_count` function. This function is named `strong_count` rather than `count` because the `Rc<T>` type also has a `weak_count`; we'll see what `weak_count` is used for in "Preventing Reference Cycles Using Weak`<T>`{=html}".
 
 This code prints the following:
 

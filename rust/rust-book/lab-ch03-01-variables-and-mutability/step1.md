@@ -1,6 +1,6 @@
 # Variables and Mutability
 
-As mentioned in "Storing Values with Variables" on page XX, by default, variables are immutable. This is one of many nudges Rust gives you to write your code in a way that takes advantage of the safety and easy concurrency that Rust offers. However, you still have the option to make your variables mutable. Let's explore how and why Rust encourages you to favor immutability and why sometimes you might want to opt out.
+As mentioned in "Storing Values with Variables", by default, variables are immutable. This is one of many nudges Rust gives you to write your code in a way that takes advantage of the safety and easy concurrency that Rust offers. However, you still have the option to make your variables mutable. Let's explore how and why Rust encourages you to favor immutability and why sometimes you might want to opt out.
 
 When a variable is immutable, once a value is bound to a name, you can't change that value. To illustrate this, generate a new project called _variables_ in your `project` directory by using `cargo new variables`.
 

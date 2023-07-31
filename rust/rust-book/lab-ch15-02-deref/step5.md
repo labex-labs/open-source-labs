@@ -1,6 +1,6 @@
 # Implementing the Deref Trait
 
-As discussed in "Implementing a Trait on a Type" on page XX, to implement a trait we need to provide implementations for the trait's required methods. The `Deref` trait, provided by the standard library, requires us to implement one method named `deref` that borrows `self` and returns a reference to the inner data. Listing 15-10 contains an implementation of `Deref` to add to the definition of `MyBox``<T>`.
+As discussed in "Implementing a Trait on a Type", to implement a trait we need to provide implementations for the trait's required methods. The `Deref` trait, provided by the standard library, requires us to implement one method named `deref` that borrows `self` and returns a reference to the inner data. Listing 15-10 contains an implementation of `Deref` to add to the definition of `MyBox``<T>`.
 
 Filename: `src/main.rs`
 
@@ -20,7 +20,7 @@ Listing 15-10: Implementing `Deref` on `MyBox<T>`
 
 The `type Target = T;` syntax \[1\] defines an associated type for the `Deref` trait to use. Associated types are a slightly different way of declaring a generic parameter, but you don't need to worry about them for now; we'll cover them in more detail in Chapter 19.
 
-We fill in the body of the `deref` method with `&self.0` so `deref` returns a reference to the value we want to access with the `*` operator \[2\]; recall from "Using Tuple Structs Without Named Fields to Create Different Types" on page XX that `.0` accesses the first value in a tuple struct. The `main` function in Listing 15-9 that calls `*` on the `MyBox<T>` value now compiles, and the assertions pass!
+We fill in the body of the `deref` method with `&self.0` so `deref` returns a reference to the value we want to access with the `*` operator \[2\]; recall from "Using Tuple Structs Without Named Fields to Create Different Types" that `.0` accesses the first value in a tuple struct. The `main` function in Listing 15-9 that calls `*` on the `MyBox<T>` value now compiles, and the assertions pass!
 
 Without the `Deref` trait, the compiler can only dereference `&` references. The `deref` method gives the compiler the ability to take a value of any type that implements `Deref` and call the `deref` method to get a `&` reference that it knows how to dereference.
 

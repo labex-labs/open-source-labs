@@ -42,7 +42,7 @@ fn main() {
 
 As you can see, we've moved everything from the guess input prompt onward into a loop. Be sure to indent the lines inside the loop another four spaces each and run the program again. The program will now ask for another guess forever, which actually introduces a new problem. It doesn't seem like the user can quit!
 
-The user could always interrupt the program by using the keyboard shortcut ctrl-C. But there's another way to escape this insatiable monster, as mentioned in the `parse` discussion in "Comparing the Guess to the Secret Number" on page XX: if the user enters a non-number answer, the program will crash. We can take advantage of that to allow the user to quit, as shown here:
+The user could always interrupt the program by using the keyboard shortcut ctrl-C. But there's another way to escape this insatiable monster, as mentioned in the `parse` discussion in "Comparing the Guess to the Secret Number": if the user enters a non-number answer, the program will crash. We can take advantage of that to allow the user to quit, as shown here:
 
 ```bash
 $ cargo run
