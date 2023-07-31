@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-ls ~/project/variables
+cd ~/project/variables && cargo run
