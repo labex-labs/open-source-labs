@@ -2,6 +2,13 @@
 
 Functions are prevalent in Rust code. You've already seen one of the most important functions in the language: the `main` function, which is the entry point of many programs. You've also seen the `fn` keyword, which allows you to declare new functions.
 
+Create a new project called `functions`:
+
+```bash
+cargo new functions
+cd functions
+```
+
 Rust code uses _snake case_ as the conventional style for function and variable names, in which all letters are lowercase and underscores separate words. Here's a program that contains an example function definition:
 
 Filename: `src/main.rs`

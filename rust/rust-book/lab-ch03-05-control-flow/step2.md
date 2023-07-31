@@ -4,6 +4,11 @@ An `if` expression allows you to branch your code depending on conditions. You p
 
 Create a new project called `branches` in your `project` directory to explore the `if` expression. In the `src/main.rs` file, input the following:
 
+```bash
+cd ~/project
+cargo new branches
+```
+
 Filename: `src/main.rs`
 
 ```rust
