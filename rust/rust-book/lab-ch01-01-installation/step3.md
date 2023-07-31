@@ -1,8 +1,9 @@
 # Troubleshooting
 
-To check whether you have Rust installed correctly, open a shell and enter this line:
+To check whether you have Rust installed correctly, open a **new shell** and enter this line:
 
 ```bash
+# Open a new terminal first!
 rustc --version
 ```
 

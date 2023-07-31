@@ -11,3 +11,5 @@ To uninstall Rust and `rustup`, run the following uninstall script from your she
 ```bash
 rustup self uninstall
 ```
+
+Enter `N` when prompted to confirm that you want to uninstall Rust.

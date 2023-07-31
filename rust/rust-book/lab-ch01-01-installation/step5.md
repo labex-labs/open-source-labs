@@ -7,3 +7,5 @@ rustup doc
 ```
 
 Any time a type or function is provided by the standard library and you're not sure what it does or how to use it, use the application programming interface (API) documentation to find out!
+
+**Note: The WebIDE does not support opening local documentation.**
