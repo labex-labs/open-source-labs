@@ -29,3 +29,4 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 6. Set the `commit-template` file as the commit message template for the repository.
 7. Open the commit message editor and notice that the commit message editor now contains the commit message template you created in step 3.
 8. Press <kbd>Esc</kbd> and enter the <kbd>:q</kbd> command, then press <kbd>Enter</kbd> to exit the commit message editor.
+
