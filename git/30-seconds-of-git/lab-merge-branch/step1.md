@@ -11,25 +11,31 @@ cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
 ```
-2. Create and switch to `feature-branch-A`, add "hello" to `file2.txt`, add it to the staging area and commit it, the commit message will be "fix file2.txt":
+2. Create a `feature-branch-A` branch. Switch to it:
 ```shell
 git checkout -b feature-branch-A
-echo "hello" > file2.txt
+```
+3. Add "hello,world" to the `file2.txt` file, add it to the staging area and commit it with the message "fix file2.txt":
+```shell
+echo "hello,world" >> file2.txt
 git add .
 git commit -m "fix file2.txt"
 ```
-3. Switch to the `master` branch and merge the `feature-branch-A` into the `master` branch:
+4. Switch to the `master` branch:
 ```shell
 git checkout master
+```
+5. Merge the `feature-branch-A` into the `master` branch:
+```shell
 git merge feature-branch-A
 ```
-4. Resolve any conflicts that may arise during the merge process.
+6. Resolve any conflicts that may arise during the merge process.
 
-This is the final result:
+This is the result of running `git log`:
 ```shell
-commit 742e0d4feeec7c5989e2336de7526600301e284e (HEAD -> master, feature-branch-A)
+commit e2b80358ae6e4c3b8439cf111a4672a188739290 (HEAD -> master, feature-branch-A)
 Author: xiaoshengyunan <@users.noreply.github.com>
-Date:   Mon Jul 17 20:35:15 2023 +0800
+Date:   Fri Jul 21 18:51:00 2023 +0800
 
     fix file2.txt
 ```
