@@ -1,3 +1,3 @@
 #!/bin/zsh
-cd /home/labex/project/git-playground
-git log --oneline origin/master | grep "feat: Add test to README.md"
+(cd /home/labex/project/git-playground && git config commit.template | grep "commit-template") && (cd /home/labex/project/git-playground && cat /home/labex/project/git-playground/commit-template | grep "This creates a template with three sections") && echo "True"
+
