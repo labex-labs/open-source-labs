@@ -19,9 +19,11 @@ function.
 ```python
 # readrides.py
 
-import collections
+from collections.abc import Sequence
+
 ...
-class RideData(collections.Sequence):
+
+class RideData(Sequence):
     def __init__(self):
         self.routes = []      # Columns
         self.dates = []

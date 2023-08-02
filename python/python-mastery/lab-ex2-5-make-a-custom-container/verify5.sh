@@ -1,9 +1,3 @@
 #!/bin/zsh
 
-history_file="$HOME/.python_history"
-
-if [[ -f "$history_file" ]]; then
-    > "$history_file"
-fi
-
-cat ~/.python_history | grep  "len"
+cat ~/.python_history | grep -E "\[.*[0-9].*:.*\]"
