@@ -1,10 +1,12 @@
 # colreader.py
 
+from collections.abc import Sequence
 import collections
 import csv
 
 
-class DataCollection(collections.Sequence):
+
+class DataCollection(Sequence):
     def __init__(self, columns):
         self.column_names = list(columns)
         self.column_data = list(columns.values())
