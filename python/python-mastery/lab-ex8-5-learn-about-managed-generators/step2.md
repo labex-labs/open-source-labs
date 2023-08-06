@@ -1,6 +1,6 @@
 # Generators as Tasks Serving Network Connections
 
-Create a file `server.py` and put the following code into it:
+In the file `server.py` and put the following code into it:
 
 ```python
 # server.py
