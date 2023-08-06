@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Plot GPR Co2",
+  "description": "This lab is a step-by-step tutorial on how to perform Gaussian Process Regression (GPR) on Mauna Loa CO2 data using the scikit-learn package. The data consists of monthly average atmospheric CO2 concentrations collected at the Mauna Loa Observatory in Hawaii between 1958 and 2001. The objective is to model the CO2 concentration as a function of time and extrapolate it for years after 2001.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Build the Dataset",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-gpr-co2.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/gaussian_processes"]
+      },
+      {
+        "title": "Design the Proper Kernel",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-gpr-co2.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/gaussian_processes"]
+      },
+      {
+        "title": "Model Fitting and Extrapolation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-gpr-co2.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/gaussian_processes"]
+      },
+      {
+        "title": "Interpretation of Kernel Hyperparameters",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in plot-gpr-co2.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/gaussian_processes"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-gpr-co2.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

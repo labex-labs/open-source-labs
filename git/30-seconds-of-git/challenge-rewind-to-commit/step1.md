@@ -1,4 +1,4 @@
-# Git Challenge: Rewind to a Specific Commit
+# Rewind to a Specific Commit
 
 ## Problem
 
@@ -6,12 +6,15 @@ As a developer, you may need to undo changes made to your codebase. For example,
 
 ## Example
 
-For this challenge, you will use the Git repository named `https://github.com/labex-labs/git-playground`. Follow these steps to complete the challenge:
+To complete this challenge, you will use the Git repository `git-playground` from `https://github.com/labex-labs/git-playground.git`.
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Navigate to the repository using the command `cd git-playground`.
-3. Use the command `git log` to view the commit history of the repository.
-4. Identify the commit hash that you want to rewind back to.
-5. Use the command `git reset <commit>` to rewind back to the specified commit. For example, if you want to rewind back to the commit with hash `3050fc0d3`, use the command `git reset 3050fc0d3`.
-6. Use the command `git status` to view the changes made to your codebase.
-7. If you want to delete the changes and revert to the earlier version of your code, use the command `git reset --hard <commit>`. For example, if you want to delete the changes and revert to the commit with hash `c0d30f305`, use the command `git reset --hard c0d30f305`.
+1. View the commit history of the repository.
+2. Make sure that the commit message you want to rewind to is the "Initial commit" commit hash.
+3. Rewind back to the commit hash.
+4. View the commit history of the repository again.
+
+This is the result of running `git log --oneline`:
+
+```shell
+c0d30f305 (HEAD -> master) Initial commit
+```

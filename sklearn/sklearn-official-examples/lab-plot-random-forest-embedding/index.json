@@ -1,0 +1,150 @@
+{
+  "type": "lab",
+  "title": "Hashing Feature Transformation",
+  "description": "This lab demonstrates how to use hashing feature transformation using totally random trees to map data to a high-dimensional, sparse representation that may be useful for classification. The mapping is entirely unsupervised and very efficient.",
+  "difficulty": "Beginner",
+  "time": 40,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Make Synthetic Dataset",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Use RandomTreesEmbedding to Transform Data",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Visualize Result After Dimensionality Reduction using Truncated SVD",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Learn a Naive Bayes Classifier on the Transformed Data",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Learn an ExtraTreesClassifier for Comparison",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Scatter Plot of Original and Reduced Data",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Plot Decision in Original Space",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "You need to practice coding in plot-random-forest-embedding.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-random-forest-embedding.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

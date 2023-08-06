@@ -1,0 +1,122 @@
+{
+  "type": "lab",
+  "title": "Monotonic Constraints Tutorial",
+  "description": "This is a step-by-step tutorial to demonstrate the effect of monotonic constraints on a gradient boosting estimator. Gradient boosting is a popular machine learning technique used for regression and classification tasks. In this tutorial, we will build an artificial dataset and use a gradient boosting estimator to demonstrate the effect of monotonic constraints on the model's predictions.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in plot-monotonic-constraints.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Generate Data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in plot-monotonic-constraints.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Fit a Model Without Constraints",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in plot-monotonic-constraints.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Fit a Model With Monotonic Constraints",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in plot-monotonic-constraints.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Display Partial Dependence",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in plot-monotonic-constraints.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      },
+      {
+        "title": "Using Feature Names to Specify Monotonic Constraints",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in plot-monotonic-constraints.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/sklearn", "sklearn/ensemble_methods"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-monotonic-constraints.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
+    "repo": "https://github.com/scikit-learn/scikit-learn"
+  }
+}

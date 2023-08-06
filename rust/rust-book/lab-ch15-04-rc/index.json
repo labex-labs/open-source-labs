@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Rc<T>, the Reference Counted Smart Pointer",
+  "description": "In this lab, we will be exploring the use of Rc<T> (reference counting) in Rust for enabling multiple owners of a value by tracking the number of references to the value and ensuring it is only cleaned up when there are no owners.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Rc<T>, the Reference Counted Smart Pointer",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Using Rc<T> to Share Data",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/enum", "rust/let", "rust/use"]
+      },
+      {
+        "title": "Cloning an Rc<T> Increases the Reference Count",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["rust/let"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/book"
+  }
+}

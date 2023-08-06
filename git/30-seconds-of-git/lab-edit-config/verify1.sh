@@ -1,3 +1,4 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "git config"
-cat ~/.zsh_history | grep -v grep | grep "git configuration"
+(cd /home/labex/project/git-playground && git config --list | grep "user.name=labex_git
+user.email=labex_git@example.com") && echo "True"
+

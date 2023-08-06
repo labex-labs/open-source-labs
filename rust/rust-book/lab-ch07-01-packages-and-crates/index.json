@@ -1,0 +1,59 @@
+{
+  "type": "lab",
+  "title": "Packages and Crates",
+  "description": "In this lab, we will cover packages and crates, where a crate is the smallest unit of code that the Rust compiler considers and can be a binary crate or a library crate, and a package is a collection of one or more crates that provides a set of functionality.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Packages and Crates",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "rust/mod",
+          "rust/use",
+          "rust/fn",
+          "rust/let",
+          "rust/struct",
+          "rust/pub"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "MIT",
+    "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
+    "repo": "https://github.com/rust-lang/book"
+  }
+}

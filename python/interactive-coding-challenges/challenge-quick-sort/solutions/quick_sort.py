@@ -1,6 +1,3 @@
-from __future__ import division
-
-
 class QuickSort(object):
     def sort(self, data):
         if data is None:
