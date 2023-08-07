@@ -17,7 +17,7 @@ print('Total cost:', cost)
 When you run your program, you should see the same output as before. After you've run your program, you can also call your function interactively by typing this:
 
 ```bash
-bash $ python3 -i pcost.py
+$ python3 -i pcost.py
 ```
 
 This will allow you to call your function from the interactive mode.

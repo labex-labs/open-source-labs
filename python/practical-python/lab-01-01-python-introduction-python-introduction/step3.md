@@ -2,7 +2,7 @@
 
 Although there are many environments in which you might run Python, Python is typically installed on your machine as a program that runs from the terminal or command shell. From the terminal, you should be able to type `python` like this:
 
-    bash $ python
+    $ python
     Python 3.8.1 (default, Feb 20 2020, 09:29:22)
     [Clang 10.0.0 (clang-1000.10.44.4)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
