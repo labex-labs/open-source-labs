@@ -62,8 +62,7 @@ def validate_attributes(cls):
 
     # Collect type conversions. The lambda x:x is an identity
     # function that's used in case no expected_type is found.
-    cls._types = tuple([getattr(v, "expected_type", lambda x: x)
-                       for v in validators])
+    cls._types = tuple([getattr(v, "expected_type", lambda x: x) for v in validators])
 
     # Create the __init__ method
     if cls._fields:

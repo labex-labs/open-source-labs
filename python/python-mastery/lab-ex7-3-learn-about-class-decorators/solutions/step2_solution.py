@@ -49,6 +49,7 @@ def validate_attributes(cls):
 from structure import Structure, validate_attributes
 from validate import String, PositiveInteger, PositiveFloat
 
+
 @validate_attributes
 class Stock(Structure):
     name = String()

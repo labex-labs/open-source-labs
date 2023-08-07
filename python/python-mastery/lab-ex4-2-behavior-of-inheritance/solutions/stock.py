@@ -1,5 +1,6 @@
 from validate import *
 
+
 class Stock:
     def __init__(self, name, shares, price):
         self.name = name
@@ -11,6 +12,7 @@ class Stock:
 
     def sell(self, nshares):
         self.shares -= nshares
+
     @property
     def shares(self):
         return self._shares

@@ -53,6 +53,7 @@ class HTMLTableFormatter(TableFormatter):
             print("<td>%s</td>" % d, end=" ")
         print("</tr>")
 
+
 # ------------------------------------------------------------------------------------------ #
 # The solution is here
 
@@ -68,6 +69,7 @@ class ColumnFormatMixin:
 class UpperHeadersMixin:
     def headings(self, headers):
         super().headings([h.upper() for h in headers])
+
 
 # ------------------------------------------------------------------------------------------ #
 

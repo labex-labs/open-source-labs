@@ -2,7 +2,6 @@
 
 
 class Stock:
-
     # Do step 4 here
 
     _types = (str, int, float)

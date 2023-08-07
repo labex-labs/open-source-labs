@@ -22,9 +22,9 @@ from validate import *
 
 
 class Stock:
-    name = String('name')
-    shares = PositiveInteger('shares')
-    price = PositiveFloat('price')
+    name = String("name")
+    shares = PositiveInteger("shares")
+    price = PositiveFloat("price")
 
     def __init__(self, name, shares, price):
         self.name = name

@@ -3,6 +3,7 @@
 # ------------------------------------------------------------------------------------------ #
 # The solution is here
 
+
 def print_table(records, fields, formatter):
     if not isinstance(formatter, TableFormatter):
         raise TypeError("Expected a TableFormatter")
@@ -14,6 +15,7 @@ def print_table(records, fields, formatter):
 
 
 # ------------------------------------------------------------------------------------------ #
+
 
 class TableFormatter:
     def headings(self, headers):

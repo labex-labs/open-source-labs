@@ -6,6 +6,7 @@ sys.path.append("/home/labex/project")
 
 from pcost import portfolio_cost
 
+
 class TestPortfolioCost(unittest.TestCase):
     def test_value_error(self):
         # 准备测试数据
@@ -27,5 +28,6 @@ class TestPortfolioCost(unittest.TestCase):
         # 验证输出是否包含预期的错误信息
         self.assertIn("invalid literal for int() with base 10: '-'", output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

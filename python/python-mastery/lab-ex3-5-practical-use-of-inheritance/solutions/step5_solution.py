@@ -1,5 +1,6 @@
 # Step 5 Solution
 
+
 def print_table(records, fields, formatter):
     formatter.headings(fields)
     for r in records:
@@ -45,6 +46,7 @@ class HTMLTableFormatter(TableFormatter):
             print("<td>%s</td>" % d, end=" ")
         print("</tr>")
 
+
 # ------------------------------------------------------------------------------------------ #
 # The solution is here
 
@@ -59,4 +61,6 @@ def create_formatter(name):
     else:
         raise RuntimeError("Unknown format %s" % name)
     return formatter_cls()
+
+
 # ------------------------------------------------------------------------------------------ #

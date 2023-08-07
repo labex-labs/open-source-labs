@@ -1,9 +1,10 @@
 from validate import String, PositiveInteger, PositiveFloat
 
+
 class Stock:
-    name   = String()
+    name = String()
     shares = PositiveInteger()
-    price  = PositiveFloat()
+    price = PositiveFloat()
 
     def cost(self):
         return self.shares * self.price

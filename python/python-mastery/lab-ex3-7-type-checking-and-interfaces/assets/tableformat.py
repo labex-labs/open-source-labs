@@ -9,11 +9,14 @@ def print_table(records, fields, formatter):
     for r in records:
         rowdata = [getattr(r, fieldname) for fieldname in fields]
         formatter.row(rowdata)
+
+
 # ------------------------------------------------------------------------------------------ #
 
 
 # ------------------------------------------------------------------------------------------ #
 # Do step 2 here
+
 
 class TableFormatter:
     def headings(self, headers):
@@ -21,6 +24,8 @@ class TableFormatter:
 
     def row(self, rowdata):
         raise NotImplementedError()
+
+
 # ------------------------------------------------------------------------------------------ #
 
 

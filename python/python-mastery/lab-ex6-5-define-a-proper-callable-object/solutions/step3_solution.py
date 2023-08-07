@@ -2,6 +2,7 @@
 
 # validate.py
 
+
 class Validator:
     def __init__(self, name=None):
         self.name = name
@@ -69,12 +70,13 @@ class NonEmptyString(String, NonEmpty):
 
 from inspect import signature
 
+
 class ValidatedFunction:
     def __init__(self, func):
         self.func = func
         self.signature = signature(func)
         self.annotations = dict(func.__annotations__)
-        self.retcheck = self.annotations.pop('return', None)
+        self.retcheck = self.annotations.pop("return", None)
 
     def __call__(self, *args, **kwargs):
         bound = self.signature.bind(*args, **kwargs)
@@ -89,9 +91,11 @@ class ValidatedFunction:
 
         return result
 
+
 # Examples
-if __name__ == '__main__':
-    def add(x:Integer, y:Integer) -> Integer:
+if __name__ == "__main__":
+
+    def add(x: Integer, y: Integer) -> Integer:
         return x + y
 
     add = ValidatedFunction(add)

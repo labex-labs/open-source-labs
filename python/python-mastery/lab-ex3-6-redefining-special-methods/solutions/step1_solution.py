@@ -10,14 +10,14 @@ class Stock:
         self.shares = shares
         self.price = price
 
-# ------------------------------------------------------------------------------------------ #
-# The solution is here
+    # ------------------------------------------------------------------------------------------ #
+    # The solution is here
 
     def __repr__(self):
         # Note: The !r format code produces the repr() string
         return f"{type(self).__name__}({self.name!r}, {self.shares!r}, {self.price!r})"
 
-# ------------------------------------------------------------------------------------------ #
+    # ------------------------------------------------------------------------------------------ #
 
     @classmethod
     def from_row(cls, row):
@@ -61,7 +61,6 @@ if __name__ == "__main__":
     import reader
     from tableformat import create_formatter, print_table
 
-    portfolio = reader.read_csv_as_instances(
-        "/home/labex/project/portfolio.csv", Stock)
+    portfolio = reader.read_csv_as_instances("/home/labex/project/portfolio.csv", Stock)
     formatter = create_formatter("text")
     print_table(portfolio, ["name", "shares", "price"], formatter)

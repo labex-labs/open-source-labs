@@ -1,5 +1,6 @@
 # Step 4 Solution
 
+
 def print_table(records, fields, formatter):
     formatter.headings(fields)
     for r in records:
@@ -22,6 +23,7 @@ class TextTableFormatter(TableFormatter):
 
     def row(self, rowdata):
         print(" ".join("%10s" % d for d in rowdata))
+
 
 # ------------------------------------------------------------------------------------------ #
 # The solution is here
@@ -47,5 +49,6 @@ class HTMLTableFormatter(TableFormatter):
         for d in rowdata:
             print("<td>%s</td>" % d, end=" ")
         print("</tr>")
+
 
 # ------------------------------------------------------------------------------------------ #

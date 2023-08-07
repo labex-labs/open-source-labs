@@ -1,5 +1,6 @@
 # Step 2 Solution
 
+
 # ------------------------------------------------------------------------------------------ #
 # The solution is here
 def print_table(records, fields, formatter):
@@ -15,5 +16,6 @@ class TableFormatter:
 
     def row(self, rowdata):
         raise NotImplementedError()
+
 
 # ------------------------------------------------------------------------------------------ #

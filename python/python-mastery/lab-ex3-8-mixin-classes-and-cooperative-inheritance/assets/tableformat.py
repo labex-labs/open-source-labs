@@ -52,6 +52,7 @@ class HTMLTableFormatter(TableFormatter):
             print("<td>%s</td>" % d, end=" ")
         print("</tr>")
 
+
 # ------------------------------------------------------------------------------------------ #
 # Do step 2 here
 
@@ -62,6 +63,8 @@ class ColumnFormatMixin:
 
 class UpperHeadersMixin:
     pass
+
+
 # ------------------------------------------------------------------------------------------ #
 
 
@@ -79,6 +82,5 @@ def create_formatter(name, column_formats=None, upper_headers=False):
 
     pass
     # ------------------------------------------------------------------------------------------ #
-
 
     return formatter_cls()

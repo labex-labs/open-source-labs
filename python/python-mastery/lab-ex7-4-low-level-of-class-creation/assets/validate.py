@@ -25,6 +25,7 @@ class Typed(Validator):
             raise TypeError(f"expected {cls.expected_type}")
         return super().check(value)
 
+
 class Integer(Typed):
     expected_type = int
 
@@ -35,6 +36,7 @@ class Float(Typed):
 
 class String(Typed):
     expected_type = str
+
 
 class Positive(Validator):
     @classmethod

@@ -40,6 +40,7 @@ class Stock:
         if value < 0:
             raise ValueError("price must be >= 0")
         self._price = value
+
     # ------------------------------------------------------------------------------------------ #
 
     @property

@@ -17,8 +17,6 @@ def read_portfolio(filename):
     """
     pass
     # TODO: implement this function
-    
-    
 
 
 def print_portfolio(portfolio):

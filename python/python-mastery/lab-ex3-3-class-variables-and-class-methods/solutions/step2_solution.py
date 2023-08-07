@@ -1,5 +1,6 @@
 # Step 2 Solution
 
+
 class Stock:
     types = (str, int, float)
 

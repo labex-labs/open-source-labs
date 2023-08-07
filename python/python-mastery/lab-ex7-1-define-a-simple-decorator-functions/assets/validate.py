@@ -92,5 +92,4 @@ class ValidatedFunction:
 
 # Examples
 if __name__ == "__main__":
-
     pass

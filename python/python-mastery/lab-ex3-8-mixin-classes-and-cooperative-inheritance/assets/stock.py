@@ -55,6 +55,8 @@ class Stock:
 
     def sell(self, nshares):
         self.shares -= nshares
+
+
 def read_portfolio(filename):
     """
     Read a CSV file of stock data into a list of Stocks
@@ -79,7 +81,6 @@ def print_portfolio(portfolio):
     print(("-" * 10 + " ") * 3)
     for s in portfolio:
         print("%10s %10d %10.2f" % (s.name, s.shares, s.price))
-
 
 
 # Sample
