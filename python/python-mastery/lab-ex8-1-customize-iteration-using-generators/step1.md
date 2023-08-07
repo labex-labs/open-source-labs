@@ -1,13 +1,8 @@
 # A Simple Generator
 
-If you ever find yourself wanting to customize iteration, you should
-always think generator functions. They're easy to write---simply make
-a function that carries out the desired iteration logic and uses `yield`
-to emit values.
+If you ever find yourself wanting to customize iteration, you should always think generator functions. They're easy to write---simply make a function that carries out the desired iteration logic and uses `yield` to emit values.
 
-For example, try this generator that allows you to iterate over a
-range of numbers with fractional steps (something not supported by
-the `range()` builtin):
+For example, try this generator that allows you to iterate over a range of numbers with fractional steps (something not supported by the `range()` builtin):
 
 ```python
 >>> def frange(start,stop,step):
@@ -22,8 +17,7 @@ the `range()` builtin):
 >>>
 ```
 
-Iterating on a generator is a one-time operation. For example, here's
-what happen if you try to iterate twice:
+Iterating on a generator is a one-time operation. For example, here's what happen if you try to iterate twice:
 
 ```python
 >>> f = frange(0, 2, 0.25)
@@ -37,8 +31,7 @@ what happen if you try to iterate twice:
 >>>
 ```
 
-If you want to iterate over the same sequence, you need to recreate the generator
-by calling `frange()` again. Alternative, you could package everything into a class:
+If you want to iterate over the same sequence, you need to recreate the generator by calling `frange()` again. Alternative, you could package everything into a class:
 
 ```python
 >>> class FRange:

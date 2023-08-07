@@ -1,10 +1,6 @@
 # Generator Expressions and Reduction Functions
 
-Generator expressions are especially useful for feeding data into
-functions such as `sum()`, `min()`, `max()`,
-`any()`, etc. Try some examples using the portfolio data from
-earlier. Carefully observe that these examples are missing some
-extra square brackets ([]) that appeared when using list comprehensions.
+Generator expressions are especially useful for feeding data into functions such as `sum()`, `min()`, `max()`, `any()`, etc. Try some examples using the portfolio data from earlier. Carefully observe that these examples are missing some extra square brackets (\[\]) that appeared when using list comprehensions.
 
 ```python
 >>> from readport import read_portfolio
@@ -22,8 +18,7 @@ False
 >>>
 ```
 
-Here is an subtle use of a generator expression in making comma
-separated values:
+Here is an subtle use of a generator expression in making comma separated values:
 
 ```python
 >>> s = ('GOOG',100,490.10)
@@ -34,7 +29,4 @@ separated values:
 >>>
 ```
 
-The syntax in the above examples takes some getting used to, but the
-critical point is that none of the operations ever create a fully
-populated list of results. This gives you a big memory savings. However,
-you do need to make sure you don't go overboard with the syntax.
+The syntax in the above examples takes some getting used to, but the critical point is that none of the operations ever create a fully populated list of results. This gives you a big memory savings. However, you do need to make sure you don't go overboard with the syntax.

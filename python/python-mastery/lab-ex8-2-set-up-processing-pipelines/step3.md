@@ -1,7 +1,6 @@
 # Keep going
 
-Oh, you can do better than that. Let's plug this into your table generation code. Change
-the program to the following:
+Oh, you can do better than that. Let's plug this into your table generation code. Change the program to the following:
 
 ```python
 # ticker.py
@@ -40,10 +39,6 @@ Now, THAT is crazy! And pretty awesome.
 
 **Discussion**
 
-Some lessons learned: You can create various generator functions and
-chain them together to perform processing involving data-flow
-pipelines.
+Some lessons learned: You can create various generator functions and chain them together to perform processing involving data-flow pipelines.
 
-A good mental model for generator functions might be Lego blocks.
-You can make a collection of small iterator patterns and start
-stacking them together in various ways. It can be an extremely powerful way to program.
+A good mental model for generator functions might be Lego blocks. You can make a collection of small iterator patterns and start stacking them together in various ways. It can be an extremely powerful way to program.

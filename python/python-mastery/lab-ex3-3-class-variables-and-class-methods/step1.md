@@ -1,15 +1,13 @@
 # Previous Lab
 
-Instances of the `Stock` class defined in the previous lab are
-normally created as follows:
+Instances of the `Stock` class defined in the previous lab are normally created as follows:
 
 ```python
 >>> s = Stock('GOOG', 100, 490.1)
 >>>
 ```
 
-However, the `read_portfolio()` function also creates instances from rows
-of data read from files. For example, code such as the following is used:
+However, the `read_portfolio()` function also creates instances from rows of data read from files. For example, code such as the following is used:
 
 ```python
 >>> import csv

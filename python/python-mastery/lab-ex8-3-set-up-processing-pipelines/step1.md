@@ -1,9 +1,6 @@
 # A coroutine example
 
-Getting started with coroutines can be a little tricky. Here is an
-example program that performs the same task as
-[Exercise 8.2](ex8_2.md), but with coroutines. Take this program
-and copy it into a file called `cofollow.py`.
+Getting started with coroutines can be a little tricky. Here is an example program that performs the same task as [Exercise 8.2](ex8_2.md), but with coroutines. Take this program and copy it into a file called `cofollow.py`.
 
 ```python
 # cofollow.py

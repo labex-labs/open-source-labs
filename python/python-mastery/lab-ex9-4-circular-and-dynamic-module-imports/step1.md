@@ -1,7 +1,6 @@
 # Preparation
 
-In the last exercise, you split the `tableformat.py` file up into submodules.
-The last part of the resulting `tableformat/formatter.py` file has turned into a mess of imports.
+In the last exercise, you split the `tableformat.py` file up into submodules. The last part of the resulting `tableformat/formatter.py` file has turned into a mess of imports.
 
 ```python
 # tableformat.py
@@ -43,5 +42,4 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     return formatter_cls()
 ```
 
-The imports in the middle of the file are required because the `create_formatter()`
-function needs them to find the appropriate classes. Really, the whole thing is a mess.
+The imports in the middle of the file are required because the `create_formatter()` function needs them to find the appropriate classes. Really, the whole thing is a mess.

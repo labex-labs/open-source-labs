@@ -1,7 +1,6 @@
 # Controlling Exported Symbols
 
-Modify all of the submodules in the `structly` package so that they explicitly
-define an `__all__` variable which exports selected symbols. Specifically:
+Modify all of the submodules in the `structly` package so that they explicitly define an `__all__` variable which exports selected symbols. Specifically:
 
 - `structure.py` should export `Structure`
 - `reader.py` should export all of the various `read_csv_as_*()` functions
@@ -17,8 +16,7 @@ from .reader import *
 from .tableformat import *
 ```
 
-Once you have done this, you should be able to import everything from
-a single logical module:
+Once you have done this, you should be able to import everything from a single logical module:
 
 ```python
 # stock.py

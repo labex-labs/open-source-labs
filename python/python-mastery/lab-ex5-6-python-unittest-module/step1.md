@@ -1,8 +1,6 @@
 # Preliminaries
 
-In previous exercises, you created a file `stock.py` that contained
-a `Stock` class. In a separate file, `teststock.py`, define the following
-testing code:
+In previous exercises, you created a file `stock.py` that contained a `Stock` class. In a separate file, `teststock.py`, define the following testing code:
 
 ```python
 # teststock.py
@@ -30,5 +28,4 @@ python3 teststock.py
 Ran 1 tests in 0.001s
 
 OK
-
 ````

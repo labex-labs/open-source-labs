@@ -1,10 +1,6 @@
 # Math Operators
 
-You can make an object work with various math operators if you implement the
-appropriate methods for it. However, it's your responsibility to
-recognize other types of data and implement the appropriate conversion
-code. Modify the `MutInt` class by giving it an `__add__()` method
-as follows:
+You can make an object work with various math operators if you implement the appropriate methods for it. However, it's your responsibility to recognize other types of data and implement the appropriate conversion code. Modify the `MutInt` class by giving it an `__add__()` method as follows:
 
 ```python
 class MutInt:
@@ -24,9 +20,7 @@ class MutInt:
             return NotImplemented
 ```
 
-With this change, you should find that you can add both integers and
-mutable integers. The result is a `MutInt` instance. Adding
-other kinds of numbers results in an error:
+With this change, you should find that you can add both integers and mutable integers. The result is a `MutInt` instance. Adding other kinds of numbers results in an error:
 
 ```python
 >>> a = MutInt(3)
@@ -44,8 +38,7 @@ TypeError: unsupported operand type(s) for +: 'MutInt' and 'float'
 >>>
 ```
 
-One problem with the code is that it doesn't work when the order of operands
-is reversed. Consider:
+One problem with the code is that it doesn't work when the order of operands is reversed. Consider:
 
 ```python
 >>> a + 10
@@ -57,10 +50,7 @@ TypeError: unsupported operand type(s) for +: 'int' and 'MutInt'
 >>>
 ```
 
-This is occurring because the `int` type has no knowledge of `MutInt`
-and it's confused. This can be fixed by adding an `__radd__()` method. This
-method is called if the first attempt to call `__add__()` didn't work with the
-provided object.
+This is occurring because the `int` type has no knowledge of `MutInt` and it's confused. This can be fixed by adding an `__radd__()` method. This method is called if the first attempt to call `__add__()` didn't work with the provided object.
 
 ```python
 class MutInt:
@@ -93,8 +83,7 @@ MutInt(13)
 >>>
 ```
 
-Since our integer is mutable, you can also make it recognize the in-place
-add-update operator `+=` by implementing the `__iadd__()` method:
+Since our integer is mutable, you can also make it recognize the in-place add-update operator `+=` by implementing the `__iadd__()` method:
 
 ```python
 class MutInt:
@@ -129,8 +118,7 @@ MutInt(13)
 >>>
 ```
 
-That might seem kind of strange that `b` also changes, but there are subtle features like
-this with built-in Python objects. For example:
+That might seem kind of strange that `b` also changes, but there are subtle features like this with built-in Python objects. For example:
 
 ```python
 >>> a = [1,2,3]

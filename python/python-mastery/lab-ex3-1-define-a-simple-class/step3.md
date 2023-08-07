@@ -1,7 +1,6 @@
 # Printing a Table
 
-Table the data read in step 2 and use it to make a nicely formatted
-table. For example:
+Table the data read in step 2 and use it to make a nicely formatted table. For example:
 
 ```python
 >>> portfolio = read_portfolio('portfolio.csv')
@@ -18,9 +17,7 @@ table. For example:
 >>>
 ```
 
-Take this code and put it in a function `print_portfolio()` that
-produces the same output, but additionally adds some table headers.
-For example:
+Take this code and put it in a function `print_portfolio()` that produces the same output, but additionally adds some table headers. For example:
 
 ```python
 >>> portfolio = read_portfolio('portfolio.csv')

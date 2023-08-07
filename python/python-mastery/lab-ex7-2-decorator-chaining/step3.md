@@ -1,8 +1,6 @@
 # Multiple decorators and methods
 
-Things can get a bit dicey when decorators are applied to methods in a
-class. Try applying your `@logged` decorator to the methods in the
-following class.
+Things can get a bit dicey when decorators are applied to methods in a class. Try applying your `@logged` decorator to the methods in the following class.
 
 ```python
 class Spam:
@@ -26,9 +24,7 @@ class Spam:
         pass
 ```
 
-Does it even work at all? (hint: no). Is there any way to fix the code so
-that it works? For example, can you make it so the following example
-works?
+Does it even work at all? (hint: no). Is there any way to fix the code so that it works? For example, can you make it so the following example works?
 
 ```python
 >>> s = Spam()

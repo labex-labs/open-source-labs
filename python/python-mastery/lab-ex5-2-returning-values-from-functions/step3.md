@@ -1,7 +1,6 @@
 # Futures
 
-Sometimes Python code executes concurrently via threads or processes. To illustrate, try
-this example:
+Sometimes Python code executes concurrently via threads or processes. To illustrate, try this example:
 
 ```python
 >>> import time
@@ -29,10 +28,7 @@ About to work
 Done
 ```
 
-Carefully notice that the result of the calculation appears nowhere. Not only that, you don't even
-know when it's going to be completed. There is a certain coordination problem here. The
-convention for handling this case is to wrap the result of a function in a `Future`. A
-`Future` represents a future result. Here's how it works:
+Carefully notice that the result of the calculation appears nowhere. Not only that, you don't even know when it's going to be completed. There is a certain coordination problem here. The convention for handling this case is to wrap the result of a function in a `Future`. A `Future` represents a future result. Here's how it works:
 
 ```python
 >>> from concurrent.futures import Future
@@ -51,8 +47,7 @@ Done
 >>>
 ```
 
-You'll see this kind of pattern a lot of if working with thread pools, processes, and other
-constructs. For example:
+You'll see this kind of pattern a lot of if working with thread pools, processes, and other constructs. For example:
 
 ```python
 >>> from concurrent.futures import ThreadPoolExecutor

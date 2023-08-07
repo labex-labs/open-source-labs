@@ -1,7 +1,6 @@
 # Comprehensions
 
-List, set, and dictionary comprehensions can be a useful tool for manipulating
-data. For example, try these operations:
+List, set, and dictionary comprehensions can be a useful tool for manipulating data. For example, try these operations:
 
 ```python
 >>> # Find all holdings more than 100 shares

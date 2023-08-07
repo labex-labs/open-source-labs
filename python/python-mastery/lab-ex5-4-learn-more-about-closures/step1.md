@@ -1,7 +1,6 @@
 # Closures as a data structure
 
-One potential use of closures is as a tool for data encapsulation. Try this
-example:
+One potential use of closures is as a tool for data encapsulation. Try this example:
 
 ```python
 def counter(value):
@@ -35,7 +34,4 @@ This code defines two inner functions that manipulate a value. Try it out:
 >>>
 ```
 
-Notice how there is no class definition involved here. Moreover,
-there is no global variable either. Yet, the `up()` and `down()`
-functions are manipulating some "behind the scenes" value. It's
-fairly magical.
+Notice how there is no class definition involved here. Moreover, there is no global variable either. Yet, the `up()` and `down()` functions are manipulating some "behind the scenes" value. It's fairly magical.

@@ -9,9 +9,7 @@ What happens when you take a slice of ride data?
 >>>
 ```
 
-It's probably going to look a little crazy. Can you modify
-the `RideData` class so that it produces a proper slice that
-looks like a list of dictionaries? For example, like this:
+It's probably going to look a little crazy. Can you modify the `RideData` class so that it produces a proper slice that looks like a list of dictionaries? For example, like this:
 
 ```python
 >>> rows = readrides.read_rides_as_columns('ctabus.csv')

@@ -18,5 +18,4 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-Once you've done this, run your `teststock.py` unit tests. You should get a lot of failures, but at least a
-handful of the tests should pass.
+Once you've done this, run your `teststock.py` unit tests. You should get a lot of failures, but at least a handful of the tests should pass.

@@ -1,9 +1,6 @@
 # Descriptors in action
 
-Earlier, you created a class `Stock` that made use of
-slots, properties, and other features. All of these features
-are implemented using the descriptor protocol. See it in
-action by trying this simple experiment.
+Earlier, you created a class `Stock` that made use of slots, properties, and other features. All of these features are implemented using the descriptor protocol. See it in action by trying this simple experiment.
 
 First, create a stock object, and try looking up a few attributes:
 

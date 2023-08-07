@@ -1,10 +1,6 @@
 # Making it Easier To Choose
 
-One problem with using inheritance is the added complexity of picking
-different classes to use (e.g., remembering the names, using the right
-`import` statements, etc.). A factory function can simplify this. Add
-a function `create_formatter()` to your `tableformat.py` file that
-allows a user to more easily make a formatter by specifying a format such as `'text'`, `'csv'`, or `'html'`. For example:
+One problem with using inheritance is the added complexity of picking different classes to use (e.g., remembering the names, using the right `import` statements, etc.). A factory function can simplify this. Add a function `create_formatter()` to your `tableformat.py` file that allows a user to more easily make a formatter by specifying a format such as `'text'`, `'csv'`, or `'html'`. For example:
 
 ```python
 >>> from tableformat import create_formatter, print_table
@@ -23,10 +19,4 @@ allows a user to more easily make a formatter by specifying a format such as `'t
 
 **Discussion**
 
-The `TableFormatter` class in this exercise is an example of something known
-as an "Abstract Base Class." It's not something that's meant to be used directly.
-Instead, it's serving as a kind of interface specification for a program component--in
-this case the various output formats. Essentially, the code that produces the table
-will be programmed against the abstract base class with the expectation that a user
-will provide a suitable implementation. As long as all of the required methods
-have been implemented, it should all just "work" (fingers crossed).
+The `TableFormatter` class in this exercise is an example of something known as an "Abstract Base Class." It's not something that's meant to be used directly. Instead, it's serving as a kind of interface specification for a program component--in this case the various output formats. Essentially, the code that produces the table will be programmed against the abstract base class with the expectation that a user will provide a suitable implementation. As long as all of the required methods have been implemented, it should all just "work" (fingers crossed).

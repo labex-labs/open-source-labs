@@ -32,8 +32,7 @@ IBM 100 70.44
 >>>
 ```
 
-It's somewhat common to use `_` or `__` as a throw-away variable if you don't care
-about one or more of the values. For example:
+It's somewhat common to use `_` or `__` as a throw-away variable if you don't care about one or more of the values. For example:
 
 ```python
 >>> for name, _, price in rows:
@@ -49,8 +48,7 @@ IBM 70.44
 >>>
 ```
 
-If you don't know how many values are being unpacked, you can use `*` as a wildcard.
-Try this experiment in grouping the data by name:
+If you don't know how many values are being unpacked, you can use `*` as a wildcard. Try this experiment in grouping the data by name:
 
 ```python
 >>> from collections import defaultdict

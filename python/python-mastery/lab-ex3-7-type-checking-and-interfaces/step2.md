@@ -1,8 +1,6 @@
 # Abstract Base Classes
 
-Modify the `TableFormatter` base class so that it is defined as a proper
-abstract base class using the `abc` module. Once you have done that, try
-this experiment:
+Modify the `TableFormatter` base class so that it is defined as a proper abstract base class using the `abc` module. Once you have done that, try this experiment:
 
 ```python
 >>> class NewFormatter(TableFormatter):
@@ -18,5 +16,4 @@ TypeError: Can't instantiate abstract class NewFormatter with abstract methods h
 >>>
 ```
 
-Here, the abstract base class caught a spelling error in the class--the fact that
-the `headings()` method was incorrectly given as `headers()`.
+Here, the abstract base class caught a spelling error in the class--the fact that the `headings()` method was incorrectly given as `headers()`.

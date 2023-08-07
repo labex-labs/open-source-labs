@@ -1,10 +1,8 @@
 # Preparation
 
-We're going to recreate the `Stock` class from scratch using some new techniques.
-Make sure you have your unit tests from [Exercise 5.4](ex5_4.md) handy. You'll want those.
+We're going to recreate the `Stock` class from scratch using some new techniques. Make sure you have your unit tests from [Exercise 5.4](ex5_4.md) handy. You'll want those.
 
-If you define a function, you probably already know that it can be
-called using a mix of positional or keyword arguments. For example:
+If you define a function, you probably already know that it can be called using a mix of positional or keyword arguments. For example:
 
 ```python
 >>> def foo(x, y, z):
@@ -17,8 +15,7 @@ called using a mix of positional or keyword arguments. For example:
 >>>
 ```
 
-You may also know that you can pass sequences and dictionaries as
-function arguments using the \* and \*\* syntax. For example:
+You may also know that you can pass sequences and dictionaries as function arguments using the \* and \*\* syntax. For example:
 
 ```python
 >>> args = (1, 2, 3)
@@ -30,9 +27,7 @@ function arguments using the \* and \*\* syntax. For example:
 >>>
 ```
 
-In addition to that, you can write functions that accept any number of
-positional or keyword arguments using the \* and \*\* syntax. For
-example:
+In addition to that, you can write functions that accept any number of positional or keyword arguments using the \* and \*\* syntax. For example:
 
 ```python
 >>> def foo(*args):
@@ -57,6 +52,4 @@ example:
 >>>
 ```
 
-Variable argument functions are sometimes useful as a technique for
-reducing or simplifying the amount of code you need to type. In this
-exercise, we'll explore that idea for simple data structures.
+Variable argument functions are sometimes useful as a technique for reducing or simplifying the amount of code you need to type. In this exercise, we'll explore that idea for simple data structures.

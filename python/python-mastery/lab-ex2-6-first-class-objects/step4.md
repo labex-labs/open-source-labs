@@ -1,12 +1,8 @@
 # Special Challenge Project
 
-In [Exercise 2.5](ex2_5.md), we created a class `RideData` that
-stored all of the bus data in columns, but actually presented the data
-to a user as a sequence of dictionaries. It saved a lot of memory
-through various forms of magic.
+In [Exercise 2.5](ex2_5.md), we created a class `RideData` that stored all of the bus data in columns, but actually presented the data to a user as a sequence of dictionaries. It saved a lot of memory through various forms of magic.
 
-Can you generalize that idea? Specifically, can you make a general
-purpose function `read_csv_as_columns()` that works like this:
+Can you generalize that idea? Specifically, can you make a general purpose function `read_csv_as_columns()` that works like this:
 
 ```python
 >>> data = read_csv_as_columns('ctabus.csv', types=[str, str, str, int])
@@ -23,14 +19,9 @@ purpose function `read_csv_as_columns()` that works like this:
 >>>
 ```
 
-This function is supposed to be general purpose--you can give it any file and
-a list of the column types and it will read the data. The data is read into
-a class `DataCollection` that stores the data as columns internally. The data
-presents itself as a sequence of dictionaries when accessed however.
+This function is supposed to be general purpose--you can give it any file and a list of the column types and it will read the data. The data is read into a class `DataCollection` that stores the data as columns internally. The data presents itself as a sequence of dictionaries when accessed however.
 
-Try using this function with the string interning trick in the last part. How
-much memory does it take to store all of the ride data now? Can you still use
-this function with your earlier CTA analysis code?
+Try using this function with the string interning trick in the last part. How much memory does it take to store all of the ride data now? Can you still use this function with your earlier CTA analysis code?
 
 ## Note:
 

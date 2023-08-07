@@ -1,8 +1,6 @@
 # Mapping
 
-One of the most common operations in functional programming is the `map()` operation that maps a function
-to the values in a sequence. Python has a built-in `map()` function that does this. For
-example:
+One of the most common operations in functional programming is the `map()` operation that maps a function to the values in a sequence. Python has a built-in `map()` function that does this. For example:
 
 ```python
 >>> nums = [1,2,3,4]

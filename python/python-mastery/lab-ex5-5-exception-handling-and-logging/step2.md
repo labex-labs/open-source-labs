@@ -1,8 +1,6 @@
 # Catching Exceptions
 
-Instead of crashing on bad data, modify the code to issue a warning message
-instead. The final result should be a list of the rows that were successfully
-converted. For example:
+Instead of crashing on bad data, modify the code to issue a warning message instead. The final result should be a list of the rows that were successfully converted. For example:
 
 ```python
 >>> port = read_csv_as_dicts('missing.csv', types=[str, int, float])
@@ -19,6 +17,4 @@ Row 26: Bad row: ['VZ', '', '42.92']
 >>>
 ```
 
-Note: Making this change may be a bit tricky because of your previous use of the `map()`
-built-in function. You may have to abandon that approach since there's no easy way to catch
-and handle exceptions in `map()`.
+Note: Making this change may be a bit tricky because of your previous use of the `map()` built-in function. You may have to abandon that approach since there's no easy way to catch and handle exceptions in `map()`.

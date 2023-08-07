@@ -1,8 +1,6 @@
 # Alternate constructors
 
-Perhaps the creation of a `Stock` from a row of raw data is better handled
-by an alternate constructor. Modify the `Stock` class so that it has
-a `types` class variable and `from_row()` class method like this:
+Perhaps the creation of a `Stock` from a row of raw data is better handled by an alternate constructor. Modify the `Stock` class so that it has a `types` class variable and `from_row()` class method like this:
 
 ```python
 class Stock:

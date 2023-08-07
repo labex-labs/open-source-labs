@@ -1,7 +1,6 @@
 # Part 1 : Numbers
 
-Numerical calculations work about like you would expect in Python.
-For example:
+Numerical calculations work about like you would expect in Python. For example:
 
 ```python
 >>> 3 + 4*5
@@ -32,8 +31,7 @@ If you want Python 3 behavior in Python 2, do this:
 >>>
 ```
 
-Numbers have a small set of methods, many of which are actually quite
-recent and overlooked by even experienced Python programmers. Try some of them.
+Numbers have a small set of methods, many of which are actually quite recent and overlooked by even experienced Python programmers. Try some of them.
 
 ```python
 >>> x = 1172.5

@@ -1,8 +1,6 @@
 # Preparation
 
-In the `reader.py` file, there is a central function `convert_csv()` that does
-most of the work. This function crashes if you run it on data with missing or
-bad data. For example:
+In the `reader.py` file, there is a central function `convert_csv()` that does most of the work. This function crashes if you run it on data with missing or bad data. For example:
 
 ```python
 >>> port = read_csv_as_dicts('missing.csv', types=[str, int, float])

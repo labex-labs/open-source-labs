@@ -1,7 +1,6 @@
 # Conversions
 
-Your new primitive type is almost complete. You might want to give it
-the ability to work with some common conversions. For example:
+Your new primitive type is almost complete. You might want to give it the ability to work with some common conversions. For example:
 
 ```python
 >>> a = MutInt(3)
@@ -48,9 +47,7 @@ Now, you can properly convert:
 >>>
 ```
 
-As a general rule, Python never automatically converts data though. Thus, even though you
-gave the class an `__int__()` method, `MutInt` is still not going to work in all
-situations when an integer might be expected. For example, indexing:
+As a general rule, Python never automatically converts data though. Thus, even though you gave the class an `__int__()` method, `MutInt` is still not going to work in all situations when an integer might be expected. For example, indexing:
 
 ```python
 >>> names = ['Dave', 'Guido', 'Paula', 'Thomas', 'Lewis']
@@ -62,8 +59,7 @@ TypeError: list indices must be integers or slices, not MutInt
 >>>
 ```
 
-This can be fixed by giving `MutInt` an `__index__()` method that produces an integer.
-Modify the class like this:
+This can be fixed by giving `MutInt` an `__index__()` method that produces an integer. Modify the class like this:
 
 ```python
 from functools import total_ordering
@@ -85,11 +81,4 @@ class MutInt:
 
 **Discussion**
 
-Making a new primitive datatype is actually one of the most complicated
-programming tasks in Python. There are a lot of edge cases and low-level
-issues to worry about--especially with regard to how your type interacts
-with other Python types. Probably the key thing to keep in mind is that
-you can customize almost every aspect of how an object interacts with the
-rest of Python if you know the underlying protocols. If you're going to
-do this, it's advisable to look at the existing code for something similar
-to what you're trying to make.
+Making a new primitive datatype is actually one of the most complicated programming tasks in Python. There are a lot of edge cases and low-level issues to worry about--especially with regard to how your type interacts with other Python types. Probably the key thing to keep in mind is that you can customize almost every aspect of how an object interacts with the rest of Python if you know the underlying protocols. If you're going to do this, it's advisable to look at the existing code for something similar to what you're trying to make.

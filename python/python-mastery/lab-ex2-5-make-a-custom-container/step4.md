@@ -1,20 +1,10 @@
 # Making a Custom Container - The Great Fake Out
 
-Storing the data in columns offers a much better memory savings, but
-the data is now rather weird to work with. In fact, none of our
-earlier analysis code from [Exercise 2.2](ex2_2.md) can work
-with columns. The reason everything is broken is that you've broken
-the data abstraction that was used in earlier exercises--namely the
-assumption that data is stored as a list of dictionaries.
+Storing the data in columns offers a much better memory savings, but the data is now rather weird to work with. In fact, none of our earlier analysis code from [Exercise 2.2](ex2_2.md) can work with columns. The reason everything is broken is that you've broken the data abstraction that was used in earlier exercises--namely the assumption that data is stored as a list of dictionaries.
 
-This can be fixed if you're willing to make a custom container object
-that "fakes" it. Let's do that.
+This can be fixed if you're willing to make a custom container object that "fakes" it. Let's do that.
 
-The earlier analysis code assumes the data is stored in a sequence of
-records. Each record is represented as a dictionary. Let's start
-by making a new "Sequence" class. In this class, we store the
-four columns of data that were being using in the `read_rides_as_columns()`
-function.
+The earlier analysis code assumes the data is stored in a sequence of records. Each record is represented as a dictionary. Let's start by making a new "Sequence" class. In this class, we store the four columns of data that were being using in the `read_rides_as_columns()` function.
 
 ```python
 # readrides.py
@@ -31,8 +21,7 @@ class RideData(Sequence):
         self.numrides = []
 ```
 
-Try creating a `RideData` instance. You'll find that it fails with an
-error message like this:
+Try creating a `RideData` instance. You'll find that it fails with an error message like this:
 
 ```python
 >>> records = RideData()
@@ -42,11 +31,7 @@ TypeError: Can't instantiate abstract class RideData with abstract methods __get
 >>>
 ```
 
-Carefully read the error message. It tells us what we need to
-implement. Let's add a `__len__()` and `__getitem__()` method. In the
-`__getitem__()` method, we'll make a dictionary. In addition, we'll
-create an `append()` method that takes a dictionary and unpacks it
-into 4 separate `append()` operations.
+Carefully read the error message. It tells us what we need to implement. Let's add a `__len__()` and `__getitem__()` method. In the `__getitem__()` method, we'll make a dictionary. In addition, we'll create an `append()` method that takes a dictionary and unpacks it into 4 separate `append()` operations.
 
 ```python
 # readrides.py
@@ -77,9 +62,7 @@ class RideData(collections.Sequence):
         self.numrides.append(d['rides'])
 ```
 
-If you've done this correctly, you should be able to drop this object into
-the previously written `read_rides_as_dicts()` function. It involves
-changing only one line of code:
+If you've done this correctly, you should be able to drop this object into the previously written `read_rides_as_dicts()` function. It involves changing only one line of code:
 
 ```python
 # readrides.py
@@ -108,8 +91,7 @@ def read_rides_as_dicts(filename):
     return records
 ```
 
-If you've done this right, old code should work exactly as it did before.
-For example:
+If you've done this right, old code should work exactly as it did before. For example:
 
 ```python
 >>> rows = readrides.read_rides_as_dicts('ctabus.csv')
@@ -126,5 +108,4 @@ For example:
 >>>
 ```
 
-Run your earlier CTA code from [Exercise 2.2](ex2_2.md). It
-should work without modification, but use substantially less memory.
+Run your earlier CTA code from [Exercise 2.2](ex2_2.md). It should work without modification, but use substantially less memory.

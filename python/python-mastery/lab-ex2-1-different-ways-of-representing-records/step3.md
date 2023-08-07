@@ -1,8 +1,6 @@
 # A List of Tuples
 
-In practice, you might read the data into a list and convert each line
-into some other data structure. Here is a program `readrides.py` that
-reads the entire file into a list of tuples using the `csv` module:
+In practice, you might read the data into a list and convert each line into some other data structure. Here is a program `readrides.py` that reads the entire file into a list of tuples using the `csv` module:
 
 ```python
 # readrides.py
@@ -33,9 +31,7 @@ if __name__ == '__main__':
     print('Memory Use: Current %d, Peak %d' % tracemalloc.get_traced_memory())
 ```
 
-Run this program using `python3 -i readrides.py` and look at the
-resulting contents of `rows`. You should get a list of tuples like
-this:
+Run this program using `python3 -i readrides.py` and look at the resulting contents of `rows`. You should get a list of tuples like this:
 
 ```python
 >>> len(rows)
@@ -46,5 +42,4 @@ this:
 ('4', '01/01/2001', 'U', 9288)
 ```
 
-Look at the resulting memory use. It should be substantially higher
-than in step 2.
+Look at the resulting memory use. It should be substantially higher than in step 2.

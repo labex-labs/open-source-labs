@@ -21,9 +21,6 @@ class TableFormatter(ABC):
 ...
 ```
 
-Observe that nothing works anymore. Try running the `stock.py` program and
-notice the error about `TableFormatter` not being defined. The order
-of import statements matters and you can't just move the imports anywhere
-you want.
+Observe that nothing works anymore. Try running the `stock.py` program and notice the error about `TableFormatter` not being defined. The order of import statements matters and you can't just move the imports anywhere you want.
 
 Move the import statements back where they were. Sigh.

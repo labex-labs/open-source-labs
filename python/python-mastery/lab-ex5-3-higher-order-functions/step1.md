@@ -1,7 +1,6 @@
 # Using higher-order functions
 
-At the moment, the `reader.py` program consists of two core functions, `csv_as_dicts()` and
-`csv_as_instances()`. The code in these two functions is almost identical. For example:
+At the moment, the `reader.py` program consists of two core functions, `csv_as_dicts()` and `csv_as_instances()`. The code in these two functions is almost identical. For example:
 
 ```python
 def csv_as_dicts(lines, types, *, headers=None):
@@ -32,8 +31,7 @@ def csv_as_instances(lines, cls, *, headers=None):
     return records
 ```
 
-Unify the core of these functions into a single function `convert_csv()` that accepts a user-defined
-conversion function as an argument. For example:
+Unify the core of these functions into a single function `convert_csv()` that accepts a user-defined conversion function as an argument. For example:
 
 ```python
 >>> def make_dict(headers, row):
@@ -48,5 +46,4 @@ conversion function as an argument. For example:
 >>>
 ```
 
-Rewrite the `csv_as_dicts()` and `csv_as_instances()` functions in terms of the new `convert_csv()`
-function.
+Rewrite the `csv_as_dicts()` and `csv_as_instances()` functions in terms of the new `convert_csv()` function.

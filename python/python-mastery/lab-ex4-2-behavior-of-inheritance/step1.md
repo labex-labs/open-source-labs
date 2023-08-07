@@ -1,8 +1,6 @@
 # The directions of inheritance
 
-Python has two different "directions" of inheritance. The first is
-found in the concept of "single inheritance" where a series
-of classes inherit from a single parent. For example, try this example:
+Python has two different "directions" of inheritance. The first is found in the concept of "single inheritance" where a series of classes inherit from a single parent. For example, try this example:
 
 ```python
 >>> class A:
@@ -30,12 +28,9 @@ A.spam
 >>>
 ```
 
-Observe that the `__mro__` attribute of class `C` encodes all of its ancestors in
-order. When you invoke the `spam()` method, it walks the MRO class-by-class up
-the hierarchy.
+Observe that the `__mro__` attribute of class `C` encodes all of its ancestors in order. When you invoke the `spam()` method, it walks the MRO class-by-class up the hierarchy.
 
-With multiple inheritance, you get a different kind of inheritance that
-allows different classes to be composed together. Try this example:
+With multiple inheritance, you get a different kind of inheritance that allows different classes to be composed together. Try this example:
 
 ```python
 >>> class Base:
@@ -60,9 +55,7 @@ allows different classes to be composed together. Try this example:
 >>>
 ```
 
-Notice that all of the classes above inherit from a common parent `Base`.
-However, the classes `X`, `Y`, and `Z` are not directly related
-to each other (there is no inheritance chain linking those classes together).
+Notice that all of the classes above inherit from a common parent `Base`. However, the classes `X`, `Y`, and `Z` are not directly related to each other (there is no inheritance chain linking those classes together).
 
 However, watch what happens in multiple inheritance:
 
@@ -81,8 +74,7 @@ Base.spam
 >>>
 ```
 
-Here, you see all of the classes stack together in the order supplied by the subclass.
-Suppose the subclass rearranges the class order:
+Here, you see all of the classes stack together in the order supplied by the subclass. Suppose the subclass rearranges the class order:
 
 ```python
 >>> class N(Z,Y,X):
@@ -99,11 +91,6 @@ Base.spam
 >>>
 ```
 
-Here, you see the order of the parents flip around. Carefully pay attention to what `super()`
-is doing in both cases. It doesn't delegate to the immediate parent of each class--instead,
-it moves to the next class on the MRO. Not only that, the exact order is controlled
-by the child. This is pretty weird.
+Here, you see the order of the parents flip around. Carefully pay attention to what `super()` is doing in both cases. It doesn't delegate to the immediate parent of each class--instead, it moves to the next class on the MRO. Not only that, the exact order is controlled by the child. This is pretty weird.
 
-Also notice that the common parent `Base` serves to terminate the chain of `super()` operations.
-Specifically, the `Base.spam()` method does not call any further methods. It also appears at
-the end of the MRO since it is the parent to all of the classes being composed together.
+Also notice that the common parent `Base` serves to terminate the chain of `super()` operations. Specifically, the `Base.spam()` method does not call any further methods. It also appears at the end of the MRO since it is the parent to all of the classes being composed together.

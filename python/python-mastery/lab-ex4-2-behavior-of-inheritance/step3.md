@@ -1,7 +1,6 @@
 # Using your validators
 
-Your validators can be used to add value checking to functions and classes. For
-example, perhaps the validators could be used in the properties of `Stock`:
+Your validators can be used to add value checking to functions and classes. For example, perhaps the validators could be used in the properties of `Stock`:
 
 ```python
 class Stock:
@@ -16,5 +15,4 @@ class Stock:
     ...
 ```
 
-Copy the `Stock` class from `stock.py` change it to use the validators in the property
-code for `shares` and `price`.
+Copy the `Stock` class from `stock.py` change it to use the validators in the property code for `shares` and `price`.

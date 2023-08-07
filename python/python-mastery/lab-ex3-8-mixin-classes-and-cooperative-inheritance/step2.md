@@ -10,9 +10,7 @@ class ColumnFormatMixin:
         super().row(rowdata)
 ```
 
-This class contains a single method `row()` that applies formatting to
-the row contents. A class variable `formats` is used to hold the format
-codes. This class is used via multiple inheritance. For example:
+This class contains a single method `row()` that applies formatting to the row contents. A class variable `formats` is used to hold the format codes. This class is used via multiple inheritance. For example:
 
 ```python
 >>> import stock, reader
@@ -34,9 +32,7 @@ codes. This class is used via multiple inheritance. For example:
        IBM        100      70.44
 ```
 
-This whole approach works because the `ColumnFormatMixin` class is
-meant to be mixed together with another class that provides the
-required `row()` method.
+This whole approach works because the `ColumnFormatMixin` class is meant to be mixed together with another class that provides the required `row()` method.
 
 Make another class that makes a formatter print the table headers in all-caps:
 
@@ -67,8 +63,4 @@ Try it out and notice that the headers are now uppercase:
 >>>
 ```
 
-This is really the whole idea on "mixins." The creator of a library
-can provide a basic set of classes such as `TextTableFormatter`,
-`CSVTableFormatter`, and so forth to start. Then, a collection of
-add-on classes can be provided to make those classes behave in
-different ways.
+This is really the whole idea on "mixins." The creator of a library can provide a basic set of classes such as `TextTableFormatter`, `CSVTableFormatter`, and so forth to start. Then, a collection of add-on classes can be provided to make those classes behave in different ways.

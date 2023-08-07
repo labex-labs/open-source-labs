@@ -1,9 +1,6 @@
 # Making a Parsing Utility Function
 
-Create a new file `reader.py`. In that file, define a
-utility function `read_csv_as_dicts()` that reads a file of CSV
-data into a list of dictionaries where the user specifies
-the type conversions for each column.
+Create a new file `reader.py`. In that file, define a utility function `read_csv_as_dicts()` that reads a file of CSV data into a list of dictionaries where the user specifies the type conversions for each column.
 
 Here is how it should work:
 

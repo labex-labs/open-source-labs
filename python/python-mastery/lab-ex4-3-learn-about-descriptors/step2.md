@@ -38,5 +38,4 @@ a:__delete__
 >>>
 ```
 
-Ponder the fact that you have captured the dot-operator for a
-specific attribute.
+Ponder the fact that you have captured the dot-operator for a specific attribute.

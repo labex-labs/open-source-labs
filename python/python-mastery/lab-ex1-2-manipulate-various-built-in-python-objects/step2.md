@@ -52,7 +52,7 @@ TypeError: 'str' object does not support item assignment
 
 ## String concatenation
 
-Although string data is read-only, you can always reassign a variable to a newly created string.  
+Although string data is read-only, you can always reassign a variable to a newly created string.\
 Try the following statement which concatenates a new symbol "GOOG" to the end of `symbols`:
 
 ```python
@@ -69,14 +69,11 @@ Now, try adding "HPQ" to the beginning of `symbols` like this:
 ... look at the result ...
 ```
 
-It should be noted in both of these examples, the original string `symbols` is _NOT_
-being modified "in place." Instead, a completely new string is created. The variable name `symbols` is
-just bound to the result. Afterwards, the old string is destroyed since it's not being used anymore.
+It should be noted in both of these examples, the original string `symbols` is _NOT_ being modified "in place." Instead, a completely new string is created. The variable name `symbols` is just bound to the result. Afterwards, the old string is destroyed since it's not being used anymore.
 
 ## Membership testing (substring testing)
 
-Experiment with the `in` operator to check for substrings. At
-the interactive prompt, try these operations:
+Experiment with the `in` operator to check for substrings. At the interactive prompt, try these operations:
 
 ```python
 >>> 'IBM' in symbols
@@ -92,8 +89,7 @@ Make sure you understand why the check for "AA" returned `True`.
 
 ## String Methods
 
-At the Python interactive prompt, try experimenting with some of the
-string methods.
+At the Python interactive prompt, try experimenting with some of the string methods.
 
 ```python
 >>> symbols.lower()
@@ -102,8 +98,7 @@ string methods.
 'HPQ AAPL IBM MSFT YHOO SCO GOOG'
 ```
 
-Remember, strings are always read-only. If you want to save the result of an operation, you
-need to place it in a variable:
+Remember, strings are always read-only. If you want to save the result of an operation, you need to place it in a variable:
 
 ```python
 >>> lowersyms = symbols.lower()

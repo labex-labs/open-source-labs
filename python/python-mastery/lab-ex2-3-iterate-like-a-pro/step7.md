@@ -1,10 +1,6 @@
 # Saving a lot of memory
 
-In [Exercise 2.1](ex2_1.md) you wrote a function
-`read_rides_as_dicts()` that read the CTA bus data into a list of
-dictionaries. Using it requires a lot of memory. For example,
-let's find the day on which the route 22 bus had the greatest
-ridership:
+In [Exercise 2.1](ex2_1.md) you wrote a function `read_rides_as_dicts()` that read the CTA bus data into a list of dictionaries. Using it requires a lot of memory. For example, let's find the day on which the route 22 bus had the greatest ridership:
 
 ```python
 >>> import tracemalloc
@@ -19,8 +15,7 @@ ridership:
 >>>
 ```
 
-Now, let's try an example involving generators. Restart Python
-and try this:
+Now, let's try an example involving generators. Restart Python and try this:
 
 ```python
 >>> # RESTART
@@ -39,8 +34,4 @@ and try this:
 >>>
 ```
 
-Keep in mind that you just processed the entire dataset as if it was
-stored as a sequence of dictionaries. Yet, nowhere did you actually
-create and store a list of dictionaries. Not all problems can be
-structured in this way, but if you can work with data in an
-iterative manner, generator expressions can save a huge amount of memory.
+Keep in mind that you just processed the entire dataset as if it was stored as a sequence of dictionaries. Yet, nowhere did you actually create and store a list of dictionaries. Not all problems can be structured in this way, but if you can work with data in an iterative manner, generator expressions can save a huge amount of memory.

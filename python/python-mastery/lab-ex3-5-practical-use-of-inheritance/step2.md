@@ -11,8 +11,7 @@ class TableFormatter:
         raise NotImplementedError()
 ```
 
-Now, modify the `print_table()` function so that it accepts a `TableFormatter` instance
-and invokes methods on it to produce output:
+Now, modify the `print_table()` function so that it accepts a `TableFormatter` instance and invokes methods on it to produce output:
 
 ```python
 def print_table(records, fields, formatter):

@@ -1,7 +1,6 @@
 # From Validators to Descriptors
 
-In the previous exercise, you wrote a series of classes that could perform checking.
-For example:
+In the previous exercise, you wrote a series of classes that could perform checking. For example:
 
 ```python
 >>> PositiveInteger.check(10)
@@ -14,8 +13,7 @@ TypeError: expected <class 'int'>
 >>> PositiveInteger.check(-10)
 ```
 
-You can extend this to descriptors by making a simple change to the `Validator` base
-class. Change it to the following:
+You can extend this to descriptors by making a simple change to the `Validator` base class. Change it to the following:
 
 ```python
 # validate.py
@@ -32,13 +30,9 @@ class Validator:
         instance.__dict__[self.name] = self.check(value)
 ```
 
-Note: The lack of the `__get__()` method in the descriptor means that
-Python will use its default implementation of attribute lookup. This
-requires that the supplied name matches the name used in the instance
-dictionary.
+Note: The lack of the `__get__()` method in the descriptor means that Python will use its default implementation of attribute lookup. This requires that the supplied name matches the name used in the instance dictionary.
 
-No other changes should be necessary. Now, try modifying the `Stock` class to
-use the validators as descriptors like this:
+No other changes should be necessary. Now, try modifying the `Stock` class to use the validators as descriptors like this:
 
 ```python
 class Stock:
@@ -52,8 +46,7 @@ class Stock:
         self.price = price
 ```
 
-You'll find that your class works the same way as before, involves much
-less code, and gives you all of the desired checking:
+You'll find that your class works the same way as before, involves much less code, and gives you all of the desired checking:
 
 ```python
 >>> s = Stock('GOOG', 100, 490.10)
@@ -69,6 +62,4 @@ less code, and gives you all of the desired checking:
 >>>
 ```
 
-This is pretty cool. Descriptors have allowed you to greatly simplify the implementation
-of the `Stock` class. This is the real power of descriptors--you get low level control
-over the dot and can use it to do amazing things.
+This is pretty cool. Descriptors have allowed you to greatly simplify the implementation of the `Stock` class. This is the real power of descriptors--you get low level control over the dot and can use it to do amazing things.

@@ -1,7 +1,6 @@
 # Memory Use of Other Data Structures
 
-Python has many different choices for representing data structures.
-For example:
+Python has many different choices for representing data structures. For example:
 
 ```python
 # A tuple
@@ -37,8 +36,4 @@ class Row:
         self.rides = rides
 ```
 
-Your task is as follows: Create different versions of the `read_rides()` function
-that use each of these data structures to represent a single row of data.
-Then, find out the resulting memory use of each option. Find out which
-approach offers the most efficient storage if you were working with a lot
-of data all at once.
+Your task is as follows: Create different versions of the `read_rides()` function that use each of these data structures to represent a single row of data. Then, find out the resulting memory use of each option. Find out which approach offers the most efficient storage if you were working with a lot of data all at once.

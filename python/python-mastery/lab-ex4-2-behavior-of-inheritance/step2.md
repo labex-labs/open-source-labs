@@ -1,9 +1,6 @@
 # Build a Value Checker
 
-In [Exercise 3.4](ex3_4.md), you added some properties to the `Stock` class that
-checked attributes for different types and values (e.g., shares had to be a positive
-integer). Let's play with that idea a bit. Start by creating a file `validate.py` and
-defining the following base class:
+In [Exercise 3.4](ex3_4.md), you added some properties to the `Stock` class that checked attributes for different types and values (e.g., shares had to be a positive integer). Let's play with that idea a bit. Start by creating a file `validate.py` and defining the following base class:
 
 ```python
 # validate.py
@@ -34,8 +31,7 @@ class String(Typed):
     expected_type = str
 ```
 
-Here's how you use these classes (Note: the use of `@classmethod` allows us to
-avoid the extra step of creating instances which we don't really need):
+Here's how you use these classes (Note: the use of `@classmethod` allows us to avoid the extra step of creating instances which we don't really need):
 
 ```python
 >>> Integer.check(10)
@@ -101,9 +97,7 @@ class NonEmptyString(String, NonEmpty):
     pass
 ```
 
-Essentially, you're taking existing validators and composing them
-together into new ones. Madness! However, let's use them to validate
-some things now:
+Essentially, you're taking existing validators and composing them together into new ones. Madness! However, let's use them to validate some things now:
 
 ```python
 >>> PositiveInteger.check(10)
@@ -130,6 +124,4 @@ ValueError: Must be non-empty
 >>>
 ```
 
-At this point, your head is probably fully exploded. However, the problem of composing
-different bits of code together is one that arises in real-world programs. Cooperative
-multiple inheritance is one of the tools that can be used to organize it.
+At this point, your head is probably fully exploded. However, the problem of composing different bits of code together is one that arises in real-world programs. Cooperative multiple inheritance is one of the tools that can be used to organize it.

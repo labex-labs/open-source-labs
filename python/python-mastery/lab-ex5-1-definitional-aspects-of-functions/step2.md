@@ -1,8 +1,6 @@
 # Back to Basics
 
-Start by reverting the changes related to class definitions. Rewrite
-the `reader.py` file so that it contains the two basic functions that
-you had before you messed it up with classes:
+Start by reverting the changes related to class definitions. Rewrite the `reader.py` file so that it contains the two basic functions that you had before you messed it up with classes:
 
 ```python
 # reader.py

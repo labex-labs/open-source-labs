@@ -11,15 +11,9 @@ Try setting a new attribute on one of the above instances:
 >>>
 ```
 
-In the above output, you'll notice that the `goog` instance has
-a attribute `date` whereas the `ibm` instance does not.
-It is important to note that Python really doesn't place any
-restrictions on attributes. For example, the attributes of an
-instance are not limited to those set up in the `__init__()`
-method.
+In the above output, you'll notice that the `goog` instance has a attribute `date` whereas the `ibm` instance does not. It is important to note that Python really doesn't place any restrictions on attributes. For example, the attributes of an instance are not limited to those set up in the `__init__()` method.
 
-Instead of setting an attribute, try placing a new value directly into
-the `__dict__` object:
+Instead of setting an attribute, try placing a new value directly into the `__dict__` object:
 
 ```python
 >>> goog.__dict__['time'] = '9:45am'

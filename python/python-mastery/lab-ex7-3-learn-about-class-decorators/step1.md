@@ -1,8 +1,6 @@
 # Descriptors Revisited
 
-In [Exercise 4.3](ex4_3.md) you defined some descriptors that
-allowed a user to define classes with type-checked attributes like
-this:
+In [Exercise 4.3](ex4_3.md) you defined some descriptors that allowed a user to define classes with type-checked attributes like this:
 
 ```python
 from validate import String, PositiveInteger, PositiveFloat
@@ -14,8 +12,7 @@ class Stock:
     ...
 ```
 
-Modify your `Stock` class so that it includes the above descriptors
-and now looks like this (see [Exercise 6.4](ex6_4.md)):
+Modify your `Stock` class so that it includes the above descriptors and now looks like this (see [Exercise 6.4](ex6_4.md)):
 
 ```python
 # stock.py
@@ -39,6 +36,4 @@ class Stock(Structure):
 Stock.create_init()
 ```
 
-Run the unit tests in `teststock.py`. You should see a significant
-number of tests passing with the addition of type checking.
-Excellent.
+Run the unit tests in `teststock.py`. You should see a significant number of tests passing with the addition of type checking. Excellent.

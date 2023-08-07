@@ -1,10 +1,6 @@
 # Method Argument Checking
 
-Remember that `@validated` decorator you wrote in the last part?
-Let's modify the `@validate_attributes` decorator so that any method
-in the class with annotations gets wrapped by `@validated`
-automatically. This allows you to put enforced annotations on methods
-such as the `sell()` method:
+Remember that `@validated` decorator you wrote in the last part? Let's modify the `@validate_attributes` decorator so that any method in the class with annotations gets wrapped by `@validated` automatically. This allows you to put enforced annotations on methods such as the `sell()` method:
 
 ```python
 # stock.py
@@ -38,5 +34,4 @@ TypeError: Bad Arguments
 >>>
 ```
 
-Yes, this starting to get very interesting now. The combination of a class decorator and
-inheritance is a powerful force.
+Yes, this starting to get very interesting now. The combination of a class decorator and inheritance is a powerful force.

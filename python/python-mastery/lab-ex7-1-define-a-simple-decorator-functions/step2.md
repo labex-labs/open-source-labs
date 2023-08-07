@@ -2,9 +2,7 @@
 
 Hint: Complete the following in the `validate.py` file
 
-In [Exercise 6.6](ex6_6.md), you created a callable class `ValidatedFunction` that
-enforced type annotations. Rewrite this class as a decorator function called `validated`.
-It should allow you to write code like this:
+In [Exercise 6.6](ex6_6.md), you created a callable class `ValidatedFunction` that enforced type annotations. Rewrite this class as a decorator function called `validated`. It should allow you to write code like this:
 
 ```python
 from validate import Integer, validated
@@ -43,9 +41,7 @@ TypeError: Bad return: Expected <class 'int'>
 >>>
 ```
 
-Your decorator should try to patch up the exceptions so that they
-show more useful information as shown. Also, the `@validated`
-decorator should work in classes (you don't need to do anything special).
+Your decorator should try to patch up the exceptions so that they show more useful information as shown. Also, the `@validated` decorator should work in classes (you don't need to do anything special).
 
 ```python
 class Stock:
@@ -63,6 +59,4 @@ class Stock:
         self.shares -= nshares
 ```
 
-Note: This part doesn't involve a lot of code, but there are a lot of low-level
-fiddly bits. The solution will look almost the same as for Exercise 6.6. Don't
-be shy about looking at solution code though.
+Note: This part doesn't involve a lot of code, but there are a lot of low-level fiddly bits. The solution will look almost the same as for Exercise 6.6. Don't be shy about looking at solution code though.

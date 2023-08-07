@@ -1,8 +1,6 @@
 # Build some pipeline components
 
-In a file `coticker.py`, build a series of pipeline components that carry out the same tasks as
-the `ticker.py` program in [Exercise 8.2](ex8_2.md). Here is the implementation of the
-various pieces.
+In a file `coticker.py`, build a series of pipeline components that carry out the same tasks as the `ticker.py` program in [Exercise 8.2](ex8_2.md). Here is the implementation of the various pieces.
 
 ```python
 # coticker.py
@@ -58,5 +56,4 @@ def ticker(fmt, fields):
         formatter.row(row)
 ```
 
-Your challenge: Write the main program that hooks all of these components together to
-generate the same stock ticker as in the previous exercise.
+Your challenge: Write the main program that hooks all of these components together to generate the same stock ticker as in the previous exercise.

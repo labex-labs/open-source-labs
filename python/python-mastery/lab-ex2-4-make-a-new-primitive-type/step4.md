@@ -12,9 +12,7 @@ False
 >>>
 ```
 
-You can fix this by adding an `__eq__()` method. Further methods such
-as `__lt__()`, `__le__()`, `__gt__()`, `__ge__()` can be used to
-implement other comparisons. For example:
+You can fix this by adding an `__eq__()` method. Further methods such as `__lt__()`, `__le__()`, `__gt__()`, `__ge__()` can be used to implement other comparisons. For example:
 
 ```python
 class MutInt:
@@ -58,9 +56,7 @@ TypeError: '<=' not supported between instances of 'MutInt' and 'MutInt'
 >>>
 ```
 
-The reason the `<=` operator is failing is that no `__le__()` method was provided.
-You could code it separately, but an easier way to get it is to use the `@total_ordering`
-decorator:
+The reason the `<=` operator is failing is that no `__le__()` method was provided. You could code it separately, but an easier way to get it is to use the `@total_ordering` decorator:
 
 ```python
 from functools import total_ordering
@@ -91,5 +87,4 @@ class MutInt:
             return NotImplemented
 ```
 
-`@total_ordering` fills in the missing comparison methods for you as long as
-you minimally provide an equality operator and one of the other relations.
+`@total_ordering` fills in the missing comparison methods for you as long as you minimally provide an equality operator and one of the other relations.

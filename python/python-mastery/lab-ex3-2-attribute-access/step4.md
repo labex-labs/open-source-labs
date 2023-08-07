@@ -1,9 +1,6 @@
 # Bound Methods
 
-It may be surprising, but method calls are layered onto the machinery used
-for simple attributes. Essentially, a method is an attribute that
-executes when you add the required parentheses () to call it like a function. For
-example:
+It may be surprising, but method calls are layered onto the machinery used for simple attributes. Essentially, a method is an attribute that executes when you add the required parentheses () to call it like a function. For example:
 
 ```python
 >>> s = Stock('GOOG',100,490.10)
@@ -20,10 +17,7 @@ example:
 >>>
 ```
 
-A bound method is attached to the object where it came from. If that
-object is modified, the method will see the modifications. You can
-view the original object by inspecting the `__self__` attribute
-of the method.
+A bound method is attached to the object where it came from. If that object is modified, the method will see the modifications. You can view the original object by inspecting the `__self__` attribute of the method.
 
 ```python
 >>> c = s.cost
@@ -41,8 +35,7 @@ of the method.
 >>>
 ```
 
-Try it with the `sell()` method just to make sure you
-understand the mechanics:
+Try it with the `sell()` method just to make sure you understand the mechanics:
 
 ```python
 >>> f = s.sell

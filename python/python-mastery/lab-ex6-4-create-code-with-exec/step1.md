@@ -13,10 +13,7 @@ for i in range(n):
 >>>
 ```
 
-That's interesting, but executing random code fragments is not
-especially useful. A more interesting use of `exec()` is in making
-code such as functions, methods, or classes. Try this example in
-which we make an `__init__()` function for a class.
+That's interesting, but executing random code fragments is not especially useful. A more interesting use of `exec()` is in making code such as functions, methods, or classes. Try this example in which we make an `__init__()` function for a class.
 
 ```python
 >>> class Stock:
@@ -47,5 +44,5 @@ def __init__(self, name,shares,price):
 >>>
 ```
 
-In this example, an `__init__()` function is made directly from the `_fields` variable.  
+In this example, an `__init__()` function is made directly from the `_fields` variable.\
 There are no weird hacks involving a special `_init()` method or stack frames.

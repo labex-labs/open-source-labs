@@ -1,8 +1,6 @@
 # Logging
 
-Modify the code so that warning messages are issued using the `logging` module. In
-addition, give optional debugging information indicating the reason for failure.
-For example:
+Modify the code so that warning messages are issued using the `logging` module. In addition, give optional debugging information indicating the reason for failure. For example:
 
 ```python
 >>> import reader

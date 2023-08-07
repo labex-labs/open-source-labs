@@ -1,7 +1,6 @@
 # Enforcement
 
-Modify the `ValidatedFunction` class so that it enforces value checks
-attached via function annotations. For example:
+Modify the `ValidatedFunction` class so that it enforces value checks attached via function annotations. For example:
 
 ```python
 >>> def add(x: Integer, y:Integer):
@@ -20,10 +19,6 @@ TypeError: expected <class 'int'>
 >>>>
 ```
 
-Hint: To do this, play around with signature binding. Use the `bind()`
-method of `Signature` objects to bind function arguments to argument
-names. Then cross reference this information with the
-`__annotations__` attribute to get the different validator classes.
+Hint: To do this, play around with signature binding. Use the `bind()` method of `Signature` objects to bind function arguments to argument names. Then cross reference this information with the `__annotations__` attribute to get the different validator classes.
 
-Keep in mind, you're making an object that looks like a function, but
-it's really not. There is magic going on behind the scenes.
+Keep in mind, you're making an object that looks like a function, but it's really not. There is magic going on behind the scenes.

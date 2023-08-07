@@ -1,7 +1,6 @@
 # A Context Manager
 
-In [Exercise 3.5](ex3_5.md), you made it possible for users to make
-nicely formatted tables. For example:
+In [Exercise 3.5](ex3_5.md), you made it possible for users to make nicely formatted tables. For example:
 
 ```python
 >>> from tableformat import create_formatter
@@ -19,11 +18,7 @@ nicely formatted tables. For example:
 >>>
 ```
 
-One issue with the code is that all tables are printed to standard out
-(`sys.stdout`). Suppose you wanted to redirect the output to a file
-or some other location. In the big picture, you might modify all of
-the table formatting code to allow a different output file. However,
-in a pinch, you could also solve this with a context manager.
+One issue with the code is that all tables are printed to standard out (`sys.stdout`). Suppose you wanted to redirect the output to a file or some other location. In the big picture, you might modify all of the table formatting code to allow a different output file. However, in a pinch, you could also solve this with a context manager.
 
 Define the following context manager:
 
@@ -40,9 +35,7 @@ Define the following context manager:
             sys.stdout = self.stdout
 ```
 
-This context manager works by making a temporary patch to `sys.stdout` to cause
-all output to redirect to a different file. On exit, the patch is reverted.
-Try it out:
+This context manager works by making a temporary patch to `sys.stdout` to cause all output to redirect to a different file. On exit, the patch is reverted. Try it out:
 
 ```python
 >>> from tableformat import create_formatter

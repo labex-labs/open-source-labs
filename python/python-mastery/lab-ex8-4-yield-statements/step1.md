@@ -1,13 +1,8 @@
 # Closing a Generator
 
-A common question concerning generators is their lifetime and garbage
-collection. For example, the `follow()` generator runs forever in
-an infinite `while` loop. What happens if the iteration loop that's
-driving it stops? Also, is there anyway to prematurely terminate the
-generator?
+A common question concerning generators is their lifetime and garbage collection. For example, the `follow()` generator runs forever in an infinite `while` loop. What happens if the iteration loop that's driving it stops? Also, is there anyway to prematurely terminate the generator?
 
-Modify the `follow()` function so that all of the code is enclosed in
-a `try-except` block like this:
+Modify the `follow()` function so that all of the code is enclosed in a `try-except` block like this:
 
 ```python
 def follow(filename):
@@ -53,13 +48,9 @@ Following Done
 >>>
 ```
 
-In these experiments you can see that a `GeneratorExit` exception is
-raised when a generator is garbage-collected or explicitly closed via
-its `close()` method.
+In these experiments you can see that a `GeneratorExit` exception is raised when a generator is garbage-collected or explicitly closed via its `close()` method.
 
-One additional area of exploration is whether or not you can resume
-iteration on a generator if you break out of a for-loop. For example,
-try this:
+One additional area of exploration is whether or not you can resume iteration on a generator if you break out of a for-loop. For example, try this:
 
 ```python
 >>> f = follow('stocklog.csv')
@@ -87,6 +78,4 @@ Following Done
 >>>
 ```
 
-In general, you can break out of running iteration and resume it later
-if you need to. You just need to make sure the generator object isn't
-forcefully closed or garbage collected somehow.
+In general, you can break out of running iteration and resume it later if you need to. You just need to make sure the generator object isn't forcefully closed or garbage collected somehow.

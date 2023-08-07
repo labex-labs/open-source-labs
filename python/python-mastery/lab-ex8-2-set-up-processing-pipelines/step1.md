@@ -1,8 +1,6 @@
 # Setting up a processing pipeline
 
-A major power of generators is that they allow you to create programs
-that set up processing pipelines--much like pipes on Unix systems.
-Experiment with this concept by performing these steps:
+A major power of generators is that they allow you to create programs that set up processing pipelines--much like pipes on Unix systems. Experiment with this concept by performing these steps:
 
 ```python
 >>> from follow import follow
@@ -19,6 +17,4 @@ Experiment with this concept by performing these steps:
 ...
 ```
 
-Well, that's interesting. What you're seeing here is that the output of the
-`follow()` function has been piped into the `csv.reader()` function and we're
-now getting a sequence of split rows.
+Well, that's interesting. What you're seeing here is that the output of the `follow()` function has been piped into the `csv.reader()` function and we're now getting a sequence of split rows.

@@ -9,8 +9,7 @@ class Stock:
     ...
 ```
 
-We can fix that. Change the top-level `Validator` class to include a `__set_name__()` method
-like this:
+We can fix that. Change the top-level `Validator` class to include a `__set_name__()` method like this:
 
 ```python
 # validate.py
@@ -44,5 +43,4 @@ class Stock:
         self.price = price
 ```
 
-Ah, much nicer. Be aware that this ability to set the name is a Python 3.6
-feature however. It won't work on older versions.
+Ah, much nicer. Be aware that this ability to set the name is a Python 3.6 feature however. It won't work on older versions.

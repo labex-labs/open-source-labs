@@ -1,8 +1,6 @@
 # Creating an `__init__()` function
 
-In [Exercise 6.3](ex6_3.md), you wrote code that inspected the
-signature of the `__init__()` method to set the attribute names
-in a `_fields` class variable. For example:
+In [Exercise 6.3](ex6_3.md), you wrote code that inspected the signature of the `__init__()` method to set the attribute names in a `_fields` class variable. For example:
 
 ```python
 class Stock(Structure):
@@ -12,10 +10,7 @@ class Stock(Structure):
 Stock.set_fields()
 ```
 
-Instead of inspecting the `__init__()` method, write a class method
-`create_init(cls)` that creates an `__init__()` method from the value of
-`_fields`. Use the `exec()` function to do this as shown above.
-Here's how a user will use it:
+Instead of inspecting the `__init__()` method, write a class method `create_init(cls)` that creates an `__init__()` method from the value of `_fields`. Use the `exec()` function to do this as shown above. Here's how a user will use it:
 
 ```python
 class Stock(Structure):
@@ -40,8 +35,7 @@ AttributeError: No attribute share
 >>>
 ```
 
-Modify the `Stock` class in progress to use the `create_init()` function as shown.  
+Modify the `Stock` class in progress to use the `create_init()` function as shown.\
 Verify with your unit tests as before.
 
-While you're at it, get rid of the `_init()` and `set_fields()`
-methods on the `Structure` class--that approach was kind of weird.
+While you're at it, get rid of the `_init()` and `set_fields()` methods on the `Structure` class--that approach was kind of weird.

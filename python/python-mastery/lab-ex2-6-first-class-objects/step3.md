@@ -9,8 +9,7 @@ In the CTA bus data, we determined that there were 181 unique bus routes.
 >>>
 ```
 
-Question: How many unique route string objects are contained in the ride data?
-Instead of building a set of routes, build a set of object ids instead:
+Question: How many unique route string objects are contained in the ride data? Instead of building a set of routes, build a set of object ids instead:
 
 ```python
 >>> routeids = { id(row['route']) for row in rows }
@@ -19,11 +18,7 @@ Instead of building a set of routes, build a set of object ids instead:
 >>>
 ```
 
-Think about this for a moment--there are only 181 distinct route
-names, but the resulting list of dictionaries contains 542305
-different route strings. Maybe this is something that could be fixed
-with a bit of caching or object reuse. As it turns out, Python has
-a function that can be used to cache strings, `sys.intern()`. For example:
+Think about this for a moment--there are only 181 distinct route names, but the resulting list of dictionaries contains 542305 different route strings. Maybe this is something that could be fixed with a bit of caching or object reuse. As it turns out, Python has a function that can be used to cache strings, `sys.intern()`. For example:
 
 ```python
 >>> a = 'hello world'
@@ -61,8 +56,7 @@ Take a look at the memory use.
 >>>
 ```
 
-The memory should drop quite a bit. Observation: There is a lot of repetition
-involving dates as well. What happens if you also cache the date strings?
+The memory should drop quite a bit. Observation: There is a lot of repetition involving dates as well. What happens if you also cache the date strings?
 
 ````python
 >>> # ------------------ RESTART ---------```

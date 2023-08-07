@@ -1,8 +1,6 @@
 # Using the import statement
 
-In previous exercises, you wrote two programs `pcost.py` and
-`stock.py`. Use the `import` statement to load these
-programs and use their functionality:
+In previous exercises, you wrote two programs `pcost.py` and `stock.py`. Use the `import` statement to load these programs and use their functionality:
 
 ```python
 >>> import pcost
@@ -18,7 +16,4 @@ programs and use their functionality:
 >>>
 ```
 
-If you can't get the above statements to work, you might have placed
-your programs in a funny directory. Make sure you are running Python
-in the same directory as your files or that the directory is included
-on `sys.path`.
+If you can't get the above statements to work, you might have placed your programs in a funny directory. Make sure you are running Python in the same directory as your files or that the directory is included on `sys.path`.

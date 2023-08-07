@@ -1,9 +1,6 @@
 # Your First Decorator
 
-To start with decorators, write a _very_ simple decorator
-function that simply prints out a message each time a function is
-called. Create a file `logcall.py` and define the following
-function:
+To start with decorators, write a _very_ simple decorator function that simply prints out a message each time a function is called. Create a file `logcall.py` and define the following function:
 
 ```python
 # logcall.py
@@ -16,8 +13,7 @@ def logged(func):
     return wrapper
 ```
 
-Now, make a separate file `sample.py` and apply it to a
-few function definitions:
+Now, make a separate file `sample.py` and apply it to a few function definitions:
 
 ```python
 # sample.py

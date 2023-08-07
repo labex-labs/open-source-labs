@@ -1,7 +1,6 @@
 # Class creation
 
-Recall, from earlier exercises, we defined a simple class
-`Stock` that looked like this:
+Recall, from earlier exercises, we defined a simple class `Stock` that looked like this:
 
 ```python
 class Stock:
@@ -15,8 +14,7 @@ class Stock:
         self.shares -= nshares
 ```
 
-What we're going to do here is create the class manually. Start out
-by just defining the methods as normal Python functions.
+What we're going to do here is create the class manually. Start out by just defining the methods as normal Python functions.
 
 ```python
 >>> def __init__(self,name,shares,price):
@@ -59,7 +57,4 @@ Finally, create the `Stock` class object:
 >>>
 ```
 
-Congratulations, you just created a class. A class is really nothing
-more than a name, a tuple of base classes, and a dictionary holding
-all of the class contents. `type()` is a constructor that
-creates a class for you if you supply these three parts.
+Congratulations, you just created a class. A class is really nothing more than a name, a tuple of base classes, and a dictionary holding all of the class contents. `type()` is a constructor that creates a class for you if you supply these three parts.

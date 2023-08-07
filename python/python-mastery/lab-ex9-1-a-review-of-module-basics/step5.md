@@ -10,8 +10,7 @@ Yow!
 >>>
 ```
 
-Now, go to the `simplemod.py` file and change the implementation of `Spam.yow()` to the
-following:
+Now, go to the `simplemod.py` file and change the implementation of `Spam.yow()` to the following:
 
 ```python
 # simplemod.py
@@ -36,9 +35,7 @@ Loaded simplemod
 >>>
 ```
 
-Notice how you have two instances of `Spam`, but they're using different implementations
-of the `yow()` method. Yes, actually both versions of code are loaded at the same time.
-You'll find other oddities as well. For example:
+Notice how you have two instances of `Spam`, but they're using different implementations of the `yow()` method. Yes, actually both versions of code are loaded at the same time. You'll find other oddities as well. For example:
 
 ```python
 >>> s
@@ -50,6 +47,4 @@ True
 >>>
 ```
 
-Bottom line: It's probably best not to rely on reloading for anything important.
-It might be fine if you're just trying to debug some things (as long as you're
-aware of its limitations and dangers).
+Bottom line: It's probably best not to rely on reloading for anything important. It might be fine if you're just trying to debug some things (as long as you're aware of its limitations and dangers).

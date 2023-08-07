@@ -18,9 +18,7 @@ Now, try running this:
 >>>
 ```
 
-Notice how the locals dictionary contains all of the arguments passed
-to `__init__()`. That's interesting. Now, define the following function
-and class definitions:
+Notice how the locals dictionary contains all of the arguments passed to `__init__()`. That's interesting. Now, define the following function and class definitions:
 
 ```python
 >>> def _init(locs):
@@ -33,9 +31,7 @@ and class definitions:
             _init(locals())
 ```
 
-In this code, the `_init()` function is used to automatically
-initialize an object from a dictionary of passed local variables.
-You'll find that `help(Stock)` and keyword arguments work perfectly.
+In this code, the `_init()` function is used to automatically initialize an object from a dictionary of passed local variables. You'll find that `help(Stock)` and keyword arguments work perfectly.
 
 ```python
 >>> s = Stock(name='GOOG', price=490.1, shares=50)

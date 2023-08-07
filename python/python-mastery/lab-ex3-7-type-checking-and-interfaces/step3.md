@@ -1,9 +1,6 @@
 # Algorithm Template Classes
 
-The file `reader.py` contains two functions, `read_csv_as_dicts()` and `read_csv_as_instances()`.
-Both of those functions are almost identical--there is just one tiny bit of code that's
-different. Maybe that code could be consolidated into a class definition of some sort.
-Add the following class to the `reader.py` file:
+The file `reader.py` contains two functions, `read_csv_as_dicts()` and `read_csv_as_instances()`. Both of those functions are almost identical--there is just one tiny bit of code that's different. Maybe that code could be consolidated into a class definition of some sort. Add the following class to the `reader.py` file:
 
 ```python
 # reader.py
@@ -29,8 +26,7 @@ class CSVParser(ABC):
         pass
 ```
 
-This code provides a shell (or template) of the CSV parsing functionality. To use it, you subclass it, add
-any additional attributes you might need, and redefine the `make_record()` method. For example:
+This code provides a shell (or template) of the CSV parsing functionality. To use it, you subclass it, add any additional attributes you might need, and redefine the `make_record()` method. For example:
 
 ```python
 class DictCSVParser(CSVParser):
@@ -57,9 +53,7 @@ Add the above classes to the `reader.py` file. Here's how you would use one of t
 >>>
 ```
 
-It works, but it's kind of annoying. To fix this, reimplement the `read_csv_as_dicts()` and
-`read_csv_as_instances()` functions to use these classes. Your refactored code should work
-exactly the same way that it did before. For example:
+It works, but it's kind of annoying. To fix this, reimplement the `read_csv_as_dicts()` and `read_csv_as_instances()` functions to use these classes. Your refactored code should work exactly the same way that it did before. For example:
 
 ```python
 >>> import reader

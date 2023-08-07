@@ -76,7 +76,6 @@ class MutInt:
 
     # Support for indexing s[MutInt]
     __index__ = __int__
-
 ```
 
 Then, run this program in your terminal with the following command:

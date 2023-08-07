@@ -1,7 +1,6 @@
 # Example: Receiving messages
 
-In [Exercise 8.3](ex8_3.md), we looked at the definitions of coroutines.
-Coroutines were functions that you sent data to. For example:
+In [Exercise 8.3](ex8_3.md), we looked at the definitions of coroutines. Coroutines were functions that you sent data to. For example:
 
 ```python
 >>> from cofollow import consumer
@@ -19,9 +18,7 @@ Got: World
 >>>
 ```
 
-At the time, it might have been interesting to use `yield` to receive a
-value. However, if you really look at the code, it looks pretty weird--a
-bare `yield` like that? What's going on there?
+At the time, it might have been interesting to use `yield` to receive a value. However, if you really look at the code, it looks pretty weird--a bare `yield` like that? What's going on there?
 
 In the `cofollow.py` file, define the following function:
 
@@ -32,8 +29,7 @@ def receive(expected_type):
     return msg
 ```
 
-This function receives a message, but then verifies that it is of an expected
-type. Try it:
+This function receives a message, but then verifies that it is of an expected type. Try it:
 
 ```python
 >>> from cofollow import consumer, receive
@@ -56,10 +52,6 @@ AssertionError: Expected type <class 'int'>
 >>>
 ```
 
-From a readability point of view, the `yield from receive(int)` statement
-is a bit more descriptive--it indicates that the function will yield until
-it receives a message of a given type.
+From a readability point of view, the `yield from receive(int)` statement is a bit more descriptive--it indicates that the function will yield until it receives a message of a given type.
 
-Now, modify all of the coroutines in `coticker.py` to use the new `receive()`
-function and make sure the code from [Exercise 8.3](ex8_3.md) still
-works.
+Now, modify all of the coroutines in `coticker.py` to use the new `receive()` function and make sure the code from [Exercise 8.3](ex8_3.md) still works.

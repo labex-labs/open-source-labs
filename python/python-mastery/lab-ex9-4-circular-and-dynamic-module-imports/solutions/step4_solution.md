@@ -1,7 +1,6 @@
 # Step 4 Solution
 
-There are a few parts to this. First, the individual files in `tableformat/formats` are going to
-look like this:
+There are a few parts to this. First, the individual files in `tableformat/formats` are going to look like this:
 
 ```python
 # tableformat/formats/text.py

@@ -1,15 +1,8 @@
 # List growth
 
-Python lists are highly optimized for performing `append()`
-operations. Each time a list grows, it grabs a larger chunk of memory
-than it actually needs with the expectation that more data will be
-added to the list later. If new items are added and space is
-available, the `append()` operation stores the item without
-allocating more memory.
+Python lists are highly optimized for performing `append()` operations. Each time a list grows, it grabs a larger chunk of memory than it actually needs with the expectation that more data will be added to the list later. If new items are added and space is available, the `append()` operation stores the item without allocating more memory.
 
-Experiment with this feature of lists by using
-the `sys.getsizeof()` function on a list and appending a few
-more items.
+Experiment with this feature of lists by using the `sys.getsizeof()` function on a list and appending a few more items.
 
 ```python
 >>> import sys
@@ -34,8 +27,4 @@ more items.
 >>>
 ```
 
-A list stores its items by reference. So, the memory required for
-each item is a single memory address. On a 64-bit machine, an address
-is typically 8 bytes. However, if Python has been compiled for
-32-bits, it might be 4 bytes and the numbers for the above example
-will be half of what's shown.
+A list stores its items by reference. So, the memory required for each item is a single memory address. On a 64-bit machine, an address is typically 8 bytes. However, if Python has been compiled for 32-bits, it might be 4 bytes and the numbers for the above example will be half of what's shown.

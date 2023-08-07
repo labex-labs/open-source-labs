@@ -1,7 +1,6 @@
 # Using the zip() function
 
-The `zip()` function is most commonly used to pair data. For example,
-recall that you created a `headers` variable:
+The `zip()` function is most commonly used to pair data. For example, recall that you created a `headers` variable:
 
 ```python
 >>> headers

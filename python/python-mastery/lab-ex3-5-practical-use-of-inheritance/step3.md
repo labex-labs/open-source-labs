@@ -1,8 +1,6 @@
 # Implementing a concrete formatter
 
-The `TableFormatter` isn't meant to be used by itself. Instead, it is merely a base
-for other classes that will implement the formatting. Add the following class to
-`tableformat.py`:
+The `TableFormatter` isn't meant to be used by itself. Instead, it is merely a base for other classes that will implement the formatting. Add the following class to `tableformat.py`:
 
 ```python
 class TextTableFormatter(TableFormatter):

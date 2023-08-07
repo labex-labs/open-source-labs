@@ -1,9 +1,6 @@
 # Restricting Attribute Names
 
-Give the `Structure` class a `__setattr__()` method that restricts
-the allowed set of attributes to those listed in the `_fields` variable.
-However, it should still allow any "private" attribute (e.g., name starting
-with `_` to be set).
+Give the `Structure` class a `__setattr__()` method that restricts the allowed set of attributes to those listed in the `_fields` variable. However, it should still allow any "private" attribute (e.g., name starting with `_` to be set).
 
 For example:
 

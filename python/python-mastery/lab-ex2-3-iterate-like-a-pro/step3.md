@@ -1,8 +1,6 @@
 # Counting with enumerate()
 
-`enumerate()` is a useful function if you ever need to keep a counter
-or index while iterating. For example, suppose you wanted an extra row
-number:
+`enumerate()` is a useful function if you ever need to keep a counter or index while iterating. For example, suppose you wanted an extra row number:
 
 ```python
 >>> for rowno, row in enumerate(rows):

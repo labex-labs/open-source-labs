@@ -18,8 +18,7 @@ Define the above variable and split it into a list of names using the `split()` 
 
 ## Extracting and reassigning list elements
 
-Lists work like arrays where you can look up and
-modify elements by numerical index. Try a few lookups:
+Lists work like arrays where you can look up and modify elements by numerical index. Try a few lookups:
 
 ```python
 >>> symlist[0]
@@ -44,8 +43,7 @@ Try reassigning one of the items:
 
 ## Looping over list items
 
-The `for` loop works by looping over data in a sequence such as a list. Check this out
-by typing the following loop and watching what happens:
+The `for` loop works by looping over data in a sequence such as a list. Check this out by typing the following loop and watching what happens:
 
 ```python
 >>> for s in symlist:
@@ -77,8 +75,7 @@ Use the `append()` method to add the symbol `'RHT'` to end of `symlist`.
 >>>
 ```
 
-Use the `insert()` method to
-insert the symbol `'AA'` as the second item in the list.
+Use the `insert()` method to insert the symbol `'AA'` as the second item in the list.
 
 ```python
 >>> symlist.insert(1,'AA')
@@ -133,14 +130,11 @@ Want to sort in reverse? Try this:
 >>>
 ```
 
-Note: Sorting a list modifies its contents "in-place." That is, the
-elements of the list are shuffled around, but no new list is created
-as a result.
+Note: Sorting a list modifies its contents "in-place." That is, the elements of the list are shuffled around, but no new list is created as a result.
 
 ## Lists of anything
 
-Lists can contain any kind of object, including other lists (e.g., nested
-lists). Try this out:
+Lists can contain any kind of object, including other lists (e.g., nested lists). Try this out:
 
 ```python
 >>> nums = [101,102,103]
@@ -149,8 +143,7 @@ lists). Try this out:
 [['YHOO', 'RHT', 'HPQ', 'GOOG', 'AIG', 'AAPL', 'AA'], [101, 102, 103]]
 ```
 
-Pay close attention to the above output. `items` is a list
-with two elements. Each element is list.
+Pay close attention to the above output. `items` is a list with two elements. Each element is list.
 
 Try some nested list lookups:
 

@@ -18,8 +18,7 @@ def run():
             print('Task done')
 ```
 
-This code implements a tiny task scheduler that runs generator functions.
-Try it by running it on the following functions.
+This code implements a tiny task scheduler that runs generator functions. Try it by running it on the following functions.
 
 ```python
 # multitask.py
@@ -45,8 +44,7 @@ if __name__ == '__main__':
     run()
 ```
 
-When you run this, you should see output from all of the generators
-interleaved together. For example:
+When you run this, you should see output from all of the generators interleaved together. For example:
 
 ```python
 T-minus 10

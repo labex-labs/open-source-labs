@@ -1,7 +1,6 @@
 # Fixing output
 
-You can fix output by giving the object methods such as `__str__()`,
-`__repr__()`, and `__format__()`. For example:
+You can fix output by giving the object methods such as `__str__()`, `__repr__()`, and `__format__()`. For example:
 
 ```python
 # mint.py

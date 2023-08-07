@@ -1,8 +1,6 @@
 # Preliminaries
 
-To get started, let's review some basics with a slightly simpler dataset--
-a portfolio of stock holdings. Create a file `readport.py` and put this
-code in it:
+To get started, let's review some basics with a slightly simpler dataset-- a portfolio of stock holdings. Create a file `readport.py` and put this code in it:
 
 ```python
 # readport.py
@@ -25,8 +23,7 @@ def read_portfolio(filename):
     return portfolio
 ```
 
-This file reads some simple stock market data in the file `portfolio.csv`. Use
-the function to read the file and look at the results:
+This file reads some simple stock market data in the file `portfolio.csv`. Use the function to read the file and look at the results:
 
 ```python
 >>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
@@ -42,6 +39,4 @@ the function to read the file and look at the results:
 >>>
 ```
 
-In this data, each row consists of a stock name, a number of held
-shares, and a purchase price. There are multiple entries for
-certain stock names such as MSFT and IBM.
+In this data, each row consists of a stock name, a number of held shares, and a purchase price. There are multiple entries for certain stock names such as MSFT and IBM.

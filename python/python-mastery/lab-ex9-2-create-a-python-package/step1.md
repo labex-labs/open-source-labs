@@ -1,23 +1,20 @@
 # Making a Package
 
-In previous exercises, you created the following files that were related to
-type-checked structures, reading data, and making tables:
+In previous exercises, you created the following files that were related to type-checked structures, reading data, and making tables:
 
 - `structure.py`
 - `validate.py`
 - `reader.py`
 - `tableformat.py`
 
-Your task is to take all of these files and move them into a package called `structly`.
-To do that, follow these steps:
+Your task is to take all of these files and move them into a package called `structly`. To do that, follow these steps:
 
 - Make a directory called `structly`
 - Make an empty file `__init__.py` and put it in the `structly` directory
 - Move the files `structure.py`, `validate.py`, `reader.py`, and `tableformat.py` into the `structly` directory.
 - Fix any import statements between modules (specifically, the `structure` module depends on `validate`).
 
-Once you've done that, modify the `stock.py` program so that it looks exactly like this
-and that it works:
+Once you've done that, modify the `stock.py` program so that it looks exactly like this and that it works:
 
 ```python
 # stock.py

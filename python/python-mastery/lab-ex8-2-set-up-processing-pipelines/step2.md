@@ -1,7 +1,6 @@
 # Making more pipeline components
 
-In a file `ticker.py`, define the following class (using your structure code from before) and set up
-a pipeline:
+In a file `ticker.py`, define the following class (using your structure code from before) and set up a pipeline:
 
 ```python
 # ticker.py

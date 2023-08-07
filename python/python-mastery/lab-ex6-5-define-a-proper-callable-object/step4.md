@@ -1,7 +1,6 @@
 # Use as a Method (Challenge)
 
-A custom callable often presents problems if used as a custom method.
-For example, try this:
+A custom callable often presents problems if used as a custom method. For example, try this:
 
 ```python
 class Stock:

@@ -30,7 +30,4 @@ Get some basic information such as the function name, defining module name, and 
 >>>
 ```
 
-The `__code__` attribute of a function has low-level information about
-the function implementation. See if you can look at this and
-determine the number of required arguments and names of local
-variables.
+The `__code__` attribute of a function has low-level information about the function implementation. See if you can look at this and determine the number of required arguments and names of local variables.

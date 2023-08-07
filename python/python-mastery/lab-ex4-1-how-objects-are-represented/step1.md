@@ -1,8 +1,6 @@
 # Preparation
 
-Start this lab, by going back to a simple version of the `Stock` class you created.
-At the interactive prompt, define a
-new class called `SimpleStock` that looks like this:
+Start this lab, by going back to a simple version of the `Stock` class you created. At the interactive prompt, define a new class called `SimpleStock` that looks like this:
 
 ```python
 >>> class SimpleStock:

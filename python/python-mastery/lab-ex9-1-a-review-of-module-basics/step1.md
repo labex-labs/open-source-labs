@@ -1,7 +1,6 @@
 # Preparation
 
-This exercise is about some of the more tricky details of library modules.
-Start this exercise by creating a very simple library module:
+This exercise is about some of the more tricky details of library modules. Start this exercise by creating a very simple library module:
 
 ```python
 # simplemod.py

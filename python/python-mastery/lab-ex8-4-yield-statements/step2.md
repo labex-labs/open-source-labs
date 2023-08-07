@@ -1,7 +1,6 @@
 # Raising Exceptions
 
-In the file `cofollow.py`, you created a coroutine `printer()`. Modify the
-code to catch and report exceptions like this:
+In the file `cofollow.py`, you created a coroutine `printer()`. Modify the code to catch and report exceptions like this:
 
 ```python
 # cofollow.py
@@ -36,6 +35,4 @@ ERROR: ValueError("invalid literal for int() with base 10: 'n/a'",)
 >>>
 ```
 
-Notice how the running generator is not terminated by the exception. This
-is merely allowing the `yield` statement to signal an error instead of
-receiving a value.
+Notice how the running generator is not terminated by the exception. This is merely allowing the `yield` statement to signal an error instead of receiving a value.

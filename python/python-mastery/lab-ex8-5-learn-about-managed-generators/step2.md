@@ -34,15 +34,9 @@ def run():
             print('Task done')
 ```
 
-This code is a slightly more complicated version of the task scheduler in
-part (a). It will require a bit of study, but the idea is that not only
-will each task yield, it will indicate a reason for doing so (receiving or
-sending). Depending on the reason, the task will move over to a waiting
-area. The scheduler then runs any available tasks or waits for I/O
-events to occur when nothing is left to do.
+This code is a slightly more complicated version of the task scheduler in part (a). It will require a bit of study, but the idea is that not only will each task yield, it will indicate a reason for doing so (receiving or sending). Depending on the reason, the task will move over to a waiting area. The scheduler then runs any available tasks or waits for I/O events to occur when nothing is left to do.
 
-It's all a bit tricky perhaps, but add the following code which implements
-a simple echo server:
+It's all a bit tricky perhaps, but add the following code which implements a simple echo server:
 
 ```python
 # server.py
@@ -94,10 +88,6 @@ World
 Got: World
 ```
 
-If it's working, you should see output being echoed back to you. Not only that,
-if you connect multiple clients, they'll all operate concurrently.
+If it's working, you should see output being echoed back to you. Not only that, if you connect multiple clients, they'll all operate concurrently.
 
-This tricky use of generators is not something that you would
-likely have to code directly. However, they are used in certain advanced
-packages such as `asyncio` that was added to the standard
-library in Python 3.4.
+This tricky use of generators is not something that you would likely have to code directly. However, they are used in certain advanced packages such as `asyncio` that was added to the standard library in Python 3.4.

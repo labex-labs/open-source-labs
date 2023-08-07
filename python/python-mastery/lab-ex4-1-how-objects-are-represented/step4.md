@@ -1,8 +1,6 @@
 # The role of classes
 
-The definitions that make up a class definition are shared by all
-instances of that class. Notice, that all instances have a link back
-to their associated class:
+The definitions that make up a class definition are shared by all instances of that class. Notice, that all instances have a link back to their associated class:
 
 ```python
 >>> goog.__class__
@@ -22,8 +20,7 @@ Try calling a method on the instances:
 >>>
 ```
 
-Notice that the name 'cost' is not defined in either `goog.__dict__` or `ibm.__dict__`. Instead, it is being supplied by the
-class dictionary. Try this:
+Notice that the name 'cost' is not defined in either `goog.__dict__` or `ibm.__dict__`. Instead, it is being supplied by the class dictionary. Try this:
 
 ```python
 >>> SimpleStock.__dict__['cost']
@@ -41,8 +38,7 @@ Try calling the `cost()` method directly through the dictionary:
 >>>
 ```
 
-Notice how you are calling the function defined in the class definition and how the `self` argument
-gets the instance.
+Notice how you are calling the function defined in the class definition and how the `self` argument gets the instance.
 
 If you add a new value to the class, it becomes a class variable that's visible to all instances. Try it:
 

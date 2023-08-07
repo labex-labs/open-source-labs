@@ -1,8 +1,6 @@
 # Stare in Amazement
 
-Try running your `teststock.py` unit tests across this new file. Most of them should be
-passing now. For kicks, try your `Stock` class with some of the earlier code
-for tableformatting and reading data. It should all work.
+Try running your `teststock.py` unit tests across this new file. Most of them should be passing now. For kicks, try your `Stock` class with some of the earlier code for tableformatting and reading data. It should all work.
 
 ```python
 >>> from stock import Stock
@@ -25,6 +23,4 @@ for tableformatting and reading data. It should all work.
 >>>
 ```
 
-Again, marvel at the final `stock.py` file and observe how clean the
-code looks. Just try not think about everything that is happening
-under the hood with the `Structure` base class.
+Again, marvel at the final `stock.py` file and observe how clean the code looks. Just try not think about everything that is happening under the hood with the `Structure` base class.

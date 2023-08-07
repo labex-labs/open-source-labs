@@ -11,8 +11,7 @@ Try the following experiment and observe:
 >>>
 ```
 
-Modify the `TableFormatter` base class by adding a dictionary and an
-`__init_subclass__()` method:
+Modify the `TableFormatter` base class by adding a dictionary and an `__init_subclass__()` method:
 
 ```python
 class TableFormatter(ABC):
@@ -43,8 +42,7 @@ This makes the parent class track all of its subclasses. Check it out:
 >>>
 ```
 
-Modify the `create_formatter()` function to look up the class in this dictionary
-instead:
+Modify the `create_formatter()` function to look up the class in this dictionary instead:
 
 ```python
 def create_formatter(name, column_formats=None, upper_headers=False):
@@ -63,6 +61,4 @@ def create_formatter(name, column_formats=None, upper_headers=False):
     return formatter_cls()
 ```
 
-Run the `stock.py` program. Make sure it still works after you've made these changes.
-Just a note that all of the import statements are still there. You've mainly
-just cleaned up the code a bit and eliminated the hard-wired class names.
+Run the `stock.py` program. Make sure it still works after you've made these changes. Just a note that all of the import statements are still there. You've mainly just cleaned up the code a bit and eliminated the hard-wired class names.

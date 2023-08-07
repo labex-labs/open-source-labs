@@ -1,17 +1,13 @@
 # Preparation
 
-In the last exercise, you create a class `Structure` that made it easy to define
-data structures. For example:
+In the last exercise, you create a class `Structure` that made it easy to define data structures. For example:
 
 ```python
 class Stock(Structure):
     _fields = ('name','shares','price')
 ```
 
-This works fine except that a lot of things are pretty weird about the `__init__()`
-function. For example, if you ask for help using `help(Stock)`, you don't get
-any kind of useful signature. Also, keyword argument passing doesn't work. For
-example:
+This works fine except that a lot of things are pretty weird about the `__init__()` function. For example, if you ask for help using `help(Stock)`, you don't get any kind of useful signature. Also, keyword argument passing doesn't work. For example:
 
 ```python
 >>> help(Stock)

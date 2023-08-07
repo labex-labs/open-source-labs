@@ -1,7 +1,6 @@
 # The Trouble with Column Formatting
 
-If you go all the way back to [Exercise 3.1](ex3_1.md), you
-wrote a function `print_portfolio()` that produced a table like this:
+If you go all the way back to [Exercise 3.1](ex3_1.md), you wrote a function `print_portfolio()` that produced a table like this:
 
 ```python
 >>> portfolio = read_portfolio('portfolio.csv')
@@ -18,16 +17,9 @@ wrote a function `print_portfolio()` that produced a table like this:
 >>>
 ```
 
-The `print_table()` function developed in the last several exercises
-almost replaces this functionality--almost. The one problem that it
-has is that it can't precisely format the content of each column. For
-example, notice how the values in the `price` column are precisely
-formatted with 2 decimal points. The `TableFormatter` class and
-related subclasses can't do that.
+The `print_table()` function developed in the last several exercises almost replaces this functionality--almost. The one problem that it has is that it can't precisely format the content of each column. For example, notice how the values in the `price` column are precisely formatted with 2 decimal points. The `TableFormatter` class and related subclasses can't do that.
 
-One way to fix it would be to modify the `print_table()` function to
-accept an additional formats argument. For example, maybe something
-like this:
+One way to fix it would be to modify the `print_table()` function to accept an additional formats argument. For example, maybe something like this:
 
 ```python
 >>> def print_table(records, fields, formats, formatter):
@@ -58,15 +50,9 @@ like this:
 >>>
 ```
 
-Yes, you could modify `print_table()` like this, but is that the right
-place to do it? The whole idea of all of the `TableFormatter` classes
-is that they could be used in different kinds of applications. Column
-formatting is something that could be useful elsewhere, not just
-in the `print_table()` function.
+Yes, you could modify `print_table()` like this, but is that the right place to do it? The whole idea of all of the `TableFormatter` classes is that they could be used in different kinds of applications. Column formatting is something that could be useful elsewhere, not just in the `print_table()` function.
 
-Another possible approach might be to change the interface to the
-`TableFormatter` class in some way. For example, maybe adding a third
-method to apply formatting.
+Another possible approach might be to change the interface to the `TableFormatter` class in some way. For example, maybe adding a third method to apply formatting.
 
 ```python
 class TableFormatter:
@@ -78,15 +64,9 @@ class TableFormatter:
         ...
 ```
 
-The problem here is that any time you change the interface on a class,
-you're going to have to refactor all of the existing code to work with
-it. Specifically, you'd have to modify all of the already written
-`TableFormatter` subclasses and all of the code written to use them.
-Let's not do that.
+The problem here is that any time you change the interface on a class, you're going to have to refactor all of the existing code to work with it. Specifically, you'd have to modify all of the already written `TableFormatter` subclasses and all of the code written to use them. Let's not do that.
 
-As an alternative, a user could use inheritance to customize a
-specific formatter in order to inject some formatting into it. For
-example, try this experiment:
+As an alternative, a user could use inheritance to customize a specific formatter in order to inject some formatting into it. For example, try this experiment:
 
 ```python
 >>> from tableformat import TextTableFormatter, print_table
@@ -110,7 +90,4 @@ example, try this experiment:
 >>>
 ```
 
-Yes, that works, but it's also a bit clumsy and weird. The user has
-to pick a specific formatter to customize. On top of that, they have
-to implement the actual column formatting code themselves. Surely
-there is a different way to do this.
+Yes, that works, but it's also a bit clumsy and weird. The user has to pick a specific formatter to customize. On top of that, they have to implement the actual column formatting code themselves. Surely there is a different way to do this.

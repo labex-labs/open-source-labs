@@ -37,5 +37,4 @@ def create_formatter(name, column_formats=None, upper_headers=False):
             pass
 
     return formatter_cls()
-
 ```

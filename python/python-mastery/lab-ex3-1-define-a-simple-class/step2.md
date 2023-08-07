@@ -1,7 +1,6 @@
 # Reading a portfolio
 
-Add a function `read_portfolio()` to your `stock.py` program that
-reads a file of portfolio data into a list of `Stock` objects. Here's how it should work:
+Add a function `read_portfolio()` to your `stock.py` program that reads a file of portfolio data into a list of `Stock` objects. Here's how it should work:
 
 ```python
 >>> portfolio = read_portfolio('portfolio.csv')
@@ -18,10 +17,7 @@ reads a file of portfolio data into a list of `Stock` objects. Here's how it sho
 >>>
 ```
 
-You already wrote a similar function as part of
-[Exercise 2.3](ex2_3.md). Design discussion: Should
-`read_portfolio()` be a separate function or part of the class
-definition?
+You already wrote a similar function as part of [Exercise 2.3](ex2_3.md). Design discussion: Should `read_portfolio()` be a separate function or part of the class definition?
 
 ## Note:
 

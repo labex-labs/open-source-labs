@@ -15,5 +15,4 @@ class Stock:
         self.price = price
 ```
 
-Hint: To do this, recall the `__set_name__()` method of descriptor objects that
-gets called when descriptors are placed in a class definition.
+Hint: To do this, recall the `__set_name__()` method of descriptor objects that gets called when descriptors are placed in a class definition.

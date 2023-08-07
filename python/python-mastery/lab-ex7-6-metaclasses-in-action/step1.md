@@ -19,16 +19,9 @@ class Stock(Structure):
         self.shares -= nshares
 ```
 
-There are a lot of things going on under the covers. However, one annoyance
-concerns all of those type-name imports at the top (e.g., `String`, `PositiveInteger`, etc.).
-That's just the kind of thing that might lead to a `from validate import *` statement.
-One interesting thing about a metaclass is that it can be used to control
-the process by which a class gets defined. This includes managing the
-environment of a class definition itself. Let's tackle those imports.
+There are a lot of things going on under the covers. However, one annoyance concerns all of those type-name imports at the top (e.g., `String`, `PositiveInteger`, etc.). That's just the kind of thing that might lead to a `from validate import *` statement. One interesting thing about a metaclass is that it can be used to control the process by which a class gets defined. This includes managing the environment of a class definition itself. Let's tackle those imports.
 
-The first step in managing all of the validator names is to collect
-them. Go to the file `validate.py` and modify the `Validator` base
-class with this extra bit of code involving `__init_subclass__()` again:
+The first step in managing all of the validator names is to collect them. Go to the file `validate.py` and modify the `Validator` base class with this extra bit of code involving `__init_subclass__()` again:
 
 ```python
 # validate.py
@@ -43,8 +36,7 @@ class Validator:
         cls.validators[cls.__name__] = cls
 ```
 
-That's not much, but it's creating a little namespace of all of the `Validator`
-subclasses. Take a look at it:
+That's not much, but it's creating a little namespace of all of the `Validator` subclasses. Take a look at it:
 
 ```python
 >>> from validate import Validator
@@ -61,8 +53,7 @@ subclasses. Take a look at it:
 >>>
 ```
 
-Now that you've done that, let's inject this namespace into namespace
-of classes defined from `Structure`. Define the following metaclass:
+Now that you've done that, let's inject this namespace into namespace of classes defined from `Structure`. Define the following metaclass:
 
 ```python
 # structure.py
@@ -85,15 +76,9 @@ class Structure(metaclass=StructureMeta):
     ...
 ```
 
-In this code, the `__prepare__()` method is making a special `ChainMap` mapping that consists
-of an empty dictionary and a dictionary of all of the defined validators. The empty dictionary
-that's listed first is going to collect all of the definitions made inside the class body.
-The `Validator.validators` dictionary is going to make all of the type definitions available
-to for use as descriptors or argument type annotations.
+In this code, the `__prepare__()` method is making a special `ChainMap` mapping that consists of an empty dictionary and a dictionary of all of the defined validators. The empty dictionary that's listed first is going to collect all of the definitions made inside the class body. The `Validator.validators` dictionary is going to make all of the type definitions available to for use as descriptors or argument type annotations.
 
-The `__new__()` method discards extra the validator dictionary and
-passes the remaining definitions onto the type constructor. It's
-ingenious, but it lets you drop the annoying imports:
+The `__new__()` method discards extra the validator dictionary and passes the remaining definitions onto the type constructor. It's ingenious, but it lets you drop the annoying imports:
 
 ```python
 # stock.py

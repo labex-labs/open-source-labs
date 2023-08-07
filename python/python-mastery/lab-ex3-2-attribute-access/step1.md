@@ -1,7 +1,6 @@
 # The Three Operations
 
-The entire Python object system consists of just three core operations: getting, setting, and deleting
-of attributes. Normally, these are accessed via the dot (.) like this:
+The entire Python object system consists of just three core operations: getting, setting, and deleting of attributes. Normally, these are accessed via the dot (.) like this:
 
 ```python
 >>> s = Stock('GOOG', 100, 490.1)

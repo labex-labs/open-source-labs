@@ -1,8 +1,6 @@
 # Copying Metadata
 
-When a function gets wrapped by a decorator, you often lose
-information about the name of the function, documentation strings, and
-other details. Verify this:
+When a function gets wrapped by a decorator, you often lose information about the name of the function, documentation strings, and other details. Verify this:
 
 ```python
 >>> @logged
@@ -17,12 +15,9 @@ other details. Verify this:
 >>>
 ```
 
-Fix the definition of the `logged` decorator so that it copies
-function metadata properly. To do this, use the `@wraps(func)`
-decorator as shown in the notes.
+Fix the definition of the `logged` decorator so that it copies function metadata properly. To do this, use the `@wraps(func)` decorator as shown in the notes.
 
-After you're done, make sure the decorator preserves the function name
-and doc string.
+After you're done, make sure the decorator preserves the function name and doc string.
 
 ```python
 >>> @logged
@@ -37,5 +32,4 @@ and doc string.
 >>>
 ```
 
-Fix the `@validated` decorator you wrote earlier so that it also preserves
-metadata using `@wraps(func)`.
+Fix the `@validated` decorator you wrote earlier so that it also preserves metadata using `@wraps(func)`.

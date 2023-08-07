@@ -1,7 +1,6 @@
 # Wrapping a Socket
 
-In the previous exercise, you wrote a simple network echo server using
-generators. The code for the server looked like this:
+In the previous exercise, you wrote a simple network echo server using generators. The code for the server looked like this:
 
 ```python
 def tcp_server(address, handler):
@@ -26,8 +25,7 @@ def echo_handler(client, address):
     print('Connection closed')
 ```
 
-Create a class `GenSocket` that cleans up the `yield` statements and
-allows the server to be rewritten more simply as follows:
+Create a class `GenSocket` that cleans up the `yield` statements and allows the server to be rewritten more simply as follows:
 
 ```python
 def tcp_server(address, handler):

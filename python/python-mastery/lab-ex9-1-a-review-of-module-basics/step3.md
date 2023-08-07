@@ -1,16 +1,13 @@
 # Repeated Module Loading
 
-Make sure you understand that modules are only loaded
-once. Try a repeated import and notice how you do not see
-the output from the `print` function:
+Make sure you understand that modules are only loaded once. Try a repeated import and notice how you do not see the output from the `print` function:
 
 ```python
 >>> import simplemod
 >>>
 ```
 
-Try changing the value of `x` and see that a repeated import
-has no effect.
+Try changing the value of `x` and see that a repeated import has no effect.
 
 ```python
 >>> simplemod.x
@@ -36,8 +33,7 @@ Loaded simplemod
 >>>
 ```
 
-`sys.modules` is a dictionary of all loaded modules. Take
-a look at it, delete your module, and try a repeated import.
+`sys.modules` is a dictionary of all loaded modules. Take a look at it, delete your module, and try a repeated import.
 
 ```python
 >>> sys.modules

@@ -1,11 +1,6 @@
 # Thinking about Flexibility
 
-Right now, the two functions in `reader.py` are hard-wired to work
-with filenames that are passed directly to `open()`. Refactor the
-code so that it works with any iterable object that produces lines.
-To do this, create two new functions `csv_as_dicts(lines, types)` and
-`csv_as_instances(lines, cls)` that convert any iterable sequence of
-lines. For example:
+Right now, the two functions in `reader.py` are hard-wired to work with filenames that are passed directly to `open()`. Refactor the code so that it works with any iterable object that produces lines. To do this, create two new functions `csv_as_dicts(lines, types)` and `csv_as_instances(lines, cls)` that convert any iterable sequence of lines. For example:
 
 ```python
 >>> file = open('portfolio.csv')
@@ -18,8 +13,7 @@ lines. For example:
 >>>
 ```
 
-The whole point of doing this is to make it possible to work with different
-kinds of input sources. For example:
+The whole point of doing this is to make it possible to work with different kinds of input sources. For example:
 
 ```python
 >>> import gzip
@@ -33,8 +27,4 @@ kinds of input sources. For example:
 >>>
 ```
 
-To maintain backwards compatibility with older code, write functions
-`read_csv_as_dicts()` and `read_csv_as_instances()` that take a
-filename as before. These functions should call `open()` on the
-supplied filename and use the new `csv_as_dicts()` or
-`csv_as_instances()` functions on the resulting file.
+To maintain backwards compatibility with older code, write functions `read_csv_as_dicts()` and `read_csv_as_instances()` that take a filename as before. These functions should call `open()` on the supplied filename and use the new `csv_as_dicts()` or `csv_as_instances()` functions on the resulting file.

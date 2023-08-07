@@ -12,11 +12,9 @@ class Stock:
         return self.shares * self.price
 ```
 
-Once you have done this, run your program and experiment with your new
-`Stock` object:
+Once you have done this, run your program and experiment with your new `Stock` object:
 
-Note: To do this, you might have to run python using the `-i`
-option. For example:
+Note: To do this, you might have to run python using the `-i` option. For example:
 
 ```bash
 python3 -i stock.py

@@ -1,7 +1,6 @@
 # Unit tests with expected errors
 
-Suppose you wanted to write a unit test that checks for an exception.
-Here is how you can do it:
+Suppose you wanted to write a unit test that checks for an exception. Here is how you can do it:
 
 ```python
 class TestStock(unittest.TestCase):
@@ -25,11 +24,6 @@ In total, you should have around a dozen unit tests when you're done.
 
 **Important Note**
 
-For later use in the course, you will want to have a fully working
-`stock.py` and `teststock.py` file. Save your work in progress if you
-have to, but you are strongly encouraged to copy the code from
-`Solutions/5_6` if things are still broken at this point.
+For later use in the course, you will want to have a fully working `stock.py` and `teststock.py` file. Save your work in progress if you have to, but you are strongly encouraged to copy the code from `Solutions/5_6` if things are still broken at this point.
 
-We're going to use the `teststock.py` file as a tool for improving the `Stock` code
-later. You'll want it on hand to make sure that the new code behaves the same way
-as the old code.
+We're going to use the `teststock.py` file as a tool for improving the `Stock` code later. You'll want it on hand to make sure that the new code behaves the same way as the old code.

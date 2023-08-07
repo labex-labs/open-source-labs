@@ -10,8 +10,7 @@ x is 42
 >>>
 ```
 
-If this failed with an `ImportError`, your path setting is
-flaky. Look at the value of `sys.path` and fix it.
+If this failed with an `ImportError`, your path setting is flaky. Look at the value of `sys.path` and fix it.
 
 ```python
 >>> import sys

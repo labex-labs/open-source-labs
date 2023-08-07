@@ -1,13 +1,8 @@
 # Generalizing
 
-A useful feature of class-methods is that you can use them to put a
-highly uniform instance creation interface on a wide variety of
-classes and write general purpose utility functions that use them.
+A useful feature of class-methods is that you can use them to put a highly uniform instance creation interface on a wide variety of classes and write general purpose utility functions that use them.
 
-Earlier, you created a file `reader.py` that had some functions for
-reading CSV data. Add the following `read_csv_as_instances()`
-function to the file which accepts a class as input and uses the class
-`from_row()` method to create a list of instances:
+Earlier, you created a file `reader.py` that had some functions for reading CSV data. Add the following `read_csv_as_instances()` function to the file which accepts a class as input and uses the class `from_row()` method to create a list of instances:
 
 ```python
 # reader.py
@@ -26,8 +21,7 @@ def read_csv_as_instances(filename, cls):
     return records
 ```
 
-Get rid of the `read_portfolio()` function--you don't need that anymore. If you want to
-read a list of `Stock` objects, do this:
+Get rid of the `read_portfolio()` function--you don't need that anymore. If you want to read a list of `Stock` objects, do this:
 
 ```python
 >>> # Read a portfolio of Stock instances
@@ -66,16 +60,9 @@ Here is another example of how you might use `read_csv_as_instances()` with a co
 
 **Discussion**
 
-This lab illustrates the two most common uses of class variables
-and class methods. Class variables are often used to hold a global
-parameter (e.g., a configuration setting) that is shared across all
-instances. Sometimes subclasses will inherit from the base class and
-override the setting to change behavior.
+This lab illustrates the two most common uses of class variables and class methods. Class variables are often used to hold a global parameter (e.g., a configuration setting) that is shared across all instances. Sometimes subclasses will inherit from the base class and override the setting to change behavior.
 
-Class methods are most commonly used to implement alternate
-constructors as shown. A common way to spot such class methods is to
-look for the word "from" in the name. For example, here is an example
-on built-in dictionaries:
+Class methods are most commonly used to implement alternate constructors as shown. A common way to spot such class methods is to look for the word "from" in the name. For example, here is an example on built-in dictionaries:
 
 ```python
 >>> d = dict.fromkeys(['a','b','c'], 0)     # class method

@@ -1,7 +1,6 @@
 # Proxies
 
-A proxy class is a class that wraps around an existing class and provides a similar interface.
-Define the following class which makes a read-only layer around an existing object:
+A proxy class is a class that wraps around an existing class and provides a similar interface. Define the following class which makes a read-only layer around an existing object:
 
 ```python
 >>> class Readonly:

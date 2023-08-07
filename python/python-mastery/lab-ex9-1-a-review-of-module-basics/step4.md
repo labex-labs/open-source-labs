@@ -11,11 +11,9 @@ x is 42
 >>>
 ```
 
-Notice how this loaded the entire module (observe the output of
-the print function and how the `x` variable is used).
+Notice how this loaded the entire module (observe the output of the print function and how the `x` variable is used).
 
-When you use `from`, the module object itself is not
-visible. For example:
+When you use `from`, the module object itself is not visible. For example:
 
 ```python
 >>> simplemod.foo()
@@ -25,8 +23,7 @@ NameError: name 'simplemod' is not defined
 >>>
 ```
 
-Make sure you understand that when you export things from a module,
-they are simply name references. For example, try this and explain:
+Make sure you understand that when you export things from a module, they are simply name references. For example, try this and explain:
 
 ```python
 >>> from simplemod import x,foo

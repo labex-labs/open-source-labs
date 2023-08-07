@@ -1,7 +1,6 @@
 # Unit testing
 
-Using the code in `teststock.py` as a guide, extend the `TestStock` class
-with tests for the following:
+Using the code in `teststock.py` as a guide, extend the `TestStock` class with tests for the following:
 
 - Test that you can create a `Stock` using keyword arguments such as `Stock(name='GOOG',shares=100,price=490.1)`.
 - Test that the `cost` property returns a correct value

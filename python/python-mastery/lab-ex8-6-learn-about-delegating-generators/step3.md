@@ -1,7 +1,6 @@
 # Async/Await
 
-Take the `GenSocket` class you just wrote and wrap all of the methods
-that use `yield` with the `@coroutine` decorator from the `types` module.
+Take the `GenSocket` class you just wrote and wrap all of the methods that use `yield` with the `@coroutine` decorator from the `types` module.
 
 ```python
 from types import coroutine

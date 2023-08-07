@@ -1,12 +1,8 @@
 # Enforcing Validation Rules
 
-Using properties and private attributes, modify the `shares` attribute
-of the `Stock` class so that it can only be assigned a non-negative
-integer value. In addition, modify the `price` attribute so that it
-can only be assigned a non-negative floating point value.
+Using properties and private attributes, modify the `shares` attribute of the `Stock` class so that it can only be assigned a non-negative integer value. In addition, modify the `price` attribute so that it can only be assigned a non-negative floating point value.
 
-The new object should work almost exactly the same as
-the old one except for extra type and value checking.
+The new object should work almost exactly the same as the old one except for extra type and value checking.
 
 ```python
 >>> s = Stock('GOOG', 100, 490.10)

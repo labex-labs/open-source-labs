@@ -1,7 +1,6 @@
 # Putting it Together
 
-Taking the ideas in the first two parts, delete the `__init__()` method that was originally part of the
-`Structure` class. Next, add an `_init()` method like this:
+Taking the ideas in the first two parts, delete the `__init__()` method that was originally part of the `Structure` class. Next, add an `_init()` method like this:
 
 ```python
 # structure.py
@@ -18,9 +17,7 @@ class Structure:
     ...
 ```
 
-Note: The reason this is defined as a `@staticmethod` is that the `self` argument
-is obtained from the locals--there's no need to additionally have it passed as
-an argument to the method itself (admittedly this is a bit subtle).
+Note: The reason this is defined as a `@staticmethod` is that the `self` argument is obtained from the locals--there's no need to additionally have it passed as an argument to the method itself (admittedly this is a bit subtle).
 
 Now, modify your `Stock` class so that it looks like the following:
 
@@ -41,8 +38,7 @@ class Stock(Structure):
         self.shares -= shares
 ```
 
-Verify that the class works properly, supports keyword arguments, and has a
-proper help signature.
+Verify that the class works properly, supports keyword arguments, and has a proper help signature.
 
 ```python
 >>> s = Stock(name='GOOG', price=490.1, shares=50)
@@ -59,7 +55,4 @@ proper help signature.
 
 Run your unit tests in `teststock.py` again. You should see at least one more test pass. Yay!
 
-At this point, it's going to look like we just took a giant step backwards. Not
-only do the classes need the `__init__()` method, they also need the `_fields`
-variable for some of the other methods to work (`__repr__()` and `__setattr__()`). Plus,
-the use of `self._init()` looks pretty hacky. We'll work on this, but be patient.
+At this point, it's going to look like we just took a giant step backwards. Not only do the classes need the `__init__()` method, they also need the `_fields` variable for some of the other methods to work (`__repr__()` and `__setattr__()`). Plus, the use of `self._init()` looks pretty hacky. We'll work on this, but be patient.
