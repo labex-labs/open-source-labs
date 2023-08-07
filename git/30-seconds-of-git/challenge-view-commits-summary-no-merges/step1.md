@@ -9,7 +9,7 @@ You have been working on a project with several other developers, and you want t
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
 1. Navigate to the directory and configure the identity.
-2. Create and switch to a branch called `feature1`, create a file called `file.txt` and write `feature 1` into it, add it to the staging area and commit it with the message "Add feature 1".
+2. Create and switch to a branch called `feature1`, create a file called `file.txt` and write "feature 1" into it, add it to the staging area and commit it with the message "Add feature 1".
 3. Switch back to the `master` branch, merge the `feature1` branch, disable the forward merge, save and exit without changing the text.
 4. View a short summary of all commits excluding merge commits.
 

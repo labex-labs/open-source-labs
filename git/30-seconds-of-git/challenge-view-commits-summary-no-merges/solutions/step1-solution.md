@@ -7,7 +7,7 @@ cd git-playground
 git config --global user.name "your-username"
 git config --global user.email "your-email"
 git checkout -b feature1
-echo "Feature 1" >> file.txt
+echo "feature 1" >> file.txt
 git add .
 git commit -m "Add feature 1"
 git checkout master
