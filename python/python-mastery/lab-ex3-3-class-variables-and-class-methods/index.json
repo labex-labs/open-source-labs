@@ -1,0 +1,173 @@
+{
+  "type": "lab",
+  "title": "Class Variables and Class Methods",
+  "description": "In this lab, we will be learning about class variables and class methods as we make modifications to the \"stock.py\" and \"reader.py\" files.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Previous Exercise",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please run the python code in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/class",
+          "python/instance_objects",
+          "python/open",
+          "python/next",
+          "python/list",
+          "python/int",
+          "python/float"
+        ]
+      },
+      {
+        "title": "Alternate constructors",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please implement the \"from_row()\" method in the \"Stock\" class.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/method_objects",
+          "python/decorator",
+          "python/list",
+          "python/list_comprehension",
+          "python/zip"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Class variables and inheritance",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please run the python code in step 3.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/decimal",
+          "python/class",
+          "python/inheritance",
+          "python/attributes",
+          "python/str",
+          "python/int",
+          "python/float",
+          "python/list"
+        ]
+      },
+      {
+        "title": "Reading Objects",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please implement the \"read_portfolio()\" function in the \"stock.py\" file",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/with_statement",
+          "python/open",
+          "python/next",
+          "python/instance_objects",
+          "python/list",
+          "python/int",
+          "python/float"
+        ],
+        "solutions": ["step4_solution.py"]
+      },
+      {
+        "title": "Generalizing",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please implement the \"read_csv_as_instances()\" function in the \"reader.py\" file and execute the python code in step 5.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/with_statement",
+          "python/open",
+          "python/next",
+          "python/method_objects",
+          "python/list",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": ["step5_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "tableformat.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "ctabus.csv.zip",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

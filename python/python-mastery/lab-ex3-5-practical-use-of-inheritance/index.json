@@ -1,0 +1,154 @@
+{
+  "type": "lab",
+  "title": "Practical Use of Inheritance",
+  "description": "In this lab, our objective is to learn how to use inheritance to write extensible code by rewriting the provided content in the `tableformat.py` file into a sentence.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Preparation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please run the python code in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/modules", "python/csv"]
+      },
+      {
+        "title": "Defining a generic formatter class",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please modify the \"print_table()\" function and add the \"TableFormatter\" class in the \"tableformat.py\" file.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/attributes",
+          "python/for_loop",
+          "python/list",
+          "python/list_comprehension",
+          "python/raise_errors"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Implementing a concrete formatter",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please add the \"TextTableFormatter\" class in the \"tableformat.py\" file.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/inheritance",
+          "python/method_objects",
+          "python/string",
+          "python/len",
+          "python/print"
+        ],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Adding More Implementations",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please add the \"CSVTableFormatter\" and \"HTMLTableFormatter\" class in the \"tableformat.py\" file.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/inheritance",
+          "python/method_objects",
+          "python/string",
+          "python/str",
+          "python/print"
+        ],
+        "solutions": ["step4_solution.py"]
+      },
+      {
+        "title": "Making it Easier To Choose",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please implement the \"create_formatter()\" function in the \"tableformat.py\" file.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/if_else",
+          "python/raise_errors"
+        ],
+        "solutions": ["step5_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "tableformat.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

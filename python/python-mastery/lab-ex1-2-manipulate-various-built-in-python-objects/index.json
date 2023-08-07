@@ -1,0 +1,104 @@
+{
+  "type": "lab",
+  "title": "Manipulate Various Built-in Python Objects",
+  "description": "In this lab, the objective is to manipulate various built-in Python objects.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Part 1 : Numbers",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please execute the python program statement in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/math_operator", "python/variables"]
+      },
+      {
+        "title": "Part 2 : String Manipulation",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please execute the python program statement in step 2.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/string",
+          "python/variables",
+          "python/raise_errors",
+          "python/in"
+        ]
+      },
+      {
+        "title": "Part 3 : List Manipulation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please execute the python program statement in step 3.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/string",
+          "python/list",
+          "python/for_loop",
+          "python/print",
+          "python/in"
+        ]
+      },
+      {
+        "title": "Part 4 : Dictionaries",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please execute the python program statement in step 4.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/dict", "python/list", "python/del"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "type": "lab",
+  "title": "Customize Iteration Using Generators",
+  "description": "In this lab, the objective is to learn how to customize iteration using generators by modifying the `structure.py` file and creating a new file `follow.py`.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "A Simple Generator",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/yield_values",
+          "python/while_loop",
+          "python/class",
+          "python/method_objects",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Adding Iteration to Objects",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/method_objects",
+          "python/yield_values",
+          "python/iterator",
+          "python/for_loop",
+          "python/modules",
+          "python/print"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "The Surprising Power of Iteration",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/method_objects",
+          "python/isinstance",
+          "python/type",
+          "python/logical_operator",
+          "python/tuple"
+        ],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Monitoring a streaming data source",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/time",
+          "python/os",
+          "python/with_statement",
+          "python/open",
+          "python/continue",
+          "python/yield_values",
+          "python/string",
+          "python/float"
+        ],
+        "solutions": ["follow.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "structure.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "validate.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stocksim.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "dowstocks.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

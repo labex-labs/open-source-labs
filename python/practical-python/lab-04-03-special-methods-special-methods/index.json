@@ -1,0 +1,213 @@
+{
+  "type": "lab",
+  "title": "Special Methods",
+  "description": "In this lab, we will explore the concept of customizing Python's behavior through special or \"magic\" methods, as well as learn about dynamic attribute access and bound methods.",
+  "difficulty": "Beginner",
+  "time": 45,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Introduction",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/function_basic", "python/class"]
+      },
+      {
+        "title": "Special methods for String Conversions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/str",
+          "python/class",
+          "python/print",
+          "python/datetime",
+          "python/function_basic",
+          "python/math_operator",
+          "python/variables",
+          "python/assignment",
+          "python/int",
+          "python/comparison",
+          "python/attributes"
+        ]
+      },
+      {
+        "title": "Special Methods for Mathematics",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/comparison", "python/math_operator", "python/abs"]
+      },
+      {
+        "title": "Special Methods for Item Access",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/function_basic",
+          "python/len",
+          "python/assignment",
+          "python/del"
+        ]
+      },
+      {
+        "title": "Method Invocation",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please check the step 5 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/assignment",
+          "python/comparison",
+          "python/math_operator"
+        ]
+      },
+      {
+        "title": "Bound Methods",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please check the step 6 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/print",
+          "python/open",
+          "python/math_operator",
+          "python/variables",
+          "python/assignment",
+          "python/int",
+          "python/comparison"
+        ]
+      },
+      {
+        "title": "Attribute Access",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "Please check the step 7 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/assignment",
+          "python/del",
+          "python/if_else",
+          "python/math_operator"
+        ]
+      },
+      {
+        "title": "Exercise 4.9: Better output for printing objects",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "Please check the step 8 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/re",
+          "python/math_operator",
+          "python/assignment",
+          "python/python_scripts",
+          "python/comparison"
+        ]
+      },
+      {
+        "title": "Exercise 4.10: An example of using getattr()",
+        "text": "step9.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 9",
+            "file": "verify9.sh",
+            "hint": "Please check the step 9 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/re",
+          "python/print",
+          "python/math_operator",
+          "python/variables",
+          "python/assignment",
+          "python/python_scripts",
+          "python/int",
+          "python/comparison"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  }
+}

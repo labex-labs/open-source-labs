@@ -1,0 +1,210 @@
+{
+  "type": "lab",
+  "title": "Producers, Consumers and Pipelines",
+  "description": "In this lab, we will discuss the usefulness of generators in setting producer/consumer problems and dataflow pipelines.",
+  "difficulty": "Beginner",
+  "time": 40,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Producer-Consumer Problems",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/math_operator",
+          "python/yield_values",
+          "python/boolean",
+          "python/while_loop"
+        ]
+      },
+      {
+        "title": "Generator Pipelines",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/math_operator",
+          "python/assignment",
+          "python/python_scripts",
+          "python/yield_values"
+        ]
+      },
+      {
+        "title": "Exercise 6.8: Setting up a simple pipeline",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/print",
+          "python/int",
+          "python/function_basic",
+          "python/math_operator",
+          "python/variables",
+          "python/assignment",
+          "python/yield_values",
+          "python/comparison",
+          "python/while_loop"
+        ]
+      },
+      {
+        "title": "Exercise 6.9: Setting up a more complex pipeline",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/print",
+          "python/math_operator",
+          "python/variables",
+          "python/assignment",
+          "python/int",
+          "python/comparison"
+        ]
+      },
+      {
+        "title": "Exercise 6.10: Making more pipeline components",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please check the step 5 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/print",
+          "python/int",
+          "python/zip",
+          "python/function_basic",
+          "python/dict",
+          "python/data_types",
+          "python/math_operator",
+          "python/variables",
+          "python/assignment",
+          "python/python_scripts",
+          "python/yield_values",
+          "python/comparison"
+        ]
+      },
+      {
+        "title": "Exercise 6.11: Filtering data",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please check the step 6 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/re",
+          "python/print",
+          "python/int",
+          "python/function_basic",
+          "python/math_operator",
+          "python/variables",
+          "python/assignment",
+          "python/python_scripts",
+          "python/yield_values"
+        ]
+      },
+      {
+        "title": "Exercise 6.12: Putting it all together",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "Please check the step 7 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/python_scripts",
+          "python/comparison",
+          "python/math_operator"
+        ]
+      },
+      {
+        "title": "Discussion",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 8",
+            "file": "verify8.sh",
+            "hint": "Please check the step 8 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/math_operator"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stocksim.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  }
+}

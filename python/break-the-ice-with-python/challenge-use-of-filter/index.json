@@ -1,0 +1,58 @@
+{
+  "type": "challenge",
+  "title": "Use of Filter",
+  "description": "In this challenge, you will write a program which can \"filter()\" to make a list whose elements are even number between 1 and 20 (both included).",
+  "difficulty": "Beginner",
+  "time": 5,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Use of Filter",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Testing use_of_filter.py",
+            "file": "verify1.sh",
+            "hint": "Please replace this text with the hint of the verify script",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/list",
+          "python/range",
+          "python/print"
+        ],
+        "solutions": ["use_of_filter.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "777"
+        },
+        {
+          "file": "use_of_filter.py",
+          "target": "/home/labex/project",
+          "chmod": "777"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"]
+}

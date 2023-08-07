@@ -1,0 +1,130 @@
+{
+  "type": "lab",
+  "title": "Learn About Descriptors",
+  "description": "In this lab, we will focus on learning about descriptors, and we will be creating a new file called `descrip.py`. Additionally, we will be making modifications to the `validate.py` file.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Descriptors in action",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/attributes",
+          "python/instance_objects",
+          "python/raise_errors"
+        ]
+      },
+      {
+        "title": "Make your own descriptor",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/attributes",
+          "python/instance_objects",
+          "python/del"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "From Validators to Descriptors",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/attributes",
+          "python/instance_objects",
+          "python/raise_errors",
+          "python/decorator"
+        ],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Fixing the Names",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/attributes",
+          "python/decorator"
+        ],
+        "solutions": ["step4_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "descrip.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "validate.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}
