@@ -14,6 +14,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 4. View a short summary of all commits excluding merge commits.
 
 This will output a list of all the commits made to the repository, excluding any merge commits. The output will look something like this:
+
 ```shell
 430b986 (feature1) Add feature 1
 d22f46b (origin/master, origin/HEAD) Added file2.txt
