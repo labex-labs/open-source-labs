@@ -1,0 +1,145 @@
+{
+  "type": "lab",
+  "title": "Design Discussion",
+  "description": "In this lab, we will be revisiting a previous design decision.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Filenames versus Iterables",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/function_basic",
+          "python/open",
+          "python/math_operator",
+          "python/assignment"
+        ]
+      },
+      {
+        "title": "Deep Idea: \"Duck Typing\"",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/list",
+          "python/function_basic",
+          "python/open",
+          "python/math_operator",
+          "python/assignment",
+          "python/comparison"
+        ]
+      },
+      {
+        "title": "Library Design Best Practices",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Exercise",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Exercise 3.17: From filenames to file-like objects",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please check the step 5 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/open",
+          "python/math_operator",
+          "python/assignment",
+          "python/python_scripts",
+          "python/comparison"
+        ]
+      },
+      {
+        "title": "Exercise 3.18: Fixing existing functions",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please check the step 6 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/python_scripts"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "portfolio.csv.gz",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  }
+}
