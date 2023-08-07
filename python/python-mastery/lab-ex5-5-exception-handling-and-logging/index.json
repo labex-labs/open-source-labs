@@ -1,0 +1,96 @@
+{
+  "type": "lab",
+  "title": "Exception Handling and Logging",
+  "description": "In this lab, the objective is to learn more about exception handling and logging by making modifications to the `reader.py` file.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Preparation",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/function_basic",
+          "python/str",
+          "python/int",
+          "python/float"
+        ]
+      },
+      {
+        "title": "Catching Exceptions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/logging",
+          "python/enumerate",
+          "python/try_except",
+          "python/raise_errors"
+        ],
+        "solutions": ["reader.py"]
+      },
+      {
+        "title": "Logging",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/modules", "python/logging", "python/function_basic"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "missing.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

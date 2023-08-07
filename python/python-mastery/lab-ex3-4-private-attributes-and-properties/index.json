@@ -1,0 +1,123 @@
+{
+  "type": "lab",
+  "title": "Private Attributes and Properties",
+  "description": "In this lab, you will learn how to encapsulate object internals using private attributes, properties, and slots in the `stock.py` file.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Private attributes",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Properties for computed attributes",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please convert \"cost()\" to a attribute and run the python code in step 2.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/class", "python/method_objects", "python/decorator"],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Enforcing Validation Rules",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please modify the \"shares\" and \"price\" attribute as required and run the python code in step 3.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/attributes",
+          "python/decorator",
+          "python/instance_objects",
+          "python/raise_errors"
+        ],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Adding `__slots__`",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please use \"__slots__\" in the \"stock\" class.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/attributes", "python/private_variables"],
+        "solutions": ["step4_solution.py"]
+      },
+      {
+        "title": "Reconciling Types",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please run the python code in step 5.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/decimal",
+          "python/class",
+          "python/inheritance",
+          "python/raise_errors",
+          "python/int",
+          "python/str"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

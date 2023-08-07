@@ -13,5 +13,5 @@ git commit -m "Add feature 1"
 git checkout master
 git merge --no-ff feature1 
 git log --oneline
-git log --oneline --no-merges  
+git log --oneline --no-merges
 ```

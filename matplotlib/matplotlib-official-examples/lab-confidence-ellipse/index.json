@@ -1,0 +1,166 @@
+{
+  "type": "lab",
+  "title": "Plotting Confidence Ellipses With Matplotlib",
+  "description": "This lab will demonstrate how to plot confidence ellipses of a two-dimensional dataset using Python Matplotlib. A confidence ellipse is a graphical representation of the covariance of a dataset, showing the uncertainty of the estimated mean and standard deviation. The ellipses are plotted using the Pearson correlation coefficient.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in confidence-ellipse.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/matplotlib", "python/numpy"]
+      },
+      {
+        "title": "Define the `confidence_ellipse` Function",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to practice coding in confidence-ellipse.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "python/numpy",
+          "numpy/cov",
+          "numpy/sqrt",
+          "numpy/mean",
+          "matplotlib/ellipse",
+          "matplotlib/rotate_deg",
+          "matplotlib/transform",
+          "matplotlib/translate",
+          "matplotlib/xy_scale",
+          "matplotlib/set_transform",
+          "matplotlib/add_patch",
+          "python/raise_errors"
+        ]
+      },
+      {
+        "title": "Define the `get_correlated_dataset` Function",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in confidence-ellipse.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/numpy",
+          "numpy/random",
+          "numpy/dot",
+          "numpy/array_slicing",
+          "numpy/array_operation"
+        ]
+      },
+      {
+        "title": "Plotting Positive, Negative, and Weak Correlations",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in confidence-ellipse.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/scatter",
+          "matplotlib/hv_axline",
+          "matplotlib/title",
+          "matplotlib/show",
+          "numpy/random",
+          "python/zip"
+        ]
+      },
+      {
+        "title": "Plotting Different Number of Standard Deviations",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in confidence-ellipse.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/hv_axline",
+          "matplotlib/scatter",
+          "matplotlib/title",
+          "matplotlib/legend",
+          "matplotlib/show"
+        ]
+      },
+      {
+        "title": "Using Keyword Arguments",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in confidence-ellipse.ipynb",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/matplotlib",
+          "matplotlib/sub_plot",
+          "matplotlib/hv_axline",
+          "matplotlib/scatter",
+          "matplotlib/title",
+          "matplotlib/show"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "confidence-ellipse.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huduo0812"],
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
+    "repo": "https://github.com/matplotlib/matplotlib"
+  }
+}

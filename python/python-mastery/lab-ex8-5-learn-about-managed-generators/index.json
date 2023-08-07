@@ -1,0 +1,93 @@
+{
+  "type": "lab",
+  "title": "Learn About Managed Generators",
+  "description": "In this lab, we will learn about managed generators and how they can be used in advanced applications where generators are driven in unusual ways.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Generators as tasks",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/collections",
+          "python/while_loop",
+          "python/next",
+          "python/try_except",
+          "python/yield_values"
+        ],
+        "solutions": ["multitask.py"]
+      },
+      {
+        "title": "Generators as Tasks Serving Network Connections",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/socket",
+          "python/select",
+          "python/collections",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/dict",
+          "python/try_except",
+          "python/raise_errors",
+          "python/while_loop",
+          "python/yield_values",
+          "python/b_string",
+          "python/print",
+          "linux/telnet",
+          "linux/nc"
+        ],
+        "solutions": ["server.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "multitask.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "server.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

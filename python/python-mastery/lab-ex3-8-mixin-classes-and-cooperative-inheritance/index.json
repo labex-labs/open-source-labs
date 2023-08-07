@@ -1,0 +1,122 @@
+{
+  "type": "lab",
+  "title": "Mixin Classes and Cooperative Inheritance",
+  "description": "In this lab, we will be learning about mixin classes and cooperative inheritance in order to modify the `tableformat.py` file.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "The Trouble with Column Formatting",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please execute the python code in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/class",
+          "python/inheritance",
+          "python/instance_objects",
+          "python/method_objects",
+          "python/attributes",
+          "python/super",
+          "python/zip",
+          "python/list",
+          "python/list_comprehension"
+        ]
+      },
+      {
+        "title": "Going Sideways",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please implement the \"ColumnFormatMixin\" and \"UpperHeadersMixin\" classes in the \"tableformat.py\" file and run the python code in step 2.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/class",
+          "python/method_objects",
+          "python/attributes",
+          "python/super",
+          "python/zip",
+          "python/list",
+          "python/list_comprehension"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Making it Sane",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please modify the \"create_formatter()\" function in the \"tableformat.py\" file as required and execute the python code in step 3.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/class",
+          "python/inheritance",
+          "python/if_else",
+          "python/list"
+        ],
+        "solutions": ["step3_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "tableformat.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

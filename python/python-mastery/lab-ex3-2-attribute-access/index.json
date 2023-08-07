@@ -1,0 +1,121 @@
+{
+  "type": "lab",
+  "title": "Attribute Access",
+  "description": "In this lab, we will learn about attribute access, how to use getattr(), setattr(), and related functions, and how to experiment with bound methods.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "The Three Operations",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please run the python code in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/class", "python/del", "python/attributes"]
+      },
+      {
+        "title": "Using getattr()",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please run the python code in step 2.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/list",
+          "python/attributes",
+          "python/for_loop",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Table Output",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please create the \"tableformat.py\" file and implement the \"print_table()\" function.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/attributes",
+          "python/string",
+          "python/len",
+          "python/print",
+          "python/for_loop"
+        ],
+        "solutions": ["tableformat.py"]
+      },
+      {
+        "title": "Bound Methods",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please run the python code in step 4.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/attributes"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

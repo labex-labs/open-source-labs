@@ -1,0 +1,76 @@
+{
+  "type": "lab",
+  "title": "Run a Small Program",
+  "description": "In this lab, the objectives are to ensure that Python is correctly installed on your machine, start the interactive interpreter, and create, edit, and run a small program. Additionally, a file named `art.py` will be created.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Launch Python",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please use the \"print\" statement to output \"Hello World\".",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/print"]
+      },
+      {
+        "title": "Some Generative Art",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please write the python code from step 2 into \"art.py\".",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/sys",
+          "python/random",
+          "python/range",
+          "python/string",
+          "python/print",
+          "python/len",
+          "python/raise_errors",
+          "python/int",
+          "python/function_basic"
+        ],
+        "solutions": ["art.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

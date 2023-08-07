@@ -1,0 +1,196 @@
+{
+  "type": "lab",
+  "title": "Iterate Like a Pro",
+  "description": "In this lab, we will focus on iteration and explore various common iteration idioms in Python.",
+  "difficulty": "Beginner",
+  "time": 35,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Setting up some data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please grab a few lines of data from the CSV file.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/open",
+          "python/next",
+          "python/list",
+          "python/pprint"
+        ]
+      },
+      {
+        "title": "Basic Iteration and Unpacking",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please execute the python program statement in step 2.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/collections",
+          "python/for_loop",
+          "python/list",
+          "python/print",
+          "python/string"
+        ]
+      },
+      {
+        "title": "Counting with enumerate()",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions in step 3 to use the \"enumerate()\" function.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/enumerate", "python/for_loop", "python/print"]
+      },
+      {
+        "title": "Using the zip() function",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions in step 4 to use the \"zip()\" function.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/zip",
+          "python/dict",
+          "python/for_loop",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Generator Expressions",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please execute the python program statement in step 5.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/next",
+          "python/list_comprehension",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/yield_values",
+          "python/for_loop",
+          "python/print"
+        ]
+      },
+      {
+        "title": "Generator Expressions and Reduction Functions",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please execute the python program statement in step 6.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/sum",
+          "python/min",
+          "python/any",
+          "python/all",
+          "python/tuple",
+          "python/str",
+          "python/list_comprehension"
+        ]
+      },
+      {
+        "title": "Saving a lot of memory",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "Please execute the python program statement in step 7.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/tracemalloc",
+          "python/list_comprehension",
+          "python/lambda_function",
+          "python/csv",
+          "python/open",
+          "python/next",
+          "python/zip",
+          "python/dict",
+          "python/max",
+          "python/int"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "readport.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "readrides.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "ctabus.csv.zip",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

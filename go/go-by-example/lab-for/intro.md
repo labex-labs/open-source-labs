@@ -1,3 +1,3 @@
-# Golang Challenge: `for`
+# `for`
 
-This challenge aims to test your understanding of the `for` loop in Golang.
+This lab aims to test your understanding of the `for` loop in Golang.

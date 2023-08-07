@@ -1,0 +1,127 @@
+{
+  "type": "lab",
+  "title": "Different Ways of Representing Records",
+  "description": "In this lab, we will explore different options for representing data structures, with a focus on memory efficiency and effectiveness, to aid in data analysis using Python.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Stuck on the bus",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please use Python to view a few lines of data in the file \"ctabus.csv\".",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/open", "python/next"]
+      },
+      {
+        "title": "Basic memory use of text",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the memory usage.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/tracemalloc", "python/open", "python/len"]
+      },
+      {
+        "title": "A List of Tuples",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please read the entire file into a list of tuples using the \"csv\" module and check the memory usage.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/tracemalloc",
+          "python/with_statement",
+          "python/open",
+          "python/next",
+          "python/int",
+          "python/tuple",
+          "python/len",
+          "python/print",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Memory Use of Other Data Structures",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please use each of these data structures to represent a single row of data. Then, find out the resulting memory use of each option.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/tracemalloc",
+          "python/tuple",
+          "python/dict",
+          "python/with_statement",
+          "python/open",
+          "python/int",
+          "python/next",
+          "python/class",
+          "python/print",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": ["step4_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "readrides.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "ctabus.csv.zip",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}
