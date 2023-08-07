@@ -2,8 +2,8 @@
 
 Invoking a method is a two-step process.
 
-1. Lookup: The `.` operator
-2. Method call: The `()` operator
+1.  Lookup: The `.` operator
+2.  Method call: The `()` operator
 
 ```python
 >>> s = Stock('GOOG',100,490.10)

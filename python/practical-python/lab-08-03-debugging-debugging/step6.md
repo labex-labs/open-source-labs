@@ -6,9 +6,7 @@ You can also run an entire program under debugger.
 $ python3 -m pdb someprogram.py
 ```
 
-It will automatically enter the debugger before the first
-statement. Allowing you to set breakpoints and change the
-configuration.
+It will automatically enter the debugger before the first statement. Allowing you to set breakpoints and change the configuration.
 
 Common debugger commands:
 

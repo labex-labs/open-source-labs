@@ -11,8 +11,7 @@ def some_function():
 
 This starts the debugger at the `breakpoint()` call.
 
-In earlier Python versions, you did this. You'll sometimes see this
-mentioned in other debugging guides.
+In earlier Python versions, you did this. You'll sometimes see this mentioned in other debugging guides.
 
 ```python
 import pdb

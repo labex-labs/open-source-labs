@@ -1,7 +1,6 @@
 # `finally` statement
 
-It specifies code that must run regardless of whether or not an
-exception occurs.
+It specifies code that must run regardless of whether or not an exception occurs.
 
 ```python
 lock = Lock()

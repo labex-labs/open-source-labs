@@ -1,7 +1,6 @@
 # Exercise 2.10: Printing a formatted table
 
-Redo the for-loop in Exercise 2.9, but change the print statement to
-format the tuples.
+Redo the for-loop in Exercise 2.9, but change the print statement to format the tuples.
 
 ```python
 >>> for r in report:
@@ -29,5 +28,4 @@ You can also expand the values and use f-strings. For example:
 >>>
 ```
 
-Take the above statements and add them to your `report.py` program.
-Have your program take the output of the `make_report()` function and print a nicely formatted table as shown.
+Take the above statements and add them to your `report.py` program. Have your program take the output of the `make_report()` function and print a nicely formatted table as shown.

@@ -10,8 +10,7 @@ Compute the total cost of the portfolio using a single Python statement.
 >>>
 ```
 
-After you have done that, show how you can compute the current value
-of the portfolio using a single statement.
+After you have done that, show how you can compute the current value of the portfolio using a single statement.
 
 ```python
 >>> value = sum([ s['shares'] * prices[s['name']] for s in portfolio ])
@@ -20,8 +19,7 @@ of the portfolio using a single statement.
 >>>
 ```
 
-Both of the above operations are an example of a map-reduction. The
-list comprehension is mapping an operation across the list.
+Both of the above operations are an example of a map-reduction. The list comprehension is mapping an operation across the list.
 
 ```python
 >>> [ s['shares'] * s['price'] for s in portfolio ]

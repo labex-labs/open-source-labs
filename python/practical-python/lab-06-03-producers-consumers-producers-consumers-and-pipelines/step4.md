@@ -1,7 +1,6 @@
 # Exercise 6.9: Setting up a more complex pipeline
 
-Take the pipelining idea a few steps further by performing
-more actions.
+Take the pipelining idea a few steps further by performing more actions.
 
 ```python
 >>> from follow import follow
@@ -18,6 +17,4 @@ more actions.
 ...
 ```
 
-Well, that's interesting. What you're seeing here is that the output of the
-`follow()` function has been piped into the `csv.reader()` function and we're
-now getting a sequence of split rows.
+Well, that's interesting. What you're seeing here is that the output of the `follow()` function has been piped into the `csv.reader()` function and we're now getting a sequence of split rows.

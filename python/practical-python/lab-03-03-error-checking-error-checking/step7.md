@@ -9,5 +9,4 @@ except Exception:       # DANGER. See below
     print('An error occurred')
 ```
 
-In general, writing code like that is a bad idea because you'll have
-no idea why it failed.
+In general, writing code like that is a bad idea because you'll have no idea why it failed.

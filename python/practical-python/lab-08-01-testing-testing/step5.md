@@ -19,5 +19,4 @@ self.assertAlmostEqual(x,y,places)
 self.assertRaises(exc, callable, arg1, arg2, ...)
 ```
 
-This is not an exhaustive list. There are other assertions in the
-module.
+This is not an exhaustive list. There are other assertions in the module.

@@ -1,12 +1,8 @@
 # Exercise 6.4: A Simple Generator
 
-If you ever find yourself wanting to customize iteration, you should
-always think generator functions. They're easy to write---make
-a function that carries out the desired iteration logic and use `yield`
-to emit values.
+If you ever find yourself wanting to customize iteration, you should always think generator functions. They're easy to write---make a function that carries out the desired iteration logic and use `yield` to emit values.
 
-For example, try this generator that searches a file for lines containing
-a matching substring:
+For example, try this generator that searches a file for lines containing a matching substring:
 
 ```python
 >>> def filematch(filename, substr):
@@ -34,6 +30,4 @@ name,shares,price
 >>>
 ```
 
-This is kind of interesting--the idea that you can hide a bunch of
-custom processing in a function and use it to feed a for-loop.
-The next example looks at a more unusual case.
+This is kind of interesting--the idea that you can hide a bunch of custom processing in a function and use it to feed a for-loop. The next example looks at a more unusual case.

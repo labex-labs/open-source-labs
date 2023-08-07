@@ -1,7 +1,6 @@
 # Exercise 3.16: Making Scripts
 
-Modify the `report.py` and `pcost.py` programs so that they can
-execute as a script on the command line:
+Modify the `report.py` and `pcost.py` programs so that they can execute as a script on the command line:
 
 ```bash
 bash $ python3 report.py Data/portfolio.csv Data/prices.csv

@@ -1,7 +1,6 @@
 # format() method
 
-There is a method `format()` that can apply formatting to arguments or
-keyword arguments.
+There is a method `format()` that can apply formatting to arguments or keyword arguments.
 
 ```python
 >>> '{name:>10s} {shares:10d} {price:10.2f}'.format(name='IBM', shares=100, price=91.1)

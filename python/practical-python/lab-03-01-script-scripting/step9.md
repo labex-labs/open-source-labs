@@ -1,8 +1,6 @@
 # Doc Strings
 
-It's good practice to include documentation in the form of a
-doc-string. Doc-strings are strings written immediately after the
-name of the function. They feed `help()`, IDEs and other tools.
+It's good practice to include documentation in the form of a doc-string. Doc-strings are strings written immediately after the name of the function. They feed `help()`, IDEs and other tools.
 
 ```python
 def read_prices(filename):
@@ -17,7 +15,4 @@ def read_prices(filename):
     return prices
 ```
 
-A good practice for doc strings is to write a short one sentence
-summary of what the function does. If more information is needed,
-include a short example of usage along with a more detailed
-description of the arguments.
+A good practice for doc strings is to write a short one sentence summary of what the function does. If more information is needed, include a short example of usage along with a more detailed description of the arguments.

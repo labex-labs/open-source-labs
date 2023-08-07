@@ -1,8 +1,6 @@
 # Dicts and Objects
 
-User defined objects also use dictionaries for both instance data and
-classes. In fact, the entire object system is mostly an extra layer
-that's put on top of dictionaries.
+User defined objects also use dictionaries for both instance data and classes. In fact, the entire object system is mostly an extra layer that's put on top of dictionaries.
 
 A dictionary holds the instance data, `__dict__`.
 
@@ -39,5 +37,4 @@ s = Stock('GOOG', 100, 490.1)     # {'name' : 'GOOG','shares' : 100, 'price': 49
 t = Stock('AAPL', 50, 123.45)     # {'name' : 'AAPL','shares' : 50, 'price': 123.45 }
 ```
 
-If you created 100 instances of some class, there are 100 dictionaries
-sitting around holding data.
+If you created 100 instances of some class, there are 100 dictionaries sitting around holding data.

@@ -16,5 +16,4 @@ def parse(f,types=None,names=None,delimiter=None):
         log.debug("Reason : %s", e)
 ```
 
-The code is modified to issue warning messages or a special `Logger`
-object. The one created with `logging.getLogger(__name__)`.
+The code is modified to issue warning messages or a special `Logger` object. The one created with `logging.getLogger(__name__)`.

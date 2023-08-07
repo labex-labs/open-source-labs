@@ -13,5 +13,4 @@ for x, y in points:
     #            ...
 ```
 
-When using multiple variables, each tuple is _unpacked_ into a set of iteration variables.
-The number of variables must match the number of items in each tuple.
+When using multiple variables, each tuple is _unpacked_ into a set of iteration variables. The number of variables must match the number of items in each tuple.

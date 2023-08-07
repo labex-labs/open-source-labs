@@ -1,7 +1,6 @@
 # String Mutability
 
-Strings are "immutable" or read-only.
-Once created, the value can't be changed.
+Strings are "immutable" or read-only. Once created, the value can't be changed.
 
 ```python
 >>> s = 'Hello World'

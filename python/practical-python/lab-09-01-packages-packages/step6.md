@@ -1,7 +1,6 @@
 # Relative Imports
 
-Instead of directly using the package name,
-you can use `.` to refer to the current package.
+Instead of directly using the package name, you can use `.` to refer to the current package.
 
 ```python
 # report.py

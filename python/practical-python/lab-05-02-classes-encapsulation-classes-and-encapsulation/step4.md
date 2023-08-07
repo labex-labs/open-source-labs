@@ -8,8 +8,7 @@ class Person(object):
         self._name = 0
 ```
 
-As mentioned earlier, this is only a programming style. You can still
-access and change it.
+As mentioned earlier, this is only a programming style. You can still access and change it.
 
 ```python
 >>> p = Person('Guido')
@@ -19,6 +18,4 @@ access and change it.
 >>>
 ```
 
-As a general rule, any name with a leading `_` is considered internal implementation
-whether it's a variable, a function, or a module name. If you find yourself using such
-names directly, you're probably doing something wrong. Look for higher level functionality.
+As a general rule, any name with a leading `_` is considered internal implementation whether it's a variable, a function, or a module name. If you find yourself using such names directly, you're probably doing something wrong. Look for higher level functionality.

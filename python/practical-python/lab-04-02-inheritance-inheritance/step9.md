@@ -19,5 +19,4 @@ True
 >>>
 ```
 
-_Important: Ideally, any code that worked with instances of the parent
-class will also work with instances of the child class._
+_Important: Ideally, any code that worked with instances of the parent class will also work with instances of the child class._

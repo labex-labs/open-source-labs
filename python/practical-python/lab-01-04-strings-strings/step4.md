@@ -1,7 +1,6 @@
 # String Indexing
 
-Strings work like an array for accessing individual characters. You use an integer index, starting at 0.
-Negative indices specify a position relative to the end of the string.
+Strings work like an array for accessing individual characters. You use an integer index, starting at 0. Negative indices specify a position relative to the end of the string.
 
 ```python
 a = 'Hello world'

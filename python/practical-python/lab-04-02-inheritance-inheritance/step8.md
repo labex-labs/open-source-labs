@@ -13,10 +13,7 @@ class Rectangle(Shape):
     ...
 ```
 
-Think of a logical hierarchy or taxonomy. However, a more common (and
-practical) usage is related to making reusable or extensible code.
-For example, a framework might define a base class and instruct you
-to customize it.
+Think of a logical hierarchy or taxonomy. However, a more common (and practical) usage is related to making reusable or extensible code. For example, a framework might define a base class and instruct you to customize it.
 
 ```python
 class CustomHandler(TCPHandler):
@@ -25,5 +22,4 @@ class CustomHandler(TCPHandler):
         # Custom processing
 ```
 
-The base class contains some general purpose code.
-Your class inherits and customized specific parts.
+The base class contains some general purpose code. Your class inherits and customized specific parts.

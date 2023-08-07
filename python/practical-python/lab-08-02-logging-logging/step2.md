@@ -1,7 +1,6 @@
 # Exceptions Revisited
 
-In the exercises, we wrote a function `parse()` that looked something
-like this:
+In the exercises, we wrote a function `parse()` that looked something like this:
 
 ```python
 # fileparse.py

@@ -21,9 +21,7 @@ For example:
 
 A generator is any function that uses the `yield` statement.
 
-The behavior of generators is different than a normal function.
-Calling a generator function creates a generator object. It does not
-immediately execute the function.
+The behavior of generators is different than a normal function. Calling a generator function creates a generator object. It does not immediately execute the function.
 
 ```python
 def countdown(n):
@@ -55,8 +53,7 @@ Counting down from 10
 >>>
 ```
 
-`yield` produces a value, but suspends the function execution.
-The function resumes on next call to `__next__()`.
+`yield` produces a value, but suspends the function execution. The function resumes on next call to `__next__()`.
 
 ```python
 >>> x.__next__()
@@ -76,6 +73,4 @@ File "<stdin>", line 1, in ? StopIteration
 >>>
 ```
 
-_Observation: A generator function implements the same low-level
-protocol that the for statements uses on lists, tuples, dicts, files,
-etc._
+_Observation: A generator function implements the same low-level protocol that the for statements uses on lists, tuples, dicts, files, etc._

@@ -13,5 +13,4 @@ Try a few simple list comprehensions just to become familiar with the syntax.
 >>>
 ```
 
-Notice how the list comprehensions are creating a new list with the
-data suitably transformed or filtered.
+Notice how the list comprehensions are creating a new list with the data suitably transformed or filtered.

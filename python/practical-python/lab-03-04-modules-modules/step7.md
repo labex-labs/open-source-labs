@@ -11,5 +11,4 @@ def rectangular(r, theta):
     return x, y
 ```
 
-This allows parts of a module to be used without having to type the module prefix.
-It's useful for frequently used names.
+This allows parts of a module to be used without having to type the module prefix. It's useful for frequently used names.

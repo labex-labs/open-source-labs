@@ -1,15 +1,13 @@
 # Exercise 7.2: Passing tuple and dicts as arguments
 
-Suppose you read some data from a file and obtained a tuple such as
-this:
+Suppose you read some data from a file and obtained a tuple such as this:
 
 ```python
 >>> data = ('GOOG', 100, 490.1)
 >>>
 ```
 
-Now, suppose you wanted to create a `Stock` object from this
-data. If you try to pass `data` directly, it doesn't work:
+Now, suppose you wanted to create a `Stock` object from this data. If you try to pass `data` directly, it doesn't work:
 
 ```python
 >>> from stock import Stock

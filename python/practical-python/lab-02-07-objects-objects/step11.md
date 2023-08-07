@@ -9,8 +9,7 @@ name,shares,price
 ...
 ```
 
-In previous code, we used the `csv` module to read the file, but still
-had to perform manual type conversions. For example:
+In previous code, we used the `csv` module to read the file, but still had to perform manual type conversions. For example:
 
 ```python
 for row in rows:
@@ -19,21 +18,16 @@ for row in rows:
     price  = float(row[2])
 ```
 
-This kind of conversion can also be performed in a more clever manner
-using some list basic operations.
+This kind of conversion can also be performed in a more clever manner using some list basic operations.
 
-Make a Python list that contains the names of the conversion functions
-you would use to convert each column into the appropriate type:
+Make a Python list that contains the names of the conversion functions you would use to convert each column into the appropriate type:
 
 ```python
 >>> types = [str, int, float]
 >>>
 ```
 
-The reason you can even create this list is that everything in Python
-is _first-class_. So, if you want to have a list of functions, that’s
-fine. The items in the list you created are functions for converting
-a value `x` into a given type (e.g., `str(x)`, `int(x)`, `float(x)`).
+The reason you can even create this list is that everything in Python is _first-class_. So, if you want to have a list of functions, that's fine. The items in the list you created are functions for converting a value `x` into a given type (e.g., `str(x)`, `int(x)`, `float(x)`).
 
 Now, read a row of data from the above file:
 
@@ -48,8 +42,7 @@ Now, read a row of data from the above file:
 >>>
 ```
 
-As noted, this row isn’t enough to do calculations because the types
-are wrong. For example:
+As noted, this row isn't enough to do calculations because the types are wrong. For example:
 
 ```python
 >>> row[1] * row[2]
@@ -59,8 +52,7 @@ TypeError: can't multiply sequence by non-int of type 'str'
 >>>
 ```
 
-However, maybe the data can be paired up with the types you specified
-in `types`. For example:
+However, maybe the data can be paired up with the types you specified in `types`. For example:
 
 ```python
 >>> types[1]
@@ -103,11 +95,9 @@ Zip the column types with the fields and look at the result:
 >>>
 ```
 
-You will notice that this has paired a type conversion with a
-value. For example, `int` is paired with the value `'100'`.
+You will notice that this has paired a type conversion with a value. For example, `int` is paired with the value `'100'`.
 
-The zipped list is useful if you want to perform conversions on all of
-the values, one after the other. Try this:
+The zipped list is useful if you want to perform conversions on all of the values, one after the other. Try this:
 
 ```python
 >>> converted = []
@@ -121,11 +111,7 @@ the values, one after the other. Try this:
 >>>
 ```
 
-Make sure you understand what’s happening in the above code. In the
-loop, the `func` variable is one of the type conversion functions
-(e.g., `str`, `int`, etc.) and the `val` variable is one of the values
-like `'AA'`, `'100'`. The expression `func(val)` is converting a
-value (kind of like a type cast).
+Make sure you understand what's happening in the above code. In the loop, the `func` variable is one of the type conversion functions (e.g., `str`, `int`, etc.) and the `val` variable is one of the values like `'AA'`, `'100'`. The expression `func(val)` is converting a value (kind of like a type cast).
 
 The above code can be compressed into a single list comprehension.
 

@@ -15,13 +15,9 @@ def read_prices(filename: str) -> dict:
     return prices
 ```
 
-The hints do nothing operationally. They are purely informational.
-However, they may be used by IDEs, code checkers, and other tools
-to do more.
+The hints do nothing operationally. They are purely informational. However, they may be used by IDEs, code checkers, and other tools to do more.
 
-In section 2, you wrote a program called `report.py` that printed out
-a report showing the performance of a stock portfolio. This program
-consisted of some functions. For example:
+In section 2, you wrote a program called `report.py` that printed out a report showing the performance of a stock portfolio. This program consisted of some functions. For example:
 
 ```python
 # report.py
@@ -49,9 +45,7 @@ def read_portfolio(filename):
 ...
 ```
 
-However, there were also portions of the program that just performed a
-series of scripted calculations. This code appeared near the end of
-the program. For example:
+However, there were also portions of the program that just performed a series of scripted calculations. This code appeared near the end of the program. For example:
 
 ```python
 ...
@@ -66,5 +60,4 @@ for row in report:
 ...
 ```
 
-In this exercise, we’re going take this program and organize it a
-little more strongly around the use of functions.
+In this exercise, we're going take this program and organize it a little more strongly around the use of functions.

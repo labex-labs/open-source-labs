@@ -1,13 +1,8 @@
 # Exercise 4.4: Using your class
 
-Modify the `read_portfolio()` function in the `report.py` program so
-that it reads a portfolio into a list of `Stock` instances as just
-shown in Exercise 4.3. Once you have done that, fix all of the code
-in `report.py` and `pcost.py` so that it works with `Stock` instances
-instead of dictionaries.
+Modify the `read_portfolio()` function in the `report.py` program so that it reads a portfolio into a list of `Stock` instances as just shown in Exercise 4.3. Once you have done that, fix all of the code in `report.py` and `pcost.py` so that it works with `Stock` instances instead of dictionaries.
 
-Hint: You should not have to make major changes to the code. You will mainly
-be changing dictionary access such as `s['shares']` into `s.shares`.
+Hint: You should not have to make major changes to the code. You will mainly be changing dictionary access such as `s['shares']` into `s.shares`.
 
 You should be able to run your functions the same as before:
 

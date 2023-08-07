@@ -1,7 +1,6 @@
 # Default Arguments
 
-Sometimes you want an argument to be optional. If so, assign a default value
-in the function definition.
+Sometimes you want an argument to be optional. If so, assign a default value in the function definition.
 
 ```python
 def read_prices(filename, debug=False):

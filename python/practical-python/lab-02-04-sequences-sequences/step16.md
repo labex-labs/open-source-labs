@@ -20,8 +20,7 @@ dict_items([('GOOG', 490.1), ('AA', 23.45), ('IBM', 91.1), ('MSFT', 34.23)])
 >>>
 ```
 
-However, what if you wanted to get a list of `(value, key)` pairs instead?
-_Hint: use `zip()`._
+However, what if you wanted to get a list of `(value, key)` pairs instead? _Hint: use `zip()`._
 
 ```python
 >>> pricelist = list(zip(prices.values(),prices.keys()))
@@ -30,8 +29,7 @@ _Hint: use `zip()`._
 >>>
 ```
 
-Why would you do this? For one, it allows you to perform certain kinds
-of data processing on the dictionary data.
+Why would you do this? For one, it allows you to perform certain kinds of data processing on the dictionary data.
 
 ```python
 >>> min(pricelist)
@@ -43,18 +41,11 @@ of data processing on the dictionary data.
 >>>
 ```
 
-This also illustrates an important feature of tuples. When used in
-comparisons, tuples are compared element-by-element starting with the
-first item. Similar to how strings are compared
-character-by-character.
+This also illustrates an important feature of tuples. When used in comparisons, tuples are compared element-by-element starting with the first item. Similar to how strings are compared character-by-character.
 
-`zip()` is often used in situations like this where you need to pair
-up data from different places. For example, pairing up the column
-names with column values in order to make a dictionary of named
-values.
+`zip()` is often used in situations like this where you need to pair up data from different places. For example, pairing up the column names with column values in order to make a dictionary of named values.
 
-Note that `zip()` is not limited to pairs. For example, you can use it
-with any number of input lists:
+Note that `zip()` is not limited to pairs. For example, you can use it with any number of input lists:
 
 ```python
 >>> a = [1, 2, 3, 4]

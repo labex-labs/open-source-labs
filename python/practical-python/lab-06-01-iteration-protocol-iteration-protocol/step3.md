@@ -1,7 +1,6 @@
 # Supporting Iteration
 
-Knowing about iteration is useful if you want to add it to your own objects.
-For example, making a custom container.
+Knowing about iteration is useful if you want to add it to your own objects. For example, making a custom container.
 
 ```python
 class Portfolio:

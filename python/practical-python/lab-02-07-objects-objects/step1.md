@@ -9,5 +9,4 @@ s.append(value)   # Appending to a list
 d['key'] = value  # Adding to a dictionary
 ```
 
-_A caution: assignment operations **never make a copy** of the value being assigned._
-All assignments are merely reference copies (or pointer copies if you prefer).
+_A caution: assignment operations **never make a copy** of the value being assigned._ All assignments are merely reference copies (or pointer copies if you prefer).

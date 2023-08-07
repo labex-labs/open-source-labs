@@ -1,13 +1,8 @@
 # Commentary
 
-As you start to experiment with the interpreter, you often want to
-know more about the operations supported by different objects. For
-example, how do you find out what operations are available on a
-string?
+As you start to experiment with the interpreter, you often want to know more about the operations supported by different objects. For example, how do you find out what operations are available on a string?
 
-Depending on your Python environment, you might be able to see a list
-of available methods via tab-completion. For example, try typing
-this:
+Depending on your Python environment, you might be able to see a list of available methods via tab-completion. For example, try typing this:
 
 ```python
 >>> s = 'hello world'
@@ -15,8 +10,7 @@ this:
 >>>
 ```
 
-If hitting tab doesn't do anything, you can fall back to the
-builtin-in `dir()` function. For example:
+If hitting tab doesn't do anything, you can fall back to the builtin-in `dir()` function. For example:
 
 ```python
 >>> s = 'hello'
@@ -30,8 +24,7 @@ builtin-in `dir()` function. For example:
 >>>
 ```
 
-`dir()` produces a list of all operations that can appear after the `(.)`.
-Use the `help()` command to get more information about a specific operation:
+`dir()` produces a list of all operations that can appear after the `(.)`. Use the `help()` command to get more information about a specific operation:
 
 ```python
 >>> help(s.upper)

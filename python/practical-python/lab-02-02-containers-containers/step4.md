@@ -1,7 +1,6 @@
 # Dicts as a Container
 
-Dictionaries are useful if you want fast random lookups (by key name). For
-example, a dictionary of stock prices:
+Dictionaries are useful if you want fast random lookups (by key name). For example, a dictionary of stock prices:
 
 ```python
 prices = {

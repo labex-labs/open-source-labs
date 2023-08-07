@@ -12,5 +12,4 @@ They are created by calling the class as a function.
 
 `a` and `b` are instances of `Player`.
 
-_Emphasize: The class statement is just the definition (it does
-nothing by itself). Similar to a function definition._
+_Emphasize: The class statement is just the definition (it does nothing by itself). Similar to a function definition._

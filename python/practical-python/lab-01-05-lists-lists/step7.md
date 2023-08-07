@@ -51,5 +51,4 @@ You can reassign a portion of a list to another list. For example:
 >>>
 ```
 
-When you do this, the list on the left-hand-side (`symlist`) will be resized as appropriate to make the right-hand-side (`mysyms`) fit.
-For instance, in the above example, the last two items of `symlist` got replaced by the single item in the list `mysyms`.
+When you do this, the list on the left-hand-side (`symlist`) will be resized as appropriate to make the right-hand-side (`mysyms`) fit. For instance, in the above example, the last two items of `symlist` got replaced by the single item in the list `mysyms`.

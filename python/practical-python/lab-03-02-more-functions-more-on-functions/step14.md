@@ -1,9 +1,6 @@
 # Exercise 3.4: Building a Column Selector
 
-In many cases, you’re only interested in selected columns from a CSV
-file, not all of the data. Modify the `parse_csv()` function so that
-it optionally allows user-specified columns to be picked out as
-follows:
+In many cases, you're only interested in selected columns from a CSV file, not all of the data. Modify the `parse_csv()` function so that it optionally allows user-specified columns to be picked out as follows:
 
 ```python
 >>> # Read all of the data
@@ -18,8 +15,7 @@ follows:
 >>>
 ```
 
-An example of a column selector was given in [Exercise 2.23](../02_Working_with_data/06_List_comprehension.md).
-However, here’s one way to do it:
+An example of a column selector was given in [Exercise 2.23](../02_Working_with_data/06_List_comprehension.md). However, here's one way to do it:
 
 ```python
 # fileparse.py
@@ -58,9 +54,7 @@ def parse_csv(filename, select=None):
     return records
 ```
 
-There are a number of tricky bits to this part. Probably the most
-important one is the mapping of the column selections to row indices.
-For example, suppose the input file had the following headers:
+There are a number of tricky bits to this part. Probably the most important one is the mapping of the column selections to row indices. For example, suppose the input file had the following headers:
 
 ```python
 >>> headers = ['name', 'date', 'time', 'shares', 'price']
@@ -74,8 +68,7 @@ Now, suppose the selected columns were as follows:
 >>>
 ```
 
-To perform the proper selection, you have to map the selected column names to column indices in the file.
-That’s what this step is doing:
+To perform the proper selection, you have to map the selected column names to column indices in the file. That's what this step is doing:
 
 ```python
 >>> indices = [headers.index(colname) for colname in select ]
@@ -84,8 +77,7 @@ That’s what this step is doing:
 >>>
 ```
 
-In other words, "name" is column 0 and "shares" is column 3.
-When you read a row of data from the file, the indices are used to filter it:
+In other words, "name" is column 0 and "shares" is column 3. When you read a row of data from the file, the indices are used to filter it:
 
 ```python
 >>> row = ['AA', '6/11/2007', '9:50am', '100', '32.20' ]

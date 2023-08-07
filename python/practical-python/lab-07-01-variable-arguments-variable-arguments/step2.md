@@ -1,7 +1,6 @@
 # Keyword variable arguments (\*\*kwargs)
 
-A function can also accept any number of keyword arguments.
-For example:
+A function can also accept any number of keyword arguments. For example:
 
 ```python
 def f(x, y, **kwargs):

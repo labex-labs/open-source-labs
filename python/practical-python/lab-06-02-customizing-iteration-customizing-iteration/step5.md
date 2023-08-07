@@ -1,13 +1,8 @@
 # Exercise 6.6: Using a generator to produce data
 
-If you look at the code in Exercise 6.5, the first part of the code is producing
-lines of data whereas the statements at the end of the `while` loop are consuming
-the data. A major feature of generator functions is that you can move all
-of the data production code into a reusable function.
+If you look at the code in Exercise 6.5, the first part of the code is producing lines of data whereas the statements at the end of the `while` loop are consuming the data. A major feature of generator functions is that you can move all of the data production code into a reusable function.
 
-Modify the code in Exercise 6.5 so that the file-reading is performed by
-a generator function `follow(filename)`. Make it so the following code
-works:
+Modify the code in Exercise 6.5 so that the file-reading is performed by a generator function `follow(filename)`. Make it so the following code works:
 
 ```python
 >>> for line in follow('Data/stocklog.csv'):

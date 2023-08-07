@@ -1,7 +1,6 @@
 # Lists as a Container
 
-Use a list when the order of the data matters. Remember that lists can hold any kind of object.
-For example, a list of tuples.
+Use a list when the order of the data matters. Remember that lists can hold any kind of object. For example, a list of tuples.
 
 ```python
 portfolio = [

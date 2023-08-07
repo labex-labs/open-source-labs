@@ -13,15 +13,9 @@ class Child(Mother, Father):
     ...
 ```
 
-The class `Child` inherits features from both parents. There are some
-rather tricky details. Don't do it unless you know what you are doing.
-Some further information will be given in the next section, but we're not
-going to utilize multiple inheritance further in this course.
+The class `Child` inherits features from both parents. There are some rather tricky details. Don't do it unless you know what you are doing. Some further information will be given in the next section, but we're not going to utilize multiple inheritance further in this course.
 
-A major use of inheritance is in writing code that's meant to be
-extended or customized in various ways--especially in libraries or
-frameworks. To illustrate, consider the `print_report()` function
-in your `report.py` program. It should look something like this:
+A major use of inheritance is in writing code that's meant to be extended or customized in various ways--especially in libraries or frameworks. To illustrate, consider the `print_report()` function in your `report.py` program. It should look something like this:
 
 ```python
 def print_report(reportdata):

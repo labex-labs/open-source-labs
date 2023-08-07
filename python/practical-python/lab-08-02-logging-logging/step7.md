@@ -1,7 +1,6 @@
 # Exercise 8.2: Adding logging to a module
 
-In `fileparse.py`, there is some error handling related to
-exceptions caused by bad input. It looks like this:
+In `fileparse.py`, there is some error handling related to exceptions caused by bad input. It looks like this:
 
 ```python
 # fileparse.py
@@ -53,8 +52,7 @@ def parse_csv(lines, select=None, types=None, has_headers=True, delimiter=',', s
     return records
 ```
 
-Notice the print statements that issue diagnostic messages. Replacing those
-prints with logging operations is relatively simple. Change the code like this:
+Notice the print statements that issue diagnostic messages. Replacing those prints with logging operations is relatively simple. Change the code like this:
 
 ```python
 # fileparse.py
@@ -108,8 +106,7 @@ def parse_csv(lines, select=None, types=None, has_headers=True, delimiter=',', s
     return records
 ```
 
-Now that you've made these changes, try using some of your code on
-bad data.
+Now that you've made these changes, try using some of your code on bad data.
 
 ```python
 >>> import report
@@ -119,11 +116,7 @@ Row 7: Bad row: ['IBM', '', '70.44']
 >>>
 ```
 
-If you do nothing, you'll only get logging messages for the `WARNING`
-level and above. The output will look like simple print statements.
-However, if you configure the logging module, you'll get additional
-information about the logging levels, module, and more. Type these
-steps to see that:
+If you do nothing, you'll only get logging messages for the `WARNING` level and above. The output will look like simple print statements. However, if you configure the logging module, you'll get additional information about the logging levels, module, and more. Type these steps to see that:
 
 ```python
 >>> import logging
@@ -134,8 +127,7 @@ WARNING:fileparse:Row 7: Bad row: ['IBM', '', '70.44']
 >>>
 ```
 
-You will notice that you don't see the output from the `log.debug()`
-operation. Type this to change the level.
+You will notice that you don't see the output from the `log.debug()` operation. Type this to change the level.
 
 ```python
 >>> logging.getLogger('fileparse').setLevel(logging.DEBUG)

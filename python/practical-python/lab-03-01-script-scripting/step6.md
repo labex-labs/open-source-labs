@@ -23,5 +23,4 @@ Functions must only be defined prior to actually being _used_ (or called) during
 foo(3)        # foo must be defined already
 ```
 
-Stylistically, it is probably more common to see functions defined in
-a _bottom-up_ fashion.
+Stylistically, it is probably more common to see functions defined in a _bottom-up_ fashion.

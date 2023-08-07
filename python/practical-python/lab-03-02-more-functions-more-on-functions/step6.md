@@ -1,7 +1,6 @@
 # Multiple Return Values
 
-Functions can only return one value. However, a function may return
-multiple values by returning them in a tuple.
+Functions can only return one value. However, a function may return multiple values by returning them in a tuple.
 
 ```python
 def divide(a,b):

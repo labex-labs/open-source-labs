@@ -22,8 +22,7 @@ Calculate the total cost of this holding:
 >>>
 ```
 
-Compare this example with the same calculation involving tuples
-above. Change the number of shares to 75.
+Compare this example with the same calculation involving tuples above. Change the number of shares to 75.
 
 ```python
 >>> d['shares'] = 75
@@ -32,8 +31,7 @@ above. Change the number of shares to 75.
 >>>
 ```
 
-Unlike tuples, dictionaries can be freely modified. Add some
-attributes:
+Unlike tuples, dictionaries can be freely modified. Add some attributes:
 
 ```python
 >>> d['date'] = (6, 11, 2007)

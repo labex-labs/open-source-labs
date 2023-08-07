@@ -1,7 +1,6 @@
 # Use cases
 
-List comprehensions are hugely useful. For example, you can collect values of a specific
-dictionary fields:
+List comprehensions are hugely useful. For example, you can collect values of a specific dictionary fields:
 
 ```python
 stocknames = [s['name'] for s in stocks]

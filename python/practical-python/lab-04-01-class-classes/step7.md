@@ -1,8 +1,6 @@
 # Exercise 4.1: Objects as Data Structures
 
-In section 2 and 3, we worked with data represented as tuples and
-dictionaries. For example, a holding of stock could be represented as
-a tuple like this:
+In section 2 and 3, we worked with data represented as tuples and dictionaries. For example, a holding of stock could be represented as a tuple like this:
 
 ```python
 s = ('GOOG',100,490.10)
@@ -24,12 +22,7 @@ def cost(s):
     return s['shares'] * s['price']
 ```
 
-However, as your program gets large, you might want to create a better
-sense of organization. Thus, another approach for representing data
-would be to define a class. Create a file called `stock.py` and
-define a class `Stock` that represents a single holding of stock.
-Have the instances of `Stock` have `name`, `shares`, and `price`
-attributes. For example:
+However, as your program gets large, you might want to create a better sense of organization. Thus, another approach for representing data would be to define a class. Create a file called `stock.py` and define a class `Stock` that represents a single holding of stock. Have the instances of `Stock` have `name`, `shares`, and `price` attributes. For example:
 
 ```python
 >>> import stock
@@ -62,12 +55,6 @@ Create a few more `Stock` objects and manipulate them. For example:
 >>>
 ```
 
-One thing to emphasize here is that the class `Stock` acts like a
-factory for creating instances of objects. Basically, you call
-it as a function and it creates a new object for you. Also, it must
-be emphasized that each object is distinct---they each have their
-own data that is separate from other objects that have been created.
+One thing to emphasize here is that the class `Stock` acts like a factory for creating instances of objects. Basically, you call it as a function and it creates a new object for you. Also, it must be emphasized that each object is distinct---they each have their own data that is separate from other objects that have been created.
 
-An object defined by a class is somewhat similar to a dictionary--just
-with somewhat different syntax. For example, instead of writing
-`s['name']` or `s['price']`, you now write `s.name` and `s.price`.
+An object defined by a class is somewhat similar to a dictionary--just with somewhat different syntax. For example, instead of writing `s['name']` or `s['price']`, you now write `s.name` and `s.price`.

@@ -19,6 +19,4 @@ with open(filename) as f:
 # File closed
 ```
 
-`with` defines a usage _context_ for a resource. When execution
-leaves that context, resources are released. `with` only works with
-certain objects that have been specifically programmed to support it.
+`with` defines a usage _context_ for a resource. When execution leaves that context, resources are released. `with` only works with certain objects that have been specifically programmed to support it.

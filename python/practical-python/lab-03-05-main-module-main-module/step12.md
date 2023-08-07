@@ -1,7 +1,6 @@
 # Script Template
 
-Finally, here is a common code template for Python programs that run
-as command-line scripts:
+Finally, here is a common code template for Python programs that run as command-line scripts:
 
 ```python
 #!/usr/bin/env python3

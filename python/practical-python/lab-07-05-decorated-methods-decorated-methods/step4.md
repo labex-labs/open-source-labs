@@ -1,7 +1,6 @@
 # Exercise 7.11: Class Methods in Practice
 
-In your `report.py` and `portfolio.py` files, the creation of a `Portfolio`
-object is a bit muddled. For example, the `report.py` program has code like this:
+In your `report.py` and `portfolio.py` files, the creation of a `Portfolio` object is a bit muddled. For example, the `report.py` program has code like this:
 
 ```python
 def read_portfolio(filename, **opts):
@@ -19,8 +18,7 @@ def read_portfolio(filename, **opts):
     return Portfolio(portfolio)
 ```
 
-and the `portfolio.py` file defines `Portfolio()` with an odd initializer
-like this:
+and the `portfolio.py` file defines `Portfolio()` with an odd initializer like this:
 
 ```python
 class Portfolio:
@@ -29,10 +27,7 @@ class Portfolio:
     ...
 ```
 
-Frankly, the chain of responsibility is all a bit confusing because the
-code is scattered. If a `Portfolio` class is supposed to contain
-a list of `Stock` instances, maybe you should change the class to be a bit more clear.
-Like this:
+Frankly, the chain of responsibility is all a bit confusing because the code is scattered. If a `Portfolio` class is supposed to contain a list of `Stock` instances, maybe you should change the class to be a bit more clear. Like this:
 
 ```python
 # portfolio.py
@@ -50,8 +45,7 @@ class Portfolio:
     ...
 ```
 
-If you want to read a portfolio from a CSV file, maybe you should make a
-class method for it:
+If you want to read a portfolio from a CSV file, maybe you should make a class method for it:
 
 ```python
 # portfolio.py
@@ -92,5 +86,4 @@ To use this new Portfolio class, you can now write code like this:
 >>>
 ```
 
-Make these changes to the `Portfolio` class and modify the `report.py`
-code to use the class method.
+Make these changes to the `Portfolio` class and modify the `report.py` code to use the class method.

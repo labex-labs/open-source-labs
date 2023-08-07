@@ -1,7 +1,6 @@
 # Case Sensitivity
 
-Python is case sensitive. Upper and lower-case letters are considered different letters.
-These are all different variables:
+Python is case sensitive. Upper and lower-case letters are considered different letters. These are all different variables:
 
 ```python
 name = 'Jake'

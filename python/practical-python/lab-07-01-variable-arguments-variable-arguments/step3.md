@@ -22,6 +22,4 @@ def f(*args, **kwargs):
     ...
 ```
 
-This function takes any combination of positional or keyword
-arguments. It is sometimes used when writing wrappers or when you
-want to pass arguments through to another function.
+This function takes any combination of positional or keyword arguments. It is sometimes used when writing wrappers or when you want to pass arguments through to another function.

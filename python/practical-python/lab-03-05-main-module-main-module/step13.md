@@ -1,8 +1,6 @@
 # Exercise 3.15: `main()` functions
 
-In the file `report.py` add a `main()` function that accepts a list of
-command line options and produces the same output as before. You
-should be able to run it interactively like this:
+In the file `report.py` add a `main()` function that accepts a list of command line options and produces the same output as before. You should be able to run it interactively like this:
 
 ```python
 >>> import report

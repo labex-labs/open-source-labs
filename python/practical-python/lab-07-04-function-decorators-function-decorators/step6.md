@@ -1,7 +1,6 @@
 # Exercise 7.10: A decorator for timing
 
-If you define a function, its name and module are stored in the
-`__name__` and `__module__` attributes. For example:
+If you define a function, its name and module are stored in the `__name__` and `__module__` attributes. For example:
 
 ```python
 >>> def add(x,y):
@@ -14,10 +13,7 @@ If you define a function, its name and module are stored in the
 >>>
 ```
 
-In a file `timethis.py`, write a decorator function `timethis(func)`
-that wraps a function with an extra layer of logic that prints out how
-long it takes for a function to execute. To do this, you'll surround
-the function with timing calls like this:
+In a file `timethis.py`, write a decorator function `timethis(func)` that wraps a function with an extra layer of logic that prints out how long it takes for a function to execute. To do this, you'll surround the function with timing calls like this:
 
 ```python
 start = time.time()
@@ -40,6 +36,4 @@ __main__.countdown : 0.076562
 >>>
 ```
 
-Discussion: This `@timethis` decorator can be placed in front of any
-function definition. Thus, you might use it as a diagnostic tool for
-performance tuning.
+Discussion: This `@timethis` decorator can be placed in front of any function definition. Thus, you might use it as a diagnostic tool for performance tuning.

@@ -20,8 +20,7 @@ The `str()` function is used to create a nice printable output:
 >>>
 ```
 
-The `repr()` function is used to create a more detailed representation
-for programmers.
+The `repr()` function is used to create a more detailed representation for programmers.
 
 ```python
 >>> repr(d)
@@ -29,8 +28,7 @@ for programmers.
 >>>
 ```
 
-Those functions, `str()` and `repr()`, use a pair of special methods
-in the class to produce the string to be displayed.
+Those functions, `str()` and `repr()`, use a pair of special methods in the class to produce the string to be displayed.
 
 ```python
 class Date(object):
@@ -48,7 +46,4 @@ class Date(object):
         return f'Date({self.year},{self.month},{self.day})'
 ```
 
-_Note: The convention for `__repr__()` is to return a string that,
-when fed to `eval()`, will recreate the underlying object. If this
-is not possible, some kind of easily readable representation is used
-instead._
+_Note: The convention for `__repr__()` is to return a string that, when fed to `eval()`, will recreate the underlying object. If this is not possible, some kind of easily readable representation is used instead._

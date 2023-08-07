@@ -29,5 +29,4 @@ text = data.decode('utf-8') # bytes -> text
 data = text.encode('utf-8') # text -> bytes
 ```
 
-The `'utf-8'` argument specifies a character encoding. Other common
-values include `'ascii'` and `'latin1'`.
+The `'utf-8'` argument specifies a character encoding. Other common values include `'ascii'` and `'latin1'`.

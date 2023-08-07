@@ -10,8 +10,7 @@ class Stock:
         self.price = price
 ```
 
-A surprising feature is that you can set the attributes
-to any value at all:
+A surprising feature is that you can set the attributes to any value at all:
 
 ```python
 >>> s = Stock('IBM', 50, 91.1)

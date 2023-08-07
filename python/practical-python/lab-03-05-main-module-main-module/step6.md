@@ -6,5 +6,4 @@ Python is often used for command-line tools
 $ python3 report.py portfolio.csv prices.csv
 ```
 
-It means that the scripts are executed from the shell /
-terminal. Common use cases are for automation, background tasks, etc.
+It means that the scripts are executed from the shell / terminal. Common use cases are for automation, background tasks, etc.

@@ -17,5 +17,4 @@ AttributeError: 'int' object has no attribute 'append'
 >>>
 ```
 
-It preserves the interpreter state. That means that you can go poking
-around after the crash. Checking variable values and other state.
+It preserves the interpreter state. That means that you can go poking around after the crash. Checking variable values and other state.

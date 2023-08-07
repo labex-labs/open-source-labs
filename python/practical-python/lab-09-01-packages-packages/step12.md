@@ -1,37 +1,26 @@
 # Exercise 9.2: Making an application directory
 
-Putting all of your code into a "package" isn't often enough for an
-application. Sometimes there are supporting files, documentation,
-scripts, and other things. These files need to exist OUTSIDE of the
-`porty/` directory you made above.
+Putting all of your code into a "package" isn't often enough for an application. Sometimes there are supporting files, documentation, scripts, and other things. These files need to exist OUTSIDE of the `porty/` directory you made above.
 
-Create a new directory called `porty-app`. Move the `porty` directory
-you created in Exercise 9.1 into that directory. Copy the
-`Data/portfolio.csv` and `Data/prices.csv` test files into this
-directory. Additionally create a `README.txt` file with some
-information about yourself. Your code should now be organized as
-follows:
+Create a new directory called `porty-app`. Move the `porty` directory you created in Exercise 9.1 into that directory. Copy the `Data/portfolio.csv` and `Data/prices.csv` test files into this directory. Additionally create a `README.txt` file with some information about yourself. Your code should now be organized as follows:
 
-```
-porty-app/
-    portfolio.csv
-    prices.csv
-    README.txt
-    porty/
-        __init__.py
-        fileparse.py
-        follow.py
-        pcost.py
-        portfolio.py
-        report.py
-        stock.py
-        tableformat.py
-        ticker.py
-        typedproperty.py
-```
+    porty-app/
+        portfolio.csv
+        prices.csv
+        README.txt
+        porty/
+            __init__.py
+            fileparse.py
+            follow.py
+            pcost.py
+            portfolio.py
+            report.py
+            stock.py
+            tableformat.py
+            ticker.py
+            typedproperty.py
 
-To run your code, you need to make sure you are working in the top-level `porty-app/`
-directory. For example, from the terminal:
+To run your code, you need to make sure you are working in the top-level `porty-app/` directory. For example, from the terminal:
 
 ```python
 shell % cd porty-app

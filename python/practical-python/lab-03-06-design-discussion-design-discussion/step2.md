@@ -1,14 +1,10 @@
 # Deep Idea: "Duck Typing"
 
-[Duck Typing](https://en.wikipedia.org/wiki/Duck_typing) is a computer
-programming concept to determine whether an object can be used for a
-particular purpose. It is an application of the [duck
-test](https://en.wikipedia.org/wiki/Duck_test).
+[Duck Typing](https://en.wikipedia.org/wiki/Duck_typing) is a computer programming concept to determine whether an object can be used for a particular purpose. It is an application of the [duck test](https://en.wikipedia.org/wiki/Duck_test).
 
 > If it looks like a duck, swims like a duck, and quacks like a duck, then it probably is a duck.
 
-In the second version of `read_data()` above, the function expects any
-iterable object. Not just the lines of a file.
+In the second version of `read_data()` above, the function expects any iterable object. Not just the lines of a file.
 
 ```python
 def read_data(lines):

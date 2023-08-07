@@ -1,7 +1,6 @@
 # Packages vs Modules
 
-For larger collections of code, it is common to organize modules into
-a package.
+For larger collections of code, it is common to organize modules into a package.
 
 ```code
 # From this
@@ -17,8 +16,7 @@ porty/
     fileparse.py
 ```
 
-You pick a name and make a top-level directory. `porty` in the example
-above (clearly picking this name is the most important first step).
+You pick a name and make a top-level directory. `porty` in the example above (clearly picking this name is the most important first step).
 
 Add an `__init__.py` file to the directory. It may be empty.
 

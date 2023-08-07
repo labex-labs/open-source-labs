@@ -1,7 +1,6 @@
 # Positional variable arguments (\*args)
 
-A function that accepts _any number_ of arguments is said to use variable arguments.
-For example:
+A function that accepts _any number_ of arguments is said to use variable arguments. For example:
 
 ```python
 def f(x, *args):

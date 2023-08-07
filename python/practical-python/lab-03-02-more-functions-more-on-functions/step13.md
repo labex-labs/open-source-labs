@@ -1,8 +1,6 @@
 # Exercise 3.3: Reading CSV Files
 
-To start, let’s just focus on the problem of reading a CSV file into a
-list of dictionaries. In the file `fileparse.py`, define a
-function that looks like this:
+To start, let's just focus on the problem of reading a CSV file into a list of dictionaries. In the file `fileparse.py`, define a function that looks like this:
 
 ```python
 # fileparse.py
@@ -27,9 +25,7 @@ def parse_csv(filename):
     return records
 ```
 
-This function reads a CSV file into a list of dictionaries while
-hiding the details of opening the file, wrapping it with the `csv`
-module, ignoring blank lines, and so forth.
+This function reads a CSV file into a list of dictionaries while hiding the details of opening the file, wrapping it with the `csv` module, ignoring blank lines, and so forth.
 
 Try it out:
 
@@ -42,6 +38,4 @@ Hint: `python3 -i fileparse.py`.
 >>>
 ```
 
-This is good except that you can’t do any kind of useful calculation
-with the data because everything is represented as a string. We’ll
-fix this shortly, but let’s keep building on it.
+This is good except that you can't do any kind of useful calculation with the data because everything is represented as a string. We'll fix this shortly, but let's keep building on it.

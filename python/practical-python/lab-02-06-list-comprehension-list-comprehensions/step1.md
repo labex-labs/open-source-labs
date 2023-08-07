@@ -1,7 +1,6 @@
 # Creating new lists
 
-A list comprehension creates a new list by applying an operation to
-each element of a sequence.
+A list comprehension creates a new list by applying an operation to each element of a sequence.
 
 ```python
 >>> a = [1, 2, 3, 4, 5]

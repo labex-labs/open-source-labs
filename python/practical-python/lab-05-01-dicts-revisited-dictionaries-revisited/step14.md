@@ -32,6 +32,4 @@ class LoudBike(Bike):
         return super().noise().upper()
 ```
 
-There is a code commonality in the implementation of `LoudDog.noise()` and
-`LoudBike.noise()`. In fact, the code is exactly the same. Naturally,
-code like that is bound to attract software engineers.
+There is a code commonality in the implementation of `LoudDog.noise()` and `LoudBike.noise()`. In fact, the code is exactly the same. Naturally, code like that is bound to attract software engineers.

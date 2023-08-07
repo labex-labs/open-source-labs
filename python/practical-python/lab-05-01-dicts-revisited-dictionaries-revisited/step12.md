@@ -1,7 +1,6 @@
 # Method Resolution Order or MRO
 
-Python precomputes an inheritance chain and stores it in the _MRO_ attribute on the class.
-You can view it.
+Python precomputes an inheritance chain and stores it in the _MRO_ attribute on the class. You can view it.
 
 ```python
 >>> E.__mro__
@@ -11,5 +10,4 @@ You can view it.
 >>>
 ```
 
-This chain is called the **Method Resolution Order**. To find an
-attribute, Python walks the MRO in order. The first match wins.
+This chain is called the **Method Resolution Order**. To find an attribute, Python walks the MRO in order. The first match wins.

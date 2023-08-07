@@ -1,9 +1,6 @@
 # Exercise 2.15: A practical enumerate() example
 
-Recall that the file `Data/missing.csv` contains data for a stock
-portfolio, but has some rows with missing data. Using `enumerate()`,
-modify your `pcost.py` program so that it prints a line number with
-the warning message when it encounters bad input.
+Recall that the file `Data/missing.csv` contains data for a stock portfolio, but has some rows with missing data. Using `enumerate()`, modify your `pcost.py` program so that it prints a line number with the warning message when it encounters bad input.
 
 ```python
 >>> cost = portfolio_cost('Data/missing.csv')
@@ -12,7 +9,7 @@ Row 7: Couldn't convert: ['IBM', '', '70.44']
 >>>
 ```
 
-To do this, you’ll need to change a few parts of your code.
+To do this, you'll need to change a few parts of your code.
 
 ```python
 ...

@@ -45,9 +45,7 @@ It can be applied to any iterable.
 >>>
 ```
 
-The main use of generator expressions is in code that performs some
-calculation on a sequence, but only uses the result once. For
-example, strip all comments from a file.
+The main use of generator expressions is in code that performs some calculation on a sequence, but only uses the result once. For example, strip all comments from a file.
 
 ```python
 f = open('somefile.txt')
@@ -57,5 +55,4 @@ for line in lines:
 f.close()
 ```
 
-With generators, the code runs faster and uses little memory. It's
-like a filter applied to a stream.
+With generators, the code runs faster and uses little memory. It's like a filter applied to a stream.

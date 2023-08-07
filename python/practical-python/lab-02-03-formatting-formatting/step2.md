@@ -1,7 +1,6 @@
 # Format codes
 
-Format codes (after the `:` inside the `{}`) are similar to C `printf()`. Common codes
-include:
+Format codes (after the `:` inside the `{}`) are similar to C `printf()`. Common codes include:
 
 ```code
 d       Decimal integer

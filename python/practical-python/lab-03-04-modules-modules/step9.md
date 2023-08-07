@@ -1,7 +1,6 @@
 # Module Loading
 
-Each module loads and executes only _once_.
-_Note: Repeated imports just return a reference to the previously loaded module._
+Each module loads and executes only _once_. _Note: Repeated imports just return a reference to the previously loaded module._
 
 `sys.modules` is a dict of all loaded modules.
 
@@ -12,8 +11,4 @@ _Note: Repeated imports just return a reference to the previously loaded module.
 >>>
 ```
 
-**Caution:** A common confusion arises if you repeat an `import` statement after
-changing the source code for a module. Because of the module cache `sys.modules`,
-repeated imports always return the previously loaded module--even if a change
-was made. The safest way to load modified code into Python is to quit and restart
-the interpreter.
+**Caution:** A common confusion arises if you repeat an `import` statement after changing the source code for a module. Because of the module cache `sys.modules`, repeated imports always return the previously loaded module--even if a change was made. The safest way to load modified code into Python is to quit and restart the interpreter.

@@ -1,7 +1,6 @@
 # Example: Keeping a History
 
-Problem: We want a history of the last N things.
-Solution: Use a `deque`.
+Problem: We want a history of the last N things. Solution: Use a `deque`.
 
 ```python
 from collections import deque
@@ -13,13 +12,9 @@ with open(filename) as f:
         ...
 ```
 
-The `collections` module might be one of the most useful library
-modules for dealing with special purpose kinds of data handling
-problems such as tabulating and indexing.
+The `collections` module might be one of the most useful library modules for dealing with special purpose kinds of data handling problems such as tabulating and indexing.
 
-In this exercise, we’ll look at a few simple examples. Start by
-running your `report.py` program so that you have the portfolio of
-stocks loaded in the interactive mode.
+In this exercise, we'll look at a few simple examples. Start by running your `report.py` program so that you have the portfolio of stocks loaded in the interactive mode.
 
 ```bash
 $ python3 -i report.py

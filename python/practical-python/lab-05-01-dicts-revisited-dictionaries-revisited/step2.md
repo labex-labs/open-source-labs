@@ -1,7 +1,6 @@
 # Dicts and Modules
 
-Within a module, a dictionary holds all of the global variables and
-functions.
+Within a module, a dictionary holds all of the global variables and functions.
 
 ```python
 # foo.py

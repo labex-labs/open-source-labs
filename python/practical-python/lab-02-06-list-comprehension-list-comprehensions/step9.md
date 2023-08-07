@@ -9,8 +9,7 @@ Show how you could build a list of tuples `(name, shares)` where `name` and `sha
 >>>
 ```
 
-If you change the square brackets (`[`,`]`) to curly braces (`{`, `}`), you get something known as a set comprehension.
-This gives you unique or distinct values.
+If you change the square brackets (`[`,`]`) to curly braces (`{`, `}`), you get something known as a set comprehension. This gives you unique or distinct values.
 
 For example, this determines the set of unique stock names that appear in `portfolio`:
 
@@ -21,8 +20,7 @@ For example, this determines the set of unique stock names that appear in `portf
 >>>
 ```
 
-If you specify `key:value` pairs, you can build a dictionary.
-For example, make a dictionary that maps the name of a stock to the total number of shares held.
+If you specify `key:value` pairs, you can build a dictionary. For example, make a dictionary that maps the name of a stock to the total number of shares held.
 
 ```python
 >>> holdings = { name: 0 for name in names }
@@ -31,7 +29,7 @@ For example, make a dictionary that maps the name of a stock to the total number
 >>>
 ```
 
-This latter feature is known as a **dictionary comprehension**. Let’s tabulate:
+This latter feature is known as a **dictionary comprehension**. Let's tabulate:
 
 ```python
 >>> for s in portfolio:
@@ -42,8 +40,7 @@ This latter feature is known as a **dictionary comprehension**. Let’s tabulate
 >>>
 ```
 
-Try this example that filters the `prices` dictionary down to only
-those names that appear in the portfolio:
+Try this example that filters the `prices` dictionary down to only those names that appear in the portfolio:
 
 ```python
 >>> portfolio_prices = { name: prices[name] for name in names }

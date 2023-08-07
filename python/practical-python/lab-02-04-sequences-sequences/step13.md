@@ -32,9 +32,7 @@ Try looping over the data.
 >>>
 ```
 
-Sometimes the `for` statement, `len()`, and `range()` get used by
-novices in some kind of horrible code fragment that looks like it
-emerged from the depths of a rusty C program.
+Sometimes the `for` statement, `len()`, and `range()` get used by novices in some kind of horrible code fragment that looks like it emerged from the depths of a rusty C program.
 
 ```python
 >>> for n in range(len(data)):
@@ -47,7 +45,4 @@ emerged from the depths of a rusty C program.
 >>>
 ```
 
-Don’t do that! Not only does reading it make everyone’s eyes bleed,
-it’s inefficient with memory and it runs a lot slower. Just use a
-normal `for` loop if you want to iterate over data. Use `enumerate()`
-if you happen to need the index for some reason.
+Don't do that! Not only does reading it make everyone's eyes bleed, it's inefficient with memory and it runs a lot slower. Just use a normal `for` loop if you want to iterate over data. Use `enumerate()` if you happen to need the index for some reason.

@@ -1,7 +1,6 @@
 # Exercise 1.10: Making a table
 
-Modify the program to print out a table showing the month, total paid so far, and the remaining principal.
-The output should look something like this:
+Modify the program to print out a table showing the month, total paid so far, and the remaining principal. The output should look something like this:
 
 ```bash
 1 2684.11 499399.22

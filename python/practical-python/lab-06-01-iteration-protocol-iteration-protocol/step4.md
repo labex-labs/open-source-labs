@@ -6,8 +6,7 @@ Create the following list:
 a = [1,9,4,25,16]
 ```
 
-Manually iterate over this list. Call `__iter__()` to get an iterator and
-call the `__next__()` method to obtain successive elements.
+Manually iterate over this list. Call `__iter__()` to get an iterator and call the `__next__()` method to obtain successive elements.
 
 ```python
 >>> i = a.__iter__()
@@ -30,8 +29,7 @@ StopIteration
 >>>
 ```
 
-The `next()` built-in function is a shortcut for calling
-the `__next__()` method of an iterator. Try using it on a file:
+The `next()` built-in function is a shortcut for calling the `__next__()` method of an iterator. Try using it on a file:
 
 ```python
 >>> f = open('Data/portfolio.csv')
@@ -46,5 +44,4 @@ the `__next__()` method of an iterator. Try using it on a file:
 >>>
 ```
 
-Keep calling `next(f)` until you reach the end of the
-file. Watch what happens.
+Keep calling `next(f)` until you reach the end of the file. Watch what happens.

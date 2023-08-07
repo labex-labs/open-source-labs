@@ -1,9 +1,6 @@
 # Exercise 2.23: Extracting Data From CSV Files
 
-Knowing how to use various combinations of list, set, and dictionary
-comprehensions can be useful in various forms of data processing.
-Here’s an example that shows how to extract selected columns from a
-CSV file.
+Knowing how to use various combinations of list, set, and dictionary comprehensions can be useful in various forms of data processing. Here's an example that shows how to extract selected columns from a CSV file.
 
 First, read a row of header information from a CSV file:
 
@@ -33,8 +30,7 @@ Now, locate the indices of the above columns in the source CSV file:
 >>>
 ```
 
-Finally, read a row of data and turn it into a dictionary using a
-dictionary comprehension:
+Finally, read a row of data and turn it into a dictionary using a dictionary comprehension:
 
 ```python
 >>> row = next(rows)
@@ -44,8 +40,7 @@ dictionary comprehension:
 >>>
 ```
 
-If you’re feeling comfortable with what just happened, read the rest
-of the file:
+If you're feeling comfortable with what just happened, read the rest of the file:
 
 ```python
 >>> portfolio = [ { colname: row[index] for colname, index in zip(select, indices) } for row in rows ]

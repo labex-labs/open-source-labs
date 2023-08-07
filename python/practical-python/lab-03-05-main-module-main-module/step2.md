@@ -1,7 +1,6 @@
 # Python Main Module
 
-Python has no _main_ function or method. Instead, there is a _main_
-module. The _main module_ is the source file that runs first.
+Python has no _main_ function or method. Instead, there is a _main_ module. The _main module_ is the source file that runs first.
 
 ```bash
 $ python3 prog.py

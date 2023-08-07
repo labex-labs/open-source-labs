@@ -1,8 +1,6 @@
 # Exercise 2.8: How to format numbers
 
-A common problem with printing numbers is specifying the number of
-decimal places. One way to fix this is to use f-strings. Try these
-examples:
+A common problem with printing numbers is specifying the number of decimal places. One way to fix this is to use f-strings. Try these examples:
 
 ```python
 >>> value = 42863.1
@@ -19,9 +17,7 @@ examples:
 >>>
 ```
 
-Full documentation on the formatting codes used f-strings can be found
-[here](https://docs.python.org/3/library/string.html#format-specification-mini-language). Formatting
-is also sometimes performed using the `%` operator of strings.
+Full documentation on the formatting codes used f-strings can be found [here](https://docs.python.org/3/library/string.html#format-specification-mini-language). Formatting is also sometimes performed using the `%` operator of strings.
 
 ```python
 >>> print('%0.4f' % value)
@@ -31,11 +27,9 @@ is also sometimes performed using the `%` operator of strings.
 >>>
 ```
 
-Documentation on various codes used with `%` can be found
-[here](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting).
+Documentation on various codes used with `%` can be found [here](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting).
 
-Although it’s commonly used with `print`, string formatting is not tied to printing.
-If you want to save a formatted string. Just assign it to a variable.
+Although it's commonly used with `print`, string formatting is not tied to printing. If you want to save a formatted string. Just assign it to a variable.
 
 ```python
 >>> f = '%0.4f' % value

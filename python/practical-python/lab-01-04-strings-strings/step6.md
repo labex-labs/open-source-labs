@@ -26,8 +26,7 @@ t = s.replace('Hello' , 'Hallo')   # 'Hallo world'
 
 **More string methods:**
 
-Strings have a wide variety of other methods for testing and manipulating the text data.
-This is a small sample of methods:
+Strings have a wide variety of other methods for testing and manipulating the text data. This is a small sample of methods:
 
 ```python
 s.endswith(suffix)     # Check if string ends with suffix

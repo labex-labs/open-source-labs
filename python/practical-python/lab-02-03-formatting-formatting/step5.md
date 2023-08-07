@@ -11,8 +11,7 @@ You can also use the formatting operator `%`.
 '3.14'
 ```
 
-This requires a single item or a tuple on the right. Format codes are
-modeled after the C `printf()` as well.
+This requires a single item or a tuple on the right. Format codes are modeled after the C `printf()` as well.
 
 _Note: This is the only formatting available on byte strings._
 

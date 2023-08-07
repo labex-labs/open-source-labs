@@ -1,12 +1,8 @@
 # Exercise 1.7: Dave's mortgage
 
-Dave has decided to take out a 30-year fixed rate mortgage of $500,000
-with Guido’s Mortgage, Stock Investment, and Bitcoin trading
-corporation. The interest rate is 5% and the monthly payment is
-$2684.11.
+Dave has decided to take out a 30-year fixed rate mortgage of \$500,000 with Guido's Mortgage, Stock Investment, and Bitcoin trading corporation. The interest rate is 5% and the monthly payment is \$2684.11.
 
-Here is a program that calculates the total amount that Dave will have
-to pay over the life of the mortgage:
+Here is a program that calculates the total amount that Dave will have to pay over the life of the mortgage:
 
 ```python
 # mortgage.py

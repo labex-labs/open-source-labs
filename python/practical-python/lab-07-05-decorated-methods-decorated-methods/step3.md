@@ -1,8 +1,6 @@
 # Class Methods
 
-`@classmethod` is used to define class methods. A class method is a
-method that receives the _class_ object as the first parameter instead
-of the instance.
+`@classmethod` is used to define class methods. A class method is a method that receives the _class_ object as the first parameter instead of the instance.
 
 ```python
 class Foo:

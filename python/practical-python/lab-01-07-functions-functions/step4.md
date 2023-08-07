@@ -16,8 +16,4 @@ for line in file:
 
 The name `ValueError` must match the kind of error you are trying to catch.
 
-It is often difficult to know exactly what kinds of errors might occur
-in advance depending on the operation being performed. For better or
-for worse, exception handling often gets added _after_ a program has
-unexpectedly crashed (i.e., "oh, we forgot to catch that error. We
-should handle that!").
+It is often difficult to know exactly what kinds of errors might occur in advance depending on the operation being performed. For better or for worse, exception handling often gets added _after_ a program has unexpectedly crashed (i.e., "oh, we forgot to catch that error. We should handle that!").

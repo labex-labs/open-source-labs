@@ -8,8 +8,7 @@ sys.stderr
 sys.stdin
 ```
 
-By default, print is directed to `sys.stdout`. Input is read from
-`sys.stdin`. Tracebacks and errors are directed to `sys.stderr`.
+By default, print is directed to `sys.stdout`. Input is read from `sys.stdin`. Tracebacks and errors are directed to `sys.stderr`.
 
 Be aware that _stdio_ could be connected to terminals, files, pipes, etc.
 

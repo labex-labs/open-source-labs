@@ -1,9 +1,6 @@
 # Exercise 6.2: Supporting Iteration
 
-On occasion, you might want to make one of your own objects support
-iteration--especially if your object wraps around an existing
-list or other iterable. In a new file `portfolio.py`, define the
-following class:
+On occasion, you might want to make one of your own objects support iteration--especially if your object wraps around an existing list or other iterable. In a new file `portfolio.py`, define the following class:
 
 ```python
 # portfolio.py
@@ -25,35 +22,30 @@ class Portfolio:
         return total_shares
 ```
 
-This class is meant to be a layer around a list, but with some
-extra methods such as the `total_cost` property. Modify the `read_portfolio()`
-function in `report.py` so that it creates a `Portfolio` instance like this:
+This class is meant to be a layer around a list, but with some extra methods such as the `total_cost` property. Modify the `read_portfolio()` function in `report.py` so that it creates a `Portfolio` instance like this:
 
-```
-# report.py
-...
+    # report.py
+    ...
 
-import fileparse
-from stock import Stock
-from portfolio import Portfolio
+    import fileparse
+    from stock import Stock
+    from portfolio import Portfolio
 
-def read_portfolio(filename):
-    '''
-    Read a stock portfolio file into a list of dictionaries with keys
-    name, shares, and price.
-    '''
-    with open(filename) as file:
-        portdicts = fileparse.parse_csv(file,
-                                        select=['name','shares','price'],
-                                        types=[str,int,float])
+    def read_portfolio(filename):
+        '''
+        Read a stock portfolio file into a list of dictionaries with keys
+        name, shares, and price.
+        '''
+        with open(filename) as file:
+            portdicts = fileparse.parse_csv(file,
+                                            select=['name','shares','price'],
+                                            types=[str,int,float])
 
-    portfolio = [ Stock(d['name'], d['shares'], d['price']) for d in portdicts ]
-    return Portfolio(portfolio)
-...
-```
+        portfolio = [ Stock(d['name'], d['shares'], d['price']) for d in portdicts ]
+        return Portfolio(portfolio)
+    ...
 
-Try running the `report.py` program. You will find that it fails spectacularly due to the fact
-that `Portfolio` instances aren't iterable.
+Try running the `report.py` program. You will find that it fails spectacularly due to the fact that `Portfolio` instances aren't iterable.
 
 ```python
 >>> import report
@@ -84,8 +76,7 @@ class Portfolio:
         return total_shares
 ```
 
-After you've made this change, your `report.py` program should work again. While you're
-at it, fix up your `pcost.py` program to use the new `Portfolio` object. Like this:
+After you've made this change, your `report.py` program should work again. While you're at it, fix up your `pcost.py` program to use the new `Portfolio` object. Like this:
 
 ```python
 # pcost.py

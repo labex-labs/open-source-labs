@@ -1,12 +1,8 @@
 # Exercise 2.5: List of Dictionaries
 
-Take the function you wrote in Exercise 2.4 and modify to represent each
-stock in the portfolio with a dictionary instead of a tuple. In this
-dictionary use the field names of "name", "shares", and "price" to
-represent the different columns in the input file.
+Take the function you wrote in Exercise 2.4 and modify to represent each stock in the portfolio with a dictionary instead of a tuple. In this dictionary use the field names of "name", "shares", and "price" to represent the different columns in the input file.
 
-Experiment with this new function in the same manner as you did in
-Exercise 2.4.
+Experiment with this new function in the same manner as you did in Exercise 2.4.
 
 ```python
 >>> portfolio = read_portfolio('Data/portfolio.csv')
@@ -30,12 +26,9 @@ Exercise 2.4.
 >>>
 ```
 
-Here, you will notice that the different fields for each entry are
-accessed by key names instead of numeric column numbers. This is
-often preferred because the resulting code is easier to read later.
+Here, you will notice that the different fields for each entry are accessed by key names instead of numeric column numbers. This is often preferred because the resulting code is easier to read later.
 
-Viewing large dictionaries and lists can be messy. To clean up the
-output for debugging, consider using the `pprint` function.
+Viewing large dictionaries and lists can be messy. To clean up the output for debugging, consider using the `pprint` function.
 
 ```python
 >>> from pprint import pprint

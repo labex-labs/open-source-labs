@@ -25,8 +25,7 @@ def foo():
 foo()
 ```
 
-To handle the exception, put statements in the `except` block. You can add any
-statements you want to handle the error.
+To handle the exception, put statements in the `except` block. You can add any statements you want to handle the error.
 
 ```python
 def grok(): ...
@@ -43,8 +42,7 @@ def bar():
 bar()
 ```
 
-After handling, execution resumes with the first statement after the
-`try-except`.
+After handling, execution resumes with the first statement after the `try-except`.
 
 ```python
 def grok(): ...

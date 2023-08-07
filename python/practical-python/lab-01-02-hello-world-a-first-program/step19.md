@@ -20,9 +20,7 @@ print('Number of bills', num_bills)
 print('Final height', num_bills * bill_thickness)
 ```
 
-Copy and paste the code that appears above in a new program called `sears.py`.
-When you run the code you will get an error message that causes the
-program to crash like this:
+Copy and paste the code that appears above in a new program called `sears.py`. When you run the code you will get an error message that causes the program to crash like this:
 
 ```code
 Traceback (most recent call last):
@@ -31,10 +29,7 @@ Traceback (most recent call last):
 NameError: name 'days' is not defined
 ```
 
-Reading error messages is an important part of Python code. If your program
-crashes, the very last line of the traceback message is the actual reason why the
-the program crashed. Above that, you should see a fragment of source code and then
-an identifying filename and line number.
+Reading error messages is an important part of Python code. If your program crashes, the very last line of the traceback message is the actual reason why the the program crashed. Above that, you should see a fragment of source code and then an identifying filename and line number.
 
 - Which line is the error?
 - What is the error?

@@ -14,5 +14,4 @@ Hello Paula
 >>>
 ```
 
-If the first statement of a function is a string, it serves as documentation.
-Try typing a command such as `help(greeting)` to see it displayed.
+If the first statement of a function is a string, it serves as documentation. Try typing a command such as `help(greeting)` to see it displayed.

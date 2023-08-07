@@ -20,8 +20,7 @@ class Stock:
         self._shares = value
 ```
 
-Normal attribute access now triggers the getter and setter methods
-under `@property` and `@shares.setter`.
+Normal attribute access now triggers the getter and setter methods under `@property` and `@shares.setter`.
 
 ```python
 >>> s = Stock('IBM', 50, 91.1)
@@ -31,9 +30,7 @@ under `@property` and `@shares.setter`.
 >>>
 ```
 
-With this pattern, there are _no changes_ needed to the source code.
-The new _setter_ is also called when there is an assignment within the class,
-including inside the `__init__()` method.
+With this pattern, there are _no changes_ needed to the source code. The new _setter_ is also called when there is an assignment within the class, including inside the `__init__()` method.
 
 ```python
 class Stock:
@@ -51,9 +48,7 @@ class Stock:
         self._shares = value
 ```
 
-There is often a confusion between a property and the use of private names.
-Although a property internally uses a private name like `_shares`, the rest
-of the class (not the property) can continue to use a name like `shares`.
+There is often a confusion between a property and the use of private names. Although a property internally uses a private name like `_shares`, the rest of the class (not the property) can continue to use a name like `shares`.
 
 Properties are also useful for computed data attributes.
 

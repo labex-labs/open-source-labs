@@ -10,5 +10,4 @@ def grok(a):
     print(x)
 ```
 
-_Global_ variables are always bound to the enclosing module (same file).
-Each source file is its own little universe.
+_Global_ variables are always bound to the enclosing module (same file). Each source file is its own little universe.

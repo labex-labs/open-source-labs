@@ -1,7 +1,6 @@
 # Overriding
 
-Sometimes a class extends an existing method, but it wants to use the
-original implementation inside the redefinition. For this, use `super()`:
+Sometimes a class extends an existing method, but it wants to use the original implementation inside the redefinition. For this, use `super()`:
 
 ```python
 class Stock:

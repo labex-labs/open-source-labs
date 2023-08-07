@@ -1,7 +1,6 @@
 # Deep copies
 
-Sometimes you need to make a copy of an object and all the objects contained within it.
-You can use the `copy` module for this:
+Sometimes you need to make a copy of an object and all the objects contained within it. You can use the `copy` module for this:
 
 ```python
 >>> a = [2,3,[100,101],4]

@@ -1,8 +1,6 @@
 # Exercise 4.6: Using Inheritance to Produce Different Output
 
-The `TableFormatter` class you defined in part (a) is meant to be
-extended via inheritance. In fact, that's the whole idea. To
-illustrate, define a class `TextTableFormatter` like this:
+The `TableFormatter` class you defined in part (a) is meant to be extended via inheritance. In fact, that's the whole idea. To illustrate, define a class `TextTableFormatter` like this:
 
 ```python
 # tableformat.py
@@ -62,8 +60,7 @@ This should produce the same output as before:
 >>>
 ```
 
-However, let's change the output to something else. Define a new
-class `CSVTableFormatter` that produces output in CSV format:
+However, let's change the output to something else. Define a new class `CSVTableFormatter` that produces output in CSV format:
 
 ```python
 # tableformat.py
@@ -114,20 +111,15 @@ MSFT,50,20.89,-44.21
 IBM,100,106.28,35.84
 ```
 
-Using a similar idea, define a class `HTMLTableFormatter`
-that produces a table with the following output:
+Using a similar idea, define a class `HTMLTableFormatter` that produces a table with the following output:
 
-```
-<tr><th>Name</th><th>Shares</th><th>Price</th><th>Change</th></tr>
-<tr><td>AA</td><td>100</td><td>9.22</td><td>-22.98</td></tr>
-<tr><td>IBM</td><td>50</td><td>106.28</td><td>15.18</td></tr>
-<tr><td>CAT</td><td>150</td><td>35.46</td><td>-47.98</td></tr>
-<tr><td>MSFT</td><td>200</td><td>20.89</td><td>-30.34</td></tr>
-<tr><td>GE</td><td>95</td><td>13.48</td><td>-26.89</td></tr>
-<tr><td>MSFT</td><td>50</td><td>20.89</td><td>-44.21</td></tr>
-<tr><td>IBM</td><td>100</td><td>106.28</td><td>35.84</td></tr>
-```
+    <tr><th>Name</th><th>Shares</th><th>Price</th><th>Change</th></tr>
+    <tr><td>AA</td><td>100</td><td>9.22</td><td>-22.98</td></tr>
+    <tr><td>IBM</td><td>50</td><td>106.28</td><td>15.18</td></tr>
+    <tr><td>CAT</td><td>150</td><td>35.46</td><td>-47.98</td></tr>
+    <tr><td>MSFT</td><td>200</td><td>20.89</td><td>-30.34</td></tr>
+    <tr><td>GE</td><td>95</td><td>13.48</td><td>-26.89</td></tr>
+    <tr><td>MSFT</td><td>50</td><td>20.89</td><td>-44.21</td></tr>
+    <tr><td>IBM</td><td>100</td><td>106.28</td><td>35.84</td></tr>
 
-Test your code by modifying the main program to create a
-`HTMLTableFormatter` object instead of a
-`CSVTableFormatter` object.
+Test your code by modifying the main program to create a `HTMLTableFormatter` object instead of a `CSVTableFormatter` object.

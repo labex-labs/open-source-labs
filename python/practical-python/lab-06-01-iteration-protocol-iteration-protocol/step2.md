@@ -19,8 +19,7 @@ while True:
         break
 ```
 
-All the objects that work with the `for-loop` implement this low-level
-iteration protocol.
+All the objects that work with the `for-loop` implement this low-level iteration protocol.
 
 Example: Manual iteration over a list.
 

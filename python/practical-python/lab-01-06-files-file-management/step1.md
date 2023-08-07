@@ -29,8 +29,7 @@ f.close()
 g.close()
 ```
 
-Files should be properly closed and it's an easy step to forget.
-Thus, the preferred approach is to use the `with` statement like this.
+Files should be properly closed and it's an easy step to forget. Thus, the preferred approach is to use the `with` statement like this.
 
 ```python
 with open(filename, 'rt') as file:

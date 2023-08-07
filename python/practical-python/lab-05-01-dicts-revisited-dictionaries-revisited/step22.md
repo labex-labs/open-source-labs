@@ -15,8 +15,7 @@ Yow!
 >>>
 ```
 
-Inheritance is implemented by extending the search process for attributes.
-The `__bases__` attribute has a tuple of the immediate parents:
+Inheritance is implemented by extending the search process for attributes. The `__bases__` attribute has a tuple of the immediate parents:
 
 ```python
 >>> NewStock.__bases__
@@ -24,8 +23,7 @@ The `__bases__` attribute has a tuple of the immediate parents:
 >>>
 ```
 
-The `__mro__` attribute has a tuple of all parents, in the order that
-they will be searched for attributes.
+The `__mro__` attribute has a tuple of all parents, in the order that they will be searched for attributes.
 
 ```python
 >>> NewStock.__mro__

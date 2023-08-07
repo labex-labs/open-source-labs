@@ -1,7 +1,6 @@
 # Local Variables
 
-Observe how the inner function refers to variables defined by the outer
-function.
+Observe how the inner function refers to variables defined by the outer function.
 
 ```python
 def add(x, y):
@@ -12,8 +11,7 @@ def add(x, y):
     return do_add
 ```
 
-Further observe that those variables are somehow kept alive after
-`add()` has finished.
+Further observe that those variables are somehow kept alive after `add()` has finished.
 
 ```python
 >>> a = add(3,4)

@@ -2,14 +2,12 @@
 
 The following comparison / relational operators work with numbers:
 
-```
-x < y      Less than
-x <= y     Less than or equal
-x > y      Greater than
-x >= y     Greater than or equal
-x == y     Equal to
-x != y     Not equal to
-```
+    x < y      Less than
+    x <= y     Less than or equal
+    x > y      Greater than
+    x >= y     Greater than or equal
+    x == y     Equal to
+    x != y     Not equal to
 
 You can form more complex boolean expressions using
 

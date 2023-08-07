@@ -1,7 +1,6 @@
 # Problem: Imports
 
-Imports between files in the same package _must now include the
-package name in the import_. Remember the structure.
+Imports between files in the same package _must now include the package name in the import_. Remember the structure.
 
 ```code
 porty/

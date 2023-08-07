@@ -18,9 +18,6 @@ look into my eyes, you're under.
 '''
 ```
 
-Normally strings may only span a single line. Triple quotes capture all text enclosed across multiple lines
-including all formatting.
+Normally strings may only span a single line. Triple quotes capture all text enclosed across multiple lines including all formatting.
 
-There is no difference between using single (') versus double (")
-quotes. _However, the same type of quote used to start a string must be used to
-terminate it_.
+There is no difference between using single (') versus double (") quotes. _However, the same type of quote used to start a string must be used to terminate it_.

@@ -21,7 +21,7 @@ All portfolio holdings for MSFT and IBM stocks.
 >>>
 ```
 
-A list of all portfolio holdings that cost more than $10000.
+A list of all portfolio holdings that cost more than \$10000.
 
 ```python
 >>> cost10k = [ s for s in portfolio if s['shares'] * s['price'] > 10000 ]

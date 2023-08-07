@@ -4,8 +4,7 @@
 email_address = None
 ```
 
-`None` is often used as a placeholder for optional or missing value. It
-evaluates as `False` in conditionals.
+`None` is often used as a placeholder for optional or missing value. It evaluates as `False` in conditionals.
 
 ```python
 if email_address:

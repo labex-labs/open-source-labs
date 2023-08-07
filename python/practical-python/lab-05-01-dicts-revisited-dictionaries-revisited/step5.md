@@ -1,7 +1,6 @@
 # Instances and Classes
 
-Instances and classes are linked together. The `__class__` attribute
-refers back to the class.
+Instances and classes are linked together. The `__class__` attribute refers back to the class.
 
 ```python
 >>> s = Stock('GOOG', 100, 490.1)
@@ -12,6 +11,4 @@ refers back to the class.
 >>>
 ```
 
-The instance dictionary holds data unique to each instance, whereas
-the class dictionary holds data collectively shared by _all_
-instances.
+The instance dictionary holds data unique to each instance, whereas the class dictionary holds data collectively shared by _all_ instances.

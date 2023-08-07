@@ -1,7 +1,6 @@
 # Exercise 4.8: Putting it all together
 
-Modify the `report.py` program so that the `portfolio_report()` function takes
-an optional argument specifying the output format. For example:
+Modify the `report.py` program so that the `portfolio_report()` function takes an optional argument specifying the output format. For example:
 
 ```python
 >>> report.portfolio_report('Data/portfolio.csv', 'Data/prices.csv', 'txt')

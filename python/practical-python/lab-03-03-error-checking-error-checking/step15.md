@@ -1,9 +1,6 @@
 # Exercise 3.9: Catching exceptions
 
-The `parse_csv()` function you wrote is used to process the entire
-contents of a file. However, in the real-world, it’s possible that
-input files might have corrupted, missing, or dirty data. Try this
-experiment:
+The `parse_csv()` function you wrote is used to process the entire contents of a file. However, in the real-world, it's possible that input files might have corrupted, missing, or dirty data. Try this experiment:
 
 ```python
 >>> portfolio = parse_csv('Data/missing.csv', types=[str, int, float])
@@ -15,13 +12,9 @@ ValueError: invalid literal for int() with base 10: ''
 >>>
 ```
 
-Modify the `parse_csv()` function to catch all `ValueError` exceptions
-generated during record creation and print a warning message for rows
-that can’t be converted.
+Modify the `parse_csv()` function to catch all `ValueError` exceptions generated during record creation and print a warning message for rows that can't be converted.
 
-The message should include the row number and information about the
-reason why it failed. To test your function, try reading the file
-`Data/missing.csv` above. For example:
+The message should include the row number and information about the reason why it failed. To test your function, try reading the file `Data/missing.csv` above. For example:
 
 ```python
 >>> portfolio = parse_csv('Data/missing.csv', types=[str, int, float])

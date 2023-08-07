@@ -10,8 +10,7 @@ True
 >>>
 ```
 
-`is` compares the object identity (an integer). The identity can be
-obtained using `id()`.
+`is` compares the object identity (an integer). The identity can be obtained using `id()`.
 
 ```python
 >>> id(a)
@@ -21,8 +20,7 @@ obtained using `id()`.
 >>>
 ```
 
-Note: It is almost always better to use `==` for checking objects. The behavior
-of `is` is often unexpected:
+Note: It is almost always better to use `==` for checking objects. The behavior of `is` is often unexpected:
 
 ```python
 >>> a = [1,2,3]

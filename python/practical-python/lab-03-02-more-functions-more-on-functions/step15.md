@@ -1,7 +1,6 @@
 # Exercise 3.5: Performing Type Conversion
 
-Modify the `parse_csv()` function so that it optionally allows
-type-conversions to be applied to the returned data. For example:
+Modify the `parse_csv()` function so that it optionally allows type-conversions to be applied to the returned data. For example:
 
 ```python
 >>> portfolio = parse_csv('Data/portfolio.csv', types=[str, int, float])
@@ -14,8 +13,7 @@ type-conversions to be applied to the returned data. For example:
 >>>
 ```
 
-You already explored this in [Exercise 2.24](../02_Working_with_data/07_Objects.md).
-You'll need to insert the following fragment of code into your solution:
+You already explored this in [Exercise 2.24](../02_Working_with_data/07_Objects.md). You'll need to insert the following fragment of code into your solution:
 
 ```python
 ...

@@ -22,7 +22,4 @@ The object itself is always passed as first argument.
 def move(self, dx, dy):
 ```
 
-By convention, the instance is called `self`. However, the actual name
-used is unimportant. The object is always passed as the first
-argument. It is merely Python programming style to call this argument
-`self`.
+By convention, the instance is called `self`. However, the actual name used is unimportant. The object is always passed as the first argument. It is merely Python programming style to call this argument `self`.

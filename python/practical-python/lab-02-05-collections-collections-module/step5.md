@@ -1,7 +1,6 @@
 # Exercise 2.18: Tabulating with Counters
 
-Suppose you wanted to tabulate the total number of shares of each stock.
-This is easy using `Counter` objects. Try it:
+Suppose you wanted to tabulate the total number of shares of each stock. This is easy using `Counter` objects. Try it:
 
 ```python
 >>> portfolio = read_portfolio('Data/portfolio.csv')
@@ -36,7 +35,7 @@ If you want to rank the values, do this:
 >>>
 ```
 
-Let’s grab another portfolio of stocks and make a new Counter:
+Let's grab another portfolio of stocks and make a new Counter:
 
 ```python
 >>> portfolio2 = read_portfolio('Data/portfolio2.csv')
@@ -49,7 +48,7 @@ Counter({'HPQ': 250, 'GE': 125, 'AA': 50, 'MSFT': 25})
 >>>
 ```
 
-Finally, let’s combine all of the holdings doing one simple operation:
+Finally, let's combine all of the holdings doing one simple operation:
 
 ```python
 >>> holdings
@@ -62,6 +61,4 @@ Counter({'MSFT': 275, 'HPQ': 250, 'GE': 220, 'AA': 150, 'IBM': 150, 'CAT': 150})
 >>>
 ```
 
-This is only a small taste of what counters provide. However, if you
-ever find yourself needing to tabulate values, you should consider
-using one.
+This is only a small taste of what counters provide. However, if you ever find yourself needing to tabulate values, you should consider using one.

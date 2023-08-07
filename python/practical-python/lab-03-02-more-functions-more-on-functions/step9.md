@@ -1,7 +1,6 @@
 # Global Variables
 
-Functions can freely access the values of globals defined in the same
-file.
+Functions can freely access the values of globals defined in the same file.
 
 ```python
 name = 'Dave'

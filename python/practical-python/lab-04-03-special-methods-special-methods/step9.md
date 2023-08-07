@@ -1,7 +1,6 @@
 # Exercise 4.10: An example of using getattr()
 
-`getattr()` is an alternative mechanism for reading attributes. It can be used to
-write extremely flexible code. To begin, try this example:
+`getattr()` is an alternative mechanism for reading attributes. It can be used to write extremely flexible code. To begin, try this example:
 
 ```python
 >>> import stock
@@ -15,15 +14,9 @@ shares = 100
 >>>
 ```
 
-Carefully observe that the output data is determined entirely by the attribute
-names listed in the `columns` variable.
+Carefully observe that the output data is determined entirely by the attribute names listed in the `columns` variable.
 
-In the file `tableformat.py`, take this idea and expand it into a generalized
-function `print_table()` that prints a table showing
-user-specified attributes of a list of arbitrary objects. As with the
-earlier `print_report()` function, `print_table()` should also accept
-a `TableFormatter` instance to control the output format. Here's how
-it should work:
+In the file `tableformat.py`, take this idea and expand it into a generalized function `print_table()` that prints a table showing user-specified attributes of a list of arbitrary objects. As with the earlier `print_report()` function, `print_table()` should also accept a `TableFormatter` instance to control the output format. Here's how it should work:
 
 ```python
 >>> import report

@@ -65,5 +65,4 @@ Remove the first occurrence of `'YHOO'`.
 >>>
 ```
 
-Just so you know, there is no method to find or remove all occurrences of an item.
-However, we'll see an elegant way to do this in section 2.
+Just so you know, there is no method to find or remove all occurrences of an item. However, we'll see an elegant way to do this in section 2.

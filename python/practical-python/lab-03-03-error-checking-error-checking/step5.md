@@ -1,7 +1,6 @@
 # Exception Values
 
-Exceptions have an associated value. It contains more specific
-information about what's wrong.
+Exceptions have an associated value. It contains more specific information about what's wrong.
 
 ```python
 raise RuntimeError('Invalid user name')
@@ -16,8 +15,7 @@ except RuntimeError as e:   # `e` holds the exception raised
     ...
 ```
 
-`e` is an instance of the exception type. However, it often looks like a string when
-printed.
+`e` is an instance of the exception type. However, it often looks like a string when printed.
 
 ```python
 except RuntimeError as e:

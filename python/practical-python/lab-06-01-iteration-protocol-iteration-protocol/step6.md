@@ -1,8 +1,6 @@
 # Exercise 6.3: Making a more proper container
 
-If making a container class, you often want to do more than just
-iteration. Modify the `Portfolio` class so that it has some other
-special methods like this:
+If making a container class, you often want to do more than just iteration. Modify the `Portfolio` class so that it has some other special methods like this:
 
 ```python
 class Portfolio:
@@ -53,8 +51,4 @@ False
 >>>
 ```
 
-One important observation about this--generally code is considered
-"Pythonic" if it speaks the common vocabulary of how other parts of
-Python normally work. For container objects, supporting iteration,
-indexing, containment, and other kinds of operators is an important
-part of this.
+One important observation about this--generally code is considered "Pythonic" if it speaks the common vocabulary of how other parts of Python normally work. For container objects, supporting iteration, indexing, containment, and other kinds of operators is an important part of this.

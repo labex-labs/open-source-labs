@@ -1,8 +1,6 @@
 # Exercise 2.26: The Big Picture
 
-Using the techniques in this exercise, you could write statements that
-easily convert fields from just about any column-oriented datafile
-into a Python dictionary.
+Using the techniques in this exercise, you could write statements that easily convert fields from just about any column-oriented datafile into a Python dictionary.
 
 Just to illustrate, suppose you read data from a different datafile like this:
 
@@ -18,7 +16,7 @@ Just to illustrate, suppose you read data from a different datafile like this:
 >>>
 ```
 
-Let’s convert the fields using a similar trick:
+Let's convert the fields using a similar trick:
 
 ```python
 >>> types = [str, float, str, str, float, float, float, float, int]
@@ -35,8 +33,6 @@ Let’s convert the fields using a similar trick:
 >>>
 ```
 
-Bonus: How would you modify this example to additionally parse the
-`date` entry into a tuple such as `(6, 11, 2007)`?
+Bonus: How would you modify this example to additionally parse the `date` entry into a tuple such as `(6, 11, 2007)`?
 
-Spend some time to ponder what you’ve done in this exercise. We’ll
-revisit these ideas a little later.
+Spend some time to ponder what you've done in this exercise. We'll revisit these ideas a little later.

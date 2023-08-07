@@ -1,7 +1,6 @@
 # Exercise 7.6: Sorting on a field with lambda
 
-Try sorting the portfolio according the number of shares using a
-`lambda` expression:
+Try sorting the portfolio according the number of shares using a `lambda` expression:
 
 ```python
 >>> portfolio.sort(key=lambda s: s.shares)
@@ -23,6 +22,4 @@ Try sorting the portfolio according to the price of each stock
 >>>
 ```
 
-Note: `lambda` is a useful shortcut because it allows you to
-define a special processing function directly in the call to `sort()` as
-opposed to having to define a separate function first.
+Note: `lambda` is a useful shortcut because it allows you to define a special processing function directly in the call to `sort()` as opposed to having to define a separate function first.

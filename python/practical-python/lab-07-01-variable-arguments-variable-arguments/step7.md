@@ -1,7 +1,6 @@
 # Exercise 7.3: Creating a list of instances
 
-In your `report.py` program, you created a list of instances
-using code like this:
+In your `report.py` program, you created a list of instances using code like this:
 
 ```python
 def read_portfolio(filename):

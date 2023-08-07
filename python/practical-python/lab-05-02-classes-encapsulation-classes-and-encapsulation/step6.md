@@ -20,5 +20,4 @@ class Stock:
         self._shares = value
 ```
 
-Too bad that this breaks all of our existing code. `s.shares = 50`
-becomes `s.set_shares(50)`
+Too bad that this breaks all of our existing code. `s.shares = 50` becomes `s.set_shares(50)`

@@ -10,8 +10,7 @@ for i, name in enumerate(names):
     # i = 2, name = 'Curtis'
 ```
 
-The general form is `enumerate(sequence [, start = 0])`. `start` is optional.
-A good example of using `enumerate()` is tracking line numbers while reading a file:
+The general form is `enumerate(sequence [, start = 0])`. `start` is optional. A good example of using `enumerate()` is tracking line numbers while reading a file:
 
 ```python
 with open(filename) as f:

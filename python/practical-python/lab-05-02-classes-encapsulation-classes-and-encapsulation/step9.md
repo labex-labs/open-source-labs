@@ -1,7 +1,6 @@
 # Decorator Syntax
 
-The `@` syntax is known as "decoration". It specifies a modifier
-that's applied to the function definition that immediately follows.
+The `@` syntax is known as "decoration". It specifies a modifier that's applied to the function definition that immediately follows.
 
 ```python
 ...

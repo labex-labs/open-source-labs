@@ -1,7 +1,6 @@
 # Exceptions
 
-Exceptions are used to signal errors.
-To raise an exception yourself, use `raise` statement.
+Exceptions are used to signal errors. To raise an exception yourself, use `raise` statement.
 
 ```python
 if name not in authorized:

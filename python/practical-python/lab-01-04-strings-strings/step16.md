@@ -1,7 +1,6 @@
 # Exercise 1.17: f-strings
 
-Sometimes you want to create a string and embed the values of
-variables into it.
+Sometimes you want to create a string and embed the values of variables into it.
 
 To do that, use an f-string. For example:
 
@@ -14,5 +13,4 @@ To do that, use an f-string. For example:
 >>>
 ```
 
-Modify the `mortgage.py` program from [Exercise 1.10](03_Numbers.md) to create its output using f-strings.
-Try to make it so that output is nicely aligned.
+Modify the `mortgage.py` program from [Exercise 1.10](03_Numbers.md) to create its output using f-strings. Try to make it so that output is nicely aligned.

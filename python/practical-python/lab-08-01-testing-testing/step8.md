@@ -1,9 +1,6 @@
 # Third Party Test Tools
 
-The built-in `unittest` module has the advantage of being available everywhere--it's
-part of Python. However, many programmers also find it to be quite verbose.
-A popular alternative is [pytest](https://docs.pytest.org/en/latest/). With pytest,
-your testing file simplifies to something like the following:
+The built-in `unittest` module has the advantage of being available everywhere--it's part of Python. However, many programmers also find it to be quite verbose. A popular alternative is [pytest](https://docs.pytest.org/en/latest/). With pytest, your testing file simplifies to something like the following:
 
 ```python
 # test_simple.py
@@ -16,19 +13,10 @@ def test_str():
     assert simple.add('hello','world') == 'helloworld'
 ```
 
-To run the tests, you simply type a command such as `python -m pytest`. It will
-discover all of the tests and run them.
+To run the tests, you simply type a command such as `python -m pytest`. It will discover all of the tests and run them.
 
-There's a lot more to `pytest` than this example, but it's usually pretty easy to
-get started should you decide to try it out.
+There's a lot more to `pytest` than this example, but it's usually pretty easy to get started should you decide to try it out.
 
-In this exercise, you will explore the basic mechanics of using
-Python's `unittest` module.
+In this exercise, you will explore the basic mechanics of using Python's `unittest` module.
 
-In earlier exercises, you wrote a file `stock.py` that contained a
-`Stock` class. For this exercise, it assumed that you're using the
-code written for [Exercise
-7.9](../07_Advanced_Topics/03_Returning_functions) involving
-typed-properties. If, for some reason, that's not working, you might
-want to copy the solution from `Solutions/7_9` to your working
-directory.
+In earlier exercises, you wrote a file `stock.py` that contained a `Stock` class. For this exercise, it assumed that you're using the code written for [Exercise 7.9](../07_Advanced_Topics/03_Returning_functions) involving typed-properties. If, for some reason, that's not working, you might want to copy the solution from `Solutions/7_9` to your working directory.

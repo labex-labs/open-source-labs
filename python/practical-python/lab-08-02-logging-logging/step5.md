@@ -15,5 +15,4 @@ if __name__ == '__main__':
     )
 ```
 
-Typically, this is a one-time configuration at program startup. The
-configuration is separate from the code that makes the logging calls.
+Typically, this is a one-time configuration at program startup. The configuration is separate from the code that makes the logging calls.

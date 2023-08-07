@@ -10,11 +10,9 @@ _Caution: Lists were not designed for math operations._
 [1, 2, 3, 4, 5, 10, 11, 12, 13, 14]
 ```
 
-Specifically, lists don't represent vectors/matrices as in MATLAB, Octave, R, etc.
-However, there are some packages to help you with that (e.g. [numpy](https://numpy.org)).
+Specifically, lists don't represent vectors/matrices as in MATLAB, Octave, R, etc. However, there are some packages to help you with that (e.g. [numpy](https://numpy.org)).
 
-In this exercise, we experiment with Python's list datatype. In the last section,
-you worked with strings containing stock symbols.
+In this exercise, we experiment with Python's list datatype. In the last section, you worked with strings containing stock symbols.
 
 ```python
 >>> symbols = 'HPQ,AAPL,IBM,MSFT,YHOO,DOA,GOOG'

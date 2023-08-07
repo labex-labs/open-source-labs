@@ -12,19 +12,17 @@ e = 0b10001111  # Binary
 
 Common operations:
 
-```
-x + y      Add
-x - y      Subtract
-x * y      Multiply
-x / y      Divide (produces a float)
-x // y     Floor Divide (produces an integer)
-x % y      Modulo (remainder)
-x ** y     Power
-x << n     Bit shift left
-x >> n     Bit shift right
-x & y      Bit-wise AND
-x | y      Bit-wise OR
-x ^ y      Bit-wise XOR
-~x         Bit-wise NOT
-abs(x)     Absolute value
-```
+    x + y      Add
+    x - y      Subtract
+    x * y      Multiply
+    x / y      Divide (produces a float)
+    x // y     Floor Divide (produces an integer)
+    x % y      Modulo (remainder)
+    x ** y     Power
+    x << n     Bit shift left
+    x >> n     Bit shift right
+    x & y      Bit-wise AND
+    x | y      Bit-wise OR
+    x ^ y      Bit-wise XOR
+    ~x         Bit-wise NOT
+    abs(x)     Absolute value

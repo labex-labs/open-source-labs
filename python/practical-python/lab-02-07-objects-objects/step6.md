@@ -21,7 +21,6 @@ True
 >>>
 ```
 
-For example, the inner list `[100, 101, 102]` is being shared.
-This is known as a shallow copy. Here is a picture.
+For example, the inner list `[100, 101, 102]` is being shared. This is known as a shallow copy. Here is a picture.
 
 ![Shallow copy](shallow.png)

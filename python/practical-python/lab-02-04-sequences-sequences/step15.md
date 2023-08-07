@@ -1,7 +1,6 @@
 # Exercise 2.16: Using the zip() function
 
-In the file `Data/portfolio.csv`, the first line contains column
-headers. In all previous code, we’ve been discarding them.
+In the file `Data/portfolio.csv`, the first line contains column headers. In all previous code, we've been discarding them.
 
 ```python
 >>> f = open('Data/portfolio.csv')
@@ -12,9 +11,7 @@ headers. In all previous code, we’ve been discarding them.
 >>>
 ```
 
-However, what if you could use the headers for something useful? This
-is where the `zip()` function enters the picture. First try this to
-pair the file headers with a row of data:
+However, what if you could use the headers for something useful? This is where the `zip()` function enters the picture. First try this to pair the file headers with a row of data:
 
 ```python
 >>> row = next(rows)
@@ -25,13 +22,9 @@ pair the file headers with a row of data:
 >>>
 ```
 
-Notice how `zip()` paired the column headers with the column values.
-We’ve used `list()` here to turn the result into a list so that you
-can see it. Normally, `zip()` creates an iterator that must be
-consumed by a for-loop.
+Notice how `zip()` paired the column headers with the column values. We've used `list()` here to turn the result into a list so that you can see it. Normally, `zip()` creates an iterator that must be consumed by a for-loop.
 
-This pairing is an intermediate step to building a
-dictionary. Now try this:
+This pairing is an intermediate step to building a dictionary. Now try this:
 
 ```python
 >>> record = dict(zip(headers, row))
@@ -40,11 +33,7 @@ dictionary. Now try this:
 >>>
 ```
 
-This transformation is one of the most useful tricks to know about
-when processing a lot of data files. For example, suppose you wanted
-to make the `pcost.py` program work with various input files, but
-without regard for the actual column number where the name, shares,
-and price appear.
+This transformation is one of the most useful tricks to know about when processing a lot of data files. For example, suppose you wanted to make the `pcost.py` program work with various input files, but without regard for the actual column number where the name, shares, and price appear.
 
 Modify the `portfolio_cost()` function in `pcost.py` so that it looks like this:
 
@@ -65,8 +54,7 @@ def portfolio_cost(filename):
         ...
 ```
 
-Now, try your function on a completely different data file
-`Data/portfoliodate.csv` which looks like this:
+Now, try your function on a completely different data file `Data/portfoliodate.csv` which looks like this:
 
 ```csv
 name,date,time,shares,price
@@ -85,17 +73,10 @@ name,date,time,shares,price
 >>>
 ```
 
-If you did it right, you’ll find that your program still works even
-though the data file has a completely different column format than
-before. That’s cool!
+If you did it right, you'll find that your program still works even though the data file has a completely different column format than before. That's cool!
 
-The change made here is subtle, but significant. Instead of
-`portfolio_cost()` being hardcoded to read a single fixed file format,
-the new version reads any CSV file and picks the values of interest
-out of it. As long as the file has the required columns, the code will work.
+The change made here is subtle, but significant. Instead of `portfolio_cost()` being hardcoded to read a single fixed file format, the new version reads any CSV file and picks the values of interest out of it. As long as the file has the required columns, the code will work.
 
-Modify the `report.py` program you wrote in Section 2.3 so that it uses
-the same technique to pick out column headers.
+Modify the `report.py` program you wrote in Section 2.3 so that it uses the same technique to pick out column headers.
 
-Try running the `report.py` program on the `Data/portfoliodate.csv`
-file and see that it produces the same answer as before.
+Try running the `report.py` program on the `Data/portfoliodate.csv` file and see that it produces the same answer as before.

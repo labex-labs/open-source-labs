@@ -1,9 +1,6 @@
 # Exercise 3.7: Picking a different column delimiter
 
-Although CSV files are pretty common, it’s also possible that you
-could encounter a file that uses a different column separator such as
-a tab or space. For example, the file `Data/portfolio.dat` looks like
-this:
+Although CSV files are pretty common, it's also possible that you could encounter a file that uses a different column separator such as a tab or space. For example, the file `Data/portfolio.dat` looks like this:
 
 ```csv
 name shares price
@@ -22,8 +19,7 @@ The `csv.reader()` function allows a different column delimiter to be given as f
 rows = csv.reader(f, delimiter=' ')
 ```
 
-Modify your `parse_csv()` function so that it also allows the
-delimiter to be changed.
+Modify your `parse_csv()` function so that it also allows the delimiter to be changed.
 
 For example:
 

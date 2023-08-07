@@ -2,11 +2,11 @@
 
 You can use this aspect of generators to set up processing pipelines (like Unix pipes).
 
-_producer_ &rarr; _processing_ &rarr; _processing_ &rarr; _consumer_
+_producer_ → _processing_ → _processing_ → _consumer_
 
 Processing pipes have an initial data producer, some set of intermediate processing stages and a final consumer.
 
-**producer** &rarr; _processing_ &rarr; _processing_ &rarr; _consumer_
+**producer** → _processing_ → _processing_ → _consumer_
 
 ```python
 def producer():
@@ -15,10 +15,9 @@ def producer():
     ...
 ```
 
-The producer is typically a generator. Although it could also be a list of some other sequence.
-`yield` feeds data into the pipeline.
+The producer is typically a generator. Although it could also be a list of some other sequence. `yield` feeds data into the pipeline.
 
-_producer_ &rarr; _processing_ &rarr; _processing_ &rarr; **consumer**
+_producer_ → _processing_ → _processing_ → **consumer**
 
 ```python
 def consumer(s):
@@ -28,7 +27,7 @@ def consumer(s):
 
 Consumer is a for-loop. It gets items and does something with them.
 
-_producer_ &rarr; **processing** &rarr; **processing** &rarr; _consumer_
+_producer_ → **processing** → **processing** → _consumer_
 
 ```python
 def processing(s):
@@ -38,11 +37,9 @@ def processing(s):
         ...
 ```
 
-Intermediate processing stages simultaneously consume and produce items.
-They might modify the data stream.
-They can also filter (discarding items).
+Intermediate processing stages simultaneously consume and produce items. They might modify the data stream. They can also filter (discarding items).
 
-_producer_ &rarr; _processing_ &rarr; _processing_ &rarr; _consumer_
+_producer_ → _processing_ → _processing_ → _consumer_
 
 ```python
 def producer():
@@ -71,5 +68,4 @@ c = consumer(b)
 
 You will notice that data incrementally flows through the different functions.
 
-For this exercise the `stocksim.py` program should still be running in the background.
-You’re going to use the `follow()` function you wrote in the previous exercise.
+For this exercise the `stocksim.py` program should still be running in the background. You're going to use the `follow()` function you wrote in the previous exercise.

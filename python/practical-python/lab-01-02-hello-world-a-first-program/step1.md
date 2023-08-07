@@ -2,8 +2,7 @@
 
 Python programs always run inside an interpreter.
 
-The interpreter is a "console-based" application that normally runs
-from a command shell.
+The interpreter is a "console-based" application that normally runs from a command shell.
 
 ```bash
 python3
@@ -13,7 +12,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Expert programmers usually have no problem using the interpreter in
-this way, but it's not so user-friendly for beginners. You may be using
-an environment that provides a different interface to Python. That's fine,
-but learning how to run Python terminal is still a useful skill to know.
+Expert programmers usually have no problem using the interpreter in this way, but it's not so user-friendly for beginners. You may be using an environment that provides a different interface to Python. That's fine, but learning how to run Python terminal is still a useful skill to know.

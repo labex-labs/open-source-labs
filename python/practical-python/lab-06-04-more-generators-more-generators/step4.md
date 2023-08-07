@@ -1,7 +1,6 @@
 # Exercise 6.13: Generator Expressions
 
-Generator expressions are a generator version of a list comprehension.
-For example:
+Generator expressions are a generator version of a list comprehension. For example:
 
 ```python
 >>> nums = [1, 2, 3, 4, 5]
@@ -18,8 +17,7 @@ For example:
 25
 ```
 
-Unlike a list a comprehension, a generator expression can only be used once.
-Thus, if you try another for-loop, you get nothing:
+Unlike a list a comprehension, a generator expression can only be used once. Thus, if you try another for-loop, you get nothing:
 
 ```python
 >>> for n in squares:

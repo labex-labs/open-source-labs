@@ -12,10 +12,6 @@ ValueError: invalid literal for int() with base 10: ''
 >>>
 ```
 
-At this point, you’re faced with a decision. To make the program work
-you can either sanitize the original input file by eliminating bad
-lines or you can modify your code to handle the bad lines in some
-manner.
+At this point, you're faced with a decision. To make the program work you can either sanitize the original input file by eliminating bad lines or you can modify your code to handle the bad lines in some manner.
 
-Modify the `pcost.py` program to catch the exception, print a warning
-message, and continue processing the rest of the file.
+Modify the `pcost.py` program to catch the exception, print a warning message, and continue processing the rest of the file.

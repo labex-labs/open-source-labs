@@ -1,8 +1,6 @@
 # Library Functions
 
-Python comes with a large standard library.
-Library modules are accessed using `import`.
-For example:
+Python comes with a large standard library. Library modules are accessed using `import`. For example:
 
 ```python
 import math

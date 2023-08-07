@@ -1,8 +1,6 @@
 # Exercise 2.25: Making dictionaries
 
-Remember how the `dict()` function can easily make a dictionary if you
-have a sequence of key names and values? Let’s make a dictionary from
-the column headers:
+Remember how the `dict()` function can easily make a dictionary if you have a sequence of key names and values? Let's make a dictionary from the column headers:
 
 ```python
 >>> headers
@@ -14,8 +12,7 @@ the column headers:
 >>>
 ```
 
-Of course, if you’re up on your list-comprehension fu, you can do the
-whole conversion in a single step using a dict-comprehension:
+Of course, if you're up on your list-comprehension fu, you can do the whole conversion in a single step using a dict-comprehension:
 
 ```python
 >>> { name: func(val) for name, func, val in zip(headers, types, row) }

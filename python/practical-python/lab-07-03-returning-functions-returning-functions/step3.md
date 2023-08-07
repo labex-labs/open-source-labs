@@ -11,7 +11,4 @@ def add(x, y):
     return do_add
 ```
 
-_Essential feature: A closure retains the values of all variables
-needed for the function to run properly later on._ Think of a
-closure as a function plus an extra environment that holds the values
-of variables that it depends on.
+_Essential feature: A closure retains the values of all variables needed for the function to run properly later on._ Think of a closure as a function plus an extra environment that holds the values of variables that it depends on.

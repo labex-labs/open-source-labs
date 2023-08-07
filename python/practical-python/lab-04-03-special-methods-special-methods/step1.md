@@ -1,8 +1,6 @@
 # Introduction
 
-Classes may define special methods. These have special meaning to the
-Python interpreter. They are always preceded and followed by
-`__`. For example `__init__`.
+Classes may define special methods. These have special meaning to the Python interpreter. They are always preceded and followed by `__`. For example `__init__`.
 
 ```python
 class Stock(object):

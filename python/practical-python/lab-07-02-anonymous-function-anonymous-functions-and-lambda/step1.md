@@ -28,9 +28,7 @@ It seems simple enough. However, how do we sort a list of dicts?
 
 By what criteria?
 
-You can guide the sorting by using a _key function_. The _key
-function_ is a function that receives the dictionary and returns the
-value of interest for sorting.
+You can guide the sorting by using a _key function_. The _key function_ is a function that receives the dictionary and returns the value of interest for sorting.
 
 ```python
 def stock_name(s):

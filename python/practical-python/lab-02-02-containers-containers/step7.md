@@ -1,7 +1,6 @@
 # Composite keys
 
-Almost any type of value can be used as a dictionary key in Python. A dictionary key must be of a type that is immutable.
-For example, tuples:
+Almost any type of value can be used as a dictionary key in Python. A dictionary key must be of a type that is immutable. For example, tuples:
 
 ```python
 holidays = {

@@ -4,8 +4,7 @@
 - Use 4 spaces per level.
 - Use a Python-aware editor.
 
-Python's only requirement is that indentation within the same block
-be consistent. For example, this is an error:
+Python's only requirement is that indentation within the same block be consistent. For example, this is an error:
 
 ```python
 while num_bills * bill_thickness < sears_height:

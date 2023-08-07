@@ -1,7 +1,6 @@
 # Names, Values, Types
 
-Variable names do not have a _type_. It's only a name.
-However, values _do_ have an underlying type.
+Variable names do not have a _type_. It's only a name. However, values _do_ have an underlying type.
 
 ```python
 >>> a = 42
@@ -12,5 +11,4 @@ However, values _do_ have an underlying type.
 <type 'str'>
 ```
 
-`type()` will tell you what it is. The type name is usually used as a function
-that creates or converts a value to that type.
+`type()` will tell you what it is. The type name is usually used as a function that creates or converts a value to that type.

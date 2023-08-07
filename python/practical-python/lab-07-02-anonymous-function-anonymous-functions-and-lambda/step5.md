@@ -1,7 +1,6 @@
 # Exercise 7.5: Sorting on a field
 
-Try the following statements which sort the portfolio data
-alphabetically by stock name.
+Try the following statements which sort the portfolio data alphabetically by stock name.
 
 ```python
 >>> def stock_name(s):
@@ -15,6 +14,4 @@ alphabetically by stock name.
 >>>
 ```
 
-In this part, the `stock_name()` function extracts the name of a stock from
-a single entry in the `portfolio` list. `sort()` uses the result of
-this function to do the comparison.
+In this part, the `stock_name()` function extracts the name of a stock from a single entry in the `portfolio` list. `sort()` uses the result of this function to do the comparison.

@@ -1,7 +1,6 @@
 # Object Oriented (OO) programming
 
-A Programming technique where code is organized as a collection of
-_objects_.
+A Programming technique where code is organized as a collection of _objects_.
 
 An _object_ consists of:
 

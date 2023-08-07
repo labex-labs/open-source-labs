@@ -1,7 +1,6 @@
 # Defining Functions
 
-It is a good idea to put all of the code related to a single _task_ all in one place.
-Use a function.
+It is a good idea to put all of the code related to a single _task_ all in one place. Use a function.
 
 ```python
 def read_prices(filename):

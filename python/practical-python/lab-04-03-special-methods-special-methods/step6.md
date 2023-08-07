@@ -1,7 +1,6 @@
 # Bound Methods
 
-A method that has not yet been invoked by the function call operator `()` is known as a _bound method_.
-It operates on the instance where it originated.
+A method that has not yet been invoked by the function call operator `()` is known as a _bound method_. It operates on the instance where it originated.
 
 ```python
 >>> s = Stock('GOOG', 100, 490.10)
@@ -34,5 +33,4 @@ f = open(filename, 'w')
 f.close     # Oops, Didn't do anything at all. `f` still open.
 ```
 
-In both of these cases, the error is cause by forgetting to include the
-trailing parentheses. For example, `s.cost()` or `f.close()`.
+In both of these cases, the error is cause by forgetting to include the trailing parentheses. For example, `s.cost()` or `f.close()`.

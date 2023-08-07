@@ -1,7 +1,6 @@
 # Exercise 4.3: Creating a list of instances
 
-Try these steps to make a list of Stock instances from a list of
-dictionaries. Then compute the total cost:
+Try these steps to make a list of Stock instances from a list of dictionaries. Then compute the total cost:
 
 ```python
 >>> import fileparse

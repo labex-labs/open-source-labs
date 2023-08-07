@@ -8,8 +8,7 @@ class Loud:
         return super().noise().upper()
 ```
 
-This class is not usable in isolation.
-It mixes with other classes via inheritance.
+This class is not usable in isolation. It mixes with other classes via inheritance.
 
 ```python
 class LoudDog(Loud, Dog):
@@ -19,6 +18,4 @@ class LoudBike(Loud, Bike):
     pass
 ```
 
-Miraculously, loudness was now implemented just once and reused
-in two completely unrelated classes. This sort of trick is one
-of the primary uses of multiple inheritance in Python.
+Miraculously, loudness was now implemented just once and reused in two completely unrelated classes. This sort of trick is one of the primary uses of multiple inheritance in Python.

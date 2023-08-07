@@ -11,8 +11,7 @@ The attribute may exist in two places:
 - Local instance dictionary.
 - Class dictionary.
 
-Both dictionaries must be checked. First, check in local `__dict__`.
-If not found, look in `__dict__` of class through `__class__`.
+Both dictionaries must be checked. First, check in local `__dict__`. If not found, look in `__dict__` of class through `__class__`.
 
 ```python
 >>> s = Stock(...)

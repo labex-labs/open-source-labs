@@ -13,5 +13,4 @@ You can use the `format_map()` method to apply string formatting to a dictionary
 >>>
 ```
 
-It uses the same codes as `f-strings` but takes the values from the
-supplied dictionary.
+It uses the same codes as `f-strings` but takes the values from the supplied dictionary.

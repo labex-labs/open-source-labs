@@ -14,11 +14,9 @@ cost = portfolio_cost('Data/portfolio.csv')
 print('Total cost:', cost)
 ```
 
-That’s fine for learning and testing, but in a real program you
-probably wouldn’t do that.
+That's fine for learning and testing, but in a real program you probably wouldn't do that.
 
-Instead, you might pass the name of the file in as an argument to a
-script. Try changing the bottom part of the program as follows:
+Instead, you might pass the name of the file in as an argument to a script. Try changing the bottom part of the program as follows:
 
 ```python
 # pcost.py
@@ -40,8 +38,7 @@ print('Total cost:', cost)
 
 `sys.argv` is a list that contains passed arguments on the command line (if any).
 
-To run your program, you’ll need to run Python from the
-terminal.
+To run your program, you'll need to run Python from the terminal.
 
 For example, from bash on Unix:
 

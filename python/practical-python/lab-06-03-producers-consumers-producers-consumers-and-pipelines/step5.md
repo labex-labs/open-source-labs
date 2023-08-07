@@ -1,7 +1,6 @@
 # Exercise 6.10: Making more pipeline components
 
-Let's extend the whole idea into a larger pipeline. In a separate file `ticker.py`,
-start by creating a function that reads a CSV file as you did above:
+Let's extend the whole idea into a larger pipeline. In a separate file `ticker.py`, start by creating a function that reads a CSV file as you did above:
 
 ```python
 # ticker.py
@@ -22,31 +21,26 @@ if __name__ == '__main__':
 
 Write a new function that selects specific columns:
 
-```
-# ticker.py
-...
-def select_columns(rows, indices):
-    for row in rows:
-        yield [row[index] for index in indices]
-...
-def parse_stock_data(lines):
-    rows = csv.reader(lines)
-    rows = select_columns(rows, [0, 1, 4])
-    return rows
-```
+    # ticker.py
+    ...
+    def select_columns(rows, indices):
+        for row in rows:
+            yield [row[index] for index in indices]
+    ...
+    def parse_stock_data(lines):
+        rows = csv.reader(lines)
+        rows = select_columns(rows, [0, 1, 4])
+        return rows
 
 Run your program again. You should see output narrowed down like this:
 
-```
-['BA', '98.35', '0.16']
-['AA', '39.63', '-0.03']
-['XOM', '82.45','-0.23']
-['PG', '62.95', '-0.12']
-...
-```
+    ['BA', '98.35', '0.16']
+    ['AA', '39.63', '-0.03']
+    ['XOM', '82.45','-0.23']
+    ['PG', '62.95', '-0.12']
+    ...
 
-Write generator functions that convert data types and build dictionaries.
-For example:
+Write generator functions that convert data types and build dictionaries. For example:
 
 ```python
 # ticker.py
@@ -71,10 +65,8 @@ def parse_stock_data(lines):
 
 Run your program again. You should now a stream of dictionaries like this:
 
-```
-{ 'name':'BA', 'price':98.35, 'change':0.16 }
-{ 'name':'AA', 'price':39.63, 'change':-0.03 }
-{ 'name':'XOM', 'price':82.45, 'change': -0.23 }
-{ 'name':'PG', 'price':62.95, 'change':-0.12 }
-...
-```
+    { 'name':'BA', 'price':98.35, 'change':0.16 }
+    { 'name':'AA', 'price':39.63, 'change':-0.03 }
+    { 'name':'XOM', 'price':82.45, 'change': -0.23 }
+    { 'name':'PG', 'price':62.95, 'change':-0.12 }
+    ...

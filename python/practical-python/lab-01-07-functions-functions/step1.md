@@ -20,5 +20,4 @@ To call a function.
 a = sumcount(100)
 ```
 
-A function is a series of statements that perform some task and return a result.
-The `return` keyword is needed to explicitly specify the return value of the function.
+A function is a series of statements that perform some task and return a result. The `return` keyword is needed to explicitly specify the return value of the function.

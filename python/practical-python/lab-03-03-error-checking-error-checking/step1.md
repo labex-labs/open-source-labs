@@ -1,8 +1,6 @@
 # How programs fail
 
-Python performs no checking or validation of function argument types
-or values. A function will work on any data that is compatible with
-the statements in the function.
+Python performs no checking or validation of function argument types or values. A function will work on any data that is compatible with the statements in the function.
 
 ```python
 def add(x, y):

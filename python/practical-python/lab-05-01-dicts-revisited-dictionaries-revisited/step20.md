@@ -1,8 +1,6 @@
 # Exercise 5.3: The role of classes
 
-The definitions that make up a class definition are shared by all
-instances of that class. Notice, that all instances have a link back
-to their associated class:
+The definitions that make up a class definition are shared by all instances of that class. Notice, that all instances have a link back to their associated class:
 
 ```python
 >>> goog.__class__
@@ -22,9 +20,7 @@ Try calling a method on the instances:
 >>>
 ```
 
-Notice that the name 'cost' is not defined in either `goog.__dict__`
-or `ibm.__dict__`. Instead, it is being supplied by the class
-dictionary. Try this:
+Notice that the name 'cost' is not defined in either `goog.__dict__` or `ibm.__dict__`. Instead, it is being supplied by the class dictionary. Try this:
 
 ```python
 >>> Stock.__dict__['cost']
@@ -42,8 +38,7 @@ Try calling the `cost()` method directly through the dictionary:
 >>>
 ```
 
-Notice how you are calling the function defined in the class
-definition and how the `self` argument gets the instance.
+Notice how you are calling the function defined in the class definition and how the `self` argument gets the instance.
 
 Try adding a new attribute to the `Stock` class:
 
@@ -70,12 +65,9 @@ However, notice that it is not part of the instance dictionary:
 >>>
 ```
 
-The reason you can access the `foo` attribute on instances is that
-Python always checks the class dictionary if it can't find something
-on the instance itself.
+The reason you can access the `foo` attribute on instances is that Python always checks the class dictionary if it can't find something on the instance itself.
 
-Note: This part of the exercise illustrates something known as a class
-variable. Suppose, for instance, you have a class like this:
+Note: This part of the exercise illustrates something known as a class variable. Suppose, for instance, you have a class like this:
 
 ```python
 class Foo(object):
@@ -84,9 +76,7 @@ class Foo(object):
          self.b = b          # Instance variable
 ```
 
-In this class, the variable `a`, assigned in the body of the
-class itself, is a "class variable." It is shared by all of the
-instances that get created. For example:
+In this class, the variable `a`, assigned in the body of the class itself, is a "class variable." It is shared by all of the instances that get created. For example:
 
 ```python
 >>> f = Foo(10)

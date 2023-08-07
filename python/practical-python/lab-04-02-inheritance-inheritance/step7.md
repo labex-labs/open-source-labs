@@ -19,5 +19,4 @@ class MyStock(Stock):
         return self.factor * super().cost()
 ```
 
-You should call the `__init__()` method on the `super` which is the
-way to call the previous version as shown previously.
+You should call the `__init__()` method on the `super` which is the way to call the previous version as shown previously.

@@ -1,11 +1,8 @@
 # Exercise 3.11: Module imports
 
-In section 3, we created a general purpose function `parse_csv()` for
-parsing the contents of CSV datafiles.
+In section 3, we created a general purpose function `parse_csv()` for parsing the contents of CSV datafiles.
 
-Now, we’re going to see how to use that function in other programs.
-First, start in a new shell window. Navigate to the folder where you
-have all your files. We are going to import them.
+Now, we're going to see how to use that function in other programs. First, start in a new shell window. Navigate to the folder where you have all your files. We are going to import them.
 
 Start Python interactive mode.
 
@@ -17,9 +14,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-Once you’ve done that, try importing some of the programs you
-previously wrote. You should see their output exactly as before.
-Just to emphasize, importing a module runs its code.
+Once you've done that, try importing some of the programs you previously wrote. You should see their output exactly as before. Just to emphasize, importing a module runs its code.
 
 ```python
 >>> import bounce
@@ -31,8 +26,7 @@ Just to emphasize, importing a module runs its code.
 >>>
 ```
 
-If none of this works, you’re probably running Python in the wrong directory.
-Now, try importing your `fileparse` module and getting some help on it.
+If none of this works, you're probably running Python in the wrong directory. Now, try importing your `fileparse` module and getting some help on it.
 
 ```python
 >>> import fileparse
@@ -60,7 +54,7 @@ Try using the module to read some data:
 >>>
 ```
 
-Try importing a function so that you don’t need to include the module name:
+Try importing a function so that you don't need to include the module name:
 
 ```python
 >>> from fileparse import parse_csv

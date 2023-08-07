@@ -10,5 +10,4 @@ except Exception as e:
     raise
 ```
 
-This allows you to take action (e.g. logging) and pass the error on to
-the caller.
+This allows you to take action (e.g. logging) and pass the error on to the caller.

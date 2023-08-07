@@ -1,10 +1,6 @@
 # Exercise 1.18: Regular Expressions
 
-One limitation of the basic string operations is that they don't
-support any kind of advanced pattern matching. For that, you
-need to turn to Python's `re` module and regular expressions.
-Regular expression handling is a big topic, but here is a short
-example:
+One limitation of the basic string operations is that they don't support any kind of advanced pattern matching. For that, you need to turn to Python's `re` module and regular expressions. Regular expression handling is a big topic, but here is a short example:
 
 ```python
 >>> text = 'Today is 3/27/2018. Tomorrow is 3/28/2018.'
@@ -18,5 +14,4 @@ example:
 >>>
 ```
 
-For more information about the `re` module, see the official documentation at
-[https://docs.python.org/library/re.html](https://docs.python.org/3/library/re.html).
+For more information about the `re` module, see the official documentation at [https://docs.python.org/library/re.html](https://docs.python.org/3/library/re.html).

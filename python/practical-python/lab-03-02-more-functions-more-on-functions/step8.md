@@ -12,8 +12,7 @@ def read_portfolio(filename):
     return portfolio
 ```
 
-In this example, `filename`, `portfolio`, `line`, `fields` and `s` are local variables.
-Those variables are not retained or accessible after the function call.
+In this example, `filename`, `portfolio`, `line`, `fields` and `s` are local variables. Those variables are not retained or accessible after the function call.
 
 ```python
 >>> stocks = read_portfolio('portfolio.csv')

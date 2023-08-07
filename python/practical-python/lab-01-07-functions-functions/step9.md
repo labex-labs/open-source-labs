@@ -1,9 +1,6 @@
 # Exercise 1.32: Using a library function
 
-Python comes with a large standard library of useful functions. One
-library that might be useful here is the `csv` module. You should use
-it whenever you have to work with CSV data files. Here is an example
-of how it works:
+Python comes with a large standard library of useful functions. One library that might be useful here is the `csv` module. You should use it whenever you have to work with CSV data files. Here is an example of how it works:
 
 ```python
 >>> import csv
@@ -26,10 +23,6 @@ of how it works:
 >>>
 ```
 
-One nice thing about the `csv` module is that it deals with a variety
-of low-level details such as quoting and proper comma splitting. In
-the above output, you’ll notice that it has stripped the double-quotes
-away from the names in the first column.
+One nice thing about the `csv` module is that it deals with a variety of low-level details such as quoting and proper comma splitting. In the above output, you'll notice that it has stripped the double-quotes away from the names in the first column.
 
-Modify your `pcost.py` program so that it uses the `csv` module for
-parsing and try running earlier examples.
+Modify your `pcost.py` program so that it uses the `csv` module for parsing and try running earlier examples.

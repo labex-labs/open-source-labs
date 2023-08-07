@@ -10,6 +10,4 @@ names.remove('Curtis')
 del names[1]
 ```
 
-Removing an item does not create a hole. Other items will move down
-to fill the space vacated. If there are more than one occurrence of
-the element, `remove()` will remove only the first occurrence.
+Removing an item does not create a hole. Other items will move down to fill the space vacated. If there are more than one occurrence of the element, `remove()` will remove only the first occurrence.

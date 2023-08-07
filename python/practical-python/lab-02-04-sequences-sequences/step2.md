@@ -1,7 +1,6 @@
 # Slicing
 
-Slicing means to take a subsequence from a sequence.
-The syntax is `s[start:end]`. Where `start` and `end` are the indexes of the subsequence you want.
+Slicing means to take a subsequence from a sequence. The syntax is `s[start:end]`. Where `start` and `end` are the indexes of the subsequence you want.
 
 ```python
 a = [0,1,2,3,4,5,6,7,8]

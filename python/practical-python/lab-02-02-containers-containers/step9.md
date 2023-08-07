@@ -1,9 +1,6 @@
 # Exercise 2.4: A list of tuples
 
-The file `Data/portfolio.csv` contains a list of stocks in a
-portfolio. In [Exercise 1.30](../01_Introduction/07_Functions.md), you
-wrote a function `portfolio_cost(filename)` that read this file and
-performed a simple calculation.
+The file `Data/portfolio.csv` contains a list of stocks in a portfolio. In [Exercise 1.30](../01_Introduction/07_Functions.md), you wrote a function `portfolio_cost(filename)` that read this file and performed a simple calculation.
 
 Your code should have looked something like this:
 
@@ -26,21 +23,15 @@ def portfolio_cost(filename):
     return total_cost
 ```
 
-Using this code as a rough guide, create a new file `report.py`. In
-that file, define a function `read_portfolio(filename)` that opens a
-given portfolio file and reads it into a list of tuples. To do this,
-you’re going to make a few minor modifications to the above code.
+Using this code as a rough guide, create a new file `report.py`. In that file, define a function `read_portfolio(filename)` that opens a given portfolio file and reads it into a list of tuples. To do this, you're going to make a few minor modifications to the above code.
 
-First, instead of defining `total_cost = 0`, you’ll make a variable
-that’s initially set to an empty list. For example:
+First, instead of defining `total_cost = 0`, you'll make a variable that's initially set to an empty list. For example:
 
 ```python
 portfolio = []
 ```
 
-Next, instead of totaling up the cost, you’ll turn each row into a
-tuple exactly as you just did in the last exercise and append it to
-this list. For example:
+Next, instead of totaling up the cost, you'll turn each row into a tuple exactly as you just did in the last exercise and append it to this list. For example:
 
 ```python
 for row in rows:
@@ -48,11 +39,9 @@ for row in rows:
     portfolio.append(holding)
 ```
 
-Finally, you’ll return the resulting `portfolio` list.
+Finally, you'll return the resulting `portfolio` list.
 
-Experiment with your function interactively (just a reminder that in
-order to do this, you first have to run the `report.py` program in the
-interpreter):
+Experiment with your function interactively (just a reminder that in order to do this, you first have to run the `report.py` program in the interpreter):
 
 _Hint: Use `-i` when executing the file in the terminal_
 
@@ -77,10 +66,7 @@ _Hint: Use `-i` when executing the file in the terminal_
 >>>
 ```
 
-This list of tuples that you have created is very similar to a 2-D
-array. For example, you can access a specific column and row using a
-lookup such as `portfolio[row][column]` where `row` and `column` are
-integers.
+This list of tuples that you have created is very similar to a 2-D array. For example, you can access a specific column and row using a lookup such as `portfolio[row][column]` where `row` and `column` are integers.
 
 That said, you can also rewrite the last for-loop using a statement like this:
 

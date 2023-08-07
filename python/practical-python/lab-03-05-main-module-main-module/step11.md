@@ -1,7 +1,6 @@
 # The `#!` line
 
-On Unix, the `#!` line can launch a script as Python.
-Add the following to the first line of your script file.
+On Unix, the `#!` line can launch a script as Python. Add the following to the first line of your script file.
 
 ```python
 #!/usr/bin/env python3

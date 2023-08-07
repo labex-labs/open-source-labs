@@ -1,9 +1,6 @@
 # Exercise 1.5: The Bouncing Ball
 
-A rubber ball is dropped from a height of 100 meters and each time it
-hits the ground, it bounces back up to 3/5 the height it fell. Write
-a program `bounce.py` that prints a table showing the height of the
-first 10 bounces.
+A rubber ball is dropped from a height of 100 meters and each time it hits the ground, it bounces back up to 3/5 the height it fell. Write a program `bounce.py` that prints a table showing the height of the first 10 bounces.
 
 Your program should make a table that looks something like this:
 

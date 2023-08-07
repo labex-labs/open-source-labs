@@ -21,8 +21,7 @@ t = ()            # An empty tuple
 w = ('GOOG', )    # A 1-item tuple
 ```
 
-Tuples are often used to represent _simple_ records or structures.
-Typically, it is a single _object_ of multiple parts. A good analogy: _A tuple is like a single row in a database table._
+Tuples are often used to represent _simple_ records or structures. Typically, it is a single _object_ of multiple parts. A good analogy: _A tuple is like a single row in a database table._
 
 Tuple contents are ordered (like an array).
 
