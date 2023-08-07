@@ -1,0 +1,150 @@
+{
+  "type": "lab",
+  "title": "Exception Handling",
+  "description": "In this lab, we will review how to define simple functions and cover exception handling.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Defining a function",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please read the portfolio data in the \"portfolio.dat\" file and print the Floating point number of the total cost of the portfolio.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/string",
+          "python/with_statement",
+          "python/open",
+          "python/for_loop",
+          "python/list",
+          "python/int",
+          "python/float",
+          "python/try_except",
+          "python/repr",
+          "python/print"
+        ],
+        "solutions": [
+          "pcost.py"
+        ]
+      },
+      {
+        "title": "Adding Error Handling",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please use \"try\" and \"except\" to catch and print a warning message about lines that can't be parsed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/string",
+          "python/with_statement",
+          "python/open",
+          "python/for_loop",
+          "python/list",
+          "python/int",
+          "python/float",
+          "python/try_except",
+          "python/repr",
+          "python/print"
+        ],
+        "solutions": [
+          "pcost.py"
+        ]
+      },
+      {
+        "title": "Interactive Experimentation",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please run \"pcost.py\" program and call the \"portfolio_cost()\" function directly from the interactive interpreter.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/string",
+          "python/with_statement",
+          "python/open",
+          "python/for_loop",
+          "python/list",
+          "python/int",
+          "python/float",
+          "python/try_except",
+          "python/repr",
+          "python/print"
+        ],
+        "solutions": [
+          "pcost.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*_test.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "pcost.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio3.dat",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio2.dat",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.dat",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

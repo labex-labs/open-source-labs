@@ -1,0 +1,121 @@
+{
+  "type": "lab",
+  "title": "Redefining Special Methods",
+  "description": "In this lab, you will learn how to customize the behavior of objects by redefining special methods, change the way that user-defined objects get printed, make objects comparable, and create a context manager.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Better output for representing objects",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please add the \"__repr__\" method to the \"Stock\" class and run the python code in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/method_objects",
+          "python/f_string",
+          "python/type",
+          "python/datetime",
+          "python/modules",
+          "python/is",
+          "python/repr"
+        ],
+        "solutions": [
+          "step1_solution.py"
+        ]
+      },
+      {
+        "title": "Making objects comparable",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please add the \"__eq__\" method to the \"Stock\" class.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/method_objects",
+          "python/isinstance",
+          "python/logical_operator",
+          "python/instance_objects"
+        ],
+        "solutions": [
+          "step2_solution.py"
+        ]
+      },
+      {
+        "title": "A Context Manager",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please run the python code in step 3.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/sys",
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/open",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "tableformat.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "type": "lab",
+  "title": "Make a New Primitive Type",
+  "description": "In this lab, you will learn how to make a new primitive type by implementing the underlying protocols that make Python objects work.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Mutable Integers",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please create a new \"MutInt\" object.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/raise_errors"
+        ],
+        "solutions": [
+          "step1_solution.md"
+        ]
+      },
+      {
+        "title": "Fixing output",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please fix the output by giving the object methods.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/format",
+          "python/str",
+          "python/f_string",
+          "python/print"
+        ],
+        "solutions": [
+          "step2_solution.md"
+        ]
+      },
+      {
+        "title": "Math Operators",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please add math operators to the \"MutInt\" object.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/raise_errors",
+          "python/isinstance",
+          "python/list",
+          "python/tuple"
+        ],
+        "solutions": [
+          "step3_solution.md"
+        ]
+      },
+      {
+        "title": "Comparisons",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please fix the comparison function of the \"MutInt\" object.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/raise_errors",
+          "python/isinstance",
+          "python/functools",
+          "python/decorator"
+        ],
+        "solutions": [
+          "step4_solution.md"
+        ]
+      },
+      {
+        "title": "Conversions",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please fix the \"MutInt\" object type conversion function.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/raise_errors",
+          "python/functools",
+          "python/decorator",
+          "python/int",
+          "python/float"
+        ],
+        "solutions": [
+          "step5_solution.md"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

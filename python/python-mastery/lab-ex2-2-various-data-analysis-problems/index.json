@@ -1,0 +1,146 @@
+{
+  "type": "lab",
+  "title": "Various Data Analysis Problems",
+  "description": "In this lab, we will be working with various containers, utilizing list/set/dict comprehensions, exploring the collections module, and completing a data analysis challenge.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Preliminaries",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please write the code in step 1 in the \"readport.py\" file and print the read data in the python shell.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/pprint",
+          "python/with_statement",
+          "python/open",
+          "python/next",
+          "python/int",
+          "python/float",
+          "python/dict",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values"
+        ],
+        "solutions": [
+          "readport.py"
+        ]
+      },
+      {
+        "title": "Comprehensions",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please execute the python program statement in step 2.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/list_comprehension",
+          "python/sum",
+          "python/dict"
+        ]
+      },
+      {
+        "title": "Collections",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please execute the python program statement in step 3.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/collections",
+          "python/for_loop",
+          "python/list",
+          "python/dict"
+        ]
+      },
+      {
+        "title": "Data Analysis Challenge",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please answer the four questions in step 4 in the python shell.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/collections",
+          "python/tracemalloc",
+          "python/csv",
+          "python/set",
+          "python/print",
+          "python/len",
+          "python/dict",
+          "python/list",
+          "python/string"
+        ],
+        "solutions": [
+          "cta.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "readrides.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "ctabus.csv.zip",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "readport.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

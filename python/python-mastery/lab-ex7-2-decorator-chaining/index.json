@@ -1,0 +1,151 @@
+{
+  "type": "lab",
+  "title": "Decorator Chaining",
+  "description": "In this lab, the objectives are to learn about decorator chaining and defining decorators that accept arguments by modifying the `logcall.py` and `validate.py` files.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Copying Metadata",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/functools",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/decorator",
+          "python/help"
+        ],
+        "solutions": [
+          "step1_solution.py"
+        ]
+      },
+      {
+        "title": "Your first decorator with arguments",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/functools",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/decorator"
+        ],
+        "solutions": [
+          "logcall.py",
+          "sample.py"
+        ]
+      },
+      {
+        "title": "Multiple decorators and methods",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/decorator"
+        ],
+        "solutions": [
+          "spam.py"
+        ]
+      },
+      {
+        "title": "Validation (Redux)",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/functools",
+          "python/inspect",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/decorator",
+          "python/try_except",
+          "python/raise_errors",
+          "python/f_string"
+        ],
+        "solutions": [
+          "validate.py"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "logcall.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "sample.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "spam.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "validate.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}

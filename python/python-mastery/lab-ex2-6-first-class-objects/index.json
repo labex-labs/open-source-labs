@@ -1,0 +1,160 @@
+{
+  "type": "lab",
+  "title": "First-Class Objects",
+  "description": "In this lab, we will explore the power of having first-class objects and dive into Python's memory model by rewriting various functions for reading CSV data into a single file.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "First-class Data",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please run the python code in step 1.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/csv",
+          "python/open",
+          "python/next",
+          "python/list",
+          "python/zip",
+          "python/dict"
+        ]
+      },
+      {
+        "title": "Making a Parsing Utility Function",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please create the \"reader.py\" file and implement the \"read_csv_as_dicts()\" function.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/csv",
+          "python/with_statement",
+          "python/open",
+          "python/next",
+          "python/dict",
+          "python/for_loop",
+          "python/print",
+          "python/len"
+        ],
+        "solutions": [
+          "reader.py"
+        ]
+      },
+      {
+        "title": "Memory Revisited",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please run the python code in step 3.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/dict",
+          "python/list_comprehension",
+          "python/len",
+          "python/id",
+          "python/sys",
+          "python/is",
+          "python/tracemalloc"
+        ]
+      },
+      {
+        "title": "Special Challenge Project",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please implement \"read_csv_as_columns()\" function in \"colreader.py\"",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/collections",
+          "python/csv",
+          "python/with_statement",
+          "python/open",
+          "python/next",
+          "python/zip",
+          "python/list"
+        ],
+        "solutions": [
+          "colreader.py"
+        ]
+      },
+      {
+        "title": "Deep Thought",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please run the python code in step 5.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/modules",
+          "python/len"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "colreader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "ctabus.csv.zip",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  }
+}
