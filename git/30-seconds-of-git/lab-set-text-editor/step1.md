@@ -4,7 +4,7 @@ For this lab, let's use the repository from `https://github.com/labex-labs/git-p
 
 1. Clone the `git-playground` repository:
 ```shell
-git clone https://github.com/your-username/git-playground.git
+git clone https://github.com/labex-labs/git-playground
 ```
 2. Navigate to the cloned repository and configure the identity:
 ```shell
