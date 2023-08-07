@@ -1,2 +1,3 @@
 #!/bin/zsh
-(cd /home/labex/project/git-playground && ls | grep "file2.txt") && echo "True"
+(cd /home/labex/project/git-playground && cat file2.txt | grep "This is file2.") && echo "True"
+

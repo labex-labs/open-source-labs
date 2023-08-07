@@ -37,7 +37,7 @@ the hierarchy.
 With multiple inheritance, you get a different kind of inheritance that
 allows different classes to be composed together. Try this example:
 
-```
+```python
 >>> class Base:
         def spam(self):
             print('Base.spam')

@@ -6,13 +6,15 @@ You have just committed changes to your Git repository, but you realize that you
 
 ## Example
 
-To complete this challenge, you will need to use the Git repository named `https://github.com/labex-labs/git-playground` directory. Follow these steps:
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-1. Clone the repository to your local machine using the command `git clone https://github.com/labex-labs/git-playground`.
-2. Navigate to the repository directory using the command `cd git-playground`.
-3. Make some changes to the repository files using your preferred text editor.
-4. Add the changes to the staging area using the command `git add .`.
-5. Commit the changes using the command `git commit -m "Commit message"`.
-6. Check the commit history using the command `git log`.
-7. Use `git revert HEAD` to undo the last commit, creating a new commit with the inverse of the commit's changes.
-8. Check the commit history again using the command `git log`.
+1. Check the commit history.
+2. Undo the last commit, creating a new commit with the inverse of the commit's changes.
+
+This is the result of running the `git log --oneline` command:
+```shell
+532b49b (HEAD -> master) Revert "Added file2.txt"
+d22f46b (origin/master, origin/HEAD) Added file2.txt
+cf80005 Added file1.txt
+b00b937 Initial commit
+```

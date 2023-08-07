@@ -24,7 +24,7 @@ def print_table(records, fields, formatter):
 
 These two classes are meant to be used together. For example:
 
-```
+```python
 >>> import stock, reader, tableformat
 >>> portfolio = reader.read_csv_as_instances('portfolio.csv', stock.Stock)
 >>> formatter = tableformat.TableFormatter()

@@ -33,5 +33,5 @@ def read_portfolio(filename):
 if __name__ == "__main__":
     import tableformat
 
-    portfolio = read_portfolio("../../portfolio.csv")
+    portfolio = read_portfolio("/home/labex/project/portfolio.csv")
     tableformat.print_table(portfolio, ["name", "shares", "price"])

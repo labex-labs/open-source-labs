@@ -22,7 +22,7 @@ TypeError: Expected a Decimal
 
 **Discussion**
 
-The resulting `Stock` class at the end of this exercise is a muddled
+The resulting `Stock` class at the end of this lab is a muddled
 mess of properties, type checking, constructors, and other details.
 Imagine how unpleasant it would be to maintain code that featured
 dozens or hundreds of such class definitions.

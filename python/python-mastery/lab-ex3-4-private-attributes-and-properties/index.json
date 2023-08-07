@@ -29,12 +29,19 @@
           {
             "name": "Test the completion of step 2",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please convert \"cost()\" to a attribute and run the python code in step 2.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/class",
+          "python/method_objects",
+          "python/decorator"
+        ],
+        "solutions": [
+          "step2_solution.py"
+        ]
       },
       {
         "title": "Enforcing Validation Rules",
@@ -43,12 +50,21 @@
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please modify the \"shares\" and \"price\" attribute as required and run the python code in step 3.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/class",
+          "python/attributes",
+          "python/decorator",
+          "python/instance_objects",
+          "python/raise_errors"
+        ],
+        "solutions": [
+          "step3_solution.py"
+        ]
       },
       {
         "title": "Adding `__slots__`",
@@ -57,12 +73,18 @@
           {
             "name": "Test the completion of step 4",
             "file": "verify4.sh",
-            "hint": "Please check the step 4 carefully.",
+            "hint": "Please use \"__slots__\" in the \"stock\" class.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/attributes",
+          "python/private_variables"
+        ],
+        "solutions": [
+          "step4_solution.py"
+        ]
       },
       {
         "title": "Reconciling Types",
@@ -71,12 +93,19 @@
           {
             "name": "Test the completion of step 5",
             "file": "verify5.sh",
-            "hint": "Please check the step 5 carefully.",
+            "hint": "Please run the python code in step 5.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/decimal",
+          "python/class",
+          "python/inheritance",
+          "python/raise_errors",
+          "python/int",
+          "python/str"
+        ]
       }
     ],
     "intro": {
@@ -89,7 +118,7 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "stock.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         }

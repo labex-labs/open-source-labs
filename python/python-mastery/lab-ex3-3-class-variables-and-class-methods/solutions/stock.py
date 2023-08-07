@@ -41,6 +41,7 @@ if __name__ == "__main__":
     import tableformat
     import reader
 
-    # portfolio = read_portfolio('../../portfolio.csv')
-    portfolio = reader.read_csv_as_instances("../../portfolio.csv", Stock)
+    # portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+    portfolio = reader.read_csv_as_instances(
+        "/home/labex/project/portfolio.csv", Stock)
     tableformat.print_table(portfolio, ["name", "shares", "price"])

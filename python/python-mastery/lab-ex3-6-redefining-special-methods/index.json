@@ -15,12 +15,23 @@
           {
             "name": "Test the completion of step 1",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please add the \"__repr__\" method to the \"Stock\" class and run the python code in step 1.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/method_objects",
+          "python/f_string",
+          "python/type",
+          "python/datetime",
+          "python/modules",
+          "python/is",
+          "python/repr"
+        ],
+        "solutions": [
+          "step1_solution.py"
+        ]
       },
       {
         "title": "Making objects comparable",
@@ -29,12 +40,20 @@
           {
             "name": "Test the completion of step 2",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please add the \"__eq__\" method to the \"Stock\" class.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/method_objects",
+          "python/isinstance",
+          "python/logical_operator",
+          "python/instance_objects"
+        ],
+        "solutions": [
+          "step2_solution.py"
+        ]
       },
       {
         "title": "A Context Manager",
@@ -43,12 +62,20 @@
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please run the python code in step 3.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/modules",
+          "python/sys",
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/open",
+          "python/with_statement"
+        ]
       }
     ],
     "intro": {
@@ -61,7 +88,17 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "tableformat.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },

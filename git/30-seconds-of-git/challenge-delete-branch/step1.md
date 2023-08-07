@@ -8,12 +8,10 @@ You have created a local branch in your Git repository, and you no longer need i
 
 1. Navigate to the cloned repository.
 2. View current branches.
-3. Switch back to the `master` branch.
-4. Delete the `feature-1` branch.
-5. Verify that the branch has been deleted.
+3. Delete the `feature-1` branch.
+4. Verify that the branch has been deleted.
 
-Output:
-
+This is the result of running the `git branch` command:
 ```
 * master
 ```

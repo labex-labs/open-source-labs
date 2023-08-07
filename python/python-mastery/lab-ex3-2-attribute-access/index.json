@@ -15,12 +15,16 @@
           {
             "name": "Test the completion of step 1",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please run the python code in step 1.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/class",
+          "python/del",
+          "python/attributes"
+        ]
       },
       {
         "title": "Using getattr()",
@@ -29,12 +33,18 @@
           {
             "name": "Test the completion of step 2",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please run the python code in step 2.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/class",
+          "python/list",
+          "python/attributes",
+          "python/for_loop",
+          "python/print"
+        ]
       },
       {
         "title": "Table Output",
@@ -43,12 +53,25 @@
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please create the \"tableformat.py\" file and implement the \"print_table()\" function.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/modules",
+          "python/function_basic",
+          "python/function_arguments",
+          "python/return_values",
+          "python/attributes",
+          "python/string",
+          "python/len",
+          "python/print",
+          "python/for_loop"
+        ],
+        "solutions": [
+          "tableformat.py"
+        ]
       },
       {
         "title": "Bound Methods",
@@ -57,12 +80,18 @@
           {
             "name": "Test the completion of step 4",
             "file": "verify4.sh",
-            "hint": "Please check the step 4 carefully.",
+            "hint": "Please run the python code in step 4.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/modules",
+          "python/class",
+          "python/method_objects",
+          "python/instance_objects",
+          "python/attributes"
+        ]
       }
     ],
     "intro": {
@@ -75,7 +104,7 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "stock.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },

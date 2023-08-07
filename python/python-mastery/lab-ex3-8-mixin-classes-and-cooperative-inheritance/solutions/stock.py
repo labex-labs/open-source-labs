@@ -69,7 +69,7 @@ if __name__ == "__main__":
         UpperHeadersMixin,
     )
 
-    portfolio = reader.read_csv_as_instances("../../portfolio.csv", Stock)
+    portfolio = reader.read_csv_as_instances("/home/labex/project/portfolio.csv", Stock)
 
     class PortfolioFormatter(ColumnFormatMixin, TextTableFormatter):
         formats = ["%s", "%d", "%0.2f"]

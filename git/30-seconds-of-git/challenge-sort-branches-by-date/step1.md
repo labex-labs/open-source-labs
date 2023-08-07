@@ -6,22 +6,15 @@ You have a Git repository with multiple branches, and you want to sort them by d
 
 ## Example
 
-For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. Clone the repository to your local machine using the following command:
+For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
-```shell
-git clone https://github.com/labex-labs/git-playground.git
-```
-
-Once you have cloned the repository, navigate to the directory using the following command:
-
-```shell
-cd git-playground
-```
-
-Now, to sort the branches by date, use the following command:
-
-```shell
-git branch --sort=-committerdate
-```
+1. Clone the repository, navigate to the directory and configure the identity.
+2. Create a branch called `one`, create a file named `hello.txt` and commit it with the commit message "hello.txt".
+3. Switch to the branch named `master` and create a branch named `two`.
+4. Now, sort the branches by date.
 
 This will display a list of all local branches and sort them based on the date of their last commit. You can use the arrow keys to navigate the list, and press <kbd>Q</kbd> to exit.
+
+This is the finished result:
+
+![<result>](./assets/challenge-sort-branches-by-date.png)

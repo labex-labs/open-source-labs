@@ -6,15 +6,12 @@ As a developer, you want to automate the process of creating upstream branches o
 
 ## Example
 
-For this challenge, you will fork the https://github.com/labex-labs/git-playground repository to your account, using the `git-playground` repository on your account to automatically create the upstream branch on push.
+To complete the challenge, you will use the Git repository `git-playground` in your GitHub account to automatically create an upstream branch at push time from a fork of `https://github.com/labex-labs/git-playground.git`.
 
-1. On the GitHub website, log in to your account and find https://github.com/labex-labs/git-playground to fork the repository to your account.
-2. On the page for your own forked repository, click the `Code` button and copy the URL of the repository.
-3. Clone the repository to your local machine.
-4. Navigate to the repository directory.
-5. Use a command to enable automatic upstream branch creation on push.
-6. Push your changes to a new branch called `new-feature`, which does not exist in the remote repository.
-7. Verify that the new branch has been created on the remote repository.
+1. Clone the repository, navigate to the directory and configure the identity.
+2. Enable automatic upstream branch creation on push.
+3. Create and switch to a branch called `new-feature`, add the `hello.txt` file and write "hello,world" in it, add it to the staging area and commit it with the message "Added hello.txt".
+4. Push your changes to a new branch called `new-feature`, which does not exist in the remote repository.
 
 This is the result after completing the challenge:
 

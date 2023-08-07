@@ -15,12 +15,24 @@
           {
             "name": "Test the completion of step 1",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please modify the \"print_table()\" function and run the python code in step 1.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/class",
+          "python/list_comprehension",
+          "python/attributes",
+          "python/method_objects",
+          "python/function_basic",
+          "python/isinstance",
+          "python/raise_errors",
+          "python/for_loop"
+        ],
+        "solutions": [
+          "step1_solution.py"
+        ]
       },
       {
         "title": "Abstract Base Classes",
@@ -29,12 +41,23 @@
           {
             "name": "Test the completion of step 2",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please modify the \"TableFormatter\" class and run the python code in step 2.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/abc",
+          "python/class",
+          "python/method_objects",
+          "python/decorator",
+          "python/inheritance",
+          "python/instance_objects",
+          "python/raise_errors"
+        ],
+        "solutions": [
+          "step2_solution.py"
+        ]
       },
       {
         "title": "Algorithm Template Classes",
@@ -43,12 +66,29 @@
           {
             "name": "Test the completion of step 3",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please complete the contents of the \"reader.py\" file as required and execute the python code in step 3.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/csv",
+          "python/abc",
+          "python/with_statement",
+          "python/open",
+          "python/next",
+          "python/function_basic",
+          "python/method_objects",
+          "python/decorator",
+          "python/inheritance",
+          "python/modules",
+          "python/list",
+          "python/list_comprehension",
+          "python/zip"
+        ],
+        "solutions": [
+          "step3_solution.py"
+        ]
       }
     ],
     "intro": {
@@ -61,7 +101,17 @@
     "assets": {
       "host01": [
         {
-          "file": "",
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "tableformat.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         },

@@ -1,6 +1,6 @@
 # Printing a Table
 
-Table the data read in part (b) and use it to make a nicely formatted
+Table the data read in step 2 and use it to make a nicely formatted
 table. For example:
 
 ```python
@@ -36,3 +36,7 @@ For example:
        IBM        100      70.44
 >>>
 ```
+
+## Note:
+
+Complete the `print_portfolio()` function in the `stock.py` file.
