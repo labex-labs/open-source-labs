@@ -1,7 +1,6 @@
 # Introduction
 
-This section is a slight digression, but when you work with data, you
-often want to produce structured output (tables, etc.). For example:
+This section is a slight digression, but when you work with data, you often want to produce structured output (tables, etc.). For example:
 
 ```code
       Name      Shares        Price

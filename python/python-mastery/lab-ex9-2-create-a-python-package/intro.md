@@ -6,5 +6,4 @@
 
 **Note**
 
-This exercise mostly just involves copying files on the file system.
-There shouldn't be a lot of coding.
+This exercise mostly just involves copying files on the file system. There shouldn't be a lot of coding.

@@ -3,4 +3,4 @@
 **Objectives:**
 
 - Learn about customizing attribute access
-- Delegation vs. inheritance
+- Delegation vs. inheritance

@@ -6,5 +6,4 @@
 
 **Files Modified:** `validate.py`, `structure.py`
 
-In this exercise, we look at the mechanics of how classes are actually
-created.
+In this exercise, we look at the mechanics of how classes are actually created.

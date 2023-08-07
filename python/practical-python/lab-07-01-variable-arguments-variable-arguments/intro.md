@@ -1,4 +1,3 @@
 # Introduction
 
-This section covers variadic function arguments, sometimes described as
-`*args` and `**kwargs`.
+This section covers variadic function arguments, sometimes described as `*args` and `**kwargs`.

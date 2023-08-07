@@ -7,6 +7,4 @@
 
 **Files Created:** `reader.py`
 
-In previous exercises, you wrote various functions for reading CSV data in different
-files. Surely this is a problem that could be generalized in some way. In this
-exercise, we explore that idea.
+In previous exercises, you wrote various functions for reading CSV data in different files. Surely this is a problem that could be generalized in some way. In this exercise, we explore that idea.
