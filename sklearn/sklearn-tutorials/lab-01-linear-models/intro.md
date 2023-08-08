@@ -12,3 +12,8 @@ We will cover the following topics:
 - Perceptron
 
 > You can write code in `01-linear-models.ipynb`.
+
+---
+
+> If you are a new user of LabEx, please learn [A Beginner's Guide to LabEx](https://labex.io/courses/a-beginner-guide-to-labex) first.
+> [![](https://file.labex.io/course/cover-bf7803962805dbe930349a46d383193e.png)](https://labex.io/courses/a-beginner-guide-to-labex)
