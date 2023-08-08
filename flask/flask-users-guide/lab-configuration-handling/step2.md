@@ -19,5 +19,3 @@ def hello():
 ```
 
 Restart the Flask application and visit `http://localhost:5000` to see the updated message with the secret key.
-
-

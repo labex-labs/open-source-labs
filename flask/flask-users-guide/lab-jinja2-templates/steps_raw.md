@@ -39,7 +39,7 @@ In this code, we create a new Flask application and define a route for the root 
 Create a new directory called `templates` in the same directory as your `app.py` file. Inside the `templates` directory, create a new file called `index.html`. This file will contain the HTML code for your template.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Flask Jinja2 Templates Lab</title>

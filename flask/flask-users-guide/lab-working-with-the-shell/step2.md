@@ -21,5 +21,3 @@ ctx.push()
 # Pop the request context
 ctx.pop()
 ```
-
-

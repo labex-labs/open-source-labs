@@ -42,5 +42,3 @@ Before you can start writing tests for your Flask application, you need to set u
    def runner(app):
        return app.test_cli_runner()
    ```
-
-

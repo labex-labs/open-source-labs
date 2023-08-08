@@ -7,5 +7,3 @@ flask run
 ```
 
 This will start the development server on `http://localhost:5000/`. You can access your Flask application by opening a web browser and entering this URL.
-
-

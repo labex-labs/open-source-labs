@@ -34,5 +34,3 @@ Now that you have set up the testing environment, you can start writing tests fo
    ```
 
    This test invokes a command named "hello" and checks that the command exits with a code of 0 and the output contains the string "Hello, World!".
-
-

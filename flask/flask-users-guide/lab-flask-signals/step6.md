@@ -7,5 +7,3 @@ To subscribe to a signal, use the `connect` method of the signal. Provide a func
 def on_model_saved(sender):
     print("Model saved!")
 ```
-
-

@@ -23,5 +23,3 @@ python commands.py John
 ```
 
 You should see the message "Hello, John!" printed in the terminal.
-
-

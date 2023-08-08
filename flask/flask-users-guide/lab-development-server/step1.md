@@ -16,5 +16,3 @@ if __name__ == "__main__":
 ```
 
 In this code, we create a Flask application and define a route that returns a simple "Hello, Flask!" message. The `if __name__ == "__main__":` block ensures that the Flask application is only run when the script is executed directly, not when it is imported as a module.
-
-

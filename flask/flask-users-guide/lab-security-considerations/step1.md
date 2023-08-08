@@ -24,5 +24,3 @@ def index():
 ```
 
 To run the code, save it in a file called `app.py` and execute the command `flask run`.
-
-

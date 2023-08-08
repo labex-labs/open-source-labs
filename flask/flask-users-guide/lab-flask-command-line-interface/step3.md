@@ -7,5 +7,3 @@ flask run
 ```
 
 You should see the Flask development server start and display the URL where your application is running (usually `http://127.0.0.1:5000/`). Open that URL in your browser and you should see the "Hello, Flask!" message.
-
-

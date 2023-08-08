@@ -7,5 +7,3 @@ Command Line Interface:
 ```
 flask shell
 ```
-
-

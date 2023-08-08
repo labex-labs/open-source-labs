@@ -5,5 +5,3 @@ Before we begin, make sure you have Flask and Blinker installed. You can install
 ```
 pip install flask blinker
 ```
-
-

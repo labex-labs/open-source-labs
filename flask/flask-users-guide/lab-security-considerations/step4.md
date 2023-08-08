@@ -8,5 +8,3 @@ Browsers recognize various response headers to control security. It is recommend
 - X-Frame-Options: Prevents external sites from embedding your site in an iframe.
 
 You can use the `Flask-Talisman` extension to manage HTTPS and security headers in your Flask application.
-
-

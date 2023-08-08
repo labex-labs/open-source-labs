@@ -7,5 +7,3 @@ flask run --debug
 ```
 
 Now, any changes you make to your code will trigger an automatic reload of the development server.
-
-

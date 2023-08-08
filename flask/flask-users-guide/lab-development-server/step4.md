@@ -7,5 +7,3 @@ flask run --app myapp.py
 ```
 
 Replace `myapp.py` with the name of your application file.
-
-

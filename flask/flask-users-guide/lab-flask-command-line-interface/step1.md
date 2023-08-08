@@ -5,5 +5,3 @@ Before getting started, make sure you have Flask installed in your Python enviro
 ```
 pip install flask
 ```
-
-
