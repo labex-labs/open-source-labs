@@ -3,7 +3,7 @@
 Create a new directory called `templates` in the same directory as your `app.py` file. Inside the `templates` directory, create a new file called `index.html`. This file will contain the HTML code for your template.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Flask Jinja2 Templates Lab</title>
@@ -16,5 +16,3 @@ Create a new directory called `templates` in the same directory as your `app.py`
 ```
 
 In this template, we have a simple HTML structure with a heading and a paragraph. You can customize the content of the template to fit your needs.
-
-

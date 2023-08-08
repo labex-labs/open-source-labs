@@ -6,5 +6,3 @@ Before we begin, make sure you have Flask and Jinja2 installed in your Python en
 pip install Flask
 pip install Jinja2
 ```
-
-

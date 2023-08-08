@@ -5,5 +5,3 @@ Create a new signal in your namespace. Give it a descriptive name to identify th
 ```python
 model_saved = my_signals.signal('model-saved')
 ```
-
-

@@ -4,7 +4,7 @@ Our first step is to create a base layout that will be used for all our pages. T
 
 ```html
 <!-- flaskr/templates/base.html -->
-<!DOCTYPE html>
+<!doctype html>
 <title>{% block title %}{% endblock %} - Flaskr</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 <nav>

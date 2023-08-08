@@ -20,5 +20,3 @@ Save the file and execute it using the following command in your terminal:
 ```
 python app.py
 ```
-
-

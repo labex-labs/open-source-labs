@@ -16,5 +16,3 @@ app.config.from_object('config')
 The `from_object` method loads the configuration from the `config` module. Now, the `DEBUG` and `SECRET_KEY` values will be loaded from the `config.py` file.
 
 Restart the Flask application and visit `http://localhost:5000` to see the updated message with the new configuration values.
-
-

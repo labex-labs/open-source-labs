@@ -28,5 +28,3 @@ else:
 The `FLASK_ENV` environment variable is used to determine the environment. If it is set to `'production'`, the production configuration will be loaded; otherwise, the development configuration will be loaded.
 
 Set the `FLASK_ENV` environment variable to `'production'` and restart the Flask application. Visit `http://localhost:5000` to see the updated message with the production configuration values.
-
-

@@ -6,5 +6,3 @@ In your Flask application, import the necessary modules:
 from flask import Flask
 from blinker import Namespace
 ```
-
-

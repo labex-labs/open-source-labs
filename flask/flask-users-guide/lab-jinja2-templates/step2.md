@@ -16,5 +16,3 @@ if __name__ == '__main__':
 ```
 
 In this code, we create a new Flask application and define a route for the root URL ("/"). When a user visits the root URL, the `index()` function will be called and it will render the `index.html` template.
-
-

@@ -11,5 +11,3 @@ Routes in Flask define the URL patterns for your application. Let's create a bas
    ```
 
 2. Save the file.
-
-

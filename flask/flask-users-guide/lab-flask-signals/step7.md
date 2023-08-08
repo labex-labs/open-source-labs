@@ -5,5 +5,3 @@ To emit a signal, call the `send` method of the signal. Pass the sender as the f
 ```python
 model_saved.send(app)
 ```
-
-

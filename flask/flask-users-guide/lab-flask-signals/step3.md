@@ -5,5 +5,3 @@ Create a Flask application instance:
 ```python
 app = Flask(__name__)
 ```
-
-

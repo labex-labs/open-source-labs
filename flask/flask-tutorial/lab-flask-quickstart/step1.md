@@ -19,5 +19,3 @@ To get started with Flask, you need to install it and set up a new project. Foll
 
    app = Flask(__name__)
    ```
-
-

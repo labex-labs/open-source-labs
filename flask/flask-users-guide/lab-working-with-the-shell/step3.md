@@ -48,5 +48,3 @@ app.process_response(app.response_class())
 # Pop the request context
 ctx.pop()
 ```
-
-
