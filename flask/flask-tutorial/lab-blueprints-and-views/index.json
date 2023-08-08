@@ -1,0 +1,126 @@
+{
+  "type": "lab",
+  "title": "Flask Blueprint Lab",
+  "description": "In this lab, we will walk through how to create and use Flask blueprints to structure your application using views. Flask blueprints allow you to group related views, code, and resources together making your application modular and scalable. We will create a simple application which will include user authentication and blog posts functionality.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Blueprint",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Register the Blueprint",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Implement Registration View",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Implement Login View",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Implement Logout View",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      },
+      {
+        "title": "Implement Login Required Decorator",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["python/flask"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204",
+    "services": [
+      {
+        "type": "iframe",
+        "name": "HTTP 5000",
+        "port": 5000
+      }
+    ]
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
+    "repo": "https://github.com/pallets/flask"
+  }
+}
