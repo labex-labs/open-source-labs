@@ -1,0 +1,58 @@
+{
+  "type": "lab",
+  "title": "Using Async and Await in Flask",
+  "description": "This lab will guide you through the process of using `async` and `await` in Flask, a popular Python web framework. You will learn how to define asynchronous views and handlers, understand the performance implications of using async code, and explore background tasks in Flask.",
+  "difficulty": "Beginner",
+  "time": 5,
+  "details": {
+    "steps": [
+      {
+        "title": "Defining an Async View",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204",
+    "services": [
+      {
+        "type": "iframe",
+        "name": "HTTP 5000",
+        "port": 5000
+      }
+    ]
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
+    "repo": "https://github.com/pallets/flask"
+  }
+}

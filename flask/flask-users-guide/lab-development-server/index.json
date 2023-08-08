@@ -1,0 +1,138 @@
+{
+  "type": "lab",
+  "title": "Development Server",
+  "description": "In this tutorial, you will learn how to use the development server in Flask to run your Flask application during local development. The development server provides an interactive debugger and automatically reloads the code when changes are made. This tutorial will guide you through the steps to run the development server and handle common issues that may arise.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "details": {
+    "steps": [
+      {
+        "title": "Set up Flask Application",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Run Development Server with Flask CLI",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Enable Debug Mode",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Specify Application File",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Address Already in Use",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      },
+      {
+        "title": "Running the Development Server from Python",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to run the Flask service on HTTP 5000.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "python/flask"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204",
+    "services": [
+      {
+        "type": "iframe",
+        "name": "HTTP 5000",
+        "port": 5000
+      }
+    ]
+  },
+  "license": {
+    "name": "BSD 3-Clause",
+    "url": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
+    "repo": "https://github.com/pallets/flask"
+  }
+}
