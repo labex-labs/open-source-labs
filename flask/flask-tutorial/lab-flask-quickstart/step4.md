@@ -9,7 +9,7 @@ Flask uses Jinja2 templates to generate HTML content. Let's create a template fi
 3. Open the `index.html` file and add the following HTML code:
 
    ```html
-   <!DOCTYPE html>
+   <!doctype html>
    <html>
      <head>
        <title>Flask Quickstart</title>
@@ -29,5 +29,3 @@ Flask uses Jinja2 templates to generate HTML content. Let's create a template fi
    def hello_world():
        return render_template("index.html")
    ```
-
-

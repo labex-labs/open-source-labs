@@ -11,5 +11,3 @@ Now that you have set up your Flask application and created a basic route, let's
    ```
 
 3. You should see some output indicating that the server is running. Open your web browser and visit `http://localhost:5000` to see the "Hello, World!" message.
-
-

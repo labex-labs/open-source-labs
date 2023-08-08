@@ -11,5 +11,3 @@ Now that we have added an HTML template, let's run the application again and see
    ```
 
 3. Visit `http://localhost:5000` in your web browser. You should now see the "Hello, World!" message displayed in the HTML template.
-
-

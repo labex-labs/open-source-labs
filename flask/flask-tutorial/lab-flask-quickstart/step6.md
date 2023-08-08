@@ -15,5 +15,3 @@ Flask allows us to pass dynamic content to our templates. Let's modify our route
    ```html
    <h1>Hello, {{ name }}!</h1>
    ```
-
-
