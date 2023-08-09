@@ -15,7 +15,7 @@ Flask uses Jinja2 templates to generate HTML content. Let's create a template fi
        <title>Flask Quickstart</title>
      </head>
      <body>
-       <h1>Hello, World!</h1>
+       <h1>Hello, Flask!</h1>
      </body>
    </html>
    ```

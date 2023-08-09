@@ -7,7 +7,9 @@ Now that we have added an HTML template, let's run the application again and see
 2. Run the following command to start the server again:
 
    ```bash
-   flask run
+   flask run --host=0.0.0.0
    ```
 
-3. Visit `http://localhost:5000` in your web browser. You should now see the "Hello, World!" message displayed in the HTML template.
+You should now see the "Hello, Flask!" message displayed in the HTML template.
+
+![Hello, Flask!](./assets/hello-flask.png)
