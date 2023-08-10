@@ -21,3 +21,6 @@ ax.fill_betweenx(y, x1, x2, where=x2 <= x1, facecolor='red', alpha=0.5)
 
 plt.show()
 ```
+
+Output:
+![Using Masked Arrays](https://i.imgur.com/8D1r5Gf.png)

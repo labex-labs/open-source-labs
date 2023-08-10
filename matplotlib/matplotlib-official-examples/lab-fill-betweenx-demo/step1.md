@@ -18,3 +18,6 @@ ax.plot(x2, y, color='red')
 
 plt.show()
 ```
+
+Output:
+![Simple Fill Betweenx](https://i.imgur.com/9XKz7zD.png)

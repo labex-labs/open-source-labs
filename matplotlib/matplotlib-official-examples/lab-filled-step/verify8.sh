@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep 'set_major_locator'
+git diff | grep ''

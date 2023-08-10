@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep 'monospace'
+git diff | grep ''

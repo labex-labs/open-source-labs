@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep 'layout'
+git diff | grep ''

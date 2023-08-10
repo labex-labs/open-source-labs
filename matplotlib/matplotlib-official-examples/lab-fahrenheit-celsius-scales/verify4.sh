@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git diff | grep 'connect'
+git diff | grep ''
