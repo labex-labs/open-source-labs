@@ -27,6 +27,3 @@ ax3.set_title('Fill between (x1, x2)')
 
 plt.show()
 ```
-
-Output:
-![Multiple Subplots](https://i.imgur.com/UwJQKmJ.png)
