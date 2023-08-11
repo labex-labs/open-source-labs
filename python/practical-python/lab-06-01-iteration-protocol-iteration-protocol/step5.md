@@ -49,7 +49,7 @@ Try running the `report.py` program. You will find that it fails spectacularly d
 
 ```python
 >>> import report
->>> report.portfolio_report('Data/portfolio.csv', 'Data/prices.csv')
+>>> report.portfolio_report('portfolio.csv', 'prices.csv')
 ... crashes ...
 ```
 
@@ -96,7 +96,7 @@ Test it to make sure it works:
 
 ```python
 >>> import pcost
->>> pcost.portfolio_cost('Data/portfolio.csv')
+>>> pcost.portfolio_cost('portfolio.csv')
 44671.15
 >>>
 ```

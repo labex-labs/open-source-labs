@@ -20,7 +20,7 @@ Once you've made the change, trying reading a file with some errors:
 
 ```python
 >>> import report
->>> port = report.read_portfolio('Data/missing.csv')
+>>> port = report.read_portfolio('missing.csv')
 Row 4: Couldn't convert ['MSFT', '', '51.23']
 Row 4: Reason invalid literal for int() with base 10: ''
 Row 7: Couldn't convert ['IBM', '', '70.44']
@@ -32,6 +32,6 @@ Now, try silencing the errors:
 
 ```python
 >>> import report
->>> port = report.read_portfolio('Data/missing.csv', silence_errors=True)
+>>> port = report.read_portfolio('missing.csv', silence_errors=True)
 >>>
 ```

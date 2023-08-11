@@ -15,7 +15,7 @@ This function is almost exactly the same as the first generator example in the p
 
 ```python
 >>> from follow import follow
->>> lines = follow('Data/stocklog.csv')
+>>> lines = follow('stocklog.csv')
 >>> ibm = filematch(lines, 'IBM')
 >>> for line in ibm:
         print(line)

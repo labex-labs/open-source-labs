@@ -1,6 +1,6 @@
 # Exercise 2.24: First-class Data
 
-In the file `Data/portfolio.csv`, we read data organized as columns that look like this:
+In the file `portfolio.csv`, we read data organized as columns that look like this:
 
 ```csv
 name,shares,price
@@ -33,7 +33,7 @@ Now, read a row of data from the above file:
 
 ```python
 >>> import csv
->>> f = open('Data/portfolio.csv')
+>>> f = open('portfolio.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> row = next(rows)

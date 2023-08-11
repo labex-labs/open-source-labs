@@ -80,7 +80,7 @@ To use this new Portfolio class, you can now write code like this:
 
 ```python
 >>> from portfolio import Portfolio
->>> with open('Data/portfolio.csv') as lines:
+>>> with open('portfolio.csv') as lines:
 ...     port = Portfolio.from_csv(lines)
 ...
 >>>

@@ -16,7 +16,7 @@ An example when reading records from a file.
 ```python
 records = []  # Initial empty list
 
-with open('Data/portfolio.csv', 'rt') as f:
+with open('portfolio.csv', 'rt') as f:
     next(f) # Skip header
     for line in f:
         row = line.split(',')

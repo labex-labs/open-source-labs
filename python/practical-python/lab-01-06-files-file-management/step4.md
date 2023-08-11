@@ -3,7 +3,7 @@
 First, try reading the entire file all at once as a big string:
 
 ```python
->>> with open('Data/portfolio.csv', 'rt') as f:
+>>> with open('portfolio.csv', 'rt') as f:
         data = f.read()
 
 >>> data
@@ -27,7 +27,7 @@ Although reading a file all at once is simple, it is often not the most appropri
 To read a file line-by-line, use a for-loop like this:
 
 ```python
->>> with open('Data/portfolio.csv', 'rt') as f:
+>>> with open('portfolio.csv', 'rt') as f:
         for line in f:
             print(line, end='')
 
@@ -43,7 +43,7 @@ When you use this code as shown, lines are read until the end of the file is rea
 On certain occasions, you might want to manually read or skip a _single_ line of text (e.g., perhaps you want to skip the first line of column headers).
 
 ```python
->>> f = open('Data/portfolio.csv', 'rt')
+>>> f = open('portfolio.csv', 'rt')
 >>> headers = next(f)
 >>> headers
 'name,shares,price\n'
@@ -62,7 +62,7 @@ On certain occasions, you might want to manually read or skip a _single_ line of
 Once you're reading lines of a file, you can start to perform more processing such as splitting. For example, try this:
 
 ```python
->>> f = open('Data/portfolio.csv', 'rt')
+>>> f = open('portfolio.csv', 'rt')
 >>> headers = next(f).split(',')
 >>> headers
 ['name', 'shares', 'price\n']

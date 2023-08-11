@@ -1,6 +1,6 @@
 # Exercise 2.4: A list of tuples
 
-The file `Data/portfolio.csv` contains a list of stocks in a portfolio. In [Exercise 1.30](../01_Introduction/07_Functions.md), you wrote a function `portfolio_cost(filename)` that read this file and performed a simple calculation.
+The file `portfolio.csv` contains a list of stocks in a portfolio. In Exercise 1.30, you wrote a function `portfolio_cost(filename)` that read this file and performed a simple calculation.
 
 Your code should have looked something like this:
 
@@ -46,7 +46,7 @@ Experiment with your function interactively (just a reminder that in order to do
 _Hint: Use `-i` when executing the file in the terminal_
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> portfolio
 [('AA', 100, 32.2), ('IBM', 50, 91.1), ('CAT', 150, 83.44), ('MSFT', 200, 51.23),
     ('GE', 95, 40.37), ('MSFT', 50, 65.1), ('IBM', 100, 70.44)]

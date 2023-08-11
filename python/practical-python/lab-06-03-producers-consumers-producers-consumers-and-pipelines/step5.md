@@ -13,7 +13,7 @@ def parse_stock_data(lines):
     return rows
 
 if __name__ == '__main__':
-    lines = follow('Data/stocklog.csv')
+    lines = follow('stocklog.csv')
     rows = parse_stock_data(lines)
     for row in rows:
         print(row)

@@ -33,7 +33,7 @@ When you run your report program, you should be getting output like this:
 
 ```python
 >>> import report
->>> report.portfolio_report('Data/portfolio.csv', 'Data/prices.csv')
+>>> report.portfolio_report('portfolio.csv', 'prices.csv')
       Name     Shares      Price     Change
 ---------- ---------- ---------- ----------
         AA        100       9.22     -22.98

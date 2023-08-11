@@ -3,7 +3,7 @@
 Suppose you wanted to tabulate the total number of shares of each stock. This is easy using `Counter` objects. Try it:
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> from collections import Counter
 >>> holdings = Counter()
 >>> for s in portfolio:
@@ -38,7 +38,7 @@ If you want to rank the values, do this:
 Let's grab another portfolio of stocks and make a new Counter:
 
 ```python
->>> portfolio2 = read_portfolio('Data/portfolio2.csv')
+>>> portfolio2 = read_portfolio('portfolio2.csv')
 >>> holdings2 = Counter()
 >>> for s in portfolio2:
           holdings2[s['name']] += s['shares']

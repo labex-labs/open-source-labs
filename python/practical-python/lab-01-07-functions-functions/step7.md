@@ -10,7 +10,7 @@ def portfolio_cost(filename):
     # Your code here
     ...
 
-cost = portfolio_cost('Data/portfolio.csv')
+cost = portfolio_cost('portfolio.csv')
 print('Total cost:', cost)
 ```
 
@@ -23,7 +23,7 @@ $ python3 -i pcost.py
 This will allow you to call your function from the interactive mode.
 
 ```python
->>> portfolio_cost('Data/portfolio.csv')
+>>> portfolio_cost('portfolio.csv')
 44671.15
 >>>
 ```

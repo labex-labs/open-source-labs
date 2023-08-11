@@ -19,4 +19,4 @@ Try it out.
 >>>
 ```
 
-Reminder: These exercises assume you are working in the `practical-python/Work` directory. Look for the file `mortgage.py`.
+Reminder: These exercises assume you are working in the `~/project` directory. Look for the file `mortgage.py`.

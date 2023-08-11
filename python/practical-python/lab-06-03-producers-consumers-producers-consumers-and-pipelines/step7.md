@@ -4,7 +4,7 @@ In the `ticker.py` program, write a function `ticker(portfile, logfile, fmt)` th
 
 ```python
 >>> from ticker import ticker
->>> ticker('Data/portfolio.csv', 'Data/stocklog.csv', 'txt')
+>>> ticker('portfolio.csv', 'stocklog.csv', 'txt')
       Name      Price     Change
 ---------- ---------- ----------
         GE      37.14      -0.18
@@ -13,7 +13,7 @@ In the `ticker.py` program, write a function `ticker(portfile, logfile, fmt)` th
         AA      39.34      -0.32
 ...
 
->>> ticker('Data/portfolio.csv', 'Data/stocklog.csv', 'csv')
+>>> ticker('portfolio.csv', 'stocklog.csv', 'csv')
 Name,Price,Change
 IBM,102.79,-0.28
 CAT,78.04,-0.48

@@ -32,9 +32,9 @@ StopIteration
 The `next()` built-in function is a shortcut for calling the `__next__()` method of an iterator. Try using it on a file:
 
 ```python
->>> f = open('Data/portfolio.csv')
+>>> f = open('portfolio.csv')
 >>> f.__iter__()    # Note: This returns the file itself
-<_io.TextIOWrapper name='Data/portfolio.csv' mode='r' encoding='UTF-8'>
+<_io.TextIOWrapper name='portfolio.csv' mode='r' encoding='UTF-8'>
 >>> next(f)
 'name,shares,price\n'
 >>> next(f)

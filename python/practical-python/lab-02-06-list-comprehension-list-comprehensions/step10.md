@@ -6,7 +6,7 @@ First, read a row of header information from a CSV file:
 
 ```python
 >>> import csv
->>> f = open('Data/portfoliodate.csv')
+>>> f = open('portfoliodate.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> headers

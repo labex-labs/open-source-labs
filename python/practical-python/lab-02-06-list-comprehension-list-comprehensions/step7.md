@@ -3,7 +3,7 @@
 Compute the total cost of the portfolio using a single Python statement.
 
 ```python
->>> portfolio = read_portfolio('Data/portfolio.csv')
+>>> portfolio = read_portfolio('portfolio.csv')
 >>> cost = sum([ s['shares'] * s['price'] for s in portfolio ])
 >>> cost
 44671.15

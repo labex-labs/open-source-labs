@@ -2,7 +2,7 @@
 
 total_cost = 0.0
 
-with open("../../Work/Data/portfolio.csv", "rt") as f:
+with open("portfolio.csv", "rt") as f:
     headers = next(f)
     for line in f:
         row = line.split(",")

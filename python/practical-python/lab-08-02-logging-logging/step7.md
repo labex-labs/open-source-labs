@@ -110,7 +110,7 @@ Now that you've made these changes, try using some of your code on bad data.
 
 ```python
 >>> import report
->>> a = report.read_portfolio('Data/missing.csv')
+>>> a = report.read_portfolio('missing.csv')
 Row 4: Bad row: ['MSFT', '', '51.23']
 Row 7: Bad row: ['IBM', '', '70.44']
 >>>
@@ -121,7 +121,7 @@ If you do nothing, you'll only get logging messages for the `WARNING` level and 
 ```python
 >>> import logging
 >>> logging.basicConfig()
->>> a = report.read_portfolio('Data/missing.csv')
+>>> a = report.read_portfolio('missing.csv')
 WARNING:fileparse:Row 4: Bad row: ['MSFT', '', '51.23']
 WARNING:fileparse:Row 7: Bad row: ['IBM', '', '70.44']
 >>>
@@ -131,7 +131,7 @@ You will notice that you don't see the output from the `log.debug()` operation. 
 
 ```python
 >>> logging.getLogger('fileparse').setLevel(logging.DEBUG)
->>> a = report.read_portfolio('Data/missing.csv')
+>>> a = report.read_portfolio('missing.csv')
 WARNING:fileparse:Row 4: Bad row: ['MSFT', '', '51.23']
 DEBUG:fileparse:Row 4: Reason: invalid literal for int() with base 10: ''
 WARNING:fileparse:Row 7: Bad row: ['IBM', '', '70.44']
@@ -143,6 +143,6 @@ Turn off all, but the most critical logging messages:
 
 ```python
 >>> logging.getLogger('fileparse').setLevel(logging.CRITICAL)
->>> a = report.read_portfolio('Data/missing.csv')
+>>> a = report.read_portfolio('missing.csv')
 >>>
 ```

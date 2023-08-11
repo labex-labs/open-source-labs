@@ -11,7 +11,7 @@ For example, try this generator that searches a file for lines containing a matc
                 if substr in line:
                     yield line
 
->>> for line in open('Data/portfolio.csv'):
+>>> for line in open('portfolio.csv'):
         print(line, end='')
 
 name,shares,price
@@ -22,7 +22,7 @@ name,shares,price
 "GE",95,40.37
 "MSFT",50,65.10
 "IBM",100,70.44
->>> for line in filematch('Data/portfolio.csv', 'IBM'):
+>>> for line in filematch('portfolio.csv', 'IBM'):
         print(line, end='')
 
 "IBM",50,91.10

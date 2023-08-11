@@ -4,7 +4,7 @@ Try these steps to make a list of Stock instances from a list of dictionaries. T
 
 ```python
 >>> import fileparse
->>> with open('Data/portfolio.csv') as lines:
+>>> with open('portfolio.csv') as lines:
 ...     portdicts = fileparse.parse_csv(lines, select=['name','shares','price'], types=[str,int,float])
 ...
 >>> portfolio = [ stock.Stock(d['name'], d['shares'], d['price']) for d in portdicts]

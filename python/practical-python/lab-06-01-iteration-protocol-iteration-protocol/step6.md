@@ -35,7 +35,7 @@ Now, try some experiments using this new class:
 
 ```python
 >>> import report
->>> portfolio = report.read_portfolio('Data/portfolio.csv')
+>>> portfolio = report.read_portfolio('portfolio.csv')
 >>> len(portfolio)
 7
 >>> portfolio[0]

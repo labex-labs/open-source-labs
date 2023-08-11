@@ -9,7 +9,7 @@ Read some stock portfolio data and convert it into a list:
 
 ```python
 >>> import report
->>> portfolio = list(report.read_portfolio('Data/portfolio.csv'))
+>>> portfolio = list(report.read_portfolio('portfolio.csv'))
 >>> for s in portfolio:
         print(s)
 

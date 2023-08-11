@@ -4,7 +4,7 @@ Python comes with a large standard library of useful functions. One library that
 
 ```python
 >>> import csv
->>> f = open('Data/portfolio.csv')
+>>> f = open('portfolio.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> headers

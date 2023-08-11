@@ -5,7 +5,7 @@ The `parse_csv()` function you wrote in the last section allows user-specified c
 Modify the code so that an exception gets raised if both the `select` and `has_headers=False` arguments are passed. For example:
 
 ```python
->>> parse_csv('Data/prices.csv', select=['name','price'], has_headers=False)
+>>> parse_csv('prices.csv', select=['name','price'], has_headers=False)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "fileparse.py", line 9, in parse_csv

@@ -42,4 +42,4 @@ s1 & s2                 # Set intersection { 'c' }
 s1 - s2                 # Set difference { 'a', 'b' }
 ```
 
-In these exercises, you start building one of the major programs used for the rest of this course. Do your work in the file `Work/report.py`.
+In these exercises, you start building one of the major programs used for the rest of this course. Do your work in the file `report.py`.

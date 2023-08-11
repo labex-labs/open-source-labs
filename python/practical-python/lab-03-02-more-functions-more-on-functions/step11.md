@@ -1,6 +1,6 @@
 # Argument Passing
 
-When you call a function, the argument variables are names that refer to the passed values. These values are NOT copies (see [section 2.7](../02_Working_with_data/07_Objects.md)). If mutable data types are passed (e.g. lists, dicts), they can be modified _in-place_.
+When you call a function, the argument variables are names that refer to the passed values. These values are NOT copies. If mutable data types are passed (e.g. lists, dicts), they can be modified _in-place_.
 
 ```python
 def foo(items):

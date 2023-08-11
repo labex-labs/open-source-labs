@@ -4,7 +4,7 @@ In the file `report.py` add a `main()` function that accepts a list of command l
 
 ```python
 >>> import report
->>> report.main(['report.py', 'Data/portfolio.csv', 'Data/prices.csv'])
+>>> report.main(['report.py', 'portfolio.csv', 'prices.csv'])
       Name     Shares      Price     Change
 ---------- ---------- ---------- ----------
         AA        100       9.22     -22.98
@@ -21,7 +21,7 @@ Modify the `pcost.py` file so that it has a similar `main()` function:
 
 ```python
 >>> import pcost
->>> pcost.main(['pcost.py', 'Data/portfolio.csv'])
+>>> pcost.main(['pcost.py', 'portfolio.csv'])
 Total cost: 44671.15
 >>>
 ```

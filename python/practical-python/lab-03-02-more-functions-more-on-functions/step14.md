@@ -4,18 +4,18 @@ In many cases, you're only interested in selected columns from a CSV file, not a
 
 ```python
 >>> # Read all of the data
->>> portfolio = parse_csv('Data/portfolio.csv')
+>>> portfolio = parse_csv('portfolio.csv')
 >>> portfolio
 [{'price': '32.20', 'name': 'AA', 'shares': '100'}, {'price': '91.10', 'name': 'IBM', 'shares': '50'}, {'price': '83.44', 'name': 'CAT', 'shares': '150'}, {'price': '51.23', 'name': 'MSFT', 'shares': '200'}, {'price': '40.37', 'name': 'GE', 'shares': '95'}, {'price': '65.10', 'name': 'MSFT', 'shares': '50'}, {'price': '70.44', 'name': 'IBM', 'shares': '100'}]
 
 >>> # Read only some of the data
->>> shares_held = parse_csv('Data/portfolio.csv', select=['name','shares'])
+>>> shares_held = parse_csv('portfolio.csv', select=['name','shares'])
 >>> shares_held
 [{'name': 'AA', 'shares': '100'}, {'name': 'IBM', 'shares': '50'}, {'name': 'CAT', 'shares': '150'}, {'name': 'MSFT', 'shares': '200'}, {'name': 'GE', 'shares': '95'}, {'name': 'MSFT', 'shares': '50'}, {'name': 'IBM', 'shares': '100'}]
 >>>
 ```
 
-An example of a column selector was given in [Exercise 2.23](../02_Working_with_data/06_List_comprehension.md). However, here's one way to do it:
+An example of a column selector was given in Exercise 2.23. However, here's one way to do it:
 
 ```python
 # fileparse.py

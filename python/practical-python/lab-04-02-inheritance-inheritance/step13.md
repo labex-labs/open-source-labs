@@ -47,7 +47,7 @@ This should produce the same output as before:
 ```python
 >>> ================================ RESTART ================================
 >>> import report
->>> report.portfolio_report('Data/portfolio.csv', 'Data/prices.csv')
+>>> report.portfolio_report('portfolio.csv', 'prices.csv')
       Name     Shares      Price     Change
 ---------- ---------- ---------- ----------
         AA        100       9.22     -22.98
@@ -100,7 +100,7 @@ You should now see CSV output like this:
 ```python
 >>> ================================ RESTART ================================
 >>> import report
->>> report.portfolio_report('Data/portfolio.csv', 'Data/prices.csv')
+>>> report.portfolio_report('portfolio.csv', 'prices.csv')
 Name,Shares,Price,Change
 AA,100,9.22,-22.98
 IBM,50,106.28,15.18

@@ -9,4 +9,4 @@ def cost(self):
     return self.shares * self.price
 ```
 
-More details are given in [Section 7](../07_Advanced_Topics/00_Overview).
+More details are given in Section 7.

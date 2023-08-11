@@ -6,9 +6,9 @@ Modify the `follow.py` program so that it watches the stream of stock data and p
 if __name__ == '__main__':
     import report
 
-    portfolio = report.read_portfolio('Data/portfolio.csv')
+    portfolio = report.read_portfolio('portfolio.csv')
 
-    for line in follow('Data/stocklog.csv'):
+    for line in follow('stocklog.csv'):
         fields = line.split(',')
         name = fields[0].strip('"')
         price = float(fields[1])

@@ -4,7 +4,7 @@ You've now created a file `fileparse.py` that contained a function `parse_csv()`
 
 ```python
 >>> import fileparse
->>> portfolio = fileparse.parse_csv('Data/portfolio.csv', types=[str,int,float])
+>>> portfolio = fileparse.parse_csv('portfolio.csv', types=[str,int,float])
 >>>
 ```
 
@@ -13,7 +13,7 @@ Right now, the function expects to be passed a filename. However, you can make t
 ```python
 >>> import fileparse
 >>> import gzip
->>> with gzip.open('Data/portfolio.csv.gz', 'rt') as file:
+>>> with gzip.open('portfolio.csv.gz', 'rt') as file:
 ...      port = fileparse.parse_csv(file, types=[str,int,float])
 ...
 >>> lines = ['name,shares,price', 'AA,100,34.23', 'IBM,50,91.1', 'HPE,75,45.1']
@@ -24,7 +24,7 @@ Right now, the function expects to be passed a filename. However, you can make t
 In this new code, what happens if you pass a filename as before?
 
 ```python
->>> port = fileparse.parse_csv('Data/portfolio.csv', types=[str,int,float])
+>>> port = fileparse.parse_csv('portfolio.csv', types=[str,int,float])
 >>> port
 ... look at output (it should be crazy) ...
 >>>

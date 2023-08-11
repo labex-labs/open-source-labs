@@ -1,6 +1,6 @@
 # Exercise 7.7: Using Closures to Avoid Repetition
 
-One of the more powerful features of closures is their use in generating repetitive code. If you refer back to [Exercise 5.7](../05_Object_model/02_Classes_encapsulation), recall the code for defining a property with type checking.
+One of the more powerful features of closures is their use in generating repetitive code. If you refer back to Exercise 5.7, recall the code for defining a property with type checking.
 
 ```python
 class Stock:

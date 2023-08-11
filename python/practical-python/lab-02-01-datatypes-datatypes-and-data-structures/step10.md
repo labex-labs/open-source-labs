@@ -8,11 +8,11 @@ s['price']
 s[2]
 ```
 
-In the last few exercises, you wrote a program that read a datafile `Data/portfolio.csv`. Using the `csv` module, it is easy to read the file row-by-row.
+In the last few exercises, you wrote a program that read a datafile `portfolio.csv`. Using the `csv` module, it is easy to read the file row-by-row.
 
 ```python
 >>> import csv
->>> f = open('Data/portfolio.csv')
+>>> f = open('portfolio.csv')
 >>> rows = csv.reader(f)
 >>> next(rows)
 ['name', 'shares', 'price']

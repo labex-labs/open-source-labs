@@ -20,7 +20,7 @@ In the file `tableformat.py`, take this idea and expand it into a generalized fu
 
 ```python
 >>> import report
->>> portfolio = report.read_portfolio('Data/portfolio.csv')
+>>> portfolio = report.read_portfolio('portfolio.csv')
 >>> from tableformat import create_formatter, print_table
 >>> formatter = create_formatter('txt')
 >>> print_table(portfolio, ['name','shares'], formatter)

@@ -3,7 +3,7 @@
 What happens if you try your function on a file with some missing fields?
 
 ```python
->>> portfolio_cost('Data/missing.csv')
+>>> portfolio_cost('missing.csv')
 Traceback (most recent call last):
     File "<stdin>", line 1, in <module>
     File "pcost.py", line 11, in portfolio_cost

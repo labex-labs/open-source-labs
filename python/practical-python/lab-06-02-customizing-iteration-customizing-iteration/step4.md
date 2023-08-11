@@ -2,13 +2,13 @@
 
 Generators can be an interesting way to monitor real-time data sources such as log files or stock market feeds. In this part, we'll explore this idea. To start, follow the next instructions carefully.
 
-The program `Data/stocksim.py` is a program that simulates stock market data. As output, the program constantly writes real-time data to a file `Data/stocklog.csv`. In a separate command window go into the `Data/` directory and run this program:
+The program `stocksim.py` is a program that simulates stock market data. As output, the program constantly writes real-time data to a file `stocklog.csv`. In a separate command window go into the `` directory and run this program:
 
 ```bash
 $ python3 stocksim.py
 ```
 
-If you are on Windows, just locate the `stocksim.py` program and double-click on it to run it. Now, forget about this program (just let it run). Using another window, look at the file `Data/stocklog.csv` being written by the simulator. You should see new lines of text being added to the file every few seconds. Again, just let this program run in the background---it will run for several hours (you shouldn't need to worry about it).
+If you are on Windows, just locate the `stocksim.py` program and double-click on it to run it. Now, forget about this program (just let it run). Using another window, look at the file `stocklog.csv` being written by the simulator. You should see new lines of text being added to the file every few seconds. Again, just let this program run in the background---it will run for several hours (you shouldn't need to worry about it).
 
 Once the above program is running, let's write a little program to open the file, seek to the end, and watch for new output. Create a file `follow.py` and put this code in it:
 
@@ -17,7 +17,7 @@ Once the above program is running, let's write a little program to open the file
 import os
 import time
 
-f = open('Data/stocklog.csv')
+f = open('stocklog.csv')
 f.seek(0, os.SEEK_END)   # Move file pointer 0 bytes from end of file
 
 while True:

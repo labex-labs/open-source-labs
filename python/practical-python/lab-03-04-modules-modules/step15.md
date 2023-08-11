@@ -4,7 +4,7 @@ In section 1, you wrote a program `pcost.py` that read a portfolio and computed 
 
 ```python
 >>> import pcost
->>> pcost.portfolio_cost('Data/portfolio.csv')
+>>> pcost.portfolio_cost('portfolio.csv')
 44671.15
 >>>
 ```

@@ -13,7 +13,7 @@ See what happens when you read a portfolio of stocks and view the resulting list
 
 ```python
 >>> import report
->>> portfolio = report.read_portfolio('Data/portfolio.csv')
+>>> portfolio = report.read_portfolio('portfolio.csv')
 >>> portfolio
 ... see what the output is ...
 >>>

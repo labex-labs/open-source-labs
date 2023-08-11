@@ -19,4 +19,4 @@ All functions process data iteratively. They implement various kinds of iteratio
 
 More information at [Generator Tricks for Systems Programmers](http://www.dabeaz.com/generators/) tutorial from PyCon '08.
 
-In the previous exercises, you wrote some code that followed lines being written to a log file and parsed them into a sequence of rows. This exercise continues to build upon that. Make sure the `Data/stocksim.py` is still running.
+In the previous exercises, you wrote some code that followed lines being written to a log file and parsed them into a sequence of rows. This exercise continues to build upon that. Make sure the `stocksim.py` is still running.

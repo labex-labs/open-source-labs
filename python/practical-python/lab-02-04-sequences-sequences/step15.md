@@ -1,9 +1,9 @@
 # Exercise 2.16: Using the zip() function
 
-In the file `Data/portfolio.csv`, the first line contains column headers. In all previous code, we've been discarding them.
+In the file `portfolio.csv`, the first line contains column headers. In all previous code, we've been discarding them.
 
 ```python
->>> f = open('Data/portfolio.csv')
+>>> f = open('portfolio.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> headers
@@ -54,7 +54,7 @@ def portfolio_cost(filename):
         ...
 ```
 
-Now, try your function on a completely different data file `Data/portfoliodate.csv` which looks like this:
+Now, try your function on a completely different data file `portfoliodate.csv` which looks like this:
 
 ```csv
 name,date,time,shares,price
@@ -68,7 +68,7 @@ name,date,time,shares,price
 ```
 
 ```python
->>> portfolio_cost('Data/portfoliodate.csv')
+>>> portfolio_cost('portfoliodate.csv')
 44671.15
 >>>
 ```
@@ -79,4 +79,4 @@ The change made here is subtle, but significant. Instead of `portfolio_cost()` b
 
 Modify the `report.py` program you wrote in Section 2.3 so that it uses the same technique to pick out column headers.
 
-Try running the `report.py` program on the `Data/portfoliodate.csv` file and see that it produces the same answer as before.
+Try running the `report.py` program on the `portfoliodate.csv` file and see that it produces the same answer as before.

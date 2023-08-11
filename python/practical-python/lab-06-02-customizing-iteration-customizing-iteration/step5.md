@@ -5,7 +5,7 @@ If you look at the code in Exercise 6.5, the first part of the code is producing
 Modify the code in Exercise 6.5 so that the file-reading is performed by a generator function `follow(filename)`. Make it so the following code works:
 
 ```python
->>> for line in follow('Data/stocklog.csv'):
+>>> for line in follow('stocklog.csv'):
           print(line, end='')
 
 ... Should see lines of output produced here ...
@@ -15,7 +15,7 @@ Modify the stock ticker code so that it looks like this:
 
 ```python
 if __name__ == '__main__':
-    for line in follow('Data/stocklog.csv'):
+    for line in follow('stocklog.csv'):
         fields = line.split(',')
         name = fields[0].strip('"')
         price = float(fields[1])

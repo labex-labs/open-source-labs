@@ -60,4 +60,4 @@ def portfolio_report(portfoliofile, pricefile):
     print_report(report)
 
 
-portfolio_report("../../Work/Data/portfolio.csv", "../../Work/Data/prices.csv")
+portfolio_report("portfolio.csv", "prices.csv")

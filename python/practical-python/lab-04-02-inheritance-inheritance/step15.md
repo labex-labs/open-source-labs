@@ -3,7 +3,7 @@
 Modify the `report.py` program so that the `portfolio_report()` function takes an optional argument specifying the output format. For example:
 
 ```python
->>> report.portfolio_report('Data/portfolio.csv', 'Data/prices.csv', 'txt')
+>>> report.portfolio_report('portfolio.csv', 'prices.csv', 'txt')
       Name     Shares      Price     Change
 ---------- ---------- ---------- ----------
         AA        100       9.22     -22.98
@@ -19,7 +19,7 @@ Modify the `report.py` program so that the `portfolio_report()` function takes a
 Modify the main program so that a format can be given on the command line:
 
 ```bash
-$ python3 report.py Data/portfolio.csv Data/prices.csv csv
+$ python3 report.py portfolio.csv prices.csv csv
 Name,Shares,Price,Change
 AA,100,9.22,-22.98
 IBM,50,106.28,15.18

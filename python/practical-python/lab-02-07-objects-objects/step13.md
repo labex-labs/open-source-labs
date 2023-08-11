@@ -5,7 +5,7 @@ Using the techniques in this exercise, you could write statements that easily co
 Just to illustrate, suppose you read data from a different datafile like this:
 
 ```python
->>> f = open('Data/dowstocks.csv')
+>>> f = open('dowstocks.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> row = next(rows)

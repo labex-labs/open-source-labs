@@ -1,6 +1,6 @@
 # Exercise 3.7: Picking a different column delimiter
 
-Although CSV files are pretty common, it's also possible that you could encounter a file that uses a different column separator such as a tab or space. For example, the file `Data/portfolio.dat` looks like this:
+Although CSV files are pretty common, it's also possible that you could encounter a file that uses a different column separator such as a tab or space. For example, the file `portfolio.dat` looks like this:
 
 ```csv
 name shares price
@@ -24,7 +24,7 @@ Modify your `parse_csv()` function so that it also allows the delimiter to be ch
 For example:
 
 ```python
->>> portfolio = parse_csv('Data/portfolio.dat', types=[str, int, float], delimiter=' ')
+>>> portfolio = parse_csv('portfolio.dat', types=[str, int, float], delimiter=' ')
 >>> portfolio
 [{'price': '32.20', 'name': 'AA', 'shares': '100'}, {'price': '91.10', 'name': 'IBM', 'shares': '50'}, {'price': '83.44', 'name': 'CAT', 'shares': '150'}, {'price': '51.23', 'name': 'MSFT', 'shares': '200'}, {'price': '40.37', 'name': 'GE', 'shares': '95'}, {'price': '65.10', 'name': 'MSFT', 'shares': '50'}, {'price': '70.44', 'name': 'IBM', 'shares': '100'}]
 >>>

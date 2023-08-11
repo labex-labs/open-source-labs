@@ -3,7 +3,7 @@
 Modify the `report.py` and `pcost.py` programs so that they can execute as a script on the command line:
 
 ```bash
-$ python3 report.py Data/portfolio.csv Data/prices.csv
+$ python3 report.py portfolio.csv prices.csv
 Name Shares Price Change
 ---------- ---------- ---------- ----------
 AA 100 9.22 -22.98
@@ -14,6 +14,6 @@ GE 95 13.48 -26.89
 MSFT 50 20.89 -44.21
 IBM 100 106.28 35.84
 
-$ python3 pcost.py Data/portfolio.csv
+$ python3 pcost.py portfolio.csv
 Total cost: 44671.15
 ```

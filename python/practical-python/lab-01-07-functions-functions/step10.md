@@ -10,7 +10,7 @@ def portfolio_cost(filename):
     # Your code here
     ...
 
-cost = portfolio_cost('Data/portfolio.csv')
+cost = portfolio_cost('portfolio.csv')
 print('Total cost:', cost)
 ```
 
@@ -30,7 +30,7 @@ def portfolio_cost(filename):
 if len(sys.argv) == 2:
     filename = sys.argv[1]
 else:
-    filename = 'Data/portfolio.csv'
+    filename = 'portfolio.csv'
 
 cost = portfolio_cost(filename)
 print('Total cost:', cost)
@@ -43,7 +43,7 @@ To run your program, you'll need to run Python from the terminal.
 For example, from bash on Unix:
 
 ```bash
-$ python3 pcost.py Data/portfolio.csv
+$ python3 pcost.py portfolio.csv
 Total cost: 44671.15
 bash %
 ```

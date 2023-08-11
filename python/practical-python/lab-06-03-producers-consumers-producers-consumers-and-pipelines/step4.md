@@ -5,7 +5,7 @@ Take the pipelining idea a few steps further by performing more actions.
 ```python
 >>> from follow import follow
 >>> import csv
->>> lines = follow('Data/stocklog.csv')
+>>> lines = follow('stocklog.csv')
 >>> rows = csv.reader(lines)
 >>> for row in rows:
         print(row)

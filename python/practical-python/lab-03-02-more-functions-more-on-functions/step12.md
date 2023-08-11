@@ -27,4 +27,4 @@ A central part of your `report.py` program focuses on the reading of CSV files. 
 
 If you were doing a lot of file parsing for real, you'd probably want to clean some of this up and make it more general purpose. That's our goal.
 
-Start this exercise by opening the file called `Work/fileparse.py`. This is where we will be doing our work.
+Start this exercise by opening the file called `fileparse.py`. This is where we will be doing our work.

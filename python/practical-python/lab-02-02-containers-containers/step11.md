@@ -17,7 +17,7 @@ False
 >>>
 ```
 
-The file `Data/prices.csv` contains a series of lines with stock prices. The file looks something like this:
+The file `prices.csv` contains a series of lines with stock prices. The file looks something like this:
 
 ```csv
 "AA",9.22
@@ -38,7 +38,7 @@ A few little tips that you'll need for this part. First, make sure you use the `
 
 ```python
 >>> import csv
->>> f = open('Data/prices.csv', 'r')
+>>> f = open('prices.csv', 'r')
 >>> rows = csv.reader(f)
 >>> for row in rows:
         print(row)
@@ -51,14 +51,14 @@ A few little tips that you'll need for this part. First, make sure you use the `
 >>>
 ```
 
-The other little complication is that the `Data/prices.csv` file may have some blank lines in it. Notice how the last row of data above is an empty list---meaning no data was present on that line.
+The other little complication is that the `prices.csv` file may have some blank lines in it. Notice how the last row of data above is an empty list---meaning no data was present on that line.
 
 There's a possibility that this could cause your program to die with an exception. Use the `try` and `except` statements to catch this as appropriate. Thought: would it be better to guard against bad data with an `if`-statement instead?
 
 Once you have written your `read_prices()` function, test it interactively to make sure it works:
 
 ```python
->>> prices = read_prices('Data/prices.csv')
+>>> prices = read_prices('prices.csv')
 >>> prices['IBM']
 106.28
 >>> prices['MSFT']

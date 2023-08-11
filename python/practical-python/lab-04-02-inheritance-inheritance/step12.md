@@ -68,7 +68,7 @@ Run this new code:
 ```python
 >>> ================================ RESTART ================================
 >>> import report
->>> report.portfolio_report('Data/portfolio.csv', 'Data/prices.csv')
+>>> report.portfolio_report('portfolio.csv', 'prices.csv')
 ... crashes ...
 ```
 
