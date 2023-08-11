@@ -1,3 +1,4 @@
 #!/bin/zsh
 cd /home/labex/project
-cat if_with_OR.sh | grep "number"
+echo "15" | bash if_with_OR.sh | grep "won"
+echo "115" | bash if_with_OR.sh | grep "lost"
