@@ -25,6 +25,6 @@ done
 
 To run the Bash file, use the following command:
 
-```
+```bash
 bash while_example.sh
 ```

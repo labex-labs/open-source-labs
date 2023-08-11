@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-bash substring_example.sh | grep "Linux"
+cat substring_example.sh | grep "Linux"

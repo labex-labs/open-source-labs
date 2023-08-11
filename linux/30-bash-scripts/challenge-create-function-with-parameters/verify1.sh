@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-bash function_parameter.sh | grep 200
+cat function_parameter.sh | grep 200
