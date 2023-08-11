@@ -1,10 +1,6 @@
 # Use of Echo Command
 
-## Problem
-
 Create a Bash script that demonstrates the use of the `echo` command with various options. The script should print text with and without a newline, and remove backslash characters from the output.
-
-## Requirements
 
 - The Bash script should be named `echo_example.sh`.
 - The script should use the `echo` command with the following options:
@@ -16,8 +12,6 @@ Create a Bash script that demonstrates the use of the `echo` command with variou
   - "Printing text without newline"
   - "Removing backslash characters"
 - The script should be executable.
-
-## Solution
 
 Create a new file named `echo_example.sh` and add the following script:
 

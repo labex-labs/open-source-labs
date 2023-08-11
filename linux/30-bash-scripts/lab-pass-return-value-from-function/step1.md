@@ -1,16 +1,10 @@
 # Pass Return Value from Function
 
-## Problem
-
-In this challenge, we will focus on passing a string value from a Bash function. We will create a function that returns a string value and then use that value in our script.
-
-## Requirements
+In this lab, we will focus on passing a string value from a Bash function. We will create a function that returns a string value and then use that value in our script.
 
 - A Bash script editor
 - Basic knowledge of Bash scripting
 - Access to a Linux or Unix operating system
-
-## Solution
 
 To pass a string value from a Bash function, we can create a function that returns a string value and then use that value in our script. Here is an example:
 
