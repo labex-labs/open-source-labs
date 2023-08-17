@@ -15,20 +15,19 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: "3.x"
-      - name: Clone Scripts
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Install CLI
         run: |
-          git clone https://huhuhang:$GH_TOKEN@github.com/labex-labs/scripts /tmp/scripts
+          git clone https://github.com/labex-labs/labex-cli.git /tmp/labex-cli
+          cd /tmp/labex-cli
+          pip install --editable .
       - name: set-fee-type
         run: |
-          python /tmp/scripts/set-fee-type.py --path . --type free
+          labex idx feetype --path . --type pro
       - name: sync-labs-contributors
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pip install requests
-          python /tmp/scripts/sync-labs-contributors.py --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY
+          labex idx contributors --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY --path .
       - name: Formatting index.json
         run: |
           npm i -g prettier prettier-plugin-sh
