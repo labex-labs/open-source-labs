@@ -1,4 +1,3 @@
 #!/bin/zsh
 
-cd ~/project
-cat /home/labex/project/src/components/Dino/Dino.js | grep 'useState'
+curl 0.0.0.0:8080

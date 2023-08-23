@@ -1,4 +1,3 @@
 #!/bin/zsh
 
-cd ~/project
-cat /home/labex/project/src/App.js | grep 'useRef'
+curl 0.0.0.0:8080

@@ -1,4 +1,3 @@
 #!/bin/zsh
 
-cd ~/project
-git status | grep 'script.js'
+curl 0.0.0.0:8080

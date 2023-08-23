@@ -1,4 +1,3 @@
 #!/bin/zsh
 
-cd ~/project
-cat ~/project/src/App.js | grep 'li'
+curl 0.0.0.0:8080
