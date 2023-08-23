@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-git status | grep 'style.css'
+git status | grep 'index.html'

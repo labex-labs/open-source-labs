@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-cat /home/labex/project/src/components/Dino/Dino.js | grep 'useRef'
+cat /home/labex/project/src/components/Dino/Dino.js | grep 'useEffect'

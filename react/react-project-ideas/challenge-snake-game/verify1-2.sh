@@ -1,4 +1,4 @@
 #!/bin/zsh
 
 cd ~/project
-cat /home/labex/project/src/App.js | grep 'useEffect'
+cat /home/labex/project/src/App.js | grep 'useState'
