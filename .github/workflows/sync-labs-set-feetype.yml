@@ -1,11 +1,12 @@
-name: sync-labs-contributors
+name: sync-labs-set-feetype
 on:
-  schedule:
-    - cron: "0 0 1/7 * *"
+  push:
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
-  SyncLabsContributors:
+  SyncLabsFeeType:
     if: github.repository_owner == 'labex-labs'
     runs-on: ubuntu-latest
     steps:
@@ -20,11 +21,9 @@ jobs:
           git clone https://github.com/labex-labs/labex-cli.git /tmp/labex-cli
           cd /tmp/labex-cli
           pip install --editable .
-      - name: sync-labs-contributors
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: set-fee-type
         run: |
-          labex idx contributors --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY --path .
+          labex idx feetype --path . --type free
       - name: Formatting index.json
         run: |
           npm i -g prettier prettier-plugin-sh
@@ -32,5 +31,5 @@ jobs:
       - name: Git commit
         uses: stefanzweifel/git-auto-commit-action@v4.3.0
         with:
-          commit_message: Updated Contributors
+          commit_message: Updated FeeType
           branch: ${{ github.head_ref }}
