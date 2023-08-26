@@ -1,3 +1,3 @@
 #!/bin/zsh
 cd /home/labex/project
-cat simple_if.sh | grep "number"
+bash simple_if.sh | grep "number"
