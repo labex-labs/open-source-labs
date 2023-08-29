@@ -1,0 +1,74 @@
+{
+  "type": "lab",
+  "title": "Managing Data in Containers",
+  "description": "",
+  "difficulty": "Beginner",
+  "time": 0,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Volumes",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Bind Mounts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "[Optional] OverlayFS",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ibm/docker101/#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ibm/docker101/"
+  }
+}
