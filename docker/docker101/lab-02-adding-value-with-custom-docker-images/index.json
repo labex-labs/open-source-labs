@@ -13,9 +13,9 @@
         "text": "step1.md",
         "verify": [
           {
-            "name": "Test the completion of step 1",
+            "name": "Check if the flask app is running",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please follow the instructions carefully.",
             "timeout": 0,
             "showstderr": false
           }
@@ -27,28 +27,28 @@
         "text": "step2.md",
         "verify": [
           {
-            "name": "Test the completion of step 2",
+            "name": "Check if python-hello-world image is created",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please follow the instructions carefully.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["docker/build", "docker/images"]
       },
       {
         "title": "Step 3: Run the Docker image",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Test the completion of step 3",
+            "name": "Check if python-hello-world container is running",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "Please follow the instructions carefully.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["docker/run", "docker/ls", "docker/logs"]
       },
       {
         "title": "Step 4: Push to a central registry",
@@ -62,7 +62,7 @@
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["docker/push"]
       },
       {
         "title": "Step 5: Deploying a Change",
@@ -97,14 +97,14 @@
         "text": "step7.md",
         "verify": [
           {
-            "name": "Test the completion of step 7",
+            "name": "Verify the containers are stopped and removed",
             "file": "verify7.sh",
             "hint": "Please check the step 7 carefully.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["docker/prune"]
       }
     ],
     "intro": {
