@@ -1,0 +1,130 @@
+{
+  "type": "lab",
+  "title": "Adding Value With Custom Docker Images",
+  "description": "In this lab, we will be building a custom Docker Image from a Dockerfile and pushing it to a central registry, while also exploring image layers, \"copy-on-write\", and the union file system used by Docker to efficiently store images and run containers.",
+  "difficulty": "Beginner",
+  "time": 35,
+  "hidden": false,
+  "fee_type": "pro",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1: Create a python app (without using Docker)",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check if the flask app is running",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Step 2: Create and build the Docker Image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if python-hello-world image is created",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/build", "docker/images"]
+      },
+      {
+        "title": "Step 3: Run the Docker image",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if python-hello-world container is running",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run", "docker/ls", "docker/logs"]
+      },
+      {
+        "title": "Step 4: Push to a central registry",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/push"]
+      },
+      {
+        "title": "Step 5: Deploying a Change",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please check the step 5 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Step 6: Understanding Image Layers",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please check the step 6 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Step 7: Clean up",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Verify the containers are stopped and removed",
+            "file": "verify7.sh",
+            "hint": "Please check the step 7 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/prune"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ibm/docker101/#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ibm/docker101/"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type": "lab",
+  "title": "Managing Data in Containers",
+  "description": "In this lab, we will explore two options provided by Docker for storing files on the host machine: volumes and bind mounts, as well as the option of using tmpfs mounts if running Docker on Linux or named pipes if running Docker on Windows. The usage of the `--mount` flag is recommended as it is more explicit and verbose compared to the `--volume` flag.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "pro",
+  "details": {
+    "steps": [
+      {
+        "title": "Volumes",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "docker/volume",
+          "docker/exec",
+          "docker/run",
+          "docker/stop",
+          "docker/rm",
+          "docker/prune",
+          "docker/inspect"
+        ]
+      },
+      {
+        "title": "Bind Mounts",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check if data/hi.txt exists",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions in step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run", "docker/exec"]
+      },
+      {
+        "title": "[Optional] OverlayFS",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Please check the step 3 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ibm/docker101/#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ibm/docker101/"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "lab",
+  "title": "Running Your First Container",
+  "description": "In this lab, you will run your first Docker container, which is just a process running in isolation achieved through linux namespaces, control groups, seccomp, and SELinux, with Docker being a widely adopted tool for building, shipping, and running containers, and the first part of the lab will focus on running and inspecting containers to observe the namespace isolation provided by the linux kernel.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "pro",
+  "details": {
+    "steps": [
+      {
+        "title": "Get Started",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Podman should be installed",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to install podman.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/apt", "docker/run", "docker/version", "docker/top"]
+      },
+      {
+        "title": "Step 1: Run your first container",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify the container is running",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to run your first container.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run", "docker/exec", "docker/ls"]
+      },
+      {
+        "title": "Step 2: Run Multiple Containers",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Nginx container should be running",
+            "file": "verify3-1.sh",
+            "hint": "Please follow the instructions to run nginx container.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Mongo container should be running",
+            "file": "verify3-2.sh",
+            "hint": "Please follow the instructions to run mongo container.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/run"]
+      },
+      {
+        "title": "Step 3: Clean Up",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Verify the containers are stopped and removed",
+            "file": "verify4.sh",
+            "hint": "Please stop and remove all containers.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["docker/prune"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": []
+    }
+  },
+  "backend": {
+    "imageid": "webide-instance-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ibm/docker101/#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ibm/docker101/"
+  }
+}
