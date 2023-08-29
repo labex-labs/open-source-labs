@@ -32,36 +32,9 @@
 
    Since this is the first time you are running the nginx container, it will pull down the nginx image from the Docker Store. Subsequent containers created from the Nginx image will use the existing image located on your host.
 
-   Nginx is a lightweight web server. You can access it on port 8080 on your localhost.
+   Nginx is a lightweight web server. You can access the nginx server on **HTTP 8080** Tab of LabEx VM. Switch it and refresh the page to see the output from nginx.
 
-1. Access the nginx server on [localhost:8080](http://localhost:8080).
-
-   ```bash
-   curl localhost:8080
-   ```
-
-   will return the HTML home page of Nginx,
-
-   ```bash
-   <!DOCTYPE html>
-   <html>
-   <head>
-   <title>Welcome to nginx!</title>
-   <style>
-       body {
-           width: 35em;
-           margin: 0 auto;
-           font-family: Tahoma, Verdana, Arial, sans-serif;
-       }
-   </style>
-   </head>
-   <body>
-   <h1>Welcome to nginx!</h1>
-   ```
-
-1. If you are using play-with-docker, look for the `8080` link near the top of the page, or if you run a Docker client with access to a local browser,
-
-   ![step 2 nginx](./assets/lab1_step2_nginx.png)
+   ![step 2 nginx](./assets/20230829-11-16-04-BazUogDa.png)
 
 1. Run a mongo DB server
 
@@ -89,11 +62,9 @@
 
    Again, since this is the first time we are running a mongo container, we will pull down the mongo image from the Docker Store. We are using the `--publish` flag to expose the 27017 mongo port on our host. We have to use a port other than 8080 for the host mapping, since that port is already exposed on our host. Again refer to the [official docs](https://hub.docker.com/_/mongo) on the Docker Hub to get more details about using the mongo image.
 
-1. Access [localhost:8081](http://localhost:8081) to see some output from mongo.
+   Switch to the **PORTS** of LabEx VM, and click on the **Port 8081** link to see the output from mongoDB. You should see a message
 
-   ```bash
-   curl localhost:8081
-   ```
+   ![image](./assets/20230829-11-19-23-PkodKK48.png)
 
    which will return a warning from MongoDB,
 
@@ -101,30 +72,26 @@
    It looks like you are trying to access MongoDB over HTTP on the native driver port.
    ```
 
-1. If you are using play-with-docker, look for the `8080` link near the top of the page.
+Check your running containers with `docker container ls`
 
-   ![step 2 mongo](./assets/lab1_step2_mongo.png)
+```bash
+$ docker container ls
+CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
+d6777df89fea    nginx    "nginx -g 'daemon ..."    Less than a second ago    Up 2 seconds    0.0.0.0:8080->80/tcp    nginx
+ead80a0db505    mongo    "docker-entrypoint..."    17 seconds ago    Up 19 seconds    0.0.0.0:8081->27017/tcp    mongo
+af549dccd5cf    ubuntu    "top"    5 minutes ago    Up 5 minutes    priceless_kepler
+```
 
-1. Check your running containers with `docker container ls`
+You should see that you have an Nginx web server container, and a MongoDB container running on your host. Note that we have not configured these containers to talk to each other.
 
-   ```bash
-   $ docker container ls
-   CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
-   d6777df89fea    nginx    "nginx -g 'daemon ..."    Less than a second ago    Up 2 seconds    0.0.0.0:8080->80/tcp    nginx
-   ead80a0db505    mongo    "docker-entrypoint..."    17 seconds ago    Up 19 seconds    0.0.0.0:8081->27017/tcp    mongo
-   af549dccd5cf    ubuntu    "top"    5 minutes ago    Up 5 minutes    priceless_kepler
-   ```
+You can see the "nginx" and "mongo" names that we gave to our containers, and the random name (in my case "priceless_kepler") that was generated for the ubuntu container. You can also see that the port mappings that we specified with the `--publish` flag. For more details information on these running containers you can use the `docker container inspect [container id` command.
 
-   You should see that you have an Nginx web server container, and a MongoDB container running on your host. Note that we have not configured these containers to talk to each other.
+One thing you might notice is that the mongo container is running the `docker-entrypoint` command. This is the name of the executable that is run when the container is started. The mongo image requires some prior configuration before kicking off the DB process. You can see exactly what the script does by looking at it on [github](https://github.com/docker-library/mongo/blob/master/4.4/docker-entrypoint.sh). Typically, you can find the link to the github source from the image description page on the Docker Store website.
 
-   You can see the "nginx" and "mongo" names that we gave to our containers, and the random name (in my case "priceless_kepler") that was generated for the ubuntu container. You can also see that the port mappings that we specified with the `--publish` flag. For more details information on these running containers you can use the `docker container inspect [container id` command.
+Containers are self-contained and isolated, which means we can avoid potential conflicts between containers with different system or runtime dependencies. For example: deploying an app that uses Java 7 and another app that uses Java 8 on the same host. Or running multiple nginx containers that all have port 80 as their default listening ports (if exposing on the host using the `--publish` flag, the ports selected for the host will need to be unique). Isolation benefits are possible because of Linux Namespaces.
 
-   One thing you might notice is that the mongo container is running the `docker-entrypoint` command. This is the name of the executable that is run when the container is started. The mongo image requires some prior configuration before kicking off the DB process. You can see exactly what the script does by looking at it on [github](https://github.com/docker-library/mongo/blob/master/4.4/docker-entrypoint.sh). Typically, you can find the link to the github source from the image description page on the Docker Store website.
+**Note**: You didn't have to install anything on your host (other than Docker) to run these processes! Each container includes the dependencies that it needs within the container, so you don't need to install anything on your host directly.
 
-   Containers are self-contained and isolated, which means we can avoid potential conflicts between containers with different system or runtime dependencies. For example: deploying an app that uses Java 7 and another app that uses Java 8 on the same host. Or running multiple nginx containers that all have port 80 as their default listening ports (if exposing on the host using the `--publish` flag, the ports selected for the host will need to be unique). Isolation benefits are possible because of Linux Namespaces.
+Running multiple containers on the same host gives us the ability to fully utilize the resources (cpu, memory, etc) available on single host. This can result in huge cost savings for an enterprise.
 
-   **Note**: You didn't have to install anything on your host (other than Docker) to run these processes! Each container includes the dependencies that it needs within the container, so you don't need to install anything on your host directly.
-
-   Running multiple containers on the same host gives us the ability to fully utilize the resources (cpu, memory, etc) available on single host. This can result in huge cost savings for an enterprise.
-
-   While running images directly from the Docker Hub can be useful at times, it is more useful to create custom images, and refer to official images as the starting point for these images. We will dive into building our own custom images in Lab 2.
+While running images directly from the Docker Hub can be useful at times, it is more useful to create custom images, and refer to official images as the starting point for these images. We will dive into building our own custom images in Lab 2.

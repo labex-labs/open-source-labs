@@ -1,6 +1,8 @@
 # Get Started
 
-Run `docker -h`,
+Open a terminal on LabEx VM and run the `docker -h`, which will show you the help page for the Docker CLI.
+
+![image](./assets/20230829-11-06-18-8MzuWVgt.png)
 
 ```bash
 $ docker -h
@@ -32,6 +34,12 @@ Management Commands:
 
 The Docker command line can be used to manage several features of the Docker Engine. In this lab, we will mainly focus on the `container` command.
 
+Install `podman` on your LabEx VM.
+
+```bash
+sudo apt-get install podman
+```
+
 If `podman` is installed, you can run the alternative command for comparison.
 
 ```bash
@@ -44,12 +52,12 @@ You can additionally review the version of your Docker installation,
 docker version
 
 Client:
-  Version:      19.03.6
+  Version:      20.10.21
   ...
 
-Server: Docker Engine - Community
-  Engine
-    Version:    19.03.5
+Server:
+ Engine:
+  Version:      20.10.21
     ...
 ```
 
@@ -57,9 +65,9 @@ You note that Docker installs both a `Client` and a `Server: Docker Engine`. For
 
 ```bash
 sudo podman version --events-backend=none
-Version:      2.1.1
-API Version:  2.0.0
-Go Version:   go1.15.2
-Built:        Thu Jan  1 00:00:00 1970
+Version:      3.4.4
+API Version:  3.4.4
+Go Version:   go1.17.3
+Built:        Thu Jan  1 08:00:00 1970
 OS/Arch:      linux/amd64
 ```

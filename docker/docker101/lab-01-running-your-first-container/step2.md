@@ -2,7 +2,7 @@
 
 We are going to use the Docker CLI to run our first container.
 
-1. Open a terminal on your local computer
+1. Open a terminal on LabEx VM.
 
 1. Run `docker container run -t ubuntu top`
 
@@ -44,16 +44,7 @@ We are going to use the Docker CLI to run our first container.
 
    The `docker container exec` command is a way to "enter" a running container's namespaces with a new process.
 
-   Open a new terminal. On cognitiveclass.ai, select `Terminal` > `New Terminal`.
-
-   Using play-with-docker.com, to open a new terminal connected to node1, click "Add New Instance" on the lefthand side, then ssh from node2 into node1 using the IP that is listed by 'node1 '. For example:
-
-   ```bash
-   [node2] (local) root@192.168.0.17 ~
-   $ ssh 192.168.0.18
-   [node1] (local) root@192.168.0.18 ~
-   $
-   ```
+   Open a new terminal. select `Terminal` > `New Terminal`.
 
    In the new terminal, use the `docker container ls` command to get the ID of the running container you just created.
 
@@ -66,7 +57,7 @@ We are going to use the Docker CLI to run our first container.
    Then use that id to run `bash` inside that container using the `docker container exec` command. Since we are using bash and want to interact with this container from our terminal, use `-it` flags to run using interactive mode while allocating a psuedo-terminal.
 
    ```bash
-   $ docker container exec -it b3ad2a23fab3 bash
+   $ docker container exec -it <CONTAINER ID> bash
    root@b3ad2a23fab3:/#
    ```
 
@@ -112,7 +103,7 @@ We are going to use the Docker CLI to run our first container.
 
    In addition to running linux containers on Windows using a linux subsystem, native Windows containers are now possible due the creation of container primitives on the Windows OS. Native Windows containers can be run on Windows 10 or Windows Server 2016 or newer.
 
-   **Note**: if you run this exercise in a containerized terminal and execute the `ps -ef` command in the terminal, e.g. in `https://labs.cognitiveclass.ai`, you will still see a limited set of processes after exiting the `exec` command. You can try to run the `ps -ef` command in a terminal on your local machine to see all processes.
+   **Note**: if you run this exercise in a containerized terminal and execute the `ps -ef` command in the terminal, you will still see a limited set of processes after exiting the `exec` command. You can try to run the `ps -ef` command in a terminal on your local machine to see all processes.
 
 1. Clean up the container running the `top` processes by typing: `<ctrl>-c`, list all containers and remove the containers by their id.
 

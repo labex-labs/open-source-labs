@@ -13,56 +13,63 @@
         "text": "step1.md",
         "verify": [
           {
-            "name": "Test the completion of step 1",
+            "name": "Podman should be installed",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please flow the instructions to install podman.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["linux/apt", "docker/run", "docker/version", "docker/top"]
       },
       {
         "title": "Step 1: Run your first container",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Test the completion of step 2",
+            "name": "Verify the container is running",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Please flow the instructions to run your first container.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["docker/run", "docker/exec", "docker/ls"]
       },
       {
         "title": "Step 2: Run Multiple Containers",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Test the completion of step 3",
-            "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "name": "Nginx container should be running",
+            "file": "verify3-1.sh",
+            "hint": "Please flow the instructions to run nginx container.",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
+            "name": "Mongo container should be running",
+            "file": "verify3-2.sh",
+            "hint": "Please flow the instructions to run mongo container.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["docker/run"]
       },
       {
         "title": "Step 3: Clean Up",
         "text": "step4.md",
         "verify": [
           {
-            "name": "Test the completion of step 4",
+            "name": "Verify the containers are removed",
             "file": "verify4.sh",
-            "hint": "Please check the step 4 carefully.",
+            "hint": "Please stop and remove all containers.",
             "timeout": 0,
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": ["docker/prune"]
       }
     ],
     "intro": {
