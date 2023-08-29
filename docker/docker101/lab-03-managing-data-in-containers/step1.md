@@ -31,7 +31,7 @@ local    f543c5319ebd96b7701dc1f2d915f21b095dfb35adbb8dc851630e098d526a50
 Set an environment variable `VOLUME` with the value of the generated name,
 
 ```bash
-export VOLUME=f543c5319ebd96b7701dc1f2d915f21b095dfb35adbb8dc851630e098d526a50
+export VOLUME=<VOLUME NAME>
 ```
 
 And inspect the volume that was created, use the hash name that was generated for the volume,
@@ -217,10 +217,12 @@ Verify that a directory `data` was created,
 
 ```bash
 $ ls -al
-total 16
-drwxrwsrwx 3 root users 4096 Sep 24 16:27 .
-drwxrwxr-x 1 root root  4096 Jul 16 20:04 ..
-drwxr-sr-x 3 5984  5984 4096 Sep 24 16:27 data
+total 20
+drwxrwxr-x  3 labex labex 4096 Aug 29 14:14 .
+drwxr-x--- 25 labex labex 4096 Aug 29 14:14 ..
+-rw-r--r--  1 labex labex  169 Aug 29 14:04 app.py
+drwxr-xr-x  3  5984  5984 4096 Aug 29 14:14 data
+-rw-r--r--  1 labex labex   98 Aug 29 13:52 Dockerfile
 ```
 
 and that CouchDB has created data files here,
@@ -228,11 +230,11 @@ and that CouchDB has created data files here,
 ```bash
 $ ls -al data
 total 32
-drwxr-sr-x 3 5984  5984 4096 Sep 24 16:27 .
-drwxrwsrwx 3 root users 4096 Sep 24 16:27 ..
--rw-r--r-- 1 5984  5984 4257 Sep 24 16:27 _dbs.couch
-drwxr-sr-x 2 5984  5984 4096 Sep 24 16:27 .delete
--rw-r--r-- 1 5984  5984 8385 Sep 24 16:27 _nodes.couch
+drwxr-xr-x 3  5984  5984 4096 Aug 29 14:14 .
+drwxrwxr-x 3 labex labex 4096 Aug 29 14:14 ..
+-rw-r--r-- 1  5984  5984 4257 Aug 29 14:14 _dbs.couch
+drwxr-xr-x 2  5984  5984 4096 Aug 29 14:14 .delete
+-rw-r--r-- 1  5984  5984 8385 Aug 29 14:14 _nodes.couch
 ```
 
 Also check that now, no managed volume was created by docker, because we are now using a `host volume`.
@@ -263,12 +265,12 @@ Note that CouchDB created a folder `shards`,
 ```bash
 $ ls -al data
 total 40
-drwxr-sr-x 4 5984  5984 4096 Sep 24 16:49 .
-drwxrwsrwx 3 root users 4096 Sep 24 16:49 ..
--rw-r--r-- 1 5984  5984 8388 Sep 24 16:49 _dbs.couch
-drwxr-sr-x 2 5984  5984 4096 Sep 24 16:49 .delete
--rw-r--r-- 1 5984  5984 8385 Sep 24 16:49 _nodes.couch
-drwxr-sr-x 4 5984  5984 4096 Sep 24 16:49 shards
+drwxr-xr-x 4  5984  5984 4096 Aug 29 14:15 .
+drwxrwxr-x 3 labex labex 4096 Aug 29 14:14 ..
+-rw-r--r-- 1  5984  5984 8388 Aug 29 14:15 _dbs.couch
+drwxr-xr-x 2  5984  5984 4096 Aug 29 14:14 .delete
+-rw-r--r-- 1  5984  5984 8385 Aug 29 14:14 _nodes.couch
+drwxr-xr-x 4  5984  5984 4096 Aug 29 14:15 shards
 ```
 
 List the content of the `shards` directory,
@@ -276,10 +278,10 @@ List the content of the `shards` directory,
 ```bash
 $ ls -al data/shards
 total 16
-drwxr-sr-x 4 5984 5984 4096 Sep 24 16:49 .
-drwxr-sr-x 4 5984 5984 4096 Sep 24 16:49 ..
-drwxr-sr-x 2 5984 5984 4096 Sep 24 16:49 00000000-7fffffff
-drwxr-sr-x 2 5984 5984 4096 Sep 24 16:49 80000000-ffffffff
+drwxr-xr-x 4 5984 5984 4096 Aug 29 14:15 .
+drwxr-xr-x 4 5984 5984 4096 Aug 29 14:15 ..
+drwxr-xr-x 2 5984 5984 4096 Aug 29 14:15 00000000-7fffffff
+drwxr-xr-x 2 5984 5984 4096 Aug 29 14:15 80000000-ffffffff
 ```
 
 and the first shard,
@@ -287,9 +289,9 @@ and the first shard,
 ```bash
 $ ls -al data/shards/00000000-7fffffff/
 total 20
-drwxr-sr-x 2 5984 5984 4096 Sep 24 16:49 .
-drwxr-sr-x 4 5984 5984 4096 Sep 24 16:49 ..
--rw-r--r-- 1 5984 5984 8346 Sep 24 16:49 mydb.1600966173.couch
+drwxr-xr-x 2 5984 5984 4096 Aug 29 14:15 .
+drwxr-xr-x 4 5984 5984 4096 Aug 29 14:15 ..
+-rw-r--r-- 1 5984 5984 8346 Aug 29 14:15 mydb.1693289721.couch
 ```
 
 A [shard](https://docs.couchdb.org/en/stable/cluster/sharding.html) is a horizontal partition of data in a database. Partitioning data into shards and distributing copies of each shard to different nodes in a cluster gives the data greater durability against node loss. CouchDB automatically shards databases and distributes the subsets of documents among nodes.
