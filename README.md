@@ -16,4 +16,6 @@ The labs in this repository are sourced from the open-source community and have 
 
 The `index.json` file displays the source and open-source license for each lab, which remains unchanged even after adaptation.
 
+Open source does not always mean that it is free. Some labs require Pro users to access them due to the higher environmental costs involved, but you can still freely access the original content.
+
 We extend our heartfelt gratitude to the original creators. ❤️
