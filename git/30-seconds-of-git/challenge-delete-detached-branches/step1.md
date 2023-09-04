@@ -16,6 +16,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 6. Verify that the detached branches have been deleted.
 
 The output should only show the branches that are associated with a specific branch:
+
 ```shell
 * master d22f46b [origin/master] Added file2.txt
 ```

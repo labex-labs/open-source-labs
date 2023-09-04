@@ -2,13 +2,16 @@
 
 As a developer, you are working on a project with multiple contributors. You need to view a summary of all the commits made to the project to understand the changes that have been made and to identify any potential issues. However, you don't want to spend a lot of time sifting through all the commit messages to find the information you need.
 
-To view a short summary of all the commits made to a Git repository, you can use the `git log --oneline` command. For example, let's say you are working on a project hosted on GitHub called `git-playground`. 
+To view a short summary of all the commits made to a Git repository, you can use the `git log --oneline` command. For example, let's say you are working on a project hosted on GitHub called `git-playground`.
 
 1. You can clone the repository to your local machine using the following command:
+
 ```shell
 git clone https://github.com/labex-labs/git-playground.git
 ```
+
 2. Once you have cloned the repository, navigate to the project directory and run the following command to view a short summary of all the commits:
+
 ```shell
 cd git-playground
 git log --oneline

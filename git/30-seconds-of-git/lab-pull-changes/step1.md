@@ -5,10 +5,13 @@ You are working on a project with a team of developers, and you need to ensure t
 For this lab, we will be using the Git repository named `https://github.com/labex-labs/git-playground`. Follow the steps below to complete the lab:
 
 1. Change into the directory of the cloned repository:
+
 ```shell
 cd git-playground
 ```
+
 2. Pull the latest changes from the `master` branch of the remote repository:
+
 ```shell
 git pull origin master
 ```

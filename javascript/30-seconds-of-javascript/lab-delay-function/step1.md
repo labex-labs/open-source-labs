@@ -17,7 +17,7 @@ delay(
     console.log(text);
   },
   1000,
-  "later"
+  "later",
 ); // Logs 'later' after one second.
 ```
 

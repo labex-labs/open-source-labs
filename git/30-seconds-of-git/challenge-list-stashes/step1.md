@@ -10,6 +10,7 @@ You are working on a project in a Git repository and have made some changes that
 2. List all stashes.
 
 You should see output similar to the following:
+
 ```
 stash@{0}: On master: Added test2.txt
 stash@{1}: On master: Added test.txt

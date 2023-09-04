@@ -18,7 +18,8 @@ To clone the missing submodules and checkout the correct commits, follow these s
    ```
    git submodule foreach git checkout master
    ```
-Here's the final result:
+   Here's the final result:
+
 ```shell
 Submodule 'sha1collisiondetection' (https://github.com/cr-marcstevens/sha1collisiondetection.git) registered for path 'sha1collisiondetection'
 Cloning into '/home/labex/project/git/sha1collisiondetection'...

@@ -29,7 +29,7 @@ const useMap = (initialValue) => {
         }),
       clear: () => setMap(new Map()),
     }),
-    [setMap]
+    [setMap],
   );
 
   return [map, actions];

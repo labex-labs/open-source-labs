@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     values={choices}
     selectedValue="lime"
     onValueChange={(val) => console.log(val)}
-  />
+  />,
 );
 ```
 

@@ -12,6 +12,7 @@ Let's say you want to view the changes between the `HEAD` commit and the commit 
 2. Display a summary of the changes between the two commits.
 
 Here's an example of what the output might look like:
+
 ```shell
 Hang (2):
       Added file1.txt

@@ -15,6 +15,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 5. Verify that the change has been applied to the `master` branch.
 
 This is the result of running `git log` on the `master` branch:
+
 ```shell
 commit e2f3c6af9570f4eac2580dea93ca8133f1547d53 (HEAD -> master)
 Author: xiaoshengyunan <@users.noreply.github.com>
@@ -40,4 +41,3 @@ Date:   Wed Apr 26 14:16:00 2023 +0800
 
     Initial commit
 ```
-

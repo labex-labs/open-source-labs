@@ -12,6 +12,7 @@ Suppose you are working on a project hosted on GitHub called `git-playground`. Y
 2. Find all the commits that modified the string "Git Playground" in the `README.md` file and use the arrow keys to navigate through the list of commits. Press <kbd>Q</kbd> to exit the log.
 
 Git will output a list of all the commits that modified the string "Git Playground" in the `README.md` file:
+
 ```shell
 commit b00b9374a7c549d1af111aa777fdcc868d8a2a01
 Author: Hang <huhuhang@gmail.com>

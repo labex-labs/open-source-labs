@@ -5,13 +5,17 @@ As a developer, you have been working on a project hosted on the `https://github
 To view a summary of changes between two commits, let's say you want to view the changes between the `HEAD` commit and the commit with the message "Initial commit". Here's how you can do it:
 
 1. Open a terminal window and navigate to the directory where the `git-playground` repository is located:
+
 ```
 cd git-playground
 ```
+
 2. Run the following command:
+
 ```
 git shortlog 3050fc0de..HEAD
 ```
+
 Git will display a summary of the changes between the two commits. You can use the arrow keys to navigate through the summary, and press `Q` to exit.
 
 Here's an example of what the output might look like:

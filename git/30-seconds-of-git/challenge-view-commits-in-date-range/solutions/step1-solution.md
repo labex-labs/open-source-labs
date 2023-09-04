@@ -19,5 +19,3 @@ cd git-playground
 git log --since='Apr 25 2023' --until='Apr 27 2023'
 git log --since='12 weeks ago'
 ```
-
-

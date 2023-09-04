@@ -43,7 +43,9 @@ To display a menu overlay when the user hovers over an image, use a `<figure>` t
   top: 0;
   right: 0;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out, right 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    right 0.3s ease-in-out;
 }
 
 .hover-menu div {
@@ -54,7 +56,9 @@ To display a menu overlay when the user hovers over an image, use a `<figure>` t
   height: 100%;
   padding: 8px 4px;
   background: #000;
-  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition:
+    left 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;

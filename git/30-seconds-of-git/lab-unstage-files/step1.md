@@ -3,19 +3,25 @@
 You are working on a project in the `git-playground` repository. You have made some changes to the files and added them to the staging area using the `git add` command. However, you realize that you accidentally added a file that you don't want to commit. You need to remove this file from the staging area.
 
 1. View current working directory status:
+
 ```shell
 git status
 ```
+
 2. Remove the `newfile.txt` file from the staging area using the `git restore --staged` command:
+
 ```shell
 git restore --staged newfile.txt
 ```
+
 3. Verify that the file has been removed from the staging area using the `git status` command:
+
 ```shell
 git status
 ```
 
 This is the final result:
+
 ```shell
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.

@@ -32,7 +32,7 @@ objectify(people, (p) => p.name.toLowerCase());
 objectify(
   people,
   (p) => p.name.toLowerCase(),
-  (p) => p.age
+  (p) => p.age,
 );
 // Output: { john: 42, adam: 39 }
 ```

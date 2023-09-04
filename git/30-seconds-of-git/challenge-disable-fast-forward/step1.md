@@ -14,6 +14,7 @@ To disable fast forward merging, let's use the repository from `https://github.c
 4. Switch back to the `mater` branch and merge the `my-branch` branch, save and exit without changing the text.
 
 Now, Git will always create a merge commit, even if it is possible to fast forward:
+
 ```shell
 commit 6e17a776ab51a89ace069614b0caf1c07915a92c (HEAD -> master)
 Merge: ec5ea6d 6d7de91

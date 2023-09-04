@@ -16,7 +16,7 @@ const reducedFilter = (data, keys, fn) =>
     keys.reduce((acc, key) => {
       acc[key] = el[key];
       return acc;
-    }, {})
+    }, {}),
   );
 ```
 

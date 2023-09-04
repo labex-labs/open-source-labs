@@ -35,7 +35,7 @@ const App = () => {
   const [branches, setBranches] = React.useState([]);
   const [selectedBranch, setSelectedBranch] = useDelayedState(
     branches[0],
-    branches.length
+    branches.length,
   );
 
   React.useEffect(() => {

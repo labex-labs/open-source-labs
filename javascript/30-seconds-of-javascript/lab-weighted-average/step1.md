@@ -16,7 +16,7 @@ const weightedAverage = (nums, weights) => {
       acc[1] = acc[1] + w;
       return acc;
     },
-    [0, 0]
+    [0, 0],
   );
   return sum / weightSum;
 };

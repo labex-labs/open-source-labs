@@ -14,6 +14,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 This will restore the `file2.txt` file to your local repository.
 
 This is the result of running the `ll` command:
+
 ```shell
 total 12K
 -rw-r--r-- 1 labex labex 15 Jun 18 18:05 file1.txt

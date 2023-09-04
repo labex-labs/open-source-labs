@@ -12,7 +12,7 @@ const LimitedTextarea = ({ rows, cols, value, limit }) => {
     (text) => {
       setContent(text.slice(0, limit));
     },
-    [limit]
+    [limit],
   );
 
   return (
@@ -31,7 +31,7 @@ const LimitedTextarea = ({ rows, cols, value, limit }) => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <LimitedTextarea limit={32} value="Hello!" />
+  <LimitedTextarea limit={32} value="Hello!" />,
 );
 ```
 

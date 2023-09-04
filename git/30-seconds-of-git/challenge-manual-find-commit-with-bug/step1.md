@@ -15,12 +15,13 @@ The error message is that the `file2.txt` file should print "This is file2.txt."
 3. Mark the current commit as "bad".
 4. Mark a commit with the message "Initial commit" as "good". Git will automatically checkout a new commit for you to test.
 5. If the contents of the checked `file2.txt` file do not match the bug, mark it as "good".
-6. If the contents of the checked `file2.txt` file  match the bug, mark it as "bad".
+6. If the contents of the checked `file2.txt` file match the bug, mark it as "bad".
 7. Once you have found the buggy commit, exit the binary search.
 
 You can now examine the code changes in the buggy commit to find the source of the bug.
 
 This is the result of the test:
+
 ```
 d22f46ba8c2d4e07d773c5126e9c803933eb5898 is the first bad commit
 commit d22f46ba8c2d4e07d773c5126e9c803933eb5898

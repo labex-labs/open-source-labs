@@ -16,6 +16,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 6. Push your changes to the `rewind-commits` branch.
 
 This is the final result:
+
 ```shell
 cf80005 (HEAD -> rewind-commits, origin/rewind-commits) Added file1.txt
 b00b937 Initial commit

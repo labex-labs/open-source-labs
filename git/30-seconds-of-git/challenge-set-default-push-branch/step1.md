@@ -16,6 +16,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 6. Push your changes to the remote repository. Git will push your changes to a branch named `my-branch` on the remote repository.
 
 This is the result of running `git log`:
+
 ```shell
 commit 1f1949959887a1549f1bb5286d3d0a2b993f87e0 (HEAD -> my-branch, origin/my-branch)
 Author: xiaoshengyunan <@users.noreply.github.com>

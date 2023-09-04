@@ -50,7 +50,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     onChange={(selected) => {
       console.log(selected);
     }}
-  />
+  />,
 );
 ```
 

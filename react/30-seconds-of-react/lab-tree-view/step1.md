@@ -52,7 +52,7 @@ const TreeView = ({
             {data[v]}
             {i === a.length - 1 ? "" : ","}
           </p>
-        )
+        ),
       )}
       {isDataArray ? "]" : "}"}
       {!isLast ? "," : ""}
@@ -129,7 +129,7 @@ const data = {
   },
 };
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <TreeView data={data} name="data" />
+  <TreeView data={data} name="data" />,
 );
 ```
 

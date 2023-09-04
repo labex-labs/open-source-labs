@@ -17,7 +17,7 @@ const MappedTable = ({ data, propertyNames }) => {
   const filteredData = data.map((obj) =>
     Object.keys(obj)
       .filter((key) => propertyNames.includes(key))
-      .reduce((acc, key) => ({ ...acc, [key]: obj[key] }), {})
+      .reduce((acc, key) => ({ ...acc, [key]: obj[key] }), {}),
   );
 
   return (
@@ -54,7 +54,7 @@ const propertyNames = ["name", "surname", "age"];
 
 ReactDOM.render(
   <MappedTable data={people} propertyNames={propertyNames} />,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 ```
 

@@ -14,7 +14,7 @@ To configure the line endings for the `git-playground` repository, follow these 
 4. Verify that the line endings have been configured correctly.
 
 This is the result of running `cat -vet file2.txt`:
+
 ```shell
 This is file2.$
 ```
-

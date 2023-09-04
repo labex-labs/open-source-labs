@@ -10,15 +10,19 @@ To view the last commit made to a Git repository, follow these steps:
 
 1. Open the terminal on your computer.
 2. Navigate to the directory where the Git repository is located:
+
 ```shell
 cd git-playground
 ```
+
 3. View the last commit:
+
 ```shell
 git log -1
 ```
 
 The output will show you the details of the last commit, including the commit message, author, and date:
+
 ```shell
 commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/master, origin/feature-branch, origin/HEAD)
 Author: Hang <huhuhang@users.noreply.github.com>

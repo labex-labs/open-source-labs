@@ -20,7 +20,7 @@ zipWith(
   [10, 20],
   [100, 200],
   (a, b, c) =>
-    (a != null ? a : "a") + (b != null ? b : "b") + (c != null ? c : "c")
+    (a != null ? a : "a") + (b != null ? b : "b") + (c != null ? c : "c"),
 ); // [111, 222, '3bc']
 ```
 

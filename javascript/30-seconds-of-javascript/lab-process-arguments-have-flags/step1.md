@@ -11,7 +11,7 @@ Here's a code snippet that shows how to implement this:
 ```js
 const hasFlags = (...flags) =>
   flags.every((flag) =>
-    process.argv.includes(/^-{1,2}/.test(flag) ? flag : "--" + flag)
+    process.argv.includes(/^-{1,2}/.test(flag) ? flag : "--" + flag),
   );
 ```
 

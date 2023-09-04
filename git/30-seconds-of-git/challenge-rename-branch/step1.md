@@ -17,6 +17,7 @@ To rename the branch, follow these steps:
 3. Verify that the branch has been renamed.
 
 The output should show the new branch name:
+
 ```shell
 master
 * new-branch

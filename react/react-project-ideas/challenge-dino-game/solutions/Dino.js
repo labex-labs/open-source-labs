@@ -19,12 +19,12 @@ function Dino() {
     const isAlive = setInterval(function () {
       // get current dino Y position
       const dinoTop = parseInt(
-        getComputedStyle(dinoRef.current).getPropertyValue("top")
+        getComputedStyle(dinoRef.current).getPropertyValue("top"),
       );
 
       // get current cactus X position
       let cactusLeft = parseInt(
-        getComputedStyle(cactusRef.current).getPropertyValue("left")
+        getComputedStyle(cactusRef.current).getPropertyValue("left"),
       );
 
       // detect collision

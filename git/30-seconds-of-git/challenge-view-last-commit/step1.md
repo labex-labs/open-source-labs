@@ -13,6 +13,7 @@ To view the last commit made to a Git repository, follow these steps:
 3. View the last commit.
 
 The output will show you the details of the last commit, including the commit message, author, and date:
+
 ```shell
 commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/master, origin/feature-branch, origin/HEAD)
 Author: Hang <huhuhang@users.noreply.github.com>

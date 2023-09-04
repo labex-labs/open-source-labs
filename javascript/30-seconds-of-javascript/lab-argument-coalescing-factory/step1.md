@@ -13,7 +13,7 @@ Use `Array.prototype.find()` to return the first argument that returns `true` fr
 
 ```js
 const customCoalesce = coalesceFactory(
-  (v) => ![null, undefined, "", NaN].includes(v)
+  (v) => ![null, undefined, "", NaN].includes(v),
 );
 customCoalesce(undefined, null, NaN, "", "Waldo"); // 'Waldo'
 ```

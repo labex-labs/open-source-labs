@@ -53,7 +53,7 @@ const CountDown = ({ hours = 0, minutes = 0, seconds = 0 }) => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <CountDown hours={1} minutes={45} />
+  <CountDown hours={1} minutes={45} />,
 );
 ```
 

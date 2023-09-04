@@ -52,8 +52,9 @@ Here is the HTML and CSS code to achieve this effect:
   font-size: 18px;
   opacity: 0;
   transform: translateX(100%);
-  transition: opacity 0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055), transform
-      0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055);
+  transition:
+    opacity 0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055),
+    transform 0.3s cubic-bezier(0.75, -0.015, 0.565, 1.055);
 }
 
 .menu-toggler:checked ~ .stagger-menu li {

@@ -12,7 +12,7 @@ function ItemDetail() {
   const item = !!itemId && getItemDetail(itemId);
   const { addItemToCartList, cart } = useContext(GlobalContext);
   const [isAdded, setIsAdded] = useState(
-    cart.findIndex((c) => c.id === itemId) > -1
+    cart.findIndex((c) => c.id === itemId) > -1,
   );
 
   return (

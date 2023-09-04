@@ -11,6 +11,7 @@ You have been working on a project in a Git repository named `https://github.com
 3. Verify that you are now on the `feature-1` branch.
 
 This is the final result:
+
 ```shell
 * feature-1
   master

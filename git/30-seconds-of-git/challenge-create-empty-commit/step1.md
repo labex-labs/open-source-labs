@@ -4,7 +4,7 @@
 
 You need to create an empty commit in your Git repository. This can be useful in several scenarios, such as:
 
-- Triggering a build process  
+- Triggering a build process
 - Creating a placeholder commit
 - Marking a specific point in the repository's history
 

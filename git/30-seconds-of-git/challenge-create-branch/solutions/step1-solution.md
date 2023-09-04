@@ -1,5 +1,5 @@
 ```shell
-git checkout -b < branch > [-t < remote > / < branch > ]  
+git checkout -b < branch > [-t < remote > / < branch > ]
 
 git checkout -b feature-1
 # Local branch, without a remote tracking branch

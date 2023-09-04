@@ -15,9 +15,9 @@ To clone the missing submodules and checkout the correct commits, follow these s
 3. Checkout to the correct commit of the submodule, i.e. the `master` branch.
 
 Here's the final result:
+
 ```shell
 Submodule 'sha1collisiondetection' (https://github.com/cr-marcstevens/sha1collisiondetection.git) registered for path 'sha1collisiondetection'
 Cloning into '/home/labex/project/git/sha1collisiondetection'...
 Submodule path 'sha1collisiondetection': checked out '855827c583bc30645ba427885caa40c5b81764d2'
 ```
-

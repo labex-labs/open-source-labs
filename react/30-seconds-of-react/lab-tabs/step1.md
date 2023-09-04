@@ -94,7 +94,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <TabItem label="B" index={2}>
       Dolor sit amet
     </TabItem>
-  </Tabs>
+  </Tabs>,
 );
 ```
 

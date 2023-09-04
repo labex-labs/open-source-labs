@@ -9,7 +9,7 @@ To track the browser's location search param, use the following steps:
 ```jsx
 const getValue = React.useCallback(
   () => new URLSearchParams(window.location.search).get(param),
-  [param]
+  [param],
 );
 ```
 

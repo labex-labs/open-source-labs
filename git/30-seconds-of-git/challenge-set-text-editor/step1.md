@@ -16,6 +16,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 6. Close the text editor. The commit will be made with the message you wrote.
 
 This is the finished result:
+
 ```shell
 commit 1f19499s5387a1549f1bb5286d3d0a2b993f87e0 (HEAD -> master)
 Author: xiaoshengyunan <@users.noreply.github.com>

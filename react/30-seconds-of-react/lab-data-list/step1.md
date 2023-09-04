@@ -22,7 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <>
     <DataList data={names} />
     <DataList data={names} isOrdered={true} />
-  </>
+  </>,
 );
 ```
 

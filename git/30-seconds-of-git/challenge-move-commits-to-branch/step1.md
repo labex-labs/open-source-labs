@@ -14,6 +14,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 6. Check the commit history on the `master` branch and the commit history on the `feature` branch to verify the results.
 
 This is the result of running `git log`:
+
 ```shell
 commit 7969ab5d6606e2a40c9fd826c732206b835976e9 (HEAD -> feature)
 Author: xiaoshengyunan <@users.noreply.github.com>

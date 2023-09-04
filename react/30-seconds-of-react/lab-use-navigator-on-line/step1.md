@@ -36,7 +36,7 @@ const StatusIndicator = () => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <StatusIndicator />
+  <StatusIndicator />,
 );
 ```
 

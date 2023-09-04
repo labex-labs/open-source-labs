@@ -16,7 +16,7 @@ const renameKeys = (keysMap, obj) =>
       ...acc,
       ...{ [keysMap[key] || key]: obj[key] },
     }),
-    {}
+    {},
   );
 
 const obj = { name: "Bobo", job: "Front-End Master", shoeSize: 100 };

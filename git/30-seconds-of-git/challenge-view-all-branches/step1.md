@@ -13,4 +13,3 @@ You will see a list of all local branches in the repository. Use the arrow keys 
 
 This is the final result:
 ![<result>](./assets/challenge-view-all-branches.png)
-

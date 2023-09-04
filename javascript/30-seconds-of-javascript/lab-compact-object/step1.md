@@ -20,7 +20,7 @@ const compactObject = (val) => {
         acc[key] = typeof value === "object" ? compactObject(value) : value;
       return acc;
     },
-    Array.isArray(val) ? [] : {}
+    Array.isArray(val) ? [] : {},
   );
 };
 ```

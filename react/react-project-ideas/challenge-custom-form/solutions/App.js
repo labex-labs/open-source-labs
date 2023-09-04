@@ -13,7 +13,7 @@ function App() {
         usernameRef.current.value +
         `\n` +
         "Password: " +
-        passwordRef.current.value
+        passwordRef.current.value,
     );
   };
   const handleRegister = () => {

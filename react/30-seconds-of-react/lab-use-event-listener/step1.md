@@ -41,7 +41,7 @@ const MyApp = () => {
     ({ clientX, clientY }) => {
       setCoords({ x: clientX, y: clientY });
     },
-    [setCoords]
+    [setCoords],
   );
 
   useEventListener("mousemove", updateCoords);

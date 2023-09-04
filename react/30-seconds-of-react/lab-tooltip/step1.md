@@ -71,7 +71,7 @@ To use the tooltip component, call `ReactDOM.createRoot()` with the following co
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Tooltip text="Simple tooltip">
     <button>Hover me!</button>
-  </Tooltip>
+  </Tooltip>,
 );
 ```
 

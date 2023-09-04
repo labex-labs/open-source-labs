@@ -14,7 +14,7 @@ const orderBy = (arr, props, orders = ["asc"]) =>
         acc = p1 > p2 ? 1 : p1 < p2 ? -1 : 0;
       }
       return acc;
-    }, 0)
+    }, 0),
   );
 ```
 

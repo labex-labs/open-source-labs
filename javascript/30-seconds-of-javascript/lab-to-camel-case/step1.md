@@ -12,12 +12,12 @@ const toCamelCase = (str) => {
   const words =
     str &&
     str.match(
-      /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g
+      /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g,
     );
   const capitalizedWords =
     words &&
     words.map(
-      (word) => word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase()
+      (word) => word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase(),
     );
   const camelCaseString = capitalizedWords && capitalizedWords.join("");
   return (

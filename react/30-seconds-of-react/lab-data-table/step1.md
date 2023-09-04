@@ -36,7 +36,7 @@ To use this component with an array of people's names, for example, you can call
 ```jsx
 const people = ["John", "Jesse"];
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <DataTable data={people} />
+  <DataTable data={people} />,
 );
 ```
 

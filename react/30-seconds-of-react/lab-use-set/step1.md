@@ -23,7 +23,7 @@ const useSet = (initialValue) => {
         setSet((prevSet) => new Set([...prevSet].filter((i) => i !== item))),
       clear: () => setSet(new Set()),
     }),
-    [setSet]
+    [setSet],
   );
 
   return [set, actions];

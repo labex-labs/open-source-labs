@@ -21,7 +21,7 @@ const join = (arr, separator = ",", end = separator) =>
         : i === arr.length - 1
         ? acc + val
         : acc + val + separator,
-    ""
+    "",
   );
 ```
 

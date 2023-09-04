@@ -47,7 +47,9 @@ And here is the CSS code:
   height: var(--size);
   background: radial-gradient(circle closest-side, pink, transparent);
   transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
+  transition:
+    width 0.2s ease,
+    height 0.2s ease;
 }
 
 .mouse-cursor-gradient-tracking:hover::before {

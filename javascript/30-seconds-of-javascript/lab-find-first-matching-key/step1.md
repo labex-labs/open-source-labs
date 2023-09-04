@@ -18,7 +18,7 @@ findKey(
     fred: { age: 40, active: false },
     pebbles: { age: 1, active: true },
   },
-  (x) => x["active"]
+  (x) => x["active"],
 ); // 'barney'
 ```
 

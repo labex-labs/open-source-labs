@@ -21,7 +21,7 @@ const objectToQueryString = (queryParameters) => {
             typeof val === "string" ? `${symbol}${key}=${val}` : "";
           return queryString;
         },
-        ""
+        "",
       )
     : "";
 };

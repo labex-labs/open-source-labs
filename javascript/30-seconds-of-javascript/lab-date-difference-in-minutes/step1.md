@@ -14,7 +14,7 @@ Here's an example usage of the function:
 ```js
 getMinutesDiffBetweenDates(
   new Date("2021-04-24 01:00:15"),
-  new Date("2021-04-24 02:00:15")
+  new Date("2021-04-24 02:00:15"),
 ); // 60
 ```
 

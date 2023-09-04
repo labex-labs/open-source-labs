@@ -7,7 +7,7 @@ The `when` function returns a new function that takes one argument and runs a ca
 Here's an example implementation of the `when` function:
 
 ```js
-const when = (pred, whenTrue) => (x) => pred(x) ? whenTrue(x) : x;
+const when = (pred, whenTrue) => (x) => (pred(x) ? whenTrue(x) : x);
 ```
 
 You can use the `when` function to create a new function that doubles even numbers:
@@ -15,7 +15,7 @@ You can use the `when` function to create a new function that doubles even numbe
 ```js
 const doubleEvenNumbers = when(
   (x) => x % 2 === 0,
-  (x) => x * 2
+  (x) => x * 2,
 );
 doubleEvenNumbers(2); // 4
 doubleEvenNumbers(1); // 1

@@ -17,7 +17,7 @@ const merge = (...objs) =>
           : obj[k];
         return acc;
       }, {}),
-    {}
+    {},
   );
 ```
 

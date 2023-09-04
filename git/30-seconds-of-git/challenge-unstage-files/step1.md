@@ -11,6 +11,7 @@ You are working on a project in the `git-playground` repository. You have made s
 3. Verify that the file has been removed from the staging area.
 
 This is the final result:
+
 ```shell
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.

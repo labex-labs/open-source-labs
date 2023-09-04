@@ -13,6 +13,7 @@ The changes have been stashed on the `feature-branch` branch, and the stash mess
 3. Switch to the `feature-branch` branch, look at the list of stashes, and apply the stash whose information is "my changes".
 
 This is the contents of the `README.md` file:
+
 ```
 # git-playground
 Git Playground

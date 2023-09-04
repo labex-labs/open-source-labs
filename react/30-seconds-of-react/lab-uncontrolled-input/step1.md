@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     type="text"
     placeholder="Insert some text here..."
     onValueChange={console.log}
-  />
+  />,
 );
 ```
 

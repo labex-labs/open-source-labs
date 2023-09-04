@@ -26,7 +26,9 @@ And here's the corresponding CSS code:
   background-image: radial-gradient(#fff 10%, transparent 11%), radial-gradient(#fff
         10%, transparent 11%);
   background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
+  background-position:
+    0 0,
+    30px 30px;
   background-repeat: repeat;
 }
 ```

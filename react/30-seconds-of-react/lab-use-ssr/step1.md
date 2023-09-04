@@ -31,7 +31,7 @@ const useSSR = () => {
       canUseEventListeners: inBrowser && !!window.addEventListener,
       canUseViewport: inBrowser && !!window.screen,
     }),
-    [inBrowser]
+    [inBrowser],
   );
 
   return useSSRObject;

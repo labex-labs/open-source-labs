@@ -6,10 +6,13 @@ For this lab, we will be using the Git repository named `https://github.com/labe
 
 1. Open your terminal or command prompt.
 2. Navigate to the directory where you have cloned the `git-playground` repository:
+
 ```shell
 cd git-playground
 ```
+
 3. Run the following command to view the remote URL:
+
 ```shell
 git config --get remote.origin.url
 ```

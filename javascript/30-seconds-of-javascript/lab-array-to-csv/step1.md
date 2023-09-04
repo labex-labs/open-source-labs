@@ -15,7 +15,7 @@ const arrayToCSV = (arr, delimiter = ",") =>
     .map((v) =>
       v
         .map((x) => (isNaN(x) ? `"${x.replace(/"/g, '""')}"` : x))
-        .join(delimiter)
+        .join(delimiter),
     )
     .join("\n");
 ```
@@ -32,7 +32,7 @@ arrayToCSV(
     ["a", "b"],
     ["c", "d"],
   ],
-  ";"
+  ";",
 ); // '"a";"b"\n"c";"d"'
 arrayToCSV([
   ["a", '"b" great'],

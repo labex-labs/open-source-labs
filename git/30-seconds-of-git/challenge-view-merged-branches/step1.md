@@ -10,6 +10,7 @@ Your task is to print a list of all merged local branches in the Git repository 
 2. View the list of merged branches.
 
 This is the final result:
+
 ```
 * master
   remotes/origin/HEAD -> origin/master

@@ -24,7 +24,7 @@ indexBy(
     { id: 10, name: "apple" },
     { id: 20, name: "orange" },
   ],
-  (x) => x.id
+  (x) => x.id,
 );
 // { '10': { id: 10, name: 'apple' }, '20': { id: 20, name: 'orange' } }
 ```

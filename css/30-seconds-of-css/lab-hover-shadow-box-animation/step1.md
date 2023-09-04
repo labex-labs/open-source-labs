@@ -25,7 +25,9 @@ And here's the CSS code:
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   margin: 10px;
-  transition: box-shadow 0.3s, transform 0.3s;
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s;
 }
 
 .hover-shadow-box-animation:hover,

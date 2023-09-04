@@ -13,7 +13,7 @@ Here's an example code snippet to check if an object is deeply frozen:
 const isDeepFrozen = (obj) =>
   Object.isFrozen(obj) &&
   Object.keys(obj).every(
-    (prop) => typeof obj[prop] !== "object" || isDeepFrozen(obj[prop])
+    (prop) => typeof obj[prop] !== "object" || isDeepFrozen(obj[prop]),
   );
 ```
 

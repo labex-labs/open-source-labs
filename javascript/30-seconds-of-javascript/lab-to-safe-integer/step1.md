@@ -11,7 +11,7 @@ Here's an example code snippet that demonstrates how to convert a value to a saf
 ```js
 const toSafeInteger = (num) =>
   Math.round(
-    Math.max(Math.min(num, Number.MAX_SAFE_INTEGER), Number.MIN_SAFE_INTEGER)
+    Math.max(Math.min(num, Number.MAX_SAFE_INTEGER), Number.MIN_SAFE_INTEGER),
   );
 ```
 

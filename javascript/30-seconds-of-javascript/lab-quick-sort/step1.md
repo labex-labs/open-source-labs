@@ -26,7 +26,7 @@ const quickSort = (arr) => {
       }
       return acc;
     },
-    [[], []]
+    [[], []],
   );
   return [...quickSort(lo), pivot, ...quickSort(hi)];
 };

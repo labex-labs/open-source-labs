@@ -15,7 +15,7 @@ const formToObject = (form) =>
       ...acc,
       [key]: value,
     }),
-    {}
+    {},
   );
 ```
 

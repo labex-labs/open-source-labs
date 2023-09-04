@@ -7,32 +7,43 @@ A stash allows you to save your changes without committing them, so you can swit
 To create a stash, you can use the `git stash save` command. Let's say you're working on a branch named `feature` in the `git-playground` repository and you want to save your changes before switching to a different branch:
 
 1. First, navigate to the `git-playground` directory:
+
 ```shell
 cd git-playground
 ```
+
 2. Switch to a branch named `feature`:
+
 ```shell
 git checkout -b feature
 ```
+
 3. Make some changes to the files in the directory:
+
 ```shell
 echo "Some changes" >> README.md
 ```
+
 4. Save your changes to a stash:
+
 ```shell
 git stash save "My changes"
 ```
+
 5. Switch to a different branch:
+
 ```shell
 git checkout master
 ```
+
 6. When done making changes on the other branch, switch back to the `feature` branch and apply your stash:
+
 ```shell
 git stash apply
 ```
 
 This is the finished result:
+
 ```shell
 stash@{0}: On feature: My changes
 ```
-

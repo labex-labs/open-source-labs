@@ -63,7 +63,7 @@ function App() {
           style={{ backgroundColor: t.bgcolor }}
         >
           {t.name}
-        </div>
+        </div>,
       );
     });
 

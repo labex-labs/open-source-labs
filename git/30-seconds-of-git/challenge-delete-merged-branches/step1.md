@@ -12,6 +12,7 @@ Your task is to delete all local branches that have been merged into the `master
 4. List all branches again.
 
 This is the final result:
+
 ```
 * master
 ```

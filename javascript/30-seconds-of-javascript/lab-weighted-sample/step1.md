@@ -16,7 +16,7 @@ const weightedSample = (arr, weights) => {
     weights
       .reduce(
         (acc, w, i) => (i === 0 ? [w] : [...acc, acc[acc.length - 1] + w]),
-        []
+        [],
       )
       .findIndex((v, i, s) => roll >= (i === 0 ? 0 : s[i - 1]) && roll < v)
   ];

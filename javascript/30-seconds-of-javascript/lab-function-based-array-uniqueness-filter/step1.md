@@ -20,7 +20,7 @@ filterUniqueBy(
     { id: 3, value: "d" },
     { id: 0, value: "e" },
   ],
-  (a, b) => a.id == b.id
+  (a, b) => a.id == b.id,
 ); // [ { id: 0, value: 'a' }, { id: 0, value: 'e' } ]
 ```
 

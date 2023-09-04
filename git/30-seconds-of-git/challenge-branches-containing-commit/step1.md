@@ -10,6 +10,7 @@ You have been given a Git repository named `https://github.com/labex-labs/git-pl
 2. Find all branches that contain a hash with the commit message "Added file2.txt".
 
 The output should be:
+
 ```shell
 * master
   new-branch

@@ -60,7 +60,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <div>carousel item 2</div>,
       <div>carousel item 3</div>,
     ]}
-  />
+  />,
 );
 ```
 

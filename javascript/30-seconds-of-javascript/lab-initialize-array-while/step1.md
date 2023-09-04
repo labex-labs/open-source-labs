@@ -31,6 +31,6 @@ You can use the `initializeArrayWhile` function to initialize and fill an array 
 ```js
 initializeArrayWhile(
   (i, val) => val < 10,
-  (i, val, arr) => (i <= 1 ? 1 : val + arr[i - 2])
+  (i, val, arr) => (i <= 1 ? 1 : val + arr[i - 2]),
 ); // [1, 1, 2, 3, 5, 8]
 ```

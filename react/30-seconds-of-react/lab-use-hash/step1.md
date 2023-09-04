@@ -34,7 +34,7 @@ const useHash = () => {
     (newHash) => {
       if (newHash !== hash) window.location.hash = newHash;
     },
-    [hash]
+    [hash],
   );
 
   return [hash, updateHash];

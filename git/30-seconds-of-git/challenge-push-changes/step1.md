@@ -14,6 +14,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 4. Finally, push the changes to the remote repository.
 
 This is the result of running `git log`:
+
 ```shell
 commit 1f1949955387a1549f1bb5286d3d0a2b993f87e0 (HEAD -> master,origin/master,origin/HEAD)
 Author: xiaoshengyunan <@users.noreply.github.com>
@@ -21,4 +22,3 @@ Date:   Fri Jul 21 19:26:57 2023 +0800
 
     Added new feature
 ```
-

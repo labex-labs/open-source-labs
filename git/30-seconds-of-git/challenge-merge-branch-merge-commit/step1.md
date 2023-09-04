@@ -15,6 +15,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 5. Merge the `feature-branch` into the `master` branch,which will create a merge commit with the message "Merge feature-branch".
 
 This is the result of running `git log`:
+
 ```shell
 commit 45b7e0fa8656d0aa751c7ca3cee29422e3d6cf05 (HEAD -> master)
 Merge: d22f46b 1f19499

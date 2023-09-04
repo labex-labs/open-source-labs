@@ -7,7 +7,7 @@ cd git-playground
 git config --global user.name "Your Name"
 git config --global user.email "your@email.com"
 git checkout feature-1
-echo "hello" >> README.md  
+echo "hello" >> README.md
 git add .
 git commit -am "Add new content to README.md"
 git checkout feature-2

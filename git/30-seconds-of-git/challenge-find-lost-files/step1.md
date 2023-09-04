@@ -14,6 +14,7 @@ You have been working on a project in the `git-playground` repository. However, 
 6. If any lost files were found, review them to determine if they are the missing files.
 
 This is the result of running the `ls .git/lost-found` command:
+
 ```shell
 commit
 ```

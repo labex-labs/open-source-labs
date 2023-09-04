@@ -26,7 +26,7 @@ reduceWhich(
     { name: "Jack", age: 18 },
     { name: "Lucy", age: 9 },
   ],
-  (a, b) => a.age - b.age
+  (a, b) => a.age - b.age,
 ); // {name: 'Lucy', age: 9}
 ```
 

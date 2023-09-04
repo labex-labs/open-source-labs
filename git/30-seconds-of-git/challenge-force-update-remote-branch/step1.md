@@ -14,6 +14,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 4. If you can't push it successfully, please force push it.
 
 This is the final result:
+
 ```shell
 commit b8c530558ecd004156dd05ac7d22d8cf07b2c28e (HEAD -> master, origin/master, origin/HEAD)
 Author: Hang <huhuhang@users.noreply.github.com>

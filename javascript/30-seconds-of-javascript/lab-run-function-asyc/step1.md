@@ -11,7 +11,7 @@ const runAsync = (fn) => {
   const worker = new Worker(
     URL.createObjectURL(new Blob([`postMessage((${fn})());`]), {
       type: "application/javascript; charset=utf-8",
-    })
+    }),
   );
   return new Promise((resolve, reject) => {
     worker.onmessage = ({ data }) => {

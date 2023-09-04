@@ -13,6 +13,7 @@ To demonstrate how to view differences in changes, we will use the `git-playgrou
 3. View the differences between your staged changes and the last commit.
 
 This is the result of completing step 2：
+
 ```
 diff --git a/file1.txt b/file1.txt
 index bfccc4a..ee23125 100644
@@ -22,7 +23,9 @@ index bfccc4a..ee23125 100644
  This is file1.
 +hello,labex
 ```
+
 This is the result of completing step 3：
+
 ```
 diff --git a/README.md b/README.md
 index 0164284..f47591b 100644
@@ -33,5 +36,3 @@ index 0164284..f47591b 100644
  Git Playground
 +hello,world
 ```
-
-

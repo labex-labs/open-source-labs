@@ -21,7 +21,7 @@ const CSVToJSON = (data, delimiter = ",") => {
       const values = v.split(delimiter);
       return titles.reduce(
         (obj, title, index) => ((obj[title] = values[index]), obj),
-        {}
+        {},
       );
     });
 };

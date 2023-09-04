@@ -22,7 +22,7 @@ const useOnGlobalEvent = (type, callback, options) => {
       window.removeEventListener(
         previousType,
         listener.current,
-        previousOptions
+        previousOptions,
       );
     }
 

@@ -12,6 +12,7 @@ You have created a local branch in your Git repository, and you no longer need i
 4. Verify that the branch has been deleted.
 
 This is the result of running the `git branch` command:
+
 ```
 * master
 ```

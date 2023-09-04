@@ -32,7 +32,7 @@ const LazyLoadImage = ({
         setIsLoaded(true);
       }
     },
-    [observerRef]
+    [observerRef],
   );
 
   React.useEffect(() => {
@@ -45,7 +45,7 @@ const LazyLoadImage = ({
 
     observerRef.current = new IntersectionObserver(
       observerCallback,
-      observerOptions
+      observerOptions,
     );
     observerRef.current.observe(imgRef.current);
     return () => {
@@ -73,7 +73,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <LazyLoadImage
     src="https://picsum.photos/id/1080/600/600"
     alt="Strawberries"
-  />
+  />,
 );
 ```
 

@@ -5,6 +5,7 @@ As a developer, you may need to view the history of a repository to understand h
 To view a visual graph of a Git repository, you can use the `git log` command with the `--graph` option. For example, let's say you want to view the history of the `git-playground` repository on GitHub.
 
 Once you have cloned the repository, you can navigate to the directory and use the `git log` command to view the graph:
+
 ```shell
 cd git-playground
 git log --pretty=oneline --graph --decorate --all
@@ -13,6 +14,7 @@ git log --pretty=oneline --graph --decorate --all
 This will display a visual graph of all the commits and branches in the repository, allowing you to see how the code has evolved over time.
 
 This is the final result:
+
 ```
 * d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/master, origin/feature-branch, origin/HEAD) Added file2.txt
 * cf80005e40a3c661eb212fcea5fad06f8283f08f Added file1.txt

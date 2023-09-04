@@ -30,7 +30,7 @@ To use the `initializeArrayUntil` function, provide two functions as arguments:
 ```js
 initializeArrayUntil(
   (i, val) => val > 10, //conditionFn
-  (i, val, arr) => (i <= 1 ? 1 : val + arr[i - 2]) //mapFn
+  (i, val, arr) => (i <= 1 ? 1 : val + arr[i - 2]), //mapFn
 ); // [1, 1, 2, 3, 5, 8, 13]
 ```
 

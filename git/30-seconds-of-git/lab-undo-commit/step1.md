@@ -31,12 +31,13 @@ To demonstrate how to undo a commit, let's use the repository from `https://gith
    You should see a new commit that undoes the changes made by the original commit.
 
 This is the result of running the `git log` command:
+
 ```
 commit 0d01f357a798f8960959546750d89a7e56a04a44 (HEAD -> master)
 Author: xiaoshengyunan <@users.noreply.github.com>
 Date:   Mon Jul 24 21:52:43 2023 +0800
 
     Revert "Added file1.txt"
-    
+
     This reverts commit cf80005e40a3c661eb212fcea5fad06f8283f08f.
 ```

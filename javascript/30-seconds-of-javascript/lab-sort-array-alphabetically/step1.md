@@ -13,7 +13,7 @@ const alphabetical = (arr, getter, order = "asc") =>
   arr.sort(
     order === "desc"
       ? (a, b) => getter(b).localeCompare(getter(a))
-      : (a, b) => getter(a).localeCompare(getter(b))
+      : (a, b) => getter(a).localeCompare(getter(b)),
   );
 ```
 

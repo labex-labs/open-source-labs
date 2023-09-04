@@ -16,6 +16,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 6. Resolve any conflicts that may arise during the merge process.
 
 This is the result of running `git log`:
+
 ```shell
 commit e2b80358ae6e4c3b8439cf111a4672a188739290 (HEAD -> master, feature-branch-A)
 Author: xiaoshengyunan <xiaoshengyunan@users.noreply.github.com>

@@ -23,8 +23,11 @@ Here's an example code snippet:
 
 .pretty-text-underline {
   display: inline;
-  text-shadow: 1px 1px #f5f6f9, -1px 1px #f5f6f9, -1px -1px #f5f6f9, 1px -1px
-      #f5f6f9;
+  text-shadow:
+    1px 1px #f5f6f9,
+    -1px 1px #f5f6f9,
+    -1px -1px #f5f6f9,
+    1px -1px #f5f6f9;
   background-image: linear-gradient(90deg, currentColor 100%, transparent 100%);
   background-position: bottom;
   background-repeat: no-repeat;

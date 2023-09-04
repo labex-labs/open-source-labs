@@ -1,7 +1,7 @@
 ```shell
 git commit --allow-empty -m <message>
 ```
-  
+
 ```shell
 cd git-playground
 git config --global user.name "your-username"

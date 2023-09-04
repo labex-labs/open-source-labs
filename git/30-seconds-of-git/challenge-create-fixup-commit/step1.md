@@ -6,7 +6,7 @@ Suppose you are working on a project with several other developers, and you noti
 
 ## Example
 
-Your task is to write the string "hello,world" to the `hello.txt` file and add it as a "fixup" commit to the commit with the message "Added file1.txt", so that it can be automatically merged in a subsequent rebase operation. 
+Your task is to write the string "hello,world" to the `hello.txt` file and add it as a "fixup" commit to the commit with the message "Added file1.txt", so that it can be automatically merged in a subsequent rebase operation.
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 
@@ -16,6 +16,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 4. Once you have created the fixup commit, you can automatically merge the fixup commit with the original commit during the next rebase. When opening the interactive editor, you don't need to change the text and save to exit.
 
 This is the result of running the `git show HEAD~1` command:
+
 ```shell
 commit 6f0b8bbfac939af197a44ecd287ef84153817e9d
 Author: Hang <huhuhang@users.noreply.github.com>

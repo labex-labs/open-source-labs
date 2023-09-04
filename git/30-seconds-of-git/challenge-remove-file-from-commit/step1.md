@@ -15,6 +15,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 After running these commands, the file `file2.txt` will be removed from the last commit without changing its message.
 
 This is what happens when you remove `file2.txt` from Git version control:
+
 ```shell
 On branch master
 

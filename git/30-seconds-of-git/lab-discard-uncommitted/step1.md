@@ -12,6 +12,7 @@ To complete this challenge, you will use the Git repository named `https://githu
 6. Use the command `git status` again to confirm that all changes have been discarded.
 
 This is the result of running `git status`:
+
 ```shell
 On branch master
 Your branch is up to date with 'origin/master'.

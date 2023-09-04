@@ -18,6 +18,7 @@ Let's say you're working on a branch named `feature` in the `git-playground` rep
 6. When done making changes on the other branch, switch back to the `feature` branch and apply your stash.
 
 This is the finished result:
+
 ```shell
 stash@{0}: On feature: My changes
 ```

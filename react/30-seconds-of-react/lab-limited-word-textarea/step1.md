@@ -20,7 +20,7 @@ const LimitedWordTextarea = ({ rows, cols, value, limit }) => {
         wordCount: words.length > limit ? limit : words.length,
       });
     },
-    [limit, setContent]
+    [limit, setContent],
   );
 
   // Call setFormattedContent on the initial value of content.
@@ -44,7 +44,7 @@ const LimitedWordTextarea = ({ rows, cols, value, limit }) => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <LimitedWordTextarea limit={5} value="Hello there!" />
+  <LimitedWordTextarea limit={5} value="Hello there!" />,
 );
 ```
 

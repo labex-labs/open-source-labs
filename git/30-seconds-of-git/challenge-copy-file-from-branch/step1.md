@@ -13,6 +13,7 @@ You are working on a project in a Git repository named `https://github.com/labex
 5. Verify that the `hello.txt` file has been copied to `feature-2` branch.
 
 You should see the `hello.txt` file in the list of files in the `feature-2` branch:
+
 ```
 -rw-r--r-- 1 labex labex 15 Jul 12 22:43 file1.txt
 -rw-r--r-- 1 labex labex 15 Jul 12 22:43 file2.txt

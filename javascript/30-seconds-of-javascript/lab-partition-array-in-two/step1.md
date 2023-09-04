@@ -15,7 +15,7 @@ const partition = (arr, fn) =>
       acc[fn(val, i, arr) ? 0 : 1].push(val);
       return acc;
     },
-    [[], []]
+    [[], []],
   );
 ```
 

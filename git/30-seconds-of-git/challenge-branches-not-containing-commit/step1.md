@@ -6,7 +6,7 @@ You are working on a project with multiple branches, and you need to find all th
 
 ## Example
 
-For this challenge, we will be using the Git repository named `https://github.com/your-username/git-playground`. 
+For this challenge, we will be using the Git repository named `https://github.com/your-username/git-playground`.
 
 1. Clone this repository to your local machine.
 2. Once you have cloned the repository, navigate to the directory.
@@ -15,6 +15,7 @@ For this challenge, we will be using the Git repository named `https://github.co
 5. Finds all branches that do not contain a hash with the commit message "Create a new-branch branch".
 
 This will output a list of all the branches that do not contain the specified commit. In this case, the output will be:
+
 ```shell
 master
 ```

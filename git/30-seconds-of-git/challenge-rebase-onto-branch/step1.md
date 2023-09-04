@@ -17,6 +17,7 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 7. Resolve any conflicts that arise during the rebase process.
 
 This is the result of running `git log`:
+
 ```shell
 commit eccff423dd6bf5335f76f2f364fa3b95130ff805 (HEAD -> master, one-branch)
 Author: xiaoshengyunan <@users.noreply.github.com>

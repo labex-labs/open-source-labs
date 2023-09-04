@@ -120,7 +120,8 @@ const scrollToElement = (el) => {
 
 document.querySelector(".thumbnails").innerHTML += [...slides]
   .map(
-    (slide, i) => `<img src="${slide.querySelector("img").src}" data-id="${i}">`
+    (slide, i) =>
+      `<img src="${slide.querySelector("img").src}" data-id="${i}">`,
   )
   .join("");
 

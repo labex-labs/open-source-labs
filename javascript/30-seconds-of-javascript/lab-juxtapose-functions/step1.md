@@ -21,14 +21,14 @@ Here are a couple examples of using the `juxt` function:
 juxt(
   (x) => x + 1,
   (x) => x - 1,
-  (x) => x * 10
+  (x) => x * 10,
 )(1, 2, 3); // [[2, 3, 4], [0, 1, 2], [10, 20, 30]]
 ```
 
 ```js
 juxt(
   (s) => s.length,
-  (s) => s.split(" ").join("-")
+  (s) => s.split(" ").join("-"),
 )("happy coding"); // [[18], ['happy-coding']]
 ```
 

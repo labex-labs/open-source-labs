@@ -19,6 +19,6 @@ truthCheckCollection(
     { user: "Tinky-Winky", sex: "male" },
     { user: "Dipsy", sex: "male" },
   ],
-  "sex"
+  "sex",
 ); // true
 ```

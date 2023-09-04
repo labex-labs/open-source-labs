@@ -13,7 +13,7 @@ To find the most frequent element in an array using JavaScript, follow these ste
        arr.reduce((a, v) => {
          a[v] = a[v] ? a[v] + 1 : 1;
          return a;
-       }, {})
+       }, {}),
      ).reduce((a, v) => (v[1] >= a[1] ? v : a), [null, 0])[0];
    ```
 

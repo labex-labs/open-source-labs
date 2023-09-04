@@ -15,7 +15,7 @@ const combine = (a, b, prop) =>
       if (v[prop])
         acc[v[prop]] = acc[v[prop]] ? { ...acc[v[prop]], ...v } : { ...v };
       return acc;
-    }, {})
+    }, {}),
   );
 ```
 

@@ -10,9 +10,10 @@ As a developer, you may want to list all the Git aliases that have been set up o
 
 ## Example
 
-Let's say you have a Git repository named `git-playground` located at `https://github.com/labex-labs/git-playground`. 
+Let's say you have a Git repository named `git-playground` located at `https://github.com/labex-labs/git-playground`.
 
 You have set up the following aliases:
+
 ```shell
 alias.st=status
 alias.co=checkout
@@ -23,6 +24,7 @@ alias.rb=rebase
 2. Use the `sed` command during the listing of all of Git's aliases.
 
 Running the command will output:
+
 ```shell
 st=status
 co=checkout

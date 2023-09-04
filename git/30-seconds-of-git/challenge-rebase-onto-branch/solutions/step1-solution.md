@@ -13,7 +13,7 @@ git add .
 git commit -am "Added some changes to README.md"
 git checkout master
 git pull
-git rebase feature-branch 
+git rebase feature-branch
 # `master` is rebased onto `feature-branch`
 git log
 ```
