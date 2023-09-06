@@ -13,5 +13,3 @@ Although there are many environments in which you might run Python, Python is ty
 If you are new to using the shell or a terminal, you should probably stop, finish a short tutorial on that first, and then return here.
 
 Although there are many non-shell environments where you can code Python, you will be a stronger Python programmer if you are able to run, debug, and interact with Python at the terminal. This is Python's native environment. If you are able to use Python here, you will be able to use it everywhere else.
-
-Note: After you finish the content, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to exit the python interpreter or the lab won't pass.

@@ -26,5 +26,3 @@ Use cut-and-paste to execute the Python statements in this session:
 Warning: It is never possible to paste more than one Python command (statements that appear after `>>>`) to the basic Python shell at a time. You have to paste each command one at a time.
 
 Now that you've done this, just remember that you will get more out of the class by typing in code slowly and thinking about it--not cut and pasting.
-
-Note: After you finish the content, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to exit the python interpreter or the lab won't pass.
