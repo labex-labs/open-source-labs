@@ -17,3 +17,5 @@ Pro-tip: Use the underscore (\_) variable to use the result of the last calculat
 28566.600000000002
 >>>
 ```
+
+Exit the python interpreter after you have finished the content.
