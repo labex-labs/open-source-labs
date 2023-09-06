@@ -1,3 +1,3 @@
 #!/bin/zsh
-((cat ~/.python_history | grep "12 + 20") || (cat ~/.python_history | grep "(3 + 4
-         + 5 + 6)") || (cat ~/.python_history | grep "for i in range(5):)) && echo "True"
+grep -q "12 + 20" ~/.python_history || grep -q "(3 + 4
+         + 5 + 6)" ~/.python_history || grep -q "for i in range(5):" ~/.python_history && echo "True"
