@@ -1,5 +1,0 @@
-# Introduction
-
-In this lab, it is explained that in order to use the `std::fmt` formatting traits, types must have an implementation to be printable, which can be automatically provided for types in the `std` library. For other types, the `fmt::Debug` trait can be derived to enable printing. The `fmt::Debug` trait makes it straightforward to implement printable types, while `fmt::Display` needs to be manually implemented. The `fmt::Debug` trait allows all types to derive the implementation for printing, and the same applies to `{:?}` for `std` library types. The lab also mentions the use of `{:?}` for printing and provides an example of how to use it to print different types. Additionally, the concept of "pretty printing" with `{:#?}` is introduced, which provides a more elegant representation of data structures. Finally, it is mentioned that `fmt::Display` can be manually implemented to have control over the display of types.
-
-> **Note:** If the lab does not specify a file name, you can use any file name you want. For example, you can use `main.rs`, compile and run it with `rustc main.rs && ./main`.

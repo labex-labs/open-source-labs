@@ -1,5 +1,0 @@
-# Introduction
-
-In this lab, the Rust programming language is explored for its ability to parallelize data processing using a map-reduce algorithm. The example code calculates the sum of all digits in a block of numbers by dividing the data into segments and processing each segment in a separate thread. The Rust standard library provides threading primitives that prevent data races and guarantee thread safety. The program also demonstrates Rust's understanding of passing read-only references across thread boundaries. Additionally, the code showcases the use of closures, iterators, and the join() method to combine the intermediate results of each thread into a final sum. To ensure efficiency, the program can be modified to chunk the data into a limited number of segments, rather than depending on user-inputted data that may lead to an excessive number of threads.
-
-> **Note:** If the lab does not specify a file name, you can use any file name you want. For example, you can use `main.rs`, compile and run it with `rustc main.rs && ./main`.

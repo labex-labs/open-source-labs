@@ -1,3 +1,0 @@
-# Summary
-
-Congratulations! You have completed the Filesystem Operations lab. You can practice more labs in LabEx to improve your skills.
