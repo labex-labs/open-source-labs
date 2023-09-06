@@ -12,3 +12,5 @@ while num_bills * bill_thickness < sears_height:
         day = day + 1 # ERROR
     num_bills = num_bills * 2
 ```
+
+Note: After you finish the content, press CTRL+D to exit the python interpreter, otherwise the lab may not pass.

@@ -9,3 +9,5 @@ print(b)
 ```
 
 Each statement is terminated by a newline. Statements are executed one after the other until control reaches the end of the file.
+
+Note: After you finish the content, press CTRL+D to exit the python interpreter, otherwise the lab may not pass.

@@ -8,3 +8,5 @@ _height = 442 # valid
 height2 = 442 # valid
 2height = 442 # invalid
 ```
+
+Note: After you finish the content, press CTRL+D to exit the python interpreter, otherwise the lab may not pass.

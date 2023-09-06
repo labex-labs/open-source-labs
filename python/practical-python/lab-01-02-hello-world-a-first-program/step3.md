@@ -7,4 +7,5 @@ Programs are put in `.py` files.
 print('hello world')
 ```
 
-You can create these files with your favorite text editor.
+You can create a `hello.py` file in the `/home/labex/project` directory using your favourite text editor.
+
