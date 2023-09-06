@@ -10,4 +10,3 @@ height = 'Really tall' # A string
 
 Python is dynamically typed. The perceived "type" of a variable might change as a program executes depending on the current value assigned to it.
 
-Note: After you finish the content, press CTRL+D to exit the python interpreter, otherwise the lab may not pass.

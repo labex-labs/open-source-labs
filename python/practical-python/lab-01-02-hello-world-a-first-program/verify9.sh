@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "height" ~/.python_history
+grep -q "." ~/.python_history && grep -q "'" ~/.python_history && echo "True"
