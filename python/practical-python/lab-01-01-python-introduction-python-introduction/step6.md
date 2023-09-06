@@ -27,4 +27,4 @@ Warning: It is never possible to paste more than one Python command (statements 
 
 Now that you've done this, just remember that you will get more out of the class by typing in code slowly and thinking about it--not cut and pasting.
 
-Exit the python interpreter after you have finished the content.
+Note: After you finish the content, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to exit the python interpreter or the lab won't pass.
