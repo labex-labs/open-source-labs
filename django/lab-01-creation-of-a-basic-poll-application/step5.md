@@ -66,6 +66,8 @@ python manage.py runserver 0.0.0.0:8080
 
 Go to <http://<url>/polls/> in your browser, and you should see the text "_Hello, world. You're at the polls index._", which you defined in the `index` view.
 
+![Alt text](./assets/20230907-13-51-48-aOKKfCBX.png)
+
 The `~django.urls.path` function is passed four arguments, two required: `route` and `view`, and two optional: `kwargs`, and `name`. At this point, it's worth reviewing what these arguments are for.
 
 ### `~django.urls.path` argument: `route`
