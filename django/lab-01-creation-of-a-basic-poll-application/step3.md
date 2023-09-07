@@ -37,7 +37,7 @@ This tells Django that it's allowed to serve requests with any host header.
 
 ![Alt text](./assets/20230907-08-56-33-3uvbOwp3.png)
 
-### Changing the port
+## Changing the port
 
 By default, the `runserver` command starts the development server on the internal IP at port 8000.
 

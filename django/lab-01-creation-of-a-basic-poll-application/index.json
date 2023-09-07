@@ -29,7 +29,7 @@
           {
             "name": "Check the project is created",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "mysite should be created in ~/project",
             "timeout": 0,
             "showstderr": false
           }
@@ -41,8 +41,15 @@
         "text": "step3.md",
         "verify": [
           {
+            "name": "Check add the ALLOWED_HOSTS",
+            "file": "verify3-1.sh",
+            "hint": "Please add * to the ALLOWED_HOSTS in settings.py",
+            "timeout": 0,
+            "showstderr": false
+          },
+          {
             "name": "Check the django server is running",
-            "file": "verify3.sh",
+            "file": "verify3-2.sh",
             "hint": "Please run the django server on 0.0.0.0:8080",
             "timeout": 0,
             "showstderr": false

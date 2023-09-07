@@ -1,2 +1,2 @@
 #!/bin/zsh
-ls ~/projects/mysite
+ls ~/project/mysite
