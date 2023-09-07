@@ -1,0 +1,60 @@
+{
+  "type": "lab",
+  "title": "Add a Stylesheet and an Image",
+  "description": "This tutorial begins where `Tutorial 5 </intro/tutorial05>` left off. We've built a tested web-poll application, and we'll now add a stylesheet and an image.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Customize your _app's_ look and feel",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Adding a background-image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Please check the step 2 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  }
+}
