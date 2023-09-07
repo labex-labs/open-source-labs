@@ -13,7 +13,7 @@
         "text": "step1.md",
         "verify": [
           {
-            "name": "Test the completion of step 1",
+            "name": "Check the migrate command is executed",
             "file": "verify1.sh",
             "hint": "Please check the step 1 carefully.",
             "timeout": 0,
@@ -27,9 +27,9 @@
         "text": "step2.md",
         "verify": [
           {
-            "name": "Test the completion of step 2",
+            "name": "Check the Choice and Question class are created",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "Create the Choice and Question class in polls/models.py.",
             "timeout": 0,
             "showstderr": false
           }
@@ -41,9 +41,9 @@
         "text": "step3.md",
         "verify": [
           {
-            "name": "Test the completion of step 3",
+            "name": "Check the INSTALLED_APPS setting is updated",
             "file": "verify3.sh",
-            "hint": "Please check the step 3 carefully.",
+            "hint": "add polls.apps.PollsConfig to the INSTALLED_APPS setting.",
             "timeout": 0,
             "showstderr": false
           }
@@ -97,6 +97,6 @@
     }
   },
   "backend": {
-    "imageid": "vnc-ubuntu:2204"
+    "imageid": "webide-vnc-ubuntu:2204"
   }
 }
