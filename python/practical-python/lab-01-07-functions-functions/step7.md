@@ -5,13 +5,34 @@ Take the code you wrote for the `pcost.py` program in [Exercise 1.27](06_Files.m
 To use your function, change your program so that it looks something like this:
 
 ```python
+# pcost.py
 def portfolio_cost(filename):
-    ...
-    # Your code here
-    ...
+    """
+    Computes the total cost (shares*price) of a portfolio file
+    """
+    total_cost = 0.0
 
-cost = portfolio_cost('portfolio.csv')
-print('Total cost:', cost)
+    with open(filename, "rt") as f:
+        rows = f.readlines()
+        headers = rows[0].strip().split(",")
+        for row in rows[1:]:
+            row_data = row.strip().split(",")
+            nshares = int(row_data[1])
+            price = float(row_data[2])
+            total_cost += nshares * price
+
+    return total_cost
+
+
+import sys
+
+if len(sys.argv) == 2:
+    filename = sys.argv[1]
+else:
+    filename = input("Enter a filename:")
+
+cost = portfolio_cost(filename)
+print("Total cost:", cost)
 ```
 
 When you run your program, you should see the same output as before. After you've run your program, you can also call your function interactively by typing this:

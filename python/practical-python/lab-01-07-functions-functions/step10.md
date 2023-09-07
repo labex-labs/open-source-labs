@@ -21,11 +21,31 @@ Instead, you might pass the name of the file in as an argument to a script. Try 
 ```python
 # pcost.py
 import sys
+import csv
+
 
 def portfolio_cost(filename):
-    ...
-    # Your code here
-    ...
+    """
+    Computes the total cost (shares*price) of a portfolio file
+    """
+    total_cost = 0.0
+
+    with open(filename, "rt") as f:
+        rows = csv.reader(f)
+        headers = next(rows)  # Skip header row
+        for row in rows:
+            if len(row) < 3:
+                print("Skipping invalid row:", row)
+                continue
+            try:
+                nshares = int(row[1])
+                price = float(row[2])
+                total_cost += nshares * price
+            except (IndexError, ValueError):
+                print("Skipping invalid row:", row)
+
+    return total_cost
+
 
 if len(sys.argv) == 2:
     filename = sys.argv[1]
