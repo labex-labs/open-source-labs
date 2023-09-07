@@ -38,7 +38,7 @@ const useAsync = (fn) => {
 
 const RandomImage = (props) => {
   const imgFetch = useAsync((url) =>
-    fetch(url).then((response) => response.json()),
+    fetch(url).then((response) => response.json())
   );
 
   return (

@@ -25,7 +25,7 @@ const unflattenObject = (obj) =>
             ? obj[k]
             : {}
           : []),
-      res,
+      res
     );
     return res;
   }, {});

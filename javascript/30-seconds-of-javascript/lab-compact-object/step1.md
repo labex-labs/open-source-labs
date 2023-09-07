@@ -20,7 +20,7 @@ const compactObject = (val) => {
         acc[key] = typeof value === "object" ? compactObject(value) : value;
       return acc;
     },
-    Array.isArray(val) ? [] : {},
+    Array.isArray(val) ? [] : {}
   );
 };
 ```
@@ -39,7 +39,7 @@ const obj = {
   f: "",
   g: "a",
   h: [null, false, "", true, 1, "a"],
-  i: { j: 0, k: false, l: "a" },
+  i: { j: 0, k: false, l: "a" }
 };
 compactObject(obj);
 // { c: true, e: 1, g: 'a', h: [ true, 1, 'a' ], i: { l: 'a' } }

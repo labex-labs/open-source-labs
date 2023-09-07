@@ -27,7 +27,7 @@ const debouncePromise = (fn, ms = 0) => {
           },
           (error) => {
             currentPending.forEach(({ reject }) => reject(error));
-          },
+          }
         );
       }, ms);
       pending.push({ resolve: res, reject: rej });

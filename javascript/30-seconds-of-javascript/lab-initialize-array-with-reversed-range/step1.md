@@ -5,7 +5,7 @@ To initialize an array with a reversed range in JavaScript, use the following fu
 ```js
 const initializeArrayWithRangeRight = (end, start = 0, step = 1) =>
   Array.from({ length: Math.ceil((end + 1 - start) / step) }).map(
-    (v, i, arr) => (arr.length - i - 1) * step + start,
+    (v, i, arr) => (arr.length - i - 1) * step + start
   );
 ```
 

@@ -12,7 +12,7 @@ To delay the creation of a stateful value until a condition is met, follow these
 const useDelayedState = (initialState, condition) => {
   const [{ state, loaded }, setState] = React.useState({
     state: null,
-    loaded: false,
+    loaded: false
   });
 
   React.useEffect(() => {
@@ -35,7 +35,7 @@ const App = () => {
   const [branches, setBranches] = React.useState([]);
   const [selectedBranch, setSelectedBranch] = useDelayedState(
     branches[0],
-    branches.length,
+    branches.length
   );
 
   React.useEffect(() => {

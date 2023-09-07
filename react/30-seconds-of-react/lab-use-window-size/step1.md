@@ -9,7 +9,7 @@ To track the dimensions of the browser window, the following steps can be taken:
 ```jsx
 const [windowSize, setWindowSize] = React.useState({
   width: undefined,
-  height: undefined,
+  height: undefined
 });
 ```
 
@@ -40,7 +40,7 @@ Putting it all together, the `useWindowSize()` custom hook can be defined as fol
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = React.useState({
     width: undefined,
-    height: undefined,
+    height: undefined
   });
 
   const handleResize = () =>

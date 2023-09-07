@@ -21,10 +21,10 @@ const stringPermutations = (str) => {
       (acc, letter, i) =>
         acc.concat(
           stringPermutations(str.slice(0, i) + str.slice(i + 1)).map(
-            (val) => letter + val,
-          ),
+            (val) => letter + val
+          )
         ),
-      [],
+      []
     );
 };
 ```

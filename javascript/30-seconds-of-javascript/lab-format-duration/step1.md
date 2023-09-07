@@ -18,7 +18,7 @@ const formatDuration = (ms) => {
     hour: Math.floor(ms / 3600000) % 24,
     minute: Math.floor(ms / 60000) % 60,
     second: Math.floor(ms / 1000) % 60,
-    millisecond: Math.floor(ms) % 1000,
+    millisecond: Math.floor(ms) % 1000
   };
   return Object.entries(time)
     .filter((val) => val[1] !== 0)

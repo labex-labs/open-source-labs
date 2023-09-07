@@ -17,7 +17,7 @@ const merge = (...objs) =>
           : obj[k];
         return acc;
       }, {}),
-    {},
+    {}
   );
 ```
 
@@ -26,12 +26,12 @@ For example, consider the following objects:
 ```js
 const object = {
   a: [{ x: 2 }, { y: 4 }],
-  b: 1,
+  b: 1
 };
 const other = {
   a: { z: 3 },
   b: [2, 3],
-  c: "foo",
+  c: "foo"
 };
 ```
 

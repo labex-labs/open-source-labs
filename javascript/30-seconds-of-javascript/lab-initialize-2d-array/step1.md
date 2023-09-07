@@ -5,7 +5,7 @@ To initialize a 2D array in JavaScript, you can use the following code:
 ```js
 const initialize2DArray = (width, height, value = null) => {
   return Array.from({ length: height }).map(() =>
-    Array.from({ length: width }).fill(value),
+    Array.from({ length: width }).fill(value)
   );
 };
 ```

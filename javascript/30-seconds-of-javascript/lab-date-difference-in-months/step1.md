@@ -8,7 +8,7 @@ const getMonthsDiffBetweenDates = (dateInitial, dateFinal) =>
     (dateFinal.getFullYear() - dateInitial.getFullYear()) * 12 +
       dateFinal.getMonth() -
       dateInitial.getMonth(),
-    0,
+    0
   );
 ```
 

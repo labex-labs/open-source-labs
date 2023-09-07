@@ -31,7 +31,7 @@ Here are some examples of how to use the `hasKey` function:
 let obj = {
   a: 1,
   b: { c: 4 },
-  "b.d": 5,
+  "b.d": 5
 };
 
 hasKey(obj, ["a"]); // true

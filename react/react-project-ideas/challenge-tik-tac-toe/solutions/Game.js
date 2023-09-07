@@ -8,13 +8,13 @@ const style = {
     flexDirection: "column",
     alignContent: "center",
     justifyContent: "space-evenly",
-    height: "100%",
+    height: "100%"
   },
   info: {
     fontSize: "2rem",
     opacity: "0.5",
-    textShadow: "5px 5px #424242",
-  },
+    textShadow: "5px 5px #424242"
+  }
 };
 
 const Game = () => {

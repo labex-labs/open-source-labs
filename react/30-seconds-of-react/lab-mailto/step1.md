@@ -13,7 +13,7 @@ const Mailto = ({ email, subject = "", body = "", children }) => {
   const params =
     subject || body
       ? `?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-          body,
+          body
         )}`
       : "";
 
@@ -27,7 +27,7 @@ Example usage:
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Mailto email="foo@bar.baz" subject="Hello & Welcome" body="Hello world!">
     Mail me!
-  </Mailto>,
+  </Mailto>
 );
 ```
 
