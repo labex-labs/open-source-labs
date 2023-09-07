@@ -30,6 +30,8 @@ When you're done, your program should produce the table shown at the top of this
           MSFT         50      20.89     -44.21
            IBM        100     106.28      35.84
 
+Here's a solution:
+
 ```python
 import csv
 

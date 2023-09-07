@@ -12,6 +12,8 @@ How would you modify your code so that the price includes the currency symbol (\
           MSFT         50     $20.89     -44.21
            IBM        100    $106.28      35.84
 
+Here's a solution:
+
 ```python
 import csv
 

@@ -30,6 +30,8 @@ You can also expand the values and use f-strings. For example:
 
 Take the above statements and add them to your `report.py` program. Have your program take the output of the `make_report()` function and print a nicely formatted table as shown.
 
+Here's a solution:
+
 ```python
 import csv
 
