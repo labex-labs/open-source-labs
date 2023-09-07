@@ -5,7 +5,7 @@ Take the function you wrote in Exercise 2.4 and modify to represent each stock i
 Experiment with this new function in the same manner as you did in Exercise 2.4.
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
+>>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
 >>> portfolio
 [{'name': 'AA', 'shares': 100, 'price': 32.2}, {'name': 'IBM', 'shares': 50, 'price': 91.1},
     {'name': 'CAT', 'shares': 150, 'price': 83.44}, {'name': 'MSFT', 'shares': 200, 'price': 51.23},
@@ -41,4 +41,38 @@ Viewing large dictionaries and lists can be messy. To clean up the output for de
     {'name': 'MSFT', 'price': 65.1, 'shares': 50},
     {'name': 'IBM', 'price': 70.44, 'shares': 100}]
 >>>
+```
+
+Here's a solution:
+
+```python
+import csv
+
+def read_portfolio(filename):
+    portfolio = []
+
+    with open(filename, 'rt') as f:
+        rows = csv.DictReader(f)
+        for row in rows:
+            holding = {
+                'name': row['name'],
+                'shares': int(row['shares']),
+                'price': float(row['price'])
+            }
+            portfolio.append(holding)
+
+    return portfolio
+
+portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+
+print(portfolio)
+print(portfolio[0])
+print(portfolio[1])
+print(portfolio[1]['shares'])
+
+total = 0.0
+for stock in portfolio:
+    total += stock['shares'] * stock['price']
+
+print(total)
 ```

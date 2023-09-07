@@ -38,7 +38,7 @@ A few little tips that you'll need for this part. First, make sure you use the `
 
 ```python
 >>> import csv
->>> f = open('prices.csv', 'r')
+>>> f = open('/home/labex/project/prices.csv', 'r')
 >>> rows = csv.reader(f)
 >>> for row in rows:
         print(row)
@@ -58,10 +58,35 @@ There's a possibility that this could cause your program to die with an exceptio
 Once you have written your `read_prices()` function, test it interactively to make sure it works:
 
 ```python
->>> prices = read_prices('prices.csv')
+>>> prices = read_prices('/home/labex/project/prices.csv')
 >>> prices['IBM']
 106.28
 >>> prices['MSFT']
 20.89
 >>>
+```
+
+Here's a solution:
+
+```python
+import csv
+
+def read_prices(filename):
+    prices = {}
+
+    with open(filename, 'rt') as f:
+        rows = csv.reader(f)
+        for row in rows:
+            if row:
+                stock_name = row[0]
+                stock_price = float(row[1])
+                prices[stock_name] = stock_price
+
+    return prices
+
+prices = read_prices('/home/labex/project/prices.csv')
+
+print(prices)
+print(prices['IBM'])
+print(prices['MSFT'])
 ```

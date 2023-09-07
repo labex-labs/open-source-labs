@@ -46,7 +46,7 @@ Experiment with your function interactively (just a reminder that in order to do
 _Hint: Use `-i` when executing the file in the terminal_
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
+>>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
 >>> portfolio
 [('AA', 100, 32.2), ('IBM', 50, 91.1), ('CAT', 150, 83.44), ('MSFT', 200, 51.23),
     ('GE', 95, 40.37), ('MSFT', 50, 65.1), ('IBM', 100, 70.44)]
@@ -78,4 +78,35 @@ That said, you can also rewrite the last for-loop using a statement like this:
 >>> print(total)
 44671.15
 >>>
+```
+
+Here's a solution:
+
+```python
+import csv
+
+def read_portfolio(filename):
+    portfolio = []
+
+    with open(filename, 'rt') as f:
+        rows = csv.reader(f)
+        next(rows)  # Skip header row
+        for row in rows:
+            holding = (row[0], int(row[1]), float(row[2]))
+            portfolio.append(holding)
+
+    return portfolio
+
+portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+
+print(portfolio)
+print(portfolio[0])
+print(portfolio[1])
+print(portfolio[1][1])
+
+total = 0.0
+for name, shares, price in portfolio:
+    total += shares * price
+
+print(total)
 ```
