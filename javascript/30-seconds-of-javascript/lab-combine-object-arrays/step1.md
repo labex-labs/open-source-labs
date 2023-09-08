@@ -15,7 +15,7 @@ const combine = (a, b, prop) =>
       if (v[prop])
         acc[v[prop]] = acc[v[prop]] ? { ...acc[v[prop]], ...v } : { ...v };
       return acc;
-    }, {}),
+    }, {})
   );
 ```
 
@@ -24,7 +24,7 @@ Here's an example of how to use this function:
 ```js
 const x = [
   { id: 1, name: "John" },
-  { id: 2, name: "Maria" },
+  { id: 2, name: "Maria" }
 ];
 const y = [{ id: 1, age: 28 }, { id: 3, age: 26 }, { age: 3 }];
 combine(x, y, "id");

@@ -33,7 +33,7 @@ To render the `Slider` component, use `ReactDOM.createRoot` and pass in the `onV
 
 ```jsx
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <Slider onValueChange={(val) => console.log(val)} />,
+  <Slider onValueChange={(val) => console.log(val)} />
 );
 ```
 

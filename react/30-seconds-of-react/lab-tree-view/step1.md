@@ -15,7 +15,7 @@ const TreeView = ({
   name = null,
   isLast = true,
   isChildElement = false,
-  isParentToggled = true,
+  isParentToggled = true
 }) => {
   const [isToggled, setIsToggled] = React.useState(toggled);
   const isDataArray = Array.isArray(data);
@@ -52,7 +52,7 @@ const TreeView = ({
             {data[v]}
             {i === a.length - 1 ? "" : ","}
           </p>
-        ),
+        )
       )}
       {isDataArray ? "]" : "}"}
       {!isLast ? "," : ""}
@@ -115,21 +115,21 @@ const data = {
         "duis",
         "vitae",
         {
-          semper: "orci",
+          semper: "orci"
         },
         {
-          est: "sed ornare",
+          est: "sed ornare"
         },
         "etiam",
         ["laoreet", "tincidunt"],
-        ["vestibulum", "ante"],
-      ],
+        ["vestibulum", "ante"]
+      ]
     },
-    ipsum: "primis",
-  },
+    ipsum: "primis"
+  }
 };
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <TreeView data={data} name="data" />,
+  <TreeView data={data} name="data" />
 );
 ```
 

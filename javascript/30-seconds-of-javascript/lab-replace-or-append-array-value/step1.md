@@ -24,7 +24,7 @@ You can use this function with an array of objects like this:
 ```js
 const people = [
   { name: "John", age: 30 },
-  { name: "Jane", age: 28 },
+  { name: "Jane", age: 28 }
 ];
 const jane = { name: "Jane", age: 29 };
 const jack = { name: "Jack", age: 28 };

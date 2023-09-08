@@ -27,7 +27,7 @@ export default function App() {
   function scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   }
   return (

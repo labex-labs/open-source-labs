@@ -58,7 +58,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <Collapse>
     <h1>This is a collapse</h1>
     <p>Hello world!</p>
-  </Collapse>,
+  </Collapse>
 );
 ```
 

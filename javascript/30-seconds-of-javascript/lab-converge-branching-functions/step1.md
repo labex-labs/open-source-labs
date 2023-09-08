@@ -20,7 +20,7 @@ An example of how to use this function is shown below. The `average` function is
 ```js
 const average = converge(
   (a, b) => a / b,
-  [(arr) => arr.reduce((a, v) => a + v, 0), (arr) => arr.length],
+  [(arr) => arr.reduce((a, v) => a + v, 0), (arr) => arr.length]
 );
 average([1, 2, 3, 4, 5, 6, 7]); // 4
 ```

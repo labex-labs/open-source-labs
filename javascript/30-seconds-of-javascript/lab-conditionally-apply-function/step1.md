@@ -15,7 +15,7 @@ You can use the `when` function to create a new function that doubles even numbe
 ```js
 const doubleEvenNumbers = when(
   (x) => x % 2 === 0,
-  (x) => x * 2,
+  (x) => x * 2
 );
 doubleEvenNumbers(2); // 4
 doubleEvenNumbers(1); // 1

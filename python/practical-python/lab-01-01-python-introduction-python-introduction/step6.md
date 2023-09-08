@@ -27,4 +27,3 @@ Warning: It is never possible to paste more than one Python command (statements 
 
 Now that you've done this, just remember that you will get more out of the class by typing in code slowly and thinking about it--not cut and pasting.
 
-

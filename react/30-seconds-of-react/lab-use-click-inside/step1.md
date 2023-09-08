@@ -38,7 +38,7 @@ const ClickBox = ({ onClickInside }) => {
         width: 400,
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "center"
       }}
     >
       <p>Click inside this element</p>
@@ -47,7 +47,7 @@ const ClickBox = ({ onClickInside }) => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ClickBox onClickInside={() => alert("click inside")} />,
+  <ClickBox onClickInside={() => alert("click inside")} />
 );
 ```
 
