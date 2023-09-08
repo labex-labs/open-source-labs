@@ -1,2 +1,2 @@
 #!/bin/zsh
-(python3 ~/project/report.py > debug3 && cat ~/project/report.py | less -R | grep "format_price") && echo "True"
+python3 ~/project/report.py > debug3 && grep "\$9\.22" debug3 && echo "True"
