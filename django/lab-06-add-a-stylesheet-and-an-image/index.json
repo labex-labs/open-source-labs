@@ -13,9 +13,9 @@
         "text": "step1.md",
         "verify": [
           {
-            "name": "Test the completion of step 1",
+            "name": "Test style.css exists",
             "file": "verify1.sh",
-            "hint": "Please check the step 1 carefully.",
+            "hint": "Please add style.css to the project.",
             "timeout": 0,
             "showstderr": false
           }
@@ -27,9 +27,9 @@
         "text": "step2.md",
         "verify": [
           {
-            "name": "Test the completion of step 2",
+            "name": "Test background.png exists",
             "file": "verify2.sh",
-            "hint": "Please check the step 2 carefully.",
+            "hint": "background.png needs to be in the project.",
             "timeout": 0,
             "showstderr": false
           }
@@ -49,6 +49,11 @@
         {
           "file": "*.zip",
           "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "background.png",
+          "target": "/tmp",
           "chmod": "ugo+rwx"
         }
       ]
