@@ -24,7 +24,7 @@ A quick rundown:
 - `forloop.counter` indicates how many times the `for` tag has gone through its loop
 - Since we're creating a POST form (which can have the effect of modifying data), we need to worry about Cross Site Request Forgeries. Thankfully, you don't have to worry too hard, because Django comes with a helpful system for protecting against it. In short, all POST forms that are targeted at internal URLs should use the `{% csrf_token %}<csrf_token>` template tag.
 
-Now, let's create a Django view that handles the submitted data and does something with it. Remember, in `Tutorial 3 </intro/tutorial03>`, we created a URLconf for the polls application that includes this line:
+Now, let's create a Django view that handles the submitted data and does something with it. Remember, in `**Creating the Public Interface Views**`, we created a URLconf for the polls application that includes this line:
 
 ```python
 path("<int:question_id>/vote/", views.vote, name="vote"),
@@ -78,13 +78,13 @@ This code includes a few things we haven't covered yet in this tutorial:
 
   As the Python comment above points out, you should always return an `~django.http.HttpResponseRedirect` after successfully dealing with POST data. This tip isn't specific to Django; it's good web development practice in general.
 
-- We are using the `~django.urls.reverse` function in the `~django.http.HttpResponseRedirect` constructor in this example. This function helps avoid having to hardcode a URL in the view function. It is given the name of the view that we want to pass control to and the variable portion of the URL pattern that points to that view. In this case, using the URLconf we set up in `Tutorial 3 </intro/tutorial03>`, this `~django.urls.reverse` call will return a string like :
+- We are using the `~django.urls.reverse` function in the `~django.http.HttpResponseRedirect` constructor in this example. This function helps avoid having to hardcode a URL in the view function. It is given the name of the view that we want to pass control to and the variable portion of the URL pattern that points to that view. In this case, using the URLconf we set up in `**Creating the Public Interface Views**`, this `~django.urls.reverse` call will return a string like :
 
       "/polls/3/results/"
 
   where the `3` is the value of `question.id`. This redirected URL will then call the `'results'` view to display the final page.
 
-As mentioned in `Tutorial 3 </intro/tutorial03>`, `request` is an `~django.http.HttpRequest` object. For more on `~django.http.HttpRequest` objects, see the `request and
+As mentioned in `**Creating the Public Interface Views**`, `request` is an `~django.http.HttpRequest` object. For more on `~django.http.HttpRequest` objects, see the `request and
 response documentation </ref/request-response>`.
 
 After somebody votes in a question, the `vote()` view redirects to the results page for the question. Let's write that view:
@@ -98,8 +98,7 @@ def results(request, question_id):
     return render(request, "polls/results.html", {"question": question})
 ```
 
-This is almost exactly the same as the `detail()` view from `Tutorial 3
-</intro/tutorial03>`. The only difference is the template name. We'll fix this redundancy later.
+This is almost exactly the same as the `detail()` view from **Creating the Public Interface Views**. The only difference is the template name. We'll fix this redundancy later.
 
 Now, create a `polls/results.html` template:
 

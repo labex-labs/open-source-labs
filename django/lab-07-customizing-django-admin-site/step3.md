@@ -14,7 +14,7 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ["question_text", "pub_date"]
 ```
 
-For good measure, let's also include the `was_published_recently()` method from `Tutorial 2 </intro/tutorial02>`:
+For good measure, let's also include the `was_published_recently()` method from `**Set Up the Database**`:
 
 ```python
 class QuestionAdmin(admin.ModelAdmin):

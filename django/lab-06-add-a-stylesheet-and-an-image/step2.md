@@ -21,5 +21,4 @@ Reload HTTP 8080 tab and you should see the background loaded in the top left of
 These are the **basics**. For more details on settings and other bits included with the framework see `the static files howto </howto/static-files/index>` and `the staticfiles reference </ref/contrib/staticfiles>`. `Deploying
 static files </howto/static-files/deployment>` discusses how to use static files on a real server.
 
-When you're comfortable with the static files, read `part 7 of this
-tutorial </intro/tutorial07>` to learn how to customize Django's automatically-generated admin site.
+When you're comfortable with the static files, read **Customizing Django's Admin Site** to learn how to customize Django's automatically-generated admin site.

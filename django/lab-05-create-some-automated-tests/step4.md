@@ -62,7 +62,7 @@ b'\n    <ul>\n    \n        <li><a href="/polls/1/">What&#x27;s up?</a></li>\n  
 
 The list of polls shows polls that aren't published yet (i.e. those that have a `pub_date` in the future). Let's fix that.
 
-In `Tutorial 4 </intro/tutorial04>` we introduced a class-based view, based on `~django.views.generic.list.ListView`:
+In `**Form Processing and Cutting Down Our Code**` we introduced a class-based view, based on `~django.views.generic.list.ListView`:
 
 ```python
 class IndexView(generic.ListView):

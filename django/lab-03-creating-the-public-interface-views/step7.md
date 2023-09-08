@@ -36,4 +36,4 @@ to point at the namespaced detail view:
 
 ![Alt text](./assets/20230908-09-58-22-qkl9l0DT.png)
 
-When you're comfortable with writing views, read step 4 of this tutorial to learn the basics about form processing and generic views.
+When you're comfortable with writing views, read **Form Processing and Cutting Down Our Code** to learn the basics about form processing and generic views.

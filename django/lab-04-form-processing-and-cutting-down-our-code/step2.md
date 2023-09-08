@@ -1,6 +1,6 @@
 # Use generic views: Less code is better
 
-The `detail()` (from `Tutorial 3 </intro/tutorial03>`) and `results()` views are very short -- and, as mentioned above, redundant. The `index()` view, which displays a list of polls, is similar.
+The `detail()` (from `**Creating the Public Interface Views**`) and `results()` views are very short -- and, as mentioned above, redundant. The `index()` view, which displays a list of polls, is similar.
 
 These views represent a common case of basic web development: getting data from the database according to a parameter passed in the URL, loading a template and returning the rendered template. Because this is so common, Django provides a shortcut, called the "generic views" system.
 

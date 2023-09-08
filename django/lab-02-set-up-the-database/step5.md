@@ -103,10 +103,10 @@ The bottom part of the page gives you a couple of options:
 - Save and add another -- Saves changes and loads a new, blank form for this type of object.
 - Delete -- Displays a delete confirmation page.
 
-If the value of "Date published" doesn't match the time when you created the question in `Tutorial 1</intro/tutorial01>`, it probably means you forgot to set the correct value for the `TIME_ZONE` setting. Change it, reload the page and check that the correct value appears.
+If the value of "Date published" doesn't match the time when you created the question in **Creation of a Basic Poll Application**, it probably means you forgot to set the correct value for the `TIME_ZONE` setting. Change it, reload the page and check that the correct value appears.
 
 Change the "Date published" by clicking the "Today" and "Now" shortcuts. Then click "Save and continue editing." Then click "History" in the upper right. You'll see a page listing all changes made to this object via the Django admin, with the timestamp and username of the person who made the change:
 
 ![History page for question object](./assets/admin06t.png)
 
-When you're comfortable with the models API and have familiarized yourself with the admin site, read `part 3 of this tutorial</intro/tutorial03>` to learn about how to add more views to our polls app.
+When you're comfortable with the models API and have familiarized yourself with the admin site, read **Creating the Public Interface Views** to learn about how to add more views to our polls app.

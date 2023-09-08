@@ -4,7 +4,7 @@
 
 Tests are routines that check the operation of your code.
 
-Testing operates at different levels. Some tests might apply to a tiny detail (_does a particular model method return values as expected?_) while others examine the overall operation of the software (_does a sequence of user inputs on the site produce the desired result?_). That's no different from the kind of testing you did earlier in `Tutorial 2 </intro/tutorial02>`, using the `shell` to examine the behavior of a method, or running the application and entering data to check how it behaves.
+Testing operates at different levels. Some tests might apply to a tiny detail (_does a particular model method return values as expected?_) while others examine the overall operation of the software (_does a sequence of user inputs on the site produce the desired result?_). That's no different from the kind of testing you did earlier in `**Set Up the Database**`, using the `shell` to examine the behavior of a method, or running the application and entering data to check how it behaves.
 
 What's different in _automated_ tests is that the testing work is done for you by the system. You create a set of tests once, and then as you make changes to your app, you can check that your code still works as you originally intended, without having to perform time consuming manual testing.
 

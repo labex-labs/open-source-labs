@@ -58,7 +58,7 @@ Then, edit the file and replace `{{ site_header|default:_('Django administration
 
 We use this approach to teach you how to override templates. In an actual project, you would probably use the `django.contrib.admin.AdminSite.site_header` attribute to more easily make this particular customization.
 
-This template file contains lots of text like `{% block branding %}` and `{{ title }}`. The `{%` and `{{` tags are part of Django's template language. When Django renders `admin/base_site.html`, this template language will be evaluated to produce the final HTML page, just like we saw in `Tutorial 3 </intro/tutorial03>`.
+This template file contains lots of text like `{% block branding %}` and `{{ title }}`. The `{%` and `{{` tags are part of Django's template language. When Django renders `admin/base_site.html`, this template language will be evaluated to produce the final HTML page, just like we saw in `**Creating the Public Interface Views**`.
 
 Note that any of Django's default admin templates can be overridden. To override a template, do the same thing you did with `base_site.html` -- copy it from the default directory into your custom directory, and make changes.
 
