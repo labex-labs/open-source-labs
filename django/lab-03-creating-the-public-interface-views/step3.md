@@ -6,7 +6,9 @@ Your view can read records from a database, or not. It can use a template system
 
 All Django wants is that `~django.http.HttpResponse`. Or an exception.
 
-Because it's convenient, let's use Django's own database API, which we covered in `Tutorial 2 </intro/tutorial02>`. Here's one stab at a new `index()` view, which displays the latest 5 poll questions in the system, separated by commas, according to publication date:
+Because it's convenient, let's use Django's own database API, which we covered in Tutorial 2. Here's one stab at a new `index()` view, which displays the latest 5 poll questions in the system, separated by commas, according to publication date:
+
+Edit the `polls/views.py` file and change it to look like this:
 
 ```python
 from django.http import HttpResponse
@@ -31,9 +33,11 @@ Your project's `TEMPLATES` setting describes how Django will load and render tem
 
 Within the `templates` directory you have just created, create another directory called `polls`, and within that create a file called `index.html`. In other words, your template should be at `polls/templates/polls/index.html`. Because of how the `app_directories` template loader works as described above, you can refer to this template within Django as `polls/index.html`.
 
-> Template namespacing
+## Template namespacing
 
-Now we _might_ be able to get away with putting our templates directly in `polls/templates` (rather than creating another `polls` subdirectory), but it would actually be a bad idea. Django will choose the first template it finds whose name matches, and if you had a template with the same name in a _different_ application, Django would be unable to distinguish between them. We need to be able to point Django at the right one, and the best way to ensure this is by _namespacing_ them. That is, by putting those templates inside _another_ directory named for the application itself.
+Now we _might_ be able to get away with putting our templates directly in `polls/templates` (rather than creating another `polls` subdirectory), but it would actually be a bad idea. Django will choose the first template it finds whose name matches, and if you had a template with the same name in a _different_ application, Django would be unable to distinguish between them.
+
+We need to be able to point Django at the right one, and the best way to ensure this is by _namespacing_ them. That is, by putting those templates inside _another_ directory named for the application itself.
 
 Put the following code in that template:
 
@@ -49,7 +53,7 @@ Put the following code in that template:
 {% endif %}
 ```
 
-Note
+Note:
 
 To make the tutorial shorter, all template examples use incomplete HTML. In your own projects you should use [complete HTML documents](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#anatomy_of_an_html_document).
 
@@ -73,8 +77,15 @@ def index(request):
 
 That code loads the template called `polls/index.html` and passes it a context. The context is a dictionary mapping template variable names to Python objects.
 
-Load the page by pointing your browser at "/polls/", and you should see a bulleted-list containing the "What's up" question from `Tutorial 2
-</intro/tutorial02>`. The link points to the question's detail page.
+Run server again:
+
+```bash
+python manage.py runserver 0.0.0.0:8080
+```
+
+Load the page by pointing your browser at "/polls/", and you should see a bulleted-list containing the "What's up" question from Tutorial 2. The link points to the question's detail page.
+
+![Alt text](./assets/20230908-09-37-26-QMKEbUhb.png)
 
 ### A shortcut: `~django.shortcuts.render`
 

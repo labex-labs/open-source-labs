@@ -14,14 +14,16 @@ The problem with this hardcoded, tightly-coupled approach is that it becomes cha
 
 The way this works is by looking up the URL definition as specified in the `polls.urls` module. You can see exactly where the URL name of 'detail' is defined below:
 
-    ...
-    # the 'name' value as called by the {% url %} template tag
-    path("<int:question_id>/", views.detail, name="detail"),
-    ...
+```python
+# the 'name' value as called by the {% url %} template tag
+path("<int:question_id>/", views.detail, name="detail"),
+```
 
 If you want to change the URL of the polls detail view to something else, perhaps to something like `polls/specifics/12/` instead of doing it in the template (or templates) you would change it in `polls/urls.py`:
 
-    ...
-    # added the word 'specifics'
-    path("specifics/<int:question_id>/", views.detail, name="detail"),
-    ...
+> You don't need to change the template at all.
+
+```python
+# added the word 'specifics'
+path("specifics/<int:question_id>/", views.detail, name="detail"),
+```

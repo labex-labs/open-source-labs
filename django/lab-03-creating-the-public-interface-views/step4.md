@@ -28,7 +28,7 @@ We'll discuss what you could put in that `polls/detail.html` template a bit late
 
 will get you started for now.
 
-### A shortcut: `~django.shortcuts.get_object_or_404`
+## A shortcut: `~django.shortcuts.get_object_or_404`
 
 It's a very common idiom to use `~django.db.models.query.QuerySet.get` and raise `~django.http.Http404` if the object doesn't exist. Django provides a shortcut. Here's the `detail()` view, rewritten:
 

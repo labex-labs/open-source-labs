@@ -18,6 +18,8 @@ def vote(request, question_id):
 
 Wire these new views into the `polls.urls` module by adding the following `~django.urls.path` calls:
 
+Edit the `polls/urls.py` file and add the following lines:
+
 ```python
 from django.urls import path
 
@@ -35,7 +37,16 @@ urlpatterns = [
 ]
 ```
 
-Take a look in your browser, at `/polls/34/`. It'll run the `detail()` method and display whatever ID you provide in the URL. Try `/polls/34/results/` and `/polls/34/vote/` too -- these will display the placeholder results and voting pages.
+Now, run the server again:
+
+```bash
+cd ~/project/mysite
+python manage.py runserver 0.0.0.0:8080
+```
+
+Swith to HTTP 8080 tab, at `/polls/34/`. It'll run the `detail()` method and display whatever ID you provide in the URL. Try `/polls/34/results/` and `/polls/34/vote/` too -- these will display the placeholder results and voting pages.
+
+![Alt text](./assets/20230908-09-30-06-2n54ROPe.png)
 
 When somebody requests a page from your website -- say, `/polls/34/`, Django will load the `mysite.urls` Python module because it's pointed to by the `ROOT_URLCONF` setting. It finds the variable named `urlpatterns` and traverses the patterns in order. After finding the match at `'polls/'`, it strips off the matching text (`"polls/"`) and sends the remaining text --`"34/"` -- to the 'polls.urls' URLconf for further processing. There it matches `'<int:question_id>/'`, resulting in a call to the `detail()` view like so:
 
