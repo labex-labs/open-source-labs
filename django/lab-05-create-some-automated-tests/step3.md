@@ -7,6 +7,7 @@ Fortunately, there's a little bug in the `polls` application for us to fix right
 Confirm the bug by using the `shell` to check the method on a question whose date lies in the future:
 
 ```bash
+cd ~/project/mysite
 python manage.py shell
 ```
 
