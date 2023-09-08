@@ -6,4 +6,4 @@ One caution with `help()` is that it doesn't work for basic Python statements su
 
 Followup: Go to <http://docs.python.org> and find the documentation for the `abs()` function (hint: it's found under the library reference related to built-in functions).
 
-Note: After you finish the content, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to exit the python interpreter or the lab won't pass.
+
