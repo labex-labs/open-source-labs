@@ -1,6 +1,6 @@
 # Write a minimal form
 
-Let's update our poll detail template ("polls/detail.html") from the last tutorial, so that the template contains an HTML `<form>` element:
+Let's update our poll detail template (`polls/detail.html`) from the last tutorial, so that the template contains an HTML `<form>` element:
 
 ```html+django
 <form action="{% url 'polls:vote' question.id %}" method="post">
@@ -117,7 +117,14 @@ Now, create a `polls/results.html` template:
 
 Now, go to `/polls/1/` in your browser and vote in the question. You should see a results page that gets updated each time you vote. If you submit the form without having chosen a choice, you should see the error message.
 
-Note
+```bash
+cd ~/project/mysite
+python manage.py runserver 0.0.0.0:8080
+```
+
+![Alt text](./assets/20230908-10-37-07-p9ewKbe6.png)
+
+**Note:**
 
 The code for our `vote()` view does have a small problem. It first gets the `selected_choice` object from the database, then computes the new value of `votes`, and then saves it back to the database. If two users of your website try to vote at _exactly the same time_, this might go wrong: The same value, let's say 42, will be retrieved for `votes`. Then, for both users the new value of 43 is computed and saved, but 44 would be the expected value.
 

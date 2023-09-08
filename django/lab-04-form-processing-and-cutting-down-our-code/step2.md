@@ -89,8 +89,3 @@ In previous parts of the tutorial, the templates have been provided with a conte
 
 Run the server, and use your new polling app based on generic views.
 
-For full details on generic views, see the `generic views documentation
-</topics/class-based-views/index>`.
-
-When you're comfortable with forms and generic views, read `part 5 of this
-tutorial</intro/tutorial05>` to learn about testing our polls app.
