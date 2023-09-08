@@ -20,7 +20,7 @@ const changeLightness = (delta, hslStr) => {
 
   const newLightness = Math.max(
     0,
-    Math.min(100, lightness + parseFloat(delta)),
+    Math.min(100, lightness + parseFloat(delta))
   );
 
   return `hsl(${hue}, ${saturation}%, ${newLightness}%)`;

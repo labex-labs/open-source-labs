@@ -33,11 +33,11 @@ const obj = {
     child: {
       withArray: [
         {
-          grandChild: ["hello"],
-        },
-      ],
-    },
-  },
+          grandChild: ["hello"]
+        }
+      ]
+    }
+  }
 };
 
 const upperKeysObj = deepMapKeys(obj, (key) => key.toUpperCase());

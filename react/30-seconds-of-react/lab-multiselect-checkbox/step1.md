@@ -16,7 +16,7 @@ const MultiselectCheckbox = ({ options, onChange }) => {
     const newData = [...data];
     newData[index] = {
       ...newData[index],
-      checked: !newData[index].checked,
+      checked: !newData[index].checked
     };
     setData(newData);
     onChange(newData.filter((item) => item.checked));
@@ -50,7 +50,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     onChange={(selected) => {
       console.log(selected);
     }}
-  />,
+  />
 );
 ```
 

@@ -27,9 +27,9 @@ const useMap = (initialValue) => {
           nextMap.delete(key);
           return nextMap;
         }),
-      clear: () => setMap(new Map()),
+      clear: () => setMap(new Map())
     }),
-    [setMap],
+    [setMap]
   );
 
   return [map, actions];

@@ -8,7 +8,7 @@ To find the union of two arrays based on a function using Node.js, follow these 
 ```js
 const unionWith = (a, b, comp) =>
   Array.from(
-    new Set([...a, ...b.filter((x) => a.findIndex((y) => comp(x, y)) === -1)]),
+    new Set([...a, ...b.filter((x) => a.findIndex((y) => comp(x, y)) === -1)])
   );
 ```
 
@@ -20,7 +20,7 @@ const unionWith = (a, b, comp) =>
 unionWith(
   [1, 1.2, 1.5, 3, 0],
   [1.9, 3, 0, 3.9],
-  (a, b) => Math.round(a) === Math.round(b),
+  (a, b) => Math.round(a) === Math.round(b)
 );
 // [1, 1.2, 1.5, 3, 0, 3.9]
 ```

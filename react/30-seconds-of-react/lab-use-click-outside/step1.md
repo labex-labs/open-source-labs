@@ -32,7 +32,7 @@ const ClickBox = ({ onClickOutside }) => {
         width: 400,
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "center"
       }}
     >
       <p>Click out of this element</p>
@@ -41,7 +41,7 @@ const ClickBox = ({ onClickOutside }) => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ClickBox onClickOutside={() => alert("click outside")} />,
+  <ClickBox onClickOutside={() => alert("click outside")} />
 );
 ```
 

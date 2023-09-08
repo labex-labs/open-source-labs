@@ -17,7 +17,7 @@ Here are some examples of how to use `isPromiseLike`:
 isPromiseLike({
   then: function () {
     return "";
-  },
+  }
 }); // true
 
 isPromiseLike(null); // false

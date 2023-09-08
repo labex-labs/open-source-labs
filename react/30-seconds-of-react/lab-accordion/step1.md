@@ -80,7 +80,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <AccordionItem label="B" index="2">
       Dolor sit amet
     </AccordionItem>
-  </Accordion>,
+  </Accordion>
 );
 ```
 

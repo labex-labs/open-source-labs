@@ -30,7 +30,7 @@ const useOnWindowResize = (callback) => {
 
 const App = () => {
   useOnWindowResize(() =>
-    console.log(`Window size: (${window.innerWidth}, ${window.innerHeight})`),
+    console.log(`Window size: (${window.innerWidth}, ${window.innerHeight})`)
   );
   return <p>Resize the window and check the console.</p>;
 };

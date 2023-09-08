@@ -28,7 +28,7 @@ const useScript = (src) => {
       const setDataStatus = (event) => {
         script.setAttribute(
           "data-status",
-          event.type === "load" ? "ready" : "error",
+          event.type === "load" ? "ready" : "error"
         );
       };
       script.addEventListener("load", setDataStatus);

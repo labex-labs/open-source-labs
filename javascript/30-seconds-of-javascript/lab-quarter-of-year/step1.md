@@ -7,7 +7,7 @@ To use this function, open the Terminal/SSH and type `node`. Then, copy and past
 ```js
 const quarterOfYear = (date = new Date()) => [
   Math.ceil((date.getMonth() + 1) / 3),
-  date.getFullYear(),
+  date.getFullYear()
 ];
 ```
 

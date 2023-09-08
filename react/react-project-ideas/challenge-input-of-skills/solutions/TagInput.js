@@ -6,7 +6,7 @@ const containerStyle = {
   width: "300px",
   border: "1px solid darkgrey",
   borderRadius: "10px",
-  background: "#EAEAEA",
+  background: "#EAEAEA"
 };
 
 const inputStyle = {
@@ -17,7 +17,7 @@ const inputStyle = {
   border: "0",
   padding: "10px",
   borderRadius: "10px",
-  marginTop: "1rem",
+  marginTop: "1rem"
 };
 
 const tagStyle = {
@@ -27,7 +27,7 @@ const tagStyle = {
   padding: "4px 10px",
   borderRadius: "10px",
   cursor: "pointer",
-  color: "white",
+  color: "white"
 };
 
 const TagInput = () => {

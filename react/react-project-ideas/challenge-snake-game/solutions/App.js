@@ -16,10 +16,10 @@ const initialSnake = {
   snake: [
     { x: 0, y: 0 },
     { x: 4, y: 0 },
-    { x: 8, y: 0 },
+    { x: 8, y: 0 }
   ],
   direction: "ArrowRight",
-  speed: 100,
+  speed: 100
 };
 
 function App() {
@@ -69,7 +69,7 @@ function App() {
 
     tmpSnake.push({
       x,
-      y,
+      y
     });
     if (x !== foodPosition.x || y !== foodPosition.y) tmpSnake.shift();
     else setFoodPosition(randomFoodPosition());

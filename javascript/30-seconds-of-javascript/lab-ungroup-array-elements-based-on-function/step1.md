@@ -12,8 +12,8 @@ const unzipWith = (arr, fn) =>
     .reduce(
       (acc, val) => (val.forEach((v, i) => acc[i].push(v)), acc),
       Array.from({
-        length: Math.max(...arr.map((x) => x.length)),
-      }).map((x) => []),
+        length: Math.max(...arr.map((x) => x.length))
+      }).map((x) => [])
     )
     .map((val) => fn(...val));
 ```
@@ -24,9 +24,9 @@ To use `unzipWith`, open the Terminal/SSH and type `node`. Then, you can run the
 unzipWith(
   [
     [1, 10, 100],
-    [2, 20, 200],
+    [2, 20, 200]
   ],
-  (...args) => args.reduce((acc, v) => acc + v, 0),
+  (...args) => args.reduce((acc, v) => acc + v, 0)
 );
 // [3, 30, 300]
 ```

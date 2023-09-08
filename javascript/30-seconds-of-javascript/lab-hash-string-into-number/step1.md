@@ -16,7 +16,7 @@ const sdbm = (str) => {
         (hashCode << 6) +
         (hashCode << 16) -
         hashCode),
-    0,
+    0
   );
 };
 ```
