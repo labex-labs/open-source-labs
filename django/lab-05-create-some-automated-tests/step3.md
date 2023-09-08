@@ -1,6 +1,6 @@
 # Writing our first test
 
-### We identify a bug
+## We identify a bug
 
 Fortunately, there's a little bug in the `polls` application for us to fix right away: the `Question.was_published_recently()` method returns `True` if the `Question` was published within the last day (which is correct) but also if the `Question`’s `pub_date` field is in the future (which certainly isn't).
 
@@ -23,7 +23,7 @@ True
 
 Since things in the future are not 'recent', this is clearly wrong.
 
-### Create a test to expose the bug
+## Create a test to expose the bug
 
 What we've just done in the `shell` to test for the problem is exactly what we can do in an automated test, so let's turn that into an automated test.
 
@@ -53,7 +53,7 @@ class QuestionModelTests(TestCase):
 
 Here we have created a `django.test.TestCase` subclass with a method that creates a `Question` instance with a `pub_date` in the future. We then check the output of `was_published_recently()` - which _ought_ to be False.
 
-### Running tests
+## Running tests
 
 In the terminal, we can run our test:
 
@@ -97,7 +97,7 @@ What happened is this:
 
 The test informs us which test failed and even the line on which the failure occurred.
 
-### Fixing the bug
+## Fixing the bug
 
 We already know what the problem is: `Question.was_published_recently()` should return `False` if its `pub_date` is in the future. Amend the method in `models.py`, so that it will only return `True` if the date is also in the past:
 
@@ -124,7 +124,7 @@ After identifying a bug, we wrote a test that exposes it and corrected the bug i
 
 Many other things might go wrong with our application in the future, but we can be sure that we won't inadvertently reintroduce this bug, because running the test will warn us immediately. We can consider this little portion of the application pinned down safely forever.
 
-### More comprehensive tests
+## More comprehensive tests
 
 While we're here, we can further pin down the `was_published_recently()` method; in fact, it would be positively embarrassing if in fixing one bug we had introduced another.
 

@@ -2,7 +2,7 @@
 
 The polls application is fairly undiscriminating: it will publish any question, including ones whose `pub_date` field lies in the future. We should improve this. Setting a `pub_date` in the future should mean that the Question is published at that moment, but invisible until then.
 
-### A test for a view
+## A test for a view
 
 When we fixed the bug above, we wrote the test first and then the code to fix it. In fact that was an example of test-driven development, but it doesn't really matter in which order we do the work.
 
@@ -10,7 +10,7 @@ In our first test, we focused closely on the internal behavior of the code. For 
 
 Before we try to fix anything, let's have a look at the tools at our disposal.
 
-### The Django test client
+## The Django test client
 
 Django provides a test `~django.test.Client` to simulate a user interacting with the code at the view level. We can use it in `tests.py` or even in the `shell`.
 
@@ -58,7 +58,7 @@ b'\n    <ul>\n    \n        <li><a href="/polls/1/">What&#x27;s up?</a></li>\n  
 <QuerySet [<Question: What's up?>]>
 ```
 
-### Improving our view
+## Improving our view
 
 The list of polls shows polls that aren't published yet (i.e. those that have a `pub_date` in the future). Let's fix that.
 
@@ -95,7 +95,7 @@ def get_queryset(self):
 
 `Question.objects.filter(pub_date__lte=timezone.now())` returns a queryset containing `Question`s whose `pub_date` is less than or equal to - that is, earlier than or equal to - `timezone.now`.
 
-### Testing our new view
+## Testing our new view
 
 Now you can satisfy yourself that this behaves as expected by firing up `runserver`, loading the site in your browser, creating `Questions` with dates in the past and future, and checking that only those that have been published are listed. You don't want to have to do that _every single time you make any change that might affect this_ - so let's also create a test, based on our `shell` session above.
 
@@ -188,7 +188,7 @@ In `test_future_question`, we create a question with a `pub_date` in the future.
 
 And so on. In effect, we are using the tests to tell a story of admin input and user experience on the site, and checking that at every state and for every new change in the state of the system, the expected results are published.
 
-### Testing the `DetailView`
+## Testing the `DetailView`
 
 What we have works well; however, even though future questions don't appear in the _index_, users can still reach them if they know or guess the right URL. So we need to add a similar constraint to `DetailView`:
 
@@ -228,7 +228,7 @@ class QuestionDetailViewTests(TestCase):
         self.assertContains(response, past_question.question_text)
 ```
 
-### Ideas for more tests
+## Ideas for more tests
 
 We ought to add a similar `get_queryset` method to `ResultsView` and create a new test class for that view. It'll be very similar to what we have just created; in fact there will be a lot of repetition.
 

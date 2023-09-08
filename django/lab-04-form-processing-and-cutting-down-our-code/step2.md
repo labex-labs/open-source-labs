@@ -20,7 +20,7 @@ Generally, when writing a Django app, you'll evaluate whether generic views are 
 
 You should know basic math before you start using a calculator.
 
-### Amend URLconf
+## Amend URLconf
 
 First, open the `polls/urls.py` URLconf and change it like so:
 
@@ -40,7 +40,7 @@ urlpatterns = [
 
 Note that the name of the matched pattern in the path strings of the second and third patterns has changed from `<question_id>` to `<pk>`.
 
-### Amend views
+## Amend views
 
 Next, we're going to remove our old `index`, `detail`, and `results` views and use Django's generic views instead. To do so, open the `polls/views.py` file and change it like so:
 

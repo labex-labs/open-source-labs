@@ -87,7 +87,7 @@ Load the page by pointing your browser at "/polls/", and you should see a bullet
 
 ![Alt text](./assets/20230908-09-37-26-QMKEbUhb.png)
 
-### A shortcut: `~django.shortcuts.render`
+## A shortcut: `~django.shortcuts.render`
 
 It's a very common idiom to load a template, fill a context and return an `~django.http.HttpResponse` object with the result of the rendered template. Django provides a shortcut. Here's the full `index()` view, rewritten:
 

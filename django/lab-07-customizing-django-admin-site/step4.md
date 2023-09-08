@@ -4,7 +4,7 @@ Clearly, having "Django administration" at the top of each admin page is ridicul
 
 You can change it, though, using Django's template system. The Django admin is powered by Django itself, and its interfaces use Django's own template system.
 
-### Customizing your _project's_ templates
+## Customizing your _project's_ templates
 
 Create a `templates` directory in your project directory (the one that contains `manage.py`). Templates can live anywhere on your filesystem that Django can access. (Django runs as whatever user your server runs.) However, keeping your templates within the project is a good convention to follow.
 
@@ -58,7 +58,7 @@ This template file contains lots of text like `{% block branding %}` and `{{ tit
 
 Note that any of Django's default admin templates can be overridden. To override a template, do the same thing you did with `base_site.html` -- copy it from the default directory into your custom directory, and make changes.
 
-### Customizing your _application's_ templates
+## Customizing your _application's_ templates
 
 Astute readers will ask: But if `DIRS <TEMPLATES-DIRS>` was empty by default, how was Django finding the default admin templates? The answer is that, since `APP_DIRS <TEMPLATES-APP_DIRS>` is set to `True`, Django automatically looks for a `templates/` subdirectory within each application package, for use as a fallback (don't forget that `django.contrib.admin` is an application).
 

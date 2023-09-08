@@ -6,7 +6,7 @@ Django was written in a newsroom environment, with a very clear separation betwe
 
 The admin isn't intended to be used by site visitors. It's for site managers.
 
-### Creating an admin user
+## Creating an admin user
 
 First we'll need to create a user who can login to the admin site. Run the following command:
 
@@ -38,7 +38,7 @@ Bypass password validation and create user anyway? [y/N]: y
 Superuser created successfully.
 ```
 
-### Start the development server
+## Start the development server
 
 The Django admin site is activated by default. Let's start the development server and explore it.
 
@@ -54,7 +54,7 @@ Now, open a web browser in **VNC** tab, and go to "/admin/" on your local domain
 
 Since `translation </topics/i18n/translation>` is turned on by default, if you set `LANGUAGE_CODE`, the login screen will be displayed in the given language (if Django has appropriate translations).
 
-### Enter the admin site
+## Enter the admin site
 
 Now, try logging in with the superuser account you created in the previous step. You should see the Django admin index page:
 
@@ -62,7 +62,7 @@ Now, try logging in with the superuser account you created in the previous step.
 
 You should see a few types of editable content: groups and users. They are provided by `django.contrib.auth`, the authentication framework shipped by Django.
 
-### Make the poll app modifiable in the admin
+## Make the poll app modifiable in the admin
 
 But where's our poll app? It's not displayed on the admin index page.
 
@@ -76,7 +76,7 @@ from .models import Question
 admin.site.register(Question)
 ```
 
-### Explore the free admin functionality
+## Explore the free admin functionality
 
 Now that we've registered `Question`, Django knows that it should be displayed on the admin index page:
 
