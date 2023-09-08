@@ -20,8 +20,8 @@ const useMutationObserver = (
     attributes: true,
     characterData: true,
     childList: true,
-    subtree: true,
-  },
+    subtree: true
+  }
 ) => {
   React.useEffect(() => {
     if (!ref.current) return;
@@ -64,7 +64,7 @@ const App = () => {
             resize: "both",
             overflow: "auto",
             maxWidth: "100%",
-            border: "1px solid black",
+            border: "1px solid black"
           }}
         >
           <h2>Resize or change the content:</h2>

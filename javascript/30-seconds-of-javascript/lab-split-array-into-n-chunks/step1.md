@@ -14,7 +14,7 @@ Here is an example implementation of the `chunkIntoN` function in JavaScript:
 const chunkIntoN = (arr, n) => {
   const size = Math.ceil(arr.length / n);
   return Array.from({ length: n }, (v, i) =>
-    arr.slice(i * size, i * size + size),
+    arr.slice(i * size, i * size + size)
   );
 };
 ```

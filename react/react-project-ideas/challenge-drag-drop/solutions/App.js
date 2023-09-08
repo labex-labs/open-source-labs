@@ -8,23 +8,23 @@ function App() {
     {
       name: "STORY-4547: Fix search bug",
       category: "wip",
-      bgcolor: "lightgrey",
+      bgcolor: "lightgrey"
     },
     {
       name: "STORY-4525: New filter option",
       category: "complete",
-      bgcolor: "lightgreen",
+      bgcolor: "lightgreen"
     },
     {
       name: "STORY-4526: Remove region filter",
       category: "complete",
-      bgcolor: "#ee9090",
+      bgcolor: "#ee9090"
     },
     {
       name: "STORY-4520: Improve performance",
       category: "complete",
-      bgcolor: "#eeed90",
-    },
+      bgcolor: "#eeed90"
+    }
   ]);
 
   //this event is for the dragged task card.
@@ -50,7 +50,7 @@ function App() {
   const getTask = () => {
     const tasksToRender = {
       wip: [],
-      complete: [],
+      complete: []
     };
 
     tasks.forEach((t) => {
@@ -63,7 +63,7 @@ function App() {
           style={{ backgroundColor: t.bgcolor }}
         >
           {t.name}
-        </div>,
+        </div>
       );
     });
 

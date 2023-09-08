@@ -18,4 +18,3 @@ Pro-tip: Use the underscore (\_) variable to use the result of the last calculat
 >>>
 ```
 
-

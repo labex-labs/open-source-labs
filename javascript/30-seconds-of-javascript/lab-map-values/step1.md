@@ -20,7 +20,7 @@ Here is an example usage of the `mapValues` function:
 ```js
 const users = {
   fred: { user: "fred", age: 40 },
-  pebbles: { user: "pebbles", age: 1 },
+  pebbles: { user: "pebbles", age: 1 }
 };
 mapValues(users, (u) => u.age); // { fred: 40, pebbles: 1 }
 ```

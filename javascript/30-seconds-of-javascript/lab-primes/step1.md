@@ -15,7 +15,7 @@ const generatePrimes = (num) => {
     sqrt = Math.floor(Math.sqrt(num)),
     numsTillSqrt = Array.from({ length: sqrt - 1 }).map((x, i) => i + 2);
   numsTillSqrt.forEach(
-    (x) => (arr = arr.filter((y) => y % x !== 0 || y === x)),
+    (x) => (arr = arr.filter((y) => y % x !== 0 || y === x))
   );
   return arr;
 };

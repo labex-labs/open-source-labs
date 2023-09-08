@@ -13,7 +13,7 @@ Here is the code to convert the query string:
 const queryStringToObject = (url) =>
   [...new URLSearchParams(url.split("?")[1])].reduce(
     (a, [k, v]) => ((a[k] = v), a),
-    {},
+    {}
   );
 ```
 

@@ -8,7 +8,7 @@ The function uses `Intl.NumberFormat` to enable country/currency-specific format
 const toCurrency = (number, currencyCode, languageFormat) =>
   Intl.NumberFormat(languageFormat, {
     style: "currency",
-    currency: currencyCode,
+    currency: currencyCode
   }).format(number);
 ```
 

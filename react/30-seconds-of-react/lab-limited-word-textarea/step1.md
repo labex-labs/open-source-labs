@@ -7,7 +7,7 @@
 const LimitedWordTextarea = ({ rows, cols, value, limit }) => {
   const [{ content, wordCount }, setContent] = React.useState({
     content: value,
-    wordCount: 0,
+    wordCount: 0
   });
 
   // Create a memoized function that formats the input text.
@@ -17,10 +17,10 @@ const LimitedWordTextarea = ({ rows, cols, value, limit }) => {
       const truncated = words.slice(0, limit).join(" ");
       setContent({
         content: words.length > limit ? truncated : text,
-        wordCount: words.length > limit ? limit : words.length,
+        wordCount: words.length > limit ? limit : words.length
       });
     },
-    [limit, setContent],
+    [limit, setContent]
   );
 
   // Call setFormattedContent on the initial value of content.
@@ -44,7 +44,7 @@ const LimitedWordTextarea = ({ rows, cols, value, limit }) => {
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <LimitedWordTextarea limit={5} value="Hello there!" />,
+  <LimitedWordTextarea limit={5} value="Hello there!" />
 );
 ```
 

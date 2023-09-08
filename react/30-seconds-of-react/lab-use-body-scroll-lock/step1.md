@@ -29,7 +29,7 @@ const Modal = ({ onClose }) => {
         background: "rgba(0,0,0,0.25)",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems: "center"
       }}
       onClick={onClose}
     >
@@ -53,7 +53,7 @@ const MyApp = () => {
         height: "400vh",
         textAlign: "center",
         paddingTop: 100,
-        background: "linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb)",
+        background: "linear-gradient(to bottom, #1fa2ff, #12d8fa, #a6ffcb)"
       }}
     >
       <button onClick={() => setModalOpen(true)}>Open modal</button>

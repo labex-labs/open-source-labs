@@ -8,8 +8,8 @@ To achieve this, use `Array.prototype.filter()` and `Array.prototype.includes()`
 const uniqueSymmetricDifference = (a, b) => [
   ...new Set([
     ...a.filter((v) => !b.includes(v)),
-    ...b.filter((v) => !a.includes(v)),
-  ]),
+    ...b.filter((v) => !a.includes(v))
+  ])
 ];
 ```
 

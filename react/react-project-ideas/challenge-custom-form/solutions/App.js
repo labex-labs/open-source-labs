@@ -13,7 +13,7 @@ function App() {
         usernameRef.current.value +
         `\n` +
         "Password: " +
-        passwordRef.current.value,
+        passwordRef.current.value
     );
   };
   const handleRegister = () => {
@@ -29,24 +29,24 @@ function App() {
           label: "Username",
           placeholder: "Enter Username",
           ref: usernameRef,
-          isInput: true,
+          isInput: true
         }}
         password={{
           type: "password",
           label: "Password",
           placeholder: "Enter Password",
           ref: passwordRef,
-          isInput: true,
+          isInput: true
         }}
         loginButton={{
           handler: handleLogin,
           buttonText: "Login",
-          isInput: false,
+          isInput: false
         }}
         registerButton={{
           handler: handleRegister,
           buttonText: "Register",
-          isInput: false,
+          isInput: false
         }}
       />
     </div>
