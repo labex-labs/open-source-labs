@@ -14,7 +14,7 @@ Here is the code for the `deepGet` function:
 const deepGet = (obj, keys) =>
   keys.reduce(
     (xs, x) => (xs && xs[x] !== null && xs[x] !== undefined ? xs[x] : null),
-    obj,
+    obj
   );
 ```
 
@@ -26,9 +26,9 @@ const data = {
   foo: {
     foz: [1, 2, 3],
     bar: {
-      baz: ["a", "b", "c"],
-    },
-  },
+      baz: ["a", "b", "c"]
+    }
+  }
 };
 deepGet(data, ["foo", "foz", index]); // returns 3
 deepGet(data, ["foo", "bar", "baz", 8, "foz"]); // returns null

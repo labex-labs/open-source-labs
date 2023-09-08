@@ -29,7 +29,7 @@ const colorize = (...args) => ({
   bgBlue: `\x1b[44m${args.join(" ")}\x1b[0m`,
   bgMagenta: `\x1b[45m${args.join(" ")}\x1b[0m`,
   bgCyan: `\x1b[46m${args.join(" ")}\x1b[0m`,
-  bgWhite: `\x1b[47m${args.join(" ")}\x1b[0m`,
+  bgWhite: `\x1b[47m${args.join(" ")}\x1b[0m`
 });
 ```
 

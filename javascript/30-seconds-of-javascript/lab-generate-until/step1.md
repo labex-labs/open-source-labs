@@ -30,8 +30,8 @@ You can use the generator by calling it with the appropriate arguments. For exam
   ...generateUntil(
     1,
     (v) => v > 5,
-    (v) => ++v,
-  ),
+    (v) => ++v
+  )
 ]; // [1, 2, 3, 4, 5]
 ```
 

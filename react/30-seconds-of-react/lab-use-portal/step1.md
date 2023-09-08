@@ -15,7 +15,7 @@ Here's an example implementation:
 const usePortal = (el) => {
   const [portal, setPortal] = React.useState({
     render: () => null,
-    remove: () => null,
+    remove: () => null
   });
 
   const createPortal = React.useCallback((el) => {
