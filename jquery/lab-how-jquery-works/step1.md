@@ -5,7 +5,7 @@
 This file will be automatically generated during the environment initialization. If it is not automatically generated, create the file and function as shown in the image above. The function code is as follows:
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -62,7 +62,7 @@ Copy the above jQuery code into your HTML file where it says `// Your code goes 
 The following example illustrates the click handling code discussed above, embedded directly in the HTML `<body>`. Note that in practice, it is usually better to place your code in a separate JS file and load it on the page with a `<script>` element's `src` attribute.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
