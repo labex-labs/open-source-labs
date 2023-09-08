@@ -30,18 +30,22 @@ TEMPLATES = [
 
 `DIRS <TEMPLATES-DIRS>` is a list of filesystem directories to check when loading Django templates; it's a search path.
 
-> Organizing templates
+## Organizing templates
 
 Just like the static files, we _could_ have all our templates together, in one big templates directory, and it would work perfectly well. However, templates that belong to a particular application should be placed in that application's template directory (e.g. `polls/templates`) rather than the project's (`templates`). We'll discuss in more detail in the `reusable apps tutorial </intro/reusable-apps>` _why_ we do this.
 
 Now create a directory called `admin` inside `templates`, and copy the template `admin/base_site.html` from within the default Django admin template directory in the source code of Django itself (`django/contrib/admin/templates`) into that directory.
 
-> Where are the Django source files?
+## Where are the Django source files?
 
 If you have difficulty finding where the Django source files are located on your system, run the following command:
 
 ```bash
-python -c "import django; print(django.\_\_path\_\_)"
+python -c "import django; print(django.__path__)"
+```
+
+```text
+['/home/labex/.local/lib/python3.10/site-packages/django']
 ```
 
 Then, edit the file and replace `{{ site_header|default:_('Django administration') }}` (including the curly braces) with your own site's name as you see fit. You should end up with a section of code like:

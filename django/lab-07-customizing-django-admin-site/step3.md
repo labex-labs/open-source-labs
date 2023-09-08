@@ -24,7 +24,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 Now the question change list page looks like this:
 
-![Polls change list page, updated](./assets/admin12t.png)
+![Alt text](./assets/20230908-16-14-08-GNY2lggF.png)
 
 You can click on the column headers to sort by those values -- except in the case of the `was_published_recently` header, because sorting by the output of an arbitrary method is not supported. Also note that the column header for `was_published_recently` is, by default, the name of the method (with underscores replaced with spaces), and that each line contains the string representation of the output.
 
@@ -50,17 +50,21 @@ For more information on the properties configurable via the decorator, see `~dja
 
 Edit your `polls/admin.py` file again and add an improvement to the `Question` change list page: filters using the `~django.contrib.admin.ModelAdmin.list_filter`. Add the following line to `QuestionAdmin`:
 
-    list_filter = ["pub_date"]
+```python
+list_filter = ["pub_date"]
+```
 
 That adds a "Filter" sidebar that lets people filter the change list by the `pub_date` field:
 
-![Polls change list page, updated](./assets/admin13t.png)
+![Alt text](./assets/20230908-16-16-39-otfMNyYo.png)
 
 The type of filter displayed depends on the type of field you're filtering on. Because `pub_date` is a `~django.db.models.DateTimeField`, Django knows to give appropriate filter options: "Any date", "Today", "Past 7 days", "This month", "This year".
 
 This is shaping up well. Let's add some search capability:
 
-    search_fields = ["question_text"]
+```python
+search_fields = ["question_text"]
+```
 
 That adds a search box at the top of the change list. When somebody enters search terms, Django will search the `question_text` field. You can use as many fields as you'd like -- although because it uses a `LIKE` query behind the scenes, limiting the number of search fields to a reasonable number will make it easier for your database to do the search.
 
