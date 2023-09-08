@@ -26,6 +26,6 @@ chainAsync([
   },
   () => {
     console.log("2 second");
-  },
+  }
 ]);
 ```

@@ -25,9 +25,9 @@ To use the `dig` function, first create a JSON object with nested levels, like t
 const data = {
   level1: {
     level2: {
-      level3: "some data",
-    },
-  },
+      level3: "some data"
+    }
+  }
 };
 ```
 

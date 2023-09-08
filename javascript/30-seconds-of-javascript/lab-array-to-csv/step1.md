@@ -15,7 +15,7 @@ const arrayToCSV = (arr, delimiter = ",") =>
     .map((v) =>
       v
         .map((x) => (isNaN(x) ? `"${x.replace(/"/g, '""')}"` : x))
-        .join(delimiter),
+        .join(delimiter)
     )
     .join("\n");
 ```
@@ -25,18 +25,18 @@ You can test the function by running the following lines of code:
 ```js
 arrayToCSV([
   ["a", "b"],
-  ["c", "d"],
+  ["c", "d"]
 ]); // '"a","b"\n"c","d"'
 arrayToCSV(
   [
     ["a", "b"],
-    ["c", "d"],
+    ["c", "d"]
   ],
-  ";",
+  ";"
 ); // '"a";"b"\n"c";"d"'
 arrayToCSV([
   ["a", '"b" great'],
-  ["c", 3.1415],
+  ["c", 3.1415]
 ]);
 // '"a","""b"" great"\n"c",3.1415'
 ```

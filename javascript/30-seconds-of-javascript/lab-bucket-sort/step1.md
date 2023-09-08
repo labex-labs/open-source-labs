@@ -16,7 +16,7 @@ const bucketSort = (arr, size = 5) => {
   const max = Math.max(...arr);
   const buckets = Array.from(
     { length: Math.floor((max - min) / size) + 1 },
-    () => [],
+    () => []
   );
   arr.forEach((val) => {
     buckets[Math.floor((val - min) / size)].push(val);

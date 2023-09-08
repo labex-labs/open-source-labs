@@ -32,7 +32,7 @@ If you have a dictionary of custom plural forms, you can create an `autoPluraliz
 ```js
 const PLURALS = {
   person: "people",
-  radius: "radii",
+  radius: "radii"
 };
 const autoPluralize = pluralize(PLURALS);
 autoPluralize(2, "person"); // 'people'

@@ -16,8 +16,8 @@ const unescapeHTML = (str) =>
         "&lt;": "<",
         "&gt;": ">",
         "&#39;": "'",
-        "&quot;": '"',
-      })[tag] || tag,
+        "&quot;": '"'
+      })[tag] || tag
   );
 ```
 

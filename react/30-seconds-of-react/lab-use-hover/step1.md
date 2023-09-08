@@ -29,7 +29,7 @@ const useHover = () => {
         nodeRef.current.addEventListener("mouseout", handleMouseOut);
       }
     },
-    [handleMouseOver, handleMouseOut],
+    [handleMouseOver, handleMouseOut]
   );
 
   return [callbackRef, isHovering];

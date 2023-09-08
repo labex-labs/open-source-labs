@@ -5,7 +5,7 @@ JSX lets you put markup into JavaScript. Curly braces let you “escape back” 
 ```js
 // App.js
 const user = {
-  name: "Hedy Lamarr",
+  name: "Hedy Lamarr"
 };
 export default function Profile() {
   return (
@@ -22,7 +22,7 @@ You can also “escape into JavaScript” from JSX attributes, but you have to u
 // App.js
 const user = {
   name: "Hedy Lamarr",
-  imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
+  imageUrl: "https://i.imgur.com/yXOvdOSs.jpg"
 };
 export default function Profile() {
   return (

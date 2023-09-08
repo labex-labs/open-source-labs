@@ -24,7 +24,7 @@ const levenshteinDistance = (s, t) => {
           : Math.min(
               arr[i - 1][j] + 1,
               arr[i][j - 1] + 1,
-              arr[i - 1][j - 1] + (s[j - 1] === t[i - 1] ? 0 : 1),
+              arr[i - 1][j - 1] + (s[j - 1] === t[i - 1] ? 0 : 1)
             );
     }
   }

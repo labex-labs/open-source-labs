@@ -17,7 +17,7 @@ const MappedTable = ({ data, propertyNames }) => {
   const filteredData = data.map((obj) =>
     Object.keys(obj)
       .filter((key) => propertyNames.includes(key))
-      .reduce((acc, key) => ({ ...acc, [key]: obj[key] }), {}),
+      .reduce((acc, key) => ({ ...acc, [key]: obj[key] }), {})
   );
 
   return (
@@ -48,13 +48,13 @@ You can use the component by passing in an array of objects and a list of proper
 ```jsx
 const people = [
   { name: "John", surname: "Smith", age: 42 },
-  { name: "Adam", surname: "Smith", gender: "male" },
+  { name: "Adam", surname: "Smith", gender: "male" }
 ];
 const propertyNames = ["name", "surname", "age"];
 
 ReactDOM.render(
   <MappedTable data={people} propertyNames={propertyNames} />,
-  document.getElementById("root"),
+  document.getElementById("root")
 );
 ```
 

@@ -29,9 +29,9 @@ const useSSR = () => {
       isServer: !inBrowser,
       canUseWorkers: typeof Worker !== "undefined",
       canUseEventListeners: inBrowser && !!window.addEventListener,
-      canUseViewport: inBrowser && !!window.screen,
+      canUseViewport: inBrowser && !!window.screen
     }),
-    [inBrowser],
+    [inBrowser]
   );
 
   return useSSRObject;

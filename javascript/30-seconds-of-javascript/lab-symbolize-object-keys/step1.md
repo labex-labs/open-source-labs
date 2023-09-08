@@ -11,7 +11,7 @@ To symbolize object keys in JavaScript, follow these steps:
 const symbolizeKeys = (obj) =>
   Object.keys(obj).reduce(
     (acc, key) => ({ ...acc, [Symbol(key)]: obj[key] }),
-    {},
+    {}
   );
 ```
 
