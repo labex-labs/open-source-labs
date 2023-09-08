@@ -3,7 +3,7 @@
 In the file `portfolio.csv`, the first line contains column headers. In all previous code, we've been discarding them.
 
 ```python
->>> f = open('portfolio.csv')
+>>> f = open('/home/labex/project/portfolio.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> headers
@@ -68,7 +68,7 @@ name,date,time,shares,price
 ```
 
 ```python
->>> portfolio_cost('portfoliodate.csv')
+>>> portfolio_cost('/home/labex/project/portfoliodate.csv')
 44671.15
 >>>
 ```
@@ -80,3 +80,25 @@ The change made here is subtle, but significant. Instead of `portfolio_cost()` b
 Modify the `report.py` program you wrote in Section 2.3 so that it uses the same technique to pick out column headers.
 
 Try running the `report.py` program on the `portfoliodate.csv` file and see that it produces the same answer as before.
+
+```python
+import csv
+
+def portfolio_cost(filename):
+    total_cost = 0
+    with open(filename, 'r') as file:
+        rows = csv.reader(file)
+        headers = next(rows)  # Get the column headers
+        for rowno, row in enumerate(rows, start=1):
+            record = dict(zip(headers, row))  # Pair column headers with row data
+            try:
+                nshares = int(record['shares'])
+                price = float(record['price'])
+                total_cost += nshares * price
+            except ValueError:
+                print(f'Row {rowno}: Bad row: {row}')
+    return total_cost
+
+cost = portfolio_cost('/home/labex/project/portfoliodate.csv')
+print(cost)
+```
