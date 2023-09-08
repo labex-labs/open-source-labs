@@ -18,4 +18,3 @@ Pro-tip: Use the underscore (\_) variable to use the result of the last calculat
 >>>
 ```
 
-Note: After you finish the content, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to exit the python interpreter or the lab won't pass.
