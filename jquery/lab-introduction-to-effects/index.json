@@ -1,0 +1,94 @@
+{
+  "type": "lab",
+  "title": "Introduction to Effects",
+  "description": "This lab will give you an introduction to effects.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Showing and Hiding Content",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the running status of the web service.",
+            "file": "verify1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "jquery/hide",
+          "jquery/show"
+        ]
+      },
+      {
+        "title": "Changing Display Based on Current Visibility State",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check for `toggle` inclusion.",
+            "file": "verify2.sh",
+            "hint": "Please use toggle.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "jquery/toggle"
+        ]
+      },
+      {
+        "title": "Something After an Animation Completes",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check for `fadeIn` inclusion.",
+            "file": "verify3.sh",
+            "hint": "Please use fadeIn.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "jquery/fade_in"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "jquery.min.js",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": [
+    "Lotus-7"
+  ],
+  "license": {
+    "name": "MIT license",
+    "url": "https://jquery.org/license/",
+    "repo": "https://learn.jquery.com/effects/intro-to-effects/"
+  }
+}
