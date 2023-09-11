@@ -14,4 +14,3 @@ Language statements are always lower-case.
 while x < 0:   # OK
 WHILE x < 0:   # ERROR
 ```
-

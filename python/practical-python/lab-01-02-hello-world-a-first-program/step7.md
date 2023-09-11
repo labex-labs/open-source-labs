@@ -10,4 +10,3 @@ print(b)
 ```
 
 Comments are denoted by `#` and extend to the end of the line.
-

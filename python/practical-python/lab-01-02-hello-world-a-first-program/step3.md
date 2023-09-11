@@ -8,4 +8,3 @@ print('hello world')
 ```
 
 You can create a `hello.py` file in the `/home/labex/project` directory using your favourite text editor.
-
