@@ -22,7 +22,7 @@ $("div").on({
   },
   mouseover: function () {
     console.log("hovered!");
-  },
+  }
 });
 ```
 
