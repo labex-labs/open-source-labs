@@ -12,3 +12,4 @@ while num_bills * bill_thickness < sears_height:
         day = day + 1 # ERROR
     num_bills = num_bills * 2
 ```
+

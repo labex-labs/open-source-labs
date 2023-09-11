@@ -2,6 +2,19 @@
 
 A rubber ball is dropped from a height of 100 meters and each time it hits the ground, it bounces back up to 3/5 the height it fell. Write a program `bounce.py` that prints a table showing the height of the first 10 bounces.
 
+Here is a solution:
+
+```python
+# bounce.py
+
+height = 100
+bounce = 1
+while bounce <= 10:
+    height = height * (3 / 5)
+    print(bounce, round(height, 4))
+    bounce += 1
+```
+
 Your program should make a table that looks something like this:
 
 ```code
