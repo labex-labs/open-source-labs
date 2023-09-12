@@ -9,3 +9,10 @@ do
     echo "Argument: $arg"
 done
 ```
+
+```text
+$ ./arguments.sh argument1 argument2 argument3
+Argument: argument1
+Argument: argument2
+Argument: argument3
+```

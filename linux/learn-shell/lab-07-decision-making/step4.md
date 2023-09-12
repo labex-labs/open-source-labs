@@ -22,3 +22,5 @@ if [ $NUMBER -eq $APPLES ] ; then
   echo 2
 fi
 ```
+
+The above script will print "2" because the expression is true.

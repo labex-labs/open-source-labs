@@ -20,3 +20,17 @@ function_B                   # Function B.
 # Pass two parameters to function adder
 adder 12 56                  # 68
 ```
+
+Create a file called `~/project/functions.sh` and add the above code.
+
+```bash
+cd ~/project
+chmod +x functions.sh
+./functions.sh
+```
+
+```text
+Function A.
+Function B.
+68
+```

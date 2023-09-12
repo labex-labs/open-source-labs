@@ -12,3 +12,5 @@ else
   echo "You must mistaken me for $NAME"
 fi
 ```
+
+The above script will print "False" and "You must mistaken me for Bill" because the expression is false.

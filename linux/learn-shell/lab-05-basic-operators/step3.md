@@ -16,3 +16,13 @@ TOTAL=$((COST_PINEAPPLE + (COST_BANANA * 2) + (COST_WATERMELON * 3) + COST_BASKE
 # Display the total cost
 echo "Total Cost is $TOTAL"
 ```
+
+```bash
+cd ~/project
+chmod +x operators.sh
+./operators.sh
+```
+
+```text
+Total Cost is 128
+```

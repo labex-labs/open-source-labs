@@ -9,3 +9,11 @@ echo "First argument: $1"
 echo "Second argument: $2"
 echo "Third argument: $3"
 ```
+
+```text
+$ ./arguments.sh argument1 argument2 argument3
+Script name: ./arguments.sh
+First argument: argument1
+Second argument: argument2
+Third argument: argument3
+```

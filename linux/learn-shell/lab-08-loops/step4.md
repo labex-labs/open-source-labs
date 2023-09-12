@@ -27,3 +27,13 @@ while [ $count -lt 10 ]; do
     echo $count
 done
 ```
+
+Revise the file `~/project/while.sh` to use the `break` and `continue` statements.
+
+```text
+Value of count is: 1
+Value of count is: 3
+Value of count is: 5
+Value of count is: 7
+Value of count is: 9
+```

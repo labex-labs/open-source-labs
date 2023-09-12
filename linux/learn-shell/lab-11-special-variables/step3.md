@@ -22,3 +22,15 @@ func We are argument
 ```
 
 In the above example, we define a function `func` that takes multiple arguments. We iterate over the `$*` and `$@` variables. When enclosed in double quotes, `$*` treats all arguments as a single word, whereas `$@` treats them as separate words.
+
+Revise the file `~/project/special.sh` and run it again.
+
+```text
+Script Name: ./special.sh
+--- "$*"
+We are argument
+--- "$@"
+We
+are
+argument
+```

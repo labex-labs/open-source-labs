@@ -17,3 +17,15 @@ if [ "$NAME" = "John" ]; then
   echo "True - my name is indeed John"
 fi
 ```
+
+Create a file called `~/project/if.sh` and paste the above code into it. Then, run the script:
+
+```bash
+cd ~/project
+chmod +x if.sh
+./if.sh
+```
+
+```text
+True - my name is indeed John
+```

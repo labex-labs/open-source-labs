@@ -12,3 +12,12 @@ else
     echo "Multiple arguments passed."
 fi
 ```
+
+```text
+$ ./arguments.sh
+No arguments passed.
+$ ./arguments.sh argument1
+Only one argument passed.
+$ ./arguments.sh argument1 argument2
+Multiple arguments passed.
+```

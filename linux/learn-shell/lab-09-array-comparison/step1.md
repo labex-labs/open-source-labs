@@ -1,5 +1,7 @@
 # Initialize the arrays
 
+Create a new file called `~/project/array-comparison.sh`.
+
 Start by initializing three arrays: `a`, `b`, and `c`.
 
 ```bash

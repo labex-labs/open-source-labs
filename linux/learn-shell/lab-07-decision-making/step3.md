@@ -13,3 +13,5 @@ else
   echo "This leaves us with Paul and Ringo"
 fi
 ```
+
+The above script will print "George Harrison" because the expression is true.

@@ -18,3 +18,13 @@ until [ $count -gt 5 ]; do
     count=$(($count + 1))
 done
 ```
+
+Revise the file `~/project/while.sh` to use the `until` loop.
+
+```text
+Value of count is: 1
+Value of count is: 2
+Value of count is: 3
+Value of count is: 4
+Value of count is: 5
+```

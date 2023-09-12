@@ -14,3 +14,32 @@ else
     echo "You are not allowed to read $filename"
 fi
 ```
+
+Cearate a file called `~/project/readable.sh`.
+
+```shell
+cd ~/project
+chmod +x readable.sh
+./readable.sh
+```
+
+```text
+You are allowed to read sample.md
+```
+
+Then, change the file permissions to remove the read permission.
+
+```shell
+cd ~/project
+chmod -r sample.md
+```
+
+Re-run the script.
+
+```shell
+./readable.sh
+```
+
+```text
+You are not allowed to read sample.md
+```

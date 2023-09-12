@@ -11,3 +11,9 @@ LENGTH=`expr $COMMA2 - 6 - 1`
 FIRSTNAME=${CHOP1FIELD:6:$LENGTH}         # "Johnny Boy"
 echo $FIRSTNAME
 ```
+
+Execute the script:
+
+```bash
+./string-operations.sh
+```

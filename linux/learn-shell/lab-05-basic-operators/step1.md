@@ -2,6 +2,8 @@
 
 First, let's define the costs of different fruits and the cost of the basket.
 
+Create a new file and save it with `~/project/operators.sh`.
+
 ```bash
 #!/bin/bash
 

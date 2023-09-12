@@ -17,3 +17,5 @@ if [[ ($APPLES -eq 12) || ("$KING" = "LUIS") ]] ; then
   echo 3
 fi
 ```
+
+The above script will print "3" because the expression is true.

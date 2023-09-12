@@ -21,3 +21,17 @@ ENGLISH_CALC 3 plus 5
 ENGLISH_CALC 5 minus 1
 ENGLISH_CALC 4 times 6
 ```
+
+Revise the file `~/project/functions.sh` to include the above code.
+
+```bash
+cd ~/project
+chmod +x functions.sh
+./functions.sh
+```
+
+```text
+3 + 5 = 8
+5 - 1 = 4
+4 * 6 = 24
+```

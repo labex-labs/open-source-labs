@@ -28,3 +28,17 @@ If the variable value contains whitespace, you can preserve it by enclosing the 
 greeting='Hello        world!'
 echo $greeting" now with spaces: $greeting"
 ```
+
+Run the script and you will see the following output:
+
+```bash
+cd ~/project
+chmod +x variables.sh
+./variables.sh
+```
+
+```text
+The price of an Apple today is: $HK 5
+The first 10 letters in the alphabet are: ABCDEFGHIJ
+Hello world! now with spaces: Hello        world!
+```

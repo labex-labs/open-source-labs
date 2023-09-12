@@ -10,3 +10,7 @@ echo ${STRING:$POS:$LEN}    # Outputs: "his"
 ```
 
 If you omit `:$LEN`, the substring will be extracted from $POS to the end of the string.
+
+```text
+his
+```
