@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "Pipelines",
+  "description": "In this lab, you will learn how to use pipelines in shell programming. Pipelines, often called pipes, allow you to chain commands together and connect the output of one command to the input of the next. This is useful when you need to process complex or lengthy input.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Accessing CPU Information",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Run cat /proc/cpuinfo to see the CPU information.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/cat"]
+      },
+      {
+        "title": "Filtering CPU Information",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Run grep processor to filter the CPU information.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/grep"]
+      },
+      {
+        "title": "Counting the Processors",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Run wc -l to count the number of processors.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/wc"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ronreiter/interactive-tutorials"
+  },
+  "contributors": []
+}

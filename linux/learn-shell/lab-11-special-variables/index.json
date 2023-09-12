@@ -1,0 +1,85 @@
+{
+  "type": "lab",
+  "title": "Special Variables",
+  "description": "In this lab, you will learn about the special variables in shell scripting. These variables provide important information about the script execution environment, such as command-line arguments, script name, and process ID.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding the Special Variables",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Using the Special Variables",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "~/project/special.sh does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "shell/special_variables",
+          "shell/variable_substitution",
+          "shell/function_basic",
+          "shell/for_loop"
+        ]
+      },
+      {
+        "title": "Understanding the Difference Between `$@` and `$*`",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["shell/function_basic", "shell/for_loop"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ronreiter/interactive-tutorials"
+  },
+  "contributors": []
+}
