@@ -87,4 +87,4 @@ In other words, "name" is column 0 and "shares" is column 3. When you read a row
 >>>
 ```
 
-Here's a solution in `/home/labex/project/solutions` directory.
+Here's a solution in `/home/labex/project` directory.

@@ -30,4 +30,4 @@ For example:
 >>>
 ```
 
-Here's a solution in `/home/labex/project/solutions` directory.
+Here's a solution in `/home/labex/project` directory.
