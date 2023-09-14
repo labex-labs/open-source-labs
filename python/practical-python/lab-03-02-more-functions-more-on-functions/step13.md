@@ -1,9 +1,9 @@
 # Exercise 3.3: Reading CSV Files
 
-To start, let's just focus on the problem of reading a CSV file into a list of dictionaries. In the file `fileparse.py`, define a function that looks like this:
+To start, let's just focus on the problem of reading a CSV file into a list of dictionaries. In the file `fileparse_3.3.py`, define a function that looks like this:
 
 ```python
-# fileparse.py
+# fileparse_3.3.py
 import csv
 
 def parse_csv(filename):
@@ -39,3 +39,5 @@ Hint: `python3 -i fileparse.py`.
 ```
 
 This is good except that you can't do any kind of useful calculation with the data because everything is represented as a string. We'll fix this shortly, but let's keep building on it.
+
+Here's a solution in `/home/labex/project/solutions` directory.

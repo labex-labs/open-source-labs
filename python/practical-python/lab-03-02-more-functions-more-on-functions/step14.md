@@ -18,7 +18,7 @@ In many cases, you're only interested in selected columns from a CSV file, not a
 An example of a column selector was given in Exercise 2.23. However, here's one way to do it:
 
 ```python
-# fileparse.py
+# fileparse_3.4.py
 import csv
 
 def parse_csv(filename, select=None):
@@ -86,3 +86,5 @@ In other words, "name" is column 0 and "shares" is column 3. When you read a row
 ['AA', '100']
 >>>
 ```
+
+Here's a solution in `/home/labex/project/solutions` directory.

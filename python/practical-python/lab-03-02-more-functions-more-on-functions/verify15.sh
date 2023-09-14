@@ -1,1 +1,2 @@
 #!/bin/zsh
+(python3 ~/project/fileparse_3.5.py > debug2 && grep "{'name': 'AA', 'shares': 100}" debug2) && echo "True"
