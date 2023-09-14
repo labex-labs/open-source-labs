@@ -49,3 +49,4 @@ def parse_csv(filename, select=None, types=None, has_headers=True, silence_error
     return records
 
 portfolio = parse_csv('/home/labex/project/missing.csv', types=[str, int, float], silence_errors=True)
+print(portfolio)
