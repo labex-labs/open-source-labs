@@ -86,5 +86,3 @@ In other words, "name" is column 0 and "shares" is column 3. When you read a row
 ['AA', '100']
 >>>
 ```
-
-Here's a solution in `/home/labex/project` directory.
