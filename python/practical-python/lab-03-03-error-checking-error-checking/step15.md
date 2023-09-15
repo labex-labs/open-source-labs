@@ -28,4 +28,3 @@ Row 7: Reason invalid literal for int() with base 10: ''
 >>>
 ```
 
-Here's a solution in `/home/labex/project` directory.
