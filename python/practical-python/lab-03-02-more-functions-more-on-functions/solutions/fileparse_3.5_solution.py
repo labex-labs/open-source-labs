@@ -40,7 +40,7 @@ def parse_csv(filename, select=None, types=None):
     
 
 # Read all of the data with type conversions
-portfolio = parse_csv('/home/labex/project/portfolio.csv', types=[str, float, int])
+portfolio = parse_csv('/home/labex/project/portfolio.csv', types=[str, int, float])
 print(portfolio)
 
 # Read only some of the data with type conversions
