@@ -1,4 +1,8 @@
 # pcost.py
+import sys
+
+
+sys.path.append('/home/labex/project')
 
 import report
 
@@ -19,6 +23,5 @@ def main(args):
 
 
 if __name__ == "__main__":
-    import sys
 
     main(sys.argv)
