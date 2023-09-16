@@ -50,7 +50,7 @@ Try using the module to read some data:
 >>> prices
 ... look at the output ...
 >>> prices['IBM']
-106.11
+106.28
 >>>
 ```
 
