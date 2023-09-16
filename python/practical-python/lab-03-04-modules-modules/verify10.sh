@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "path" ~/.python_history && echo "True"
+grep -q "sys.path" ~/.python_history && echo "True"
