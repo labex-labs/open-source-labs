@@ -3,7 +3,7 @@
   "title": "Design Discussion",
   "description": "In this lab, we will be revisiting a previous design decision.",
   "difficulty": "Beginner",
-  "time": 30,
+  "time": 25,
   "hidden": false,
   "fee_type": "free",
   "details": {
@@ -96,20 +96,6 @@
           "python/python_scripts",
           "python/comparison"
         ]
-      },
-      {
-        "title": "Exercise 3.18: Fixing existing functions",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Test the completion of step 6",
-            "file": "verify6.sh",
-            "hint": "Please check the step 6 carefully.",
-            "timeout": 0,
-            "showstderr": false
-          }
-        ],
-        "skills": ["python/python_scripts"]
       }
     ],
     "intro": {
@@ -128,6 +114,11 @@
         },
         {
           "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "fileparse.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         }
