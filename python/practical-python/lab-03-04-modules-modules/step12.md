@@ -40,10 +40,10 @@ If none of this works, you're probably running Python in the wrong directory. No
 Try using the module to read some data:
 
 ```python
->>> portfolio = fileparse.parse_csv('portfolio.csv',select=['name','shares','price'], types=[str,int,float])
+>>> portfolio = fileparse.parse_csv('/home/labex/project/portfolio.csv',select=['name','shares','price'], types=[str,int,float])
 >>> portfolio
 ... look at the output ...
->>> pricelist = fileparse.parse_csv('prices.csv',types=[str,float], has_headers=False)
+>>> pricelist = fileparse.parse_csv('/home/labex/project/prices.csv',types=[str,float], has_headers=False)
 >>> pricelist
 ... look at the output ...
 >>> prices = dict(pricelist)
@@ -58,7 +58,7 @@ Try importing a function so that you don't need to include the module name:
 
 ```python
 >>> from fileparse import parse_csv
->>> portfolio = parse_csv('portfolio.csv', select=['name','shares','price'], types=[str,int,float])
+>>> portfolio = parse_csv('/home/labex/project/portfolio.csv', select=['name','shares','price'], types=[str,int,float])
 >>> portfolio
 ... look at the output ...
 >>>

@@ -1,7 +1,4 @@
 # fileparse.py
-import sys
-
-sys.path.append('/home/labex/project')
 import csv
 
 

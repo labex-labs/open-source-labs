@@ -1,4 +1,7 @@
 # report.py
+import sys
+
+sys.path.append('/home/labex/project')
 
 import fileparse
 
@@ -60,4 +63,4 @@ def portfolio_report(portfoliofile, pricefile):
     print_report(report)
 
 
-portfolio_report("portfolio.csv", "prices.csv")
+portfolio_report("/home/labex/project/portfolio.csv", "/home/labex/project/prices.csv")
