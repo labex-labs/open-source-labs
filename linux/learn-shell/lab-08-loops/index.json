@@ -1,0 +1,98 @@
+{
+  "type": "lab",
+  "title": "Bash Loops",
+  "description": "In this lab, you will learn how to use loops in Bash scripting. Loops allow you to repeat a set of instructions multiple times, making your scripts more efficient and flexible. We will cover three types of loops: `for`, `while`, and `until`. Additionally, we will explore the `break` and `continue` statements, which allow you to control the loop execution.",
+  "difficulty": "Beginner",
+  "time": 20,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "The `for` Loop",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "~/project/for.sh does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["shell/for_loop", "shell/variable_substitution"]
+      },
+      {
+        "title": "The `while` Loop",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "ls ~/project/while.sh does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["shell/while_loop", "shell/arithmetic_operator"]
+      },
+      {
+        "title": "The `until` Loop",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["shell/arithmetic_operator"]
+      },
+      {
+        "title": "The `break` and `continue` Statements",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "shell/break",
+          "shell/while_loop",
+          "shell/arithmetic_operator"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ronreiter/interactive-tutorials"
+  }
+}

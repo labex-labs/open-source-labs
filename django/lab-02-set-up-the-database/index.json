@@ -1,0 +1,117 @@
+{
+  "type": "lab",
+  "title": "Set Up the Database",
+  "description": "This tutorial begins where Creation of a Basic Poll Application left off. We'll set up the database, create your first model, and get a quick introduction to Django's automatically-generated admin site.",
+  "difficulty": "Beginner",
+  "time": 25,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Database setup",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Check the migrate command is executed",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "django/contrib_packages",
+          "django/databases",
+          "django/django_admin"
+        ]
+      },
+      {
+        "title": "Creating models",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Check the Choice and Question class are created",
+            "file": "verify2.sh",
+            "hint": "Create the Choice and Question class in polls/models.py.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["django/databases", "django/schemaeditor", "django/models"]
+      },
+      {
+        "title": "Activating models",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check the INSTALLED_APPS setting is updated",
+            "file": "verify3.sh",
+            "hint": "add polls.apps.PollsConfig to the INSTALLED_APPS setting.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["django/contrib_packages", "django/django_admin"]
+      },
+      {
+        "title": "Playing with the API",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check def was_published_recently and __str__ are added",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "django/django_utils",
+          "django/databases",
+          "django/schemaeditor",
+          "django/models"
+        ]
+      },
+      {
+        "title": "Introducing the Django Admin",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check the Django Admin is running",
+            "file": "verify5.sh",
+            "hint": "Please make sure the Django Admin is running on 127.0.0.1:8000/admin.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "django/contrib_packages",
+          "django/databases",
+          "django/schemaeditor",
+          "django/models"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-vnc-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"]
+}

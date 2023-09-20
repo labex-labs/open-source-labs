@@ -18,6 +18,6 @@ To use this function, pass in two `Date` objects as arguments, like this:
 ```js
 getSecondsDiffBetweenDates(
   new Date("2020-12-24 00:00:15"),
-  new Date("2020-12-24 00:00:17"),
+  new Date("2020-12-24 00:00:17")
 ); // 2
 ```

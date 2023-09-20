@@ -10,8 +10,8 @@ To execute a function without blocking the UI, use a Web Worker to run the funct
 const runAsync = (fn) => {
   const worker = new Worker(
     URL.createObjectURL(new Blob([`postMessage((${fn})());`]), {
-      type: "application/javascript; charset=utf-8",
-    }),
+      type: "application/javascript; charset=utf-8"
+    })
   );
   return new Promise((resolve, reject) => {
     worker.onmessage = ({ data }) => {

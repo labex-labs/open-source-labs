@@ -15,7 +15,7 @@ To use the `Callto` component, call the `ReactDOM.render()` method and pass in t
 ```jsx
 ReactDOM.render(
   <Callto phone="+302101234567">Call me!</Callto>,
-  document.getElementById("root"),
+  document.getElementById("root")
 );
 ```
 

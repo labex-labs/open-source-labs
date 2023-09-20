@@ -20,7 +20,7 @@ const partitionBy = (arr, fn) =>
       else res[res.length - 1].push(v);
       return { res, last: next };
     },
-    { res: [] },
+    { res: [] }
   ).res;
 ```
 

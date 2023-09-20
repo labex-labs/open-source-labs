@@ -46,7 +46,7 @@ const Carousel = ({ carouselItems, ...rest }) => {
         const activeClass = active === index ? " visible" : "";
         return React.cloneElement(item, {
           ...rest,
-          className: `carousel-item${activeClass}`,
+          className: `carousel-item${activeClass}`
         });
       })}
     </div>
@@ -58,9 +58,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     carouselItems={[
       <div>carousel item 1</div>,
       <div>carousel item 2</div>,
-      <div>carousel item 3</div>,
+      <div>carousel item 3</div>
     ]}
-  />,
+  />
 );
 ```
 

@@ -21,7 +21,7 @@ You can then use the `objectify` function to map an object array to an object in
 ```js
 const people = [
   { name: "John", age: 42 },
-  { name: "Adam", age: 39 },
+  { name: "Adam", age: 39 }
 ];
 
 // Map the object array to an object using the name property as keys
@@ -32,7 +32,7 @@ objectify(people, (p) => p.name.toLowerCase());
 objectify(
   people,
   (p) => p.name.toLowerCase(),
-  (p) => p.age,
+  (p) => p.age
 );
 // Output: { john: 42, adam: 39 }
 ```

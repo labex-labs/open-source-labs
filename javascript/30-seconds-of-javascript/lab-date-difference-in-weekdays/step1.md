@@ -18,7 +18,7 @@ const countWeekDaysBetween = (startDate, endDate) =>
       startDate = new Date(startDate.setDate(startDate.getDate() + 1));
       return count;
     },
-    0,
+    0
   );
 ```
 

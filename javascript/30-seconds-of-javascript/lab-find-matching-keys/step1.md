@@ -19,7 +19,7 @@ You can use this function like this:
 const ages = {
   Leo: 20,
   Zoey: 21,
-  Jane: 20,
+  Jane: 20
 };
 findKeys(ages, 20); // [ 'Leo', 'Jane' ]
 ```

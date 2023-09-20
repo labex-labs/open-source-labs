@@ -30,7 +30,7 @@ jobs:
           npm i -g prettier prettier-plugin-sh
           npx prettier --write "**/index.json"
       - name: Git commit
-        uses: stefanzweifel/git-auto-commit-action@v4.3.0
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Updated Contributors
           branch: ${{ github.head_ref }}

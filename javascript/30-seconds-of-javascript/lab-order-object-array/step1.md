@@ -14,7 +14,7 @@ const orderBy = (arr, props, orders = ["asc"]) =>
         acc = p1 > p2 ? 1 : p1 < p2 ? -1 : 0;
       }
       return acc;
-    }, 0),
+    }, 0)
   );
 ```
 
@@ -26,7 +26,7 @@ Here are some examples of how to use the `orderBy` function:
 const users = [
   { name: "fred", age: 48 },
   { name: "barney", age: 36 },
-  { name: "fred", age: 40 },
+  { name: "fred", age: 40 }
 ];
 
 // sort by name ascending and age descending

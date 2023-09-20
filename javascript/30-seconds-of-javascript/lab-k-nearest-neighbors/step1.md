@@ -15,7 +15,7 @@ const kNearestNeighbors = (data, labels, point, k = 3) => {
   const kNearest = data
     .map((el, i) => ({
       dist: Math.hypot(...Object.keys(el).map((key) => point[key] - el[key])),
-      label: labels[i],
+      label: labels[i]
     }))
     .sort((a, b) => a.dist - b.dist)
     .slice(0, k);
@@ -35,8 +35,8 @@ const kNearestNeighbors = (data, labels, point, k = 3) => {
     {
       classCounts: {},
       topClass: kNearest[0].label,
-      topClassCount: 0,
-    },
+      topClassCount: 0
+    }
   ).topClass;
 };
 ```
@@ -48,7 +48,7 @@ const data = [
   [0, 0],
   [0, 1],
   [1, 3],
-  [2, 0],
+  [2, 0]
 ];
 const labels = [0, 1, 1, 0];
 

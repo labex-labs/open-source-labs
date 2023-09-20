@@ -29,7 +29,7 @@ You can put more complex expressions inside the JSX curly braces too, for exampl
 const user = {
   name: "Hedy Lamarr",
   imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
-  imageSize: 90,
+  imageSize: 90
 };
 
 export default function Profile() {
@@ -42,7 +42,7 @@ export default function Profile() {
         alt={"Photo of " + user.name}
         style={{
           width: user.imageSize,
-          height: user.imageSize,
+          height: user.imageSize
         }}
       />
     </>

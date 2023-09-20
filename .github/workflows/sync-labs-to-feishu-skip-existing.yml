@@ -25,4 +25,4 @@ jobs:
           APP_ID: ${{ secrets.APP_ID }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
         run: |
-          labex sync labtofeishu --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --skip true
+          labex syc feishu lab --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --skip true

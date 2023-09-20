@@ -1,0 +1,122 @@
+{
+  "type": "lab",
+  "title": "Hello World",
+  "description": "This lab will guide you through the process of creating a simple shell script that prints the famous \"Hello, World!\" message. You will learn the basics of shell programming using the Bash shell.",
+  "difficulty": "Beginner",
+  "time": 30,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Shell Script File",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "~/project/hello.sh is not found.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/touch"]
+      },
+      {
+        "title": "Add the Shebang and Comment",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "hello.sh is not correct.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Add the Echo Command",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["linux/echo"]
+      },
+      {
+        "title": "Save and Close the File",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Make the Script Executable",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Execute the Script",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "You need to practice coding in LabEx VM.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ronreiter/interactive-tutorials"
+  }
+}

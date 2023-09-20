@@ -1,0 +1,66 @@
+{
+  "type": "lab",
+  "title": "Add a Stylesheet and an Image",
+  "description": "This tutorial begins where `**Create Some Automated Tests**` left off. We've built a tested web-poll application, and we'll now add a stylesheet and an image.",
+  "difficulty": "Beginner",
+  "time": 10,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Customize your _app's_ look and feel",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test style.css exists",
+            "file": "verify1.sh",
+            "hint": "Please add style.css to the project.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["django/applications"]
+      },
+      {
+        "title": "Adding a background-image",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test background.png exists",
+            "file": "verify2.sh",
+            "hint": "background.png needs to be in the project.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "background.png",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"]
+}

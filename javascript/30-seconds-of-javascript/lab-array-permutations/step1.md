@@ -20,10 +20,10 @@ const permutations = (arr) => {
       acc.concat(
         permutations([...arr.slice(0, i), ...arr.slice(i + 1)]).map((val) => [
           item,
-          ...val,
-        ]),
+          ...val
+        ])
       ),
-    [],
+    []
   );
 };
 ```

@@ -33,7 +33,7 @@ jobs:
           black ${{ steps.changed-files-specific-py.outputs.all_changed_files }}
         continue-on-error: true
       - name: Git commit
-        uses: stefanzweifel/git-auto-commit-action@v4.3.0
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Formatting documents
           branch: ${{ github.head_ref }}

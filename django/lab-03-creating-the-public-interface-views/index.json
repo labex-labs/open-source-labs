@@ -1,0 +1,137 @@
+{
+  "type": "lab",
+  "title": "Creating the Public Interface Views",
+  "description": "This tutorial begins where Set Up the Database left off. We're continuing the web-poll application and will focus on creating the public interface -- \"views.\"",
+  "difficulty": "Beginner",
+  "time": 35,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Overview",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "Please check the step 1 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Writing more views",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "Make sure django is running on 0.0.0.0:8080, and show the result like screenshot.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["django/django_urls"]
+      },
+      {
+        "title": "Write views that actually do something",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "Make sure django is running on 0.0.0.0:8080, and show the result like screenshot.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["django/templates", "django/request_and_response"]
+      },
+      {
+        "title": "Raising a 404 error",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 4",
+            "file": "verify4.sh",
+            "hint": "Please check the step 4 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": [
+          "django/django_exceptions",
+          "django/models",
+          "django/request_and_response",
+          "django/databases",
+          "django/schemaeditor"
+        ]
+      },
+      {
+        "title": "Use the template system",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 5",
+            "file": "verify5.sh",
+            "hint": "Please check the step 5 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Removing hardcoded URLs in templates",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 6",
+            "file": "verify6.sh",
+            "hint": "Please check the step 6 carefully.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["django/django_urls"]
+      },
+      {
+        "title": "Namespacing URL names",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 7",
+            "file": "verify7.sh",
+            "hint": "Make sure django is running on 0.0.0.0:8080, and show the result like screenshot.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["django/django_urls"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"]
+}

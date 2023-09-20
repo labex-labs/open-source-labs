@@ -1,0 +1,80 @@
+{
+  "type": "lab",
+  "title": "File Testing",
+  "description": "In this lab, you will learn how to perform various file tests in the shell. File tests are useful for checking the properties of files and directories in the file system. You will familiarize yourself with common file test commands and their usage.",
+  "difficulty": "Beginner",
+  "time": 15,
+  "hidden": false,
+  "fee_type": "free",
+  "details": {
+    "steps": [
+      {
+        "title": "Test if a file exists",
+        "text": "step1.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 1",
+            "file": "verify1.sh",
+            "hint": "~/project/file.sh does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Test if a directory exists",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 2",
+            "file": "verify2.sh",
+            "hint": "~/project/directory.sh does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["shell/file_test_operator"]
+      },
+      {
+        "title": "Test if a file is readable",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Test the completion of step 3",
+            "file": "verify3.sh",
+            "hint": "~/project/readable.sh does not exist.",
+            "timeout": 0,
+            "showstderr": false
+          }
+        ],
+        "skills": ["shell/file_test_operator", "shell/if_else"]
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["huhuhang"],
+  "license": {
+    "name": "Apache-2.0",
+    "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
+    "repo": "https://github.com/ronreiter/interactive-tutorials"
+  }
+}

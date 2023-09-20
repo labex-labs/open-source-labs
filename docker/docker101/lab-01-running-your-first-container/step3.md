@@ -6,7 +6,7 @@ The [Docker Hub](https://hub.docker.com/explore/) is the public central registry
 
 When searching for images you will find filters for "Docker Certified", "Verified Publisher" and "Official Images" images. Select the "Docker Certified" filter, to find images that are deemed enterprise-ready and are tested with Docker Enterprise Edition product. It is important to avoid using unverified content from the Docker Store when developing your own images that are intended to be deployed into the production environment. These unverified images may contain security vulnerabilities or possibly even malicious software.
 
-In Step 2 of this lab, we will start a couple of containers using some verified images from the Docker Hub: nginx web server, and mongo database.
+In step 2 of this lab, we will start a couple of containers using some verified images from the Docker Hub: nginx web server, and mongo database.
 
 ## Run an Nginx server
 

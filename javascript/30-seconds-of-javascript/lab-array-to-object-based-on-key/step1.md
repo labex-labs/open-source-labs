@@ -23,9 +23,9 @@ You can then use the function like this:
 indexOn(
   [
     { id: 10, name: "apple" },
-    { id: 20, name: "orange" },
+    { id: 20, name: "orange" }
   ],
-  "id",
+  "id"
 );
 // { '10': { name: 'apple' }, '20': { name: 'orange' } }
 ```

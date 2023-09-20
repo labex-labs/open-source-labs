@@ -31,7 +31,7 @@ const users = [
   { name: "frannie", language: "Javascript" },
   { name: "anna", language: "Java" },
   { name: "jimmy" },
-  { name: "nicky", language: "Python" },
+  { name: "nicky", language: "Python" }
 ];
 orderWith(users, "language", ["Javascript", "TypeScript", "Java"]);
 /*
