@@ -17,4 +17,4 @@ Traceback (most recent call last):
     raise FormatError('Unknown table format %s' % name)
 FormatError: Unknown table format xls
 >>>
-```
+```  
