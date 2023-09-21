@@ -24,3 +24,4 @@ This function is almost exactly the same as the first generator example in the p
 ```
 
 It might take awhile for output to appear, but eventually you should see some lines containing data for IBM.
+ 
