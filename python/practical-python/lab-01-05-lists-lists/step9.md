@@ -12,10 +12,4 @@ True
 >>>
 ```
 
-Here's a solution:
-```python
-AIG in symlist
-AA in symlist
-CAT not in symlist
-```
 
