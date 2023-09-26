@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "\n" ~/.python_history && grep -q "\t" ~/.python_history && echo "True"
+grep -q "r'" ~/.python_history  && echo "True"

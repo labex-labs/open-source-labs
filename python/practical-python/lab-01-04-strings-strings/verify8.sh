@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "str" ~/.python_history && echo "True"
+grep -q "str(" ~/.python_history && echo "True"

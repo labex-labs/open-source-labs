@@ -1,2 +1,2 @@
 #!/bin/zsh
-(grep -q "symbols[" ~/.python_history) && echo "True"
+(grep -q "symbols\[" ~/.python_history) && echo "True"

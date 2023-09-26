@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "s[" ~/.python_history && echo "True"
+grep -q "s\[" ~/.python_history && echo "True"
