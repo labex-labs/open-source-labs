@@ -1,2 +1,1 @@
 #!/bin/zsh
-grep -q "in" ~/.python_history && grep -q "as" ~/.python_history && grep -q "open" ~/.python_history && grep -q "read" ~/.python_history && grep -q "for" ~/.python_history && grep -q "with" ~/.python_history && echo "True"

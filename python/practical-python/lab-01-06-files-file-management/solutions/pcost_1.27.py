@@ -1,8 +1,8 @@
-# pcost.py
+# pcost_1.27.py
 
 total_cost = 0.0
 
-with open("portfolio.csv", "rt") as f:
+with open("/home/labex/project/portfolio.csv", "rt") as f:
     headers = next(f)
     for line in f:
         row = line.split(",")
