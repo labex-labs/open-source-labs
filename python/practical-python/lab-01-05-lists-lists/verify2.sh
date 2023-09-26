@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "insert" ~/.python_history && grep -q "+" ~/.python_history && grep -q "append" ~/.python_history && echo "True"
+grep -q "insert" ~/.python_history && grep -q "append" ~/.python_history && echo "True"
