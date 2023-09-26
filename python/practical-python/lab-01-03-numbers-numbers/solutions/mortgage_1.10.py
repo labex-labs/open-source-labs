@@ -9,7 +9,6 @@ extra_payment = 1000
 total_paid = 0.0
 months = 0
 
-print('Month\tTotal Paid\tRemaining Principal')
 
 while principal > 0:
     months += 1
@@ -20,7 +19,7 @@ while principal > 0:
         principal = principal * (1 + rate / 12) - payment
         total_paid += payment
 
-    print(f'{months}\t{total_paid:.2f}\t\t{principal:.2f}')
+    print(f'{months}\t{total_paid:.2f} \t{principal:.2f}')
 
 print('Total paid:', total_paid)
 print('Months:', months)
