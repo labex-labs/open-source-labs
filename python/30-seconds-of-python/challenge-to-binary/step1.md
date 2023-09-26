@@ -9,7 +9,7 @@ Write a function `to_binary(n)` that takes a decimal number as input and returns
 
 ## Example
 
-```py
+```python
 to_binary(100) # '0b1100100'
 to_binary(42) # '0b101010'
 to_binary(255) # '0b11111111'

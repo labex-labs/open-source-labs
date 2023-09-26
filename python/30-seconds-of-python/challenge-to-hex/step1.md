@@ -9,7 +9,7 @@ Write a function `to_hex(dec)` that takes a decimal number as an argument and re
 
 ## Example
 
-```py
+```python
 to_hex(41) # "0x29"
 to_hex(332) # "0x14c"
 ```

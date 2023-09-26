@@ -6,7 +6,7 @@ Write a function `cast_list(val)` that takes a value as an argument and returns 
 
 ## Example
 
-```py
+```python
 cast_list('foo') # ['foo']
 cast_list([1]) # [1]
 cast_list(('foo', 'bar')) # ['foo', 'bar']

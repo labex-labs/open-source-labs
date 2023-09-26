@@ -8,7 +8,7 @@ For example, if `s` is `"hello"` and `n` is `3`, the function should return `"he
 
 ## Example
 
-```py
+```python
 assert repeat_string("hello", 3) == "hellohellohello"
 assert repeat_string("abc", 5) == "abcabcabcabcabc"
 assert repeat_string("123", 2) == "123123"

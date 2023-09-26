@@ -12,7 +12,7 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 have_same_contents([1, 2, 4], [2, 4, 1]) # True
 have_same_contents([1, 2, 4], [2, 4, 5]) # False
 ```

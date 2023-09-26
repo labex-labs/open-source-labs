@@ -12,7 +12,7 @@ The function should clamp `num` within the inclusive range specified by the boun
 
 ## Example
 
-```py
+```python
 clamp_number(2, 3, 5) # 3
 clamp_number(1, -1, -5) # -1
 clamp_number(10, 1, 5) # 5

@@ -10,6 +10,6 @@ Write a Python function called `is_prime(n)` that takes an integer `n` as input 
 
 ## Example
 
-```py
+```python
 is_prime(11) # True
 ```

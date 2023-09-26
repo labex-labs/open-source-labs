@@ -13,7 +13,7 @@ Your function should have the following requirements:
 
 ## Example
 
-```py
+```python
 reverse([1, 2, 3]) # [3, 2, 1]
 reverse('snippet') # 'teppins'
 ```

@@ -10,7 +10,7 @@ Use a list comprehension to add elements to groups, based on the value returned 
 
 ## Example
 
-```py
+```python
 bifurcate_by(['beep', 'boop', 'foo', 'bar'], lambda x: x[0] == 'b')
 # [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```

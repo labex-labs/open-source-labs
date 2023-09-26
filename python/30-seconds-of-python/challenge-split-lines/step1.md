@@ -6,7 +6,7 @@ Write a function called `split_lines(s)` that takes a multiline string `s` as in
 
 ## Example
 
-```py
+```python
 split_lines('This\nis a\nmultiline\nstring.\n')
 # ['This', 'is a', 'multiline', 'string.' , '']
 ```

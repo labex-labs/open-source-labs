@@ -4,11 +4,11 @@ Write a function `rgb_to_hex(r, g, b)` that takes in three integers representing
 
 For example, if the input values are `255`, `165`, and `1`, the output should be the string `'FFA501'`.
 
-```py
+```python
 def rgb_to_hex(r, g, b):
   return ('{:02X}' * 3).format(r, g, b)
 ```
 
-```py
+```python
 rgb_to_hex(255, 165, 1) # 'FFA501'
 ```

@@ -9,11 +9,11 @@ Your function should have the following requirements:
 - The function should return the first element of the list
 - The function should not modify the original list
 
-```py
+```python
 def head(lst):
   return lst[0]
 ```
 
-```py
+```python
 head([1, 2, 3]) # 1
 ```

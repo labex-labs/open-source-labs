@@ -6,7 +6,7 @@ Write a function `for_each(itr, fn)` that takes a list `itr` and a function `fn`
 
 ## Example
 
-```py
+```python
 def print_square(num):
     print(num*num)
 

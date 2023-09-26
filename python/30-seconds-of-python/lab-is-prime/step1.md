@@ -6,7 +6,7 @@ Write a Python function called `is_prime(n)` that takes an integer `n` as input 
 - Use `all()` and `range()` to check numbers from `3` to the square root of the given number.
 - Return `True` if none divides the given number, `False` otherwise.
 
-```py
+```python
 from math import sqrt
 
 def is_prime(n):
@@ -15,6 +15,6 @@ def is_prime(n):
   return all(n % i for i in range(3, int(sqrt(n)) + 1, 2))
 ```
 
-```py
+```python
 is_prime(11) # True
 ```

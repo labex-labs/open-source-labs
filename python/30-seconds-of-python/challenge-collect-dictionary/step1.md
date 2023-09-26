@@ -14,7 +14,7 @@ Function signature: `def invert_dictionary(obj: dict) -> dict:`
 
 ## Example
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 10,

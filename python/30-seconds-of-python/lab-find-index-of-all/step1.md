@@ -11,11 +11,11 @@ Write a function `find_index_of_all(lst, fn)` that takes a list `lst` and a test
 
 - A list of integers representing the indexes of all elements in `lst` for which `fn` returns `True`.
 
-```py
+```python
 def find_index_of_all(lst, fn):
   return [i for i, x in enumerate(lst) if fn(x)]
 ```
 
-```py
+```python
 find_index_of_all([1, 2, 3, 4], lambda n: n % 2 == 1) # [0, 2]
 ```

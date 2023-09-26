@@ -6,7 +6,7 @@ Write a Python function called `to_kebab_case(s)` that takes a string `s` as its
 2. Match all words in the string, `str.lower()` to lowercase them.
 3. Combine all words using `-` as the separator.
 
-```py
+```python
 from re import sub
 
 def kebab(s):
@@ -16,7 +16,7 @@ def kebab(s):
     lambda mo: ' ' + mo.group(0).lower(), s)).split())
 ```
 
-```py
+```python
 kebab('camelCase') # 'camel-case'
 kebab('some text') # 'some-text'
 kebab('some-mixed_string With spaces_underscores-and-hyphens')

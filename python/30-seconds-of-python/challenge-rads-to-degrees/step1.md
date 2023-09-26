@@ -16,7 +16,7 @@ Your function should import the `pi` constant from the `math` module.
 
 Here is an example of how your function should work:
 
-```py
+```python
 from math import pi
 
 assert rads_to_degrees(pi / 2) == 90.0

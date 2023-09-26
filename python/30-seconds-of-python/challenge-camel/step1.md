@@ -6,7 +6,7 @@ You are given a string that may contain spaces, hyphens, or underscores. Your ta
 
 ## Example
 
-```py
+```python
 camel('some_database_field_name') # 'someDatabaseFieldName'
 camel('Some label that needs to be camelized')
 # 'someLabelThatNeedsToBeCamelized'

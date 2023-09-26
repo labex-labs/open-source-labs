@@ -6,7 +6,7 @@ To convert an integer to its Roman numeral representation, you can use a lookup 
 
 Your function should return the Roman numeral representation of the input integer.
 
-```py
+```python
 def to_roman_numeral(num):
   lookup = [
     (1000, 'M'),
@@ -30,7 +30,7 @@ def to_roman_numeral(num):
   return res
 ```
 
-```py
+```python
 to_roman_numeral(3) # 'III'
 to_roman_numeral(11) # 'XI'
 to_roman_numeral(1998) # 'MCMXCVIII'

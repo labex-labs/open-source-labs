@@ -8,12 +8,12 @@ Your function should:
 - Use `dictionary.items()` and `next()` to return the first key that has a value equal to `val`.
 - Return the key as output.
 
-```py
+```python
 def find_key(dict, val):
   return next(key for key, value in dict.items() if value == val)
 ```
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,

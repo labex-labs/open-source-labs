@@ -10,13 +10,13 @@ where `pi` is a constant value representing the ratio of the circumference of a 
 
 Your function should return the angle in radians rounded to 4 decimal places.
 
-```py
+```python
 from math import pi
 
 def degrees_to_rads(deg):
   return (deg * pi) / 180.0
 ```
 
-```py
+```python
 degrees_to_rads(180) # ~3.1416
 ```

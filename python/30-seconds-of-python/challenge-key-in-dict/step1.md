@@ -6,7 +6,7 @@ Write a function `key_in_dict(d, key)` that takes a dictionary `d` and a key `ke
 
 ## Example
 
-```py
+```python
 d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
 key_in_dict(d, 'three') # True
 key_in_dict(d, 'six') # False

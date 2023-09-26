@@ -6,7 +6,7 @@ Write a function `decapitalize(s, upper_rest = False)` that takes a string `s` a
 
 ## Example
 
-```py
+```python
 decapitalize('FooBar') # 'fooBar'
 decapitalize('FooBar', True) # 'fOOBAR'
 ```

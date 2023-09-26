@@ -14,7 +14,7 @@ Your function should accomplish this by following these steps:
 
 ## Example
 
-```py
+```python
 min_n([1, 2, 3]) # [1]
 min_n([1, 2, 3], 2) # [1, 2]
 ```

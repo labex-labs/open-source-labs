@@ -10,7 +10,7 @@ To solve this problem, you can follow these steps:
 4. Use a while loop to add the sum of the last two numbers of the `sequence` list to the end of the list, until the length of the list reaches `n`.
 5. Return the `sequence` list.
 
-```py
+```python
 def fibonacci(n):
   if n <= 0:
     return [0]
@@ -21,6 +21,6 @@ def fibonacci(n):
   return sequence
 ```
 
-```py
+```python
 fibonacci(7) # [0, 1, 1, 2, 3, 5, 8, 13]
 ```

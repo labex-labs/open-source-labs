@@ -10,7 +10,7 @@ To solve this problem, you can follow these steps:
 
 Your function should return the dictionary with the unique values and their frequencies.
 
-```py
+```python
 from collections import defaultdict
 
 def frequencies(lst):
@@ -20,6 +20,6 @@ def frequencies(lst):
   return dict(freq)
 ```
 
-```py
+```python
 frequencies(['a', 'b', 'a', 'c', 'a', 'a', 'b']) # { 'a': 4, 'b': 2, 'c': 1 }
 ```

@@ -7,7 +7,7 @@ To solve this problem, you can follow these steps:
 1. Use `str.isalnum()` to filter out non-alphanumeric characters and `str.lower()` to transform each character to lowercase.
 2. Use `collections.Counter` to count the resulting characters for each string and compare the results.
 
-```py
+```python
 from collections import Counter
 
 def is_anagram(s1, s2):
@@ -18,6 +18,6 @@ def is_anagram(s1, s2):
   )
 ```
 
-```py
+```python
 is_anagram('#anagram', 'Nag a ram!')  # True
 ```

@@ -7,14 +7,14 @@ Write a function `add_days(n, d)` that takes in two arguments:
 
 The function should return a `datetime` object representing the new date after adding or subtracting the specified number of days.
 
-```py
+```python
 from datetime import datetime, timedelta
 
 def add_days(n, d = datetime.today()):
   return d + timedelta(n)
 ```
 
-```py
+```python
 from datetime import date
 
 add_days(5, date(2020, 10, 25)) # date(2020, 10, 30)

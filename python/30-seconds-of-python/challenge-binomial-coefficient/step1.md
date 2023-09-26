@@ -6,7 +6,7 @@ Write a function called `binomial_coefficient(n, k)` that takes in two integers 
 
 ## Example
 
-```py
+```python
 binomial_coefficient(8, 2) # 28
 binomial_coefficient(5, 3) # 10
 binomial_coefficient(10, 5) # 252

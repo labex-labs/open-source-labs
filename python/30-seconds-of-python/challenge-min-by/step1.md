@@ -6,7 +6,7 @@ Write a function called `min_by(lst, fn)` that takes a list `lst` and a function
 
 ## Example
 
-```py
+```python
 min_by([{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }], lambda v : v['n']) # 2
 ```
 

@@ -6,6 +6,6 @@ Write a Python function called `miles_to_km` that takes a parameter `miles` (a f
 
 ## Example
 
-```py
+```python
 miles_to_km(5.03) # 8.09500032
 ```

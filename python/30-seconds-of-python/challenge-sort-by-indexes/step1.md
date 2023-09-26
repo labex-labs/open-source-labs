@@ -12,7 +12,7 @@ The function should return a new list sorted based on the indexes of the second 
 
 ## Example
 
-```py
+```python
 a = ['eggs', 'bread', 'oranges', 'jam', 'apples', 'milk']
 b = [3, 2, 6, 4, 1, 5]
 sort_by_indexes(a, b) # ['apples', 'bread', 'eggs', 'jam', 'milk', 'oranges']

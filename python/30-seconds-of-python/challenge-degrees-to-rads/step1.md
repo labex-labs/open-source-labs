@@ -14,7 +14,7 @@ Your function should return the angle in radians rounded to 4 decimal places.
 
 ## Example
 
-```py
+```python
 degrees_to_rads(180) # returns 3.1416
 degrees_to_rads(90) # returns 1.5708
 degrees_to_rads(45) # returns 0.7854

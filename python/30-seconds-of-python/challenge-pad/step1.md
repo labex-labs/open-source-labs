@@ -12,7 +12,7 @@ The function should return the padded string.
 
 ## Example
 
-```py
+```python
 pad('cat', 8) # '  cat   '
 pad('42', 6, '0') # '004200'
 pad('foobar', 3) # 'foobar'

@@ -4,11 +4,11 @@ Write a function `min_element_index(arr)` that takes a list of integers `arr` as
 
 To solve this problem, you can use the `min()` function to obtain the minimum value in the list and then use the `list.index()` method to return its index.
 
-```py
+```python
 def min_element_index(arr):
   return arr.index(min(arr))
 ```
 
-```py
+```python
 min_element_index([3, 5, 2, 6, 10, 7, 9]) # 2
 ```

@@ -4,12 +4,12 @@ Write a function `max_n(lst, n = 1)` that takes a list `lst` and an optional int
 
 Your task is to implement the `max_n()` function.
 
-```py
+```python
 def max_n(lst, n = 1):
   return sorted(lst, reverse = True)[:n]
 ```
 
-```py
+```python
 max_n([1, 2, 3]) # [3]
 max_n([1, 2, 3], 2) # [3, 2]
 ```

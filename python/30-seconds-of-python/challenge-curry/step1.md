@@ -6,7 +6,7 @@ Write a function `curry(fn, *args)` that curries a given function `fn`. The func
 
 ## Example
 
-```py
+```python
 add = lambda x, y: x + y
 add10 = curry(add, 10)
 add10(20) # 30

@@ -4,12 +4,12 @@ Write a function called `every(lst, fn = lambda x: x)` that takes a list `lst` a
 
 To solve this problem, you will need to use the `all()` function in combination with `map()` and the provided function `fn` to check if `fn` returns `True` for all elements in the list.
 
-```py
+```python
 def every(lst, fn = lambda x: x):
   return all(map(fn, lst))
 ```
 
-```py
+```python
 every([4, 2, 3], lambda x: x > 1) # True
 every([1, 2, 3]) # True
 ```

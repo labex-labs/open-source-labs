@@ -17,7 +17,7 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2]
 difference_by([{ 'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], lambda v : v['x'])
 # [ { x: 2 } ]

@@ -4,11 +4,11 @@ Write a function `key_of_max(d)` that takes a dictionary `d` as an argument and 
 
 To solve this problem, you can use the `max()` function with the `key` parameter set to `dict.get()`. This will return the key of the maximum value in the dictionary.
 
-```py
+```python
 def key_of_max(d):
   return max(d, key = d.get)
 ```
 
-```py
+```python
 key_of_max({'a':4, 'b':0, 'c':13}) # c
 ```

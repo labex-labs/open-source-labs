@@ -8,7 +8,7 @@ Write a Python function called `snake` that takes a string as its argument and r
 
 Your function should be able to handle strings with a mix of uppercase and lowercase letters, spaces, hyphens, and underscores.
 
-```py
+```python
 from re import sub
 
 def snake(s):
@@ -18,7 +18,7 @@ def snake(s):
     s.replace('-', ' '))).split()).lower()
 ```
 
-```py
+```python
 snake('camelCase') # 'camel_case'
 snake('some text') # 'some_text'
 snake('some-mixed_string With spaces_underscores-and-hyphens')

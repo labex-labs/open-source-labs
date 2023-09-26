@@ -6,11 +6,11 @@ Write a function `hamming_distance(a, b)` that takes two integers as arguments a
 2. Use `bin()` to convert the result to a binary string.
 3. Convert the string to a list and use `count()` of `str` class to count and return the number of `1`s in it.
 
-```py
+```python
 def hamming_distance(a, b):
   return bin(a ^ b).count('1')
 ```
 
-```py
+```python
 hamming_distance(2, 3) # 1
 ```

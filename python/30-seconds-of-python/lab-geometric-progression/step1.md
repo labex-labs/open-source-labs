@@ -12,7 +12,7 @@ If `step` equals `1`, the function should return an error.
 
 You should use `range()`, `math.log()`, and `math.floor()` and a list comprehension to create a list of the appropriate length, applying the step for each element.
 
-```py
+```python
 from math import floor, log
 
 def geometric_progression(end, start=1, step=2):
@@ -20,7 +20,7 @@ def geometric_progression(end, start=1, step=2):
           / log(step)) + 1)]
 ```
 
-```py
+```python
 geometric_progression(256) # [1, 2, 4, 8, 16, 32, 64, 128, 256]
 geometric_progression(256, 3) # [3, 6, 12, 24, 48, 96, 192]
 geometric_progression(256, 1, 4) # [1, 4, 16, 64, 256]

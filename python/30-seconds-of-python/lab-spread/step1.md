@@ -4,7 +4,7 @@ Write a function called `spread(arg)` that takes a list as an argument and retur
 
 To implement the function, you should loop over the elements of the original list and use the spread operator to add the elements to the new list. If an element is a list, you should use the `extend()` method to add its elements to the new list. If an element is not a list, you should use the `append()` method to add it to the new list.
 
-```py
+```python
 def spread(arg):
   ret = []
   for i in arg:
@@ -12,6 +12,6 @@ def spread(arg):
   return ret
 ```
 
-```py
+```python
 spread([1, 2, 3, [4, 5, 6], [7], 8, 9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```

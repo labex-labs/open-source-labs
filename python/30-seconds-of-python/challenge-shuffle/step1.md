@@ -17,7 +17,7 @@ You can assume that the input list will contain at least one item.
 
 ## Example
 
-```py
+```python
 foo = [1, 2, 3, 4, 5]
 shuffled_foo = shuffle(foo)
 print(shuffled_foo) # [3, 1, 4, 5, 2]

@@ -8,7 +8,7 @@ To solve this problem, you will need to use the `all()` function in combination 
 
 ## Example
 
-```py
+```python
 every([4, 2, 3], lambda x: x > 1) # True
 every([1, 2, 3]) # True
 every([0, 1, 2]) # False

@@ -8,7 +8,7 @@ To solve this problem, you can use slice notation to create a slice of the list 
 
 ## Example
 
-```py
+```python
 take_right([1, 2, 3], 2) # [2, 3]
 take_right([1, 2, 3]) # [3]
 ```

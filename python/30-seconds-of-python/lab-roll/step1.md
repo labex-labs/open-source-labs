@@ -4,12 +4,12 @@ Write a function `roll(lst, offset)` that takes in a list `lst` and an integer `
 
 Return the modified list.
 
-```py
+```python
 def roll(lst, offset):
   return lst[-offset:] + lst[:-offset]
 ```
 
-```py
+```python
 roll([1, 2, 3, 4, 5], 2) # [4, 5, 1, 2, 3]
 roll([1, 2, 3, 4, 5], -2) # [3, 4, 5, 1, 2]
 ```

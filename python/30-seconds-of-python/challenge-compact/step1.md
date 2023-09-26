@@ -8,6 +8,6 @@ To solve this problem, you can use the `filter()` function to filter out falsy v
 
 ## Example
 
-```py
+```python
 compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
 ```

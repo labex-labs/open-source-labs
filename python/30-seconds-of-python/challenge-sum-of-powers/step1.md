@@ -17,7 +17,7 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 sum_of_powers(10) # returns 385
 sum_of_powers(10, 3) # returns 3025
 sum_of_powers(10, 3, 5) # returns 2925

@@ -8,6 +8,6 @@ To solve this problem, you need to use the `date` class from the `datetime` modu
 
 ## Example
 
-```py
+```python
 days_ago(5) # date(2022, 11, 23)
 ```

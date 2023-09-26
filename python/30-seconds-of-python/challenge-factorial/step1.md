@@ -6,6 +6,6 @@ Write a function `factorial(num)` that takes a non-negative integer `num` as an 
 
 ## Example
 
-```py
+```python
 factorial(6) # 720
 ```

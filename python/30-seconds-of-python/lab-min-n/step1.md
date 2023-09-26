@@ -10,12 +10,12 @@ Your function should accomplish this by following these steps:
 2. Use slice notation to get the specified number of elements.
 3. Return the resulting list.
 
-```py
+```python
 def min_n(lst, n = 1):
   return sorted(lst, reverse = False)[:n]
 ```
 
-```py
+```python
 min_n([1, 2, 3]) # [1]
 min_n([1, 2, 3], 2) # [1, 2]
 ```

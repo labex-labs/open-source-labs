@@ -10,7 +10,7 @@ Write a function called `average` that takes in two or more numbers and returns 
 
 ## Example
 
-```py
+```python
 average(*[1, 2, 3]) # 2.0
 average(1, 2, 3) # 2.0
 ```

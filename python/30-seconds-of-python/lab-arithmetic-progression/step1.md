@@ -10,11 +10,11 @@ Write a function `arithmetic_progression(n, lim)` that takes in two positive int
 
 - A list of numbers in the arithmetic progression starting with `n` and up to `lim`.
 
-```py
+```python
 def arithmetic_progression(n, lim):
   return list(range(n, lim + 1, n))
 ```
 
-```py
+```python
 arithmetic_progression(5, 25) # [5, 10, 15, 20, 25]
 ```

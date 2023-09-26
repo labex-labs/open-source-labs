@@ -6,7 +6,7 @@ Write a function `to_iso_date(d)` that takes a `datetime.datetime` object as its
 
 ## Example
 
-```py
+```python
 from datetime import datetime
 
 to_iso_date(datetime(2020, 10, 25)) # "2020-10-25T00:00:00"

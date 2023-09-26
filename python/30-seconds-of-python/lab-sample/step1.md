@@ -4,13 +4,13 @@ Write a function `random_element(lst)` that takes a list as an argument and retu
 
 - Use `random.choice()` to get a random element from `lst`.
 
-```py
+```python
 from random import choice
 
 def sample(lst):
   return choice(lst)
 ```
 
-```py
+```python
 sample([3, 7, 9, 11]) # 9
 ```

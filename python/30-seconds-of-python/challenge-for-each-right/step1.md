@@ -6,7 +6,7 @@ Write a function `for_each_right(itr, fn)` that takes a list `itr` and a functio
 
 ## Example
 
-```py
+```python
 for_each_right([1, 2, 3], print) # 3 2 1
 ```
 

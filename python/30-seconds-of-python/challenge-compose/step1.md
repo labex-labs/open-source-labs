@@ -6,7 +6,7 @@ Write a function called `compose(*fns)` that accepts one or more functions as ar
 
 ## Example
 
-```py
+```python
 add5 = lambda x: x + 5
 multiply = lambda x, y: x * y
 multiply_and_add_5 = compose(add5, multiply)

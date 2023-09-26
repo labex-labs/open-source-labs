@@ -13,7 +13,7 @@ Your function should not modify the original list. Instead, it should create a n
 
 You can assume that the input list will contain at least one item.
 
-```py
+```python
 from copy import deepcopy
 from random import randint
 
@@ -27,7 +27,7 @@ def shuffle(lst):
   return temp_lst
 ```
 
-```py
+```python
 foo = [1, 2, 3]
 shuffle(foo) # [2, 3, 1], foo = [1, 2, 3]
 ```

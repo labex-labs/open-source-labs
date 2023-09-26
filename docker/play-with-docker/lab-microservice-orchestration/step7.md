@@ -57,7 +57,7 @@ cat api/main.py
 
 The file has many lines, but the important bits are as illustrated below:
 
-```py
+```python
 redis_conn = redis.from_url(os.getenv("REDIS_URL", "redis://localhost:6379"))
 # ...
     jsonlinks = redis.get(url)

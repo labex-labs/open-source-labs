@@ -6,13 +6,13 @@ Write a function `partial_sum(lst)` that takes a list of numbers as an argument 
 2. Use `list()` to convert the result into a list.
 3. Return the list of partial sums.
 
-```py
+```python
 from itertools import accumulate
 
 def cumsum(lst):
   return list(accumulate(lst))
 ```
 
-```py
+```python
 cumsum(range(0, 15, 3)) # [0, 3, 9, 18, 30]
 ```

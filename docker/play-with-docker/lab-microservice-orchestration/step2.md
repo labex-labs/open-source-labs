@@ -21,7 +21,7 @@ The `linkextractor.py` file is the interesting one here, so let's look at its co
 cat linkextractor.py
 ```
 
-```py
+```python
 #!/usr/bin/env python
 
 import sys
@@ -67,7 +67,7 @@ We can either change it by running `chmod a+x linkextractor.py` or run it as a P
 python3 linkextractor.py
 ```
 
-```py
+```python
 Traceback (most recent call last):
   File "linkextractor.py", line 5, in <module>
     from bs4 import BeautifulSoup

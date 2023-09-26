@@ -4,11 +4,11 @@ Write a function `similarity(a, b)` that takes two lists `a` and `b` as argument
 
 To solve this problem, we can use list comprehension to iterate over the elements of `a` and check if they exist in `b`. If an element exists in both lists, we add it to a new list.
 
-```py
+```python
 def similarity(a, b):
   return [item for item in a if item in b]
 ```
 
-```py
+```python
 similarity([1, 2, 3], [1, 2, 4]) # [1, 2]
 ```

@@ -6,7 +6,7 @@ Write a function `offset(lst, offset)` that takes a list `lst` and an integer `o
 
 ## Example
 
-```py
+```python
 offset([1, 2, 3, 4, 5], 2) # [3, 4, 5, 1, 2]
 offset([1, 2, 3, 4, 5], -2) # [4, 5, 1, 2, 3]
 ```

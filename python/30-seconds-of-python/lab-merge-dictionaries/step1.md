@@ -4,7 +4,7 @@ Write a function `merge_dictionaries(*dicts)` that takes in two or more dictiona
 
 Your function should create a new dictionary and loop over the input dictionaries, using `dictionary.update()` to add the key-value pairs from each one to the result.
 
-```py
+```python
 def merge_dictionaries(*dicts):
   res = dict()
   for d in dicts:
@@ -12,7 +12,7 @@ def merge_dictionaries(*dicts):
   return res
 ```
 
-```py
+```python
 ages_one = {
   'Peter': 10,
   'Isabel': 11,

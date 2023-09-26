@@ -15,7 +15,7 @@ Your function should have the following signature:
 def chunk_into_n(lst: list, n: int) -> list:
 ```
 
-```py
+```python
 from math import ceil
 
 def chunk_into_n(lst, n):
@@ -26,6 +26,6 @@ def chunk_into_n(lst, n):
   )
 ```
 
-```py
+```python
 chunk_into_n([1, 2, 3, 4, 5, 6, 7], 4) # [[1, 2], [3, 4], [5, 6], [7]]
 ```

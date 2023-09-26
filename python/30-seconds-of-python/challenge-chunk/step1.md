@@ -6,7 +6,7 @@ Write a function `chunk(lst, size)` that takes a list `lst` and a positive integ
 
 ## Example
 
-```py
+```python
 chunk([1, 2, 3, 4, 5], 2) # [[1, 2], [3, 4], [5]]
 chunk([1, 2, 3, 4, 5], 3) # [[1, 2, 3], [4, 5]]
 chunk([1, 2, 3, 4, 5], 1) # [[1], [2], [3], [4], [5]]

@@ -6,7 +6,7 @@ Write a function `is_even(num)` that takes in a number as an argument and return
 
 ## Example
 
-```py
+```python
 is_even(4) # True
 is_even(7) # False
 is_even(0) # True

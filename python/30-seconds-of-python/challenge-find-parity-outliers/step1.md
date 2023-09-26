@@ -12,7 +12,7 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 find_parity_outliers([1, 2, 3, 4, 6]) # [1, 3]
 ```
 

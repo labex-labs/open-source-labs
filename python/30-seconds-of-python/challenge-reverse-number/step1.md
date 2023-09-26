@@ -12,7 +12,7 @@ Write a function `reverse_number(n)` that takes a number as an argument and retu
 
 ## Example
 
-```py
+```python
 reverse_number(981) # 189
 reverse_number(-500) # -5
 reverse_number(73.6) # 6.37

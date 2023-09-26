@@ -8,14 +8,14 @@ Write a function `reverse_number(n)` that takes a number as an argument and retu
 - The function should not use any built-in functions that directly convert a number to a string (e.g. `str()`).
 - The function should not use any built-in functions that directly convert a string to a number (e.g. `int()` or `float()`).
 
-```py
+```python
 from math import copysign
 
 def reverse_number(n):
   return copysign(float(str(n)[::-1].replace('-', '')), n)
 ```
 
-```py
+```python
 reverse_number(981) # 189
 reverse_number(-500) # -5
 reverse_number(73.6) # 6.37

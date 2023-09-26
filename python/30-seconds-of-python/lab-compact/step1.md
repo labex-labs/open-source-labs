@@ -4,11 +4,11 @@ Write a function `compact(lst)` that takes a list as an argument and returns a n
 
 To solve this problem, you can use the `filter()` function to filter out falsy values from the list.
 
-```py
+```python
 def compact(lst):
   return list(filter(None, lst))
 ```
 
-```py
+```python
 compact([0, 1, False, 2, '', 3, 'a', 's', 34]) # [ 1, 2, 3, 'a', 's', 34 ]
 ```

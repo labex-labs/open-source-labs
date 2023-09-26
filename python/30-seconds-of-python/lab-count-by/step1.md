@@ -10,7 +10,7 @@ To solve this problem, you can follow these steps:
 
 The function should return the resulting dictionary.
 
-```py
+```python
 from collections import defaultdict
 
 def count_by(lst, fn = lambda x: x):
@@ -20,7 +20,7 @@ def count_by(lst, fn = lambda x: x):
   return dict(count)
 ```
 
-```py
+```python
 from math import floor
 
 count_by([6.1, 4.2, 6.3], floor) # {6: 2, 4: 1}

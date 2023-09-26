@@ -11,7 +11,7 @@ Write a function `slugify(s)` that takes a string `s` as an argument and returns
 
 ## Example
 
-```py
+```python
 slugify('Hello World!') # 'hello-world'
 slugify('  My Example 123  ') # 'my-example-123'
 slugify('This is a long sentence with spaces and punctuation!') # 'this-is-a-long-sentence-with-spaces-and-punctuation'

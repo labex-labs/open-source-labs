@@ -11,13 +11,13 @@ Write a function `intersection_by(a, b, fn)` that takes in two lists `a` and `b`
 
 - A list of elements that exist in both lists, after applying the provided function to each list element of both.
 
-```py
+```python
 def intersection_by(a, b, fn):
   _b = set(map(fn, b))
   return [item for item in a if fn(item) in _b]
 ```
 
-```py
+```python
 from math import floor
 
 intersection_by([2.1, 1.2], [2.3, 3.4], floor) # [2.1]

@@ -6,6 +6,6 @@ Write a function `capitalize_every_word(s)` that takes a string `s` as an argume
 
 ## Example
 
-```py
+```python
 capitalize_every_word('hello world!') # 'Hello World!'
 ```

@@ -14,6 +14,6 @@ Write a function `arithmetic_progression(n, lim)` that takes in two positive int
 
 ## Example
 
-```py
+```python
 arithmetic_progression(5, 25) # [5, 10, 15, 20, 25]
 ```

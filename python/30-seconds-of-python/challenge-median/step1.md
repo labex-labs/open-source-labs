@@ -12,7 +12,7 @@ Your function should not use any built-in Python libraries or functions that dir
 
 ## Example
 
-```py
+```python
 find_median([1, 2, 3]) # 2.0
 find_median([1, 2, 3, 4]) # 2.5
 ```

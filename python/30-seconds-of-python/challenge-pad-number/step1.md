@@ -8,7 +8,7 @@ To pad the number, you can use the `str.zfill()` method. This method takes in a 
 
 ## Example
 
-```py
+```python
 pad_number(1234, 6) # '001234'
 pad_number(7, 6) # '000007'
 pad_number(123456789, 9) # '123456789'

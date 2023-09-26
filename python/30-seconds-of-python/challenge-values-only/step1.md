@@ -8,7 +8,7 @@ To solve this problem, you can use the `dict.values()` method to return the valu
 
 ## Example
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,

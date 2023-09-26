@@ -6,7 +6,7 @@ Write a function called `last(lst)` that takes a list as an argument and returns
 
 ## Example
 
-```py
+```python
 last([1, 2, 3]) # 3
 last(['apple', 'banana', 'cherry']) # 'cherry'
 last([]) # None

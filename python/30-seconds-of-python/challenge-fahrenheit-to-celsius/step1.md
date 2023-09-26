@@ -6,6 +6,6 @@ Write a function `fahrenheit_to_celsius(degrees)` that takes a temperature in Fa
 
 ## Example
 
-```py
+```python
 fahrenheit_to_celsius(77) # 25.0
 ```

@@ -55,7 +55,7 @@ The `linkextractor.py` module remains unchanged in this step, so let's look into
 cat main.py
 ```
 
-```py
+```python
 #!/usr/bin/env python
 
 from flask import Flask

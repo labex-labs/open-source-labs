@@ -7,14 +7,14 @@ To solve this problem, you can follow these steps:
 1. Use the `datetime.datetime.weekday()` method to get the day of the week as an integer.
 2. Check if the day of the week is greater than `4`. If it is, return `True`, otherwise return `False`.
 
-```py
+```python
 from datetime import datetime
 
 def is_weekend(d = datetime.today()):
   return d.weekday() > 4
 ```
 
-```py
+```python
 from datetime import date
 
 is_weekend(date(2020, 10, 25)) # True

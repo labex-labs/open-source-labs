@@ -6,7 +6,7 @@ Write a function `drop(a, n=1)` that takes a list `a` and an optional integer `n
 
 ## Example
 
-```py
+```python
 drop([1, 2, 3]) # [2, 3]
 drop([1, 2, 3], 2) # [3]
 drop([1, 2, 3], 42) # []

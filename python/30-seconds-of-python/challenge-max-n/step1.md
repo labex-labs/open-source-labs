@@ -8,7 +8,7 @@ Your task is to implement the `max_n()` function.
 
 ## Example
 
-```py
+```python
 max_n([1, 2, 3]) # [3]
 max_n([1, 2, 3], 2) # [3, 2]
 max_n([1, 2, 3, 4, 5], 3) # [5, 4, 3]

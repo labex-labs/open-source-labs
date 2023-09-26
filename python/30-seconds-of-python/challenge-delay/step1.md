@@ -8,7 +8,7 @@ To delay the execution of `fn`, use the `time.sleep()` function. This function t
 
 ## Example
 
-```py
+```python
 def add(x, y):
   return x + y
 

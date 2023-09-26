@@ -8,12 +8,12 @@ To solve this problem, you can follow these steps:
 2. Compare the length of the set with the length of the original list.
 3. If the lengths are equal, then the list has no duplicates, otherwise it has duplicates.
 
-```py
+```python
 def all_unique(lst):
   return len(lst) == len(set(lst))
 ```
 
-```py
+```python
 x = [1, 2, 3, 4, 5, 6]
 y = [1, 2, 2, 3, 4, 5]
 all_unique(x) # True

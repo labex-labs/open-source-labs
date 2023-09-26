@@ -6,6 +6,6 @@ Write a Python function called `km_to_miles` that takes a parameter `km` (a floa
 
 ## Example
 
-```py
+```python
 km_to_miles(8.1) # 5.0331051
 ```

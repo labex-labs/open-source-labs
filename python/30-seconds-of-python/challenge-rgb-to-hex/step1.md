@@ -8,6 +8,6 @@ For example, if the input values are `255`, `165`, and `1`, the output should be
 
 ## Example
 
-```py
+```python
 rgb_to_hex(255, 165, 1) # 'FFA501'
 ```

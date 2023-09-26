@@ -8,6 +8,6 @@ To implement the function, you should loop over the elements of the original lis
 
 ## Example
 
-```py
+```python
 spread([1, 2, 3, [4, 5, 6], [7], 8, 9]) # [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```

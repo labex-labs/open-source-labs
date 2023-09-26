@@ -28,7 +28,7 @@ Let's have a look at the updated script:
 cat linkextractor.py
 ```
 
-```py
+```python
 #!/usr/bin/env python
 
 import sys

@@ -6,7 +6,7 @@ Write a function called `find(lst, fn)` that takes a list `lst` and a testing fu
 
 ## Example
 
-```py
+```python
 find([1, 2, 3, 4], lambda n: n % 2 == 1) # 1
 find(['apple', 'banana', 'cherry'], lambda s: s.startswith('b')) # 'banana'
 find([2, 4, 6, 8], lambda n: n % 2 == 1) # None

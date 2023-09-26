@@ -8,14 +8,14 @@ To solve this problem, you can follow these steps:
 2. Use `int()` to convert the result to an integer and `range()` to iterate over each day.
 3. Use a list comprehension and `datetime.timedelta` to create a list of `datetime.date` objects.
 
-```py
+```python
 from datetime import timedelta, date
 
 def daterange(start, end):
   return [start + timedelta(n) for n in range(int((end - start).days))]
 ```
 
-```py
+```python
 from datetime import date
 
 daterange(date(2020, 10, 1), date(2020, 10, 5))

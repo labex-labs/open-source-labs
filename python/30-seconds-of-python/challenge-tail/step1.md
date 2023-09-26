@@ -6,7 +6,7 @@ Write a function `tail(lst)` that takes a list as an argument and returns all el
 
 ## Example
 
-```py
+```python
 tail([1, 2, 3]) # [2, 3]
 tail([1]) # [1]
 ```

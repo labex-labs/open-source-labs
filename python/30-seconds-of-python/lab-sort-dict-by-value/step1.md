@@ -11,12 +11,12 @@ To solve this problem, you can follow these steps:
 
 **⚠️ NOTICE:** Dictionary values must be of the same type.
 
-```py
+```python
 def sort_dict_by_value(d, reverse = False):
   return dict(sorted(d.items(), key = lambda x: x[1], reverse = reverse))
 ```
 
-```py
+```python
 d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
 sort_dict_by_value(d) # {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}
 sort_dict_by_value(d, True)

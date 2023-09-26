@@ -10,7 +10,7 @@ Write a function `partial_sum(lst)` that takes a list of numbers as an argument 
 
 ## Example
 
-```py
+```python
 partial_sum([1, 2, 3, 4, 5]) # [1, 3, 6, 10, 15]
 partial_sum([2, 4, 6, 8, 10]) # [2, 6, 12, 20, 30]
 partial_sum([5, 10, 15, 20, 25]) # [5, 15, 30, 50, 75]

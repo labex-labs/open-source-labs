@@ -5,12 +5,12 @@ Write a function `to_hex(dec)` that takes a decimal number as an argument and re
 1. Use `hex()` to convert the decimal number to its hexadecimal equivalent.
 2. Return the hexadecimal representation.
 
-```py
+```python
 def to_hex(dec):
   return hex(dec)
 ```
 
-```py
+```python
 to_hex(41) # 0x29
 to_hex(332) # 0x14c
 ```

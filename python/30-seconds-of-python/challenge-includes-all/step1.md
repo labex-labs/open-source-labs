@@ -13,7 +13,7 @@ To solve this problem, you should:
 
 ## Example
 
-```py
+```python
 includes_all([1, 2, 3, 4], [1, 4]) # True
 includes_all([1, 2, 3, 4], [1, 5]) # False
 ```

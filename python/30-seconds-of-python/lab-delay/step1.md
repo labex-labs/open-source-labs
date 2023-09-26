@@ -4,7 +4,7 @@ Write a function `delay(fn, ms, *args)` that takes a function `fn`, a time in mi
 
 To delay the execution of `fn`, use the `time.sleep()` function. This function takes a number of seconds as an argument, so you will need to convert `ms` to seconds before passing it to `time.sleep()`.
 
-```py
+```python
 from time import sleep
 
 def delay(fn, ms, *args):
@@ -12,6 +12,6 @@ def delay(fn, ms, *args):
   return fn(*args)
 ```
 
-```py
+```python
 delay(lambda x: print(x), 1000, 'later') # prints 'later' after one second
 ```

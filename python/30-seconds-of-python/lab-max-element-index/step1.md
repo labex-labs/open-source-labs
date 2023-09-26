@@ -8,11 +8,11 @@ To solve this problem, you can follow these steps:
 2. Use the built-in `list.index()` function to find the index of the first occurrence of the maximum value in the list.
 3. Return the index.
 
-```py
+```python
 def max_element_index(arr):
   return arr.index(max(arr))
 ```
 
-```py
+```python
 max_element_index([5, 8, 9, 7, 10, 3, 0]) # 4
 ```

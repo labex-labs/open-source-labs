@@ -2,7 +2,7 @@
 
 You are given a string that may contain spaces, hyphens, or underscores. Your task is to convert the string to camelcase by removing the spaces, hyphens, or underscores and capitalizing the first letter of each word except the first one. The first letter of the resulting string should be in lowercase.
 
-```py
+```python
 from re import sub
 
 def camel(s):
@@ -10,7 +10,7 @@ def camel(s):
   return ''.join([s[0].lower(), s[1:]])
 ```
 
-```py
+```python
 camel('some_database_field_name') # 'someDatabaseFieldName'
 camel('Some label that needs to be camelized')
 # 'someLabelThatNeedsToBeCamelized'

@@ -10,7 +10,7 @@ Write a Python function called `to_kebab_case(s)` that takes a string `s` as its
 
 ## Example
 
-```py
+```python
 to_kebab_case('camelCase') # 'camel-case'
 to_kebab_case('some text') # 'some-text'
 to_kebab_case('some-mixed_string With spaces_underscores-and-hyphens')

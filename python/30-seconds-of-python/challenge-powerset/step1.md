@@ -10,6 +10,6 @@ Write a Python function called `powerset(iterable)` that takes an iterable as an
 
 ## Example
 
-```py
+```python
 powerset([1, 2]) # [(), (1,), (2,), (1, 2)]
 ```

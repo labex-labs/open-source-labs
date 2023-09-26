@@ -8,7 +8,7 @@ To solve this problem, we can use list comprehension to iterate over the element
 
 ## Example
 
-```py
+```python
 similarity([1, 2, 3], [1, 2, 4]) # [1, 2]
 ```
 

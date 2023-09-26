@@ -6,7 +6,7 @@ To implement this function, you can use a list comprehension and the `zip()` fun
 
 You can use this function to iterate over both `lst` and `filter` simultaneously and add the elements to the appropriate list based on whether they pass the filter or not.
 
-```py
+```python
 def bifurcate(lst, filter):
   return [
     [x for x, flag in zip(lst, filter) if flag],
@@ -14,7 +14,7 @@ def bifurcate(lst, filter):
   ]
 ```
 
-```py
+```python
 bifurcate(['beep', 'boop', 'foo', 'bar'], [True, True, False, True])
 # [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```

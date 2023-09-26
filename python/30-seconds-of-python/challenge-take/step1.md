@@ -6,7 +6,7 @@ Write a function `take(itr, n=1)` that takes a list `itr` and an integer `n` as 
 
 ## Example
 
-```py
+```python
 take([1, 2, 3], 1) # [2, 3]
 take([1, 2, 3], 2) # [3]
 take([1, 2, 3], 3) # []

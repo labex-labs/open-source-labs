@@ -6,6 +6,6 @@ Write a function called `gcd(numbers)` that takes a list of integers as an argum
 
 ## Example
 
-```py
+```python
 gcd([8, 36, 28]) # 4
 ```

@@ -8,7 +8,7 @@ To solve this problem, you can follow these steps:
 2. Use `collections.Counter.most_common()` to get the most common parity.
 3. Use a list comprehension to find all elements that do not match the most common parity.
 
-```py
+```python
 from collections import Counter
 
 def find_parity_outliers(nums):
@@ -18,6 +18,6 @@ def find_parity_outliers(nums):
   ]
 ```
 
-```py
+```python
 find_parity_outliers([1, 2, 3, 4, 6]) # [1, 3]
 ```

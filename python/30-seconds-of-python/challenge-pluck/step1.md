@@ -11,7 +11,7 @@ You need to:
 
 ## Example
 
-```py
+```python
 simpsons = [
   { 'name': 'lisa', 'age': 8 },
   { 'name': 'homer', 'age': 36 },

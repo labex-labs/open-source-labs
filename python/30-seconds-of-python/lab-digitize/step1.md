@@ -8,11 +8,11 @@ Write a function `digitize(n)` that takes a non-negative integer `n` as input an
 
 For example, if the input number is `123`, the function should return the list `[1, 2, 3]`.
 
-```py
+```python
 def digitize(n):
   return list(map(int, str(n)))
 ```
 
-```py
+```python
 digitize(123) # [1, 2, 3]
 ```

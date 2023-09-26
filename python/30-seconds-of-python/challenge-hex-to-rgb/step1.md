@@ -9,6 +9,6 @@ Write a function `hex_to_rgb(hex_code)` that takes a hexadecimal color code as a
 
 ## Example
 
-```py
+```python
 hex_to_rgb('FFA501') # (255, 165, 1)
 ```

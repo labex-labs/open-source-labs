@@ -12,6 +12,6 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 symmetric_difference([1, 2, 3], [1, 2, 4]) # [3, 4]
 ```

@@ -6,7 +6,7 @@ Write a function `days_diff(start, end)` that takes two date objects as input an
 
 ## Example
 
-```py
+```python
 from datetime import date
 
 assert days_diff(date(2020, 10, 25), date(2020, 10, 28)) == 3

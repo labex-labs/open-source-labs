@@ -8,7 +8,7 @@ To solve this problem, you can use the `min()` function to obtain the minimum va
 
 ## Example
 
-```py
+```python
 min_element_index([3, 5, 2, 6, 10, 7, 9]) # 2
 ```
 

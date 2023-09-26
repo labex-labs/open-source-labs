@@ -6,7 +6,7 @@ Write a Python function called `initial(lst)` that takes a list as an argument a
 
 ## Example
 
-```py
+```python
 initial([1, 2, 3]) # [1, 2]
 initial(['apple', 'banana', 'orange', 'grape']) # ['apple', 'banana', 'orange']
 ```

@@ -13,6 +13,6 @@ Your function should have the following requirements:
 
 ## Example
 
-```py
+```python
 head([1, 2, 3]) # 1
 ```

@@ -8,7 +8,7 @@ Write a Python function called `find_median` that takes a list of numbers as an 
 
 Your function should not use any built-in Python libraries or functions that directly solve the problem.
 
-```py
+```python
 def median(list):
   list.sort()
   list_length = len(list)
@@ -17,7 +17,7 @@ def median(list):
   return float(list[int(list_length / 2)])
 ```
 
-```py
+```python
 median([1, 2, 3]) # 2.0
 median([1, 2, 3, 4]) # 2.5
 ```

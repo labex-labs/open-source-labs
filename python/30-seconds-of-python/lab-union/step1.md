@@ -8,11 +8,11 @@ Write a Python function called `list_union(a, b)` that takes two lists as input 
 
 Your function should not modify the input lists `a` and `b`.
 
-```py
+```python
 def union(a, b):
   return list(set(a + b))
 ```
 
-```py
+```python
 union([1, 2, 3], [4, 3, 2]) # [1, 2, 3, 4]
 ```

@@ -110,7 +110,7 @@ def was_published_recently(self):
 
 and run the test again:
 
-```pytb
+```bash
 Creating test database for alias 'default'...
 System check identified no issues (0 silenced).
 .

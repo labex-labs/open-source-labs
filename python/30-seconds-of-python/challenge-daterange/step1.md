@@ -12,7 +12,7 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 from datetime import date
 
 daterange(date(2020, 10, 1), date(2020, 10, 5))

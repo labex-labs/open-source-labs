@@ -13,12 +13,12 @@ Your function should be able to handle the following types of sequences and coll
 - Strings
 - Ranges
 
-```py
+```python
 def is_empty(val):
   return not val
 ```
 
-```py
+```python
 is_empty([]) # True
 is_empty({}) # True
 is_empty('') # True

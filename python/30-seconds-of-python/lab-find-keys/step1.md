@@ -4,12 +4,12 @@ Write a Python function called `find_keys(dictionary, value)` that takes in a di
 
 To solve this problem, you can use the `dictionary.items()` method, which returns a generator that yields key-value pairs of the dictionary. You can then use a list comprehension to filter out the keys that have the given value.
 
-```py
+```python
 def find_keys(dict, val):
   return list(key for key, value in dict.items() if value == val)
 ```
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,

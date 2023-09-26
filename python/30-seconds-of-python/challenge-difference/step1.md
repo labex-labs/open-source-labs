@@ -10,6 +10,6 @@ Write a Python function called `list_difference(a, b)` that takes two lists as a
 
 ## Example
 
-```py
+```python
 list_difference([1, 2, 3], [1, 2, 4]) # [3]
 ```

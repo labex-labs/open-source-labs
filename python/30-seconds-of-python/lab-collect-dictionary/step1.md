@@ -10,7 +10,7 @@ To solve this problem, you can follow these steps:
 
 Function signature: `def invert_dictionary(obj: dict) -> dict:`
 
-```py
+```python
 from collections import defaultdict
 
 def collect_dictionary(obj):
@@ -20,7 +20,7 @@ def collect_dictionary(obj):
   return dict(inv_obj)
 ```
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 10,

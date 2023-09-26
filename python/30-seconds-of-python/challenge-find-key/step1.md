@@ -12,7 +12,7 @@ Your function should:
 
 ## Example
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,

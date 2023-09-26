@@ -18,7 +18,7 @@ def unfold(fn, seed):
 
 - A list that is produced by the generator, using the iterator function.
 
-```py
+```python
 def unfold(fn, seed):
   def fn_generator(val):
     while True:
@@ -28,7 +28,7 @@ def unfold(fn, seed):
   return [i for i in fn_generator([None, seed])]
 ```
 
-```py
+```python
 f = lambda n: False if n > 50 else [-n, n + 10]
 unfold(f, 10) # [-10, -20, -30, -40, -50]
 ```

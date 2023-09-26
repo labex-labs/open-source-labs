@@ -13,13 +13,13 @@ To solve this problem, you can follow these steps:
 1. Create a `set`, using `map()` to apply `fn` to each element in `b`.
 2. Use a list comprehension in combination with `fn` on `a` to only keep values not contained in the previously created set, `_b`.
 
-```py
+```python
 def difference_by(a, b, fn):
   _b = set(map(fn, b))
   return [item for item in a if fn(item) not in _b]
 ```
 
-```py
+```python
 from math import floor
 
 difference_by([2.1, 1.2], [2.3, 3.4], floor) # [1.2]

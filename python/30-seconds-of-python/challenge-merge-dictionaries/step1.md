@@ -8,7 +8,7 @@ Your function should create a new dictionary and loop over the input dictionarie
 
 ## Example
 
-```py
+```python
 ages_one = {
   'Peter': 10,
   'Isabel': 11,

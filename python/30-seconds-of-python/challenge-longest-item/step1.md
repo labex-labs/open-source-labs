@@ -9,7 +9,7 @@ Write a function `longest_item(*args)` that takes any number of iterable objects
 
 ## Example
 
-```py
+```python
 longest_item('this', 'is', 'a', 'testcase') # 'testcase'
 longest_item([1, 2, 3], [1, 2], [1, 2, 3, 4, 5]) # [1, 2, 3, 4, 5]
 longest_item([1, 2, 3], 'foobar') # 'foobar'

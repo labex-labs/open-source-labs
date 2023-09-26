@@ -11,11 +11,11 @@ Your function should have the following signature:
 def unique_elements(li: List) -> List:
 ```
 
-```py
+```python
 def unique_elements(li):
   return list(set(li))
 ```
 
-```py
+```python
 unique_elements([1, 2, 2, 3, 4, 3]) # [1, 2, 3, 4]
 ```

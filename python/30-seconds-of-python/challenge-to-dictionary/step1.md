@@ -6,7 +6,7 @@ Write a function `to_dictionary(keys, values)` that takes two lists as input and
 
 ## Example
 
-```py
+```python
 to_dictionary(['a', 'b'], [1, 2]) # { 'a': 1, 'b': 2 }
 to_dictionary(['a', 'b', 'c'], [1, 2]) # None
 ```

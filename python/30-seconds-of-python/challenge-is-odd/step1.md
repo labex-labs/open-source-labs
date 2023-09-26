@@ -11,7 +11,7 @@ Write a function called `is_odd` that takes a single integer as an argument and 
 
 Here is an example of how your function should behave:
 
-```py
+```python
 >>> is_odd(3)
 True
 >>> is_odd(4)

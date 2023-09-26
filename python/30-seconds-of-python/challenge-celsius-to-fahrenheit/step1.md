@@ -6,6 +6,6 @@ Write a function `celsius_to_fahrenheit` that takes a temperature in Celsius as 
 
 ## Example
 
-```py
+```python
 celsius_to_fahrenheit(180) # 356.0
 ```

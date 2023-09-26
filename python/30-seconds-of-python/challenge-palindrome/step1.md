@@ -12,7 +12,7 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 palindrome('taco cat') # True
 palindrome('A man, a plan, a canal: Panama') # True
 palindrome('hello world') # False

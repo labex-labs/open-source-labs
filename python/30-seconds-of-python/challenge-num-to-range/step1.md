@@ -6,7 +6,7 @@ Write a function called `num_to_range` that takes five arguments: `num`, `inMin`
 
 ## Example
 
-```py
+```python
 num_to_range(5, 0, 10, 0, 100) # 50.0
 ```
 

@@ -10,7 +10,7 @@ Your function should return the Roman numeral representation of the input intege
 
 ## Example
 
-```py
+```python
 to_roman_numeral(3) # 'III'
 to_roman_numeral(11) # 'XI'
 to_roman_numeral(1998) # 'MCMXCVIII'

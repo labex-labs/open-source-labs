@@ -10,14 +10,14 @@ where `pi` is a constant value representing the ratio of the circumference of a 
 
 Your function should import the `pi` constant from the `math` module.
 
-```py
+```python
 from math import pi
 
 def rads_to_degrees(rad):
   return (rad * 180.0) / pi
 ```
 
-```py
+```python
 from math import pi
 
 rads_to_degrees(pi / 2) # 90.0

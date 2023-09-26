@@ -14,7 +14,7 @@ The function should return the resulting dictionary.
 
 ## Example
 
-```py
+```python
 count_by([6.1, 4.2, 6.3], floor) # {6: 2, 4: 1}
 count_by(['one', 'two', 'three'], len) # {3: 2, 5: 1}
 ```

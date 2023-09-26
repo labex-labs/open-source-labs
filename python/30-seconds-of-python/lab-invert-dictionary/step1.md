@@ -4,12 +4,12 @@ Write a Python function called `invert_dictionary(obj)` that takes a dictionary 
 
 You should use `dictionary.items()` in combination with a list comprehension to create the new dictionary.
 
-```py
+```python
 def invert_dictionary(obj):
   return { value: key for key, value in obj.items() }
 ```
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,

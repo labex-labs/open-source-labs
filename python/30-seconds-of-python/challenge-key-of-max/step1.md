@@ -8,6 +8,6 @@ To solve this problem, you can use the `max()` function with the `key` parameter
 
 ## Example
 
-```py
+```python
 key_of_max({'a':4, 'b':0, 'c':13}) # 'c'
 ```

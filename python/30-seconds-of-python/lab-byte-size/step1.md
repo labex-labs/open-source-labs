@@ -9,12 +9,12 @@ To calculate the byte size of a string, you can follow these steps:
 
 Your function should return the length of the encoded string.
 
-```py
+```python
 def byte_size(s):
   return len(s.encode('utf-8'))
 ```
 
-```py
+```python
 byte_size('😀') # 4
 byte_size('Hello World') # 11
 ```

@@ -9,7 +9,7 @@ Write a function called `months_diff(start, end)` that takes in two date objects
 
 ## Example
 
-```py
+```python
 from datetime import date
 
 months_diff(date(2020, 10, 28), date(2020, 11, 25)) # 1

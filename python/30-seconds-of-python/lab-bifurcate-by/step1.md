@@ -6,7 +6,7 @@ Your function should return a list of two lists, where the first list contains a
 
 Use a list comprehension to add elements to groups, based on the value returned by `fn` for each element.
 
-```py
+```python
 def bifurcate_by(lst, fn):
   return [
     [x for x in lst if fn(x)],
@@ -14,7 +14,7 @@ def bifurcate_by(lst, fn):
   ]
 ```
 
-```py
+```python
 bifurcate_by(['beep', 'boop', 'foo', 'bar'], lambda x: x[0] == 'b')
 # [ ['beep', 'boop', 'bar'], ['foo'] ]
 ```

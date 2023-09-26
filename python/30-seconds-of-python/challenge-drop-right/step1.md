@@ -6,7 +6,7 @@ Write a function `drop_right(a, n = 1)` that takes a list `a` and an optional in
 
 ## Example
 
-```py
+```python
 drop_right([1, 2, 3]) # [1, 2]
 drop_right([1, 2, 3], 2) # [1]
 drop_right([1, 2, 3], 42) # []

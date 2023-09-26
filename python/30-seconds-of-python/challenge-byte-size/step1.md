@@ -13,7 +13,7 @@ Your function should return the length of the encoded string.
 
 ## Example
 
-```py
+```python
 byte_size('😀') # 4
 byte_size('Hello World') # 11
 ```

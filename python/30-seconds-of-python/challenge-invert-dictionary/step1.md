@@ -8,7 +8,7 @@ You should use `dictionary.items()` in combination with a list comprehension to 
 
 ## Example
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,

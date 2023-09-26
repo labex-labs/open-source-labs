@@ -6,6 +6,6 @@ Write a function `count_occurrences(lst, val)` that takes a list `lst` and a val
 
 ## Example
 
-```py
+```python
 count_occurrences([1, 1, 2, 1, 2, 3], 1) # 3
 ```

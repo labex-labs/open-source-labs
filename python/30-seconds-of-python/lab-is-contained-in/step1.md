@@ -9,7 +9,7 @@ To solve this problem, you can use the following approach:
 3. If any value appears more times in list `a` than in list `b`, return `False`.
 4. If all values in list `a` appear in list `b` at least as many times as they appear in list `a`, return `True`.
 
-```py
+```python
 def is_contained_in(a, b):
   for v in set(a):
     if a.count(v) > b.count(v):
@@ -17,6 +17,6 @@ def is_contained_in(a, b):
   return True
 ```
 
-```py
+```python
 is_contained_in([1, 4], [2, 4, 1]) # True
 ```

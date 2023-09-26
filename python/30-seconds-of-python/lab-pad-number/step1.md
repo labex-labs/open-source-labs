@@ -4,11 +4,11 @@ Write a function `pad_number(n, l)` that takes in a number `n` and a length `l` 
 
 To pad the number, you can use the `str.zfill()` method. This method takes in a length and pads the string with leading zeros until it is that length. For example, `"7".zfill(6)` would return `"000007"`.
 
-```py
+```python
 def pad_number(n, l):
   return str(n).zfill(l)
 ```
 
-```py
+```python
 pad_number(1234, 6); # '001234'
 ```

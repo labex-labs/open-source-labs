@@ -12,7 +12,7 @@ The function should return `True` if the given number `n` falls within the speci
 
 ## Example
 
-```py
+```python
 in_range(3, 2, 5) # True
 in_range(3, 4) # True
 in_range(2, 3, 5) # False

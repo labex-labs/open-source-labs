@@ -10,7 +10,7 @@ Write a function `hamming_distance(a, b)` that takes two integers as arguments a
 
 ## Example
 
-```py
+```python
 hamming_distance(2, 3) # 1
 hamming_distance(10, 4) # 2
 hamming_distance(0, 255) # 8

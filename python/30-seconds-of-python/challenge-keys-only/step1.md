@@ -11,7 +11,7 @@ To solve this problem, you can follow these steps:
 
 ## Example
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,

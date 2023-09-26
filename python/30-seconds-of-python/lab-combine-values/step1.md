@@ -16,7 +16,7 @@ def combine_values(*dicts):
     pass
 ```
 
-```py
+```python
 from collections import defaultdict
 
 def combine_values(*dicts):
@@ -27,7 +27,7 @@ def combine_values(*dicts):
   return dict(res)
 ```
 
-```py
+```python
 d1 = {'a': 1, 'b': 'foo', 'c': 400}
 d2 = {'a': 3, 'b': 200, 'd': 400}
 

@@ -8,6 +8,6 @@ Write a function `random_element(lst)` that takes a list as an argument and retu
 
 ## Example
 
-```py
+```python
 random_element([3, 7, 9, 11]) # 9
 ```

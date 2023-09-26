@@ -7,7 +7,7 @@ Write a function `slugify(s)` that takes a string `s` as an argument and returns
 3. Replace all whitespace, hyphens, and underscores with a single hyphen.
 4. Remove any leading or trailing hyphens.
 
-```py
+```python
 import re
 
 def slugify(s):
@@ -18,6 +18,6 @@ def slugify(s):
   return s
 ```
 
-```py
+```python
 slugify('Hello World!') # 'hello-world'
 ```

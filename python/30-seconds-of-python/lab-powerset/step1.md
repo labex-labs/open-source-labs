@@ -6,7 +6,7 @@ Write a Python function called `powerset(iterable)` that takes an iterable as an
 2. Use `range()` and `itertools.combinations()` to create a generator that returns all subsets.
 3. Use `itertools.chain.from_iterable()` and `list()` to consume the generator and return a list.
 
-```py
+```python
 from itertools import chain, combinations
 
 def powerset(iterable):
@@ -14,6 +14,6 @@ def powerset(iterable):
   return list(chain.from_iterable(combinations(s, r) for r in range(len(s)+1)))
 ```
 
-```py
+```python
 powerset([1, 2]) # [(), (1,), (2,), (1, 2)]
 ```

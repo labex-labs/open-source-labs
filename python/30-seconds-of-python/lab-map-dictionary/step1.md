@@ -13,11 +13,11 @@ To solve this problem, follow these steps:
 2. Use `zip()` to pair original values to the values produced by `fn`.
 3. Use `dict()` to return an appropriate dictionary.
 
-```py
+```python
 def map_dictionary(itr, fn):
   return dict(zip(itr, map(fn, itr)))
 ```
 
-```py
+```python
 map_dictionary([1, 2, 3], lambda x: x * x) # { 1: 1, 2: 4, 3: 9 }
 ```

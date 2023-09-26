@@ -11,7 +11,7 @@ The function should return a list of length `n` filled with the specified value.
 
 ## Example
 
-```py
+```python
 initialize_list_with_values(5, 2) # [2, 2, 2, 2, 2]
 initialize_list_with_values(3) # [0, 0, 0]
 ```

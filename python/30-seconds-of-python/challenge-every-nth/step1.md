@@ -6,7 +6,7 @@ Write a function `every_nth(lst, nth)` that takes a list `lst` and an integer `n
 
 ## Example
 
-```py
+```python
 every_nth([1, 2, 3, 4, 5, 6], 2) # [ 2, 4, 6 ]
 ```
 

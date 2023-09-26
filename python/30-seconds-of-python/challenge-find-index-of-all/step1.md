@@ -15,7 +15,7 @@ Write a function `find_index_of_all(lst, fn)` that takes a list `lst` and a test
 
 ## Example
 
-```py
+```python
 find_index_of_all([1, 2, 3, 4], lambda n: n % 2 == 1) # [0, 2]
 find_index_of_all([1, 2, 3, 4], lambda n: n > 2) # [2, 3]
 find_index_of_all([1, 2, 3, 4], lambda n: n < 0) # []

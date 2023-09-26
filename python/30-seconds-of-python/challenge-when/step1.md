@@ -6,7 +6,7 @@ Write a function called `when` that takes two arguments: a predicate function `p
 
 ## Example
 
-```py
+```python
 def double(x):
     return x * 2
 

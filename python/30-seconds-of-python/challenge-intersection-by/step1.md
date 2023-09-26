@@ -15,7 +15,7 @@ Write a function `intersection_by(a, b, fn)` that takes in two lists `a` and `b`
 
 ## Example
 
-```py
+```python
 intersection_by([2.1, 1.2], [2.3, 3.4], floor) # [2.1]
 ```
 

@@ -8,6 +8,6 @@ To solve this problem, you can use a list comprehension to extract each value fr
 
 ## Example
 
-```py
+```python
 flatten([[1, 2, 3, 4], [5, 6, 7, 8]]) # [1, 2, 3, 4, 5, 6, 7, 8]
 ```

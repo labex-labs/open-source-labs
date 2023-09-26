@@ -7,11 +7,11 @@ Write a function `initialize_list_with_values(n, val=0)` that takes in two param
 
 The function should return a list of length `n` filled with the specified value.
 
-```py
+```python
 def initialize_list_with_values(n, val = 0):
   return [val for x in range(n)]
 ```
 
-```py
+```python
 initialize_list_with_values(5, 2) # [2, 2, 2, 2, 2]
 ```

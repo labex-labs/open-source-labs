@@ -8,7 +8,7 @@ To solve this problem, you can use the `functools.reduce()` function to apply th
 
 ## Example
 
-```py
+```python
 lcm([12, 7]) # 84
 lcm([1, 3, 4, 5]) # 60
 ```

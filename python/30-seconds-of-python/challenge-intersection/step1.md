@@ -6,7 +6,7 @@ Write a function `list_intersection(a, b)` that takes two lists `a` and `b` as i
 
 ## Example
 
-```py
+```python
 list_intersection([1, 2, 3], [4, 3, 2]) # [2, 3]
 list_intersection([1, 2, 3], [4, 5, 6]) # []
 list_intersection([1, 2, 3], [3, 3, 2]) # [2, 3]

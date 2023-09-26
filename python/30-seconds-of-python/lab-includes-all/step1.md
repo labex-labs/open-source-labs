@@ -9,7 +9,7 @@ To solve this problem, you should:
 3. If the value is not included, return `False`.
 4. If all the values are included, return `True`.
 
-```py
+```python
 def includes_all(lst, values):
   for v in values:
     if v not in lst:
@@ -17,7 +17,7 @@ def includes_all(lst, values):
   return True
 ```
 
-```py
+```python
 includes_all([1, 2, 3, 4], [1, 4]) # True
 includes_all([1, 2, 3, 4], [1, 5]) # False
 ```

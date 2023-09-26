@@ -4,12 +4,12 @@ Write a function `take_right(lst, n=1)` that takes a list `lst` and an optional 
 
 To solve this problem, you can use slice notation to create a slice of the list with `n` elements taken from the end.
 
-```py
+```python
 def take_right(itr, n = 1):
   return itr[-n:]
 ```
 
-```py
+```python
 take_right([1, 2, 3], 2) # [2, 3]
 take_right([1, 2, 3]) # [3]
 ```

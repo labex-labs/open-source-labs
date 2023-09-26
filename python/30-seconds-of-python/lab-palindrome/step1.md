@@ -8,7 +8,7 @@ To solve this problem, you can follow these steps:
 2. Use `re.sub()` to remove all non-alphanumeric characters from the string.
 3. Compare the resulting string with its reverse using slice notation.
 
-```py
+```python
 from re import sub
 
 def palindrome(s):
@@ -16,6 +16,6 @@ def palindrome(s):
   return s == s[::-1]
 ```
 
-```py
+```python
 palindrome('taco cat') # True
 ```

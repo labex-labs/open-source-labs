@@ -6,7 +6,7 @@ Write a function `dict_to_list(d)` that takes a dictionary `d` as an argument an
 
 ## Example
 
-```py
+```python
 d = {'one': 1, 'three': 3, 'five': 5, 'two': 2, 'four': 4}
 dict_to_list(d)
 # [('one', 1), ('three', 3), ('five', 5), ('two', 2), ('four', 4)]

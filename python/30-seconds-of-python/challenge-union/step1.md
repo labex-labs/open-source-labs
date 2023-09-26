@@ -12,7 +12,7 @@ Your function should not modify the input lists `a` and `b`.
 
 ## Example
 
-```py
+```python
 list_union([1, 2, 3], [4, 3, 2]) # [1, 2, 3, 4]
 list_union(['apple', 'banana', 'orange'], ['pear', 'banana', 'kiwi']) # ['apple', 'banana', 'orange', 'pear', 'kiwi']
 ```

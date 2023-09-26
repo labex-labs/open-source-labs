@@ -8,7 +8,7 @@ To solve this problem, you can follow these steps:
 2. Iterate over them with a `for` loop comparing the `count()` of each unique value in each list.
 3. Return `False` if the counts do not match for any element, `True` otherwise.
 
-```py
+```python
 def have_same_contents(a, b):
   for v in set(a + b):
     if a.count(v) != b.count(v):
@@ -16,6 +16,6 @@ def have_same_contents(a, b):
   return True
 ```
 
-```py
+```python
 have_same_contents([1, 2, 4], [2, 4, 1]) # True
 ```

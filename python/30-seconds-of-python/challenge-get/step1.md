@@ -8,7 +8,7 @@ To implement this function, use `functools.reduce()` to iterate over the `select
 
 ## Example
 
-```py
+```python
 users = {
   'freddy': {
     'name': {

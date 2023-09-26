@@ -4,12 +4,12 @@ You are given a flat dictionary, and you need to create a function that returns 
 
 To solve this problem, you can use the `dict.values()` method to return the values in the given dictionary. Then, you can convert the result to a list using the `list()` function.
 
-```py
+```python
 def values_only(flat_dict):
   return list(flat_dict.values())
 ```
 
-```py
+```python
 ages = {
   'Peter': 10,
   'Isabel': 11,
