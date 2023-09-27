@@ -19,8 +19,8 @@ That's fine for learning and testing, but in a real program you probably wouldn'
 Instead, you might pass the name of the file in as an argument to a script. Try changing the bottom part of the program as follows:
 
 ```python
-# pcost.py
-import sys
+# pcost_1.33.py
+
 import csv
 
 
@@ -45,6 +45,8 @@ def portfolio_cost(filename):
                 print("Skipping invalid row:", row)
 
     return total_cost
+
+import sys
 
 
 if len(sys.argv) == 2:
