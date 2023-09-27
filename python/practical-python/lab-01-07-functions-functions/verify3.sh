@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "int" ~/.python_history && echo "True"
+grep -q "N/A" ~/.python_history && echo "True"
