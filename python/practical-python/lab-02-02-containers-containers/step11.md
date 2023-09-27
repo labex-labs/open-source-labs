@@ -66,27 +66,3 @@ Once you have written your `read_prices()` function, test it interactively to ma
 >>>
 ```
 
-Here's a solution:
-
-```python
-import csv
-
-def read_prices(filename):
-    prices = {}
-
-    with open(filename, 'rt') as f:
-        rows = csv.reader(f)
-        for row in rows:
-            if row:
-                stock_name = row[0]
-                stock_price = float(row[1])
-                prices[stock_name] = stock_price
-
-    return prices
-
-prices = read_prices('/home/labex/project/prices.csv')
-
-print(prices)
-print(prices['IBM'])
-print(prices['MSFT'])
-```
