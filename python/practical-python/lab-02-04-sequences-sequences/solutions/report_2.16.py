@@ -14,12 +14,12 @@ def read_portfolio(filename):
 
         for row in rows:
             record = dict(zip(headers, row))
-            stock = {
+            holding = {
                 "name": record["name"],
                 "shares": int(record["shares"]),
                 "price": float(record["price"]),
             }
-            portfolio.append(stock)
+            portfolio.append(holding)
 
     return portfolio
 
