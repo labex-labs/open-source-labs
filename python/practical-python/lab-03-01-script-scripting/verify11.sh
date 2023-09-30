@@ -1,2 +1,2 @@
 #!/bin/zsh
-(python3 ~/project/report.py > debug && grep "print_report" report.py) && echo "True"
+(python3 ~/project/report.py > debug && cat ~/project/report.py | grep -q "def print_report") && echo "True"

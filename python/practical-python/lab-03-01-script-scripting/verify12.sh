@@ -1,2 +1,2 @@
 #!/bin/zsh
-(python3 ~/project/report.py > debug && grep "portfolio_report" report.py) && echo "True"
+grep -q "\-^" ~/.python_history && python3 ~/project/report.py > debug && cat ~/project/report.py | grep -q "portfolio_report" && echo "True"
