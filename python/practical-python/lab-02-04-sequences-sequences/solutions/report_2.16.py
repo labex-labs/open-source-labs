@@ -1,4 +1,3 @@
-# report.py
 import csv
 
 
@@ -23,49 +22,35 @@ def read_portfolio(filename):
 
     return portfolio
 
-
 def read_prices(filename):
-    """
-    Read a CSV file of price data into a dict mapping names to prices.
-    """
     prices = {}
-    with open(filename) as f:
-        rows = csv.reader(f)
-        for row in rows:
-            try:
-                prices[row[0]] = float(row[1])
-            except IndexError:
-                pass
+    try:
+        with open(filename, 'r') as file:
+            reader = csv.reader(file)
+            for row in reader:
+                if row:  # Skip empty lines
+                    stock_name = row[0]
+                    stock_price = float(row[1])
+                    prices[stock_name] = stock_price
+    except IndexError:
+        pass
 
     return prices
 
+def make_report(portfolio, prices):
+    report = []
 
-def make_report_data(portfolio, prices):
-    """
-    Make a list of (name, shares, price, change) tuples given a portfolio list
-    and prices dictionary.
-    """
-    rows = []
     for stock in portfolio:
-        current_price = prices[stock["name"]]
-        change = current_price - stock["price"]
-        summary = (stock["name"], stock["shares"], current_price, change)
-        rows.append(summary)
-    return rows
+        stock_name = stock['name']
+        shares = stock['shares']
+        price = prices.get(stock_name)
+        if price is not None:
+            change = price - stock['price']
+            row = (stock_name, shares, price, change)
+            report.append(row)
+
+    return report
 
 
-# Read data files and create the report data
-
-portfolio = read_portfolio("portfolio.csv")
-prices = read_prices("prices.csv")
-
-# Generate the report data
-
-report = make_report_data(portfolio, prices)
-
-# Output the report
-headers = ("Name", "Shares", "Price", "Change")
-print("%10s %10s %10s %10s" % headers)
-print(("-" * 10 + " ") * len(headers))
-for row in report:
-    print("%10s %10d %10.2f %10.2f" % row)
+portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+print(portfolio)
