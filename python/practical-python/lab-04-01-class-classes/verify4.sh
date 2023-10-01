@@ -1,3 +1,3 @@
 #!/bin/zsh
-grep -q "self." ~/.python_history && echo "True"
+grep -q "a.x" ~/.python_history && echo "True"
 

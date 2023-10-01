@@ -1,3 +1,3 @@
 #!/bin/zsh
-grep -q "import stock" ~/.python_history && echo "True"
+python3 /tmp/test7.py && grep -q "for" ~/.python_history && echo "True"
 

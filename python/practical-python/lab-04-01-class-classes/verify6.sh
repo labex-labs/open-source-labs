@@ -1,3 +1,3 @@
 #!/bin/zsh
-grep -q "self.move" ~/.python_history && echo "True"
+grep -q "left" ~/.python_history && echo "True"
 
