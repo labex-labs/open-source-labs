@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "import" ~/.python_history && echo "True"
+(cat /home/labex/project/report.py |grep -q "TableFormatter()")&&(cat /home/labex/project/tableformat.py |grep -q "TableFormatter") && echo "True"

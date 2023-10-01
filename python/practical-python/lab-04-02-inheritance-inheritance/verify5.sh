@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "cost" ~/.python_history && echo "True"
+grep -q "s.cost" ~/.python_history && echo "True"
