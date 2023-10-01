@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "#!" ~/.python_history && echo "True"
+(cat ~/project/prog.py | grep -q "#\!") && echo "True" 

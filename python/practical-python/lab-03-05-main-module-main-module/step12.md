@@ -4,7 +4,7 @@ Finally, here is a common code template for Python programs that run as command-
 
 ```python
 #!/usr/bin/env python3
-# prog.py
+#./prog.py
 
 # Import statements (libraries)
 import modules
