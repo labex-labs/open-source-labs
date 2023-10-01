@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "import gzip" ~/.python_history && echo "True"
+python3 ~/project/fileparse.py &&(! cat ~/project/fileparse.py|grep -q "open") && echo "True"
