@@ -48,7 +48,6 @@ def make_report_data(portfolio, prices):
         rows.append(summary)
     return rows
 
-
 def print_report_txt(report):
     """
     Print the report in text format.
@@ -62,10 +61,11 @@ def print_report_csv(report):
     """
     Print the report in CSV format.
     """
+    print("{},{},{},{}".format("Name", "Shares", "Price", "Change"))  # Add column headings
     for item in report:
         print("{},{},{},{}".format(item[0], item[1], item[2], item[3]))
 
-def portfolio_report(portfoliofile, pricefile, fmt = 'txt'):
+def portfolio_report(portfoliofile, pricefile, fmt='txt'):
     '''
     Make a stock report given portfolio and price data files.
     '''
@@ -91,6 +91,6 @@ if __name__ == '__main__':
 
     portfoliofile = sys.argv[1]
     pricefile = sys.argv[2]
-    format = sys.argv[3]
+    output_format = sys.argv[3]
 
-    portfolio_report(portfoliofile, pricefile, format)
+    portfolio_report(portfoliofile, pricefile, output_format)
