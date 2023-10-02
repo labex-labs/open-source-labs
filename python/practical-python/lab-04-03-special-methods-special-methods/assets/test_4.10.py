@@ -7,7 +7,7 @@ from tableformat import create_formatter, print_table
 
 def test_print_table():
     
-    portfolio = report.read_portfolio('portfolio.csv') 
+    portfolio = report.read_portfolio('/home/labex/project/portfolio.csv') 
     formatter = create_formatter('txt')
     expected_output_1 = "price"
 

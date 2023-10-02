@@ -17,7 +17,7 @@ A method that has not yet been invoked by the function call operator `()` is kno
 Bound methods are often a source of careless non-obvious errors. For example:
 
 ```python
->>> s = Stock('GOOG', 100, 490.10)
+>>> s = stock.Stock('GOOG', 100, 490.10)
 >>> print('Cost : %0.2f' % s.cost)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
