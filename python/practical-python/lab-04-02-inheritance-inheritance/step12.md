@@ -12,13 +12,13 @@ class TableFormatter:
         '''
         Emit the table headings.
         '''
-    raise NotImplementedError()
+        raise NotImplementedError()
 
     def row(self, rowdata):
         '''
         Emit a single row of table data.
         '''
-    raise NotImplementedError()
+        raise NotImplementedError()
 ```
 
 This class does nothing, but it serves as a kind of design specification for additional classes that will be defined shortly. A class like this is sometimes called an "abstract base class."
