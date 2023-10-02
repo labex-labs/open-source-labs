@@ -10,10 +10,6 @@ class Stock:
         self.name = name
         self.shares = shares
         self.price = price
-
-    def __repr__(self):
-        
-
     
     def cost(self):
         """
