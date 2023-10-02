@@ -5,6 +5,7 @@ User defined objects also use dictionaries for both instance data and classes. I
 A dictionary holds the instance data, `__dict__`.
 
 ```python
+>>> from stock import Stock
 >>> s = Stock('GOOG', 100, 490.1)
 >>> s.__dict__
 {'name' : 'GOOG', 'shares' : 100, 'price': 490.1 }
