@@ -62,19 +62,25 @@ class HTMLTableFormatter(TableFormatter):
         print("</tr>")
 
 
-class FormatError(Exception):
-    pass
-
-
 def create_formatter(name):
-    """
-    Create an appropriate formatter given an output format name
-    """
-    if name == "txt":
+    '''
+    Create a formatter object based on the given name.
+    '''
+    if name == 'txt':
         return TextTableFormatter()
-    elif name == "csv":
+    elif name == 'csv':
         return CSVTableFormatter()
-    elif name == "html":
+    elif name == 'html':
         return HTMLTableFormatter()
     else:
-        raise FormatError(f"Unknown table format {name}")
+        raise ValueError(f'Unknown format {name}')
+
+
+def print_table(objects, columns, formatter):
+    """
+    Make a nicely formatted table from a list of objects and attribute names.
+    """
+    formatter.headings(columns)
+    for obj in objects:
+        rowdata = [str(getattr(obj, name)) for name in columns]
+        formatter.row(rowdata)
