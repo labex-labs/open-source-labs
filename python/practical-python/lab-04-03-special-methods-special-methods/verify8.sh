@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "getattr" ~/.python_history && echo "True"
+python3 /tmp/test_4.9.py

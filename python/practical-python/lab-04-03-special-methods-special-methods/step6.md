@@ -3,7 +3,7 @@
 A method that has not yet been invoked by the function call operator `()` is known as a _bound method_. It operates on the instance where it originated.
 
 ```python
->>> s = Stock('GOOG', 100, 490.10)
+>>> s = stock.Stock('GOOG', 100, 490.10)
 >>> s
 <Stock object at 0x590d0>
 >>> c = s.cost

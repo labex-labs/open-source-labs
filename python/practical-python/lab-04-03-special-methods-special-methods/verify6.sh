@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "print" ~/.python_history && echo "True"
+grep -q "open" ~/.python_history && echo "True"
