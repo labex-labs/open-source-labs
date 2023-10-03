@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "portfolio" ~/.python_history && echo "True"
+grep -q "s\.name" ~/.python_history && echo "True"

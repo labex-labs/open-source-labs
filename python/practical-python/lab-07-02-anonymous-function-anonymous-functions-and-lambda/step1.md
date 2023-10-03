@@ -31,6 +31,16 @@ By what criteria?
 You can guide the sorting by using a _key function_. The _key function_ is a function that receives the dictionary and returns the value of interest for sorting.
 
 ```python
+portfolio = [
+    {'name': 'AA', 'price': 32.2, 'shares': 100},
+    {'name': 'IBM', 'price': 91.1, 'shares': 50},
+    {'name': 'CAT', 'price': 83.44, 'shares': 150},
+    {'name': 'MSFT', 'price': 51.23, 'shares': 200},
+    {'name': 'GE', 'price': 40.37, 'shares': 95},
+    {'name': 'MSFT', 'price': 65.1, 'shares': 50},
+    {'name': 'IBM', 'price': 70.44, 'shares': 100}
+]
+
 def stock_name(s):
     return s['name']
 
