@@ -16,12 +16,12 @@ This function is almost exactly the same as the first generator example in the p
 ```python
 >>> from follow import follow
 >>> lines = follow('stocklog.csv')
->>> ibm = filematch(lines, 'IBM')
->>> for line in ibm:
+>>> goog = filematch(lines, 'GOOG')
+>>> for line in goog:
         print(line)
 
 ... wait for output ...
 ```
 
-It might take awhile for output to appear, but eventually you should see some lines containing data for IBM.
+It might take awhile for output to appear, but eventually you should see some lines containing data for GOOG.
  

@@ -34,10 +34,11 @@ Write a new function that selects specific columns:
 
 Run your program again. You should see output narrowed down like this:
 
-    ['BA', '98.35', '0.16']
-    ['AA', '39.63', '-0.03']
-    ['XOM', '82.45','-0.23']
-    ['PG', '62.95', '-0.12']
+    ['GOOG', '1503.06', '2.81']
+    ['AAPL', '253.31', '2.81']
+    ['GOOG', '1503.07', '2.82']
+    ['AAPL', '253.32', '2.82']
+    ['GOOG', '1503.08', '2.83']
     ...
 
 Write generator functions that convert data types and build dictionaries. For example:
@@ -65,8 +66,10 @@ def parse_stock_data(lines):
 
 Run your program again. You should now a stream of dictionaries like this:
 
-    { 'name':'BA', 'price':98.35, 'change':0.16 }
-    { 'name':'AA', 'price':39.63, 'change':-0.03 }
-    { 'name':'XOM', 'price':82.45, 'change': -0.23 }
-    { 'name':'PG', 'price':62.95, 'change':-0.12 }
+    {'name': 'GOOG', 'price': 1503.4, 'change': 3.15}
+    {'name': 'AAPL', 'price': 253.65, 'change': 3.15}
+    {'name': 'GOOG', 'price': 1503.41, 'change': 3.16}
+    {'name': 'AAPL', 'price': 253.66, 'change': 3.16}
+    {'name': 'GOOG', 'price': 1503.42, 'change': 3.17}
+    {'name': 'AAPL', 'price': 253.67, 'change': 3.17}
     ...

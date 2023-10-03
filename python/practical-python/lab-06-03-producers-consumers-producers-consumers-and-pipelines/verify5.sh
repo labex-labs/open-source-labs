@@ -1,2 +1,2 @@
 #!/bin/zsh
-python3 /home/labex/project/ticket.py > debug && grep -q "change" && echo "true"
+cat /home/labex/project/ticket.py | grep -q "make_dicts" && echo "true"
