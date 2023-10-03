@@ -1,6 +1,6 @@
 # Exercise 6.12: Putting it all together
 
-In the `ticker.py` program, write a function `ticker(portfile, logfile, fmt)` that creates a real-time stock ticker from a given portfolio, logfile, and table format. For example::
+In the `ticker.py` program, write a function `ticker(portfile, logfile, fmt)` that creates a real-time stock ticker from a given portfolio, logfile, and table format. For example:
 
 ```python
 >>> from ticker import ticker
