@@ -1,4 +1,7 @@
 # test_stock.py
+import sys
+
+sys.path.append('/home/labex/project')
 
 import unittest
 import stock

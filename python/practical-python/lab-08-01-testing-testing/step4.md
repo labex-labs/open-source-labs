@@ -1,9 +1,9 @@
 # `unittest` Module
 
-Suppose you have some code.
+Suppose you have some code in `/home/labex/project/test_simple.py`
 
 ```python
-# simple.py
+# test_simple.py
 
 def add(x, y):
     return x + y
