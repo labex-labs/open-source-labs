@@ -23,3 +23,4 @@ def spam(x):
 Decimal('3.4')
 >>>
 ```
+   
