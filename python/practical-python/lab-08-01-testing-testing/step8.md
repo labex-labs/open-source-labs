@@ -13,7 +13,7 @@ def test_str():
     assert simple.add('hello','world') == 'helloworld'
 ```
 
-To run the tests, you simply type a command such as `python -m pytest`. It will discover all of the tests and run them.
+To run a test, just type a command like `python -m pytest`. It will then find and run all the tests. The module can be installed using `pip install pytest`.
 
 There's a lot more to `pytest` than this example, but it's usually pretty easy to get started should you decide to try it out.
 
