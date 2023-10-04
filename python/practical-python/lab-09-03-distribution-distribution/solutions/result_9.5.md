@@ -1,0 +1,17 @@
+ ```python
+ porty-app/
+        portfolio.csv
+        prices.csv
+        README.txt
+        porty/
+            __init__.py
+            fileparse.py
+            follow.py
+            pcost.py
+            portfolio.py
+            report.py
+            stock.py
+            tableformat.py
+            ticker.py
+            typedproperty.py
+```
