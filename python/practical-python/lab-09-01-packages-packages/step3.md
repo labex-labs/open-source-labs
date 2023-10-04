@@ -6,7 +6,7 @@ This means that there are now multilevel imports.
 
 ```python
 import porty.report
-port = porty.report.read_portfolio('port.csv')
+port = porty.report.read_portfolio('portfolio.csv')
 ```
 
 There are other variations of import statements.

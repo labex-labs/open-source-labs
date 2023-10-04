@@ -23,8 +23,8 @@ Create a new directory called `porty-app`. Move the `porty` directory you create
 To run your code, you need to make sure you are working in the top-level `porty-app/` directory. For example, from the terminal:
 
 ```python
-shell % cd porty-app
-shell % python3
+$ cd porty-app
+$ python3
 >>> import porty.report
 >>>
 ```
@@ -32,8 +32,8 @@ shell % python3
 Try running some of your prior scripts as a main program:
 
 ```python
-shell % cd porty-app
-shell % python3 -m porty.report portfolio.csv prices.csv txt
+$ cd porty-app
+$ python3 -m porty.report portfolio.csv prices.csv txt
       Name     Shares      Price     Change
 ---------- ---------- ---------- ----------
         AA        100       9.22     -22.98
@@ -44,5 +44,5 @@ shell % python3 -m porty.report portfolio.csv prices.csv txt
       MSFT         50      20.89     -44.21
        IBM        100     106.28      35.84
 
-shell %
+$
 ```
