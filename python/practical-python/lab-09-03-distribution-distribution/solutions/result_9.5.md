@@ -14,4 +14,6 @@
             tableformat.py
             ticker.py
             typedproperty.py
+ setup.py
+ MANIFEST.in
 ```
