@@ -1,2 +1,2 @@
 #!/bin/zsh
-grep -q "re" ~/.python_history && echo "True"
+grep -q "import re" ~/.python_history && echo "True"
