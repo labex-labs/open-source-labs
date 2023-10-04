@@ -16,8 +16,8 @@ This function is almost exactly the same as the first generator example in the p
 ```python
 >>> from follow import follow
 >>> lines = follow('stocklog.csv')
->>> ibm = filematch(lines, 'IBM')
->>> for line in ibm:
+>>> goog = filematch(lines, 'GOOG')
+>>> for line in goog:
         print(line)
 
 ... wait for output ...
