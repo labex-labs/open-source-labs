@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/.zsh_history | grep -v grep | grep "porty"
+cat ~/.zsh_history | grep -v grep | grep "\-m" 
