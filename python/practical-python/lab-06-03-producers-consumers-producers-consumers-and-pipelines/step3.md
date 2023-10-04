@@ -23,4 +23,6 @@ This function is almost exactly the same as the first generator example in the p
 ... wait for output ...
 ```
 
-It might take awhile for output to appear, but eventually you should see some lines containing data for IBM.
+It might take awhile for output to appear, but eventually you should see some lines containing data for GOOG.
+
+**Note: These exercises must be carried out simultaneously on two separate terminals.

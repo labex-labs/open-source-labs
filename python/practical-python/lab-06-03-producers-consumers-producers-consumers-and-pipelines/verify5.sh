@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat /home/labex/project/ticket.py | grep -q "make_dicts" && echo "true"
+cat /home/labex/project/ticker.py | grep -q "make_dicts" && echo "true"
