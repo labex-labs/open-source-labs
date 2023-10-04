@@ -21,6 +21,8 @@ class Portfolio:
         return self
 
     def append(self, holding):
+        if not isinstance(holding, stock.Stock):
+            raise TypeError('Expected a Stock instance')
         self._holdings.append(holding)
 
     def __iter__(self):
