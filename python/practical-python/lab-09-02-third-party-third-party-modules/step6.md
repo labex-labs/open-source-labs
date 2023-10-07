@@ -3,6 +3,7 @@
 A common solution to package installation issues is to create a so-called "virtual environment" for yourself. Naturally, there is no "one way" to do this--in fact, there are several competing tools and techniques. However, if you are using a standard Python installation, you can try typing this:
 
 ```bash
+$ sudo apt install python3-venv
 $ python -m venv mypython
 bash %
 ```
