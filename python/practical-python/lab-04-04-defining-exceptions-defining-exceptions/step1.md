@@ -13,8 +13,8 @@ For example:
 >>> formatter = create_formatter('xls')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "tableformat.py", line 71, in create_formatter
-    raise FormatError('Unknown table format %s' % name)
-FormatError: Unknown table format xls
+  File "tableformat.py", line 80, in create_formatter
+    raise FormatError(f"Unknown table format {name}")
+tableformat.FormatError: Unknown table format xls
 >>>
-```
+```  
