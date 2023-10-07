@@ -1,13 +1,4 @@
-# This file sets up basic configuration of the logging module.
-# Change settings here to adjust logging output as needed.
-import logging
-
-logging.basicConfig(
-    filename='app.log',  
-    filemode='w', 
-    level=logging.WARNING  
-)
-
+# report.py
 
 import fileparse
 from stock import Stock
@@ -77,13 +68,7 @@ def portfolio_report(portfoliofile, pricefile, fmt="txt"):
 def main(args):
     if len(args) != 4:
         raise SystemExit("Usage: %s portfile pricefile format" % args[0])
-
-    
-    logging.info("Starting report.py")
-
     portfolio_report(args[1], args[2], args[3])
-
-    logging.info("Report generation completed")
 
 
 if __name__ == "__main__":
