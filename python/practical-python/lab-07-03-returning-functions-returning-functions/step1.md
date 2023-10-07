@@ -15,7 +15,7 @@ This is a function that returns another function.
 ```python
 >>> a = add(3,4)
 >>> a
-<function do_add at 0x6a670>
+<function add.<locals>.do_add at 0x7f27d8a38790>
 >>> a()
 Adding 3 4
 7
