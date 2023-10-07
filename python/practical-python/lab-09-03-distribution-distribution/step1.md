@@ -1,6 +1,6 @@
 # Creating a setup.py file
 
-Add a `setup.py` file to the top-level of your project directory.
+Add a `setup.py` file in `/home/labex/project` directory to the top-level of your project directory.
 
 ```python
 # setup.py
