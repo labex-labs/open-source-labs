@@ -23,7 +23,7 @@ and the `portfolio.py` file defines `Portfolio()` with an odd initializer like t
 ```python
 class Portfolio:
     def __init__(self, holdings):
-        self.holdings = holdings
+        self._holdings = holdings
     ...
 ```
 
@@ -36,12 +36,12 @@ import stock
 
 class Portfolio:
     def __init__(self):
-        self.holdings = []
+        self._holdings = []
 
     def append(self, holding):
         if not isinstance(holding, stock.Stock):
             raise TypeError('Expected a Stock instance')
-        self.holdings.append(holding)
+        self._holdings.append(holding)
     ...
 ```
 
@@ -55,12 +55,12 @@ import stock
 
 class Portfolio:
     def __init__(self):
-        self.holdings = []
+        self._holdings = []
 
     def append(self, holding):
         if not isinstance(holding, stock.Stock):
             raise TypeError('Expected a Stock instance')
-        self.holdings.append(holding)
+        self._holdings.append(holding)
 
     @classmethod
     def from_csv(cls, lines, **opts):

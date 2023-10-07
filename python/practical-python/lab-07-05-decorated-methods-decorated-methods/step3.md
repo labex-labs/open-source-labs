@@ -6,7 +6,6 @@
 class Foo:
     def bar(self):
         print(self)
-
     @classmethod
     def spam(cls):
         print(cls)
@@ -27,7 +26,6 @@ class Date:
         self.year = year
         self.month = month
         self.day = day
-
     @classmethod
     def today(cls):
         # Notice how the class is passed as an argument
