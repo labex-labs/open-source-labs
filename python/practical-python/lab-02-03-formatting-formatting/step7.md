@@ -19,8 +19,8 @@ In order to generate the above report, you'll first want to collect all of the d
 Add this function to your `report.py` file. Here's how it should work if you try it interactively:
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
->>> prices = read_prices('prices.csv')
+>>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+>>> prices = read_prices('/home/labex/project/prices.csv')
 >>> report = make_report(portfolio, prices)
 >>> for r in report:
         print(r)
