@@ -3,8 +3,8 @@
 Environment variables are set in the shell.
 
 ```bash
-$ setenv NAME dave
-$ setenv RSH ssh
+$ export NAME dave
+$ export RSH ssh
 $ python3 prog.py
 ```
 

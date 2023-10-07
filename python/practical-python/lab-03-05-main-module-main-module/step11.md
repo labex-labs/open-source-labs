@@ -4,7 +4,7 @@ On Unix, the `#!` line can launch a script as Python. Add the following to the f
 
 ```python
 #!/usr/bin/env python3
-# prog.py
+#./prog.py
 ...
 ```
 
@@ -13,7 +13,7 @@ It requires the executable permission.
 ```bash
 $ chmod +x prog.py
 # Then you can execute
-$ prog.py
+$ ./prog.py
 ... output ...
 ```
 
