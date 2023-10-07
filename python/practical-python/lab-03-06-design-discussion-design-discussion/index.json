@@ -3,7 +3,7 @@
   "title": "Design Discussion",
   "description": "In this lab, we will be revisiting a previous design decision.",
   "difficulty": "Beginner",
-  "time": 30,
+  "time": 25,
   "hidden": false,
   "fee_type": "free",
   "details": {
@@ -64,7 +64,7 @@
         "skills": []
       },
       {
-        "title": "Exercise",
+        "title": "Exercise 3.17: From filenames to file-like objects",
         "text": "step4.md",
         "verify": [
           {
@@ -75,10 +75,17 @@
             "showstderr": false
           }
         ],
-        "skills": []
+        "skills": [
+          "python/open",
+          "python/math_operator",
+          "python/assignment",
+          "python/python_scripts",
+          "python/comparison"
+        ],
+        "solutions":["fileparse.py"]
       },
       {
-        "title": "Exercise 3.17: From filenames to file-like objects",
+        "title": "Exercise 3.18: Fixing existing functions",
         "text": "step5.md",
         "verify": [
           {
@@ -89,27 +96,8 @@
             "showstderr": false
           }
         ],
-        "skills": [
-          "python/open",
-          "python/math_operator",
-          "python/assignment",
-          "python/python_scripts",
-          "python/comparison"
-        ]
-      },
-      {
-        "title": "Exercise 3.18: Fixing existing functions",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Test the completion of step 6",
-            "file": "verify6.sh",
-            "hint": "Please check the step 6 carefully.",
-            "timeout": 0,
-            "showstderr": false
-          }
-        ],
-        "skills": ["python/python_scripts"]
+        "skills": ["python/python_scripts"],
+        "solutions":["report.py"]
       }
     ],
     "intro": {
@@ -128,6 +116,11 @@
         },
         {
           "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "fileparse.py",
           "target": "/home/labex/project",
           "chmod": "ugo+rwx"
         }
