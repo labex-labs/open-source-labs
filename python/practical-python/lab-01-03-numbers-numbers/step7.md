@@ -19,4 +19,4 @@ while principal > 0:
 print('Total paid', total_paid)
 ```
 
-Enter this program and run it. You should get an answer of `966,279.6`.
+Enter this program and run it. You should get an answer of `966279.5999999957`.
