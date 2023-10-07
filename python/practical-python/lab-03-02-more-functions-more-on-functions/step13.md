@@ -1,9 +1,9 @@
 # Exercise 3.3: Reading CSV Files
 
-To start, let's just focus on the problem of reading a CSV file into a list of dictionaries. In the file `fileparse.py`, define a function that looks like this:
+To start, let's just focus on the problem of reading a CSV file into a list of dictionaries. In the file `fileparse_3.3.py`, define a function that looks like this:
 
 ```python
-# fileparse.py
+# fileparse_3.3.py
 import csv
 
 def parse_csv(filename):
@@ -29,13 +29,14 @@ This function reads a CSV file into a list of dictionaries while hiding the deta
 
 Try it out:
 
-Hint: `python3 -i fileparse.py`.
+Hint: `python3 -i fileparse_3.3.py`.
 
 ```python
->>> portfolio = parse_csv('portfolio.csv')
+>>> portfolio = parse_csv('/home/labex/project/portfolio.csv')
 >>> portfolio
-[{'price': '32.20', 'name': 'AA', 'shares': '100'}, {'price': '91.10', 'name': 'IBM', 'shares': '50'}, {'price': '83.44', 'name': 'CAT', 'shares': '150'}, {'price': '51.23', 'name': 'MSFT', 'shares': '200'}, {'price': '40.37', 'name': 'GE', 'shares': '95'}, {'price': '65.10', 'name': 'MSFT', 'shares': '50'}, {'price': '70.44', 'name': 'IBM', 'shares': '100'}]
+[{'name': 'AA', 'shares': '100', 'price': '32.20'}, {'name': 'IBM', 'shares': '50', 'price': '91.10'}, {'name': 'CAT', 'shares': '150', 'price': '83.44'}, {'name': 'MSFT', 'shares': '200', 'price': '51.23'}, {'name': 'GE', 'shares': '95', 'price': '40.37'}, {'name': 'MSFT', 'shares': '50', 'price': '65.10'}, {'name': 'IBM', 'shares': '100', 'price': '70.44'}]
 >>>
 ```
 
 This is good except that you can't do any kind of useful calculation with the data because everything is represented as a string. We'll fix this shortly, but let's keep building on it.
+
