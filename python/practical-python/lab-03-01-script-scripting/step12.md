@@ -22,4 +22,3 @@ By turning your program into a single function, it becomes easy to run it on dif
 ... look at the output ...
 >>>
 ```
-
