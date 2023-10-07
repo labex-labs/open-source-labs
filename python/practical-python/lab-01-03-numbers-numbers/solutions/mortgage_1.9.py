@@ -18,5 +18,5 @@ while principal > 0:
         principal = principal * (1 + rate / 12) - payment
         total_paid += payment
 
-print('Total paid:', total_paid)
-print('Number of months:', months)
+print("Total paid:", total_paid)
+print("Number of months:", months)

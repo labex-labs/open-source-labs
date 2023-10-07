@@ -12,11 +12,11 @@ months = 0
 while principal > 0:
     months += 1
     if months <= 12:
-        principal = principal * (1+rate/12) - (payment + extra_payment)
+        principal = principal * (1 + rate / 12) - (payment + extra_payment)
         total_paid += payment + extra_payment
     else:
-        principal = principal * (1+rate/12) - payment
+        principal = principal * (1 + rate / 12) - payment
         total_paid += payment
 
-print('Total paid:', total_paid)
-print('Number of months:', months)
+print("Total paid:", total_paid)
+print("Number of months:", months)
