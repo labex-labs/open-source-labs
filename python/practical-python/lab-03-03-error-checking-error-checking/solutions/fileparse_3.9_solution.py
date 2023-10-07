@@ -1,10 +1,11 @@
 # fileparse_3.9.py
 import csv
 
+
 def parse_csv(filename, select=None, types=None, has_headers=True):
-    '''
+    """
     Parse a CSV file into a list of dictionaries
-    '''
+    """
     if select and not has_headers:
         raise RuntimeError("select argument requires column headers")
 
@@ -27,7 +28,7 @@ def parse_csv(filename, select=None, types=None, has_headers=True):
 
         records = []
         for row_num, row in enumerate(rows, start=1):
-            if not row:    # Skip rows with no data
+            if not row:  # Skip rows with no data
                 continue
             try:
                 # Filter the row if specific columns were selected
@@ -48,5 +49,5 @@ def parse_csv(filename, select=None, types=None, has_headers=True):
     return records
 
 
-portfolio = parse_csv('/home/labex/project/missing.csv', types=[str, int, float])
+portfolio = parse_csv("/home/labex/project/missing.csv", types=[str, int, float])
 print(portfolio)
