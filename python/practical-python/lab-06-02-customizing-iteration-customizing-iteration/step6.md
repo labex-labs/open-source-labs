@@ -17,4 +17,4 @@ if __name__ == '__main__':
             print(f'{name:>10s} {price:>10.2f} {change:>10.2f}')
 ```
 
-Note: For this to work, your `Portfolio` class must support the `in` operator. See [Exercise 6.3](01_Iteration_protocol) and make sure you implement the `__contains__()` operator.
+Note: For this to work, your `Portfolio` class must support the `in` operator. See Exercise 6.3 and make sure you implement the `__contains__()` operator.

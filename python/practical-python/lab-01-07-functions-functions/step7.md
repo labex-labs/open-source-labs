@@ -1,6 +1,6 @@
 # Exercise 1.30: Turning a script into a function
 
-Take the code you wrote for the `pcost.py` program in [Exercise 1.27](06_Files.md) and turn it into a function `portfolio_cost(filename)`. This function takes a filename as input, reads the portfolio data in that file, and returns the total cost of the portfolio as a float.
+Take the code you wrote for the `pcost.py` program in Exercise 1.27 and turn it into a function `portfolio_cost(filename)`. This function takes a filename as input, reads the portfolio data in that file, and returns the total cost of the portfolio as a float.
 
 To use your function, change your program so that it looks something like this:
 
