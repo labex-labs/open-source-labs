@@ -1,0 +1,29 @@
+name: sync-pr-to-feishu
+
+on:
+  schedule:
+    - cron: "0 1/12 * * *"
+  workflow_dispatch:
+
+jobs:
+  sync:
+    if: github.repository_owner == 'labex-labs'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - name: Install CLI
+        run: |
+          git clone https://github.com/labex-labs/labex-cli.git /tmp/labex-cli
+          cd /tmp/labex-cli
+          pip install --editable .
+      - name: Sync to Feishu
+        env:
+          APP_ID: ${{ secrets.APP_ID }}
+          APP_SECRET: ${{ secrets.APP_SECRET }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          labex syc feishu pr --appid "$APP_ID" --appsecret "$APP_SECRET" --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY
