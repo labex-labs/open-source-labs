@@ -14,7 +14,7 @@ Now, suppose you wanted to create a `Stock` object from this data. If you try to
 >>> s = Stock(data)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: __init__() takes exactly 4 arguments (2 given)
+TypeError: Stock.__init__() missing 2 required positional arguments: 'shares' and 'price'
 >>>
 ```
 
