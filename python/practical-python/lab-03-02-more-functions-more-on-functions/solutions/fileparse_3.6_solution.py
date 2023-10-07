@@ -1,10 +1,11 @@
 # fileparse_3.6.py
 import csv
 
+
 def parse_csv(filename, select=None, types=None, has_headers=True):
-    '''
+    """
     Parse a CSV file into a list of records
-    '''
+    """
     with open(filename) as f:
         rows = csv.reader(f)
 
@@ -24,7 +25,7 @@ def parse_csv(filename, select=None, types=None, has_headers=True):
 
         records = []
         for row in rows:
-            if not row:    # Skip rows with no data
+            if not row:  # Skip rows with no data
                 continue
             # Filter the row if specific columns were selected
             if indices:
@@ -42,5 +43,7 @@ def parse_csv(filename, select=None, types=None, has_headers=True):
 
 
 # Read all of the data without headers
-prices = parse_csv('/home/labex/project/prices.csv', types=[str, float], has_headers=False)
+prices = parse_csv(
+    "/home/labex/project/prices.csv", types=[str, float], has_headers=False
+)
 print(prices)

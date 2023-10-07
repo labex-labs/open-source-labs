@@ -39,4 +39,3 @@ Hint: `python3 -i fileparse_3.3.py`.
 ```
 
 This is good except that you can't do any kind of useful calculation with the data because everything is represented as a string. We'll fix this shortly, but let's keep building on it.
-

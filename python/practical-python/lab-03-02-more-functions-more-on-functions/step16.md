@@ -20,4 +20,3 @@ Modify the `parse_csv()` function `/home/labex/project/fileparse_3.6.py` so that
 ```
 
 To make this change, you'll need to modify the code so that the first line of data isn't interpreted as a header line. Also, you'll need to make sure you don't create dictionaries as there are no longer any column names to use for keys.
-

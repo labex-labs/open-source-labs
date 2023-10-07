@@ -2,10 +2,11 @@
 
 import csv
 
+
 def parse_csv(filename, select=None, types=None):
-    '''
+    """
     Parse a CSV file into a list of records
-    '''
+    """
     with open(filename) as f:
         rows = csv.reader(f)
 
@@ -22,7 +23,7 @@ def parse_csv(filename, select=None, types=None):
 
         records = []
         for row in rows:
-            if not row:    # Skip rows with no data
+            if not row:  # Skip rows with no data
                 continue
             # Filter the row if specific columns were selected
             if indices:
@@ -37,12 +38,14 @@ def parse_csv(filename, select=None, types=None):
             records.append(record)
 
     return records
-    
+
 
 # Read all of the data with type conversions
-portfolio = parse_csv('/home/labex/project/portfolio.csv', types=[str, int, float])
+portfolio = parse_csv("/home/labex/project/portfolio.csv", types=[str, int, float])
 print(portfolio)
 
 # Read only some of the data with type conversions
-shares_held = parse_csv('/home/labex/project/portfolio.csv', select=['name', 'shares'], types=[str, int])
+shares_held = parse_csv(
+    "/home/labex/project/portfolio.csv", select=["name", "shares"], types=[str, int]
+)
 print(shares_held)

@@ -21,5 +21,3 @@ if types:
     row = [func(val) for func, val in zip(types, row) ]
 ...
 ```
-
-
