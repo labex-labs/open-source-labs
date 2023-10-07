@@ -5,7 +5,7 @@ The `parse_csv()` function you wrote in the last section allows user-specified c
 Modify the code so that an exception gets raised if both the `select` and `has_headers=False` arguments are passed. For example:
 
 ```python
->>> parse_csv('prices.csv', select=['name','price'], has_headers=False)
+>>> parse_csv('/home/labex/project/prices.csv', select=['name','price'], has_headers=False)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
   File "fileparse.py", line 9, in parse_csv
@@ -21,3 +21,5 @@ As a general rule, it's usually best to skip such tests and to just let the prog
 The main reason for adding the above check is to avoid running the code in a non-sensical mode (e.g., using a feature that requires column headers, but simultaneously specifying that there are no headers).
 
 This indicates a programming error on the part of the calling code. Checking for cases that "aren't supposed to happen" is often a good idea.
+
+  
