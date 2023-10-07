@@ -1,8 +1,10 @@
 import unittest
 from io import StringIO
 import sys
+
 sys.path.append("/home/labex/project")
 from generate_the_sentences import generate_the_sentences
+
 
 class TestGenerateSentences(unittest.TestCase):
     def test_generate_sentences(self):
@@ -27,5 +29,6 @@ class TestGenerateSentences(unittest.TestCase):
         except (ValueError, TypeError):
             self.fail("Output is not a valid list of sentences")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

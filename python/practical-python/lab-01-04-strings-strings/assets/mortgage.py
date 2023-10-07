@@ -18,7 +18,7 @@ while principal > 0:
         principal = principal * (1 + rate / 12) - payment
         total_paid += payment
 
-    print('{}\t{:.2f} \t{:.2f}'.format(months, total_paid, principal))
+    print("{}\t{:.2f} \t{:.2f}".format(months, total_paid, principal))
 
-print('Total paid:', total_paid)
-print('Months:', months)
+print("Total paid:", total_paid)
+print("Months:", months)

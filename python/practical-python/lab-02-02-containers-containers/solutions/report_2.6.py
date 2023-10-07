@@ -1,9 +1,10 @@
 import csv
 
+
 def read_prices(filename):
     prices = {}
     try:
-        with open(filename, 'r') as file:
+        with open(filename, "r") as file:
             reader = csv.reader(file)
             for row in reader:
                 if row:  # Skip empty lines
@@ -15,8 +16,9 @@ def read_prices(filename):
 
     return prices
 
+
 # Test the read_prices() function
-prices = read_prices('/home/labex/project/prices.csv')
+prices = read_prices("/home/labex/project/prices.csv")
 print(prices)
-print(prices['IBM'])
-print(prices['MSFT'])
+print(prices["IBM"])
+print(prices["MSFT"])

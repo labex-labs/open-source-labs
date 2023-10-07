@@ -11,7 +11,6 @@ def portfolio_cost(filename):
     return sum([s["shares"] * s["price"] for s in portfolio])
 
 
-
 def main(args):
     if len(args) != 2:
         raise SystemExit("Usage: %s portfoliofile" % args[0])

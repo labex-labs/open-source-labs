@@ -10,4 +10,3 @@ class Stock:
         self.name = name
         self.shares = shares
         self.price = price
-

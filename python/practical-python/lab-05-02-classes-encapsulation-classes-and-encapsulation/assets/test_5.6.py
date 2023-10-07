@@ -1,10 +1,10 @@
 import sys
 
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 from stock import Stock
 
-s = Stock('GOOG', 100, 490.1)
+s = Stock("GOOG", 100, 490.1)
 assert s.cost == 49010.0
 
 try:

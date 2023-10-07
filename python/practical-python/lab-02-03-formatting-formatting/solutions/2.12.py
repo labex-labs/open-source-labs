@@ -1,24 +1,26 @@
 import csv
 
+
 def read_portfolio(filename):
     portfolio = []
 
-    with open(filename, 'rt') as f:
+    with open(filename, "rt") as f:
         rows = csv.DictReader(f)
         for row in rows:
             holding = {
-                'name': row['name'],
-                'shares': int(row['shares']),
-                'price': float(row['price'])
+                "name": row["name"],
+                "shares": int(row["shares"]),
+                "price": float(row["price"]),
             }
             portfolio.append(holding)
 
     return portfolio
 
+
 def read_prices(filename):
     prices = {}
     try:
-        with open(filename, 'r') as file:
+        with open(filename, "r") as file:
             reader = csv.reader(file)
             for row in reader:
                 if row:  # Skip empty lines
@@ -30,29 +32,32 @@ def read_prices(filename):
 
     return prices
 
+
 def make_report(portfolio, prices):
     report = []
 
     for stock in portfolio:
-        stock_name = stock['name']
-        shares = stock['shares']
+        stock_name = stock["name"]
+        shares = stock["shares"]
         price = prices.get(stock_name)
         if price is not None:
-            change = price - stock['price']
+            change = price - stock["price"]
             row = (stock_name, shares, price, change)
             report.append(row)
 
     return report
 
+
 def create_header_string(headers):
-    header_string = ''
+    header_string = ""
     for header in headers:
-        header_string += f'{header:>10s} '
+        header_string += f"{header:>10s} "
 
     return header_string.strip()
 
+
 def create_separator_string(headers):
-    separator_string = ''
+    separator_string = ""
     for header in headers:
         separator_string += f'{("-" * 10):>10s} '
 
@@ -60,14 +65,14 @@ def create_separator_string(headers):
 
 
 def format_price(price):
-    return f'${price:.2f}'
+    return f"${price:.2f}"
 
 
-portfolio = read_portfolio('/home/labex/project/portfolio.csv')
-prices = read_prices('/home/labex/project/prices.csv')
+portfolio = read_portfolio("/home/labex/project/portfolio.csv")
+prices = read_prices("/home/labex/project/prices.csv")
 report = make_report(portfolio, prices)
 
-headers = ('Name', 'Shares', 'Price', 'Change')
+headers = ("Name", "Shares", "Price", "Change")
 header_string = create_header_string(headers)
 separator_string = create_separator_string(headers)
 
@@ -77,5 +82,4 @@ print(separator_string)
 
 for name, shares, price, change in report:
     formatted_price = format_price(price)
-    print(f'{name:>10s} {shares:>10d} {formatted_price:>10s} {change:>10.2f}')
-
+    print(f"{name:>10s} {shares:>10d} {formatted_price:>10s} {change:>10.2f}")

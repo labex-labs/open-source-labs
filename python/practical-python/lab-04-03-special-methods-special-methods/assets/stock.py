@@ -10,7 +10,7 @@ class Stock:
         self.name = name
         self.shares = shares
         self.price = price
-    
+
     def cost(self):
         """
         Return the cost as shares*price

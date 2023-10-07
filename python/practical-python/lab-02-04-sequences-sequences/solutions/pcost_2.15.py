@@ -19,7 +19,8 @@ def portfolio_cost(filename):
                 cost = shares * price
                 total_cost += cost
             except ValueError:
-                print(f'Row {rowno}: Couldn\'t convert: {row}')
+                print(f"Row {rowno}: Couldn't convert: {row}")
     return total_cost
 
-cost = portfolio_cost('/home/labex/project/missing.csv')
+
+cost = portfolio_cost("/home/labex/project/missing.csv")

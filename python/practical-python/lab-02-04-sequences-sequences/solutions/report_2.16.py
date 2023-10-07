@@ -22,10 +22,11 @@ def read_portfolio(filename):
 
     return portfolio
 
+
 def read_prices(filename):
     prices = {}
     try:
-        with open(filename, 'r') as file:
+        with open(filename, "r") as file:
             reader = csv.reader(file)
             for row in reader:
                 if row:  # Skip empty lines
@@ -37,20 +38,21 @@ def read_prices(filename):
 
     return prices
 
+
 def make_report(portfolio, prices):
     report = []
 
     for stock in portfolio:
-        stock_name = stock['name']
-        shares = stock['shares']
+        stock_name = stock["name"]
+        shares = stock["shares"]
         price = prices.get(stock_name)
         if price is not None:
-            change = price - stock['price']
+            change = price - stock["price"]
             row = (stock_name, shares, price, change)
             report.append(row)
 
     return report
 
 
-portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+portfolio = read_portfolio("/home/labex/project/portfolio.csv")
 print(portfolio)

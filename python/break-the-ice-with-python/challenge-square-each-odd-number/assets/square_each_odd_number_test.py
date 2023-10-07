@@ -8,6 +8,7 @@ sys.path.append("/home/labex/project")
 # Import the code to be tested
 from square_each_odd_number import square_each_odd_number
 
+
 class TestYour(unittest.TestCase):
     def test_output(self):
         # Redirect standard input and output to buffer
@@ -17,7 +18,7 @@ class TestYour(unittest.TestCase):
         sys.stdout = StringIO()
 
         # Input test data
-        test_input = '1,2,3,4,5\n'
+        test_input = "1,2,3,4,5\n"
         sys.stdin.write(test_input)
         sys.stdin.seek(0)
 
@@ -30,8 +31,9 @@ class TestYour(unittest.TestCase):
         sys.stdout = stdout
 
         # Check if the output matches the expected result
-        expected_output = '1,9,25\n'
+        expected_output = "1,9,25\n"
         self.assertEqual(output, expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

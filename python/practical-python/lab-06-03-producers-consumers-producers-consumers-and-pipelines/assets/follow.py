@@ -30,4 +30,3 @@ if __name__ == "__main__":
         change = float(row[4])
         if name in portfolio:
             print(f"{name:>10s} {price:>10.2f} {change:>10.2f}")
-            

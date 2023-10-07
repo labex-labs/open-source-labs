@@ -2,7 +2,7 @@
 # print-report.py
 import sys
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 from porty.report import main
 

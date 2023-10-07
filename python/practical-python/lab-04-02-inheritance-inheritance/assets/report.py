@@ -2,6 +2,7 @@
 
 import csv
 
+
 def read_portfolio(filename):
     """
     Read a stock portfolio file into a list of dictionaries with keys
@@ -9,22 +10,23 @@ def read_portfolio(filename):
     """
     portfolio = []
 
-    with open(filename, 'rt') as f:
+    with open(filename, "rt") as f:
         rows = csv.DictReader(f)
         for row in rows:
             stock = {
-                'name': row['name'],
-                'shares': int(row['shares']),
-                'price': float(row['price'])
+                "name": row["name"],
+                "shares": int(row["shares"]),
+                "price": float(row["price"]),
             }
             portfolio.append(stock)
 
     return portfolio
 
+
 def read_prices(filename):
     prices = {}
     try:
-        with open(filename, 'r') as file:
+        with open(filename, "r") as file:
             reader = csv.reader(file)
             for row in reader:
                 if row:  # Skip empty lines
@@ -36,6 +38,7 @@ def read_prices(filename):
 
     return prices
 
+
 def make_report_data(portfolio, prices):
     """
     Make a list of (name, shares, price, change) tuples given a portfolio list
@@ -43,9 +46,9 @@ def make_report_data(portfolio, prices):
     """
     rows = []
     for s in portfolio:
-        current_price = prices[s['name']]
-        change = current_price - s['price']
-        summary = (s['name'], s['shares'], current_price, change)
+        current_price = prices[s["name"]]
+        change = current_price - s["price"]
+        summary = (s["name"], s["shares"], current_price, change)
         rows.append(summary)
     return rows
 
@@ -74,5 +77,3 @@ def portfolio_report(portfoliofile, pricefile):
 
     # Print it out
     print_report(report)
-
-

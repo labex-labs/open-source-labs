@@ -63,17 +63,17 @@ class HTMLTableFormatter(TableFormatter):
 
 
 def create_formatter(name):
-    '''
+    """
     Create a formatter object based on the given name.
-    '''
-    if name == 'txt':
+    """
+    if name == "txt":
         return TextTableFormatter()
-    elif name == 'csv':
+    elif name == "csv":
         return CSVTableFormatter()
-    elif name == 'html':
+    elif name == "html":
         return HTMLTableFormatter()
     else:
-        raise ValueError(f'Unknown format {name}')
+        raise ValueError(f"Unknown format {name}")
 
 
 def print_table(objects, columns, formatter):

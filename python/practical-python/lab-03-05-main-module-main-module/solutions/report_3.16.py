@@ -3,7 +3,7 @@
 import sys
 
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 import fileparse
 
@@ -72,5 +72,4 @@ def main(args):
 
 
 if __name__ == "__main__":
-
     main(sys.argv)

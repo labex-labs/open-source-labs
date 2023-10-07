@@ -1,8 +1,10 @@
 import unittest
 from io import StringIO
 import sys
+
 sys.path.append("/home/labex/project")
 from generate_random_float import generate_random_float
+
 
 class TestRandomNumber(unittest.TestCase):
     def test_random_number(self):
@@ -24,5 +26,6 @@ class TestRandomNumber(unittest.TestCase):
         except ValueError:
             self.fail("Output is not a valid float")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

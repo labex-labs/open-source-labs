@@ -1,8 +1,10 @@
 import unittest
 from io import StringIO
 import sys
+
 sys.path.append("/home/labex/project")
 from generate_a_even_number_list import generate_a_even_number_list
+
 
 class TestEvenNumberList(unittest.TestCase):
     def test_generate_a_even_number_list(self):
@@ -29,5 +31,6 @@ class TestEvenNumberList(unittest.TestCase):
         except (ValueError, TypeError):
             self.fail("Output is not a valid list of even integers")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

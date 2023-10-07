@@ -1,8 +1,10 @@
 import unittest
 import sys
+
 sys.path.append("/home/labex/project")
 from io import StringIO
 from word_counting import word_counting
+
 
 class TestWordCounting(unittest.TestCase):
     def test_word_counting(self):
@@ -22,5 +24,6 @@ class TestWordCounting(unittest.TestCase):
         expected_output = "3\n2 3 1"
         self.assertEqual(output, expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

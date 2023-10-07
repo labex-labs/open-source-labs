@@ -21,5 +21,6 @@ class TestCustomException(unittest.TestCase):
                 raise CustomException("Input is greater than 10")
         self.assertEqual(str(cm.exception), "Input is greater than 10")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

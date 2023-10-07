@@ -58,7 +58,3 @@ def portfolio_report(portfoliofile, pricefile):
 
     # Print it out
     print_report(report)
-
-
-
-

@@ -8,6 +8,7 @@ sys.path.append("/home/labex/project")
 # Import the code to be tested
 from compute_the_distance import compute_the_distance
 
+
 class TestYour(unittest.TestCase):
     def test_output(self):
         # Redirect standard input and output to buffer
@@ -17,7 +18,7 @@ class TestYour(unittest.TestCase):
         sys.stdout = StringIO()
 
         # Input test data
-        test_input = 'UP 5\nDOWN 3\nLEFT 3\nRIGHT 2\n\n'
+        test_input = "UP 5\nDOWN 3\nLEFT 3\nRIGHT 2\n\n"
         sys.stdin.write(test_input)
         sys.stdin.seek(0)
 
@@ -30,8 +31,9 @@ class TestYour(unittest.TestCase):
         sys.stdout = stdout
 
         # Check if the output matches the expected result
-        expected_output = '2\n'
+        expected_output = "2\n"
         self.assertEqual(output, expected_output)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,6 @@
 import unittest
 import sys
+
 # Add the path to the project directory
 sys.path.append("/home/labex/project")
 import re
@@ -21,7 +22,7 @@ class TestRemoveDuplicatesFromList(unittest.TestCase):
 
         # Check that each number in the output is in the expected list
         try:
-            numbers = list(map(int, re.findall(r'\d+', output)))
+            numbers = list(map(int, re.findall(r"\d+", output)))
             expected = [12, 24, 35, 88, 120, 155]
             for number in numbers:
                 self.assertIn(number, expected)
@@ -29,5 +30,5 @@ class TestRemoveDuplicatesFromList(unittest.TestCase):
             self.fail("Output is not a valid list of numbers")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

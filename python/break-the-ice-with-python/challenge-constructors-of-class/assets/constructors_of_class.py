@@ -1,4 +1,4 @@
-class Circle():
+class Circle:
     pass
 
     """A class named `Circle` which can be constructed by a radius

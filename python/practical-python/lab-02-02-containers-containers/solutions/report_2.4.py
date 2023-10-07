@@ -1,9 +1,10 @@
 import csv
 
+
 def read_portfolio(filename):
     portfolio = []
 
-    with open(filename, 'rt') as f:
+    with open(filename, "rt") as f:
         rows = csv.reader(f)
         next(rows)  # Skip header row
         for row in rows:
@@ -12,7 +13,8 @@ def read_portfolio(filename):
 
     return portfolio
 
-portfolio = read_portfolio('/home/labex/project/portfolio.csv')
+
+portfolio = read_portfolio("/home/labex/project/portfolio.csv")
 
 print(portfolio)
 print(portfolio[0])

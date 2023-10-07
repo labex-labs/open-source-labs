@@ -1,7 +1,7 @@
 # report.py
 import sys
 
-sys.path.append('/home/labex/project')
+sys.path.append("/home/labex/project")
 
 import fileparse
 

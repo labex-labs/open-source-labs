@@ -2,11 +2,7 @@
 # Change settings here to adjust logging output as needed.
 import logging
 
-logging.basicConfig(
-    filename='app.log',  
-    filemode='w', 
-    level=logging.WARNING  
-)
+logging.basicConfig(filename="app.log", filemode="w", level=logging.WARNING)
 
 
 import fileparse
@@ -78,7 +74,6 @@ def main(args):
     if len(args) != 4:
         raise SystemExit("Usage: %s portfile pricefile format" % args[0])
 
-    
     logging.info("Starting report.py")
 
     portfolio_report(args[1], args[2], args[3])

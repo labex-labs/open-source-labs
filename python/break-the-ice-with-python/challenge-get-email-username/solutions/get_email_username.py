@@ -1,6 +1,6 @@
 def get_email_username():
     email = input()
-    email = email.split('@')
+    email = email.split("@")
     print(email[0])
 
     return email[0]

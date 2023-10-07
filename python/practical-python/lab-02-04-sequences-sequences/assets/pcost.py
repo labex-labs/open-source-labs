@@ -21,4 +21,5 @@ def portfolio_cost(filename):
 
     return total_cost
 
-cost = portfolio_cost('/home/labex/project/missing.csv')
+
+cost = portfolio_cost("/home/labex/project/missing.csv")
