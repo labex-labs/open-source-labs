@@ -1,6 +1,6 @@
 # `unittest` Module
 
-Suppose you have some code.
+Suppose you have some code in `simple.py`.
 
 ```python
 # simple.py
@@ -9,7 +9,7 @@ def add(x, y):
     return x + y
 ```
 
-Now, suppose you want to test it. Create a separate testing file like this.
+Now, suppose you want to test it. Create a separate testing file like this in `/home/labex/project/test_simple.py`.
 
 ```python
 # test_simple.py
