@@ -29,4 +29,3 @@ When you're done, your program should produce the table shown at the top of this
             GE         95      13.48     -26.89
           MSFT         50      20.89     -44.21
            IBM        100     106.28      35.84
-

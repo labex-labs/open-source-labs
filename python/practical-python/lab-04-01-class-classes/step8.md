@@ -15,4 +15,4 @@ With classes, you can attach functions to your objects. These are known as metho
 >>> s.cost()
 36757.5
 >>>
-```  
+```

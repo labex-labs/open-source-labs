@@ -17,4 +17,4 @@ Traceback (most recent call last):
     raise FormatError(f"Unknown table format {name}")
 tableformat.FormatError: Unknown table format xls
 >>>
-```  
+```

@@ -65,4 +65,3 @@ Once you have written your `read_prices()` function, test it interactively to ma
 20.89
 >>>
 ```
-

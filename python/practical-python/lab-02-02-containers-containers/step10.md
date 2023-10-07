@@ -42,4 +42,3 @@ Viewing large dictionaries and lists can be messy. To clean up the output for de
     {'name': 'IBM', 'price': 70.44, 'shares': 100}]
 >>>
 ```
-

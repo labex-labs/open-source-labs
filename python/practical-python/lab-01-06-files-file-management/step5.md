@@ -11,4 +11,3 @@ Your program should print output such as the following:
 ```bash
 Total cost 44671.15
 ```
-

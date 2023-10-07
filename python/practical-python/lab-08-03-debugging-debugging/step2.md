@@ -20,4 +20,3 @@ AttributeError: 'int' object has no attribute 'append'
 However, it's not always easy to read or understand.
 
 _PRO TIP: Paste the whole traceback into Google._
-   
