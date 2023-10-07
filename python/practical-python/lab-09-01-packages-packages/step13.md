@@ -12,8 +12,8 @@ main(sys.argv)
 
 Put this script in the top-level `porty-app/` directory. Make sure you can run it in that location:
 
-    shell % cd porty-app
-    shell % python3 print-report.py portfolio.csv prices.csv txt
+    $ cd porty-app
+    $ python3 print-report.py portfolio.csv prices.csv txt
           Name     Shares      Price     Change
     ---------- ---------- ---------- ----------
             AA        100       9.22     -22.98
@@ -24,7 +24,7 @@ Put this script in the top-level `porty-app/` directory. Make sure you can run i
           MSFT         50      20.89     -44.21
            IBM        100     106.28      35.84
 
-    shell %
+    $
 
 Your final code should now be structured something like this:
 

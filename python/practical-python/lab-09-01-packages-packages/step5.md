@@ -13,7 +13,6 @@ porty/
 Modified import example.
 
 ```python
-# report.py
 from porty import fileparse
 
 def read_portfolio(filename):
@@ -23,7 +22,6 @@ def read_portfolio(filename):
 All imports are _absolute_, not relative.
 
 ```python
-# report.py
 import fileparse    # BREAKS. fileparse not found
 
 ...
