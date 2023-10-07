@@ -46,7 +46,7 @@ Experiment with your function interactively (just a reminder that in order to do
 _Hint: Use `-i` when executing the file in the terminal_
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
+>>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
 >>> portfolio
 [('AA', 100, 32.2), ('IBM', 50, 91.1), ('CAT', 150, 83.44), ('MSFT', 200, 51.23),
     ('GE', 95, 40.37), ('MSFT', 50, 65.1), ('IBM', 100, 70.44)]

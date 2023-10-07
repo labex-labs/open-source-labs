@@ -5,7 +5,7 @@ Take the function you wrote in Exercise 2.4 and modify to represent each stock i
 Experiment with this new function in the same manner as you did in Exercise 2.4.
 
 ```python
->>> portfolio = read_portfolio('portfolio.csv')
+>>> portfolio = read_portfolio('/home/labex/project/portfolio.csv')
 >>> portfolio
 [{'name': 'AA', 'shares': 100, 'price': 32.2}, {'name': 'IBM', 'shares': 50, 'price': 91.1},
     {'name': 'CAT', 'shares': 150, 'price': 83.44}, {'name': 'MSFT', 'shares': 200, 'price': 51.23},
@@ -42,3 +42,4 @@ Viewing large dictionaries and lists can be messy. To clean up the output for de
     {'name': 'IBM', 'price': 70.44, 'shares': 100}]
 >>>
 ```
+
