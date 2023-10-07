@@ -3,7 +3,7 @@
 In the file `portfolio.csv`, the first line contains column headers. In all previous code, we've been discarding them.
 
 ```python
->>> f = open('portfolio.csv')
+>>> f = open('/home/labex/project/portfolio.csv')
 >>> rows = csv.reader(f)
 >>> headers = next(rows)
 >>> headers
@@ -68,7 +68,7 @@ name,date,time,shares,price
 ```
 
 ```python
->>> portfolio_cost('portfoliodate.csv')
+>>> portfolio_cost('/home/labex/project/portfoliodate.csv')
 44671.15
 >>>
 ```

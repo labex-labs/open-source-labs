@@ -3,7 +3,7 @@
 Recall that the file `missing.csv` contains data for a stock portfolio, but has some rows with missing data. Using `enumerate()`, modify your `pcost.py` program so that it prints a line number with the warning message when it encounters bad input.
 
 ```python
->>> cost = portfolio_cost('missing.csv')
+>>> cost = portfolio_cost('/home/labex/project/missing.csv')
 Row 4: Couldn't convert: ['MSFT', '', '51.23']
 Row 7: Couldn't convert: ['IBM', '', '70.44']
 >>>
