@@ -3,7 +3,7 @@
 Modify the `Stock` object that you defined in `stock.py` so that the `__repr__()` method produces more useful output. For example:
 
 ```python
->>> goog = Stock('GOOG', 100, 490.1)
+>>> goog = stock.Stock('GOOG', 100, 490.1)
 >>> goog
 Stock('GOOG', 100, 490.1)
 >>>
