@@ -1,4 +1,7 @@
 # pcost.py
+import sys
+
+sys.path.append('/home/labex/project')
 
 import report
 
@@ -11,7 +14,6 @@ def portfolio_cost(filename):
     return sum([s["shares"] * s["price"] for s in portfolio])
 
 
-import sys
 
 if len(sys.argv) == 2:
     filename = sys.argv[1]
