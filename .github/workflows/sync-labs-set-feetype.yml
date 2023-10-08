@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "**/index.json"
   workflow_dispatch:
 
 jobs:
@@ -28,6 +30,7 @@ jobs:
         run: |
           npm i -g prettier prettier-plugin-sh
           npx prettier --write "**/index.json"
+          git pull
       - name: Git commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
