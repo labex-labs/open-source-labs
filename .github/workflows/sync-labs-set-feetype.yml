@@ -1,10 +1,7 @@
 name: sync-labs-set-feetype
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - "**/index.json"
+  schedule:
+    - cron: "0 0 1/10 * *"
   workflow_dispatch:
 
 jobs:
