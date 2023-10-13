@@ -23,7 +23,7 @@ jobs:
           pip install --editable .
       - name: set-fee-type
         run: |
-          labex idx feetype --path . --type free
+          labex idx add feetype --path . --type free
       - name: Formatting index.json
         run: |
           npm i -g prettier prettier-plugin-sh

@@ -25,7 +25,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          labex idx contributors --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY --path .
+          labex idx add contributors --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY --path .
       - name: Formatting index.json
         run: |
           npm i -g prettier prettier-plugin-sh
