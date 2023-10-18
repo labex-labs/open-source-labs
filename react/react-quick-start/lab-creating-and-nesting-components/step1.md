@@ -37,7 +37,7 @@ Notice that `<MyButton />` starts with a capital letter. That’s how you know i
 
 The export default keywords specify the main component in the file. If you’re not familiar with some piece of JavaScript syntax, [MDN](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export) and [javascript.info](https://javascript.info/import-export) have great references.
 
-To run the project, use the following command. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+To run the project, use the following command. Then, you can refresh the **Web 8080** Tab to preview the web page.
 
 ```bash
 npm start

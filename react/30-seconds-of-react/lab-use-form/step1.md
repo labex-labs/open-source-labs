@@ -50,4 +50,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(<Form />);
 
 In the `Form` component, `useForm()` is called with an initial state object and returns an array with `values` and `setValues()`. The `handleSubmit()` function logs the `values` object to the console when the form is submitted. The `input` elements are set up to update the form values using the `setValues()` function.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

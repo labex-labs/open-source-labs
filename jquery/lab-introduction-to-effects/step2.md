@@ -12,4 +12,4 @@ $("div").toggle(1800);
 
 `.toggle()` will use a combination of slide and fade effects, just as `.show()` and `.hide()` do.
 
-> You can refresh the HTTP 8080 Tab to preview the web page.
+> You can refresh the **Web 8080** Tab to preview the web page.

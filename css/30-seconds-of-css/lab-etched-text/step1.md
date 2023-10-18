@@ -19,4 +19,4 @@ The `text-shadow` property creates a white shadow offset `0px` horizontally and 
 <p class="etched-text">I appear etched into the background.</p>
 ```
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

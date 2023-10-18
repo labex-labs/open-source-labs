@@ -32,7 +32,7 @@ We are also specifying the `--name` flag, which names the container. Every conta
 
 Since this is the first time you are running the nginx container, it will pull down the nginx image from the Docker Store. Subsequent containers created from the Nginx image will use the existing image located on your host.
 
-Nginx is a lightweight web server. You can access the nginx server on **HTTP 8080** Tab of LabEx VM. Switch it and refresh the page to see the output from nginx.
+Nginx is a lightweight web server. You can access the nginx server on **Web 8080** Tab of LabEx VM. Switch it and refresh the page to see the output from nginx.
 
 ![step 2 nginx](./assets/20230829-11-16-04-BazUogDa.png)
 

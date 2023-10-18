@@ -57,4 +57,4 @@ const StarRating = ({ value }) => {
 
 Finally, render the `StarRating` component with an initial value of `2` by calling `ReactDOM.createRoot(document.getElementById('root')).render(<StarRating value={2} />);`.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

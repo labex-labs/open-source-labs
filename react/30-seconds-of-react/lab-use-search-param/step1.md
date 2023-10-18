@@ -67,4 +67,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
 
 This example creates a `MyApp` component that uses the `useSearchParam` custom hook to track the value of the `post` parameter in the location search. The `post` value is displayed in a paragraph tag. Two buttons are also included to demonstrate how to change the location search parameter value.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

@@ -16,7 +16,7 @@ alert("hello!");
 
 These functions, `document.querySelector` and `alert`, are built into the browser.
 
-> Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+> Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.
 
 If you see something which looks like a variable name, but it's followed by parentheses— `()` —it is likely a function. Functions often take [arguments](https://developer.mozilla.org/en-US/docs/Glossary/Argument): bits of data they need to do their job. Arguments go inside the parentheses, separated by commas if there is more than one argument.
 

@@ -36,6 +36,6 @@ Start the server (or restart it if it's already running):
 python manage.py runserver 0.0.0.0:8080
 ```
 
-Reload HTTP 8080 tab and you should see that the question links are green (Django style!) which means that your stylesheet was properly loaded.
+Reload **Web 8080** tab and you should see that the question links are green (Django style!) which means that your stylesheet was properly loaded.
 
 ![Alt text](./assets/20230908-15-29-11-ztyI1umP.png)

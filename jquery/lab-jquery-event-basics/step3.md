@@ -26,4 +26,4 @@ $("div").on({
 });
 ```
 
-> You can refresh the HTTP 8080 Tab to preview the web page.
+> You can refresh the **Web 8080** Tab to preview the web page.

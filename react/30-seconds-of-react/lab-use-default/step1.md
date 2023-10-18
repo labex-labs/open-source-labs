@@ -32,4 +32,4 @@ To create a stateful value with a default fallback, use the `useState()` hook in
 
 In the example provided, `useDefault` is used to create a `user` state with a default value of `{ name: 'Adam' }`. The initial state is set to `{ name: 'John' }`. In the `UserCard` component, `user` is displayed along with an input field to update its name. A clear button is also provided to reset the state to `null`. Finally, the component is rendered using `ReactDOM.createRoot()`.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

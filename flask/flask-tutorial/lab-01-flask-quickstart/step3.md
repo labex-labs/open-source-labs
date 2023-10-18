@@ -11,4 +11,4 @@ Now that you have set up your Flask application and created a basic route, let's
 
 `--host=0.0.0.0` is used to make the application publicly available. If you don't specify this, the application will only be available on your local machine.
 
-Then, switch to the tab **HTTP 5000** and refresh the page.
+Then, switch to the tab **Web 5000** and refresh the page.

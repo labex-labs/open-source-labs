@@ -56,7 +56,7 @@ export default function ShoppingList() {
 }
 ```
 
-To run the project, use the following command. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+To run the project, use the following command. Then, you can refresh the **Web 8080** Tab to preview the web page.
 
 ```bash
 npm start

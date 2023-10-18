@@ -38,4 +38,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 In the example, `useEffectOnce()` is used to log "mounted" to the console when the button is clicked for the first time. The `useEffectOnce()` hook is passed two arguments: the `callback` to run and the `when` condition to check. The `when` condition is set to the `clicked` state, so the `callback` runs only when `clicked` is `true` for the first time.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

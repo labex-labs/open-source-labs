@@ -12,7 +12,7 @@ body {
 }
 ```
 
-Reload HTTP 8080 tab and you should see the background loaded in the top left of the screen.
+Reload **Web 8080** tab and you should see the background loaded in the top left of the screen.
 
 ![Alt text](./assets/20230908-15-39-41-8dGms0NM.png)
 

@@ -63,4 +63,4 @@ Explanation:
 - The hook returns an object containing the `response`, `error`, and `abort` state variables.
 - The `ImageFetch` component uses the `useFetch` hook to fetch a random dog image and display it in an `<img>` element.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

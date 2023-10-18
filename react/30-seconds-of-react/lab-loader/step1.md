@@ -64,4 +64,4 @@ const Loader = ({ size }) => {
 
 To use the `Loader` component with a size of 24, call `ReactDOM.createRoot(document.getElementById('root')).render(<Loader size={24} />);`.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

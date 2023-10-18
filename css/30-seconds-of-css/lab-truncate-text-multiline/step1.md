@@ -26,4 +26,4 @@ To truncate text that is longer than one line, follow these steps:
 
 This will create a gradient container with a height of `36.4px`, calculated for the gradient container, based on the formula `font-size * line-height` (in this case `26 * 1.4 = 36.4`). The `::after` pseudo-element is positioned at the bottom right corner of the `.truncate-text-multiline` element.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

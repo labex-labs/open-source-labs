@@ -9,7 +9,7 @@ Let's run the application again and test the dynamic content feature.
    flask run --host=0.0.0.0
    ```
 
-3. Copy the URL of the tab **HTTP 5000** and paste it into a new tab in your browser.
+3. Copy the URL of the tab **Web 5000** and paste it into a new tab in your browser.
 
    ![copy-url](./assets/copy-url.png)
 

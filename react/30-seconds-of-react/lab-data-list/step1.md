@@ -28,4 +28,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
 In this example, we're passing an array of names to the `DataList` component and rendering it twice. The first time, we're rendering an unordered list, while the second time we're rendering an ordered list.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

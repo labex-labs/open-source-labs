@@ -41,4 +41,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
 
 The `Counter` component displays the current and previous values of `value`. When the `Increment` button is clicked, `value` is updated and the previous value is stored using the `usePrevious` hook.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

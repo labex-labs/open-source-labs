@@ -44,7 +44,7 @@ cd ~/project/mysite
 python manage.py runserver 0.0.0.0:8080
 ```
 
-Swith to HTTP 8080 tab, at `/polls/34/`. It'll run the `detail()` method and display whatever ID you provide in the URL. Try `/polls/34/results/` and `/polls/34/vote/` too -- these will display the placeholder results and voting pages.
+Swith to **Web 8080** tab, at `/polls/34/`. It'll run the `detail()` method and display whatever ID you provide in the URL. Try `/polls/34/results/` and `/polls/34/vote/` too -- these will display the placeholder results and voting pages.
 
 ![Alt text](./assets/20230908-09-30-06-2n54ROPe.png)
 

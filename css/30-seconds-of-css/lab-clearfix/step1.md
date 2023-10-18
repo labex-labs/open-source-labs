@@ -27,4 +27,4 @@ To ensure that an element self-clears its children when using `float` to build l
 
 Note that using a more modern approach, such as the flexbox or grid layout, is recommended over using `float` to build layouts.
 
-Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the HTTP 8080 Tab to preview the web page.
+Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.

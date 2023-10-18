@@ -18,6 +18,6 @@ You should see output similar to this:
  * Debugger PIN: nnn-nnn-nnn
 ```
 
-Then, open the tab **HTTP 5000**, and you should see the following:
+Then, open the tab **Web 5000**, and you should see the following:
 
 ![](./assets/hello-world.png)

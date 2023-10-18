@@ -53,7 +53,7 @@ If you want to change the server's IP, pass it along with the port. For example,
 python manage.py runserver 0.0.0.0:8080
 ```
 
-Now, switch to HTTP 8080 tab in the LabEx VM and you'll see the same "Congratulations" page.
+Now, switch to **Web 8080** tab in the LabEx VM and you'll see the same "Congratulations" page.
 
 ![Alt text](./assets/20230907-08-58-22-M3Luydxk.png)
 

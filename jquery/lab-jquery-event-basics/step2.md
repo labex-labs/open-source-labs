@@ -16,4 +16,4 @@ $(document).ready(function () {
 
 If similar elements are created after the event listeners are set up, they won't automatically pick up the event behaviors you've previously set up.
 
-> You can refresh the HTTP 8080 Tab to preview the web page.
+> You can refresh the **Web 8080** Tab to preview the web page.
