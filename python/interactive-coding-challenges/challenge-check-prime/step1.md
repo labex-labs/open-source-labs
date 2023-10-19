@@ -1,4 +1,4 @@
-## Introduction
+# Check Prime
 
 ## Problem
 

@@ -1,4 +1,4 @@
-## Introduction
+# Selection Sort
 
 ## Problem
 

@@ -1,4 +1,4 @@
-## Introduction
+# Insertion Sort
 
 ## Problem
 
