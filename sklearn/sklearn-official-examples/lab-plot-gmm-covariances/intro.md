@@ -6,8 +6,7 @@ Although one would expect full covariance to perform best in general, it is pron
 
 On the plots, train data is shown as dots, while test data is shown as crosses. The iris dataset is four-dimensional. Only the first two dimensions are shown here, and thus some points are separated in other dimensions.
 
-You can open the `plot-gmm-covariances.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> You can open the `plot-gmm-covariances.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
 
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.

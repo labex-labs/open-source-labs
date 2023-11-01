@@ -2,8 +2,7 @@
 
 This tutorial will guide you through the process of plotting partial dependence curves for multiple features. The partial dependence curves are used to analyze the effect of a feature on the predicted outcome of a machine learning model while holding all other features constant. This tutorial will demonstrate how to plot partial dependence curves for a decision tree and a multi-layer perceptron on the diabetes dataset.
 
-You can open the `plot-partial-dependence-visualization-api.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> You can open the `plot-partial-dependence-visualization-api.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
 
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.

@@ -8,8 +8,7 @@ In this lab, we will explore how model complexity influences both prediction acc
 
 We will vary the model complexity through the choice of relevant model parameters in each of our selected models. Next, we will measure the influence on both computational performance (latency) and predictive power (MSE or Hamming Loss).
 
-You can open the `plot-model-complexity-influence.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> You can open the `plot-model-complexity-influence.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
 
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.

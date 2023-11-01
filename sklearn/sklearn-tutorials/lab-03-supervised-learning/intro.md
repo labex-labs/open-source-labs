@@ -5,8 +5,7 @@ There are two main types of supervised learning problems: classification and reg
 
 In this lab, we will explore the concepts of supervised learning and see how to implement them using scikit-learn, a popular machine learning library in Python. We will cover topics such as nearest neighbor classification, linear regression, and support vector machines (SVMs).
 
-You can open the `03-supervised-learning.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> You can open the `03-supervised-learning.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
 
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.

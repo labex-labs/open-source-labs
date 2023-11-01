@@ -4,8 +4,7 @@ Feature selection is an important step in machine learning. It involves selectin
 
 This lab will guide you through the process of feature selection using scikit-learn. We will cover techniques such as removing features with low variance, univariate feature selection, recursive feature elimination, and feature selection using SelectFromModel.
 
-You can open the `13-feature-selection.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> You can open the `13-feature-selection.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
 
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.

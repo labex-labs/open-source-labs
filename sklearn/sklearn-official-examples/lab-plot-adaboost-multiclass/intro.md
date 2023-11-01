@@ -4,8 +4,7 @@ In this lab, we will explore how boosting can improve prediction accuracy on a m
 
 We will compare the performance of the SAMME and SAMME.R algorithms. SAMME.R uses the probability estimates to update the additive model, while SAMME uses the classifications only.
 
-You can open the `plot-adaboost-multiclass.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> You can open the `plot-adaboost-multiclass.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
 
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.

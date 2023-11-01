@@ -2,8 +2,7 @@
 
 In this lab, we will learn how to create a visualization using Matplotlib with "dropped spines". Dropped spines refers to the visualization technique where the spines of the axes (the lines around the plot) are moved to the outer edges of the plot area.
 
-You can open the `spines-dropped.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> You can open the `spines-dropped.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
 
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.
