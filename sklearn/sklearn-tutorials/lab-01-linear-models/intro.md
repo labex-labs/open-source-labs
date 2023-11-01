@@ -17,6 +17,7 @@ You can open the `01-linear-models.ipynb` in WebIDE to start the exercises. Lear
 ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
 
 We can not verify your answers automatically in this lab.
+
 </div>
 
 ---
