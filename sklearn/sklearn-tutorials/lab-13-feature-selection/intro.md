@@ -6,4 +6,4 @@ This lab will guide you through the process of feature selection using scikit-le
 
 > You can open the `13-feature-selection.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 > ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-> We can not verify your answers automatically in this lab.
+> Labby cannot automatically verify the answers because it cannot access the notebook.

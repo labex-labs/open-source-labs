@@ -6,4 +6,4 @@ We will work with the diabetes dataset which consists of 10 features collected f
 
 > You can open the `plot-voting-regressor.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 > ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-> We can not verify your answers automatically in this lab.
+> Labby cannot automatically verify the answers because it cannot access the notebook.
