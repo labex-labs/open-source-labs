@@ -11,16 +11,6 @@ We will cover the following topics:
 - Stochastic Gradient Descent
 - Perceptron
 
-<div class="alert alert-secondary" role="alert">
-You can open the `01-linear-models.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-
-![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-
-We can not verify your answers automatically in this lab.
-
-</div>
-
----
-
-> If you are a new user of LabEx, please learn [A Beginner's Guide to LabEx](https://labex.io/courses/a-beginner-guide-to-labex) first.
-> [![](https://file.labex.io/course/cover-bf7803962805dbe930349a46d383193e.png)](https://labex.io/courses/a-beginner-guide-to-labex)
+> You can open the `01-linear-models.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+> We can not verify your answers automatically in this lab.
