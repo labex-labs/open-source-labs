@@ -2,4 +2,8 @@
 
 This tutorial will guide you through the process of creating geographic projections using Python Matplotlib library. We will go through four possible projections and learn how to create them.
 
-> You can write code in `geo-demo.ipynb`.
+You can open the `geo-demo.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
+![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+
+We can not verify your answers automatically in this lab.

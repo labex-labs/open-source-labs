@@ -4,4 +4,8 @@ In machine learning, a pipeline is a series of steps that are performed sequenti
 
 In this tutorial, we will demonstrate how to build a pipeline with feature selection and SVM classification using Scikit-learn. We will show how to integrate feature selection within the pipeline to prevent overfitting, and how to inspect the pipeline to better understand the model.
 
-> You can write code in `plot-feature-selection-pipeline.ipynb`.
+You can open the `plot-feature-selection-pipeline.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
+![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+
+We can not verify your answers automatically in this lab.

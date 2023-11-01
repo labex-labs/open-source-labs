@@ -4,4 +4,8 @@ In this lab, we will explore manifold learning, which is an approach to non-line
 
 In this lab, we will use the scikit-learn library to perform manifold learning on various datasets. We will explore different algorithms and compare their performance and outputs.
 
-> You can write code in `19-manifold-learning.ipynb`.
+You can open the `19-manifold-learning.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
+![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+
+We can not verify your answers automatically in this lab.

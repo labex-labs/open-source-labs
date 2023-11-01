@@ -4,4 +4,8 @@ Linear and Quadratic Discriminant Analysis (LDA and QDA) are two classic classif
 
 In this lab, we will explore how to perform LDA and QDA using scikit-learn, a popular machine learning library in Python.
 
-> You can write code in `02-linear-and-quadratic-discriminant-analysis.ipynb`.
+You can open the `02-linear-and-quadratic-discriminant-analysis.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
+![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+
+We can not verify your answers automatically in this lab.

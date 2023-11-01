@@ -7,4 +7,8 @@ In this lab, we will explore the functionality and usage of multiclass and multi
 3. Multiclass-Multioutput Classification
 4. Multioutput Regression
 
-> You can write code in `12-multiclass-and-multioutput-algorithms.ipynb`.
+You can open the `12-multiclass-and-multioutput-algorithms.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
+![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+
+We can not verify your answers automatically in this lab.

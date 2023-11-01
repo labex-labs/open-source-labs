@@ -4,4 +4,8 @@ In this lab, we will demonstrate how to use Stochastic Gradient Descent (SGD) to
 
 We will compare the results of this approximation to the results of using a One-Class SVM with a kernelized approach. The purpose of this lab is not to show the benefits of approximation in terms of computation time, but rather to demonstrate that similar results can be obtained using SGD on a toy dataset.
 
-> You can write code in `plot-sgdocsvm-vs-ocsvm.ipynb`.
+You can open the `plot-sgdocsvm-vs-ocsvm.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
+![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+
+We can not verify your answers automatically in this lab.

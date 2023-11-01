@@ -2,4 +2,8 @@
 
 In this lab, we will learn how to handle missing data in pandas, a common issue in data analysis. We'll cover how to identify missing data, fill in missing values, and drop data that's not needed. We will also discuss the experimental `NA` scalar in pandas that can be used to denote missing values.
 
-> You can write code in `missing-data.ipynb`.
+You can open the `missing-data.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+
+![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
+
+We can not verify your answers automatically in this lab.
