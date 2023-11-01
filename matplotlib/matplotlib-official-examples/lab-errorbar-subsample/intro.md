@@ -5,4 +5,3 @@ In data visualization, it is sometimes useful to plot error bars to show the unc
 > You can open the `errorbar-subsample.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 > ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
 > We can not verify your answers automatically in this lab.
-

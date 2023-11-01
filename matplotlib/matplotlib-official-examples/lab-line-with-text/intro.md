@@ -5,4 +5,3 @@ This lab demonstrates how to override basic methods so an artist can contain ano
 > You can open the `line-with-text.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 > ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
 > We can not verify your answers automatically in this lab.
-

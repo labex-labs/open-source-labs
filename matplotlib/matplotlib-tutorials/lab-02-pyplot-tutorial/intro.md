@@ -5,4 +5,3 @@ This tutorial provides a step-by-step guide to using the `pyplot` interface in M
 > You can open the `02-pyplot-tutorial.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 > ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
 > We can not verify your answers automatically in this lab.
-
