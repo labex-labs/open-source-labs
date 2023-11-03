@@ -1,3 +1,0 @@
-# Summary
-
-To summarize, we have defined a function that generates a dictionary with keys ranging from 1 to 20 (inclusive) and values that are the square of the keys. We have used the `dict[key]=value` pattern to add entries to the dictionary, the `**` operator to get the power of a number, and the `range()` function for loops. Finally, we have printed only the keys of the dictionary using the `keys()` method.
