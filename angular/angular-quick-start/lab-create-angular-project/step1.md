@@ -9,9 +9,9 @@ Before you start, you'll need to install Node.js and npm (Node Package Manager).
 
    ```bash
    wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-   nvm install 16.14
-   nvm use 16.14
-   nvm alias default 16.14
+   nvm install 18.13
+   nvm use 18.13
+   nvm alias default 18.13
    ```
 
 2. **Install Angular CLI:**
