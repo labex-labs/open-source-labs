@@ -3,12 +3,9 @@
 Before you start, you'll need to install Node.js and npm (Node Package Manager). Angular requires Node.js version 10.13 or later.
 
 1. **Install Node.js and npm:**
-   Visit [Node.js website](https://nodejs.org/) and download the installer for your operating system. This will also install npm.
-
-   Node v16.14 is already installed in the environment for us, use node -v to check the version of Node in the environment, if it is not v16.14, use the following command to install it.
+   Angular requires Node version above 18.13, so first use node -v to check the node version, if it is lower than 18.13, please use the following command to change the node version.
 
    ```bash
-   wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
    nvm install 18.13
    nvm use 18.13
    nvm alias default 18.13

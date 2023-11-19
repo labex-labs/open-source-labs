@@ -10,8 +10,11 @@ Components are the main building block for Angular applications. Each component 
 Let's create a new component named `hello-world`.
 
 ```sh
+cd my-angular-app
 ng generate component hello-world
 ```
+
+> Note: To open a new terminal: Click the + icon.
 
 The `generate` (or just `g`) command creates a new directory with all the files you need:
 

@@ -8,7 +8,11 @@ ng serve --open
 
 The `--open` (or just `-o`) option automatically opens your browser to `http://localhost:4200/`.
 
-> Note: In this lab we use port 8080.
+You can also omit the --open option, but you will have to open the browser by hand.
+
+```sh
+ng serve
+```
 
 If you want to run on another port, you can use the following command to specify the port, for example, 8080.
 
