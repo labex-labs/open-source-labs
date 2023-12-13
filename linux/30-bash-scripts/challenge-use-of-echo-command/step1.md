@@ -31,5 +31,4 @@ Output:
 Printing text with newline
 Printing text without newline
 Removing   backslash   characters
-
 ```
