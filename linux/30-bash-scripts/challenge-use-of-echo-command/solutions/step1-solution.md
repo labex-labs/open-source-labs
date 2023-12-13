@@ -27,6 +27,4 @@ The output should be:
 Printing text with newline
 Printing text without newline-e
 Removing 	 backslash 	 characters
-
-
 ```

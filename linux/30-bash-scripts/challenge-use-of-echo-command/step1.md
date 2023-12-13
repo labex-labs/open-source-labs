@@ -16,3 +16,19 @@ Create a Bash script that demonstrates the use of the `echo` command with variou
   - "Printing text without newline"
   - "Removing backslash characters"
 - The script should be executable.
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+./echo_example.sh
+```
+
+Output:
+
+```bash
+Printing text with newline
+Printing text without newline
+Removing   backslash   characters
+```

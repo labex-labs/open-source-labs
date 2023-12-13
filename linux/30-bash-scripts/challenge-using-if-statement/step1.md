@@ -11,3 +11,23 @@ Create a Bash script that checks if a number is one digit or two digits. The scr
 - The script should take a number as input.
 - The script should output "It is a one digit number" if the number is less than 10.
 - The script should output "It is a two digit number" if the number is greater than or equal to 10.
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash simple_if.sh
+```
+
+Output:
+
+```bash
+Enter a number: 5
+It is a one digit number
+```
+
+```bash
+Enter a number: 15
+It is a two digit number
+```

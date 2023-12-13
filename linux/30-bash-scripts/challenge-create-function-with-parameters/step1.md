@@ -13,3 +13,17 @@ To successfully complete this challenge, the script should:
 - Calculate the area of a rectangle based on the provided parameters
 - Print the result
 - Call the `Rectangle_Area` function with two sample parameters (e.g. 10 and 20)
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash function_parameter.sh
+```
+
+Output:
+
+```bash
+Area is : 200
+```

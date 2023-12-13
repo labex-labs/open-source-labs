@@ -13,3 +13,18 @@ To complete this challenge, you need to create a Bash script named **wait_exampl
 - Stores the process ID of the background process in a variable named "process_id".
 - Waits for the process to complete using the **wait** command and the process ID.
 - Prints the exit status of the process to the console.
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash wait_example.sh
+```
+
+Output:
+
+```bash
+Wait command
+Exited with status 0
+```
