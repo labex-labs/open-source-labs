@@ -6,7 +6,7 @@ Here is an example script that meets the requirements:
 #!/bin/bash
 echo "Enter Your Name"
 read name
-echo "Welcome $name to LinuxHint"
+echo "Welcome $name to LabEx"
 ```
 
 Save this script as 'user_input.sh' and run it with the following command:

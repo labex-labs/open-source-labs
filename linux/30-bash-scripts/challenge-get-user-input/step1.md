@@ -24,5 +24,5 @@ Output:
 ```bash
 Enter Your Name
 John
-Welcome John to LinuxHint
+Welcome John to LabEx
 ```

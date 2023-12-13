@@ -23,5 +23,5 @@ bash string_combine.sh
 Output:
 
 ```bash
-LinuxHint is a good tutorial blog site
+LabEx is a good site
 ```
