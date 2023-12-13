@@ -14,15 +14,15 @@ Create a Bash script named **if_with_AND.sh** that prompts the user to enter a u
 
 ## Example
 
+To run the script, use the following command:
+
 ```bash
 labex:project/ $ bash if_with_AND.sh
-Enter username
-labex
-Enter password
-labex
-invalid user
+```
 
-labex:project/ $ bash if_with_AND.sh
+Output:
+
+```bash
 Enter username
 admin
 Enter password

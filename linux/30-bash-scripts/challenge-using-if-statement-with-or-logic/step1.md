@@ -8,3 +8,20 @@ Create a Bash script named `if_with_OR.sh` that takes a number input from the us
 
 - Bash shell
 - Text editor
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash if_with_OR.sh
+```
+
+Output:
+
+```bash
+
+Enter any number
+15
+You won the game
+```

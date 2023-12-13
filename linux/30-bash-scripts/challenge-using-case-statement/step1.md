@@ -14,3 +14,19 @@ You need to write a Bash script that takes user input for their lucky number and
 - If the input matches 510, output "You got 2nd prize".
 - If the input matches 999, output "You got 3rd prize".
 - If the input does not match any of the above values, output "Sorry, try for the next time".
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash case_example.sh
+```
+
+Output:
+
+```bash
+Enter your lucky number
+101
+You got 1st prize
+```

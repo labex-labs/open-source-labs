@@ -12,3 +12,19 @@ Create a Bash script named `directory_exist.sh` that prompts the user to enter a
 - If the directory exists, the script should print "Directory exist".
 - If the directory does not exist, the script should create the directory using the `mkdir` command.
 - The script should print "Directory created" after creating the directory.
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash directory_exist.sh
+```
+
+Output:
+
+```bash
+Enter directory name
+new_directory
+Directory created
+```

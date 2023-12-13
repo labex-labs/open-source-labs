@@ -9,3 +9,19 @@ In this challenge, we will focus on passing a string value from a Bash function.
 - A Bash script editor
 - Basic knowledge of Bash scripting
 - Access to a Linux or Unix operating system
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+./script.sh
+```
+
+Output:
+
+```bash
+Enter your name
+John
+Return value of the function is Hello, John
+```

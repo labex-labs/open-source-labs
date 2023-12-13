@@ -19,3 +19,18 @@ sleep 5s
 ## Requirements
 
 To complete this challenge, you need to have a basic understanding of Bash commands and how to create and run Bash scripts. You also need to have access to a Linux or Unix operating system.
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash sleep_example.sh
+```
+
+Output:
+
+```bash
+Wait for 5 seconds
+Completed
+```

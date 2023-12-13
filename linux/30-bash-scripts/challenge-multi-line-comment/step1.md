@@ -11,3 +11,21 @@ Create a Bash script that calculates the area of a rectangle. The script should 
 - The script should calculate the area of the rectangle using the formula `area = length * width`.
 - The script should display the calculated area to the user.
 - Use multi-line comments to explain the purpose of the script and any important details.
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+./rectangle-area.sh
+```
+
+Output:
+
+```bash
+Enter the length of the rectangle:
+5
+Enter the width of the rectangle:
+8
+The area of the rectangle is: 40
+```

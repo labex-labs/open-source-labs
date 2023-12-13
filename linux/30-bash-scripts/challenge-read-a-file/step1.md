@@ -12,3 +12,19 @@ You have a file named 'book.txt' that contains some text. Your task is to read t
 - The file name should be stored in a variable.
 - The script should be executable.
 - The original content of the file should be checked using the 'cat' command.
+
+## Example
+
+To run the script, use the following command:
+
+```bash
+bash read_file.sh
+```
+
+Output:
+
+```bash
+This is line 1 of the file.
+This is line 2 of the file.
+This is line 3 of the file.
+```
