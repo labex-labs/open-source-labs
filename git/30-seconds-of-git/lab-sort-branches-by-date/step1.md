@@ -18,7 +18,7 @@ git config --global user.name "your-username"
 git config --global user.email "your-email"
 ```
 
-3. Create a branch called `one`, modify the code and commit it: 
+3. Create a branch called `one`, modify the code and commit it:
 
 ```shell
 git checkout -b one
@@ -27,7 +27,7 @@ git add .
 git commit -m "hello.txt"
 ```
 
-4. Switch to the branch named `master` and create a branch named `two`: 
+4. Switch to the branch named `master` and create a branch named `two`:
 
 ```shell
 git checkout master
