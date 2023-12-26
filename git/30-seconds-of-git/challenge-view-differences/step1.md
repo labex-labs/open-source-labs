@@ -12,7 +12,7 @@ To demonstrate how to view differences in changes, we will use the `git-playgrou
 2. View the differences between your unstaged changes and the last commit.
 3. View the differences between your staged changes and the last commit.
 
-This is the result of completing step 2：
+This is the result of completing step 2: 
 
 ```
 diff --git a/file1.txt b/file1.txt
@@ -24,7 +24,7 @@ index bfccc4a..ee23125 100644
 +hello,labex
 ```
 
-This is the result of completing step 3：
+This is the result of completing step 3: 
 
 ```
 diff --git a/README.md b/README.md

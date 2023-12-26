@@ -11,7 +11,7 @@ Suppose your GitHub account clones a repository called `git-playground` from `ht
 5. Create and switch to the `feature-2` branch using the command `git checkout -b feature-2`, add "world" to the `index.html` file, add it to the staging area and commit, the commit message is "Update index.html file" using the commands `echo "world" > index.htm`, `git add .` and `git commit -am "Update index.html file"`.
 6. View the difference between the two branches using the command `git diff feature-1..feature-2`.
 
-The output should display the difference between the `feature-1` and `feature-2` branches.This shows how the final result will look like：
+The output should display the difference between the `feature-1` and `feature-2` branches.This shows how the final result will look like: 
 
 ```shell
 diff --git a/README.md b/README.md

@@ -39,7 +39,7 @@ To get started, open the editor. You can see the following files from your edito
 
 ## Example
 
-Once you have completed the code, run it with the following command：
+Once you have completed the code, run it with the following command: 
 
 ```bash
 npm start

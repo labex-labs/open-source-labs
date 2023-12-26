@@ -23,7 +23,7 @@ You have been working on a project and have made changes to the local `master` b
    git log
    ```
 
-This is the finished result：
+This is the finished result: 
 
 ```shell
 commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (HEAD -> master, origin/master, origin/feature-branch, origin/HEAD)
