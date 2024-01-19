@@ -1,14 +1,14 @@
+# Solutions
+
 This notebook was prepared by [hashhar](https://github.com/hashhar), second solution added by [janhak](https://github.com/janhak). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
 
-# Solution Notebook
+## Problem: Compress a string such that 'AAABCCDDDD' becomes 'A3BCCD4'. Only compress the string if it saves space
 
-## Problem: Compress a string such that 'AAABCCDDDD' becomes 'A3BCCD4'. Only compress the string if it saves space.
-
-- [Constraints](#Constraints)
-- [Test Cases](#Test-Cases)
-- [Algorithm](#Algorithm)
-- [Code](#Code)
-- [Unit Test](#Unit-Test)
+- [Constraints](#constraints)
+- [Test Cases](#test-cases)
+- [Algorithm](#algorithm)
+- [Code](#code)
+- [Unit Test](#unit-test)
 
 ## Constraints
 

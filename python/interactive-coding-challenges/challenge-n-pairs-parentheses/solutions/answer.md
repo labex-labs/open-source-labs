@@ -1,14 +1,14 @@
+# Solutions
+
 This notebook was prepared by [Rishi Rajasekaran](https://github.com/rishihot55). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
 
-# Solution Notebook
+## Problem: Find all valid combinations of n-pairs of parentheses
 
-## Problem: Find all valid combinations of n-pairs of parentheses.
-
-- [Constraints](#Constraints)
-- [Test Cases](#Test-Cases)
-- [Algorithm](#Algorithm)
-- [Code](#Code)
-- [Unit Test](#Unit-Test)
+- [Constraints](#constraints)
+- [Test Cases](#test-cases)
+- [Algorithm](#algorithm)
+- [Code](#code)
+- [Unit Test](#unit-test)
 
 ## Constraints
 

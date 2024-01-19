@@ -1,13 +1,13 @@
+# Solutions
+
 This notebook was prepared by [mrb00l34n](http://github.com/mrb00l34n). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
 
-# Solution Notebook
+## Problem: Counting Ways of Making Change
 
-## Problem: Counting Ways of Making Change.
-
-- [Hints](#Hints)
-- [Algorithm](#Algorithm)
-- [Code](#Code)
-- [Unit Test](#Unit-Test)
+- [Hints](#hints)
+- [Algorithm](#algorithm)
+- [Code](#code)
+- [Unit Test](#unit-test)
 
 ## Hints
 
