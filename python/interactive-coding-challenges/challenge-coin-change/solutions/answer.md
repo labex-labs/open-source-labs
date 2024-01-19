@@ -1,6 +1,6 @@
-This notebook was prepared by [Donne Martin](https://github.com/donnemartin). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
-
 # Solution Notebook
+
+This notebook was prepared by [Donne Martin](https://github.com/donnemartin). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
 
 ## Problem: Determine the total number of unique ways to make n cents, given coins of denominations less than n cents.
 

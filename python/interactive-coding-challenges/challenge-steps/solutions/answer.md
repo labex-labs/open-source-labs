@@ -1,6 +1,6 @@
-This notebook was prepared by [Donne Martin](https://github.com/donnemartin). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
-
 # Solution Notebook
+
+This notebook was prepared by [Donne Martin](https://github.com/donnemartin). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
 
 ## Problem: You are running up n steps. If you can take a single, double, or triple step, how many possible ways are there to run up to the nth step?
 

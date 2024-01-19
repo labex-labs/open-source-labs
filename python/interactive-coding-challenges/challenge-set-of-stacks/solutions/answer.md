@@ -1,6 +1,6 @@
-This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
-
 # Solution Notebook
+
+This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
 
 ## Problem: Implement SetOfStacks that wraps a list of stacks, where each stack is bound by a capacity.
 

@@ -1,6 +1,6 @@
-This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
-
 # Solution Notebook
+
+This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and license info is on [GitHub](https://github.com/donnemartin/interactive-coding-challenges).
 
 ## Problem: Implement the [Towers of Hanoi](http://en.wikipedia.org/wiki/Tower_of_Hanoi) with 3 towers and N disks.
 
