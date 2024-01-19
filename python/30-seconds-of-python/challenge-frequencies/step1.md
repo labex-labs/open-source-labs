@@ -1,4 +1,4 @@
-## Value Frequencies
+# Value Frequencies
 
 ## Problem
 

@@ -1,4 +1,4 @@
-## Value Frequencies
+# Value Frequencies
 
 Write a Python function called `value_frequencies(lst)` that takes a list as an argument and returns a dictionary with the unique values of the list as keys and their frequencies as the values.
 
