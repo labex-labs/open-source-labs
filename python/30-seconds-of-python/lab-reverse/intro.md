@@ -1,4 +1,4 @@
-# Reverse List Function
+# Introduction
 
 In Python, lists and strings can be reversed using built-in functions. However, it is also possible to reverse a list or a string using slice notation.
 

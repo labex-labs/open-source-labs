@@ -1,3 +1,3 @@
-# Time Formatting and Parsing
+# Introduction
 
 This challenge focuses on time formatting and parsing in Golang. Golang provides pattern-based layouts for time formatting and parsing.

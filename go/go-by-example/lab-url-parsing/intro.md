@@ -1,3 +1,3 @@
-# URL Parsing
+# Introduction
 
 The purpose of this lab is to demonstrate how to parse URLs in Go.
