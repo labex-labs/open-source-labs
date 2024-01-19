@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git push -d <remote> <branch>
 ```

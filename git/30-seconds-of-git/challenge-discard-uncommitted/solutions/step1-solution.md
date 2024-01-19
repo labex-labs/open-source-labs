@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git reset --hard HEAD
 # Discards all unstaged changes

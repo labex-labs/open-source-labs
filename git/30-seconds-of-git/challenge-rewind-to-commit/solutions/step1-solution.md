@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git reset [--hard] <commit>
 

@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git commit --amend -m <message>
 

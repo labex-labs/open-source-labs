@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git log --author=<author>
 ```

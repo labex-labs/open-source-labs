@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git rm —-cached <file>
 git commit —-amend

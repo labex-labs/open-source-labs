@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git cherry-pick (<commit>... | <first-commit>..<last-commit>)
 

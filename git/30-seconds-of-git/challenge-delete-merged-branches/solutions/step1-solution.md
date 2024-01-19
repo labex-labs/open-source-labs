@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git branch --merged master | awk '!/^[ *]*$/ && !/master/ {print $1}' | xargs git branch -d
 ```

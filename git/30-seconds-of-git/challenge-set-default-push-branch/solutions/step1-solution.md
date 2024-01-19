@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git config [--global] push.default current
 

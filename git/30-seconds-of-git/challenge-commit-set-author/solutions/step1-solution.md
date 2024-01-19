@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git commit -m < message > --author="<name> <email>"
 ```

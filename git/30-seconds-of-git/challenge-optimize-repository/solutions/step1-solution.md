@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git gc --prune=now --aggressive
 ```

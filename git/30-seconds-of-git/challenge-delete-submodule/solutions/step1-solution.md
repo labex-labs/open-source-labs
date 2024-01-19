@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git submodule deinit -f -- <submodule>
 rm -rf .git/modules/<submodule>

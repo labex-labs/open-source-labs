@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git config core.eol [lf | crlf]
 ```

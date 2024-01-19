@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git branch <branch>
 git reset HEAD~1 --hard

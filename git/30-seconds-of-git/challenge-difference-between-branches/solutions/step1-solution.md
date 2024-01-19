@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git diff <branch>..<other-branch>
 ```

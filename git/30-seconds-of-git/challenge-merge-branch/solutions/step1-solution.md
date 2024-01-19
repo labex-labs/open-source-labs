@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git checkout <target-branch>
 git merge <source-branch>

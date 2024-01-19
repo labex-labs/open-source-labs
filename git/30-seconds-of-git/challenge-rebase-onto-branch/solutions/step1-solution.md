@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git checkout <branch>
 git rebase <base-branch>

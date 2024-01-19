@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git config -l | grep alias | sed 's/^alias\.//g'
 ```

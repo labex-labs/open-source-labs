@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git config --global core.editor <editor-command>
 

@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git branch -m <old-name> <new-name>
 ```

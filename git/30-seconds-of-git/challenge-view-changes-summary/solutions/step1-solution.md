@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git shortlog <commit>..<other-commit>
 ```

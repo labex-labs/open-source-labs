@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git clean -f -d
 # Discards all untracked changes

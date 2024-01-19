@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git commit --amend --author="<name> <email>"
 ```

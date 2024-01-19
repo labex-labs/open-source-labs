@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git log [--since= [--until= < date-from > ] < date-to > ]
 

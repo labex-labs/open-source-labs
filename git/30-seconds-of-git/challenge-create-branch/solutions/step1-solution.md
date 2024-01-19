@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git checkout -b < branch > [-t < remote > / < branch > ]
 

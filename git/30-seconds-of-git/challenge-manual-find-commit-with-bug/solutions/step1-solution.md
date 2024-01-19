@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git bisect start
 git bisect good <commit>

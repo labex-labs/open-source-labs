@@ -1,3 +1,5 @@
+# Solutions
+
 ```shell
 git checkout <target-branch>
 git merge --no-ff -m <message> <source-branch>
