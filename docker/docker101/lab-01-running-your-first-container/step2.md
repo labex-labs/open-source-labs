@@ -1,12 +1,16 @@
-# Step 1: Run your first container
+# Step 1: Run Your First Container
 
 We are going to use the Docker CLI to run our first container.
 
 Open a terminal on LabEx VM.
 
-Run `docker container run -t ubuntu top`
+Run the command.
 
-Use the `docker container run` command to run a container with the ubuntu image using the `top` command. The `-t` flags allocate a pseudo-TTY which we need for the `top` to work correctly.
+```bash
+docker container run -t ubuntu top
+```
+
+Use the `docker container run` command to run a container with the `ubuntu` image using the `top` command. The `-t` flags allocate a pseudo-TTY which we need for the `top` to work correctly.
 
 ```bash
 $ docker container run -it ubuntu top

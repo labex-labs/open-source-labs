@@ -13,9 +13,20 @@ Instead of using the `-v` syntax with three fields separated by colon separator 
 - mount.
 
 ```bash
+cd /home/labex/project
 mkdir data
 docker run -it --name busybox --mount type=bind,source="$(pwd)"/data,target=/data busybox sh
-/ # echo "hello busybox" > /data/hi.txt
-/ # exit
+```
+
+Type the command in the container:
+
+```
+echo "hello busybox" > /data/hi.txt
+exit
+```
+
+Vertify the file was created on the host machine.
+
+```
 cat data/hi.txt
 ```

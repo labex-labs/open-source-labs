@@ -23,9 +23,9 @@ docker run -d -p 5984:5984 --name my-couchdb -e COUCHDB_USER=admin -e COUCHDB_PA
 CouchDB will create an anonymous volume and generated a hashed name. Check the volumes on your host system,
 
 ```bash
-$ docker volume ls
+labex:~/ $ docker volume ls
 DRIVER    VOLUME NAME
-local    f543c5319ebd96b7701dc1f2d915f21b095dfb35adbb8dc851630e098d526a50
+local     1d292aca855adb9de9be7acea88f6d3f8e6a08eef5bfd986a81f073f1906b82f
 ```
 
 Set an environment variable `VOLUME` with the value of the generated name,
@@ -67,15 +67,22 @@ docker stop my-couchdb
 docker start my-couchdb
 ```
 
-Retrieve the document in the database to test that the data was persisted,
+Retrieve the document in the database to test that the data was persisted.
 
 ```bash
-$ curl -X GET -u admin:passw0rd1 http://127.0.0.1:5984/mydb/_all_docs
+curl -X GET -u admin:passw0rd1 http://127.0.0.1:5984/mydb/_all_docs
+curl -X GET -u admin:passw0rd1 http://127.0.0.1:5984/mydb/1
+```
+
+Output:
+
+```
+# $ curl -X GET -u admin:passw0rd1 http://127.0.0.1:5984/mydb/_all_docs
 {"total_rows":1,"offset":0,"rows":[
 {"id":"1","key":"1","value":{"rev":"1-c09289617e06b96bc747fb1201fea7f1"}}
 ]}
 
-$ curl -X GET -u admin:passw0rd1 http://127.0.0.1:5984/mydb/1
+# $ curl -X GET -u admin:passw0rd1 http://127.0.0.1:5984/mydb/1
 {"_id":"1","_rev":"1-c09289617e06b96bc747fb1201fea7f1","msg":"hello world"}
 ```
 
@@ -96,9 +103,9 @@ hi.log
 Make sure the container `busybox1` is stopped but not removed.
 
 ```bash
-$ docker ps -a
-CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
-437fb4a271c1    busybox    "sh"    18 seconds ago    Exited (0) 4 seconds ago    busybox1
+labex:~/ $ docker ps -a | grep busybox1
+f4dbf9ee7513   busybox                               "sh"                     2 minutes ago   Exited (0) About a minute ago                                                                                                                                          busybox1
+
 ```
 
 Then create a second `busybox` container named `busybox2` using the `--volumes-from` option to share the volume created by `busybox1`,
@@ -106,6 +113,10 @@ Then create a second `busybox` container named `busybox2` using the `--volumes-f
 ```bash
 $ docker run --rm -it --name busybox2 --volumes-from busybox1 busybox sh
 / # ls -al /data
+total 12
+drwxr-xr-x    2 root     root          4096 Jan 23 07:20 .
+drwxr-xr-x    1 root     root          4096 Jan 23 07:24 ..
+-rw-r--r--    1 root     root            20 Jan 23 07:20 hi.log
 / # cat /data/hi.log
 hello from busybox1
 / # exit
@@ -114,10 +125,10 @@ hello from busybox1
 Docker created the anynomous volume that you were able to share using the `--volumes-from` option, and created a new anonymous volume.
 
 ```bash
-$ docker volume ls
+labex:~/ $ docker volume ls
 DRIVER    VOLUME NAME
-local    83a3275e889506f3e8ff12cd50f7d5b501c1ace95672334597f9a071df439493
-local    f4e6b9f9568eeb165a56b2946847035414f5f9c2cad9ff79f18e800277ae1ebd
+local     0f971b2477d5fc0d0c2b31fc908ee59d6b577b4887e381964650ce6853890dc9
+local     1d292aca855adb9de9be7acea88f6d3f8e6a08eef5bfd986a81f073f1906b82f
 ```
 
 Cleanup the existing volumes and container.
@@ -149,10 +160,10 @@ DRIVER    VOLUME NAME
 local    my-couchdb-data-volume
 ```
 
-Now create the CouchDB container using the `named volume`,
+Now create the CouchDB container named `my-couchdb-name-vol` using the `named volume`,
 
 ```bash
-docker run -d -p 5984:5984 --name my-couchdb -v my-couchdb-data-volume:/opt/couchdb/data -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=passw0rd1 couchdb:3.1
+docker run -d -p 59840:5984 --name my-couchdb-name-vol -v my-couchdb-data-volume:/opt/couchdb/data -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=passw0rd1 couchdb:3.1
 ```
 
 Wait until the CouchDB container is running and the instance is available.
@@ -160,22 +171,23 @@ Wait until the CouchDB container is running and the instance is available.
 Create a new database `mydb` and insert a new document with a `hello world` message.
 
 ```bash
-curl -X PUT -u admin:passw0rd1 http://127.0.0.1:5984/mydb
-curl -X PUT -u admin:passw0rd1 http://127.0.0.1:5984/mydb/1 -d '{"msg": "hello world"}'
+curl -X PUT -u admin:passw0rd1 http://127.0.0.1:59840/mydb
+curl -X PUT -u admin:passw0rd1 http://127.0.0.1:59840/mydb/1 -d '{"msg": "hello world"}'
 ```
 
 It now is easy to share the volume with another container. For instance, read the content of the volume using the `busybox` image, and share the `my-couchdb-data-volume` volume by mounting the volume to a directory in the `busybox` container.
 
 ```bash
-$ docker run --rm -it --name busybox -v my-couchdb-data-volume:/myvolume busybox sh
-/ # ls -al /myvolume/
+labex:~/ $ docker run --rm -it --name busybox -v my-couchdb-data-volume:/myvolume busybox sh
+/ # 
+/ # ls -al /myvolume
 total 40
-drwxr-xr-x    4 5984    5984    4096 Sep 24 17:11 .
-drwxr-xr-x    1 root    root    4096 Sep 24 17:14 ..
-drwxr-xr-x    2 5984    5984    4096 Sep 24 17:11 .delete
--rw-r--r--    1 5984    5984    8388 Sep 24 17:11 _dbs.couch
--rw-r--r--    1 5984    5984    8385 Sep 24 17:11 _nodes.couch
-drwxr-xr-x    4 5984    5984    4096 Sep 24 17:11 shards
+drwxr-xr-x    4 5984     5984          4096 Jan 23 07:30 .
+drwxr-xr-x    1 root     root          4096 Jan 23 07:31 ..
+drwxr-xr-x    2 5984     5984          4096 Jan 23 07:29 .delete
+-rw-r--r--    1 5984     5984          8388 Jan 23 07:30 _dbs.couch
+-rw-r--r--    1 5984     5984          8385 Jan 23 07:29 _nodes.couch
+drwxr-xr-x    4 5984     5984          4096 Jan 23 07:30 shards
 / # exit
 ```
 
@@ -210,6 +222,7 @@ Let's use a directory in the current working directory (indicated with the comma
 Run the following command,
 
 ```bash
+cd /home/labex/project
 docker run -d -p 5984:5984 --name my-couchdb -v $(pwd)/data:/opt/couchdb/data -e COUCHDB_USER=admin -e COUCHDB_PASSWORD=passw0rd1 couchdb:3.1
 ```
 
@@ -220,9 +233,7 @@ $ ls -al
 total 20
 drwxrwxr-x  3 labex labex 4096 Aug 29 14:14 .
 drwxr-x--- 25 labex labex 4096 Aug 29 14:14 ..
--rw-r--r--  1 labex labex  169 Aug 29 14:04 app.py
 drwxr-xr-x  3  5984  5984 4096 Aug 29 14:14 data
--rw-r--r--  1 labex labex   98 Aug 29 13:52 Dockerfile
 ```
 
 and that CouchDB has created data files here,
@@ -247,10 +258,12 @@ and
 
 ```bash
 docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
-/ # ls -l /var/lib/docker/volumes
-total 24
--rw-------    1 root     root         32768 Nov 10 16:00 metadata.db
-/ # exit
+sh-5.1# ls -l /var/lib/docker/volumes
+total 28
+brw------- 1 root root 252, 3 Jan 23 15:15 backingFsBlockDev
+-rw------- 1 root root  32768 Jan 23 15:33 metadata.db
+drwx-----x 3 root root   4096 Jan 23 15:26 my-couchdb-data-volume
+sh-5.1# exit
 ```
 
 Create a new database `mydb` and insert a new document with a `hello world` message.

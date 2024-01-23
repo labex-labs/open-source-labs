@@ -19,43 +19,20 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0")' > app.py
 ```
 
-## Rebuild and push your image
+## Rebuild and Push Your Image
 
 Now that your app is updated, you need repeat the steps above to rebuild your app and push it to the Docker Hub registry.
 
 First rebuild, this time use your Docker Hub username in the build command:
 
 ```bash
-$  docker image build -t $DOCKERHUB_USERNAME/python-hello-world .
-Sending build context to Docker daemon  3.072kB
-Step 1/4 : FROM python:3.6.1-alpine
----> c86415c03c37
-Step 2/4 : RUN pip install flask
----> Using cache
----> ce41f2517c16
-Step 3/4 : CMD python app.py
----> Using cache
----> 0ab91286958b
-Step 4/4 : COPY app.py /app.py
----> 3e08b2eeace1
-Removing intermediate container 23a955e881fc
-Successfully built 3e08b2eeace1
-Successfully tagged <dockerhub-username>/python-hello-world:latest
+docker image build -t $DOCKERHUB_USERNAME/python-hello-world .
 ```
 
 Notice the "Using cache" for steps 1-3. These layers of the Docker Image have already been built and `docker image build` will use these layers from the cache instead of rebuilding them.
 
 ```bash
-$ docker push $DOCKERHUB_USERNAME/python-hello-world
-The push refers to a repository [docker.io/<dockerhub-username>/python-hello-world]
-94525867566e: Pushed
-64d445ecbe93: Layer already exists
-18b27eac38a1: Layer already exists
-3f6f25cd8b1e: Layer already exists
-b7af9d602a0f: Layer already exists
-ed06208397d5: Layer already exists
-5accac14015f: Layer already exists
-latest: digest: sha256:91874e88c14f217b4cab1dd5510da307bf7d9364bd39860c9cc8688573ab1a3a size: 1786
+docker push $DOCKERHUB_USERNAME/python-hello-world
 ```
 
 There is a caching mechanism in place for pushing layers too. Docker Hub already has all but one of the layers from an earlier push, so it only pushes the one layer that has changed.

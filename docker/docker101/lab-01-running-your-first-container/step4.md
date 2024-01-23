@@ -1,4 +1,4 @@
-# Step 3: Clean Up
+# Step 3: Clean up
 
 Completing this lab results in a bunch of running containers on your host. Let's clean these up.
 

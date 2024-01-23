@@ -1,4 +1,4 @@
-# Step 2: Create and build the Docker Image
+# Step 2: Create and Build the Docker Image
 
 Now, what if you don't have python installed locally? Don't worry! Because you don't need it. One of the advantages of using containers is that you can build python inside your containers, without having python installed on your host machine.
 
@@ -48,59 +48,13 @@ Build the docker image.
 Pass in `-t` to name your image `python-hello-world`.
 
 ```bash
-$  docker image build -t python-hello-world .
-Sending build context to Docker daemon  3.072kB
-Step 1/4 : FROM python:3.8-alpine
-3.8-alpine: Pulling from library/python
-df20fa9351a1: Pull complete
-36b3adc4ff6f: Pull complete
-3e7ef1bb9eba: Pull complete
-78538f72d6a9: Pull complete
-07bc731e0055: Pull complete
-Digest: sha256:cbc08bfc4b1b732076742f52852ede090e960ab7470d0a60ee4f964cfa7c710a
-Status: Downloaded newer image for python:3.8-alpine
----> 0f03316d4a27
-Step 2/4 : RUN pip install flask
----> Running in 1454bdd1ea98
-Collecting flask
-Downloading Flask-1.1.2-py2.py3-none-any.whl (94 kB)
-Collecting itsdangerous>=0.24
-Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
-Collecting Werkzeug>=0.15
-Downloading Werkzeug-1.0.1-py2.py3-none-any.whl (298 kB)
-Collecting click>=5.1
-Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
-Collecting Jinja2>=2.10.1
-Downloading Jinja2-2.11.2-py2.py3-none-any.whl (125 kB)
-Collecting MarkupSafe>=0.23
-Downloading MarkupSafe-1.1.1.tar.gz (19 kB)
-Building wheels for collected packages: MarkupSafe
-Building wheel for MarkupSafe (setup.py): started
-Building wheel for MarkupSafe (setup.py): finished with status 'done'
-Created wheel for MarkupSafe: filename=MarkupSafe-1.1.1-py3-none-any.whl size=12627 sha256=155e3314602dfac3c8ea245edc217c235afb4c818932574d6d61529ef0c14ea4
-Stored in directory: /root/.cache/pip/wheels/0c/61/d6/4db4f4c28254856e82305fdb1f752ed7f8482e54c384d8cb0e
-Successfully built MarkupSafe
-Installing collected packages: itsdangerous, Werkzeug, click, MarkupSafe, Jinja2, flask
-Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 flask-1.1.2 itsdangerous-1.1.0
-Removing intermediate container 1454bdd1ea98
----> 97d747fc7771
-Step 3/4 : CMD ["python","app.py"]
----> Running in e2bf74801c81
-Removing intermediate container e2bf74801c81
----> d5adbccf5116
-Step 4/4 : COPY app.py /app.py
----> 3c24958f29d3
-Successfully built 3c24958f29d3
-Successfully tagged python-hello-world:latest
+docker image build -t python-hello-world .
 ```
 
-Verify that your image shows up in your image list via `docker image ls`.
+Verify that your image shows up in your image list.
 
 ```bash
-$ docker image ls
-REPOSITORY    TAG    IMAGE ID    CREATED    SIZE
-python-hello-world   latest    3c24958f29d3    52 seconds ago      53.4MB
-python    3.8-alpine    0f03316d4a27    2 weeks ago    42.7MB
+docker image ls
 ```
 
 **Note** that your base image `python:3.8-alpine` is also in your list.
