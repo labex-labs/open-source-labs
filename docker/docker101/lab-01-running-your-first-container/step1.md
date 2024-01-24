@@ -2,8 +2,6 @@
 
 Open a terminal on LabEx VM and run the `docker -h`, which will show you the help page for the Docker CLI.
 
-![image](./assets/20230829-11-06-18-8MzuWVgt.png)
-
 ```bash
 $ docker -h
 Flag shorthand -h has been deprecated, please use --help
@@ -42,11 +40,13 @@ sudo apt-get install podman
 
 If `podman` is installed, you can run the alternative command for comparison.
 
+If you do not have `podman` installed, you can run the `sudo apt-get update && sudo apt-get upgrade` command to upgrade the software.
+
 ```bash
 sudo podman -h
 ```
 
-You can additionally review the version of your Docker installation,
+You can additionally review the version of your Docker installation by `docker version`
 
 ```bash
 docker version

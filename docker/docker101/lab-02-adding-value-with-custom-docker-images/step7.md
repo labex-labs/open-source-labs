@@ -8,15 +8,12 @@ First get a list of the containers running using `docker container ls`.
 
 ```bash
 $ docker container ls
-CONTAINER ID        IMAGE                COMMAND             CREATED             STATUS              PORTS                    NAMES
-0b2ba61df37f        python-hello-world   "python app.py"     7 minutes ago       Up 7 minutes        0.0.0.0:5001->5000/tcp   practical_kirch
 ```
 
-Then run `docker container stop [container id]` for each container in the list.
+Then run the command for each container in the list.
 
 ```bash
-$ docker container stop 0b2
-0b2
+$ docker container stop <container_id>
 ```
 
 Remove the stopped containers

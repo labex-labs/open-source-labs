@@ -1,4 +1,4 @@
-# Step 1: Create a python app (without using Docker)
+# Step 1: Create a `Python` App (without Using Docker)
 
 Run the following command to create a file named `app.py` with a simple python program. (copy-paste the entire code block)
 
@@ -37,6 +37,6 @@ $ python3 app.py
  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 ```
 
-Open the **PORTS** tab in the terminal window and click on the link to open the app in a new browser tab.
+Open the app in a new browser tab using `http://0.0.0.0:5000/`.
 
 ![image](./assets/20230829-13-51-38-psaOqQ42.png)

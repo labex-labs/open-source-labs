@@ -8,20 +8,12 @@ When searching for images you will find filters for "Docker Certified", "Verifie
 
 In step 2 of this lab, we will start a couple of containers using some verified images from the Docker Hub: nginx web server, and mongo database.
 
-## Run an Nginx server
+## Run an Nginx Server
 
 Let's run a container using the [official Nginx image](https://hub.docker.com/_/nginx) from the Docker Hub.
 
 ```bash
-$ docker container run --detach --publish 8080:80 --name nginx nginx
-Unable to find image 'nginx:latest' locally
-latest: Pulling from library/nginx
-36a46ebd5019: Pull complete
-57168433389f: Pull complete
-332ec8285c50: Pull complete
-Digest: sha256:c15f1fb8fd55c60c72f940a76da76a5fccce2fefa0dd9b17967b9e40b0355316
-Status: Downloaded newer image for nginx:latest
-5e1bf0e6b926bd73a66f98b3cbe23d04189c16a43d55dd46b8486359f6fdf048
+docker container run --detach --publish 8080:80 --name nginx nginx
 ```
 
 We are using a couple of new flags here. The `--detach` flag will run this container in the background. The `publish` flag publishes port 80 in the container (the default port for nginx), via port 8080 on our host. Remember that the NET namespace gives processes of the container their own network stack. The `--publish` flag is a feature that allows us to expose networking through the container onto the host.
@@ -36,41 +28,19 @@ Nginx is a lightweight web server. You can access the nginx server on **Web 8080
 
 ![step 2 nginx](./assets/20230829-11-16-04-BazUogDa.png)
 
-## Run a mongo DB server
+## Run a `mongo` DB Server
 
 Now, run a mongoDB server. We will use the [official mongoDB image](https://hub.docker.com/_/mongo) from the Docker Hub. Instead of using the `latest` tag (which is the default if no tag is specified), we will use a specific version of the mongo image: 4.4.
 
 ```bash
-$ docker container run --detach --publish 8081:27017 --name mongo mongo:4.4
-Unable to find image mongo:4.4 locally
-4.4: Pulling from library/mongo
-d13d02fa248d: Already exists
-bc8e2652ce92: Pull complete
-3cc856886986: Pull complete
-c319e9ec4517: Pull complete
-b4cbf8808f94: Pull complete
-cb98a53e6676: Pull complete
-f0485050cd8a: Pull complete
-ac36cdc414b3: Pull complete
-61814e3c487b: Pull complete
-523a9f1da6b9: Pull complete
-3b4beaef77a2: Pull complete
-Digest: sha256:d13c897516e497e898c229e2467f4953314b63e48d4990d3215d876ef9d1fc7c
-Status: Downloaded newer image for mongo:4.4
-d8f614a4969fb1229f538e171850512f10f490cb1a96fca27e4aa89ac082eba5
+docker container run --detach --publish 8081:27017 --name mongo mongo:4.4
 ```
 
 Again, since this is the first time we are running a mongo container, we will pull down the mongo image from the Docker Store. We are using the `--publish` flag to expose the 27017 mongo port on our host. We have to use a port other than 8080 for the host mapping, since that port is already exposed on our host. Again refer to the [official docs](https://hub.docker.com/_/mongo) on the Docker Hub to get more details about using the mongo image.
 
-Switch to the **PORTS** of LabEx VM, and click on the **Port 8081** link to see the output from mongoDB. You should see a message
+See the output from mongoDB using `0.0.0.0:8081` in the Web browser. You should see a message which will return a warning from MongoDB.
 
 ![image](./assets/20230829-11-19-23-PkodKK48.png)
-
-which will return a warning from MongoDB,
-
-```bash
-It looks like you are trying to access MongoDB over HTTP on the native driver port.
-```
 
 Check your running containers with `docker container ls`
 
