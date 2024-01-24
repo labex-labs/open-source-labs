@@ -179,7 +179,7 @@ It now is easy to share the volume with another container. For instance, read th
 
 ```bash
 labex:~/ $ docker run --rm -it --name busybox -v my-couchdb-data-volume:/myvolume busybox sh
-/ # 
+/ #
 / # ls -al /myvolume
 total 40
 drwxr-xr-x    4 5984     5984          4096 Jan 23 07:30 .

@@ -12,8 +12,8 @@ You can log into the image registry account by typing `docker login` on your ter
 
 ```bash
 labex:project/ $ export DOCKERHUB_USERNAME=<your_docker_username>
-labex:project/ $ docker login docker.io -u $DOCKERHUB_USERNAME 
-Password: 
+labex:project/ $ docker login docker.io -u $DOCKERHUB_USERNAME
+Password:
 WARNING! Your password will be stored unencrypted in /home/labex/.docker/config.json.
 Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
