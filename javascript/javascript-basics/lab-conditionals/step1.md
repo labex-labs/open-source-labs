@@ -1,6 +1,6 @@
 # Conditionals
 
-> Open the Terminal/SSH and type node to start practicing coding.
+> Open the Terminal/SSH and type `node` to start practicing coding.
 
 Conditionals are code structures used to test if an expression returns true or not. A very common form of conditionals is the `if...else` statement. For example:
 

@@ -1,6 +1,6 @@
 # Variables
 
-> Open the Terminal/SSH and type node to start practicing coding.
+> Open the Terminal/SSH and type `node` to start practicing coding.
 
 Variables are containers that store values. You start by declaring a variable with the [`let`](/en-US/docs/Web/JavaScript/Reference/Statements/let) keyword, followed by the name you give to the variable:
 

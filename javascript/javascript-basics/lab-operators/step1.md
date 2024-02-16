@@ -1,6 +1,6 @@
 # Addition
 
-> Open the Terminal/SSH and type node to start practicing coding.
+> Open the Terminal/SSH and type `node` to start practicing coding.
 
 An `operator` is a mathematical symbol that produces a result based on two values (or variables).
 
