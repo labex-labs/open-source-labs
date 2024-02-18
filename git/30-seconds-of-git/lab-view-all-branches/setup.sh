@@ -7,3 +7,6 @@ git branch two-branch
 git branch three-branch
 git branch four-branch
 git branch five-branch
+
+# Initialize .zsh_history
+touch /home/labex/.zsh_history
