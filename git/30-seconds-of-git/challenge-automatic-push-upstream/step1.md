@@ -1,7 +1,5 @@
 # Automate Upstream Branch Creation
 
-## Problem
-
 As a developer, you want to automate the process of creating upstream branches on push to avoid the hassle of manually creating the branch on the remote repository.
 
 ## Example

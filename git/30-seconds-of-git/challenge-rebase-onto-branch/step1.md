@@ -1,7 +1,5 @@
 # Rebase onto Another Branch
 
-## Problem
-
 As a developer, you are working on a project with multiple branches. You have made changes to your branch and want to incorporate those changes into another branch. However, you don't want to merge the branches because you want to maintain a clean and linear history.
 
 ## Example

@@ -1,7 +1,5 @@
 # Create a Git Commit
 
-## Problem
-
 You have made some changes to your code and want to save them as a snapshot in your Git repository. However, you don't want to save all the changes you made, only the ones that are relevant to the current feature or bug fix. How can you create a commit containing only the relevant changes?
 
 ## Example

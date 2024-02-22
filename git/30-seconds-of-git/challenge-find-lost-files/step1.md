@@ -1,7 +1,5 @@
 # Find Lost Files
 
-## Problem
-
 You have been working on a project in the `git-playground` repository. However, you have noticed that some files are missing and you are not sure when they were deleted or how to recover them. Your task is to use Git to find any lost files and commits in the repository.
 
 ## Example

@@ -1,7 +1,5 @@
 # Apply the Latest Stash
 
-## Problem
-
 You are working on a project in your Git repository and have made some changes that are not yet ready to be committed. However, you need to switch to another branch or commit to work on a different feature. You don't want to lose your changes, so you decide to stash them. Later, when you're ready to continue working on your changes, you need to apply the latest stash to your working directory.
 
 ## Example

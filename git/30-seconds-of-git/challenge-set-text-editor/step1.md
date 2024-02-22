@@ -1,7 +1,5 @@
 # Configure the git text editor
 
-## Problem
-
 You want to configure the text editor used by Git to your preferred editor.
 
 ## Example

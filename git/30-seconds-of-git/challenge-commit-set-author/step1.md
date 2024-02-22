@@ -1,7 +1,5 @@
 # Create a commit by a different author
 
-## Problem
-
 Suppose you are working on a project with a team of developers, and one of your team members has made some changes to the code. However, they are not available to commit the changes themselves, and you need to create a commit on their behalf. In this scenario, you can use the `--author` option to change the name and email of the commit's author. This option is useful when you need to attribute a commit to a different person, such as when you are committing code on behalf of a colleague who is on vacation or sick leave.
 
 ## Example

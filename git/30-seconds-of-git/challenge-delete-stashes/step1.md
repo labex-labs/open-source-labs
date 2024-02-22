@@ -1,7 +1,5 @@
 # Delete All Stashes
 
-## Problem
-
 You have been working on a project in a Git repository and have created multiple stashes to save your changes. Now, you want to delete all stashes to start fresh. However, you are not sure how to do it.
 
 ## Example

@@ -1,7 +1,5 @@
 # Return to Previous Branch
 
-## Problem
-
 As a developer, you are working on a project and have switched to a different branch to work on a new feature. After making some changes, you realize that you need to switch back to the previous branch to fix a bug. You can commit your changes in a new branch and use a command to quickly switch to the previous branch.
 
 ## Example

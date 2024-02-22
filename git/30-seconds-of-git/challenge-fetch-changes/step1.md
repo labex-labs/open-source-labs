@@ -1,7 +1,5 @@
 # Fetch Latest Changes from Remote
 
-## Problem
-
 Suppose you are working on a project with a team of developers, and the project is stored in a remote repository. You want to get the latest changes from the remote repository without applying them to your local repository.
 
 ## Example

@@ -1,7 +1,5 @@
 # View Differences in Changes
 
-## Problem
-
 As a developer, you may want to view the differences between your staged or unstaged changes and the last commit. This is useful when you want to review your changes before committing them or when you want to see what changes you have made since the last commit.
 
 ## Example

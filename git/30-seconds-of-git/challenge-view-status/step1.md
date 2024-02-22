@@ -1,7 +1,5 @@
 # View Current Status
 
-## Problem
-
 As a developer, it's important to know the current status of your Git repository. This includes information about which files have been modified, which files are staged for commit, and which files are untracked.
 
 Your task is to view the current status of the Git repository located at `https://github.com/labex-labs/git-playground`. You should pay attention to the output of the command and try to understand what it means.

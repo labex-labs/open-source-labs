@@ -1,7 +1,5 @@
 # Delete a Remote Branch
 
-## Problem
-
 Sometimes, you may need to delete a remote branch that is no longer needed. For example, if a feature branch has been merged into the main branch, you may want to delete the remote feature branch to keep the repository clean.
 
 ## Example

@@ -1,7 +1,5 @@
 # Rewind to a Specific Commit
 
-## Problem
-
 As a developer, you may need to undo changes made to your codebase. For example, you may have made a mistake and need to go back to an earlier version of your code. In this challenge, you will use Git to rewind back to a specific commit in a repository.
 
 ## Example

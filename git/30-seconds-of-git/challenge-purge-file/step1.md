@@ -1,7 +1,5 @@
 # Purge a file from history
 
-## Problem
-
 Suppose you accidentally committed a file containing sensitive information, such as API keys or passwords, to your Git repository. You realize that this file should never have been committed and want to completely remove it from the repository's history. However, simply deleting the file and committing the change will not remove it from the repository's history. The file will still be accessible in previous commits, which could pose a security risk.
 
 ## Example

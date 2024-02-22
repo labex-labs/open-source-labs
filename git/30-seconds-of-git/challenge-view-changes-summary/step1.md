@@ -1,7 +1,5 @@
 # View Changes Between Commits
 
-## Problem
-
 As a developer, you have been working on a project hosted on the `https://github.com/labex-labs/git-playground` repository. You have made several commits to the repository, and you want to view a summary of the changes between two specific commits. However, you are not sure how to do this using Git.
 
 ## Example

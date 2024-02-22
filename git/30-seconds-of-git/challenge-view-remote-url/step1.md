@@ -1,7 +1,5 @@
 # View the Remote URL
 
-## Problem
-
 As a developer, you may need to view the URL of a remote repository for various reasons, such as troubleshooting issues with your Git configuration or verifying that you are working with the correct repository. However, if you are not familiar with Git commands, it can be challenging to know how to view the remote URL.
 
 ## Example

@@ -1,7 +1,5 @@
 # Change the Remote URL
 
-## Problem
-
 You have cloned a repository from GitHub and made some changes to it. However, you now realize that you need to change the URL of the remote repository. This could be because the original repository has been moved to a different location, or because you want to push your changes to a different remote repository. Your task is to change the remote URL of the repository using Git commands.
 
 ## Example

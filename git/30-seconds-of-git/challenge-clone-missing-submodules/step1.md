@@ -1,7 +1,5 @@
 # Clone Missing Submodules
 
-## Problem
-
 You are working on a project that contains submodules. When you clone the project, the submodules are not automatically cloned. This causes issues when trying to build or run the project. You need to clone the missing submodules and checkout the correct commits.
 
 ## Example

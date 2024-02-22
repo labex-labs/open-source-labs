@@ -1,7 +1,5 @@
 # Create an Empty Commit
 
-## Problem
-
 You need to create an empty commit in your Git repository. This can be useful in several scenarios, such as:
 
 - Triggering a build process

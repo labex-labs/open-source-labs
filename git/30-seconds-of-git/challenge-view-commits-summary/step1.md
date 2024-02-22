@@ -1,7 +1,5 @@
 # View a Short Summary of Commits
 
-## Problem
-
 As a developer, you are working on a project with multiple contributors. You need to view a summary of all the commits made to the project to understand the changes that have been made and to identify any potential issues. However, you don't want to spend a lot of time sifting through all the commit messages to find the information you need.
 
 ## Example

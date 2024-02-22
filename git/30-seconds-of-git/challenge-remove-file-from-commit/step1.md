@@ -1,7 +1,5 @@
 # Remove a File from the Last Commit
 
-## Problem
-
 You have added a file to the last commit that you didn't intend to include. You want to remove the file from the last commit without changing its message.
 
 ## Example

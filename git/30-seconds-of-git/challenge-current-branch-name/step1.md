@@ -1,7 +1,5 @@
 # Get the Current Branch Name
 
-## Problem
-
 Write a command that prints the name of the current branch in a Git repository.
 
 ## Example

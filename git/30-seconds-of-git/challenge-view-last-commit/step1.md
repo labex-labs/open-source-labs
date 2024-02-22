@@ -1,7 +1,5 @@
 # View Last Commit
 
-## Problem
-
 You are working on a project with a team of developers, and you need to view the last commit made to the project's Git repository. You want to see the details of the commit, including the commit message, author, and date.
 
 ## Example

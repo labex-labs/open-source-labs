@@ -1,7 +1,5 @@
 # Delete a Git Stash
 
-## Problem
-
 You have a Git repository named `https://github.com/labex-labs/git-playground`. You have created a stash using the command `git stash save "my stash"`. Now, you want to delete this stash because you no longer need it.
 
 ## Example

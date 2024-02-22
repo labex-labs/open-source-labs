@@ -1,7 +1,5 @@
 # Reset Local Master Branch to Match Remote
 
-## Problem
-
 You have been working on a project and have made changes to the local `master` branch. However, you realize that the remote `master` branch has been updated with new changes that you do not have in your local branch. You need to reset the local `master` branch to match the one on the remote.
 
 ## Example

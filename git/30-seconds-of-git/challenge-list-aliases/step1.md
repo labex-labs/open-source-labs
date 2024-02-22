@@ -1,7 +1,5 @@
 # List All Git Aliases
 
-## Problem
-
 As a developer, you may want to list all the Git aliases that have been set up on your system. This can be useful for several reasons, such as:
 
 - Checking which aliases are available

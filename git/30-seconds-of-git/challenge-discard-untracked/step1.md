@@ -1,7 +1,5 @@
 # Discard Untracked Changes
 
-## Problem
-
 You are working on a project using Git and have made some changes to your working directory. However, you realize that you don't need these changes and want to discard them. You want to discard all untracked changes to the current branch.
 
 ## Example

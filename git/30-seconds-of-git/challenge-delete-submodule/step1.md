@@ -1,7 +1,5 @@
 # Delete a Submodule
 
-## Problem
-
 You have a Git repository that includes a submodule named `sha1collisiondetection`. You want to delete this submodule from your repository.
 
 ## Example

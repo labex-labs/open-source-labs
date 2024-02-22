@@ -1,7 +1,5 @@
 # Set Default Push Branch Name
 
-## Problem
-
 When pushing changes to a remote repository, Git will use the name of the current local branch as the default name for the remote branch. However, sometimes you may want to push your changes to a different branch. In this case, you would need to specify the name of the remote branch explicitly every time you push your changes. This can be tedious and error-prone, especially if you are working with multiple branches.
 
 ## Example

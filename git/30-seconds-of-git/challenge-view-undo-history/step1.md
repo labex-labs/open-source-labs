@@ -1,7 +1,5 @@
 # View "Undo" History
 
-## Problem
-
 As a developer, you may need to undo changes that you've made to your codebase. Git provides several ways to undo changes, such as using the `git reset` or `git revert` commands. However, it can be difficult to keep track of all the actions you've taken, especially if you've used more advanced commands like `git rebase`.
 
 ## Example

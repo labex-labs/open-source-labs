@@ -1,7 +1,5 @@
 # Rename a Branch
 
-## Problem
-
 As a developer, you may need to rename a branch for various reasons, such as to make it more descriptive or to follow a naming convention. Renaming a branch can be a simple task, but it requires some knowledge of Git commands. In this challenge, you will learn how to rename a branch using Git.
 
 ## Example

@@ -1,7 +1,5 @@
 # Find Branches Containing a Commit
 
-## Problem
-
 You have been given a Git repository named `https://github.com/labex-labs/git-playground`. Your task is to find all branches that contain a hash with the commit message "Added file2.txt".
 
 ## Example

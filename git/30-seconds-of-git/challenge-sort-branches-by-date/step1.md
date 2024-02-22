@@ -1,7 +1,5 @@
 # Sort Git Branches by Date
 
-## Problem
-
 You have a Git repository with multiple branches, and you want to sort them by date. This will allow you to see which branches have been updated recently and which ones have not. Sorting branches by date can also help you identify branches that may need attention or merging.
 
 ## Example

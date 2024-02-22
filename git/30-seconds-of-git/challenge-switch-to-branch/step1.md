@@ -1,7 +1,5 @@
 # Switch to a Branch
 
-## Problem
-
 You have been working on a project in a Git repository named `https://github.com/labex-labs/git-playground`. Your team has created a new branch named `feature-1` to work on a new feature. You need to switch to the `feature-1` branch to continue working on the feature.
 
 ## Example

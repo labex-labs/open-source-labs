@@ -1,7 +1,5 @@
 # Discard Uncommitted Changes
 
-## Problem
-
 You have made some changes to your local Git repository, but you have not yet committed them. However, you have decided that you no longer want to keep these changes and want to discard them. The problem is to find a way to discard all uncommitted changes to the current branch.
 
 ## Example

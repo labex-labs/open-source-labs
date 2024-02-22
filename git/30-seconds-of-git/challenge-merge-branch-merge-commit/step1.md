@@ -1,7 +1,5 @@
 # Merge a Branch and Create a Merge Commit
 
-## Problem
-
 As a developer, you may need to merge a branch into the current branch, creating a merge commit. This can be a bit tricky if you're not familiar with Git. The problem is to merge a branch into the current branch, creating a merge commit, using the Git repository named `https://github.com/labex-labs/git-playground` directory.
 
 ## Example

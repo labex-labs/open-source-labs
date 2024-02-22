@@ -1,7 +1,5 @@
 # Delete Detached Branches
 
-## Problem
-
 You have a Git repository with several detached branches that you no longer need. These branches are cluttering your repository and making it difficult to manage. You want to delete all detached branches to clean up your repository.
 
 ## Example

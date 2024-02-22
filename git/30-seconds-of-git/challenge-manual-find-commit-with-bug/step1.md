@@ -1,7 +1,5 @@
 # Manually Find the Commit that Introduced a Bug
 
-## Problem
-
 Your task is to manually find the commit that introduced a bug in the `git-playground` repository. The repository can be found at `https://github.com/labex-labs/git-playground`.
 
 To complete this challenge, you will need to perform a binary search through the commit history of the repository. You will need to mark commits as either "good" (bug-free) or "bad" (buggy) until you have narrowed down the commit that introduced the bug.

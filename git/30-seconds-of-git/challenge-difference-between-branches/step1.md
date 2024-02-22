@@ -1,7 +1,5 @@
 # Difference Between Branches
 
-## Problem
-
 You have been working on a project with your team, and you have created a branch named `feature-1` to work on a new feature. Your colleague has also created a branch named `feature-2` to work on a different feature. You want to compare the changes between the two branches to see what has been added, modified, or deleted. How can you view the difference between the two branches?
 
 ## Example

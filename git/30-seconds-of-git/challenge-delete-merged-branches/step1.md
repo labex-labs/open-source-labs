@@ -1,7 +1,5 @@
 # Delete Merged Branches
 
-## Problem
-
 Your task is to delete all local branches that have been merged into the `master` branch of the `https://github.com/labex-labs/git-playground` repository.
 
 ## Example

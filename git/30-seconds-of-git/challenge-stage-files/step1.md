@@ -1,7 +1,5 @@
 # Add Files to the Staging Area
 
-## Problem
-
 You have been working on a project stored in a Git repository named `https://github.com/labex-labs/git-playground`. You have made some changes to the codebase and want to commit these changes to the repository. However, you only want to commit specific changes and not all the changes you have made. To do this, you need to add the files to the staging area.
 
 ## Example

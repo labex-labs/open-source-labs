@@ -1,7 +1,5 @@
 # Remove Files from the Staging Area
 
-## Problem
-
 You are working on a project in the `git-playground` repository. You have made some changes to the files and added them to the staging area. However, you realize that you accidentally added a file that you don't want to commit. You need to remove this file from the staging area.
 
 ## Example

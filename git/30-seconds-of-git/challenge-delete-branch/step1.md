@@ -1,7 +1,5 @@
 # Delete a Branch
 
-## Problem
-
 You have created a local branch in your Git repository, and you no longer need it. You want to delete the branch to keep your repository clean and organized.
 
 ## Example

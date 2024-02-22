@@ -1,7 +1,5 @@
 # Change the Last Commit's Author
 
-## Problem
-
 You have just made a commit to your Git repository, but you realized that the author's name and email address are incorrect. You want to update the author's information without changing the contents of the commit. How can you achieve this using Git?
 
 ## Example

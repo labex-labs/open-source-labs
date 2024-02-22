@@ -1,7 +1,5 @@
 # Rewind Commits
 
-## Problem
-
 As a developer, you have been working on a project and have made several commits. However, you realize that the last few commits contain errors and you need to go back to a previous version of your code. You need to use Git to rewind your commits and get back to the previous version of your code.
 
 ## Example

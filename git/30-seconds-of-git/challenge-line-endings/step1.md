@@ -1,10 +1,8 @@
 # Configure Line Endings
 
-## Problem
-
 You are working on a project with a team of developers, and you notice that some team members are using different line endings than others. This can cause issues when merging code and can lead to conflicts. You need to configure the line endings for the repository to ensure consistency and avoid conflicts.
 
-## Example
+## Tasks
 
 To configure the line endings for the `git-playground` repository, follow these steps:
 
@@ -13,8 +11,12 @@ To configure the line endings for the `git-playground` repository, follow these 
 3. Configure the line endings to use UNIX line endings (`\n`).
 4. Verify that the line endings have been configured correctly.
 
-This is the result of running `cat -vet file2.txt`:
+## Example
 
-```shell
-This is file2.$
+To verify that the line endings have been configured correctly, you can use the following command:
+
+```bash
+git config --get core.eol
 ```
+
+If the line endings have been configured correctly, the command will return `lf`.
