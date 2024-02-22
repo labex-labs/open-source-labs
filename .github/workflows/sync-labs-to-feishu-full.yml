@@ -29,5 +29,5 @@ jobs:
           LABEX_USERNAME: ${{ secrets.LABEX_USERNAME }}
           LABEX_PASSWORD: ${{ secrets.LABEX_PASSWORD }}
         run: |
-          labex login --username $LABEX_USERNAME --password $LABEX_PASSWORD
+          labex login --username $LABEX_USERNAME --password $LABEX_PASSWORD --check false
           labex syc feishu lab --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --labid true
