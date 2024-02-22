@@ -1,7 +1,5 @@
 # Variadic Functions
 
-## Problem
-
 In this challenge, you need to implement a function named `max` that takes an arbitrary number of integers as arguments and returns the maximum value.
 
 ## Requirements

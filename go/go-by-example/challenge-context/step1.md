@@ -1,7 +1,5 @@
 # Context
 
-## Problem
-
 The `hello` function simulates some work the server is doing by waiting for a few seconds before sending a reply to the client. While working, keep an eye on the context's `Done()` channel for a signal that we should cancel the work and return as soon as possible.
 
 ## Requirements

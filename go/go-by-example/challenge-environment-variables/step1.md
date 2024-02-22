@@ -1,7 +1,5 @@
 # Environment Variables
 
-## Problem
-
 In this challenge, you will need to set, get, and list environment variables.
 
 ## Requirements

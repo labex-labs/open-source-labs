@@ -1,7 +1,5 @@
 # Sorting by Functions
 
-## Problem
-
 The problem to be solved in this challenge is to implement a custom sort function in Go that sorts a slice of strings by their length.
 
 ## Requirements

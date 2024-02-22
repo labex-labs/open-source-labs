@@ -1,7 +1,5 @@
 # Strings and Runes
 
-## Problem
-
 The problem to be solved in this challenge is to understand how to work with strings and runes in Go. Specifically, the challenge will cover how to get the length of a string, how to index into a string, how to count the number of runes in a string, and how to iterate over the runes in a string.
 
 ## Requirements

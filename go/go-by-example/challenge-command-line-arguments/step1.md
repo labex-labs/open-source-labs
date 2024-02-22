@@ -1,7 +1,5 @@
 # Command-line arguments
 
-## Problem
-
 The program currently prints out the raw command-line arguments passed to it. However, it needs to be modified to print out specific arguments based on their index.
 
 ## Requirements

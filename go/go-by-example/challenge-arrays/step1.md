@@ -1,7 +1,5 @@
 # Arrays
 
-## Problem
-
 You are required to create an array of integers with a length of 5. You will then set a value at a specific index and retrieve a value from a specific index. You will also be required to find the length of the array and declare and initialize an array in one line. Finally, you will create a two-dimensional array and initialize it with values.
 
 ## Requirements

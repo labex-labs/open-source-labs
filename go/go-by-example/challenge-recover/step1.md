@@ -1,7 +1,5 @@
 # Recover
 
-## Problem
-
 The `mayPanic` function in the provided code will panic when called. Your task is to modify the `main` function to recover from the panic and print the error message.
 
 ## Requirements

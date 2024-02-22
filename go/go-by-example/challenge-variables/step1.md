@@ -1,7 +1,5 @@
 # Variables
 
-## Problem
-
 You are required to complete the code to declare and initialize variables of different types in Golang.
 
 ## Requirements

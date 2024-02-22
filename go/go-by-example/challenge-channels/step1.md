@@ -1,7 +1,5 @@
 # Channels
 
-## Problem
-
 In this challenge, you are required to create a new channel and send a value into it from a new goroutine. You will then receive the value from the channel and print it out.
 
 ## Requirements

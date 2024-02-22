@@ -1,7 +1,5 @@
 # Execing Processes
 
-## Problem
-
 The problem is to replace the current Go process with another process, such as a non-Go process.
 
 ## Requirements

@@ -1,7 +1,5 @@
 # Atomic Counters
 
-## Problem
-
 The problem is to increment a counter exactly 1000 times using 50 goroutines and the `sync/atomic` package.
 
 ## Requirements

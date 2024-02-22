@@ -1,7 +1,5 @@
 # Recursion
 
-## Problem
-
 The `sum` function takes an integer slice and returns the sum of all the integers in the slice. However, the function is incomplete and needs to be implemented using recursion.
 
 ## Requirements

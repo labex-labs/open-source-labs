@@ -1,7 +1,5 @@
 # URL Parsing
 
-## Problem
-
 The challenge requires parsing a sample URL that includes a scheme, authentication info, host, port, path, query params, and query fragment. The parsed URL should be used to extract the individual components of the URL.
 
 ## Requirements

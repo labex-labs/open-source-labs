@@ -1,7 +1,5 @@
 # Panic
 
-## Problem
-
 The challenge requires you to use the `panic` function to fail fast on errors that shouldn't occur during normal operation or that you aren't prepared to handle gracefully.
 
 ## Requirements

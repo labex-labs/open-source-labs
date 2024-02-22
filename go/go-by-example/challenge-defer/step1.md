@@ -1,7 +1,5 @@
 # Defer
 
-## Problem
-
 In this challenge, you need to use `defer` to create a file, write to it, and then close it when you're done.
 
 ## Requirements

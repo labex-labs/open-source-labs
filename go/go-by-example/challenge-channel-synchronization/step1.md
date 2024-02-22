@@ -1,7 +1,5 @@
 # Channel Synchronization
 
-## Problem
-
 The problem to be solved in this challenge is to create a goroutine that performs some work and notifies another goroutine when it's done using a channel.
 
 ## Requirements

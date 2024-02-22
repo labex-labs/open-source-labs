@@ -1,7 +1,5 @@
 # Text Templates
 
-## Problem
-
 In this challenge, you are required to demonstrate the use of the `text/template` package to generate dynamic content.
 
 ## Requirements

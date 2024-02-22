@@ -1,7 +1,5 @@
 # Directories
 
-## Problem
-
 Create a Go program that creates a new sub-directory in the current working directory, creates a hierarchy of directories, including parents, lists directory contents, changes the current working directory, and visits a directory recursively.
 
 ## Requirements

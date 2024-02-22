@@ -1,7 +1,5 @@
 # Closures
 
-## Problem
-
 You need to create a function that returns another function. The returned function should increment a variable by one each time it is called. The variable should be unique to each returned function.
 
 ## Requirements

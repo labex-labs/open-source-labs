@@ -1,7 +1,5 @@
 # Spawning Processes
 
-## Problem
-
 The challenge requires the implementation of a Go program that spawns external processes and collects their output.
 
 ## Requirements

@@ -1,7 +1,5 @@
 # Mutexes
 
-## Problem
-
 The problem to be solved in this challenge is to increment a named counter in a loop using multiple goroutines, and ensure that the access to the counter is synchronized.
 
 ## Requirements

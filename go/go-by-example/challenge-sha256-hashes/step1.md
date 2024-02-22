@@ -1,7 +1,5 @@
 # SHA256 Hashes
 
-## Problem
-
 Given a string, compute its SHA256 hash.
 
 ## Requirements

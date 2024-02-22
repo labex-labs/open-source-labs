@@ -1,7 +1,5 @@
 # Channel Directions
 
-## Problem
-
 The problem to be solved in this challenge is to modify the given code to ensure that the channels used as function parameters are specified to only send or receive values.
 
 ## Requirements

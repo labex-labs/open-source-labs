@@ -1,7 +1,5 @@
 # Maps
 
-## Problem
-
 In this challenge, you will need to create a map that stores the number of times each word appears in a given string. You will need to split the string into words, and then iterate over each word, adding it to the map if it doesn't already exist, or incrementing its count if it does.
 
 ## Requirements

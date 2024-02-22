@@ -1,7 +1,5 @@
 # Embed Directive
 
-## Problem
-
 Your task is to modify the given code to embed files and folders into the Go binary and print their contents.
 
 ## Requirements

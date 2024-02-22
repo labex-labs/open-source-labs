@@ -1,7 +1,5 @@
 # Timers and Tickers
 
-## Problem
-
 In this challenge, you need to create a ticker that ticks every 500ms until we stop it. You will use a channel to await the values as they arrive.
 
 ## Requirements

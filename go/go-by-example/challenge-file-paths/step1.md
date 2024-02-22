@@ -1,7 +1,5 @@
 # File Paths
 
-## Problem
-
 In this challenge, you need to use the `filepath` package to perform various operations on file paths, such as constructing paths in a portable way, splitting a path into directory and file components, checking whether a path is absolute, finding the extension of a file, and finding a relative path between two paths.
 
 ## Requirements

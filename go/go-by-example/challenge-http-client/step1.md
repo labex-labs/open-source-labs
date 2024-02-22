@@ -1,7 +1,5 @@
 # HTTP Client
 
-## Problem
-
 You are required to write a program that sends an HTTP GET request to a server and prints the HTTP response status and the first 5 lines of the response body.
 
 ## Requirements

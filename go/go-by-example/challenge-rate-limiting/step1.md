@@ -1,7 +1,5 @@
 # Rate Limiting
 
-## Problem
-
 The problem is to limit the handling of incoming requests to maintain quality of service and control resource utilization.
 
 ## Requirements

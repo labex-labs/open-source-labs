@@ -1,7 +1,5 @@
 # Number Parsing
 
-## Problem
-
 Parsing numbers from strings is a common task in many programs. This challenge requires you to use the built-in `strconv` package to parse different types of numbers from strings.
 
 ## Requirements

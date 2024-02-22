@@ -1,7 +1,5 @@
 # Structs
 
-## Problem
-
 In this challenge, you need to complete the `newPerson` function that constructs a new person struct with the given name. The `person` struct type has `name` and `age` fields.
 
 ## Requirements

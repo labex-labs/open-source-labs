@@ -1,7 +1,5 @@
 # Non-Blocking Channel Operations
 
-## Problem
-
 The problem to be solved in this challenge is to implement non-blocking channel operations using the `select` statement with a `default` clause.
 
 ## Requirements

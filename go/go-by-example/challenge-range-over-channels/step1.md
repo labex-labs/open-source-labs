@@ -1,7 +1,5 @@
 # Range Over Channels
 
-## Problem
-
 You are required to write a function that takes in a channel of integers and returns the sum of all the integers received from the channel.
 
 ## Requirements

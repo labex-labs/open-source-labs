@@ -1,7 +1,5 @@
 # Epoch
 
-## Problem
-
 The problem to be solved in this challenge is to write a Golang program that can calculate the number of seconds, milliseconds, or nanoseconds since the Unix epoch.
 
 ## Requirements

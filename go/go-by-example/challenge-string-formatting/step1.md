@@ -1,7 +1,5 @@
 # String Formatting
 
-## Problem
-
 You are required to format different types of data using various formatting verbs in Golang.
 
 ## Requirements

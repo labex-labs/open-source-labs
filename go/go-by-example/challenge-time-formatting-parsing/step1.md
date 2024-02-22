@@ -1,7 +1,5 @@
 # Time Formatting and Parsing
 
-## Problem
-
 The problem is to format and parse time in Golang using the provided layouts.
 
 ## Requirements

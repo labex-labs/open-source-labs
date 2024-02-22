@@ -1,7 +1,5 @@
 # Switch
 
-## Problem
-
 In this challenge, you need to complete the `switch` statement to print out the corresponding message based on the input value.
 
 ## Requirements

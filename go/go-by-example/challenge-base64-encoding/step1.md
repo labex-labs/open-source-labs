@@ -1,7 +1,5 @@
 # Base64 Encoding
 
-## Problem
-
 You are required to write a Golang program that encodes and decodes a given string using both standard and URL-compatible base64 encoding.
 
 ## Requirements

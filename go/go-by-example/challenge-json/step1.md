@@ -1,7 +1,5 @@
 # JSON
 
-## Problem
-
 You are required to complete the code provided to encode and decode JSON data in Golang. The code contains examples of encoding and decoding basic data types, as well as custom data types.
 
 ## Requirements

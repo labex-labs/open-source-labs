@@ -1,7 +1,5 @@
 # Reading Files
 
-## Problem
-
 You need to read files in your Go program and perform different operations on the data in the file.
 
 ## Requirements

@@ -1,7 +1,5 @@
 # Multiple Return Values
 
-## Problem
-
 Complete the `swap` function to return two input parameters in reverse order.
 
 ## Requirements

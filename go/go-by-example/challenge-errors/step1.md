@@ -1,7 +1,5 @@
 # Errors
 
-## Problem
-
 The challenge provides two functions that return an error if the input argument is 42. The first function returns a basic error value, while the second function uses a custom type to represent the error.
 
 ## Requirements

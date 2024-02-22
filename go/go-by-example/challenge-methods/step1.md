@@ -1,7 +1,5 @@
 # Methods
 
-## Problem
-
 The code provided defines a struct type called `rect` with two fields, `width` and `height`. Two methods are defined for this struct type, `area` and `perim`. The `area` method calculates the area of the rectangle, and the `perim` method calculates the perimeter of the rectangle. The main function calls these two methods and prints their results.
 
 ## Requirements

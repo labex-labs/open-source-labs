@@ -1,7 +1,5 @@
 # Goroutines
 
-## Problem
-
 The problem to be solved in this challenge is to create and run goroutines to execute functions concurrently.
 
 ## Requirements

@@ -1,7 +1,5 @@
 # waitgroups
 
-## Problem
-
 The problem to be solved in this challenge is to launch several goroutines and increment the WaitGroup counter for each. Then, we need to wait for all the goroutines launched to finish.
 
 ## Requirements

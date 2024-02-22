@@ -1,7 +1,5 @@
 # Hello World
 
-## Problem
-
 Write a program that prints the message "hello world" to the console.
 
 ## Requirements

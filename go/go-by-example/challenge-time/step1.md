@@ -1,7 +1,5 @@
 # Time
 
-## Problem
-
 The code below contains examples of how to work with time and duration in Go. However, some parts of the code are missing. Your task is to complete the code to make it work as expected.
 
 ## Requirements

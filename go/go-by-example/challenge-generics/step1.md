@@ -1,7 +1,5 @@
 # Generics
 
-## Problem
-
 The problem to be solved in this challenge is to understand how to define and use generic functions and types in Golang.
 
 ## Requirements

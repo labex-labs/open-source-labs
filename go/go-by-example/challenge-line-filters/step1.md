@@ -1,7 +1,5 @@
 # Line Filters
 
-## Problem
-
 The problem to be solved in this challenge is to write a Go program that reads input text from stdin, capitalizes all the letters in the text, and then prints the modified text to stdout.
 
 ## Requirements

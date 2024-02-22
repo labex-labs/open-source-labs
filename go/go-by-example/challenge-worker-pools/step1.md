@@ -1,7 +1,5 @@
 # Worker Pools
 
-## Problem
-
 Implement a worker pool that receives work on the `jobs` channel and sends the corresponding results on the `results` channel. The worker pool should have multiple concurrent instances, and each worker should sleep for a second per job to simulate an expensive task.
 
 ## Requirements

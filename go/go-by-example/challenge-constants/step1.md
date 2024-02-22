@@ -1,7 +1,5 @@
 # Constants
 
-## Problem
-
 The problem to be solved is to demonstrate the use of constants in Golang for character, string, boolean, and numeric values.
 
 ## Requirements

@@ -1,7 +1,5 @@
 # Exit
 
-## Problem
-
 The problem to be solved in this challenge is to exit a Go program with a specific status code using the `os.Exit` function.
 
 ## Requirements

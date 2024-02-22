@@ -1,7 +1,5 @@
 # Value Types
 
-## Problem
-
 Your task is to complete the `calculate` function that takes in two integers and returns their sum and product.
 
 ## Requirements

@@ -1,7 +1,5 @@
 # Timeouts
 
-## Problem
-
 When programs connect to external resources or need to bound execution time, timeouts are important. The challenge is to implement timeouts in Go using channels and `select`.
 
 ## Requirements

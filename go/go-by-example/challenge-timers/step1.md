@@ -1,7 +1,5 @@
 # Timers
 
-## Problem
-
 The challenge requires the implementation of a timer that waits for a specified duration and then fires. Additionally, the timer should be cancellable before it fires.
 
 ## Requirements

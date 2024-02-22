@@ -1,7 +1,5 @@
 # Slices
 
-## Problem
-
 The problem to be solved in this challenge is to create and manipulate slices in Go. You will need to create an empty slice with non-zero length, set and get values in the slice, use the `len` function to get the length of the slice, use the `append` function to add new values to the slice, use the `copy` function to copy a slice, and use the slice operator to get a slice of elements from an existing slice.
 
 ## Requirements

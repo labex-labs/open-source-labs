@@ -1,7 +1,5 @@
 # Sorting
 
-## Problem
-
 The problem to be solved in this challenge is to sort slices of strings and integers using the `sort` package.
 
 ## Requirements

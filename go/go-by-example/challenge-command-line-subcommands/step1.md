@@ -1,7 +1,5 @@
 # Command Line Subcommands
 
-## Problem
-
 You are required to create a program that supports two subcommands, `foo` and `bar`, each with its own set of flags. The `foo` subcommand should have two flags, `enable` and `name`, while the `bar` subcommand should have one flag, `level`.
 
 ## Requirements

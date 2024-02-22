@@ -1,7 +1,5 @@
 # Range
 
-## Problem
-
 The problem to be solved in this challenge is to demonstrate how to use `range` with slices, arrays, maps, and strings.
 
 ## Requirements

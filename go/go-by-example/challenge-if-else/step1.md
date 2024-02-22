@@ -1,7 +1,5 @@
 # if-else
 
-## Problem
-
 You are required to complete the `checkNumber` function that takes an integer as input and returns a string. If the number is even, return "even", otherwise return "odd".
 
 ## Requirements

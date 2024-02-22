@@ -1,7 +1,5 @@
 # Select
 
-## Problem
-
 In this challenge, you are given two channels, `c1` and `c2`, which will receive a value after some amount of time. Your task is to use `select` to await both of these values simultaneously, printing each one as it arrives.
 
 ## Requirements

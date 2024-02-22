@@ -1,7 +1,5 @@
 # Regular Expressions
 
-## Problem
-
 The challenge requires you to complete the code to perform various regular expression-related tasks in Golang.
 
 ## Requirements

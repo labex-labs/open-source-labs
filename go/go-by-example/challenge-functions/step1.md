@@ -1,7 +1,5 @@
 # Functions
 
-## Problem
-
 In the given code, we have two functions `plus` and `plusPlus`. The `plus` function takes two integers as arguments and returns their sum. The `plusPlus` function takes three integers as arguments and returns their sum. Your task is to complete the `plusPlus` function by adding the third integer to the sum of the first two integers.
 
 ## Requirements

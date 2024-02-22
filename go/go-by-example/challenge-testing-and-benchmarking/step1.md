@@ -1,7 +1,5 @@
 # Testing and Benchmarking
 
-## Problem
-
 The problem to be solved in this challenge is to test and benchmark a simple implementation of an integer minimum function named `IntMin`.
 
 ## Requirements

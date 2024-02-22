@@ -1,7 +1,5 @@
 # Writing Files
 
-## Problem
-
 You need to write a Go program that writes a string and bytes into a file and uses buffered writers.
 
 ## Requirements

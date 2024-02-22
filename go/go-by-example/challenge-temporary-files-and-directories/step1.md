@@ -1,7 +1,5 @@
 # Temporary Files and Directories
 
-## Problem
-
 In this challenge, you need to create temporary files and directories in Go.
 
 ## Requirements

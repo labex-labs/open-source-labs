@@ -1,7 +1,5 @@
 # Stateful Goroutines
 
-## Problem
-
 In concurrent programming, it is essential to synchronize access to shared state to avoid race conditions and data corruption. This challenge presents a scenario where a single goroutine owns the state, and other goroutines send messages to read or write the state.
 
 ## Requirements

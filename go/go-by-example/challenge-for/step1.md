@@ -1,7 +1,5 @@
 # `for`
 
-## Problem
-
 The code below contains different types of `for` loops. However, some parts of the code are incomplete, and you need to fill in the blanks to make the code work correctly.
 
 ## Requirements

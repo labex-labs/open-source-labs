@@ -1,7 +1,5 @@
 # HTTP Server
 
-## Problem
-
 You are required to write a simple HTTP server that can handle two routes: `/hello` and `/headers`. The `/hello` route should return a simple "hello" response, while the `/headers` route should return all the HTTP request headers.
 
 ## Requirements

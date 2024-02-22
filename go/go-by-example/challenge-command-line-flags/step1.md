@@ -1,7 +1,5 @@
 # Command-line flags
 
-## Problem
-
 Implement a Golang program that parses command-line flags and outputs the parsed options and any trailing positional arguments. The program should support the following flags:
 
 - `word`: a string flag with a default value of `"foo"`.

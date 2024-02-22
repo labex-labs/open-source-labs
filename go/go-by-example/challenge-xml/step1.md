@@ -1,7 +1,5 @@
 # XML
 
-## Problem
-
 You are required to create a struct named `Plant` that can be mapped to XML. The struct should have the following fields:
 
 - `Id` (int) - an XML attribute

@@ -1,7 +1,5 @@
 # Random Numbers
 
-## Problem
-
 You are required to write a program that generates random integers and floats within a specified range. The program should also be able to produce varying sequences of numbers by changing the seed.
 
 ## Requirements

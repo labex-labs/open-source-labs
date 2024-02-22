@@ -1,7 +1,5 @@
 # String Functions
 
-## Problem
-
 Complete the code below to print the output of various string functions provided by the `strings` package.
 
 ## Requirements

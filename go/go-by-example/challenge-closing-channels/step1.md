@@ -1,7 +1,5 @@
 # Closing Channels
 
-## Problem
-
 In this challenge, you need to modify the given code to close the `jobs` channel when there are no more jobs for the worker. You also need to use the `done` channel to notify when all the jobs have been completed.
 
 ## Requirements
