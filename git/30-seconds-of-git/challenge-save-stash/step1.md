@@ -4,7 +4,7 @@ As a developer, you may find yourself in a situation where you need to switch to
 
 A stash allows you to save your changes without committing them, so you can switch to a different branch or work on a different feature. You can then apply your stash later when you're ready to continue working on your changes.
 
-## Example
+## Tasks
 
 Let's say you're working on a branch named `feature` in the `git-playground` repository and you want to save your changes before switching to a different branch:
 

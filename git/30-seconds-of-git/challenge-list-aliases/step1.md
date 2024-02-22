@@ -6,7 +6,7 @@ As a developer, you may want to list all the Git aliases that have been set up o
 - Finding out what commands an alias is mapped to
 - Removing or modifying existing aliases
 
-## Example
+## Tasks
 
 Let's say you have a Git repository named `git-playground` located at `https://github.com/labex-labs/git-playground`.
 

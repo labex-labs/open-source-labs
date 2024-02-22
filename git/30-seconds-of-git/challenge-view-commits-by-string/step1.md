@@ -2,7 +2,7 @@
 
 As a developer, you may need to find all the commits that modified a specific string in your codebase. For example, you may want to find all the commits that added or removed a specific function name or variable. This can be useful when debugging issues or tracking down the source of a bug.
 
-## Example
+## Tasks
 
 Suppose you are working on a project hosted on GitHub called `git-playground`. You want to find all the commits that modified the string "Git Playground" in the `README.md` file. Here's how you can do it:
 

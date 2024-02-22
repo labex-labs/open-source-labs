@@ -2,7 +2,7 @@
 
 You have been working on a project with several other developers, and you want to see a summary of all the commits made to the repository. However, you don't want to see the merge commits, as they don't contain any actual changes to the code. How can you view a summary of all the commits excluding merge commits?
 
-## Example
+## Tasks
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

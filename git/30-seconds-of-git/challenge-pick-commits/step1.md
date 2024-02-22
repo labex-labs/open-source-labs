@@ -2,7 +2,7 @@
 
 As a developer, you are working on a project with multiple branches. You have identified a specific change that was made in a previous commit that you would like to apply to your current branch. However, you do not want to merge the entire branch as it contains other changes that you do not need.
 
-## Example
+## Tasks
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

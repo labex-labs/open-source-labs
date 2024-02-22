@@ -2,7 +2,7 @@
 
 You are working on a project using Git and accidentally deleted a file named `file2.txt` that you need. Fortunately, you know the commit where the file was deleted. Your task is to restore the deleted file using Git.
 
-## Example
+## Tasks
 
 To complete this challenge, you will use the Git repository `git-playground` from `https://github.com/labex-labs/git-playground.git`.
 

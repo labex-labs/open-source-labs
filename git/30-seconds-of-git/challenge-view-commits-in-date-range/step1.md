@@ -2,7 +2,7 @@
 
 Your task is to view all commits in a specific date range using Git. You can use either a specific date or a relative date (e.g. "12 weeks ago").
 
-## Example
+## Tasks
 
 To complete this challenge, you will need to use the `https://github.com/labex-labs/git-playground` repository.
 

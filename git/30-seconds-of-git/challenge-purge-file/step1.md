@@ -2,7 +2,7 @@
 
 Suppose you accidentally committed a file containing sensitive information, such as API keys or passwords, to your Git repository. You realize that this file should never have been committed and want to completely remove it from the repository's history. However, simply deleting the file and committing the change will not remove it from the repository's history. The file will still be accessible in previous commits, which could pose a security risk.
 
-## Example
+## Tasks
 
 To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. This repository contains a file named `file1.txt` that should never have been committed.Please purge `file1.txt` from the repository's history.
 

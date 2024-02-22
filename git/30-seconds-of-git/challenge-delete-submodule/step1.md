@@ -2,7 +2,7 @@
 
 You have a Git repository that includes a submodule named `sha1collisiondetection`. You want to delete this submodule from your repository.
 
-## Example
+## Tasks
 
 For this challenge, we will use the Git repository named `https://github.com/git/git`. This repository includes a submodule named `sha1collisiondetection`.
 

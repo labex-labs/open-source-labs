@@ -2,7 +2,7 @@
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`. You have been working on a project in the `master` branch. You realize that some of the changes you made should have been made on a separate branch. You want to move these changes to a new branch called `feature`.
 
-## Example
+## Tasks
 
 1. Navigate to the repository directory and configure your GitHub identity.
 2. Checkout the `master` branch.

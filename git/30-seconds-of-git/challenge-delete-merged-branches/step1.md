@@ -2,7 +2,7 @@
 
 Your task is to delete all local branches that have been merged into the `master` branch of the `https://github.com/labex-labs/git-playground` repository.
 
-## Example
+## Tasks
 
 1. Change to the repository directory.
 2. List all local branches that have been merged into `master`.

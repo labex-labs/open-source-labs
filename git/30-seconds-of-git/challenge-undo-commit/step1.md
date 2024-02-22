@@ -2,7 +2,7 @@
 
 Suppose you have made a commit to your Git repository, but you realize that it contains a mistake. You want to undo the commit without rewriting the history of your repository. How can you do this?
 
-## Example
+## Tasks
 
 To demonstrate how to undo a commit, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

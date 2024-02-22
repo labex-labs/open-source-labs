@@ -2,7 +2,7 @@
 
 Without a commit message template, developers may be tempted to write vague or uninformative commit messages, such as "fixed bug" or "updated code". This makes it difficult for others to understand the purpose of the change and can lead to confusion or mistakes down the line. By setting up a commit message template, developers are encouraged to provide more detailed and informative commit messages, which can improve collaboration and productivity.
 
-## Example
+## Tasks
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

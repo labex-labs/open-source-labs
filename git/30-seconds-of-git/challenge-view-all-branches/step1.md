@@ -2,7 +2,7 @@
 
 You have been working on a Git repository named `https://github.com/labex-labs/git-playground`. You want to view a list of all local branches in the repository.
 
-## Example
+## Tasks
 
 1. Navigate to the cloned repository.
 2. View a list of all local branches:

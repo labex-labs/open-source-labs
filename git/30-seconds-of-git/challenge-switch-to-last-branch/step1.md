@@ -2,7 +2,7 @@
 
 As a developer, you are working on a project and have switched to a different branch to work on a new feature. After making some changes, you realize that you need to switch back to the previous branch to fix a bug. You can commit your changes in a new branch and use a command to quickly switch to the previous branch.
 
-## Example
+## Tasks
 
 To demonstrate how to switch back to the previous branch, you will use the Git repository `git-playground` from `https://github.com/labex-labs/git-playground.git`.
 

@@ -2,7 +2,7 @@
 
 You have just committed changes to your Git repository, but you realize that you made a mistake. You want to undo the last commit without losing any of the changes you made. How can you do this?
 
-## Example
+## Tasks
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

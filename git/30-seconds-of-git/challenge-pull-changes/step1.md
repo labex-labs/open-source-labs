@@ -2,7 +2,7 @@
 
 You are working on a project with a team of developers, and you need to ensure that your local copy of the codebase is up to date with the latest changes made by your team members. To do this, you need to pull the latest changes from the remote repository.
 
-## Example
+## Tasks
 
 For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`.
 

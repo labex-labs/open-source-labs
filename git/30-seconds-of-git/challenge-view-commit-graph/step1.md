@@ -2,7 +2,7 @@
 
 As a developer, you may need to view the history of a repository to understand how the code has changed over time. However, simply viewing a list of commits can be overwhelming and difficult to understand. This is where the Git graph comes in. By visualizing the history of a repository, you can quickly see how the code has evolved and identify any issues or bugs that may have been introduced.
 
-## Example
+## Tasks
 
 To view a visual graph of a Git repository, let's say you want to view the history of the `git-playground` repository on GitHub.
 

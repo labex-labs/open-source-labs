@@ -2,7 +2,7 @@
 
 You want to configure the text editor used by Git to your preferred editor.
 
-## Example
+## Tasks
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

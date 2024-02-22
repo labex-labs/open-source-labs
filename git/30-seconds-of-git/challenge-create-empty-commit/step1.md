@@ -6,7 +6,7 @@ You need to create an empty commit in your Git repository. This can be useful in
 - Creating a placeholder commit
 - Marking a specific point in the repository's history
 
-## Example
+## Tasks
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

@@ -2,7 +2,7 @@
 
 You have added a file to the last commit that you didn't intend to include. You want to remove the file from the last commit without changing its message.
 
-## Example
+## Tasks
 
 For this challenge, let's use the repository from `https://github.com/labex-labs/git-playground`. Suppose you have a Git repository named `git-playground` with a file named `file2.txt` that you accidentally added to the last commit.
 

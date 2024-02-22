@@ -2,7 +2,7 @@
 
 You are working on a project that contains submodules. When you clone the project, the submodules are not automatically cloned. This causes issues when trying to build or run the project. You need to clone the missing submodules and checkout the correct commits.
 
-## Example
+## Tasks
 
 For this challenge, we will use the Git repository named `https://github.com/git/git`. This repository contains submodules that are not automatically cloned when you clone the repository.
 

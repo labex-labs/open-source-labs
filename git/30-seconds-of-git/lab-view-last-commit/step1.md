@@ -2,8 +2,6 @@
 
 You are working on a project with a team of developers, and you need to view the last commit made to the project's Git repository. You want to see the details of the commit, including the commit message, author, and date.
 
-## Example
-
 To view the last commit made to a Git repository, follow these steps:
 
 1. Open the terminal on your computer.

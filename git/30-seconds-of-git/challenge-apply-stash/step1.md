@@ -2,7 +2,7 @@
 
 You are working on a feature branch in the `git-playground` repository and you need to switch to another branch to work on a bug fix. However, you have some changes that are not ready to be committed yet. You want to save these changes and switch to the other branch. Once you are done with the bug fix, you want to apply the stash and continue working on your feature branch.
 
-## Example
+## Tasks
 
 The changes have been stashed on the `feature-branch` branch, and the stash message is "my changes".
 

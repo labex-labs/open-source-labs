@@ -2,7 +2,7 @@
 
 You are working on a project in the `git-playground` repository. You have made some changes to the files and added them to the staging area. However, you realize that you accidentally added a file that you don't want to commit. You need to remove this file from the staging area.
 
-## Example
+## Tasks
 
 1. View current working directory status.
 2. Remove the `newfile.txt` file from the staging area.

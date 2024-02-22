@@ -2,7 +2,7 @@
 
 You have a Git repository with several detached branches that you no longer need. These branches are cluttering your repository and making it difficult to manage. You want to delete all detached branches to clean up your repository.
 
-## Example
+## Tasks
 
 To complete this challenge, you will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. Do not check "Copy the master branch only".
 

@@ -4,7 +4,7 @@ Over time, your Git repository can become cluttered with old versions of files a
 
 When you run the command, Git will remove any loose objects (objects that are not referenced by any branch or tag) and pack the remaining objects into a new set of pack files. This can significantly reduce the size of your repository and improve Git's performance.
 
-## Example
+## Tasks
 
 For example, let's say you have a Git repository named `git-playground` located in your home directory and optimize this repository.
 

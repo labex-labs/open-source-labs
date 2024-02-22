@@ -2,7 +2,7 @@
 
 You have just committed some changes to your Git repository, but you realize that you forgot to include a file or make a small change. You don't want to create a new commit just for this small change, but you also don't want to change the commit message. How can you edit the last commit without changing its message?
 
-## Example
+## Tasks
 
 To demonstrate how to edit the last commit, let's use the repository from `https://github.com/labex-labs/git-playground`.
 

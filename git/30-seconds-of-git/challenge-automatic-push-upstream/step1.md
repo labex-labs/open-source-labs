@@ -2,7 +2,7 @@
 
 As a developer, you want to automate the process of creating upstream branches on push to avoid the hassle of manually creating the branch on the remote repository.
 
-## Example
+## Tasks
 
 To complete the challenge, you will use the Git repository `git-playground` in your GitHub account to automatically create an upstream branch at push time from a fork of `https://github.com/labex-labs/git-playground.git`.
 

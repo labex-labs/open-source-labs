@@ -4,7 +4,7 @@ To complete this challenge, you will use the Git repository `git-playground` fro
 
 You have a Git repository named `https://github.com/your-username/git-playground`. You have created a branch named `feature-branch` and pushed it to the remote. Now you want to rename the branch to `new-feature-1` both locally and on the remote.
 
-## Example
+## Tasks
 
 1. Clone the repository, navigate to the directory and configure the identity.
 2. Switch to the named `feature-branch` branch.

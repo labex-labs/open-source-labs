@@ -4,7 +4,7 @@ As a developer, it's important to know the current status of your Git repository
 
 Your task is to view the current status of the Git repository located at `https://github.com/labex-labs/git-playground`. You should pay attention to the output of the command and try to understand what it means.
 
-## Example
+## Tasks
 
 To complete this challenge, you will need to clone the Git repository located at `https://github.com/labex-labs/git-playground`.
 

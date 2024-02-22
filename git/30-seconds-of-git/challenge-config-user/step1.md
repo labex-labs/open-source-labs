@@ -2,7 +2,7 @@
 
 You have just started working on a new project and want to configure your user information for Git. You want to make sure that your name and email address are associated with any changes you make to the repository.
 
-## Example
+## Tasks
 
 For this challenge, we will be using the Git repository named `https://github.com/labex-labs/git-playground`.
 

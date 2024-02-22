@@ -2,7 +2,7 @@
 
 As a developer, you may want to view the differences between your staged or unstaged changes and the last commit. This is useful when you want to review your changes before committing them or when you want to see what changes you have made since the last commit.
 
-## Example
+## Tasks
 
 To demonstrate how to view differences in changes, we will use the `git-playground` repository. Suppose you have made some changes to the `README.md` file and want to view the differences between your changes and the last commit.
 

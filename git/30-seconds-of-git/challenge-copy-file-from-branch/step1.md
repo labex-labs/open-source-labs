@@ -2,7 +2,7 @@
 
 You are working on a project in a Git repository named `https://github.com/labex-labs/git-playground.git`. You have two branches named `feature-1` and `feature-2`. You need to copy the file `hello.txt` from `feature-1` branch to `feature-2` branch.
 
-## Example
+## Tasks
 
 1. Navigate to the directory and configure the identity.
 2. Create and switch to `feature-1` branch and create a text file named `hello.txt` and write the string "hello,world" to it and commit the file with the message "add hello.txt".

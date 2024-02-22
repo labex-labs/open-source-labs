@@ -11,8 +11,6 @@ To configure the line endings for the `git-playground` repository, follow these 
 3. Configure the line endings to use UNIX line endings (`\n`).
 4. Verify that the line endings have been configured correctly.
 
-## Example
-
 To verify that the line endings have been configured correctly, you can use the following command:
 
 ```bash

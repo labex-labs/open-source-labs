@@ -2,7 +2,7 @@
 
 You have just made a commit to your Git repository, but you realized that the author's name and email address are incorrect. You want to update the author's information without changing the contents of the commit. How can you achieve this using Git?
 
-## Example
+## Tasks
 
 To change the last commit's author, you can use a command. This command allows you to modify the last commit in your Git repository.
 

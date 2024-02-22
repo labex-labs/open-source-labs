@@ -2,7 +2,7 @@
 
 You have been working on a project and have made changes to the local `master` branch. However, you realize that the remote `master` branch has been updated with new changes that you do not have in your local branch. You need to reset the local `master` branch to match the one on the remote.
 
-## Example
+## Tasks
 
 1. Switch to the `master` branch.
 2. Retrieve the latest updates from the remote.

@@ -2,7 +2,7 @@
 
 Sometimes, you may need to delete a remote branch that is no longer needed. For example, if a feature branch has been merged into the main branch, you may want to delete the remote feature branch to keep the repository clean.
 
-## Example
+## Tasks
 
 Suppose that a GitHub repository called `git-playground` has been cloned from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`. You want to delete the remote branch named `feature-branch` that is no longer needed.
 

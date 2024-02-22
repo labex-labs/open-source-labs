@@ -2,7 +2,7 @@
 
 Suppose you are working on a project with a team of developers, and the project is stored in a remote repository. You want to get the latest changes from the remote repository without applying them to your local repository.
 
-## Example
+## Tasks
 
 To demonstrate how to fetch the latest changes from a remote repository, we will use the Git repository `git-playground` from your GitHub account, which comes from a fork of `https://github.com/labex-labs/git-playground.git`.
 

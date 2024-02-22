@@ -2,7 +2,7 @@
 
 You are working on a project with multiple branches, and you need to find all the branches that do not contain a specific commit. This can be useful if you want to make sure that a certain change has been applied to all branches, or if you want to know which branches are outdated and need to be updated.
 
-## Example
+## Tasks
 
 For this challenge, we will be using the Git repository named `https://github.com/your-username/git-playground`.
 

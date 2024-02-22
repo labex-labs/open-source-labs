@@ -4,7 +4,7 @@ Your task is to manually find the commit that introduced a bug in the `git-playg
 
 To complete this challenge, you will need to perform a binary search through the commit history of the repository. You will need to mark commits as either "good" (bug-free) or "bad" (buggy) until you have narrowed down the commit that introduced the bug.
 
-## Example
+## Tasks
 
 The error message is that the `file2.txt` file should print "This is file2.txt." instead of "This is file2.".
 
