@@ -2,7 +2,7 @@ name: sync-labs-to-feishu-full
 
 on:
   schedule:
-    - cron: "0 2 1/15 * *"
+    - cron: "0 2 * * *"
   workflow_dispatch:
 
 jobs:
@@ -30,4 +30,4 @@ jobs:
           LABEX_PASSWORD: ${{ secrets.LABEX_PASSWORD }}
         run: |
           labex login --username $LABEX_USERNAME --password $LABEX_PASSWORD --check false
-          labex syc feishu lab --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --full true --sync-lab-info true
+          labex syc feishu lab --appid "$APP_ID" --appsecret "$APP_SECRET" --repo $GITHUB_REPOSITORY --full true --sync-lab-info true --check-update-hours 36
