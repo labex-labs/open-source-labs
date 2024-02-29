@@ -1,3 +1,11 @@
-# Save and Close the File
+# Make the Script Executable
 
-Save the `hello.sh` file and close the text editor.
+In order to execute the script, we need to give it execute permissions. Open a terminal and navigate to the directory where the `hello.sh` file is located.
+
+Run the following command to make the script executable:
+
+```bash
+chmod +x hello.sh
+```
+
+![alt text](./assets/20240229-15-20-30-EpyUGiBq.png)

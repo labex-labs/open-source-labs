@@ -1,9 +1,9 @@
-# Make the Script Executable
+# Execute the Script
 
-In order to execute the script, we need to give it execute permissions. Open a terminal and navigate to the directory where the `hello.sh` file is located.
-
-Run the following command to make the script executable:
+Now, we can execute the shell script by running the following command:
 
 ```bash
-chmod +x hello.sh
+./hello.sh
 ```
+
+The script will be executed and the "Hello, World!" message will be printed to the screen.
