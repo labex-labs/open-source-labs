@@ -1,6 +1,6 @@
 # Overlay Networking
 
-## Step 4: Test the network
+## Test the network
 
 To complete this step you will need the IP address of the service task running on **node2** that you saw in the previous step (`10.0.0.3`).
 

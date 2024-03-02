@@ -1,4 +1,4 @@
-# Step 1: Run Your First Container
+# Run Your First Container
 
 We are going to use the Docker CLI to run our first container.
 

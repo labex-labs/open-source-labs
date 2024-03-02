@@ -1,4 +1,4 @@
-# Step 5: Redis Service for Caching
+# Redis Service for Caching
 
 Checkout the `step5` branch and list files in it.
 

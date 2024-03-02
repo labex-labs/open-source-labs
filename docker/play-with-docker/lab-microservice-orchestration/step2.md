@@ -1,4 +1,4 @@
-# Step 0: Basic Link Extractor Script
+# Basic Link Extractor Script
 
 Checkout the `step0` branch and list files in it.
 

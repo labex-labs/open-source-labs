@@ -1,4 +1,4 @@
-# Step 5: Deploying a Change
+# Deploying a Change
 
 The "hello world!" application is overrated, let's update the app so that it says "Hello Beautiful World!" instead.
 

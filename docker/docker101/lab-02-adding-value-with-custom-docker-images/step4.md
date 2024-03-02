@@ -1,4 +1,4 @@
-# Step 4: Push to a Central Registry
+# Push to a Central Registry
 
 Navigate to [Docker Hub](https://hub.docker.com) and create an account if you haven't already. Alternatively, you can also use [https://quay.io](https://quay.io) for instance.
 

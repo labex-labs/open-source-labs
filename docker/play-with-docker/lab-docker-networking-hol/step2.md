@@ -1,6 +1,6 @@
 # Networking Basics
 
-## Step 3: Inspect a network
+## Inspect a network
 
 The `docker network inspect` command is used to view network configuration details. These details include; name, ID, driver, IPAM driver, subnet info, connected containers, and more.
 
@@ -47,7 +47,7 @@ docker network inspect bridge
 
 > **NOTE:** The syntax of the `docker network inspect` command is `docker network inspect <network>`, where `<network>` can be either network name or network ID. In the example above we are showing the configuration details for the network called "bridge". Do not confuse this with the "bridge" driver.
 
-## Step 4: List network driver plugins
+## List network driver plugins
 
 The `docker info` command shows a lot of interesting information about a Docker installation.
 

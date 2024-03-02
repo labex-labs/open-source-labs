@@ -1,4 +1,4 @@
-# Step 3: Testing Docker capabilities
+# Testing Docker capabilities
 
 In this step you will start various new containers. Each time you will use the commands learned in the previous step to tweak the capabilities associated with the account used to run the container.
 

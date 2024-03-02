@@ -1,6 +1,6 @@
 # Bridge Networking
 
-## Step 1: The Basics
+## The Basics
 
 Every clean installation of Docker comes with a pre-built network called **bridge**. Verify this with the `docker network ls`.
 

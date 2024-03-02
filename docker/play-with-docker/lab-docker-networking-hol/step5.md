@@ -1,6 +1,6 @@
 # Overlay Networking
 
-## Step 1: The Basics
+## The Basics
 
 In this step you'll initialize a new Swarm, join a single worker node, and verify the operations worked.
 
@@ -45,7 +45,7 @@ rzyy572arjko2w0j82zvjkc6u *  node1   Ready   Active        Leader
 
 The `ID` and `HOSTNAME` values may be different in your lab. The important thing to check is that both nodes have joined the Swarm and are _ready_ and _active_.
 
-## Step 2: Create an overlay network
+## Create an overlay network
 
 Now that you have a Swarm initialized it's time to create an **overlay** network.
 

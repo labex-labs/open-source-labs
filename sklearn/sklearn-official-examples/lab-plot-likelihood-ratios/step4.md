@@ -2,7 +2,7 @@
 
 We will show that the class likelihood ratios are independent of the disease prevalence and can be extrapolated between populations regardless of any possible class imbalance.
 
-## Step 1: Preparing the Data
+## Preparing the Data
 
 We will generate a synthetic dataset using the `make_classification` function from scikit-learn. This dataset will simulate a population with a minority of subjects carrying a disease.
 
@@ -13,7 +13,7 @@ X, y = make_classification(n_samples=10_000, weights=[0.9, 0.1], random_state=0)
 print(f"Percentage of people carrying the disease: {100*y.mean():.2f}%")
 ```
 
-## Step 2: Pre-test vs. Post-test Analysis
+## Pre-test vs. Post-test Analysis
 
 We will fit a logistic regression model to the data and evaluate its performance on a held-out test set. We will compute the positive likelihood ratio to evaluate the usefulness of this classifier as a disease diagnosis tool.
 
@@ -31,7 +31,7 @@ pos_LR, neg_LR = class_likelihood_ratios(y_test, y_pred)
 print(f"LR+: {pos_LR:.3f}")
 ```
 
-## Step 3: Cross-validation of Likelihood Ratios
+## Cross-validation of Likelihood Ratios
 
 We will assess the variability of the measurements for the class likelihood ratios in some particular cases using cross-validation.
 
@@ -64,7 +64,7 @@ estimator = DummyClassifier(strategy="most_frequent")
 extract_score(cross_validate(estimator, X, y, scoring=scoring, cv=10))
 ```
 
-## Step 4: Invariance with Respect to Prevalence
+## Invariance with Respect to Prevalence
 
 We will show that the class likelihood ratios are independent of the disease prevalence and can be extrapolated between populations regardless of any possible class imbalance.
 

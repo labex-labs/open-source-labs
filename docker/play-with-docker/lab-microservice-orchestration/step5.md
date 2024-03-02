@@ -1,4 +1,4 @@
-# Step 3: Link Extractor API Service
+# Link Extractor API Service
 
 Checkout the `step3` branch and list files in it.
 

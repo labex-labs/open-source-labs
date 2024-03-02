@@ -1,6 +1,6 @@
 # Networking Basics
 
-## Step 1: The Docker Network Command
+## The Docker Network Command
 
 The `docker network` command is the main command for configuring and managing container networks. Run the `docker network` command from the first terminal.
 
@@ -9,8 +9,7 @@ docker network
 ```
 
 ```
-
-Usage:	docker network COMMAND
+Usage: docker network COMMAND
 
 Manage networks
 
@@ -31,7 +30,7 @@ Run 'docker network COMMAND --help' for more information on a command.
 
 The command output shows how to use the command as well as all of the `docker network` sub-commands. As you can see from the output, the `docker network` command allows you to create new networks, list existing networks, inspect networks, and remove networks. It also allows you to connect and disconnect containers from networks.
 
-## Step 2: List networks
+## List networks
 
 Run a `docker network ls` command to view existing container networks on the current Docker host.
 

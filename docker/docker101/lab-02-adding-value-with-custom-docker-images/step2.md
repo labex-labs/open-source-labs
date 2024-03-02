@@ -1,4 +1,4 @@
-# Step 2: Create and Build the Docker Image
+# Create and Build the Docker Image
 
 Now, what if you don't have python installed locally? Don't worry! Because you don't need it. One of the advantages of using containers is that you can build python inside your containers, without having python installed on your host machine.
 

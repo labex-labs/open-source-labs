@@ -1,4 +1,4 @@
-# Step 1: Containerized Link Extractor Script
+# Containerized Link Extractor Script
 
 Checkout the `step1` branch and list files in it.
 

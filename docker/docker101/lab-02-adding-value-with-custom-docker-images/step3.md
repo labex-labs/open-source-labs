@@ -1,4 +1,4 @@
-# Step 3: Run the Docker Image
+# Run the Docker Image
 
 Now that you have built the image, you can run it to see that it works.
 

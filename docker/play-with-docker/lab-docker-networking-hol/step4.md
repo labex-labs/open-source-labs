@@ -1,6 +1,6 @@
 # Bridge Networking
 
-## Step 2: Connect a container
+## Connect a container
 
 The **bridge** network is the default network for new containers. This means that unless you specify a different network, all new containers will be connected to the **bridge** network.
 
@@ -69,7 +69,7 @@ docker network inspect bridge
 <Snip>
 ```
 
-## Step 3: Test network connectivity
+## Test network connectivity
 
 The output to the previous `docker network inspect` command shows the IP address of the new container. In the previous example it is "172.17.0.2" but yours might be different.
 

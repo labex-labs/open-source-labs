@@ -1,4 +1,4 @@
-# Step 6: Swap Python API Service with Ruby
+# Swap Python API Service with Ruby
 
 Checkout the `step6` branch and list files in it.
 

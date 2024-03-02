@@ -1,4 +1,4 @@
-# Step 1: Create a `Python` App (without Using Docker)
+# Create a `Python` App (without Using Docker)
 
 Run the following command to create a file named `app.py` with a simple python program. (copy-paste the entire code block)
 

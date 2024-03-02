@@ -1,4 +1,4 @@
-# Step 4: Link Extractor API and Web Front End Services
+# Link Extractor API and Web Front End Services
 
 Checkout the `step4` branch and list files in it.
 

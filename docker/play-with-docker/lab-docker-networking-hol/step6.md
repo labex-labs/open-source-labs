@@ -1,6 +1,6 @@
 # Overlay Networking
 
-## Step 3: Create a service
+## Create a service
 
 Now that we have a Swarm initialized and an overlay network, it's time to create a service that uses the network.
 

@@ -1,4 +1,4 @@
-# Step 2: Link Extractor Module with Full URI and Anchor Text
+# Link Extractor Module with Full URI and Anchor Text
 
 Checkout the `step2` branch and list files in it.
 

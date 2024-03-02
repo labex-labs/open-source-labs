@@ -1,6 +1,6 @@
 # Overlay Networking
 
-## Step 5: Test service discovery
+## Test service discovery
 
 Now that you have a working service using an overlay network, let's test service discovery.
 

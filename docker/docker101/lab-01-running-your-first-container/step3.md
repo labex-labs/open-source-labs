@@ -1,4 +1,4 @@
-# Step 2: Run Multiple Containers
+# Run Multiple Containers
 
 ## Explore the Docker Hub
 

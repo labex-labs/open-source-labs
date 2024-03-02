@@ -1,4 +1,4 @@
-# Step 6: Understanding Image Layers
+# Understanding Image Layers
 
 One of the major design properties of Docker is its use of the union file system.
 
