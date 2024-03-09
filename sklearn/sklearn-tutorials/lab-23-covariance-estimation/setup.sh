@@ -13,7 +13,7 @@ mkdir ~/.jupyter
 cat >>~/.jupyter/jupyter_notebook_config.py <<EOF
 # Configuration file for notebook.
 c = get_config()
-c.ExtensionApp.default_url = '/tree/23-covariance-estimation.ipynb.ipynb'
+c.ExtensionApp.default_url = '/tree/23-covariance-estimation.ipynb'
 c.LabServerApp.open_browser = False
 c.ServerApp.disable_check_xsrf = True
 c.ServerApp.allow_root = True
