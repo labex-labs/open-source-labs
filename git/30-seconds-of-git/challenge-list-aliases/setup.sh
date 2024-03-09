@@ -7,5 +7,3 @@ git config --global alias.co checkout
 git config --global alias.rb rebase
 
 
-# Initialize .zsh_history
-touch /home/labex/.zsh_history

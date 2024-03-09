@@ -6,5 +6,3 @@ git branch new-branch
 git branch new-branch-1
 git branch new-branch-2
 
-# Initialize .zsh_history
-touch /home/labex/.zsh_history

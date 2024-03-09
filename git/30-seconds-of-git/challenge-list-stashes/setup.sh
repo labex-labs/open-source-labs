@@ -9,5 +9,3 @@ echo "hello,labex" > test2.txt
 git add .
 git stash save "Added test2.txt"
 
-# Initialize .zsh_history
-touch /home/labex/.zsh_history
