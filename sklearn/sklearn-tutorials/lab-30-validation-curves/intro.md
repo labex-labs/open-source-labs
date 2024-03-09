@@ -4,6 +4,10 @@ In machine learning, every estimator has its advantages and drawbacks. The gener
 
 In this lab, we will explore how to use validation curves to evaluate the performance of machine learning models. Validation curves allow us to plot the influence of a single hyperparameter on the training score and the validation score, helping us determine if the model is overfitting or underfitting for different hyperparameter values.
 
-> You can open the `30-validation-curves.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-> Labby cannot automatically verify the answers because it cannot access the notebook.
+## VM Tips
+
+After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+
+Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
+
+If you face issues during learning, feel free to ask Labby. Provide feedback after the session, and we will promptly resolve the problem for you.

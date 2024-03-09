@@ -2,6 +2,10 @@
 
 In this tutorial, we will compare Kernel Ridge Regression (KRR) and Support Vector Regression (SVR) using Scikit-Learn, a popular machine learning library in Python. Both models learn a non-linear function by employing the kernel trick. KRR and SVR differ in their loss functions and fitting methods. We will use an artificial dataset consisting of a sinusoidal target function and strong noise added to every fifth datapoint.
 
-> You can open the `plot-kernel-ridge-regression.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-> Labby cannot automatically verify the answers because it cannot access the notebook.
+## VM Tips
+
+After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+
+Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
+
+If you face issues during learning, feel free to ask Labby. Provide feedback after the session, and we will promptly resolve the problem for you.

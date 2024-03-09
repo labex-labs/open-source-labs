@@ -2,6 +2,10 @@
 
 Pandas is a powerful Python library for data manipulation and analysis. Its fundamental data structures, Series and DataFrame, allow you to store and manipulate structured data. This lab will provide a step-by-step guide on how to work with these data structures, from creation to manipulation and alignment.
 
-> You can open the `dsintro.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-> Labby cannot automatically verify the answers because it cannot access the notebook.
+## VM Tips
+
+After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+
+Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
+
+If you face issues during learning, feel free to ask Labby. Provide feedback after the session, and we will promptly resolve the problem for you.

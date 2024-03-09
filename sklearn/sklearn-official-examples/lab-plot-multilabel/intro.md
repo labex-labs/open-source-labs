@@ -9,6 +9,10 @@ This lab demonstrates a multi-label document classification problem using scikit
 
 In this process, rejection sampling is used to ensure that n is more than 2, and that the document length is never zero. Likewise, classes that have already been chosen are rejected. The documents that are assigned to both classes are plotted surrounded by two colored circles.
 
-> You can open the `plot-multilabel.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-> Labby cannot automatically verify the answers because it cannot access the notebook.
+## VM Tips
+
+After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+
+Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
+
+If you face issues during learning, feel free to ask Labby. Provide feedback after the session, and we will promptly resolve the problem for you.

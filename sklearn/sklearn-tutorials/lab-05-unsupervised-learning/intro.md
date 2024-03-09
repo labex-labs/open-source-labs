@@ -2,6 +2,10 @@
 
 In this lab, we will explore the concept of unsupervised learning, specifically clustering and decomposition. Unsupervised learning is a type of machine learning where we don't have labeled data to train on. Instead, we try to find patterns or structures in the data without any prior knowledge. Clustering is a common unsupervised learning technique used to group similar observations together. Decomposition, on the other hand, is used to find a lower-dimensional representation of the data by extracting the most important features or components.
 
-> You can open the `05-unsupervised-learning.ipynb` in WebIDE to start the exercises. Learn how to use [Jupyter Notebooks in VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
-> ![](https://file.labex.io/upload/u/1991/fzLMg1oHuQrI.png)
-> Labby cannot automatically verify the answers because it cannot access the notebook.
+## VM Tips
+
+After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
+
+Sometimes, you may need to wait a few seconds for Jupyter Notebook to finish loading. The validation of operations cannot be automated because of limitations in Jupyter Notebook.
+
+If you face issues during learning, feel free to ask Labby. Provide feedback after the session, and we will promptly resolve the problem for you.
