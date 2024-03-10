@@ -7,9 +7,10 @@ git add .
 git commit -m 'init'
 
 pip install pandas
+pip install Pyarrow
 pip install "dask[complete]"
 cd ~/project
-/usr/local/bin/pip install jupyter >/dev/null 2>&1
+pip install jupyter
 mkdir ~/.jupyter
 cat >>~/.jupyter/jupyter_notebook_config.py <<EOF
 # Configuration file for notebook.
@@ -54,7 +55,7 @@ EOF
 chmod 644 ~/.jupyter/jupyter_notebook_config.py
 export PATH=$PATH:/home/labex/.local/bin
 
-nohup /home/labex/.local/bin/jupyter notebook >/dev/null 2>&1 &
+nohup /home/labex/.local/bin/jupyter-notebook >/dev/null 2>&1 &
 
 # Wait for notebook service
 sleep 1
