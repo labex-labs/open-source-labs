@@ -27,6 +27,30 @@ c.ServerApp.token = ''
 c.ServerApp.tornado_settings = {"headers": {"Content-Security-Policy": "frame-ancestors self https://labex.io"}}
 EOF
 
+mkdir ~/.jupyter/custom/
+cat >>~/.jupyter/custom/custom.css <<EOF
+div#top-panel-wrapper {
+  display: none !important;
+}
+
+#menu-panel-wrapper {
+  display: none !important;
+}
+
+.lm-Widget.jp-CommandToolbarButton.jp-nb-interface-switcher-button.jp-Toolbar-item {
+  display: none !important;
+}
+
+div#main-panel {
+  top: unset !important;
+  height: inherit !important;
+}
+
+div#id-14077fc4-ca32-414c-96b0-d75db622097f {
+  height: inherit !important;
+}
+EOF
+
 chmod 644 ~/.jupyter/jupyter_notebook_config.py
 export PATH=$PATH:/home/labex/.local/bin
 
