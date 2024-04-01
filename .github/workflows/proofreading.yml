@@ -35,7 +35,7 @@ jobs:
         run: |
           pip install black
           black ${{ steps.changed-files-specific-py.outputs.all_changed_files }}
-          git pull origin master --rebase
+          git pull origin master
         continue-on-error: true
       - name: Git commit
         uses: stefanzweifel/git-auto-commit-action@v4
