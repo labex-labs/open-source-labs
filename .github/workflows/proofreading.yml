@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
       - name: Get md changed files
         id: changed-files-specific-md
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v44.3.0
       - name: Formatting md files
         run: |
           npm i -g prettier prettier-plugin-sh
@@ -27,7 +27,7 @@ jobs:
         continue-on-error: true
       - name: Get py changed files
         id: changed-files-specific-py
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v44.3.0
         with:
           files: |
             **/*.py
