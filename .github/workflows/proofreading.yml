@@ -1,12 +1,9 @@
 name: proofreading
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - "**/*.py"
-      - "**/*.md"
-      - "**/*.sh"
+  schedule:
+    - cron: "0 23 */7 * *"
+  workflow_dispatch:
+
 jobs:
   Proofreading:
     if: github.repository_owner == 'labex-labs'
@@ -16,29 +13,23 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Get md changed files
-        id: changed-files-specific-md
-        uses: tj-actions/changed-files@v44.3.0
-      - name: Formatting md files
+      - name: Formatting files
         run: |
-          npm i -g prettier prettier-plugin-sh
-          echo ${{ steps.changed-files-specific-md.outputs.all_changed_files }}
-          npx prettier --write ${{ steps.changed-files-specific-md.outputs.all_changed_files }}
-        continue-on-error: true
-      - name: Get py changed files
-        id: changed-files-specific-py
-        uses: tj-actions/changed-files@v44.3.0
-        with:
-          files: |
-            **/*.py
-      - name: Formatting py files
-        run: |
+          current_date=$(date +%s) && last_commit_date=$(git log -1 --format="%ct") && days_diff=$(($(($current_date - $last_commit_date)) / 86400)) && [ "$days_diff" -gt "7" ] && echo "最后一次提交已超过 7 天" && exit 1 || echo "最后一次提交未超过 7 天"
+          npm i -D prettier prettier-plugin-sh
           pip install black
-          black ${{ steps.changed-files-specific-py.outputs.all_changed_files }}
-          git pull origin master
+          echo "dependencies installed"
+          npx prettier --log-level silent --write **/*.md
+          echo "markdown files formatted"
+          npx prettier --log-level silent --write **/*.json
+          echo "json files formatted"
+          npx prettier --log-level error --write **/*.sh
+          echo "shell files formatted"
+          python -m black -q **/*.py
+          echo "python files formatted"
         continue-on-error: true
       - name: Git commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Formatting documents
+          commit_message: formatting files
           branch: ${{ github.head_ref }}
