@@ -15,10 +15,10 @@ function adder {
 
 # FUNCTION CALLS
 # Pass parameter to function A
-function_A "Function A."     # Function A.
-function_B                   # Function B.
+function_A "Function A." # Function A.
+function_B               # Function B.
 # Pass two parameters to function adder
-adder 12 56                  # 68
+adder 12 56 # 68
 ```
 
 Create a file called `~/project/functions.sh` and add the above code.

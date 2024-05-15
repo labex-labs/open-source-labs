@@ -23,10 +23,10 @@ Remove the stopped containers
 ```bash
 $ docker system prune
 WARNING! This will remove:
-         - all stopped containers
-         - all volumes not used by at least one container
-         - all networks not used by at least one container
-         - all dangling images
+- all stopped containers
+- all volumes not used by at least one container
+- all networks not used by at least one container
+- all dangling images
 Are you sure you want to continue? [y/N] y
 Deleted Containers:
 0b2ba61df37fb4038d9ae5d145740c63c2c211ae2729fc27dc01b82b5aaafa26

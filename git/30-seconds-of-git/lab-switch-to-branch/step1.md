@@ -23,7 +23,7 @@ git branch
 Output:
 
 ```shell
-  feature-1
+feature-1
 * master
 ```
 
@@ -49,5 +49,5 @@ Output:
 
 ```shell
 * feature-1
-  master
+master
 ```

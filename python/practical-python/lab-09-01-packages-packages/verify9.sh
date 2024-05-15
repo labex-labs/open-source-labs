@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat /home/labex/project/pcost.py|grep "import porty.pcost"
+cat /home/labex/project/pcost.py | grep "import porty.pcost"

@@ -24,8 +24,8 @@ This is the result after completion:
 ```shell
 # This is Git's per-user configuration file.
 [user]
-    name = labex_git
-    email = labex_git@example.com
+name = labex_git
+email = labex_git@example.com
 # Please adapt and uncomment the following lines:
 #   name =
 #   email = labex@64b8c76af840a200973e9d16.(none)

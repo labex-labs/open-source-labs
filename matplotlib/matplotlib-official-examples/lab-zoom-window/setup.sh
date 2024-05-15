@@ -10,7 +10,7 @@ pip install matplotlib
 cd ~/project
 pip install jupyter
 mkdir ~/.jupyter
-cat >>~/.jupyter/jupyter_notebook_config.py <<EOF
+cat >> ~/.jupyter/jupyter_notebook_config.py << EOF
 # Configuration file for notebook.
 c = get_config()
 c.ExtensionApp.default_url = '/tree/zoom-window.ipynb'
@@ -27,7 +27,7 @@ c.ServerApp.tornado_settings = {"headers": {"Content-Security-Policy": "frame-an
 EOF
 
 mkdir ~/.jupyter/custom/
-cat >>~/.jupyter/custom/custom.css <<EOF
+cat >> ~/.jupyter/custom/custom.css << EOF
 div#top-panel-wrapper {
   display: none !important;
 }
@@ -53,7 +53,7 @@ EOF
 chmod 644 ~/.jupyter/jupyter_notebook_config.py
 export PATH=$PATH:/home/labex/.local/bin
 
-nohup /home/labex/.local/bin/jupyter-notebook >/dev/null 2>&1 &
+nohup /home/labex/.local/bin/jupyter-notebook > /dev/null 2>&1 &
 
 # Wait for notebook service
 sleep 1

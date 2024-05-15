@@ -19,8 +19,8 @@ index b66215f..0164284 100644
 --- a/README.md
 +++ b/README.md
 @@ -1,3 +1,2 @@
- # git-playground
- Git Playground
+# git-playground
+Git Playground
 -hello
 diff --git a/index.html b/index.html
 new file mode 100644

@@ -4,7 +4,7 @@ The basic syntax of an if statement in shell programming is as follows:
 
 ```bash
 if [ expression ]; then
-    # code to execute if the expression is true
+  # code to execute if the expression is true
 fi
 ```
 

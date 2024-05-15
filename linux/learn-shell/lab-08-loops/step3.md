@@ -14,8 +14,8 @@ Here is an example that counts up to 5:
 ```bash
 count=1
 until [ $count -gt 5 ]; do
-    echo "Value of count is: $count"
-    count=$(($count + 1))
+  echo "Value of count is: $count"
+  count=$(($count + 1))
 done
 ```
 

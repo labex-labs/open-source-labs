@@ -13,10 +13,10 @@ $ docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
 
 / # ls -l /var/lib/docker/overlay2
 total 16
-drwx------    3 root     root          4096 Sep 25 19:44 0e55ecaa4d17c353191e68022d9a17fde64fb5e9217b07b5c56eb4c74dad5b32
-drwx------    5 root     root          4096 Sep 25 19:44 187854d05ccd18980642e820b0d2be6a127ba85d8ed96315bb5ae37eb1add36d
-drwx------    4 root     root          4096 Sep 25 19:44 187854d05ccd18980642e820b0d2be6a127ba85d8ed96315bb5ae37eb1add36d-init
-drwx------    2 root     root          4096 Sep 25 19:44 l
+drwx------ 3 root root 4096 Sep 25 19:44 0e55ecaa4d17c353191e68022d9a17fde64fb5e9217b07b5c56eb4c74dad5b32
+drwx------ 5 root root 4096 Sep 25 19:44 187854d05ccd18980642e820b0d2be6a127ba85d8ed96315bb5ae37eb1add36d
+drwx------ 4 root root 4096 Sep 25 19:44 187854d05ccd18980642e820b0d2be6a127ba85d8ed96315bb5ae37eb1add36d-init
+drwx------ 2 root root 4096 Sep 25 19:44 l
 
 / # exit
 ```

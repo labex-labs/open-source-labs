@@ -6,12 +6,12 @@ To test if a file has read permission for the user running the script, you can u
 #!/bin/bash
 filename="sample.md"
 if [ ! -f "$filename" ]; then
-    touch "$filename" # Create the file if it doesn't exist
+  touch "$filename" # Create the file if it doesn't exist
 fi
 if [ -r "$filename" ]; then
-    echo "You are allowed to read $filename"
+  echo "You are allowed to read $filename"
 else
-    echo "You are not allowed to read $filename"
+  echo "You are not allowed to read $filename"
 fi
 ```
 

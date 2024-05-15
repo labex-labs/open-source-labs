@@ -30,8 +30,8 @@ This is the result of running `git branch -a`:
 
 ```shell
 * master
-  new-feature-1
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
-  remotes/origin/new-feature-1
+new-feature-1
+remotes/origin/HEAD - > origin/master
+remotes/origin/master
+remotes/origin/new-feature-1
 ```

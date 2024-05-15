@@ -17,5 +17,3 @@ git stash save "new file added4"
 touch newfile5.txt
 git add newfile5.txt
 git stash save "new file added5"
-
-

@@ -8,11 +8,11 @@ function ENGLISH_CALC {
   b=$3
   signn=$2
   if [ $signn == "plus" ]; then
-    echo "$a + $b = $(($a+$b))"
+    echo "$a + $b = $(($a + $b))"
   elif [ $signn == "minus" ]; then
-    echo "$a - $b = $(($a-$b))"
+    echo "$a - $b = $(($a - $b))"
   elif [ $signn == "times" ]; then
-    echo "$a * $b = $(($a*$b))"
+    echo "$a * $b = $(($a * $b))"
   fi
 }
 

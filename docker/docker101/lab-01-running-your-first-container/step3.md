@@ -46,10 +46,10 @@ Check your running containers with `docker container ls`
 
 ```bash
 $ docker container ls
-CONTAINER ID    IMAGE    COMMAND    CREATED    STATUS    PORTS    NAMES
-d6777df89fea    nginx    "nginx -g 'daemon ..."    Less than a second ago    Up 2 seconds    0.0.0.0:8080->80/tcp    nginx
-ead80a0db505    mongo    "docker-entrypoint..."    17 seconds ago    Up 19 seconds    0.0.0.0:8081->27017/tcp    mongo
-af549dccd5cf    ubuntu    "top"    5 minutes ago    Up 5 minutes    priceless_kepler
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+d6777df89fea nginx "nginx -g 'daemon ..." Less than a second ago Up 2 seconds 0.0.0.0:8080- nginx > 80/tcp
+ead80a0db505 mongo "docker-entrypoint..." 17 seconds ago Up 19 seconds 0.0.0.0:8081- mongo > 27017/tcp
+af549dccd5cf ubuntu "top" 5 minutes ago Up 5 minutes priceless_kepler
 ```
 
 You should see that you have an Nginx web server container, and a MongoDB container running on your host. Note that we have not configured these containers to talk to each other.

@@ -15,10 +15,10 @@ NUMBER=10
 APPLES=12
 KING=GEORGE
 
-if [ $NUMBER -gt 15 ] ; then
+if [ $NUMBER -gt 15 ]; then
   echo 1
 fi
-if [ $NUMBER -eq $APPLES ] ; then
+if [ $NUMBER -eq $APPLES ]; then
   echo 2
 fi
 ```

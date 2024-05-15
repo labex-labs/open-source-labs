@@ -8,7 +8,7 @@ If the file exists, it will return true; otherwise, it will return false.
 #!/bin/bash
 filename="sample.md"
 if [ -e "$filename" ]; then
-    echo "$filename exists as a file"
+  echo "$filename exists as a file"
 fi
 ```
 

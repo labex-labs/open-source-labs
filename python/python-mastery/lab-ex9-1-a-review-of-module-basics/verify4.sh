@@ -1,3 +1,3 @@
 #!/bin/zsh
 
-cat ~/.python_history | grep  "from"
+cat ~/.python_history | grep "from"

@@ -5,5 +5,3 @@ cd /home/labex/project/git-playground
 touch newfile.txt
 echo "hello,world" > README.md
 git add .
-
-

@@ -8,7 +8,7 @@ NUMBER=10
 APPLES=12
 KING=GEORGE
 
-if [[ $(($NUMBER + $APPLES)) -le 32 ]] ; then
+if [[ $(($NUMBER + $APPLES)) -le 32 ]]; then
   echo 4
 fi
 ```

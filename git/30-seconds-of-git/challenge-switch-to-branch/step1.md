@@ -12,5 +12,5 @@ This is the final result:
 
 ```shell
 * feature-1
-  master
+master
 ```

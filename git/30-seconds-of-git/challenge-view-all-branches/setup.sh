@@ -8,4 +8,3 @@ git checkout -b three-branch
 git checkout -b four-branch
 git checkout -b five-branch
 git checkout master
-

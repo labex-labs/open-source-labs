@@ -10,9 +10,8 @@ trap "echo Booh!" SIGINT SIGTERM
 echo "The script will run until you hit Ctrl+Z."
 echo "Hit Ctrl+C to display a message!"
 
-while true
-do
-    sleep 60
+while true; do
+  sleep 60
 done
 ```
 

@@ -54,14 +54,14 @@ In the new terminal, use the `docker container ls` command to get the ID of the 
 
 ```bash
 $ docker container ls
-CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS                         PORTS                       NAMES
-b3ad2a23fab3        ubuntu                     "top"                    29 minutes ago      Up 29 minutes                                              goofy_nobel
+CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+b3ad2a23fab3 ubuntu "top" 29 minutes ago Up 29 minutes goofy_nobel
 ```
 
 Then use that id to run `bash` inside that container using the `docker container exec` command. Since we are using bash and want to interact with this container from our terminal, use `-it` flags to run using interactive mode while allocating a psuedo-terminal.
 
 ```bash
-$ docker container exec -it <CONTAINER ID> bash
+$ docker container exec -it ID < CONTAINER > bash
 root@b3ad2a23fab3:/#
 ```
 
@@ -75,10 +75,10 @@ From the same termina, run `ps -ef` to inspect the running processes.
 
 ```bash
 root@b3ad2a23fab3:/# ps -ef
-UID        PID  PPID  C STIME TTY          TIME CMD
-root         1     0  0 20:34 ?        00:00:00 top
-root        17     0  0 21:06 ?        00:00:00 bash
-root        27    17  0 21:14 ?        00:00:00 ps -ef
+UID PID PPID C STIME TTY TIME CMD
+root 1 0 0 20:34 ? 00:00:00 top
+root 17 0 0 21:06 ? 00:00:00 bash
+root 27 17 0 21:14 ? 00:00:00 ps -ef
 ```
 
 You should see only the `top` process, `bash` process and our `ps` process.

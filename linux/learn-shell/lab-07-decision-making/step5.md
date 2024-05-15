@@ -13,7 +13,7 @@ NUMBER=10
 APPLES=12
 KING=GEORGE
 
-if [[ ($APPLES -eq 12) || ("$KING" = "LUIS") ]] ; then
+if [[ ($APPLES -eq 12) || ("$KING" = "LUIS") ]]; then
   echo 3
 fi
 ```

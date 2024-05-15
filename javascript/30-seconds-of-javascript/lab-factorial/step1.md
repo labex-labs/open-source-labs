@@ -17,8 +17,8 @@ const factorial = (n) =>
         throw new TypeError("Negative numbers are not allowed!");
       })()
     : n <= 1
-    ? 1
-    : n * factorial(n - 1);
+      ? 1
+      : n * factorial(n - 1);
 ```
 
 You can test the code by calling the `factorial` function with a number as an argument:

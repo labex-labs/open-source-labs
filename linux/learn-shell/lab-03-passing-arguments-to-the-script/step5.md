@@ -4,9 +4,8 @@ The $@ variable holds a space-delimited string of all the arguments passed to th
 
 ```shell
 #!/bin/bash
-for arg in $@
-do
-    echo "Argument: $arg"
+for arg in $@; do
+  echo "Argument: $arg"
 done
 ```
 

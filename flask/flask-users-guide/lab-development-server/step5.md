@@ -19,7 +19,7 @@ lsof -P -i :5000
 - Windows:
 
 ```bash
-> netstat -ano | findstr 5000
+-ano > netstat | findstr 5000
 ```
 
 Once you have identified the process, you can use other operating system tools to stop it. After stopping the process, you should be able to run the development server without any issues.

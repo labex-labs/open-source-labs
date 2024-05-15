@@ -3,7 +3,7 @@
 You can assign a variable with the value of a command output using command substitution. Command substitution can be done by enclosing the command with \`\`(back-ticks) or `$()`.
 
 ```bash
-FILELIST=`ls`
+FILELIST=$(ls)
 FileWithTimeStamp=/tmp/file_$(/bin/date +%Y-%m-%d).txt
 
 echo "FileWithTimeStamp = $FileWithTimeStamp"

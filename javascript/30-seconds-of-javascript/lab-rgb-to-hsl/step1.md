@@ -21,8 +21,8 @@ const RGBToHSL = (r, g, b) => {
     ? l === r
       ? (g - b) / s
       : l === g
-      ? 2 + (b - r) / s
-      : 4 + (r - g) / s
+        ? 2 + (b - r) / s
+        : 4 + (r - g) / s
     : 0;
   return [
     60 * h < 0 ? 60 * h + 360 : 60 * h,

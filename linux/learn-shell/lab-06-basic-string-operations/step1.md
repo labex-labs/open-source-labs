@@ -6,7 +6,7 @@ Here's an example:
 
 ```bash
 STRING="this is a string"
-echo ${#STRING}    # Outputs: 16
+echo ${#STRING} # Outputs: 16
 ```
 
 Create a new file and save it with `~/project/string-operations.sh`.

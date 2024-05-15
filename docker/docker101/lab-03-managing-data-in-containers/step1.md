@@ -24,8 +24,8 @@ CouchDB will create an anonymous volume and generated a hashed name. Check the v
 
 ```bash
 labex:~/ $ docker volume ls
-DRIVER    VOLUME NAME
-local     1d292aca855adb9de9be7acea88f6d3f8e6a08eef5bfd986a81f073f1906b82f
+DRIVER VOLUME NAME
+local 1d292aca855adb9de9be7acea88f6d3f8e6a08eef5bfd986a81f073f1906b82f
 ```
 
 Set an environment variable `VOLUME` with the value of the generated name,
@@ -39,15 +39,15 @@ And inspect the volume that was created, use the hash name that was generated fo
 ```bash
 $ docker volume inspect $VOLUME
 [
-    {
-        "CreatedAt": "2020-09-24T14:10:07Z",
-        "Driver": "local",
-        "Labels": null,
-        "Mountpoint": "/var/lib/docker/volumes/f543c5319ebd96b7701dc1f2d915f21b095dfb35adbb8dc851630e098d526a50/_data",
-        "Name": "f543c5319ebd96b7701dc1f2d915f21b095dfb35adbb8dc851630e098d526a50",
-        "Options": null,
-        "Scope": "local"
-    }
+{
+  "CreatedAt": "2020-09-24T14:10:07Z",
+  "Driver": "local",
+  "Labels": null,
+  "Mountpoint": "/var/lib/docker/volumes/f543c5319ebd96b7701dc1f2d915f21b095dfb35adbb8dc851630e098d526a50/_data",
+  "Name": "f543c5319ebd96b7701dc1f2d915f21b095dfb35adbb8dc851630e098d526a50",
+  "Options": null,
+  "Scope": "local"
+}
 ]
 ```
 
@@ -114,9 +114,9 @@ Then create a second `busybox` container named `busybox2` using the `--volumes-f
 $ docker run --rm -it --name busybox2 --volumes-from busybox1 busybox sh
 / # ls -al /data
 total 12
-drwxr-xr-x    2 root     root          4096 Jan 23 07:20 .
-drwxr-xr-x    1 root     root          4096 Jan 23 07:24 ..
--rw-r--r--    1 root     root            20 Jan 23 07:20 hi.log
+drwxr-xr-x 2 root root 4096 Jan 23 07:20 .
+drwxr-xr-x 1 root root 4096 Jan 23 07:24 ..
+-rw-r--r-- 1 root root 20 Jan 23 07:20 hi.log
 / # cat /data/hi.log
 hello from busybox1
 / # exit
@@ -126,9 +126,9 @@ Docker created the anynomous volume that you were able to share using the `--vol
 
 ```bash
 labex:~/ $ docker volume ls
-DRIVER    VOLUME NAME
-local     0f971b2477d5fc0d0c2b31fc908ee59d6b577b4887e381964650ce6853890dc9
-local     1d292aca855adb9de9be7acea88f6d3f8e6a08eef5bfd986a81f073f1906b82f
+DRIVER VOLUME NAME
+local 0f971b2477d5fc0d0c2b31fc908ee59d6b577b4887e381964650ce6853890dc9
+local 1d292aca855adb9de9be7acea88f6d3f8e6a08eef5bfd986a81f073f1906b82f
 ```
 
 Cleanup the existing volumes and container.
@@ -156,8 +156,8 @@ Verify the volume was created,
 
 ```bash
 $ docker volume ls
-DRIVER    VOLUME NAME
-local    my-couchdb-data-volume
+DRIVER VOLUME NAME
+local my-couchdb-data-volume
 ```
 
 Now create the CouchDB container named `my-couchdb-name-vol` using the `named volume`,
@@ -182,12 +182,12 @@ labex:~/ $ docker run --rm -it --name busybox -v my-couchdb-data-volume:/myvolum
 / #
 / # ls -al /myvolume
 total 40
-drwxr-xr-x    4 5984     5984          4096 Jan 23 07:30 .
-drwxr-xr-x    1 root     root          4096 Jan 23 07:31 ..
-drwxr-xr-x    2 5984     5984          4096 Jan 23 07:29 .delete
--rw-r--r--    1 5984     5984          8388 Jan 23 07:30 _dbs.couch
--rw-r--r--    1 5984     5984          8385 Jan 23 07:29 _nodes.couch
-drwxr-xr-x    4 5984     5984          4096 Jan 23 07:30 shards
+drwxr-xr-x 4 5984 5984 4096 Jan 23 07:30 .
+drwxr-xr-x 1 root root 4096 Jan 23 07:31 ..
+drwxr-xr-x 2 5984 5984 4096 Jan 23 07:29 .delete
+-rw-r--r-- 1 5984 5984 8388 Jan 23 07:30 _dbs.couch
+-rw-r--r-- 1 5984 5984 8385 Jan 23 07:29 _nodes.couch
+drwxr-xr-x 4 5984 5984 4096 Jan 23 07:30 shards
 / # exit
 ```
 
@@ -197,8 +197,8 @@ You can check the Docker managed filesystem for volumes by running a busybox con
 docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
 / # ls -l /var/lib/docker/volumes
 total 28
--rw-------    1 root     root         32768 Nov 10 15:54 metadata.db
-drwxr-xr-x    3 root     root          4096 Nov 10 15:54 my-couchdb-data-volume
+-rw------- 1 root root 32768 Nov 10 15:54 metadata.db
+drwxr-xr-x 3 root root 4096 Nov 10 15:54 my-couchdb-data-volume
 / # exit
 ```
 
@@ -231,9 +231,9 @@ Verify that a directory `data` was created,
 ```bash
 $ ls -al
 total 20
-drwxrwxr-x  3 labex labex 4096 Aug 29 14:14 .
+drwxrwxr-x 3 labex labex 4096 Aug 29 14:14 .
 drwxr-x--- 25 labex labex 4096 Aug 29 14:14 ..
-drwxr-xr-x  3  5984  5984 4096 Aug 29 14:14 data
+drwxr-xr-x 3 5984 5984 4096 Aug 29 14:14 data
 ```
 
 and that CouchDB has created data files here,
@@ -241,11 +241,11 @@ and that CouchDB has created data files here,
 ```bash
 $ ls -al data
 total 32
-drwxr-xr-x 3  5984  5984 4096 Aug 29 14:14 .
+drwxr-xr-x 3 5984 5984 4096 Aug 29 14:14 .
 drwxrwxr-x 3 labex labex 4096 Aug 29 14:14 ..
--rw-r--r-- 1  5984  5984 4257 Aug 29 14:14 _dbs.couch
-drwxr-xr-x 2  5984  5984 4096 Aug 29 14:14 .delete
--rw-r--r-- 1  5984  5984 8385 Aug 29 14:14 _nodes.couch
+-rw-r--r-- 1 5984 5984 4257 Aug 29 14:14 _dbs.couch
+drwxr-xr-x 2 5984 5984 4096 Aug 29 14:14 .delete
+-rw-r--r-- 1 5984 5984 8385 Aug 29 14:14 _nodes.couch
 ```
 
 Also check that now, no managed volume was created by docker, because we are now using a `host volume`.
@@ -261,8 +261,8 @@ docker run -it --privileged --pid=host busybox nsenter -t 1 -m -u -n -i sh
 sh-5.1# ls -l /var/lib/docker/volumes
 total 28
 brw------- 1 root root 252, 3 Jan 23 15:15 backingFsBlockDev
--rw------- 1 root root  32768 Jan 23 15:33 metadata.db
-drwx-----x 3 root root   4096 Jan 23 15:26 my-couchdb-data-volume
+-rw------- 1 root root 32768 Jan 23 15:33 metadata.db
+drwx-----x 3 root root 4096 Jan 23 15:26 my-couchdb-data-volume
 sh-5.1# exit
 ```
 
@@ -278,12 +278,12 @@ Note that CouchDB created a folder `shards`,
 ```bash
 $ ls -al data
 total 40
-drwxr-xr-x 4  5984  5984 4096 Aug 29 14:15 .
+drwxr-xr-x 4 5984 5984 4096 Aug 29 14:15 .
 drwxrwxr-x 3 labex labex 4096 Aug 29 14:14 ..
--rw-r--r-- 1  5984  5984 8388 Aug 29 14:15 _dbs.couch
-drwxr-xr-x 2  5984  5984 4096 Aug 29 14:14 .delete
--rw-r--r-- 1  5984  5984 8385 Aug 29 14:14 _nodes.couch
-drwxr-xr-x 4  5984  5984 4096 Aug 29 14:15 shards
+-rw-r--r-- 1 5984 5984 8388 Aug 29 14:15 _dbs.couch
+drwxr-xr-x 2 5984 5984 4096 Aug 29 14:14 .delete
+-rw-r--r-- 1 5984 5984 8385 Aug 29 14:14 _nodes.couch
+drwxr-xr-x 4 5984 5984 4096 Aug 29 14:15 shards
 ```
 
 List the content of the `shards` directory,

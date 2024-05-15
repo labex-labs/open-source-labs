@@ -16,7 +16,7 @@ To loop through an array, you can use the following example:
 ```bash
 NAMES=("Joe" "Jenny" "Sara" "Tony")
 for name in "${NAMES[@]}"; do
-    echo "My name is $name"
+  echo "My name is $name"
 done
 ```
 
@@ -41,7 +41,7 @@ touch file1.txt file2.txt file3.txt
 
 # loop through the output of ls
 for file in $(ls *.txt); do
-    echo "File is: $file"
+  echo "File is: $file"
 done
 ```
 

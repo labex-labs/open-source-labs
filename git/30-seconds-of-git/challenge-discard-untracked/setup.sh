@@ -5,4 +5,3 @@ cd /home/labex/project/git-playground
 touch one.txt
 touch two.txt
 touch three.txt
-

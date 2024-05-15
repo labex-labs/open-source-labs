@@ -4,7 +4,7 @@ Instead of using an inline message in the `trap` command, let's refactor it to u
 
 ```bash
 function booh {
-    echo "Booh!"
+  echo "Booh!"
 }
 ```
 

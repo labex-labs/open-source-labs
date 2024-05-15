@@ -5,4 +5,3 @@ cd /home/labex/project/git-playground
 echo "hello,world" >> README.md
 git add README.md
 echo "hello,labex" >> file1.txt
-

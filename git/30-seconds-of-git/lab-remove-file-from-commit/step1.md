@@ -35,10 +35,10 @@ This is what happens when you remove `file2.txt` from Git version control:
 On branch master
 
 Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        deleted:    file2.txt
+(use "git restore --staged <file>..." to unstage)
+deleted: file2.txt
 
 Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        file2.txt
+(use "git add <file>..." to include in what will be committed)
+file2.txt
 ```

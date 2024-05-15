@@ -5,11 +5,11 @@ The $# variable holds the number of arguments passed to the script. You can use 
 ```shell
 #!/bin/bash
 if [ $# -eq 0 ]; then
-    echo "No arguments passed."
+  echo "No arguments passed."
 elif [ $# -eq 1 ]; then
-    echo "Only one argument passed."
+  echo "Only one argument passed."
 else
-    echo "Multiple arguments passed."
+  echo "Multiple arguments passed."
 fi
 ```
 

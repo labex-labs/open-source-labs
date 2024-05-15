@@ -14,8 +14,8 @@ Here is an example that counts down from 4:
 ```bash
 count=4
 while [ $count -gt 0 ]; do
-    echo "Value of count is: $count"
-    count=$(($count - 1))
+  echo "Value of count is: $count"
+  count=$(($count - 1))
 done
 ```
 

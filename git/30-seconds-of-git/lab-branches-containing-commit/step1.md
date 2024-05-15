@@ -18,7 +18,7 @@ The output should be:
 
 ```shell
 * master
-  new-branch
-  new-branch-1
-  new-branch-2
+new-branch
+new-branch-1
+new-branch-2
 ```
