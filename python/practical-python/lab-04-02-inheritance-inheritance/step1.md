@@ -1,4 +1,4 @@
-# Introduction
+# Inheritance
 
 Inheritance is used to specialize existing objects:
 
