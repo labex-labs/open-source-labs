@@ -32,6 +32,6 @@ Output:
 (1 + 2) * (3 / 4) = 0
 ```
 
-This was a very simple example, but much more complex interfaces have been developed, such as [`lazy_static`](https://crates.io/crates/lazy_static) or [`clap`](https://crates.io/crates/clap).
+This was a very simple example.
 
 Also, note the two pairs of braces in the macro. The outer ones are part of the syntax of `macro_rules!`, in addition to `()` or `[]`.
