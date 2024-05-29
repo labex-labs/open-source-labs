@@ -28,7 +28,7 @@ jobs:
           labex update index-contributors --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY --path .
       - name: Formatting index.json
         run: |
-          npm i -g prettier prettier-plugin-sh
+          npm i -D prettier prettier-plugin-sh
           npx prettier --write "**/index.json"
           git pull origin master
       - name: Git commit
