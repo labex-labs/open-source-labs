@@ -30,8 +30,15 @@ And here's the corresponding CSS:
       transparent 75%,
       #000 75%,
       #000
-    ), linear-gradient(-45deg, #000 25%, transparent 25%, transparent 75%, #000
-        75%, #000);
+    ),
+    linear-gradient(
+      -45deg,
+      #000 25%,
+      transparent 25%,
+      transparent 75%,
+      #000 75%,
+      #000
+    );
   background-size: 60px 60px;
   background-repeat: repeat;
 }
