@@ -1,4 +1,1 @@
-#!/bin/zsh
-
-cd ~/project
-git diff | grep 'masked_array'
+#!/bin/bash

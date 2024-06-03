@@ -1,4 +1,1 @@
-#!/bin/zsh
-
-cd ~/project
-git diff | grep 'MOVETO'
+#!/bin/bash

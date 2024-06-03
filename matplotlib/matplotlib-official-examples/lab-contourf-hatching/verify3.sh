@@ -1,4 +1,1 @@
-#!/bin/zsh
-
-cd ~/project
-git diff | grep -E 'contourf.*\('
+#!/bin/bash

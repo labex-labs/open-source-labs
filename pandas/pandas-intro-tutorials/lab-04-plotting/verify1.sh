@@ -1,5 +1,1 @@
-#!/bin/zsh
-
-cd ~/project
-git diff | grep 'pandas'
-git diff | grep 'matplotlib'
+#!/bin/bash

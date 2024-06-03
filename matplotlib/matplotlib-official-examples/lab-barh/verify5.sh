@@ -1,4 +1,1 @@
-#!/bin/zsh
-
-cd ~/project
-git diff | grep -E 'barh.*\('
+#!/bin/bash
