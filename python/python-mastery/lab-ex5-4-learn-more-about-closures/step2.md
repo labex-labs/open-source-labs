@@ -1,6 +1,6 @@
 # Closures as a code generator
 
-In [Exercise 4.3](ex4_3.md), you developed a collection of descriptor classes that allowed type-checking of object attributes. For example:
+In Exercise 4.3, you developed a collection of descriptor classes that allowed type-checking of object attributes. For example:
 
 ```python
 

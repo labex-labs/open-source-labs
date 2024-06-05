@@ -1,6 +1,6 @@
 # The Trouble with Column Formatting
 
-If you go all the way back to [Exercise 3.1](ex3_1.md), you wrote a function `print_portfolio()` that produced a table like this:
+If you go all the way back to Exercise 3.1, you wrote a function `print_portfolio()` that produced a table like this:
 
 ```python
 >>> portfolio = read_portfolio('portfolio.csv')

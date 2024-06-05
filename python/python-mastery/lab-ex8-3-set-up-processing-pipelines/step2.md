@@ -1,6 +1,6 @@
 # Build some pipeline components
 
-In a file `coticker.py`, build a series of pipeline components that carry out the same tasks as the `ticker.py` program in [Exercise 8.2](ex8_2.md). Here is the implementation of the various pieces.
+In a file `coticker.py`, build a series of pipeline components that carry out the same tasks as the `ticker.py` program in Exercise 8.2. Here is the implementation of the various pieces.
 
 ```python
 # coticker.py

@@ -1,6 +1,6 @@
 # Saving a lot of memory
 
-In [Exercise 2.1](ex2_1.md) you wrote a function `read_rides_as_dicts()` that read the CTA bus data into a list of dictionaries. Using it requires a lot of memory. For example, let's find the day on which the route 22 bus had the greatest ridership:
+In Exercise 2.1 you wrote a function `read_rides_as_dicts()` that read the CTA bus data into a list of dictionaries. Using it requires a lot of memory. For example, let's find the day on which the route 22 bus had the greatest ridership:
 
 ```python
 >>> import tracemalloc

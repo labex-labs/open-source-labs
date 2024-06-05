@@ -1,6 +1,6 @@
 # Named Tuples
 
-In [Exercise 2.1](ex2_1.md), you experimented with `namedtuple` objects in the `collections` module. Just to refresh your memory, here is how they worked:
+In Exercise 2.1, you experimented with `namedtuple` objects in the `collections` module. Just to refresh your memory, here is how they worked:
 
 ```python
 >>> from collections import namedtuple

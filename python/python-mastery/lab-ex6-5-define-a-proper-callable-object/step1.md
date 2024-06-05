@@ -1,6 +1,6 @@
 # Preparation
 
-Back in [Exercise 4.3](ex4_3.md), you created a series of `Validator` classes for performing different kinds of type and value checks. For example:
+Back in Exercise 4.3, you created a series of `Validator` classes for performing different kinds of type and value checks. For example:
 
 ```python
 >>> from validate import Integer

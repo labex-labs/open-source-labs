@@ -1,6 +1,6 @@
 # Special Challenge Project
 
-In [Exercise 2.5](ex2_5.md), we created a class `RideData` that stored all of the bus data in columns, but actually presented the data to a user as a sequence of dictionaries. It saved a lot of memory through various forms of magic.
+In Exercise 2.5, we created a class `RideData` that stored all of the bus data in columns, but actually presented the data to a user as a sequence of dictionaries. It saved a lot of memory through various forms of magic.
 
 Can you generalize that idea? Specifically, can you make a general purpose function `read_csv_as_columns()` that works like this:
 

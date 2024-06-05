@@ -1,6 +1,6 @@
 # Making it Sane
 
-Using mixins can be a useful tool for framework builders for reducing the amount of code that needs to be written. However, forcing users to remember how to properly compose classes and use multiple inheritance can fry their brains. In [Exercise 3.5](ex3_5.md), you wrote a function `create_formatter()` that made it easier to create a custom formatter. Take that function and extend it to understand a few optional arguments related to the mixin classes. For example:
+Using mixins can be a useful tool for framework builders for reducing the amount of code that needs to be written. However, forcing users to remember how to properly compose classes and use multiple inheritance can fry their brains. In Exercise 3.5, you wrote a function `create_formatter()` that made it easier to create a custom formatter. Take that function and extend it to understand a few optional arguments related to the mixin classes. For example:
 
 ```python
 >>> from tableformat import create_formatter

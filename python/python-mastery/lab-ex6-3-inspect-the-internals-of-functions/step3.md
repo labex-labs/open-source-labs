@@ -1,13 +1,13 @@
 # Putting it Together
 
-In [Exercise 6.1](ex6_1.md), you created a class `Structure` that defined a generalized `__init__()`, `__setattr__()`, and `__repr__()` method. That class required a user to define a `_fields` class variable like this:
+In Exercise 6.1, you created a class `Structure` that defined a generalized `__init__()`, `__setattr__()`, and `__repr__()` method. That class required a user to define a `_fields` class variable like this:
 
 ```python
 class Stock(Structure):
     _fields = ('name','shares','price')
 ```
 
-The problem with this class is that the `__init__()` function didn't have a useful argument signature for the purposes of help and keyword argument passing. In [Exercise 6.2](ex6_2.md), you did a sneaky trick involving a special `self._init()` function. For example:
+The problem with this class is that the `__init__()` function didn't have a useful argument signature for the purposes of help and keyword argument passing. In Exercise 6.2, you did a sneaky trick involving a special `self._init()` function. For example:
 
 ```python
 class Stock(Structure):

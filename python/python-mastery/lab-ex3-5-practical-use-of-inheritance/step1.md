@@ -1,6 +1,6 @@
 # Preparation
 
-One major use of classes in Python is in writing code that be extended/adapted in various ways. To illustrate, in [Exercise 3.2](ex3_2.md) you created a function `print_table()` that made tables. You used this to make output from the `portfolio` list. For example:
+One major use of classes in Python is in writing code that be extended/adapted in various ways. To illustrate, in Exercise 3.2 you created a function `print_table()` that made tables. You used this to make output from the `portfolio` list. For example:
 
 ```python
 >>> import stock

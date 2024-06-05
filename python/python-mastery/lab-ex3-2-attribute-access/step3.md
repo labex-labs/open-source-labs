@@ -1,6 +1,6 @@
 # Table Output
 
-In [Exercise 3.1](ex3_1.md), you wrote a function `print_portfolio()` that made a nicely formatted table. That function was custom tailored to a list of `Stock` objects. However, it can be completely generalized to work with any list of objects using the technique in part (b).
+In Exercise 3.1, you wrote a function `print_portfolio()` that made a nicely formatted table. That function was custom tailored to a list of `Stock` objects. However, it can be completely generalized to work with any list of objects using the technique in part (b).
 
 Create a new module called `tableformat.py`. In that program, write a function `print_table()` that takes a sequence (list) of objects, a list of attribute names, and prints a nicely formatted table. For example:
 

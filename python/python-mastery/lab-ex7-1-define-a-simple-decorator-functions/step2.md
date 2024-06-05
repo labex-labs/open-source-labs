@@ -2,7 +2,7 @@
 
 Hint: Complete the following in the `validate.py` file
 
-In [Exercise 6.6](ex6_6.md), you created a callable class `ValidatedFunction` that enforced type annotations. Rewrite this class as a decorator function called `validated`. It should allow you to write code like this:
+In Exercise 6.6, you created a callable class `ValidatedFunction` that enforced type annotations. Rewrite this class as a decorator function called `validated`. It should allow you to write code like this:
 
 ```python
 from validate import Integer, validated

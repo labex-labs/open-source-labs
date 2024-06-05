@@ -1,6 +1,6 @@
 # Build a Value Checker
 
-In [Exercise 3.4](ex3_4.md), you added some properties to the `Stock` class that checked attributes for different types and values (e.g., shares had to be a positive integer). Let's play with that idea a bit. Start by creating a file `validate.py` and defining the following base class:
+In Exercise 3.4, you added some properties to the `Stock` class that checked attributes for different types and values (e.g., shares had to be a positive integer). Let's play with that idea a bit. Start by creating a file `validate.py` and defining the following base class:
 
 ```python
 # validate.py

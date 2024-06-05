@@ -1,6 +1,6 @@
 # A Context Manager
 
-In [Exercise 3.5](ex3_5.md), you made it possible for users to make nicely formatted tables. For example:
+In Exercise 3.5, you made it possible for users to make nicely formatted tables. For example:
 
 ```python
 >>> from tableformat import create_formatter

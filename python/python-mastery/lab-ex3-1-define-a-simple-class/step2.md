@@ -17,7 +17,7 @@ Add a function `read_portfolio()` to your `stock.py` program that reads a file o
 >>>
 ```
 
-You already wrote a similar function as part of [Exercise 2.3](ex2_3.md). Design discussion: Should `read_portfolio()` be a separate function or part of the class definition?
+You already wrote a similar function as part of Exercise 2.3. Design discussion: Should `read_portfolio()` be a separate function or part of the class definition?
 
 ## Note:
 

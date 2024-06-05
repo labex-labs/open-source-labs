@@ -1,6 +1,6 @@
 # Creating an `__init__()` function
 
-In [Exercise 6.3](ex6_3.md), you wrote code that inspected the signature of the `__init__()` method to set the attribute names in a `_fields` class variable. For example:
+In Exercise 6.3, you wrote code that inspected the signature of the `__init__()` method to set the attribute names in a `_fields` class variable. For example:
 
 ```python
 class Stock(Structure):

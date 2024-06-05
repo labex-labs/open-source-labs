@@ -1,6 +1,6 @@
 # Preparation
 
-We're going to recreate the `Stock` class from scratch using some new techniques. Make sure you have your unit tests from [Exercise 5.4](ex5_4.md) handy. You'll want those.
+We're going to recreate the `Stock` class from scratch using some new techniques. Make sure you have your unit tests from Exercise 5.4 handy. You'll want those.
 
 If you define a function, you probably already know that it can be called using a mix of positional or keyword arguments. For example:
 

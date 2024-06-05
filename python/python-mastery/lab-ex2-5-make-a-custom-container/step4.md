@@ -1,6 +1,6 @@
 # Making a Custom Container - The Great Fake Out
 
-Storing the data in columns offers a much better memory savings, but the data is now rather weird to work with. In fact, none of our earlier analysis code from [Exercise 2.2](ex2_2.md) can work with columns. The reason everything is broken is that you've broken the data abstraction that was used in earlier exercises--namely the assumption that data is stored as a list of dictionaries.
+Storing the data in columns offers a much better memory savings, but the data is now rather weird to work with. In fact, none of our earlier analysis code from Exercise 2.2 can work with columns. The reason everything is broken is that you've broken the data abstraction that was used in earlier exercises--namely the assumption that data is stored as a list of dictionaries.
 
 This can be fixed if you're willing to make a custom container object that "fakes" it. Let's do that.
 
@@ -108,4 +108,4 @@ If you've done this right, old code should work exactly as it did before. For ex
 >>>
 ```
 
-Run your earlier CTA code from [Exercise 2.2](ex2_2.md). It should work without modification, but use substantially less memory.
+Run your earlier CTA code from Exercise 2.2. It should work without modification, but use substantially less memory.

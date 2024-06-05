@@ -1,6 +1,6 @@
 # Example: Receiving messages
 
-In [Exercise 8.3](ex8_3.md), we looked at the definitions of coroutines. Coroutines were functions that you sent data to. For example:
+In Exercise 8.3, we looked at the definitions of coroutines. Coroutines were functions that you sent data to. For example:
 
 ```python
 >>> from cofollow import consumer
@@ -54,4 +54,4 @@ AssertionError: Expected type <class 'int'>
 
 From a readability point of view, the `yield from receive(int)` statement is a bit more descriptive--it indicates that the function will yield until it receives a message of a given type.
 
-Now, modify all of the coroutines in `coticker.py` to use the new `receive()` function and make sure the code from [Exercise 8.3](ex8_3.md) still works.
+Now, modify all of the coroutines in `coticker.py` to use the new `receive()` function and make sure the code from Exercise 8.3 still works.

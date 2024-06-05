@@ -1,6 +1,6 @@
 # The Final Frontier
 
-In [Exercise 7.3](ex7_3.md), we made it possible to define type-checked structures as follows:
+In Exercise 7.3, we made it possible to define type-checked structures as follows:
 
 ```python
 from validate import String, PositiveInteger, PositiveFloat
