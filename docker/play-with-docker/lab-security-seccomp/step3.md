@@ -1,8 +1,8 @@
-# Clone the labs GitHub repo
+# Clone the lab GitHub repo
 
 In this step you will clone the lab's GitHub repo so that you have the seccomp profiles that you will use for the remainder of this lab.
 
-1. Clone the labs GitHub repo.
+1. Clone the lab GitHub repo.
 
    ```bash
    git clone https://github.com/docker/labs
