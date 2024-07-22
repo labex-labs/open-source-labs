@@ -22,6 +22,7 @@ If you want to clone the repository into a specific directory, you can specify t
 For example, to clone the repository into a directory named `my-project`, you can run the following command:
 
 ```shell
+cd ~/project
 git clone https://github.com/labex-labs/git-playground.git my-project
 ```
 
