@@ -1,2 +1,2 @@
 #!/bin/zsh
-(cd /home/labex/project/my-project && git status | grep "On branch master") && echo "True"
+cd /home/labex/project/first-trending-repo && git status | grep "On branch master"

@@ -4,8 +4,16 @@ As a developer, you often need to work on code that is stored in a remote reposi
 
 ## Tasks
 
-Clone the repository from `https://github.com/labex-labs/git-playground.git` into a special directory called `my-project` in `/home/labex/project`.
+1. Clone the firt trending repository from [GitHub Trending](https://github.com/trending) to `~/project/` directory, and rename the directory to `first-trending-repo`.
 
-There is the results after completing the challenge:
+## Example
 
-![<result>](./assets/challenge-clone-repo-step1-2.png)
+When you finish the tasks, the `~/project/` directory should look like this:
+
+```bash
+ls -a ~/project/
+```
+
+```text
+.  ..  first-trending-repo
+```
