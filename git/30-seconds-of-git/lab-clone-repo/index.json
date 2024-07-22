@@ -19,9 +19,16 @@
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify for successful cloning",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
+            "name": "Verify for successful cloning git-playground",
+            "file": "verify1-1.sh",
+            "hint": "~/project/git-playground not found. Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify for successful cloning git-playground as my-project",
+            "file": "verify1-2.sh",
+            "hint": "~/project/my-project not found. Please make sure you have completed the required actions.",
             "timeout": 0,
             "showstderr": true
           }
