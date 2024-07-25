@@ -7,11 +7,13 @@ You can also use string comparisons to evaluate conditions. Here are some exampl
 - `"!="`: not equal to
 - `"-z"`: empty string
 
+Update the `if.sh` script to include a string comparison that checks if the `KING` variable is equal to "LUIS":
+
 ```bash
 #!/bin/bash
 NUMBER=10
 APPLES=12
-KING=GEORGE
+KING=LUIS
 
 if [[ ($APPLES -eq 12) || ("$KING" = "LUIS") ]]; then
   echo 3

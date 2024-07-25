@@ -5,6 +5,10 @@ To create a shell variable, you need to assign a value to it. The variable name 
 Let's create a file named `~/project/variables.sh` and add the following content:
 
 ```bash
+touch ~/project/variables.sh
+```
+
+```bash
 PRICE_PER_APPLE=5
 MyFirstLetters=ABC
 greeting='Hello        world!'

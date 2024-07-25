@@ -23,6 +23,8 @@ chmod +x operators.sh
 ./operators.sh
 ```
 
+The output will be:
+
 ```text
 Total Cost is 128
 ```

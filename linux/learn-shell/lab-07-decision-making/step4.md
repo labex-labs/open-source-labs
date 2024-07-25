@@ -9,10 +9,12 @@ You can use numeric comparisons to evaluate conditions in shell scripts. Here ar
 - `-eq`: equal to
 - `-ne`: not equal to
 
+Update the `if.sh` script to include a numeric comparison that checks if the `NUMBER` variable is equal to the `APPLES` variable:
+
 ```bash
 #!/bin/bash
 NUMBER=10
-APPLES=12
+APPLES=10
 KING=GEORGE
 
 if [ $NUMBER -gt 15 ]; then

@@ -1,2 +1,2 @@
 #!/bin/zsh
-cat ~/project/variables.sh | grep "#!/bin/bash"
+cat ~/project/variables.sh | grep "ABC"

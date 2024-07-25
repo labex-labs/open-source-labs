@@ -2,6 +2,8 @@
 
 You can combine multiple conditions using logical operators like `&&` (logical AND) and `||` (logical OR).
 
+Update the `if.sh` script to include a logical OR operator that checks if the sum of the `NUMBER` and `APPLES` variables is less than or equal to 32:
+
 ```bash
 #!/bin/bash
 NUMBER=10

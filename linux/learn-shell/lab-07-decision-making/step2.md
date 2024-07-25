@@ -2,6 +2,8 @@
 
 You can expand the if statement to include an else clause, which allows you to specify code to execute when the expression is false.
 
+Update the `if.sh` script to include an else clause that prints a message when the `NAME` variable is not equal to "John":
+
 ```bash
 #!/bin/bash
 NAME="Bill"

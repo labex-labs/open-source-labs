@@ -1,2 +1,2 @@
 #!/bin/zsh
-ls ~/project/if.sh
+bash ~/project/if.sh | grep "rue"
