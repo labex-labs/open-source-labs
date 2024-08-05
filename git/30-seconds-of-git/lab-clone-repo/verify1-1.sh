@@ -1,2 +1,3 @@
-#!/bin/zsh
-cd /home/labex/project/git-playground && git status | grep "On branch master"
+#!/bin/bash
+cd /home/labex/project
+[[ -d git-playground && -d git-playground/.git ]]
