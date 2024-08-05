@@ -15,25 +15,123 @@
   "details": {
     "steps": [
       {
-        "title": "Clone a Repository",
+        "title": "Clone a Basic Repository",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify for successful cloning git-playground",
+            "name": "Verify repository cloning",
             "file": "verify1-1.sh",
-            "hint": "~/project/git-playground not found. Please make sure you have completed the required actions.",
+            "hint": "The git-playground directory was not found or is not a Git repository. \nMake sure you've successfully cloned the repository.",
             "timeout": 0,
             "showstderr": true
           },
           {
-            "name": "Verify for successful cloning git-playground as my-project",
+            "name": "Check if repository is on the expected branch",
             "file": "verify1-2.sh",
-            "hint": "~/project/my-project not found. Please make sure you have completed the required actions.",
+            "hint": "The cloned repository is not on the expected branch. \nThis might indicate an issue with the cloning process.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": ["git/clone"]
+      },
+      {
+        "title": "Explore the Cloned Repository",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify navigation to git-playground",
+            "file": "verify2-1.sh",
+            "hint": "You are not in the git-playground directory. \nMake sure you've navigated into the cloned repository.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check for .git directory",
+            "file": "verify2-2.sh",
+            "hint": "The .git directory was not found in the git-playground repository. \nThis might indicate an issue with the cloning process.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify git log command works",
+            "file": "verify2-3.sh",
+            "hint": "Unable to retrieve git log. Make sure the repository has been cloned correctly and has a commit history.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Clone to a Specific Directory",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify cloning to specific directory",
+            "file": "verify3-1.sh",
+            "hint": "The my-project directory was not found or is not a Git repository. \nMake sure you've successfully cloned the repository to the specified directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if repository in my-project is on expected branch",
+            "file": "verify3-2.sh",
+            "hint": "The cloned repository in my-project is not on the expected branch. \nThis might indicate an issue with the cloning process.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify my-project is a different directory from git-playground",
+            "file": "verify3-3.sh",
+            "hint": "Both git-playground and my-project should exist as separate directories. \nMake sure you've cloned the repository twice with different directory names.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Shallow Clone with Depth",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Verify shallow clone",
+            "file": "verify4-1.sh",
+            "hint": "The shallow-repo directory was not found or is not a Git repository. \nMake sure you've successfully created a shallow clone.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if shallow clone has only one commit",
+            "file": "verify4-2.sh",
+            "hint": "The shallow clone should have only one commit. \nMake sure you used the --depth 1 option when cloning.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Clone a Specific Branch",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Verify branch-specific clone",
+            "file": "verify5-1.sh",
+            "hint": "The branch-repo directory was not found or is not a Git repository. \nMake sure you've successfully cloned the specific branch.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if only the specified branch exists",
+            "file": "verify5-2.sh",
+            "hint": "The cloned repository should only have the main branch. \nMake sure you used the -b option when cloning.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
       }
     ],
     "intro": {
@@ -55,5 +153,6 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "verified": true
 }
