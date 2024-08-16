@@ -1,9 +1,17 @@
 # Execute the Script
 
-Now, we can execute the shell script by running the following command:
+Now that our script is executable, we can run it. To run a script in the current directory, we use `./` before the script name. This `./` tells the system to look for the script in the current directory.
+
+Type the following command in the terminal and press Enter:
 
 ```bash
 ./hello.sh
 ```
 
-The script will be executed and the "Hello, World!" message will be printed to the screen.
+If everything has been done correctly, you should see the output:
+
+```
+Hello, World!
+```
+
+Congratulations! You've just run your first shell script.
