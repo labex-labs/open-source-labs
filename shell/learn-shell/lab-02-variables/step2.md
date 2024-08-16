@@ -1,44 +1,48 @@
 # Referencing Shell Variables
 
-To reference a shell variable, you can simply use its name. However, there are a few scenarios where you need to use special syntax.
+When referencing shell variables, there are a few scenarios where you need to use special syntax. Let's explore these cases.
 
-## Escaping Special Characters
+1. Open the `variables.sh` file in the WebIDE.
 
-If you want to include special characters in a variable's value, you need to escape them using a backslash "\\".
+2. Replace the content of the file with the following:
 
-```bash
-PRICE_PER_APPLE=5
-echo "The price of an Apple today is: \$HK $PRICE_PER_APPLE"
-```
+   ```bash
+   #!/bin/bash
+   
+   PRICE_PER_APPLE=5
+   MyFirstLetters=ABC
+   greeting='Hello        world!'
+   
+   # Escaping special characters
+   echo "The price of an Apple today is: \$HK $PRICE_PER_APPLE"
+   
+   # Avoiding ambiguity
+   echo "The first 10 letters in the alphabet are: ${MyFirstLetters}DEFGHIJ"
+   
+   # Preserving whitespace
+   echo $greeting
+   echo "$greeting"
+   ```
 
-## Avoiding Ambiguity
+3. Save the file.
 
-To avoid any ambiguity in variable substitution, you can enclose the variable name with `{}`.
+4. Run the script:
 
-```bash
-MyFirstLetters=ABC
-echo "The first 10 letters in the alphabet are: ${MyFirstLetters}DEFGHIJ"
-```
+   ```bash
+   ./variables.sh
+   ```
 
-## Preserving Whitespace
+   You should see the following output:
 
-If the variable value contains whitespace, you can preserve it by enclosing the variable name with `""`.
+   ```
+   The price of an Apple today is: $HK 5
+   The first 10 letters in the alphabet are: ABCDEFGHIJ
+   Hello world!
+   Hello        world!
+   ```
 
-```bash
-greeting='Hello        world!'
-echo $greeting" now with spaces: $greeting"
-```
+   Note the differences:
 
-Run the script and you will see the following output:
-
-```bash
-cd ~/project
-chmod +x variables.sh
-./variables.sh
-```
-
-```text
-The price of an Apple today is: $HK 5
-The first 10 letters in the alphabet are: ABCDEFGHIJ
-Hello world! now with spaces: Hello        world!
-```
+   - The `$` sign is escaped in the first line to print it literally.
+   - Curly braces `{}` are used to clearly define the variable name in the second line.
+   - The last two lines show the difference between using quotes and not using quotes when referencing a variable with whitespace.

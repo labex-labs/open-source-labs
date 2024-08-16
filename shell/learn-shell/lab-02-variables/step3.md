@@ -1,22 +1,43 @@
 # Command Substitution
 
-You can assign a variable with the value of a command output using command substitution. Command substitution can be done by enclosing the command with \`\`(back-ticks) or `$()`.
+Command substitution allows you to use the output of a command as the value of a variable. This is done by enclosing the command with `$()` or backticks (``).
 
-```bash
-FILELIST=$(ls)
-FileWithTimeStamp=/tmp/file_$(/bin/date +%Y-%m-%d).txt
+1. Open the `variables.sh` file in the WebIDE.
 
-echo "FileWithTimeStamp = $FileWithTimeStamp"
-echo "FILELIST = $FILELIST"
-```
+2. Add the following content to the end of the file:
 
-Note that when the script runs, it will execute the command inside the `$()` parenthesis and capture its output.
+   ```bash
+   # Command substitution
+   CURRENT_DATE=$(date +"%Y-%m-%d")
+   echo "Today's date is: $CURRENT_DATE"
+   
+   FILES_IN_DIR=$(ls)
+   echo "Files in the current directory:"
+   echo "$FILES_IN_DIR"
+   
+   UPTIME=$(uptime -p)
+   echo "System uptime: $UPTIME"
+   ```
 
-```bash
-./variables.sh
-```
+3. Save the file.
 
-```text
-FileWithTimeStamp = /tmp/file_2023-09-01.txt
-FILELIST = variables.sh
-```
+4. Run the script:
+
+   ```bash
+   ./variables.sh
+   ```
+
+   You should see output similar to this (the actual values will depend on your system):
+
+   ```
+   Today's date is: 2023-08-16
+   Files in the current directory:
+   variables.sh
+   System uptime: up 2 hours, 15 minutes
+   ```
+
+   In this example:
+
+   - `$(date +"%Y-%m-%d")` runs the `date` command and captures its output.
+   - `$(ls)` runs the `ls` command and captures its output.
+   - `$(uptime -p)` runs the `uptime` command with the `-p` option and captures its output.

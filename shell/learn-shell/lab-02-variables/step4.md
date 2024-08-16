@@ -1,35 +1,74 @@
-# Exercise
+# Arithmetic Operations
 
-In this exercise, you need to create a string, an integer, and a complex variable using command substitution.
+Shell variables can also be used in arithmetic operations. Bash provides the `$((expression))` syntax for performing arithmetic.
 
-- The string should be named `BIRTHDATE` and should contain the text "Jan 1, 2000".
-- The integer should be named `Presents` and should contain the number 10.
-- The complex variable should be named `BIRTHDAY` and should contain the full weekday name of the day matching the date in variable `BIRTHDATE`.
+1. Create a new file named `arithmetic.sh` in the `/home/labex/project` directory:
 
-You can use the `date` command to convert a date format into a different date format. For example, to convert a date value `date1` to the day of the week of `date1`, use the following command:
+   ```bash
+   touch /home/labex/project/arithmetic.sh
+   ```
 
-```bash
-date -d "$date1" +%A
-```
+2. Open the `arithmetic.sh` file in the WebIDE and add the following content:
 
-> **Note:** The `-d` option is used to specify the date to be converted. The `+%A` option is used to specify the output format.
+   ```bash
+   #!/bin/bash
+   
+   X=10
+   Y=5
+   
+   # Addition
+   SUM=$((X + Y))
+   echo "Sum of $X and $Y is: $SUM"
+   
+   # Subtraction
+   DIFF=$((X - Y))
+   echo "Difference between $X and $Y is: $DIFF"
+   
+   # Multiplication
+   PRODUCT=$((X * Y))
+   echo "Product of $X and $Y is: $PRODUCT"
+   
+   # Division
+   QUOTIENT=$((X / Y))
+   echo "Quotient of $X divided by $Y is: $QUOTIENT"
+   
+   # Modulus (remainder)
+   REMAINDER=$((X % Y))
+   echo "Remainder of $X divided by $Y is: $REMAINDER"
+   
+   # Increment
+   X=$((X + 1))
+   echo "After incrementing, X is now: $X"
+   
+   # Decrement
+   Y=$((Y - 1))
+   echo "After decrementing, Y is now: $Y"
+   ```
 
-## Tasks
+3. Save the file.
 
-- Modify the `~/project/birthdate.sh` script to create the variables as described above.
+4. Make the script executable:
 
-## Results
+   ```bash
+   chmod +x /home/labex/project/arithmetic.sh
+   ```
 
-- Run the script and verify the output.
+5. Run the script:
 
-```bash
-cd ~/project
-chmod +x birthdate.sh
-./birthdate.sh
-```
+   ```bash
+   ./arithmetic.sh
+   ```
 
-```text
-Jan 1, 2000
-10
-Saturday
-```
+   You should see the following output:
+
+   ```
+   Sum of 10 and 5 is: 15
+   Difference between 10 and 5 is: 5
+   Product of 10 and 5 is: 50
+   Quotient of 10 divided by 5 is: 2
+   Remainder of 10 divided by 5 is: 0
+   After incrementing, X is now: 11
+   After decrementing, Y is now: 4
+   ```
+
+   This script demonstrates various arithmetic operations using shell variables.
