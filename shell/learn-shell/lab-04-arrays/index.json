@@ -15,13 +15,13 @@
   "details": {
     "steps": [
       {
-        "title": "Initialize an empty array",
+        "title": "Create a new shell script file",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify Existence of arrays.sh File",
-            "file": "verify1.sh",
-            "hint": "~/project/arrays.sh does not exist.",
+            "name": "Verify arrays.sh file creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you've created the file 'arrays.sh' in the '~/project' directory.",
             "timeout": 0,
             "showstderr": true
           }
@@ -35,13 +35,13 @@
         ]
       },
       {
-        "title": "Add elements to the arrays",
+        "title": "Initialize empty arrays",
         "text": "step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify array initialization",
+            "file": "verify2-1.sh",
+            "hint": "Ensure you've initialized the NUMBERS, STRINGS, and NAMES arrays as empty arrays in the arrays.sh file.",
             "timeout": 0,
             "showstderr": true
           }
@@ -49,13 +49,13 @@
         "skills": ["shell/quoting", "shell/str_manipulation", "shell/subshells"]
       },
       {
-        "title": "Add names to the NAMES array",
+        "title": "Add elements to the arrays",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify elements added to arrays",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've added elements to all three arrays (NUMBERS, STRINGS, and NAMES) using the '+=' operator.",
             "timeout": 0,
             "showstderr": true
           }
@@ -63,13 +63,13 @@
         "skills": ["shell/quoting", "shell/str_manipulation", "shell/subshells"]
       },
       {
-        "title": "Determine the number of names",
+        "title": "Determine the number of elements in an array",
         "text": "step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify number of names calculation",
+            "file": "verify4-1.sh",
+            "hint": "Ensure you've added the line to calculate the number of names in the NAMES array and store it in the NumberOfNames variable.",
             "timeout": 0,
             "showstderr": true
           }
@@ -84,13 +84,13 @@
         ]
       },
       {
-        "title": "Access the second name in the NAMES array",
+        "title": "Access a specific element in an array",
         "text": "step5.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify accessing second name",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've added the line to access the second name in the NAMES array and store it in the second_name variable.",
             "timeout": 0,
             "showstderr": true
           }
@@ -108,9 +108,9 @@
         "text": "step6.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify print statements",
+            "file": "verify6-1.sh",
+            "hint": "Ensure you've added the echo statements to print the arrays and variables.",
             "timeout": 0,
             "showstderr": true
           }
@@ -130,9 +130,9 @@
         "text": "step7.md",
         "verify": [
           {
-            "name": "Verify Student's Arrays Script Execution",
-            "file": "verify7.sh",
-            "hint": "~/project/arrays.sh can not be executed.",
+            "name": "Verify script execution",
+            "file": "verify7-1.sh",
+            "hint": "Make sure you've made the script executable with chmod +x and run it using ./arrays.sh. The output should show the NUMBERS array and the second name as Eric.",
             "timeout": 0,
             "showstderr": true
           }
@@ -165,5 +165,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }
