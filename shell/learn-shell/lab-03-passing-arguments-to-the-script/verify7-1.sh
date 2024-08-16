@@ -1,5 +1,5 @@
 #!/bin/bash
-if grep -q "\$@" /home/labex/project/arguments.sh; then
+if grep -q "count" /home/labex/project/arguments.sh; then
   exit 0
 else
   exit 1
