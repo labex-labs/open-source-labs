@@ -21,7 +21,7 @@
           {
             "name": "Verify Existence of arguments.sh File",
             "file": "verify1-1.sh",
-            "hint": "Make sure you have created the file 'arguments.sh' in the '/home/labex/project' directory. If you're having trouble, try these steps:\n1. In the WebIDE, look for the file explorer on the left side.\n2. Find the '/home/labex/project' folder and click on it.\n3. Right-click in the empty space and select 'New File'.\n4. Type 'arguments.sh' and press Enter.",
+            "hint": "Make sure you have created the file 'arguments.sh' in the '/home/labex/project' directory.",
             "timeout": 0,
             "showstderr": true
           }
@@ -40,7 +40,7 @@
           {
             "name": "Verify Script Content",
             "file": "verify2-1.sh",
-            "hint": "Make sure you've added the correct echo statements to display the script name and the first three arguments in your 'arguments.sh' file. Here's what your file should look like:\n\n#!/bin/bash\necho \"Script name: $0\"\necho \"First argument: $1\"\necho \"Second argument: $2\"\necho \"Third argument: $3\"\n\nIf you're having trouble, try copying and pasting this code into your file.",
+            "hint": "Make sure you've added the echo statements to display the script name using $0 in your 'arguments.sh' file.",
             "timeout": 0,
             "showstderr": true
           }
@@ -54,7 +54,7 @@
           {
             "name": "Verify Script Permissions",
             "file": "verify3-1.sh",
-            "hint": "Make sure you've made the 'arguments.sh' file executable using the chmod command. Here are the steps:\n1. Open a terminal in the WebIDE.\n2. Type 'cd /home/labex/project' and press Enter to navigate to the correct directory.\n3. Type 'chmod +x arguments.sh' and press Enter.\n4. If you don't see any output, that's okay! It means the command worked.",
+            "hint": "Make sure you've made the 'arguments.sh' file executable using the chmod command.",
             "timeout": 0,
             "showstderr": true
           }
@@ -73,7 +73,7 @@
           {
             "name": "Verify Script Execution",
             "file": "verify4-1.sh",
-            "hint": "Make sure you've executed the script with the arguments 'hello', 'world', and 'example'. Here's what to do:\n1. In the terminal, make sure you're in the /home/labex/project directory.\n2. Type './arguments.sh hello world example' and press Enter.\n3. Check that the output matches what's expected. If it doesn't, double-check your script content and try running it again.",
+            "hint": "Make sure you've executed the script with the arguments 'hello', 'world', and 'example'.",
             "timeout": 0,
             "showstderr": true
           }
@@ -95,7 +95,7 @@
           {
             "name": "Verify Updated Script Content",
             "file": "verify5-1.sh",
-            "hint": "Make sure you've updated the 'arguments.sh' file with the new content that handles different numbers of arguments. If you're having trouble, try these steps:\n1. Open the 'arguments.sh' file in the WebIDE.\n2. Replace all the existing content with the new script provided in Step 5.\n3. Save the file (you can use Ctrl+S or Cmd+S).\n4. If you're still seeing an error, double-check that you've copied the entire script, including the #!/bin/bash line at the top.",
+            "hint": "Make sure you've updated the 'arguments.sh' file to include the $# variable for checking the number of arguments.",
             "timeout": 0,
             "showstderr": true
           }
@@ -116,7 +116,7 @@
           {
             "name": "Verify Script Execution with Different Argument Counts",
             "file": "verify6-1.sh",
-            "hint": "Make sure you've executed the script with different numbers of arguments. Try running these commands one by one:\n1. ./arguments.sh\n2. ./arguments.sh one\n3. ./arguments.sh one two\n4. ./arguments.sh one two three four\nCheck that the output for each command matches what you expect based on the script we wrote.",
+            "hint": "Make sure you've executed the script with different numbers of arguments, including the case with four arguments.",
             "timeout": 0,
             "showstderr": true
           }
@@ -130,7 +130,7 @@
           {
             "name": "Verify Final Script Content",
             "file": "verify7-1.sh",
-            "hint": "Make sure you've updated the 'arguments.sh' file with the new content that loops through all arguments. Here's what to check:\n1. Open the 'arguments.sh' file in the WebIDE.\n2. Ensure it contains the line 'echo \"Total number of arguments: $#\"'\n3. Check for the line 'for arg in \"$@\"'\n4. Look for 'echo \"Argument $count: $arg\"' inside the loop\nIf any of these are missing, try copying the entire script from Step 7 and replacing the contents of your file.",
+            "hint": "Make sure you've updated the 'arguments.sh' file to include the $@ variable for looping through all arguments.",
             "timeout": 0,
             "showstderr": true
           }
@@ -144,7 +144,7 @@
           {
             "name": "Verify Final Script Execution",
             "file": "verify8-1.sh",
-            "hint": "If you're seeing an error, try these steps:\n1. Make sure you're in the correct directory (/home/labex/project) in the terminal.\n2. Run the command: ./arguments.sh apple banana cherry date\n3. Check that the output shows all four arguments (apple, banana, cherry, date) with their correct numbers.\n4. If the output doesn't match, double-check your script content and try running it again.",
+            "hint": "Make sure you've executed the final version of the script with multiple arguments, including 'apple', 'banana', 'cherry', and 'date'.",
             "timeout": 0,
             "showstderr": true
           }

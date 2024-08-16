@@ -8,4 +8,4 @@ In this lab, you have learned how to create a Shell script that can accept and p
 4. Implementing conditional logic to handle different numbers of arguments
 5. Using the $@ variable to loop through all provided arguments
 
-These skills are fundamental in Shell scripting and will allow you to create more flexible and powerful scripts that can adapt to different inputs. As you continue to develop your Shell scripting skills, you'll find that the ability to handle command-line arguments is crucial for creating versatile and reusable scripts for various tasks in
+These skills are fundamental in Shell scripting and will allow you to create more flexible and powerful scripts that can adapt to different inputs. As you continue to develop your Shell scripting skills, you'll find that the ability to handle command-line arguments is crucial for creating versatile and reusable scripts for various tasks in system administration and automation.
