@@ -1,23 +1,24 @@
-# Use the $# variable
+# Execute the script with arguments
 
-The $# variable holds the number of arguments passed to the script. You can use it to check the number of arguments and perform different actions based on that.
+Now that our script is executable, let's run it with some arguments. In the terminal, execute the following command:
 
-```shell
-#!/bin/bash
-if [ $# -eq 0 ]; then
-  echo "No arguments passed."
-elif [ $# -eq 1 ]; then
-  echo "Only one argument passed."
-else
-  echo "Multiple arguments passed."
-fi
+```bash
+./arguments.sh hello world example
 ```
 
-```text
-$ ./arguments.sh
-No arguments passed.
-$ ./arguments.sh argument1
-Only one argument passed.
-$ ./arguments.sh argument1 argument2
-Multiple arguments passed.
+You should see output similar to this:
+
 ```
+Script name: ./arguments.sh
+First argument: hello
+Second argument: world
+Third argument: example
+```
+
+This output shows that our script successfully accessed and displayed the command-line arguments.
+
+For beginners:
+
+- The `./` before the script name tells bash to look for the script in the current directory.
+- Each word after the script name becomes a separate argument. In this case, "hello" is the first argument, "world" is the second, and "example" is the third.
+- If you want to pass an argument with spaces, you need to use quotes, like this: `./arguments.sh "hello world" example`

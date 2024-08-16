@@ -1,12 +1,20 @@
-# Define the script and access the arguments
+# Create a new script file
 
-Create a new file and save it with `~/project/arguments.sh`.
+Let's start by creating a new script file. We'll use the WebIDE (VS Code) for this lab.
 
-Inside the script, you can access the passed arguments using special variables. The $1 variable references the first argument, $2 references the second argument, and so on. The $0 variable holds the name of the script itself.
+1. Open the WebIDE if it's not already open.
+2. In the file explorer on the left, navigate to the `/home/labex/project` directory.
+3. Right-click in the file explorer and select "New File".
+4. Name the new file `arguments.sh`.
 
-```shell
+Now that we have created the file, let's add the basic structure of our script:
+
+```bash
 #!/bin/bash
-echo "Script name: $0"
-echo "First argument: $1"
-echo "Second argument: $2"
+
+# Your code will go here
 ```
+
+The first line is called the "shebang" or "hashbang". It tells the system which interpreter to use to execute the script. In this case, we're using bash.
+
+For beginners: The shebang line is important because it allows you to run the script directly (like `./arguments.sh`) instead of having to type `bash arguments.sh` every time. It's a small detail, but it makes your scripts more convenient to use.

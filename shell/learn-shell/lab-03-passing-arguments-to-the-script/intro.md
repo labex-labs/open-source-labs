@@ -1,3 +1,3 @@
 # Introduction
 
-When writing scripts in Shell programming, you can pass arguments to the script when executing it. These arguments can be accessed within the script using special variables. This tutorial will guide you on how to pass arguments to a Shell script and how to handle and use them within the script.
+In Shell programming, the ability to pass arguments to a script is a fundamental and powerful feature. It allows scripts to be more flexible and reusable by accepting input from the command line. This lab will guide you through the process of creating a Shell script that can accept and use command-line arguments. You will learn how to access these arguments within your script, handle multiple arguments, and use special variables to process them efficiently.

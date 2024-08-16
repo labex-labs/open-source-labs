@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "Passing Arguments to the Script",
-  "description": "When writing scripts in Shell programming, you can pass arguments to the script when executing it. These arguments can be accessed within the script using special variables. This tutorial will guide you on how to pass arguments to a Shell script and how to handle and use them within the script.",
+  "description": "Master the art of passing and handling arguments in Shell scripts. This hands-on lab will guide you through creating a script that accepts command-line arguments, accessing them using special variables, and implementing logic based on the number and content of these arguments.",
   "meta": {
-    "title": "Shell Script Arguments | Passing and Handling Arguments",
-    "description": "Learn how to pass arguments to a Shell script and access them within the script. Enhance your Shell programming skills with this comprehensive tutorial.",
-    "keywords": "shell script, shell programming, script arguments, passing arguments, handling arguments"
+    "title": "Mastering Shell Script Arguments: From Basics to Advanced Usage",
+    "description": "Learn to create, execute, and manipulate Shell scripts with command-line arguments. Explore special variables, argument counting, and iterating through multiple arguments in this comprehensive tutorial.",
+    "keywords": "shell script, command-line arguments, bash programming, script execution, argument handling, special variables, shell loops, conditional statements"
   },
   "difficulty": "Beginner",
   "time": 25,
@@ -15,99 +15,116 @@
   "details": {
     "steps": [
       {
-        "title": "Define the script and access the arguments",
+        "title": "Create a new script file",
         "text": "step1.md",
         "verify": [
           {
             "name": "Verify Existence of arguments.sh File",
-            "file": "verify1.sh",
-            "hint": "~/project/arguments.sh does not exist.",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file 'arguments.sh' in the '/home/labex/project' directory.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/echo",
-          "shell/comments",
-          "shell/quoting",
-          "shell/shebang"
-        ]
+        "skills": ["linux/touch", "shell/shebang", "shell/comments"]
       },
       {
-        "title": "Execute the script with arguments",
+        "title": "Access script arguments",
         "text": "step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify Script Content",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you've added the echo statements to display the script name using $0 in your 'arguments.sh' file.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": ["linux/cd", "linux/chmod"]
+        "skills": ["shell/variables_usage", "linux/echo"]
       },
       {
-        "title": "Handle multiple arguments",
+        "title": "Make the script executable",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify Script Permissions",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've made the 'arguments.sh' file executable using the chmod command.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/echo",
-          "shell/comments",
-          "shell/quoting",
-          "shell/shebang"
-        ]
+        "skills": ["linux/chmod"]
       },
       {
-        "title": "Use the $# variable",
+        "title": "Execute the script with arguments",
         "text": "step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify Script Execution",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've executed the script with the arguments 'hello', 'world', and 'example'.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/echo",
-          "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/if_else",
-          "shell/quoting",
-          "shell/shebang"
-        ]
+        "skills": ["shell/variables_usage", "linux/echo"]
       },
       {
-        "title": "Use the $@ variable",
+        "title": "Handle the number of arguments",
         "text": "step5.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify Updated Script Content",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've updated the 'arguments.sh' file to include the $# variable for checking the number of arguments.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/echo",
-          "shell/comments",
-          "shell/for_loops",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/variables_usage"
-        ]
+        "skills": ["shell/variables_usage", "shell/if_else", "linux/echo"]
+      },
+      {
+        "title": "Test the updated script",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Verify Script Execution with Different Argument Counts",
+            "file": "verify6-1.sh",
+            "hint": "Make sure you've executed the script with different numbers of arguments, including the case with four arguments.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["shell/variables_usage"]
+      },
+      {
+        "title": "Loop through all arguments",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Verify Final Script Content",
+            "file": "verify7-1.sh",
+            "hint": "Make sure you've updated the 'arguments.sh' file to include the $@ variable for looping through all arguments.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["shell/for_loops", "shell/variables_usage", "linux/echo"]
+      },
+      {
+        "title": "Test the final script",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Verify Final Script Execution",
+            "file": "verify8-1.sh",
+            "hint": "Make sure you've executed the final version of the script with multiple arguments, including 'apple', 'banana', 'cherry', and 'date'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["shell/variables_usage"]
       }
     ],
     "intro": {
@@ -135,5 +152,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }
