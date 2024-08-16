@@ -1,15 +1,21 @@
-# Add the Echo Command
+# Edit the Shell Script
 
-The `echo` command is used to print messages to the screen. We will use it to print the "Hello, World!" message.
+Now that we've created the file, let's add some content to it. We'll use the WebIDE's built-in editor for this task.
 
-Add the following line below the shebang line:
+If the file isn't already open in the editor:
+
+1. In the File Explorer, double-click on `hello.sh` to open it.
+
+In the editor, type the following two lines exactly as shown:
 
 ```bash
+#!/bin/bash
 echo 'Hello, World!'
 ```
 
-This line will print the message "Hello, World!" to the screen.
+Let's break down what these lines mean:
 
-The single quotes are used to enclose the message. You can also use double quotes, but single quotes are preferred in this case because the message does not contain any variables or special characters.
+1. `#!/bin/bash` - This is called a "shebang" line. It tells the system which interpreter should be used to run this script. In this case, we're specifying the Bash shell.
+2. `echo 'Hello, World!'` - This line uses the `echo` command to print the text "Hello, World!" to the screen.
 
-Save the `hello.sh` file and close the text editor. We will run the script in the next step to see the output.
+After typing these lines, save the file by pressing `Ctrl + S` or by going to File > Save in the top menu.
