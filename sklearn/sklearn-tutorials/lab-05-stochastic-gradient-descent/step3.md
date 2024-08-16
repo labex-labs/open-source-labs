@@ -4,7 +4,7 @@ Now we will train a classifier using the SGDClassifier class. We will use the lo
 
 ```python
 # Train a classifier using SGD
-clf = SGDClassifier(loss="log", penalty="l2", max_iter=100, random_state=42)
+clf = SGDClassifier(loss="log_loss", penalty="l2", max_iter=100, random_state=42)
 clf.fit(X_train, y_train)
 
 # Make predictions on the testing set
