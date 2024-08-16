@@ -14,4 +14,6 @@ If everything has been done correctly, you should see the output:
 Hello, World!
 ```
 
+![alt text](./assets/screenshot-20240816-KjPEn5gj@2x.png)
+
 Congratulations! You've just run your first shell script.
