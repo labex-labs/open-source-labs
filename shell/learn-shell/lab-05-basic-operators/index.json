@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "Arithmetic Operations in Shell Programming",
-  "description": "In this lab, you will learn how to perform arithmetic operations in Shell programming using the basic arithmetic operators.",
+  "description": "Master arithmetic operations in Shell programming through this hands-on lab. Learn to perform calculations, use variables, and employ basic arithmetic operators to solve real-world problems like calculating costs in a shell script.",
   "meta": {
-    "title": "Mastering Arithmetic Operations in Shell Programming",
-    "description": "Learn how to perform arithmetic operations in Shell programming using basic operators.",
-    "keywords": "linux lab, shell scripting, linux practice exercises, bash online labs, online kali linux terminal, practice linux commands online, arithmetic operations, linux practice online, variables, linux labs"
+    "title": "Shell Arithmetic Mastery: Practical Calculations in Bash Scripts",
+    "description": "Explore arithmetic operations in Shell programming. Learn to declare variables, perform calculations, and display results while creating a fruit basket cost calculator in Bash.",
+    "keywords": "shell arithmetic, bash calculations, shell variables, arithmetic operators, shell scripting, command-line math, bash programming, linux arithmetic, fruit basket calculator"
   },
   "difficulty": "Beginner",
   "time": 15,
@@ -15,69 +15,78 @@
   "details": {
     "steps": [
       {
-        "title": "Define variable costs",
+        "title": "Create a new Bash script",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify Existence of operators.sh File",
-            "file": "verify1.sh",
-            "hint": "~/project/operators.sh is not found.",
+            "name": "Check if fruit_basket.sh exists",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file fruit_basket.sh in the ~/project directory.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": ["shell/comments", "shell/shebang", "shell/variables_decl"]
+        "skills": ["linux/touch", "shell/shebang", "shell/comments"]
       },
       {
-        "title": "Calculate the total cost",
+        "title": "Define variables for fruit costs",
         "text": "step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Check if variables are defined correctly",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you've defined the COST_PINEAPPLE variable with the value 50 in the fruit_basket.sh file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["shell/variables_decl", "shell/arith_ops"]
+      },
+      {
+        "title": "Calculate the total cost",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Check if total cost calculation is present",
+            "file": "verify3-1.sh",
+            "hint": "Ensure that you've added the line to calculate the total cost in the fruit_basket.sh file. It should look like: TOTAL=$((COST_PINEAPPLE + (COST_BANANA * 2) + (COST_WATERMELON * 3) + COST_BASKET))",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "linux/wildcard",
-          "shell/arith_expansion",
-          "shell/cmd_substitution",
-          "shell/comments",
-          "shell/globbing_expansion",
-          "shell/shebang",
-          "shell/subshells",
-          "shell/variables_decl"
+          "shell/arith_ops",
+          "shell/variables_usage",
+          "shell/arith_expansion"
         ]
       },
       {
         "title": "Display the total cost",
-        "text": "step3.md",
+        "text": "step4.md",
         "verify": [
           {
-            "name": "Verify Bash Script Checks for Output '128'",
-            "file": "verify3.sh",
-            "hint": "The result is not correct.",
+            "name": "Check if echo statement is present",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've added the line to display the total cost in the fruit_basket.sh file. It should look like: echo \"Total Cost is $TOTAL cents\"",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/cd",
-          "linux/chmod",
-          "linux/echo",
-          "linux/wildcard",
-          "shell/arith_expansion",
-          "shell/cmd_substitution",
-          "shell/comments",
-          "shell/globbing_expansion",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/subshells",
-          "shell/variables_decl",
-          "shell/variables_usage"
-        ]
+        "skills": ["linux/echo", "shell/variables_usage", "shell/quoting"]
+      },
+      {
+        "title": "Make the script executable and run it",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if script output is correct",
+            "file": "verify5-1.sh",
+            "hint": "Ensure that your script is calculating and displaying the correct total cost. The expected output should include \"Total Cost is 128 cents\". Check that all your calculations are correct and that you're printing the result properly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/chmod"]
       }
     ],
     "intro": {
@@ -105,5 +114,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }
