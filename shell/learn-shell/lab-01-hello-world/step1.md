@@ -27,6 +27,8 @@ This indicates that you're logged in as the user `labex`, on a machine named `ub
 
 ### Using the Terminal
 
+![alt text](./assets/screenshot-20240816-gnuaVty3@2x.png)
+
 You can use this terminal just like you would use a regular terminal on a Linux system. For example, to see the contents of your current directory, you can type:
 
 ```bash
