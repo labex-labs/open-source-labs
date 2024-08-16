@@ -1,11 +1,18 @@
-# Initialize an empty array
+# Create a new shell script file
 
-To start, let's create three empty arrays: `NUMBERS`, `STRINGS`, and `NAMES`. Open your editor and create a new shell script file called `~/project/arrays.sh`. Add the following code to initialize the arrays:
+Let's start by creating a new shell script file where we'll write our array operations.
 
-```shell
-#!/bin/bash
+1. Open your terminal in the WebIDE.
+2. Navigate to the project directory:
 
-NUMBERS=()
-STRINGS=()
-NAMES=()
-```
+   ```bash
+   cd ~/project
+   ```
+
+3. Create a new file named `arrays.sh` using the touch command:
+
+   ```bash
+   touch arrays.sh
+   ```
+
+4. Open the `arrays.sh` file in the WebIDE.

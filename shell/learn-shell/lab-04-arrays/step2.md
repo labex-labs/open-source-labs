@@ -1,12 +1,20 @@
-# Add elements to the arrays
+# Initialize empty arrays
 
-Now, let's add some elements to the arrays. Add the following code to add numbers 1, 2, and 3 to the `NUMBERS` array, and the words 'hello' and 'world' to the `STRINGS` array:
+Now that we have our script file, let's start by initializing three empty arrays.
 
-```shell
-NUMBERS+=(1)
-NUMBERS+=(2)
-NUMBERS+=(3)
+Add the following code to your `arrays.sh` file:
 
-STRINGS+=("hello")
-STRINGS+=("world")
+```bash
+#!/bin/bash
+
+# Initialize empty arrays
+NUMBERS=()
+STRINGS=()
+NAMES=()
 ```
+
+Let's break down what this code does:
+
+- The first line `#!/bin/bash` is called a shebang. It tells the system that this script should be executed by the Bash shell.
+- We're creating three empty arrays: `NUMBERS`, `STRINGS`, and `NAMES`.
+- The `()` syntax initializes an empty array.

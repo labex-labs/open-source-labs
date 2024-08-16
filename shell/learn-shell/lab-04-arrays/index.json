@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "Shell Arrays",
-  "description": "In this lab, you will learn how to work with arrays in shell programming. Arrays allow you to store multiple values under one name, making it easier to organize and access data. You will learn how to initialize an array, add elements to it, access elements by their index, and determine the number of elements in the array.",
+  "description": "Explore the power of arrays in shell programming through this hands-on lab. Learn to create, manipulate, and access elements in arrays, enabling efficient data organization and manipulation in your shell scripts.",
   "meta": {
-    "title": "Mastering Shell Arrays | A Comprehensive Guide",
-    "description": "Learn how to work with arrays in shell programming, including initialization, element addition, and array size determination.",
-    "keywords": "linux lab, shell scripting, arrays, linux practice exercises, online kali linux terminal, practice linux commands online, linux practice online, linux labs, data organization, programming tutorials"
+    "title": "Shell Arrays Mastery: From Basics to Advanced Techniques",
+    "description": "Dive deep into shell arrays with this comprehensive lab. Learn array initialization, element addition, access methods, and size determination to enhance your shell scripting skills.",
+    "keywords": "shell arrays, bash scripting, array manipulation, shell programming, data structures, linux command line, array initialization, array elements, array size"
   },
   "difficulty": "Beginner",
   "time": 35,
@@ -15,92 +15,81 @@
   "details": {
     "steps": [
       {
-        "title": "Initialize an empty array",
+        "title": "Create a new shell script file",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify Existence of arrays.sh File",
-            "file": "verify1.sh",
-            "hint": "~/project/arrays.sh does not exist.",
+            "name": "Verify arrays.sh file creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you've created the file 'arrays.sh' in the '~/project' directory.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/touch", "shell/shebang", "shell/comments"]
+      },
+      {
+        "title": "Initialize empty arrays",
+        "text": "step2.md",
+        "verify": [
+          {
+            "name": "Verify array initialization",
+            "file": "verify2-1.sh",
+            "hint": "Ensure you've initialized the NUMBERS, STRINGS, and NAMES arrays as empty arrays in the arrays.sh file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["shell/arrays", "shell/variables_decl"]
+      },
+      {
+        "title": "Add elements to the arrays",
+        "text": "step3.md",
+        "verify": [
+          {
+            "name": "Verify elements added to arrays",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've added elements to all three arrays (NUMBERS, STRINGS, and NAMES) using the '+=' operator.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["shell/arrays", "shell/variables_usage"]
+      },
+      {
+        "title": "Determine the number of elements in an array",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Verify number of names calculation",
+            "file": "verify4-1.sh",
+            "hint": "Ensure you've added the line to calculate the number of names in the NAMES array and store it in the NumberOfNames variable.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "shell/arrays",
-          "shell/comments",
-          "shell/shebang",
-          "shell/subshells",
-          "shell/variables_decl"
+          "shell/variables_usage",
+          "shell/param_expansion"
         ]
       },
       {
-        "title": "Add elements to the arrays",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["shell/quoting", "shell/str_manipulation", "shell/subshells"]
-      },
-      {
-        "title": "Add names to the NAMES array",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["shell/quoting", "shell/str_manipulation", "shell/subshells"]
-      },
-      {
-        "title": "Determine the number of names",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/param_expansion",
-          "shell/str_manipulation",
-          "shell/variables_decl"
-        ]
-      },
-      {
-        "title": "Access the second name in the NAMES array",
+        "title": "Access a specific element in an array",
         "text": "step5.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify accessing second name",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've added the line to access the second name in the NAMES array and store it in the second_name variable.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/param_expansion",
-          "shell/str_manipulation",
-          "shell/variables_decl"
+          "shell/arrays",
+          "shell/variables_usage",
+          "shell/param_expansion"
         ]
       },
       {
@@ -108,21 +97,19 @@
         "text": "step6.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify print statements",
+            "file": "verify6-1.sh",
+            "hint": "Ensure you've added the echo statements to print the arrays and variables.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "linux/echo",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
+          "shell/arrays",
+          "shell/variables_usage",
           "shell/param_expansion",
-          "shell/quoting",
-          "shell/str_manipulation",
-          "shell/variables_usage"
+          "shell/quoting"
         ]
       },
       {
@@ -130,9 +117,9 @@
         "text": "step7.md",
         "verify": [
           {
-            "name": "Verify Student's Arrays Script Execution",
-            "file": "verify7.sh",
-            "hint": "~/project/arrays.sh can not be executed.",
+            "name": "Verify script execution",
+            "file": "verify7-1.sh",
+            "hint": "Make sure you've made the script executable with chmod +x and run it using ./arrays.sh. The output should show the NUMBERS array and the second name as Eric.",
             "timeout": 0,
             "showstderr": true
           }
@@ -165,5 +152,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }
