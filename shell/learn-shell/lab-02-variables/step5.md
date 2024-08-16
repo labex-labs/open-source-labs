@@ -15,7 +15,7 @@ Environment variables are a type of variable that is available to all processes 
    
    # Displaying some common environment variables
    echo "Home directory: $HOME"
-   echo "Current user: $USER"
+   echo "Current user: $LOGNAME"
    echo "Shell being used: $SHELL"
    echo "Current PATH: $PATH"
    
