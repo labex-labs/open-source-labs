@@ -1,36 +1,29 @@
-# Test if a directory exists
+# Creating a Test File
 
-To test if a directory exists, you can use the `-d` command. This command checks if a directory exists. If the directory exists, it will return true; otherwise, it will return false.
+Now that we know where we are, let's create a test file that we'll use throughout this lab.
 
-```shell
-#!/bin/bash
-directory_name="test_directory"
-if [ -d "$directory_name" ]; then
-  echo "$directory_name exists as a directory"
-fi
-```
+1. Create a new file named `test_file.txt`:
 
-Cearate a file called `~/project/directory.sh`.
+   ```bash
+   touch test_file.txt
+   ```
 
-```shell
-cd ~/project
-chmod +x directory.sh
-./directory.sh
-```
+   The `touch` command is used to create an empty file. If the file already exists, it updates the file's timestamp without changing its content.
 
-Then, create a directory called `~/project/test_directory`.
+2. Add some content to the file:
 
-```shell
-cd ~/project
-mkdir test_directory
-```
+   ```bash
+   echo "This is a test file for our lab." > test_file.txt
+   ```
 
-Re-run the script.
+   This command uses `echo` to output the text, and `>` to redirect that output into the file. Be careful with `>`, as it will overwrite any existing content in the file.
 
-```shell
-./directory.sh
-```
+3. Verify the file contents:
 
-```text
-test_directory exists as a directory
-```
+   ```bash
+   cat test_file.txt
+   ```
+
+   `cat` is short for "concatenate", but it's often used to display the contents of a file. You should see the message "This is a test file for our lab."
+
+If you make a mistake or want to start over, you can always remove the file with `rm test_file.txt` and start again from step 1.

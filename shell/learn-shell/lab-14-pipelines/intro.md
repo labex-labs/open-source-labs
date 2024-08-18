@@ -1,3 +1,3 @@
 # Introduction
 
-In this lab, you will learn how to use pipelines in shell programming. Pipelines, often called pipes, allow you to chain commands together and connect the output of one command to the input of the next. This is useful when you need to process complex or lengthy input.
+In this lab, you will explore the power of shell pipelines for efficient data processing. Pipelines, often referred to as pipes, allow you to connect multiple commands, channeling the output of one command into the input of another. This technique is particularly useful when dealing with complex or large datasets. By the end of this lab, you will have a solid understanding of how to use pipelines to manipulate and analyze system information.

@@ -15,13 +15,27 @@
   "details": {
     "steps": [
       {
-        "title": "Understanding the Special Variables",
+        "title": "Creating Your First Script",
         "text": "step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify script creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file 'special_vars.sh' in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify script content",
+            "file": "verify1-2.sh",
+            "hint": "Ensure that your script includes the line to print the script name.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify script permissions",
+            "file": "verify1-3.sh",
+            "hint": "Make sure you have made the script executable using the chmod command.",
             "timeout": 0,
             "showstderr": true
           }
@@ -29,13 +43,20 @@
         "skills": []
       },
       {
-        "title": "Using the Special Variables",
+        "title": "Running the Script with Arguments",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify Existence of Special Script",
-            "file": "verify2.sh",
-            "hint": "~/project/special.sh does not exist.",
+            "name": "Verify script execution without arguments",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you can run the script without any arguments.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify script execution with arguments",
+            "file": "verify2-2.sh",
+            "hint": "Ensure that you can run the script with arguments and that it correctly displays the provided arguments.",
             "timeout": 0,
             "showstderr": true
           }
@@ -57,13 +78,27 @@
         ]
       },
       {
-        "title": "Understanding the Difference Between $@ and $*",
+        "title": "Understanding $? and $",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify exit_status.sh creation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created the file 'exit_status.sh' in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify exit_status.sh content",
+            "file": "verify3-2.sh",
+            "hint": "Ensure that your script includes lines to demonstrate the use of $?.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify exit_status.sh execution",
+            "file": "verify3-3.sh",
+            "hint": "Make sure you can run the exit_status.sh script and that it produces the expected output.",
             "timeout": 0,
             "showstderr": true
           }
@@ -79,6 +114,62 @@
           "shell/shebang",
           "shell/variables_usage"
         ]
+      },
+      {
+        "title": "Using Special Variables in Functions",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Verify function_vars.sh creation",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you have created the file 'function_vars.sh' in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify function_vars.sh content",
+            "file": "verify4-2.sh",
+            "hint": "Ensure that your script includes a function named 'print_args'.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify function_vars.sh execution",
+            "file": "verify4-3.sh",
+            "hint": "Make sure you can run the function_vars.sh script and that it produces the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Understanding the Difference Between $@ and $*",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Verify at_vs_star.sh creation",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you have created the file 'at_vs_star.sh' in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify at_vs_star.sh content",
+            "file": "verify5-2.sh",
+            "hint": "Ensure that your script includes a loop demonstrating the use of $@.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify at_vs_star.sh execution",
+            "file": "verify5-3.sh",
+            "hint": "Make sure you can run the at_vs_star.sh script with multiple arguments and that it produces the expected output.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
       }
     ],
     "intro": {
@@ -106,5 +197,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

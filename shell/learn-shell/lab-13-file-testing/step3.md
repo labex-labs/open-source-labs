@@ -1,45 +1,67 @@
-# Test if a file is readable
+# Testing File Existence
 
-To test if a file has read permission for the user running the script, you can use the `-r` command. This command checks if a file is readable. If the file is readable, it will return true; otherwise, it will return false. If the file doesn't exist, you can create it using the `touch` command.
+Now that we have created a file, let's learn how to check if a file exists. This is a common task in shell scripts, especially when you need to perform operations on files.
 
-```shell
-#!/bin/bash
-filename="sample.md"
-if [ ! -f "$filename" ]; then
-  touch "$filename" # Create the file if it doesn't exist
-fi
-if [ -r "$filename" ]; then
-  echo "You are allowed to read $filename"
-else
-  echo "You are not allowed to read $filename"
-fi
-```
+1. Create a new script file named `file_exists.sh`:
 
-Cearate a file called `~/project/readable.sh`.
+   ```bash
+   nano file_exists.sh
+   ```
 
-```shell
-cd ~/project
-chmod +x readable.sh
-./readable.sh
-```
+   This opens the nano text editor. If you're not familiar with nano, don't worry - it's a simple, user-friendly editor.
 
-```text
-You are allowed to read sample.md
-```
+2. Add the following content to the file:
 
-Then, change the file permissions to remove the read permission.
+   ```bash
+   #!/bin/bash
+   
+   filename="test_file.txt"
+   if [ -e "$filename" ]; then
+     echo "$filename exists"
+   else
+     echo "$filename does not exist"
+   fi
+   ```
 
-```shell
-cd ~/project
-chmod -r sample.md
-```
+   Let's break this down:
 
-Re-run the script.
+   - `#!/bin/bash` is called a shebang. It tells the system this is a bash script.
+   - We set a variable `filename` to "test_file.txt".
+   - The `if` statement checks if the file exists. `-e` is a test that returns true if the file exists.
+   - We use `echo` to print a message based on whether the file exists or not.
 
-```shell
-./readable.sh
-```
+3. Save the file and exit the editor. In nano, you can do this by pressing Ctrl+X, then Y, then Enter.
 
-```text
-You are not allowed to read sample.md
-```
+4. Make the script executable:
+
+   ```bash
+   chmod +x file_exists.sh
+   ```
+
+   `chmod` changes the permissions of a file. `+x` adds executable permissions.
+
+5. Run the script:
+
+   ```bash
+   ./file_exists.sh
+   ```
+
+   You should see the output: "test_file.txt exists"
+
+6. Now, let's test with a non-existent file. Modify the script to check for a file named "non_existent.txt":
+
+   ```bash
+   nano file_exists.sh
+   ```
+
+   Change the `filename` variable to "non_existent.txt".
+
+7. Run the script again:
+
+   ```bash
+   ./file_exists.sh
+   ```
+
+   You should see the output: "non_existent.txt does not exist"
+
+This script demonstrates how to check for file existence, which is crucial when your script needs to work with files that may or may not be present.

@@ -15,13 +15,27 @@
   "details": {
     "steps": [
       {
-        "title": "Create a Function",
+        "title": "Creating Your First Shell Function",
         "text": "step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Check if functions.sh exists",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you've created the file functions.sh in the ~/project directory.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if functions.sh is executable",
+            "file": "verify1-2.sh",
+            "hint": "Don't forget to make functions.sh executable using the chmod command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if functions.sh contains the greet function",
+            "file": "verify1-3.sh",
+            "hint": "Make sure you've defined the greet function in functions.sh as shown in the example.",
             "timeout": 0,
             "showstderr": true
           }
@@ -29,13 +43,20 @@
         "skills": ["shell/func_def"]
       },
       {
-        "title": "Call a Function",
+        "title": "Functions with Parameters",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify Existence of functions.sh File",
-            "file": "verify2.sh",
-            "hint": "~/project/functions.sh is not executable.",
+            "name": "Check if functions.sh contains the greet function with a parameter",
+            "file": "verify2-1.sh",
+            "hint": "Make sure you've updated the greet function to accept a parameter as shown in the example.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if functions.sh contains the calculate function",
+            "file": "verify2-2.sh",
+            "hint": "Ensure you've added the calculate function to functions.sh as demonstrated in the example.",
             "timeout": 0,
             "showstderr": true
           }
@@ -53,13 +74,20 @@
         ]
       },
       {
-        "title": "Exercise - Create ENGLISH_CALC Function",
+        "title": "Return Values from Functions",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Check if functions.sh contains the get_square function",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've added the get_square function to functions.sh as shown in the example.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if functions.sh contains the set_global_result function",
+            "file": "verify3-2.sh",
+            "hint": "Ensure you've added the set_global_result function to functions.sh as demonstrated in the example.",
             "timeout": 0,
             "showstderr": true
           }
@@ -81,6 +109,55 @@
           "shell/variables_decl",
           "shell/variables_usage"
         ]
+      },
+      {
+        "title": "Understanding Variable Scope",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Check if functions.sh contains the demonstrate_scope function",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you've added the demonstrate_scope function to functions.sh as shown in the example.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if functions.sh uses local variables",
+            "file": "verify4-2.sh",
+            "hint": "Ensure you've used the 'local' keyword to create a local variable in the demonstrate_scope function.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Advanced Function - ENGLISH_CALC",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Check if functions.sh contains the ENGLISH_CALC function",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've added the ENGLISH_CALC function to functions.sh as shown in the example.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if ENGLISH_CALC uses a case statement",
+            "file": "verify5-2.sh",
+            "hint": "Ensure you've used a case statement in the ENGLISH_CALC function to handle different operations.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Check if ENGLISH_CALC handles invalid operations",
+            "file": "verify5-3.sh",
+            "hint": "Make sure your ENGLISH_CALC function includes error handling for invalid operations.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
       }
     ],
     "intro": {
@@ -108,5 +185,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

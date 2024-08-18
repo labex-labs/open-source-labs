@@ -15,13 +15,13 @@
   "details": {
     "steps": [
       {
-        "title": "Accessing CPU Information",
+        "title": "Understanding the /proc Filesystem",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify CPU Information Displayed",
-            "file": "verify1.sh",
-            "hint": "Run cat /proc/cpuinfo to see the CPU information.",
+            "name": "Verify /proc listing",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you've run the command to list the contents of the /proc directory. If you haven't, type 'ls /proc' in your terminal and press Enter.",
             "timeout": 0,
             "showstderr": true
           }
@@ -29,13 +29,13 @@
         "skills": ["linux/cat"]
       },
       {
-        "title": "Filtering CPU Information",
+        "title": "Exploring CPU Information",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify Bash Command History for grep processor",
-            "file": "verify2.sh",
-            "hint": "Run grep processor to filter the CPU information.",
+            "name": "Verify CPU info display",
+            "file": "verify2-1.sh",
+            "hint": "Ensure you've used the cat command to display the contents of /proc/cpuinfo. If you haven't, type 'cat /proc/cpuinfo' in your terminal and press Enter.",
             "timeout": 0,
             "showstderr": true
           }
@@ -43,18 +43,88 @@
         "skills": ["linux/cat", "linux/grep", "linux/pipeline"]
       },
       {
-        "title": "Counting the Processors",
+        "title": "Introducing Pipelines",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Verify Bash History Contains wc -l Command",
-            "file": "verify3.sh",
-            "hint": "Run wc -l to count the number of processors.",
+            "name": "Verify grep usage",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've used the pipeline to filter for \"model name\" in the CPU info. If you haven't, type 'cat /proc/cpuinfo | grep \"model name\"' in your terminal and press Enter.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": ["linux/cat", "linux/grep", "linux/pipeline", "linux/wc"]
+      },
+      {
+        "title": "Counting CPU Cores",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Verify core count command",
+            "file": "verify4-1.sh",
+            "hint": "Ensure you've used the pipeline to count the number of CPU cores. If you haven't, type 'cat /proc/cpuinfo | grep \"processor\" | wc -l' in your terminal and press Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Finding Unique CPU Models",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Verify unique CPU models command",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've used the pipeline to count unique CPU models. If you haven't, type 'cat /proc/cpuinfo | grep \"model name\" | sort | uniq | wc -l' in your terminal and press Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Extracting CPU Clock Speed",
+        "text": "step6.md",
+        "verify": [
+          {
+            "name": "Verify clock speed extraction",
+            "file": "verify6-1.sh",
+            "hint": "Ensure you've used the pipeline to extract CPU clock speeds. If you haven't, type 'cat /proc/cpuinfo | grep \"cpu MHz\" | cut -d ':' -f 2' in your terminal and press Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Analyzing Memory Information",
+        "text": "step7.md",
+        "verify": [
+          {
+            "name": "Verify memory info display",
+            "file": "verify7-1.sh",
+            "hint": "Make sure you've displayed the first 5 lines of memory information. If you haven't, type 'cat /proc/meminfo | head -n 5' in your terminal and press Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Calculating Total RAM in Gigabytes",
+        "text": "step8.md",
+        "verify": [
+          {
+            "name": "Verify RAM calculation",
+            "file": "verify8-1.sh",
+            "hint": "Ensure you've used the pipeline to calculate total RAM in gigabytes. If you haven't, type 'cat /proc/meminfo | grep \"MemTotal\" | awk '{print $2/1024/1024 \" GB\"}'' in your terminal and press Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
       }
     ],
     "intro": {
@@ -82,5 +152,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

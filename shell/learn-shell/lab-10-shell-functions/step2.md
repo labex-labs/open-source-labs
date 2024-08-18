@@ -1,36 +1,50 @@
-# Call a Function
+# Functions with Parameters
 
-Functions can be called simply by writing their names. A function call is equivalent to a command. You can also pass parameters to functions by specifying them after the function name. The first parameter is referred to in the function as `$1`, the second as `$2`, and so on.
+Now that we've created a basic function, let's make it more flexible by adding parameters. Parameters allow us to pass information into our functions.
+
+Open the `functions.sh` file again:
 
 ```bash
-function function_B {
-  echo "Function B."
-}
-function function_A {
-  echo "$1"
-}
-function adder {
-  echo "$(($1 + $2))"
-}
-
-# FUNCTION CALLS
-# Pass parameter to function A
-function_A "Function A." # Function A.
-function_B               # Function B.
-# Pass two parameters to function adder
-adder 12 56 # 68
+nano ~/project/functions.sh
 ```
 
-Create a file called `~/project/functions.sh` and add the above code.
+Replace the content with the following code:
 
 ```bash
-cd ~/project
-chmod +x functions.sh
+#!/bin/bash
+
+# Function with a parameter
+greet() {
+  echo "Hello, $1!"
+}
+
+# Function with multiple parameters
+calculate() {
+  echo "The sum of $1 and $2 is $(($1 + $2))"
+}
+
+# Call functions with arguments
+greet "Alice"
+calculate 5 3
+```
+
+Let's examine this code:
+
+- In the `greet` function, `$1` refers to the first argument passed to the function.
+- In the `calculate` function, `$1` and `$2` refer to the first and second arguments, respectively.
+- `$(($1 + $2))` performs arithmetic addition of the two parameters.
+
+Save the file (Ctrl+X, Y, Enter) and run it:
+
+```bash
 ./functions.sh
 ```
 
-```text
-Function A.
-Function B.
-68
+You should see:
+
 ```
+Hello, Alice!
+The sum of 5 and 3 is 8
+```
+
+If you don't see this output, make sure you've saved the changes to the file correctly.

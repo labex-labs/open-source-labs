@@ -19,9 +19,9 @@
         "text": "step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify file creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file 'trap_example.sh' in the ~/project directory. If you're having trouble, try running the 'touch' command again.",
             "timeout": 0,
             "showstderr": true
           }
@@ -29,13 +29,13 @@
         "skills": ["linux/cd", "linux/touch"]
       },
       {
-        "title": "Declare the Trap Command",
+        "title": "Implement a Basic Trap Command",
         "text": "step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify script content",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have added the trap command to the script as instructed. Check for typos and make sure you've saved the file.",
             "timeout": 0,
             "showstderr": true
           }
@@ -52,13 +52,13 @@
         ]
       },
       {
-        "title": "Run the Script",
+        "title": "Make the Script Executable and Run It",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify script permissions",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've made the script executable using the chmod command. If you're having trouble, try running the chmod command again.",
             "timeout": 0,
             "showstderr": true
           }
@@ -66,13 +66,13 @@
         "skills": ["linux/chmod"]
       },
       {
-        "title": "Test the Trap Command",
+        "title": "Modify the Trap to Use a Function",
         "text": "step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify function definition",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you have defined the handle_signal function in the script. Check for typos in the function name.",
             "timeout": 0,
             "showstderr": true
           }
@@ -80,13 +80,13 @@
         "skills": []
       },
       {
-        "title": "Refactor the Trap Action",
+        "title": "Use Signal Numbers in the Trap Command",
         "text": "step5.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify trap with signal numbers",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you have updated the trap command to use signal numbers (2 and 15) instead of signal names. Check for typos and ensure you've saved the file.",
             "timeout": 0,
             "showstderr": true
           }
@@ -94,40 +94,6 @@
         "skills": [
           "linux/echo",
           "shell/func_def",
-          "shell/quoting",
-          "shell/trap_statements"
-        ]
-      },
-      {
-        "title": "Use Signal Numbers in the Trap Command",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["shell/trap_statements"]
-      },
-      {
-        "title": "Perform Cleanup with Trap",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "linux/exit",
-          "linux/rm",
-          "shell/exit_status",
           "shell/quoting",
           "shell/trap_statements"
         ]
@@ -158,5 +124,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }
