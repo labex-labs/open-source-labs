@@ -1,18 +1,40 @@
-# if-else Statement
+# Adding an Else Clause
 
-You can expand the if statement to include an else clause, which allows you to specify code to execute when the expression is false.
+Now, let's expand our if statement to include an else clause. This allows us to specify what should happen when the condition is false.
 
-Update the `if.sh` script to include an else clause that prints a message when the `NAME` variable is not equal to "John":
+Open the `if.sh` file in the WebIDE again and modify it as follows:
 
 ```bash
 #!/bin/bash
-NAME="Bill"
+
+NAME="Alice"
 if [ "$NAME" = "John" ]; then
-  echo "True - my name is indeed John"
+  echo "The name is John"
 else
-  echo "False"
-  echo "You must mistaken me for $NAME"
+  echo "The name is not John"
 fi
 ```
 
-The above script will print "False" and "You must mistaken me for Bill" because the expression is false.
+Let's go through the changes:
+
+1. We've changed the `NAME` variable to "Alice". This is to demonstrate what happens when the condition is false.
+
+2. We've added an `else` clause. This clause specifies what should happen if the condition in the if statement is false.
+
+3. After the `else`, we've added another `echo` command that will run if `NAME` is not "John".
+
+The `else` clause is optional in if statements, but it's very useful when you want to do something specific when the condition is false, rather than just doing nothing.
+
+Save the file with these changes.
+
+Now, run the script again:
+
+```bash
+./if.sh
+```
+
+This time, you should see the output: `The name is not John`
+
+This is because `NAME` is now "Alice", so the condition `[ "$NAME" = "John" ]` is false, and the code in the `else` block is executed.
+
+Try changing the `NAME` variable back to "John" and run the script again. What output do you get? This is a good way to test that your if-else statement is working correctly for both cases.
