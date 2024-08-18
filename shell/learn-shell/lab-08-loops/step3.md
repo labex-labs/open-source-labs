@@ -1,30 +1,60 @@
-# The `until` Loop
+# The `while` Loop
 
-The `until` loop is the opposite of the `while` loop. It continues executing a block of code until a certain condition becomes true. Here is the basic syntax:
+The `while` loop executes a block of code as long as a specified condition is true. It's like saying, "While this condition is true, keep doing this."
 
-```bash
-until [ condition ]
-do
-    command(s)...
-done
-```
-
-Here is an example that counts up to 5:
+Create a new file called `while_loop.sh`:
 
 ```bash
-count=1
-until [ $count -gt 5 ]; do
-  echo "Value of count is: $count"
-  count=$(($count + 1))
+touch while_loop.sh
+```
+
+Open the `while_loop.sh` file in the WebIDE and add the following content:
+
+```bash
+#!/bin/zsh
+
+# Simple countdown using a while loop
+count=5
+echo "Countdown:"
+while [ $count -gt 0 ]; do
+  echo $count
+  count=$((count - 1))
+  sleep 1 # Wait for 1 second
 done
+echo "Blast off!"
 ```
 
-Revise the file `~/project/while.sh` to use the `until` loop.
+Let's break down this script:
 
-```text
-Value of count is: 1
-Value of count is: 2
-Value of count is: 3
-Value of count is: 4
-Value of count is: 5
+1. We start with `count=5` to set our initial countdown value.
+2. The condition `[ $count -gt 0 ]` means "while count is greater than 0".
+3. Inside the loop, we print the current count, decrease it by 1, and wait for a second.
+4. This continues until count reaches 0, at which point the loop ends.
+
+The `sleep 1` command pauses the script for 1 second, creating a real-time countdown effect.
+
+Save the file and make it executable:
+
+```bash
+chmod +x while_loop.sh
 ```
+
+Now, run the script:
+
+```bash
+./while_loop.sh
+```
+
+You'll see a countdown from 5 to 1, with a one-second pause between each number:
+
+```
+Countdown:
+5
+4
+3
+2
+1
+Blast off!
+```
+
+This demonstrates how a `while` loop can repeat an action until a condition is no longer true.

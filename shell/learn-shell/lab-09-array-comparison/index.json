@@ -15,13 +15,13 @@
   "details": {
     "steps": [
       {
-        "title": "Initialize the arrays",
+        "title": "Create the script file",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify Existence of array-comparison.sh File",
-            "file": "verify1.sh",
-            "hint": "~/project/array-comparison.sh does not exist.",
+            "name": "Verify file creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file 'array-comparison.sh' in the '~/project' directory.",
             "timeout": 0,
             "showstderr": true
           }
@@ -29,13 +29,13 @@
         "skills": ["shell/arrays", "shell/subshells", "shell/variables_decl"]
       },
       {
-        "title": "Compare arrays `a` and `b`",
+        "title": "Add the shebang and initialize the arrays",
         "text": "step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify shebang and array initialization",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you've added the shebang (#!/bin/bash) at the beginning of your script file.",
             "timeout": 0,
             "showstderr": true
           }
@@ -58,13 +58,13 @@
         ]
       },
       {
-        "title": "Compare array `c` with array `z`",
+        "title": "Implement the first comparison loop",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify first comparison loop",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've implemented the nested loops to compare arrays a and b. Check that you have the outer loop starting with 'for x in \"${a[@]}\"'.",
             "timeout": 0,
             "showstderr": true
           }
@@ -87,13 +87,13 @@
         ]
       },
       {
-        "title": "Print the common elements",
+        "title": "Implement the second comparison loop",
         "text": "step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify second comparison loop",
+            "file": "verify4-1.sh",
+            "hint": "Ensure you've implemented the nested loops to compare array c with the common elements found in array z. Check that you have the outer loop starting with 'for i in \"${c[@]}\"'.",
             "timeout": 0,
             "showstderr": true
           }
@@ -107,6 +107,20 @@
           "shell/param_expansion",
           "shell/str_manipulation"
         ]
+      },
+      {
+        "title": "Make the script executable and run it",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Verify script execution",
+            "file": "verify5-1.sh",
+            "hint": "Make sure you've made the script executable using chmod and run it. The output should show common elements among all three arrays.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
       }
     ],
     "intro": {
@@ -134,5 +148,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

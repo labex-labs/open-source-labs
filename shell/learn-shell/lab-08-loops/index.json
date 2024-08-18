@@ -15,13 +15,13 @@
   "details": {
     "steps": [
       {
-        "title": "The for Loop",
+        "title": "Setting Up the Environment",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify Existence of for.sh File in Project Directory",
-            "file": "verify1.sh",
-            "hint": "~/project/for.sh does not exist.",
+            "name": "Verify bash_loops directory",
+            "file": "verify1-1.sh",
+            "hint": "The bash_loops directory was not created correctly. Make sure you ran the mkdir command in the /home/labex/project directory.",
             "timeout": 0,
             "showstderr": true
           }
@@ -48,13 +48,13 @@
         ]
       },
       {
-        "title": "The while Loop",
+        "title": "The `for` Loop",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify Existence of while.sh File",
-            "file": "verify2.sh",
-            "hint": "ls ~/project/while.sh does not exist.",
+            "name": "Verify for_loop.sh content",
+            "file": "verify2-1.sh",
+            "hint": "The for_loop.sh file does not contain the expected for loop example. Make sure you copied the provided script correctly.",
             "timeout": 0,
             "showstderr": true
           }
@@ -75,13 +75,13 @@
         ]
       },
       {
-        "title": "The until Loop",
+        "title": "The `while` Loop",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify while_loop.sh content",
+            "file": "verify3-1.sh",
+            "hint": "The while_loop.sh file does not contain the expected while loop example. Make sure you copied the provided script correctly.",
             "timeout": 0,
             "showstderr": true
           }
@@ -100,13 +100,13 @@
         ]
       },
       {
-        "title": "The break and continue Statements",
+        "title": "The `until` Loop",
         "text": "step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify until_loop.sh content",
+            "file": "verify4-1.sh",
+            "hint": "The until_loop.sh file does not contain the expected until loop example. Make sure you copied the provided script correctly.",
             "timeout": 0,
             "showstderr": true
           }
@@ -124,6 +124,20 @@
           "shell/variables_usage",
           "shell/while_loops"
         ]
+      },
+      {
+        "title": "Using `break` and `continue` Statements",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Verify break_continue.sh content",
+            "file": "verify5-1.sh",
+            "hint": "The break_continue.sh file does not contain the expected break and continue examples. Make sure you copied the provided script correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
       }
     ],
     "intro": {
@@ -151,5 +165,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }
