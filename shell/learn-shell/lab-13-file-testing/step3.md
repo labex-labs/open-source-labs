@@ -1,45 +1,53 @@
-# Test if a file is readable
+# Testing Directory Existence
 
-To test if a file has read permission for the user running the script, you can use the `-r` command. This command checks if a file is readable. If the file is readable, it will return true; otherwise, it will return false. If the file doesn't exist, you can create it using the `touch` command.
+Similar to testing file existence, we can also check if a directory exists. This is useful when your script needs to work with directories that may or may not be present.
 
-```shell
-#!/bin/bash
-filename="sample.md"
-if [ ! -f "$filename" ]; then
-  touch "$filename" # Create the file if it doesn't exist
-fi
-if [ -r "$filename" ]; then
-  echo "You are allowed to read $filename"
-else
-  echo "You are not allowed to read $filename"
-fi
-```
+1. Create a new script file named `dir_exists.sh`:
 
-Cearate a file called `~/project/readable.sh`.
+   ```bash
+   touch dir_exists.sh
+   ```
 
-```shell
-cd ~/project
-chmod +x readable.sh
-./readable.sh
-```
+2. Add the following content to the file:
 
-```text
-You are allowed to read sample.md
-```
+   ```bash
+   #!/bin/bash
+   
+   dirname="test_directory"
+   if [ -d "$dirname" ]; then
+     echo "$dirname exists"
+   else
+     echo "$dirname does not exist"
+   fi
+   ```
 
-Then, change the file permissions to remove the read permission.
+   This script is very similar to our file existence script, but it uses `-d` instead of `-e`. The `-d` test checks specifically for directory existence.
 
-```shell
-cd ~/project
-chmod -r sample.md
-```
+3. Save the file and exit the editor.
 
-Re-run the script.
+4. Make the script executable:
 
-```shell
-./readable.sh
-```
+   ```bash
+   chmod +x dir_exists.sh
+   ```
 
-```text
-You are not allowed to read sample.md
-```
+5. Run the script:
+
+   ```bash
+   ./dir_exists.sh
+   ```
+
+   You should see the output: "test_directory does not exist"
+
+6. Now, let's create the directory and run the script again:
+
+   ```bash
+   mkdir test_directory
+   ./dir_exists.sh
+   ```
+
+   You should now see the output: "test_directory exists"
+
+   `mkdir` is the command to create a new directory.
+
+This script demonstrates how to check for directory existence. This can be particularly useful in scripts that need to create, modify, or delete directories.

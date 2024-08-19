@@ -1,37 +1,50 @@
-# Exercise - Create ENGLISH_CALC Function
+# Return Values from Functions
 
-In this exercise, we will create a function called `ENGLISH_CALC` that can process sentences like `'3 plus 5'`, `'5 minus 1'`, or `'4 times 6'`, and print the results as `'3 + 5 = 8'`, `'5 - 1 = 4'`, or `'4 * 6 = 24'` respectively.
+In shell scripting, functions don't return values in the same way as in other programming languages. Instead, they can either echo a result that can be captured, or they can modify a global variable. Let's explore both methods.
+
+Open `functions.sh` again, and update the content with the following code:
 
 ```bash
-function ENGLISH_CALC {
-  a=$1
-  b=$3
-  signn=$2
-  if [ $signn == "plus" ]; then
-    echo "$a + $b = $(($a + $b))"
-  elif [ $signn == "minus" ]; then
-    echo "$a - $b = $(($a - $b))"
-  elif [ $signn == "times" ]; then
-    echo "$a * $b = $(($a * $b))"
-  fi
+#!/bin/bash
+
+# Function that echoes a result
+get_square() {
+  echo $(($1 * $1))
 }
 
-# Testing code
-ENGLISH_CALC 3 plus 5
-ENGLISH_CALC 5 minus 1
-ENGLISH_CALC 4 times 6
+# Function that modifies a global variable
+RESULT=0
+set_global_result() {
+  RESULT=$(($1 * $1))
+}
+
+# Capture the echoed result
+square_of_5=$(get_square 5)
+echo "The square of 5 is $square_of_5"
+
+# Use the function to modify the global variable
+set_global_result 6
+echo "The square of 6 is $RESULT"
 ```
 
-Revise the file `~/project/functions.sh` to include the above code.
+Let's break this down:
+
+- `get_square` function uses `echo` to output the result, which we capture using `$()` syntax.
+- `set_global_result` function modifies the global variable `RESULT`.
+- We use `$()` to capture the output of `get_square` into a variable.
+- We call `set_global_result`, which modifies `RESULT`, and then we print `RESULT`.
+
+Save the file and run it:
 
 ```bash
-cd ~/project
-chmod +x functions.sh
 ./functions.sh
 ```
 
-```text
-3 + 5 = 8
-5 - 1 = 4
-4 * 6 = 24
+You should see:
+
 ```
+The square of 5 is 25
+The square of 6 is 36
+```
+
+If you don't see this output, double-check your `functions.sh` file for any typos.

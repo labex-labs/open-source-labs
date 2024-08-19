@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "File System Operations in Shell",
-  "description": "In this lab, you will learn how to perform various file tests in the shell. File tests are useful for checking the properties of files and directories in the file system. You will familiarize yourself with common file test commands and their usage.",
+  "description": "In this lab, you will learn how to perform various file tests in the shell. You'll create test files and directories, check for their existence, and test file permissions. By the end of this lab, you'll be able to write shell scripts that can interact with the file system and make decisions based on file properties.",
   "meta": {
-    "title": "File Tests in Bash | Shell Scripting Tutorials",
-    "description": "Learn how to perform various file tests in the shell, including checking if a file exists, and explore common file test commands and their usage.",
-    "keywords": "file tests, shell scripting, bash, file existence, file system, shell commands"
+    "title": "Shell Scripting: Mastering File System Operations and Tests",
+    "description": "Learn to perform file system operations and tests in shell scripting. Create files and directories, check for their existence, and test file permissions using bash commands.",
+    "keywords": "shell scripting, file tests, bash, file existence, file permissions, directory operations, shell commands, file system"
   },
   "difficulty": "Beginner",
   "time": 15,
@@ -15,86 +15,74 @@
   "details": {
     "steps": [
       {
-        "title": "Test if a file exists",
+        "title": "Creating a Test File",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify Existence of File in Project Directory",
-            "file": "verify1.sh",
-            "hint": "~/project/file.sh does not exist.",
+            "name": "Verify test file creation and content",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file test_file.txt and it contains the phrase \"test file\". You can create it using: echo \"This is a test file for our lab.\" > test_file.txt",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/cd",
-          "linux/chmod",
-          "linux/echo",
-          "linux/touch",
-          "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/if_else",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/variables_decl",
-          "shell/variables_usage"
-        ]
+        "skills": ["linux/echo", "linux/touch", "shell/variables_usage"]
       },
       {
-        "title": "Test if a directory exists",
+        "title": "Testing File Existence",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify Existence of Directory.sh File",
-            "file": "verify2.sh",
-            "hint": "~/project/directory.sh does not exist.",
+            "name": "Verify file_exists.sh script",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that file_exists.sh exists and contains the line setting the filename variable. You can create it using touch file_exists.sh",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "linux/cd",
-          "linux/chmod",
-          "linux/echo",
-          "linux/mkdir",
-          "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/if_else",
-          "shell/quoting",
-          "shell/shebang",
+          "linux/touch",
           "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/if_else",
+          "shell/cond_expr"
         ]
       },
       {
-        "title": "Test if a file is readable",
+        "title": "Testing Directory Existence",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Verify Existence of Readable Shell Script",
-            "file": "verify3.sh",
-            "hint": "~/project/readable.sh does not exist.",
+            "name": "Verify dir_exists.sh script and directory creation",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you have created both the dir_exists.sh script and the test_directory. You can create the directory using: mkdir test_directory",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "linux/cd",
-          "linux/chmod",
-          "linux/echo",
-          "linux/read",
-          "linux/touch",
-          "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/if_else",
-          "shell/quoting",
-          "shell/read_input",
-          "shell/shebang",
+          "linux/mkdir",
           "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/if_else",
+          "shell/cond_expr"
+        ]
+      },
+      {
+        "title": "Testing File Permissions",
+        "text": "step4.md",
+        "verify": [
+          {
+            "name": "Verify file_readable.sh script and file permissions",
+            "file": "verify4-1.sh",
+            "hint": "Ensure that file_readable.sh exists and test_file.txt has read permissions. You can add read permissions using: chmod +r test_file.txt",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "linux/chmod",
+          "shell/variables_decl",
+          "shell/if_else",
+          "shell/cond_expr"
         ]
       }
     ],
@@ -123,5 +111,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "Bash Scripting Loops",
-  "description": "In this lab, you will learn how to use loops in Bash scripting. Loops allow you to repeat a set of instructions multiple times, making your scripts more efficient and flexible. We will cover three types of loops: for, while, and until. Additionally, we will explore the break and continue statements, which allow you to control the loop execution.",
+  "description": "In this lab, you will master the use of loops in Bash scripting. You'll learn how to implement for, while, and until loops to efficiently repeat instructions. Additionally, you'll explore break and continue statements to control loop execution. By the end of this lab, you'll be able to create more dynamic and flexible Bash scripts using various loop structures.",
   "meta": {
-    "title": "Mastering Bash Scripting | Loops and Control Statements",
-    "description": "Learn how to use loops, including for, while, and until, as well as break and continue statements, in Bash scripting to create efficient and flexible scripts.",
-    "keywords": "Bash scripting, loops, for loop, while loop, until loop, break, continue, programming, tutorial"
+    "title": "Bash Scripting: Mastering Loops and Control Flow",
+    "description": "Learn to implement for, while, and until loops in Bash scripting. Explore break and continue statements to create efficient and flexible scripts with controlled loop execution.",
+    "keywords": "Bash scripting, for loop, while loop, until loop, break statement, continue statement, loop control, shell programming"
   },
   "difficulty": "Beginner",
   "time": 20,
@@ -15,114 +15,104 @@
   "details": {
     "steps": [
       {
-        "title": "The for Loop",
+        "title": "Setting Up the Environment",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify Existence of for.sh File in Project Directory",
-            "file": "verify1.sh",
-            "hint": "~/project/for.sh does not exist.",
+            "name": "Verify bash_loops directory",
+            "file": "verify1-1.sh",
+            "hint": "The bash_loops directory was not created correctly. Make sure you ran the mkdir command in the /home/labex/project directory.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "linux/cd",
-          "linux/chmod",
-          "linux/echo",
+          "linux/mkdir",
           "linux/ls",
           "linux/touch",
-          "linux/wildcard",
-          "shell/arrays",
-          "shell/cmd_substitution",
           "shell/comments",
-          "shell/cond_expr",
-          "shell/for_loops",
-          "shell/globbing_expansion",
-          "shell/param_expansion",
-          "shell/quoting",
-          "shell/str_manipulation",
-          "shell/subshells",
           "shell/variables_decl",
           "shell/variables_usage"
         ]
       },
       {
-        "title": "The while Loop",
+        "title": "The `for` Loop",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify Existence of while.sh File",
-            "file": "verify2.sh",
-            "hint": "ls ~/project/while.sh does not exist.",
+            "name": "Verify for_loop.sh content",
+            "file": "verify2-1.sh",
+            "hint": "The for_loop.sh file does not contain the expected for loop example. Make sure you copied the provided script correctly.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
-          "linux/cd",
-          "linux/chmod",
           "linux/echo",
-          "shell/arith_expansion",
-          "shell/cmd_substitution",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/quoting",
-          "shell/subshells",
-          "shell/variables_decl",
+          "shell/for_loops",
           "shell/variables_usage",
-          "shell/while_loops"
+          "shell/comments"
         ]
       },
       {
-        "title": "The until Loop",
+        "title": "The `while` Loop",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify while_loop.sh content",
+            "file": "verify3-1.sh",
+            "hint": "The while_loop.sh file does not contain the expected while loop example. Make sure you copied the provided script correctly.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "linux/echo",
-          "shell/arith_expansion",
-          "shell/cmd_substitution",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/quoting",
-          "shell/subshells",
-          "shell/until_loops",
-          "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/while_loops",
+          "shell/variables_usage",
+          "shell/comments",
+          "shell/arith_expansion"
         ]
       },
       {
-        "title": "The break and continue Statements",
+        "title": "The `until` Loop",
         "text": "step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify until_loop.sh content",
+            "file": "verify4-1.sh",
+            "hint": "The until_loop.sh file does not contain the expected until loop example. Make sure you copied the provided script correctly.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "linux/echo",
-          "shell/arith_expansion",
-          "shell/cmd_substitution",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/if_else",
-          "shell/quoting",
-          "shell/subshells",
-          "shell/variables_decl",
+          "shell/until_loops",
           "shell/variables_usage",
-          "shell/while_loops"
+          "shell/comments",
+          "shell/arith_expansion"
+        ]
+      },
+      {
+        "title": "Using `break` and `continue` Statements",
+        "text": "step5.md",
+        "verify": [
+          {
+            "name": "Verify break_continue.sh content",
+            "file": "verify5-1.sh",
+            "hint": "The break_continue.sh file does not contain the expected break and continue examples. Make sure you copied the provided script correctly.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "linux/echo",
+          "shell/for_loops",
+          "shell/if_else",
+          "shell/variables_usage",
+          "shell/comments"
         ]
       }
     ],
@@ -151,5 +141,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

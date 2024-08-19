@@ -1,22 +1,20 @@
-# Compare arrays `a` and `b`
+# Add the shebang and initialize the arrays
 
-Next, compare the elements of arrays `a` and `b` to find the common elements. To do this, you can use nested loops.
+Now, let's start writing our script by adding the shebang and initializing our arrays.
+
+1. Add the following content to `array-comparison.sh`:
 
 ```bash
-# initialize an empty array to store the common elements
-z=()
+#!/bin/bash
 
-# loop through all elements of array a
-for x in "${a[@]}"; do
-  # set a flag to false
-  in=false
-
-  # loop through all elements of array b
-  for y in "${b[@]}"; do
-    if [ $x = $y ]; then
-      # if a match is found, add the element to array z
-      z+=($x)
-    fi
-  done
-done
+# Initialize the arrays
+a=(3 5 8 10 6)
+b=(6 5 4 12)
+c=(14 7 5 7)
 ```
+
+Let's break this down:
+
+- The first line `#!/bin/bash` is called a shebang. It tells the system to use the Bash interpreter to run this script. This line is crucial for any shell script.
+- We then initialize three arrays: `a`, `b`, and `c`. In Bash, arrays are defined by enclosing the elements in parentheses `()` and separating them with spaces.
+- Each array contains different integer values. We'll use these arrays to find common elements.

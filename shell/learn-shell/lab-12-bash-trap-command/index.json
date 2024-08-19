@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "Bash Trap Command",
-  "description": "In Bash scripting, the trap command allows you to catch and handle signals, interruptions, and user inputs in your script. By using trap, you can define specific actions to be taken when a particular signal is received, allowing you to prevent unpredictable behavior and gracefully handle various scenarios.",
+  "description": "In this lab, you'll learn to use the Bash trap command to handle signals and interruptions in your scripts. You'll create a script that catches specific signals, implement custom actions for these signals, and use functions with trap for more organized code. By the end, you'll be able to write scripts that gracefully handle various scenarios and prevent unpredictable behavior.",
   "meta": {
-    "title": "Mastering Bash Trap Command: Gracefully Handle Signals and Interruptions",
-    "description": "Discover the power of the Bash trap command to catch and manage signals, interruptions, and user inputs in your scripts for reliable and predictable behavior.",
-    "keywords": "linux lab, linux practice exercises, bash online labs, online kali linux terminal, practice linux commands online, linux practice online, signal handling, linux labs, scripting, linux tutor"
+    "title": "Bash Scripting: Mastering the Trap Command for Signal Handling",
+    "description": "Learn to use the Bash trap command to catch and handle signals, interruptions, and user inputs in your scripts. Create more robust and predictable Bash scripts with proper signal management.",
+    "keywords": "bash scripting, trap command, signal handling, interrupt management, script robustness, bash programming, linux scripting"
   },
   "difficulty": "Beginner",
   "time": 35,
@@ -19,46 +19,42 @@
         "text": "step1.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify file creation",
+            "file": "verify1-1.sh",
+            "hint": "Make sure you have created the file 'trap_example.sh' in the ~/project directory. If you're having trouble, try running the 'touch' command again.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": ["linux/cd", "linux/touch"]
+        "skills": ["linux/cd", "linux/touch", "shell/shebang"]
       },
       {
-        "title": "Declare the Trap Command",
+        "title": "Implement a Basic Trap Command",
         "text": "step2.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify script content",
+            "file": "verify2-1.sh",
+            "hint": "Ensure that you have added the trap command to the script as instructed. Check for typos and make sure you've saved the file.",
             "timeout": 0,
             "showstderr": true
           }
         ],
         "skills": [
           "linux/echo",
-          "linux/sleep",
           "shell/comments",
-          "shell/quoting",
-          "shell/shebang",
           "shell/trap_statements",
-          "shell/until_loops",
           "shell/while_loops"
         ]
       },
       {
-        "title": "Run the Script",
+        "title": "Make the Script Executable and Run It",
         "text": "step3.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify script permissions",
+            "file": "verify3-1.sh",
+            "hint": "Make sure you've made the script executable using the chmod command. If you're having trouble, try running the chmod command again.",
             "timeout": 0,
             "showstderr": true
           }
@@ -66,71 +62,18 @@
         "skills": ["linux/chmod"]
       },
       {
-        "title": "Test the Trap Command",
+        "title": "Modify the Trap to Use a Function",
         "text": "step4.md",
         "verify": [
           {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
+            "name": "Verify function definition",
+            "file": "verify4-1.sh",
+            "hint": "Make sure you have defined the cleanup_and_exit function in the script. Check for typos in the function name.",
             "timeout": 0,
             "showstderr": true
           }
         ],
-        "skills": []
-      },
-      {
-        "title": "Refactor the Trap Action",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "linux/echo",
-          "shell/func_def",
-          "shell/quoting",
-          "shell/trap_statements"
-        ]
-      },
-      {
-        "title": "Use Signal Numbers in the Trap Command",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["shell/trap_statements"]
-      },
-      {
-        "title": "Perform Cleanup with Trap",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "linux/exit",
-          "linux/rm",
-          "shell/exit_status",
-          "shell/quoting",
-          "shell/trap_statements"
-        ]
+        "skills": ["shell/func_def", "shell/trap_statements", "linux/echo"]
       }
     ],
     "intro": {
@@ -158,5 +101,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

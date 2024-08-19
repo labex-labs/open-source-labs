@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "Conditional Statements in Shell Programming",
-  "description": "In this lab, you will learn how to use conditional statements in shell programming to make logical decisions. We will cover the basic syntax of if-else statements, as well as how to use numeric and string comparisons to evaluate conditions. You will also practice writing code that demonstrates various types of comparisons and logical combinations.",
+  "description": "In this lab, you will learn how to use conditional statements in shell programming to make logical decisions. You'll practice writing if-else statements, using elif for multiple conditions, performing numeric and string comparisons, and combining conditions with logical operators. By the end of this lab, you'll be able to create shell scripts that can make decisions based on various conditions.",
   "meta": {
-    "title": "Shell Programming | Conditional Statements | Logical Decisions",
-    "description": "Learn how to use conditional statements in shell programming to make logical decisions. Explore if-else statements, numeric and string comparisons, and more.",
-    "keywords": "shell programming, conditional statements, logical decisions, if-else statements, numeric comparisons, string comparisons"
+    "title": "Shell Programming: Mastering Conditional Statements and Logical Operations",
+    "description": "Learn to use if-else statements, elif clauses, numeric and string comparisons, and logical operators in shell programming to create decision-making scripts.",
+    "keywords": "shell programming, conditional statements, if-else, elif, numeric comparisons, string comparisons, logical operators, bash scripting"
   },
   "difficulty": "Beginner",
   "time": 30,
@@ -15,13 +15,27 @@
   "details": {
     "steps": [
       {
-        "title": "Basic if Statement",
+        "title": "Creating Your First If Statement",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify the output of if.sh contains 'True'",
-            "file": "verify1.sh",
-            "hint": "The output of if.sh does not contain 'True'.",
+            "name": "Verify if.sh file exists",
+            "file": "verify1-1.sh",
+            "hint": "The if.sh file does not exist in the /home/labex/project directory. Make sure you've created the file using the touch command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify if.sh is executable",
+            "file": "verify1-2.sh",
+            "hint": "The if.sh file is not executable. Make sure you've run the chmod +x if.sh command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify if.sh output",
+            "file": "verify1-3.sh",
+            "hint": "The output of if.sh doesn't contain \"John\". Check your script and make sure it prints the correct message.",
             "timeout": 0,
             "showstderr": true
           }
@@ -31,23 +45,27 @@
           "linux/chmod",
           "linux/echo",
           "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
           "shell/if_else",
-          "shell/quoting",
-          "shell/shebang",
           "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/variables_usage",
+          "shell/shebang"
         ]
       },
       {
-        "title": "if-else Statement",
+        "title": "Adding an Else Clause",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify the output of if.sh contains 'mistaken'",
-            "file": "verify2.sh",
-            "hint": "The output of if.sh does not contain 'mistaken'.",
+            "name": "Verify if.sh content",
+            "file": "verify2-1.sh",
+            "hint": "The if.sh file doesn't contain an else clause. Make sure you've added it to your script.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify if.sh output",
+            "file": "verify2-2.sh",
+            "hint": "The output of if.sh doesn't contain \"not John\". Check your script and make sure it prints the correct message when the name is not John.",
             "timeout": 0,
             "showstderr": true
           }
@@ -55,24 +73,26 @@
         "skills": [
           "linux/echo",
           "shell/comments",
-          "shell/cond_expr",
-          "shell/for_loops",
-          "shell/globbing_expansion",
           "shell/if_else",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/variables_usage",
+          "shell/shebang"
         ]
       },
       {
-        "title": "if-elif-else Statement",
+        "title": "Introducing Elif",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Verify the output of if.sh contains 'Harrison'",
-            "file": "verify3.sh",
-            "hint": "The output of if.sh does not contain 'Harrison'.",
+            "name": "Verify if.sh contains elif",
+            "file": "verify3-1.sh",
+            "hint": "The if.sh file doesn't contain an elif clause. Make sure you've added it to your script.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify if.sh output",
+            "file": "verify3-2.sh",
+            "hint": "The output of if.sh doesn't contain \"Harrison\". Check your script and make sure it prints the correct message for George.",
             "timeout": 0,
             "showstderr": true
           }
@@ -80,13 +100,9 @@
         "skills": [
           "linux/echo",
           "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
           "shell/if_else",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/variables_usage",
+          "shell/shebang"
         ]
       },
       {
@@ -94,9 +110,23 @@
         "text": "step4.md",
         "verify": [
           {
-            "name": "Verify the output of if.sh is 2",
-            "file": "verify4.sh",
-            "hint": "The output of if.sh is not 2.",
+            "name": "Verify numeric.sh exists",
+            "file": "verify4-1.sh",
+            "hint": "The numeric.sh file does not exist in the /home/labex/project directory. Make sure you've created it using the touch command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify numeric.sh is executable",
+            "file": "verify4-2.sh",
+            "hint": "The numeric.sh file is not executable. Make sure you've run the chmod +x numeric.sh command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify numeric.sh output",
+            "file": "verify4-3.sh",
+            "hint": "The output of numeric.sh doesn't contain \"exactly 10\". Check your script and make sure it prints the correct message for the number 10.",
             "timeout": 0,
             "showstderr": true
           }
@@ -104,22 +134,34 @@
         "skills": [
           "linux/echo",
           "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
           "shell/if_else",
-          "shell/shebang",
           "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/variables_usage",
+          "shell/shebang"
         ]
       },
       {
-        "title": "String Comparisons",
+        "title": "String Comparisons and Logical Operators",
         "text": "step5.md",
         "verify": [
           {
-            "name": "Verify the output of if.sh is 3",
-            "file": "verify5.sh",
-            "hint": "The output of if.sh is not 3.",
+            "name": "Verify string_logic.sh exists",
+            "file": "verify5-1.sh",
+            "hint": "The string_logic.sh file does not exist in the /home/labex/project directory. Make sure you've created it using the touch command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify string_logic.sh is executable",
+            "file": "verify5-2.sh",
+            "hint": "The string_logic.sh file is not executable. Make sure you've run the chmod +x string_logic.sh command.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify string_logic.sh output",
+            "file": "verify5-3.sh",
+            "hint": "The output of string_logic.sh doesn't contain \"Both strings match\". Check your script and make sure all conditions are correctly implemented.",
             "timeout": 0,
             "showstderr": true
           }
@@ -127,42 +169,11 @@
         "skills": [
           "linux/echo",
           "linux/logical",
-          "linux/pipeline",
           "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
           "shell/if_else",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/subshells",
           "shell/variables_decl",
-          "shell/variables_usage"
-        ]
-      },
-      {
-        "title": "Logic Combinations",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Verify the output of if.sh is 4",
-            "file": "verify6.sh",
-            "hint": "The output of if.sh is not 4.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "linux/echo",
-          "shell/arith_expansion",
-          "shell/cmd_substitution",
-          "shell/comments",
-          "shell/cond_expr",
-          "shell/globbing_expansion",
-          "shell/if_else",
-          "shell/shebang",
-          "shell/subshells",
-          "shell/variables_decl",
-          "shell/variables_usage"
+          "shell/variables_usage",
+          "shell/shebang"
         ]
       }
     ],
@@ -191,5 +202,6 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ronreiter/interactive-tutorials#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ronreiter/interactive-tutorials"
-  }
+  },
+  "verified": true
 }

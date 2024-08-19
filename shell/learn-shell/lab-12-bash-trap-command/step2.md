@@ -1,18 +1,36 @@
-# Declare the Trap Command
+# Implement a Basic Trap Command
 
-Inside the `trap_example.sh` file, declare the `trap` command to catch specific signals and define the actions to be taken when those signals are received.
+Now, let's implement a basic `trap` command in our script to catch specific signals and exit gracefully.
 
-```bash
-#!/bin/bash
-# trap_example.sh
+1. Add the following content to the `trap_example.sh` file:
 
-trap "echo Booh!" SIGINT SIGTERM
-echo "The script will run until you hit Ctrl+Z."
-echo "Hit Ctrl+C to display a message!"
+   ```bash
+   #!/bin/bash
+   
+   cleanup_and_exit() {
+     echo -e "\nSignal received! Cleaning up and exiting..."
+     exit 0
+   }
+   
+   trap cleanup_and_exit SIGINT SIGTERM
+   
+   echo "This script will run until you press Ctrl+C."
+   echo "Press Ctrl+C to see the trap in action and exit gracefully."
+   
+   count=1
+   while true; do
+     echo "Script is running... (iteration $count)"
+     sleep 1
+     ((count++))
+   done
+   ```
 
-while true; do
-  sleep 60
-done
-```
+   Let's break down this script:
 
-In this example, we are catching the `SIGINT` (interrupt) and `SIGTERM` (termination) signals. When either of these signals is received, the script will execute the specified action, which, in this case, is to display the message `"Booh!"`.
+   - The first line `#!/bin/bash` is called a shebang. It tells the system that this script should be executed by the Bash shell.
+   - We define a `cleanup_and_exit` function that prints a message and exits the script.
+   - The `trap` command is set up to call `cleanup_and_exit` when it catches either SIGINT (interrupt) or SIGTERM (termination) signals. SIGINT is typically sent when you press Ctrl+C, while SIGTERM is often used when a process is asked to terminate gracefully.
+   - The `echo` commands print instructions for the user.
+   - The `while` loop runs indefinitely, printing a message and incrementing a counter every second.
+
+2. Save the file after adding the content.

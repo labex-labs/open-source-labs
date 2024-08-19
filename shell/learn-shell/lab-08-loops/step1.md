@@ -1,52 +1,20 @@
-# The `for` Loop
+# Setting Up the Environment
 
-The `for` loop is used to iterate over a list of values or the output of a command. Here is the basic syntax:
+Let's start by setting up our working environment. We'll create a new directory to store all our loop experiments.
 
-```bash
-for item in [list]
-do
-    command(s)...
-done
-```
-
-Create a file called `~/project/for.sh`.
-
-To loop through an array, you can use the following example:
+Open a terminal in the WebIDE. You should be in the `/home/labex/project` directory by default. If you're not sure, you can always navigate there using this command:
 
 ```bash
-NAMES=("Joe" "Jenny" "Sara" "Tony")
-for name in "${NAMES[@]}"; do
-  echo "My name is $name"
-done
+cd /home/labex/project
 ```
+
+Now, let's create a new directory for our loop experiments:
 
 ```bash
-cd ~/project
-chmod +x for.sh
-./for.sh
+mkdir bash_loops
+cd bash_loops
 ```
 
-```text
-My name is Joe
-My name is Jenny
-My name is Sara
-My name is Tony
-```
+This creates a new directory called `bash_loops` and changes into it. We'll use this directory for all our loop experiments.
 
-To loop through the output of a command, you can use the following example:
-
-```bash
-# create some txt files
-touch file1.txt file2.txt file3.txt
-
-# loop through the output of ls
-for file in $(ls *.txt); do
-  echo "File is: $file"
-done
-```
-
-```text
-File is: file1.txt
-File is: file2.txt
-File is: file3.txt
-```
+Why are we doing this? Organizing your scripts into directories is a good practice. It keeps your work tidy and makes it easier to find and manage your files.
