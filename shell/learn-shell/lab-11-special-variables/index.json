@@ -1,11 +1,11 @@
 {
   "type": "lab",
   "title": "Special Variables in Shell Scripting",
-  "description": "In this lab, you will learn about the special variables in shell scripting. These variables provide important information about the script execution environment, such as command-line arguments, script name, and process ID.",
+  "description": "In this lab, you will explore special variables in shell scripting. You'll learn to use variables like $0, $1, $#, $?, and $$ to access script name, command-line arguments, argument count, exit status, and process ID. You'll also understand the difference between $@ and $* for handling multiple arguments.",
   "meta": {
-    "title": "Shell Scripting | Special Variables | Execution Environment",
-    "description": "Learn about the special variables in shell scripting, including command-line arguments, script name, and process ID. Optimize your scripts with this valuable information.",
-    "keywords": "shell scripting, special variables, command-line arguments, script name, process ID, execution environment"
+    "title": "Shell Scripting: Mastering Special Variables and Execution Environment",
+    "description": "Learn to utilize special variables in shell scripts to access command-line arguments, script information, and process details. Enhance your scripts with powerful built-in variables.",
+    "keywords": "shell scripting, special variables, command-line arguments, script name, process ID, exit status, $@, $*, bash scripting"
   },
   "difficulty": "Beginner",
   "time": 15,
@@ -40,7 +40,13 @@
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": [
+          "linux/touch",
+          "linux/chmod",
+          "shell/shebang",
+          "shell/comments",
+          "shell/variables_usage"
+        ]
       },
       {
         "title": "Running the Script with Arguments",
@@ -61,21 +67,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/cd",
-          "linux/chmod",
-          "linux/echo",
-          "linux/wildcard",
-          "shell/comments",
-          "shell/for_loops",
-          "shell/func_def",
-          "shell/globbing_expansion",
-          "shell/param_expansion",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/str_manipulation",
-          "shell/variables_decl"
-        ]
+        "skills": ["linux/echo", "shell/variables_usage", "shell/for_loops"]
       },
       {
         "title": "Understanding $? and $",
@@ -103,17 +95,7 @@
             "showstderr": true
           }
         ],
-        "skills": [
-          "linux/echo",
-          "linux/wildcard",
-          "shell/comments",
-          "shell/for_loops",
-          "shell/func_def",
-          "shell/globbing_expansion",
-          "shell/quoting",
-          "shell/shebang",
-          "shell/variables_usage"
-        ]
+        "skills": ["linux/echo", "shell/variables_usage", "shell/if_else"]
       },
       {
         "title": "Using Special Variables in Functions",
@@ -141,10 +123,10 @@
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["shell/func_def", "shell/variables_usage", "linux/echo"]
       },
       {
-        "title": "Understanding the Difference Between $@ and $\\*",
+        "title": "Understanding the Difference Between $@ and $*",
         "text": "step5.md",
         "verify": [
           {
@@ -169,7 +151,7 @@
             "showstderr": true
           }
         ],
-        "skills": []
+        "skills": ["shell/for_loops", "shell/variables_usage", "linux/echo"]
       }
     ],
     "intro": {
