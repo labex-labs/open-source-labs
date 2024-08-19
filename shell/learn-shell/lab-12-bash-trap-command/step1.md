@@ -3,7 +3,6 @@
 Let's start by creating a new Bash script file where we'll implement the `trap` command.
 
 1. Open a terminal in the WebIDE. You should see a prompt ending with a `$` symbol.
-
 2. Navigate to the project directory:
 
    ```bash
