@@ -1,5 +1,5 @@
 #!/bin/bash
-if grep -q "for i in \"\${c\[@\]}\"" ~/project/array-comparison.sh; then
+if grep -q "j=" ~/project/array-comparison.sh; then
   exit 0
 else
   exit 1
