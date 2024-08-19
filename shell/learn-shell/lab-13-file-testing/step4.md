@@ -1,53 +1,56 @@
-# Testing Directory Existence
+# Testing File Permissions
 
-Similar to testing file existence, we can also check if a directory exists. This is useful when your script needs to work with directories that may or may not be present.
+In Linux, every file and directory has associated permissions that determine who can read, write, or execute them. In this step, we'll learn how to check file permissions, specifically if a file is readable.
 
-1. Create a new script file named `dir_exists.sh`:
-
-   ```bash
-   nano dir_exists.sh
-   ```
-
+1. Create a new script file named `file_readable.sh`:
 2. Add the following content to the file:
 
    ```bash
    #!/bin/bash
    
-   dirname="test_directory"
-   if [ -d "$dirname" ]; then
-     echo "$dirname exists"
+   filename="test_file.txt"
+   if [ -r "$filename" ]; then
+     echo "You have read permission for $filename"
    else
-     echo "$dirname does not exist"
+     echo "You do not have read permission for $filename"
    fi
    ```
 
-   This script is very similar to our file existence script, but it uses `-d` instead of `-e`. The `-d` test checks specifically for directory existence.
+   This script uses the `-r` test, which checks if the file is readable by the current user.
 
 3. Save the file and exit the editor.
 
 4. Make the script executable:
 
    ```bash
-   chmod +x dir_exists.sh
+   chmod +x file_readable.sh
    ```
 
 5. Run the script:
 
    ```bash
-   ./dir_exists.sh
+   ./file_readable.sh
    ```
 
-   You should see the output: "test_directory does not exist"
+   You should see the output: "You have read permission for test_file.txt"
 
-6. Now, let's create the directory and run the script again:
+6. Now, let's remove the read permission and run the script again:
 
    ```bash
-   mkdir test_directory
-   ./dir_exists.sh
+   chmod -r test_file.txt
+   ./file_readable.sh
    ```
 
-   You should now see the output: "test_directory exists"
+   You should now see the output: "You do not have read permission for test_file.txt"
 
-   `mkdir` is the command to create a new directory.
+   `chmod -r` removes read permissions from the file.
 
-This script demonstrates how to check for directory existence. This can be particularly useful in scripts that need to create, modify, or delete directories.
+7. Restore the read permission:
+
+   ```bash
+   chmod +r test_file.txt
+   ```
+
+   It's important to restore the permissions so we don't accidentally leave our file unreadable.
+
+This script demonstrates how to check file permissions. Understanding and managing file permissions is crucial for system security and proper functioning of scripts.

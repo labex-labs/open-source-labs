@@ -15,13 +15,13 @@
   "details": {
     "steps": [
       {
-        "title": "Understanding the Working Environment",
+        "title": "Creating a Test File",
         "text": "step1.md",
         "verify": [
           {
-            "name": "Verify current directory",
+            "name": "Verify test file creation and content",
             "file": "verify1-1.sh",
-            "hint": "Make sure you are in the /home/labex/project directory. You can change to this directory using the command: cd /home/labex/project",
+            "hint": "Make sure you have created the file test_file.txt and it contains the phrase \"test file\". You can create it using: echo \"This is a test file for our lab.\" > test_file.txt",
             "timeout": 0,
             "showstderr": true
           }
@@ -42,13 +42,13 @@
         ]
       },
       {
-        "title": "Creating a Test File",
+        "title": "Testing File Existence",
         "text": "step2.md",
         "verify": [
           {
-            "name": "Verify test file creation and content",
+            "name": "Verify file_exists.sh script",
             "file": "verify2-1.sh",
-            "hint": "Make sure you have created the file test_file.txt and it contains the phrase \"test file\". You can create it using: echo \"This is a test file for our lab.\" > test_file.txt",
+            "hint": "Ensure that file_exists.sh exists and contains the line setting the filename variable. You can create it using touch file_exists.sh",
             "timeout": 0,
             "showstderr": true
           }
@@ -69,13 +69,13 @@
         ]
       },
       {
-        "title": "Testing File Existence",
+        "title": "Testing Directory Existence",
         "text": "step3.md",
         "verify": [
           {
-            "name": "Verify file_exists.sh script",
+            "name": "Verify dir_exists.sh script and directory creation",
             "file": "verify3-1.sh",
-            "hint": "Ensure that file_exists.sh exists and contains the line setting the filename variable. You can create it using nano file_exists.sh",
+            "hint": "Make sure you have created both the dir_exists.sh script and the test_directory. You can create the directory using: mkdir test_directory",
             "timeout": 0,
             "showstderr": true
           }
@@ -98,26 +98,12 @@
         ]
       },
       {
-        "title": "Testing Directory Existence",
+        "title": "Testing File Permissions",
         "text": "step4.md",
         "verify": [
           {
-            "name": "Verify dir_exists.sh script and directory creation",
-            "file": "verify4-1.sh",
-            "hint": "Make sure you have created both the dir_exists.sh script and the test_directory. You can create the directory using: mkdir test_directory",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Testing File Permissions",
-        "text": "step5.md",
-        "verify": [
-          {
             "name": "Verify file_readable.sh script and file permissions",
-            "file": "verify5-1.sh",
+            "file": "verify4-1.sh",
             "hint": "Ensure that file_readable.sh exists and test_file.txt has read permissions. You can add read permissions using: chmod +r test_file.txt",
             "timeout": 0,
             "showstderr": true

@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ -f dir_exists.sh ]] && [[ -d test_directory ]]; then
+if [[ -f file_readable.sh ]] && [[ -r test_file.txt ]]; then
   exit 0
 else
   exit 1

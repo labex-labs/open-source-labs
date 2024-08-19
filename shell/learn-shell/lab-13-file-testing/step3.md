@@ -1,67 +1,48 @@
-# Testing File Existence
+# Testing Directory Existence
 
-Now that we have created a file, let's learn how to check if a file exists. This is a common task in shell scripts, especially when you need to perform operations on files.
+Similar to testing file existence, we can also check if a directory exists. This is useful when your script needs to work with directories that may or may not be present.
 
-1. Create a new script file named `file_exists.sh`:
-
-   ```bash
-   nano file_exists.sh
-   ```
-
-   This opens the nano text editor. If you're not familiar with nano, don't worry - it's a simple, user-friendly editor.
-
+1. Create a new script file named `dir_exists.sh`:
 2. Add the following content to the file:
 
    ```bash
    #!/bin/bash
    
-   filename="test_file.txt"
-   if [ -e "$filename" ]; then
-     echo "$filename exists"
+   dirname="test_directory"
+   if [ -d "$dirname" ]; then
+     echo "$dirname exists"
    else
-     echo "$filename does not exist"
+     echo "$dirname does not exist"
    fi
    ```
 
-   Let's break this down:
+   This script is very similar to our file existence script, but it uses `-d` instead of `-e`. The `-d` test checks specifically for directory existence.
 
-   - `#!/bin/bash` is called a shebang. It tells the system this is a bash script.
-   - We set a variable `filename` to "test_file.txt".
-   - The `if` statement checks if the file exists. `-e` is a test that returns true if the file exists.
-   - We use `echo` to print a message based on whether the file exists or not.
-
-3. Save the file and exit the editor. In nano, you can do this by pressing Ctrl+X, then Y, then Enter.
+3. Save the file and exit the editor.
 
 4. Make the script executable:
 
    ```bash
-   chmod +x file_exists.sh
+   chmod +x dir_exists.sh
    ```
-
-   `chmod` changes the permissions of a file. `+x` adds executable permissions.
 
 5. Run the script:
 
    ```bash
-   ./file_exists.sh
+   ./dir_exists.sh
    ```
 
-   You should see the output: "test_file.txt exists"
+   You should see the output: "test_directory does not exist"
 
-6. Now, let's test with a non-existent file. Modify the script to check for a file named "non_existent.txt":
+6. Now, let's create the directory and run the script again:
 
    ```bash
-   nano file_exists.sh
+   mkdir test_directory
+   ./dir_exists.sh
    ```
 
-   Change the `filename` variable to "non_existent.txt".
+   You should now see the output: "test_directory exists"
 
-7. Run the script again:
+   `mkdir` is the command to create a new directory.
 
-   ```bash
-   ./file_exists.sh
-   ```
-
-   You should see the output: "non_existent.txt does not exist"
-
-This script demonstrates how to check for file existence, which is crucial when your script needs to work with files that may or may not be present.
+This script demonstrates how to check for directory existence. This can be particularly useful in scripts that need to create, modify, or delete directories.

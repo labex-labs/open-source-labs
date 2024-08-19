@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ -f file_exists.sh ]] && grep -q "filename=" file_exists.sh; then
+if [[ -f dir_exists.sh ]] && [[ -d test_directory ]]; then
   exit 0
 else
   exit 1
