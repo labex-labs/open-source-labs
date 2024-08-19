@@ -6,12 +6,12 @@ First, we need to create a new file. Open your terminal and type:
 
 ```bash
 cd ~/project
-nano functions.sh
+touch functions.sh
 ```
 
-This command changes to the `project` directory and opens a new file named `functions.sh` in the nano text editor.
+This command changes to the `project` directory and creates a new file called `functions.sh`. This file will contain our shell functions.
 
-Now, let's add our first function. Type the following into the nano editor:
+Now, let's add our first function:
 
 ```bash
 #!/bin/bash
@@ -31,8 +31,6 @@ Let's break this down:
 - We define our function with `greet() { }`. Everything between the curly braces is part of the function.
 - Inside the function, we have a simple `echo` command that prints "Hello, World!".
 - The last line `greet` calls (runs) our function.
-
-To save the file, press `Ctrl+X`, then `Y`, then `Enter`.
 
 Now, let's make our script executable and run it:
 

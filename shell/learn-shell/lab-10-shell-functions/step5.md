@@ -2,12 +2,6 @@
 
 Now that we've covered the basics of shell functions, let's create a more advanced function called `ENGLISH_CALC`. This function will take three arguments: two numbers and an operation (plus, minus, or times).
 
-Open the `functions.sh` file:
-
-```bash
-nano ~/project/functions.sh
-```
-
 Replace the content with the following code:
 
 ```bash

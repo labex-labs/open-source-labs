@@ -2,13 +2,7 @@
 
 In shell scripting, functions don't return values in the same way as in other programming languages. Instead, they can either echo a result that can be captured, or they can modify a global variable. Let's explore both methods.
 
-Open `functions.sh` again:
-
-```bash
-nano ~/project/functions.sh
-```
-
-Update the content with the following code:
+Open `functions.sh` again, and update the content with the following code:
 
 ```bash
 #!/bin/bash

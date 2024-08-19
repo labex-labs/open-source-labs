@@ -2,11 +2,7 @@
 
 In shell scripts, variables are global by default. This means they can be accessed from anywhere in the script. However, you can use the `local` keyword to create variables that are only accessible within a function. This is called local scope.
 
-Let's modify our `functions.sh` file to demonstrate this concept:
-
-```bash
-nano ~/project/functions.sh
-```
+Let's modify our `functions.sh` file to demonstrate this concept.
 
 Update the content with the following code:
 
