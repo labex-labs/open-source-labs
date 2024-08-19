@@ -11,7 +11,7 @@ touch until_loop.sh
 Open the `until_loop.sh` file in the WebIDE and add the following content:
 
 ```bash
-#!/bin/zsh
+#!/bin/bash
 
 # Count up to 5 using an until loop
 count=1

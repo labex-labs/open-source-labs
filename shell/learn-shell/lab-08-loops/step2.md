@@ -11,7 +11,7 @@ touch for_loop.sh
 Now, open the `for_loop.sh` file in the WebIDE and add the following content:
 
 ```bash
-#!/bin/zsh
+#!/bin/bash
 
 # Loop through an array of names
 echo "Looping through an array:"

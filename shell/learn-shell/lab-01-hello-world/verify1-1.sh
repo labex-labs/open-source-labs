@@ -1,2 +1,2 @@
-#!/bin/zsh
+#!/bin/bash
 grep "ls" ~/.zsh_history

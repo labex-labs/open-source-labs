@@ -11,7 +11,7 @@ touch while_loop.sh
 Open the `while_loop.sh` file in the WebIDE and add the following content:
 
 ```bash
-#!/bin/zsh
+#!/bin/bash
 
 # Simple countdown using a while loop
 count=5

@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 output=$(~/project/array-comparison.sh)
 if echo "$output" | grep -q "Common elements among a, b, and c:"; then
   exit 0

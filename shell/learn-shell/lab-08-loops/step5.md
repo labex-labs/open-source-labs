@@ -11,7 +11,7 @@ touch break_continue.sh
 Open the `break_continue.sh` file in the WebIDE and add the following content:
 
 ```bash
-#!/bin/zsh
+#!/bin/bash
 
 # Using break to exit a loop early
 echo "Demonstration of break:"

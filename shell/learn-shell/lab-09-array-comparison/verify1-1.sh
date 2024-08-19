@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 if [[ -f ~/project/array-comparison.sh ]]; then
   exit 0
 else
