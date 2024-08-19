@@ -3,6 +3,11 @@
 Similar to testing file existence, we can also check if a directory exists. This is useful when your script needs to work with directories that may or may not be present.
 
 1. Create a new script file named `dir_exists.sh`:
+
+   ```bash
+   touch dir_exists.sh
+   ```
+
 2. Add the following content to the file:
 
    ```bash

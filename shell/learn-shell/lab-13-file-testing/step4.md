@@ -3,6 +3,11 @@
 In Linux, every file and directory has associated permissions that determine who can read, write, or execute them. In this step, we'll learn how to check file permissions, specifically if a file is readable.
 
 1. Create a new script file named `file_readable.sh`:
+
+   ```bash
+   touch file_readable.sh
+   ```
+
 2. Add the following content to the file:
 
    ```bash
