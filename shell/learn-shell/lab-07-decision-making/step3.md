@@ -24,15 +24,10 @@ fi
 Let's break down this script:
 
 1. We start with `NAME="George"`. This will be the name we're checking.
-
 2. The first `if` statement checks if the name is "John".
-
 3. If it's not "John", we move to the first `elif` (else if) statement, which checks if the name is "Paul".
-
 4. If it's not "Paul", we move to the next `elif`, checking for "George".
-
 5. If it's not "George", we check for "Ringo".
-
 6. If none of these conditions are true, we fall through to the `else` clause, which will echo "Unknown member".
 
 The `elif` clause allows you to check multiple conditions in sequence. You can have as many `elif` clauses as you need. The conditions are checked in order, and the first one that's true will have its corresponding code block executed.

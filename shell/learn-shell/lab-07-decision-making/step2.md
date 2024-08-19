@@ -18,9 +18,7 @@ fi
 Let's go through the changes:
 
 1. We've changed the `NAME` variable to "Alice". This is to demonstrate what happens when the condition is false.
-
 2. We've added an `else` clause. This clause specifies what should happen if the condition in the if statement is false.
-
 3. After the `else`, we've added another `echo` command that will run if `NAME` is not "John".
 
 The `else` clause is optional in if statements, but it's very useful when you want to do something specific when the condition is false, rather than just doing nothing.
