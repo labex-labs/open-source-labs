@@ -1,5 +1,5 @@
 #!/bin/bash
-if grep -q "handle_signal()" ~/project/trap_example.sh; then
+if grep -q "cleanup_and_exit" ~/project/trap_example.sh; then
   exit 0
 else
   exit 1
