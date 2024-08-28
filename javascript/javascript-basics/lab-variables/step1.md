@@ -39,7 +39,7 @@ let myVariable = "Bob";
 myVariable = "Steve";
 ```
 
-Note that variables may hold values that have different [data types](/en-US/docs/Web/JavaScript/Data_structures):
+Note that variables may hold values that have different [data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures):
 
 | Variable                                                             | Explanation                                                                                                                      | Example                                                                                                                     |
 | -------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
