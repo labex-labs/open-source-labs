@@ -8,7 +8,7 @@ git commit -m 'init'
 
 pip install pandas
 pip install Pyarrow
-pip3 install openpyxlcd
+pip3 install openpyxl
 cd ~/project
 pip install jupyter
 mkdir ~/.jupyter
