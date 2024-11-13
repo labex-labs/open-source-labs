@@ -18,6 +18,7 @@ jobs:
           python-version: "3.10"
       - name: Install CLI
         run: |
+          rm -rf /tmp/labex-cli
           git clone https://${{ secrets.GH_TOKEN }}@github.com/labex-labs/labex-cli.git /tmp/labex-cli
           cd /tmp/labex-cli
           pip install --editable .
