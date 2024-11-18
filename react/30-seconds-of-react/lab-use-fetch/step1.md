@@ -13,7 +13,6 @@ const useFetch = (url, options) => {
   React.useEffect(() => {
     const abortController = new AbortController();
     const signal = abortController.signal;
-    setAbort(abortController.abort);
 
     const fetchData = async () => {
       try {
