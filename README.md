@@ -1,5 +1,9 @@
 # LabEx Open-Source Labs
 
+[![Black Friday](https://file.labex.io/images/labex-bf24.png)](https://labex.io/pricing)
+
+> [Black Friday 2024 & Cyber Monday 2024 Deals](https://labex.io/pricing) | Best Price of the Year
+
 This repository contains the source code for the LabEx Open-Source Labs.
 
 ## Contributing
