@@ -13,7 +13,7 @@ This will create a `mysite` directory in your current directory.
 
 Let's look at what `startproject` created:
 
-```text
+```plaintext
 mysite/
     manage.py
     mysite/

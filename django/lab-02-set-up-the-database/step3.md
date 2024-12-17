@@ -31,7 +31,7 @@ python manage.py makemigrations polls
 
 You should see something similar to the following:
 
-```text
+```plaintext
 Migrations for 'polls':
   polls/migrations/0001_initial.py
     - Create model Question
@@ -97,7 +97,7 @@ Now, run `migrate` again to create those model tables in your database:
 python manage.py migrate
 ```
 
-```text
+```plaintext
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, polls, sessions
 Running migrations:

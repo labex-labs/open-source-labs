@@ -14,6 +14,6 @@ When you finish the tasks, the `~/project/` directory should look like this:
 ls -a ~/project/
 ```
 
-```text
+```plaintext
 .  ..  first-trending-repo
 ```

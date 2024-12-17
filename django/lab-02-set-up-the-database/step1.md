@@ -42,7 +42,7 @@ cd ~/project/mysite
 python manage.py migrate
 ```
 
-```text
+```plaintext
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, sessions
 Running migrations:

@@ -62,7 +62,7 @@ fn main() {
 
 1.  _Recap_: Add the `fmt::Display` trait to the `Matrix` struct in the above example, so that if you switch from printing the debug format `{:?}` to the display format `{}`, you see the following output:
 
-    ```text
+    ```plaintext
     ( 1.1 1.2 )
     ( 2.1 2.2 )
     ```
@@ -78,7 +78,7 @@ fn main() {
 
     Results in the output:
 
-    ```text
+    ```plaintext
     Matrix:
     ( 1.1 1.2 )
     ( 2.1 2.2 )

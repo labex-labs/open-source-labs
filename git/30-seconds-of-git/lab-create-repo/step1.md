@@ -19,7 +19,7 @@ ls -a my_repo
 
 You should see the following files and directories:
 
-```text
+```plaintext
 .  ..  .git
 ```
 
@@ -35,7 +35,7 @@ ls -a my_repo/.git
 
 You should see the following files and directories:
 
-```text
+```plaintext
 .  ..  branches  config  description  HEAD  hooks  info  objects  ref
 ```
 

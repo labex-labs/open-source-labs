@@ -44,7 +44,7 @@ If you have difficulty finding where the Django source files are located on your
 python -c "import django; print(django.__path__)"
 ```
 
-```text
+```plaintext
 ['/home/labex/.local/lib/python3.10/site-packages/django']
 ```
 

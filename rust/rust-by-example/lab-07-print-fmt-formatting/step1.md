@@ -67,7 +67,7 @@ You can view a full list of formatting traits and their argument types in the `s
 
 Add an implementation of the `fmt::Display` trait for the `Color` struct above so that the output displays as:
 
-```text
+```plaintext
 RGB (128, 255, 90) 0x80FF5A
 RGB (0, 3, 254) 0x0003FE
 RGB (0, 0, 0) 0x000000

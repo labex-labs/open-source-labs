@@ -15,6 +15,6 @@ When you finish the tasks, the `my_project` directory should look like this:
 ls -a ~/project/my_project
 ```
 
-```text
+```plaintext
 .  ..  .git
 ```

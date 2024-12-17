@@ -14,7 +14,7 @@ This is the simplest view possible in Django. To call the view, we need to map i
 
 To create a URLconf in the polls directory, create a file called `urls.py`. Your app directory should now look like:
 
-```text
+```plaintext
 polls/
     __init__.py
     admin.py

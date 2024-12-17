@@ -9,7 +9,7 @@ python manage.py runserver
 
 You'll see the following output on the command line:
 
-```text
+```plaintext
 Performing system checks...
 
 System check identified no issues (0 silenced).

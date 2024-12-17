@@ -14,7 +14,7 @@ fn main() {
 
 You'll get this error:
 
-```text
+```plaintext
 error: expected identifier, found keyword `try`
  --> src/main.rs:4:4
   |

@@ -18,7 +18,7 @@ python manage.py startapp polls
 
 That'll create a directory `polls`, which is laid out like this:
 
-```text
+```plaintext
 polls/
     __init__.py
     admin.py

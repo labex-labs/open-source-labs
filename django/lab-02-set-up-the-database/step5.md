@@ -16,19 +16,19 @@ python manage.py createsuperuser
 
 Enter your desired username and press enter.
 
-```text
+```plaintext
 Username: admin
 ```
 
 You will then be prompted for your desired email address:
 
-```text
+```plaintext
 Email address: admin@example.com
 ```
 
 The final step is to enter your password. You will be asked to enter your password twice, the second time as a confirmation of the first.
 
-```text
+```plaintext
 Password: 12345678
 Password (again): 12345678
 
