@@ -35,12 +35,11 @@ The Docker command line can be used to manage several features of the Docker Eng
 Install `podman` on your LabEx VM.
 
 ```bash
-sudo apt-get install podman
+sudo apt-get update
+sudo apt-get install podman -y
 ```
 
 If `podman` is installed, you can run the alternative command for comparison.
-
-If you do not have `podman` installed, you can run the `sudo apt-get update && sudo apt-get upgrade` command to upgrade the software.
 
 ```bash
 sudo podman -h
