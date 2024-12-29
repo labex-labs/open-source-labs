@@ -22,6 +22,22 @@ jobs:
           git clone https://${{ secrets.GH_TOKEN }}@github.com/labex-labs/labex-cli.git /tmp/labex-cli
           cd /tmp/labex-cli
           pip install --editable .
+      - name: Install Node.js and Prettier
+        run: |
+          # Download and install nvm:
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+          # Download and install Node.js:
+          nvm install 22
+          # Verify the Node.js version:
+          node -v # Should print "v22.12.0".
+          nvm current # Should print "v22.12.0".
+          # Verify npm version:
+          npm -v # Should print "10.9.0".
+          npm i -D prettier prettier-plugin-sh
+          npx prettier --write README.md
       - name: sync-labs-contributors
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -29,8 +45,6 @@ jobs:
           labex update index-contributors --ghtoken "$GH_TOKEN" --repo $GITHUB_REPOSITORY --path .
       - name: Formatting index.json
         run: |
-          sudo apt-get update && sudo apt-get install -y nodejs npm
-          npm i -D prettier prettier-plugin-sh
           npx prettier --write "**/index.json"
           git pull origin master
       - name: Git commit
