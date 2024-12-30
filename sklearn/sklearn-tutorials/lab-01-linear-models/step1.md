@@ -1,5 +1,7 @@
 # Ordinary Least Squares
 
+> Get started with [Supervised Learning: Regression](https://labex.io/courses/supervised-learning-regression), if you don't have any prior experience with Machine Learning.
+
 Ordinary Least Squares (OLS) is a linear regression method that minimizes the sum of squared differences between the observed targets and the predicted targets. Mathematically, it solves a problem of the form:
 $$\min_{w} || X w - y||_2^2$$
 

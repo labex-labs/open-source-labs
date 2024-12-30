@@ -11,6 +11,8 @@ We will cover the following topics:
 - Stochastic Gradient Descent
 - Perceptron
 
+> Get started with [Supervised Learning: Regression](https://labex.io/courses/supervised-learning-regression), if you don't have any prior experience with Machine Learning.
+
 ## VM Tips
 
 After the VM startup is done, click the top left corner to switch to the **Notebook** tab to access Jupyter Notebook for practice.
