@@ -121,7 +121,7 @@ cd ~/project/mysite
 python manage.py runserver 0.0.0.0:8080
 ```
 
-![Alt text](./assets/20230908-10-37-07-p9ewKbe6.png)
+![Poll voting form interface](./assets/20230908-10-37-07-p9ewKbe6.png)
 
 **Note:**
 

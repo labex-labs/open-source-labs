@@ -85,7 +85,7 @@ python manage.py runserver 0.0.0.0:8080
 
 Load the page by pointing your browser at "/polls/", and you should see a bulleted-list containing the "What's up" question from Tutorial 2. The link points to the question's detail page.
 
-![Alt text](./assets/20230908-09-37-26-QMKEbUhb.png)
+![Django polls index page](./assets/20230908-09-37-26-QMKEbUhb.png)
 
 ## A shortcut: `~django.shortcuts.render`
 

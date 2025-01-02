@@ -45,7 +45,7 @@ Complexity:
 
 Wikipedia's animation:
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
+![Sieve of Eratosthenes animation](https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
 
 ## Code
 

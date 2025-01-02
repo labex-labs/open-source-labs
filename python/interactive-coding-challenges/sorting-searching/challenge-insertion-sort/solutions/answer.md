@@ -31,7 +31,7 @@ This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and
 ## Algorithm
 
 Wikipedia's animation:
-![alt text](http://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+![Insertion sort animation example](http://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 
 - For each value index 1 to n - 1
   - Compare with all elements to the left of the current value to determine new insertion point

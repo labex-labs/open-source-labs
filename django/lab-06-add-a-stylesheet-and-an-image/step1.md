@@ -38,4 +38,4 @@ python manage.py runserver 0.0.0.0:8080
 
 Reload **Web 8080** tab and you should see that the question links are green (Django style!) which means that your stylesheet was properly loaded.
 
-![Alt text](./assets/20230908-15-29-11-ztyI1umP.png)
+![green question links example](./assets/20230908-15-29-11-ztyI1umP.png)

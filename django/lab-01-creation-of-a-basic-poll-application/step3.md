@@ -35,7 +35,7 @@ ALLOWED_HOSTS = ["*"]
 
 This tells Django that it's allowed to serve requests with any host header.
 
-![Alt text](./assets/20230907-08-56-33-3uvbOwp3.png)
+![Django development server running](./assets/20230907-08-56-33-3uvbOwp3.png)
 
 ## Changing the port
 
@@ -55,7 +55,7 @@ python manage.py runserver 0.0.0.0:8080
 
 Now, switch to **Web 8080** tab in the LabEx VM and you'll see the same "Congratulations" page.
 
-![Alt text](./assets/20230907-08-58-22-M3Luydxk.png)
+![Django development server page](./assets/20230907-08-58-22-M3Luydxk.png)
 
 Full docs for the development server can be found in the `runserver` reference.
 

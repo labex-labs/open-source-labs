@@ -17,7 +17,7 @@ admin.site.register(Choice)
 
 Now "Choices" is an available option in the Django admin. The "Add choice" form looks like this:
 
-![Alt text](./assets/20230908-16-09-57-eCXIdjZu.png)
+![Add Choice form interface](./assets/20230908-16-09-57-eCXIdjZu.png)
 
 In that form, the "Question" field is a select box containing every question in the database. Django knows that a `~django.db.models.ForeignKey` should be represented in the admin as a `<select>` box. In our case, only one question exists at this point.
 
@@ -53,7 +53,7 @@ This tells Django: "`Choice` objects are edited on the `Question` admin page. By
 
 Load the "Add question" page to see how that looks:
 
-![Alt text](./assets/20230908-16-11-09-tVqaXrGB.png)
+![Question admin with choices](./assets/20230908-16-11-09-tVqaXrGB.png)
 
 It works like this: There are three slots for related Choices -- as specified by `extra` -- and each time you come back to the "Change" page for an already-created object, you get another three extra slots.
 
@@ -70,6 +70,6 @@ class ChoiceInline(admin.TabularInline):
 
 With that `TabularInline` (instead of `StackedInline`), the related objects are displayed in a more compact, table-based format:
 
-![Alt text](./assets/20230908-16-12-24-1nqRkbAI.png)
+![Tabular inline choices display](./assets/20230908-16-12-24-1nqRkbAI.png)
 
 Note that there is an extra "Delete?" column that allows removing rows added using the "Add another Choice" button and rows that have already been saved.

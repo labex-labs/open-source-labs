@@ -72,7 +72,7 @@ self.assertEqual(shortest_path.path_weight['i'], 8)
 
 Wikipedia's animation:
 
-![](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
+![Dijkstra algorithm animation](https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif)
 
 Initialize the following:
 

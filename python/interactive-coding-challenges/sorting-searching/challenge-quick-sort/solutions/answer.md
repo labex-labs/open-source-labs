@@ -32,7 +32,7 @@ This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and
 ## Algorithm
 
 Wikipedia's animation:
-![alt text](http://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
+![Quicksort algorithm animation](http://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif)
 
 - Set pivot to the middle element in the data
 - For each element:

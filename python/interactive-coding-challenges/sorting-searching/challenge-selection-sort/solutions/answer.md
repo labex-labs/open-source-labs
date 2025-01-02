@@ -31,7 +31,7 @@ This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and
 ## Algorithm
 
 Wikipedia's animation:
-![alt text](http://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
+![Selection sort animation example](http://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
 
 We can do this recursively or iteratively. Iteratively will be more efficient as it doesn't require the extra space overhead with the recursive calls.
 

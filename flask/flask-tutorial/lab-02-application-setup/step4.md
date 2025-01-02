@@ -20,4 +20,4 @@ You should see output similar to this:
 
 Then, open the tab **Web 5000**, and you should see the following:
 
-![](./assets/hello-world.png)
+![Flask app hello world page](./assets/hello-world.png)

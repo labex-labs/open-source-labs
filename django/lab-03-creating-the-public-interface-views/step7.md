@@ -34,6 +34,6 @@ to point at the namespaced detail view:
 <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
 ```
 
-![Alt text](./assets/20230908-09-58-22-qkl9l0DT.png)
+![URL namespacing example](./assets/20230908-09-58-22-qkl9l0DT.png)
 
 When you're comfortable with writing views, read **Form Processing and Cutting Down Our Code** to learn the basics about form processing and generic views.

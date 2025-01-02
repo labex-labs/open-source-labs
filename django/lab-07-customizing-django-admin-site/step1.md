@@ -32,7 +32,7 @@ Open `http://127.0.0.1:8000/admin/` in Firefox of Desktop Environment and click 
 
 This particular change above makes the "Publication date" come before the "Question" field:
 
-![Alt text](./assets/20230908-16-06-41-wiBfnHS8.png)
+![Admin form field reorder](./assets/20230908-16-06-41-wiBfnHS8.png)
 
 This isn't impressive with only two fields, but for admin forms with dozens of fields, choosing an intuitive order is an important usability detail.
 
@@ -56,4 +56,4 @@ admin.site.register(Question, QuestionAdmin)
 
 The first element of each tuple in `~django.contrib.admin.ModelAdmin.fieldsets` is the title of the fieldset. Here's what our form looks like now:
 
-![Alt text](./assets/20230908-16-08-19-HOzMJWFG.png)
+![Admin form with fieldsets](./assets/20230908-16-08-19-HOzMJWFG.png)

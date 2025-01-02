@@ -50,7 +50,7 @@ python manage.py runserver
 
 Now, open a web browser in **VNC** tab, and go to "/admin/" on your local domain -- e.g., `http://127.0.0.1:8000/admin/`. You should see the admin's login screen:
 
-![Alt text](./assets/20230907-14-31-50-SvkJF8K8.png)
+![Django admin login screen](./assets/20230907-14-31-50-SvkJF8K8.png)
 
 Since `translation </topics/i18n/translation>` is turned on by default, if you set `LANGUAGE_CODE`, the login screen will be displayed in the given language (if Django has appropriate translations).
 
@@ -88,7 +88,7 @@ Click "Questions". Now you're at the "change list" page for questions. This page
 
 Click the "What's up?" question to edit it:
 
-![Alt text](./assets/20230907-14-33-49-XWeEgAXl.png)
+![Editing a poll question](./assets/20230907-14-33-49-XWeEgAXl.png)
 
 Things to note here:
 

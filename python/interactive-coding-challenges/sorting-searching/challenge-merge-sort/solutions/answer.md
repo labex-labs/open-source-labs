@@ -32,7 +32,7 @@ This notebook was prepared by [Donne Martin](http://donnemartin.com). Source and
 ## Algorithm
 
 Wikipedia's animation:
-![alt text](http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+![Merge sort animation example](http://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
 - Recursively split array into left and right halves
 - Merge split arrays

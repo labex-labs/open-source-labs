@@ -24,7 +24,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 Now the question change list page looks like this:
 
-![Alt text](./assets/20230908-16-14-08-GNY2lggF.png)
+![Question change list view](./assets/20230908-16-14-08-GNY2lggF.png)
 
 You can click on the column headers to sort by those values -- except in the case of the `was_published_recently` header, because sorting by the output of an arbitrary method is not supported. Also note that the column header for `was_published_recently` is, by default, the name of the method (with underscores replaced with spaces), and that each line contains the string representation of the output.
 
@@ -56,7 +56,7 @@ list_filter = ["pub_date"]
 
 That adds a "Filter" sidebar that lets people filter the change list by the `pub_date` field:
 
-![Alt text](./assets/20230908-16-16-39-otfMNyYo.png)
+![Admin list filter sidebar](./assets/20230908-16-16-39-otfMNyYo.png)
 
 The type of filter displayed depends on the type of field you're filtering on. Because `pub_date` is a `~django.db.models.DateTimeField`, Django knows to give appropriate filter options: "Any date", "Today", "Past 7 days", "This month", "This year".
 
