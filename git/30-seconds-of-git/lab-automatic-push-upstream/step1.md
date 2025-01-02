@@ -36,4 +36,4 @@ git ls-remote --heads origin
 
 This is the result after completing the lab:
 
-![<result>](./assets/challenge-automatic-push-upstream-step1-1.png)
+![automatic upstream branch result](./assets/challenge-automatic-push-upstream-step1-1.png)

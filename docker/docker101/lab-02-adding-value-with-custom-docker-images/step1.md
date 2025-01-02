@@ -39,4 +39,4 @@ $ python3 app.py
 
 Open the app in a new browser tab using `http://0.0.0.0:5000/`.
 
-![image](./assets/20230829-13-51-38-psaOqQ42.png)
+![Flask app browser output](./assets/20230829-13-51-38-psaOqQ42.png)

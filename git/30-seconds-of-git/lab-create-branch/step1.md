@@ -37,4 +37,4 @@ git push -u origin feature-1
 
 This is what happens when you run the `git branch -r` command:
 
-![<result>](./assets/challenge-create-branch-step1-1.png)
+![git branch remote output](./assets/challenge-create-branch-step1-1.png)

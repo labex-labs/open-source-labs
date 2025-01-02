@@ -40,7 +40,7 @@ Again, since this is the first time we are running a mongo container, we will pu
 
 See the output from mongoDB using `0.0.0.0:8081` in the Web browser. You should see a message which will return a warning from MongoDB.
 
-![image](./assets/20230829-11-19-23-PkodKK48.png)
+![MongoDB server output warning](./assets/20230829-11-19-23-PkodKK48.png)
 
 Check your running containers with `docker container ls`
 

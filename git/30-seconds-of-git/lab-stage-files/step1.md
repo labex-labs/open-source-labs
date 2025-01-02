@@ -51,4 +51,4 @@ git status
 
 This is the finished result:
 
-![<result>](./assets/challenge-stage-files-step1-1.png)
+![Git staging area status](./assets/challenge-stage-files-step1-1.png)

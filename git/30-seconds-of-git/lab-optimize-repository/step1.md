@@ -13,4 +13,4 @@ git gc --prune=now --aggressive
 
 This is the result of optimising the `git-playground` repository by removing all loose objects and packing the remaining objects into a new set of pack files:
 
-![<result>](./assets/challenge-optimize-repository-step1-1.png)
+![Git repository optimization result](./assets/challenge-optimize-repository-step1-1.png)

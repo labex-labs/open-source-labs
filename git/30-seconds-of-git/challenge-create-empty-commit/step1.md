@@ -16,4 +16,4 @@ For this challenge, let's use the repository from `https://github.com/labex-labs
 
 This is where you run `git log --name-status HEAD^..HEAD` and the result:
 
-![<result>](./assets/challenge-create-empty-commit-step1-1.png)
+![git log empty commit result](./assets/challenge-create-empty-commit-step1-1.png)

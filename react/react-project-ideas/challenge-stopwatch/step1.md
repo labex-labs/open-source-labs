@@ -44,4 +44,4 @@ npm start
 
 The finished result is as follows:
 
-![finished](./assets/finished.gif)
+![Finished stopwatch demonstration](./assets/finished.gif)

@@ -30,4 +30,4 @@ For this lab, let's use the repository from `https://github.com/labex-labs/git-p
 
 This is the result of running the `git log` command:
 
-![<result>](./assets/challenge-create-commit-step1-1.png)
+![git log command output](./assets/challenge-create-commit-step1-1.png)

@@ -11,10 +11,10 @@ Let's run the application again and test the dynamic content feature.
 
 3. Copy the URL of the tab **Web 5000** and paste it into a new tab in your browser.
 
-   ![copy-url](./assets/copy-url.png)
+   ![Copying Web 5000 URL](./assets/copy-url.png)
 
 4. Append `/LabEx` to the end of the URL and press Enter.
 
-   ![hello-labex](./assets/hello-labex.png)
+   ![Hello LabEx webpage](./assets/hello-labex.png)
 
 5. Change the value of the `name` parameter in the URL and press Enter.

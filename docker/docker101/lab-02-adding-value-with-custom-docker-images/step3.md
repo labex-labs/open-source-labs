@@ -12,7 +12,7 @@ The `-p` flag maps a port running inside the container to your host. In this cas
 
 Navigate to **PORTS** tab in the terminal window and click on the link to open the app in a new browser tab.
 
-![image](./assets/20230829-13-59-19-e8dZe3aN.png)
+![Terminal ports tab link](./assets/20230829-13-59-19-e8dZe3aN.png)
 
 In a terminal run `curl localhost:5001`, which returns `hello world!`.
 

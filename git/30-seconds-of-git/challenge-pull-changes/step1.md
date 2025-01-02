@@ -13,4 +13,4 @@ After completing the challenge, you should see a message indicating that your lo
 
 This is the result after pulling:
 
-![<result>](./assets/challenge-pull-changes-step1-1.png)
+![Git pull success message](./assets/challenge-pull-changes-step1-1.png)

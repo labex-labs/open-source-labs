@@ -37,4 +37,4 @@ npm start
 
 The finished result is as follows:
 
-![finished](./assets/finished.gif)
+![Tag input functionality demo](./assets/finished.gif)

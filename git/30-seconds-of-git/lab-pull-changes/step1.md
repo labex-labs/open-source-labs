@@ -20,4 +20,4 @@ After running the `git pull` command, you should see a message indicating that y
 
 This is the result after pulling:
 
-![<result>](./assets/challenge-pull-changes-step1-1.png)
+![git pull command output](./assets/challenge-pull-changes-step1-1.png)

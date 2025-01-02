@@ -10,7 +10,7 @@ c = [a,b]
 
 A picture of the underlying memory operations. In this example, there is only one list object `[1,2,3]`, but there are four different references to it.
 
-![References](./assets/references.png)
+![Memory reference diagram example](./assets/references.png)
 
 This means that modifying a value affects _all_ references.
 

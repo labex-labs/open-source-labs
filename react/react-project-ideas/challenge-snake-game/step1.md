@@ -44,4 +44,4 @@ npm start
 
 The finished result is as follows:
 
-![finished](./assets/finished.gif)
+![Snake game final result](./assets/finished.gif)

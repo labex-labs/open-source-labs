@@ -24,4 +24,4 @@ This command will create a new commit with the message "Fix the bug" and attribu
 
 This is the finished result:
 
-![<result>](./assets/challenge-commit-set-author-step1-1.png)
+![Git commit author change result](./assets/challenge-commit-set-author-step1-1.png)

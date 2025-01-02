@@ -11,4 +11,4 @@ To demonstrate how to edit the last commit, let's use the repository from `https
 3. Verify that the last commit now includes the changes you made.
 
 This is the content of the late commit:
-![<result>](./assets/challenge-update-commit-contents.png)
+![Updated commit contents screenshot](./assets/challenge-update-commit-contents.png)

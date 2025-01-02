@@ -52,4 +52,4 @@ npm start
 
 The finished result is as follows:
 
-![finished](./assets/finished.gif)
+![Tic Tac Toe game demo](./assets/finished.gif)

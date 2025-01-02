@@ -19,4 +19,4 @@ git submodule add https://github.com/labex-labs/git-playground.git ./git-playgro
 
 This is the result after completing the lab:
 
-![<result>](./assets/challenge-add-submodule-step1-1.png)
+![Git submodule add result](./assets/challenge-add-submodule-step1-1.png)
