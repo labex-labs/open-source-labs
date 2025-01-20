@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
       - name: Formatting files
         run: |
           current_date=$(date +%s) && last_commit_date=$(git log -1 --format="%ct") && days_diff=$(($(($current_date - $last_commit_date)) / 86400)) && [ "$days_diff" -gt "7" ] && echo "最后一次提交已超过 7 天" && exit 1 || echo "最后一次提交未超过 7 天"
