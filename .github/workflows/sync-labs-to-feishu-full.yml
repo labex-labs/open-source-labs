@@ -8,7 +8,7 @@ on:
 jobs:
   sync:
     if: github.repository_owner == 'labex-labs'
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
