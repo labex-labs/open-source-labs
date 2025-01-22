@@ -3,4 +3,4 @@
 # best to first compile it and then run the resulting
 # binary directly.
 cd /home/labex/project
-go build command-line-flags.go | grep ""
+/usr/local/go/bin/go build command-line-flags.go | grep ""
