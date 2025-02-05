@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring K-Means Clustering Assumptions",
-  "description": "In this lab, we will explore the k-means clustering algorithm and its assumptions. We will generate data with different distributions and visualize how k-means partitions this data into clusters. We will also discuss some of the limitations of the algorithm and possible solutions to overcome them.",
-  "meta": {
-    "title": "K-Means Clustering | Data Visualization | Machine Learning",
-    "description": "Explore the k-means clustering algorithm, generate data with different distributions, and visualize how k-means partitions the data into clusters. Understand the limitations and solutions for the algorithm.",
-    "keywords": "k-means clustering, data visualization, machine learning, data generation, algorithm limitations"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Data Generation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Visualize Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "K-Means Clustering",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/cluster"]
-      },
-      {
-        "title": "Possible Solutions",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Gaussian Mixture Model",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/mixture"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-kmeans-assumptions.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,182 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-kmeans-assumptions.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring K-Means Clustering Assumptions",
+      "description": "In this lab, we will explore the k-means clustering algorithm and its assumptions. We will generate data with different distributions and visualize how k-means partitions this data into clusters. We will also discuss some of the limitations of the algorithm and possible solutions to overcome them.",
+      "meta": {
+        "title": "K-Means Clustering | Data Visualization | Machine Learning",
+        "description": "Explore the k-means clustering algorithm, generate data with different distributions, and visualize how k-means partitions the data into clusters. Understand the limitations and solutions for the algorithm.",
+        "keywords": "k-means clustering, data visualization, machine learning, data generation, algorithm limitations"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Data Generation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Visualize Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "K-Means Clustering",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster"]
+          },
+          {
+            "title": "Possible Solutions",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Gaussian Mixture Model",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/mixture"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索K均值聚类假设",
+      "description": "在本实验中，我们将探索K均值聚类算法及其假设。我们将生成具有不同分布的数据，并可视化K均值如何将这些数据划分为聚类。我们还将讨论该算法的一些局限性以及克服这些局限性的可能解决方案。",
+      "meta": {
+        "title": "K均值聚类 | 数据可视化 | 机器学习",
+        "description": "探索K均值聚类算法，生成具有不同分布的数据，并可视化K均值如何将数据划分为聚类。了解该算法的局限性和解决方案。",
+        "keywords": "K均值聚类, 数据可视化, 机器学习, 数据生成, 算法局限性"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据生成",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "可视化数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "K均值聚类",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster"]
+          },
+          {
+            "title": "可能的解决方案",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "高斯混合模型",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/mixture"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

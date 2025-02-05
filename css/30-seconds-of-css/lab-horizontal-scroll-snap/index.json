@@ -1,70 +1,10 @@
 {
   "type": "lab",
-  "title": "Horizontal Scroll Snap",
-  "description": "In this lab, we will explore the concept of horizontal scroll snap in CSS. The lab will guide you through creating a horizontally scrollable container that will snap on elements when scrolling. You will learn how to use the scroll-snap-type property and scroll-snap-align to create a snap effect and how to control the alignment of the snap. By the end of the lab, you will have a good understanding of how to create a sleek and user-friendly horizontal scrolling layout.",
-  "meta": {
-    "title": "Mastering Horizontal Scroll Snap in CSS",
-    "description": "Discover the power of horizontal scroll snap and create sleek, user-friendly scrolling layouts with this comprehensive tutorial.",
-    "keywords": "css, horizontal scroll snap, web design, layout, css practice, user experience, css playground, css lab, css exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Horizontal Scroll Snap",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -73,5 +13,123 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Horizontal Scroll Snap",
+      "description": "In this lab, we will explore the concept of horizontal scroll snap in CSS. The lab will guide you through creating a horizontally scrollable container that will snap on elements when scrolling. You will learn how to use the scroll-snap-type property and scroll-snap-align to create a snap effect and how to control the alignment of the snap. By the end of the lab, you will have a good understanding of how to create a sleek and user-friendly horizontal scrolling layout.",
+      "meta": {
+        "title": "Mastering Horizontal Scroll Snap in CSS",
+        "description": "Discover the power of horizontal scroll snap and create sleek, user-friendly scrolling layouts with this comprehensive tutorial.",
+        "keywords": "css, horizontal scroll snap, web design, layout, css practice, user experience, css playground, css lab, css exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Horizontal Scroll Snap",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "水平滚动捕捉",
+      "description": "在本实验中，我们将探索CSS中水平滚动捕捉的概念。本实验将指导你创建一个水平可滚动的容器，该容器在滚动时会捕捉到元素。你将学习如何使用scroll-snap-type属性和scroll-snap-align来创建捕捉效果，以及如何控制捕捉的对齐方式。在实验结束时，你将很好地理解如何创建一个简洁且用户友好的水平滚动布局。",
+      "meta": {
+        "title": "掌握CSS中的水平滚动捕捉",
+        "description": "通过本全面教程，发现水平滚动捕捉的强大功能，并创建简洁、用户友好的滚动布局。",
+        "keywords": "CSS, 水平滚动捕捉, 网页设计, 布局, CSS实践, 用户体验, CSS游乐场, CSS实验, CSS练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "水平滚动捕捉",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

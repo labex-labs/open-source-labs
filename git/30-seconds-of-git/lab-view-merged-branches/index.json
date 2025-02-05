@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "View Merged Branches",
-  "description": "In this lab, you will learn how to view a list of all merged local branches in a Git repository, which is an important task for keeping track of the development process and managing the codebase.",
-  "meta": {
-    "title": "View Merged Branches in Git Repository",
-    "description": "Learn how to view a list of all merged local branches in a Git repository using the command 'git branch -a --merged'.",
-    "keywords": "git repository, git labs, branches, git, merged branches, git playground, command line"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "View Merged Branches",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful view",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/merge"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "View Merged Branches",
+      "description": "In this lab, you will learn how to view a list of all merged local branches in a Git repository, which is an important task for keeping track of the development process and managing the codebase.",
+      "meta": {
+        "title": "View Merged Branches in Git Repository",
+        "description": "Learn how to view a list of all merged local branches in a Git repository using the command 'git branch -a --merged'.",
+        "keywords": "git repository, git labs, branches, git, merged branches, git playground, command line"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "View Merged Branches",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful view",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/merge"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "查看已合并的分支",
+      "description": "在本实验中，你将学习如何查看Git仓库中所有已合并的本地分支列表，这对于跟踪开发过程和管理代码库来说是一项重要任务。",
+      "meta": {
+        "title": "在Git仓库中查看已合并的分支",
+        "description": "学习如何使用命令'git branch -a --merged'查看Git仓库中所有已合并的本地分支列表。",
+        "keywords": "Git仓库, Git实验室, 分支, Git, 已合并的分支, Git游乐场, 命令行"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查看已合并的分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功查看",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/merge"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

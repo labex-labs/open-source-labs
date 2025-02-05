@@ -1,126 +1,10 @@
 {
   "type": "lab",
-  "title": "Adding Value with Custom Docker Images",
-  "description": "In this lab, we build on our knowledge from lab 1 where we used Docker commands to run containers. We will create a custom Docker Image built from a Dockerfile. Once we build the image, we will push it to a central registry where it can be pulled to be deployed on other environments. Also, we will briefly describe image layers, and how Docker incorporates 'copy-on-write' and the union file system to efficiently store images and run containers.",
-  "meta": {
-    "title": "Docker Image Creation | Python App Development",
-    "description": "Learn how to create a custom Docker image from a Dockerfile, push it to a registry, and deploy it on other environments. Explore Docker's efficient image storage and container management features.",
-    "keywords": "Docker, Docker Image, Dockerfile, Python, Flask, Web Development"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "pro",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Step 1: Create a Python App (without Using Docker)",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify if the flask app is running",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions carefully.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Step 2: Create and Build the Docker Image",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify if python-hello-world image is created",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions carefully.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["docker/build", "docker/images"]
-      },
-      {
-        "title": "Step 3: Run the Docker Image",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify if python-hello-world container is running",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions carefully.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["docker/logs", "docker/ls", "docker/run"]
-      },
-      {
-        "title": "Step 4: Push to a Central Registry",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["docker/push"]
-      },
-      {
-        "title": "Step 5: Deploying a Change",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Step 6: Understanding Image Layers",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Step 7: Clean up",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "Verify the containers are stopped and removed",
-            "file": "verify7.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["docker/prune"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "vnc-instance-ubuntu:2204"
   },
@@ -129,5 +13,249 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ibm/docker101/#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ibm/docker101/"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Adding Value with Custom Docker Images",
+      "description": "In this lab, we build on our knowledge from lab 1 where we used Docker commands to run containers. We will create a custom Docker Image built from a Dockerfile. Once we build the image, we will push it to a central registry where it can be pulled to be deployed on other environments. Also, we will briefly describe image layers, and how Docker incorporates 'copy-on-write' and the union file system to efficiently store images and run containers.",
+      "meta": {
+        "title": "Docker Image Creation | Python App Development",
+        "description": "Learn how to create a custom Docker image from a Dockerfile, push it to a registry, and deploy it on other environments. Explore Docker's efficient image storage and container management features.",
+        "keywords": "Docker, Docker Image, Dockerfile, Python, Flask, Web Development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Step 1: Create a Python App (without Using Docker)",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify if the flask app is running",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions carefully.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Step 2: Create and Build the Docker Image",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify if python-hello-world image is created",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions carefully.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/build", "docker/images"]
+          },
+          {
+            "title": "Step 3: Run the Docker Image",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify if python-hello-world container is running",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions carefully.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/logs", "docker/ls", "docker/run"]
+          },
+          {
+            "title": "Step 4: Push to a Central Registry",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/push"]
+          },
+          {
+            "title": "Step 5: Deploying a Change",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Step 6: Understanding Image Layers",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Step 7: Clean up",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "Verify the containers are stopped and removed",
+                "file": "verify7.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/prune"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用自定义Docker镜像创造价值",
+      "description": "在本实验中，我们基于实验1的知识展开，在实验1中我们使用Docker命令来运行容器。我们将从Dockerfile创建一个自定义Docker镜像。一旦构建了镜像，我们会将其推送到中央注册表，在那里它可以被拉取以部署到其他环境。此外，我们将简要描述镜像层，以及Docker如何结合“写时复制”和联合文件系统来高效存储镜像并运行容器。",
+      "meta": {
+        "title": "Docker镜像创建 | Python应用开发",
+        "description": "学习如何从Dockerfile创建自定义Docker镜像，将其推送到注册表并在其他环境中部署。探索Docker高效的镜像存储和容器管理功能。",
+        "keywords": "Docker、Docker镜像、Dockerfile、Python、Flask、网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "步骤1：创建一个Python应用程序（不使用Docker）",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证flask应用程序是否正在运行",
+                "file": "verify1.sh",
+                "hint": "请仔细按照说明操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "步骤2：创建并构建Docker镜像",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证是否创建了python-hello-world镜像",
+                "file": "verify2.sh",
+                "hint": "请仔细按照说明操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/build", "docker/images"]
+          },
+          {
+            "title": "步骤3：运行Docker镜像",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证python-hello-world容器是否正在运行",
+                "file": "verify3.sh",
+                "hint": "请仔细按照说明操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/logs", "docker/ls", "docker/run"]
+          },
+          {
+            "title": "步骤4：推送到中央注册表",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/push"]
+          },
+          {
+            "title": "步骤5：部署变更",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "步骤6：理解镜像层",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "步骤7：清理",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "验证容器已停止并已删除",
+                "file": "verify7.sh",
+                "hint": "请按照说明完成这些步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/prune"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

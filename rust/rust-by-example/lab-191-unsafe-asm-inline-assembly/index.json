@@ -1,54 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Rust Inline Assembly Usage",
-  "description": "In this lab, we will explore the usage of inline assembly in Rust using the asm! macro. We will cover the basic usage of inline assembly, inputs and outputs, late output operands, explicit register operands, clobbered registers, symbol operands and ABI clobbers, register template modifiers, memory address operands, labels, and options for optimizing the assembly code.",
-  "meta": {
-    "title": "Rust Inline Assembly | Programming Tutorials | Code Optimization",
-    "description": "Explore the usage of inline assembly in Rust using the asm! macro. Learn about inputs, outputs, late output operands, register operands, clobbered registers, and more to optimize your code.",
-    "keywords": "Rust, Inline Assembly, asm! macro, Code Optimization, Programming Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Inline assembly",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/type_casting",
-          "rust/unsafe_rust",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -57,5 +13,105 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Rust Inline Assembly Usage",
+      "description": "In this lab, we will explore the usage of inline assembly in Rust using the asm! macro. We will cover the basic usage of inline assembly, inputs and outputs, late output operands, explicit register operands, clobbered registers, symbol operands and ABI clobbers, register template modifiers, memory address operands, labels, and options for optimizing the assembly code.",
+      "meta": {
+        "title": "Rust Inline Assembly | Programming Tutorials | Code Optimization",
+        "description": "Explore the usage of inline assembly in Rust using the asm! macro. Learn about inputs, outputs, late output operands, register operands, clobbered registers, and more to optimize your code.",
+        "keywords": "Rust, Inline Assembly, asm! macro, Code Optimization, Programming Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Inline assembly",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/type_casting",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索 Rust 内联汇编的用法",
+      "description": "在本实验中，我们将使用 asm! 宏探索 Rust 中内联汇编的用法。我们将涵盖内联汇编的基本用法、输入和输出、延迟输出操作数、显式寄存器操作数、被破坏的寄存器、符号操作数和 ABI 破坏、寄存器模板修饰符、内存地址操作数、标签以及优化汇编代码的选项。",
+      "meta": {
+        "title": "Rust 内联汇编 | 编程教程 | 代码优化",
+        "description": "使用 asm! 宏探索 Rust 中内联汇编的用法。了解输入、输出、延迟输出操作数、寄存器操作数、被破坏的寄存器等，以优化你的代码。",
+        "keywords": "Rust, 内联汇编, asm! 宏, 代码优化, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "内联汇编",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/type_casting",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Functions in Go Programming",
-  "description": "In this lab, we will learn about functions in Go. We will see how to define functions, how to pass arguments to them, and how to return values from them.",
-  "meta": {
-    "title": "Go Programming | Functions Tutorial",
-    "description": "Learn about functions in Go programming language. Define functions, pass arguments, and return values. Comprehensive guide for beginners.",
-    "keywords": "Go programming, functions, programming tutorial, coding, software development"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Functions",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Function Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/functions"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "functions.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "functions.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Functions in Go Programming",
+      "description": "In this lab, we will learn about functions in Go. We will see how to define functions, how to pass arguments to them, and how to return values from them.",
+      "meta": {
+        "title": "Go Programming | Functions Tutorial",
+        "description": "Learn about functions in Go programming language. Define functions, pass arguments, and return values. Comprehensive guide for beginners.",
+        "keywords": "Go programming, functions, programming tutorial, coding, software development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Functions",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Function Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/functions"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 编程中的函数",
+      "description": "在本实验中，我们将学习 Go 语言中的函数。我们将了解如何定义函数、如何向函数传递参数以及如何从函数返回值。",
+      "meta": {
+        "title": "Go 编程 | 函数教程",
+        "description": "了解 Go 编程语言中的函数。定义函数、传递参数并返回值。面向初学者的全面指南。",
+        "keywords": "Go 编程、函数、编程教程、编码、软件开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 函数输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/functions"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

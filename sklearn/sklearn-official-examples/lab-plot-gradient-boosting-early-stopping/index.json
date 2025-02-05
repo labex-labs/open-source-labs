@@ -1,121 +1,10 @@
 {
   "type": "lab",
-  "title": "Early Stopping of Gradient Boosting",
-  "description": "Gradient boosting is an ensemble technique where several weak learners (regression trees) are combined to yield a powerful single model, in an iterative fashion. Early stopping support in Gradient Boosting enables us to find the least number of iterations which is sufficient to build a model that generalizes well to unseen data.",
-  "meta": {
-    "title": "Gradient Boosting | Machine Learning | Data Science",
-    "description": "Learn Gradient Boosting, a powerful ensemble technique for building robust machine learning models. Explore data, libraries, and tips for effective learning.",
-    "keywords": "gradient boosting, machine learning, data science, ensemble techniques, regression trees"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Required Libraries and Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      },
-      {
-        "title": "Prepare the Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Build and Train the Model without Early Stopping",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Build and Train the Model with Early Stopping",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compare Scores with and without Early Stopping",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compare Fit Times with and without Early Stopping",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compare Scores with and without Early Stopping",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-gradient-boosting-early-stopping.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -124,5 +13,230 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-gradient-boosting-early-stopping.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Early Stopping of Gradient Boosting",
+      "description": "Gradient boosting is an ensemble technique where several weak learners (regression trees) are combined to yield a powerful single model, in an iterative fashion. Early stopping support in Gradient Boosting enables us to find the least number of iterations which is sufficient to build a model that generalizes well to unseen data.",
+      "meta": {
+        "title": "Gradient Boosting | Machine Learning | Data Science",
+        "description": "Learn Gradient Boosting, a powerful ensemble technique for building robust machine learning models. Explore data, libraries, and tips for effective learning.",
+        "keywords": "gradient boosting, machine learning, data science, ensemble techniques, regression trees"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Required Libraries and Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "Prepare the Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Build and Train the Model without Early Stopping",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Build and Train the Model with Early Stopping",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compare Scores with and without Early Stopping",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compare Fit Times with and without Early Stopping",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compare Scores with and without Early Stopping",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "梯度提升的早期停止",
+      "description": "梯度提升是一种集成技术，其中多个弱学习器（回归树）以迭代方式组合在一起，形成一个强大的单一模型。梯度提升中的早期停止支持使我们能够找到最少的迭代次数，这些迭代次数足以构建一个能够很好地推广到未见数据的模型。",
+      "meta": {
+        "title": "梯度提升 | 机器学习 | 数据科学",
+        "description": "学习梯度提升，这是一种用于构建强大机器学习模型的强大集成技术。探索数据、库以及有效学习的技巧。",
+        "keywords": "梯度提升, 机器学习, 数据科学, 集成技术, 回归树"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载所需的库和数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "准备数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "构建并训练无早期停止的模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "使用早期停止构建并训练模型",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "比较有无早期停止时的分数",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "比较有无提前停止时的拟合时间",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "比较有和没有提前停止时的分数",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

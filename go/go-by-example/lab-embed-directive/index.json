@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Embedding Files in Go Binaries",
-  "description": "This lab aims to test your understanding of the embed package in Golang. The embed package allows programs to include arbitrary files and folders in the Go binary at build time.",
-  "meta": {
-    "title": "Golang Embed Package | Programming Tutorial",
-    "description": "Explore the Golang embed package and learn how to include files and folders in your Go binary at build time. Discover the power of the embed directive and the embed.FS type.",
-    "keywords": "Golang, Embed Package, Programming Tutorial, File Embedding, Compiler Directive, Virtual File System"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Embed Directive",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Embedding Go Code and Checking Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/embed_directive"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "embed-directive.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "embed-directive.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Embedding Files in Go Binaries",
+      "description": "This lab aims to test your understanding of the embed package in Golang. The embed package allows programs to include arbitrary files and folders in the Go binary at build time.",
+      "meta": {
+        "title": "Golang Embed Package | Programming Tutorial",
+        "description": "Explore the Golang embed package and learn how to include files and folders in your Go binary at build time. Discover the power of the embed directive and the embed.FS type.",
+        "keywords": "Golang, Embed Package, Programming Tutorial, File Embedding, Compiler Directive, Virtual File System"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Embed Directive",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Embedding Go Code and Checking Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/embed_directive"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Go二进制文件中嵌入文件",
+      "description": "本实验旨在测试你对Go语言中embed包的理解。embed包允许程序在构建时将任意文件和文件夹包含到Go二进制文件中。",
+      "meta": {
+        "title": "Go语言embed包 | 编程教程",
+        "description": "探索Go语言的embed包，学习如何在构建时将文件和文件夹包含到你的Go二进制文件中。发现嵌入指令和embed.FS类型的强大功能。",
+        "keywords": "Go语言, embed包, 编程教程, 文件嵌入, 编译器指令, 虚拟文件系统"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "嵌入指令",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证嵌入Go代码并检查输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/embed_directive"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "React useLocalStorage Hook",
-  "description": "In this lab, we will be exploring the useLocalStorage hook in React. The purpose of this lab is to help you understand how to create a stateful value that is persisted to localStorage and a function to update it. You will learn how to use the useState hook, try-catch block, and Storage.getItem() and Storage.setItem() methods to store and retrieve data from localStorage. By the end of this lab, you will have gained a better understanding of how to build React applications that utilize localStorage to store and persist data.",
-  "meta": {
-    "title": "Mastering React's useLocalStorage Hook",
-    "description": "Discover how to create a stateful value that persists in localStorage and learn to update it with the useLocalStorage hook in React.",
-    "keywords": "localstorage, uselocalstorage, react, state management, hooks"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React useLocalStorage Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/event_handling",
-          "react/hooks",
-          "react/jsx",
-          "react/use_state_reducer"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React useLocalStorage Hook",
+      "description": "In this lab, we will be exploring the useLocalStorage hook in React. The purpose of this lab is to help you understand how to create a stateful value that is persisted to localStorage and a function to update it. You will learn how to use the useState hook, try-catch block, and Storage.getItem() and Storage.setItem() methods to store and retrieve data from localStorage. By the end of this lab, you will have gained a better understanding of how to build React applications that utilize localStorage to store and persist data.",
+      "meta": {
+        "title": "Mastering React's useLocalStorage Hook",
+        "description": "Discover how to create a stateful value that persists in localStorage and learn to update it with the useLocalStorage hook in React.",
+        "keywords": "localstorage, uselocalstorage, react, state management, hooks"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useLocalStorage Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React useLocalStorage 钩子",
+      "description": "在本实验中，我们将探索 React 中的 useLocalStorage 钩子。本实验的目的是帮助你理解如何创建一个持久化到 localStorage 的有状态值以及一个更新它的函数。你将学习如何使用 useState 钩子、try-catch 块以及 Storage.getItem() 和 Storage.setItem() 方法来从 localStorage 存储和检索数据。在本实验结束时，你将更好地理解如何构建利用 localStorage 来存储和持久化数据的 React 应用程序。",
+      "meta": {
+        "title": "掌握 React 的 useLocalStorage 钩子",
+        "description": "探索如何创建一个在 localStorage 中持久化的有状态值，并学习使用 React 中的 useLocalStorage 钩子来更新它。",
+        "keywords": "localstorage, uselocalstorage, react, 状态管理, 钩子"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useLocalStorage 钩子",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

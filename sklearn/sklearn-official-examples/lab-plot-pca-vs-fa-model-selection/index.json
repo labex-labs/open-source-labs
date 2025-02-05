@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Plot Pca vs Fa Model Selection",
-  "description": "In this lab, we will explore two probabilistic models - Probabilistic PCA and Factor Analysis - and compare their effectiveness in model selection and covariance estimation. We will perform cross-validation on low rank data that is corrupted with homoscedastic or heteroscedastic noise. In addition, we will compare the model likelihood to the likelihoods obtained from shrinkage covariance estimators.",
-  "meta": {
-    "title": "Explore PCA and Factor Analysis for Model Selection",
-    "description": "Discover the effectiveness of Probabilistic PCA and Factor Analysis in model selection and covariance estimation on low rank data with noise.",
-    "keywords": "machine learning, pca, factor analysis, homoscedastic noise, model selection, scikit-learn, machine learning playground, covariance estimation, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create the Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fit the Models",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/covariance",
-          "sklearn/decomposition",
-          "sklearn/model_selection"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-pca-vs-fa-model-selection.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -69,5 +13,120 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-pca-vs-fa-model-selection.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Plot Pca vs Fa Model Selection",
+      "description": "In this lab, we will explore two probabilistic models - Probabilistic PCA and Factor Analysis - and compare their effectiveness in model selection and covariance estimation. We will perform cross-validation on low rank data that is corrupted with homoscedastic or heteroscedastic noise. In addition, we will compare the model likelihood to the likelihoods obtained from shrinkage covariance estimators.",
+      "meta": {
+        "title": "Explore PCA and Factor Analysis for Model Selection",
+        "description": "Discover the effectiveness of Probabilistic PCA and Factor Analysis in model selection and covariance estimation on low rank data with noise.",
+        "keywords": "machine learning, pca, factor analysis, homoscedastic noise, model selection, scikit-learn, machine learning playground, covariance estimation, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create the Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fit the Models",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/decomposition",
+              "sklearn/model_selection"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "绘制主成分分析与因子分析模型选择对比图",
+      "description": "在本实验中，我们将探索两种概率模型——概率主成分分析（Probabilistic PCA）和因子分析（Factor Analysis），并比较它们在模型选择和协方差估计方面的有效性。我们将对被同方差或异方差噪声破坏的低秩数据进行交叉验证。此外，我们将把模型似然与从收缩协方差估计器获得的似然进行比较。",
+      "meta": {
+        "title": "探索用于模型选择的主成分分析和因子分析",
+        "description": "了解概率主成分分析和因子分析在含噪声低秩数据的模型选择和协方差估计中的有效性。",
+        "keywords": "机器学习, 主成分分析, 因子分析, 同方差噪声, 模型选择,  scikit-learn, 机器学习平台, 协方差估计, scikit-learn平台"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "拟合模型",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/decomposition",
+              "sklearn/model_selection"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,91 +1,10 @@
 {
   "type": "lab",
-  "title": "Plotting Classification Probability",
-  "description": "This lab demonstrates how to plot the classification probability of different classifiers using Python Scikit-learn. We will use a 3 class dataset, and we classify it with a Support Vector classifier, L1 and L2 penalized logistic regression with either a One-Vs-Rest or multinomial setting, and Gaussian process classification.",
-  "meta": {
-    "title": "Plotting Classification Probability with Python Scikit-learn",
-    "description": "Learn how to plot the classification probability of different classifiers using Python Scikit-learn.",
-    "keywords": "support vector classifier, machine learning, python, logistic regression, classification probability, scikit learn, scikit-learn, machine learning playground, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import necessary libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/gaussian_process",
-          "sklearn/linear_model",
-          "sklearn/metrics",
-          "sklearn/svm"
-        ]
-      },
-      {
-        "title": "Load the dataset",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Define the classifiers",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize the classification probability",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-classification-probability.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -94,5 +13,170 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-classification-probability.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Plotting Classification Probability",
+      "description": "This lab demonstrates how to plot the classification probability of different classifiers using Python Scikit-learn. We will use a 3 class dataset, and we classify it with a Support Vector classifier, L1 and L2 penalized logistic regression with either a One-Vs-Rest or multinomial setting, and Gaussian process classification.",
+      "meta": {
+        "title": "Plotting Classification Probability with Python Scikit-learn",
+        "description": "Learn how to plot the classification probability of different classifiers using Python Scikit-learn.",
+        "keywords": "support vector classifier, machine learning, python, logistic regression, classification probability, scikit learn, scikit-learn, machine learning playground, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import necessary libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/gaussian_process",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "Load the dataset",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Define the classifiers",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize the classification probability",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "绘制分类概率",
+      "description": "本实验展示了如何使用Python的Scikit-learn绘制不同分类器的分类概率。我们将使用一个三类数据集，并使用支持向量分类器、L1和L2惩罚逻辑回归（采用一对多或多项式设置）以及高斯过程分类对其进行分类。",
+      "meta": {
+        "title": "使用Python Scikit-learn绘制分类概率",
+        "description": "学习如何使用Python Scikit-learn绘制不同分类器的分类概率。",
+        "keywords": "支持向量分类器, 机器学习, Python, 逻辑回归, 分类概率, Scikit learn, Scikit-learn, 机器学习游乐场, Scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/gaussian_process",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "加载数据集",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "定义分类器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化分类概率",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,59 +1,10 @@
 {
   "type": "lab",
-  "title": "JavaScript Event Introduction",
-  "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to events.",
-  "meta": {
-    "title": "JavaScript Events | Web Development Tutorial",
-    "description": "Discover the power of JavaScript events and how to create interactive web experiences. Learn to handle user interactions and enhance your web applications.",
-    "keywords": "JavaScript, events, web development, interactivity, user interactions, web applications"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Events",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "javascript/bom",
-          "javascript/closures",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/dom_select",
-          "javascript/event_handle",
-          "javascript/functions"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -62,5 +13,106 @@
     "name": "CC-BY-SA-2.5",
     "url": "https://github.com/mdn/content/blob/main/LICENSE.md",
     "repo": "https://github.com/mdn/content"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "JavaScript Event Introduction",
+      "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to events.",
+      "meta": {
+        "title": "JavaScript Events | Web Development Tutorial",
+        "description": "Discover the power of JavaScript events and how to create interactive web experiences. Learn to handle user interactions and enhance your web applications.",
+        "keywords": "JavaScript, events, web development, interactivity, user interactions, web applications"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Events",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/bom",
+              "javascript/closures",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/dom_select",
+              "javascript/event_handle",
+              "javascript/functions"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "JavaScript 事件介绍",
+      "description": "欢迎来到 JavaScript 文档！本实验将向你介绍事件。",
+      "meta": {
+        "title": "JavaScript 事件 | 网页开发教程",
+        "description": "探索 JavaScript 事件的强大功能以及如何创建交互式网页体验。学习处理用户交互并增强你的网页应用程序。",
+        "keywords": "JavaScript, 事件, 网页开发, 交互性, 用户交互, 网页应用程序"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "事件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1.sh",
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新 **Web 8080** 标签页以预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/bom",
+              "javascript/closures",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/dom_select",
+              "javascript/event_handle",
+              "javascript/functions"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

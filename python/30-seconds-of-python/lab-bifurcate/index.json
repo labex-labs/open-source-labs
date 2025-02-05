@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Split List by Filter in Python",
-  "description": "In Python, we can split a list into two groups based on a given filter. This can be done using a list comprehension and the zip() function. In this challenge, you will be asked to write a function that takes a list and a filter as input and returns two lists, one containing the elements that pass the filter and the other containing the elements that do not.",
-  "meta": {
-    "title": "Python List Bifurcation | Programming Tutorials",
-    "description": "Learn how to split a Python list into two groups based on a given filter using list comprehension and the zip() function.",
-    "keywords": "Python, list, bifurcation, programming, tutorials, list comprehension, zip"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Bifurcate List",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_bifurcate.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "bifurcate.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_bifurcate.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "bifurcate.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Split List by Filter in Python",
+      "description": "In Python, we can split a list into two groups based on a given filter. This can be done using a list comprehension and the zip() function. In this challenge, you will be asked to write a function that takes a list and a filter as input and returns two lists, one containing the elements that pass the filter and the other containing the elements that do not.",
+      "meta": {
+        "title": "Python List Bifurcation | Programming Tutorials",
+        "description": "Learn how to split a Python list into two groups based on a given filter using list comprehension and the zip() function.",
+        "keywords": "Python, list, bifurcation, programming, tutorials, list comprehension, zip"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Bifurcate List",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在 Python 中根据筛选条件拆分列表",
+      "description": "在 Python 中，我们可以根据给定的筛选条件将一个列表拆分为两组。这可以通过列表推导式和 zip() 函数来完成。在这个挑战中，你将被要求编写一个函数，该函数接受一个列表和一个筛选条件作为输入，并返回两个列表，一个包含通过筛选条件的元素，另一个包含未通过筛选条件的元素。",
+      "meta": {
+        "title": "Python 列表二分法 | 编程教程",
+        "description": "学习如何使用列表推导式和 zip() 函数根据给定的筛选条件将 Python 列表拆分为两组。",
+        "keywords": "Python, 列表, 二分法, 编程, 教程, 列表推导式, zip"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "对列表进行二分",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python 脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

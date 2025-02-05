@@ -1,109 +1,10 @@
 {
   "type": "lab",
-  "title": "SVM Tie Breaking",
-  "description": "This lab introduces SVM tie-breaking and its effect on decision boundary. In SVM, tie-breaking is the mechanism used to resolve the conflicts between the two or more classes when their distances are equal. It is not enabled by default when decision_function_shape='ovr' because it is costly. Therefore, this lab illustrates the effect of the break_ties parameter for a multiclass classification problem and decision_function_shape='ovr'.",
-  "meta": {
-    "title": "Exploring SVM Tie-Breaking in Multiclass Classification",
-    "description": "Learn how SVM tie-breaking affects decision boundaries in multiclass problems.",
-    "keywords": "machine learning, tie breaking, multiclass classification, decision boundary, scikit-learn, svm, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Required Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/svm"]
-      },
-      {
-        "title": "Create Sample Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Create SVM Model with and without Tie-Breaking",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Create Decision Boundary",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot Decision Boundary",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Show the Plot",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-svm-tie-breaking.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -112,5 +13,206 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-svm-tie-breaking.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "SVM Tie Breaking",
+      "description": "This lab introduces SVM tie-breaking and its effect on decision boundary. In SVM, tie-breaking is the mechanism used to resolve the conflicts between the two or more classes when their distances are equal. It is not enabled by default when decision_function_shape='ovr' because it is costly. Therefore, this lab illustrates the effect of the break_ties parameter for a multiclass classification problem and decision_function_shape='ovr'.",
+      "meta": {
+        "title": "Exploring SVM Tie-Breaking in Multiclass Classification",
+        "description": "Learn how SVM tie-breaking affects decision boundaries in multiclass problems.",
+        "keywords": "machine learning, tie breaking, multiclass classification, decision boundary, scikit-learn, svm, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Required Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/svm"]
+          },
+          {
+            "title": "Create Sample Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Create SVM Model with and without Tie-Breaking",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Create Decision Boundary",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot Decision Boundary",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Show the Plot",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "支持向量机平局决胜",
+      "description": "本实验介绍支持向量机平局决胜及其对决策边界的影响。在支持向量机中，平局决胜是用于在两个或多个类别的距离相等时解决冲突的机制。当decision_function_shape='ovr'时，默认不启用平局决胜，因为其成本较高。因此，本实验展示了break_ties参数在多类分类问题和decision_function_shape='ovr'时的效果。",
+      "meta": {
+        "title": "探索多类分类中的支持向量机平局决胜",
+        "description": "了解支持向量机平局决胜如何影响多类问题中的决策边界。",
+        "keywords": "机器学习, 平局决胜, 多类分类, 决策边界, 斯科ikit学习, 支持向量机, 斯科ikit学习游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/svm"]
+          },
+          {
+            "title": "创建示例数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "创建启用和平局决胜的支持向量机模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "创建决策边界",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制决策边界",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "显示图表",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

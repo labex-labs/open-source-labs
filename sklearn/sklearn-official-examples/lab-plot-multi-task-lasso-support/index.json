@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Joint Feature Selection with Multi-Task Lasso",
-  "description": "In this lab, we will explore how to perform joint feature selection using the multi-task Lasso algorithm. We will use scikit-learn, a popular Python machine learning library, to generate some sample data and fit models to it. We will then plot the results of the models to see how they compare.",
-  "meta": {
-    "title": "Joint Feature Selection | Multi-task Lasso | Python Machine Learning",
-    "description": "Explore joint feature selection using the multi-task Lasso algorithm in Python. Leverage scikit-learn to generate sample data and fit models.",
-    "keywords": "joint feature selection, multi-task lasso, python machine learning, scikit-learn, data generation"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fit Models",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      },
-      {
-        "title": "Plot Results",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-multi-task-lasso-support.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-multi-task-lasso-support.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Joint Feature Selection with Multi-Task Lasso",
+      "description": "In this lab, we will explore how to perform joint feature selection using the multi-task Lasso algorithm. We will use scikit-learn, a popular Python machine learning library, to generate some sample data and fit models to it. We will then plot the results of the models to see how they compare.",
+      "meta": {
+        "title": "Joint Feature Selection | Multi-task Lasso | Python Machine Learning",
+        "description": "Explore joint feature selection using the multi-task Lasso algorithm in Python. Leverage scikit-learn to generate sample data and fit models.",
+        "keywords": "joint feature selection, multi-task lasso, python machine learning, scikit-learn, data generation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fit Models",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "Plot Results",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用多任务套索进行联合特征选择",
+      "description": "在本实验中，我们将探索如何使用多任务套索算法进行联合特征选择。我们将使用流行的Python机器学习库scikit-learn来生成一些示例数据并对其进行模型拟合。然后，我们将绘制模型的结果，以查看它们之间的比较情况。",
+      "meta": {
+        "title": "联合特征选择 | 多任务套索 | Python机器学习",
+        "description": "探索在Python中使用多任务套索算法进行联合特征选择。利用scikit-learn生成示例数据并拟合模型。",
+        "keywords": "联合特征选择, 多任务套索, Python机器学习, scikit-learn, 数据生成"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "拟合模型",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

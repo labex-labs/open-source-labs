@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "React useClickOutside Hook",
-  "description": "In this lab, we will be learning how to use the useClickOutside hook in React to handle click events that occur outside of a specific component. This custom hook allows us to easily detect when a user clicks outside of a specific component and perform an action based on that event. By the end of the lab, you will have a better understanding of how to use this hook to create more interactive and user-friendly components in your React applications.",
-  "meta": {
-    "title": "Mastering the useClickOutside Hook in React",
-    "description": "Learn how to use the useClickOutside hook in React to handle click events outside of a specific component.",
-    "keywords": "click events, user experience, useclickoutside, react, custom hooks"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React useClickOutside Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/css_in_react",
-          "react/event_handling",
-          "react/hooks",
-          "react/jsx"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React useClickOutside Hook",
+      "description": "In this lab, we will be learning how to use the useClickOutside hook in React to handle click events that occur outside of a specific component. This custom hook allows us to easily detect when a user clicks outside of a specific component and perform an action based on that event. By the end of the lab, you will have a better understanding of how to use this hook to create more interactive and user-friendly components in your React applications.",
+      "meta": {
+        "title": "Mastering the useClickOutside Hook in React",
+        "description": "Learn how to use the useClickOutside hook in React to handle click events outside of a specific component.",
+        "keywords": "click events, user experience, useclickoutside, react, custom hooks"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useClickOutside Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/css_in_react",
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React 的 useClickOutside 钩子",
+      "description": "在本实验中，我们将学习如何在 React 中使用 useClickOutside 钩子来处理在特定组件外部发生的点击事件。这个自定义钩子使我们能够轻松检测用户何时在特定组件外部点击，并根据该事件执行一个操作。在本实验结束时，你将更好地理解如何使用这个钩子在你的 React 应用程序中创建更具交互性和用户友好性的组件。",
+      "meta": {
+        "title": "掌握 React 中的 useClickOutside 钩子",
+        "description": "学习如何在 React 中使用 useClickOutside 钩子来处理特定组件外部的点击事件。",
+        "keywords": "点击事件, 用户体验, useclickoutside, React, 自定义钩子"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React 的 useClickOutside 钩子",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/css_in_react",
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

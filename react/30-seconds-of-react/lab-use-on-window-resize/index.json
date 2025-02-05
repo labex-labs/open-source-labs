@@ -1,63 +1,10 @@
 {
   "type": "lab",
-  "title": "React useOnWindowResize Hook",
-  "description": "In this lab, we will learn how to create a custom React Hook called useOnWindowResize that will execute a callback whenever the window is resized. We will use the useRef() and useEffect() hooks to listen to the 'resize' event of the Window global object and clean up when the component unmounts. This Hook can be useful for creating responsive web applications that need to adjust to different screen sizes.",
-  "meta": {
-    "title": "Create a Custom React Hook for Window Resize Events",
-    "description": "Learn how to build a reusable React Hook that executes a callback function whenever the window is resized.",
-    "keywords": "window resize, custom hook, responsive design, react, event listener"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React useOnWindowResize Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["react/hooks", "react/jsx"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -66,5 +13,109 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React useOnWindowResize Hook",
+      "description": "In this lab, we will learn how to create a custom React Hook called useOnWindowResize that will execute a callback whenever the window is resized. We will use the useRef() and useEffect() hooks to listen to the 'resize' event of the Window global object and clean up when the component unmounts. This Hook can be useful for creating responsive web applications that need to adjust to different screen sizes.",
+      "meta": {
+        "title": "Create a Custom React Hook for Window Resize Events",
+        "description": "Learn how to build a reusable React Hook that executes a callback function whenever the window is resized.",
+        "keywords": "window resize, custom hook, responsive design, react, event listener"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useOnWindowResize Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/hooks", "react/jsx"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React useOnWindowResize Hook",
+      "description": "在本实验中，我们将学习如何创建一个名为 useOnWindowResize 的自定义 React Hook，它会在窗口大小改变时执行一个回调函数。我们将使用 useRef() 和 useEffect() Hook 来监听 Window 全局对象的'resize' 事件，并在组件卸载时进行清理。这个 Hook 对于创建需要适应不同屏幕尺寸的响应式 Web 应用程序很有用。",
+      "meta": {
+        "title": "创建用于窗口大小调整事件的自定义 React Hook",
+        "description": "学习如何构建一个可复用的 React Hook，它在窗口大小改变时执行回调函数。",
+        "keywords": "窗口大小调整, 自定义 Hook, 响应式设计, React, 事件监听器"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useOnWindowResize Hook",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证script.js修改的状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/hooks", "react/jsx"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,121 +1,10 @@
 {
   "type": "lab",
-  "title": "Plot Permutation Importance",
-  "description": "In machine learning, feature importance is a valuable tool for understanding which features have the most impact on the target variable. In this lab, we will compare two methods of calculating feature importance: impurity-based feature importance and permutation importance. We will use a random forest classifier on the Titanic dataset to illustrate the differences between the two methods.",
-  "meta": {
-    "title": "Discover the Power of Permutation Importance in Machine Learning",
-    "description": "Explore the differences between impurity-based and permutation importance in feature selection using a Random Forest Classifier on the Titanic dataset.",
-    "keywords": "machine learning, titanic dataset, random forest, impurity based, feature importance"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Data Loading and Feature Engineering",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Define and Train Random Forest Classifier",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Evaluate Model Accuracy",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Tree's Feature Importance from Mean Decrease in Impurity (MDI)",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Permutation Importances on Test Set",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Permutation Importances on Training Set",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Permutation Importances on Lower Capacity Model",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-permutation-importance.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -124,5 +13,230 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-permutation-importance.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Plot Permutation Importance",
+      "description": "In machine learning, feature importance is a valuable tool for understanding which features have the most impact on the target variable. In this lab, we will compare two methods of calculating feature importance: impurity-based feature importance and permutation importance. We will use a random forest classifier on the Titanic dataset to illustrate the differences between the two methods.",
+      "meta": {
+        "title": "Discover the Power of Permutation Importance in Machine Learning",
+        "description": "Explore the differences between impurity-based and permutation importance in feature selection using a Random Forest Classifier on the Titanic dataset.",
+        "keywords": "machine learning, titanic dataset, random forest, impurity based, feature importance"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Data Loading and Feature Engineering",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Define and Train Random Forest Classifier",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Evaluate Model Accuracy",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Tree's Feature Importance from Mean Decrease in Impurity (MDI)",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Permutation Importances on Test Set",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Permutation Importances on Training Set",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Permutation Importances on Lower Capacity Model",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "绘制排列重要性",
+      "description": "在机器学习中，特征重要性是理解哪些特征对目标变量影响最大的一个有价值的工具。在本实验中，我们将比较两种计算特征重要性的方法：基于杂质的特征重要性和排列重要性。我们将在泰坦尼克号数据集上使用随机森林分类器来说明这两种方法之间的差异。",
+      "meta": {
+        "title": "探索机器学习中排列重要性的力量",
+        "description": "使用泰坦尼克号数据集上的随机森林分类器，探索基于杂质的重要性和排列重要性在特征选择中的差异。",
+        "keywords": "机器学习, 泰坦尼克号数据集, 随机森林, 基于杂质的, 特征重要性"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据加载与特征工程",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "定义并训练随机森林分类器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "评估模型准确性",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "基于杂质平均减少量（MDI）的树的特征重要性",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "测试集上的排列重要性",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "训练集上的排列重要性",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "低容量模型上的排列重要性",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

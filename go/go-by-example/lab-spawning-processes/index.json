@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Spawning External Processes in Go",
-  "description": "In some cases, Go programs need to spawn non-Go processes. This lab aims to demonstrate how to spawn external processes in Go.",
-  "meta": {
-    "title": "Spawning External Processes in Go | Programming Tutorials",
-    "description": "Learn how to spawn non-Go processes and collect their output in your Go programs. Explore techniques for handling errors and executing commands with arguments.",
-    "keywords": "Go programming, process spawning, external processes, command execution, error handling, programming tutorials"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Spawning Processes",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Spawned Process Output Matches Command-Line",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/processes"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "spawning-processes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "spawning-processes.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Spawning External Processes in Go",
+      "description": "In some cases, Go programs need to spawn non-Go processes. This lab aims to demonstrate how to spawn external processes in Go.",
+      "meta": {
+        "title": "Spawning External Processes in Go | Programming Tutorials",
+        "description": "Learn how to spawn non-Go processes and collect their output in your Go programs. Explore techniques for handling errors and executing commands with arguments.",
+        "keywords": "Go programming, process spawning, external processes, command execution, error handling, programming tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Spawning Processes",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Spawned Process Output Matches Command-Line",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/processes"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Go中派生外部进程",
+      "description": "在某些情况下，Go程序需要派生非Go进程。本实验旨在演示如何在Go中派生外部进程。",
+      "meta": {
+        "title": "在Go中派生外部进程 | 编程教程",
+        "description": "学习如何在Go程序中派生非Go进程并收集其输出。探索处理错误和使用参数执行命令的技巧。",
+        "keywords": "Go编程, 进程派生, 外部进程, 命令执行, 错误处理, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "派生进程",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证派生进程的输出与命令行一致",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/processes"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,102 +1,10 @@
 {
   "type": "lab",
-  "title": "Univariate Feature Selection",
-  "description": "This lab demonstrates how to use univariate feature selection to improve classification accuracy on a noisy dataset. Support vector machine (SVM) is used to classify the dataset both before and after applying univariate feature selection. For each feature, we plot the p-values for the univariate feature selection and the corresponding weights of SVMs. with this, we will compare model accuracy and examine the impact of univariate feature selection on model weights.",
-  "meta": {
-    "title": "Univariate Feature Selection for Improved Classification",
-    "description": "Explore how to use univariate feature selection to enhance classification accuracy on noisy datasets using support vector machines.",
-    "keywords": "feature engineering, machine learning, classification, univariate feature selection, scikit-learn, svm, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Sample Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
-      },
-      {
-        "title": "Univariate Feature Selection",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/feature_selection"]
-      },
-      {
-        "title": "Plot Feature Univariate Score",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compare with SVMs",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/pipeline",
-          "sklearn/preprocessing",
-          "sklearn/svm"
-        ]
-      },
-      {
-        "title": "Plot Comparing Feature Selection",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-feature-selection.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -105,5 +13,200 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-feature-selection.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Univariate Feature Selection",
+      "description": "This lab demonstrates how to use univariate feature selection to improve classification accuracy on a noisy dataset. Support vector machine (SVM) is used to classify the dataset both before and after applying univariate feature selection. For each feature, we plot the p-values for the univariate feature selection and the corresponding weights of SVMs. with this, we will compare model accuracy and examine the impact of univariate feature selection on model weights.",
+      "meta": {
+        "title": "Univariate Feature Selection for Improved Classification",
+        "description": "Explore how to use univariate feature selection to enhance classification accuracy on noisy datasets using support vector machines.",
+        "keywords": "feature engineering, machine learning, classification, univariate feature selection, scikit-learn, svm, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Sample Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Univariate Feature Selection",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_selection"]
+          },
+          {
+            "title": "Plot Feature Univariate Score",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compare with SVMs",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/pipeline",
+              "sklearn/preprocessing",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "Plot Comparing Feature Selection",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "单变量特征选择",
+      "description": "本实验展示了如何使用单变量特征选择来提高在有噪声数据集上的分类准确率。在应用单变量特征选择之前和之后，均使用支持向量机（SVM）对数据集进行分类。对于每个特征，我们绘制单变量特征选择的p值以及SVM的相应权重。借此，我们将比较模型准确率，并研究单变量特征选择对模型权重的影响。",
+      "meta": {
+        "title": "用于改进分类的单变量特征选择",
+        "description": "探索如何使用单变量特征选择，借助支持向量机提高有噪声数据集上的分类准确率。",
+        "keywords": "特征工程, 机器学习, 分类, 单变量特征选择,  scikit-learn, 支持向量机, scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成样本数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "单变量特征选择",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_selection"]
+          },
+          {
+            "title": "绘制单变量特征得分",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "与支持向量机进行比较",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/pipeline",
+              "sklearn/preprocessing",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "绘制特征选择比较图",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

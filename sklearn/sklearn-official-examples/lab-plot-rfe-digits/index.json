@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Recursive Feature Elimination",
-  "description": "In this lab, we will learn how to use Recursive Feature Elimination (RFE) for feature selection. We will be using the Scikit-Learn library in Python to perform this task. Feature selection is an important step in machine learning to improve model performance by removing irrelevant or redundant features.",
-  "meta": {
-    "title": "Mastering Recursive Feature Elimination in Machine Learning",
-    "description": "Learn how to use Recursive Feature Elimination (RFE) for effective feature selection in your machine learning projects.",
-    "keywords": "machine learning, recursive feature elimination, python, feature selection, scikit learn, scikit-learn, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Dataset and Split the Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Create the RFE Object and Fit the Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/feature_selection", "sklearn/svm"]
-      },
-      {
-        "title": "Rank the Features",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize the Feature Rankings",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-rfe-digits.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-rfe-digits.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Recursive Feature Elimination",
+      "description": "In this lab, we will learn how to use Recursive Feature Elimination (RFE) for feature selection. We will be using the Scikit-Learn library in Python to perform this task. Feature selection is an important step in machine learning to improve model performance by removing irrelevant or redundant features.",
+      "meta": {
+        "title": "Mastering Recursive Feature Elimination in Machine Learning",
+        "description": "Learn how to use Recursive Feature Elimination (RFE) for effective feature selection in your machine learning projects.",
+        "keywords": "machine learning, recursive feature elimination, python, feature selection, scikit learn, scikit-learn, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Dataset and Split the Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Create the RFE Object and Fit the Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_selection", "sklearn/svm"]
+          },
+          {
+            "title": "Rank the Features",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize the Feature Rankings",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "递归特征消除",
+      "description": "在本实验中，我们将学习如何使用递归特征消除（RFE）进行特征选择。我们将使用 Python 中的 Scikit-Learn 库来执行此任务。特征选择是机器学习中的一个重要步骤，通过去除不相关或冗余的特征来提高模型性能。",
+      "meta": {
+        "title": "掌握机器学习中的递归特征消除",
+        "description": "了解如何在机器学习项目中使用递归特征消除（RFE）进行有效的特征选择。",
+        "keywords": "机器学习, 递归特征消除, Python, 特征选择, Scikit learn, scikit-learn, scikit-learn 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据集并分割数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "创建RFE对象并拟合数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_selection", "sklearn/svm"]
+          },
+          {
+            "title": "对特征进行排名",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化特征排名",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,0 +1,22 @@
+# 判断日期是否为周末
+
+编写一个函数 `is_weekend(d)`，该函数接受一个日期对象作为输入，如果给定日期是周末，则返回 `True`，否则返回 `False`。如果未提供参数，该函数应使用当前日期。
+
+要解决此问题，你可以按以下步骤操作：
+
+1. 使用 `datetime.datetime.weekday()` 方法获取星期几的整数值。
+2. 检查星期几是否大于 `4`。如果是，则返回 `True`，否则返回 `False`。
+
+```python
+from datetime import datetime
+
+def is_weekend(d = datetime.today()):
+  return d.weekday() > 4
+```
+
+```python
+from datetime import date
+
+is_weekend(date(2020, 10, 25)) # True
+is_weekend(date(2020, 10, 28)) # False
+```

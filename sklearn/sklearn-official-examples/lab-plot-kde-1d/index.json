@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Simple 1D Kernel Density Estimation",
-  "description": "Kernel Density Estimation is a statistical technique used to estimate the probability density function of a random variable. In this lab, we will use the scikit-learn Python library to demonstrate the principles of Kernel Density Estimation in one dimension.",
-  "meta": {
-    "title": "Kernel Density Estimation in 1D",
-    "description": "Explore the principles of Kernel Density Estimation in one dimension using the scikit-learn Python library.",
-    "keywords": "probability density function, machine learning, scikit learn, data visualization, 1d, kernel density estimation, scikit-learn, machine learning playground, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Plotting Histograms and Kernels",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/neighbors"]
-      },
-      {
-        "title": "Plotting Available Kernels",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plotting 1D Density Example",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-kde-1d.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-kde-1d.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Simple 1D Kernel Density Estimation",
+      "description": "Kernel Density Estimation is a statistical technique used to estimate the probability density function of a random variable. In this lab, we will use the scikit-learn Python library to demonstrate the principles of Kernel Density Estimation in one dimension.",
+      "meta": {
+        "title": "Kernel Density Estimation in 1D",
+        "description": "Explore the principles of Kernel Density Estimation in one dimension using the scikit-learn Python library.",
+        "keywords": "probability density function, machine learning, scikit learn, data visualization, 1d, kernel density estimation, scikit-learn, machine learning playground, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Plotting Histograms and Kernels",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/neighbors"]
+          },
+          {
+            "title": "Plotting Available Kernels",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plotting 1D Density Example",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "简单的一维核密度估计",
+      "description": "核密度估计是一种用于估计随机变量概率密度函数的统计技术。在本实验中，我们将使用 Python 的 scikit-learn 库来演示一维核密度估计的原理。",
+      "meta": {
+        "title": "一维核密度估计",
+        "description": "使用 scikit-learn Python 库探索一维核密度估计的原理。",
+        "keywords": "概率密度函数, 机器学习, scikit learn, 数据可视化, 一维, 核密度估计, scikit-learn, 机器学习游乐场, scikit-learn 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "绘制直方图和核函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/neighbors"]
+          },
+          {
+            "title": "绘制可用核函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制一维密度示例",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

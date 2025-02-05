@@ -1,47 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Module Visibility Exploration",
-  "description": "In this lab, we learn about the visibility of items in Rust modules, including the default private visibility, the use of the pub modifier to override visibility, and the different levels of visibility such as pub(in path), pub(self), pub(super), and pub(crate). We also explore nested modules and the restrictions on accessing private items within modules.",
-  "meta": {
-    "title": "Exploring Rust Module Visibility",
-    "description": "Learn about the visibility of items in Rust modules, including private, public, and different levels of visibility.",
-    "keywords": "rust playground, private, module, rust online compiler, rust online, rust tutor, rust commands, public, rust practice, visibility"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Visibility",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/type_casting"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -50,5 +13,91 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Module Visibility Exploration",
+      "description": "In this lab, we learn about the visibility of items in Rust modules, including the default private visibility, the use of the pub modifier to override visibility, and the different levels of visibility such as pub(in path), pub(self), pub(super), and pub(crate). We also explore nested modules and the restrictions on accessing private items within modules.",
+      "meta": {
+        "title": "Exploring Rust Module Visibility",
+        "description": "Learn about the visibility of items in Rust modules, including private, public, and different levels of visibility.",
+        "keywords": "rust playground, private, module, rust online compiler, rust online, rust tutor, rust commands, public, rust practice, visibility"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Visibility",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/type_casting"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索 Rust 模块的可见性",
+      "description": "在本实验中，我们学习 Rust 模块中项的可见性，包括默认的私有可见性、使用 pub 修饰符来覆盖可见性，以及不同级别的可见性，如 pub(in path)、pub(self)、pub(super) 和 pub(crate)。我们还将探讨嵌套模块以及模块内访问私有项的限制。",
+      "meta": {
+        "title": "探索 Rust 模块可见性",
+        "description": "了解 Rust 模块中项的可见性，包括私有、公共以及不同级别的可见性。",
+        "keywords": "Rust 在线编译器, Rust 在线, Rust 教程, Rust 命令, 公共, Rust 练习, 可见性, Rust 游乐场, 私有, 模块"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "可见性",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/type_casting"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

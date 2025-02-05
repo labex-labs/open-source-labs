@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Find Lost Files",
-  "description": "Git is a powerful version control system that allows developers to track changes to their codebase. However, sometimes files can become lost or accidentally deleted. In this lab, you will learn how to use Git to find lost files and commits.",
-  "meta": {
-    "title": "Recover Lost Files and Commits with Git",
-    "description": "Learn how to use Git to find and recover lost files and commits in your project repository.",
-    "keywords": "lost files, version control, file recovery, git labs, git, git playground, commit recovery"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Find Lost Files",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify to find lost files",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/fsck"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Find Lost Files",
+      "description": "Git is a powerful version control system that allows developers to track changes to their codebase. However, sometimes files can become lost or accidentally deleted. In this lab, you will learn how to use Git to find lost files and commits.",
+      "meta": {
+        "title": "Recover Lost Files and Commits with Git",
+        "description": "Learn how to use Git to find and recover lost files and commits in your project repository.",
+        "keywords": "lost files, version control, file recovery, git labs, git, git playground, commit recovery"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Find Lost Files",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify to find lost files",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/fsck"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "查找丢失的文件",
+      "description": "Git是一个强大的版本控制系统，它允许开发者跟踪其代码库的更改。然而，有时文件可能会丢失或意外删除。在本实验中，你将学习如何使用Git来查找丢失的文件和提交记录。",
+      "meta": {
+        "title": "使用Git恢复丢失的文件和提交记录",
+        "description": "学习如何使用Git在项目仓库中查找并恢复丢失的文件和提交记录。",
+        "keywords": "丢失的文件, 版本控制, 文件恢复, Git实验, Git, Git游乐场, 提交记录恢复"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查找丢失的文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证以查找丢失的文件",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/fsck"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,47 +1,10 @@
 {
   "type": "lab",
-  "title": "Documenting Rust Projects with Markdown",
-  "description": "In this lab, the primary way of documenting a Rust project is through annotating the source code with documentation comments, which are written in CommonMark Markdown specification and support code blocks in them. Rust takes care of correctness and these code blocks are compiled and used as documentation tests. These tests are automatically run when using the cargo test command. The motivation behind documentation tests is to serve as examples that exercise the functionality and allow using examples from the documentation as complete code snippets.",
-  "meta": {
-    "title": "Rust Documentation | Rust Programming | Documentation Testing",
-    "description": "Learn how to document Rust projects using annotation, Markdown, and documentation testing. Improve your Rust programming skills with comprehensive examples.",
-    "keywords": "Rust, Documentation, Rust Programming, Documentation Testing, Markdown, Code Examples"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Documentation testing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -50,5 +13,91 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Documenting Rust Projects with Markdown",
+      "description": "In this lab, the primary way of documenting a Rust project is through annotating the source code with documentation comments, which are written in CommonMark Markdown specification and support code blocks in them. Rust takes care of correctness and these code blocks are compiled and used as documentation tests. These tests are automatically run when using the cargo test command. The motivation behind documentation tests is to serve as examples that exercise the functionality and allow using examples from the documentation as complete code snippets.",
+      "meta": {
+        "title": "Rust Documentation | Rust Programming | Documentation Testing",
+        "description": "Learn how to document Rust projects using annotation, Markdown, and documentation testing. Improve your Rust programming skills with comprehensive examples.",
+        "keywords": "Rust, Documentation, Rust Programming, Documentation Testing, Markdown, Code Examples"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Documentation testing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Markdown 记录 Rust 项目",
+      "description": "在本实验中，记录 Rust 项目的主要方式是通过用文档注释来注释源代码，这些注释是用 CommonMark Markdown 规范编写的，并且支持其中的代码块。Rust 会确保正确性，并且这些代码块会被编译并用作文档测试。当使用 cargo test 命令时，这些测试会自动运行。文档测试背后的动机是作为示例来展示功能，并允许将文档中的示例用作完整的代码片段。",
+      "meta": {
+        "title": "Rust 文档 | Rust 编程 | 文档测试",
+        "description": "学习如何使用注释、Markdown 和文档测试来记录 Rust 项目。通过全面的示例提升你的 Rust 编程技能。",
+        "keywords": "Rust, 文档, Rust 编程, 文档测试, Markdown, 代码示例"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文档测试",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

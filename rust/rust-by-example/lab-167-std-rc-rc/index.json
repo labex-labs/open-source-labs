@@ -1,48 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Rust's Reference Counting Mechanism",
-  "description": "In this lab, we explore the usage of Rc (Reference Counting) in Rust which allows for managing ownership of a value by keeping track of the number of references.",
-  "meta": {
-    "title": "Rust Programming | Rc (Reference Counting) Usage",
-    "description": "Explore the usage of Rc (Reference Counting) in Rust, a powerful tool for managing ownership and multiple references to a value.",
-    "keywords": "Rust, Rc, Reference Counting, Programming, Ownership"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Rc",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -51,5 +13,93 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Rust's Reference Counting Mechanism",
+      "description": "In this lab, we explore the usage of Rc (Reference Counting) in Rust which allows for managing ownership of a value by keeping track of the number of references.",
+      "meta": {
+        "title": "Rust Programming | Rc (Reference Counting) Usage",
+        "description": "Explore the usage of Rc (Reference Counting) in Rust, a powerful tool for managing ownership and multiple references to a value.",
+        "keywords": "Rust, Rc, Reference Counting, Programming, Ownership"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Rc",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索 Rust 的引用计数机制",
+      "description": "在本实验中，我们探索 Rust 中 `Rc`（引用计数）的用法，它通过跟踪引用数量来管理值的所有权。",
+      "meta": {
+        "title": "Rust 编程 | `Rc`（引用计数）的用法",
+        "description": "探索 Rust 中 `Rc`（引用计数）的用法，这是一个用于管理值的所有权和多个引用的强大工具。",
+        "keywords": "Rust, `Rc`, 引用计数, 编程, 所有权"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Rc",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

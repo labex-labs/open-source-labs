@@ -1,63 +1,10 @@
 {
   "type": "lab",
-  "title": "React useOnGlobalEvent Hook",
-  "description": "In this lab, we will explore the useOnGlobalEvent hook in React. This hook allows us to listen to events that occur on the global object, such as the mousemove event on the window object. By using this hook, we can easily execute a callback function whenever a specific global event occurs.",
-  "meta": {
-    "title": "Exploring the useOnGlobalEvent Hook in React",
-    "description": "Learn how to use the useOnGlobalEvent hook in React to listen to global events and execute callback functions.",
-    "keywords": "useonglobalevent, event handling, react, web development, global events"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React useOnGlobalEvent Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["react/hooks", "react/jsx"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -66,5 +13,109 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React useOnGlobalEvent Hook",
+      "description": "In this lab, we will explore the useOnGlobalEvent hook in React. This hook allows us to listen to events that occur on the global object, such as the mousemove event on the window object. By using this hook, we can easily execute a callback function whenever a specific global event occurs.",
+      "meta": {
+        "title": "Exploring the useOnGlobalEvent Hook in React",
+        "description": "Learn how to use the useOnGlobalEvent hook in React to listen to global events and execute callback functions.",
+        "keywords": "useonglobalevent, event handling, react, web development, global events"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useOnGlobalEvent Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/hooks", "react/jsx"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React 的 useOnGlobalEvent 钩子",
+      "description": "在本实验中，我们将探索 React 中的 useOnGlobalEvent 钩子。这个钩子使我们能够监听在全局对象上发生的事件，比如 window 对象上的 mousemove 事件。通过使用这个钩子，我们可以在特定的全局事件发生时轻松地执行一个回调函数。",
+      "meta": {
+        "title": "探索 React 中的 useOnGlobalEvent 钩子",
+        "description": "了解如何在 React 中使用 useOnGlobalEvent 钩子来监听全局事件并执行回调函数。",
+        "keywords": "useonglobalevent, 事件处理, React, 网页开发, 全局事件"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React 的 useOnGlobalEvent 钩子",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改的状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/hooks", "react/jsx"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

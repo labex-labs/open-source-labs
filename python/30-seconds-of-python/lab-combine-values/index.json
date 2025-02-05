@@ -1,70 +1,10 @@
 {
   "type": "lab",
-  "title": "Combine Dictionary Values",
-  "description": "In this lab, you will learn how to combine the values of two or more dictionaries into a single dictionary using the `combine_values` function, which utilizes a `collections.defaultdict` to efficiently store and aggregate the values.",
-  "meta": {
-    "title": "Combine Dictionary Values in Python",
-    "description": "Learn how to combine the values of two or more dictionaries into a single dictionary in Python.",
-    "keywords": "python, combine, dictionary, data structure, merge"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Combine Dictionary Values",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Combine Values in Python",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_combine_values.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "combine_values.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -73,5 +13,123 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_combine_values.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "combine_values.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Combine Dictionary Values",
+      "description": "In this lab, you will learn how to combine the values of two or more dictionaries into a single dictionary using the `combine_values` function, which utilizes a `collections.defaultdict` to efficiently store and aggregate the values.",
+      "meta": {
+        "title": "Combine Dictionary Values in Python",
+        "description": "Learn how to combine the values of two or more dictionaries into a single dictionary in Python.",
+        "keywords": "python, combine, dictionary, data structure, merge"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Combine Dictionary Values",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Combine Values in Python",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "合并字典值",
+      "description": "在本实验中，你将学习如何使用 `combine_values` 函数将两个或多个字典的值合并到一个字典中，该函数利用 `collections.defaultdict` 来高效地存储和聚合这些值。",
+      "meta": {
+        "title": "在Python中合并字典值",
+        "description": "学习如何在Python中将两个或多个字典的值合并到一个字典中。",
+        "keywords": "Python, 合并, 字典, 数据结构, 合并"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "合并字典值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python中的合并值",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Remove Files from the Staging Area",
-  "description": "In Git, the staging area is where changes to files are prepared before they are committed to the repository. Sometimes, you may accidentally add files to the staging area that you don't want to commit. In this lab, you will learn how to remove files from the staging area using Git.",
-  "meta": {
-    "title": "Git Playground | Remove Files from Staging Area",
-    "description": "Learn how to remove accidentally added files from the Git staging area and prepare your commits effectively.",
-    "keywords": "Git, Git Staging Area, Remove Files, Git Playground, Version Control"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Remove Files from the Staging Area",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful removal",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/restore"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Remove Files from the Staging Area",
+      "description": "In Git, the staging area is where changes to files are prepared before they are committed to the repository. Sometimes, you may accidentally add files to the staging area that you don't want to commit. In this lab, you will learn how to remove files from the staging area using Git.",
+      "meta": {
+        "title": "Git Playground | Remove Files from Staging Area",
+        "description": "Learn how to remove accidentally added files from the Git staging area and prepare your commits effectively.",
+        "keywords": "Git, Git Staging Area, Remove Files, Git Playground, Version Control"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Remove Files from the Staging Area",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful removal",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/restore"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "从暂存区移除文件",
+      "description": "在Git中，暂存区是文件在提交到仓库之前准备更改的地方。有时，你可能会不小心将不想提交的文件添加到暂存区。在本实验中，你将学习如何使用Git从暂存区移除文件。",
+      "meta": {
+        "title": "Git实验场 | 从暂存区移除文件",
+        "description": "学习如何从Git暂存区移除意外添加的文件并有效准备提交内容。",
+        "keywords": "Git, Git暂存区, 移除文件, Git实验场, 版本控制"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从暂存区移除文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证移除是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/restore"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

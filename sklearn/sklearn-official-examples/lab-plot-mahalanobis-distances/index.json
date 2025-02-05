@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Robust Covariance Estimation and Mahalanobis Distances Relevance",
-  "description": "In this lab, we will explore the use of robust covariance estimation with Mahalanobis distances on Gaussian distributed data. Mahalanobis distance is a measure of the distance between a point and a distribution. It is defined as the distance between a point and the mean of the distribution, scaled by the inverse of the covariance matrix of the distribution. For Gaussian distributed data, the Mahalanobis distance can be used to compute the distance of an observation to the mode of the distribution. We will compare the performance of the Minimum Covariance Determinant (MCD) estimator, a robust estimator of covariance, with the standard covariance Maximum Likelihood Estimator (MLE) in calculating the Mahalanobis distances of a contaminated dataset.",
-  "meta": {
-    "title": "Robust Covariance Estimation | Mahalanobis Distance | Gaussian Data",
-    "description": "Explore robust covariance estimation using Mahalanobis distance on Gaussian distributed data, compare MCD and MLE estimators for contaminated datasets.",
-    "keywords": "Robust Covariance Estimation, Mahalanobis Distance, Gaussian Data, MCD Estimator, MLE Estimator"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fit MCD and MLE Covariance Estimators to Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/covariance"]
-      },
-      {
-        "title": "Plot Contours of Mahalanobis Distances",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compare MLE and MCD Mahalanobis Distances",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-mahalanobis-distances.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-mahalanobis-distances.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Robust Covariance Estimation and Mahalanobis Distances Relevance",
+      "description": "In this lab, we will explore the use of robust covariance estimation with Mahalanobis distances on Gaussian distributed data. Mahalanobis distance is a measure of the distance between a point and a distribution. It is defined as the distance between a point and the mean of the distribution, scaled by the inverse of the covariance matrix of the distribution. For Gaussian distributed data, the Mahalanobis distance can be used to compute the distance of an observation to the mode of the distribution. We will compare the performance of the Minimum Covariance Determinant (MCD) estimator, a robust estimator of covariance, with the standard covariance Maximum Likelihood Estimator (MLE) in calculating the Mahalanobis distances of a contaminated dataset.",
+      "meta": {
+        "title": "Robust Covariance Estimation | Mahalanobis Distance | Gaussian Data",
+        "description": "Explore robust covariance estimation using Mahalanobis distance on Gaussian distributed data, compare MCD and MLE estimators for contaminated datasets.",
+        "keywords": "Robust Covariance Estimation, Mahalanobis Distance, Gaussian Data, MCD Estimator, MLE Estimator"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fit MCD and MLE Covariance Estimators to Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/covariance"]
+          },
+          {
+            "title": "Plot Contours of Mahalanobis Distances",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compare MLE and MCD Mahalanobis Distances",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "稳健协方差估计与马氏距离的相关性",
+      "description": "在本实验中，我们将探索在高斯分布数据上使用马氏距离进行稳健协方差估计。马氏距离是衡量一个点与一个分布之间距离的指标。它被定义为一个点与分布均值之间的距离，并通过分布协方差矩阵的逆进行缩放。对于高斯分布的数据，马氏距离可用于计算一个观测值到分布众数的距离。我们将在计算受污染数据集的马氏距离时，比较协方差的稳健估计器——最小协方差行列式（MCD）估计器与标准协方差最大似然估计器（MLE）的性能。",
+      "meta": {
+        "title": "稳健协方差估计 | 马氏距离 | 高斯数据",
+        "description": "探索在高斯分布数据上使用马氏距离进行稳健协方差估计，比较受污染数据集的MCD和MLE估计器。",
+        "keywords": "稳健协方差估计, 马氏距离, 高斯数据, MCD估计器, MLE估计器"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "将MCD和MLE协方差估计器应用于数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/covariance"]
+          },
+          {
+            "title": "绘制马氏距离的等高线",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "比较MLE和MCD的马氏距离",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

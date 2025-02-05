@@ -1,112 +1,10 @@
 {
   "type": "lab",
-  "title": "Data Reshaping with Pandas",
-  "description": "In data analysis, it is common to encounter datasets that are not arranged in the way we want. Reshaping data refers to the process of changing how data is organized into rows and columns. In this lab, we will explore some of the key methods in Pandas for reshaping data including Pivot, Stack, Unstack, Melt, Cross tabulations, Tiling, Factorizing, and Exploding.",
-  "meta": {
-    "title": "Data Reshaping | Pandas Techniques",
-    "description": "Explore key Pandas methods for reshaping data, including Pivot, Stack, Unstack, Melt, and more. Optimize your data analysis workflows.",
-    "keywords": "data reshaping, pandas, data analysis, pivot, stack, unstack, melt, cross tabulations, tiling, factorizing, exploding"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Importing Necessary Libraries and Create DataFrame",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/change_data_types",
-          "pandas/merge_data",
-          "pandas/select_columns",
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_analysis",
-          "python/importing_modules",
-          "python/lists",
-          "python/math_random",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      },
-      {
-        "title": "Pivoting with Single Aggregations",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/pivot_tables",
-          "python/comments",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Pivoting with Multiple Aggregations",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/pivot_tables",
-          "pandas/select_columns",
-          "python/comments",
-          "python/lists",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Cross Tabulations",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["pandas/pivot_tables", "python/comments", "python/tuples"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "reshaping.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -115,5 +13,220 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
     "repo": "https://github.com/pandas-dev/pandas"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "reshaping.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Data Reshaping with Pandas",
+      "description": "In data analysis, it is common to encounter datasets that are not arranged in the way we want. Reshaping data refers to the process of changing how data is organized into rows and columns. In this lab, we will explore some of the key methods in Pandas for reshaping data including Pivot, Stack, Unstack, Melt, Cross tabulations, Tiling, Factorizing, and Exploding.",
+      "meta": {
+        "title": "Data Reshaping | Pandas Techniques",
+        "description": "Explore key Pandas methods for reshaping data, including Pivot, Stack, Unstack, Melt, and more. Optimize your data analysis workflows.",
+        "keywords": "data reshaping, pandas, data analysis, pivot, stack, unstack, melt, cross tabulations, tiling, factorizing, exploding"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importing Necessary Libraries and Create DataFrame",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/change_data_types",
+              "pandas/merge_data",
+              "pandas/select_columns",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/lists",
+              "python/math_random",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "Pivoting with Single Aggregations",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/pivot_tables",
+              "python/comments",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Pivoting with Multiple Aggregations",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/pivot_tables",
+              "pandas/select_columns",
+              "python/comments",
+              "python/lists",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Cross Tabulations",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/pivot_tables",
+              "python/comments",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Pandas 进行数据重塑",
+      "description": "在数据分析中，经常会遇到数据排列不符合我们需求的数据集。数据重塑指的是改变数据在行和列中的组织方式的过程。在本实验中，我们将探索 Pandas 中一些用于数据重塑的关键方法，包括透视（Pivot）、堆叠（Stack）、拆栈（Unstack）、熔化（Melt）、交叉制表、平铺（Tiling）、因式分解（Factorizing）和爆炸（Exploding）。",
+      "meta": {
+        "title": "数据重塑 | Pandas 技术",
+        "description": "探索 Pandas 中用于数据重塑的关键方法，包括透视、堆叠、拆栈、熔化等。优化你的数据分析工作流程。",
+        "keywords": "数据重塑, Pandas, 数据分析, 透视, 堆叠, 拆栈, 熔化, 交叉制表, 平铺, 因式分解, 爆炸"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库并创建数据框",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/change_data_types",
+              "pandas/merge_data",
+              "pandas/select_columns",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/lists",
+              "python/math_random",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "使用单一聚合进行透视",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/pivot_tables",
+              "python/comments",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "使用多个聚合进行透视",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/pivot_tables",
+              "pandas/select_columns",
+              "python/comments",
+              "python/lists",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "交叉制表",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/pivot_tables",
+              "python/comments",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

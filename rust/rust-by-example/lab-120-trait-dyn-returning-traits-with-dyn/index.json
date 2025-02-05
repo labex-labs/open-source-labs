@@ -1,52 +1,10 @@
 {
   "type": "lab",
-  "title": "Returning Traits with Dyn",
-  "description": "In this lab, we learn how to workaround the limitation of returning traits directly in Rust by using the Box<dyn Animal> type, which allows functions to return a reference to a heap-allocated object that implements the Animal trait.",
-  "meta": {
-    "title": "Returning Traits with Dyn in Rust",
-    "description": "Learn how to use the Box",
-    "dyn": "type to return trait objects in Rust functions.",
-    "keywords": "rust playground, rust tutor, rust online compiler, rust commands, tutorial, traits, dyn, rust online playground, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Returning Traits with dyn",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/floating_types",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -55,5 +13,100 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Returning Traits with Dyn",
+      "description": "In this lab, we learn how to workaround the limitation of returning traits directly in Rust by using the Box<dyn Animal> type, which allows functions to return a reference to a heap-allocated object that implements the Animal trait.",
+      "meta": {
+        "title": "Returning Traits with Dyn in Rust",
+        "description": "Learn how to use the Box",
+        "dyn": "type to return trait objects in Rust functions.",
+        "keywords": "rust playground, rust tutor, rust online compiler, rust commands, tutorial, traits, dyn, rust online playground, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Returning Traits with dyn",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Dyn 返回 trait",
+      "description": "在本实验中，我们学习如何通过使用 Box<dyn Animal> 类型来解决 Rust 中直接返回 trait 的限制，该类型允许函数返回对实现 Animal trait 的堆分配对象的引用。",
+      "meta": {
+        "title": "在 Rust 中使用 Dyn 返回 trait",
+        "description": "学习如何使用 Box",
+        "keywords": "rust 游乐场, rust 教程, rust 在线编译器, rust 命令, 教程, trait, dyn, rust 在线游乐场, rust 练习, rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用 dyn 返回 trait",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

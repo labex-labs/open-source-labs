@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Command-Line Argument Handling in Go",
-  "description": "The purpose of this lab is to practice working with command-line arguments in Golang.",
-  "meta": {
-    "title": "Command-Line Arguments in Golang | Programming Tutorials",
-    "description": "Learn how to work with command-line arguments in Golang programming language. Explore the basics of command-line argument processing and advanced techniques using flags.",
-    "keywords": "Golang, command-line arguments, programming tutorials, command-line processing, flags"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Command-line arguments",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Command Line Arguments Compilation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/command_line"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "command-line-arguments.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "command-line-arguments.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Command-Line Argument Handling in Go",
+      "description": "The purpose of this lab is to practice working with command-line arguments in Golang.",
+      "meta": {
+        "title": "Command-Line Arguments in Golang | Programming Tutorials",
+        "description": "Learn how to work with command-line arguments in Golang programming language. Explore the basics of command-line argument processing and advanced techniques using flags.",
+        "keywords": "Golang, command-line arguments, programming tutorials, command-line processing, flags"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Command-line arguments",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Command Line Arguments Compilation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/command_line"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 语言中的命令行参数处理",
+      "description": "本实验的目的是练习在 Go 语言中使用命令行参数。",
+      "meta": {
+        "title": "Go 语言中的命令行参数 | 编程教程",
+        "description": "学习如何在 Go 编程语言中使用命令行参数。探索命令行参数处理的基础知识以及使用标志的高级技术。",
+        "keywords": "Go 语言, 命令行参数, 编程教程, 命令行处理, 标志"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "命令行参数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证命令行参数编译",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/command_line"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

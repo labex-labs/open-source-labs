@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Model Selection: Choosing Estimators and Their Parameters",
-  "description": "In machine learning, model selection is the process of choosing the best model for a given dataset. It involves selecting the appropriate estimator and tuning its parameters to achieve optimal performance. This tutorial will guide you through the process of model selection in scikit-learn.",
-  "meta": {
-    "title": "Machine Learning | Model Selection | Scikit-Learn",
-    "description": "Learn how to perform model selection in machine learning using Scikit-Learn. Explore cross-validation techniques and score methods to find the best model for your dataset.",
-    "keywords": "machine learning, model selection, scikit-learn, cross-validation, score method"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Score and Cross-Validated Scores",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Cross-Validation Generators",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      },
-      {
-        "title": "Grid-Search",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      },
-      {
-        "title": "Cross-Validated Estimators",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "04-model-selection.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "04-model-selection.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Model Selection: Choosing Estimators and Their Parameters",
+      "description": "In machine learning, model selection is the process of choosing the best model for a given dataset. It involves selecting the appropriate estimator and tuning its parameters to achieve optimal performance. This tutorial will guide you through the process of model selection in scikit-learn.",
+      "meta": {
+        "title": "Machine Learning | Model Selection | Scikit-Learn",
+        "description": "Learn how to perform model selection in machine learning using Scikit-Learn. Explore cross-validation techniques and score methods to find the best model for your dataset.",
+        "keywords": "machine learning, model selection, scikit-learn, cross-validation, score method"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Score and Cross-Validated Scores",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Cross-Validation Generators",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "Grid-Search",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "Cross-Validated Estimators",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "模型选择：选择估计器及其参数",
+      "description": "在机器学习中，模型选择是为给定数据集选择最佳模型的过程。它涉及选择合适的估计器并调整其参数以实现最佳性能。本教程将指导你完成在scikit-learn中进行模型选择的过程。",
+      "meta": {
+        "title": "机器学习 | 模型选择 | Scikit-Learn",
+        "description": "学习如何使用Scikit-Learn在机器学习中执行模型选择。探索交叉验证技术和评分方法，为你的数据集找到最佳模型。",
+        "keywords": "机器学习, 模型选择, scikit-learn, 交叉验证, 评分方法"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "评分与交叉验证分数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "交叉验证生成器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "网格搜索",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "交叉验证估计器",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

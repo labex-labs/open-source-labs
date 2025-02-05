@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Shared Ownership with Rust Arc",
-  "description": "In this lab, we explore the usage of Arc (Atomically Reference Counted) in Rust, which is employed when shared ownership between threads is required.",
-  "meta": {
-    "title": "Shared Ownership with Rust Arc: Exploring Atomic Reference Counting",
-    "description": "Learn how to use Rust's Arc (Atomically Reference Counted) for shared ownership between threads.",
-    "keywords": "rust playground, multithreading, shared ownership, rust tutor, rust online compiler, arc, rust commands, atomic reference counting, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Arc",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/type_casting",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Shared Ownership with Rust Arc",
+      "description": "In this lab, we explore the usage of Arc (Atomically Reference Counted) in Rust, which is employed when shared ownership between threads is required.",
+      "meta": {
+        "title": "Shared Ownership with Rust Arc: Exploring Atomic Reference Counting",
+        "description": "Learn how to use Rust's Arc (Atomically Reference Counted) for shared ownership between threads.",
+        "keywords": "rust playground, multithreading, shared ownership, rust tutor, rust online compiler, arc, rust commands, atomic reference counting, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Arc",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Rust Arc实现共享所有权",
+      "description": "在本实验中，我们探索Rust中Arc（原子引用计数）的用法，当线程之间需要共享所有权时会用到它。",
+      "meta": {
+        "title": "使用Rust Arc实现共享所有权：探索原子引用计数",
+        "description": "学习如何使用Rust的Arc（原子引用计数）在线程之间实现共享所有权。",
+        "keywords": "Rust游乐场, 多线程, 共享所有权, Rust教程, Rust在线编译器, Arc, Rust命令, 原子引用计数, Rust实践, Rust在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Arc",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

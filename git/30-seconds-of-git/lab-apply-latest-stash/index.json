@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Apply the Latest Stash",
-  "description": "In Git, a stash is a way to save changes that are not yet ready to be committed. It allows you to temporarily save your work and switch to another branch or commit without losing any changes. When you're ready to continue working on your changes, you can apply the stash to your working directory. In this lab, you will learn how to apply the latest stash to your Git repository.",
-  "meta": {
-    "title": "Mastering Git Stash",
-    "description": "Learn how to effectively apply the latest stash in your Git repository and manage your code changes seamlessly.",
-    "keywords": "version control, git labs, workflow, stash, git, git playground, code management"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Apply the Latest Stash",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful application",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/stash"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Apply the Latest Stash",
+      "description": "In Git, a stash is a way to save changes that are not yet ready to be committed. It allows you to temporarily save your work and switch to another branch or commit without losing any changes. When you're ready to continue working on your changes, you can apply the stash to your working directory. In this lab, you will learn how to apply the latest stash to your Git repository.",
+      "meta": {
+        "title": "Mastering Git Stash",
+        "description": "Learn how to effectively apply the latest stash in your Git repository and manage your code changes seamlessly.",
+        "keywords": "version control, git labs, workflow, stash, git, git playground, code management"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Apply the Latest Stash",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful application",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/stash"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "应用最新贮藏",
+      "description": "在Git中，贮藏是一种保存尚未准备好提交的更改的方法。它允许你临时保存工作，然后切换到另一个分支或提交，而不会丢失任何更改。当你准备好继续处理更改时，可以将贮藏应用到工作目录。在本实验中，你将学习如何将最新的贮藏应用到你的Git仓库。",
+      "meta": {
+        "title": "掌握Git贮藏",
+        "description": "学习如何在你的Git仓库中有效地应用最新贮藏，并无缝管理你的代码更改。",
+        "keywords": "版本控制, Git实验室, 工作流程, 贮藏, Git, Git游乐场, 代码管理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "应用最新贮藏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证应用是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/stash"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

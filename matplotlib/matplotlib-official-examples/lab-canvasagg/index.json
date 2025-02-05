@@ -1,104 +1,10 @@
 {
   "type": "lab",
-  "title": "Using Matplotlib Agg Backend for Image Generation",
-  "description": "This lab will guide you through the process of using the agg backend directly to create images in Python Matplotlib. The agg backend is useful for web application developers who want full control over their code without using the pyplot interface to manage figures, figure closing, etc. In this lab, we will show you how to save the contents of the agg canvas to a file and how to extract them to a numpy array, which can in turn be passed off to Pillow.",
-  "meta": {
-    "title": "Python Matplotlib | Agg Backend | Image Creation",
-    "description": "Learn how to use the Agg backend in Python Matplotlib to create and save images, with full control over the code without using the pyplot interface.",
-    "keywords": "Python, Matplotlib, Agg Backend, Image Creation, Web Application Development"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create a Figure and Canvas",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/custom_backends",
-          "matplotlib/figures_axes",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      },
-      {
-        "title": "Add Plotting Data to the Figure",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
-      },
-      {
-        "title": "Save the Figure to a File",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/saving_figures"]
-      },
-      {
-        "title": "Extract the Renderer Buffer to a Numpy Array",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Save the Numpy Array to a Pillow Image",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "canvasagg.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -107,5 +13,196 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "canvasagg.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Using Matplotlib Agg Backend for Image Generation",
+      "description": "This lab will guide you through the process of using the agg backend directly to create images in Python Matplotlib. The agg backend is useful for web application developers who want full control over their code without using the pyplot interface to manage figures, figure closing, etc. In this lab, we will show you how to save the contents of the agg canvas to a file and how to extract them to a numpy array, which can in turn be passed off to Pillow.",
+      "meta": {
+        "title": "Python Matplotlib | Agg Backend | Image Creation",
+        "description": "Learn how to use the Agg backend in Python Matplotlib to create and save images, with full control over the code without using the pyplot interface.",
+        "keywords": "Python, Matplotlib, Agg Backend, Image Creation, Web Application Development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create a Figure and Canvas",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/custom_backends",
+              "matplotlib/figures_axes",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "Add Plotting Data to the Figure",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
+          },
+          {
+            "title": "Save the Figure to a File",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["matplotlib/saving_figures"]
+          },
+          {
+            "title": "Extract the Renderer Buffer to a Numpy Array",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Save the Numpy Array to a Pillow Image",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Matplotlib Agg 后端进行图像生成",
+      "description": "本实验将指导你直接使用 agg 后端在 Python 的 Matplotlib 中创建图像的过程。agg 后端对于那些希望在不使用 pyplot 接口来管理图形、关闭图形等情况下完全控制代码的 Web 应用程序开发者很有用。在本实验中，我们将向你展示如何将 agg 画布的内容保存到文件以及如何将其提取为 NumPy 数组，然后可以将该数组传递给 Pillow。",
+      "meta": {
+        "title": "Python Matplotlib | Agg 后端 | 图像创建",
+        "description": "学习如何在 Python Matplotlib 中使用 Agg 后端来创建和保存图像，在不使用 pyplot 接口的情况下完全控制代码。",
+        "keywords": "Python, Matplotlib, Agg 后端, 图像创建, Web 应用程序开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建一个图形和画布",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/custom_backends",
+              "matplotlib/figures_axes",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "向图形中添加绘图数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
+          },
+          {
+            "title": "将图形保存到文件",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["matplotlib/saving_figures"]
+          },
+          {
+            "title": "将渲染器缓冲区提取为NumPy数组",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "将NumPy数组保存为Pillow图像",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

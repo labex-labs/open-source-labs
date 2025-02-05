@@ -1,60 +1,10 @@
 {
   "type": "lab",
-  "title": "Number to Binary",
-  "description": "In this lab, you will learn how to convert decimal numbers to their binary representations using a Python function.",
-  "meta": {
-    "title": "Mastering Binary Conversion with Python",
-    "description": "This lab introduces the concept of binary numbers, a fundamental representation in computer science, and demonstrates how to convert a decimal number to its binary equivalent using a Python function.",
-    "keywords": "python, decimal, binary, programming, computer science"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Number to Binary",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_to_binary.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "to_binary.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -63,5 +13,103 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_to_binary.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "to_binary.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Number to Binary",
+      "description": "In this lab, you will learn how to convert decimal numbers to their binary representations using a Python function.",
+      "meta": {
+        "title": "Mastering Binary Conversion with Python",
+        "description": "This lab introduces the concept of binary numbers, a fundamental representation in computer science, and demonstrates how to convert a decimal number to its binary equivalent using a Python function.",
+        "keywords": "python, decimal, binary, programming, computer science"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Number to Binary",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "十进制数转换为二进制数",
+      "description": "在这个实验中，你将学习如何使用Python函数将十进制数转换为其二进制表示形式。",
+      "meta": {
+        "title": "用Python掌握二进制转换",
+        "description": "本实验介绍了二进制数的概念，这是计算机科学中的一种基本表示形式，并演示了如何使用Python函数将十进制数转换为其等效的二进制数。",
+        "keywords": "Python, 十进制, 二进制, 编程, 计算机科学"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "十进制数转换为二进制数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

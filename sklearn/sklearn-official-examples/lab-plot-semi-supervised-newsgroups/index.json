@@ -1,130 +1,10 @@
 {
   "type": "lab",
-  "title": "Semi-Supervised Text Classification",
-  "description": "In this lab, you will learn how to perform semi-supervised classification on a text dataset using scikit-learn. Semi-supervised learning is a type of machine learning where a model is trained on both labeled and unlabeled data. This lab will cover how to use Self-Training and LabelSpreading algorithms for semi-supervised text classification. We will be using the 20 newsgroups dataset to train and test our models.",
-  "meta": {
-    "title": "Semi-Supervised Text Classification Tutorial",
-    "description": "Learn how to perform semi-supervised text classification using scikit-learn on the 20 newsgroups dataset.",
-    "keywords": "machine learning, semi supervised learning, 20 newsgroups, scikit learn, text classification, scikit-learn, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Create the Pipeline for Supervised Learning",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/feature_extraction",
-          "sklearn/linear_model",
-          "sklearn/pipeline"
-        ]
-      },
-      {
-        "title": "Train and Evaluate the Supervised Model",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/metrics", "sklearn/model_selection"]
-      },
-      {
-        "title": "Create the Pipeline for Self-Training",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/semi_supervised"]
-      },
-      {
-        "title": "Train and Evaluate the Self-Training Model",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Create the Pipeline for LabelSpreading",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/preprocessing",
-          "sklearn/semi_supervised"
-        ]
-      },
-      {
-        "title": "Train and Evaluate the LabelSpreading Model",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-semi-supervised-newsgroups.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -133,5 +13,256 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-semi-supervised-newsgroups.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Semi-Supervised Text Classification",
+      "description": "In this lab, you will learn how to perform semi-supervised classification on a text dataset using scikit-learn. Semi-supervised learning is a type of machine learning where a model is trained on both labeled and unlabeled data. This lab will cover how to use Self-Training and LabelSpreading algorithms for semi-supervised text classification. We will be using the 20 newsgroups dataset to train and test our models.",
+      "meta": {
+        "title": "Semi-Supervised Text Classification Tutorial",
+        "description": "Learn how to perform semi-supervised text classification using scikit-learn on the 20 newsgroups dataset.",
+        "keywords": "machine learning, semi supervised learning, 20 newsgroups, scikit learn, text classification, scikit-learn, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Create the Pipeline for Supervised Learning",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_extraction",
+              "sklearn/linear_model",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "Train and Evaluate the Supervised Model",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/metrics",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Create the Pipeline for Self-Training",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/semi_supervised"]
+          },
+          {
+            "title": "Train and Evaluate the Self-Training Model",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Create the Pipeline for LabelSpreading",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/preprocessing",
+              "sklearn/semi_supervised"
+            ]
+          },
+          {
+            "title": "Train and Evaluate the LabelSpreading Model",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "半监督文本分类",
+      "description": "在本实验中，你将学习如何使用scikit-learn对文本数据集进行半监督分类。半监督学习是一种机器学习类型，其中模型在有标签和无标签数据上进行训练。本实验将涵盖如何使用自训练和标签传播算法进行半监督文本分类。我们将使用20个新闻组数据集来训练和测试我们的模型。",
+      "meta": {
+        "title": "半监督文本分类教程",
+        "description": "学习如何使用scikit-learn在20个新闻组数据集上进行半监督文本分类。",
+        "keywords": "机器学习, 半监督学习, 20个新闻组, scikit learn, 文本分类, scikit-learn, scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "创建监督学习管道",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_extraction",
+              "sklearn/linear_model",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "训练并评估监督模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/metrics",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "创建自训练管道",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/semi_supervised"]
+          },
+          {
+            "title": "训练并评估自训练模型",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "创建标签传播管道",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/preprocessing",
+              "sklearn/semi_supervised"
+            ]
+          },
+          {
+            "title": "训练并评估标签传播模型",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

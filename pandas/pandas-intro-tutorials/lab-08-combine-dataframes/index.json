@@ -1,142 +1,10 @@
 {
   "type": "lab",
-  "title": "Combining Data Tables in Pandas",
-  "description": "In this lab, we will work with air quality data to explore how to combine multiple tables using Python's Pandas library. We will be using the concat and merge functions to perform these operations. This lab will help you understand how to concatenate and merge data frames effectively.",
-  "meta": {
-    "title": "Python Pandas | Air Quality Data Analysis | Concatenate and Merge Data Frames",
-    "description": "Explore air quality data using Python's Pandas library, learn to combine multiple tables with concat and merge functions, and enhance your data analysis skills.",
-    "keywords": "Python, Pandas, Data Analysis, Air Quality, Concatenate, Merge, Data Frames"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Required Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/data_analysis",
-          "python/importing_modules",
-          "python/numerical_computing"
-        ]
-      },
-      {
-        "title": "Load the Datasets",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/read_csv",
-          "pandas/select_columns",
-          "python/booleans",
-          "python/comments",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Concatenating the Datasets",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/comments", "python/lists", "python/tuples"]
-      },
-      {
-        "title": "Merge Tables Using a Common Identifier",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/merge_data",
-          "pandas/read_csv",
-          "python/comments",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Add Parameters' Full Description and Name",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/merge_data",
-          "pandas/read_csv",
-          "python/comments",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "08-combine-dataframes.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "data/air_quality_no2_long.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "data/air_quality_pm25_long.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "data/air_quality_parameters.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "data/air_quality_stations.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -145,5 +13,252 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
     "repo": "https://github.com/pandas-dev/pandas"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "08-combine-dataframes.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "data/air_quality_no2_long.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "data/air_quality_pm25_long.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "data/air_quality_parameters.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "data/air_quality_stations.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Combining Data Tables in Pandas",
+      "description": "In this lab, we will work with air quality data to explore how to combine multiple tables using Python's Pandas library. We will be using the concat and merge functions to perform these operations. This lab will help you understand how to concatenate and merge data frames effectively.",
+      "meta": {
+        "title": "Python Pandas | Air Quality Data Analysis | Concatenate and Merge Data Frames",
+        "description": "Explore air quality data using Python's Pandas library, learn to combine multiple tables with concat and merge functions, and enhance your data analysis skills.",
+        "keywords": "Python, Pandas, Data Analysis, Air Quality, Concatenate, Merge, Data Frames"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Required Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "Load the Datasets",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/read_csv",
+              "pandas/select_columns",
+              "python/booleans",
+              "python/comments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Concatenating the Datasets",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/comments", "python/lists", "python/tuples"]
+          },
+          {
+            "title": "Merge Tables Using a Common Identifier",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/merge_data",
+              "pandas/read_csv",
+              "python/comments",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Add Parameters' Full Description and Name",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/merge_data",
+              "pandas/read_csv",
+              "python/comments",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Pandas中合并数据表",
+      "description": "在这个实验中，我们将处理空气质量数据，探索如何使用Python的Pandas库合并多个表格。我们将使用concat和merge函数来执行这些操作。这个实验将帮助你理解如何有效地拼接和合并数据框。",
+      "meta": {
+        "title": "Python Pandas | 空气质量数据分析 | 拼接和合并数据框",
+        "description": "使用Python的Pandas库探索空气质量数据，学习使用concat和merge函数合并多个表格，提升你的数据分析技能。",
+        "keywords": "Python, Pandas, 数据分析, 空气质量, 拼接, 合并, 数据框"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "加载数据集",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/read_csv",
+              "pandas/select_columns",
+              "python/booleans",
+              "python/comments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "拼接数据集",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/comments", "python/lists", "python/tuples"]
+          },
+          {
+            "title": "使用公共标识符合并表格",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/merge_data",
+              "pandas/read_csv",
+              "python/comments",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "添加参数的完整描述和名称",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/merge_data",
+              "pandas/read_csv",
+              "python/comments",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

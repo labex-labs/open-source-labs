@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Concise Switch Statement Explanation",
-  "description": "In this lab, you will learn how to use the `switch` statement in Go to handle different types of input and execute corresponding code blocks.",
-  "meta": {
-    "title": "Go Programming | Switch Statements | Conditional Logic",
-    "description": "Learn how to use the powerful Go switch statement to simplify your code and handle different conditions effectively.",
-    "keywords": "Go programming, switch statements, conditional logic, control flow, programming tutorials"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Switch",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Outputs Correct String",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/switch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "switch.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "switch.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Concise Switch Statement Explanation",
+      "description": "In this lab, you will learn how to use the `switch` statement in Go to handle different types of input and execute corresponding code blocks.",
+      "meta": {
+        "title": "Go Programming | Switch Statements | Conditional Logic",
+        "description": "Learn how to use the powerful Go switch statement to simplify your code and handle different conditions effectively.",
+        "keywords": "Go programming, switch statements, conditional logic, control flow, programming tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Switch",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Outputs Correct String",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/switch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "简洁的 `switch` 语句解释",
+      "description": "在这个实验中，你将学习如何在 Go 语言中使用 `switch` 语句来处理不同类型的输入并执行相应的代码块。",
+      "meta": {
+        "title": "Go 编程 | `switch` 语句 | 条件逻辑",
+        "description": "学习如何使用强大的 Go `switch` 语句简化代码并有效处理不同条件。",
+        "keywords": "Go 编程, `switch` 语句, 条件逻辑, 控制流, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "`switch` 语句",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序输出正确的字符串",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/switch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

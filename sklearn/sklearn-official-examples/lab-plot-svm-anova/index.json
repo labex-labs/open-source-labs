@@ -1,79 +1,10 @@
 {
   "type": "lab",
-  "title": "Feature Selection for SVC on Iris Dataset",
-  "description": "This lab demonstrates how to perform univariate feature selection before running a support vector classifier (SVC) to improve the classification scores. We will use the iris dataset (4 features) and add 36 non-informative features. We will find that our model achieves the best performance when we select around 10% of features.",
-  "meta": {
-    "title": "Univariate Feature Selection | Support Vector Classifier | Iris Dataset",
-    "description": "Learn how to perform univariate feature selection and use a support vector classifier to improve classification scores on the iris dataset with added non-informative features.",
-    "keywords": "univariate feature selection, support vector classifier, iris dataset, machine learning, data science"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Create the Pipeline",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/feature_selection",
-          "sklearn/pipeline",
-          "sklearn/preprocessing",
-          "sklearn/svm"
-        ]
-      },
-      {
-        "title": "Plot the Cross-Validation Score",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-svm-anova.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -82,5 +13,146 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-svm-anova.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Feature Selection for SVC on Iris Dataset",
+      "description": "This lab demonstrates how to perform univariate feature selection before running a support vector classifier (SVC) to improve the classification scores. We will use the iris dataset (4 features) and add 36 non-informative features. We will find that our model achieves the best performance when we select around 10% of features.",
+      "meta": {
+        "title": "Univariate Feature Selection | Support Vector Classifier | Iris Dataset",
+        "description": "Learn how to perform univariate feature selection and use a support vector classifier to improve classification scores on the iris dataset with added non-informative features.",
+        "keywords": "univariate feature selection, support vector classifier, iris dataset, machine learning, data science"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Create the Pipeline",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_selection",
+              "sklearn/pipeline",
+              "sklearn/preprocessing",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "Plot the Cross-Validation Score",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "鸢尾花数据集上支持向量分类器的特征选择",
+      "description": "本实验展示了如何在运行支持向量分类器（SVC）之前执行单变量特征选择，以提高分类分数。我们将使用鸢尾花数据集（4个特征）并添加36个无信息特征。我们会发现，当我们选择大约10%的特征时，我们的模型取得最佳性能。",
+      "meta": {
+        "title": "单变量特征选择 | 支持向量分类器 | 鸢尾花数据集",
+        "description": "学习如何在添加了无信息特征的鸢尾花数据集上执行单变量特征选择，并使用支持向量分类器来提高分类分数。",
+        "keywords": "单变量特征选择, 支持向量分类器, 鸢尾花数据集, 机器学习, 数据科学"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "创建管道",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_selection",
+              "sklearn/pipeline",
+              "sklearn/preprocessing",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "绘制交叉验证分数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

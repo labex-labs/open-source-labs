@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Change the Remote URL",
-  "description": "In Git, a remote is a version of your repository that is hosted on a server or another computer. When you clone a repository, Git automatically creates a remote called origin that points to the original repository. However, sometimes you may need to change the URL of the remote repository. This lab will test your ability to change the remote URL using Git commands.",
-  "meta": {
-    "title": "Change the Remote URL in Git",
-    "description": "Learn how to change the remote URL of a Git repository using commands.",
-    "keywords": "remote, repository, git labs, change, git, url, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Change the Remote URL",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that a new URL is displayed",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/remote"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Change the Remote URL",
+      "description": "In Git, a remote is a version of your repository that is hosted on a server or another computer. When you clone a repository, Git automatically creates a remote called origin that points to the original repository. However, sometimes you may need to change the URL of the remote repository. This lab will test your ability to change the remote URL using Git commands.",
+      "meta": {
+        "title": "Change the Remote URL in Git",
+        "description": "Learn how to change the remote URL of a Git repository using commands.",
+        "keywords": "remote, repository, git labs, change, git, url, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Change the Remote URL",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that a new URL is displayed",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/remote"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "更改远程仓库URL",
+      "description": "在Git中，远程仓库是指托管在服务器或另一台计算机上的仓库版本。当你克隆一个仓库时，Git会自动创建一个名为origin的远程仓库，它指向原始仓库。然而，有时你可能需要更改远程仓库的URL。本实验将测试你使用Git命令更改远程URL的能力。",
+      "meta": {
+        "title": "在Git中更改远程仓库URL",
+        "description": "学习如何使用命令更改Git仓库的远程URL。",
+        "keywords": "远程仓库, 仓库, Git实验, 更改, Git, URL, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "更改远程仓库URL",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否显示新的URL",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/remote"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

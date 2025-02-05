@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Multilabel Dataset Generation with Scikit-Learn",
-  "description": "In this lab, we will learn how to generate a multilabel dataset using the make_multilabel_classification function of Scikit-Learn library. The function generates random samples of multilabel data, where each sample has counts of two features, which are differently distributed in each of two classes.",
-  "meta": {
-    "title": "Multilabel Dataset Generation | Scikit-Learn Tutorial",
-    "description": "Learn how to generate a multilabel dataset using Scikit-Learn's make_multilabel_classification function. Explore random samples of multilabel data with different feature distributions.",
-    "keywords": "multilabel dataset, Scikit-Learn, make_multilabel_classification, random samples, feature distributions"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Required Libraries and Define Constants",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Define the Plot Function",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot the Dataset",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Print the Class and Feature Probabilities",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-random-multilabel-dataset.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-random-multilabel-dataset.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Multilabel Dataset Generation with Scikit-Learn",
+      "description": "In this lab, we will learn how to generate a multilabel dataset using the make_multilabel_classification function of Scikit-Learn library. The function generates random samples of multilabel data, where each sample has counts of two features, which are differently distributed in each of two classes.",
+      "meta": {
+        "title": "Multilabel Dataset Generation | Scikit-Learn Tutorial",
+        "description": "Learn how to generate a multilabel dataset using Scikit-Learn's make_multilabel_classification function. Explore random samples of multilabel data with different feature distributions.",
+        "keywords": "multilabel dataset, Scikit-Learn, make_multilabel_classification, random samples, feature distributions"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Required Libraries and Define Constants",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Define the Plot Function",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot the Dataset",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Print the Class and Feature Probabilities",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Scikit-Learn 生成多标签数据集",
+      "description": "在本实验中，我们将学习如何使用 Scikit-Learn 库的 make_multilabel_classification 函数生成多标签数据集。该函数生成多标签数据的随机样本，其中每个样本具有两个特征的计数，这两个特征在两个类别中的每一个中分布不同。",
+      "meta": {
+        "title": "多标签数据集生成 | Scikit-Learn 教程",
+        "description": "学习如何使用 Scikit-Learn 的 make_multilabel_classification 函数生成多标签数据集。探索具有不同特征分布的多标签数据随机样本。",
+        "keywords": "多标签数据集, Scikit-Learn, make_multilabel_classification, 随机样本, 特征分布"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需库并定义常量",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "定义绘图函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制数据集",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "打印类别和特征概率",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

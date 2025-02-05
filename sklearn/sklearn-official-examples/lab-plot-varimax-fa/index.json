@@ -1,90 +1,10 @@
 {
   "type": "lab",
-  "title": "Revealing Iris Dataset Structure via Factor Analysis",
-  "description": "Factor Analysis is a statistical method used to uncover patterns in data. It is often used to identify latent variables that explain correlations among observed variables. In this lab, we will use the Iris dataset to illustrate how Factor Analysis can be used to reveal the underlying structure of the data.",
-  "meta": {
-    "title": "Factor Analysis | Iris Dataset | Data Exploration",
-    "description": "Discover the underlying structure of the Iris dataset using Factor Analysis, a powerful statistical technique for uncovering hidden patterns in data.",
-    "keywords": "Factor Analysis, Iris Dataset, Data Exploration, Data Science, Machine Learning"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Iris dataset and plot covariance of features",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/decomposition",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Run Factor Analysis with Varimax Rotation",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Analyze the Results",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Interpret the Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-varimax-fa.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -93,5 +13,168 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-varimax-fa.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Revealing Iris Dataset Structure via Factor Analysis",
+      "description": "Factor Analysis is a statistical method used to uncover patterns in data. It is often used to identify latent variables that explain correlations among observed variables. In this lab, we will use the Iris dataset to illustrate how Factor Analysis can be used to reveal the underlying structure of the data.",
+      "meta": {
+        "title": "Factor Analysis | Iris Dataset | Data Exploration",
+        "description": "Discover the underlying structure of the Iris dataset using Factor Analysis, a powerful statistical technique for uncovering hidden patterns in data.",
+        "keywords": "Factor Analysis, Iris Dataset, Data Exploration, Data Science, Machine Learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Iris dataset and plot covariance of features",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Run Factor Analysis with Varimax Rotation",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Analyze the Results",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Interpret the Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "通过因子分析揭示鸢尾花数据集结构",
+      "description": "因子分析是一种用于揭示数据中模式的统计方法。它常用于识别解释观测变量之间相关性的潜在变量。在本实验中，我们将使用鸢尾花数据集来说明如何使用因子分析来揭示数据的潜在结构。",
+      "meta": {
+        "title": "因子分析 | 鸢尾花数据集 | 数据探索",
+        "description": "使用因子分析这一强大的统计技术来发现鸢尾花数据集的潜在结构，该技术可揭示数据中隐藏的模式。",
+        "keywords": "因子分析, 鸢尾花数据集, 数据探索, 数据科学, 机器学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载鸢尾花数据集并绘制特征协方差",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "运行具有方差最大化旋转的因子分析",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "分析结果",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "解读结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

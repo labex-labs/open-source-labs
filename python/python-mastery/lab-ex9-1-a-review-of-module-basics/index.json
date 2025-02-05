@@ -1,144 +1,10 @@
 {
   "type": "lab",
-  "title": "A Review of Module Basics",
-  "description": "In this lab, you will learn about creating, importing, and using modules in Python.",
-  "meta": {
-    "title": "A Review of Module Basics in Python",
-    "description": "Explore the fundamentals of modules in Python, including creating, importing, and using modules effectively.",
-    "keywords": "software development, python, coding, modules, programming"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Preparation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Functions, Prints, and Classes",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/scope",
-          "python/tuples"
-        ],
-        "solutions": ["simplemod.py"]
-      },
-      {
-        "title": "Module Loading and System Path",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python Import History",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/importing_modules",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      },
-      {
-        "title": "Repeated Module Loading",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Python History Commands Usage",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/importing_modules",
-          "python/lists",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      },
-      {
-        "title": "from module import",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Python History Imports",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/using_packages"
-        ]
-      },
-      {
-        "title": "Broken reload()",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "Verify Import and Use of simplemod Module",
-            "file": "verify5.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "simplemod.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -147,5 +13,276 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "simplemod.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "A Review of Module Basics",
+      "description": "In this lab, you will learn about creating, importing, and using modules in Python.",
+      "meta": {
+        "title": "A Review of Module Basics in Python",
+        "description": "Explore the fundamentals of modules in Python, including creating, importing, and using modules effectively.",
+        "keywords": "software development, python, coding, modules, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Preparation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Functions, Prints, and Classes",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/scope",
+              "python/tuples"
+            ],
+            "solutions": ["simplemod.py"]
+          },
+          {
+            "title": "Module Loading and System Path",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python Import History",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "Repeated Module Loading",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Python History Commands Usage",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/lists",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "from module import",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Python History Imports",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "Broken reload()",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "Verify Import and Use of simplemod Module",
+                "file": "verify5.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "模块基础回顾",
+      "description": "在本实验中，你将学习如何在Python中创建、导入和使用模块。",
+      "meta": {
+        "title": "Python中的模块基础回顾",
+        "description": "探索Python中模块的基础知识，包括有效地创建、导入和使用模块。",
+        "keywords": "软件开发, Python, 编码, 模块, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "准备工作",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证函数、打印语句和类的存在",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/scope",
+              "python/tuples"
+            ],
+            "solutions": ["simplemod.py"]
+          },
+          {
+            "title": "模块加载与系统路径",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python导入历史记录",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "重复模块加载",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python历史命令的使用情况",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/lists",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "从模块导入",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证Python历史导入记录",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "损坏的reload()",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证simplemod模块的导入和使用",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

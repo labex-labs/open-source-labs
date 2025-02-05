@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "Check for Duplicates in a List",
-  "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to check if a list contains duplicate values. In this challenge, you will write a function that checks if a list has any duplicates.",
-  "meta": {
-    "title": "Python List Duplicate Checker | Programming Tutorials",
-    "description": "Discover how to check for duplicates in Python lists with a simple and efficient function. Enhance your programming skills with this informative tutorial.",
-    "keywords": "python, list, duplicate, check, programming, tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Check for Duplicates in a List",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Checks for Duplicates",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/function_definition",
-          "python/lists",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_has_duplicates.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "has_duplicates.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_has_duplicates.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "has_duplicates.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Check for Duplicates in a List",
+      "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to check if a list contains duplicate values. In this challenge, you will write a function that checks if a list has any duplicates.",
+      "meta": {
+        "title": "Python List Duplicate Checker | Programming Tutorials",
+        "description": "Discover how to check for duplicates in Python lists with a simple and efficient function. Enhance your programming skills with this informative tutorial.",
+        "keywords": "python, list, duplicate, check, programming, tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Check for Duplicates in a List",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Checks for Duplicates",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查列表中的重复项",
+      "description": "在Python中，列表是一个有序且可变的项目集合。有时，我们需要检查列表中是否包含重复值。在这个挑战中，你将编写一个函数来检查列表中是否有任何重复项。",
+      "meta": {
+        "title": "Python列表重复项检查器 | 编程教程",
+        "description": "通过一个简单高效的函数探索如何检查Python列表中的重复项。通过这个内容丰富的教程提升你的编程技能。",
+        "keywords": "Python, 列表, 重复项, 检查, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查列表中的重复项",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python脚本是否检查重复项",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

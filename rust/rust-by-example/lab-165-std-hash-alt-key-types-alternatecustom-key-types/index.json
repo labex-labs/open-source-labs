@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Alternate/Custom Key Types",
-  "description": "In this lab, we explore the use of alternate/custom key types in Rust's HashMap, which can include types that implement the Eq and Hash traits such as bool, int, uint, String, and &str. Additionally, we can implement these traits for custom types by using the #[derive(PartialEq, Eq, Hash)] attribute, allowing them to be used as keys in a HashMap.",
-  "meta": {
-    "title": "Exploring Alternate and Custom Key Types in Rust's HashMap",
-    "description": "Learn how to use different data types, including custom structs, as keys in Rust's HashMap for building flexible and efficient data structures.",
-    "keywords": "data structures, rust playground, rust online playground, rust tutor, rust online compiler, custom keys, rust commands, rust practice, hashmap, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Alternate/custom key types",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Alternate/Custom Key Types",
+      "description": "In this lab, we explore the use of alternate/custom key types in Rust's HashMap, which can include types that implement the Eq and Hash traits such as bool, int, uint, String, and &str. Additionally, we can implement these traits for custom types by using the #[derive(PartialEq, Eq, Hash)] attribute, allowing them to be used as keys in a HashMap.",
+      "meta": {
+        "title": "Exploring Alternate and Custom Key Types in Rust's HashMap",
+        "description": "Learn how to use different data types, including custom structs, as keys in Rust's HashMap for building flexible and efficient data structures.",
+        "keywords": "data structures, rust playground, rust online playground, rust tutor, rust online compiler, custom keys, rust commands, rust practice, hashmap, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Alternate/custom key types",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "替代/自定义键类型",
+      "description": "在本实验中，我们探索在 Rust 的 HashMap 中使用替代/自定义键类型，这些类型可以包括实现 Eq 和 Hash 特性的类型，如 bool、int、uint、String 和 &str。此外，我们可以通过使用 #[derive(PartialEq, Eq, Hash)] 属性为自定义类型实现这些特性，从而允许它们在 HashMap 中用作键。",
+      "meta": {
+        "title": "探索 Rust 的 HashMap 中的替代和自定义键类型",
+        "description": "了解如何在 Rust 的 HashMap 中使用不同的数据类型（包括自定义结构体）作为键，以构建灵活高效的数据结构。",
+        "keywords": "数据结构, Rust 游乐场, Rust 在线游乐场, Rust 教程, Rust 在线编译器, 自定义键, Rust 命令, Rust 练习, 哈希映射, Rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "替代/自定义键类型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

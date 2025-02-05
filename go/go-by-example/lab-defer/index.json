@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Deferred Function Execution in Go",
-  "description": "The defer statement is used to delay the execution of a function until the surrounding function returns. It is often used to ensure that some cleanup is performed after a function completes, regardless of the path taken to get there.",
-  "meta": {
-    "title": "Defer in Go Programming | Cleanup Execution",
-    "description": "Learn how to use the 'defer' statement in Go programming to ensure cleanup tasks are performed after a function completes, regardless of the execution path.",
-    "keywords": "Go programming, defer statement, cleanup, file management, error handling"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Defer",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify File Closed After Writing",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/defer"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "defer.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "defer.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Deferred Function Execution in Go",
+      "description": "The defer statement is used to delay the execution of a function until the surrounding function returns. It is often used to ensure that some cleanup is performed after a function completes, regardless of the path taken to get there.",
+      "meta": {
+        "title": "Defer in Go Programming | Cleanup Execution",
+        "description": "Learn how to use the 'defer' statement in Go programming to ensure cleanup tasks are performed after a function completes, regardless of the execution path.",
+        "keywords": "Go programming, defer statement, cleanup, file management, error handling"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Defer",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify File Closed After Writing",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/defer"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 语言中的延迟函数执行",
+      "description": "`defer` 语句用于延迟函数的执行，直到周围的函数返回。它通常用于确保在函数完成后执行一些清理操作，无论到达那里所采取的路径如何。",
+      "meta": {
+        "title": "Go 编程中的 `defer` | 清理执行",
+        "description": "了解如何在 Go 编程中使用 `defer` 语句，以确保在函数完成后执行清理任务，无论执行路径如何。",
+        "keywords": "Go 编程, `defer` 语句, 清理, 文件管理, 错误处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "延迟执行",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证写入后文件是否关闭",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/defer"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

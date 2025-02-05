@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Synchronizing Goroutines with Channels",
-  "description": "This lab aims to test your knowledge of using channels to synchronize execution across goroutines.",
-  "meta": {
-    "title": "Channel Synchronization in Go | Concurrency Concepts",
-    "description": "Learn how to use channels to synchronize execution across goroutines in Go programming language. Explore the concepts of concurrency and parallelism.",
-    "keywords": "Go, Golang, Channels, Concurrency, Parallelism, Synchronization, Goroutines"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Channel Synchronization",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Channel Synchronization",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/channels"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "channel-synchronization.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "channel-synchronization.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Synchronizing Goroutines with Channels",
+      "description": "This lab aims to test your knowledge of using channels to synchronize execution across goroutines.",
+      "meta": {
+        "title": "Channel Synchronization in Go | Concurrency Concepts",
+        "description": "Learn how to use channels to synchronize execution across goroutines in Go programming language. Explore the concepts of concurrency and parallelism.",
+        "keywords": "Go, Golang, Channels, Concurrency, Parallelism, Synchronization, Goroutines"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Channel Synchronization",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Channel Synchronization",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用通道同步 Goroutine",
+      "description": "本实验旨在测试你对使用通道在多个 Goroutine 之间同步执行的知识。",
+      "meta": {
+        "title": "Go 语言中的通道同步 | 并发概念",
+        "description": "学习如何在 Go 编程语言中使用通道在多个 Goroutine 之间同步执行。探索并发和并行的概念。",
+        "keywords": "Go, Golang, 通道, 并发, 并行, 同步, Goroutine"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "通道同步",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 通道同步",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

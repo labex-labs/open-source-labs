@@ -1,178 +1,10 @@
 {
   "type": "lab",
-  "title": "Make a Custom Container",
-  "description": "In this lab, you will explore memory allocation behavior of lists and dicts and create a custom container.",
-  "meta": {
-    "title": "Mastering Memory Allocation: Optimizing Lists and Dictionaries",
-    "description": "Explore the memory allocation behavior of Python lists and dictionaries, and learn how to create a custom container for efficient data storage.",
-    "keywords": "dictionaries, lists, python, custom container, memory allocation"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "List growth",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python History for sys, getsizeof, and append",
-            "file": "verify1.sh",
-            "hint": "Please use the 'getsizeof()' function as instructed in step 1.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/importing_modules",
-          "python/lists",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      },
-      {
-        "title": "Dictionary/Class Growth",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python History Bracket Usage",
-            "file": "verify2.sh",
-            "hint": "Please run the python code in step 2.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/dictionaries",
-          "python/lists",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      },
-      {
-        "title": "Changing Your Orientation (to Columns)",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Includes CSV, Open, Append and Traces Memory",
-            "file": "verify3.sh",
-            "hint": "Please add the code from step 3 to the 'readrides.py' file and check the memory usage.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Making a Custom Container - The Great Fake Out",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Collections and Length Usage",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions in step 4 to complete the custom container.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["readrides.py"]
-      },
-      {
-        "title": "Challenge",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "Verify Python History Entries",
-            "file": "verify5.sh",
-            "hint": "Please run the python code in step 5.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/dictionaries",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "cta.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "readrides.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "ctabus.csv.zip",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -181,5 +13,334 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "cta.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "readrides.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "ctabus.csv.zip",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Make a Custom Container",
+      "description": "In this lab, you will explore memory allocation behavior of lists and dicts and create a custom container.",
+      "meta": {
+        "title": "Mastering Memory Allocation: Optimizing Lists and Dictionaries",
+        "description": "Explore the memory allocation behavior of Python lists and dictionaries, and learn how to create a custom container for efficient data storage.",
+        "keywords": "dictionaries, lists, python, custom container, memory allocation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "List growth",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python History for sys, getsizeof, and append",
+                "file": "verify1.sh",
+                "hint": "Please use the 'getsizeof()' function as instructed in step 1.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/importing_modules",
+              "python/lists",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "Dictionary/Class Growth",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python History Bracket Usage",
+                "file": "verify2.sh",
+                "hint": "Please run the python code in step 2.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/dictionaries",
+              "python/lists",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "Changing Your Orientation (to Columns)",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Includes CSV, Open, Append and Traces Memory",
+                "file": "verify3.sh",
+                "hint": "Please add the code from step 3 to the 'readrides.py' file and check the memory usage.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Making a Custom Container - The Great Fake Out",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Collections and Length Usage",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions in step 4 to complete the custom container.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["readrides.py"]
+          },
+          {
+            "title": "Challenge",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "Verify Python History Entries",
+                "file": "verify5.sh",
+                "hint": "Please run the python code in step 5.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/dictionaries",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "创建一个自定义容器",
+      "description": "在本实验中，你将探索列表和字典的内存分配行为，并创建一个自定义容器。",
+      "meta": {
+        "title": "掌握内存分配：优化列表和字典",
+        "description": "探索Python列表和字典的内存分配行为，学习如何创建一个自定义容器以实现高效的数据存储。",
+        "keywords": "字典, 列表, Python, 自定义容器, 内存分配"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列表增长",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证sys、getsizeof和append的Python历史记录",
+                "file": "verify1.sh",
+                "hint": "请按照步骤1中的说明使用'getsizeof()'函数。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/importing_modules",
+              "python/lists",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "字典/类的增长",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中的括号用法",
+                "file": "verify2.sh",
+                "hint": "请运行步骤2中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/dictionaries",
+              "python/lists",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "更改方向（为列方向）",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python脚本包含CSV、Open、Append并追踪内存",
+                "file": "verify3.sh",
+                "hint": "请将步骤3中的代码添加到'readrides.py'文件中并检查内存使用情况。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "创建一个自定义容器 - 巧妙的伪装",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证collections和长度的使用",
+                "file": "verify4.sh",
+                "hint": "请按照步骤4中的说明完成自定义容器。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["readrides.py"]
+          },
+          {
+            "title": "挑战",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录条目",
+                "file": "verify5.sh",
+                "hint": "请运行步骤5中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/dictionaries",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

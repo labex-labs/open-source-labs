@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Sum of powers",
-  "description": "In this challenge, you are required to write a Python function that calculates the sum of the powers of all the numbers from start to end (both inclusive).",
-  "meta": {
-    "title": "Mastering the Sum of Powers in Python",
-    "description": "Discover a powerful Python function to calculate the sum of powers for any range of numbers.",
-    "keywords": "sum of powers, coding challenge, math, python, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Sum of powers Challenge",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Sum of Powers",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/default_arguments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_sum_of_powers.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "sum_of_powers.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_sum_of_powers.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "sum_of_powers.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Sum of powers",
+      "description": "In this challenge, you are required to write a Python function that calculates the sum of the powers of all the numbers from start to end (both inclusive).",
+      "meta": {
+        "title": "Mastering the Sum of Powers in Python",
+        "description": "Discover a powerful Python function to calculate the sum of powers for any range of numbers.",
+        "keywords": "sum of powers, coding challenge, math, python, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Sum of powers Challenge",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Sum of Powers",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "幂之和",
+      "description": "在这个挑战中，你需要编写一个Python函数，计算从start到end（包括两端）的所有数字的幂之和。",
+      "meta": {
+        "title": "掌握Python中的幂之和计算",
+        "description": "探索一个强大的Python函数，用于计算任意数字范围内的幂之和。",
+        "keywords": "幂之和, 编码挑战, 数学, Python, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "幂之和挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证幂之和",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

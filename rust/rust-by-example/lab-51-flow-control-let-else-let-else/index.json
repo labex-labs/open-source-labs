@@ -1,53 +1,10 @@
 {
   "type": "lab",
-  "title": "Concise Rust Pattern Matching with Let-Else",
-  "description": "In this lab, the use of let-else in Rust is demonstrated, where a refutable pattern can match and bind variables in the surrounding scope, or else diverge when the pattern doesn't match by using statements like break, return, or panic!. This construct allows for concise and readable code when dealing with pattern matching and error handling scenarios, eliminating the need for repeating code blocks or using outer let statements.",
-  "meta": {
-    "title": "Rust Programming | Pattern Matching | Error Handling",
-    "description": "Explore the use of let-else in Rust, where refutable patterns can match and bind variables or diverge when the pattern doesn't match, enabling concise and readable code for pattern matching and error handling scenarios.",
-    "keywords": "Rust, Programming, Pattern Matching, Error Handling, let-else"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "let-else",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/panic_usage",
-          "rust/shadowing",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -56,5 +13,103 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Concise Rust Pattern Matching with Let-Else",
+      "description": "In this lab, the use of let-else in Rust is demonstrated, where a refutable pattern can match and bind variables in the surrounding scope, or else diverge when the pattern doesn't match by using statements like break, return, or panic!. This construct allows for concise and readable code when dealing with pattern matching and error handling scenarios, eliminating the need for repeating code blocks or using outer let statements.",
+      "meta": {
+        "title": "Rust Programming | Pattern Matching | Error Handling",
+        "description": "Explore the use of let-else in Rust, where refutable patterns can match and bind variables or diverge when the pattern doesn't match, enabling concise and readable code for pattern matching and error handling scenarios.",
+        "keywords": "Rust, Programming, Pattern Matching, Error Handling, let-else"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "let-else",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/panic_usage",
+              "rust/shadowing",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Rust 的 let-else 实现简洁的模式匹配",
+      "description": "在本实验中，将演示 Rust 中 let-else 的用法。其中，可反驳模式能够匹配并绑定周围作用域中的变量，若模式不匹配，则可通过使用 break、return 或 panic! 等语句来使程序发散。在处理模式匹配和错误处理场景时，这种结构能让代码简洁且易读，无需重复代码块或使用外部 let 语句。",
+      "meta": {
+        "title": "Rust 编程 | 模式匹配 | 错误处理",
+        "description": "探索 Rust 中 let-else 的用法，其中可反驳模式能够匹配并绑定变量，或者在模式不匹配时使程序发散，从而为模式匹配和错误处理场景提供简洁易读的代码。",
+        "keywords": "Rust, 编程, 模式匹配, 错误处理, let-else"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "let-else",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/panic_usage",
+              "rust/shadowing",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

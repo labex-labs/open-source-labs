@@ -1,62 +1,10 @@
 {
   "type": "lab",
-  "title": "Conditional Rendering in React",
-  "description": "Welcome to the React documentation! This lab will give you an introduction to conditional rendering.",
-  "meta": {
-    "title": "React Conditional Rendering | Programming Tutorials",
-    "description": "Discover the power of conditional rendering in React. Learn how to use JavaScript syntax like if statements, && operators, and ternary operators to conditionally render JSX in your React applications.",
-    "keywords": "React, Conditional Rendering, JavaScript, JSX, Programming Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Conditional Rendering",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of App.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/components_props",
-          "react/conditional_render",
-          "react/jsx"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "demo.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "open_network": true
@@ -66,5 +14,112 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/facebook/react/blob/main/LICENSE",
     "repo": "https://react.dev/learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "demo.zip",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Conditional Rendering in React",
+      "description": "Welcome to the React documentation! This lab will give you an introduction to conditional rendering.",
+      "meta": {
+        "title": "React Conditional Rendering | Programming Tutorials",
+        "description": "Discover the power of conditional rendering in React. Learn how to use JavaScript syntax like if statements, && operators, and ternary operators to conditionally render JSX in your React applications.",
+        "keywords": "React, Conditional Rendering, JavaScript, JSX, Programming Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Conditional Rendering",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of App.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/components_props",
+              "react/conditional_render",
+              "react/jsx"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React 中的条件渲染",
+      "description": "欢迎来到 React 文档！本实验将向你介绍条件渲染。",
+      "meta": {
+        "title": "React 条件渲染 | 编程教程",
+        "description": "探索 React 中条件渲染的强大功能。学习如何使用 if 语句、&& 运算符和三元运算符等 JavaScript 语法在 React 应用程序中有条件地渲染 JSX。",
+        "keywords": "React, 条件渲染, JavaScript, JSX, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "条件渲染",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 在端口 8080 上运行项目。然后，你可以刷新 **Web 8080** 标签页以预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 App.js 修改的状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/components_props",
+              "react/conditional_render",
+              "react/jsx"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

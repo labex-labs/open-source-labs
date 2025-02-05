@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "Power Set Generation in Python",
-  "description": "In mathematics, the power set of a set is the set of all subsets of the set, including the empty set and the set itself. In Python, we can create a function that returns the powerset of a given iterable.",
-  "meta": {
-    "title": "Python Powerset | Itertools Combinations",
-    "description": "Learn how to create a Python function that generates the powerset of a given iterable using itertools combinations.",
-    "keywords": "python, powerset, itertools, combinations, programming, algorithms"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Powerset Challenge",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify PowerSet Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_powerset.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "powerset.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_powerset.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "powerset.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Power Set Generation in Python",
+      "description": "In mathematics, the power set of a set is the set of all subsets of the set, including the empty set and the set itself. In Python, we can create a function that returns the powerset of a given iterable.",
+      "meta": {
+        "title": "Python Powerset | Itertools Combinations",
+        "description": "Learn how to create a Python function that generates the powerset of a given iterable using itertools combinations.",
+        "keywords": "python, powerset, itertools, combinations, programming, algorithms"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Powerset Challenge",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify PowerSet Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Python 中的幂集生成",
+      "description": "在数学中，一个集合的幂集是该集合所有子集的集合，包括空集和集合本身。在 Python 中，我们可以创建一个函数来返回给定可迭代对象的幂集。",
+      "meta": {
+        "title": "Python 幂集 | Itertools 组合",
+        "description": "学习如何使用 itertools 组合创建一个生成给定可迭代对象幂集的 Python 函数。",
+        "keywords": "Python, 幂集, Itertools, 组合, 编程, 算法"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "幂集挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证幂集 Python 脚本的执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

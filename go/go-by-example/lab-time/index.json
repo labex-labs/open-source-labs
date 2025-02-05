@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Go Time and Duration Exploration",
-  "description": "This lab aims to test your understanding of Go's time and duration support.",
-  "meta": {
-    "title": "Go Time and Duration | Programming Tutorials",
-    "description": "Explore Go's time and duration support with this comprehensive programming tutorial. Learn how to work with time, date, and duration in Go.",
-    "keywords": "Go, programming, time, duration, date, tutorial, guide"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Time",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Time Printing in Go Program",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/time"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "time.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "time.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Go Time and Duration Exploration",
+      "description": "This lab aims to test your understanding of Go's time and duration support.",
+      "meta": {
+        "title": "Go Time and Duration | Programming Tutorials",
+        "description": "Explore Go's time and duration support with this comprehensive programming tutorial. Learn how to work with time, date, and duration in Go.",
+        "keywords": "Go, programming, time, duration, date, tutorial, guide"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Time",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Time Printing in Go Program",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/time"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 时间与时长探索",
+      "description": "本实验旨在测试你对 Go 语言中时间和时长支持的理解。",
+      "meta": {
+        "title": "Go 时间与时长 | 编程教程",
+        "description": "通过这个全面的编程教程探索 Go 语言的时间和时长支持。学习如何在 Go 中处理时间、日期和时长。",
+        "keywords": "Go, 编程, 时间, 时长, 日期, 教程, 指南"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "时间",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序中的时间打印",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/time"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

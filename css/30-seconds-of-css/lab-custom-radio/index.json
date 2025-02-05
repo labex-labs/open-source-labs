@@ -1,84 +1,10 @@
 {
   "type": "lab",
-  "title": "Custom Radio Button",
-  "description": "In this lab, we will explore CSS programming concepts by creating a custom radio button with animation on state change. The lab will guide you through the process of using flexbox to create a layout for the radio buttons, resetting the styles on the <input> element, and using the ::before element to create the inner circle of the radio button. By the end of the lab, you will have a better understanding of CSS styling and animation techniques.",
-  "meta": {
-    "title": "Create Custom Radio Buttons with CSS Animation",
-    "description": "Learn how to create custom radio buttons with CSS animation effects for state changes.",
-    "keywords": "css, css exercises, css practice, custom ui, radio buttons, css playground, web development, css lab, animation"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Custom Radio Button",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/backgrounds",
-          "css/borders",
-          "css/box_model",
-          "css/colors",
-          "css/display_property",
-          "css/flexbox",
-          "css/margin_and_padding",
-          "css/pseudo_classes",
-          "css/pseudo_elements",
-          "css/selectors",
-          "css/transformations",
-          "css/transitions",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -87,5 +13,151 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Custom Radio Button",
+      "description": "In this lab, we will explore CSS programming concepts by creating a custom radio button with animation on state change. The lab will guide you through the process of using flexbox to create a layout for the radio buttons, resetting the styles on the <input> element, and using the ::before element to create the inner circle of the radio button. By the end of the lab, you will have a better understanding of CSS styling and animation techniques.",
+      "meta": {
+        "title": "Create Custom Radio Buttons with CSS Animation",
+        "description": "Learn how to create custom radio buttons with CSS animation effects for state changes.",
+        "keywords": "css, css exercises, css practice, custom ui, radio buttons, css playground, web development, css lab, animation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Custom Radio Button",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/flexbox",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/transformations",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "自定义单选按钮",
+      "description": "在本实验中，我们将通过创建一个在状态变化时带有动画效果的自定义单选按钮来探索CSS编程概念。本实验将指导你完成使用弹性盒模型（Flexbox）为单选按钮创建布局、重置<input>元素的样式以及使用::before元素创建单选按钮内圈的过程。在实验结束时，你将对CSS样式和动画技术有更深入的理解。",
+      "meta": {
+        "title": "使用CSS动画创建自定义单选按钮",
+        "description": "学习如何为状态变化创建带有CSS动画效果的自定义单选按钮。",
+        "keywords": "CSS, CSS练习, CSS实践, 自定义用户界面, 单选按钮, CSS游乐场, 网页开发, CSS实验, 动画"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自定义单选按钮",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”，在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/flexbox",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/transformations",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

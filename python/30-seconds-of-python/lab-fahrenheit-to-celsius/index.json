@@ -1,56 +1,10 @@
 {
   "type": "lab",
-  "title": "Fahrenheit to Celsius Conversion",
-  "description": "In this lab, you will learn how to write a function that converts temperature from Fahrenheit to Celsius, using the formula C = (F - 32) * 5 / 9.",
-  "meta": {
-    "title": "Fahrenheit to Celsius Conversion Tutorial",
-    "description": "Learn how to convert temperature from Fahrenheit to Celsius with a simple formula and Python code example.",
-    "keywords": "python playground, python, temperature conversion, fahrenheit to celsius, python programming, coding tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Fahrenheit to Celsius Conversion",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Fahrenheit to Celsius Conversion",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/comments", "python/function_definition"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_fahrenheit_to_celsius.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fahrenheit_to_celsius.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -59,5 +13,95 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_fahrenheit_to_celsius.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fahrenheit_to_celsius.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Fahrenheit to Celsius Conversion",
+      "description": "In this lab, you will learn how to write a function that converts temperature from Fahrenheit to Celsius, using the formula C = (F - 32) * 5 / 9.",
+      "meta": {
+        "title": "Fahrenheit to Celsius Conversion Tutorial",
+        "description": "Learn how to convert temperature from Fahrenheit to Celsius with a simple formula and Python code example.",
+        "keywords": "python playground, python, temperature conversion, fahrenheit to celsius, python programming, coding tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Fahrenheit to Celsius Conversion",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Fahrenheit to Celsius Conversion",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "华氏度到摄氏度的转换",
+      "description": "在这个实验中，你将学习如何使用公式C = (F - 32) * 5 / 9编写一个将温度从华氏度转换为摄氏度的函数。",
+      "meta": {
+        "title": "华氏度到摄氏度转换教程",
+        "description": "通过简单公式和Python代码示例学习如何将温度从华氏度转换为摄氏度。",
+        "keywords": "Python游乐场, Python, 温度转换, 华氏度到摄氏度, Python编程, 编码教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "华氏度到摄氏度的转换",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证华氏度到摄氏度的转换",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

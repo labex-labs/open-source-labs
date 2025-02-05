@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang Struct Embedding",
-  "description": "This lab aims to test your understanding of struct embedding in Golang. You will be required to create a struct that embeds another struct and access its fields and methods.",
-  "meta": {
-    "title": "Mastering Struct Embedding in Golang",
-    "description": "Explore the power of struct embedding in Golang, a crucial concept for building modular and composable code.",
-    "keywords": "go playground, composition, go, programming tutorial, golang, struct embedding, go labs, go playground online, code modularization, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Struct Embedding",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Correct Output of struct-embedding.go",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/struct_embedding"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "struct-embedding.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "struct-embedding.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang Struct Embedding",
+      "description": "This lab aims to test your understanding of struct embedding in Golang. You will be required to create a struct that embeds another struct and access its fields and methods.",
+      "meta": {
+        "title": "Mastering Struct Embedding in Golang",
+        "description": "Explore the power of struct embedding in Golang, a crucial concept for building modular and composable code.",
+        "keywords": "go playground, composition, go, programming tutorial, golang, struct embedding, go labs, go playground online, code modularization, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Struct Embedding",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Correct Output of struct-embedding.go",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/struct_embedding"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言结构体嵌入",
+      "description": "本实验旨在测试你对Go语言中结构体嵌入的理解。你需要创建一个嵌入另一个结构体的结构体，并访问其字段和方法。",
+      "meta": {
+        "title": "精通Go语言中的结构体嵌入",
+        "description": "探索Go语言中结构体嵌入的强大功能，这是构建模块化和可组合代码的关键概念。",
+        "keywords": "Go语言游乐场, 组合, Go语言, 编程教程, Go语言, 结构体嵌入, Go语言实验, 在线Go语言游乐场, 代码模块化, Go语言实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "结构体嵌入",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证struct-embedding.go的输出是否正确",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/struct_embedding"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

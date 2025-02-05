@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Generics in Go 1.18",
-  "description": "This lab introduces the concept of generics in Golang. Starting from version 1.18, Golang has added support for generics, which allows us to write more flexible and reusable code.",
-  "meta": {
-    "title": "Generics in Go 1.18: Unlocking Flexible and Reusable Code",
-    "description": "Explore the power of generics in Golang 1.18, enabling you to write more versatile and reusable code.",
-    "keywords": "generics, type parameters, go, golang, go labs, go playground online, constraints, go lab, go practice"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generics",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Generics Implementation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/generics"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "generics.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "generics.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Generics in Go 1.18",
+      "description": "This lab introduces the concept of generics in Golang. Starting from version 1.18, Golang has added support for generics, which allows us to write more flexible and reusable code.",
+      "meta": {
+        "title": "Generics in Go 1.18: Unlocking Flexible and Reusable Code",
+        "description": "Explore the power of generics in Golang 1.18, enabling you to write more versatile and reusable code.",
+        "keywords": "generics, type parameters, go, golang, go labs, go playground online, constraints, go lab, go practice"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generics",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Generics Implementation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/generics"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 1.18中的泛型",
+      "description": "本实验介绍了Go语言中泛型的概念。从1.18版本开始，Go语言增加了对泛型的支持，这使我们能够编写更灵活、可复用的代码。",
+      "meta": {
+        "title": "Go 1.18中的泛型：解锁灵活且可复用的代码",
+        "description": "探索Go 1.18中泛型的强大功能，让你能够编写更通用、可复用的代码。",
+        "keywords": "泛型, 类型参数, Go, Go语言, Go实验, 在线Go游乐场, 约束, Go实验, Go练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "泛型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go泛型实现",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/generics"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

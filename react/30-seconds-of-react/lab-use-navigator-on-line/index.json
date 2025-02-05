@@ -1,69 +1,10 @@
 {
   "type": "lab",
-  "title": "React useNavigatorOnLine Hook",
-  "description": "In this lab, we will learn how to use the useNavigatorOnLine hook in React to check whether a client is online or offline. We will create a function to get the online status of the client using the Navigator.onLine web API, use the useState() hook to create an appropriate state variable, and add listeners for appropriate events using the useEffect() hook to update the state and clean up those listeners when unmounting. Finally, we will return the online status state variable to display a message based on the current online status.",
-  "meta": {
-    "title": "Mastering the useNavigatorOnLine Hook in React",
-    "description": "Learn how to use the useNavigatorOnLine hook to check the online status of your React application.",
-    "keywords": "online status, usenavigatoronline, programming tutorial, react, web development"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React useNavigatorOnLine Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/conditional_render",
-          "react/event_handling",
-          "react/hooks",
-          "react/jsx",
-          "react/use_state_reducer"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -72,5 +13,121 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React useNavigatorOnLine Hook",
+      "description": "In this lab, we will learn how to use the useNavigatorOnLine hook in React to check whether a client is online or offline. We will create a function to get the online status of the client using the Navigator.onLine web API, use the useState() hook to create an appropriate state variable, and add listeners for appropriate events using the useEffect() hook to update the state and clean up those listeners when unmounting. Finally, we will return the online status state variable to display a message based on the current online status.",
+      "meta": {
+        "title": "Mastering the useNavigatorOnLine Hook in React",
+        "description": "Learn how to use the useNavigatorOnLine hook to check the online status of your React application.",
+        "keywords": "online status, usenavigatoronline, programming tutorial, react, web development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useNavigatorOnLine Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/conditional_render",
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React 的 useNavigatorOnLine 钩子",
+      "description": "在本实验中，我们将学习如何在 React 中使用 useNavigatorOnLine 钩子来检查客户端是在线还是离线。我们将创建一个函数，使用 Navigator.onLine Web API 获取客户端的在线状态，使用 useState() 钩子创建一个合适的状态变量，并使用 useEffect() 钩子为适当的事件添加监听器，以更新状态并在卸载时清理这些监听器。最后，我们将返回在线状态状态变量，以根据当前在线状态显示一条消息。",
+      "meta": {
+        "title": "掌握 React 中的 useNavigatorOnLine 钩子",
+        "description": "学习如何使用 useNavigatorOnLine 钩子检查 React 应用程序的在线状态。",
+        "keywords": "在线状态, useNavigatorOnLine, 编程教程, React, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React 的 useNavigatorOnLine 钩子",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改的状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/conditional_render",
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

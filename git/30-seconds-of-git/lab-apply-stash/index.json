@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Apply a stash",
-  "description": "In Git, a stash is a way to save changes that are not ready to be committed yet. It allows you to temporarily save your changes and switch to another branch or work on something else. Once you are ready to continue working on your changes, you can apply the stash and continue where you left off.",
-  "meta": {
-    "title": "Mastering Git Stash: Seamlessly Manage Your Unfinished Changes",
-    "description": "Learn how to effectively use Git stash to save and apply your unfinished changes, allowing you to switch between branches and continue your work with ease.",
-    "keywords": "branch management, version control, git labs, workflow, stash, git, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Apply a stash",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful application",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/stash"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Apply a stash",
+      "description": "In Git, a stash is a way to save changes that are not ready to be committed yet. It allows you to temporarily save your changes and switch to another branch or work on something else. Once you are ready to continue working on your changes, you can apply the stash and continue where you left off.",
+      "meta": {
+        "title": "Mastering Git Stash: Seamlessly Manage Your Unfinished Changes",
+        "description": "Learn how to effectively use Git stash to save and apply your unfinished changes, allowing you to switch between branches and continue your work with ease.",
+        "keywords": "branch management, version control, git labs, workflow, stash, git, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Apply a stash",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful application",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/stash"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "应用贮藏",
+      "description": "在Git中，贮藏是一种保存尚未准备好提交的更改的方法。它允许你临时保存更改，切换到另一个分支或处理其他事情。一旦你准备好继续处理更改，就可以应用贮藏并从上次中断的地方继续。",
+      "meta": {
+        "title": "精通Git贮藏：无缝管理未完成的更改",
+        "description": "学习如何有效使用Git贮藏来保存和应用未完成的更改，使你能够在分支之间轻松切换并继续工作。",
+        "keywords": "分支管理, 版本控制, Git实验室, 工作流程, 贮藏, Git, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "应用贮藏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证应用是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/stash"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

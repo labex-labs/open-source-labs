@@ -1,53 +1,10 @@
 {
   "type": "lab",
-  "title": "Using Rust Match Guards",
-  "description": "In this lab, we learn about using match guards in Rust to filter arms based on conditions. The match guard is added after the pattern and is represented by the if keyword followed by a condition. The guard condition allows us to further refine the matching of patterns and perform additional checks before executing the corresponding arm of the match expression. However, it is important to note that the compiler does not consider guard conditions when checking pattern coverage, so it's necessary to ensure that all patterns are still covered by the match expression.",
-  "meta": {
-    "title": "Mastering Rust Match Guards",
-    "description": "Discover the power of match guards in Rust to refine pattern matching and perform additional checks.",
-    "keywords": "rust playground, conditional logic, pattern matching, programming tutorial, rust tutor, rust online compiler, rust online, rust commands, rust practice, match guards"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Guards",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/error_propagation",
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/match_operator",
-          "rust/method_syntax",
-          "rust/pattern_matching",
-          "rust/string_type",
-          "rust/struct_instantiate",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -56,5 +13,103 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Using Rust Match Guards",
+      "description": "In this lab, we learn about using match guards in Rust to filter arms based on conditions. The match guard is added after the pattern and is represented by the if keyword followed by a condition. The guard condition allows us to further refine the matching of patterns and perform additional checks before executing the corresponding arm of the match expression. However, it is important to note that the compiler does not consider guard conditions when checking pattern coverage, so it's necessary to ensure that all patterns are still covered by the match expression.",
+      "meta": {
+        "title": "Mastering Rust Match Guards",
+        "description": "Discover the power of match guards in Rust to refine pattern matching and perform additional checks.",
+        "keywords": "rust playground, conditional logic, pattern matching, programming tutorial, rust tutor, rust online compiler, rust online, rust commands, rust practice, match guards"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Guards",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/error_propagation",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/match_operator",
+              "rust/method_syntax",
+              "rust/pattern_matching",
+              "rust/string_type",
+              "rust/struct_instantiate",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Rust 匹配守卫",
+      "description": "在本实验中，我们学习如何在 Rust 中使用匹配守卫根据条件来过滤分支。匹配守卫添加在模式之后，由 if 关键字后跟一个条件表示。守卫条件使我们能够进一步细化模式匹配，并在执行匹配表达式的相应分支之前执行额外的检查。但是，需要注意的是，编译器在检查模式覆盖范围时不会考虑守卫条件，因此有必要确保匹配表达式仍然覆盖所有模式。",
+      "meta": {
+        "title": "精通 Rust 匹配守卫",
+        "description": "探索 Rust 中匹配守卫的强大功能，以细化模式匹配并执行额外检查。",
+        "keywords": "rust 游乐场, 条件逻辑, 模式匹配, 编程教程, rust 教程, rust 在线编译器, rust 在线, rust 命令, rust 练习, 匹配守卫"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "守卫",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/error_propagation",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/match_operator",
+              "rust/method_syntax",
+              "rust/pattern_matching",
+              "rust/string_type",
+              "rust/struct_instantiate",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

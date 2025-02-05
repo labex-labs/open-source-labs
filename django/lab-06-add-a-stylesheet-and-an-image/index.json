@@ -1,72 +1,130 @@
 {
   "type": "lab",
-  "title": "Add a Stylesheet and an Image",
-  "description": "This tutorial begins where Create Some Automated Tests left off. We've built a tested web-poll application, and we'll now add a stylesheet and an image.",
-  "meta": {
-    "title": "Django Tutorial | Customize App Look and Feel",
-    "description": "Learn how to add a stylesheet and an image to your Django web-poll application, and customize its look and feel.",
-    "keywords": "Django, web development, tutorial, CSS, static files, styling, customization"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Customize your _app's_ look and feel",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Presence of style.css in Polls Response",
-            "file": "verify1.sh",
-            "hint": "Please add style.css to the project.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["django/applications"]
-      },
-      {
-        "title": "Adding a background-image",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Existence of Background Image File",
-            "file": "verify2.sh",
-            "hint": "background.png needs to be in the project.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "*.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "background.png",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
-  "contributors": []
+  "contributors": [],
+  "assets": {
+    "host01": [
+      {
+        "file": "*.zip",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "background.png",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Add a Stylesheet and an Image",
+      "description": "This tutorial begins where Create Some Automated Tests left off. We've built a tested web-poll application, and we'll now add a stylesheet and an image.",
+      "meta": {
+        "title": "Django Tutorial | Customize App Look and Feel",
+        "description": "Learn how to add a stylesheet and an image to your Django web-poll application, and customize its look and feel.",
+        "keywords": "Django, web development, tutorial, CSS, static files, styling, customization"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Customize your _app's_ look and feel",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Presence of style.css in Polls Response",
+                "file": "verify1.sh",
+                "hint": "Please add style.css to the project.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["django/applications"]
+          },
+          {
+            "title": "Adding a background-image",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Existence of Background Image File",
+                "file": "verify2.sh",
+                "hint": "background.png needs to be in the project.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "添加样式表和图像",
+      "description": "本教程从《创建一些自动化测试》结束的地方开始。我们已经构建了一个经过测试的网络投票应用程序，现在我们将添加一个样式表和一张图片。",
+      "meta": {
+        "title": "Django 教程 | 自定义应用外观",
+        "description": "学习如何为你的 Django 网络投票应用程序添加样式表和图像，并自定义其外观。",
+        "keywords": "Django, 网页开发, 教程, CSS, 静态文件, 样式设计, 定制"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自定义应用的外观",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Polls 响应中是否存在 style.css",
+                "file": "verify1.sh",
+                "hint": "请将 style.css 添加到项目中。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["django/applications"]
+          },
+          {
+            "title": "添加背景图像",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证背景图像文件是否存在",
+                "file": "verify2.sh",
+                "hint": "项目中需要有 background.png。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

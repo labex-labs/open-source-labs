@@ -1,63 +1,10 @@
 {
   "type": "lab",
-  "title": "Convert Angle Degrees to Radians",
-  "description": "In mathematics, angles can be measured in degrees or radians. Radians are the standard unit of angular measure, used in many areas of mathematics and physics. In this challenge, you will be asked to write a function that converts an angle from degrees to radians.",
-  "meta": {
-    "title": "Degrees to Radians Conversion | Mathematics | Physics",
-    "description": "Learn how to convert angles from degrees to radians using a simple formula. Ideal for mathematics and physics students.",
-    "keywords": "degrees to radians, angle conversion, mathematics, physics, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Degrees to Radians Challenge",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Degrees To Radians Conversion",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/math_random",
-          "python/standard_libraries",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_degrees_to_rads.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "degrees_to_rads.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -66,5 +13,109 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_degrees_to_rads.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "degrees_to_rads.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Convert Angle Degrees to Radians",
+      "description": "In mathematics, angles can be measured in degrees or radians. Radians are the standard unit of angular measure, used in many areas of mathematics and physics. In this challenge, you will be asked to write a function that converts an angle from degrees to radians.",
+      "meta": {
+        "title": "Degrees to Radians Conversion | Mathematics | Physics",
+        "description": "Learn how to convert angles from degrees to radians using a simple formula. Ideal for mathematics and physics students.",
+        "keywords": "degrees to radians, angle conversion, mathematics, physics, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Degrees to Radians Challenge",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Degrees To Radians Conversion",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将角度度数转换为弧度",
+      "description": "在数学中，角度可以用度或弧度来度量。弧度是角的度量的标准单位，在数学和物理的许多领域中都有使用。在这个挑战中，你将被要求编写一个将角度从度转换为弧度的函数。",
+      "meta": {
+        "title": "度转弧度转换 | 数学 | 物理",
+        "description": "学习如何使用一个简单的公式将角度从度转换为弧度。适合数学和物理专业的学生。",
+        "keywords": "度转弧度, 角度转换, 数学, 物理, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "度转弧度挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证度转弧度转换",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "Find Maximum List Value Based on Function",
-  "description": "In Python, we can use the max() function to find the maximum value in a list. However, what if we want to find the maximum value after mapping each element to a value using a provided function? In this challenge, you will need to write a function that takes a list and a function as arguments, maps each element to a value using the provided function, and returns the maximum value.",
-  "meta": {
-    "title": "Python | Maximum List Value Based on Function",
-    "description": "Learn how to find the maximum value in a list by mapping each element to a value using a provided function in Python.",
-    "keywords": "Python, max function, list, mapping, function, maximum value"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Find Maximum List Value Based on Function",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/lambda_functions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_max_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "max_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_max_by.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "max_by.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Find Maximum List Value Based on Function",
+      "description": "In Python, we can use the max() function to find the maximum value in a list. However, what if we want to find the maximum value after mapping each element to a value using a provided function? In this challenge, you will need to write a function that takes a list and a function as arguments, maps each element to a value using the provided function, and returns the maximum value.",
+      "meta": {
+        "title": "Python | Maximum List Value Based on Function",
+        "description": "Learn how to find the maximum value in a list by mapping each element to a value using a provided function in Python.",
+        "keywords": "Python, max function, list, mapping, function, maximum value"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Find Maximum List Value Based on Function",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "根据函数查找列表中的最大值",
+      "description": "在Python中，我们可以使用max()函数来查找列表中的最大值。但是，如果我们想在使用提供的函数将每个元素映射到一个值之后再查找最大值呢？在这个挑战中，你需要编写一个函数，该函数以列表和函数作为参数，使用提供的函数将每个元素映射到一个值，然后返回最大值。",
+      "meta": {
+        "title": "Python | 根据函数查找列表中的最大值",
+        "description": "学习如何在Python中通过使用提供的函数将每个元素映射到一个值来查找列表中的最大值。",
+        "keywords": "Python, 最大值函数, 列表, 映射, 函数, 最大值"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "根据函数查找列表中的最大值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

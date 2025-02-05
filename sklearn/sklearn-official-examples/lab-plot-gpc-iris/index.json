@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Gaussian Process Classification on Iris Dataset",
-  "description": "In this lab, we will explore how to use Gaussian Process Classification (GPC) on the Iris dataset. The Iris dataset is a famous dataset that contains information about the length and width of the sepal and petal of three different species of Iris flowers. We will use scikit-learn to implement GPC, which is a probabilistic approach for classification tasks.",
-  "meta": {
-    "title": "Gaussian Process Classification | Iris Dataset | Machine Learning",
-    "description": "Explore Gaussian Process Classification on the Iris dataset, a famous dataset for machine learning, using scikit-learn in this programming tutorial.",
-    "keywords": "Gaussian Process Classification, Iris Dataset, Machine Learning, scikit-learn, Python"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Importing necessary libraries and dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/gaussian_process"]
-      },
-      {
-        "title": "Defining the kernel function",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Creating a mesh to plot in",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plotting the predicted probabilities",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-gpc-iris.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-gpc-iris.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Gaussian Process Classification on Iris Dataset",
+      "description": "In this lab, we will explore how to use Gaussian Process Classification (GPC) on the Iris dataset. The Iris dataset is a famous dataset that contains information about the length and width of the sepal and petal of three different species of Iris flowers. We will use scikit-learn to implement GPC, which is a probabilistic approach for classification tasks.",
+      "meta": {
+        "title": "Gaussian Process Classification | Iris Dataset | Machine Learning",
+        "description": "Explore Gaussian Process Classification on the Iris dataset, a famous dataset for machine learning, using scikit-learn in this programming tutorial.",
+        "keywords": "Gaussian Process Classification, Iris Dataset, Machine Learning, scikit-learn, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importing necessary libraries and dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/gaussian_process"]
+          },
+          {
+            "title": "Defining the kernel function",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Creating a mesh to plot in",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plotting the predicted probabilities",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "鸢尾花数据集上的高斯过程分类",
+      "description": "在本实验中，我们将探索如何在鸢尾花数据集上使用高斯过程分类（GPC）。鸢尾花数据集是一个著名的数据集，包含了三种不同鸢尾花的萼片和花瓣的长度与宽度信息。我们将使用scikit-learn来实现GPC，这是一种用于分类任务的概率方法。",
+      "meta": {
+        "title": "高斯过程分类 | 鸢尾花数据集 | 机器学习",
+        "description": "在本编程教程中，探索使用scikit-learn在鸢尾花数据集（一个著名的机器学习数据集）上进行高斯过程分类。",
+        "keywords": "高斯过程分类, 鸢尾花数据集, 机器学习, scikit-learn, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库和数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/gaussian_process"]
+          },
+          {
+            "title": "定义核函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "创建用于绘图的网格",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制预测概率",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang HTTP Request Handling",
-  "description": "This lab aims to test your ability to use the net/http package in Golang to issue HTTP requests.",
-  "meta": {
-    "title": "Go HTTP Client | Golang Programming Tutorials",
-    "description": "Learn how to use the Golang net/http package to issue HTTP requests and handle responses effectively in your Go programs.",
-    "keywords": "Go, Golang, HTTP Client, net/http, Programming Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "HTTP Client",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify HTTP Client Response Status",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/http_client"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "http-client.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "http-client.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang HTTP Request Handling",
+      "description": "This lab aims to test your ability to use the net/http package in Golang to issue HTTP requests.",
+      "meta": {
+        "title": "Go HTTP Client | Golang Programming Tutorials",
+        "description": "Learn how to use the Golang net/http package to issue HTTP requests and handle responses effectively in your Go programs.",
+        "keywords": "Go, Golang, HTTP Client, net/http, Programming Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "HTTP Client",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify HTTP Client Response Status",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/http_client"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言的HTTP请求处理",
+      "description": "本实验旨在测试你使用Go语言中的net/http包发出HTTP请求的能力。",
+      "meta": {
+        "title": "Go HTTP客户端 | Go语言编程教程",
+        "description": "学习如何在Go程序中使用Go语言的net/http包发出HTTP请求并有效处理响应。",
+        "keywords": "Go, Go语言, HTTP客户端, net/http, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "HTTP客户端",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证HTTP客户端响应状态",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/http_client"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

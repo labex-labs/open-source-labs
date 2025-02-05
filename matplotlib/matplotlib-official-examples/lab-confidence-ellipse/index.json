@@ -1,159 +1,10 @@
 {
   "type": "lab",
-  "title": "Plotting Confidence Ellipses with Matplotlib",
-  "description": "This lab will demonstrate how to plot confidence ellipses of a two-dimensional dataset using Python Matplotlib. A confidence ellipse is a graphical representation of the covariance of a dataset, showing the uncertainty of the estimated mean and standard deviation. The ellipses are plotted using the Pearson correlation coefficient.",
-  "meta": {
-    "title": "Plotting Confidence Ellipses | Python Matplotlib Tutorial",
-    "description": "Learn how to plot confidence ellipses of a 2D dataset using Python Matplotlib in this programming tutorial.",
-    "keywords": "Python, Matplotlib, Confidence Ellipses, Data Visualization, Covariance"
-  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Required Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/numerical_computing"
-        ]
-      },
-      {
-        "title": "Define the confidence_ellipse Function",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_visualization",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/keyword_arguments",
-          "python/lists",
-          "python/numeric_types",
-          "python/raising_exceptions",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Define the get_correlated_dataset Function",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/lists",
-          "python/math_random",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Plotting Positive, Negative, and Weak Correlations",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/scatter_plots",
-          "python/build_in_functions",
-          "python/dictionaries",
-          "python/for_loops",
-          "python/lists",
-          "python/math_random",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Plotting Different Number of Standard Deviations",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/legend_config",
-          "matplotlib/line_styles_colors",
-          "matplotlib/scatter_plots",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Using Keyword Arguments",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/scatter_plots",
-          "python/comments",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "confidence-ellipse.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -162,5 +13,306 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "confidence-ellipse.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Plotting Confidence Ellipses with Matplotlib",
+      "description": "This lab will demonstrate how to plot confidence ellipses of a two-dimensional dataset using Python Matplotlib. A confidence ellipse is a graphical representation of the covariance of a dataset, showing the uncertainty of the estimated mean and standard deviation. The ellipses are plotted using the Pearson correlation coefficient.",
+      "meta": {
+        "title": "Plotting Confidence Ellipses | Python Matplotlib Tutorial",
+        "description": "Learn how to plot confidence ellipses of a 2D dataset using Python Matplotlib in this programming tutorial.",
+        "keywords": "Python, Matplotlib, Confidence Ellipses, Data Visualization, Covariance"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Required Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "Define the confidence_ellipse Function",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_visualization",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/numeric_types",
+              "python/raising_exceptions",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Define the get_correlated_dataset Function",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Plotting Positive, Negative, and Weak Correlations",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/scatter_plots",
+              "python/build_in_functions",
+              "python/dictionaries",
+              "python/for_loops",
+              "python/lists",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Plotting Different Number of Standard Deviations",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/legend_config",
+              "matplotlib/line_styles_colors",
+              "matplotlib/scatter_plots",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Using Keyword Arguments",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/scatter_plots",
+              "python/comments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Matplotlib 绘制置信椭圆",
+      "description": "本实验将演示如何使用 Python 的 Matplotlib 绘制二维数据集的置信椭圆。置信椭圆是数据集协方差的图形表示，展示了估计均值和标准差的不确定性。这些椭圆是使用皮尔逊相关系数绘制的。",
+      "meta": {
+        "title": "绘制置信椭圆 | Python Matplotlib 教程",
+        "description": "在本编程教程中学习如何使用 Python Matplotlib 绘制二维数据集的置信椭圆。",
+        "keywords": "Python, Matplotlib, 置信椭圆, 数据可视化, 协方差"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "定义confidence_ellipse函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_visualization",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/numeric_types",
+              "python/raising_exceptions",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "定义get_correlated_dataset函数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "绘制正相关、负相关和弱相关关系",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/scatter_plots",
+              "python/build_in_functions",
+              "python/dictionaries",
+              "python/for_loops",
+              "python/lists",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "绘制不同数量的标准差",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/legend_config",
+              "matplotlib/line_styles_colors",
+              "matplotlib/scatter_plots",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "使用关键字参数",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/scatter_plots",
+              "python/comments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

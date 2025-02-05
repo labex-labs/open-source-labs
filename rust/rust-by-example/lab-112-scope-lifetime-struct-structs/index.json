@@ -1,48 +1,10 @@
 {
   "type": "lab",
-  "title": "Lifetime Management in Rust Structs",
-  "description": "In this lab, we have some Rust code that demonstrates the usage of lifetimes in structs. The code includes a struct called Borrowed that holds a reference to an i32, and the reference must outlive the struct itself. There is also a struct called NamedBorrowed with two references to i32, both of which must outlive the struct. Additionally, there is an enum called Either that can either be an i32 or a reference to one, and the reference must outlive the enum. Finally, the code creates instances of these structs and enum, and prints their contents to showcase the usage of lifetimes in Rust.",
-  "meta": {
-    "title": "Rust Lifetime Concepts | Programming Tutorials",
-    "description": "Explore the usage of lifetimes in Rust structs and enums. Understand how to manage references and ensure they outlive the data structures.",
-    "keywords": "Rust, Lifetimes, Structs, Enums, Programming Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Structs",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -51,5 +13,93 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Lifetime Management in Rust Structs",
+      "description": "In this lab, we have some Rust code that demonstrates the usage of lifetimes in structs. The code includes a struct called Borrowed that holds a reference to an i32, and the reference must outlive the struct itself. There is also a struct called NamedBorrowed with two references to i32, both of which must outlive the struct. Additionally, there is an enum called Either that can either be an i32 or a reference to one, and the reference must outlive the enum. Finally, the code creates instances of these structs and enum, and prints their contents to showcase the usage of lifetimes in Rust.",
+      "meta": {
+        "title": "Rust Lifetime Concepts | Programming Tutorials",
+        "description": "Explore the usage of lifetimes in Rust structs and enums. Understand how to manage references and ensure they outlive the data structures.",
+        "keywords": "Rust, Lifetimes, Structs, Enums, Programming Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Structs",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 结构体中的生命周期管理",
+      "description": "在本实验中，我们有一些 Rust 代码展示了结构体中生命周期的用法。代码包含一个名为 Borrowed 的结构体，它持有一个指向 i32 的引用，并且该引用的生命周期必须长于结构体本身。还有一个名为 NamedBorrowed 的结构体，它有两个指向 i32 的引用，这两个引用的生命周期都必须长于结构体。此外，有一个名为 Either 的枚举，它可以是一个 i32 或者是一个指向 i32 的引用，并且该引用的生命周期必须长于枚举。最后，代码创建了这些结构体和枚举的实例，并打印它们的内容以展示 Rust 中生命周期的用法。",
+      "meta": {
+        "title": "Rust 生命周期概念 | 编程教程",
+        "description": "探索 Rust 结构体和枚举中生命周期的用法。了解如何管理引用并确保它们的生命周期长于数据结构。",
+        "keywords": "Rust, 生命周期, 结构体, 枚举, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "结构体",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

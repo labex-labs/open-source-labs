@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Gradient Boosting Out-of-Bag Estimates",
-  "description": "This lab will guide you through implementing a Gradient Boosting Classifier with out-of-bag (OOB) estimates using the scikit-learn library in Python. OOB estimates are an alternative to cross-validation estimates and can be computed on-the-fly without the need for repeated model fitting. This lab will cover the following steps:",
-  "meta": {
-    "title": "Gradient Boosting with Out-of-Bag Estimates",
-    "description": "Learn how to implement a Gradient Boosting Classifier with out-of-bag estimates using scikit-learn in Python.",
-    "keywords": "machine learning, out of bag estimates, gradient boosting, python, scikit learn, scikit-learn, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Fit Classifier with OOB Estimates",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/ensemble"]
-      },
-      {
-        "title": "Estimate Best Number of Iterations using Cross-Validation",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      },
-      {
-        "title": "Compute Best Number of Iterations for Test Data",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/metrics"]
-      },
-      {
-        "title": "Plot the Results",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-gradient-boosting-oob.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,182 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-gradient-boosting-oob.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Gradient Boosting Out-of-Bag Estimates",
+      "description": "This lab will guide you through implementing a Gradient Boosting Classifier with out-of-bag (OOB) estimates using the scikit-learn library in Python. OOB estimates are an alternative to cross-validation estimates and can be computed on-the-fly without the need for repeated model fitting. This lab will cover the following steps:",
+      "meta": {
+        "title": "Gradient Boosting with Out-of-Bag Estimates",
+        "description": "Learn how to implement a Gradient Boosting Classifier with out-of-bag estimates using scikit-learn in Python.",
+        "keywords": "machine learning, out of bag estimates, gradient boosting, python, scikit learn, scikit-learn, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Fit Classifier with OOB Estimates",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "Estimate Best Number of Iterations using Cross-Validation",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "Compute Best Number of Iterations for Test Data",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          },
+          {
+            "title": "Plot the Results",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "梯度提升袋外估计",
+      "description": "本实验将指导你使用Python中的scikit-learn库实现一个带有袋外（OOB）估计的梯度提升分类器。袋外估计是交叉验证估计的一种替代方法，无需重复模型拟合即可即时计算。本实验将涵盖以下步骤：",
+      "meta": {
+        "title": "带袋外估计的梯度提升",
+        "description": "学习如何使用Python中的scikit-learn实现一个带有袋外估计的梯度提升分类器。",
+        "keywords": "机器学习, 袋外估计, 梯度提升, Python, scikit learn, scikit-learn, scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "使用袋外估计拟合分类器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "使用交叉验证估计最佳迭代次数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "计算测试数据的最佳迭代次数",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

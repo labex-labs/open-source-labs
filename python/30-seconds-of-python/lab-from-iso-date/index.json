@@ -1,63 +1,10 @@
 {
   "type": "lab",
-  "title": "Convert ISO Date",
-  "description": "In this lab, you will learn how to convert a date string in ISO-8601 format to a `datetime.datetime` object using the `datetime.fromisoformat()` function in Python.",
-  "meta": {
-    "title": "Convert ISO Date in Python",
-    "description": "Learn how to convert a date from ISO-8601 format to a datetime.datetime object in Python.",
-    "keywords": "python, iso date, datetime, date conversion"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Convert ISO Date",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution from ISO Date",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/date_time",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_from_iso_date.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "from_iso_date.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -66,5 +13,109 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_from_iso_date.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "from_iso_date.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Convert ISO Date",
+      "description": "In this lab, you will learn how to convert a date string in ISO-8601 format to a `datetime.datetime` object using the `datetime.fromisoformat()` function in Python.",
+      "meta": {
+        "title": "Convert ISO Date in Python",
+        "description": "Learn how to convert a date from ISO-8601 format to a datetime.datetime object in Python.",
+        "keywords": "python, iso date, datetime, date conversion"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Convert ISO Date",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution from ISO Date",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/date_time",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "转换 ISO 日期",
+      "description": "在这个实验中，你将学习如何使用 Python 中的 `datetime.fromisoformat()` 函数将 ISO-8601 格式的日期字符串转换为 `datetime.datetime` 对象。",
+      "meta": {
+        "title": "在 Python 中转换 ISO 日期",
+        "description": "学习如何在 Python 中将日期从 ISO-8601 格式转换为 datetime.datetime 对象。",
+        "keywords": "Python, ISO 日期, datetime, 日期转换"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "转换 ISO 日期",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证从 ISO 日期执行 Python 脚本",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/date_time",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

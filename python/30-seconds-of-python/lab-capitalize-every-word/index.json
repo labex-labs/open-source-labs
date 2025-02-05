@@ -1,56 +1,10 @@
 {
   "type": "lab",
-  "title": "Capitalize First Letter In Words",
-  "description": "In Python, we can capitalize the first letter of every word in a string using a built-in function. In this challenge, you will be asked to write a function that takes a string as an argument and returns a new string with the first letter of every word capitalized.",
-  "meta": {
-    "title": "Python | Capitalize Every Word | Programming Tutorials",
-    "description": "Learn how to capitalize the first letter of every word in a Python string using a built-in function. Improve your programming skills with this helpful tutorial.",
-    "keywords": "Python, Capitalize, String, Programming, Tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Capitalize Every Word",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Capitalize Every Word",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/comments", "python/function_definition"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_capitalize_every_word.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "capitalize_every_word.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -59,5 +13,95 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_capitalize_every_word.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "capitalize_every_word.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Capitalize First Letter In Words",
+      "description": "In Python, we can capitalize the first letter of every word in a string using a built-in function. In this challenge, you will be asked to write a function that takes a string as an argument and returns a new string with the first letter of every word capitalized.",
+      "meta": {
+        "title": "Python | Capitalize Every Word | Programming Tutorials",
+        "description": "Learn how to capitalize the first letter of every word in a Python string using a built-in function. Improve your programming skills with this helpful tutorial.",
+        "keywords": "Python, Capitalize, String, Programming, Tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Capitalize Every Word",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Capitalize Every Word",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将单词首字母大写",
+      "description": "在Python中，我们可以使用内置函数将字符串中每个单词的首字母大写。在这个挑战中，你将被要求编写一个函数，该函数接受一个字符串作为参数，并返回一个新的字符串，其中每个单词的首字母都大写。",
+      "meta": {
+        "title": "Python | 每个单词首字母大写 | 编程教程",
+        "description": "学习如何使用内置函数将Python字符串中每个单词的首字母大写。通过这个实用教程提升你的编程技能。",
+        "keywords": "Python, 大写, 字符串, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将每个单词首字母大写",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证每个单词首字母大写",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

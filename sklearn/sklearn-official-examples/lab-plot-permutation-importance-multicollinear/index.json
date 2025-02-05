@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Permutation Importance on Breast Cancer Dataset",
-  "description": "This lab demonstrates how to use permutation importance on the Wisconsin breast cancer dataset using permutation_importance function from sklearn.inspection. The Random Forest Classifier is used to classify the data and compute its accuracy on a test set. We will also show how to handle multicollinearity in the features using hierarchical clustering.",
-  "meta": {
-    "title": "Permutation Importance | Random Forest Classifier | Multicollinearity",
-    "description": "Learn how to use permutation importance to analyze the Wisconsin breast cancer dataset and train a Random Forest Classifier with handling multicollinearity.",
-    "keywords": "permutation importance, random forest classifier, multicollinearity, machine learning, data analysis"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Train a Random Forest Classifier",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot Feature Importance",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Handle Multicollinear Features",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Pick a Threshold to Group Features into Clusters",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-permutation-importance-multicollinear.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-permutation-importance-multicollinear.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Permutation Importance on Breast Cancer Dataset",
+      "description": "This lab demonstrates how to use permutation importance on the Wisconsin breast cancer dataset using permutation_importance function from sklearn.inspection. The Random Forest Classifier is used to classify the data and compute its accuracy on a test set. We will also show how to handle multicollinearity in the features using hierarchical clustering.",
+      "meta": {
+        "title": "Permutation Importance | Random Forest Classifier | Multicollinearity",
+        "description": "Learn how to use permutation importance to analyze the Wisconsin breast cancer dataset and train a Random Forest Classifier with handling multicollinearity.",
+        "keywords": "permutation importance, random forest classifier, multicollinearity, machine learning, data analysis"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Train a Random Forest Classifier",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot Feature Importance",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Handle Multicollinear Features",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Pick a Threshold to Group Features into Clusters",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "乳腺癌数据集上的排列重要性",
+      "description": "本实验展示了如何使用来自sklearn.inspection的permutation_importance函数，在威斯康星乳腺癌数据集上使用排列重要性。随机森林分类器用于对数据进行分类，并计算其在测试集上的准确率。我们还将展示如何使用层次聚类来处理特征中的多重共线性。",
+      "meta": {
+        "title": "排列重要性 | 随机森林分类器 | 多重共线性",
+        "description": "学习如何使用排列重要性来分析威斯康星乳腺癌数据集，并在处理多重共线性的情况下训练随机森林分类器。",
+        "keywords": "排列重要性, 随机森林分类器, 多重共线性, 机器学习, 数据分析"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "训练一个随机森林分类器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制特征重要性",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "处理多重共线性特征",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "选择一个阈值以将特征分组为簇",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

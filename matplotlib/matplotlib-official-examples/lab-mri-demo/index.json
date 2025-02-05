@@ -1,83 +1,10 @@
 {
   "type": "lab",
-  "title": "Matplotlib MRI Image Visualization",
-  "description": "In this lab, you will learn how to read an MRI image into a NumPy array and display it in grayscale using matplotlib library.",
-  "meta": {
-    "title": "MRI Image Processing | NumPy | Matplotlib",
-    "description": "Learn how to read an MRI image into a NumPy array and display it in grayscale using the Matplotlib library.",
-    "keywords": "MRI image processing, NumPy, Matplotlib, Python, medical imaging"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import required libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/numerical_computing"
-        ]
-      },
-      {
-        "title": "Load the MRI image data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/file_reading_writing",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Display the MRI image",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/heatmaps", "python/tuples"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "mri-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -86,5 +13,154 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "mri-demo.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Matplotlib MRI Image Visualization",
+      "description": "In this lab, you will learn how to read an MRI image into a NumPy array and display it in grayscale using matplotlib library.",
+      "meta": {
+        "title": "MRI Image Processing | NumPy | Matplotlib",
+        "description": "Learn how to read an MRI image into a NumPy array and display it in grayscale using the Matplotlib library.",
+        "keywords": "MRI image processing, NumPy, Matplotlib, Python, medical imaging"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import required libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "Load the MRI image data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/file_reading_writing",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Display the MRI image",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["matplotlib/heatmaps", "python/tuples"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Matplotlib进行MRI图像可视化",
+      "description": "在本实验中，你将学习如何使用Matplotlib库将MRI图像读取到NumPy数组中并以灰度显示。",
+      "meta": {
+        "title": "MRI图像处理 | NumPy | Matplotlib",
+        "description": "学习如何使用Matplotlib库将MRI图像读取到NumPy数组中并以灰度显示。",
+        "keywords": "MRI图像处理, NumPy, Matplotlib, Python, 医学成像"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需的库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "加载MRI图像数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/file_reading_writing",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "显示MRI图像",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["matplotlib/heatmaps", "python/tuples"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

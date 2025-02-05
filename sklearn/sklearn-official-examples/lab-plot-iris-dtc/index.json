@@ -1,78 +1,10 @@
 {
   "type": "lab",
-  "title": "Decision Trees on Iris Dataset",
-  "description": "In this lab, we will use the Iris dataset and decision trees to classify the types of iris flowers. We will first visualize the decision boundaries of decision trees trained on pairs of features of the Iris dataset. Next, we will display the structure of a single decision tree trained on all the features of the Iris dataset.",
-  "meta": {
-    "title": "Iris Flower Classification | Decision Trees | Machine Learning",
-    "description": "Learn how to use the Iris dataset and decision trees to classify different types of iris flowers in this comprehensive programming tutorial.",
-    "keywords": "Iris dataset, decision trees, machine learning, classification, programming tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Iris Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Visualize Decision Boundaries",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/inspection",
-          "sklearn/tree"
-        ]
-      },
-      {
-        "title": "Display Decision Tree Structure",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/tree"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-iris-dtc.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -81,5 +13,144 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-iris-dtc.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Decision Trees on Iris Dataset",
+      "description": "In this lab, we will use the Iris dataset and decision trees to classify the types of iris flowers. We will first visualize the decision boundaries of decision trees trained on pairs of features of the Iris dataset. Next, we will display the structure of a single decision tree trained on all the features of the Iris dataset.",
+      "meta": {
+        "title": "Iris Flower Classification | Decision Trees | Machine Learning",
+        "description": "Learn how to use the Iris dataset and decision trees to classify different types of iris flowers in this comprehensive programming tutorial.",
+        "keywords": "Iris dataset, decision trees, machine learning, classification, programming tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Iris Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Visualize Decision Boundaries",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/inspection",
+              "sklearn/tree"
+            ]
+          },
+          {
+            "title": "Display Decision Tree Structure",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/tree"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "鸢尾花数据集上的决策树",
+      "description": "在本实验中，我们将使用鸢尾花数据集和决策树对鸢尾花的类型进行分类。我们将首先可视化在鸢尾花数据集的特征对上训练的决策树的决策边界。接下来，我们将展示在鸢尾花数据集的所有特征上训练的单个决策树的结构。",
+      "meta": {
+        "title": "鸢尾花分类 | 决策树 | 机器学习",
+        "description": "在这个全面的编程教程中，学习如何使用鸢尾花数据集和决策树对不同类型的鸢尾花进行分类。",
+        "keywords": "鸢尾花数据集, 决策树, 机器学习, 分类, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载鸢尾花数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "可视化决策边界",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/inspection",
+              "sklearn/tree"
+            ]
+          },
+          {
+            "title": "显示决策树结构",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/tree"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

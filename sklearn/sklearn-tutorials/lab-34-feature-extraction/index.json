@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Feature Extraction with Scikit-Learn",
-  "description": "In this lab, we will learn how to perform feature extraction using the scikit-learn library. Feature extraction is the process of transforming raw data into numerical features that can be used by machine learning algorithms. It involves extracting relevant information from different types of data such as text and images.",
-  "meta": {
-    "title": "Feature Extraction | Machine Learning | Scikit-learn",
-    "description": "Learn how to perform feature extraction using the scikit-learn library. Discover the process of transforming raw data into numerical features for machine learning algorithms.",
-    "keywords": "feature extraction, machine learning, scikit-learn, data preprocessing, text analysis, image processing"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Loading features from dicts",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/feature_extraction"]
-      },
-      {
-        "title": "Feature hashing",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/feature_extraction"]
-      },
-      {
-        "title": "Text feature extraction",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/feature_extraction"]
-      },
-      {
-        "title": "Customizing the vectorizer classes",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "34-feature-extraction.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "34-feature-extraction.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Feature Extraction with Scikit-Learn",
+      "description": "In this lab, we will learn how to perform feature extraction using the scikit-learn library. Feature extraction is the process of transforming raw data into numerical features that can be used by machine learning algorithms. It involves extracting relevant information from different types of data such as text and images.",
+      "meta": {
+        "title": "Feature Extraction | Machine Learning | Scikit-learn",
+        "description": "Learn how to perform feature extraction using the scikit-learn library. Discover the process of transforming raw data into numerical features for machine learning algorithms.",
+        "keywords": "feature extraction, machine learning, scikit-learn, data preprocessing, text analysis, image processing"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Loading features from dicts",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "Feature hashing",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "Text feature extraction",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "Customizing the vectorizer classes",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Scikit-Learn进行特征提取",
+      "description": "在这个实验中，我们将学习如何使用scikit-learn库进行特征提取。特征提取是将原始数据转换为机器学习算法可以使用的数值特征的过程。它涉及从不同类型的数据（如文本和图像）中提取相关信息。",
+      "meta": {
+        "title": "特征提取 | 机器学习 | Scikit-learn",
+        "description": "学习如何使用scikit-learn库进行特征提取。了解将原始数据转换为机器学习算法的数值特征的过程。",
+        "keywords": "特征提取, 机器学习, Scikit-learn, 数据预处理, 文本分析, 图像处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从字典中加载特征",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "特征哈希",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "文本特征提取",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "自定义向量化器类",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

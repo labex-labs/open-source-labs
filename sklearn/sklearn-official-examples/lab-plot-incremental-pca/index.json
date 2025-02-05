@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Incremental Principal Component Analysis on Iris Dataset",
-  "description": "This lab will guide you through a step-by-step process of using the Incremental Principal Component Analysis (IPCA) algorithm to perform dimensionality reduction on the Iris dataset. IPCA is used when the dataset is too large to fit into memory and requires an incremental approach. We will compare the results of IPCA with the traditional PCA algorithm.",
-  "meta": {
-    "title": "Incremental PCA | Dimensionality Reduction | Iris Dataset",
-    "description": "Learn how to use Incremental Principal Component Analysis (IPCA) for dimensionality reduction on the Iris dataset, and compare it with traditional PCA.",
-    "keywords": "Incremental PCA, Dimensionality Reduction, Iris Dataset, PCA, Machine Learning"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/decomposition"]
-      },
-      {
-        "title": "Load Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Perform IPCA",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Perform PCA",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize Results",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-incremental-pca.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,190 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-incremental-pca.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Incremental Principal Component Analysis on Iris Dataset",
+      "description": "This lab will guide you through a step-by-step process of using the Incremental Principal Component Analysis (IPCA) algorithm to perform dimensionality reduction on the Iris dataset. IPCA is used when the dataset is too large to fit into memory and requires an incremental approach. We will compare the results of IPCA with the traditional PCA algorithm.",
+      "meta": {
+        "title": "Incremental PCA | Dimensionality Reduction | Iris Dataset",
+        "description": "Learn how to use Incremental Principal Component Analysis (IPCA) for dimensionality reduction on the Iris dataset, and compare it with traditional PCA.",
+        "keywords": "Incremental PCA, Dimensionality Reduction, Iris Dataset, PCA, Machine Learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition"
+            ]
+          },
+          {
+            "title": "Load Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Perform IPCA",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Perform PCA",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize Results",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "鸢尾花数据集上的增量主成分分析",
+      "description": "本实验将逐步引导你使用增量主成分分析（IPCA）算法对鸢尾花数据集进行降维。当数据集太大而无法装入内存且需要采用增量方法时，会使用 IPCA。我们将把 IPCA 的结果与传统主成分分析（PCA）算法进行比较。",
+      "meta": {
+        "title": "增量主成分分析 | 降维 | 鸢尾花数据集",
+        "description": "了解如何使用增量主成分分析（IPCA）对鸢尾花数据集进行降维，并将其与传统主成分分析进行比较。",
+        "keywords": "增量主成分分析, 降维, 鸢尾花数据集, 主成分分析, 机器学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition"
+            ]
+          },
+          {
+            "title": "加载数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "执行增量主成分分析（IPCA）",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "执行主成分分析（PCA）",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化结果",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

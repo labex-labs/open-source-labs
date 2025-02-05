@@ -1,197 +1,10 @@
 {
   "type": "lab",
-  "title": "Sharing Python Code Basics",
-  "description": "At some point you might want to give your code to someone else, possibly just a co-worker. This section gives the most basic technique of doing that. For more detailed information, you'll need to consult the Python Packaging User Guide.",
-  "meta": {
-    "title": "Python Packaging | Practical Python Code",
-    "description": "Learn how to create and distribute your Python code using the setup.py file, a crucial step in making your work accessible to others.",
-    "keywords": "Python, Packaging, setup.py, Distribution, Code Sharing"
-  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Creating a setup.py file",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Presence of setuptools Import in setup.py",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/decorators",
-          "python/importing_modules",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Creating MANIFEST.in",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Presence of MANIFEST.in File",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Creating a source distribution",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Bash History for 'sdist' Command",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Installing your code",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Bash History for Compressed Archives",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Commentary",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Exercise 9.5: Make a package",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Verify Existence of Porty Application Directory",
-            "file": "verify6.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/constructor", "python/standard_libraries"],
-        "solutions": ["result_9.5.md"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "prices.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "print-report.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "README.txt",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "report.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "tableformat.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "follow.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "typedproperty.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "ticker.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "pcost.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "__init__.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "README.txt",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -200,5 +13,312 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/practical-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "portfolio.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "prices.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "print-report.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "README.txt",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "report.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "tableformat.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "follow.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "typedproperty.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "ticker.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "pcost.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "__init__.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "README.txt",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Sharing Python Code Basics",
+      "description": "At some point you might want to give your code to someone else, possibly just a co-worker. This section gives the most basic technique of doing that. For more detailed information, you'll need to consult the Python Packaging User Guide.",
+      "meta": {
+        "title": "Python Packaging | Practical Python Code",
+        "description": "Learn how to create and distribute your Python code using the setup.py file, a crucial step in making your work accessible to others.",
+        "keywords": "Python, Packaging, setup.py, Distribution, Code Sharing"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Creating a setup.py file",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Presence of setuptools Import in setup.py",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/decorators",
+              "python/importing_modules",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Creating MANIFEST.in",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Presence of MANIFEST.in File",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Creating a source distribution",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Bash History for 'sdist' Command",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Installing your code",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Bash History for Compressed Archives",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Commentary",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Exercise 9.5: Make a package",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "Verify Existence of Porty Application Directory",
+                "file": "verify6.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/constructor", "python/standard_libraries"],
+            "solutions": ["result_9.5.md"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "分享Python代码基础",
+      "description": "在某些时候，你可能想要将你的代码分享给其他人，也许只是同事。本节介绍了最基本的方法。如需更详细的信息，你需要查阅《Python打包用户指南》。",
+      "meta": {
+        "title": "Python打包 | 实用Python代码",
+        "description": "学习如何使用setup.py文件创建和分发你的Python代码，这是让他人能够使用你代码的关键一步。",
+        "keywords": "Python, 打包, setup.py, 分发, 代码分享"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建一个setup.py文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证setup.py中是否导入了setuptools",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/decorators",
+              "python/importing_modules",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "创建MANIFEST.in",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证MANIFEST.in文件是否存在",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "创建源发行版",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证'sdist' 命令的Bash历史记录",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "安装你的代码",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证压缩存档的Bash历史记录",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "注释",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "练习9.5：制作一个软件包",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "验证Porty应用程序目录是否存在",
+                "file": "verify6.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/constructor", "python/standard_libraries"],
+            "solutions": ["result_9.5.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

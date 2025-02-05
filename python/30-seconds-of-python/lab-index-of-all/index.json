@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "All Indexes of Value",
-  "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to find all the indexes of a specific value in a list. In this challenge, you will create a function that returns a list of indexes of all the occurrences of an element in a list.",
-  "meta": {
-    "title": "Find All Indexes of a Value in a Python List",
-    "description": "Discover a Python function to find all the indexes of a specific value in a list.",
-    "keywords": "search, python, list, value, index"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "All Indexes of Value",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Index of All Python Script",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_index_of_all.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "index_of_all.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_index_of_all.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "index_of_all.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "All Indexes of Value",
+      "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to find all the indexes of a specific value in a list. In this challenge, you will create a function that returns a list of indexes of all the occurrences of an element in a list.",
+      "meta": {
+        "title": "Find All Indexes of a Value in a Python List",
+        "description": "Discover a Python function to find all the indexes of a specific value in a list.",
+        "keywords": "search, python, list, value, index"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "All Indexes of Value",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Index of All Python Script",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "值的所有索引",
+      "description": "在Python中，列表是一组有序且可变的元素集合。有时，我们需要在列表中找到特定值的所有索引。在这个挑战中，你将创建一个函数，该函数返回列表中某个元素所有出现位置的索引列表。",
+      "meta": {
+        "title": "在Python列表中查找值的所有索引",
+        "description": "探索一个Python函数，用于在列表中查找特定值的所有索引。",
+        "keywords": "搜索, Python, 列表, 值, 索引"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "值的所有索引",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有Python脚本的索引",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

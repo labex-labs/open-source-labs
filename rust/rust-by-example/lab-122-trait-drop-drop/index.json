@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Rust's Drop Trait",
-  "description": "In this lab, we explore the use of the Drop trait in Rust, which is called automatically when an object goes out of scope and is used to free the resources that the object owns.",
-  "meta": {
-    "title": "Rust Programming | Drop Trait | Resource Management",
-    "description": "Explore the Rust Drop trait, which is used to free resources owned by an object when it goes out of scope. Learn how to implement the Drop trait for custom data types.",
-    "keywords": "Rust, Drop Trait, Resource Management, Programming, Tutorial"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Drop",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/drop_trait",
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/string_type",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Rust's Drop Trait",
+      "description": "In this lab, we explore the use of the Drop trait in Rust, which is called automatically when an object goes out of scope and is used to free the resources that the object owns.",
+      "meta": {
+        "title": "Rust Programming | Drop Trait | Resource Management",
+        "description": "Explore the Rust Drop trait, which is used to free resources owned by an object when it goes out of scope. Learn how to implement the Drop trait for custom data types.",
+        "keywords": "Rust, Drop Trait, Resource Management, Programming, Tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Drop",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索 Rust 的 Drop 特性",
+      "description": "在本实验中，我们探索 Rust 中 Drop 特性的用法，当对象超出作用域时，该特性会自动调用，用于释放对象所拥有的资源。",
+      "meta": {
+        "title": "Rust 编程 | Drop 特性 | 资源管理",
+        "description": "探索 Rust 的 Drop 特性，该特性用于在对象超出作用域时释放其拥有的资源。了解如何为自定义数据类型实现 Drop 特性。",
+        "keywords": "Rust, Drop 特性, 资源管理, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Drop",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

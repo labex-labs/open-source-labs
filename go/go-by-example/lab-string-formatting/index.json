@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "String Formatting Fundamentals in Golang",
-  "description": "This lab aims to test your knowledge of string formatting in Golang. You will be required to format different types of data such as integers, floats, strings, and structs using various formatting verbs.",
-  "meta": {
-    "title": "Go String Formatting | Programming Tutorials",
-    "description": "Learn how to format different data types in Go using the fmt package. Master string formatting verbs, width, and precision control for integers, floats, strings, and structs.",
-    "keywords": "Go, string formatting, programming tutorials, fmt package, formatting verbs, data types, integers, floats, strings, structs"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "String Formatting",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go String Formatting Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/strings"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "string-formatting.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "string-formatting.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "String Formatting Fundamentals in Golang",
+      "description": "This lab aims to test your knowledge of string formatting in Golang. You will be required to format different types of data such as integers, floats, strings, and structs using various formatting verbs.",
+      "meta": {
+        "title": "Go String Formatting | Programming Tutorials",
+        "description": "Learn how to format different data types in Go using the fmt package. Master string formatting verbs, width, and precision control for integers, floats, strings, and structs.",
+        "keywords": "Go, string formatting, programming tutorials, fmt package, formatting verbs, data types, integers, floats, strings, structs"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "String Formatting",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go String Formatting Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/strings"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 语言中的字符串格式化基础",
+      "description": "本实验旨在测试你对 Go 语言中字符串格式化的了解。你需要使用各种格式化动词来格式化不同类型的数据，如整数、浮点数、字符串和结构体。",
+      "meta": {
+        "title": "Go 字符串格式化 | 编程教程",
+        "description": "学习如何使用 fmt 包在 Go 语言中格式化不同的数据类型。掌握整数、浮点数、字符串和结构体的字符串格式化动词、宽度和精度控制。",
+        "keywords": "Go, 字符串格式化, 编程教程, fmt 包, 格式化动词, 数据类型, 整数, 浮点数, 字符串, 结构体"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "字符串格式化",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 字符串格式化输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/strings"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

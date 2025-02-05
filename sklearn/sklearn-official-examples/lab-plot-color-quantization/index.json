@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Color Quantization Using K-Means",
-  "description": "Color quantization is a process of reducing the number of distinct colors used in an image while preserving its overall appearance. This is done by clustering similar colors together and representing them with a single color value. In this lab, we will use K-Means clustering algorithm to perform color quantization on an image of the Summer Palace in China.",
-  "meta": {
-    "title": "Color Quantization | Image Processing | K-Means Clustering",
-    "description": "Learn how to perform color quantization on an image using the K-Means clustering algorithm. Explore the process of reducing the number of distinct colors while preserving the overall appearance.",
-    "keywords": "color quantization, image processing, k-means clustering, image analysis, computer vision"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load and Display the Original Image",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Convert Image to Floats and Reshape",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fit the K-Means Model",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/utils"]
-      },
-      {
-        "title": "Predict Color Indices Using Random Codebook",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Recreate the Image",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-color-quantization.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,182 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-color-quantization.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Color Quantization Using K-Means",
+      "description": "Color quantization is a process of reducing the number of distinct colors used in an image while preserving its overall appearance. This is done by clustering similar colors together and representing them with a single color value. In this lab, we will use K-Means clustering algorithm to perform color quantization on an image of the Summer Palace in China.",
+      "meta": {
+        "title": "Color Quantization | Image Processing | K-Means Clustering",
+        "description": "Learn how to perform color quantization on an image using the K-Means clustering algorithm. Explore the process of reducing the number of distinct colors while preserving the overall appearance.",
+        "keywords": "color quantization, image processing, k-means clustering, image analysis, computer vision"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load and Display the Original Image",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Convert Image to Floats and Reshape",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fit the K-Means Model",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/utils"]
+          },
+          {
+            "title": "Predict Color Indices Using Random Codebook",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Recreate the Image",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用K均值进行颜色量化",
+      "description": "颜色量化是一个在保留图像整体外观的同时减少图像中使用的不同颜色数量的过程。这是通过将相似颜色聚类在一起并用单个颜色值表示它们来实现的。在本实验中，我们将使用K均值聚类算法对一张中国颐和园的图像进行颜色量化。",
+      "meta": {
+        "title": "颜色量化 | 图像处理 | K均值聚类",
+        "description": "学习如何使用K均值聚类算法对图像进行颜色量化。探索在保留整体外观的同时减少不同颜色数量的过程。",
+        "keywords": "颜色量化, 图像处理, K均值聚类, 图像分析, 计算机视觉"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载并显示原始图像",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "将图像转换为浮点数并重塑形状",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "拟合K均值模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/utils"]
+          },
+          {
+            "title": "使用随机码本预测颜色索引",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "重新创建图像",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

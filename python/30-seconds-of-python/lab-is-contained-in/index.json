@@ -1,67 +1,10 @@
 {
   "type": "lab",
-  "title": "Checking List Containment in Python",
-  "description": "In Python, it is often necessary to check if one list is contained in another list. This can be a bit tricky, especially if the order of the elements in the lists doesn't matter. In this challenge, you will write a function that checks if the elements of one list are contained in another list, regardless of order.",
-  "meta": {
-    "title": "Python List Containment | Programming Tutorials",
-    "description": "Learn how to check if one list is contained in another list in Python, regardless of order. Improve your programming skills with this helpful tutorial.",
-    "keywords": "Python, List Containment, Programming Tutorials, List Manipulation, Python Coding"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "List Containment",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_contained_in.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_contained_in.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -70,5 +13,117 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_is_contained_in.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "is_contained_in.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Checking List Containment in Python",
+      "description": "In Python, it is often necessary to check if one list is contained in another list. This can be a bit tricky, especially if the order of the elements in the lists doesn't matter. In this challenge, you will write a function that checks if the elements of one list are contained in another list, regardless of order.",
+      "meta": {
+        "title": "Python List Containment | Programming Tutorials",
+        "description": "Learn how to check if one list is contained in another list in Python, regardless of order. Improve your programming skills with this helpful tutorial.",
+        "keywords": "Python, List Containment, Programming Tutorials, List Manipulation, Python Coding"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "List Containment",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Python中检查列表包含关系",
+      "description": "在Python中，经常需要检查一个列表是否包含在另一个列表中。这可能有点棘手，特别是当列表中元素的顺序无关紧要时。在这个挑战中，你将编写一个函数，用于检查一个列表的元素是否包含在另一个列表中，而不考虑顺序。",
+      "meta": {
+        "title": "Python列表包含关系 | 编程教程",
+        "description": "学习如何在Python中检查一个列表是否包含在另一个列表中，而不考虑顺序。通过这个实用的教程提升你的编程技能。",
+        "keywords": "Python, 列表包含关系, 编程教程, 列表操作, Python编码"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列表包含关系",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

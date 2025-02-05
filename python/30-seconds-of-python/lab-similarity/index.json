@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "Python List Comprehension Comparison",
-  "description": "In Python, it is often necessary to compare two lists and find the elements that exist in both lists. This can be achieved by using list comprehension, a powerful feature of Python that allows us to create new lists based on existing lists.",
-  "meta": {
-    "title": "Python List Similarity | List Comprehension",
-    "description": "Learn how to compare and find common elements between two lists in Python using list comprehension, a powerful feature for creating new lists.",
-    "keywords": "Python, List Similarity, List Comprehension, Programming Tutorials, Python Lists"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "List Similarity",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_similarity.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "similarity.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_similarity.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "similarity.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Python List Comprehension Comparison",
+      "description": "In Python, it is often necessary to compare two lists and find the elements that exist in both lists. This can be achieved by using list comprehension, a powerful feature of Python that allows us to create new lists based on existing lists.",
+      "meta": {
+        "title": "Python List Similarity | List Comprehension",
+        "description": "Learn how to compare and find common elements between two lists in Python using list comprehension, a powerful feature for creating new lists.",
+        "keywords": "Python, List Similarity, List Comprehension, Programming Tutorials, Python Lists"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "List Similarity",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Python列表推导式比较",
+      "description": "在Python中，经常需要比较两个列表并找出两个列表中都存在的元素。这可以通过使用列表推导式来实现，列表推导式是Python的一项强大功能，它允许我们基于现有列表创建新列表。",
+      "meta": {
+        "title": "Python列表相似度 | 列表推导式",
+        "description": "学习如何使用列表推导式在Python中比较并找到两个列表之间的共同元素，列表推导式是创建新列表的强大功能。",
+        "keywords": "Python, 列表相似度, 列表推导式, 编程教程, Python列表"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列表相似度",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

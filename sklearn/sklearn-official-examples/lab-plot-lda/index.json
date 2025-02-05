@@ -1,89 +1,10 @@
 {
   "type": "lab",
-  "title": "Linear Discriminant Analysis for Classification",
-  "description": "This lab will introduce you to Linear Discriminant Analysis (LDA) and how it can be used for classification. We will use scikit-learn, a popular machine learning library in Python, to implement LDA. We will also explore how the Ledoit-Wolf and Oracle Shrinkage Approximating (OAS) estimators of covariance can improve classification.",
-  "meta": {
-    "title": "Linear Discriminant Analysis (LDA) | Machine Learning | Data Science",
-    "description": "Explore Linear Discriminant Analysis (LDA) for classification using Python and scikit-learn. Learn how to improve performance with Ledoit-Wolf and Oracle Shrinkage Approximating (OAS) estimators.",
-    "keywords": "Linear Discriminant Analysis, LDA, Machine Learning, Data Science, Classification, Scikit-learn, Ledoit-Wolf, OAS"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Random Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Implement LDA",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/covariance",
-          "sklearn/discriminant_analysis"
-        ]
-      },
-      {
-        "title": "Train and Test Classifiers",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-lda.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -92,5 +13,166 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-lda.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Linear Discriminant Analysis for Classification",
+      "description": "This lab will introduce you to Linear Discriminant Analysis (LDA) and how it can be used for classification. We will use scikit-learn, a popular machine learning library in Python, to implement LDA. We will also explore how the Ledoit-Wolf and Oracle Shrinkage Approximating (OAS) estimators of covariance can improve classification.",
+      "meta": {
+        "title": "Linear Discriminant Analysis (LDA) | Machine Learning | Data Science",
+        "description": "Explore Linear Discriminant Analysis (LDA) for classification using Python and scikit-learn. Learn how to improve performance with Ledoit-Wolf and Oracle Shrinkage Approximating (OAS) estimators.",
+        "keywords": "Linear Discriminant Analysis, LDA, Machine Learning, Data Science, Classification, Scikit-learn, Ledoit-Wolf, OAS"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Random Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Implement LDA",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/discriminant_analysis"
+            ]
+          },
+          {
+            "title": "Train and Test Classifiers",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "用于分类的线性判别分析",
+      "description": "本实验将向你介绍线性判别分析（LDA）以及它如何用于分类。我们将使用Python中流行的机器学习库scikit-learn来实现LDA。我们还将探讨协方差的Ledoit-Wolf和Oracle收缩近似（OAS）估计器如何提高分类效果。",
+      "meta": {
+        "title": "线性判别分析（LDA）| 机器学习 | 数据科学",
+        "description": "使用Python和scikit-learn探索用于分类的线性判别分析（LDA）。了解如何使用Ledoit-Wolf和Oracle收缩近似（OAS）估计器提高性能。",
+        "keywords": "线性判别分析, LDA, 机器学习, 数据科学, 分类, Scikit-learn, Ledoit-Wolf, OAS"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成随机数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "实现线性判别分析（LDA）",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/discriminant_analysis"
+            ]
+          },
+          {
+            "title": "训练和测试分类器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,113 +1,10 @@
 {
   "type": "lab",
-  "title": "Concurrent Data Transfer with Rust Channels",
-  "description": "In this lab, we explore message passing as a safe concurrency approach, using channels in Rust's standard library to send and receive data between threads.",
-  "meta": {
-    "title": "Using Message Passing to Transfer Data Between Threads | Rust Programming",
-    "description": "Learn how to use message passing and channels in Rust to safely transfer data between threads in this Rust programming tutorial.",
-    "keywords": "Rust, Concurrency, Message Passing, Channels, Multithreading, Data Transfer"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Using Message Passing to Transfer Data Between Threads",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/message_passing",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Channels and Ownership Transference",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/message_passing",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Sending Multiple Values and Seeing the Receiver Waiting",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/message_passing",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Creating Multiple Producers by Cloning the Transmitter",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/message_passing",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -116,5 +13,223 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Concurrent Data Transfer with Rust Channels",
+      "description": "In this lab, we explore message passing as a safe concurrency approach, using channels in Rust's standard library to send and receive data between threads.",
+      "meta": {
+        "title": "Using Message Passing to Transfer Data Between Threads | Rust Programming",
+        "description": "Learn how to use message passing and channels in Rust to safely transfer data between threads in this Rust programming tutorial.",
+        "keywords": "Rust, Concurrency, Message Passing, Channels, Multithreading, Data Transfer"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Using Message Passing to Transfer Data Between Threads",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Channels and Ownership Transference",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Sending Multiple Values and Seeing the Receiver Waiting",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Creating Multiple Producers by Cloning the Transmitter",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Rust 通道进行并发数据传输",
+      "description": "在本实验中，我们探索消息传递作为一种安全的并发方法，使用 Rust 标准库中的通道在线程之间发送和接收数据。",
+      "meta": {
+        "title": "使用消息传递在线程间传输数据 | Rust 编程",
+        "description": "在本 Rust 编程教程中，学习如何使用 Rust 中的消息传递和通道在线程之间安全地传输数据。",
+        "keywords": "Rust, 并发, 消息传递, 通道, 多线程, 数据传输"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用消息传递在线程间传输数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "通道与所有权转移",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "发送多个值并观察接收者等待",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "通过克隆发送端创建多个生产者",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

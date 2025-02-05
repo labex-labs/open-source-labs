@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Delayed Function Execution",
-  "description": "In this lab, you will learn how to delay the execution of a function in Python using the `time.sleep()` function, which can be useful in scenarios where you need to wait for a certain event to occur before executing a function.",
-  "meta": {
-    "title": "Python | Delayed Function Execution | Time Management",
-    "description": "Learn how to delay the execution of a function in Python using the time.sleep() function. Useful for scenarios where you need to wait for a certain event before executing a function.",
-    "keywords": "Python, function, delay, time management, programming, tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Delayed Function Execution",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lambda_functions",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_delay.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "delay.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_delay.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "delay.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Delayed Function Execution",
+      "description": "In this lab, you will learn how to delay the execution of a function in Python using the `time.sleep()` function, which can be useful in scenarios where you need to wait for a certain event to occur before executing a function.",
+      "meta": {
+        "title": "Python | Delayed Function Execution | Time Management",
+        "description": "Learn how to delay the execution of a function in Python using the time.sleep() function. Useful for scenarios where you need to wait for a certain event before executing a function.",
+        "keywords": "Python, function, delay, time management, programming, tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Delayed Function Execution",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lambda_functions",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "延迟函数执行",
+      "description": "在这个实验中，你将学习如何使用 `time.sleep()` 函数在 Python 中延迟函数的执行，这在你需要等待某个事件发生后再执行函数的场景中非常有用。",
+      "meta": {
+        "title": "Python | 延迟函数执行 | 时间管理",
+        "description": "学习如何使用 time.sleep() 函数在 Python 中延迟函数的执行。对于需要在执行函数前等待某个事件的场景很有用。",
+        "keywords": "Python, 函数, 延迟, 时间管理, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "延迟函数执行",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python 脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lambda_functions",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

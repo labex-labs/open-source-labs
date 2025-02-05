@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Pad String to Specified Length in Python",
-  "description": "In this lab, you will learn how to use the `rjust()` and `ljust()` methods in Python to pad a string on both sides with a specified character to a desired length.",
-  "meta": {
-    "title": "Pad Strings to Specified Length in Python",
-    "description": "Learn how to pad strings with a specific character to a desired length in Python.",
-    "keywords": "python, padding, length, string, formatting"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Pad String",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/math_random",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_pad.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "pad.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_pad.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "pad.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Pad String to Specified Length in Python",
+      "description": "In this lab, you will learn how to use the `rjust()` and `ljust()` methods in Python to pad a string on both sides with a specified character to a desired length.",
+      "meta": {
+        "title": "Pad Strings to Specified Length in Python",
+        "description": "Learn how to pad strings with a specific character to a desired length in Python.",
+        "keywords": "python, padding, length, string, formatting"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Pad String",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Python中将字符串填充到指定长度",
+      "description": "在这个实验中，你将学习如何在Python中使用`rjust()`和`ljust()`方法，用指定字符在字符串两侧填充到所需长度。",
+      "meta": {
+        "title": "在Python中将字符串填充到指定长度",
+        "description": "学习如何在Python中用特定字符将字符串填充到所需长度。",
+        "keywords": "Python, 填充, 长度, 字符串, 格式化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "填充字符串",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

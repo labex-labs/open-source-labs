@@ -1,103 +1,10 @@
 {
   "type": "lab",
-  "title": "Matplotlib Quiver Plot",
-  "description": "This lab will guide you through how to create a quiver plot using Matplotlib in Python. A quiver plot displays vector fields as arrows. It is useful in visualizing fluid flows, electric and magnetic fields, and other types of vector fields.",
-  "meta": {
-    "title": "Mastering Matplotlib Quiver Plots",
-    "description": "Explore vector fields with interactive Matplotlib quiver plots in Python.",
-    "keywords": "matplotlib, vector field, python, data visualization, quiver plot"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/numerical_computing"
-        ]
-      },
-      {
-        "title": "Create Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/tuples"]
-      },
-      {
-        "title": "Create the Quiver Plot",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/quiver_plots", "python/tuples"]
-      },
-      {
-        "title": "Create the Quiver Key",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/tuples"]
-      },
-      {
-        "title": "Display the Plot",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "quiver-simple-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -106,5 +13,194 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "quiver-simple-demo.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Matplotlib Quiver Plot",
+      "description": "This lab will guide you through how to create a quiver plot using Matplotlib in Python. A quiver plot displays vector fields as arrows. It is useful in visualizing fluid flows, electric and magnetic fields, and other types of vector fields.",
+      "meta": {
+        "title": "Mastering Matplotlib Quiver Plots",
+        "description": "Explore vector fields with interactive Matplotlib quiver plots in Python.",
+        "keywords": "matplotlib, vector field, python, data visualization, quiver plot"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "Create Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "Create the Quiver Plot",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["matplotlib/quiver_plots", "python/tuples"]
+          },
+          {
+            "title": "Create the Quiver Key",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "Display the Plot",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Matplotlib 箭袋图",
+      "description": "本实验将指导你如何使用 Python 中的 Matplotlib 创建箭袋图。箭袋图以箭头形式显示向量场。它在可视化流体流动、电场和磁场以及其他类型的向量场方面很有用。",
+      "meta": {
+        "title": "精通 Matplotlib 箭袋图",
+        "description": "在 Python 中通过交互式 Matplotlib 箭袋图探索向量场。",
+        "keywords": "Matplotlib, 向量场, Python, 数据可视化, 箭袋图"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "创建数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "创建箭袋图",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["matplotlib/quiver_plots", "python/tuples"]
+          },
+          {
+            "title": "创建箭袋图的比例尺",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "显示图表",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

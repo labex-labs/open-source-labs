@@ -1,102 +1,10 @@
 {
   "type": "lab",
-  "title": "Defining and Importing Python Modules",
-  "description": "In this lab, you will learn about modules and how to use the import statement in Python.",
-  "meta": {
-    "title": "Python Modules | Import Statements | Programming Tutorials",
-    "description": "Explore Python modules, learn how to use the import statement, and dive into programming tutorials with hands-on examples.",
-    "keywords": "Python, Modules, Import Statements, Programming Tutorials, Python Exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Using the import statement",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python History Imports and Froms",
-            "file": "verify1.sh",
-            "hint": "Please use the 'import' statement to load these programs and use their functionality.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/importing_modules",
-          "python/python_shell",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      },
-      {
-        "title": "Main Module",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Main Function in Python Script",
-            "file": "verify2.sh",
-            "hint": "Please modify the program as required.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["pcost.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "pcost.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio2.dat",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.dat",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -105,5 +13,177 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "pcost.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio2.dat",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.dat",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Defining and Importing Python Modules",
+      "description": "In this lab, you will learn about modules and how to use the import statement in Python.",
+      "meta": {
+        "title": "Python Modules | Import Statements | Programming Tutorials",
+        "description": "Explore Python modules, learn how to use the import statement, and dive into programming tutorials with hands-on examples.",
+        "keywords": "Python, Modules, Import Statements, Programming Tutorials, Python Exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Using the import statement",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python History Imports and Froms",
+                "file": "verify1.sh",
+                "hint": "Please use the 'import' statement to load these programs and use their functionality.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/python_shell",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "Main Module",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Main Function in Python Script",
+                "file": "verify2.sh",
+                "hint": "Please modify the program as required.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["pcost.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "定义和导入 Python 模块",
+      "description": "在本实验中，你将学习 Python 中的模块以及如何使用 import 语句。",
+      "meta": {
+        "title": "Python 模块 | 导入语句 | 编程教程",
+        "description": "探索 Python 模块，学习如何使用 import 语句，并通过实际示例深入了解编程教程。",
+        "keywords": "Python, 模块, 导入语句, 编程教程, Python 练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用 import 语句",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录中的导入和 from 语句",
+                "file": "verify1.sh",
+                "hint": "请使用 'import' 语句加载这些程序并使用它们的功能。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/python_shell",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "主模块",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 Python 脚本中主函数的存在",
+                "file": "verify2.sh",
+                "hint": "请按要求修改程序。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["pcost.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

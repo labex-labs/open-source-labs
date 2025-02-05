@@ -1,139 +1,10 @@
 {
   "type": "lab",
-  "title": "Define a Simple Class",
-  "description": "In this lab, you will add features to the simple class Stock and write utility functions for working with stock holdings.",
-  "meta": {
-    "title": "Define a Simple Class: Enhance Your Python Programming Skills",
-    "description": "Learn how to define a simple class and add new methods in this Python programming tutorial.",
-    "keywords": "object oriented, stock, python, class, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Adding a new method",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Sell Function in stock.py",
-            "file": "verify1.sh",
-            "hint": "Please implement the 'sell(nshares)' method.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
-        ],
-        "solutions": ["step1_solution.py"]
-      },
-      {
-        "title": "Reading a portfolio",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify CSV File Reading and Appending",
-            "file": "verify2.sh",
-            "hint": "Please implement the 'read_portfolio()' function.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["step2_solution.py"]
-      },
-      {
-        "title": "Printing a Table",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Presence of For Loop and Print Statements",
-            "file": "verify3.sh",
-            "hint": "Please implement the 'print_portfolio()' function.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["step3_solution.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -142,5 +13,261 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Define a Simple Class",
+      "description": "In this lab, you will add features to the simple class Stock and write utility functions for working with stock holdings.",
+      "meta": {
+        "title": "Define a Simple Class: Enhance Your Python Programming Skills",
+        "description": "Learn how to define a simple class and add new methods in this Python programming tutorial.",
+        "keywords": "object oriented, stock, python, class, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Adding a new method",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Sell Function in stock.py",
+                "file": "verify1.sh",
+                "hint": "Please implement the 'sell(nshares)' method.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/tuples"
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "Reading a portfolio",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify CSV File Reading and Appending",
+                "file": "verify2.sh",
+                "hint": "Please implement the 'read_portfolio()' function.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step2_solution.py"]
+          },
+          {
+            "title": "Printing a Table",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Presence of For Loop and Print Statements",
+                "file": "verify3.sh",
+                "hint": "Please implement the 'print_portfolio()' function.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step3_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "定义一个简单类",
+      "description": "在本实验中，你将为简单类Stock添加功能，并编写用于处理股票持有情况的实用函数。",
+      "meta": {
+        "title": "定义一个简单类：提升你的Python编程技能",
+        "description": "在本Python编程教程中学习如何定义一个简单类并添加新方法。",
+        "keywords": "面向对象, 股票, Python, 类, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "添加一个新方法",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证stock.py中是否存在卖出函数",
+                "file": "verify1.sh",
+                "hint": "请实现'sell(nshares)' 方法。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/tuples"
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "读取投资组合",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证CSV文件读取与追加",
+                "file": "verify2.sh",
+                "hint": "请实现'read_portfolio()' 函数。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step2_solution.py"]
+          },
+          {
+            "title": "打印表格",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证是否存在for循环和打印语句",
+                "file": "verify3.sh",
+                "hint": "请实现'print_portfolio()'函数。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step3_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

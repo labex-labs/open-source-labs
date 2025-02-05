@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Dynamic Content Generation with Golang Templates",
-  "description": "In this lab, you will learn how to use the Go `text/template` package to generate dynamic content, including accessing struct fields, providing conditional execution, and looping through slices, arrays, maps, or channels.",
-  "meta": {
-    "title": "Go Programming | Text Templates | Dynamic Content",
-    "description": "This lab demonstrates the use of the Go `text/template` package to generate dynamic content, including accessing struct fields, providing conditional execution, and looping through data structures.",
-    "keywords": "Go Programming, Text Templates, Dynamic Content, Golang, Template Parsing, Template Execution"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Text Templates",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Run Templates Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/text_templates"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "text-templates.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "text-templates.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Dynamic Content Generation with Golang Templates",
+      "description": "In this lab, you will learn how to use the Go `text/template` package to generate dynamic content, including accessing struct fields, providing conditional execution, and looping through slices, arrays, maps, or channels.",
+      "meta": {
+        "title": "Go Programming | Text Templates | Dynamic Content",
+        "description": "This lab demonstrates the use of the Go `text/template` package to generate dynamic content, including accessing struct fields, providing conditional execution, and looping through data structures.",
+        "keywords": "Go Programming, Text Templates, Dynamic Content, Golang, Template Parsing, Template Execution"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Text Templates",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Run Templates Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/text_templates"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Go语言模板生成动态内容",
+      "description": "在本实验中，你将学习如何使用Go语言的`text/template`包来生成动态内容，包括访问结构体字段、提供条件执行以及遍历切片、数组、映射或通道。",
+      "meta": {
+        "title": "Go编程 | 文本模板 | 动态内容",
+        "description": "本实验演示了如何使用Go语言的`text/template`包来生成动态内容，包括访问结构体字段、提供条件执行以及遍历数据结构。",
+        "keywords": "Go编程, 文本模板, 动态内容, Go语言, 模板解析, 模板执行"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文本模板",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go运行模板输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/text_templates"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Replacing Go Process with exec",
-  "description": "This lab focuses on replacing the current Go process with another process using Go's implementation of the classic exec function.",
-  "meta": {
-    "title": "Go Exec Function | Process Replacement Tutorial",
-    "description": "Learn how to replace the current Go process with another process using Go's implementation of the classic exec function.",
-    "keywords": "Go programming, exec function, process replacement, process execution, environment variables"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Execing Processes",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Execing Processes",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/processes"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "execing-processes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "execing-processes.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Replacing Go Process with exec",
+      "description": "This lab focuses on replacing the current Go process with another process using Go's implementation of the classic exec function.",
+      "meta": {
+        "title": "Go Exec Function | Process Replacement Tutorial",
+        "description": "Learn how to replace the current Go process with another process using Go's implementation of the classic exec function.",
+        "keywords": "Go programming, exec function, process replacement, process execution, environment variables"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Execing Processes",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Execing Processes",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/processes"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用exec替换Go进程",
+      "description": "本实验着重于使用Go语言对经典exec函数的实现，用另一个进程替换当前的Go进程。",
+      "meta": {
+        "title": "Go语言exec函数 | 进程替换教程",
+        "description": "学习如何使用Go语言对经典exec函数的实现，用另一个进程替换当前的Go进程。",
+        "keywords": "Go编程, exec函数, 进程替换, 进程执行, 环境变量"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "执行进程",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序执行进程",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/processes"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

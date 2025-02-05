@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Add Days to a Given Date",
-  "description": "In this lab, you will learn how to add or subtract days from a given date using the `datetime` module in Python, which can be useful for various date-related calculations.",
-  "meta": {
-    "title": "Python Datetime Add Days | Add Days to Date",
-    "description": "Learn how to add days to date in Python using datetime module. Master date calculations with practical examples to add or subtract days, handle timedelta operations, and calculate future dates.",
-    "keywords": "Python, datetime, date, add days, subtract days, time calculation, programming tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Add Days to Date",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/date_time",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_add_days.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "add_days.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_add_days.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "add_days.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Add Days to a Given Date",
+      "description": "In this lab, you will learn how to add or subtract days from a given date using the `datetime` module in Python, which can be useful for various date-related calculations.",
+      "meta": {
+        "title": "Python Datetime Add Days | Add Days to Date",
+        "description": "Learn how to add days to date in Python using datetime module. Master date calculations with practical examples to add or subtract days, handle timedelta operations, and calculate future dates.",
+        "keywords": "Python, datetime, date, add days, subtract days, time calculation, programming tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Add Days to Date",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/date_time",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "给给定日期增加天数",
+      "description": "在这个实验中，你将学习如何使用 Python 中的 `datetime` 模块对给定日期进行天数的加减操作，这对于各种与日期相关的计算很有用。",
+      "meta": {
+        "title": "Python 日期时间增加天数 | 给日期增加天数",
+        "description": "学习如何使用 datetime 模块在 Python 中给日期增加天数。通过实际示例掌握日期计算，包括增加或减去天数、处理时间增量操作以及计算未来日期。",
+        "keywords": "Python, 日期时间, 日期, 增加天数, 减去天数, 时间计算, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "给日期增加天数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python 脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/date_time",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

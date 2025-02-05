@@ -1,139 +1,10 @@
 {
   "type": "lab",
-  "title": "Reshaping Data with Pandas",
-  "description": "In this lab, we will explore how to reshape data in pandas using various functions like sort_values, pivot, pivot_table, and melt. We will work with the Titanic and Air Quality datasets to demonstrate the reshaping techniques.",
-  "meta": {
-    "title": "Reshape Data with Pandas: Techniques and Examples",
-    "description": "Explore data reshaping in Pandas using sort_values, pivot, pivot_table, and melt with Titanic and Air Quality datasets.",
-    "keywords": "python playground, pandas, titanic, python, sort values, data reshaping, air quality"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Libraries and Load Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/read_csv",
-          "python/booleans",
-          "python/comments",
-          "python/data_analysis",
-          "python/importing_modules",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Sort Table Rows",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/conditional_selection",
-          "pandas/select_columns",
-          "pandas/sort_data",
-          "python/booleans",
-          "python/comments",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Convert Long to Wide Table Format",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/conditional_selection",
-          "pandas/groupby_operations",
-          "pandas/reshape_data",
-          "pandas/select_columns",
-          "pandas/sort_data",
-          "python/comments",
-          "python/for_loops",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Create a Pivot Table",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["pandas/pivot_tables", "python/tuples"]
-      },
-      {
-        "title": "Convert Wide to Long Format",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/reshape_data",
-          "python/comments",
-          "python/for_loops",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "07-reshape-table-layout.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "data/titanic.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "data/air_quality_long.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -142,5 +13,256 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
     "repo": "https://github.com/pandas-dev/pandas"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "07-reshape-table-layout.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "data/titanic.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "data/air_quality_long.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Reshaping Data with Pandas",
+      "description": "In this lab, we will explore how to reshape data in pandas using various functions like sort_values, pivot, pivot_table, and melt. We will work with the Titanic and Air Quality datasets to demonstrate the reshaping techniques.",
+      "meta": {
+        "title": "Reshape Data with Pandas: Techniques and Examples",
+        "description": "Explore data reshaping in Pandas using sort_values, pivot, pivot_table, and melt with Titanic and Air Quality datasets.",
+        "keywords": "python playground, pandas, titanic, python, sort values, data reshaping, air quality"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Libraries and Load Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/read_csv",
+              "python/booleans",
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Sort Table Rows",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/select_columns",
+              "pandas/sort_data",
+              "python/booleans",
+              "python/comments",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Convert Long to Wide Table Format",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/groupby_operations",
+              "pandas/reshape_data",
+              "pandas/select_columns",
+              "pandas/sort_data",
+              "python/comments",
+              "python/for_loops",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Create a Pivot Table",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["pandas/pivot_tables", "python/tuples"]
+          },
+          {
+            "title": "Convert Wide to Long Format",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/reshape_data",
+              "python/comments",
+              "python/for_loops",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Pandas 重塑数据",
+      "description": "在本实验中，我们将探索如何使用 sort_values、pivot、pivot_table 和 melt 等各种函数在 pandas 中重塑数据。我们将使用泰坦尼克号和空气质量数据集来演示重塑技术。",
+      "meta": {
+        "title": "使用 Pandas 重塑数据：技术与示例",
+        "description": "使用 sort_values、pivot、pivot_table 和 melt 以及泰坦尼克号和空气质量数据集探索 Pandas 中的数据重塑。",
+        "keywords": "Python 实践, Pandas, 泰坦尼克号, Python, 排序值, 数据重塑, 空气质量"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库并加载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/read_csv",
+              "python/booleans",
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "对表格行进行排序",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/select_columns",
+              "pandas/sort_data",
+              "python/booleans",
+              "python/comments",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "将长表格格式转换为宽表格格式",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/groupby_operations",
+              "pandas/reshape_data",
+              "pandas/select_columns",
+              "pandas/sort_data",
+              "python/comments",
+              "python/for_loops",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "创建数据透视表",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["pandas/pivot_tables", "python/tuples"]
+          },
+          {
+            "title": "将宽格式转换为长格式",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/reshape_data",
+              "python/comments",
+              "python/for_loops",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

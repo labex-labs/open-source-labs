@@ -1,132 +1,10 @@
 {
   "type": "lab",
-  "title": "Metaclasses in Action",
-  "description": "In this lab, you will explore metaclasses and their practical applications in Python.",
-  "meta": {
-    "title": "Metaclasses in Action: Unlocking the Power of Python's Metaprogramming",
-    "description": "Dive into the world of metaclasses and explore how they can revolutionize your Python programming.",
-    "keywords": "metaclass, python, metaprogramming, structure, type checking"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "The Final Frontier",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Metaclass Methods and Static Methods",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lambda_functions",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["validate.py", "structure.py", "stock.py"]
-      },
-      {
-        "title": "Stare in Amazement",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python History Includes Stock Reader and read_csv_as_instances",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "reader.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "structure.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "tableformat.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "teststock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "validate.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -135,5 +13,222 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "reader.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "structure.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "tableformat.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "teststock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "validate.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Metaclasses in Action",
+      "description": "In this lab, you will explore metaclasses and their practical applications in Python.",
+      "meta": {
+        "title": "Metaclasses in Action: Unlocking the Power of Python's Metaprogramming",
+        "description": "Dive into the world of metaclasses and explore how they can revolutionize your Python programming.",
+        "keywords": "metaclass, python, metaprogramming, structure, type checking"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "The Final Frontier",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Metaclass Methods and Static Methods",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lambda_functions",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["validate.py", "structure.py", "stock.py"]
+          },
+          {
+            "title": "Stare in Amazement",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python History Includes Stock Reader and read_csv_as_instances",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "元类的实际应用",
+      "description": "在本实验中，你将探索元类及其在Python中的实际应用。",
+      "meta": {
+        "title": "元类的实际应用：释放Python元编程的力量",
+        "description": "深入元类的世界，探索它们如何彻底改变你的Python编程。",
+        "keywords": "元类, Python, 元编程, 结构, 类型检查"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "最终前沿",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证元类方法和静态方法",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lambda_functions",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["validate.py", "structure.py", "stock.py"]
+          },
+          {
+            "title": "惊叹不已",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中包含股票读取器和read_csv_as_instances",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

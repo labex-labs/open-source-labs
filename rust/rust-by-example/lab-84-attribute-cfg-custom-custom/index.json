@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Conditional Rust Function Compilation",
-  "description": "In this lab, we have a code snippet that includes a function called conditional_function(), but it will only be compiled and executed if a custom conditional called some_condition is passed to rustc using the --cfg flag.",
-  "meta": {
-    "title": "Rust Programming | Conditional Functions | Custom Configurations",
-    "description": "Learn how to use custom conditional functions in Rust programming, including how to pass custom configuration flags to the compiler.",
-    "keywords": "Rust, programming, conditional functions, custom configurations, compiler flags"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Custom",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/expressions_statements", "rust/function_syntax"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Conditional Rust Function Compilation",
+      "description": "In this lab, we have a code snippet that includes a function called conditional_function(), but it will only be compiled and executed if a custom conditional called some_condition is passed to rustc using the --cfg flag.",
+      "meta": {
+        "title": "Rust Programming | Conditional Functions | Custom Configurations",
+        "description": "Learn how to use custom conditional functions in Rust programming, including how to pass custom configuration flags to the compiler.",
+        "keywords": "Rust, programming, conditional functions, custom configurations, compiler flags"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Custom",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 条件函数编译",
+      "description": "在本实验中，我们有一段代码片段，其中包含一个名为 conditional_function() 的函数，但只有在使用 --cfg 标志将一个名为 some_condition 的自定义条件传递给 rustc 时，它才会被编译和执行。",
+      "meta": {
+        "title": "Rust 编程 | 条件函数 | 自定义配置",
+        "description": "学习如何在 Rust 编程中使用自定义条件函数，包括如何将自定义配置标志传递给编译器。",
+        "keywords": "Rust, 编程, 条件函数, 自定义配置, 编译器标志"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自定义",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

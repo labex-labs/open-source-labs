@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Switch to a Branch",
-  "description": "In Git, branches are used to create different versions of a project. Switching between branches is a common task when working with Git. In this lab, you will learn how to switch to an existing branch in a Git repository.",
-  "meta": {
-    "title": "Switch to a Branch in Git",
-    "description": "Learn how to switch to an existing branch in a Git repository.",
-    "keywords": "version control, switch, repository, git labs, branch, git, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Switch to a Branch",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that you have switched to the branch",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/branch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Switch to a Branch",
+      "description": "In Git, branches are used to create different versions of a project. Switching between branches is a common task when working with Git. In this lab, you will learn how to switch to an existing branch in a Git repository.",
+      "meta": {
+        "title": "Switch to a Branch in Git",
+        "description": "Learn how to switch to an existing branch in a Git repository.",
+        "keywords": "version control, switch, repository, git labs, branch, git, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Switch to a Branch",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that you have switched to the branch",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "切换到分支",
+      "description": "在Git中，分支用于创建项目的不同版本。使用Git时，在不同分支之间切换是一项常见任务。在本实验中，你将学习如何切换到Git仓库中的现有分支。",
+      "meta": {
+        "title": "在Git中切换到分支",
+        "description": "学习如何切换到Git仓库中的现有分支。",
+        "keywords": "版本控制, 切换, 仓库, Git实验, 分支, Git, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "切换到分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证你已切换到该分支",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

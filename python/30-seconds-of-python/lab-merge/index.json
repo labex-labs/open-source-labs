@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "Merging Multiple Lists in Python",
-  "description": "In Python, we can merge two or more lists into a single list using various methods. One such method is to combine elements from each of the input lists based on their positions. In this challenge, you will be tasked with writing a function that merges multiple lists into a list of lists.",
-  "meta": {
-    "title": "Python | List Merging | Programming Tutorials",
-    "description": "Learn how to merge multiple lists into a single list of lists in Python. Discover various techniques and explore practical examples.",
-    "keywords": "Python, List Merging, Programming Tutorials, List Manipulation, Data Structures"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Merge Lists",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Student Merging Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/default_arguments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/keyword_arguments",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_merge.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "merge.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_merge.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "merge.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Merging Multiple Lists in Python",
+      "description": "In Python, we can merge two or more lists into a single list using various methods. One such method is to combine elements from each of the input lists based on their positions. In this challenge, you will be tasked with writing a function that merges multiple lists into a list of lists.",
+      "meta": {
+        "title": "Python | List Merging | Programming Tutorials",
+        "description": "Learn how to merge multiple lists into a single list of lists in Python. Discover various techniques and explore practical examples.",
+        "keywords": "Python, List Merging, Programming Tutorials, List Manipulation, Data Structures"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Merge Lists",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Student Merging Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/keyword_arguments",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Python中合并多个列表",
+      "description": "在Python中，我们可以使用各种方法将两个或多个列表合并为一个列表。其中一种方法是根据输入列表中每个元素的位置进行组合。在这个挑战中，你将负责编写一个函数，将多个列表合并为一个列表的列表。",
+      "meta": {
+        "title": "Python | 列表合并 | 编程教程",
+        "description": "学习如何在Python中将多个列表合并为一个列表的列表。探索各种技术并查看实际示例。",
+        "keywords": "Python, 列表合并, 编程教程, 列表操作, 数据结构"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "合并列表",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生合并Python脚本的执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/keyword_arguments",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

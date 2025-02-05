@@ -1,106 +1,10 @@
 {
   "type": "lab",
-  "title": "Anomaly Detection Algorithms Comparison",
-  "description": "This lab compares different anomaly detection algorithms on two-dimensional datasets. The datasets contain one or two modes (regions of high density) to illustrate the ability of algorithms to cope with multimodal data. For each dataset, 15% of samples are generated as random uniform noise. Decision boundaries between inliers and outliers are displayed in black except for Local Outlier Factor (LOF) as it has no predict method to be applied on new data when it is used for outlier detection.",
-  "meta": {
-    "title": "Anomaly Detection Algorithms | Two-Dimensional Datasets",
-    "description": "Explore different anomaly detection algorithms on two-dimensional datasets with multimodal data and random noise. Gain insights into algorithm performance.",
-    "keywords": "Anomaly Detection, Algorithms, Two-Dimensional Datasets, Multimodal Data, Random Noise"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Required Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/covariance",
-          "sklearn/datasets",
-          "sklearn/ensemble",
-          "sklearn/kernel_approximation",
-          "sklearn/linear_model",
-          "sklearn/neighbors",
-          "sklearn/pipeline"
-        ]
-      },
-      {
-        "title": "Set Parameters",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Define Anomaly Detection Algorithms",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Define Datasets",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compare Classifiers",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-anomaly-comparison.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -109,5 +13,200 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-anomaly-comparison.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Anomaly Detection Algorithms Comparison",
+      "description": "This lab compares different anomaly detection algorithms on two-dimensional datasets. The datasets contain one or two modes (regions of high density) to illustrate the ability of algorithms to cope with multimodal data. For each dataset, 15% of samples are generated as random uniform noise. Decision boundaries between inliers and outliers are displayed in black except for Local Outlier Factor (LOF) as it has no predict method to be applied on new data when it is used for outlier detection.",
+      "meta": {
+        "title": "Anomaly Detection Algorithms | Two-Dimensional Datasets",
+        "description": "Explore different anomaly detection algorithms on two-dimensional datasets with multimodal data and random noise. Gain insights into algorithm performance.",
+        "keywords": "Anomaly Detection, Algorithms, Two-Dimensional Datasets, Multimodal Data, Random Noise"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Required Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/datasets",
+              "sklearn/ensemble",
+              "sklearn/kernel_approximation",
+              "sklearn/linear_model",
+              "sklearn/neighbors",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "Set Parameters",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Define Anomaly Detection Algorithms",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Define Datasets",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compare Classifiers",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "异常检测算法比较",
+      "description": "本实验在二维数据集上比较不同的异常检测算法。数据集包含一种或两种模式（高密度区域），以说明算法处理多模态数据的能力。对于每个数据集，15% 的样本生成为随机均匀噪声。除了局部离群因子（LOF）外，内点和离群点之间的决策边界以黑色显示，因为在用于离群点检测时，它没有可应用于新数据的预测方法。",
+      "meta": {
+        "title": "异常检测算法 | 二维数据集",
+        "description": "探索在具有多模态数据和随机噪声的二维数据集上的不同异常检测算法。深入了解算法性能。",
+        "keywords": "异常检测, 算法, 二维数据集, 多模态数据, 随机噪声"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/datasets",
+              "sklearn/ensemble",
+              "sklearn/kernel_approximation",
+              "sklearn/linear_model",
+              "sklearn/neighbors",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "设置参数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "定义异常检测算法",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "定义数据集",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "比较分类器",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

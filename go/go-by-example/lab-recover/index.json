@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Handling Panics with Golang Recover",
-  "description": "In Golang, recover is a built-in function that can be used to recover from a panic. This lab will test your ability to use recover to handle panics.",
-  "meta": {
-    "title": "Recover from Panics in Golang | Programming Tutorials",
-    "description": "Learn how to use the built-in `recover` function in Golang to handle panics and prevent your server from crashing. Explore this programming tutorial to improve your error handling skills.",
-    "keywords": "Golang, recover, panic, error handling, programming tutorials"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Recover",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Recover Error",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/recover"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "recover.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "recover.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Handling Panics with Golang Recover",
+      "description": "In Golang, recover is a built-in function that can be used to recover from a panic. This lab will test your ability to use recover to handle panics.",
+      "meta": {
+        "title": "Recover from Panics in Golang | Programming Tutorials",
+        "description": "Learn how to use the built-in `recover` function in Golang to handle panics and prevent your server from crashing. Explore this programming tutorial to improve your error handling skills.",
+        "keywords": "Golang, recover, panic, error handling, programming tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Recover",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Recover Error",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/recover"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Go语言的recover处理恐慌",
+      "description": "在Go语言中，recover是一个内置函数，可用于从恐慌中恢复。本实验将测试你使用recover处理恐慌的能力。",
+      "meta": {
+        "title": "从Go语言恐慌中恢复 | 编程教程",
+        "description": "学习如何使用Go语言中的内置`recover`函数来处理恐慌并防止服务器崩溃。探索本编程教程以提高你的错误处理技能。",
+        "keywords": "Go语言, recover, 恐慌, 错误处理, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "恢复",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序恢复错误",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/recover"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

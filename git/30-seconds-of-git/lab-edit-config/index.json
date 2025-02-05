@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Edit Git Configuration File",
-  "description": "Git is a popular version control system that allows developers to track changes in their codebase. Git configuration file is a file that contains settings that affect the behavior of Git. In this lab, you will learn how to edit the Git configuration file using the Git text editor.",
-  "meta": {
-    "title": "Edit Git Configuration File - A Comprehensive Guide",
-    "description": "Learn how to customize Git behavior by editing the Git configuration file using the built-in text editor.",
-    "keywords": "version control, configuration file, customization, git labs, text editor, git, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Edit Git Configuration File",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that the configuration was successful",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/config"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Edit Git Configuration File",
+      "description": "Git is a popular version control system that allows developers to track changes in their codebase. Git configuration file is a file that contains settings that affect the behavior of Git. In this lab, you will learn how to edit the Git configuration file using the Git text editor.",
+      "meta": {
+        "title": "Edit Git Configuration File - A Comprehensive Guide",
+        "description": "Learn how to customize Git behavior by editing the Git configuration file using the built-in text editor.",
+        "keywords": "version control, configuration file, customization, git labs, text editor, git, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Edit Git Configuration File",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that the configuration was successful",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/config"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "编辑 Git 配置文件",
+      "description": "Git 是一种流行的版本控制系统，它允许开发者跟踪其代码库中的更改。Git 配置文件是一个包含影响 Git 行为的设置的文件。在本实验中，你将学习如何使用 Git 文本编辑器来编辑 Git 配置文件。",
+      "meta": {
+        "title": "编辑 Git 配置文件 - 全面指南",
+        "description": "了解如何使用内置文本编辑器编辑 Git 配置文件来自定义 Git 行为。",
+        "keywords": "版本控制, 配置文件, 定制, Git 实验室, 文本编辑器, Git, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "编辑 Git 配置文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证配置是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/config"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

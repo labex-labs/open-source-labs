@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Concurrent Data Access with Mutexes",
-  "description": "This lab aims to demonstrate how to use mutexes to safely access data across multiple goroutines.",
-  "meta": {
-    "title": "Go Programming | Mutex Synchronization | Concurrent State Management",
-    "description": "Learn how to use mutexes to safely access data across multiple goroutines in Go programming. Manage complex state with synchronized access to shared resources.",
-    "keywords": "Go programming, mutex, synchronization, concurrent programming, state management, goroutines"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Mutexes",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Map Counters Updated as Expected",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/mutexes"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "mutexes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "mutexes.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Concurrent Data Access with Mutexes",
+      "description": "This lab aims to demonstrate how to use mutexes to safely access data across multiple goroutines.",
+      "meta": {
+        "title": "Go Programming | Mutex Synchronization | Concurrent State Management",
+        "description": "Learn how to use mutexes to safely access data across multiple goroutines in Go programming. Manage complex state with synchronized access to shared resources.",
+        "keywords": "Go programming, mutex, synchronization, concurrent programming, state management, goroutines"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Mutexes",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Map Counters Updated as Expected",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/mutexes"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用互斥锁进行并发数据访问",
+      "description": "本实验旨在演示如何使用互斥锁在多个 goroutine 之间安全地访问数据。",
+      "meta": {
+        "title": "Go 编程 | 互斥锁同步 | 并发状态管理",
+        "description": "学习如何在 Go 编程中使用互斥锁在多个 goroutine 之间安全地访问数据。通过对共享资源的同步访问来管理复杂状态。",
+        "keywords": "Go编程, 互斥锁, 同步, 并发编程, 状态管理, goroutine"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "互斥锁",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证映射计数器是否按预期更新",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/mutexes"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

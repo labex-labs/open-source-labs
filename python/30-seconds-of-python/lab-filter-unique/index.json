@@ -1,67 +1,10 @@
 {
   "type": "lab",
-  "title": "Filter Unique List Values",
-  "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to filter out the unique values from a list. In this challenge, you are required to write a Python function that takes a list as an argument and returns a new list with only the non-unique values.",
-  "meta": {
-    "title": "Python | Unique List Values Filtering",
-    "description": "Learn how to write a Python function that filters out unique values from a list and returns a new list with only the non-unique values.",
-    "keywords": "Python, List, Unique Values, Filtering, Data Manipulation"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Filter Unique List Values",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python3 Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_filter_unique.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "filter_unique.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -70,5 +13,117 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_filter_unique.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "filter_unique.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Filter Unique List Values",
+      "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to filter out the unique values from a list. In this challenge, you are required to write a Python function that takes a list as an argument and returns a new list with only the non-unique values.",
+      "meta": {
+        "title": "Python | Unique List Values Filtering",
+        "description": "Learn how to write a Python function that filters out unique values from a list and returns a new list with only the non-unique values.",
+        "keywords": "Python, List, Unique Values, Filtering, Data Manipulation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Filter Unique List Values",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python3 Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "过滤列表中的唯一值",
+      "description": "在Python中，列表是一组有序且可变的项目。有时，我们需要从列表中筛选出唯一值。在这个挑战中，你需要编写一个Python函数，该函数接受一个列表作为参数，并返回一个只包含非唯一值的新列表。",
+      "meta": {
+        "title": "Python | 过滤列表中的唯一值",
+        "description": "学习如何编写一个Python函数，该函数从列表中筛选出唯一值，并返回一个只包含非唯一值的新列表。",
+        "keywords": "Python, 列表, 唯一值, 过滤, 数据处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "过滤列表中的唯一值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python3脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

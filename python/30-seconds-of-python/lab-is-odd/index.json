@@ -1,60 +1,10 @@
 {
   "type": "lab",
-  "title": "Check if a Number is Odd",
-  "description": "In this lab, you will learn how to write a function to check whether a given number is odd or even using the modulo operator in Python.",
-  "meta": {
-    "title": "Checking if a Number is Odd in Python",
-    "description": "Learn how to write a Python function to determine if a given number is odd or even.",
-    "keywords": "even, python, number, odd, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Check if a Number is Odd",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Checks Odd Number",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/comments",
-          "python/function_definition"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_odd.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_odd.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -63,5 +13,103 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_is_odd.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "is_odd.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Check if a Number is Odd",
+      "description": "In this lab, you will learn how to write a function to check whether a given number is odd or even using the modulo operator in Python.",
+      "meta": {
+        "title": "Checking if a Number is Odd in Python",
+        "description": "Learn how to write a Python function to determine if a given number is odd or even.",
+        "keywords": "even, python, number, odd, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Check if a Number is Odd",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Checks Odd Number",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/function_definition"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查一个数字是否为奇数",
+      "description": "在这个实验中，你将学习如何使用Python中的取模运算符编写一个函数来检查给定的数字是奇数还是偶数。",
+      "meta": {
+        "title": "在Python中检查数字是否为奇数",
+        "description": "学习如何编写一个Python函数来确定给定的数字是奇数还是偶数。",
+        "keywords": "偶数, Python, 数字, 奇数, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查一个数字是否为奇数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python脚本检查奇数",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/function_definition"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Implement fmt::Display for List in Rust",
-  "description": "In this lab, we are implementing fmt::Display for a structure called List which contains a Vec in Rust. The challenge is to handle each element sequentially using the write! macro, as it generates a fmt::Result which needs to be properly handled. To address this, we can use the ? operator to check if write! returns an error and return it if it does, otherwise continue with the execution. By implementing fmt::Display for List, we can iterate over the elements in the vector and print them within square brackets, separated by commas. The task is to modify the program to also print the index of each element in the vector. The expected output after the modification is [0: 1, 1: 2, 2: 3].",
-  "meta": {
-    "title": "Rust Programming | Implementing fmt::Display for a List Structure",
-    "description": "Learn how to implement the fmt::Display trait for a Rust structure called List, which contains a Vec. Discover the proper handling of fmt::Result using the ? operator.",
-    "keywords": "Rust, Programming, fmt::Display, List, Vec, fmt::Result, ?"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Testcase: List",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Implement fmt::Display for List in Rust",
+      "description": "In this lab, we are implementing fmt::Display for a structure called List which contains a Vec in Rust. The challenge is to handle each element sequentially using the write! macro, as it generates a fmt::Result which needs to be properly handled. To address this, we can use the ? operator to check if write! returns an error and return it if it does, otherwise continue with the execution. By implementing fmt::Display for List, we can iterate over the elements in the vector and print them within square brackets, separated by commas. The task is to modify the program to also print the index of each element in the vector. The expected output after the modification is [0: 1, 1: 2, 2: 3].",
+      "meta": {
+        "title": "Rust Programming | Implementing fmt::Display for a List Structure",
+        "description": "Learn how to implement the fmt::Display trait for a Rust structure called List, which contains a Vec. Discover the proper handling of fmt::Result using the ? operator.",
+        "keywords": "Rust, Programming, fmt::Display, List, Vec, fmt::Result, ?"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Testcase: List",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在 Rust 中为 List 实现 fmt::Display",
+      "description": "在这个实验中，我们要为 Rust 中一个名为 List 的结构体实现 fmt::Display，该结构体包含一个 Vec。挑战在于使用 write! 宏按顺序处理每个元素，因为它会生成一个 fmt::Result，需要对其进行正确处理。为了解决这个问题，我们可以使用? 运算符检查 write! 是否返回错误，如果返回错误则返回该错误，否则继续执行。通过为 List 实现 fmt::Display，我们可以遍历向量中的元素，并在方括号内打印它们，元素之间用逗号分隔。任务是修改程序，使其还能打印向量中每个元素的索引。修改后的预期输出是 [0: 1, 1: 2, 2: 3]。",
+      "meta": {
+        "title": "Rust 编程 | 为 List 结构体实现 fmt::Display",
+        "description": "学习如何为 Rust 中一个名为 List 的结构体实现 fmt::Display 特性，该结构体包含一个 Vec。了解如何使用? 运算符正确处理 fmt::Result。",
+        "keywords": "Rust, 编程, fmt::Display, List, Vec, fmt::Result,?"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "测试用例：List",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

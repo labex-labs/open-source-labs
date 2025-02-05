@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Create a New Branch",
-  "description": "In Git, a branch is a lightweight movable pointer to a commit. Creating a new branch allows you to work on a new feature or bug fix without affecting the main codebase. In this lab, you will learn how to create a new branch in Git.",
-  "meta": {
-    "title": "Create a New Branch in Git",
-    "description": "Learn how to create a new branch in Git and work on a new feature or bug fix without affecting the main codebase.",
-    "keywords": "git labs, branch, git, create, feature, git playground, new"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create a New Branch",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify if a new branch is created",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/branch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Create a New Branch",
+      "description": "In Git, a branch is a lightweight movable pointer to a commit. Creating a new branch allows you to work on a new feature or bug fix without affecting the main codebase. In this lab, you will learn how to create a new branch in Git.",
+      "meta": {
+        "title": "Create a New Branch in Git",
+        "description": "Learn how to create a new branch in Git and work on a new feature or bug fix without affecting the main codebase.",
+        "keywords": "git labs, branch, git, create, feature, git playground, new"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create a New Branch",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify if a new branch is created",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "创建新分支",
+      "description": "在Git中，分支是指向提交对象的轻量级可移动指针。创建新分支可让你在不影响主代码库的情况下处理新功能或修复漏洞。在本实验中，你将学习如何在Git中创建新分支。",
+      "meta": {
+        "title": "在Git中创建新分支",
+        "description": "学习如何在Git中创建新分支，并在不影响主代码库的情况下处理新功能或修复漏洞。",
+        "keywords": "git实验, 分支, git, 创建, 功能, git游乐场, 新"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建新分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否创建了新分支",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

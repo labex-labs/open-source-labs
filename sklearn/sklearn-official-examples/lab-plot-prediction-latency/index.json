@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Prediction Latency with Scikit-Learn Estimators",
-  "description": "The prediction latency of machine learning models is a crucial factor in real-world applications. In this lab, we will use Scikit-Learn estimators to benchmark the prediction latency of various regressors. We will measure the latency when doing predictions either in bulk or atomic mode. The plots will represent the distribution of the prediction latency as a boxplot.",
-  "meta": {
-    "title": "Machine Learning Model Latency Benchmarking | Regression Analysis",
-    "description": "Explore the prediction latency of various machine learning regressors using Scikit-Learn. Measure latency in bulk and atomic modes, and visualize the results.",
-    "keywords": "machine learning, regression, latency, benchmarking, Scikit-Learn, prediction"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate a Regression Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Benchmark and Plot Atomic and Bulk Prediction Latency",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Benchmark n_features Influence on Prediction Latency",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Benchmark Throughput",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-prediction-latency.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-prediction-latency.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Prediction Latency with Scikit-Learn Estimators",
+      "description": "The prediction latency of machine learning models is a crucial factor in real-world applications. In this lab, we will use Scikit-Learn estimators to benchmark the prediction latency of various regressors. We will measure the latency when doing predictions either in bulk or atomic mode. The plots will represent the distribution of the prediction latency as a boxplot.",
+      "meta": {
+        "title": "Machine Learning Model Latency Benchmarking | Regression Analysis",
+        "description": "Explore the prediction latency of various machine learning regressors using Scikit-Learn. Measure latency in bulk and atomic modes, and visualize the results.",
+        "keywords": "machine learning, regression, latency, benchmarking, Scikit-Learn, prediction"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate a Regression Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Benchmark and Plot Atomic and Bulk Prediction Latency",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Benchmark n_features Influence on Prediction Latency",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Benchmark Throughput",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Scikit-Learn估计器的预测延迟",
+      "description": "机器学习模型的预测延迟是实际应用中的一个关键因素。在本实验中，我们将使用Scikit-Learn估计器对各种回归器的预测延迟进行基准测试。我们将测量批量或原子模式下进行预测时的延迟。图表将以箱线图的形式展示预测延迟的分布。",
+      "meta": {
+        "title": "机器学习模型延迟基准测试 | 回归分析",
+        "description": "使用Scikit-Learn探索各种机器学习回归器的预测延迟。测量批量和原子模式下的延迟，并可视化结果。",
+        "keywords": "机器学习, 回归, 延迟, 基准测试, Scikit-Learn, 预测"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成回归数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "对原子和批量预测延迟进行基准测试并绘图",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "基准测试n_features对预测延迟的影响",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "基准测试吞吐量",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

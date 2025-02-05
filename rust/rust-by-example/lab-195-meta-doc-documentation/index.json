@@ -1,46 +1,10 @@
 {
   "type": "lab",
-  "title": "Cargo Documentation Generation and Testing",
-  "description": "In this lab, you can use cargo doc to build documentation in target/doc. You can also use cargo test to run all tests, including documentation tests, and cargo test --doc to only run documentation tests. Doc comments, denoted by ///, are compiled into documentation by rustdoc and support Markdown. These comments are useful for documenting code in big projects. Doc attributes, such as inline, no_inline, and hidden, are frequently used with rustdoc. Rustdoc is widely used by the community for generating documentation, including the standard library docs.",
-  "meta": {
-    "title": "Rust Documentation | Cargo | Rustdoc | Code Documentation",
-    "description": "Learn how to use Cargo and Rustdoc to build, test, and document your Rust code. Discover the power of doc comments, doc attributes, and the Rust community's approach to documentation.",
-    "keywords": "Rust, Documentation, Cargo, Rustdoc, Code Documentation, Markdown, Testing"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Documentation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/operator_overloading",
-          "rust/traits"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -49,5 +13,89 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Cargo Documentation Generation and Testing",
+      "description": "In this lab, you can use cargo doc to build documentation in target/doc. You can also use cargo test to run all tests, including documentation tests, and cargo test --doc to only run documentation tests. Doc comments, denoted by ///, are compiled into documentation by rustdoc and support Markdown. These comments are useful for documenting code in big projects. Doc attributes, such as inline, no_inline, and hidden, are frequently used with rustdoc. Rustdoc is widely used by the community for generating documentation, including the standard library docs.",
+      "meta": {
+        "title": "Rust Documentation | Cargo | Rustdoc | Code Documentation",
+        "description": "Learn how to use Cargo and Rustdoc to build, test, and document your Rust code. Discover the power of doc comments, doc attributes, and the Rust community's approach to documentation.",
+        "keywords": "Rust, Documentation, Cargo, Rustdoc, Code Documentation, Markdown, Testing"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Documentation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/operator_overloading",
+              "rust/traits"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Cargo 生成和测试文档",
+      "description": "在本实验中，你可以使用 cargo doc 在 target/doc 中生成文档。你还可以使用 cargo test 运行所有测试，包括文档测试，以及使用 cargo test --doc 仅运行文档测试。由 /// 表示的文档注释会被 rustdoc 编译为文档，并支持 Markdown。这些注释对于在大型项目中记录代码很有用。文档属性，如 inline、no_inline 和 hidden，经常与 rustdoc 一起使用。Rustdoc 在社区中被广泛用于生成文档，包括标准库文档。",
+      "meta": {
+        "title": "Rust 文档 | Cargo | Rustdoc | 代码文档",
+        "description": "了解如何使用 Cargo 和 Rustdoc 来构建、测试和记录你的 Rust 代码。探索文档注释、文档属性的强大功能以及 Rust 社区的文档编写方法。",
+        "keywords": "Rust, 文档, Cargo, Rustdoc, 代码文档, Markdown, 测试"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文档",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/operator_overloading",
+              "rust/traits"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

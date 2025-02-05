@@ -1,101 +1,10 @@
 {
   "type": "lab",
-  "title": "Using Threads to Run Code Simultaneously",
-  "description": "In this lab, we will explore the concept of threads in programming and how they can be used to run code simultaneously, improving performance but adding complexity and potential issues such as race conditions, deadlocks, and hard-to-reproduce bugs.",
-  "meta": {
-    "title": "Rust Threading | Concurrency | Parallelism",
-    "description": "Learn how to use threads in Rust to run code simultaneously, improve performance, and handle potential issues like race conditions and deadlocks.",
-    "keywords": "Rust, Threading, Concurrency, Parallelism, Race Conditions, Deadlocks"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Using Threads to Run Code Simultaneously",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Creating a New Thread with spawn",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/method_syntax"
-        ]
-      },
-      {
-        "title": "Waiting for All Threads to Finish Using join Handles",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Using move Closures with Threads",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -104,5 +13,199 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Using Threads to Run Code Simultaneously",
+      "description": "In this lab, we will explore the concept of threads in programming and how they can be used to run code simultaneously, improving performance but adding complexity and potential issues such as race conditions, deadlocks, and hard-to-reproduce bugs.",
+      "meta": {
+        "title": "Rust Threading | Concurrency | Parallelism",
+        "description": "Learn how to use threads in Rust to run code simultaneously, improve performance, and handle potential issues like race conditions and deadlocks.",
+        "keywords": "Rust, Threading, Concurrency, Parallelism, Race Conditions, Deadlocks"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Using Threads to Run Code Simultaneously",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Creating a New Thread with spawn",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/method_syntax"
+            ]
+          },
+          {
+            "title": "Waiting for All Threads to Finish Using join Handles",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Using move Closures with Threads",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用线程同时运行代码",
+      "description": "在本实验中，我们将探讨编程中线程的概念，以及如何使用线程同时运行代码，这可以提高性能，但也会增加复杂性和潜在问题，如竞态条件、死锁和难以重现的错误。",
+      "meta": {
+        "title": "Rust 线程 | 并发 | 并行",
+        "description": "学习如何在 Rust 中使用线程同时运行代码、提高性能以及处理竞态条件和死锁等潜在问题。",
+        "keywords": "Rust, 线程, 并发, 并行, 竞态条件, 死锁"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用线程同时运行代码",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "使用 `spawn` 创建新线程",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/method_syntax"
+            ]
+          },
+          {
+            "title": "使用 `join` 句柄等待所有线程完成",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "对线程使用 `move` 闭包",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Foreign Function Interface",
-  "description": "In this lab, we learn about Rust's Foreign Function Interface (FFI) that allows interaction with C libraries by declaring foreign functions within an extern block and annotating them with a #[link] attribute containing the name of the foreign library. The code example demonstrates the usage of FFI to call external functions from the libm library, such as computing the square root of a single precision complex number and calculating the cosine of a complex number. Safe wrappers are commonly used around these unsafe foreign function calls. The lab also includes a minimal implementation of single precision complex numbers and demonstrates how to call safe APIs wrapped around unsafe operations.",
-  "meta": {
-    "title": "Mastering Rust's Foreign Function Interface",
-    "description": "Explore Rust's FFI for interacting with C libraries and learn how to call external functions safely.",
-    "keywords": "rust playground, c libraries, ffi, rust tutor, complex numbers, rust online compiler, rust commands, rust practice, rust online, foreign function interface"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Foreign Function Interface",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/floating_types",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/string_type",
-          "rust/traits",
-          "rust/unsafe_rust",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,99 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Foreign Function Interface",
+      "description": "In this lab, we learn about Rust's Foreign Function Interface (FFI) that allows interaction with C libraries by declaring foreign functions within an extern block and annotating them with a #[link] attribute containing the name of the foreign library. The code example demonstrates the usage of FFI to call external functions from the libm library, such as computing the square root of a single precision complex number and calculating the cosine of a complex number. Safe wrappers are commonly used around these unsafe foreign function calls. The lab also includes a minimal implementation of single precision complex numbers and demonstrates how to call safe APIs wrapped around unsafe operations.",
+      "meta": {
+        "title": "Mastering Rust's Foreign Function Interface",
+        "description": "Explore Rust's FFI for interacting with C libraries and learn how to call external functions safely.",
+        "keywords": "rust playground, c libraries, ffi, rust tutor, complex numbers, rust online compiler, rust commands, rust practice, rust online, foreign function interface"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Foreign Function Interface",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/traits",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "外部函数接口",
+      "description": "在本实验中，我们将学习Rust的外部函数接口（FFI），它允许通过在extern块中声明外部函数，并使用包含外部库名称的#[link]属性对其进行注释，从而与C库进行交互。代码示例展示了如何使用FFI调用libm库中的外部函数，比如计算单精度复数的平方根以及计算复数的余弦值。在这些不安全的外部函数调用周围通常会使用安全包装器。本实验还包括单精度复数的最小实现，并演示了如何调用围绕不安全操作包装的安全API。",
+      "meta": {
+        "title": "掌握Rust的外部函数接口",
+        "description": "探索Rust的FFI以与C库进行交互，并学习如何安全地调用外部函数。",
+        "keywords": "Rust游乐场, C库, FFI, Rust教程, 复数, Rust在线编译器, Rust命令, Rust练习, Rust在线, 外部函数接口"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "外部函数接口",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/traits",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

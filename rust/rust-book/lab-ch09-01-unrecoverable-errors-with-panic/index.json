@@ -1,47 +1,10 @@
 {
   "type": "lab",
-  "title": "Unrecoverable Errors with Panic",
-  "description": "In this lab, we learn about panics in Rust and how they can be caused by actions in our code or by explicitly calling the panic! macro, and how to use backtraces to track down the source of the panic.",
-  "meta": {
-    "title": "Unrecoverable Errors with Panic: Mastering Rust's Panic Handling",
-    "description": "Explore the power of Rust's panic handling mechanism and learn how to effectively manage unrecoverable errors in your code.",
-    "keywords": "rust playground, backtrace, error handling, panic, unrecoverable errors, rust tutor, rust online compiler, rust commands, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Unrecoverable Errors with panic",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/panic_usage",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -50,5 +13,91 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Unrecoverable Errors with Panic",
+      "description": "In this lab, we learn about panics in Rust and how they can be caused by actions in our code or by explicitly calling the panic! macro, and how to use backtraces to track down the source of the panic.",
+      "meta": {
+        "title": "Unrecoverable Errors with Panic: Mastering Rust's Panic Handling",
+        "description": "Explore the power of Rust's panic handling mechanism and learn how to effectively manage unrecoverable errors in your code.",
+        "keywords": "rust playground, backtrace, error handling, panic, unrecoverable errors, rust tutor, rust online compiler, rust commands, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Unrecoverable Errors with panic",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/panic_usage",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 `panic!` 处理不可恢复的错误",
+      "description": "在本实验中，我们将学习 Rust 中的 `panic!`，以及它如何由代码中的操作或显式调用 `panic!` 宏引发，还将学习如何使用回溯来追踪 `panic!` 的源头。",
+      "meta": {
+        "title": "使用 `panic!` 处理不可恢复的错误：掌握 Rust 的错误处理",
+        "description": "探索 Rust 错误处理机制的强大功能，并学习如何在代码中有效地管理不可恢复的错误。",
+        "keywords": "Rust 在线编译器, Rust 练习, Rust 命令, Rust 教程, 不可恢复的错误, 错误处理, 回溯, Rust 游乐场, panic, Rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用 `panic!` 处理不可恢复的错误",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/panic_usage",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

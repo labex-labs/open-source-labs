@@ -1,49 +1,10 @@
 {
   "type": "lab",
-  "title": "Printable Types in Rust's Standard Library",
-  "description": "In this lab, it is explained that in order to use the std::fmt formatting traits, types must have an implementation to be printable, which can be automatically provided for types in the std library. For other types, the fmt::Debug trait can be derived to enable printing. The fmt::Debug trait makes it straightforward to implement printable types, while fmt::Display needs to be manually implemented. The fmt::Debug trait allows all types to derive the implementation for printing, and the same applies to {:?} for std library types. The lab also mentions the use of {:?} for printing and provides an example of how to use it to print different types. Additionally, the concept of 'pretty printing' with {:#?} is introduced, which provides a more elegant representation of data structures. Finally, it is mentioned that fmt::Display can be manually implemented to have control over the display of types.",
-  "meta": {
-    "title": "Rust Programming | Formatting Traits | Printable Types",
-    "description": "Learn how to use Rust's formatting traits, such as fmt::Debug and fmt::Display, to make your custom types printable. Explore the concepts of automatic and manual implementation for printable types.",
-    "keywords": "Rust, programming, formatting, traits, fmt::Debug, fmt::Display, printable types"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Debug",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -52,5 +13,95 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Printable Types in Rust's Standard Library",
+      "description": "In this lab, it is explained that in order to use the std::fmt formatting traits, types must have an implementation to be printable, which can be automatically provided for types in the std library. For other types, the fmt::Debug trait can be derived to enable printing. The fmt::Debug trait makes it straightforward to implement printable types, while fmt::Display needs to be manually implemented. The fmt::Debug trait allows all types to derive the implementation for printing, and the same applies to {:?} for std library types. The lab also mentions the use of {:?} for printing and provides an example of how to use it to print different types. Additionally, the concept of 'pretty printing' with {:#?} is introduced, which provides a more elegant representation of data structures. Finally, it is mentioned that fmt::Display can be manually implemented to have control over the display of types.",
+      "meta": {
+        "title": "Rust Programming | Formatting Traits | Printable Types",
+        "description": "Learn how to use Rust's formatting traits, such as fmt::Debug and fmt::Display, to make your custom types printable. Explore the concepts of automatic and manual implementation for printable types.",
+        "keywords": "Rust, programming, formatting, traits, fmt::Debug, fmt::Display, printable types"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Debug",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 标准库中的可打印类型",
+      "description": "在本实验中，将解释为了使用 std::fmt 格式化特性，类型必须有一个可打印的实现，对于 std 库中的类型，该实现可以自动提供。对于其他类型，可以派生 fmt::Debug 特性以启用打印。fmt::Debug 特性使实现可打印类型变得很直接，而 fmt::Display 则需要手动实现。fmt::Debug 特性允许所有类型派生打印实现，对于 std 库类型，{:?} 也是如此。本实验还提到了使用 {:?} 进行打印，并提供了一个如何使用它来打印不同类型的示例。此外，还引入了使用 {:#?} 进行“漂亮打印”的概念，它提供了一种更优雅的数据结构表示形式。最后提到，可以手动实现 fmt::Display 以控制类型的显示。",
+      "meta": {
+        "title": "Rust 编程 | 格式化特性 | 可打印类型",
+        "description": "学习如何使用 Rust 的格式化特性，如 fmt::Debug 和 fmt::Display，使自定义类型可打印。探索可打印类型的自动和手动实现概念。",
+        "keywords": "Rust, 编程, 格式化, 特性, fmt::Debug, fmt::Display, 可打印类型"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "调试",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

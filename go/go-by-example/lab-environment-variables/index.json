@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Fundamentals of Unix Environment Variables",
-  "description": "This lab will cover the basics of environment variables in Unix programs. Environment variables are used to convey configuration information to programs.",
-  "meta": {
-    "title": "Environment Variables | Unix Programming Basics",
-    "description": "Explore the fundamentals of environment variables in Unix programs, including setting, getting, and listing key-value pairs for configuration management.",
-    "keywords": "environment variables, unix programming, configuration management, os.Setenv, os.Getenv, os.Environ"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Environment Variables",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Environment Variables Are Correctly Set",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/environment_variables"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "environment-variables.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "environment-variables.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Fundamentals of Unix Environment Variables",
+      "description": "This lab will cover the basics of environment variables in Unix programs. Environment variables are used to convey configuration information to programs.",
+      "meta": {
+        "title": "Environment Variables | Unix Programming Basics",
+        "description": "Explore the fundamentals of environment variables in Unix programs, including setting, getting, and listing key-value pairs for configuration management.",
+        "keywords": "environment variables, unix programming, configuration management, os.Setenv, os.Getenv, os.Environ"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Environment Variables",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Environment Variables Are Correctly Set",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/environment_variables"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Unix 环境变量基础",
+      "description": "本实验将介绍 Unix 程序中环境变量的基础知识。环境变量用于向程序传递配置信息。",
+      "meta": {
+        "title": "环境变量 | Unix 编程基础",
+        "description": "探索 Unix 程序中环境变量的基础知识，包括设置、获取和列出用于配置管理的键值对。",
+        "keywords": "环境变量, Unix 编程, 配置管理, os.Setenv, os.Getenv, os.Environ"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "环境变量",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证环境变量是否正确设置",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/environment_variables"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

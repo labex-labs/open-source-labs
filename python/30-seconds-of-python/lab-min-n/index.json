@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "N Minimum Elements",
-  "description": "In this lab, you will learn how to write a Python function that returns the n minimum elements from a given list, using built-in functions like `sorted()` and slice notation.",
-  "meta": {
-    "title": "Find the N Minimum Elements in a List",
-    "description": "This lab introduces the concept of writing a Python function that returns the n minimum elements from a given list, utilizing built-in functions such as `sorted()` and slice notation.",
-    "keywords": "minimum, python, elements, list, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "N Minimum Elements",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_min_n.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "min_n.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_min_n.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "min_n.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "N Minimum Elements",
+      "description": "In this lab, you will learn how to write a Python function that returns the n minimum elements from a given list, using built-in functions like `sorted()` and slice notation.",
+      "meta": {
+        "title": "Find the N Minimum Elements in a List",
+        "description": "This lab introduces the concept of writing a Python function that returns the n minimum elements from a given list, utilizing built-in functions such as `sorted()` and slice notation.",
+        "keywords": "minimum, python, elements, list, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "N Minimum Elements",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "n个最小元素",
+      "description": "在这个实验中，你将学习如何编写一个Python函数，该函数使用`sorted()`等内置函数和切片表示法，从给定列表中返回n个最小元素。",
+      "meta": {
+        "title": "在列表中找到n个最小元素",
+        "description": "本实验介绍了编写一个Python函数的概念，该函数利用`sorted()`等内置函数和切片表示法，从给定列表中返回n个最小元素。",
+        "keywords": "最小, Python, 元素, 列表, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "n个最小元素",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

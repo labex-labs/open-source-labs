@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Mapping Unique Array Values to Object Keys",
-  "description": "In this lab, we will explore the concept of creating an object with the unique values of an array as keys and their frequencies as the values. We will achieve this by making use of the Array.prototype.reduce() method to map unique values to an object's keys, adding to existing keys every time the same value is encountered. Through this lab, we will gain a deeper understanding of the reduce method and how it can be used to solve programming problems efficiently.",
-  "meta": {
-    "title": "Object Value Frequency | Array Reduce | Programming Tutorials",
-    "description": "Learn how to create an object with unique array values as keys and their frequencies as values using the Array.reduce() method. Gain a deeper understanding of this efficient programming technique.",
-    "keywords": "object frequency, array reduce, programming tutorials, unique values, frequency count"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Value Frequencies",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Node Commands In ZSH History",
-            "file": "verify1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "javascript/arith_ops",
-          "javascript/array_methods",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/destr_assign",
-          "javascript/higher_funcs",
-          "javascript/variables"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Mapping Unique Array Values to Object Keys",
+      "description": "In this lab, we will explore the concept of creating an object with the unique values of an array as keys and their frequencies as the values. We will achieve this by making use of the Array.prototype.reduce() method to map unique values to an object's keys, adding to existing keys every time the same value is encountered. Through this lab, we will gain a deeper understanding of the reduce method and how it can be used to solve programming problems efficiently.",
+      "meta": {
+        "title": "Object Value Frequency | Array Reduce | Programming Tutorials",
+        "description": "Learn how to create an object with unique array values as keys and their frequencies as values using the Array.reduce() method. Gain a deeper understanding of this efficient programming technique.",
+        "keywords": "object frequency, array reduce, programming tutorials, unique values, frequency count"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Value Frequencies",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Node Commands In ZSH History",
+                "file": "verify1.sh",
+                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/array_methods",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/destr_assign",
+              "javascript/higher_funcs",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将数组唯一值映射到对象键",
+      "description": "在本实验中，我们将探索如何创建一个对象，该对象以数组中的唯一值作为键，以这些值出现的频率作为值。我们将通过使用 `Array.prototype.reduce()` 方法来实现这一点，该方法将唯一值映射到对象的键，并在每次遇到相同值时将其添加到现有键中。通过本实验，我们将更深入地理解 reduce 方法，以及如何使用它来高效地解决编程问题。",
+      "meta": {
+        "title": "对象值频率 | 数组归约 | 编程教程",
+        "description": "学习如何使用 `Array.reduce()` 方法创建一个以数组唯一值为键、以其频率为值的对象。深入了解这种高效的编程技术。",
+        "keywords": "对象频率, 数组归约, 编程教程, 唯一值, 频率计数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "值频率",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在 ZSH 历史记录中验证 Node 命令",
+                "file": "verify1.sh",
+                "hint": "通过在终端/SSH 中输入 'node' 并按回车键，可以运行 JavaScript。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/array_methods",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/destr_assign",
+              "javascript/higher_funcs",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

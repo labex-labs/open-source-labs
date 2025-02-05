@@ -1,130 +1,10 @@
 {
   "type": "lab",
-  "title": "Using Box<T> for Heap Data",
-  "description": "In this lab, we will learn about using Box<T> smart pointers to store data on the heap, rather than the stack, in situations where the size of the type is unknown at compile time, when transferring ownership of large amounts of data to avoid copying, or when owning a value that implements a particular trait.",
-  "meta": {
-    "title": "Using Box",
-    "t": "smart pointers to store data on the heap in Rust programming.",
-    "description": "Learn how to use Box",
-    "keywords": "box, rust playground, smart pointers, rust tutor, rust online compiler, heap, rust commands, rust practice, rust online, rust online playground"
-  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Using Box<T> to Point to Data on the Heap",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Using Box<T> to Store Data on the Heap",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Enabling Recursive Types with Boxes",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "More Information About the Cons List",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Computing the Size of a Non-Recursive Type",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/integer_types"]
-      },
-      {
-        "title": "Using Box<T> to Get a Recursive Type with a Known Size",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -133,5 +13,256 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Using Box<T> for Heap Data",
+      "description": "In this lab, we will learn about using Box<T> smart pointers to store data on the heap, rather than the stack, in situations where the size of the type is unknown at compile time, when transferring ownership of large amounts of data to avoid copying, or when owning a value that implements a particular trait.",
+      "meta": {
+        "title": "Using Box",
+        "t": "smart pointers to store data on the heap in Rust programming.",
+        "description": "Learn how to use Box",
+        "keywords": "box, rust playground, smart pointers, rust tutor, rust online compiler, heap, rust commands, rust practice, rust online, rust online playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Using Box<T> to Point to Data on the Heap",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Using Box<T> to Store Data on the Heap",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Enabling Recursive Types with Boxes",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "More Information About the Cons List",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Computing the Size of a Non-Recursive Type",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/integer_types"]
+          },
+          {
+            "title": "Using Box<T> to Get a Recursive Type with a Known Size",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Box<T> 处理堆数据",
+      "description": "在本实验中，我们将学习在编译时类型大小未知、转移大量数据所有权以避免复制或拥有实现特定特性的值的情况下，如何使用 Box<T> 智能指针在堆上而非栈上存储数据。",
+      "meta": {
+        "title": "使用 Box",
+        "description": "学习如何使用 Box",
+        "keywords": "Box, Rust 游乐场, 智能指针, Rust 教程, Rust 在线编译器, 堆, Rust 命令, Rust 练习, Rust 在线, Rust 在线游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用 Box<T> 指向堆上的数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "使用 Box<T> 在堆上存储数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "使用 Box 实现递归类型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "关于 Cons 列表的更多信息",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "计算非递归类型的大小",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/integer_types"]
+          },
+          {
+            "title": "使用 Box<T> 获取具有已知大小的递归类型",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

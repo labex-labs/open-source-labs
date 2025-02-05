@@ -1,0 +1,27 @@
+# 几何级数
+
+编写一个名为 `geometric_progression` 的函数，该函数接受三个参数：
+
+- `end`：一个整数，表示范围的结束值（包含）
+- `start`：一个可选整数，表示范围的起始值（包含），默认值为 `1`
+- `step`：一个可选整数，表示两个项之间的公比，默认值为 `2`
+
+该函数应返回一个列表，其中包含指定范围内的数字，两个项之间的比率为 `step`。该列表应以 `start` 开头，以 `end` 结尾。
+
+如果 `step` 等于 `1`，该函数应返回一个错误。
+
+你应该使用 `range()`、`math.log()` 和 `math.floor()` 以及列表推导式来创建一个适当长度的列表，为每个元素应用步长。
+
+```python
+from math import floor, log
+
+def geometric_progression(end, start=1, step=2):
+  return [start * step ** i for i in range(floor(log(end / start)
+          / log(step)) + 1)]
+```
+
+```python
+geometric_progression(256) # [1, 2, 4, 8, 16, 32, 64, 128, 256]
+geometric_progression(256, 3) # [3, 6, 12, 24, 48, 96, 192]
+geometric_progression(256, 1, 4) # [1, 4, 16, 64, 256]
+```

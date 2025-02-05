@@ -1,124 +1,10 @@
 {
   "type": "lab",
-  "title": "Create Code with Exec",
-  "description": "In this lab, you will learn how to create code using the exec() function.",
-  "meta": {
-    "title": "Create Code with Exec: Unlocking the Power of Python's exec()",
-    "description": "Learn how to leverage the exec() function in Python to create dynamic code, including custom __init__() methods for classes.",
-    "keywords": "exec, python, programming tutorial, code generation, class initialization"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Experiment with exec()",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python History Commands",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/sets",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Creating an __init__() function",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python File Structure and Stock Class",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/tuples",
-          "python/using_packages"
-        ],
-        "solutions": ["stock.py", "structure.py"]
-      },
-      {
-        "title": "Named Tuples",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Use of Collections, namedtuple, inspect, and getsource",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "structure.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -127,5 +13,231 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "structure.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Create Code with Exec",
+      "description": "In this lab, you will learn how to create code using the exec() function.",
+      "meta": {
+        "title": "Create Code with Exec: Unlocking the Power of Python's exec()",
+        "description": "Learn how to leverage the exec() function in Python to create dynamic code, including custom __init__() methods for classes.",
+        "keywords": "exec, python, programming tutorial, code generation, class initialization"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Experiment with exec()",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python History Commands",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/sets",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Creating an __init__() function",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python File Structure and Stock Class",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/tuples",
+              "python/using_packages"
+            ],
+            "solutions": ["stock.py", "structure.py"]
+          },
+          {
+            "title": "Named Tuples",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Use of Collections, namedtuple, inspect, and getsource",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用exec创建代码",
+      "description": "在本实验中，你将学习如何使用exec()函数创建代码。",
+      "meta": {
+        "title": "使用exec创建代码：释放Python中exec()的强大功能",
+        "description": "学习如何利用Python中的exec()函数创建动态代码，包括为类创建自定义的__init__()方法。",
+        "keywords": "exec, Python, 编程教程, 代码生成, 类初始化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用exec()进行实验",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史命令",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/sets",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "创建一个__init__()函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python文件结构和Stock类",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/tuples",
+              "python/using_packages"
+            ],
+            "solutions": ["stock.py", "structure.py"]
+          },
+          {
+            "title": "具名元组",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证collections、namedtuple、inspect和getsource的使用",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

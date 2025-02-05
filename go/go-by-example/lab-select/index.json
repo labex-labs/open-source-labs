@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Go Select Statement Demonstration",
-  "description": "This lab aims to test your knowledge of Go's select statement, which allows you to wait on multiple channel operations.",
-  "meta": {
-    "title": "Go Programming | Channel Operations | Concurrency",
-    "description": "Learn how to use Go's select statement to wait on multiple channel operations and handle concurrent execution in your programs.",
-    "keywords": "Go programming, channel operations, concurrency, select statement, goroutines, concurrent programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Select",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Received Values in Go Program",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/select"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "select.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "select.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Go Select Statement Demonstration",
+      "description": "This lab aims to test your knowledge of Go's select statement, which allows you to wait on multiple channel operations.",
+      "meta": {
+        "title": "Go Programming | Channel Operations | Concurrency",
+        "description": "Learn how to use Go's select statement to wait on multiple channel operations and handle concurrent execution in your programs.",
+        "keywords": "Go programming, channel operations, concurrency, select statement, goroutines, concurrent programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Select",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Received Values in Go Program",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/select"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言选择语句演示",
+      "description": "本实验旨在测试你对Go语言选择语句的了解，该语句可让你等待多个通道操作。",
+      "meta": {
+        "title": "Go编程 | 通道操作 | 并发",
+        "description": "学习如何使用Go语言的选择语句等待多个通道操作，并在程序中处理并发执行。",
+        "keywords": "Go编程, 通道操作, 并发, 选择语句, goroutine, 并发编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "选择语句（Select）",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在Go程序中验证接收到的值",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/select"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

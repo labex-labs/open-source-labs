@@ -1,48 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Lifetime Coercion Exploration",
-  "description": "In this lab, the concept of coercion in Rust is explored, where a longer lifetime can be coerced into a shorter one to enable functionality within a specific scope. This can occur through inferred coercion by the Rust compiler or by declaring a lifetime difference using syntax such as <'a: 'b, 'b>.",
-  "meta": {
-    "title": "Rust Coercion | Lifetime Concepts",
-    "description": "Explore the concept of coercion in Rust, where a longer lifetime can be coerced into a shorter one to enable functionality within a specific scope.",
-    "keywords": "Rust, Coercion, Lifetime, Programming, Concepts"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Coercion",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/type_casting",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -51,5 +13,93 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Lifetime Coercion Exploration",
+      "description": "In this lab, the concept of coercion in Rust is explored, where a longer lifetime can be coerced into a shorter one to enable functionality within a specific scope. This can occur through inferred coercion by the Rust compiler or by declaring a lifetime difference using syntax such as <'a: 'b, 'b>.",
+      "meta": {
+        "title": "Rust Coercion | Lifetime Concepts",
+        "description": "Explore the concept of coercion in Rust, where a longer lifetime can be coerced into a shorter one to enable functionality within a specific scope.",
+        "keywords": "Rust, Coercion, Lifetime, Programming, Concepts"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Coercion",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索Rust生命周期强制转换",
+      "description": "在本实验中，探索Rust中的强制转换概念，即较长的生命周期可以被强制转换为较短的生命周期，以便在特定范围内实现功能。这可以通过Rust编译器的推断强制转换，或者使用诸如<'a: 'b, 'b>这样的语法声明生命周期差异来实现。",
+      "meta": {
+        "title": "Rust强制转换 | 生命周期概念",
+        "description": "探索Rust中的强制转换概念，其中较长的生命周期可以被强制转换为较短的生命周期，以便在特定范围内实现功能。",
+        "keywords": "Rust, 强制转换, 生命周期, 编程, 概念"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "强制转换",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

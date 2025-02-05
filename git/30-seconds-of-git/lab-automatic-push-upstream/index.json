@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Automate Upstream Branch Creation",
-  "description": "In this lab, you will learn how to automate the process of creating upstream branches on push, which helps developers avoid the hassle of manually creating branches on the remote repository.",
-  "meta": {
-    "title": "Automate Upstream Branch Creation in Git",
-    "description": "Learn how to automate the process of creating upstream branches on push to avoid the hassle of manually creating the branch on the remote repository.",
-    "keywords": "automation, git labs, branch, git, upstream, collaboration, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Automate Upstream Branch Creation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Git Config and Remote Branch Existence",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/push"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Automate Upstream Branch Creation",
+      "description": "In this lab, you will learn how to automate the process of creating upstream branches on push, which helps developers avoid the hassle of manually creating branches on the remote repository.",
+      "meta": {
+        "title": "Automate Upstream Branch Creation in Git",
+        "description": "Learn how to automate the process of creating upstream branches on push to avoid the hassle of manually creating the branch on the remote repository.",
+        "keywords": "automation, git labs, branch, git, upstream, collaboration, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Automate Upstream Branch Creation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Git Config and Remote Branch Existence",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/push"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "自动创建上游分支",
+      "description": "在本实验中，你将学习如何在推送时自动创建上游分支的过程，这有助于开发者避免在远程仓库上手动创建分支的麻烦。",
+      "meta": {
+        "title": "在Git中自动创建上游分支",
+        "description": "学习如何在推送时自动创建上游分支的过程，以避免在远程仓库上手动创建分支的麻烦。",
+        "keywords": "自动化, Git实验, 分支, Git, 上游, 协作, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自动创建上游分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Git配置和远程分支是否存在",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/push"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

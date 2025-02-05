@@ -1,487 +1,10 @@
 {
   "type": "lab",
-  "title": "More on Functions",
-  "description": "Although functions were introduced earlier, very few details were provided on how they actually work at a deeper level. This section aims to fill in some gaps and discuss matters such as calling conventions, scoping rules, and more.",
-  "meta": {
-    "title": "Mastering Python Functions: Unleash the Power of Customizable Code",
-    "description": "Dive deeper into the world of Python functions and unlock their true potential.",
-    "keywords": "software development, python, coding, functions, programming"
-  },
   "difficulty": "Beginner",
   "time": 90,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Calling a Function",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/function_definition",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Default Arguments",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Prefer keyword arguments for optional arguments",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/booleans", "python/comments", "python/tuples"]
-      },
-      {
-        "title": "Design Best Practices",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Returning Values",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Python Function Definitions",
-            "file": "verify5.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/comments", "python/function_definition"]
-      },
-      {
-        "title": "Multiple Return Values",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Verify Python Function Definition and Division Operation",
-            "file": "verify6.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/data_collections",
-          "python/function_definition",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      },
-      {
-        "title": "Variable Scope",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/comments", "python/function_definition"]
-      },
-      {
-        "title": "Local Variables",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "Verify Python History Contains 'split' Command",
-            "file": "verify8.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
-        ]
-      },
-      {
-        "title": "Global Variables",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "Verify Python Code Execution and Function Definition",
-            "file": "verify9.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/scope",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Modifying Globals",
-        "text": "step10.md",
-        "verify": [
-          {
-            "name": "Verify Global Variable and Function Definition",
-            "file": "verify10.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/scope"
-        ]
-      },
-      {
-        "title": "Argument Passing",
-        "text": "step11.md",
-        "verify": [
-          {
-            "name": "Verify Presence of 'foo' and 'def' in Python History",
-            "file": "verify11.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/lists"
-        ]
-      },
-      {
-        "title": "Reassignment vs Modifying",
-        "text": "step12.md",
-        "verify": [
-          {
-            "name": "Verify Appending 'bar' to Python History",
-            "file": "verify12.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/lists"
-        ]
-      },
-      {
-        "title": "Exercise 3.3: Reading CSV Files",
-        "text": "step13.md",
-        "verify": [
-          {
-            "name": "Verify Output Contains Correct Value",
-            "file": "verify13.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["fileparse_3.3_solution.py"]
-      },
-      {
-        "title": "Exercise 3.4: Building a Column Selector",
-        "text": "step14.md",
-        "verify": [
-          {
-            "name": "Verify Python File Parsing and Output Validation",
-            "file": "verify14.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["fileparse_3.4_solution.py"]
-      },
-      {
-        "title": "Exercise 3.5: Performing Type Conversion",
-        "text": "step15.md",
-        "verify": [
-          {
-            "name": "Verify Python 3.5 File Parsing and Output Validation",
-            "file": "verify15.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["fileparse_3.5_solution.py"]
-      },
-      {
-        "title": "Exercise 3.6: Working without Headers",
-        "text": "step16.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Parsing File for 'AXP' String",
-            "file": "verify16.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["fileparse_3.6_solution.py"]
-      },
-      {
-        "title": "Exercise 3.7: Picking a different column delimiter",
-        "text": "step17.md",
-        "verify": [
-          {
-            "name": "Verify Shares Value in Output File",
-            "file": "verify17.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["fileparse_3.7_solution.py"]
-      },
-      {
-        "title": "Commentary",
-        "text": "step18.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify18.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "prices.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.dat",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse_3.3.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse_3.4.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse_3.5.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse_3.6.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse_3.7.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -490,5 +13,927 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/practical-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "portfolio.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "prices.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.dat",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse_3.3.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse_3.4.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse_3.5.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse_3.6.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse_3.7.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "More on Functions",
+      "description": "Although functions were introduced earlier, very few details were provided on how they actually work at a deeper level. This section aims to fill in some gaps and discuss matters such as calling conventions, scoping rules, and more.",
+      "meta": {
+        "title": "Mastering Python Functions: Unleash the Power of Customizable Code",
+        "description": "Dive deeper into the world of Python functions and unlock their true potential.",
+        "keywords": "software development, python, coding, functions, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Calling a Function",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/function_definition",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Default Arguments",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Prefer keyword arguments for optional arguments",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/booleans", "python/comments", "python/tuples"]
+          },
+          {
+            "title": "Design Best Practices",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Returning Values",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Python Function Definitions",
+                "file": "verify5.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          },
+          {
+            "title": "Multiple Return Values",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "Verify Python Function Definition and Division Operation",
+                "file": "verify6.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "Variable Scope",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          },
+          {
+            "title": "Local Variables",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "Verify Python History Contains 'split' Command",
+                "file": "verify8.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "Global Variables",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "Verify Python Code Execution and Function Definition",
+                "file": "verify9.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/scope",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Modifying Globals",
+            "text": "en/step10.md",
+            "verify": [
+              {
+                "name": "Verify Global Variable and Function Definition",
+                "file": "verify10.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/scope"
+            ]
+          },
+          {
+            "title": "Argument Passing",
+            "text": "en/step11.md",
+            "verify": [
+              {
+                "name": "Verify Presence of 'foo' and 'def' in Python History",
+                "file": "verify11.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/lists"
+            ]
+          },
+          {
+            "title": "Reassignment vs Modifying",
+            "text": "en/step12.md",
+            "verify": [
+              {
+                "name": "Verify Appending 'bar' to Python History",
+                "file": "verify12.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/lists"
+            ]
+          },
+          {
+            "title": "Exercise 3.3: Reading CSV Files",
+            "text": "en/step13.md",
+            "verify": [
+              {
+                "name": "Verify Output Contains Correct Value",
+                "file": "verify13.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.3_solution.py"]
+          },
+          {
+            "title": "Exercise 3.4: Building a Column Selector",
+            "text": "en/step14.md",
+            "verify": [
+              {
+                "name": "Verify Python File Parsing and Output Validation",
+                "file": "verify14.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.4_solution.py"]
+          },
+          {
+            "title": "Exercise 3.5: Performing Type Conversion",
+            "text": "en/step15.md",
+            "verify": [
+              {
+                "name": "Verify Python 3.5 File Parsing and Output Validation",
+                "file": "verify15.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.5_solution.py"]
+          },
+          {
+            "title": "Exercise 3.6: Working without Headers",
+            "text": "en/step16.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Parsing File for 'AXP' String",
+                "file": "verify16.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.6_solution.py"]
+          },
+          {
+            "title": "Exercise 3.7: Picking a different column delimiter",
+            "text": "en/step17.md",
+            "verify": [
+              {
+                "name": "Verify Shares Value in Output File",
+                "file": "verify17.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.7_solution.py"]
+          },
+          {
+            "title": "Commentary",
+            "text": "en/step18.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify18.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "更多关于函数",
+      "description": "虽然函数在前面已经介绍过，但关于它们在更深层次上实际如何工作的细节却很少。本节旨在填补一些空白，并讨论诸如调用约定、作用域规则等问题。",
+      "meta": {
+        "title": "掌握Python函数：释放可定制代码的力量",
+        "description": "深入探索Python函数的世界，释放它们的真正潜力。",
+        "keywords": "软件开发, Python, 编码, 函数, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "调用函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/function_definition",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "默认参数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "对于可选参数，优先使用关键字参数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/booleans", "python/comments", "python/tuples"]
+          },
+          {
+            "title": "设计最佳实践",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "返回值",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证 Python 函数定义是否存在",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          },
+          {
+            "title": "多个返回值",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "验证 Python 函数定义和除法运算",
+                "file": "verify6.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "变量作用域",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          },
+          {
+            "title": "局部变量",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录中是否包含'split' 命令",
+                "file": "verify8.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "全局变量",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "验证 Python 代码执行和函数定义",
+                "file": "verify9.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/scope",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "修改全局变量",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "验证全局变量和函数定义",
+                "file": "verify10.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/scope"
+            ]
+          },
+          {
+            "title": "参数传递",
+            "text": "zh/step11.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录中是否存在 'foo' 和 'def'",
+                "file": "verify11.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/lists"
+            ]
+          },
+          {
+            "title": "重新赋值与修改",
+            "text": "zh/step12.md",
+            "verify": [
+              {
+                "name": "验证在 Python 历史记录中追加 'bar'",
+                "file": "verify12.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/lists"
+            ]
+          },
+          {
+            "title": "练习 3.3：读取 CSV 文件",
+            "text": "zh/step13.md",
+            "verify": [
+              {
+                "name": "验证输出包含正确的值",
+                "file": "verify13.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.3_solution.py"]
+          },
+          {
+            "title": "练习 3.4：构建列选择器",
+            "text": "zh/step14.md",
+            "verify": [
+              {
+                "name": "验证 Python 文件解析和输出验证",
+                "file": "verify14.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.4_solution.py"]
+          },
+          {
+            "title": "练习 3.5：执行类型转换",
+            "text": "zh/step15.md",
+            "verify": [
+              {
+                "name": "验证 Python 3.5 文件解析和输出验证",
+                "file": "verify15.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.5_solution.py"]
+          },
+          {
+            "title": "练习 3.6：无标题工作",
+            "text": "zh/step16.md",
+            "verify": [
+              {
+                "name": "验证 Python 脚本解析文件中是否存在 'AXP' 字符串",
+                "file": "verify16.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.6_solution.py"]
+          },
+          {
+            "title": "练习 3.7：选择不同的列分隔符",
+            "text": "zh/step17.md",
+            "verify": [
+              {
+                "name": "验证输出文件中的股票价值",
+                "file": "verify17.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["fileparse_3.7_solution.py"]
+          },
+          {
+            "title": "注释",
+            "text": "zh/step18.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify18.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

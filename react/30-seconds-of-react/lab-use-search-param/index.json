@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "React useSearchParam Hook",
-  "description": "In this lab, we will work with the useSearchParam hook which tracks the browser's location search param. This hook allows us to get the current value of a specified parameter in the URL and update it dynamically when the URL changes. By the end of this lab, you will have a better understanding of how to use this hook in your React applications to handle URL parameters.",
-  "meta": {
-    "title": "Mastering React's useSearchParam Hook",
-    "description": "Learn how to use the powerful useSearchParam hook to manage URL parameters in your React applications.",
-    "keywords": "javascript, javascript practice, javascript practice online, url parameters, usesearchparam, javascript lab, react, javascript tutor, web development"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React useSearchParam Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/event_handling",
-          "react/hooks",
-          "react/jsx",
-          "react/use_state_reducer"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React useSearchParam Hook",
+      "description": "In this lab, we will work with the useSearchParam hook which tracks the browser's location search param. This hook allows us to get the current value of a specified parameter in the URL and update it dynamically when the URL changes. By the end of this lab, you will have a better understanding of how to use this hook in your React applications to handle URL parameters.",
+      "meta": {
+        "title": "Mastering React's useSearchParam Hook",
+        "description": "Learn how to use the powerful useSearchParam hook to manage URL parameters in your React applications.",
+        "keywords": "javascript, javascript practice, javascript practice online, url parameters, usesearchparam, javascript lab, react, javascript tutor, web development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useSearchParam Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React useSearchParam 钩子",
+      "description": "在本实验中，我们将使用 `useSearchParam` 钩子，它用于跟踪浏览器的位置搜索参数。这个钩子使我们能够获取URL中指定参数的当前值，并在URL变化时动态更新它。在本实验结束时，你将更好地理解如何在你的React应用程序中使用这个钩子来处理URL参数。",
+      "meta": {
+        "title": "掌握 React 的 useSearchParam 钩子",
+        "description": "学习如何使用强大的 `useSearchParam` 钩子在你的React应用程序中管理URL参数。",
+        "keywords": "javascript, javascript 练习, 在线javascript练习, url参数, usesearchparam, javascript实验, react, javascript导师, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useSearchParam 钩子",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页以预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

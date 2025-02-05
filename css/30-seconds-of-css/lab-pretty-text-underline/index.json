@@ -1,79 +1,10 @@
 {
   "type": "lab",
-  "title": "Pretty Text Underline",
-  "description": "In this lab, we will learn how to create a pretty text underline that does not clip descenders using CSS. By using a combination of text-shadow and background-image with linear-gradient, we can create a gradient that will act as the actual underline while ensuring that the text remains selectable. This technique provides a more visually appealing alternative to text-decoration: underline.",
-  "meta": {
-    "title": "Create Elegant Text Underlines Without Clipping Descenders",
-    "description": "Learn how to use CSS to create visually appealing text underlines that don't clip descenders, providing a better alternative to standard underlines.",
-    "keywords": "css, text underline, web design, css practice, descenders, css playground, typography, css lab, css exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Pretty Text Underline",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/backgrounds",
-          "css/colors",
-          "css/display_property",
-          "css/margin_and_padding",
-          "css/positioning",
-          "css/pseudo_elements",
-          "css/selectors",
-          "css/text_styling"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -82,5 +13,141 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Pretty Text Underline",
+      "description": "In this lab, we will learn how to create a pretty text underline that does not clip descenders using CSS. By using a combination of text-shadow and background-image with linear-gradient, we can create a gradient that will act as the actual underline while ensuring that the text remains selectable. This technique provides a more visually appealing alternative to text-decoration: underline.",
+      "meta": {
+        "title": "Create Elegant Text Underlines Without Clipping Descenders",
+        "description": "Learn how to use CSS to create visually appealing text underlines that don't clip descenders, providing a better alternative to standard underlines.",
+        "keywords": "css, text underline, web design, css practice, descenders, css playground, typography, css lab, css exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Pretty Text Underline",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/colors",
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/positioning",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/text_styling"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "美观的文本下划线",
+      "description": "在本实验中，我们将学习如何使用 CSS 创建一个美观的文本下划线，且不会裁剪下行字母。通过结合使用 text-shadow 和带有线性渐变的 background-image，我们可以创建一个渐变效果，该渐变将充当实际的下划线，同时确保文本仍可选中。此技术为 text-decoration: underline 提供了一种更具视觉吸引力的替代方案。",
+      "meta": {
+        "title": "创建优雅的文本下划线且不裁剪下行字母",
+        "description": "学习如何使用 CSS 创建视觉上吸引人的文本下划线，且不会裁剪下行字母，为标准下划线提供更好的替代方案。",
+        "keywords": "CSS, 文本下划线, 网页设计, CSS 实践, 下行字母, CSS 游乐场, 排版, CSS 实验, CSS 练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "美观的文本下划线",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 index.html 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 style.css 修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/colors",
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/positioning",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/text_styling"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Change the Last Commit's Message",
-  "description": "Git is a powerful version control system that allows developers to track changes in their codebase. One of the key features of Git is the ability to modify the commit history. In this lab, you will learn how to change the last commit's message without changing its contents.",
-  "meta": {
-    "title": "Change the Last Commit's Message in Git",
-    "description": "Learn how to easily correct a typo in your last Git commit message without modifying the actual changes.",
-    "keywords": "version control, amend, git labs, git, commit message, commit history, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Change the Last Commit's Message",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful change",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Change the Last Commit's Message",
+      "description": "Git is a powerful version control system that allows developers to track changes in their codebase. One of the key features of Git is the ability to modify the commit history. In this lab, you will learn how to change the last commit's message without changing its contents.",
+      "meta": {
+        "title": "Change the Last Commit's Message in Git",
+        "description": "Learn how to easily correct a typo in your last Git commit message without modifying the actual changes.",
+        "keywords": "version control, amend, git labs, git, commit message, commit history, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Change the Last Commit's Message",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful change",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "更改最后一次提交的消息",
+      "description": "Git是一个强大的版本控制系统，它允许开发者跟踪其代码库中的更改。Git的关键特性之一是能够修改提交历史记录。在本实验中，你将学习如何在不更改最后一次提交内容的情况下更改其提交消息。",
+      "meta": {
+        "title": "在Git中更改最后一次提交的消息",
+        "description": "学习如何在不修改实际更改的情况下轻松纠正最后一次Git提交消息中的拼写错误。",
+        "keywords": "版本控制, 修改, Git实验, Git, 提交消息, 提交历史记录, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "更改最后一次提交的消息",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证更改是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

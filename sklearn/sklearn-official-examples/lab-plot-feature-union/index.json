@@ -1,153 +1,10 @@
 {
   "type": "lab",
-  "title": "Concatenating Multiple Feature Extraction Methods",
-  "description": "In this lab, we will learn how to concatenate multiple feature extraction methods using Python's scikit-learn library. We will use the FeatureUnion transformer to combine features obtained by PCA and univariate selection. Combining features using this transformer has the benefit that it allows cross-validation and grid searches over the whole process.",
-  "meta": {
-    "title": "Combining Feature Extraction Methods | Python Scikit-Learn Tutorial",
-    "description": "Learn how to concatenate multiple feature extraction techniques using Python's scikit-learn library. Explore the benefits of using FeatureUnion transformer for cross-validation and grid searches.",
-    "keywords": "Python, Scikit-Learn, Feature Extraction, FeatureUnion, PCA, Univariate Selection"
-  },
   "difficulty": "Beginner",
   "time": 45,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/decomposition",
-          "sklearn/feature_selection",
-          "sklearn/model_selection",
-          "sklearn/pipeline",
-          "sklearn/svm"
-        ]
-      },
-      {
-        "title": "Load the Dataset",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Feature Extraction",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": PCA",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": Univariate Selection",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": Combined Features",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": Transformed Dataset",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Model Training",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Grid Search",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify9.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-feature-union.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -156,5 +13,294 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-feature-union.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Concatenating Multiple Feature Extraction Methods",
+      "description": "In this lab, we will learn how to concatenate multiple feature extraction methods using Python's scikit-learn library. We will use the FeatureUnion transformer to combine features obtained by PCA and univariate selection. Combining features using this transformer has the benefit that it allows cross-validation and grid searches over the whole process.",
+      "meta": {
+        "title": "Combining Feature Extraction Methods | Python Scikit-Learn Tutorial",
+        "description": "Learn how to concatenate multiple feature extraction techniques using Python's scikit-learn library. Explore the benefits of using FeatureUnion transformer for cross-validation and grid searches.",
+        "keywords": "Python, Scikit-Learn, Feature Extraction, FeatureUnion, PCA, Univariate Selection"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition",
+              "sklearn/feature_selection",
+              "sklearn/model_selection",
+              "sklearn/pipeline",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "Load the Dataset",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Feature Extraction",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": PCA",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": Univariate Selection",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": Combined Features",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": Transformed Dataset",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Model Training",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Grid Search",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify9.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "连接多种特征提取方法",
+      "description": "在本实验中，我们将学习如何使用Python的scikit-learn库连接多种特征提取方法。我们将使用FeatureUnion变换器来组合通过主成分分析（PCA）和单变量选择获得的特征。使用此变换器组合特征的好处是它允许在整个过程中进行交叉验证和网格搜索。",
+      "meta": {
+        "title": "组合特征提取方法 | Python Scikit-Learn教程",
+        "description": "学习如何使用Python的scikit-learn库连接多种特征提取技术。探索使用FeatureUnion变换器进行交叉验证和网格搜索的好处。",
+        "keywords": "Python, Scikit-Learn, 特征提取, FeatureUnion, PCA, 单变量选择"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition",
+              "sklearn/feature_selection",
+              "sklearn/model_selection",
+              "sklearn/pipeline",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "加载数据集",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "特征提取",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 主成分分析（PCA）",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 单变量选择",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 组合特征",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 转换后的数据集",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "模型训练",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "网格搜索",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

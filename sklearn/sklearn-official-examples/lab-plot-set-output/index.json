@@ -1,131 +1,10 @@
 {
   "type": "lab",
-  "title": "Using Set_output API",
-  "description": "In this lab, we will learn how to use the set_output API in Scikit-Learn to configure transformers to output pandas DataFrames. This feature is useful when working with heterogeneous data and pipelines in Scikit-Learn.",
-  "meta": {
-    "title": "Using Set_output API in Scikit-Learn",
-    "description": "Learn how to use the set_output API in Scikit-Learn to configure transformers to output pandas DataFrames.",
-    "keywords": "pandas, set output, machine learning, scikit learn, api, scikit-learn, machine learning playground, dataframes, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Iris dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
-      },
-      {
-        "title": "Configure a transformer to output DataFrames",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/preprocessing"]
-      },
-      {
-        "title": "Configure transform after fit",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Configure a pipeline to output DataFrames",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/feature_selection",
-          "sklearn/linear_model",
-          "sklearn/pipeline"
-        ]
-      },
-      {
-        "title": "Load the Titanic dataset",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Configure set_output globally",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/compose",
-          "sklearn/impute",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Configure set_output with config_context",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-set-output.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -134,5 +13,258 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-set-output.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Using Set_output API",
+      "description": "In this lab, we will learn how to use the set_output API in Scikit-Learn to configure transformers to output pandas DataFrames. This feature is useful when working with heterogeneous data and pipelines in Scikit-Learn.",
+      "meta": {
+        "title": "Using Set_output API in Scikit-Learn",
+        "description": "Learn how to use the set_output API in Scikit-Learn to configure transformers to output pandas DataFrames.",
+        "keywords": "pandas, set output, machine learning, scikit learn, api, scikit-learn, machine learning playground, dataframes, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Iris dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Configure a transformer to output DataFrames",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+          },
+          {
+            "title": "Configure transform after fit",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Configure a pipeline to output DataFrames",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_selection",
+              "sklearn/linear_model",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "Load the Titanic dataset",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Configure set_output globally",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/compose",
+              "sklearn/impute",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Configure set_output with config_context",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Set_output API",
+      "description": "在本实验中，我们将学习如何使用Scikit-Learn中的set_output API来配置转换器，使其输出pandas DataFrame。在处理Scikit-Learn中的异构数据和管道时，此功能非常有用。",
+      "meta": {
+        "title": "在Scikit-Learn中使用Set_output API",
+        "description": "学习如何使用Scikit-Learn中的set_output API来配置转换器，使其输出pandas DataFrame。",
+        "keywords": "熊猫数据框, 设置输出, 机器学习, 科学计算工具包学习, API, 科学计算工具包, 机器学习游乐场, 数据框, 科学计算工具包游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载鸢尾花数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "配置一个转换器以输出数据框",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+          },
+          {
+            "title": "在拟合后配置转换器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "配置一个管道以输出数据框",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_selection",
+              "sklearn/linear_model",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "加载泰坦尼克号数据集",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "全局配置 set_output",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/compose",
+              "sklearn/impute",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "使用配置上下文配置set_output",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

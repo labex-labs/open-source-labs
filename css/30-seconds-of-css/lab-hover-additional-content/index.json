@@ -1,81 +1,10 @@
 {
   "type": "lab",
-  "title": "Show Additional Content on Hover",
-  "description": "In this lab, we will explore how to create a card that displays additional content on hover using CSS. The goal is to use pseudo-class selectors and transitions to create a smooth and visually appealing effect. This skill is useful for web developers who want to enhance the user experience on their websites by providing additional information without cluttering the page.",
-  "meta": {
-    "title": "Enhance User Experience with Hover-Activated Content",
-    "description": "Learn how to create visually appealing cards that display additional content on hover, improving user engagement on your website.",
-    "keywords": "css, css transitions, css practice, user experience, hover effects, css playground, web development, content display, css lab, css exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Show Additional Content on Hover",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/borders",
-          "css/box_model",
-          "css/colors",
-          "css/display_property",
-          "css/fonts",
-          "css/margin_and_padding",
-          "css/pseudo_classes",
-          "css/selectors",
-          "css/transitions",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -84,5 +13,145 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Show Additional Content on Hover",
+      "description": "In this lab, we will explore how to create a card that displays additional content on hover using CSS. The goal is to use pseudo-class selectors and transitions to create a smooth and visually appealing effect. This skill is useful for web developers who want to enhance the user experience on their websites by providing additional information without cluttering the page.",
+      "meta": {
+        "title": "Enhance User Experience with Hover-Activated Content",
+        "description": "Learn how to create visually appealing cards that display additional content on hover, improving user engagement on your website.",
+        "keywords": "css, css transitions, css practice, user experience, hover effects, css playground, web development, content display, css lab, css exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Show Additional Content on Hover",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/borders",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/fonts",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "鼠标悬停时显示额外内容",
+      "description": "在本实验中，我们将探索如何使用 CSS 创建一个在鼠标悬停时显示额外内容的卡片。目标是使用伪类选择器和过渡来创建一个流畅且视觉上吸引人的效果。对于希望通过提供额外信息而不使页面杂乱来提升网站用户体验的网页开发者来说，这项技能很有用。",
+      "meta": {
+        "title": "通过悬停激活的内容提升用户体验",
+        "description": "学习如何创建在鼠标悬停时显示额外内容的视觉上吸引人的卡片，提高网站上的用户参与度。",
+        "keywords": "CSS, CSS过渡, CSS实践, 用户体验, 悬停效果, CSS游乐场, 网页开发, 内容显示, CSS实验, CSS练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "鼠标悬停时显示额外内容",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/borders",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/fonts",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

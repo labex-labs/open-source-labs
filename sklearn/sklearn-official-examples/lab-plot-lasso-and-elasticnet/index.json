@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Sparse Signal Regression with L1-Based Models",
-  "description": "In this lab, we will demonstrate how to use L1-based regression models to deal with high-dimensional and sparse signals. In particular, we will compare three popular L1-based models: Lasso, Automatic Relevance Determination (ARD), and ElasticNet. We will use a synthetic dataset to illustrate the performance of these models in terms of fitting time, R2 score, and sparsity of estimated coefficients.",
-  "meta": {
-    "title": "L1-Based Regression Models | Sparse Signals | Machine Learning",
-    "description": "Learn how to use L1-based regression models like Lasso, ARD, and ElasticNet to deal with high-dimensional and sparse signals. Explore a synthetic dataset and compare model performance.",
-    "keywords": "L1-based regression, Lasso, ARD, ElasticNet, sparse signals, high-dimensional, machine learning"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Synthetic Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      },
-      {
-        "title": "Lasso",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model", "sklearn/metrics"]
-      },
-      {
-        "title": "Automatic Relevance Determination (ARD)",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      },
-      {
-        "title": "ElasticNet",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      },
-      {
-        "title": "Plot and Analysis of the Results",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-lasso-and-elasticnet.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,182 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-lasso-and-elasticnet.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Sparse Signal Regression with L1-Based Models",
+      "description": "In this lab, we will demonstrate how to use L1-based regression models to deal with high-dimensional and sparse signals. In particular, we will compare three popular L1-based models: Lasso, Automatic Relevance Determination (ARD), and ElasticNet. We will use a synthetic dataset to illustrate the performance of these models in terms of fitting time, R2 score, and sparsity of estimated coefficients.",
+      "meta": {
+        "title": "L1-Based Regression Models | Sparse Signals | Machine Learning",
+        "description": "Learn how to use L1-based regression models like Lasso, ARD, and ElasticNet to deal with high-dimensional and sparse signals. Explore a synthetic dataset and compare model performance.",
+        "keywords": "L1-based regression, Lasso, ARD, ElasticNet, sparse signals, high-dimensional, machine learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Synthetic Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "Lasso",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model", "sklearn/metrics"]
+          },
+          {
+            "title": "Automatic Relevance Determination (ARD)",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "ElasticNet",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "Plot and Analysis of the Results",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用基于L1的模型进行稀疏信号回归",
+      "description": "在本实验中，我们将演示如何使用基于L1的回归模型来处理高维和稀疏信号。具体来说，我们将比较三种流行的基于L1的模型：套索（Lasso）、自动相关性确定（ARD）和弹性网络（ElasticNet）。我们将使用一个合成数据集来说明这些模型在拟合时间、R2分数和估计系数的稀疏性方面的性能。",
+      "meta": {
+        "title": "基于L1的回归模型 | 稀疏信号 | 机器学习",
+        "description": "了解如何使用套索（Lasso）、自动相关性确定（ARD）和弹性网络（ElasticNet）等基于L1的回归模型来处理高维和稀疏信号。探索一个合成数据集并比较模型性能。",
+        "keywords": "基于L1的回归, 套索（Lasso）, 自动相关性确定（ARD）, 弹性网络（ElasticNet）, 稀疏信号, 高维, 机器学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成合成数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "套索（Lasso）",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model", "sklearn/metrics"]
+          },
+          {
+            "title": "自动相关性确定（ARD）",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "弹性网络（ElasticNet）",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "结果的绘制与分析",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

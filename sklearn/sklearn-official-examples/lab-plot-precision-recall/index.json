@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Precision-Recall Metric for Imbalanced Classification",
-  "description": "This tutorial provides a step-by-step guide on how to use the Precision-Recall metric to evaluate classifier output quality. The Precision-Recall curve is a useful measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.",
-  "meta": {
-    "title": "Precision-Recall Metric | Classifier Evaluation | Machine Learning",
-    "description": "Learn how to use the Precision-Recall metric to evaluate classifier output quality, especially for imbalanced datasets. Explore the iris dataset and a Linear SVC classifier.",
-    "keywords": "precision-recall, classifier evaluation, machine learning, iris dataset, linear svc"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Dataset and Model",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/model_selection",
-          "sklearn/pipeline",
-          "sklearn/preprocessing",
-          "sklearn/svm"
-        ]
-      },
-      {
-        "title": "Plot the Precision-Recall Curve",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/metrics"]
-      },
-      {
-        "title": "Plot Precision-Recall Curve for Multi-Label Classification",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/metrics",
-          "sklearn/multiclass",
-          "sklearn/preprocessing"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-precision-recall.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-precision-recall.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Precision-Recall Metric for Imbalanced Classification",
+      "description": "This tutorial provides a step-by-step guide on how to use the Precision-Recall metric to evaluate classifier output quality. The Precision-Recall curve is a useful measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.",
+      "meta": {
+        "title": "Precision-Recall Metric | Classifier Evaluation | Machine Learning",
+        "description": "Learn how to use the Precision-Recall metric to evaluate classifier output quality, especially for imbalanced datasets. Explore the iris dataset and a Linear SVC classifier.",
+        "keywords": "precision-recall, classifier evaluation, machine learning, iris dataset, linear svc"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Dataset and Model",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection",
+              "sklearn/pipeline",
+              "sklearn/preprocessing",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "Plot the Precision-Recall Curve",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          },
+          {
+            "title": "Plot Precision-Recall Curve for Multi-Label Classification",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/metrics",
+              "sklearn/multiclass",
+              "sklearn/preprocessing"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "不平衡分类中的精确率-召回率指标",
+      "description": "本教程提供了一份关于如何使用精确率-召回率指标来评估分类器输出质量的分步指南。当类别非常不平衡时，精确率-召回率曲线是衡量预测成功与否的有用指标。在信息检索中，精确率是衡量结果相关性的指标，而召回率是衡量返回了多少真正相关结果的指标。",
+      "meta": {
+        "title": "精确率-召回率指标 | 分类器评估 | 机器学习",
+        "description": "学习如何使用精确率-召回率指标来评估分类器输出质量，特别是对于不平衡数据集。探索鸢尾花数据集和线性支持向量分类器（Linear SVC）。",
+        "keywords": "精确率-召回率, 分类器评估, 机器学习, 鸢尾花数据集, 线性支持向量分类器"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据集和模型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection",
+              "sklearn/pipeline",
+              "sklearn/preprocessing",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "绘制精确率-召回率曲线",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          },
+          {
+            "title": "绘制多标签分类的精确率-召回率曲线",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/metrics",
+              "sklearn/multiclass",
+              "sklearn/preprocessing"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

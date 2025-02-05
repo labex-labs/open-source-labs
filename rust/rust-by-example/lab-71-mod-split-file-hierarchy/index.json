@@ -1,47 +1,10 @@
 {
   "type": "lab",
-  "title": "Modular Rust File Organization",
-  "description": "In this lab, the file hierarchy of the modules in the code example can be represented as follows: There is a directory named 'my' which contains two files, 'inaccessible.rs' and 'nested.rs'. Additionally, there is a file named 'my.rs' and a file named 'split.rs'. The 'split.rs' file includes the module 'my' which is defined in the 'my.rs' file, and the 'my.rs' file includes the modules 'inaccessible' and 'nested' which are defined in the 'inaccessible.rs' and 'nested.rs' files respectively.",
-  "meta": {
-    "title": "Rust Programming | File Hierarchy | Module Visibility",
-    "description": "Explore the file hierarchy and module visibility in Rust programming through a comprehensive code example and tutorial.",
-    "keywords": "Rust, Programming, File Hierarchy, Module Visibility, Coding, Tutorial"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "File hierarchy",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/module_system"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -50,5 +13,91 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Modular Rust File Organization",
+      "description": "In this lab, the file hierarchy of the modules in the code example can be represented as follows: There is a directory named 'my' which contains two files, 'inaccessible.rs' and 'nested.rs'. Additionally, there is a file named 'my.rs' and a file named 'split.rs'. The 'split.rs' file includes the module 'my' which is defined in the 'my.rs' file, and the 'my.rs' file includes the modules 'inaccessible' and 'nested' which are defined in the 'inaccessible.rs' and 'nested.rs' files respectively.",
+      "meta": {
+        "title": "Rust Programming | File Hierarchy | Module Visibility",
+        "description": "Explore the file hierarchy and module visibility in Rust programming through a comprehensive code example and tutorial.",
+        "keywords": "Rust, Programming, File Hierarchy, Module Visibility, Coding, Tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "File hierarchy",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/module_system"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust模块化文件组织",
+      "description": "在本实验中，代码示例中模块的文件层次结构如下：有一个名为“my”的目录，其中包含两个文件，“inaccessible.rs”和“nested.rs”。此外，还有一个名为“my.rs”的文件和一个名为“split.rs”的文件。“split.rs”文件包含在“my.rs”文件中定义的模块“my”，而“my.rs”文件分别包含在“inaccessible.rs”和“nested.rs”文件中定义的模块“inaccessible”和“nested”。",
+      "meta": {
+        "title": "Rust编程 | 文件层次结构 | 模块可见性",
+        "description": "通过一个全面的代码示例和教程，探索Rust编程中的文件层次结构和模块可见性。",
+        "keywords": "Rust,编程,文件层次结构,模块可见性,编码,教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文件层次结构",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/module_system"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

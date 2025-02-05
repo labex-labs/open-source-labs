@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Working with Directories in Go",
-  "description": "In this lab, you will learn how to work with directories in Go. Go provides several useful functions for working with directories in the file system.",
-  "meta": {
-    "title": "Go Programming | Directory Management",
-    "description": "Learn how to work with directories in Go, including creating, listing, and recursively visiting directories in the file system.",
-    "keywords": "Go Programming, Directory Management, File System, Recursive Directory Traversal"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Directories",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Listing Subdirectory Parent Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/directories"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "directories.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "directories.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Working with Directories in Go",
+      "description": "In this lab, you will learn how to work with directories in Go. Go provides several useful functions for working with directories in the file system.",
+      "meta": {
+        "title": "Go Programming | Directory Management",
+        "description": "Learn how to work with directories in Go, including creating, listing, and recursively visiting directories in the file system.",
+        "keywords": "Go Programming, Directory Management, File System, Recursive Directory Traversal"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Directories",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Listing Subdirectory Parent Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/directories"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Go语言中处理目录",
+      "description": "在本实验中，你将学习如何在Go语言中处理目录。Go语言提供了几个用于处理文件系统中目录的实用函数。",
+      "meta": {
+        "title": "Go编程 | 目录管理",
+        "description": "学习如何在Go语言中处理目录，包括在文件系统中创建、列出和递归访问目录。",
+        "keywords": "Go编程, 目录管理, 文件系统, 递归目录遍历"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "目录",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证列出子目录的父目录",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/directories"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

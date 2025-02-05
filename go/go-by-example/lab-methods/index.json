@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Go Programming Language Methods",
-  "description": "This lab aims to test the knowledge of the Go programming language's method feature.",
-  "meta": {
-    "title": "Go Programming Language | Methods and Interfaces",
-    "description": "Explore the Go programming language's method feature and learn how to define and use methods in your code. Discover the power of interfaces in Go.",
-    "keywords": "Go programming, methods, interfaces, struct types, receiver types, area, perimeter"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Methods",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Outputs Area 50",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/methods"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "methods.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "methods.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Go Programming Language Methods",
+      "description": "This lab aims to test the knowledge of the Go programming language's method feature.",
+      "meta": {
+        "title": "Go Programming Language | Methods and Interfaces",
+        "description": "Explore the Go programming language's method feature and learn how to define and use methods in your code. Discover the power of interfaces in Go.",
+        "keywords": "Go programming, methods, interfaces, struct types, receiver types, area, perimeter"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Methods",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Outputs Area 50",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/methods"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 编程语言方法",
+      "description": "本实验旨在测试对 Go 编程语言方法特性的了解。",
+      "meta": {
+        "title": "Go 编程语言 | 方法与接口",
+        "description": "探索 Go 编程语言的方法特性，学习如何在代码中定义和使用方法。发现 Go 语言中接口的强大功能。",
+        "keywords": "Go 编程, 方法, 接口, 结构体类型, 接收者类型, 面积, 周长"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "方法",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序输出面积为 50",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/methods"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

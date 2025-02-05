@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Base64 Encoding in Golang",
-  "description": "This lab aims to test your knowledge of base64 encoding in Golang.",
-  "meta": {
-    "title": "Mastering Base64 Encoding in Golang",
-    "description": "Explore the intricacies of base64 encoding and decoding in Golang, with step-by-step examples and practical applications.",
-    "keywords": "go playground, decoding, encoding, base64, go, golang, go labs, go playground online, programming, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Base64 Encoding",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Base64 Encoding Correctness",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/base64_encoding"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "base64-encoding.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "base64-encoding.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Base64 Encoding in Golang",
+      "description": "This lab aims to test your knowledge of base64 encoding in Golang.",
+      "meta": {
+        "title": "Mastering Base64 Encoding in Golang",
+        "description": "Explore the intricacies of base64 encoding and decoding in Golang, with step-by-step examples and practical applications.",
+        "keywords": "go playground, decoding, encoding, base64, go, golang, go labs, go playground online, programming, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Base64 Encoding",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Base64 Encoding Correctness",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/base64_encoding"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 语言中的 Base64 编码",
+      "description": "本实验旨在测试你对 Go 语言中 Base64 编码的了解。",
+      "meta": {
+        "title": "精通 Go 语言中的 Base64 编码",
+        "description": "通过逐步示例和实际应用，探索 Go 语言中 Base64 编码和解码的复杂性。",
+        "keywords": "Go 语言游乐场, 解码, 编码, Base64, Go, Go 语言, Go 实验, 在线 Go 语言游乐场, 编程, Go 语言实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Base64 编码",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Base64 编码的正确性",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/base64_encoding"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

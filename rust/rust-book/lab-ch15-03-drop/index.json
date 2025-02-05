@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Cleanup with Rust's Drop Trait",
-  "description": "In this lab, we explore the Drop trait in Rust, which allows for customization of cleanup actions when a value goes out of scope, typically used in smart pointers, and can be implemented by providing a drop method that is automatically called by Rust, avoiding the need for explicit cleanup code.",
-  "meta": {
-    "title": "Running Code on Cleanup with the Drop Trait | Rust Programming",
-    "description": "Learn how to use the Drop trait in Rust to customize cleanup actions when a value goes out of scope, a key concept in smart pointers.",
-    "keywords": "Rust, Drop Trait, Smart Pointers, Memory Management, Cleanup, Programming"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Running Code on Cleanup with the Drop Trait",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/drop_trait",
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Cleanup with Rust's Drop Trait",
+      "description": "In this lab, we explore the Drop trait in Rust, which allows for customization of cleanup actions when a value goes out of scope, typically used in smart pointers, and can be implemented by providing a drop method that is automatically called by Rust, avoiding the need for explicit cleanup code.",
+      "meta": {
+        "title": "Running Code on Cleanup with the Drop Trait | Rust Programming",
+        "description": "Learn how to use the Drop trait in Rust to customize cleanup actions when a value goes out of scope, a key concept in smart pointers.",
+        "keywords": "Rust, Drop Trait, Smart Pointers, Memory Management, Cleanup, Programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Running Code on Cleanup with the Drop Trait",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Rust 的 Drop 特性进行清理",
+      "description": "在本实验中，我们探索 Rust 中的 Drop 特性，它允许在值超出作用域时自定义清理操作，通常用于智能指针，并且可以通过提供一个由 Rust 自动调用的 drop 方法来实现，从而避免了显式清理代码的需要。",
+      "meta": {
+        "title": "使用 Drop 特性在清理时运行代码 | Rust 编程",
+        "description": "学习如何在 Rust 中使用 Drop 特性，以便在值超出作用域时自定义清理操作，这是智能指针中的一个关键概念。",
+        "keywords": "Rust, Drop 特性, 智能指针, 内存管理, 清理, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用 Drop 特性在清理时运行代码",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

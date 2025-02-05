@@ -1,124 +1,239 @@
 {
   "type": "lab",
-  "title": "Customizing Django's Admin Site",
-  "description": "This tutorial begins where Add a Stylesheet and an Image left off. We're continuing the web-poll application and will focus on customizing Django's automatically-generated admin site that we first explored in Set Up the Database.",
-  "meta": {
-    "title": "Customize Django Admin Site | Web Development Tutorial",
-    "description": "Learn how to customize the Django admin site, including reordering fields and creating fieldsets, to improve the usability of your web application.",
-    "keywords": "Django, Admin Site, Customization, Web Development, Python"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Customize the admin form",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify fieldsets in the admin form",
-            "file": "verify1.sh",
-            "hint": "Please add fieldsets to the admin form.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["django/contrib_packages", "django/django_admin"]
-      },
-      {
-        "title": "Adding related objects",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Presence of TabularInline in admin.py",
-            "file": "verify2.sh",
-            "hint": "Please use TabularInline in admin.py",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "django/contrib_packages",
-          "django/databases",
-          "django/models",
-          "django/schemaeditor"
-        ]
-      },
-      {
-        "title": "Customize the admin change list",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Presence of search_fields in admin.py",
-            "file": "verify3.sh",
-            "hint": "Please add search_fields to admin.py",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "django/contrib_packages",
-          "django/databases",
-          "django/django_admin",
-          "django/models",
-          "django/schemaeditor"
-        ]
-      },
-      {
-        "title": "Customize the admin look and feel",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "django/contrib_packages",
-          "django/django_admin",
-          "django/templates"
-        ]
-      },
-      {
-        "title": "Customize the admin index page",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "*.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
-  "contributors": []
+  "contributors": [],
+  "assets": {
+    "host01": [
+      {
+        "file": "*.zip",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Customizing Django's Admin Site",
+      "description": "This tutorial begins where Add a Stylesheet and an Image left off. We're continuing the web-poll application and will focus on customizing Django's automatically-generated admin site that we first explored in Set Up the Database.",
+      "meta": {
+        "title": "Customize Django Admin Site | Web Development Tutorial",
+        "description": "Learn how to customize the Django admin site, including reordering fields and creating fieldsets, to improve the usability of your web application.",
+        "keywords": "Django, Admin Site, Customization, Web Development, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Customize the admin form",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify fieldsets in the admin form",
+                "file": "verify1.sh",
+                "hint": "Please add fieldsets to the admin form.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["django/contrib_packages", "django/django_admin"]
+          },
+          {
+            "title": "Adding related objects",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Presence of TabularInline in admin.py",
+                "file": "verify2.sh",
+                "hint": "Please use TabularInline in admin.py",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "Customize the admin change list",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Presence of search_fields in admin.py",
+                "file": "verify3.sh",
+                "hint": "Please add search_fields to admin.py",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/django_admin",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "Customize the admin look and feel",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/django_admin",
+              "django/templates"
+            ]
+          },
+          {
+            "title": "Customize the admin index page",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "自定义 Django 管理站点",
+      "description": "本教程从《添加样式表和图像》结束的地方开始。我们将继续开发网络投票应用程序，并专注于自定义 Django 自动生成的管理站点，我们在《设置数据库》中首次探索了该站点。",
+      "meta": {
+        "title": "自定义 Django 管理站点 | 网页开发教程",
+        "description": "学习如何自定义 Django 管理站点，包括重新排列字段和创建字段集，以提高你的网页应用程序的可用性。",
+        "keywords": "Django, 管理站点, 自定义, 网页开发, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自定义管理表单",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证管理表单中的字段集",
+                "file": "verify1.sh",
+                "hint": "请向管理表单中添加字段集。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["django/contrib_packages", "django/django_admin"]
+          },
+          {
+            "title": "添加相关对象",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 admin.py 中是否存在 TabularInline",
+                "file": "verify2.sh",
+                "hint": "请在 admin.py 中使用 TabularInline",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "自定义管理变更列表",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 admin.py 中是否存在 search_fields",
+                "file": "verify3.sh",
+                "hint": "请在 admin.py 中添加 search_fields",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/django_admin",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "自定义管理界面的外观和感觉",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/django_admin",
+              "django/templates"
+            ]
+          },
+          {
+            "title": "自定义管理索引页面",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

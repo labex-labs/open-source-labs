@@ -1,56 +1,10 @@
 {
   "type": "lab",
-  "title": "Convert Celsius to Fahrenheit",
-  "description": "In the field of science, temperature is often measured in Celsius or Fahrenheit. Celsius is the metric unit of temperature measurement, while Fahrenheit is the imperial unit of temperature measurement. Sometimes, it is necessary to convert Celsius to Fahrenheit or vice versa. In this challenge, you will be tasked to convert Celsius to Fahrenheit using a conversion formula.",
-  "meta": {
-    "title": "Convert Celsius to Fahrenheit",
-    "description": "Learn how to convert Celsius to Fahrenheit using a simple formula in this comprehensive programming tutorial.",
-    "keywords": "python playground, python, fahrenheit, temperature conversion, tutorial, celsius, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Celsius to Fahrenheit Challenge",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Celsius to Fahrenheit Conversion",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/comments", "python/function_definition"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_celsius_to_fahrenheit.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "celsius_to_fahrenheit.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -59,5 +13,95 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_celsius_to_fahrenheit.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "celsius_to_fahrenheit.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Convert Celsius to Fahrenheit",
+      "description": "In the field of science, temperature is often measured in Celsius or Fahrenheit. Celsius is the metric unit of temperature measurement, while Fahrenheit is the imperial unit of temperature measurement. Sometimes, it is necessary to convert Celsius to Fahrenheit or vice versa. In this challenge, you will be tasked to convert Celsius to Fahrenheit using a conversion formula.",
+      "meta": {
+        "title": "Convert Celsius to Fahrenheit",
+        "description": "Learn how to convert Celsius to Fahrenheit using a simple formula in this comprehensive programming tutorial.",
+        "keywords": "python playground, python, fahrenheit, temperature conversion, tutorial, celsius, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Celsius to Fahrenheit Challenge",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Celsius to Fahrenheit Conversion",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将摄氏温度转换为华氏温度",
+      "description": "在科学领域，温度通常用摄氏度（Celsius）或华氏度（Fahrenheit）来测量。摄氏度是公制温度计量单位，而华氏度是英制温度计量单位。有时，需要将摄氏度转换为华氏度，或者反之亦然。在这个挑战中，你将被要求使用一个转换公式将摄氏度转换为华氏度。",
+      "meta": {
+        "title": "将摄氏温度转换为华氏温度",
+        "description": "在这个全面的编程教程中，学习如何使用一个简单的公式将摄氏温度转换为华氏温度。",
+        "keywords": "Python 游乐场, Python, 华氏度, 温度转换, 教程, 摄氏度, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "摄氏温度转华氏温度挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证摄氏温度到华氏温度的转换",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

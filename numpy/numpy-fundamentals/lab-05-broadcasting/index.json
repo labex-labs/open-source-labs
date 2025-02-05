@@ -1,150 +1,10 @@
 {
   "type": "lab",
-  "title": "NumPy Broadcasting for Efficient Computation",
-  "description": "Broadcasting is a powerful feature in NumPy that allows arrays with different shapes to be used in arithmetic operations. It provides a way to vectorize array operations and improve computational efficiency. This lab will guide you through the basics of broadcasting in NumPy.",
-  "meta": {
-    "title": "Mastering NumPy Broadcasting | Data Science | Python",
-    "description": "Learn the power of broadcasting in NumPy, a crucial feature for efficient array operations in data science and Python programming.",
-    "keywords": "NumPy, Broadcasting, Data Science, Python, Array Operations"
-  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Understanding Broadcasting",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Broadcasting with Arrays of the Same Shape",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "numpy/1d_array",
-          "numpy/bool_idx",
-          "numpy/data_array",
-          "numpy/fancy_idx",
-          "python/importing_modules",
-          "python/lists",
-          "python/numerical_computing",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Broadcasting with a Scalar Value",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "numpy/1d_array",
-          "numpy/bool_idx",
-          "numpy/data_array",
-          "numpy/fancy_idx",
-          "python/importing_modules",
-          "python/lists",
-          "python/numerical_computing",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "General Broadcasting Rules",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Broadcasting Examples",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "numpy/1d_array",
-          "numpy/bool_idx",
-          "numpy/data_array",
-          "numpy/fancy_idx",
-          "numpy/multi_array",
-          "python/importing_modules",
-          "python/lists",
-          "python/numerical_computing",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Practical Example - Vector Quantization",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "numpy/1d_array",
-          "numpy/bool_idx",
-          "numpy/data_array",
-          "numpy/fancy_idx",
-          "numpy/math_ops",
-          "numpy/multi_array",
-          "numpy/stats",
-          "python/build_in_functions",
-          "python/importing_modules",
-          "python/lists",
-          "python/numerical_computing",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "05-broadcasting.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -153,5 +13,288 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
     "repo": "https://github.com/numpy/numpy"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "05-broadcasting.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "NumPy Broadcasting for Efficient Computation",
+      "description": "Broadcasting is a powerful feature in NumPy that allows arrays with different shapes to be used in arithmetic operations. It provides a way to vectorize array operations and improve computational efficiency. This lab will guide you through the basics of broadcasting in NumPy.",
+      "meta": {
+        "title": "Mastering NumPy Broadcasting | Data Science | Python",
+        "description": "Learn the power of broadcasting in NumPy, a crucial feature for efficient array operations in data science and Python programming.",
+        "keywords": "NumPy, Broadcasting, Data Science, Python, Array Operations"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Understanding Broadcasting",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Broadcasting with Arrays of the Same Shape",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Broadcasting with a Scalar Value",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "General Broadcasting Rules",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Broadcasting Examples",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "numpy/multi_array",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Practical Example - Vector Quantization",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "numpy/math_ops",
+              "numpy/multi_array",
+              "numpy/stats",
+              "python/build_in_functions",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 NumPy 广播实现高效计算",
+      "description": "广播是 NumPy 中的一项强大功能，它允许在算术运算中使用形状不同的数组。它提供了一种向量化数组操作并提高计算效率的方法。本实验将指导你了解 NumPy 广播的基础知识。",
+      "meta": {
+        "title": "掌握 NumPy 广播 | 数据科学 | Python",
+        "description": "了解 NumPy 广播的强大功能，这是数据科学和 Python 编程中高效数组操作的关键特性。",
+        "keywords": "NumPy, 广播, 数据科学, Python, 数组操作"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "理解广播",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "对形状相同的数组进行广播",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "使用标量值进行广播",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "通用广播规则",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "广播示例",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "numpy/multi_array",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "实际示例 - 矢量量化",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "numpy/1d_array",
+              "numpy/bool_idx",
+              "numpy/data_array",
+              "numpy/fancy_idx",
+              "numpy/math_ops",
+              "numpy/multi_array",
+              "numpy/stats",
+              "python/build_in_functions",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

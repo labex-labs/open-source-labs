@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Restore a Deleted File",
-  "description": "Git is a popular version control system that allows developers to track changes made to their code over time. One of the benefits of using Git is that it allows you to restore deleted files. In this lab, you will learn how to restore a file that was deleted in a specific commit.",
-  "meta": {
-    "title": "Restore a Deleted File with Git",
-    "description": "Learn how to restore a deleted file in a Git repository using the command line.",
-    "keywords": "restore deleted file, version control, file recovery, git labs, git commands, git, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Restore a Deleted File",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Content of file2.txt",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/restore"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Restore a Deleted File",
+      "description": "Git is a popular version control system that allows developers to track changes made to their code over time. One of the benefits of using Git is that it allows you to restore deleted files. In this lab, you will learn how to restore a file that was deleted in a specific commit.",
+      "meta": {
+        "title": "Restore a Deleted File with Git",
+        "description": "Learn how to restore a deleted file in a Git repository using the command line.",
+        "keywords": "restore deleted file, version control, file recovery, git labs, git commands, git, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Restore a Deleted File",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Content of file2.txt",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/restore"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "恢复已删除的文件",
+      "description": "Git 是一种流行的版本控制系统，它允许开发人员随时间跟踪对其代码所做的更改。使用 Git 的好处之一是它允许你恢复已删除的文件。在本实验中，你将学习如何恢复在特定提交中删除的文件。",
+      "meta": {
+        "title": "使用 Git 恢复已删除的文件",
+        "description": "学习如何使用命令行在 Git 仓库中恢复已删除的文件。",
+        "keywords": "恢复已删除文件, 版本控制, 文件恢复, Git 实验, Git 命令, Git, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "恢复已删除的文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 file2.txt 的内容",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/restore"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

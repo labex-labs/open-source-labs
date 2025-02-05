@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Basic HTTP Server in Go",
-  "description": "This lab aims to test your ability to write a basic HTTP server using the net/http package in Golang.",
-  "meta": {
-    "title": "Golang HTTP Server | Programming Tutorial",
-    "description": "Learn how to write a basic HTTP server using the net/http package in Golang. Covers handling routes, returning responses, and accessing request headers.",
-    "keywords": "Golang, HTTP Server, net/http, Programming Tutorial, Web Development"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "HTTP Server",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go HTTP Client Response Status",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/http_server"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "http-server.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "http-server.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Basic HTTP Server in Go",
+      "description": "This lab aims to test your ability to write a basic HTTP server using the net/http package in Golang.",
+      "meta": {
+        "title": "Golang HTTP Server | Programming Tutorial",
+        "description": "Learn how to write a basic HTTP server using the net/http package in Golang. Covers handling routes, returning responses, and accessing request headers.",
+        "keywords": "Golang, HTTP Server, net/http, Programming Tutorial, Web Development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "HTTP Server",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go HTTP Client Response Status",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/http_server"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 语言中的基本 HTTP 服务器",
+      "description": "本实验旨在测试你使用 Go 语言的 net/http 包编写基本 HTTP 服务器的能力。",
+      "meta": {
+        "title": "Go 语言 HTTP 服务器 | 编程教程",
+        "description": "学习如何使用 Go 语言的 net/http 包编写基本 HTTP 服务器。涵盖处理路由、返回响应以及访问请求头。",
+        "keywords": "Go 语言, HTTP 服务器, net/http, 编程教程, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "HTTP 服务器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go HTTP 客户端响应状态",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/http_server"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

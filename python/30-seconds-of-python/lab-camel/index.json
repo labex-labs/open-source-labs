@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Camelcase Naming Convention for Programming",
-  "description": "In this lab, you will learn how to convert a string with spaces, hyphens, or underscores into a camelcase string using Python.",
-  "meta": {
-    "title": "Mastering Camelcase Naming Convention for Programming",
-    "description": "Explore the power of camelcase naming convention in programming languages, including Python examples and best practices.",
-    "keywords": "python, coding, camelcase, naming convention, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Camelcase String",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Camel Case Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/with_statement"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_camel.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "camel.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_camel.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "camel.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Camelcase Naming Convention for Programming",
+      "description": "In this lab, you will learn how to convert a string with spaces, hyphens, or underscores into a camelcase string using Python.",
+      "meta": {
+        "title": "Mastering Camelcase Naming Convention for Programming",
+        "description": "Explore the power of camelcase naming convention in programming languages, including Python examples and best practices.",
+        "keywords": "python, coding, camelcase, naming convention, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Camelcase String",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Camel Case Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "编程中的驼峰命名法",
+      "description": "在这个实验中，你将学习如何使用Python把带有空格、连字符或下划线的字符串转换为驼峰式字符串。",
+      "meta": {
+        "title": "掌握编程中的驼峰命名法",
+        "description": "探索编程语言中驼峰命名法的强大之处，包括Python示例和最佳实践。",
+        "keywords": "Python, 编码, 驼峰命名法, 命名规范, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "驼峰式字符串",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证驼峰式Python脚本的执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

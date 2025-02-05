@@ -1,0 +1,3 @@
+# 总结
+
+在这个实验中，我们学习了如何在Matplotlib中使用AnnotationBbox，通过文本、形状和图像为图形添加注释。我们介绍了三种不同的OffsetBox：TextArea、DrawingArea和OffsetImage。通过使用AnnotationBbox，与使用Axes.annotate相比，我们对注释有了更精细的控制。

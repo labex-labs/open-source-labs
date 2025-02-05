@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Independent Component Analysis with FastICA and PCA",
-  "description": "This lab demonstrates the use of FastICA and PCA algorithm, two popular independent component analysis techniques. Independent Component Analysis (ICA) is a method of separating multivariate signals into additive subcomponents that are maximally independent. This technique finds directions in the feature space corresponding to projections with high non-Gaussianity.",
-  "meta": {
-    "title": "Independent Component Analysis | Principal Component Analysis",
-    "description": "Learn about the use of FastICA and PCA algorithms, two popular independent component analysis techniques, to separate multivariate signals into additive subcomponents.",
-    "keywords": "independent component analysis, principal component analysis, fastICA, PCA, machine learning, data analysis"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Sample Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/decomposition"]
-      },
-      {
-        "title": "Use PCA Algorithm",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Use FastICA Algorithm",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-ica-vs-pca.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-ica-vs-pca.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Independent Component Analysis with FastICA and PCA",
+      "description": "This lab demonstrates the use of FastICA and PCA algorithm, two popular independent component analysis techniques. Independent Component Analysis (ICA) is a method of separating multivariate signals into additive subcomponents that are maximally independent. This technique finds directions in the feature space corresponding to projections with high non-Gaussianity.",
+      "meta": {
+        "title": "Independent Component Analysis | Principal Component Analysis",
+        "description": "Learn about the use of FastICA and PCA algorithms, two popular independent component analysis techniques, to separate multivariate signals into additive subcomponents.",
+        "keywords": "independent component analysis, principal component analysis, fastICA, PCA, machine learning, data analysis"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Sample Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/decomposition"]
+          },
+          {
+            "title": "Use PCA Algorithm",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Use FastICA Algorithm",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用快速独立成分分析（FastICA）和主成分分析（PCA）进行独立成分分析",
+      "description": "本实验展示了快速独立成分分析（FastICA）和主成分分析（PCA）算法这两种流行的独立成分分析技术的使用。独立成分分析（ICA）是一种将多变量信号分离为最大程度独立的加性子成分的方法。该技术在特征空间中找到与具有高非高斯性的投影相对应的方向。",
+      "meta": {
+        "title": "独立成分分析 | 主成分分析",
+        "description": "了解使用快速独立成分分析（FastICA）和主成分分析（PCA）算法这两种流行的独立成分分析技术，将多变量信号分离为加性子成分。",
+        "keywords": "独立成分分析, 主成分分析, 快速独立成分分析, PCA, 机器学习, 数据分析"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成样本数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/decomposition"]
+          },
+          {
+            "title": "使用主成分分析（PCA）算法",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "使用快速独立成分分析（FastICA）算法",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

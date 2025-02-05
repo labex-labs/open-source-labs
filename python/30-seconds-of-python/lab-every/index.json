@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Test if every list element is truthy",
-  "description": "In Python, we can use the all() function to check if all elements in a list are truthy. However, sometimes we may want to check if a specific condition is true for every element in the list. In this challenge, you will need to create a function that checks if a provided function returns True for every element in the list.",
-  "meta": {
-    "title": "Python Programming | List Manipulation | Truthy Condition",
-    "description": "Learn how to use the Python all() function to check if a specific condition is true for every element in a list. Explore a versatile function that makes list manipulation easy.",
-    "keywords": "Python, programming, list manipulation, truthy condition, all function, map function"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Test if every list element is truthy",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/lambda_functions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_every.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "every.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_every.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "every.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Test if every list element is truthy",
+      "description": "In Python, we can use the all() function to check if all elements in a list are truthy. However, sometimes we may want to check if a specific condition is true for every element in the list. In this challenge, you will need to create a function that checks if a provided function returns True for every element in the list.",
+      "meta": {
+        "title": "Python Programming | List Manipulation | Truthy Condition",
+        "description": "Learn how to use the Python all() function to check if a specific condition is true for every element in a list. Explore a versatile function that makes list manipulation easy.",
+        "keywords": "Python, programming, list manipulation, truthy condition, all function, map function"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Test if every list element is truthy",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "测试列表中的每个元素是否为真值",
+      "description": "在Python中，我们可以使用all()函数来检查列表中的所有元素是否都为真值。然而，有时我们可能想要检查列表中的每个元素是否都满足特定条件。在这个挑战中，你需要创建一个函数，该函数检查提供的函数对列表中的每个元素是否都返回True。",
+      "meta": {
+        "title": "Python编程 | 列表操作 | 真值条件",
+        "description": "学习如何使用Python的all()函数来检查列表中的每个元素是否都满足特定条件。探索一个使列表操作变得容易的通用函数。",
+        "keywords": "Python,编程,列表操作,真值条件,all函数,map函数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "测试列表中的每个元素是否为真值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

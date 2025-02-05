@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "File Path Handling in Golang",
-  "description": "In this lab, you will explore the usage of the `filepath` package in Go to perform various operations on file paths, including constructing portable paths, splitting paths into directory and file components, checking path absoluteness, finding file extensions, and determining relative paths between two paths.",
-  "meta": {
-    "title": "Golang File Paths | Portable Path Operations",
-    "description": "Learn how to use the Golang filepath package to perform portable file path operations, including constructing paths, splitting paths, and finding relative paths.",
-    "keywords": "Golang, filepath, file paths, portable, path operations, directory, file, relative path"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "File Paths",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify File Paths Go Script Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/file_paths"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "file-paths.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "file-paths.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "File Path Handling in Golang",
+      "description": "In this lab, you will explore the usage of the `filepath` package in Go to perform various operations on file paths, including constructing portable paths, splitting paths into directory and file components, checking path absoluteness, finding file extensions, and determining relative paths between two paths.",
+      "meta": {
+        "title": "Golang File Paths | Portable Path Operations",
+        "description": "Learn how to use the Golang filepath package to perform portable file path operations, including constructing paths, splitting paths, and finding relative paths.",
+        "keywords": "Golang, filepath, file paths, portable, path operations, directory, file, relative path"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "File Paths",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify File Paths Go Script Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/file_paths"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言中的文件路径处理",
+      "description": "在本实验中，你将探索Go语言中`filepath`包的用法，以对文件路径执行各种操作，包括构建可移植路径、将路径拆分为目录和文件组件、检查路径的绝对路径、查找文件扩展名以及确定两条路径之间的相对路径。",
+      "meta": {
+        "title": "Go语言文件路径 | 可移植路径操作",
+        "description": "了解如何使用Go语言的filepath包执行可移植的文件路径操作，包括构建路径、拆分路径和查找相对路径。",
+        "keywords": "Go语言, filepath, 文件路径, 可移植, 路径操作, 目录, 文件, 相对路径"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文件路径",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证文件路径Go脚本输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/file_paths"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

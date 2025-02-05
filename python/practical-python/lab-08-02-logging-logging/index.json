@@ -1,257 +1,10 @@
 {
   "type": "lab",
-  "title": "Logging Module Introduction",
-  "description": "This section briefly introduces the logging module.",
-  "meta": {
-    "title": "Logging Module Introduction: Mastering Diagnostic Logging in Python",
-    "description": "Explore the powerful logging module in Python and learn how to effectively handle exceptions and error handling in your code.",
-    "keywords": "diagnostic information, python, error logging, exception handling, logging"
-  },
   "difficulty": "Beginner",
   "time": 40,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "logging Module",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Exceptions Revisited",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Delimiter Parameter in fileparse.py",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/default_arguments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Using logging",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Logging Import in Python Script or History",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/catching_exceptions",
-          "python/comments",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Logging Basics",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Logging Configuration",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/conditional_statements",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Comments",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Exercise 8.2: Adding logging to a module",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "Verify Portfolio Reading in Python History",
-            "file": "verify7.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Exercise 8.3: Adding Logging to a Program",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Logging Import Statement",
-            "file": "verify8.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lists",
-          "python/numeric_types",
-          "python/os_system",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["report.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "missing.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "report.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "tableformat.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "typedproperty.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -260,5 +13,472 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/practical-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "missing.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "report.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "tableformat.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "typedproperty.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Logging Module Introduction",
+      "description": "This section briefly introduces the logging module.",
+      "meta": {
+        "title": "Logging Module Introduction: Mastering Diagnostic Logging in Python",
+        "description": "Explore the powerful logging module in Python and learn how to effectively handle exceptions and error handling in your code.",
+        "keywords": "diagnostic information, python, error logging, exception handling, logging"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "logging Module",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Exceptions Revisited",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Delimiter Parameter in fileparse.py",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Using logging",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Logging Import in Python Script or History",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/catching_exceptions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Logging Basics",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Logging Configuration",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/conditional_statements",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Comments",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Exercise 8.2: Adding logging to a module",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "Verify Portfolio Reading in Python History",
+                "file": "verify7.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Exercise 8.3: Adding Logging to a Program",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Logging Import Statement",
+                "file": "verify8.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["report.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "日志模块介绍",
+      "description": "本节简要介绍日志模块。",
+      "meta": {
+        "title": "日志模块介绍：掌握Python中的诊断日志记录",
+        "description": "探索Python中强大的日志模块，并学习如何在代码中有效地处理异常和错误。",
+        "keywords": "诊断信息, Python, 错误日志记录, 异常处理, 日志记录"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "日志模块",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "重温异常",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证fileparse.py中是否存在分隔符参数",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "使用日志记录",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python脚本或历史记录中是否存在日志记录导入",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/catching_exceptions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "日志记录基础",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "日志配置",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/conditional_statements",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "注释",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "练习8.2：向模块添加日志记录",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中的投资组合读取",
+                "file": "verify7.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "练习8.3：向程序添加日志记录",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "验证日志记录导入语句是否存在",
+                "file": "verify8.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["report.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

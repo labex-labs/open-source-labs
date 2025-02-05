@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Fetch Latest Changes from Remote",
-  "description": "Git is a popular version control system used for tracking changes in code. One of the key features of Git is the ability to work with remote repositories. In this lab, you will learn how to fetch the latest changes from a remote repository using Git.",
-  "meta": {
-    "title": "Git Fetch | Remote Repository | Version Control",
-    "description": "Learn how to fetch the latest changes from a remote Git repository and review them before merging into your local project.",
-    "keywords": "Git, Remote Repository, Version Control, Fetch, GitHub"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Fetch Latest Changes from Remote",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that you are fetching the latest changes",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/fetch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Fetch Latest Changes from Remote",
+      "description": "Git is a popular version control system used for tracking changes in code. One of the key features of Git is the ability to work with remote repositories. In this lab, you will learn how to fetch the latest changes from a remote repository using Git.",
+      "meta": {
+        "title": "Git Fetch | Remote Repository | Version Control",
+        "description": "Learn how to fetch the latest changes from a remote Git repository and review them before merging into your local project.",
+        "keywords": "Git, Remote Repository, Version Control, Fetch, GitHub"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Fetch Latest Changes from Remote",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that you are fetching the latest changes",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/fetch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "从远程获取最新变更",
+      "description": "Git是一种用于跟踪代码变更的流行版本控制系统。Git的关键特性之一是能够与远程仓库协作。在本实验中，你将学习如何使用Git从远程仓库获取最新变更。",
+      "meta": {
+        "title": "Git获取 | 远程仓库 | 版本控制",
+        "description": "学习如何从远程Git仓库获取最新变更，并在合并到本地项目之前进行查看。",
+        "keywords": "Git, 远程仓库, 版本控制, 获取, GitHub"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从远程获取最新变更",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证你正在获取最新变更",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/fetch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

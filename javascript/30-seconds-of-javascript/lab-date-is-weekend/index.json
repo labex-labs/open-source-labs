@@ -1,47 +1,10 @@
 {
   "type": "lab",
-  "title": "Explore JavaScript Programming Concepts",
-  "description": "In this lab, we will explore and practice JavaScript programming concepts and techniques. The lab is designed to provide hands-on experience in solving programming challenges and exercises, ranging from basic syntax and data types to more advanced topics such as functions, arrays, and object-oriented programming. By the end of the lab, you will have improved your JavaScript skills and be better equipped to tackle real-world programming tasks.",
-  "meta": {
-    "title": "JavaScript Programming Concepts | Hands-On Lab",
-    "description": "Explore and practice JavaScript programming concepts and techniques with a hands-on lab. Improve your skills and tackle real-world programming tasks.",
-    "keywords": "JavaScript, Programming, Concepts, Lab, Hands-On, Coding, Weekend"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Date Is Weekend",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Node Commands in Zsh History",
-            "file": "verify1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "javascript/arith_ops",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/variables"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -50,5 +13,91 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Explore JavaScript Programming Concepts",
+      "description": "In this lab, we will explore and practice JavaScript programming concepts and techniques. The lab is designed to provide hands-on experience in solving programming challenges and exercises, ranging from basic syntax and data types to more advanced topics such as functions, arrays, and object-oriented programming. By the end of the lab, you will have improved your JavaScript skills and be better equipped to tackle real-world programming tasks.",
+      "meta": {
+        "title": "JavaScript Programming Concepts | Hands-On Lab",
+        "description": "Explore and practice JavaScript programming concepts and techniques with a hands-on lab. Improve your skills and tackle real-world programming tasks.",
+        "keywords": "JavaScript, Programming, Concepts, Lab, Hands-On, Coding, Weekend"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Date Is Weekend",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Node Commands in Zsh History",
+                "file": "verify1.sh",
+                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索 JavaScript 编程概念",
+      "description": "在本实验中，我们将探索并实践 JavaScript 编程概念和技术。本实验旨在提供解决编程挑战和练习的实践经验，涵盖从基本语法和数据类型到函数、数组和面向对象编程等更高级的主题。在实验结束时，你将提高 JavaScript 技能，并更有能力应对实际的编程任务。",
+      "meta": {
+        "title": "JavaScript 编程概念 | 实践实验",
+        "description": "通过实践实验探索和练习 JavaScript 编程概念和技术。提升你的技能并应对实际编程任务。",
+        "keywords": "JavaScript, 编程, 概念, 实验, 实践, 编码, 周末"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "日期是否为周末",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在 Zsh 历史记录中验证 Node 命令",
+                "file": "verify1.sh",
+                "hint": "通过在终端/SSH 中输入 'node' 并按回车键，可以运行 JavaScript。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,70 +1,10 @@
 {
   "type": "lab",
-  "title": "Stylized Quotation Marks",
-  "description": "In this lab, we will explore the quotes property in CSS, which allows us to customize the quotation marks used for inline quotes. We will learn how to use this property to define our own opening and closing quote characters, and apply them to <q> elements in our HTML. By the end of this lab, you will have a better understanding of how to add a personal touch to the styling of your web pages.",
-  "meta": {
-    "title": "Customize Quotation Marks with CSS",
-    "description": "Learn how to use the CSS 'quotes' property to style inline quotation marks on your web pages.",
-    "keywords": "css, html playground, web design, inline quotes, css practice, html, quotation marks, css playground, html exercises, html practice exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Stylized Quotation Marks",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["css/selectors"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -73,5 +13,123 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Stylized Quotation Marks",
+      "description": "In this lab, we will explore the quotes property in CSS, which allows us to customize the quotation marks used for inline quotes. We will learn how to use this property to define our own opening and closing quote characters, and apply them to <q> elements in our HTML. By the end of this lab, you will have a better understanding of how to add a personal touch to the styling of your web pages.",
+      "meta": {
+        "title": "Customize Quotation Marks with CSS",
+        "description": "Learn how to use the CSS 'quotes' property to style inline quotation marks on your web pages.",
+        "keywords": "css, html playground, web design, inline quotes, css practice, html, quotation marks, css playground, html exercises, html practice exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Stylized Quotation Marks",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["css/selectors"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "风格化的引号",
+      "description": "在本实验中，我们将探索CSS中的quotes属性，该属性允许我们自定义用于内联引用的引号。我们将学习如何使用此属性定义自己的开始和结束引号字符，并将它们应用于HTML中的<q>元素。在本实验结束时，你将更好地理解如何为网页样式添加个人风格。",
+      "meta": {
+        "title": "使用CSS自定义引号",
+        "description": "学习如何使用CSS的'quotes'属性为网页上的内联引号设置样式。",
+        "keywords": "CSS, HTML游乐场, 网页设计, 内联引用, CSS实践, HTML, 引号, CSS游乐场, HTML练习, HTML实践练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "风格化的引号",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["css/selectors"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

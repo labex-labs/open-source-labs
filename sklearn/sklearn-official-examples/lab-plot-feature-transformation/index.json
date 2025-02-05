@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Feature Transformations with Ensembles of Trees",
-  "description": "In this lab, we will learn how to transform features into a higher dimensional, sparse space using an ensemble of trees. We will then train a linear model on these features. We will use different types of ensemble methods including Random Forest and Gradient Boosting and compare their performance.",
-  "meta": {
-    "title": "Machine Learning | Feature Engineering | Ensemble Methods",
-    "description": "Learn how to transform features into a higher dimensional, sparse space using an ensemble of trees and train a linear model on these features. Explore Random Forest and Gradient Boosting techniques.",
-    "keywords": "machine learning, feature engineering, ensemble methods, random forest, gradient boosting"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Data Preparation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
-      },
-      {
-        "title": "Training Ensemble Methods",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/ensemble"]
-      },
-      {
-        "title": "Training Embedding Transformer",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/ensemble"]
-      },
-      {
-        "title": "Transforming Features with Random Forest and Gradient Boosting",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/preprocessing"]
-      },
-      {
-        "title": "Evaluating Models",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/metrics"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-feature-transformation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,190 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-feature-transformation.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Feature Transformations with Ensembles of Trees",
+      "description": "In this lab, we will learn how to transform features into a higher dimensional, sparse space using an ensemble of trees. We will then train a linear model on these features. We will use different types of ensemble methods including Random Forest and Gradient Boosting and compare their performance.",
+      "meta": {
+        "title": "Machine Learning | Feature Engineering | Ensemble Methods",
+        "description": "Learn how to transform features into a higher dimensional, sparse space using an ensemble of trees and train a linear model on these features. Explore Random Forest and Gradient Boosting techniques.",
+        "keywords": "machine learning, feature engineering, ensemble methods, random forest, gradient boosting"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Data Preparation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Training Ensemble Methods",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "Training Embedding Transformer",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "Transforming Features with Random Forest and Gradient Boosting",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+          },
+          {
+            "title": "Evaluating Models",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用树集成进行特征转换",
+      "description": "在本实验中，我们将学习如何使用树集成将特征转换到更高维的稀疏空间。然后，我们将在这些特征上训练一个线性模型。我们将使用不同类型的集成方法，包括随机森林和梯度提升，并比较它们的性能。",
+      "meta": {
+        "title": "机器学习 | 特征工程 | 集成方法",
+        "description": "学习如何使用树集成将特征转换到更高维的稀疏空间，并在这些特征上训练一个线性模型。探索随机森林和梯度提升技术。",
+        "keywords": "机器学习, 特征工程, 集成方法, 随机森林, 梯度提升"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据准备",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "训练集成方法",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "训练嵌入变换器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "使用随机森林和梯度提升进行特征转换",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+          },
+          {
+            "title": "评估模型",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

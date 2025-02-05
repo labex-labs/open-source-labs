@@ -1,105 +1,10 @@
 {
   "type": "lab",
-  "title": "Plot PCR vs PLS",
-  "description": "Principal Component Regression (PCR) and Partial Least Squares Regression (PLS) are two methods used in regression analysis. PCR involves applying PCA to training data, followed by training a regressor on the transformed samples. The PCA transformation is unsupervised, meaning that no information about the targets is used. As a result, PCR may perform poorly in some datasets where the target is strongly correlated with directions that have low variance.",
-  "meta": {
-    "title": "Comparing PCR and PLS Regression Techniques",
-    "description": "Explore the differences between Principal Component Regression (PCR) and Partial Least Squares Regression (PLS) on a toy dataset.",
-    "keywords": "pls, machine learning, regression analysis, dimensionality reduction, scikit-learn, pcr, machine learning playground, scikit-learn playground, supervised learning"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create a Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Define the Target",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Create the Regressors",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/cross_decomposition",
-          "sklearn/decomposition",
-          "sklearn/linear_model",
-          "sklearn/model_selection",
-          "sklearn/pipeline",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Compare the Regressors",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Use PCR with 2 Components",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-pcr-vs-pls.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -108,5 +13,198 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-pcr-vs-pls.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Plot PCR vs PLS",
+      "description": "Principal Component Regression (PCR) and Partial Least Squares Regression (PLS) are two methods used in regression analysis. PCR involves applying PCA to training data, followed by training a regressor on the transformed samples. The PCA transformation is unsupervised, meaning that no information about the targets is used. As a result, PCR may perform poorly in some datasets where the target is strongly correlated with directions that have low variance.",
+      "meta": {
+        "title": "Comparing PCR and PLS Regression Techniques",
+        "description": "Explore the differences between Principal Component Regression (PCR) and Partial Least Squares Regression (PLS) on a toy dataset.",
+        "keywords": "pls, machine learning, regression analysis, dimensionality reduction, scikit-learn, pcr, machine learning playground, scikit-learn playground, supervised learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create a Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Define the Target",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Create the Regressors",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/cross_decomposition",
+              "sklearn/decomposition",
+              "sklearn/linear_model",
+              "sklearn/model_selection",
+              "sklearn/pipeline",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Compare the Regressors",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Use PCR with 2 Components",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "绘制主成分回归（PCR）与偏最小二乘回归（PLS）对比图",
+      "description": "主成分回归（PCR）和偏最小二乘回归（PLS）是回归分析中使用的两种方法。PCR 涉及对训练数据应用主成分分析（PCA），然后在变换后的样本上训练回归器。PCA 变换是无监督的，这意味着不使用关于目标的任何信息。因此，在某些数据集中，当目标与方差较小的方向高度相关时，PCR 的性能可能较差。",
+      "meta": {
+        "title": "比较主成分回归（PCR）和偏最小二乘回归（PLS）技术",
+        "description": "在一个简单数据集上探索主成分回归（PCR）和偏最小二乘回归（PLS）之间的差异。",
+        "keywords": "偏最小二乘回归, 机器学习, 回归分析, 降维, 斯科ikit-learn, 主成分回归, 机器学习游乐场, 斯科ikit-learn游乐场, 监督学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建一个数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "定义目标",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "创建回归器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/cross_decomposition",
+              "sklearn/decomposition",
+              "sklearn/linear_model",
+              "sklearn/model_selection",
+              "sklearn/pipeline",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "比较回归器",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "使用含两个成分的主成分回归法",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

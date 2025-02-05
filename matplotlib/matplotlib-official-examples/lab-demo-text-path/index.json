@@ -1,145 +1,10 @@
 {
   "type": "lab",
-  "title": "Customizing Text Paths with Matplotlib",
-  "description": "The Matplotlib TextPath is a module that enables the creation of a path that outlines the characters of a text. The resulting path can be used for several purposes, such as a clip path for an image. In this lab, you will learn how to use the TextPath module to create and customize text paths for images.",
-  "meta": {
-    "title": "Matplotlib TextPath | Python Image Manipulation",
-    "description": "Learn how to use the Matplotlib TextPath module to create and customize text paths for images. Enhance your Python image processing skills.",
-    "keywords": "Matplotlib, TextPath, Python, Image Processing, Text Manipulation"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Install Matplotlib",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["linux/pip"]
-      },
-      {
-        "title": "Import Required Libraries",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/numerical_computing",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      },
-      {
-        "title": "Create a PathClippedImagePatch",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/constructor",
-          "python/default_arguments",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/keyword_arguments",
-          "python/polymorphism",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Create an Offset Box",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Create an Anchored Offset Box",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/booleans", "python/tuples"]
-      },
-      {
-        "title": "Add Another Text",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/for_loops",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Show the Image",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/heatmaps", "python/lists", "python/tuples"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "demo-text-path.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -148,5 +13,278 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "demo-text-path.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Customizing Text Paths with Matplotlib",
+      "description": "The Matplotlib TextPath is a module that enables the creation of a path that outlines the characters of a text. The resulting path can be used for several purposes, such as a clip path for an image. In this lab, you will learn how to use the TextPath module to create and customize text paths for images.",
+      "meta": {
+        "title": "Matplotlib TextPath | Python Image Manipulation",
+        "description": "Learn how to use the Matplotlib TextPath module to create and customize text paths for images. Enhance your Python image processing skills.",
+        "keywords": "Matplotlib, TextPath, Python, Image Processing, Text Manipulation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Install Matplotlib",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["linux/pip"]
+          },
+          {
+            "title": "Import Required Libraries",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "Create a PathClippedImagePatch",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/constructor",
+              "python/default_arguments",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/keyword_arguments",
+              "python/polymorphism",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Create an Offset Box",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Create an Anchored Offset Box",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/booleans", "python/tuples"]
+          },
+          {
+            "title": "Add Another Text",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/for_loops",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Show the Image",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["matplotlib/heatmaps", "python/lists", "python/tuples"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Matplotlib自定义文本路径",
+      "description": "Matplotlib TextPath是一个模块，可用于创建描绘文本字符轮廓的路径。生成的路径可用于多种目的，例如作为图像的裁剪路径。在本实验中，你将学习如何使用TextPath模块为图像创建和自定义文本路径。",
+      "meta": {
+        "title": "Matplotlib TextPath |  Python图像操作",
+        "description": "学习如何使用Matplotlib TextPath模块为图像创建和自定义文本路径。提升你的Python图像处理技能。",
+        "keywords": "Matplotlib, TextPath, Python, 图像处理, 文本操作"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "安装Matplotlib",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["linux/pip"]
+          },
+          {
+            "title": "导入所需的库",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "创建一个路径裁剪图像补丁",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/constructor",
+              "python/default_arguments",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/keyword_arguments",
+              "python/polymorphism",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "创建一个偏移框",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "创建一个锚定偏移框",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/booleans", "python/tuples"]
+          },
+          {
+            "title": "添加另一段文本",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/for_loops",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "显示图像",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["matplotlib/heatmaps", "python/lists", "python/tuples"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

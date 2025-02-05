@@ -1,164 +1,10 @@
 {
   "type": "lab",
-  "title": "Transforming Target for Linear Regression",
-  "description": "In this lab, we will learn how to use the TransformedTargetRegressor from the scikit-learn library. We will apply it to two different datasets to observe the benefits of transforming the target values before training a linear regression model. We will use synthetic data and the Ames housing data set to illustrate the impact of transforming the target values.",
-  "meta": {
-    "title": "Machine Learning | Data Transformation | Regression Analysis",
-    "description": "Learn how to use TransformedTargetRegressor from scikit-learn to improve linear regression models by transforming target variables. Explore synthetic data and Ames housing dataset.",
-    "keywords": "machine learning, data transformation, regression analysis, scikit-learn, TransformedTargetRegressor"
-  },
   "difficulty": "Beginner",
   "time": 50,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import necessary libraries and load synthetic data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/compose",
-          "sklearn/datasets",
-          "sklearn/linear_model",
-          "sklearn/metrics",
-          "sklearn/model_selection"
-        ]
-      },
-      {
-        "title": "Plot the target distributions",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Train and evaluate a linear regression model on the original targets",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Train and evaluate a linear regression model on the transformed targets",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot actual vs predicted values for both models",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Load and preprocess Ames housing data",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/preprocessing"]
-      },
-      {
-        "title": "Plot target distributions for Ames housing data",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Train and evaluate a linear regression model on the original targets for Ames housing data",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Train and evaluate a linear regression model on the transformed targets for Ames housing data",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify9.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": " Plot actual vs predicted values and residuals vs predicted values for both models",
-        "text": "step10.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify10.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-transformed-target.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -167,5 +13,324 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-transformed-target.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Transforming Target for Linear Regression",
+      "description": "In this lab, we will learn how to use the TransformedTargetRegressor from the scikit-learn library. We will apply it to two different datasets to observe the benefits of transforming the target values before training a linear regression model. We will use synthetic data and the Ames housing data set to illustrate the impact of transforming the target values.",
+      "meta": {
+        "title": "Machine Learning | Data Transformation | Regression Analysis",
+        "description": "Learn how to use TransformedTargetRegressor from scikit-learn to improve linear regression models by transforming target variables. Explore synthetic data and Ames housing dataset.",
+        "keywords": "machine learning, data transformation, regression analysis, scikit-learn, TransformedTargetRegressor"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import necessary libraries and load synthetic data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/compose",
+              "sklearn/datasets",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Plot the target distributions",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Train and evaluate a linear regression model on the original targets",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Train and evaluate a linear regression model on the transformed targets",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot actual vs predicted values for both models",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Load and preprocess Ames housing data",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Plot target distributions for Ames housing data",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Train and evaluate a linear regression model on the original targets for Ames housing data",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Train and evaluate a linear regression model on the transformed targets for Ames housing data",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify9.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": " Plot actual vs predicted values and residuals vs predicted values for both models",
+            "text": "en/step10.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify10.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "线性回归中的目标变换",
+      "description": "在本实验中，我们将学习如何使用scikit-learn库中的变换目标回归器（TransformedTargetRegressor）。我们将把它应用于两个不同的数据集，以观察在训练线性回归模型之前变换目标值的好处。我们将使用合成数据和艾姆斯房屋数据集来说明变换目标值的影响。",
+      "meta": {
+        "title": "机器学习 | 数据变换 | 回归分析",
+        "description": "学习如何使用scikit-learn中的变换目标回归器（TransformedTargetRegressor）通过变换目标变量来改进线性回归模型。探索合成数据和艾姆斯房屋数据集。",
+        "keywords": "机器学习, 数据变换, 回归分析, scikit-learn, 变换目标回归器（TransformedTargetRegressor）"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库并加载合成数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/compose",
+              "sklearn/datasets",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "绘制目标分布",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "在原始目标上训练并评估线性回归模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "在变换后的目标上训练并评估线性回归模型",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制两个模型的实际值与预测值对比图",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "加载并预处理艾姆斯房屋数据",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "绘制艾姆斯房屋数据的目标分布",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "针对艾姆斯房屋数据的原始目标训练并评估线性回归模型",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "针对艾姆斯房屋数据的转换后目标训练并评估线性回归模型",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制两个模型的实际值与预测值以及残差与预测值的对比图",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify10.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

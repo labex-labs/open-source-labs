@@ -1,88 +1,10 @@
 {
   "type": "lab",
-  "title": "Matplotlib Tick Placement Customization",
-  "description": "In this lab, we will learn how to set the behavior of tick auto-placement in Matplotlib. By default, Matplotlib will choose the number of ticks and tick positions so that there is a reasonable number of ticks on the axis and they are located at 'round' numbers. However, there may be no ticks on the edges of the plot. We will learn how to switch the axes.autolimit_mode to 'round_numbers' to keep ticks at round numbers and also have ticks at the edges.",
-  "meta": {
-    "title": "Matplotlib Tick Auto-Placement | Data Visualization",
-    "description": "Learn how to set the behavior of tick auto-placement in Matplotlib, including keeping ticks at round numbers and having ticks at the edges of the plot.",
-    "keywords": "Matplotlib, Data Visualization, Tick Auto-Placement, Round Numbers, Scatter Plot"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Scatter plot without round_numbers autolimit_mode",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "matplotlib/scatter_plots",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/math_random",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Scatter plot with round_numbers autolimit_mode",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/matplotlib_config",
-          "matplotlib/scatter_plots",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Scatter plot with additional margin",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/scatter_plots", "python/tuples"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "auto-ticks.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -91,5 +13,164 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "auto-ticks.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Matplotlib Tick Placement Customization",
+      "description": "In this lab, we will learn how to set the behavior of tick auto-placement in Matplotlib. By default, Matplotlib will choose the number of ticks and tick positions so that there is a reasonable number of ticks on the axis and they are located at 'round' numbers. However, there may be no ticks on the edges of the plot. We will learn how to switch the axes.autolimit_mode to 'round_numbers' to keep ticks at round numbers and also have ticks at the edges.",
+      "meta": {
+        "title": "Matplotlib Tick Auto-Placement | Data Visualization",
+        "description": "Learn how to set the behavior of tick auto-placement in Matplotlib, including keeping ticks at round numbers and having ticks at the edges of the plot.",
+        "keywords": "Matplotlib, Data Visualization, Tick Auto-Placement, Round Numbers, Scatter Plot"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Scatter plot without round_numbers autolimit_mode",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/scatter_plots",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/math_random",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Scatter plot with round_numbers autolimit_mode",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/matplotlib_config",
+              "matplotlib/scatter_plots",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Scatter plot with additional margin",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["matplotlib/scatter_plots", "python/tuples"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Matplotlib刻度位置自定义",
+      "description": "在本实验中，我们将学习如何在Matplotlib中设置刻度自动定位的行为。默认情况下，Matplotlib会选择刻度的数量和位置，以便轴上有合理数量的刻度，并且它们位于“整数”位置。然而，在绘图的边缘可能没有刻度。我们将学习如何将axes.autolimit_mode切换为'round_numbers'，以保持刻度为整数，并且在边缘也有刻度。",
+      "meta": {
+        "title": "Matplotlib刻度自动定位 | 数据可视化",
+        "description": "学习如何在Matplotlib中设置刻度自动定位的行为，包括保持刻度为整数以及在绘图边缘有刻度。",
+        "keywords": "Matplotlib, 数据可视化, 刻度自动定位, 整数, 散点图"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "无round_numbers自动限制模式的散点图",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/scatter_plots",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/math_random",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "具有round_numbers自动限制模式的散点图",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/matplotlib_config",
+              "matplotlib/scatter_plots",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "带有额外边距的散点图",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["matplotlib/scatter_plots", "python/tuples"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

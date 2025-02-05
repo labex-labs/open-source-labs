@@ -1,47 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Lifetime and Trait Bounds",
-  "description": "In this lab, we learn about bounds in Rust, which are used to restrict the lifetimes or traits of generic types. The : character is used to indicate that all references in a type must outlive a certain lifetime, while + is used to indicate that a type must implement a trait and all references in it must outlive a certain lifetime. An example code snippet demonstrates the syntax and usage of bounds in Rust.",
-  "meta": {
-    "title": "Rust Bounds | Programming Tutorials | Lifetime Constraints",
-    "description": "Learn about bounds in Rust, which are used to restrict the lifetimes or traits of generic types. Explore the syntax and usage of bounds in Rust programming.",
-    "keywords": "Rust, Bounds, Lifetime Constraints, Programming Tutorials, Generic Types"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Bounds",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -50,5 +13,91 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Lifetime and Trait Bounds",
+      "description": "In this lab, we learn about bounds in Rust, which are used to restrict the lifetimes or traits of generic types. The : character is used to indicate that all references in a type must outlive a certain lifetime, while + is used to indicate that a type must implement a trait and all references in it must outlive a certain lifetime. An example code snippet demonstrates the syntax and usage of bounds in Rust.",
+      "meta": {
+        "title": "Rust Bounds | Programming Tutorials | Lifetime Constraints",
+        "description": "Learn about bounds in Rust, which are used to restrict the lifetimes or traits of generic types. Explore the syntax and usage of bounds in Rust programming.",
+        "keywords": "Rust, Bounds, Lifetime Constraints, Programming Tutorials, Generic Types"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Bounds",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 生命周期与特性边界",
+      "description": "在本实验中，我们学习 Rust 中的边界，其用于限制泛型类型的生命周期或特性。冒号（:）字符用于表明类型中的所有引用必须比某个生命周期更长，而加号（+）用于表明类型必须实现某个特性且其中的所有引用必须比某个生命周期更长。一个示例代码片段展示了 Rust 中边界的语法和用法。",
+      "meta": {
+        "title": "Rust 边界 | 编程教程 | 生命周期约束",
+        "description": "了解 Rust 中的边界，其用于限制泛型类型的生命周期或特性。探索 Rust 编程中边界的语法和用法。",
+        "keywords": "Rust, 边界, 生命周期约束, 编程教程, 泛型类型"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "边界",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

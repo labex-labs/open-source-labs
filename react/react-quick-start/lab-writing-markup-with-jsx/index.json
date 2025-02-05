@@ -1,86 +1,10 @@
 {
   "type": "lab",
-  "title": "Writing Markup with JSX",
-  "description": "Welcome to the React documentation! This lab will give you an introduction to writing markup with JSX.",
-  "meta": {
-    "title": "Writing Markup with JSX: An Introduction to React Documentation",
-    "description": "Learn how to write markup with JSX, a powerful syntax for creating React components and displaying dynamic data.",
-    "keywords": "jsx, react, web development, programming, markup"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Writing Markup with JSX",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of App.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["react/components_props", "react/jsx"]
-      },
-      {
-        "title": "Displaying Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify the status of App.js modification",
-            "file": "verify2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["react/components_props", "react/jsx"]
-      },
-      {
-        "title": "Adding Styles",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify the status of App.js modification",
-            "file": "verify3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["react/components_props", "react/css_in_react", "react/jsx"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "demo.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "open_network": true
@@ -90,5 +14,168 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/facebook/react/blob/main/LICENSE",
     "repo": "https://react.dev/learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "demo.zip",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Writing Markup with JSX",
+      "description": "Welcome to the React documentation! This lab will give you an introduction to writing markup with JSX.",
+      "meta": {
+        "title": "Writing Markup with JSX: An Introduction to React Documentation",
+        "description": "Learn how to write markup with JSX, a powerful syntax for creating React components and displaying dynamic data.",
+        "keywords": "jsx, react, web development, programming, markup"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Writing Markup with JSX",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of App.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/components_props", "react/jsx"]
+          },
+          {
+            "title": "Displaying Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify the status of App.js modification",
+                "file": "verify2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/components_props", "react/jsx"]
+          },
+          {
+            "title": "Adding Styles",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify the status of App.js modification",
+                "file": "verify3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/components_props",
+              "react/css_in_react",
+              "react/jsx"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 JSX 编写标记",
+      "description": "欢迎来到 React 文档！本实验将向你介绍如何使用 JSX 编写标记。",
+      "meta": {
+        "title": "使用 JSX 编写标记：React 文档简介",
+        "description": "学习如何使用 JSX 编写标记，这是一种用于创建 React 组件和显示动态数据的强大语法。",
+        "keywords": "jsx, react, 网页开发, 编程, 标记"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用 JSX 编写标记",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 在端口 8080 上运行项目。然后，你可以刷新 **Web 8080** 标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 App.js 修改的状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/components_props", "react/jsx"]
+          },
+          {
+            "title": "显示数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 App.js 修改的状态",
+                "file": "verify2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/components_props", "react/jsx"]
+          },
+          {
+            "title": "添加样式",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 App.js 修改的状态",
+                "file": "verify3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/components_props",
+              "react/css_in_react",
+              "react/jsx"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

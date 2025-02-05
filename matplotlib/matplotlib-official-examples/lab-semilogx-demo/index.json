@@ -1,95 +1,10 @@
 {
   "type": "lab",
-  "title": "Plotting Exponential Decay with Matplotlib Semilog",
-  "description": "This tutorial will guide you through how to assign a log scale for the x-axis using matplotlib.axes.Axes.semilogx in Python Matplotlib. A logarithmic scale is useful when the data you want to plot spans several orders of magnitude. In this tutorial, we will use an example of plotting exponential decay as a function of time.",
-  "meta": {
-    "title": "Python Matplotlib | Logarithmic Scale Axis Tutorial",
-    "description": "Learn how to assign a log scale for the x-axis using Matplotlib in Python. Useful for plotting data with a wide range of magnitudes.",
-    "keywords": "Python, Matplotlib, Logarithmic Scale, Axis, Tutorial, Data Visualization"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import the necessary libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/numerical_computing"
-        ]
-      },
-      {
-        "title": "Generate data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/tuples"]
-      },
-      {
-        "title": "Create a plot and set x-axis to logarithmic scale",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/grid_config",
-          "matplotlib/log_scale",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Show the plot",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "semilogx-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -98,5 +13,178 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "semilogx-demo.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Plotting Exponential Decay with Matplotlib Semilog",
+      "description": "This tutorial will guide you through how to assign a log scale for the x-axis using matplotlib.axes.Axes.semilogx in Python Matplotlib. A logarithmic scale is useful when the data you want to plot spans several orders of magnitude. In this tutorial, we will use an example of plotting exponential decay as a function of time.",
+      "meta": {
+        "title": "Python Matplotlib | Logarithmic Scale Axis Tutorial",
+        "description": "Learn how to assign a log scale for the x-axis using Matplotlib in Python. Useful for plotting data with a wide range of magnitudes.",
+        "keywords": "Python, Matplotlib, Logarithmic Scale, Axis, Tutorial, Data Visualization"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import the necessary libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "Generate data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "Create a plot and set x-axis to logarithmic scale",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/grid_config",
+              "matplotlib/log_scale",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Show the plot",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Matplotlib Semilog绘制指数衰减图",
+      "description": "本教程将指导你如何在Python的Matplotlib中使用matplotlib.axes.Axes.semilogx为x轴分配对数刻度。当你要绘制的数据跨越几个数量级时，对数刻度很有用。在本教程中，我们将使用一个绘制指数衰减随时间变化的示例。",
+      "meta": {
+        "title": "Python Matplotlib | 对数刻度轴教程",
+        "description": "学习如何在Python中使用Matplotlib为x轴分配对数刻度。对于绘制幅度范围广泛的数据很有用。",
+        "keywords": "Python, Matplotlib, 对数刻度, 轴, 教程, 数据可视化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing"
+            ]
+          },
+          {
+            "title": "生成数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "创建一个图表并将x轴设置为对数刻度",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/grid_config",
+              "matplotlib/log_scale",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "显示图表",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

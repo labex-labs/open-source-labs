@@ -1,91 +1,10 @@
 {
   "type": "lab",
-  "title": "Early Stopping of Stochastic Gradient Descent",
-  "description": "Stochastic Gradient Descent is a popular optimization technique used for minimizing a loss function. The technique performs gradient descent step by step in a stochastic manner, i.e., by randomly selecting samples for each iteration. The method is efficient, especially for fitting linear models. However, convergence is not guaranteed at each iteration, and the loss function may not necessarily decrease at each iteration. In this case, monitoring the convergence on the loss function can be difficult. In this lab, we will explore the early stopping strategy, which is an approach for monitoring convergence on a validation score. We will use the SGDClassifier model from the scikit-learn library and the MNIST dataset to illustrate how early stopping can be used to achieve almost the same accuracy as compared to a model built without early stopping, and significantly reduce training time.",
-  "meta": {
-    "title": "Stochastic Gradient Descent | MNIST Dataset | Early Stopping",
-    "description": "Explore Stochastic Gradient Descent optimization technique, use MNIST dataset, and learn about early stopping strategy to improve model training efficiency.",
-    "keywords": "Stochastic Gradient Descent, MNIST Dataset, Early Stopping, Optimization Technique, Machine Learning"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the necessary libraries and MNIST dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/exceptions",
-          "sklearn/model_selection",
-          "sklearn/utils"
-        ]
-      },
-      {
-        "title": "Define the estimator and the early stopping strategy",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Train and evaluate the estimator",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot the results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-sgd-early-stopping.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -94,5 +13,170 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-sgd-early-stopping.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Early Stopping of Stochastic Gradient Descent",
+      "description": "Stochastic Gradient Descent is a popular optimization technique used for minimizing a loss function. The technique performs gradient descent step by step in a stochastic manner, i.e., by randomly selecting samples for each iteration. The method is efficient, especially for fitting linear models. However, convergence is not guaranteed at each iteration, and the loss function may not necessarily decrease at each iteration. In this case, monitoring the convergence on the loss function can be difficult. In this lab, we will explore the early stopping strategy, which is an approach for monitoring convergence on a validation score. We will use the SGDClassifier model from the scikit-learn library and the MNIST dataset to illustrate how early stopping can be used to achieve almost the same accuracy as compared to a model built without early stopping, and significantly reduce training time.",
+      "meta": {
+        "title": "Stochastic Gradient Descent | MNIST Dataset | Early Stopping",
+        "description": "Explore Stochastic Gradient Descent optimization technique, use MNIST dataset, and learn about early stopping strategy to improve model training efficiency.",
+        "keywords": "Stochastic Gradient Descent, MNIST Dataset, Early Stopping, Optimization Technique, Machine Learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the necessary libraries and MNIST dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/exceptions",
+              "sklearn/model_selection",
+              "sklearn/utils"
+            ]
+          },
+          {
+            "title": "Define the estimator and the early stopping strategy",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Train and evaluate the estimator",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot the results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "随机梯度下降的早停法",
+      "description": "随机梯度下降是一种常用的优化技术，用于最小化损失函数。该技术以随机方式逐步执行梯度下降，即在每次迭代中随机选择样本。这种方法效率很高，尤其适用于拟合线性模型。然而，每次迭代并不能保证收敛，损失函数也不一定在每次迭代时都会减小。在这种情况下，监测损失函数的收敛情况可能会很困难。在本实验中，我们将探索早停策略，这是一种根据验证分数监测收敛的方法。我们将使用 scikit-learn 库中的 SGDClassifier 模型和 MNIST 数据集来说明与未使用早停构建的模型相比，早停如何能够实现几乎相同的准确率，并显著减少训练时间。",
+      "meta": {
+        "title": "随机梯度下降 | MNIST 数据集 | 早停法",
+        "description": "探索随机梯度下降优化技术，使用 MNIST 数据集，并了解早停策略以提高模型训练效率。",
+        "keywords": "随机梯度下降, MNIST 数据集, 早停法, 优化技术, 机器学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载必要的库和 MNIST 数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/exceptions",
+              "sklearn/model_selection",
+              "sklearn/utils"
+            ]
+          },
+          {
+            "title": "定义估计器和早停策略",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "训练并评估估计器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

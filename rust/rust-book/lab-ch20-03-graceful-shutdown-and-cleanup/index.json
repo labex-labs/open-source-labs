@@ -1,90 +1,10 @@
 {
   "type": "lab",
-  "title": "Graceful Shutdown and Cleanup",
-  "description": "In this lab, we will implement a graceful shutdown and cleanup mechanism in our code by utilizing the Drop trait and providing a way for threads to stop accepting new requests and shut down.",
-  "meta": {
-    "title": "Graceful Shutdown and Cleanup in Rust",
-    "description": "Learn how to implement a graceful shutdown and cleanup mechanism in Rust by utilizing the Drop trait and managing thread pool.",
-    "keywords": "rust playground, graceful shutdown, rust tutor, rust online compiler, thread pool, rust commands, cleanup, drop trait, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Graceful Shutdown and Cleanup",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Implementing the Drop Trait on ThreadPool",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/drop_trait",
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Signaling to the Threads to Stop Listening for Jobs",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/drop_trait",
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/message_passing",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -93,5 +13,177 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Graceful Shutdown and Cleanup",
+      "description": "In this lab, we will implement a graceful shutdown and cleanup mechanism in our code by utilizing the Drop trait and providing a way for threads to stop accepting new requests and shut down.",
+      "meta": {
+        "title": "Graceful Shutdown and Cleanup in Rust",
+        "description": "Learn how to implement a graceful shutdown and cleanup mechanism in Rust by utilizing the Drop trait and managing thread pool.",
+        "keywords": "rust playground, graceful shutdown, rust tutor, rust online compiler, thread pool, rust commands, cleanup, drop trait, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Graceful Shutdown and Cleanup",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Implementing the Drop Trait on ThreadPool",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Signaling to the Threads to Stop Listening for Jobs",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "优雅关闭与清理",
+      "description": "在本实验中，我们将通过利用 `Drop` 特性，并提供一种让线程停止接受新请求并关闭的方式，在代码中实现优雅关闭和清理机制。",
+      "meta": {
+        "title": "Rust 中的优雅关闭与清理",
+        "description": "学习如何通过利用 `Drop` 特性和管理线程池，在 Rust 中实现优雅关闭和清理机制。",
+        "keywords": "Rust 游乐场, 优雅关闭, Rust 教程, Rust 在线编译器, 线程池, Rust 命令, 清理, Drop 特性, Rust 练习, Rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "优雅关闭与清理",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "在 ThreadPool 上实现 Drop 特性",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "向线程发出停止监听任务的信号",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/drop_trait",
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/message_passing",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

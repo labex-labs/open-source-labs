@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Sparse Inverse Covariance Estimation",
-  "description": "This lab demonstrates how to use the GraphicalLasso estimator to learn a covariance and sparse precision from a small number of samples. The tutorial covers generating data, estimating the covariance, and plotting the results.",
-  "meta": {
-    "title": "Graphical Lasso Estimator | Covariance Matrix | Sparse Precision",
-    "description": "Learn how to use the GraphicalLasso estimator to learn a covariance and sparse precision from a small number of samples. Covers data generation, covariance estimation, and result visualization.",
-    "keywords": "Graphical Lasso, Covariance Matrix, Sparse Precision, Data Generation, Jupyter Notebook"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate the Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Estimate the Covariance",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/covariance"]
-      },
-      {
-        "title": "Plot the Results",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-sparse-cov.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-sparse-cov.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Sparse Inverse Covariance Estimation",
+      "description": "This lab demonstrates how to use the GraphicalLasso estimator to learn a covariance and sparse precision from a small number of samples. The tutorial covers generating data, estimating the covariance, and plotting the results.",
+      "meta": {
+        "title": "Graphical Lasso Estimator | Covariance Matrix | Sparse Precision",
+        "description": "Learn how to use the GraphicalLasso estimator to learn a covariance and sparse precision from a small number of samples. Covers data generation, covariance estimation, and result visualization.",
+        "keywords": "Graphical Lasso, Covariance Matrix, Sparse Precision, Data Generation, Jupyter Notebook"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate the Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Estimate the Covariance",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/covariance"]
+          },
+          {
+            "title": "Plot the Results",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "稀疏逆协方差估计",
+      "description": "本实验展示了如何使用图形拉索估计器从少量样本中学习协方差和稀疏精度。本教程涵盖了数据生成、协方差估计以及结果绘制。",
+      "meta": {
+        "title": "图形拉索估计器 | 协方差矩阵 | 稀疏精度",
+        "description": "了解如何使用图形拉索估计器从少量样本中学习协方差和稀疏精度。涵盖数据生成、协方差估计和结果可视化。",
+        "keywords": "图形拉索, 协方差矩阵, 稀疏精度, 数据生成, Jupyter Notebook"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "估计协方差",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/covariance"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

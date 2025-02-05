@@ -1,120 +1,231 @@
 {
   "type": "lab",
-  "title": "Creation of a Basic Poll Application",
-  "description": "In this tutorial, we'll walk you through the creation of a basic poll application.",
-  "meta": {
-    "title": "Creating a Basic Poll Application with Django",
-    "description": "Learn how to build a simple poll application with Django, including a public site for viewing and voting on polls, and an admin site for managing them.",
-    "keywords": "poll application, python, django commands, django, tutorial, django online labs, web development"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Overview",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the version of django",
-            "file": "verify1.sh",
-            "hint": "Please check the version of django in the terminal.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Creating a project",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify the project is created",
-            "file": "verify2.sh",
-            "hint": "mysite should be created in ~/project",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "The development server",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify add the ALLOWED_HOSTS",
-            "file": "verify3-1.sh",
-            "hint": "Please add * to the ALLOWED_HOSTS in settings.py",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the django server is running",
-            "file": "verify3-2.sh",
-            "hint": "Please run the django server on 0.0.0.0:8080",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Creating the Polls app",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify the polls app is created",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Write your first view",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "Verify the polls view is created",
-            "file": "verify5.sh",
-            "hint": "Please make sure the polls view is created, and run the django server on 0.0.0.0:8080/polls",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "django/contrib_packages",
-          "django/django_urls",
-          "django/request_and_response"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "*.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
-  "contributors": []
+  "contributors": [],
+  "assets": {
+    "host01": [
+      {
+        "file": "*.zip",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Creation of a Basic Poll Application",
+      "description": "In this tutorial, we'll walk you through the creation of a basic poll application.",
+      "meta": {
+        "title": "Creating a Basic Poll Application with Django",
+        "description": "Learn how to build a simple poll application with Django, including a public site for viewing and voting on polls, and an admin site for managing them.",
+        "keywords": "poll application, python, django commands, django, tutorial, django online labs, web development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Overview",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the version of django",
+                "file": "verify1.sh",
+                "hint": "Please check the version of django in the terminal.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Creating a project",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify the project is created",
+                "file": "verify2.sh",
+                "hint": "mysite should be created in ~/project",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "The development server",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify add the ALLOWED_HOSTS",
+                "file": "verify3-1.sh",
+                "hint": "Please add * to the ALLOWED_HOSTS in settings.py",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the django server is running",
+                "file": "verify3-2.sh",
+                "hint": "Please run the django server on 0.0.0.0:8080",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Creating the Polls app",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify the polls app is created",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Write your first view",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "Verify the polls view is created",
+                "file": "verify5.sh",
+                "hint": "Please make sure the polls view is created, and run the django server on 0.0.0.0:8080/polls",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/django_urls",
+              "django/request_and_response"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "创建基本投票应用",
+      "description": "在本教程中，我们将引导你完成一个基本投票应用的创建。",
+      "meta": {
+        "title": "使用Django创建基本投票应用",
+        "description": "学习如何使用Django构建一个简单的投票应用，包括一个用于查看和投票的公共网站，以及一个用于管理投票的管理网站。",
+        "keywords": "投票应用,  Python, Django命令, Django, 教程, Django在线实验, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "概述",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Django的版本",
+                "file": "verify1.sh",
+                "hint": "请在终端中检查Django的版本。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "创建一个项目",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证项目已创建",
+                "file": "verify2.sh",
+                "hint": "应在~/project中创建mysite",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "开发服务器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证添加了ALLOWED_HOSTS",
+                "file": "verify3-1.sh",
+                "hint": "请在settings.py中的ALLOWED_HOSTS里添加*",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证Django服务器正在运行",
+                "file": "verify3-2.sh",
+                "hint": "请在0.0.0.0:8080上运行Django服务器",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "创建投票应用",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证投票应用已创建",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "编写你的第一个视图",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证投票视图已创建",
+                "file": "verify5.sh",
+                "hint": "请确保投票视图已创建，并在0.0.0.0:8080/polls上运行Django服务器",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/django_urls",
+              "django/request_and_response"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Go Interfaces Tutorial",
-  "description": "This lab is about interfaces in Golang. Interfaces are named collections of method signatures.",
-  "meta": {
-    "title": "Go Interfaces Tutorial: Implement Interfaces in Golang",
-    "description": "Learn how to implement interfaces in Go, including creating custom geometry interfaces, and using a generic measure function.",
-    "keywords": "interfaces, geometry, go, golang, go labs, go playground online, programming, go lab, go practice"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Interfaces",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Interfaces Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/interfaces"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "interfaces.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "interfaces.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Go Interfaces Tutorial",
+      "description": "This lab is about interfaces in Golang. Interfaces are named collections of method signatures.",
+      "meta": {
+        "title": "Go Interfaces Tutorial: Implement Interfaces in Golang",
+        "description": "Learn how to implement interfaces in Go, including creating custom geometry interfaces, and using a generic measure function.",
+        "keywords": "interfaces, geometry, go, golang, go labs, go playground online, programming, go lab, go practice"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Interfaces",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Interfaces Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/interfaces"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言接口教程",
+      "description": "本实验是关于Go语言中的接口。接口是命名的方法签名集合。",
+      "meta": {
+        "title": "Go语言接口教程：在Go语言中实现接口",
+        "description": "学习如何在Go语言中实现接口，包括创建自定义几何图形接口，以及使用通用测量函数。",
+        "keywords": "接口, 几何图形, Go语言, 编程, Go语言实验, 在线Go语言游乐场, Go语言实践"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "接口",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序接口输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/interfaces"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

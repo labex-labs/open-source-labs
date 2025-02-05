@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Rust's Unsafe Operations",
-  "description": "In this lab, we will explore unsafe operations in Rust, which are used to bypass compiler protections and are typically used for dereferencing raw pointers, calling unsafe functions, accessing or modifying static mutable variables, and implementing unsafe traits. These operations should be minimized in a code base to ensure safety.",
-  "meta": {
-    "title": "Exploring Unsafe Operations in Rust | Programming Tutorials",
-    "description": "Dive into the world of unsafe operations in Rust, learn how to bypass compiler protections, and ensure code safety in your projects.",
-    "keywords": "Rust, Unsafe Operations, Raw Pointers, Unsafe Functions, Static Mutable Variables, Unsafe Traits"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Unsafe Operations",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/constants_usage",
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/unsafe_rust",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Rust's Unsafe Operations",
+      "description": "In this lab, we will explore unsafe operations in Rust, which are used to bypass compiler protections and are typically used for dereferencing raw pointers, calling unsafe functions, accessing or modifying static mutable variables, and implementing unsafe traits. These operations should be minimized in a code base to ensure safety.",
+      "meta": {
+        "title": "Exploring Unsafe Operations in Rust | Programming Tutorials",
+        "description": "Dive into the world of unsafe operations in Rust, learn how to bypass compiler protections, and ensure code safety in your projects.",
+        "keywords": "Rust, Unsafe Operations, Raw Pointers, Unsafe Functions, Static Mutable Variables, Unsafe Traits"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Unsafe Operations",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/constants_usage",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索Rust的不安全操作",
+      "description": "在本实验中，我们将探索Rust中的不安全操作，这些操作用于绕过编译器保护，通常用于解引用原始指针、调用不安全函数、访问或修改静态可变变量以及实现不安全特性。在代码库中应尽量减少这些操作以确保安全性。",
+      "meta": {
+        "title": "探索Rust中的不安全操作 | 编程教程",
+        "description": "深入了解Rust中的不安全操作世界，学习如何绕过编译器保护，并确保项目中的代码安全。",
+        "keywords": "Rust, 不安全操作, 原始指针, 不安全函数, 静态可变变量, 不安全特性"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "不安全操作",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/constants_usage",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

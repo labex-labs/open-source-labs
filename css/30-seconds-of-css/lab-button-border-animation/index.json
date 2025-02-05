@@ -1,81 +1,10 @@
 {
   "type": "lab",
-  "title": "Button Border Animation",
-  "description": "In this lab, we will explore how to create a button border animation on hover using CSS. By using the ::before and ::after pseudo-elements, we can add two boxes above and below the button and transition their width to 100% on hover. This lab will help you to enhance your CSS skills and add interactivity to your web pages.",
-  "meta": {
-    "title": "Button Border Animation Tutorial",
-    "description": "Learn how to create an interactive button border animation using CSS.",
-    "keywords": "css, css exercises, hover, css practice, button, border, css playground, css lab, animation"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Button Border Animation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/backgrounds",
-          "css/borders",
-          "css/colors",
-          "css/margin_and_padding",
-          "css/positioning",
-          "css/pseudo_classes",
-          "css/pseudo_elements",
-          "css/selectors",
-          "css/transitions",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -84,5 +13,145 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Button Border Animation",
+      "description": "In this lab, we will explore how to create a button border animation on hover using CSS. By using the ::before and ::after pseudo-elements, we can add two boxes above and below the button and transition their width to 100% on hover. This lab will help you to enhance your CSS skills and add interactivity to your web pages.",
+      "meta": {
+        "title": "Button Border Animation Tutorial",
+        "description": "Learn how to create an interactive button border animation using CSS.",
+        "keywords": "css, css exercises, hover, css practice, button, border, css playground, css lab, animation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Button Border Animation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/colors",
+              "css/margin_and_padding",
+              "css/positioning",
+              "css/pseudo_classes",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "按钮边框动画",
+      "description": "在本实验中，我们将探索如何使用CSS在按钮悬停时创建边框动画。通过使用::before和::after伪元素，我们可以在按钮上方和下方添加两个框，并在悬停时将它们的宽度过渡到100%。本实验将帮助你提升CSS技能，并为你的网页增添交互性。",
+      "meta": {
+        "title": "按钮边框动画教程",
+        "description": "学习如何使用CSS创建交互式按钮边框动画。",
+        "keywords": "CSS, CSS练习, 悬停, CSS实践, 按钮, 边框, CSS游乐场, CSS实验, 动画"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "按钮边框动画",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/colors",
+              "css/margin_and_padding",
+              "css/positioning",
+              "css/pseudo_classes",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

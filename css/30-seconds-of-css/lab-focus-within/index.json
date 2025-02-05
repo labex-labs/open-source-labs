@@ -1,79 +1,10 @@
 {
   "type": "lab",
-  "title": "Enhancing Form Interactivity with CSS Focus-Within",
-  "description": "In this lab, we will explore the :focus-within pseudo-class in CSS, which allows us to apply styles to a parent element when any of its child elements are focused. We will use this feature to create a visually appealing form that changes its appearance when the user interacts with it. Through this lab, you will gain a better understanding of how to enhance the user experience by using CSS to create interactive forms.",
-  "meta": {
-    "title": "CSS Focus-Within | Interactive Form Design",
-    "description": "Explore the CSS :focus-within pseudo-class to create visually appealing and interactive forms that enhance user experience.",
-    "keywords": "CSS, focus-within, form design, user experience, interactive design, web development"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Focus Within",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/backgrounds",
-          "css/borders",
-          "css/colors",
-          "css/display_property",
-          "css/margin_and_padding",
-          "css/pseudo_classes",
-          "css/selectors",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -82,5 +13,141 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Enhancing Form Interactivity with CSS Focus-Within",
+      "description": "In this lab, we will explore the :focus-within pseudo-class in CSS, which allows us to apply styles to a parent element when any of its child elements are focused. We will use this feature to create a visually appealing form that changes its appearance when the user interacts with it. Through this lab, you will gain a better understanding of how to enhance the user experience by using CSS to create interactive forms.",
+      "meta": {
+        "title": "CSS Focus-Within | Interactive Form Design",
+        "description": "Explore the CSS :focus-within pseudo-class to create visually appealing and interactive forms that enhance user experience.",
+        "keywords": "CSS, focus-within, form design, user experience, interactive design, web development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Focus Within",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/colors",
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 CSS :focus-within 增强表单交互性",
+      "description": "在本实验中，我们将探索 CSS 中的 :focus-within 伪类，它允许我们在父元素的任何子元素获得焦点时，为该父元素应用样式。我们将利用此功能创建一个视觉上吸引人的表单，当用户与之交互时，表单会改变其外观。通过本实验，你将更好地理解如何使用 CSS 创建交互式表单来提升用户体验。",
+      "meta": {
+        "title": "CSS :focus-within | 交互式表单设计",
+        "description": "探索 CSS :focus-within 伪类，创建视觉上吸引人且交互式的表单，提升用户体验。",
+        "keywords": "CSS, :focus-within, 表单设计, 用户体验, 交互式设计, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "子元素获得焦点",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 index.html 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 style.css 修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/colors",
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

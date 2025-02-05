@@ -1,49 +1,10 @@
 {
   "type": "lab",
-  "title": "Waiting for Child Process Completion",
-  "description": "In this lab, you can learn how to wait for a process::Child to finish by calling Child::wait, which will return a process::ExitStatus.",
-  "meta": {
-    "title": "Waiting for Child Process Completion in Rust",
-    "description": "Learn how to wait for a Rust process::Child to finish using Child::wait and retrieve the ExitStatus.",
-    "keywords": "rust playground, exitstatus, process, child process, rust tutor, rust online compiler, rust commands, wait, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Wait",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -52,5 +13,95 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Waiting for Child Process Completion",
+      "description": "In this lab, you can learn how to wait for a process::Child to finish by calling Child::wait, which will return a process::ExitStatus.",
+      "meta": {
+        "title": "Waiting for Child Process Completion in Rust",
+        "description": "Learn how to wait for a Rust process::Child to finish using Child::wait and retrieve the ExitStatus.",
+        "keywords": "rust playground, exitstatus, process, child process, rust tutor, rust online compiler, rust commands, wait, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Wait",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "等待子进程完成",
+      "description": "在本实验中，你可以学习如何通过调用 Child::wait 来等待一个 process::Child 进程完成，该调用将返回一个 process::ExitStatus。",
+      "meta": {
+        "title": "在Rust中等待子进程完成",
+        "description": "学习如何使用 Child::wait 等待Rust的process::Child进程完成并获取ExitStatus。",
+        "keywords": "Rust游乐场, ExitStatus, 进程, 子进程, Rust教程, Rust在线编译器, Rust命令, 等待, Rust练习, Rust在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "等待",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

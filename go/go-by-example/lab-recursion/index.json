@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Recursive Functions in Golang",
-  "description": "This lab will test your understanding of recursive functions in Golang.",
-  "meta": {
-    "title": "Golang Recursion | Programming Tutorials",
-    "description": "Learn Golang recursion with this interactive tutorial. Explore recursive functions and their applications in Golang programming.",
-    "keywords": "Golang, Recursion, Programming Tutorials, Recursive Functions, Coding, Computer Science"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Recursion",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Recursion Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/recursion"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "recursion.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "recursion.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Recursive Functions in Golang",
+      "description": "This lab will test your understanding of recursive functions in Golang.",
+      "meta": {
+        "title": "Golang Recursion | Programming Tutorials",
+        "description": "Learn Golang recursion with this interactive tutorial. Explore recursive functions and their applications in Golang programming.",
+        "keywords": "Golang, Recursion, Programming Tutorials, Recursive Functions, Coding, Computer Science"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Recursion",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Recursion Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/recursion"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言中的递归函数",
+      "description": "本实验将测试你对Go语言中递归函数的理解。",
+      "meta": {
+        "title": "Go语言递归 | 编程教程",
+        "description": "通过这个交互式教程学习Go语言递归。探索递归函数及其在Go语言编程中的应用。",
+        "keywords": "Go语言, 递归, 编程教程, 递归函数, 编码, 计算机科学"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "递归",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序的递归输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/recursion"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

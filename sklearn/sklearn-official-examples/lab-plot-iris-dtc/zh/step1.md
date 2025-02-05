@@ -1,0 +1,9 @@
+# 加载鸢尾花数据集
+
+第一步是使用scikit-learn加载鸢尾花数据集。
+
+```python
+from sklearn.datasets import load_iris
+
+iris = load_iris()
+```

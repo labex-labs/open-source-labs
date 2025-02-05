@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Sort Git Branches by Date",
-  "description": "When working with Git, it's common to have multiple branches in a repository. However, it can be difficult to keep track of all the branches and their last commit dates. In this lab, you will learn how to use Git to sort branches by date, making it easier to manage your repository.",
-  "meta": {
-    "title": "Git Branch Management | Sort Branches by Date | Lab",
-    "description": "Learn how to sort Git branches by date, making it easier to manage your repository and identify recently updated branches.",
-    "keywords": "Git, branch management, sort branches, commit date, repository management"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Sort Git Branches by Date",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful sorting",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/branch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Sort Git Branches by Date",
+      "description": "When working with Git, it's common to have multiple branches in a repository. However, it can be difficult to keep track of all the branches and their last commit dates. In this lab, you will learn how to use Git to sort branches by date, making it easier to manage your repository.",
+      "meta": {
+        "title": "Git Branch Management | Sort Branches by Date | Lab",
+        "description": "Learn how to sort Git branches by date, making it easier to manage your repository and identify recently updated branches.",
+        "keywords": "Git, branch management, sort branches, commit date, repository management"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Sort Git Branches by Date",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful sorting",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "按日期对 Git 分支进行排序",
+      "description": "在使用 Git 时，仓库中通常会有多个分支。然而，要跟踪所有分支及其最后提交日期可能会很困难。在这个实验中，你将学习如何使用 Git 按日期对分支进行排序，从而更轻松地管理你的仓库。",
+      "meta": {
+        "title": "Git 分支管理 | 按日期对分支进行排序 | 实验",
+        "description": "学习如何按日期对 Git 分支进行排序，从而更轻松地管理你的仓库并识别最近更新的分支。",
+        "keywords": "Git, 分支管理, 对分支进行排序, 提交日期, 仓库管理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "按日期对 Git 分支进行排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证排序是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

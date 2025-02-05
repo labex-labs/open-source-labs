@@ -1,123 +1,10 @@
 {
   "type": "lab",
-  "title": "Inspect the Internals of Functions",
-  "description": "In this lab, you will learn how to inspect the internals of functions in Python.",
-  "meta": {
-    "title": "Inspect Python Function Internals | Programming Tutorials",
-    "description": "Learn how to inspect the internals of Python functions, including function attributes, documentation, and implementation details.",
-    "keywords": "python, functions, inspection, programming, tutorials"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Inspecting functions",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Function and Metadata Attributes",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/function_definition",
-          "python/python_shell",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Using the inspect module",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python Inspect, Parameters, and Tuple Usage",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/data_collections",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      },
-      {
-        "title": "Putting it Together",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Inspect, Classmethod, Tuple, Parameters, and Stock Class",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/os_system",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ],
-        "solutions": ["stock.py", "structure.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "structure.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "teststock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -126,5 +13,224 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "structure.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "teststock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Inspect the Internals of Functions",
+      "description": "In this lab, you will learn how to inspect the internals of functions in Python.",
+      "meta": {
+        "title": "Inspect Python Function Internals | Programming Tutorials",
+        "description": "Learn how to inspect the internals of Python functions, including function attributes, documentation, and implementation details.",
+        "keywords": "python, functions, inspection, programming, tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Inspecting functions",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Function and Metadata Attributes",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/function_definition",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Using the inspect module",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python Inspect, Parameters, and Tuple Usage",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/data_collections",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "Putting it Together",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Inspect, Classmethod, Tuple, Parameters, and Stock Class",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/os_system",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ],
+            "solutions": ["stock.py", "structure.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查函数的内部结构",
+      "description": "在本实验中，你将学习如何检查 Python 中函数的内部结构。",
+      "meta": {
+        "title": "检查 Python 函数内部结构 | 编程教程",
+        "description": "学习如何检查 Python 函数的内部结构，包括函数属性、文档和实现细节。",
+        "keywords": "Python, 函数, 检查, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 函数和元数据属性",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/function_definition",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "使用 inspect 模块",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 Python 的 inspect、参数和元组用法",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/data_collections",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "整合起来",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 inspect、类方法、元组、参数和库存类的存在",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/os_system",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ],
+            "solutions": ["stock.py", "structure.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

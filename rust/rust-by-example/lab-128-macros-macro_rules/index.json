@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Metaprogramming with Macros",
-  "description": "In this lab, we will explore the powerful macro system provided by Rust, which allows for metaprogramming by expanding macros into abstract syntax trees. The macro_rules! macro is used to create macros, and they are distinguished from functions by their ending bang !. Macros are useful for avoiding code repetition, creating domain-specific languages, and defining variadic interfaces for functions that can take a variable number of arguments.",
-  "meta": {
-    "title": "Mastering Rust Metaprogramming with Macros",
-    "description": "Explore the powerful macro system in Rust and learn how to use metaprogramming techniques to enhance your code.",
-    "keywords": "rust playground, metaprogramming, domain specific languages, rust tutor, rust online compiler, rust commands, macros, rust practice, variadic interfaces, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "macro_rules!",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/expressions_statements", "rust/function_syntax"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Metaprogramming with Macros",
+      "description": "In this lab, we will explore the powerful macro system provided by Rust, which allows for metaprogramming by expanding macros into abstract syntax trees. The macro_rules! macro is used to create macros, and they are distinguished from functions by their ending bang !. Macros are useful for avoiding code repetition, creating domain-specific languages, and defining variadic interfaces for functions that can take a variable number of arguments.",
+      "meta": {
+        "title": "Mastering Rust Metaprogramming with Macros",
+        "description": "Explore the powerful macro system in Rust and learn how to use metaprogramming techniques to enhance your code.",
+        "keywords": "rust playground, metaprogramming, domain specific languages, rust tutor, rust online compiler, rust commands, macros, rust practice, variadic interfaces, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "macro_rules!",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用宏进行 Rust 元编程",
+      "description": "在本实验中，我们将探索 Rust 提供的强大宏系统，该系统允许通过将宏扩展为抽象语法树来进行元编程。`macro_rules!` 宏用于创建宏，它们通过结尾的惊叹号 `!` 与函数区分开来。宏对于避免代码重复、创建特定领域语言以及为可以接受可变数量参数的函数定义可变参数接口非常有用。",
+      "meta": {
+        "title": "掌握使用宏的 Rust 元编程",
+        "description": "探索 Rust 中强大的宏系统，并学习如何使用元编程技术来优化你的代码。",
+        "keywords": "rust 在线编译器, 元编程, 特定领域语言, rust 教程, rust 在线练习, rust 命令, 宏, rust 实践, 可变参数接口, rust 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "macro_rules!",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

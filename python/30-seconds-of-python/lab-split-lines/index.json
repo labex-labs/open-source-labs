@@ -1,61 +1,10 @@
 {
   "type": "lab",
-  "title": "Split Multiline Strings",
-  "description": "In Python, a multiline string is a string that contains multiple lines of text. Sometimes, it is necessary to split a multiline string into a list of individual lines. This can be useful when you need to process each line separately.",
-  "meta": {
-    "title": "Split Multiline Strings in Python",
-    "description": "Learn how to split a multiline string into individual lines using a simple Python function.",
-    "keywords": "string manipulation, text processing, python, multiline string, split"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Split into Lines",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/lists",
-          "python/standard_libraries"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_split_lines.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "split_lines.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -64,5 +13,105 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_split_lines.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "split_lines.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Split Multiline Strings",
+      "description": "In Python, a multiline string is a string that contains multiple lines of text. Sometimes, it is necessary to split a multiline string into a list of individual lines. This can be useful when you need to process each line separately.",
+      "meta": {
+        "title": "Split Multiline Strings in Python",
+        "description": "Learn how to split a multiline string into individual lines using a simple Python function.",
+        "keywords": "string manipulation, text processing, python, multiline string, split"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Split into Lines",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/standard_libraries"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "拆分多行字符串",
+      "description": "在Python中，多行字符串是包含多行文本的字符串。有时，需要将多行字符串拆分为单独行的列表。当你需要分别处理每一行时，这会很有用。",
+      "meta": {
+        "title": "在Python中拆分多行字符串",
+        "description": "学习如何使用一个简单的Python函数将多行字符串拆分为单独的行。",
+        "keywords": "字符串操作, 文本处理, Python, 多行字符串, 拆分"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "拆分为行",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/standard_libraries"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

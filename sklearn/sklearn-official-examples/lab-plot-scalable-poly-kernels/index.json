@@ -1,102 +1,10 @@
 {
   "type": "lab",
-  "title": "Polynomial Kernel Approximation with Scikit-Learn",
-  "description": "This lab will demonstrate how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations. This is used to train linear classifiers that approximate the accuracy of kernelized ones. We will be using the Covtype dataset, which contains 581,012 samples with 54 features each, distributed among 6 classes. The goal of this dataset is to predict forest cover type from cartographic variables only (no remotely sensed data). After loading, we transform it into a binary classification problem to match the version of the dataset in the LIBSVM webpage, which was the one used in the original paper.",
-  "meta": {
-    "title": "Polynomial Kernel Approximation | Machine Learning | Data Science",
-    "description": "Learn how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations and train linear classifiers that approximate the accuracy of kernelized ones.",
-    "keywords": "Polynomial Kernel Approximation, Machine Learning, Data Science, Scikit-learn, Covtype Dataset"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load and Prepare the Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/model_selection",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Establish a Baseline Model",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/svm"]
-      },
-      {
-        "title": "Establish the Kernel Approximation Model",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
-      },
-      {
-        "title": "Establish the Kernelized SVM Model",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/svm"]
-      },
-      {
-        "title": "Compare the Results",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-scalable-poly-kernels.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -105,5 +13,192 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-scalable-poly-kernels.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Polynomial Kernel Approximation with Scikit-Learn",
+      "description": "This lab will demonstrate how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations. This is used to train linear classifiers that approximate the accuracy of kernelized ones. We will be using the Covtype dataset, which contains 581,012 samples with 54 features each, distributed among 6 classes. The goal of this dataset is to predict forest cover type from cartographic variables only (no remotely sensed data). After loading, we transform it into a binary classification problem to match the version of the dataset in the LIBSVM webpage, which was the one used in the original paper.",
+      "meta": {
+        "title": "Polynomial Kernel Approximation | Machine Learning | Data Science",
+        "description": "Learn how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations and train linear classifiers that approximate the accuracy of kernelized ones.",
+        "keywords": "Polynomial Kernel Approximation, Machine Learning, Data Science, Scikit-learn, Covtype Dataset"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load and Prepare the Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Establish a Baseline Model",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/svm"]
+          },
+          {
+            "title": "Establish the Kernel Approximation Model",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+          },
+          {
+            "title": "Establish the Kernelized SVM Model",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/svm"]
+          },
+          {
+            "title": "Compare the Results",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Scikit-learn进行多项式核近似",
+      "description": "本实验将展示如何在Scikit-learn中使用多项式核近似来高效地生成多项式核特征空间近似。这用于训练线性分类器，使其近似核化分类器的准确率。我们将使用Covtype数据集，该数据集包含581,012个样本，每个样本有54个特征，分布在6个类别中。此数据集的目标是仅根据地图变量（无遥感数据）预测森林覆盖类型。加载后，我们将其转换为二分类问题，以匹配LIBSVM网页上的数据集版本，该版本是原始论文中使用的版本。",
+      "meta": {
+        "title": "多项式核近似 | 机器学习 | 数据科学",
+        "description": "了解如何在Scikit-learn中使用多项式核近似来高效地生成多项式核特征空间近似，并训练线性分类器，使其近似核化分类器的准确率。",
+        "keywords": "多项式核近似, 机器学习, 数据科学, Scikit-learn, Covtype数据集"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载并准备数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "建立一个基线模型",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/svm"]
+          },
+          {
+            "title": "建立核近似模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+          },
+          {
+            "title": "建立核支持向量机模型",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/svm"]
+          },
+          {
+            "title": "比较结果",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Undo a Commit",
-  "description": "Git is a powerful version control system that allows developers to track changes to their codebase. One of the most useful features of Git is the ability to undo changes that have been committed. In this lab, you will learn how to undo a commit using Git.",
-  "meta": {
-    "title": "Undo a Commit in Git",
-    "description": "Learn how to undo a commit in Git, a powerful version control system, and restore your codebase to a previous state.",
-    "keywords": "version control, revert commit, git labs, git revert, git, git playground, undo commit"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Undo a Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the success of the undo",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Undo a Commit",
+      "description": "Git is a powerful version control system that allows developers to track changes to their codebase. One of the most useful features of Git is the ability to undo changes that have been committed. In this lab, you will learn how to undo a commit using Git.",
+      "meta": {
+        "title": "Undo a Commit in Git",
+        "description": "Learn how to undo a commit in Git, a powerful version control system, and restore your codebase to a previous state.",
+        "keywords": "version control, revert commit, git labs, git revert, git, git playground, undo commit"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Undo a Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the success of the undo",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "撤销提交",
+      "description": "Git 是一个强大的版本控制系统，它允许开发者跟踪其代码库的更改。Git 最有用的特性之一是能够撤销已提交的更改。在本实验中，你将学习如何使用 Git 撤销提交。",
+      "meta": {
+        "title": "在 Git 中撤销提交",
+        "description": "了解如何在强大的版本控制系统 Git 中撤销提交，并将你的代码库恢复到先前的状态。",
+        "keywords": "版本控制, 撤销提交, Git 实验室, git revert, Git, Git 游乐场, 撤销提交"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "撤销提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证撤销操作是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

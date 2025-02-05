@@ -1,150 +1,10 @@
 {
   "type": "lab",
-  "title": "Model Selection for Lasso Regression",
-  "description": "In this lab, we will learn about selecting the best hyperparameter alpha for Lasso regression models. Two approaches will be discussed: (1) selecting the optimal value of alpha by only using the training set and some information criterion, and (2) selecting the best hyperparameter using cross-validation. We will use the diabetes dataset in this example.",
-  "meta": {
-    "title": "Lasso Regression Hyperparameter Optimization | Machine Learning",
-    "description": "Learn how to select the optimal hyperparameter alpha for Lasso regression models using training set information criteria and cross-validation on the diabetes dataset.",
-    "keywords": "Lasso Regression, Hyperparameter Optimization, Machine Learning, Diabetes Dataset"
-  },
   "difficulty": "Beginner",
   "time": 45,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Adding Random Features",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Selecting Lasso via an Information Criterion",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/linear_model",
-          "sklearn/pipeline",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Storing Results and Checking Optimal Alpha",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plotting AIC and BIC Values",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Selecting Lasso via Cross-Validation",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": Lasso via Coordinate Descent",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      },
-      {
-        "title": ": Lasso via Least Angle Regression",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      },
-      {
-        "title": "Summary of Cross-Validation Approach",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify9.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-lasso-model-selection.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -153,5 +13,288 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-lasso-model-selection.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Model Selection for Lasso Regression",
+      "description": "In this lab, we will learn about selecting the best hyperparameter alpha for Lasso regression models. Two approaches will be discussed: (1) selecting the optimal value of alpha by only using the training set and some information criterion, and (2) selecting the best hyperparameter using cross-validation. We will use the diabetes dataset in this example.",
+      "meta": {
+        "title": "Lasso Regression Hyperparameter Optimization | Machine Learning",
+        "description": "Learn how to select the optimal hyperparameter alpha for Lasso regression models using training set information criteria and cross-validation on the diabetes dataset.",
+        "keywords": "Lasso Regression, Hyperparameter Optimization, Machine Learning, Diabetes Dataset"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Adding Random Features",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Selecting Lasso via an Information Criterion",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/linear_model",
+              "sklearn/pipeline",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Storing Results and Checking Optimal Alpha",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plotting AIC and BIC Values",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Selecting Lasso via Cross-Validation",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": Lasso via Coordinate Descent",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": ": Lasso via Least Angle Regression",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "Summary of Cross-Validation Approach",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify9.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "套索回归的模型选择",
+      "description": "在本实验中，我们将学习如何为套索回归模型选择最佳超参数alpha。我们将讨论两种方法：（1）仅使用训练集和一些信息准则来选择alpha的最优值，以及（2）使用交叉验证来选择最佳超参数。在这个例子中我们将使用糖尿病数据集。",
+      "meta": {
+        "title": "套索回归超参数优化 | 机器学习",
+        "description": "了解如何使用训练集信息准则和对糖尿病数据集进行交叉验证，为套索回归模型选择最优超参数alpha。",
+        "keywords": "套索回归, 超参数优化, 机器学习, 糖尿病数据集"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "添加随机特征",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "通过信息准则选择套索回归",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/linear_model",
+              "sklearn/pipeline",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "存储结果并检查最优阿尔法值",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制AIC和BIC值",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "通过交叉验证选择套索回归",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 通过坐标下降法进行套索回归",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": ": 通过最小角回归进行套索回归",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "交叉验证方法总结",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

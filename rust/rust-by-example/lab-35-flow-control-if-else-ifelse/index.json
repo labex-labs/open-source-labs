@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Conditional Statements in Rust",
-  "description": "In this lab, we learn about using if-else statements in Rust. Similar to other programming languages, if-else statements in Rust don't require parentheses around the condition and each condition is followed by a block of code. These conditionals are expressions, so all branches must return the same type. Within the code example provided, we first check if the variable n is less than 0, and if so, it prints that n is negative. If n is not less than 0, we then check if it is greater than 0 and print that n is positive. Finally, if none of the previous conditions are met, we print that n is zero. Another example demonstrates how the if-else statement can be used as an expression to assign a new value to the variable big_n. If n is between -10 and 10, it prints that n is a small number and assigns 10 * n to big_n. Otherwise, it prints that n is a big number and assigns n / 2 to big_n. The final output of n and big_n is printed at the end.",
-  "meta": {
-    "title": "Rust Programming | if-else Statements",
-    "description": "Learn about using if-else statements in Rust programming language. Explore conditional expressions, branching logic, and more.",
-    "keywords": "Rust, programming, if-else, conditional expressions, branching logic"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "if/else",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/operator_overloading",
-          "rust/type_casting",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Conditional Statements in Rust",
+      "description": "In this lab, we learn about using if-else statements in Rust. Similar to other programming languages, if-else statements in Rust don't require parentheses around the condition and each condition is followed by a block of code. These conditionals are expressions, so all branches must return the same type. Within the code example provided, we first check if the variable n is less than 0, and if so, it prints that n is negative. If n is not less than 0, we then check if it is greater than 0 and print that n is positive. Finally, if none of the previous conditions are met, we print that n is zero. Another example demonstrates how the if-else statement can be used as an expression to assign a new value to the variable big_n. If n is between -10 and 10, it prints that n is a small number and assigns 10 * n to big_n. Otherwise, it prints that n is a big number and assigns n / 2 to big_n. The final output of n and big_n is printed at the end.",
+      "meta": {
+        "title": "Rust Programming | if-else Statements",
+        "description": "Learn about using if-else statements in Rust programming language. Explore conditional expressions, branching logic, and more.",
+        "keywords": "Rust, programming, if-else, conditional expressions, branching logic"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "if/else",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/operator_overloading",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 中的条件语句",
+      "description": "在本实验中，我们学习如何在 Rust 中使用 if-else 语句。与其他编程语言类似，Rust 中的 if-else 语句在条件周围不需要括号，并且每个条件后面都跟着一段代码块。这些条件语句是表达式，因此所有分支必须返回相同的类型。在提供的代码示例中，我们首先检查变量 n 是否小于 0，如果是，则打印 n 是负数。如果 n 不小于 0，我们接着检查它是否大于 0，并打印 n 是正数。最后，如果前面的条件都不满足，我们打印 n 是零。另一个示例展示了 if-else 语句如何用作表达式，为变量 big_n 赋一个新值。如果 n 在 -10 到 10 之间，它会打印 n 是一个小数，并将 10 * n 赋给 big_n。否则，它会打印 n 是一个大数，并将 n / 2 赋给 big_n。最后会打印出 n 和 big_n 的最终值。",
+      "meta": {
+        "title": "Rust 编程 | if-else 语句",
+        "description": "了解在 Rust 编程语言中使用 if-else 语句。探索条件表达式、分支逻辑等。",
+        "keywords": "Rust, 编程, if-else, 条件表达式, 分支逻辑"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "if/else",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/operator_overloading",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

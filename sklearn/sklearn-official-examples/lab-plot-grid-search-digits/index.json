@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Plot Grid Search Digits",
-  "description": "This lab shows how to perform hyperparameter tuning with cross-validation using the scikit-learn library. The aim is to classify handwritten digits images using a binary classification for easier understanding: identifying whether a digit is 8 or not. The dataset used is the digits dataset. The performance of the selected hyper-parameters and trained model is then measured on a dedicated evaluation set that was not used during the model selection step.",
-  "meta": {
-    "title": "Mastering Digit Classification with Grid Search",
-    "description": "Learn how to perform hyperparameter tuning with cross-validation using scikit-learn to classify handwritten digits.",
-    "keywords": "machine learning, scikit learn, digit classification, scikit-learn, grid search, scikit-learn playground, hyperparameter tuning"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      },
-      {
-        "title": "Define Grid-Search Strategy",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/metrics"]
-      },
-      {
-        "title": "Define Hyperparameters",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection", "sklearn/svm"]
-      },
-      {
-        "title": "Fit the Model and Make Predictions",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-grid-search-digits.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-grid-search-digits.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Plot Grid Search Digits",
+      "description": "This lab shows how to perform hyperparameter tuning with cross-validation using the scikit-learn library. The aim is to classify handwritten digits images using a binary classification for easier understanding: identifying whether a digit is 8 or not. The dataset used is the digits dataset. The performance of the selected hyper-parameters and trained model is then measured on a dedicated evaluation set that was not used during the model selection step.",
+      "meta": {
+        "title": "Mastering Digit Classification with Grid Search",
+        "description": "Learn how to perform hyperparameter tuning with cross-validation using scikit-learn to classify handwritten digits.",
+        "keywords": "machine learning, scikit learn, digit classification, scikit-learn, grid search, scikit-learn playground, hyperparameter tuning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "Define Grid-Search Strategy",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          },
+          {
+            "title": "Define Hyperparameters",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection", "sklearn/svm"]
+          },
+          {
+            "title": "Fit the Model and Make Predictions",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "绘制网格搜索数字图",
+      "description": "本实验展示了如何使用scikit-learn库通过交叉验证进行超参数调整。目的是使用二元分类对手写数字图像进行分类，以便于理解：识别一个数字是否为8。使用的数据集是数字数据集。然后，在模型选择步骤中未使用的专用评估集上测量所选超参数和训练模型的性能。",
+      "meta": {
+        "title": "通过网格搜索掌握数字分类",
+        "description": "学习如何使用scikit-learn通过交叉验证进行超参数调整以对手写数字进行分类。",
+        "keywords": "机器学习, scikit learn, 数字分类, scikit-learn, 网格搜索, scikit-learn游乐场, 超参数调整"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "定义网格搜索策略",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          },
+          {
+            "title": "定义超参数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection", "sklearn/svm"]
+          },
+          {
+            "title": "拟合模型并进行预测",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

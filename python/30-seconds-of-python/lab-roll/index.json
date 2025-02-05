@@ -1,61 +1,10 @@
 {
   "type": "lab",
-  "title": "Rotate List Elements",
-  "description": "In this challenge, you will be tasked with creating a function that rotates a list by a specified amount of elements.",
-  "meta": {
-    "title": "Rotate List Elements: Python Coding Challenge",
-    "description": "Learn how to rotate a list by a specified amount of elements in Python.",
-    "keywords": "coding challenge, python, programming tutorial, list, rotate"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Rotate List Elements",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python3 Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_roll.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "roll.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -64,5 +13,105 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_roll.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "roll.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rotate List Elements",
+      "description": "In this challenge, you will be tasked with creating a function that rotates a list by a specified amount of elements.",
+      "meta": {
+        "title": "Rotate List Elements: Python Coding Challenge",
+        "description": "Learn how to rotate a list by a specified amount of elements in Python.",
+        "keywords": "coding challenge, python, programming tutorial, list, rotate"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Rotate List Elements",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python3 Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "旋转列表元素",
+      "description": "在这个挑战中，你将负责创建一个函数，该函数可以将列表旋转指定数量的元素。",
+      "meta": {
+        "title": "旋转列表元素：Python 编码挑战",
+        "description": "学习如何在 Python 中把列表旋转指定数量的元素。",
+        "keywords": "编码挑战, Python, 编程教程, 列表, 旋转"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "旋转列表元素",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python3 脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

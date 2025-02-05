@@ -1,165 +1,10 @@
 {
   "type": "lab",
-  "title": "Double Pendulum Simulation",
-  "description": "The double pendulum is a classic problem in physics and mathematics. It involves two pendulums attached to each other, and the motion of the second pendulum is affected by the motion of the first pendulum. In this lab, we will use Python and Matplotlib to simulate the motion of a double pendulum.",
-  "meta": {
-    "title": "Explore the Fascinating Double Pendulum Simulation",
-    "description": "Dive into the physics and mathematics of the double pendulum with this captivating Python and Matplotlib simulation.",
-    "keywords": "physics simulation, matplotlib, double pendulum, python, programming tutorial"
-  },
   "difficulty": "Beginner",
   "time": 40,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Required Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/animation_creation",
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/using_packages"
-        ]
-      },
-      {
-        "title": "Set Up Parameters",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/comments"]
-      },
-      {
-        "title": "Define the Derivatives Function",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Set Up Initial Conditions and Integrate the ODE",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/for_loops",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Calculate the Position of Each Pendulum",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/lists", "python/tuples"]
-      },
-      {
-        "title": "Set Up the Plot",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/grid_config", "python/booleans", "python/tuples"]
-      },
-      {
-        "title": "Define the Animation Function",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/line_plots",
-          "python/conditional_statements",
-          "python/function_definition",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Create the Animation",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/animation_creation",
-          "python/booleans",
-          "python/build_in_functions",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "double-pendulum.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -168,5 +13,326 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "double-pendulum.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Double Pendulum Simulation",
+      "description": "The double pendulum is a classic problem in physics and mathematics. It involves two pendulums attached to each other, and the motion of the second pendulum is affected by the motion of the first pendulum. In this lab, we will use Python and Matplotlib to simulate the motion of a double pendulum.",
+      "meta": {
+        "title": "Explore the Fascinating Double Pendulum Simulation",
+        "description": "Dive into the physics and mathematics of the double pendulum with this captivating Python and Matplotlib simulation.",
+        "keywords": "physics simulation, matplotlib, double pendulum, python, programming tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Required Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/animation_creation",
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "Set Up Parameters",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/comments"]
+          },
+          {
+            "title": "Define the Derivatives Function",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Set Up Initial Conditions and Integrate the ODE",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Calculate the Position of Each Pendulum",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/lists", "python/tuples"]
+          },
+          {
+            "title": "Set Up the Plot",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/grid_config",
+              "python/booleans",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Define the Animation Function",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/line_plots",
+              "python/conditional_statements",
+              "python/function_definition",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Create the Animation",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/animation_creation",
+              "python/booleans",
+              "python/build_in_functions",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "双摆模拟",
+      "description": "双摆是物理和数学中的一个经典问题。它涉及两个相互连接的摆，第二个摆的运动受第一个摆的运动影响。在这个实验中，我们将使用Python和Matplotlib来模拟双摆的运动。",
+      "meta": {
+        "title": "探索迷人的双摆模拟",
+        "description": "通过这个引人入胜的Python和Matplotlib模拟，深入了解双摆的物理和数学原理。",
+        "keywords": "物理模拟, Matplotlib, 双摆, Python, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/animation_creation",
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "设置参数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/comments"]
+          },
+          {
+            "title": "定义导数函数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "设置初始条件并求解常微分方程",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "计算每个摆的位置",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/lists", "python/tuples"]
+          },
+          {
+            "title": "设置绘图",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/grid_config",
+              "python/booleans",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "定义动画函数",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/line_plots",
+              "python/conditional_statements",
+              "python/function_definition",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "创建动画",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/animation_creation",
+              "python/booleans",
+              "python/build_in_functions",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

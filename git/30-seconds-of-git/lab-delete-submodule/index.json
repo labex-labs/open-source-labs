@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Delete a Submodule",
-  "description": "In Git, a submodule is a repository that is included in another repository as a subdirectory. Submodules allow you to keep a separate repository for a specific project within a larger project. However, there may be situations where you need to delete a submodule from your repository. In this lab, you will learn how to delete a submodule from a Git repository.",
-  "meta": {
-    "title": "How to Delete a Submodule in Git",
-    "description": "Learn the step-by-step process to remove a submodule from your Git repository.",
-    "keywords": "remove, repository, delete, git labs, git, submodule, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Delete a Submodule",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful deletion",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/submodule"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Delete a Submodule",
+      "description": "In Git, a submodule is a repository that is included in another repository as a subdirectory. Submodules allow you to keep a separate repository for a specific project within a larger project. However, there may be situations where you need to delete a submodule from your repository. In this lab, you will learn how to delete a submodule from a Git repository.",
+      "meta": {
+        "title": "How to Delete a Submodule in Git",
+        "description": "Learn the step-by-step process to remove a submodule from your Git repository.",
+        "keywords": "remove, repository, delete, git labs, git, submodule, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Delete a Submodule",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful deletion",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/submodule"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "删除子模块",
+      "description": "在Git中，子模块是作为子目录包含在另一个仓库中的仓库。子模块允许你在一个更大的项目中为特定项目保留一个单独的仓库。然而，可能会有需要从你的仓库中删除子模块的情况。在本实验中，你将学习如何从Git仓库中删除子模块。",
+      "meta": {
+        "title": "如何在Git中删除子模块",
+        "description": "学习从Git仓库中删除子模块的逐步过程。",
+        "keywords": "删除, 仓库, 移除, Git实验, Git, 子模块, Git练习场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除子模块",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证删除是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/submodule"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Agglomerative Clustering Metrics",
-  "description": "Agglomerative clustering is a hierarchical clustering method used to group similar objects together. It starts with each object as its own cluster, and then iteratively merges the most similar clusters together until a stopping criterion is met. In this lab, we will demonstrate the effect of different metrics on the hierarchical clustering using agglomerative clustering algorithm.",
-  "meta": {
-    "title": "Agglomerative Clustering Metrics: Hierarchical Clustering Techniques",
-    "description": "Explore the impact of different metrics on agglomerative clustering, a hierarchical clustering method, using waveform data.",
-    "keywords": "machine learning, waveform data, agglomerative clustering, scikit-learn, machine learning playground, scikit-learn playground, clustering metrics, data analysis, hierarchical clustering"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import libraries and generate waveform data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
-      },
-      {
-        "title": "Plot the ground-truth labeling",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot the distances",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot clustering results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-agglomerative-clustering-metrics.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-agglomerative-clustering-metrics.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Agglomerative Clustering Metrics",
+      "description": "Agglomerative clustering is a hierarchical clustering method used to group similar objects together. It starts with each object as its own cluster, and then iteratively merges the most similar clusters together until a stopping criterion is met. In this lab, we will demonstrate the effect of different metrics on the hierarchical clustering using agglomerative clustering algorithm.",
+      "meta": {
+        "title": "Agglomerative Clustering Metrics: Hierarchical Clustering Techniques",
+        "description": "Explore the impact of different metrics on agglomerative clustering, a hierarchical clustering method, using waveform data.",
+        "keywords": "machine learning, waveform data, agglomerative clustering, scikit-learn, machine learning playground, scikit-learn playground, clustering metrics, data analysis, hierarchical clustering"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import libraries and generate waveform data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
+          },
+          {
+            "title": "Plot the ground-truth labeling",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot the distances",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot clustering results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "凝聚聚类度量",
+      "description": "凝聚聚类是一种层次聚类方法，用于将相似的对象分组在一起。它从每个对象作为自己的一个聚类开始，然后迭代地将最相似的聚类合并在一起，直到满足停止准则。在本实验中，我们将展示不同度量对使用凝聚聚类算法进行层次聚类的影响。",
+      "meta": {
+        "title": "凝聚聚类度量：层次聚类技术",
+        "description": "使用波形数据探索不同度量对凝聚聚类（一种层次聚类方法）的影响。",
+        "keywords": "机器学习, 波形数据, 凝聚聚类, scikit-learn, 机器学习游乐场, scikit-learn游乐场, 聚类度量, 数据分析, 层次聚类"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库并生成波形数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
+          },
+          {
+            "title": "绘制真实标签",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制距离",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制聚类结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

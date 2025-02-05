@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "View Git Commit Summary Excluding Merges",
-  "description": "When working with Git, it's important to be able to view a summary of all the commits made to a repository. However, sometimes merge commits can clutter up the output and make it difficult to see the actual changes made. In this lab, you will learn how to view a short summary of all commits excluding merge commits.",
-  "meta": {
-    "title": "Viewing Git Commit Summaries | Excluding Merge Commits",
-    "description": "Learn how to view a short summary of all Git commits excluding merge commits, which can clutter the output and make it difficult to see actual code changes.",
-    "keywords": "Git, commit summary, merge commits, code changes, repository management"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "View a Short Summary of Commits without Merge Commits",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful view",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/merge"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "View Git Commit Summary Excluding Merges",
+      "description": "When working with Git, it's important to be able to view a summary of all the commits made to a repository. However, sometimes merge commits can clutter up the output and make it difficult to see the actual changes made. In this lab, you will learn how to view a short summary of all commits excluding merge commits.",
+      "meta": {
+        "title": "Viewing Git Commit Summaries | Excluding Merge Commits",
+        "description": "Learn how to view a short summary of all Git commits excluding merge commits, which can clutter the output and make it difficult to see actual code changes.",
+        "keywords": "Git, commit summary, merge commits, code changes, repository management"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "View a Short Summary of Commits without Merge Commits",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful view",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/merge"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "查看排除合并提交的Git提交摘要",
+      "description": "使用Git时，能够查看对存储库所做的所有提交的摘要非常重要。但是，有时合并提交会使输出变得混乱，难以查看实际所做的更改。在本实验中，你将学习如何查看排除合并提交后的所有提交的简短摘要。",
+      "meta": {
+        "title": "查看Git提交摘要 | 排除合并提交",
+        "description": "学习如何查看排除合并提交后的所有Git提交的简短摘要，合并提交会使输出混乱，难以查看实际代码更改。",
+        "keywords": "Git, 提交摘要, 合并提交, 代码更改, 存储库管理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查看排除合并提交的提交简短摘要",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功查看",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/merge"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

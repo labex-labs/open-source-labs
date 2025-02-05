@@ -1,63 +1,10 @@
 {
   "type": "lab",
-  "title": "Rendering React Lists Introduction",
-  "description": "Welcome to the React documentation! This lab will give you an introduction to rendering lists.",
-  "meta": {
-    "title": "Rendering React Lists",
-    "description": "Explore the fundamentals of rendering lists in React, including the use of JavaScript features like for loops and the array map() function.",
-    "keywords": "javascript, javascript practice, javascript practice online, for loop, javascript lab, react, rendering lists, javascript tutor, map"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Rendering Lists",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of App.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/components_props",
-          "react/css_in_react",
-          "react/jsx",
-          "react/list_keys"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "demo.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "open_network": true
@@ -67,5 +14,114 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/facebook/react/blob/main/LICENSE",
     "repo": "https://react.dev/learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "demo.zip",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rendering React Lists Introduction",
+      "description": "Welcome to the React documentation! This lab will give you an introduction to rendering lists.",
+      "meta": {
+        "title": "Rendering React Lists",
+        "description": "Explore the fundamentals of rendering lists in React, including the use of JavaScript features like for loops and the array map() function.",
+        "keywords": "javascript, javascript practice, javascript practice online, for loop, javascript lab, react, rendering lists, javascript tutor, map"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Rendering Lists",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of App.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/components_props",
+              "react/css_in_react",
+              "react/jsx",
+              "react/list_keys"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React 列表渲染入门",
+      "description": "欢迎来到 React 文档！本实验将向你介绍列表渲染。",
+      "meta": {
+        "title": "React 列表渲染",
+        "description": "探索 React 中列表渲染的基础知识，包括使用 for 循环和数组 map() 函数等 JavaScript 特性。",
+        "keywords": "JavaScript, JavaScript 练习, 在线 JavaScript 练习, for 循环, JavaScript 实验, React, 列表渲染, JavaScript 教程, map"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "渲染列表",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 在端口 8080 上运行项目。然后，你可以刷新 **Web 8080** 标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 App.js 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/components_props",
+              "react/css_in_react",
+              "react/jsx",
+              "react/list_keys"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

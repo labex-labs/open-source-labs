@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Image Segmentation with Hierarchical Clustering",
-  "description": "In this lab, we will learn how to use hierarchical clustering to segment a 2D image. Hierarchical clustering is a clustering algorithm that groups similar data points together. In the context of image segmentation, hierarchical clustering can be used to group pixels with similar color intensities together, which can be useful in identifying distinct regions or objects in an image.",
-  "meta": {
-    "title": "Image Segmentation | Hierarchical Clustering | Python",
-    "description": "Learn how to use hierarchical clustering to segment a 2D image in this Python programming tutorial. Explore image processing techniques and the scikit-learn library.",
-    "keywords": "image segmentation, hierarchical clustering, Python, scikit-learn, image processing"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Define Structure of the Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/feature_extraction"]
-      },
-      {
-        "title": "Compute Clustering",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/cluster"]
-      },
-      {
-        "title": "Plot the Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-coin-ward-segmentation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-coin-ward-segmentation.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Image Segmentation with Hierarchical Clustering",
+      "description": "In this lab, we will learn how to use hierarchical clustering to segment a 2D image. Hierarchical clustering is a clustering algorithm that groups similar data points together. In the context of image segmentation, hierarchical clustering can be used to group pixels with similar color intensities together, which can be useful in identifying distinct regions or objects in an image.",
+      "meta": {
+        "title": "Image Segmentation | Hierarchical Clustering | Python",
+        "description": "Learn how to use hierarchical clustering to segment a 2D image in this Python programming tutorial. Explore image processing techniques and the scikit-learn library.",
+        "keywords": "image segmentation, hierarchical clustering, Python, scikit-learn, image processing"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Define Structure of the Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "Compute Clustering",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster"]
+          },
+          {
+            "title": "Plot the Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用层次聚类进行图像分割",
+      "description": "在本实验中，我们将学习如何使用层次聚类对二维图像进行分割。层次聚类是一种将相似数据点分组在一起的聚类算法。在图像分割的背景下，层次聚类可用于将具有相似颜色强度的像素分组在一起，这在识别图像中不同的区域或对象时可能会很有用。",
+      "meta": {
+        "title": "图像分割 | 层次聚类 | Python",
+        "description": "在本Python编程教程中学习如何使用层次聚类对二维图像进行分割。探索图像处理技术和scikit-learn库。",
+        "keywords": "图像分割, 层次聚类, Python, scikit-learn, 图像处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "定义数据结构",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+          },
+          {
+            "title": "计算聚类",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

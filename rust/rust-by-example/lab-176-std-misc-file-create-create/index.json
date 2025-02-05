@@ -1,52 +1,10 @@
 {
   "type": "lab",
-  "title": "Create File with Rust Standard Library",
-  "description": "In this lab, we have a create function that opens a file in write-only mode. It either creates a new file or destroys the old content if the file already exists. The function uses Rust's standard library to handle file operations. The example provided demonstrates how to use the create function to write the contents of a static LOREM_IPSUM string to a file named 'lorem_ipsum.txt'. The output shows a successful write operation confirmation, and the contents of the file are displayed using the cat command.",
-  "meta": {
-    "title": "Rust Programming Tutorials | File Handling",
-    "description": "Learn how to create files and write content to them using Rust's standard library. Explore file handling techniques and understand the usage of the create function.",
-    "keywords": "Rust, Programming, File Handling, File Creation, Write to File, Standard Library"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "create",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/operator_overloading",
-          "rust/panic_usage",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -55,5 +13,101 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Create File with Rust Standard Library",
+      "description": "In this lab, we have a create function that opens a file in write-only mode. It either creates a new file or destroys the old content if the file already exists. The function uses Rust's standard library to handle file operations. The example provided demonstrates how to use the create function to write the contents of a static LOREM_IPSUM string to a file named 'lorem_ipsum.txt'. The output shows a successful write operation confirmation, and the contents of the file are displayed using the cat command.",
+      "meta": {
+        "title": "Rust Programming Tutorials | File Handling",
+        "description": "Learn how to create files and write content to them using Rust's standard library. Explore file handling techniques and understand the usage of the create function.",
+        "keywords": "Rust, Programming, File Handling, File Creation, Write to File, Standard Library"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "create",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/panic_usage",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Rust 标准库创建文件",
+      "description": "在本实验中，我们有一个以只写模式打开文件的创建函数。如果文件已存在，它会创建一个新文件或删除旧内容。该函数使用 Rust 的标准库来处理文件操作。提供的示例演示了如何使用创建函数将静态 LOREM_IPSUM 字符串的内容写入名为“lorem_ipsum.txt”的文件。输出显示了成功写入操作的确认信息，并使用 cat 命令显示文件的内容。",
+      "meta": {
+        "title": "Rust 编程教程 | 文件处理",
+        "description": "学习如何使用 Rust 的标准库创建文件并向其中写入内容。探索文件处理技术并了解创建函数的用法。",
+        "keywords": "Rust, 编程, 文件处理, 文件创建, 写入文件, 标准库"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/panic_usage",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

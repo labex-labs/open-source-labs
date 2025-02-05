@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Edit the Last Commit",
-  "description": "In this lab, you will learn how to edit the contents of the last Git commit without changing its commit message, which can be useful when you need to make small changes to a previous commit.",
-  "meta": {
-    "title": "Edit the Last Commit in Git",
-    "description": "Learn how to effortlessly edit the last commit in Git without changing the commit message.",
-    "keywords": "version control, amend, git labs, git, commit, git playground, edit"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Edit the Last Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful editing",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Edit the Last Commit",
+      "description": "In this lab, you will learn how to edit the contents of the last Git commit without changing its commit message, which can be useful when you need to make small changes to a previous commit.",
+      "meta": {
+        "title": "Edit the Last Commit in Git",
+        "description": "Learn how to effortlessly edit the last commit in Git without changing the commit message.",
+        "keywords": "version control, amend, git labs, git, commit, git playground, edit"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Edit the Last Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful editing",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "编辑上一次提交",
+      "description": "在本实验中，你将学习如何在不更改提交消息的情况下编辑最后一次 Git 提交的内容，当你需要对之前的提交进行小的更改时，这会很有用。",
+      "meta": {
+        "title": "在 Git 中编辑上一次提交",
+        "description": "学习如何在不更改提交消息的情况下轻松编辑 Git 中的最后一次提交。",
+        "keywords": "版本控制, 修正, Git 实验室, Git, 提交, Git 游乐场, 编辑"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "编辑上一次提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证编辑是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

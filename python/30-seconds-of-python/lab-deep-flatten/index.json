@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "Deep Flatten List",
-  "description": "In Python, a list can contain other lists as elements, and those lists can contain even more lists as elements, forming a nested structure. The process of flattening a nested list means to convert it into a one-dimensional list, where all the elements are at the same level. In this challenge, you will be asked to write a function that deep flattens a list, meaning that it will flatten all the nested lists recursively.",
-  "meta": {
-    "title": "Mastering Deep Flattening",
-    "description": "Explore the art of deep flattening nested lists in Python, a powerful technique for data manipulation and transformation.",
-    "keywords": "deep flattening, list transformation, python, data manipulation, nested lists"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Deep Flatten List",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Deep Flatten Python Script",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_deep_flatten.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "deep_flatten.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_deep_flatten.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "deep_flatten.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Deep Flatten List",
+      "description": "In Python, a list can contain other lists as elements, and those lists can contain even more lists as elements, forming a nested structure. The process of flattening a nested list means to convert it into a one-dimensional list, where all the elements are at the same level. In this challenge, you will be asked to write a function that deep flattens a list, meaning that it will flatten all the nested lists recursively.",
+      "meta": {
+        "title": "Mastering Deep Flattening",
+        "description": "Explore the art of deep flattening nested lists in Python, a powerful technique for data manipulation and transformation.",
+        "keywords": "deep flattening, list transformation, python, data manipulation, nested lists"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Deep Flatten List",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Deep Flatten Python Script",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "深度扁平化列表",
+      "description": "在Python中，列表可以包含其他列表作为元素，而这些列表又可以包含更多列表作为元素，从而形成嵌套结构。将嵌套列表扁平化的过程意味着将其转换为一维列表，其中所有元素都处于同一层级。在这个挑战中，你将被要求编写一个函数，对列表进行深度扁平化，即递归地扁平化所有嵌套列表。",
+      "meta": {
+        "title": "掌握深度扁平化",
+        "description": "探索Python中深度扁平化嵌套列表的技巧，这是一种用于数据处理和转换的强大技术。",
+        "keywords": "深度扁平化, 列表转换, Python, 数据处理, 嵌套列表"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "深度扁平化列表",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证深度扁平化Python脚本",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

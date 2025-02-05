@@ -1,0 +1,5 @@
+# 简介
+
+Python 是一种解释型高级编程语言。它通常被归类为 ["脚本语言"](https://en.wikipedia.org/wiki/Scripting_language)，并被认为与 Perl、Tcl 或 Ruby 等语言类似。Python 的语法在一定程度上受到 C 编程语言元素的启发。
+
+Python 由 Guido van Rossum 于 1990 年左右创建，他以 Monty Python 的名字为其命名。

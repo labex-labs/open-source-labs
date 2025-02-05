@@ -1,78 +1,10 @@
 {
   "type": "lab",
-  "title": "Recursive Feature Elimination with Cross-Validation",
-  "description": "In this lab, we will go through a step-by-step process of implementing Recursive Feature Elimination with Cross-Validation (RFECV) using scikit-learn. RFECV is used for feature selection, which is the process of selecting a subset of relevant features for use in model construction. We will use a classification task with 15 features, out of which 3 are informative, 2 are redundant, and 10 are non-informative.",
-  "meta": {
-    "title": "Recursive Feature Elimination | Cross-Validation | Scikit-learn",
-    "description": "Learn how to implement Recursive Feature Elimination with Cross-Validation (RFECV) using scikit-learn for feature selection in a classification task.",
-    "keywords": "Recursive Feature Elimination, Cross-Validation, Scikit-learn, Feature Selection, Classification"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Data generation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Model training and selection",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/feature_selection",
-          "sklearn/linear_model",
-          "sklearn/model_selection"
-        ]
-      },
-      {
-        "title": "Plot number of features vs. cross-validation scores",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-rfe-with-cross-validation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -81,5 +13,144 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-rfe-with-cross-validation.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Recursive Feature Elimination with Cross-Validation",
+      "description": "In this lab, we will go through a step-by-step process of implementing Recursive Feature Elimination with Cross-Validation (RFECV) using scikit-learn. RFECV is used for feature selection, which is the process of selecting a subset of relevant features for use in model construction. We will use a classification task with 15 features, out of which 3 are informative, 2 are redundant, and 10 are non-informative.",
+      "meta": {
+        "title": "Recursive Feature Elimination | Cross-Validation | Scikit-learn",
+        "description": "Learn how to implement Recursive Feature Elimination with Cross-Validation (RFECV) using scikit-learn for feature selection in a classification task.",
+        "keywords": "Recursive Feature Elimination, Cross-Validation, Scikit-learn, Feature Selection, Classification"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Data generation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Model training and selection",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_selection",
+              "sklearn/linear_model",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Plot number of features vs. cross-validation scores",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "带交叉验证的递归特征消除",
+      "description": "在本实验中，我们将逐步介绍如何使用scikit-learn实现带交叉验证的递归特征消除（RFECV）。RFECV用于特征选择，即选择相关特征的子集以用于模型构建的过程。我们将使用一个具有15个特征的分类任务，其中3个是信息性的，2个是冗余的，10个是非信息性的。",
+      "meta": {
+        "title": "递归特征消除 | 交叉验证 | Scikit-learn",
+        "description": "学习如何使用scikit-learn在分类任务中实现带交叉验证的递归特征消除（RFECV）进行特征选择。",
+        "keywords": "递归特征消除, 交叉验证, Scikit-learn, 特征选择, 分类"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据生成",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "模型训练与选择",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_selection",
+              "sklearn/linear_model",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "绘制特征数量与交叉验证分数的关系图",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,49 +1,10 @@
 {
   "type": "lab",
-  "title": "Binding and Destructuring in Rust",
-  "description": "In this lab, the concept of binding in Rust is explored, which allows for indirect access to variables and the ability to branch and use that variable without re-binding. The @ sigil in the match statement is used for binding values to names. Examples are provided, including how to bind values to a specific range and how to 'destructure' enum variants like Option.",
-  "meta": {
-    "title": "Binding and Destructuring in Rust: Mastering Indirect Variable Access",
-    "description": "Explore the power of binding and destructuring in Rust, enabling indirect access to variables and branching without re-binding.",
-    "keywords": "rust, destructuring, rust playground, binding, rust tutor, rust online compiler, rust commands, rust practice, variable access, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Binding",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/operator_overloading",
-          "rust/string_type"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -52,5 +13,95 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Binding and Destructuring in Rust",
+      "description": "In this lab, the concept of binding in Rust is explored, which allows for indirect access to variables and the ability to branch and use that variable without re-binding. The @ sigil in the match statement is used for binding values to names. Examples are provided, including how to bind values to a specific range and how to 'destructure' enum variants like Option.",
+      "meta": {
+        "title": "Binding and Destructuring in Rust: Mastering Indirect Variable Access",
+        "description": "Explore the power of binding and destructuring in Rust, enabling indirect access to variables and branching without re-binding.",
+        "keywords": "rust, destructuring, rust playground, binding, rust tutor, rust online compiler, rust commands, rust practice, variable access, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Binding",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/operator_overloading",
+              "rust/string_type"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 中的绑定与解构",
+      "description": "在本实验中，探索了 Rust 中的绑定概念，它允许间接访问变量，并能够在不重新绑定的情况下分支并使用该变量。match 语句中的 @ 符号用于将值绑定到名称。文中提供了示例，包括如何将值绑定到特定范围，以及如何“解构”像 Option 这样的枚举变体。",
+      "meta": {
+        "title": "Rust 中的绑定与解构：掌握间接变量访问",
+        "description": "探索 Rust 中绑定和解构的强大功能，实现间接变量访问和无需重新绑定的分支操作。",
+        "keywords": "Rust, 解构, Rust 在线游乐场, 绑定, Rust 教程, Rust 在线编译器, Rust 命令, Rust 练习, 变量访问, Rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "绑定",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/operator_overloading",
+              "rust/string_type"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Find Branches Containing a Commit",
-  "description": "In Git, branches are used to develop features or isolate changes made to a project. Sometimes, you may need to find out which branches contain a specific commit. This lab will test your ability to use Git commands to find branches containing a commit.",
-  "meta": {
-    "title": "Git Branches | Commit Tracking | Git Playground",
-    "description": "Learn how to use Git commands to find all branches that contain a specific commit in the Git Playground repository.",
-    "keywords": "git, branches, commits, git commands, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Find Branches Containing a Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify if found successfully",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/branch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Find Branches Containing a Commit",
+      "description": "In Git, branches are used to develop features or isolate changes made to a project. Sometimes, you may need to find out which branches contain a specific commit. This lab will test your ability to use Git commands to find branches containing a commit.",
+      "meta": {
+        "title": "Git Branches | Commit Tracking | Git Playground",
+        "description": "Learn how to use Git commands to find all branches that contain a specific commit in the Git Playground repository.",
+        "keywords": "git, branches, commits, git commands, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Find Branches Containing a Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify if found successfully",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "查找包含特定提交的分支",
+      "description": "在Git中，分支用于开发功能或隔离对项目所做的更改。有时，你可能需要找出哪些分支包含特定的提交。本实验将测试你使用Git命令查找包含提交的分支的能力。",
+      "meta": {
+        "title": "Git分支 | 提交跟踪 | Git游乐场",
+        "description": "了解如何使用Git命令在Git游乐场仓库中查找包含特定提交的所有分支。",
+        "keywords": "git, 分支, 提交, Git命令, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查找包含特定提交的分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功找到",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

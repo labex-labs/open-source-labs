@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Outlier Detection Using Scikit-Learn Algorithms",
-  "description": "This lab demonstrates how to use Scikit-Learn to perform outlier detection on classical anomaly detection datasets using the local outlier factor (LOF) and isolation forest (IForest) algorithms. The performance of the algorithms is assessed in an outlier detection context, and ROC curves are used to plot the results.",
-  "meta": {
-    "title": "Outlier Detection | Scikit-Learn | Anomaly Detection",
-    "description": "Learn how to use Scikit-Learn for outlier detection on classical anomaly datasets using LOF and IForest algorithms. Assess algorithm performance and visualize ROC curves.",
-    "keywords": "Outlier Detection, Scikit-Learn, Anomaly Detection, LOF, IForest, ROC Curves"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Data Preprocessing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/preprocessing"]
-      },
-      {
-        "title": "Outlier Prediction Function",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/ensemble", "sklearn/neighbors"]
-      },
-      {
-        "title": "Plot and Interpret Results",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/metrics"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-outlier-detection-bench.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,142 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-outlier-detection-bench.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Outlier Detection Using Scikit-Learn Algorithms",
+      "description": "This lab demonstrates how to use Scikit-Learn to perform outlier detection on classical anomaly detection datasets using the local outlier factor (LOF) and isolation forest (IForest) algorithms. The performance of the algorithms is assessed in an outlier detection context, and ROC curves are used to plot the results.",
+      "meta": {
+        "title": "Outlier Detection | Scikit-Learn | Anomaly Detection",
+        "description": "Learn how to use Scikit-Learn for outlier detection on classical anomaly datasets using LOF and IForest algorithms. Assess algorithm performance and visualize ROC curves.",
+        "keywords": "Outlier Detection, Scikit-Learn, Anomaly Detection, LOF, IForest, ROC Curves"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Data Preprocessing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Outlier Prediction Function",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble", "sklearn/neighbors"]
+          },
+          {
+            "title": "Plot and Interpret Results",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Scikit-Learn算法进行离群值检测",
+      "description": "本实验展示了如何使用Scikit-Learn，通过局部离群因子（LOF）和孤立森林（IForest）算法，对经典异常检测数据集执行离群值检测。在离群值检测的背景下评估了算法的性能，并使用ROC曲线绘制了结果。",
+      "meta": {
+        "title": "离群值检测 | Scikit-Learn | 异常检测",
+        "description": "了解如何使用Scikit-Learn，通过LOF和IForest算法对经典异常数据集进行离群值检测。评估算法性能并可视化ROC曲线。",
+        "keywords": "离群值检测, Scikit-Learn, 异常检测, LOF, IForest, ROC曲线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据预处理",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "异常值预测函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble", "sklearn/neighbors"]
+          },
+          {
+            "title": "绘制并解读结果",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/metrics"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

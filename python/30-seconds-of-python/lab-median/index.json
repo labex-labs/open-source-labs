@@ -1,67 +1,10 @@
 {
   "type": "lab",
-  "title": "Median Calculation with Python",
-  "description": "In statistics, the median is a measure of central tendency that represents the middle value of a dataset. It is the value separating the higher half from the lower half of a data sample. In this challenge, you will be required to write a Python function that finds the median of a list of numbers.",
-  "meta": {
-    "title": "Python | Median | Statistics",
-    "description": "Learn how to find the median of a list of numbers using Python. This programming tutorial covers the statistical concept of median and provides a step-by-step guide to implement a custom median function.",
-    "keywords": "Python, Median, Statistics, Programming, Data Analysis"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Median Challenge",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/function_definition",
-          "python/lists",
-          "python/numeric_types",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_median.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "median.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -70,5 +13,117 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_median.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "median.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Median Calculation with Python",
+      "description": "In statistics, the median is a measure of central tendency that represents the middle value of a dataset. It is the value separating the higher half from the lower half of a data sample. In this challenge, you will be required to write a Python function that finds the median of a list of numbers.",
+      "meta": {
+        "title": "Python | Median | Statistics",
+        "description": "Learn how to find the median of a list of numbers using Python. This programming tutorial covers the statistical concept of median and provides a step-by-step guide to implement a custom median function.",
+        "keywords": "Python, Median, Statistics, Programming, Data Analysis"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Median Challenge",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Python进行中位数计算",
+      "description": "在统计学中，中位数是一种集中趋势度量，它代表数据集的中间值。它是将数据样本的上半部分与下半部分分开的值。在这个挑战中，你需要编写一个Python函数来找到一组数字的中位数。",
+      "meta": {
+        "title": "Python | 中位数 | 统计学",
+        "description": "学习如何使用Python找到一组数字的中位数。本编程教程涵盖了中位数的统计概念，并提供了实现自定义中位数函数的分步指南。",
+        "keywords": "Python, 中位数, 统计学, 编程, 数据分析"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "中位数挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

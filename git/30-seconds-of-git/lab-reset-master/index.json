@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Reset Local Master Branch to Match Remote",
-  "description": "When working with Git, it is common to have a local branch that is out of sync with its remote counterpart. This can happen when changes are made to the remote branch that are not reflected in the local branch. In such cases, it is necessary to reset the local branch to match the remote branch. This lab will guide you through the steps to reset the local master branch to match the one on the remote.",
-  "meta": {
-    "title": "Git Reset Local Master Branch | Programming Tutorials",
-    "description": "Learn how to reset your local Git master branch to match the remote branch, ensuring your local repository is up-to-date with the latest changes.",
-    "keywords": "Git, Git reset, Git master branch, Programming tutorials, Remote repository, Local repository"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Reset Local Master Branch to Match Remote",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that the reset was successful",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/reset"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Reset Local Master Branch to Match Remote",
+      "description": "When working with Git, it is common to have a local branch that is out of sync with its remote counterpart. This can happen when changes are made to the remote branch that are not reflected in the local branch. In such cases, it is necessary to reset the local branch to match the remote branch. This lab will guide you through the steps to reset the local master branch to match the one on the remote.",
+      "meta": {
+        "title": "Git Reset Local Master Branch | Programming Tutorials",
+        "description": "Learn how to reset your local Git master branch to match the remote branch, ensuring your local repository is up-to-date with the latest changes.",
+        "keywords": "Git, Git reset, Git master branch, Programming tutorials, Remote repository, Local repository"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Reset Local Master Branch to Match Remote",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that the reset was successful",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/reset"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将本地主分支重置为与远程分支匹配",
+      "description": "使用 Git 时，本地分支与其远程分支不同步是很常见的情况。当对远程分支进行了更改而本地分支未反映这些更改时，就会发生这种情况。在这种情况下，有必要重置本地分支以使其与远程分支匹配。本实验将指导你完成将本地主分支重置为与远程分支匹配的步骤。",
+      "meta": {
+        "title": "Git 重置本地主分支 | 编程教程",
+        "description": "学习如何将本地 Git 主分支重置为与远程分支匹配，确保你的本地仓库与最新更改保持同步。",
+        "keywords": "Git、Git 重置、Git 主分支、编程教程、远程仓库、本地仓库"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将本地主分支重置为与远程分支匹配",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证重置是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/reset"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

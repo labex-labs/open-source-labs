@@ -1,128 +1,10 @@
 {
   "type": "lab",
-  "title": "Attribute Access and Bound Methods",
-  "description": "In this lab, you will learn about attribute access, how to use getattr(), setattr(), and related functions, and experiment with bound methods.",
-  "meta": {
-    "title": "Python Attribute Access | Object System Fundamentals",
-    "description": "Learn the core operations of Python's object system, including attribute getting, setting, and deleting. Explore getattr(), setattr(), and related functions for effective object manipulation.",
-    "keywords": "Python, object system, attribute access, getattr, setattr, delattr, hasattr"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "The Three Operations",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Attribute Manipulation",
-            "file": "verify1.sh",
-            "hint": "Please run the python code in step 1.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/python_shell",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      },
-      {
-        "title": "Using getattr()",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python History for Getattr",
-            "file": "verify2.sh",
-            "hint": "Please run the python code in step 2.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/for_loops",
-          "python/lists",
-          "python/python_shell",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Table Output",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Python Files and History",
-            "file": "verify3.sh",
-            "hint": "Please create the 'tableformat.py' file and implement the 'print_table()' function.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples"
-        ],
-        "solutions": ["tableformat.py"]
-      },
-      {
-        "title": "Bound Methods",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Python History for __self__ and __func__",
-            "file": "verify4.sh",
-            "hint": "Please run the python code in step 4.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/python_shell",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -131,5 +13,239 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Attribute Access and Bound Methods",
+      "description": "In this lab, you will learn about attribute access, how to use getattr(), setattr(), and related functions, and experiment with bound methods.",
+      "meta": {
+        "title": "Python Attribute Access | Object System Fundamentals",
+        "description": "Learn the core operations of Python's object system, including attribute getting, setting, and deleting. Explore getattr(), setattr(), and related functions for effective object manipulation.",
+        "keywords": "Python, object system, attribute access, getattr, setattr, delattr, hasattr"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "The Three Operations",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Attribute Manipulation",
+                "file": "verify1.sh",
+                "hint": "Please run the python code in step 1.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/python_shell",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "Using getattr()",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python History for Getattr",
+                "file": "verify2.sh",
+                "hint": "Please run the python code in step 2.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/for_loops",
+              "python/lists",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Table Output",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Python Files and History",
+                "file": "verify3.sh",
+                "hint": "Please create the 'tableformat.py' file and implement the 'print_table()' function.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples"
+            ],
+            "solutions": ["tableformat.py"]
+          },
+          {
+            "title": "Bound Methods",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Python History for __self__ and __func__",
+                "file": "verify4.sh",
+                "hint": "Please run the python code in step 4.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "属性访问与绑定方法",
+      "description": "在本实验中，你将学习属性访问、如何使用getattr()、setattr()及相关函数，并体验绑定方法。",
+      "meta": {
+        "title": "Python属性访问 | 对象系统基础",
+        "description": "学习Python对象系统的核心操作，包括属性获取、设置和删除。探索getattr()、setattr()及相关函数以进行有效的对象操作。",
+        "keywords": "Python, 对象系统, 属性访问, getattr, setattr, delattr, hasattr"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "三种操作",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python属性操作",
+                "file": "verify1.sh",
+                "hint": "请运行步骤1中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/python_shell",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "使用getattr()",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python中getattr的使用情况",
+                "file": "verify2.sh",
+                "hint": "请运行步骤2中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/for_loops",
+              "python/lists",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "表格输出",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python文件和历史记录",
+                "file": "verify3.sh",
+                "hint": "请创建'tableformat.py'文件并实现'print_table()'函数。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples"
+            ],
+            "solutions": ["tableformat.py"]
+          },
+          {
+            "title": "绑定方法",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证关于__self__和__func__的Python历史记录",
+                "file": "verify4.sh",
+                "hint": "请运行步骤4中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

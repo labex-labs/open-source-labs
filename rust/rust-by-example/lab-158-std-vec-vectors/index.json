@@ -1,53 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Vectors: Resizable Array Essentials",
-  "description": "In this lab, we will be learning about vectors, which are re-sizable arrays in Rust that can grow or shrink at any time. A vector is represented using three parameters: a pointer to the data, length, and capacity. The capacity indicates how much memory is reserved for the vector, and when the length surpasses the capacity, the vector is reallocated with a larger capacity. We can collect iterators into vectors using the collect method, initialize vectors using the vec! macro, insert new elements at the end using the push method, and get the number of elements using the len method. We can also access elements using indexing, remove the last element using the pop method, and iterate over the vector using the iter or iter_mut methods. Additionally, there are more methods available for vectors in the std::vec module.",
-  "meta": {
-    "title": "Rust Vectors: Resizable Arrays | Programming Tutorials",
-    "description": "Learn about Rust vectors, which are resizable arrays that can grow or shrink at any time. Explore vector operations like collecting iterators, initializing, inserting, and iterating over vectors.",
-    "keywords": "Rust, Vectors, Arrays, Programming, Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Vectors",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -56,5 +13,103 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Vectors: Resizable Array Essentials",
+      "description": "In this lab, we will be learning about vectors, which are re-sizable arrays in Rust that can grow or shrink at any time. A vector is represented using three parameters: a pointer to the data, length, and capacity. The capacity indicates how much memory is reserved for the vector, and when the length surpasses the capacity, the vector is reallocated with a larger capacity. We can collect iterators into vectors using the collect method, initialize vectors using the vec! macro, insert new elements at the end using the push method, and get the number of elements using the len method. We can also access elements using indexing, remove the last element using the pop method, and iterate over the vector using the iter or iter_mut methods. Additionally, there are more methods available for vectors in the std::vec module.",
+      "meta": {
+        "title": "Rust Vectors: Resizable Arrays | Programming Tutorials",
+        "description": "Learn about Rust vectors, which are resizable arrays that can grow or shrink at any time. Explore vector operations like collecting iterators, initializing, inserting, and iterating over vectors.",
+        "keywords": "Rust, Vectors, Arrays, Programming, Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Vectors",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust向量：可调整大小数组基础",
+      "description": "在本实验中，我们将学习向量，它是Rust中可重新调整大小的数组，能够随时增长或收缩。向量由三个参数表示：指向数据的指针、长度和容量。容量表示为向量保留了多少内存，当长度超过容量时，向量会重新分配更大的容量。我们可以使用collect方法将迭代器收集到向量中，使用vec!宏初始化向量，使用push方法在末尾插入新元素，并使用len方法获取元素数量。我们还可以使用索引访问元素，使用pop方法删除最后一个元素，并使用iter或iter_mut方法遍历向量。此外，std::vec模块中还有更多适用于向量的方法。",
+      "meta": {
+        "title": "Rust向量：可调整大小数组 | 编程教程",
+        "description": "了解Rust向量，它是可随时增长或收缩的可调整大小数组。探索向量操作，如收集迭代器、初始化、插入和遍历向量。",
+        "keywords": "Rust, 向量, 数组, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "向量",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

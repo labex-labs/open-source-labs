@@ -1,62 +1,10 @@
 {
   "type": "lab",
-  "title": "Reverse Iteration in Python",
-  "description": "In Python, we can use a for loop to iterate over a list and execute a function for each element. However, what if we want to start from the last element and work our way backwards? In this challenge, you will need to create a function that executes the provided function once for each list element, starting from the list's last element.",
-  "meta": {
-    "title": "Python Reverse Iteration | Programming Tutorials",
-    "description": "Learn how to iterate over a list in Python in reverse order using a custom function. Enhance your programming skills with this insightful tutorial.",
-    "keywords": "Python, Reverse Iteration, Programming Tutorials, List Manipulation, Function Execution"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Execute function for each list element in reverse",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python 3 Test for Each Right",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_for_each_right.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "for_each_right.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -65,5 +13,107 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_for_each_right.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "for_each_right.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Reverse Iteration in Python",
+      "description": "In Python, we can use a for loop to iterate over a list and execute a function for each element. However, what if we want to start from the last element and work our way backwards? In this challenge, you will need to create a function that executes the provided function once for each list element, starting from the list's last element.",
+      "meta": {
+        "title": "Python Reverse Iteration | Programming Tutorials",
+        "description": "Learn how to iterate over a list in Python in reverse order using a custom function. Enhance your programming skills with this insightful tutorial.",
+        "keywords": "Python, Reverse Iteration, Programming Tutorials, List Manipulation, Function Execution"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Execute function for each list element in reverse",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python 3 Test for Each Right",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Python中的反向迭代",
+      "description": "在Python中，我们可以使用for循环遍历列表并为每个元素执行一个函数。但是，如果我们想从最后一个元素开始并反向进行呢？在这个挑战中，你需要创建一个函数，该函数从列表的最后一个元素开始，为每个列表元素执行一次提供的函数。",
+      "meta": {
+        "title": "Python反向迭代 | 编程教程",
+        "description": "学习如何使用自定义函数在Python中按反向顺序遍历列表。通过这个有见地的教程提升你的编程技能。",
+        "keywords": "Python, 反向迭代, 编程教程, 列表操作, 函数执行"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "反向为每个列表元素执行函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python 3的从右至左逐个元素测试",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

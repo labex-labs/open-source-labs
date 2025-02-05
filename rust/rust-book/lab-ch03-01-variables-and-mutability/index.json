@@ -1,86 +1,10 @@
 {
   "type": "lab",
-  "title": "Variables and Mutability",
-  "description": "In this lab, we explore the concept of mutability in Rust, discussing how variables are immutable by default and how to make them mutable using the mut keyword, and highlighting the importance of immutability for safety and concurrency while still acknowledging the usefulness of mutability in certain situations.",
-  "meta": {
-    "title": "Exploring Rust's Variables and Mutability",
-    "description": "Learn about the concepts of immutability and mutability in Rust programming language.",
-    "keywords": "rust playground, mutability, variables, rust online compiler, rust tutor, rust commands, rust practice, rust online playground, rust online, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Variables and Mutability",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Cargo Run in Project Variables Directory",
-            "file": "verify1.sh",
-            "hint": "variables project needs to be created and compiled successfully.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/mutable_variables",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Constants",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/constants_usage",
-          "rust/expressions_statements",
-          "rust/integer_types",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Shadowing",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Cargo Run Command Execution",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -89,5 +13,169 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Variables and Mutability",
+      "description": "In this lab, we explore the concept of mutability in Rust, discussing how variables are immutable by default and how to make them mutable using the mut keyword, and highlighting the importance of immutability for safety and concurrency while still acknowledging the usefulness of mutability in certain situations.",
+      "meta": {
+        "title": "Exploring Rust's Variables and Mutability",
+        "description": "Learn about the concepts of immutability and mutability in Rust programming language.",
+        "keywords": "rust playground, mutability, variables, rust online compiler, rust tutor, rust commands, rust practice, rust online playground, rust online, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Variables and Mutability",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Cargo Run in Project Variables Directory",
+                "file": "verify1.sh",
+                "hint": "variables project needs to be created and compiled successfully.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/mutable_variables",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Constants",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/constants_usage",
+              "rust/expressions_statements",
+              "rust/integer_types",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Shadowing",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Cargo Run Command Execution",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "变量与可变性",
+      "description": "在本实验中，我们探讨Rust中的可变性概念，讨论变量默认情况下如何是不可变的，以及如何使用mut关键字使其可变，并强调不可变性对于安全性和并发性的重要性，同时也承认可变性在某些情况下的有用性。",
+      "meta": {
+        "title": "探索Rust的变量与可变性",
+        "description": "了解Rust编程语言中的不可变性和可变性概念。",
+        "keywords": "Rust游乐场, 可变性, 变量, Rust在线编译器, Rust教程, Rust命令, Rust练习, Rust在线游乐场, Rust在线, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "变量与可变性",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在项目变量目录中验证Cargo Run",
+                "file": "verify1.sh",
+                "hint": "需要成功创建并编译变量项目。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/mutable_variables",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "常量",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/constants_usage",
+              "rust/expressions_statements",
+              "rust/integer_types",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "隐藏",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Cargo Run命令执行情况",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

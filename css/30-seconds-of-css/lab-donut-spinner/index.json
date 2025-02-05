@@ -1,79 +1,10 @@
 {
   "type": "lab",
-  "title": "CSS Techniques for Visually Appealing Designs",
-  "description": "In this lab, we will delve into the world of CSS programming and explore various techniques to enhance the design and layout of web pages. Through a series of exercises and challenges, you will learn how to use CSS selectors, properties, and values to style HTML elements and create visually appealing web pages. By the end of the lab, you will have gained a solid foundation in CSS programming and be able to apply your newfound knowledge to create stunning websites.",
-  "meta": {
-    "title": "Visually Appealing Designs with CSS Techniques",
-    "description": "Explore CSS programming for creating stunning web pages with visually appealing designs.",
-    "keywords": "css, web design, layout, css practice, selectors, css playground, css lab, css exercises, visual appeal"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Donut Spinner",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/animations",
-          "css/borders",
-          "css/colors",
-          "css/display_property",
-          "css/mixins",
-          "css/selectors",
-          "css/transformations",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -82,5 +13,141 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "CSS Techniques for Visually Appealing Designs",
+      "description": "In this lab, we will delve into the world of CSS programming and explore various techniques to enhance the design and layout of web pages. Through a series of exercises and challenges, you will learn how to use CSS selectors, properties, and values to style HTML elements and create visually appealing web pages. By the end of the lab, you will have gained a solid foundation in CSS programming and be able to apply your newfound knowledge to create stunning websites.",
+      "meta": {
+        "title": "Visually Appealing Designs with CSS Techniques",
+        "description": "Explore CSS programming for creating stunning web pages with visually appealing designs.",
+        "keywords": "css, web design, layout, css practice, selectors, css playground, css lab, css exercises, visual appeal"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Donut Spinner",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/animations",
+              "css/borders",
+              "css/colors",
+              "css/display_property",
+              "css/mixins",
+              "css/selectors",
+              "css/transformations",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "用 CSS 技术打造视觉吸引力的设计",
+      "description": "在本实验中，我们将深入探索 CSS 编程的世界，并探究各种提升网页设计与布局的技术。通过一系列练习与挑战，你将学会如何运用 CSS 选择器、属性和值来为 HTML 元素设置样式，从而创建出具有视觉吸引力的网页。在实验结束时，你将在 CSS 编程方面打下坚实基础，并能够运用新学到的知识创建出令人惊艳的网站。",
+      "meta": {
+        "title": "运用 CSS 技术实现视觉吸引力的设计",
+        "description": "探索通过 CSS 编程创建具有视觉吸引力的惊艳网页。",
+        "keywords": "CSS, 网页设计, 布局, CSS 实践, 选择器, CSS 游乐场, CSS 实验, CSS 练习, 视觉吸引力"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "甜甜圈加载指示器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”在端口 8080 上运行网络服务。然后，你可以刷新 **Web 8080** 标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 index.html 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 style.css 修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/animations",
+              "css/borders",
+              "css/colors",
+              "css/display_property",
+              "css/mixins",
+              "css/selectors",
+              "css/transformations",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

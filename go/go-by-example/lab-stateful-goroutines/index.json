@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Concurrent Goroutine Synchronization",
-  "description": "This lab aims to demonstrate how to use channels and goroutines to synchronize access to shared state across multiple goroutines.",
-  "meta": {
-    "title": "Concurrent Programming | Goroutines | Channels | Synchronization",
-    "description": "This lab demonstrates the use of channels and goroutines to synchronize access to shared state across multiple goroutines, showcasing the concept of stateful goroutines and the communication-based approach in concurrent programming.",
-    "keywords": "concurrent programming, goroutines, channels, synchronization, shared state, race conditions, data corruption"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Stateful Goroutines",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Goroutine-Based State Management Example",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/stateful_goroutines"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "stateful-goroutines.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "stateful-goroutines.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Concurrent Goroutine Synchronization",
+      "description": "This lab aims to demonstrate how to use channels and goroutines to synchronize access to shared state across multiple goroutines.",
+      "meta": {
+        "title": "Concurrent Programming | Goroutines | Channels | Synchronization",
+        "description": "This lab demonstrates the use of channels and goroutines to synchronize access to shared state across multiple goroutines, showcasing the concept of stateful goroutines and the communication-based approach in concurrent programming.",
+        "keywords": "concurrent programming, goroutines, channels, synchronization, shared state, race conditions, data corruption"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Stateful Goroutines",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Goroutine-Based State Management Example",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/stateful_goroutines"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "并发 Goroutine 同步",
+      "description": "本实验旨在演示如何使用通道和 goroutine 来同步多个 goroutine 对共享状态的访问。",
+      "meta": {
+        "title": "并发编程 | Goroutines | 通道 | 同步",
+        "description": "本实验展示了如何使用通道和 goroutine 来同步多个 goroutine 对共享状态的访问，展示了有状态 goroutine 的概念以及并发编程中基于通信的方法。",
+        "keywords": "并发编程, goroutines, 通道, 同步, 共享状态, 竞态条件, 数据损坏"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "有状态的 Goroutine",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证基于 Goroutine 的状态管理示例",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/stateful_goroutines"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

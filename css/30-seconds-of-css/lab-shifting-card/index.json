@@ -1,95 +1,10 @@
 {
   "type": "lab",
-  "title": "Responsive Web Design with CSS",
-  "description": "In this lab, we will learn how to apply CSS properties and selectors to create visually appealing and responsive web pages. You will gain hands-on experience with the latest CSS features, including flexbox, grid, transitions, and animations. By the end of this lab, you will be able to create dynamic layouts, interactive components, and engaging user experiences using CSS.",
-  "meta": {
-    "title": "Mastering CSS: Responsive Web Design | Interactive Components",
-    "description": "Learn how to create visually appealing and responsive web pages using the latest CSS features, including flexbox, grid, transitions, and animations.",
-    "keywords": "CSS, Responsive Design, Flexbox, Grid, Transitions, Animations, Web Development"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Shifting Card",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-4.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/backgrounds",
-          "css/borders",
-          "css/box_model",
-          "css/colors",
-          "css/display_property",
-          "css/flexbox",
-          "css/margin_and_padding",
-          "css/selectors",
-          "css/text_styling",
-          "css/transformations",
-          "css/transitions",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -98,5 +13,168 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Responsive Web Design with CSS",
+      "description": "In this lab, we will learn how to apply CSS properties and selectors to create visually appealing and responsive web pages. You will gain hands-on experience with the latest CSS features, including flexbox, grid, transitions, and animations. By the end of this lab, you will be able to create dynamic layouts, interactive components, and engaging user experiences using CSS.",
+      "meta": {
+        "title": "Mastering CSS: Responsive Web Design | Interactive Components",
+        "description": "Learn how to create visually appealing and responsive web pages using the latest CSS features, including flexbox, grid, transitions, and animations.",
+        "keywords": "CSS, Responsive Design, Flexbox, Grid, Transitions, Animations, Web Development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Shifting Card",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-4.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/flexbox",
+              "css/margin_and_padding",
+              "css/selectors",
+              "css/text_styling",
+              "css/transformations",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 CSS 进行响应式网页设计",
+      "description": "在本实验中，我们将学习如何应用 CSS 属性和选择器来创建视觉上吸引人且响应式的网页。你将亲身体验最新的 CSS 特性，包括弹性盒模型（Flexbox）、网格布局（Grid）、过渡效果（Transitions）和动画效果（Animations）。在本实验结束时，你将能够使用 CSS 创建动态布局、交互式组件以及引人入胜的用户体验。",
+      "meta": {
+        "title": "掌握 CSS：响应式网页设计 | 交互式组件",
+        "description": "学习如何使用最新的 CSS 特性，包括弹性盒模型（Flexbox）、网格布局（Grid）、过渡效果（Transitions）和动画效果（Animations）来创建视觉上吸引人且响应式的网页。",
+        "keywords": "CSS, 响应式设计, 弹性盒模型, 网格布局, 过渡效果, 动画效果, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "翻转卡片",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 index.html 的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 style.css 的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 的修改状态",
+                "file": "verify1-4.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/flexbox",
+              "css/margin_and_padding",
+              "css/selectors",
+              "css/text_styling",
+              "css/transformations",
+              "css/transitions",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

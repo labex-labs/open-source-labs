@@ -1,82 +1,10 @@
 {
   "type": "lab",
-  "title": "Expandable Object Tree View",
-  "description": "In this lab, we will learn how to create an expandable object tree view in React. This component is useful for displaying complex data structures in a structured and collapsible format. We will use the useState hook and recursion to render a tree view of a JSON object or array with collapsible content. By the end of this lab, you will be able to create and customize a tree view component to display your data in a clear and organized way.",
-  "meta": {
-    "title": "Expandable Object Tree View: Mastering React Data Visualization",
-    "description": "Discover how to create a collapsible, interactive tree view for displaying complex data structures in React.",
-    "keywords": "collapsible, object, data visualization, react, tree view"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Expandable Object Tree View",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/conditional_render",
-          "react/event_handling",
-          "react/hooks",
-          "react/jsx",
-          "react/list_keys",
-          "react/use_state_reducer"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -85,5 +13,142 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Expandable Object Tree View",
+      "description": "In this lab, we will learn how to create an expandable object tree view in React. This component is useful for displaying complex data structures in a structured and collapsible format. We will use the useState hook and recursion to render a tree view of a JSON object or array with collapsible content. By the end of this lab, you will be able to create and customize a tree view component to display your data in a clear and organized way.",
+      "meta": {
+        "title": "Expandable Object Tree View: Mastering React Data Visualization",
+        "description": "Discover how to create a collapsible, interactive tree view for displaying complex data structures in React.",
+        "keywords": "collapsible, object, data visualization, react, tree view"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Expandable Object Tree View",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/conditional_render",
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/list_keys",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "可展开对象树视图",
+      "description": "在本实验中，我们将学习如何在 React 中创建一个可展开的对象树视图。此组件对于以结构化和可折叠的格式显示复杂数据结构非常有用。我们将使用 `useState` 钩子和递归，以呈现具有可折叠内容的 JSON 对象或数组的树视图。在本实验结束时，你将能够创建并自定义一个树视图组件，以清晰、有条理的方式显示你的数据。",
+      "meta": {
+        "title": "可展开对象树视图：掌握 React 数据可视化",
+        "description": "探索如何在 React 中创建一个可折叠、交互式的树视图，用于显示复杂数据结构。",
+        "keywords": "可折叠, 对象, 数据可视化, React, 树视图"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "可展开对象树视图",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 style.css 修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/conditional_render",
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/list_keys",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,60 +1,10 @@
 {
   "type": "lab",
-  "title": "Repeat String with Python Operator",
-  "description": "In Python, we can use the * operator to repeat a string a certain number of times. This can be useful in many situations, such as when we need to create a string with a specific number of characters or when we need to repeat a certain pattern.",
-  "meta": {
-    "title": "Python String Manipulation | Repeat String",
-    "description": "Learn how to use the Python * operator to repeat a string a certain number of times. Discover a function to repeat a string n times.",
-    "keywords": "python, string, repeat, manipulation, function"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Repeat String",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_n_times_string.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "n_times_string.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -63,5 +13,103 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_n_times_string.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "n_times_string.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Repeat String with Python Operator",
+      "description": "In Python, we can use the * operator to repeat a string a certain number of times. This can be useful in many situations, such as when we need to create a string with a specific number of characters or when we need to repeat a certain pattern.",
+      "meta": {
+        "title": "Python String Manipulation | Repeat String",
+        "description": "Learn how to use the Python * operator to repeat a string a certain number of times. Discover a function to repeat a string n times.",
+        "keywords": "python, string, repeat, manipulation, function"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Repeat String",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Python 运算符重复字符串",
+      "description": "在 Python 中，我们可以使用 * 运算符将字符串重复特定的次数。这在许多情况下都很有用，例如当我们需要创建具有特定字符数的字符串时，或者当我们需要重复某个模式时。",
+      "meta": {
+        "title": "Python 字符串操作 | 重复字符串",
+        "description": "学习如何使用 Python * 运算符将字符串重复特定的次数。探索一个将字符串重复 n 次的函数。",
+        "keywords": "python, 字符串, 重复, 操作, 函数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "重复字符串",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python 脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

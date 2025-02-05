@@ -1,62 +1,10 @@
 {
   "type": "lab",
-  "title": "Remove List Elements from the End",
-  "description": "In Python, you can remove elements from a list using various methods. One such method is to remove elements from the end of the list. In this challenge, you will write a function that removes n elements from the end of a list.",
-  "meta": {
-    "title": "Python | List Manipulation | Remove Elements from End",
-    "description": "Learn how to remove elements from the end of a list in Python. Explore the take_right() function and its usage with examples.",
-    "keywords": "Python, list manipulation, remove elements, end of list, take_right"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Remove List Elements from the End",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Student's Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_take_right.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "take_right.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -65,5 +13,107 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_take_right.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "take_right.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Remove List Elements from the End",
+      "description": "In Python, you can remove elements from a list using various methods. One such method is to remove elements from the end of the list. In this challenge, you will write a function that removes n elements from the end of a list.",
+      "meta": {
+        "title": "Python | List Manipulation | Remove Elements from End",
+        "description": "Learn how to remove elements from the end of a list in Python. Explore the take_right() function and its usage with examples.",
+        "keywords": "Python, list manipulation, remove elements, end of list, take_right"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Remove List Elements from the End",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Student's Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "从列表末尾移除元素",
+      "description": "在Python中，你可以使用各种方法从列表中移除元素。其中一种方法是从列表末尾移除元素。在这个挑战中，你将编写一个函数，从列表末尾移除n个元素。",
+      "meta": {
+        "title": "Python | 列表操作 | 从末尾移除元素",
+        "description": "学习如何在Python中从列表末尾移除元素。探索take_right()函数及其使用示例。",
+        "keywords": "Python, 列表操作, 移除元素, 列表末尾, take_right"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从列表末尾移除元素",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生的Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

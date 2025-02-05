@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Configure the git text editor",
-  "description": "When using Git, sometimes you need to write a commit message or make other changes in a text editor. By default, Git uses the system's default text editor, which may not be the one you prefer. In this lab, you will learn how to configure the text editor used by Git.",
-  "meta": {
-    "title": "Configure Git Text Editor | Git Playground",
-    "description": "Learn how to configure the text editor used by Git for commit messages and other changes in this comprehensive Git tutorial.",
-    "keywords": "Git, Text Editor, Commit Message, Git Configuration, Git Playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Configure the git text editor",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful configuration",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/config"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Configure the git text editor",
+      "description": "When using Git, sometimes you need to write a commit message or make other changes in a text editor. By default, Git uses the system's default text editor, which may not be the one you prefer. In this lab, you will learn how to configure the text editor used by Git.",
+      "meta": {
+        "title": "Configure Git Text Editor | Git Playground",
+        "description": "Learn how to configure the text editor used by Git for commit messages and other changes in this comprehensive Git tutorial.",
+        "keywords": "Git, Text Editor, Commit Message, Git Configuration, Git Playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Configure the git text editor",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful configuration",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/config"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "配置Git文本编辑器",
+      "description": "使用Git时，有时你需要在文本编辑器中编写提交消息或进行其他更改。默认情况下，Git使用系统的默认文本编辑器，而这可能不是你喜欢的编辑器。在本实验中，你将学习如何配置Git使用的文本编辑器。",
+      "meta": {
+        "title": "配置Git文本编辑器 | Git游乐场",
+        "description": "在本全面的Git教程中，学习如何配置Git用于提交消息和其他更改的文本编辑器。",
+        "keywords": "Git, 文本编辑器, 提交消息, Git配置, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "配置Git文本编辑器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证配置是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/config"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

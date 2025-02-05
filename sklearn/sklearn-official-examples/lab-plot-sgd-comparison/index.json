@@ -1,89 +1,10 @@
 {
   "type": "lab",
-  "title": "Comparing Online Solvers for Handwritten Digit Classification",
-  "description": "In this lab, we will compare the performance of different online solvers for the classification of handwritten digits. We will be using the scikit-learn library to load and preprocess the data, as well as to train and test the classifiers. The goal is to observe how different solvers perform under different proportions of training data.",
-  "meta": {
-    "title": "Handwritten Digit Classification | Performance Comparison | Online Solvers",
-    "description": "Explore the performance of different online solvers for handwritten digit classification using the scikit-learn library. Preprocess data and observe solver performance with varying training data proportions.",
-    "keywords": "handwritten digit classification, online solvers, scikit-learn, data preprocessing, performance comparison"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load and preprocess the data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/model_selection",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Define the classifiers",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      },
-      {
-        "title": "Train and evaluate the classifiers",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Interpret the results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-sgd-comparison.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -92,5 +13,166 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-sgd-comparison.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Comparing Online Solvers for Handwritten Digit Classification",
+      "description": "In this lab, we will compare the performance of different online solvers for the classification of handwritten digits. We will be using the scikit-learn library to load and preprocess the data, as well as to train and test the classifiers. The goal is to observe how different solvers perform under different proportions of training data.",
+      "meta": {
+        "title": "Handwritten Digit Classification | Performance Comparison | Online Solvers",
+        "description": "Explore the performance of different online solvers for handwritten digit classification using the scikit-learn library. Preprocess data and observe solver performance with varying training data proportions.",
+        "keywords": "handwritten digit classification, online solvers, scikit-learn, data preprocessing, performance comparison"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load and preprocess the data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Define the classifiers",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "Train and evaluate the classifiers",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Interpret the results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "手写数字分类的在线求解器比较",
+      "description": "在本实验中，我们将比较不同在线求解器对手写数字分类的性能。我们将使用scikit-learn库来加载和预处理数据，以及训练和测试分类器。目标是观察不同求解器在不同比例训练数据下的表现。",
+      "meta": {
+        "title": "手写数字分类 | 性能比较 | 在线求解器",
+        "description": "使用scikit-learn库探索不同在线求解器对手写数字分类的性能。预处理数据并观察不同训练数据比例下求解器的性能。",
+        "keywords": "手写数字分类, 在线求解器, scikit-learn, 数据预处理, 性能比较"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载并预处理数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "定义分类器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "训练并评估分类器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "解读结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

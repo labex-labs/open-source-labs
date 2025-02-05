@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang Channels Concurrency",
-  "description": "The Channels lab is designed to test your understanding of channels in Golang. Channels are used to connect concurrent goroutines, allowing values to be sent and received between them.",
-  "meta": {
-    "title": "Golang Channels Concurrency: Mastering Concurrent Programming",
-    "description": "Explore the power of Golang channels and learn how to effectively manage concurrent goroutines.",
-    "keywords": "go playground, concurrency, channels, go, golang, go labs, go playground online, programming, go lab, goroutines"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Channels",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Successful Execution of Go Channels Program",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/channels"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "channels.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "channels.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang Channels Concurrency",
+      "description": "The Channels lab is designed to test your understanding of channels in Golang. Channels are used to connect concurrent goroutines, allowing values to be sent and received between them.",
+      "meta": {
+        "title": "Golang Channels Concurrency: Mastering Concurrent Programming",
+        "description": "Explore the power of Golang channels and learn how to effectively manage concurrent goroutines.",
+        "keywords": "go playground, concurrency, channels, go, golang, go labs, go playground online, programming, go lab, goroutines"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Channels",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Successful Execution of Go Channels Program",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Golang 通道与并发",
+      "description": "实验（Channels lab）旨在测试你对 Go 语言中通道的理解。通道用于连接并发的 goroutine，允许在它们之间发送和接收值。",
+      "meta": {
+        "title": "Golang 通道与并发：掌握并发编程",
+        "description": "探索 Go 语言通道的强大功能，学习如何有效地管理并发 goroutine。",
+        "keywords": "Go 游乐场, 并发, 通道, Go, Golang, Go 实验, 在线 Go 游乐场, 编程, Go 实验, goroutine"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "通道",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 通道程序的成功执行",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

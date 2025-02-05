@@ -1,133 +1,10 @@
 {
   "type": "lab",
-  "title": "Swiss Roll and Swiss-Hole Reduction",
-  "description": "This lab compares two popular non-linear dimensionality techniques, Locally Linear Embedding (LLE) and T-distributed Stochastic Neighbor Embedding (t-SNE), on the classic Swiss Roll dataset. We will explore how they both deal with the addition of a hole in the data.",
-  "meta": {
-    "title": "Exploring Dimensionality Reduction Techniques on Swiss Roll Data",
-    "description": "Dive into the world of non-linear dimensionality reduction with Locally Linear Embedding (LLE) and T-distributed Stochastic Neighbor Embedding (t-SNE) on the classic Swiss Roll dataset.",
-    "keywords": "machine learning, lle, dimensionality reduction, data visualization, swiss roll, t sne, scikit-learn, machine learning playground, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 40,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Swiss Roll Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Visualize Swiss Roll Dataset",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compute LLE and t-SNE Embeddings of Swiss Roll Dataset",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize LLE and t-SNE Embeddings of Swiss Roll Dataset",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Generate Swiss-Hole Dataset",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize Swiss-Hole Dataset",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compute LLE and t-SNE Embeddings of Swiss-Hole Dataset",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize LLE and t-SNE Embeddings of Swiss-Hole Dataset",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-swissroll.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -136,5 +13,254 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-swissroll.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Swiss Roll and Swiss-Hole Reduction",
+      "description": "This lab compares two popular non-linear dimensionality techniques, Locally Linear Embedding (LLE) and T-distributed Stochastic Neighbor Embedding (t-SNE), on the classic Swiss Roll dataset. We will explore how they both deal with the addition of a hole in the data.",
+      "meta": {
+        "title": "Exploring Dimensionality Reduction Techniques on Swiss Roll Data",
+        "description": "Dive into the world of non-linear dimensionality reduction with Locally Linear Embedding (LLE) and T-distributed Stochastic Neighbor Embedding (t-SNE) on the classic Swiss Roll dataset.",
+        "keywords": "machine learning, lle, dimensionality reduction, data visualization, swiss roll, t sne, scikit-learn, machine learning playground, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Swiss Roll Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Visualize Swiss Roll Dataset",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compute LLE and t-SNE Embeddings of Swiss Roll Dataset",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize LLE and t-SNE Embeddings of Swiss Roll Dataset",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Generate Swiss-Hole Dataset",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize Swiss-Hole Dataset",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compute LLE and t-SNE Embeddings of Swiss-Hole Dataset",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize LLE and t-SNE Embeddings of Swiss-Hole Dataset",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "瑞士卷与瑞士洞降维",
+      "description": "本实验在经典的瑞士卷数据集上比较了两种流行的非线性降维技术，局部线性嵌入（Locally Linear Embedding，LLE）和T分布随机邻域嵌入（T-distributed Stochastic Neighbor Embedding，t-SNE）。我们将探讨它们如何处理数据中添加的一个洞。",
+      "meta": {
+        "title": "探索瑞士卷数据上的降维技术",
+        "description": "通过局部线性嵌入（LLE）和T分布随机邻域嵌入（t-SNE）在经典瑞士卷数据集上深入了解非线性降维的世界。",
+        "keywords": "机器学习,局部线性嵌入,降维,数据可视化,瑞士卷,t-SNE,scikit-learn,机器学习游乐场,scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成瑞士卷数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "可视化瑞士卷数据集",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "计算瑞士卷数据集的局部线性嵌入（LLE）和T分布随机邻域嵌入（t-SNE）",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化瑞士卷数据集的局部线性嵌入（LLE）和T分布随机邻域嵌入（t-SNE）",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "生成瑞士洞数据集",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化瑞士洞数据集",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "计算瑞士洞数据集的局部线性嵌入（LLE）和T分布随机邻域嵌入（t-SNE）",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化瑞士洞数据集的局部线性嵌入（LLE）和T分布随机邻域嵌入（t-SNE）",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

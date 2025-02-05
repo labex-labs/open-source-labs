@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Merge a Branch",
-  "description": "Git is a popular version control system that allows developers to collaborate on projects efficiently. One of the key features of Git is the ability to merge branches. Merging a branch allows you to combine changes from one branch into another, making it easier to manage changes and collaborate with others.",
-  "meta": {
-    "title": "Merge a Branch: A Git Collaboration Essentials",
-    "description": "Learn how to merge branches in Git, a crucial skill for collaborative software development.",
-    "keywords": "version control, git labs, branch, git, collaboration, git playground, merge"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Merge a Branch",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful merge",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/merge"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Merge a Branch",
+      "description": "Git is a popular version control system that allows developers to collaborate on projects efficiently. One of the key features of Git is the ability to merge branches. Merging a branch allows you to combine changes from one branch into another, making it easier to manage changes and collaborate with others.",
+      "meta": {
+        "title": "Merge a Branch: A Git Collaboration Essentials",
+        "description": "Learn how to merge branches in Git, a crucial skill for collaborative software development.",
+        "keywords": "version control, git labs, branch, git, collaboration, git playground, merge"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Merge a Branch",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful merge",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/merge"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "合并分支",
+      "description": "Git是一个流行的版本控制系统，它允许开发人员在项目上高效协作。Git的关键特性之一是能够合并分支。合并分支可让你将一个分支中的更改合并到另一个分支中，从而更轻松地管理更改并与他人协作。",
+      "meta": {
+        "title": "合并分支：Git协作基础",
+        "description": "学习如何在Git中合并分支，这是协作软件开发的一项关键技能。",
+        "keywords": "版本控制, Git实验室, 分支, Git, 协作, Git游乐场, 合并"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "合并分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证合并是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/merge"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

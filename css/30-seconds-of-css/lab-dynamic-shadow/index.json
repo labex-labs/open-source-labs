@@ -1,77 +1,10 @@
 {
   "type": "lab",
-  "title": "Dynamic CSS Shadows Creation",
-  "description": "In this lab, we will explore how to create dynamic shadows using CSS. You will learn how to use the ::after pseudo-element and various CSS properties such as background, filter, opacity, and z-index to create an effect that mimics a box-shadow, but is based on the colors of the element itself. By the end of this lab, you will be able to add an extra layer of depth and dimensionality to your designs.",
-  "meta": {
-    "title": "Dynamic Shadows with CSS | Web Design Tutorials",
-    "description": "Learn how to create dynamic shadows using CSS, adding depth and dimensionality to your web designs. Explore techniques like the ::after pseudo-element, background, filter, and z-index.",
-    "keywords": "CSS, dynamic shadows, web design, depth, dimensionality, pseudo-element, background, filter, z-index"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Dynamic Shadow",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/backgrounds",
-          "css/colors",
-          "css/positioning",
-          "css/pseudo_elements",
-          "css/selectors",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -80,5 +13,137 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Dynamic CSS Shadows Creation",
+      "description": "In this lab, we will explore how to create dynamic shadows using CSS. You will learn how to use the ::after pseudo-element and various CSS properties such as background, filter, opacity, and z-index to create an effect that mimics a box-shadow, but is based on the colors of the element itself. By the end of this lab, you will be able to add an extra layer of depth and dimensionality to your designs.",
+      "meta": {
+        "title": "Dynamic Shadows with CSS | Web Design Tutorials",
+        "description": "Learn how to create dynamic shadows using CSS, adding depth and dimensionality to your web designs. Explore techniques like the ::after pseudo-element, background, filter, and z-index.",
+        "keywords": "CSS, dynamic shadows, web design, depth, dimensionality, pseudo-element, background, filter, z-index"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Dynamic Shadow",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/colors",
+              "css/positioning",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 CSS 创建动态阴影",
+      "description": "在本实验中，我们将探索如何使用 CSS 创建动态阴影。你将学习如何使用 ::after 伪元素以及各种 CSS 属性，如 background、filter、opacity 和 z-index，来创建一种模仿盒阴影的效果，但这种效果是基于元素本身的颜色。在本实验结束时，你将能够为你的设计增添额外的深度和立体感。",
+      "meta": {
+        "title": "CSS 动态阴影 | 网页设计教程",
+        "description": "学习如何使用 CSS 创建动态阴影，为你的网页设计增添深度和立体感。探索诸如 ::after 伪元素、background、filter 和 z-index 等技术。",
+        "keywords": "CSS, 动态阴影, 网页设计, 深度, 立体感, 伪元素, background, filter, z-index"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "动态阴影",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/colors",
+              "css/positioning",
+              "css/pseudo_elements",
+              "css/selectors",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

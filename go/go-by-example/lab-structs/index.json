@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Struct Manipulation in Go",
-  "description": "This lab aims to test your knowledge of Go's structs, which are typed collections of fields. Structs are useful for grouping data together to form records.",
-  "meta": {
-    "title": "Mastering Struct Manipulation in Go",
-    "description": "Dive into the world of Go's structs and learn how to create, manipulate, and utilize them effectively.",
-    "keywords": "data structures, software development, go, go labs, go playground online, structs, programming, go lab, go practice"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Structs",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Student Implements Struct Correctly",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/structs"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "structs.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "structs.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Struct Manipulation in Go",
+      "description": "This lab aims to test your knowledge of Go's structs, which are typed collections of fields. Structs are useful for grouping data together to form records.",
+      "meta": {
+        "title": "Mastering Struct Manipulation in Go",
+        "description": "Dive into the world of Go's structs and learn how to create, manipulate, and utilize them effectively.",
+        "keywords": "data structures, software development, go, go labs, go playground online, structs, programming, go lab, go practice"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Structs",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Student Implements Struct Correctly",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/structs"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言中的结构体操作",
+      "description": "本实验旨在测试你对Go语言结构体的了解，结构体是一种字段的类型化集合。结构体对于将数据组合在一起形成记录很有用。",
+      "meta": {
+        "title": "精通Go语言中的结构体操作",
+        "description": "深入Go语言结构体的世界，学习如何有效地创建、操作和使用它们。",
+        "keywords": "数据结构, 软件开发, Go语言, Go实验, 在线Go语言游乐场, 结构体, 编程, Go实验, Go实践"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "结构体",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生是否正确实现结构体",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/structs"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

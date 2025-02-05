@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Delete All Stashes",
-  "description": "In Git, stashes are used to temporarily save changes that are not yet ready to be committed. However, sometimes you may want to delete all stashes to start fresh. In this lab, you will learn how to delete all stashes in a Git repository.",
-  "meta": {
-    "title": "Delete All Stashes in Git Repository",
-    "description": "Learn how to delete all stashes in a Git repository to start fresh.",
-    "keywords": "clear, repository, delete, git labs, stash, git, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Delete All Stashes",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that all have been deleted",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/stash"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Delete All Stashes",
+      "description": "In Git, stashes are used to temporarily save changes that are not yet ready to be committed. However, sometimes you may want to delete all stashes to start fresh. In this lab, you will learn how to delete all stashes in a Git repository.",
+      "meta": {
+        "title": "Delete All Stashes in Git Repository",
+        "description": "Learn how to delete all stashes in a Git repository to start fresh.",
+        "keywords": "clear, repository, delete, git labs, stash, git, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Delete All Stashes",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that all have been deleted",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/stash"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "删除所有贮藏",
+      "description": "在Git中，贮藏用于临时保存尚未准备好提交的更改。然而，有时你可能想要删除所有贮藏以重新开始。在本实验中，你将学习如何删除Git仓库中的所有贮藏。",
+      "meta": {
+        "title": "在Git仓库中删除所有贮藏",
+        "description": "学习如何删除Git仓库中的所有贮藏以重新开始。",
+        "keywords": "清除, 仓库, 删除, Git实验, 贮藏, Git, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除所有贮藏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有贮藏已被删除",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/stash"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

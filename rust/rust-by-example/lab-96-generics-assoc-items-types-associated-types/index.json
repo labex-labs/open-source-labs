@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Rust's Associated Types",
-  "description": "In this lab, we explore the concept of associated types in Rust, which allows for improved readability of code by defining inner types locally within a trait as output types. This is achieved by using the type keyword within the trait definition. with associated types, functions that use the trait no longer need to explicitly express the types A and B, making the code more concise and flexible. We rewrite an example from a previous section using associated types to illustrate their usage in practice.",
-  "meta": {
-    "title": "Rust Programming | Associated Types | Improved Readability",
-    "description": "Explore the concept of associated types in Rust, which enhances code readability by defining inner types within a trait as output types.",
-    "keywords": "Rust, Programming, Associated Types, Trait, Readability"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Associated types",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/traits",
-          "rust/type_casting",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,99 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Rust's Associated Types",
+      "description": "In this lab, we explore the concept of associated types in Rust, which allows for improved readability of code by defining inner types locally within a trait as output types. This is achieved by using the type keyword within the trait definition. with associated types, functions that use the trait no longer need to explicitly express the types A and B, making the code more concise and flexible. We rewrite an example from a previous section using associated types to illustrate their usage in practice.",
+      "meta": {
+        "title": "Rust Programming | Associated Types | Improved Readability",
+        "description": "Explore the concept of associated types in Rust, which enhances code readability by defining inner types within a trait as output types.",
+        "keywords": "Rust, Programming, Associated Types, Trait, Readability"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Associated types",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索 Rust 的关联类型",
+      "description": "在本实验中，我们探索 Rust 中关联类型的概念，它通过在 trait 中局部定义内部类型作为输出类型，提高了代码的可读性。这是通过在 trait 定义中使用 type 关键字来实现的。有了关联类型，使用该 trait 的函数不再需要显式地表达类型 A 和 B，从而使代码更加简洁和灵活。我们使用关联类型重写了上一节中的一个示例，以说明它们在实际中的用法。",
+      "meta": {
+        "title": "Rust 编程 | 关联类型 | 提高可读性",
+        "description": "探索 Rust 中关联类型的概念，它通过将 trait 中的内部类型定义为输出类型来提高代码可读性。",
+        "keywords": "Rust, 编程, 关联类型, trait, 可读性"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "关联类型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

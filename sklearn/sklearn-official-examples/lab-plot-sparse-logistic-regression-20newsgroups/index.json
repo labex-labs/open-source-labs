@@ -1,91 +1,10 @@
 {
   "type": "lab",
-  "title": "Multiclass Sparse Logistic Regression",
-  "description": "In this lab, we will explore how to use Multiclass Sparse Logistic Regression on the 20newsgroups dataset using scikit-learn. We will compare the performance of Multinomial logistic regression with one-versus-rest L1 logistic regression.",
-  "meta": {
-    "title": "Multiclass Sparse Logistic Regression | Machine Learning",
-    "description": "Explore Multiclass Sparse Logistic Regression on the 20newsgroups dataset using scikit-learn. Compare Multinomial logistic regression with one-versus-rest L1 logistic regression.",
-    "keywords": "Multiclass Sparse Logistic Regression, Machine Learning, 20newsgroups dataset, Multinomial logistic regression, one-versus-rest L1 logistic regression"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/exceptions",
-          "sklearn/linear_model",
-          "sklearn/model_selection"
-        ]
-      },
-      {
-        "title": "Load and Prepare Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Define and Train Models",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-sparse-logistic-regression-20newsgroups.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -94,5 +13,170 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-sparse-logistic-regression-20newsgroups.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Multiclass Sparse Logistic Regression",
+      "description": "In this lab, we will explore how to use Multiclass Sparse Logistic Regression on the 20newsgroups dataset using scikit-learn. We will compare the performance of Multinomial logistic regression with one-versus-rest L1 logistic regression.",
+      "meta": {
+        "title": "Multiclass Sparse Logistic Regression | Machine Learning",
+        "description": "Explore Multiclass Sparse Logistic Regression on the 20newsgroups dataset using scikit-learn. Compare Multinomial logistic regression with one-versus-rest L1 logistic regression.",
+        "keywords": "Multiclass Sparse Logistic Regression, Machine Learning, 20newsgroups dataset, Multinomial logistic regression, one-versus-rest L1 logistic regression"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/exceptions",
+              "sklearn/linear_model",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Load and Prepare Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Define and Train Models",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "多类稀疏逻辑回归",
+      "description": "在本实验中，我们将探索如何使用scikit-learn在20新闻组数据集上进行多类稀疏逻辑回归。我们将比较多项逻辑回归与一对其余L1逻辑回归的性能。",
+      "meta": {
+        "title": "多类稀疏逻辑回归 | 机器学习",
+        "description": "使用scikit-learn在20新闻组数据集上探索多类稀疏逻辑回归。比较多项逻辑回归与一对其余L1逻辑回归。",
+        "keywords": "多类稀疏逻辑回归, 机器学习, 20新闻组数据集, 多项逻辑回归, 一对其余L1逻辑回归"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/exceptions",
+              "sklearn/linear_model",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "加载并准备数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "定义并训练模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Go Slices: A Hands-on",
-  "description": "The Slices lab is designed to test your knowledge of the slice data type in Go. Slices are a more powerful interface to sequences than arrays, and this lab will help you understand how to use them.",
-  "meta": {
-    "title": "Mastering Go Slices: A Hands-on Guide",
-    "description": "Explore the power of Go slices and learn how to create, manipulate, and utilize them effectively.",
-    "keywords": "data structures, arrays, go, go labs, slices, go playground online, programming, go lab, go practice"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Slices",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Slice Initialization Correctness",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/slices"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "slices.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "slices.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Go Slices: A Hands-on",
+      "description": "The Slices lab is designed to test your knowledge of the slice data type in Go. Slices are a more powerful interface to sequences than arrays, and this lab will help you understand how to use them.",
+      "meta": {
+        "title": "Mastering Go Slices: A Hands-on Guide",
+        "description": "Explore the power of Go slices and learn how to create, manipulate, and utilize them effectively.",
+        "keywords": "data structures, arrays, go, go labs, slices, go playground online, programming, go lab, go practice"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Slices",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Slice Initialization Correctness",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/slices"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 切片实战指南",
+      "description": "切片实验旨在测试你对 Go 语言中切片数据类型的了解。切片是一种比数组更强大的序列接口，本实验将帮助你理解如何使用它们。",
+      "meta": {
+        "title": "精通 Go 切片：实战指南",
+        "description": "探索 Go 切片的强大功能，学习如何有效地创建、操作和使用它们。",
+        "keywords": "数据结构, 数组, Go, Go 实验, 切片, 在线 Go 游乐场, 编程, Go 实验, Go 练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "切片",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证切片初始化的正确性",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/slices"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

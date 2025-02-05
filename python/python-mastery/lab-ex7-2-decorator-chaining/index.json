@@ -1,163 +1,10 @@
 {
   "type": "lab",
-  "title": "Decorator Chaining and Parameterized Decorators",
-  "description": "In this lab, you will practice decorator chaining and defining decorators that accept arguments.",
-  "meta": {
-    "title": "Python Decorator Chaining | Function Metadata Preservation",
-    "description": "Explore decorator chaining and learn how to define decorators that accept arguments. Discover techniques to preserve function metadata when using decorators.",
-    "keywords": "python, decorator, chaining, function metadata, wraps"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Copying Metadata",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python History and Function Usage",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ],
-        "solutions": ["step1_solution.py"]
-      },
-      {
-        "title": "Your First Decorator with Arguments",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Formatting, Code, Filename, and Name",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/python_shell",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ],
-        "solutions": ["logcall.py", "sample.py"]
-      },
-      {
-        "title": "Multiple Decorators and Methods",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Logging, Decorator Usage, and Function Definitions",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/classes_objects",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/python_shell",
-          "python/using_packages"
-        ],
-        "solutions": ["spam.py"]
-      },
-      {
-        "title": "Validation (Redux)",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Enforcement Annotations",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/catching_exceptions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ],
-        "solutions": ["validate.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "logcall.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "sample.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "spam.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "validate.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -166,5 +13,299 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "logcall.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "sample.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "spam.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "validate.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Decorator Chaining and Parameterized Decorators",
+      "description": "In this lab, you will practice decorator chaining and defining decorators that accept arguments.",
+      "meta": {
+        "title": "Python Decorator Chaining | Function Metadata Preservation",
+        "description": "Explore decorator chaining and learn how to define decorators that accept arguments. Discover techniques to preserve function metadata when using decorators.",
+        "keywords": "python, decorator, chaining, function metadata, wraps"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Copying Metadata",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python History and Function Usage",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "Your First Decorator with Arguments",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Formatting, Code, Filename, and Name",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/python_shell",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ],
+            "solutions": ["logcall.py", "sample.py"]
+          },
+          {
+            "title": "Multiple Decorators and Methods",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Logging, Decorator Usage, and Function Definitions",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/python_shell",
+              "python/using_packages"
+            ],
+            "solutions": ["spam.py"]
+          },
+          {
+            "title": "Validation (Redux)",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Enforcement Annotations",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ],
+            "solutions": ["validate.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "装饰器链式调用与带参数的装饰器",
+      "description": "在本实验中，你将练习装饰器链式调用以及定义接受参数的装饰器。",
+      "meta": {
+        "title": "Python 装饰器链式调用 | 函数元数据保留",
+        "description": "探索装饰器链式调用，学习如何定义接受参数的装饰器。发现使用装饰器时保留函数元数据的技巧。",
+        "keywords": "Python, 装饰器, 链式调用, 函数元数据, wraps"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "复制元数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录和函数用法",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "你的第一个带参数的装饰器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证是否存在格式化、代码、文件名和名称",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/python_shell",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ],
+            "solutions": ["logcall.py", "sample.py"]
+          },
+          {
+            "title": "多个装饰器和方法",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证是否存在日志记录、装饰器使用情况和函数定义",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/python_shell",
+              "python/using_packages"
+            ],
+            "solutions": ["spam.py"]
+          },
+          {
+            "title": "验证（redux）",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证强制注释是否存在",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/catching_exceptions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ],
+            "solutions": ["validate.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

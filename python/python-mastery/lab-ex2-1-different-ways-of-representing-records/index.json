@@ -1,155 +1,10 @@
 {
   "type": "lab",
-  "title": "Different Ways of Representing Records",
-  "description": "In this lab, you will explore memory-efficient ways to store data and learn about different options for representing records in Python.",
-  "meta": {
-    "title": "Different Ways of Representing Records in Python",
-    "description": "Explore efficient data storage and learn about tuples, dictionaries, classes, and named tuples in Python.",
-    "keywords": "data structures, python playground, dictionaries, python, tuples, memory efficiency, classes"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Stuck on the bus",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python History Open and Next Commands",
-            "file": "verify1.sh",
-            "hint": "Please use Python to view a few lines of data in the file 'ctabus.csv'.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/file_opening_closing",
-          "python/iterators",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      },
-      {
-        "title": "Basic memory use of text",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python Tracemalloc Usage and Memory Tracing",
-            "file": "verify2.sh",
-            "hint": "Please check the memory usage.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/file_opening_closing",
-          "python/file_reading_writing",
-          "python/importing_modules",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      },
-      {
-        "title": "A List of Tuples",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Open, Main, and Get Traced Memory Functions",
-            "file": "verify3.sh",
-            "hint": "Please read the entire file into a list of tuples using the 'csv' module and check the memory usage.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["step3_solution.py"]
-      },
-      {
-        "title": "Memory Use of Other Data Structures",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Reader Class and Its Initialization",
-            "file": "verify4.sh",
-            "hint": "Please use each of these data structures to represent a single row of data. Then, find out the resulting memory use of each option.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["step4_solution.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "readrides.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "ctabus.csv.zip",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -158,5 +13,293 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "readrides.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "ctabus.csv.zip",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Different Ways of Representing Records",
+      "description": "In this lab, you will explore memory-efficient ways to store data and learn about different options for representing records in Python.",
+      "meta": {
+        "title": "Different Ways of Representing Records in Python",
+        "description": "Explore efficient data storage and learn about tuples, dictionaries, classes, and named tuples in Python.",
+        "keywords": "data structures, python playground, dictionaries, python, tuples, memory efficiency, classes"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Stuck on the bus",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python History Open and Next Commands",
+                "file": "verify1.sh",
+                "hint": "Please use Python to view a few lines of data in the file 'ctabus.csv'.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/file_opening_closing",
+              "python/iterators",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "Basic memory use of text",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python Tracemalloc Usage and Memory Tracing",
+                "file": "verify2.sh",
+                "hint": "Please check the memory usage.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/file_opening_closing",
+              "python/file_reading_writing",
+              "python/importing_modules",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "A List of Tuples",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Open, Main, and Get Traced Memory Functions",
+                "file": "verify3.sh",
+                "hint": "Please read the entire file into a list of tuples using the 'csv' module and check the memory usage.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step3_solution.py"]
+          },
+          {
+            "title": "Memory Use of Other Data Structures",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Reader Class and Its Initialization",
+                "file": "verify4.sh",
+                "hint": "Please use each of these data structures to represent a single row of data. Then, find out the resulting memory use of each option.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step4_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "表示记录的不同方式",
+      "description": "在本实验中，你将探索存储数据的内存高效方法，并了解在Python中表示记录的不同选项。",
+      "meta": {
+        "title": "Python中表示记录的不同方式",
+        "description": "探索高效的数据存储，并了解Python中的元组、字典、类和具名元组。",
+        "keywords": "数据结构, Python实验场, 字典, Python, 元组, 内存效率, 类"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "被困在公交车上",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中的打开和下一条命令",
+                "file": "verify1.sh",
+                "hint": "请使用Python查看文件'ctabus.csv'中的几行数据。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/file_opening_closing",
+              "python/iterators",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "文本的基本内存使用情况",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python的追踪内存分配使用情况和内存追踪",
+                "file": "verify2.sh",
+                "hint": "请检查内存使用情况。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/file_opening_closing",
+              "python/file_reading_writing",
+              "python/importing_modules",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "元组列表",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证是否存在打开、主程序和获取追踪内存的函数",
+                "file": "verify3.sh",
+                "hint": "请使用'csv'模块将整个文件读入元组列表并检查内存使用情况。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step3_solution.py"]
+          },
+          {
+            "title": "其他数据结构的内存使用情况",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证读取器类及其初始化",
+                "file": "verify4.sh",
+                "hint": "请使用这些数据结构中的每一个来表示一行数据。然后，找出每个选项所产生的内存使用情况。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step4_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

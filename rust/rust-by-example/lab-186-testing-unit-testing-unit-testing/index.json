@@ -1,53 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Unit Testing Fundamentals",
-  "description": "In this lab, we learn about unit testing in Rust. Unit tests are Rust functions that verify the non-test code by performing setup, running the code, and asserting the results. These tests are written in a tests mod with the #[cfg(test)] attribute and marked with the #[test] attribute. Tests can fail if something in the test function panics, and helper macros like assert!, assert_eq!, and assert_ne! are used for assertions. Rust 2018 allows unit tests to return Result<()> to use the ? operator for concise testing. There is also support for testing panics using the #[should_panic] attribute. Specific tests can be run using the test name with the cargo test command, and tests can be ignored using the #[ignore] attribute or by running cargo test -- --ignored.",
-  "meta": {
-    "title": "Rust Unit Testing | Programming Tutorials",
-    "description": "Learn about unit testing in Rust, including writing tests, using assertions, testing panics, and running specific tests. Improve your Rust programming skills with these comprehensive tutorials.",
-    "keywords": "Rust, Unit Testing, Programming Tutorials, Assertions, Panics, Test Running"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Unit testing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/floating_types",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/panic_usage",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -56,5 +13,103 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Unit Testing Fundamentals",
+      "description": "In this lab, we learn about unit testing in Rust. Unit tests are Rust functions that verify the non-test code by performing setup, running the code, and asserting the results. These tests are written in a tests mod with the #[cfg(test)] attribute and marked with the #[test] attribute. Tests can fail if something in the test function panics, and helper macros like assert!, assert_eq!, and assert_ne! are used for assertions. Rust 2018 allows unit tests to return Result<()> to use the ? operator for concise testing. There is also support for testing panics using the #[should_panic] attribute. Specific tests can be run using the test name with the cargo test command, and tests can be ignored using the #[ignore] attribute or by running cargo test -- --ignored.",
+      "meta": {
+        "title": "Rust Unit Testing | Programming Tutorials",
+        "description": "Learn about unit testing in Rust, including writing tests, using assertions, testing panics, and running specific tests. Improve your Rust programming skills with these comprehensive tutorials.",
+        "keywords": "Rust, Unit Testing, Programming Tutorials, Assertions, Panics, Test Running"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Unit testing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/panic_usage",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust单元测试基础",
+      "description": "在本实验中，我们学习Rust中的单元测试。单元测试是Rust函数，通过执行设置、运行代码并断言结果来验证非测试代码。这些测试是在带有#[cfg(test)]属性的tests模块中编写的，并使用#[test]属性进行标记。如果测试函数中的某些内容导致恐慌，测试可能会失败，并且像assert!、assert_eq!和assert_ne!这样的辅助宏用于断言。Rust 2018允许单元测试返回Result<()>以使用?运算符进行简洁的测试。此外，还支持使用#[should_panic]属性来测试恐慌情况。可以使用cargo test命令并加上测试名称来运行特定的测试，也可以使用#[ignore]属性或通过运行cargo test -- --ignored来忽略测试。",
+      "meta": {
+        "title": "Rust单元测试 | 编程教程",
+        "description": "了解Rust中的单元测试，包括编写测试、使用断言、测试恐慌情况以及运行特定测试。通过这些全面的教程提升你的Rust编程技能。",
+        "keywords": "Rust, 单元测试, 编程教程, 断言, 恐慌, 测试运行"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "单元测试",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/panic_usage",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

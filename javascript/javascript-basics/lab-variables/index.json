@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "JavaScript Variable Fundamentals",
-  "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to variables.",
-  "meta": {
-    "title": "JavaScript Variables | Introduction to Coding",
-    "description": "Discover the power of JavaScript variables and learn how to create, assign, and manipulate values in this comprehensive coding tutorial.",
-    "keywords": "JavaScript, Variables, Coding, Programming, Data Types, Containers, Dynamic Content"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Variables",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Node Commands Executed",
-            "file": "verify1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["javascript/data_types", "javascript/variables"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-SA-2.5",
     "url": "https://github.com/mdn/content/blob/main/LICENSE.md",
     "repo": "https://github.com/mdn/content"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "JavaScript Variable Fundamentals",
+      "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to variables.",
+      "meta": {
+        "title": "JavaScript Variables | Introduction to Coding",
+        "description": "Discover the power of JavaScript variables and learn how to create, assign, and manipulate values in this comprehensive coding tutorial.",
+        "keywords": "JavaScript, Variables, Coding, Programming, Data Types, Containers, Dynamic Content"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Variables",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Node Commands Executed",
+                "file": "verify1.sh",
+                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["javascript/data_types", "javascript/variables"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "JavaScript 变量基础",
+      "description": "欢迎来到 JavaScript 文档！本实验将向你介绍变量。",
+      "meta": {
+        "title": "JavaScript 变量 | 编码入门",
+        "description": "在本全面的编码教程中，探索 JavaScript 变量的强大功能，学习如何创建、赋值和操作值。",
+        "keywords": "JavaScript, 变量, 编码, 编程, 数据类型, 容器, 动态内容"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "变量",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证已执行的 Node 命令",
+                "file": "verify1.sh",
+                "hint": "通过在终端/SSH 中输入 'node' 并按回车键，可以运行 JavaScript。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["javascript/data_types", "javascript/variables"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

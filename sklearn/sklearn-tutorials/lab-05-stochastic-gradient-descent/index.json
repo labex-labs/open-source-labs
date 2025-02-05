@@ -1,92 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Scikit-Learn SGD Classifiers",
-  "description": "In this lab, we will explore Stochastic Gradient Descent (SGD), which is a powerful optimization algorithm commonly used in machine learning for solving large-scale and sparse problems. We will learn how to use the SGDClassifier and SGDRegressor classes from the scikit-learn library to train linear classifiers and regressors.",
-  "meta": {
-    "title": "Stochastic Gradient Descent (SGD) | Machine Learning Optimization",
-    "description": "Explore Stochastic Gradient Descent (SGD), a powerful optimization algorithm used in machine learning for solving large-scale and sparse problems.",
-    "keywords": "Stochastic Gradient Descent, SGD, Machine Learning, Optimization, Scikit-learn, Linear Classifiers, Linear Regressors"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import the necessary libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/linear_model",
-          "sklearn/metrics",
-          "sklearn/model_selection",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Load and preprocess the data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Train a classifier using SGD",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Train a regressor using SGD",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "05-stochastic-gradient-descent.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -95,5 +13,172 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "05-stochastic-gradient-descent.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Scikit-Learn SGD Classifiers",
+      "description": "In this lab, we will explore Stochastic Gradient Descent (SGD), which is a powerful optimization algorithm commonly used in machine learning for solving large-scale and sparse problems. We will learn how to use the SGDClassifier and SGDRegressor classes from the scikit-learn library to train linear classifiers and regressors.",
+      "meta": {
+        "title": "Stochastic Gradient Descent (SGD) | Machine Learning Optimization",
+        "description": "Explore Stochastic Gradient Descent (SGD), a powerful optimization algorithm used in machine learning for solving large-scale and sparse problems.",
+        "keywords": "Stochastic Gradient Descent, SGD, Machine Learning, Optimization, Scikit-learn, Linear Classifiers, Linear Regressors"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import the necessary libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Load and preprocess the data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Train a classifier using SGD",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Train a regressor using SGD",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索Scikit-Learn的随机梯度下降分类器",
+      "description": "在本实验中，我们将探索随机梯度下降（SGD），这是一种常用于机器学习中解决大规模和稀疏问题的强大优化算法。我们将学习如何使用scikit-learn库中的SGDClassifier和SGDRegressor类来训练线性分类器和回归器。",
+      "meta": {
+        "title": "随机梯度下降（SGD）| 机器学习优化",
+        "description": "探索随机梯度下降（SGD），一种用于机器学习中解决大规模和稀疏问题的强大优化算法。",
+        "keywords": "随机梯度下降, SGD, 机器学习, 优化, Scikit-learn, 线性分类器, 线性回归器"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "加载并预处理数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "使用随机梯度下降训练分类器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "使用随机梯度下降训练回归器",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

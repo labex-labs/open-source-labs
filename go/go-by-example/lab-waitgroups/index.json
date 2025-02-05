@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Waitgroups: Coordinating Concurrent Goroutines",
-  "description": "The waitgroups lab is designed to help you understand how to use a wait group to wait for multiple goroutines to finish.",
-  "meta": {
-    "title": "Coordinating Concurrent Goroutines with Waitgroups",
-    "description": "Learn how to use waitgroups to coordinate multiple goroutines in Go programming.",
-    "keywords": "go playground, concurrency, sync, waitgroups, go, golang, go labs, go playground online, go lab, goroutines"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "WaitGroups",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Worker 5 Starting",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/waitgroups"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "waitgroups.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "waitgroups.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Waitgroups: Coordinating Concurrent Goroutines",
+      "description": "The waitgroups lab is designed to help you understand how to use a wait group to wait for multiple goroutines to finish.",
+      "meta": {
+        "title": "Coordinating Concurrent Goroutines with Waitgroups",
+        "description": "Learn how to use waitgroups to coordinate multiple goroutines in Go programming.",
+        "keywords": "go playground, concurrency, sync, waitgroups, go, golang, go labs, go playground online, go lab, goroutines"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "WaitGroups",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Worker 5 Starting",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/waitgroups"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Waitgroups：协调并发的 Goroutine",
+      "description": "“waitgroups”实验旨在帮助你理解如何使用等待组来等待多个 goroutine 完成。",
+      "meta": {
+        "title": "使用 Waitgroups 协调并发的 Goroutine",
+        "description": "学习如何在 Go 编程中使用等待组来协调多个 goroutine。",
+        "keywords": "Go 游乐场, 并发, 同步, 等待组, Go, Golang, Go 实验, 在线 Go 游乐场, Go 实验, goroutine"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "等待组",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Worker 5 启动",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/waitgroups"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

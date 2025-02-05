@@ -1,171 +1,10 @@
 {
   "type": "lab",
-  "title": "SkewT-logP Diagram Using Matplotlib",
-  "description": "In this lab, we will learn how to create a SkewT-logP diagram using Matplotlib library in Python. A SkewT-logP diagram is commonly used in meteorology for displaying vertical profiles of temperature. It is a complex plot as it involves non-orthogonal X and Y axes. We will use the Matplotlib's transforms and custom projection API to create this plot.",
-  "meta": {
-    "title": "Create SkewT-logP Diagrams with Python Matplotlib",
-    "description": "Learn how to generate SkewT-logP diagrams, a powerful meteorological visualization tool, using Python and Matplotlib.",
-    "keywords": "matplotlib, python, meteorology, data visualization, skewt logp"
-  },
   "difficulty": "Beginner",
   "time": 40,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Required Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      },
-      {
-        "title": "Define SkewXTick Class",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Define SkewXAxis Class",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/classes_objects",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Define SkewSpine Class",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/classes_objects",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/lists"
-        ]
-      },
-      {
-        "title": "Define SkewXAxes Class",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Register Projection",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Prepare Data",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/booleans", "python/tuples"]
-      },
-      {
-        "title": "Create SkewT-logP Diagram",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["matplotlib/grid_config", "python/booleans", "python/tuples"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "skewt.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -174,5 +13,338 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "skewt.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "SkewT-logP Diagram Using Matplotlib",
+      "description": "In this lab, we will learn how to create a SkewT-logP diagram using Matplotlib library in Python. A SkewT-logP diagram is commonly used in meteorology for displaying vertical profiles of temperature. It is a complex plot as it involves non-orthogonal X and Y axes. We will use the Matplotlib's transforms and custom projection API to create this plot.",
+      "meta": {
+        "title": "Create SkewT-logP Diagrams with Python Matplotlib",
+        "description": "Learn how to generate SkewT-logP diagrams, a powerful meteorological visualization tool, using Python and Matplotlib.",
+        "keywords": "matplotlib, python, meteorology, data visualization, skewt logp"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Required Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "Define SkewXTick Class",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Define SkewXAxis Class",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Define SkewSpine Class",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/conditional_statements",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/lists"
+            ]
+          },
+          {
+            "title": "Define SkewXAxes Class",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Register Projection",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Prepare Data",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/booleans", "python/tuples"]
+          },
+          {
+            "title": "Create SkewT-logP Diagram",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/grid_config",
+              "python/booleans",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Matplotlib 创建斜 T - 对数 P 图",
+      "description": "在本实验中，我们将学习如何使用 Python 中的 Matplotlib 库创建斜 T - 对数 P 图。斜 T - 对数 P 图常用于气象学中显示温度的垂直剖面图。由于它涉及非正交的 X 轴和 Y 轴，所以是一种复杂的图表。我们将使用 Matplotlib 的变换和自定义投影 API 来创建此图表。",
+      "meta": {
+        "title": "用 Python Matplotlib 创建斜 T - 对数 P 图",
+        "description": "学习如何使用 Python 和 Matplotlib 生成斜 T - 对数 P 图，这是一种强大的气象可视化工具。",
+        "keywords": "Matplotlib, Python, 气象学, 数据可视化, 斜 T - 对数 P"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "定义 SkewXTick 类",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "定义 SkewXAxis 类",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "定义 SkewSpine 类",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/conditional_statements",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/lists"
+            ]
+          },
+          {
+            "title": "定义 SkewXAxes 类",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "注册投影",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "准备数据",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/booleans", "python/tuples"]
+          },
+          {
+            "title": "创建偏斜T-对数P图",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/grid_config",
+              "python/booleans",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

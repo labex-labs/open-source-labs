@@ -1,49 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Integration Testing Fundamentals",
-  "description": "In this lab, integration testing is discussed, which involves testing multiple parts of a library together using its public interface. Integration tests can be placed in the tests directory next to the src directory in a Rust crate, and are executed using the cargo test command. Additionally, common code can be shared between integration tests by creating a module with public functions and importing it within the tests.",
-  "meta": {
-    "title": "Rust Integration Testing | Programming Tutorials",
-    "description": "Learn about integration testing in Rust, which involves testing multiple parts of a library together using its public interface. Discover how to set up and run integration tests in your Rust projects.",
-    "keywords": "Rust, Integration Testing, Programming Tutorials, Software Development, Testing Strategies"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Integration testing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/module_system",
-          "rust/operator_overloading"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -52,5 +13,95 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Integration Testing Fundamentals",
+      "description": "In this lab, integration testing is discussed, which involves testing multiple parts of a library together using its public interface. Integration tests can be placed in the tests directory next to the src directory in a Rust crate, and are executed using the cargo test command. Additionally, common code can be shared between integration tests by creating a module with public functions and importing it within the tests.",
+      "meta": {
+        "title": "Rust Integration Testing | Programming Tutorials",
+        "description": "Learn about integration testing in Rust, which involves testing multiple parts of a library together using its public interface. Discover how to set up and run integration tests in your Rust projects.",
+        "keywords": "Rust, Integration Testing, Programming Tutorials, Software Development, Testing Strategies"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Integration testing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/module_system",
+              "rust/operator_overloading"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust集成测试基础",
+      "description": "在本实验中，我们将讨论集成测试，它涉及使用库的公共接口对库的多个部分进行一起测试。集成测试可以放在Rust包中src目录旁边的tests目录中，并使用cargo test命令执行。此外，可以通过创建具有公共函数的模块并在测试中导入它，在集成测试之间共享通用代码。",
+      "meta": {
+        "title": "Rust集成测试 | 编程教程",
+        "description": "了解Rust中的集成测试，它涉及使用库的公共接口对库的多个部分进行一起测试。探索如何在你的Rust项目中设置和运行集成测试。",
+        "keywords": "Rust, 集成测试, 编程教程, 软件开发, 测试策略"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "集成测试",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/module_system",
+              "rust/operator_overloading"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

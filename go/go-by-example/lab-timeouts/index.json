@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Implementing Go Timeouts with Channels",
-  "description": "The purpose of this lab is to implement timeouts in Go using channels and select.",
-  "meta": {
-    "title": "Implementing Timeouts in Go | Programming Tutorials",
-    "description": "Learn how to implement timeouts in Go using channels and select. Prevent goroutine leaks and use time.After to await a value after the timeout.",
-    "keywords": "Go programming, timeouts, channels, select, goroutine leaks, time.After"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Timeouts",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Timeout Operation in Go Project",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/timeouts"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "timeouts.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "timeouts.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Implementing Go Timeouts with Channels",
+      "description": "The purpose of this lab is to implement timeouts in Go using channels and select.",
+      "meta": {
+        "title": "Implementing Timeouts in Go | Programming Tutorials",
+        "description": "Learn how to implement timeouts in Go using channels and select. Prevent goroutine leaks and use time.After to await a value after the timeout.",
+        "keywords": "Go programming, timeouts, channels, select, goroutine leaks, time.After"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Timeouts",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Timeout Operation in Go Project",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/timeouts"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用通道在Go中实现超时",
+      "description": "本实验的目的是使用通道和select在Go中实现超时。",
+      "meta": {
+        "title": "在Go中实现超时 | 编程教程",
+        "description": "学习如何使用通道和select在Go中实现超时。防止goroutine泄漏，并使用time.After在超时时等待一个值。",
+        "keywords": "Go编程, 超时, 通道, select, goroutine泄漏, time.After"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "超时",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在Go项目中验证超时操作",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/timeouts"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

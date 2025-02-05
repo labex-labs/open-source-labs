@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Non-Blocking Channel Operations",
-  "description": "This lab aims to test your understanding of non-blocking channel operations in Golang. You will be required to implement non-blocking sends, receives, and multi-way selects using the select statement with a default clause.",
-  "meta": {
-    "title": "Mastering Non-Blocking Channel Operations in Golang",
-    "description": "Explore the power of non-blocking channel operations in Golang, including non-blocking sends, receives, and multi-way selects.",
-    "keywords": "go playground, default clause, non blocking, go, golang, channel operations, select, go labs, go playground online, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Non-Blocking Channel Operations",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Non-Blocking Channel Operations",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/channels"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "non-blocking-channel-operations.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "non-blocking-channel-operations.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Non-Blocking Channel Operations",
+      "description": "This lab aims to test your understanding of non-blocking channel operations in Golang. You will be required to implement non-blocking sends, receives, and multi-way selects using the select statement with a default clause.",
+      "meta": {
+        "title": "Mastering Non-Blocking Channel Operations in Golang",
+        "description": "Explore the power of non-blocking channel operations in Golang, including non-blocking sends, receives, and multi-way selects.",
+        "keywords": "go playground, default clause, non blocking, go, golang, channel operations, select, go labs, go playground online, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Non-Blocking Channel Operations",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Non-Blocking Channel Operations",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "非阻塞通道操作",
+      "description": "本实验旨在测试你对Go语言中非阻塞通道操作的理解。你需要使用带有默认子句的select语句来实现非阻塞发送、接收和多路选择。",
+      "meta": {
+        "title": "掌握Go语言中的非阻塞通道操作",
+        "description": "探索Go语言中非阻塞通道操作的强大功能，包括非阻塞发送、接收和多路选择。",
+        "keywords": "Go语言游乐场, 默认子句, 非阻塞, Go, Go语言, 通道操作, select, Go实验, 在线Go语言游乐场, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "非阻塞通道操作",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证非阻塞通道操作",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

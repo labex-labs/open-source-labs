@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Hierarchical Clustering with Connectivity Constraints",
-  "description": "This lab demonstrates how to perform hierarchical clustering with connectivity constraints using the Scikit-learn library in Python. In hierarchical clustering, clusters are formed by recursively merging or splitting them based on the distance between them. Connectivity constraints can be used to restrict the formation of clusters based on the connectivity between data points, which can result in more meaningful clusters.",
-  "meta": {
-    "title": "Hierarchical Clustering with Connectivity Constraints | Python | Scikit-learn",
-    "description": "Learn how to perform hierarchical clustering with connectivity constraints using Scikit-learn in Python. Explore the Swiss Roll dataset and gain insights into this powerful clustering technique.",
-    "keywords": "hierarchical clustering, connectivity constraints, Scikit-learn, Python, Swiss Roll dataset"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Unstructured Hierarchical Clustering",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/cluster"]
-      },
-      {
-        "title": "Plot Unstructured Hierarchical Clusters",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Structured Hierarchical Clustering",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/neighbors"]
-      },
-      {
-        "title": "Plot Structured Hierarchical Clusters",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-ward-structured-vs-unstructured.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,182 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-ward-structured-vs-unstructured.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Hierarchical Clustering with Connectivity Constraints",
+      "description": "This lab demonstrates how to perform hierarchical clustering with connectivity constraints using the Scikit-learn library in Python. In hierarchical clustering, clusters are formed by recursively merging or splitting them based on the distance between them. Connectivity constraints can be used to restrict the formation of clusters based on the connectivity between data points, which can result in more meaningful clusters.",
+      "meta": {
+        "title": "Hierarchical Clustering with Connectivity Constraints | Python | Scikit-learn",
+        "description": "Learn how to perform hierarchical clustering with connectivity constraints using Scikit-learn in Python. Explore the Swiss Roll dataset and gain insights into this powerful clustering technique.",
+        "keywords": "hierarchical clustering, connectivity constraints, Scikit-learn, Python, Swiss Roll dataset"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Unstructured Hierarchical Clustering",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster"]
+          },
+          {
+            "title": "Plot Unstructured Hierarchical Clusters",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Structured Hierarchical Clustering",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/neighbors"]
+          },
+          {
+            "title": "Plot Structured Hierarchical Clusters",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "带连接性约束的层次聚类",
+      "description": "本实验展示了如何使用 Python 中的 Scikit-learn 库执行带连接性约束的层次聚类。在层次聚类中，聚类是通过根据它们之间的距离递归合并或分裂来形成的。连接性约束可用于基于数据点之间的连接性来限制聚类的形成，这可以产生更有意义的聚类。",
+      "meta": {
+        "title": "带连接性约束的层次聚类 | Python | Scikit-learn",
+        "description": "学习如何使用 Python 中的 Scikit-learn 执行带连接性约束的层次聚类。探索瑞士卷数据集并深入了解这种强大的聚类技术。",
+        "keywords": "层次聚类, 连接性约束, Scikit-learn, Python, 瑞士卷数据集"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "无结构层次聚类",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster"]
+          },
+          {
+            "title": "绘制无结构层次聚类",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "结构化层次聚类",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/neighbors"]
+          },
+          {
+            "title": "绘制结构化层次聚类",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

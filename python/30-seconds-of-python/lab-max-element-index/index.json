@@ -1,62 +1,10 @@
 {
   "type": "lab",
-  "title": "Index of Max Element",
-  "description": "In this lab, you will learn how to use the built-in `max()` and `list.index()` functions in Python to find the index of the maximum element in a list.",
-  "meta": {
-    "title": "Index of Max Element in Python",
-    "description": "Find the index of the maximum element in a list of numbers using Python.",
-    "keywords": "max element, python, list, index, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Index of Max Element",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Maximum Element Index",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_max_element_index.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "max_element_index.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -65,5 +13,107 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_max_element_index.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "max_element_index.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Index of Max Element",
+      "description": "In this lab, you will learn how to use the built-in `max()` and `list.index()` functions in Python to find the index of the maximum element in a list.",
+      "meta": {
+        "title": "Index of Max Element in Python",
+        "description": "Find the index of the maximum element in a list of numbers using Python.",
+        "keywords": "max element, python, list, index, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Index of Max Element",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Maximum Element Index",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "最大元素的索引",
+      "description": "在这个实验中，你将学习如何使用Python中的内置函数 `max()` 和 `list.index()` 来找到列表中最大元素的索引。",
+      "meta": {
+        "title": "Python中最大元素的索引",
+        "description": "使用Python找到数字列表中最大元素的索引。",
+        "keywords": "最大元素, Python, 列表, 索引, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "最大元素的索引",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证最大元素索引",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

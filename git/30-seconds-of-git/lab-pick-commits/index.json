@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Git Cherry-Pick Code Changes",
-  "description": "In this lab, you will learn how to use the `git cherry-pick` command to selectively apply changes from one commit to another branch, without merging the entire branch.",
-  "meta": {
-    "title": "Mastering Git Cherry-Pick: Selectively Apply Code Changes",
-    "description": "Learn how to use the powerful Git cherry-pick feature to apply specific code changes to your project without merging entire branches.",
-    "keywords": "cherry pick, software development, version control, code changes, git labs, git, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Git Cherry-Pick",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify if pick is successful",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Git Cherry-Pick Code Changes",
+      "description": "In this lab, you will learn how to use the `git cherry-pick` command to selectively apply changes from one commit to another branch, without merging the entire branch.",
+      "meta": {
+        "title": "Mastering Git Cherry-Pick: Selectively Apply Code Changes",
+        "description": "Learn how to use the powerful Git cherry-pick feature to apply specific code changes to your project without merging entire branches.",
+        "keywords": "cherry pick, software development, version control, code changes, git labs, git, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Git Cherry-Pick",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify if pick is successful",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Git 挑选提交代码更改",
+      "description": "在本次实验中，你将学习如何使用 `git cherry-pick` 命令有选择地将一个提交中的更改应用到另一个分支，而无需合并整个分支。",
+      "meta": {
+        "title": "掌握 Git 挑选提交：有选择地应用代码更改",
+        "description": "学习如何使用强大的 Git 挑选提交功能，在不合并整个分支的情况下将特定代码更改应用到你的项目中。",
+        "keywords": "挑选提交, 软件开发, 版本控制, 代码更改, Git 实验室, Git, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Git 挑选提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证挑选提交是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

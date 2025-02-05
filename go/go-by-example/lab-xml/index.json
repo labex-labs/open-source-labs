@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang XML Mapping and Manipulation",
-  "description": "This lab aims to test your knowledge of working with XML in Golang. You will be required to create a struct that can be mapped to XML, marshal and unmarshal XML data, and use field tags to define the structure of the XML output.",
-  "meta": {
-    "title": "Mastering XML in Go | Golang XML Tutorials",
-    "description": "Learn how to work with XML in Golang. Create XML-mapped structs, marshal and unmarshal XML data, and use field tags to define XML output structure.",
-    "keywords": "Golang, XML, XML Mapping, XML Marshaling, XML Unmarshaling, XML Field Tags"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "XML",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Plant ID 27 in XML Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/xml"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "xml.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "xml.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang XML Mapping and Manipulation",
+      "description": "This lab aims to test your knowledge of working with XML in Golang. You will be required to create a struct that can be mapped to XML, marshal and unmarshal XML data, and use field tags to define the structure of the XML output.",
+      "meta": {
+        "title": "Mastering XML in Go | Golang XML Tutorials",
+        "description": "Learn how to work with XML in Golang. Create XML-mapped structs, marshal and unmarshal XML data, and use field tags to define XML output structure.",
+        "keywords": "Golang, XML, XML Mapping, XML Marshaling, XML Unmarshaling, XML Field Tags"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "XML",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Plant ID 27 in XML Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/xml"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言中的XML映射与操作",
+      "description": "本实验旨在测试你在Go语言中处理XML的知识。你需要创建一个可以映射到XML的结构体，编组和解组XML数据，并使用字段标签来定义XML输出的结构。",
+      "meta": {
+        "title": "Go语言中掌握XML | Go语言XML教程",
+        "description": "学习如何在Go语言中处理XML。创建XML映射结构体，编组和解组XML数据，并使用字段标签定义XML输出结构。",
+        "keywords": "Go语言, XML, XML映射, XML编组, XML解组, XML字段标签"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "XML",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在XML输出中验证植物ID 27",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/xml"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

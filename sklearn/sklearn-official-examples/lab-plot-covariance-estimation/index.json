@@ -1,89 +1,10 @@
 {
   "type": "lab",
-  "title": "Shrinkage Covariance Estimation",
-  "description": "This lab demonstrates how to perform covariance estimation using regularization techniques such as shrinkage methods to reduce the variance of the estimator, as well as how to choose the bias-variance trade-off. We will compare three approaches to setting the regularization parameter.",
-  "meta": {
-    "title": "Covariance Estimation | Regularization Techniques | Bias-Variance Trade-off",
-    "description": "Learn how to perform covariance estimation using regularization methods and choose the optimal bias-variance trade-off in this comprehensive programming tutorial.",
-    "keywords": "covariance estimation, regularization techniques, shrinkage methods, bias-variance trade-off, programming tutorial"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Sample Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compute the Likelihood on Test Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/covariance"]
-      },
-      {
-        "title": "Compare Different Approaches to Setting the Regularization Parameter",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/covariance",
-          "sklearn/model_selection"
-        ]
-      },
-      {
-        "title": "Plot Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-covariance-estimation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -92,5 +13,166 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-covariance-estimation.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Shrinkage Covariance Estimation",
+      "description": "This lab demonstrates how to perform covariance estimation using regularization techniques such as shrinkage methods to reduce the variance of the estimator, as well as how to choose the bias-variance trade-off. We will compare three approaches to setting the regularization parameter.",
+      "meta": {
+        "title": "Covariance Estimation | Regularization Techniques | Bias-Variance Trade-off",
+        "description": "Learn how to perform covariance estimation using regularization methods and choose the optimal bias-variance trade-off in this comprehensive programming tutorial.",
+        "keywords": "covariance estimation, regularization techniques, shrinkage methods, bias-variance trade-off, programming tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Sample Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compute the Likelihood on Test Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/covariance"]
+          },
+          {
+            "title": "Compare Different Approaches to Setting the Regularization Parameter",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "Plot Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "收缩协方差估计",
+      "description": "本实验展示了如何使用诸如收缩方法等正则化技术来进行协方差估计，以减少估计器的方差，以及如何选择偏差 - 方差权衡。我们将比较设置正则化参数的三种方法。",
+      "meta": {
+        "title": "协方差估计 | 正则化技术 | 偏差 - 方差权衡",
+        "description": "在这个全面的编程教程中，学习如何使用正则化方法进行协方差估计并选择最优的偏差 - 方差权衡。",
+        "keywords": "协方差估计, 正则化技术, 收缩方法, 偏差 - 方差权衡, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成样本数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "计算测试数据上的似然度",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/covariance"]
+          },
+          {
+            "title": "比较设置正则化参数的不同方法",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/covariance",
+              "sklearn/model_selection"
+            ]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

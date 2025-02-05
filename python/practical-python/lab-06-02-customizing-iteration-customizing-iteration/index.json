@@ -1,255 +1,10 @@
 {
   "type": "lab",
-  "title": "Customizing Iteration with Generator Functions",
-  "description": "This section looks at how you can customize iteration using a generator function.",
-  "meta": {
-    "title": "Python Iteration Customization | Generator Functions",
-    "description": "Explore how to create custom iteration patterns in Python using generator functions, including a countdown example.",
-    "keywords": "Python, Iteration, Generator Functions, Customization, Countdown"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "A problem",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Presence of 'print' in Python History",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/for_loops",
-          "python/python_shell",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Generators",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Use of yield and countdown in Python History",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/python_shell",
-          "python/tuples",
-          "python/while_loops"
-        ]
-      },
-      {
-        "title": "Exercise 6.4: A Simple Generator",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Use of 'with' and 'countdown' in Python History",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Exercise 6.5: Monitoring a streaming data source",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Presence of AAPL Stock Log Entry",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/os_system",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/while_loops"
-        ]
-      },
-      {
-        "title": "Exercise 6.6: Using a generator to produce data",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "Verify if Python Script Contains __main__ Block",
-            "file": "verify5.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/os_system",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/while_loops"
-        ],
-        "solutions": ["follow_6.6.py"]
-      },
-      {
-        "title": "Exercise 6.7: Watching your portfolio",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Verify Presence of 'import report' in follow.py",
-            "file": "verify6.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/break_continue",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/dictionaries",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/os_system",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types",
-          "python/while_loops"
-        ],
-        "solutions": ["follow.py"]
-      },
-      {
-        "title": "Discussion",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stocksim.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "dowstocks.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fileparse.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "pcost.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "report.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "tableformat.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -258,5 +13,463 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/practical-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "portfolio.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stocksim.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "dowstocks.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "fileparse.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "pcost.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "report.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "tableformat.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Customizing Iteration with Generator Functions",
+      "description": "This section looks at how you can customize iteration using a generator function.",
+      "meta": {
+        "title": "Python Iteration Customization | Generator Functions",
+        "description": "Explore how to create custom iteration patterns in Python using generator functions, including a countdown example.",
+        "keywords": "Python, Iteration, Generator Functions, Customization, Countdown"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "A problem",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Presence of 'print' in Python History",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/for_loops",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Generators",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Use of yield and countdown in Python History",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/python_shell",
+              "python/tuples",
+              "python/while_loops"
+            ]
+          },
+          {
+            "title": "Exercise 6.4: A Simple Generator",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Use of 'with' and 'countdown' in Python History",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Exercise 6.5: Monitoring a streaming data source",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Presence of AAPL Stock Log Entry",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/while_loops"
+            ]
+          },
+          {
+            "title": "Exercise 6.6: Using a generator to produce data",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "Verify if Python Script Contains __main__ Block",
+                "file": "verify5.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/while_loops"
+            ],
+            "solutions": ["follow_6.6.py"]
+          },
+          {
+            "title": "Exercise 6.7: Watching your portfolio",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "Verify Presence of 'import report' in follow.py",
+                "file": "verify6.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/while_loops"
+            ],
+            "solutions": ["follow.py"]
+          },
+          {
+            "title": "Discussion",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用生成器函数自定义迭代",
+      "description": "本节探讨如何使用生成器函数来自定义迭代。",
+      "meta": {
+        "title": "Python迭代自定义 | 生成器函数",
+        "description": "探索如何使用生成器函数在Python中创建自定义迭代模式，包括一个倒计时示例。",
+        "keywords": "Python, 迭代, 生成器函数, 自定义, 倒计时"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "一个问题",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在'print'",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/for_loops",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "生成器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中yield和倒计时的使用情况",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/python_shell",
+              "python/tuples",
+              "python/while_loops"
+            ]
+          },
+          {
+            "title": "练习6.4：一个简单的生成器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中'with'和'countdown'的使用",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "练习6.5：监控流数据源",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证是否存在苹果公司股票日志条目",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/while_loops"
+            ]
+          },
+          {
+            "title": "练习6.6：使用生成器生成数据",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Python脚本是否包含__main__代码块",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/while_loops"
+            ],
+            "solutions": ["follow_6.6.py"]
+          },
+          {
+            "title": "练习6.7：关注你的投资组合",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "验证follow.py中是否存在'import report'",
+                "file": "verify6.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/break_continue",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/dictionaries",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/os_system",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types",
+              "python/while_loops"
+            ],
+            "solutions": ["follow.py"]
+          },
+          {
+            "title": "讨论",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

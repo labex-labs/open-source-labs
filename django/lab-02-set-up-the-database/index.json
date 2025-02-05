@@ -1,118 +1,243 @@
 {
   "type": "lab",
-  "title": "Set Up the Database",
-  "description": "This tutorial begins where Creation of a Basic Poll Application left off. We'll set up the database, create your first model, and get a quick introduction to Django's automatically-generated admin site.",
-  "meta": {
-    "title": "Set Up the Database for Your Django Project",
-    "description": "Learn how to set up the database, create your first model, and get an introduction to Django's admin site.",
-    "keywords": "admin, python, database, django commands, django, django online labs, models"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Database setup",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the migrate command is executed",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "django/contrib_packages",
-          "django/databases",
-          "django/django_admin"
-        ]
-      },
-      {
-        "title": "Creating models",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify the Choice and Question class are created",
-            "file": "verify2.sh",
-            "hint": "Create the Choice and Question class in polls/models.py.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["django/databases", "django/models", "django/schemaeditor"]
-      },
-      {
-        "title": "Activating models",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify the INSTALLED_APPS setting is updated",
-            "file": "verify3.sh",
-            "hint": "add polls.apps.PollsConfig to the INSTALLED_APPS setting.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["django/contrib_packages", "django/django_admin"]
-      },
-      {
-        "title": "Playing with the API",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify def was_published_recently and __str__ are added",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["django/databases", "django/models", "django/schemaeditor"]
-      },
-      {
-        "title": "Introducing the Django Admin",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "Verify the Django Admin is running",
-            "file": "verify5.sh",
-            "hint": "Please make sure the Django Admin is running on 127.0.0.1:8000/admin.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "django/contrib_packages",
-          "django/databases",
-          "django/models",
-          "django/schemaeditor"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "*.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
-  "contributors": []
+  "contributors": [],
+  "assets": {
+    "host01": [
+      {
+        "file": "*.zip",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Set Up the Database",
+      "description": "This tutorial begins where Creation of a Basic Poll Application left off. We'll set up the database, create your first model, and get a quick introduction to Django's automatically-generated admin site.",
+      "meta": {
+        "title": "Set Up the Database for Your Django Project",
+        "description": "Learn how to set up the database, create your first model, and get an introduction to Django's admin site.",
+        "keywords": "admin, python, database, django commands, django, django online labs, models"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Database setup",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the migrate command is executed",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/django_admin"
+            ]
+          },
+          {
+            "title": "Creating models",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify the Choice and Question class are created",
+                "file": "verify2.sh",
+                "hint": "Create the Choice and Question class in polls/models.py.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "Activating models",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify the INSTALLED_APPS setting is updated",
+                "file": "verify3.sh",
+                "hint": "add polls.apps.PollsConfig to the INSTALLED_APPS setting.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["django/contrib_packages", "django/django_admin"]
+          },
+          {
+            "title": "Playing with the API",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify def was_published_recently and __str__ are added",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "Introducing the Django Admin",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "Verify the Django Admin is running",
+                "file": "verify5.sh",
+                "hint": "Please make sure the Django Admin is running on 127.0.0.1:8000/admin.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "设置数据库",
+      "description": "本教程从“创建基本投票应用”结束的地方开始。我们将设置数据库，创建你的第一个模型，并快速介绍Django自动生成的管理站点。",
+      "meta": {
+        "title": "为你的Django项目设置数据库",
+        "description": "学习如何设置数据库，创建你的第一个模型，并了解Django的管理站点。",
+        "keywords": "管理界面,  Python, 数据库, Django命令, Django, Django在线实验, 模型"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据库设置",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否执行了迁移命令",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/django_admin"
+            ]
+          },
+          {
+            "title": "创建模型",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证是否创建了Choice和Question类",
+                "file": "verify2.sh",
+                "hint": "在polls/models.py中创建Choice和Question类。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "激活模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证INSTALLED_APPS设置是否已更新",
+                "file": "verify3.sh",
+                "hint": "将polls.apps.PollsConfig添加到INSTALLED_APPS设置中。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["django/contrib_packages", "django/django_admin"]
+          },
+          {
+            "title": "使用API",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证是否添加了was_published_recently函数和__str__方法",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          },
+          {
+            "title": "介绍Django管理界面",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Django管理界面是否正在运行",
+                "file": "verify5.sh",
+                "hint": "请确保Django管理界面在127.0.0.1:8000/admin上运行。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "django/contrib_packages",
+              "django/databases",
+              "django/models",
+              "django/schemaeditor"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

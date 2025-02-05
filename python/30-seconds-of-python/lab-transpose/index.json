@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "Matrix Transpose in Python",
-  "description": "In linear algebra, the transpose of a matrix is an operator which flips a matrix over its diagonal. The transpose of a matrix is obtained by exchanging its rows into columns. In Python, we can transpose a two-dimensional list using a simple one-liner code.",
-  "meta": {
-    "title": "Linear Algebra Transpose Matrix | Python Programming",
-    "description": "Learn how to transpose a matrix in Python using a simple one-liner code. Discover the step-by-step process and practical examples.",
-    "keywords": "linear algebra, matrix transpose, python programming, coding tutorial, matrix operations"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Transpose Matrix",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Transpose Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_transpose.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "transpose.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_transpose.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "transpose.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Matrix Transpose in Python",
+      "description": "In linear algebra, the transpose of a matrix is an operator which flips a matrix over its diagonal. The transpose of a matrix is obtained by exchanging its rows into columns. In Python, we can transpose a two-dimensional list using a simple one-liner code.",
+      "meta": {
+        "title": "Linear Algebra Transpose Matrix | Python Programming",
+        "description": "Learn how to transpose a matrix in Python using a simple one-liner code. Discover the step-by-step process and practical examples.",
+        "keywords": "linear algebra, matrix transpose, python programming, coding tutorial, matrix operations"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Transpose Matrix",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Transpose Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Python中的矩阵转置",
+      "description": "在线性代数中，矩阵的转置是一种将矩阵沿其对角线翻转的运算。矩阵的转置是通过将其行与列交换得到的。在Python中，我们可以使用一行简单的代码对二维列表进行转置。",
+      "meta": {
+        "title": "线性代数转置矩阵 | Python编程",
+        "description": "学习如何使用一行简单的代码在Python中转置矩阵。了解详细步骤和实际示例。",
+        "keywords": "线性代数, 矩阵转置, Python编程, 编码教程, 矩阵运算"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "转置矩阵",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证转置Python脚本的执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

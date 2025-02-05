@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Comparing BIRCH and MiniBatchKMeans",
-  "description": "This lab compares the timing of two clustering algorithms, BIRCH and MiniBatchKMeans, on a synthetic dataset. Both algorithms are scalable and can efficiently cluster large datasets. The synthetic dataset has 25,000 samples and two features generated using make_blobs.",
-  "meta": {
-    "title": "Comparing BIRCH and MiniBatchKMeans Clustering Algorithms",
-    "description": "Explore the performance of BIRCH and MiniBatchKMeans clustering algorithms on a synthetic dataset with 25,000 samples and 2 features.",
-    "keywords": "machine learning, scikit-learn, scikit-learn playground, birch, data analysis, clustering, minibatchkmeans"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/datasets"]
-      },
-      {
-        "title": "Generate Blobs",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Birch Model",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "MiniBatchKMeans Model",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-birch-vs-minibatchkmeans.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-birch-vs-minibatchkmeans.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Comparing BIRCH and MiniBatchKMeans",
+      "description": "This lab compares the timing of two clustering algorithms, BIRCH and MiniBatchKMeans, on a synthetic dataset. Both algorithms are scalable and can efficiently cluster large datasets. The synthetic dataset has 25,000 samples and two features generated using make_blobs.",
+      "meta": {
+        "title": "Comparing BIRCH and MiniBatchKMeans Clustering Algorithms",
+        "description": "Explore the performance of BIRCH and MiniBatchKMeans clustering algorithms on a synthetic dataset with 25,000 samples and 2 features.",
+        "keywords": "machine learning, scikit-learn, scikit-learn playground, birch, data analysis, clustering, minibatchkmeans"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/datasets"]
+          },
+          {
+            "title": "Generate Blobs",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Birch Model",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "MiniBatchKMeans Model",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "比较BIRCH和MiniBatchKMeans",
+      "description": "本实验在一个合成数据集上比较了两种聚类算法BIRCH和MiniBatchKMeans的运行时间。这两种算法都具有可扩展性，能够高效地对大型数据集进行聚类。该合成数据集有25000个样本以及使用make_blobs生成的两个特征。",
+      "meta": {
+        "title": "比较BIRCH和MiniBatchKMeans聚类算法",
+        "description": "探索BIRCH和MiniBatchKMeans聚类算法在一个包含25000个样本和2个特征的合成数据集上的性能。",
+        "keywords": "机器学习, scikit-learn, scikit-learn游乐场, BIRCH, 数据分析, 聚类, MiniBatchKMeans"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/datasets"]
+          },
+          {
+            "title": "生成数据点集",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "BIRCH模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "MiniBatchKMeans模型",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

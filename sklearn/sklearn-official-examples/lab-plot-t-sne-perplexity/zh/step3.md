@@ -1,0 +1,12 @@
+# 可视化数据
+
+我们可以使用散点图来可视化同心圆数据集。
+
+```python
+ax = plt.subplot(1, 1, 1)
+ax.scatter(X[red, 0], X[red, 1], c="r")
+ax.scatter(X[green, 0], X[green, 1], c="g")
+ax.xaxis.set_major_formatter(NullFormatter())
+ax.yaxis.set_major_formatter(NullFormatter())
+plt.axis("tight")
+```

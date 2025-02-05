@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Get Nested Value",
-  "description": "In this lab, you will learn how to use Python's dictionaries and lists to access nested values, and implement a function that retrieves the value of a nested key indicated by a given selector list.",
-  "meta": {
-    "title": "Get Nested Value in Python",
-    "description": "Learn how to retrieve the value of a nested key from a dictionary or list in Python using the get() function.",
-    "keywords": "dictionaries, lists, python, get function, nested values"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Get Nested Value",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python 3 Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_get.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "get.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_get.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "get.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Get Nested Value",
+      "description": "In this lab, you will learn how to use Python's dictionaries and lists to access nested values, and implement a function that retrieves the value of a nested key indicated by a given selector list.",
+      "meta": {
+        "title": "Get Nested Value in Python",
+        "description": "Learn how to retrieve the value of a nested key from a dictionary or list in Python using the get() function.",
+        "keywords": "dictionaries, lists, python, get function, nested values"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Get Nested Value",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python 3 Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "获取嵌套值",
+      "description": "在这个实验中，你将学习如何使用Python的字典和列表来访问嵌套值，并实现一个函数，该函数可以检索由给定选择器列表指示的嵌套键的值。",
+      "meta": {
+        "title": "在Python中获取嵌套值",
+        "description": "学习如何使用Python中的get()函数从字典或列表中检索嵌套键的值。",
+        "keywords": "字典, 列表, Python, get函数, 嵌套值"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "获取嵌套值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python 3脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

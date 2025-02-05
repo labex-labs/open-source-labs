@@ -1,70 +1,10 @@
 {
   "type": "lab",
-  "title": "Trim Multiline Text",
-  "description": "In this lab, we will explore the use of CSS to trim multiline text to a specified number of lines. By using the -webkit-line-clamp property and other related CSS properties, we can effectively limit the number of lines displayed in a block of text, making it more visually appealing and easier to read. Through this lab, you will learn how to implement this technique in your web design projects.",
-  "meta": {
-    "title": "Trim Multiline Text: Enhance Readability with CSS",
-    "description": "Learn how to use CSS to limit the number of lines displayed in multiline text, making it more visually appealing and easier to read.",
-    "keywords": "css, web design, line clamp, css practice, multiline text, responsive design, css playground, css lab, css exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Trim Multiline Text",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["css/box_model", "css/display_property", "css/selectors"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -73,5 +13,123 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Trim Multiline Text",
+      "description": "In this lab, we will explore the use of CSS to trim multiline text to a specified number of lines. By using the -webkit-line-clamp property and other related CSS properties, we can effectively limit the number of lines displayed in a block of text, making it more visually appealing and easier to read. Through this lab, you will learn how to implement this technique in your web design projects.",
+      "meta": {
+        "title": "Trim Multiline Text: Enhance Readability with CSS",
+        "description": "Learn how to use CSS to limit the number of lines displayed in multiline text, making it more visually appealing and easier to read.",
+        "keywords": "css, web design, line clamp, css practice, multiline text, responsive design, css playground, css lab, css exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Trim Multiline Text",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["css/box_model", "css/display_property", "css/selectors"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "修剪多行文本",
+      "description": "在本实验中，我们将探索如何使用CSS将多行文本修剪为指定的行数。通过使用-webkit-line-clamp属性和其他相关的CSS属性，我们可以有效地限制文本块中显示的行数，使其在视觉上更具吸引力且更易于阅读。通过本实验，你将学习如何在你的网页设计项目中实现此技术。",
+      "meta": {
+        "title": "修剪多行文本：用CSS提升可读性",
+        "description": "学习如何使用CSS限制多行文本中显示的行数，使其在视觉上更具吸引力且更易于阅读。",
+        "keywords": "CSS,网页设计,行夹, CSS实践,多行文本,响应式设计, CSS游乐场, CSS实验, CSS练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "修剪多行文本",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口8080上运行Web服务。然后，你可以刷新**Web 8080**标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["css/box_model", "css/display_property", "css/selectors"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

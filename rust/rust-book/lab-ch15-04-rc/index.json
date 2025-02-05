@@ -1,82 +1,10 @@
 {
   "type": "lab",
-  "title": "Rc<T>, the Reference Counted Smart Pointer",
-  "description": "In this lab, we will be exploring the use of Rc<T> (reference counting) in Rust for enabling multiple owners of a value by tracking the number of references to the value and ensuring it is only cleaned up when there are no owners.",
-  "meta": {
-    "title": "Rc<T>: Reference Counted Smart Pointer | Rust Programming",
-    "description": "Learn about Rc<T>, the reference counting smart pointer in Rust, and how it enables multiple ownership of values in Rust programming.",
-    "keywords": "Rust, Rc<T>, Reference Counting, Smart Pointer, Ownership, Heap Allocation"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Rc<T>, the Reference Counted Smart Pointer",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Using Rc<T> to Share Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Cloning an Rc<T> Increases the Reference Count",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -85,5 +13,161 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rc<T>, the Reference Counted Smart Pointer",
+      "description": "In this lab, we will be exploring the use of Rc<T> (reference counting) in Rust for enabling multiple owners of a value by tracking the number of references to the value and ensuring it is only cleaned up when there are no owners.",
+      "meta": {
+        "title": "Rc<T>: Reference Counted Smart Pointer | Rust Programming",
+        "description": "Learn about Rc<T>, the reference counting smart pointer in Rust, and how it enables multiple ownership of values in Rust programming.",
+        "keywords": "Rust, Rc<T>, Reference Counting, Smart Pointer, Ownership, Heap Allocation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Rc<T>, the Reference Counted Smart Pointer",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Using Rc<T> to Share Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Cloning an Rc<T> Increases the Reference Count",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rc<T>，引用计数智能指针",
+      "description": "在本实验中，我们将探索在 Rust 中使用 Rc<T>（引用计数），通过跟踪对值的引用数量并确保只有在没有所有者时才清理该值，从而实现一个值的多个所有者。",
+      "meta": {
+        "title": "Rc<T>：引用计数智能指针 | Rust 编程",
+        "description": "了解 Rust 中的引用计数智能指针 Rc<T>，以及它如何在 Rust 编程中实现值的多重所有权。",
+        "keywords": "Rust，Rc<T>，引用计数，智能指针，所有权，堆分配"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Rc<T>，引用计数智能指针",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "使用 Rc<T> 共享数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "克隆 Rc<T> 会增加引用计数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

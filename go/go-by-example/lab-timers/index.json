@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang Timer and Ticker Tutorial",
-  "description": "This lab focuses on the use of timers and tickers in Golang. Timers and tickers are useful for executing code at a specific time or repeatedly at a given interval.",
-  "meta": {
-    "title": "Timers and Tickers in Golang",
-    "description": "Explore the powerful timer and ticker features in Golang, learn how to implement cancellable timers, and discover the practical applications of these tools.",
-    "keywords": "timer, concurrency, go playground, go, golang, go labs, go playground online, time, ticker, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Timers",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Timer Firing Behavior",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/timers"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "timers.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "timers.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang Timer and Ticker Tutorial",
+      "description": "This lab focuses on the use of timers and tickers in Golang. Timers and tickers are useful for executing code at a specific time or repeatedly at a given interval.",
+      "meta": {
+        "title": "Timers and Tickers in Golang",
+        "description": "Explore the powerful timer and ticker features in Golang, learn how to implement cancellable timers, and discover the practical applications of these tools.",
+        "keywords": "timer, concurrency, go playground, go, golang, go labs, go playground online, time, ticker, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Timers",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Timer Firing Behavior",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/timers"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Golang定时器和定时触发教程",
+      "description": "本实验重点介绍Golang中定时器和定时触发的使用。定时器和定时触发对于在特定时间执行代码或按给定间隔重复执行代码很有用。",
+      "meta": {
+        "title": "Golang中的定时器和定时触发",
+        "description": "探索Golang中强大的定时器和定时触发功能，学习如何实现可取消的定时器，并发现这些工具的实际应用。",
+        "keywords": "定时器, 并发, Go游乐场, Go, Golang, Go实验, 在线Go游乐场, 时间, 定时触发, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "定时器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证定时器触发行为",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/timers"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

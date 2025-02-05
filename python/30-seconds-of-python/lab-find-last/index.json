@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Find the Last Matching Value",
-  "description": "In this lab, you will learn how to use list comprehension and the `next()` function in Python to find the value of the last element in a list that satisfies a given testing function.",
-  "meta": {
-    "title": "Python List Comprehension | Last Matching Value",
-    "description": "Learn how to use list comprehension and next() to find the last element in a list that satisfies a given testing function in Python.",
-    "keywords": "Python, List Comprehension, Last Matching Value, Programming Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Find the Last Matching Value",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Student's Find Last Operation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/iterators",
-          "python/lambda_functions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_find_last.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "find_last.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_find_last.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "find_last.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Find the Last Matching Value",
+      "description": "In this lab, you will learn how to use list comprehension and the `next()` function in Python to find the value of the last element in a list that satisfies a given testing function.",
+      "meta": {
+        "title": "Python List Comprehension | Last Matching Value",
+        "description": "Learn how to use list comprehension and next() to find the last element in a list that satisfies a given testing function in Python.",
+        "keywords": "Python, List Comprehension, Last Matching Value, Programming Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Find the Last Matching Value",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Student's Find Last Operation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/iterators",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "找到最后一个匹配值",
+      "description": "在这个实验中，你将学习如何在Python中使用列表推导式和`next()`函数来找到列表中满足给定测试函数的最后一个元素的值。",
+      "meta": {
+        "title": "Python列表推导式 | 最后一个匹配值",
+        "description": "学习如何使用列表推导式和next()来找到Python列表中满足给定测试函数的最后一个元素。",
+        "keywords": "Python, 列表推导式, 最后一个匹配值, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "找到最后一个匹配值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生的查找最后一个操作",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/iterators",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

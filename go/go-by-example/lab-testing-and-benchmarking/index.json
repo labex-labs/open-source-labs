@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Testing and Benchmarking",
-  "description": "This lab aims to demonstrate the importance of unit testing and benchmarking in writing principled Go programs. The testing package provides the tools needed to write unit tests, and the go test command runs tests.",
-  "meta": {
-    "title": "Testing and Benchmarking in Go: Ensuring Robust and Efficient Programs",
-    "description": "Discover the power of unit testing and benchmarking in writing principled Go programs. Learn how to write effective tests and measure performance.",
-    "keywords": "go playground, benchmarking, go programming, go, go labs, performance optimization, go playground online, unit testing, software testing, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Testing and Benchmarking",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Temporary Files and Directories",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/testing_and_benchmarking"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "main_test.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "main_test.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Testing and Benchmarking",
+      "description": "This lab aims to demonstrate the importance of unit testing and benchmarking in writing principled Go programs. The testing package provides the tools needed to write unit tests, and the go test command runs tests.",
+      "meta": {
+        "title": "Testing and Benchmarking in Go: Ensuring Robust and Efficient Programs",
+        "description": "Discover the power of unit testing and benchmarking in writing principled Go programs. Learn how to write effective tests and measure performance.",
+        "keywords": "go playground, benchmarking, go programming, go, go labs, performance optimization, go playground online, unit testing, software testing, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Testing and Benchmarking",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Temporary Files and Directories",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/testing_and_benchmarking"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "测试与基准测试",
+      "description": "本实验旨在展示单元测试和基准测试在编写规范的Go程序中的重要性。`testing`包提供了编写单元测试所需的工具，而`go test`命令则用于运行测试。",
+      "meta": {
+        "title": "Go语言中的测试与基准测试：确保程序稳健高效",
+        "description": "探索单元测试和基准测试在编写规范的Go程序中的强大作用。学习如何编写有效的测试并衡量性能。",
+        "keywords": "Go语言游乐场, 基准测试, Go编程, Go语言, Go实验, 性能优化, 在线Go语言游乐场, 单元测试, 软件测试, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "测试与基准测试",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证临时文件和目录",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/testing_and_benchmarking"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

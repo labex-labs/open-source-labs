@@ -1,80 +1,10 @@
 {
   "type": "lab",
-  "title": "Hover Shadow Box Animation",
-  "description": "In this lab, we will explore various CSS concepts and techniques to enhance the visual appearance of web pages. Through hands-on exercises, we will learn how to create and modify CSS rules, apply styles to HTML elements, and use CSS selectors to target specific elements. By the end of the lab, you will have a solid understanding of how to use CSS to create visually appealing and responsive web pages.",
-  "meta": {
-    "title": "Enhance Web Pages with Stunning CSS Animations",
-    "description": "Learn how to create visually appealing and responsive web pages using CSS techniques like hover shadow box animation.",
-    "keywords": "css, css exercises, web design, hover, css practice, shadow box, css playground, css lab, animation"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Hover Shadow Box Animation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/animations",
-          "css/box_model",
-          "css/colors",
-          "css/display_property",
-          "css/margin_and_padding",
-          "css/pseudo_classes",
-          "css/selectors",
-          "css/transformations",
-          "css/transitions"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -83,5 +13,143 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Hover Shadow Box Animation",
+      "description": "In this lab, we will explore various CSS concepts and techniques to enhance the visual appearance of web pages. Through hands-on exercises, we will learn how to create and modify CSS rules, apply styles to HTML elements, and use CSS selectors to target specific elements. By the end of the lab, you will have a solid understanding of how to use CSS to create visually appealing and responsive web pages.",
+      "meta": {
+        "title": "Enhance Web Pages with Stunning CSS Animations",
+        "description": "Learn how to create visually appealing and responsive web pages using CSS techniques like hover shadow box animation.",
+        "keywords": "css, css exercises, web design, hover, css practice, shadow box, css playground, css lab, animation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Hover Shadow Box Animation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/animations",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transformations",
+              "css/transitions"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "悬停阴影框动画",
+      "description": "在本实验中，我们将探索各种CSS概念和技术，以提升网页的视觉外观。通过实际操作练习，我们将学习如何创建和修改CSS规则、将样式应用于HTML元素，以及使用CSS选择器来定位特定元素。在实验结束时，你将对如何使用CSS创建视觉上吸引人且响应式的网页有扎实的理解。",
+      "meta": {
+        "title": "用惊艳的CSS动画提升网页效果",
+        "description": "学习如何使用悬停阴影框动画等CSS技术创建视觉上吸引人且响应式的网页。",
+        "keywords": "CSS, CSS练习, 网页设计, 悬停, CSS实践, 阴影框, CSS游乐场, CSS实验, 动画"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "悬停阴影框动画",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”，在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/animations",
+              "css/box_model",
+              "css/colors",
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transformations",
+              "css/transitions"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

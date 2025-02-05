@@ -1,0 +1,7 @@
+# 简介
+
+<div class="alert alert-warning" role="alert">
+<p>🧑‍💻 初次接触 Git 或 LabEx？我们建议从 <b><a style="color: unset;text-decoration: underline;" href="https://labex.io/courses/quick-start-with-git" target="_blank">Git 快速入门</a></b> 课程开始。</p>
+</div>
+
+Git 是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git 的特性之一是能够在不改变最后一次提交内容的情况下修改其作者。这在需要出于准确性或可追溯性目的更新提交作者的情况下可能会很有用。

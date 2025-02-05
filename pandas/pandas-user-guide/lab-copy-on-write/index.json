@@ -1,119 +1,10 @@
 {
   "type": "lab",
-  "title": "Pandas Copy-On-Write Implementation Guide",
-  "description": "This lab provides a step-by-step guide on understanding and implementing the concept of Copy-On-Write (CoW) in Python Pandas. CoW is an optimization strategy that enhances performance and memory usage by delaying copies as long as possible. It also helps in avoiding accidental modifications of more than one object.",
-  "meta": {
-    "title": "Copy-On-Write in Python Pandas | Programming Tutorial",
-    "description": "Explore the concept of Copy-On-Write (CoW) in Python Pandas, an optimization strategy that enhances performance and memory usage.",
-    "keywords": "Copy-On-Write, Python Pandas, Programming Tutorial, Optimization, Memory Usage"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Enabling Copy-On-Write",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/comments",
-          "python/data_analysis",
-          "python/importing_modules",
-          "python/numerical_computing",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Understanding CoW with DataFrame",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/select_columns",
-          "pandas/select_rows",
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/dictionaries",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Understanding Chained Assignment with CoW",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/conditional_selection",
-          "pandas/select_columns",
-          "python/build_in_functions",
-          "python/comments",
-          "python/dictionaries",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Implementing Chained Assignment with CoW",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "pandas/conditional_selection",
-          "pandas/select_columns",
-          "pandas/select_rows",
-          "python/build_in_functions",
-          "python/comments",
-          "python/dictionaries",
-          "python/lists",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "copy-on-write.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -122,5 +13,226 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
     "repo": "https://github.com/pandas-dev/pandas"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "copy-on-write.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Pandas Copy-On-Write Implementation Guide",
+      "description": "This lab provides a step-by-step guide on understanding and implementing the concept of Copy-On-Write (CoW) in Python Pandas. CoW is an optimization strategy that enhances performance and memory usage by delaying copies as long as possible. It also helps in avoiding accidental modifications of more than one object.",
+      "meta": {
+        "title": "Copy-On-Write in Python Pandas | Programming Tutorial",
+        "description": "Explore the concept of Copy-On-Write (CoW) in Python Pandas, an optimization strategy that enhances performance and memory usage.",
+        "keywords": "Copy-On-Write, Python Pandas, Programming Tutorial, Optimization, Memory Usage"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Enabling Copy-On-Write",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Understanding CoW with DataFrame",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/select_columns",
+              "pandas/select_rows",
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Understanding Chained Assignment with CoW",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/select_columns",
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Implementing Chained Assignment with CoW",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/select_columns",
+              "pandas/select_rows",
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/lists",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Pandas写时复制实现指南",
+      "description": "本实验提供了一份循序渐进的指南，用于理解和在Python的Pandas中实现写时复制（Copy-On-Write，简称CoW）的概念。CoW是一种优化策略，通过尽可能延迟复制来提高性能和内存使用效率。它还有助于避免意外修改多个对象。",
+      "meta": {
+        "title": "Python Pandas中的写时复制 | 编程教程",
+        "description": "探索Python Pandas中的写时复制（CoW）概念，这是一种提高性能和内存使用效率的优化策略。",
+        "keywords": "写时复制, Python Pandas, 编程教程, 优化, 内存使用"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "启用写时复制",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/data_analysis",
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "通过DataFrame理解写时复制",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/select_columns",
+              "pandas/select_rows",
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "理解写时复制下的链式赋值",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/select_columns",
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "使用写时复制实现链式赋值",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "pandas/conditional_selection",
+              "pandas/select_columns",
+              "pandas/select_rows",
+              "python/build_in_functions",
+              "python/comments",
+              "python/dictionaries",
+              "python/lists",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

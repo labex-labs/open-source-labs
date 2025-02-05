@@ -1,95 +1,10 @@
 {
   "type": "lab",
-  "title": "Feature Scaling in Machine Learning",
-  "description": "Feature scaling is an important preprocessing step for many machine learning algorithms. It involves rescaling each feature such that it has a standard deviation of 1 and a mean of 0. In this lab, we will explore the importance of feature scaling and its effect on machine learning models using the scikit-learn library in Python.",
-  "meta": {
-    "title": "Feature Scaling | Machine Learning Tutorials",
-    "description": "Explore the importance of feature scaling and its effect on machine learning models using the scikit-learn library in Python.",
-    "keywords": "feature scaling, machine learning, scikit-learn, Python, data preprocessing"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load and Prepare Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/model_selection",
-          "sklearn/preprocessing"
-        ]
-      },
-      {
-        "title": "Effect of Rescaling on a k-neighbors Model",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/inspection", "sklearn/neighbors"]
-      },
-      {
-        "title": "Effect of Rescaling on a PCA Dimensional Reduction",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/decomposition"]
-      },
-      {
-        "title": "Effect of Rescaling on Model's Performance",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/linear_model",
-          "sklearn/metrics",
-          "sklearn/pipeline"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-scaling-importance.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -98,5 +13,178 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-scaling-importance.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Feature Scaling in Machine Learning",
+      "description": "Feature scaling is an important preprocessing step for many machine learning algorithms. It involves rescaling each feature such that it has a standard deviation of 1 and a mean of 0. In this lab, we will explore the importance of feature scaling and its effect on machine learning models using the scikit-learn library in Python.",
+      "meta": {
+        "title": "Feature Scaling | Machine Learning Tutorials",
+        "description": "Explore the importance of feature scaling and its effect on machine learning models using the scikit-learn library in Python.",
+        "keywords": "feature scaling, machine learning, scikit-learn, Python, data preprocessing"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load and Prepare Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "Effect of Rescaling on a k-neighbors Model",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/inspection", "sklearn/neighbors"]
+          },
+          {
+            "title": "Effect of Rescaling on a PCA Dimensional Reduction",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/decomposition"]
+          },
+          {
+            "title": "Effect of Rescaling on Model's Performance",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/pipeline"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "机器学习中的特征缩放",
+      "description": "特征缩放是许多机器学习算法的重要预处理步骤。它涉及对每个特征进行重新缩放，使其标准差为1，均值为0。在本实验中，我们将使用Python中的scikit-learn库探讨特征缩放的重要性及其对机器学习模型的影响。",
+      "meta": {
+        "title": "特征缩放 | 机器学习教程",
+        "description": "使用Python中的scikit-learn库探讨特征缩放的重要性及其对机器学习模型的影响。",
+        "keywords": "特征缩放, 机器学习, scikit-learn, Python, 数据预处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载并准备数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/model_selection",
+              "sklearn/preprocessing"
+            ]
+          },
+          {
+            "title": "重新缩放对k近邻模型的影响",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/inspection", "sklearn/neighbors"]
+          },
+          {
+            "title": "重新缩放对主成分分析（PCA）降维的影响",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/decomposition"]
+          },
+          {
+            "title": "重新缩放对模型性能的影响",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/linear_model",
+              "sklearn/metrics",
+              "sklearn/pipeline"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

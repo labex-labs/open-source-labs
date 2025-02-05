@@ -1,0 +1,3 @@
+# 总结
+
+本教程向你展示了如何在Matplotlib中使用pcolor。我们从一个简单的pcolor演示开始，然后将pcolor与pcolormesh和imshow等类似函数进行了比较。最后，我们创建了一个带对数刻度的pcolor绘图。

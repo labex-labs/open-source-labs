@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Neighborhood Components Analysis",
-  "description": "This lab is aimed at demonstrating the use of Neighborhood Components Analysis (NCA) in learning a distance metric that maximizes the nearest neighbors classification accuracy. It provides a visual representation of this metric compared to the original point space.",
-  "meta": {
-    "title": "Neighborhood Components Analysis: Visualizing Metric Learning",
-    "description": "Explore the power of Neighborhood Components Analysis (NCA) in learning a distance metric that maximizes nearest neighbors classification accuracy.",
-    "keywords": "neighborhood components analysis, machine learning, nearest neighbors, classification, data visualization, scikit-learn, machine learning playground, scikit-learn playground, metric learning"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate Data Points",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/neighbors"]
-      },
-      {
-        "title": "Visualize Neighbors",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Learn an Embedding",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-nca-illustration.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-nca-illustration.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Neighborhood Components Analysis",
+      "description": "This lab is aimed at demonstrating the use of Neighborhood Components Analysis (NCA) in learning a distance metric that maximizes the nearest neighbors classification accuracy. It provides a visual representation of this metric compared to the original point space.",
+      "meta": {
+        "title": "Neighborhood Components Analysis: Visualizing Metric Learning",
+        "description": "Explore the power of Neighborhood Components Analysis (NCA) in learning a distance metric that maximizes nearest neighbors classification accuracy.",
+        "keywords": "neighborhood components analysis, machine learning, nearest neighbors, classification, data visualization, scikit-learn, machine learning playground, scikit-learn playground, metric learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate Data Points",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/neighbors"]
+          },
+          {
+            "title": "Visualize Neighbors",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Learn an Embedding",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "邻域成分分析",
+      "description": "本实验旨在展示如何使用邻域成分分析（NCA）来学习一种能最大化最近邻分类准确率的距离度量。它提供了与原始点空间相比的该度量的可视化表示。",
+      "meta": {
+        "title": "邻域成分分析：可视化度量学习",
+        "description": "探索邻域成分分析（NCA）在学习一种能最大化最近邻分类准确率的距离度量方面的强大功能。",
+        "keywords": "邻域成分分析, 机器学习, 最近邻, 分类, 数据可视化, scikit-learn, 机器学习游乐场, scikit-learn游乐场, 度量学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成数据点",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/neighbors"]
+          },
+          {
+            "title": "可视化邻居",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "学习一种嵌入",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

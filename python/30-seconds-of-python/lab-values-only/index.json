@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "Python Dictionaries: Key-Value Pairs",
-  "description": "Dictionaries are a fundamental data structure in Python. They allow you to store key-value pairs and are often used to represent real-world objects or concepts. In this challenge, you will be working with dictionaries and their values.",
-  "meta": {
-    "title": "Python Dictionaries | Data Structures",
-    "description": "Learn how to work with dictionaries, a fundamental data structure in Python, and explore their values in this programming tutorial.",
-    "keywords": "Python, Dictionaries, Data Structures, Key-Value Pairs, Programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Dictionary Values",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python 3 Test Values Only",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/lists",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_values_only.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "values_only.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_values_only.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "values_only.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Python Dictionaries: Key-Value Pairs",
+      "description": "Dictionaries are a fundamental data structure in Python. They allow you to store key-value pairs and are often used to represent real-world objects or concepts. In this challenge, you will be working with dictionaries and their values.",
+      "meta": {
+        "title": "Python Dictionaries | Data Structures",
+        "description": "Learn how to work with dictionaries, a fundamental data structure in Python, and explore their values in this programming tutorial.",
+        "keywords": "Python, Dictionaries, Data Structures, Key-Value Pairs, Programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Dictionary Values",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python 3 Test Values Only",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lists",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Python字典：键值对",
+      "description": "字典是Python中的一种基本数据结构。它们允许你存储键值对，并且经常用于表示现实世界中的对象或概念。在这个挑战中，你将使用字典及其值。",
+      "meta": {
+        "title": "Python字典 | 数据结构",
+        "description": "在本编程教程中，学习如何使用Python中的基本数据结构字典，并探索其值。",
+        "keywords": "Python, 字典, 数据结构, 键值对, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "字典的值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python 3测试仅取值",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lists",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

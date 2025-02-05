@@ -1,78 +1,10 @@
 {
   "type": "lab",
-  "title": "Button Fill Animation",
-  "description": "In this lab, we will learn how to create a fill animation on hover for a button using CSS. We will use the :hover pseudo-class to change the background and color of the button when the user hovers over it, and also add a transition effect to animate the changes. By the end of this lab, you will be able to enhance the user experience on your website by adding engaging hover effects to your buttons.",
-  "meta": {
-    "title": "Create Engaging Button Fill Animations with CSS",
-    "description": "Learn how to add captivating hover effects to your website buttons using CSS transitions and animations.",
-    "keywords": "css, web design, css practice, user experience, button animation, css transition, css playground, hover effect, css lab, css exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Button Fill Animation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/backgrounds",
-          "css/borders",
-          "css/colors",
-          "css/margin_and_padding",
-          "css/pseudo_classes",
-          "css/selectors",
-          "css/transitions"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -81,5 +13,139 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Button Fill Animation",
+      "description": "In this lab, we will learn how to create a fill animation on hover for a button using CSS. We will use the :hover pseudo-class to change the background and color of the button when the user hovers over it, and also add a transition effect to animate the changes. By the end of this lab, you will be able to enhance the user experience on your website by adding engaging hover effects to your buttons.",
+      "meta": {
+        "title": "Create Engaging Button Fill Animations with CSS",
+        "description": "Learn how to add captivating hover effects to your website buttons using CSS transitions and animations.",
+        "keywords": "css, web design, css practice, user experience, button animation, css transition, css playground, hover effect, css lab, css exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Button Fill Animation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/colors",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transitions"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "按钮填充动画",
+      "description": "在本实验中，我们将学习如何使用CSS为按钮创建悬停时的填充动画。我们将使用:hover伪类在用户悬停在按钮上时更改按钮的背景和颜色，并添加过渡效果来为这些更改设置动画。完成本实验后，你将能够通过为按钮添加引人入胜的悬停效果来提升网站上的用户体验。",
+      "meta": {
+        "title": "使用CSS创建引人入胜的按钮填充动画",
+        "description": "学习如何使用CSS过渡和动画为网站按钮添加迷人的悬停效果。",
+        "keywords": "CSS,网页设计,CSS实践,用户体验,按钮动画,CSS过渡,CSS游乐场,悬停效果,CSS实验,CSS练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "按钮填充动画",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口8080上运行网络服务。然后，你可以刷新**Web 8080**标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/backgrounds",
+              "css/borders",
+              "css/colors",
+              "css/margin_and_padding",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transitions"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,78 +1,10 @@
 {
   "type": "lab",
-  "title": "Managing Container File Systems",
-  "description": "By default all files created inside a container are stored on a writable container layer. That means that:",
-  "meta": {
-    "title": "Mastering Container File Systems",
-    "description": "Explore the different file storage options for Docker containers, including volumes, bind mounts, and tmpfs mounts.",
-    "keywords": "docker online playground, docker lab, online docker playground, containers, docker command line, docker playground, docker practice exercises, docker, volumes, file systems"
-  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "pro",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Volumes",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "docker/exec",
-          "docker/inspect",
-          "docker/prune",
-          "docker/rm",
-          "docker/run",
-          "docker/stop",
-          "docker/volume"
-        ]
-      },
-      {
-        "title": "Bind Mounts",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify if data/hi.txt exists",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions in step 2 carefully.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["docker/exec", "docker/run"]
-      },
-      {
-        "title": "[Optional] OverlayFS",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "vnc-instance-ubuntu:2204"
   },
@@ -81,5 +13,153 @@
     "name": "Apache-2.0",
     "url": "https://github.com/ibm/docker101/#Apache-2.0-1-ov-file",
     "repo": "https://github.com/ibm/docker101/"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Managing Container File Systems",
+      "description": "By default all files created inside a container are stored on a writable container layer. That means that:",
+      "meta": {
+        "title": "Mastering Container File Systems",
+        "description": "Explore the different file storage options for Docker containers, including volumes, bind mounts, and tmpfs mounts.",
+        "keywords": "docker online playground, docker lab, online docker playground, containers, docker command line, docker playground, docker practice exercises, docker, volumes, file systems"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Volumes",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "docker/exec",
+              "docker/inspect",
+              "docker/prune",
+              "docker/rm",
+              "docker/run",
+              "docker/stop",
+              "docker/volume"
+            ]
+          },
+          {
+            "title": "Bind Mounts",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify if data/hi.txt exists",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions in step 2 carefully.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/exec", "docker/run"]
+          },
+          {
+            "title": "[Optional] OverlayFS",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "管理容器文件系统",
+      "description": "默认情况下，容器内创建的所有文件都存储在可写的容器层上。这意味着：",
+      "meta": {
+        "title": "精通容器文件系统",
+        "description": "探索Docker容器的不同文件存储选项，包括卷、绑定挂载和tmpfs挂载。",
+        "keywords": "docker在线游乐场, docker实验, 在线docker游乐场, 容器, docker命令行, docker游乐场, docker实践练习, docker, 卷, 文件系统"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "卷",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "docker/exec",
+              "docker/inspect",
+              "docker/prune",
+              "docker/rm",
+              "docker/run",
+              "docker/stop",
+              "docker/volume"
+            ]
+          },
+          {
+            "title": "绑定挂载",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证data/hi.txt是否存在",
+                "file": "verify2.sh",
+                "hint": "请仔细按照步骤2中的说明操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["docker/exec", "docker/run"]
+          },
+          {
+            "title": "[可选] OverlayFS",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

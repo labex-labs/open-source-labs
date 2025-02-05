@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Initialize List with Values",
-  "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to initialize a list with a specific value or set of values. In this challenge, you will create a function that initializes and fills a list with the specified value.",
-  "meta": {
-    "title": "Initializing Lists with Values in Python",
-    "description": "Learn how to create and fill lists with specific values in Python.",
-    "keywords": "python, list, initialize, programming, values"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Initialize List with Values",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Initialize List with Values",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/default_arguments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_initialize_list_with_values.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "initialize_list_with_values.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_initialize_list_with_values.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "initialize_list_with_values.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Initialize List with Values",
+      "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to initialize a list with a specific value or set of values. In this challenge, you will create a function that initializes and fills a list with the specified value.",
+      "meta": {
+        "title": "Initializing Lists with Values in Python",
+        "description": "Learn how to create and fill lists with specific values in Python.",
+        "keywords": "python, list, initialize, programming, values"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Initialize List with Values",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Initialize List with Values",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "用值初始化列表",
+      "description": "在Python中，列表是一组有序且可变的项目集合。有时，我们需要用特定的值或一组值来初始化一个列表。在这个挑战中，你将创建一个函数，用指定的值初始化并填充一个列表。",
+      "meta": {
+        "title": "在Python中用值初始化列表",
+        "description": "学习如何在Python中用特定值创建和填充列表。",
+        "keywords": "Python,列表,初始化,编程,值"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "用值初始化列表",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证用值初始化列表",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

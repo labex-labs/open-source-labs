@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Update Remote Branch After Rewriting History",
-  "description": "Git is a powerful version control system that allows developers to track changes made to their codebase. One of the key features of Git is the ability to rewrite history, which can be useful when you need to make changes to previous commits. However, rewriting history can cause issues when trying to push changes to a remote repository. In this lab, you will learn how to update a remote branch after rewriting history locally.",
-  "meta": {
-    "title": "Git Playground: Rewrite History, Update Remote Branch",
-    "description": "Learn how to update a remote branch after rewriting commit history in Git, a powerful version control system for developers.",
-    "keywords": "Git, Version Control, Commit History, Remote Branch, Rewrite History"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Update Remote Branch After Rewriting History",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful forced update",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/remote"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Update Remote Branch After Rewriting History",
+      "description": "Git is a powerful version control system that allows developers to track changes made to their codebase. One of the key features of Git is the ability to rewrite history, which can be useful when you need to make changes to previous commits. However, rewriting history can cause issues when trying to push changes to a remote repository. In this lab, you will learn how to update a remote branch after rewriting history locally.",
+      "meta": {
+        "title": "Git Playground: Rewrite History, Update Remote Branch",
+        "description": "Learn how to update a remote branch after rewriting commit history in Git, a powerful version control system for developers.",
+        "keywords": "Git, Version Control, Commit History, Remote Branch, Rewrite History"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Update Remote Branch After Rewriting History",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful forced update",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/remote"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "改写历史记录后更新远程分支",
+      "description": "Git是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git的关键特性之一是能够改写历史记录，当你需要对之前的提交进行更改时，这会很有用。然而，在尝试将更改推送到远程仓库时，改写历史记录可能会导致问题。在本实验中，你将学习如何在本地改写历史记录后更新远程分支。",
+      "meta": {
+        "title": "Git实验场：改写历史记录，更新远程分支",
+        "description": "了解如何在Git（一款面向开发者的强大版本控制系统）中改写提交历史记录后更新远程分支。",
+        "keywords": "Git, 版本控制, 提交历史记录, 远程分支, 改写历史记录"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "改写历史记录后更新远程分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证强制更新是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/remote"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

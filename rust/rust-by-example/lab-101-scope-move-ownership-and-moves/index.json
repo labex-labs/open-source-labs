@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Ownership and Moves",
-  "description": "In this lab, it is explained that in Rust, variables have ownership of resources and can only have one owner, which prevents resources from being freed multiple times. When variables are assigned or function arguments are passed by value, the ownership of resources is transferred, known as a move. After the move, the previous owner can no longer be used to avoid creating dangling pointers. The code example demonstrates these concepts by showing how the ownership of stack-allocated and heap-allocated variables is transferred and how accessing a variable after its ownership has been moved leads to errors.",
-  "meta": {
-    "title": "Mastering Rust's Ownership and Moves",
-    "description": "Explore the fundamental concepts of ownership and moves in Rust, a crucial aspect of the language's memory management system.",
-    "keywords": "rust playground, rust tutor, memory management, moves, rust online compiler, ownership, rust commands, rust practice, rust online playground, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Ownership and moves",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/type_casting",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,99 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Ownership and Moves",
+      "description": "In this lab, it is explained that in Rust, variables have ownership of resources and can only have one owner, which prevents resources from being freed multiple times. When variables are assigned or function arguments are passed by value, the ownership of resources is transferred, known as a move. After the move, the previous owner can no longer be used to avoid creating dangling pointers. The code example demonstrates these concepts by showing how the ownership of stack-allocated and heap-allocated variables is transferred and how accessing a variable after its ownership has been moved leads to errors.",
+      "meta": {
+        "title": "Mastering Rust's Ownership and Moves",
+        "description": "Explore the fundamental concepts of ownership and moves in Rust, a crucial aspect of the language's memory management system.",
+        "keywords": "rust playground, rust tutor, memory management, moves, rust online compiler, ownership, rust commands, rust practice, rust online playground, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Ownership and moves",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "所有权与移动",
+      "description": "在本实验中，将解释在 Rust 中，变量拥有资源的所有权，并且只能有一个所有者，这可防止资源被多次释放。当通过值来赋值变量或传递函数参数时，资源的所有权会被转移，这称为移动。移动之后，先前的所有者不能再使用，以避免创建悬空指针。代码示例通过展示栈分配和堆分配变量的所有权如何转移，以及在变量所有权被移动后访问该变量如何导致错误，来演示这些概念。",
+      "meta": {
+        "title": "掌握 Rust 的所有权与移动",
+        "description": "探索 Rust 中所有权和移动的基本概念，这是该语言内存管理系统的一个关键方面。",
+        "keywords": "Rust 游乐场, Rust 教程, 内存管理, 移动, Rust 在线编译器, 所有权, Rust 命令, Rust 练习, Rust 在线游乐场, Rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "所有权与移动",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/type_casting",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

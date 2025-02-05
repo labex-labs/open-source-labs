@@ -1,60 +1,10 @@
 {
   "type": "lab",
-  "title": "Check if a Number is Even",
-  "description": "In this lab, you will learn how to use the modulo operator in Python to determine whether a given number is even or odd.",
-  "meta": {
-    "title": "Easily Check if a Number is Even in Python",
-    "description": "Learn how to write a simple function to determine if a given number is even or odd in Python.",
-    "keywords": "odd number, python, programming tutorial, even number, modulo"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Check if a Number is Even",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Student's Python Script Executes Correctly",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/comments",
-          "python/function_definition"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_even.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_even.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -63,5 +13,103 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_is_even.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "is_even.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Check if a Number is Even",
+      "description": "In this lab, you will learn how to use the modulo operator in Python to determine whether a given number is even or odd.",
+      "meta": {
+        "title": "Easily Check if a Number is Even in Python",
+        "description": "Learn how to write a simple function to determine if a given number is even or odd in Python.",
+        "keywords": "odd number, python, programming tutorial, even number, modulo"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Check if a Number is Even",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Student's Python Script Executes Correctly",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/function_definition"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查一个数字是否为偶数",
+      "description": "在这个实验中，你将学习如何在Python中使用取模运算符来判断一个给定的数字是偶数还是奇数。",
+      "meta": {
+        "title": "在Python中轻松检查数字是否为偶数",
+        "description": "学习如何编写一个简单函数来判断在Python中给定的数字是偶数还是奇数。",
+        "keywords": "奇数, Python, 编程教程, 偶数, 取模"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查一个数字是否为偶数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生的Python脚本是否正确执行",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/function_definition"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

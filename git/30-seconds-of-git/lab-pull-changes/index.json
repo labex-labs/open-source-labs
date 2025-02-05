@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Pull Latest Changes from Remote",
-  "description": "Git is a popular version control system that allows developers to collaborate on projects and keep track of changes made to the codebase. One of the most important features of Git is the ability to pull the latest changes from a remote repository. In this lab, you will learn how to pull the latest changes from a remote repository using Git.",
-  "meta": {
-    "title": "Git Fundamentals | Version Control | Remote Repository",
-    "description": "This lab introduces the process of pulling the latest changes from a remote Git repository, which is a crucial feature for developers working collaboratively on a project.",
-    "keywords": "Git, version control, remote repository, pull, collaboration, coding, programming"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Pull Latest Changes from Remote",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful pull",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/pull"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Pull Latest Changes from Remote",
+      "description": "Git is a popular version control system that allows developers to collaborate on projects and keep track of changes made to the codebase. One of the most important features of Git is the ability to pull the latest changes from a remote repository. In this lab, you will learn how to pull the latest changes from a remote repository using Git.",
+      "meta": {
+        "title": "Git Fundamentals | Version Control | Remote Repository",
+        "description": "This lab introduces the process of pulling the latest changes from a remote Git repository, which is a crucial feature for developers working collaboratively on a project.",
+        "keywords": "Git, version control, remote repository, pull, collaboration, coding, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Pull Latest Changes from Remote",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful pull",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/pull"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "从远程拉取最新更改",
+      "description": "Git是一种流行的版本控制系统，它允许开发人员在项目上进行协作，并跟踪对代码库所做的更改。Git最重要的特性之一是能够从远程存储库拉取最新更改。在本实验中，你将学习如何使用Git从远程存储库拉取最新更改。",
+      "meta": {
+        "title": "Git基础 | 版本控制 | 远程存储库",
+        "description": "本实验介绍了从远程Git存储库拉取最新更改的过程，这是开发人员在项目上进行协作的一项关键特性。",
+        "keywords": "Git, 版本控制, 远程存储库, 拉取, 协作, 编码, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从远程拉取最新更改",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证拉取是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/pull"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

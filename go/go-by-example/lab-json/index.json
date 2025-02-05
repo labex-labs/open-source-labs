@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang JSON Encoding and Decoding",
-  "description": "This lab aims to test your knowledge of encoding and decoding JSON data in Golang.",
-  "meta": {
-    "title": "Mastering JSON Encoding and Decoding in Golang",
-    "description": "Explore the fundamentals of encoding and decoding JSON data in Golang, including examples for basic and custom data types.",
-    "keywords": "go playground, decoding, encoding, go, json, golang, go labs, data types, go playground online, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "JSON",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go JSON Output Contains True",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/json"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "json.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "json.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang JSON Encoding and Decoding",
+      "description": "This lab aims to test your knowledge of encoding and decoding JSON data in Golang.",
+      "meta": {
+        "title": "Mastering JSON Encoding and Decoding in Golang",
+        "description": "Explore the fundamentals of encoding and decoding JSON data in Golang, including examples for basic and custom data types.",
+        "keywords": "go playground, decoding, encoding, go, json, golang, go labs, data types, go playground online, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "JSON",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go JSON Output Contains True",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/json"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言中的JSON编码与解码",
+      "description": "本实验旨在测试你在Go语言中对JSON数据进行编码和解码的知识。",
+      "meta": {
+        "title": "精通Go语言中的JSON编码与解码",
+        "description": "探索Go语言中JSON数据编码与解码的基础知识，包括基本数据类型和自定义数据类型的示例。",
+        "keywords": "Go语言游乐场, 解码, 编码, Go语言, JSON, Go实验室, 数据类型, 在线Go语言游乐场, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "JSON",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go语言的JSON输出包含True",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/json"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,47 +1,10 @@
 {
   "type": "lab",
-  "title": "Conditional Compilation with Rust's cfg Attribute",
-  "description": "In this lab, you will learn about the cfg attribute and cfg! macro in Rust, which allow for conditional checks in configuration and evaluation, respectively. The cfg attribute enables conditional compilation, while the cfg! macro evaluates to true or false at run-time. Code blocks using cfg! must be valid regardless of the evaluation result, unlike #[cfg] which can remove code.",
-  "meta": {
-    "title": "Rust Programming | Conditional Compilation | Configuration Checks",
-    "description": "Learn about the Rust `cfg` attribute and `cfg!` macro for conditional compilation and run-time checks. Explore how to use these features to build robust and adaptable Rust applications.",
-    "keywords": "Rust, Conditional Compilation, Configuration Checks, `cfg` Attribute, `cfg!` Macro"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "cfg",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/string_type"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -50,5 +13,91 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Conditional Compilation with Rust's cfg Attribute",
+      "description": "In this lab, you will learn about the cfg attribute and cfg! macro in Rust, which allow for conditional checks in configuration and evaluation, respectively. The cfg attribute enables conditional compilation, while the cfg! macro evaluates to true or false at run-time. Code blocks using cfg! must be valid regardless of the evaluation result, unlike #[cfg] which can remove code.",
+      "meta": {
+        "title": "Rust Programming | Conditional Compilation | Configuration Checks",
+        "description": "Learn about the Rust `cfg` attribute and `cfg!` macro for conditional compilation and run-time checks. Explore how to use these features to build robust and adaptable Rust applications.",
+        "keywords": "Rust, Conditional Compilation, Configuration Checks, `cfg` Attribute, `cfg!` Macro"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "cfg",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用 Rust 的 cfg 属性进行条件编译",
+      "description": "在本实验中，你将学习 Rust 中的 cfg 属性和 cfg! 宏，它们分别允许在配置和求值中进行条件检查。cfg 属性启用条件编译，而 cfg! 宏在运行时求值为 true 或 false。与可以移除代码的 #[cfg] 不同，使用 cfg! 的代码块无论求值结果如何都必须有效。",
+      "meta": {
+        "title": "Rust 编程 | 条件编译 | 配置检查",
+        "description": "了解用于条件编译和运行时检查的 Rust `cfg` 属性和 `cfg!` 宏。探索如何使用这些功能来构建健壮且适应性强的 Rust 应用程序。",
+        "keywords": "Rust, 条件编译, 配置检查, `cfg` 属性, `cfg!` 宏"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "cfg",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

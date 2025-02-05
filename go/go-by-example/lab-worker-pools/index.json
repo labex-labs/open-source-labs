@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Worker Pool with Goroutines and Channels",
-  "description": "This lab demonstrates how to implement a worker pool using goroutines and channels.",
-  "meta": {
-    "title": "Implementing a Worker Pool with Goroutines and Channels",
-    "description": "Learn how to build a worker pool using goroutines and channels in Go programming language.",
-    "keywords": "go playground, channels, go programming, go, go labs, go playground online, go lab, worker pool, concurrent processing, goroutines"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Worker Pools",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Concurrent Worker Pools Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/worker_pools"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "worker-pools.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "worker-pools.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Worker Pool with Goroutines and Channels",
+      "description": "This lab demonstrates how to implement a worker pool using goroutines and channels.",
+      "meta": {
+        "title": "Implementing a Worker Pool with Goroutines and Channels",
+        "description": "Learn how to build a worker pool using goroutines and channels in Go programming language.",
+        "keywords": "go playground, channels, go programming, go, go labs, go playground online, go lab, worker pool, concurrent processing, goroutines"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Worker Pools",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Concurrent Worker Pools Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/worker_pools"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Goroutines和通道的工作池",
+      "description": "本实验展示了如何使用Goroutines和通道来实现一个工作池。",
+      "meta": {
+        "title": "使用Goroutines和通道实现工作池",
+        "description": "学习如何在Go编程语言中使用Goroutines和通道构建一个工作池。",
+        "keywords": "Go游乐场, 通道, Go编程, Go, Go实验, 在线Go游乐场, Go实验, 工作池, 并发处理, Goroutines"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "工作池",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证并发工作池的执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/worker_pools"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

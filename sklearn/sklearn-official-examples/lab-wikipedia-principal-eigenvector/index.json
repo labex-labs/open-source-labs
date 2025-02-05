@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Wikipedia PageRank with Randomized SVD",
-  "description": "In this lab, we will be analyzing the graph of links inside Wikipedia articles to rank articles by relative importance according to the eigenvector centrality. The traditional way to compute the principal eigenvector is to use the power iteration method. Here we will be using Martinsson's Randomized SVD algorithm implemented in scikit-learn.",
-  "meta": {
-    "title": "Analyzing Wikipedia's Link Graph with Randomized SVD",
-    "description": "Explore the power of Randomized SVD to rank Wikipedia articles by importance using eigenvector centrality.",
-    "keywords": "machine learning, graph analysis, eigenvector centrality, pagerank, randomized svd, wikipedia, scikit-learn, machine learning playground, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Download data, if not already on disk",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Load the redirect files",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Computing the Adjacency matrix",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Computing Principal Singular Vector using Randomized SVD",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/decomposition"]
-      },
-      {
-        "title": "Computing Centrality scores",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "wikipedia-principal-eigenvector.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,182 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "wikipedia-principal-eigenvector.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Wikipedia PageRank with Randomized SVD",
+      "description": "In this lab, we will be analyzing the graph of links inside Wikipedia articles to rank articles by relative importance according to the eigenvector centrality. The traditional way to compute the principal eigenvector is to use the power iteration method. Here we will be using Martinsson's Randomized SVD algorithm implemented in scikit-learn.",
+      "meta": {
+        "title": "Analyzing Wikipedia's Link Graph with Randomized SVD",
+        "description": "Explore the power of Randomized SVD to rank Wikipedia articles by importance using eigenvector centrality.",
+        "keywords": "machine learning, graph analysis, eigenvector centrality, pagerank, randomized svd, wikipedia, scikit-learn, machine learning playground, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Download data, if not already on disk",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Load the redirect files",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Computing the Adjacency matrix",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Computing Principal Singular Vector using Randomized SVD",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/decomposition"]
+          },
+          {
+            "title": "Computing Centrality scores",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用随机奇异值分解（Randomized SVD）进行维基百科页面排名",
+      "description": "在本实验中，我们将分析维基百科文章内部的链接图，以便根据特征向量中心性按相对重要性对文章进行排名。计算主特征向量的传统方法是使用幂迭代法。在这里，我们将使用scikit-learn中实现的马丁松（Martinsson）随机奇异值分解（Randomized SVD）算法。",
+      "meta": {
+        "title": "用随机奇异值分解（Randomized SVD）分析维基百科的链接图",
+        "description": "探索随机奇异值分解（Randomized SVD）利用特征向量中心性按重要性对维基百科文章进行排名的能力。",
+        "keywords": "机器学习, 图分析, 特征向量中心性, 页面排名, 随机奇异值分解, 维基百科, scikit-learn, 机器学习游乐场, scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "如果数据尚未在磁盘上，则下载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "加载重定向文件",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "计算邻接矩阵",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "使用随机奇异值分解（Randomized SVD）计算主奇异向量",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/decomposition"]
+          },
+          {
+            "title": "计算中心性得分",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

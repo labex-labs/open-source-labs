@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Timers and Tickers",
-  "description": "This lab is about using tickers in Golang. Tickers are used when you want to do something repeatedly at regular intervals.",
-  "meta": {
-    "title": "Timers and Tickers: Mastering Golang's Powerful Timing Tools",
-    "description": "Explore the power of Golang's tickers and timers to create efficient, time-based applications.",
-    "keywords": "go playground, go, golang, tickers, go labs, go playground online, tutorial, timers, programming, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Timers and Tickers",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Ticking Program Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/tickers"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "tickers.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "tickers.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Timers and Tickers",
+      "description": "This lab is about using tickers in Golang. Tickers are used when you want to do something repeatedly at regular intervals.",
+      "meta": {
+        "title": "Timers and Tickers: Mastering Golang's Powerful Timing Tools",
+        "description": "Explore the power of Golang's tickers and timers to create efficient, time-based applications.",
+        "keywords": "go playground, go, golang, tickers, go labs, go playground online, tutorial, timers, programming, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Timers and Tickers",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Ticking Program Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/tickers"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "定时器与定时器通道（Tickers）",
+      "description": "本实验是关于在Go语言中使用定时器通道（Tickers）。当你想要定期重复执行某些操作时，就会用到定时器通道（Tickers）。",
+      "meta": {
+        "title": "定时器与定时器通道（Tickers）：掌握Go语言强大的定时工具",
+        "description": "探索Go语言定时器通道（Tickers）和定时器的强大功能，以创建高效的、基于时间的应用程序。",
+        "keywords": "Go语言在线游乐场, Go语言, 定时器通道（Tickers）, Go语言实验, 在线Go语言游乐场, 教程, 定时器, 编程, Go语言实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "定时器与定时器通道（Tickers）",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证定时程序的执行",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/tickers"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

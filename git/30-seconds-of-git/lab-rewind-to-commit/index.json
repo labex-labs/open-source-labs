@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Rewind to a Specific Commit",
-  "description": "In this lab, you will learn how to use Git to rewind back to a specific commit in a repository, which can be helpful when you need to undo changes or revert to an earlier version of your code.",
-  "meta": {
-    "title": "Rewind to a Specific Commit in Git",
-    "description": "This lab introduces the use of Git's `reset` command to rewind a repository to a specific commit, which is useful for undoing changes or reverting to an earlier version of the codebase.",
-    "keywords": "revert, version control, git labs, git, commit, undo, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Rewind to a Specific Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify That Git Commit History Does Not Contain Added Files",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rewind to a Specific Commit",
+      "description": "In this lab, you will learn how to use Git to rewind back to a specific commit in a repository, which can be helpful when you need to undo changes or revert to an earlier version of your code.",
+      "meta": {
+        "title": "Rewind to a Specific Commit in Git",
+        "description": "This lab introduces the use of Git's `reset` command to rewind a repository to a specific commit, which is useful for undoing changes or reverting to an earlier version of the codebase.",
+        "keywords": "revert, version control, git labs, git, commit, undo, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Rewind to a Specific Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify That Git Commit History Does Not Contain Added Files",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "回退到特定提交",
+      "description": "在本实验中，你将学习如何使用 Git 回退到仓库中的特定提交，当你需要撤销更改或恢复到代码的早期版本时，这会很有帮助。",
+      "meta": {
+        "title": "在 Git 中回退到特定提交",
+        "description": "本实验介绍了使用 Git 的 `reset` 命令将仓库回退到特定提交，这对于撤销更改或恢复到代码库的早期版本很有用。",
+        "keywords": "恢复, 版本控制, Git 实验, Git, 提交, 撤销, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "回退到特定提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Git 提交历史中不包含已添加的文件",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

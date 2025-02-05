@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Kernel Density Estimation",
-  "description": "Kernel Density Estimation (KDE) is a non-parametric density estimation technique. In this lab, we will learn how to use KDE to generate new samples of data. We will use the scikit-learn library to implement this technique.",
-  "meta": {
-    "title": "Mastering Kernel Density Estimation for Data Generation",
-    "description": "Explore the power of Kernel Density Estimation to generate new data samples from the digits dataset using Python and scikit-learn.",
-    "keywords": "digits dataset, machine learning, principal component analysis, python, data generation, kernel density estimation, scikit-learn, machine learning playground, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/decomposition"]
-      },
-      {
-        "title": "Optimize Bandwidth",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection", "sklearn/neighbors"]
-      },
-      {
-        "title": "Generate New Samples",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-digits-kde-sampling.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,174 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-digits-kde-sampling.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Kernel Density Estimation",
+      "description": "Kernel Density Estimation (KDE) is a non-parametric density estimation technique. In this lab, we will learn how to use KDE to generate new samples of data. We will use the scikit-learn library to implement this technique.",
+      "meta": {
+        "title": "Mastering Kernel Density Estimation for Data Generation",
+        "description": "Explore the power of Kernel Density Estimation to generate new data samples from the digits dataset using Python and scikit-learn.",
+        "keywords": "digits dataset, machine learning, principal component analysis, python, data generation, kernel density estimation, scikit-learn, machine learning playground, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition"
+            ]
+          },
+          {
+            "title": "Optimize Bandwidth",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/model_selection",
+              "sklearn/neighbors"
+            ]
+          },
+          {
+            "title": "Generate New Samples",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "核密度估计",
+      "description": "核密度估计（Kernel Density Estimation，KDE）是一种非参数密度估计技术。在本实验中，我们将学习如何使用KDE生成数据的新样本。我们将使用scikit-learn库来实现这项技术。",
+      "meta": {
+        "title": "掌握用于数据生成的核密度估计",
+        "description": "探索使用Python和scikit-learn从数字数据集生成新数据样本的核密度估计的强大功能。",
+        "keywords": "数字数据集, 机器学习, 主成分分析, Python, 数据生成, 核密度估计, scikit-learn, 机器学习游乐场, scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/decomposition"
+            ]
+          },
+          {
+            "title": "优化带宽",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/model_selection",
+              "sklearn/neighbors"
+            ]
+          },
+          {
+            "title": "生成新样本",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

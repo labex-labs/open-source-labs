@@ -1,0 +1,37 @@
+# 整数转罗马数字
+
+编写一个函数 `to_roman_numeral(num)`，它接受一个介于1到3999（含）之间的整数 `num`，并返回其作为字符串的罗马数字表示形式。
+
+要将整数转换为其罗马数字表示形式，你可以使用一个查找列表，其中包含以（罗马数字值，整数）形式的元组。然后，你可以使用 `for` 循环遍历查找列表中的值，并使用 `divmod()` 用余数更新 `num`，将罗马数字表示形式添加到结果中。
+
+你的函数应返回输入整数的罗马数字表示形式。
+
+```python
+def to_roman_numeral(num):
+  lookup = [
+    (1000, 'M'),
+    (900, 'CM'),
+    (500, 'D'),
+    (400, 'CD'),
+    (100, 'C'),
+    (90, 'XC'),
+    (50, 'L'),
+    (40, 'XL'),
+    (10, 'X'),
+    (9, 'IX'),
+    (5, 'V'),
+    (4, 'IV'),
+    (1, 'I'),
+  ]
+  res = ''
+  for (n, roman) in lookup:
+    (d, num) = divmod(num, n)
+    res += roman * d
+  return res
+```
+
+```python
+to_roman_numeral(3) # 'III'
+to_roman_numeral(11) # 'XI'
+to_roman_numeral(1998) # 'MCMXCVIII'
+```

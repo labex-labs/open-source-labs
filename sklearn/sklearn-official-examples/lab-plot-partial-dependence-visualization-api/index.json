@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Advanced Plotting with Partial Dependence",
-  "description": "This tutorial will guide you through the process of plotting partial dependence curves for multiple features. The partial dependence curves are used to analyze the effect of a feature on the predicted outcome of a machine learning model while holding all other features constant. This tutorial will demonstrate how to plot partial dependence curves for a decision tree and a multi-layer perceptron on the diabetes dataset.",
-  "meta": {
-    "title": "Partial Dependence Curves | Machine Learning Tutorial",
-    "description": "Learn how to plot partial dependence curves for decision tree and multi-layer perceptron models on the diabetes dataset in this comprehensive machine learning tutorial.",
-    "keywords": "partial dependence curves, decision tree, multi-layer perceptron, diabetes dataset, machine learning, data analysis"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Train Models on the Diabetes Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plotting Partial Dependence for Two Features",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plotting Partial Dependence of the Two Models Together",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plotting Partial Dependence for One Feature",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-partial-dependence-visualization-api.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-partial-dependence-visualization-api.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Advanced Plotting with Partial Dependence",
+      "description": "This tutorial will guide you through the process of plotting partial dependence curves for multiple features. The partial dependence curves are used to analyze the effect of a feature on the predicted outcome of a machine learning model while holding all other features constant. This tutorial will demonstrate how to plot partial dependence curves for a decision tree and a multi-layer perceptron on the diabetes dataset.",
+      "meta": {
+        "title": "Partial Dependence Curves | Machine Learning Tutorial",
+        "description": "Learn how to plot partial dependence curves for decision tree and multi-layer perceptron models on the diabetes dataset in this comprehensive machine learning tutorial.",
+        "keywords": "partial dependence curves, decision tree, multi-layer perceptron, diabetes dataset, machine learning, data analysis"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Train Models on the Diabetes Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plotting Partial Dependence for Two Features",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plotting Partial Dependence of the Two Models Together",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plotting Partial Dependence for One Feature",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用局部依赖进行高级绘图",
+      "description": "本教程将指导你完成绘制多个特征的局部依赖曲线的过程。局部依赖曲线用于在保持所有其他特征不变的情况下，分析一个特征对机器学习模型预测结果的影响。本教程将演示如何在糖尿病数据集上为决策树和多层感知器绘制局部依赖曲线。",
+      "meta": {
+        "title": "局部依赖曲线 | 机器学习教程",
+        "description": "在这个全面的机器学习教程中，学习如何在糖尿病数据集上为决策树和多层感知器模型绘制局部依赖曲线。",
+        "keywords": "局部依赖曲线, 决策树, 多层感知器, 糖尿病数据集, 机器学习, 数据分析"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "在糖尿病数据集上训练模型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制两个特征的局部依赖关系",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "一起绘制两个模型的局部依赖关系",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制单个特征的局部依赖关系",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

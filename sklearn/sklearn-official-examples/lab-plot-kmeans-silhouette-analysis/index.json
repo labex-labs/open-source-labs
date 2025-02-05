@@ -1,90 +1,10 @@
 {
   "type": "lab",
-  "title": "Clustering Analysis with Silhouette Method",
-  "description": "Clustering is a popular unsupervised learning technique that involves grouping similar data points together based on their features. The Silhouette Method is a commonly used technique to determine the optimal number of clusters in a dataset. In this lab, we will use the Silhouette Method to determine the optimal number of clusters using the KMeans algorithm.",
-  "meta": {
-    "title": "Clustering Analysis | Silhouette Method | KMeans Algorithm",
-    "description": "Learn how to use the Silhouette Method to determine the optimal number of clusters in a dataset, and apply the KMeans algorithm for unsupervised clustering analysis.",
-    "keywords": "clustering, silhouette method, kmeans algorithm, unsupervised learning, data analysis"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/cluster",
-          "sklearn/datasets",
-          "sklearn/metrics"
-        ]
-      },
-      {
-        "title": "Generate Data",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Determine Optimal Number of Clusters",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Interpret Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-kmeans-silhouette-analysis.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -93,5 +13,168 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-kmeans-silhouette-analysis.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Clustering Analysis with Silhouette Method",
+      "description": "Clustering is a popular unsupervised learning technique that involves grouping similar data points together based on their features. The Silhouette Method is a commonly used technique to determine the optimal number of clusters in a dataset. In this lab, we will use the Silhouette Method to determine the optimal number of clusters using the KMeans algorithm.",
+      "meta": {
+        "title": "Clustering Analysis | Silhouette Method | KMeans Algorithm",
+        "description": "Learn how to use the Silhouette Method to determine the optimal number of clusters in a dataset, and apply the KMeans algorithm for unsupervised clustering analysis.",
+        "keywords": "clustering, silhouette method, kmeans algorithm, unsupervised learning, data analysis"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/cluster",
+              "sklearn/datasets",
+              "sklearn/metrics"
+            ]
+          },
+          {
+            "title": "Generate Data",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Determine Optimal Number of Clusters",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Interpret Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用轮廓系数法进行聚类分析",
+      "description": "聚类是一种流行的无监督学习技术，它涉及根据数据点的特征将相似的数据点分组在一起。轮廓系数法是一种常用的技术，用于确定数据集中的最佳聚类数。在本实验中，我们将使用轮廓系数法，通过KMeans算法来确定最佳聚类数。",
+      "meta": {
+        "title": "聚类分析 | 轮廓系数法 | KMeans算法",
+        "description": "了解如何使用轮廓系数法确定数据集中的最佳聚类数，并应用KMeans算法进行无监督聚类分析。",
+        "keywords": "聚类, 轮廓系数法, KMeans算法, 无监督学习, 数据分析"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/cluster",
+              "sklearn/datasets",
+              "sklearn/metrics"
+            ]
+          },
+          {
+            "title": "生成数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "确定最佳聚类数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "解读结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

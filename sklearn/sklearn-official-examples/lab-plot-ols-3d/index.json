@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Linear Regression with Sparsity Example",
-  "description": "This lab demonstrates how to perform linear regression with sparsity using the diabetes dataset from scikit-learn. We will fit only two features of the dataset and plot the results to illustrate the concept of sparsity.",
-  "meta": {
-    "title": "Linear Regression with Sparsity | Diabetes Dataset | Scikit-learn",
-    "description": "Learn how to perform linear regression with sparsity using the diabetes dataset from scikit-learn. Explore feature selection and model visualization.",
-    "keywords": "linear regression, sparsity, diabetes dataset, scikit-learn, feature selection, model visualization"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Diabetes Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fit a Linear Regression Model",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot the Results",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-ols-3d.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-ols-3d.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Linear Regression with Sparsity Example",
+      "description": "This lab demonstrates how to perform linear regression with sparsity using the diabetes dataset from scikit-learn. We will fit only two features of the dataset and plot the results to illustrate the concept of sparsity.",
+      "meta": {
+        "title": "Linear Regression with Sparsity | Diabetes Dataset | Scikit-learn",
+        "description": "Learn how to perform linear regression with sparsity using the diabetes dataset from scikit-learn. Explore feature selection and model visualization.",
+        "keywords": "linear regression, sparsity, diabetes dataset, scikit-learn, feature selection, model visualization"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Diabetes Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fit a Linear Regression Model",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot the Results",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "带稀疏性的线性回归示例",
+      "description": "本实验展示了如何使用scikit-learn中的糖尿病数据集进行带稀疏性的线性回归。我们将仅拟合数据集中的两个特征，并绘制结果以说明稀疏性的概念。",
+      "meta": {
+        "title": "带稀疏性的线性回归 | 糖尿病数据集 | Scikit-learn",
+        "description": "学习如何使用scikit-learn中的糖尿病数据集进行带稀疏性的线性回归。探索特征选择和模型可视化。",
+        "keywords": "线性回归, 稀疏性, 糖尿病数据集, Scikit-learn, 特征选择, 模型可视化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载糖尿病数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "拟合线性回归模型",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

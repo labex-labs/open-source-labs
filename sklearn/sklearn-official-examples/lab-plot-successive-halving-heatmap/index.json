@@ -1,90 +1,10 @@
 {
   "type": "lab",
-  "title": "Comparison Between Grid Search and Successive Halving",
-  "description": "This lab compares two popular parameter search algorithms in machine learning: Grid Search and Successive Halving. We will be using the scikit-learn library in Python to perform the comparison. These algorithms are used to find the best hyperparameters for a given machine learning model.",
-  "meta": {
-    "title": "Comparison of Grid Search and Successive Halving Algorithms",
-    "description": "Explore the performance of two popular hyperparameter tuning techniques in machine learning.",
-    "keywords": "machine learning, scikit-learn, parameter optimization, grid search, scikit-learn playground, hyperparameter tuning, successive halving"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import the necessary libraries and dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/experimental",
-          "sklearn/model_selection",
-          "sklearn/svm"
-        ]
-      },
-      {
-        "title": "Perform Grid Search",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Perform Successive Halving",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize the Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-successive-halving-heatmap.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -93,5 +13,168 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-successive-halving-heatmap.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Comparison Between Grid Search and Successive Halving",
+      "description": "This lab compares two popular parameter search algorithms in machine learning: Grid Search and Successive Halving. We will be using the scikit-learn library in Python to perform the comparison. These algorithms are used to find the best hyperparameters for a given machine learning model.",
+      "meta": {
+        "title": "Comparison of Grid Search and Successive Halving Algorithms",
+        "description": "Explore the performance of two popular hyperparameter tuning techniques in machine learning.",
+        "keywords": "machine learning, scikit-learn, parameter optimization, grid search, scikit-learn playground, hyperparameter tuning, successive halving"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import the necessary libraries and dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/experimental",
+              "sklearn/model_selection",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "Perform Grid Search",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Perform Successive Halving",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize the Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "网格搜索与连续减半法的比较",
+      "description": "本实验比较了机器学习中两种流行的参数搜索算法：网格搜索和连续减半法。我们将使用 Python 中的 scikit-learn 库进行比较。这些算法用于为给定的机器学习模型找到最佳超参数。",
+      "meta": {
+        "title": "网格搜索与连续减半法算法比较",
+        "description": "探索机器学习中两种流行的超参数调整技术的性能。",
+        "keywords": "机器学习, scikit-learn, 参数优化, 网格搜索, scikit-learn 游乐场, 超参数调整, 连续减半法"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库和数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/experimental",
+              "sklearn/model_selection",
+              "sklearn/svm"
+            ]
+          },
+          {
+            "title": "执行网格搜索",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "执行连续减半法",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

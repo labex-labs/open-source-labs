@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang Channel Communication with Workers",
-  "description": "In Golang, closing a channel can be used to communicate completion to the channel's receivers. This lab will demonstrate how to use a channel to communicate work to be done from the main() goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker.",
-  "meta": {
-    "title": "Closing Channels in Golang | Channel Synchronization",
-    "description": "Learn how to use channels to communicate work between goroutines and close channels when there are no more jobs in Golang.",
-    "keywords": "Golang, Channels, Closing Channels, Channel Synchronization, Goroutines"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Closing Channels",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Closing Channels Go Program Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/channels"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "closing-channels.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "closing-channels.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang Channel Communication with Workers",
+      "description": "In Golang, closing a channel can be used to communicate completion to the channel's receivers. This lab will demonstrate how to use a channel to communicate work to be done from the main() goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker.",
+      "meta": {
+        "title": "Closing Channels in Golang | Channel Synchronization",
+        "description": "Learn how to use channels to communicate work between goroutines and close channels when there are no more jobs in Golang.",
+        "keywords": "Golang, Channels, Closing Channels, Channel Synchronization, Goroutines"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Closing Channels",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Closing Channels Go Program Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言中与工作协程的通道通信",
+      "description": "在Go语言中，关闭一个通道可用于向通道的接收者传达完成信息。本实验将演示如何使用通道将main()协程中待完成的工作传达给一个工作协程，以及当工作协程没有更多任务时如何关闭通道。",
+      "meta": {
+        "title": "Go语言中关闭通道 | 通道同步",
+        "description": "学习如何在Go语言中使用通道在协程之间通信，以及在没有更多任务时关闭通道。",
+        "keywords": "Go语言, 通道, 关闭通道, 通道同步, 协程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "关闭通道",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go语言关闭通道程序的输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

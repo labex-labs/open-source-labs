@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Delete a Remote Branch",
-  "description": "In this lab, you will learn how to delete a remote branch in a Git repository, which is a common task when managing a project's codebase and collaborating with other developers.",
-  "meta": {
-    "title": "Deleting Remote Branches in Git",
-    "description": "Learn how to delete remote branches in Git, a crucial skill for maintaining a clean and organized repository.",
-    "keywords": "repository, delete, git labs, git, collaboration, git playground, remote branch"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Delete a Remote Branch",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful deletion",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/remote"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Delete a Remote Branch",
+      "description": "In this lab, you will learn how to delete a remote branch in a Git repository, which is a common task when managing a project's codebase and collaborating with other developers.",
+      "meta": {
+        "title": "Deleting Remote Branches in Git",
+        "description": "Learn how to delete remote branches in Git, a crucial skill for maintaining a clean and organized repository.",
+        "keywords": "repository, delete, git labs, git, collaboration, git playground, remote branch"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Delete a Remote Branch",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful deletion",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/remote"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "删除远程分支",
+      "description": "在本实验中，你将学习如何在Git仓库中删除远程分支，这是管理项目代码库并与其他开发者协作时的常见任务。",
+      "meta": {
+        "title": "在Git中删除远程分支",
+        "description": "学习如何在Git中删除远程分支，这是维护整洁有序仓库的关键技能。",
+        "keywords": "仓库, 删除, Git实验室, Git, 协作, Git游乐场, 远程分支"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除远程分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证删除是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/remote"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

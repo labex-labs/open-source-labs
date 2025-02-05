@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Autocorrect Git Commands",
-  "description": "In this lab, you will learn how to use Git's autocorrect feature to automatically correct mistyped Git commands, which can help improve your workflow and reduce errors when working with version control.",
-  "meta": {
-    "title": "Mastering Git Command Autocorrect",
-    "description": "Discover how to leverage Git's built-in autocorrect feature to streamline your development workflow and minimize errors.",
-    "keywords": "autocorrect, version control, git labs, git, git playground, command line, productivity"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "pro",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Autocorrect Git Commands",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that the autocorrect function is configured correctly",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/config"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Autocorrect Git Commands",
+      "description": "In this lab, you will learn how to use Git's autocorrect feature to automatically correct mistyped Git commands, which can help improve your workflow and reduce errors when working with version control.",
+      "meta": {
+        "title": "Mastering Git Command Autocorrect",
+        "description": "Discover how to leverage Git's built-in autocorrect feature to streamline your development workflow and minimize errors.",
+        "keywords": "autocorrect, version control, git labs, git, git playground, command line, productivity"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Autocorrect Git Commands",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that the autocorrect function is configured correctly",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/config"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "自动纠正 Git 命令",
+      "description": "在本实验中，你将学习如何使用 Git 的自动纠正功能来自动纠正输错的 Git 命令，这有助于在使用版本控制时改进你的工作流程并减少错误。",
+      "meta": {
+        "title": "掌握 Git 命令自动纠正",
+        "description": "探索如何利用 Git 的内置自动纠正功能来简化你的开发工作流程并将错误降至最低。",
+        "keywords": "自动纠正, 版本控制, Git 实验, Git, Git 游乐场, 命令行, 工作效率"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自动纠正 Git 命令",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证自动纠正功能是否配置正确",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/config"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

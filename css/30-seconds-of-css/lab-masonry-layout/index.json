@@ -1,80 +1,10 @@
 {
   "type": "lab",
-  "title": "Responsive Masonry Layout with CSS",
-  "description": "In this lab, we will explore the concept of masonry layout and learn how to create a visually appealing grid-like structure that is perfect for displaying images. By using CSS and HTML, we will build a responsive masonry-style layout with flexible column counts and column widths that adapts to various screen sizes. This lab will provide hands-on experience in creating an elegant and functional layout for your web pages.",
-  "meta": {
-    "title": "Masonry Layout | Responsive Grid-like Structure | Image Display",
-    "description": "Explore masonry layout and create a visually appealing grid-like structure for displaying images. Learn how to build a responsive layout with flexible column counts and widths.",
-    "keywords": "masonry layout, responsive design, grid-like structure, image display, web development, CSS, HTML"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Masonry Layout",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/display_property",
-          "css/margin_and_padding",
-          "css/media_queries",
-          "css/mixins",
-          "css/mobile_first_design",
-          "css/pseudo_classes",
-          "css/selectors",
-          "css/variables",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -83,5 +13,143 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Responsive Masonry Layout with CSS",
+      "description": "In this lab, we will explore the concept of masonry layout and learn how to create a visually appealing grid-like structure that is perfect for displaying images. By using CSS and HTML, we will build a responsive masonry-style layout with flexible column counts and column widths that adapts to various screen sizes. This lab will provide hands-on experience in creating an elegant and functional layout for your web pages.",
+      "meta": {
+        "title": "Masonry Layout | Responsive Grid-like Structure | Image Display",
+        "description": "Explore masonry layout and create a visually appealing grid-like structure for displaying images. Learn how to build a responsive layout with flexible column counts and widths.",
+        "keywords": "masonry layout, responsive design, grid-like structure, image display, web development, CSS, HTML"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Masonry Layout",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/media_queries",
+              "css/mixins",
+              "css/mobile_first_design",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/variables",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用CSS实现响应式砖石布局",
+      "description": "在本实验中，我们将探索砖石布局的概念，并学习如何创建一个视觉上吸引人的网格状结构，非常适合展示图像。通过使用CSS和HTML，我们将构建一个响应式的砖石风格布局，具有灵活的列数和列宽，能够适应各种屏幕尺寸。本实验将为你提供实践经验，帮助你为网页创建一个优雅且实用的布局。",
+      "meta": {
+        "title": "砖石布局 | 响应式网格结构 | 图像展示",
+        "description": "探索砖石布局，创建用于展示图像的视觉上吸引人的网格状结构。学习如何构建具有灵活列数和宽度的响应式布局。",
+        "keywords": "砖石布局, 响应式设计, 网格状结构, 图像展示, 网页开发, CSS, HTML"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "砖石布局",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”在端口8080上运行网络服务。然后，你可以刷新**Web 8080**标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/display_property",
+              "css/margin_and_padding",
+              "css/media_queries",
+              "css/mixins",
+              "css/mobile_first_design",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/variables",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

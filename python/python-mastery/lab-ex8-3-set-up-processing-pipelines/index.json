@@ -1,127 +1,10 @@
 {
   "type": "lab",
-  "title": "Coroutine-Powered Data Processing",
-  "description": "In this lab, you will use coroutines to set up processing pipelines for data flow between different processing elements.",
-  "meta": {
-    "title": "Coroutines | Processing Pipelines | Dataflow Programming",
-    "description": "Explore the power of coroutines in setting up efficient data processing pipelines, similar to the generator-based approach in Exercise 8.2. Learn how to leverage coroutines for seamless data flow and processing.",
-    "keywords": "coroutines, processing pipelines, dataflow programming, generator functions, data flow, programming exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "A coroutine example",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Module Imports and Function Decorators",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/keyword_arguments",
-          "python/os_system",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/while_loops",
-          "python/with_statement"
-        ],
-        "solutions": ["cofollow.py"]
-      },
-      {
-        "title": "Build some pipeline components",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python File Structure and Functionality",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/generators",
-          "python/importing_modules",
-          "python/iterators",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/while_loops"
-        ],
-        "solutions": ["coticker.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "cofollow.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "coticker.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "structure.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "validate.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "tableformat.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stocksim.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -130,5 +13,217 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "cofollow.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "coticker.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "structure.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "validate.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "tableformat.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stocksim.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Coroutine-Powered Data Processing",
+      "description": "In this lab, you will use coroutines to set up processing pipelines for data flow between different processing elements.",
+      "meta": {
+        "title": "Coroutines | Processing Pipelines | Dataflow Programming",
+        "description": "Explore the power of coroutines in setting up efficient data processing pipelines, similar to the generator-based approach in Exercise 8.2. Learn how to leverage coroutines for seamless data flow and processing.",
+        "keywords": "coroutines, processing pipelines, dataflow programming, generator functions, data flow, programming exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "A coroutine example",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Module Imports and Function Decorators",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/os_system",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/while_loops",
+              "python/with_statement"
+            ],
+            "solutions": ["cofollow.py"]
+          },
+          {
+            "title": "Build some pipeline components",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python File Structure and Functionality",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/while_loops"
+            ],
+            "solutions": ["coticker.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "由协程驱动的数据处理",
+      "description": "在本实验中，你将使用协程来设置处理管道，以实现不同处理元素之间的数据流。",
+      "meta": {
+        "title": "协程 | 处理管道 | 数据流编程",
+        "description": "探索协程在设置高效数据处理管道方面的强大功能，类似于练习8.2中基于生成器的方法。学习如何利用协程实现无缝数据流和处理。",
+        "keywords": "协程, 处理管道, 数据流编程, 生成器函数, 数据流, 编程练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "一个协程示例",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python模块导入和函数装饰器",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/keyword_arguments",
+              "python/os_system",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/while_loops",
+              "python/with_statement"
+            ],
+            "solutions": ["cofollow.py"]
+          },
+          {
+            "title": "构建一些管道组件",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python文件结构和功能",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/generators",
+              "python/importing_modules",
+              "python/iterators",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/while_loops"
+            ],
+            "solutions": ["coticker.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

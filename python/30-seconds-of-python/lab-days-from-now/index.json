@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "Calculate Days from Today",
-  "description": "In Python, you can easily calculate the date of n days from today using the datetime module. In this challenge, you will be asked to write a function that takes an integer n as input and returns the date of n days from today.",
-  "meta": {
-    "title": "Python | Date Calculation | Days From Now",
-    "description": "Learn how to easily calculate the date of n days from today using the datetime module in Python. Improve your programming skills with this helpful tutorial.",
-    "keywords": "python, date calculation, days from now, datetime module, programming tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Days from now",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/date_time",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_days_from_now.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "days_from_now.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_days_from_now.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "days_from_now.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Calculate Days from Today",
+      "description": "In Python, you can easily calculate the date of n days from today using the datetime module. In this challenge, you will be asked to write a function that takes an integer n as input and returns the date of n days from today.",
+      "meta": {
+        "title": "Python | Date Calculation | Days From Now",
+        "description": "Learn how to easily calculate the date of n days from today using the datetime module in Python. Improve your programming skills with this helpful tutorial.",
+        "keywords": "python, date calculation, days from now, datetime module, programming tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Days from now",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/date_time",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "计算从今天起的天数",
+      "description": "在Python中，你可以使用datetime模块轻松计算从今天起n天后的日期。在这个挑战中，你需要编写一个函数，该函数接受一个整数n作为输入，并返回从今天起n天后的日期。",
+      "meta": {
+        "title": "Python | 日期计算 | 从现在起的天数",
+        "description": "学习如何使用Python中的datetime模块轻松计算从今天起n天后的日期。通过这个实用教程提升你的编程技能。",
+        "keywords": "Python, 日期计算, 从现在起的天数, datetime模块, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从现在起的天数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/date_time",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

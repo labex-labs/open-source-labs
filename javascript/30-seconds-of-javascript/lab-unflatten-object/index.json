@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Unflatten Nested JavaScript Objects",
-  "description": "In this lab, we will explore how to unflatten an object with paths for keys in JavaScript. We will use nested Array.prototype.reduce() and String.prototype.split() methods to split each key with a dot delimiter and add objects against the keys. By the end of this lab, you will have a solid understanding of how to efficiently convert a flat object to a nested one.",
-  "meta": {
-    "title": "Unflatten Objects with Paths in JavaScript | Nested Reduce & Split",
-    "description": "Learn how to efficiently convert flat objects to nested ones in JavaScript using Array.prototype.reduce() and String.prototype.split().",
-    "keywords": "JavaScript, Object Manipulation, Nested Data Structures, Unflatten Object, Reduce, Split"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Unflatten Object",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Node Commands in ZSH History",
-            "file": "verify1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "javascript/arith_ops",
-          "javascript/array_methods",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/destr_assign",
-          "javascript/higher_funcs",
-          "javascript/variables"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Unflatten Nested JavaScript Objects",
+      "description": "In this lab, we will explore how to unflatten an object with paths for keys in JavaScript. We will use nested Array.prototype.reduce() and String.prototype.split() methods to split each key with a dot delimiter and add objects against the keys. By the end of this lab, you will have a solid understanding of how to efficiently convert a flat object to a nested one.",
+      "meta": {
+        "title": "Unflatten Objects with Paths in JavaScript | Nested Reduce & Split",
+        "description": "Learn how to efficiently convert flat objects to nested ones in JavaScript using Array.prototype.reduce() and String.prototype.split().",
+        "keywords": "JavaScript, Object Manipulation, Nested Data Structures, Unflatten Object, Reduce, Split"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Unflatten Object",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Node Commands in ZSH History",
+                "file": "verify1.sh",
+                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/array_methods",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/destr_assign",
+              "javascript/higher_funcs",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将JavaScript对象扁平化",
+      "description": "在本实验中，我们将探索如何在JavaScript中使用带键路径的对象来实现对象的扁平化。我们将使用嵌套的Array.prototype.reduce()和String.prototype.split()方法，以点号作为分隔符来拆分每个键，并根据这些键添加对象。完成本实验后，你将对如何有效地将扁平对象转换为嵌套对象有深入的理解。",
+      "meta": {
+        "title": "在JavaScript中使用路径扁平化对象 | 嵌套归约与拆分",
+        "description": "学习如何使用Array.prototype.reduce()和String.prototype.split()在JavaScript中有效地将扁平对象转换为嵌套对象。",
+        "keywords": "JavaScript, 对象操作, 嵌套数据结构, 扁平化对象, 归约, 拆分"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "扁平化对象",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在ZSH历史记录中验证Node命令",
+                "file": "verify1.sh",
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/array_methods",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/destr_assign",
+              "javascript/higher_funcs",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

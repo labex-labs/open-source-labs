@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Go's Range Keyword",
-  "description": "The range keyword is used to iterate over elements in a variety of data structures in Golang. In this lab, we will explore how to use range with different data structures.",
-  "meta": {
-    "title": "Golang Range Iteration | Programming Tutorials | Lab",
-    "description": "Explore the usage of the `range` keyword in Golang for iterating over various data structures, including slices, arrays, maps, and strings.",
-    "keywords": "Golang, range, slices, arrays, maps, strings, programming tutorials"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Range",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Outputs Correct Sum",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/range"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "range.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "range.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Go's Range Keyword",
+      "description": "The range keyword is used to iterate over elements in a variety of data structures in Golang. In this lab, we will explore how to use range with different data structures.",
+      "meta": {
+        "title": "Golang Range Iteration | Programming Tutorials | Lab",
+        "description": "Explore the usage of the `range` keyword in Golang for iterating over various data structures, including slices, arrays, maps, and strings.",
+        "keywords": "Golang, range, slices, arrays, maps, strings, programming tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Range",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Outputs Correct Sum",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/range"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索 Go 语言的 range 关键字",
+      "description": "在 Go 语言中，range 关键字用于遍历各种数据结构中的元素。在本实验中，我们将探索如何在不同的数据结构中使用 range。",
+      "meta": {
+        "title": "Go 语言范围迭代 | 编程教程 | 实验",
+        "description": "探索 Go 语言中 range 关键字在遍历各种数据结构（包括切片、数组、映射和字符串）中的用法。",
+        "keywords": "Go 语言, range, 切片, 数组, 映射, 字符串, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Range",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序输出正确的总和",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/range"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

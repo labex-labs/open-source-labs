@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Command-Line Flag Parsing in Go",
-  "description": "The purpose of this lab is to implement a command-line program that supports basic command-line flag parsing using the flag package in Golang.",
-  "meta": {
-    "title": "Command-Line Flags in Golang | Programming Tutorials",
-    "description": "This lab demonstrates the use of the Go `flag` package for parsing command-line flags and handling positional arguments in a command-line program.",
-    "keywords": "Golang, Command-Line Flags, Programming Tutorials, Flag Package, CLI"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Command-line flags",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Command Line Flags Program Compilation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/command_line"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "command-line-flags.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "command-line-flags.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Command-Line Flag Parsing in Go",
+      "description": "The purpose of this lab is to implement a command-line program that supports basic command-line flag parsing using the flag package in Golang.",
+      "meta": {
+        "title": "Command-Line Flags in Golang | Programming Tutorials",
+        "description": "This lab demonstrates the use of the Go `flag` package for parsing command-line flags and handling positional arguments in a command-line program.",
+        "keywords": "Golang, Command-Line Flags, Programming Tutorials, Flag Package, CLI"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Command-line flags",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Command Line Flags Program Compilation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/command_line"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 语言中的命令行标志解析",
+      "description": "本实验的目的是使用 Go 语言中的 flag 包实现一个支持基本命令行标志解析的命令行程序。",
+      "meta": {
+        "title": "Go 语言中的命令行标志 | 编程教程",
+        "description": "本实验展示了如何使用 Go 语言的 `flag` 包在命令行程序中解析命令行标志并处理位置参数。",
+        "keywords": "Go 语言, 命令行标志, 编程教程, flag 包, 命令行界面"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "命令行标志",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证命令行标志程序编译",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/command_line"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

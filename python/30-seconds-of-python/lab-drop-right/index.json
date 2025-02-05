@@ -1,62 +1,10 @@
 {
   "type": "lab",
-  "title": "Drop List Elements from the Right",
-  "description": "In this lab, you will learn how to remove elements from the right end of a list in Python using slice notation.",
-  "meta": {
-    "title": "Efficiently Remove Elements from the Right of a Python List",
-    "description": "Learn how to easily remove elements from the right end of a Python list using the drop_right() function.",
-    "keywords": "remove, python, elements, list, right"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Drop List Elements from the Right",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python3 Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_drop_right.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "drop_right.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -65,5 +13,107 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_drop_right.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "drop_right.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Drop List Elements from the Right",
+      "description": "In this lab, you will learn how to remove elements from the right end of a list in Python using slice notation.",
+      "meta": {
+        "title": "Efficiently Remove Elements from the Right of a Python List",
+        "description": "Learn how to easily remove elements from the right end of a Python list using the drop_right() function.",
+        "keywords": "remove, python, elements, list, right"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Drop List Elements from the Right",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python3 Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "从右侧删除列表元素",
+      "description": "在这个实验中，你将学习如何在Python中使用切片表示法从列表的右端删除元素。",
+      "meta": {
+        "title": "高效从Python列表右侧删除元素",
+        "description": "学习如何使用drop_right()函数轻松从Python列表的右端删除元素。",
+        "keywords": "删除, Python, 元素, 列表, 右侧"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从右侧删除列表元素",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python3脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

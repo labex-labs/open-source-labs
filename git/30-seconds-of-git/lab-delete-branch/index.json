@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Delete a Branch",
-  "description": "In this lab, you will learn how to delete a branch in a Git repository, which is a common task for managing feature development and maintaining a clean and organized codebase.",
-  "meta": {
-    "title": "Deleting Branches in Git: A Straightforward Guide",
-    "description": "Learn how to delete branches in Git to keep your repository clean and organized.",
-    "keywords": "repository, delete, git labs, branch, git, management, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Delete a Branch",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that the branch has been deleted",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/branch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Delete a Branch",
+      "description": "In this lab, you will learn how to delete a branch in a Git repository, which is a common task for managing feature development and maintaining a clean and organized codebase.",
+      "meta": {
+        "title": "Deleting Branches in Git: A Straightforward Guide",
+        "description": "Learn how to delete branches in Git to keep your repository clean and organized.",
+        "keywords": "repository, delete, git labs, branch, git, management, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Delete a Branch",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that the branch has been deleted",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "删除分支",
+      "description": "在本实验中，你将学习如何在 Git 仓库中删除分支，这是管理功能开发以及维护干净、有序代码库的常见任务。",
+      "meta": {
+        "title": "Git 中删除分支：简明指南",
+        "description": "学习如何在 Git 中删除分支，以保持你的仓库干净且有序。",
+        "keywords": "仓库, 删除, Git 实验室, 分支, Git, 管理, Git 演练场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证分支是否已被删除",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

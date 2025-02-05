@@ -1,181 +1,10 @@
 {
   "type": "lab",
-  "title": "Faces Dataset Decompositions",
-  "description": "This lab applies different unsupervised matrix decomposition (dimension reduction) methods from the module sklearn.decomposition to the Olivetti faces dataset. The Olivetti faces dataset consists of 400 faces of size 64x64 pixels from 40 individuals, each captured with different facial expressions and lighting conditions.",
-  "meta": {
-    "title": "Unsupervised Matrix Decomposition on Olivetti Faces Dataset",
-    "description": "Explore the application of various unsupervised matrix decomposition techniques on the Olivetti faces dataset, including PCA using randomized SVD.",
-    "keywords": "matrix decomposition, machine learning, pca, dimensionality reduction, unsupervised learning, olivetti faces dataset, scikit-learn, machine learning playground, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 60,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Dataset Preparation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Eigenfaces - PCA using randomized SVD",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Non-negative components - NMF",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Independent components - FastICA",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Sparse components - MiniBatchSparsePCA",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Dictionary learning",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Cluster centers - MiniBatchKMeans",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Factor Analysis components - FA",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Decomposition: Dictionary learning",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify9.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": Dictionary learning - positive dictionary",
-        "text": "step10.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify10.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": Dictionary learning - positive code",
-        "text": "step11.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify11.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": ": Dictionary learning - positive dictionary & code",
-        "text": "step12.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify12.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-faces-decomposition.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -184,5 +13,350 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-faces-decomposition.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Faces Dataset Decompositions",
+      "description": "This lab applies different unsupervised matrix decomposition (dimension reduction) methods from the module sklearn.decomposition to the Olivetti faces dataset. The Olivetti faces dataset consists of 400 faces of size 64x64 pixels from 40 individuals, each captured with different facial expressions and lighting conditions.",
+      "meta": {
+        "title": "Unsupervised Matrix Decomposition on Olivetti Faces Dataset",
+        "description": "Explore the application of various unsupervised matrix decomposition techniques on the Olivetti faces dataset, including PCA using randomized SVD.",
+        "keywords": "matrix decomposition, machine learning, pca, dimensionality reduction, unsupervised learning, olivetti faces dataset, scikit-learn, machine learning playground, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Dataset Preparation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Eigenfaces - PCA using randomized SVD",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Non-negative components - NMF",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Independent components - FastICA",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Sparse components - MiniBatchSparsePCA",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Dictionary learning",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Cluster centers - MiniBatchKMeans",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Factor Analysis components - FA",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Decomposition: Dictionary learning",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify9.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": Dictionary learning - positive dictionary",
+            "text": "en/step10.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify10.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": Dictionary learning - positive code",
+            "text": "en/step11.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify11.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": Dictionary learning - positive dictionary & code",
+            "text": "en/step12.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify12.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "人脸数据集分解",
+      "description": "本实验将模块sklearn.decomposition中不同的无监督矩阵分解（降维）方法应用于Olivetti人脸数据集。Olivetti人脸数据集由40个人的400张64x64像素大小的人脸组成，每个人脸在不同的面部表情和光照条件下拍摄。",
+      "meta": {
+        "title": "Olivetti人脸数据集上的无监督矩阵分解",
+        "description": "探索各种无监督矩阵分解技术在Olivetti人脸数据集上的应用，包括使用随机奇异值分解的主成分分析。",
+        "keywords": "矩阵分解, 机器学习, 主成分分析, 降维, 无监督学习, Olivetti人脸数据集,  scikit-learn, 机器学习游乐场, scikit-learn游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数据集准备",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "特征脸 - 使用随机奇异值分解的主成分分析",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "非负分量 - 非负矩阵分解（NMF）",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "独立成分 - 快速独立成分分析（FastICA）",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "稀疏成分 - 小批量稀疏主成分分析（MiniBatchSparsePCA）",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "字典学习",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "聚类中心 - 小批量K均值算法（MiniBatchKMeans）",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "因子分析成分 - 因子分析（FA）",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "分解：字典学习",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 字典学习 - 正字典",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify10.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 字典学习 - 正编码",
+            "text": "zh/step11.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify11.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": ": 字典学习 - 正字典与正编码",
+            "text": "zh/step12.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify12.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

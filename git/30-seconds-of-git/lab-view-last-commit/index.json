@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "View Last Commit",
-  "description": "In this lab, you will learn how to view the last commit made to a Git repository, which is a crucial feature of the popular version control system Git.",
-  "meta": {
-    "title": "View Last Commit in Git",
-    "description": "Learn how to view the last commit made to a Git repository, including the commit message, author, and date.",
-    "keywords": "version control, git labs, commit author, git, commit message, last commit, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "View Last Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful view",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "View Last Commit",
+      "description": "In this lab, you will learn how to view the last commit made to a Git repository, which is a crucial feature of the popular version control system Git.",
+      "meta": {
+        "title": "View Last Commit in Git",
+        "description": "Learn how to view the last commit made to a Git repository, including the commit message, author, and date.",
+        "keywords": "version control, git labs, commit author, git, commit message, last commit, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "View Last Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful view",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "查看最后一次提交",
+      "description": "在本实验中，你将学习如何查看对Git存储库所做的最后一次提交，这是流行的版本控制系统Git的一项关键功能。",
+      "meta": {
+        "title": "在Git中查看最后一次提交",
+        "description": "学习如何查看对Git存储库所做的最后一次提交，包括提交消息、作者和日期。",
+        "keywords": "版本控制, Git实验, 提交作者, Git, 提交消息, 最后一次提交, Git演练场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查看最后一次提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证查看是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

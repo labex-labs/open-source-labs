@@ -1,56 +1,10 @@
 {
   "type": "lab",
-  "title": "Convert Miles to Kilometers",
-  "description": "In this challenge, you will write a Python function to convert miles to kilometers. You will be given a distance in miles and you need to return the equivalent distance in kilometers.",
-  "meta": {
-    "title": "Python | Miles to Kilometers Conversion",
-    "description": "Learn how to write a Python function to convert miles to kilometers with this easy-to-follow programming tutorial.",
-    "keywords": "Python, miles to kilometers, conversion, programming, tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Miles to km",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/comments", "python/function_definition"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_miles_to_km.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "miles_to_km.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -59,5 +13,95 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_miles_to_km.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "miles_to_km.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Convert Miles to Kilometers",
+      "description": "In this challenge, you will write a Python function to convert miles to kilometers. You will be given a distance in miles and you need to return the equivalent distance in kilometers.",
+      "meta": {
+        "title": "Python | Miles to Kilometers Conversion",
+        "description": "Learn how to write a Python function to convert miles to kilometers with this easy-to-follow programming tutorial.",
+        "keywords": "Python, miles to kilometers, conversion, programming, tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Miles to km",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将英里转换为公里",
+      "description": "在这个挑战中，你将编写一个Python函数来将英里转换为公里。你会得到一个以英里为单位的距离，需要返回其等效的公里数。",
+      "meta": {
+        "title": "Python | 英里到公里的转换",
+        "description": "通过这个易于理解的编程教程，学习如何编写一个Python函数将英里转换为公里。",
+        "keywords": "Python, 英里到公里, 转换, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "英里转公里",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/comments", "python/function_definition"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

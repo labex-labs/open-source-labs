@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Test if some list elements are truthy",
-  "description": "In this lab, you will learn how to use the `any()` function in Python to check if at least one element in a list satisfies a given condition, and how to create a custom function that achieves the same functionality.",
-  "meta": {
-    "title": "Python Programming | Truthy List Elements",
-    "description": "Learn how to use the `any()` function in Python to check if at least one element in a list is truthy. Explore a function that takes a list and a function as arguments and returns true if the function returns true for at least one element.",
-    "keywords": "Python, programming, any(), truthy, list, function"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Test if some list elements are truthy",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/lambda_functions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_some.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "some.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_some.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "some.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Test if some list elements are truthy",
+      "description": "In this lab, you will learn how to use the `any()` function in Python to check if at least one element in a list satisfies a given condition, and how to create a custom function that achieves the same functionality.",
+      "meta": {
+        "title": "Python Programming | Truthy List Elements",
+        "description": "Learn how to use the `any()` function in Python to check if at least one element in a list is truthy. Explore a function that takes a list and a function as arguments and returns true if the function returns true for at least one element.",
+        "keywords": "Python, programming, any(), truthy, list, function"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Test if some list elements are truthy",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "测试列表中是否有某些元素为真值",
+      "description": "在这个实验中，你将学习如何在 Python 中使用 `any()` 函数来检查列表中是否至少有一个元素满足给定条件，以及如何创建一个实现相同功能的自定义函数。",
+      "meta": {
+        "title": "Python编程 | 真值列表元素",
+        "description": "学习如何在Python中使用 `any()` 函数来检查列表中是否至少有一个元素为真值。探索一个以列表和函数作为参数的函数，如果该函数对至少一个元素返回真值，则返回true。",
+        "keywords": "Python,编程,any(),真值,列表,函数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "测试列表中是否有某些元素为真值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,104 +1,10 @@
 {
   "type": "lab",
-  "title": "References and Borrowing",
-  "description": "In this lab, we learn how to use references in Rust to borrow values rather than taking ownership, allowing us to pass and manipulate data without needing to return ownership back to the calling function.",
-  "meta": {
-    "title": "References and Borrowing in Rust",
-    "description": "Learn how to use references in Rust to borrow values and pass data without transferring ownership.",
-    "keywords": "rust playground, rust tutor, rust online compiler, data manipulation, ownership, references, borrowing, rust commands, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "References and Borrowing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Mutable References",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Dangling References",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "The Rules of References",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -107,5 +13,205 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "References and Borrowing",
+      "description": "In this lab, we learn how to use references in Rust to borrow values rather than taking ownership, allowing us to pass and manipulate data without needing to return ownership back to the calling function.",
+      "meta": {
+        "title": "References and Borrowing in Rust",
+        "description": "Learn how to use references in Rust to borrow values and pass data without transferring ownership.",
+        "keywords": "rust playground, rust tutor, rust online compiler, data manipulation, ownership, references, borrowing, rust commands, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "References and Borrowing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Mutable References",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Dangling References",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "The Rules of References",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "引用与借用",
+      "description": "在本实验中，我们学习如何在Rust中使用引用来借用值，而不是获取所有权，这使我们能够传递和操作数据，而无需将所有权返回给调用函数。",
+      "meta": {
+        "title": "Rust中的引用与借用",
+        "description": "学习如何在Rust中使用引用来借用值并传递数据而不转移所有权。",
+        "keywords": "Rust游乐场, Rust教程, Rust在线编译器, 数据操作, 所有权, 引用, 借用, Rust命令, Rust练习, Rust在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "引用与借用",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "可变引用",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "悬垂引用",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "引用规则",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

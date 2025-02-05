@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "React usePrevious Hook",
-  "description": "In this lab, we will explore the use of the usePrevious hook in React. This custom hook allows us to store the previous state or props of a component, which can be useful in a variety of scenarios. By creating a simple counter component and using the usePrevious hook, we will demonstrate how to implement this functionality in your React projects.",
-  "meta": {
-    "title": "Mastering the usePrevious Hook in React",
-    "description": "Explore the power of the usePrevious hook in React, a versatile tool for managing component state and props.",
-    "keywords": "useprevious, component, hook, react, state management"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React usePrevious Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/event_handling",
-          "react/hooks",
-          "react/jsx",
-          "react/use_state_reducer"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React usePrevious Hook",
+      "description": "In this lab, we will explore the use of the usePrevious hook in React. This custom hook allows us to store the previous state or props of a component, which can be useful in a variety of scenarios. By creating a simple counter component and using the usePrevious hook, we will demonstrate how to implement this functionality in your React projects.",
+      "meta": {
+        "title": "Mastering the usePrevious Hook in React",
+        "description": "Explore the power of the usePrevious hook in React, a versatile tool for managing component state and props.",
+        "keywords": "useprevious, component, hook, react, state management"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React usePrevious Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React usePrevious 钩子",
+      "description": "在本实验中，我们将探索在 React 中使用 usePrevious 钩子。这个自定义钩子使我们能够存储组件的上一个状态或属性，这在各种场景中都很有用。通过创建一个简单的计数器组件并使用 usePrevious 钩子，我们将演示如何在你的 React 项目中实现此功能。",
+      "meta": {
+        "title": "掌握 React 中的 usePrevious 钩子",
+        "description": "探索 React 中 usePrevious 钩子的强大功能，这是一个用于管理组件状态和属性的多功能工具。",
+        "keywords": "useprevious, 组件, 钩子, React, 状态管理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React usePrevious 钩子",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Unsupervised Learning: Seeking Representations of the Data",
-  "description": "In this lab, we will explore the concept of unsupervised learning, specifically clustering and decomposition. Unsupervised learning is a type of machine learning where we don't have labeled data to train on. Instead, we try to find patterns or structures in the data without any prior knowledge. Clustering is a common unsupervised learning technique used to group similar observations together. Decomposition, on the other hand, is used to find a lower-dimensional representation of the data by extracting the most important features or components.",
-  "meta": {
-    "title": "Unsupervised Learning: Exploring Clustering and Decomposition",
-    "description": "Discover the power of unsupervised learning techniques like clustering and decomposition to uncover hidden patterns in your data.",
-    "keywords": "machine learning, k means, unsupervised learning, machine learning playground, decomposition, data analysis, clustering"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Clustering using K-means",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Clustering Evaluation",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Vector Quantization",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "05-unsupervised-learning.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "05-unsupervised-learning.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Unsupervised Learning: Seeking Representations of the Data",
+      "description": "In this lab, we will explore the concept of unsupervised learning, specifically clustering and decomposition. Unsupervised learning is a type of machine learning where we don't have labeled data to train on. Instead, we try to find patterns or structures in the data without any prior knowledge. Clustering is a common unsupervised learning technique used to group similar observations together. Decomposition, on the other hand, is used to find a lower-dimensional representation of the data by extracting the most important features or components.",
+      "meta": {
+        "title": "Unsupervised Learning: Exploring Clustering and Decomposition",
+        "description": "Discover the power of unsupervised learning techniques like clustering and decomposition to uncover hidden patterns in your data.",
+        "keywords": "machine learning, k means, unsupervised learning, machine learning playground, decomposition, data analysis, clustering"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Clustering using K-means",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Clustering Evaluation",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Vector Quantization",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "无监督学习：探寻数据的表示",
+      "description": "在本实验中，我们将探索无监督学习的概念，特别是聚类和分解。无监督学习是机器学习的一种类型，在这种学习中我们没有带标签的数据来进行训练。相反，我们尝试在没有任何先验知识的情况下在数据中找到模式或结构。聚类是一种常见的无监督学习技术，用于将相似的观测值分组在一起。另一方面，分解用于通过提取最重要的特征或成分来找到数据的低维表示。",
+      "meta": {
+        "title": "无监督学习：探索聚类和分解",
+        "description": "发现聚类和分解等无监督学习技术在揭示数据中隐藏模式方面的强大力量。",
+        "keywords": "机器学习, K均值, 无监督学习, 机器学习平台, 分解, 数据分析, 聚类"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用K均值进行聚类",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "聚类评估",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "矢量量化",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

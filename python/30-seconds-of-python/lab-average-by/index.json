@@ -1,65 +1,10 @@
 {
   "type": "lab",
-  "title": "Mapped List Average",
-  "description": "In this lab, we explore the use of the `map()` and `sum()` functions in Python to calculate the average of a list of elements after applying a provided mapping function to each element.",
-  "meta": {
-    "title": "Mapped List Average: Efficient Python Calculations",
-    "description": "This lab explores the use of the `map()` and `sum()` functions in Python to calculate the average of a list of elements after applying a provided mapping function to each element.",
-    "keywords": "python, sum, list, map, average"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Mapped List Average",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Average Calculation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/default_arguments",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/lambda_functions",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_average_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "average_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -68,5 +13,113 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_average_by.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "average_by.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Mapped List Average",
+      "description": "In this lab, we explore the use of the `map()` and `sum()` functions in Python to calculate the average of a list of elements after applying a provided mapping function to each element.",
+      "meta": {
+        "title": "Mapped List Average: Efficient Python Calculations",
+        "description": "This lab explores the use of the `map()` and `sum()` functions in Python to calculate the average of a list of elements after applying a provided mapping function to each element.",
+        "keywords": "python, sum, list, map, average"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Mapped List Average",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Average Calculation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "映射列表的平均值",
+      "description": "在这个实验中，我们探索如何在Python中使用`map()`和`sum()`函数，在对列表中的每个元素应用提供的映射函数后，计算该列表元素的平均值。",
+      "meta": {
+        "title": "映射列表的平均值：高效的Python计算",
+        "description": "本实验探索如何在Python中使用`map()`和`sum()`函数，在对列表中的每个元素应用提供的映射函数后，计算该列表元素的平均值。",
+        "keywords": "Python, 求和, 列表, 映射, 平均值"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "映射列表的平均值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证平均值计算",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/default_arguments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

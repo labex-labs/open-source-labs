@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Create an Empty Commit",
-  "description": "In Git, a commit is a snapshot of the changes made to a repository. Each commit has a message that describes the changes made. Sometimes, you may need to create an empty commit with no changes to serve as a placeholder or to trigger a build process. In this lab, you will learn how to create an empty commit in Git.",
-  "meta": {
-    "title": "Create an Empty Commit in Git",
-    "description": "Learn how to create an empty commit in Git to trigger a build process, create a placeholder, or mark a specific point in the repository's history.",
-    "keywords": "empty commit, git labs, git, build process, repository history, placeholder, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create an Empty Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for an empty commit",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Create an Empty Commit",
+      "description": "In Git, a commit is a snapshot of the changes made to a repository. Each commit has a message that describes the changes made. Sometimes, you may need to create an empty commit with no changes to serve as a placeholder or to trigger a build process. In this lab, you will learn how to create an empty commit in Git.",
+      "meta": {
+        "title": "Create an Empty Commit in Git",
+        "description": "Learn how to create an empty commit in Git to trigger a build process, create a placeholder, or mark a specific point in the repository's history.",
+        "keywords": "empty commit, git labs, git, build process, repository history, placeholder, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create an Empty Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for an empty commit",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "创建空提交",
+      "description": "在Git中，提交是对存储库所做更改的快照。每个提交都有一条描述所做更改的消息。有时，你可能需要创建一个没有更改的空提交，用作占位符或触发构建过程。在本实验中，你将学习如何在Git中创建空提交。",
+      "meta": {
+        "title": "在Git中创建空提交",
+        "description": "学习如何在Git中创建空提交以触发构建过程、创建占位符或在存储库历史记录中标记特定点。",
+        "keywords": "空提交, Git实验, Git, 构建过程, 存储库历史记录, 占位符, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建空提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证空提交",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

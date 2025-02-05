@@ -1,67 +1,10 @@
 {
   "type": "lab",
-  "title": "Convert Number to Digit List in Python",
-  "description": "In this lab, you will learn how to convert a number into a list of its digits using Python's built-in functions and data structures.",
-  "meta": {
-    "title": "Python Digit Conversion | Number to List of Digits | Lab",
-    "description": "This lab introduces the process of converting a number into a list of its individual digits in Python, which can be useful for various applications such as performing mathematical operations on individual digits or manipulating numbers in a more granular way.",
-    "keywords": "Python, digit conversion, number to list, digit manipulation, programming tutorial"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Digitize Number",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Student's Python 3 Digitize Operation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/function_definition",
-          "python/lists",
-          "python/numeric_types",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_digitize.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "digitize.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -70,5 +13,117 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_digitize.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "digitize.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Convert Number to Digit List in Python",
+      "description": "In this lab, you will learn how to convert a number into a list of its digits using Python's built-in functions and data structures.",
+      "meta": {
+        "title": "Python Digit Conversion | Number to List of Digits | Lab",
+        "description": "This lab introduces the process of converting a number into a list of its individual digits in Python, which can be useful for various applications such as performing mathematical operations on individual digits or manipulating numbers in a more granular way.",
+        "keywords": "Python, digit conversion, number to list, digit manipulation, programming tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Digitize Number",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Student's Python 3 Digitize Operation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在 Python 中将数字转换为数字列表",
+      "description": "在这个实验中，你将学习如何使用 Python 的内置函数和数据结构将一个数字转换为其各个数位组成的列表。",
+      "meta": {
+        "title": "Python 数字转换 | 数字转列表 | 实验",
+        "description": "本实验介绍了在 Python 中将数字转换为其各个数位组成的列表的过程，这在各种应用中都很有用，比如对各个数位进行数学运算，或者以更精细的方式处理数字。",
+        "keywords": "Python, 数字转换, 数字转列表, 数位操作, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将数字数位化",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生的 Python 3 数位化操作",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

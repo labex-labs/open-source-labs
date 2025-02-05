@@ -1,61 +1,10 @@
 {
   "type": "lab",
-  "title": "Last List Element",
-  "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to access the last element of a list. In this challenge, you will write a function that returns the last element of a list.",
-  "meta": {
-    "title": "Accessing the Last Element in a Python List",
-    "description": "Learn how to use a simple function to retrieve the last element in a Python list.",
-    "keywords": "python, list, tutorial, last element, programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Last List Element",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python 3 Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_last.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "last.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -64,5 +13,105 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_last.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "last.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Last List Element",
+      "description": "In Python, a list is a collection of items that are ordered and changeable. Sometimes, we need to access the last element of a list. In this challenge, you will write a function that returns the last element of a list.",
+      "meta": {
+        "title": "Accessing the Last Element in a Python List",
+        "description": "Learn how to use a simple function to retrieve the last element in a Python list.",
+        "keywords": "python, list, tutorial, last element, programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Last List Element",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python 3 Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "列表的最后一个元素",
+      "description": "在Python中，列表是一组有序且可变的项目集合。有时，我们需要访问列表的最后一个元素。在这个挑战中，你将编写一个返回列表最后一个元素的函数。",
+      "meta": {
+        "title": "在Python列表中访问最后一个元素",
+        "description": "学习如何使用一个简单函数来获取Python列表中的最后一个元素。",
+        "keywords": "Python, 列表, 教程, 最后一个元素, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列表的最后一个元素",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python 3脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

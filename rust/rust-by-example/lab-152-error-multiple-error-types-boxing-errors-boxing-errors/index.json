@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Handling Errors with Box in Rust",
-  "description": "In this lab, the code demonstrates how to use the Box type to preserve original errors by wrapping them, allowing for dynamic error handling, and the Std library's From trait helps in converting any type that implements the Error trait into the trait object Box<Error>. It includes an example of converting and handling errors using Box with a custom error type.",
-  "meta": {
-    "title": "Rust Error Handling | Box Error Wrapping",
-    "description": "Learn how to use the Rust Box type to preserve original errors, handle dynamic error types, and convert errors to Box<Error> with the From trait.",
-    "keywords": "Rust, error handling, Box, dynamic errors, error conversion, From trait"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Boxing errors",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,99 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Handling Errors with Box in Rust",
+      "description": "In this lab, the code demonstrates how to use the Box type to preserve original errors by wrapping them, allowing for dynamic error handling, and the Std library's From trait helps in converting any type that implements the Error trait into the trait object Box<Error>. It includes an example of converting and handling errors using Box with a custom error type.",
+      "meta": {
+        "title": "Rust Error Handling | Box Error Wrapping",
+        "description": "Learn how to use the Rust Box type to preserve original errors, handle dynamic error types, and convert errors to Box<Error> with the From trait.",
+        "keywords": "Rust, error handling, Box, dynamic errors, error conversion, From trait"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Boxing errors",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在 Rust 中使用 Box 处理错误",
+      "description": "在本实验中，代码展示了如何使用 Box 类型通过包装来保留原始错误，从而实现动态错误处理，并且 Std 库的 From 特性有助于将任何实现 Error 特性的类型转换为特性对象 Box<Error>。它包含一个使用 Box 和自定义错误类型进行错误转换和处理的示例。",
+      "meta": {
+        "title": "Rust 错误处理 | Box 错误包装",
+        "description": "了解如何使用 Rust 的 Box 类型来保留原始错误、处理动态错误类型以及通过 From 特性将错误转换为 Box<Error>。",
+        "keywords": "Rust, 错误处理, Box, 动态错误, 错误转换, From 特性"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "用 Box 包装错误",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

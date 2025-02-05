@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang Constants Comprehension",
-  "description": "This lab aims to test your understanding of constants in Golang.",
-  "meta": {
-    "title": "Mastering Golang Constants",
-    "description": "Explore the power of constants in Golang through this comprehensive tutorial, covering character, string, boolean, and numeric values.",
-    "keywords": "go playground, constants, go practice, go, golang, go labs, go playground online, tutorial, programming, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Constants",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Run Constant File Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/constants"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "constants.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "constants.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang Constants Comprehension",
+      "description": "This lab aims to test your understanding of constants in Golang.",
+      "meta": {
+        "title": "Mastering Golang Constants",
+        "description": "Explore the power of constants in Golang through this comprehensive tutorial, covering character, string, boolean, and numeric values.",
+        "keywords": "go playground, constants, go practice, go, golang, go labs, go playground online, tutorial, programming, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Constants",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Run Constant File Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/constants"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "理解Go语言中的常量",
+      "description": "本实验旨在测试你对Go语言中常量的理解。",
+      "meta": {
+        "title": "掌握Go语言常量",
+        "description": "通过本全面教程探索Go语言中常量的强大功能，涵盖字符、字符串、布尔值和数值类型。",
+        "keywords": "Go语言游乐场, 常量, Go语言练习, Go语言, 编程, Go语言实验, 在线Go语言游乐场, 教程, 编程, Go语言实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "常量",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go运行常量文件输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/constants"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

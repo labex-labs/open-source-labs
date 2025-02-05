@@ -1,77 +1,10 @@
 {
   "type": "lab",
-  "title": "Semi-Supervised Learning Algorithms",
-  "description": "In this lab, we will explore the concept of semi-supervised learning, which is a type of machine learning where some of the training data is labeled and some is unlabeled. Semi-supervised learning algorithms can leverage the unlabeled data to improve the model's performance and generalize better to new samples. This is particularly useful when we have a small amount of labeled data but a large amount of unlabeled data.",
-  "meta": {
-    "title": "Exploring Semi-Supervised Learning Algorithms",
-    "description": "Dive into the world of semi-supervised learning with this comprehensive guide on Self Training and Label Propagation algorithms.",
-    "keywords": "machine learning, semi supervised learning, self training, scikit-learn, label propagation, data science, scikit-learn playground"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Installing scikit-learn",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Self Training",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/linear_model",
-          "sklearn/semi_supervised"
-        ]
-      },
-      {
-        "title": "Label Propagation",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/semi_supervised"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "14-semi-supervised-learning.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -80,5 +13,142 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "14-semi-supervised-learning.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Semi-Supervised Learning Algorithms",
+      "description": "In this lab, we will explore the concept of semi-supervised learning, which is a type of machine learning where some of the training data is labeled and some is unlabeled. Semi-supervised learning algorithms can leverage the unlabeled data to improve the model's performance and generalize better to new samples. This is particularly useful when we have a small amount of labeled data but a large amount of unlabeled data.",
+      "meta": {
+        "title": "Exploring Semi-Supervised Learning Algorithms",
+        "description": "Dive into the world of semi-supervised learning with this comprehensive guide on Self Training and Label Propagation algorithms.",
+        "keywords": "machine learning, semi supervised learning, self training, scikit-learn, label propagation, data science, scikit-learn playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Installing scikit-learn",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Self Training",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/linear_model",
+              "sklearn/semi_supervised"
+            ]
+          },
+          {
+            "title": "Label Propagation",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/semi_supervised"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "半监督学习算法",
+      "description": "在本实验中，我们将探索半监督学习的概念，这是一种机器学习类型，其中一些训练数据是有标签的，而一些是无标签的。半监督学习算法可以利用无标签数据来提高模型的性能，并更好地泛化到新样本。当我们有少量有标签数据但大量无标签数据时，这特别有用。",
+      "meta": {
+        "title": "探索半监督学习算法",
+        "description": "通过这本关于自训练和标签传播算法的全面指南，深入了解半监督学习的世界。",
+        "keywords": "机器学习, 半监督学习, 自训练, scikit-learn, 标签传播, 数据科学, scikit-learn 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "安装scikit-learn",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "自训练",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/linear_model",
+              "sklearn/semi_supervised"
+            ]
+          },
+          {
+            "title": "标签传播",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/semi_supervised"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,140 +1,10 @@
 {
   "type": "lab",
-  "title": "Fixing Too Many Ticks in Matplotlib",
-  "description": "When working with Matplotlib, it is common to encounter unexpected tick behavior, such as too many ticks or ticks that are out of order. This is often caused by passing a list of strings instead of numbers or datetime objects, which Matplotlib treats as categorical variables by default. This lab will provide step-by-step instructions on how to fix too many ticks in Matplotlib.",
-  "meta": {
-    "title": "Fix Too Many Ticks in Matplotlib",
-    "description": "Learn how to fix unexpected tick behavior in Matplotlib, including too many ticks or ticks out of order.",
-    "keywords": "matplotlib, python, data visualization, data types, tick labels"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Check the Data Type",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "matplotlib/line_plots",
-          "python/comments",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/lists",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Convert Strings to Numeric Types",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "matplotlib/line_plots",
-          "python/comments",
-          "python/data_visualization",
-          "python/importing_modules",
-          "python/lists",
-          "python/numeric_types",
-          "python/numerical_computing",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Handle Too Many Ticks",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "matplotlib/line_plots",
-          "python/comments",
-          "python/data_visualization",
-          "python/for_loops",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/numeric_types",
-          "python/numerical_computing",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/variables_data_types",
-          "python/with_statement"
-        ]
-      },
-      {
-        "title": "Handle DateTime Ticks",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/figures_axes",
-          "matplotlib/importing_matplotlib",
-          "matplotlib/line_plots",
-          "python/comments",
-          "python/data_visualization",
-          "python/date_time",
-          "python/importing_modules",
-          "python/lists",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "ticks-too-many.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -143,5 +13,268 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "ticks-too-many.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Fixing Too Many Ticks in Matplotlib",
+      "description": "When working with Matplotlib, it is common to encounter unexpected tick behavior, such as too many ticks or ticks that are out of order. This is often caused by passing a list of strings instead of numbers or datetime objects, which Matplotlib treats as categorical variables by default. This lab will provide step-by-step instructions on how to fix too many ticks in Matplotlib.",
+      "meta": {
+        "title": "Fix Too Many Ticks in Matplotlib",
+        "description": "Learn how to fix unexpected tick behavior in Matplotlib, including too many ticks or ticks out of order.",
+        "keywords": "matplotlib, python, data visualization, data types, tick labels"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Check the Data Type",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Convert Strings to Numeric Types",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/numerical_computing",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Handle Too Many Ticks",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/for_loops",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/numerical_computing",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "Handle DateTime Ticks",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/date_time",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "解决Matplotlib中过多刻度的问题",
+      "description": "在使用Matplotlib时，经常会遇到意外的刻度行为，例如刻度过多或顺序混乱。这通常是因为传递了字符串列表而不是数字或日期时间对象，Matplotlib默认将其视为分类变量。本实验将提供逐步指导，说明如何解决Matplotlib中过多刻度的问题。",
+      "meta": {
+        "title": "解决Matplotlib中过多刻度的问题",
+        "description": "学习如何解决Matplotlib中意外的刻度行为，包括过多刻度或刻度顺序混乱的问题。",
+        "keywords": "Matplotlib, Python, 数据可视化, 数据类型, 刻度标签"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查数据类型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "将字符串转换为数值类型",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/importing_modules",
+              "python/lists",
+              "python/numeric_types",
+              "python/numerical_computing",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "处理过多的刻度",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/for_loops",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/numeric_types",
+              "python/numerical_computing",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/variables_data_types",
+              "python/with_statement"
+            ]
+          },
+          {
+            "title": "处理日期时间刻度",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/figures_axes",
+              "matplotlib/importing_matplotlib",
+              "matplotlib/line_plots",
+              "python/comments",
+              "python/data_visualization",
+              "python/date_time",
+              "python/importing_modules",
+              "python/lists",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

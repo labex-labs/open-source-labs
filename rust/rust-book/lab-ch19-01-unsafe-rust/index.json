@@ -1,197 +1,10 @@
 {
   "type": "lab",
-  "title": "Exploring Unsafe Rust Superpowers",
-  "description": "In this lab, we will explore unsafe Rust, a feature that allows us to bypass the memory safety guarantees enforced at compile time and gives us extra superpowers, while also understanding the risks and responsibilities involved in using it.",
-  "meta": {
-    "title": "Unsafe Rust | Rust Programming | Memory Safety",
-    "description": "Explore the world of Unsafe Rust, a powerful feature in the Rust programming language that allows you to bypass memory safety guarantees and unlock new capabilities.",
-    "keywords": "Unsafe Rust, Rust Programming, Memory Safety, Low-Level Systems Programming, Compiler Optimization"
-  },
   "difficulty": "Beginner",
   "time": 50,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Unsafe Rust",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Unsafe Superpowers",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Dereferencing a Raw Pointer",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/constants_usage",
-          "rust/expressions_statements",
-          "rust/integer_types",
-          "rust/mutable_variables",
-          "rust/type_casting",
-          "rust/unsafe_rust",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Calling an Unsafe Function or Method",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Creating a Safe Abstraction over Unsafe Code",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/type_casting",
-          "rust/unsafe_rust",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Using extern Functions to Call External Code",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/ffi",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/string_type",
-          "rust/unsafe_rust"
-        ]
-      },
-      {
-        "title": "Accessing or Modifying a Mutable Static Variable",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/unsafe_rust"
-        ]
-      },
-      {
-        "title": "Implementing an Unsafe Trait",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Accessing Fields of a Union",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify9.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "When to Use Unsafe Code",
-        "text": "step10.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify10.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -200,5 +13,391 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Exploring Unsafe Rust Superpowers",
+      "description": "In this lab, we will explore unsafe Rust, a feature that allows us to bypass the memory safety guarantees enforced at compile time and gives us extra superpowers, while also understanding the risks and responsibilities involved in using it.",
+      "meta": {
+        "title": "Unsafe Rust | Rust Programming | Memory Safety",
+        "description": "Explore the world of Unsafe Rust, a powerful feature in the Rust programming language that allows you to bypass memory safety guarantees and unlock new capabilities.",
+        "keywords": "Unsafe Rust, Rust Programming, Memory Safety, Low-Level Systems Programming, Compiler Optimization"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Unsafe Rust",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Unsafe Superpowers",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Dereferencing a Raw Pointer",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/constants_usage",
+              "rust/expressions_statements",
+              "rust/integer_types",
+              "rust/mutable_variables",
+              "rust/type_casting",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Calling an Unsafe Function or Method",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Creating a Safe Abstraction over Unsafe Code",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/type_casting",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Using extern Functions to Call External Code",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/ffi",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/string_type",
+              "rust/unsafe_rust"
+            ]
+          },
+          {
+            "title": "Accessing or Modifying a Mutable Static Variable",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/unsafe_rust"
+            ]
+          },
+          {
+            "title": "Implementing an Unsafe Trait",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Accessing Fields of a Union",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify9.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "When to Use Unsafe Code",
+            "text": "en/step10.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify10.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "探索不安全的 Rust 的超能力",
+      "description": "在本实验中，我们将探索不安全的 Rust，这是一项允许我们绕过编译时强制执行的内存安全保证并赋予我们额外超能力的特性，同时理解使用它所涉及的风险和责任。",
+      "meta": {
+        "title": "不安全的 Rust | Rust 编程 | 内存安全",
+        "description": "探索不安全的 Rust 的世界，这是 Rust 编程语言中的一项强大特性，它允许你绕过内存安全保证并解锁新功能。",
+        "keywords": "不安全的 Rust，Rust 编程，内存安全，低级系统编程，编译器优化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "不安全的 Rust",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "不安全的超能力",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "解引用原始指针",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/constants_usage",
+              "rust/expressions_statements",
+              "rust/integer_types",
+              "rust/mutable_variables",
+              "rust/type_casting",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "调用不安全函数或方法",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "为不安全代码创建安全抽象",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/type_casting",
+              "rust/unsafe_rust",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "使用外部函数调用外部代码",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/ffi",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/string_type",
+              "rust/unsafe_rust"
+            ]
+          },
+          {
+            "title": "访问或修改可变静态变量",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/unsafe_rust"
+            ]
+          },
+          {
+            "title": "实现一个不安全的特性",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "访问联合体的字段",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "何时使用不安全代码",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify10.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

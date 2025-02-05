@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Create a Fixup Commit",
-  "description": "In this lab, you will learn how to use Git's 'fixup' commit feature to make small changes to previous commits without disrupting the work of other contributors in a collaborative project.",
-  "meta": {
-    "title": "Mastering Git Fixup Commits: Streamline Your Workflow",
-    "description": "Learn how to create and use Git fixup commits to efficiently fix and refine your project's commit history.",
-    "keywords": "refine, git labs, workflow, git, commit history, git playground, fixup commit"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create a Fixup Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful creation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Create a Fixup Commit",
+      "description": "In this lab, you will learn how to use Git's 'fixup' commit feature to make small changes to previous commits without disrupting the work of other contributors in a collaborative project.",
+      "meta": {
+        "title": "Mastering Git Fixup Commits: Streamline Your Workflow",
+        "description": "Learn how to create and use Git fixup commits to efficiently fix and refine your project's commit history.",
+        "keywords": "refine, git labs, workflow, git, commit history, git playground, fixup commit"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create a Fixup Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful creation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "创建修正提交",
+      "description": "在本实验中，你将学习如何使用 Git 的“修正”提交功能，在协作项目中对之前的提交进行小的更改，而不会干扰其他贡献者的工作。",
+      "meta": {
+        "title": "掌握 Git 修正提交：简化你的工作流程",
+        "description": "学习如何创建和使用 Git 修正提交，以高效地修复和优化项目的提交历史记录。",
+        "keywords": "优化, Git 实验室, 工作流程, Git, 提交历史记录, Git 游乐场, 修正提交"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建修正提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证创建是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

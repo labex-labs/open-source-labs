@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "View a Visual Graph of the Repository",
-  "description": "In this lab, you will learn how to use the Git log command with various options to visualize the history of a Git repository, including viewing a graph of all commits and branches.",
-  "meta": {
-    "title": "Visualize Git Repository History with a Graph",
-    "description": "Discover how to use the Git log command with the --graph option to view a visual graph of a repository's commit history and branch structure.",
-    "keywords": "version control, repository, git labs, visualization, graph, git, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "View a Visual Graph of the Repository",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful view",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "View a Visual Graph of the Repository",
+      "description": "In this lab, you will learn how to use the Git log command with various options to visualize the history of a Git repository, including viewing a graph of all commits and branches.",
+      "meta": {
+        "title": "Visualize Git Repository History with a Graph",
+        "description": "Discover how to use the Git log command with the --graph option to view a visual graph of a repository's commit history and branch structure.",
+        "keywords": "version control, repository, git labs, visualization, graph, git, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "View a Visual Graph of the Repository",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful view",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "查看仓库的可视化图形",
+      "description": "在本实验中，你将学习如何使用带有各种选项的Git log命令来可视化Git仓库的历史记录，包括查看所有提交和分支的图形。",
+      "meta": {
+        "title": "用图形可视化Git仓库历史",
+        "description": "探索如何使用带有--graph选项的Git log命令来查看仓库提交历史和分支结构的可视化图形。",
+        "keywords": "版本控制, 仓库, Git实验, 可视化, 图形, Git, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查看仓库的可视化图形",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功查看",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

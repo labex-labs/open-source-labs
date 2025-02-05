@@ -1,69 +1,10 @@
 {
   "type": "lab",
-  "title": "Split List Into Smaller Chunks",
-  "description": "In Python, we often need to split a list into smaller lists of a specified size. This can be useful for various purposes, such as processing data in batches or displaying data in a paginated format. In this challenge, you will be tasked with writing a function that can split a list into smaller lists of a specified size.",
-  "meta": {
-    "title": "Python List Chunking | Data Processing Techniques",
-    "description": "Learn how to split a Python list into smaller chunks of a specified size for efficient data processing and pagination.",
-    "keywords": "Python, list, chunking, data processing, pagination"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Split list into chunks",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lambda_functions",
-          "python/lists",
-          "python/math_random",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_chunk.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "chunk.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -72,5 +13,121 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_chunk.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "chunk.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Split List Into Smaller Chunks",
+      "description": "In Python, we often need to split a list into smaller lists of a specified size. This can be useful for various purposes, such as processing data in batches or displaying data in a paginated format. In this challenge, you will be tasked with writing a function that can split a list into smaller lists of a specified size.",
+      "meta": {
+        "title": "Python List Chunking | Data Processing Techniques",
+        "description": "Learn how to split a Python list into smaller chunks of a specified size for efficient data processing and pagination.",
+        "keywords": "Python, list, chunking, data processing, pagination"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Split list into chunks",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lambda_functions",
+              "python/lists",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将列表拆分为更小的块",
+      "description": "在Python中，我们经常需要将一个列表拆分成指定大小的较小列表。这在各种场景中都很有用，比如批量处理数据或以分页格式显示数据。在这个挑战中，你将负责编写一个函数，该函数能够将一个列表拆分成指定大小的较小列表。",
+      "meta": {
+        "title": "Python列表分块 | 数据处理技术",
+        "description": "学习如何将Python列表拆分成指定大小的较小块，以实现高效的数据处理和分页。",
+        "keywords": "Python, 列表, 分块, 数据处理, 分页"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将列表拆分为多个块",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lambda_functions",
+              "python/lists",
+              "python/math_random",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

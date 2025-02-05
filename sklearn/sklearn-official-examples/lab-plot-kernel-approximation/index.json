@@ -1,77 +1,10 @@
 {
   "type": "lab",
-  "title": "Explicit Feature Map Approximation for RBF Kernels",
-  "description": "This lab illustrates the approximation of the feature map of an RBF kernel using RBFSampler and Nystroem to approximate the feature map of an RBF kernel for classification with an SVM on the digits dataset. Results using a linear SVM in the original space, a linear SVM using the approximate mappings and using a kernelized SVM are compared. Timings and accuracy for varying amounts of Monte Carlo samplings (in the case of RBFSampler, which uses random Fourier features) and different sized subsets of the training set (for Nystroem) for the approximate mapping are shown.",
-  "meta": {
-    "title": "Approximating RBF Kernel Feature Maps | Machine Learning | Python",
-    "description": "Learn how to approximate the feature map of an RBF kernel using RBFSampler and Nystroem for SVM classification on the digits dataset in Python.",
-    "keywords": "RBF kernel, feature map approximation, SVM, machine learning, Python"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Python Package and Dataset Imports, Load Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/decomposition",
-          "sklearn/kernel_approximation"
-        ]
-      },
-      {
-        "title": "Timing and Accuracy Plots",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Decision Surfaces of RBF Kernel SVM and Linear SVM",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-kernel-approximation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -80,5 +13,142 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-kernel-approximation.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Explicit Feature Map Approximation for RBF Kernels",
+      "description": "This lab illustrates the approximation of the feature map of an RBF kernel using RBFSampler and Nystroem to approximate the feature map of an RBF kernel for classification with an SVM on the digits dataset. Results using a linear SVM in the original space, a linear SVM using the approximate mappings and using a kernelized SVM are compared. Timings and accuracy for varying amounts of Monte Carlo samplings (in the case of RBFSampler, which uses random Fourier features) and different sized subsets of the training set (for Nystroem) for the approximate mapping are shown.",
+      "meta": {
+        "title": "Approximating RBF Kernel Feature Maps | Machine Learning | Python",
+        "description": "Learn how to approximate the feature map of an RBF kernel using RBFSampler and Nystroem for SVM classification on the digits dataset in Python.",
+        "keywords": "RBF kernel, feature map approximation, SVM, machine learning, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Python Package and Dataset Imports, Load Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/decomposition",
+              "sklearn/kernel_approximation"
+            ]
+          },
+          {
+            "title": "Timing and Accuracy Plots",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Decision Surfaces of RBF Kernel SVM and Linear SVM",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "RBF核的显式特征图近似",
+      "description": "本实验展示了如何使用RBFSampler和Nystroem来近似RBF核的特征图，以便在数字数据集上使用支持向量机（SVM）进行分类。我们比较了在原始空间中使用线性SVM、使用近似映射的线性SVM以及使用核化SVM的结果。展示了在近似映射中，不同数量的蒙特卡罗采样（对于使用随机傅里叶特征的RBFSampler）和训练集的不同大小子集（对于Nystroem）的时间和准确性。",
+      "meta": {
+        "title": "近似RBF核特征图 | 机器学习 | Python",
+        "description": "了解如何在Python中使用RBFSampler和Nystroem对数字数据集进行SVM分类时近似RBF核的特征图。",
+        "keywords": "RBF核, 特征图近似, SVM, 机器学习, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Python包和数据集导入，加载数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/decomposition",
+              "sklearn/kernel_approximation"
+            ]
+          },
+          {
+            "title": "时间和准确率图表",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "RBF核支持向量机和线性支持向量机的决策面",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

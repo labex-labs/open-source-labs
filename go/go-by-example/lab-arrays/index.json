@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Arrays Manipulation in Golang",
-  "description": "This lab will test your understanding of arrays in Golang. You will be required to create and manipulate arrays of different types.",
-  "meta": {
-    "title": "Mastering Arrays in Golang | Programming Tutorials",
-    "description": "Explore the fundamentals of arrays in Golang through this comprehensive tutorial. Learn how to create, manipulate, and utilize arrays effectively in your Golang projects.",
-    "keywords": "Golang, Arrays, Programming Tutorials, Data Structures, Coding"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Arrays",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Initialization of Array Elements",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/arrays"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "arrays.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "arrays.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Arrays Manipulation in Golang",
+      "description": "This lab will test your understanding of arrays in Golang. You will be required to create and manipulate arrays of different types.",
+      "meta": {
+        "title": "Mastering Arrays in Golang | Programming Tutorials",
+        "description": "Explore the fundamentals of arrays in Golang through this comprehensive tutorial. Learn how to create, manipulate, and utilize arrays effectively in your Golang projects.",
+        "keywords": "Golang, Arrays, Programming Tutorials, Data Structures, Coding"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Arrays",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Initialization of Array Elements",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/arrays"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go 语言中的数组操作",
+      "description": "本实验将测试你对 Go 语言中数组的理解。你需要创建并操作不同类型的数组。",
+      "meta": {
+        "title": "掌握 Go 语言中的数组 | 编程教程",
+        "description": "通过本全面教程探索 Go 语言中数组的基础知识。学习如何在你的 Go 项目中有效地创建、操作和使用数组。",
+        "keywords": "Go 语言, 数组, 编程教程, 数据结构, 编码"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数组",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证数组元素的初始化",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/arrays"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

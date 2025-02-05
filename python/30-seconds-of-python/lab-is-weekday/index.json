@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Check if a Date is a Weekday",
-  "description": "In this lab, you will learn how to use the `datetime` module in Python to check if a given date is a weekday or a weekend.",
-  "meta": {
-    "title": "Checking if a Date is a Weekday in Python",
-    "description": "Learn how to write a Python function to check if a given date is a weekday or a weekend.",
-    "keywords": "python, weekday, weekend, date, datetime"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Check if a Date is a Weekday",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Weekday Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/comments",
-          "python/date_time",
-          "python/default_arguments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_weekday.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_weekday.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_is_weekday.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "is_weekday.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Check if a Date is a Weekday",
+      "description": "In this lab, you will learn how to use the `datetime` module in Python to check if a given date is a weekday or a weekend.",
+      "meta": {
+        "title": "Checking if a Date is a Weekday in Python",
+        "description": "Learn how to write a Python function to check if a given date is a weekday or a weekend.",
+        "keywords": "python, weekday, weekend, date, datetime"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Check if a Date is a Weekday",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Weekday Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/date_time",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查日期是否为工作日",
+      "description": "在这个实验中，你将学习如何使用 Python 中的 `datetime` 模块来检查给定的日期是工作日还是周末。",
+      "meta": {
+        "title": "在Python中检查日期是否为工作日",
+        "description": "学习如何编写一个Python函数来检查给定的日期是工作日还是周末。",
+        "keywords": "Python, 工作日, 周末, 日期, datetime"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查日期是否为工作日",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证工作日Python脚本的执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/date_time",
+              "python/default_arguments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

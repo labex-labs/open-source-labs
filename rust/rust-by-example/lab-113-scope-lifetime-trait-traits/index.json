@@ -1,48 +1,10 @@
 {
   "type": "lab",
-  "title": "Lifetime Annotation in Rust Traits",
-  "description": "In this lab, we explore the annotation of lifetimes in trait methods, which is similar to functions. It involves annotating lifetimes in the impl block as well. The provided code demonstrates an example where a struct Borrowed has a lifetime annotation, and the Default trait is implemented for it using the annotated lifetime. The main function then creates an instance of Borrowed using the Default::default() method, showcasing the usage of lifetimes in trait methods.",
-  "meta": {
-    "title": "Rust Lifetime Annotations | Trait Methods",
-    "description": "Explore the annotation of lifetimes in Rust trait methods, similar to functions. Learn how to implement the Default trait with lifetime annotations.",
-    "keywords": "Rust, Lifetime Annotations, Trait Methods, Default Trait, Programming Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Traits",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -51,5 +13,93 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Lifetime Annotation in Rust Traits",
+      "description": "In this lab, we explore the annotation of lifetimes in trait methods, which is similar to functions. It involves annotating lifetimes in the impl block as well. The provided code demonstrates an example where a struct Borrowed has a lifetime annotation, and the Default trait is implemented for it using the annotated lifetime. The main function then creates an instance of Borrowed using the Default::default() method, showcasing the usage of lifetimes in trait methods.",
+      "meta": {
+        "title": "Rust Lifetime Annotations | Trait Methods",
+        "description": "Explore the annotation of lifetimes in Rust trait methods, similar to functions. Learn how to implement the Default trait with lifetime annotations.",
+        "keywords": "Rust, Lifetime Annotations, Trait Methods, Default Trait, Programming Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Traits",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 中 trait 的生命周期标注",
+      "description": "在本实验中，我们探讨了 trait 方法中生命周期的标注，这与函数中的情况类似。这还涉及到在 impl 块中对生命周期进行标注。所提供的代码展示了一个示例，其中结构体 Borrowed 具有生命周期标注，并使用该标注的生命周期为其实现了 Default trait。然后，主函数使用 Default::default() 方法创建了一个 Borrowed 实例，展示了 trait 方法中生命周期的用法。",
+      "meta": {
+        "title": "Rust 生命周期标注 | trait 方法",
+        "description": "探索 Rust trait 方法中与函数类似的生命周期标注。学习如何使用生命周期标注来实现 Default trait。",
+        "keywords": "Rust, 生命周期标注, trait 方法, Default trait, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Traits",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

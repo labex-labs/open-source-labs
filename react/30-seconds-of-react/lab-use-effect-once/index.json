@@ -1,68 +1,10 @@
 {
   "type": "lab",
-  "title": "React useEffectOnce Hook",
-  "description": "In this lab, we will learn how to use the useEffectOnce hook in React to run a callback function at most once when a certain condition becomes true. This can be useful for situations where we want to execute a specific action only once, such as when a component mounts or when a button is clicked. By the end of this lab, you will have a better understanding of how to implement this hook in your React applications.",
-  "meta": {
-    "title": "Mastering the useEffectOnce Hook in React",
-    "description": "Learn how to use the powerful useEffectOnce hook in React to run a callback function only once, ensuring efficient and reliable component lifecycle management.",
-    "keywords": "useeffectonce, react, component lifecycle, web development, hooks"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "React useEffectOnce Hook",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "react/event_handling",
-          "react/hooks",
-          "react/jsx",
-          "react/use_state_reducer"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -71,5 +13,119 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "React useEffectOnce Hook",
+      "description": "In this lab, we will learn how to use the useEffectOnce hook in React to run a callback function at most once when a certain condition becomes true. This can be useful for situations where we want to execute a specific action only once, such as when a component mounts or when a button is clicked. By the end of this lab, you will have a better understanding of how to implement this hook in your React applications.",
+      "meta": {
+        "title": "Mastering the useEffectOnce Hook in React",
+        "description": "Learn how to use the powerful useEffectOnce hook in React to run a callback function only once, ensuring efficient and reliable component lifecycle management.",
+        "keywords": "useeffectonce, react, component lifecycle, web development, hooks"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useEffectOnce Hook",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "React useEffectOnce 钩子",
+      "description": "在本实验中，我们将学习如何在 React 中使用 useEffectOnce 钩子，以便在特定条件变为真时最多运行一次回调函数。这在我们只想执行一次特定操作的情况下非常有用，例如当组件挂载时或按钮被点击时。完成本实验后，你将更好地理解如何在你的 React 应用程序中实现这个钩子。",
+      "meta": {
+        "title": "掌握 React 中的 useEffectOnce 钩子",
+        "description": "学习如何在 React 中使用强大的 useEffectOnce 钩子仅运行一次回调函数，确保高效且可靠的组件生命周期管理。",
+        "keywords": "useeffectonce, React, 组件生命周期, 网页开发, 钩子"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "React useEffectOnce 钩子",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证 script.js 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "react/event_handling",
+              "react/hooks",
+              "react/jsx",
+              "react/use_state_reducer"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

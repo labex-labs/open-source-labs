@@ -1,70 +1,10 @@
 {
   "type": "lab",
-  "title": "Reverse Number Coding Challenge",
-  "description": "In this challenge, you will be tasked with creating a function that reverses a given number. The function should take a number as an argument and return the reverse of that number.",
-  "meta": {
-    "title": "Reverse Number | Python Programming Challenge",
-    "description": "Learn how to create a Python function that reverses a given number, regardless of whether it's positive or negative. Enhance your programming skills with this engaging challenge.",
-    "keywords": "reverse number, python programming, programming challenge, number reversal, coding exercise"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Reverse Number Challenge",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Reverse Number Python Test",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/math_random",
-          "python/numeric_types",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_reverse_number.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "reverse_number.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -73,5 +13,123 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_reverse_number.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "reverse_number.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Reverse Number Coding Challenge",
+      "description": "In this challenge, you will be tasked with creating a function that reverses a given number. The function should take a number as an argument and return the reverse of that number.",
+      "meta": {
+        "title": "Reverse Number | Python Programming Challenge",
+        "description": "Learn how to create a Python function that reverses a given number, regardless of whether it's positive or negative. Enhance your programming skills with this engaging challenge.",
+        "keywords": "reverse number, python programming, programming challenge, number reversal, coding exercise"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Reverse Number Challenge",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Reverse Number Python Test",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/math_random",
+              "python/numeric_types",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "反转数字编码挑战",
+      "description": "在这个挑战中，你将负责创建一个函数，该函数用于反转给定的数字。该函数应以一个数字作为参数，并返回该数字的反转结果。",
+      "meta": {
+        "title": "反转数字 | Python编程挑战",
+        "description": "学习如何创建一个Python函数，该函数可以反转给定的数字，无论其是正数还是负数。通过这个有趣的挑战提升你的编程技能。",
+        "keywords": "反转数字, Python编程, 编程挑战, 数字反转, 编码练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "反转数字挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证反转数字的Python测试",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/math_random",
+              "python/numeric_types",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

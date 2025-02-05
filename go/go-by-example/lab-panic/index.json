@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Golang Error Handling Proficiency",
-  "description": "The panic lab is designed to test your ability to handle unexpected errors in Golang.",
-  "meta": {
-    "title": "Mastering Golang Error Handling",
-    "description": "Explore the power of the Golang panic function for robust error handling in your applications.",
-    "keywords": "go playground, error handling, panic, go, programming tutorial, golang, go labs, go playground online, proficiency, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Panic",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Panic and Error Handling",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/panic"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "panic.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "panic.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Golang Error Handling Proficiency",
+      "description": "The panic lab is designed to test your ability to handle unexpected errors in Golang.",
+      "meta": {
+        "title": "Mastering Golang Error Handling",
+        "description": "Explore the power of the Golang panic function for robust error handling in your applications.",
+        "keywords": "go playground, error handling, panic, go, programming tutorial, golang, go labs, go playground online, proficiency, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Panic",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Panic and Error Handling",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/panic"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Go语言错误处理能力",
+      "description": "“panic”实验旨在测试你在Go语言中处理意外错误的能力。",
+      "meta": {
+        "title": "掌握Go语言错误处理",
+        "description": "探索Go语言panic函数在应用程序中进行强大错误处理的能力。",
+        "keywords": "Go语言游乐场, 错误处理, panic, Go语言, 编程教程, Go实验室, 在线Go语言游乐场, 能力, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "恐慌",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序的恐慌和错误处理",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/panic"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

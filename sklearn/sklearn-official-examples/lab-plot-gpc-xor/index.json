@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Gaussian Process Classification on XOR Dataset",
-  "description": "In this lab, we will go through an example of Gaussian process classification (GPC) on XOR dataset using scikit-learn. We will compare the results obtained by using a stationary, isotropic kernel (RBF) and a non-stationary kernel (DotProduct).",
-  "meta": {
-    "title": "Gaussian Process Classification | Machine Learning | Python",
-    "description": "Learn Gaussian process classification on XOR dataset using scikit-learn, with a comparison of stationary and non-stationary kernels.",
-    "keywords": "Gaussian Process Classification, Machine Learning, Python, XOR Dataset, Scikit-learn, Kernels"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Importing Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/gaussian_process"]
-      },
-      {
-        "title": "Creating XOR Dataset",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fitting the Model",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualizing the Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-gpc-xor.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-gpc-xor.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Gaussian Process Classification on XOR Dataset",
+      "description": "In this lab, we will go through an example of Gaussian process classification (GPC) on XOR dataset using scikit-learn. We will compare the results obtained by using a stationary, isotropic kernel (RBF) and a non-stationary kernel (DotProduct).",
+      "meta": {
+        "title": "Gaussian Process Classification | Machine Learning | Python",
+        "description": "Learn Gaussian process classification on XOR dataset using scikit-learn, with a comparison of stationary and non-stationary kernels.",
+        "keywords": "Gaussian Process Classification, Machine Learning, Python, XOR Dataset, Scikit-learn, Kernels"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importing Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/gaussian_process"]
+          },
+          {
+            "title": "Creating XOR Dataset",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fitting the Model",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualizing the Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "异或数据集上的高斯过程分类",
+      "description": "在本实验中，我们将通过一个示例展示如何使用scikit-learn在异或（XOR）数据集上进行高斯过程分类（GPC）。我们将比较使用平稳、各向同性核（径向基函数，RBF）和非平稳核（点积，DotProduct）所获得的结果。",
+      "meta": {
+        "title": "高斯过程分类 | 机器学习 |  Python",
+        "description": "了解如何使用scikit-learn在异或数据集上进行高斯过程分类，并比较平稳和非平稳核。",
+        "keywords": "高斯过程分类, 机器学习, Python, 异或数据集, Scikit-learn, 核"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/gaussian_process"]
+          },
+          {
+            "title": "创建异或数据集",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "拟合模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

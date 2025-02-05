@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Parse Numbers in Go",
-  "description": "The purpose of this lab is to demonstrate how to parse numbers from strings in Go.",
-  "meta": {
-    "title": "Parsing Numbers in Go",
-    "description": "Learn how to effectively parse different types of numbers from strings in Go programming language.",
-    "keywords": "go, go labs, strconv, go playground online, number parsing, go lab, int, float, go practice"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Number Parsing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Number Parsing Output",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/number_parsing"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "number-parsing.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "number-parsing.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Parse Numbers in Go",
+      "description": "The purpose of this lab is to demonstrate how to parse numbers from strings in Go.",
+      "meta": {
+        "title": "Parsing Numbers in Go",
+        "description": "Learn how to effectively parse different types of numbers from strings in Go programming language.",
+        "keywords": "go, go labs, strconv, go playground online, number parsing, go lab, int, float, go practice"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Number Parsing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Number Parsing Output",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/number_parsing"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Go语言中解析数字",
+      "description": "本实验的目的是演示如何在Go语言中从字符串解析数字。",
+      "meta": {
+        "title": "在Go语言中解析数字",
+        "description": "学习如何在Go编程语言中有效地从字符串解析不同类型的数字。",
+        "keywords": "Go语言, Go实验, strconv, 在线Go语言游乐场, 数字解析, Go实验, 整数, 浮点数, Go语言练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数字解析",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证数字解析输出",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/number_parsing"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

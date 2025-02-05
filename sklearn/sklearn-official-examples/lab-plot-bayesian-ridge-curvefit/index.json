@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Curve Fitting with Bayesian Ridge Regression",
-  "description": "This lab demonstrates how to use Bayesian Ridge Regression to fit a polynomial curve to sinusoidal data. We will generate sinusoidal data with noise, fit it using a cubic polynomial and plot the true and predicted curves with log marginal likelihood (L) of these models, we can determine which one is better.",
-  "meta": {
-    "title": "Bayesian Ridge Regression | Polynomial Curve Fitting | Sinusoidal Data",
-    "description": "Learn how to use Bayesian Ridge Regression to fit a polynomial curve to sinusoidal data with noise, and determine the best model using log marginal likelihood.",
-    "keywords": "Bayesian Ridge Regression, Polynomial Curve Fitting, Sinusoidal Data, Machine Learning, Data Analysis"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Generate sinusoidal data with noise",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fit by cubic polynomial",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      },
-      {
-        "title": "Plot the true and predicted curves with log marginal likelihood (L)",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-bayesian-ridge-curvefit.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-bayesian-ridge-curvefit.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Curve Fitting with Bayesian Ridge Regression",
+      "description": "This lab demonstrates how to use Bayesian Ridge Regression to fit a polynomial curve to sinusoidal data. We will generate sinusoidal data with noise, fit it using a cubic polynomial and plot the true and predicted curves with log marginal likelihood (L) of these models, we can determine which one is better.",
+      "meta": {
+        "title": "Bayesian Ridge Regression | Polynomial Curve Fitting | Sinusoidal Data",
+        "description": "Learn how to use Bayesian Ridge Regression to fit a polynomial curve to sinusoidal data with noise, and determine the best model using log marginal likelihood.",
+        "keywords": "Bayesian Ridge Regression, Polynomial Curve Fitting, Sinusoidal Data, Machine Learning, Data Analysis"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Generate sinusoidal data with noise",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fit by cubic polynomial",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "Plot the true and predicted curves with log marginal likelihood (L)",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用贝叶斯岭回归进行曲线拟合",
+      "description": "本实验展示了如何使用贝叶斯岭回归将多项式曲线拟合到正弦数据。我们将生成带噪声的正弦数据，使用三次多项式进行拟合，并绘制这些模型的带有对数边际似然（L）的真实曲线和预测曲线，从而确定哪个模型更好。",
+      "meta": {
+        "title": "贝叶斯岭回归 | 多项式曲线拟合 | 正弦数据",
+        "description": "了解如何使用贝叶斯岭回归将多项式曲线拟合到带噪声的正弦数据，并使用对数边际似然确定最佳模型。",
+        "keywords": "贝叶斯岭回归, 多项式曲线拟合, 正弦数据, 机器学习, 数据分析"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成带噪声的正弦数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "用三次多项式拟合",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          },
+          {
+            "title": "绘制带有对数边际似然（L）的真实曲线和预测曲线",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

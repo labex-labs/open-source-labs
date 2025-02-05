@@ -1,46 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Programming Fundamentals: Variable Bindings and Expressions",
-  "description": "In this lab, a Rust program is primarily composed of statements which can include variable bindings and expressions. Statements are designated by a ;, while expressions are followed by a ; and can be used as values in assignments. Additionally, blocks are also considered expressions and can be assigned to local variables, with the last expression serving as the assigned value. However, if the last expression within a block ends with a semicolon, the return value will be ().",
-  "meta": {
-    "title": "Rust Programming Fundamentals | Expressions and Statements",
-    "description": "Explore the core concepts of Rust programming, including variable bindings, expressions, and blocks as expressions. Learn how to write efficient and effective Rust code.",
-    "keywords": "Rust, Programming, Expressions, Statements, Variable Bindings, Blocks"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Expressions",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -49,5 +13,89 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Programming Fundamentals: Variable Bindings and Expressions",
+      "description": "In this lab, a Rust program is primarily composed of statements which can include variable bindings and expressions. Statements are designated by a ;, while expressions are followed by a ; and can be used as values in assignments. Additionally, blocks are also considered expressions and can be assigned to local variables, with the last expression serving as the assigned value. However, if the last expression within a block ends with a semicolon, the return value will be ().",
+      "meta": {
+        "title": "Rust Programming Fundamentals | Expressions and Statements",
+        "description": "Explore the core concepts of Rust programming, including variable bindings, expressions, and blocks as expressions. Learn how to write efficient and effective Rust code.",
+        "keywords": "Rust, Programming, Expressions, Statements, Variable Bindings, Blocks"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Expressions",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 编程基础：变量绑定与表达式",
+      "description": "在本实验中，一个 Rust 程序主要由语句组成，这些语句可以包含变量绑定和表达式。语句由分号（;）标识，而表达式后面跟着分号，并且可以在赋值中用作值。此外，代码块也被视为表达式，可以赋值给局部变量，最后一个表达式用作赋值的值。但是，如果代码块中的最后一个表达式以分号结尾，则返回值将为 ()。",
+      "meta": {
+        "title": "Rust 编程基础 | 表达式与语句",
+        "description": "探索 Rust 编程的核心概念，包括变量绑定、表达式以及作为表达式的代码块。学习如何编写高效且有效的 Rust 代码。",
+        "keywords": "Rust, 编程, 表达式, 语句, 变量绑定, 代码块"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "表达式",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

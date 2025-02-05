@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Pulling All Submodules from Remote",
-  "description": "When working with Git repositories, submodules can be used to include other repositories as dependencies. However, when these dependencies are updated in their respective remotes, the changes are not automatically reflected in the main repository. In order to update the submodules, you need to pull them from their respective remotes.",
-  "meta": {
-    "title": "Pulling All Submodules from Remote Git Repositories",
-    "description": "Learn how to efficiently update Git submodules in your repository and keep your dependencies up-to-date.",
-    "keywords": "remote, submodules, git labs, git, update, pull, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Pulling All Submodules from Remote",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful pull",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/pull"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Pulling All Submodules from Remote",
+      "description": "When working with Git repositories, submodules can be used to include other repositories as dependencies. However, when these dependencies are updated in their respective remotes, the changes are not automatically reflected in the main repository. In order to update the submodules, you need to pull them from their respective remotes.",
+      "meta": {
+        "title": "Pulling All Submodules from Remote Git Repositories",
+        "description": "Learn how to efficiently update Git submodules in your repository and keep your dependencies up-to-date.",
+        "keywords": "remote, submodules, git labs, git, update, pull, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Pulling All Submodules from Remote",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful pull",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/pull"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "从远程拉取所有子模块",
+      "description": "在使用Git仓库时，可以使用子模块将其他仓库作为依赖项包含进来。然而，当这些依赖项在各自的远程仓库中更新时，主仓库中不会自动反映这些更改。为了更新子模块，你需要从它们各自的远程仓库中拉取。",
+      "meta": {
+        "title": "从远程Git仓库拉取所有子模块",
+        "description": "了解如何在你的仓库中高效更新Git子模块并使你的依赖项保持最新状态。",
+        "keywords": "远程, 子模块, Git实验室, Git, 更新, 拉取, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从远程拉取所有子模块",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证拉取是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/pull"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

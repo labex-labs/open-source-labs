@@ -1,91 +1,10 @@
 {
   "type": "lab",
-  "title": "Interpolation From Triangular to Quad Grid",
-  "description": "In this lab, you will learn how to use Python's Matplotlib library to interpolate data from a triangular grid to a quad grid. We will start by creating a triangulation and then interpolate the data using linear and cubic methods. Finally, we will plot the results.",
-  "meta": {
-    "title": "Python Matplotlib | Triangular Grid Interpolation",
-    "description": "Learn how to use Python's Matplotlib library to interpolate data from a triangular grid to a quad grid, including creating a triangulation and plotting the results.",
-    "keywords": "Python, Matplotlib, Triangular Grid, Interpolation, Data Visualization"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create Triangulation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/titles_labels",
-          "python/comments",
-          "python/lists",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Interpolate Data using Linear Method",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/contour_plots",
-          "matplotlib/line_plots",
-          "matplotlib/titles_labels",
-          "python/comments",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Interpolate Data using Cubic Method",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "matplotlib/contour_plots",
-          "matplotlib/line_plots",
-          "matplotlib/titles_labels",
-          "python/comments",
-          "python/tuples",
-          "python/with_statement"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "triinterp-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -94,5 +13,170 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/matplotlib/matplotlib/tree/main/LICENSE",
     "repo": "https://github.com/matplotlib/matplotlib"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "triinterp-demo.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Interpolation From Triangular to Quad Grid",
+      "description": "In this lab, you will learn how to use Python's Matplotlib library to interpolate data from a triangular grid to a quad grid. We will start by creating a triangulation and then interpolate the data using linear and cubic methods. Finally, we will plot the results.",
+      "meta": {
+        "title": "Python Matplotlib | Triangular Grid Interpolation",
+        "description": "Learn how to use Python's Matplotlib library to interpolate data from a triangular grid to a quad grid, including creating a triangulation and plotting the results.",
+        "keywords": "Python, Matplotlib, Triangular Grid, Interpolation, Data Visualization"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create Triangulation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/titles_labels",
+              "python/comments",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Interpolate Data using Linear Method",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/contour_plots",
+              "matplotlib/line_plots",
+              "matplotlib/titles_labels",
+              "python/comments",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Interpolate Data using Cubic Method",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "matplotlib/contour_plots",
+              "matplotlib/line_plots",
+              "matplotlib/titles_labels",
+              "python/comments",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "从三角网格到四边形网格的插值",
+      "description": "在本实验中，你将学习如何使用 Python 的 Matplotlib 库将三角网格中的数据插值到四边形网格。我们将首先创建一个三角剖分，然后使用线性和三次方法对数据进行插值。最后，我们将绘制结果。",
+      "meta": {
+        "title": "Python Matplotlib | 三角网格插值",
+        "description": "学习如何使用 Python 的 Matplotlib 库将三角网格中的数据插值到四边形网格，包括创建三角剖分和绘制结果。",
+        "keywords": "Python, Matplotlib, 三角网格, 插值, 数据可视化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建三角剖分",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/titles_labels",
+              "python/comments",
+              "python/lists",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "使用线性方法插值数据",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/contour_plots",
+              "matplotlib/line_plots",
+              "matplotlib/titles_labels",
+              "python/comments",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "使用三次方法插值数据",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "matplotlib/contour_plots",
+              "matplotlib/line_plots",
+              "matplotlib/titles_labels",
+              "python/comments",
+              "python/tuples",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

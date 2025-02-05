@@ -1,90 +1,10 @@
 {
   "type": "lab",
-  "title": "Text Feature Extraction and Evaluation",
-  "description": "The scikit-learn library provides tools for text feature extraction and evaluation. In this lab, we will use the 20newsgroups dataset to demonstrate how to extract features from text data, build a pipeline, and evaluate the performance of the model using hyperparameter tuning.",
-  "meta": {
-    "title": "Scikit-Learn | Text Feature Extraction | Hyperparameter Tuning",
-    "description": "Learn how to use the scikit-learn library for text feature extraction, build a pipeline, and evaluate model performance with hyperparameter tuning on the 20newsgroups dataset.",
-    "keywords": "scikit-learn, text feature extraction, 20newsgroups dataset, hyperparameter tuning, machine learning"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Define Pipeline with Hyperparameter Tuning",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/feature_extraction",
-          "sklearn/naive_bayes",
-          "sklearn/pipeline"
-        ]
-      },
-      {
-        "title": "Hyperparameter Tuning",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/model_selection"]
-      },
-      {
-        "title": "Results Visualization",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-grid-search-text-feature-extraction.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -93,5 +13,168 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-grid-search-text-feature-extraction.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Text Feature Extraction and Evaluation",
+      "description": "The scikit-learn library provides tools for text feature extraction and evaluation. In this lab, we will use the 20newsgroups dataset to demonstrate how to extract features from text data, build a pipeline, and evaluate the performance of the model using hyperparameter tuning.",
+      "meta": {
+        "title": "Scikit-Learn | Text Feature Extraction | Hyperparameter Tuning",
+        "description": "Learn how to use the scikit-learn library for text feature extraction, build a pipeline, and evaluate model performance with hyperparameter tuning on the 20newsgroups dataset.",
+        "keywords": "scikit-learn, text feature extraction, 20newsgroups dataset, hyperparameter tuning, machine learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Define Pipeline with Hyperparameter Tuning",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_extraction",
+              "sklearn/naive_bayes",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "Hyperparameter Tuning",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "Results Visualization",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "文本特征提取与评估",
+      "description": "scikit-learn 库提供了用于文本特征提取和评估的工具。在本实验中，我们将使用 20 新闻组数据集来演示如何从文本数据中提取特征、构建管道，并使用超参数调整来评估模型的性能。",
+      "meta": {
+        "title": "Scikit-Learn | 文本特征提取 | 超参数调整",
+        "description": "了解如何使用 scikit-learn 库进行文本特征提取，构建管道，并在 20 新闻组数据集上通过超参数调整评估模型性能。",
+        "keywords": "scikit-learn, 文本特征提取, 20 新闻组数据集, 超参数调整, 机器学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "定义带有超参数调整的管道",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/feature_extraction",
+              "sklearn/naive_bayes",
+              "sklearn/pipeline"
+            ]
+          },
+          {
+            "title": "超参数调整",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/model_selection"]
+          },
+          {
+            "title": "结果可视化",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

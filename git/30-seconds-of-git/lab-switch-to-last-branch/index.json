@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Return to Previous Branch",
-  "description": "In this lab, you will learn how to switch back to the previous branch in a Git repository, which is useful when you need to switch between different branches while working on a project.",
-  "meta": {
-    "title": "Return to Previous Branch in Git",
-    "description": "Learn how to quickly switch back to the previous branch in Git to fix a bug or continue working on a feature.",
-    "keywords": "switch, git labs, branch, git, previous, master, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Return to Previous Branch",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that the quick branch was successful",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/branch"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Return to Previous Branch",
+      "description": "In this lab, you will learn how to switch back to the previous branch in a Git repository, which is useful when you need to switch between different branches while working on a project.",
+      "meta": {
+        "title": "Return to Previous Branch in Git",
+        "description": "Learn how to quickly switch back to the previous branch in Git to fix a bug or continue working on a feature.",
+        "keywords": "switch, git labs, branch, git, previous, master, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Return to Previous Branch",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that the quick branch was successful",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "切换回上一个分支",
+      "description": "在本实验中，你将学习如何在Git仓库中切换回上一个分支，这在你处理项目时需要在不同分支之间切换时非常有用。",
+      "meta": {
+        "title": "在Git中切换回上一个分支",
+        "description": "学习如何在Git中快速切换回上一个分支以修复漏洞或继续处理某个功能。",
+        "keywords": "切换, Git实验, 分支, Git, 上一个, 主分支, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "切换回上一个分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证快速切换分支是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/branch"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

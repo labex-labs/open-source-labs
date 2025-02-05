@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Map List to Dictionary",
-  "description": "In Python, a dictionary is a collection of key-value pairs. Sometimes, we need to create a dictionary from a list where the keys are the elements of the list and the values are the result of applying a function to those elements. In this challenge, you will create a function that maps the values of a list to a dictionary using a function.",
-  "meta": {
-    "title": "Map List to Dictionary in Python",
-    "description": "Learn how to create a dictionary from a list by applying a function to each element in Python. Enhance your coding skills with this concise and practical tutorial.",
-    "keywords": "python, list, dictionary, function, map"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Map List to Dictionary",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python3 Test Map Dictionary",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/lambda_functions",
-          "python/lists",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_map_dictionary.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "map_dictionary.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_map_dictionary.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "map_dictionary.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Map List to Dictionary",
+      "description": "In Python, a dictionary is a collection of key-value pairs. Sometimes, we need to create a dictionary from a list where the keys are the elements of the list and the values are the result of applying a function to those elements. In this challenge, you will create a function that maps the values of a list to a dictionary using a function.",
+      "meta": {
+        "title": "Map List to Dictionary in Python",
+        "description": "Learn how to create a dictionary from a list by applying a function to each element in Python. Enhance your coding skills with this concise and practical tutorial.",
+        "keywords": "python, list, dictionary, function, map"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Map List to Dictionary",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python3 Test Map Dictionary",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "将列表映射到字典",
+      "description": "在Python中，字典是键值对的集合。有时，我们需要从一个列表创建一个字典，其中键是列表的元素，值是对这些元素应用一个函数的结果。在这个挑战中，你将创建一个函数，使用一个函数将列表的值映射到一个字典。",
+      "meta": {
+        "title": "在Python中将列表映射到字典",
+        "description": "学习如何在Python中通过对每个元素应用函数从列表创建字典。通过这个简洁实用的教程提升你的编码技能。",
+        "keywords": "Python, 列表, 字典, 函数, 映射"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将列表映射到字典",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python3测试映射字典",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lambda_functions",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

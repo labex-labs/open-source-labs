@@ -1,53 +1,10 @@
 {
   "type": "lab",
-  "title": "Diverging Functions in Rust",
-  "description": "In this lab, we learn about diverging functions that are marked using ! in Rust. Diverging functions never return and their return type is an empty type. This is different from the () type which has only one possible value. Diverging functions can be useful when casting to any other type is required, such as in match branches. They are also the return type of functions that loop forever or terminate the process.",
-  "meta": {
-    "title": "Diverging Functions in Rust: Understanding the Power of the Never Type",
-    "description": "Explore the concept of diverging functions in Rust, a unique feature that can enhance your programming capabilities.",
-    "keywords": "rust playground, coding, diverging functions, rust online compiler, rust tutor, rust commands, never type, rust practice, rust online playground, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Diverging functions",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/boolean_type",
-          "rust/expressions_statements",
-          "rust/for_loop",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/mutable_variables",
-          "rust/operator_overloading",
-          "rust/panic_usage",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -56,5 +13,103 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Diverging Functions in Rust",
+      "description": "In this lab, we learn about diverging functions that are marked using ! in Rust. Diverging functions never return and their return type is an empty type. This is different from the () type which has only one possible value. Diverging functions can be useful when casting to any other type is required, such as in match branches. They are also the return type of functions that loop forever or terminate the process.",
+      "meta": {
+        "title": "Diverging Functions in Rust: Understanding the Power of the Never Type",
+        "description": "Explore the concept of diverging functions in Rust, a unique feature that can enhance your programming capabilities.",
+        "keywords": "rust playground, coding, diverging functions, rust online compiler, rust tutor, rust commands, never type, rust practice, rust online playground, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Diverging functions",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/boolean_type",
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/panic_usage",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 中的发散函数",
+      "description": "在本实验中，我们将了解 Rust 中使用 `!` 标记的发散函数。发散函数永远不会返回，其返回类型为空类型。这与只有一个可能值的 `()` 类型不同。当需要转换为任何其他类型时，例如在 `match` 分支中，发散函数可能会很有用。它们也是永远循环或终止进程的函数的返回类型。",
+      "meta": {
+        "title": "Rust 中的发散函数：理解空类型的强大之处",
+        "description": "探索 Rust 中发散函数的概念，这是一项独特的功能，可以增强你的编程能力。",
+        "keywords": "Rust 在线编译器, Rust 教程, Rust 命令, 空类型, Rust 练习, Rust 在线游乐场, Rust 在线, Rust 游乐场, 编码, 发散函数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "发散函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/boolean_type",
+              "rust/expressions_statements",
+              "rust/for_loop",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/mutable_variables",
+              "rust/operator_overloading",
+              "rust/panic_usage",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

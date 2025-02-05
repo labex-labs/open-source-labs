@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Handling Unix Signals in Go",
-  "description": "The Signals lab demonstrates how to handle Unix signals in Go programs using channels.",
-  "meta": {
-    "title": "Go Programming | Unix Signal Handling",
-    "description": "Learn how to handle Unix signals in Go programs using channels. Gracefully shut down servers and stop processing input for command-line tools.",
-    "keywords": "Go Programming, Unix Signals, Signal Handling, Channels, Graceful Shutdown"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Signals",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Blocking for Signal",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/signals"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "signals.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "signals.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Handling Unix Signals in Go",
+      "description": "The Signals lab demonstrates how to handle Unix signals in Go programs using channels.",
+      "meta": {
+        "title": "Go Programming | Unix Signal Handling",
+        "description": "Learn how to handle Unix signals in Go programs using channels. Gracefully shut down servers and stop processing input for command-line tools.",
+        "keywords": "Go Programming, Unix Signals, Signal Handling, Channels, Graceful Shutdown"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Signals",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Blocking for Signal",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/signals"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Go中处理Unix信号",
+      "description": "信号实验展示了如何在Go程序中使用通道来处理Unix信号。",
+      "meta": {
+        "title": "Go编程 | Unix信号处理",
+        "description": "学习如何在Go程序中使用通道处理Unix信号。优雅地关闭服务器并停止命令行工具的输入处理。",
+        "keywords": "Go编程,Unix信号,信号处理,通道,优雅关闭"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "信号",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序阻塞等待信号",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/signals"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

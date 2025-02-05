@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Strings and Runes",
-  "description": "This lab focuses on Go strings and runes. In Go, strings are read-only slices of bytes, and runes are integers that represent Unicode code points. This lab will explore how to work with strings and runes in Go.",
-  "meta": {
-    "title": "Go Strings and Runes | Programming Tutorials | Lab",
-    "description": "Explore the fundamentals of working with strings and runes in Go programming language. Learn how to handle UTF-8 encoded text and manipulate Unicode code points.",
-    "keywords": "Go, Strings, Runes, Programming, Tutorials, UTF-8, Unicode"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Strings and Runes",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Outputs Length of String",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/strings"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "strings-and-runes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "strings-and-runes.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Strings and Runes",
+      "description": "This lab focuses on Go strings and runes. In Go, strings are read-only slices of bytes, and runes are integers that represent Unicode code points. This lab will explore how to work with strings and runes in Go.",
+      "meta": {
+        "title": "Go Strings and Runes | Programming Tutorials | Lab",
+        "description": "Explore the fundamentals of working with strings and runes in Go programming language. Learn how to handle UTF-8 encoded text and manipulate Unicode code points.",
+        "keywords": "Go, Strings, Runes, Programming, Tutorials, UTF-8, Unicode"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Strings and Runes",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Outputs Length of String",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/strings"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "字符串与符文",
+      "description": "本实验聚焦于Go语言中的字符串和符文。在Go语言中，字符串是只读的字节切片，而符文是表示Unicode码点的整数。本实验将探索如何在Go语言中处理字符串和符文。",
+      "meta": {
+        "title": "Go语言的字符串与符文 | 编程教程 | 实验",
+        "description": "探索Go编程语言中处理字符串和符文的基础知识。学习如何处理UTF-8编码的文本并操作Unicode码点。",
+        "keywords": "Go语言, 字符串, 符文, 编程, 教程, UTF-8, Unicode"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "字符串与符文",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序输出字符串长度",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/strings"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

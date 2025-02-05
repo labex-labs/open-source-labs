@@ -1,90 +1,10 @@
 {
   "type": "lab",
-  "title": "Smooth Transition of Dynamic Heights",
-  "description": "In this lab, we will explore how to smoothly transition an element's height from 0 to auto when its height is unknown. This technique is useful for creating dropdown menus, accordions, and other animated content. By using CSS transition, max-height, and overflow properties, as well as JavaScript to dynamically set the height value, we can create a seamless and visually appealing user experience.",
-  "meta": {
-    "title": "Smooth Height Transition | CSS Animation | Web Development",
-    "description": "Learn how to smoothly transition an element's height from 0 to auto using CSS transition, max-height, and JavaScript. Ideal for creating dropdown menus, accordions, and animated content.",
-    "keywords": "CSS animation, height transition, smooth animation, web development, dropdown menu, accordion, animated content"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Height Transition",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-4.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/mobile_first_design",
-          "css/nesting",
-          "css/pseudo_classes",
-          "css/selectors",
-          "css/transitions",
-          "css/variables",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -93,5 +13,158 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Smooth Transition of Dynamic Heights",
+      "description": "In this lab, we will explore how to smoothly transition an element's height from 0 to auto when its height is unknown. This technique is useful for creating dropdown menus, accordions, and other animated content. By using CSS transition, max-height, and overflow properties, as well as JavaScript to dynamically set the height value, we can create a seamless and visually appealing user experience.",
+      "meta": {
+        "title": "Smooth Height Transition | CSS Animation | Web Development",
+        "description": "Learn how to smoothly transition an element's height from 0 to auto using CSS transition, max-height, and JavaScript. Ideal for creating dropdown menus, accordions, and animated content.",
+        "keywords": "CSS animation, height transition, smooth animation, web development, dropdown menu, accordion, animated content"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Height Transition",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-4.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/mobile_first_design",
+              "css/nesting",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transitions",
+              "css/variables",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "动态高度的平滑过渡",
+      "description": "在本实验中，我们将探索如何在元素高度未知的情况下，使其高度从0平滑过渡到自动。此技术对于创建下拉菜单、手风琴和其他动画内容很有用。通过使用CSS过渡、最大高度和溢出属性，以及JavaScript动态设置高度值，我们可以创建无缝且视觉上吸引人的用户体验。",
+      "meta": {
+        "title": "平滑高度过渡 | CSS动画 | 网页开发",
+        "description": "学习如何使用CSS过渡、最大高度和JavaScript将元素高度从0平滑过渡到自动。非常适合创建下拉菜单、手风琴和动画内容。",
+        "keywords": "CSS动画、高度过渡、平滑动画、网页开发、下拉菜单、手风琴、动画内容"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "高度过渡",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页以预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证script.js的修改状态",
+                "file": "verify1-4.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/mobile_first_design",
+              "css/nesting",
+              "css/pseudo_classes",
+              "css/selectors",
+              "css/transitions",
+              "css/variables",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

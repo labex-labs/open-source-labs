@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Range Over Channels",
-  "description": "This lab aims to test your ability to iterate over values received from a channel using the for and range syntax in Golang.",
-  "meta": {
-    "title": "Range Over Channels in Golang",
-    "description": "Learn how to iterate over values received from a channel using the for and range syntax in Golang.",
-    "keywords": "go playground, channels, go, for loop, golang, programming tutorial, go labs, go playground online, range, go lab"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Range Over Channels",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Go Program Outputs 'one'",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/channels"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "range-over-channels.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "range-over-channels.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Range Over Channels",
+      "description": "This lab aims to test your ability to iterate over values received from a channel using the for and range syntax in Golang.",
+      "meta": {
+        "title": "Range Over Channels in Golang",
+        "description": "Learn how to iterate over values received from a channel using the for and range syntax in Golang.",
+        "keywords": "go playground, channels, go, for loop, golang, programming tutorial, go labs, go playground online, range, go lab"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Range Over Channels",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Go Program Outputs 'one'",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "通道上的遍历",
+      "description": "本实验旨在测试你使用Go语言中的for和range语法对从通道接收的值进行迭代的能力。",
+      "meta": {
+        "title": "Go语言中通道上的遍历",
+        "description": "学习如何使用Go语言中的for和range语法对从通道接收的值进行迭代。",
+        "keywords": "Go语言游乐场, 通道, Go语言, for循环, Go语言编程教程, Go语言实验, 在线Go语言游乐场, range, Go语言实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "通道上的遍历",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序输出为'一'",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/channels"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

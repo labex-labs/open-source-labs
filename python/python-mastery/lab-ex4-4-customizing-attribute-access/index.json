@@ -1,115 +1,10 @@
 {
   "type": "lab",
-  "title": "Customizing Attribute Access",
-  "description": "In this lab, you will learn about customizing attribute access and the difference between delegation and inheritance.",
-  "meta": {
-    "title": "Customizing Attribute Access in Python",
-    "description": "Explore techniques for customizing attribute access in Python, including delegation, inheritance, and creating read-only proxies.",
-    "keywords": "setattr, proxies, python, slots, attribute access"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Slots vs. setattr",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Class Inheritance and Attributes",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/conditional_statements",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Proxies",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python __getattr__ and getattr Usage",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/constructor",
-          "python/data_collections",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lists",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types"
-        ]
-      },
-      {
-        "title": "Delegation as an alternative to inheritance",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Python Print History",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -118,5 +13,218 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Customizing Attribute Access",
+      "description": "In this lab, you will learn about customizing attribute access and the difference between delegation and inheritance.",
+      "meta": {
+        "title": "Customizing Attribute Access in Python",
+        "description": "Explore techniques for customizing attribute access in Python, including delegation, inheritance, and creating read-only proxies.",
+        "keywords": "setattr, proxies, python, slots, attribute access"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Slots vs. setattr",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Class Inheritance and Attributes",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Proxies",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python __getattr__ and getattr Usage",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "Delegation as an alternative to inheritance",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Python Print History",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "自定义属性访问",
+      "description": "在本实验中，你将学习如何自定义属性访问以及委托和继承之间的区别。",
+      "meta": {
+        "title": "Python 中的自定义属性访问",
+        "description": "探索 Python 中自定义属性访问的技术，包括委托、继承和创建只读代理。",
+        "keywords": "setattr、代理、Python、插槽、属性访问"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "插槽与 setattr",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 类的继承和属性",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/conditional_statements",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "代理",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 Python 的 __getattr__ 和 getattr 的用法",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/constructor",
+              "python/data_collections",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lists",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "作为继承替代方案的委托",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 Python 打印历史记录",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

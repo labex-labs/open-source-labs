@@ -1,48 +1,10 @@
 {
   "type": "lab",
-  "title": "Accessing Command Line Arguments in Rust",
-  "description": "In this lab, you can access command line arguments in Rust using the std::env::args function, which returns an iterator that yields a String for each argument. The first argument in the returned vector is the path used to call the program, while the rest of the arguments are the command line parameters. Alternatively, you can use crates like clap for more advanced command line argument handling.",
-  "meta": {
-    "title": "Rust Command Line Arguments | Programming Tutorials",
-    "description": "Learn how to access command line arguments in Rust using the standard library or popular crates like Clap. Enhance your Rust programming skills with these tutorials.",
-    "keywords": "Rust, Command Line Arguments, Programming Tutorials, Clap, Standard Library"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Program arguments",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -51,5 +13,93 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Accessing Command Line Arguments in Rust",
+      "description": "In this lab, you can access command line arguments in Rust using the std::env::args function, which returns an iterator that yields a String for each argument. The first argument in the returned vector is the path used to call the program, while the rest of the arguments are the command line parameters. Alternatively, you can use crates like clap for more advanced command line argument handling.",
+      "meta": {
+        "title": "Rust Command Line Arguments | Programming Tutorials",
+        "description": "Learn how to access command line arguments in Rust using the standard library or popular crates like Clap. Enhance your Rust programming skills with these tutorials.",
+        "keywords": "Rust, Command Line Arguments, Programming Tutorials, Clap, Standard Library"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Program arguments",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在 Rust 中访问命令行参数",
+      "description": "在本实验中，你可以使用 `std::env::args` 函数在 Rust 中访问命令行参数，该函数返回一个迭代器，为每个参数生成一个 `String`。返回向量中的第一个参数是用于调用程序的路径，而其余参数是命令行参数。或者，你可以使用 `clap` 等 crate 进行更高级的命令行参数处理。",
+      "meta": {
+        "title": "Rust 命令行参数 | 编程教程",
+        "description": "学习如何使用标准库或像 Clap 这样的流行 crate 在 Rust 中访问命令行参数。通过这些教程提升你的 Rust 编程技能。",
+        "keywords": "Rust, 命令行参数, 编程教程, Clap, 标准库"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "程序参数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

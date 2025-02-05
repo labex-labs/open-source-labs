@@ -1,85 +1,10 @@
 {
   "type": "lab",
-  "title": "Comparing Different Categorical Encoders",
-  "description": "In this lab, we will compare the performance of different categorical encoders on a wine review dataset. We will use the target column 'points' as the target variable to predict. We will compare the following encoders: TargetEncoder, OneHotEncoder, OrdinalEncoder, and dropping the category. We will also look at how to use the native categorical feature support in HistGradientBoostingRegressor.",
-  "meta": {
-    "title": "Comparing Different Categorical Encoders in Machine Learning",
-    "description": "Explore various categorical encoding techniques and their impact on model performance using a wine review dataset.",
-    "keywords": "machine learning, categorical encoding, targetencoder, onehotencoder, wine reviews"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Loading Data from OpenML",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Training and Evaluating Pipelines with Different Encoders",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Native Categorical Feature Support",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plotting the Results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-target-encoder.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -88,5 +13,158 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-target-encoder.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Comparing Different Categorical Encoders",
+      "description": "In this lab, we will compare the performance of different categorical encoders on a wine review dataset. We will use the target column 'points' as the target variable to predict. We will compare the following encoders: TargetEncoder, OneHotEncoder, OrdinalEncoder, and dropping the category. We will also look at how to use the native categorical feature support in HistGradientBoostingRegressor.",
+      "meta": {
+        "title": "Comparing Different Categorical Encoders in Machine Learning",
+        "description": "Explore various categorical encoding techniques and their impact on model performance using a wine review dataset.",
+        "keywords": "machine learning, categorical encoding, targetencoder, onehotencoder, wine reviews"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Loading Data from OpenML",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Training and Evaluating Pipelines with Different Encoders",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Native Categorical Feature Support",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plotting the Results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "比较不同的类别编码器",
+      "description": "在本实验中，我们将比较不同类别编码器在葡萄酒评论数据集上的性能。我们将使用目标列“points”作为目标变量进行预测。我们将比较以下编码器：目标编码器（TargetEncoder）、独热编码器（OneHotEncoder）、序数编码器（OrdinalEncoder）以及删除类别。我们还将研究如何在直方图梯度提升回归器（HistGradientBoostingRegressor）中使用原生类别特征支持。",
+      "meta": {
+        "title": "机器学习中比较不同的类别编码器",
+        "description": "使用葡萄酒评论数据集探索各种类别编码技术及其对模型性能的影响。",
+        "keywords": "机器学习, 类别编码, 目标编码器, 独热编码器, 葡萄酒评论"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从OpenML加载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "使用不同编码器训练和评估管道",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "原生类别特征支持",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

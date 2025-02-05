@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Checking If Sequence Is Empty",
-  "description": "In this lab, you will create a Python function to check if a given value is an empty sequence or collection, such as lists, tuples, sets, dictionaries, strings, and ranges.",
-  "meta": {
-    "title": "Python | Empty Sequence or Collection Check",
-    "description": "Learn how to check if a sequence or collection is empty in Python. Includes a function to handle lists, tuples, sets, dictionaries, strings, and ranges.",
-    "keywords": "Python, empty, sequence, collection, check, function, list, tuple, set, dictionary, string, range"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Collection is empty",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_empty.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_empty.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_is_empty.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "is_empty.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Checking If Sequence Is Empty",
+      "description": "In this lab, you will create a Python function to check if a given value is an empty sequence or collection, such as lists, tuples, sets, dictionaries, strings, and ranges.",
+      "meta": {
+        "title": "Python | Empty Sequence or Collection Check",
+        "description": "Learn how to check if a sequence or collection is empty in Python. Includes a function to handle lists, tuples, sets, dictionaries, strings, and ranges.",
+        "keywords": "Python, empty, sequence, collection, check, function, list, tuple, set, dictionary, string, range"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Collection is empty",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查序列是否为空",
+      "description": "在这个实验中，你将创建一个Python函数，用于检查给定值是否为空序列或集合，例如列表、元组、集合、字典、字符串和范围。",
+      "meta": {
+        "title": "Python | 检查空序列或集合",
+        "description": "学习如何在Python中检查序列或集合是否为空。包括一个处理列表、元组、集合、字典、字符串和范围的函数。",
+        "keywords": "Python, 空, 序列, 集合, 检查, 函数, 列表, 元组, 集合, 字典, 字符串, 范围"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "集合为空",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

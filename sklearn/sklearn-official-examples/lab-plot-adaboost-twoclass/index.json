@@ -1,103 +1,10 @@
 {
   "type": "lab",
-  "title": "AdaBoost Decision Stump Classification",
-  "description": "This is a step-by-step lab on how to use AdaBoost to train a decision stump and classify a two-dimensional dataset composed of two Gaussian quantiles clusters.",
-  "meta": {
-    "title": "AdaBoost Decision Stump Classifier | Machine Learning Tutorial",
-    "description": "Step-by-step lab on using AdaBoost to train a decision stump and classify a two-dimensional Gaussian dataset.",
-    "keywords": "AdaBoost, Decision Stump, Classifier, Machine Learning, Gaussian Quantiles"
-  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import necessary libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/ensemble",
-          "sklearn/inspection",
-          "sklearn/tree"
-        ]
-      },
-      {
-        "title": "Construct dataset",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Create and fit an AdaBoosted decision tree",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/ensemble"]
-      },
-      {
-        "title": "Plot the decision boundaries and training points",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/inspection"]
-      },
-      {
-        "title": "Plot the two-class decision scores",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-adaboost-twoclass.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -106,5 +13,194 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-adaboost-twoclass.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "AdaBoost Decision Stump Classification",
+      "description": "This is a step-by-step lab on how to use AdaBoost to train a decision stump and classify a two-dimensional dataset composed of two Gaussian quantiles clusters.",
+      "meta": {
+        "title": "AdaBoost Decision Stump Classifier | Machine Learning Tutorial",
+        "description": "Step-by-step lab on using AdaBoost to train a decision stump and classify a two-dimensional Gaussian dataset.",
+        "keywords": "AdaBoost, Decision Stump, Classifier, Machine Learning, Gaussian Quantiles"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import necessary libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/ensemble",
+              "sklearn/inspection",
+              "sklearn/tree"
+            ]
+          },
+          {
+            "title": "Construct dataset",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Create and fit an AdaBoosted decision tree",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "Plot the decision boundaries and training points",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/inspection"]
+          },
+          {
+            "title": "Plot the two-class decision scores",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "AdaBoost决策树桩分类",
+      "description": "这是一个关于如何使用AdaBoost训练决策树桩并对由两个高斯分位数簇组成的二维数据集进行分类的分步实验。",
+      "meta": {
+        "title": "AdaBoost决策树桩分类器 | 机器学习教程",
+        "description": "关于使用AdaBoost训练决策树桩并对二维高斯数据集进行分类的分步实验。",
+        "keywords": "AdaBoost, 决策树桩, 分类器, 机器学习, 高斯分位数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入必要的库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/ensemble",
+              "sklearn/inspection",
+              "sklearn/tree"
+            ]
+          },
+          {
+            "title": "构建数据集",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "创建并拟合一个AdaBoost决策树",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/ensemble"]
+          },
+          {
+            "title": "绘制决策边界和训练点",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/inspection"]
+          },
+          {
+            "title": "绘制两类决策分数",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

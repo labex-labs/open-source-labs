@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Error Handling with Question Mark",
-  "description": "In this lab, we will learn about the ? operator in Rust, which allows us to simplify error handling by returning Err instead of panicking, and we will also explore the try! macro, which achieved similar functionality before ? was introduced.",
-  "meta": {
-    "title": "Rust Programming | Error Handling | Try Operator",
-    "description": "Learn about the Rust programming language's try operator (?) and the try! macro for simplified error handling without panicking.",
-    "keywords": "Rust, programming, error handling, try operator, try macro"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Introducing ?",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/error_propagation",
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Error Handling with Question Mark",
+      "description": "In this lab, we will learn about the ? operator in Rust, which allows us to simplify error handling by returning Err instead of panicking, and we will also explore the try! macro, which achieved similar functionality before ? was introduced.",
+      "meta": {
+        "title": "Rust Programming | Error Handling | Try Operator",
+        "description": "Learn about the Rust programming language's try operator (?) and the try! macro for simplified error handling without panicking.",
+        "keywords": "Rust, programming, error handling, try operator, try macro"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Introducing ?",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/error_propagation",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用问号进行Rust错误处理",
+      "description": "在本实验中，我们将学习Rust中的?运算符，它允许我们通过返回Err而不是使程序恐慌（panic）来简化错误处理。我们还将探索try!宏，它在?运算符引入之前实现了类似的功能。",
+      "meta": {
+        "title": "Rust编程 | 错误处理 | 尝试运算符",
+        "description": "了解Rust编程语言的尝试运算符(?)和try!宏，用于在不使程序恐慌的情况下简化错误处理。",
+        "keywords": "Rust,编程,错误处理,尝试运算符,try宏"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "介绍?",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/error_propagation",
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

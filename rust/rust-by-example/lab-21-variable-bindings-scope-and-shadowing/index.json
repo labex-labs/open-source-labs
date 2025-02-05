@@ -1,48 +1,10 @@
 {
   "type": "lab",
-  "title": "Scope and Shadowing",
-  "description": "In this lab, we learn about variable bindings, their scope, and the concept of shadowing in Rust. Variable bindings are confined to a block, which is a collection of statements enclosed by braces. There are two examples provided to illustrate these concepts. The first example shows how a variable binding declared inside a block is limited to that block's scope and is not accessible outside of it. The second example demonstrates variable shadowing, where a new binding with the same name is declared inside a block, effectively shadowing the outer binding.",
-  "meta": {
-    "title": "Mastering Variable Scope and Shadowing in Rust",
-    "description": "Explore the concepts of variable bindings, scope, and shadowing in Rust programming language.",
-    "keywords": "rust playground, rust online playground, rust tutor, rust online compiler, scope, rust commands, variable bindings, shadowing, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Scope and Shadowing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/lifetime_specifiers",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -51,5 +13,93 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Scope and Shadowing",
+      "description": "In this lab, we learn about variable bindings, their scope, and the concept of shadowing in Rust. Variable bindings are confined to a block, which is a collection of statements enclosed by braces. There are two examples provided to illustrate these concepts. The first example shows how a variable binding declared inside a block is limited to that block's scope and is not accessible outside of it. The second example demonstrates variable shadowing, where a new binding with the same name is declared inside a block, effectively shadowing the outer binding.",
+      "meta": {
+        "title": "Mastering Variable Scope and Shadowing in Rust",
+        "description": "Explore the concepts of variable bindings, scope, and shadowing in Rust programming language.",
+        "keywords": "rust playground, rust online playground, rust tutor, rust online compiler, scope, rust commands, variable bindings, shadowing, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Scope and Shadowing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "作用域与遮蔽",
+      "description": "在本实验中，我们将学习Rust中的变量绑定、其作用域以及遮蔽概念。变量绑定局限于一个代码块，代码块是由花括号括起来的一组语句。这里提供了两个示例来说明这些概念。第一个示例展示了在代码块内声明的变量绑定如何局限于该代码块的作用域，并且在其外部不可访问。第二个示例演示了变量遮蔽，即在代码块内声明一个具有相同名称的新绑定，实际上遮蔽了外部绑定。",
+      "meta": {
+        "title": "掌握Rust中的变量作用域与遮蔽",
+        "description": "探索Rust编程语言中的变量绑定、作用域和遮蔽概念。",
+        "keywords": "Rust在线游乐场,Rust在线编译器,Rust教程,Rust练习,Rust命令,变量绑定,遮蔽,作用域,Rust在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "作用域与遮蔽",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/lifetime_specifiers",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

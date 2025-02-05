@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Change the Last Commit's Author",
-  "description": "Git is a powerful version control system that allows developers to track changes made to their codebase. One of the features of Git is the ability to modify the last commit's author without changing its contents. This can be useful in situations where the author of a commit needs to be updated for accuracy or accountability purposes.",
-  "meta": {
-    "title": "Change the Last Commit's Author in Git",
-    "description": "Learn how to modify the last commit's author in Git without changing the commit contents.",
-    "keywords": "version control, git labs, author, git, commit, update, git playground"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Change the Last Commit's Author",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify that the author's information has been successfully updated",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Change the Last Commit's Author",
+      "description": "Git is a powerful version control system that allows developers to track changes made to their codebase. One of the features of Git is the ability to modify the last commit's author without changing its contents. This can be useful in situations where the author of a commit needs to be updated for accuracy or accountability purposes.",
+      "meta": {
+        "title": "Change the Last Commit's Author in Git",
+        "description": "Learn how to modify the last commit's author in Git without changing the commit contents.",
+        "keywords": "version control, git labs, author, git, commit, update, git playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Change the Last Commit's Author",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify that the author's information has been successfully updated",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "修改最后一次提交的作者",
+      "description": "Git 是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git 的特性之一是能够在不改变最后一次提交内容的情况下修改其作者。这在需要出于准确性或可追溯性目的更新提交作者的情况下可能会很有用。",
+      "meta": {
+        "title": "在 Git 中修改最后一次提交的作者",
+        "description": "学习如何在不改变提交内容的情况下修改 Git 中最后一次提交的作者。",
+        "keywords": "版本控制, Git 实验室, 作者, Git, 提交, 更新, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "修改最后一次提交的作者",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证作者信息是否已成功更新",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Cross-Validation Techniques with Scikit-Learn",
-  "description": "Cross-validation is a technique for evaluating machine learning models by training several models on different subsets of the available data and evaluating them on the complementary subset. This helps to avoid overfitting and ensures that the model is generalizable. In this tutorial, we will use scikit-learn to explore different cross-validation techniques and their behavior.",
-  "meta": {
-    "title": "Cross-Validation Techniques | Machine Learning Tutorial",
-    "description": "Learn cross-validation techniques for evaluating machine learning models and avoiding overfitting with scikit-learn in this comprehensive tutorial.",
-    "keywords": "cross-validation, machine learning, scikit-learn, data visualization, model evaluation"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Visualize the Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Visualize Cross-Validation Indices",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compare Cross-Validation Objects",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-cv-indices.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-cv-indices.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Cross-Validation Techniques with Scikit-Learn",
+      "description": "Cross-validation is a technique for evaluating machine learning models by training several models on different subsets of the available data and evaluating them on the complementary subset. This helps to avoid overfitting and ensures that the model is generalizable. In this tutorial, we will use scikit-learn to explore different cross-validation techniques and their behavior.",
+      "meta": {
+        "title": "Cross-Validation Techniques | Machine Learning Tutorial",
+        "description": "Learn cross-validation techniques for evaluating machine learning models and avoiding overfitting with scikit-learn in this comprehensive tutorial.",
+        "keywords": "cross-validation, machine learning, scikit-learn, data visualization, model evaluation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Visualize the Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Visualize Cross-Validation Indices",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compare Cross-Validation Objects",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Scikit-Learn的交叉验证技术",
+      "description": "交叉验证是一种评估机器学习模型的技术，通过在可用数据的不同子集上训练多个模型，并在互补子集上对其进行评估。这有助于避免过拟合，并确保模型具有泛化能力。在本教程中，我们将使用Scikit-Learn探索不同的交叉验证技术及其行为。",
+      "meta": {
+        "title": "交叉验证技术 | 机器学习教程",
+        "description": "在本综合教程中，学习使用Scikit-Learn进行交叉验证技术，以评估机器学习模型并避免过拟合。",
+        "keywords": "交叉验证, 机器学习, Scikit-Learn, 数据可视化, 模型评估"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "可视化数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "可视化交叉验证索引",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "比较交叉验证对象",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

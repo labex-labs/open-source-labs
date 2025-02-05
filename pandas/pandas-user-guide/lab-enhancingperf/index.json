@@ -1,76 +1,10 @@
 {
   "type": "lab",
-  "title": "Speed Up Pandas Operations",
-  "description": "This lab guides you through various techniques to speed up operations on pandas DataFrame using Cython, Numba, and pandas.eval(). These techniques can provide significant speed improvements when working with large datasets.",
-  "meta": {
-    "title": "Accelerate Pandas Operations with Cython, Numba, and eval()",
-    "description": "Learn techniques to speed up pandas DataFrame operations using advanced tools like Cython, Numba, and pandas.eval().",
-    "keywords": "cython, python playground, pandas, numba, python, optimization, performance"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Setup and Create Sample Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/data_analysis",
-          "python/dictionaries",
-          "python/importing_modules",
-          "python/math_random",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Implementing Pure Python Function",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "enhancingperf.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -79,5 +13,140 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/pandas-dev/pandas/blob/main/LICENSE",
     "repo": "https://github.com/pandas-dev/pandas"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "enhancingperf.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Speed Up Pandas Operations",
+      "description": "This lab guides you through various techniques to speed up operations on pandas DataFrame using Cython, Numba, and pandas.eval(). These techniques can provide significant speed improvements when working with large datasets.",
+      "meta": {
+        "title": "Accelerate Pandas Operations with Cython, Numba, and eval()",
+        "description": "Learn techniques to speed up pandas DataFrame operations using advanced tools like Cython, Numba, and pandas.eval().",
+        "keywords": "cython, python playground, pandas, numba, python, optimization, performance"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Setup and Create Sample Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/data_analysis",
+              "python/dictionaries",
+              "python/importing_modules",
+              "python/math_random",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Implementing Pure Python Function",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "加速 pandas 操作",
+      "description": "本实验将指导你学习使用 Cython、Numba 和 pandas.eval() 来加速对 pandas DataFrame 的操作。在处理大型数据集时，这些技术可以显著提高速度。",
+      "meta": {
+        "title": "使用 Cython、Numba 和 eval() 加速 pandas 操作",
+        "description": "学习使用 Cython、Numba 和 pandas.eval() 等高级工具加速 pandas DataFrame 操作的技术。",
+        "keywords": "Cython, Python 实验场, pandas, Numba, Python, 优化, 性能"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "设置并创建示例数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/data_analysis",
+              "python/dictionaries",
+              "python/importing_modules",
+              "python/math_random",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "实现纯 Python 函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

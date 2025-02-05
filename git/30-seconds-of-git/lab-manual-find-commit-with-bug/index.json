@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Tracking Bugs in Git Codebase",
-  "description": "In this lab, you will learn how to use the `git bisect` command to manually find the commit that introduced a bug in a Git repository by performing a binary search through the commit history.",
-  "meta": {
-    "title": "Git Debugging | Commit Tracking | Version Control",
-    "description": "Learn how to use Git's powerful bisect command to track down the commit that introduced a bug in your codebase. Improve your software development workflow with this comprehensive tutorial.",
-    "keywords": "Git, version control, debugging, commit tracking, binary search, software development"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Manually Find the Commit that Introduced a Bug",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for successful manual bug finding",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Tracking Bugs in Git Codebase",
+      "description": "In this lab, you will learn how to use the `git bisect` command to manually find the commit that introduced a bug in a Git repository by performing a binary search through the commit history.",
+      "meta": {
+        "title": "Git Debugging | Commit Tracking | Version Control",
+        "description": "Learn how to use Git's powerful bisect command to track down the commit that introduced a bug in your codebase. Improve your software development workflow with this comprehensive tutorial.",
+        "keywords": "Git, version control, debugging, commit tracking, binary search, software development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Manually Find the Commit that Introduced a Bug",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for successful manual bug finding",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Git代码库中追踪错误",
+      "description": "在本实验中，你将学习如何使用`git bisect`命令，通过在提交历史中进行二分查找，手动找到在Git仓库中引入错误的提交。",
+      "meta": {
+        "title": "Git调试 | 提交追踪 | 版本控制",
+        "description": "学习如何使用Git强大的二分查找命令来追踪在你的代码库中引入错误的提交。通过这个全面的教程改进你的软件开发工作流程。",
+        "keywords": "Git, 版本控制, 调试, 提交追踪, 二分查找, 软件开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "手动查找引入错误的提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功手动找到错误",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

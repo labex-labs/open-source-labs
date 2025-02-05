@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Regularization Path of L1-Logistic Regression",
-  "description": "The L1-Logistic Regression model is a binary classification method that uses L1 regularization to induce sparsity in the model. The regularization path of this model shows the coefficients of the model as regularization strength increases. In this lab, we will use the Iris dataset to train L1-penalized logistic regression models and plot their regularization paths.",
-  "meta": {
-    "title": "L1-Logistic Regression Regularization Path",
-    "description": "Explore the regularization path of L1-penalized logistic regression models using the Iris dataset.",
-    "keywords": "machine learning, l1 logistic regression, binary classification, scikit-learn, scikit-learn playground, machine learning playground, sparsity, iris dataset, regularization path"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Iris dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Compute regularization path",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/svm"]
-      },
-      {
-        "title": "Plot regularization path",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-logistic-path.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-logistic-path.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Regularization Path of L1-Logistic Regression",
+      "description": "The L1-Logistic Regression model is a binary classification method that uses L1 regularization to induce sparsity in the model. The regularization path of this model shows the coefficients of the model as regularization strength increases. In this lab, we will use the Iris dataset to train L1-penalized logistic regression models and plot their regularization paths.",
+      "meta": {
+        "title": "L1-Logistic Regression Regularization Path",
+        "description": "Explore the regularization path of L1-penalized logistic regression models using the Iris dataset.",
+        "keywords": "machine learning, l1 logistic regression, binary classification, scikit-learn, scikit-learn playground, machine learning playground, sparsity, iris dataset, regularization path"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Iris dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Compute regularization path",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/svm"]
+          },
+          {
+            "title": "Plot regularization path",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "L1 逻辑回归的正则化路径",
+      "description": "L1 逻辑回归模型是一种二元分类方法，它使用 L1 正则化来促使模型产生稀疏性。该模型的正则化路径展示了随着正则化强度增加模型的系数变化情况。在本实验中，我们将使用鸢尾花数据集来训练 L1 惩罚逻辑回归模型并绘制它们的正则化路径。",
+      "meta": {
+        "title": "L1 逻辑回归正则化路径",
+        "description": "使用鸢尾花数据集探索 L1 惩罚逻辑回归模型的正则化路径。",
+        "keywords": "机器学习, L1 逻辑回归, 二元分类, scikit-learn, scikit-learn 游乐场, 机器学习游乐场, 稀疏性, 鸢尾花数据集, 正则化路径"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载鸢尾花数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "计算正则化路径",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/svm"]
+          },
+          {
+            "title": "绘制正则化路径",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

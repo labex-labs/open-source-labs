@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Precompute Gram Matrix for ElasticNet",
-  "description": "This lab demonstrates how to precompute the gram matrix while using weighted samples with an ElasticNet. It is important to note that if weighted samples are used, the design matrix must be centered and then rescaled by the square root of the weight vector before the gram matrix is computed.",
-  "meta": {
-    "title": "ElasticNet Gram Matrix Computation | Weighted Samples",
-    "description": "Learn how to precompute the gram matrix while using weighted samples with an ElasticNet. Optimize your machine learning models with this tutorial.",
-    "keywords": "ElasticNet, Gram Matrix, Weighted Samples, Regression, Machine Learning"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Loading the Dataset and Creating Sample Weights",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/datasets"]
-      },
-      {
-        "title": "Precomputing Gram Matrix with Weighted Samples",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fitting the Elastic Net",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-elastic-net-precomputed-gram-matrix-with-weighted-samples.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-elastic-net-precomputed-gram-matrix-with-weighted-samples.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Precompute Gram Matrix for ElasticNet",
+      "description": "This lab demonstrates how to precompute the gram matrix while using weighted samples with an ElasticNet. It is important to note that if weighted samples are used, the design matrix must be centered and then rescaled by the square root of the weight vector before the gram matrix is computed.",
+      "meta": {
+        "title": "ElasticNet Gram Matrix Computation | Weighted Samples",
+        "description": "Learn how to precompute the gram matrix while using weighted samples with an ElasticNet. Optimize your machine learning models with this tutorial.",
+        "keywords": "ElasticNet, Gram Matrix, Weighted Samples, Regression, Machine Learning"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Loading the Dataset and Creating Sample Weights",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "Precomputing Gram Matrix with Weighted Samples",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fitting the Elastic Net",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "为弹性网络预先计算Gram矩阵",
+      "description": "本实验展示了如何在使用带权重样本的弹性网络时预先计算Gram矩阵。需要注意的是，如果使用加权样本，在计算Gram矩阵之前，设计矩阵必须先进行中心化处理，然后通过权重向量的平方根进行重新缩放。",
+      "meta": {
+        "title": "弹性网络Gram矩阵计算 | 加权样本",
+        "description": "学习如何在使用带权重样本的弹性网络时预先计算Gram矩阵。通过本教程优化你的机器学习模型。",
+        "keywords": "弹性网络, Gram矩阵, 加权样本, 回归, 机器学习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据集并创建样本权重",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/datasets"]
+          },
+          {
+            "title": "使用加权样本预计算Gram矩阵",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "拟合弹性网络",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

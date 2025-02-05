@@ -1,42 +1,10 @@
 {
   "type": "lab",
-  "title": "Create a Git Commit",
-  "description": "Git is a popular version control system used by developers to manage their code changes. One of the essential features of Git is the ability to create commits, which are snapshots of the code at a particular point in time. In this lab, you will learn how to create a Git commit.",
-  "meta": {
-    "title": "Create a Git Commit: Mastering Version Control with Git",
-    "description": "Learn how to create a Git commit and manage code changes effectively in this comprehensive tutorial.",
-    "keywords": "software development, version control, git labs, git, commit, git playground, code management"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Create a Git Commit",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify for the successful commit",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["git/commit"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -45,5 +13,81 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Create a Git Commit",
+      "description": "Git is a popular version control system used by developers to manage their code changes. One of the essential features of Git is the ability to create commits, which are snapshots of the code at a particular point in time. In this lab, you will learn how to create a Git commit.",
+      "meta": {
+        "title": "Create a Git Commit: Mastering Version Control with Git",
+        "description": "Learn how to create a Git commit and manage code changes effectively in this comprehensive tutorial.",
+        "keywords": "software development, version control, git labs, git, commit, git playground, code management"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Create a Git Commit",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify for the successful commit",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "创建一个Git提交",
+      "description": "Git是开发人员用于管理代码更改的流行版本控制系统。Git的基本功能之一是能够创建提交，即特定时间点的代码快照。在本实验中，你将学习如何创建Git提交。",
+      "meta": {
+        "title": "创建一个Git提交：掌握Git版本控制",
+        "description": "在本全面教程中学习如何创建Git提交并有效地管理代码更改。",
+        "keywords": "软件开发, 版本控制, Git实验, Git, 提交, Git游乐场, 代码管理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建一个Git提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证提交是否成功",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["git/commit"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

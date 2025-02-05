@@ -1,149 +1,10 @@
 {
   "type": "lab",
-  "title": "Importing Data with Genfromtxt",
-  "description": "In this lab, we will learn how to import data using the numpy.genfromtxt function. This function allows us to read tabular data from various sources and convert it into NumPy arrays. We will explore different options for defining the input, splitting the lines into columns, choosing columns, setting the data type, and tweaking the conversion.",
-  "meta": {
-    "title": "Importing Data with Genfromtxt",
-    "description": "Learn how to efficiently import data using the numpy.genfromtxt function and explore various options for handling tabular data.",
-    "keywords": "python playground, tabular data, python, data import, file handling, genfromtxt, numpy"
-  },
   "difficulty": "Beginner",
   "time": 40,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Importing the Required Libraries",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/importing_modules",
-          "python/numerical_computing",
-          "python/standard_libraries",
-          "python/using_packages"
-        ]
-      },
-      {
-        "title": "Defining the Input",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Splitting the Lines into Columns",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Choosing Columns",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/tuples"]
-      },
-      {
-        "title": "Setting the Data Type",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["python/numeric_types", "python/variables_data_types"]
-      },
-      {
-        "title": "Tweaking the Conversion",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/dictionaries",
-          "python/lambda_functions",
-          "python/numeric_types",
-          "python/type_conversion",
-          "python/variables_data_types"
-        ]
-      },
-      {
-        "title": "Using Missing and Filling Values",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Using Shortcut Functions",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "python/importing_modules",
-          "python/numerical_computing",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "03-io-genfromtxt.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -152,5 +13,286 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
     "repo": "https://github.com/numpy/numpy"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "03-io-genfromtxt.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Importing Data with Genfromtxt",
+      "description": "In this lab, we will learn how to import data using the numpy.genfromtxt function. This function allows us to read tabular data from various sources and convert it into NumPy arrays. We will explore different options for defining the input, splitting the lines into columns, choosing columns, setting the data type, and tweaking the conversion.",
+      "meta": {
+        "title": "Importing Data with Genfromtxt",
+        "description": "Learn how to efficiently import data using the numpy.genfromtxt function and explore various options for handling tabular data.",
+        "keywords": "python playground, tabular data, python, data import, file handling, genfromtxt, numpy"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Importing the Required Libraries",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "Defining the Input",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Splitting the Lines into Columns",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Choosing Columns",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "Setting the Data Type",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["python/numeric_types", "python/variables_data_types"]
+          },
+          {
+            "title": "Tweaking the Conversion",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/dictionaries",
+              "python/lambda_functions",
+              "python/numeric_types",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "Using Missing and Filling Values",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Using Shortcut Functions",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用Genfromtxt导入数据",
+      "description": "在本实验中，我们将学习如何使用numpy.genfromtxt函数导入数据。此函数使我们能够从各种来源读取表格数据并将其转换为NumPy数组。我们将探讨定义输入、将行拆分为列、选择列、设置数据类型以及调整转换的不同选项。",
+      "meta": {
+        "title": "使用Genfromtxt导入数据",
+        "description": "学习如何使用numpy.genfromtxt函数高效导入数据，并探索处理表格数据的各种选项。",
+        "keywords": "Python实验, 表格数据, Python, 数据导入, 文件处理, Genfromtxt, NumPy"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入所需的库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/standard_libraries",
+              "python/using_packages"
+            ]
+          },
+          {
+            "title": "定义输入",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "将行拆分为列",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "选择列",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/tuples"]
+          },
+          {
+            "title": "设置数据类型",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["python/numeric_types", "python/variables_data_types"]
+          },
+          {
+            "title": "调整转换",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/dictionaries",
+              "python/lambda_functions",
+              "python/numeric_types",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          },
+          {
+            "title": "处理缺失值与填充值",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "使用快捷函数",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "python/importing_modules",
+              "python/numerical_computing",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

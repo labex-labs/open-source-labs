@@ -1,79 +1,10 @@
 {
   "type": "lab",
-  "title": "Defining Custom Python Exceptions",
-  "description": "In this lab, you will learn how to define user-defined exceptions in Python using classes.",
-  "meta": {
-    "title": "Python Exception Handling | Custom Exception Definitions",
-    "description": "Learn how to define custom exceptions in Python to handle specific usage problems in your code and improve error handling.",
-    "keywords": "Python, Exception Handling, Custom Exceptions, Error Handling, Programming Tutorials"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Exercise 4.11: Defining a custom exception",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/data_collections",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/sets",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types"
-        ],
-        "solutions": ["tableformat.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "tableformat.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "test_4.11.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -82,5 +13,141 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/practical-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "tableformat.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "test_4.11.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Defining Custom Python Exceptions",
+      "description": "In this lab, you will learn how to define user-defined exceptions in Python using classes.",
+      "meta": {
+        "title": "Python Exception Handling | Custom Exception Definitions",
+        "description": "Learn how to define custom exceptions in Python to handle specific usage problems in your code and improve error handling.",
+        "keywords": "Python, Exception Handling, Custom Exceptions, Error Handling, Programming Tutorials"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Exercise 4.11: Defining a custom exception",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types"
+            ],
+            "solutions": ["tableformat.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "定义自定义Python异常",
+      "description": "在本实验中，你将学习如何使用类在Python中定义用户自定义异常。",
+      "meta": {
+        "title": "Python异常处理 | 自定义异常定义",
+        "description": "学习如何在Python中定义自定义异常，以处理代码中的特定使用问题并改进错误处理。",
+        "keywords": "Python, 异常处理, 自定义异常, 错误处理, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "练习4.11：定义自定义异常",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/data_collections",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/sets",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types"
+            ],
+            "solutions": ["tableformat.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

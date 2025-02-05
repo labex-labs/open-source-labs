@@ -1,96 +1,10 @@
 {
   "type": "lab",
-  "title": "How Objects Are Represented",
-  "description": "In this lab, you will explore how objects are represented, understand attribute assignment and lookup, and learn about the role of a class definition.",
-  "meta": {
-    "title": "Representation of Objects in Python",
-    "description": "Learn how objects are represented in Python and understand the role of class definitions.",
-    "keywords": "attribute assignment, python, object representation, class definition, attribute lookup"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Preparation",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Class and Function Definitions",
-            "file": "verify1.sh",
-            "hint": "Please define the 'SimpleStock' class and create a few instance objects.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/classes_objects",
-          "python/constructor",
-          "python/encapsulation",
-          "python/function_definition",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/tuples"
-        ]
-      },
-      {
-        "title": "Representation of Instances",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Python __dict__ Usage in History",
-            "file": "verify2.sh",
-            "hint": "Please inspect the underlying dictionaries of the instances you have created",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/python_shell"]
-      },
-      {
-        "title": "Modification of Instance Data",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Use of __dict__ Attribute in Python History",
-            "file": "verify3.sh",
-            "hint": "Please add the 'time' attribute to the '__dict__' object.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/lists",
-          "python/python_shell",
-          "python/standard_libraries"
-        ]
-      },
-      {
-        "title": "The role of classes",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Python History for __class__ and __dict__ Usage",
-            "file": "verify4.sh",
-            "hint": "Please execute the python code in step 4.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["python/lists", "python/python_shell"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -99,5 +13,189 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "How Objects Are Represented",
+      "description": "In this lab, you will explore how objects are represented, understand attribute assignment and lookup, and learn about the role of a class definition.",
+      "meta": {
+        "title": "Representation of Objects in Python",
+        "description": "Learn how objects are represented in Python and understand the role of class definitions.",
+        "keywords": "attribute assignment, python, object representation, class definition, attribute lookup"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Preparation",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Class and Function Definitions",
+                "file": "verify1.sh",
+                "hint": "Please define the 'SimpleStock' class and create a few instance objects.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "Representation of Instances",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Python __dict__ Usage in History",
+                "file": "verify2.sh",
+                "hint": "Please inspect the underlying dictionaries of the instances you have created",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/python_shell"]
+          },
+          {
+            "title": "Modification of Instance Data",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Use of __dict__ Attribute in Python History",
+                "file": "verify3.sh",
+                "hint": "Please add the 'time' attribute to the '__dict__' object.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "The role of classes",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Python History for __class__ and __dict__ Usage",
+                "file": "verify4.sh",
+                "hint": "Please execute the python code in step 4.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/lists", "python/python_shell"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "对象如何表示",
+      "description": "在本实验中，你将探索对象如何被表示，理解属性赋值和查找，并了解类定义的作用。",
+      "meta": {
+        "title": "Python 中对象的表示",
+        "description": "了解 Python 中对象如何被表示，并理解类定义的作用。",
+        "keywords": "属性赋值, Python, 对象表示, 类定义, 属性查找"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "准备",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 类和函数定义",
+                "file": "verify1.sh",
+                "hint": "请定义 'SimpleStock' 类并创建几个实例对象。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/classes_objects",
+              "python/constructor",
+              "python/encapsulation",
+              "python/function_definition",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/tuples"
+            ]
+          },
+          {
+            "title": "实例的表示",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 Python 中 __dict__ 在历史记录中的用法",
+                "file": "verify2.sh",
+                "hint": "请检查你创建的实例的底层字典",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/python_shell"]
+          },
+          {
+            "title": "实例数据的修改",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录中 __dict__ 属性的使用",
+                "file": "verify3.sh",
+                "hint": "请向 '__dict__' 对象添加 'time' 属性。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/lists",
+              "python/python_shell",
+              "python/standard_libraries"
+            ]
+          },
+          {
+            "title": "类的作用",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录中 __class__ 和 __dict__ 的用法",
+                "file": "verify4.sh",
+                "hint": "请执行步骤 4 中的 Python 代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["python/lists", "python/python_shell"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

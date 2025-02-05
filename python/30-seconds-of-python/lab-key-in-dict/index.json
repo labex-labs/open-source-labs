@@ -1,62 +1,10 @@
 {
   "type": "lab",
-  "title": "Check if Key Exists in Dictionary",
-  "description": "In this lab, you will learn how to use the 'in' operator to check if a key exists in a Python dictionary.",
-  "meta": {
-    "title": "Python Dictionary | Key Existence Check | Lab",
-    "description": "Learn how to check if a key exists in a Python dictionary with a simple function. Improve your programming skills with this concise tutorial.",
-    "keywords": "Python, Dictionary, Key, Existence, Check, Programming"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Check if Key Exists in Dictionary",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Script Test Key in Dictionary",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/comments",
-          "python/dictionaries",
-          "python/function_definition",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_key_in_dict.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "key_in_dict.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -65,5 +13,107 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_key_in_dict.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "key_in_dict.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Check if Key Exists in Dictionary",
+      "description": "In this lab, you will learn how to use the 'in' operator to check if a key exists in a Python dictionary.",
+      "meta": {
+        "title": "Python Dictionary | Key Existence Check | Lab",
+        "description": "Learn how to check if a key exists in a Python dictionary with a simple function. Improve your programming skills with this concise tutorial.",
+        "keywords": "Python, Dictionary, Key, Existence, Check, Programming"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Check if Key Exists in Dictionary",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Script Test Key in Dictionary",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查字典中是否存在键",
+      "description": "在这个实验中，你将学习如何使用“in”运算符来检查Python字典中是否存在某个键。",
+      "meta": {
+        "title": "Python字典 | 键存在性检查 | 实验",
+        "description": "通过一个简单的函数学习如何检查Python字典中是否存在某个键。通过这个简洁的教程提升你的编程技能。",
+        "keywords": "Python, 字典, 键, 存在性, 检查, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查字典中是否存在键",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python脚本中字典的测试键",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/dictionaries",
+              "python/function_definition",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

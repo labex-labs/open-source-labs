@@ -1,49 +1,10 @@
 {
   "type": "lab",
-  "title": "Handling Errors with Early Returns in Rust",
-  "description": "In this lab, we explore the concept of early returns as a way to handle errors in Rust. The example code demonstrates how we can use match statements and early returns to handle errors gracefully, making the code easier to read and write. We also discuss the limitations of explicit error handling and introduce the use of the ? operator for cases where we need to unwrap values without risking a panic.",
-  "meta": {
-    "title": "Rust Programming | Error Handling | Early Returns",
-    "description": "Explore the concept of early returns in Rust for graceful error handling, making your code easier to read and write.",
-    "keywords": "Rust, Programming, Error Handling, Early Returns, Unwrap, Combinators"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Early returns",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -52,5 +13,95 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Handling Errors with Early Returns in Rust",
+      "description": "In this lab, we explore the concept of early returns as a way to handle errors in Rust. The example code demonstrates how we can use match statements and early returns to handle errors gracefully, making the code easier to read and write. We also discuss the limitations of explicit error handling and introduce the use of the ? operator for cases where we need to unwrap values without risking a panic.",
+      "meta": {
+        "title": "Rust Programming | Error Handling | Early Returns",
+        "description": "Explore the concept of early returns in Rust for graceful error handling, making your code easier to read and write.",
+        "keywords": "Rust, Programming, Error Handling, Early Returns, Unwrap, Combinators"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Early returns",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Rust中使用提前返回处理错误",
+      "description": "在本实验中，我们探讨提前返回的概念，将其作为在Rust中处理错误的一种方式。示例代码展示了如何使用match语句和提前返回优雅地处理错误，使代码更易于读写。我们还讨论了显式错误处理的局限性，并介绍了在需要解包值而又不引发恐慌的情况下使用?运算符。",
+      "meta": {
+        "title": "Rust编程 | 错误处理 | 提前返回",
+        "description": "探索Rust中提前返回的概念，以实现优雅的错误处理，让你的代码更易于读写。",
+        "keywords": "Rust,编程,错误处理,提前返回,解包,组合器"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "提前返回",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

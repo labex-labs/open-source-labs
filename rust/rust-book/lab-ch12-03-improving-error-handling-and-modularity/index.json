@@ -1,272 +1,10 @@
 {
   "type": "lab",
-  "title": "Refactoring to Improve Modularity and Error Handling",
-  "description": "In this lab, we will refactor the program to improve modularity and error handling by separating tasks, grouping configuration variables, providing meaningful error messages, and consolidating error-handling code.",
-  "meta": {
-    "title": "Refactoring to Improve Modularity and Error Handling | Rust Programming",
-    "description": "Learn how to refactor your Rust program to improve modularity and error handling. Separate tasks, group configuration variables, provide meaningful error messages, and consolidate error-handling code.",
-    "keywords": "Rust Programming, Refactoring, Modularity, Error Handling, Code Optimization"
-  },
   "difficulty": "Beginner",
   "time": 65,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Refactoring to Improve Modularity and Error Handling",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Separation of Concerns for Binary Projects",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Extracting the Argument Parser",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Grouping Configuration Values",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Creating a Constructor for Config",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Fixing the Error Handling",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Improving the Error Message",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/panic_usage"
-        ]
-      },
-      {
-        "title": "Returning a Result Instead of Calling panic!",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify8.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Calling Config::build and Handling Errors",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify9.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Extracting Logic from main",
-        "text": "step10.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify10.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Returning Errors from the run Function",
-        "text": "step11.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify11.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/tuple_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Handling Errors Returned from run in main",
-        "text": "step12.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify12.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Splitting Code into a Library Crate",
-        "text": "step13.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify13.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/traits",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -275,5 +13,541 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Refactoring to Improve Modularity and Error Handling",
+      "description": "In this lab, we will refactor the program to improve modularity and error handling by separating tasks, grouping configuration variables, providing meaningful error messages, and consolidating error-handling code.",
+      "meta": {
+        "title": "Refactoring to Improve Modularity and Error Handling | Rust Programming",
+        "description": "Learn how to refactor your Rust program to improve modularity and error handling. Separate tasks, group configuration variables, provide meaningful error messages, and consolidate error-handling code.",
+        "keywords": "Rust Programming, Refactoring, Modularity, Error Handling, Code Optimization"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Refactoring to Improve Modularity and Error Handling",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Separation of Concerns for Binary Projects",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Extracting the Argument Parser",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Grouping Configuration Values",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Creating a Constructor for Config",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Fixing the Error Handling",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Improving the Error Message",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/panic_usage"
+            ]
+          },
+          {
+            "title": "Returning a Result Instead of Calling panic!",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify8.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Calling Config::build and Handling Errors",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify9.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Extracting Logic from main",
+            "text": "en/step10.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify10.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Returning Errors from the run Function",
+            "text": "en/step11.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify11.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/tuple_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Handling Errors Returned from run in main",
+            "text": "en/step12.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify12.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Splitting Code into a Library Crate",
+            "text": "en/step13.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify13.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "重构以提高模块化和错误处理",
+      "description": "在本实验中，我们将通过分离任务、分组配置变量、提供有意义的错误消息以及整合错误处理代码来重构程序，以提高模块化和错误处理能力。",
+      "meta": {
+        "title": "重构以提高模块化和错误处理 | Rust编程",
+        "description": "学习如何重构你的Rust程序以提高模块化和错误处理能力。分离任务、分组配置变量、提供有意义的错误消息以及整合错误处理代码。",
+        "keywords": "Rust编程, 重构, 模块化, 错误处理, 代码优化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "重构以提高模块化和错误处理",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "二进制项目的关注点分离",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "提取参数解析器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "分组配置值",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "为配置创建一个构造函数",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "修复错误处理",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "改进错误消息",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/panic_usage"
+            ]
+          },
+          {
+            "title": "返回一个结果而非调用panic！",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "调用Config::build并处理错误",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "从main中提取逻辑",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify10.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "从run函数返回错误",
+            "text": "zh/step11.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify11.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/tuple_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "处理main函数中run返回的错误",
+            "text": "zh/step12.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify12.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "将代码拆分为库包",
+            "text": "zh/step13.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify13.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/traits",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

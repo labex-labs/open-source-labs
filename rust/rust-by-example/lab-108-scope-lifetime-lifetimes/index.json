@@ -1,46 +1,10 @@
 {
   "type": "lab",
-  "title": "Lifetime Concepts in Rust Programming",
-  "description": "In this lab, we will explore the concept of lifetimes in Rust and how they are used by the compiler to ensure the validity of borrows in the code. Lifetimes are a construct of the compiler that determine the duration of a variable, from its creation to its destruction. While lifetimes and scopes are related, they are not the same. When borrowing a variable using the & operator, the borrow has a lifetime that is determined by its declaration, and it is valid as long as it ends before the lender is destroyed. However, the scope of the borrow is determined by where the reference is used. The provided example code demonstrates how lifetimes and scopes are used in practice, with each variable having its own lifetime and scope.",
-  "meta": {
-    "title": "Mastering Rust Lifetimes",
-    "description": "Explore the essential concept of lifetimes in Rust programming and learn how to ensure the validity of borrows in your code.",
-    "keywords": "rust playground, borrows, lifetimes, rust tutor, rust online compiler, rust commands, scopes, rust practice, rust online playground, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Lifetimes",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -49,5 +13,89 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Lifetime Concepts in Rust Programming",
+      "description": "In this lab, we will explore the concept of lifetimes in Rust and how they are used by the compiler to ensure the validity of borrows in the code. Lifetimes are a construct of the compiler that determine the duration of a variable, from its creation to its destruction. While lifetimes and scopes are related, they are not the same. When borrowing a variable using the & operator, the borrow has a lifetime that is determined by its declaration, and it is valid as long as it ends before the lender is destroyed. However, the scope of the borrow is determined by where the reference is used. The provided example code demonstrates how lifetimes and scopes are used in practice, with each variable having its own lifetime and scope.",
+      "meta": {
+        "title": "Mastering Rust Lifetimes",
+        "description": "Explore the essential concept of lifetimes in Rust programming and learn how to ensure the validity of borrows in your code.",
+        "keywords": "rust playground, borrows, lifetimes, rust tutor, rust online compiler, rust commands, scopes, rust practice, rust online playground, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Lifetimes",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust编程中的生命周期概念",
+      "description": "在本实验中，我们将探讨Rust中的生命周期概念，以及编译器如何使用它们来确保代码中借用的有效性。生命周期是编译器的一种结构，它决定了变量从创建到销毁的持续时间。虽然生命周期和作用域相关，但它们并不相同。当使用`&`运算符借用一个变量时，借用具有一个由其声明决定的生命周期，并且只要它在出借者被销毁之前结束，它就是有效的。然而，借用的作用域是由引用的使用位置决定的。提供的示例代码演示了生命周期和作用域在实际中的使用方式，每个变量都有自己的生命周期和作用域。",
+      "meta": {
+        "title": "掌握Rust生命周期",
+        "description": "探索Rust编程中生命周期的基本概念，并学习如何确保代码中借用的有效性。",
+        "keywords": "Rust游乐场, 借用, 生命周期, Rust教程, Rust在线编译器, Rust命令, 作用域, Rust练习, Rust在线游乐场, Rust在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生命周期",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,90 +1,10 @@
 {
   "type": "lab",
-  "title": "Gaussian Mixture Model Initialization Methods",
-  "description": "In this lab, we will learn about different initialization methods for Gaussian Mixture Models (GMM). We will use scikit-learn library to generate sample data and visualize the clustering results. There are four different methods for the initialization parameter _init_param_: kmeans (default), random, random_from_data, and k-means++.",
-  "meta": {
-    "title": "Gaussian Mixture Models | Machine Learning | Data Clustering",
-    "description": "Learn about different initialization methods for Gaussian Mixture Models (GMM) using the scikit-learn library. Generate sample data and visualize the clustering results.",
-    "keywords": "Gaussian Mixture Models, GMM, Machine Learning, Data Clustering, scikit-learn, Python"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Import libraries and generate sample data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/mixture",
-          "sklearn/utils"
-        ]
-      },
-      {
-        "title": "Define a function to get initial means",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot the sample data and initialization centers",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Interpret the results",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-gmm-init.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -93,5 +13,168 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-gmm-init.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Gaussian Mixture Model Initialization Methods",
+      "description": "In this lab, we will learn about different initialization methods for Gaussian Mixture Models (GMM). We will use scikit-learn library to generate sample data and visualize the clustering results. There are four different methods for the initialization parameter _init_param_: kmeans (default), random, random_from_data, and k-means++.",
+      "meta": {
+        "title": "Gaussian Mixture Models | Machine Learning | Data Clustering",
+        "description": "Learn about different initialization methods for Gaussian Mixture Models (GMM) using the scikit-learn library. Generate sample data and visualize the clustering results.",
+        "keywords": "Gaussian Mixture Models, GMM, Machine Learning, Data Clustering, scikit-learn, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Import libraries and generate sample data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/mixture",
+              "sklearn/utils"
+            ]
+          },
+          {
+            "title": "Define a function to get initial means",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot the sample data and initialization centers",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Interpret the results",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "高斯混合模型初始化方法",
+      "description": "在本实验中，我们将了解高斯混合模型（GMM）的不同初始化方法。我们将使用scikit-learn库生成样本数据并可视化聚类结果。初始化参数_init_param_有四种不同的方法：kmeans（默认）、random、random_from_data和k-means++。",
+      "meta": {
+        "title": "高斯混合模型 | 机器学习 | 数据聚类",
+        "description": "使用scikit-learn库了解高斯混合模型（GMM）的不同初始化方法。生成样本数据并可视化聚类结果。",
+        "keywords": "高斯混合模型, GMM, 机器学习, 数据聚类, scikit-learn, Python"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "导入库并生成样本数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/mixture",
+              "sklearn/utils"
+            ]
+          },
+          {
+            "title": "定义一个函数来获取初始均值",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制样本数据和初始化中心",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "解读结果",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

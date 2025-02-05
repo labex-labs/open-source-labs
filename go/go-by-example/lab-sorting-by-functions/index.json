@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Sorting by Functions",
-  "description": "This lab aims to test your ability to sort a collection by something other than its natural order. In this case, we will sort strings by their length instead of alphabetically.",
-  "meta": {
-    "title": "Sorting by Functions in Go",
-    "description": "Learn how to sort a collection of strings by their length instead of alphabetically in Go.",
-    "keywords": "custom sort, go, go labs, functions, go playground online, sorting, string length, go lab, go practice"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Sorting by Functions",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Sorting By String Length In Go Program",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["go/sorting"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "sorting-by-functions.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,90 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "sorting-by-functions.go",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Sorting by Functions",
+      "description": "This lab aims to test your ability to sort a collection by something other than its natural order. In this case, we will sort strings by their length instead of alphabetically.",
+      "meta": {
+        "title": "Sorting by Functions in Go",
+        "description": "Learn how to sort a collection of strings by their length instead of alphabetically in Go.",
+        "keywords": "custom sort, go, go labs, functions, go playground online, sorting, string length, go lab, go practice"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Sorting by Functions",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Sorting By String Length In Go Program",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/sorting"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用函数进行排序",
+      "description": "本实验旨在测试你按照非自然顺序对集合进行排序的能力。在这种情况下，我们将按字符串长度而非字母顺序对字符串进行排序。",
+      "meta": {
+        "title": "Go语言中的使用函数进行排序",
+        "description": "学习如何在Go语言中按字符串长度而非字母顺序对字符串集合进行排序。",
+        "keywords": "自定义排序, Go语言, Go实验, 函数, 在线Go语言游乐场, 排序, 字符串长度, Go实验, Go实践"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用函数进行排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序中按字符串长度排序",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["go/sorting"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

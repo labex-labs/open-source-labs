@@ -1,73 +1,10 @@
 {
   "type": "lab",
-  "title": "Face Completion with Multi-Output Estimators",
-  "description": "This lab demonstrates how to use multi-output estimators to complete images. The goal is to predict the lower half of a face given its upper half. Different algorithms such as extremely randomized trees, k-nearest neighbors, linear regression, and ridge regression will be used to complete the lower half of the faces. The completed faces will be compared with the original faces to evaluate the performance of the algorithms.",
-  "meta": {
-    "title": "Image Completion | Machine Learning | Olivetti Faces",
-    "description": "Learn how to use multi-output estimators to complete images, predicting the lower half of a face given its upper half, using various algorithms like extremely randomized trees, k-nearest neighbors, linear regression, and ridge regression.",
-    "keywords": "image completion, machine learning, olivetti faces, multi-output estimators, extremely randomized trees, k-nearest neighbors, linear regression, ridge regression"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Load the Data",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Fit Estimators",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Plot the Completed Faces",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-multioutput-face-completion.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -76,5 +13,134 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-multioutput-face-completion.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Face Completion with Multi-Output Estimators",
+      "description": "This lab demonstrates how to use multi-output estimators to complete images. The goal is to predict the lower half of a face given its upper half. Different algorithms such as extremely randomized trees, k-nearest neighbors, linear regression, and ridge regression will be used to complete the lower half of the faces. The completed faces will be compared with the original faces to evaluate the performance of the algorithms.",
+      "meta": {
+        "title": "Image Completion | Machine Learning | Olivetti Faces",
+        "description": "Learn how to use multi-output estimators to complete images, predicting the lower half of a face given its upper half, using various algorithms like extremely randomized trees, k-nearest neighbors, linear regression, and ridge regression.",
+        "keywords": "image completion, machine learning, olivetti faces, multi-output estimators, extremely randomized trees, k-nearest neighbors, linear regression, ridge regression"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Load the Data",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Fit Estimators",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Plot the Completed Faces",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "使用多输出估计器完成人脸图像",
+      "description": "本实验展示了如何使用多输出估计器来完成图像。目标是根据人脸的上半部分预测其下半部分。将使用诸如极端随机树、k近邻、线性回归和岭回归等不同算法来完成人脸的下半部分。将完成后的人脸与原始人脸进行比较，以评估算法的性能。",
+      "meta": {
+        "title": "图像完成 | 机器学习 | Olivetti人脸",
+        "description": "了解如何使用多输出估计器来完成图像，根据人脸的上半部分预测其下半部分，使用极端随机树、k近邻、线性回归和岭回归等各种算法。",
+        "keywords": "图像完成, 机器学习, Olivetti人脸, 多输出估计器, 极端随机树, k近邻, 线性回归, 岭回归"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "拟合估计器",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "绘制完成的人脸图像",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

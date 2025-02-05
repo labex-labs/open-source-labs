@@ -1,67 +1,10 @@
 {
   "type": "lab",
-  "title": "Hex to RGB Conversion",
-  "description": "In this lab, you will learn how to convert hexadecimal color codes to their corresponding RGB (red, green, blue) values using a Python function that leverages list comprehension and type conversion.",
-  "meta": {
-    "title": "Hex to RGB Conversion",
-    "description": "Learn how to convert hexadecimal color codes to RGB values for web development with this easy-to-follow tutorial.",
-    "keywords": "python playground, rgb values, python, hex to rgb, programming tutorial, color conversion, web development"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Hex to RGB Conversion",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Hex to RGB Conversion",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/data_collections",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/numeric_types",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_hex_to_rgb.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "hex_to_rgb.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -70,5 +13,117 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_hex_to_rgb.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "hex_to_rgb.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Hex to RGB Conversion",
+      "description": "In this lab, you will learn how to convert hexadecimal color codes to their corresponding RGB (red, green, blue) values using a Python function that leverages list comprehension and type conversion.",
+      "meta": {
+        "title": "Hex to RGB Conversion",
+        "description": "Learn how to convert hexadecimal color codes to RGB values for web development with this easy-to-follow tutorial.",
+        "keywords": "python playground, rgb values, python, hex to rgb, programming tutorial, color conversion, web development"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Hex to RGB Conversion",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Hex to RGB Conversion",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "十六进制转 RGB",
+      "description": "在本实验中，你将学习如何使用一个利用列表推导式和类型转换的 Python 函数，将十六进制颜色代码转换为其相应的 RGB（红色、绿色、蓝色）值。",
+      "meta": {
+        "title": "十六进制转 RGB",
+        "description": "通过这个简单易懂的教程，学习如何将十六进制颜色代码转换为 RGB 值用于网页开发。",
+        "keywords": "Python 实践, RGB 值, Python, 十六进制转 RGB, 编程教程, 颜色转换, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "十六进制转 RGB",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证十六进制转 RGB",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/data_collections",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/numeric_types",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

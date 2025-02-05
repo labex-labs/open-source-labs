@@ -1,63 +1,10 @@
 {
   "type": "lab",
-  "title": "Callable Telephone Link",
-  "description": "In this lab, we will learn how to create a callable telephone link in React using the tel: protocol. This link allows users to call a phone number directly from their device with just one click. By the end of this lab, you will be able to implement this feature into your own React applications, enhancing their usability and accessibility.",
-  "meta": {
-    "title": "Callable Telephone Link: Enhance Usability and Accessibility in React",
-    "description": "Learn how to create a callable telephone link in React using the tel: protocol, enabling users to call a phone number with a single click.",
-    "keywords": "accessibility, tel protocol, callable telephone link, react, usability"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Callable Telephone Link",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of script.js modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["react/jsx"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -66,5 +13,109 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "script.js",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Callable Telephone Link",
+      "description": "In this lab, we will learn how to create a callable telephone link in React using the tel: protocol. This link allows users to call a phone number directly from their device with just one click. By the end of this lab, you will be able to implement this feature into your own React applications, enhancing their usability and accessibility.",
+      "meta": {
+        "title": "Callable Telephone Link: Enhance Usability and Accessibility in React",
+        "description": "Learn how to create a callable telephone link in React using the tel: protocol, enabling users to call a phone number with a single click.",
+        "keywords": "accessibility, tel protocol, callable telephone link, react, usability"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Callable Telephone Link",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of script.js modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/jsx"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "可调用电话链接",
+      "description": "在本实验中，我们将学习如何使用tel:协议在React中创建一个可调用的电话链接。此链接允许用户只需点击一下，即可直接从其设备拨打电话号码。在本实验结束时，你将能够在自己的React应用程序中实现此功能，从而提高其可用性和可访问性。",
+      "meta": {
+        "title": "可调用电话链接：增强React中的可用性和可访问性",
+        "description": "学习如何使用tel:协议在React中创建一个可调用的电话链接，使用户能够一键拨打电话号码。",
+        "keywords": "可访问性, tel协议, 可调用电话链接, React, 可用性"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "可调用电话链接",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证script.js修改的状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["react/jsx"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

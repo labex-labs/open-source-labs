@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Rust Borrowing Ownership Fundamentals",
-  "description": "In this lab, we learn about borrowing in Rust, which allows accessing data without taking ownership by using references ('&T') instead of passing objects by value ('T'). The borrow checker ensures that references always point to valid objects and prevents destruction of objects that are being borrowed.",
-  "meta": {
-    "title": "Rust Borrowing Concepts | Programming Tutorial",
-    "description": "Learn about borrowing in Rust, which allows accessing data without taking ownership using references. Understand the borrow checker and how it ensures references point to valid objects.",
-    "keywords": "Rust, Borrowing, References, Borrow Checker, Programming Tutorial"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Borrowing",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Rust Borrowing Ownership Fundamentals",
+      "description": "In this lab, we learn about borrowing in Rust, which allows accessing data without taking ownership by using references ('&T') instead of passing objects by value ('T'). The borrow checker ensures that references always point to valid objects and prevents destruction of objects that are being borrowed.",
+      "meta": {
+        "title": "Rust Borrowing Concepts | Programming Tutorial",
+        "description": "Learn about borrowing in Rust, which allows accessing data without taking ownership using references. Understand the borrow checker and how it ensures references point to valid objects.",
+        "keywords": "Rust, Borrowing, References, Borrow Checker, Programming Tutorial"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Borrowing",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 借用所有权基础",
+      "description": "在本实验中，我们学习 Rust 中的借用，它允许通过使用引用（'&T'）而非按值传递对象（'T'）来访问数据而不获取所有权。借用检查器确保引用始终指向有效的对象，并防止正在被借用的对象被销毁。",
+      "meta": {
+        "title": "Rust 借用概念 | 编程教程",
+        "description": "了解 Rust 中的借用，它允许使用引用在不获取所有权的情况下访问数据。理解借用检查器以及它如何确保引用指向有效的对象。",
+        "keywords": "Rust, 借用, 引用, 借用检查器, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "借用",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

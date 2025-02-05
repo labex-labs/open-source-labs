@@ -1,48 +1,10 @@
 {
   "type": "lab",
-  "title": "Efficiently Check Empty JavaScript Collections",
-  "description": "In this lab, we will explore a common programming problem of checking if a collection or object is empty in JavaScript. We will use a simple function to determine if the provided value is an empty object/collection, has no enumerable properties, or is any type that is not considered a collection. This lab will help you understand how to efficiently check for empty objects or collections in your JavaScript code.",
-  "meta": {
-    "title": "JavaScript | Empty Objects & Collections",
-    "description": "Explore how to efficiently check if a JavaScript object or collection is empty. Learn a simple function to determine if a value is an empty object/collection, has no enumerable properties, or is any type that is not considered a collection.",
-    "keywords": "JavaScript, Empty Objects, Empty Collections, Object Checking, Collection Checking"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Collection Is Empty",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Node Commands Executed",
-            "file": "verify1.sh",
-            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "javascript/arith_ops",
-          "javascript/comp_ops",
-          "javascript/data_types",
-          "javascript/destr_assign",
-          "javascript/variables"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -51,5 +13,93 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Efficiently Check Empty JavaScript Collections",
+      "description": "In this lab, we will explore a common programming problem of checking if a collection or object is empty in JavaScript. We will use a simple function to determine if the provided value is an empty object/collection, has no enumerable properties, or is any type that is not considered a collection. This lab will help you understand how to efficiently check for empty objects or collections in your JavaScript code.",
+      "meta": {
+        "title": "JavaScript | Empty Objects & Collections",
+        "description": "Explore how to efficiently check if a JavaScript object or collection is empty. Learn a simple function to determine if a value is an empty object/collection, has no enumerable properties, or is any type that is not considered a collection.",
+        "keywords": "JavaScript, Empty Objects, Empty Collections, Object Checking, Collection Checking"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Collection Is Empty",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Node Commands Executed",
+                "file": "verify1.sh",
+                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/destr_assign",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "高效检查 JavaScript 集合是否为空",
+      "description": "在本实验中，我们将探讨一个常见的编程问题：在 JavaScript 中检查一个集合或对象是否为空。我们将使用一个简单的函数来确定提供的值是否为空对象/集合、是否没有可枚举属性，或者是否是任何不被视为集合的类型。本实验将帮助你了解如何在 JavaScript 代码中高效地检查空对象或集合。",
+      "meta": {
+        "title": "JavaScript | 空对象与集合",
+        "description": "探索如何高效检查 JavaScript 对象或集合是否为空。学习一个简单的函数，以确定一个值是否为空对象/集合、是否没有可枚举属性，或者是否是任何不被视为集合的类型。",
+        "keywords": "JavaScript, 空对象, 空集合, 对象检查, 集合检查"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "集合是否为空",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否执行了 Node 命令",
+                "file": "verify1.sh",
+                "hint": "在终端/SSH 中输入 'node' 并回车即可运行 JavaScript。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "javascript/arith_ops",
+              "javascript/comp_ops",
+              "javascript/data_types",
+              "javascript/destr_assign",
+              "javascript/variables"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

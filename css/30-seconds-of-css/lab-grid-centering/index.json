@@ -1,74 +1,10 @@
 {
   "type": "lab",
-  "title": "Centered Grid Layout Mastery",
-  "description": "In this lab, we will explore the concept of grid centering using CSS. You will learn how to horizontally and vertically center a child element within a parent element using the grid layout. By the end of this lab, you will have a solid understanding of how to use justify-content and align-items properties to create a perfectly centered layout.",
-  "meta": {
-    "title": "Mastering Centered Grid Layout",
-    "description": "Learn how to horizontally and vertically center a child element within a parent element using CSS grid layout.",
-    "keywords": "css, css practice, responsive design, css playground, centering, web development, grid layout, css lab, css exercises"
-  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Grid Centering",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify the running status of the web service",
-            "file": "verify1-1.sh",
-            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of index.html modification",
-            "file": "verify1-2.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          },
-          {
-            "name": "Verify the status of style.css modification",
-            "file": "verify1-3.sh",
-            "hint": "Please follow the steps to complete the lab.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "css/display_property",
-          "css/selectors",
-          "css/width_and_height"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -77,5 +13,131 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "index.html",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "style.css",
+        "target": "~/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Centered Grid Layout Mastery",
+      "description": "In this lab, we will explore the concept of grid centering using CSS. You will learn how to horizontally and vertically center a child element within a parent element using the grid layout. By the end of this lab, you will have a solid understanding of how to use justify-content and align-items properties to create a perfectly centered layout.",
+      "meta": {
+        "title": "Mastering Centered Grid Layout",
+        "description": "Learn how to horizontally and vertically center a child element within a parent element using CSS grid layout.",
+        "keywords": "css, css practice, responsive design, css playground, centering, web development, grid layout, css lab, css exercises"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Grid Centering",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify the running status of the web service",
+                "file": "verify1-1.sh",
+                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of index.html modification",
+                "file": "verify1-2.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "Verify the status of style.css modification",
+                "file": "verify1-3.sh",
+                "hint": "Please follow the steps to complete the lab.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/display_property",
+              "css/selectors",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "掌握居中网格布局",
+      "description": "在本实验中，我们将探索使用 CSS 进行网格居中的概念。你将学习如何使用网格布局在父元素内水平和垂直居中一个子元素。在本实验结束时，你将对如何使用 justify-content 和 align-items 属性来创建完美居中的布局有深入的理解。",
+      "meta": {
+        "title": "精通居中网格布局",
+        "description": "学习如何使用 CSS 网格布局在父元素内水平和垂直居中一个子元素。",
+        "keywords": "CSS, CSS 实践, 响应式设计, CSS 游乐场, 居中, 网页开发, 网格布局, CSS 实验, CSS 练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "网格居中",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "css/display_property",
+              "css/selectors",
+              "css/width_and_height"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

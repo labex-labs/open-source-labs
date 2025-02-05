@@ -1,153 +1,10 @@
 {
   "type": "lab",
-  "title": "Getting Started with Flask Web Framework",
-  "description": "This lab will guide you through the process of getting started with Flask, a lightweight web framework for Python. You will learn how to create a basic Flask application, run it locally, and understand the basic concepts of routing and rendering templates.",
-  "meta": {
-    "title": "Get Started with Flask | Python Web Framework",
-    "description": "Learn how to create a basic Flask application, run it locally, and understand the basic concepts of routing and rendering templates.",
-    "keywords": "Flask, Python, Web Development, Web Framework, Routing, Templates"
-  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Setting up Flask",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Existence of app.py File",
-            "file": "verify1.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "flask/application_object",
-          "flask/sessions",
-          "flask/useful_internals"
-        ]
-      },
-      {
-        "title": "Creating a Basic Route",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Presence of 'hello_world' in app.py",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "flask/application_object",
-          "flask/blueprint_objects",
-          "flask/response_objects",
-          "flask/useful_internals"
-        ]
-      },
-      {
-        "title": "Running the Application",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Server Response Contains 'Hello'",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "flask/incoming_request_data",
-          "flask/response_objects",
-          "flask/useful_internals"
-        ]
-      },
-      {
-        "title": "Adding HTML Templates",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "Verify Existence of index.html File",
-            "file": "verify4.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "flask/application_object",
-          "flask/blueprint_objects",
-          "flask/sessions",
-          "flask/useful_internals"
-        ]
-      },
-      {
-        "title": "Running the Application Again",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "Verify Flask Server Running",
-            "file": "verify5.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "flask/incoming_request_data",
-          "flask/response_objects",
-          "flask/useful_internals"
-        ]
-      },
-      {
-        "title": "Adding Dynamic Content",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Jinja2 Syntax in HTML File",
-            "file": "verify6.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "flask/application_object",
-          "flask/blueprint_objects",
-          "flask/response_objects",
-          "flask/useful_internals"
-        ]
-      },
-      {
-        "title": "Running the Application Again",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "Verify Student's LabEx Server Response",
-            "file": "verify7.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["flask/incoming_request_data", "flask/useful_internals"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -163,5 +20,303 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/pallets/flask/blob/main/LICENSE.rst",
     "repo": "https://github.com/pallets/flask"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Getting Started with Flask Web Framework",
+      "description": "This lab will guide you through the process of getting started with Flask, a lightweight web framework for Python. You will learn how to create a basic Flask application, run it locally, and understand the basic concepts of routing and rendering templates.",
+      "meta": {
+        "title": "Get Started with Flask | Python Web Framework",
+        "description": "Learn how to create a basic Flask application, run it locally, and understand the basic concepts of routing and rendering templates.",
+        "keywords": "Flask, Python, Web Development, Web Framework, Routing, Templates"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Setting up Flask",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Existence of app.py File",
+                "file": "verify1.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/sessions",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "Creating a Basic Route",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Presence of 'hello_world' in app.py",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/blueprint_objects",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "Running the Application",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Server Response Contains 'Hello'",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/incoming_request_data",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "Adding HTML Templates",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "Verify Existence of index.html File",
+                "file": "verify4.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/blueprint_objects",
+              "flask/sessions",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "Running the Application Again",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "Verify Flask Server Running",
+                "file": "verify5.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/incoming_request_data",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "Adding Dynamic Content",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Jinja2 Syntax in HTML File",
+                "file": "verify6.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/blueprint_objects",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "Running the Application Again",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "Verify Student's LabEx Server Response",
+                "file": "verify7.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Flask 网络框架入门",
+      "description": "本实验将指导你开始使用 Flask，这是一个用于 Python 的轻量级网络框架。你将学习如何创建一个基本的 Flask 应用程序，在本地运行它，并理解路由和渲染模板的基本概念。",
+      "meta": {
+        "title": "Flask 入门 | Python 网络框架",
+        "description": "学习如何创建一个基本的 Flask 应用程序，在本地运行它，并理解路由和渲染模板的基本概念。",
+        "keywords": "Flask, Python, 网页开发, 网络框架, 路由, 模板"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "设置 Flask",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 app.py 文件是否存在",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/sessions",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "创建基本路由",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 app.py 中是否存在 'hello_world'",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/blueprint_objects",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "运行应用程序",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证服务器响应中是否包含 'Hello'",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/incoming_request_data",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "添加 HTML 模板",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证 index.html 文件是否存在",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/blueprint_objects",
+              "flask/sessions",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "再次运行应用程序",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证 Flask 服务器是否正在运行",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/incoming_request_data",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "添加动态内容",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "验证 HTML 文件中是否存在 Jinja2 语法",
+                "file": "verify6.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "flask/application_object",
+              "flask/blueprint_objects",
+              "flask/response_objects",
+              "flask/useful_internals"
+            ]
+          },
+          {
+            "title": "再次运行应用程序",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "验证学生的 LabEx 服务器响应",
+                "file": "verify7.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

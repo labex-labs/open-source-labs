@@ -1,63 +1,10 @@
 {
   "type": "lab",
-  "title": "Weighted Average Calculation Function",
-  "description": "In this lab, you will learn how to implement a function that calculates the weighted average of a list of numbers, where each number is multiplied by its corresponding weight, and the result is divided by the sum of the weights.",
-  "meta": {
-    "title": "Weighted Average Calculation | Python Programming Tutorial",
-    "description": "Learn how to calculate weighted averages in Python. Our programming tutorial covers the concepts and provides a sample implementation to help you master this data analysis technique.",
-    "keywords": "weighted average, data analysis, Python programming, math, statistics"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Weighted Average",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Weighted Average Calculation",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/comments",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_weighted_average.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "weighted_average.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -66,5 +13,109 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_weighted_average.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "weighted_average.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Weighted Average Calculation Function",
+      "description": "In this lab, you will learn how to implement a function that calculates the weighted average of a list of numbers, where each number is multiplied by its corresponding weight, and the result is divided by the sum of the weights.",
+      "meta": {
+        "title": "Weighted Average Calculation | Python Programming Tutorial",
+        "description": "Learn how to calculate weighted averages in Python. Our programming tutorial covers the concepts and provides a sample implementation to help you master this data analysis technique.",
+        "keywords": "weighted average, data analysis, Python programming, math, statistics"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Weighted Average",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Weighted Average Calculation",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "加权平均计算函数",
+      "description": "在这个实验中，你将学习如何实现一个函数，该函数用于计算数字列表的加权平均数，其中每个数字都乘以其对应的权重，然后结果除以权重之和。",
+      "meta": {
+        "title": "加权平均计算 | Python编程教程",
+        "description": "学习如何在Python中计算加权平均数。我们的编程教程涵盖了相关概念，并提供了一个示例实现，以帮助你掌握这种数据分析技术。",
+        "keywords": "加权平均, 数据分析, Python编程, 数学, 统计学"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加权平均",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证加权平均计算",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/comments",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

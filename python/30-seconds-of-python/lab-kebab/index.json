@@ -1,67 +1,10 @@
 {
   "type": "lab",
-  "title": "Convert String to Kebab Case in Python",
-  "description": "In Python, a kebab case string is a string where each word is separated by a hyphen. For example, 'hello-world' is a kebab case string. In this challenge, you will be tasked with writing a function that converts a given string to kebab case.",
-  "meta": {
-    "title": "Python Kebab Case Conversion | String Manipulation",
-    "description": "Learn how to convert strings to kebab case in Python. Discover a powerful function that handles various string formats and transforms them into clean, hyphen-separated kebab case.",
-    "keywords": "python, kebab case, string manipulation, string conversion, code challenge"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Kebabcase string",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Kebab Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/lambda_functions",
-          "python/lists",
-          "python/sets",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages",
-          "python/with_statement"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_kebab.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "kebab.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -70,5 +13,117 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_kebab.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "kebab.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Convert String to Kebab Case in Python",
+      "description": "In Python, a kebab case string is a string where each word is separated by a hyphen. For example, 'hello-world' is a kebab case string. In this challenge, you will be tasked with writing a function that converts a given string to kebab case.",
+      "meta": {
+        "title": "Python Kebab Case Conversion | String Manipulation",
+        "description": "Learn how to convert strings to kebab case in Python. Discover a powerful function that handles various string formats and transforms them into clean, hyphen-separated kebab case.",
+        "keywords": "python, kebab case, string manipulation, string conversion, code challenge"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Kebabcase string",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Kebab Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lambda_functions",
+              "python/lists",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "在Python中把字符串转换为连字符命名法",
+      "description": "在Python中，连字符命名法字符串是指每个单词都由连字符分隔的字符串。例如，'hello-world' 就是一个连字符命名法字符串。在这个挑战中，你将负责编写一个函数，将给定的字符串转换为连字符命名法。",
+      "meta": {
+        "title": "Python连字符命名法转换 | 字符串操作",
+        "description": "学习如何在Python中把字符串转换为连字符命名法。探索一个强大的函数，它能处理各种字符串格式，并将它们转换为干净的、用连字符分隔的连字符命名法。",
+        "keywords": "Python, 连字符命名法, 字符串操作, 字符串转换, 代码挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "连字符命名法字符串",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python连字符命名法脚本的执行",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/lambda_functions",
+              "python/lists",
+              "python/sets",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages",
+              "python/with_statement"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

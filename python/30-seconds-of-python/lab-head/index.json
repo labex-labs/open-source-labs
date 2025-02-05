@@ -1,61 +1,10 @@
 {
   "type": "lab",
-  "title": "List Head Function",
-  "description": "In Python, a list is an ordered collection of elements. Each element can be accessed by its index - a non-negative integer that represents the element's position in the list. The first element in the list has index 0, the second has index 1, and so on.",
-  "meta": {
-    "title": "Mastering the List Head Function in Python",
-    "description": "Learn how to use the list head function in Python to access the first element of a list.",
-    "keywords": "coding guide, python, programming tutorial, list head, list function"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "List Head Function",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python 3 Script Execution in Temporary Directory",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/comments",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_head.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "head.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -64,5 +13,105 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_head.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "head.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "List Head Function",
+      "description": "In Python, a list is an ordered collection of elements. Each element can be accessed by its index - a non-negative integer that represents the element's position in the list. The first element in the list has index 0, the second has index 1, and so on.",
+      "meta": {
+        "title": "Mastering the List Head Function in Python",
+        "description": "Learn how to use the list head function in Python to access the first element of a list.",
+        "keywords": "coding guide, python, programming tutorial, list head, list function"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "List Head Function",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python 3 Script Execution in Temporary Directory",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "列表头部函数",
+      "description": "在Python中，列表是元素的有序集合。每个元素都可以通过其索引来访问，索引是一个非负整数，表示元素在列表中的位置。列表中的第一个元素的索引为0，第二个元素的索引为1，依此类推。",
+      "meta": {
+        "title": "掌握Python中的列表头部函数",
+        "description": "学习如何使用Python中的列表头部函数来访问列表的第一个元素。",
+        "keywords": "编码指南, Python, 编程教程, 列表头部, 列表函数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列表头部函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python 3脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/comments",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

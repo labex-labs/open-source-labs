@@ -1,64 +1,10 @@
 {
   "type": "lab",
-  "title": "Check if a List Includes All Values",
-  "description": "In Python, you can check if all the elements in one list are included in another list. This can be useful in many situations, such as verifying if a user's input matches a list of valid options. In this challenge, you will create a function that checks if all the values in a given list are included in another list.",
-  "meta": {
-    "title": "Python | List Inclusion Check",
-    "description": "Learn how to check if all values in one list are included in another list using Python. Useful for validating user input against a list of valid options.",
-    "keywords": "Python, List, Inclusion, Check, Validation"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Check if a List Includes All Values",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Includes All Python Script Execution",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/lists",
-          "python/tuples"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_includes_all.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "includes_all.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -67,5 +13,111 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_includes_all.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "includes_all.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Check if a List Includes All Values",
+      "description": "In Python, you can check if all the elements in one list are included in another list. This can be useful in many situations, such as verifying if a user's input matches a list of valid options. In this challenge, you will create a function that checks if all the values in a given list are included in another list.",
+      "meta": {
+        "title": "Python | List Inclusion Check",
+        "description": "Learn how to check if all values in one list are included in another list using Python. Useful for validating user input against a list of valid options.",
+        "keywords": "Python, List, Inclusion, Check, Validation"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Check if a List Includes All Values",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Includes All Python Script Execution",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "检查一个列表是否包含所有值",
+      "description": "在Python中，你可以检查一个列表中的所有元素是否都包含在另一个列表中。这在许多情况下都很有用，例如验证用户输入是否与有效选项列表匹配。在这个挑战中，你将创建一个函数，用于检查给定列表中的所有值是否都包含在另一个列表中。",
+      "meta": {
+        "title": "Python | 列表包含检查",
+        "description": "学习如何使用Python检查一个列表中的所有值是否都包含在另一个列表中。这对于根据有效选项列表验证用户输入很有用。",
+        "keywords": "Python, 列表, 包含, 检查, 验证"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查一个列表是否包含所有值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证包含所有值的Python脚本执行情况",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/lists",
+              "python/tuples"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

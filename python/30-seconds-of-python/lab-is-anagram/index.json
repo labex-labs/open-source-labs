@@ -1,66 +1,10 @@
 {
   "type": "lab",
-  "title": "Anagram Checker: A Python Challenge",
-  "description": "An anagram is a word or phrase formed by rearranging the letters of a different word or phrase. For example, 'listen' is an anagram of 'silent'. In this challenge, you will be asked to write a function that checks if two strings are anagrams of each other.",
-  "meta": {
-    "title": "Anagram Checker | String Manipulation",
-    "description": "Discover the power of anagrams with this programming tutorial. Learn how to write a Python function that checks if two strings are anagrams, ignoring case and special characters.",
-    "keywords": "anagram, string manipulation, Python, programming, code challenge"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "String Anagram Challenge",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Anagram Functionality in Python",
-            "file": "verify1.sh",
-            "hint": "Please make sure you have completed the required actions.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/booleans",
-          "python/comments",
-          "python/conditional_statements",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/standard_libraries",
-          "python/tuples",
-          "python/using_packages"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_anagram.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_anagram.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -69,5 +13,115 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "test_is_anagram.py",
+        "target": "/tmp",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "is_anagram.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Anagram Checker: A Python Challenge",
+      "description": "An anagram is a word or phrase formed by rearranging the letters of a different word or phrase. For example, 'listen' is an anagram of 'silent'. In this challenge, you will be asked to write a function that checks if two strings are anagrams of each other.",
+      "meta": {
+        "title": "Anagram Checker | String Manipulation",
+        "description": "Discover the power of anagrams with this programming tutorial. Learn how to write a Python function that checks if two strings are anagrams, ignoring case and special characters.",
+        "keywords": "anagram, string manipulation, Python, programming, code challenge"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "String Anagram Challenge",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Anagram Functionality in Python",
+                "file": "verify1.sh",
+                "hint": "Please make sure you have completed the required actions.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "变位词检查器：一个Python挑战",
+      "description": "变位词是通过重新排列另一个单词或短语的字母而形成的单词或短语。例如，“listen” 是 “silent” 的变位词。在这个挑战中，你将被要求编写一个函数，用于检查两个字符串是否为彼此的变位词。",
+      "meta": {
+        "title": "变位词检查器 | 字符串操作",
+        "description": "通过本编程教程探索变位词的强大功能。学习如何编写一个Python函数，用于检查两个字符串是否为变位词，同时忽略大小写和特殊字符。",
+        "keywords": "变位词, 字符串操作, Python, 编程, 代码挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "字符串变位词挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在Python中验证变位词功能",
+                "file": "verify1.sh",
+                "hint": "请确保你已完成所需操作。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/booleans",
+              "python/comments",
+              "python/conditional_statements",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/standard_libraries",
+              "python/tuples",
+              "python/using_packages"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

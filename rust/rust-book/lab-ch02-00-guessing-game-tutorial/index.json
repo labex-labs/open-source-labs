@@ -1,313 +1,10 @@
 {
   "type": "lab",
-  "title": "Programming a Guessing Game",
-  "description": "In this lab, we will be implementing a guessing game in Rust, where the program generates a random number and prompts the player to guess it, providing feedback on whether the guess is too low or too high, and congratulating the player if they guess correctly.",
-  "meta": {
-    "title": "Programming a Guessing Game: Rust Fundamentals in Practice",
-    "description": "Explore the basics of Rust programming by building a guessing game in this interactive lab from the Rust Book.",
-    "keywords": "guessing game, rust playground, beginner, rust tutor, rust online compiler, rust commands, tutorial, rust practice, rust online playground, rust online"
-  },
   "difficulty": "Beginner",
   "time": 85,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Programming a Guessing Game",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Setting Up a New Project",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify Existence of Guessing Game Project Folder",
-            "file": "verify2.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/expressions_statements", "rust/function_syntax"]
-      },
-      {
-        "title": "Processing a Guess",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify Presence of Standard Input/Output Library",
-            "file": "verify3.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Storing Values with Variables",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Receiving User Input",
-        "text": "step5.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify5.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/method_syntax"]
-      },
-      {
-        "title": "Handling Potential Failure with Result",
-        "text": "step6.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify6.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/method_syntax",
-          "rust/string_type"
-        ]
-      },
-      {
-        "title": "Printing Values with println! Placeholders",
-        "text": "step7.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify7.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/expressions_statements", "rust/variable_declarations"]
-      },
-      {
-        "title": "Testing the First Part",
-        "text": "step8.md",
-        "verify": [
-          {
-            "name": "Verify Cargo Run and Guessing Game Output",
-            "file": "verify8.sh",
-            "hint": "Cargo should run without any errors.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Generating a Secret Number",
-        "text": "step9.md",
-        "verify": [
-          {
-            "name": "Verify Cargo Toml Contains Rand Dependency",
-            "file": "verify9.sh",
-            "hint": "rand should be added as a dependency in Cargo.toml.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Using a Crate to Get More Functionality",
-        "text": "step10.md",
-        "verify": [
-          {
-            "name": "Verify Cargo Build Command Execution",
-            "file": "verify10.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Ensuring Reproducible Builds with the Cargo.lock File",
-        "text": "step11.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify11.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": []
-      },
-      {
-        "title": "Updating a Crate to Get a New Version",
-        "text": "step12.md",
-        "verify": [
-          {
-            "name": "Verify Cargo Update History",
-            "file": "verify12.sh",
-            "hint": "Please follow the instructions to complete the steps.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/expressions_statements"]
-      },
-      {
-        "title": "Generating a Random Number",
-        "text": "step13.md",
-        "verify": [
-          {
-            "name": "Verify Cargo Run and Guessing Game Output",
-            "file": "verify13.sh",
-            "hint": "Cargo should run without any errors.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Comparing the Guess to the Secret Number",
-        "text": "step14.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify14.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Allowing Multiple Guesses with Looping",
-        "text": "step15.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify15.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      },
-      {
-        "title": "Quitting After a Correct Guess",
-        "text": "step16.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify16.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": ["rust/expressions_statements", "rust/method_syntax"]
-      },
-      {
-        "title": "Handling Invalid Input",
-        "text": "step17.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify17.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/method_syntax",
-          "rust/mutable_variables",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -316,5 +13,629 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/book/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/book"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Programming a Guessing Game",
+      "description": "In this lab, we will be implementing a guessing game in Rust, where the program generates a random number and prompts the player to guess it, providing feedback on whether the guess is too low or too high, and congratulating the player if they guess correctly.",
+      "meta": {
+        "title": "Programming a Guessing Game: Rust Fundamentals in Practice",
+        "description": "Explore the basics of Rust programming by building a guessing game in this interactive lab from the Rust Book.",
+        "keywords": "guessing game, rust playground, beginner, rust tutor, rust online compiler, rust commands, tutorial, rust practice, rust online playground, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Programming a Guessing Game",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Setting Up a New Project",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify Existence of Guessing Game Project Folder",
+                "file": "verify2.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+          },
+          {
+            "title": "Processing a Guess",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify Presence of Standard Input/Output Library",
+                "file": "verify3.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Storing Values with Variables",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Receiving User Input",
+            "text": "en/step5.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify5.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/method_syntax"]
+          },
+          {
+            "title": "Handling Potential Failure with Result",
+            "text": "en/step6.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify6.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/method_syntax",
+              "rust/string_type"
+            ]
+          },
+          {
+            "title": "Printing Values with println! Placeholders",
+            "text": "en/step7.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify7.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Testing the First Part",
+            "text": "en/step8.md",
+            "verify": [
+              {
+                "name": "Verify Cargo Run and Guessing Game Output",
+                "file": "verify8.sh",
+                "hint": "Cargo should run without any errors.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Generating a Secret Number",
+            "text": "en/step9.md",
+            "verify": [
+              {
+                "name": "Verify Cargo Toml Contains Rand Dependency",
+                "file": "verify9.sh",
+                "hint": "rand should be added as a dependency in Cargo.toml.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Using a Crate to Get More Functionality",
+            "text": "en/step10.md",
+            "verify": [
+              {
+                "name": "Verify Cargo Build Command Execution",
+                "file": "verify10.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Ensuring Reproducible Builds with the Cargo.lock File",
+            "text": "en/step11.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify11.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "Updating a Crate to Get a New Version",
+            "text": "en/step12.md",
+            "verify": [
+              {
+                "name": "Verify Cargo Update History",
+                "file": "verify12.sh",
+                "hint": "Please follow the instructions to complete the steps.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements"]
+          },
+          {
+            "title": "Generating a Random Number",
+            "text": "en/step13.md",
+            "verify": [
+              {
+                "name": "Verify Cargo Run and Guessing Game Output",
+                "file": "verify13.sh",
+                "hint": "Cargo should run without any errors.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Comparing the Guess to the Secret Number",
+            "text": "en/step14.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify14.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Allowing Multiple Guesses with Looping",
+            "text": "en/step15.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify15.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "Quitting After a Correct Guess",
+            "text": "en/step16.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify16.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/method_syntax"]
+          },
+          {
+            "title": "Handling Invalid Input",
+            "text": "en/step17.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify17.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "编写猜数字游戏",
+      "description": "在本实验中，我们将用 Rust 实现一个猜数字游戏，程序会生成一个随机数并提示玩家进行猜测，同时根据猜测结果给出反馈，若玩家猜对则给予祝贺。",
+      "meta": {
+        "title": "编写猜数字游戏：Rust 基础实践",
+        "description": "通过在这本 Rust 书籍的互动实验中构建一个猜数字游戏，探索 Rust 编程的基础知识。",
+        "keywords": "猜数字游戏，Rust 游乐场，初学者，Rust 教程，Rust 在线编译器，Rust 命令，教程，Rust 实践，Rust 在线游乐场，Rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "编写猜数字游戏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "设置新项目",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证猜数字游戏项目文件夹是否存在",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+          },
+          {
+            "title": "处理猜测",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证标准输入/输出库是否存在",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "使用变量存储值",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "接收用户输入",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/method_syntax"]
+          },
+          {
+            "title": "使用Result处理潜在失败情况",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/method_syntax",
+              "rust/string_type"
+            ]
+          },
+          {
+            "title": "使用println!占位符打印值",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "测试第一部分",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "验证Cargo Run和猜数字游戏输出",
+                "file": "verify8.sh",
+                "hint": "Cargo应无错误运行。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "生成一个秘密数字",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "验证Cargo Toml包含Rand依赖项",
+                "file": "verify9.sh",
+                "hint": "应在Cargo.toml中将rand添加为依赖项。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "使用一个包来获取更多功能",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "验证Cargo Build命令的执行",
+                "file": "verify10.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "使用Cargo.lock文件确保可重复构建",
+            "text": "zh/step11.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify11.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": []
+          },
+          {
+            "title": "更新一个包以获取新版本",
+            "text": "zh/step12.md",
+            "verify": [
+              {
+                "name": "验证Cargo更新历史记录",
+                "file": "verify12.sh",
+                "hint": "请按照说明完成步骤。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements"]
+          },
+          {
+            "title": "生成一个随机数",
+            "text": "zh/step13.md",
+            "verify": [
+              {
+                "name": "验证Cargo运行及猜数字游戏输出",
+                "file": "verify13.sh",
+                "hint": "Cargo应无错误地运行。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "将猜测数字与秘密数字进行比较",
+            "text": "zh/step14.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify14.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "通过循环允许多次猜测",
+            "text": "zh/step15.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify15.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          },
+          {
+            "title": "猜对后退出",
+            "text": "zh/step16.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify16.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": ["rust/expressions_statements", "rust/method_syntax"]
+          },
+          {
+            "title": "处理无效输入",
+            "text": "zh/step17.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify17.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/method_syntax",
+              "rust/mutable_variables",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

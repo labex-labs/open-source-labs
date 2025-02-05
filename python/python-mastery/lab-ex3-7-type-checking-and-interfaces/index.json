@@ -1,157 +1,10 @@
 {
   "type": "lab",
-  "title": "Type Checking and Interfaces",
-  "description": "In this lab, you will further enhance the tableformat.py file by incorporating type checking, interfaces, and abstract base classes.",
-  "meta": {
-    "title": "Type Checking and Interfaces in Python",
-    "description": "Explore the concepts of type checking and interfaces in Python programming, including the use of abstract base classes.",
-    "keywords": "python playground, software development, interfaces, python, python programming, abstract base classes, type checking"
-  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Interfaces and type checking",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "Verify Python Read CSV and Class Usage",
-            "file": "verify1.sh",
-            "hint": "Please modify the 'print_table()' function and run the python code in step 1.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/variables_data_types"
-        ],
-        "solutions": ["step1_solution.py"]
-      },
-      {
-        "title": "Abstract Base Classes",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "Verify TableFormatter Implementation and Abstract Base Class",
-            "file": "verify2.sh",
-            "hint": "Please modify the 'TableFormatter' class and run the python code in step 2.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/conditional_statements",
-          "python/encapsulation",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/list_comprehensions",
-          "python/lists",
-          "python/python_shell",
-          "python/raising_exceptions",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/type_conversion",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["step2_solution.py"]
-      },
-      {
-        "title": "Algorithm Template Classes",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "Verify CSV Parser Implementation",
-            "file": "verify3.sh",
-            "hint": "Please complete the contents of the 'reader.py' file as required and execute the python code in step 3.",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "python/build_in_functions",
-          "python/classes_objects",
-          "python/comments",
-          "python/constructor",
-          "python/dictionaries",
-          "python/encapsulation",
-          "python/file_opening_closing",
-          "python/for_loops",
-          "python/function_definition",
-          "python/importing_modules",
-          "python/iterators",
-          "python/lists",
-          "python/numeric_types",
-          "python/polymorphism",
-          "python/python_shell",
-          "python/standard_libraries",
-          "python/strings",
-          "python/tuples",
-          "python/using_packages",
-          "python/variables_data_types",
-          "python/with_statement"
-        ],
-        "solutions": ["step3_solution.py"]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "reader.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "tableformat.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -160,5 +13,287 @@
     "name": "CC-BY-SA-4.0",
     "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
     "repo": "https://github.com/dabeaz-course/python-mastery"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "reader.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "stock.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "tableformat.py",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      },
+      {
+        "file": "portfolio.csv",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Type Checking and Interfaces",
+      "description": "In this lab, you will further enhance the tableformat.py file by incorporating type checking, interfaces, and abstract base classes.",
+      "meta": {
+        "title": "Type Checking and Interfaces in Python",
+        "description": "Explore the concepts of type checking and interfaces in Python programming, including the use of abstract base classes.",
+        "keywords": "python playground, software development, interfaces, python, python programming, abstract base classes, type checking"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Interfaces and type checking",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "Verify Python Read CSV and Class Usage",
+                "file": "verify1.sh",
+                "hint": "Please modify the 'print_table()' function and run the python code in step 1.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "Abstract Base Classes",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "Verify TableFormatter Implementation and Abstract Base Class",
+                "file": "verify2.sh",
+                "hint": "Please modify the 'TableFormatter' class and run the python code in step 2.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step2_solution.py"]
+          },
+          {
+            "title": "Algorithm Template Classes",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "Verify CSV Parser Implementation",
+                "file": "verify3.sh",
+                "hint": "Please complete the contents of the 'reader.py' file as required and execute the python code in step 3.",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step3_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "类型检查与接口",
+      "description": "在本实验中，你将通过纳入类型检查、接口和抽象基类来进一步增强tableformat.py文件。",
+      "meta": {
+        "title": "Python中的类型检查与接口",
+        "description": "探索Python编程中的类型检查和接口概念，包括抽象基类的使用。",
+        "keywords": "Python实验场, 软件开发, 接口, Python, Python编程, 抽象基类, 类型检查"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "接口与类型检查",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python读取CSV和类的使用情况",
+                "file": "verify1.sh",
+                "hint": "请修改'sprint_table()'函数并运行步骤1中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/variables_data_types"
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "抽象基类",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证TableFormatter实现和抽象基类",
+                "file": "verify2.sh",
+                "hint": "请修改'TableFormatter'类并运行步骤2中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/conditional_statements",
+              "python/encapsulation",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/list_comprehensions",
+              "python/lists",
+              "python/python_shell",
+              "python/raising_exceptions",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/type_conversion",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step2_solution.py"]
+          },
+          {
+            "title": "算法模板类",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证CSV解析器的实现",
+                "file": "verify3.sh",
+                "hint": "请按要求完成'reader.py'文件的内容，并执行步骤3中的Python代码。",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "python/build_in_functions",
+              "python/classes_objects",
+              "python/comments",
+              "python/constructor",
+              "python/dictionaries",
+              "python/encapsulation",
+              "python/file_opening_closing",
+              "python/for_loops",
+              "python/function_definition",
+              "python/importing_modules",
+              "python/iterators",
+              "python/lists",
+              "python/numeric_types",
+              "python/polymorphism",
+              "python/python_shell",
+              "python/standard_libraries",
+              "python/strings",
+              "python/tuples",
+              "python/using_packages",
+              "python/variables_data_types",
+              "python/with_statement"
+            ],
+            "solutions": ["step3_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

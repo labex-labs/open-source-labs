@@ -1,97 +1,10 @@
 {
   "type": "lab",
-  "title": "Text Document Classification",
-  "description": "This lab demonstrates how to use scikit-learn to classify text documents into different categories. We will use the 20 newsgroups dataset, which contains around 18,000 newsgroup posts on 20 topics. We will use a bag of words approach and a Tf-idf-weighted document-term sparse matrix to encode the features. The lab will also demonstrate various classifiers that can efficiently handle sparse matrices.",
-  "meta": {
-    "title": "Text Classification | Machine Learning | Data Science",
-    "description": "Learn how to use scikit-learn to classify text documents into different categories using the 20 newsgroups dataset, a bag of words approach, and various efficient classifiers.",
-    "keywords": "text classification, machine learning, data science, scikit-learn, 20 newsgroups"
-  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Loading and Vectorizing the 20 Newsgroups Text Dataset",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/datasets",
-          "sklearn/feature_extraction"
-        ]
-      },
-      {
-        "title": "Analysis of a Bag-of-Words Document Classifier",
-        "text": "step2.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify2.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn", "sklearn/linear_model", "sklearn/metrics"]
-      },
-      {
-        "title": "Model with Metadata Stripping",
-        "text": "step3.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify3.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": ["ml/sklearn"]
-      },
-      {
-        "title": "Benchmarking Classifiers",
-        "text": "step4.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify4.sh",
-            "hint": "This step has no verification at the moment"
-          }
-        ],
-        "skills": [
-          "ml/sklearn",
-          "sklearn/ensemble",
-          "sklearn/linear_model",
-          "sklearn/naive_bayes",
-          "sklearn/neighbors",
-          "sklearn/svm",
-          "sklearn/utils"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-document-classification-20newsgroups.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -100,5 +13,182 @@
     "name": "BSD 3-Clause",
     "url": "https://github.com/scikit-learn/scikit-learn/tree/main/LICENSE",
     "repo": "https://github.com/scikit-learn/scikit-learn"
-  }
+  },
+  "assets": {
+    "host01": [
+      {
+        "file": "plot-document-classification-20newsgroups.ipynb",
+        "target": "/home/labex/project",
+        "chmod": "ugo+rwx"
+      }
+    ]
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Text Document Classification",
+      "description": "This lab demonstrates how to use scikit-learn to classify text documents into different categories. We will use the 20 newsgroups dataset, which contains around 18,000 newsgroup posts on 20 topics. We will use a bag of words approach and a Tf-idf-weighted document-term sparse matrix to encode the features. The lab will also demonstrate various classifiers that can efficiently handle sparse matrices.",
+      "meta": {
+        "title": "Text Classification | Machine Learning | Data Science",
+        "description": "Learn how to use scikit-learn to classify text documents into different categories using the 20 newsgroups dataset, a bag of words approach, and various efficient classifiers.",
+        "keywords": "text classification, machine learning, data science, scikit-learn, 20 newsgroups"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Loading and Vectorizing the 20 Newsgroups Text Dataset",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/feature_extraction"
+            ]
+          },
+          {
+            "title": "Analysis of a Bag-of-Words Document Classifier",
+            "text": "en/step2.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify2.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model", "sklearn/metrics"]
+          },
+          {
+            "title": "Model with Metadata Stripping",
+            "text": "en/step3.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify3.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "Benchmarking Classifiers",
+            "text": "en/step4.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify4.sh",
+                "hint": "This step has no verification at the moment"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/ensemble",
+              "sklearn/linear_model",
+              "sklearn/naive_bayes",
+              "sklearn/neighbors",
+              "sklearn/svm",
+              "sklearn/utils"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "文本文档分类",
+      "description": "本实验展示了如何使用scikit-learn将文本文档分类到不同类别中。我们将使用20新闻组数据集，该数据集包含约18,000篇关于20个主题的新闻组帖子。我们将使用词袋方法和TF-IDF加权的文档-词项稀疏矩阵对特征进行编码。本实验还将展示各种能够有效处理稀疏矩阵的分类器。",
+      "meta": {
+        "title": "文本分类 | 机器学习 | 数据科学",
+        "description": "学习如何使用scikit-learn，通过20新闻组数据集、词袋方法以及各种高效分类器，将文本文档分类到不同类别中。",
+        "keywords": "文本分类, 机器学习, 数据科学, scikit-learn, 20新闻组"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "加载并向量化20新闻组文本数据集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/datasets",
+              "sklearn/feature_extraction"
+            ]
+          },
+          {
+            "title": "词袋文档分类器分析",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn", "sklearn/linear_model", "sklearn/metrics"]
+          },
+          {
+            "title": "去除元数据后的模型",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": ["ml/sklearn"]
+          },
+          {
+            "title": "对分类器进行基准测试",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ],
+            "skills": [
+              "ml/sklearn",
+              "sklearn/ensemble",
+              "sklearn/linear_model",
+              "sklearn/naive_bayes",
+              "sklearn/neighbors",
+              "sklearn/svm",
+              "sklearn/utils"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

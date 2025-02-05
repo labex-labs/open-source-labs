@@ -1,51 +1,10 @@
 {
   "type": "lab",
-  "title": "Formatted Print in Rust",
-  "description": "In this lab, the formatted print functionality in Rust is explained. The std::fmt module provides macros such as format!, print!, println!, eprint!, and eprintln! for handling printing tasks. These macros allow for formatting text with placeholders that are replaced with corresponding arguments. Positional and named arguments can be used, and different formatting can be applied using format characters. The macros also support justifying text, padding numbers, and setting the precision for decimal numbers. The fmt::Display trait is used to format text in a user-friendly way, while the fmt::Debug trait is used for debugging purposes. Rust also checks for formatting correctness at compile time. Additionally, it is mentioned that implementing the fmt::Display trait automatically implements the ToString trait, and custom types need to implement the fmt::Display trait to be printable. The lab also includes activities to practice using the formatted print macros and traits.",
-  "meta": {
-    "title": "Formatted Print in Rust: Mastering Text Formatting",
-    "description": "Explore the powerful formatted print functionality in Rust, including advanced techniques for customizing text output.",
-    "keywords": "rust playground, rust online ide, coding, rust online compiler, rust tutor, text formatting, rust commands, rust practice, rust online playground, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Formatted print",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/floating_types",
-          "rust/function_syntax",
-          "rust/integer_types",
-          "rust/lifetime_specifiers",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -54,5 +13,99 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Formatted Print in Rust",
+      "description": "In this lab, the formatted print functionality in Rust is explained. The std::fmt module provides macros such as format!, print!, println!, eprint!, and eprintln! for handling printing tasks. These macros allow for formatting text with placeholders that are replaced with corresponding arguments. Positional and named arguments can be used, and different formatting can be applied using format characters. The macros also support justifying text, padding numbers, and setting the precision for decimal numbers. The fmt::Display trait is used to format text in a user-friendly way, while the fmt::Debug trait is used for debugging purposes. Rust also checks for formatting correctness at compile time. Additionally, it is mentioned that implementing the fmt::Display trait automatically implements the ToString trait, and custom types need to implement the fmt::Display trait to be printable. The lab also includes activities to practice using the formatted print macros and traits.",
+      "meta": {
+        "title": "Formatted Print in Rust: Mastering Text Formatting",
+        "description": "Explore the powerful formatted print functionality in Rust, including advanced techniques for customizing text output.",
+        "keywords": "rust playground, rust online ide, coding, rust online compiler, rust tutor, text formatting, rust commands, rust practice, rust online playground, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Formatted print",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "Rust 中的格式化打印",
+      "description": "在本实验中，将讲解 Rust 中的格式化打印功能。`std::fmt` 模块提供了诸如 `format!`、`print!`、`println!`、`eprint!` 和 `eprintln!` 等宏，用于处理打印任务。这些宏允许使用占位符格式化文本，占位符会被相应的参数替换。可以使用位置参数和命名参数，并使用格式字符应用不同的格式。这些宏还支持文本对齐、数字填充以及设置十进制数的精度。`fmt::Display` 特性用于以用户友好的方式格式化文本，而 `fmt::Debug` 特性用于调试目的。Rust 还在编译时检查格式化的正确性。此外，文中提到实现 `fmt::Display` 特性会自动实现 `ToString` 特性，自定义类型需要实现 `fmt::Display` 特性才能进行打印。本实验还包括练习使用格式化打印宏和特性的活动。",
+      "meta": {
+        "title": "掌握 Rust 中的文本格式化：格式化打印",
+        "description": "探索 Rust 强大的格式化打印功能，包括自定义文本输出的高级技巧。",
+        "keywords": "Rust 在线游乐场, Rust 在线 IDE, 编码, Rust 在线编译器, Rust 教程, 文本格式化, Rust 命令, Rust 练习, Rust 在线游乐场, Rust 在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "格式化打印",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/integer_types",
+              "rust/lifetime_specifiers",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

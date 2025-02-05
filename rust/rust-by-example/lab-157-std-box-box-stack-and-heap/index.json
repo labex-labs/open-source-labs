@@ -1,50 +1,10 @@
 {
   "type": "lab",
-  "title": "Box, Stack and Heap",
-  "description": "In this lab, the concept of boxing, stack allocation, and heap allocation in Rust is explored. All values in Rust are stack allocated by default, but they can be boxed (allocated on the heap) using the Box<T> type. A box is a smart pointer to a heap-allocated value, and when it goes out of scope, its destructor is called and the memory on the heap is freed. Boxing allows for the creation of double indirection and can be dereferenced using the * operator. The lab provides code examples and explanations of how boxing works and how it affects memory allocation on the stack.",
-  "meta": {
-    "title": "Exploring Rust's Memory Allocation Concepts",
-    "description": "Dive into the fundamentals of boxing, stack allocation, and heap allocation in Rust programming language.",
-    "keywords": "rust playground, stack, boxing, rust tutor, rust online compiler, heap, rust commands, memory allocation, rust practice, rust online"
-  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "details": {
-    "steps": [
-      {
-        "title": "Box, stack and heap",
-        "text": "step1.md",
-        "verify": [
-          {
-            "name": "This step has no verification at the moment",
-            "file": "verify1.sh",
-            "hint": "This step has no verification at the moment",
-            "timeout": 0,
-            "showstderr": true
-          }
-        ],
-        "skills": [
-          "rust/expressions_statements",
-          "rust/floating_types",
-          "rust/function_syntax",
-          "rust/method_syntax",
-          "rust/operator_overloading",
-          "rust/string_type",
-          "rust/variable_declarations"
-        ]
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "background": "setup.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
-  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -53,5 +13,97 @@
     "name": "MIT",
     "url": "https://github.com/rust-lang/rust-by-example/blob/master/LICENSE-MIT",
     "repo": "https://github.com/rust-lang/rust-by-example"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "en",
+      "title": "Box, Stack and Heap",
+      "description": "In this lab, the concept of boxing, stack allocation, and heap allocation in Rust is explored. All values in Rust are stack allocated by default, but they can be boxed (allocated on the heap) using the Box<T> type. A box is a smart pointer to a heap-allocated value, and when it goes out of scope, its destructor is called and the memory on the heap is freed. Boxing allows for the creation of double indirection and can be dereferenced using the * operator. The lab provides code examples and explanations of how boxing works and how it affects memory allocation on the stack.",
+      "meta": {
+        "title": "Exploring Rust's Memory Allocation Concepts",
+        "description": "Dive into the fundamentals of boxing, stack allocation, and heap allocation in Rust programming language.",
+        "keywords": "rust playground, stack, boxing, rust tutor, rust online compiler, heap, rust commands, memory allocation, rust practice, rust online"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Box, stack and heap",
+            "text": "en/step1.md",
+            "verify": [
+              {
+                "name": "This step has no verification at the moment",
+                "file": "verify1.sh",
+                "hint": "This step has no verification at the moment",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "en/intro.md",
+          "background": "setup.sh",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "en/finish.md",
+          "title": "Summary"
+        }
+      }
+    },
+    {
+      "lang": "zh",
+      "title": "装箱、栈和堆",
+      "description": "在本实验中，我们将探索Rust中的装箱、栈分配和堆分配概念。在Rust中，所有值默认都是在栈上分配的，但可以使用Box<T>类型将它们装箱（在堆上分配）。一个装箱是指向堆分配值的智能指针，当它超出作用域时，其析构函数会被调用，堆上的内存会被释放。装箱允许创建双重间接引用，并且可以使用*运算符进行解引用。本实验提供了代码示例，并解释了装箱的工作原理以及它如何影响栈上的内存分配。",
+      "meta": {
+        "title": "探索Rust的内存分配概念",
+        "description": "深入了解Rust编程语言中装箱、栈分配和堆分配的基础知识。",
+        "keywords": "Rust游乐场, 栈, 装箱, Rust教程, Rust在线编译器, 堆, Rust命令, 内存分配, Rust练习, Rust在线"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "装箱、栈和堆",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证",
+                "timeout": 0,
+                "showstderr": true
+              }
+            ],
+            "skills": [
+              "rust/expressions_statements",
+              "rust/floating_types",
+              "rust/function_syntax",
+              "rust/method_syntax",
+              "rust/operator_overloading",
+              "rust/string_type",
+              "rust/variable_declarations"
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "background": "setup.sh",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }
