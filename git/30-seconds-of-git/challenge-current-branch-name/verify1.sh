@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /home/labex/project/git-playground
 
 # Get the current branch name using different methods
