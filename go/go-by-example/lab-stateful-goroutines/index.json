@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Concurrent Goroutine Synchronization",
+  "description": "This lab aims to demonstrate how to use channels and goroutines to synchronize access to shared state across multiple goroutines.",
+  "meta": {
+    "title": "Concurrent Programming | Goroutines | Channels | Synchronization",
+    "description": "This lab demonstrates the use of channels and goroutines to synchronize access to shared state across multiple goroutines, showcasing the concept of stateful goroutines and the communication-based approach in concurrent programming.",
+    "keywords": "concurrent programming, goroutines, channels, synchronization, shared state, race conditions, data corruption"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Stateful Goroutines",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Goroutine-Based State Management Example",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/stateful_goroutines"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stateful-goroutines.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Concurrent Goroutine Synchronization",
-      "description": "This lab aims to demonstrate how to use channels and goroutines to synchronize access to shared state across multiple goroutines.",
-      "meta": {
-        "title": "Concurrent Programming | Goroutines | Channels | Synchronization",
-        "description": "This lab demonstrates the use of channels and goroutines to synchronize access to shared state across multiple goroutines, showcasing the concept of stateful goroutines and the communication-based approach in concurrent programming.",
-        "keywords": "concurrent programming, goroutines, channels, synchronization, shared state, race conditions, data corruption"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Stateful Goroutines",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Goroutine-Based State Management Example",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/stateful_goroutines"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "并发 Goroutine 同步",
@@ -70,17 +76,13 @@
               {
                 "name": "验证基于 Goroutine 的状态管理示例",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/stateful_goroutines"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "stateful-goroutines.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }
