@@ -1,10 +1,56 @@
 {
   "type": "lab",
+  "title": "Rust Linked List Implementation",
+  "description": "In this lab, we have an implementation of a linked-list using enums in Rust. The List enum has two variants: Cons, which represents a node with an element and a pointer to the next node, and Nil, which signifies the end of the linked list. The enum has methods such as new to create an empty list, prepend to add an element at the front of the list, len to return the length of the list, and stringify to return a string representation of the list. The provided main function demonstrates the usage of these methods to create and manipulate a linked list.",
+  "meta": {
+    "title": "Rust Linked List Implementation",
+    "description": "Discover the power of Rust's enums in implementing a robust linked list data structure.",
+    "keywords": "rust, rust playground, linked list, rust tutor, rust online compiler, rust commands, tutorial, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Testcase: linked-list",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/traits",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,55 +61,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Linked List Implementation",
-      "description": "In this lab, we have an implementation of a linked-list using enums in Rust. The List enum has two variants: Cons, which represents a node with an element and a pointer to the next node, and Nil, which signifies the end of the linked list. The enum has methods such as new to create an empty list, prepend to add an element at the front of the list, len to return the length of the list, and stringify to return a string representation of the list. The provided main function demonstrates the usage of these methods to create and manipulate a linked list.",
-      "meta": {
-        "title": "Rust Linked List Implementation",
-        "description": "Discover the power of Rust's enums in implementing a robust linked list data structure.",
-        "keywords": "rust, rust playground, linked list, rust tutor, rust online compiler, rust commands, tutorial, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Testcase: linked-list",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 实现链表",
@@ -82,29 +79,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

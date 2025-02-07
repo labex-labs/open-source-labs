@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Stringify Circular JSON",
+  "description": "In this lab, we will be exploring how to serialize a JSON object that contains circular references using JavaScript. We will use a custom replacer function and a WeakSet to detect and omit circular references. By the end of this lab, you will have a better understanding of how to handle circular data structures in JavaScript and how to serialize them into JSON format.",
+  "meta": {
+    "title": "Stringify Circular JSON",
+    "description": "Learn how to serialize JSON objects with circular references using JavaScript's custom replacer function and WeakSet.",
+    "keywords": "javascript, javascript practice, serialization, circular references, javascript practice online, json, javascript lab, weakset, javascript tutor"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Stringify Circular JSON",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Executed",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/json",
+          "javascript/obj_manip",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Stringify Circular JSON",
-      "description": "In this lab, we will be exploring how to serialize a JSON object that contains circular references using JavaScript. We will use a custom replacer function and a WeakSet to detect and omit circular references. By the end of this lab, you will have a better understanding of how to handle circular data structures in JavaScript and how to serialize them into JSON format.",
-      "meta": {
-        "title": "Stringify Circular JSON",
-        "description": "Learn how to serialize JSON objects with circular references using JavaScript's custom replacer function and WeakSet.",
-        "keywords": "javascript, javascript practice, serialization, circular references, javascript practice online, json, javascript lab, weakset, javascript tutor"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Stringify Circular JSON",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Executed",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/json",
-              "javascript/obj_manip",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "序列化包含循环引用的 JSON",
@@ -79,26 +76,13 @@
               {
                 "name": "验证是否执行了 Node 命令",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中输入 'node' 并回车即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中输入 'node' 并回车即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/json",
-              "javascript/obj_manip",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

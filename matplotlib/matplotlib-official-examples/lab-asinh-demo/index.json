@@ -1,10 +1,137 @@
 {
   "type": "lab",
+  "title": "Matplotlib Data Visualization Techniques",
+  "description": "Matplotlib is a powerful data visualization library in Python. It provides a variety of tools for creating a wide range of graphs, charts, and plots. One of the most powerful features of Matplotlib is its ability to scale data. This lab will introduce you to the AsinhScale, which is a transformation that allows for plotting quantities that cover a very wide dynamic range that includes both positive and negative values.",
+  "meta": {
+    "title": "Matplotlib | Python Data Visualization Library",
+    "description": "Learn how to use the powerful Matplotlib data visualization library in Python, including the AsinhScale for plotting wide dynamic range data.",
+    "keywords": "Matplotlib, Python, Data Visualization, AsinhScale, Dynamic Range"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Matplotlib",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["linux/pip", "python/data_visualization"]
+      },
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create Sample Data",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/for_loops", "python/tuples"]
+      },
+      {
+        "title": "Compare 'symlog' and 'asinh' behaviour on sample y=x graph",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Compare 'asinh' graphs with different scale parameter 'linear_width'",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Compare 'symlog' and 'asinh' scalings on 2D Cauchy-distributed random numbers",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/scatter_plots",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "asinh-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,127 +142,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Data Visualization Techniques",
-      "description": "Matplotlib is a powerful data visualization library in Python. It provides a variety of tools for creating a wide range of graphs, charts, and plots. One of the most powerful features of Matplotlib is its ability to scale data. This lab will introduce you to the AsinhScale, which is a transformation that allows for plotting quantities that cover a very wide dynamic range that includes both positive and negative values.",
-      "meta": {
-        "title": "Matplotlib | Python Data Visualization Library",
-        "description": "Learn how to use the powerful Matplotlib data visualization library in Python, including the AsinhScale for plotting wide dynamic range data.",
-        "keywords": "Matplotlib, Python, Data Visualization, AsinhScale, Dynamic Range"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Install Matplotlib",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["linux/pip", "python/data_visualization"]
-          },
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create Sample Data",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/for_loops", "python/tuples"]
-          },
-          {
-            "title": "Compare 'symlog' and 'asinh' behaviour on sample y=x graph",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Compare 'asinh' graphs with different scale parameter 'linear_width'",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Compare 'symlog' and 'asinh' scalings on 2D Cauchy-distributed random numbers",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/scatter_plots",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib数据可视化技术",
@@ -156,8 +162,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["linux/pip", "python/data_visualization"]
+            ]
           },
           {
             "title": "导入所需库",
@@ -168,13 +173,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -186,8 +184,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/for_loops", "python/tuples"]
+            ]
           },
           {
             "title": "在示例y = x图表上比较'symlog'和'asinh'的行为",
@@ -198,12 +195,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/tuples"
             ]
           },
           {
@@ -215,16 +206,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/tuples"
             ]
           },
           {
@@ -236,19 +217,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/scatter_plots",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -257,16 +230,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "asinh-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Rust Aliasing: Enhancing Code Readability",
+  "description": "In this lab, we learn about aliasing in Rust, which allows us to give a new name to an existing type using the type statement. Aliases must follow certain naming conventions, and can be used to create new names for primitive types or user-defined types. The main purpose of aliases is to reduce code duplication and improve readability.",
+  "meta": {
+    "title": "Rust Aliasing Fundamentals | Programming Tutorials",
+    "description": "Explore the power of aliasing in Rust, a versatile programming language. Learn how to create new names for existing types and improve code readability.",
+    "keywords": "Rust, Aliasing, Programming Tutorials, Code Readability, Type Aliases"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Aliasing",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Aliasing: Enhancing Code Readability",
-      "description": "In this lab, we learn about aliasing in Rust, which allows us to give a new name to an existing type using the type statement. Aliases must follow certain naming conventions, and can be used to create new names for primitive types or user-defined types. The main purpose of aliases is to reduce code duplication and improve readability.",
-      "meta": {
-        "title": "Rust Aliasing Fundamentals | Programming Tutorials",
-        "description": "Explore the power of aliasing in Rust, a versatile programming language. Learn how to create new names for existing types and improve code readability.",
-        "keywords": "Rust, Aliasing, Programming Tutorials, Code Readability, Type Aliases"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Aliasing",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 别名：提升代码可读性",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

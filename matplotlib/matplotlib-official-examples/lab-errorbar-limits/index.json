@@ -1,10 +1,172 @@
 {
   "type": "lab",
+  "title": "Creating Matplotlib Error Bar Plots",
+  "description": "Error bars are used in graphs and charts to show the potential error or uncertainty in a measurement or data point. Python Matplotlib is a popular data visualization library that provides different types of error bar plots. In this lab, we will learn how to create error bar plots with upper and lower limits using Matplotlib.",
+  "meta": {
+    "title": "Python Matplotlib | Error Bar Plots | Data Visualization",
+    "description": "Learn how to create error bar plots with upper and lower limits using the popular Python Matplotlib data visualization library.",
+    "keywords": "Python, Matplotlib, Error Bar Plots, Data Visualization, Jupyter Notebook"
+  },
   "difficulty": "Beginner",
   "time": 40,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Define Data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists", "python/tuples"]
+      },
+      {
+        "title": "Create Simple Error Bar Plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/line_styles_colors",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add Upper Limits",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add Lower Limits",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add Upper and Lower Limits",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add Limits to Both X and Y Axes",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/comments",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Display Plot",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "errorbar-limits.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,162 +177,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Matplotlib Error Bar Plots",
-      "description": "Error bars are used in graphs and charts to show the potential error or uncertainty in a measurement or data point. Python Matplotlib is a popular data visualization library that provides different types of error bar plots. In this lab, we will learn how to create error bar plots with upper and lower limits using Matplotlib.",
-      "meta": {
-        "title": "Python Matplotlib | Error Bar Plots | Data Visualization",
-        "description": "Learn how to create error bar plots with upper and lower limits using the popular Python Matplotlib data visualization library.",
-        "keywords": "Python, Matplotlib, Error Bar Plots, Data Visualization, Jupyter Notebook"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Define Data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists", "python/tuples"]
-          },
-          {
-            "title": "Create Simple Error Bar Plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add Upper Limits",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add Lower Limits",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add Upper and Lower Limits",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add Limits to Both X and Y Axes",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Display Plot",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/tuples"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib创建误差线图",
@@ -191,13 +197,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -209,8 +208,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "创建简单误差线图",
@@ -221,12 +219,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -238,13 +230,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -256,13 +241,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -274,13 +252,6 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -292,15 +263,6 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -312,13 +274,11 @@
                 "file": "verify8.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/tuples"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -327,16 +287,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "errorbar-limits.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

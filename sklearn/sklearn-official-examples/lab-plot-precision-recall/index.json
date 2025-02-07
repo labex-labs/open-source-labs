@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Precision-Recall Metric for Imbalanced Classification",
+  "description": "This tutorial provides a step-by-step guide on how to use the Precision-Recall metric to evaluate classifier output quality. The Precision-Recall curve is a useful measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.",
+  "meta": {
+    "title": "Precision-Recall Metric | Classifier Evaluation | Machine Learning",
+    "description": "Learn how to use the Precision-Recall metric to evaluate classifier output quality, especially for imbalanced datasets. Explore the iris dataset and a Linear SVC classifier.",
+    "keywords": "precision-recall, classifier evaluation, machine learning, iris dataset, linear svc"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Dataset and Model",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/model_selection",
+          "sklearn/pipeline",
+          "sklearn/preprocessing",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Plot the Precision-Recall Curve",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics"]
+      },
+      {
+        "title": "Plot Precision-Recall Curve for Multi-Label Classification",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/metrics",
+          "sklearn/multiclass",
+          "sklearn/preprocessing"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-precision-recall.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Precision-Recall Metric for Imbalanced Classification",
-      "description": "This tutorial provides a step-by-step guide on how to use the Precision-Recall metric to evaluate classifier output quality. The Precision-Recall curve is a useful measure of success of prediction when the classes are very imbalanced. In information retrieval, precision is a measure of result relevancy, while recall is a measure of how many truly relevant results are returned.",
-      "meta": {
-        "title": "Precision-Recall Metric | Classifier Evaluation | Machine Learning",
-        "description": "Learn how to use the Precision-Recall metric to evaluate classifier output quality, especially for imbalanced datasets. Explore the iris dataset and a Linear SVC classifier.",
-        "keywords": "precision-recall, classifier evaluation, machine learning, iris dataset, linear svc"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Dataset and Model",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Plot the Precision-Recall Curve",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
-          },
-          {
-            "title": "Plot Precision-Recall Curve for Multi-Label Classification",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/metrics",
-              "sklearn/multiclass",
-              "sklearn/preprocessing"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "不平衡分类中的精确率-召回率指标",
@@ -106,14 +112,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm"
             ]
           },
           {
@@ -125,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
+            ]
           },
           {
             "title": "绘制多标签分类的精确率-召回率曲线",
@@ -137,18 +134,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/metrics",
-              "sklearn/multiclass",
-              "sklearn/preprocessing"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +147,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-precision-recall.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

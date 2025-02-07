@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Rotate List Elements",
+  "description": "In this challenge, you will be tasked with creating a function that rotates a list by a specified amount of elements.",
+  "meta": {
+    "title": "Rotate List Elements: Python Coding Challenge",
+    "description": "Learn how to rotate a list by a specified amount of elements in Python.",
+    "keywords": "coding challenge, python, programming tutorial, list, rotate"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Rotate List Elements",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python3 Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_roll.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "roll.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rotate List Elements",
-      "description": "In this challenge, you will be tasked with creating a function that rotates a list by a specified amount of elements.",
-      "meta": {
-        "title": "Rotate List Elements: Python Coding Challenge",
-        "description": "Learn how to rotate a list by a specified amount of elements in Python.",
-        "keywords": "coding challenge, python, programming tutorial, list, rotate"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Rotate List Elements",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python3 Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "旋转列表元素",
@@ -75,22 +86,13 @@
               {
                 "name": "在临时目录中验证 Python3 脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_roll.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "roll.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

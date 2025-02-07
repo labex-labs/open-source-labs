@@ -1,10 +1,102 @@
 {
   "type": "lab",
+  "title": "Simple Matplotlib Animation Tutorial",
+  "description": "This tutorial will guide you through how to create a simple animation using matplotlib.pyplot. Animations can be useful for visualizing data that changes over time. In this tutorial, we will generate a random set of data and display it as an animation.",
+  "meta": {
+    "title": "Unleash the Power of Matplotlib Animations",
+    "description": "Discover the secrets to creating captivating data visualizations with this Matplotlib animation tutorial.",
+    "keywords": "matplotlib, python, data visualization, tutorial, animation"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Generate random data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the animation",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/heatmaps",
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/sets"
+        ]
+      },
+      {
+        "title": "Display the animation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "animation-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,92 +107,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Simple Matplotlib Animation Tutorial",
-      "description": "This tutorial will guide you through how to create a simple animation using matplotlib.pyplot. Animations can be useful for visualizing data that changes over time. In this tutorial, we will generate a random set of data and display it as an animation.",
-      "meta": {
-        "title": "Unleash the Power of Matplotlib Animations",
-        "description": "Discover the secrets to creating captivating data visualizations with this Matplotlib animation tutorial.",
-        "keywords": "matplotlib, python, data visualization, tutorial, animation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Generate random data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the animation",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/sets"
-            ]
-          },
-          {
-            "title": "Display the animation",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "简单的Matplotlib动画教程",
@@ -121,13 +127,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -139,11 +138,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -155,12 +149,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/sets"
             ]
           },
           {
@@ -172,13 +160,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -187,16 +173,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "animation-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

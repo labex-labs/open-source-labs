@@ -1,10 +1,83 @@
 {
   "type": "lab",
+  "title": "Staggered CSS Animation for List Elements",
+  "description": "In this lab, we will learn how to create a staggered animation effect for a list of elements using CSS. We will use the opacity and transform properties to make the elements transparent and move them all the way to the right. Then, we will use transition-delay and the :checked pseudo-class selector to make the elements appear and slide into view in a staggered manner. By the end of this lab, you will be able to create visually appealing animations for your web pages.",
+  "meta": {
+    "title": "Staggered Animation | CSS Tutorials | Web Development",
+    "description": "Learn how to create a visually appealing staggered animation effect for a list of elements using CSS. Discover techniques to make elements transparent and slide them into view with a smooth transition.",
+    "keywords": "CSS, animation, staggered effect, web development, HTML, tutorials"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Staggered Animation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "css/display_property",
+          "css/fonts",
+          "css/lists_and_tables",
+          "css/margin_and_padding",
+          "css/pseudo_classes",
+          "css/selectors",
+          "css/transformations",
+          "css/transitions",
+          "css/variables",
+          "css/width_and_height"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,68 +88,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Staggered CSS Animation for List Elements",
-      "description": "In this lab, we will learn how to create a staggered animation effect for a list of elements using CSS. We will use the opacity and transform properties to make the elements transparent and move them all the way to the right. Then, we will use transition-delay and the :checked pseudo-class selector to make the elements appear and slide into view in a staggered manner. By the end of this lab, you will be able to create visually appealing animations for your web pages.",
-      "meta": {
-        "title": "Staggered Animation | CSS Tutorials | Web Development",
-        "description": "Learn how to create a visually appealing staggered animation effect for a list of elements using CSS. Discover techniques to make elements transparent and slide them into view with a smooth transition.",
-        "keywords": "CSS, animation, staggered effect, web development, HTML, tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Staggered Animation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of index.html modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/display_property",
-              "css/fonts",
-              "css/lists_and_tables",
-              "css/margin_and_padding",
-              "css/pseudo_classes",
-              "css/selectors",
-              "css/transformations",
-              "css/transitions",
-              "css/variables",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "列表元素的交错 CSS 动画",
@@ -95,42 +106,23 @@
               {
                 "name": "验证网络服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“Go Live”在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               },
               {
                 "name": "验证 index.html 修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               },
               {
                 "name": "验证 style.css 修改状态",
                 "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "css/display_property",
-              "css/fonts",
-              "css/lists_and_tables",
-              "css/margin_and_padding",
-              "css/pseudo_classes",
-              "css/selectors",
-              "css/transformations",
-              "css/transitions",
-              "css/variables",
-              "css/width_and_height"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -139,21 +131,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

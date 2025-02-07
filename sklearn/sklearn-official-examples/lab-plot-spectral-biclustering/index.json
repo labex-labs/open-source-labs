@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Spectral Biclustering Algorithm",
+  "description": "In this lab, we will use the Spectral Biclustering algorithm to cluster data by simultaneously considering both the rows (samples) and columns (features) of a matrix. It aims to identify patterns not only between samples but also within subsets of samples, allowing for the detection of localized structure within the data. This makes spectral biclustering particularly well-suited for datasets where the order or arrangement of features is fixed, such as in images, time series, or genomes. We will use the scikit-learn library to generate checkerboard dataset and bicluster it using the Spectral Biclustering algorithm.",
+  "meta": {
+    "title": "Spectral Biclustering Algorithm: Unveiling Hidden Patterns in Data",
+    "description": "Explore the power of Spectral Biclustering to uncover localized structure within complex datasets, perfect for image, time series, and genome analysis.",
+    "keywords": "machine learning, data clustering, spectral biclustering, scikit-learn, pattern recognition, data analysis, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate sample data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Shuffle the data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Fit SpectralBiclustering",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
+      },
+      {
+        "title": "Plotting results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-spectral-biclustering.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Spectral Biclustering Algorithm",
-      "description": "In this lab, we will use the Spectral Biclustering algorithm to cluster data by simultaneously considering both the rows (samples) and columns (features) of a matrix. It aims to identify patterns not only between samples but also within subsets of samples, allowing for the detection of localized structure within the data. This makes spectral biclustering particularly well-suited for datasets where the order or arrangement of features is fixed, such as in images, time series, or genomes. We will use the scikit-learn library to generate checkerboard dataset and bicluster it using the Spectral Biclustering algorithm.",
-      "meta": {
-        "title": "Spectral Biclustering Algorithm: Unveiling Hidden Patterns in Data",
-        "description": "Explore the power of Spectral Biclustering to uncover localized structure within complex datasets, perfect for image, time series, and genome analysis.",
-        "keywords": "machine learning, data clustering, spectral biclustering, scikit-learn, pattern recognition, data analysis, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate sample data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Shuffle the data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Fit SpectralBiclustering",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
-          },
-          {
-            "title": "Plotting results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "谱双聚类算法",
@@ -106,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "打乱数据",
@@ -118,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "拟合谱双聚类",
@@ -130,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
+            ]
           },
           {
             "title": "绘制结果",
@@ -142,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-spectral-biclustering.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

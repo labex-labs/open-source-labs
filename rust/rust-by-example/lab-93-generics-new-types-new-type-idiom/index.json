@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "New Type Idiom",
+  "description": "In this lab, we explore the newtype idiom, which provides compile-time guarantees by allowing us to create a new type that is distinct from its underlying type. An example is shown where a struct Years is used to represent age in years, and a struct Days is used to represent age in days. By using the newtype idiom, we can ensure that the right type of value is supplied to a program, such as in the age verification function old_enough, which requires a value of type Years. Additionally, we learn how to obtain the value of a newtype as its underlying type using tuple or destructuring syntax.",
+  "meta": {
+    "title": "Exploring the New Type Idiom in Rust",
+    "description": "Dive into the Rust programming language and learn about the newtype idiom, which provides compile-time guarantees for your code.",
+    "keywords": "newtype, rust, rust playground, compile time guarantees, rust tutor, rust online compiler, rust commands, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "New Type Idiom",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "New Type Idiom",
-      "description": "In this lab, we explore the newtype idiom, which provides compile-time guarantees by allowing us to create a new type that is distinct from its underlying type. An example is shown where a struct Years is used to represent age in years, and a struct Days is used to represent age in days. By using the newtype idiom, we can ensure that the right type of value is supplied to a program, such as in the age verification function old_enough, which requires a value of type Years. Additionally, we learn how to obtain the value of a newtype as its underlying type using tuple or destructuring syntax.",
-      "meta": {
-        "title": "Exploring the New Type Idiom in Rust",
-        "description": "Dive into the Rust programming language and learn about the newtype idiom, which provides compile-time guarantees for your code.",
-        "keywords": "newtype, rust, rust playground, compile time guarantees, rust tutor, rust online compiler, rust commands, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "New Type Idiom",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "新类型习惯用法",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,116 @@
 {
   "type": "lab",
+  "title": "Programmatically Controlling Subplot Adjustment",
+  "description": "Matplotlib is a powerful library for creating visualizations in Python. Sometimes, when creating plots, you may need to adjust the subplot parameters manually. This lab will show you how to programmatically adjust subplot parameters based on the size of the labels.",
+  "meta": {
+    "title": "Matplotlib | Python Visualization | Subplot Adjustment",
+    "description": "Learn how to programmatically adjust subplot parameters in Matplotlib, a powerful Python visualization library.",
+    "keywords": "Matplotlib, Python, Visualization, Subplot, Adjustment"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules"
+        ]
+      },
+      {
+        "title": "Create the plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Define the draw callback function",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists"
+        ]
+      },
+      {
+        "title": "Connect the draw event to the callback function",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/event_handling", "python/tuples"]
+      },
+      {
+        "title": "Show the plot",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "auto-subplots-adjust.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,106 +121,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Programmatically Controlling Subplot Adjustment",
-      "description": "Matplotlib is a powerful library for creating visualizations in Python. Sometimes, when creating plots, you may need to adjust the subplot parameters manually. This lab will show you how to programmatically adjust subplot parameters based on the size of the labels.",
-      "meta": {
-        "title": "Matplotlib | Python Visualization | Subplot Adjustment",
-        "description": "Learn how to programmatically adjust subplot parameters in Matplotlib, a powerful Python visualization library.",
-        "keywords": "Matplotlib, Python, Visualization, Subplot, Adjustment"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules"
-            ]
-          },
-          {
-            "title": "Create the plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Define the draw callback function",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Connect the draw event to the callback function",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/event_handling", "python/tuples"]
-          },
-          {
-            "title": "Show the plot",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "通过编程控制子图调整",
@@ -135,12 +141,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules"
             ]
           },
           {
@@ -152,12 +152,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -169,14 +163,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists"
             ]
           },
           {
@@ -188,8 +174,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/event_handling", "python/tuples"]
+            ]
           },
           {
             "title": "显示图表",
@@ -200,13 +185,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -215,16 +198,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "auto-subplots-adjust.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

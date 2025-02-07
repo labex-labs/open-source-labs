@@ -1,10 +1,118 @@
 {
   "type": "lab",
+  "title": "Pipelines and Composite Estimators",
+  "description": "In scikit-learn, pipelines and composite estimators are used to combine multiple transformers and estimators into a single model. This is useful when there is a fixed sequence of steps for processing the data, such as feature selection, normalization, and classification. Pipelines can also be used for joint parameter selection and to ensure that statistics from the test data do not leak into the trained model during cross-validation.",
+  "meta": {
+    "title": "Pipelines and Composite Estimators in Machine Learning",
+    "description": "Explore the use of pipelines and composite estimators in scikit-learn for efficient data processing and model building.",
+    "keywords": "data processing, machine learning, scikit learn, pipelines, scikit-learn, composite estimators, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pipeline - Chaining Estimators",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/decomposition",
+          "sklearn/naive_bayes",
+          "sklearn/pipeline",
+          "sklearn/preprocessing",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Nested Parameters",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Caching Transformers",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/decomposition",
+          "sklearn/pipeline",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "TransformedTargetRegressor",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/compose",
+          "sklearn/datasets",
+          "sklearn/linear_model",
+          "sklearn/model_selection",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "FeatureUnion - Composite Feature Spaces",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/decomposition", "sklearn/pipeline"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "33-pipelines-and-composite-estimators.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,112 +123,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pipelines and Composite Estimators",
-      "description": "In scikit-learn, pipelines and composite estimators are used to combine multiple transformers and estimators into a single model. This is useful when there is a fixed sequence of steps for processing the data, such as feature selection, normalization, and classification. Pipelines can also be used for joint parameter selection and to ensure that statistics from the test data do not leak into the trained model during cross-validation.",
-      "meta": {
-        "title": "Pipelines and Composite Estimators in Machine Learning",
-        "description": "Explore the use of pipelines and composite estimators in scikit-learn for efficient data processing and model building.",
-        "keywords": "data processing, machine learning, scikit learn, pipelines, scikit-learn, composite estimators, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pipeline - Chaining Estimators",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/naive_bayes",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Nested Parameters",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Caching Transformers",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/pipeline",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "TransformedTargetRegressor",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "FeatureUnion - Composite Feature Spaces",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/pipeline"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "管道和复合估计器",
@@ -141,14 +143,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/naive_bayes",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm"
             ]
           },
           {
@@ -160,8 +154,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "缓存变换器",
@@ -172,12 +165,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/pipeline",
-              "sklearn/svm"
             ]
           },
           {
@@ -189,14 +176,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -208,17 +187,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/pipeline"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -227,16 +200,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "33-pipelines-and-composite-estimators.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

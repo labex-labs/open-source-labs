@@ -1,10 +1,146 @@
 {
   "type": "lab",
+  "title": "Resampling Data Using Matplotlib",
+  "description": "In this lab, we will learn how to downsample data using Matplotlib in Python. Downsampling is the process of reducing the sample rate or sample size of a signal. We will use a class that will downsample the data and recompute when zoomed.",
+  "meta": {
+    "title": "Resample Data with Matplotlib",
+    "description": "Learn how to downsample data using Matplotlib in Python, including reducing sample rate and size.",
+    "keywords": "matplotlib, python, downsampling, data resampling, data visualization"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Importing libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Defining the class",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/lists",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Downsampling data",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/lists",
+          "python/sets",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Updating the data",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Creating the signal",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Creating the plot",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "resample.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,136 +151,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Resampling Data Using Matplotlib",
-      "description": "In this lab, we will learn how to downsample data using Matplotlib in Python. Downsampling is the process of reducing the sample rate or sample size of a signal. We will use a class that will downsample the data and recompute when zoomed.",
-      "meta": {
-        "title": "Resample Data with Matplotlib",
-        "description": "Learn how to downsample data using Matplotlib in Python, including reducing sample rate and size.",
-        "keywords": "matplotlib, python, downsampling, data resampling, data visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importing libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Defining the class",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Downsampling data",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/sets",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Updating the data",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Creating the signal",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Creating the plot",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib重采样数据",
@@ -165,13 +171,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -183,15 +182,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/tuples"
             ]
           },
           {
@@ -203,16 +193,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/sets",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -224,14 +204,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
             ]
           },
           {
@@ -243,8 +215,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "创建图表",
@@ -255,18 +226,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -275,16 +239,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "resample.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

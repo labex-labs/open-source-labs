@@ -1,10 +1,160 @@
 {
   "type": "lab",
+  "title": "Define a Proper Callable Object",
+  "description": "In this lab, you will learn how to define a proper callable object in Python.",
+  "meta": {
+    "title": "Defining a Proper Callable Object in Python",
+    "description": "Learn how to create a callable object that can validate function arguments in Python.",
+    "keywords": "python, programming tutorial, callable object, function validation"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Preparation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python History Validation",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Creating a Callable Object",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Function Call and Print Statements",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/tuples"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Enforcement",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python Validation Functions",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/keyword_arguments",
+          "python/lists",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Use as a Method | Challenge",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Stock Selling Code and History",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/lists",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "validate.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,145 +165,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Define a Proper Callable Object",
-      "description": "In this lab, you will learn how to define a proper callable object in Python.",
-      "meta": {
-        "title": "Defining a Proper Callable Object in Python",
-        "description": "Learn how to create a callable object that can validate function arguments in Python.",
-        "keywords": "python, programming tutorial, callable object, function validation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python History Validation",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Creating a Callable Object",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Function Call and Print Statements",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "Enforcement",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python Validation Functions",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "Use as a Method | Challenge",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Stock Selling Code and History",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "定义一个合适的可调用对象",
@@ -172,22 +183,8 @@
               {
                 "name": "验证Python历史记录验证",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           },
           {
@@ -197,22 +194,8 @@
               {
                 "name": "验证Python函数调用和打印语句",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples"
             ],
             "solutions": ["step2_solution.py"]
           },
@@ -223,35 +206,8 @@
               {
                 "name": "验证Python验证函数的存在",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ],
             "solutions": ["step3_solution.py"]
           },
@@ -262,29 +218,13 @@
               {
                 "name": "验证股票卖出代码和历史记录",
                 "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -293,21 +233,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "validate.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

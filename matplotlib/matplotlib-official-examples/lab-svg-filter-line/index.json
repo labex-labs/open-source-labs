@@ -1,10 +1,147 @@
 {
   "type": "lab",
+  "title": "Matplotlib SVG Filter Line",
+  "description": "This lab demonstrates how to use SVG filtering effects with Matplotlib. The filtering effects are only effective if your SVG renderer supports it.",
+  "meta": {
+    "title": "Matplotlib SVG Filtering Effects | Python Programming Tutorial",
+    "description": "Explore the use of SVG filtering effects with Matplotlib in this Python programming tutorial. Learn how to leverage these effects to enhance your data visualizations.",
+    "keywords": "Matplotlib, SVG, Filtering Effects, Python Programming, Data Visualization"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Create a Figure and Axes",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists", "python/tuples"]
+      },
+      {
+        "title": "Draw Lines",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
+      },
+      {
+        "title": "Draw Shadows",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Set Axes Limits and Save Figure",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/saving_figures",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Define Filter",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/standard_libraries"]
+      },
+      {
+        "title": "Read and Modify SVG",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/for_loops",
+          "python/lists",
+          "python/sets",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "svg-filter-line.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,137 +152,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib SVG Filter Line",
-      "description": "This lab demonstrates how to use SVG filtering effects with Matplotlib. The filtering effects are only effective if your SVG renderer supports it.",
-      "meta": {
-        "title": "Matplotlib SVG Filtering Effects | Python Programming Tutorial",
-        "description": "Explore the use of SVG filtering effects with Matplotlib in this Python programming tutorial. Learn how to leverage these effects to enhance your data visualizations.",
-        "keywords": "Matplotlib, SVG, Filtering Effects, Python Programming, Data Visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Create a Figure and Axes",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists", "python/tuples"]
-          },
-          {
-            "title": "Draw Lines",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
-          },
-          {
-            "title": "Draw Shadows",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Set Axes Limits and Save Figure",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/saving_figures",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Define Filter",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/standard_libraries"]
-          },
-          {
-            "title": "Read and Modify SVG",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/sets",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib SVG 滤镜线条",
@@ -166,13 +172,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/standard_libraries"
             ]
           },
           {
@@ -184,8 +183,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "绘制线条",
@@ -196,8 +194,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "绘制阴影",
@@ -208,12 +205,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -225,11 +216,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/saving_figures",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -241,8 +227,7 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/standard_libraries"]
+            ]
           },
           {
             "title": "读取并修改SVG",
@@ -253,22 +238,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/sets",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -277,16 +251,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "svg-filter-line.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

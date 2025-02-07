@@ -1,10 +1,103 @@
 {
   "type": "lab",
+  "title": "Creating Shaded Relief Plots with Python",
+  "description": "In this lab, we will learn how to create shaded relief plots using Python Matplotlib. Shaded relief plots are useful for visualizing terrain data, as they use shading to represent variations in elevation.",
+  "meta": {
+    "title": "Python Matplotlib | Shaded Relief Plots | Terrain Visualization",
+    "description": "Learn how to create shaded relief plots using Python Matplotlib, a powerful tool for visualizing terrain data and elevation variations.",
+    "keywords": "Python, Matplotlib, Shaded Relief Plots, Terrain Visualization, Elevation, Jupyter Notebook"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Load Data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists"]
+      },
+      {
+        "title": "Create Shaded Relief Plots",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/heatmaps",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Display the Plots",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "shading-example.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,93 +108,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Shaded Relief Plots with Python",
-      "description": "In this lab, we will learn how to create shaded relief plots using Python Matplotlib. Shaded relief plots are useful for visualizing terrain data, as they use shading to represent variations in elevation.",
-      "meta": {
-        "title": "Python Matplotlib | Shaded Relief Plots | Terrain Visualization",
-        "description": "Learn how to create shaded relief plots using Python Matplotlib, a powerful tool for visualizing terrain data and elevation variations.",
-        "keywords": "Python, Matplotlib, Shaded Relief Plots, Terrain Visualization, Elevation, Jupyter Notebook"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Load Data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists"]
-          },
-          {
-            "title": "Create Shaded Relief Plots",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Display the Plots",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Python创建阴影浮雕图",
@@ -122,14 +128,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -141,8 +139,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists"]
+            ]
           },
           {
             "title": "创建阴影浮雕图",
@@ -153,16 +150,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -174,13 +161,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -189,16 +174,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "shading-example.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,71 @@
 {
   "type": "lab",
+  "title": "Split List Into Smaller Chunks",
+  "description": "In Python, we often need to split a list into smaller lists of a specified size. This can be useful for various purposes, such as processing data in batches or displaying data in a paginated format. In this challenge, you will be tasked with writing a function that can split a list into smaller lists of a specified size.",
+  "meta": {
+    "title": "Python List Chunking | Data Processing Techniques",
+    "description": "Learn how to split a Python list into smaller chunks of a specified size for efficient data processing and pagination.",
+    "keywords": "Python, list, chunking, data processing, pagination"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Split list into chunks",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lambda_functions",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_chunk.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "chunk.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,56 +76,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Split List Into Smaller Chunks",
-      "description": "In Python, we often need to split a list into smaller lists of a specified size. This can be useful for various purposes, such as processing data in batches or displaying data in a paginated format. In this challenge, you will be tasked with writing a function that can split a list into smaller lists of a specified size.",
-      "meta": {
-        "title": "Python List Chunking | Data Processing Techniques",
-        "description": "Learn how to split a Python list into smaller chunks of a specified size for efficient data processing and pagination.",
-        "keywords": "Python, list, chunking, data processing, pagination"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Split list into chunks",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将列表拆分为更小的块",
@@ -83,30 +94,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -115,21 +109,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_chunk.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "chunk.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

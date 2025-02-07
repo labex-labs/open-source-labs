@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "View Git Commit Summary Excluding Merges",
+  "description": "When working with Git, it's important to be able to view a summary of all the commits made to a repository. However, sometimes merge commits can clutter up the output and make it difficult to see the actual changes made. In this lab, you will learn how to view a short summary of all commits excluding merge commits.",
+  "meta": {
+    "title": "Viewing Git Commit Summaries | Excluding Merge Commits",
+    "description": "Learn how to view a short summary of all Git commits excluding merge commits, which can clutter the output and make it difficult to see actual code changes.",
+    "keywords": "Git, commit summary, merge commits, code changes, repository management"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "View a Short Summary of Commits without Merge Commits",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful view",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/merge"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "View Git Commit Summary Excluding Merges",
-      "description": "When working with Git, it's important to be able to view a summary of all the commits made to a repository. However, sometimes merge commits can clutter up the output and make it difficult to see the actual changes made. In this lab, you will learn how to view a short summary of all commits excluding merge commits.",
-      "meta": {
-        "title": "Viewing Git Commit Summaries | Excluding Merge Commits",
-        "description": "Learn how to view a short summary of all Git commits excluding merge commits, which can clutter the output and make it difficult to see actual code changes.",
-        "keywords": "Git, commit summary, merge commits, code changes, repository management"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "View a Short Summary of Commits without Merge Commits",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful view",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/merge"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "查看排除合并提交的Git提交摘要",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功查看",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/merge"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

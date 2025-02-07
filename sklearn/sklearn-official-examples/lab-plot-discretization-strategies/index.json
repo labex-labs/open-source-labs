@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Demonstrating KBinsDiscretizer Strategies",
+  "description": "In this lab, we will explore the different strategies available in the KBinsDiscretizer class of the Python scikit-learn library. KBinsDiscretizer is a class for discretizing continuous features into categorical features by binning the continuous data. We will visualize the different strategies by applying them to different datasets.",
+  "meta": {
+    "title": "Exploring Discretization Strategies with KBinsDiscretizer",
+    "description": "Discover the different discretization strategies in Python's scikit-learn library for transforming continuous data into categorical features.",
+    "keywords": "machine learning, categorical features, discretization, continuous data, kbinsdiscretizer, scikit-learn, scikit-learn playground, machine learning playground, data preprocessing"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Create Datasets",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Apply Different Strategies",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Visualize Results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-discretization-strategies.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,81 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Demonstrating KBinsDiscretizer Strategies",
-      "description": "In this lab, we will explore the different strategies available in the KBinsDiscretizer class of the Python scikit-learn library. KBinsDiscretizer is a class for discretizing continuous features into categorical features by binning the continuous data. We will visualize the different strategies by applying them to different datasets.",
-      "meta": {
-        "title": "Exploring Discretization Strategies with KBinsDiscretizer",
-        "description": "Discover the different discretization strategies in Python's scikit-learn library for transforming continuous data into categorical features.",
-        "keywords": "machine learning, categorical features, discretization, continuous data, kbinsdiscretizer, scikit-learn, scikit-learn playground, machine learning playground, data preprocessing"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Create Datasets",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Apply Different Strategies",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Visualize Results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "演示KBinsDiscretizer策略",
@@ -110,11 +112,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -126,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "应用不同策略",
@@ -138,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "可视化结果",
@@ -150,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -165,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-discretization-strategies.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

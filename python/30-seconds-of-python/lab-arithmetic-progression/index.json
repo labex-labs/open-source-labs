@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Arithmetic Progression Generator",
+  "description": "An arithmetic progression is a sequence of numbers in which each term is obtained by adding a constant value to the previous term. For example, 1, 3, 5, 7, 9 is an arithmetic progression with a common difference of 2. In this challenge, you will write a function that generates a list of numbers in the arithmetic progression starting with the given positive integer and up to the specified limit.",
+  "meta": {
+    "title": "Arithmetic Progression | Programming Tutorials",
+    "description": "Learn how to generate a list of numbers in an arithmetic progression using Python. Includes a step-by-step guide and sample code.",
+    "keywords": "arithmetic progression, programming tutorials, python, coding, math, sequence"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Arithmetic Progression",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Arithmetic Progression Python Test",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_arithmetic_progression.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "arithmetic_progression.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Arithmetic Progression Generator",
-      "description": "An arithmetic progression is a sequence of numbers in which each term is obtained by adding a constant value to the previous term. For example, 1, 3, 5, 7, 9 is an arithmetic progression with a common difference of 2. In this challenge, you will write a function that generates a list of numbers in the arithmetic progression starting with the given positive integer and up to the specified limit.",
-      "meta": {
-        "title": "Arithmetic Progression | Programming Tutorials",
-        "description": "Learn how to generate a list of numbers in an arithmetic progression using Python. Includes a step-by-step guide and sample code.",
-        "keywords": "arithmetic progression, programming tutorials, python, coding, math, sequence"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Arithmetic Progression",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Arithmetic Progression Python Test",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "等差数列生成器",
@@ -78,25 +89,13 @@
               {
                 "name": "验证等差数列Python测试",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_arithmetic_progression.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "arithmetic_progression.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,99 @@
 {
   "type": "lab",
+  "title": "Decision Tree Regression",
+  "description": "In this lab, we will learn how to use the decision tree regression algorithm to fit a sine curve with additional noisy observation. The decision trees will be used to learn local linear regressions approximating the sine curve. We will see that if the maximum depth of the tree is set too high, the decision trees learn too fine details of the training data and learn from the noise, i.e. they overfit.",
+  "meta": {
+    "title": "Mastering Decision Tree Regression",
+    "description": "Explore the power of decision tree regression to fit a sine curve with noisy observations.",
+    "keywords": "sine curve, machine learning, noise, scikit-learn, decision tree regression, data analysis, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/tree"]
+      },
+      {
+        "title": "Create a random dataset",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Fit regression model",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Predict",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot the results",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-tree-regression.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,89 +104,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Decision Tree Regression",
-      "description": "In this lab, we will learn how to use the decision tree regression algorithm to fit a sine curve with additional noisy observation. The decision trees will be used to learn local linear regressions approximating the sine curve. We will see that if the maximum depth of the tree is set too high, the decision trees learn too fine details of the training data and learn from the noise, i.e. they overfit.",
-      "meta": {
-        "title": "Mastering Decision Tree Regression",
-        "description": "Explore the power of decision tree regression to fit a sine curve with noisy observations.",
-        "keywords": "sine curve, machine learning, noise, scikit-learn, decision tree regression, data analysis, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/tree"]
-          },
-          {
-            "title": "Create a random dataset",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Fit regression model",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Predict",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot the results",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "决策树回归",
@@ -118,8 +124,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/tree"]
+            ]
           },
           {
             "title": "创建一个随机数据集",
@@ -130,8 +135,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "拟合回归模型",
@@ -142,8 +146,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "进行预测",
@@ -154,8 +157,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制结果",
@@ -166,13 +168,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -181,16 +181,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-tree-regression.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

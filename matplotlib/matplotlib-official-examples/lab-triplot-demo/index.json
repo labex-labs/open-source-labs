@@ -1,10 +1,117 @@
 {
   "type": "lab",
+  "title": "Creating and Plotting Triangular Grids",
+  "description": "In this lab, we will learn how to create and plot unstructured triangular grids in Python using the Matplotlib library. We will start by creating a Delaunay triangulation of a set of points and then plot the triangulation. Next, we will specify our own triangulation by providing the indices of the three points that make up each triangle. Finally, we will plot the user-specified triangulation.",
+  "meta": {
+    "title": "Create and Plot Unstructured Triangular Grids in Python | Matplotlib Tutorial",
+    "description": "Learn how to create and plot unstructured triangular grids in Python using the Matplotlib library. Includes tips for using Jupyter Notebook.",
+    "keywords": "Python, Matplotlib, Unstructured Grids, Triangulation, Jupyter Notebook"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create Delaunay Triangulation",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans", "python/lists", "python/tuples"]
+      },
+      {
+        "title": "Mask Unwanted Triangles",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists"]
+      },
+      {
+        "title": "Plot Delaunay Triangulation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Create User-Specified Triangulation",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists", "python/tuples"]
+      },
+      {
+        "title": "Plot User-Specified Triangulation",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "triplot-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,107 +122,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating and Plotting Triangular Grids",
-      "description": "In this lab, we will learn how to create and plot unstructured triangular grids in Python using the Matplotlib library. We will start by creating a Delaunay triangulation of a set of points and then plot the triangulation. Next, we will specify our own triangulation by providing the indices of the three points that make up each triangle. Finally, we will plot the user-specified triangulation.",
-      "meta": {
-        "title": "Create and Plot Unstructured Triangular Grids in Python | Matplotlib Tutorial",
-        "description": "Learn how to create and plot unstructured triangular grids in Python using the Matplotlib library. Includes tips for using Jupyter Notebook.",
-        "keywords": "Python, Matplotlib, Unstructured Grids, Triangulation, Jupyter Notebook"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create Delaunay Triangulation",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans", "python/lists", "python/tuples"]
-          },
-          {
-            "title": "Mask Unwanted Triangles",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists"]
-          },
-          {
-            "title": "Plot Delaunay Triangulation",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Create User-Specified Triangulation",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists", "python/tuples"]
-          },
-          {
-            "title": "Plot User-Specified Triangulation",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建和绘制三角形网格",
@@ -136,13 +142,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -154,8 +153,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/booleans", "python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "屏蔽不需要的三角形",
@@ -166,8 +164,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists"]
+            ]
           },
           {
             "title": "绘制德劳内三角剖分",
@@ -178,8 +175,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "创建用户指定的三角剖分",
@@ -190,8 +186,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "绘制用户指定的三角剖分",
@@ -202,13 +197,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -217,16 +210,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "triplot-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

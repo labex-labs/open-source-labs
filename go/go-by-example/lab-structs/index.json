@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Struct Manipulation in Go",
+  "description": "This lab aims to test your knowledge of Go's structs, which are typed collections of fields. Structs are useful for grouping data together to form records.",
+  "meta": {
+    "title": "Mastering Struct Manipulation in Go",
+    "description": "Dive into the world of Go's structs and learn how to create, manipulate, and utilize them effectively.",
+    "keywords": "data structures, software development, go, go labs, go playground online, structs, programming, go lab, go practice"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Structs",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student Implements Struct Correctly",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/structs"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "structs.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Struct Manipulation in Go",
-      "description": "This lab aims to test your knowledge of Go's structs, which are typed collections of fields. Structs are useful for grouping data together to form records.",
-      "meta": {
-        "title": "Mastering Struct Manipulation in Go",
-        "description": "Dive into the world of Go's structs and learn how to create, manipulate, and utilize them effectively.",
-        "keywords": "data structures, software development, go, go labs, go playground online, structs, programming, go lab, go practice"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Structs",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student Implements Struct Correctly",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/structs"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言中的结构体操作",
@@ -70,17 +76,13 @@
               {
                 "name": "验证学生是否正确实现结构体",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/structs"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "structs.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

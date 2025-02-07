@@ -1,10 +1,142 @@
 {
   "type": "lab",
+  "title": "Matplotlib Marker Customization Tutorial",
+  "description": "This tutorial will guide you through the process of using the markevery property of Line2D to draw markers at a subset of data points in Matplotlib. We will cover various ways to specify the markers, including using integers, tuples, lists, slices, and floats. We will also explore how markevery behaves with linear and logarithmic scales, as well as with zoomed and polar plots.",
+  "meta": {
+    "title": "Matplotlib Marker Plotting | Data Visualization Tutorial",
+    "description": "Learn how to use the `markevery` property of `Line2D` in Matplotlib to draw markers at a subset of data points. Explore various ways to specify the markers and their behavior with different plot types.",
+    "keywords": "Matplotlib, Data Visualization, Marker Plotting, Line2D, markevery, Data Analysis, Python"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Define the Data Points",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Create Plots with Linear Scales",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/sets",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Create Plots with Logarithmic Scales",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/log_scale",
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/sets",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Create Zoomed Plots",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/sets",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create Polar Plots",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "markevery-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,132 +147,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Marker Customization Tutorial",
-      "description": "This tutorial will guide you through the process of using the markevery property of Line2D to draw markers at a subset of data points in Matplotlib. We will cover various ways to specify the markers, including using integers, tuples, lists, slices, and floats. We will also explore how markevery behaves with linear and logarithmic scales, as well as with zoomed and polar plots.",
-      "meta": {
-        "title": "Matplotlib Marker Plotting | Data Visualization Tutorial",
-        "description": "Learn how to use the `markevery` property of `Line2D` in Matplotlib to draw markers at a subset of data points. Explore various ways to specify the markers and their behavior with different plot types.",
-        "keywords": "Matplotlib, Data Visualization, Marker Plotting, Line2D, markevery, Data Analysis, Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Define the Data Points",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Create Plots with Linear Scales",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create Plots with Logarithmic Scales",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/log_scale",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create Zoomed Plots",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/sets",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create Polar Plots",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib标记自定义教程",
@@ -161,19 +167,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -185,15 +178,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -205,16 +189,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/log_scale",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -226,14 +200,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/sets",
-              "python/tuples"
             ]
           },
           {
@@ -245,20 +211,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -267,16 +224,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "markevery-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Palindrome Detection in Python",
+  "description": "A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward. For example, 'racecar' is a palindrome because when you reverse the word, it still spells 'racecar'. In this challenge, you will write a function that checks if a given string is a palindrome.",
+  "meta": {
+    "title": "Palindrome Checker | Python Programming",
+    "description": "Learn how to write a Python function that checks if a given string is a palindrome, ignoring capitalization and non-alphanumeric characters.",
+    "keywords": "palindrome, Python, programming, string manipulation, coding challenge"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Palindrome",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Palindrome Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_palindrome.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "palindrome.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Palindrome Detection in Python",
-      "description": "A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward. For example, 'racecar' is a palindrome because when you reverse the word, it still spells 'racecar'. In this challenge, you will write a function that checks if a given string is a palindrome.",
-      "meta": {
-        "title": "Palindrome Checker | Python Programming",
-        "description": "Learn how to write a Python function that checks if a given string is a palindrome, ignoring capitalization and non-alphanumeric characters.",
-        "keywords": "palindrome, Python, programming, string manipulation, coding challenge"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Palindrome",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Palindrome Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Python 中的回文检测",
@@ -79,26 +90,13 @@
               {
                 "name": "验证回文 Python 脚本的执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_palindrome.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "palindrome.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

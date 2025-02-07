@@ -1,10 +1,185 @@
 {
   "type": "lab",
+  "title": "Matplotlib Table Function",
+  "description": "In this lab, we will learn how to use the Matplotlib table function to display a table within a plot. We will use a sample dataset to visualize the loss incurred by different natural disasters over the years.",
+  "meta": {
+    "title": "Matplotlib Table Function: Visualizing Natural Disaster Losses",
+    "description": "Learn how to use the Matplotlib table function to display a table within a plot and visualize the loss incurred by different natural disasters over the years.",
+    "keywords": "python playground, matplotlib, python, table function, data visualization, natural disasters, loss analysis"
+  },
   "difficulty": "Beginner",
   "time": 50,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create the Dataset",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists", "python/tuples"]
+      },
+      {
+        "title": "Create Row Labels",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/for_loops",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create Color Scheme",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/build_in_functions", "python/tuples"]
+      },
+      {
+        "title": "Create Vertical Stacked Bar Chart",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/bar_charts",
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Reverse Colors and Text Labels",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists"]
+      },
+      {
+        "title": "Add Table to the Plot",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/adding_tables", "python/tuples"]
+      },
+      {
+        "title": "Adjust Plot Layout",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Add Axis Labels and Title",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify9.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/axis_ticks",
+          "matplotlib/titles_labels",
+          "python/for_loops",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/sets",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": " Show Plot",
+        "text": "en/step10.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify10.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "table-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,175 +190,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Table Function",
-      "description": "In this lab, we will learn how to use the Matplotlib table function to display a table within a plot. We will use a sample dataset to visualize the loss incurred by different natural disasters over the years.",
-      "meta": {
-        "title": "Matplotlib Table Function: Visualizing Natural Disaster Losses",
-        "description": "Learn how to use the Matplotlib table function to display a table within a plot and visualize the loss incurred by different natural disasters over the years.",
-        "keywords": "python playground, matplotlib, python, table function, data visualization, natural disasters, loss analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create the Dataset",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists", "python/tuples"]
-          },
-          {
-            "title": "Create Row Labels",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create Color Scheme",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/build_in_functions", "python/tuples"]
-          },
-          {
-            "title": "Create Vertical Stacked Bar Chart",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Reverse Colors and Text Labels",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists"]
-          },
-          {
-            "title": "Add Table to the Plot",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/adding_tables", "python/tuples"]
-          },
-          {
-            "title": "Adjust Plot Layout",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Add Axis Labels and Title",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify9.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/axis_ticks",
-              "matplotlib/titles_labels",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/sets",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": " Show Plot",
-            "text": "en/step10.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify10.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib表格函数",
@@ -204,13 +210,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -222,8 +221,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "创建行标签",
@@ -234,12 +232,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -251,8 +243,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/build_in_functions", "python/tuples"]
+            ]
           },
           {
             "title": "创建垂直堆叠柱状图",
@@ -263,14 +254,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -282,8 +265,7 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists"]
+            ]
           },
           {
             "title": "向图表中添加表格",
@@ -294,8 +276,7 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/adding_tables", "python/tuples"]
+            ]
           },
           {
             "title": "调整图表布局",
@@ -306,8 +287,7 @@
                 "file": "verify8.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "添加轴标签和标题",
@@ -318,15 +298,6 @@
                 "file": "verify9.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/axis_ticks",
-              "matplotlib/titles_labels",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/sets",
-              "python/tuples"
             ]
           },
           {
@@ -338,13 +309,11 @@
                 "file": "verify10.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -353,16 +322,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "table-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

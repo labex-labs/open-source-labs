@@ -1,10 +1,99 @@
 {
   "type": "lab",
+  "title": "Sparse Coding with Precomputed Dictionary",
+  "description": "In this lab, we will learn how to transform a signal as a sparse combination of Ricker wavelets using sparse coding methods. The Ricker (also known as Mexican hat or the second derivative of a Gaussian) is not a particularly good kernel to represent piecewise constant signals like this one. It can therefore be seen how much adding different widths of atoms matters and it therefore motivates learning the dictionary to best fit your type of signals.",
+  "meta": {
+    "title": "Sparse Coding | Signal Transformation | Ricker Wavelets",
+    "description": "Learn how to transform a signal as a sparse combination of Ricker wavelets using sparse coding methods. Explore different sparse coding techniques and their impact on signal representation.",
+    "keywords": "sparse coding, signal transformation, ricker wavelets, signal representation, sparse decomposition"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/decomposition"]
+      },
+      {
+        "title": "Define Ricker Wavelet Functions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Generate a Signal",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Compute a Wavelet Dictionary",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Sparse Coding",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-sparse-coding.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,89 +104,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Sparse Coding with Precomputed Dictionary",
-      "description": "In this lab, we will learn how to transform a signal as a sparse combination of Ricker wavelets using sparse coding methods. The Ricker (also known as Mexican hat or the second derivative of a Gaussian) is not a particularly good kernel to represent piecewise constant signals like this one. It can therefore be seen how much adding different widths of atoms matters and it therefore motivates learning the dictionary to best fit your type of signals.",
-      "meta": {
-        "title": "Sparse Coding | Signal Transformation | Ricker Wavelets",
-        "description": "Learn how to transform a signal as a sparse combination of Ricker wavelets using sparse coding methods. Explore different sparse coding techniques and their impact on signal representation.",
-        "keywords": "sparse coding, signal transformation, ricker wavelets, signal representation, sparse decomposition"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/decomposition"]
-          },
-          {
-            "title": "Define Ricker Wavelet Functions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Generate a Signal",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Compute a Wavelet Dictionary",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Sparse Coding",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用预计算字典的稀疏编码",
@@ -118,8 +124,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/decomposition"]
+            ]
           },
           {
             "title": "定义雷克子波函数",
@@ -130,8 +135,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "生成一个信号",
@@ -142,8 +146,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "计算小波字典",
@@ -154,8 +157,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "稀疏编码",
@@ -166,13 +168,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -181,16 +181,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-sparse-coding.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

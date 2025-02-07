@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Sort Git Branches by Date",
+  "description": "When working with Git, it's common to have multiple branches in a repository. However, it can be difficult to keep track of all the branches and their last commit dates. In this lab, you will learn how to use Git to sort branches by date, making it easier to manage your repository.",
+  "meta": {
+    "title": "Git Branch Management | Sort Branches by Date | Lab",
+    "description": "Learn how to sort Git branches by date, making it easier to manage your repository and identify recently updated branches.",
+    "keywords": "Git, branch management, sort branches, commit date, repository management"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Sort Git Branches by Date",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful sorting",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/branch"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Sort Git Branches by Date",
-      "description": "When working with Git, it's common to have multiple branches in a repository. However, it can be difficult to keep track of all the branches and their last commit dates. In this lab, you will learn how to use Git to sort branches by date, making it easier to manage your repository.",
-      "meta": {
-        "title": "Git Branch Management | Sort Branches by Date | Lab",
-        "description": "Learn how to sort Git branches by date, making it easier to manage your repository and identify recently updated branches.",
-        "keywords": "Git, branch management, sort branches, commit date, repository management"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Sort Git Branches by Date",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful sorting",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/branch"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "按日期对 Git 分支进行排序",
@@ -70,17 +67,13 @@
               {
                 "name": "验证排序是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/branch"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

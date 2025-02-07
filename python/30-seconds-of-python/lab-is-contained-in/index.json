@@ -1,10 +1,69 @@
 {
   "type": "lab",
+  "title": "Checking List Containment in Python",
+  "description": "In Python, it is often necessary to check if one list is contained in another list. This can be a bit tricky, especially if the order of the elements in the lists doesn't matter. In this challenge, you will write a function that checks if the elements of one list are contained in another list, regardless of order.",
+  "meta": {
+    "title": "Python List Containment | Programming Tutorials",
+    "description": "Learn how to check if one list is contained in another list in Python, regardless of order. Improve your programming skills with this helpful tutorial.",
+    "keywords": "Python, List Containment, Programming Tutorials, List Manipulation, Python Coding"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "List Containment",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_is_contained_in.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "is_contained_in.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +74,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Checking List Containment in Python",
-      "description": "In Python, it is often necessary to check if one list is contained in another list. This can be a bit tricky, especially if the order of the elements in the lists doesn't matter. In this challenge, you will write a function that checks if the elements of one list are contained in another list, regardless of order.",
-      "meta": {
-        "title": "Python List Containment | Programming Tutorials",
-        "description": "Learn how to check if one list is contained in another list in Python, regardless of order. Improve your programming skills with this helpful tutorial.",
-        "keywords": "Python, List Containment, Programming Tutorials, List Manipulation, Python Coding"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "List Containment",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python中检查列表包含关系",
@@ -81,28 +92,13 @@
               {
                 "name": "在临时目录中验证Python脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -111,21 +107,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_contained_in.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_contained_in.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

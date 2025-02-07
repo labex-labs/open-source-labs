@@ -1,10 +1,104 @@
 {
   "type": "lab",
+  "title": "Using a TTF Font File in Matplotlib",
+  "description": "In this tutorial, we will learn how to use a ttf font file in Matplotlib. We will use the Computer Modern Roman font (cmr10) shipped with Matplotlib to display a special font in the plot.",
+  "meta": {
+    "title": "Matplotlib | Font Customization | Python Tutorials",
+    "description": "Learn how to use a TTF font file in Matplotlib to display a special font in your Python plots. Explore Jupyter Notebook tips and get started with this comprehensive programming tutorial.",
+    "keywords": "Matplotlib, Font Customization, Python Tutorials, Jupyter Notebook, Programming"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules"
+        ]
+      },
+      {
+        "title": "Create the plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Set the font path",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/importing_modules", "python/using_packages"]
+      },
+      {
+        "title": "Set the font for the title",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/sets", "python/tuples"]
+      },
+      {
+        "title": "Display the plot",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "font-file.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,94 +109,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Using a TTF Font File in Matplotlib",
-      "description": "In this tutorial, we will learn how to use a ttf font file in Matplotlib. We will use the Computer Modern Roman font (cmr10) shipped with Matplotlib to display a special font in the plot.",
-      "meta": {
-        "title": "Matplotlib | Font Customization | Python Tutorials",
-        "description": "Learn how to use a TTF font file in Matplotlib to display a special font in your Python plots. Explore Jupyter Notebook tips and get started with this comprehensive programming tutorial.",
-        "keywords": "Matplotlib, Font Customization, Python Tutorials, Jupyter Notebook, Programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules"
-            ]
-          },
-          {
-            "title": "Create the plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Set the font path",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/importing_modules", "python/using_packages"]
-          },
-          {
-            "title": "Set the font for the title",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/sets", "python/tuples"]
-          },
-          {
-            "title": "Display the plot",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Matplotlib中使用TTF字体文件",
@@ -123,12 +129,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules"
             ]
           },
           {
@@ -140,8 +140,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "设置字体路径",
@@ -152,8 +151,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/importing_modules", "python/using_packages"]
+            ]
           },
           {
             "title": "设置标题的字体",
@@ -164,8 +162,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/sets", "python/tuples"]
+            ]
           },
           {
             "title": "显示图表",
@@ -176,13 +173,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -191,16 +186,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "font-file.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

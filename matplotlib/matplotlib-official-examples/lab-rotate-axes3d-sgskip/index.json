@@ -1,10 +1,103 @@
 {
   "type": "lab",
+  "title": "Matplotlib 3D Plot Animation",
+  "description": "This lab will guide you on how to create a simple animation of a rotating 3D plot about all three axes using Matplotlib. We will use a sample dataset to create a basic wireframe, set axis labels, and rotate the axes.",
+  "meta": {
+    "title": "Create Mesmerizing 3D Plot Animations with Matplotlib",
+    "description": "Learn how to generate captivating 3D plot animations using Matplotlib, a powerful data visualization library.",
+    "keywords": "matplotlib, 3d plot, python, data visualization, animation"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries and Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create a 3D Plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/3d_plots", "python/comments", "python/tuples"]
+      },
+      {
+        "title": "Set Axis Labels",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments"]
+      },
+      {
+        "title": "Rotate the Axes and Update the Plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/animation_creation",
+          "matplotlib/titles_labels",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "rotate-axes3d-sgskip.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,97 +108,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib 3D Plot Animation",
-      "description": "This lab will guide you on how to create a simple animation of a rotating 3D plot about all three axes using Matplotlib. We will use a sample dataset to create a basic wireframe, set axis labels, and rotate the axes.",
-      "meta": {
-        "title": "Create Mesmerizing 3D Plot Animations with Matplotlib",
-        "description": "Learn how to generate captivating 3D plot animations using Matplotlib, a powerful data visualization library.",
-        "keywords": "matplotlib, 3d plot, python, data visualization, animation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries and Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create a 3D Plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/3d_plots",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Set Axis Labels",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments"]
-          },
-          {
-            "title": "Rotate the Axes and Update the Plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/animation_creation",
-              "matplotlib/titles_labels",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 3D图动画",
@@ -126,14 +128,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/using_packages"
             ]
           },
           {
@@ -145,11 +139,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/3d_plots",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -161,8 +150,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments"]
+            ]
           },
           {
             "title": "旋转坐标轴并更新图表",
@@ -173,22 +161,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/animation_creation",
-              "matplotlib/titles_labels",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -197,16 +174,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "rotate-axes3d-sgskip.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

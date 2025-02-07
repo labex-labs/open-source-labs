@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Customizing Builds with Release Profiles",
+  "description": "In this lab, we will explore how to customize Rust's release profiles by adding [profile.*] sections to the Cargo.toml file and overriding default settings such as the opt-level for optimization.",
+  "meta": {
+    "title": "Customizing Rust Builds with Release Profiles | Optimization Levels",
+    "description": "Learn how to customize Rust's release profiles by adding [profile.*] sections to Cargo.toml and overriding default settings like opt-level for optimization.",
+    "keywords": "Rust, Build Customization, Release Profiles, Optimization Levels, Cargo.toml"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Customizing Builds with Release Profiles",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/rust-lang/book"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Customizing Builds with Release Profiles",
-      "description": "In this lab, we will explore how to customize Rust's release profiles by adding [profile.*] sections to the Cargo.toml file and overriding default settings such as the opt-level for optimization.",
-      "meta": {
-        "title": "Customizing Rust Builds with Release Profiles | Optimization Levels",
-        "description": "Learn how to customize Rust's release profiles by adding [profile.*] sections to Cargo.toml and overriding default settings like opt-level for optimization.",
-        "keywords": "Rust, Build Customization, Release Profiles, Optimization Levels, Cargo.toml"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Customizing Builds with Release Profiles",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用发布配置文件自定义构建",
@@ -70,17 +67,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

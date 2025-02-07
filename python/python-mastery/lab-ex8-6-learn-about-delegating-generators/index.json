@@ -1,294 +1,142 @@
 {
   "type": "lab",
+  "title": "Learn About Delegating Generators",
+  "description": "In this lab, you will learn about delegating generators using the yield from statement in Python.",
+  "meta": {
+    "title": "Python Programming | Delegating Generators | Coroutine Concepts",
+    "description": "Learn about delegating generators, a useful technique for cleaning up code that relies on generators. Explore examples of receiving messages and verifying message types.",
+    "keywords": "Python, Programming, Delegating Generators, Coroutines, Generators, Message Handling"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Learn About Delegating Generators",
-      "description": "In this lab, you will learn about delegating generators using the yield from statement in Python.",
-      "meta": {
-        "title": "Python Programming | Delegating Generators | Coroutine Concepts",
-        "description": "Learn about delegating generators, a useful technique for cleaning up code that relies on generators. Explore examples of receiving messages and verifying message types.",
-        "keywords": "Python, Programming, Delegating Generators, Coroutines, Generators, Message Handling"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Example: Receiving messages",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Assertions, Instance Checks, History Interactions",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/custom_exceptions",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/numeric_types",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/while_loops",
-              "python/with_statement"
-            ],
-            "solutions": ["cofollow.py"]
-          },
-          {
-            "title": "Wrapping a Socket",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Yield From Statement",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/lists",
-              "python/networking_protocols",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/socket_programming",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
-            ],
-            "solutions": ["server.py"]
-          },
-          {
-            "title": "Async/Await",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python Async and Await Keywords",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/lists",
-              "python/networking_protocols",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/socket_programming",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
-            ],
-            "solutions": ["asyncserver.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "了解委托生成器",
-      "description": "在本实验中，你将学习如何使用Python中的yield from语句来了解委托生成器。",
-      "meta": {
-        "title": "Python编程 | 委托生成器 | 协程概念",
-        "description": "了解委托生成器，这是一种用于清理依赖生成器的代码的有用技术。探索接收消息和验证消息类型的示例。",
-        "keywords": "Python,编程,委托生成器,协程,生成器,消息处理"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "示例：接收消息",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证断言、实例检查、历史交互",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/custom_exceptions",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/numeric_types",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/while_loops",
-              "python/with_statement"
-            ],
-            "solutions": ["cofollow.py"]
-          },
-          {
-            "title": "包装套接字",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证yield from语句的存在",
-                "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/lists",
-              "python/networking_protocols",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/socket_programming",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
-            ],
-            "solutions": ["server.py"]
-          },
-          {
-            "title": "异步/等待",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python异步和等待关键字的存在",
-                "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/lists",
-              "python/networking_protocols",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/socket_programming",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
-            ],
-            "solutions": ["asyncserver.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Example: Receiving messages",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Assertions, Instance Checks, History Interactions",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/custom_exceptions",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/importing_modules",
+          "python/keyword_arguments",
+          "python/numeric_types",
+          "python/os_system",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/while_loops",
+          "python/with_statement"
+        ],
+        "solutions": ["cofollow.py"]
+      },
+      {
+        "title": "Wrapping a Socket",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Yield From Statement",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/importing_modules",
+          "python/lists",
+          "python/networking_protocols",
+          "python/polymorphism",
+          "python/raising_exceptions",
+          "python/socket_programming",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/while_loops"
+        ],
+        "solutions": ["server.py"]
+      },
+      {
+        "title": "Async/Await",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python Async and Await Keywords",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/importing_modules",
+          "python/lists",
+          "python/networking_protocols",
+          "python/polymorphism",
+          "python/raising_exceptions",
+          "python/socket_programming",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/while_loops"
+        ],
+        "solutions": ["asyncserver.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -323,5 +171,74 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "了解委托生成器",
+      "description": "在本实验中，你将学习如何使用Python中的yield from语句来了解委托生成器。",
+      "meta": {
+        "title": "Python编程 | 委托生成器 | 协程概念",
+        "description": "了解委托生成器，这是一种用于清理依赖生成器的代码的有用技术。探索接收消息和验证消息类型的示例。",
+        "keywords": "Python,编程,委托生成器,协程,生成器,消息处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "示例：接收消息",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证断言、实例检查、历史交互",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["cofollow.py"]
+          },
+          {
+            "title": "包装套接字",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证yield from语句的存在",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["server.py"]
+          },
+          {
+            "title": "异步/等待",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python异步和等待关键字的存在",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["asyncserver.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

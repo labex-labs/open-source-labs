@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Pipe Async Functions",
+  "description": "In this lab, we will explore the concept of function composition in asynchronous programming using JavaScript. We will learn how to use the pipeAsyncFunctions function to compose a series of asynchronous functions that can accept a single argument and return a combination of normal values, Promises, or be async. By the end of this lab, you will have a solid understanding of how to use function composition to write more efficient and readable asynchronous code.",
+  "meta": {
+    "title": "Mastering Asynchronous Function Composition in JavaScript",
+    "description": "Learn how to use the pipeAsyncFunctions function to compose a series of asynchronous functions for efficient and readable code.",
+    "keywords": "javascript, javascript practice, asyncawait, javascript practice online, javascript lab, asynchronous programming, pipeasyncfunctions, javascript tutor, function composition"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pipe Async Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/async_prog",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/debugging",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pipe Async Functions",
-      "description": "In this lab, we will explore the concept of function composition in asynchronous programming using JavaScript. We will learn how to use the pipeAsyncFunctions function to compose a series of asynchronous functions that can accept a single argument and return a combination of normal values, Promises, or be async. By the end of this lab, you will have a solid understanding of how to use function composition to write more efficient and readable asynchronous code.",
-      "meta": {
-        "title": "Mastering Asynchronous Function Composition in JavaScript",
-        "description": "Learn how to use the pipeAsyncFunctions function to compose a series of asynchronous functions for efficient and readable code.",
-        "keywords": "javascript, javascript practice, asyncawait, javascript practice online, javascript lab, asynchronous programming, pipeasyncfunctions, javascript tutor, function composition"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pipe Async Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/async_prog",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "串联异步函数",
@@ -77,24 +74,13 @@
               {
                 "name": "验证 Node 命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中输入 'node' 并回车，即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中输入 'node' 并回车，即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/async_prog",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

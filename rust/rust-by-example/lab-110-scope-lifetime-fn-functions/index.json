@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Rust Function Signatures with Lifetimes",
+  "description": "In this lab, we are introduced to function signatures with lifetimes in Rust, where any reference must have an annotated lifetime and any reference being returned must have the same lifetime as an input or be static. It is important to note that returning references without input is prohibited if it would result in returning references to invalid data. The examples provided demonstrate valid forms of functions with lifetimes, including functions with one input reference, functions with mutable references, functions with multiple elements and different lifetimes, and functions that return references that have been passed in as parameters.",
+  "meta": {
+    "title": "Rust Programming | Function Signatures with Lifetimes",
+    "description": "Learn about function signatures with lifetimes in Rust, where references must have annotated lifetimes and returned references must match input lifetimes or be static.",
+    "keywords": "Rust, Programming, Function Signatures, Lifetimes, References"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/string_type",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Function Signatures with Lifetimes",
-      "description": "In this lab, we are introduced to function signatures with lifetimes in Rust, where any reference must have an annotated lifetime and any reference being returned must have the same lifetime as an input or be static. It is important to note that returning references without input is prohibited if it would result in returning references to invalid data. The examples provided demonstrate valid forms of functions with lifetimes, including functions with one input reference, functions with mutable references, functions with multiple elements and different lifetimes, and functions that return references that have been passed in as parameters.",
-      "meta": {
-        "title": "Rust Programming | Function Signatures with Lifetimes",
-        "description": "Learn about function signatures with lifetimes in Rust, where references must have annotated lifetimes and returned references must match input lifetimes or be static.",
-        "keywords": "Rust, Programming, Function Signatures, Lifetimes, References"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "带有生命周期的Rust函数签名",
@@ -79,26 +76,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

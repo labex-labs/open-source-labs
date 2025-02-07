@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Chainable Option Handling with and_then()",
+  "description": "In this lab, the and_then() combinator is introduced as a chainable alternative to map() when working with Option<T>, as it avoids nesting Option<Option<T>> and simplifies code readability.",
+  "meta": {
+    "title": "Rust Programming | Option Combinators | and_then",
+    "description": "Learn how to use the `and_then()` combinator to simplify code when working with `Option<T>` in Rust programming. Avoid nested `Option<Option<T>>` and improve readability.",
+    "keywords": "Rust, Programming, Option, Combinators, and_then, Nested Options, Code Readability"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Combinators: and_then",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/operator_overloading",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Chainable Option Handling with and_then()",
-      "description": "In this lab, the and_then() combinator is introduced as a chainable alternative to map() when working with Option<T>, as it avoids nesting Option<Option<T>> and simplifies code readability.",
-      "meta": {
-        "title": "Rust Programming | Option Combinators | and_then",
-        "description": "Learn how to use the `and_then()` combinator to simplify code when working with `Option<T>` in Rust programming. Avoid nested `Option<Option<T>>` and improve readability.",
-        "keywords": "Rust, Programming, Option, Combinators, and_then, Nested Options, Code Readability"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Combinators: and_then",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用and_then()进行可链式的Option处理",
@@ -76,23 +73,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

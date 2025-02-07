@@ -1,10 +1,117 @@
 {
   "type": "lab",
+  "title": "Python Unittest Module",
+  "description": "In this lab, you will learn how to use Python's unittest module to write and run test cases.",
+  "meta": {
+    "title": "Mastering Python Unittest",
+    "description": "Explore the fundamentals of Python's unittest module and learn how to create effective unit tests for your applications.",
+    "keywords": "software development, python, unit testing, programming, unittest"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Preliminaries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Unittest, Main, and Assert Existence in Python Files",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/standard_libraries",
+          "python/tuples"
+        ],
+        "solutions": ["step1_solution.py"]
+      },
+      {
+        "title": "Unit testing",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Code Correctness",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Unit tests with expected errors",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Exception Handling in Project Files",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ],
+        "solutions": ["step3_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,107 +122,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Python Unittest Module",
-      "description": "In this lab, you will learn how to use Python's unittest module to write and run test cases.",
-      "meta": {
-        "title": "Mastering Python Unittest",
-        "description": "Explore the fundamentals of Python's unittest module and learn how to create effective unit tests for your applications.",
-        "keywords": "software development, python, unit testing, programming, unittest"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preliminaries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Unittest, Main, and Assert Existence in Python Files",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/tuples"
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "Unit testing",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Code Correctness",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "Unit tests with expected errors",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Exception Handling in Project Files",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ],
-            "solutions": ["step3_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Python单元测试模块",
@@ -134,20 +140,8 @@
               {
                 "name": "验证Python文件中是否存在Unittest、Main和Assert",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/tuples"
             ],
             "solutions": ["step1_solution.py"]
           },
@@ -158,22 +152,8 @@
               {
                 "name": "验证Python代码的正确性",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples"
             ],
             "solutions": ["step2_solution.py"]
           },
@@ -184,31 +164,14 @@
               {
                 "name": "验证项目文件中的异常处理",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
             ],
             "solutions": ["step3_solution.py"]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -217,16 +180,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

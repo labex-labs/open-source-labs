@@ -1,10 +1,86 @@
 {
   "type": "lab",
+  "title": "Working with Environment Variables",
+  "description": "In this lab, we will be enhancing minigrep by allowing users to enable case-insensitive searching via an environment variable, providing a convenient way to apply this feature to all their searches in a terminal session.",
+  "meta": {
+    "title": "Working with Environment Variables | Rust Programming",
+    "description": "Learn how to enhance the Rust-based minigrep tool by adding case-insensitive search functionality using environment variables.",
+    "keywords": "Rust, Environment Variables, Case-Insensitive Search, Programming, Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Working with Environment Variables",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Writing a Failing Test for the Case-Insensitive search Function",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/variable_declarations"
+        ]
+      },
+      {
+        "title": "Implementing the search_case_insensitive Function",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,85 +91,6 @@
     "repo": "https://github.com/rust-lang/book"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Working with Environment Variables",
-      "description": "In this lab, we will be enhancing minigrep by allowing users to enable case-insensitive searching via an environment variable, providing a convenient way to apply this feature to all their searches in a terminal session.",
-      "meta": {
-        "title": "Working with Environment Variables | Rust Programming",
-        "description": "Learn how to enhance the Rust-based minigrep tool by adding case-insensitive search functionality using environment variables.",
-        "keywords": "Rust, Environment Variables, Case-Insensitive Search, Programming, Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Working with Environment Variables",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Writing a Failing Test for the Case-Insensitive search Function",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/variable_declarations"
-            ]
-          },
-          {
-            "title": "Implementing the search_case_insensitive Function",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用环境变量",
@@ -112,12 +109,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "为不区分大小写搜索函数编写失败的测试",
@@ -126,15 +120,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/variable_declarations"
             ]
           },
           {
@@ -144,27 +131,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

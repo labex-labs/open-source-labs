@@ -1,10 +1,133 @@
 {
   "type": "lab",
+  "title": "Matplotlib Legend Creation Tutorial",
+  "description": "Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. In this tutorial, we will learn how to create a simple legend with Matplotlib.",
+  "meta": {
+    "title": "Matplotlib Python Plotting Library | Jupyter Notebook Tutorial",
+    "description": "Learn how to create a simple legend with Matplotlib, a popular Python plotting library. Access Jupyter Notebook for hands-on practice.",
+    "keywords": "Matplotlib, Python, Plotting, Jupyter Notebook, Data Visualization"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Matplotlib",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules"
+        ]
+      },
+      {
+        "title": "Create a Figure and Axes",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Plot the Data",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/line_styles_colors",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the First Legend",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/legend_config", "python/lists", "python/tuples"]
+      },
+      {
+        "title": "Add the First Legend",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Create the Second Legend",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/legend_config", "python/lists", "python/tuples"]
+      },
+      {
+        "title": "Show the Plot",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "simple-legend02.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,131 +138,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Legend Creation Tutorial",
-      "description": "Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. In this tutorial, we will learn how to create a simple legend with Matplotlib.",
-      "meta": {
-        "title": "Matplotlib Python Plotting Library | Jupyter Notebook Tutorial",
-        "description": "Learn how to create a simple legend with Matplotlib, a popular Python plotting library. Access Jupyter Notebook for hands-on practice.",
-        "keywords": "Matplotlib, Python, Plotting, Jupyter Notebook, Data Visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Matplotlib",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules"
-            ]
-          },
-          {
-            "title": "Create a Figure and Axes",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Plot the Data",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the First Legend",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add the First Legend",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Create the Second Legend",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Show the Plot",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 创建图例教程",
@@ -160,12 +158,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules"
             ]
           },
           {
@@ -177,8 +169,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "绘制数据",
@@ -189,12 +180,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -206,11 +191,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -222,8 +202,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "创建第二个图例",
@@ -234,11 +213,6 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -250,13 +224,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -265,16 +237,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "simple-legend02.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,768 +1,379 @@
 {
   "type": "lab",
+  "title": "Extensible Programs Through Inheritance",
+  "description": "Inheritance is a commonly used tool for writing extensible programs. This section explores that idea.",
+  "meta": {
+    "title": "Mastering Extensible Programs Through Inheritance",
+    "description": "Explore the power of inheritance to write more extensible and maintainable programs.",
+    "keywords": "extensible programs, inheritance, python, object oriented programming, software design"
+  },
   "difficulty": "Beginner",
   "time": 80,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/practical-python"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Extensible Programs Through Inheritance",
-      "description": "Inheritance is a commonly used tool for writing extensible programs. This section explores that idea.",
-      "meta": {
-        "title": "Mastering Extensible Programs Through Inheritance",
-        "description": "Explore the power of inheritance to write more extensible and maintainable programs.",
-        "keywords": "extensible programs, inheritance, python, object oriented programming, software design"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Inheritance",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/classes_objects"]
-          },
-          {
-            "title": "Extending",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Example",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Python Class Usage in History",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add a new method",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Function Calls in Python History",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Redefining an existing method",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify if s.cost is Present in Python History",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Overriding",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'super' in .python_history",
-                "file": "verify6.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "__init__ and inheritance",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "Verify Presence of super().__init__() in Python History",
-                "file": "verify7.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Using Inheritance",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition"
-            ]
-          },
-          {
-            "title": "'is a' relationship",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify9.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "object base class",
-            "text": "en/step10.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify10.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/classes_objects"]
-          },
-          {
-            "title": "Multiple Inheritance",
-            "text": "en/step11.md",
-            "verify": [
-              {
-                "name": "Verify If Python History Contains Import Statement",
-                "file": "verify11.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 4.5: An Extensibility Problem",
-            "text": "en/step12.md",
-            "verify": [
-              {
-                "name": "Verify Presence of TableFormatter and NotImplementedError",
-                "file": "verify12.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 4.6: Using Inheritance to Produce Different Output",
-            "text": "en/step13.md",
-            "verify": [
-              {
-                "name": "Verify Existence of HTMLTableFormatter Class",
-                "file": "verify13.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples"
-            ],
-            "solutions": ["tableformat.py"]
-          },
-          {
-            "title": "Exercise 4.7: Polymorphism in Action",
-            "text": "en/step14.md",
-            "verify": [
-              {
-                "name": "Verify Presence of create_formatter Function",
-                "file": "verify14.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples"
-            ],
-            "solutions": ["tableformat_4.7.py"]
-          },
-          {
-            "title": "Exercise 4.8: Putting it all together",
-            "text": "en/step15.md",
-            "verify": [
-              {
-                "name": "Verify Portfolio Report Generation and Formatting",
-                "file": "verify15.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numeric_types",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["report.py"]
-          },
-          {
-            "title": "Discussion",
-            "text": "en/step16.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify16.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "通过继承实现可扩展程序",
-      "description": "继承是编写可扩展程序常用的工具。本节将探讨这一概念。",
-      "meta": {
-        "title": "掌握通过继承实现的可扩展程序",
-        "description": "探索继承的力量，编写更具可扩展性和可维护性的程序。",
-        "keywords": "可扩展程序, 继承, Python, 面向对象编程, 软件设计"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "继承",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/classes_objects"]
-          },
-          {
-            "title": "扩展",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "示例",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证历史记录中的Python类使用情况",
-                "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "添加一个新方法",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中函数调用的存在性",
-                "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "重新定义现有方法",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在s.cost",
-                "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "重写",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "验证.python_history中是否存在'super'",
-                "file": "verify6.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "__init__ 与继承",
-            "text": "zh/step7.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在super().__init__()",
-                "file": "verify7.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "使用继承",
-            "text": "zh/step8.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify8.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition"
-            ]
-          },
-          {
-            "title": "“是一个”关系",
-            "text": "zh/step9.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify9.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "对象基类",
-            "text": "zh/step10.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify10.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/classes_objects"]
-          },
-          {
-            "title": "多重继承",
-            "text": "zh/step11.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否包含导入语句",
-                "file": "verify11.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "练习4.5：一个可扩展性问题",
-            "text": "zh/step12.md",
-            "verify": [
-              {
-                "name": "验证是否存在TableFormatter和NotImplementedError",
-                "file": "verify12.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "练习4.6：使用继承生成不同输出",
-            "text": "zh/step13.md",
-            "verify": [
-              {
-                "name": "验证HTMLTableFormatter类是否存在",
-                "file": "verify13.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples"
-            ],
-            "solutions": ["tableformat.py"]
-          },
-          {
-            "title": "练习4.7：多态性的实际应用",
-            "text": "zh/step14.md",
-            "verify": [
-              {
-                "name": "验证是否存在create_formatter函数",
-                "file": "verify14.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples"
-            ],
-            "solutions": ["tableformat_4.7.py"]
-          },
-          {
-            "title": "练习4.8：综合运用",
-            "text": "zh/step15.md",
-            "verify": [
-              {
-                "name": "验证投资组合报告的生成与格式化",
-                "file": "verify15.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numeric_types",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["report.py"]
-          },
-          {
-            "title": "讨论",
-            "text": "zh/step16.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify16.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Inheritance",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/classes_objects"]
+      },
+      {
+        "title": "Extending",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Example",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Python Class Usage in History",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add a new method",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Function Calls in Python History",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Redefining an existing method",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify if s.cost is Present in Python History",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Overriding",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'super' in .python_history",
+            "file": "verify6.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "__init__ and inheritance",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "Verify Presence of super().__init__() in Python History",
+            "file": "verify7.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Using Inheritance",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition"
+        ]
+      },
+      {
+        "title": "'is a' relationship",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify9.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "object base class",
+        "text": "en/step10.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify10.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/classes_objects"]
+      },
+      {
+        "title": "Multiple Inheritance",
+        "text": "en/step11.md",
+        "verify": [
+          {
+            "name": "Verify If Python History Contains Import Statement",
+            "file": "verify11.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/data_collections",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 4.5: An Extensibility Problem",
+        "text": "en/step12.md",
+        "verify": [
+          {
+            "name": "Verify Presence of TableFormatter and NotImplementedError",
+            "file": "verify12.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 4.6: Using Inheritance to Produce Different Output",
+        "text": "en/step13.md",
+        "verify": [
+          {
+            "name": "Verify Existence of HTMLTableFormatter Class",
+            "file": "verify13.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/tuples"
+        ],
+        "solutions": ["tableformat.py"]
+      },
+      {
+        "title": "Exercise 4.7: Polymorphism in Action",
+        "text": "en/step14.md",
+        "verify": [
+          {
+            "name": "Verify Presence of create_formatter Function",
+            "file": "verify14.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/default_arguments",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/standard_libraries",
+          "python/tuples"
+        ],
+        "solutions": ["tableformat_4.7.py"]
+      },
+      {
+        "title": "Exercise 4.8: Putting it all together",
+        "text": "en/step15.md",
+        "verify": [
+          {
+            "name": "Verify Portfolio Report Generation and Formatting",
+            "file": "verify15.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/numeric_types",
+          "python/os_system",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["report.py"]
+      },
+      {
+        "title": "Discussion",
+        "text": "en/step16.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify16.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -782,5 +393,217 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "通过继承实现可扩展程序",
+      "description": "继承是编写可扩展程序常用的工具。本节将探讨这一概念。",
+      "meta": {
+        "title": "掌握通过继承实现的可扩展程序",
+        "description": "探索继承的力量，编写更具可扩展性和可维护性的程序。",
+        "keywords": "可扩展程序, 继承, Python, 面向对象编程, 软件设计"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "继承",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify1.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "扩展",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "示例",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证历史记录中的Python类使用情况",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "添加一个新方法",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中函数调用的存在性",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "重新定义现有方法",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在s.cost",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "重写",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "验证.python_history中是否存在'super'",
+                "file": "verify6.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "__init__ 与继承",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在super().__init__()",
+                "file": "verify7.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "使用继承",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "“是一个”关系",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "对象基类",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify10.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "多重继承",
+            "text": "zh/step11.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否包含导入语句",
+                "file": "verify11.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习4.5：一个可扩展性问题",
+            "text": "zh/step12.md",
+            "verify": [
+              {
+                "name": "验证是否存在TableFormatter和NotImplementedError",
+                "file": "verify12.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习4.6：使用继承生成不同输出",
+            "text": "zh/step13.md",
+            "verify": [
+              {
+                "name": "验证HTMLTableFormatter类是否存在",
+                "file": "verify13.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["tableformat.py"]
+          },
+          {
+            "title": "练习4.7：多态性的实际应用",
+            "text": "zh/step14.md",
+            "verify": [
+              {
+                "name": "验证是否存在create_formatter函数",
+                "file": "verify14.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["tableformat_4.7.py"]
+          },
+          {
+            "title": "练习4.8：综合运用",
+            "text": "zh/step15.md",
+            "verify": [
+              {
+                "name": "验证投资组合报告的生成与格式化",
+                "file": "verify15.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["report.py"]
+          },
+          {
+            "title": "讨论",
+            "text": "zh/step16.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify16.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

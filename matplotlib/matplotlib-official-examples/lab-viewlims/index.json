@@ -1,10 +1,143 @@
 {
   "type": "lab",
+  "title": "Interactive Data Visualization with Matplotlib",
+  "description": "In data visualization, zooming in on a specific area of a plot can be extremely useful to better understand and analyze the data. Matplotlib, a popular data visualization library for Python, provides a way to create two identical panels and zoom in on the right panel to show a rectangle in the first panel, denoting the zoomed region. In this lab, we will learn how to create this interactive zooming feature in Matplotlib.",
+  "meta": {
+    "title": "Interactive Zooming in Matplotlib | Data Visualization",
+    "description": "Learn how to create an interactive zooming feature in Matplotlib, a popular data visualization library for Python.",
+    "keywords": "Matplotlib, Data Visualization, Python, Interactive Zooming, Data Analysis"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create the UpdatingRect class",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the MandelbrotDisplay class",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/constructor",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Create the plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/heatmaps",
+          "python/build_in_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add zooming functionality",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/event_handling", "python/tuples"]
+      },
+      {
+        "title": "Show the plot",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "viewlims.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,133 +148,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Interactive Data Visualization with Matplotlib",
-      "description": "In data visualization, zooming in on a specific area of a plot can be extremely useful to better understand and analyze the data. Matplotlib, a popular data visualization library for Python, provides a way to create two identical panels and zoom in on the right panel to show a rectangle in the first panel, denoting the zoomed region. In this lab, we will learn how to create this interactive zooming feature in Matplotlib.",
-      "meta": {
-        "title": "Interactive Zooming in Matplotlib | Data Visualization",
-        "description": "Learn how to create an interactive zooming feature in Matplotlib, a popular data visualization library for Python.",
-        "keywords": "Matplotlib, Data Visualization, Python, Interactive Zooming, Data Analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create the UpdatingRect class",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the MandelbrotDisplay class",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Create the plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add zooming functionality",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/event_handling", "python/tuples"]
-          },
-          {
-            "title": "Show the plot",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 Matplotlib 进行交互式数据可视化",
@@ -162,14 +168,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -181,13 +179,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
             ]
           },
           {
@@ -199,21 +190,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -225,12 +201,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -242,8 +212,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/event_handling", "python/tuples"]
+            ]
           },
           {
             "title": "显示图表",
@@ -254,13 +223,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -269,16 +236,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "viewlims.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

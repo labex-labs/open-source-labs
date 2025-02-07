@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Robust Covariance Estimation and Mahalanobis Distances Relevance",
+  "description": "In this lab, we will explore the use of robust covariance estimation with Mahalanobis distances on Gaussian distributed data. Mahalanobis distance is a measure of the distance between a point and a distribution. It is defined as the distance between a point and the mean of the distribution, scaled by the inverse of the covariance matrix of the distribution. For Gaussian distributed data, the Mahalanobis distance can be used to compute the distance of an observation to the mode of the distribution. We will compare the performance of the Minimum Covariance Determinant (MCD) estimator, a robust estimator of covariance, with the standard covariance Maximum Likelihood Estimator (MLE) in calculating the Mahalanobis distances of a contaminated dataset.",
+  "meta": {
+    "title": "Robust Covariance Estimation | Mahalanobis Distance | Gaussian Data",
+    "description": "Explore robust covariance estimation using Mahalanobis distance on Gaussian distributed data, compare MCD and MLE estimators for contaminated datasets.",
+    "keywords": "Robust Covariance Estimation, Mahalanobis Distance, Gaussian Data, MCD Estimator, MLE Estimator"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Fit MCD and MLE Covariance Estimators to Data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/covariance"]
+      },
+      {
+        "title": "Plot Contours of Mahalanobis Distances",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Compare MLE and MCD Mahalanobis Distances",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-mahalanobis-distances.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Robust Covariance Estimation and Mahalanobis Distances Relevance",
-      "description": "In this lab, we will explore the use of robust covariance estimation with Mahalanobis distances on Gaussian distributed data. Mahalanobis distance is a measure of the distance between a point and a distribution. It is defined as the distance between a point and the mean of the distribution, scaled by the inverse of the covariance matrix of the distribution. For Gaussian distributed data, the Mahalanobis distance can be used to compute the distance of an observation to the mode of the distribution. We will compare the performance of the Minimum Covariance Determinant (MCD) estimator, a robust estimator of covariance, with the standard covariance Maximum Likelihood Estimator (MLE) in calculating the Mahalanobis distances of a contaminated dataset.",
-      "meta": {
-        "title": "Robust Covariance Estimation | Mahalanobis Distance | Gaussian Data",
-        "description": "Explore robust covariance estimation using Mahalanobis distance on Gaussian distributed data, compare MCD and MLE estimators for contaminated datasets.",
-        "keywords": "Robust Covariance Estimation, Mahalanobis Distance, Gaussian Data, MCD Estimator, MLE Estimator"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Fit MCD and MLE Covariance Estimators to Data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
-          },
-          {
-            "title": "Plot Contours of Mahalanobis Distances",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Compare MLE and MCD Mahalanobis Distances",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "稳健协方差估计与马氏距离的相关性",
@@ -106,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "将MCD和MLE协方差估计器应用于数据",
@@ -118,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
+            ]
           },
           {
             "title": "绘制马氏距离的等高线",
@@ -130,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "比较MLE和MCD的马氏距离",
@@ -142,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-mahalanobis-distances.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

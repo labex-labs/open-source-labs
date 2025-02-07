@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Arrays and Slices",
+  "description": "In this lab, we will explore arrays and slices in Rust. An array is a collection of objects of the same type stored in contiguous memory, and its length is known at compile time. On the other hand, a slice is similar to an array but its length is not known at compile time. Slices can be used to borrow a section of an array. We will also cover how to create arrays, access elements, calculate the length, allocate memory, borrow arrays as slices, and work with empty slices. Additionally, we will discuss how to safely access array elements using .get() method and handle out-of-bounds errors.",
+  "meta": {
+    "title": "Exploring Arrays and Slices in Rust",
+    "description": "Dive into the world of arrays and slices in Rust, learn how to create, access, and manipulate these data structures.",
+    "keywords": "data structures, rust playground, arrays, rust tutor, slices, rust online compiler, rust commands, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Arrays and Slices",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Arrays and Slices",
-      "description": "In this lab, we will explore arrays and slices in Rust. An array is a collection of objects of the same type stored in contiguous memory, and its length is known at compile time. On the other hand, a slice is similar to an array but its length is not known at compile time. Slices can be used to borrow a section of an array. We will also cover how to create arrays, access elements, calculate the length, allocate memory, borrow arrays as slices, and work with empty slices. Additionally, we will discuss how to safely access array elements using .get() method and handle out-of-bounds errors.",
-      "meta": {
-        "title": "Exploring Arrays and Slices in Rust",
-        "description": "Dive into the world of arrays and slices in Rust, learn how to create, access, and manipulate these data structures.",
-        "keywords": "data structures, rust playground, arrays, rust tutor, slices, rust online compiler, rust commands, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Arrays and Slices",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "数组和切片",
@@ -80,27 +77,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

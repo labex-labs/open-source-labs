@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "TryFrom and TryInto",
+  "description": "In this lab, we explore the usage of TryFrom and TryInto in Rust, which are generic traits used for fallible conversions between types and return Result types. We provide an example code snippet that demonstrates the implementation of TryFrom for converting an i32 into a custom EvenNumber struct, and then showcase how to use TryFrom and TryInto to perform the conversion and handle the possible errors.",
+  "meta": {
+    "title": "Mastering TryFrom and TryInto in Rust",
+    "description": "Explore the usage of TryFrom and TryInto traits for fallible conversions in Rust programming.",
+    "keywords": "rust, rust playground, error handling, rust tutor, rust online compiler, rust commands, rust practice, rust online playground, fallible conversion, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "TryFrom and TryInto",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "TryFrom and TryInto",
-      "description": "In this lab, we explore the usage of TryFrom and TryInto in Rust, which are generic traits used for fallible conversions between types and return Result types. We provide an example code snippet that demonstrates the implementation of TryFrom for converting an i32 into a custom EvenNumber struct, and then showcase how to use TryFrom and TryInto to perform the conversion and handle the possible errors.",
-      "meta": {
-        "title": "Mastering TryFrom and TryInto in Rust",
-        "description": "Explore the usage of TryFrom and TryInto traits for fallible conversions in Rust programming.",
-        "keywords": "rust, rust playground, error handling, rust tutor, rust online compiler, rust commands, rust practice, rust online playground, fallible conversion, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "TryFrom and TryInto",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "TryFrom和TryInto",
@@ -78,25 +75,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,104 @@
 {
   "type": "lab",
+  "title": "Scikit-Learn MLPClassifier: Stochastic Learning Strategies",
+  "description": "This lab will guide you through the process of using the Scikit-learn MLPClassifier to compare the performance of different stochastic learning strategies, including SGD and Adam. The MLPClassifier is a neural network classifier that uses backpropagation to optimize the weights of the network. The goal of this lab is to show how different stochastic learning strategies can affect the training loss curves of the MLPClassifier. We will use several small datasets for this example, although the general trend shown in these examples seems to carry over to larger datasets.",
+  "meta": {
+    "title": "Scikit-Learn MLPClassifier: Exploring Stochastic Learning Strategies",
+    "description": "Discover how different stochastic learning strategies affect the training loss curves of the Scikit-learn MLPClassifier.",
+    "keywords": "machine learning, sgd, mlpclassifier, adam, scikit learn, scikit-learn, machine learning playground, stochastic learning, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/exceptions",
+          "sklearn/neural_network",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "Define different learning strategies",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Define a function to plot the learning curves",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Load or generate small datasets",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot the learning curves for each dataset",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-mlp-training-curves.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,94 +109,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Scikit-Learn MLPClassifier: Stochastic Learning Strategies",
-      "description": "This lab will guide you through the process of using the Scikit-learn MLPClassifier to compare the performance of different stochastic learning strategies, including SGD and Adam. The MLPClassifier is a neural network classifier that uses backpropagation to optimize the weights of the network. The goal of this lab is to show how different stochastic learning strategies can affect the training loss curves of the MLPClassifier. We will use several small datasets for this example, although the general trend shown in these examples seems to carry over to larger datasets.",
-      "meta": {
-        "title": "Scikit-Learn MLPClassifier: Exploring Stochastic Learning Strategies",
-        "description": "Discover how different stochastic learning strategies affect the training loss curves of the Scikit-learn MLPClassifier.",
-        "keywords": "machine learning, sgd, mlpclassifier, adam, scikit learn, scikit-learn, machine learning playground, stochastic learning, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/exceptions",
-              "sklearn/neural_network",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Define different learning strategies",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Define a function to plot the learning curves",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Load or generate small datasets",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot the learning curves for each dataset",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Scikit-learn的MLPClassifier：随机学习策略",
@@ -123,12 +129,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/exceptions",
-              "sklearn/neural_network",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -140,8 +140,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "定义一个绘制学习曲线的函数",
@@ -152,8 +151,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "加载或生成小型数据集",
@@ -164,8 +162,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制每个数据集的学习曲线",
@@ -176,13 +173,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -191,16 +186,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-mlp-training-curves.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,744 +1,367 @@
 {
   "type": "lab",
+  "title": "Python Sequence Fundamentals",
+  "description": "Python Sequences are ordered collections of items. They are indexed by integers.",
+  "meta": {
+    "title": "Python Sequences | Ordered Data Collections",
+    "description": "Explore the core sequence data types in Python, including strings, lists, and tuples. Learn how to access, manipulate, and combine these ordered collections.",
+    "keywords": "Python, Sequences, Strings, Lists, Tuples, Data Types, Indexing, Concatenation"
+  },
   "difficulty": "Beginner",
   "time": 80,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/practical-python"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Python Sequence Fundamentals",
-      "description": "Python Sequences are ordered collections of items. They are indexed by integers.",
-      "meta": {
-        "title": "Python Sequences | Ordered Data Collections",
-        "description": "Explore the core sequence data types in Python, including strings, lists, and tuples. Learn how to access, manipulate, and combine these ordered collections.",
-        "keywords": "Python, Sequences, Strings, Lists, Tuples, Data Types, Indexing, Concatenation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Sequence Datatypes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Use of Python Length, Strings, and Lists",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Slicing",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Colon and Square Brackets",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/comments", "python/lists"]
-          },
-          {
-            "title": "Slice re-assignment",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Deletion of Python History",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/comments", "python/lists"]
-          },
-          {
-            "title": "Sequence Reductions",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Python History for Sum, Min, and Max",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "Iteration over a sequence",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python for-in-print Statements",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "break statement",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/break_continue",
-              "python/conditional_statements",
-              "python/for_loops"
-            ]
-          },
-          {
-            "title": "continue statement",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/break_continue",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops"
-            ]
-          },
-          {
-            "title": "Looping over integers",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "enumerate() function",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify9.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "For and tuples",
-            "text": "en/step10.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify10.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "zip() function",
-            "text": "en/step11.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Zip and Dict",
-                "file": "verify11.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 2.13: Counting",
-            "text": "en/step12.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'end=' in Python History File",
-                "file": "verify12.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Exercise 2.14: More sequence operations",
-            "text": "en/step13.md",
-            "verify": [
-              {
-                "name": "Verify Presence of sum and range(len in Python History",
-                "file": "verify13.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Exercise 2.15: A practical enumerate() example",
-            "text": "en/step14.md",
-            "verify": [
-              {
-                "name": "Verify Presence of enumerate() and Correct Output",
-                "file": "verify14.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost_2.15.py"]
-          },
-          {
-            "title": "Exercise 2.16: Using the zip() function",
-            "text": "en/step15.md",
-            "verify": [
-              {
-                "name": "Verify Use of dict(zip) and Correct Output",
-                "file": "verify15.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["report_2.16.py"]
-          },
-          {
-            "title": "Exercise 2.17: Inverting a dictionary",
-            "text": "en/step16.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python Statements",
-                "file": "verify16.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "Python序列基础",
-      "description": "Python序列是有序的项目集合。它们由整数索引。",
-      "meta": {
-        "title": "Python序列 | 有序数据集合",
-        "description": "探索Python中的核心序列数据类型，包括字符串、列表和元组。学习如何访问、操作和组合这些有序集合。",
-        "keywords": "Python, 序列, 字符串, 列表, 元组, 数据类型, 索引, 拼接"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "序列数据类型",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python长度、字符串和列表的使用",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "切片",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中包含冒号和方括号",
-                "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/comments", "python/lists"]
-          },
-          {
-            "title": "切片重新赋值",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录的删除",
-                "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/comments", "python/lists"]
-          },
-          {
-            "title": "序列归约",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中的求和、求最小值和求最大值操作",
-                "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "对序列进行迭代",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证是否存在Python的for-in-print语句",
-                "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "break语句",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/break_continue",
-              "python/conditional_statements",
-              "python/for_loops"
-            ]
-          },
-          {
-            "title": "continue语句",
-            "text": "zh/step7.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify7.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/break_continue",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops"
-            ]
-          },
-          {
-            "title": "对整数进行循环",
-            "text": "zh/step8.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify8.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "enumerate() 函数",
-            "text": "zh/step9.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify9.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "For 循环与元组",
-            "text": "zh/step10.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify10.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "zip() 函数",
-            "text": "zh/step11.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中包含Zip和Dict",
-                "file": "verify11.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "练习2.13：计数",
-            "text": "zh/step12.md",
-            "verify": [
-              {
-                "name": "验证Python历史文件中是否存在'end='",
-                "file": "verify12.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "练习2.14：更多序列操作",
-            "text": "zh/step13.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在sum和range(len",
-                "file": "verify13.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "练习2.15：enumerate() 的一个实际示例",
-            "text": "zh/step14.md",
-            "verify": [
-              {
-                "name": "验证是否存在enumerate() 以及正确的输出",
-                "file": "verify14.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost_2.15.py"]
-          },
-          {
-            "title": "练习2.16：使用zip()函数",
-            "text": "zh/step15.md",
-            "verify": [
-              {
-                "name": "验证dict(zip)的使用及正确输出",
-                "file": "verify15.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["report_2.16.py"]
-          },
-          {
-            "title": "练习2.17：反转字典",
-            "text": "zh/step16.md",
-            "verify": [
-              {
-                "name": "验证Python语句是否存在",
-                "file": "verify16.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Sequence Datatypes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Use of Python Length, Strings, and Lists",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Slicing",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Colon and Square Brackets",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/comments", "python/lists"]
+      },
+      {
+        "title": "Slice re-assignment",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Deletion of Python History",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/comments", "python/lists"]
+      },
+      {
+        "title": "Sequence Reductions",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Python History for Sum, Min, and Max",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/lists",
+          "python/python_shell"
+        ]
+      },
+      {
+        "title": "Iteration over a sequence",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python for-in-print Statements",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/lists",
+          "python/python_shell"
+        ]
+      },
+      {
+        "title": "break statement",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/break_continue",
+          "python/conditional_statements",
+          "python/for_loops"
+        ]
+      },
+      {
+        "title": "continue statement",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/break_continue",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops"
+        ]
+      },
+      {
+        "title": "Looping over integers",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "enumerate() function",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify9.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "For and tuples",
+        "text": "en/step10.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify10.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "zip() function",
+        "text": "en/step11.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Zip and Dict",
+            "file": "verify11.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 2.13: Counting",
+        "text": "en/step12.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'end=' in Python History File",
+            "file": "verify12.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Exercise 2.14: More sequence operations",
+        "text": "en/step13.md",
+        "verify": [
+          {
+            "name": "Verify Presence of sum and range(len in Python History",
+            "file": "verify13.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Exercise 2.15: A practical enumerate() example",
+        "text": "en/step14.md",
+        "verify": [
+          {
+            "name": "Verify Presence of enumerate() and Correct Output",
+            "file": "verify14.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/sets",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["pcost_2.15.py"]
+      },
+      {
+        "title": "Exercise 2.16: Using the zip() function",
+        "text": "en/step15.md",
+        "verify": [
+          {
+            "name": "Verify Use of dict(zip) and Correct Output",
+            "file": "verify15.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["report_2.16.py"]
+      },
+      {
+        "title": "Exercise 2.17: Inverting a dictionary",
+        "text": "en/step16.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python Statements",
+            "file": "verify16.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -768,5 +391,216 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python序列基础",
+      "description": "Python序列是有序的项目集合。它们由整数索引。",
+      "meta": {
+        "title": "Python序列 | 有序数据集合",
+        "description": "探索Python中的核心序列数据类型，包括字符串、列表和元组。学习如何访问、操作和组合这些有序集合。",
+        "keywords": "Python, 序列, 字符串, 列表, 元组, 数据类型, 索引, 拼接"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "序列数据类型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python长度、字符串和列表的使用",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "切片",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中包含冒号和方括号",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "切片重新赋值",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录的删除",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "序列归约",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中的求和、求最小值和求最大值操作",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "对序列进行迭代",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证是否存在Python的for-in-print语句",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "break语句",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "continue语句",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "对整数进行循环",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "enumerate() 函数",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "For 循环与元组",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify10.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "zip() 函数",
+            "text": "zh/step11.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中包含Zip和Dict",
+                "file": "verify11.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习2.13：计数",
+            "text": "zh/step12.md",
+            "verify": [
+              {
+                "name": "验证Python历史文件中是否存在'end='",
+                "file": "verify12.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习2.14：更多序列操作",
+            "text": "zh/step13.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在sum和range(len",
+                "file": "verify13.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习2.15：enumerate() 的一个实际示例",
+            "text": "zh/step14.md",
+            "verify": [
+              {
+                "name": "验证是否存在enumerate() 以及正确的输出",
+                "file": "verify14.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["pcost_2.15.py"]
+          },
+          {
+            "title": "练习2.16：使用zip()函数",
+            "text": "zh/step15.md",
+            "verify": [
+              {
+                "name": "验证dict(zip)的使用及正确输出",
+                "file": "verify15.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["report_2.16.py"]
+          },
+          {
+            "title": "练习2.17：反转字典",
+            "text": "zh/step16.md",
+            "verify": [
+              {
+                "name": "验证Python语句是否存在",
+                "file": "verify16.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

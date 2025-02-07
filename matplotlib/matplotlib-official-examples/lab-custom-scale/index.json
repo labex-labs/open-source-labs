@@ -1,10 +1,151 @@
 {
   "type": "lab",
+  "title": "Custom Mercator Latitude Scale in Matplotlib",
+  "description": "Matplotlib is a powerful data visualization library for Python. It provides a number of built-in scales for plotting data, but sometimes you may need a custom scale for your specific use case. In this lab, we will show you how to create a custom scale that uses the Mercator projection for latitude data.",
+  "meta": {
+    "title": "Matplotlib Custom Scale | Data Visualization in Python",
+    "description": "Learn how to create a custom Mercator projection scale for latitude data using Matplotlib, a powerful data visualization library for Python.",
+    "keywords": "Matplotlib, Data Visualization, Python, Custom Scale, Mercator Projection"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Define the MercatorLatitudeScale class",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/classes_objects"]
+      },
+      {
+        "title": "Implement the MercatorLatitudeTransform class",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/data_collections",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/numerical_computing",
+          "python/polymorphism",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Implement the InvertedMercatorLatitudeTransform class",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Register the custom scale",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Use the custom scale",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/grid_config",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/conditional_statements",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "custom-scale.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,141 +156,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Custom Mercator Latitude Scale in Matplotlib",
-      "description": "Matplotlib is a powerful data visualization library for Python. It provides a number of built-in scales for plotting data, but sometimes you may need a custom scale for your specific use case. In this lab, we will show you how to create a custom scale that uses the Mercator projection for latitude data.",
-      "meta": {
-        "title": "Matplotlib Custom Scale | Data Visualization in Python",
-        "description": "Learn how to create a custom Mercator projection scale for latitude data using Matplotlib, a powerful data visualization library for Python.",
-        "keywords": "Matplotlib, Data Visualization, Python, Custom Scale, Mercator Projection"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Define the MercatorLatitudeScale class",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/classes_objects"]
-          },
-          {
-            "title": "Implement the MercatorLatitudeTransform class",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/numerical_computing",
-              "python/polymorphism",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Implement the InvertedMercatorLatitudeTransform class",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Register the custom scale",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Use the custom scale",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/grid_config",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 中的自定义墨卡托纬度比例",
@@ -170,13 +176,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -188,8 +187,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/classes_objects"]
+            ]
           },
           {
             "title": "实现 MercatorLatitudeTransform 类",
@@ -200,23 +198,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/numerical_computing",
-              "python/polymorphism",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -228,14 +209,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
             ]
           },
           {
@@ -247,8 +220,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "使用自定义比例",
@@ -259,24 +231,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/grid_config",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -285,16 +244,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "custom-scale.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Empirical Evaluation of K-Means Initialization",
+  "description": "K-means is a clustering algorithm that partitions a dataset into k clusters, where each point belongs to the cluster whose centroid is closest to it. The choice of initialization method for k-means can greatly impact the algorithm's performance and convergence. In this lab, we will evaluate the impact of different initialization methods on k-means clustering algorithm's convergence robustness.",
+  "meta": {
+    "title": "K-Means Clustering Algorithm | Machine Learning",
+    "description": "Explore the impact of different initialization methods on the convergence robustness of the K-Means clustering algorithm in this comprehensive programming tutorial.",
+    "keywords": "K-Means, Clustering Algorithm, Machine Learning, Initialization Methods, Convergence Robustness"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/utils"]
+      },
+      {
+        "title": "Generate Datasets",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Quantitative Evaluation of Initialization Methods",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Qualitative Visual Inspection of the Convergence",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-kmeans-stability-low-dim-dense.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Empirical Evaluation of K-Means Initialization",
-      "description": "K-means is a clustering algorithm that partitions a dataset into k clusters, where each point belongs to the cluster whose centroid is closest to it. The choice of initialization method for k-means can greatly impact the algorithm's performance and convergence. In this lab, we will evaluate the impact of different initialization methods on k-means clustering algorithm's convergence robustness.",
-      "meta": {
-        "title": "K-Means Clustering Algorithm | Machine Learning",
-        "description": "Explore the impact of different initialization methods on the convergence robustness of the K-Means clustering algorithm in this comprehensive programming tutorial.",
-        "keywords": "K-Means, Clustering Algorithm, Machine Learning, Initialization Methods, Convergence Robustness"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/utils"]
-          },
-          {
-            "title": "Generate Datasets",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Quantitative Evaluation of Initialization Methods",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Qualitative Visual Inspection of the Convergence",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "K均值初始化的实证评估",
@@ -106,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/utils"]
+            ]
           },
           {
             "title": "生成数据集",
@@ -118,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "初始化方法的定量评估",
@@ -130,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "收敛性的定性视觉检查",
@@ -142,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-kmeans-stability-low-dim-dense.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

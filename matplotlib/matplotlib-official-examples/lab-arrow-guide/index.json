@@ -1,10 +1,98 @@
 {
   "type": "lab",
+  "title": "Matplotlib Arrow Guide",
+  "description": "Arrows are often used to annotate plots. This tutorial shows how to plot arrows that behave differently when the data limits on a plot are changed.",
+  "meta": {
+    "title": "Matplotlib Arrow Guide: Annotate Plots with Ease",
+    "description": "Learn how to plot arrows that behave differently when the data limits on a plot are changed.",
+    "keywords": "python playground, matplotlib, plot, python, arrow, data visualization, annotation"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Head shape fixed in display space, anchor points fixed in data space",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Head shape and anchor points fixed in display space",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Entire patch fixed in data space",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "arrow-guide.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,88 +103,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Arrow Guide",
-      "description": "Arrows are often used to annotate plots. This tutorial shows how to plot arrows that behave differently when the data limits on a plot are changed.",
-      "meta": {
-        "title": "Matplotlib Arrow Guide: Annotate Plots with Ease",
-        "description": "Learn how to plot arrows that behave differently when the data limits on a plot are changed.",
-        "keywords": "python playground, matplotlib, plot, python, arrow, data visualization, annotation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Head shape fixed in display space, anchor points fixed in data space",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Head shape and anchor points fixed in display space",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Entire patch fixed in data space",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib箭头指南",
@@ -117,17 +123,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -139,13 +134,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -157,20 +145,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -179,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "arrow-guide.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

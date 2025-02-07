@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Implement Left-to-Right Function Composition",
+  "description": "Function composition is a technique used in functional programming to combine two or more functions to create a new function. In Python, we can use the compose function from the functools module to perform function composition. However, the compose function performs right-to-left function composition, which may not be suitable for all use cases. In this challenge, you will implement a function that performs left-to-right function composition.",
+  "meta": {
+    "title": "Function Composition in Python | Reverse Compose Functions",
+    "description": "Learn how to implement left-to-right function composition in Python using the compose_right function. Discover the power of functional programming techniques.",
+    "keywords": "function composition, python, functional programming, compose_right, left-to-right, reduce"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Reverse Compose Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Compose Script Correctness",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/keyword_arguments",
+          "python/lambda_functions",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_compose_right.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "compose_right.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Implement Left-to-Right Function Composition",
-      "description": "Function composition is a technique used in functional programming to combine two or more functions to create a new function. In Python, we can use the compose function from the functools module to perform function composition. However, the compose function performs right-to-left function composition, which may not be suitable for all use cases. In this challenge, you will implement a function that performs left-to-right function composition.",
-      "meta": {
-        "title": "Function Composition in Python | Reverse Compose Functions",
-        "description": "Learn how to implement left-to-right function composition in Python using the compose_right function. Discover the power of functional programming techniques.",
-        "keywords": "function composition, python, functional programming, compose_right, left-to-right, reduce"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Reverse Compose Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Compose Script Correctness",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "实现从左到右的函数组合",
@@ -79,26 +90,13 @@
               {
                 "name": "验证Python组合脚本的正确性",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_compose_right.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "compose_right.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

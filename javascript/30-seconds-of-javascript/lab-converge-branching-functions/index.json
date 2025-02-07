@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Converge Branching Functions",
+  "description": "In this lab, we will explore the concept of converge branching functions in JavaScript. The purpose of this lab is to help you understand how to create a higher-order function that accepts a list of branching functions and a converging function as arguments and returns a new function that applies each branching function to the arguments and passes the results to the converging function. This technique can be useful in many scenarios where you need to combine multiple functions to produce a final result.",
+  "meta": {
+    "title": "Converge Branching Functions in JavaScript",
+    "description": "Learn how to create a higher-order function that combines multiple branching functions to produce a final result in JavaScript.",
+    "keywords": "javascript, branching functions, javascript practice, javascript tutor, javascript practice online, higher order functions, javascript lab, converging functions, programming"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Converge Branching Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student's Node Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Converge Branching Functions",
-      "description": "In this lab, we will explore the concept of converge branching functions in JavaScript. The purpose of this lab is to help you understand how to create a higher-order function that accepts a list of branching functions and a converging function as arguments and returns a new function that applies each branching function to the arguments and passes the results to the converging function. This technique can be useful in many scenarios where you need to combine multiple functions to produce a final result.",
-      "meta": {
-        "title": "Converge Branching Functions in JavaScript",
-        "description": "Learn how to create a higher-order function that combines multiple branching functions to produce a final result in JavaScript.",
-        "keywords": "javascript, branching functions, javascript practice, javascript tutor, javascript practice online, higher order functions, javascript lab, converging functions, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Converge Branching Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student's Node Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "收敛分支函数",
@@ -77,24 +74,13 @@
               {
                 "name": "验证学生对Node的使用",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中输入'node'并回车，即可运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中输入'node'并回车，即可运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

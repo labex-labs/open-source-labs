@@ -1,10 +1,137 @@
 {
   "type": "lab",
+  "title": "Create Customizable Boxplots with Matplotlib",
+  "description": "Boxplot is a graphical representation of a group of data through their quartiles. It is used to show the distribution of data based on their five-number summary: minimum, first quartile, median, third quartile, and maximum. In this tutorial, we will learn how to create and customize a boxplot using Matplotlib library in Python.",
+  "meta": {
+    "title": "Boxplot Tutorial | Data Visualization | Python Matplotlib",
+    "description": "Learn how to create and customize boxplots using Python's Matplotlib library. Explore data distribution and five-number summary with this comprehensive tutorial.",
+    "keywords": "boxplot, data visualization, python, matplotlib, data distribution, five-number summary"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import libraries and generate data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Compute boxplot statistics",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/tuples"]
+      },
+      {
+        "title": "Customize boxplot statistics",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/lists"
+        ]
+      },
+      {
+        "title": "Create a basic boxplot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments"]
+      },
+      {
+        "title": "Toggle the display of different elements",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans", "python/comments", "python/tuples"]
+      },
+      {
+        "title": "Customize the display of different elements",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "bxp.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,127 +142,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create Customizable Boxplots with Matplotlib",
-      "description": "Boxplot is a graphical representation of a group of data through their quartiles. It is used to show the distribution of data based on their five-number summary: minimum, first quartile, median, third quartile, and maximum. In this tutorial, we will learn how to create and customize a boxplot using Matplotlib library in Python.",
-      "meta": {
-        "title": "Boxplot Tutorial | Data Visualization | Python Matplotlib",
-        "description": "Learn how to create and customize boxplots using Python's Matplotlib library. Explore data distribution and five-number summary with this comprehensive tutorial.",
-        "keywords": "boxplot, data visualization, python, matplotlib, data distribution, five-number summary"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import libraries and generate data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Compute boxplot statistics",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/tuples"]
-          },
-          {
-            "title": "Customize boxplot statistics",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Create a basic boxplot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments"]
-          },
-          {
-            "title": "Toggle the display of different elements",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans", "python/comments", "python/tuples"]
-          },
-          {
-            "title": "Customize the display of different elements",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib创建可定制的箱线图",
@@ -156,21 +162,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -182,8 +173,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/tuples"]
+            ]
           },
           {
             "title": "自定义箱线图统计数据",
@@ -194,11 +184,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lists"
             ]
           },
           {
@@ -210,8 +195,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments"]
+            ]
           },
           {
             "title": "切换不同元素的显示",
@@ -222,8 +206,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/booleans", "python/comments", "python/tuples"]
+            ]
           },
           {
             "title": "自定义不同元素的显示",
@@ -234,21 +217,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -257,16 +230,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "bxp.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

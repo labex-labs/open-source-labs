@@ -1,10 +1,72 @@
 {
   "type": "lab",
+  "title": "Group List Elements",
+  "description": "In Python, we can group the elements of a list based on a given function. This can be useful in many situations, such as when we want to group a list of words by their length or a list of numbers by their parity. In this challenge, you will be asked to write a function that groups the elements of a list based on a given function.",
+  "meta": {
+    "title": "Group List Elements in Python",
+    "description": "Learn how to group list elements in Python based on a given function.",
+    "keywords": "python, group, list, function, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Group List Elements",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Group By Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_group_by.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "group_by.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,57 +77,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Group List Elements",
-      "description": "In Python, we can group the elements of a list based on a given function. This can be useful in many situations, such as when we want to group a list of words by their length or a list of numbers by their parity. In this challenge, you will be asked to write a function that groups the elements of a list based on a given function.",
-      "meta": {
-        "title": "Group List Elements in Python",
-        "description": "Learn how to group list elements in Python based on a given function.",
-        "keywords": "python, group, list, function, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Group List Elements",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Group By Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "对列表元素进行分组",
@@ -84,31 +95,13 @@
               {
                 "name": "验证Python分组脚本的执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -117,21 +110,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_group_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "group_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

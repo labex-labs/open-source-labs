@@ -1,10 +1,109 @@
 {
   "type": "lab",
+  "title": "Creating an Interactive Histogram with Matplotlib",
+  "description": "In this lab, we will learn how to create an interactive histogram using Matplotlib. The interactivity is encoded in ECMAScript (JavaScript) and inserted in the SVG code in a post-processing step. The resulting histogram will have bars that can be hidden or shown by clicking on legend markers.",
+  "meta": {
+    "title": "Interactive Histogram Creation | Matplotlib | Data Visualization",
+    "description": "Learn how to create an interactive histogram using Matplotlib and JavaScript. Discover the power of data visualization and interactivity in this comprehensive tutorial.",
+    "keywords": "Matplotlib, Data Visualization, Interactive Histogram, JavaScript, ECMAScript"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create the Histogram, Legend, and Title",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/histograms",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/legend_config",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/sets",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add Interactivity to the Histogram",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/matplotlib_config",
+          "matplotlib/saving_figures",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/data_serialization",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "View the Interactive Histogram",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "svg-histogram-sgskip.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,99 +114,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating an Interactive Histogram with Matplotlib",
-      "description": "In this lab, we will learn how to create an interactive histogram using Matplotlib. The interactivity is encoded in ECMAScript (JavaScript) and inserted in the SVG code in a post-processing step. The resulting histogram will have bars that can be hidden or shown by clicking on legend markers.",
-      "meta": {
-        "title": "Interactive Histogram Creation | Matplotlib | Data Visualization",
-        "description": "Learn how to create an interactive histogram using Matplotlib and JavaScript. Discover the power of data visualization and interactivity in this comprehensive tutorial.",
-        "keywords": "Matplotlib, Data Visualization, Interactive Histogram, JavaScript, ECMAScript"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create the Histogram, Legend, and Title",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/histograms",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/legend_config",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add Interactivity to the Histogram",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/matplotlib_config",
-              "matplotlib/saving_figures",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/data_serialization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "View the Interactive Histogram",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib创建交互式直方图",
@@ -128,25 +134,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/histograms",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/legend_config",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -158,23 +145,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/matplotlib_config",
-              "matplotlib/saving_figures",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/data_serialization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           },
           {
@@ -186,13 +156,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -201,16 +169,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "svg-histogram-sgskip.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,75 @@
 {
   "type": "lab",
+  "title": "List Difference Based on Function",
+  "description": "In this lab, you will learn how to find the difference between two lists based on a specific function applied to each element in both lists using Python's built-in `set()` function and list comprehension.",
+  "meta": {
+    "title": "Python | List Difference | Function Application | Lab",
+    "description": "Learn how to find the difference between two lists based on a specific function applied to each element in Python. Enhance your programming skills with this informative tutorial.",
+    "keywords": "Python, List Difference, Function Application, Programming, Coding"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "List Difference Based on Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python 3 Test Difference By",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lambda_functions",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_difference_by.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "difference_by.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,60 +80,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "List Difference Based on Function",
-      "description": "In this lab, you will learn how to find the difference between two lists based on a specific function applied to each element in both lists using Python's built-in `set()` function and list comprehension.",
-      "meta": {
-        "title": "Python | List Difference | Function Application | Lab",
-        "description": "Learn how to find the difference between two lists based on a specific function applied to each element in Python. Enhance your programming skills with this informative tutorial.",
-        "keywords": "Python, List Difference, Function Application, Programming, Coding"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "List Difference Based on Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python 3 Test Difference By",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "基于函数的列表差异",
@@ -87,34 +98,13 @@
               {
                 "name": "验证Python 3测试差异",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -123,21 +113,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_difference_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "difference_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

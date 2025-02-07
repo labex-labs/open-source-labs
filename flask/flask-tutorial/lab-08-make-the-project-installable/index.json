@@ -1,10 +1,76 @@
 {
   "type": "lab",
+  "title": "Make Project Installable",
+  "description": "In this lab, we will learn how to make a Python Flask project installable. This will make the project deployable and manageable using standard Python tools. This process is beneficial as it allows the project to be installed in different environments, manage dependencies, and isolate test environments.",
+  "meta": {
+    "title": "Make Your Python Flask Project Installable",
+    "description": "Learn how to make your Python Flask project installable, making it deployable and manageable using standard Python tools.",
+    "keywords": "deployment, project, python, installable, flask"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Describe the Project",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object"]
+      },
+      {
+        "title": "Include Necessary Files",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object", "flask/incoming_request_data"]
+      },
+      {
+        "title": "Install the Project",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/command_line_interface",
+          "flask/incoming_request_data",
+          "flask/response_objects"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,78 +89,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Make Project Installable",
-      "description": "In this lab, we will learn how to make a Python Flask project installable. This will make the project deployable and manageable using standard Python tools. This process is beneficial as it allows the project to be installed in different environments, manage dependencies, and isolate test environments.",
-      "meta": {
-        "title": "Make Your Python Flask Project Installable",
-        "description": "Learn how to make your Python Flask project installable, making it deployable and manageable using standard Python tools.",
-        "keywords": "deployment, project, python, installable, flask"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Describe the Project",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/application_object"]
-          },
-          {
-            "title": "Include Necessary Files",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data"
-            ]
-          },
-          {
-            "title": "Install the Project",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "使项目可安装",
       "description": "在本实验中，我们将学习如何使一个Python Flask项目可安装。这将使该项目能够使用标准的Python工具进行部署和管理。此过程很有益，因为它允许项目在不同环境中安装、管理依赖项并隔离测试环境。",
@@ -112,12 +106,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/application_object"]
+            ]
           },
           {
             "title": "包含必要的文件",
@@ -126,14 +117,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data"
             ]
           },
           {
@@ -143,21 +128,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

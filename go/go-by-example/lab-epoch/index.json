@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Golang Unix Epoch Time Retrieval",
+  "description": "The Epoch lab is a Golang lab that aims to test your ability to get the number of seconds, milliseconds, or nanoseconds since the Unix epoch.",
+  "meta": {
+    "title": "Golang Epoch Lab: Mastering Time Calculations",
+    "description": "Explore the Golang Epoch lab and learn to calculate seconds, milliseconds, and nanoseconds since the Unix epoch. Enhance your time-related programming skills.",
+    "keywords": "Golang, Epoch, Unix time, time calculations, programming, tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Epoch",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Correct Execution of Epoch Go Program",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/epoch"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "epoch.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Golang Unix Epoch Time Retrieval",
-      "description": "The Epoch lab is a Golang lab that aims to test your ability to get the number of seconds, milliseconds, or nanoseconds since the Unix epoch.",
-      "meta": {
-        "title": "Golang Epoch Lab: Mastering Time Calculations",
-        "description": "Explore the Golang Epoch lab and learn to calculate seconds, milliseconds, and nanoseconds since the Unix epoch. Enhance your time-related programming skills.",
-        "keywords": "Golang, Epoch, Unix time, time calculations, programming, tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Epoch",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Correct Execution of Epoch Go Program",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/epoch"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言Unix纪元时间获取",
@@ -70,17 +76,13 @@
               {
                 "name": "验证纪元Go程序的正确执行",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/epoch"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "epoch.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

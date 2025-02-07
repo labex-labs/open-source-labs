@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Creating and Manipulating Go Maps",
+  "description": "In Go, maps are built-in associative data types that allow you to store key/value pairs. This lab will test your ability to create, manipulate, and delete key/value pairs in a map.",
+  "meta": {
+    "title": "Go Programming | Maps | Associative Data Types",
+    "description": "Learn how to create, manipulate, and delete key-value pairs in Go's built-in map data structure. Explore the power of associative arrays in Go programming.",
+    "keywords": "Go, Programming, Maps, Associative Data Types, Key-Value Pairs, Data Structures"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Maps",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Maps Correct Implementation",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/maps"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "maps.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating and Manipulating Go Maps",
-      "description": "In Go, maps are built-in associative data types that allow you to store key/value pairs. This lab will test your ability to create, manipulate, and delete key/value pairs in a map.",
-      "meta": {
-        "title": "Go Programming | Maps | Associative Data Types",
-        "description": "Learn how to create, manipulate, and delete key-value pairs in Go's built-in map data structure. Explore the power of associative arrays in Go programming.",
-        "keywords": "Go, Programming, Maps, Associative Data Types, Key-Value Pairs, Data Structures"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Maps",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Maps Correct Implementation",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/maps"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建和操作Go映射",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go映射的正确实现",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/maps"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "maps.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

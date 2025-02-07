@@ -1,10 +1,104 @@
 {
   "type": "lab",
+  "title": "Decision Tree Analysis",
+  "description": "The decision tree classifier is a popular machine learning algorithm used for classification and regression problems. It is a tree-based model that partitions the feature space into a set of non-overlapping regions and predicts the target value for each region. In this lab, we will learn how to analyse the decision tree structure to gain further insight into the relation between the features and the target to predict.",
+  "meta": {
+    "title": "Mastering Decision Tree Analysis",
+    "description": "Explore the power of decision tree classifiers for insightful data analysis and prediction.",
+    "keywords": "machine learning, decision tree, classification, prediction, scikit-learn, data analysis, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Train a Decision Tree Classifier",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/model_selection",
+          "sklearn/tree"
+        ]
+      },
+      {
+        "title": "Analyze the Binary Tree Structure",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Visualize the Decision Tree",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Retrieve Decision Path and Leaf Nodes",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Determine Common Nodes for a Group of Samples",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-unveil-tree-structure.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,94 +109,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Decision Tree Analysis",
-      "description": "The decision tree classifier is a popular machine learning algorithm used for classification and regression problems. It is a tree-based model that partitions the feature space into a set of non-overlapping regions and predicts the target value for each region. In this lab, we will learn how to analyse the decision tree structure to gain further insight into the relation between the features and the target to predict.",
-      "meta": {
-        "title": "Mastering Decision Tree Analysis",
-        "description": "Explore the power of decision tree classifiers for insightful data analysis and prediction.",
-        "keywords": "machine learning, decision tree, classification, prediction, scikit-learn, data analysis, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Train a Decision Tree Classifier",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/tree"
-            ]
-          },
-          {
-            "title": "Analyze the Binary Tree Structure",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Visualize the Decision Tree",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Retrieve Decision Path and Leaf Nodes",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Determine Common Nodes for a Group of Samples",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "决策树分析",
@@ -123,12 +129,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/tree"
             ]
           },
           {
@@ -140,8 +140,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "可视化决策树",
@@ -152,8 +151,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "获取决策路径和叶节点",
@@ -164,8 +162,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "确定一组样本的公共节点",
@@ -176,13 +173,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -191,16 +186,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-unveil-tree-structure.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,107 @@
 {
   "type": "lab",
+  "title": "Matplotlib Axisel Position",
+  "description": "In this lab, we will learn how to set the position of axis labels and colorbar labels in Matplotlib. We will use the set_xlabel, set_ylabel, and colorbar methods to set the position of the labels.",
+  "meta": {
+    "title": "Matplotlib Axis Position Customization",
+    "description": "Learn how to set the position of axis labels and colorbar labels in Matplotlib.",
+    "keywords": "position, python playground, axis, matplotlib, label, python, colorbar"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Matplotlib and create a scatter plot",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/scatter_plots",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Set the position of the y-axis label",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Set the position of the x-axis label",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Set the position of the colorbar label",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Display the plot",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "axis-labels-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,97 +112,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Axisel Position",
-      "description": "In this lab, we will learn how to set the position of axis labels and colorbar labels in Matplotlib. We will use the set_xlabel, set_ylabel, and colorbar methods to set the position of the labels.",
-      "meta": {
-        "title": "Matplotlib Axis Position Customization",
-        "description": "Learn how to set the position of axis labels and colorbar labels in Matplotlib.",
-        "keywords": "position, python playground, axis, matplotlib, label, python, colorbar"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Matplotlib and create a scatter plot",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/scatter_plots",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Set the position of the y-axis label",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Set the position of the x-axis label",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Set the position of the colorbar label",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Display the plot",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib坐标轴位置",
@@ -126,15 +132,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/scatter_plots",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -146,8 +143,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "设置x轴标签的位置",
@@ -158,8 +154,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "设置颜色条标签的位置",
@@ -170,8 +165,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "显示图表",
@@ -182,13 +176,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -197,16 +189,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "axis-labels-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

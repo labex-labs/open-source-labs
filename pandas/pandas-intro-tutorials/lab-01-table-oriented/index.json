@@ -1,10 +1,103 @@
 {
   "type": "lab",
+  "title": "Working with Pandas",
+  "description": "Pandas is a powerful data manipulation tool developed by Python. It's often used in data analysis and cleaning because it's flexible and easy to use. In this lab, we will learn how to use Pandas to perform basic operations like loading data, creating data frames, accessing data, and performing simple statistics.",
+  "meta": {
+    "title": "Mastering Data Analysis with Pandas",
+    "description": "Dive into the world of data manipulation with Pandas, a powerful Python library for data analysis and cleaning.",
+    "keywords": "pandas, python, data manipulation, data cleaning, data analysis"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the Pandas Package",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/data_analysis",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create a DataFrame",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/select_columns",
+          "python/comments",
+          "python/dictionaries",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Select a Column",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["pandas/select_columns", "python/comments", "python/lists"]
+      },
+      {
+        "title": "Perform Basic Statistics",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/select_columns",
+          "python/build_in_functions",
+          "python/comments",
+          "python/lists"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "01-table-oriented.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,97 +108,6 @@
     "repo": "https://github.com/pandas-dev/pandas"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Working with Pandas",
-      "description": "Pandas is a powerful data manipulation tool developed by Python. It's often used in data analysis and cleaning because it's flexible and easy to use. In this lab, we will learn how to use Pandas to perform basic operations like loading data, creating data frames, accessing data, and performing simple statistics.",
-      "meta": {
-        "title": "Mastering Data Analysis with Pandas",
-        "description": "Dive into the world of data manipulation with Pandas, a powerful Python library for data analysis and cleaning.",
-        "keywords": "pandas, python, data manipulation, data cleaning, data analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the Pandas Package",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create a DataFrame",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/select_columns",
-              "python/comments",
-              "python/dictionaries",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Select a Column",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/select_columns",
-              "python/comments",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Perform Basic Statistics",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/select_columns",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 Pandas 进行数据处理",
@@ -126,12 +128,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -143,13 +139,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/select_columns",
-              "python/comments",
-              "python/dictionaries",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -161,11 +150,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/select_columns",
-              "python/comments",
-              "python/lists"
             ]
           },
           {
@@ -177,18 +161,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/select_columns",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -197,16 +174,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "01-table-oriented.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

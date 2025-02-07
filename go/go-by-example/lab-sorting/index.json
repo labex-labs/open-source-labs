@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Sorting Built-in Types in Go",
+  "description": "The Go programming language provides a built-in package named sort that implements sorting for builtins and user-defined types. In this lab, we will focus on sorting for builtins.",
+  "meta": {
+    "title": "Go Programming | Sorting Strings and Integers | Lab",
+    "description": "Learn how to use Go's built-in sort package to sort slices of strings and integers efficiently. Explore the sorting functions and techniques for maintaining sorted data.",
+    "keywords": "Go programming, sorting, strings, integers, sort package, data structures"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Sorting",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Sorted Strings and Integers Output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/sorting"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "sorting.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Sorting Built-in Types in Go",
-      "description": "The Go programming language provides a built-in package named sort that implements sorting for builtins and user-defined types. In this lab, we will focus on sorting for builtins.",
-      "meta": {
-        "title": "Go Programming | Sorting Strings and Integers | Lab",
-        "description": "Learn how to use Go's built-in sort package to sort slices of strings and integers efficiently. Explore the sorting functions and techniques for maintaining sorted data.",
-        "keywords": "Go programming, sorting, strings, integers, sort package, data structures"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Sorting",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Sorted Strings and Integers Output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/sorting"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Go 中对内置类型进行排序",
@@ -70,17 +76,13 @@
               {
                 "name": "验证已排序的字符串和整数输出",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/sorting"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "sorting.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

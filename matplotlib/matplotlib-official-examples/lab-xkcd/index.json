@@ -1,10 +1,98 @@
 {
   "type": "lab",
+  "title": "Matplotlib Visualization with XKCD Style",
+  "description": "Matplotlib is a data visualization library that provides various tools to create 2D and 3D plots. It is built on top of the NumPy library and its main purpose is to visualize data in a simple and effective way. In this tutorial, we will learn how to create two different types of plots using the xkcd style from the XKCD webcomic.",
+  "meta": {
+    "title": "Matplotlib | Data Visualization | Python Tutorials",
+    "description": "Learn how to create 2D and 3D plots using the Matplotlib data visualization library in Python, with a focus on the XKCD style.",
+    "keywords": "Matplotlib, Data Visualization, Python Tutorials, XKCD, NumPy"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Importing Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Creating an XKCD-style Plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/text_annotations",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Creating a Bar Chart with XKCD Style",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/bar_charts",
+          "python/booleans",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "xkcd.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,88 +103,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Visualization with XKCD Style",
-      "description": "Matplotlib is a data visualization library that provides various tools to create 2D and 3D plots. It is built on top of the NumPy library and its main purpose is to visualize data in a simple and effective way. In this tutorial, we will learn how to create two different types of plots using the xkcd style from the XKCD webcomic.",
-      "meta": {
-        "title": "Matplotlib | Data Visualization | Python Tutorials",
-        "description": "Learn how to create 2D and 3D plots using the Matplotlib data visualization library in Python, with a focus on the XKCD style.",
-        "keywords": "Matplotlib, Data Visualization, Python Tutorials, XKCD, NumPy"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importing Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Creating an XKCD-style Plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Creating a Bar Chart with XKCD Style",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/booleans",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 XKCD 风格的 Matplotlib 可视化",
@@ -117,13 +123,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -135,18 +134,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -158,19 +145,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/booleans",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -179,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "xkcd.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

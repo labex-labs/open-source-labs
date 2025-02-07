@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Deferred Function Execution in Go",
+  "description": "The defer statement is used to delay the execution of a function until the surrounding function returns. It is often used to ensure that some cleanup is performed after a function completes, regardless of the path taken to get there.",
+  "meta": {
+    "title": "Defer in Go Programming | Cleanup Execution",
+    "description": "Learn how to use the 'defer' statement in Go programming to ensure cleanup tasks are performed after a function completes, regardless of the execution path.",
+    "keywords": "Go programming, defer statement, cleanup, file management, error handling"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Defer",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify File Closed After Writing",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/defer"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "defer.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Deferred Function Execution in Go",
-      "description": "The defer statement is used to delay the execution of a function until the surrounding function returns. It is often used to ensure that some cleanup is performed after a function completes, regardless of the path taken to get there.",
-      "meta": {
-        "title": "Defer in Go Programming | Cleanup Execution",
-        "description": "Learn how to use the 'defer' statement in Go programming to ensure cleanup tasks are performed after a function completes, regardless of the execution path.",
-        "keywords": "Go programming, defer statement, cleanup, file management, error handling"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Defer",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify File Closed After Writing",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/defer"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go 语言中的延迟函数执行",
@@ -70,17 +76,13 @@
               {
                 "name": "验证写入后文件是否关闭",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/defer"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "defer.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

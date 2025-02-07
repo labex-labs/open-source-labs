@@ -1,10 +1,90 @@
 {
   "type": "lab",
+  "title": "Scikit-Learn Classifier Comparison",
+  "description": "In this lab, we will compare several classifiers in Scikit-Learn on synthetic datasets. The purpose of this lab is to illustrate the nature of decision boundaries of different classifiers. We will preprocess the datasets, split them into training and test parts, and plot the datasets. We will then iterate over classifiers, fit the classifiers on the training data, plot the decision boundaries, and plot the testing data. Finally, we will display the classification accuracy on the test set.",
+  "meta": {
+    "title": "Comparing Classifiers in Scikit-Learn | Machine Learning Tutorials",
+    "description": "Explore different classification algorithms and their decision boundaries on synthetic datasets using Scikit-Learn in this comprehensive programming tutorial.",
+    "keywords": "Scikit-Learn, Machine Learning, Classification, Decision Boundaries, Synthetic Datasets"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/discriminant_analysis",
+          "sklearn/ensemble",
+          "sklearn/gaussian_process",
+          "sklearn/inspection",
+          "sklearn/model_selection",
+          "sklearn/naive_bayes",
+          "sklearn/neighbors",
+          "sklearn/neural_network",
+          "sklearn/pipeline",
+          "sklearn/preprocessing",
+          "sklearn/svm",
+          "sklearn/tree"
+        ]
+      },
+      {
+        "title": "Prepare the datasets",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Compare classifiers",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-classifier-comparison.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,80 +95,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Scikit-Learn Classifier Comparison",
-      "description": "In this lab, we will compare several classifiers in Scikit-Learn on synthetic datasets. The purpose of this lab is to illustrate the nature of decision boundaries of different classifiers. We will preprocess the datasets, split them into training and test parts, and plot the datasets. We will then iterate over classifiers, fit the classifiers on the training data, plot the decision boundaries, and plot the testing data. Finally, we will display the classification accuracy on the test set.",
-      "meta": {
-        "title": "Comparing Classifiers in Scikit-Learn | Machine Learning Tutorials",
-        "description": "Explore different classification algorithms and their decision boundaries on synthetic datasets using Scikit-Learn in this comprehensive programming tutorial.",
-        "keywords": "Scikit-Learn, Machine Learning, Classification, Decision Boundaries, Synthetic Datasets"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/discriminant_analysis",
-              "sklearn/ensemble",
-              "sklearn/gaussian_process",
-              "sklearn/inspection",
-              "sklearn/model_selection",
-              "sklearn/naive_bayes",
-              "sklearn/neighbors",
-              "sklearn/neural_network",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm",
-              "sklearn/tree"
-            ]
-          },
-          {
-            "title": "Prepare the datasets",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Compare classifiers",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Scikit - 学习分类器比较",
@@ -109,22 +115,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/discriminant_analysis",
-              "sklearn/ensemble",
-              "sklearn/gaussian_process",
-              "sklearn/inspection",
-              "sklearn/model_selection",
-              "sklearn/naive_bayes",
-              "sklearn/neighbors",
-              "sklearn/neural_network",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm",
-              "sklearn/tree"
             ]
           },
           {
@@ -136,8 +126,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "比较分类器",
@@ -148,13 +137,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -163,16 +150,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-classifier-comparison.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

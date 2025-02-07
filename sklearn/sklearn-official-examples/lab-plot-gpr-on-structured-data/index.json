@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Gaussian Processes on Discrete Data Structures",
+  "description": "Gaussian processes are a popular tool in machine learning for regression and classification tasks. However, they typically require data to be in fixed-length feature vector form, which can be limiting in certain applications. In this lab, we will explore how Gaussian processes can be used on variable-length sequences, such as gene sequences, by defining a kernel function that operates directly on these structures. We will use scikit-learn to implement our Gaussian process models.",
+  "meta": {
+    "title": "Gaussian Processes for Variable-Length Sequences | Machine Learning",
+    "description": "Explore how Gaussian processes can be used on variable-length sequences, such as gene sequences, by defining a kernel function that operates directly on these structures.",
+    "keywords": "Gaussian processes, variable-length sequences, regression, classification, kernel function, machine learning"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Define SequenceKernel",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/base", "sklearn/gaussian_process"]
+      },
+      {
+        "title": "Visualize Sequence Similarity Matrix",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Perform Regression on Sequences",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Perform Classification on Sequences",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-gpr-on-structured-data.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Gaussian Processes on Discrete Data Structures",
-      "description": "Gaussian processes are a popular tool in machine learning for regression and classification tasks. However, they typically require data to be in fixed-length feature vector form, which can be limiting in certain applications. In this lab, we will explore how Gaussian processes can be used on variable-length sequences, such as gene sequences, by defining a kernel function that operates directly on these structures. We will use scikit-learn to implement our Gaussian process models.",
-      "meta": {
-        "title": "Gaussian Processes for Variable-Length Sequences | Machine Learning",
-        "description": "Explore how Gaussian processes can be used on variable-length sequences, such as gene sequences, by defining a kernel function that operates directly on these structures.",
-        "keywords": "Gaussian processes, variable-length sequences, regression, classification, kernel function, machine learning"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Define SequenceKernel",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/base", "sklearn/gaussian_process"]
-          },
-          {
-            "title": "Visualize Sequence Similarity Matrix",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Perform Regression on Sequences",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Perform Classification on Sequences",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "离散数据结构上的高斯过程",
@@ -106,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/base", "sklearn/gaussian_process"]
+            ]
           },
           {
             "title": "可视化序列相似度矩阵",
@@ -118,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "对序列执行回归",
@@ -130,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "对序列进行分类",
@@ -142,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-gpr-on-structured-data.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

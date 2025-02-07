@@ -1,10 +1,92 @@
 {
   "type": "lab",
+  "title": "Detecting Outliers in Wine Data",
+  "description": "In this lab, we will perform outlier detection on a real dataset using scikit-learn. Outlier detection is the process of identifying data points that significantly differ from the majority of the data. Outliers can be caused by measurement errors, data corruption, or simply represent a rare event. Outlier detection is important in many applications, such as fraud detection, network intrusion detection, and medical diagnosis.",
+  "meta": {
+    "title": "Outlier Detection in Wine Data",
+    "description": "Explore outlier detection techniques on a real-world wine dataset using scikit-learn.",
+    "keywords": "machine learning, wine data, scikit learn, scikit-learn, outlier detection, data analysis, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import libraries and load dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/covariance",
+          "sklearn/datasets",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Define classifiers and colors",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Outlier detection on two-dimensional data",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Outlier detection on complex data",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-outlier-detection-wine.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,82 +97,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Detecting Outliers in Wine Data",
-      "description": "In this lab, we will perform outlier detection on a real dataset using scikit-learn. Outlier detection is the process of identifying data points that significantly differ from the majority of the data. Outliers can be caused by measurement errors, data corruption, or simply represent a rare event. Outlier detection is important in many applications, such as fraud detection, network intrusion detection, and medical diagnosis.",
-      "meta": {
-        "title": "Outlier Detection in Wine Data",
-        "description": "Explore outlier detection techniques on a real-world wine dataset using scikit-learn.",
-        "keywords": "machine learning, wine data, scikit learn, scikit-learn, outlier detection, data analysis, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import libraries and load dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/covariance",
-              "sklearn/datasets",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Define classifiers and colors",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Outlier detection on two-dimensional data",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Outlier detection on complex data",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "检测葡萄酒数据中的异常值",
@@ -111,12 +117,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/covariance",
-              "sklearn/datasets",
-              "sklearn/svm"
             ]
           },
           {
@@ -128,8 +128,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "二维数据的异常值检测",
@@ -140,8 +139,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "复杂数据的异常值检测",
@@ -152,13 +150,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -167,16 +163,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-outlier-detection-wine.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

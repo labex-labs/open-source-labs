@@ -1,10 +1,137 @@
 {
   "type": "lab",
+  "title": "Animated Histogram Using Matplotlib",
+  "description": "In this lab, you will learn how to create an animated histogram using Matplotlib in Python. The animated histogram will simulate new data coming in and update the heights of rectangles with the new data.",
+  "meta": {
+    "title": "Animated Histogram Creation | Python Matplotlib Tutorial",
+    "description": "Learn how to create an animated histogram using Matplotlib in Python, simulating new data and updating the chart in real-time.",
+    "keywords": "Python, Matplotlib, Animated Histogram, Data Visualization, Programming Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/animation_creation",
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Set Random Seed and Bins",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/for_loops",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create Data and Histogram",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/histograms",
+          "python/comments",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Create Animation Function",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/function_definition",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create Bar Container and Animation",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/animation_creation",
+          "matplotlib/histograms",
+          "python/booleans",
+          "python/comments",
+          "python/data_collections",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "animated-histogram.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,127 +142,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Animated Histogram Using Matplotlib",
-      "description": "In this lab, you will learn how to create an animated histogram using Matplotlib in Python. The animated histogram will simulate new data coming in and update the heights of rectangles with the new data.",
-      "meta": {
-        "title": "Animated Histogram Creation | Python Matplotlib Tutorial",
-        "description": "Learn how to create an animated histogram using Matplotlib in Python, simulating new data and updating the chart in real-time.",
-        "keywords": "Python, Matplotlib, Animated Histogram, Data Visualization, Programming Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/animation_creation",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Set Random Seed and Bins",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create Data and Histogram",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/histograms",
-              "python/comments",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create Animation Function",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create Bar Container and Animation",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/animation_creation",
-              "matplotlib/histograms",
-              "python/booleans",
-              "python/comments",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib创建动画直方图",
@@ -156,14 +162,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/animation_creation",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -175,13 +173,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -193,15 +184,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/histograms",
-              "python/comments",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -213,15 +195,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -233,22 +206,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/animation_creation",
-              "matplotlib/histograms",
-              "python/booleans",
-              "python/comments",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -257,16 +219,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "animated-histogram.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

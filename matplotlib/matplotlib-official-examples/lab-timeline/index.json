@@ -1,10 +1,153 @@
 {
   "type": "lab",
+  "title": "Creating Matplotlib Timeline Visualizations",
+  "description": "In this lab, you will learn how to create a simple timeline using Matplotlib release dates. A timeline is a graphical representation of a sequence of events in chronological order. Timelines can be created with a collection of dates and text. In this example, we will show how to create a simple timeline using the dates for recent releases of Matplotlib.",
+  "meta": {
+    "title": "Create Timeline with Matplotlib Releases | Data Visualization",
+    "description": "Learn how to create a simple timeline using Matplotlib release dates in this programming tutorial. Explore data visualization techniques with Python.",
+    "keywords": "Matplotlib, Timeline, Data Visualization, Python, Programming Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Fetching Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/data_serialization",
+          "python/data_visualization",
+          "python/date_time",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Creating a Stem Plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/text_annotations",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/for_loops",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Formatting the Plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/comments",
+          "python/lists",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Putting it all Together",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/line_plots",
+          "matplotlib/line_styles_colors",
+          "matplotlib/text_annotations",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/data_serialization",
+          "python/data_visualization",
+          "python/date_time",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "timeline.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,143 +158,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Matplotlib Timeline Visualizations",
-      "description": "In this lab, you will learn how to create a simple timeline using Matplotlib release dates. A timeline is a graphical representation of a sequence of events in chronological order. Timelines can be created with a collection of dates and text. In this example, we will show how to create a simple timeline using the dates for recent releases of Matplotlib.",
-      "meta": {
-        "title": "Create Timeline with Matplotlib Releases | Data Visualization",
-        "description": "Learn how to create a simple timeline using Matplotlib release dates in this programming tutorial. Explore data visualization techniques with Python.",
-        "keywords": "Matplotlib, Timeline, Data Visualization, Python, Programming Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Fetching Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/data_serialization",
-              "python/data_visualization",
-              "python/date_time",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Creating a Stem Plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Formatting the Plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Putting it all Together",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "matplotlib/text_annotations",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/data_serialization",
-              "python/data_visualization",
-              "python/date_time",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib创建时间线可视化",
@@ -172,26 +178,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/data_serialization",
-              "python/data_visualization",
-              "python/date_time",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           },
           {
@@ -203,21 +189,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -229,13 +200,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/with_statement"
             ]
           },
           {
@@ -247,40 +211,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "matplotlib/text_annotations",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/data_serialization",
-              "python/data_visualization",
-              "python/date_time",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -289,16 +224,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "timeline.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

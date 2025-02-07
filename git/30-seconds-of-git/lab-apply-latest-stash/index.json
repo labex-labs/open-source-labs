@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Apply the Latest Stash",
+  "description": "In Git, a stash is a way to save changes that are not yet ready to be committed. It allows you to temporarily save your work and switch to another branch or commit without losing any changes. When you're ready to continue working on your changes, you can apply the stash to your working directory. In this lab, you will learn how to apply the latest stash to your Git repository.",
+  "meta": {
+    "title": "Mastering Git Stash",
+    "description": "Learn how to effectively apply the latest stash in your Git repository and manage your code changes seamlessly.",
+    "keywords": "version control, git labs, workflow, stash, git, git playground, code management"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Apply the Latest Stash",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful application",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/stash"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Apply the Latest Stash",
-      "description": "In Git, a stash is a way to save changes that are not yet ready to be committed. It allows you to temporarily save your work and switch to another branch or commit without losing any changes. When you're ready to continue working on your changes, you can apply the stash to your working directory. In this lab, you will learn how to apply the latest stash to your Git repository.",
-      "meta": {
-        "title": "Mastering Git Stash",
-        "description": "Learn how to effectively apply the latest stash in your Git repository and manage your code changes seamlessly.",
-        "keywords": "version control, git labs, workflow, stash, git, git playground, code management"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Apply the Latest Stash",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful application",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/stash"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "应用最新贮藏",
@@ -70,17 +67,13 @@
               {
                 "name": "验证应用是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/stash"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

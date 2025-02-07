@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Index Array Based on Function",
+  "description": "In this lab, we will explore the indexBy function in JavaScript, which creates an object from an array based on a provided function. The purpose of this lab is to help you understand how to use Array.prototype.reduce() and how to apply a function to each value of an array to produce a key-value pair. By the end of this lab, you will be able to use indexBy to map values of an array to keys and create a new object.",
+  "meta": {
+    "title": "JavaScript Indexing Function | Array Mapping",
+    "description": "Learn how to use the indexBy function in JavaScript to create an object from an array based on a provided function. Explore the power of Array.prototype.reduce() and key-value mapping.",
+    "keywords": "JavaScript, indexBy, Array.prototype.reduce, object mapping, key-value pair"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Index Array Based on Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Index Array Based on Function",
-      "description": "In this lab, we will explore the indexBy function in JavaScript, which creates an object from an array based on a provided function. The purpose of this lab is to help you understand how to use Array.prototype.reduce() and how to apply a function to each value of an array to produce a key-value pair. By the end of this lab, you will be able to use indexBy to map values of an array to keys and create a new object.",
-      "meta": {
-        "title": "JavaScript Indexing Function | Array Mapping",
-        "description": "Learn how to use the indexBy function in JavaScript to create an object from an array based on a provided function. Explore the power of Array.prototype.reduce() and key-value mapping.",
-        "keywords": "JavaScript, indexBy, Array.prototype.reduce, object mapping, key-value pair"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Index Array Based on Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "基于函数为数组建立索引",
@@ -76,23 +73,13 @@
               {
                 "name": "验证 Node 命令历史记录",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键可以运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键可以运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

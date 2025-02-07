@@ -1,10 +1,163 @@
 {
   "type": "lab",
+  "title": "Concise Introduction to Collections Module",
+  "description": "The collections module provides a number of useful objects for data handling. This part briefly introduces some of these features.",
+  "meta": {
+    "title": "Python Collections Module | Data Handling Essentials",
+    "description": "Explore the powerful features of the Python collections module for efficient data handling and tabulation. Discover practical examples and insights.",
+    "keywords": "Python, collections module, data handling, data tabulation, data structures"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Example: Counting Things",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of '[' in Python History",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/lists", "python/tuples"]
+      },
+      {
+        "title": "Counters",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'Counter' in Python History",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/standard_libraries",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Example: One-Many Mappings",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Appending to Python History with defaultdict",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/data_collections",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Example: Keeping a History",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/standard_libraries",
+          "python/using_packages",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Exercise 2.18: Tabulating with Counters",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Counter and most_common in Python History",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Commentary: collections module",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio2.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,148 +168,6 @@
     "repo": "https://github.com/dabeaz-course/practical-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Concise Introduction to Collections Module",
-      "description": "The collections module provides a number of useful objects for data handling. This part briefly introduces some of these features.",
-      "meta": {
-        "title": "Python Collections Module | Data Handling Essentials",
-        "description": "Explore the powerful features of the Python collections module for efficient data handling and tabulation. Discover practical examples and insights.",
-        "keywords": "Python, collections module, data handling, data tabulation, data structures"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Example: Counting Things",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of '[' in Python History",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/lists", "python/tuples"]
-          },
-          {
-            "title": "Counters",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'Counter' in Python History",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Example: One-Many Mappings",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Appending to Python History with defaultdict",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Example: Keeping a History",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/using_packages",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Exercise 2.18: Tabulating with Counters",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Counter and most_common in Python History",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Commentary: collections module",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "集合模块简明介绍",
@@ -175,12 +186,9 @@
               {
                 "name": "验证 Python 历史记录中是否存在 '['",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": ["python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "计数器",
@@ -189,18 +197,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 'Counter'",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/using_packages"
             ]
           },
           {
@@ -210,21 +208,8 @@
               {
                 "name": "验证使用 defaultdict 追加到 Python 历史记录",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           },
           {
@@ -234,19 +219,8 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/using_packages",
-              "python/with_statement"
             ]
           },
           {
@@ -256,21 +230,8 @@
               {
                 "name": "验证 Python 历史记录中的 Counter 和 most_common",
                 "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -280,17 +241,13 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -299,21 +256,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio2.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

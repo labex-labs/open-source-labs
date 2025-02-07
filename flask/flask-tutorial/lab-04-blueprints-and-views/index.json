@@ -1,10 +1,145 @@
 {
   "type": "lab",
+  "title": "Modular Flask Application with Authentication",
+  "description": "In this lab, we will walk through how to create and use Flask blueprints to structure your application using views. Flask blueprints allow you to group related views, code, and resources together making your application modular and scalable. We will create a simple application which will include user authentication and blog posts functionality.",
+  "meta": {
+    "title": "Flask Blueprints | Web Development Tutorial",
+    "description": "Learn how to create and use Flask blueprints to structure your web application, including user authentication and blog post functionality.",
+    "keywords": "Flask, Blueprints, Web Development, Python, User Authentication, Blog Posts"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Blueprint",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/incoming_request_data",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Register the Blueprint",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/command_line_interface",
+          "flask/incoming_request_data",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Implement Registration View",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/class_based_views",
+          "flask/incoming_request_data",
+          "flask/json_support"
+        ]
+      },
+      {
+        "title": "Implement Login View",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/class_based_views",
+          "flask/incoming_request_data",
+          "flask/session_interface"
+        ]
+      },
+      {
+        "title": "Implement Logout View",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/incoming_request_data",
+          "flask/session_interface"
+        ]
+      },
+      {
+        "title": "Implement Login Required Decorator",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/incoming_request_data",
+          "flask/useful_internals"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,144 +158,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Modular Flask Application with Authentication",
-      "description": "In this lab, we will walk through how to create and use Flask blueprints to structure your application using views. Flask blueprints allow you to group related views, code, and resources together making your application modular and scalable. We will create a simple application which will include user authentication and blog posts functionality.",
-      "meta": {
-        "title": "Flask Blueprints | Web Development Tutorial",
-        "description": "Learn how to create and use Flask blueprints to structure your web application, including user authentication and blog post functionality.",
-        "keywords": "Flask, Blueprints, Web Development, Python, User Authentication, Blog Posts"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create a Blueprint",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Register the Blueprint",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Implement Registration View",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/class_based_views",
-              "flask/incoming_request_data",
-              "flask/json_support"
-            ]
-          },
-          {
-            "title": "Implement Login View",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/class_based_views",
-              "flask/incoming_request_data",
-              "flask/session_interface"
-            ]
-          },
-          {
-            "title": "Implement Logout View",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/incoming_request_data",
-              "flask/session_interface"
-            ]
-          },
-          {
-            "title": "Implement Login Required Decorator",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "带有认证功能的模块化Flask应用程序",
       "description": "在本实验中，我们将逐步介绍如何创建和使用Flask蓝图，通过视图来构建你的应用程序。Flask蓝图允许你将相关的视图、代码和资源组合在一起，使你的应用程序具有模块化和可扩展性。我们将创建一个简单的应用程序，其中包括用户认证和博客文章功能。",
@@ -178,15 +175,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
             ]
           },
           {
@@ -196,17 +186,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
             ]
           },
           {
@@ -216,17 +197,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/class_based_views",
-              "flask/incoming_request_data",
-              "flask/json_support"
             ]
           },
           {
@@ -236,17 +208,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/class_based_views",
-              "flask/incoming_request_data",
-              "flask/session_interface"
             ]
           },
           {
@@ -256,16 +219,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/incoming_request_data",
-              "flask/session_interface"
             ]
           },
           {
@@ -275,21 +230,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

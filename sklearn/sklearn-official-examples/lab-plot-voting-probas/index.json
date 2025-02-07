@@ -1,10 +1,104 @@
 {
   "type": "lab",
+  "title": "Class Probabilities with VotingClassifier",
+  "description": "In this lab, we will learn how to plot class probabilities calculated by the VotingClassifier in Scikit-Learn. We will use three different classifiers, including LogisticRegression, GaussianNB, and RandomForestClassifier, and average their predicted probabilities using the VotingClassifier. We will then visualize the probability weighting by fitting each classifier on the training set and plot the predicted class probabilities for the first sample in the dataset.",
+  "meta": {
+    "title": "Plotting Class Probabilities with Voting Classifier | Scikit-Learn Tutorial",
+    "description": "Learn how to plot class probabilities calculated by the VotingClassifier in Scikit-Learn. Explore the combination of LogisticRegression, GaussianNB, and RandomForestClassifier.",
+    "keywords": "Scikit-Learn, VotingClassifier, LogisticRegression, GaussianNB, RandomForestClassifier, Class Probabilities, Data Visualization"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Initialize the Classifiers and the Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/ensemble",
+          "sklearn/linear_model",
+          "sklearn/naive_bayes"
+        ]
+      },
+      {
+        "title": "Initialize the VotingClassifier",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Predict Class Probabilities for all Classifiers",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Get Class Probabilities for the First Sample in the Dataset",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot the Class Probabilities",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-voting-probas.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,94 +109,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Class Probabilities with VotingClassifier",
-      "description": "In this lab, we will learn how to plot class probabilities calculated by the VotingClassifier in Scikit-Learn. We will use three different classifiers, including LogisticRegression, GaussianNB, and RandomForestClassifier, and average their predicted probabilities using the VotingClassifier. We will then visualize the probability weighting by fitting each classifier on the training set and plot the predicted class probabilities for the first sample in the dataset.",
-      "meta": {
-        "title": "Plotting Class Probabilities with Voting Classifier | Scikit-Learn Tutorial",
-        "description": "Learn how to plot class probabilities calculated by the VotingClassifier in Scikit-Learn. Explore the combination of LogisticRegression, GaussianNB, and RandomForestClassifier.",
-        "keywords": "Scikit-Learn, VotingClassifier, LogisticRegression, GaussianNB, RandomForestClassifier, Class Probabilities, Data Visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Initialize the Classifiers and the Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/ensemble",
-              "sklearn/linear_model",
-              "sklearn/naive_bayes"
-            ]
-          },
-          {
-            "title": "Initialize the VotingClassifier",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Predict Class Probabilities for all Classifiers",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Get Class Probabilities for the First Sample in the Dataset",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot the Class Probabilities",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用投票分类器的类别概率",
@@ -123,12 +129,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/ensemble",
-              "sklearn/linear_model",
-              "sklearn/naive_bayes"
             ]
           },
           {
@@ -140,8 +140,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "预测所有分类器的类别概率",
@@ -152,8 +151,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "获取数据集中第一个样本的类别概率",
@@ -164,8 +162,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制类别概率",
@@ -176,13 +173,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -191,16 +186,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-voting-probas.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

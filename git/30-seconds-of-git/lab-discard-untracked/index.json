@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Discard Untracked Changes",
+  "description": "When working with Git, it's common to have untracked changes in your working directory. These changes are files that Git is not currently tracking. Sometimes, you may want to discard these changes and start fresh. In this lab, you will learn how to discard all untracked changes to the current branch.",
+  "meta": {
+    "title": "Discard Untracked Changes in Git",
+    "description": "Learn how to discard all untracked changes to the current branch in Git.",
+    "keywords": "git labs, discard changes, git, clean repository, git playground, working directory, untracked changes"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Discard Untracked Changes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful discarding",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/clean"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Discard Untracked Changes",
-      "description": "When working with Git, it's common to have untracked changes in your working directory. These changes are files that Git is not currently tracking. Sometimes, you may want to discard these changes and start fresh. In this lab, you will learn how to discard all untracked changes to the current branch.",
-      "meta": {
-        "title": "Discard Untracked Changes in Git",
-        "description": "Learn how to discard all untracked changes to the current branch in Git.",
-        "keywords": "git labs, discard changes, git, clean repository, git playground, working directory, untracked changes"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Discard Untracked Changes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful discarding",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/clean"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "丢弃未跟踪的更改",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功丢弃",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/clean"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

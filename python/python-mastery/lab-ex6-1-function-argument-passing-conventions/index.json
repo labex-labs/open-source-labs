@@ -1,10 +1,168 @@
 {
   "type": "lab",
+  "title": "Function Argument Passing Conventions",
+  "description": "In this lab, you will learn about function argument passing conventions and begin the process of rewriting the stock.py file in a more organized manner.",
+  "meta": {
+    "title": "Mastering Function Argument Passing Conventions",
+    "description": "Explore advanced techniques for defining and using functions with variable arguments in Python.",
+    "keywords": "data structures, python playground, software development, variable arguments, python, function arguments, python programming"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Preparation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Function Definition and Usage",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Simplified Data Structures",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Presence of __init__, len, TypeError, and setattr",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/tuples"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Making a Useful Representation",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Type, Repr, Getattr, and Join Functions",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/tuples"
+        ],
+        "solutions": ["step3_solution.py"]
+      },
+      {
+        "title": "Restricting Attribute Names",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Key Python Constructs",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/tuples"
+        ],
+        "solutions": ["step4_solution.py"]
+      },
+      {
+        "title": "Starting Over",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Import Usage in Project Files",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/tuples",
+          "python/using_packages"
+        ],
+        "solutions": ["stock.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "structure.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "teststock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,153 +173,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Function Argument Passing Conventions",
-      "description": "In this lab, you will learn about function argument passing conventions and begin the process of rewriting the stock.py file in a more organized manner.",
-      "meta": {
-        "title": "Mastering Function Argument Passing Conventions",
-        "description": "Explore advanced techniques for defining and using functions with variable arguments in Python.",
-        "keywords": "data structures, python playground, software development, variable arguments, python, function arguments, python programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Function Definition and Usage",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Simplified Data Structures",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Presence of __init__, len, TypeError, and setattr",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/tuples"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "Making a Useful Representation",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Type, Repr, Getattr, and Join Functions",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples"
-            ],
-            "solutions": ["step3_solution.py"]
-          },
-          {
-            "title": "Restricting Attribute Names",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Key Python Constructs",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/tuples"
-            ],
-            "solutions": ["step4_solution.py"]
-          },
-          {
-            "title": "Starting Over",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Import Usage in Project Files",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/tuples",
-              "python/using_packages"
-            ],
-            "solutions": ["stock.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "函数参数传递约定",
@@ -180,18 +191,8 @@
               {
                 "name": "验证Python函数的定义和使用",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -201,25 +202,8 @@
               {
                 "name": "验证是否存在__init__、len、TypeError和setattr",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/tuples"
             ],
             "solutions": ["step2_solution.py"]
           },
@@ -230,21 +214,8 @@
               {
                 "name": "验证是否存在Type、Repr、Getattr和Join函数",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples"
             ],
             "solutions": ["step3_solution.py"]
           },
@@ -255,22 +226,8 @@
               {
                 "name": "验证关键Python结构的存在",
                 "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/tuples"
             ],
             "solutions": ["step4_solution.py"]
           },
@@ -281,26 +238,14 @@
               {
                 "name": "验证项目文件中的导入用法",
                 "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/tuples",
-              "python/using_packages"
             ],
             "solutions": ["stock.py"]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -309,21 +254,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "structure.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "teststock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

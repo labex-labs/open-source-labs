@@ -1,10 +1,123 @@
 {
   "type": "lab",
+  "title": "Prediction Intervals for Gradient Boosting Regression",
+  "description": "This lab demonstrates how to use quantile regression to create prediction intervals using scikit-learn. We will generate synthetic data for a regression problem, apply the function to it, and create observations of the target using a lognormal distribution. We will then split the data into training and test datasets, fit non-linear quantile and least squares regressors, and create an evenly spaced evaluation set of input values spanning the [0, 10] range. We will compare the predicted median with the predicted mean, analyze the error metrics, and calibrate the confidence interval. Finally, we will tune the hyper-parameters of the quantile regressors.",
+  "meta": {
+    "title": "Quantile Regression | Prediction Intervals | Scikit-Learn",
+    "description": "Learn how to use quantile regression to create prediction intervals using scikit-learn. Generate synthetic data, fit non-linear models, and tune hyperparameters.",
+    "keywords": "quantile regression, prediction intervals, scikit-learn, synthetic data, non-linear models, hyperparameter tuning"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Synthetic Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Split Data into Train and Test Datasets",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Fit Non-Linear Quantile and Least Squares Regressors",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Create an Evenly Spaced Evaluation Set of Input Values",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot the True Conditional Mean Function f",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Analyze the Error Metrics",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Tune the Hyper-parameters of the Quantile Regressors",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-gradient-boosting-quantile.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,113 +128,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Prediction Intervals for Gradient Boosting Regression",
-      "description": "This lab demonstrates how to use quantile regression to create prediction intervals using scikit-learn. We will generate synthetic data for a regression problem, apply the function to it, and create observations of the target using a lognormal distribution. We will then split the data into training and test datasets, fit non-linear quantile and least squares regressors, and create an evenly spaced evaluation set of input values spanning the [0, 10] range. We will compare the predicted median with the predicted mean, analyze the error metrics, and calibrate the confidence interval. Finally, we will tune the hyper-parameters of the quantile regressors.",
-      "meta": {
-        "title": "Quantile Regression | Prediction Intervals | Scikit-Learn",
-        "description": "Learn how to use quantile regression to create prediction intervals using scikit-learn. Generate synthetic data, fit non-linear models, and tune hyperparameters.",
-        "keywords": "quantile regression, prediction intervals, scikit-learn, synthetic data, non-linear models, hyperparameter tuning"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate Synthetic Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Split Data into Train and Test Datasets",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Fit Non-Linear Quantile and Least Squares Regressors",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Create an Evenly Spaced Evaluation Set of Input Values",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot the True Conditional Mean Function f",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Analyze the Error Metrics",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Tune the Hyper-parameters of the Quantile Regressors",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "梯度提升回归的预测区间",
@@ -142,8 +148,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "将数据拆分为训练集和测试集",
@@ -154,8 +159,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "拟合非线性分位数和最小二乘回归器",
@@ -166,8 +170,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "创建输入值的均匀间隔评估集",
@@ -178,8 +181,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制真实条件均值函数f",
@@ -190,8 +192,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "分析误差指标",
@@ -202,8 +203,7 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "调整分位数回归器的超参数",
@@ -214,13 +214,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -229,16 +227,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-gradient-boosting-quantile.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

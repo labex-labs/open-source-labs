@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Go Slices: A Hands-on",
+  "description": "The Slices lab is designed to test your knowledge of the slice data type in Go. Slices are a more powerful interface to sequences than arrays, and this lab will help you understand how to use them.",
+  "meta": {
+    "title": "Mastering Go Slices: A Hands-on Guide",
+    "description": "Explore the power of Go slices and learn how to create, manipulate, and utilize them effectively.",
+    "keywords": "data structures, arrays, go, go labs, slices, go playground online, programming, go lab, go practice"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Slices",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Slice Initialization Correctness",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/slices"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "slices.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Go Slices: A Hands-on",
-      "description": "The Slices lab is designed to test your knowledge of the slice data type in Go. Slices are a more powerful interface to sequences than arrays, and this lab will help you understand how to use them.",
-      "meta": {
-        "title": "Mastering Go Slices: A Hands-on Guide",
-        "description": "Explore the power of Go slices and learn how to create, manipulate, and utilize them effectively.",
-        "keywords": "data structures, arrays, go, go labs, slices, go playground online, programming, go lab, go practice"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Slices",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Slice Initialization Correctness",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/slices"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go 切片实战指南",
@@ -70,17 +76,13 @@
               {
                 "name": "验证切片初始化的正确性",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/slices"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "slices.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

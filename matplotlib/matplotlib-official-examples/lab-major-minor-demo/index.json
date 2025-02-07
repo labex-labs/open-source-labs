@@ -1,10 +1,107 @@
 {
   "type": "lab",
+  "title": "Major and Minor Ticks in Matplotlib",
+  "description": "In a Matplotlib plot, ticks are used to mark the position of data points on the axis. Major ticks are the larger ticks that denote the values of the data points and minor ticks are the smaller ticks that are placed between the major ticks. This tutorial shows how to use major and minor ticks in Matplotlib.",
+  "meta": {
+    "title": "Matplotlib Ticks | Data Visualization Tutorial",
+    "description": "Learn how to use major and minor ticks in Matplotlib plots to mark the position of data points on the axis. Improve your data visualization skills with this comprehensive tutorial.",
+    "keywords": "Matplotlib, Data Visualization, Ticks, Plots, Python"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries and create data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Plot the data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/line_plots", "python/tuples"]
+      },
+      {
+        "title": "Set the major and minor locators",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/dictionaries"]
+      },
+      {
+        "title": "Display the plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Automatic tick selection for major and minor ticks",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/line_plots", "python/comments", "python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "major-minor-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,101 +112,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Major and Minor Ticks in Matplotlib",
-      "description": "In a Matplotlib plot, ticks are used to mark the position of data points on the axis. Major ticks are the larger ticks that denote the values of the data points and minor ticks are the smaller ticks that are placed between the major ticks. This tutorial shows how to use major and minor ticks in Matplotlib.",
-      "meta": {
-        "title": "Matplotlib Ticks | Data Visualization Tutorial",
-        "description": "Learn how to use major and minor ticks in Matplotlib plots to mark the position of data points on the axis. Improve your data visualization skills with this comprehensive tutorial.",
-        "keywords": "Matplotlib, Data Visualization, Ticks, Plots, Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the necessary libraries and create data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Plot the data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/line_plots", "python/tuples"]
-          },
-          {
-            "title": "Set the major and minor locators",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/dictionaries"]
-          },
-          {
-            "title": "Display the plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Automatic tick selection for major and minor ticks",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib中的主刻度和次刻度",
@@ -130,15 +132,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           },
           {
@@ -150,8 +143,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/line_plots", "python/tuples"]
+            ]
           },
           {
             "title": "设置主刻度和次刻度定位器",
@@ -162,8 +154,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/dictionaries"]
+            ]
           },
           {
             "title": "显示图表",
@@ -174,8 +165,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "主刻度和次刻度的自动刻度选择",
@@ -186,17 +176,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -205,16 +189,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "major-minor-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,65 @@
 {
   "type": "lab",
+  "title": "Generate Fibonacci Sequence in Python",
+  "description": "In this lab, you will write a function to generate the Fibonacci sequence up to the nth term, demonstrating your understanding of lists, conditional statements, and loops in Python.",
+  "meta": {
+    "title": "Learn Python Fibonacci Sequence",
+    "description": "Discover how to generate the Fibonacci sequence in Python with this comprehensive tutorial.",
+    "keywords": "fibonacci, python, sequence, tutorial, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Fibonacci Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Fibonacci Sequence Correctness",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/function_definition",
+          "python/lists",
+          "python/while_loops"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_fibonacci.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "fibonacci.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +70,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Generate Fibonacci Sequence in Python",
-      "description": "In this lab, you will write a function to generate the Fibonacci sequence up to the nth term, demonstrating your understanding of lists, conditional statements, and loops in Python.",
-      "meta": {
-        "title": "Learn Python Fibonacci Sequence",
-        "description": "Discover how to generate the Fibonacci sequence in Python with this comprehensive tutorial.",
-        "keywords": "fibonacci, python, sequence, tutorial, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Fibonacci Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Fibonacci Sequence Correctness",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/lists",
-              "python/while_loops"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "用Python生成斐波那契数列",
@@ -77,24 +88,13 @@
               {
                 "name": "验证斐波那契数列的正确性",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/lists",
-              "python/while_loops"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -103,21 +103,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_fibonacci.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "fibonacci.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,96 @@
 {
   "type": "lab",
+  "title": "Visualizing Weight Matrices with Hinton Diagrams",
+  "description": "In this lab, we will learn how to use Hinton diagrams for visualizing weight matrices. Hinton diagrams are very useful when you want to visualize a 2D array, such as a weight matrix. Positive and negative values are represented by white and black squares, respectively, and the size of each square represents the magnitude of each value.",
+  "meta": {
+    "title": "Hinton Diagrams | Weight Matrix Visualization",
+    "description": "Learn how to use Hinton diagrams for visualizing weight matrices in this programming tutorial. Discover a powerful tool for understanding neural network models.",
+    "keywords": "Hinton diagrams, weight matrix, visualization, neural networks, programming tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Importing Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Defining the Hinton Function",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/conditional_statements",
+          "python/default_arguments",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Generating a Hinton Diagram",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "hinton-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,86 +101,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Visualizing Weight Matrices with Hinton Diagrams",
-      "description": "In this lab, we will learn how to use Hinton diagrams for visualizing weight matrices. Hinton diagrams are very useful when you want to visualize a 2D array, such as a weight matrix. Positive and negative values are represented by white and black squares, respectively, and the size of each square represents the magnitude of each value.",
-      "meta": {
-        "title": "Hinton Diagrams | Weight Matrix Visualization",
-        "description": "Learn how to use Hinton diagrams for visualizing weight matrices in this programming tutorial. Discover a powerful tool for understanding neural network models.",
-        "keywords": "Hinton diagrams, weight matrix, visualization, neural networks, programming tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importing Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Defining the Hinton Function",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Generating a Hinton Diagram",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用辛顿图可视化权重矩阵",
@@ -115,13 +121,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -133,15 +132,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -153,20 +143,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -175,16 +156,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "hinton-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

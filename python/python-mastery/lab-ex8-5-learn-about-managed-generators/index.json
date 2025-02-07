@@ -1,10 +1,108 @@
 {
   "type": "lab",
+  "title": "Learn About Managed Generators",
+  "description": "In this lab, you will explore managed generators and learn how to drive generators in various unusual ways.",
+  "meta": {
+    "title": "Python Programming Tutorials | Managed Generators",
+    "description": "Learn about managed generators, a powerful feature in Python programming. Discover how to create and run generator functions as tasks for advanced applications.",
+    "keywords": "Python, Programming, Generators, Coroutines, Task Scheduling, Multitasking"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generators as tasks",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Collections, Deque, Exception Handling, Main Function, and Append Method",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/function_definition",
+          "python/generators",
+          "python/importing_modules",
+          "python/iterators",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/while_loops"
+        ],
+        "solutions": ["multitask.py"]
+      },
+      {
+        "title": "Generators as Tasks Serving Network Connections",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Server Socket Implementation",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "linux/nc",
+          "linux/telnet",
+          "python/booleans",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/importing_modules",
+          "python/lists",
+          "python/networking_protocols",
+          "python/raising_exceptions",
+          "python/socket_programming",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/while_loops"
+        ],
+        "solutions": ["server.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "multitask.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "server.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,93 +113,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Learn About Managed Generators",
-      "description": "In this lab, you will explore managed generators and learn how to drive generators in various unusual ways.",
-      "meta": {
-        "title": "Python Programming Tutorials | Managed Generators",
-        "description": "Learn about managed generators, a powerful feature in Python programming. Discover how to create and run generator functions as tasks for advanced applications.",
-        "keywords": "Python, Programming, Generators, Coroutines, Task Scheduling, Multitasking"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generators as tasks",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Collections, Deque, Exception Handling, Main Function, and Append Method",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/iterators",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
-            ],
-            "solutions": ["multitask.py"]
-          },
-          {
-            "title": "Generators as Tasks Serving Network Connections",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Server Socket Implementation",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "linux/nc",
-              "linux/telnet",
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/lists",
-              "python/networking_protocols",
-              "python/raising_exceptions",
-              "python/socket_programming",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
-            ],
-            "solutions": ["server.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "了解托管生成器",
@@ -120,24 +131,8 @@
               {
                 "name": "验证是否存在集合、双端队列、异常处理、主函数和追加方法",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/iterators",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
             ],
             "solutions": ["multitask.py"]
           },
@@ -148,39 +143,14 @@
               {
                 "name": "验证服务器套接字实现",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "linux/nc",
-              "linux/telnet",
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/lists",
-              "python/networking_protocols",
-              "python/raising_exceptions",
-              "python/socket_programming",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops"
             ],
             "solutions": ["server.py"]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -189,21 +159,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "multitask.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "server.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

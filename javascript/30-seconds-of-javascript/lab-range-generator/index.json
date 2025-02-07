@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Generating Range Values with JavaScript Generators",
+  "description": "In this lab, we will explore how to create a rangeGenerator function in JavaScript that generates all values in a given range using a specified step. We will use a while loop and the yield keyword to return each value and increment by the specified step. By the end of this lab, you will have a better understanding of how to create custom generators in JavaScript and their practical applications.",
+  "meta": {
+    "title": "JavaScript Range Generator | Custom Generators",
+    "description": "Learn how to create a JavaScript range generator function using a while loop and the yield keyword. Explore practical applications of custom generators.",
+    "keywords": "JavaScript, range generator, custom generators, while loop, yield, programming tutorial"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Range Generator",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/debugging",
+          "javascript/loops",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Generating Range Values with JavaScript Generators",
-      "description": "In this lab, we will explore how to create a rangeGenerator function in JavaScript that generates all values in a given range using a specified step. We will use a while loop and the yield keyword to return each value and increment by the specified step. By the end of this lab, you will have a better understanding of how to create custom generators in JavaScript and their practical applications.",
-      "meta": {
-        "title": "JavaScript Range Generator | Custom Generators",
-        "description": "Learn how to create a JavaScript range generator function using a while loop and the yield keyword. Explore practical applications of custom generators.",
-        "keywords": "JavaScript, range generator, custom generators, while loop, yield, programming tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Range Generator",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/loops",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用JavaScript生成器生成范围值",
@@ -77,24 +74,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/loops",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

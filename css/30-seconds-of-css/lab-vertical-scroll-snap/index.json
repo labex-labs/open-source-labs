@@ -1,10 +1,80 @@
 {
   "type": "lab",
+  "title": "Vertical Scroll Snap",
+  "description": "In this lab, we will dive into the world of CSS programming and explore its various features and functionalities. The purpose of this lab is to equip learners with the necessary skills to create visually appealing and responsive web pages using CSS. Through hands-on practice and experimentation, learners will gain a solid understanding of CSS syntax, selectors, properties, and more.",
+  "meta": {
+    "title": "Mastering Vertical Scroll Snap with CSS",
+    "description": "Dive into the world of CSS programming and learn how to create visually appealing and responsive web pages using vertical scroll snap.",
+    "keywords": "css, vertical scroll snap, web design, css practice, css programming, css playground, responsive web development, css lab, css exercises"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Vertical Scroll Snap",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "css/borders",
+          "css/display_property",
+          "css/grid_layout",
+          "css/margin_and_padding",
+          "css/nesting",
+          "css/selectors",
+          "css/width_and_height"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,65 +85,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Vertical Scroll Snap",
-      "description": "In this lab, we will dive into the world of CSS programming and explore its various features and functionalities. The purpose of this lab is to equip learners with the necessary skills to create visually appealing and responsive web pages using CSS. Through hands-on practice and experimentation, learners will gain a solid understanding of CSS syntax, selectors, properties, and more.",
-      "meta": {
-        "title": "Mastering Vertical Scroll Snap with CSS",
-        "description": "Dive into the world of CSS programming and learn how to create visually appealing and responsive web pages using vertical scroll snap.",
-        "keywords": "css, vertical scroll snap, web design, css practice, css programming, css playground, responsive web development, css lab, css exercises"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Vertical Scroll Snap",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of index.html modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/borders",
-              "css/display_property",
-              "css/grid_layout",
-              "css/margin_and_padding",
-              "css/nesting",
-              "css/selectors",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "垂直滚动捕捉",
@@ -92,39 +103,23 @@
               {
                 "name": "验证网络服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“Go Live”在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               },
               {
                 "name": "验证index.html的修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               },
               {
                 "name": "验证style.css的修改状态",
                 "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "css/borders",
-              "css/display_property",
-              "css/grid_layout",
-              "css/margin_and_padding",
-              "css/nesting",
-              "css/selectors",
-              "css/width_and_height"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -133,21 +128,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

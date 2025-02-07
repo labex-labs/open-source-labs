@@ -1,10 +1,143 @@
 {
   "type": "lab",
+  "title": "Matplotlib RGB Channels Visualization",
+  "description": "Matplotlib is a popular data visualization library in Python. It provides various plotting tools, including 2D and 3D plotting capabilities. In this tutorial, we will use the RGBAxes module of the AxesGrid toolkit in Matplotlib to display RGB channels.",
+  "meta": {
+    "title": "Matplotlib Python Data Visualization | RGB Channels Tutorial",
+    "description": "Learn how to use the RGBAxes module in Matplotlib to display RGB channels for data visualization in Python.",
+    "keywords": "Matplotlib, Python, Data Visualization, RGB Channels, RGBAxes"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Define a function to get RGB channels",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists"
+        ]
+      },
+      {
+        "title": "Define a function to create a RGB cube",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a RGBAxes plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a RGBAxes plot with separate channels",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/heatmaps",
+          "python/comments",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Display the plots",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "demo-axes-rgb.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,133 +148,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib RGB Channels Visualization",
-      "description": "Matplotlib is a popular data visualization library in Python. It provides various plotting tools, including 2D and 3D plotting capabilities. In this tutorial, we will use the RGBAxes module of the AxesGrid toolkit in Matplotlib to display RGB channels.",
-      "meta": {
-        "title": "Matplotlib Python Data Visualization | RGB Channels Tutorial",
-        "description": "Learn how to use the RGBAxes module in Matplotlib to display RGB channels for data visualization in Python.",
-        "keywords": "Matplotlib, Python, Data Visualization, RGB Channels, RGBAxes"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Define a function to get RGB channels",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Define a function to create a RGB cube",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a RGBAxes plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a RGBAxes plot with separate channels",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Display the plots",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib RGB 通道可视化",
@@ -162,14 +168,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -181,15 +179,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists"
             ]
           },
           {
@@ -201,12 +190,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -218,12 +201,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -235,14 +212,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -254,13 +223,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -269,16 +236,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "demo-axes-rgb.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

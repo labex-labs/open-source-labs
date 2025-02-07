@@ -1,10 +1,122 @@
 {
   "type": "lab",
+  "title": "Plotting Empirical Cumulative Distributions with Matplotlib",
+  "description": "This tutorial demonstrates how to plot the empirical cumulative distribution function (ECDF) of a sample and the theoretical CDF using Matplotlib. ECDFs are also known as 'non-exceedance' curves in engineering, where the y-value for a given x-value gives the probability that an observation from the sample is below that x-value. Conversely, the empirical _complementary_ cumulative distribution function (the ECCDF, or 'exceedance' curve) shows the probability y that an observation from the sample is above a value x.",
+  "meta": {
+    "title": "Plotting ECDF and Theoretical CDF with Matplotlib | Data Visualization",
+    "description": "Learn how to plot the empirical cumulative distribution function (ECDF) of a sample and the theoretical CDF using Matplotlib in this comprehensive tutorial.",
+    "keywords": "ECDF, CDF, Matplotlib, Data Visualization, Python, Jupyter Notebook"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Set the random seed and generate the data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the figure and subplots",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans", "python/tuples"]
+      },
+      {
+        "title": "Plot the cumulative distributions",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/histograms",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Label the figure",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/legend_config",
+          "python/booleans",
+          "python/for_loops"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "histogram-cumulative.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,112 +127,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Plotting Empirical Cumulative Distributions with Matplotlib",
-      "description": "This tutorial demonstrates how to plot the empirical cumulative distribution function (ECDF) of a sample and the theoretical CDF using Matplotlib. ECDFs are also known as 'non-exceedance' curves in engineering, where the y-value for a given x-value gives the probability that an observation from the sample is below that x-value. Conversely, the empirical _complementary_ cumulative distribution function (the ECCDF, or 'exceedance' curve) shows the probability y that an observation from the sample is above a value x.",
-      "meta": {
-        "title": "Plotting ECDF and Theoretical CDF with Matplotlib | Data Visualization",
-        "description": "Learn how to plot the empirical cumulative distribution function (ECDF) of a sample and the theoretical CDF using Matplotlib in this comprehensive tutorial.",
-        "keywords": "ECDF, CDF, Matplotlib, Data Visualization, Python, Jupyter Notebook"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Set the random seed and generate the data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the figure and subplots",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans", "python/tuples"]
-          },
-          {
-            "title": "Plot the cumulative distributions",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/histograms",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Label the figure",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "python/booleans",
-              "python/for_loops"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib绘制经验累积分布",
@@ -141,13 +147,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -159,11 +158,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -175,8 +169,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/booleans", "python/tuples"]
+            ]
           },
           {
             "title": "绘制累积分布",
@@ -187,15 +180,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/histograms",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -207,18 +191,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "python/booleans",
-              "python/for_loops"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -227,16 +204,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "histogram-cumulative.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

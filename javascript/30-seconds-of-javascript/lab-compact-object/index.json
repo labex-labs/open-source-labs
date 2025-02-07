@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Recursive Falsy Value Removal in JavaScript",
+  "description": "In this lab, we will explore how to use recursion to deeply remove all falsy values from an object or array in JavaScript. We will create a function that takes an object or array as input and returns a new, compacted object or array with only truthy values. This technique can be useful for data cleaning and simplification in various programming applications.",
+  "meta": {
+    "title": "Recursively Remove Falsy Values | JavaScript Tutorials",
+    "description": "Explore how to use recursion to deeply remove all falsy values from an object or array in JavaScript. Learn data cleaning and simplification techniques.",
+    "keywords": "JavaScript, Recursion, Data Cleaning, Data Simplification, Object, Array"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Compact Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Executed",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Recursive Falsy Value Removal in JavaScript",
-      "description": "In this lab, we will explore how to use recursion to deeply remove all falsy values from an object or array in JavaScript. We will create a function that takes an object or array as input and returns a new, compacted object or array with only truthy values. This technique can be useful for data cleaning and simplification in various programming applications.",
-      "meta": {
-        "title": "Recursively Remove Falsy Values | JavaScript Tutorials",
-        "description": "Explore how to use recursion to deeply remove all falsy values from an object or array in JavaScript. Learn data cleaning and simplification techniques.",
-        "keywords": "JavaScript, Recursion, Data Cleaning, Data Simplification, Object, Array"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Compact Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Executed",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在JavaScript中递归移除虚假值",
@@ -78,25 +75,13 @@
               {
                 "name": "验证已执行的Node命令",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

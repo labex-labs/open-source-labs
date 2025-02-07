@@ -1,10 +1,126 @@
 {
   "type": "lab",
+  "title": "Create Customized Boxplots in Python",
+  "description": "Boxplots are a type of graph used to display the distribution of data based on five-number summary ('minimum', first quartile (Q1), median, third quartile (Q3), and 'maximum'). They are commonly used in data analysis to identify and visualize outliers, as well as to compare the distribution of different groups of data. In this lab, you will learn how to create and customize boxplots in Python using the Matplotlib library.",
+  "meta": {
+    "title": "Boxplots in Python | Data Visualization | Matplotlib",
+    "description": "Learn how to create and customize boxplots in Python using the Matplotlib library, a powerful tool for data analysis and visualization.",
+    "keywords": "boxplots, data visualization, python, matplotlib, data analysis"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Generate the data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a basic boxplot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/box_plots"]
+      },
+      {
+        "title": "Customize the boxplot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/box_plots",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Add labels and titles",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/axis_ticks",
+          "matplotlib/box_plots",
+          "matplotlib/titles_labels",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "boxplot-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,116 +131,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create Customized Boxplots in Python",
-      "description": "Boxplots are a type of graph used to display the distribution of data based on five-number summary ('minimum', first quartile (Q1), median, third quartile (Q3), and 'maximum'). They are commonly used in data analysis to identify and visualize outliers, as well as to compare the distribution of different groups of data. In this lab, you will learn how to create and customize boxplots in Python using the Matplotlib library.",
-      "meta": {
-        "title": "Boxplots in Python | Data Visualization | Matplotlib",
-        "description": "Learn how to create and customize boxplots in Python using the Matplotlib library, a powerful tool for data analysis and visualization.",
-        "keywords": "boxplots, data visualization, python, matplotlib, data analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Generate the data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a basic boxplot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/box_plots"]
-          },
-          {
-            "title": "Customize the boxplot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/box_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Add labels and titles",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/axis_ticks",
-              "matplotlib/box_plots",
-              "matplotlib/titles_labels",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python中创建自定义箱线图",
@@ -145,13 +151,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -163,11 +162,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -179,8 +173,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/box_plots"]
+            ]
           },
           {
             "title": "自定义箱线图",
@@ -191,18 +184,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/box_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -214,19 +195,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/axis_ticks",
-              "matplotlib/box_plots",
-              "matplotlib/titles_labels",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -235,16 +208,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "boxplot-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,134 @@
 {
   "type": "lab",
+  "title": "Matplotlib Path and Patch Manipulation",
+  "description": "This tutorial will guide you through the process of drawing and manipulating shapes using the matplotlib.path.Path, matplotlib.patches.PathPatch, and matplotlib.transforms classes. You will learn how to create a plot with a circle, a dolphin shape, and a dolphin shape rotated by 60 degrees.",
+  "meta": {
+    "title": "Matplotlib Shapes Manipulation | Python Programming",
+    "description": "Learn how to create and manipulate shapes like circles, dolphins, and more using Matplotlib in Python. Detailed tutorial for beginners.",
+    "keywords": "Matplotlib, Python, Shapes, Circles, Dolphins, Rotations, Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Circle",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/heatmaps",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/line_plots",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create a Dolphin Shape",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_visualization",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/while_loops"
+        ]
+      },
+      {
+        "title": "Rotate the Dolphin Shape",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Finalize the Plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/heatmaps",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/line_plots",
+          "python/comments",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "dolphin.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,124 +139,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Path and Patch Manipulation",
-      "description": "This tutorial will guide you through the process of drawing and manipulating shapes using the matplotlib.path.Path, matplotlib.patches.PathPatch, and matplotlib.transforms classes. You will learn how to create a plot with a circle, a dolphin shape, and a dolphin shape rotated by 60 degrees.",
-      "meta": {
-        "title": "Matplotlib Shapes Manipulation | Python Programming",
-        "description": "Learn how to create and manipulate shapes like circles, dolphins, and more using Matplotlib in Python. Detailed tutorial for beginners.",
-        "keywords": "Matplotlib, Python, Shapes, Circles, Dolphins, Rotations, Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create a Circle",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/heatmaps",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create a Dolphin Shape",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/while_loops"
-            ]
-          },
-          {
-            "title": "Rotate the Dolphin Shape",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Finalize the Plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/heatmaps",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib路径与补丁操作",
@@ -153,20 +159,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/heatmaps",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -178,21 +170,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/while_loops"
             ]
           },
           {
@@ -204,12 +181,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -221,28 +192,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/heatmaps",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -251,16 +205,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "dolphin.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

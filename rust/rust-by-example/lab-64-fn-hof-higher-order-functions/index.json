@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Exploring Rust's Functional Capabilities",
+  "description": "In this lab, we explore higher-order functions (HOFs) in Rust, which are functions that take one or more functions and/or produce a more useful function, and how they can be used in combination with lazy iterators to give Rust a functional flavor.",
+  "meta": {
+    "title": "Rust Higher-Order Functions | Functional Programming",
+    "description": "Explore Rust's higher-order functions and lazy iterators to implement functional programming techniques in your Rust projects.",
+    "keywords": "Rust, Higher-Order Functions, Functional Programming, Lazy Iterators, Imperative vs Functional Approach"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Higher Order Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/mutable_variables",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Rust's Functional Capabilities",
-      "description": "In this lab, we explore higher-order functions (HOFs) in Rust, which are functions that take one or more functions and/or produce a more useful function, and how they can be used in combination with lazy iterators to give Rust a functional flavor.",
-      "meta": {
-        "title": "Rust Higher-Order Functions | Functional Programming",
-        "description": "Explore Rust's higher-order functions and lazy iterators to implement functional programming techniques in your Rust projects.",
-        "keywords": "Rust, Higher-Order Functions, Functional Programming, Lazy Iterators, Imperative vs Functional Approach"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Higher Order Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/mutable_variables",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索 Rust 的函数式能力",
@@ -79,26 +76,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/mutable_variables",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

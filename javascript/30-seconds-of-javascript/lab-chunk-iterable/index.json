@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Chunking Iterables into Smaller Arrays",
+  "description": "In this lab, we will explore the concept of chunking an iterable into smaller arrays of a specified size using JavaScript. We will implement a function that takes in an iterable and a size parameter and returns an iterable of smaller arrays that contain a maximum of size elements each. This technique can be useful for various applications, such as breaking down large datasets into smaller chunks for processing or optimizing network requests by reducing the amount of data transferred at once.",
+  "meta": {
+    "title": "Chunking Iterables | JavaScript Techniques",
+    "description": "Learn how to chunk an iterable into smaller arrays of a specified size using JavaScript. Explore practical applications and optimize data processing.",
+    "keywords": "JavaScript, Chunking, Iterables, Data Processing, Optimization"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Chunk Iterable",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/loops",
+          "javascript/obj_manip",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Chunking Iterables into Smaller Arrays",
-      "description": "In this lab, we will explore the concept of chunking an iterable into smaller arrays of a specified size using JavaScript. We will implement a function that takes in an iterable and a size parameter and returns an iterable of smaller arrays that contain a maximum of size elements each. This technique can be useful for various applications, such as breaking down large datasets into smaller chunks for processing or optimizing network requests by reducing the amount of data transferred at once.",
-      "meta": {
-        "title": "Chunking Iterables | JavaScript Techniques",
-        "description": "Learn how to chunk an iterable into smaller arrays of a specified size using JavaScript. Explore practical applications and optimize data processing.",
-        "keywords": "JavaScript, Chunking, Iterables, Data Processing, Optimization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Chunk Iterable",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/obj_manip",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将可迭代对象分块为较小数组",
@@ -79,26 +76,13 @@
               {
                 "name": "验证 Node 命令的使用",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/obj_manip",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

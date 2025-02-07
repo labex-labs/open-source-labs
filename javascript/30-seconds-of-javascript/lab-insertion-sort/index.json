@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Implementing Insertion Sort in JavaScript",
+  "description": "In this lab, we will explore the implementation of the insertion sort algorithm in JavaScript. We will learn how to sort an array of numbers using this algorithm and understand the logic behind it. By the end of this lab, you will be able to use the insertion sort algorithm to efficiently sort arrays in your JavaScript projects.",
+  "meta": {
+    "title": "Mastering Insertion Sort in JavaScript",
+    "description": "Learn how to implement the efficient insertion sort algorithm in JavaScript and sort arrays effectively.",
+    "keywords": "javascript, javascript practice, sorting algorithms, array manipulation, javascript practice online, javascript lab, programming tutorials, javascript tutor, insertion sort"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Insertion Sort",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student's Node Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Implementing Insertion Sort in JavaScript",
-      "description": "In this lab, we will explore the implementation of the insertion sort algorithm in JavaScript. We will learn how to sort an array of numbers using this algorithm and understand the logic behind it. By the end of this lab, you will be able to use the insertion sort algorithm to efficiently sort arrays in your JavaScript projects.",
-      "meta": {
-        "title": "Mastering Insertion Sort in JavaScript",
-        "description": "Learn how to implement the efficient insertion sort algorithm in JavaScript and sort arrays effectively.",
-        "keywords": "javascript, javascript practice, sorting algorithms, array manipulation, javascript practice online, javascript lab, programming tutorials, javascript tutor, insertion sort"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Insertion Sort",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student's Node Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在JavaScript中实现插入排序",
@@ -78,25 +75,13 @@
               {
                 "name": "验证学生对Node的使用",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中输入'node'并回车即可运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中输入'node'并回车即可运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

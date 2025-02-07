@@ -1,10 +1,64 @@
 {
   "type": "lab",
+  "title": "Key of Min Value",
+  "description": "In this lab, you will learn how to find the key of the minimum value in a Python dictionary using the built-in `min()` function with the `key` parameter set to `dict.get()`.",
+  "meta": {
+    "title": "Key of Min Value in Python Dictionaries",
+    "description": "Learn how to find the key of the minimum value in a Python dictionary using a simple function.",
+    "keywords": "key, python, dictionary, min value, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Key of Min Value",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Key of Minimum Value",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_key_of_min.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "key_of_min.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +69,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Key of Min Value",
-      "description": "In this lab, you will learn how to find the key of the minimum value in a Python dictionary using the built-in `min()` function with the `key` parameter set to `dict.get()`.",
-      "meta": {
-        "title": "Key of Min Value in Python Dictionaries",
-        "description": "Learn how to find the key of the minimum value in a Python dictionary using a simple function.",
-        "keywords": "key, python, dictionary, min value, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Key of Min Value",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Key of Minimum Value",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "最小值的键",
@@ -76,23 +87,13 @@
               {
                 "name": "验证最小值的键",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -101,21 +102,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_key_of_min.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "key_of_min.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

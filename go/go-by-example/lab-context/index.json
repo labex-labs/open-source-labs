@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Golang Context Cancellation Demonstration",
+  "description": "This lab aims to demonstrate the usage of context.Context for controlling cancellation in Golang. A Context carries deadlines, cancellation signals, and other request-scoped values across API boundaries and goroutines.",
+  "meta": {
+    "title": "Context in Golang | HTTP Server Cancellation",
+    "description": "Learn how to use context.Context for controlling cancellation in Golang HTTP servers. Explore request-scoped values, deadlines, and cancellation signals across API boundaries and goroutines.",
+    "keywords": "Golang, context, HTTP server, cancellation, request-scoped, deadlines, goroutines"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Context",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Run Constant File Output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/context"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "context.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Golang Context Cancellation Demonstration",
-      "description": "This lab aims to demonstrate the usage of context.Context for controlling cancellation in Golang. A Context carries deadlines, cancellation signals, and other request-scoped values across API boundaries and goroutines.",
-      "meta": {
-        "title": "Context in Golang | HTTP Server Cancellation",
-        "description": "Learn how to use context.Context for controlling cancellation in Golang HTTP servers. Explore request-scoped values, deadlines, and cancellation signals across API boundaries and goroutines.",
-        "keywords": "Golang, context, HTTP server, cancellation, request-scoped, deadlines, goroutines"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Context",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Run Constant File Output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/context"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go 语言中上下文取消的演示",
@@ -70,17 +76,13 @@
               {
                 "name": "验证 Go 运行常量文件输出",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/context"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "context.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

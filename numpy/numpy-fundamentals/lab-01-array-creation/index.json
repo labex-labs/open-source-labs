@@ -1,10 +1,136 @@
 {
   "type": "lab",
+  "title": "Fundamental NumPy Array Creation Techniques",
+  "description": "This lab provides a step-by-step guide on how to create arrays using NumPy, a fundamental library for array containers in Python. You will learn different methods for array creation, including converting Python sequences, using intrinsic NumPy array creation functions, replicating and joining existing arrays, reading arrays from disk, creating arrays from raw bytes, and using special library functions.",
+  "meta": {
+    "title": "NumPy Array Creation | Python Programming Tutorials",
+    "description": "Learn how to create arrays using NumPy, a fundamental library for array containers in Python. Discover different methods for array creation, including converting Python sequences and using intrinsic NumPy functions.",
+    "keywords": "NumPy, Array Creation, Python Programming, Python Sequences, Array Containers"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Converting Python sequences to NumPy Arrays",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/1d_array",
+          "numpy/bool_idx",
+          "numpy/data_array",
+          "numpy/fancy_idx",
+          "numpy/multi_array",
+          "python/comments",
+          "python/data_collections",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Using Intrinsic NumPy Array Creation Functions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/bool_idx",
+          "numpy/fancy_idx",
+          "numpy/rand_num",
+          "python/comments",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numeric_types",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Replicating, Joining, or Mutating Existing Arrays",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/1d_array",
+          "numpy/bool_idx",
+          "numpy/data_array",
+          "numpy/fancy_idx",
+          "python/build_in_functions",
+          "python/comments",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Reading Arrays from Disk",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/text_io",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "01-array-creation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "data.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,121 +141,6 @@
     "repo": "https://github.com/numpy/numpy"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Fundamental NumPy Array Creation Techniques",
-      "description": "This lab provides a step-by-step guide on how to create arrays using NumPy, a fundamental library for array containers in Python. You will learn different methods for array creation, including converting Python sequences, using intrinsic NumPy array creation functions, replicating and joining existing arrays, reading arrays from disk, creating arrays from raw bytes, and using special library functions.",
-      "meta": {
-        "title": "NumPy Array Creation | Python Programming Tutorials",
-        "description": "Learn how to create arrays using NumPy, a fundamental library for array containers in Python. Discover different methods for array creation, including converting Python sequences and using intrinsic NumPy functions.",
-        "keywords": "NumPy, Array Creation, Python Programming, Python Sequences, Array Containers"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Converting Python sequences to NumPy Arrays",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "numpy/multi_array",
-              "python/comments",
-              "python/data_collections",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Using Intrinsic NumPy Array Creation Functions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/bool_idx",
-              "numpy/fancy_idx",
-              "numpy/rand_num",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Replicating, Joining, or Mutating Existing Arrays",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Reading Arrays from Disk",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/text_io",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "NumPy 数组创建基础技术",
@@ -150,20 +161,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "numpy/multi_array",
-              "python/comments",
-              "python/data_collections",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -175,21 +172,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/bool_idx",
-              "numpy/fancy_idx",
-              "numpy/rand_num",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -201,18 +183,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           },
           {
@@ -224,19 +194,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/text_io",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -245,21 +207,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "01-array-creation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "data.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

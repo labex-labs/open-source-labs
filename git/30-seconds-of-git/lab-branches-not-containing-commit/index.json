@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Find Branches Not Containing a Commit",
+  "description": "Git is a popular version control system that allows developers to track changes in their codebase. One of the useful features of Git is the ability to create branches, which are essentially separate copies of the codebase that can be modified independently. However, sometimes it can be difficult to keep track of which branches contain certain commits. In this lab, you will learn how to find branches that do not contain a specific commit.",
+  "meta": {
+    "title": "Git Branch Management | Version Control Tutorial",
+    "description": "Learn how to find Git branches that do not contain a specific commit. Improve your version control skills with this comprehensive Git tutorial.",
+    "keywords": "Git, version control, branch management, commit tracking, code repository, software development"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Find Branches Not Containing a Commit",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify if found successfully",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/branch"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Find Branches Not Containing a Commit",
-      "description": "Git is a popular version control system that allows developers to track changes in their codebase. One of the useful features of Git is the ability to create branches, which are essentially separate copies of the codebase that can be modified independently. However, sometimes it can be difficult to keep track of which branches contain certain commits. In this lab, you will learn how to find branches that do not contain a specific commit.",
-      "meta": {
-        "title": "Git Branch Management | Version Control Tutorial",
-        "description": "Learn how to find Git branches that do not contain a specific commit. Improve your version control skills with this comprehensive Git tutorial.",
-        "keywords": "Git, version control, branch management, commit tracking, code repository, software development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Find Branches Not Containing a Commit",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify if found successfully",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/branch"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "查找不包含特定提交的分支",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功找到",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/branch"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

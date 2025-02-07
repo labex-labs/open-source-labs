@@ -1,10 +1,125 @@
 {
   "type": "lab",
+  "title": "Develop Flask App with Development Server",
+  "description": "In this tutorial, you will learn how to use the development server in Flask to run your Flask application during local development. The development server provides an interactive debugger and automatically reloads the code when changes are made. This tutorial will guide you through the steps to run the development server and handle common issues that may arise.",
+  "meta": {
+    "title": "Flask Development Server | Python Web Framework",
+    "description": "Learn how to use the Flask development server to run your Python web application during local development. Get an interactive debugger and automatic code reloading.",
+    "keywords": "Flask, Python, Web Development, Local Development, Debugging, Automatic Reloading"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Set up Flask Application",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/incoming_request_data",
+          "flask/response_objects",
+          "flask/sessions",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Run Development Server with Flask CLI",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+      },
+      {
+        "title": "Enable Debug Mode",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object", "flask/incoming_request_data"]
+      },
+      {
+        "title": "Specify Application File",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object", "flask/useful_internals"]
+      },
+      {
+        "title": "Address Already in Use",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/incoming_request_data", "flask/response_objects"]
+      },
+      {
+        "title": "Running the Development Server from Python",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/incoming_request_data",
+          "flask/useful_internals"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,127 +138,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Develop Flask App with Development Server",
-      "description": "In this tutorial, you will learn how to use the development server in Flask to run your Flask application during local development. The development server provides an interactive debugger and automatically reloads the code when changes are made. This tutorial will guide you through the steps to run the development server and handle common issues that may arise.",
-      "meta": {
-        "title": "Flask Development Server | Python Web Framework",
-        "description": "Learn how to use the Flask development server to run your Python web application during local development. Get an interactive debugger and automatic code reloading.",
-        "keywords": "Flask, Python, Web Development, Local Development, Debugging, Automatic Reloading"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Set up Flask Application",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/sessions",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Run Development Server with Flask CLI",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
-          },
-          {
-            "title": "Enable Debug Mode",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data"
-            ]
-          },
-          {
-            "title": "Specify Application File",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
-          },
-          {
-            "title": "Address Already in Use",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/response_objects"]
-          },
-          {
-            "title": "Running the Development Server from Python",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "使用开发服务器开发Flask应用",
       "description": "在本教程中，你将学习如何在本地开发期间使用Flask中的开发服务器来运行你的Flask应用程序。开发服务器提供交互式调试器，并在代码更改时自动重新加载代码。本教程将指导你完成运行开发服务器的步骤以及处理可能出现的常见问题。",
@@ -161,18 +155,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/sessions",
-              "flask/useful_internals"
             ]
           },
           {
@@ -182,12 +166,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+            ]
           },
           {
             "title": "启用调试模式",
@@ -196,14 +177,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data"
             ]
           },
           {
@@ -213,12 +188,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
+            ]
           },
           {
             "title": "地址已被使用",
@@ -227,12 +199,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/response_objects"]
+            ]
           },
           {
             "title": "从Python运行开发服务器",
@@ -241,21 +210,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

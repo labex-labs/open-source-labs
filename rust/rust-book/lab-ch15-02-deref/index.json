@@ -1,10 +1,154 @@
 {
   "type": "lab",
+  "title": "Treating Smart Pointers Like Regular References",
+  "description": "In this lab, we will explore how implementing the Deref trait allows smart pointers to be treated like regular references and how Rust's deref coercion feature enables working with either references or smart pointers.",
+  "meta": {
+    "title": "Rust Smart Pointers | Deref Trait | Reference Handling",
+    "description": "Learn how to implement the Deref trait to treat smart pointers like regular references in Rust. Explore Rust's deref coercion feature for seamless reference and smart pointer usage.",
+    "keywords": "Rust, Smart Pointers, Deref Trait, Reference Handling, Deref Coercion"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Treating Smart Pointers Like Regular References with Deref",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Following the Pointer to the Value",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/variable_declarations"
+        ]
+      },
+      {
+        "title": "Using Box<T> Like a Reference",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/variable_declarations"
+        ]
+      },
+      {
+        "title": "Defining Our Own Smart Pointer",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/variable_declarations"
+        ]
+      },
+      {
+        "title": "Implementing the Deref Trait",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/operator_overloading"
+        ]
+      },
+      {
+        "title": "Implicit Deref Coercions with Functions and Methods",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      },
+      {
+        "title": "How Deref Coercion Interacts with Mutability",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,153 +159,6 @@
     "repo": "https://github.com/rust-lang/book"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Treating Smart Pointers Like Regular References",
-      "description": "In this lab, we will explore how implementing the Deref trait allows smart pointers to be treated like regular references and how Rust's deref coercion feature enables working with either references or smart pointers.",
-      "meta": {
-        "title": "Rust Smart Pointers | Deref Trait | Reference Handling",
-        "description": "Learn how to implement the Deref trait to treat smart pointers like regular references in Rust. Explore Rust's deref coercion feature for seamless reference and smart pointer usage.",
-        "keywords": "Rust, Smart Pointers, Deref Trait, Reference Handling, Deref Coercion"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Treating Smart Pointers Like Regular References with Deref",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Following the Pointer to the Value",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/variable_declarations"
-            ]
-          },
-          {
-            "title": "Using Box<T> Like a Reference",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/variable_declarations"
-            ]
-          },
-          {
-            "title": "Defining Our Own Smart Pointer",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
-            ]
-          },
-          {
-            "title": "Implementing the Deref Trait",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/operator_overloading"
-            ]
-          },
-          {
-            "title": "Implicit Deref Coercions with Functions and Methods",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          },
-          {
-            "title": "How Deref Coercion Interacts with Mutability",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "像对待普通引用一样处理智能指针",
@@ -180,12 +177,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "跟随指针找到值",
@@ -194,15 +188,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/variable_declarations"
             ]
           },
           {
@@ -212,16 +199,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/variable_declarations"
             ]
           },
           {
@@ -231,17 +210,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
             ]
           },
           {
@@ -251,16 +221,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/operator_overloading"
             ]
           },
           {
@@ -270,17 +232,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           },
           {
@@ -290,17 +243,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify7.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

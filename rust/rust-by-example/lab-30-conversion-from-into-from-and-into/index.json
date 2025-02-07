@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "From and Into",
+  "description": "In this lab, we explore the concepts of From and Into traits in Rust, which are used for converting between different types. These traits are inherently linked, with Into being the reciprocal of From. The From trait allows a type to define how to create itself from another type, enabling easy conversion between types. The Into trait automatically calls the From implementation when necessary. Both traits can be implemented for custom types, providing flexibility in type conversions.",
+  "meta": {
+    "title": "Exploring Rust's From and Into Traits",
+    "description": "Learn how to use the powerful Rust traits, From and Into, for seamless type conversions.",
+    "keywords": "type conversion, rust playground, programming tutorial, rust tutor, rust online compiler, rust commands, from trait, into trait, rust practice, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "From and Into",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "From and Into",
-      "description": "In this lab, we explore the concepts of From and Into traits in Rust, which are used for converting between different types. These traits are inherently linked, with Into being the reciprocal of From. The From trait allows a type to define how to create itself from another type, enabling easy conversion between types. The Into trait automatically calls the From implementation when necessary. Both traits can be implemented for custom types, providing flexibility in type conversions.",
-      "meta": {
-        "title": "Exploring Rust's From and Into Traits",
-        "description": "Learn how to use the powerful Rust traits, From and Into, for seamless type conversions.",
-        "keywords": "type conversion, rust playground, programming tutorial, rust tutor, rust online compiler, rust commands, from trait, into trait, rust practice, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "From and Into",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "From 和 Into",
@@ -79,26 +76,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

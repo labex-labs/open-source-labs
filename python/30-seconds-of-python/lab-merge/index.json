@@ -1,10 +1,70 @@
 {
   "type": "lab",
+  "title": "Merging Multiple Lists in Python",
+  "description": "In Python, we can merge two or more lists into a single list using various methods. One such method is to combine elements from each of the input lists based on their positions. In this challenge, you will be tasked with writing a function that merges multiple lists into a list of lists.",
+  "meta": {
+    "title": "Python | List Merging | Programming Tutorials",
+    "description": "Learn how to merge multiple lists into a single list of lists in Python. Discover various techniques and explore practical examples.",
+    "keywords": "Python, List Merging, Programming Tutorials, List Manipulation, Data Structures"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Merge Lists",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student Merging Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/default_arguments",
+          "python/for_loops",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_merge.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "merge.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,55 +75,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Merging Multiple Lists in Python",
-      "description": "In Python, we can merge two or more lists into a single list using various methods. One such method is to combine elements from each of the input lists based on their positions. In this challenge, you will be tasked with writing a function that merges multiple lists into a list of lists.",
-      "meta": {
-        "title": "Python | List Merging | Programming Tutorials",
-        "description": "Learn how to merge multiple lists into a single list of lists in Python. Discover various techniques and explore practical examples.",
-        "keywords": "Python, List Merging, Programming Tutorials, List Manipulation, Data Structures"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Merge Lists",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student Merging Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python中合并多个列表",
@@ -82,29 +93,13 @@
               {
                 "name": "验证学生合并Python脚本的执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -113,21 +108,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_merge.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "merge.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

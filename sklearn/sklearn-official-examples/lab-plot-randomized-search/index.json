@@ -1,10 +1,92 @@
 {
   "type": "lab",
+  "title": "Hyperparameter Optimization: Randomized Search vs Grid Search",
+  "description": "In machine learning, hyperparameters are parameters that are not learned from data, but rather set prior to training. Selecting appropriate hyperparameters is crucial to achieving high accuracy in machine learning models. Two common methods for hyperparameter optimization are randomized search and grid search. In this lab, we will compare these two methods for optimizing hyperparameters of a linear Support Vector Machine (SVM) with Stochastic Gradient Descent (SGD) training.",
+  "meta": {
+    "title": "Hyperparameter Optimization: Randomized vs Grid Search",
+    "description": "Explore the effectiveness of randomized and grid search methods for optimizing hyperparameters of a linear SVM with SGD training.",
+    "keywords": "randomized search, machine learning, sgd, hyperparameter optimization, linear svm, scikit-learn, machine learning playground, grid search, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries and load data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/linear_model",
+          "sklearn/model_selection"
+        ]
+      },
+      {
+        "title": "Create an SVM model",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Randomized search for hyperparameter optimization",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Grid search for hyperparameter optimization",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-randomized-search.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,82 +97,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Hyperparameter Optimization: Randomized Search vs Grid Search",
-      "description": "In machine learning, hyperparameters are parameters that are not learned from data, but rather set prior to training. Selecting appropriate hyperparameters is crucial to achieving high accuracy in machine learning models. Two common methods for hyperparameter optimization are randomized search and grid search. In this lab, we will compare these two methods for optimizing hyperparameters of a linear Support Vector Machine (SVM) with Stochastic Gradient Descent (SGD) training.",
-      "meta": {
-        "title": "Hyperparameter Optimization: Randomized vs Grid Search",
-        "description": "Explore the effectiveness of randomized and grid search methods for optimizing hyperparameters of a linear SVM with SGD training.",
-        "keywords": "randomized search, machine learning, sgd, hyperparameter optimization, linear svm, scikit-learn, machine learning playground, grid search, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries and load data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "Create an SVM model",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Randomized search for hyperparameter optimization",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Grid search for hyperparameter optimization",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "超参数优化：随机搜索与网格搜索",
@@ -111,12 +117,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -128,8 +128,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "用于超参数优化的随机搜索",
@@ -140,8 +139,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "用于超参数优化的网格搜索",
@@ -152,13 +150,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -167,16 +163,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-randomized-search.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

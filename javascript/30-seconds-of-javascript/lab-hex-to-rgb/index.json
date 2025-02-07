@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Convert Hexadecimal to RGB String",
+  "description": "In this lab, we will explore how to convert a hexadecimal color code to an rgb() or rgba() string using JavaScript. We will learn how to use bitwise operators and masking to extract the RGB values from the hex code. The lab will also cover how to handle 3-digit and 6-digit hex codes and how to incorporate an alpha value into the resulting string.",
+  "meta": {
+    "title": "Hex to RGB Conversion | JavaScript | Color Manipulation",
+    "description": "Learn how to convert hexadecimal color codes to RGB or RGBA strings using JavaScript. Explore bitwise operators, masking, and handling 3-digit and 6-digit hex codes.",
+    "keywords": "hex to rgb, javascript, color manipulation, rgb, rgba, bitwise operators, masking"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Hex to RGB",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in ZSH History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/obj_manip",
+          "javascript/spread_rest",
+          "javascript/template_lit",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Convert Hexadecimal to RGB String",
-      "description": "In this lab, we will explore how to convert a hexadecimal color code to an rgb() or rgba() string using JavaScript. We will learn how to use bitwise operators and masking to extract the RGB values from the hex code. The lab will also cover how to handle 3-digit and 6-digit hex codes and how to incorporate an alpha value into the resulting string.",
-      "meta": {
-        "title": "Hex to RGB Conversion | JavaScript | Color Manipulation",
-        "description": "Learn how to convert hexadecimal color codes to RGB or RGBA strings using JavaScript. Explore bitwise operators, masking, and handling 3-digit and 6-digit hex codes.",
-        "keywords": "hex to rgb, javascript, color manipulation, rgb, rgba, bitwise operators, masking"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Hex to RGB",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in ZSH History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/obj_manip",
-              "javascript/spread_rest",
-              "javascript/template_lit",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将十六进制转换为 RGB 字符串",
@@ -80,27 +77,13 @@
               {
                 "name": "在 ZSH 历史记录中验证 Node 命令",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/obj_manip",
-              "javascript/spread_rest",
-              "javascript/template_lit",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

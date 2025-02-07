@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Pluck values from list of dictionaries",
+  "description": "In Python, a dictionary is a collection of key-value pairs. Sometimes, we need to extract specific values from a list of dictionaries. In this challenge, you need to write a function that takes a list of dictionaries and a key as input and returns a list of values corresponding to the specified key.",
+  "meta": {
+    "title": "Python | Dictionary | List of Dictionaries",
+    "description": "Learn how to extract specific values from a list of dictionaries in Python using the pluck() function and list comprehension.",
+    "keywords": "Python, Dictionary, List of Dictionaries, Data Extraction, Pluck Function"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pluck values from list of dictionaries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python 3 Test Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_pluck.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "pluck.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pluck values from list of dictionaries",
-      "description": "In Python, a dictionary is a collection of key-value pairs. Sometimes, we need to extract specific values from a list of dictionaries. In this challenge, you need to write a function that takes a list of dictionaries and a key as input and returns a list of values corresponding to the specified key.",
-      "meta": {
-        "title": "Python | Dictionary | List of Dictionaries",
-        "description": "Learn how to extract specific values from a list of dictionaries in Python using the pluck() function and list comprehension.",
-        "keywords": "Python, Dictionary, List of Dictionaries, Data Extraction, Pluck Function"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pluck values from list of dictionaries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python 3 Test Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从字典列表中提取值",
@@ -78,25 +89,13 @@
               {
                 "name": "验证Python 3测试脚本的执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_pluck.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "pluck.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

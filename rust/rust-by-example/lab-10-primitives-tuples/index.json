@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Exploring Rust Tuples and Transposing Matrices",
+  "description": "In this lab, we explore tuples in Rust. Tuples are collections of values of different types and are constructed using parentheses. They can be used as function arguments and return values, allowing functions to return multiple values. Tuples can also be used as members of other tuples. Rust provides tuple indexing to access values in a tuple. Tuples are printable and can be destructured to create bindings. Additionally, we learn how to add the fmt::Display trait to a struct to customize its printing format. Finally, we are given an activity to implement a transpose function that swaps two elements in a matrix.",
+  "meta": {
+    "title": "Rust Tuples | Programming Tutorials",
+    "description": "Explore the power of tuples in Rust programming language. Learn how to use tuples as function arguments, return values, and matrix operations.",
+    "keywords": "Rust, Tuples, Programming, Tutorials, Matrix, Transpose"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Tuples",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/boolean_type",
+          "rust/expressions_statements",
+          "rust/floating_types",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Rust Tuples and Transposing Matrices",
-      "description": "In this lab, we explore tuples in Rust. Tuples are collections of values of different types and are constructed using parentheses. They can be used as function arguments and return values, allowing functions to return multiple values. Tuples can also be used as members of other tuples. Rust provides tuple indexing to access values in a tuple. Tuples are printable and can be destructured to create bindings. Additionally, we learn how to add the fmt::Display trait to a struct to customize its printing format. Finally, we are given an activity to implement a transpose function that swaps two elements in a matrix.",
-      "meta": {
-        "title": "Rust Tuples | Programming Tutorials",
-        "description": "Explore the power of tuples in Rust programming language. Learn how to use tuples as function arguments, return values, and matrix operations.",
-        "keywords": "Rust, Tuples, Programming, Tutorials, Matrix, Transpose"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Tuples",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/floating_types",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索 Rust 元组与矩阵转置",
@@ -79,26 +76,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/floating_types",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

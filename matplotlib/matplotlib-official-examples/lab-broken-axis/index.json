@@ -1,10 +1,167 @@
 {
   "type": "lab",
+  "title": "Creating Broken Axis Plots in Python",
+  "description": "In data visualization, there are times when we have to deal with outliers that make it difficult to see the details of most of the data. In such cases, we can use a broken axis to zoom in on the majority of the data while still showing the outliers. In this tutorial, we will learn how to create a broken axis plot using Matplotlib in Python.",
+  "meta": {
+    "title": "Python Data Visualization | Broken Axis Plot Tutorial",
+    "description": "Learn how to create a broken axis plot using Matplotlib in Python to visualize data with outliers and focus on the majority of the data.",
+    "keywords": "Python, Data Visualization, Matplotlib, Broken Axis Plot, Outliers"
+  },
   "difficulty": "Beginner",
   "time": 45,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create the Data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Create the Subplots",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans", "python/tuples"]
+      },
+      {
+        "title": "Plot the Data",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/line_plots"]
+      },
+      {
+        "title": "Set the Y-Axis Limits",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/tuples"]
+      },
+      {
+        "title": "Hide the Spines",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans"]
+      },
+      {
+        "title": "Adjust the Ticks",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans"]
+      },
+      {
+        "title": "Create the Cut-Out Slanted Lines",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Show the Plot",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify9.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "broken-axis.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,157 +172,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Broken Axis Plots in Python",
-      "description": "In data visualization, there are times when we have to deal with outliers that make it difficult to see the details of most of the data. In such cases, we can use a broken axis to zoom in on the majority of the data while still showing the outliers. In this tutorial, we will learn how to create a broken axis plot using Matplotlib in Python.",
-      "meta": {
-        "title": "Python Data Visualization | Broken Axis Plot Tutorial",
-        "description": "Learn how to create a broken axis plot using Matplotlib in Python to visualize data with outliers and focus on the majority of the data.",
-        "keywords": "Python, Data Visualization, Matplotlib, Broken Axis Plot, Outliers"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create the Data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Create the Subplots",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans", "python/tuples"]
-          },
-          {
-            "title": "Plot the Data",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/line_plots"]
-          },
-          {
-            "title": "Set the Y-Axis Limits",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/tuples"]
-          },
-          {
-            "title": "Hide the Spines",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans"]
-          },
-          {
-            "title": "Adjust the Ticks",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans"]
-          },
-          {
-            "title": "Create the Cut-Out Slanted Lines",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Show the Plot",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify9.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Python 中创建断轴图",
@@ -186,13 +192,6 @@
                 "file": "verify1.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -204,12 +203,6 @@
                 "file": "verify2.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries"
             ]
           },
           {
@@ -221,8 +214,7 @@
                 "file": "verify3.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": ["python/booleans", "python/tuples"]
+            ]
           },
           {
             "title": "绘制数据",
@@ -233,8 +225,7 @@
                 "file": "verify4.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": ["matplotlib/line_plots"]
+            ]
           },
           {
             "title": "设置 Y 轴范围",
@@ -245,8 +236,7 @@
                 "file": "verify5.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": ["python/comments", "python/tuples"]
+            ]
           },
           {
             "title": "隐藏坐标轴边框",
@@ -257,8 +247,7 @@
                 "file": "verify6.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": ["python/booleans"]
+            ]
           },
           {
             "title": "调整刻度",
@@ -269,8 +258,7 @@
                 "file": "verify7.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": ["python/booleans"]
+            ]
           },
           {
             "title": "创建切口斜线",
@@ -281,16 +269,6 @@
                 "file": "verify8.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -302,13 +280,11 @@
                 "file": "verify9.sh",
                 "hint": "目前此步骤无验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -317,16 +293,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "broken-axis.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Generics in Go 1.18",
+  "description": "This lab introduces the concept of generics in Golang. Starting from version 1.18, Golang has added support for generics, which allows us to write more flexible and reusable code.",
+  "meta": {
+    "title": "Generics in Go 1.18: Unlocking Flexible and Reusable Code",
+    "description": "Explore the power of generics in Golang 1.18, enabling you to write more versatile and reusable code.",
+    "keywords": "generics, type parameters, go, golang, go labs, go playground online, constraints, go lab, go practice"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generics",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Generics Implementation",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/generics"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "generics.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Generics in Go 1.18",
-      "description": "This lab introduces the concept of generics in Golang. Starting from version 1.18, Golang has added support for generics, which allows us to write more flexible and reusable code.",
-      "meta": {
-        "title": "Generics in Go 1.18: Unlocking Flexible and Reusable Code",
-        "description": "Explore the power of generics in Golang 1.18, enabling you to write more versatile and reusable code.",
-        "keywords": "generics, type parameters, go, golang, go labs, go playground online, constraints, go lab, go practice"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generics",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Generics Implementation",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/generics"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go 1.18中的泛型",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go泛型实现",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/generics"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "generics.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

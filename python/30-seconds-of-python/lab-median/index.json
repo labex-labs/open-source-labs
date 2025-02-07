@@ -1,10 +1,69 @@
 {
   "type": "lab",
+  "title": "Median Calculation with Python",
+  "description": "In statistics, the median is a measure of central tendency that represents the middle value of a dataset. It is the value separating the higher half from the lower half of a data sample. In this challenge, you will be required to write a Python function that finds the median of a list of numbers.",
+  "meta": {
+    "title": "Python | Median | Statistics",
+    "description": "Learn how to find the median of a list of numbers using Python. This programming tutorial covers the statistical concept of median and provides a step-by-step guide to implement a custom median function.",
+    "keywords": "Python, Median, Statistics, Programming, Data Analysis"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Median Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/function_definition",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_median.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "median.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +74,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Median Calculation with Python",
-      "description": "In statistics, the median is a measure of central tendency that represents the middle value of a dataset. It is the value separating the higher half from the lower half of a data sample. In this challenge, you will be required to write a Python function that finds the median of a list of numbers.",
-      "meta": {
-        "title": "Python | Median | Statistics",
-        "description": "Learn how to find the median of a list of numbers using Python. This programming tutorial covers the statistical concept of median and provides a step-by-step guide to implement a custom median function.",
-        "keywords": "Python, Median, Statistics, Programming, Data Analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Median Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Python进行中位数计算",
@@ -81,28 +92,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -111,21 +107,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_median.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "median.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

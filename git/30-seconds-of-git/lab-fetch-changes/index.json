@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Fetch Latest Changes from Remote",
+  "description": "Git is a popular version control system used for tracking changes in code. One of the key features of Git is the ability to work with remote repositories. In this lab, you will learn how to fetch the latest changes from a remote repository using Git.",
+  "meta": {
+    "title": "Git Fetch | Remote Repository | Version Control",
+    "description": "Learn how to fetch the latest changes from a remote Git repository and review them before merging into your local project.",
+    "keywords": "Git, Remote Repository, Version Control, Fetch, GitHub"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Fetch Latest Changes from Remote",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that you are fetching the latest changes",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/fetch"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Fetch Latest Changes from Remote",
-      "description": "Git is a popular version control system used for tracking changes in code. One of the key features of Git is the ability to work with remote repositories. In this lab, you will learn how to fetch the latest changes from a remote repository using Git.",
-      "meta": {
-        "title": "Git Fetch | Remote Repository | Version Control",
-        "description": "Learn how to fetch the latest changes from a remote Git repository and review them before merging into your local project.",
-        "keywords": "Git, Remote Repository, Version Control, Fetch, GitHub"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Fetch Latest Changes from Remote",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that you are fetching the latest changes",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/fetch"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从远程获取最新变更",
@@ -70,17 +67,13 @@
               {
                 "name": "验证你正在获取最新变更",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/fetch"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

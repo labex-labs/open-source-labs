@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Serializing Cookies in JavaScript",
+  "description": "In this lab, we will be exploring the concept of serializing cookies in JavaScript. Cookies are an essential part of web development, and it is crucial to understand how to handle them properly. By the end of this lab, you will be able to serialize a cookie name-value pair into a Set-Cookie header string using template literals and encodeURIComponent().",
+  "meta": {
+    "title": "Serializing Cookies in JavaScript | Web Development",
+    "description": "Learn how to serialize cookie name-value pairs into Set-Cookie header strings using JavaScript template literals and encodeURIComponent().",
+    "keywords": "JavaScript, Cookies, Serialization, Web Development, Programming"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Serialize Cookie",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/template_lit",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Serializing Cookies in JavaScript",
-      "description": "In this lab, we will be exploring the concept of serializing cookies in JavaScript. Cookies are an essential part of web development, and it is crucial to understand how to handle them properly. By the end of this lab, you will be able to serialize a cookie name-value pair into a Set-Cookie header string using template literals and encodeURIComponent().",
-      "meta": {
-        "title": "Serializing Cookies in JavaScript | Web Development",
-        "description": "Learn how to serialize cookie name-value pairs into Set-Cookie header strings using JavaScript template literals and encodeURIComponent().",
-        "keywords": "JavaScript, Cookies, Serialization, Web Development, Programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Serialize Cookie",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/template_lit",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在JavaScript中序列化Cookies",
@@ -76,23 +73,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/template_lit",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

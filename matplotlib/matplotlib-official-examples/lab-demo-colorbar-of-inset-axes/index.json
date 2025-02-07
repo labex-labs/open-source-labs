@@ -1,10 +1,130 @@
 {
   "type": "lab",
+  "title": "Adding a Colorbar to Inset Axes",
+  "description": "In this lab, you will learn how to add a colorbar to inset axes using Matplotlib in Python. A colorbar is a visual representation of the mapping of a range of colors to a range of numerical values. An inset axis is a smaller axis that is placed within the larger axis of a plot.",
+  "meta": {
+    "title": "Add Colorbar to Inset Axes | Matplotlib Python Tutorial",
+    "description": "Learn how to add a colorbar to inset axes using Matplotlib in Python. Gain insights into visual representation of numerical values and inset axes.",
+    "keywords": "Matplotlib, Python, Colorbar, Inset Axes, Data Visualization"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries and Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Set the Main Plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Create an Inset Axis",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Add an Image to the Inset Axis",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/heatmaps", "python/tuples"]
+      },
+      {
+        "title": "Add a Colorbar",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/tuples"]
+      },
+      {
+        "title": "Display the Plot",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "demo-colorbar-of-inset-axes.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,120 +135,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Adding a Colorbar to Inset Axes",
-      "description": "In this lab, you will learn how to add a colorbar to inset axes using Matplotlib in Python. A colorbar is a visual representation of the mapping of a range of colors to a range of numerical values. An inset axis is a smaller axis that is placed within the larger axis of a plot.",
-      "meta": {
-        "title": "Add Colorbar to Inset Axes | Matplotlib Python Tutorial",
-        "description": "Learn how to add a colorbar to inset axes using Matplotlib in Python. Gain insights into visual representation of numerical values and inset axes.",
-        "keywords": "Matplotlib, Python, Colorbar, Inset Axes, Data Visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries and Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Set the Main Plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Create an Inset Axis",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Add an Image to the Inset Axis",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/tuples"]
-          },
-          {
-            "title": "Add a Colorbar",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/tuples"]
-          },
-          {
-            "title": "Display the Plot",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "向内嵌轴添加颜色条",
@@ -149,15 +155,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -169,12 +166,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -186,13 +177,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -204,8 +188,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/tuples"]
+            ]
           },
           {
             "title": "添加一个颜色条",
@@ -216,8 +199,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/tuples"]
+            ]
           },
           {
             "title": "显示图表",
@@ -228,13 +210,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -243,16 +223,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "demo-colorbar-of-inset-axes.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

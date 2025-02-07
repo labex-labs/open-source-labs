@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Bifurcate List Based on Function",
+  "description": "In this challenge, you will write a Python function that splits a list into two groups based on the result of a given filtering function. This is a common task in programming, especially when dealing with large datasets.",
+  "meta": {
+    "title": "Python List Bifurcation | Coding Challenges",
+    "description": "Learn how to split a Python list into two groups based on a filtering function. Useful for data manipulation and programming tasks.",
+    "keywords": "Python, List, Bifurcate, Filtering, Programming, Coding Challenges"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Bifurcate List Based on Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Bifurcate By Python3 Script",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_bifurcate_by.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "bifurcate_by.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Bifurcate List Based on Function",
-      "description": "In this challenge, you will write a Python function that splits a list into two groups based on the result of a given filtering function. This is a common task in programming, especially when dealing with large datasets.",
-      "meta": {
-        "title": "Python List Bifurcation | Coding Challenges",
-        "description": "Learn how to split a Python list into two groups based on a filtering function. Useful for data manipulation and programming tasks.",
-        "keywords": "Python, List, Bifurcate, Filtering, Programming, Coding Challenges"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Bifurcate List Based on Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Bifurcate By Python3 Script",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "根据函数对列表进行二分",
@@ -79,26 +90,13 @@
               {
                 "name": "验证Python3的按条件二分脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_bifurcate_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "bifurcate_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

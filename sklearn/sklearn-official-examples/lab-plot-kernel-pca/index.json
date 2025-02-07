@@ -1,10 +1,123 @@
 {
   "type": "lab",
+  "title": "Principal Component Analysis with Kernel PCA",
+  "description": "Principal Component Analysis (PCA) is a technique used to reduce the dimensionality of a dataset while preserving most of its original variation. However, PCA is a linear method and may not work well when the data has a non-linear structure. In such cases, Kernel PCA can be used instead of PCA. In this lab, we will demonstrate the differences between PCA and Kernel PCA and how to use them.",
+  "meta": {
+    "title": "Principal Component Analysis (PCA) | Kernel PCA | Dimensionality Reduction",
+    "description": "Learn the differences between PCA and Kernel PCA, and how to use them for dimensionality reduction in your data analysis projects.",
+    "keywords": "Principal Component Analysis, Kernel PCA, Dimensionality Reduction, Data Analysis, Machine Learning"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load the dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
+      },
+      {
+        "title": "Visualize the dataset",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Use PCA to project the dataset",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/decomposition"]
+      },
+      {
+        "title": "Use Kernel PCA to project the dataset",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/decomposition"]
+      },
+      {
+        "title": "Visualize the PCA and Kernel PCA projections",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Back-project the Kernel PCA projection to the original space",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Visualize the reconstructed dataset",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-kernel-pca.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,117 +128,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Principal Component Analysis with Kernel PCA",
-      "description": "Principal Component Analysis (PCA) is a technique used to reduce the dimensionality of a dataset while preserving most of its original variation. However, PCA is a linear method and may not work well when the data has a non-linear structure. In such cases, Kernel PCA can be used instead of PCA. In this lab, we will demonstrate the differences between PCA and Kernel PCA and how to use them.",
-      "meta": {
-        "title": "Principal Component Analysis (PCA) | Kernel PCA | Dimensionality Reduction",
-        "description": "Learn the differences between PCA and Kernel PCA, and how to use them for dimensionality reduction in your data analysis projects.",
-        "keywords": "Principal Component Analysis, Kernel PCA, Dimensionality Reduction, Data Analysis, Machine Learning"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load the dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "Visualize the dataset",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Use PCA to project the dataset",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/decomposition"]
-          },
-          {
-            "title": "Use Kernel PCA to project the dataset",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/decomposition"]
-          },
-          {
-            "title": "Visualize the PCA and Kernel PCA projections",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Back-project the Kernel PCA projection to the original space",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Visualize the reconstructed dataset",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用核主成分分析的主成分分析",
@@ -146,11 +148,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -162,8 +159,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "使用主成分分析（PCA）对数据集进行投影",
@@ -174,8 +170,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/decomposition"]
+            ]
           },
           {
             "title": "使用核主成分分析（Kernel PCA）对数据集进行投影",
@@ -186,8 +181,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/decomposition"]
+            ]
           },
           {
             "title": "可视化主成分分析（PCA）和核主成分分析（Kernel PCA）的投影",
@@ -198,8 +192,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "将核主成分分析（Kernel PCA）投影反向映射回原始空间",
@@ -210,8 +203,7 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "可视化重建后的数据集",
@@ -222,13 +214,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -237,16 +227,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-kernel-pca.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

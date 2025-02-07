@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Undo the Last Commit",
+  "description": "Git is a powerful version control system that allows developers to track changes made to their codebase. One of the most common tasks in Git is undoing a commit. This lab will teach you how to undo the last commit without rewriting history.",
+  "meta": {
+    "title": "Undo the Last Git Commit",
+    "description": "Learn how to undo the last commit in Git without rewriting history, a crucial skill for version control management.",
+    "keywords": "revert, version control, git labs, git, commit history, git playground, undo commit"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Undo the Last Commit",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the success of the undo",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Undo the Last Commit",
-      "description": "Git is a powerful version control system that allows developers to track changes made to their codebase. One of the most common tasks in Git is undoing a commit. This lab will teach you how to undo the last commit without rewriting history.",
-      "meta": {
-        "title": "Undo the Last Git Commit",
-        "description": "Learn how to undo the last commit in Git without rewriting history, a crucial skill for version control management.",
-        "keywords": "revert, version control, git labs, git, commit history, git playground, undo commit"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Undo the Last Commit",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the success of the undo",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "撤销最后一次提交",
@@ -70,17 +67,13 @@
               {
                 "name": "验证撤销操作是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

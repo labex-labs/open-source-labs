@@ -1,10 +1,176 @@
 {
   "type": "lab",
+  "title": "Create Customized Stock Price Graphs",
+  "description": "In this lab, you will learn how to create a graph of multiple time series that demonstrates custom styling of plot frame, tick lines, tick labels, and line graph properties using Matplotlib. The graph will display stock prices of various companies over a period of 32 years.",
+  "meta": {
+    "title": "Matplotlib Time Series Visualization | Python Programming Tutorial",
+    "description": "Learn how to create a graph of multiple time series with custom styling of plot frame, tick lines, tick labels, and line graph properties using Matplotlib in this Python programming tutorial.",
+    "keywords": "Matplotlib, Time Series, Data Visualization, Python Programming, Jupyter Notebook"
+  },
   "difficulty": "Beginner",
   "time": 45,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Load the stock data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/dictionaries",
+          "python/lambda_functions",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Create a figure and axis object",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Define the colors to be used in the plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/lists", "python/tuples"]
+      },
+      {
+        "title": "Set the names and tickers of the stocks to be plotted",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists"]
+      },
+      {
+        "title": "Manually adjust the label positions vertically to avoid overlapping",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/dictionaries", "python/for_loops", "python/lists"]
+      },
+      {
+        "title": "Plot each stock separately with its own color",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/comments",
+          "python/file_reading_writing",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Set the limits of the x-axis and y-axis, and add title and grid",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/log_scale",
+          "python/booleans",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Display the graph",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify9.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock-prices.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,170 +181,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create Customized Stock Price Graphs",
-      "description": "In this lab, you will learn how to create a graph of multiple time series that demonstrates custom styling of plot frame, tick lines, tick labels, and line graph properties using Matplotlib. The graph will display stock prices of various companies over a period of 32 years.",
-      "meta": {
-        "title": "Matplotlib Time Series Visualization | Python Programming Tutorial",
-        "description": "Learn how to create a graph of multiple time series with custom styling of plot frame, tick lines, tick labels, and line graph properties using Matplotlib in this Python programming tutorial.",
-        "keywords": "Matplotlib, Time Series, Data Visualization, Python Programming, Jupyter Notebook"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Load the stock data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/dictionaries",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create a figure and axis object",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Define the colors to be used in the plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/lists", "python/tuples"]
-          },
-          {
-            "title": "Set the names and tickers of the stocks to be plotted",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists"]
-          },
-          {
-            "title": "Manually adjust the label positions vertically to avoid overlapping",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Plot each stock separately with its own color",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/file_reading_writing",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Set the limits of the x-axis and y-axis, and add title and grid",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/log_scale",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Display the graph",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify9.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建自定义股票价格图表",
@@ -199,14 +201,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -218,14 +212,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/dictionaries",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -237,8 +223,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "定义绘图中要使用的颜色",
@@ -249,8 +234,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "设置要绘制的股票的名称和股票代码",
@@ -261,8 +245,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists"]
+            ]
           },
           {
             "title": "手动垂直调整标签位置以避免重叠",
@@ -273,11 +256,6 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists"
             ]
           },
           {
@@ -289,16 +267,6 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/file_reading_writing",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -310,13 +278,6 @@
                 "file": "verify8.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/log_scale",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -328,13 +289,11 @@
                 "file": "verify9.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -343,16 +302,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "stock-prices.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

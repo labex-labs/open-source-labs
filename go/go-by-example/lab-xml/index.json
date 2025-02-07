@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Golang XML Mapping and Manipulation",
+  "description": "This lab aims to test your knowledge of working with XML in Golang. You will be required to create a struct that can be mapped to XML, marshal and unmarshal XML data, and use field tags to define the structure of the XML output.",
+  "meta": {
+    "title": "Mastering XML in Go | Golang XML Tutorials",
+    "description": "Learn how to work with XML in Golang. Create XML-mapped structs, marshal and unmarshal XML data, and use field tags to define XML output structure.",
+    "keywords": "Golang, XML, XML Mapping, XML Marshaling, XML Unmarshaling, XML Field Tags"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "XML",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Plant ID 27 in XML Output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/xml"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "xml.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Golang XML Mapping and Manipulation",
-      "description": "This lab aims to test your knowledge of working with XML in Golang. You will be required to create a struct that can be mapped to XML, marshal and unmarshal XML data, and use field tags to define the structure of the XML output.",
-      "meta": {
-        "title": "Mastering XML in Go | Golang XML Tutorials",
-        "description": "Learn how to work with XML in Golang. Create XML-mapped structs, marshal and unmarshal XML data, and use field tags to define XML output structure.",
-        "keywords": "Golang, XML, XML Mapping, XML Marshaling, XML Unmarshaling, XML Field Tags"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "XML",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Plant ID 27 in XML Output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/xml"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言中的XML映射与操作",
@@ -70,17 +76,13 @@
               {
                 "name": "在XML输出中验证植物ID 27",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/xml"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "xml.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

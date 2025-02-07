@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "String Manipulation in Go",
+  "description": "The strings package in Golang provides many useful string-related functions. This lab aims to test your understanding of some of these functions.",
+  "meta": {
+    "title": "String Manipulation in Go",
+    "description": "Explore the powerful string functions in Golang's standard library through this comprehensive tutorial.",
+    "keywords": "string manipulation, go, string functions, golang, strings package, go labs, go playground online, go lab, go practice"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "String Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify String Functions Contain True",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/strings"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "string-functions.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "String Manipulation in Go",
-      "description": "The strings package in Golang provides many useful string-related functions. This lab aims to test your understanding of some of these functions.",
-      "meta": {
-        "title": "String Manipulation in Go",
-        "description": "Explore the powerful string functions in Golang's standard library through this comprehensive tutorial.",
-        "keywords": "string manipulation, go, string functions, golang, strings package, go labs, go playground online, go lab, go practice"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "String Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify String Functions Contain True",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/strings"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言中的字符串操作",
@@ -70,17 +76,13 @@
               {
                 "name": "验证字符串函数包含True",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/strings"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "string-functions.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

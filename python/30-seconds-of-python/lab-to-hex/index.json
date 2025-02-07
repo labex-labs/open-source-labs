@@ -1,10 +1,62 @@
 {
   "type": "lab",
+  "title": "Number to Hex",
+  "description": "In Python, we can easily convert a decimal number to its hexadecimal equivalent using the hex() function. In this challenge, you will be asked to write a function that takes a decimal number as an argument and returns its hexadecimal representation.",
+  "meta": {
+    "title": "Python | Decimal to Hexadecimal Conversion",
+    "description": "Learn how to easily convert decimal numbers to their hexadecimal equivalents using Python's built-in hex() function. Enhance your programming skills with this concise tutorial.",
+    "keywords": "Python, Decimal, Hexadecimal, Conversion, Programming, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Number to Hex",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python3 Script in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_to_hex.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "to_hex.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,47 +67,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Number to Hex",
-      "description": "In Python, we can easily convert a decimal number to its hexadecimal equivalent using the hex() function. In this challenge, you will be asked to write a function that takes a decimal number as an argument and returns its hexadecimal representation.",
-      "meta": {
-        "title": "Python | Decimal to Hexadecimal Conversion",
-        "description": "Learn how to easily convert decimal numbers to their hexadecimal equivalents using Python's built-in hex() function. Enhance your programming skills with this concise tutorial.",
-        "keywords": "Python, Decimal, Hexadecimal, Conversion, Programming, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Number to Hex",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python3 Script in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "十进制数转十六进制",
@@ -74,21 +85,13 @@
               {
                 "name": "在临时目录中验证Python3脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -97,21 +100,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_to_hex.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "to_hex.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

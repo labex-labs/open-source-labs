@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "ROC with Cross Validation",
+  "description": "In this lab, we will learn how to estimate and visualize the variance of the Receiver Operating Characteristic (ROC) metric using cross-validation in Python. ROC curves are used in binary classification to measure the performance of a model by plotting the true positive rate (TPR) against the false positive rate (FPR). We will use the Scikit-learn library to load the iris dataset, create noisy features, and classify the dataset with Support Vector Machine (SVM). We will then plot the ROC curves with cross-validation and calculate the mean Area Under the Curve (AUC) to see the variability of the classifier output when the training set is split into different subsets.",
+  "meta": {
+    "title": "Estimating ROC Variance with Cross-Validation",
+    "description": "Learn how to estimate and visualize the variance of the Receiver Operating Characteristic (ROC) metric using cross-validation in Python.",
+    "keywords": "auc, machine learning, cross validation, binary classification, roc, scikit-learn, machine learning playground, svm, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load and prepare data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Classification and ROC analysis",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics", "sklearn/model_selection"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-roc-crossval.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,57 +68,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "ROC with Cross Validation",
-      "description": "In this lab, we will learn how to estimate and visualize the variance of the Receiver Operating Characteristic (ROC) metric using cross-validation in Python. ROC curves are used in binary classification to measure the performance of a model by plotting the true positive rate (TPR) against the false positive rate (FPR). We will use the Scikit-learn library to load the iris dataset, create noisy features, and classify the dataset with Support Vector Machine (SVM). We will then plot the ROC curves with cross-validation and calculate the mean Area Under the Curve (AUC) to see the variability of the classifier output when the training set is split into different subsets.",
-      "meta": {
-        "title": "Estimating ROC Variance with Cross-Validation",
-        "description": "Learn how to estimate and visualize the variance of the Receiver Operating Characteristic (ROC) metric using cross-validation in Python.",
-        "keywords": "auc, machine learning, cross validation, binary classification, roc, scikit-learn, machine learning playground, svm, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load and prepare data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Classification and ROC analysis",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/metrics",
-              "sklearn/model_selection"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用交叉验证的 ROC",
@@ -86,8 +88,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "分类与ROC分析",
@@ -98,17 +99,11 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/metrics",
-              "sklearn/model_selection"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -117,16 +112,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-roc-crossval.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

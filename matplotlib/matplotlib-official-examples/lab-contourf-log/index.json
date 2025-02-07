@@ -1,10 +1,102 @@
 {
   "type": "lab",
+  "title": "Contourf and Log Color Scale",
+  "description": "In this lab, we will learn how to use the contourf function in Matplotlib to create filled contour plots with a logarithmic color scale. We will use a dataset with positive and negative values to demonstrate this feature.",
+  "meta": {
+    "title": "Contourf and Log Color Scale: Mastering Matplotlib Visualizations",
+    "description": "Learn how to create filled contour plots with a logarithmic color scale in Matplotlib, using a dataset with positive and negative values.",
+    "keywords": "matplotlib, python, contourf, log color scale, data visualization"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Generate the dataset",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Create the plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/contour_plots", "python/tuples"]
+      },
+      {
+        "title": "Customize the plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "contourf-log.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,92 +107,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Contourf and Log Color Scale",
-      "description": "In this lab, we will learn how to use the contourf function in Matplotlib to create filled contour plots with a logarithmic color scale. We will use a dataset with positive and negative values to demonstrate this feature.",
-      "meta": {
-        "title": "Contourf and Log Color Scale: Mastering Matplotlib Visualizations",
-        "description": "Learn how to create filled contour plots with a logarithmic color scale in Matplotlib, using a dataset with positive and negative values.",
-        "keywords": "matplotlib, python, contourf, log color scale, data visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Generate the dataset",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create the plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/contour_plots", "python/tuples"]
-          },
-          {
-            "title": "Customize the plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "填充等高线图与对数颜色刻度",
@@ -121,13 +127,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -139,12 +138,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -156,8 +149,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/contour_plots", "python/tuples"]
+            ]
           },
           {
             "title": "自定义图表",
@@ -168,17 +160,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/tuples",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -187,16 +173,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "contourf-log.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

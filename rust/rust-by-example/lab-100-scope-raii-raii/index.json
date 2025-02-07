@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Rust RAII Resource Management",
+  "description": "In this lab, we will explore the concept of RAII in Rust, which enforces resource acquisition is initialization. This means that when objects go out of scope, their destructors are called and their owned resources are freed, eliminating the need for manual memory management and ensuring protection against resource leak bugs. We will also learn about the Drop trait in Rust, which allows custom destructor logic to be implemented for types that require it.",
+  "meta": {
+    "title": "Rust RAII Resource Management: Ensuring Reliable Memory Management",
+    "description": "Explore the power of RAII in Rust, where resource acquisition is initialization, and learn how to leverage the Drop trait for custom destructor logic.",
+    "keywords": "rust playground, raii, rust tutor, memory management, rust online compiler, rust commands, rust practice, drop trait, rust online, rust online playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "RAII",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/drop_trait",
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/string_type",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust RAII Resource Management",
-      "description": "In this lab, we will explore the concept of RAII in Rust, which enforces resource acquisition is initialization. This means that when objects go out of scope, their destructors are called and their owned resources are freed, eliminating the need for manual memory management and ensuring protection against resource leak bugs. We will also learn about the Drop trait in Rust, which allows custom destructor logic to be implemented for types that require it.",
-      "meta": {
-        "title": "Rust RAII Resource Management: Ensuring Reliable Memory Management",
-        "description": "Explore the power of RAII in Rust, where resource acquisition is initialization, and learn how to leverage the Drop trait for custom destructor logic.",
-        "keywords": "rust playground, raii, rust tutor, memory management, rust online compiler, rust commands, rust practice, drop trait, rust online, rust online playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "RAII",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/drop_trait",
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust RAII 资源管理",
@@ -80,27 +77,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/drop_trait",
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

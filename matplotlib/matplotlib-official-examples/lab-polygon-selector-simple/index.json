@@ -1,10 +1,118 @@
 {
   "type": "lab",
+  "title": "Creating a Polygon in Matplotlib",
+  "description": "Matplotlib is a Python library used for data visualization. In this lab, we will be using Matplotlib to create a polygon programmatically or interactively. The polygon can be used to highlight a region of interest or to mask out a certain area of a plot.",
+  "meta": {
+    "title": "Data Visualization with Matplotlib | Python Programming",
+    "description": "Learn how to create polygons programmatically or interactively using the Matplotlib library in Python for data visualization and highlighting regions of interest.",
+    "keywords": "Matplotlib, Python, Data Visualization, Polygon, Programming"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/interactive_backends",
+          "matplotlib/widgets_sliders",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create a Polygon Programmatically",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/lambda_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Polygon Interactively",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/lambda_functions",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Putting It All Together",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/interactive_backends",
+          "matplotlib/widgets_sliders",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lambda_functions",
+          "python/lists",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "polygon-selector-simple.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,108 +123,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating a Polygon in Matplotlib",
-      "description": "Matplotlib is a Python library used for data visualization. In this lab, we will be using Matplotlib to create a polygon programmatically or interactively. The polygon can be used to highlight a region of interest or to mask out a certain area of a plot.",
-      "meta": {
-        "title": "Data Visualization with Matplotlib | Python Programming",
-        "description": "Learn how to create polygons programmatically or interactively using the Matplotlib library in Python for data visualization and highlighting regions of interest.",
-        "keywords": "Matplotlib, Python, Data Visualization, Polygon, Programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/interactive_backends",
-              "matplotlib/widgets_sliders",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create a Polygon Programmatically",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Polygon Interactively",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lambda_functions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Putting It All Together",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/interactive_backends",
-              "matplotlib/widgets_sliders",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Matplotlib中创建多边形",
@@ -137,15 +143,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/interactive_backends",
-              "matplotlib/widgets_sliders",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/using_packages"
             ]
           },
           {
@@ -157,12 +154,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -174,11 +165,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lambda_functions",
-              "python/tuples"
             ]
           },
           {
@@ -190,27 +176,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/interactive_backends",
-              "matplotlib/widgets_sliders",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -219,16 +189,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "polygon-selector-simple.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

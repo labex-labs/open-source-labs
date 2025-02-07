@@ -1,10 +1,86 @@
 {
   "type": "lab",
+  "title": "jQuery Event Basics",
+  "description": "Welcome to the jQuery documentation! This lab will give you an introduction to jQuery Event.",
+  "meta": {
+    "title": "Mastering jQuery Events",
+    "description": "Discover the power of jQuery events and learn how to create responsive web experiences.",
+    "keywords": "events, jquery, dom manipulation, user interaction, web development"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Setting Up Event Responses on DOM Elements",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["jquery/event_methods"]
+      },
+      {
+        "title": "Extending Events to New Page Elements",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify for 'appendTo' inclusion",
+            "file": "verify2.sh",
+            "hint": "Please use appendTo.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Setting Up Multiple Event Responses",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify for 'mouseover' inclusion",
+            "file": "verify3.sh",
+            "hint": "Please use mouseover.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "jquery.min.js",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,71 +91,6 @@
     "repo": "https://learn.jquery.com/events/event-basics/"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "jQuery Event Basics",
-      "description": "Welcome to the jQuery documentation! This lab will give you an introduction to jQuery Event.",
-      "meta": {
-        "title": "Mastering jQuery Events",
-        "description": "Discover the power of jQuery events and learn how to create responsive web experiences.",
-        "keywords": "events, jquery, dom manipulation, user interaction, web development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Setting Up Event Responses on DOM Elements",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["jquery/event_methods"]
-          },
-          {
-            "title": "Extending Events to New Page Elements",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify for 'appendTo' inclusion",
-                "file": "verify2.sh",
-                "hint": "Please use appendTo.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Setting Up Multiple Event Responses",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify for 'mouseover' inclusion",
-                "file": "verify3.sh",
-                "hint": "Please use mouseover.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "jQuery 事件基础",
@@ -98,12 +109,9 @@
               {
                 "name": "验证 Web 服务的运行状态",
                 "file": "verify1.sh",
-                "hint": "请点击右下角的“上线”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               }
-            ],
-            "skills": ["jquery/event_methods"]
+            ]
           },
           {
             "title": "将事件扩展到新的页面元素",
@@ -112,12 +120,9 @@
               {
                 "name": "验证是否包含 'appendTo'",
                 "file": "verify2.sh",
-                "hint": "请使用 appendTo。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请使用 appendTo。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "设置多个事件响应",
@@ -126,17 +131,13 @@
               {
                 "name": "验证是否包含'mouseover'",
                 "file": "verify3.sh",
-                "hint": "请使用 mouseover。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请使用 mouseover。"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -145,21 +146,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "jquery.min.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

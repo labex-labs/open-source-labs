@@ -1,70 +1,76 @@
 {
   "type": "lab",
+  "title": "Form Processing and Cutting Down Our Code",
+  "description": "This tutorial begins where Creating the Public Interface Views left off. We're continuing the web-poll application and will focus on form processing and cutting down our code.",
+  "meta": {
+    "title": "Django Web Development | Python Programming Tutorials",
+    "description": "Explore Django web development with Python programming tutorials. Learn form processing, reducing code, and more to build robust web applications.",
+    "keywords": "Django, Python, web development, form processing, code optimization, web applications"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Write a minimal form",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Poll 1 Vote Response",
+            "file": "verify1.sh",
+            "hint": "Make sure django is running on 0.0.0.0:8080, and show the result like screenshot.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["django/django_urls", "django/request_and_response"]
+      },
+      {
+        "title": "Use generic views: Less code is better",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Django Views and URLs",
+            "file": "verify2.sh",
+            "hint": "Make sure you have modified the urls.py and views.py.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "django/built_in_views",
+          "django/django_urls",
+          "django/request_and_response"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Form Processing and Cutting Down Our Code",
-      "description": "This tutorial begins where Creating the Public Interface Views left off. We're continuing the web-poll application and will focus on form processing and cutting down our code.",
-      "meta": {
-        "title": "Django Web Development | Python Programming Tutorials",
-        "description": "Explore Django web development with Python programming tutorials. Learn form processing, reducing code, and more to build robust web applications.",
-        "keywords": "Django, Python, web development, form processing, code optimization, web applications"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Write a minimal form",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Poll 1 Vote Response",
-                "file": "verify1.sh",
-                "hint": "Make sure django is running on 0.0.0.0:8080, and show the result like screenshot.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["django/django_urls", "django/request_and_response"]
-          },
-          {
-            "title": "Use generic views: Less code is better",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Django Views and URLs",
-                "file": "verify2.sh",
-                "hint": "Make sure you have modified the urls.py and views.py.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "django/built_in_views",
-              "django/django_urls",
-              "django/request_and_response"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "表单处理与减少代码量",
@@ -83,12 +89,9 @@
               {
                 "name": "验证投票1的响应",
                 "file": "verify1.sh",
-                "hint": "确保Django在0.0.0.0:8080上运行，并显示如截图所示的结果。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "确保Django在0.0.0.0:8080上运行，并显示如截图所示的结果。"
               }
-            ],
-            "skills": ["django/django_urls", "django/request_and_response"]
+            ]
           },
           {
             "title": "使用通用视图：代码越少越好",
@@ -97,21 +100,13 @@
               {
                 "name": "验证Django视图和URL",
                 "file": "verify2.sh",
-                "hint": "确保你已修改urls.py和views.py。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "确保你已修改urls.py和views.py。"
               }
-            ],
-            "skills": [
-              "django/built_in_views",
-              "django/django_urls",
-              "django/request_and_response"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -120,16 +115,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "*.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

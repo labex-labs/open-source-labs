@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Exploring Rust Infinite Loops",
+  "description": "In this lab, we explore the usage of the loop keyword in Rust, which allows us to create an infinite loop. We can exit the loop at any time using the break statement and skip the remaining iterations using the continue statement. The provided example code demonstrates how to increment a counter and print its value until it reaches a certain condition, utilizing continue to skip one iteration and break to exit the loop entirely.",
+  "meta": {
+    "title": "Rust Programming | Infinite Loops | Control Flow",
+    "description": "Explore the usage of the 'loop' keyword in Rust, learn how to create infinite loops, exit them with 'break', and skip iterations with 'continue'. Discover Rust's control flow features.",
+    "keywords": "Rust, Programming, Infinite Loops, Control Flow, Break, Continue"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "loop",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/mutable_variables",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Rust Infinite Loops",
-      "description": "In this lab, we explore the usage of the loop keyword in Rust, which allows us to create an infinite loop. We can exit the loop at any time using the break statement and skip the remaining iterations using the continue statement. The provided example code demonstrates how to increment a counter and print its value until it reaches a certain condition, utilizing continue to skip one iteration and break to exit the loop entirely.",
-      "meta": {
-        "title": "Rust Programming | Infinite Loops | Control Flow",
-        "description": "Explore the usage of the 'loop' keyword in Rust, learn how to create infinite loops, exit them with 'break', and skip iterations with 'continue'. Discover Rust's control flow features.",
-        "keywords": "Rust, Programming, Infinite Loops, Control Flow, Break, Continue"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "loop",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/mutable_variables",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索 Rust 无限循环",
@@ -76,23 +73,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/mutable_variables",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

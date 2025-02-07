@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Command-Line Argument Parsing in Rust",
+  "description": "In this lab, we have an example of argument parsing using pattern matching in Rust. The program takes command-line arguments and performs different operations based on the number and type of arguments passed. If no arguments are passed, it prints a message. If a single argument is passed and it can be parsed as the integer 42, it prints 'This is the answer!'. If a command and an integer argument are passed, it performs either an increase or decrease operation on the integer. If any other number of arguments are passed, it shows a help message explaining the correct usage of the program.",
+  "meta": {
+    "title": "Rust Argument Parsing | Command-Line Programming",
+    "description": "Learn how to use pattern matching for argument parsing in Rust. Perform different operations based on the number and type of arguments passed.",
+    "keywords": "Rust, Argument Parsing, Pattern Matching, Command-Line Programming, Increase, Decrease"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Argument parsing",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Command-Line Argument Parsing in Rust",
-      "description": "In this lab, we have an example of argument parsing using pattern matching in Rust. The program takes command-line arguments and performs different operations based on the number and type of arguments passed. If no arguments are passed, it prints a message. If a single argument is passed and it can be parsed as the integer 42, it prints 'This is the answer!'. If a command and an integer argument are passed, it performs either an increase or decrease operation on the integer. If any other number of arguments are passed, it shows a help message explaining the correct usage of the program.",
-      "meta": {
-        "title": "Rust Argument Parsing | Command-Line Programming",
-        "description": "Learn how to use pattern matching for argument parsing in Rust. Perform different operations based on the number and type of arguments passed.",
-        "keywords": "Rust, Argument Parsing, Pattern Matching, Command-Line Programming, Increase, Decrease"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Argument parsing",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 中的命令行参数解析",
@@ -79,26 +76,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,109 @@
 {
   "type": "lab",
+  "title": "Digit Classification with RBM Features",
+  "description": "This lab focuses on the use of Bernoulli Restricted Boltzmann Machine (RBM) for classification of handwritten digits. The RBM feature extractor is combined with a logistic regression classifier to predict the digits. The dataset used is a greyscale image data where pixel values can be interpreted as degrees of blackness on a white background.",
+  "meta": {
+    "title": "Handwritten Digit Classification | Bernoulli RBM | Machine Learning",
+    "description": "Learn how to use Bernoulli Restricted Boltzmann Machine (RBM) for handwritten digit classification, combined with logistic regression.",
+    "keywords": "Bernoulli RBM, Handwritten Digit Classification, Machine Learning, Logistic Regression, Image Processing"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Data Preparation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/model_selection",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "Model Definition",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/linear_model",
+          "sklearn/neural_network",
+          "sklearn/pipeline"
+        ]
+      },
+      {
+        "title": "Training",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/base"]
+      },
+      {
+        "title": "Evaluation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics"]
+      },
+      {
+        "title": "Plotting",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-rbm-logistic-classification.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,99 +114,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Digit Classification with RBM Features",
-      "description": "This lab focuses on the use of Bernoulli Restricted Boltzmann Machine (RBM) for classification of handwritten digits. The RBM feature extractor is combined with a logistic regression classifier to predict the digits. The dataset used is a greyscale image data where pixel values can be interpreted as degrees of blackness on a white background.",
-      "meta": {
-        "title": "Handwritten Digit Classification | Bernoulli RBM | Machine Learning",
-        "description": "Learn how to use Bernoulli Restricted Boltzmann Machine (RBM) for handwritten digit classification, combined with logistic regression.",
-        "keywords": "Bernoulli RBM, Handwritten Digit Classification, Machine Learning, Logistic Regression, Image Processing"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Data Preparation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Model Definition",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/neural_network",
-              "sklearn/pipeline"
-            ]
-          },
-          {
-            "title": "Training",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/base"]
-          },
-          {
-            "title": "Evaluation",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
-          },
-          {
-            "title": "Plotting",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用RBM特征进行数字分类",
@@ -128,12 +134,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -145,12 +145,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/neural_network",
-              "sklearn/pipeline"
             ]
           },
           {
@@ -162,8 +156,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/base"]
+            ]
           },
           {
             "title": "评估",
@@ -174,8 +167,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
+            ]
           },
           {
             "title": "绘图",
@@ -186,13 +178,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -201,16 +191,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-rbm-logistic-classification.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

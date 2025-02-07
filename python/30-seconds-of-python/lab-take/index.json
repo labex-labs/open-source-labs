@@ -1,10 +1,64 @@
 {
   "type": "lab",
+  "title": "Remove List Elements",
+  "description": "In Python, we can easily remove elements from a list using slice notation. Slice notation allows us to create a new list by taking a portion of an existing list. In this challenge, you will be asked to write a function that removes a specified number of elements from the beginning of a list.",
+  "meta": {
+    "title": "Python List Manipulation | Remove List Elements",
+    "description": "Learn how to easily remove elements from a Python list using slice notation. Discover a function that removes a specified number of elements from the beginning of a list.",
+    "keywords": "Python, list manipulation, remove list elements, slice notation, programming tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Remove List Elements",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/default_arguments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_take.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "take.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +69,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Remove List Elements",
-      "description": "In Python, we can easily remove elements from a list using slice notation. Slice notation allows us to create a new list by taking a portion of an existing list. In this challenge, you will be asked to write a function that removes a specified number of elements from the beginning of a list.",
-      "meta": {
-        "title": "Python List Manipulation | Remove List Elements",
-        "description": "Learn how to easily remove elements from a Python list using slice notation. Discover a function that removes a specified number of elements from the beginning of a list.",
-        "keywords": "Python, list manipulation, remove list elements, slice notation, programming tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Remove List Elements",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "移除列表元素",
@@ -76,23 +87,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -101,21 +102,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_take.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "take.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

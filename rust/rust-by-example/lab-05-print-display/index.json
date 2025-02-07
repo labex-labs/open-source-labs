@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Customizing Rust Struct Output with fmt::Display",
+  "description": "In this lab, you will learn how to implement the fmt::Display trait in Rust to customize the output appearance of a structure. You will also explore the difference between fmt::Display and fmt::Debug, as well as the limitations of fmt::Display for generic container types. Finally, you will have an activity to implement the fmt::Display trait for a new Complex struct and print it in a specific format.",
+  "meta": {
+    "title": "Rust Programming | Implementing fmt::Display Trait",
+    "description": "Learn how to implement the fmt::Display trait in Rust to customize the output appearance of a structure, explore the difference between fmt::Display and fmt::Debug, and implement the fmt::Display trait for a new Complex struct.",
+    "keywords": "Rust, Programming, fmt::Display, fmt::Debug, Complex, Struct"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Display",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/floating_types",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Customizing Rust Struct Output with fmt::Display",
-      "description": "In this lab, you will learn how to implement the fmt::Display trait in Rust to customize the output appearance of a structure. You will also explore the difference between fmt::Display and fmt::Debug, as well as the limitations of fmt::Display for generic container types. Finally, you will have an activity to implement the fmt::Display trait for a new Complex struct and print it in a specific format.",
-      "meta": {
-        "title": "Rust Programming | Implementing fmt::Display Trait",
-        "description": "Learn how to implement the fmt::Display trait in Rust to customize the output appearance of a structure, explore the difference between fmt::Display and fmt::Debug, and implement the fmt::Display trait for a new Complex struct.",
-        "keywords": "Rust, Programming, fmt::Display, fmt::Debug, Complex, Struct"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Display",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/floating_types",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用fmt::Display自定义Rust结构体输出",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/floating_types",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

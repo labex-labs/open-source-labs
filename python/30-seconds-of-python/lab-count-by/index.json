@@ -1,10 +1,75 @@
 {
   "type": "lab",
+  "title": "Group Elements by Function",
+  "description": "In this lab, you will learn how to group the elements of a list based on a given function and count the number of occurrences of each group using Python's built-in functions and the `collections.defaultdict` module.",
+  "meta": {
+    "title": "Grouping List Elements by Function",
+    "description": "Learn how to group and count elements in a Python list based on a given function.",
+    "keywords": "grouping, python, list, function, count"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Count Grouped Elements",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Count By Python Script",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lambda_functions",
+          "python/lists",
+          "python/math_random",
+          "python/numeric_types",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_count_by.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "count_by.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,60 +80,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Group Elements by Function",
-      "description": "In this lab, you will learn how to group the elements of a list based on a given function and count the number of occurrences of each group using Python's built-in functions and the `collections.defaultdict` module.",
-      "meta": {
-        "title": "Grouping List Elements by Function",
-        "description": "Learn how to group and count elements in a Python list based on a given function.",
-        "keywords": "grouping, python, list, function, count"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Count Grouped Elements",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Count By Python Script",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "按函数对元素进行分组",
@@ -87,34 +98,13 @@
               {
                 "name": "验证 Python 计数脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -123,21 +113,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_count_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "count_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

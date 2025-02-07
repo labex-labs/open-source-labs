@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Walk Through Object",
+  "description": "In this lab, we will explore the concept of creating a generator function that walks through all the keys of a given object using recursion. The purpose of this lab is to provide a hands-on experience for learners to understand how to use yield and yield* expressions in combination with for...of loops and Object.keys() to iterate over object keys and their values. By the end of this lab, learners will have a practical understanding of how to recursively walk through an object and generate an array of keys representing the current path and the corresponding values.",
+  "meta": {
+    "title": "Recursively Explore Object Keys with Generators",
+    "description": "Learn how to use generator functions and yield expressions to walk through object keys recursively.",
+    "keywords": "javascript, javascript practice, recursion, javascript practice online, object, keys, javascript playground, javascript lab, yield, javascript tutor"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Walk Through Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/loops",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Walk Through Object",
-      "description": "In this lab, we will explore the concept of creating a generator function that walks through all the keys of a given object using recursion. The purpose of this lab is to provide a hands-on experience for learners to understand how to use yield and yield* expressions in combination with for...of loops and Object.keys() to iterate over object keys and their values. By the end of this lab, learners will have a practical understanding of how to recursively walk through an object and generate an array of keys representing the current path and the corresponding values.",
-      "meta": {
-        "title": "Recursively Explore Object Keys with Generators",
-        "description": "Learn how to use generator functions and yield expressions to walk through object keys recursively.",
-        "keywords": "javascript, javascript practice, recursion, javascript practice online, object, keys, javascript playground, javascript lab, yield, javascript tutor"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Walk Through Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "遍历对象",
@@ -79,26 +76,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,266 +1,128 @@
 {
   "type": "lab",
+  "title": "Mixin Classes and Cooperative Inheritance",
+  "description": "In this lab, you will learn about mixin classes and cooperative inheritance in Python.",
+  "meta": {
+    "title": "Python Programming | Cooperative Inheritance | Column Formatting",
+    "description": "Explore the challenges of column formatting in Python programming and learn about mixin classes and cooperative inheritance to enhance your coding skills.",
+    "keywords": "Python, Programming, Mixin Classes, Cooperative Inheritance, Column Formatting, Table Formatting"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Mixin Classes and Cooperative Inheritance",
-      "description": "In this lab, you will learn about mixin classes and cooperative inheritance in Python.",
-      "meta": {
-        "title": "Python Programming | Cooperative Inheritance | Column Formatting",
-        "description": "Explore the challenges of column formatting in Python programming and learn about mixin classes and cooperative inheritance to enhance your coding skills.",
-        "keywords": "Python, Programming, Mixin Classes, Cooperative Inheritance, Column Formatting, Table Formatting"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "The Trouble with Column Formatting",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify TextTableFormatter and print_table Usage",
-                "file": "verify1.sh",
-                "hint": "Please execute the python code in step 1.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Going Sideways",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify UpperHeadersMixin in tableformat.py",
-                "file": "verify2.sh",
-                "hint": "Please implement the 'ColumnFormatMixin' and 'UpperHeadersMixin' classes in the 'tableformat.py' file and run the python code in step 2.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "Making it Sane",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify ColumnFormatMixin and UpperHeadersMixin Implementation",
-                "file": "verify3.sh",
-                "hint": "Please modify the 'create_formatter()' function in the 'tableformat.py' file as required and execute the python code in step 3.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step3_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "混入类和协作继承",
-      "description": "在本实验中，你将学习Python中的混入类和协作继承。",
-      "meta": {
-        "title": "Python编程 | 协作继承 | 列格式化",
-        "description": "探索Python编程中列格式化的挑战，并学习混入类和协作继承以提升你的编码技能。",
-        "keywords": "Python,编程,混入类,协作继承,列格式化,表格格式化"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "列格式化的问题",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证TextTableFormatter和print_table的用法",
-                "file": "verify1.sh",
-                "hint": "请执行步骤1中的Python代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "横向拓展",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证tableformat.py中的UpperHeadersMixin",
-                "file": "verify2.sh",
-                "hint": "请在'tableformat.py'文件中实现'ColumnFormatMixin'和'UpperHeadersMixin'类，并运行步骤2中的Python代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "使其合理",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证ColumnFormatMixin和UpperHeadersMixin的实现",
-                "file": "verify3.sh",
-                "hint": "请根据要求修改'tableformat.py'文件中的'create_formatter()'函数，并执行步骤3中的Python代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step3_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "The Trouble with Column Formatting",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify TextTableFormatter and print_table Usage",
+            "file": "verify1.sh",
+            "hint": "Please execute the python code in step 1.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Going Sideways",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify UpperHeadersMixin in tableformat.py",
+            "file": "verify2.sh",
+            "hint": "Please implement the 'ColumnFormatMixin' and 'UpperHeadersMixin' classes in the 'tableformat.py' file and run the python code in step 2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Making it Sane",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify ColumnFormatMixin and UpperHeadersMixin Implementation",
+            "file": "verify3.sh",
+            "hint": "Please modify the 'create_formatter()' function in the 'tableformat.py' file as required and execute the python code in step 3.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types"
+        ],
+        "solutions": ["step3_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -285,5 +147,73 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "混入类和协作继承",
+      "description": "在本实验中，你将学习Python中的混入类和协作继承。",
+      "meta": {
+        "title": "Python编程 | 协作继承 | 列格式化",
+        "description": "探索Python编程中列格式化的挑战，并学习混入类和协作继承以提升你的编码技能。",
+        "keywords": "Python,编程,混入类,协作继承,列格式化,表格格式化"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列格式化的问题",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证TextTableFormatter和print_table的用法",
+                "file": "verify1.sh",
+                "hint": "请执行步骤1中的Python代码。"
+              }
+            ]
+          },
+          {
+            "title": "横向拓展",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证tableformat.py中的UpperHeadersMixin",
+                "file": "verify2.sh",
+                "hint": "请在'tableformat.py'文件中实现'ColumnFormatMixin'和'UpperHeadersMixin'类，并运行步骤2中的Python代码。"
+              }
+            ],
+            "solutions": ["step2_solution.py"]
+          },
+          {
+            "title": "使其合理",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证ColumnFormatMixin和UpperHeadersMixin的实现",
+                "file": "verify3.sh",
+                "hint": "请根据要求修改'tableformat.py'文件中的'create_formatter()'函数，并执行步骤3中的Python代码。"
+              }
+            ],
+            "solutions": ["step3_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

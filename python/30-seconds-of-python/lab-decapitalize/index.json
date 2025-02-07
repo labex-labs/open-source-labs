@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Decapitalize First Letter in Python",
+  "description": "In Python, strings are immutable, meaning that they cannot be changed once they are created. However, there are times when we need to modify a string, such as when we want to decapitalize the first letter. This can be useful when dealing with user input or when formatting strings for display purposes. In this challenge, you will be tasked with writing a function that decapitalizes the first letter of a string.",
+  "meta": {
+    "title": "Python String Manipulation | Decapitalize First Letter",
+    "description": "Learn how to decapitalize the first letter of a string in Python, with an optional feature to convert the rest of the string to uppercase.",
+    "keywords": "Python, string manipulation, decapitalize, first letter, uppercase"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Decapitalize String",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Decapitalize Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/conditional_statements",
+          "python/default_arguments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_decapitalize.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "decapitalize.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Decapitalize First Letter in Python",
-      "description": "In Python, strings are immutable, meaning that they cannot be changed once they are created. However, there are times when we need to modify a string, such as when we want to decapitalize the first letter. This can be useful when dealing with user input or when formatting strings for display purposes. In this challenge, you will be tasked with writing a function that decapitalizes the first letter of a string.",
-      "meta": {
-        "title": "Python String Manipulation | Decapitalize First Letter",
-        "description": "Learn how to decapitalize the first letter of a string in Python, with an optional feature to convert the rest of the string to uppercase.",
-        "keywords": "Python, string manipulation, decapitalize, first letter, uppercase"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Decapitalize String",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Decapitalize Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python中把字符串首字母大写转换为小写",
@@ -78,25 +89,13 @@
               {
                 "name": "验证将字符串首字母大写转换为小写的Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_decapitalize.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "decapitalize.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

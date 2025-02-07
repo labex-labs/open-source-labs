@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Partial Move Destructuring in Rust",
+  "description": "In this lab, we learn about partial moves within the destructuring of a single variable, where both by-move and by-reference pattern bindings can be used simultaneously. This results in a partial move of the variable, allowing some parts to be moved while others can still be referenced. If a parent variable is partially moved, it cannot be used as a whole afterwards, but the parts that are only referenced and not moved can still be used.",
+  "meta": {
+    "title": "Partial Move Destructuring in Rust: Unlock Flexible Variable Handling",
+    "description": "Discover the power of partial moves in Rust's destructuring, allowing you to selectively move and reference parts of a variable.",
+    "keywords": "rust playground, variable handling, destructuring, programming tutorial, partial move, rust tutor, rust online compiler, rust commands, rust practice, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Partial moves",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Partial Move Destructuring in Rust",
-      "description": "In this lab, we learn about partial moves within the destructuring of a single variable, where both by-move and by-reference pattern bindings can be used simultaneously. This results in a partial move of the variable, allowing some parts to be moved while others can still be referenced. If a parent variable is partially moved, it cannot be used as a whole afterwards, but the parts that are only referenced and not moved can still be used.",
-      "meta": {
-        "title": "Partial Move Destructuring in Rust: Unlock Flexible Variable Handling",
-        "description": "Discover the power of partial moves in Rust's destructuring, allowing you to selectively move and reference parts of a variable.",
-        "keywords": "rust playground, variable handling, destructuring, programming tutorial, partial move, rust tutor, rust online compiler, rust commands, rust practice, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Partial moves",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 中的部分移动解构",
@@ -80,27 +77,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

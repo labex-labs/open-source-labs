@@ -1,424 +1,207 @@
 {
   "type": "lab",
+  "title": "Iterate Like a Pro",
+  "description": "In this lab, you will learn how to iterate like a pro in Python.",
+  "meta": {
+    "title": "Iterate Like a Pro: Mastering Python Iteration Techniques",
+    "description": "Explore essential Python iteration skills and learn how to iterate like a pro.",
+    "keywords": "data processing, iteration, python, loops, unpacking"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Iterate Like a Pro",
-      "description": "In this lab, you will learn how to iterate like a pro in Python.",
-      "meta": {
-        "title": "Iterate Like a Pro: Mastering Python Iteration Techniques",
-        "description": "Explore essential Python iteration skills and learn how to iterate like a pro.",
-        "keywords": "data processing, iteration, python, loops, unpacking"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Setting up some data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python CSV File Operations",
-                "file": "verify1.sh",
-                "hint": "Please grab a few lines of data from the CSV file.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/file_opening_closing",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Basic Iteration and Unpacking",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python History Usage",
-                "file": "verify2.sh",
-                "hint": "Please execute the python program statement in step 2.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Counting with enumerate()",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Student's Use of Enumerate Function",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions in step 3 to use the 'enumerate()' function.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Using the zip() function",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Python History for Zip and Dict Usage",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions in step 4 to use the 'zip()' function.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Generator Expressions",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Python History Commands",
-                "file": "verify5.sh",
-                "hint": "Please execute the python program statement in step 5.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/iterators",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "Generator Expressions and Reduction Functions",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "Verify Python History Commands",
-                "file": "verify6.sh",
-                "hint": "Please execute the python program statement in step 6.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Saving a lot of memory",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "Verify Python History for read_rides_as_dicts, lambda, tracemalloc, and get_traced_memory",
-                "file": "verify7.sh",
-                "hint": "Please execute the python program statement in step 7.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "像专业人士一样迭代",
-      "description": "在本实验中，你将学习如何在Python中像专业人士一样进行迭代。",
-      "meta": {
-        "title": "像专业人士一样迭代：掌握Python迭代技巧",
-        "description": "探索基本的Python迭代技能，学习如何像专业人士一样进行迭代。",
-        "keywords": "数据处理, 迭代, Python, 循环, 解包"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "设置一些数据",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python CSV文件操作",
-                "file": "verify1.sh",
-                "hint": "请从CSV文件中获取几行数据。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/file_opening_closing",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "基本迭代与解包",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python历史使用情况",
-                "file": "verify2.sh",
-                "hint": "请执行步骤2中的Python程序语句。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "使用enumerate()进行计数",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证学生对enumerate函数的使用",
-                "file": "verify3.sh",
-                "hint": "请按照步骤3中的说明使用'enumerate()'函数。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "使用zip()函数",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证zip和字典使用的Python历史记录",
-                "file": "verify4.sh",
-                "hint": "请按照步骤4中的说明使用'zip()'函数。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "生成器表达式",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证Python历史命令",
-                "file": "verify5.sh",
-                "hint": "请执行步骤5中的Python程序语句。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/iterators",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "生成器表达式与归约函数",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "验证Python历史命令",
-                "file": "verify6.sh",
-                "hint": "请执行步骤6中的Python程序语句。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "节省大量内存",
-            "text": "zh/step7.md",
-            "verify": [
-              {
-                "name": "验证read_rides_as_dicts、lambda、tracemalloc和get_traced_memory的Python历史记录",
-                "file": "verify7.sh",
-                "hint": "请执行步骤7中的Python程序语句。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Setting up some data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python CSV File Operations",
+            "file": "verify1.sh",
+            "hint": "Please grab a few lines of data from the CSV file.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/file_opening_closing",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Basic Iteration and Unpacking",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python History Usage",
+            "file": "verify2.sh",
+            "hint": "Please execute the python program statement in step 2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Counting with enumerate()",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Student's Use of Enumerate Function",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions in step 3 to use the 'enumerate()' function.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Using the zip() function",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Python History for Zip and Dict Usage",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions in step 4 to use the 'zip()' function.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Generator Expressions",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Python History Commands",
+            "file": "verify5.sh",
+            "hint": "Please execute the python program statement in step 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/iterators",
+          "python/lists",
+          "python/python_shell"
+        ]
+      },
+      {
+        "title": "Generator Expressions and Reduction Functions",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "Verify Python History Commands",
+            "file": "verify6.sh",
+            "hint": "Please execute the python program statement in step 6.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Saving a lot of memory",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "Verify Python History for read_rides_as_dicts, lambda, tracemalloc, and get_traced_memory",
+            "file": "verify7.sh",
+            "hint": "Please execute the python program statement in step 7.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lambda_functions",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -443,5 +226,115 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "像专业人士一样迭代",
+      "description": "在本实验中，你将学习如何在Python中像专业人士一样进行迭代。",
+      "meta": {
+        "title": "像专业人士一样迭代：掌握Python迭代技巧",
+        "description": "探索基本的Python迭代技能，学习如何像专业人士一样进行迭代。",
+        "keywords": "数据处理, 迭代, Python, 循环, 解包"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "设置一些数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python CSV文件操作",
+                "file": "verify1.sh",
+                "hint": "请从CSV文件中获取几行数据。"
+              }
+            ]
+          },
+          {
+            "title": "基本迭代与解包",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python历史使用情况",
+                "file": "verify2.sh",
+                "hint": "请执行步骤2中的Python程序语句。"
+              }
+            ]
+          },
+          {
+            "title": "使用enumerate()进行计数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证学生对enumerate函数的使用",
+                "file": "verify3.sh",
+                "hint": "请按照步骤3中的说明使用'enumerate()'函数。"
+              }
+            ]
+          },
+          {
+            "title": "使用zip()函数",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证zip和字典使用的Python历史记录",
+                "file": "verify4.sh",
+                "hint": "请按照步骤4中的说明使用'zip()'函数。"
+              }
+            ]
+          },
+          {
+            "title": "生成器表达式",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Python历史命令",
+                "file": "verify5.sh",
+                "hint": "请执行步骤5中的Python程序语句。"
+              }
+            ]
+          },
+          {
+            "title": "生成器表达式与归约函数",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "验证Python历史命令",
+                "file": "verify6.sh",
+                "hint": "请执行步骤6中的Python程序语句。"
+              }
+            ]
+          },
+          {
+            "title": "节省大量内存",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "验证read_rides_as_dicts、lambda、tracemalloc和get_traced_memory的Python历史记录",
+                "file": "verify7.sh",
+                "hint": "请执行步骤7中的Python程序语句。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

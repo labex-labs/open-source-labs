@@ -1,10 +1,75 @@
 {
   "type": "lab",
+  "title": "Pixel Importances with Parallel Forest of Trees",
+  "description": "In this lab, we will use the scikit-learn library to train a random forest on the Olivetti Faces dataset and evaluate the impurity-based feature importance. We will use the feature importances to create a heat map of the pixel importances. We will also parallelize the construction and computation of the predictions within multiple jobs.",
+  "meta": {
+    "title": "Machine Learning | Random Forest | Olivetti Faces Dataset",
+    "description": "Learn how to train a random forest model on the Olivetti Faces dataset and evaluate the feature importance using scikit-learn in this programming tutorial.",
+    "keywords": "machine learning, random forest, olivetti faces dataset, feature importance, scikit-learn"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load the data and model fitting",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/ensemble"]
+      },
+      {
+        "title": "Evaluate Feature Importance",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Interpret the Heatmap",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-forest-importances-faces.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,65 +80,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pixel Importances with Parallel Forest of Trees",
-      "description": "In this lab, we will use the scikit-learn library to train a random forest on the Olivetti Faces dataset and evaluate the impurity-based feature importance. We will use the feature importances to create a heat map of the pixel importances. We will also parallelize the construction and computation of the predictions within multiple jobs.",
-      "meta": {
-        "title": "Machine Learning | Random Forest | Olivetti Faces Dataset",
-        "description": "Learn how to train a random forest model on the Olivetti Faces dataset and evaluate the feature importance using scikit-learn in this programming tutorial.",
-        "keywords": "machine learning, random forest, olivetti faces dataset, feature importance, scikit-learn"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load the data and model fitting",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/ensemble"]
-          },
-          {
-            "title": "Evaluate Feature Importance",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Interpret the Heatmap",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用并行决策树森林的像素重要性",
@@ -94,8 +100,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/ensemble"]
+            ]
           },
           {
             "title": "评估特征重要性",
@@ -106,8 +111,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "解读热图",
@@ -118,13 +122,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -133,16 +135,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-forest-importances-faces.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

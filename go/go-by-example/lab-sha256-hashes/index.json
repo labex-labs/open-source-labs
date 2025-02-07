@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Compute SHA256 Hashes in Go",
+  "description": "This lab aims to demonstrate how to compute SHA256 hashes in Go. SHA256 hashes are commonly used to compute short identities for binary or text blobs.",
+  "meta": {
+    "title": "Go | SHA256 Hashes | Cryptographic Hash Functions | Lab",
+    "description": "Learn how to compute SHA256 hashes in Go, a commonly used cryptographic hash function for securing binary or text data.",
+    "keywords": "Go, SHA256, Hashes, Cryptography, Hash Functions, Security"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "SHA256 Hashes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify SHA256 Hash Computation",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/sha256_hashes"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "sha256-hashes.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Compute SHA256 Hashes in Go",
-      "description": "This lab aims to demonstrate how to compute SHA256 hashes in Go. SHA256 hashes are commonly used to compute short identities for binary or text blobs.",
-      "meta": {
-        "title": "Go | SHA256 Hashes | Cryptographic Hash Functions | Lab",
-        "description": "Learn how to compute SHA256 hashes in Go, a commonly used cryptographic hash function for securing binary or text data.",
-        "keywords": "Go, SHA256, Hashes, Cryptography, Hash Functions, Security"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "SHA256 Hashes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify SHA256 Hash Computation",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/sha256_hashes"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Go语言中计算SHA256哈希值",
@@ -70,17 +76,13 @@
               {
                 "name": "验证SHA256哈希值计算",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/sha256_hashes"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "sha256-hashes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Create a New Branch",
+  "description": "In Git, a branch is a lightweight movable pointer to a commit. Creating a new branch allows you to work on a new feature or bug fix without affecting the main codebase. In this lab, you will learn how to create a new branch in Git.",
+  "meta": {
+    "title": "Create a New Branch in Git",
+    "description": "Learn how to create a new branch in Git and work on a new feature or bug fix without affecting the main codebase.",
+    "keywords": "git labs, branch, git, create, feature, git playground, new"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a New Branch",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify if a new branch is created",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/branch"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create a New Branch",
-      "description": "In Git, a branch is a lightweight movable pointer to a commit. Creating a new branch allows you to work on a new feature or bug fix without affecting the main codebase. In this lab, you will learn how to create a new branch in Git.",
-      "meta": {
-        "title": "Create a New Branch in Git",
-        "description": "Learn how to create a new branch in Git and work on a new feature or bug fix without affecting the main codebase.",
-        "keywords": "git labs, branch, git, create, feature, git playground, new"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create a New Branch",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify if a new branch is created",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/branch"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建新分支",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否创建了新分支",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/branch"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

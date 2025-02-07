@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Query String to Object",
+  "description": "In this lab, we will explore how to convert a query string or URL into an object using JavaScript. We will use the String.prototype.split() method to extract the parameters from the URL, then create an object using the URLSearchParams constructor and convert it into an array of key-value pairs. Finally, we will use Array.prototype.reduce() to convert the array into a JavaScript object. This lab will help you understand how to manipulate and extract data from URLs and query strings in JavaScript.",
+  "meta": {
+    "title": "Convert Query String to JavaScript Object",
+    "description": "Learn how to convert a query string or URL into a JavaScript object using the URLSearchParams constructor and Array.reduce().",
+    "keywords": "query string, javascript, javascript practice, javascript practice online, array reduce, javascript playground, javascript lab, urlsearchparams, url, javascript tutor"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Query String to Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/spread_rest",
+          "javascript/variables",
+          "javascript/web_sec"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Query String to Object",
-      "description": "In this lab, we will explore how to convert a query string or URL into an object using JavaScript. We will use the String.prototype.split() method to extract the parameters from the URL, then create an object using the URLSearchParams constructor and convert it into an array of key-value pairs. Finally, we will use Array.prototype.reduce() to convert the array into a JavaScript object. This lab will help you understand how to manipulate and extract data from URLs and query strings in JavaScript.",
-      "meta": {
-        "title": "Convert Query String to JavaScript Object",
-        "description": "Learn how to convert a query string or URL into a JavaScript object using the URLSearchParams constructor and Array.reduce().",
-        "keywords": "query string, javascript, javascript practice, javascript practice online, array reduce, javascript playground, javascript lab, urlsearchparams, url, javascript tutor"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Query String to Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables",
-              "javascript/web_sec"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将查询字符串转换为对象",
@@ -79,26 +76,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，通过输入'node'并按回车键可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables",
-              "javascript/web_sec"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

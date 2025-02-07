@@ -1,10 +1,142 @@
 {
   "type": "lab",
+  "title": "Signals in Flask for Application Lifecycle",
+  "description": "In this lab, you will learn how to use signals in Flask, which are a lightweight way to notify subscribers of certain events during the lifecycle of the application and each request. Signals allow you to perform actions in response to specific events without directly affecting the application code. They are useful for testing, metrics, auditing, and more.",
+  "meta": {
+    "title": "Flask Signals | Programming Tutorials | Web Development",
+    "description": "Learn how to use signals in Flask, a lightweight way to notify subscribers of certain events during the lifecycle of the application and each request.",
+    "keywords": "Flask, Signals, Web Development, Programming Tutorials, Python"
+  },
   "difficulty": "Beginner",
   "time": 40,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Installing Flask and Blinker",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Importing the Required Modules",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/useful_internals"]
+      },
+      {
+        "title": "Creating a Flask Application",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object", "flask/useful_internals"]
+      },
+      {
+        "title": "Creating a Namespace for Signals",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object"]
+      },
+      {
+        "title": "Creating a Signal",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object", "flask/sessions"]
+      },
+      {
+        "title": "Subscribing to a Signal",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/incoming_request_data"]
+      },
+      {
+        "title": "Emitting a Signal",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+      },
+      {
+        "title": "Running the Application",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object", "flask/useful_internals"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,141 +155,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Signals in Flask for Application Lifecycle",
-      "description": "In this lab, you will learn how to use signals in Flask, which are a lightweight way to notify subscribers of certain events during the lifecycle of the application and each request. Signals allow you to perform actions in response to specific events without directly affecting the application code. They are useful for testing, metrics, auditing, and more.",
-      "meta": {
-        "title": "Flask Signals | Programming Tutorials | Web Development",
-        "description": "Learn how to use signals in Flask, a lightweight way to notify subscribers of certain events during the lifecycle of the application and each request.",
-        "keywords": "Flask, Signals, Web Development, Programming Tutorials, Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Installing Flask and Blinker",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Importing the Required Modules",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/useful_internals"]
-          },
-          {
-            "title": "Creating a Flask Application",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
-          },
-          {
-            "title": "Creating a Namespace for Signals",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/application_object"]
-          },
-          {
-            "title": "Creating a Signal",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/application_object", "flask/sessions"]
-          },
-          {
-            "title": "Subscribing to a Signal",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/incoming_request_data"]
-          },
-          {
-            "title": "Emitting a Signal",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
-          },
-          {
-            "title": "Running the Application",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "Flask 中用于应用程序生命周期的信号",
       "description": "在本实验中，你将学习如何在 Flask 中使用信号，这是一种轻量级的方式，用于在应用程序和每个请求的生命周期内通知订阅者特定事件。信号使你能够响应特定事件执行操作，而无需直接影响应用程序代码。它们在测试、指标、审计等方面很有用。",
@@ -175,12 +172,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "导入所需模块",
@@ -189,12 +183,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/useful_internals"]
+            ]
           },
           {
             "title": "创建一个Flask应用程序",
@@ -203,12 +194,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
+            ]
           },
           {
             "title": "为信号创建一个命名空间",
@@ -217,12 +205,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/application_object"]
+            ]
           },
           {
             "title": "创建一个信号",
@@ -231,12 +216,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/application_object", "flask/sessions"]
+            ]
           },
           {
             "title": "订阅一个信号",
@@ -245,12 +227,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/incoming_request_data"]
+            ]
           },
           {
             "title": "发送一个信号",
@@ -259,12 +238,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify7.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+            ]
           },
           {
             "title": "运行应用程序",
@@ -273,17 +249,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify8.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

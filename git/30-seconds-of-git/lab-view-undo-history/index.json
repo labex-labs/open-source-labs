@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "View Undo History",
+  "description": "Git is a powerful version control system that allows developers to track changes to their codebase. However, sometimes we make mistakes and need to undo changes that we've made. Git provides several ways to undo changes, but it can be difficult to keep track of all the actions we've taken. In this challenge, you'll learn how to view the 'undo' history in Git using the git reflog command.",
+  "meta": {
+    "title": "Git Undo History | Version Control Tutorial",
+    "description": "Learn how to view the 'undo' history in Git using the git reflog command and undo changes to your codebase effectively.",
+    "keywords": "Git, version control, undo history, git reflog, code changes, codebase, tutorial"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "View 'Undo' History",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful view",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/reflog"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "View Undo History",
-      "description": "Git is a powerful version control system that allows developers to track changes to their codebase. However, sometimes we make mistakes and need to undo changes that we've made. Git provides several ways to undo changes, but it can be difficult to keep track of all the actions we've taken. In this challenge, you'll learn how to view the 'undo' history in Git using the git reflog command.",
-      "meta": {
-        "title": "Git Undo History | Version Control Tutorial",
-        "description": "Learn how to view the 'undo' history in Git using the git reflog command and undo changes to your codebase effectively.",
-        "keywords": "Git, version control, undo history, git reflog, code changes, codebase, tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "View 'Undo' History",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful view",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/reflog"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "查看撤销历史记录",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功查看",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/reflog"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

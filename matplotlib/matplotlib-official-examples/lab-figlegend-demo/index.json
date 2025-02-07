@@ -1,10 +1,127 @@
 {
   "type": "lab",
+  "title": "Creating Matplotlib Legends for Data Visualization",
+  "description": "In data visualization, legends help the viewer understand what they are looking at. Legends in Matplotlib are labels that describe the elements of a graph. This tutorial will show how to create legends for a Matplotlib figure.",
+  "meta": {
+    "title": "Matplotlib Legends | Data Visualization Tutorial",
+    "description": "Learn how to create legends for Matplotlib figures in this data visualization tutorial. Enhance your data analysis skills with this comprehensive guide.",
+    "keywords": "Matplotlib, Data Visualization, Legends, Python, NumPy"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Creating a Basic Plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/line_plots", "python/tuples"]
+      },
+      {
+        "title": "Adding a Legend",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/legend_config", "python/lists"]
+      },
+      {
+        "title": "Customizing the Legend",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/legend_config", "python/lists"]
+      },
+      {
+        "title": "Creating a Legend for Subplots",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Placing the Legend Outside the Axes",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "figlegend-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,117 +132,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Matplotlib Legends for Data Visualization",
-      "description": "In data visualization, legends help the viewer understand what they are looking at. Legends in Matplotlib are labels that describe the elements of a graph. This tutorial will show how to create legends for a Matplotlib figure.",
-      "meta": {
-        "title": "Matplotlib Legends | Data Visualization Tutorial",
-        "description": "Learn how to create legends for Matplotlib figures in this data visualization tutorial. Enhance your data analysis skills with this comprehensive guide.",
-        "keywords": "Matplotlib, Data Visualization, Legends, Python, NumPy"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Creating a Basic Plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/line_plots", "python/tuples"]
-          },
-          {
-            "title": "Adding a Legend",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/legend_config", "python/lists"]
-          },
-          {
-            "title": "Customizing the Legend",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/legend_config", "python/lists"]
-          },
-          {
-            "title": "Creating a Legend for Subplots",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Placing the Legend Outside the Axes",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "为数据可视化创建Matplotlib图例",
@@ -146,13 +152,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -164,8 +163,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/line_plots", "python/tuples"]
+            ]
           },
           {
             "title": "添加一个图例",
@@ -176,8 +174,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/legend_config", "python/lists"]
+            ]
           },
           {
             "title": "自定义图例",
@@ -188,8 +185,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/legend_config", "python/lists"]
+            ]
           },
           {
             "title": "为子图创建图例",
@@ -200,12 +196,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -217,18 +207,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -237,16 +220,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "figlegend-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

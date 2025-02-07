@@ -1,10 +1,130 @@
 {
   "type": "lab",
+  "title": "Matplotlib Colormap Normalizations",
+  "description": "In this lab, we will learn how to use Matplotlib to map colormaps onto data in non-linear ways. We will demonstrate the use of norm to create logarithmic, power-law, symmetric logarithmic, and custom normalizations. We will also learn how to use BoundaryNorm to provide boundaries for colors.",
+  "meta": {
+    "title": "Matplotlib | Colormaps | Normalization | Jupyter Notebook",
+    "description": "Learn how to use Matplotlib to map colormaps onto data in non-linear ways, including logarithmic, power-law, symmetric logarithmic, and custom normalizations.",
+    "keywords": "Matplotlib, Colormaps, Normalization, Jupyter Notebook, Data Visualization"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Lognorm",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "PowerNorm",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "SymLogNorm",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Custom Norm",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/constructor",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/lists",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "BoundaryNorm",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/build_in_functions", "python/lists", "python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "colormap-normalizations.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,124 +135,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Colormap Normalizations",
-      "description": "In this lab, we will learn how to use Matplotlib to map colormaps onto data in non-linear ways. We will demonstrate the use of norm to create logarithmic, power-law, symmetric logarithmic, and custom normalizations. We will also learn how to use BoundaryNorm to provide boundaries for colors.",
-      "meta": {
-        "title": "Matplotlib | Colormaps | Normalization | Jupyter Notebook",
-        "description": "Learn how to use Matplotlib to map colormaps onto data in non-linear ways, including logarithmic, power-law, symmetric logarithmic, and custom normalizations.",
-        "keywords": "Matplotlib, Colormaps, Normalization, Jupyter Notebook, Data Visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Lognorm",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "PowerNorm",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "SymLogNorm",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Custom Norm",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "BoundaryNorm",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 颜色映射归一化",
@@ -153,13 +155,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -171,13 +166,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -189,13 +177,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -207,20 +188,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -232,17 +199,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -251,16 +212,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "colormap-normalizations.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

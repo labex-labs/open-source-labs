@@ -1,10 +1,130 @@
 {
   "type": "lab",
+  "title": "Nested Pie Charts with Matplotlib",
+  "description": "Pie charts are popular data visualization tools used to represent data in a circular form. However, there are times when you might want to create a nested version of the pie chart, known as the donut chart. This tutorial will guide you through creating nested pie charts using Matplotlib, a popular data visualization library in Python.",
+  "meta": {
+    "title": "Nested Pie Charts | Data Visualization | Python Matplotlib",
+    "description": "Learn how to create nested pie charts, also known as donut charts, using Python's Matplotlib library. Improve your data visualization skills.",
+    "keywords": "nested pie charts, donut charts, data visualization, Python, Matplotlib"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create a nested pie chart using ax.pie",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/pie_charts",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Create a nested pie chart using ax.bar",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/bar_charts",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Customize the Nested Pie Chart",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/pie_charts",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Save the Nested Pie Chart",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/saving_figures", "python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "nested-pie.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,120 +135,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Nested Pie Charts with Matplotlib",
-      "description": "Pie charts are popular data visualization tools used to represent data in a circular form. However, there are times when you might want to create a nested version of the pie chart, known as the donut chart. This tutorial will guide you through creating nested pie charts using Matplotlib, a popular data visualization library in Python.",
-      "meta": {
-        "title": "Nested Pie Charts | Data Visualization | Python Matplotlib",
-        "description": "Learn how to create nested pie charts, also known as donut charts, using Python's Matplotlib library. Improve your data visualization skills.",
-        "keywords": "nested pie charts, donut charts, data visualization, Python, Matplotlib"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create a nested pie chart using ax.pie",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/pie_charts",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create a nested pie chart using ax.bar",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Customize the Nested Pie Chart",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/pie_charts",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Save the Nested Pie Chart",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/saving_figures", "python/tuples"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib绘制嵌套饼图",
@@ -149,13 +155,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -167,15 +166,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/pie_charts",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -187,16 +177,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -208,15 +188,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/pie_charts",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -228,13 +199,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/saving_figures", "python/tuples"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -243,16 +212,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "nested-pie.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

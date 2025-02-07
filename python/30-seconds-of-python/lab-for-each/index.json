@@ -1,10 +1,64 @@
 {
   "type": "lab",
+  "title": "Execute Function for Each List Element",
+  "description": "In Python, it is common to need to execute a function for each element in a list. This can be done using a for loop, but it can be tedious to write out the loop every time. In this challenge, you will create a function that takes a list and a function as arguments and executes the function for each element in the list.",
+  "meta": {
+    "title": "Python | List Manipulation | Function Execution",
+    "description": "Learn how to execute a function for each element in a Python list using the for_each() function. Enhance your programming skills with this concise and effective tutorial.",
+    "keywords": "Python, List Manipulation, Function Execution, for_each, Programming, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Execute Function for Each List Element",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python 3 Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_for_each.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "for_each.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +69,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Execute Function for Each List Element",
-      "description": "In Python, it is common to need to execute a function for each element in a list. This can be done using a for loop, but it can be tedious to write out the loop every time. In this challenge, you will create a function that takes a list and a function as arguments and executes the function for each element in the list.",
-      "meta": {
-        "title": "Python | List Manipulation | Function Execution",
-        "description": "Learn how to execute a function for each element in a Python list using the for_each() function. Enhance your programming skills with this concise and effective tutorial.",
-        "keywords": "Python, List Manipulation, Function Execution, for_each, Programming, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Execute Function for Each List Element",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python 3 Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "对列表的每个元素执行函数",
@@ -76,23 +87,13 @@
               {
                 "name": "在临时目录中验证Python 3脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -101,21 +102,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_for_each.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "for_each.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

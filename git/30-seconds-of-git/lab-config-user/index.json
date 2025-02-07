@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Configure Git User Information",
+  "description": "Git is a popular version control system used by developers to manage their code. When you make changes to a repository, Git tracks who made those changes. To do this, Git needs to know your user information, such as your name and email address. In this lab, you will learn how to configure your user information for Git.",
+  "meta": {
+    "title": "Git Playground | Version Control | Developer Tools",
+    "description": "Learn how to configure your user information for Git, a popular version control system used by developers to manage their code.",
+    "keywords": "git, version control, developer tools, code management, user configuration"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Configure Git User Information",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that the user information is set correctly",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/config"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Configure Git User Information",
-      "description": "Git is a popular version control system used by developers to manage their code. When you make changes to a repository, Git tracks who made those changes. To do this, Git needs to know your user information, such as your name and email address. In this lab, you will learn how to configure your user information for Git.",
-      "meta": {
-        "title": "Git Playground | Version Control | Developer Tools",
-        "description": "Learn how to configure your user information for Git, a popular version control system used by developers to manage their code.",
-        "keywords": "git, version control, developer tools, code management, user configuration"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Configure Git User Information",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that the user information is set correctly",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/config"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "配置Git用户信息",
@@ -70,17 +67,13 @@
               {
                 "name": "验证用户信息是否已正确设置",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/config"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

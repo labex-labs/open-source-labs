@@ -1,10 +1,136 @@
 {
   "type": "lab",
+  "title": "Create Interactive Triangulation Plot with Matplotlib",
+  "description": "This lab will guide you through creating a triangulation plot using Matplotlib. You will learn how to create a Triangulation object, use a TriFinder object, and set up interactivity to highlight the triangle under the cursor.",
+  "meta": {
+    "title": "Matplotlib Triangulation Plot | Python Programming Tutorial",
+    "description": "Learn how to create a triangulation plot using Matplotlib in this Python programming tutorial. Explore the Triangulation object, TriFinder, and interactive features.",
+    "keywords": "Matplotlib, Triangulation, Python Programming, Data Visualization, Interactive Plots"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create Triangulation Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create TriFinder Object",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Set up Plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Highlight Triangle Under Cursor",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/conditional_statements",
+          "python/data_visualization",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Set up Interactivity",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "python/conditional_statements",
+          "python/function_definition",
+          "python/sets",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Show Plot",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "trifinder-event-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,126 +141,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create Interactive Triangulation Plot with Matplotlib",
-      "description": "This lab will guide you through creating a triangulation plot using Matplotlib. You will learn how to create a Triangulation object, use a TriFinder object, and set up interactivity to highlight the triangle under the cursor.",
-      "meta": {
-        "title": "Matplotlib Triangulation Plot | Python Programming Tutorial",
-        "description": "Learn how to create a triangulation plot using Matplotlib in this Python programming tutorial. Explore the Triangulation object, TriFinder, and interactive features.",
-        "keywords": "Matplotlib, Triangulation, Python Programming, Data Visualization, Interactive Plots"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create Triangulation Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create TriFinder Object",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Set up Plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Highlight Triangle Under Cursor",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Set up Interactivity",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/sets",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Show Plot",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib创建交互式三角剖分图",
@@ -155,18 +161,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -178,8 +172,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "设置绘图",
@@ -190,8 +183,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "突出显示光标下方的三角形",
@@ -202,15 +194,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -222,13 +205,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/sets",
-              "python/tuples"
             ]
           },
           {
@@ -240,13 +216,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -255,16 +229,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "trifinder-event-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

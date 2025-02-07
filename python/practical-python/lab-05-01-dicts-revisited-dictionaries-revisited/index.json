@@ -1,10 +1,450 @@
 {
   "type": "lab",
+  "title": "Python Object System Fundamentals",
+  "description": "The Python object system is largely based on an implementation involving dictionaries. This section discusses that.",
+  "meta": {
+    "title": "Python Object System | Dictionaries in Python",
+    "description": "Explore the Python object system and the critical role of dictionaries in the language's core implementation. Discover the power of this fundamental data structure.",
+    "keywords": "Python, Object System, Dictionaries, Data Structures, Programming Concepts"
+  },
   "difficulty": "Beginner",
   "time": 110,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Dictionaries, Revisited",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python History File",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/dictionaries"]
+      },
+      {
+        "title": "Dicts and Modules",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition"
+        ]
+      },
+      {
+        "title": "Dicts and Objects",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Use of __dict__ Attribute in Python History",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/constructor",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Class Members",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/constructor",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Instances and Classes",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Presence of '__class__' in Python History",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/dictionaries",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Attribute Access",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/comments"]
+      },
+      {
+        "title": "Modifying Instances",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'del' in Python History",
+            "file": "verify7.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/dictionaries",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Reading Attributes",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/python_shell"]
+      },
+      {
+        "title": "How inheritance works",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify9.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/inheritance",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Reading Attributes with Inheritance",
+        "text": "en/step10.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify10.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Reading Attributes with Single Inheritance",
+        "text": "en/step11.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'pass' in Python History",
+            "file": "verify11.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/classes_objects"]
+      },
+      {
+        "title": "Method Resolution Order or MRO",
+        "text": "en/step12.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains __mro__ Keyword",
+            "file": "verify12.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/inheritance",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "MRO in Multiple Inheritance",
+        "text": "en/step13.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Coordinate Pair",
+            "file": "verify13.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "An Odd Code Reuse (Involving Multiple Inheritance)",
+        "text": "en/step14.md",
+        "verify": [
+          {
+            "name": "Verify If 'super' Exists in Python History",
+            "file": "verify14.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "The 'Mixin' Pattern",
+        "text": "en/step15.md",
+        "verify": [
+          {
+            "name": "Verify Loud Bike Entry in Python History",
+            "file": "verify15.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Why super()",
+        "text": "en/step16.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify16.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/function_definition"
+        ]
+      },
+      {
+        "title": "Some Cautions",
+        "text": "en/step17.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'from' in Python History",
+            "file": "verify17.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/importing_modules",
+          "python/python_shell",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Exercise 5.1: Representation of Instances",
+        "text": "en/step18.md",
+        "verify": [
+          {
+            "name": "Verify Presence of ibm.__dict__ in Python History",
+            "file": "verify18.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/python_shell"]
+      },
+      {
+        "title": "Exercise 5.2: Modification of Instance Data",
+        "text": "en/step19.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'goog.time' in Python History",
+            "file": "verify19.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Exercise 5.3: The role of classes",
+        "text": "en/step20.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'goog.cost' in Python History",
+            "file": "verify20.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/constructor",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Exercise 5.4: Bound methods",
+        "text": "en/step21.md",
+        "verify": [
+          {
+            "name": "Verify Presence of '__func__' in Python History",
+            "file": "verify21.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Exercise 5.5: Inheritance",
+        "text": "en/step22.md",
+        "verify": [
+          {
+            "name": "Verify Use of Python's __class__.__mro__ Attribute",
+            "file": "verify22.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/conditional_statements",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/inheritance",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,440 +455,6 @@
     "repo": "https://github.com/dabeaz-course/practical-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Python Object System Fundamentals",
-      "description": "The Python object system is largely based on an implementation involving dictionaries. This section discusses that.",
-      "meta": {
-        "title": "Python Object System | Dictionaries in Python",
-        "description": "Explore the Python object system and the critical role of dictionaries in the language's core implementation. Discover the power of this fundamental data structure.",
-        "keywords": "Python, Object System, Dictionaries, Data Structures, Programming Concepts"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Dictionaries, Revisited",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python History File",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/dictionaries"]
-          },
-          {
-            "title": "Dicts and Modules",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition"
-            ]
-          },
-          {
-            "title": "Dicts and Objects",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Use of __dict__ Attribute in Python History",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Class Members",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Instances and Classes",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Presence of '__class__' in Python History",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/dictionaries",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Attribute Access",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/comments"]
-          },
-          {
-            "title": "Modifying Instances",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'del' in Python History",
-                "file": "verify7.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Reading Attributes",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/python_shell"]
-          },
-          {
-            "title": "How inheritance works",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify9.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/inheritance",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Reading Attributes with Inheritance",
-            "text": "en/step10.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify10.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Reading Attributes with Single Inheritance",
-            "text": "en/step11.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'pass' in Python History",
-                "file": "verify11.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/classes_objects"]
-          },
-          {
-            "title": "Method Resolution Order or MRO",
-            "text": "en/step12.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains __mro__ Keyword",
-                "file": "verify12.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/inheritance",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "MRO in Multiple Inheritance",
-            "text": "en/step13.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Coordinate Pair",
-                "file": "verify13.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "An Odd Code Reuse (Involving Multiple Inheritance)",
-            "text": "en/step14.md",
-            "verify": [
-              {
-                "name": "Verify If 'super' Exists in Python History",
-                "file": "verify14.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "The 'Mixin' Pattern",
-            "text": "en/step15.md",
-            "verify": [
-              {
-                "name": "Verify Loud Bike Entry in Python History",
-                "file": "verify15.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Why super()",
-            "text": "en/step16.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify16.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition"
-            ]
-          },
-          {
-            "title": "Some Cautions",
-            "text": "en/step17.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'from' in Python History",
-                "file": "verify17.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/importing_modules",
-              "python/python_shell",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Exercise 5.1: Representation of Instances",
-            "text": "en/step18.md",
-            "verify": [
-              {
-                "name": "Verify Presence of ibm.__dict__ in Python History",
-                "file": "verify18.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/python_shell"]
-          },
-          {
-            "title": "Exercise 5.2: Modification of Instance Data",
-            "text": "en/step19.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'goog.time' in Python History",
-                "file": "verify19.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Exercise 5.3: The role of classes",
-            "text": "en/step20.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'goog.cost' in Python History",
-                "file": "verify20.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Exercise 5.4: Bound methods",
-            "text": "en/step21.md",
-            "verify": [
-              {
-                "name": "Verify Presence of '__func__' in Python History",
-                "file": "verify21.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Exercise 5.5: Inheritance",
-            "text": "en/step22.md",
-            "verify": [
-              {
-                "name": "Verify Use of Python's __class__.__mro__ Attribute",
-                "file": "verify22.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/inheritance",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Python 对象系统基础",
@@ -467,12 +473,9 @@
               {
                 "name": "验证 Python 历史文件是否存在",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": ["python/dictionaries"]
+            ]
           },
           {
             "title": "字典与模块",
@@ -481,15 +484,8 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition"
             ]
           },
           {
@@ -499,23 +495,8 @@
               {
                 "name": "验证 Python 历史记录中是否使用了 __dict__ 属性",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -525,19 +506,8 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
             ]
           },
           {
@@ -547,16 +517,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 '__class__'",
                 "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/dictionaries",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -566,12 +528,9 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": ["python/comments"]
+            ]
           },
           {
             "title": "修改实例",
@@ -580,16 +539,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 'del'",
                 "file": "verify7.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/dictionaries",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -599,12 +550,9 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify8.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": ["python/python_shell"]
+            ]
           },
           {
             "title": "继承的工作原理",
@@ -613,16 +561,8 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify9.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/inheritance",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -632,12 +572,9 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify10.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "通过单继承读取属性",
@@ -646,12 +583,9 @@
               {
                 "name": "验证 Python 历史记录中是否存在 'pass'",
                 "file": "verify11.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": ["python/classes_objects"]
+            ]
           },
           {
             "title": "方法解析顺序（Method Resolution Order，简称 MRO）",
@@ -660,16 +594,8 @@
               {
                 "name": "验证 Python 历史记录中包含 __mro__ 关键字",
                 "file": "verify12.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/inheritance",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -679,15 +605,8 @@
               {
                 "name": "验证 Python 历史记录中包含坐标对",
                 "file": "verify13.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -697,18 +616,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 'super'",
                 "file": "verify14.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/with_statement"
             ]
           },
           {
@@ -718,17 +627,8 @@
               {
                 "name": "验证 Python 历史记录中是否有响亮自行车条目",
                 "file": "verify15.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
             ]
           },
           {
@@ -738,16 +638,8 @@
               {
                 "name": "此步骤目前无需验证",
                 "file": "verify16.sh",
-                "hint": "此步骤目前无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition"
             ]
           },
           {
@@ -757,16 +649,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 'from'",
                 "file": "verify17.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/importing_modules",
-              "python/python_shell",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -776,12 +660,9 @@
               {
                 "name": "验证 Python 历史记录中是否存在 ibm.__dict__",
                 "file": "verify18.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": ["python/python_shell"]
+            ]
           },
           {
             "title": "练习 5.2：实例数据的修改",
@@ -790,15 +671,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 'goog.time'",
                 "file": "verify19.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries"
             ]
           },
           {
@@ -808,22 +682,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 'goog.cost'",
                 "file": "verify20.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -833,16 +693,8 @@
               {
                 "name": "验证 Python 历史记录中是否存在 '__func__'",
                 "file": "verify21.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -852,29 +704,13 @@
               {
                 "name": "验证是否使用了 Python 的 __class__.__mro__ 属性",
                 "file": "verify22.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/inheritance",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -883,16 +719,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

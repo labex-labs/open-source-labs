@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Sorting by Functions",
+  "description": "This lab aims to test your ability to sort a collection by something other than its natural order. In this case, we will sort strings by their length instead of alphabetically.",
+  "meta": {
+    "title": "Sorting by Functions in Go",
+    "description": "Learn how to sort a collection of strings by their length instead of alphabetically in Go.",
+    "keywords": "custom sort, go, go labs, functions, go playground online, sorting, string length, go lab, go practice"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Sorting by Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Sorting By String Length In Go Program",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/sorting"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "sorting-by-functions.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Sorting by Functions",
-      "description": "This lab aims to test your ability to sort a collection by something other than its natural order. In this case, we will sort strings by their length instead of alphabetically.",
-      "meta": {
-        "title": "Sorting by Functions in Go",
-        "description": "Learn how to sort a collection of strings by their length instead of alphabetically in Go.",
-        "keywords": "custom sort, go, go labs, functions, go playground online, sorting, string length, go lab, go practice"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Sorting by Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Sorting By String Length In Go Program",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/sorting"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用函数进行排序",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go程序中按字符串长度排序",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/sorting"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "sorting-by-functions.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

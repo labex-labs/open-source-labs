@@ -1,10 +1,135 @@
 {
   "type": "lab",
+  "title": "Matplotlib 2D Image Plotting with pcolormesh",
+  "description": "In this tutorial, we will learn how to use the pcolormesh function in the Matplotlib library to generate 2D image-style plots. We will cover the basic usage of pcolormesh, non-rectilinear pcolormesh, centered coordinates, and making levels using norms.",
+  "meta": {
+    "title": "Matplotlib pcolormesh Tutorial | 2D Image-Style Plots",
+    "description": "Learn how to use the Matplotlib pcolormesh function to generate 2D image-style plots, including non-rectilinear pcolormesh, centered coordinates, and making levels using norms.",
+    "keywords": "Matplotlib, pcolormesh, 2D plots, image-style plots, non-rectilinear, centered coordinates, norms"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic pcolormesh",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Non-rectilinear pcolormesh",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Centered coordinates",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Making levels using norms",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/using_packages",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "pcolormesh-levels.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,125 +140,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib 2D Image Plotting with pcolormesh",
-      "description": "In this tutorial, we will learn how to use the pcolormesh function in the Matplotlib library to generate 2D image-style plots. We will cover the basic usage of pcolormesh, non-rectilinear pcolormesh, centered coordinates, and making levels using norms.",
-      "meta": {
-        "title": "Matplotlib pcolormesh Tutorial | 2D Image-Style Plots",
-        "description": "Learn how to use the Matplotlib pcolormesh function to generate 2D image-style plots, including non-rectilinear pcolormesh, centered coordinates, and making levels using norms.",
-        "keywords": "Matplotlib, pcolormesh, 2D plots, image-style plots, non-rectilinear, centered coordinates, norms"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Basic pcolormesh",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Non-rectilinear pcolormesh",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Centered coordinates",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Making levels using norms",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/using_packages",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用pcolormesh进行Matplotlib二维图像绘制",
@@ -154,17 +160,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -176,17 +171,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -198,20 +182,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -223,28 +193,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/using_packages",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -253,16 +206,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "pcolormesh-levels.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

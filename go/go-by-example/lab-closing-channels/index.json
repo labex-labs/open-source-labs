@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Golang Channel Communication with Workers",
+  "description": "In Golang, closing a channel can be used to communicate completion to the channel's receivers. This lab will demonstrate how to use a channel to communicate work to be done from the main() goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker.",
+  "meta": {
+    "title": "Closing Channels in Golang | Channel Synchronization",
+    "description": "Learn how to use channels to communicate work between goroutines and close channels when there are no more jobs in Golang.",
+    "keywords": "Golang, Channels, Closing Channels, Channel Synchronization, Goroutines"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Closing Channels",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Closing Channels Go Program Output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/channels"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "closing-channels.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Golang Channel Communication with Workers",
-      "description": "In Golang, closing a channel can be used to communicate completion to the channel's receivers. This lab will demonstrate how to use a channel to communicate work to be done from the main() goroutine to a worker goroutine, and how to close the channel when there are no more jobs for the worker.",
-      "meta": {
-        "title": "Closing Channels in Golang | Channel Synchronization",
-        "description": "Learn how to use channels to communicate work between goroutines and close channels when there are no more jobs in Golang.",
-        "keywords": "Golang, Channels, Closing Channels, Channel Synchronization, Goroutines"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Closing Channels",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Closing Channels Go Program Output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/channels"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言中与工作协程的通道通信",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go语言关闭通道程序的输出",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/channels"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "closing-channels.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

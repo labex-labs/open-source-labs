@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "JavaScript Programming Fundamentals",
+  "description": "In this lab, we will dive into the world of JavaScript programming and learn how to write efficient and effective code. Through a series of hands-on exercises and challenges, you will gain a solid understanding of fundamental programming concepts such as variables, functions, loops, and conditional statements. By the end of this lab, you will have the skills and confidence to tackle real-world programming problems using JavaScript.",
+  "meta": {
+    "title": "JavaScript Programming | Binomial Coefficient Calculation",
+    "description": "Learn JavaScript programming with hands-on exercises and challenges. Dive into fundamental concepts like variables, functions, loops, and conditional statements. Explore the binomial coefficient calculation.",
+    "keywords": "JavaScript, Programming, Binomial Coefficient, Variables, Functions, Loops, Conditional Statements"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Binomial Coefficient",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/loops",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "JavaScript Programming Fundamentals",
-      "description": "In this lab, we will dive into the world of JavaScript programming and learn how to write efficient and effective code. Through a series of hands-on exercises and challenges, you will gain a solid understanding of fundamental programming concepts such as variables, functions, loops, and conditional statements. By the end of this lab, you will have the skills and confidence to tackle real-world programming problems using JavaScript.",
-      "meta": {
-        "title": "JavaScript Programming | Binomial Coefficient Calculation",
-        "description": "Learn JavaScript programming with hands-on exercises and challenges. Dive into fundamental concepts like variables, functions, loops, and conditional statements. Explore the binomial coefficient calculation.",
-        "keywords": "JavaScript, Programming, Binomial Coefficient, Variables, Functions, Loops, Conditional Statements"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Binomial Coefficient",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "JavaScript编程基础",
@@ -77,24 +74,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

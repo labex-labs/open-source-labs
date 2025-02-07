@@ -1,10 +1,110 @@
 {
   "type": "lab",
+  "title": "Windowing Operations in Pandas",
+  "description": "In this lab, we will explore the windowing operations in pandas, including rolling windows, expanding windows, and exponentially weighted windows. Windowing operations are useful for performing aggregations over a sliding partition of values.",
+  "meta": {
+    "title": "Pandas Windowing Operations | Data Analysis Tutorial",
+    "description": "Explore the windowing operations in pandas, including rolling windows, expanding windows, and exponentially weighted windows. Useful for performing aggregations over a sliding partition of values.",
+    "keywords": "pandas, windowing operations, rolling windows, expanding windows, exponentially weighted windows, data analysis, tutorial"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Pandas Series",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_analysis",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Perform Rolling Window Operation",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/basic_statistics",
+          "pandas/time_series_analysis",
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Perform Expanding Window Operation",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/basic_statistics",
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops"
+        ]
+      },
+      {
+        "title": "Perform Exponentially Weighted Window Operation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/basic_statistics",
+          "python/comments",
+          "python/for_loops"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "window.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,100 +115,6 @@
     "repo": "https://github.com/pandas-dev/pandas"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Windowing Operations in Pandas",
-      "description": "In this lab, we will explore the windowing operations in pandas, including rolling windows, expanding windows, and exponentially weighted windows. Windowing operations are useful for performing aggregations over a sliding partition of values.",
-      "meta": {
-        "title": "Pandas Windowing Operations | Data Analysis Tutorial",
-        "description": "Explore the windowing operations in pandas, including rolling windows, expanding windows, and exponentially weighted windows. Useful for performing aggregations over a sliding partition of values.",
-        "keywords": "pandas, windowing operations, rolling windows, expanding windows, exponentially weighted windows, data analysis, tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create a Pandas Series",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Perform Rolling Window Operation",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/basic_statistics",
-              "pandas/time_series_analysis",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Perform Expanding Window Operation",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/basic_statistics",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops"
-            ]
-          },
-          {
-            "title": "Perform Exponentially Weighted Window Operation",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/basic_statistics",
-              "python/comments",
-              "python/for_loops"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Pandas中的窗口操作",
@@ -129,14 +135,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/with_statement"
             ]
           },
           {
@@ -148,14 +146,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/basic_statistics",
-              "pandas/time_series_analysis",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/with_statement"
             ]
           },
           {
@@ -167,12 +157,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/basic_statistics",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops"
             ]
           },
           {
@@ -184,17 +168,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/basic_statistics",
-              "python/comments",
-              "python/for_loops"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -203,16 +181,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "window.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

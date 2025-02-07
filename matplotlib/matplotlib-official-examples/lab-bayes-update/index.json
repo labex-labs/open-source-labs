@@ -1,10 +1,130 @@
 {
   "type": "lab",
+  "title": "Bayesian Updating with Matplotlib",
+  "description": "Bayesian updating is a statistical approach that allows us to update the probability of a hypothesis as new data becomes available. In this lab, we will use Matplotlib to create an animation that shows how Bayesian updating works. Specifically, we will simulate a coin toss experiment and use Bayesian updating to estimate the probability of the coin landing heads up.",
+  "meta": {
+    "title": "Bayesian Updating with Matplotlib: Visualize Probability Updates",
+    "description": "Learn Bayesian statistics through an interactive coin toss simulation using Matplotlib in this programming tutorial.",
+    "keywords": "python playground, matplotlib, probability, python, bayesian updating, data visualization, coin toss"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Define Beta Distribution PDF",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/function_definition",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Define UpdateDist Class",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/lists",
+          "python/math_random",
+          "python/polymorphism",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Create Animation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans", "python/tuples"]
+      },
+      {
+        "title": "Interpret Results",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "bayes-update.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,120 +135,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Bayesian Updating with Matplotlib",
-      "description": "Bayesian updating is a statistical approach that allows us to update the probability of a hypothesis as new data becomes available. In this lab, we will use Matplotlib to create an animation that shows how Bayesian updating works. Specifically, we will simulate a coin toss experiment and use Bayesian updating to estimate the probability of the coin landing heads up.",
-      "meta": {
-        "title": "Bayesian Updating with Matplotlib: Visualize Probability Updates",
-        "description": "Learn Bayesian statistics through an interactive coin toss simulation using Matplotlib in this programming tutorial.",
-        "keywords": "python playground, matplotlib, probability, python, bayesian updating, data visualization, coin toss"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Define Beta Distribution PDF",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/function_definition",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Define UpdateDist Class",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/math_random",
-              "python/polymorphism",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create Animation",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans", "python/tuples"]
-          },
-          {
-            "title": "Interpret Results",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib进行贝叶斯更新",
@@ -149,15 +155,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries"
             ]
           },
           {
@@ -169,12 +166,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/function_definition",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -186,25 +177,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/math_random",
-              "python/polymorphism",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -216,8 +188,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/booleans", "python/tuples"]
+            ]
           },
           {
             "title": "解读结果",
@@ -228,13 +199,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -243,16 +212,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "bayes-update.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

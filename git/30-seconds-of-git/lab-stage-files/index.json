@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Add Files to the Staging Area",
+  "description": "Git is a popular version control system that allows developers to track changes made to their codebase. One of the essential features of Git is the staging area, which allows developers to selectively choose which changes to commit. In this lab, you will learn how to add files to the staging area using Git.",
+  "meta": {
+    "title": "Mastering Git: Staging Files for Seamless Commits",
+    "description": "Learn how to effectively manage your codebase with Git's staging area, ensuring only the desired changes are committed.",
+    "keywords": "version control, git labs, git, commit, git playground, staging area, code management"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Add Files to the Staging Area",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that it has been added successfully",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/add"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Add Files to the Staging Area",
-      "description": "Git is a popular version control system that allows developers to track changes made to their codebase. One of the essential features of Git is the staging area, which allows developers to selectively choose which changes to commit. In this lab, you will learn how to add files to the staging area using Git.",
-      "meta": {
-        "title": "Mastering Git: Staging Files for Seamless Commits",
-        "description": "Learn how to effectively manage your codebase with Git's staging area, ensuring only the desired changes are committed.",
-        "keywords": "version control, git labs, git, commit, git playground, staging area, code management"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Add Files to the Staging Area",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that it has been added successfully",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/add"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将文件添加到暂存区",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否已成功添加",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/add"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

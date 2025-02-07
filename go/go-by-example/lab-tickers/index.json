@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Timers and Tickers",
+  "description": "This lab is about using tickers in Golang. Tickers are used when you want to do something repeatedly at regular intervals.",
+  "meta": {
+    "title": "Timers and Tickers: Mastering Golang's Powerful Timing Tools",
+    "description": "Explore the power of Golang's tickers and timers to create efficient, time-based applications.",
+    "keywords": "go playground, go, golang, tickers, go labs, go playground online, tutorial, timers, programming, go lab"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Timers and Tickers",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Ticking Program Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/tickers"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "tickers.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Timers and Tickers",
-      "description": "This lab is about using tickers in Golang. Tickers are used when you want to do something repeatedly at regular intervals.",
-      "meta": {
-        "title": "Timers and Tickers: Mastering Golang's Powerful Timing Tools",
-        "description": "Explore the power of Golang's tickers and timers to create efficient, time-based applications.",
-        "keywords": "go playground, go, golang, tickers, go labs, go playground online, tutorial, timers, programming, go lab"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Timers and Tickers",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Ticking Program Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/tickers"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "定时器与定时器通道（Tickers）",
@@ -70,17 +76,13 @@
               {
                 "name": "验证定时程序的执行",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/tickers"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "tickers.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

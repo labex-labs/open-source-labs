@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Implementing Levenshtein Distance in JavaScript",
+  "description": "In this lab, we will explore the Levenshtein Distance algorithm and its implementation in JavaScript. The purpose of this lab is to understand how to calculate the difference between two strings by measuring the minimum number of single-character edits (insertions, deletions, substitutions) required to transform one string into the other. By the end of this lab, you will have a solid understanding of the Levenshtein Distance algorithm and how to use it in your own JavaScript projects.",
+  "meta": {
+    "title": "Mastering Levenshtein Distance in JavaScript",
+    "description": "Explore the Levenshtein Distance algorithm and its implementation in JavaScript, learn how to calculate the difference between two strings.",
+    "keywords": "javascript, levenshtein distance, javascript practice, string comparison, javascript practice online, javascript lab, algorithm, javascript tutor, coding tutorial"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Levenshtein Distance",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/debugging",
+          "javascript/loops",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Implementing Levenshtein Distance in JavaScript",
-      "description": "In this lab, we will explore the Levenshtein Distance algorithm and its implementation in JavaScript. The purpose of this lab is to understand how to calculate the difference between two strings by measuring the minimum number of single-character edits (insertions, deletions, substitutions) required to transform one string into the other. By the end of this lab, you will have a solid understanding of the Levenshtein Distance algorithm and how to use it in your own JavaScript projects.",
-      "meta": {
-        "title": "Mastering Levenshtein Distance in JavaScript",
-        "description": "Explore the Levenshtein Distance algorithm and its implementation in JavaScript, learn how to calculate the difference between two strings.",
-        "keywords": "javascript, levenshtein distance, javascript practice, string comparison, javascript practice online, javascript lab, algorithm, javascript tutor, coding tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Levenshtein Distance",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/loops",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在JavaScript中实现莱文斯坦距离",
@@ -79,26 +76,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按下回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，通过输入'node'并按下回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/loops",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

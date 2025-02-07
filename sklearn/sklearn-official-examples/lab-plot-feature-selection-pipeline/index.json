@@ -1,10 +1,104 @@
 {
   "type": "lab",
+  "title": "Building Machine Learning Pipelines with Scikit-Learn",
+  "description": "In machine learning, a pipeline is a series of steps that are performed sequentially to transform the input data and then build a model. Scikit-learn provides a pipeline class that can be used to chain multiple processing steps together, making it easy to build complex models that involve multiple preprocessing and modeling steps.",
+  "meta": {
+    "title": "Machine Learning Pipeline | Feature Selection | SVM Classification",
+    "description": "Learn how to build a machine learning pipeline with feature selection and SVM classification using Scikit-learn. Optimize your model and gain insights into the data.",
+    "keywords": "machine learning, pipeline, feature selection, SVM, classification, Scikit-learn"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate and Split the Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
+      },
+      {
+        "title": "Build the Pipeline",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/feature_selection",
+          "sklearn/pipeline",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Train the Pipeline",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Evaluate the Pipeline",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics"]
+      },
+      {
+        "title": "Inspect the Pipeline",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-feature-selection-pipeline.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,98 +109,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Building Machine Learning Pipelines with Scikit-Learn",
-      "description": "In machine learning, a pipeline is a series of steps that are performed sequentially to transform the input data and then build a model. Scikit-learn provides a pipeline class that can be used to chain multiple processing steps together, making it easy to build complex models that involve multiple preprocessing and modeling steps.",
-      "meta": {
-        "title": "Machine Learning Pipeline | Feature Selection | SVM Classification",
-        "description": "Learn how to build a machine learning pipeline with feature selection and SVM classification using Scikit-learn. Optimize your model and gain insights into the data.",
-        "keywords": "machine learning, pipeline, feature selection, SVM, classification, Scikit-learn"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate and Split the Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "Build the Pipeline",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/feature_selection",
-              "sklearn/pipeline",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Train the Pipeline",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Evaluate the Pipeline",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
-          },
-          {
-            "title": "Inspect the Pipeline",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Scikit-learn构建机器学习管道",
@@ -127,11 +129,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -143,12 +140,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/feature_selection",
-              "sklearn/pipeline",
-              "sklearn/svm"
             ]
           },
           {
@@ -160,8 +151,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "评估管道",
@@ -172,8 +162,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
+            ]
           },
           {
             "title": "检查管道",
@@ -184,13 +173,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -199,16 +186,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-feature-selection-pipeline.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

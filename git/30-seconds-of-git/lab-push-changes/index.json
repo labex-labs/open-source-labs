@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Push Local Changes to Remote",
+  "description": "Git is a popular version control system that allows developers to track changes in their codebase. One of the key features of Git is the ability to push local changes to a remote repository. This allows multiple developers to collaborate on the same codebase and keep it up to date.",
+  "meta": {
+    "title": "Mastering Git: Pushing Local Changes to Remote",
+    "description": "Discover how to efficiently push your local Git changes to a remote repository and collaborate with your team.",
+    "keywords": "push, version control, git labs, remote repository, git, collaboration, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Push Local Changes to Remote",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that the push was successful",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/push"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Push Local Changes to Remote",
-      "description": "Git is a popular version control system that allows developers to track changes in their codebase. One of the key features of Git is the ability to push local changes to a remote repository. This allows multiple developers to collaborate on the same codebase and keep it up to date.",
-      "meta": {
-        "title": "Mastering Git: Pushing Local Changes to Remote",
-        "description": "Discover how to efficiently push your local Git changes to a remote repository and collaborate with your team.",
-        "keywords": "push, version control, git labs, remote repository, git, collaboration, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Push Local Changes to Remote",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that the push was successful",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/push"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将本地更改推送到远程",
@@ -70,17 +67,13 @@
               {
                 "name": "验证推送是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/push"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

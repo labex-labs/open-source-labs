@@ -1,10 +1,101 @@
 {
   "type": "lab",
+  "title": "Defining Rust Functions in LabEx",
+  "description": "In this lab, you will learn how to define and call functions in Rust using the fn keyword and the conventional snake case naming convention.",
+  "meta": {
+    "title": "Rust Functions | Programming Tutorials",
+    "description": "Learn how to define and call functions in Rust, a popular programming language. Explore the basics of functions and their usage in Rust code.",
+    "keywords": "Rust, Functions, Programming Tutorials, Rust Book, Coding, Development"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Project Functions Output Includes 'ello'",
+            "file": "verify1.sh",
+            "hint": "Create a project named 'functions' and run it successfully.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["rust/expressions_statements", "rust/function_syntax"]
+      },
+      {
+        "title": "Parameters",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers"
+        ]
+      },
+      {
+        "title": "Statements and Expressions",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/shadowing",
+          "rust/variable_declarations"
+        ]
+      },
+      {
+        "title": "Functions with Return Values",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,100 +106,6 @@
     "repo": "https://github.com/rust-lang/book"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Defining Rust Functions in LabEx",
-      "description": "In this lab, you will learn how to define and call functions in Rust using the fn keyword and the conventional snake case naming convention.",
-      "meta": {
-        "title": "Rust Functions | Programming Tutorials",
-        "description": "Learn how to define and call functions in Rust, a popular programming language. Explore the basics of functions and their usage in Rust code.",
-        "keywords": "Rust, Functions, Programming Tutorials, Rust Book, Coding, Development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Project Functions Output Includes 'ello'",
-                "file": "verify1.sh",
-                "hint": "Create a project named 'functions' and run it successfully.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
-          },
-          {
-            "title": "Parameters",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers"
-            ]
-          },
-          {
-            "title": "Statements and Expressions",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/shadowing",
-              "rust/variable_declarations"
-            ]
-          },
-          {
-            "title": "Functions with Return Values",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 LabEx 中定义 Rust 函数",
@@ -127,12 +124,9 @@
               {
                 "name": "验证项目函数输出包含 'ello'",
                 "file": "verify1.sh",
-                "hint": "创建一个名为 'functions' 的项目并成功运行它。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "创建一个名为 'functions' 的项目并成功运行它。"
               }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+            ]
           },
           {
             "title": "参数",
@@ -141,16 +135,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers"
             ]
           },
           {
@@ -160,16 +146,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/shadowing",
-              "rust/variable_declarations"
             ]
           },
           {
@@ -179,22 +157,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

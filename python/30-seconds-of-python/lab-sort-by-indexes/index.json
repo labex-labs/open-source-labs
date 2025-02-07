@@ -1,10 +1,69 @@
 {
   "type": "lab",
+  "title": "Sort List by Indexes",
+  "description": "In this lab, you will learn how to sort a list based on the indexes of another list using the `sorted()` function and list comprehension in Python.",
+  "meta": {
+    "title": "Sorting Lists by Indexes | Programming Tutorials | Lab",
+    "description": "Learn how to sort a list based on the indexes of another list in programming. Discover a simple and efficient Python function to accomplish this task.",
+    "keywords": "sorting lists, sorting by indexes, programming tutorials, python function, list manipulation"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Sort List by Indexes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student's Sort By Indexes",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/default_arguments",
+          "python/file_reading_writing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_sort_by_indexes.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "sort_by_indexes.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +74,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Sort List by Indexes",
-      "description": "In this lab, you will learn how to sort a list based on the indexes of another list using the `sorted()` function and list comprehension in Python.",
-      "meta": {
-        "title": "Sorting Lists by Indexes | Programming Tutorials | Lab",
-        "description": "Learn how to sort a list based on the indexes of another list in programming. Discover a simple and efficient Python function to accomplish this task.",
-        "keywords": "sorting lists, sorting by indexes, programming tutorials, python function, list manipulation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Sort List by Indexes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student's Sort By Indexes",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/file_reading_writing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "根据索引对列表进行排序",
@@ -81,28 +92,13 @@
               {
                 "name": "验证学生的按索引排序",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/file_reading_writing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -111,21 +107,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_sort_by_indexes.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "sort_by_indexes.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

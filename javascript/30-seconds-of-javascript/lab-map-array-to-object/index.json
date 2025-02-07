@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Map Array to Object",
+  "description": "In this lab, we will learn how to map the values of an array to an object using a function in JavaScript. The lab will walk you through the process of using Array.prototype.reduce() to apply a function to each element in an array and combine the results into an object. You will also learn how to use the element as the key and the result of the function as the value for each property.",
+  "meta": {
+    "title": "JavaScript | Array to Object Mapping",
+    "description": "Learn how to map array values to an object using a function in JavaScript. Explore the power of Array.prototype.reduce() for combining results into an object.",
+    "keywords": "JavaScript, Array, Object, Mapping, Reduce, Function"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Map Array to Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in ZSH History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Map Array to Object",
-      "description": "In this lab, we will learn how to map the values of an array to an object using a function in JavaScript. The lab will walk you through the process of using Array.prototype.reduce() to apply a function to each element in an array and combine the results into an object. You will also learn how to use the element as the key and the result of the function as the value for each property.",
-      "meta": {
-        "title": "JavaScript | Array to Object Mapping",
-        "description": "Learn how to map array values to an object using a function in JavaScript. Explore the power of Array.prototype.reduce() for combining results into an object.",
-        "keywords": "JavaScript, Array, Object, Mapping, Reduce, Function"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Map Array to Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in ZSH History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将数组映射到对象",
@@ -78,25 +75,13 @@
               {
                 "name": "在ZSH历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

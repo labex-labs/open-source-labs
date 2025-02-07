@@ -1,10 +1,129 @@
 {
   "type": "lab",
+  "title": "Annotated Matplotlib Plots in Python",
+  "description": "This tutorial will guide you through the process of creating a plot with annotations using Matplotlib in Python. You will learn how to connect two points with an arrow, add an ellipse to the plot, and customize the arrow style and ellipse properties.",
+  "meta": {
+    "title": "Matplotlib Plotting Tutorials | Python Data Visualization",
+    "description": "Learn how to create plots with annotations using Matplotlib in Python, including connecting points with arrows and adding ellipses to the plot.",
+    "keywords": "Matplotlib, Python, Data Visualization, Plotting, Annotations, Arrows, Ellipses"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Set up the plot",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Connect two points with an arrow",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/text_annotations",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Add an ellipse to the plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
+      },
+      {
+        "title": "Customize the arrow to connect to the ellipse",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/text_annotations",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Customize the arrow to shrink to the ellipse",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/text_annotations",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "annotate-explain.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,119 +134,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Annotated Matplotlib Plots in Python",
-      "description": "This tutorial will guide you through the process of creating a plot with annotations using Matplotlib in Python. You will learn how to connect two points with an arrow, add an ellipse to the plot, and customize the arrow style and ellipse properties.",
-      "meta": {
-        "title": "Matplotlib Plotting Tutorials | Python Data Visualization",
-        "description": "Learn how to create plots with annotations using Matplotlib in Python, including connecting points with arrows and adding ellipses to the plot.",
-        "keywords": "Matplotlib, Python, Data Visualization, Plotting, Annotations, Arrows, Ellipses"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Set up the plot",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Connect two points with an arrow",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Add an ellipse to the plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
-          },
-          {
-            "title": "Customize the arrow to connect to the ellipse",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Customize the arrow to shrink to the ellipse",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Python 中带注释的 Matplotlib 图表",
@@ -148,13 +154,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples"
             ]
           },
           {
@@ -166,15 +165,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -186,8 +176,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/line_plots", "python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "自定义箭头以连接到椭圆",
@@ -198,15 +187,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -218,21 +198,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -241,16 +211,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "annotate-explain.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

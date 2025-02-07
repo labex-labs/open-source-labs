@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "JavaScript's nthElement Function",
+  "description": "In this lab, we will dive into the nthElement function in JavaScript which returns the nth element of an array. You will learn how to use Array.prototype.slice() to extract an element from an array, and how to handle out-of-bound indices gracefully. By the end of this lab, you will have a solid understanding of the nthElement function and how it can be useful in your JavaScript projects.",
+  "meta": {
+    "title": "JavaScript | Array | NthElement",
+    "description": "Learn how to use the nthElement function in JavaScript to extract the nth element of an array. Discover the power of Array.prototype.slice() and handle out-of-bound indices.",
+    "keywords": "JavaScript, Array, NthElement, Array.prototype.slice, Programming, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "NTH Element",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Usage In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "JavaScript's nthElement Function",
-      "description": "In this lab, we will dive into the nthElement function in JavaScript which returns the nth element of an array. You will learn how to use Array.prototype.slice() to extract an element from an array, and how to handle out-of-bound indices gracefully. By the end of this lab, you will have a solid understanding of the nthElement function and how it can be useful in your JavaScript projects.",
-      "meta": {
-        "title": "JavaScript | Array | NthElement",
-        "description": "Learn how to use the nthElement function in JavaScript to extract the nth element of an array. Discover the power of Array.prototype.slice() and handle out-of-bound indices.",
-        "keywords": "JavaScript, Array, NthElement, Array.prototype.slice, Programming, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "NTH Element",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Usage In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "JavaScript 的第 n 个元素函数",
@@ -75,22 +72,13 @@
               {
                 "name": "在 Zsh 历史记录中验证 Node 的使用",
                 "file": "verify1.sh",
-                "hint": "通过输入 'node' 并按 Enter 键，可以在终端/SSH 中运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入 'node' 并按 Enter 键，可以在终端/SSH 中运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "View Commits in a Specific Date Range",
+  "description": "Git is a powerful version control system that allows developers to keep track of changes made to their codebase. One of the most useful features of Git is the ability to view commits in a specific date range. This can be helpful when trying to track down a bug or understand the history of a project.",
+  "meta": {
+    "title": "Explore Git Commit History with Date Range",
+    "description": "Learn how to view commits in a specific date range using Git commands like git log with --since and --until options.",
+    "keywords": "date range, version control, git log, git labs, git, commit history, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "View Commits in a Specific Date Range",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful view",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "View Commits in a Specific Date Range",
-      "description": "Git is a powerful version control system that allows developers to keep track of changes made to their codebase. One of the most useful features of Git is the ability to view commits in a specific date range. This can be helpful when trying to track down a bug or understand the history of a project.",
-      "meta": {
-        "title": "Explore Git Commit History with Date Range",
-        "description": "Learn how to view commits in a specific date range using Git commands like git log with --since and --until options.",
-        "keywords": "date range, version control, git log, git labs, git, commit history, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "View Commits in a Specific Date Range",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful view",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在特定日期范围内查看提交记录",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功查看",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

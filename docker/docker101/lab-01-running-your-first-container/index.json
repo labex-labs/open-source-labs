@@ -1,10 +1,93 @@
 {
   "type": "lab",
+  "title": "Running Your First Container",
+  "description": "In this lab, you will run your first Docker container.",
+  "meta": {
+    "title": "Docker Containers | Linux Namespaces | Container Isolation",
+    "description": "Learn how to run your first Docker container and explore the power of Linux namespaces and container isolation in this comprehensive programming tutorial.",
+    "keywords": "Docker, Containers, Linux Namespaces, Container Isolation, Programming Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "pro",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Get Started",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Podman Version",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to install podman.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["docker/run", "docker/top", "docker/version", "linux/apt"]
+      },
+      {
+        "title": "Step 1: Run Your First Container",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify the container is running",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to run your first container.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["docker/exec", "docker/ls", "docker/run"]
+      },
+      {
+        "title": "Step 2: Run Multiple Containers",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Docker Container Nginx Running",
+            "file": "verify3-1.sh",
+            "hint": "Please follow the instructions to run nginx container.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Docker Container Containing MongoDB",
+            "file": "verify3-2.sh",
+            "hint": "Please follow the instructions to run mongo container.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["docker/run"]
+      },
+      {
+        "title": "Step 3: Clean up",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify the containers are stopped and removed",
+            "file": "verify4.sh",
+            "hint": "Please stop and remove all containers.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["docker/prune"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "vnc-instance-ubuntu:2204"
   },
@@ -15,97 +98,6 @@
     "repo": "https://github.com/ibm/docker101/"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Running Your First Container",
-      "description": "In this lab, you will run your first Docker container.",
-      "meta": {
-        "title": "Docker Containers | Linux Namespaces | Container Isolation",
-        "description": "Learn how to run your first Docker container and explore the power of Linux namespaces and container isolation in this comprehensive programming tutorial.",
-        "keywords": "Docker, Containers, Linux Namespaces, Container Isolation, Programming Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Get Started",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Podman Version",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to install podman.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "docker/run",
-              "docker/top",
-              "docker/version",
-              "linux/apt"
-            ]
-          },
-          {
-            "title": "Step 1: Run Your First Container",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify the container is running",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to run your first container.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["docker/exec", "docker/ls", "docker/run"]
-          },
-          {
-            "title": "Step 2: Run Multiple Containers",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Docker Container Nginx Running",
-                "file": "verify3-1.sh",
-                "hint": "Please follow the instructions to run nginx container.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify Docker Container Containing MongoDB",
-                "file": "verify3-2.sh",
-                "hint": "Please follow the instructions to run mongo container.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["docker/run"]
-          },
-          {
-            "title": "Step 3: Clean up",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify the containers are stopped and removed",
-                "file": "verify4.sh",
-                "hint": "Please stop and remove all containers.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["docker/prune"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "运行你的第一个容器",
@@ -124,16 +116,8 @@
               {
                 "name": "验证 Podman 版本",
                 "file": "verify1.sh",
-                "hint": "请按照说明安装 podman。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明安装 podman。"
               }
-            ],
-            "skills": [
-              "docker/run",
-              "docker/top",
-              "docker/version",
-              "linux/apt"
             ]
           },
           {
@@ -143,12 +127,9 @@
               {
                 "name": "验证容器正在运行",
                 "file": "verify2.sh",
-                "hint": "请按照说明运行你的第一个容器。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明运行你的第一个容器。"
               }
-            ],
-            "skills": ["docker/exec", "docker/ls", "docker/run"]
+            ]
           },
           {
             "title": "步骤 2：运行多个容器",
@@ -157,19 +138,14 @@
               {
                 "name": "验证 Docker 容器 Nginx 正在运行",
                 "file": "verify3-1.sh",
-                "hint": "请按照说明运行 nginx 容器。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明运行 nginx 容器。"
               },
               {
                 "name": "验证包含 MongoDB 的 Docker 容器",
                 "file": "verify3-2.sh",
-                "hint": "请按照说明运行 mongo 容器。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明运行 mongo 容器。"
               }
-            ],
-            "skills": ["docker/run"]
+            ]
           },
           {
             "title": "步骤 3：清理",
@@ -178,17 +154,13 @@
               {
                 "name": "验证容器已停止并被移除",
                 "file": "verify4.sh",
-                "hint": "请停止并移除所有容器。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请停止并移除所有容器。"
               }
-            ],
-            "skills": ["docker/prune"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

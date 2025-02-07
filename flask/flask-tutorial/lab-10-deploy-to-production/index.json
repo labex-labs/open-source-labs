@@ -1,10 +1,100 @@
 {
   "type": "lab",
+  "title": "Deploy Flask Application",
+  "description": "In this lab, we will learn how to deploy a Flask application to a server. We will create a distribution file for our application and install it on the server. The lab assumes you have a basic understanding of Flask, Python's virtual environments, and the command line.",
+  "meta": {
+    "title": "Deploy Flask Application",
+    "description": "Learn how to deploy a Flask application to a server, including creating a distribution file and installing it on the server.",
+    "keywords": "server, deployment, python, web development, flask"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Build the Application",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/application_object", "flask/useful_internals"]
+      },
+      {
+        "title": "Install the Application on the Server",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/command_line_interface",
+          "flask/incoming_request_data",
+          "flask/response_objects",
+          "flask/sessions",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Configure the Secret Key",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/incoming_request_data",
+          "flask/json_support"
+        ]
+      },
+      {
+        "title": "Run the Application with a Production Server",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/command_line_interface",
+          "flask/incoming_request_data",
+          "flask/useful_internals"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,99 +113,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Deploy Flask Application",
-      "description": "In this lab, we will learn how to deploy a Flask application to a server. We will create a distribution file for our application and install it on the server. The lab assumes you have a basic understanding of Flask, Python's virtual environments, and the command line.",
-      "meta": {
-        "title": "Deploy Flask Application",
-        "description": "Learn how to deploy a Flask application to a server, including creating a distribution file and installing it on the server.",
-        "keywords": "server, deployment, python, web development, flask"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Build the Application",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
-          },
-          {
-            "title": "Install the Application on the Server",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/sessions",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Configure the Secret Key",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/json_support"
-            ]
-          },
-          {
-            "title": "Run the Application with a Production Server",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "部署Flask应用程序",
       "description": "在本实验中，我们将学习如何将Flask应用程序部署到服务器。我们将为应用程序创建一个分发文件并安装到服务器上。本实验假设你对Flask、Python虚拟环境和命令行有基本的了解。",
@@ -133,12 +130,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/application_object", "flask/useful_internals"]
+            ]
           },
           {
             "title": "在服务器上安装应用程序",
@@ -147,17 +141,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/sessions",
-              "flask/useful_internals"
             ]
           },
           {
@@ -167,15 +152,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/incoming_request_data",
-              "flask/json_support"
             ]
           },
           {
@@ -185,21 +163,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/useful_internals"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Expressive Rust Generics with Where Clause",
+  "description": "In this lab, we learn that a where clause in Rust can be used to express bounds for generic types separately from their declaration, allowing for clearer syntax, and can also apply bounds to arbitrary types rather than just type parameters. The where clause is especially useful when the bounds are more expressive than the normal syntax, as shown in the example involving the PrintInOption trait.",
+  "meta": {
+    "title": "Rust Programming | Where Clauses | Expressive Bounds",
+    "description": "Learn how to use Rust's where clauses to express bounds for generic types separately, enabling clearer syntax and applying bounds to arbitrary types.",
+    "keywords": "Rust, Programming, Where Clauses, Generic Types, Bounds, Expressive Syntax"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Where clauses",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/traits",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Expressive Rust Generics with Where Clause",
-      "description": "In this lab, we learn that a where clause in Rust can be used to express bounds for generic types separately from their declaration, allowing for clearer syntax, and can also apply bounds to arbitrary types rather than just type parameters. The where clause is especially useful when the bounds are more expressive than the normal syntax, as shown in the example involving the PrintInOption trait.",
-      "meta": {
-        "title": "Rust Programming | Where Clauses | Expressive Bounds",
-        "description": "Learn how to use Rust's where clauses to express bounds for generic types separately, enabling clearer syntax and applying bounds to arbitrary types.",
-        "keywords": "Rust, Programming, Where Clauses, Generic Types, Bounds, Expressive Syntax"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Where clauses",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 `where` 子句实现富有表现力的 Rust 泛型",
@@ -79,26 +76,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

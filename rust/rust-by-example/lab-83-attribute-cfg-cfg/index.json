@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Conditional Compilation with Rust's cfg Attribute",
+  "description": "In this lab, you will learn about the cfg attribute and cfg! macro in Rust, which allow for conditional checks in configuration and evaluation, respectively. The cfg attribute enables conditional compilation, while the cfg! macro evaluates to true or false at run-time. Code blocks using cfg! must be valid regardless of the evaluation result, unlike #[cfg] which can remove code.",
+  "meta": {
+    "title": "Rust Programming | Conditional Compilation | Configuration Checks",
+    "description": "Learn about the Rust `cfg` attribute and `cfg!` macro for conditional compilation and run-time checks. Explore how to use these features to build robust and adaptable Rust applications.",
+    "keywords": "Rust, Conditional Compilation, Configuration Checks, `cfg` Attribute, `cfg!` Macro"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "cfg",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/string_type"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Conditional Compilation with Rust's cfg Attribute",
-      "description": "In this lab, you will learn about the cfg attribute and cfg! macro in Rust, which allow for conditional checks in configuration and evaluation, respectively. The cfg attribute enables conditional compilation, while the cfg! macro evaluates to true or false at run-time. Code blocks using cfg! must be valid regardless of the evaluation result, unlike #[cfg] which can remove code.",
-      "meta": {
-        "title": "Rust Programming | Conditional Compilation | Configuration Checks",
-        "description": "Learn about the Rust `cfg` attribute and `cfg!` macro for conditional compilation and run-time checks. Explore how to use these features to build robust and adaptable Rust applications.",
-        "keywords": "Rust, Conditional Compilation, Configuration Checks, `cfg` Attribute, `cfg!` Macro"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "cfg",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/string_type"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 Rust 的 cfg 属性进行条件编译",
@@ -75,22 +72,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/string_type"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

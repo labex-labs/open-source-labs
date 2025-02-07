@@ -1,10 +1,119 @@
 {
   "type": "lab",
+  "title": "Draw Font Table with Matplotlib",
+  "description": "Matplotlib is a popular data visualization library in Python. It provides font support through the FreeType library. In this lab, we will learn how to draw a font table of the first 255 characters of a given font using Matplotlib's Axes.table.",
+  "meta": {
+    "title": "Matplotlib Font Table | Python Data Visualization",
+    "description": "Learn how to draw a font table of the first 255 characters of a given font using Matplotlib's Axes.table in this Python programming tutorial.",
+    "keywords": "Matplotlib, Python, Data Visualization, Font Table, FreeType"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Print the glyphs in a font",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_visualization",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/os_system",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Draw a font table",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/adding_tables",
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_visualization",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/os_system",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Display the font table",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/conditional_statements",
+          "python/importing_modules",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "font-table.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,109 +124,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Draw Font Table with Matplotlib",
-      "description": "Matplotlib is a popular data visualization library in Python. It provides font support through the FreeType library. In this lab, we will learn how to draw a font table of the first 255 characters of a given font using Matplotlib's Axes.table.",
-      "meta": {
-        "title": "Matplotlib Font Table | Python Data Visualization",
-        "description": "Learn how to draw a font table of the first 255 characters of a given font using Matplotlib's Axes.table in this Python programming tutorial.",
-        "keywords": "Matplotlib, Python, Data Visualization, Font Table, FreeType"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Print the glyphs in a font",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/os_system",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Draw a font table",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/adding_tables",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/os_system",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Display the font table",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/conditional_statements",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib绘制字体表",
@@ -138,24 +144,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/os_system",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           },
           {
@@ -167,28 +155,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/adding_tables",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/os_system",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           },
           {
@@ -200,19 +166,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/conditional_statements",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -221,16 +179,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "font-table.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

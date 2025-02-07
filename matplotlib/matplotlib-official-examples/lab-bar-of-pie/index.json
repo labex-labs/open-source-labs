@@ -1,10 +1,135 @@
 {
   "type": "lab",
+  "title": "Creating a Bar of Pie Chart",
+  "description": "In this tutorial, you will learn how to create a 'Bar of Pie' chart using Python's Matplotlib library. A Bar of Pie chart is a combination of a Pie chart and a stacked bar chart, where the first slice of the pie is exploded into a bar chart with a further breakdown of its characteristics. This chart is useful when you want to show the distribution of a whole data set, while also highlighting specific categories.",
+  "meta": {
+    "title": "Python Matplotlib | Bar of Pie Chart Tutorial",
+    "description": "Learn how to create a 'Bar of Pie' chart using Python's Matplotlib library. Explore the distribution of data and highlight specific categories.",
+    "keywords": "Python, Matplotlib, Bar of Pie, Data Visualization, Pie Chart, Stacked Bar Chart"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Define the data for the chart",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/lists"]
+      },
+      {
+        "title": "Create the pie chart",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/pie_charts",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the bar chart",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/bar_charts",
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Connect the pie chart and bar chart",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Display the chart",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "bar-of-pie.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,125 +140,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating a Bar of Pie Chart",
-      "description": "In this tutorial, you will learn how to create a 'Bar of Pie' chart using Python's Matplotlib library. A Bar of Pie chart is a combination of a Pie chart and a stacked bar chart, where the first slice of the pie is exploded into a bar chart with a further breakdown of its characteristics. This chart is useful when you want to show the distribution of a whole data set, while also highlighting specific categories.",
-      "meta": {
-        "title": "Python Matplotlib | Bar of Pie Chart Tutorial",
-        "description": "Learn how to create a 'Bar of Pie' chart using Python's Matplotlib library. Explore the distribution of data and highlight specific categories.",
-        "keywords": "Python, Matplotlib, Bar of Pie, Data Visualization, Pie Chart, Stacked Bar Chart"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Define the data for the chart",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/lists"]
-          },
-          {
-            "title": "Create the pie chart",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/pie_charts",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the bar chart",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Connect the pie chart and bar chart",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Display the chart",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建饼图中的条形图",
@@ -154,13 +160,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -172,8 +171,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/lists"]
+            ]
           },
           {
             "title": "创建饼图",
@@ -184,12 +182,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/pie_charts",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -201,15 +193,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -221,12 +204,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -238,13 +215,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -253,16 +228,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "bar-of-pie.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

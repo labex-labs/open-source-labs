@@ -1,10 +1,69 @@
 {
   "type": "lab",
+  "title": "Find Parity Outliers",
+  "description": "In this challenge, you are tasked with finding the parity outliers in a given list. Parity outliers are elements in a list that have a different parity (odd or even) than the majority of the elements in the list.",
+  "meta": {
+    "title": "Parity Outliers | Programming Challenges",
+    "description": "Learn how to find parity outliers in a list of integers using Python. Discover a step-by-step approach to solving this programming challenge.",
+    "keywords": "parity outliers, programming challenges, Python, list manipulation, collections"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Find Parity Outliers",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Parity Outliers Detection",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_find_parity_outliers.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "find_parity_outliers.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +74,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Find Parity Outliers",
-      "description": "In this challenge, you are tasked with finding the parity outliers in a given list. Parity outliers are elements in a list that have a different parity (odd or even) than the majority of the elements in the list.",
-      "meta": {
-        "title": "Parity Outliers | Programming Challenges",
-        "description": "Learn how to find parity outliers in a list of integers using Python. Discover a step-by-step approach to solving this programming challenge.",
-        "keywords": "parity outliers, programming challenges, Python, list manipulation, collections"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Find Parity Outliers",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Parity Outliers Detection",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "找出奇偶性异常值",
@@ -81,28 +92,13 @@
               {
                 "name": "验证奇偶性异常值检测",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -111,21 +107,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_find_parity_outliers.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "find_parity_outliers.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

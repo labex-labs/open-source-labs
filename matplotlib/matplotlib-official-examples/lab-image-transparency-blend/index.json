@@ -1,10 +1,117 @@
 {
   "type": "lab",
+  "title": "Matplotlib Image Transparency",
+  "description": "This lab will show you how to blend transparency with color in 2D images using Matplotlib. The goal is to highlight certain parts of data with imshow.",
+  "meta": {
+    "title": "Matplotlib Image Transparency: Blending Colors with Alpha Channels",
+    "description": "Learn how to use Matplotlib to blend transparency with color in 2D images and highlight specific data points.",
+    "keywords": "python playground, matplotlib, image processing, python, color blending, data visualization, transparency"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Plot the Blobs",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/heatmaps",
+          "python/build_in_functions",
+          "python/dictionaries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Blend in Transparency",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/heatmaps",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Use Transparency to Highlight Values",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "matplotlib/heatmaps",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "image-transparency-blend.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,107 +122,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Image Transparency",
-      "description": "This lab will show you how to blend transparency with color in 2D images using Matplotlib. The goal is to highlight certain parts of data with imshow.",
-      "meta": {
-        "title": "Matplotlib Image Transparency: Blending Colors with Alpha Channels",
-        "description": "Learn how to use Matplotlib to blend transparency with color in 2D images and highlight specific data points.",
-        "keywords": "python playground, matplotlib, image processing, python, color blending, data visualization, transparency"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Plot the Blobs",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Blend in Transparency",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Use Transparency to Highlight Values",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/heatmaps",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib图像透明度",
@@ -136,18 +142,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -159,12 +153,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/tuples"
             ]
           },
           {
@@ -176,12 +164,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/heatmaps",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -193,22 +175,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/heatmaps",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -217,16 +188,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "image-transparency-blend.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

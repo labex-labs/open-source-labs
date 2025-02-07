@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Extracting Dictionary Keys in Python",
+  "description": "In this lab, you will learn how to extract the keys from a flat dictionary in Python using the `dict.keys()` method and converting the result to a list.",
+  "meta": {
+    "title": "Python Dictionary Keys | Programming Tutorials | Lab",
+    "description": "Learn how to extract keys from a flat dictionary in Python. Discover a simple function to get a list of all keys from a given dictionary.",
+    "keywords": "Python, Dictionary, Keys, Programming, Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Dictionary Keys",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/lists",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_keys_only.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "keys_only.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Extracting Dictionary Keys in Python",
-      "description": "In this lab, you will learn how to extract the keys from a flat dictionary in Python using the `dict.keys()` method and converting the result to a list.",
-      "meta": {
-        "title": "Python Dictionary Keys | Programming Tutorials | Lab",
-        "description": "Learn how to extract keys from a flat dictionary in Python. Discover a simple function to get a list of all keys from a given dictionary.",
-        "keywords": "Python, Dictionary, Keys, Programming, Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Dictionary Keys",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lists",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Python 中提取字典的键",
@@ -78,25 +89,13 @@
               {
                 "name": "在临时目录中验证 Python 脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lists",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_keys_only.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "keys_only.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

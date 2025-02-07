@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Lifetime Annotation in Rust Traits",
+  "description": "In this lab, we explore the annotation of lifetimes in trait methods, which is similar to functions. It involves annotating lifetimes in the impl block as well. The provided code demonstrates an example where a struct Borrowed has a lifetime annotation, and the Default trait is implemented for it using the annotated lifetime. The main function then creates an instance of Borrowed using the Default::default() method, showcasing the usage of lifetimes in trait methods.",
+  "meta": {
+    "title": "Rust Lifetime Annotations | Trait Methods",
+    "description": "Explore the annotation of lifetimes in Rust trait methods, similar to functions. Learn how to implement the Default trait with lifetime annotations.",
+    "keywords": "Rust, Lifetime Annotations, Trait Methods, Default Trait, Programming Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Traits",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Lifetime Annotation in Rust Traits",
-      "description": "In this lab, we explore the annotation of lifetimes in trait methods, which is similar to functions. It involves annotating lifetimes in the impl block as well. The provided code demonstrates an example where a struct Borrowed has a lifetime annotation, and the Default trait is implemented for it using the annotated lifetime. The main function then creates an instance of Borrowed using the Default::default() method, showcasing the usage of lifetimes in trait methods.",
-      "meta": {
-        "title": "Rust Lifetime Annotations | Trait Methods",
-        "description": "Explore the annotation of lifetimes in Rust trait methods, similar to functions. Learn how to implement the Default trait with lifetime annotations.",
-        "keywords": "Rust, Lifetime Annotations, Trait Methods, Default Trait, Programming Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Traits",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 中 trait 的生命周期标注",
@@ -76,23 +73,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

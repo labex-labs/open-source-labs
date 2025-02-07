@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Split Multiline Strings",
+  "description": "In Python, a multiline string is a string that contains multiple lines of text. Sometimes, it is necessary to split a multiline string into a list of individual lines. This can be useful when you need to process each line separately.",
+  "meta": {
+    "title": "Split Multiline Strings in Python",
+    "description": "Learn how to split a multiline string into individual lines using a simple Python function.",
+    "keywords": "string manipulation, text processing, python, multiline string, split"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Split into Lines",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/standard_libraries"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_split_lines.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "split_lines.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Split Multiline Strings",
-      "description": "In Python, a multiline string is a string that contains multiple lines of text. Sometimes, it is necessary to split a multiline string into a list of individual lines. This can be useful when you need to process each line separately.",
-      "meta": {
-        "title": "Split Multiline Strings in Python",
-        "description": "Learn how to split a multiline string into individual lines using a simple Python function.",
-        "keywords": "string manipulation, text processing, python, multiline string, split"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Split into Lines",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/standard_libraries"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "拆分多行字符串",
@@ -75,22 +86,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/standard_libraries"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_split_lines.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "split_lines.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

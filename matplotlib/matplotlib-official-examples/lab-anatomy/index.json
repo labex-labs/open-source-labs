@@ -1,10 +1,148 @@
 {
   "type": "lab",
+  "title": "Matplotlib Visualization Fundamentals",
+  "description": "In this lab, you will learn how to use Matplotlib, a Python library for creating visualizations, to create a figure and annotate its anatomy. You will learn how to create a figure, plot data, set axis limits, add labels and titles, and annotate the figure with text and markers.",
+  "meta": {
+    "title": "Matplotlib Visualization | Python Data Visualization",
+    "description": "Learn how to use Matplotlib, a powerful Python library, to create visualizations and annotate figure anatomy. Ideal for data analysis and presentation.",
+    "keywords": "Matplotlib, Python, Data Visualization, Plotting, Annotation"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import libraries and set up data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the figure and set up the axes",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_styles_colors",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Plot the data",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add labels and title",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/tuples"]
+      },
+      {
+        "title": "Add legend",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/legend_config",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Annotate the figure",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "anatomy.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,138 +153,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Visualization Fundamentals",
-      "description": "In this lab, you will learn how to use Matplotlib, a Python library for creating visualizations, to create a figure and annotate its anatomy. You will learn how to create a figure, plot data, set axis limits, add labels and titles, and annotate the figure with text and markers.",
-      "meta": {
-        "title": "Matplotlib Visualization | Python Data Visualization",
-        "description": "Learn how to use Matplotlib, a powerful Python library, to create visualizations and annotate figure anatomy. Ideal for data analysis and presentation.",
-        "keywords": "Matplotlib, Python, Data Visualization, Plotting, Annotation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import libraries and set up data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the figure and set up the axes",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_styles_colors",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Plot the data",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add labels and title",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments", "python/tuples"]
-          },
-          {
-            "title": "Add legend",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Annotate the figure",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib可视化基础",
@@ -167,18 +173,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -190,13 +184,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_styles_colors",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -208,12 +195,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -225,8 +206,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments", "python/tuples"]
+            ]
           },
           {
             "title": "添加图例",
@@ -237,11 +217,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -253,24 +228,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -279,16 +241,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "anatomy.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

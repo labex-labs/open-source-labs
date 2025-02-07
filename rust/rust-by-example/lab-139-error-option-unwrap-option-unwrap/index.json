@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Option & Unwrap",
+  "description": "In this lab, we learn about the Option enum in Rust's std library, which is used to handle cases where absence is a possibility. It provides two options: Some(T) for when an element of type T is found, and None for when no element is found. These cases can be explicitly handled using match or implicitly handled using unwrap. Explicit handling allows for greater control and meaningful output, while unwrap can either return the inner element or induce a panic.",
+  "meta": {
+    "title": "Mastering Rust's Option and Unwrap Concepts",
+    "description": "Explore the powerful Option enum and unwrap functionality in Rust, learn to handle absence and prevent program failures.",
+    "keywords": "rust playground, error handling, option, rust tutor, rust online compiler, rust commands, unwrap, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Option & unwrap",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/panic_usage",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Option & Unwrap",
-      "description": "In this lab, we learn about the Option enum in Rust's std library, which is used to handle cases where absence is a possibility. It provides two options: Some(T) for when an element of type T is found, and None for when no element is found. These cases can be explicitly handled using match or implicitly handled using unwrap. Explicit handling allows for greater control and meaningful output, while unwrap can either return the inner element or induce a panic.",
-      "meta": {
-        "title": "Mastering Rust's Option and Unwrap Concepts",
-        "description": "Explore the powerful Option enum and unwrap functionality in Rust, learn to handle absence and prevent program failures.",
-        "keywords": "rust playground, error handling, option, rust tutor, rust online compiler, rust commands, unwrap, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Option & unwrap",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/panic_usage",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Option 与 Unwrap",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/panic_usage",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

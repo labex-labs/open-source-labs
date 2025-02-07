@@ -1,10 +1,318 @@
 {
   "type": "lab",
+  "title": "Python Object Model Internals",
+  "description": "This section introduces more details about Python's internal object model and discusses some matters related to memory management, copying, and type checking.",
+  "meta": {
+    "title": "Python Object Model | Memory Management | Assignment",
+    "description": "Explore Python's internal object model, memory management, and assignment operations in this comprehensive programming tutorial.",
+    "keywords": "Python, Object Model, Memory Management, Assignment, Programming, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 65,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Assignment",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Append Operator",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/data_collections",
+          "python/lists",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Assignment example",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Commas",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/lists", "python/python_shell"]
+      },
+      {
+        "title": "Reassigning values",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python Print and Bracket Commands",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/lists"
+        ]
+      },
+      {
+        "title": "Some Dangers",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Identity and References",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python Statements",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/lists",
+          "python/python_shell"
+        ]
+      },
+      {
+        "title": "Shallow copies",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains List, Is, and Period",
+            "file": "verify6.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/lists",
+          "python/python_shell",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Deep copies",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Python Import, Is, and Deepcopy",
+            "file": "verify7.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell"
+        ]
+      },
+      {
+        "title": "Names, Values, Types",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Type Command",
+            "file": "verify8.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/strings",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Type Checking",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains isinstance",
+            "file": "verify9.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Everything is an object",
+        "text": "en/step10.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Except Sqrt Math",
+            "file": "verify10.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 2.24: First-class Data",
+        "text": "en/step11.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains for csv zip",
+            "file": "verify11.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/iterators",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 2.25: Making dictionaries",
+        "text": "en/step12.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains dict, {, and zip",
+            "file": "verify12.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/lists",
+          "python/python_shell",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 2.26: The Big Picture",
+        "text": "en/step13.md",
+        "verify": [
+          {
+            "name": "Verify Presence of dowstocks.csv, Curly Braces, and zip",
+            "file": "verify13.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/iterators",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "dowstocks.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "portfolio.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,303 +323,6 @@
     "repo": "https://github.com/dabeaz-course/practical-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Python Object Model Internals",
-      "description": "This section introduces more details about Python's internal object model and discusses some matters related to memory management, copying, and type checking.",
-      "meta": {
-        "title": "Python Object Model | Memory Management | Assignment",
-        "description": "Explore Python's internal object model, memory management, and assignment operations in this comprehensive programming tutorial.",
-        "keywords": "Python, Object Model, Memory Management, Assignment, Programming, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Assignment",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Append Operator",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Assignment example",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Commas",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/lists", "python/python_shell"]
-          },
-          {
-            "title": "Reassigning values",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python Print and Bracket Commands",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Some Dangers",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Identity and References",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python Statements",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "Shallow copies",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains List, Is, and Period",
-                "file": "verify6.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/python_shell",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Deep copies",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Python Import, Is, and Deepcopy",
-                "file": "verify7.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell"
-            ]
-          },
-          {
-            "title": "Names, Values, Types",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Type Command",
-                "file": "verify8.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/strings",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Type Checking",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains isinstance",
-                "file": "verify9.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Everything is an object",
-            "text": "en/step10.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Except Sqrt Math",
-                "file": "verify10.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 2.24: First-class Data",
-            "text": "en/step11.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains for csv zip",
-                "file": "verify11.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 2.25: Making dictionaries",
-            "text": "en/step12.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains dict, {, and zip",
-                "file": "verify12.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 2.26: The Big Picture",
-            "text": "en/step13.md",
-            "verify": [
-              {
-                "name": "Verify Presence of dowstocks.csv, Curly Braces, and zip",
-                "file": "verify13.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Python 对象模型内部机制",
@@ -330,16 +341,8 @@
               {
                 "name": "验证 Python 历史记录包含追加运算符",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/variables_data_types"
             ]
           },
           {
@@ -349,12 +352,9 @@
               {
                 "name": "验证 Python 历史记录包含逗号",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": ["python/lists", "python/python_shell"]
+            ]
           },
           {
             "title": "重新赋值",
@@ -363,15 +363,8 @@
               {
                 "name": "验证 Python 打印和括号命令是否存在",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists"
             ]
           },
           {
@@ -381,12 +374,9 @@
               {
                 "name": "目前此步骤无需验证",
                 "file": "verify4.sh",
-                "hint": "目前此步骤无需验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "目前此步骤无需验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "身份与引用",
@@ -395,16 +385,8 @@
               {
                 "name": "验证 Python 语句是否存在",
                 "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/lists",
-              "python/python_shell"
             ]
           },
           {
@@ -414,19 +396,8 @@
               {
                 "name": "验证 Python 历史记录包含列表、is 关键字和句点",
                 "file": "verify6.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/lists",
-              "python/python_shell",
-              "python/variables_data_types"
             ]
           },
           {
@@ -436,16 +407,8 @@
               {
                 "name": "验证 Python 中 import、is 和 deepcopy 是否存在",
                 "file": "verify7.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell"
             ]
           },
           {
@@ -455,17 +418,8 @@
               {
                 "name": "验证 Python 历史记录中包含 type 命令",
                 "file": "verify8.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/strings",
-              "python/variables_data_types"
             ]
           },
           {
@@ -475,17 +429,8 @@
               {
                 "name": "验证 Python 历史记录中包含 isinstance",
                 "file": "verify9.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -495,23 +440,8 @@
               {
                 "name": "验证 Python 历史记录中包含除 math.sqrt 之外的相关内容",
                 "file": "verify10.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/type_conversion",
-              "python/variables_data_types"
             ]
           },
           {
@@ -521,28 +451,8 @@
               {
                 "name": "验证 Python 历史记录中包含 for、csv、zip",
                 "file": "verify11.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
             ]
           },
           {
@@ -552,20 +462,8 @@
               {
                 "name": "验证 Python 历史记录中包含 dict、{ 和 zip",
                 "file": "verify12.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/lists",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -575,32 +473,13 @@
               {
                 "name": "验证 dowstocks.csv、花括号和 zip 是否存在",
                 "file": "verify13.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -609,21 +488,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "dowstocks.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "portfolio.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Group Elements By Count",
+  "description": "In this lab, we will learn about the countBy function, which is used to group the elements of an array based on the given function and returns the count of elements in each group. We will explore how this function can be used to map values of an array to a function or property name and how to create an object to count the elements in each group using Array.prototype.reduce(). We will also look at several examples to understand how to use this function in real-world scenarios.",
+  "meta": {
+    "title": "Group Elements By Count in JavaScript",
+    "description": "Learn how to group and count elements in an array using the countBy function in JavaScript.",
+    "keywords": "javascript, javascript practice, group, javascript practice online, javascript lab, javascript tutor, array, countby, count"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Count Grouped Elements",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in ZSH History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Group Elements By Count",
-      "description": "In this lab, we will learn about the countBy function, which is used to group the elements of an array based on the given function and returns the count of elements in each group. We will explore how this function can be used to map values of an array to a function or property name and how to create an object to count the elements in each group using Array.prototype.reduce(). We will also look at several examples to understand how to use this function in real-world scenarios.",
-      "meta": {
-        "title": "Group Elements By Count in JavaScript",
-        "description": "Learn how to group and count elements in an array using the countBy function in JavaScript.",
-        "keywords": "javascript, javascript practice, group, javascript practice online, javascript lab, javascript tutor, array, countby, count"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Count Grouped Elements",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in ZSH History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "按计数对元素进行分组",
@@ -78,25 +75,13 @@
               {
                 "name": "在 ZSH 历史记录中验证 Node 命令",
                 "file": "verify1.sh",
-                "hint": "通过输入 'node' 并按 Enter 键，可以在终端/SSH 中运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入 'node' 并按 Enter 键，可以在终端/SSH 中运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

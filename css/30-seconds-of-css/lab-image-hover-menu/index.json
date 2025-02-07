@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Menu on Image Hover",
+  "description": "In this lab, we will explore the creation of a menu overlay that appears when the user hovers over an image. This interactive feature is a great way to enhance the user experience and provide easy access to important links. By using HTML and CSS, we will build a responsive and visually appealing menu that slides in and out smoothly.",
+  "meta": {
+    "title": "Create an Interactive Menu on Image Hover",
+    "description": "Learn how to build a responsive and visually appealing menu that slides in and out smoothly when the user hovers over an image.",
+    "keywords": "css, css practice, user experience, css animation, image hover, responsive design, css playground, menu overlay, css lab, css exercises"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Menu on Image Hover",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "css/backgrounds",
+          "css/borders",
+          "css/box_model",
+          "css/colors",
+          "css/display_property",
+          "css/flexbox",
+          "css/margin_and_padding",
+          "css/mobile_first_design",
+          "css/positioning",
+          "css/pseudo_classes",
+          "css/selectors",
+          "css/text_styling",
+          "css/transitions",
+          "css/width_and_height"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,72 +92,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Menu on Image Hover",
-      "description": "In this lab, we will explore the creation of a menu overlay that appears when the user hovers over an image. This interactive feature is a great way to enhance the user experience and provide easy access to important links. By using HTML and CSS, we will build a responsive and visually appealing menu that slides in and out smoothly.",
-      "meta": {
-        "title": "Create an Interactive Menu on Image Hover",
-        "description": "Learn how to build a responsive and visually appealing menu that slides in and out smoothly when the user hovers over an image.",
-        "keywords": "css, css practice, user experience, css animation, image hover, responsive design, css playground, menu overlay, css lab, css exercises"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Menu on Image Hover",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of index.html modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/borders",
-              "css/box_model",
-              "css/colors",
-              "css/display_property",
-              "css/flexbox",
-              "css/margin_and_padding",
-              "css/mobile_first_design",
-              "css/positioning",
-              "css/pseudo_classes",
-              "css/selectors",
-              "css/text_styling",
-              "css/transitions",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "悬停在图像上时显示菜单",
@@ -99,46 +110,23 @@
               {
                 "name": "验证网络服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               },
               {
                 "name": "验证 index.html 修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               },
               {
                 "name": "验证 style.css 修改状态",
                 "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/borders",
-              "css/box_model",
-              "css/colors",
-              "css/display_property",
-              "css/flexbox",
-              "css/margin_and_padding",
-              "css/mobile_first_design",
-              "css/positioning",
-              "css/pseudo_classes",
-              "css/selectors",
-              "css/text_styling",
-              "css/transitions",
-              "css/width_and_height"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -147,21 +135,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

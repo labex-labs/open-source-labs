@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Parsing URLs in Go",
+  "description": "The purpose of this lab is to demonstrate how to parse URLs in Go.",
+  "meta": {
+    "title": "Go | URL Parsing | Programming Tutorials",
+    "description": "Learn how to parse URLs in Go programming language. Explore the different components of a URL and how to extract them using the url and net packages.",
+    "keywords": "Go, URL Parsing, Programming Tutorials, URL Components, Scheme, Authentication, Host, Port, Path, Query Parameters, Query Fragment"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "URL Parsing",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify URL Parsing for Postgres Output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/url_parsing"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "url-parsing.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Parsing URLs in Go",
-      "description": "The purpose of this lab is to demonstrate how to parse URLs in Go.",
-      "meta": {
-        "title": "Go | URL Parsing | Programming Tutorials",
-        "description": "Learn how to parse URLs in Go programming language. Explore the different components of a URL and how to extract them using the url and net packages.",
-        "keywords": "Go, URL Parsing, Programming Tutorials, URL Components, Scheme, Authentication, Host, Port, Path, Query Parameters, Query Fragment"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "URL Parsing",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify URL Parsing for Postgres Output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/url_parsing"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Go 中解析 URL",
@@ -70,17 +76,13 @@
               {
                 "name": "验证 Postgres 输出的 URL 解析",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/url_parsing"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "url-parsing.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,72 @@
 {
   "type": "lab",
+  "title": "Split List into N Chunks",
+  "description": "In Python, we can split a list into smaller lists of equal size using a simple function. This can be useful when we want to process large amounts of data in smaller chunks. In this challenge, you will be asked to write a function that takes a list and an integer n as input and returns a list of n smaller lists, each containing an equal number of elements from the original list.",
+  "meta": {
+    "title": "Split List into N Chunks in Python",
+    "description": "Learn how to split a Python list into smaller chunks of equal size using a simple function. Useful for processing large datasets in manageable portions.",
+    "keywords": "data processing, python, chunk, list, split"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Split List into N Chunks",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lambda_functions",
+          "python/lists",
+          "python/math_random",
+          "python/numeric_types",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_chunk_into_n.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "chunk_into_n.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,57 +77,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Split List into N Chunks",
-      "description": "In Python, we can split a list into smaller lists of equal size using a simple function. This can be useful when we want to process large amounts of data in smaller chunks. In this challenge, you will be asked to write a function that takes a list and an integer n as input and returns a list of n smaller lists, each containing an equal number of elements from the original list.",
-      "meta": {
-        "title": "Split List into N Chunks in Python",
-        "description": "Learn how to split a Python list into smaller chunks of equal size using a simple function. Useful for processing large datasets in manageable portions.",
-        "keywords": "data processing, python, chunk, list, split"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Split List into N Chunks",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将列表拆分为 N 个块",
@@ -84,31 +95,13 @@
               {
                 "name": "在临时目录中验证 Python 脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -117,21 +110,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_chunk_into_n.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "chunk_into_n.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Exploring Golang Variable Declarations",
+  "description": "This lab aims to test your understanding of variables in Golang. In Golang, variables are explicitly declared and used by the compiler to check the type-correctness of function calls.",
+  "meta": {
+    "title": "Golang Variables | Programming Fundamentals",
+    "description": "Learn the basics of variable declaration and initialization in Golang, a powerful and efficient programming language.",
+    "keywords": "Golang, variables, programming, fundamentals, data types"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Variables",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Variables Output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/variables"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "variables.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Golang Variable Declarations",
-      "description": "This lab aims to test your understanding of variables in Golang. In Golang, variables are explicitly declared and used by the compiler to check the type-correctness of function calls.",
-      "meta": {
-        "title": "Golang Variables | Programming Fundamentals",
-        "description": "Learn the basics of variable declaration and initialization in Golang, a powerful and efficient programming language.",
-        "keywords": "Golang, variables, programming, fundamentals, data types"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Variables",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Variables Output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/variables"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索Go语言中的变量声明",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go语言变量输出",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/variables"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "variables.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

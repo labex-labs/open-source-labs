@@ -1,10 +1,91 @@
 {
   "type": "lab",
+  "title": "Flask Jinja2 Templates",
+  "description": "In this lab, you will learn how to use Jinja2 templates in Flask. Jinja2 is a powerful template engine that allows you to generate dynamic HTML pages in your Flask application. Templates are a great way to separate the presentation logic from the business logic of your application.",
+  "meta": {
+    "title": "Mastering Jinja2 Templates in Flask",
+    "description": "Learn how to use Jinja2 templates to create dynamic HTML pages in your Flask web application.",
+    "keywords": "python, templates, jinja2, web development, flask"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Install Flask and Jinja2",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/incoming_request_data"]
+      },
+      {
+        "title": "Create a Flask Application",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/sessions",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Create a Jinja2 Template",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/sessions", "flask/useful_internals"]
+      },
+      {
+        "title": "Run the Flask Application",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,90 +104,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Flask Jinja2 Templates",
-      "description": "In this lab, you will learn how to use Jinja2 templates in Flask. Jinja2 is a powerful template engine that allows you to generate dynamic HTML pages in your Flask application. Templates are a great way to separate the presentation logic from the business logic of your application.",
-      "meta": {
-        "title": "Mastering Jinja2 Templates in Flask",
-        "description": "Learn how to use Jinja2 templates to create dynamic HTML pages in your Flask web application.",
-        "keywords": "python, templates, jinja2, web development, flask"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Install Flask and Jinja2",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/incoming_request_data"]
-          },
-          {
-            "title": "Create a Flask Application",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/sessions",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Create a Jinja2 Template",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/sessions", "flask/useful_internals"]
-          },
-          {
-            "title": "Run the Flask Application",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "Flask Jinja2模板",
       "description": "在本实验中，你将学习如何在Flask中使用Jinja2模板。Jinja2是一个强大的模板引擎，可让你在Flask应用程序中生成动态HTML页面。模板是将应用程序的表示逻辑与业务逻辑分离的好方法。",
@@ -124,12 +121,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/incoming_request_data"]
+            ]
           },
           {
             "title": "创建一个Flask应用程序",
@@ -138,16 +132,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/sessions",
-              "flask/useful_internals"
             ]
           },
           {
@@ -157,12 +143,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/sessions", "flask/useful_internals"]
+            ]
           },
           {
             "title": "运行Flask应用程序",
@@ -171,17 +154,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

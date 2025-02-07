@@ -1,10 +1,100 @@
 {
   "type": "lab",
+  "title": "Beginner's Rust Programming: Hello World",
+  "description": "In this lab, you will write your first Rust program, which will print the text 'Hello, world!' to the screen.",
+  "meta": {
+    "title": "Rust Programming | Hello, World Tutorial",
+    "description": "Learn Rust programming with the Hello, World tutorial from the Rust Book. Practice your Rust skills in LabEx.",
+    "keywords": "Rust, programming, tutorial, hello world, LabEx"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Hello, World",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Project Directory",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Existence of hello_world Directory",
+            "file": "verify2.sh",
+            "hint": "hello_world directory should be created.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["linux/mkdir"]
+      },
+      {
+        "title": "Writing and Running a Rust Program",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Rust Compiler Execution",
+            "file": "verify3.sh",
+            "hint": "main.rs should can be compiled and run.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["rust/expressions_statements", "rust/function_syntax"]
+      },
+      {
+        "title": "Anatomy of a Rust Program",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["rust/expressions_statements", "rust/function_syntax"]
+      },
+      {
+        "title": "Compiling and Running Are Separate Steps",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,99 +105,6 @@
     "repo": "https://github.com/rust-lang/book"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Beginner's Rust Programming: Hello World",
-      "description": "In this lab, you will write your first Rust program, which will print the text 'Hello, world!' to the screen.",
-      "meta": {
-        "title": "Rust Programming | Hello, World Tutorial",
-        "description": "Learn Rust programming with the Hello, World tutorial from the Rust Book. Practice your Rust skills in LabEx.",
-        "keywords": "Rust, programming, tutorial, hello world, LabEx"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Hello, World",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Creating a Project Directory",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Existence of hello_world Directory",
-                "file": "verify2.sh",
-                "hint": "hello_world directory should be created.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["linux/mkdir"]
-          },
-          {
-            "title": "Writing and Running a Rust Program",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Rust Compiler Execution",
-                "file": "verify3.sh",
-                "hint": "main.rs should can be compiled and run.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
-          },
-          {
-            "title": "Anatomy of a Rust Program",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
-          },
-          {
-            "title": "Compiling and Running Are Separate Steps",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 编程入门：你好，世界",
@@ -126,12 +123,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "创建一个项目目录",
@@ -140,12 +134,9 @@
               {
                 "name": "验证 hello_world 目录是否存在",
                 "file": "verify2.sh",
-                "hint": "应创建 hello_world 目录。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "应创建 hello_world 目录。"
               }
-            ],
-            "skills": ["linux/mkdir"]
+            ]
           },
           {
             "title": "编写并运行一个 Rust 程序",
@@ -154,12 +145,9 @@
               {
                 "name": "验证 Rust 编译器的执行情况",
                 "file": "verify3.sh",
-                "hint": "main.rs 应该能够被编译并运行。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "main.rs 应该能够被编译并运行。"
               }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+            ]
           },
           {
             "title": "Rust 程序剖析",
@@ -168,12 +156,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+            ]
           },
           {
             "title": "编译和运行是分开的步骤",
@@ -182,17 +167,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

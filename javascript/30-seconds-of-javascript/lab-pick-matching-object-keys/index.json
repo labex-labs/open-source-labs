@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Pick Matching Object Keys",
+  "description": "In this lab, we will explore how to use the pickBy() function to create a new object composed of only the key-value pairs for which a given function returns truthy. This function can be useful in scenarios where you need to filter out certain properties from an object based on certain criteria. We will learn how to use Object.keys(), Array.prototype.filter(), and Array.prototype.reduce() to accomplish this task.",
+  "meta": {
+    "title": "Mastering Object Key Filtering with JavaScript",
+    "description": "Learn how to use the powerful pickBy() function to create new objects based on specific criteria.",
+    "keywords": "key, javascript, javascript practice, javascript tutor, javascript practice online, object, javascript lab, filtering, pickby"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pick Matching Object Keys",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pick Matching Object Keys",
-      "description": "In this lab, we will explore how to use the pickBy() function to create a new object composed of only the key-value pairs for which a given function returns truthy. This function can be useful in scenarios where you need to filter out certain properties from an object based on certain criteria. We will learn how to use Object.keys(), Array.prototype.filter(), and Array.prototype.reduce() to accomplish this task.",
-      "meta": {
-        "title": "Mastering Object Key Filtering with JavaScript",
-        "description": "Learn how to use the powerful pickBy() function to create new objects based on specific criteria.",
-        "keywords": "key, javascript, javascript practice, javascript tutor, javascript practice online, object, javascript lab, filtering, pickby"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pick Matching Object Keys",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "选取匹配的对象键",
@@ -78,25 +75,13 @@
               {
                 "name": "验证Node命令用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，可以通过输入'node'并按回车键来运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，可以通过输入'node'并按回车键来运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

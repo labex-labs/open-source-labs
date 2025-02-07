@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Using Async and Await in Flask",
+  "description": "This lab will guide you through the process of using async and await in Flask, a popular Python web framework. You will learn how to define asynchronous views and handlers, understand the performance implications of using async code, and explore background tasks in Flask.",
+  "meta": {
+    "title": "Mastering Async in Flask | Python Web Development",
+    "description": "Learn how to use async and await in Flask, a popular Python web framework. Explore asynchronous views, performance implications, and background tasks.",
+    "keywords": "Flask, Python, Async, Await, Web Development, Asynchronous Programming"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Defining an Async View",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/command_line_interface",
+          "flask/incoming_request_data",
+          "flask/response_objects",
+          "flask/useful_internals"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,50 +64,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Using Async and Await in Flask",
-      "description": "This lab will guide you through the process of using async and await in Flask, a popular Python web framework. You will learn how to define asynchronous views and handlers, understand the performance implications of using async code, and explore background tasks in Flask.",
-      "meta": {
-        "title": "Mastering Async in Flask | Python Web Development",
-        "description": "Learn how to use async and await in Flask, a popular Python web framework. Explore asynchronous views, performance implications, and background tasks.",
-        "keywords": "Flask, Python, Async, Await, Web Development, Asynchronous Programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Defining an Async View",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/useful_internals"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "在Flask中使用异步和等待",
       "description": "本实验将指导你在流行的Python网络框架Flask中使用异步和等待的过程。你将学习如何定义异步视图和处理程序，理解使用异步代码的性能影响，并探索Flask中的后台任务。",
@@ -84,24 +81,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/useful_internals"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

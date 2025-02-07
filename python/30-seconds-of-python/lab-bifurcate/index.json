@@ -1,10 +1,68 @@
 {
   "type": "lab",
+  "title": "Split List by Filter in Python",
+  "description": "In Python, we can split a list into two groups based on a given filter. This can be done using a list comprehension and the zip() function. In this challenge, you will be asked to write a function that takes a list and a filter as input and returns two lists, one containing the elements that pass the filter and the other containing the elements that do not.",
+  "meta": {
+    "title": "Python List Bifurcation | Programming Tutorials",
+    "description": "Learn how to split a Python list into two groups based on a given filter using list comprehension and the zip() function.",
+    "keywords": "Python, list, bifurcation, programming, tutorials, list comprehension, zip"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Bifurcate List",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_bifurcate.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "bifurcate.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +73,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Split List by Filter in Python",
-      "description": "In Python, we can split a list into two groups based on a given filter. This can be done using a list comprehension and the zip() function. In this challenge, you will be asked to write a function that takes a list and a filter as input and returns two lists, one containing the elements that pass the filter and the other containing the elements that do not.",
-      "meta": {
-        "title": "Python List Bifurcation | Programming Tutorials",
-        "description": "Learn how to split a Python list into two groups based on a given filter using list comprehension and the zip() function.",
-        "keywords": "Python, list, bifurcation, programming, tutorials, list comprehension, zip"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Bifurcate List",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Python 中根据筛选条件拆分列表",
@@ -80,27 +91,13 @@
               {
                 "name": "在临时目录中验证 Python 脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -109,21 +106,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_bifurcate.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "bifurcate.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

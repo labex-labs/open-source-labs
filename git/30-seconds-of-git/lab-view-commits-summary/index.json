@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "View a Short Summary of Commits",
+  "description": "Git is a powerful version control system that allows developers to track changes made to their codebase over time. One of the most useful features of Git is the ability to view a summary of all the commits made to a repository. This can be helpful when trying to understand the history of a project or to identify when a particular change was made.",
+  "meta": {
+    "title": "Mastering Git Commit History: A Concise Summary",
+    "description": "Discover how to efficiently view and understand the commit history of your Git projects.",
+    "keywords": "version control, git summary, git log, git labs, git, commit history, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "View a Short Summary of Commits",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful view",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "View a Short Summary of Commits",
-      "description": "Git is a powerful version control system that allows developers to track changes made to their codebase over time. One of the most useful features of Git is the ability to view a summary of all the commits made to a repository. This can be helpful when trying to understand the history of a project or to identify when a particular change was made.",
-      "meta": {
-        "title": "Mastering Git Commit History: A Concise Summary",
-        "description": "Discover how to efficiently view and understand the commit history of your Git projects.",
-        "keywords": "version control, git summary, git log, git labs, git, commit history, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "View a Short Summary of Commits",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful view",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "查看提交的简短摘要",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功查看",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

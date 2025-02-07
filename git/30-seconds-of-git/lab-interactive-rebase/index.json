@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Perform an Interactive Rebase",
+  "description": "Git is a powerful version control system that allows developers to manage their codebase efficiently. One of the most useful features of Git is interactive rebase, which allows developers to modify the commit history of a branch. In this challenge, you will learn how to perform an interactive rebase using Git.",
+  "meta": {
+    "title": "Mastering Git Interactive Rebase",
+    "description": "Unlock the power of Git's interactive rebase feature to streamline your commit history and optimize your development workflow.",
+    "keywords": "version control, development workflow, git labs, git, commit history, interactive rebase, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Perform an Interactive Rebase",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful interaction",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/rebase"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Perform an Interactive Rebase",
-      "description": "Git is a powerful version control system that allows developers to manage their codebase efficiently. One of the most useful features of Git is interactive rebase, which allows developers to modify the commit history of a branch. In this challenge, you will learn how to perform an interactive rebase using Git.",
-      "meta": {
-        "title": "Mastering Git Interactive Rebase",
-        "description": "Unlock the power of Git's interactive rebase feature to streamline your commit history and optimize your development workflow.",
-        "keywords": "version control, development workflow, git labs, git, commit history, interactive rebase, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Perform an Interactive Rebase",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful interaction",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/rebase"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "执行交互式变基",
@@ -70,17 +67,13 @@
               {
                 "name": "验证交互是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/rebase"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

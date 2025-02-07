@@ -1,378 +1,184 @@
 {
   "type": "lab",
+  "title": "Exploring Python's First-Class Objects Memory Model",
+  "description": "In this lab, you will explore the concept of first-class objects and Python's memory model by generalizing functions for reading CSV data into a separate file.",
+  "meta": {
+    "title": "Mastering Python's First-class Objects | Memory Model",
+    "description": "Explore the power of having first-class objects and better understand Python's memory model with this comprehensive programming tutorial.",
+    "keywords": "Python, first-class objects, memory model, data processing, CSV, type conversion"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Python's First-Class Objects Memory Model",
-      "description": "In this lab, you will explore the concept of first-class objects and Python's memory model by generalizing functions for reading CSV data into a separate file.",
-      "meta": {
-        "title": "Mastering Python's First-class Objects | Memory Model",
-        "description": "Explore the power of having first-class objects and better understand Python's memory model with this comprehensive programming tutorial.",
-        "keywords": "Python, first-class objects, memory model, data processing, CSV, type conversion"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "First-class Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python CSV, Open, Next, Zip, and Dict Usage",
-                "file": "verify1.sh",
-                "hint": "Please run the python code in step 1.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/inheritance",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Making a Parsing Utility Function",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Project Files and History",
-                "file": "verify2.sh",
-                "hint": "Please create the 'reader.py' file and implement the 'read_csv_as_dicts()' function.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["reader.py"]
-          },
-          {
-            "title": "Memory Revisited",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Python History for Specific Commands",
-                "file": "verify3.sh",
-                "hint": "Please run the python code in step 3.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/os_system",
-              "python/python_shell",
-              "python/sets",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Special Challenge Project",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Use of Collections, defaultdict, and append",
-                "file": "verify4.sh",
-                "hint": "Please implement 'read_csv_as_columns()' function in 'colreader.py'",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/os_system",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["colreader.py"]
-          },
-          {
-            "title": "Deep Thought",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Python CSV File Reading",
-                "file": "verify5.sh",
-                "hint": "Please run the python code in step 5.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "探索 Python 的一等对象内存模型",
-      "description": "在本实验中，你将通过将读取 CSV 数据的函数泛化到一个单独的文件中，来探索一等对象的概念和 Python 的内存模型。",
-      "meta": {
-        "title": "掌握 Python 的一等对象 | 内存模型",
-        "description": "通过这个全面的编程教程，探索拥有一等对象的强大功能，并更好地理解 Python 的内存模型。",
-        "keywords": "Python, 一等对象, 内存模型, 数据处理, CSV, 类型转换"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "一等数据",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 的 CSV、Open、Next、Zip 和 Dict 的用法",
-                "file": "verify1.sh",
-                "hint": "请运行步骤 1 中的 Python 代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/inheritance",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "创建一个解析实用函数",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 Python 项目文件和历史记录",
-                "file": "verify2.sh",
-                "hint": "请创建'reader.py' 文件并实现'read_csv_as_dicts()' 函数。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["reader.py"]
-          },
-          {
-            "title": "重温内存",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证特定命令的 Python 历史记录",
-                "file": "verify3.sh",
-                "hint": "请运行步骤 3 中的 Python 代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/os_system",
-              "python/python_shell",
-              "python/sets",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "特殊挑战项目",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证对集合、defaultdict 和 append 的使用",
-                "file": "verify4.sh",
-                "hint": "请在 'colreader.py' 中实现'read_csv_as_columns()' 函数",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/os_system",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["colreader.py"]
-          },
-          {
-            "title": "深度思考",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证 Python CSV 文件读取",
-                "file": "verify5.sh",
-                "hint": "请运行步骤 5 中的 Python 代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/dictionaries",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "First-class Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python CSV, Open, Next, Zip, and Dict Usage",
+            "file": "verify1.sh",
+            "hint": "Please run the python code in step 1.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/inheritance",
+          "python/iterators",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Making a Parsing Utility Function",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Project Files and History",
+            "file": "verify2.sh",
+            "hint": "Please create the 'reader.py' file and implement the 'read_csv_as_dicts()' function.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["reader.py"]
+      },
+      {
+        "title": "Memory Revisited",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Python History for Specific Commands",
+            "file": "verify3.sh",
+            "hint": "Please run the python code in step 3.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/os_system",
+          "python/python_shell",
+          "python/sets",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Special Challenge Project",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Use of Collections, defaultdict, and append",
+            "file": "verify4.sh",
+            "hint": "Please implement 'read_csv_as_columns()' function in 'colreader.py'",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lists",
+          "python/numeric_types",
+          "python/os_system",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["colreader.py"]
+      },
+      {
+        "title": "Deep Thought",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Python CSV File Reading",
+            "file": "verify5.sh",
+            "hint": "Please run the python code in step 5.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/dictionaries",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -392,5 +198,95 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "探索 Python 的一等对象内存模型",
+      "description": "在本实验中，你将通过将读取 CSV 数据的函数泛化到一个单独的文件中，来探索一等对象的概念和 Python 的内存模型。",
+      "meta": {
+        "title": "掌握 Python 的一等对象 | 内存模型",
+        "description": "通过这个全面的编程教程，探索拥有一等对象的强大功能，并更好地理解 Python 的内存模型。",
+        "keywords": "Python, 一等对象, 内存模型, 数据处理, CSV, 类型转换"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "一等数据",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 的 CSV、Open、Next、Zip 和 Dict 的用法",
+                "file": "verify1.sh",
+                "hint": "请运行步骤 1 中的 Python 代码。"
+              }
+            ]
+          },
+          {
+            "title": "创建一个解析实用函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 Python 项目文件和历史记录",
+                "file": "verify2.sh",
+                "hint": "请创建'reader.py' 文件并实现'read_csv_as_dicts()' 函数。"
+              }
+            ],
+            "solutions": ["reader.py"]
+          },
+          {
+            "title": "重温内存",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证特定命令的 Python 历史记录",
+                "file": "verify3.sh",
+                "hint": "请运行步骤 3 中的 Python 代码。"
+              }
+            ]
+          },
+          {
+            "title": "特殊挑战项目",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证对集合、defaultdict 和 append 的使用",
+                "file": "verify4.sh",
+                "hint": "请在 'colreader.py' 中实现'read_csv_as_columns()' 函数"
+              }
+            ],
+            "solutions": ["colreader.py"]
+          },
+          {
+            "title": "深度思考",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证 Python CSV 文件读取",
+                "file": "verify5.sh",
+                "hint": "请运行步骤 5 中的 Python 代码。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,774 +1,379 @@
 {
   "type": "lab",
+  "title": "Error Handling and Exceptions",
+  "description": "Although exceptions were introduced earlier, this section fills in some additional details about error checking and exception handling.",
+  "meta": {
+    "title": "Mastering Python Error Handling and Exceptions",
+    "description": "Explore the essentials of error handling and exception management in Python programming.",
+    "keywords": "try except, error handling, python, exceptions, runtime errors"
+  },
   "difficulty": "Beginner",
   "time": 80,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/practical-python"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Error Handling and Exceptions",
-      "description": "Although exceptions were introduced earlier, this section fills in some additional details about error checking and exception handling.",
-      "meta": {
-        "title": "Mastering Python Error Handling and Exceptions",
-        "description": "Explore the essentials of error handling and exception management in Python programming.",
-        "keywords": "try except, error handling, python, exceptions, runtime errors"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "How programs fail",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'def' in Python History",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exceptions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/conditional_statements",
-              "python/raising_exceptions",
-              "python/sets"
-            ]
-          },
-          {
-            "title": "Exception Handling",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/catching_exceptions",
-              "python/comments",
-              "python/function_definition",
-              "python/raising_exceptions"
-            ]
-          },
-          {
-            "title": "Built-in Exceptions",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Exception Values",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Raise Statement",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/raising_exceptions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Catching Multiple Errors",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/catching_exceptions", "python/tuples"]
-          },
-          {
-            "title": "Catching All Errors",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'print' in Python History",
-                "file": "verify7.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments"
-            ]
-          },
-          {
-            "title": "Wrong Way to Catch Errors",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify8.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions"
-            ]
-          },
-          {
-            "title": "Somewhat Better Approach",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify9.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Reraising an Exception",
-            "text": "en/step10.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify10.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/raising_exceptions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Exception Best Practices",
-            "text": "en/step11.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify11.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "finally statement",
-            "text": "en/step12.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify12.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/catching_exceptions",
-              "python/comments",
-              "python/finally_block"
-            ]
-          },
-          {
-            "title": "with statement",
-            "text": "en/step13.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'with' in Python History",
-                "file": "verify13.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Exercise 3.8: Raising exceptions",
-            "text": "en/step14.md",
-            "verify": [
-              {
-                "name": "Verify Presence of RuntimeError Exception",
-                "file": "verify14.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["fileparse_3.8_solution.py"]
-          },
-          {
-            "title": "Exercise 3.9: Catching exceptions",
-            "text": "en/step15.md",
-            "verify": [
-              {
-                "name": "Verify Parsing of Python File",
-                "file": "verify15.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["fileparse_3.9_solution.py"]
-          },
-          {
-            "title": "Exercise 3.10: Silencing Errors",
-            "text": "en/step16.md",
-            "verify": [
-              {
-                "name": "Verify Parsing of MSFT Stock Data",
-                "file": "verify16.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["fileparse_3.10_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "错误处理与异常",
-      "description": "尽管之前已经介绍过异常，但本节将补充一些关于错误检查和异常处理的更多细节。",
-      "meta": {
-        "title": "掌握Python错误处理与异常",
-        "description": "探索Python编程中错误处理和异常管理的要点。",
-        "keywords": "try except, 错误处理, Python, 异常, 运行时错误"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "程序如何出错",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在'def'",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "异常",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/conditional_statements",
-              "python/raising_exceptions",
-              "python/sets"
-            ]
-          },
-          {
-            "title": "异常处理",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/catching_exceptions",
-              "python/comments",
-              "python/function_definition",
-              "python/raising_exceptions"
-            ]
-          },
-          {
-            "title": "内置异常",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "异常值",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否包含raise语句",
-                "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/raising_exceptions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "捕获多个错误",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/catching_exceptions", "python/tuples"]
-          },
-          {
-            "title": "捕获所有错误",
-            "text": "zh/step7.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在'print'",
-                "file": "verify7.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments"
-            ]
-          },
-          {
-            "title": "捕获错误的错误方式",
-            "text": "zh/step8.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify8.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions"
-            ]
-          },
-          {
-            "title": "稍微更好的方法",
-            "text": "zh/step9.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify9.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "重新引发异常",
-            "text": "zh/step10.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify10.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/raising_exceptions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "异常最佳实践",
-            "text": "zh/step11.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify11.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "finally 语句",
-            "text": "zh/step12.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify12.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/catching_exceptions",
-              "python/comments",
-              "python/finally_block"
-            ]
-          },
-          {
-            "title": "with 语句",
-            "text": "zh/step13.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史中是否存在 'with'",
-                "file": "verify13.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "练习 3.8：引发异常",
-            "text": "zh/step14.md",
-            "verify": [
-              {
-                "name": "验证是否存在运行时错误异常",
-                "file": "verify14.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["fileparse_3.8_solution.py"]
-          },
-          {
-            "title": "练习 3.9：捕获异常",
-            "text": "zh/step15.md",
-            "verify": [
-              {
-                "name": "验证 Python 文件的解析",
-                "file": "verify15.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["fileparse_3.9_solution.py"]
-          },
-          {
-            "title": "练习 3.10：抑制错误",
-            "text": "zh/step16.md",
-            "verify": [
-              {
-                "name": "验证微软股票数据的解析",
-                "file": "verify16.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["fileparse_3.10_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "How programs fail",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'def' in Python History",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/function_definition",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exceptions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/conditional_statements",
+          "python/raising_exceptions",
+          "python/sets"
+        ]
+      },
+      {
+        "title": "Exception Handling",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/catching_exceptions",
+          "python/comments",
+          "python/function_definition",
+          "python/raising_exceptions"
+        ]
+      },
+      {
+        "title": "Built-in Exceptions",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Exception Values",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Raise Statement",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/raising_exceptions",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Catching Multiple Errors",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/catching_exceptions", "python/tuples"]
+      },
+      {
+        "title": "Catching All Errors",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'print' in Python History",
+            "file": "verify7.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments"
+        ]
+      },
+      {
+        "title": "Wrong Way to Catch Errors",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify8.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/build_in_functions", "python/catching_exceptions"]
+      },
+      {
+        "title": "Somewhat Better Approach",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify9.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Reraising an Exception",
+        "text": "en/step10.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify10.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/raising_exceptions",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Exception Best Practices",
+        "text": "en/step11.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify11.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "finally statement",
+        "text": "en/step12.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify12.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/catching_exceptions",
+          "python/comments",
+          "python/finally_block"
+        ]
+      },
+      {
+        "title": "with statement",
+        "text": "en/step13.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'with' in Python History",
+            "file": "verify13.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/file_opening_closing",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Exercise 3.8: Raising exceptions",
+        "text": "en/step14.md",
+        "verify": [
+          {
+            "name": "Verify Presence of RuntimeError Exception",
+            "file": "verify14.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["fileparse_3.8_solution.py"]
+      },
+      {
+        "title": "Exercise 3.9: Catching exceptions",
+        "text": "en/step15.md",
+        "verify": [
+          {
+            "name": "Verify Parsing of Python File",
+            "file": "verify15.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["fileparse_3.9_solution.py"]
+      },
+      {
+        "title": "Exercise 3.10: Silencing Errors",
+        "text": "en/step16.md",
+        "verify": [
+          {
+            "name": "Verify Parsing of MSFT Stock Data",
+            "file": "verify16.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["fileparse_3.10_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -803,5 +408,217 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "错误处理与异常",
+      "description": "尽管之前已经介绍过异常，但本节将补充一些关于错误检查和异常处理的更多细节。",
+      "meta": {
+        "title": "掌握Python错误处理与异常",
+        "description": "探索Python编程中错误处理和异常管理的要点。",
+        "keywords": "try except, 错误处理, Python, 异常, 运行时错误"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "程序如何出错",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在'def'",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "异常",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "异常处理",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "内置异常",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "异常值",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否包含raise语句",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "捕获多个错误",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "捕获所有错误",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在'print'",
+                "file": "verify7.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "捕获错误的错误方式",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify8.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "稍微更好的方法",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify9.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "重新引发异常",
+            "text": "zh/step10.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify10.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "异常最佳实践",
+            "text": "zh/step11.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify11.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "finally 语句",
+            "text": "zh/step12.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify12.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "with 语句",
+            "text": "zh/step13.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史中是否存在 'with'",
+                "file": "verify13.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习 3.8：引发异常",
+            "text": "zh/step14.md",
+            "verify": [
+              {
+                "name": "验证是否存在运行时错误异常",
+                "file": "verify14.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["fileparse_3.8_solution.py"]
+          },
+          {
+            "title": "练习 3.9：捕获异常",
+            "text": "zh/step15.md",
+            "verify": [
+              {
+                "name": "验证 Python 文件的解析",
+                "file": "verify15.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["fileparse_3.9_solution.py"]
+          },
+          {
+            "title": "练习 3.10：抑制错误",
+            "text": "zh/step16.md",
+            "verify": [
+              {
+                "name": "验证微软股票数据的解析",
+                "file": "verify16.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["fileparse_3.10_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

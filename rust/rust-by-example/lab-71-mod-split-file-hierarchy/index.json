@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Modular Rust File Organization",
+  "description": "In this lab, the file hierarchy of the modules in the code example can be represented as follows: There is a directory named 'my' which contains two files, 'inaccessible.rs' and 'nested.rs'. Additionally, there is a file named 'my.rs' and a file named 'split.rs'. The 'split.rs' file includes the module 'my' which is defined in the 'my.rs' file, and the 'my.rs' file includes the modules 'inaccessible' and 'nested' which are defined in the 'inaccessible.rs' and 'nested.rs' files respectively.",
+  "meta": {
+    "title": "Rust Programming | File Hierarchy | Module Visibility",
+    "description": "Explore the file hierarchy and module visibility in Rust programming through a comprehensive code example and tutorial.",
+    "keywords": "Rust, Programming, File Hierarchy, Module Visibility, Coding, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "File hierarchy",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/module_system"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Modular Rust File Organization",
-      "description": "In this lab, the file hierarchy of the modules in the code example can be represented as follows: There is a directory named 'my' which contains two files, 'inaccessible.rs' and 'nested.rs'. Additionally, there is a file named 'my.rs' and a file named 'split.rs'. The 'split.rs' file includes the module 'my' which is defined in the 'my.rs' file, and the 'my.rs' file includes the modules 'inaccessible' and 'nested' which are defined in the 'inaccessible.rs' and 'nested.rs' files respectively.",
-      "meta": {
-        "title": "Rust Programming | File Hierarchy | Module Visibility",
-        "description": "Explore the file hierarchy and module visibility in Rust programming through a comprehensive code example and tutorial.",
-        "keywords": "Rust, Programming, File Hierarchy, Module Visibility, Coding, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "File hierarchy",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/module_system"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust模块化文件组织",
@@ -75,22 +72,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/module_system"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

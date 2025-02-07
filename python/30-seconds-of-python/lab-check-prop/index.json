@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Predicate Functions on Dictionary Properties",
+  "description": "In this lab, you will learn how to create a function that applies a predicate function to a specified property of a dictionary, which can be useful for checking if a certain condition is met for a specific property of a dictionary.",
+  "meta": {
+    "title": "Python Functions | Dictionary Property Checking",
+    "description": "Learn how to create Python functions that apply predicate functions to specific properties of dictionaries, a useful technique for checking conditions on dictionary data.",
+    "keywords": "Python, functions, dictionaries, property checking, predicate functions"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Check Property",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_check_prop.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "check_prop.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Predicate Functions on Dictionary Properties",
-      "description": "In this lab, you will learn how to create a function that applies a predicate function to a specified property of a dictionary, which can be useful for checking if a certain condition is met for a specific property of a dictionary.",
-      "meta": {
-        "title": "Python Functions | Dictionary Property Checking",
-        "description": "Learn how to create Python functions that apply predicate functions to specific properties of dictionaries, a useful technique for checking conditions on dictionary data.",
-        "keywords": "Python, functions, dictionaries, property checking, predicate functions"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Check Property",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "字典属性上的谓词函数",
@@ -78,25 +89,13 @@
               {
                 "name": "验证临时目录中的 Python 脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_check_prop.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "check_prop.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Pad Numbers to Specified Length in Python",
+  "description": "In Python, sometimes we need to pad a number with leading zeros to make it a certain length. For example, we might want to pad the number 7 to be 000007. In this challenge, you will need to write a function that pads a given number to the specified length.",
+  "meta": {
+    "title": "Python Pad Number | Programming Tutorials",
+    "description": "Learn how to pad a number with leading zeros in Python. Detailed tutorial on the pad_number() function and its usage.",
+    "keywords": "Python, pad number, leading zeros, programming tutorials, coding challenges"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pad Number",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/strings",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_pad_number.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "pad_number.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pad Numbers to Specified Length in Python",
-      "description": "In Python, sometimes we need to pad a number with leading zeros to make it a certain length. For example, we might want to pad the number 7 to be 000007. In this challenge, you will need to write a function that pads a given number to the specified length.",
-      "meta": {
-        "title": "Python Pad Number | Programming Tutorials",
-        "description": "Learn how to pad a number with leading zeros in Python. Detailed tutorial on the pad_number() function and its usage.",
-        "keywords": "Python, pad number, leading zeros, programming tutorials, coding challenges"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pad Number",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python中将数字填充到指定长度",
@@ -78,25 +89,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/strings",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_pad_number.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "pad_number.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

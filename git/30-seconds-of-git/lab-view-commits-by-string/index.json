@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Find Commits that Manipulated a Specific String",
+  "description": "In this lab, you will learn how to use the Git version control system to find all the commits that modified a specific string in a file, which is a useful skill for debugging and tracking code changes.",
+  "meta": {
+    "title": "Git Playground | Version Control | Code History",
+    "description": "Learn how to use Git, a powerful version control system, to track changes made to your codebase over time and find all the commits that manipulated a specific string.",
+    "keywords": "Git, version control, code history, commit tracking, string manipulation"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Find Commits that Manipulated a Specific String",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful view",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Find Commits that Manipulated a Specific String",
-      "description": "In this lab, you will learn how to use the Git version control system to find all the commits that modified a specific string in a file, which is a useful skill for debugging and tracking code changes.",
-      "meta": {
-        "title": "Git Playground | Version Control | Code History",
-        "description": "Learn how to use Git, a powerful version control system, to track changes made to your codebase over time and find all the commits that manipulated a specific string.",
-        "keywords": "Git, version control, code history, commit tracking, string manipulation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Find Commits that Manipulated a Specific String",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful view",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "查找操作特定字符串的提交",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功查看",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,238 +1,114 @@
 {
   "type": "lab",
+  "title": "Review Simple Functions Exception Handling",
+  "description": "In this lab, you will review defining simple functions and learn about exception handling in Python.",
+  "meta": {
+    "title": "Review Simple Functions and Exception Handling",
+    "description": "Explore the fundamentals of defining functions and handling exceptions in Python programming.",
+    "keywords": "python, exception handling, functions, tutorial, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Review Simple Functions Exception Handling",
-      "description": "In this lab, you will review defining simple functions and learn about exception handling in Python.",
-      "meta": {
-        "title": "Review Simple Functions and Exception Handling",
-        "description": "Explore the fundamentals of defining functions and handling exceptions in Python programming.",
-        "keywords": "python, exception handling, functions, tutorial, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Defining a function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Portfolio Cost Calculation",
-                "file": "verify1.sh",
-                "hint": "Please read the portfolio data in the 'portfolio.dat' file and print the Floating point number of the total cost of the portfolio.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost.py"]
-          },
-          {
-            "title": "Adding Error Handling",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in /tmp Directory",
-                "file": "verify2.sh",
-                "hint": "Please use 'try' and 'except' to catch and print a warning message about lines that can't be parsed.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost.py"]
-          },
-          {
-            "title": "Interactive Experimentation",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Python Portfolio Cost History",
-                "file": "verify3.sh",
-                "hint": "Please run 'pcost.py' program and call the 'portfolio_cost()' function directly from the interactive interpreter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "回顾简单函数与异常处理",
-      "description": "在本实验中，你将回顾定义简单函数，并学习Python中的异常处理。",
-      "meta": {
-        "title": "回顾简单函数与异常处理",
-        "description": "探索Python编程中定义函数和处理异常的基础知识。",
-        "keywords": "Python, 异常处理, 函数, 教程, 编程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "定义一个函数",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证投资组合成本计算",
-                "file": "verify1.sh",
-                "hint": "请读取'portfolio.dat'文件中的投资组合数据，并打印投资组合总成本的浮点数。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost.py"]
-          },
-          {
-            "title": "添加错误处理",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证在/tmp目录中执行Python脚本",
-                "file": "verify2.sh",
-                "hint": "请使用'try'和'except'来捕获并打印关于无法解析的行的警告消息。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost.py"]
-          },
-          {
-            "title": "交互式实验",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python投资组合成本历史记录",
-                "file": "verify3.sh",
-                "hint": "请运行'pcost.py'程序，并直接从交互式解释器中调用'portfolio_cost()'函数。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["pcost.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Defining a function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Portfolio Cost Calculation",
+            "file": "verify1.sh",
+            "hint": "Please read the portfolio data in the 'portfolio.dat' file and print the Floating point number of the total cost of the portfolio.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["pcost.py"]
+      },
+      {
+        "title": "Adding Error Handling",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in /tmp Directory",
+            "file": "verify2.sh",
+            "hint": "Please use 'try' and 'except' to catch and print a warning message about lines that can't be parsed.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["pcost.py"]
+      },
+      {
+        "title": "Interactive Experimentation",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Python Portfolio Cost History",
+            "file": "verify3.sh",
+            "hint": "Please run 'pcost.py' program and call the 'portfolio_cost()' function directly from the interactive interpreter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["pcost.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -262,5 +138,74 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "回顾简单函数与异常处理",
+      "description": "在本实验中，你将回顾定义简单函数，并学习Python中的异常处理。",
+      "meta": {
+        "title": "回顾简单函数与异常处理",
+        "description": "探索Python编程中定义函数和处理异常的基础知识。",
+        "keywords": "Python, 异常处理, 函数, 教程, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "定义一个函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证投资组合成本计算",
+                "file": "verify1.sh",
+                "hint": "请读取'portfolio.dat'文件中的投资组合数据，并打印投资组合总成本的浮点数。"
+              }
+            ],
+            "solutions": ["pcost.py"]
+          },
+          {
+            "title": "添加错误处理",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证在/tmp目录中执行Python脚本",
+                "file": "verify2.sh",
+                "hint": "请使用'try'和'except'来捕获并打印关于无法解析的行的警告消息。"
+              }
+            ],
+            "solutions": ["pcost.py"]
+          },
+          {
+            "title": "交互式实验",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python投资组合成本历史记录",
+                "file": "verify3.sh",
+                "hint": "请运行'pcost.py'程序，并直接从交互式解释器中调用'portfolio_cost()'函数。"
+              }
+            ],
+            "solutions": ["pcost.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

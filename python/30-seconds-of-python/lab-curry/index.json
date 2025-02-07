@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Currying in Python Using functools.partial",
+  "description": "In this lab, you will learn about currying, a functional programming technique for transforming a function that takes multiple arguments into a sequence of functions that each take a single argument, and how to implement it using the `functools.partial()` function in Python.",
+  "meta": {
+    "title": "Functional Programming | Currying in Python | Lab",
+    "description": "Learn how to implement currying in Python using the functools.partial() function. Discover the benefits of this functional programming technique.",
+    "keywords": "functional programming, currying, python, functools.partial, programming tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Curry Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python 3 Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/keyword_arguments",
+          "python/lambda_functions",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_curry.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "curry.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Currying in Python Using functools.partial",
-      "description": "In this lab, you will learn about currying, a functional programming technique for transforming a function that takes multiple arguments into a sequence of functions that each take a single argument, and how to implement it using the `functools.partial()` function in Python.",
-      "meta": {
-        "title": "Functional Programming | Currying in Python | Lab",
-        "description": "Learn how to implement currying in Python using the functools.partial() function. Discover the benefits of this functional programming technique.",
-        "keywords": "functional programming, currying, python, functools.partial, programming tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Curry Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python 3 Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用functools.partial在Python中进行柯里化",
@@ -79,26 +90,13 @@
               {
                 "name": "在临时目录中验证Python 3脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_curry.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "curry.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

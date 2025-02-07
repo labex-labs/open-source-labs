@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Calculating Midpoint Between Coordinates Using JavaScript",
+  "description": "In this lab, we will explore the concept of calculating the midpoint between two pairs of (x,y) points using JavaScript. We will learn how to destructure an array to obtain the x and y coordinates of the endpoints and calculate the midpoint for each dimension by dividing the sum of the two endpoints by 2. This lab is designed to enhance our understanding of basic math operations in JavaScript and apply them to solve real-world problems.",
+  "meta": {
+    "title": "JavaScript Midpoint Calculation | Programming Tutorials",
+    "description": "Learn how to calculate the midpoint between two pairs of (x,y) points using JavaScript. Enhance your understanding of basic math operations and problem-solving skills.",
+    "keywords": "JavaScript, Midpoint Calculation, Programming Tutorials, Math Operations, Problem-Solving"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Midpoint",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Calculating Midpoint Between Coordinates Using JavaScript",
-      "description": "In this lab, we will explore the concept of calculating the midpoint between two pairs of (x,y) points using JavaScript. We will learn how to destructure an array to obtain the x and y coordinates of the endpoints and calculate the midpoint for each dimension by dividing the sum of the two endpoints by 2. This lab is designed to enhance our understanding of basic math operations in JavaScript and apply them to solve real-world problems.",
-      "meta": {
-        "title": "JavaScript Midpoint Calculation | Programming Tutorials",
-        "description": "Learn how to calculate the midpoint between two pairs of (x,y) points using JavaScript. Enhance your understanding of basic math operations and problem-solving skills.",
-        "keywords": "JavaScript, Midpoint Calculation, Programming Tutorials, Math Operations, Problem-Solving"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Midpoint",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用JavaScript计算坐标之间的中点",
@@ -75,22 +72,13 @@
               {
                 "name": "验证Node命令历史记录",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

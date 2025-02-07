@@ -1,10 +1,129 @@
 {
   "type": "lab",
+  "title": "Constructing Scikit-Learn Pipelines",
+  "description": "This lab is a step-by-step guide on how to construct and display pipelines in Scikit-Learn.",
+  "meta": {
+    "title": "Constructing Pipelines in Scikit-Learn | Machine Learning Tutorial",
+    "description": "Step-by-step guide on how to construct and display pipelines in Scikit-Learn, a popular machine learning library in Python.",
+    "keywords": "Scikit-Learn, Pipelines, Machine Learning, Python, Data Preprocessing, Logistic Regression"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Constructing a Simple Pipeline with a Preprocessing Step and Classifier",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/linear_model",
+          "sklearn/pipeline",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "Constructing a Pipeline Chaining Multiple Preprocessing Steps & Classifier",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/linear_model",
+          "sklearn/pipeline",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "Constructing a Pipeline with Dimensionality Reduction and Classifier",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/decomposition",
+          "sklearn/pipeline",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Constructing a Complex Pipeline Chaining a Column Transformer",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/compose",
+          "sklearn/impute",
+          "sklearn/linear_model",
+          "sklearn/pipeline",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "Constructing a Grid Search over a Pipeline with a Classifier",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/compose",
+          "sklearn/ensemble",
+          "sklearn/impute",
+          "sklearn/model_selection",
+          "sklearn/pipeline",
+          "sklearn/preprocessing"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-pipeline-display.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,119 +134,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Constructing Scikit-Learn Pipelines",
-      "description": "This lab is a step-by-step guide on how to construct and display pipelines in Scikit-Learn.",
-      "meta": {
-        "title": "Constructing Pipelines in Scikit-Learn | Machine Learning Tutorial",
-        "description": "Step-by-step guide on how to construct and display pipelines in Scikit-Learn, a popular machine learning library in Python.",
-        "keywords": "Scikit-Learn, Pipelines, Machine Learning, Python, Data Preprocessing, Logistic Regression"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Constructing a Simple Pipeline with a Preprocessing Step and Classifier",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Constructing a Pipeline Chaining Multiple Preprocessing Steps & Classifier",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Constructing a Pipeline with Dimensionality Reduction and Classifier",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/pipeline",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Constructing a Complex Pipeline Chaining a Column Transformer",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/impute",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Constructing a Grid Search over a Pipeline with a Classifier",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/ensemble",
-              "sklearn/impute",
-              "sklearn/model_selection",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "构建Scikit-Learn管道",
@@ -148,12 +154,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -165,12 +165,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -182,12 +176,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/pipeline",
-              "sklearn/svm"
             ]
           },
           {
@@ -199,14 +187,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/impute",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -218,21 +198,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/ensemble",
-              "sklearn/impute",
-              "sklearn/model_selection",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -241,16 +211,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-pipeline-display.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

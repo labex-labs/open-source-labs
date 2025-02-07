@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Optimize the Local Repository",
+  "description": "In Git, a repository is a collection of files and folders that are tracked by Git. When you make changes to your files, Git creates a new version of the file and stores it in the repository. Over time, your repository can become cluttered with old versions of files and other unnecessary data. This can slow down Git and make it harder to work with your repository. In this lab, you will learn how to optimize your local repository to improve its performance.",
+  "meta": {
+    "title": "Optimize Your Git Repository for Performance",
+    "description": "Learn how to clean up unnecessary data in your Git repository and improve its performance.",
+    "keywords": "repository, git labs, optimization, git, performance, garbage collection, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Optimize the Local Repository",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that the optimisation was successful",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/repo"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Optimize the Local Repository",
-      "description": "In Git, a repository is a collection of files and folders that are tracked by Git. When you make changes to your files, Git creates a new version of the file and stores it in the repository. Over time, your repository can become cluttered with old versions of files and other unnecessary data. This can slow down Git and make it harder to work with your repository. In this lab, you will learn how to optimize your local repository to improve its performance.",
-      "meta": {
-        "title": "Optimize Your Git Repository for Performance",
-        "description": "Learn how to clean up unnecessary data in your Git repository and improve its performance.",
-        "keywords": "repository, git labs, optimization, git, performance, garbage collection, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Optimize the Local Repository",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that the optimisation was successful",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/repo"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "优化本地仓库",
@@ -70,17 +67,13 @@
               {
                 "name": "验证优化是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/repo"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

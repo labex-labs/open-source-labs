@@ -1,10 +1,129 @@
 {
   "type": "lab",
+  "title": "Customizing Box Plots",
+  "description": "In this tutorial, we will learn how to customize box plots in Matplotlib. Box plots are a popular way to visualize the distribution of a dataset. They are also known as box-and-whisker plots and show the median, quartiles, and outliers of the data. We will go through various examples to learn how to customize box plots using Matplotlib.",
+  "meta": {
+    "title": "Customizing Box Plots in Matplotlib",
+    "description": "Learn how to customize box plots in Matplotlib, a popular data visualization library.",
+    "keywords": "matplotlib, python, data visualization, box plots, data analysis"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Generate Data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Default Box Plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/box_plots", "python/tuples"]
+      },
+      {
+        "title": "Remove Individual Components",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/box_plots",
+          "python/booleans",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Customizing Box Plot Styles",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/box_plots",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "boxplot.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,119 +134,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Customizing Box Plots",
-      "description": "In this tutorial, we will learn how to customize box plots in Matplotlib. Box plots are a popular way to visualize the distribution of a dataset. They are also known as box-and-whisker plots and show the median, quartiles, and outliers of the data. We will go through various examples to learn how to customize box plots using Matplotlib.",
-      "meta": {
-        "title": "Customizing Box Plots in Matplotlib",
-        "description": "Learn how to customize box plots in Matplotlib, a popular data visualization library.",
-        "keywords": "matplotlib, python, data visualization, box plots, data analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Generate Data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Default Box Plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/box_plots", "python/tuples"]
-          },
-          {
-            "title": "Remove Individual Components",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/box_plots",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Customizing Box Plot Styles",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/box_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "自定义箱线图",
@@ -148,15 +154,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries"
             ]
           },
           {
@@ -168,15 +165,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -188,8 +176,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/box_plots", "python/tuples"]
+            ]
           },
           {
             "title": "移除单个组件",
@@ -200,12 +187,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/box_plots",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -217,22 +198,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/box_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -241,16 +211,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "boxplot.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Random Number Generation in Go",
+  "description": "This lab aims to test your ability to generate random numbers using the math/rand package in Golang.",
+  "meta": {
+    "title": "Generating Random Numbers in Go | Programming Tutorials",
+    "description": "Learn how to generate random integers and floats within a specified range using the math/rand package in Golang. Produce varying sequences of numbers by changing the seed.",
+    "keywords": "Golang, Random Numbers, Math/Rand, Programming Tutorials, Pseudorandom Number Generation"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Random Numbers",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Random Numbers Generation",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/random_numbers"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "random-numbers.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Random Number Generation in Go",
-      "description": "This lab aims to test your ability to generate random numbers using the math/rand package in Golang.",
-      "meta": {
-        "title": "Generating Random Numbers in Go | Programming Tutorials",
-        "description": "Learn how to generate random integers and floats within a specified range using the math/rand package in Golang. Produce varying sequences of numbers by changing the seed.",
-        "keywords": "Golang, Random Numbers, Math/Rand, Programming Tutorials, Pseudorandom Number Generation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Random Numbers",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Random Numbers Generation",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/random_numbers"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言中的随机数生成",
@@ -70,17 +76,13 @@
               {
                 "name": "验证随机数生成",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/random_numbers"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "random-numbers.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

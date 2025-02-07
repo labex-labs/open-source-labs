@@ -1,10 +1,113 @@
 {
   "type": "lab",
+  "title": "Working with Nullable Integers",
+  "description": "In this lab, we will explore how to use the nullable integer data type in pandas, which is an efficient way to handle integer data that may contain missing values. We will learn how to construct arrays with this data type, perform operations, and handle missing values effectively.",
+  "meta": {
+    "title": "Nullable Integer Data Type | Pandas | Data Science",
+    "description": "Learn how to use the nullable integer data type in Pandas, an efficient way to handle integer data with missing values. Explore construction, operations, and missing value handling.",
+    "keywords": "Pandas, Data Science, Nullable Integer, Missing Values, Data Type"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Constructing Nullable Integer Arrays",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/conditional_selection",
+          "python/comments",
+          "python/data_analysis",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Storing the IntegerArray in a DataFrame or Series",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments"]
+      },
+      {
+        "title": "Performing Operations with Nullable Integer Arrays",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/conditional_selection",
+          "pandas/select_columns",
+          "pandas/select_rows",
+          "pandas/slicing",
+          "python/comments",
+          "python/conditional_statements",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Handling Missing Values with pandas.NA",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/conditional_selection",
+          "python/comments",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "integer-na.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,103 +118,6 @@
     "repo": "https://github.com/pandas-dev/pandas"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Working with Nullable Integers",
-      "description": "In this lab, we will explore how to use the nullable integer data type in pandas, which is an efficient way to handle integer data that may contain missing values. We will learn how to construct arrays with this data type, perform operations, and handle missing values effectively.",
-      "meta": {
-        "title": "Nullable Integer Data Type | Pandas | Data Science",
-        "description": "Learn how to use the nullable integer data type in Pandas, an efficient way to handle integer data with missing values. Explore construction, operations, and missing value handling.",
-        "keywords": "Pandas, Data Science, Nullable Integer, Missing Values, Data Type"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Constructing Nullable Integer Arrays",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Storing the IntegerArray in a DataFrame or Series",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/comments"]
-          },
-          {
-            "title": "Performing Operations with Nullable Integer Arrays",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "pandas/select_columns",
-              "pandas/select_rows",
-              "pandas/slicing",
-              "python/comments",
-              "python/conditional_statements",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Handling Missing Values with pandas.NA",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "python/comments",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "处理可空整数",
@@ -132,17 +138,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -154,8 +149,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/comments"]
+            ]
           },
           {
             "title": "对可空整数数组执行操作",
@@ -166,17 +160,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "pandas/select_columns",
-              "pandas/select_rows",
-              "pandas/slicing",
-              "python/comments",
-              "python/conditional_statements",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -188,19 +171,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "python/comments",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -209,16 +184,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "integer-na.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

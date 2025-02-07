@@ -1,10 +1,182 @@
 {
   "type": "lab",
+  "title": "Matplotlib Axis Transformation Techniques",
+  "description": "Matplotlib is a Python library used for data visualization. It allows users to create a wide variety of charts, plots, and graphs. One of the key features of Matplotlib is its ability to apply scale transformations to axes. This allows for greater flexibility in presenting data, especially when dealing with very large or very small numbers. In this lab, we will learn how to apply various scale transformations to axes using Matplotlib.",
+  "meta": {
+    "title": "Matplotlib | Data Visualization | Python Tutorials | Lab",
+    "description": "Learn how to apply scale transformations to axes using Matplotlib, a powerful Python data visualization library.",
+    "keywords": "Matplotlib, Data Visualization, Python Tutorials, Scale Transformations, Axes"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries and Generate Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Linear Scale Plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Logarithmic Scale Plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Symmetrical Logarithmic Scale Plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Logit Scale Plot",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Custom Scale Plot",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/comments",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Mercator Transform Scale Plot",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "scales.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,172 +187,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Axis Transformation Techniques",
-      "description": "Matplotlib is a Python library used for data visualization. It allows users to create a wide variety of charts, plots, and graphs. One of the key features of Matplotlib is its ability to apply scale transformations to axes. This allows for greater flexibility in presenting data, especially when dealing with very large or very small numbers. In this lab, we will learn how to apply various scale transformations to axes using Matplotlib.",
-      "meta": {
-        "title": "Matplotlib | Data Visualization | Python Tutorials | Lab",
-        "description": "Learn how to apply scale transformations to axes using Matplotlib, a powerful Python data visualization library.",
-        "keywords": "Matplotlib, Data Visualization, Python Tutorials, Scale Transformations, Axes"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries and Generate Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Linear Scale Plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Logarithmic Scale Plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Symmetrical Logarithmic Scale Plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Logit Scale Plot",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Custom Scale Plot",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Mercator Transform Scale Plot",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib坐标轴变换技术",
@@ -201,20 +207,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -226,14 +218,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -245,14 +229,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -264,14 +240,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -283,14 +251,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -302,15 +262,6 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
             ]
           },
           {
@@ -322,23 +273,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -347,16 +286,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "scales.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

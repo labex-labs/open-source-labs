@@ -1,10 +1,65 @@
 {
   "type": "lab",
+  "title": "Determining Number Within Range",
+  "description": "In Python, we can check if a given number falls within a specified range using arithmetic comparison. This is a common task in programming and can be useful in many different applications.",
+  "meta": {
+    "title": "Python | Number Range Check | Programming Tutorials",
+    "description": "Learn how to check if a number falls within a specified range in Python programming. Useful for various applications.",
+    "keywords": "Python, number range, programming, tutorials, coding, range check"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Number in Range",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/conditional_statements",
+          "python/default_arguments",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_in_range.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "in_range.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +70,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Determining Number Within Range",
-      "description": "In Python, we can check if a given number falls within a specified range using arithmetic comparison. This is a common task in programming and can be useful in many different applications.",
-      "meta": {
-        "title": "Python | Number Range Check | Programming Tutorials",
-        "description": "Learn how to check if a number falls within a specified range in Python programming. Useful for various applications.",
-        "keywords": "Python, number range, programming, tutorials, coding, range check"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Number in Range",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "确定范围内的数字",
@@ -77,24 +88,13 @@
               {
                 "name": "在临时目录中验证Python脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/conditional_statements",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -103,21 +103,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_in_range.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "in_range.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

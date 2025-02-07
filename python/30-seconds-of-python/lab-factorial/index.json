@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Recursive Factorial Calculation in Python",
+  "description": "In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example, 5! = 5 x 4 x 3 x 2 x 1 = 120. In this challenge, you will write a Python function to calculate the factorial of a given number using recursion.",
+  "meta": {
+    "title": "Python Factorial Calculation | Recursion Tutorial",
+    "description": "Learn how to write a Python function to calculate the factorial of a number using recursion. Explore the mathematical concept of factorial and its practical applications.",
+    "keywords": "Python, Factorial, Recursion, Mathematical Concepts, Programming Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Factorial",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Factorial Function Correctness",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/conditional_statements",
+          "python/function_definition",
+          "python/raising_exceptions"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_factorial.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "factorial.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Recursive Factorial Calculation in Python",
-      "description": "In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example, 5! = 5 x 4 x 3 x 2 x 1 = 120. In this challenge, you will write a Python function to calculate the factorial of a given number using recursion.",
-      "meta": {
-        "title": "Python Factorial Calculation | Recursion Tutorial",
-        "description": "Learn how to write a Python function to calculate the factorial of a number using recursion. Explore the mathematical concept of factorial and its practical applications.",
-        "keywords": "Python, Factorial, Recursion, Mathematical Concepts, Programming Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Factorial",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Factorial Function Correctness",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/raising_exceptions"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Python 中的递归阶乘计算",
@@ -75,22 +86,13 @@
               {
                 "name": "验证阶乘函数的正确性",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/function_definition",
-              "python/raising_exceptions"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_factorial.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "factorial.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

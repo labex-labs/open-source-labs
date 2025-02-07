@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Initialize 2D List",
+  "description": "In Python, a 2D list is a list of lists. It is a useful data structure for representing grids, tables, and matrices. Initializing a 2D list involves creating a list of lists with a given width and height and initializing each element with a default value.",
+  "meta": {
+    "title": "Python | 2D List Initialization | Programming Tutorials",
+    "description": "Learn how to initialize 2D lists in Python, a useful data structure for representing grids, tables, and matrices. Explore a function to create 2D lists with customizable width, height, and default value.",
+    "keywords": "Python, 2D List, List of Lists, Initialization, Programming Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Initialize 2D List",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify 2D List Initialization",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/default_arguments",
+          "python/for_loops",
+          "python/function_definition",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_initialize_2d_list.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "initialize_2d_list.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Initialize 2D List",
-      "description": "In Python, a 2D list is a list of lists. It is a useful data structure for representing grids, tables, and matrices. Initializing a 2D list involves creating a list of lists with a given width and height and initializing each element with a default value.",
-      "meta": {
-        "title": "Python | 2D List Initialization | Programming Tutorials",
-        "description": "Learn how to initialize 2D lists in Python, a useful data structure for representing grids, tables, and matrices. Explore a function to create 2D lists with customizable width, height, and default value.",
-        "keywords": "Python, 2D List, List of Lists, Initialization, Programming Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Initialize 2D List",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify 2D List Initialization",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "初始化二维列表",
@@ -79,26 +90,13 @@
               {
                 "name": "验证二维列表初始化",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_initialize_2d_list.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "initialize_2d_list.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

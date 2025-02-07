@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Discrete Versus Real AdaBoost",
+  "description": "This lab demonstrates the difference in performance between the discrete SAMME boosting algorithm and the real SAMME.R boosting algorithm. Both algorithms are evaluated on a binary classification task where the target Y is a non-linear function of 10 input features. The lab is based on Figure 10.2 from Hastie et al 2009.",
+  "meta": {
+    "title": "Discrete Versus Real AdaBoost: Exploring Boosting Algorithms",
+    "description": "Discover the performance differences between discrete SAMME and real SAMME.R boosting algorithms on a binary classification task.",
+    "keywords": "boosting algorithms, machine learning, samme, samme r, binary classification, scikit-learn, machine learning playground, scikit-learn playground, adaboost"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Prepare the data and baseline models",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/model_selection", "sklearn/tree"]
+      },
+      {
+        "title": "Adaboost with discrete SAMME and real SAMME.R",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/ensemble"]
+      },
+      {
+        "title": "Compute the test error",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics"]
+      },
+      {
+        "title": "Plot the results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-adaboost-hastie-10-2.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Discrete Versus Real AdaBoost",
-      "description": "This lab demonstrates the difference in performance between the discrete SAMME boosting algorithm and the real SAMME.R boosting algorithm. Both algorithms are evaluated on a binary classification task where the target Y is a non-linear function of 10 input features. The lab is based on Figure 10.2 from Hastie et al 2009.",
-      "meta": {
-        "title": "Discrete Versus Real AdaBoost: Exploring Boosting Algorithms",
-        "description": "Discover the performance differences between discrete SAMME and real SAMME.R boosting algorithms on a binary classification task.",
-        "keywords": "boosting algorithms, machine learning, samme, samme r, binary classification, scikit-learn, machine learning playground, scikit-learn playground, adaboost"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Prepare the data and baseline models",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/model_selection", "sklearn/tree"]
-          },
-          {
-            "title": "Adaboost with discrete SAMME and real SAMME.R",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/ensemble"]
-          },
-          {
-            "title": "Compute the test error",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
-          },
-          {
-            "title": "Plot the results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "离散与真实AdaBoost",
@@ -106,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/model_selection", "sklearn/tree"]
+            ]
           },
           {
             "title": "使用离散SAMME和真实SAMME.R的AdaBoost",
@@ -118,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/ensemble"]
+            ]
           },
           {
             "title": "计算测试误差",
@@ -130,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
+            ]
           },
           {
             "title": "绘制结果",
@@ -142,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-adaboost-hastie-10-2.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,432 +1,211 @@
 {
   "type": "lab",
+  "title": "Python Testing Essentials",
+  "description": "The dynamic nature of Python makes testing critically important to most applications. There is no compiler to find your bugs. The only way to find bugs is to run the code and make sure you try out all of its features.",
+  "meta": {
+    "title": "Python Testing | Assertions | Programming Fundamentals",
+    "description": "Discover the importance of testing in Python and learn about the assert statement for internal checks and invariants. Enhance your programming skills with this comprehensive guide.",
+    "keywords": "Python, Testing, Assertions, Programming Fundamentals, Debugging, Coding"
+  },
   "difficulty": "Beginner",
   "time": 45,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/practical-python"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Python Testing Essentials",
-      "description": "The dynamic nature of Python makes testing critically important to most applications. There is no compiler to find your bugs. The only way to find bugs is to run the code and make sure you try out all of its features.",
-      "meta": {
-        "title": "Python Testing | Assertions | Programming Fundamentals",
-        "description": "Discover the importance of testing in Python and learn about the assert statement for internal checks and invariants. Enhance your programming skills with this comprehensive guide.",
-        "keywords": "Python, Testing, Assertions, Programming Fundamentals, Debugging, Coding"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Assertions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'assert' in Python History",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/custom_exceptions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Contract Programming",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'return' in Python History",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/custom_exceptions",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Inline Tests",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Equals Operator in Python History",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/custom_exceptions",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "unittest Module",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'simple' in test_simple.py",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Using unittest",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Running unittest",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "Verify Execution of Test Script and Command History",
-                "file": "verify6.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Commentary",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Third Party Test Tools",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'assert simple' in test_simple.py",
-                "file": "verify8.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/custom_exceptions",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Exercise 8.1: Writing Unit Tests",
-            "text": "en/step9.md",
-            "verify": [
-              {
-                "name": "Verify Stock Class Implementation",
-                "file": "verify9.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/os_system",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ],
-            "solutions": ["test_stock.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "Python测试要点",
-      "description": "Python的动态特性使得测试对大多数应用程序至关重要。没有编译器来帮你找出错误。发现错误的唯一方法就是运行代码，并确保你测试了它的所有功能。",
-      "meta": {
-        "title": "Python测试 | 断言 | 编程基础",
-        "description": "了解Python中测试的重要性，并学习用于内部检查和不变量的断言语句。通过本全面指南提升你的编程技能。",
-        "keywords": "Python, 测试, 断言, 编程基础, 调试, 编码"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "断言",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在'assert'",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/custom_exceptions",
-              "python/lists",
-              "python/numeric_types",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "契约式编程",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在'return'",
-                "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/custom_exceptions",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "内联测试",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在等于运算符",
-                "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/custom_exceptions",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "unittest 模块",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证 test_simple.py 中是否存在'simple'",
-                "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "使用 unittest",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "运行 unittest",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "验证测试脚本的执行情况和命令历史记录",
-                "file": "verify6.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/conditional_statements",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "注释",
-            "text": "zh/step7.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify7.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "第三方测试工具",
-            "text": "zh/step8.md",
-            "verify": [
-              {
-                "name": "验证 test_simple.py 中是否存在 'assert simple'",
-                "file": "verify8.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/custom_exceptions",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "练习8.1：编写单元测试",
-            "text": "zh/step9.md",
-            "verify": [
-              {
-                "name": "验证股票类的实现",
-                "file": "verify9.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/os_system",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ],
-            "solutions": ["test_stock.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Assertions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'assert' in Python History",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/custom_exceptions",
+          "python/lists",
+          "python/numeric_types",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Contract Programming",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'return' in Python History",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/custom_exceptions",
+          "python/function_definition",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Inline Tests",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Equals Operator in Python History",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/custom_exceptions",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "unittest Module",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'simple' in test_simple.py",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Using unittest",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Running unittest",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "Verify Execution of Test Script and Command History",
+            "file": "verify6.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/conditional_statements",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Commentary",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Third Party Test Tools",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'assert simple' in test_simple.py",
+            "file": "verify8.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/custom_exceptions",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Exercise 8.1: Writing Unit Tests",
+        "text": "en/step9.md",
+        "verify": [
+          {
+            "name": "Verify Stock Class Implementation",
+            "file": "verify9.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/os_system",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ],
+        "solutions": ["test_stock.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -446,5 +225,138 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python测试要点",
+      "description": "Python的动态特性使得测试对大多数应用程序至关重要。没有编译器来帮你找出错误。发现错误的唯一方法就是运行代码，并确保你测试了它的所有功能。",
+      "meta": {
+        "title": "Python测试 | 断言 | 编程基础",
+        "description": "了解Python中测试的重要性，并学习用于内部检查和不变量的断言语句。通过本全面指南提升你的编程技能。",
+        "keywords": "Python, 测试, 断言, 编程基础, 调试, 编码"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "断言",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在'assert'",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "契约式编程",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在'return'",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "内联测试",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在等于运算符",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "unittest 模块",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证 test_simple.py 中是否存在'simple'",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "使用 unittest",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify5.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "运行 unittest",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "验证测试脚本的执行情况和命令历史记录",
+                "file": "verify6.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "注释",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify7.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "第三方测试工具",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "验证 test_simple.py 中是否存在 'assert simple'",
+                "file": "verify8.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习8.1：编写单元测试",
+            "text": "zh/step9.md",
+            "verify": [
+              {
+                "name": "验证股票类的实现",
+                "file": "verify9.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["test_stock.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

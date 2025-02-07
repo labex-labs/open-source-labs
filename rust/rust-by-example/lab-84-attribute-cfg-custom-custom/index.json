@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Conditional Rust Function Compilation",
+  "description": "In this lab, we have a code snippet that includes a function called conditional_function(), but it will only be compiled and executed if a custom conditional called some_condition is passed to rustc using the --cfg flag.",
+  "meta": {
+    "title": "Rust Programming | Conditional Functions | Custom Configurations",
+    "description": "Learn how to use custom conditional functions in Rust programming, including how to pass custom configuration flags to the compiler.",
+    "keywords": "Rust, programming, conditional functions, custom configurations, compiler flags"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Custom",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["rust/expressions_statements", "rust/function_syntax"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Conditional Rust Function Compilation",
-      "description": "In this lab, we have a code snippet that includes a function called conditional_function(), but it will only be compiled and executed if a custom conditional called some_condition is passed to rustc using the --cfg flag.",
-      "meta": {
-        "title": "Rust Programming | Conditional Functions | Custom Configurations",
-        "description": "Learn how to use custom conditional functions in Rust programming, including how to pass custom configuration flags to the compiler.",
-        "keywords": "Rust, programming, conditional functions, custom configurations, compiler flags"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Custom",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 条件函数编译",
@@ -70,17 +67,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

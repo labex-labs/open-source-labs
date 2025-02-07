@@ -1,10 +1,123 @@
 {
   "type": "lab",
+  "title": "Preprocessing Techniques in Scikit-Learn",
+  "description": "In this lab, we will explore the preprocessing techniques available in scikit-learn. Preprocessing is an essential step in any machine learning workflow as it helps to transform raw data into a suitable format for the learning algorithm. We will cover various preprocessing techniques such as standardization, scaling, normalization, encoding categorical features, imputing missing values, generating polynomial features, and creating custom transformers.",
+  "meta": {
+    "title": "Preprocessing Techniques in Machine Learning | Scikit-Learn",
+    "description": "Explore the essential preprocessing techniques in machine learning, including standardization, scaling, normalization, and more, using the powerful scikit-learn library.",
+    "keywords": "machine learning, preprocessing, scikit-learn, standardization, scaling, normalization"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Standardization",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Scaling",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Normalization",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Encoding Categorical Features",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Imputation of Missing Values",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/impute"]
+      },
+      {
+        "title": "Generating Polynomial Features",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Creating Custom Transformers",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "35-preprocessing-data.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,113 +128,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Preprocessing Techniques in Scikit-Learn",
-      "description": "In this lab, we will explore the preprocessing techniques available in scikit-learn. Preprocessing is an essential step in any machine learning workflow as it helps to transform raw data into a suitable format for the learning algorithm. We will cover various preprocessing techniques such as standardization, scaling, normalization, encoding categorical features, imputing missing values, generating polynomial features, and creating custom transformers.",
-      "meta": {
-        "title": "Preprocessing Techniques in Machine Learning | Scikit-Learn",
-        "description": "Explore the essential preprocessing techniques in machine learning, including standardization, scaling, normalization, and more, using the powerful scikit-learn library.",
-        "keywords": "machine learning, preprocessing, scikit-learn, standardization, scaling, normalization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Standardization",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          },
-          {
-            "title": "Scaling",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          },
-          {
-            "title": "Normalization",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          },
-          {
-            "title": "Encoding Categorical Features",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          },
-          {
-            "title": "Imputation of Missing Values",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/impute"]
-          },
-          {
-            "title": "Generating Polynomial Features",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          },
-          {
-            "title": "Creating Custom Transformers",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Scikit-learn中的数据预处理技术",
@@ -142,8 +148,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           },
           {
             "title": "缩放",
@@ -154,8 +159,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           },
           {
             "title": "归一化",
@@ -166,8 +170,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           },
           {
             "title": "编码分类特征",
@@ -178,8 +181,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           },
           {
             "title": "缺失值插补",
@@ -190,8 +192,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/impute"]
+            ]
           },
           {
             "title": "生成多项式特征",
@@ -202,8 +203,7 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           },
           {
             "title": "创建自定义变换器",
@@ -214,13 +214,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -229,16 +227,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "35-preprocessing-data.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

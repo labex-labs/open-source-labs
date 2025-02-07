@@ -1,10 +1,121 @@
 {
   "type": "lab",
+  "title": "Creating Donuts Using path.Path and patches.PathPatch",
+  "description": "In this tutorial, we will create a donut using Matplotlib's ~.path.Path and ~.patches.PathPatch. We will use the make_circle() function to create the circle and concatenate the inside and outside subpaths together to create the donut.",
+  "meta": {
+    "title": "Creating Donuts Using Matplotlib's Path and Patches",
+    "description": "Learn how to create a donut using Matplotlib's path.Path and patches.PathPatch in this comprehensive tutorial.",
+    "keywords": "patches, python playground, matplotlib, python, path, donut, tutorial"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Importing Necessary Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Defining Helper Function",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/conditional_statements",
+          "python/function_definition"
+        ]
+      },
+      {
+        "title": "Creating the Circle",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Creating the Donut",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/text_annotations",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/for_loops",
+          "python/lists",
+          "python/sets",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Summary",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "donut.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,111 +126,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Donuts Using path.Path and patches.PathPatch",
-      "description": "In this tutorial, we will create a donut using Matplotlib's ~.path.Path and ~.patches.PathPatch. We will use the make_circle() function to create the circle and concatenate the inside and outside subpaths together to create the donut.",
-      "meta": {
-        "title": "Creating Donuts Using Matplotlib's Path and Patches",
-        "description": "Learn how to create a donut using Matplotlib's path.Path and patches.PathPatch in this comprehensive tutorial.",
-        "keywords": "patches, python playground, matplotlib, python, path, donut, tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importing Necessary Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Defining Helper Function",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/conditional_statements",
-              "python/function_definition"
-            ]
-          },
-          {
-            "title": "Creating the Circle",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Creating the Donut",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/sets",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Summary",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用path.Path和patches.PathPatch创建甜甜圈",
@@ -140,13 +146,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -158,10 +157,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/conditional_statements",
-              "python/function_definition"
             ]
           },
           {
@@ -173,11 +168,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/function_definition",
-              "python/tuples"
             ]
           },
           {
@@ -189,16 +179,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/text_annotations",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/sets",
-              "python/tuples"
             ]
           },
           {
@@ -210,13 +190,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -225,16 +203,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "donut.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

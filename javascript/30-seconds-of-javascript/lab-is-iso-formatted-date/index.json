@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "String Is ISO Formatted Date",
+  "description": "In this lab, we will explore how to determine if a given string is a valid date string in the simplified extended ISO format (ISO 8601). We will use the Date constructor and its associated methods to create a Date object from the string and check its validity. By the end of the lab, you will have a better understanding of how to work with dates in JavaScript and how to validate them using the ISO format.",
+  "meta": {
+    "title": "Validating ISO Formatted Dates in JavaScript",
+    "description": "Learn how to check if a given string is a valid ISO 8601 date format using JavaScript's Date object.",
+    "keywords": "javascript, javascript practice, iso 8601, javascript tutor, javascript practice online, validation, programming tutorial, javascript lab, date"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "String Is ISO Formatted Date",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "String Is ISO Formatted Date",
-      "description": "In this lab, we will explore how to determine if a given string is a valid date string in the simplified extended ISO format (ISO 8601). We will use the Date constructor and its associated methods to create a Date object from the string and check its validity. By the end of the lab, you will have a better understanding of how to work with dates in JavaScript and how to validate them using the ISO format.",
-      "meta": {
-        "title": "Validating ISO Formatted Dates in JavaScript",
-        "description": "Learn how to check if a given string is a valid ISO 8601 date format using JavaScript's Date object.",
-        "keywords": "javascript, javascript practice, iso 8601, javascript tutor, javascript practice online, validation, programming tutorial, javascript lab, date"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "String Is ISO Formatted Date",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "字符串是否为ISO格式日期",
@@ -75,22 +72,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

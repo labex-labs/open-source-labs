@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Rust Closures with Generic Constraints",
+  "description": "In this lab, it is explained that closures in Rust use type anonymity, which requires the usage of generics when using closures as function parameters.",
+  "meta": {
+    "title": "Rust Closures | Type Anonymity | Generics",
+    "description": "Explore the concept of type anonymity in Rust closures and learn how to use generics when passing closures as function parameters.",
+    "keywords": "Rust, Closures, Type Anonymity, Generics, Programming Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Type anonymity",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/operator_overloading",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Closures with Generic Constraints",
-      "description": "In this lab, it is explained that closures in Rust use type anonymity, which requires the usage of generics when using closures as function parameters.",
-      "meta": {
-        "title": "Rust Closures | Type Anonymity | Generics",
-        "description": "Explore the concept of type anonymity in Rust closures and learn how to use generics when passing closures as function parameters.",
-        "keywords": "Rust, Closures, Type Anonymity, Generics, Programming Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Type anonymity",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "带有泛型约束的Rust闭包",
@@ -75,22 +72,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

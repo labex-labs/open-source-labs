@@ -1,302 +1,146 @@
 {
   "type": "lab",
+  "title": "Anonymous Functions and Lambda",
+  "description": "Anonymous Functions in Python are called _lambda_ functions. They are a way to create functions without a name. They are useful for creating short functions that are only used once.",
+  "meta": {
+    "title": "Anonymous Functions and Lambda in Python",
+    "description": "Explore the power of anonymous functions and lambda expressions in Python, including how to sort lists of dictionaries.",
+    "keywords": "dictionaries, lambda, python, anonymous functions, list sorting"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/practical-python"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Anonymous Functions and Lambda",
-      "description": "Anonymous Functions in Python are called _lambda_ functions. They are a way to create functions without a name. They are useful for creating short functions that are only used once.",
-      "meta": {
-        "title": "Anonymous Functions and Lambda in Python",
-        "description": "Explore the power of anonymous functions and lambda expressions in Python, including how to sort lists of dictionaries.",
-        "keywords": "dictionaries, lambda, python, anonymous functions, list sorting"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "List Sorting Revisited",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify If Python History Contains Sort Command",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Callback Functions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Lambda: Anonymous Functions",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Presence of 'lambda' in Python History",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "Using lambda",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Python Import History",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 7.5: Sorting on a field",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Name Attribute",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/function_definition",
-              "python/python_shell",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Exercise 7.6: Sorting on a field with lambda",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "Verify Student's Python History for Shares",
-                "file": "verify6.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lambda_functions",
-              "python/python_shell",
-              "python/standard_libraries"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "匿名函数与Lambda",
-      "description": "Python中的匿名函数被称为_lambda_函数。它们是创建无名称函数的一种方式。对于创建只使用一次的短函数很有用。",
-      "meta": {
-        "title": "Python中的匿名函数与Lambda",
-        "description": "探索Python中匿名函数和Lambda表达式的强大功能，包括如何对字典列表进行排序。",
-        "keywords": "字典, Lambda, Python, 匿名函数, 列表排序"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "重温列表排序",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否包含排序命令",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "回调函数",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Lambda：匿名函数",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否存在'lambda'",
-                "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists"
-            ]
-          },
-          {
-            "title": "使用lambda",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证Python导入历史记录",
-                "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "练习7.5：按字段排序",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中是否包含名称属性",
-                "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/function_definition",
-              "python/python_shell",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "练习7.6：使用lambda按字段排序",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "检查学生Python历史记录中的股票信息",
-                "file": "verify6.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lambda_functions",
-              "python/python_shell",
-              "python/standard_libraries"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "List Sorting Revisited",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify If Python History Contains Sort Command",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/lists"
+        ]
+      },
+      {
+        "title": "Callback Functions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Lambda: Anonymous Functions",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Presence of 'lambda' in Python History",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/lists"
+        ]
+      },
+      {
+        "title": "Using lambda",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Python Import History",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 7.5: Sorting on a field",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Name Attribute",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/function_definition",
+          "python/python_shell",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Exercise 7.6: Sorting on a field with lambda",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "Verify Student's Python History for Shares",
+            "file": "verify6.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/lambda_functions",
+          "python/python_shell",
+          "python/standard_libraries"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -331,5 +175,104 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "匿名函数与Lambda",
+      "description": "Python中的匿名函数被称为_lambda_函数。它们是创建无名称函数的一种方式。对于创建只使用一次的短函数很有用。",
+      "meta": {
+        "title": "Python中的匿名函数与Lambda",
+        "description": "探索Python中匿名函数和Lambda表达式的强大功能，包括如何对字典列表进行排序。",
+        "keywords": "字典, Lambda, Python, 匿名函数, 列表排序"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "重温列表排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否包含排序命令",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "回调函数",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "Lambda：匿名函数",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否存在'lambda'",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "使用lambda",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证Python导入历史记录",
+                "file": "verify4.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习7.5：按字段排序",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中是否包含名称属性",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习7.6：使用lambda按字段排序",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "检查学生Python历史记录中的股票信息",
+                "file": "verify6.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

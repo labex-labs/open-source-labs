@@ -1,10 +1,73 @@
 {
   "type": "lab",
+  "title": "Symmetric Difference Based on Function",
+  "description": "In this lab, we explore the concept of symmetric difference between two lists in Python, and implement a function that computes the symmetric difference after applying a given function to each element in the lists.",
+  "meta": {
+    "title": "Python | Symmetric Difference | Function Application | Lab",
+    "description": "Learn how to find the symmetric difference between two lists in Python, after applying a provided function to each element. Improve your programming skills with this comprehensive tutorial.",
+    "keywords": "Python, Symmetric Difference, Function Application, List Operations, Programming Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Symmetric Difference Based on Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Symmetric Difference By Python Script",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_symmetric_difference_by.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "symmetric_difference_by.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,58 +78,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Symmetric Difference Based on Function",
-      "description": "In this lab, we explore the concept of symmetric difference between two lists in Python, and implement a function that computes the symmetric difference after applying a given function to each element in the lists.",
-      "meta": {
-        "title": "Python | Symmetric Difference | Function Application | Lab",
-        "description": "Learn how to find the symmetric difference between two lists in Python, after applying a provided function to each element. Improve your programming skills with this comprehensive tutorial.",
-        "keywords": "Python, Symmetric Difference, Function Application, List Operations, Programming Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Symmetric Difference Based on Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Symmetric Difference By Python Script",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "基于函数的对称差",
@@ -85,32 +96,13 @@
               {
                 "name": "通过Python脚本验证对称差",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -119,21 +111,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_symmetric_difference_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "symmetric_difference_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

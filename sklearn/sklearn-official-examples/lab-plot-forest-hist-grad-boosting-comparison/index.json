@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Plot Forest Hist Grad Boosting Comparison",
+  "description": "In this lab, we will compare the performance of two popular ensemble models, Random Forest (RF) and Histogram Gradient Boosting (HGBT), for a regression dataset in terms of score and computation time. We will vary the parameters that control the number of trees according to each estimator and plot the results to visualize the trade-off between elapsed computing time and mean test score.",
+  "meta": {
+    "title": "Comparing Random Forest and Histogram Gradient Boosting for Regression",
+    "description": "Explore the performance of ensemble models for a regression dataset, analyzing score and computation time.",
+    "keywords": "machine learning, computation time, histogram gradient boosting, ensemble models, scikit-learn, machine learning playground, random forest, scikit-learn playground, regression"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Define Models and Parameter Grids",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/ensemble", "sklearn/model_selection"]
+      },
+      {
+        "title": "Compute Scores and Computation Times",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Interpret Results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-forest-hist-grad-boosting-comparison.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,81 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Plot Forest Hist Grad Boosting Comparison",
-      "description": "In this lab, we will compare the performance of two popular ensemble models, Random Forest (RF) and Histogram Gradient Boosting (HGBT), for a regression dataset in terms of score and computation time. We will vary the parameters that control the number of trees according to each estimator and plot the results to visualize the trade-off between elapsed computing time and mean test score.",
-      "meta": {
-        "title": "Comparing Random Forest and Histogram Gradient Boosting for Regression",
-        "description": "Explore the performance of ensemble models for a regression dataset, analyzing score and computation time.",
-        "keywords": "machine learning, computation time, histogram gradient boosting, ensemble models, scikit-learn, machine learning playground, random forest, scikit-learn playground, regression"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Define Models and Parameter Grids",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/ensemble",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "Compute Scores and Computation Times",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Interpret Results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "绘制森林直方图梯度提升比较",
@@ -110,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "定义模型和参数网格",
@@ -122,11 +123,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/ensemble",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -138,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "解读结果",
@@ -150,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -165,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-forest-hist-grad-boosting-comparison.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

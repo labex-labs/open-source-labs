@@ -1,10 +1,65 @@
 {
   "type": "lab",
+  "title": "Convert Angle Degrees to Radians",
+  "description": "In mathematics, angles can be measured in degrees or radians. Radians are the standard unit of angular measure, used in many areas of mathematics and physics. In this challenge, you will be asked to write a function that converts an angle from degrees to radians.",
+  "meta": {
+    "title": "Degrees to Radians Conversion | Mathematics | Physics",
+    "description": "Learn how to convert angles from degrees to radians using a simple formula. Ideal for mathematics and physics students.",
+    "keywords": "degrees to radians, angle conversion, mathematics, physics, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Degrees to Radians Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Degrees To Radians Conversion",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_degrees_to_rads.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "degrees_to_rads.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +70,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Convert Angle Degrees to Radians",
-      "description": "In mathematics, angles can be measured in degrees or radians. Radians are the standard unit of angular measure, used in many areas of mathematics and physics. In this challenge, you will be asked to write a function that converts an angle from degrees to radians.",
-      "meta": {
-        "title": "Degrees to Radians Conversion | Mathematics | Physics",
-        "description": "Learn how to convert angles from degrees to radians using a simple formula. Ideal for mathematics and physics students.",
-        "keywords": "degrees to radians, angle conversion, mathematics, physics, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Degrees to Radians Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Degrees To Radians Conversion",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将角度度数转换为弧度",
@@ -77,24 +88,13 @@
               {
                 "name": "验证度转弧度转换",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -103,21 +103,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_degrees_to_rads.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "degrees_to_rads.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

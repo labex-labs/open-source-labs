@@ -1,10 +1,133 @@
 {
   "type": "lab",
+  "title": "Centeringels Between Ticks",
+  "description": "In this lab, we will learn how to center labels between ticks in a Matplotlib plot using Python. By default, tick labels are aligned relative to their associated tick, but there is no direct way to center the labels between ticks. However, we can place a label on the minor ticks in between the major ticks and hide the major tick labels and minor ticks to fake this behavior. We will use financial data for Google's stock price to demonstrate this technique.",
+  "meta": {
+    "title": "Centering Labels Between Ticks in Matplotlib Plots",
+    "description": "Learn how to center labels between ticks in Matplotlib plots using Python and financial data for Google's stock price.",
+    "keywords": "matplotlib, stock price, python, data visualization, financial data"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load the Financial Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create the Plot",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/line_plots", "python/tuples"]
+      },
+      {
+        "title": "Set the Major and Minor Locators and Formatters",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules"
+        ]
+      },
+      {
+        "title": "Remove the Major Tick Labels and Minor Ticks",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/booleans", "python/comments", "python/tuples"]
+      },
+      {
+        "title": "Align the Minor Tick Labels",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/lists",
+          "python/strings",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Show the Plot",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "centered-ticklabels.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,123 +138,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Centeringels Between Ticks",
-      "description": "In this lab, we will learn how to center labels between ticks in a Matplotlib plot using Python. By default, tick labels are aligned relative to their associated tick, but there is no direct way to center the labels between ticks. However, we can place a label on the minor ticks in between the major ticks and hide the major tick labels and minor ticks to fake this behavior. We will use financial data for Google's stock price to demonstrate this technique.",
-      "meta": {
-        "title": "Centering Labels Between Ticks in Matplotlib Plots",
-        "description": "Learn how to center labels between ticks in Matplotlib plots using Python and financial data for Google's stock price.",
-        "keywords": "matplotlib, stock price, python, data visualization, financial data"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load the Financial Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create the Plot",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/line_plots", "python/tuples"]
-          },
-          {
-            "title": "Set the Major and Minor Locators and Formatters",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules"
-            ]
-          },
-          {
-            "title": "Remove the Major Tick Labels and Minor Ticks",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/booleans", "python/comments", "python/tuples"]
-          },
-          {
-            "title": "Align the Minor Tick Labels",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/strings",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Show the Plot",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "刻度之间的标签居中",
@@ -152,15 +158,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing"
             ]
           },
           {
@@ -172,8 +169,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/line_plots", "python/tuples"]
+            ]
           },
           {
             "title": "设置主刻度和次刻度定位器及格式化器",
@@ -184,12 +180,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules"
             ]
           },
           {
@@ -201,8 +191,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/booleans", "python/comments", "python/tuples"]
+            ]
           },
           {
             "title": "对齐次刻度标签",
@@ -213,16 +202,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/strings",
-              "python/type_conversion",
-              "python/variables_data_types"
             ]
           },
           {
@@ -234,13 +213,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -249,16 +226,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "centered-ticklabels.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

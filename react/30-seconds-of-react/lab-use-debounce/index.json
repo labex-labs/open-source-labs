@@ -1,10 +1,70 @@
 {
   "type": "lab",
+  "title": "React useDebounce Hook",
+  "description": "In this lab, we will learn how to create a custom React hook called useDebounce that helps debounce user input. Debouncing is a technique that delays the invocation of a function until a certain amount of time has passed since the last time it was called. This technique is commonly used in scenarios where the user input triggers frequent updates to the application state, as it can help reduce unnecessary re-renders and improve performance.",
+  "meta": {
+    "title": "Discover the Power of React's useDebounce Hook",
+    "description": "Learn how to create a custom React hook that helps debounce user input for improved performance.",
+    "keywords": "user input, hook, react, usedebounce, debouncing"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "React useDebounce Hook",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of script.js modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "react/event_handling",
+          "react/hooks",
+          "react/jsx",
+          "react/use_state_reducer"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "script.js",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,55 +75,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "React useDebounce Hook",
-      "description": "In this lab, we will learn how to create a custom React hook called useDebounce that helps debounce user input. Debouncing is a technique that delays the invocation of a function until a certain amount of time has passed since the last time it was called. This technique is commonly used in scenarios where the user input triggers frequent updates to the application state, as it can help reduce unnecessary re-renders and improve performance.",
-      "meta": {
-        "title": "Discover the Power of React's useDebounce Hook",
-        "description": "Learn how to create a custom React hook that helps debounce user input for improved performance.",
-        "keywords": "user input, hook, react, usedebounce, debouncing"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "React useDebounce Hook",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of script.js modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/use_state_reducer"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "React useDebounce 钩子",
@@ -82,29 +93,18 @@
               {
                 "name": "验证网络服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               },
               {
                 "name": "验证 script.js 修改的状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/use_state_reducer"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -113,21 +113,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

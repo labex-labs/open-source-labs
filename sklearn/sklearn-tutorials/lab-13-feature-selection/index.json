@@ -1,10 +1,101 @@
 {
   "type": "lab",
+  "title": "Feature Selection with Scikit-Learn",
+  "description": "Feature selection is an important step in machine learning. It involves selecting the most relevant features from a dataset to improve the accuracy and performance of the model. In scikit-learn, the sklearn.feature_selection module provides various methods for feature selection and dimensionality reduction.",
+  "meta": {
+    "title": "Feature Selection Techniques | Machine Learning Tutorials",
+    "description": "Learn feature selection techniques in machine learning using scikit-learn, including removing low-variance features, univariate selection, and recursive feature elimination.",
+    "keywords": "feature selection, machine learning, scikit-learn, variance threshold, univariate selection, recursive feature elimination"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Removing features with low variance",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/feature_selection"]
+      },
+      {
+        "title": "Univariate feature selection",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/feature_selection"
+        ]
+      },
+      {
+        "title": "Recursive feature elimination",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/feature_selection",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Feature selection using SelectFromModel",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/ensemble",
+          "sklearn/feature_selection"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "13-feature-selection.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,91 +106,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Feature Selection with Scikit-Learn",
-      "description": "Feature selection is an important step in machine learning. It involves selecting the most relevant features from a dataset to improve the accuracy and performance of the model. In scikit-learn, the sklearn.feature_selection module provides various methods for feature selection and dimensionality reduction.",
-      "meta": {
-        "title": "Feature Selection Techniques | Machine Learning Tutorials",
-        "description": "Learn feature selection techniques in machine learning using scikit-learn, including removing low-variance features, univariate selection, and recursive feature elimination.",
-        "keywords": "feature selection, machine learning, scikit-learn, variance threshold, univariate selection, recursive feature elimination"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Removing features with low variance",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_selection"]
-          },
-          {
-            "title": "Univariate feature selection",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/feature_selection"
-            ]
-          },
-          {
-            "title": "Recursive feature elimination",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/feature_selection",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Feature selection using SelectFromModel",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/ensemble",
-              "sklearn/feature_selection"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Scikit-Learn进行特征选择",
@@ -120,8 +126,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_selection"]
+            ]
           },
           {
             "title": "单变量特征选择",
@@ -132,11 +137,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/feature_selection"
             ]
           },
           {
@@ -148,12 +148,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/feature_selection",
-              "sklearn/svm"
             ]
           },
           {
@@ -165,18 +159,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/ensemble",
-              "sklearn/feature_selection"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -185,16 +172,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "13-feature-selection.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

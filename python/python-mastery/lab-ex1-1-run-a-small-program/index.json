@@ -1,10 +1,75 @@
 {
   "type": "lab",
+  "title": "Run a Small Program",
+  "description": "In this lab, you will ensure Python is installed correctly, start the interactive interpreter, and edit/run a small program.",
+  "meta": {
+    "title": "Explore Python Coding with Generative Art",
+    "description": "Learn to create dynamic, visually-appealing programs with Python's interactive interpreter and a simple generative art script.",
+    "keywords": "python, generative art, interactive coding, programming, command line"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Launch Python",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student's Python Print Statements",
+            "file": "verify1.sh",
+            "hint": "Please use the 'print' statement to output 'Hello World'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/build_in_functions", "python/python_shell"]
+      },
+      {
+        "title": "Some Generative Art",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Length of Output from Python Script",
+            "file": "verify2.sh",
+            "hint": "Please write the python code from step 2 into 'art.py'.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/numeric_types",
+          "python/os_system",
+          "python/raising_exceptions",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ],
+        "solutions": ["art.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,74 +80,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Run a Small Program",
-      "description": "In this lab, you will ensure Python is installed correctly, start the interactive interpreter, and edit/run a small program.",
-      "meta": {
-        "title": "Explore Python Coding with Generative Art",
-        "description": "Learn to create dynamic, visually-appealing programs with Python's interactive interpreter and a simple generative art script.",
-        "keywords": "python, generative art, interactive coding, programming, command line"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Launch Python",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student's Python Print Statements",
-                "file": "verify1.sh",
-                "hint": "Please use the 'print' statement to output 'Hello World'.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/build_in_functions", "python/python_shell"]
-          },
-          {
-            "title": "Some Generative Art",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Length of Output from Python Script",
-                "file": "verify2.sh",
-                "hint": "Please write the python code from step 2 into 'art.py'.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/os_system",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ],
-            "solutions": ["art.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "运行一个小程序",
@@ -101,12 +98,9 @@
               {
                 "name": "验证学生的Python打印语句",
                 "file": "verify1.sh",
-                "hint": "请使用'print'语句输出'你好，世界'。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请使用'print'语句输出'你好，世界'。"
               }
-            ],
-            "skills": ["python/build_in_functions", "python/python_shell"]
+            ]
           },
           {
             "title": "一些生成式艺术",
@@ -115,34 +109,14 @@
               {
                 "name": "验证Python脚本输出的长度",
                 "file": "verify2.sh",
-                "hint": "请将步骤2中的Python代码写入'art.py'。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请将步骤2中的Python代码写入'art.py'。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/numeric_types",
-              "python/os_system",
-              "python/raising_exceptions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
             ],
             "solutions": ["art.py"]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

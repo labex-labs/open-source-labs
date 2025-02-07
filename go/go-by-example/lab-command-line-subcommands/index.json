@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Command Line Subcommands",
+  "description": "This lab aims to test your ability to define and use subcommands with their own set of flags in Golang.",
+  "meta": {
+    "title": "Mastering Command Line Subcommands in Golang",
+    "description": "Learn how to create Golang programs with subcommands and their own set of flags.",
+    "keywords": "go playground, subcommands, go practice, go, golang, go labs, go playground online, go lab, programming, command line"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Command Line Subcommands",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Build Command Line Subcommands",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/command_line"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "command-line-subcommands.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Command Line Subcommands",
-      "description": "This lab aims to test your ability to define and use subcommands with their own set of flags in Golang.",
-      "meta": {
-        "title": "Mastering Command Line Subcommands in Golang",
-        "description": "Learn how to create Golang programs with subcommands and their own set of flags.",
-        "keywords": "go playground, subcommands, go practice, go, golang, go labs, go playground online, go lab, programming, command line"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Command Line Subcommands",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Build Command Line Subcommands",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/command_line"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "命令行子命令",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go语言构建命令行子命令",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/command_line"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "command-line-subcommands.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Handling Errors with Early Returns in Rust",
+  "description": "In this lab, we explore the concept of early returns as a way to handle errors in Rust. The example code demonstrates how we can use match statements and early returns to handle errors gracefully, making the code easier to read and write. We also discuss the limitations of explicit error handling and introduce the use of the ? operator for cases where we need to unwrap values without risking a panic.",
+  "meta": {
+    "title": "Rust Programming | Error Handling | Early Returns",
+    "description": "Explore the concept of early returns in Rust for graceful error handling, making your code easier to read and write.",
+    "keywords": "Rust, Programming, Error Handling, Early Returns, Unwrap, Combinators"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Early returns",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Handling Errors with Early Returns in Rust",
-      "description": "In this lab, we explore the concept of early returns as a way to handle errors in Rust. The example code demonstrates how we can use match statements and early returns to handle errors gracefully, making the code easier to read and write. We also discuss the limitations of explicit error handling and introduce the use of the ? operator for cases where we need to unwrap values without risking a panic.",
-      "meta": {
-        "title": "Rust Programming | Error Handling | Early Returns",
-        "description": "Explore the concept of early returns in Rust for graceful error handling, making your code easier to read and write.",
-        "keywords": "Rust, Programming, Error Handling, Early Returns, Unwrap, Combinators"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Early returns",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Rust中使用提前返回处理错误",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

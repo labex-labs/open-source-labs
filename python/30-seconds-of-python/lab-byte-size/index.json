@@ -1,10 +1,62 @@
 {
   "type": "lab",
+  "title": "Determining String Byte Size",
+  "description": "In this lab, you will write a function that calculates the byte size of a string using the UTF-8 encoding scheme.",
+  "meta": {
+    "title": "Determining String Byte Size in Python",
+    "description": "Learn how to calculate the byte size of a string in Python using the UTF-8 encoding scheme.",
+    "keywords": "byte size, encoding, python, utf 8, string"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Byte Size of String",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Byte Size Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_byte_size.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "byte_size.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,47 +67,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Determining String Byte Size",
-      "description": "In this lab, you will write a function that calculates the byte size of a string using the UTF-8 encoding scheme.",
-      "meta": {
-        "title": "Determining String Byte Size in Python",
-        "description": "Learn how to calculate the byte size of a string in Python using the UTF-8 encoding scheme.",
-        "keywords": "byte size, encoding, python, utf 8, string"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Byte Size of String",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Byte Size Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "确定字符串的字节大小",
@@ -74,21 +85,13 @@
               {
                 "name": "验证Python脚本执行的字节大小",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -97,21 +100,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_byte_size.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "byte_size.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

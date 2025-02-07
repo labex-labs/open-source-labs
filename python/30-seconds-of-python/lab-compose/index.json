@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Function Composition with Python",
+  "description": "Function composition is a technique used in functional programming to combine two or more functions to form a new function. In Python, we can use the functools.reduce() function to perform right-to-left function composition.",
+  "meta": {
+    "title": "Mastering Function Composition in Python",
+    "description": "Discover the power of function composition in Python and learn how to create reusable, modular code.",
+    "keywords": "modular design, code reusability, python, functional programming, function composition"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Compose Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Compose Test Script",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/keyword_arguments",
+          "python/lambda_functions",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_compose.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "compose.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Function Composition with Python",
-      "description": "Function composition is a technique used in functional programming to combine two or more functions to form a new function. In Python, we can use the functools.reduce() function to perform right-to-left function composition.",
-      "meta": {
-        "title": "Mastering Function Composition in Python",
-        "description": "Discover the power of function composition in Python and learn how to create reusable, modular code.",
-        "keywords": "modular design, code reusability, python, functional programming, function composition"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Compose Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Compose Test Script",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 Python 进行函数组合",
@@ -79,26 +90,13 @@
               {
                 "name": "验证 Python 组合测试脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/lambda_functions",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_compose.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "compose.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

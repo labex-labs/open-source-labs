@@ -1,10 +1,100 @@
 {
   "type": "lab",
+  "title": "Convert Texts to Images",
+  "description": "In this lab, we will learn how to use Python's Matplotlib library to convert texts to images. This is useful when we want to include text in an image or visualization, or when we want to create images of text for use in machine learning or computer vision applications.",
+  "meta": {
+    "title": "Convert Texts to Images with Python",
+    "description": "Learn how to use Python's Matplotlib library to convert texts to images for use in visualizations or machine learning applications.",
+    "keywords": "machine learning, matplotlib, python, visualization, text to image"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/standard_libraries",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Convert text to RGBA",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/saving_figures",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Draw text images to a figure",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/standard_libraries", "python/tuples"]
+      },
+      {
+        "title": "Draw texts to a figure with positioning in pixel coordinates",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/standard_libraries", "python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "mathtext-asarray.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,90 +105,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Convert Texts to Images",
-      "description": "In this lab, we will learn how to use Python's Matplotlib library to convert texts to images. This is useful when we want to include text in an image or visualization, or when we want to create images of text for use in machine learning or computer vision applications.",
-      "meta": {
-        "title": "Convert Texts to Images with Python",
-        "description": "Learn how to use Python's Matplotlib library to convert texts to images for use in visualizations or machine learning applications.",
-        "keywords": "machine learning, matplotlib, python, visualization, text to image"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Convert text to RGBA",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/saving_figures",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Draw text images to a figure",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/standard_libraries", "python/tuples"]
-          },
-          {
-            "title": "Draw texts to a figure with positioning in pixel coordinates",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/standard_libraries", "python/tuples"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将文本转换为图像",
@@ -119,14 +125,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/using_packages"
             ]
           },
           {
@@ -138,13 +136,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/saving_figures",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -156,8 +147,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/standard_libraries", "python/tuples"]
+            ]
           },
           {
             "title": "在像素坐标中定位将文本绘制到图形上",
@@ -168,13 +158,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/standard_libraries", "python/tuples"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -183,16 +171,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "mathtext-asarray.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

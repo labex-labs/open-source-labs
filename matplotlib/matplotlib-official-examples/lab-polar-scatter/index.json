@@ -1,10 +1,107 @@
 {
   "type": "lab",
+  "title": "Scatter Plot on Polar Axis",
+  "description": "In this tutorial, we will learn how to create scatter plots on a polar axis using Matplotlib in Python. A polar plot is a graphical representation of data that is displayed in polar coordinates. It is useful when the data is cyclical or circular in nature, such as data measured over time or direction.",
+  "meta": {
+    "title": "Create Scatter Plots on Polar Axis | Python Matplotlib Tutorial",
+    "description": "Learn how to create scatter plots on a polar axis using Matplotlib in Python. Explore cyclical or circular data visualization techniques.",
+    "keywords": "Matplotlib, Python, Scatter Plot, Polar Axis, Data Visualization"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Generate random data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/math_random", "python/standard_libraries"]
+      },
+      {
+        "title": "Create a scatter plot on a polar axis",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/scatter_plots", "python/tuples"]
+      },
+      {
+        "title": "Create a scatter plot on a polar axis with offset origin",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/scatter_plots", "python/tuples"]
+      },
+      {
+        "title": "Create a scatter plot on a polar axis confined to a sector",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/scatter_plots", "python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "polar-scatter.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,97 +112,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Scatter Plot on Polar Axis",
-      "description": "In this tutorial, we will learn how to create scatter plots on a polar axis using Matplotlib in Python. A polar plot is a graphical representation of data that is displayed in polar coordinates. It is useful when the data is cyclical or circular in nature, such as data measured over time or direction.",
-      "meta": {
-        "title": "Create Scatter Plots on Polar Axis | Python Matplotlib Tutorial",
-        "description": "Learn how to create scatter plots on a polar axis using Matplotlib in Python. Explore cyclical or circular data visualization techniques.",
-        "keywords": "Matplotlib, Python, Scatter Plot, Polar Axis, Data Visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Generate random data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/math_random", "python/standard_libraries"]
-          },
-          {
-            "title": "Create a scatter plot on a polar axis",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/scatter_plots", "python/tuples"]
-          },
-          {
-            "title": "Create a scatter plot on a polar axis with offset origin",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/scatter_plots", "python/tuples"]
-          },
-          {
-            "title": "Create a scatter plot on a polar axis confined to a sector",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/scatter_plots", "python/tuples"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "极坐标轴上的散点图",
@@ -126,15 +132,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries"
             ]
           },
           {
@@ -146,8 +143,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/math_random", "python/standard_libraries"]
+            ]
           },
           {
             "title": "在极坐标轴上创建散点图",
@@ -158,8 +154,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/scatter_plots", "python/tuples"]
+            ]
           },
           {
             "title": "创建一个原点有偏移的极坐标轴上的散点图",
@@ -170,8 +165,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/scatter_plots", "python/tuples"]
+            ]
           },
           {
             "title": "在限定于一个扇形区域的极坐标轴上创建散点图",
@@ -182,13 +176,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/scatter_plots", "python/tuples"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -197,16 +189,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "polar-scatter.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

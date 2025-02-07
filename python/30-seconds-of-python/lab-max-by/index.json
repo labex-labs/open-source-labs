@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Find Maximum List Value Based on Function",
+  "description": "In Python, we can use the max() function to find the maximum value in a list. However, what if we want to find the maximum value after mapping each element to a value using a provided function? In this challenge, you will need to write a function that takes a list and a function as arguments, maps each element to a value using the provided function, and returns the maximum value.",
+  "meta": {
+    "title": "Python | Maximum List Value Based on Function",
+    "description": "Learn how to find the maximum value in a list by mapping each element to a value using a provided function in Python.",
+    "keywords": "Python, max function, list, mapping, function, maximum value"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Find Maximum List Value Based on Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_max_by.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "max_by.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Find Maximum List Value Based on Function",
-      "description": "In Python, we can use the max() function to find the maximum value in a list. However, what if we want to find the maximum value after mapping each element to a value using a provided function? In this challenge, you will need to write a function that takes a list and a function as arguments, maps each element to a value using the provided function, and returns the maximum value.",
-      "meta": {
-        "title": "Python | Maximum List Value Based on Function",
-        "description": "Learn how to find the maximum value in a list by mapping each element to a value using a provided function in Python.",
-        "keywords": "Python, max function, list, mapping, function, maximum value"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Find Maximum List Value Based on Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "根据函数查找列表中的最大值",
@@ -78,25 +89,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_max_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "max_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

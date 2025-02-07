@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Rust Module Visibility Exploration",
+  "description": "In this lab, we learn about the visibility of items in Rust modules, including the default private visibility, the use of the pub modifier to override visibility, and the different levels of visibility such as pub(in path), pub(self), pub(super), and pub(crate). We also explore nested modules and the restrictions on accessing private items within modules.",
+  "meta": {
+    "title": "Exploring Rust Module Visibility",
+    "description": "Learn about the visibility of items in Rust modules, including private, public, and different levels of visibility.",
+    "keywords": "rust playground, private, module, rust online compiler, rust online, rust tutor, rust commands, public, rust practice, visibility"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Visibility",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/type_casting"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Module Visibility Exploration",
-      "description": "In this lab, we learn about the visibility of items in Rust modules, including the default private visibility, the use of the pub modifier to override visibility, and the different levels of visibility such as pub(in path), pub(self), pub(super), and pub(crate). We also explore nested modules and the restrictions on accessing private items within modules.",
-      "meta": {
-        "title": "Exploring Rust Module Visibility",
-        "description": "Learn about the visibility of items in Rust modules, including private, public, and different levels of visibility.",
-        "keywords": "rust playground, private, module, rust online compiler, rust online, rust tutor, rust commands, public, rust practice, visibility"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Visibility",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/type_casting"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索 Rust 模块的可见性",
@@ -75,22 +72,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/type_casting"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

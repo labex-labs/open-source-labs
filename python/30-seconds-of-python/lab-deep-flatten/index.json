@@ -1,10 +1,70 @@
 {
   "type": "lab",
+  "title": "Deep Flatten List",
+  "description": "In Python, a list can contain other lists as elements, and those lists can contain even more lists as elements, forming a nested structure. The process of flattening a nested list means to convert it into a one-dimensional list, where all the elements are at the same level. In this challenge, you will be asked to write a function that deep flattens a list, meaning that it will flatten all the nested lists recursively.",
+  "meta": {
+    "title": "Mastering Deep Flattening",
+    "description": "Explore the art of deep flattening nested lists in Python, a powerful technique for data manipulation and transformation.",
+    "keywords": "deep flattening, list transformation, python, data manipulation, nested lists"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Deep Flatten List",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Deep Flatten Python Script",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_deep_flatten.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "deep_flatten.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,55 +75,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Deep Flatten List",
-      "description": "In Python, a list can contain other lists as elements, and those lists can contain even more lists as elements, forming a nested structure. The process of flattening a nested list means to convert it into a one-dimensional list, where all the elements are at the same level. In this challenge, you will be asked to write a function that deep flattens a list, meaning that it will flatten all the nested lists recursively.",
-      "meta": {
-        "title": "Mastering Deep Flattening",
-        "description": "Explore the art of deep flattening nested lists in Python, a powerful technique for data manipulation and transformation.",
-        "keywords": "deep flattening, list transformation, python, data manipulation, nested lists"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Deep Flatten List",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Deep Flatten Python Script",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "深度扁平化列表",
@@ -82,29 +93,13 @@
               {
                 "name": "验证深度扁平化Python脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -113,21 +108,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_deep_flatten.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "deep_flatten.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Unwinding Object Arrays in JavaScript",
+  "description": "In this lab, we will explore the unwind function in JavaScript. The purpose of this function is to produce an array of objects from an object and one of its array-valued properties. By using object destructuring and Array.prototype.map(), we can create an array of objects where each object contains the original object's values, except for the specified key which is mapped to its individual values. Through this lab, we will gain a deeper understanding of how to manipulate and extract data from objects in JavaScript.",
+  "meta": {
+    "title": "Unwind Object Function | JavaScript Tutorials",
+    "description": "Learn how to use the unwind function in JavaScript to extract data from objects with array-valued properties. Gain deeper understanding of object manipulation.",
+    "keywords": "JavaScript, unwind function, object manipulation, array-valued properties, data extraction"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Unwind Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Unwinding Object Arrays in JavaScript",
-      "description": "In this lab, we will explore the unwind function in JavaScript. The purpose of this function is to produce an array of objects from an object and one of its array-valued properties. By using object destructuring and Array.prototype.map(), we can create an array of objects where each object contains the original object's values, except for the specified key which is mapped to its individual values. Through this lab, we will gain a deeper understanding of how to manipulate and extract data from objects in JavaScript.",
-      "meta": {
-        "title": "Unwind Object Function | JavaScript Tutorials",
-        "description": "Learn how to use the unwind function in JavaScript to extract data from objects with array-valued properties. Gain deeper understanding of object manipulation.",
-        "keywords": "JavaScript, unwind function, object manipulation, array-valued properties, data extraction"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Unwind Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在JavaScript中展开对象数组",
@@ -79,26 +76,13 @@
               {
                 "name": "验证Node命令用法",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

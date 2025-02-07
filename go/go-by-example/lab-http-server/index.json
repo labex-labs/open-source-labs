@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Basic HTTP Server in Go",
+  "description": "This lab aims to test your ability to write a basic HTTP server using the net/http package in Golang.",
+  "meta": {
+    "title": "Golang HTTP Server | Programming Tutorial",
+    "description": "Learn how to write a basic HTTP server using the net/http package in Golang. Covers handling routes, returning responses, and accessing request headers.",
+    "keywords": "Golang, HTTP Server, net/http, Programming Tutorial, Web Development"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "HTTP Server",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go HTTP Client Response Status",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/http_server"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "http-server.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Basic HTTP Server in Go",
-      "description": "This lab aims to test your ability to write a basic HTTP server using the net/http package in Golang.",
-      "meta": {
-        "title": "Golang HTTP Server | Programming Tutorial",
-        "description": "Learn how to write a basic HTTP server using the net/http package in Golang. Covers handling routes, returning responses, and accessing request headers.",
-        "keywords": "Golang, HTTP Server, net/http, Programming Tutorial, Web Development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "HTTP Server",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go HTTP Client Response Status",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/http_server"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go 语言中的基本 HTTP 服务器",
@@ -70,17 +76,13 @@
               {
                 "name": "验证 Go HTTP 客户端响应状态",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/http_server"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "http-server.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

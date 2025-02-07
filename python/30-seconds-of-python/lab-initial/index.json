@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Remove Last Element from Python List",
+  "description": "In this lab, you will learn how to remove the last element of a list in Python and return the remaining elements.",
+  "meta": {
+    "title": "Python List Manipulation | Programming Tutorials | Lab",
+    "description": "Learn how to remove the last element from a Python list using the initial() function. Enhance your programming skills with our concise and informative tutorials.",
+    "keywords": "Python, list manipulation, programming tutorials, remove last element, initial function"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "List Initial",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python 3 Test Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_initial.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "initial.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Remove Last Element from Python List",
-      "description": "In this lab, you will learn how to remove the last element of a list in Python and return the remaining elements.",
-      "meta": {
-        "title": "Python List Manipulation | Programming Tutorials | Lab",
-        "description": "Learn how to remove the last element from a Python list using the initial() function. Enhance your programming skills with our concise and informative tutorials.",
-        "keywords": "Python, list manipulation, programming tutorials, remove last element, initial function"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "List Initial",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python 3 Test Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从 Python 列表中移除最后一个元素",
@@ -75,22 +86,13 @@
               {
                 "name": "验证 Python 3 测试脚本的执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_initial.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "initial.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

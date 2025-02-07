@@ -1,10 +1,55 @@
 {
   "type": "lab",
+  "title": "Implementing Iterators in Rust",
+  "description": "In this lab, we learn about the Iterator trait in Rust, which is used to implement iterators over collections such as arrays. The Iterator trait requires the next method to be defined for the iterator, and can be manually implemented in an impl block or automatically defined for arrays and ranges. The for construct can be used to conveniently turn some collections into iterators using the .into_iter() method. The lab provides an example implementation of the Fibonacci sequence generator as an iterator, showcasing how to define the next method and use the Iterator trait. Additionally, it demonstrates the use of take and skip methods to manipulate iterators, as well as the iter method for iterating over arrays.",
+  "meta": {
+    "title": "Rust Iterators | Programming Tutorials",
+    "description": "Learn about the Iterator trait in Rust, how to implement iterators, and explore examples of Fibonacci sequence generators and array iteration.",
+    "keywords": "Rust, Iterators, Programming Tutorials, Fibonacci, Arrays"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Iterators",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +60,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Implementing Iterators in Rust",
-      "description": "In this lab, we learn about the Iterator trait in Rust, which is used to implement iterators over collections such as arrays. The Iterator trait requires the next method to be defined for the iterator, and can be manually implemented in an impl block or automatically defined for arrays and ranges. The for construct can be used to conveniently turn some collections into iterators using the .into_iter() method. The lab provides an example implementation of the Fibonacci sequence generator as an iterator, showcasing how to define the next method and use the Iterator trait. Additionally, it demonstrates the use of take and skip methods to manipulate iterators, as well as the iter method for iterating over arrays.",
-      "meta": {
-        "title": "Rust Iterators | Programming Tutorials",
-        "description": "Learn about the Iterator trait in Rust, how to implement iterators, and explore examples of Fibonacci sequence generators and array iteration.",
-        "keywords": "Rust, Iterators, Programming Tutorials, Fibonacci, Arrays"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Iterators",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Rust 中实现迭代器",
@@ -81,28 +78,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

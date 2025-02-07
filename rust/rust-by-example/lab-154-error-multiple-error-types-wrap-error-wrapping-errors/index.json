@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Wrapping Errors with Custom Type",
+  "description": "In this lab, the alternative approach of wrapping errors in a custom error type is demonstrated. The code example showcases how to define a Result type alias that uses the DoubleError enum as the error variant, which wraps the standard library's ParseIntError. By implementing the fmt::Display, error::Error, and From traits, the custom error type can provide additional information and handle underlying errors.",
+  "meta": {
+    "title": "Wrapping Errors in a Custom Error Type | Rust Programming",
+    "description": "Learn how to wrap errors in a custom error type in Rust, providing additional information and handling underlying errors.",
+    "keywords": "Rust, error handling, custom error types, error wrapping, programming tutorials"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Wrapping errors",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/traits",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Wrapping Errors with Custom Type",
-      "description": "In this lab, the alternative approach of wrapping errors in a custom error type is demonstrated. The code example showcases how to define a Result type alias that uses the DoubleError enum as the error variant, which wraps the standard library's ParseIntError. By implementing the fmt::Display, error::Error, and From traits, the custom error type can provide additional information and handle underlying errors.",
-      "meta": {
-        "title": "Wrapping Errors in a Custom Error Type | Rust Programming",
-        "description": "Learn how to wrap errors in a custom error type in Rust, providing additional information and handling underlying errors.",
-        "keywords": "Rust, error handling, custom error types, error wrapping, programming tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Wrapping errors",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用自定义类型包装错误",
@@ -80,27 +77,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

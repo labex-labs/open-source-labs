@@ -1,10 +1,97 @@
 {
   "type": "lab",
+  "title": "Ways to Set a Color's Alpha Value",
+  "description": "This lab is about setting a color's alpha value using the Python Matplotlib library. Alpha value is a measure of transparency, where a value of 0 means completely transparent and a value of 1 means completely opaque. We will explore two ways to set alpha value in Matplotlib: using the alpha keyword argument and using the (matplotlib_color, alpha) color format.",
+  "meta": {
+    "title": "Setting Color Alpha Values in Python Matplotlib",
+    "description": "Explore two ways to set alpha value in Matplotlib: using the 'alpha' keyword and the '(matplotlib_color, alpha)' color format.",
+    "keywords": "matplotlib, python, color, transparency, alpha"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating a Bar Chart with Explicit Alpha Value",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/bar_charts",
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Creating a Bar Chart with Varying Alpha Values",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/bar_charts",
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/math_random",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "set-alpha.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,87 +102,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Ways to Set a Color's Alpha Value",
-      "description": "This lab is about setting a color's alpha value using the Python Matplotlib library. Alpha value is a measure of transparency, where a value of 0 means completely transparent and a value of 1 means completely opaque. We will explore two ways to set alpha value in Matplotlib: using the alpha keyword argument and using the (matplotlib_color, alpha) color format.",
-      "meta": {
-        "title": "Setting Color Alpha Values in Python Matplotlib",
-        "description": "Explore two ways to set alpha value in Matplotlib: using the 'alpha' keyword and the '(matplotlib_color, alpha)' color format.",
-        "keywords": "matplotlib, python, color, transparency, alpha"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Creating a Bar Chart with Explicit Alpha Value",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Creating a Bar Chart with Varying Alpha Values",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "设置颜色透明度值的方法",
@@ -116,23 +122,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -144,31 +133,11 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/bar_charts",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/math_random",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -177,16 +146,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "set-alpha.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

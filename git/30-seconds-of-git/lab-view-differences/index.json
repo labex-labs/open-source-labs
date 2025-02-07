@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "View Differences in Changes",
+  "description": "In this lab, you will learn how to use the `git diff` command to view the differences between your local changes and the last commit in a Git repository.",
+  "meta": {
+    "title": "Mastering Git Diffs",
+    "description": "Explore the power of Git's difference tracking feature to streamline your development workflow.",
+    "keywords": "version control, code changes, git labs, comparison, git, diff, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "View Differences in Changes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful view",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/diff"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "View Differences in Changes",
-      "description": "In this lab, you will learn how to use the `git diff` command to view the differences between your local changes and the last commit in a Git repository.",
-      "meta": {
-        "title": "Mastering Git Diffs",
-        "description": "Explore the power of Git's difference tracking feature to streamline your development workflow.",
-        "keywords": "version control, code changes, git labs, comparison, git, diff, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "View Differences in Changes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful view",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/diff"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "查看更改差异",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功查看",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/diff"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

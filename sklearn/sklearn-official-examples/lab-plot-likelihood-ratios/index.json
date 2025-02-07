@@ -1,10 +1,95 @@
 {
   "type": "lab",
+  "title": "Class Likelihood Ratios to Measure Classification Performance",
+  "description": "In this lab, we will use scikit-learn to demonstrate how to compute the positive and negative likelihood ratios (LR+, LR-) to assess the predictive power of a binary classifier. These metrics are independent of the proportion between classes in the test set, which makes them very useful when the available data for a study has a different class proportion than the target application. We will go through the following steps:",
+  "meta": {
+    "title": "Measure Classification Performance with Class Likelihood Ratios",
+    "description": "Learn how to compute positive and negative likelihood ratios to assess the predictive power of a binary classifier.",
+    "keywords": "machine learning, performance evaluation, classification, binary classifier, machine learning playground, scikit-learn, likelihood ratio, data analysis, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Preparing the Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Pre-test vs. Post-test Analysis",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Cross-validation of Likelihood Ratios",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Invariance with Respect to Prevalence",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/dummy",
+          "sklearn/inspection",
+          "sklearn/linear_model",
+          "sklearn/metrics",
+          "sklearn/model_selection"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-likelihood-ratios.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,85 +100,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Class Likelihood Ratios to Measure Classification Performance",
-      "description": "In this lab, we will use scikit-learn to demonstrate how to compute the positive and negative likelihood ratios (LR+, LR-) to assess the predictive power of a binary classifier. These metrics are independent of the proportion between classes in the test set, which makes them very useful when the available data for a study has a different class proportion than the target application. We will go through the following steps:",
-      "meta": {
-        "title": "Measure Classification Performance with Class Likelihood Ratios",
-        "description": "Learn how to compute positive and negative likelihood ratios to assess the predictive power of a binary classifier.",
-        "keywords": "machine learning, performance evaluation, classification, binary classifier, machine learning playground, scikit-learn, likelihood ratio, data analysis, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparing the Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Pre-test vs. Post-test Analysis",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Cross-validation of Likelihood Ratios",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Invariance with Respect to Prevalence",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/dummy",
-              "sklearn/inspection",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/model_selection"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "用于衡量分类性能的类别似然比",
@@ -114,8 +120,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "测试前与测试后分析",
@@ -126,8 +131,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "似然比的交叉验证",
@@ -138,8 +142,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "患病率不变性",
@@ -150,21 +153,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/dummy",
-              "sklearn/inspection",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/model_selection"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -173,16 +166,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-likelihood-ratios.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

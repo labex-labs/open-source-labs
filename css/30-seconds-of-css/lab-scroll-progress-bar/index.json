@@ -1,150 +1,70 @@
 {
   "type": "lab",
+  "title": "Scroll Progress Bar",
+  "description": "In this lab, we will explore how to create a scroll progress bar using HTML, CSS, and JavaScript. The scroll progress bar is a great way to indicate the user's current position on the page and how much more content is left to be seen. By the end of this lab, you will have a better understanding of how to implement this feature on your website.",
+  "meta": {
+    "title": "Create a Scroll Progress Bar with HTML, CSS, and JavaScript",
+    "description": "Learn how to build a scroll progress bar to indicate a user's position on a webpage.",
+    "keywords": "css, html playground, javascript, javascript practice, css practice, html, javascript tutor, javascript practice online, javascript lab, css playground"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "contributors": ["Lotus-7"],
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Scroll Progress Bar",
-      "description": "In this lab, we will explore how to create a scroll progress bar using HTML, CSS, and JavaScript. The scroll progress bar is a great way to indicate the user's current position on the page and how much more content is left to be seen. By the end of this lab, you will have a better understanding of how to implement this feature on your website.",
-      "meta": {
-        "title": "Create a Scroll Progress Bar with HTML, CSS, and JavaScript",
-        "description": "Learn how to build a scroll progress bar to indicate a user's position on a webpage.",
-        "keywords": "css, html playground, javascript, javascript practice, css practice, html, javascript tutor, javascript practice online, javascript lab, css playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Scroll Progress Bar",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of index.html modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of script.js modification",
-                "file": "verify1-4.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/colors",
-              "css/positioning",
-              "css/selectors",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "滚动进度条",
-      "description": "在本实验中，我们将探索如何使用 HTML、CSS 和 JavaScript 创建一个滚动进度条。滚动进度条是一种很好的方式，可以指示用户在页面上的当前位置以及还有多少内容有待查看。在本实验结束时，你将更好地理解如何在你的网站上实现此功能。",
-      "meta": {
-        "title": "使用 HTML、CSS 和 JavaScript 创建滚动进度条",
-        "description": "学习如何构建一个滚动进度条来指示用户在网页上的位置。",
-        "keywords": "CSS, HTML 游乐场, JavaScript, JavaScript 练习, CSS 练习, HTML, JavaScript 教程, 在线 JavaScript 练习, JavaScript 实验, CSS 游乐场"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "滚动进度条",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证网络服务的运行状态",
-                "file": "verify1-1.sh",
-                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证 index.html 修改状态",
-                "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证 style.css 修改状态",
-                "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证 script.js 修改状态",
-                "file": "verify1-4.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/colors",
-              "css/positioning",
-              "css/selectors",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Scroll Progress Bar",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of script.js modification",
+            "file": "verify1-4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "css/backgrounds",
+          "css/colors",
+          "css/positioning",
+          "css/selectors",
+          "css/width_and_height"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -164,5 +84,64 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "滚动进度条",
+      "description": "在本实验中，我们将探索如何使用 HTML、CSS 和 JavaScript 创建一个滚动进度条。滚动进度条是一种很好的方式，可以指示用户在页面上的当前位置以及还有多少内容有待查看。在本实验结束时，你将更好地理解如何在你的网站上实现此功能。",
+      "meta": {
+        "title": "使用 HTML、CSS 和 JavaScript 创建滚动进度条",
+        "description": "学习如何构建一个滚动进度条来指示用户在网页上的位置。",
+        "keywords": "CSS, HTML 游乐场, JavaScript, JavaScript 练习, CSS 练习, HTML, JavaScript 教程, 在线 JavaScript 练习, JavaScript 实验, CSS 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "滚动进度条",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口 8080 上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
+              },
+              {
+                "name": "验证 index.html 修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。"
+              },
+              {
+                "name": "验证 style.css 修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。"
+              },
+              {
+                "name": "验证 script.js 修改状态",
+                "file": "verify1-4.sh",
+                "hint": "请按照步骤完成实验。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

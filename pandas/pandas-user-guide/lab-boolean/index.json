@@ -1,10 +1,95 @@
 {
   "type": "lab",
+  "title": "Working with Nullable Boolean Data",
+  "description": "In this lab, we will explore the Nullable Boolean data type, provided by the Pandas library in Python. We will learn how to use this feature in indexing and logical operations, and how it differs from traditional boolean operations due to the presence of 'NA' values.",
+  "meta": {
+    "title": "Pandas Nullable Boolean Data Type | Python Programming",
+    "description": "Explore the Nullable Boolean data type in Pandas Python library, learn how to use it in indexing and logical operations, and understand the differences from traditional boolean operations.",
+    "keywords": "Pandas, Nullable Boolean, Python, Data Type, Indexing, Logical Operations"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Importing Necessary Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/data_analysis",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Indexing with NA values",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/handle_missing_values",
+          "python/booleans",
+          "python/comments",
+          "python/data_analysis",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Kleene logical operations",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "pandas/conditional_selection",
+          "python/booleans",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "boolean.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,85 +100,6 @@
     "repo": "https://github.com/pandas-dev/pandas"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Working with Nullable Boolean Data",
-      "description": "In this lab, we will explore the Nullable Boolean data type, provided by the Pandas library in Python. We will learn how to use this feature in indexing and logical operations, and how it differs from traditional boolean operations due to the presence of 'NA' values.",
-      "meta": {
-        "title": "Pandas Nullable Boolean Data Type | Python Programming",
-        "description": "Explore the Nullable Boolean data type in Pandas Python library, learn how to use it in indexing and logical operations, and understand the differences from traditional boolean operations.",
-        "keywords": "Pandas, Nullable Boolean, Python, Data Type, Indexing, Logical Operations"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importing Necessary Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Indexing with NA values",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/handle_missing_values",
-              "python/booleans",
-              "python/comments",
-              "python/data_analysis",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Kleene logical operations",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "处理可空布尔数据",
@@ -114,12 +120,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_analysis",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -131,16 +131,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/handle_missing_values",
-              "python/booleans",
-              "python/comments",
-              "python/data_analysis",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -152,19 +142,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "pandas/conditional_selection",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -173,16 +155,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "boolean.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

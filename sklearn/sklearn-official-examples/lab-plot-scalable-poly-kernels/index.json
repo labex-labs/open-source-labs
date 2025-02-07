@@ -1,10 +1,104 @@
 {
   "type": "lab",
+  "title": "Polynomial Kernel Approximation with Scikit-Learn",
+  "description": "This lab will demonstrate how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations. This is used to train linear classifiers that approximate the accuracy of kernelized ones. We will be using the Covtype dataset, which contains 581,012 samples with 54 features each, distributed among 6 classes. The goal of this dataset is to predict forest cover type from cartographic variables only (no remotely sensed data). After loading, we transform it into a binary classification problem to match the version of the dataset in the LIBSVM webpage, which was the one used in the original paper.",
+  "meta": {
+    "title": "Polynomial Kernel Approximation | Machine Learning | Data Science",
+    "description": "Learn how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations and train linear classifiers that approximate the accuracy of kernelized ones.",
+    "keywords": "Polynomial Kernel Approximation, Machine Learning, Data Science, Scikit-learn, Covtype Dataset"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load and Prepare the Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/model_selection",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "Establish a Baseline Model",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/svm"]
+      },
+      {
+        "title": "Establish the Kernel Approximation Model",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+      },
+      {
+        "title": "Establish the Kernelized SVM Model",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/svm"]
+      },
+      {
+        "title": "Compare the Results",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-scalable-poly-kernels.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,94 +109,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Polynomial Kernel Approximation with Scikit-Learn",
-      "description": "This lab will demonstrate how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations. This is used to train linear classifiers that approximate the accuracy of kernelized ones. We will be using the Covtype dataset, which contains 581,012 samples with 54 features each, distributed among 6 classes. The goal of this dataset is to predict forest cover type from cartographic variables only (no remotely sensed data). After loading, we transform it into a binary classification problem to match the version of the dataset in the LIBSVM webpage, which was the one used in the original paper.",
-      "meta": {
-        "title": "Polynomial Kernel Approximation | Machine Learning | Data Science",
-        "description": "Learn how to use polynomial kernel approximation in scikit-learn to efficiently generate polynomial kernel feature-space approximations and train linear classifiers that approximate the accuracy of kernelized ones.",
-        "keywords": "Polynomial Kernel Approximation, Machine Learning, Data Science, Scikit-learn, Covtype Dataset"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load and Prepare the Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Establish a Baseline Model",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
-          },
-          {
-            "title": "Establish the Kernel Approximation Model",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
-          },
-          {
-            "title": "Establish the Kernelized SVM Model",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
-          },
-          {
-            "title": "Compare the Results",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Scikit-learn进行多项式核近似",
@@ -123,12 +129,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -140,8 +140,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
+            ]
           },
           {
             "title": "建立核近似模型",
@@ -152,8 +151,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+            ]
           },
           {
             "title": "建立核支持向量机模型",
@@ -164,8 +162,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
+            ]
           },
           {
             "title": "比较结果",
@@ -176,13 +173,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -191,16 +186,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-scalable-poly-kernels.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

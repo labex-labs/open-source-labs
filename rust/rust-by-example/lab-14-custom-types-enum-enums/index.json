@@ -1,10 +1,55 @@
 {
   "type": "lab",
+  "title": "Rust Enum Concepts and Type Aliases",
+  "description": "In this lab, we learn about enums in Rust, which allow the creation of a type that can have multiple variants, including unit-like, tuple structs, and c-like structures. We also see how to define enum variants and use pattern matching to handle different variants. Additionally, we explore type aliases, which provide a way to refer to each enum variant via an alias, making the code more concise and readable.",
+  "meta": {
+    "title": "Rust Enums and Type Aliases | Programming Fundamentals",
+    "description": "Learn about enums, a powerful feature in Rust that allows creating custom data types with multiple variants, and how to use type aliases to make your code more concise and readable.",
+    "keywords": "Rust, Enums, Type Aliases, Programming Fundamentals, Data Structures"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Enums",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/traits",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +60,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Enum Concepts and Type Aliases",
-      "description": "In this lab, we learn about enums in Rust, which allow the creation of a type that can have multiple variants, including unit-like, tuple structs, and c-like structures. We also see how to define enum variants and use pattern matching to handle different variants. Additionally, we explore type aliases, which provide a way to refer to each enum variant via an alias, making the code more concise and readable.",
-      "meta": {
-        "title": "Rust Enums and Type Aliases | Programming Fundamentals",
-        "description": "Learn about enums, a powerful feature in Rust that allows creating custom data types with multiple variants, and how to use type aliases to make your code more concise and readable.",
-        "keywords": "Rust, Enums, Type Aliases, Programming Fundamentals, Data Structures"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Enums",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 枚举概念与类型别名",
@@ -81,28 +78,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Check if List Elements are Identical",
+  "description": "In Python, you can easily check if all elements in a list are identical using a simple function. In this challenge, you will be tasked with creating a function that checks if all elements in a list are identical.",
+  "meta": {
+    "title": "Checking for Identical Elements in Python Lists",
+    "description": "Learn how to easily check if all elements in a Python list are identical using a simple function.",
+    "keywords": "identical elements, python, set, all equal, list"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Check if List Elements are Identical",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify All Files Equal in /tmp",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_all_equal.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "all_equal.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Check if List Elements are Identical",
-      "description": "In Python, you can easily check if all elements in a list are identical using a simple function. In this challenge, you will be tasked with creating a function that checks if all elements in a list are identical.",
-      "meta": {
-        "title": "Checking for Identical Elements in Python Lists",
-        "description": "Learn how to easily check if all elements in a Python list are identical using a simple function.",
-        "keywords": "identical elements, python, set, all equal, list"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Check if List Elements are Identical",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify All Files Equal in /tmp",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "检查列表元素是否相同",
@@ -79,26 +90,13 @@
               {
                 "name": "验证 /tmp 中的所有文件是否相同",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_all_equal.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "all_equal.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

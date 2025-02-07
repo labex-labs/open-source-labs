@@ -1,10 +1,149 @@
 {
   "type": "lab",
+  "title": "Pylab with Gtk4 Sgskip",
+  "description": "In this lab, we will learn how to use pyplot to manage figure windows, but modify the GUI by accessing the underlying GTK widgets. We will create a figure with two plots and add a button to the toolbar and a label to the canvas. We will also add functionality to display the coordinates of the cursor when it moves over the plots.",
+  "meta": {
+    "title": "Pylab with Gtk4: Unleash the Power of Python Visualization",
+    "description": "Explore the seamless integration of Matplotlib's Pyplot and GTK4 to create interactive data visualizations.",
+    "keywords": "matplotlib, python, interactive, gtk4, data visualization"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import the required libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create the figure and plots",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Access the toolbar and vbox",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Add a button to the toolbar",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/lambda_functions",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Add a label to the canvas",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/for_loops", "python/tuples"]
+      },
+      {
+        "title": "Update the label with cursor coordinates",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/sets",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Display the figure",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "pylab-with-gtk4-sgskip.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,139 +154,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pylab with Gtk4 Sgskip",
-      "description": "In this lab, we will learn how to use pyplot to manage figure windows, but modify the GUI by accessing the underlying GTK widgets. We will create a figure with two plots and add a button to the toolbar and a label to the canvas. We will also add functionality to display the coordinates of the cursor when it moves over the plots.",
-      "meta": {
-        "title": "Pylab with Gtk4: Unleash the Power of Python Visualization",
-        "description": "Explore the seamless integration of Matplotlib's Pyplot and GTK4 to create interactive data visualizations.",
-        "keywords": "matplotlib, python, interactive, gtk4, data visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import the required libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create the figure and plots",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Access the toolbar and vbox",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Add a button to the toolbar",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lambda_functions",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Add a label to the canvas",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/for_loops", "python/tuples"]
-          },
-          {
-            "title": "Update the label with cursor coordinates",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/sets",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Display the figure",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "搭配 Gtk4 的 Pylab 实验",
@@ -168,14 +174,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -187,12 +185,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -204,8 +196,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "向工具栏添加一个按钮",
@@ -216,13 +207,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/lambda_functions",
-              "python/tuples"
             ]
           },
           {
@@ -234,8 +218,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/for_loops", "python/tuples"]
+            ]
           },
           {
             "title": "使用光标坐标更新标签",
@@ -246,15 +229,6 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/sets",
-              "python/tuples"
             ]
           },
           {
@@ -266,13 +240,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -281,16 +253,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "pylab-with-gtk4-sgskip.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

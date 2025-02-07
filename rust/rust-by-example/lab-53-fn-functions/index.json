@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Writing Rust Functions",
+  "description": "In this lab, we learn how to write functions in Rust. Functions are declared using the fn keyword, and their arguments are type annotated. The return type, if applicable, is specified after an arrow ->. The final expression in the function serves as the return value, but the return statement can be used to return a value earlier. The lab provides an example of rewriting the FizzBuzz program using functions, demonstrating the use of functions that return boolean values, functions that return the unit type (), and functions without specified return types.",
+  "meta": {
+    "title": "Write Efficient Rust Functions with Ease",
+    "description": "Learn how to write powerful Rust functions that optimize your code and improve performance.",
+    "keywords": "rust playground, coding, functions, optimization, rust online compiler, rust commands, rust tutor, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/boolean_type",
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/operator_overloading",
+          "rust/string_type"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Writing Rust Functions",
-      "description": "In this lab, we learn how to write functions in Rust. Functions are declared using the fn keyword, and their arguments are type annotated. The return type, if applicable, is specified after an arrow ->. The final expression in the function serves as the return value, but the return statement can be used to return a value earlier. The lab provides an example of rewriting the FizzBuzz program using functions, demonstrating the use of functions that return boolean values, functions that return the unit type (), and functions without specified return types.",
-      "meta": {
-        "title": "Write Efficient Rust Functions with Ease",
-        "description": "Learn how to write powerful Rust functions that optimize your code and improve performance.",
-        "keywords": "rust playground, coding, functions, optimization, rust online compiler, rust commands, rust tutor, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/operator_overloading",
-              "rust/string_type"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "编写Rust函数",
@@ -79,26 +76,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/operator_overloading",
-              "rust/string_type"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

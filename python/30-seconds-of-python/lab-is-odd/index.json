@@ -1,10 +1,62 @@
 {
   "type": "lab",
+  "title": "Check if a Number is Odd",
+  "description": "In this lab, you will learn how to write a function to check whether a given number is odd or even using the modulo operator in Python.",
+  "meta": {
+    "title": "Checking if a Number is Odd in Python",
+    "description": "Learn how to write a Python function to determine if a given number is odd or even.",
+    "keywords": "even, python, number, odd, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Check if a Number is Odd",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Checks Odd Number",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/function_definition"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_is_odd.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "is_odd.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,47 +67,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Check if a Number is Odd",
-      "description": "In this lab, you will learn how to write a function to check whether a given number is odd or even using the modulo operator in Python.",
-      "meta": {
-        "title": "Checking if a Number is Odd in Python",
-        "description": "Learn how to write a Python function to determine if a given number is odd or even.",
-        "keywords": "even, python, number, odd, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Check if a Number is Odd",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Checks Odd Number",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/function_definition"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "检查一个数字是否为奇数",
@@ -74,21 +85,13 @@
               {
                 "name": "验证Python脚本检查奇数",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/function_definition"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -97,21 +100,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_odd.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_odd.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,159 @@
 {
   "type": "lab",
+  "title": "Matplotlib Custom Units",
+  "description": "Matplotlib is a plotting library for the Python programming language. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK. Matplotlib allows developers to create a wide range of static, animated, and interactive visualizations in Python.",
+  "meta": {
+    "title": "Matplotlib Custom Units: Unleash Your Visualization Potential",
+    "description": "Explore the power of custom units in Matplotlib and elevate your data visualization skills.",
+    "keywords": "matplotlib, python, programming tutorial, custom units, data visualization"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create a Custom Unit Class",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create a Converter Class",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Register the Custom Unit Class",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/lists"]
+      },
+      {
+        "title": "Create Data Points",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/for_loops",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create Plots",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/line_styles_colors",
+          "python/comments",
+          "python/for_loops",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Run the Code",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "evans-test.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,149 +164,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Custom Units",
-      "description": "Matplotlib is a plotting library for the Python programming language. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK. Matplotlib allows developers to create a wide range of static, animated, and interactive visualizations in Python.",
-      "meta": {
-        "title": "Matplotlib Custom Units: Unleash Your Visualization Potential",
-        "description": "Explore the power of custom units in Matplotlib and elevate your data visualization skills.",
-        "keywords": "matplotlib, python, programming tutorial, custom units, data visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create a Custom Unit Class",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create a Converter Class",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Register the Custom Unit Class",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/lists"]
-          },
-          {
-            "title": "Create Data Points",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create Plots",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Run the Code",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 自定义单位",
@@ -178,13 +184,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -196,16 +195,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/polymorphism",
-              "python/tuples"
             ]
           },
           {
@@ -217,15 +206,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -237,8 +217,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/lists"]
+            ]
           },
           {
             "title": "创建数据点",
@@ -249,14 +228,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -268,13 +239,6 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
             ]
           },
           {
@@ -286,13 +250,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -301,16 +263,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "evans-test.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

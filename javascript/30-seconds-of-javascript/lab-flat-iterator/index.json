@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Flattening Nested Data Structures with JavaScript Iterators",
+  "description": "In this lab, we will be exploring the concept of iterators and generators in JavaScript. Specifically, we will be focusing on creating a flat iterator that can iterate over nested arrays and sets, and flatten them into a single iterable. This will allow us to efficiently access and manipulate nested data structures in a more streamlined manner. By the end of the lab, you will have a deeper understanding of how generators and iterators work, and how they can be applied to solve real-world problems.",
+  "meta": {
+    "title": "Mastering JavaScript Iterators and Generators | Nested Data Structures",
+    "description": "Explore the power of iterators and generators in JavaScript. Learn to create a flat iterator that can efficiently navigate and flatten nested arrays and sets.",
+    "keywords": "JavaScript, Iterators, Generators, Nested Data Structures, Flattening, Programming Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Flat Iterator",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/loops",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Flattening Nested Data Structures with JavaScript Iterators",
-      "description": "In this lab, we will be exploring the concept of iterators and generators in JavaScript. Specifically, we will be focusing on creating a flat iterator that can iterate over nested arrays and sets, and flatten them into a single iterable. This will allow us to efficiently access and manipulate nested data structures in a more streamlined manner. By the end of the lab, you will have a deeper understanding of how generators and iterators work, and how they can be applied to solve real-world problems.",
-      "meta": {
-        "title": "Mastering JavaScript Iterators and Generators | Nested Data Structures",
-        "description": "Explore the power of iterators and generators in JavaScript. Learn to create a flat iterator that can efficiently navigate and flatten nested arrays and sets.",
-        "keywords": "JavaScript, Iterators, Generators, Nested Data Structures, Flattening, Programming Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Flat Iterator",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 JavaScript 迭代器展平嵌套数据结构",
@@ -77,24 +74,13 @@
               {
                 "name": "验证 Node 命令历史记录",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键可以运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键可以运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,71 @@
 {
   "type": "lab",
+  "title": "Building Lists with Iterators in Python",
+  "description": "In Python, we can create a list using a variety of methods. One such method is by using an iterator function and an initial seed value. In this challenge, you will be tasked with building a list using an iterator function and an initial seed value.",
+  "meta": {
+    "title": "Python Programming | List Creation | Unfold List",
+    "description": "Explore Python's list creation techniques, including using an iterator function and an initial seed value. Learn how to implement the 'unfold' function to generate a list using a generator function.",
+    "keywords": "Python, Programming, List Creation, Unfold List, Iterator Function, Seed Value"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Unfold List",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/break_continue",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/lambda_functions",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/tuples",
+          "python/while_loops"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_unfold.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "unfold.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,56 +76,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Building Lists with Iterators in Python",
-      "description": "In Python, we can create a list using a variety of methods. One such method is by using an iterator function and an initial seed value. In this challenge, you will be tasked with building a list using an iterator function and an initial seed value.",
-      "meta": {
-        "title": "Python Programming | List Creation | Unfold List",
-        "description": "Explore Python's list creation techniques, including using an iterator function and an initial seed value. Learn how to implement the 'unfold' function to generate a list using a generator function.",
-        "keywords": "Python, Programming, List Creation, Unfold List, Iterator Function, Seed Value"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Unfold List",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples",
-              "python/while_loops"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python中使用迭代器构建列表",
@@ -83,30 +94,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/lambda_functions",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/tuples",
-              "python/while_loops"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -115,21 +109,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_unfold.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "unfold.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

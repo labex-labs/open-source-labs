@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Unique Array Difference Calculation",
+  "description": "In this lab, we will explore how to calculate the difference between two arrays without filtering duplicate values. The lab will guide you through the process of creating a Set from one array to get the unique values, and then using Array.prototype.filter() on the other array to keep only values that are not contained in the Set. By the end of the lab, you will have a better understanding of how to work with arrays in JavaScript.",
+  "meta": {
+    "title": "JavaScript Array Difference | Programming Tutorial",
+    "description": "Learn how to calculate the difference between two arrays without filtering duplicate values in this JavaScript programming tutorial.",
+    "keywords": "JavaScript, Array, Difference, Set, Filter, Programming, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Array Difference",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Unique Array Difference Calculation",
-      "description": "In this lab, we will explore how to calculate the difference between two arrays without filtering duplicate values. The lab will guide you through the process of creating a Set from one array to get the unique values, and then using Array.prototype.filter() on the other array to keep only values that are not contained in the Set. By the end of the lab, you will have a better understanding of how to work with arrays in JavaScript.",
-      "meta": {
-        "title": "JavaScript Array Difference | Programming Tutorial",
-        "description": "Learn how to calculate the difference between two arrays without filtering duplicate values in this JavaScript programming tutorial.",
-        "keywords": "JavaScript, Array, Difference, Set, Filter, Programming, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Array Difference",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "计算数组差异（不筛选重复值）",
@@ -76,23 +73,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

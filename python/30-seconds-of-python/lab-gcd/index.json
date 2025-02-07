@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Calculating Greatest Common Divisor",
+  "description": "In this lab, you will learn how to use the `functools.reduce()` and `math.gcd()` functions to find the greatest common divisor of a list of integers.",
+  "meta": {
+    "title": "Mathematics | Greatest Common Divisor | Programming Tutorial",
+    "description": "Learn how to find the greatest common divisor (GCD) of a list of integers using Python and the functools.reduce() and math.gcd() functions.",
+    "keywords": "mathematics, greatest common divisor, gcd, programming, python, functools, math"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Greatest Common Divisor",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify GCD Python Test Script",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_gcd.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "gcd.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Calculating Greatest Common Divisor",
-      "description": "In this lab, you will learn how to use the `functools.reduce()` and `math.gcd()` functions to find the greatest common divisor of a list of integers.",
-      "meta": {
-        "title": "Mathematics | Greatest Common Divisor | Programming Tutorial",
-        "description": "Learn how to find the greatest common divisor (GCD) of a list of integers using Python and the functools.reduce() and math.gcd() functions.",
-        "keywords": "mathematics, greatest common divisor, gcd, programming, python, functools, math"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Greatest Common Divisor",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify GCD Python Test Script",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "计算最大公因数",
@@ -79,26 +90,13 @@
               {
                 "name": "验证GCD Python测试脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_gcd.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "gcd.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

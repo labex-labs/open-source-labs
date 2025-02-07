@@ -1,10 +1,65 @@
 {
   "type": "lab",
+  "title": "Automatic Text Linking",
+  "description": "In this lab, we will work on creating an Automatic Text Linking component using React. The purpose of this lab is to learn how to use regular expressions to find URLs in a string and convert them into appropriate link elements. By the end of this lab, you will have a better understanding of how to automatically link URLs in text using React.",
+  "meta": {
+    "title": "Automatic Text Linking with React",
+    "description": "Learn how to create an Automatic Text Linking component using React and regular expressions to find and convert URLs in text.",
+    "keywords": "url conversion, regular expressions, automatic text linking, react, web development"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Automatic Text Linking",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of script.js modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["react/conditional_render", "react/jsx", "react/list_keys"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "script.js",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +70,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Automatic Text Linking",
-      "description": "In this lab, we will work on creating an Automatic Text Linking component using React. The purpose of this lab is to learn how to use regular expressions to find URLs in a string and convert them into appropriate link elements. By the end of this lab, you will have a better understanding of how to automatically link URLs in text using React.",
-      "meta": {
-        "title": "Automatic Text Linking with React",
-        "description": "Learn how to create an Automatic Text Linking component using React and regular expressions to find and convert URLs in text.",
-        "keywords": "url conversion, regular expressions, automatic text linking, react, web development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Automatic Text Linking",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of script.js modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "react/conditional_render",
-              "react/jsx",
-              "react/list_keys"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "自动文本链接",
@@ -81,28 +88,18 @@
               {
                 "name": "验证Web服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”在8080端口运行Web服务。然后，你可以刷新**Web 8080**标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“Go Live”在8080端口运行Web服务。然后，你可以刷新**Web 8080**标签页来预览网页。"
               },
               {
                 "name": "验证script.js修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "react/conditional_render",
-              "react/jsx",
-              "react/list_keys"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -111,21 +108,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

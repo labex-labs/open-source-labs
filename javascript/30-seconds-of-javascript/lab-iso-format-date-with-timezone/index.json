@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Date to ISO Format with Timezone",
+  "description": "In this lab, we will learn how to convert a date into the extended ISO format (ISO 8601), including timezone offset. We will use the Date.prototype.getTimezoneOffset() method to get the timezone offset and reverse it. Then, we will define a helper function to normalize any passed number to an integer and pad it to 2 digits using String.prototype.padStart(). Finally, we will use the built-in methods in the Date prototype to build the ISO 8601 string with timezone offset. By the end of this lab, you will have a better understanding of how to manipulate dates in JavaScript.",
+  "meta": {
+    "title": "Convert Date to ISO Format with Timezone",
+    "description": "Learn how to convert a date into the extended ISO format (ISO 8601), including timezone offset, using JavaScript.",
+    "keywords": "javascript, javascript practice, iso format, timezone, javascript tutor, javascript practice online, programming tutorial, javascript lab, date"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Date to ISO Format with Timezone",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Used",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/template_lit",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Date to ISO Format with Timezone",
-      "description": "In this lab, we will learn how to convert a date into the extended ISO format (ISO 8601), including timezone offset. We will use the Date.prototype.getTimezoneOffset() method to get the timezone offset and reverse it. Then, we will define a helper function to normalize any passed number to an integer and pad it to 2 digits using String.prototype.padStart(). Finally, we will use the built-in methods in the Date prototype to build the ISO 8601 string with timezone offset. By the end of this lab, you will have a better understanding of how to manipulate dates in JavaScript.",
-      "meta": {
-        "title": "Convert Date to ISO Format with Timezone",
-        "description": "Learn how to convert a date into the extended ISO format (ISO 8601), including timezone offset, using JavaScript.",
-        "keywords": "javascript, javascript practice, iso format, timezone, javascript tutor, javascript practice online, programming tutorial, javascript lab, date"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Date to ISO Format with Timezone",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Used",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/template_lit",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将日期转换为带时区的 ISO 格式",
@@ -76,23 +73,13 @@
               {
                 "name": "验证所使用的 Node 命令",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/template_lit",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

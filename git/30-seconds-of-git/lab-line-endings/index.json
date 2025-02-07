@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Configure Line Endings",
+  "description": "In Git, line endings are important because they can affect the way your code is displayed and executed. Different operating systems use different line endings, which can cause issues when collaborating on a project. Therefore, it is important to configure the line endings for a repository to ensure consistency and avoid conflicts.",
+  "meta": {
+    "title": "Configuring Line Endings in Git",
+    "description": "Learn how to configure line endings in Git to ensure consistency and avoid conflicts when collaborating on a project.",
+    "keywords": "configuration, line endings, git labs, unix, windows, git, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Configure Line Endings",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful configuration",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/config"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Configure Line Endings",
-      "description": "In Git, line endings are important because they can affect the way your code is displayed and executed. Different operating systems use different line endings, which can cause issues when collaborating on a project. Therefore, it is important to configure the line endings for a repository to ensure consistency and avoid conflicts.",
-      "meta": {
-        "title": "Configuring Line Endings in Git",
-        "description": "Learn how to configure line endings in Git to ensure consistency and avoid conflicts when collaborating on a project.",
-        "keywords": "configuration, line endings, git labs, unix, windows, git, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Configure Line Endings",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful configuration",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/config"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "配置换行符",
@@ -70,17 +67,13 @@
               {
                 "name": "验证配置是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/config"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

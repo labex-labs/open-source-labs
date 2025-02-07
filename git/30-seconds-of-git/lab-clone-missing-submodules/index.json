@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Clone Missing Submodules",
+  "description": "In Git, submodules are repositories within repositories. They allow you to include other repositories as dependencies in your project. When you clone a Git repository that contains submodules, the submodules are not automatically cloned. This can cause issues when trying to build or run the project. In this lab, you will learn how to clone missing submodules and checkout commits.",
+  "meta": {
+    "title": "Clone Missing Submodules in Git",
+    "description": "Learn how to clone missing submodules and checkout correct commits in a Git repository.",
+    "keywords": "submodules, repository, git labs, git, checkout, clone, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Clone Missing Submodules",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful cloning",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/clone"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Clone Missing Submodules",
-      "description": "In Git, submodules are repositories within repositories. They allow you to include other repositories as dependencies in your project. When you clone a Git repository that contains submodules, the submodules are not automatically cloned. This can cause issues when trying to build or run the project. In this lab, you will learn how to clone missing submodules and checkout commits.",
-      "meta": {
-        "title": "Clone Missing Submodules in Git",
-        "description": "Learn how to clone missing submodules and checkout correct commits in a Git repository.",
-        "keywords": "submodules, repository, git labs, git, checkout, clone, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Clone Missing Submodules",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful cloning",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/clone"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "克隆缺失的子模块",
@@ -70,17 +67,13 @@
               {
                 "name": "验证克隆是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/clone"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,99 @@
 {
   "type": "lab",
+  "title": "Covariance Matrix Estimation with Scikit-Learn",
+  "description": "Covariance estimation is an important statistical technique used to estimate the covariance matrix of a population. The covariance matrix describes the relationship between variables in a dataset and can provide valuable insights into the data's scatter plot shape. In this lab, we will explore various methods for estimating the covariance matrix using the sklearn.covariance package in Python.",
+  "meta": {
+    "title": "Covariance Estimation | Statistical Techniques | Data Analysis",
+    "description": "Explore covariance matrix estimation methods using the sklearn.covariance package in Python. Gain insights into dataset scatter plots and relationships between variables.",
+    "keywords": "covariance estimation, data analysis, statistical techniques, scatter plot, variable relationships"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Empirical Covariance",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/covariance"]
+      },
+      {
+        "title": "Shrunk Covariance",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/covariance"]
+      },
+      {
+        "title": "Ledoit-Wolf Shrinkage",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/covariance"]
+      },
+      {
+        "title": "Sparse Inverse Covariance",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/covariance"]
+      },
+      {
+        "title": "Robust Covariance Estimation",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/covariance"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "23-covariance-estimation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,89 +104,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Covariance Matrix Estimation with Scikit-Learn",
-      "description": "Covariance estimation is an important statistical technique used to estimate the covariance matrix of a population. The covariance matrix describes the relationship between variables in a dataset and can provide valuable insights into the data's scatter plot shape. In this lab, we will explore various methods for estimating the covariance matrix using the sklearn.covariance package in Python.",
-      "meta": {
-        "title": "Covariance Estimation | Statistical Techniques | Data Analysis",
-        "description": "Explore covariance matrix estimation methods using the sklearn.covariance package in Python. Gain insights into dataset scatter plots and relationships between variables.",
-        "keywords": "covariance estimation, data analysis, statistical techniques, scatter plot, variable relationships"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Empirical Covariance",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
-          },
-          {
-            "title": "Shrunk Covariance",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
-          },
-          {
-            "title": "Ledoit-Wolf Shrinkage",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
-          },
-          {
-            "title": "Sparse Inverse Covariance",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
-          },
-          {
-            "title": "Robust Covariance Estimation",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Scikit-Learn进行协方差矩阵估计",
@@ -118,8 +124,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
+            ]
           },
           {
             "title": "收缩协方差",
@@ -130,8 +135,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
+            ]
           },
           {
             "title": "莱杜瓦-沃尔夫收缩法",
@@ -142,8 +146,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
+            ]
           },
           {
             "title": "稀疏逆协方差",
@@ -154,8 +157,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
+            ]
           },
           {
             "title": "稳健协方差估计",
@@ -166,13 +168,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/covariance"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -181,16 +181,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "23-covariance-estimation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

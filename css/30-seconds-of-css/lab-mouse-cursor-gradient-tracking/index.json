@@ -1,166 +1,78 @@
 {
   "type": "lab",
+  "title": "Mouse Cursor Gradient Tracking",
+  "description": "In this lab, we will explore CSS programming by creating a mouse cursor gradient tracking effect on a button. This lab will teach you how to use CSS variables to track the position of the mouse cursor and update the dimensions of a gradient. You will also learn how to use JavaScript to handle mouse events and update CSS variables dynamically.",
+  "meta": {
+    "title": "CSS | Mouse Cursor Gradient Tracking Effect",
+    "description": "Explore CSS programming by creating a mouse cursor gradient tracking effect on a button. Learn how to use CSS variables and JavaScript to handle mouse events and update CSS dynamically.",
+    "keywords": "CSS, CSS Variables, Mouse Cursor, Gradient, Tracking Effect, JavaScript, Web Development"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "contributors": ["Lotus-7"],
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Mouse Cursor Gradient Tracking",
-      "description": "In this lab, we will explore CSS programming by creating a mouse cursor gradient tracking effect on a button. This lab will teach you how to use CSS variables to track the position of the mouse cursor and update the dimensions of a gradient. You will also learn how to use JavaScript to handle mouse events and update CSS variables dynamically.",
-      "meta": {
-        "title": "CSS | Mouse Cursor Gradient Tracking Effect",
-        "description": "Explore CSS programming by creating a mouse cursor gradient tracking effect on a button. Learn how to use CSS variables and JavaScript to handle mouse events and update CSS dynamically.",
-        "keywords": "CSS, CSS Variables, Mouse Cursor, Gradient, Tracking Effect, JavaScript, Web Development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Mouse Cursor Gradient Tracking",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of index.html modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of script.js modification",
-                "file": "verify1-4.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/borders",
-              "css/colors",
-              "css/fonts",
-              "css/margin_and_padding",
-              "css/positioning",
-              "css/pseudo_classes",
-              "css/pseudo_elements",
-              "css/selectors",
-              "css/transformations",
-              "css/transitions",
-              "css/variables",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "鼠标光标渐变跟踪",
-      "description": "在本实验中，我们将通过在按钮上创建鼠标光标渐变跟踪效果来探索CSS编程。本实验将教你如何使用CSS变量来跟踪鼠标光标的位置并更新渐变的尺寸。你还将学习如何使用JavaScript来处理鼠标事件并动态更新CSS变量。",
-      "meta": {
-        "title": "CSS | 鼠标光标渐变跟踪效果",
-        "description": "通过在按钮上创建鼠标光标渐变跟踪效果来探索CSS编程。学习如何使用CSS变量和JavaScript来处理鼠标事件并动态更新CSS。",
-        "keywords": "CSS, CSS变量, 鼠标光标, 渐变, 跟踪效果, JavaScript, 网页开发"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "鼠标光标渐变跟踪",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Web服务的运行状态",
-                "file": "verify1-1.sh",
-                "hint": "请点击右下角的“上线”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证index.html的修改状态",
-                "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证style.css的修改状态",
-                "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证script.js的修改状态",
-                "file": "verify1-4.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/borders",
-              "css/colors",
-              "css/fonts",
-              "css/margin_and_padding",
-              "css/positioning",
-              "css/pseudo_classes",
-              "css/pseudo_elements",
-              "css/selectors",
-              "css/transformations",
-              "css/transitions",
-              "css/variables",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Mouse Cursor Gradient Tracking",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of script.js modification",
+            "file": "verify1-4.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "css/backgrounds",
+          "css/borders",
+          "css/colors",
+          "css/fonts",
+          "css/margin_and_padding",
+          "css/positioning",
+          "css/pseudo_classes",
+          "css/pseudo_elements",
+          "css/selectors",
+          "css/transformations",
+          "css/transitions",
+          "css/variables",
+          "css/width_and_height"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -180,5 +92,64 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "鼠标光标渐变跟踪",
+      "description": "在本实验中，我们将通过在按钮上创建鼠标光标渐变跟踪效果来探索CSS编程。本实验将教你如何使用CSS变量来跟踪鼠标光标的位置并更新渐变的尺寸。你还将学习如何使用JavaScript来处理鼠标事件并动态更新CSS变量。",
+      "meta": {
+        "title": "CSS | 鼠标光标渐变跟踪效果",
+        "description": "通过在按钮上创建鼠标光标渐变跟踪效果来探索CSS编程。学习如何使用CSS变量和JavaScript来处理鼠标事件并动态更新CSS。",
+        "keywords": "CSS, CSS变量, 鼠标光标, 渐变, 跟踪效果, JavaScript, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "鼠标光标渐变跟踪",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“上线”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
+              },
+              {
+                "name": "验证index.html的修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。"
+              },
+              {
+                "name": "验证style.css的修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。"
+              },
+              {
+                "name": "验证script.js的修改状态",
+                "file": "verify1-4.sh",
+                "hint": "请按照步骤完成实验。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

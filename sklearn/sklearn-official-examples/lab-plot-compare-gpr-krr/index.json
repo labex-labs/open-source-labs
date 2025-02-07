@@ -1,10 +1,91 @@
 {
   "type": "lab",
+  "title": "Plot Compare GPR KRR",
+  "description": "This lab will illustrate differences between a kernel ridge regression and a Gaussian process regression and how they are used to fit a dataset. We will also focus on tuning the kernel hyperparameters.",
+  "meta": {
+    "title": "Exploring Kernel Ridge Regression and Gaussian Process Regression",
+    "description": "Discover the differences between kernel ridge regression and Gaussian process regression in this comprehensive programming tutorial.",
+    "keywords": "machine learning, gaussian process regression, programming tutorial, scikit-learn, scikit-learn playground, data analysis, kernel ridge regression"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generating a dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Limitations of a simple linear model",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/linear_model"]
+      },
+      {
+        "title": "Kernel methods: kernel ridge and Gaussian process",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/gaussian_process",
+          "sklearn/kernel_ridge"
+        ]
+      },
+      {
+        "title": "Final conclusion",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-compare-gpr-krr.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,81 +96,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Plot Compare GPR KRR",
-      "description": "This lab will illustrate differences between a kernel ridge regression and a Gaussian process regression and how they are used to fit a dataset. We will also focus on tuning the kernel hyperparameters.",
-      "meta": {
-        "title": "Exploring Kernel Ridge Regression and Gaussian Process Regression",
-        "description": "Discover the differences between kernel ridge regression and Gaussian process regression in this comprehensive programming tutorial.",
-        "keywords": "machine learning, gaussian process regression, programming tutorial, scikit-learn, scikit-learn playground, data analysis, kernel ridge regression"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generating a dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Limitations of a simple linear model",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
-          },
-          {
-            "title": "Kernel methods: kernel ridge and Gaussian process",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/gaussian_process",
-              "sklearn/kernel_ridge"
-            ]
-          },
-          {
-            "title": "Final conclusion",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "绘制图表比较高斯过程回归与核岭回归",
@@ -110,8 +116,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "简单线性模型的局限性",
@@ -122,8 +127,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
+            ]
           },
           {
             "title": "核方法：核岭回归与高斯过程",
@@ -134,11 +138,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/gaussian_process",
-              "sklearn/kernel_ridge"
             ]
           },
           {
@@ -150,13 +149,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -165,16 +162,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-compare-gpr-krr.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,94 @@
 {
   "type": "lab",
+  "title": "Comparison of Calibration of Classifiers",
+  "description": "In this lab, we will compare the calibration of four different models: Logistic Regression, Gaussian Naive Bayes, Random Forest Classifier, and Linear SVM. Calibration curves will be plotted for each model, which show the relationship between predicted probabilities and actual outcomes. This is important because well-calibrated models produce probabilities that are accurate and reliable.",
+  "meta": {
+    "title": "Comparison of Classifier Calibration",
+    "description": "Explore the calibration of Logistic Regression, Naive Bayes, SVM, and Random Forest models using calibration curves and probability distributions.",
+    "keywords": "machine learning, naive bayes, random forest, logistic regression, classifier calibration, scikit-learn, machine learning playground, svm, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries and Generate Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
+      },
+      {
+        "title": "Plot Calibration Curves",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/calibration",
+          "sklearn/ensemble",
+          "sklearn/linear_model",
+          "sklearn/naive_bayes",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Interpret Calibration Curves",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Conclusion",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-compare-calibration.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,88 +99,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Comparison of Calibration of Classifiers",
-      "description": "In this lab, we will compare the calibration of four different models: Logistic Regression, Gaussian Naive Bayes, Random Forest Classifier, and Linear SVM. Calibration curves will be plotted for each model, which show the relationship between predicted probabilities and actual outcomes. This is important because well-calibrated models produce probabilities that are accurate and reliable.",
-      "meta": {
-        "title": "Comparison of Classifier Calibration",
-        "description": "Explore the calibration of Logistic Regression, Naive Bayes, SVM, and Random Forest models using calibration curves and probability distributions.",
-        "keywords": "machine learning, naive bayes, random forest, logistic regression, classifier calibration, scikit-learn, machine learning playground, svm, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries and Generate Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "Plot Calibration Curves",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/calibration",
-              "sklearn/ensemble",
-              "sklearn/linear_model",
-              "sklearn/naive_bayes",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Interpret Calibration Curves",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Conclusion",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "分类器校准比较",
@@ -117,11 +119,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -133,14 +130,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/calibration",
-              "sklearn/ensemble",
-              "sklearn/linear_model",
-              "sklearn/naive_bayes",
-              "sklearn/svm"
             ]
           },
           {
@@ -152,8 +141,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "结论",
@@ -164,13 +152,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -179,16 +165,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-compare-calibration.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

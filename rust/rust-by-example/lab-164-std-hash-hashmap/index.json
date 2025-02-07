@@ -1,10 +1,55 @@
 {
   "type": "lab",
+  "title": "Rust HashMap Data Storage Tutorial",
+  "description": "In this lab, we learn about HashMap in Rust, which is used to store values by key. HashMap keys can be of various types, including booleans, integers, strings, or any other type that implements the Eq and Hash traits. HashMaps can grow and shrink dynamically based on the number of elements. We can create a HashMap with a specific capacity using HashMap::with_capacity(uint) or use HashMap::new() to get a HashMap with a default initial capacity. The provided code example demonstrates the usage of HashMap by storing contact names and phone numbers and performing operations like insertion, retrieval, modification, and removal.",
+  "meta": {
+    "title": "Rust HashMap | Programming Tutorials",
+    "description": "Learn about the Rust HashMap data structure, which allows storing values by key. Discover how to create, manipulate, and use HashMaps in your Rust applications.",
+    "keywords": "Rust, HashMap, Data Structures, Programming Tutorials, Key-Value Pairs"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "HashMap",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/error_propagation",
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/type_casting",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +60,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust HashMap Data Storage Tutorial",
-      "description": "In this lab, we learn about HashMap in Rust, which is used to store values by key. HashMap keys can be of various types, including booleans, integers, strings, or any other type that implements the Eq and Hash traits. HashMaps can grow and shrink dynamically based on the number of elements. We can create a HashMap with a specific capacity using HashMap::with_capacity(uint) or use HashMap::new() to get a HashMap with a default initial capacity. The provided code example demonstrates the usage of HashMap by storing contact names and phone numbers and performing operations like insertion, retrieval, modification, and removal.",
-      "meta": {
-        "title": "Rust HashMap | Programming Tutorials",
-        "description": "Learn about the Rust HashMap data structure, which allows storing values by key. Discover how to create, manipulate, and use HashMaps in your Rust applications.",
-        "keywords": "Rust, HashMap, Data Structures, Programming Tutorials, Key-Value Pairs"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "HashMap",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/error_propagation",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust语言的HashMap数据存储教程",
@@ -81,28 +78,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/error_propagation",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/type_casting",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,292 +1,141 @@
 {
   "type": "lab",
+  "title": "Various Data Analysis Problems",
+  "description": "In this lab, you will work with various containers, list/set/dict comprehensions, the collections module, and tackle a data analysis challenge.",
+  "meta": {
+    "title": "Mastering Data Analysis with Python",
+    "description": "Dive into data analysis with Python, exploring various containers, comprehensions, and collections to solve real-world problems.",
+    "keywords": "data structures, python, comprehensions, collections, data analysis"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Various Data Analysis Problems",
-      "description": "In this lab, you will work with various containers, list/set/dict comprehensions, the collections module, and tackle a data analysis challenge.",
-      "meta": {
-        "title": "Mastering Data Analysis with Python",
-        "description": "Dive into data analysis with Python, exploring various containers, comprehensions, and collections to solve real-world problems.",
-        "keywords": "data structures, python, comprehensions, collections, data analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preliminaries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python File Content and History",
-                "file": "verify1.sh",
-                "hint": "Please write the code in step 1 in the 'readport.py' file and print the read data in the python shell.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["readport.py"]
-          },
-          {
-            "title": "Comprehensions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python History Contains Sum Operation",
-                "file": "verify2.sh",
-                "hint": "Please execute the python program statement in step 2.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Collections",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Python Collections and Append Usage",
-                "file": "verify3.sh",
-                "hint": "Please execute the python program statement in step 3.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Data Analysis Challenge",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Python History Commands Usage",
-                "file": "verify4.sh",
-                "hint": "Please answer the four questions in step 4 in the python shell.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["cta.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "各种数据分析问题",
-      "description": "在本实验中，你将使用各种容器、列表/集合/字典推导式、collections模块，并应对一个数据分析挑战。",
-      "meta": {
-        "title": "用Python掌握数据分析",
-        "description": "深入学习用Python进行数据分析，探索各种容器、推导式和集合以解决实际问题。",
-        "keywords": "数据结构, Python, 推导式, 集合, 数据分析"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "准备工作",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python文件内容和历史记录",
-                "file": "verify1.sh",
-                "hint": "请在'readport.py'文件中编写步骤1中的代码，并在Python shell中打印读取的数据。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["readport.py"]
-          },
-          {
-            "title": "推导式",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证Python历史记录中包含求和操作",
-                "file": "verify2.sh",
-                "hint": "请执行步骤2中的Python程序语句。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/python_shell",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "集合",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证Python集合及追加操作的使用",
-                "file": "verify3.sh",
-                "hint": "请执行步骤3中的Python程序语句。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "数据分析挑战",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "验证Python历史命令的使用",
-                "file": "verify4.sh",
-                "hint": "请在Python shell中回答步骤4中的四个问题。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["cta.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Preliminaries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python File Content and History",
+            "file": "verify1.sh",
+            "hint": "Please write the code in step 1 in the 'readport.py' file and print the read data in the python shell.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["readport.py"]
+      },
+      {
+        "title": "Comprehensions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python History Contains Sum Operation",
+            "file": "verify2.sh",
+            "hint": "Please execute the python program statement in step 2.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/python_shell",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Collections",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Python Collections and Append Usage",
+            "file": "verify3.sh",
+            "hint": "Please execute the python program statement in step 3.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Data Analysis Challenge",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Python History Commands Usage",
+            "file": "verify4.sh",
+            "hint": "Please answer the four questions in step 4 in the python shell.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["cta.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -311,5 +160,84 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "各种数据分析问题",
+      "description": "在本实验中，你将使用各种容器、列表/集合/字典推导式、collections模块，并应对一个数据分析挑战。",
+      "meta": {
+        "title": "用Python掌握数据分析",
+        "description": "深入学习用Python进行数据分析，探索各种容器、推导式和集合以解决实际问题。",
+        "keywords": "数据结构, Python, 推导式, 集合, 数据分析"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "准备工作",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python文件内容和历史记录",
+                "file": "verify1.sh",
+                "hint": "请在'readport.py'文件中编写步骤1中的代码，并在Python shell中打印读取的数据。"
+              }
+            ],
+            "solutions": ["readport.py"]
+          },
+          {
+            "title": "推导式",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证Python历史记录中包含求和操作",
+                "file": "verify2.sh",
+                "hint": "请执行步骤2中的Python程序语句。"
+              }
+            ]
+          },
+          {
+            "title": "集合",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证Python集合及追加操作的使用",
+                "file": "verify3.sh",
+                "hint": "请执行步骤3中的Python程序语句。"
+              }
+            ]
+          },
+          {
+            "title": "数据分析挑战",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证Python历史命令的使用",
+                "file": "verify4.sh",
+                "hint": "请在Python shell中回答步骤4中的四个问题。"
+              }
+            ],
+            "solutions": ["cta.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

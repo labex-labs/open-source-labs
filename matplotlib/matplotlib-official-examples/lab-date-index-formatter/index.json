@@ -1,10 +1,139 @@
 {
   "type": "lab",
+  "title": "Custom Tick Formatter for Time Series",
+  "description": "When plotting daily data such as financial time series, one often wants to leave out days on which there is no data, such as weekends. This allows the data to be plotted at regular intervals without extra spaces for the days with no data. In this lab, we will learn how to use an 'index formatter' to achieve the desired plot.",
+  "meta": {
+    "title": "Learn Data Visualization | Financial Time Series Analysis",
+    "description": "Explore how to plot daily financial data with missing values using an index formatter in this Python programming tutorial.",
+    "keywords": "data visualization, financial time series, Python, Matplotlib, Jupyter Notebook"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries and Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Plotting Data with Default Gaps on Weekends",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "python/comments",
+          "python/for_loops",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Creating Custom Index Formatter",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/date_time",
+          "python/function_definition",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Using a Callable for Formatter",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/classes_objects",
+          "python/comments",
+          "python/constructor",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/polymorphism",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Displaying the Plot",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "date-index-formatter.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,129 +144,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Custom Tick Formatter for Time Series",
-      "description": "When plotting daily data such as financial time series, one often wants to leave out days on which there is no data, such as weekends. This allows the data to be plotted at regular intervals without extra spaces for the days with no data. In this lab, we will learn how to use an 'index formatter' to achieve the desired plot.",
-      "meta": {
-        "title": "Learn Data Visualization | Financial Time Series Analysis",
-        "description": "Explore how to plot daily financial data with missing values using an index formatter in this Python programming tutorial.",
-        "keywords": "data visualization, financial time series, Python, Matplotlib, Jupyter Notebook"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries and Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Plotting Data with Default Gaps on Weekends",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Creating Custom Index Formatter",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/date_time",
-              "python/function_definition",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Using a Callable for Formatter",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Displaying the Plot",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "时间序列的自定义刻度格式化器",
@@ -158,15 +164,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing"
             ]
           },
           {
@@ -178,15 +175,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -198,17 +186,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/date_time",
-              "python/function_definition",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -220,21 +197,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -246,13 +208,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -261,16 +221,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "date-index-formatter.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

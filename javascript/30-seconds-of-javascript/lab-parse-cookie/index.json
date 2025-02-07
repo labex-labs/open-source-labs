@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Parsing HTTP Cookies in JavaScript",
+  "description": "In this lab, we will dive into the topic of parsing HTTP cookies in JavaScript. The purpose of this lab is to provide a hands-on experience of how to extract and organize cookie data from an HTTP header string. By the end of this lab, you will have a clear understanding of how to use the parseCookie function to create an object containing all cookie name-value pairs.",
+  "meta": {
+    "title": "Parsing HTTP Cookies in JavaScript | Hands-On Tutorial",
+    "description": "Learn how to extract and organize cookie data from an HTTP header string using JavaScript. Dive into the practical implementation of the parseCookie function.",
+    "keywords": "JavaScript, HTTP Cookies, Parsing, Cookie Extraction, Web Development"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Parse Cookie",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Parsing HTTP Cookies in JavaScript",
-      "description": "In this lab, we will dive into the topic of parsing HTTP cookies in JavaScript. The purpose of this lab is to provide a hands-on experience of how to extract and organize cookie data from an HTTP header string. By the end of this lab, you will have a clear understanding of how to use the parseCookie function to create an object containing all cookie name-value pairs.",
-      "meta": {
-        "title": "Parsing HTTP Cookies in JavaScript | Hands-On Tutorial",
-        "description": "Learn how to extract and organize cookie data from an HTTP header string using JavaScript. Dive into the practical implementation of the parseCookie function.",
-        "keywords": "JavaScript, HTTP Cookies, Parsing, Cookie Extraction, Web Development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Parse Cookie",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 JavaScript 中解析 HTTP Cookie",
@@ -77,24 +74,13 @@
               {
                 "name": "验证 Node 命令用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按回车键可以运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按回车键可以运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

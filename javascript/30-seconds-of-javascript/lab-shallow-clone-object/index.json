@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Shallow Clone Object",
+  "description": "In this lab, we will explore the concept of shallow cloning in JavaScript. Shallow cloning creates a new object with all of the properties of the original object, but the properties themselves are not cloned. Instead, they are copied by reference, which means that any changes made to the properties of the original object will also be reflected in the cloned object. Through this lab, we will understand how to create shallow clones of objects using the Object.assign() method in JavaScript.",
+  "meta": {
+    "title": "Shallow Clone Object in JavaScript",
+    "description": "Learn how to create shallow clones of objects using the Object.assign() method in JavaScript.",
+    "keywords": "object cloning, shallow clone, javascript, javascript practice, javascript practice online, javascript lab, javascript tutor, object assign"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Shallow Clone Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Shallow Clone Object",
-      "description": "In this lab, we will explore the concept of shallow cloning in JavaScript. Shallow cloning creates a new object with all of the properties of the original object, but the properties themselves are not cloned. Instead, they are copied by reference, which means that any changes made to the properties of the original object will also be reflected in the cloned object. Through this lab, we will understand how to create shallow clones of objects using the Object.assign() method in JavaScript.",
-      "meta": {
-        "title": "Shallow Clone Object in JavaScript",
-        "description": "Learn how to create shallow clones of objects using the Object.assign() method in JavaScript.",
-        "keywords": "object cloning, shallow clone, javascript, javascript practice, javascript practice online, javascript lab, javascript tutor, object assign"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Shallow Clone Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "浅克隆对象",
@@ -76,23 +73,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

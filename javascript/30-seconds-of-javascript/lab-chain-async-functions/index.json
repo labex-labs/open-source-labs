@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Chain Async Functions",
+  "description": "In this lab, we will explore how to chain asynchronous functions in JavaScript. We will learn how to loop through an array of functions containing asynchronous events and call the next function when each event has completed. By the end of the lab, you will be able to efficiently execute a series of asynchronous operations in a specific order.",
+  "meta": {
+    "title": "Chain Async Functions: Mastering Asynchronous JavaScript",
+    "description": "Learn how to efficiently execute a series of asynchronous operations in a specific order using JavaScript.",
+    "keywords": "javascript, asynchronous, javascript practice, javascript practice online, functions, javascript lab, javascript tutor, async, chaining"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Chain Async Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Execution",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/async_prog",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/debugging",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Chain Async Functions",
-      "description": "In this lab, we will explore how to chain asynchronous functions in JavaScript. We will learn how to loop through an array of functions containing asynchronous events and call the next function when each event has completed. By the end of the lab, you will be able to efficiently execute a series of asynchronous operations in a specific order.",
-      "meta": {
-        "title": "Chain Async Functions: Mastering Asynchronous JavaScript",
-        "description": "Learn how to efficiently execute a series of asynchronous operations in a specific order using JavaScript.",
-        "keywords": "javascript, asynchronous, javascript practice, javascript practice online, functions, javascript lab, javascript tutor, async, chaining"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Chain Async Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Execution",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/async_prog",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "链式调用异步函数",
@@ -77,24 +74,13 @@
               {
                 "name": "验证Node命令的执行",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/async_prog",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/debugging",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

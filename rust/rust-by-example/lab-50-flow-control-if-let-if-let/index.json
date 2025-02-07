@@ -1,10 +1,56 @@
 {
   "type": "lab",
+  "title": "Exploring Rust's if let Construct",
+  "description": "In this lab, we explore the usage of the if let construct in Rust, which allows for cleaner code when matching enums and provides the ability to specify failure options. We also demonstrate how if let can be used to match any enum value, including non-parameterized variants. Additionally, we provide an example of fixing code that attempts to compare two enum values by using if let instead.",
+  "meta": {
+    "title": "Exploring Rust's Powerful if let Construct",
+    "description": "Learn how to use the powerful if let construct in Rust to write cleaner code and handle enum matching with ease.",
+    "keywords": "matching, rust playground, enum, rust online compiler, rust tutor, rust commands, rust practice, rust online playground, rust online, programming"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "if let",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/boolean_type",
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/shadowing",
+          "rust/string_type",
+          "rust/struct_def",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,55 +61,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Rust's if let Construct",
-      "description": "In this lab, we explore the usage of the if let construct in Rust, which allows for cleaner code when matching enums and provides the ability to specify failure options. We also demonstrate how if let can be used to match any enum value, including non-parameterized variants. Additionally, we provide an example of fixing code that attempts to compare two enum values by using if let instead.",
-      "meta": {
-        "title": "Exploring Rust's Powerful if let Construct",
-        "description": "Learn how to use the powerful if let construct in Rust to write cleaner code and handle enum matching with ease.",
-        "keywords": "matching, rust playground, enum, rust online compiler, rust tutor, rust commands, rust practice, rust online playground, rust online, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "if let",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/shadowing",
-              "rust/string_type",
-              "rust/struct_def",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索 Rust 的 if let 结构",
@@ -82,29 +79,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/shadowing",
-              "rust/string_type",
-              "rust/struct_def",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,55 @@
 {
   "type": "lab",
+  "title": "Parallel Data Processing in Rust",
+  "description": "In this lab, the Rust programming language is explored for its ability to parallelize data processing using a map-reduce algorithm. The example code calculates the sum of all digits in a block of numbers by dividing the data into segments and processing each segment in a separate thread. The Rust standard library provides threading primitives that prevent data races and guarantee thread safety. The program also demonstrates Rust's understanding of passing read-only references across thread boundaries. Additionally, the code showcases the use of closures, iterators, and the join() method to combine the intermediate results of each thread into a final sum. To ensure efficiency, the program can be modified to chunk the data into a limited number of segments, rather than depending on user-inputted data that may lead to an excessive number of threads.",
+  "meta": {
+    "title": "Rust Programming | Parallel Data Processing | Map-Reduce Algorithm",
+    "description": "Explore Rust's ability to parallelize data processing using a map-reduce algorithm. Calculate the sum of digits in a block of numbers by dividing the data into segments and processing each segment in a separate thread.",
+    "keywords": "Rust, Parallel Processing, Map-Reduce, Multithreading, Data Processing, Digit Sum"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Testcase: map-reduce",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/error_propagation",
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +60,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Parallel Data Processing in Rust",
-      "description": "In this lab, the Rust programming language is explored for its ability to parallelize data processing using a map-reduce algorithm. The example code calculates the sum of all digits in a block of numbers by dividing the data into segments and processing each segment in a separate thread. The Rust standard library provides threading primitives that prevent data races and guarantee thread safety. The program also demonstrates Rust's understanding of passing read-only references across thread boundaries. Additionally, the code showcases the use of closures, iterators, and the join() method to combine the intermediate results of each thread into a final sum. To ensure efficiency, the program can be modified to chunk the data into a limited number of segments, rather than depending on user-inputted data that may lead to an excessive number of threads.",
-      "meta": {
-        "title": "Rust Programming | Parallel Data Processing | Map-Reduce Algorithm",
-        "description": "Explore Rust's ability to parallelize data processing using a map-reduce algorithm. Calculate the sum of digits in a block of numbers by dividing the data into segments and processing each segment in a separate thread.",
-        "keywords": "Rust, Parallel Processing, Map-Reduce, Multithreading, Data Processing, Digit Sum"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Testcase: map-reduce",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/error_propagation",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 中的并行数据处理",
@@ -81,28 +78,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/error_propagation",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

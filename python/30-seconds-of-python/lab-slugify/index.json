@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Convert Strings to URL-Friendly Slugs",
+  "description": "In this lab, you will learn how to create a function that converts a string to a URL-friendly slug by performing operations such as converting to lowercase, removing special characters, and replacing whitespace, hyphens, and underscores with a single hyphen.",
+  "meta": {
+    "title": "URL Slugs | Web Development",
+    "description": "Learn how to create URL-friendly slugs for your web content and improve SEO with this programming tutorial.",
+    "keywords": "URL slugs, web development, SEO, string manipulation, Python"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "String to Slug Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Slugify Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/regular_expressions",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_slugify.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "slugify.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Convert Strings to URL-Friendly Slugs",
-      "description": "In this lab, you will learn how to create a function that converts a string to a URL-friendly slug by performing operations such as converting to lowercase, removing special characters, and replacing whitespace, hyphens, and underscores with a single hyphen.",
-      "meta": {
-        "title": "URL Slugs | Web Development",
-        "description": "Learn how to create URL-friendly slugs for your web content and improve SEO with this programming tutorial.",
-        "keywords": "URL slugs, web development, SEO, string manipulation, Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "String to Slug Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Slugify Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/regular_expressions",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将字符串转换为对URL友好的Slug",
@@ -78,25 +89,13 @@
               {
                 "name": "验证Slugify Python脚本的执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/regular_expressions",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_slugify.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "slugify.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

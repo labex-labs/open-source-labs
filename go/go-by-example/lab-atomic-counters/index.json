@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Atomic Counters in Concurrent Go",
+  "description": "This lab focuses on managing state in Go using the sync/atomic package for atomic counters accessed by multiple goroutines.",
+  "meta": {
+    "title": "Go Programming | Atomic Counters | Concurrency Management",
+    "description": "Learn how to manage state in Go using the sync/atomic package for atomic counters accessed by multiple goroutines. Explore concurrency techniques and avoid data race issues.",
+    "keywords": "Go Programming, Atomic Counters, Concurrency, Goroutines, sync/atomic, State Management"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Atomic Counters",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Atomic Counters Reach 50,000 Operations",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/atomic"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "atomic-counters.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Atomic Counters in Concurrent Go",
-      "description": "This lab focuses on managing state in Go using the sync/atomic package for atomic counters accessed by multiple goroutines.",
-      "meta": {
-        "title": "Go Programming | Atomic Counters | Concurrency Management",
-        "description": "Learn how to manage state in Go using the sync/atomic package for atomic counters accessed by multiple goroutines. Explore concurrency techniques and avoid data race issues.",
-        "keywords": "Go Programming, Atomic Counters, Concurrency, Goroutines, sync/atomic, State Management"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Atomic Counters",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Atomic Counters Reach 50,000 Operations",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/atomic"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言并发中的原子计数器",
@@ -70,17 +76,13 @@
               {
                 "name": "验证原子计数器达到50000次操作",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/atomic"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "atomic-counters.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

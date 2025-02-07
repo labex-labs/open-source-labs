@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Agglomerative Clustering Metrics",
+  "description": "Agglomerative clustering is a hierarchical clustering method used to group similar objects together. It starts with each object as its own cluster, and then iteratively merges the most similar clusters together until a stopping criterion is met. In this lab, we will demonstrate the effect of different metrics on the hierarchical clustering using agglomerative clustering algorithm.",
+  "meta": {
+    "title": "Agglomerative Clustering Metrics: Hierarchical Clustering Techniques",
+    "description": "Explore the impact of different metrics on agglomerative clustering, a hierarchical clustering method, using waveform data.",
+    "keywords": "machine learning, waveform data, agglomerative clustering, scikit-learn, machine learning playground, scikit-learn playground, clustering metrics, data analysis, hierarchical clustering"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import libraries and generate waveform data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
+      },
+      {
+        "title": "Plot the ground-truth labeling",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot the distances",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot clustering results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-agglomerative-clustering-metrics.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Agglomerative Clustering Metrics",
-      "description": "Agglomerative clustering is a hierarchical clustering method used to group similar objects together. It starts with each object as its own cluster, and then iteratively merges the most similar clusters together until a stopping criterion is met. In this lab, we will demonstrate the effect of different metrics on the hierarchical clustering using agglomerative clustering algorithm.",
-      "meta": {
-        "title": "Agglomerative Clustering Metrics: Hierarchical Clustering Techniques",
-        "description": "Explore the impact of different metrics on agglomerative clustering, a hierarchical clustering method, using waveform data.",
-        "keywords": "machine learning, waveform data, agglomerative clustering, scikit-learn, machine learning playground, scikit-learn playground, clustering metrics, data analysis, hierarchical clustering"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import libraries and generate waveform data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
-          },
-          {
-            "title": "Plot the ground-truth labeling",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot the distances",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot clustering results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "凝聚聚类度量",
@@ -106,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster", "sklearn/metrics"]
+            ]
           },
           {
             "title": "绘制真实标签",
@@ -118,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制距离",
@@ -130,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制聚类结果",
@@ -142,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-agglomerative-clustering-metrics.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

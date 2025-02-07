@@ -1,10 +1,58 @@
 {
   "type": "lab",
+  "title": "Capitalize First Letter In Words",
+  "description": "In Python, we can capitalize the first letter of every word in a string using a built-in function. In this challenge, you will be asked to write a function that takes a string as an argument and returns a new string with the first letter of every word capitalized.",
+  "meta": {
+    "title": "Python | Capitalize Every Word | Programming Tutorials",
+    "description": "Learn how to capitalize the first letter of every word in a Python string using a built-in function. Improve your programming skills with this helpful tutorial.",
+    "keywords": "Python, Capitalize, String, Programming, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Capitalize Every Word",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Capitalize Every Word",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/comments", "python/function_definition"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_capitalize_every_word.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "capitalize_every_word.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +63,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Capitalize First Letter In Words",
-      "description": "In Python, we can capitalize the first letter of every word in a string using a built-in function. In this challenge, you will be asked to write a function that takes a string as an argument and returns a new string with the first letter of every word capitalized.",
-      "meta": {
-        "title": "Python | Capitalize Every Word | Programming Tutorials",
-        "description": "Learn how to capitalize the first letter of every word in a Python string using a built-in function. Improve your programming skills with this helpful tutorial.",
-        "keywords": "Python, Capitalize, String, Programming, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Capitalize Every Word",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Capitalize Every Word",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/comments", "python/function_definition"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将单词首字母大写",
@@ -70,17 +81,13 @@
               {
                 "name": "验证每个单词首字母大写",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["python/comments", "python/function_definition"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,21 +96,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_capitalize_every_word.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "capitalize_every_word.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

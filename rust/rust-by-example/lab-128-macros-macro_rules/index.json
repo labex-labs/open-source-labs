@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Rust Metaprogramming with Macros",
+  "description": "In this lab, we will explore the powerful macro system provided by Rust, which allows for metaprogramming by expanding macros into abstract syntax trees. The macro_rules! macro is used to create macros, and they are distinguished from functions by their ending bang !. Macros are useful for avoiding code repetition, creating domain-specific languages, and defining variadic interfaces for functions that can take a variable number of arguments.",
+  "meta": {
+    "title": "Mastering Rust Metaprogramming with Macros",
+    "description": "Explore the powerful macro system in Rust and learn how to use metaprogramming techniques to enhance your code.",
+    "keywords": "rust playground, metaprogramming, domain specific languages, rust tutor, rust online compiler, rust commands, macros, rust practice, variadic interfaces, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "macro_rules!",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["rust/expressions_statements", "rust/function_syntax"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Metaprogramming with Macros",
-      "description": "In this lab, we will explore the powerful macro system provided by Rust, which allows for metaprogramming by expanding macros into abstract syntax trees. The macro_rules! macro is used to create macros, and they are distinguished from functions by their ending bang !. Macros are useful for avoiding code repetition, creating domain-specific languages, and defining variadic interfaces for functions that can take a variable number of arguments.",
-      "meta": {
-        "title": "Mastering Rust Metaprogramming with Macros",
-        "description": "Explore the powerful macro system in Rust and learn how to use metaprogramming techniques to enhance your code.",
-        "keywords": "rust playground, metaprogramming, domain specific languages, rust tutor, rust online compiler, rust commands, macros, rust practice, variadic interfaces, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "macro_rules!",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用宏进行 Rust 元编程",
@@ -70,17 +67,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

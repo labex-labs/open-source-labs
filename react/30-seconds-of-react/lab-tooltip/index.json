@@ -1,136 +1,63 @@
 {
   "type": "lab",
+  "title": "Creating Customizable React Tooltips",
+  "description": "In this lab, we will learn how to create a tooltip component in React using state and event handlers. Tooltips are small pop-up boxes that appear when the user hovers over an element, providing additional information. By the end of the lab, you will be able to create customizable tooltips that can be easily integrated into your React applications.",
+  "meta": {
+    "title": "Create Customizable Tooltips in React | Web Development",
+    "description": "Learn how to build a reusable tooltip component in React using state and event handlers. Enhance your web applications with informative tooltips.",
+    "keywords": "React, Tooltip, Web Development, User Interface, JavaScript"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "contributors": ["Lotus-7"],
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Customizable React Tooltips",
-      "description": "In this lab, we will learn how to create a tooltip component in React using state and event handlers. Tooltips are small pop-up boxes that appear when the user hovers over an element, providing additional information. By the end of the lab, you will be able to create customizable tooltips that can be easily integrated into your React applications.",
-      "meta": {
-        "title": "Create Customizable Tooltips in React | Web Development",
-        "description": "Learn how to build a reusable tooltip component in React using state and event handlers. Enhance your web applications with informative tooltips.",
-        "keywords": "React, Tooltip, Web Development, User Interface, JavaScript"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Tooltip",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of script.js modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "react/conditional_render",
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/use_state_reducer"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "创建可定制的 React 工具提示",
-      "description": "在本实验中，我们将学习如何使用状态和事件处理程序在 React 中创建一个工具提示组件。工具提示是当用户将鼠标悬停在某个元素上时出现的小弹出框，用于提供额外信息。在本实验结束时，你将能够创建可定制的工具提示，并轻松将其集成到你的 React 应用程序中。",
-      "meta": {
-        "title": "在 React 中创建可定制工具提示 | 网页开发",
-        "description": "学习如何使用状态和事件处理程序在 React 中构建一个可复用的工具提示组件。通过信息丰富的工具提示增强你的网页应用程序。",
-        "keywords": "React, 工具提示, 网页开发, 用户界面, JavaScript"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "工具提示",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证网络服务的运行状态",
-                "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”以在端口8080上运行网络服务。然后，你可以刷新**Web 8080**标签页以预览网页。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证script.js修改状态",
-                "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证style.css修改状态",
-                "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "react/conditional_render",
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/use_state_reducer"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Tooltip",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of script.js modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "react/conditional_render",
+          "react/event_handling",
+          "react/hooks",
+          "react/jsx",
+          "react/use_state_reducer"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -150,5 +77,59 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "创建可定制的 React 工具提示",
+      "description": "在本实验中，我们将学习如何使用状态和事件处理程序在 React 中创建一个工具提示组件。工具提示是当用户将鼠标悬停在某个元素上时出现的小弹出框，用于提供额外信息。在本实验结束时，你将能够创建可定制的工具提示，并轻松将其集成到你的 React 应用程序中。",
+      "meta": {
+        "title": "在 React 中创建可定制工具提示 | 网页开发",
+        "description": "学习如何使用状态和事件处理程序在 React 中构建一个可复用的工具提示组件。通过信息丰富的工具提示增强你的网页应用程序。",
+        "keywords": "React, 工具提示, 网页开发, 用户界面, JavaScript"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "工具提示",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行网络服务。然后，你可以刷新**Web 8080**标签页以预览网页。"
+              },
+              {
+                "name": "验证script.js修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。"
+              },
+              {
+                "name": "验证style.css修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,10 +1,108 @@
 {
   "type": "lab",
+  "title": "Matplotlib Fill Between",
+  "description": "Matplotlib is a data visualization library in Python programming language. It is used to create static, animated, and interactive visualizations in Python. In this lab, you will learn how to use fill_between function from Matplotlib to fill the area between two lines.",
+  "meta": {
+    "title": "Matplotlib Fill Between: Visualizing Data with Confidence Bands",
+    "description": "Learn how to use Matplotlib's fill_between function to fill the area between two lines and create confidence bands for data visualization.",
+    "keywords": "matplotlib, python, data visualization, fill between, confidence bands"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Usage",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/fill_between",
+          "python/booleans",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Confidence Bands",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/fill_between",
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Selectively Filling Horizontal Regions",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/fill_between",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Selectively Marking Horizontal Regions Across the Whole Axes",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/fill_between",
+          "matplotlib/line_plots",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "fill-between-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,98 +113,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Fill Between",
-      "description": "Matplotlib is a data visualization library in Python programming language. It is used to create static, animated, and interactive visualizations in Python. In this lab, you will learn how to use fill_between function from Matplotlib to fill the area between two lines.",
-      "meta": {
-        "title": "Matplotlib Fill Between: Visualizing Data with Confidence Bands",
-        "description": "Learn how to use Matplotlib's fill_between function to fill the area between two lines and create confidence bands for data visualization.",
-        "keywords": "matplotlib, python, data visualization, fill between, confidence bands"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Basic Usage",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "python/booleans",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Confidence Bands",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Selectively Filling Horizontal Regions",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Selectively Marking Horizontal Regions Across the Whole Axes",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/line_plots",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib填充两条线之间的区域",
@@ -127,11 +133,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "python/booleans",
-              "python/tuples"
             ]
           },
           {
@@ -143,14 +144,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -162,13 +155,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -180,17 +166,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/line_plots",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -199,16 +179,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "fill-between-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

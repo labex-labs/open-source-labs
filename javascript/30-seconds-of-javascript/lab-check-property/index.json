@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Validate Object Properties with Curried Functions",
+  "description": "In this lab, we will explore the checkProp function in JavaScript. This function takes in a predicate function and a property name, and returns a curried function that checks if the property value satisfies the predicate for a given object. We will learn how to use this function to efficiently validate object properties and create flexible and reusable code.",
+  "meta": {
+    "title": "JavaScript Property Checker | Functional Programming",
+    "description": "Explore the checkProp function in JavaScript to efficiently validate object properties and create flexible, reusable code.",
+    "keywords": "JavaScript, property checker, functional programming, object validation, reusable code"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Check Property",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student's Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/obj_manip",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Validate Object Properties with Curried Functions",
-      "description": "In this lab, we will explore the checkProp function in JavaScript. This function takes in a predicate function and a property name, and returns a curried function that checks if the property value satisfies the predicate for a given object. We will learn how to use this function to efficiently validate object properties and create flexible and reusable code.",
-      "meta": {
-        "title": "JavaScript Property Checker | Functional Programming",
-        "description": "Explore the checkProp function in JavaScript to efficiently validate object properties and create flexible, reusable code.",
-        "keywords": "JavaScript, property checker, functional programming, object validation, reusable code"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Check Property",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student's Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/obj_manip",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用柯里化函数验证对象属性",
@@ -77,24 +74,13 @@
               {
                 "name": "验证学生对 Node 命令的使用",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/obj_manip",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

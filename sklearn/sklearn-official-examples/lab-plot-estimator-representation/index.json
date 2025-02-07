@@ -1,10 +1,70 @@
 {
   "type": "lab",
+  "title": "Scikit-Learn Estimators and Pipelines",
+  "description": "In this lab, we will learn about different ways to display estimators and pipelines using scikit-learn. Estimators and pipelines are an essential part of the scikit-learn package, allowing us to build and evaluate machine learning models.",
+  "meta": {
+    "title": "Scikit-Learn Estimators and Pipelines | Machine Learning",
+    "description": "Learn how to display estimators and pipelines using scikit-learn, an essential part of building and evaluating machine learning models.",
+    "keywords": "scikit-learn, estimators, pipelines, machine learning, data science"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Compact Text Representation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/linear_model"]
+      },
+      {
+        "title": "Rich HTML Representation",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/compose",
+          "sklearn/impute",
+          "sklearn/linear_model",
+          "sklearn/pipeline",
+          "sklearn/preprocessing"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-estimator-representation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,60 +75,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Scikit-Learn Estimators and Pipelines",
-      "description": "In this lab, we will learn about different ways to display estimators and pipelines using scikit-learn. Estimators and pipelines are an essential part of the scikit-learn package, allowing us to build and evaluate machine learning models.",
-      "meta": {
-        "title": "Scikit-Learn Estimators and Pipelines | Machine Learning",
-        "description": "Learn how to display estimators and pipelines using scikit-learn, an essential part of building and evaluating machine learning models.",
-        "keywords": "scikit-learn, estimators, pipelines, machine learning, data science"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Compact Text Representation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
-          },
-          {
-            "title": "Rich HTML Representation",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/impute",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Scikit - 学习估计器和管道",
@@ -89,8 +95,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
+            ]
           },
           {
             "title": "丰富的HTML表示",
@@ -101,20 +106,11 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/compose",
-              "sklearn/impute",
-              "sklearn/linear_model",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -123,16 +119,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-estimator-representation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

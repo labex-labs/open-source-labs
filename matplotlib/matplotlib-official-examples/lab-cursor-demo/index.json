@@ -1,10 +1,126 @@
 {
   "type": "lab",
+  "title": "Matplotlib Crosshair Cursor",
+  "description": "Matplotlib is a popular data visualization library that provides a wide range of tools for creating visualizations in Python. One of the interesting features of Matplotlib is the ability to add a crosshair cursor to a plot. In this lab, you will learn how to add a crosshair cursor to a Matplotlib plot.",
+  "meta": {
+    "title": "Mastering Matplotlib Crosshair Cursor",
+    "description": "Learn how to add a powerful crosshair cursor to your Matplotlib plots for enhanced data visualization.",
+    "keywords": "blitting, matplotlib, crosshair cursor, python, data visualization"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Simple Cursor",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/custom_backends",
+          "matplotlib/event_handling",
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/data_visualization",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/polymorphism",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Faster Cursoring using Blitting",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Snapping to Data Points",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/lists",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "cursor-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,116 +131,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Crosshair Cursor",
-      "description": "Matplotlib is a popular data visualization library that provides a wide range of tools for creating visualizations in Python. One of the interesting features of Matplotlib is the ability to add a crosshair cursor to a plot. In this lab, you will learn how to add a crosshair cursor to a Matplotlib plot.",
-      "meta": {
-        "title": "Mastering Matplotlib Crosshair Cursor",
-        "description": "Learn how to add a powerful crosshair cursor to your Matplotlib plots for enhanced data visualization.",
-        "keywords": "blitting, matplotlib, crosshair cursor, python, data visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Simple Cursor",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/custom_backends",
-              "matplotlib/event_handling",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/polymorphism",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Faster Cursoring using Blitting",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Snapping to Data Points",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 十字准线光标",
@@ -145,28 +151,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/custom_backends",
-              "matplotlib/event_handling",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_visualization",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/polymorphism",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -178,22 +162,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/tuples"
             ]
           },
           {
@@ -205,28 +173,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -235,16 +186,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "cursor-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

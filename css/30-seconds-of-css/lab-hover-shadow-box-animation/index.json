@@ -1,10 +1,82 @@
 {
   "type": "lab",
+  "title": "Hover Shadow Box Animation",
+  "description": "In this lab, we will explore various CSS concepts and techniques to enhance the visual appearance of web pages. Through hands-on exercises, we will learn how to create and modify CSS rules, apply styles to HTML elements, and use CSS selectors to target specific elements. By the end of the lab, you will have a solid understanding of how to use CSS to create visually appealing and responsive web pages.",
+  "meta": {
+    "title": "Enhance Web Pages with Stunning CSS Animations",
+    "description": "Learn how to create visually appealing and responsive web pages using CSS techniques like hover shadow box animation.",
+    "keywords": "css, css exercises, web design, hover, css practice, shadow box, css playground, css lab, animation"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Hover Shadow Box Animation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "css/animations",
+          "css/box_model",
+          "css/colors",
+          "css/display_property",
+          "css/margin_and_padding",
+          "css/pseudo_classes",
+          "css/selectors",
+          "css/transformations",
+          "css/transitions"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,67 +87,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Hover Shadow Box Animation",
-      "description": "In this lab, we will explore various CSS concepts and techniques to enhance the visual appearance of web pages. Through hands-on exercises, we will learn how to create and modify CSS rules, apply styles to HTML elements, and use CSS selectors to target specific elements. By the end of the lab, you will have a solid understanding of how to use CSS to create visually appealing and responsive web pages.",
-      "meta": {
-        "title": "Enhance Web Pages with Stunning CSS Animations",
-        "description": "Learn how to create visually appealing and responsive web pages using CSS techniques like hover shadow box animation.",
-        "keywords": "css, css exercises, web design, hover, css practice, shadow box, css playground, css lab, animation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Hover Shadow Box Animation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of index.html modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/animations",
-              "css/box_model",
-              "css/colors",
-              "css/display_property",
-              "css/margin_and_padding",
-              "css/pseudo_classes",
-              "css/selectors",
-              "css/transformations",
-              "css/transitions"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "悬停阴影框动画",
@@ -94,41 +105,23 @@
               {
                 "name": "验证Web服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”，在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“Go Live”，在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               },
               {
                 "name": "验证index.html的修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               },
               {
                 "name": "验证style.css的修改状态",
                 "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "css/animations",
-              "css/box_model",
-              "css/colors",
-              "css/display_property",
-              "css/margin_and_padding",
-              "css/pseudo_classes",
-              "css/selectors",
-              "css/transformations",
-              "css/transitions"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -137,21 +130,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

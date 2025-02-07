@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Go Interfaces Tutorial",
+  "description": "This lab is about interfaces in Golang. Interfaces are named collections of method signatures.",
+  "meta": {
+    "title": "Go Interfaces Tutorial: Implement Interfaces in Golang",
+    "description": "Learn how to implement interfaces in Go, including creating custom geometry interfaces, and using a generic measure function.",
+    "keywords": "interfaces, geometry, go, golang, go labs, go playground online, programming, go lab, go practice"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Interfaces",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Program Interfaces Output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/interfaces"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "interfaces.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Go Interfaces Tutorial",
-      "description": "This lab is about interfaces in Golang. Interfaces are named collections of method signatures.",
-      "meta": {
-        "title": "Go Interfaces Tutorial: Implement Interfaces in Golang",
-        "description": "Learn how to implement interfaces in Go, including creating custom geometry interfaces, and using a generic measure function.",
-        "keywords": "interfaces, geometry, go, golang, go labs, go playground online, programming, go lab, go practice"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Interfaces",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Program Interfaces Output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/interfaces"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言接口教程",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go程序接口输出",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/interfaces"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "interfaces.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

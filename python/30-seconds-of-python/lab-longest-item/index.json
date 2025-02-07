@@ -1,10 +1,65 @@
 {
   "type": "lab",
+  "title": "Longest Iterable Object Identification",
+  "description": "In this challenge, you will write a function that takes any number of iterable objects or objects with a length property and returns the longest one.",
+  "meta": {
+    "title": "Python Programming | Longest Item Challenge",
+    "description": "Learn how to write a Python function that finds the longest item in a set of iterable objects or objects with a length property.",
+    "keywords": "Python, programming, function, longest item, iterable, length"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Longest Item",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Longest Item Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_longest_item.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "longest_item.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +70,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Longest Iterable Object Identification",
-      "description": "In this challenge, you will write a function that takes any number of iterable objects or objects with a length property and returns the longest one.",
-      "meta": {
-        "title": "Python Programming | Longest Item Challenge",
-        "description": "Learn how to write a Python function that finds the longest item in a set of iterable objects or objects with a length property.",
-        "keywords": "Python, programming, function, longest item, iterable, length"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Longest Item",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Longest Item Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "识别最长的可迭代对象",
@@ -77,24 +88,13 @@
               {
                 "name": "验证最长元素Python脚本的执行",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -103,21 +103,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_longest_item.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "longest_item.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

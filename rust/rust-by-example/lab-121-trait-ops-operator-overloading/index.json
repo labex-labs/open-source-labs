@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Operator Overloading in Rust",
+  "description": "In this lab, we explore operator overloading in Rust and how it can be achieved through traits. Operators in Rust can be overloaded using traits, which allows them to perform different tasks based on their input arguments. The + operator, for example, is syntactic sugar for the add method and can be used by any implementor of the Add trait. The traits that overload operators, including Add, can be found in core::ops. The provided Rust code demonstrates how to overload the + operator for custom types Foo and Bar, resulting in different output types FooBar and BarFoo respectively.",
+  "meta": {
+    "title": "Mastering Operator Overloading in Rust",
+    "description": "Explore the power of operator overloading in Rust and learn how to create custom types with unique behaviors.",
+    "keywords": "rust playground, software development, rust tutor, rust online compiler, operator overloading, rust commands, traits, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Operator Overloading",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/traits"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Operator Overloading in Rust",
-      "description": "In this lab, we explore operator overloading in Rust and how it can be achieved through traits. Operators in Rust can be overloaded using traits, which allows them to perform different tasks based on their input arguments. The + operator, for example, is syntactic sugar for the add method and can be used by any implementor of the Add trait. The traits that overload operators, including Add, can be found in core::ops. The provided Rust code demonstrates how to overload the + operator for custom types Foo and Bar, resulting in different output types FooBar and BarFoo respectively.",
-      "meta": {
-        "title": "Mastering Operator Overloading in Rust",
-        "description": "Explore the power of operator overloading in Rust and learn how to create custom types with unique behaviors.",
-        "keywords": "rust playground, software development, rust tutor, rust online compiler, operator overloading, rust commands, traits, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Operator Overloading",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 中的运算符重载",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/traits"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

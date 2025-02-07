@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Manipulating Arrays with dropRightWhile",
+  "description": "In this lab, we will learn how to remove elements from the end of an array based on a specified function. The dropRightWhile function will loop through the array and remove elements from the right until the function returns true. The remaining elements of the array will then be returned. This lab will help you understand how to manipulate arrays in JavaScript using higher-order functions.",
+  "meta": {
+    "title": "JavaScript Array Manipulation | Array Functions | Coding Tutorials",
+    "description": "Learn how to remove elements from the end of an array based on a specified function using the dropRightWhile function in JavaScript. Improve your array manipulation skills with this coding tutorial.",
+    "keywords": "JavaScript, Array, Manipulation, Functions, Coding, Tutorials"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Drop Array Elements From the Right Based on Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/loops",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Manipulating Arrays with dropRightWhile",
-      "description": "In this lab, we will learn how to remove elements from the end of an array based on a specified function. The dropRightWhile function will loop through the array and remove elements from the right until the function returns true. The remaining elements of the array will then be returned. This lab will help you understand how to manipulate arrays in JavaScript using higher-order functions.",
-      "meta": {
-        "title": "JavaScript Array Manipulation | Array Functions | Coding Tutorials",
-        "description": "Learn how to remove elements from the end of an array based on a specified function using the dropRightWhile function in JavaScript. Improve your array manipulation skills with this coding tutorial.",
-        "keywords": "JavaScript, Array, Manipulation, Functions, Coding, Tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Drop Array Elements From the Right Based on Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 dropRightWhile 操作数组",
@@ -77,24 +74,13 @@
               {
                 "name": "验证 Node 命令用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键可以运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键可以运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/loops",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

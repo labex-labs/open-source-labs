@@ -1,10 +1,102 @@
 {
   "type": "lab",
+  "title": "Matplotlib Text Object Concatenation",
+  "description": "In this lab, you will learn how to concatenate text objects with different properties using Matplotlib. Concatenation is the process of combining multiple text objects into a single string. This can be useful when creating annotations or labels for visualizations.",
+  "meta": {
+    "title": "Concatenating Matplotlib Text Objects",
+    "description": "Learn how to combine multiple text objects with different properties in Matplotlib visualizations.",
+    "keywords": "python playground, matplotlib, python, visualization, annotation, concatenation, text object"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create the First Text Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Create the Subsequent Text Objects",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/text_annotations",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Customize the Text Objects",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Display the Plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/matplotlib_config",
+          "matplotlib/text_annotations",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "rainbow-text.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,92 +107,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Text Object Concatenation",
-      "description": "In this lab, you will learn how to concatenate text objects with different properties using Matplotlib. Concatenation is the process of combining multiple text objects into a single string. This can be useful when creating annotations or labels for visualizations.",
-      "meta": {
-        "title": "Concatenating Matplotlib Text Objects",
-        "description": "Learn how to combine multiple text objects with different properties in Matplotlib visualizations.",
-        "keywords": "python playground, matplotlib, python, visualization, annotation, concatenation, text object"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create the First Text Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Create the Subsequent Text Objects",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/text_annotations",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Customize the Text Objects",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Display the Plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/matplotlib_config",
-              "matplotlib/text_annotations",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib文本对象拼接",
@@ -121,8 +127,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "创建后续文本对象",
@@ -133,11 +138,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/text_annotations",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -149,8 +149,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "显示图表",
@@ -161,24 +160,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/matplotlib_config",
-              "matplotlib/text_annotations",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/tuples",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -187,16 +173,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "rainbow-text.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

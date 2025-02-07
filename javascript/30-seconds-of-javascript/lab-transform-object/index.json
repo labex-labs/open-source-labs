@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Transforming Object Properties with JavaScript",
+  "description": "In this lab, we will explore the transform function in JavaScript which allows us to apply a specified function against an accumulator and each key in an object. By using Object.keys() and Array.prototype.reduce(), we can easily iterate over each key in an object and perform the desired transformation. This lab will provide hands-on experience with this useful function and demonstrate its practical applications in JavaScript programming.",
+  "meta": {
+    "title": "JavaScript Object Transformation | Programming Tutorial",
+    "description": "Explore the powerful JavaScript transform function to apply custom transformations to object keys and values. Hands-on experience for JavaScript developers.",
+    "keywords": "JavaScript, Object Transformation, Programming Tutorial, Data Manipulation, Functional Programming"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Transform Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Transforming Object Properties with JavaScript",
-      "description": "In this lab, we will explore the transform function in JavaScript which allows us to apply a specified function against an accumulator and each key in an object. By using Object.keys() and Array.prototype.reduce(), we can easily iterate over each key in an object and perform the desired transformation. This lab will provide hands-on experience with this useful function and demonstrate its practical applications in JavaScript programming.",
-      "meta": {
-        "title": "JavaScript Object Transformation | Programming Tutorial",
-        "description": "Explore the powerful JavaScript transform function to apply custom transformations to object keys and values. Hands-on experience for JavaScript developers.",
-        "keywords": "JavaScript, Object Transformation, Programming Tutorial, Data Manipulation, Functional Programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Transform Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 JavaScript 转换对象属性",
@@ -78,25 +75,13 @@
               {
                 "name": "在 Zsh 历史记录中验证 Node 命令",
                 "file": "verify1.sh",
-                "hint": "通过输入 'node' 并按 Enter 键，可以在终端/SSH 中运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入 'node' 并按 Enter 键，可以在终端/SSH 中运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

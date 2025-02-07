@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "JavaScript Variable Fundamentals",
+  "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to variables.",
+  "meta": {
+    "title": "JavaScript Variables | Introduction to Coding",
+    "description": "Discover the power of JavaScript variables and learn how to create, assign, and manipulate values in this comprehensive coding tutorial.",
+    "keywords": "JavaScript, Variables, Coding, Programming, Data Types, Containers, Dynamic Content"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Variables",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Executed",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["javascript/data_types", "javascript/variables"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mdn/content"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "JavaScript Variable Fundamentals",
-      "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to variables.",
-      "meta": {
-        "title": "JavaScript Variables | Introduction to Coding",
-        "description": "Discover the power of JavaScript variables and learn how to create, assign, and manipulate values in this comprehensive coding tutorial.",
-        "keywords": "JavaScript, Variables, Coding, Programming, Data Types, Containers, Dynamic Content"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Variables",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Executed",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["javascript/data_types", "javascript/variables"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "JavaScript 变量基础",
@@ -70,17 +76,13 @@
               {
                 "name": "验证已执行的 Node 命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH 中输入 'node' 并按回车键，可以运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH 中输入 'node' 并按回车键，可以运行 JavaScript。"
               }
-            ],
-            "skills": ["javascript/data_types", "javascript/variables"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

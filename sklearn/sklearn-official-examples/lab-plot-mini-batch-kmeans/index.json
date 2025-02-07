@@ -1,10 +1,99 @@
 {
   "type": "lab",
+  "title": "Comparing K-Means and MiniBatchKMeans",
+  "description": "In this lab, we will compare two clustering algorithms: K-Means and MiniBatchKMeans. K-Means is a popular clustering algorithm that is widely used in machine learning. MiniBatchKMeans is a variant of K-Means that is faster but gives slightly different results. We will cluster a set of data using both algorithms and plot the results. We will also plot the points that are labeled differently between the two algorithms.",
+  "meta": {
+    "title": "Machine Learning | Clustering Algorithms | K-Means vs MiniBatchKMeans",
+    "description": "Explore and compare two popular clustering algorithms, K-Means and MiniBatchKMeans, in this comprehensive machine learning tutorial. Learn how to generate data, cluster it, and analyze the results.",
+    "keywords": "machine learning, clustering, k-means, minibatchkmeans, data analysis, python"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate the Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Compute Clustering with KMeans",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/cluster"]
+      },
+      {
+        "title": "Compute Clustering with MiniBatchKMeans",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/cluster"]
+      },
+      {
+        "title": "Establishing Parity Between Clusters",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics"]
+      },
+      {
+        "title": "Plotting the Results",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-mini-batch-kmeans.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,89 +104,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Comparing K-Means and MiniBatchKMeans",
-      "description": "In this lab, we will compare two clustering algorithms: K-Means and MiniBatchKMeans. K-Means is a popular clustering algorithm that is widely used in machine learning. MiniBatchKMeans is a variant of K-Means that is faster but gives slightly different results. We will cluster a set of data using both algorithms and plot the results. We will also plot the points that are labeled differently between the two algorithms.",
-      "meta": {
-        "title": "Machine Learning | Clustering Algorithms | K-Means vs MiniBatchKMeans",
-        "description": "Explore and compare two popular clustering algorithms, K-Means and MiniBatchKMeans, in this comprehensive machine learning tutorial. Learn how to generate data, cluster it, and analyze the results.",
-        "keywords": "machine learning, clustering, k-means, minibatchkmeans, data analysis, python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate the Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Compute Clustering with KMeans",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster"]
-          },
-          {
-            "title": "Compute Clustering with MiniBatchKMeans",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster"]
-          },
-          {
-            "title": "Establishing Parity Between Clusters",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
-          },
-          {
-            "title": "Plotting the Results",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "比较K均值和MiniBatchKMeans",
@@ -118,8 +124,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "使用KMeans进行聚类计算",
@@ -130,8 +135,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster"]
+            ]
           },
           {
             "title": "使用MiniBatchKMeans进行聚类计算",
@@ -142,8 +146,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/cluster"]
+            ]
           },
           {
             "title": "建立聚类之间的对等关系",
@@ -154,8 +157,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
+            ]
           },
           {
             "title": "绘制结果",
@@ -166,13 +168,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -181,16 +181,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-mini-batch-kmeans.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

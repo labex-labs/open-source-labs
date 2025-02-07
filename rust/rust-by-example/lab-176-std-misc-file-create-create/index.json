@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Create File with Rust Standard Library",
+  "description": "In this lab, we have a create function that opens a file in write-only mode. It either creates a new file or destroys the old content if the file already exists. The function uses Rust's standard library to handle file operations. The example provided demonstrates how to use the create function to write the contents of a static LOREM_IPSUM string to a file named 'lorem_ipsum.txt'. The output shows a successful write operation confirmation, and the contents of the file are displayed using the cat command.",
+  "meta": {
+    "title": "Rust Programming Tutorials | File Handling",
+    "description": "Learn how to create files and write content to them using Rust's standard library. Explore file handling techniques and understand the usage of the create function.",
+    "keywords": "Rust, Programming, File Handling, File Creation, Write to File, Standard Library"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "create",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/panic_usage",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create File with Rust Standard Library",
-      "description": "In this lab, we have a create function that opens a file in write-only mode. It either creates a new file or destroys the old content if the file already exists. The function uses Rust's standard library to handle file operations. The example provided demonstrates how to use the create function to write the contents of a static LOREM_IPSUM string to a file named 'lorem_ipsum.txt'. The output shows a successful write operation confirmation, and the contents of the file are displayed using the cat command.",
-      "meta": {
-        "title": "Rust Programming Tutorials | File Handling",
-        "description": "Learn how to create files and write content to them using Rust's standard library. Explore file handling techniques and understand the usage of the create function.",
-        "keywords": "Rust, Programming, File Handling, File Creation, Write to File, Standard Library"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "create",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/panic_usage",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 Rust 标准库创建文件",
@@ -80,27 +77,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/panic_usage",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

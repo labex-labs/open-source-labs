@@ -1,398 +1,194 @@
 {
   "type": "lab",
+  "title": "Creating Functional Functions",
+  "description": "This section introduces the idea of using functions to create other functions.",
+  "meta": {
+    "title": "Python Functions | Function Returning Function",
+    "description": "Learn how to create functions that return other functions in Python, a powerful programming technique.",
+    "keywords": "python, functions, function returning function, programming, tutorial"
+  },
   "difficulty": "Beginner",
   "time": 45,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/practical-python"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Functional Functions",
-      "description": "This section introduces the idea of using functions to create other functions.",
-      "meta": {
-        "title": "Python Functions | Function Returning Function",
-        "description": "Learn how to create functions that return other functions in Python, a powerful programming technique.",
-        "keywords": "python, functions, function returning function, programming, tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Introduction",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Return Statement in Python History",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Local Variables",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Closures",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Using Closures",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Delayed Evaluation",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Python Import History",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Code Repetition",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Exercise 7.7: Using Closures to Avoid Repetition",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "Verify Presence of typedproperty Module",
-                "file": "verify7.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Exercise 7.8: Simplifying Function Calls",
-            "text": "en/step8.md",
-            "verify": [
-              {
-                "name": "Verify Lambda Function Presence in typedproperty.py",
-                "file": "verify8.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "创建函数式函数",
-      "description": "本节介绍使用函数来创建其他函数的概念。",
-      "meta": {
-        "title": "Python函数 | 返回函数的函数",
-        "description": "学习如何在Python中创建返回其他函数的函数，这是一种强大的编程技术。",
-        "keywords": "Python, 函数, 返回函数的函数, 编程, 教程"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "简介",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史中返回语句的存在",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "局部变量",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "闭包",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "使用闭包",
-            "text": "zh/step4.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "延迟求值",
-            "text": "zh/step5.md",
-            "verify": [
-              {
-                "name": "验证Python导入历史",
-                "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "代码重复",
-            "text": "zh/step6.md",
-            "verify": [
-              {
-                "name": "此步骤目前没有验证",
-                "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "练习7.7：使用闭包避免重复",
-            "text": "zh/step7.md",
-            "verify": [
-              {
-                "name": "验证typedproperty模块是否存在",
-                "file": "verify7.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "练习7.8：简化函数调用",
-            "text": "zh/step8.md",
-            "verify": [
-              {
-                "name": "验证typedproperty.py中是否存在lambda函数",
-                "file": "verify8.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Introduction",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Return Statement in Python History",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/function_definition",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Local Variables",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Closures",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Using Closures",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Delayed Evaluation",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Python Import History",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/sets",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Code Repetition",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Exercise 7.7: Using Closures to Avoid Repetition",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "Verify Presence of typedproperty Module",
+            "file": "verify7.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Exercise 7.8: Simplifying Function Calls",
+        "text": "en/step8.md",
+        "verify": [
+          {
+            "name": "Verify Lambda Function Presence in typedproperty.py",
+            "file": "verify8.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -437,5 +233,126 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/practical-python/blob/master/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/practical-python"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "创建函数式函数",
+      "description": "本节介绍使用函数来创建其他函数的概念。",
+      "meta": {
+        "title": "Python函数 | 返回函数的函数",
+        "description": "学习如何在Python中创建返回其他函数的函数，这是一种强大的编程技术。",
+        "keywords": "Python, 函数, 返回函数的函数, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "简介",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史中返回语句的存在",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "局部变量",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify2.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "闭包",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify3.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "使用闭包",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify4.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "延迟求值",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证Python导入历史",
+                "file": "verify5.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "代码重复",
+            "text": "zh/step6.md",
+            "verify": [
+              {
+                "name": "此步骤目前没有验证",
+                "file": "verify6.sh",
+                "hint": "此步骤目前没有验证"
+              }
+            ]
+          },
+          {
+            "title": "练习7.7：使用闭包避免重复",
+            "text": "zh/step7.md",
+            "verify": [
+              {
+                "name": "验证typedproperty模块是否存在",
+                "file": "verify7.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "练习7.8：简化函数调用",
+            "text": "zh/step8.md",
+            "verify": [
+              {
+                "name": "验证typedproperty.py中是否存在lambda函数",
+                "file": "verify8.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

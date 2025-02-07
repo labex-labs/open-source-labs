@@ -1,10 +1,145 @@
 {
   "type": "lab",
+  "title": "Code Debugging Techniques",
+  "description": "Code is never perfect. You will always have bugs. Code debugging is a skill you need to learn.",
+  "meta": {
+    "title": "Code Debugging | Programming Tutorials",
+    "description": "Discover the art of code debugging and learn essential tips to overcome programming challenges. Explore our comprehensive programming tutorials.",
+    "keywords": "code debugging, programming tutorials, bug fixing, troubleshooting, software development"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Debugging Tips",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/numeric_types", "python/variables_data_types"]
+      },
+      {
+        "title": "Reading Tracebacks",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/numeric_types",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Using the REPL",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/numeric_types", "python/variables_data_types"]
+      },
+      {
+        "title": "Debugging with Print",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/python_shell",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "The Python Debugger",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Run under debugger",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["python/standard_libraries"]
+      },
+      {
+        "title": "Exercise 8.4: Bugs? What Bugs?",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,144 +150,6 @@
     "repo": "https://github.com/dabeaz-course/practical-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Code Debugging Techniques",
-      "description": "Code is never perfect. You will always have bugs. Code debugging is a skill you need to learn.",
-      "meta": {
-        "title": "Code Debugging | Programming Tutorials",
-        "description": "Discover the art of code debugging and learn essential tips to overcome programming challenges. Explore our comprehensive programming tutorials.",
-        "keywords": "code debugging, programming tutorials, bug fixing, troubleshooting, software development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Debugging Tips",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/numeric_types", "python/variables_data_types"]
-          },
-          {
-            "title": "Reading Tracebacks",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/numeric_types",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Using the REPL",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/numeric_types", "python/variables_data_types"]
-          },
-          {
-            "title": "Debugging with Print",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "The Python Debugger",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Run under debugger",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["python/standard_libraries"]
-          },
-          {
-            "title": "Exercise 8.4: Bugs? What Bugs?",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "代码调试技巧",
@@ -171,12 +168,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/numeric_types", "python/variables_data_types"]
+            ]
           },
           {
             "title": "读取回溯信息",
@@ -185,15 +179,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/numeric_types",
-              "python/variables_data_types"
             ]
           },
           {
@@ -203,12 +190,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/numeric_types", "python/variables_data_types"]
+            ]
           },
           {
             "title": "使用打印语句进行调试",
@@ -217,19 +201,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/tuples",
-              "python/using_packages"
             ]
           },
           {
@@ -239,16 +212,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/standard_libraries"
             ]
           },
           {
@@ -258,12 +223,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/standard_libraries"]
+            ]
           },
           {
             "title": "练习8.4：错误？什么错误？",
@@ -272,17 +234,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify7.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Determine Number Divisibility in Python",
+  "description": "In this lab, you will learn how to use the modulo operator in Python to check if a number is divisible by another number.",
+  "meta": {
+    "title": "Python Divisibility Check | Programming Tutorials",
+    "description": "Learn how to use the modulo operator in Python to check if a number is divisible by another number. Explore a simple function that returns true if the dividend is divisible by the divisor.",
+    "keywords": "Python, divisibility, modulo operator, programming tutorials, coding challenges"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Number is divisible",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python3 Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/comments",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_is_divisible.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "is_divisible.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Determine Number Divisibility in Python",
-      "description": "In this lab, you will learn how to use the modulo operator in Python to check if a number is divisible by another number.",
-      "meta": {
-        "title": "Python Divisibility Check | Programming Tutorials",
-        "description": "Learn how to use the modulo operator in Python to check if a number is divisible by another number. Explore a simple function that returns true if the dividend is divisible by the divisor.",
-        "keywords": "Python, divisibility, modulo operator, programming tutorials, coding challenges"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Number is divisible",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python3 Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Python 中判断数字的可整除性",
@@ -75,22 +86,13 @@
               {
                 "name": "在临时目录中验证 Python3 脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_divisible.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_divisible.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

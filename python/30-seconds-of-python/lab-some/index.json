@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Test if some list elements are truthy",
+  "description": "In this lab, you will learn how to use the `any()` function in Python to check if at least one element in a list satisfies a given condition, and how to create a custom function that achieves the same functionality.",
+  "meta": {
+    "title": "Python Programming | Truthy List Elements",
+    "description": "Learn how to use the `any()` function in Python to check if at least one element in a list is truthy. Explore a function that takes a list and a function as arguments and returns true if the function returns true for at least one element.",
+    "keywords": "Python, programming, any(), truthy, list, function"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Test if some list elements are truthy",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/default_arguments",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_some.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "some.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +72,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Test if some list elements are truthy",
-      "description": "In this lab, you will learn how to use the `any()` function in Python to check if at least one element in a list satisfies a given condition, and how to create a custom function that achieves the same functionality.",
-      "meta": {
-        "title": "Python Programming | Truthy List Elements",
-        "description": "Learn how to use the `any()` function in Python to check if at least one element in a list is truthy. Explore a function that takes a list and a function as arguments and returns true if the function returns true for at least one element.",
-        "keywords": "Python, programming, any(), truthy, list, function"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Test if some list elements are truthy",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "测试列表中是否有某些元素为真值",
@@ -79,26 +90,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -107,21 +105,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_some.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "some.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

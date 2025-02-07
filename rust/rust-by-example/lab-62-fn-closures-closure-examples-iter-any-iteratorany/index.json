@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Exploring Rust Iterator's Any Function",
+  "description": "In this lab, the Iterator::any function is discussed, which is a function that takes an iterator as input and returns true if any element in the iterator satisfies a given predicate, and false otherwise. The function is defined as a trait method in Rust's standard library and can be used on any type that implements the Iterator trait. The function takes a closure as an argument, which determines the predicate to be applied to each element in the iterator. The closure is defined with the FnMut trait, meaning that it can modify captured variables but not consume them. The any function returns a boolean value indicating whether the predicate is satisfied by any element in the iterator.",
+  "meta": {
+    "title": "Rust Programming | Iterator::any Function",
+    "description": "Explore the Rust programming language's Iterator::any function, which checks if any element in an iterator satisfies a given predicate.",
+    "keywords": "Rust, programming, Iterator, any, predicate, function"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Iterator::any",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Rust Iterator's Any Function",
-      "description": "In this lab, the Iterator::any function is discussed, which is a function that takes an iterator as input and returns true if any element in the iterator satisfies a given predicate, and false otherwise. The function is defined as a trait method in Rust's standard library and can be used on any type that implements the Iterator trait. The function takes a closure as an argument, which determines the predicate to be applied to each element in the iterator. The closure is defined with the FnMut trait, meaning that it can modify captured variables but not consume them. The any function returns a boolean value indicating whether the predicate is satisfied by any element in the iterator.",
-      "meta": {
-        "title": "Rust Programming | Iterator::any Function",
-        "description": "Explore the Rust programming language's Iterator::any function, which checks if any element in an iterator satisfies a given predicate.",
-        "keywords": "Rust, programming, Iterator, any, predicate, function"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Iterator::any",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索 Rust 迭代器的 any 函数",
@@ -78,25 +75,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

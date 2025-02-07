@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Defining Generic Functions in Rust",
+  "description": "In this lab, you will learn how to define generic functions in Rust. To make a function generic, you need to prepend the type T with <T>. Sometimes, you may need to explicitly specify type parameters while calling a generic function, which can be done using the syntax fun::<A, B, ...>(). The code provided demonstrates the usage of generic functions in Rust and includes examples of functions that are both generic and non-generic.",
+  "meta": {
+    "title": "Mastering Generic Functions in Rust | Programming Tutorials",
+    "description": "Learn how to define and use generic functions in Rust, a powerful programming language known for its safety and performance.",
+    "keywords": "Rust, Generic Functions, Programming Tutorials, Rust Programming, Software Development"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Functions",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/operator_overloading",
+          "rust/type_casting"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Defining Generic Functions in Rust",
-      "description": "In this lab, you will learn how to define generic functions in Rust. To make a function generic, you need to prepend the type T with <T>. Sometimes, you may need to explicitly specify type parameters while calling a generic function, which can be done using the syntax fun::<A, B, ...>(). The code provided demonstrates the usage of generic functions in Rust and includes examples of functions that are both generic and non-generic.",
-      "meta": {
-        "title": "Mastering Generic Functions in Rust | Programming Tutorials",
-        "description": "Learn how to define and use generic functions in Rust, a powerful programming language known for its safety and performance.",
-        "keywords": "Rust, Generic Functions, Programming Tutorials, Rust Programming, Software Development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Functions",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/operator_overloading",
-              "rust/type_casting"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 Rust 中定义泛型函数",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/operator_overloading",
-              "rust/type_casting"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

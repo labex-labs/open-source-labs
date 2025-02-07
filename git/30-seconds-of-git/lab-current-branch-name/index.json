@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Get the Current Branch Name",
+  "description": "In this lab, you will learn how to get the current branch name in a Git repository using the `git rev-parse --abbrev-ref HEAD` command.",
+  "meta": {
+    "title": "Git Branch Identification | Programming Tutorials",
+    "description": "Learn how to identify the current Git branch in your repository, a crucial skill for effective collaboration and branch management.",
+    "keywords": "git, branch, current branch, git commands, programming tutorials"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Get the Current Branch Name",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that the appropriate branch is output",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/branch"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Get the Current Branch Name",
-      "description": "In this lab, you will learn how to get the current branch name in a Git repository using the `git rev-parse --abbrev-ref HEAD` command.",
-      "meta": {
-        "title": "Git Branch Identification | Programming Tutorials",
-        "description": "Learn how to identify the current Git branch in your repository, a crucial skill for effective collaboration and branch management.",
-        "keywords": "git, branch, current branch, git commands, programming tutorials"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Get the Current Branch Name",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that the appropriate branch is output",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/branch"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "获取当前分支名称",
@@ -70,17 +67,13 @@
               {
                 "name": "验证输出的是正确的分支",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/branch"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

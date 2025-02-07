@@ -1,10 +1,109 @@
 {
   "type": "lab",
+  "title": "JavaScript Operators Introduction",
+  "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to operators.",
+  "meta": {
+    "title": "JavaScript Operators | Programming Tutorials",
+    "description": "Discover the fundamentals of JavaScript operators, including addition, string concatenation, and commenting. Learn essential coding skills with our comprehensive programming tutorials.",
+    "keywords": "JavaScript, operators, addition, string concatenation, comments, programming tutorials, coding skills"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Addition",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["javascript/arith_ops", "javascript/data_types"]
+      },
+      {
+        "title": "Subtraction, Multiplication, Division",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["javascript/arith_ops", "javascript/data_types"]
+      },
+      {
+        "title": "Assignment",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["javascript/data_types", "javascript/variables"]
+      },
+      {
+        "title": "Strict equality",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      },
+      {
+        "title": "Not, Does-not-equal",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,108 +114,6 @@
     "repo": "https://github.com/mdn/content"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "JavaScript Operators Introduction",
-      "description": "Welcome to the JavaScript documentation! This lab will give you an introduction to operators.",
-      "meta": {
-        "title": "JavaScript Operators | Programming Tutorials",
-        "description": "Discover the fundamentals of JavaScript operators, including addition, string concatenation, and commenting. Learn essential coding skills with our comprehensive programming tutorials.",
-        "keywords": "JavaScript, operators, addition, string concatenation, comments, programming tutorials, coding skills"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Addition",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["javascript/arith_ops", "javascript/data_types"]
-          },
-          {
-            "title": "Subtraction, Multiplication, Division",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["javascript/arith_ops", "javascript/data_types"]
-          },
-          {
-            "title": "Assignment",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["javascript/data_types", "javascript/variables"]
-          },
-          {
-            "title": "Strict equality",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          },
-          {
-            "title": "Not, Does-not-equal",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "JavaScript 运算符介绍",
@@ -135,12 +132,9 @@
               {
                 "name": "验证 Node 命令用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。"
               }
-            ],
-            "skills": ["javascript/arith_ops", "javascript/data_types"]
+            ]
           },
           {
             "title": "减法、乘法、除法",
@@ -149,12 +143,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["javascript/arith_ops", "javascript/data_types"]
+            ]
           },
           {
             "title": "赋值",
@@ -163,12 +154,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["javascript/data_types", "javascript/variables"]
+            ]
           },
           {
             "title": "严格相等",
@@ -177,15 +165,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify4.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           },
           {
@@ -195,22 +176,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

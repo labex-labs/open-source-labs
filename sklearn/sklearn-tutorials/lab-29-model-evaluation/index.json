@@ -1,10 +1,86 @@
 {
   "type": "lab",
+  "title": "Evaluating Machine Learning Model Quality",
+  "description": "In machine learning, it is important to evaluate the quality of the predictions made by a model. This helps us understand how well the model is performing and whether it can be trusted for making accurate predictions. The scikit-learn library provides several metrics and scoring methods to quantify the quality of predictions.",
+  "meta": {
+    "title": "Machine Learning | Model Evaluation with Scikit-Learn",
+    "description": "Explore three different APIs provided by scikit-learn for model evaluation, including the Estimator score method, the scoring parameter, and the metric functions.",
+    "keywords": "machine learning, model evaluation, scikit-learn, estimator score, scoring parameter, metric functions"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Estimator Score Method",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/linear_model"]
+      },
+      {
+        "title": "Scoring Parameter",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/linear_model",
+          "sklearn/model_selection"
+        ]
+      },
+      {
+        "title": "Metric Functions",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/linear_model",
+          "sklearn/metrics",
+          "sklearn/model_selection"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "29-model-evaluation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,76 +91,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Evaluating Machine Learning Model Quality",
-      "description": "In machine learning, it is important to evaluate the quality of the predictions made by a model. This helps us understand how well the model is performing and whether it can be trusted for making accurate predictions. The scikit-learn library provides several metrics and scoring methods to quantify the quality of predictions.",
-      "meta": {
-        "title": "Machine Learning | Model Evaluation with Scikit-Learn",
-        "description": "Explore three different APIs provided by scikit-learn for model evaluation, including the Estimator score method, the scoring parameter, and the metric functions.",
-        "keywords": "machine learning, model evaluation, scikit-learn, estimator score, scoring parameter, metric functions"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Estimator Score Method",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/linear_model"]
-          },
-          {
-            "title": "Scoring Parameter",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "Metric Functions",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/model_selection"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "评估机器学习模型质量",
@@ -105,8 +111,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/linear_model"]
+            ]
           },
           {
             "title": "评分参数",
@@ -117,12 +122,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -134,19 +133,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/model_selection"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -155,16 +146,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "29-model-evaluation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

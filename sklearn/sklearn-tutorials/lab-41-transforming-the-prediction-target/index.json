@@ -1,10 +1,75 @@
 {
   "type": "lab",
+  "title": "Transforming the Prediction Target",
+  "description": "In machine learning, it is often necessary to transform the prediction target before training a model. This can include tasks such as converting multiclass labels into a binary indicator matrix or encoding non-numerical labels into numerical labels.",
+  "meta": {
+    "title": "Transforming Prediction Targets in Machine Learning",
+    "description": "Explore techniques for converting multiclass labels and encoding non-numerical labels in machine learning models.",
+    "keywords": "machine learning, multilabel binarization, scikit learn, scikit-learn, scikit-learn playground, data preprocessing, label binarization"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Label Binarization",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "MultiLabel Binarization",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Label Encoding",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "41-transforming-the-prediction-target.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,65 +80,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Transforming the Prediction Target",
-      "description": "In machine learning, it is often necessary to transform the prediction target before training a model. This can include tasks such as converting multiclass labels into a binary indicator matrix or encoding non-numerical labels into numerical labels.",
-      "meta": {
-        "title": "Transforming Prediction Targets in Machine Learning",
-        "description": "Explore techniques for converting multiclass labels and encoding non-numerical labels in machine learning models.",
-        "keywords": "machine learning, multilabel binarization, scikit learn, scikit-learn, scikit-learn playground, data preprocessing, label binarization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Label Binarization",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "MultiLabel Binarization",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          },
-          {
-            "title": "Label Encoding",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "转换预测目标",
@@ -94,8 +100,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "多标签二值化",
@@ -106,8 +111,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           },
           {
             "title": "标签编码",
@@ -118,13 +122,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -133,16 +135,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "41-transforming-the-prediction-target.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

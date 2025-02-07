@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Remove Files from the Staging Area",
+  "description": "In Git, the staging area is where changes to files are prepared before they are committed to the repository. Sometimes, you may accidentally add files to the staging area that you don't want to commit. In this lab, you will learn how to remove files from the staging area using Git.",
+  "meta": {
+    "title": "Git Playground | Remove Files from Staging Area",
+    "description": "Learn how to remove accidentally added files from the Git staging area and prepare your commits effectively.",
+    "keywords": "Git, Git Staging Area, Remove Files, Git Playground, Version Control"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Remove Files from the Staging Area",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful removal",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/restore"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Remove Files from the Staging Area",
-      "description": "In Git, the staging area is where changes to files are prepared before they are committed to the repository. Sometimes, you may accidentally add files to the staging area that you don't want to commit. In this lab, you will learn how to remove files from the staging area using Git.",
-      "meta": {
-        "title": "Git Playground | Remove Files from Staging Area",
-        "description": "Learn how to remove accidentally added files from the Git staging area and prepare your commits effectively.",
-        "keywords": "Git, Git Staging Area, Remove Files, Git Playground, Version Control"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Remove Files from the Staging Area",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful removal",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/restore"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从暂存区移除文件",
@@ -70,17 +67,13 @@
               {
                 "name": "验证移除是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/restore"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

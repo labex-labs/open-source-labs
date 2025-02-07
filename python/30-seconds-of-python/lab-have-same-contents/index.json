@@ -1,10 +1,69 @@
 {
   "type": "lab",
+  "title": "Comparing List Contents in Programming",
+  "description": "In programming, it is often necessary to check if two lists contain the same elements, regardless of their order. This can be useful in a variety of situations, such as checking if two sets of data have the same values or verifying if a function is returning the expected output. In this challenge, you will write a function that checks if two lists have the same contents.",
+  "meta": {
+    "title": "Programming Tutorials | List Comparison",
+    "description": "Explore a programming challenge that checks if two lists have the same contents, regardless of their order. Useful for data verification and function testing.",
+    "keywords": "programming, lists, data comparison, content verification, function testing"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Check if Two Lists Have the Same Contents",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Checks File Contents",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_have_same_contents.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "have_same_contents.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +74,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Comparing List Contents in Programming",
-      "description": "In programming, it is often necessary to check if two lists contain the same elements, regardless of their order. This can be useful in a variety of situations, such as checking if two sets of data have the same values or verifying if a function is returning the expected output. In this challenge, you will write a function that checks if two lists have the same contents.",
-      "meta": {
-        "title": "Programming Tutorials | List Comparison",
-        "description": "Explore a programming challenge that checks if two lists have the same contents, regardless of their order. Useful for data verification and function testing.",
-        "keywords": "programming, lists, data comparison, content verification, function testing"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Check if Two Lists Have the Same Contents",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Checks File Contents",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "编程中比较列表内容",
@@ -81,28 +92,13 @@
               {
                 "name": "验证Python脚本检查文件内容",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -111,21 +107,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_have_same_contents.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "have_same_contents.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

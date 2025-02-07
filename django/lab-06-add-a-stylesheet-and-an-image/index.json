@@ -1,66 +1,77 @@
 {
   "type": "lab",
+  "title": "Add a Stylesheet and an Image",
+  "description": "This tutorial begins where Create Some Automated Tests left off. We've built a tested web-poll application, and we'll now add a stylesheet and an image.",
+  "meta": {
+    "title": "Django Tutorial | Customize App Look and Feel",
+    "description": "Learn how to add a stylesheet and an image to your Django web-poll application, and customize its look and feel.",
+    "keywords": "Django, web development, tutorial, CSS, static files, styling, customization"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Customize your _app's_ look and feel",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of style.css in Polls Response",
+            "file": "verify1.sh",
+            "hint": "Please add style.css to the project.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["django/applications"]
+      },
+      {
+        "title": "Adding a background-image",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Existence of Background Image File",
+            "file": "verify2.sh",
+            "hint": "background.png needs to be in the project.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "background.png",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Add a Stylesheet and an Image",
-      "description": "This tutorial begins where Create Some Automated Tests left off. We've built a tested web-poll application, and we'll now add a stylesheet and an image.",
-      "meta": {
-        "title": "Django Tutorial | Customize App Look and Feel",
-        "description": "Learn how to add a stylesheet and an image to your Django web-poll application, and customize its look and feel.",
-        "keywords": "Django, web development, tutorial, CSS, static files, styling, customization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Customize your _app's_ look and feel",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of style.css in Polls Response",
-                "file": "verify1.sh",
-                "hint": "Please add style.css to the project.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["django/applications"]
-          },
-          {
-            "title": "Adding a background-image",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Existence of Background Image File",
-                "file": "verify2.sh",
-                "hint": "background.png needs to be in the project.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "添加样式表和图像",
@@ -79,12 +90,9 @@
               {
                 "name": "验证 Polls 响应中是否存在 style.css",
                 "file": "verify1.sh",
-                "hint": "请将 style.css 添加到项目中。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请将 style.css 添加到项目中。"
               }
-            ],
-            "skills": ["django/applications"]
+            ]
           },
           {
             "title": "添加背景图像",
@@ -93,17 +101,13 @@
               {
                 "name": "验证背景图像文件是否存在",
                 "file": "verify2.sh",
-                "hint": "项目中需要有 background.png。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "项目中需要有 background.png。"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -112,21 +116,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "*.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "background.png",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

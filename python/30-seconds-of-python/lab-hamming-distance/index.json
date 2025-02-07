@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Calculating Hamming Distance Between Strings",
+  "description": "In this lab, you will learn how to calculate the Hamming distance between two integers using the XOR operator, binary string conversion, and the count() method in Python.",
+  "meta": {
+    "title": "Hamming Distance | Programming Tutorials",
+    "description": "Learn how to calculate the Hamming distance between two integers using Python. Explore this programming concept and improve your coding skills.",
+    "keywords": "Hamming distance, programming tutorials, Python, coding, bit manipulation"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Hamming Distance Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Hamming Distance Python Script",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_hamming_distance.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "hamming_distance.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Calculating Hamming Distance Between Strings",
-      "description": "In this lab, you will learn how to calculate the Hamming distance between two integers using the XOR operator, binary string conversion, and the count() method in Python.",
-      "meta": {
-        "title": "Hamming Distance | Programming Tutorials",
-        "description": "Learn how to calculate the Hamming distance between two integers using Python. Explore this programming concept and improve your coding skills.",
-        "keywords": "Hamming distance, programming tutorials, Python, coding, bit manipulation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Hamming Distance Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Hamming Distance Python Script",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "计算字符串之间的汉明距离",
@@ -75,22 +86,13 @@
               {
                 "name": "验证汉明距离的 Python 脚本",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_hamming_distance.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "hamming_distance.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

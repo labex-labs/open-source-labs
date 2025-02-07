@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Array to Object Based on Key",
+  "description": "In this lab, we will explore how to convert an array of objects into an object where each object's key is a specified property value of the original objects. We will achieve this by using the Array.prototype.reduce() method and object destructuring in JavaScript. This lab will help you gain a deeper understanding of how to manipulate and transform data in JavaScript.",
+  "meta": {
+    "title": "Convert Array to Object Based on Key",
+    "description": "Learn how to transform an array of objects into an object using JavaScript's Array.prototype.reduce() method and object destructuring.",
+    "keywords": "javascript, javascript practice, javascript practice online, object, data transformation, javascript lab, reduce, javascript tutor, array"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Array to Object Based on Key",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Usage History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Array to Object Based on Key",
-      "description": "In this lab, we will explore how to convert an array of objects into an object where each object's key is a specified property value of the original objects. We will achieve this by using the Array.prototype.reduce() method and object destructuring in JavaScript. This lab will help you gain a deeper understanding of how to manipulate and transform data in JavaScript.",
-      "meta": {
-        "title": "Convert Array to Object Based on Key",
-        "description": "Learn how to transform an array of objects into an object using JavaScript's Array.prototype.reduce() method and object destructuring.",
-        "keywords": "javascript, javascript practice, javascript practice online, object, data transformation, javascript lab, reduce, javascript tutor, array"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Array to Object Based on Key",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Usage History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "根据键将数组转换为对象",
@@ -78,25 +75,13 @@
               {
                 "name": "验证Node使用历史记录",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

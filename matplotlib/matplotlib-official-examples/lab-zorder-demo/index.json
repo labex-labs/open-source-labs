@@ -1,10 +1,117 @@
 {
   "type": "lab",
+  "title": "Adjusting Matplotlib Drawing Order",
+  "description": "In this tutorial, we will learn about the drawing order of artists in Matplotlib and how to adjust the order using the zorder attribute. We will also explore how to change the order for individual artists and the default value of zorder for different types of artists.",
+  "meta": {
+    "title": "Matplotlib Drawing Order Adjustment | Programming Tutorials",
+    "description": "Learn how to adjust the drawing order of artists in Matplotlib using the zorder attribute. Explore the default zorder values for different artist types.",
+    "keywords": "Matplotlib, Drawing Order, zorder, Programming Tutorials, Artist Types"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Understanding Zorder",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Changing Zorder",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/line_plots",
+          "matplotlib/scatter_plots",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Setting Zorder for Ticks and Grid Lines",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/grid_config",
+          "matplotlib/line_plots",
+          "matplotlib/line_styles_colors",
+          "python/booleans",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Custom Order of Elements",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "matplotlib/matplotlib_config",
+          "matplotlib/titles_labels",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "zorder-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,107 +122,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Adjusting Matplotlib Drawing Order",
-      "description": "In this tutorial, we will learn about the drawing order of artists in Matplotlib and how to adjust the order using the zorder attribute. We will also explore how to change the order for individual artists and the default value of zorder for different types of artists.",
-      "meta": {
-        "title": "Matplotlib Drawing Order Adjustment | Programming Tutorials",
-        "description": "Learn how to adjust the drawing order of artists in Matplotlib using the zorder attribute. Explore the default zorder values for different artist types.",
-        "keywords": "Matplotlib, Drawing Order, zorder, Programming Tutorials, Artist Types"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Understanding Zorder",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Changing Zorder",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "matplotlib/scatter_plots",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Setting Zorder for Ticks and Grid Lines",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Custom Order of Elements",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "matplotlib/matplotlib_config",
-              "matplotlib/titles_labels",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "调整Matplotlib绘图顺序",
@@ -136,8 +142,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "更改Zorder",
@@ -148,17 +153,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "matplotlib/scatter_plots",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           },
           {
@@ -170,14 +164,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/grid_config",
-              "matplotlib/line_plots",
-              "matplotlib/line_styles_colors",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -189,26 +175,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "matplotlib/matplotlib_config",
-              "matplotlib/titles_labels",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -217,16 +188,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "zorder-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

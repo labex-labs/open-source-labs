@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Run Promises in Series",
+  "description": "In this lab, we will be exploring how to run an array of promises in series using JavaScript. We will be using the Array.prototype.reduce() method to create a promise chain, where each promise returns the next promise when resolved. By the end of this lab, you will have a better understanding of how to execute promises sequentially, taking your programming skills to the next level.",
+  "meta": {
+    "title": "Run Promises in Series: Mastering Asynchronous JavaScript",
+    "description": "Explore how to run an array of promises in series using JavaScript's promise chain.",
+    "keywords": "javascript, asynchronous, javascript practice, series, javascript tutor, javascript practice online, javascript lab, promises, promise chain"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Run Promises in Series",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in ZSH History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/async_prog",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Run Promises in Series",
-      "description": "In this lab, we will be exploring how to run an array of promises in series using JavaScript. We will be using the Array.prototype.reduce() method to create a promise chain, where each promise returns the next promise when resolved. By the end of this lab, you will have a better understanding of how to execute promises sequentially, taking your programming skills to the next level.",
-      "meta": {
-        "title": "Run Promises in Series: Mastering Asynchronous JavaScript",
-        "description": "Explore how to run an array of promises in series using JavaScript's promise chain.",
-        "keywords": "javascript, asynchronous, javascript practice, series, javascript tutor, javascript practice online, javascript lab, promises, promise chain"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Run Promises in Series",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in ZSH History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/async_prog",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "依次运行Promise",
@@ -77,24 +74,13 @@
               {
                 "name": "在ZSH历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/async_prog",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

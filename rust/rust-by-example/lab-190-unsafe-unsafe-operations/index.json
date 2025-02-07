@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Exploring Rust's Unsafe Operations",
+  "description": "In this lab, we will explore unsafe operations in Rust, which are used to bypass compiler protections and are typically used for dereferencing raw pointers, calling unsafe functions, accessing or modifying static mutable variables, and implementing unsafe traits. These operations should be minimized in a code base to ensure safety.",
+  "meta": {
+    "title": "Exploring Unsafe Operations in Rust | Programming Tutorials",
+    "description": "Dive into the world of unsafe operations in Rust, learn how to bypass compiler protections, and ensure code safety in your projects.",
+    "keywords": "Rust, Unsafe Operations, Raw Pointers, Unsafe Functions, Static Mutable Variables, Unsafe Traits"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Unsafe Operations",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/constants_usage",
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/unsafe_rust",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Rust's Unsafe Operations",
-      "description": "In this lab, we will explore unsafe operations in Rust, which are used to bypass compiler protections and are typically used for dereferencing raw pointers, calling unsafe functions, accessing or modifying static mutable variables, and implementing unsafe traits. These operations should be minimized in a code base to ensure safety.",
-      "meta": {
-        "title": "Exploring Unsafe Operations in Rust | Programming Tutorials",
-        "description": "Dive into the world of unsafe operations in Rust, learn how to bypass compiler protections, and ensure code safety in your projects.",
-        "keywords": "Rust, Unsafe Operations, Raw Pointers, Unsafe Functions, Static Mutable Variables, Unsafe Traits"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Unsafe Operations",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/constants_usage",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/unsafe_rust",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索Rust的不安全操作",
@@ -78,25 +75,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/constants_usage",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/unsafe_rust",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

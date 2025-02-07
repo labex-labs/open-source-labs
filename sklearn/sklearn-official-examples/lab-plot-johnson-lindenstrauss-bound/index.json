@@ -1,10 +1,92 @@
 {
   "type": "lab",
+  "title": "Exploring Johnson-Lindenstrauss Lemma with Random Projections",
+  "description": "The Johnson-Lindenstrauss lemma is a mathematical theorem that states that any high dimensional dataset can be randomly projected into a lower dimensional Euclidean space while controlling the distortion in the pairwise distances. In this lab, we will explore the theoretical bounds of the Johnson-Lindenstrauss lemma for embedding with random projections and validate it empirically using Python scikit-learn.",
+  "meta": {
+    "title": "Johnson-Lindenstrauss Lemma | Random Projection | Euclidean Space",
+    "description": "Explore the theoretical bounds of the Johnson-Lindenstrauss lemma for embedding high-dimensional datasets into lower-dimensional Euclidean space using random projections in Python.",
+    "keywords": "Johnson-Lindenstrauss Lemma, Random Projection, Euclidean Space, High-dimensional Data, Dimensionality Reduction"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Theoretical Bounds",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/random_projection"]
+      },
+      {
+        "title": "Theoretical Bounds (cont'd)",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Empirical Validation",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/metrics",
+          "sklearn/random_projection"
+        ]
+      },
+      {
+        "title": "Summary",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-johnson-lindenstrauss-bound.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,82 +97,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring Johnson-Lindenstrauss Lemma with Random Projections",
-      "description": "The Johnson-Lindenstrauss lemma is a mathematical theorem that states that any high dimensional dataset can be randomly projected into a lower dimensional Euclidean space while controlling the distortion in the pairwise distances. In this lab, we will explore the theoretical bounds of the Johnson-Lindenstrauss lemma for embedding with random projections and validate it empirically using Python scikit-learn.",
-      "meta": {
-        "title": "Johnson-Lindenstrauss Lemma | Random Projection | Euclidean Space",
-        "description": "Explore the theoretical bounds of the Johnson-Lindenstrauss lemma for embedding high-dimensional datasets into lower-dimensional Euclidean space using random projections in Python.",
-        "keywords": "Johnson-Lindenstrauss Lemma, Random Projection, Euclidean Space, High-dimensional Data, Dimensionality Reduction"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Theoretical Bounds",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/random_projection"]
-          },
-          {
-            "title": "Theoretical Bounds (cont'd)",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Empirical Validation",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/metrics",
-              "sklearn/random_projection"
-            ]
-          },
-          {
-            "title": "Summary",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "通过随机投影探索约翰逊 - 林登施特劳斯引理",
@@ -111,8 +117,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/random_projection"]
+            ]
           },
           {
             "title": "理论界限（续）",
@@ -123,8 +128,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "实证验证",
@@ -135,12 +139,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/metrics",
-              "sklearn/random_projection"
             ]
           },
           {
@@ -152,13 +150,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -167,16 +163,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-johnson-lindenstrauss-bound.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

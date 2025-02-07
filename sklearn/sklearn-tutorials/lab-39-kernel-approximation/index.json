@@ -1,10 +1,99 @@
 {
   "type": "lab",
+  "title": "Kernel Approximation Techniques in Scikit-Learn",
+  "description": "This tutorial will guide you through the process of using kernel approximation techniques in scikit-learn.",
+  "meta": {
+    "title": "Kernel Approximation Techniques in scikit-learn | Machine Learning",
+    "description": "Explore kernel approximation methods in scikit-learn, including Nystroem, RBF, ACS, SCS, and Polynomial kernel approximation. Learn to optimize non-linear classification tasks.",
+    "keywords": "kernel approximation, scikit-learn, machine learning, Nystroem method, RBF kernel, ACS kernel, SCS kernel, Polynomial kernel"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Nystroem Method for Kernel Approximation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+      },
+      {
+        "title": "Radial Basis Function (RBF) Kernel Approximation",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+      },
+      {
+        "title": "Additive Chi Squared (ACS) Kernel Approximation",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+      },
+      {
+        "title": "Skewed Chi Squared (SCS) Kernel Approximation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+      },
+      {
+        "title": "Polynomial Kernel Approximation via Tensor Sketch",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "39-kernel-approximation.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,89 +104,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Kernel Approximation Techniques in Scikit-Learn",
-      "description": "This tutorial will guide you through the process of using kernel approximation techniques in scikit-learn.",
-      "meta": {
-        "title": "Kernel Approximation Techniques in scikit-learn | Machine Learning",
-        "description": "Explore kernel approximation methods in scikit-learn, including Nystroem, RBF, ACS, SCS, and Polynomial kernel approximation. Learn to optimize non-linear classification tasks.",
-        "keywords": "kernel approximation, scikit-learn, machine learning, Nystroem method, RBF kernel, ACS kernel, SCS kernel, Polynomial kernel"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Nystroem Method for Kernel Approximation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
-          },
-          {
-            "title": "Radial Basis Function (RBF) Kernel Approximation",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
-          },
-          {
-            "title": "Additive Chi Squared (ACS) Kernel Approximation",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
-          },
-          {
-            "title": "Skewed Chi Squared (SCS) Kernel Approximation",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
-          },
-          {
-            "title": "Polynomial Kernel Approximation via Tensor Sketch",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Scikit-learn 中的核近似技术",
@@ -118,8 +124,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+            ]
           },
           {
             "title": "径向基函数（RBF）核近似",
@@ -130,8 +135,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+            ]
           },
           {
             "title": "加性卡方（ACS）核近似",
@@ -142,8 +146,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+            ]
           },
           {
             "title": "偏态卡方（SCS）核近似",
@@ -154,8 +157,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+            ]
           },
           {
             "title": "通过张量草图进行多项式核近似",
@@ -166,13 +168,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/kernel_approximation"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -181,16 +181,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "39-kernel-approximation.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

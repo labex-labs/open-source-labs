@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Discard Uncommitted Changes",
+  "description": "Git is a version control system that allows developers to track changes in their codebase. Sometimes, developers may make changes to their code that they later decide they don't want to keep. In such cases, it is necessary to discard these changes and revert to the last committed version of the code. This lab will focus on discarding uncommitted changes in Git.",
+  "meta": {
+    "title": "Discard Uncommitted Changes in Git",
+    "description": "Learn how to discard all uncommitted changes in a Git repository and revert to the last committed version of the code.",
+    "keywords": "version control, git labs, git, reset, git playground, discarding changes, uncommitted changes"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Discard Uncommitted Changes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful discarding",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Discard Uncommitted Changes",
-      "description": "Git is a version control system that allows developers to track changes in their codebase. Sometimes, developers may make changes to their code that they later decide they don't want to keep. In such cases, it is necessary to discard these changes and revert to the last committed version of the code. This lab will focus on discarding uncommitted changes in Git.",
-      "meta": {
-        "title": "Discard Uncommitted Changes in Git",
-        "description": "Learn how to discard all uncommitted changes in a Git repository and revert to the last committed version of the code.",
-        "keywords": "version control, git labs, git, reset, git playground, discarding changes, uncommitted changes"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Discard Uncommitted Changes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful discarding",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "丢弃未提交的更改",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功丢弃",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

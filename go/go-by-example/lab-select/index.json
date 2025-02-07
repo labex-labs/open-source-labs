@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Go Select Statement Demonstration",
+  "description": "This lab aims to test your knowledge of Go's select statement, which allows you to wait on multiple channel operations.",
+  "meta": {
+    "title": "Go Programming | Channel Operations | Concurrency",
+    "description": "Learn how to use Go's select statement to wait on multiple channel operations and handle concurrent execution in your programs.",
+    "keywords": "Go programming, channel operations, concurrency, select statement, goroutines, concurrent programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Select",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Received Values in Go Program",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/select"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "select.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Go Select Statement Demonstration",
-      "description": "This lab aims to test your knowledge of Go's select statement, which allows you to wait on multiple channel operations.",
-      "meta": {
-        "title": "Go Programming | Channel Operations | Concurrency",
-        "description": "Learn how to use Go's select statement to wait on multiple channel operations and handle concurrent execution in your programs.",
-        "keywords": "Go programming, channel operations, concurrency, select statement, goroutines, concurrent programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Select",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Received Values in Go Program",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/select"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言选择语句演示",
@@ -70,17 +76,13 @@
               {
                 "name": "在Go程序中验证接收到的值",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/select"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "select.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

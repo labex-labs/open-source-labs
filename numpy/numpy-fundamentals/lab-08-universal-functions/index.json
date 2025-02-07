@@ -1,10 +1,175 @@
 {
   "type": "lab",
+  "title": "Introduction to NumPy Universal Functions",
+  "description": "In this lab, we will explore the basics of NumPy Universal Functions (ufuncs). Ufuncs are functions that operate on ndarrays in an element-by-element fashion, supporting array broadcasting, type casting, and other standard features. We will learn about the different methods of ufuncs, broadcasting rules, type casting rules, and how to override ufunc behavior.",
+  "meta": {
+    "title": "Mastering NumPy Universal Functions",
+    "description": "Explore the power of NumPy's element-wise operations and discover how to leverage ufuncs for efficient data processing.",
+    "keywords": "ufuncs, data processing, python playground, universal functions, element wise operations, python, numpy"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Basic Arithmetic Operations",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/1d_array",
+          "numpy/bool_idx",
+          "numpy/data_array",
+          "numpy/fancy_idx",
+          "python/build_in_functions",
+          "python/comments",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Ufunc Methods",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/math_ops",
+          "numpy/reshape",
+          "python/build_in_functions",
+          "python/comments",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Output Type Determination",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/math_ops",
+          "numpy/reshape",
+          "python/build_in_functions",
+          "python/comments",
+          "python/importing_modules",
+          "python/numeric_types",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Broadcasting",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/1d_array",
+          "numpy/basic_idx",
+          "numpy/bool_idx",
+          "numpy/data_array",
+          "numpy/fancy_idx",
+          "numpy/multi_array",
+          "python/build_in_functions",
+          "python/comments",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Type Casting Rules",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/importing_modules",
+          "python/numeric_types",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Overriding Ufunc Behavior",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "numpy/bool_idx",
+          "numpy/fancy_idx",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/polymorphism",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "08-universal-functions.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,165 +180,6 @@
     "repo": "https://github.com/numpy/numpy"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Introduction to NumPy Universal Functions",
-      "description": "In this lab, we will explore the basics of NumPy Universal Functions (ufuncs). Ufuncs are functions that operate on ndarrays in an element-by-element fashion, supporting array broadcasting, type casting, and other standard features. We will learn about the different methods of ufuncs, broadcasting rules, type casting rules, and how to override ufunc behavior.",
-      "meta": {
-        "title": "Mastering NumPy Universal Functions",
-        "description": "Explore the power of NumPy's element-wise operations and discover how to leverage ufuncs for efficient data processing.",
-        "keywords": "ufuncs, data processing, python playground, universal functions, element wise operations, python, numpy"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Basic Arithmetic Operations",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Ufunc Methods",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/math_ops",
-              "numpy/reshape",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Output Type Determination",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/math_ops",
-              "numpy/reshape",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Broadcasting",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/basic_idx",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "numpy/multi_array",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Type Casting Rules",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Overriding Ufunc Behavior",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "numpy/bool_idx",
-              "numpy/fancy_idx",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/polymorphism",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "NumPy通用函数介绍",
@@ -194,18 +200,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           },
           {
@@ -217,15 +211,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/math_ops",
-              "numpy/reshape",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           },
           {
@@ -237,17 +222,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/math_ops",
-              "numpy/reshape",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -259,20 +233,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/1d_array",
-              "numpy/basic_idx",
-              "numpy/bool_idx",
-              "numpy/data_array",
-              "numpy/fancy_idx",
-              "numpy/multi_array",
-              "python/build_in_functions",
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           },
           {
@@ -284,16 +244,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/importing_modules",
-              "python/numeric_types",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -305,26 +255,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "numpy/bool_idx",
-              "numpy/fancy_idx",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/polymorphism",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -333,16 +268,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "08-universal-functions.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

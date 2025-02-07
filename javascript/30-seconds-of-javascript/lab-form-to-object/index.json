@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Form to Object",
+  "description": "In this lab, we will explore how to convert a set of form elements into an object using JavaScript. We will make use of the FormData constructor and the Array.from() method to create an array of form data. We will then use the Array.prototype.reduce() method to collect the form data into an object. By the end of this lab, you will have a better understanding of how to collect and organize form data using JavaScript.",
+  "meta": {
+    "title": "Convert Form to Object with JavaScript",
+    "description": "Learn how to convert a set of form elements into an object using JavaScript, leveraging the FormData constructor and array manipulation methods.",
+    "keywords": "javascript, javascript practice, formdata, array manipulation, javascript practice online, javascript lab, javascript tutor, form to object, data organization"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Form to Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/bom",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/dom_select",
+          "javascript/higher_funcs",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,52 +58,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Form to Object",
-      "description": "In this lab, we will explore how to convert a set of form elements into an object using JavaScript. We will make use of the FormData constructor and the Array.from() method to create an array of form data. We will then use the Array.prototype.reduce() method to collect the form data into an object. By the end of this lab, you will have a better understanding of how to collect and organize form data using JavaScript.",
-      "meta": {
-        "title": "Convert Form to Object with JavaScript",
-        "description": "Learn how to convert a set of form elements into an object using JavaScript, leveraging the FormData constructor and array manipulation methods.",
-        "keywords": "javascript, javascript practice, formdata, array manipulation, javascript practice online, javascript lab, javascript tutor, form to object, data organization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Form to Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/bom",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/dom_select",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将表单转换为对象",
@@ -79,26 +76,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/bom",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/dom_select",
-              "javascript/higher_funcs",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

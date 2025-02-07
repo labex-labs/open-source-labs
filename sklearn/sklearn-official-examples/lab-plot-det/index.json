@@ -1,10 +1,97 @@
 {
   "type": "lab",
+  "title": "Detection Error Tradeoff Curve",
+  "description": "In this tutorial, we will learn about Detection Error Tradeoff (DET) curves and compare them with Receiver Operating Characteristic (ROC) curves. DET curves are a variation of ROC curves, where False Negative Rate (FNR) is plotted on the y-axis instead of the True Positive Rate (TPR). We will use scikit-learn, a popular Python library for machine learning, to generate synthetic data and compare the statistical performance of two classifiers across thresholds using ROC and DET curves.",
+  "meta": {
+    "title": "Mastering Detection Error Tradeoff Curves",
+    "description": "Explore the power of Detection Error Tradeoff (DET) curves and compare them with Receiver Operating Characteristic (ROC) curves using Python and scikit-learn.",
+    "keywords": "det curves, roc curves, machine learning, detection error tradeoff, python, scikit-learn, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Synthetic Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/model_selection",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "Define the Classifiers",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/ensemble",
+          "sklearn/pipeline",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Plot ROC and DET Curves",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics"]
+      },
+      {
+        "title": "Interpretation of Results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-det.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,87 +102,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Detection Error Tradeoff Curve",
-      "description": "In this tutorial, we will learn about Detection Error Tradeoff (DET) curves and compare them with Receiver Operating Characteristic (ROC) curves. DET curves are a variation of ROC curves, where False Negative Rate (FNR) is plotted on the y-axis instead of the True Positive Rate (TPR). We will use scikit-learn, a popular Python library for machine learning, to generate synthetic data and compare the statistical performance of two classifiers across thresholds using ROC and DET curves.",
-      "meta": {
-        "title": "Mastering Detection Error Tradeoff Curves",
-        "description": "Explore the power of Detection Error Tradeoff (DET) curves and compare them with Receiver Operating Characteristic (ROC) curves using Python and scikit-learn.",
-        "keywords": "det curves, roc curves, machine learning, detection error tradeoff, python, scikit-learn, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate Synthetic Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Define the Classifiers",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/ensemble",
-              "sklearn/pipeline",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Plot ROC and DET Curves",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
-          },
-          {
-            "title": "Interpretation of Results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "检测错误权衡曲线",
@@ -116,12 +122,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -133,12 +133,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/ensemble",
-              "sklearn/pipeline",
-              "sklearn/svm"
             ]
           },
           {
@@ -150,8 +144,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
+            ]
           },
           {
             "title": "结果解读",
@@ -162,13 +155,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -177,16 +168,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-det.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

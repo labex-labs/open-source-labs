@@ -1,10 +1,68 @@
 {
   "type": "lab",
+  "title": "Merging Multiple Python Dictionaries",
+  "description": "In this lab, you will learn how to merge two or more dictionaries in Python using the `update()` method to create a new dictionary that contains all the key-value pairs from the input dictionaries.",
+  "meta": {
+    "title": "Python Dictionaries | Merge Dictionaries",
+    "description": "Learn how to merge two or more dictionaries in Python and create a new dictionary with all the key-value pairs from the input dictionaries.",
+    "keywords": "Python, Dictionaries, Merge, Data Structures, Programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Merge Dictionaries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Merge Dictionaries Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_merge_dictionaries.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "merge_dictionaries.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +73,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Merging Multiple Python Dictionaries",
-      "description": "In this lab, you will learn how to merge two or more dictionaries in Python using the `update()` method to create a new dictionary that contains all the key-value pairs from the input dictionaries.",
-      "meta": {
-        "title": "Python Dictionaries | Merge Dictionaries",
-        "description": "Learn how to merge two or more dictionaries in Python and create a new dictionary with all the key-value pairs from the input dictionaries.",
-        "keywords": "Python, Dictionaries, Merge, Data Structures, Programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Merge Dictionaries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Merge Dictionaries Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "合并多个 Python 字典",
@@ -80,27 +91,13 @@
               {
                 "name": "验证合并字典的 Python 脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -109,21 +106,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_merge_dictionaries.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "merge_dictionaries.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Number to Fixed-Point Notation Without Trailing Zeros",
+  "description": "In this lab, we will explore how to format a number using fixed-point notation without trailing zeros in JavaScript. We will use the Number.prototype.toFixed() method to convert the number to a fixed-point notation string, followed by Number.parseFloat() to remove any trailing zeros. Finally, we will use a template literal to convert the number to a string. This lab is designed to help you gain a better understanding of how to format numbers in JavaScript using fixed-point notation.",
+  "meta": {
+    "title": "JavaScript | Fixed-Point Notation | Number Formatting",
+    "description": "Learn how to format numbers using fixed-point notation without trailing zeros in JavaScript. Explore the toFixed() and parseFloat() methods to achieve clean number representation.",
+    "keywords": "JavaScript, number formatting, fixed-point notation, toFixed, parseFloat, number representation"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Number to Fixed-Point Notation Without Trailing Zeros",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/template_lit",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Number to Fixed-Point Notation Without Trailing Zeros",
-      "description": "In this lab, we will explore how to format a number using fixed-point notation without trailing zeros in JavaScript. We will use the Number.prototype.toFixed() method to convert the number to a fixed-point notation string, followed by Number.parseFloat() to remove any trailing zeros. Finally, we will use a template literal to convert the number to a string. This lab is designed to help you gain a better understanding of how to format numbers in JavaScript using fixed-point notation.",
-      "meta": {
-        "title": "JavaScript | Fixed-Point Notation | Number Formatting",
-        "description": "Learn how to format numbers using fixed-point notation without trailing zeros in JavaScript. Explore the toFixed() and parseFloat() methods to achieve clean number representation.",
-        "keywords": "JavaScript, number formatting, fixed-point notation, toFixed, parseFloat, number representation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Number to Fixed-Point Notation Without Trailing Zeros",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/template_lit",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将数字转换为无尾随零的定点表示法",
@@ -76,23 +73,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按下回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，通过输入'node'并按下回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/template_lit",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,117 @@
 {
   "type": "lab",
+  "title": "3D Plots as Subplots",
+  "description": "In data analysis, it's often necessary to create 3D plots to visualize data. In Matplotlib, we can create 3D plots as subplots to compare different 3D data. This lab will demonstrate how to create 3D plots as subplots using Matplotlib.",
+  "meta": {
+    "title": "3D Plots as Subplots: Mastering Data Visualization",
+    "description": "Discover how to create captivating 3D plots as subplots using Matplotlib, a powerful data visualization tool.",
+    "keywords": "subplots, matplotlib, python, 3d plots, data visualization"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create the Figure and Subplots",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/comments", "python/tuples", "python/with_statement"]
+      },
+      {
+        "title": "Create the 3D Surface Plot",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/3d_plots",
+          "python/booleans",
+          "python/comments",
+          "python/for_loops",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the 3D Wireframe Plot",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/3d_plots",
+          "python/comments",
+          "python/for_loops",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Show the Plot",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "subplot3d.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,111 +122,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "3D Plots as Subplots",
-      "description": "In data analysis, it's often necessary to create 3D plots to visualize data. In Matplotlib, we can create 3D plots as subplots to compare different 3D data. This lab will demonstrate how to create 3D plots as subplots using Matplotlib.",
-      "meta": {
-        "title": "3D Plots as Subplots: Mastering Data Visualization",
-        "description": "Discover how to create captivating 3D plots as subplots using Matplotlib, a powerful data visualization tool.",
-        "keywords": "subplots, matplotlib, python, 3d plots, data visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create the Figure and Subplots",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Create the 3D Surface Plot",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/3d_plots",
-              "python/booleans",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the 3D Wireframe Plot",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/3d_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Show the Plot",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "作为子图的三维绘图",
@@ -140,14 +142,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -159,11 +153,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -175,13 +164,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/3d_plots",
-              "python/booleans",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
             ]
           },
           {
@@ -193,12 +175,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/3d_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/tuples"
             ]
           },
           {
@@ -210,13 +186,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -225,16 +199,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "subplot3d.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

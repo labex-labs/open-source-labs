@@ -1,10 +1,102 @@
 {
   "type": "lab",
+  "title": "Multiclass and Multioutput Algorithms",
+  "description": "In this lab, we will explore the functionality and usage of multiclass and multioutput algorithms in scikit-learn. Multiclass classification is a classification task where samples are assigned to more than two classes. Multioutput classification, on the other hand, predicts multiple properties for each sample. We will cover the following topics:",
+  "meta": {
+    "title": "Multiclass & Multioutput Algorithms in Scikit-Learn | Machine Learning",
+    "description": "Explore multiclass classification, multilabel classification, multiclass-multioutput classification, and multioutput regression using scikit-learn. Enhance your machine learning skills with this comprehensive tutorial.",
+    "keywords": "multiclass classification, multilabel classification, multiclass-multioutput classification, multioutput regression, scikit-learn, machine learning"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Multiclass Classification",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/linear_model", "sklearn/multiclass"]
+      },
+      {
+        "title": "Multilabel Classification",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/ensemble",
+          "sklearn/multioutput"
+        ]
+      },
+      {
+        "title": "Multiclass-Multioutput Classification",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/multioutput",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Multioutput Regression",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/linear_model",
+          "sklearn/multioutput"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "12-multiclass-and-multioutput-algorithms.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,96 +107,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Multiclass and Multioutput Algorithms",
-      "description": "In this lab, we will explore the functionality and usage of multiclass and multioutput algorithms in scikit-learn. Multiclass classification is a classification task where samples are assigned to more than two classes. Multioutput classification, on the other hand, predicts multiple properties for each sample. We will cover the following topics:",
-      "meta": {
-        "title": "Multiclass & Multioutput Algorithms in Scikit-Learn | Machine Learning",
-        "description": "Explore multiclass classification, multilabel classification, multiclass-multioutput classification, and multioutput regression using scikit-learn. Enhance your machine learning skills with this comprehensive tutorial.",
-        "keywords": "multiclass classification, multilabel classification, multiclass-multioutput classification, multioutput regression, scikit-learn, machine learning"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Multiclass Classification",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/multiclass"
-            ]
-          },
-          {
-            "title": "Multilabel Classification",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/ensemble",
-              "sklearn/multioutput"
-            ]
-          },
-          {
-            "title": "Multiclass-Multioutput Classification",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/multioutput",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Multioutput Regression",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/multioutput"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "多类和多输出算法",
@@ -125,11 +127,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/multiclass"
             ]
           },
           {
@@ -141,12 +138,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/ensemble",
-              "sklearn/multioutput"
             ]
           },
           {
@@ -158,12 +149,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/multioutput",
-              "sklearn/svm"
             ]
           },
           {
@@ -175,18 +160,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/linear_model",
-              "sklearn/multioutput"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -195,16 +173,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "12-multiclass-and-multioutput-algorithms.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,125 @@
 {
   "type": "lab",
+  "title": "Image Plotting with Matplotlib",
+  "description": "In this lab, you will learn how to plot and manipulate images using the Matplotlib library in Python. You will learn how to import image data into NumPy arrays, plot numpy arrays as images, apply pseudocolor schemes, add color scale references, examine specific data ranges, and explore different interpolation schemes.",
+  "meta": {
+    "title": "Image Plotting and Manipulation | Python Matplotlib Tutorial",
+    "description": "Learn how to plot and manipulate images using the Matplotlib library in Python. Explore techniques like importing image data, applying pseudocolor schemes, and examining data ranges.",
+    "keywords": "Python, Matplotlib, Image Plotting, Image Manipulation, NumPy, Data Visualization"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Importing Image Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/build_in_functions",
+          "python/data_visualization",
+          "python/file_opening_closing",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Plotting Images",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/heatmaps"]
+      },
+      {
+        "title": "Applying Pseudocolor Schemes",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/heatmaps", "python/lists", "python/tuples"]
+      },
+      {
+        "title": "Adding Color Scale Reference",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/heatmaps"]
+      },
+      {
+        "title": "Examining Specific Data Ranges",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/heatmaps", "python/tuples"]
+      },
+      {
+        "title": "Array Interpolation Schemes",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["matplotlib/heatmaps", "python/tuples"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "03-image-plotting-with-matplotlib.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "stinkbug.png",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,110 +130,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Image Plotting with Matplotlib",
-      "description": "In this lab, you will learn how to plot and manipulate images using the Matplotlib library in Python. You will learn how to import image data into NumPy arrays, plot numpy arrays as images, apply pseudocolor schemes, add color scale references, examine specific data ranges, and explore different interpolation schemes.",
-      "meta": {
-        "title": "Image Plotting and Manipulation | Python Matplotlib Tutorial",
-        "description": "Learn how to plot and manipulate images using the Matplotlib library in Python. Explore techniques like importing image data, applying pseudocolor schemes, and examining data ranges.",
-        "keywords": "Python, Matplotlib, Image Plotting, Image Manipulation, NumPy, Data Visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Importing Image Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/data_visualization",
-              "python/file_opening_closing",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Plotting Images",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/heatmaps"]
-          },
-          {
-            "title": "Applying Pseudocolor Schemes",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/lists", "python/tuples"]
-          },
-          {
-            "title": "Adding Color Scale Reference",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/heatmaps"]
-          },
-          {
-            "title": "Examining Specific Data Ranges",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/tuples"]
-          },
-          {
-            "title": "Array Interpolation Schemes",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/tuples"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib绘制图像",
@@ -139,16 +150,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/build_in_functions",
-              "python/data_visualization",
-              "python/file_opening_closing",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -160,8 +161,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/heatmaps"]
+            ]
           },
           {
             "title": "应用伪彩色方案",
@@ -172,8 +172,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/lists", "python/tuples"]
+            ]
           },
           {
             "title": "添加颜色刻度参考",
@@ -184,8 +183,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/heatmaps"]
+            ]
           },
           {
             "title": "检查特定数据范围",
@@ -196,8 +194,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/tuples"]
+            ]
           },
           {
             "title": "数组插值方案",
@@ -208,13 +205,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["matplotlib/heatmaps", "python/tuples"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -223,21 +218,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "03-image-plotting-with-matplotlib.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "stinkbug.png",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

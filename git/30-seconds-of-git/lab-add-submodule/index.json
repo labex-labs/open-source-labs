@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Add a Submodule",
+  "description": "Submodules are a way to include one Git repository as a subdirectory of another Git repository. This can be useful when you want to include a third-party library or a shared codebase in your project. In this lab, you will learn how to add a submodule to a Git repository.",
+  "meta": {
+    "title": "Add a Submodule to Git Repository",
+    "description": "Learn how to include a third-party library or shared codebase as a submodule in your Git project.",
+    "keywords": "repository, git labs, third party library, shared codebase, git, submodule, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Add a Submodule",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for submodules in 'my-project' directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/add"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Add a Submodule",
-      "description": "Submodules are a way to include one Git repository as a subdirectory of another Git repository. This can be useful when you want to include a third-party library or a shared codebase in your project. In this lab, you will learn how to add a submodule to a Git repository.",
-      "meta": {
-        "title": "Add a Submodule to Git Repository",
-        "description": "Learn how to include a third-party library or shared codebase as a submodule in your Git project.",
-        "keywords": "repository, git labs, third party library, shared codebase, git, submodule, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Add a Submodule",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for submodules in 'my-project' directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/add"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "添加子模块",
@@ -70,17 +67,13 @@
               {
                 "name": "验证'my-project' 目录中的子模块",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/add"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

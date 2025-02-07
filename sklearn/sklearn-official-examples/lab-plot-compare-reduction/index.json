@@ -1,10 +1,108 @@
 {
   "type": "lab",
+  "title": "Dimensionality Reduction with Pipeline and GridSearchCV",
+  "description": "This lab demonstrates the use of Pipeline and GridSearchCV in scikit-learn to optimize over different classes of estimators in a single CV run. We will be using a support vector classifier to predict hand-written digits from the popular MNIST dataset.",
+  "meta": {
+    "title": "Optimize Machine Learning Models with Pipeline and GridSearchCV",
+    "description": "Learn how to use Pipeline and GridSearchCV in scikit-learn to optimize support vector classifiers for hand-written digit recognition on the MNIST dataset.",
+    "keywords": "Machine Learning, Optimization, Pipeline, GridSearchCV, Support Vector Classifier, MNIST"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries and load data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/decomposition",
+          "sklearn/feature_selection",
+          "sklearn/model_selection",
+          "sklearn/pipeline",
+          "sklearn/preprocessing",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Create a pipeline and define parameter grid",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Create a GridSearchCV object and fit data",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Caching transformers within a Pipeline",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-compare-reduction.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,98 +113,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Dimensionality Reduction with Pipeline and GridSearchCV",
-      "description": "This lab demonstrates the use of Pipeline and GridSearchCV in scikit-learn to optimize over different classes of estimators in a single CV run. We will be using a support vector classifier to predict hand-written digits from the popular MNIST dataset.",
-      "meta": {
-        "title": "Optimize Machine Learning Models with Pipeline and GridSearchCV",
-        "description": "Learn how to use Pipeline and GridSearchCV in scikit-learn to optimize support vector classifiers for hand-written digit recognition on the MNIST dataset.",
-        "keywords": "Machine Learning, Optimization, Pipeline, GridSearchCV, Support Vector Classifier, MNIST"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries and load data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/decomposition",
-              "sklearn/feature_selection",
-              "sklearn/model_selection",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Create a pipeline and define parameter grid",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Create a GridSearchCV object and fit data",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Caching transformers within a Pipeline",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用管道和网格搜索交叉验证进行降维",
@@ -127,16 +133,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/decomposition",
-              "sklearn/feature_selection",
-              "sklearn/model_selection",
-              "sklearn/pipeline",
-              "sklearn/preprocessing",
-              "sklearn/svm"
             ]
           },
           {
@@ -148,8 +144,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "创建一个GridSearchCV对象并拟合数据",
@@ -160,8 +155,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制结果",
@@ -172,8 +166,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "在管道中缓存转换器",
@@ -184,13 +177,11 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -199,16 +190,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-compare-reduction.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

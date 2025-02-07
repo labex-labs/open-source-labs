@@ -1,10 +1,97 @@
 {
   "type": "lab",
+  "title": "Advanced Quiver and Quiverkey Functions",
+  "description": "Matplotlib is a data visualization library in Python that allows users to create a wide range of 2D and 3D plots. One of the many useful features of Matplotlib is the ability to create quiver plots, which display vector fields.",
+  "meta": {
+    "title": "Advanced Quiver and Quiverkey Functions in Matplotlib",
+    "description": "Explore advanced options for customizing quiver plots in Matplotlib, including arrow scale, pivot point, and arrow frequency.",
+    "keywords": "matplotlib, vector field, python, data visualization, quiver plot"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Arrows Scale with Plot Width, Not View",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/quiver_plots",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/sets",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Pivot Point and Arrow Frequency",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/quiver_plots",
+          "matplotlib/scatter_plots",
+          "python/lists",
+          "python/sets",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Scale Arrows with X View",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/quiver_plots",
+          "matplotlib/scatter_plots",
+          "python/sets",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "quiver-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,87 +102,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Advanced Quiver and Quiverkey Functions",
-      "description": "Matplotlib is a data visualization library in Python that allows users to create a wide range of 2D and 3D plots. One of the many useful features of Matplotlib is the ability to create quiver plots, which display vector fields.",
-      "meta": {
-        "title": "Advanced Quiver and Quiverkey Functions in Matplotlib",
-        "description": "Explore advanced options for customizing quiver plots in Matplotlib, including arrow scale, pivot point, and arrow frequency.",
-        "keywords": "matplotlib, vector field, python, data visualization, quiver plot"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Arrows Scale with Plot Width, Not View",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/quiver_plots",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Pivot Point and Arrow Frequency",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/quiver_plots",
-              "matplotlib/scatter_plots",
-              "python/lists",
-              "python/sets",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Scale Arrows with X View",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/quiver_plots",
-              "matplotlib/scatter_plots",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 中 quiver 和 quiverkey 函数的高级用法",
@@ -116,17 +122,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/quiver_plots",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -138,13 +133,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/quiver_plots",
-              "matplotlib/scatter_plots",
-              "python/lists",
-              "python/sets",
-              "python/tuples"
             ]
           },
           {
@@ -156,19 +144,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/quiver_plots",
-              "matplotlib/scatter_plots",
-              "python/sets",
-              "python/tuples",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -177,16 +157,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "quiver-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

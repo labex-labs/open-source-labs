@@ -1,10 +1,64 @@
 {
   "type": "lab",
+  "title": "Key of Max Value",
+  "description": "In Python, dictionaries are a useful data structure that allows you to store key-value pairs. Sometimes, you may need to find the key of the maximum value in a dictionary. In this challenge, you will write a function that takes a dictionary as an argument and returns the key of the maximum value in the dictionary.",
+  "meta": {
+    "title": "How to Find key with Max Value in Python Dictionary",
+    "description": "Learn how to find the key with maximum value in Python dictionary using max(), lambda, and dictionary methods. Step-by-step guide with practical examples for efficient dictionary operations.",
+    "keywords": "key, python, dictionary, programming, max value"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Key of Max Value",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Key of Maximum Value",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_key_of_max.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "key_of_max.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +69,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Key of Max Value",
-      "description": "In Python, dictionaries are a useful data structure that allows you to store key-value pairs. Sometimes, you may need to find the key of the maximum value in a dictionary. In this challenge, you will write a function that takes a dictionary as an argument and returns the key of the maximum value in the dictionary.",
-      "meta": {
-        "title": "How to Find key with Max Value in Python Dictionary",
-        "description": "Learn how to find the key with maximum value in Python dictionary using max(), lambda, and dictionary methods. Step-by-step guide with practical examples for efficient dictionary operations.",
-        "keywords": "key, python, dictionary, programming, max value"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Key of Max Value",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Key of Maximum Value",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "最大值的键",
@@ -76,23 +87,13 @@
               {
                 "name": "验证最大值的键",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -101,21 +102,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_key_of_max.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "key_of_max.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

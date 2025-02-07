@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Filesystem Operations in Rust",
+  "description": "In this lab, the std::fs module in Rust is introduced, which provides functions for filesystem operations. The lab provides examples of various filesystem operations including creating directories, creating files, reading file contents, creating symbolic links, listing directory contents, removing files, and removing directories. The code snippets demonstrate how to perform these operations using the std::fs module functions, and the expected output for each operation is provided. Additionally, an alternative implementation of the cat function using the ? notation for error handling is mentioned.",
+  "meta": {
+    "title": "Mastering Filesystem Operations in Rust",
+    "description": "Explore the powerful capabilities of the Rust standard library's filesystem module with hands-on examples and practical applications.",
+    "keywords": "rust playground, directory management, filesystem, file operations, rust tutor, rust online compiler, rust commands, rust practice, rust online, rust online playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Filesystem Operations",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/boolean_type",
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Filesystem Operations in Rust",
-      "description": "In this lab, the std::fs module in Rust is introduced, which provides functions for filesystem operations. The lab provides examples of various filesystem operations including creating directories, creating files, reading file contents, creating symbolic links, listing directory contents, removing files, and removing directories. The code snippets demonstrate how to perform these operations using the std::fs module functions, and the expected output for each operation is provided. Additionally, an alternative implementation of the cat function using the ? notation for error handling is mentioned.",
-      "meta": {
-        "title": "Mastering Filesystem Operations in Rust",
-        "description": "Explore the powerful capabilities of the Rust standard library's filesystem module with hands-on examples and practical applications.",
-        "keywords": "rust playground, directory management, filesystem, file operations, rust tutor, rust online compiler, rust commands, rust practice, rust online, rust online playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Filesystem Operations",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 中的文件系统操作",
@@ -80,27 +77,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/boolean_type",
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

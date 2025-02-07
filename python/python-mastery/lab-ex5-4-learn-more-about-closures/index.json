@@ -1,10 +1,104 @@
 {
   "type": "lab",
+  "title": "Learn More About Closures",
+  "description": "In this lab, you will explore the more unusual aspects of closures in JavaScript.",
+  "meta": {
+    "title": "Exploring the Power of Closures in Python",
+    "description": "Dive into the fascinating world of closures and learn how to leverage their unique capabilities in Python programming.",
+    "keywords": "data encapsulation, closures, python, code generation, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Closures as a data structure",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Function Definition and Usage",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/function_definition",
+          "python/python_shell",
+          "python/scope"
+        ]
+      },
+      {
+        "title": "Closures as a code generator",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Files with Properties Setters Lambdas",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lambda_functions",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ],
+        "solutions": ["typedproperty.py"]
+      },
+      {
+        "title": "Challenge: Eliminating names",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/polymorphism",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,103 +109,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Learn More About Closures",
-      "description": "In this lab, you will explore the more unusual aspects of closures in JavaScript.",
-      "meta": {
-        "title": "Exploring the Power of Closures in Python",
-        "description": "Dive into the fascinating world of closures and learn how to leverage their unique capabilities in Python programming.",
-        "keywords": "data encapsulation, closures, python, code generation, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Closures as a data structure",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Function Definition and Usage",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/function_definition",
-              "python/python_shell",
-              "python/scope"
-            ]
-          },
-          {
-            "title": "Closures as a code generator",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Files with Properties Setters Lambdas",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["typedproperty.py"]
-          },
-          {
-            "title": "Challenge: Eliminating names",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/polymorphism",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "深入了解闭包",
@@ -130,15 +127,8 @@
               {
                 "name": "验证Python函数定义和用法",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/function_definition",
-              "python/python_shell",
-              "python/scope"
             ]
           },
           {
@@ -148,29 +138,8 @@
               {
                 "name": "验证带有属性设置器lambda的Python文件",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
             ],
             "solutions": ["typedproperty.py"]
           },
@@ -181,26 +150,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/polymorphism",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

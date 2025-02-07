@@ -1,10 +1,69 @@
 {
   "type": "lab",
+  "title": "Find Key by Value in Python Dictionary",
+  "description": "Dictionaries are a powerful data structure in Python that allow you to store key-value pairs. Sometimes, you may need to find the key associated with a particular value in a dictionary. In this challenge, you will write a function that takes a dictionary and a value as input, and returns the first key in the dictionary that has the given value.",
+  "meta": {
+    "title": "Find the Key of a Value in a Python Dictionary",
+    "description": "Learn how to find the first key associated with a given value in a Python dictionary.",
+    "keywords": "key, python, value, dictionary, lookup"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Find the Key of a Value in a Dictionary",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Test in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/function_definition",
+          "python/iterators",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_find_key.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "find_key.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +74,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Find Key by Value in Python Dictionary",
-      "description": "Dictionaries are a powerful data structure in Python that allow you to store key-value pairs. Sometimes, you may need to find the key associated with a particular value in a dictionary. In this challenge, you will write a function that takes a dictionary and a value as input, and returns the first key in the dictionary that has the given value.",
-      "meta": {
-        "title": "Find the Key of a Value in a Python Dictionary",
-        "description": "Learn how to find the first key associated with a given value in a Python dictionary.",
-        "keywords": "key, python, value, dictionary, lookup"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Find the Key of a Value in a Dictionary",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Test in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/iterators",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python字典中按值查找键",
@@ -81,28 +92,13 @@
               {
                 "name": "在临时目录中验证Python脚本测试",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/function_definition",
-              "python/iterators",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -111,21 +107,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_find_key.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "find_key.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

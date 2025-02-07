@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Retrieve Maximum Elements from Array",
+  "description": "In this lab, we will explore the maxN function which is used to return the n maximum elements from a given array. We will learn how to use Array.prototype.sort(), the spread operator (...), and Array.prototype.slice() to sort and slice the array in descending order and return the specified number of elements. This lab will help you improve your understanding of manipulating arrays in JavaScript.",
+  "meta": {
+    "title": "Get N Max Elements from Array in JavaScript | Array Manipulation",
+    "description": "Learn how to use JavaScript's built-in array methods to get the n maximum elements from an array. Improve your skills in array manipulation and sorting.",
+    "keywords": "JavaScript, array, max elements, array manipulation, sorting, slice, sort"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "N Max Elements",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Retrieve Maximum Elements from Array",
-      "description": "In this lab, we will explore the maxN function which is used to return the n maximum elements from a given array. We will learn how to use Array.prototype.sort(), the spread operator (...), and Array.prototype.slice() to sort and slice the array in descending order and return the specified number of elements. This lab will help you improve your understanding of manipulating arrays in JavaScript.",
-      "meta": {
-        "title": "Get N Max Elements from Array in JavaScript | Array Manipulation",
-        "description": "Learn how to use JavaScript's built-in array methods to get the n maximum elements from an array. Improve your skills in array manipulation and sorting.",
-        "keywords": "JavaScript, array, max elements, array manipulation, sorting, slice, sort"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "N Max Elements",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从数组中检索最大元素",
@@ -76,23 +73,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

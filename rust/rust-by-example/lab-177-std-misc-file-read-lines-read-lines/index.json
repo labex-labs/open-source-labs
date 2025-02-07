@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Efficient File Reading in Rust",
+  "description": "In this lab, we are given a naive implementation and a more efficient implementation for reading lines from a file in Rust. The naive approach uses read_to_string to read the file into a single string and then splits it into lines, while the more efficient approach uses a BufReader to read the file line by line without loading the entire contents into memory.",
+  "meta": {
+    "title": "Efficient File Reading in Rust | Programming Tutorials",
+    "description": "Explore the differences between a naive and efficient approach to reading lines from a file in Rust. Learn how to use BufReader for better performance.",
+    "keywords": "Rust, file reading, BufReader, programming tutorials, efficient coding"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "read_lines",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/for_loop",
+          "rust/function_syntax",
+          "rust/method_syntax",
+          "rust/mutable_variables",
+          "rust/operator_overloading",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Efficient File Reading in Rust",
-      "description": "In this lab, we are given a naive implementation and a more efficient implementation for reading lines from a file in Rust. The naive approach uses read_to_string to read the file into a single string and then splits it into lines, while the more efficient approach uses a BufReader to read the file line by line without loading the entire contents into memory.",
-      "meta": {
-        "title": "Efficient File Reading in Rust | Programming Tutorials",
-        "description": "Explore the differences between a naive and efficient approach to reading lines from a file in Rust. Learn how to use BufReader for better performance.",
-        "keywords": "Rust, file reading, BufReader, programming tutorials, efficient coding"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "read_lines",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 中的高效文件读取",
@@ -78,25 +75,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/for_loop",
-              "rust/function_syntax",
-              "rust/method_syntax",
-              "rust/mutable_variables",
-              "rust/operator_overloading",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

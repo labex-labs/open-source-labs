@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Strings and Runes",
+  "description": "This lab focuses on Go strings and runes. In Go, strings are read-only slices of bytes, and runes are integers that represent Unicode code points. This lab will explore how to work with strings and runes in Go.",
+  "meta": {
+    "title": "Go Strings and Runes | Programming Tutorials | Lab",
+    "description": "Explore the fundamentals of working with strings and runes in Go programming language. Learn how to handle UTF-8 encoded text and manipulate Unicode code points.",
+    "keywords": "Go, Strings, Runes, Programming, Tutorials, UTF-8, Unicode"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Strings and Runes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Program Outputs Length of String",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/strings"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "strings-and-runes.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Strings and Runes",
-      "description": "This lab focuses on Go strings and runes. In Go, strings are read-only slices of bytes, and runes are integers that represent Unicode code points. This lab will explore how to work with strings and runes in Go.",
-      "meta": {
-        "title": "Go Strings and Runes | Programming Tutorials | Lab",
-        "description": "Explore the fundamentals of working with strings and runes in Go programming language. Learn how to handle UTF-8 encoded text and manipulate Unicode code points.",
-        "keywords": "Go, Strings, Runes, Programming, Tutorials, UTF-8, Unicode"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Strings and Runes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Program Outputs Length of String",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/strings"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "字符串与符文",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go程序输出字符串长度",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/strings"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "strings-and-runes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

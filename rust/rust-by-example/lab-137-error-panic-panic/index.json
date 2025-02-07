@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Rust Panic Handling Example",
+  "description": "In this lab, we learn about the error handling mechanism panic in Rust. It is a simple mechanism that prints an error message, unwinds the stack, and usually exits the program. The lab provides an example where panic is explicitly called when the beverage is 'lemonade'.",
+  "meta": {
+    "title": "Rust Panic Handling: Mastering Error Management in Your Code",
+    "description": "Explore the power of Rust's panic handling mechanism and learn how to effectively manage errors in your programming projects.",
+    "keywords": "rust playground, error management, tutorials, rust tutor, rust online compiler, panic handling, rust commands, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "panic",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/lifetime_specifiers",
+          "rust/panic_usage",
+          "rust/string_type"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Panic Handling Example",
-      "description": "In this lab, we learn about the error handling mechanism panic in Rust. It is a simple mechanism that prints an error message, unwinds the stack, and usually exits the program. The lab provides an example where panic is explicitly called when the beverage is 'lemonade'.",
-      "meta": {
-        "title": "Rust Panic Handling: Mastering Error Management in Your Code",
-        "description": "Explore the power of Rust's panic handling mechanism and learn how to effectively manage errors in your programming projects.",
-        "keywords": "rust playground, error management, tutorials, rust tutor, rust online compiler, panic handling, rust commands, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "panic",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/panic_usage",
-              "rust/string_type"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 恐慌处理示例",
@@ -76,23 +73,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/lifetime_specifiers",
-              "rust/panic_usage",
-              "rust/string_type"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

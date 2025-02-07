@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Delete Merged Branches",
+  "description": "In this lab, you will learn how to delete local Git branches that have been merged into the `master` branch, keeping your repository clean and organized.",
+  "meta": {
+    "title": "Streamline Your Git Workflow: Deleting Merged Branches",
+    "description": "Learn how to efficiently manage your Git repository by deleting merged branches and keeping your codebase organized.",
+    "keywords": "branch management, repository cleanup, workflow optimization, git labs, code organization, git, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Delete Merged Branches",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful deletion",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/merge"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Delete Merged Branches",
-      "description": "In this lab, you will learn how to delete local Git branches that have been merged into the `master` branch, keeping your repository clean and organized.",
-      "meta": {
-        "title": "Streamline Your Git Workflow: Deleting Merged Branches",
-        "description": "Learn how to efficiently manage your Git repository by deleting merged branches and keeping your codebase organized.",
-        "keywords": "branch management, repository cleanup, workflow optimization, git labs, code organization, git, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Delete Merged Branches",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful deletion",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/merge"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "删除已合并的分支",
@@ -70,17 +67,13 @@
               {
                 "name": "验证删除是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/merge"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

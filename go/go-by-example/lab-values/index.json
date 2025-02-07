@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Go Basics: Value Types Exploration",
+  "description": "This lab aims to test your understanding of Golang's basic value types, including strings, integers, floats, and booleans.",
+  "meta": {
+    "title": "Go Programming Basics | Value Types Tutorial",
+    "description": "Explore Golang's fundamental value types, including strings, integers, floats, and booleans. Complete a function to calculate sum and product of two integers.",
+    "keywords": "Go Programming, Value Types, Golang, Integers, Floats, Booleans"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Value Types",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Run Values Output Contains Golang",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/values"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "values.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Go Basics: Value Types Exploration",
-      "description": "This lab aims to test your understanding of Golang's basic value types, including strings, integers, floats, and booleans.",
-      "meta": {
-        "title": "Go Programming Basics | Value Types Tutorial",
-        "description": "Explore Golang's fundamental value types, including strings, integers, floats, and booleans. Complete a function to calculate sum and product of two integers.",
-        "keywords": "Go Programming, Value Types, Golang, Integers, Floats, Booleans"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Value Types",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Run Values Output Contains Golang",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/values"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go语言基础：值类型探索",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go运行值输出是否包含Golang",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/values"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "values.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

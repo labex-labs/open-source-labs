@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Capitalize First Letter in JavaScript",
+  "description": "In this lab, we will explore a JavaScript function called capitalize that capitalizes the first letter of a string. The function uses array destructuring and String.prototype.toUpperCase() to achieve the desired result. We will also see how to use the lowerRest argument to convert the rest of the string to lowercase if needed.",
+  "meta": {
+    "title": "JavaScript | Capitalize First Letter | String Manipulation",
+    "description": "Learn how to use a JavaScript function to capitalize the first letter of a string, with optional conversion of the rest of the string to lowercase. Explore array destructuring and String.prototype.toUpperCase().",
+    "keywords": "JavaScript, Capitalize, String, First Letter, Manipulation, Array Destructuring, toUpperCase"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Capitalize String",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Capitalize First Letter in JavaScript",
-      "description": "In this lab, we will explore a JavaScript function called capitalize that capitalizes the first letter of a string. The function uses array destructuring and String.prototype.toUpperCase() to achieve the desired result. We will also see how to use the lowerRest argument to convert the rest of the string to lowercase if needed.",
-      "meta": {
-        "title": "JavaScript | Capitalize First Letter | String Manipulation",
-        "description": "Learn how to use a JavaScript function to capitalize the first letter of a string, with optional conversion of the rest of the string to lowercase. Explore array destructuring and String.prototype.toUpperCase().",
-        "keywords": "JavaScript, Capitalize, String, First Letter, Manipulation, Array Destructuring, toUpperCase"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Capitalize String",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在 JavaScript 中大写首字母",
@@ -76,23 +73,13 @@
               {
                 "name": "验证 Node 命令用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中，通过输入 'node' 并按下回车键即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

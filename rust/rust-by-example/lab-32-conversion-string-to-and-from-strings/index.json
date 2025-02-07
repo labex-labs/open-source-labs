@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "To and From Strings",
+  "description": "In this lab, we will learn about converting to and from strings in Rust. To convert any type to a string, we can implement the ToString trait for the type. Alternatively, we can implement the fmt::Display trait, which automatically provides the ToString trait and allows us to print the type using println!. On the other hand, to parse a string into a specific type, such as a number, we can use the parse function along with type inference or by specifying the type using the 'turbofish' syntax. This relies on the FromStr trait, which is implemented for many types in the standard library. If we want to parse a string into a user-defined type, we can implement the FromStr trait for that type.",
+  "meta": {
+    "title": "Converting to and from Strings in Rust",
+    "description": "Learn how to convert any type to a string and parse a string into a specific type in Rust.",
+    "keywords": "rust playground, tostring, fromstr, string conversion, rust tutor, rust online compiler, string parsing, rust commands, rust practice, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "To and from Strings",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/method_syntax",
+          "rust/string_type",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "To and From Strings",
-      "description": "In this lab, we will learn about converting to and from strings in Rust. To convert any type to a string, we can implement the ToString trait for the type. Alternatively, we can implement the fmt::Display trait, which automatically provides the ToString trait and allows us to print the type using println!. On the other hand, to parse a string into a specific type, such as a number, we can use the parse function along with type inference or by specifying the type using the 'turbofish' syntax. This relies on the FromStr trait, which is implemented for many types in the standard library. If we want to parse a string into a user-defined type, we can implement the FromStr trait for that type.",
-      "meta": {
-        "title": "Converting to and from Strings in Rust",
-        "description": "Learn how to convert any type to a string and parse a string into a specific type in Rust.",
-        "keywords": "rust playground, tostring, fromstr, string conversion, rust tutor, rust online compiler, string parsing, rust commands, rust practice, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "To and from Strings",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "与字符串的转换",
@@ -78,25 +75,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/method_syntax",
-              "rust/string_type",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

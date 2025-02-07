@@ -1,10 +1,146 @@
 {
   "type": "lab",
+  "title": "A Review of Module Basics",
+  "description": "In this lab, you will learn about creating, importing, and using modules in Python.",
+  "meta": {
+    "title": "A Review of Module Basics in Python",
+    "description": "Explore the fundamentals of modules in Python, including creating, importing, and using modules effectively.",
+    "keywords": "software development, python, coding, modules, programming"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Preparation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Presence of Functions, Prints, and Classes",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/scope",
+          "python/tuples"
+        ],
+        "solutions": ["simplemod.py"]
+      },
+      {
+        "title": "Module Loading and System Path",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Import History",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/importing_modules",
+          "python/os_system",
+          "python/python_shell",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "Repeated Module Loading",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Python History Commands Usage",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/importing_modules",
+          "python/lists",
+          "python/os_system",
+          "python/python_shell",
+          "python/standard_libraries"
+        ]
+      },
+      {
+        "title": "from module import",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Python History Imports",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Broken reload()",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Import and Use of simplemod Module",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "simplemod.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,136 +151,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "A Review of Module Basics",
-      "description": "In this lab, you will learn about creating, importing, and using modules in Python.",
-      "meta": {
-        "title": "A Review of Module Basics in Python",
-        "description": "Explore the fundamentals of modules in Python, including creating, importing, and using modules effectively.",
-        "keywords": "software development, python, coding, modules, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Presence of Functions, Prints, and Classes",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/scope",
-              "python/tuples"
-            ],
-            "solutions": ["simplemod.py"]
-          },
-          {
-            "title": "Module Loading and System Path",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Import History",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/importing_modules",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "Repeated Module Loading",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Python History Commands Usage",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/importing_modules",
-              "python/lists",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries"
-            ]
-          },
-          {
-            "title": "from module import",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Python History Imports",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Broken reload()",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Import and Use of simplemod Module",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "模块基础回顾",
@@ -163,19 +169,8 @@
               {
                 "name": "验证函数、打印语句和类的存在",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/scope",
-              "python/tuples"
             ],
             "solutions": ["simplemod.py"]
           },
@@ -186,16 +181,8 @@
               {
                 "name": "验证Python导入历史记录",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/importing_modules",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries"
             ]
           },
           {
@@ -205,17 +192,8 @@
               {
                 "name": "验证Python历史命令的使用情况",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/importing_modules",
-              "python/lists",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries"
             ]
           },
           {
@@ -225,17 +203,8 @@
               {
                 "name": "验证Python历史导入记录",
                 "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/using_packages"
             ]
           },
           {
@@ -245,28 +214,13 @@
               {
                 "name": "验证simplemod模块的导入和使用",
                 "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -275,16 +229,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "simplemod.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

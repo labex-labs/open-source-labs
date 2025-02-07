@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Rust Constants Exploration",
+  "description": "In this lab, we are introduced to the concept of constants in Rust, which can be declared using either const or static keywords, with explicit type annotations, and can be accessed in any scope, including the global scope.",
+  "meta": {
+    "title": "Rust Constants Exploration: Mastering Immutable and Mutable Variables",
+    "description": "Dive into the world of Rust constants and explore the differences between const and static variables.",
+    "keywords": "constants, rust playground, static, variables, rust online compiler, immutable, rust tutor, rust commands, rust practice, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "constants",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/constants_usage",
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/string_type",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Constants Exploration",
-      "description": "In this lab, we are introduced to the concept of constants in Rust, which can be declared using either const or static keywords, with explicit type annotations, and can be accessed in any scope, including the global scope.",
-      "meta": {
-        "title": "Rust Constants Exploration: Mastering Immutable and Mutable Variables",
-        "description": "Dive into the world of Rust constants and explore the differences between const and static variables.",
-        "keywords": "constants, rust playground, static, variables, rust online compiler, immutable, rust tutor, rust commands, rust practice, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "constants",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/constants_usage",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/string_type",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索Rust常量",
@@ -77,24 +74,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/constants_usage",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/string_type",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

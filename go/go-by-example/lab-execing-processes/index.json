@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Replacing Go Process with exec",
+  "description": "This lab focuses on replacing the current Go process with another process using Go's implementation of the classic exec function.",
+  "meta": {
+    "title": "Go Exec Function | Process Replacement Tutorial",
+    "description": "Learn how to replace the current Go process with another process using Go's implementation of the classic exec function.",
+    "keywords": "Go programming, exec function, process replacement, process execution, environment variables"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Execing Processes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Program Execing Processes",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/processes"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "execing-processes.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Replacing Go Process with exec",
-      "description": "This lab focuses on replacing the current Go process with another process using Go's implementation of the classic exec function.",
-      "meta": {
-        "title": "Go Exec Function | Process Replacement Tutorial",
-        "description": "Learn how to replace the current Go process with another process using Go's implementation of the classic exec function.",
-        "keywords": "Go programming, exec function, process replacement, process execution, environment variables"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Execing Processes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Program Execing Processes",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/processes"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用exec替换Go进程",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go程序执行进程",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/processes"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "execing-processes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

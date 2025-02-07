@@ -1,286 +1,138 @@
 {
   "type": "lab",
+  "title": "Redefining Special Methods",
+  "description": "In this lab, you will learn how to customize the behavior of objects in Python by redefining special methods.",
+  "meta": {
+    "title": "Redefining Special Methods in Python",
+    "description": "Learn how to customize the behavior of objects by redefining special methods in Python.",
+    "keywords": "eq, python, object oriented programming, special methods, repr"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Redefining Special Methods",
-      "description": "In this lab, you will learn how to customize the behavior of objects in Python by redefining special methods.",
-      "meta": {
-        "title": "Redefining Special Methods in Python",
-        "description": "Learn how to customize the behavior of objects by redefining special methods in Python.",
-        "keywords": "eq, python, object oriented programming, special methods, repr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Better output for representing objects",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python History and Stock Class Implementation",
-                "file": "verify1.sh",
-                "hint": "Please add the '__repr__' method to the 'Stock' class and run the python code in step 1.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/date_time",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "Making objects comparable",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Use of isinstance and __eq__ Methods",
-                "file": "verify2.sh",
-                "hint": "Please add the '__eq__' method to the 'Stock' class.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "A Context Manager",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Python History for sys, stdout, open, close, read",
-                "file": "verify3.sh",
-                "hint": "Please run the python code in step 3.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/context_managers",
-              "python/encapsulation",
-              "python/file_opening_closing",
-              "python/file_operations",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/os_system",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "重新定义特殊方法",
-      "description": "在本实验中，你将学习如何通过重新定义特殊方法来自定义 Python 中对象的行为。",
-      "meta": {
-        "title": "Python 中的重新定义特殊方法",
-        "description": "了解如何通过在 Python 中重新定义特殊方法来自定义对象的行为。",
-        "keywords": "eq, Python, 面向对象编程, 特殊方法, repr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "对象表示的更好输出",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 历史记录和 Stock 类实现",
-                "file": "verify1.sh",
-                "hint": "请在 'Stock' 类中添加 '__repr__' 方法，并运行步骤 1 中的 Python 代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/date_time",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "使对象可比较",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 isinstance 和 __eq__ 方法的使用",
-                "file": "verify2.sh",
-                "hint": "请在 'Stock' 类中添加 '__eq__' 方法。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/list_comprehensions",
-              "python/lists",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "一个上下文管理器",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证关于sys、stdout、open、close、read的Python历史记录",
-                "file": "verify3.sh",
-                "hint": "请运行步骤3中的Python代码。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/constructor",
-              "python/context_managers",
-              "python/encapsulation",
-              "python/file_opening_closing",
-              "python/file_operations",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/lists",
-              "python/os_system",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Better output for representing objects",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python History and Stock Class Implementation",
+            "file": "verify1.sh",
+            "hint": "Please add the '__repr__' method to the 'Stock' class and run the python code in step 1.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/date_time",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ],
+        "solutions": ["step1_solution.py"]
+      },
+      {
+        "title": "Making objects comparable",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Use of isinstance and __eq__ Methods",
+            "file": "verify2.sh",
+            "hint": "Please add the '__eq__' method to the 'Stock' class.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/list_comprehensions",
+          "python/lists",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "A Context Manager",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Python History for sys, stdout, open, close, read",
+            "file": "verify3.sh",
+            "hint": "Please run the python code in step 3.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/constructor",
+          "python/context_managers",
+          "python/encapsulation",
+          "python/file_opening_closing",
+          "python/file_operations",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/lists",
+          "python/os_system",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -305,5 +157,73 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "重新定义特殊方法",
+      "description": "在本实验中，你将学习如何通过重新定义特殊方法来自定义 Python 中对象的行为。",
+      "meta": {
+        "title": "Python 中的重新定义特殊方法",
+        "description": "了解如何通过在 Python 中重新定义特殊方法来自定义对象的行为。",
+        "keywords": "eq, Python, 面向对象编程, 特殊方法, repr"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "对象表示的更好输出",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 历史记录和 Stock 类实现",
+                "file": "verify1.sh",
+                "hint": "请在 'Stock' 类中添加 '__repr__' 方法，并运行步骤 1 中的 Python 代码。"
+              }
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "使对象可比较",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 isinstance 和 __eq__ 方法的使用",
+                "file": "verify2.sh",
+                "hint": "请在 'Stock' 类中添加 '__eq__' 方法。"
+              }
+            ],
+            "solutions": ["step2_solution.py"]
+          },
+          {
+            "title": "一个上下文管理器",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证关于sys、stdout、open、close、read的Python历史记录",
+                "file": "verify3.sh",
+                "hint": "请运行步骤3中的Python代码。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

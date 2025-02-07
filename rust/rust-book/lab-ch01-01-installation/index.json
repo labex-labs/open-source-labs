@@ -1,10 +1,100 @@
 {
   "type": "lab",
+  "title": "Rust Installation Guide",
+  "description": "In this lab, you will need to install Rust using rustup, a command line tool for managing Rust versions and associated tools, by downloading it through an internet connection.",
+  "meta": {
+    "title": "Rust Installation Guide",
+    "description": "Learn how to install the Rust programming language using the rustup tool, a crucial step for mastering Rust development.",
+    "keywords": "rust playground, rust tutor, rust online compiler, installation, programming, rust commands, tutorial, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "pro",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Installation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Installing rustup on Linux",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Rust Compiler Version",
+            "file": "verify2.sh",
+            "hint": "Rust is not installed. Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Troubleshooting",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Rust Compiler Version",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Updating and Uninstalling",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Rustup Update Command Executed",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Local Documentation",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify Presence of rustup doc Command",
+            "file": "verify5.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,99 +105,6 @@
     "repo": "https://github.com/rust-lang/book"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Rust Installation Guide",
-      "description": "In this lab, you will need to install Rust using rustup, a command line tool for managing Rust versions and associated tools, by downloading it through an internet connection.",
-      "meta": {
-        "title": "Rust Installation Guide",
-        "description": "Learn how to install the Rust programming language using the rustup tool, a crucial step for mastering Rust development.",
-        "keywords": "rust playground, rust tutor, rust online compiler, installation, programming, rust commands, tutorial, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Installation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Installing rustup on Linux",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Rust Compiler Version",
-                "file": "verify2.sh",
-                "hint": "Rust is not installed. Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Troubleshooting",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Rust Compiler Version",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Updating and Uninstalling",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Rustup Update Command Executed",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Local Documentation",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "Verify Presence of rustup doc Command",
-                "file": "verify5.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Rust 安装指南",
@@ -126,12 +123,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "在 Linux 上安装 rustup",
@@ -140,12 +134,9 @@
               {
                 "name": "验证 Rust 编译器版本",
                 "file": "verify2.sh",
-                "hint": "未安装 Rust。请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "未安装 Rust。请按照说明完成步骤。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "故障排除",
@@ -154,12 +145,9 @@
               {
                 "name": "验证 Rust 编译器版本",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "更新与卸载",
@@ -168,12 +156,9 @@
               {
                 "name": "验证 Rustup 更新命令是否已执行",
                 "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "本地文档",
@@ -182,17 +167,13 @@
               {
                 "name": "验证是否存在 rustup doc 命令",
                 "file": "verify5.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,138 +1,64 @@
 {
   "type": "lab",
+  "title": "Building Reusable React Tabs Component",
+  "description": "In this lab, we will be creating a Tabs component in React that allows users to switch between different content views by clicking on a menu. We will be using the useState() hook to manage the active tab index and the map() method to render the tab menu and content view. By the end of this lab, you will have a better understanding of how to build reusable components in React using state and props.",
+  "meta": {
+    "title": "React Tabs Component | Reusable UI | Interactive Web Development",
+    "description": "Learn how to create a reusable Tabs component in React using the useState hook and map method. Enhance your interactive web development skills.",
+    "keywords": "React, Tabs, Component, Reusable, UI, Interactive, Web Development"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "webide-ubuntu:2204"
-  },
-  "contributors": ["Lotus-7"],
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-code"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Building Reusable React Tabs Component",
-      "description": "In this lab, we will be creating a Tabs component in React that allows users to switch between different content views by clicking on a menu. We will be using the useState() hook to manage the active tab index and the map() method to render the tab menu and content view. By the end of this lab, you will have a better understanding of how to build reusable components in React using state and props.",
-      "meta": {
-        "title": "React Tabs Component | Reusable UI | Interactive Web Development",
-        "description": "Learn how to create a reusable Tabs component in React using the useState hook and map method. Enhance your interactive web development skills.",
-        "keywords": "React, Tabs, Component, Reusable, UI, Interactive, Web Development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Tabs",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of script.js modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "react/conditional_render",
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/list_keys",
-              "react/use_state_reducer"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "构建可复用的 React 标签组件",
-      "description": "在本实验中，我们将在 React 中创建一个标签组件，允许用户通过点击菜单在不同的内容视图之间切换。我们将使用 useState() 钩子来管理活动标签索引，并使用 map() 方法来渲染标签菜单和内容视图。在本实验结束时，你将更好地理解如何使用状态和属性在 React 中构建可复用的组件。",
-      "meta": {
-        "title": "React 标签组件 | 可复用界面 | 交互式网页开发",
-        "description": "学习如何使用 useState 钩子和 map 方法在 React 中创建一个可复用的标签组件。提升你的交互式网页开发技能。",
-        "keywords": "React, 标签, 组件, 可复用, 界面, 交互式, 网页开发"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "标签",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Web服务的运行状态",
-                "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签以预览网页。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证script.js修改状态",
-                "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "验证style.css修改状态",
-                "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "react/conditional_render",
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/list_keys",
-              "react/use_state_reducer"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Tabs",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of script.js modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "react/conditional_render",
+          "react/event_handling",
+          "react/hooks",
+          "react/jsx",
+          "react/list_keys",
+          "react/use_state_reducer"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -152,5 +78,59 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "webide-ubuntu:2204"
+  },
+  "contributors": ["Lotus-7"],
+  "license": {
+    "name": "CC-BY-4.0",
+    "url": "https://github.com/30-seconds/30-seconds-of-code/blob/master/LICENSE",
+    "repo": "https://github.com/30-seconds/30-seconds-of-code"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "构建可复用的 React 标签组件",
+      "description": "在本实验中，我们将在 React 中创建一个标签组件，允许用户通过点击菜单在不同的内容视图之间切换。我们将使用 useState() 钩子来管理活动标签索引，并使用 map() 方法来渲染标签菜单和内容视图。在本实验结束时，你将更好地理解如何使用状态和属性在 React 中构建可复用的组件。",
+      "meta": {
+        "title": "React 标签组件 | 可复用界面 | 交互式网页开发",
+        "description": "学习如何使用 useState 钩子和 map 方法在 React 中创建一个可复用的标签组件。提升你的交互式网页开发技能。",
+        "keywords": "React, 标签, 组件, 可复用, 界面, 交互式, 网页开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "标签",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Web服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请点击右下角的“Go Live”以在端口8080上运行Web服务。然后，你可以刷新“Web 8080”标签以预览网页。"
+              },
+              {
+                "name": "验证script.js修改状态",
+                "file": "verify1-2.sh",
+                "hint": "请按照步骤完成实验。"
+              },
+              {
+                "name": "验证style.css修改状态",
+                "file": "verify1-3.sh",
+                "hint": "请按照步骤完成实验。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -1,10 +1,107 @@
 {
   "type": "lab",
+  "title": "Errorbar Subsampling with Matplotlib",
+  "description": "In data visualization, it is sometimes useful to plot error bars to show the uncertainty or variability of the data. However, if there are many data points with similar errors, the plot can become cluttered and difficult to interpret. In such cases, we can use errorbar subsampling, which allows us to draw error bars only on a subset of data points. In this tutorial, we will use Matplotlib's errorbar function to demonstrate how to apply errorbar subsampling to our data.",
+  "meta": {
+    "title": "Data Visualization | Error Bar Subsampling Tutorial",
+    "description": "Learn how to use Matplotlib's errorbar function to apply errorbar subsampling and create clear data visualizations with reduced clutter.",
+    "keywords": "data visualization, error bars, errorbar subsampling, Matplotlib, Python"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries and Generate Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/comments",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Plot All Errorbars",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/legend_config",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Subsample Every 6th Errorbar",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/legend_config",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Shift Second Series by 3",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/error_bars",
+          "matplotlib/legend_config",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "errorbar-subsample.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,97 +112,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Errorbar Subsampling with Matplotlib",
-      "description": "In data visualization, it is sometimes useful to plot error bars to show the uncertainty or variability of the data. However, if there are many data points with similar errors, the plot can become cluttered and difficult to interpret. In such cases, we can use errorbar subsampling, which allows us to draw error bars only on a subset of data points. In this tutorial, we will use Matplotlib's errorbar function to demonstrate how to apply errorbar subsampling to our data.",
-      "meta": {
-        "title": "Data Visualization | Error Bar Subsampling Tutorial",
-        "description": "Learn how to use Matplotlib's errorbar function to apply errorbar subsampling and create clear data visualizations with reduced clutter.",
-        "keywords": "data visualization, error bars, errorbar subsampling, Matplotlib, Python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries and Generate Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Plot All Errorbars",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/legend_config",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Subsample Every 6th Errorbar",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/legend_config",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Shift Second Series by 3",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/legend_config",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Matplotlib进行误差线二次采样",
@@ -126,15 +132,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/comments",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/tuples"
             ]
           },
           {
@@ -146,11 +143,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/legend_config",
-              "python/tuples"
             ]
           },
           {
@@ -162,11 +154,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/legend_config",
-              "python/tuples"
             ]
           },
           {
@@ -178,17 +165,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/error_bars",
-              "matplotlib/legend_config",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -197,16 +178,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "errorbar-subsample.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

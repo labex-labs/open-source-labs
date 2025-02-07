@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Pull Latest Changes from Remote",
+  "description": "Git is a popular version control system that allows developers to collaborate on projects and keep track of changes made to the codebase. One of the most important features of Git is the ability to pull the latest changes from a remote repository. In this lab, you will learn how to pull the latest changes from a remote repository using Git.",
+  "meta": {
+    "title": "Git Fundamentals | Version Control | Remote Repository",
+    "description": "This lab introduces the process of pulling the latest changes from a remote Git repository, which is a crucial feature for developers working collaboratively on a project.",
+    "keywords": "Git, version control, remote repository, pull, collaboration, coding, programming"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pull Latest Changes from Remote",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful pull",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/pull"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pull Latest Changes from Remote",
-      "description": "Git is a popular version control system that allows developers to collaborate on projects and keep track of changes made to the codebase. One of the most important features of Git is the ability to pull the latest changes from a remote repository. In this lab, you will learn how to pull the latest changes from a remote repository using Git.",
-      "meta": {
-        "title": "Git Fundamentals | Version Control | Remote Repository",
-        "description": "This lab introduces the process of pulling the latest changes from a remote Git repository, which is a crucial feature for developers working collaboratively on a project.",
-        "keywords": "Git, version control, remote repository, pull, collaboration, coding, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pull Latest Changes from Remote",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful pull",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/pull"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从远程拉取最新更改",
@@ -70,17 +67,13 @@
               {
                 "name": "验证拉取是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/pull"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

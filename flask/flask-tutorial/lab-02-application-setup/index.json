@@ -1,10 +1,106 @@
 {
   "type": "lab",
+  "title": "Building a Flask Application",
+  "description": "This Lab will guide you through the process of setting up a basic Flask application. Flask is a lightweight web application framework for Python. It's designed to make getting started with web development quick and easy.",
+  "meta": {
+    "title": "Flask Web Development | Python Programming Tutorial",
+    "description": "Learn how to set up a basic Flask web application in this comprehensive Python programming tutorial. Get started with web development quickly and easily.",
+    "keywords": "Flask, Python, web development, programming tutorial, web application"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating the Application Directory",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Existence of flaskr Directory",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+      },
+      {
+        "title": "Setting up the Application Factory",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Existence of Flask Application Init File",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/command_line_interface",
+          "flask/configuration",
+          "flask/incoming_request_data",
+          "flask/response_objects",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Configuring the Application",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Existence of Flask Application Initialization File",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/command_line_interface",
+          "flask/configuration",
+          "flask/incoming_request_data",
+          "flask/json_support",
+          "flask/response_objects",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Running the Application",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Local Server Connection",
+            "file": "verify4.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/response_objects",
+          "flask/useful_internals"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,105 +119,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Building a Flask Application",
-      "description": "This Lab will guide you through the process of setting up a basic Flask application. Flask is a lightweight web application framework for Python. It's designed to make getting started with web development quick and easy.",
-      "meta": {
-        "title": "Flask Web Development | Python Programming Tutorial",
-        "description": "Learn how to set up a basic Flask web application in this comprehensive Python programming tutorial. Get started with web development quickly and easily.",
-        "keywords": "Flask, Python, web development, programming tutorial, web application"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Creating the Application Directory",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Existence of flaskr Directory",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
-          },
-          {
-            "title": "Setting up the Application Factory",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Existence of Flask Application Init File",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/command_line_interface",
-              "flask/configuration",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Configuring the Application",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Existence of Flask Application Initialization File",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/configuration",
-              "flask/incoming_request_data",
-              "flask/json_support",
-              "flask/response_objects",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Running the Application",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Local Server Connection",
-                "file": "verify4.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/response_objects",
-              "flask/useful_internals"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "构建一个Flask应用程序",
       "description": "本实验将指导你完成设置一个基本Flask应用程序的过程。Flask是一个用于Python的轻量级Web应用程序框架。它旨在使Web开发快速且轻松地入门。",
@@ -139,12 +136,9 @@
               {
                 "name": "验证flaskr目录是否存在",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": ["flask/incoming_request_data", "flask/useful_internals"]
+            ]
           },
           {
             "title": "设置应用程序工厂",
@@ -153,18 +147,8 @@
               {
                 "name": "验证Flask应用程序初始化文件是否存在",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/command_line_interface",
-              "flask/configuration",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/useful_internals"
             ]
           },
           {
@@ -174,20 +158,8 @@
               {
                 "name": "验证Flask应用程序初始化文件是否存在",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/configuration",
-              "flask/incoming_request_data",
-              "flask/json_support",
-              "flask/response_objects",
-              "flask/useful_internals"
             ]
           },
           {
@@ -197,21 +169,13 @@
               {
                 "name": "验证本地服务器连接",
                 "file": "verify4.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/response_objects",
-              "flask/useful_internals"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

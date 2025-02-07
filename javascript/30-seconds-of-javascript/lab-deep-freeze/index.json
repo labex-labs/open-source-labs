@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Deep Freeze Object",
+  "description": "In this lab, we will explore how to deep freeze an object in JavaScript. We will learn how to use the Object.freeze() method recursively to freeze all properties of an object, making it immutable. By the end of this lab, you will have a better understanding of how to prevent modifications to objects and ensure data integrity in your JavaScript code.",
+  "meta": {
+    "title": "Deep Freeze Object: Immutable JavaScript Objects",
+    "description": "Learn how to deep freeze JavaScript objects, making them immutable and ensuring data integrity in your code.",
+    "keywords": "javascript, javascript practice, freeze, data integrity, javascript practice online, object, javascript lab, immutable, javascript tutor"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Deep Freeze Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Deep Freeze Object",
-      "description": "In this lab, we will explore how to deep freeze an object in JavaScript. We will learn how to use the Object.freeze() method recursively to freeze all properties of an object, making it immutable. By the end of this lab, you will have a better understanding of how to prevent modifications to objects and ensure data integrity in your JavaScript code.",
-      "meta": {
-        "title": "Deep Freeze Object: Immutable JavaScript Objects",
-        "description": "Learn how to deep freeze JavaScript objects, making them immutable and ensuring data integrity in your code.",
-        "keywords": "javascript, javascript practice, freeze, data integrity, javascript practice online, object, javascript lab, immutable, javascript tutor"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Deep Freeze Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "深度冻结对象",
@@ -77,24 +74,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，可以通过输入'node'并按下回车键来运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，可以通过输入'node'并按下回车键来运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

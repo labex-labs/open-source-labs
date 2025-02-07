@@ -1,10 +1,79 @@
 {
   "type": "lab",
+  "title": "Plot Dict Face Patches",
+  "description": "This lab demonstrates how to use the scikit-learn API to process a large dataset of faces and learn a set of 20 x 20 image patches that represent faces. The key aspect of this lab is the use of online learning, where we load and process images one at a time and extract 50 random patches from each image. We accumulate 500 patches (from 10 images) and then run the online KMeans object, MiniBatchKMeans' partial_fit method.",
+  "meta": {
+    "title": "Mastering Face Patch Detection with Scikit-Learn",
+    "description": "Explore the power of online learning to process large face datasets and build a comprehensive image patch dictionary.",
+    "keywords": "online learning, machine learning, image processing, scikit learn, scikit-learn, face detection, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load the Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Learn the Dictionary of Images",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/cluster",
+          "sklearn/feature_extraction"
+        ]
+      },
+      {
+        "title": "Plot the Results",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-dict-face-patches.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,69 +84,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Plot Dict Face Patches",
-      "description": "This lab demonstrates how to use the scikit-learn API to process a large dataset of faces and learn a set of 20 x 20 image patches that represent faces. The key aspect of this lab is the use of online learning, where we load and process images one at a time and extract 50 random patches from each image. We accumulate 500 patches (from 10 images) and then run the online KMeans object, MiniBatchKMeans' partial_fit method.",
-      "meta": {
-        "title": "Mastering Face Patch Detection with Scikit-Learn",
-        "description": "Explore the power of online learning to process large face datasets and build a comprehensive image patch dictionary.",
-        "keywords": "online learning, machine learning, image processing, scikit learn, scikit-learn, face detection, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load the Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Learn the Dictionary of Images",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/cluster",
-              "sklearn/feature_extraction"
-            ]
-          },
-          {
-            "title": "Plot the Results",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "绘制字典人脸图像块",
@@ -98,8 +104,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "学习图像字典",
@@ -110,11 +115,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/cluster",
-              "sklearn/feature_extraction"
             ]
           },
           {
@@ -126,13 +126,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -141,16 +139,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-dict-face-patches.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

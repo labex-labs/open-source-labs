@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Check if String Contains Whitespace",
+  "description": "In this lab, we will explore how to check if a given string contains any whitespace characters using regular expressions in JavaScript. The lab will provide a step-by-step guide on how to use the RegExp.prototype.test() method to check if a string contains any whitespace characters. By the end of this lab, you will have a better understanding of how to check for whitespace characters in JavaScript strings.",
+  "meta": {
+    "title": "Whitespace Checking in JavaScript | Regular Expressions",
+    "description": "Learn how to check if a string contains whitespace characters using regular expressions in JavaScript. Improve your coding skills with this step-by-step guide.",
+    "keywords": "JavaScript, Regular Expressions, Whitespace, String Manipulation, Coding Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Check if String Contains Whitespace",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in ZSH History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Check if String Contains Whitespace",
-      "description": "In this lab, we will explore how to check if a given string contains any whitespace characters using regular expressions in JavaScript. The lab will provide a step-by-step guide on how to use the RegExp.prototype.test() method to check if a string contains any whitespace characters. By the end of this lab, you will have a better understanding of how to check for whitespace characters in JavaScript strings.",
-      "meta": {
-        "title": "Whitespace Checking in JavaScript | Regular Expressions",
-        "description": "Learn how to check if a string contains whitespace characters using regular expressions in JavaScript. Improve your coding skills with this step-by-step guide.",
-        "keywords": "JavaScript, Regular Expressions, Whitespace, String Manipulation, Coding Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Check if String Contains Whitespace",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in ZSH History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "检查字符串是否包含空白字符",
@@ -75,22 +72,13 @@
               {
                 "name": "验证ZSH历史记录中的Node命令",
                 "file": "verify1.sh",
-                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,67 @@
 {
   "type": "lab",
+  "title": "Creating and Nesting Components",
+  "description": "Welcome to the React documentation! This lab will give you an introduction to creating and nesting components.",
+  "meta": {
+    "title": "Creating and Nesting Components in React",
+    "description": "Learn how to create and nest components in React, a popular JavaScript library for building user interfaces.",
+    "keywords": "nesting, react, user interface, web development, components"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "pro",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Creating and Nesting Components",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of App.js modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of App.js modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["react/components_props", "react/jsx"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "demo.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,57 +72,6 @@
     "repo": "https://react.dev/learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating and Nesting Components",
-      "description": "Welcome to the React documentation! This lab will give you an introduction to creating and nesting components.",
-      "meta": {
-        "title": "Creating and Nesting Components in React",
-        "description": "Learn how to create and nest components in React, a popular JavaScript library for building user interfaces.",
-        "keywords": "nesting, react, user interface, web development, components"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Creating and Nesting Components",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please use 'npm start' to run the project on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of App.js modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of App.js modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["react/components_props", "react/jsx"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建和嵌套组件",
@@ -84,31 +90,23 @@
               {
                 "name": "验证 Web 服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请使用 'npm start' 在端口 8080 上运行项目。然后，你可以刷新 **Web 8080** 标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请使用 'npm start' 在端口 8080 上运行项目。然后，你可以刷新 **Web 8080** 标签页来预览网页。"
               },
               {
                 "name": "验证 App.js 修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               },
               {
                 "name": "验证 App.js 修改状态",
                 "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": ["react/components_props", "react/jsx"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -117,16 +115,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "demo.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

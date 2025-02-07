@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Golang For Loop Understanding",
+  "description": "This lab aims to test your understanding of the for loop in Golang.",
+  "meta": {
+    "title": "Mastering Golang's For Loop",
+    "description": "Explore the intricacies of Golang's for loop and enhance your programming skills with this in-depth tutorial.",
+    "keywords": "go playground, go, for loop, golang, coding, go labs, go playground online, tutorial, programming, go lab"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "For",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Program Outputs Correct Value",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/for"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "for.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Golang For Loop Understanding",
-      "description": "This lab aims to test your understanding of the for loop in Golang.",
-      "meta": {
-        "title": "Mastering Golang's For Loop",
-        "description": "Explore the intricacies of Golang's for loop and enhance your programming skills with this in-depth tutorial.",
-        "keywords": "go playground, go, for loop, golang, coding, go labs, go playground online, tutorial, programming, go lab"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "For",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Program Outputs Correct Value",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/for"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "理解Go语言的for循环",
@@ -70,17 +76,13 @@
               {
                 "name": "验证Go程序输出正确的值",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需的操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需的操作。"
               }
-            ],
-            "skills": ["go/for"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "for.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

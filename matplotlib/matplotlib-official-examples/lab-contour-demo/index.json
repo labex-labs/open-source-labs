@@ -1,10 +1,162 @@
 {
   "type": "lab",
+  "title": "Creating Contour Plots with Python Matplotlib",
+  "description": "This lab is a step-by-step tutorial on how to create contour plots using Python Matplotlib. Contour plots are useful for visualizing three-dimensional data in two dimensions. In this tutorial, we will be illustrating simple contour plotting, contours on an image with a colorbar for the contours, and labeled contours.",
+  "meta": {
+    "title": "Python Matplotlib Contour Plotting Tutorial | Data Visualization",
+    "description": "Learn step-by-step how to create contour plots using Python Matplotlib, a powerful data visualization tool for 3D data.",
+    "keywords": "Python, Matplotlib, Contour Plotting, Data Visualization, 3D Data"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Required Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing"
+        ]
+      },
+      {
+        "title": "Create Data",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/tuples"]
+      },
+      {
+        "title": "Create a Simple Contour Plot with Labels",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "python/booleans",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Place Contour Labels Manually",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "python/booleans",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Set Contour Colors",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "matplotlib/line_styles_colors",
+          "matplotlib/matplotlib_config",
+          "python/booleans",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Manually Specify Contour Colors",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "python/booleans",
+          "python/comments",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Use a Colormap to Specify Contour Colors",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/contour_plots",
+          "matplotlib/heatmaps",
+          "python/booleans",
+          "python/comments",
+          "python/for_loops",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "contour-demo.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,152 +167,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating Contour Plots with Python Matplotlib",
-      "description": "This lab is a step-by-step tutorial on how to create contour plots using Python Matplotlib. Contour plots are useful for visualizing three-dimensional data in two dimensions. In this tutorial, we will be illustrating simple contour plotting, contours on an image with a colorbar for the contours, and labeled contours.",
-      "meta": {
-        "title": "Python Matplotlib Contour Plotting Tutorial | Data Visualization",
-        "description": "Learn step-by-step how to create contour plots using Python Matplotlib, a powerful data visualization tool for 3D data.",
-        "keywords": "Python, Matplotlib, Contour Plotting, Data Visualization, 3D Data"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Required Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
-            ]
-          },
-          {
-            "title": "Create Data",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/tuples"]
-          },
-          {
-            "title": "Create a Simple Contour Plot with Labels",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/booleans",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Place Contour Labels Manually",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Set Contour Colors",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/line_styles_colors",
-              "matplotlib/matplotlib_config",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Manually Specify Contour Colors",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Use a Colormap to Specify Contour Colors",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/heatmaps",
-              "python/booleans",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Python Matplotlib创建等高线图",
@@ -181,13 +187,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing"
             ]
           },
           {
@@ -199,8 +198,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/tuples"]
+            ]
           },
           {
             "title": "创建带标签的简单等高线图",
@@ -211,12 +209,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/booleans",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -228,12 +220,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/booleans",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -245,15 +231,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/line_styles_colors",
-              "matplotlib/matplotlib_config",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -265,12 +242,6 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "python/booleans",
-              "python/comments",
-              "python/tuples"
             ]
           },
           {
@@ -282,23 +253,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/contour_plots",
-              "matplotlib/heatmaps",
-              "python/booleans",
-              "python/comments",
-              "python/for_loops",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -307,16 +266,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "contour-demo.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Generating UUID in Node.js",
+  "description": "In this lab, we will learn how to generate a UUID in Node.js. UUIDs are unique identifiers that are commonly used in distributed systems to uniquely identify entities without requiring centralized coordination. We will use the crypto module in Node.js to generate a UUID that is compliant with RFC4122 version 4.",
+  "meta": {
+    "title": "Generating Unique IDs in Node.js",
+    "description": "Learn how to generate UUIDs in Node.js using the built-in crypto module and create unique identifiers for your distributed systems.",
+    "keywords": "javascript, node js, javascript practice, crypto, unique identifier, javascript practice online, javascript playground, javascript lab, uuid, distributed systems"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate UUID (Node.js)",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Generating UUID in Node.js",
-      "description": "In this lab, we will learn how to generate a UUID in Node.js. UUIDs are unique identifiers that are commonly used in distributed systems to uniquely identify entities without requiring centralized coordination. We will use the crypto module in Node.js to generate a UUID that is compliant with RFC4122 version 4.",
-      "meta": {
-        "title": "Generating Unique IDs in Node.js",
-        "description": "Learn how to generate UUIDs in Node.js using the built-in crypto module and create unique identifiers for your distributed systems.",
-        "keywords": "javascript, node js, javascript practice, crypto, unique identifier, javascript practice online, javascript playground, javascript lab, uuid, distributed systems"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate UUID (Node.js)",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Node.js中生成UUID",
@@ -75,22 +72,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Create a Git Stash",
+  "description": "Git is a powerful version control system that allows developers to keep track of changes made to their codebase. One of the useful features of Git is the ability to create a stash. A stash allows you to save the current state of your working directory and index, so you can switch to a different branch or work on a different feature without losing your changes.",
+  "meta": {
+    "title": "Mastering Git Stash: Seamless Workflow Management",
+    "description": "Discover the power of Git stash to save your progress and switch between branches effortlessly.",
+    "keywords": "version control, git stash, git labs, workflow, git, git playground, code management"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create a Git Stash",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful saving",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/stash"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create a Git Stash",
-      "description": "Git is a powerful version control system that allows developers to keep track of changes made to their codebase. One of the useful features of Git is the ability to create a stash. A stash allows you to save the current state of your working directory and index, so you can switch to a different branch or work on a different feature without losing your changes.",
-      "meta": {
-        "title": "Mastering Git Stash: Seamless Workflow Management",
-        "description": "Discover the power of Git stash to save your progress and switch between branches effortlessly.",
-        "keywords": "version control, git stash, git labs, workflow, git, git playground, code management"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create a Git Stash",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful saving",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/stash"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建一个Git暂存区",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功保存",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/stash"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

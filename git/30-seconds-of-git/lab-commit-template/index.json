@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Add a Commit Message Template",
+  "description": "When working on a project, it is important to have a consistent and informative commit message for each change made to the codebase. This helps other developers understand the purpose of the change and makes it easier to track down bugs or revert changes if necessary. In this lab, you will learn how to set up a commit message template for a Git repository.",
+  "meta": {
+    "title": "Set Up a Commit Message Template for Git Repositories",
+    "description": "Learn how to create a consistent and informative commit message template for your Git projects to improve collaboration and productivity.",
+    "keywords": "repository, git labs, git, commit message, template, collaboration, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Add a Commit Message Template",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for correct upload",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Add a Commit Message Template",
-      "description": "When working on a project, it is important to have a consistent and informative commit message for each change made to the codebase. This helps other developers understand the purpose of the change and makes it easier to track down bugs or revert changes if necessary. In this lab, you will learn how to set up a commit message template for a Git repository.",
-      "meta": {
-        "title": "Set Up a Commit Message Template for Git Repositories",
-        "description": "Learn how to create a consistent and informative commit message template for your Git projects to improve collaboration and productivity.",
-        "keywords": "repository, git labs, git, commit message, template, collaboration, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Add a Commit Message Template",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for correct upload",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "添加提交消息模板",
@@ -70,17 +67,13 @@
               {
                 "name": "验证上传是否正确",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

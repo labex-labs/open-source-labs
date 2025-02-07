@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Counting Occurrences in Python Lists",
+  "description": "In Python, it is often necessary to count the number of occurrences of a specific value in a list. This can be useful in a variety of situations, such as analyzing data or processing user input. In this challenge, you will be tasked with writing a function that counts the number of occurrences of a given value in a list.",
+  "meta": {
+    "title": "Python | List Manipulation | Count Occurrences",
+    "description": "Learn how to count the number of occurrences of a specific value in a Python list using the built-in list.count() method.",
+    "keywords": "Python, List, Manipulation, Count Occurrences, Programming, Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Count Occurrences Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_count_occurrences.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "count_occurrences.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Counting Occurrences in Python Lists",
-      "description": "In Python, it is often necessary to count the number of occurrences of a specific value in a list. This can be useful in a variety of situations, such as analyzing data or processing user input. In this challenge, you will be tasked with writing a function that counts the number of occurrences of a given value in a list.",
-      "meta": {
-        "title": "Python | List Manipulation | Count Occurrences",
-        "description": "Learn how to count the number of occurrences of a specific value in a Python list using the built-in list.count() method.",
-        "keywords": "Python, List, Manipulation, Count Occurrences, Programming, Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Count Occurrences Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在Python列表中统计出现次数",
@@ -75,22 +86,13 @@
               {
                 "name": "在临时目录中验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_count_occurrences.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "count_occurrences.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

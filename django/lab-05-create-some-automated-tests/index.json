@@ -1,122 +1,128 @@
 {
   "type": "lab",
+  "title": "Create Some Automated Tests",
+  "description": "This tutorial begins where Form Processing and Cutting Down Our Code left off. We've built a web-poll application, and we'll now create some automated tests for it.",
+  "meta": {
+    "title": "Create Automated Tests for Your Django Web Application",
+    "description": "Learn how to create automated tests for your Django web application, including the benefits and best practices of testing.",
+    "keywords": "test driven development, python, django commands, django, django online labs, web application, automated testing"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Introducing automated testing",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Basic testing strategies",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Writing our first test",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Django Project Test Polls",
+            "file": "verify3.sh",
+            "hint": "python manage.py test polls should run 3 tests without errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Test a view",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Django Unit Tests Pass",
+            "file": "verify4.sh",
+            "hint": "python manage.py test polls should run 10 tests without errors.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["django/built_in_views", "django/django_urls"]
+      },
+      {
+        "title": "When testing, more is better",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Further testing",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*.zip",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create Some Automated Tests",
-      "description": "This tutorial begins where Form Processing and Cutting Down Our Code left off. We've built a web-poll application, and we'll now create some automated tests for it.",
-      "meta": {
-        "title": "Create Automated Tests for Your Django Web Application",
-        "description": "Learn how to create automated tests for your Django web application, including the benefits and best practices of testing.",
-        "keywords": "test driven development, python, django commands, django, django online labs, web application, automated testing"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Introducing automated testing",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Basic testing strategies",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Writing our first test",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Django Project Test Polls",
-                "file": "verify3.sh",
-                "hint": "python manage.py test polls should run 3 tests without errors.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Test a view",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Django Unit Tests Pass",
-                "file": "verify4.sh",
-                "hint": "python manage.py test polls should run 10 tests without errors.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["django/built_in_views", "django/django_urls"]
-          },
-          {
-            "title": "When testing, more is better",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Further testing",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建一些自动化测试",
@@ -135,12 +141,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "基本测试策略",
@@ -149,12 +152,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "编写我们的第一个测试",
@@ -163,12 +163,9 @@
               {
                 "name": "验证Django项目测试投票应用",
                 "file": "verify3.sh",
-                "hint": "运行python manage.py test polls应该无错误地运行3个测试。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "运行python manage.py test polls应该无错误地运行3个测试。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "测试一个视图",
@@ -177,12 +174,9 @@
               {
                 "name": "验证Django单元测试通过",
                 "file": "verify4.sh",
-                "hint": "运行python manage.py test polls应该无错误地运行10个测试。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "运行python manage.py test polls应该无错误地运行10个测试。"
               }
-            ],
-            "skills": ["django/built_in_views", "django/django_urls"]
+            ]
           },
           {
             "title": "测试时，越多越好",
@@ -191,12 +185,9 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "进一步测试",
@@ -205,17 +196,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify6.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -224,16 +211,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "*.zip",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

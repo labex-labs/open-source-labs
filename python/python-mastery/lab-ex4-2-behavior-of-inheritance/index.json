@@ -1,10 +1,116 @@
 {
   "type": "lab",
+  "title": "Behavior of Inheritance",
+  "description": "In this lab, you will explore inheritance behavior, super() function, and cooperative inheritance in Python.",
+  "meta": {
+    "title": "Mastering Inheritance Behavior in Python",
+    "description": "Explore the intricacies of inheritance in Python, including single inheritance, multiple inheritance, and the use of super().",
+    "keywords": "inheritance, single inheritance, super, python, multiple inheritance"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "The directions of inheritance",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Class and Method Usage",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/inheritance",
+          "python/python_shell",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Build a Value Checker",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Files Contain Specific Constructs",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/python_shell",
+          "python/raising_exceptions",
+          "python/sets",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types"
+        ],
+        "solutions": ["validate.py"]
+      },
+      {
+        "title": "Using your validators",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Property and Setter Implementation",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/constructor",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/polymorphism",
+          "python/tuples",
+          "python/using_packages"
+        ],
+        "solutions": ["stock.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "stock.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,106 +121,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Behavior of Inheritance",
-      "description": "In this lab, you will explore inheritance behavior, super() function, and cooperative inheritance in Python.",
-      "meta": {
-        "title": "Mastering Inheritance Behavior in Python",
-        "description": "Explore the intricacies of inheritance in Python, including single inheritance, multiple inheritance, and the use of super().",
-        "keywords": "inheritance, single inheritance, super, python, multiple inheritance"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "The directions of inheritance",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Class and Method Usage",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/inheritance",
-              "python/python_shell",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Build a Value Checker",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Files Contain Specific Constructs",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
-            ],
-            "solutions": ["validate.py"]
-          },
-          {
-            "title": "Using your validators",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Property and Setter Implementation",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/polymorphism",
-              "python/tuples",
-              "python/using_packages"
-            ],
-            "solutions": ["stock.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "继承的行为",
@@ -133,19 +139,8 @@
               {
                 "name": "验证 Python 类和方法的使用",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/inheritance",
-              "python/python_shell",
-              "python/tuples"
             ]
           },
           {
@@ -155,27 +150,8 @@
               {
                 "name": "验证 Python 文件包含特定结构",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/python_shell",
-              "python/raising_exceptions",
-              "python/sets",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types"
             ],
             "solutions": ["validate.py"]
           },
@@ -186,27 +162,14 @@
               {
                 "name": "验证属性和设置器的实现",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/constructor",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/polymorphism",
-              "python/tuples",
-              "python/using_packages"
             ],
             "solutions": ["stock.py"]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -215,16 +178,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "stock.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

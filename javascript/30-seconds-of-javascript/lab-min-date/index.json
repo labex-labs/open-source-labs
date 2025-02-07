@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Exploring JavaScript Programming Concepts",
+  "description": "In this lab, we will dive into JavaScript programming by exploring various concepts and techniques used in the language. Through practical exercises and challenges, you will gain a solid understanding of important topics such as data types, functions, conditionals, loops, and arrays. By the end of the lab, you will have a good foundation in JavaScript and be ready to tackle more advanced topics.",
+  "meta": {
+    "title": "JavaScript Programming | Fundamentals | Practical Exercises",
+    "description": "Dive into JavaScript programming with this comprehensive lab. Explore data types, functions, conditionals, loops, and arrays through hands-on exercises. Gain a solid foundation in JavaScript to tackle more advanced topics.",
+    "keywords": "JavaScript, programming, fundamentals, data types, functions, conditionals, loops, arrays"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Min Date",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exploring JavaScript Programming Concepts",
-      "description": "In this lab, we will dive into JavaScript programming by exploring various concepts and techniques used in the language. Through practical exercises and challenges, you will gain a solid understanding of important topics such as data types, functions, conditionals, loops, and arrays. By the end of the lab, you will have a good foundation in JavaScript and be ready to tackle more advanced topics.",
-      "meta": {
-        "title": "JavaScript Programming | Fundamentals | Practical Exercises",
-        "description": "Dive into JavaScript programming with this comprehensive lab. Explore data types, functions, conditionals, loops, and arrays through hands-on exercises. Gain a solid foundation in JavaScript to tackle more advanced topics.",
-        "keywords": "JavaScript, programming, fundamentals, data types, functions, conditionals, loops, arrays"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Min Date",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "探索JavaScript编程概念",
@@ -76,23 +73,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，可以通过输入'node'并按下回车键来运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，可以通过输入'node'并按下回车键来运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

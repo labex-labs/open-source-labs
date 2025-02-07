@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Clamping Numbers Within Range",
+  "description": "In this lab, you will learn how to use the concept of clamping to restrict a number within a specified range, and implement a function to achieve this functionality.",
+  "meta": {
+    "title": "Clamping Numbers | Programming Tutorials",
+    "description": "Learn how to clamp numbers within a specified range in programming. Explore a Python function that ensures a number falls within a given inclusive range.",
+    "keywords": "clamping, number range, programming tutorials, Python function, coding challenges"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Clamp Number Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Test Clamp Number",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_clamp_number.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "clamp_number.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +68,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Clamping Numbers Within Range",
-      "description": "In this lab, you will learn how to use the concept of clamping to restrict a number within a specified range, and implement a function to achieve this functionality.",
-      "meta": {
-        "title": "Clamping Numbers | Programming Tutorials",
-        "description": "Learn how to clamp numbers within a specified range in programming. Explore a Python function that ensures a number falls within a given inclusive range.",
-        "keywords": "clamping, number range, programming tutorials, Python function, coding challenges"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Clamp Number Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Test Clamp Number",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在范围内钳位数字",
@@ -75,22 +86,13 @@
               {
                 "name": "验证Python测试钳位数字",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -99,21 +101,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_clamp_number.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "clamp_number.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Pretty-Print Number of Bytes",
+  "description": "In this lab, we will explore the concept of pretty-printing numbers in bytes to a human-readable format using JavaScript. We will learn how to convert a given number of bytes into KB, MB, GB, TB, PB, EB, ZB, and YB by using an array dictionary of units. with the help of the Number.prototype.toPrecision() method, we will truncate the number to a certain number of digits and build a prettified string to display the result.",
+  "meta": {
+    "title": "Convert Bytes to Human-Readable String",
+    "description": "Learn how to convert a number in bytes to a human-readable format using JavaScript.",
+    "keywords": "javascript, javascript practice, pretty print, javascript practice online, javascript lab, human readable, bytes, javascript tutor, conversion"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pretty-Print Number of Bytes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pretty-Print Number of Bytes",
-      "description": "In this lab, we will explore the concept of pretty-printing numbers in bytes to a human-readable format using JavaScript. We will learn how to convert a given number of bytes into KB, MB, GB, TB, PB, EB, ZB, and YB by using an array dictionary of units. with the help of the Number.prototype.toPrecision() method, we will truncate the number to a certain number of digits and build a prettified string to display the result.",
-      "meta": {
-        "title": "Convert Bytes to Human-Readable String",
-        "description": "Learn how to convert a number in bytes to a human-readable format using JavaScript.",
-        "keywords": "javascript, javascript practice, pretty print, javascript practice online, javascript lab, human readable, bytes, javascript tutor, conversion"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pretty-Print Number of Bytes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "美化打印字节数",
@@ -77,24 +74,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，可以通过输入'node'并按下回车键来运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，可以通过输入'node'并按下回车键来运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

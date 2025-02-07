@@ -1,10 +1,68 @@
 {
   "type": "lab",
+  "title": "Sort Dictionary by Key",
+  "description": "Dictionaries are an essential data structure in Python. They are used to store data in key-value pairs. However, sometimes it is necessary to sort the dictionary by key. In this challenge, you will be tasked with writing a function that sorts a dictionary by key.",
+  "meta": {
+    "title": "Python Dictionaries | Sort by Key",
+    "description": "Learn how to sort Python dictionaries by key, with an optional reverse order. Improve your data management skills with this essential programming tutorial.",
+    "keywords": "Python, Dictionaries, Sort, Key, Data Structure"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Sort Dictionary by Key",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Student Implemented Sort Dictionary By Key",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_sort_dict_by_key.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "sort_dict_by_key.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +73,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Sort Dictionary by Key",
-      "description": "Dictionaries are an essential data structure in Python. They are used to store data in key-value pairs. However, sometimes it is necessary to sort the dictionary by key. In this challenge, you will be tasked with writing a function that sorts a dictionary by key.",
-      "meta": {
-        "title": "Python Dictionaries | Sort by Key",
-        "description": "Learn how to sort Python dictionaries by key, with an optional reverse order. Improve your data management skills with this essential programming tutorial.",
-        "keywords": "Python, Dictionaries, Sort, Key, Data Structure"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Sort Dictionary by Key",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Student Implemented Sort Dictionary By Key",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "按键对字典进行排序",
@@ -80,27 +91,13 @@
               {
                 "name": "验证学生是否实现了按键对字典进行排序",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -109,21 +106,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_sort_dict_by_key.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "sort_dict_by_key.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,63 @@
 {
   "type": "lab",
+  "title": "Nearest Neighbors Regression",
+  "description": "Nearest Neighbors Regression is a machine learning algorithm that predicts the value of a new data point by finding the k-nearest data points in the training set and using their average value to predict the new value. In this lab, we will use scikit-learn to demonstrate how to resolve a regression problem using a k-Nearest Neighbor and the interpolation of the target using both barycenter and constant weights.",
+  "meta": {
+    "title": "Nearest Neighbors Regression: A Powerful Machine Learning Technique",
+    "description": "Explore the power of Nearest Neighbors Regression in predicting values using sample data and scikit-learn.",
+    "keywords": "machine learning, nearest neighbors regression, scikit learn, data analysis, regression"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Sample Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Fit Regression Model",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-regression.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,53 +68,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Nearest Neighbors Regression",
-      "description": "Nearest Neighbors Regression is a machine learning algorithm that predicts the value of a new data point by finding the k-nearest data points in the training set and using their average value to predict the new value. In this lab, we will use scikit-learn to demonstrate how to resolve a regression problem using a k-Nearest Neighbor and the interpolation of the target using both barycenter and constant weights.",
-      "meta": {
-        "title": "Nearest Neighbors Regression: A Powerful Machine Learning Technique",
-        "description": "Explore the power of Nearest Neighbors Regression in predicting values using sample data and scikit-learn.",
-        "keywords": "machine learning, nearest neighbors regression, scikit learn, data analysis, regression"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate Sample Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Fit Regression Model",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "最近邻回归",
@@ -82,8 +88,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "拟合回归模型",
@@ -94,13 +99,11 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -109,16 +112,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-regression.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

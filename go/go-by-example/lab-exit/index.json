@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Exit Function in Go",
+  "description": "The Exit lab is designed to test your ability to use the os.Exit function in Go to immediately exit with a given status.",
+  "meta": {
+    "title": "Go Programming | Exit Lab | Immediate Exit with Status",
+    "description": "Learn how to use the os.Exit function in Go to immediately exit a program with a specific status code. Explore the Exit lab and gain a deeper understanding of Go programming.",
+    "keywords": "Go Programming, Exit Lab, os.Exit, Status Code, Immediate Exit"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Exit",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Go Program Exit Status",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/exit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "exit.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exit Function in Go",
-      "description": "The Exit lab is designed to test your ability to use the os.Exit function in Go to immediately exit with a given status.",
-      "meta": {
-        "title": "Go Programming | Exit Lab | Immediate Exit with Status",
-        "description": "Learn how to use the os.Exit function in Go to immediately exit a program with a specific status code. Explore the Exit lab and gain a deeper understanding of Go programming.",
-        "keywords": "Go Programming, Exit Lab, os.Exit, Status Code, Immediate Exit"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Exit",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Go Program Exit Status",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/exit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Go 语言中的退出函数",
@@ -70,17 +76,13 @@
               {
                 "name": "验证 Go 程序的退出状态",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/exit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "exit.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Disable Fast Forward Merging",
+  "description": "Git is a powerful version control system that allows developers to collaborate on projects efficiently. One of the features of Git is fast forward merging, which allows Git to automatically merge branches that have no divergent commits. However, this feature can sometimes cause issues, especially when working on larger projects with multiple contributors. In this lab, you will learn how to disable fast forward merging by default.",
+  "meta": {
+    "title": "Disable Fast Forward Merging in Git",
+    "description": "Learn how to disable fast forward merging in Git to improve collaboration on larger projects with multiple contributors.",
+    "keywords": "version control, git labs, git, collaboration, merge conflicts, fast forward merging, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Disable Fast Forward Merging",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful disabling",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/config"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Disable Fast Forward Merging",
-      "description": "Git is a powerful version control system that allows developers to collaborate on projects efficiently. One of the features of Git is fast forward merging, which allows Git to automatically merge branches that have no divergent commits. However, this feature can sometimes cause issues, especially when working on larger projects with multiple contributors. In this lab, you will learn how to disable fast forward merging by default.",
-      "meta": {
-        "title": "Disable Fast Forward Merging in Git",
-        "description": "Learn how to disable fast forward merging in Git to improve collaboration on larger projects with multiple contributors.",
-        "keywords": "version control, git labs, git, collaboration, merge conflicts, fast forward merging, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Disable Fast Forward Merging",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful disabling",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/config"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "禁用快进合并",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功禁用",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/config"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

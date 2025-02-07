@@ -1,10 +1,83 @@
 {
   "type": "lab",
+  "title": "Button Border Animation",
+  "description": "In this lab, we will explore how to create a button border animation on hover using CSS. By using the ::before and ::after pseudo-elements, we can add two boxes above and below the button and transition their width to 100% on hover. This lab will help you to enhance your CSS skills and add interactivity to your web pages.",
+  "meta": {
+    "title": "Button Border Animation Tutorial",
+    "description": "Learn how to create an interactive button border animation using CSS.",
+    "keywords": "css, css exercises, hover, css practice, button, border, css playground, css lab, animation"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Button Border Animation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of index.html modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of style.css modification",
+            "file": "verify1-3.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "css/backgrounds",
+          "css/borders",
+          "css/colors",
+          "css/margin_and_padding",
+          "css/positioning",
+          "css/pseudo_classes",
+          "css/pseudo_elements",
+          "css/selectors",
+          "css/transitions",
+          "css/width_and_height"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "style.css",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,68 +88,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Button Border Animation",
-      "description": "In this lab, we will explore how to create a button border animation on hover using CSS. By using the ::before and ::after pseudo-elements, we can add two boxes above and below the button and transition their width to 100% on hover. This lab will help you to enhance your CSS skills and add interactivity to your web pages.",
-      "meta": {
-        "title": "Button Border Animation Tutorial",
-        "description": "Learn how to create an interactive button border animation using CSS.",
-        "keywords": "css, css exercises, hover, css practice, button, border, css playground, css lab, animation"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Button Border Animation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of index.html modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of style.css modification",
-                "file": "verify1-3.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/borders",
-              "css/colors",
-              "css/margin_and_padding",
-              "css/positioning",
-              "css/pseudo_classes",
-              "css/pseudo_elements",
-              "css/selectors",
-              "css/transitions",
-              "css/width_and_height"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "按钮边框动画",
@@ -95,42 +106,23 @@
               {
                 "name": "验证网络服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“上线”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“上线”以在端口8080上运行网络服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               },
               {
                 "name": "验证index.html的修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               },
               {
                 "name": "验证style.css的修改状态",
                 "file": "verify1-3.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "css/backgrounds",
-              "css/borders",
-              "css/colors",
-              "css/margin_and_padding",
-              "css/positioning",
-              "css/pseudo_classes",
-              "css/pseudo_elements",
-              "css/selectors",
-              "css/transitions",
-              "css/width_and_height"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -139,21 +131,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "style.css",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

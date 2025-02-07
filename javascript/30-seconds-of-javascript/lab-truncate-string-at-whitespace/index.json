@@ -1,10 +1,50 @@
 {
   "type": "lab",
+  "title": "Truncate String at Whitespace",
+  "description": "In this lab, we will explore the concept of truncating a string at whitespace in JavaScript. We will learn how to limit the length of a string while preserving its readability by respecting whitespace. Through the implementation of String.prototype.slice() and String.prototype.lastIndexOf(), we will create a function that can truncate a string to a specified length with an optional ending.",
+  "meta": {
+    "title": "JavaScript String Truncation | Whitespace Preservation",
+    "description": "Learn how to truncate strings in JavaScript while preserving whitespace for improved readability and SEO-friendly content.",
+    "keywords": "JavaScript, String Truncation, Whitespace Preservation, Content Optimization, SEO"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Truncate String at Whitespace",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands In Zsh History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +55,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Truncate String at Whitespace",
-      "description": "In this lab, we will explore the concept of truncating a string at whitespace in JavaScript. We will learn how to limit the length of a string while preserving its readability by respecting whitespace. Through the implementation of String.prototype.slice() and String.prototype.lastIndexOf(), we will create a function that can truncate a string to a specified length with an optional ending.",
-      "meta": {
-        "title": "JavaScript String Truncation | Whitespace Preservation",
-        "description": "Learn how to truncate strings in JavaScript while preserving whitespace for improved readability and SEO-friendly content.",
-        "keywords": "JavaScript, String Truncation, Whitespace Preservation, Content Optimization, SEO"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Truncate String at Whitespace",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands In Zsh History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "按空白字符截断字符串",
@@ -76,23 +73,13 @@
               {
                 "name": "在Zsh历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过输入'node'并按Enter键，可以在终端/SSH中运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

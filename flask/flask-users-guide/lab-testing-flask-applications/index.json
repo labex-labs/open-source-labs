@@ -1,10 +1,91 @@
 {
   "type": "lab",
+  "title": "Testing Flask Applications",
+  "description": "In this lab, you will learn how to test Flask applications using the pytest framework. Testing is an important part of the software development process, as it helps to ensure the correctness and reliability of your application. Flask provides utilities for testing, making it easy to write tests for different parts of your application.",
+  "meta": {
+    "title": "Flask Testing | Python Web Development",
+    "description": "Learn how to test Flask applications using the pytest framework. Ensure the correctness and reliability of your web application.",
+    "keywords": "Flask, Python, Testing, pytest, Web Development"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Set up the Testing Environment",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/command_line_interface",
+          "flask/incoming_request_data",
+          "flask/response_objects",
+          "flask/session_interface",
+          "flask/sessions",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Writing Tests",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "flask/application_globals",
+          "flask/application_object",
+          "flask/blueprint_objects",
+          "flask/command_line_interface",
+          "flask/incoming_request_data",
+          "flask/response_objects",
+          "flask/session_interface",
+          "flask/test_cli_runner",
+          "flask/useful_internals"
+        ]
+      },
+      {
+        "title": "Running the Tests",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["flask/useful_internals"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204",
     "services": [
@@ -23,90 +104,6 @@
   },
   "i18n": [
     {
-      "lang": "en",
-      "title": "Testing Flask Applications",
-      "description": "In this lab, you will learn how to test Flask applications using the pytest framework. Testing is an important part of the software development process, as it helps to ensure the correctness and reliability of your application. Flask provides utilities for testing, making it easy to write tests for different parts of your application.",
-      "meta": {
-        "title": "Flask Testing | Python Web Development",
-        "description": "Learn how to test Flask applications using the pytest framework. Ensure the correctness and reliability of your web application.",
-        "keywords": "Flask, Python, Testing, pytest, Web Development"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Set up the Testing Environment",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/session_interface",
-              "flask/sessions",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Writing Tests",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "flask/application_globals",
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/session_interface",
-              "flask/test_cli_runner",
-              "flask/useful_internals"
-            ]
-          },
-          {
-            "title": "Running the Tests",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["flask/useful_internals"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
       "lang": "zh",
       "title": "测试 Flask 应用程序",
       "description": "在本实验中，你将学习如何使用 pytest 框架测试 Flask 应用程序。测试是软件开发过程的重要组成部分，因为它有助于确保应用程序的正确性和可靠性。Flask 提供了测试实用工具，便于为应用程序的不同部分编写测试。",
@@ -124,20 +121,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/session_interface",
-              "flask/sessions",
-              "flask/useful_internals"
             ]
           },
           {
@@ -147,21 +132,8 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify2.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "flask/application_globals",
-              "flask/application_object",
-              "flask/blueprint_objects",
-              "flask/command_line_interface",
-              "flask/incoming_request_data",
-              "flask/response_objects",
-              "flask/session_interface",
-              "flask/test_cli_runner",
-              "flask/useful_internals"
             ]
           },
           {
@@ -171,17 +143,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify3.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["flask/useful_internals"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

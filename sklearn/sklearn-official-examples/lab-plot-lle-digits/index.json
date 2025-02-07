@@ -1,10 +1,96 @@
 {
   "type": "lab",
+  "title": "Manifold Learning on Handwritten Digits",
+  "description": "In this lab, we will explore various manifold embedding techniques on the digits dataset. We will use different techniques to embed the digits dataset, plot the projection of the original data onto each embedding, and compare the results obtained from different embedding methods.",
+  "meta": {
+    "title": "Manifold Embedding Techniques | Digits Dataset | Machine Learning",
+    "description": "Explore various manifold embedding techniques on the digits dataset, including visualization and comparison of different embedding methods.",
+    "keywords": "manifold embedding, digits dataset, machine learning, data visualization, dimensionality reduction"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load the Digits Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Plot Embedding Function",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Compare Embedding Techniques",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/decomposition",
+          "sklearn/discriminant_analysis",
+          "sklearn/ensemble",
+          "sklearn/manifold",
+          "sklearn/neighbors",
+          "sklearn/pipeline",
+          "sklearn/random_projection"
+        ]
+      },
+      {
+        "title": "Plot Results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-lle-digits.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,86 +101,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Manifold Learning on Handwritten Digits",
-      "description": "In this lab, we will explore various manifold embedding techniques on the digits dataset. We will use different techniques to embed the digits dataset, plot the projection of the original data onto each embedding, and compare the results obtained from different embedding methods.",
-      "meta": {
-        "title": "Manifold Embedding Techniques | Digits Dataset | Machine Learning",
-        "description": "Explore various manifold embedding techniques on the digits dataset, including visualization and comparison of different embedding methods.",
-        "keywords": "manifold embedding, digits dataset, machine learning, data visualization, dimensionality reduction"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load the Digits Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Plot Embedding Function",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
-          },
-          {
-            "title": "Compare Embedding Techniques",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/discriminant_analysis",
-              "sklearn/ensemble",
-              "sklearn/manifold",
-              "sklearn/neighbors",
-              "sklearn/pipeline",
-              "sklearn/random_projection"
-            ]
-          },
-          {
-            "title": "Plot Results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "手写数字的流形学习",
@@ -115,8 +121,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "绘制嵌入函数",
@@ -127,8 +132,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/preprocessing"]
+            ]
           },
           {
             "title": "比较嵌入技术",
@@ -139,16 +143,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/decomposition",
-              "sklearn/discriminant_analysis",
-              "sklearn/ensemble",
-              "sklearn/manifold",
-              "sklearn/neighbors",
-              "sklearn/pipeline",
-              "sklearn/random_projection"
             ]
           },
           {
@@ -160,13 +154,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -175,16 +167,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-lle-digits.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

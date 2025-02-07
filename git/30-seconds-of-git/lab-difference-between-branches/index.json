@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Difference Between Branches",
+  "description": "Git is a popular version control system that allows developers to manage their codebase efficiently. One of the essential features of Git is the ability to create and manage branches. Branches allow developers to work on different features or bug fixes simultaneously without interfering with each other's work. However, at some point, you may need to compare the changes between two branches. In this lab, you will learn how to view the difference between two branches using Git.",
+  "meta": {
+    "title": "Mastering Git Branches: Unveiling the Differences",
+    "description": "Explore the power of Git branches and learn how to effectively compare changes between them.",
+    "keywords": "software development, version control, git labs, branches, git, code comparison, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Difference Between Branches",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that the difference is displayed",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/branch"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Difference Between Branches",
-      "description": "Git is a popular version control system that allows developers to manage their codebase efficiently. One of the essential features of Git is the ability to create and manage branches. Branches allow developers to work on different features or bug fixes simultaneously without interfering with each other's work. However, at some point, you may need to compare the changes between two branches. In this lab, you will learn how to view the difference between two branches using Git.",
-      "meta": {
-        "title": "Mastering Git Branches: Unveiling the Differences",
-        "description": "Explore the power of Git branches and learn how to effectively compare changes between them.",
-        "keywords": "software development, version control, git labs, branches, git, code comparison, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Difference Between Branches",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that the difference is displayed",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/branch"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "分支之间的差异",
@@ -70,17 +67,13 @@
               {
                 "name": "验证差异是否显示",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/branch"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

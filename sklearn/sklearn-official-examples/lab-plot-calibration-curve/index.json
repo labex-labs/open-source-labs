@@ -1,10 +1,92 @@
 {
   "type": "lab",
+  "title": "Probability Calibration Curves",
+  "description": "In this lab, we will learn how to use calibration curves to evaluate the predicted probabilities of a classification model. We will use scikit-learn to perform the classification and visualize the results.",
+  "meta": {
+    "title": "Probability Calibration Curves: Evaluating Model Predictions",
+    "description": "Learn how to use calibration curves to assess the predicted probabilities of a classification model using scikit-learn.",
+    "keywords": "probability calibration, machine learning, classification model, scikit learn, scikit-learn, data science, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
+      },
+      {
+        "title": "Calibration Curves",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/calibration",
+          "sklearn/linear_model",
+          "sklearn/naive_bayes"
+        ]
+      },
+      {
+        "title": "Linear Support Vector Classifier",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/svm"]
+      },
+      {
+        "title": "Evaluation",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/metrics"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-calibration-curve.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,86 +97,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Probability Calibration Curves",
-      "description": "In this lab, we will learn how to use calibration curves to evaluate the predicted probabilities of a classification model. We will use scikit-learn to perform the classification and visualize the results.",
-      "meta": {
-        "title": "Probability Calibration Curves: Evaluating Model Predictions",
-        "description": "Learn how to use calibration curves to assess the predicted probabilities of a classification model using scikit-learn.",
-        "keywords": "probability calibration, machine learning, classification model, scikit learn, scikit-learn, data science, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "Calibration Curves",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/calibration",
-              "sklearn/linear_model",
-              "sklearn/naive_bayes"
-            ]
-          },
-          {
-            "title": "Linear Support Vector Classifier",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
-          },
-          {
-            "title": "Evaluation",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "概率校准曲线",
@@ -115,11 +117,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -131,12 +128,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/calibration",
-              "sklearn/linear_model",
-              "sklearn/naive_bayes"
             ]
           },
           {
@@ -148,8 +139,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
+            ]
           },
           {
             "title": "评估",
@@ -160,13 +150,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/metrics"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -175,16 +163,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-calibration-curve.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

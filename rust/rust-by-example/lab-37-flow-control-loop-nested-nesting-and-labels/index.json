@@ -1,10 +1,48 @@
 {
   "type": "lab",
+  "title": "Nesting and Labels",
+  "description": "In this lab, we learn about nesting and labeling loops in Rust, where we can use the break and continue statements to terminate or skip outer loops within nested loops by annotating loops with labels.",
+  "meta": {
+    "title": "Nesting and Labels in Rust Programming",
+    "description": "Learn about nesting and labeling loops in Rust, using break and continue statements to control outer loops within nested loops.",
+    "keywords": "nesting, rust playground, labels, rust tutor, loops, rust online compiler, rust commands, rust practice, rust online playground, rust online"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Nesting and labels",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/string_type"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,47 +53,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Nesting and Labels",
-      "description": "In this lab, we learn about nesting and labeling loops in Rust, where we can use the break and continue statements to terminate or skip outer loops within nested loops by annotating loops with labels.",
-      "meta": {
-        "title": "Nesting and Labels in Rust Programming",
-        "description": "Learn about nesting and labeling loops in Rust, using break and continue statements to control outer loops within nested loops.",
-        "keywords": "nesting, rust playground, labels, rust tutor, loops, rust online compiler, rust commands, rust practice, rust online playground, rust online"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Nesting and labels",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/string_type"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "嵌套与标签",
@@ -74,21 +71,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/string_type"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

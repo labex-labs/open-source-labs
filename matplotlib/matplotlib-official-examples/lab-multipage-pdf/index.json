@@ -1,10 +1,153 @@
 {
   "type": "lab",
+  "title": "Creating a Multipage PDF with Matplotlib",
+  "description": "In this lab, you will learn how to create a multipage PDF file with Python Matplotlib. The PDF file will contain several pages with different plots and metadata. You will also learn how to attach annotations to the PDF file.",
+  "meta": {
+    "title": "Create Multipage PDF with Python Matplotlib | Data Visualization",
+    "description": "Learn how to create a multipage PDF file with Python Matplotlib, including different plots and metadata. Enhance your data visualization skills.",
+    "keywords": "Python, Matplotlib, PDF, Data Visualization, Multipage, Annotations"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/custom_backends",
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/date_time",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/standard_libraries",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Create the PdfPages Object",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/with_statement"]
+      },
+      {
+        "title": "Create the First Page",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/saving_figures",
+          "matplotlib/titles_labels",
+          "python/build_in_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the Second Page",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/matplotlib_config",
+          "matplotlib/saving_figures",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Create the Third Page",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/line_plots",
+          "matplotlib/matplotlib_config",
+          "matplotlib/saving_figures",
+          "matplotlib/titles_labels",
+          "python/booleans",
+          "python/comments",
+          "python/lists",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Set the Metadata of the PDF File",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/data_collections",
+          "python/date_time",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "multipage-pdf.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,143 +158,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Creating a Multipage PDF with Matplotlib",
-      "description": "In this lab, you will learn how to create a multipage PDF file with Python Matplotlib. The PDF file will contain several pages with different plots and metadata. You will also learn how to attach annotations to the PDF file.",
-      "meta": {
-        "title": "Create Multipage PDF with Python Matplotlib | Data Visualization",
-        "description": "Learn how to create a multipage PDF file with Python Matplotlib, including different plots and metadata. Enhance your data visualization skills.",
-        "keywords": "Python, Matplotlib, PDF, Data Visualization, Multipage, Annotations"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/custom_backends",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/date_time",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Create the PdfPages Object",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/with_statement"]
-          },
-          {
-            "title": "Create the First Page",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/saving_figures",
-              "matplotlib/titles_labels",
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the Second Page",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/matplotlib_config",
-              "matplotlib/saving_figures",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Create the Third Page",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/matplotlib_config",
-              "matplotlib/saving_figures",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Set the Metadata of the PDF File",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/data_collections",
-              "python/date_time",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用 Matplotlib 创建多页 PDF",
@@ -172,17 +178,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/custom_backends",
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/date_time",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/standard_libraries",
-              "python/using_packages"
             ]
           },
           {
@@ -194,8 +189,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/with_statement"]
+            ]
           },
           {
             "title": "创建第一页",
@@ -206,14 +200,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/saving_figures",
-              "matplotlib/titles_labels",
-              "python/build_in_functions",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -225,16 +211,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/matplotlib_config",
-              "matplotlib/saving_figures",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -246,16 +222,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/line_plots",
-              "matplotlib/matplotlib_config",
-              "matplotlib/saving_figures",
-              "matplotlib/titles_labels",
-              "python/booleans",
-              "python/comments",
-              "python/lists",
-              "python/tuples"
             ]
           },
           {
@@ -267,20 +233,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/data_collections",
-              "python/date_time",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -289,16 +246,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "multipage-pdf.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

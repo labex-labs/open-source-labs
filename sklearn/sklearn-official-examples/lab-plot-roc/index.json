@@ -1,10 +1,80 @@
 {
   "type": "lab",
+  "title": "Multiclass ROC Evaluation with Scikit-Learn",
+  "description": "This lab demonstrates the use of Receiver Operating Characteristic (ROC) metric to evaluate the quality of multiclass classifiers using Scikit-learn library.",
+  "meta": {
+    "title": "Multiclass Classifier Evaluation | ROC Metric | Scikit-learn",
+    "description": "Learn how to use Receiver Operating Characteristic (ROC) metric to evaluate the quality of multiclass classifiers using Scikit-learn library.",
+    "keywords": "multiclass classifier, ROC metric, Scikit-learn, machine learning, data analysis"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load and Prepare the Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/model_selection"]
+      },
+      {
+        "title": "One-vs-Rest Multiclass ROC",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/linear_model",
+          "sklearn/metrics",
+          "sklearn/preprocessing"
+        ]
+      },
+      {
+        "title": "One-vs-One Multiclass ROC",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-roc.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,74 +85,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Multiclass ROC Evaluation with Scikit-Learn",
-      "description": "This lab demonstrates the use of Receiver Operating Characteristic (ROC) metric to evaluate the quality of multiclass classifiers using Scikit-learn library.",
-      "meta": {
-        "title": "Multiclass Classifier Evaluation | ROC Metric | Scikit-learn",
-        "description": "Learn how to use Receiver Operating Characteristic (ROC) metric to evaluate the quality of multiclass classifiers using Scikit-learn library.",
-        "keywords": "multiclass classifier, ROC metric, Scikit-learn, machine learning, data analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load and Prepare the Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
-            ]
-          },
-          {
-            "title": "One-vs-Rest Multiclass ROC",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "One-vs-One Multiclass ROC",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Scikit-learn进行多类ROC评估",
@@ -103,11 +105,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/model_selection"
             ]
           },
           {
@@ -119,12 +116,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -136,13 +127,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -151,16 +140,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-roc.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

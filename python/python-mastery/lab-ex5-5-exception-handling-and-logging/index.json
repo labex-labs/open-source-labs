@@ -1,10 +1,137 @@
 {
   "type": "lab",
+  "title": "Exception Handling and Logging",
+  "description": "In this lab, you will explore exception handling and logging in Python.",
+  "meta": {
+    "title": "Mastering Exception Handling and Logging in Python",
+    "description": "Learn how to handle exceptions and implement robust logging in your Python applications.",
+    "keywords": "python, logging, exception handling, troubleshooting, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Preparation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python CSV Data Handling",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lambda_functions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Catching Exceptions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Logging and Debugging Statements in reader.py",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/dictionaries",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/iterators",
+          "python/lambda_functions",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ],
+        "solutions": ["reader.py"]
+      },
+      {
+        "title": "Logging",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Python Logging Configuration",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/numeric_types",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/strings",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "reader.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "missing.csv",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "vnc-ubuntu:2204"
   },
@@ -15,122 +142,6 @@
     "repo": "https://github.com/dabeaz-course/python-mastery"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Exception Handling and Logging",
-      "description": "In this lab, you will explore exception handling and logging in Python.",
-      "meta": {
-        "title": "Mastering Exception Handling and Logging in Python",
-        "description": "Learn how to handle exceptions and implement robust logging in your Python applications.",
-        "keywords": "python, logging, exception handling, troubleshooting, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Preparation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python CSV Data Handling",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Catching Exceptions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Logging and Debugging Statements in reader.py",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lambda_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ],
-            "solutions": ["reader.py"]
-          },
-          {
-            "title": "Logging",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Python Logging Configuration",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "异常处理与日志记录",
@@ -149,27 +160,8 @@
               {
                 "name": "验证Python CSV数据处理",
                 "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lambda_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -179,33 +171,8 @@
               {
                 "name": "验证reader.py中的日志记录和调试语句",
                 "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/dictionaries",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/iterators",
-              "python/lambda_functions",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ],
             "solutions": ["reader.py"]
           },
@@ -216,29 +183,13 @@
               {
                 "name": "验证Python日志记录配置",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/numeric_types",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/strings",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -247,21 +198,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "reader.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "missing.csv",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

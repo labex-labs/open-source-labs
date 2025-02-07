@@ -1,10 +1,54 @@
 {
   "type": "lab",
+  "title": "Unpacking Options with ?",
+  "description": "In this lab, we explore the use of the ? operator in Rust, which allows for easy unpacking of Option values without the need for nested match statements. The ? operator can be used to quickly return the underlying value if the Option is Some, or terminate the function and return None if the Option is None. This operator can be chained together to make code more readable and concise.",
+  "meta": {
+    "title": "Rust Programming | Option Unpacking with the ? Operator",
+    "description": "Explore the use of the ? operator in Rust to easily unpack Option values without nested match statements. Learn how to make your code more readable and concise.",
+    "keywords": "Rust, Option, ? operator, programming, tutorial"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Unpacking options with ?",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "rust/error_propagation",
+          "rust/expressions_statements",
+          "rust/function_syntax",
+          "rust/integer_types",
+          "rust/lifetime_specifiers",
+          "rust/method_syntax",
+          "rust/operator_overloading",
+          "rust/traits",
+          "rust/variable_declarations"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,53 +59,6 @@
     "repo": "https://github.com/rust-lang/rust-by-example"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Unpacking Options with ?",
-      "description": "In this lab, we explore the use of the ? operator in Rust, which allows for easy unpacking of Option values without the need for nested match statements. The ? operator can be used to quickly return the underlying value if the Option is Some, or terminate the function and return None if the Option is None. This operator can be chained together to make code more readable and concise.",
-      "meta": {
-        "title": "Rust Programming | Option Unpacking with the ? Operator",
-        "description": "Explore the use of the ? operator in Rust to easily unpack Option values without nested match statements. Learn how to make your code more readable and concise.",
-        "keywords": "Rust, Option, ? operator, programming, tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Unpacking options with ?",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "rust/error_propagation",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用? 解包 Option",
@@ -80,27 +77,13 @@
               {
                 "name": "此步骤目前没有验证",
                 "file": "verify1.sh",
-                "hint": "此步骤目前没有验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "rust/error_propagation",
-              "rust/expressions_statements",
-              "rust/function_syntax",
-              "rust/integer_types",
-              "rust/lifetime_specifiers",
-              "rust/method_syntax",
-              "rust/operator_overloading",
-              "rust/traits",
-              "rust/variable_declarations"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

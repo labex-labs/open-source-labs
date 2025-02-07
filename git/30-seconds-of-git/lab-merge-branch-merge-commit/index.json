@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Git Merge Collaborative Project Management",
+  "description": "Git is a powerful version control system that allows developers to work collaboratively on a project. One of the key features of Git is the ability to merge branches. Merging allows developers to combine changes from one branch into another, making it easier to manage changes and keep track of different versions of a project.",
+  "meta": {
+    "title": "Merge Branches and Collaborate with Git",
+    "description": "Learn how to merge branches and manage collaborative projects using the powerful Git version control system.",
+    "keywords": "version control, git labs, project management, git, collaboration, git playground, merge"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Merge a Branch and Create a Merge Commit",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that the merge was successful",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/merge"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Git Merge Collaborative Project Management",
-      "description": "Git is a powerful version control system that allows developers to work collaboratively on a project. One of the key features of Git is the ability to merge branches. Merging allows developers to combine changes from one branch into another, making it easier to manage changes and keep track of different versions of a project.",
-      "meta": {
-        "title": "Merge Branches and Collaborate with Git",
-        "description": "Learn how to merge branches and manage collaborative projects using the powerful Git version control system.",
-        "keywords": "version control, git labs, project management, git, collaboration, git playground, merge"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Merge a Branch and Create a Merge Commit",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that the merge was successful",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/merge"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Git合并协作式项目管理",
@@ -70,17 +67,13 @@
               {
                 "name": "验证合并是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/merge"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

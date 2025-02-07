@@ -1,10 +1,55 @@
 {
   "type": "lab",
+  "title": "Implementing K-Means Clustering in JavaScript",
+  "description": "In this lab, we will explore the k-means clustering algorithm in JavaScript. The purpose of this lab is to learn how to group data into k clusters based on similarity, using the k-means algorithm. We will implement the algorithm step-by-step and apply it to a sample dataset to understand how it works.",
+  "meta": {
+    "title": "K-Means Clustering | JavaScript Programming | Data Science",
+    "description": "Learn how to implement the k-means clustering algorithm in JavaScript, a powerful technique for grouping data into similar clusters. Explore step-by-step implementation and apply it to a sample dataset.",
+    "keywords": "k-means clustering, JavaScript, data science, programming, machine learning, data analysis"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "K-Means Clustering",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in ZSH History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/cond_stmts",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/loops",
+          "javascript/spread_rest",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,54 +60,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Implementing K-Means Clustering in JavaScript",
-      "description": "In this lab, we will explore the k-means clustering algorithm in JavaScript. The purpose of this lab is to learn how to group data into k clusters based on similarity, using the k-means algorithm. We will implement the algorithm step-by-step and apply it to a sample dataset to understand how it works.",
-      "meta": {
-        "title": "K-Means Clustering | JavaScript Programming | Data Science",
-        "description": "Learn how to implement the k-means clustering algorithm in JavaScript, a powerful technique for grouping data into similar clusters. Explore step-by-step implementation and apply it to a sample dataset.",
-        "keywords": "k-means clustering, JavaScript, data science, programming, machine learning, data analysis"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "K-Means Clustering",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in ZSH History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/loops",
-              "javascript/spread_rest",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "在JavaScript中实现K均值聚类",
@@ -81,28 +78,13 @@
               {
                 "name": "在ZSH历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/cond_stmts",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/loops",
-              "javascript/spread_rest",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

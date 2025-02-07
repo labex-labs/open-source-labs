@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "JavaScript Basics Through Hands-on",
+  "description": "In this lab, we will explore the fundamentals of JavaScript programming language. The lab is designed to help participants gain a solid understanding of the basics of JavaScript, including variables, data types, control structures, functions, and more. Through a series of hands-on exercises and examples, participants will learn how to write code in JavaScript and build simple programs. This lab is suitable for beginners with little to no prior programming experience.",
+  "meta": {
+    "title": "JavaScript Fundamentals | RGB to HSB Conversion",
+    "description": "Learn the basics of JavaScript programming, including variables, data types, control structures, and functions. Explore a hands-on tutorial on converting RGB color to HSB format.",
+    "keywords": "JavaScript, programming, RGB, HSB, color conversion, tutorial, beginner"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "RGB to HSB",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "JavaScript Basics Through Hands-on",
-      "description": "In this lab, we will explore the fundamentals of JavaScript programming language. The lab is designed to help participants gain a solid understanding of the basics of JavaScript, including variables, data types, control structures, functions, and more. Through a series of hands-on exercises and examples, participants will learn how to write code in JavaScript and build simple programs. This lab is suitable for beginners with little to no prior programming experience.",
-      "meta": {
-        "title": "JavaScript Fundamentals | RGB to HSB Conversion",
-        "description": "Learn the basics of JavaScript programming, including variables, data types, control structures, and functions. Explore a hands-on tutorial on converting RGB color to HSB format.",
-        "keywords": "JavaScript, programming, RGB, HSB, color conversion, tutorial, beginner"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "RGB to HSB",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "通过实践学习JavaScript基础",
@@ -75,22 +72,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，通过输入'node'并按下回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，通过输入'node'并按下回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

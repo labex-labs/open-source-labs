@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Create an Empty Commit",
+  "description": "In Git, a commit is a snapshot of the changes made to a repository. Each commit has a message that describes the changes made. Sometimes, you may need to create an empty commit with no changes to serve as a placeholder or to trigger a build process. In this lab, you will learn how to create an empty commit in Git.",
+  "meta": {
+    "title": "Create an Empty Commit in Git",
+    "description": "Learn how to create an empty commit in Git to trigger a build process, create a placeholder, or mark a specific point in the repository's history.",
+    "keywords": "empty commit, git labs, git, build process, repository history, placeholder, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Create an Empty Commit",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for an empty commit",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create an Empty Commit",
-      "description": "In Git, a commit is a snapshot of the changes made to a repository. Each commit has a message that describes the changes made. Sometimes, you may need to create an empty commit with no changes to serve as a placeholder or to trigger a build process. In this lab, you will learn how to create an empty commit in Git.",
-      "meta": {
-        "title": "Create an Empty Commit in Git",
-        "description": "Learn how to create an empty commit in Git to trigger a build process, create a placeholder, or mark a specific point in the repository's history.",
-        "keywords": "empty commit, git labs, git, build process, repository history, placeholder, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Create an Empty Commit",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for an empty commit",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建空提交",
@@ -70,17 +67,13 @@
               {
                 "name": "验证空提交",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

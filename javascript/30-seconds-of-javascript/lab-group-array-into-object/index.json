@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Group Array Into Object",
+  "description": "In this lab, we will explore how to group an array into an object using JavaScript. Specifically, we will use the Array.prototype.reduce() method to associate properties to values in an object, given an array of valid property identifiers and an array of values. We will also learn how to handle cases where the length of the two arrays differ. By the end of the lab, you will have gained a deeper understanding of how to manipulate objects and arrays in JavaScript.",
+  "meta": {
+    "title": "Group Array into Object | JavaScript Manipulation",
+    "description": "Learn how to group an array into an object using JavaScript's Array.prototype.reduce() method. Explore array-to-object conversion and handle length differences.",
+    "keywords": "JavaScript, Array, Object, Grouping, Manipulation, Reduce"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Group Array Into Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Group Array Into Object",
-      "description": "In this lab, we will explore how to group an array into an object using JavaScript. Specifically, we will use the Array.prototype.reduce() method to associate properties to values in an object, given an array of valid property identifiers and an array of values. We will also learn how to handle cases where the length of the two arrays differ. By the end of the lab, you will have gained a deeper understanding of how to manipulate objects and arrays in JavaScript.",
-      "meta": {
-        "title": "Group Array into Object | JavaScript Manipulation",
-        "description": "Learn how to group an array into an object using JavaScript's Array.prototype.reduce() method. Explore array-to-object conversion and handle length differences.",
-        "keywords": "JavaScript, Array, Object, Grouping, Manipulation, Reduce"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Group Array Into Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将数组分组为对象",
@@ -78,25 +75,13 @@
               {
                 "name": "验证Node命令的用法",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Autocorrect Git Commands",
+  "description": "In this lab, you will learn how to use Git's autocorrect feature to automatically correct mistyped Git commands, which can help improve your workflow and reduce errors when working with version control.",
+  "meta": {
+    "title": "Mastering Git Command Autocorrect",
+    "description": "Discover how to leverage Git's built-in autocorrect feature to streamline your development workflow and minimize errors.",
+    "keywords": "autocorrect, version control, git labs, git, git playground, command line, productivity"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "pro",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Autocorrect Git Commands",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify that the autocorrect function is configured correctly",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/config"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Autocorrect Git Commands",
-      "description": "In this lab, you will learn how to use Git's autocorrect feature to automatically correct mistyped Git commands, which can help improve your workflow and reduce errors when working with version control.",
-      "meta": {
-        "title": "Mastering Git Command Autocorrect",
-        "description": "Discover how to leverage Git's built-in autocorrect feature to streamline your development workflow and minimize errors.",
-        "keywords": "autocorrect, version control, git labs, git, git playground, command line, productivity"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Autocorrect Git Commands",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify that the autocorrect function is configured correctly",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/config"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "自动纠正 Git 命令",
@@ -70,17 +67,13 @@
               {
                 "name": "验证自动纠正功能是否配置正确",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/config"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

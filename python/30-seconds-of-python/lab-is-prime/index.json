@@ -1,10 +1,73 @@
 {
   "type": "lab",
+  "title": "Efficient Prime Number Detection",
+  "description": "In mathematics, a prime number is a natural number greater than 1 that is not a product of two smaller natural numbers. For example, 5 is prime because the only ways of writing it as a product, 1 × 5 or 5 × 1, involve 5 itself. However, 4 is not prime because it is a product (2 × 2) in which both numbers are smaller than 4. In this challenge, you need to write a Python function to check if a given number is prime or not.",
+  "meta": {
+    "title": "Efficient Prime Number Detection in Python",
+    "description": "Learn how to write a Python function to check if a given number is prime or not. Discover the mathematical concepts behind prime numbers.",
+    "keywords": "python, mathematics, prime number, algorithm, programming"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Number is Prime",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/for_loops",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/math_random",
+          "python/numeric_types",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_is_prime.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "is_prime.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,58 +78,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Efficient Prime Number Detection",
-      "description": "In mathematics, a prime number is a natural number greater than 1 that is not a product of two smaller natural numbers. For example, 5 is prime because the only ways of writing it as a product, 1 × 5 or 5 × 1, involve 5 itself. However, 4 is not prime because it is a product (2 × 2) in which both numbers are smaller than 4. In this challenge, you need to write a Python function to check if a given number is prime or not.",
-      "meta": {
-        "title": "Efficient Prime Number Detection in Python",
-        "description": "Learn how to write a Python function to check if a given number is prime or not. Discover the mathematical concepts behind prime numbers.",
-        "keywords": "python, mathematics, prime number, algorithm, programming"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Number is Prime",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numeric_types",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "高效质数检测",
@@ -85,32 +96,13 @@
               {
                 "name": "验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/for_loops",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/math_random",
-              "python/numeric_types",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -119,21 +111,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_is_prime.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "is_prime.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

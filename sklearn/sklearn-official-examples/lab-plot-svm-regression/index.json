@@ -1,10 +1,75 @@
 {
   "type": "lab",
+  "title": "Support Vector Regression",
+  "description": "In this lab, we will use Support Vector Regression (SVR) to fit a model to a 1D dataset using linear, polynomial, and Radial Basis Function (RBF) kernels. We will use Python's scikit-learn library to perform the SVR.",
+  "meta": {
+    "title": "Mastering Support Vector Regression Techniques",
+    "description": "Explore the power of Support Vector Regression (SVR) to fit models to 1D datasets using linear, polynomial, and RBF kernels.",
+    "keywords": "support vector regression, machine learning, linear regression, scikit-learn, data modeling, scikit-learn playground, svr"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Sample Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Fit Regression Model",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/svm"]
+      },
+      {
+        "title": "Visualize Results",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-svm-regression.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,65 +80,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Support Vector Regression",
-      "description": "In this lab, we will use Support Vector Regression (SVR) to fit a model to a 1D dataset using linear, polynomial, and Radial Basis Function (RBF) kernels. We will use Python's scikit-learn library to perform the SVR.",
-      "meta": {
-        "title": "Mastering Support Vector Regression Techniques",
-        "description": "Explore the power of Support Vector Regression (SVR) to fit models to 1D datasets using linear, polynomial, and RBF kernels.",
-        "keywords": "support vector regression, machine learning, linear regression, scikit-learn, data modeling, scikit-learn playground, svr"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate Sample Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Fit Regression Model",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
-          },
-          {
-            "title": "Visualize Results",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "支持向量回归",
@@ -94,8 +100,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "拟合回归模型",
@@ -106,8 +111,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/svm"]
+            ]
           },
           {
             "title": "可视化结果",
@@ -118,13 +122,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -133,16 +135,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-svm-regression.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

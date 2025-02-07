@@ -1,10 +1,51 @@
 {
   "type": "lab",
+  "title": "Convert Map to Object",
+  "description": "In this lab, we will explore how to convert a Map to an object in JavaScript. We will use the Map.prototype.entries() method to get an array of key-value pairs from the Map and then use Object.fromEntries() to convert the array to an object. This lab will provide a better understanding of the use of Map and Object in JavaScript.",
+  "meta": {
+    "title": "Convert Map to Object in JavaScript",
+    "description": "Learn how to convert a Map to an object in JavaScript using the Map.prototype.entries() and Object.fromEntries() methods.",
+    "keywords": "javascript, javascript practice, javascript practice online, object, convert, javascript lab, tutorial, javascript tutor, map"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Convert Map to Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands Executed",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,50 +56,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Convert Map to Object",
-      "description": "In this lab, we will explore how to convert a Map to an object in JavaScript. We will use the Map.prototype.entries() method to get an array of key-value pairs from the Map and then use Object.fromEntries() to convert the array to an object. This lab will provide a better understanding of the use of Map and Object in JavaScript.",
-      "meta": {
-        "title": "Convert Map to Object in JavaScript",
-        "description": "Learn how to convert a Map to an object in JavaScript using the Map.prototype.entries() and Object.fromEntries() methods.",
-        "keywords": "javascript, javascript practice, javascript practice online, object, convert, javascript lab, tutorial, javascript tutor, map"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Convert Map to Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands Executed",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "将 Map 转换为对象",
@@ -77,24 +74,13 @@
               {
                 "name": "验证已执行的 Node 命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH 中输入 'node' 并按回车键，可以运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH 中输入 'node' 并按回车键，可以运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

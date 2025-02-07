@@ -1,10 +1,64 @@
 {
   "type": "lab",
+  "title": "Index of min element",
+  "description": "In this lab, you will learn how to find the index of the minimum element in a list using the built-in `min()` function and the `list.index()` method in Python.",
+  "meta": {
+    "title": "Find the Index of the Minimum Element in a List",
+    "description": "Learn how to write a Python function that returns the index of the element with the minimum value in a list.",
+    "keywords": "minimum, python, list, function, index"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Index of min element",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Minimum Element Index",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_min_element_index.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "min_element_index.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,49 +69,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Index of min element",
-      "description": "In this lab, you will learn how to find the index of the minimum element in a list using the built-in `min()` function and the `list.index()` method in Python.",
-      "meta": {
-        "title": "Find the Index of the Minimum Element in a List",
-        "description": "Learn how to write a Python function that returns the index of the element with the minimum value in a list.",
-        "keywords": "minimum, python, list, function, index"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Index of min element",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Minimum Element Index",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "最小元素的索引",
@@ -76,23 +87,13 @@
               {
                 "name": "验证最小元素索引",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -101,21 +102,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_min_element_index.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "min_element_index.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

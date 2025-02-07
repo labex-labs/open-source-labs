@@ -1,10 +1,75 @@
 {
   "type": "lab",
+  "title": "Plot SGD Separating Hyperplane",
+  "description": "In this lab, we will learn how to use Support Vector Machines (SVM) with Stochastic Gradient Descent (SGD) to classify data. SVM is a powerful classification algorithm that is widely used in machine learning for classification and regression analysis. The idea behind SVM is to find the best hyperplane that separates the data into classes with the largest possible margin. The margin is the distance between the hyperplane and the closest data points from each class. Stochastic Gradient Descent (SGD) is an optimization algorithm that is used to find the best parameters for the SVM algorithm.",
+  "meta": {
+    "title": "Mastering SVM with SGD for Powerful Classification",
+    "description": "Discover how to leverage Support Vector Machines and Stochastic Gradient Descent for accurate data classification.",
+    "keywords": "machine learning, sgd, classification, scikit-learn, data science, svm, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import necessary libraries and generate data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/linear_model"]
+      },
+      {
+        "title": "Train the SVM model with SGD",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot the maximum margin separating hyperplane",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-sgd-separating-hyperplane.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,65 +80,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Plot SGD Separating Hyperplane",
-      "description": "In this lab, we will learn how to use Support Vector Machines (SVM) with Stochastic Gradient Descent (SGD) to classify data. SVM is a powerful classification algorithm that is widely used in machine learning for classification and regression analysis. The idea behind SVM is to find the best hyperplane that separates the data into classes with the largest possible margin. The margin is the distance between the hyperplane and the closest data points from each class. Stochastic Gradient Descent (SGD) is an optimization algorithm that is used to find the best parameters for the SVM algorithm.",
-      "meta": {
-        "title": "Mastering SVM with SGD for Powerful Classification",
-        "description": "Discover how to leverage Support Vector Machines and Stochastic Gradient Descent for accurate data classification.",
-        "keywords": "machine learning, sgd, classification, scikit-learn, data science, svm, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import necessary libraries and generate data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/linear_model"]
-          },
-          {
-            "title": "Train the SVM model with SGD",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot the maximum margin separating hyperplane",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "绘制随机梯度下降分离超平面",
@@ -94,8 +100,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets", "sklearn/linear_model"]
+            ]
           },
           {
             "title": "使用随机梯度下降训练支持向量机模型",
@@ -106,8 +111,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制最大间隔分离超平面",
@@ -118,13 +122,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -133,16 +135,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-sgd-separating-hyperplane.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

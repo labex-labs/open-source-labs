@@ -1,214 +1,102 @@
 {
   "type": "lab",
+  "title": "Utilize Generators For Stocksim Pipelines",
+  "description": "In this lab, you will set up processing pipelines using generators and utilize the follow() function to interact with the stocksim.py program.",
+  "meta": {
+    "title": "Python Programming Pipelines | Generators | Data Processing",
+    "description": "Explore the power of generators in Python to set up processing pipelines and efficiently handle data streams. Learn how to use generators to create modular and scalable data processing solutions.",
+    "keywords": "Python, Generators, Data Processing, Pipelines, Data Streams"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Utilize Generators For Stocksim Pipelines",
-      "description": "In this lab, you will set up processing pipelines using generators and utilize the follow() function to interact with the stocksim.py program.",
-      "meta": {
-        "title": "Python Programming Pipelines | Generators | Data Processing",
-        "description": "Explore the power of generators in Python to set up processing pipelines and efficiently handle data streams. Learn how to use generators to create modular and scalable data processing solutions.",
-        "keywords": "Python, Generators, Data Processing, Pipelines, Data Streams"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Setting up a processing pipeline",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python History Commands",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Making more pipeline components",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify CSV File Structure and Printing",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/using_packages"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "Keep going",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Ticker Python Script Formatting",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ],
-            "solutions": ["step3_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "在Stocksim管道中使用生成器",
-      "description": "在本实验中，你将使用生成器设置处理管道，并利用follow()函数与stocksim.py程序进行交互。",
-      "meta": {
-        "title": "Python编程管道 | 生成器 | 数据处理",
-        "description": "探索Python中生成器的强大功能，以设置处理管道并高效处理数据流。学习如何使用生成器创建模块化和可扩展的数据处理解决方案。",
-        "keywords": "Python, 生成器, 数据处理, 管道, 数据流"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "设置处理管道",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证Python历史命令",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "创建更多管道组件",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证CSV文件结构和打印",
-                "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/standard_libraries",
-              "python/using_packages"
-            ],
-            "solutions": ["step2_solution.py"]
-          },
-          {
-            "title": "继续",
-            "text": "zh/step3.md",
-            "verify": [
-              {
-                "name": "验证股票代码Python脚本格式",
-                "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ],
-            "solutions": ["step3_solution.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Setting up a processing pipeline",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python History Commands",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Making more pipeline components",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify CSV File Structure and Printing",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/standard_libraries",
+          "python/using_packages"
+        ],
+        "solutions": ["step2_solution.py"]
+      },
+      {
+        "title": "Keep going",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Ticker Python Script Formatting",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ],
+        "solutions": ["step3_solution.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -248,5 +136,73 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在Stocksim管道中使用生成器",
+      "description": "在本实验中，你将使用生成器设置处理管道，并利用follow()函数与stocksim.py程序进行交互。",
+      "meta": {
+        "title": "Python编程管道 | 生成器 | 数据处理",
+        "description": "探索Python中生成器的强大功能，以设置处理管道并高效处理数据流。学习如何使用生成器创建模块化和可扩展的数据处理解决方案。",
+        "keywords": "Python, 生成器, 数据处理, 管道, 数据流"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "设置处理管道",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python历史命令",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ]
+          },
+          {
+            "title": "创建更多管道组件",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证CSV文件结构和打印",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["step2_solution.py"]
+          },
+          {
+            "title": "继续",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "验证股票代码Python脚本格式",
+                "file": "verify3.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["step3_solution.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

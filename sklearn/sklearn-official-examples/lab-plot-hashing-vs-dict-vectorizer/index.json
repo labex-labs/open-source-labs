@@ -1,10 +1,111 @@
 {
   "type": "lab",
+  "title": "FeatureHasher and DictVectorizer Comparison",
+  "description": "In this lab, we will explore text vectorization, which is the process of representing non-numerical input data (such as dictionaries or text documents) as vectors of real numbers. We will compare two methods, FeatureHasher and DictVectorizer, by using both methods to vectorize text documents that are preprocessed (tokenized) with the help of a custom Python function.",
+  "meta": {
+    "title": "Text Vectorization | Machine Learning | Data Preprocessing",
+    "description": "Explore text vectorization techniques like FeatureHasher and DictVectorizer to represent non-numerical data as numerical vectors for machine learning models.",
+    "keywords": "text vectorization, machine learning, data preprocessing, feature engineering, FeatureHasher, DictVectorizer"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load Data",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Define preprocessing functions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "DictVectorizer",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+      },
+      {
+        "title": "FeatureHasher",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+      },
+      {
+        "title": "Comparison with special purpose text vectorizers",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+      },
+      {
+        "title": "Plot the results",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-hashing-vs-dict-vectorizer.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,101 +116,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "FeatureHasher and DictVectorizer Comparison",
-      "description": "In this lab, we will explore text vectorization, which is the process of representing non-numerical input data (such as dictionaries or text documents) as vectors of real numbers. We will compare two methods, FeatureHasher and DictVectorizer, by using both methods to vectorize text documents that are preprocessed (tokenized) with the help of a custom Python function.",
-      "meta": {
-        "title": "Text Vectorization | Machine Learning | Data Preprocessing",
-        "description": "Explore text vectorization techniques like FeatureHasher and DictVectorizer to represent non-numerical data as numerical vectors for machine learning models.",
-        "keywords": "text vectorization, machine learning, data preprocessing, feature engineering, FeatureHasher, DictVectorizer"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load Data",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Define preprocessing functions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "DictVectorizer",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
-          },
-          {
-            "title": "FeatureHasher",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
-          },
-          {
-            "title": "Comparison with special purpose text vectorizers",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
-          },
-          {
-            "title": "Plot the results",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "特征哈希器与字典向量化器对比",
@@ -130,8 +136,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "定义预处理函数",
@@ -142,8 +147,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "字典向量化器",
@@ -154,8 +158,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+            ]
           },
           {
             "title": "特征哈希器",
@@ -166,8 +169,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+            ]
           },
           {
             "title": "与专用文本向量化器的比较",
@@ -178,8 +180,7 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/feature_extraction"]
+            ]
           },
           {
             "title": "绘制结果",
@@ -190,13 +191,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -205,16 +204,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-hashing-vs-dict-vectorizer.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

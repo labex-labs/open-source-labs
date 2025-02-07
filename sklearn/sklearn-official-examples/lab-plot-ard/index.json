@@ -1,10 +1,123 @@
 {
   "type": "lab",
+  "title": "Comparing Linear Bayesian Regressors",
+  "description": "This lab uses a synthetic dataset to compare two different Bayesian regressors: Automatic Relevance Determination and Bayesian Ridge Regression. The first part of the lab compares the models' coefficients with respect to the true coefficients by using an Ordinary Least Squares (OLS) model as a baseline. In the last section, the lab plots predictions and uncertainties for the ARD and the Bayesian Ridge regressions using a polynomial feature expansion to fit a non-linear relationship between X and y.",
+  "meta": {
+    "title": "Bayesian Regression Techniques | Machine Learning Tutorial",
+    "description": "Explore Bayesian regression models like Automatic Relevance Determination and Bayesian Ridge Regression using a synthetic dataset. Understand model coefficients and make non-linear predictions.",
+    "keywords": "Bayesian regression, Automatic Relevance Determination, Bayesian Ridge Regression, machine learning, synthetic dataset"
+  },
   "difficulty": "Beginner",
   "time": 35,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Generate Synthetic Dataset",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/datasets"]
+      },
+      {
+        "title": "Fit the Regressors",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/linear_model"]
+      },
+      {
+        "title": "Plot the True and Estimated Coefficients",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plot the Marginal Log-likelihood",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Generate Synthetic Dataset",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/pipeline", "sklearn/preprocessing"]
+      },
+      {
+        "title": "Fit the Regressors",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Plotting Polynomial Regressions with Standard Errors of the Scores",
+        "text": "en/step7.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify7.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-ard.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,117 +128,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Comparing Linear Bayesian Regressors",
-      "description": "This lab uses a synthetic dataset to compare two different Bayesian regressors: Automatic Relevance Determination and Bayesian Ridge Regression. The first part of the lab compares the models' coefficients with respect to the true coefficients by using an Ordinary Least Squares (OLS) model as a baseline. In the last section, the lab plots predictions and uncertainties for the ARD and the Bayesian Ridge regressions using a polynomial feature expansion to fit a non-linear relationship between X and y.",
-      "meta": {
-        "title": "Bayesian Regression Techniques | Machine Learning Tutorial",
-        "description": "Explore Bayesian regression models like Automatic Relevance Determination and Bayesian Ridge Regression using a synthetic dataset. Understand model coefficients and make non-linear predictions.",
-        "keywords": "Bayesian regression, Automatic Relevance Determination, Bayesian Ridge Regression, machine learning, synthetic dataset"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Generate Synthetic Dataset",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
-          },
-          {
-            "title": "Fit the Regressors",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
-          },
-          {
-            "title": "Plot the True and Estimated Coefficients",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plot the Marginal Log-likelihood",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Generate Synthetic Dataset",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
-            ]
-          },
-          {
-            "title": "Fit the Regressors",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Plotting Polynomial Regressions with Standard Errors of the Scores",
-            "text": "en/step7.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify7.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "比较线性贝叶斯回归器",
@@ -146,8 +148,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/datasets"]
+            ]
           },
           {
             "title": "拟合回归器",
@@ -158,8 +159,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
+            ]
           },
           {
             "title": "绘制真实系数和估计系数",
@@ -170,8 +170,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制边际对数似然",
@@ -182,8 +181,7 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "生成合成数据集",
@@ -194,11 +192,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前无需验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/pipeline",
-              "sklearn/preprocessing"
             ]
           },
           {
@@ -210,8 +203,7 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "绘制带有分数标准误差的多项式回归",
@@ -222,13 +214,11 @@
                 "file": "verify7.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -237,16 +227,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-ard.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

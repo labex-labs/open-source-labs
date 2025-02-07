@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Reverting Git Commits: A Powerful Technique",
+  "description": "Git is a powerful tool that allows developers to track changes to their codebase. One of the useful features of Git is the ability to rewind commits. This can be helpful when you need to undo changes or revert to a previous version of your code.",
+  "meta": {
+    "title": "Git Fundamentals | Rewind Commits",
+    "description": "Learn how to use Git to rewind commits and restore your codebase to a previous version. Explore the powerful features of Git for effective version control.",
+    "keywords": "Git, version control, rewind commits, undo changes, code restoration"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Rewind Commits",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Git Commit History Does Not Contain Added file2.txt",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/commit"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Reverting Git Commits: A Powerful Technique",
-      "description": "Git is a powerful tool that allows developers to track changes to their codebase. One of the useful features of Git is the ability to rewind commits. This can be helpful when you need to undo changes or revert to a previous version of your code.",
-      "meta": {
-        "title": "Git Fundamentals | Rewind Commits",
-        "description": "Learn how to use Git to rewind commits and restore your codebase to a previous version. Explore the powerful features of Git for effective version control.",
-        "keywords": "Git, version control, rewind commits, undo changes, code restoration"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Rewind Commits",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Git Commit History Does Not Contain Added file2.txt",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/commit"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "回退 Git 提交：一项强大的技术",
@@ -70,17 +67,13 @@
               {
                 "name": "验证 Git 提交历史记录中不包含 Added file2.txt",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/commit"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Concise Go Text Transformation Program",
+  "description": "The Line Filters lab is a common type of program that reads input on stdin, processes it, and then prints some derived result to stdout. The purpose of this lab is to write a Go program that reads input text and modifies it according to specific requirements.",
+  "meta": {
+    "title": "Line Filters | Go Programming | Text Processing",
+    "description": "Learn how to write a Go program that reads input text from stdin, capitalizes all the letters, and prints the modified text to stdout. Explore the line filter pattern in Go programming.",
+    "keywords": "Go programming, line filters, text processing, stdin, stdout, capitalization"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Line Filters",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Uppercase Lines From File",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/line_filters"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "line-filters.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Concise Go Text Transformation Program",
-      "description": "The Line Filters lab is a common type of program that reads input on stdin, processes it, and then prints some derived result to stdout. The purpose of this lab is to write a Go program that reads input text and modifies it according to specific requirements.",
-      "meta": {
-        "title": "Line Filters | Go Programming | Text Processing",
-        "description": "Learn how to write a Go program that reads input text from stdin, capitalizes all the letters, and prints the modified text to stdout. Explore the line filter pattern in Go programming.",
-        "keywords": "Go programming, line filters, text processing, stdin, stdout, capitalization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Line Filters",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Uppercase Lines From File",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/line_filters"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "简洁的Go文本转换程序",
@@ -70,17 +76,13 @@
               {
                 "name": "验证来自文件的大写行",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/line_filters"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "line-filters.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

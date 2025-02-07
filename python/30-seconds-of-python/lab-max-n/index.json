@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Find Maximum Elements From List",
+  "description": "In Python, there are many ways to manipulate lists. One common task is to find the n maximum elements from a list. In this challenge, you will be asked to write a function that returns the n maximum elements from a list.",
+  "meta": {
+    "title": "Python List Manipulation | N Maximum Elements",
+    "description": "Learn how to find the n maximum elements from a list in Python. Explore efficient list manipulation techniques with this programming tutorial.",
+    "keywords": "Python, list manipulation, maximum elements, programming tutorial, coding challenge"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "N Max Elements Challenge",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/default_arguments",
+          "python/function_definition",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_max_n.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "max_n.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Find Maximum Elements From List",
-      "description": "In Python, there are many ways to manipulate lists. One common task is to find the n maximum elements from a list. In this challenge, you will be asked to write a function that returns the n maximum elements from a list.",
-      "meta": {
-        "title": "Python List Manipulation | N Maximum Elements",
-        "description": "Learn how to find the n maximum elements from a list in Python. Explore efficient list manipulation techniques with this programming tutorial.",
-        "keywords": "Python, list manipulation, maximum elements, programming tutorial, coding challenge"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "N Max Elements Challenge",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从列表中查找最大元素",
@@ -78,25 +89,13 @@
               {
                 "name": "验证Python脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/default_arguments",
-              "python/function_definition",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_max_n.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "max_n.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

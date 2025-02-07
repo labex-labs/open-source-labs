@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "Pulling All Submodules from Remote",
+  "description": "When working with Git repositories, submodules can be used to include other repositories as dependencies. However, when these dependencies are updated in their respective remotes, the changes are not automatically reflected in the main repository. In order to update the submodules, you need to pull them from their respective remotes.",
+  "meta": {
+    "title": "Pulling All Submodules from Remote Git Repositories",
+    "description": "Learn how to efficiently update Git submodules in your repository and keep your dependencies up-to-date.",
+    "keywords": "remote, submodules, git labs, git, update, pull, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Pulling All Submodules from Remote",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful pull",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/pull"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Pulling All Submodules from Remote",
-      "description": "When working with Git repositories, submodules can be used to include other repositories as dependencies. However, when these dependencies are updated in their respective remotes, the changes are not automatically reflected in the main repository. In order to update the submodules, you need to pull them from their respective remotes.",
-      "meta": {
-        "title": "Pulling All Submodules from Remote Git Repositories",
-        "description": "Learn how to efficiently update Git submodules in your repository and keep your dependencies up-to-date.",
-        "keywords": "remote, submodules, git labs, git, update, pull, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Pulling All Submodules from Remote",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful pull",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/pull"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从远程拉取所有子模块",
@@ -70,17 +67,13 @@
               {
                 "name": "验证拉取是否成功",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/pull"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

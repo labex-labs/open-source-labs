@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "View Changes Between Commits",
+  "description": "In this lab, you will learn how to view the changes between two Git commits using the `git shortlog` command, which can be helpful for understanding the history of a codebase and identifying the cause of a bug.",
+  "meta": {
+    "title": "View Changes Between Commits in Git",
+    "description": "Explore how to view a summary of changes between two Git commits and understand code revisions.",
+    "keywords": "version control, git labs, code revisions, git, git playground, commit changes"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "View Changes Between Commits",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful view",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/shortlog"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "View Changes Between Commits",
-      "description": "In this lab, you will learn how to view the changes between two Git commits using the `git shortlog` command, which can be helpful for understanding the history of a codebase and identifying the cause of a bug.",
-      "meta": {
-        "title": "View Changes Between Commits in Git",
-        "description": "Explore how to view a summary of changes between two Git commits and understand code revisions.",
-        "keywords": "version control, git labs, code revisions, git, git playground, commit changes"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "View Changes Between Commits",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful view",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/shortlog"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "查看提交之间的更改",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功查看",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/shortlog"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

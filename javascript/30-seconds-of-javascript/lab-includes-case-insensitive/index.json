@@ -1,10 +1,49 @@
 {
   "type": "lab",
+  "title": "Case-Insensitive Substring Search",
+  "description": "In this lab, we will be exploring how to perform a case-insensitive substring search in JavaScript. We will use the RegExp constructor and the 'i' flag to create a regular expression that can match the given search string, ignoring the case. By the end of this lab, you will have a better understanding of how to search for substrings without having to worry about case-sensitivity.",
+  "meta": {
+    "title": "Case-Insensitive Substring Search in JavaScript",
+    "description": "Learn how to perform a case-insensitive substring search in JavaScript using the RegExp constructor and the 'i' flag.",
+    "keywords": "javascript, case insensitive, javascript practice, search, javascript practice online, regular expression, javascript lab, substring, javascript tutor"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Case-Insensitive Substring Search",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,48 +54,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Case-Insensitive Substring Search",
-      "description": "In this lab, we will be exploring how to perform a case-insensitive substring search in JavaScript. We will use the RegExp constructor and the 'i' flag to create a regular expression that can match the given search string, ignoring the case. By the end of this lab, you will have a better understanding of how to search for substrings without having to worry about case-sensitivity.",
-      "meta": {
-        "title": "Case-Insensitive Substring Search in JavaScript",
-        "description": "Learn how to perform a case-insensitive substring search in JavaScript using the RegExp constructor and the 'i' flag.",
-        "keywords": "javascript, case insensitive, javascript practice, search, javascript practice online, regular expression, javascript lab, substring, javascript tutor"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Case-Insensitive Substring Search",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "不区分大小写的子字符串搜索",
@@ -75,22 +72,13 @@
               {
                 "name": "验证Node命令用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH中，可以通过输入'node'并按回车键来运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH中，可以通过输入'node'并按回车键来运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

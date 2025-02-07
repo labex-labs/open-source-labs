@@ -1,10 +1,100 @@
 {
   "type": "lab",
+  "title": "Cargo: Rust's Build and Package Manager",
+  "description": "In this lab, we will learn about Cargo, Rust's build system and package manager, which simplifies tasks such as code building, dependency management, and library downloading for Rust projects.",
+  "meta": {
+    "title": "Rust Cargo | Build System and Package Manager",
+    "description": "Learn about Rust's Cargo, the build system and package manager that simplifies tasks like code building, dependency management, and library downloading.",
+    "keywords": "Rust, Cargo, Build System, Package Manager, Dependency Management, Code Building"
+  },
   "difficulty": "Beginner",
   "time": 25,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Hello, Cargo",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Cargo Version",
+            "file": "verify1.sh",
+            "hint": "Check the version of cargo.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Creating a Project with Cargo",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Rust Cargo Project Compilation",
+            "file": "verify2.sh",
+            "hint": "Create hello_cargo project with cargo.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["rust/expressions_statements", "rust/function_syntax"]
+      },
+      {
+        "title": "Building and Running a Cargo Project",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Verify Cargo Build Command Execution",
+            "file": "verify3.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Building for Release",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Cargo Build Release Command Execution",
+            "file": "verify4.sh",
+            "hint": "Build hello_cargo project with cargo.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      },
+      {
+        "title": "Cargo as Convention",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": []
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,99 +105,6 @@
     "repo": "https://github.com/rust-lang/book"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Cargo: Rust's Build and Package Manager",
-      "description": "In this lab, we will learn about Cargo, Rust's build system and package manager, which simplifies tasks such as code building, dependency management, and library downloading for Rust projects.",
-      "meta": {
-        "title": "Rust Cargo | Build System and Package Manager",
-        "description": "Learn about Rust's Cargo, the build system and package manager that simplifies tasks like code building, dependency management, and library downloading.",
-        "keywords": "Rust, Cargo, Build System, Package Manager, Dependency Management, Code Building"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Hello, Cargo",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Cargo Version",
-                "file": "verify1.sh",
-                "hint": "Check the version of cargo.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Creating a Project with Cargo",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Rust Cargo Project Compilation",
-                "file": "verify2.sh",
-                "hint": "Create hello_cargo project with cargo.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
-          },
-          {
-            "title": "Building and Running a Cargo Project",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "Verify Cargo Build Command Execution",
-                "file": "verify3.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Building for Release",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "Verify Cargo Build Release Command Execution",
-                "file": "verify4.sh",
-                "hint": "Build hello_cargo project with cargo.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          },
-          {
-            "title": "Cargo as Convention",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": []
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Cargo：Rust的构建和包管理器",
@@ -126,12 +123,9 @@
               {
                 "name": "验证Cargo版本",
                 "file": "verify1.sh",
-                "hint": "检查cargo的版本。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "检查cargo的版本。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "使用 Cargo 创建项目",
@@ -140,12 +134,9 @@
               {
                 "name": "验证 Rust Cargo 项目编译",
                 "file": "verify2.sh",
-                "hint": "使用 cargo 创建 hello_cargo 项目。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "使用 cargo 创建 hello_cargo 项目。"
               }
-            ],
-            "skills": ["rust/expressions_statements", "rust/function_syntax"]
+            ]
           },
           {
             "title": "构建并运行一个 Cargo 项目",
@@ -154,12 +145,9 @@
               {
                 "name": "验证 Cargo 构建命令的执行",
                 "file": "verify3.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照说明完成步骤。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "发布版本构建",
@@ -168,12 +156,9 @@
               {
                 "name": "验证 Cargo 发布版本构建命令的执行",
                 "file": "verify4.sh",
-                "hint": "使用 cargo 构建 hello_cargo 项目。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "使用 cargo 构建 hello_cargo 项目。"
               }
-            ],
-            "skills": []
+            ]
           },
           {
             "title": "Cargo 约定",
@@ -182,17 +167,13 @@
               {
                 "name": "此步骤目前无验证",
                 "file": "verify5.sh",
-                "hint": "此步骤目前无验证",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "此步骤目前无验证"
               }
-            ],
-            "skills": []
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

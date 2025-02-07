@@ -1,10 +1,72 @@
 {
   "type": "lab",
+  "title": "React useDelayedState Hook",
+  "description": "In this lab, we will learn how to use the useDelayedState hook in React to delay the creation of a stateful value until a certain condition is met. This hook is useful when we need to wait for data or props to load before creating a stateful value, and can help improve the performance of our application. Through practical examples, we will see how this hook can be implemented and how it can be used to update stateful values in our React components.",
+  "meta": {
+    "title": "Mastering React's useDelayedState Hook",
+    "description": "Learn how to use the powerful useDelayedState hook in React to improve your application's performance and user experience.",
+    "keywords": "react, performance, usedelayedstate, state management, hooks"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "React useDelayedState Hook",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify the running status of the web service",
+            "file": "verify1-1.sh",
+            "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify the status of script.js modification",
+            "file": "verify1-2.sh",
+            "hint": "Please follow the steps to complete the lab.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "react/event_handling",
+          "react/hooks",
+          "react/jsx",
+          "react/list_keys",
+          "react/state_lifecycle",
+          "react/use_state_reducer"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "index.html",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "script.js",
+          "target": "~/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,57 +77,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "React useDelayedState Hook",
-      "description": "In this lab, we will learn how to use the useDelayedState hook in React to delay the creation of a stateful value until a certain condition is met. This hook is useful when we need to wait for data or props to load before creating a stateful value, and can help improve the performance of our application. Through practical examples, we will see how this hook can be implemented and how it can be used to update stateful values in our React components.",
-      "meta": {
-        "title": "Mastering React's useDelayedState Hook",
-        "description": "Learn how to use the powerful useDelayedState hook in React to improve your application's performance and user experience.",
-        "keywords": "react, performance, usedelayedstate, state management, hooks"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "React useDelayedState Hook",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify the running status of the web service",
-                "file": "verify1-1.sh",
-                "hint": "Please click on 'Go Live' in the bottom right corner to run the web service on port 8080. Then, you can refresh the **Web 8080** Tab to preview the web page.",
-                "timeout": 0,
-                "showstderr": true
-              },
-              {
-                "name": "Verify the status of script.js modification",
-                "file": "verify1-2.sh",
-                "hint": "Please follow the steps to complete the lab.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/list_keys",
-              "react/state_lifecycle",
-              "react/use_state_reducer"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "React useDelayedState 钩子",
@@ -84,31 +95,18 @@
               {
                 "name": "验证 Web 服务的运行状态",
                 "file": "verify1-1.sh",
-                "hint": "请点击右下角的“Go Live”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请点击右下角的“Go Live”以在端口 8080 上运行 Web 服务。然后，你可以刷新“Web 8080”标签页来预览网页。"
               },
               {
                 "name": "验证 script.js 修改状态",
                 "file": "verify1-2.sh",
-                "hint": "请按照步骤完成实验。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请按照步骤完成实验。"
               }
-            ],
-            "skills": [
-              "react/event_handling",
-              "react/hooks",
-              "react/jsx",
-              "react/list_keys",
-              "react/state_lifecycle",
-              "react/use_state_reducer"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -117,21 +115,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "index.html",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "script.js",
-          "target": "~/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

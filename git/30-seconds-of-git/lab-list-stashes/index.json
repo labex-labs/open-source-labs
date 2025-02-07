@@ -1,10 +1,44 @@
 {
   "type": "lab",
+  "title": "List All Stashes",
+  "description": "In Git, stashing is a way to temporarily save changes that are not ready to be committed. Stashing allows you to switch branches or work on a different task without losing your current progress. Once you are ready to continue working on the changes, you can apply the stash and continue where you left off. In this lab, you will learn how to list all stashes in a Git repository.",
+  "meta": {
+    "title": "List All Stashes in Git Repository",
+    "description": "Learn how to list all stashes in a Git repository and manage your changes effectively.",
+    "keywords": "version control, repository, git labs, stash, git, list, git playground"
+  },
   "difficulty": "Beginner",
   "time": 5,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "List All Stashes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify for successful listing",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["git/stash"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +49,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "List All Stashes",
-      "description": "In Git, stashing is a way to temporarily save changes that are not ready to be committed. Stashing allows you to switch branches or work on a different task without losing your current progress. Once you are ready to continue working on the changes, you can apply the stash and continue where you left off. In this lab, you will learn how to list all stashes in a Git repository.",
-      "meta": {
-        "title": "List All Stashes in Git Repository",
-        "description": "Learn how to list all stashes in a Git repository and manage your changes effectively.",
-        "keywords": "version control, repository, git labs, stash, git, list, git playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "List All Stashes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify for successful listing",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["git/stash"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "列出所有贮藏",
@@ -70,17 +67,13 @@
               {
                 "name": "验证是否成功列出",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["git/stash"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

@@ -1,10 +1,81 @@
 {
   "type": "lab",
+  "title": "Scikit-Learn Visualization API",
+  "description": "Scikit-learn is a popular Python library that provides a simple and efficient API for machine learning tasks. One of the key features of scikit-learn is its built-in visualization API, which makes it easy to generate visualizations for machine learning models. In this lab, we will explore how to use the scikit-learn visualization API to compare ROC curves for two different classifiers.",
+  "meta": {
+    "title": "Explore Scikit-Learn's Powerful Visualization API",
+    "description": "Discover how to leverage Scikit-Learn's built-in visualization tools to analyze and compare machine learning models.",
+    "keywords": "machine learning, roc curve, python, visualization, scikit learn, scikit-learn, scikit-learn playground"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Load Data and Train a SVC",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/datasets",
+          "sklearn/metrics",
+          "sklearn/model_selection",
+          "sklearn/svm"
+        ]
+      },
+      {
+        "title": "Plot the ROC Curve",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Train a Random Forest and Plot the ROC Curve",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/ensemble"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-roc-curve-visualization-api.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,71 +86,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Scikit-Learn Visualization API",
-      "description": "Scikit-learn is a popular Python library that provides a simple and efficient API for machine learning tasks. One of the key features of scikit-learn is its built-in visualization API, which makes it easy to generate visualizations for machine learning models. In this lab, we will explore how to use the scikit-learn visualization API to compare ROC curves for two different classifiers.",
-      "meta": {
-        "title": "Explore Scikit-Learn's Powerful Visualization API",
-        "description": "Discover how to leverage Scikit-Learn's built-in visualization tools to analyze and compare machine learning models.",
-        "keywords": "machine learning, roc curve, python, visualization, scikit learn, scikit-learn, scikit-learn playground"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Load Data and Train a SVC",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/metrics",
-              "sklearn/model_selection",
-              "sklearn/svm"
-            ]
-          },
-          {
-            "title": "Plot the ROC Curve",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Train a Random Forest and Plot the ROC Curve",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/ensemble"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Scikit-learn 可视化 API",
@@ -100,13 +106,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/datasets",
-              "sklearn/metrics",
-              "sklearn/model_selection",
-              "sklearn/svm"
             ]
           },
           {
@@ -118,8 +117,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "训练随机森林并绘制 ROC 曲线",
@@ -130,13 +128,11 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/ensemble"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -145,16 +141,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-roc-curve-visualization-api.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

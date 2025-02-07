@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Object From Pairs",
+  "description": "In this lab, we will explore how to create an object from key-value pairs in JavaScript. We will use the Array.prototype.reduce() method to combine the pairs into a single object. Additionally, we will learn about the Object.fromEntries() method, which provides similar functionality. By the end of the lab, you will have a better understanding of how to work with key-value pairs in JavaScript.",
+  "meta": {
+    "title": "Create Objects from Key-Value Pairs in JavaScript",
+    "description": "Learn how to create objects from key-value pairs using JavaScript's Array.prototype.reduce() and Object.fromEntries() methods.",
+    "keywords": "javascript, javascript practice, fromentries, javascript practice online, object, javascript lab, key value pairs, reduce, javascript tutor"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Object From Pairs",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Commands in ZSH History",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Object From Pairs",
-      "description": "In this lab, we will explore how to create an object from key-value pairs in JavaScript. We will use the Array.prototype.reduce() method to combine the pairs into a single object. Additionally, we will learn about the Object.fromEntries() method, which provides similar functionality. By the end of the lab, you will have a better understanding of how to work with key-value pairs in JavaScript.",
-      "meta": {
-        "title": "Create Objects from Key-Value Pairs in JavaScript",
-        "description": "Learn how to create objects from key-value pairs using JavaScript's Array.prototype.reduce() and Object.fromEntries() methods.",
-        "keywords": "javascript, javascript practice, fromentries, javascript practice online, object, javascript lab, key value pairs, reduce, javascript tutor"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Object From Pairs",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Commands in ZSH History",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "从键值对创建对象",
@@ -78,25 +75,13 @@
               {
                 "name": "在ZSH历史记录中验证Node命令",
                 "file": "verify1.sh",
-                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "通过在终端/SSH中输入'node'并按回车键，可以运行JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

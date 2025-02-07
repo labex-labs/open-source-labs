@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Sum List Based on Function",
+  "description": "In this lab, you will learn how to use the `map()` function to apply a function to each element of a list and the `sum()` function to calculate the sum of the modified values, and then implement a function that takes a list and a function as arguments, maps each element of the list to a value using the provided function, and returns the sum of the values.",
+  "meta": {
+    "title": "Sum List Based on Function in Python",
+    "description": "Learn how to use map() and sum() functions to apply a function to each element of a list and calculate the sum of the values.",
+    "keywords": "python, sum, list, function, map"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Sum List Based on Function",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Script Execution in Temporary Directory",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/lambda_functions",
+          "python/lists",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_sum_by.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "sum_by.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Sum List Based on Function",
-      "description": "In this lab, you will learn how to use the `map()` function to apply a function to each element of a list and the `sum()` function to calculate the sum of the modified values, and then implement a function that takes a list and a function as arguments, maps each element of the list to a value using the provided function, and returns the sum of the values.",
-      "meta": {
-        "title": "Sum List Based on Function in Python",
-        "description": "Learn how to use map() and sum() functions to apply a function to each element of a list and calculate the sum of the values.",
-        "keywords": "python, sum, list, function, map"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Sum List Based on Function",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Script Execution in Temporary Directory",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "根据函数计算列表元素之和",
@@ -78,25 +89,13 @@
               {
                 "name": "在临时目录中验证 Python 脚本执行情况",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/build_in_functions",
-              "python/comments",
-              "python/dictionaries",
-              "python/function_definition",
-              "python/lambda_functions",
-              "python/lists",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_sum_by.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "sum_by.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

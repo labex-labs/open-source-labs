@@ -1,212 +1,101 @@
 {
   "type": "lab",
+  "title": "Yield Statement Management in Python",
+  "description": "In this lab, you will learn how to manage what happens at the yield statements in Python.",
+  "meta": {
+    "title": "Mastering Yield Statement Management in Python",
+    "description": "Explore the intricacies of managing yield statements in Python, including closing generators and handling exceptions.",
+    "keywords": "seo, python, exception handling, generator, yield statement"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
-  "backend": {
-    "imageid": "vnc-ubuntu:2204"
-  },
-  "contributors": [],
-  "license": {
-    "name": "CC-BY-SA-4.0",
-    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
-    "repo": "https://github.com/dabeaz-course/python-mastery"
-  },
-  "i18n": [
-    {
-      "lang": "en",
-      "title": "Yield Statement Management in Python",
-      "description": "In this lab, you will learn how to manage what happens at the yield statements in Python.",
-      "meta": {
-        "title": "Mastering Yield Statement Management in Python",
-        "description": "Explore the intricacies of managing yield statements in Python, including closing generators and handling exceptions.",
-        "keywords": "seo, python, exception handling, generator, yield statement"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Closing a Generator",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Python Try Except Print Statements",
-                "file": "verify1.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/iterators",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops",
-              "python/with_statement"
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "Raising Exceptions",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "Verify Python Exception Handling",
-                "file": "verify2.sh",
-                "hint": "Please follow the instructions to complete the steps.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/numeric_types",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/while_loops",
-              "python/with_statement"
-            ],
-            "solutions": ["cofollow.py"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
-    {
-      "lang": "zh",
-      "title": "Python 中的 yield 语句管理",
-      "description": "在本实验中，你将学习如何管理 Python 中 yield 语句处发生的事情。",
-      "meta": {
-        "title": "精通 Python 中的 yield 语句管理",
-        "description": "探索 Python 中管理 yield 语句的复杂性，包括关闭生成器和处理异常。",
-        "keywords": "SEO, Python, 异常处理, 生成器, yield 语句"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "关闭生成器",
-            "text": "zh/step1.md",
-            "verify": [
-              {
-                "name": "验证 Python 的 Try Except Print 语句",
-                "file": "verify1.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/break_continue",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/iterators",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages",
-              "python/while_loops",
-              "python/with_statement"
-            ],
-            "solutions": ["step1_solution.py"]
-          },
-          {
-            "title": "引发异常",
-            "text": "zh/step2.md",
-            "verify": [
-              {
-                "name": "验证 Python 异常处理",
-                "file": "verify2.sh",
-                "hint": "请按照说明完成步骤。",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/build_in_functions",
-              "python/catching_exceptions",
-              "python/comments",
-              "python/conditional_statements",
-              "python/file_opening_closing",
-              "python/for_loops",
-              "python/function_definition",
-              "python/generators",
-              "python/importing_modules",
-              "python/keyword_arguments",
-              "python/numeric_types",
-              "python/os_system",
-              "python/python_shell",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/type_conversion",
-              "python/using_packages",
-              "python/variables_data_types",
-              "python/while_loops",
-              "python/with_statement"
-            ],
-            "solutions": ["cofollow.py"]
-          }
-        ],
-        "intro": {
-          "text": "zh/intro.md",
-          "background": "setup.sh",
-          "title": "介绍"
-        },
-        "finish": {
-          "text": "zh/finish.md",
-          "title": "总结"
-        }
-      }
-    }
-  ],
   "details": {
+    "steps": [
+      {
+        "title": "Closing a Generator",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Python Try Except Print Statements",
+            "file": "verify1.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/break_continue",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/importing_modules",
+          "python/iterators",
+          "python/os_system",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages",
+          "python/while_loops",
+          "python/with_statement"
+        ],
+        "solutions": ["step1_solution.py"]
+      },
+      {
+        "title": "Raising Exceptions",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Python Exception Handling",
+            "file": "verify2.sh",
+            "hint": "Please follow the instructions to complete the steps.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/build_in_functions",
+          "python/catching_exceptions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/file_opening_closing",
+          "python/for_loops",
+          "python/function_definition",
+          "python/generators",
+          "python/importing_modules",
+          "python/keyword_arguments",
+          "python/numeric_types",
+          "python/os_system",
+          "python/python_shell",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/type_conversion",
+          "python/using_packages",
+          "python/variables_data_types",
+          "python/while_loops",
+          "python/with_statement"
+        ],
+        "solutions": ["cofollow.py"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
     "assets": {
       "host01": [
         {
@@ -226,5 +115,62 @@
         }
       ]
     }
-  }
+  },
+  "backend": {
+    "imageid": "vnc-ubuntu:2204"
+  },
+  "contributors": [],
+  "license": {
+    "name": "CC-BY-SA-4.0",
+    "url": "https://github.com/dabeaz-course/python-mastery/blob/main/LICENSE.md",
+    "repo": "https://github.com/dabeaz-course/python-mastery"
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python 中的 yield 语句管理",
+      "description": "在本实验中，你将学习如何管理 Python 中 yield 语句处发生的事情。",
+      "meta": {
+        "title": "精通 Python 中的 yield 语句管理",
+        "description": "探索 Python 中管理 yield 语句的复杂性，包括关闭生成器和处理异常。",
+        "keywords": "SEO, Python, 异常处理, 生成器, yield 语句"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "关闭生成器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 的 Try Except Print 语句",
+                "file": "verify1.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["step1_solution.py"]
+          },
+          {
+            "title": "引发异常",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证 Python 异常处理",
+                "file": "verify2.sh",
+                "hint": "请按照说明完成步骤。"
+              }
+            ],
+            "solutions": ["cofollow.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

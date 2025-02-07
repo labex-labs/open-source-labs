@@ -1,10 +1,52 @@
 {
   "type": "lab",
+  "title": "Invert Object Key-Value Pairs",
+  "description": "In this lab, we will explore how to invert an object's key-value pairs without mutating the original object. We will use the Object.keys() method and Array.prototype.reduce() to invert the object. Additionally, we will learn how to apply a function to the inverted keys and return an array of keys responsible for generating the inverted value.",
+  "meta": {
+    "title": "Object Inversion | Programming Tutorial",
+    "description": "Learn how to invert an object's key-value pairs without mutating the original object using JavaScript methods like Object.keys() and Array.prototype.reduce().",
+    "keywords": "object inversion, key-value pairs, JavaScript, programming tutorial, Object.keys, Array.prototype.reduce"
+  },
   "difficulty": "Beginner",
   "time": 10,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Invert Object",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Node Command Usage",
+            "file": "verify1.sh",
+            "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "javascript/arith_ops",
+          "javascript/array_methods",
+          "javascript/comp_ops",
+          "javascript/data_types",
+          "javascript/destr_assign",
+          "javascript/higher_funcs",
+          "javascript/variables"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +57,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-code"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Invert Object Key-Value Pairs",
-      "description": "In this lab, we will explore how to invert an object's key-value pairs without mutating the original object. We will use the Object.keys() method and Array.prototype.reduce() to invert the object. Additionally, we will learn how to apply a function to the inverted keys and return an array of keys responsible for generating the inverted value.",
-      "meta": {
-        "title": "Object Inversion | Programming Tutorial",
-        "description": "Learn how to invert an object's key-value pairs without mutating the original object using JavaScript methods like Object.keys() and Array.prototype.reduce().",
-        "keywords": "object inversion, key-value pairs, JavaScript, programming tutorial, Object.keys, Array.prototype.reduce"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Invert Object",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Node Command Usage",
-                "file": "verify1.sh",
-                "hint": "JavaScript can be run in the Terminal/SSH by typing 'node' and pressing Enter.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "反转对象键值对",
@@ -78,25 +75,13 @@
               {
                 "name": "验证 Node 命令用法",
                 "file": "verify1.sh",
-                "hint": "在终端/SSH 中输入 'node' 并回车即可运行 JavaScript。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "在终端/SSH 中输入 'node' 并回车即可运行 JavaScript。"
               }
-            ],
-            "skills": [
-              "javascript/arith_ops",
-              "javascript/array_methods",
-              "javascript/comp_ops",
-              "javascript/data_types",
-              "javascript/destr_assign",
-              "javascript/higher_funcs",
-              "javascript/variables"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {

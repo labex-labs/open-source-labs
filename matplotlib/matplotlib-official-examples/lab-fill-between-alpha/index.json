@@ -1,10 +1,129 @@
 {
   "type": "lab",
+  "title": "Matplotlib Fill Between and Alpha",
+  "description": "In data visualization, sometimes it is necessary to highlight certain areas or ranges on a graph. The fill_between function of Matplotlib is a useful tool for generating a shaded region between a minimum and maximum boundary. It can also be used to enhance the visual appearance of a graph. The alpha argument can be used to adjust the transparency of the shaded region. This lab will guide you through several examples of using fill_between and alpha in Matplotlib to create more visually appealing and informative graphs.",
+  "meta": {
+    "title": "Enhance Visualizations with Matplotlib's Fill Between and Alpha",
+    "description": "Explore advanced techniques in Matplotlib to create visually appealing and informative graphs using fill_between and alpha.",
+    "keywords": "line plots, python playground, matplotlib, python, data visualization, fill between, alpha"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Enhancing a Line Plot with fill_between",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/fill_between",
+          "matplotlib/grid_config",
+          "matplotlib/importing_matplotlib",
+          "matplotlib/line_plots",
+          "python/booleans",
+          "python/build_in_functions",
+          "python/comments",
+          "python/data_visualization",
+          "python/for_loops",
+          "python/importing_modules",
+          "python/lists",
+          "python/numerical_computing",
+          "python/tuples",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Using alpha to Soften Colors",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/fill_between",
+          "matplotlib/grid_config",
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "python/comments",
+          "python/for_loops",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Highlighting Certain Regions with where",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/fill_between",
+          "matplotlib/grid_config",
+          "matplotlib/legend_config",
+          "matplotlib/line_plots",
+          "python/comments",
+          "python/for_loops",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Highlighting Spans of an Axes with axhspan and axvspan",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/figures_axes",
+          "matplotlib/importing_matplotlib",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/tuples"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "fill-between-alpha.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,119 +134,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Matplotlib Fill Between and Alpha",
-      "description": "In data visualization, sometimes it is necessary to highlight certain areas or ranges on a graph. The fill_between function of Matplotlib is a useful tool for generating a shaded region between a minimum and maximum boundary. It can also be used to enhance the visual appearance of a graph. The alpha argument can be used to adjust the transparency of the shaded region. This lab will guide you through several examples of using fill_between and alpha in Matplotlib to create more visually appealing and informative graphs.",
-      "meta": {
-        "title": "Enhance Visualizations with Matplotlib's Fill Between and Alpha",
-        "description": "Explore advanced techniques in Matplotlib to create visually appealing and informative graphs using fill_between and alpha.",
-        "keywords": "line plots, python playground, matplotlib, python, data visualization, fill between, alpha"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Enhancing a Line Plot with fill_between",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/fill_between",
-              "matplotlib/grid_config",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Using alpha to Soften Colors",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Highlighting Certain Regions with where",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Highlighting Spans of an Axes with axhspan and axvspan",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "Matplotlib 的填充区域与透明度",
@@ -148,23 +154,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/fill_between",
-              "matplotlib/grid_config",
-              "matplotlib/importing_matplotlib",
-              "matplotlib/line_plots",
-              "python/booleans",
-              "python/build_in_functions",
-              "python/comments",
-              "python/data_visualization",
-              "python/for_loops",
-              "python/importing_modules",
-              "python/lists",
-              "python/numerical_computing",
-              "python/tuples",
-              "python/with_statement"
             ]
           },
           {
@@ -176,17 +165,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -198,17 +176,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/fill_between",
-              "matplotlib/grid_config",
-              "matplotlib/legend_config",
-              "matplotlib/line_plots",
-              "python/comments",
-              "python/for_loops",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples"
             ]
           },
           {
@@ -220,19 +187,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/figures_axes",
-              "matplotlib/importing_matplotlib",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/tuples"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -241,16 +200,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "fill-between-alpha.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

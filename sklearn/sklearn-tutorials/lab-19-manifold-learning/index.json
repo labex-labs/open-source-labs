@@ -1,10 +1,87 @@
 {
   "type": "lab",
+  "title": "Manifold Learning with Scikit-Learn",
+  "description": "In this lab, we will explore manifold learning, which is an approach to non-linear dimensionality reduction. Dimensionality reduction is often used to visualize high-dimensional datasets, as it can be difficult to interpret data in more than three dimensions. Manifold learning algorithms aim to find a lower-dimensional representation of the data that preserves the underlying structure.",
+  "meta": {
+    "title": "Manifold Learning | Dimensionality Reduction | Isomap Algorithm",
+    "description": "Explore manifold learning, a non-linear dimensionality reduction technique, using the Isomap algorithm in this comprehensive programming tutorial.",
+    "keywords": "manifold learning, dimensionality reduction, Isomap algorithm, scikit-learn, data visualization"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Isomap",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/manifold"]
+      },
+      {
+        "title": "Locally Linear Embedding (LLE)",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/manifold"]
+      },
+      {
+        "title": "t-distributed Stochastic Neighbor Embedding (t-SNE)",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/manifold"]
+      },
+      {
+        "title": "Compare Results",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "19-manifold-learning.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,77 +92,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Manifold Learning with Scikit-Learn",
-      "description": "In this lab, we will explore manifold learning, which is an approach to non-linear dimensionality reduction. Dimensionality reduction is often used to visualize high-dimensional datasets, as it can be difficult to interpret data in more than three dimensions. Manifold learning algorithms aim to find a lower-dimensional representation of the data that preserves the underlying structure.",
-      "meta": {
-        "title": "Manifold Learning | Dimensionality Reduction | Isomap Algorithm",
-        "description": "Explore manifold learning, a non-linear dimensionality reduction technique, using the Isomap algorithm in this comprehensive programming tutorial.",
-        "keywords": "manifold learning, dimensionality reduction, Isomap algorithm, scikit-learn, data visualization"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Isomap",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/manifold"]
-          },
-          {
-            "title": "Locally Linear Embedding (LLE)",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/manifold"]
-          },
-          {
-            "title": "t-distributed Stochastic Neighbor Embedding (t-SNE)",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/manifold"]
-          },
-          {
-            "title": "Compare Results",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Scikit-Learn进行流形学习",
@@ -106,8 +112,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/manifold"]
+            ]
           },
           {
             "title": "局部线性嵌入（Locally Linear Embedding，LLE）",
@@ -118,8 +123,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/manifold"]
+            ]
           },
           {
             "title": "t分布随机邻域嵌入（t-distributed Stochastic Neighbor Embedding，t-SNE）",
@@ -130,8 +134,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/manifold"]
+            ]
           },
           {
             "title": "比较结果",
@@ -142,13 +145,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -157,16 +158,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "19-manifold-learning.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

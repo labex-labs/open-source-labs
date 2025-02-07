@@ -1,10 +1,175 @@
 {
   "type": "lab",
+  "title": "Create Interactive Fourier Waveform Visualization",
+  "description": "In this lab, you will learn how to create a simple GUI using Matplotlib in Python. Specifically, you will create a Fourier Demo that displays two waveforms in the frequency and time domains. You will be able to adjust the frequency and amplitude of the waveforms by clicking and dragging on the plot.",
+  "meta": {
+    "title": "Create Simple GUI with Matplotlib | Python Programming Tutorial",
+    "description": "Learn how to create a Fourier Demo with adjustable waveforms in the frequency and time domains using Matplotlib in Python.",
+    "keywords": "Python, Matplotlib, GUI, Fourier, Waveform, Programming Tutorial"
+  },
   "difficulty": "Beginner",
   "time": 30,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Import Libraries",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/custom_backends",
+          "matplotlib/figures_axes",
+          "python/data_visualization",
+          "python/importing_modules",
+          "python/numerical_computing",
+          "python/using_packages"
+        ]
+      },
+      {
+        "title": "Define Knob and Param Classes",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/widgets_sliders",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/data_collections",
+          "python/default_arguments",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/lists",
+          "python/polymorphism",
+          "python/raising_exceptions",
+          "python/tuples",
+          "python/variables_data_types",
+          "python/with_statement"
+        ]
+      },
+      {
+        "title": "Define SliderGroup Class",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "matplotlib/widgets_sliders",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/constructor",
+          "python/data_collections",
+          "python/dictionaries",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/numeric_types",
+          "python/polymorphism",
+          "python/tuples",
+          "python/type_conversion",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Define FourierDemoFrame Class",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "matplotlib/event_handling",
+          "matplotlib/line_plots",
+          "python/build_in_functions",
+          "python/classes_objects",
+          "python/comments",
+          "python/conditional_statements",
+          "python/constructor",
+          "python/data_collections",
+          "python/encapsulation",
+          "python/for_loops",
+          "python/function_definition",
+          "python/keyword_arguments",
+          "python/lists",
+          "python/polymorphism",
+          "python/sets",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/variables_data_types"
+        ]
+      },
+      {
+        "title": "Define App Class",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify5.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "python/booleans",
+          "python/classes_objects",
+          "python/encapsulation",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Run the Application",
+        "text": "en/step6.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify6.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["python/conditional_statements"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "fourier-demo-wx-sgskip.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,165 +180,6 @@
     "repo": "https://github.com/matplotlib/matplotlib"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Create Interactive Fourier Waveform Visualization",
-      "description": "In this lab, you will learn how to create a simple GUI using Matplotlib in Python. Specifically, you will create a Fourier Demo that displays two waveforms in the frequency and time domains. You will be able to adjust the frequency and amplitude of the waveforms by clicking and dragging on the plot.",
-      "meta": {
-        "title": "Create Simple GUI with Matplotlib | Python Programming Tutorial",
-        "description": "Learn how to create a Fourier Demo with adjustable waveforms in the frequency and time domains using Matplotlib in Python.",
-        "keywords": "Python, Matplotlib, GUI, Fourier, Waveform, Programming Tutorial"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Import Libraries",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/custom_backends",
-              "matplotlib/figures_axes",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
-            ]
-          },
-          {
-            "title": "Define Knob and Param Classes",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/widgets_sliders",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
-            ]
-          },
-          {
-            "title": "Define SliderGroup Class",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/widgets_sliders",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/constructor",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Define FourierDemoFrame Class",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/lists",
-              "python/polymorphism",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
-            ]
-          },
-          {
-            "title": "Define App Class",
-            "text": "en/step5.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify5.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
-            ]
-          },
-          {
-            "title": "Run the Application",
-            "text": "en/step6.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify6.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["python/conditional_statements"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "创建交互式傅里叶波形可视化",
@@ -194,14 +200,6 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/custom_backends",
-              "matplotlib/figures_axes",
-              "python/data_visualization",
-              "python/importing_modules",
-              "python/numerical_computing",
-              "python/using_packages"
             ]
           },
           {
@@ -213,24 +211,6 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/widgets_sliders",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/default_arguments",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/lists",
-              "python/polymorphism",
-              "python/raising_exceptions",
-              "python/tuples",
-              "python/variables_data_types",
-              "python/with_statement"
             ]
           },
           {
@@ -242,22 +222,6 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/widgets_sliders",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/constructor",
-              "python/data_collections",
-              "python/dictionaries",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/numeric_types",
-              "python/polymorphism",
-              "python/tuples",
-              "python/type_conversion",
-              "python/variables_data_types"
             ]
           },
           {
@@ -269,26 +233,6 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "matplotlib/event_handling",
-              "matplotlib/line_plots",
-              "python/build_in_functions",
-              "python/classes_objects",
-              "python/comments",
-              "python/conditional_statements",
-              "python/constructor",
-              "python/data_collections",
-              "python/encapsulation",
-              "python/for_loops",
-              "python/function_definition",
-              "python/keyword_arguments",
-              "python/lists",
-              "python/polymorphism",
-              "python/sets",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/variables_data_types"
             ]
           },
           {
@@ -300,13 +244,6 @@
                 "file": "verify5.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "python/booleans",
-              "python/classes_objects",
-              "python/encapsulation",
-              "python/function_definition",
-              "python/tuples"
             ]
           },
           {
@@ -318,13 +255,11 @@
                 "file": "verify6.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["python/conditional_statements"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -333,16 +268,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "fourier-demo-wx-sgskip.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

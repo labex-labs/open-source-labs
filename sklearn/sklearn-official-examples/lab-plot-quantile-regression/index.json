@@ -1,10 +1,92 @@
 {
   "type": "lab",
+  "title": "Quantile Regression with Scikit-Learn",
+  "description": "This tutorial will demonstrate how to perform quantile regression using scikit-learn. We will generate two synthetic datasets to illustrate how quantile regression can predict non-trivial conditional quantiles. We will use the QuantileRegressor class to estimate the median as well as a low and high quantile fixed at 5% and 95%, respectively. We will compare QuantileRegressor with LinearRegression and evaluate their performance using mean absolute error (MAE) and mean squared error (MSE).",
+  "meta": {
+    "title": "Quantile Regression Tutorial | Machine Learning | Data Analysis",
+    "description": "Learn how to perform quantile regression using scikit-learn, generate synthetic datasets, and compare the performance of different regression models.",
+    "keywords": "quantile regression, scikit-learn, machine learning, data analysis, synthetic datasets"
+  },
   "difficulty": "Beginner",
   "time": 20,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Dataset Generation",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify1.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Dataset Visualization",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify2.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn"]
+      },
+      {
+        "title": "Quantile Regression",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify3.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": ["ml/sklearn", "sklearn/linear_model"]
+      },
+      {
+        "title": "Compare QuantileRegressor and LinearRegression",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "This step has no verification at the moment",
+            "file": "verify4.sh",
+            "hint": "This step has no verification at the moment"
+          }
+        ],
+        "skills": [
+          "ml/sklearn",
+          "sklearn/linear_model",
+          "sklearn/metrics",
+          "sklearn/model_selection"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "plot-quantile-regression.ipynb",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "jupyter-ubuntu:2204"
   },
@@ -15,82 +97,6 @@
     "repo": "https://github.com/scikit-learn/scikit-learn"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Quantile Regression with Scikit-Learn",
-      "description": "This tutorial will demonstrate how to perform quantile regression using scikit-learn. We will generate two synthetic datasets to illustrate how quantile regression can predict non-trivial conditional quantiles. We will use the QuantileRegressor class to estimate the median as well as a low and high quantile fixed at 5% and 95%, respectively. We will compare QuantileRegressor with LinearRegression and evaluate their performance using mean absolute error (MAE) and mean squared error (MSE).",
-      "meta": {
-        "title": "Quantile Regression Tutorial | Machine Learning | Data Analysis",
-        "description": "Learn how to perform quantile regression using scikit-learn, generate synthetic datasets, and compare the performance of different regression models.",
-        "keywords": "quantile regression, scikit-learn, machine learning, data analysis, synthetic datasets"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Dataset Generation",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify1.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Dataset Visualization",
-            "text": "en/step2.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify2.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn"]
-          },
-          {
-            "title": "Quantile Regression",
-            "text": "en/step3.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify3.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
-          },
-          {
-            "title": "Compare QuantileRegressor and LinearRegression",
-            "text": "en/step4.md",
-            "verify": [
-              {
-                "name": "This step has no verification at the moment",
-                "file": "verify4.sh",
-                "hint": "This step has no verification at the moment"
-              }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/model_selection"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用Scikit-Learn进行分位数回归",
@@ -111,8 +117,7 @@
                 "file": "verify1.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "数据集可视化",
@@ -123,8 +128,7 @@
                 "file": "verify2.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn"]
+            ]
           },
           {
             "title": "分位数回归",
@@ -135,8 +139,7 @@
                 "file": "verify3.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": ["ml/sklearn", "sklearn/linear_model"]
+            ]
           },
           {
             "title": "比较分位数回归器和线性回归",
@@ -147,18 +150,11 @@
                 "file": "verify4.sh",
                 "hint": "此步骤目前没有验证"
               }
-            ],
-            "skills": [
-              "ml/sklearn",
-              "sklearn/linear_model",
-              "sklearn/metrics",
-              "sklearn/model_selection"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -167,16 +163,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "plot-quantile-regression.ipynb",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

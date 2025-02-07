@@ -1,10 +1,53 @@
 {
   "type": "lab",
+  "title": "Concurrent Data Access with Mutexes",
+  "description": "This lab aims to demonstrate how to use mutexes to safely access data across multiple goroutines.",
+  "meta": {
+    "title": "Go Programming | Mutex Synchronization | Concurrent State Management",
+    "description": "Learn how to use mutexes to safely access data across multiple goroutines in Go programming. Manage complex state with synchronized access to shared resources.",
+    "keywords": "Go programming, mutex, synchronization, concurrent programming, state management, goroutines"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": false,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Mutexes",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Map Counters Updated as Expected",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": ["go/mutexes"]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "mutexes.go",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,43 +58,6 @@
     "repo": "https://github.com/mmcgrana/gobyexample"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Concurrent Data Access with Mutexes",
-      "description": "This lab aims to demonstrate how to use mutexes to safely access data across multiple goroutines.",
-      "meta": {
-        "title": "Go Programming | Mutex Synchronization | Concurrent State Management",
-        "description": "Learn how to use mutexes to safely access data across multiple goroutines in Go programming. Manage complex state with synchronized access to shared resources.",
-        "keywords": "Go programming, mutex, synchronization, concurrent programming, state management, goroutines"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Mutexes",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Map Counters Updated as Expected",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": ["go/mutexes"]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "使用互斥锁进行并发数据访问",
@@ -70,17 +76,13 @@
               {
                 "name": "验证映射计数器是否按预期更新",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": ["go/mutexes"]
+            ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -89,16 +91,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "mutexes.go",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }

@@ -1,10 +1,66 @@
 {
   "type": "lab",
+  "title": "Binomial Coefficient Calculation Tutorial",
+  "description": "In this lab, you will learn about the binomial coefficient, a mathematical concept used in probability theory and combinatorics, and write a Python function to calculate it using the `math.comb()` method.",
+  "meta": {
+    "title": "Binomial Coefficient Calculation | Mathematics | Combinatorics",
+    "description": "Learn how to calculate the binomial coefficient, a fundamental concept in probability theory and combinatorics, using Python's math.comb() function.",
+    "keywords": "binomial coefficient, probability, combinatorics, mathematics, python"
+  },
   "difficulty": "Beginner",
   "time": 15,
   "hidden": true,
   "fee_type": "free",
   "show_in_tutorial": true,
+  "details": {
+    "steps": [
+      {
+        "title": "Binomial Coefficient",
+        "text": "en/step1.md",
+        "verify": [
+          {
+            "name": "Verify Binomial Coefficient Computation",
+            "file": "verify1.sh",
+            "hint": "Please make sure you have completed the required actions.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/comments",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/math_random",
+          "python/standard_libraries",
+          "python/tuples",
+          "python/using_packages"
+        ]
+      }
+    ],
+    "intro": {
+      "text": "en/intro.md",
+      "background": "setup.sh",
+      "title": "Introduction"
+    },
+    "finish": {
+      "text": "en/finish.md",
+      "title": "Summary"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "test_binomial_coefficient.py",
+          "target": "/tmp",
+          "chmod": "ugo+rwx"
+        },
+        {
+          "file": "binomial_coefficient.py",
+          "target": "/home/labex/project",
+          "chmod": "ugo+rwx"
+        }
+      ]
+    }
+  },
   "backend": {
     "imageid": "webide-ubuntu:2204"
   },
@@ -15,51 +71,6 @@
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
   },
   "i18n": [
-    {
-      "lang": "en",
-      "title": "Binomial Coefficient Calculation Tutorial",
-      "description": "In this lab, you will learn about the binomial coefficient, a mathematical concept used in probability theory and combinatorics, and write a Python function to calculate it using the `math.comb()` method.",
-      "meta": {
-        "title": "Binomial Coefficient Calculation | Mathematics | Combinatorics",
-        "description": "Learn how to calculate the binomial coefficient, a fundamental concept in probability theory and combinatorics, using Python's math.comb() function.",
-        "keywords": "binomial coefficient, probability, combinatorics, mathematics, python"
-      },
-      "details": {
-        "steps": [
-          {
-            "title": "Binomial Coefficient",
-            "text": "en/step1.md",
-            "verify": [
-              {
-                "name": "Verify Binomial Coefficient Computation",
-                "file": "verify1.sh",
-                "hint": "Please make sure you have completed the required actions.",
-                "timeout": 0,
-                "showstderr": true
-              }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
-            ]
-          }
-        ],
-        "intro": {
-          "text": "en/intro.md",
-          "background": "setup.sh",
-          "title": "Introduction"
-        },
-        "finish": {
-          "text": "en/finish.md",
-          "title": "Summary"
-        }
-      }
-    },
     {
       "lang": "zh",
       "title": "二项式系数计算教程",
@@ -78,25 +89,13 @@
               {
                 "name": "验证二项式系数计算",
                 "file": "verify1.sh",
-                "hint": "请确保你已完成所需操作。",
-                "timeout": 0,
-                "showstderr": true
+                "hint": "请确保你已完成所需操作。"
               }
-            ],
-            "skills": [
-              "python/comments",
-              "python/function_definition",
-              "python/importing_modules",
-              "python/math_random",
-              "python/standard_libraries",
-              "python/tuples",
-              "python/using_packages"
             ]
           }
         ],
         "intro": {
           "text": "zh/intro.md",
-          "background": "setup.sh",
           "title": "介绍"
         },
         "finish": {
@@ -105,21 +104,5 @@
         }
       }
     }
-  ],
-  "details": {
-    "assets": {
-      "host01": [
-        {
-          "file": "test_binomial_coefficient.py",
-          "target": "/tmp",
-          "chmod": "ugo+rwx"
-        },
-        {
-          "file": "binomial_coefficient.py",
-          "target": "/home/labex/project",
-          "chmod": "ugo+rwx"
-        }
-      ]
-    }
-  }
+  ]
 }
