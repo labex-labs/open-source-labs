@@ -23,7 +23,8 @@ And here's the corresponding CSS:
   width: 240px;
   height: 240px;
   background-color: #fff;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       45deg,
       #000 25%,
       transparent 25%,
