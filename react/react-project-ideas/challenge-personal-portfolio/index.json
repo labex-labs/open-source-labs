@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Personal Portfolio",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the running status of the web service",
@@ -51,11 +51,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -75,5 +75,51 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/Vasu7389/react-project-ideas/blob/master/LICENSE",
     "repo": "https://github.com/Vasu7389/react-project-ideas"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "构建响应式 React 个人作品集",
+      "description": "在本教程中，我们将从零开始在 React 中构建一个响应式的个人作品集项目。本教程将教你如何使用 ReactJS、HTML 和 CSS 开发自己的、适用于 2023 年的现代个人作品集网站。",
+      "meta": {
+        "title": "构建响应式 React 个人作品集 | 2023 年现代个人网站",
+        "description": "学习如何使用 React、HTML 和 CSS 开发一个现代的、响应式的个人作品集网站。无需进行 API 调用，只需硬编码内容。",
+        "keywords": "React, 个人作品集, 个人网站, 响应式设计, 2023, HTML, CSS"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "个人作品集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 运行项目。"
+              },
+              {
+                "name": "验证学生对 useState 钩子的使用",
+                "file": "verify1-2.sh",
+                "hint": "请使用 useState。"
+              },
+              {
+                "name": "验证项目 App.js 中是否包含 useEffect",
+                "file": "verify1-3.sh",
+                "hint": "请使用 useEffect。"
+              }
+            ],
+            "solutions": ["App.js"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

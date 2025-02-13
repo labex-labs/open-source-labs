@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "File Paths",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Script Output Contains File Path",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go语言中的文件路径处理 | 挑战",
+      "description": "Go语言中的filepath包提供了一些函数，用于以一种在不同操作系统之间可移植的方式解析和构建文件路径。",
+      "meta": {
+        "title": "Go语言文件路径 | 编程教程",
+        "description": "探索Go语言中的`filepath`包，并学习如何执行各种文件路径操作，包括构建可移植路径、拆分路径和查找相对路径。",
+        "keywords": "Go语言, 文件路径, filepath包, 编程教程, 文件操作, 可移植路径, 相对路径"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文件路径",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go脚本输出包含文件路径",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["file-paths.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

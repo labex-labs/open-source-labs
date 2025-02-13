@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Merge Into",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "将已排序数组合并为一个",
+      "description": "在编程中，经常需要将两个已排序的数组合并成一个已排序的数组。这在各种应用中都很有用，比如对数据进行排序或搜索特定值。在这个挑战中，我们将专注于按排序顺序将数组B合并到数组A中。",
+      "meta": {
+        "title": "合并已排序数组 | 编程教程",
+        "description": "学习如何在编程中将两个已排序的数组合并成一个已排序的数组。对数据排序和搜索应用很有用。",
+        "keywords": "合并已排序数组, 编程教程, 数据排序, 数组合并, 算法, 编码挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "合并至",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["merge_into.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

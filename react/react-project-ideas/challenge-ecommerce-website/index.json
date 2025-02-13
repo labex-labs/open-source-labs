@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Ecommerce Website",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the running status of the web service",
@@ -55,11 +55,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -79,5 +79,51 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/Vasu7389/react-project-ideas/blob/master/LICENSE",
     "repo": "https://github.com/Vasu7389/react-project-ideas"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用 React 开发响应式电子商务网站",
+      "description": "在本教程中，我们将使用 Reactjs 上下文 API 开发一个购物网站，即 Reactjs 电子商务（开源代码）项目。本教程将教你开发一个具有基本功能的电子商务网站，即展示商品、添加到购物车、查看和结账以及下单和查看订单。",
+      "meta": {
+        "title": "Reactjs 电子商务 | 购物网站 | 电子商务教程",
+        "description": "学习如何使用 Reactjs 上下文 API 开发购物网站。本教程涵盖了产品展示、购物车管理和结账流程等基本功能。",
+        "keywords": "Reactjs、电子商务、购物网站、电子商务教程、上下文 API"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "电子商务网站",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 来运行项目。"
+              },
+              {
+                "name": "验证 ItemDetail 组件中 useState 的使用情况",
+                "file": "verify1-2.sh",
+                "hint": "请使用 useState。"
+              },
+              {
+                "name": "验证 ItemDetail 组件中 useContext 的使用情况",
+                "file": "verify1-3.sh",
+                "hint": "请使用 useContext。"
+              }
+            ],
+            "solutions": ["ItemDetail.js"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

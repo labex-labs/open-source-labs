@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Configure Git User Information",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the user information is set correctly",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "配置 Git 用户信息",
+      "description": "Git 是开发者用于管理代码的流行版本控制系统。当你对仓库进行更改时，Git 会追踪是谁做出了这些更改。为此，Git 需要知道你的用户信息，比如你的姓名和电子邮件地址。在这个挑战中，你将学习如何为 Git 配置你的用户信息。",
+      "meta": {
+        "title": "Git 用户配置 | 版本控制系统",
+        "description": "了解如何为开发者用于管理代码的流行版本控制系统 Git 配置用户信息。",
+        "keywords": "Git, 版本控制, 用户配置, 代码管理, 开发者工具"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "配置 Git 用户信息",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证用户信息是否设置正确",
+                "file": "verify1-1.sh",
+                "hint": "`git config --list` 命令将显示 Git 的所有配置设置。查找 `user.name` 和 `user.email` 设置以验证它们是否设置正确。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

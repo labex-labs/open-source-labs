@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Pointers",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Pointer Variable Memory Address Change",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go 语言指针挑战：理解引用",
+      "description": "此挑战将测试你对 Go 语言中指针的理解。指针用于在程序中传递对值和记录的引用。",
+      "meta": {
+        "title": "Go 语言中的指针 | 编程教程 | 编码挑战",
+        "description": "通过编程挑战和示例了解指针在 Go 语言中的工作方式。加深你对 Go 语言中引用和内存地址的理解。",
+        "keywords": "Go 语言, 指针, 编程教程, 编码挑战, 内存地址"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "指针",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证指针变量内存地址变化",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["pointers.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

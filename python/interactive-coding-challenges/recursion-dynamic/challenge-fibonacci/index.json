@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Fibonacci",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "斐波那契数列编程教程",
+      "description": "斐波那契数列是一个数字序列，其中每个数字都是前两个数字之和，通常从0和1开始。它是计算机科学和数学中一个常见的问题。",
+      "meta": {
+        "title": "斐波那契数列 | 计算机科学 | 数学",
+        "description": "学习如何用递归、动态规划和迭代的方式实现斐波那契数列。适合计算机科学和数学的初学者。",
+        "keywords": "斐波那契数列, 计算机科学, 数学, 递归, 动态规划, 迭代"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "斐波那契",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["fibonacci.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

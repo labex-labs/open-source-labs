@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Push Local Changes to Remote",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the push was successful",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "将本地更改推送到远程",
+      "description": "在这个挑战中，你将学习如何将本地更改推送到远程 Git 仓库，确保在推送之前你的本地分支是最新的，并解决可能出现的任何冲突。",
+      "meta": {
+        "title": "将本地更改推送到远程：一个 Git 版本控制挑战",
+        "description": "学习如何将本地更改推送到远程 Git 仓库并与你的团队协作。",
+        "keywords": "版本控制，Git 实验室，推送更改，远程仓库，Git，协作，Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将本地更改推送到远程",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证推送是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Sorting",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Sorted Strings and Integers Output",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 语言中对内置类型进行排序 | 挑战",
+      "description": "Go 编程语言提供了一个名为 sort 的内置包，用于对内置类型和用户定义类型进行排序。在这个挑战中，我们将专注于对内置类型进行排序。",
+      "meta": {
+        "title": "Go 编程 | 对字符串和整数进行排序",
+        "description": "学习如何使用 Go 语言内置的 `sort` 包对字符串和整数切片进行排序，并附有示例和要求。",
+        "keywords": "Go 编程, 排序, 字符串, 整数, sort 包"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证已排序的字符串和整数输出",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["sorting.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

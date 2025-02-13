@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Number is divisible",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Divisibility Test",
@@ -36,11 +36,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -65,5 +65,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "数字可整除性 | 挑战",
+      "description": "在Python中，我们可以使用取模运算符（%）来检查一个数是否能被另一个数整除。如果余数等于0，那么这个数就能被整除。在这个挑战中，你将创建一个函数来检查一个数是否能被另一个数整除。",
+      "meta": {
+        "title": "整除性挑战：掌握Python中的取模运算符",
+        "description": "学习如何在Python中使用取模运算符来确定一个数是否能被另一个数整除。",
+        "keywords": "Python, 取模运算符, 整除性, 编程挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数字可整除性",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python脚本的整除性测试",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["is_divisible.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

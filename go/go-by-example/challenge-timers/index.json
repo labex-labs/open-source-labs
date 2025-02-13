@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Timers",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Timer Firing Correctly",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go语言的定时器和Ticker",
+      "description": "此挑战聚焦于Go语言中定时器和Ticker的使用。定时器和Ticker对于在特定时间执行代码或按给定间隔重复执行代码很有用。",
+      "meta": {
+        "title": "掌握Go语言中的定时器和Ticker",
+        "description": "探索Go语言中定时器和Ticker在特定间隔执行代码的强大用途。",
+        "keywords": "定时器, Go语言游乐场, Go, Go语言, Go实验, 在线Go语言游乐场, 教程, Ticker, 编程, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "定时器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证定时器是否正确触发",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["timers.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

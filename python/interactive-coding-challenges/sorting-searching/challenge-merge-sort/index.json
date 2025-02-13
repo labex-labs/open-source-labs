@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Merge Sort",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -43,11 +43,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -72,5 +72,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "高效归并排序算法实现",
+      "description": "归并排序是一种流行的排序算法，它采用分治方法对数组进行排序。它是一种稳定的、基于比较的算法，时间复杂度为O(n log n)。",
+      "meta": {
+        "title": "归并排序算法 | Python排序技术",
+        "description": "学习Python中高效的归并排序算法。了解分治方法、时间复杂度以及对整数和字符串数组进行排序的实际示例。",
+        "keywords": "归并排序, 排序算法, Python, 分治, 时间复杂度, 整数, 字符串"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "归并排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["merge_sort.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

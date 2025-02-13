@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "View 'Undo' History",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful view",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "查看撤销历史记录",
+      "description": "Git是一个强大的版本控制系统，它允许开发者跟踪其代码库的更改。然而，有时我们会犯错，需要撤销我们所做的更改。Git提供了几种撤销更改的方法，但要跟踪我们所采取的所有操作可能会很困难。",
+      "meta": {
+        "title": "Git撤销更改 | 版本控制教程",
+        "description": "学习如何在Git中撤销更改，Git是开发者用于跟踪代码更改的强大版本控制系统。探索查看撤销历史记录和重置仓库的技巧。",
+        "keywords": "Git, 版本控制, 撤销更改, 重置仓库, 提交历史记录"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查看「撤销」历史记录",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证查看是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

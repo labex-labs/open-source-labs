@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Invert a Dictionary",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -43,11 +43,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -72,5 +72,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "反转具有非唯一值的字典",
+      "description": "字典是Python中的一种基本数据结构，可让你存储键值对。有时，你可能需要反转字典，即交换键和值，使值成为键，键成为值。在这个挑战中，你将负责编写一个函数，用于反转具有非唯一可哈希值的字典。",
+      "meta": {
+        "title": "Python字典反转 | 数据结构挑战",
+        "description": "学习如何在Python中反转具有非唯一可哈希值的字典。探索此编程挑战的分步解决方案。",
+        "keywords": "Python, 字典, 数据结构, 反转, 可哈希值"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "反转字典",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["collect_dictionary.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

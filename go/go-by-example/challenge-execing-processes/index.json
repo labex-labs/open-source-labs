@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Execing Processes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Execing Processes",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用exec函数替换Go进程",
+      "description": "此挑战着重于使用Go对经典exec函数的实现，用另一个进程替换当前的Go进程。",
+      "meta": {
+        "title": "Go语言exec函数实现进程替换 | 编程教程",
+        "description": "此挑战着重于使用Go对经典`exec`函数的实现，用另一个进程替换当前的Go进程。",
+        "keywords": "Go语言,编程,exec函数,进程替换,编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "执行进程",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序执行进程",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["execing-processes.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

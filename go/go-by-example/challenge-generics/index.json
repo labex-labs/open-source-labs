@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Generics",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Run Generics Output",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go 语言泛型介绍",
+      "description": "此挑战介绍了 Go 语言中泛型的概念。从 1.18 版本开始，Go 语言增加了对泛型的支持，这使我们能够编写更灵活、可复用的代码。",
+      "meta": {
+        "title": "Go 语言泛型 | 编程教程",
+        "description": "探索 Go 语言中的泛型概念，这是 1.18 版本引入的一项强大功能，可实现更灵活、可复用的代码。",
+        "keywords": "Go 语言, 泛型, 编程教程, 可复用代码, 类型参数, 约束"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "泛型",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 运行泛型输出",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["generics.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

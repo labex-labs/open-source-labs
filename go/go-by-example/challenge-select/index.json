@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Select",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Received Values in Go Program",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go 语言的选择语句",
+      "description": "此挑战旨在测试你对 Go 语言选择语句的了解，该语句可让你等待多个通道操作。",
+      "meta": {
+        "title": "Go 语言选择语句：掌握并发通道操作",
+        "description": "学习如何使用 Go 语言的选择语句并发处理多个通道操作。",
+        "keywords": "Go 语言, 编程教程, 选择语句, 通道操作, 并发编程, Go 实验, 在线 Go 游乐场, Go 实验, Go 练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "选择语句",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在 Go 程序中验证接收到的值",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["select.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

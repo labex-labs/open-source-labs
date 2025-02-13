@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Rename Remote Branch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful renaming",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "重命名远程分支",
+      "description": "在 Git 中，分支是指向提交对象的轻量级可移动指针。重命名分支是 Git 中的一项常见任务。但是，在本地和远程同时重命名分支可能会有点棘手。在这个挑战中，你将学习如何在 Git 中重命名远程分支。",
+      "meta": {
+        "title": "重命名远程分支：一项 Git 挑战",
+        "description": "学习如何在 Git 中重命名远程分支，这是开发者的一项常见任务。",
+        "keywords": "重命名, 挑战, 远程, Git 实验室, 分支, Git, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "重命名远程分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证重命名是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

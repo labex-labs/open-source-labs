@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "URL Parsing",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify URL Parsing Extracts Postgres Information",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 中解析 URL | 挑战",
+      "description": "此挑战的目的是演示如何在 Go 中解析 URL。",
+      "meta": {
+        "title": "Go | URL 解析教程",
+        "description": "学习如何在 Go 编程语言中解析 URL，包括提取协议、认证信息、主机、端口、路径、查询参数和查询片段。",
+        "keywords": "Go, URL 解析, 网络, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "URL 解析",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 URL 解析是否提取了 Postgres 信息",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["url-parsing.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

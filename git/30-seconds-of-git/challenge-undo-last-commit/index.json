@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Undo the Last Commit",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the success of the undo",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "撤销最后一次提交",
+      "description": "Git 是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git 中最常见的任务之一就是撤销提交。本挑战将教你如何撤销最后一次提交而不重写历史记录。",
+      "meta": {
+        "title": "撤销最后一次提交：Git 故障排除指南",
+        "description": "学习如何在不重写历史记录的情况下撤销 Git 中的最后一次提交，这对开发者来说是一项很有价值的技能。",
+        "keywords": "还原、版本控制、git 实验室、git、提交、撤销、git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "撤销最后一次提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证撤销是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Exit",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Exit Status",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go 语言中的退出挑战",
+      "description": "退出挑战旨在测试你使用 Go 语言中 os.Exit 函数以给定状态立即退出的能力。",
+      "meta": {
+        "title": "掌握 Go 语言的退出挑战",
+        "description": "探索 Go 编程中 `os.Exit` 函数的强大功能，并学习如何使用特定状态码退出程序。",
+        "keywords": "Go 语言, Go 实验, 在线 Go 游乐场, os 退出, 状态码, 编程, Go 实验, 退出, Go 练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "退出",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序的退出状态",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["exit.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

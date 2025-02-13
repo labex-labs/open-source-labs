@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Reset Local Master Branch to Match Remote",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the reset was successful",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "将本地主分支重置为与远程分支匹配",
+      "description": "使用 Git 时，本地分支与其远程分支不同步是很常见的情况。当对远程分支进行了更改而本地分支未反映这些更改时，就会发生这种情况。在这种情况下，有必要重置本地分支以使其与远程分支匹配。本挑战将指导你完成将本地主分支重置为与远程分支匹配的步骤。",
+      "meta": {
+        "title": "Git | 将本地主分支重置为与远程分支匹配",
+        "description": "本挑战着重于在 Git 仓库中将本地主分支重置为与远程主分支匹配，这是使用 Git 并处理分支差异时的常见任务。",
+        "keywords": "Git, Git重置, Git主分支, Git远程, Git同步"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将本地主分支重置为与远程分支匹配",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证重置是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

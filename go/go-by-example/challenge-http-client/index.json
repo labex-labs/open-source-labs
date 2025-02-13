@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "HTTP Client",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify HTTP Clients Response Status Code",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go语言HTTP请求处理 | 挑战",
+      "description": "此挑战旨在测试你使用Go语言中的net/http包发出HTTP请求的能力。",
+      "meta": {
+        "title": "Go HTTP客户端 | Go语言中的网络编程",
+        "description": "学习如何在Go语言中使用net/http包发出HTTP请求并处理响应。探索Go语言网络编程的基础知识。",
+        "keywords": "Go语言, HTTP, 网络编程, net/http, 客户端, 请求, 响应"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "HTTP客户端",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证HTTP客户端响应状态码",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["http-client.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

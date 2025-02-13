@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Get the Current Branch Name",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the appropriate branch is output",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "获取当前分支名称",
+      "description": "使用 Git 时，了解你当前所在的分支很重要。在与他人协作或管理自己仓库中的多个分支时，此信息会很有用。",
+      "meta": {
+        "title": "Git 分支名称 | 面向初学者的 Git 教程",
+        "description": "学习如何在 Git 仓库中获取当前分支名称。这对你项目中的协作和分支管理很有用。",
+        "keywords": "git, git 教程, git 分支, git 仓库, 分支管理, 协作"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "获取当前分支名称",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否输出了正确的分支",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

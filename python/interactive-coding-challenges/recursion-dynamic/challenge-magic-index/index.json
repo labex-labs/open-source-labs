@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Magic Index",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -40,11 +40,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -69,5 +69,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "识别数组中的神奇索引",
+      "description": "在计算机科学中，数组的神奇索引（也称为不动点）是指数组中的一个索引 `i`，使得其值等于 `i`。换句话说，任务是在数组中找到一个元素，使其值等于其索引。",
+      "meta": {
+        "title": "神奇索引 | 有序数组 | Python 编程",
+        "description": "探索如何使用 Python 在可能包含重复元素的有序数组中找到神奇索引。了解这个基础的计算机科学概念及其实际应用。",
+        "keywords": "神奇索引, 不动点, 有序数组, Python 编程, 计算机科学, 算法"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "神奇索引",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["find_magic_index.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

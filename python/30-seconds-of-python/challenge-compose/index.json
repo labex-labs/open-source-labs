@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Compose Functions",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python 3 Compose Test Execution",
@@ -40,11 +40,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -69,5 +69,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python 中的函数组合",
+      "description": "在这个挑战中，你将使用 Python 中的 `functools.reduce()` 函数实现一个执行从右到左函数组合的函数。",
+      "meta": {
+        "title": "Python 中的函数组合 | 函数式编程",
+        "description": "学习如何在 Python 中使用函数组合将多个函数组合成一个新函数。探索函数式编程技术的强大之处。",
+        "keywords": "函数组合, Python, 函数式编程, lambda, functools.reduce"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "组合函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python 3 组合测试执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["compose.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

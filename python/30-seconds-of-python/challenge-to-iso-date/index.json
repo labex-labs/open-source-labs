@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Date to ISO format",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python3 Test to ISO Date",
@@ -39,11 +39,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -68,5 +68,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "日期转 ISO 格式 | 挑战",
+      "description": "在 Python 中，日期可以用不同的格式表示。最常见的格式之一是 ISO-8601 格式，它以标准化的方式表示日期和时间。在这个挑战中，你将编写一个函数，将日期转换为其 ISO-8601 表示形式。",
+      "meta": {
+        "title": "将日期转换为 ISO-8601 格式",
+        "description": "学习如何编写一个 Python 函数，将 datetime 对象转换为其 ISO-8601 表示形式。",
+        "keywords": "ISO 8601, Python, 日期格式, 编程教程, datetime"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "日期转 ISO 格式",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Python3 测试转 ISO 日期",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["to_iso_date.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Graph Dfs",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -51,11 +51,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -80,5 +80,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "有向图上的深度优先搜索",
+      "description": "图是一种非线性数据结构，由节点和边组成。深度优先搜索（DFS）是一种图遍历算法，它在回溯之前尽可能沿着每个分支进行探索。在这个挑战中，我们将在有向图上实现 DFS。",
+      "meta": {
+        "title": "深度优先搜索（DFS）| 图遍历算法",
+        "description": "探索图论的基础知识，并在有向图上实现深度优先搜索（DFS），这是一种用于遍历连通图的强大算法。",
+        "keywords": "图论, 深度优先搜索, DFS, 图遍历, 有向图, 算法, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "图的深度优先搜索",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["dfs.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

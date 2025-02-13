@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Timers and Tickers",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Ticker Ticks Three Times Before Stopping",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "定时器与定时器通道 | 挑战",
+      "description": "这个挑战是关于在Go语言中使用定时器通道。当你想要定期重复执行某些操作时，就会用到定时器通道。",
+      "meta": {
+        "title": "Go语言中的定时器与定时器通道挑战",
+        "description": "学习如何在Go语言中使用定时器通道来定期执行任务。",
+        "keywords": "Go语言游乐场, 通道, select语句, Go语言, 定时器通道, 实验, 在线Go语言游乐场, 定时器, 实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "定时器与定时器通道",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证定时器通道在停止前触发三次",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["tickers.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

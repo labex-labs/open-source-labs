@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Directories",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Listing Subdirectory Parent Directory",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 中处理目录 | 挑战",
+      "description": "在这个挑战中，你将学习如何在 Go 中处理目录。Go 提供了几个用于处理文件系统中目录的有用函数。",
+      "meta": {
+        "title": "Go 编程 | 目录处理",
+        "description": "学习如何在 Go 中处理目录，包括创建子目录、管理目录层次结构以及递归访问目录。",
+        "keywords": "Go 编程, 目录处理, 文件系统, 目录, 递归遍历"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "目录",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证列出子目录的父目录",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["directories.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

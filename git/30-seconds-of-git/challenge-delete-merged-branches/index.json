@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Delete Merged Branches",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful deletion",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "删除已合并的分支",
+      "description": "使用Git处理项目时，创建和合并分支很常见。然而，随着时间的推移，这些分支可能会累积并使本地仓库变得杂乱。删除已合并的分支是保持仓库整洁有序的良好做法。",
+      "meta": {
+        "title": "删除已合并的分支：Git实验挑战",
+        "description": "学习如何在Git仓库中删除已合并到主分支的本地分支。",
+        "keywords": "分支管理, 仓库清理, Git实验室, 编程教程, Git, Git实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除已合并的分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证删除是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Hanoi",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -43,11 +43,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -72,5 +72,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "解决汉诺塔问题",
+      "description": "汉诺塔是计算机科学和数学中的一个经典问题。它由三根杆和若干个大小不同的圆盘组成，这些圆盘可以滑到任何一根杆上。谜题开始时，圆盘按大小升序整齐地堆叠在一根杆上，最小的在顶部，从而形成一个圆锥形。",
+      "meta": {
+        "title": "汉诺塔 | 经典计算机科学问题",
+        "description": "探索汉诺塔，这是一个经典的计算机科学和数学问题，了解其规则以及实现解决方案的要求。",
+        "keywords": "汉诺塔, 计算机科学, 数学, 问题解决, 算法, 栈"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "汉诺塔",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["hanoi.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

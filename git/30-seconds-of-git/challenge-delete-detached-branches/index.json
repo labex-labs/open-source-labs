@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Delete Detached Branches",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful deletion",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "删除分离头指针分支",
+      "description": "使用 Git 时，创建并切换到分离头指针分支很常见。这些分支不与任何特定分支关联，通常用于测试或实验。然而，随着时间的推移，这些分支可能会累积并使你的仓库变得杂乱。在这个挑战中，你将学习如何删除 Git 仓库中的所有分离头指针分支。",
+      "meta": {
+        "title": "Git 演练场 | 删除分离头指针分支",
+        "description": "通过本全面教程，学习如何删除 Git 仓库中的所有分离头指针分支并清理你的代码库。",
+        "keywords": "Git, 分离头指针分支, 分支删除, 仓库管理, 代码清理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除分离头指针分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证删除是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

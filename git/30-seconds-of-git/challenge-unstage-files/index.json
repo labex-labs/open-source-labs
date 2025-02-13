@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Remove Files from the Staging Area",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful removal",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "从暂存区移除文件",
+      "description": "在 Git 中，暂存区是在将文件更改提交到仓库之前对其进行准备的地方。有时，你可能会不小心将不想提交的文件添加到暂存区。在这个挑战中，你将学习如何使用 Git 从暂存区移除文件。",
+      "meta": {
+        "title": "Git 教程 | 从暂存区移除文件",
+        "description": "在本编程教程概述中，学习如何从 Git 暂存区移除意外添加的文件。",
+        "keywords": "git, git 教程, 暂存区, 移除文件, 版本控制"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从暂存区移除文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证移除是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

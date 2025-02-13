@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "View Merged Branches",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful view",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "查看已合并分支",
+      "description": "在Git中，分支用于开发功能或隔离对代码库所做的更改。当一个分支完成其使命后，它会被合并回主分支。然而，跟踪哪些分支已被合并以及哪些分支尚未合并非常重要。本挑战将测试你查看所有已合并本地分支列表的能力。",
+      "meta": {
+        "title": "在Git Playground中查看已合并分支",
+        "description": "学习如何查看Git仓库中所有已合并的本地分支列表。",
+        "keywords": "Git仓库、Git实验室、分支、Git、已合并分支、Git Playground"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查看已合并分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功查看",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

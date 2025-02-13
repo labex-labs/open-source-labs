@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Temporary Files and Directories",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Temporary Files and Directories",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "临时文件和目录 | 挑战",
+      "description": "在编程中，我们经常需要创建程序退出后就不再需要的数据。临时文件和目录在这方面很有用，因为它们不会随着时间的推移而污染文件系统。",
+      "meta": {
+        "title": "临时文件和目录：Go语言中的高效数据管理",
+        "description": "探索Go编程语言中临时文件和目录的创建与管理。",
+        "keywords": "临时目录, 文件管理, Go, Go实验, 在线Go游乐场, 编程, Go实验, 临时文件, Go练习"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "临时文件和目录",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证临时文件和目录",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["temporary-files-and-directories.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

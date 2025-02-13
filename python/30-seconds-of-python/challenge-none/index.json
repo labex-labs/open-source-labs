@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Test if every list element is falsy",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "测试列表中的每个元素是否都为假值 | 挑战",
+      "description": "在Python中，我们可以使用all()函数来检查列表中的所有元素是否都为真值。但如果我们想检查列表中的每个元素是否都为假值呢？在这个挑战中，你需要创建一个函数来检查列表中的每个元素是否都为假值。",
+      "meta": {
+        "title": "Python 检查列表元素是否全为假值 | 编程教程",
+        "description": "学习如何使用Python的 'none()' 函数来检查列表中的所有元素是否都为假值。通过这个引人入胜的教程提升你的编程技能。",
+        "keywords": "Python, 编程, 假值, 列表, none, 函数, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "测试列表中的每个元素是否都为假值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证在临时目录中执行Python脚本",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["none.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

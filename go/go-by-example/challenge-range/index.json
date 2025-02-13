@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Range",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Outputs Correct Sum",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "探索 Go 语言的 range 关键字",
+      "description": "在 Go 语言中，range 关键字用于遍历各种数据结构中的元素。在本挑战中，我们将探索如何在不同的数据结构中使用 range。",
+      "meta": {
+        "title": "Go 语言范围迭代 | 编程教程",
+        "description": "探索 Go 语言中 'range' 关键字的用法，以遍历切片、数组、映射和字符串。了解如何在你的编程项目中利用这一强大功能。",
+        "keywords": "Go 语言, 范围迭代, 切片, 数组, 映射, 字符串, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Range",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序输出正确的总和",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["range.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

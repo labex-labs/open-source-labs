@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Radix Sort",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -47,11 +47,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -76,5 +76,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "基数排序：高效的整数排序算法",
+      "description": "基数排序是一种非比较型整数排序算法，它通过将具有相同有效位和值的各个数位的键分组来对带有整数键的数据进行排序。它是一种线性时间排序算法，经常被用作其他排序算法中的子例程。",
+      "meta": {
+        "title": "基数排序算法 | 整数排序 | 线性时间排序",
+        "description": "探索基数排序算法，这是一种非比较型整数排序技术，它按数位对键进行分组并在线性时间内排序。适用于大型数据集。",
+        "keywords": "基数排序, 整数排序, 线性时间排序, 非比较排序, 基于数位的排序, 算法, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "基数排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["radix_sort.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Optimize the Local Repository",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the optimisation was successful",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "优化本地仓库",
+      "description": "在 Git 中，仓库是由 Git 跟踪的文件和文件夹的集合。当你对文件进行更改时，Git 会创建该文件的新版本并将其存储在仓库中。随着时间的推移，你的仓库可能会因旧版本的文件和其他不必要的数据而变得杂乱。这可能会减慢 Git 的速度，并使处理仓库变得更加困难。在这个挑战中，你将学习如何优化你的本地仓库以提高其性能。",
+      "meta": {
+        "title": "优化你的 Git 仓库以提高性能",
+        "description": "学习如何通过删除不必要的数据并提高其性能来优化你的本地 Git 仓库。",
+        "keywords": "仓库优化, 性能提升, Git 实验室, Git, 打包文件, Git 游乐场, 松散对象"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "优化本地仓库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证优化是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

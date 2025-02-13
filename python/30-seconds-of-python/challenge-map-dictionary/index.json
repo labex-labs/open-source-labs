@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Map List to Dictionary",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python3 Test Map Dictionary",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "将列表映射到字典 | 挑战",
+      "description": "在这个挑战中，你将创建一个Python函数，该函数使用给定函数将列表的值映射到字典。",
+      "meta": {
+        "title": "将列表映射到字典：Python挑战",
+        "description": "这个挑战需要使用Python的字典数据结构、`map()`函数和`zip()`函数，从一个列表创建一个字典，其中键是原始列表元素，值是对这些元素应用给定函数的结果。",
+        "keywords": "Python, 列表, 字典, 函数, 映射"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将列表映射到字典",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python3测试映射字典",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["map_dictionary.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

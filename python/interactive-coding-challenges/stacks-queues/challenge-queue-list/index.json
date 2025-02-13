@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Queue List",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -44,11 +44,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -73,5 +73,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用链表实现队列",
+      "description": "在计算机科学中，队列是一组按顺序维护的实体集合，可通过在序列一端添加实体以及从序列另一端移除实体来进行修改。它也被称为先进先出（FIFO，First In, First Out）数据结构。在本次挑战中，我们将使用链表来实现一个队列。",
+      "meta": {
+        "title": "队列 | 链表 | 数据结构",
+        "description": "了解如何在计算机科学中使用链表实现队列。理解先进先出（FIFO）数据结构及其实际应用。",
+        "keywords": "队列, 链表, 数据结构, 先进先出, 计算机科学, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "队列链表",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["queue_list.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Graph Bfs",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -53,11 +53,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -82,5 +82,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "广度优先搜索图遍历算法",
+      "description": "广度优先搜索（BFS）是一种图遍历算法，它以广度优先的顺序访问图的所有顶点，即它在进入下一层之前先访问同一层的所有顶点。",
+      "meta": {
+        "title": "广度优先搜索（BFS）| 图遍历算法",
+        "description": "探索广度优先搜索（BFS）的基本原理，这是一种图遍历算法，从给定的源顶点开始，以广度优先的顺序访问图中的所有顶点。",
+        "keywords": "广度优先搜索, BFS, 图遍历, 图算法, 图论"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "图的广度优先搜索",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["bfs.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

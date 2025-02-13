@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Dino Game",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the running status of the web service",
@@ -57,11 +57,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -81,5 +81,56 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/Vasu7389/react-project-ideas/blob/master/LICENSE",
     "repo": "https://github.com/Vasu7389/react-project-ideas"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用 React 开发井字棋游戏",
+      "description": "在这个挑战中，你将学习如何使用 React 开发一款以恐龙为主题的游戏，其中会运用到诸如使用 `useRef` 引用 DOM 元素、使用 `useState` 管理游戏状态以及使用 `useEffect` 处理游戏逻辑和事件监听器等概念。",
+      "meta": {
+        "title": "React 井字棋游戏 | 恐龙游戏开发",
+        "description": "学习如何使用 React 的基本概念和 JavaScript 编程逻辑开发井字棋棋盘游戏和恐龙游戏。",
+        "keywords": "React, 井字棋, 恐龙游戏, 游戏开发, JavaScript, 编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "恐龙游戏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证网络服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 运行项目。"
+              },
+              {
+                "name": "验证恐龙组件是否使用useState",
+                "file": "verify1-2.sh",
+                "hint": "请使用useState。"
+              },
+              {
+                "name": "验证恐龙组件的useEffect实现",
+                "file": "verify1-3.sh",
+                "hint": "请使用useEffect。"
+              },
+              {
+                "name": "验证恐龙组件使用Ref",
+                "file": "verify1-4.sh",
+                "hint": "请使用useRef。"
+              }
+            ],
+            "solutions": ["Dino.js"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

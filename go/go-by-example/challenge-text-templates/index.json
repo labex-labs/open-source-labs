@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Text Templates",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Run Templates Output Contains Some Text",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go 语言文本模板动态内容",
+      "description": "Go 语言的 text/template 包提供了一种创建动态内容或向用户展示定制化输出的方式。这个包允许将静态文本与包含在 {{...}} 中的操作混合使用，以插入动态内容。",
+      "meta": {
+        "title": "Go 语言文本模板 | 动态内容生成",
+        "description": "了解如何使用 Go 语言的 text/template 包来创建动态内容并为用户定制输出。",
+        "keywords": "Go 语言, text/template, 动态内容, 模板生成, 定制化输出"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "文本模板",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go Run 模板输出是否包含某些文本",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["text-templates.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

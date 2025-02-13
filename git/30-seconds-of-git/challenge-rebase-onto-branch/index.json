@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Rebase onto Another Branch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify rebase for success",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "变基到另一个分支",
+      "description": "在本次挑战中，你将学习如何在 Git 中把一个分支变基到另一个分支，这能让你在保持提交历史简洁且线性的同时，将一个分支的更改合并到另一个分支。",
+      "meta": {
+        "title": "变基到另一个分支：一项 Git 版本控制挑战",
+        "description": "探索 Git 变基的强大功能，将一个分支的更改合并到另一个分支，保持提交历史简洁且线性。",
+        "keywords": "变基, 版本控制, Git 实验, 分支, Git, 协作, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "变基到另一个分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证变基是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

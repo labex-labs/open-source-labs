@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Trie",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -51,11 +51,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -80,5 +80,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "用于字符串存储的字典树数据结构",
+      "description": "字典树（Trie），也称为前缀树，是一种树形数据结构，用于存储和检索一组字符串。它常用于搜索引擎、拼写检查器和IP路由器中。在字典树中，每个节点代表字符串中的一个字符，从根节点到叶节点的路径代表一个完整的字符串。",
+      "meta": {
+        "title": "字典树数据结构 | 前缀树 | 搜索引擎优化",
+        "description": "探索字典树数据结构，这是一种用于搜索引擎、拼写检查器和IP路由器的强大树形数据结构。了解如何实现查找、插入、删除和列出单词的方法。",
+        "keywords": "字典树, 前缀树, 数据结构, 搜索引擎, 拼写检查器, IP路由器, 查找, 插入, 删除, 列出单词"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "字典树（Trie）",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["trie.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Pulling All Submodules from Remote",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful pull",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "从远程拉取所有子模块",
+      "description": "在这个挑战中，你将学习如何将 Git 仓库中的所有子模块从它们各自的远程仓库更新到最新版本。",
+      "meta": {
+        "title": "从远程拉取所有子模块",
+        "description": "这个挑战的重点是通过从各自的远程仓库拉取最新更改来更新仓库中的 Git 子模块。",
+        "keywords": "子模块, Git 实验室, 远程仓库, Git, 拉取, 更新, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从远程拉取所有子模块",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证拉取是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Find Lost Files",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify to find lost files",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "查找丢失的文件",
+      "description": "Git是一个强大的版本控制系统，它允许开发者跟踪其代码库的更改。然而，有时文件可能会丢失或意外删除。在这个挑战中，你将学习如何使用Git来查找丢失的文件和提交记录。",
+      "meta": {
+        "title": "在Git仓库中查找丢失的文件",
+        "description": "学习如何使用Git在你的项目仓库中恢复丢失的文件和提交记录。",
+        "keywords": "丢失的文件, 版本控制, 文件恢复, Git实验室, Git, 提交历史, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查找丢失的文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否找到丢失的文件",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

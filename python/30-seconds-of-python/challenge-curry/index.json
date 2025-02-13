@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Curry Function",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Student's Python Curry Function Implementation",
@@ -40,11 +40,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -69,5 +69,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用functools.partial在Python中进行柯里化",
+      "description": "在函数式编程中，柯里化是一种将接受多个参数的函数转换为一系列每个只接受一个参数的函数的技术。在Python中，我们可以使用functools.partial()函数来实现柯里化。",
+      "meta": {
+        "title": "函数式编程 | Python中的柯里化",
+        "description": "学习如何使用functools.partial()函数在Python中实现柯里化。对函数进行柯里化以创建可重用和可组合的代码。",
+        "keywords": "函数式编程, 柯里化, Python, functools.partial, 可重用代码, 可组合代码"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "柯里化函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生的Python柯里化函数实现",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["curry.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

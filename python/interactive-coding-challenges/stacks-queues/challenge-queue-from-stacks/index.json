@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Queue From Stacks",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -43,11 +43,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -72,5 +72,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "用栈实现队列",
+      "description": "在计算机科学中，队列是一种遵循先进先出（FIFO，First-In-First-Out）原则的数据结构。它是一个元素的有序列表，其中元素在一端插入，并在另一端移除。另一方面，栈遵循后进先出（LIFO，Last-In-First-Out）原则。它是一个元素的有序列表，其中元素在同一端插入和移除。在这个挑战中，我们将使用两个栈来实现一个队列。",
+      "meta": {
+        "title": "用栈精通队列",
+        "description": "探索使用两个栈实现队列的复杂性，这是计算机科学中一个基本的数据结构挑战。",
+        "keywords": "Python 实践, 后进先出, 栈, 先进先出, 算法实践, Python, 队列, 算法, 数据结构"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "用栈实现队列",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["queue_from_stacks.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

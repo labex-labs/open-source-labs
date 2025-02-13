@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Channel Synchronization",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Channel Synchronization",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用通道同步 Goroutine",
+      "description": "此挑战旨在测试你对使用通道在多个 Goroutine 之间同步执行的知识。",
+      "meta": {
+        "title": "通道同步 | Go 编程教程",
+        "description": "学习如何在 Go 编程中使用通道在多个 Goroutine 之间同步执行。在本全面教程中探索基于通道的并发的强大功能。",
+        "keywords": "Go 编程, 通道同步, 并发, Goroutine, 基于通道的编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "通道同步",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 通道同步",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["channel-synchronization.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

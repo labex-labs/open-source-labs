@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Manually Find the Commit that Introduced a Bug",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful manual bug finding",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用 Git 跟踪代码变更",
+      "description": "Git 是一个强大的版本控制系统，它允许开发者随时间追踪其代码库的变更。Git 最有用的特性之一是能够找到引入错误的提交。在尝试追踪代码中的问题根源时，这会非常有帮助。",
+      "meta": {
+        "title": "使用 Git 跟踪代码变更：找出有问题的提交",
+        "description": "探索如何使用 Git 强大的版本控制系统来追踪代码库中错误的根源。",
+        "keywords": "错误跟踪、版本控制、代码变更、git 实验室、git、提交历史、git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "手动查找引入错误的提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证手动查找错误是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

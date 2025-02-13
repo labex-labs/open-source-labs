@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Create a New Branch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if a new branch is created",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "创建新分支",
+      "description": "在 Git 中，分支是指向提交对象的轻量级可移动指针。创建新分支可让你在不影响主代码库的情况下处理新功能或修复漏洞。在本挑战中，你将学习如何在 Git 中创建新分支。",
+      "meta": {
+        "title": "在 Git 中创建新分支：实践挑战",
+        "description": "学习如何在 Git 中创建新分支，这是管理代码库以及处理新功能或修复漏洞的关键技能。",
+        "keywords": "git 仓库, git 教程, git 实验室, 分支, git, 新分支, git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建新分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否创建了新分支",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Digitize Number",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Student's Python Digitize Operation",
@@ -42,11 +42,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -71,5 +71,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Python 中将数字转换为数字列表 | 挑战",
+      "description": "在 Python 中，经常需要将一个数字转换为其各个数位组成的列表。这在各种应用中都很有用，例如对各个数位进行数学运算或以更细粒度的方式处理数字。在这个挑战中，你将负责编写一个函数，该函数接受一个数字作为输入，并返回其各个数位组成的列表。",
+      "meta": {
+        "title": "Python 数字转换 | 数字到数字列表",
+        "description": "学习如何在 Python 中将数字转换为其各个数位组成的列表。对数学运算和数字处理很有用。",
+        "keywords": "Python, 数字转换, 数字到列表, 数据处理, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将数字数位化",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生的 Python 数位化操作",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["digitize.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

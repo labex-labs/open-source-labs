@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Goroutines",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Concurrent Goroutines Output Interleaving",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go 语言中的并发 Goroutine",
+      "description": "此挑战旨在测试你对 Go 语言中 goroutine 的理解。Goroutine 是轻量级的执行线程，允许函数并发执行。",
+      "meta": {
+        "title": "掌握 Go 语言中的 Goroutine | 并发编程",
+        "description": "探索 Go 语言中 goroutine 的强大功能，学习创建和运行并发函数，并发现这种轻量级执行线程的优势。",
+        "keywords": "Go 语言, Goroutine, 并发编程, 轻量级线程, 异步执行"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Goroutine",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证并发 Goroutine 输出交错情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["goroutines.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

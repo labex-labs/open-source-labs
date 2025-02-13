@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Tree Lca",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -48,11 +48,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -77,5 +77,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "二叉树的最近公共祖先",
+      "description": "在计算机科学中，二叉树是一种树状数据结构，其中每个节点最多有两个子节点，分别称为左子节点和右子节点。树或有向无环图（DAG）中两个节点v和w的最近公共祖先（LCA）是同时具有v和w作为后代的最低（即最深）节点，这里我们定义每个节点都是其自身的后代（所以如果v与w有直接连接，w就是最近公共祖先）。在这个挑战中，我们将在二叉树中找到最近公共祖先。",
+      "meta": {
+        "title": "掌握二叉树的最近公共祖先",
+        "description": "探索二叉树的基础知识，并发现找到两个节点最近公共祖先的技巧。",
+        "keywords": "Python 实践, Python, 二叉树, 最近公共祖先, 算法, 数据结构, 计算机科学"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "树的最近公共祖先",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["lca.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Knapsack 01",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -50,11 +50,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -79,5 +79,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "背包问题优化技术",
+      "description": "背包问题是计算机科学中的一个经典优化问题。它是一个组合优化问题，目标是在背包容量限制内选择物品，以最大化价值。这个问题在许多实际应用中都有使用，比如资源分配、投资组合优化和下料问题。",
+      "meta": {
+        "title": "掌握背包问题：探索优化技术",
+        "description": "探索背包问题的复杂性，这是计算机科学中一个经典的优化挑战，并探索有效解决它的技术。",
+        "keywords": "Python 实践场, 算法实践场, Python, 投资组合优化, 优化技术, 算法, 组合优化, 资源分配, 背包问题"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "01背包问题",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["knapsack.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

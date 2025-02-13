@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Worker Pools",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Concurrent Worker Pools Execution",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用Go协程的并发工作池",
+      "description": "本挑战展示了如何使用Go协程和通道来实现一个工作池。",
+      "meta": {
+        "title": "Go协程 | 工作池 | 并发 | Go编程 | 高效任务执行",
+        "description": "学习如何在Go编程语言中使用Go协程和通道来实现一个工作池，实现高效的任务执行和并发处理。",
+        "keywords": "Go协程, 工作池, 并发, Go编程, 高效任务执行"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "工作池",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证并发工作池的执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["worker-pools.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

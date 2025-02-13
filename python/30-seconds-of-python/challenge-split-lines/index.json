@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Split into Lines",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -36,11 +36,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -65,5 +65,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "拆分为行 | 挑战",
+      "description": "在这个挑战中，你将编写一个函数，通过在每个换行符处拆分字符串，将多行字符串拆分为各行组成的列表。",
+      "meta": {
+        "title": "拆分为行：一个Python挑战",
+        "description": "学习如何使用Python将多行字符串拆分为各行。",
+        "keywords": "字符串操作, Python, 编程挑战, 行拆分"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "拆分为行",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["split_lines.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

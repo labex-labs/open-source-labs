@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Remove Duplicates",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -48,11 +48,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -77,5 +77,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在链表中删除重复项",
+      "description": "在计算机科学中，链表是数据元素的线性集合，其中线性顺序不是由它们在内存中的物理位置决定的。相反，每个元素指向下一个元素。它是一种由节点集合组成的数据结构，这些节点共同表示一个序列。在这个挑战中，我们将专注于从链表中删除重复项。",
+      "meta": {
+        "title": "链表去重 | 数据结构 | 编程教程",
+        "description": "学习如何在计算机科学中从单链表中删除重复项。探索使用额外数据结构和不使用额外数据结构的解决方案。",
+        "keywords": "链表, 数据结构, 编程教程, 删除重复项, 单链表"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除重复项",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["remove_duplicates.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

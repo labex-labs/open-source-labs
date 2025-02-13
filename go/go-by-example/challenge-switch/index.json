@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Switch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Output Includes 'Write 2 as two'",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "开关语句简明介绍",
+      "description": "开关语句是一种条件语句，它允许你根据表达式的值执行不同的代码块。它是一个强大的工具，可以简化你的代码并使其更具可读性。",
+      "meta": {
+        "title": "掌握开关语句 | 编程教程",
+        "description": "通过本综合教程探索编程中开关语句的强大功能。学习如何简化你的代码并有效处理不同的输入值。",
+        "keywords": "开关语句, 编程教程, 条件逻辑, 代码优化, 输入处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "切换语句",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序输出中包含'Write 2 as two'",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["switch.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

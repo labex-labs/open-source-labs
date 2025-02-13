@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Get Nested Value",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python3 Script Execution in Temporary Directory",
@@ -40,11 +40,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -69,5 +69,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "获取嵌套值 | 挑战",
+      "description": "在Python中，字典和列表可以包含嵌套值，这些值可以使用选择器列表来访问。在这个挑战中，你将创建一个函数，该函数从字典或列表中检索由给定选择器列表指示的嵌套键的值。",
+      "meta": {
+        "title": "获取嵌套值：一个Python挑战",
+        "description": "探索一个涉及从字典和列表中检索嵌套值的Python挑战。",
+        "keywords": "字典, 列表, Python, 嵌套值, 编程挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "获取嵌套值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python3脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["get.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

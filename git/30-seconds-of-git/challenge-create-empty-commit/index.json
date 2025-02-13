@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Create an Empty Commit",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for an empty commit",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "创建空提交",
+      "description": "在Git中，提交是对仓库所做更改的一个快照。每个提交都有一条描述所做更改的消息。有时，你可能需要创建一个没有更改的空提交，用作占位符或触发构建过程。在这个挑战中，你将学习如何在Git中创建空提交。",
+      "meta": {
+        "title": "在Git中创建空提交：开发者的实用技巧",
+        "description": "学习如何在Git中创建空提交，这是一个用于触发构建、创建占位符和标记仓库历史的便捷工具。",
+        "keywords": "空提交, 仓库, Git实验室, Git, 构建过程, 占位符, Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建空提交",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证空提交",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

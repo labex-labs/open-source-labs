@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Clone a Repository",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful cloning",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "克隆第一个热门存储库",
+      "description": "Git 是一个版本控制系统，它允许开发者跟踪代码中的更改并与他人协作。Git 中最常见的任务之一是克隆存储库，这会创建现有存储库的本地副本。在这个挑战中，你将学习如何使用 Git 克隆存储库。",
+      "meta": {
+        "title": "克隆 GitHub 热门存储库挑战",
+        "description": "学习如何克隆远程存储库并创建本地副本以进行开发和协作。",
+        "keywords": "克隆存储库, 版本控制, Git 实验室, 编码, Git, 协作, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "克隆存储库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证克隆是否成功",
+                "file": "verify1-1.sh",
+                "hint": "未找到 ~/project/first-trending-repo。请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

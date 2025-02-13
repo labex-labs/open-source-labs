@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Stack Min",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -46,11 +46,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -75,5 +75,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "实现具有入栈、出栈、最小值操作且时间复杂度为O(1) 的栈",
+      "description": "在计算机科学中，栈是一种抽象数据类型，它作为一组元素的集合，有两个主要操作：push（将一个元素添加到集合中）和pop（移除最近添加且尚未移除的元素）。在这个挑战中，我们将实现一个具有push、pop和min方法且运行时间为O(1) 的栈。",
+      "meta": {
+        "title": "栈的实现 | 数据结构 | 编码挑战",
+        "description": "学习如何实现一个栈数据结构，其入栈、出栈和最小值操作的时间复杂度为O(1)。探索高效栈管理的编码挑战及解决方案。",
+        "keywords": "栈, 数据结构, 编码挑战, 入栈, 出栈, 最小值, 时间复杂度"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "带有最小值操作的栈",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["stack_min.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

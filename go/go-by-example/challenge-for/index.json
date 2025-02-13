@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "For",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Output Contains '1'",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go语言的for循环",
+      "description": "此挑战旨在测试你对Go语言中for循环的理解。",
+      "meta": {
+        "title": "掌握Go语言循环",
+        "description": "探索Go语言for循环的强大功能并提升你的编程技能。",
+        "keywords": "Go语言游乐场, Go语言, for循环, Go语言编程, 编码, Go实验, 在线Go语言游乐场, 教程, 编程, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "for循环",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序输出包含'1'",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["for.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

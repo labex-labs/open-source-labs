@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Reading Files",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Student Writes File and Runs Go Program",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 语言中读取文件 | 挑战",
+      "description": "「读取文件」挑战旨在帮助你学习如何在 Go 语言中读取文件。你将学习以不同方式读取文件，包括读取整个文件、读取文件的特定部分，以及使用 bufio 包来读取文件。",
+      "meta": {
+        "title": "在 Go 语言中读取文件",
+        "description": "通过一个涵盖各种技术和最佳实践的全面挑战，探索在 Go 语言中读取文件的技巧。",
+        "keywords": "bufio 包, Go 语言在线运行环境, Go 编程, Go 语言, 读取文件, 文件操作, 实验, 在线 Go 语言运行环境, 文件处理, 实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "读取文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证学生写入文件并运行 Go 程序",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["reading-files.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

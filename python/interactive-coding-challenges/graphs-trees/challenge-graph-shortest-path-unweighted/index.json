@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Graph Shortest Path Unweighted",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -54,11 +54,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -83,5 +83,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "无权图的图最短路径",
+      "description": "在图论中，最短路径问题是指在一个图中找到两个顶点（或节点）之间的一条路径，使得其组成边的权重之和最小。在无权图中找到两个节点之间的最短路径问题，可以使用广度优先搜索算法来解决。",
+      "meta": {
+        "title": "图论 | 最短路径 | 无权图",
+        "description": "探索图论中的最短路径问题，了解如何使用广度优先搜索算法在无权图中解决该问题。",
+        "keywords": "图论, 最短路径, 无权图, 广度优先搜索, 算法"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "无权图的图最短路径",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["shortest_path.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

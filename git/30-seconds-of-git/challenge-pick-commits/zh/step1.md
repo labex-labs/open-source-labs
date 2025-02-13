@@ -1,0 +1,41 @@
+# Git 挑选提交
+
+作为一名开发者，你正在处理一个有多个分支的项目。你已经确定了之前一次提交中所做的特定更改，并且希望将其应用到当前分支。然而，你不想合并整个分支，因为它包含了你不需要的其他更改。
+
+## 任务
+
+对于这个挑战，我们使用来自 `https://github.com/labex-labs/git-playground` 的仓库。
+
+1. 导航到该目录并配置身份信息。
+2. 创建并切换到一个名为 `one-branch` 的分支，创建一个名为 `hello.txt` 的文件，在其中写入 "hello,world"，将其添加到暂存区，并使用消息 "add hello.txt" 提交它。
+3. 确定上一步中创建的提交的哈希值，以便应用到 `master` 分支。
+4. 检出 `master` 分支，并将更改应用到 `master` 分支。
+5. 验证更改是否已应用到 `master` 分支。
+
+这是在 `master` 分支上运行 `git log` 的结果：
+
+```shell
+commit e2f3c6af9570f4eac2580dea93ca8133f1547d53 (HEAD -> master)
+Author: xiaoshengyunan <@users.noreply.github.com>
+Date:   Sat Jul 15 14:30:31 2023 +0800
+
+    add hello.txt
+
+commit d22f46ba8c2d4e07d773c5126e9c803933eb5898 (origin/master, origin/HEAD)
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
+
+    Added file2.txt
+
+commit cf80005e40a3c661eb212fcea5fad06f8283f08f
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
+
+    Added file1.txt
+
+commit b00b9374a7c549d1af111aa777fdcc868d8a2a01
+Author: Hang <huhuhang@gmail.com>
+Date:   Wed Apr 26 14:16:00 2023 +0800
+
+    Initial commit
+```

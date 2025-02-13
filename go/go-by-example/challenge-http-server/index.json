@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "HTTP Server",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify HTTP Client Response Status",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "用 Go 语言构建基本 HTTP 服务器",
+      "description": "此挑战旨在测试你使用 Go 语言中的 net/http 包编写基本 HTTP 服务器的能力。",
+      "meta": {
+        "title": "Go 语言 HTTP 服务器 | 编程教程",
+        "description": "学习如何使用 Go 语言中的 net/http 包构建基本 HTTP 服务器。探索 /hello 和 /headers 路由，并亲身体验 Go 语言的 Web 开发。",
+        "keywords": "Go 语言, HTTP 服务器, net/http, 编程教程, Web 开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "HTTP 服务器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 HTTP 客户端响应状态",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["http-server.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

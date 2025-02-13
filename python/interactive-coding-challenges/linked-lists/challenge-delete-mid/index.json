@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Delete Mid",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -45,11 +45,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -74,5 +74,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Python 链表中删除中间节点",
+      "description": "在 Python 中，链表是一种数据结构，由一系列节点组成，其中每个节点包含一个值和指向下一个节点的引用。删除链表中间的节点可能是一项具有挑战性的任务，尤其是当我们只能访问该节点时。在这个挑战中，我们将探讨如何在只能访问链表中间节点的情况下删除该节点。",
+      "meta": {
+        "title": "在链表中间删除节点 | Python 数据结构",
+        "description": "学习如何在 Python 中删除非循环单链表中间的节点。探索此编码挑战的要求和示例。",
+        "keywords": "Python, 链表, 数据结构, 编码挑战, 节点删除"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除中间节点",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["delete_mid.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

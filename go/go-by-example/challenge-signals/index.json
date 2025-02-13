@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Signals",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Awaiting Signal Interrupt",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在Go程序中处理Unix信号",
+      "description": "「信号挑战」展示了如何在Go程序中使用通道来处理Unix信号。",
+      "meta": {
+        "title": "Go中的信号 | Go程序中的Unix信号处理",
+        "description": "学习如何在Go程序中使用通道处理Unix信号。通过信号处理优雅地关闭服务器并停止处理输入。",
+        "keywords": "Go, Unix信号, 信号处理, Go编程, 服务器关闭, 输入处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "信号",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证等待信号中断",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["signals.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

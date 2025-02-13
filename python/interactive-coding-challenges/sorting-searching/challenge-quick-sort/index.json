@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Quick Sort",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -43,11 +43,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -72,5 +72,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "高效快速排序算法",
+      "description": "快速排序是一种流行的排序算法，它采用分治策略对数组或列表进行排序。它是一种基于比较的算法，通过将数组划分为两个子数组，然后递归地对这些子数组进行排序。由于其效率和简单性，快速排序被广泛使用。",
+      "meta": {
+        "title": "快速排序算法 | Python编程教程",
+        "description": "通过全面的Python编程教程学习快速排序算法，这是一种流行且高效的排序技术。深入了解实现细节和实际示例。",
+        "keywords": "快速排序, Python, 编程, 排序算法, 数据结构, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "快速排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["quick_sort.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

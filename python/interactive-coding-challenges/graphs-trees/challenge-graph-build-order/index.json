@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Graph Build Order",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -55,11 +55,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -84,5 +84,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "图的构建顺序",
+      "description": "在软件开发中，依赖其他项目的项目很常见。为了构建这些项目，我们需要确定它们的构建顺序。这就是所谓的构建顺序问题。",
+      "meta": {
+        "title": "掌握软件开发中的构建顺序",
+        "description": "探索确定软件项目及其依赖项的最佳构建顺序的基本技术。",
+        "keywords": "Python 实践场, 算法实践场, 软件开发, Python, 项目依赖项, 算法, 图论, 拓扑排序, 构建顺序"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "图的构建顺序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["build_order.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

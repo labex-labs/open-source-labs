@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Copy a File from Another Branch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful copying",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "从另一个分支复制文件",
+      "description": "在 Git 中，分支用于隔离开发工作，而不会影响仓库中的其他分支。有时，你可能需要将文件从另一个分支复制到当前分支。本挑战将测试你使用 Git 从另一个分支复制文件的能力。",
+      "meta": {
+        "title": "Git 演练场 | 从另一个分支复制文件",
+        "description": "在本编程教程概述中学习如何将文件从一个 Git 分支复制到另一个分支。",
+        "keywords": "Git、分支、文件管理、版本控制、编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从另一个分支复制文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证复制是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

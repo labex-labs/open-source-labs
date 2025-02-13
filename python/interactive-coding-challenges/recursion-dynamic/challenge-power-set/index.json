@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Power Set",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -45,11 +45,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -74,5 +74,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Python 中生成幂集",
+      "description": "在数学中，集合 S 的幂集是 S 的所有子集的集合，包括空集和 S 本身。在 Python 中，我们可以使用循环和递归的组合来生成给定集合的幂集。",
+      "meta": {
+        "title": "在 Python 中生成幂集 | 编程教程",
+        "description": "学习如何使用 Python 生成给定集合的幂集。包括此编程问题的示例和要求。",
+        "keywords": "幂集, Python, 编程, 算法, 集合, 子集"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "幂集",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["power_set.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

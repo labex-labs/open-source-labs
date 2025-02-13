@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Check Balance",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -47,11 +47,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -76,5 +76,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python 中的平衡二叉树",
+      "description": "在计算机科学中，二叉树是一种树状数据结构，其中每个节点最多有两个子节点，分别称为左子节点和右子节点。平衡二叉树是指任何节点的两个子树的高度差最多为 1 的树。在这个挑战中，我们将编写一个 Python 程序来检查一棵二叉树是否平衡。",
+      "meta": {
+        "title": "二叉树 | 平衡二叉树 | Python 编程",
+        "description": "学习如何编写一个 Python 程序来检查一棵二叉树是否平衡。探索这个编码挑战的要求和示例。",
+        "keywords": "二叉树, 平衡二叉树, Python 编程, 数据结构, 编码挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查平衡性",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["check_balance.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

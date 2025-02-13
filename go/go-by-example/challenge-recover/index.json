@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Recover",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Recover Error",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用 Go 语言的 recover 处理恐慌",
+      "description": "在 Go 语言中，recover 是一个内置函数，可用于从恐慌中恢复。本挑战将测试你使用 recover 处理恐慌的能力。",
+      "meta": {
+        "title": "Go 语言的 recover | 编程教程",
+        "description": "学习如何使用 Go 语言的 recover 函数处理恐慌并在代码中打印错误消息。",
+        "keywords": "Go 语言, recover, 恐慌, 编程教程, 错误处理"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "恢复",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序恢复错误",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["recover.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Slices",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Slice Initialization Correctness",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go 切片数据类型",
+      "description": "切片挑战旨在测试你对 Go 语言中切片数据类型的了解。切片是一种比数组更强大的序列接口，此挑战将帮助你了解如何使用它们。",
+      "meta": {
+        "title": "Go 切片挑战 | 编程教程",
+        "description": "探索 Go 语言切片数据类型的强大功能，并学习如何在你的编程项目中创建、操作和使用切片。",
+        "keywords": "Go, 切片, 编程教程, 编码挑战, 数据结构"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "切片",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证切片初始化的正确性",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["slices.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

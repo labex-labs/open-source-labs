@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Mutexes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Mutex Counter Updates as Expected",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用互斥锁进行并发数据访问 | 挑战",
+      "description": "此挑战旨在演示如何使用互斥锁在多个 goroutine 之间安全地访问数据。",
+      "meta": {
+        "title": "在 Golang 中掌握互斥锁 | 并发管理",
+        "description": "学习如何在 Golang 中使用互斥锁在多个 goroutine 之间安全地访问数据，确保计数器递增同步。",
+        "keywords": "Golang, 互斥锁, 并发, 同步, 计数器递增"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "互斥锁",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证互斥锁计数器按预期更新",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["mutexes.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

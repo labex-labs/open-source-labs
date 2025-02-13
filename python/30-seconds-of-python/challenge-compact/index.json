@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Compact List",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -40,11 +40,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -69,5 +69,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在Python列表中移除虚假值",
+      "description": "在这个挑战中，你需要通过编写一个函数来移除给定列表中的所有虚假值，以此展示你对Python中列表操作和虚假值概念的理解。",
+      "meta": {
+        "title": "Python精简列表 | 编程教程",
+        "description": "这个挑战测试对Python内置的`filter()`函数以及Python中虚假值概念的理解。",
+        "keywords": "Python, 编程, 列表, 精简, 虚假值"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "精简列表",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["compact.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

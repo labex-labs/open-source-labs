@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Stateful Goroutines",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Goroutine-based State Management Example",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用 Goroutines 同步共享状态",
+      "description": "此挑战旨在演示如何使用通道和 goroutine 来同步多个 goroutine 对共享状态的访问。",
+      "meta": {
+        "title": "并发编程 | Goroutines | 同步",
+        "description": "了解如何在并发编程中使用通道和 goroutine 来同步多个 goroutine 对共享状态的访问。",
+        "keywords": "并发编程, goroutines, 同步, 通道, 状态管理, 读/写操作"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "有状态的 Goroutines",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证基于 Goroutine 的状态管理示例",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["stateful-goroutines.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

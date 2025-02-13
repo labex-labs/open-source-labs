@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Sorting by Functions",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Sorting By String Length In Go Program",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用函数进行排序 | 挑战",
+      "description": "本次挑战旨在测试你能否按照自然顺序以外的方式对集合进行排序。在这种情况下，我们将按字符串长度而非字母顺序对字符串进行排序。",
+      "meta": {
+        "title": "按长度对字符串排序 | Go 编程教程",
+        "description": "学习如何在 Go 语言中实现一个自定义排序函数，该函数按字符串长度而非字母顺序对字符串切片进行排序。",
+        "keywords": "Go 编程, 排序, 字符串长度, 自定义排序, 算法"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "使用函数进行排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在 Go 程序中验证按字符串长度排序",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["sorting-by-functions.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

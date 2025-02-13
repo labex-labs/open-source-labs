@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Restore a Deleted File",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify File2 Content",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "恢复已删除的文件",
+      "description": "Git 是一种流行的版本控制系统，它允许开发者追踪其代码随时间的变化。使用 Git 的好处之一是它能让你恢复已删除的文件。在这个挑战中，你将学习如何恢复在特定提交中被删除的文件。",
+      "meta": {
+        "title": "恢复已删除的文件：Git 版本控制挑战",
+        "description": "学习如何使用提交历史记录在 Git 仓库中恢复已删除的文件。",
+        "keywords": "恢复已删除文件, 版本控制, Git 实验, 编程教程, Git 挑战, Git, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "恢复已删除的文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 File2 内容",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

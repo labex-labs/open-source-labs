@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Testing and Benchmarking",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Temporary Files and Directories",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "测试与基准测试 | 挑战",
+      "description": "此挑战旨在展示单元测试和基准测试在编写规范的Go程序中的重要性。`testing`包提供了编写单元测试所需的工具，而`go test`命令则用于运行测试。",
+      "meta": {
+        "title": "测试与基准测试：确保稳健的Go程序",
+        "description": "探索单元测试和基准测试在编写可靠且高效的Go程序中的强大作用。",
+        "keywords": "Go游乐场, 软件开发, 基准测试, Go编程, Go, Go实验, 在线Go游乐场, 单元测试, 编程最佳实践, Go实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "测试与基准测试",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证临时文件和目录",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["main_test.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

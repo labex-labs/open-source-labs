@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Create a New Repository",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that a new repository has been created",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "创建你的第一个 Git 仓库",
+      "description": "Git 是开发者用于管理代码的流行版本控制系统。使用 Git 的首要步骤之一是创建新仓库。在这个挑战中，你将学习如何初始化新的 Git 仓库。",
+      "meta": {
+        "title": "创建新的 Git 仓库：分步指南",
+        "description": "在本全面教程中学习如何为你的项目初始化新的 Git 仓库。",
+        "keywords": "版本控制, 仓库, Git 实验室, Git, 设置, 教程, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "创建新仓库",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证新仓库已创建",
+                "file": "verify1-1.sh",
+                "hint": "未找到 ~/project/my_project。请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

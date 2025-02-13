@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Math Ops",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -44,11 +44,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -73,5 +73,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python 中的高效列表操作",
+      "description": "在这个 Python 挑战中，我们将创建一个类，该类可以在 O(1) 时间复杂度内将一个整数插入到列表中，并计算该列表的最大值、最小值、平均值和众数。",
+      "meta": {
+        "title": "Python 挑战 | 数据结构 | 时间复杂度",
+        "description": "探索一个 Python 挑战，该挑战创建一个类来插入整数，在 O(1) 时间复杂度内计算最大值、最小值、平均值和众数。非常适合学习数据结构和算法优化。",
+        "keywords": "Python, 数据结构, 时间复杂度, 最大值, 最小值, 平均值, 众数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "数学运算",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["math_ops.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Number to Binary",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python3 Script Execution in Temporary Directory",
@@ -35,11 +35,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -64,5 +64,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "十进制数转二进制数 | 挑战",
+      "description": "在计算机科学中，二进制是一种以2为基数的计数系统，它使用两个符号（通常是0和1）来表示数值。二进制在计算和数字电子学中被广泛使用。在这个挑战中，你将编写一个Python函数，该函数接受一个十进制数作为输入，并返回其二进制表示形式。",
+      "meta": {
+        "title": "用Python掌握二进制转换",
+        "description": "学习如何编写一个将十进制数转换为其二进制表示形式的Python函数。探索二进制计数系统的基本原理及其在计算中的应用。",
+        "keywords": "Python游乐场, 编码挑战, Python, 二进制转换, 十进制转二进制, Python编程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "十进制数转二进制数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python3脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["to_binary.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

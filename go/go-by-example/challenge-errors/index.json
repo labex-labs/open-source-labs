@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Errors",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Run Errors Output",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 语言中处理错误 | 挑战",
+      "description": "本次挑战的目的是了解如何在 Go 语言中处理错误。",
+      "meta": {
+        "title": "在 Go 语言中处理错误",
+        "description": "通过一个全面的挑战探索 Go 语言中错误处理的技巧，涵盖自定义错误类型和实际实现。",
+        "keywords": "Go 语言游乐场, 错误处理, 软件开发, Go, Go 语言, Go 实验, 在线 Go 语言游乐场, 自定义错误类型, 编程挑战, Go 实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "错误",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 运行错误输出",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["errors.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

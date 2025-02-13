@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Find Branches Not Containing a Commit",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if found successfully",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "查找不包含特定提交的分支",
+      "description": "Git 是一种流行的版本控制系统，它允许开发者跟踪其代码库中的更改。Git 的一个实用功能是创建分支的能力，分支本质上是代码库的独立副本，可以独立修改。然而，有时很难跟踪哪些分支包含特定的提交。在这个挑战中，你将学习如何找到不包含特定提交的分支。",
+      "meta": {
+        "title": "Git 分支管理 | 版本控制教程",
+        "description": "学习如何找到不包含特定提交的 Git 分支，这是一个用于跟踪多个分支上代码更改的实用功能。",
+        "keywords": "Git, 版本控制, 分支, 提交, 代码更改"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "查找不包含特定提交的分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功找到",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

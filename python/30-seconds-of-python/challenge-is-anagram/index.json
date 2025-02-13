@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "String Anagram Challenge",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Anagram Python Script Execution",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "变位词检测挑战",
+      "description": "在这个挑战中，你将被要求编写一个函数，该函数用于检查两个字符串是否为彼此的变位词，不区分大小写，忽略空格、标点符号和特殊字符，并使用 `collections.Counter` 类对结果字符进行计数以进行比较。",
+      "meta": {
+        "title": "变位词挑战 | Python 编程",
+        "description": "学习如何编写一个 Python 函数来检查两个字符串是否为彼此的变位词。通过本编程教程提升你的编码技能。",
+        "keywords": "变位词, Python, 编程, 字符串操作, 编码挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "字符串变位词挑战",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证变位词 Python 脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["is_anagram.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

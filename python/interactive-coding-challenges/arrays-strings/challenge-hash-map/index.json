@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Hash Map",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -47,11 +47,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -76,5 +76,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用键值操作实现哈希表",
+      "description": "哈希表是一种数据结构，它将键映射到值以便进行高效查找。它使用哈希函数来计算进入桶或槽数组的索引，从中可以找到所需的值。在这个挑战中，我们将实现一个具有插入、获取和删除方法的哈希表。",
+      "meta": {
+        "title": "哈希表实现 | 数据结构",
+        "description": "实现一个具有插入、获取和删除方法的哈希表。了解用于冲突解决和高效键值查找的链地址法。",
+        "keywords": "哈希表, 数据结构, 键值, 查找, 链地址法, 插入, 获取, 删除"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "哈希映射",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["hash_map.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

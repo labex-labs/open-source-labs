@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Byte Size of String",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python3 Test Byte Size",
@@ -35,11 +35,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -64,5 +64,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "字符串的字节大小 | 挑战",
+      "description": "在Python中，字符串是字符序列。字符串中的每个字符都占用一定的内存量。字符串占用的内存量称为其字节大小。在这个挑战中，你将编写一个函数，该函数接受一个字符串作为输入并返回其字节大小。",
+      "meta": {
+        "title": "字符串的字节大小：揭示内存占用情况",
+        "description": "探索Python中字符串的字节大小，并学习如何计算文本数据的内存使用情况。",
+        "keywords": "字节大小, 内存, Python, UTF-8, 字符串"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "字符串的字节大小",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python3测试字节大小",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["byte_size.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

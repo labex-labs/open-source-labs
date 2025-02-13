@@ -1,0 +1,39 @@
+# 创建修正提交
+
+假设你正在和其他几位开发者一起处理一个项目，你发现几天前提交的一个内容中有个小错误。你想修复这个错误，但又不想创建一个新的提交并干扰其他开发者的工作。这时修正提交就派上用场了。通过创建一个修正提交，你可以进行必要的更改而无需创建新的提交，并且该修正提交会在下一次变基（rebase）时自动与原始提交合并。
+
+## 任务
+
+你的任务是将字符串 “hello,world” 写入 `hello.txt` 文件，并将其作为一个 “修正” 提交添加到提交信息为 “Added file1.txt” 的提交中，以便在后续的变基操作中自动合并。
+
+对于这个挑战，我们使用来自 `https://github.com/labex-labs/git-playground` 的仓库。
+
+1. 导航到该目录并配置身份信息。
+2. 创建一个 `hello.txt` 文件，在其中写入 “hello,world” 并将其添加到暂存区。
+3. 为提交信息为 “Added file1.txt” 的提交哈希创建一个修正提交。
+4. 创建修正提交后，你可以在下一次变基时自动将修正提交与原始提交合并。打开交互式编辑器时，你无需更改文本并保存退出。
+
+这是运行 `git show HEAD~1` 命令的结果：
+
+```shell
+commit 6f0b8bbfac939af197a44ecd287ef84153817e9d
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
+
+    Added file1.txt
+
+diff --git a/file1.txt b/file1.txt
+new file mode 100644
+index 0000000..bfccc4a
+--- /dev/null
++++ b/file1.txt
+@@ -0,0 +1 @@
++This is file1.
+diff --git a/hello.txt b/hello.txt
+new file mode 100644
+index 0000000..2d832d9
+--- /dev/null
++++ b/hello.txt
+@@ -0,0 +1 @@
++hello,world
+```

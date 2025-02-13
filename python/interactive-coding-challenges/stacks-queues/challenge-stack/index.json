@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Stack",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -42,11 +42,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -71,5 +71,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "栈的简明介绍",
+      "description": "在计算机科学中，栈是一种抽象数据类型，它作为一组元素的集合，有两个主要操作：push（将一个元素添加到集合中）和pop（移除最近添加且尚未移除的元素）。其他操作包括peek（返回最近添加的元素而不移除它）和is_empty（检查栈是否为空）。",
+      "meta": {
+        "title": "Python | 链表 | 栈的实现",
+        "description": "学习如何在Python中使用链表实现栈，包括push、pop、peek和is_empty方法。带有示例的详细编程教程。",
+        "keywords": "Python, 链表, 栈, 数据结构, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "栈",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["stack.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

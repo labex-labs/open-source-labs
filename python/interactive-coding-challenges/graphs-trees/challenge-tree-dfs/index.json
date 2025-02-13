@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Tree Dfs",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -47,11 +47,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -76,5 +76,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "二叉树的深度优先遍历",
+      "description": "树遍历是计算机科学中的一项常见操作，用于恰好访问树中的每个节点一次。深度优先搜索（DFS）是一种用于遍历树和图的流行算法。在这个挑战中，我们将在二叉树上实现 DFS。",
+      "meta": {
+        "title": "树遍历 | 深度优先搜索 | 二叉树",
+        "description": "学习如何使用深度优先搜索（DFS）算法在二叉树上实现深度优先遍历（中序、前序、后序）。",
+        "keywords": "树遍历, 深度优先搜索, 二叉树, 中序, 前序, 后序"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "树的深度优先搜索",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["dfs.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

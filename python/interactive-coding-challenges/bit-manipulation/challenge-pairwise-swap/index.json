@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Pairwise Swap",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -43,11 +43,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -72,5 +72,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "用于奇偶位交换的高效位操作",
+      "description": "在计算机科学中，按位运算用于操作二进制数的各个位。一个常见的问题是交换正整数的奇数位和偶数位。使用按位运算符可以用尽可能少的操作来实现这一点。",
+      "meta": {
+        "title": "按位运算 | 两两交换 | 计算机科学教程",
+        "description": "学习如何在计算机科学中使用按位运算交换正整数的奇数位和偶数位。探索高效的解决方案和实际示例。",
+        "keywords": "按位运算, 两两交换, 计算机科学, 编程, 二进制数操作"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "两两交换",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["pairwise_swap.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Execute function for each list element in reverse",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python3 Script Execution in Temporary Directory",
@@ -37,11 +37,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -66,5 +66,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python 中的反向迭代 | 挑战",
+      "description": "在这个挑战中，你需要实现一个函数，该函数从列表的最后一个元素开始，反向为列表中的每个元素执行给定的函数。",
+      "meta": {
+        "title": "Python 中的反向迭代：一个编码挑战",
+        "description": "学习如何使用 Python 函数从列表的最后一个元素开始，为列表中的每个元素执行一个函数。",
+        "keywords": "编码挑战, Python, 反向迭代, 列表, 函数"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "反向为每个列表元素执行函数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python3 脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["for_each_right.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

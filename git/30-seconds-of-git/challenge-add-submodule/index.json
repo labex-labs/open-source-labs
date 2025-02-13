@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Add a Submodule",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for submodules in 'my-project' directory",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "添加子模块",
+      "description": "子模块是一种将一个Git仓库作为另一个Git仓库的子目录包含进来的方式。当你想在项目中包含第三方库或共享代码库时，这会很有用。在这个挑战中，你将学习如何向Git仓库添加子模块。",
+      "meta": {
+        "title": "添加子模块：Git实验挑战",
+        "description": "学习如何向Git仓库添加子模块，并在项目中包含第三方库或共享代码库。",
+        "keywords": "Git仓库, Git实验室, 编程教程, Git, 子模块, Git实验"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "添加子模块",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证'my-project' 目录中的子模块",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

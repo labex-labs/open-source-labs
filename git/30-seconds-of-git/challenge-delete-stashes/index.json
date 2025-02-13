@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Delete All Stashes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that all have been deleted",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "删除所有贮藏",
+      "description": "在Git中，贮藏用于临时保存尚未准备好提交的更改。然而，有时你可能想要删除所有贮藏以重新开始。在这个挑战中，你将学习如何在Git仓库中删除所有贮藏。",
+      "meta": {
+        "title": "在Git中删除所有贮藏",
+        "description": "通过本全面指南，学习如何在Git仓库中删除所有贮藏并重新开始。",
+        "keywords": "Git仓库、版本控制、Git实验室、贮藏、删除贮藏、Git、Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除所有贮藏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有贮藏已被删除",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

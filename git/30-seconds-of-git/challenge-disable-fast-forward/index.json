@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Disable Fast Forward Merging",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful disabling",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "禁用快进合并",
+      "description": "Git是一个强大的版本控制系统，它允许开发者高效地在项目上进行协作。Git的特性之一是快进合并，它允许Git自动合并没有分歧提交的分支。然而，这个特性有时会导致问题，特别是在处理有多个贡献者的大型项目时。在这个挑战中，你将学习如何默认禁用快进合并。",
+      "meta": {
+        "title": "禁用快进合并：掌握Git强大的版本控制",
+        "description": "探索如何在Git中禁用快进合并，这是管理有多个贡献者的复杂项目的关键技术。",
+        "keywords": "版本控制，Git实验室，Git，协作，合并冲突，快进合并，Git游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "禁用快进合并",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功禁用",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

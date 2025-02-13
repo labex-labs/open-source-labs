@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Matrix Mult",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -48,11 +48,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -77,5 +77,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "优化 2x2 矩阵乘法",
+      "description": "矩阵乘法是线性代数中的基本运算，在物理、工程和计算机科学等多个领域有广泛应用。在本次挑战中，我们将专注于在给定一系列 2x2 矩阵的情况下，最小化矩阵乘法的成本。",
+      "meta": {
+        "title": "矩阵乘法 | 线性代数 | 优化",
+        "description": "在本编程教程中学习如何最小化矩阵乘法的成本，涵盖线性代数概念和优化技术。",
+        "keywords": "矩阵乘法, 线性代数, 优化, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "矩阵乘法",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["find_min_cost.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

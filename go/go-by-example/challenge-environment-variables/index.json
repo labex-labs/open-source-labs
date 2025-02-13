@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Environment Variables",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Environment Variables Set Correctly",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Unix 环境变量",
+      "description": "此挑战将涵盖 Unix 程序中环境变量的基础知识。环境变量用于向程序传递配置信息。",
+      "meta": {
+        "title": "Unix 环境变量 | 编程教程",
+        "description": "学习 Unix 程序中环境变量的基础知识，包括如何使用 Go 编程语言设置、获取和列出它们。",
+        "keywords": "Unix, 环境变量, 编程, Go, 配置, 操作系统, 开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "环境变量",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证环境变量是否正确设置",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["environment-variables.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

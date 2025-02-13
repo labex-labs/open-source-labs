@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Sub Two",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -39,11 +39,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -68,5 +68,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "不使用算术运算符进行整数减法",
+      "description": "在 Python 中，我们可以轻松地使用“-”运算符减去两个整数。但是，如果不允许使用这个运算符会怎样呢？在这个挑战中，我们将探索如何在不使用“+”或“-”符号的情况下找到两个整数的差。",
+      "meta": {
+        "title": "Python 编码挑战 | 减去两个整数",
+        "description": "学习如何在 Python 中不使用“+”或“-”符号减去两个整数。探索一个处理各种情况的编码挑战，包括正整数和负整数。",
+        "keywords": "Python, 编码挑战, 减去整数, 不使用加减, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "相减两个数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["sub_two.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

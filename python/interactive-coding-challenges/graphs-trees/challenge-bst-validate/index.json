@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Bst Validate",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -51,11 +51,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -80,5 +80,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "验证二叉搜索树",
+      "description": "二叉搜索树（BST）是一种树状数据结构，其中每个节点最多有两个子节点，分别称为左子节点和右子节点。有效的BST是这样一种树，其中节点左子树中的所有节点的值都小于该节点的值，而右子树中的所有节点的值都大于该节点的值。在这个挑战中，我们将确定给定的树是否是有效的二叉搜索树。",
+      "meta": {
+        "title": "验证二叉搜索树",
+        "description": "学习如何使用Python确定给定的二叉树是否是有效的二叉搜索树。",
+        "keywords": "二叉搜索树, Python, 算法, BST, 树状数据结构"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "验证二叉搜索树",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["bst_validate.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

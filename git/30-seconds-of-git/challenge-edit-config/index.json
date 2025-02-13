@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Edit Git Configuration File",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the configuration was successful",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "编辑 Git 配置文件",
+      "description": "Git 是一种流行的版本控制系统，它允许开发者跟踪其代码库中的更改。Git 配置文件是一个包含影响 Git 行为的设置的文件。在这个挑战中，你将学习如何使用 Git 文本编辑器来编辑 Git 配置文件。",
+      "meta": {
+        "title": "Git 配置文件编辑 | 版本控制教程",
+        "description": "学习如何编辑 Git 配置文件，并为你的开发项目定制 Git 的行为。",
+        "keywords": "Git, 版本控制, 配置文件, 文本编辑器, 开发, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "编辑 Git 配置文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证配置是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

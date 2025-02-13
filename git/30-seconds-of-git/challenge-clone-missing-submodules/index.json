@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Clone Missing Submodules",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful cloning",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "克隆缺失的子模块",
+      "description": "在 Git 中，子模块是仓库中的仓库。它们允许你将其他仓库作为依赖项包含在你的项目中。当你克隆一个包含子模块的 Git 仓库时，子模块不会自动被克隆。这在尝试构建或运行项目时可能会导致问题。在这个挑战中，你将学习如何克隆缺失的子模块并检出提交。",
+      "meta": {
+        "title": "克隆缺失的子模块：一个 Git 挑战",
+        "description": "学习如何在 Git 仓库中克隆缺失的子模块并检出正确的提交。",
+        "keywords": "子模块, 仓库, Git 实验室, Git, 检出, 克隆, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "克隆缺失的子模块",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功克隆",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

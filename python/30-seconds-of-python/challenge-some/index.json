@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Test if some list elements are truthy",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "测试列表中是否有元素为真值 | 挑战",
+      "description": "在Python中，我们可以使用any()函数来检查列表中是否至少有一个元素为True。在这个挑战中，你需要创建一个函数，该函数接受一个列表和一个函数作为参数，如果该函数对列表中的至少一个元素返回True，则返回True。",
+      "meta": {
+        "title": "Python教程 | 真值列表元素",
+        "description": "学习如何在Python中使用`any()`函数来检查列表中是否至少有一个元素为真值。探索一个测试某些列表元素是否满足给定条件的函数。",
+        "keywords": "Python, any(), 真值, 列表, 函数, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "测试列表中是否有元素为真值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["some.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

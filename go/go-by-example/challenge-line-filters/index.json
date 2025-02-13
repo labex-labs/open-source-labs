@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Line Filters",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Uppercase Line Filter",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "简洁的Go文本转换",
+      "description": "行过滤器挑战是一种常见的程序类型，它从标准输入读取输入，进行处理，然后将一些派生结果打印到标准输出。这个挑战的目的是编写一个Go程序，读取输入文本并根据特定要求对其进行修改。",
+      "meta": {
+        "title": "Go编程 | 行过滤器挑战",
+        "description": "学习如何编写一个Go程序，从标准输入读取输入文本，将所有字母大写，并将修改后的文本打印到标准输出。",
+        "keywords": "Go编程, 行过滤器, 大写, 标准输入, 标准输出"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "行过滤器",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证大写行过滤器",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["line-filters.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

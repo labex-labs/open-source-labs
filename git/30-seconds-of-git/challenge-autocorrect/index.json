@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Autocorrect Git Commands",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the autocorrect function is configured correctly",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "自动纠正 Git 命令",
+      "description": "Git 是一个强大的版本控制系统，它允许开发者高效地管理他们的代码库。然而，有时开发者会输错 git 命令，这可能会导致错误和挫败感。幸运的是，Git 提供了一个自动纠正功能，可以帮助解决这个问题。",
+      "meta": {
+        "title": "自动纠正 Git 命令：简化你的工作流程",
+        "description": "了解如何启用 Git 的自动纠正功能，并轻松纠正常见的命令输入错误。",
+        "keywords": "自动纠正, 版本控制, Git 实验室, 工作流程, Git, Git 游乐场, 工作效率"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自动纠正 Git 命令",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证自动纠正功能是否配置正确",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

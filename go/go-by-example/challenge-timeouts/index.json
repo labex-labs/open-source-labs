@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Timeouts",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify First Operation Timeout Second Operation Succeed",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "使用通道在Go中实现超时处理",
+      "description": "本次挑战的目的是在Go中使用通道和select来实现超时处理。",
+      "meta": {
+        "title": "Go语言中的超时处理 | 通道与select",
+        "description": "学习如何在Go中使用通道和select实现超时处理，防止goroutine泄漏，并使用time.After等待超时后发送的值。",
+        "keywords": "Go语言, 超时处理, 通道, select, goroutine, time.After"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "超时处理",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证第一个操作超时，第二个操作成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["timeouts.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

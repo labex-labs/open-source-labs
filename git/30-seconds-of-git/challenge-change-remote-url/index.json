@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Change the Remote URL",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that a new URL is displayed",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "更改远程仓库 URL",
+      "description": "在 Git 中，远程仓库是指托管在服务器或另一台计算机上的仓库版本。当你克隆一个仓库时，Git 会自动创建一个名为 origin 的远程仓库，它指向原始仓库。然而，有时你可能需要更改远程仓库的 URL。本挑战将测试你使用 Git 命令更改远程 URL 的能力。",
+      "meta": {
+        "title": "在 Git 中更改远程仓库 URL：实践挑战",
+        "description": "学习如何使用命令行工具更改 Git 仓库的远程 URL。通过本实用教程提升你的 Git 技能。",
+        "keywords": "远程仓库, 仓库, Git 实验, 更改, Git, URL, Git 实践项目"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "更改远程仓库 URL",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否显示新的 URL",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

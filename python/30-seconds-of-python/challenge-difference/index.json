@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "List Difference",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -42,11 +42,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -71,5 +71,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Python 列表差异计算",
+      "description": "在 Python 中，我们可以计算两个列表或任何可迭代对象之间的差异。两个列表之间的差异是指第一个列表中存在而第二个列表中不存在的元素。在这个挑战中，你需要编写一个 Python 函数，该函数接受两个列表作为参数，并返回它们之间的差异。",
+      "meta": {
+        "title": "Python 列表差异 | 编程教程",
+        "description": "学习如何在 Python 中计算两个列表之间的差异。探索解决这个常见编程挑战的逐步方法。",
+        "keywords": "Python, 列表差异, 编程教程, 可迭代对象, 列表推导式"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列表差异",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python 脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["difference.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

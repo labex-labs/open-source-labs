@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Kebabcase string",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Kebab Name Correctness",
@@ -42,11 +42,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -71,5 +71,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Python 中将字符串转换为短横线命名法 | 挑战",
+      "description": "在这个挑战中，你需要编写一个 Python 函数，将给定的字符串转换为短横线命名法，这包括将任何连字符或下划线替换为空格，将所有单词转换为小写，并使用连字符作为分隔符将它们组合起来。",
+      "meta": {
+        "title": "Python 短横线命名法转换 | 编程教程",
+        "description": "学习如何在 Python 中将字符串转换为短横线命名法。探索逐步指南和示例，掌握这一实用的编程技术。",
+        "keywords": "Python, 短横线命名法, 字符串转换, 编程教程, 编码挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "短横线命名法字符串",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证短横线命名的正确性",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["kebab.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

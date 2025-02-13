@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Move Commits to a New Branch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful move commitment",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "将提交移动到新分支",
+      "description": "Git 是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git 的一个实用功能是能够将提交从一个分支移动到另一个分支。当你意识到对主分支所做的某些更改本应在一个单独的分支上进行时，这会很有帮助。在这个挑战中，你将学习如何将提交从主分支移动到一个新分支。",
+      "meta": {
+        "title": "将提交移动到新分支",
+        "description": "了解如何在强大的版本控制系统 Git 中，将提交从一个分支移动到另一个分支。",
+        "keywords": "版本控制, 仓库, Git 实验室, 分支, Git, 提交, Git 游乐场"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "将提交移动到新分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证提交移动是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

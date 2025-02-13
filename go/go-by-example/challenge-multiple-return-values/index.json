@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Multiple Return Values",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Run Multiple Return Values",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "多个返回值 | 挑战",
+      "description": "在Go语言中，函数可以返回多个值。此功能通常用于从函数中同时返回一个结果和一个错误值。",
+      "meta": {
+        "title": "Go编程 | 多个返回值",
+        "description": "学习如何在Go编程语言中使用多个返回值。探索从函数中同时返回结果和错误的强大功能。",
+        "keywords": "Go编程, 多个返回值, 错误处理, 函数返回, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "多个返回值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go运行多个返回值",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["multiple-return-values.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

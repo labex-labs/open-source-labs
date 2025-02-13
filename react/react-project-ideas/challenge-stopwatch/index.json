@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Stopwatch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the running status of the web service",
@@ -50,11 +50,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -74,5 +74,51 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/Vasu7389/react-project-ideas/blob/master/LICENSE",
     "repo": "https://github.com/Vasu7389/react-project-ideas"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "响应式秒表和倒计时器",
+      "description": "在这个挑战中，我们将使用基本的 React 概念，并围绕其编写少量 JavaScript 编程逻辑，来开发一个 React 秒表和倒计时器（天、小时、分钟和秒）。",
+      "meta": {
+        "title": "React 秒表与倒计时器 | 编程教程",
+        "description": "学习如何使用基本的 React 概念和 JavaScript 编程逻辑来开发一个 React 秒表和倒计时器。",
+        "keywords": "React, 秒表, 倒计时器, 编程教程, JavaScript"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "秒表",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 运行项目。"
+              },
+              {
+                "name": "验证定时器组件是否使用 useState 钩子",
+                "file": "verify1-2.sh",
+                "hint": "请使用 useState。"
+              },
+              {
+                "name": "验证定时器组件的 useEffect 钩子",
+                "file": "verify1-3.sh",
+                "hint": "请使用 useEffect。"
+              }
+            ],
+            "solutions": ["Timer.js"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

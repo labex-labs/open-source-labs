@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Context",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Constant Value in Go Program",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go语言上下文取消演示 | 挑战",
+      "description": "此挑战旨在演示如何在Go语言中使用context.Context来控制取消操作。Context可跨API边界和goroutine携带截止日期、取消信号及其他请求范围的值。",
+      "meta": {
+        "title": "Go语言上下文 | 取消信号 | 并发编程",
+        "description": "学习如何使用Go语言的context.Context在HTTP服务器中控制取消操作，并跨API边界管理请求范围的值。",
+        "keywords": "Go语言, 上下文, 取消, 并发编程, HTTP服务器"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "上下文",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在Go程序中验证常量值",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["context.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

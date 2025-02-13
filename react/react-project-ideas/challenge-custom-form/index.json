@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Custom Form",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the running status of the web service",
@@ -43,11 +43,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -67,5 +67,46 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/Vasu7389/react-project-ideas/blob/master/LICENSE",
     "repo": "https://github.com/Vasu7389/react-project-ideas"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "可复用的 React 自定义表单组件",
+      "description": "在这个挑战中，你将使用函数式组件在 React 中开发一个可复用的自定义表单，也就是提交表单。通过将输入字段和按钮作为属性传递，你可以根据需要添加任意数量的输入字段和按钮。在未来的项目中，你也可以使用这个单一组件来创建登录表单、注册表单或用于任何 CRUD 功能的数据创建/更新表单。",
+      "meta": {
+        "title": "可复用自定义表单 | React 函数式组件 | CRUD 表单",
+        "description": "学习如何使用函数式组件在 React 中开发可复用的自定义表单。为你的项目创建登录、注册或数据创建/更新表单。",
+        "keywords": "React, 自定义表单, 函数式组件, CRUD, 登录, 注册"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自定义表单",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 运行项目。"
+              },
+              {
+                "name": "验证 useRef 钩子的使用",
+                "file": "verify1-2.sh",
+                "hint": "请使用 useRef。"
+              }
+            ],
+            "solutions": ["App.js"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Command-line flags",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Command Line Flags Program Compilation",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go语言中的命令行标志解析",
+      "description": "本次挑战的目的是使用Go语言中的flag包实现一个支持基本命令行标志解析的命令行程序。",
+      "meta": {
+        "title": "命令行标志 | Go语言编程教程",
+        "description": "实现一个Go语言程序，该程序解析命令行标志并输出解析后的选项以及任何尾随的位置参数。",
+        "keywords": "Go语言, 命令行标志, 编程教程, flag包, 命令行界面"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "命令行标志",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证命令行标志程序编译",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["command-line-flags.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

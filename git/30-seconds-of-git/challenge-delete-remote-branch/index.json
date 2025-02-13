@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Delete a Remote Branch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful deletion",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "删除远程分支",
+      "description": "在 Git 中，分支是指向提交对象的轻量级可移动指针。分支用于开发功能、隔离更改以及进行实验，而不会影响仓库的其他部分。远程分支是对远程仓库中分支状态的引用。它们用于跟踪其他开发者的工作进度并在项目中进行协作。",
+      "meta": {
+        "title": "在 Git 中删除远程分支：一项实践挑战",
+        "description": "学习如何在 Git 中删除远程分支，这是管理项目代码库的一项关键技能。",
+        "keywords": "仓库、删除、git 实验室、git、协作、git 游乐场、远程分支"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "删除远程分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证删除是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

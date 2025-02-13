@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Add Days to Date",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -40,11 +40,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -69,5 +69,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "给日期增加天数 | 挑战",
+      "description": "在Python中，你可以使用datetime模块轻松地对给定日期进行天数的加减操作。这在各种场景中都很有用，例如计算任务或项目的截止日期，或者确定从给定日期起若干天后的日期。",
+      "meta": {
+        "title": "给日期增加天数：Python日期时间挑战",
+        "description": "学习如何使用Python的datetime模块轻松地对给定日期进行天数的加减操作。",
+        "keywords": "Python, 增加天数, 减去天数, 日期, 日期时间"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "给日期增加天数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["add_days.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Apply a stash",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful application",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "应用贮藏",
+      "description": "在这个挑战中，你将学习如何使用 Git 贮藏来临时保存更改，切换到另一个分支，然后应用贮藏的更改以继续在原始分支上工作。",
+      "meta": {
+        "title": "应用贮藏：Git 实践教程",
+        "description": "了解如何使用 Git 的贮藏功能临时保存更改并切换到另一个分支。",
+        "keywords": "版本控制, Git 实验室, 贮藏, 分支, Git, 功能, Git 实践"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "应用贮藏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证应用是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

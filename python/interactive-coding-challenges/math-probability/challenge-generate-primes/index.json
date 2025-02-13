@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Generate Primes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -50,11 +50,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -79,5 +79,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "生成质数",
+      "description": "在数学中，质数是大于 1 的自然数，除了 1 和它自身外，不能被其他任何自然数整除。生成质数列表是计算机科学中的常见问题，在密码学、数论和其他领域有广泛应用。",
+      "meta": {
+        "title": "用 Python 生成质数",
+        "description": "学习如何编写一个生成质数列表的 Python 函数。",
+        "keywords": "算法实践, 数论, Python, 质数, 算法, 编程, 计算机科学"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "生成质数",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["generate_primes.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Automate Upstream Branch Creation",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Git Configuration and Branch Existence",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "自动创建上游分支",
+      "description": "在一个协作项目中，通常会有多个开发者在同一个仓库的不同分支上工作。当开发者将他们的更改推送到远程仓库中不存在的分支时，推送将会失败。这就是上游分支创建发挥作用的地方。通过在推送时启用自动上游分支创建，开发者可以避免在远程仓库上手动创建分支的麻烦。",
+      "meta": {
+        "title": "自动创建上游分支：Git 实践挑战",
+        "description": "学习如何在推送时自动创建上游分支，避免手动设置。",
+        "keywords": "自动化, 分支创建, Git 实验室, 远程仓库, Git, 协作, Git 实践"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "自动创建上游分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Git 配置和分支存在性",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

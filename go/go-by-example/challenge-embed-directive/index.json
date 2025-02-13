@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Embed Directive",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Embedding Files in Go Project",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在Go程序中嵌入文件",
+      "description": "此挑战旨在测试你对Go语言中embed包的理解。embed包允许程序在构建时将任意文件和文件夹包含到Go二进制文件中。",
+      "meta": {
+        "title": "Golang嵌入指令 | 编程教程",
+        "description": "学习如何使用Golang的embed包在你的Go二进制文件中包含文件和文件夹。探索嵌入指令的要求和示例用法。",
+        "keywords": "Golang, 嵌入, 编程, 教程, Go二进制文件"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "嵌入指令",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证在Go项目中嵌入文件",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["embed-directive.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

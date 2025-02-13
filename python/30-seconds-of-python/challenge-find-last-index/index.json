@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Find the Last Matching Index",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "找到最后一个匹配的索引 | 挑战",
+      "description": "在这个挑战中，你将练习使用 Python 中的列表推导式和 `enumerate()` 函数来找到列表中满足给定条件的最后一个元素的索引。",
+      "meta": {
+        "title": "找到最后一个匹配的索引",
+        "description": "这个挑战测试了使用 Python 中的列表推导式和 `enumerate()` 函数来找到列表中满足给定条件的最后一个元素的索引的能力。",
+        "keywords": "Python, 列表推导式, enumerate, 编程挑战, 索引"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "找到最后一个匹配的索引",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证 Python 脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["find_last_index.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

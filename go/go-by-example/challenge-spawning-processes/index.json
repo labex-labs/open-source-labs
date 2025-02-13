@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Spawning Processes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Spawning Processes Output",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 中派生外部进程 | 挑战",
+      "description": "在某些情况下，Go 程序需要派生非 Go 进程。本挑战旨在演示如何在 Go 中派生外部进程。",
+      "meta": {
+        "title": "在 Go 中派生外部进程 | 编程教程 | 挑战",
+        "description": "学习如何在 Go 编程语言中派生外部进程并收集其输出。探索相关要求和示例用法。",
+        "keywords": "Go 编程, 外部进程, 进程派生, 进程输出, 命令执行, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "派生进程",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证派生进程的输出",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["spawning-processes.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

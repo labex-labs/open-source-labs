@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Pull Latest Changes from Remote",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful pull",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "从远程仓库拉取最新更改",
+      "description": "Git 是一种流行的版本控制系统，它允许开发者在项目上进行协作，并跟踪对代码库所做的更改。Git 最重要的特性之一是能够从远程仓库拉取最新更改。在这个挑战中，你将学习如何使用 Git 从远程仓库拉取最新更改。",
+      "meta": {
+        "title": "Git 教程 | 版本控制 | 远程仓库",
+        "description": "学习如何从远程 Git 仓库拉取最新更改，并使你的本地代码库与团队的工作保持同步。",
+        "keywords": "Git, 版本控制, 远程仓库, 拉取更改, 协作, 编码教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从远程仓库拉取最新更改",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证拉取是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

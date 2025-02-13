@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Counter Game",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify the running status of the web service",
@@ -51,11 +51,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -75,5 +75,51 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/Vasu7389/react-project-ideas/blob/master/LICENSE",
     "repo": "https://github.com/Vasu7389/react-project-ideas"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "React 递增递减计数器",
+      "description": "在这个挑战中，你将使用 React 钩子（即 useState 和 useEffect）开发一个计数器游戏，也就是递增递减计数器。在这个游戏中，你可以点击一个按钮来增加计数值。你可以和你的朋友一起玩这个游戏，并挑战他们在给定的时间内尽可能多地点击……",
+      "meta": {
+        "title": "掌握 React 递增递减计数器",
+        "description": "深入学习一个引人入胜的 React 教程，该教程将教你如何构建一个交互式递增递减计数器游戏。",
+        "keywords": "react, 计数器, 递减, 游戏, 递增"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "计数器游戏",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Web 服务的运行状态",
+                "file": "verify1-1.sh",
+                "hint": "请使用 'npm start' 运行项目。"
+              },
+              {
+                "name": "验证学生在 HomePage 组件中实现的 useState",
+                "file": "verify1-2.sh",
+                "hint": "请使用 useState。"
+              },
+              {
+                "name": "验证 HomePage 组件中的 useEffect",
+                "file": "verify1-3.sh",
+                "hint": "请使用 useEffect。"
+              }
+            ],
+            "solutions": ["HomePage.js"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

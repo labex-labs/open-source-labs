@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Closing Channels",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Run Closing Channels",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "Go语言中与工作协程的通道通信 | 挑战",
+      "description": "在Go语言中，关闭一个通道可用于向通道的接收者传达完成信息。本挑战将演示如何使用通道将 `main()` 协程中待完成的工作传达给工作协程，以及当工作协程没有更多任务时如何关闭通道。",
+      "meta": {
+        "title": "Go语言 | 通道同步 | 关闭通道",
+        "description": "学习如何在Go语言中使用通道在协程之间通信，以及在工作协程没有更多任务时关闭通道。",
+        "keywords": "Go语言, 通道同步, 关闭通道, 协程, 编程教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "关闭通道",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go运行关闭通道",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["closing-channels.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

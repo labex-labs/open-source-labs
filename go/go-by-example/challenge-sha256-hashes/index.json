@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "SHA256 Hashes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Computes SHA256 Hash",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 中计算 SHA256 哈希值 | 挑战",
+      "description": "此挑战旨在演示如何在 Go 中计算 SHA256 哈希值。SHA256 哈希值通常用于计算二进制或文本块的简短标识。",
+      "meta": {
+        "title": "Go | SHA256 哈希值 | 加密哈希函数",
+        "description": "了解如何在流行的编程语言 Go 中计算 SHA256 哈希值。探索使用加密哈希函数进行安全的数据标识。",
+        "keywords": "Go, SHA256, 哈希值, 密码学, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "SHA256 哈希值",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证 Go 程序是否计算 SHA256 哈希值",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["sha256-hashes.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Rotation",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "计算机科学中判断字符串旋转",
+      "description": "在计算机科学中，字符串旋转是将字符串中的字符向左或向右移动的过程。一个字符串相对于另一个字符串的旋转是指将一个字符串的字符以循环方式移动。例如，字符串“abcde”可以旋转形成字符串“cdeab”。在这个挑战中，我们要确定字符串s1是否是另一个字符串s2的旋转。",
+      "meta": {
+        "title": "字符串旋转 | 计算机科学算法",
+        "description": "探索字符串旋转的概念，这是一种基本的计算机科学算法，并学习如何判断一个字符串是否是另一个字符串的旋转。",
+        "keywords": "字符串旋转, 计算机科学, 算法, 子串, 编程, 问题解决"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "旋转",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["rotation.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

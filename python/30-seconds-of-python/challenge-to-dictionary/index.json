@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Lists to Dictionary",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python 3 Script Execution",
@@ -40,11 +40,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -69,5 +69,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "列表转字典 | 挑战",
+      "description": "在Python中，字典是键值对的集合。有时，我们可能有两个单独的列表，一个包含键，另一个包含值，我们希望将它们组合成一个字典。在这个挑战中，你将编写一个函数，该函数接受两个列表作为输入，并返回一个字典，其中第一个列表的元素作为键，第二个列表的元素作为值。",
+      "meta": {
+        "title": "列表转字典挑战",
+        "description": "学习如何在Python中将两个列表组合成一个字典。",
+        "keywords": "数据结构, 列表, Python, 字典, 编程挑战"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "列表转字典",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Python 3脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["to_dictionary.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

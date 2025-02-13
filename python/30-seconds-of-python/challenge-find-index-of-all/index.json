@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Find All Matching Indexes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "找到所有匹配的索引 | 挑战",
+      "description": "在Python中，我们可以使用enumerate()函数遍历列表，并获取每个元素的索引和值。我们还可以使用列表推导式来过滤满足特定条件的元素。在这个挑战中，你将使用这些概念来创建一个函数，该函数可以找到列表中所有满足给定测试函数的元素的索引。",
+      "meta": {
+        "title": "Python编程 | 列表操作 | 枚举函数",
+        "description": "学习如何在Python中使用enumerate()函数和列表推导式来找到列表中所有满足给定测试函数的元素的索引。",
+        "keywords": "Python,编程,列表操作,枚举函数,列表推导式"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "找到所有匹配的索引",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["find_index_of_all.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

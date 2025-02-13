@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Panic",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Go Program Panic Handling",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在Go语言中处理意外错误",
+      "description": "`panic` 挑战旨在测试你在Go语言中处理意外错误的能力。",
+      "meta": {
+        "title": "Go语言的panic挑战 | 错误处理",
+        "description": "探索Go语言的panic挑战，并学习如何在你的Go语言应用程序中处理意外错误。",
+        "keywords": "Go语言, panic, 错误处理, 编程挑战, Go语言教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "触发恐慌",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证Go程序的恐慌处理",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["panic.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

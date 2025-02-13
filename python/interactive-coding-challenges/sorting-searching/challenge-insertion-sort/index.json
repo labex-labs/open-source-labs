@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Insertion Sort",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -42,11 +42,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -71,5 +71,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "高效插入排序算法",
+      "description": "插入排序是一种简单的排序算法，其工作原理是将下一个元素反复插入到已排序的数组中。它是一种基于比较的原地排序算法，每次构建一个最终的已排序数组。",
+      "meta": {
+        "title": "插入排序算法 | Python 编程",
+        "description": "学习 Python 中的插入排序算法。这种简单的排序技术每次构建一个最终的已排序数组，使其成为一种高效的基于比较的原地排序解决方案。",
+        "keywords": "插入排序, Python, 排序算法, 编程, 基于比较的排序"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "插入排序",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["insertion_sort.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

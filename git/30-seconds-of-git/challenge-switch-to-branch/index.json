@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Switch to a Branch",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that you have switched to the branch",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "切换到分支",
+      "description": "在 Git 中，分支用于创建项目的不同版本。使用 Git 时，在分支之间切换是一项常见任务。在这个挑战中，你将学习如何切换到 Git 仓库中的现有分支。",
+      "meta": {
+        "title": "切换到分支：Git 实践挑战",
+        "description": "学习如何在 Git 仓库中切换分支并完成一个实践挑战。",
+        "keywords": "挑战, 切换, 仓库, Git 实验室, 分支, Git, Git 实践"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "切换到分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证你已切换到该分支",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

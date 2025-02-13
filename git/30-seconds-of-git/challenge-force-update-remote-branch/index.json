@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Update Remote Branch After Rewriting History",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful forced update",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "改写历史记录后更新远程分支",
+      "description": "Git 是一个强大的版本控制系统，它允许开发者跟踪对其代码库所做的更改。Git 的关键特性之一是能够改写历史记录，当你需要对之前的提交进行更改时，这会很有用。然而，在尝试将更改推送到远程仓库时，改写历史记录可能会引发问题。在这个挑战中，你将学习如何在本地改写历史记录后更新远程分支。",
+      "meta": {
+        "title": "改写 Git 历史记录后更新远程分支",
+        "description": "学习如何在改写本地提交历史记录后更新远程 Git 分支，以维护版本控制和协作。",
+        "keywords": "版本控制, Git 实验室, 改写历史记录, Git, 提交历史记录, Git 游乐场, 远程分支"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "改写历史记录后更新远程分支",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证强制更新是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

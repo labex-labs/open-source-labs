@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Grid Path",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "机器人网格路径规划",
+      "description": "在这个挑战中，我们将实现一种算法，用于将机器人从矩形网格的左上角移动到右下角。机器人只能向右和向下移动，并且某些单元格可能是禁区。",
+      "meta": {
+        "title": "机器人网格路径规划：高效避开障碍物",
+        "description": "探索一种算法，引导机器人穿过网格，避开障碍物并到达右下角。",
+        "keywords": "路径规划, 避障, Python 实践, Python, 网格, 算法, 机器人"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "网格路径",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["grid_path.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

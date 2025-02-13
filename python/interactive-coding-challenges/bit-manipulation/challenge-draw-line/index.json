@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Draw Line",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -45,11 +45,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -74,5 +74,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "实现直线绘制算法",
+      "description": "在计算机图形学中，直线是可以在屏幕上绘制的基本元素。在屏幕上绘制直线涉及设置屏幕内存中的相应位。在这个挑战中，我们将实现一种方法，该方法根据屏幕宽度和两个绝对像素位置在屏幕上绘制直线。",
+      "meta": {
+        "title": "计算机图形学 | 绘制直线 | 编程教程",
+        "description": "学习如何在计算机图形学编程中实现一种方法，该方法根据屏幕宽度和两个绝对像素位置在屏幕上绘制直线。",
+        "keywords": "计算机图形学, 绘制直线, 编程教程, 屏幕内存, 位操作"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "绘制直线",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["draw_line.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

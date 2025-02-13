@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Purge a file from history",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if purge is successful",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "从历史记录中清除文件",
+      "description": "Git 是一种流行的版本控制系统，它允许开发者跟踪其代码库中的更改。然而，有时有必要从仓库历史记录中完全删除一个文件。本挑战将指导你完成从 Git 历史记录中清除文件的过程。",
+      "meta": {
+        "title": "从 Git 历史记录中清除文件",
+        "description": "了解如何从 Git 仓库历史记录中完全删除一个文件，以确保敏感数据不被暴露。",
+        "keywords": "安全、版本控制、历史记录重写、git 实验室、git、git 游乐场、文件清除"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从历史记录中清除文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证清除是否成功",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

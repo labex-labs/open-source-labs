@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Set of Stacks",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify if all tests are passed",
@@ -45,11 +45,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -74,5 +74,41 @@
     "name": "Apache-2.0",
     "url": "https://github.com/donnemartin/interactive-coding-challenges/blob/master/LICENSE",
     "repo": "https://github.com/donnemartin/interactive-coding-challenges"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "栈集合",
+      "description": "在计算机科学中，栈是一种抽象数据类型，它作为一组元素的集合，有两个主要操作：push（将一个元素添加到集合中）和pop（移除最近添加且尚未移除的元素）。在某些情况下，我们可能需要实现一组栈，其中每个栈都有有限的容量。当一个栈达到其容量时，会创建一个新栈来存储额外的元素。在这个挑战中，我们将实现一个 `SetOfStacks` 类，它包装了一个栈列表，其中每个栈都有一个容量限制。",
+      "meta": {
+        "title": "掌握栈管理的艺术",
+        "description": "探索实现栈集合的复杂性，这是一种多功能的数据结构，可优化内存使用并简化栈操作。",
+        "keywords": "Python 游乐场, 算法游乐场, Python, 栈管理, 栈集合, 算法, 编程, 计算机科学, 数据结构"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "栈集合",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证所有测试是否通过",
+                "file": "verify1-1.sh",
+                "hint": "请确保你有正确的输出格式。"
+              }
+            ],
+            "solutions": ["set_of_stacks.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

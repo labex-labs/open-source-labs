@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Check if a Date is a Weekday",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify If Weekday Python Script Execution",
@@ -41,11 +41,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -70,5 +70,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "检查日期是否为工作日 | 挑战",
+      "description": "在Python中，你可以使用datetime模块来处理日期和时间。一个常见的任务是检查给定的日期是工作日还是周末。在这个挑战中，你将编写一个函数，该函数接受一个日期作为输入，如果是工作日则返回True，如果是周末则返回False。",
+      "meta": {
+        "title": "Python日期和时间 | 工作日检查器",
+        "description": "学习如何使用Python的datetime模块来检查给定的日期是工作日还是周末。通过这个有用的教程提高你的Python编程技能。",
+        "keywords": "Python, datetime, 日期, 时间, 工作日, 周末, 编程, 教程"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "检查日期是否为工作日",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证工作日Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["is_weekday.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

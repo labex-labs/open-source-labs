@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Change the Last Commit's Author",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify that the author's information has been successfully updated",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "修改最后一次提交的作者",
+      "description": "在这个挑战中，你将学习如何在不修改提交内容的情况下，更改 Git 仓库中最后一次提交的作者。",
+      "meta": {
+        "title": "Git | 版本控制 | 提交作者",
+        "description": "学习如何在 Git 中更改最后一次提交的作者。Git 是一个强大的版本控制系统，开发者用它来跟踪代码库的更改。",
+        "keywords": "Git, 版本控制, 提交作者, 代码管理, 软件开发"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "修改最后一次提交的作者",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证作者信息是否已成功更新",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

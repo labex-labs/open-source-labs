@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Value Frequencies",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Python Script Execution in Temporary Directory",
@@ -45,11 +45,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -74,5 +74,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "从列表创建频率字典",
+      "description": "在这个挑战中，你将创建一个Python函数，该函数接受一个列表作为参数，并返回一个字典，其中列表的唯一值作为键，它们的频率作为值。这是数据分析中的一项常见任务，并且在许多不同的应用中都可能有用。",
+      "meta": {
+        "title": "Python函数 | 值频率 | 数据分析",
+        "description": "学习如何创建一个Python函数，该函数接受一个列表作为参数，并返回一个字典，其中列表的唯一值作为键，它们的频率作为值。",
+        "keywords": "Python, 函数, 值频率, 数据分析, 字典"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "值频率",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "在临时目录中验证Python脚本执行情况",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["frequencies.py"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

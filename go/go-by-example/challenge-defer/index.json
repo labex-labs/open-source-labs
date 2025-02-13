@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Defer",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify File Closed After Writing",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "延迟函数执行与清理",
+      "description": "在这个挑战中，你需要使用 `defer` 语句来确保即使在函数执行期间发生错误，文件也能被正确创建、写入和关闭。",
+      "meta": {
+        "title": "Go 编程中的延迟执行 | 文件处理",
+        "description": "学习如何在 Go 中使用 'defer' 语句高效地创建、写入和关闭文件。了解 Go 编程中正确进行文件管理的重要性。",
+        "keywords": "Go 编程, 延迟执行, 文件处理, 文件创建, 文件写入, 文件关闭"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "延迟执行",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证写入后文件已关闭",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["defer.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Discard Uncommitted Changes",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful discarding",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "丢弃未提交的更改",
+      "description": "Git 是一个版本控制系统，它允许开发者跟踪其代码库中的更改。有时，开发者可能会对代码进行更改，但之后又决定不保留这些更改。在这种情况下，有必要丢弃这些更改并恢复到代码的上一个提交版本。本挑战将专注于在 Git 中丢弃未提交的更改。",
+      "meta": {
+        "title": "丢弃未提交的更改：Git 实践挑战",
+        "description": "学习如何在本地 Git 仓库中丢弃所有未提交的更改，并恢复到代码的上一个提交版本。",
+        "keywords": "版本控制, Git 实验室, 丢弃更改, Git, Git 实践, 未提交的更改"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "丢弃未提交的更改",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功丢弃",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

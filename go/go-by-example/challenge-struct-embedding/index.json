@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Struct Embedding",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify Correct Struct Embedding Output",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     },
     "assets": {
       "host01": [
@@ -55,5 +55,41 @@
     "name": "CC-BY-3.0",
     "url": "http://creativecommons.org/licenses/by/3.0/",
     "repo": "https://github.com/mmcgrana/gobyexample"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "在 Go 语言中嵌入结构体",
+      "description": "此挑战旨在测试你对 Go 语言中结构体嵌入的理解。你需要创建一个嵌入另一个结构体的结构体，并访问其字段和方法。",
+      "meta": {
+        "title": "Go 语言结构体嵌入 | 编程教程",
+        "description": "学习如何创建一个嵌入另一个结构体的 Go 语言结构体，并访问其字段和方法。加深你对 Go 语言中结构体嵌入的理解。",
+        "keywords": "Go 语言, 结构体嵌入, 编程教程, 软件开发, 编码"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "结构体嵌入",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证正确的结构体嵌入输出",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["struct-embedding.go"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }

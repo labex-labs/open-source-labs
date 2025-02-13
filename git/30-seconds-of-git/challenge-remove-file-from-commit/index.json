@@ -16,7 +16,7 @@
     "steps": [
       {
         "title": "Remove a File from the Last Commit",
-        "text": "step1.md",
+        "text": "en/step1.md",
         "verify": [
           {
             "name": "Verify for successful removal",
@@ -31,11 +31,11 @@
       }
     ],
     "intro": {
-      "text": "intro.md",
+      "text": "en/intro.md",
       "background": "setup.sh"
     },
     "finish": {
-      "text": "finish.md"
+      "text": "en/finish.md"
     }
   },
   "backend": {
@@ -46,5 +46,41 @@
     "name": "CC-BY-4.0",
     "url": "https://github.com/30-seconds/30-seconds-of-git/blob/master/LICENSE",
     "repo": "https://github.com/30-seconds/30-seconds-of-git"
-  }
+  },
+  "i18n": [
+    {
+      "lang": "zh",
+      "title": "从最后一次提交中移除文件",
+      "description": "在本次挑战中，你将学习如何在不更改提交消息的情况下，从 Git 仓库的最后一次提交中移除文件。",
+      "meta": {
+        "title": "Git 教程 | 精通版本控制系统",
+        "description": "学习如何在 Git 中从最后一次提交中移除文件，Git 是开发者用于跟踪其代码库更改的强大版本控制系统。",
+        "keywords": "Git、版本控制、代码仓库、提交管理、文件移除"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "从最后一次提交中移除文件",
+            "text": "zh/step1.md",
+            "verify": [
+              {
+                "name": "验证是否成功移除",
+                "file": "verify1-1.sh",
+                "hint": "请确保你已完成所需操作。"
+              }
+            ],
+            "solutions": ["step1-solution.md"]
+          }
+        ],
+        "intro": {
+          "text": "zh/intro.md",
+          "title": "介绍"
+        },
+        "finish": {
+          "text": "zh/finish.md",
+          "title": "总结"
+        }
+      }
+    }
+  ]
 }
