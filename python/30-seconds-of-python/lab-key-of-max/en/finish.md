@@ -1,3 +1,3 @@
 # Summary
 
-In this challenge, you learned how to find the key of the maximum value in a dictionary using Python. You can use the `max()` function with the `key` parameter set to `dict.get()` to find and return the key of the maximum value in the given dictionary.
+In this lab, you built a Python function, `key_of_max`, to find the key associated with the largest value in a dictionary. You learned how to use the `max()` function with a custom `key` argument, and you handled the important edge case of an empty dictionary. You also wrote thorough unit tests using the `unittest` module, covering basic cases, empty dictionaries, and dictionaries with all negative values. This combination of functional code and comprehensive testing demonstrates good software development practices.
