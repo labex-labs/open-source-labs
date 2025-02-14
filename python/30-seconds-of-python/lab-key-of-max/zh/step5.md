@@ -34,3 +34,16 @@ class TestKeyOfMax(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
+
+最后再运行一次测试（`python3 test_key_of_max.py`）。所有四个测试都应该通过。这让我们有足够的信心认为我们的函数能正常工作。
+
+```python
+python3 test_key_of_max.py
+```
+
+```plaintext
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+```

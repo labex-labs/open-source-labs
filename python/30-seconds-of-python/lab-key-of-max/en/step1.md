@@ -2,6 +2,8 @@
 
 Let's start by creating the core of our function. We'll build it up step-by-step. First, create a file named `key_of_max.py`. You can use the built-in LabEx code editor, or a terminal-based editor like `nano` or `vim`. Inside `key_of_max.py`, add the following code:
 
+![Code editor with key_of_max function](../assets/20250214-14-44-53-838b9T58.png)
+
 ```python
 def key_of_max(d):
   """

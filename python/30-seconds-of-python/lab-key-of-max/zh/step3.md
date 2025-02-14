@@ -29,3 +29,14 @@ if __name__ == '__main__':
 7. **`if __name__ == '__main__': unittest.main()`**：这是标准的 Python 惯用法，当你直接执行脚本时（例如 `python3 test_key_of_max.py`），它会运行测试。
 
 从终端运行测试：`python3 test_key_of_max.py`。你应该会看到输出，表明这两个测试都通过了。
+
+```python
+python3 test_key_of_max.py
+```
+
+```plaintext
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+```

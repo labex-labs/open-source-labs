@@ -29,3 +29,14 @@ Explanation:
 7.  **`if __name__ == '__main__': unittest.main()`**: This standard Python idiom runs the tests when you execute the script directly (e.g., `python3 test_key_of_max.py`).
 
 Run the tests from your terminal: `python3 test_key_of_max.py`. You should see output indicating that the two tests passed.
+
+```python
+python3 test_key_of_max.py
+```
+
+```plaintext
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+```

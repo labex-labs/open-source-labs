@@ -34,3 +34,16 @@ class TestKeyOfMax(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ```
+
+Run the tests again (`python3 test_key_of_max.py`). All four tests should pass. This gives us high confidence that our function is working correctly.
+
+```python
+python3 test_key_of_max.py
+```
+
+```plaintext
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+```
