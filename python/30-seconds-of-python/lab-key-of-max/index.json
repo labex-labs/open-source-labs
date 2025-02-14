@@ -1,6 +1,6 @@
 {
   "type": "lab",
-  "title": "Key of Max Value",
+  "title": "Key of Max Value in Python",
   "description": "In Python, dictionaries are a useful data structure that allows you to store key-value pairs. Sometimes, you may need to find the key of the maximum value in a dictionary. In this challenge, you will write a function that takes a dictionary as an argument and returns the key of the maximum value in the dictionary.",
   "meta": {
     "title": "How to Find key with Max Value in Python Dictionary",
@@ -15,13 +15,110 @@
   "details": {
     "steps": [
       {
-        "title": "Key of Max Value",
+        "title": "Creating the Basic Function",
         "text": "en/step1.md",
         "verify": [
           {
-            "name": "Verify Key of Maximum Value",
+            "name": "Verify Function Definition",
             "file": "verify1-1.sh",
-            "hint": "Please make sure you have completed the required actions.",
+            "hint": "Check if the function `key_of_max` is defined.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify max Function Usage",
+            "file": "verify1-2.sh",
+            "hint": "Make sure `max(d, key=d.get)` is used.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Handling the Empty Dictionary Case",
+        "text": "en/step2.md",
+        "verify": [
+          {
+            "name": "Verify Empty Dictionary Check",
+            "file": "verify2-1.sh",
+            "hint": "Check for the 'if not d:' condition.",
+            "timeout": 0,
+            "showstderr": true
+          },
+          {
+            "name": "Verify Return None",
+            "file": "verify2-2.sh",
+            "hint": "Ensure 'return None' is used for empty dictionaries.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/conditional_statements",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Creating Unit Tests: Basic Tests",
+        "text": "en/step3.md",
+        "verify": [
+          {
+            "name": "Check Test File Exists",
+            "file": "verify3-1.sh",
+            "hint": "Verify that `test_key_of_max.py` exists.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/importing_modules",
+          "python/standard_libraries",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Testing the Empty Dictionary (Edge Case)",
+        "text": "en/step4.md",
+        "verify": [
+          {
+            "name": "Verify Empty Dictionary Test",
+            "file": "verify4-1.sh",
+            "hint": "Check for the 'test_empty_dictionary' method.",
+            "timeout": 0,
+            "showstderr": true
+          }
+        ],
+        "skills": [
+          "python/build_in_functions",
+          "python/comments",
+          "python/dictionaries",
+          "python/function_definition",
+          "python/tuples"
+        ]
+      },
+      {
+        "title": "Testing with All Negative Values",
+        "text": "en/step5.md",
+        "verify": [
+          {
+            "name": "Verify All Tests Pass",
+            "file": "verify5-1.sh",
+            "hint": "Run all tests; they should all pass.",
             "timeout": 0,
             "showstderr": true
           }
@@ -63,31 +160,80 @@
     "imageid": "webide-ubuntu:2204"
   },
   "contributors": ["huduo0812", "jiaosenvip"],
-  "license": {
-    "name": "CC-BY-4.0",
-    "url": "https://github.com/30-seconds/30-seconds-of-python/blob/master/LICENSE",
-    "repo": "https://github.com/30-seconds/30-seconds-of-python"
-  },
   "i18n": [
     {
       "lang": "zh",
-      "title": "最大值的键",
-      "description": "在Python中，字典是一种有用的数据结构，可让你存储键值对。有时，你可能需要找到字典中最大值的键。在这个挑战中，你将编写一个函数，该函数以字典作为参数，并返回字典中最大值的键。",
+      "title": "Python 中查找最大值对应的键",
+      "description": "在 Python 中，字典是一种实用的数据结构，可用于存储键值对。有时，你可能需要找出字典中最大值对应的键。在这个挑战中，你将编写一个函数，该函数接受一个字典作为参数，并返回字典中最大值对应的键。",
       "meta": {
-        "title": "如何在Python字典中找到具有最大值的键",
-        "description": "学习如何使用max()、lambda和字典方法在Python字典中找到具有最大值的键。通过实际示例的分步指南，实现高效的字典操作。",
+        "title": "如何在 Python 字典中查找最大值对应的键",
+        "description": "学习如何使用 max()、lambda 和字典方法在 Python 字典中查找最大值对应的键。通过实用示例的分步指南，实现高效的字典操作。",
         "keywords": "键, Python, 字典, 编程, 最大值"
       },
       "details": {
         "steps": [
           {
-            "title": "最大值的键",
+            "title": "创建基础函数",
             "text": "zh/step1.md",
             "verify": [
               {
-                "name": "验证最大值的键",
+                "name": "验证函数定义",
                 "file": "verify1-1.sh",
-                "hint": "请确保你已完成所需操作。"
+                "hint": "检查函数 `key_of_max` 是否已定义。"
+              },
+              {
+                "name": "验证 max 函数的使用",
+                "file": "verify1-2.sh",
+                "hint": "确保使用了 `max(d, key=d.get)`。"
+              }
+            ]
+          },
+          {
+            "title": "处理空字典的情况",
+            "text": "zh/step2.md",
+            "verify": [
+              {
+                "name": "验证空字典检查",
+                "file": "verify2-1.sh",
+                "hint": "检查是否有 'if not d:' 条件。"
+              },
+              {
+                "name": "验证返回 None",
+                "file": "verify2-2.sh",
+                "hint": "确保对空字典使用 'return None'。"
+              }
+            ]
+          },
+          {
+            "title": "创建单元测试：基础测试",
+            "text": "zh/step3.md",
+            "verify": [
+              {
+                "name": "检查测试文件是否存在",
+                "file": "verify3-1.sh",
+                "hint": "验证 `test_key_of_max.py` 是否存在。"
+              }
+            ]
+          },
+          {
+            "title": "测试空字典（边界情况）",
+            "text": "zh/step4.md",
+            "verify": [
+              {
+                "name": "验证空字典测试",
+                "file": "verify4-1.sh",
+                "hint": "检查是否有 'test_empty_dictionary' 方法。"
+              }
+            ]
+          },
+          {
+            "title": "使用全负数进行测试",
+            "text": "zh/step5.md",
+            "verify": [
+              {
+                "name": "验证所有测试通过",
+                "file": "verify5-1.sh",
+                "hint": "运行所有测试，它们都应该通过。"
               }
             ]
           }
