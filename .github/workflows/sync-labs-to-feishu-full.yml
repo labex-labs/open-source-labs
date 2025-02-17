@@ -31,4 +31,4 @@ jobs:
           LABEX_PASSWORD: ${{ secrets.LABEX_PASSWORD }}
         run: |
           labex login --username $LABEX_USERNAME --password $LABEX_PASSWORD --check false
-          labex sync lab-to-feishu --appid "$APP_ID" --appsecret "$APP_SECRET" --full true --sync-lab-info true --check-update-hours 36
+          labex sync lab-to-feishu --appid "$APP_ID" --appsecret "$APP_SECRET" --sync-lab-info true --check-update-hours 36
