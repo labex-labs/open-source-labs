@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben wir gelernt, wie man mit Matplotlib in Python ein Diagramm mit unterbrochener Achse erstellt. Wir haben begonnen, indem wir die erforderlichen Bibliotheken importiert und einige Zufallsdaten mit Ausreißern erstellt haben. Anschließend haben wir zwei Teilplots (Subplots) erstellt, die Daten auf beiden Teilplots geplottet und die Grenzen der y-Achse festgelegt. Wir haben die Achsenlinien (Spines) zwischen den Teilplots versteckt und die Tick-Marken (Teilstriche) auf der x-Achse angepasst. Schließlich haben wir die schrägen Trennlinien erstellt und das Diagramm angezeigt.

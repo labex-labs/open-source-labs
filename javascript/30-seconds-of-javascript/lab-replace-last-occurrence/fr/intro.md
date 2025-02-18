@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire (lab), nous allons explorer la fonction `replaceLast` en JavaScript, qui remplace la dernière occurrence d'un motif dans une chaîne de caractères donnée par un remplacement spécifié. Ce laboratoire vous guidera tout au long de l'implémentation de la fonction `replaceLast`, ce qui vous permettra de manipuler les chaînes de caractères de manière plus efficace et flexible. À la fin de ce laboratoire, vous aurez une bonne compréhension de la façon de remplacer la dernière occurrence d'un motif dans une chaîne de caractères et pourrez appliquer ces connaissances à vos futurs projets de programmation.

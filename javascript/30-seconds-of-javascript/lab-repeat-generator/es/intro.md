@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, exploraremos conceptos y técnicas de programación en JavaScript a través de una serie de ejercicios prácticos. El laboratorio está diseñado para ayudarte a adquirir una comprensión más profunda de JavaScript y mejorar tus habilidades de programación mediante la práctica en escenarios del mundo real. Trabajarás en tareas como crear funciones, trabajar con matrices (arrays) y objetos, y manipular el DOM para crear páginas web dinámicas. Al final de este laboratorio, tendrás una base sólida en programación JavaScript y podrás aplicar tus conocimientos para construir aplicaciones más complejas.

@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire (lab), nous explorerons les concepts et les techniques de programmation JavaScript à travers une série d'exercices pratiques. Ce laboratoire est conçu pour vous aider à mieux comprendre le JavaScript et à améliorer vos compétences en programmation en vous faisant pratiquer dans des scénarios réels. Vous travaillerez sur des tâches telles que la création de fonctions, la manipulation de tableaux (arrays) et d'objets, et la manipulation du DOM pour créer des pages web dynamiques. À la fin de ce laboratoire, vous aurez une solide base en programmation JavaScript et pourrez appliquer vos connaissances pour construire des applications plus complexes.

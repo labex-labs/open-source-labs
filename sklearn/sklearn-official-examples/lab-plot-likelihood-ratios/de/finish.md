@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man die positiven und negativen Likelihood-Ratios berechnet, um die Vorhersagekraft eines binären Klassifikators zu bewerten. Diese Metriken sind unabhängig von dem Verhältnis zwischen den Klassen im Testset, was sie sehr nützlich macht, wenn die für eine Studie verfügbaren Daten ein anderes Klassenverhältnis haben als die Zielanwendung. Wir haben auch gelernt, wie man die Variabilität der Messungen für die Klassen-Likelihood-Ratios in einigen speziellen Fällen mithilfe der Kreuzvalidierung (Cross-validation) bewertet und wie man zeigt, dass die Klassen-Likelihood-Ratios unabhängig von der Krankheitsprävalenz sind.

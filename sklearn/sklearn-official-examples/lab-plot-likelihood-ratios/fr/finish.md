@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire, nous avons appris à calculer les rapports de vraisemblance positifs et négatifs pour évaluer le pouvoir prédictif d'un classifieur binaire. Ces métriques sont indépendantes de la proportion entre les classes dans l'ensemble de test, ce qui les rend très utiles lorsque les données disponibles pour une étude ont une proportion de classes différente de celle de l'application cible. Nous avons également appris à évaluer la variabilité des mesures des rapports de vraisemblance de classe dans certains cas particuliers en utilisant la validation croisée (cross-validation) et à montrer que les rapports de vraisemblance de classe sont indépendants de la prévalence de la maladie.

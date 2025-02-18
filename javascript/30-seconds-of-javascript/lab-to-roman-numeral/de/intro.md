@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir untersuchen, wie man eine Ganzzahl in ihre römische Numeral-Darstellung (Römische Zahlen-Darstellung) mit JavaScript umwandelt. Wir werden eine Nachschlagetabelle (Lookup-Tabelle) verwenden, um die ganzzahligen Werte auf ihre entsprechenden römischen Numerale abzubilden, und dann die `reduce`-Methode nutzen, um über die Werte zu iterieren und die römische Numeral-Darstellung der eingegebenen Ganzzahl zu erstellen. Am Ende dieses Labs werden Sie ein tieferes Verständnis dafür haben, wie man Arrays und Strings in JavaScript manipuliert, um komplexe Aufgaben auszuführen.

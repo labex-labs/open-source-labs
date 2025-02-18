@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire, vous avez créé une fonction Python, `key_of_max`, pour trouver la clé associée à la plus grande valeur dans un dictionnaire. Vous avez appris à utiliser la fonction `max()` avec un argument `key` personnalisé, et vous avez géré le cas limite important d'un dictionnaire vide. Vous avez également écrit des tests unitaires complets en utilisant le module `unittest`, couvrant les cas de base, les dictionnaires vides et les dictionnaires avec des valeurs toutes négatives. Cette combinaison de code fonctionnel et de tests complets démontre de bonnes pratiques de développement logiciel.

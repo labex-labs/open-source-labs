@@ -1,0 +1,3 @@
+# Résumé
+
+La validation croisée imbriquée (nested cross-validation) est une technique puissante pour estimer l'erreur de généralisation d'un modèle et de ses hyperparamètres. Elle peut aider à prévenir le surapprentissage (overfitting) et à s'assurer que le modèle fonctionne bien sur de nouvelles données. Dans ce tutoriel, nous avons comparé la validation croisée non imbriquée et imbriquée sur un modèle de classifieur à vecteurs de support (support vector classifier) en utilisant le jeu de données iris. Nous avons visualisé la différence de performance entre les deux méthodes à l'aide d'un diagramme à barres.

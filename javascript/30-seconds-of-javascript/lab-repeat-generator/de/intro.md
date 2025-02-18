@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir JavaScript-Programmierkonzepte und -Techniken durch eine Reihe von praktischen Übungen erkunden. Das Lab ist so konzipiert, dass es Ihnen hilft, ein tieferes Verständnis von JavaScript zu erlangen und Ihre Programmierfähigkeiten zu verbessern, indem Sie mit realen Szenarien üben. Sie werden an Aufgaben arbeiten, wie das Erstellen von Funktionen, das Arbeiten mit Arrays und Objekten sowie das Manipulieren des DOMs, um dynamische Webseiten zu erstellen. Am Ende dieses Labs werden Sie eine solide Grundlage in der JavaScript-Programmierung haben und Ihre Kenntnisse anwenden können, um komplexere Anwendungen zu entwickeln.

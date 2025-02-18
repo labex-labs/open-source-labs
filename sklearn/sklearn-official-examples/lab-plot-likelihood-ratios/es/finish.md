@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, hemos aprendido cómo calcular las razones de verosimilitud positiva y negativa para evaluar el poder predictivo de un clasificador binario. Estas métricas son independientes de la proporción entre clases en el conjunto de prueba, lo que las hace muy útiles cuando los datos disponibles para un estudio tienen una proporción de clases diferente a la de la aplicación objetivo. También aprendimos cómo evaluar la variabilidad de las mediciones de las razones de verosimilitud de clase en algunos casos particulares utilizando validación cruzada y cómo demostrar que las razones de verosimilitud de clase son independientes de la prevalencia de la enfermedad.

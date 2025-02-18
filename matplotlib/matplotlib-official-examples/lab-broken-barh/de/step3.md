@@ -1,0 +1,3 @@
+# Interpretation des Diagramms
+
+In diesem Schritt werden wir das unterbrochene horizontale Balkendiagramm interpretieren. Das Diagramm stellt ein Rennen dar, bei dem zwei Teilnehmer, Bill und Jim, zu verschiedenen Zeiten gestartet sind. Die y-Achse repräsentiert die Teilnehmer, und die x-Achse repräsentiert die Zeit seit dem Start des Rennens in Sekunden. Die blauen und orangen Balken repräsentieren Bill's Rennen, während die grünen, roten und hellblauen Balken Jim's Rennen repräsentieren. Die Anmerkung "race interrupted" (Rennen unterbrochen) gibt an, dass das Rennen nach 61 Sekunden unterbrochen wurde.

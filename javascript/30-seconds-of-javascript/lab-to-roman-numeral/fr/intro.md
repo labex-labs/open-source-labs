@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire (lab), nous allons explorer comment convertir un entier en sa représentation en chiffres romains à l'aide de JavaScript. Nous utiliserons une table de correspondance (lookup table) pour associer les valeurs entières à leurs chiffres romains correspondants, puis nous utiliserons la méthode `reduce` pour parcourir les valeurs et construire la représentation en chiffres romains de l'entier d'entrée. À la fin de ce laboratoire, vous aurez une compréhension plus approfondie de la manipulation des tableaux et des chaînes de caractères en JavaScript pour effectuer des tâches complexes.

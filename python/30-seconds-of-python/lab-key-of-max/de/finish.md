@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben Sie eine Python-Funktion namens `key_of_max` entwickelt, um den Schlüssel zu finden, der dem größten Wert in einem Wörterbuch zugeordnet ist. Sie haben gelernt, wie Sie die `max()`-Funktion mit einem benutzerdefinierten `key`-Argument verwenden können, und Sie haben den wichtigen Randfall eines leeren Wörterbuchs behandelt. Sie haben auch gründliche Unittests mit dem `unittest`-Modul geschrieben, die grundlegende Fälle, leere Wörterbücher und Wörterbücher mit ausschließlich negativen Werten abdecken. Diese Kombination aus funktionellem Code und umfassenden Tests zeigt gute Softwareentwicklungspraktiken auf.

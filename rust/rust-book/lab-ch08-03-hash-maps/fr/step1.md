@@ -1,0 +1,7 @@
+# Storing Keys with Associated Values in Hash Maps (Stockage de clés avec des valeurs associées dans des tables de hachage)
+
+La dernière de nos collections courantes est la _table de hachage_ (hash map). Le type `HashMap<K, V>` stocke une correspondance entre des clés de type `K` et des valeurs de type `V` en utilisant une _fonction de hachage_, qui détermine la façon dont ces clés et valeurs sont placées en mémoire. De nombreux langages de programmation prennent en charge ce type de structure de données, mais ils utilisent souvent un nom différent, comme _hachage_ (hash), _carte_ (map), _objet_ (object), _table de hachage_ (hash table), _dictionnaire_ (dictionary) ou _tableau associatif_ (associative array), pour n'en nommer que quelques-uns.
+
+Les tables de hachage sont utiles lorsque vous souhaitez rechercher des données non pas en utilisant un index, comme vous le pouvez avec les vecteurs, mais en utilisant une clé qui peut être de n'importe quel type. Par exemple, dans un jeu, vous pourriez suivre le score de chaque équipe dans une table de hachage où chaque clé est le nom d'une équipe et les valeurs sont les scores de chaque équipe. Étant donné le nom d'une équipe, vous pouvez récupérer son score.
+
+Nous allons passer en revue l'API de base des tables de hachage dans cette section, mais bien d'autres trucs sympas se cachent dans les fonctions définies sur `HashMap<K, V>` par la bibliothèque standard. Comme toujours, consultez la documentation de la bibliothèque standard pour plus d'informations.

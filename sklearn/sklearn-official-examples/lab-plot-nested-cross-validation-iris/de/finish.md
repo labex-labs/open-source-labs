@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+Geschachtelte Kreuzvalidierung (Nested cross-validation) ist eine leistungsstarke Technik, um den Verallgemeinerungsfehler eines Modells und seiner Hyperparameter abzuschätzen. Sie kann helfen, Überanpassung (Overfitting) zu vermeiden und sicherstellen, dass das Modell auf neuen Daten gut performt. In diesem Tutorial haben wir die nicht-geschachtelte und die geschachtelte Kreuzvalidierung an einem Support-Vektor-Klassifikator-Modell (Support vector classifier model) mit dem Iris-Datensatz verglichen. Wir haben den Unterschied in der Leistung zwischen den beiden Methoden mithilfe eines Balkendiagramms visualisiert.

@@ -1,0 +1,3 @@
+# Résumé
+
+Dans ce laboratoire (lab), nous avons démontré différentes techniques pour adapter l'analyse de données à des ensembles de données plus volumineux en utilisant pandas. Nous avons généré un grand ensemble de données, appris à charger moins de données, à utiliser des types de données efficaces et le fractionnement (chunking). Nous avons également exploré comment tirer parti d'autres bibliothèques telles que Dask pour gérer des ensembles de données plus volumineux que la mémoire disponible. Les techniques et les concepts appris dans ce laboratoire seront utiles lors du traitement de grands ensembles de données dans les projets d'analyse de données.
