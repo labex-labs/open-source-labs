@@ -1,4 +1,5 @@
 {
+  "$schema": "https://cdn.jsdelivr.net/gh/labex-labs/schema/index.json",
   "type": "lab",
   "title": "Deploy Flask Application",
   "description": "In this lab, we will learn how to deploy a Flask application to a server. We will create a distribution file for our application and install it on the server. The lab assumes you have a basic understanding of Flask, Python's virtual environments, and the command line.",
@@ -87,8 +88,8 @@
     ],
     "intro": {
       "text": "en/intro.md",
-      "background": "setup.sh",
-      "title": "Introduction"
+      "title": "Introduction",
+      "background": "setup.sh"
     },
     "finish": {
       "text": "en/finish.md",
@@ -96,14 +97,7 @@
     }
   },
   "backend": {
-    "imageid": "webide-ubuntu:2204",
-    "services": [
-      {
-        "type": "iframe",
-        "name": "Web 5000",
-        "port": 5000
-      }
-    ]
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {

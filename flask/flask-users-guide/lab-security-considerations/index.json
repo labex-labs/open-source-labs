@@ -1,4 +1,5 @@
 {
+  "$schema": "https://cdn.jsdelivr.net/gh/labex-labs/schema/index.json",
   "type": "lab",
   "title": "Secure Flask Web Application Development",
   "description": "In this lab, we will explore important security considerations when developing web applications using Flask. We will cover topics such as Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), JSON security, security headers, and secure cookie options. By following these steps, you will learn how to enhance the security of your Flask applications.",
@@ -135,8 +136,8 @@
     ],
     "intro": {
       "text": "en/intro.md",
-      "background": "setup.sh",
-      "title": "Introduction"
+      "title": "Introduction",
+      "background": "setup.sh"
     },
     "finish": {
       "text": "en/finish.md",
@@ -144,14 +145,7 @@
     }
   },
   "backend": {
-    "imageid": "webide-ubuntu:2204",
-    "services": [
-      {
-        "type": "iframe",
-        "name": "Web 5000",
-        "port": 5000
-      }
-    ]
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {

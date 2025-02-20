@@ -1,4 +1,5 @@
 {
+  "$schema": "https://cdn.jsdelivr.net/gh/labex-labs/schema/index.json",
   "type": "lab",
   "title": "Working with the Shell",
   "description": "The Python Flask tutorial 'Working with the Shell' provides guidance on using the interactive shell in Flask to execute Python commands in real-time. This tutorial explains how to create a request context, fire before/after request functions, and improve the shell experience.",
@@ -94,8 +95,8 @@
     ],
     "intro": {
       "text": "en/intro.md",
-      "background": "setup.sh",
-      "title": "Introduction"
+      "title": "Introduction",
+      "background": "setup.sh"
     },
     "finish": {
       "text": "en/finish.md",
@@ -103,14 +104,7 @@
     }
   },
   "backend": {
-    "imageid": "webide-ubuntu:2204",
-    "services": [
-      {
-        "type": "iframe",
-        "name": "Web 5000",
-        "port": 5000
-      }
-    ]
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {

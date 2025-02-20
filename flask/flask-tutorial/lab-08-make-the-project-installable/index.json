@@ -1,4 +1,5 @@
 {
+  "$schema": "https://cdn.jsdelivr.net/gh/labex-labs/schema/index.json",
   "type": "lab",
   "title": "Make Project Installable",
   "description": "In this lab, we will learn how to make a Python Flask project installable. This will make the project deployable and manageable using standard Python tools. This process is beneficial as it allows the project to be installed in different environments, manage dependencies, and isolate test environments.",
@@ -63,8 +64,8 @@
     ],
     "intro": {
       "text": "en/intro.md",
-      "background": "setup.sh",
-      "title": "Introduction"
+      "title": "Introduction",
+      "background": "setup.sh"
     },
     "finish": {
       "text": "en/finish.md",
@@ -72,14 +73,7 @@
     }
   },
   "backend": {
-    "imageid": "webide-ubuntu:2204",
-    "services": [
-      {
-        "type": "iframe",
-        "name": "Web 5000",
-        "port": 5000
-      }
-    ]
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {

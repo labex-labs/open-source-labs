@@ -1,4 +1,5 @@
 {
+  "$schema": "https://cdn.jsdelivr.net/gh/labex-labs/schema/index.json",
   "type": "lab",
   "title": "Modular Flask Application with Authentication",
   "description": "In this lab, we will walk through how to create and use Flask blueprints to structure your application using views. Flask blueprints allow you to group related views, code, and resources together making your application modular and scalable. We will create a simple application which will include user authentication and blog posts functionality.",
@@ -132,8 +133,8 @@
     ],
     "intro": {
       "text": "en/intro.md",
-      "background": "setup.sh",
-      "title": "Introduction"
+      "title": "Introduction",
+      "background": "setup.sh"
     },
     "finish": {
       "text": "en/finish.md",
@@ -141,14 +142,7 @@
     }
   },
   "backend": {
-    "imageid": "webide-ubuntu:2204",
-    "services": [
-      {
-        "type": "iframe",
-        "name": "Web 5000",
-        "port": 5000
-      }
-    ]
+    "imageid": "webide-ubuntu:2204"
   },
   "contributors": [],
   "license": {
