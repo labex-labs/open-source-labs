@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce laboratoire, nous avons appris à créer des graphiques d'flèches à l'aide de Matplotlib. Nous avons utilisé la fonction `make_arrow_graph()` pour tracer le graphique d'flèches. Nous avons personnalisé le graphique d'flèches en changeant la propriété de la flèche à afficher, en changeant la forme de la flèche, en ajustant la largeur et l'écartement des flèches, en changeant la transparence des flèches et en changeant la couleur de l'étiquette. Nous avons également interprété le graphique d'flèches en comprenant que la longueur, la largeur et l'opacité des flèches représentent la force de la flèche, et que les étiquettes sur les flèches représentent les probabilités pour les bases et les transitions entre paires.

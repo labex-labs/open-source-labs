@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de création d'une fonction génératrice qui parcours toutes les clés d'un objet donné en utilisant la récursivité. Le but de ce laboratoire est de fournir une expérience pratique aux apprenants pour qu'ils comprennent comment utiliser les expressions `yield` et `yield*` en combinaison avec les boucles `for...of` et `Object.keys()` pour itérer sur les clés et les valeurs d'un objet. À la fin de ce laboratoire, les apprenants auront une compréhension pratique de la manière de parcourir récursivement un objet et de générer un tableau de clés représentant le chemin actuel et les valeurs correspondantes.

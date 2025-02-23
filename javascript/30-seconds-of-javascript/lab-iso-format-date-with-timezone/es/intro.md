@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, aprenderemos a convertir una fecha al formato ISO extendido (ISO 8601), incluyendo el desplazamiento de zona horaria. Usaremos el método `Date.prototype.getTimezoneOffset()` para obtener el desplazamiento de zona horaria y revertirlo. Luego, definiremos una función auxiliar para normalizar cualquier número pasado a un entero y rellenarlo a 2 dígitos usando `String.prototype.padStart()`. Finalmente, usaremos los métodos integrados en el prototipo `Date` para construir la cadena ISO 8601 con desplazamiento de zona horaria. Al final de este laboratorio, tendrás una mejor comprensión de cómo manipular fechas en JavaScript.

@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de permutations d'ensembles dans JavaScript. Nous allons apprendre à utiliser la récursivité pour générer toutes les permutations possibles des éléments d'un tableau, même s'ils contiennent des doublons. Nous allons également comprendre comment utiliser des méthodes de tableau telles que `map()` et `reduce()` pour combiner les différentes permutations en un seul tableau. Cependant, nous devons garder à l'esprit que l'exécution de cette fonction sur des tableaux avec plus de 8 à 10 éléments peut considérablement augmenter le temps d'exécution et entraîner la suspension du navigateur.

@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept der konvergierenden Verzweigungsfunktionen in JavaScript erkunden. Ziel dieses Labs ist es, Ihnen zu helfen, zu verstehen, wie man eine Higher-Order-Funktion erstellt, die eine Liste von Verzweigungsfunktionen und eine konvergierende Funktion als Argumente akzeptiert und eine neue Funktion zurückgibt, die jede Verzweigungsfunktion auf die Argumente anwendet und die Ergebnisse an die konvergierende Funktion übergibt. Diese Technik kann in vielen Szenarien nützlich sein, in denen Sie mehrere Funktionen kombinieren müssen, um ein endgültiges Ergebnis zu erhalten.

@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer la fonction `formatSeconds` en JavaScript. Cette fonction renvoie le format ISO d'un nombre donné de secondes en divisant les secondes en valeurs appropriées pour les heures, les minutes et les secondes. Nous allons apprendre à utiliser `Array.prototype.map()`, `Math.floor()`, `String.prototype.padStart()` et `Array.prototype.join()` pour formater et combiner les valeurs en une chaîne de caractères. À la fin de ce laboratoire, vous aurez une compréhension solide de la manière de manipuler et de formater les données de temps en JavaScript.

@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir untersuchen, wie man den logischen Oder-Operator verwendet, um zwei Funktionen zu kombinieren und zu überprüfen, ob mindestens eine von ihnen für einen gegebenen Argumentensatz `true` zurückgibt. Wir werden lernen, wie man eine Higher-Order-Funktion definiert, die zwei Funktionen als Argumente nimmt und eine neue Funktion zurückgibt, die die logische Oder-Operation auf den Ergebnissen der Eingabefunktionen ausführt. Anhand von Beispielen und Übungen werden wir ein besseres Verständnis dafür gewinnen, wie man den logischen Oder-Operator verwendet, um kürzeres und effizienteres Code zu schreiben.

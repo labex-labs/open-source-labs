@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Caesar-Chiffre, einen einfachen Verschlüsselungsalgorithmus, untersuchen, der jedes Zeichen eines gegebenen Strings um eine bestimmte Anzahl von Positionen im Alphabet nach unten verschiebt. Wir werden das Caesar-Chiffre in JavaScript implementieren, indem wir eine Kombination aus Zeichenkettenmanipulation und Array-Methoden verwenden, und lernen, wie man Nachrichten mit dieser Technik verschlüsselt und entschlüsselt. Dieses Lab bietet eine ausgezeichnete Gelegenheit, Ihre JavaScript-Fähigkeiten zu üben und ein besseres Verständnis von Verschlüsselungsalgorithmen zu erlangen.

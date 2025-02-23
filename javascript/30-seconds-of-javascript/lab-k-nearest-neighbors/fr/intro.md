@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous explorerons l'algorithme des K Plus Proches Voisins, un outil puissant pour la classification de points de données. En le mettant en œuvre en JavaScript, nous serons en mesure de classifier de nouveaux points de données en fonction de leur proximité avec des points de données étiquetés existants, ce qui en fait un outil précieux pour diverses applications, telles que les systèmes de recommandation et la reconnaissance d'images. Grâce à ce laboratoire, nous acquerrons une compréhension plus approfondie de la manière dont les algorithmes d'apprentissage automatique fonctionnent et de la manière dont ils peuvent être mis en œuvre dans des scénarios du monde réel.

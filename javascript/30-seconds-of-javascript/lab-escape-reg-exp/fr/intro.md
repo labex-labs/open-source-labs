@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept d'expressions régulières en JavaScript et apprendre à échapper les caractères spéciaux dans une chaîne de caractères pour les utiliser dans une expression régulière. Les expressions régulières sont des outils puissants qui nous permettent de manipuler et de rechercher des motifs dans les chaînes de caractères, ce qui en fait une compétence précieuse pour tout développeur JavaScript à acquérir. À la fin de ce laboratoire, vous aurez une compréhension solide de la manière d'utiliser les expressions régulières et la fonction `escapeRegExp` pour améliorer vos compétences de codage.

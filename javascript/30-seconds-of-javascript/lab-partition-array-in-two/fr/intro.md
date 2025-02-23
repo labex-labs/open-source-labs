@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer comment partitionner un tableau en deux tableaux séparés en fonction de la vérité d'une fonction fournie pour chaque élément en utilisant JavaScript. Nous utiliserons la méthode `Array.prototype.reduce()` pour créer deux tableaux et la méthode `Array.prototype.push()` pour ajouter des éléments au tableau approprié en fonction de la vérité de la fonction fournie. À la fin de ce laboratoire, vous aurez une bonne compréhension de la manière de partitionner un tableau en JavaScript et serez en mesure d'appliquer ces connaissances dans vos futurs projets.

@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir eine JavaScript-Funktion untersuchen, die uns dabei hilft, die gemeinsamen Schlüssel zwischen zwei Objekten zu finden. Wir werden die `Object.keys()`-Methode verwenden, um die Schlüssel des ersten Objekts zu erhalten und dann überprüfen, ob das zweite Objekt einen übereinstimmenden Schlüssel hat, indem wir `Object.prototype.hasOwnProperty()` verwenden. Schließlich werden wir `Array.prototype.filter()` verwenden, um die Schlüssel zu filtern, die nicht gemeinsame Eigenschaften beider Objekte sind. Am Ende dieses Labs werden Sie eine solide Vorstellung davon haben, wie man effizient gemeinsame Schlüssel zwischen zwei Objekten in JavaScript findet.

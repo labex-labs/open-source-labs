@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir den K-Nearest-Neighbors-Algorithmus erkunden, ein leistungsstarkes Tool zur Klassifizierung von Datenpunkten. Indem wir diesen Algorithmus in JavaScript implementieren, werden wir in der Lage sein, neue Datenpunkte zu klassifizieren, basierend auf ihrer Nähe zu vorhandenen markierten Datenpunkten, was ihn zu einem wertvollen Tool für eine Vielzahl von Anwendungen wie Empfehlungssystemen und Bilderkennung macht. Durch dieses Lab werden wir ein tieferes Verständnis dafür gewinnen, wie maschinelle Lernalgorithmen funktionieren und wie sie in realen Szenarien implementiert werden können.

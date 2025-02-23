@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, profundizaremos en el mundo de la programación de JavaScript y exploraremos diversos conceptos como variables, tipos de datos, declaraciones condicionales, bucles y funciones. A través de una serie de ejercicios prácticos y retos de codificación, aprenderás a escribir código JavaScript limpio y eficiente y adquirirás una sólida comprensión de los principios fundamentales que sustentan este poderoso lenguaje de programación. Al final de este laboratorio, estarás equipado con las habilidades y conocimientos necesarios para abordar proyectos de JavaScript más complejos con confianza.

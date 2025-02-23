@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept von Array-Permutationen in JavaScript erkunden. Wir werden lernen, wie man Rekursion verwendet, um alle möglichen Permutationen der Elemente eines Arrays zu generieren, auch wenn sie Duplikate enthalten. Wir werden auch verstehen, wie man Array-Methoden wie `map()` und `reduce()` verwendet, um die verschiedenen Permutationen zu einem einzelnen Array zu kombinieren. Denken wir jedoch daran, dass das Ausführen dieser Funktion auf Arrays mit mehr als 8 bis 10 Elementen die Ausführungszeit erheblich erhöhen und den Browser zum Abstürzen bringen kann.

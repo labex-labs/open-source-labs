@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir die `unwind`-Funktion in JavaScript untersuchen. Der Zweck dieser Funktion besteht darin, aus einem Objekt und einer seiner array-wertigen Eigenschaften ein Array von Objekten zu erzeugen. Mit Hilfe von Objekt-Destrukturierung und `Array.prototype.map()` können wir ein Array von Objekten erstellen, wobei jedes Objekt die Werte des ursprünglichen Objekts enthält, mit Ausnahme der angegebenen Schlüssel, der auf seine einzelnen Werte abgebildet wird. Durch dieses Lab werden wir ein tieferes Verständnis dafür erlangen, wie man in JavaScript Daten aus Objekten manipulieren und extrahieren kann.

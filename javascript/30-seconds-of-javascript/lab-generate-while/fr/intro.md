@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer la manière de créer une fonction génératrice en JavaScript qui produit de nouvelles valeurs tant qu'une condition donnée est satisfaite. Nous utiliserons la fonction `generateWhile` qui prend une valeur initiale, une fonction de condition et une fonction `next` pour calculer la valeur suivante à partir de la valeur actuelle et de la prochaine valeur initiale. À la fin de ce laboratoire, vous serez capable de créer des générateurs personnalisés qui peuvent être utilisés pour produire des valeurs en fonction de conditions et de règles spécifiques.

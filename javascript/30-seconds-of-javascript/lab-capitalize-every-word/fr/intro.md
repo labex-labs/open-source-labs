@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer les concepts fondamentaux de la programmation JavaScript. Le but de ce laboratoire est de fournir une expérience pratique aux apprenants qui sont nouveaux dans la programmation JavaScript. Par une série d'exercices et de défis, les apprenants acqueront une compréhension solide des bases de la langue, y compris les variables, les types de données, les opérateurs et le flux de contrôle. Le laboratoire est conçu pour être interactif et captivant, offrant de nombreuses opportunités de pratiquer la programmation et de recevoir des commentaires tout au long du chemin.

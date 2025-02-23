@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir eine JavaScript-Funktion namens `findLastKey()` untersuchen, die uns hilft, den letzten Schlüssel in einem Objekt zu finden, der einer bestimmten Bedingung entspricht. Wir werden lernen, wie man `Object.keys()`, `Array.prototype.reverse()` und `Array.prototype.find()` verwendet, um diese Funktion zu implementieren, und wie man sie verwenden kann, um unseren Code zu vereinfachen, wenn man mit Objekten arbeitet. Am Ende dieses Labs werdet ihr ein besseres Verständnis dafür haben, wie man mit JavaScript-Objekten umgeht und wie man die `findLastKey()`-Funktion verwendet, um euren Code präziser und effizienter zu gestalten.

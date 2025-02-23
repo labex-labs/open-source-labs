@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept des Aufteilens eines Iterierbaren in kleinere Arrays einer bestimmten Größe mit JavaScript erkunden. Wir werden eine Funktion implementieren, die ein Iterierbares und einen Größenparameter annimmt und ein Iterierbares von kleineren Arrays zurückgibt, die jeweils maximal die angegebene Anzahl von Elementen enthalten. Diese Technik kann für verschiedene Anwendungen nützlich sein, beispielsweise zum Aufteilen großer Datensätze in kleinere Blöcke für die Verarbeitung oder zur Optimierung von Netzwerkanfragen, indem die Menge an einmal übertragenen Daten reduziert wird.

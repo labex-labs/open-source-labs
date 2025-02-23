@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir untersuchen, wie man in JavaScript eine Zahl mit der festen Komma-Schreibweise ohne Nachkommastellen am Ende formatiert. Wir werden die `Number.prototype.toFixed()`-Methode verwenden, um die Zahl in einen String mit festen Komma-Schreibweise zu konvertieren, und anschließend `Number.parseFloat()`, um alle Nachkommastellen am Ende zu entfernen. Schließlich werden wir eine Template-Literal verwenden, um die Zahl in einen String zu konvertieren. Dieses Lab ist so konzipiert, dass es Ihnen hilft, ein besseres Verständnis davon zu erlangen, wie man in JavaScript Zahlen mit der festen Komma-Schreibweise formatiert.

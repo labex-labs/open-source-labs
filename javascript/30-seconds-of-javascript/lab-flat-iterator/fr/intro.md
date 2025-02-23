@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept d'itérateurs et de générateurs en JavaScript. Plus précisément, nous allons nous concentrer sur la création d'un itérateur plat qui peut itérer sur des tableaux et des ensembles imbriqués, et les aplatir en un seul itérable. Cela nous permettra d'accéder et de manipuler efficacement des structures de données imbriquées de manière plus fluide. À la fin du laboratoire, vous aurez une compréhension plus approfondie de la manière dont les générateurs et les itérateurs fonctionnent, et de la manière dont ils peuvent être appliqués pour résoudre des problèmes du monde réel.

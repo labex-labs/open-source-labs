@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer la manière de vérifier si les arguments de processus contiennent des drapeaux en utilisant JavaScript. Vous allez apprendre à utiliser les méthodes `Array.prototype.every()` et `Array.prototype.includes()` pour vérifier si les drapeaux spécifiés sont présents dans le tableau `process.argv`. De plus, vous allez apprendre à utiliser des expressions régulières pour préfixer les drapeaux spécifiés avec `-` ou `--` selon les besoins. Ce laboratoire vous aidera à améliorer votre compréhension de JavaScript et de la manière de travailler avec les arguments de ligne de commande dans Node.js.

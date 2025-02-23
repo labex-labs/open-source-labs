@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, exploraremos el concepto de encontrar el último índice de inserción en una matriz ordenada en función de una función iteradora proporcionada, utilizando JavaScript. El laboratorio cubrirá cómo comprobar si una matriz está ordenada en orden descendente, cómo aplicar una función iteradora a todos los elementos de una matriz y cómo encontrar el índice final adecuado donde se debe insertar un elemento, en función de la función iteradora proporcionada. Al final del laboratorio, tendrás una mejor comprensión de cómo manipular matrices y utilizar funciones iteradoras en JavaScript.

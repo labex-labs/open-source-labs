@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir uns die Funktion `countBy` ansehen, die dazu verwendet wird, die Elemente eines Arrays basierend auf einer angegebenen Funktion zu gruppieren und die Anzahl der Elemente in jeder Gruppe zurückzugeben. Wir werden untersuchen, wie diese Funktion verwendet werden kann, um die Werte eines Arrays auf eine Funktion oder eine Eigenschaftsname abzubilden und wie man ein Objekt erstellt, um die Elemente in jeder Gruppe zu zählen, indem man `Array.prototype.reduce()` verwendet. Wir werden auch mehrere Beispiele betrachten, um zu verstehen, wie diese Funktion in realen Szenarien eingesetzt wird.

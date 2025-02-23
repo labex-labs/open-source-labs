@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer la fonction `unwind` en JavaScript. Le but de cette fonction est de produire un tableau d'objets à partir d'un objet et d'une de ses propriétés de type tableau. En utilisant la déconstruction d'objets et `Array.prototype.map()`, nous pouvons créer un tableau d'objets où chaque objet contient les valeurs de l'objet original, sauf pour la clé spécifiée qui est mappée à ses valeurs individuelles. Grâce à ce laboratoire, nous acquerrons une compréhension plus approfondie de la manière de manipuler et d'extraire des données à partir d'objets en JavaScript.

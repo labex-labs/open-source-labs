@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de la mise en correspondance et de la réduction d'ensembles d'éléments (arrays) en JavaScript. Plus précisément, nous allons apprendre à utiliser la fonction `averageBy()` pour calculer la moyenne d'un ensemble d'éléments après avoir mis chaque élément en correspondance avec une valeur à l'aide d'une fonction fournie. Par des exercices pratiques et des exemples, nous acquerrons une compréhension plus approfondie de ces puissants méthodes d'ensemble d'éléments (arrays) et de la manière dont elles peuvent être utilisées pour rationaliser notre code.

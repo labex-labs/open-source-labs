@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept des Findens des letzten Einfügeindex in einem sortierten Array basierend auf einer bereitgestellten Iterationsfunktion mit JavaScript erkunden. Das Lab wird behandeln, wie man überprüft, ob ein Array in absteigender Reihenfolge sortiert ist, wie man eine Iterationsfunktion auf alle Elemente eines Arrays anwendet und wie man den passenden letzten Index findet, an dem ein Element eingefügt werden sollte, basierend auf der bereitgestellten Iterationsfunktion. Am Ende des Labs werdet ihr ein besseres Verständnis dafür haben, wie man Arrays in JavaScript manipuliert und Iterationsfunktionen verwendet.

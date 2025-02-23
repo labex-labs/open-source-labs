@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer une fonction appelée `formatDuration` qui nous aide à convertir un nombre donné de millisecondes en un format lisible par l'homme. Nous allons apprendre à utiliser des opérations mathématiques pour extraire les valeurs appropriées pour les jours, les heures, les minutes, les secondes et les millisecondes. Nous utiliserons également diverses méthodes d'itération telles que `filter`, `map` et `join` pour créer une chaîne de caractères qui affiche la durée d'une manière conviviale pour l'utilisateur. À la fin de ce laboratoire, vous aurez une compréhension plus approfondie de la manière de manipuler et de formater des données liées au temps en JavaScript.

@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, exploraremos el concepto de crear una función generadora que recorre todas las claves de un objeto dado utilizando la recursividad. El objetivo de este laboratorio es brindar una experiencia práctica a los aprendices para que comprendan cómo utilizar las expresiones `yield` y `yield*` en combinación con los bucles `for...of` y `Object.keys()` para iterar sobre las claves y valores de un objeto. Al final de este laboratorio, los aprendices tendrán una comprensión práctica de cómo recorrer recursivamente un objeto y generar una matriz de claves que representen el camino actual y los valores correspondientes.

@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir untersuchen, wie man eine Abfragezeichenfolge oder eine URL mithilfe von JavaScript in ein Objekt umwandeln kann. Wir werden die `String.prototype.split()`-Methode verwenden, um die Parameter aus der URL zu extrahieren, erstellen dann ein Objekt mit dem `URLSearchParams`-Konstruktor und konvertieren es in ein Array von Schlüssel-Wert-Paaren. Schließlich werden wir `Array.prototype.reduce()` verwenden, um das Array in ein JavaScript-Objekt umzuwandeln. Dieses Lab wird Ihnen helfen, zu verstehen, wie man in JavaScript Daten aus URLs und Abfragezeichenfolgen manipulieren und extrahieren kann.

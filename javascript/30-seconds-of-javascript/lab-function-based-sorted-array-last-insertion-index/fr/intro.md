@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous explorerons le concept de recherche de l'index d'insertion dernier dans un tableau trié en utilisant une fonction itératrice fournie, en utilisant JavaScript. Le laboratoire couvrira la manière de vérifier si un tableau est trié dans l'ordre décroissant, la manière d'appliquer une fonction itératrice à tous les éléments d'un tableau et la manière de trouver l'index approprié où un élément devrait être inséré, en fonction de la fonction itératrice fournie. À la fin du laboratoire, vous aurez une meilleure compréhension de la manière de manipuler les tableaux et d'utiliser les fonctions itératrices en JavaScript.

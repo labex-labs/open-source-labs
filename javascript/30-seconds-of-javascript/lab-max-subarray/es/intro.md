@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, exploraremos la programación de JavaScript al completar una serie de ejercicios diseñados para ayudar a desarrollar habilidades fundamentales. Desde la sintaxis básica y los tipos de datos hasta conceptos más avanzados como la programación asincrónica y la programación funcional, este laboratorio proporcionará experiencia práctica que te ayudará a convertirse en un desarrollador de JavaScript habilidoso. Ya sea que seas nuevo en la programación o estés buscando ampliar tus habilidades, este laboratorio te dará las herramientas que necesitas para tener éxito.

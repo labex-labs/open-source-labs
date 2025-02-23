@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer une fonction JavaScript appelée `mask` qui peut être utilisée pour remplacer tous les caractères d'une chaîne de caractères donnée, sauf les derniers `num` caractères, par un caractère de masquage spécifié. Nous allons apprendre à utiliser cette fonction pour créer des chaînes de caractères masquées pour des données sensibles telles que les numéros de carte de crédit, les numéros de téléphone ou les adresses e-mail. À la fin de ce laboratoire, vous aurez une compréhension solide de la manière d'utiliser la fonction `mask` dans vos projets JavaScript.

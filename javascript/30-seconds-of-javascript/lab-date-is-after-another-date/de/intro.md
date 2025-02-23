@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir die in JavaScript mit Datum und Uhrzeit zusammenhängenden Programmierkonzepte erkunden. Ziel dieses Labs ist es, Ihnen zu helfen, zu verstehen, wie man in JavaScript mit Datum und Uhrzeit umgeht, und Ihnen Vertrautheit mit den verschiedenen Methoden und Eigenschaften zu verleihen, die für die Manipulation und das Vergleichen von Daten zur Verfügung stehen. Durch die Fertigstellung dieses Labs werden Sie praktische Erfahrungen mit datenbezogenen Operationen sammeln und besser in der Lage sein, mit Datum- und Uhrzeitdaten in Ihren JavaScript-Projekten umzugehen.

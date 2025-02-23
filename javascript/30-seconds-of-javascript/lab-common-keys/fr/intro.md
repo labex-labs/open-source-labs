@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer une fonction JavaScript qui nous aide à trouver les clés communes entre deux objets. Nous utiliserons la méthode `Object.keys()` pour obtenir les clés du premier objet, puis vérifier si la deuxième objet a une clé qui correspond en utilisant `Object.prototype.hasOwnProperty()`. Enfin, nous utiliserons `Array.prototype.filter()` pour filtrer les clés qui ne sont pas communes à both objets. À la fin de ce laboratoire, vous aurez une compréhension solide de la manière d'obtenir efficacement les clés communes entre deux objets en JavaScript.

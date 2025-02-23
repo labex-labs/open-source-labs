@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir lernen, wie man ein Datum in das erweiterte ISO-Format (ISO 8601), einschließlich der Zeitzonenverschiebung, umwandelt. Wir werden die `Date.prototype.getTimezoneOffset()`-Methode verwenden, um die Zeitzonenverschiebung zu erhalten und umzukehren. Anschließend werden wir eine Hilfsfunktion definieren, um jede übergebene Zahl zu einem Integer zu normalisieren und mit `String.prototype.padStart()` auf 2 Stellen aufzurunden. Schließlich werden wir die integrierten Methoden im `Date`-Prototype verwenden, um den ISO 8601-String mit Zeitzonenverschiebung zu erstellen. Am Ende dieses Labs werden Sie ein besseres Verständnis dafür haben, wie man in JavaScript mit Daten umgeht.

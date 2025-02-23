@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Lab haben wir gelernt, wie man Pfeildiagramme mit Matplotlib erstellt. Wir haben die Funktion `make_arrow_graph()` verwendet, um das Pfeildiagramm zu zeichnen. Wir haben das Pfeildiagramm angepasst, indem wir die Pfeileigenschaft zur Anzeige geändert haben, die Form der Pfeile verändert haben, die Breite und den Abstand der Pfeile angepasst haben, die Transparenz der Pfeile geändert haben und die Farbe des Labels geändert haben. Wir haben auch das Pfeildiagramm interpretiert, indem wir verstanden haben, dass die Länge, Breite und Deckkraft der Pfeile die Pfeilstärke repräsentieren und die Beschriftungen auf den Pfeilen die Wahrscheinlichkeiten für die Basen und Paarübergänge darstellen.

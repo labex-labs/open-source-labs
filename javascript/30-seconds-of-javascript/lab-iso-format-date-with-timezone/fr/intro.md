@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons apprendre à convertir une date au format ISO étendu (ISO 8601), y compris le décalage horaire. Nous utiliserons la méthode `Date.prototype.getTimezoneOffset()` pour obtenir le décalage horaire et le inverser. Ensuite, nous définirons une fonction d'aide pour normaliser tout nombre passé en un entier et le compléter à 2 chiffres en utilisant `String.prototype.padStart()`. Enfin, nous utiliserons les méthodes intégrées dans le prototype `Date` pour construire la chaîne ISO 8601 avec décalage horaire. À la fin de ce laboratoire, vous aurez une meilleure compréhension de la manière de manipuler les dates en JavaScript.

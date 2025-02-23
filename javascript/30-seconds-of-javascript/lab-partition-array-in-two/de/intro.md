@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir untersuchen, wie man ein Array mithilfe von JavaScript in zwei separate Arrays aufteilt, basierend auf der Wahrheit eines bereitgestellten Funktionswertes für jedes Element. Wir werden die `Array.prototype.reduce()`-Methode verwenden, um zwei Arrays zu erstellen, und die `Array.prototype.push()`-Methode, um Elemente an das passende Array hinzuzufügen, basierend auf der Wahrheit des bereitgestellten Funktionswertes. Am Ende dieses Labs werden Sie ein starkes Verständnis dafür haben, wie man ein Array in JavaScript aufteilt, und können dieses Wissen in Ihren zukünftigen Projekten anwenden.

@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir einen JavaScript-Codeschnipsel untersuchen, der dazu bestimmt ist, zu überprüfen, ob eine eingegebene Zeichenfolge eine „ja“- oder „nein“-Antwort darstellt. Die `yesNo`-Funktion verwendet reguläre Ausdrücke, um zu testen, ob die Eingabe mit „y“ oder „yes“ übereinstimmt, um eine positive Antwort zu erhalten, mit „n“ oder „no“ für eine negative Antwort oder einen Standardwert, wenn keiner angegeben wird. Sie werden die Möglichkeit haben, diese Funktion mit verschiedenen Eingaben und Standardwerten zu testen und ein besseres Verständnis davon zu erlangen, wie reguläre Ausdrücke in JavaScript verwendet werden können.

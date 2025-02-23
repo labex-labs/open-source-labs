@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir eine Funktion namens `formatDuration` untersuchen, die uns hilft, eine gegebene Anzahl von Millisekunden in ein menschenlesbares Format umzuwandeln. Wir werden lernen, wie mathematische Operationen verwendet werden, um die entsprechenden Werte für Tage, Stunden, Minuten, Sekunden und Millisekunden zu extrahieren. Wir werden auch verschiedene Array-Methoden wie `filter`, `map` und `join` verwenden, um einen String zu erstellen, der die Dauer auf benutzerfreundliche Weise anzeigt. Am Ende dieses Labs werden Sie ein tieferes Verständnis dafür haben, wie Sie zeitbezogene Daten in JavaScript manipulieren und formatieren.

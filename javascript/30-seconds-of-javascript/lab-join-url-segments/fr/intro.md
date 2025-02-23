@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer comment joindre les segments d'URL et normaliser l'URL résultante à l'aide de JavaScript. Le laboratoire vous guidera tout au long du processus d'utilisation de diverses expressions régulières pour supprimer les doubles barres obliques, ajouter les barres obliques appropriées pour le protocole, supprimer les barres obliques avant les paramètres, combiner les paramètres avec `'&'` et normaliser le premier délimiteur de paramètres. À la fin de ce laboratoire, vous serez capable d'unir et de normaliser efficacement les segments d'URL à l'aide de JavaScript.

@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer comment utiliser la fonction `uniqueElementsByRight()` en JavaScript pour trouver les valeurs uniques inversées d'un tableau en fonction d'une fonction de comparaison fournie. Nous allons apprendre à utiliser les méthodes `Array.prototype.reduceRight()` et `Array.prototype.some()` pour créer un tableau ne contenant que la dernière occurrence unique de chaque valeur en fonction de la fonction de comparaison fournie. À la fin de ce laboratoire, vous aurez une meilleure compréhension de la manière de manipuler les tableaux en JavaScript à l'aide de ces méthodes.

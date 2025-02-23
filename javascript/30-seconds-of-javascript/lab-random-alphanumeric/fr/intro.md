@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le sujet de la génération de chaînes alphanumériques aléatoires à l'aide de JavaScript. Nous allons apprendre à créer une fonction qui génère une chaîne aléatoire d'une longueur spécifiée en utilisant diverses méthodes JavaScript, telles que `Array.from()`, `Math.random()`, `Number.prototype.toString()` et `String.prototype.slice()`. À la fin de ce laboratoire, vous aurez une meilleure compréhension de la manière de générer des chaînes aléatoires en JavaScript et de la manière d'utiliser ces méthodes pour construire des applications plus complexes.

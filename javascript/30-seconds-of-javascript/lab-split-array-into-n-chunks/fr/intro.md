@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le sujet de la manipulation d'ensembles (arrays) en JavaScript. Plus précisément, nous allons nous concentrer sur la tâche consistant à diviser un ensemble en morceaux plus petits d'une taille spécifiée. Grâce à ce laboratoire, vous allez apprendre à utiliser les méthodes natives de JavaScript pour manipuler efficacement et de manière performante les ensembles. À la fin de ce laboratoire, vous aurez une compréhension plus approfondie de la manipulation d'ensembles en JavaScript et serez en mesure d'appliquer ces compétences pour résoudre des problèmes du monde réel.

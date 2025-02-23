@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de découpage d'un itérable en tableaux plus petits d'une taille spécifiée à l'aide de JavaScript. Nous allons implémenter une fonction qui prend en entrée un itérable et un paramètre de taille et renvoie un itérable de tableaux plus petits qui contiennent au maximum size éléments chacun. Cette technique peut être utile pour diverses applications, telles que la division de grands ensembles de données en parties plus petites pour le traitement ou l'optimisation des requêtes réseau en réduisant la quantité de données transférées d'un coup.

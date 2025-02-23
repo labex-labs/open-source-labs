@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir die Implementierung des Heapsort-Algorithmus in JavaScript untersuchen. Heapsort ist ein auf Vergleichen basierender Sortieralgorithmus, der funktioniert, indem ein Array in eine sortierte und eine unsortierte Region unterteilt wird und die unsortierte Region iterativ durch Extrahieren des größten Elements und Verschieben dieses in die sortierte Region verkleinert wird. Durch dieses Lab werden Sie ein tieferes Verständnis dafür erlangen, wie der Heapsort-Algorithmus funktioniert und wie Sie ihn in JavaScript mithilfe von Rekursion und Closures implementieren können.

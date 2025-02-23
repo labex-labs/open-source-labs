@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept der Objektgleichheit in JavaScript erkunden. Wir werden lernen, wie man einen tiefen Vergleich zwischen zwei Werten durchführt, um zu bestimmen, ob sie gleichwertig sind, indem verschiedene Techniken verwendet werden, wie das Überprüfen, ob die Werte identisch sind, das Überprüfen, ob es sich um nicht-Objektwerte mit einem gleichwertigen Wert handelt, und das Verwenden von `Object.keys()`, um zu überprüfen, ob beide Werte die gleiche Anzahl von Schlüsseln haben. Wir werden auch verstehen, wie man Rekursion verwendet, um geschachtelte Objekte zu vergleichen.

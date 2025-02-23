@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept von Iteratoren und Generatoren in JavaScript erkunden. Insbesondere werden wir uns auf die Erstellung eines flachen Iterators konzentrieren, der über geschachtelte Arrays und Mengen iterieren kann und sie in eine einzelne iterierbare Struktur zusammenflacht. Dies wird es uns ermöglichen, geschachtelte Datenstrukturen effizienter zuzugreifen und auf eine einfachere Weise zu manipulieren. Am Ende des Labs werden Sie ein tieferes Verständnis dafür haben, wie Generatoren und Iteratoren funktionieren und wie sie auf reale Probleme angewendet werden können.

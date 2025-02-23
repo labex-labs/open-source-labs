@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer comment utiliser la fonction `matches` en JavaScript pour comparer deux objets et déterminer s'ils ont des valeurs de propriété équivalentes. Cette fonction peut être utile dans des scénarios où vous devez vérifier si deux objets ont les mêmes propriétés et valeurs, par exemple lors de la validation de l'entrée utilisateur ou de la comparaison de données provenant de différentes sources. À la fin de ce laboratoire, vous aurez une meilleure compréhension de la manière d'utiliser la fonction `matches` et de la manière dont elle peut simplifier vos tâches de codage.

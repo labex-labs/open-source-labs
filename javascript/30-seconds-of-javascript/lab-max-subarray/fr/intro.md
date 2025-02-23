@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer la programmation JavaScript en effectuant une série d'exercices conçus pour aider à développer les compétences fondamentales. Du syntaxe de base et des types de données aux concepts plus avancés tels que la programmation asynchrone et la programmation fonctionnelle, ce laboratoire vous procurera une expérience pratique qui vous aidera à devenir un développeur JavaScript compétent. Que vous soyez nouveau en programmation ou que vous cherchiez à étendre vos compétences, ce laboratoire vous fournira les outils dont vous avez besoin pour réussir.

@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Thema der Generierung von zufälligen alphanumerischen Zeichenketten mit JavaScript erkunden. Wir werden lernen, wie wir eine Funktion erstellen, die eine zufällige Zeichenkette einer bestimmten Länge generiert, indem wir verschiedene JavaScript-Methoden wie `Array.from()`, `Math.random()`, `Number.prototype.toString()` und `String.prototype.slice()` verwenden. Am Ende dieses Labs werden Sie ein besseres Verständnis dafür haben, wie Sie in JavaScript zufällige Zeichenketten generieren und wie Sie diese Methoden verwenden, um komplexere Anwendungen zu bauen.

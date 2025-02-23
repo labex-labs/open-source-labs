@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept der Funktionenkürzung und -entkürzung in JavaScript erkunden. Die Funktionenkürzung ist eine Technik, die uns ermöglicht, eine Funktion, die mehrere Argumente annimmt, in eine Sequenz von Funktionen umzuwandeln, von denen jede nur ein einzelnes Argument annimmt. Andererseits ist die Funktionentkürzung der Prozess, eine Sequenz von Funktionen, von denen jede nur ein einzelnes Argument annimmt, in eine Funktion umzuwandeln, die mehrere Argumente annimmt. Durch dieses Lab werden wir lernen, wie man beide diese Techniken in JavaScript implementiert.

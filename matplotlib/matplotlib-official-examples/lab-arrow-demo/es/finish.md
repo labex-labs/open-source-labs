@@ -1,0 +1,3 @@
+# Resumen
+
+En este laboratorio, aprendimos cómo crear diagramas de flechas utilizando Matplotlib. Utilizamos la función `make_arrow_graph()` para trazar el diagrama de flechas. Personalizamos el diagrama de flechas cambiando la propiedad de la flecha para mostrar, cambiando la forma de la flecha, ajustando el ancho y la separación de las flechas, cambiando la transparencia de las flechas y cambiando el color de la etiqueta. También interpretamos el diagrama de flechas comprendiendo que la longitud, el ancho y la opacidad de las flechas representan la fuerza de la flecha, y las etiquetas en las flechas representan las probabilidades de las bases y las transiciones de pares.

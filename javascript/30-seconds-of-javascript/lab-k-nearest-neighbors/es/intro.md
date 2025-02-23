@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, exploraremos el algoritmo de K Vecinos más Cercanos, una herramienta poderosa para la clasificación de puntos de datos. Al implementar este algoritmo en JavaScript, podremos clasificar nuevos puntos de datos basados en su proximidad a puntos de datos etiquetados existentes, lo que lo convierte en una herramienta valiosa para una variedad de aplicaciones, como sistemas de recomendación y reconocimiento de imágenes. A través de este laboratorio, obtendremos una comprensión más profunda de cómo funcionan los algoritmos de aprendizaje automático y cómo se pueden implementar en escenarios del mundo real.

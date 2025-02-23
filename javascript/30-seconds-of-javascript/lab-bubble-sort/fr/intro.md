@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons travailler sur un exercice de programmation JavaScript qui porte sur le tri d'ensembles d'éléments en utilisant l'algorithme de tri bulle. Le but de ce laboratoire est de vous aider à comprendre comment fonctionne l'algorithme de tri bulle, ainsi que de vous offrir l'occasion de pratiquer vos compétences en programmation JavaScript. À la fin de ce laboratoire, vous aurez une meilleure compréhension de la manière de mettre en œuvre l'algorithme de tri bulle en JavaScript, et de la manière d'utiliser cet algorithme pour trier des tableaux de nombres.

@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, exploraremos los conceptos fundamentales de la programación en JavaScript. El objetivo de este laboratorio es brindar una experiencia práctica a los aprendices que son nuevos en la programación en JavaScript. A través de una serie de ejercicios y retos, los aprendices adquirirán una comprensión sólida de los conceptos básicos del lenguaje, como variables, tipos de datos, operadores y flujo de control. El laboratorio está diseñado para ser interactivo y atractivo, con muchas oportunidades para practicar la codificación y recibir retroalimentación durante el proceso.

@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir untersuchen, wie man in JavaScript die `matches`-Funktion verwendet, um zwei Objekte zu vergleichen und zu bestimmen, ob sie gleichwertige Eigenschaftswerte haben. Diese Funktion kann in Situationen hilfreich sein, in denen Sie überprüfen müssen, ob zwei Objekte die gleichen Eigenschaften und Werte haben, beispielsweise bei der Validierung von Benutzereingaben oder beim Vergleich von Daten aus verschiedenen Quellen. Am Ende dieses Labs werden Sie ein besseres Verständnis dafür haben, wie die `matches`-Funktion verwendet werden kann und wie sie Ihre Codierungstasks vereinfachen kann.

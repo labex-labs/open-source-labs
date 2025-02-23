@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept eines Generator-Funktionen erkunden, die mithilfe von Rekursion alle Schlüssel eines gegebenen Objekts durchläuft. Das Ziel dieses Labs ist es, den Lernenden einen praxisnahen Einblick zu geben, wie man `yield`- und `yield*`-Ausdrücke in Kombination mit `for...of`-Schleifen und `Object.keys()` verwendet, um über die Schlüssel und Werte eines Objekts zu iterieren. Am Ende dieses Labs werden die Lernenden eine praktische Vorstellung davon haben, wie man rekursiv durch ein Objekt geht und ein Array von Schlüsseln erzeugt, die den aktuellen Pfad und die entsprechenden Werte repräsentieren.

@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous explorerons le concept de fonctions de premier ordre en JavaScript et apprendrons à les utiliser pour créer du code plus flexible et réutilisable. Plus précisément, nous nous concentrerons sur la fonction `when`, qui prend une condition et une fonction de rappel en arguments et renvoie une nouvelle fonction qui applique le rappel seulement lorsque la condition est remplie. À la fin du laboratoire, vous aurez une meilleure compréhension des principes de la programmation fonctionnelle et de la manière d'appliquer ces principes dans vos projets JavaScript.

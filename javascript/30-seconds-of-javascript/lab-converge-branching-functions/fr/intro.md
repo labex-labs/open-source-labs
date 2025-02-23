@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de fonctions de branchement convergentes en JavaScript. Le but de ce laboratoire est de vous aider à comprendre comment créer une fonction de haut niveau qui accepte une liste de fonctions de branchement et une fonction de convergence en tant qu'arguments et renvoie une nouvelle fonction qui applique chaque fonction de branchement aux arguments et passe les résultats à la fonction de convergence. Cette technique peut être utile dans de nombreux scénarios où vous devez combiner plusieurs fonctions pour produire un résultat final.

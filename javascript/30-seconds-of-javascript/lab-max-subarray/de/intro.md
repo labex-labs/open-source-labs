@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir die JavaScript-Programmierung erkunden, indem wir eine Reihe von Übungen absolvieren, die dazu dienen, grundlegende Fertigkeiten zu entwickeln. Von der Basis-Syntax und den Datentypen bis zu fortschrittlicheren Konzepten wie asynchroner Programmierung und funktionale Programmierung wird Ihnen dieses Lab praktische Erfahrungen vermitteln, die Ihnen helfen, ein kompetenter JavaScript-Entwickler zu werden. Egal, ob Sie neu im Programmieren sind oder Ihre Fähigkeiten erweitern möchten, dieses Lab wird Ihnen die erforderlichen Werkzeuge geben, um erfolgreich zu sein.

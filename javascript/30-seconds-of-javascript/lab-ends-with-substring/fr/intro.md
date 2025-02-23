@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer la manière de vérifier si une chaîne de caractères donnée se termine par une sous-chaîne d'une autre chaîne à l'aide de JavaScript. Nous utiliserons une boucle `for...in` et `String.prototype.slice()` pour obtenir chaque sous-chaîne de la chaîne `word` donnée, en commençant par la fin. Ensuite, nous utiliserons `String.prototype.endsWith()` pour vérifier la sous-chaîne actuelle par rapport au `text`. À la fin de ce laboratoire, vous aurez une compréhension solide de la manière d'utiliser ces méthodes de chaîne pour trouver des sous-chaînes correspondantes en JavaScript.

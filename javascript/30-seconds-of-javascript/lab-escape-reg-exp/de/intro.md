@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept der regulären Ausdrücke in JavaScript erkunden und lernen, wie man Sonderzeichen in einer Zeichenfolge escapen kann, um sie in einem regulären Ausdruck zu verwenden. Reguläre Ausdrücke sind leistungsstarke Werkzeuge, die es uns ermöglichen, Muster in Zeichenfolgen zu manipulieren und zu suchen, was sie zu einer wertvollen Fähigkeit macht, die jeder JavaScript-Entwickler erlernen sollte. Am Ende dieses Labs werden Sie eine solide Vorstellung davon haben, wie reguläre Ausdrücke und die `escapeRegExp`-Funktion verwendet werden können, um Ihre Programmierfähigkeiten zu verbessern.

@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer les concepts fondamentaux du langage de programmation JavaScript. Ce laboratoire est conçu pour aider les débutants à développer leurs compétences en programmation JavaScript en leur offrant une expérience pratique avec diverses tâches de programmation. À la fin de ce laboratoire, vous aurez une meilleure compréhension des concepts clés de JavaScript tels que les variables, les types de données, les fonctions et les structures de contrôle. Ce laboratoire servira de solide base pour votre parcours vers la formation d'un développeur JavaScript compétent.

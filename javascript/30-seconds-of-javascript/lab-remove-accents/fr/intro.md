@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer comment supprimer les accents des chaînes de caractères à l'aide de JavaScript. Les caractères accentués peuvent parfois poser des problèmes lorsqu'on travaille avec des chaînes de caractères, par exemple lors de leur comparaison ou de leur tri. En utilisant les méthodes `normalize()` et `replace()`, on peut facilement supprimer ces accents et s'assurer d'une manipulation cohérente des chaînes de caractères dans notre code. Rejoignez-nous alors que nous plongeons dans cette technique pratique de manipulation de chaînes de caractères en JavaScript.

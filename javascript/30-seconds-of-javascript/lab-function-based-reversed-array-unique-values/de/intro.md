@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir untersuchen, wie man die `uniqueElementsByRight()`-Funktion in JavaScript verwendet, um die umgekehrten eindeutigen Werte eines Arrays basierend auf einer bereitgestellten Vergleichsfunktion zu finden. Wir werden lernen, wie man die Methoden `Array.prototype.reduceRight()` und `Array.prototype.some()` verwendet, um ein Array zu erstellen, das nur das letzte eindeutige Vorkommen jedes Werts basierend auf der bereitgestellten Vergleichsfunktion enthält. Am Ende dieses Labs werden Sie ein besseres Verständnis dafür haben, wie man Arrays in JavaScript mit diesen Methoden manipuliert.

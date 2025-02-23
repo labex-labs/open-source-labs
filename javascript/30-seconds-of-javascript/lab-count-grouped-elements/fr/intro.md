@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons apprendre à utiliser la fonction `countBy`, qui est utilisée pour regrouper les éléments d'un tableau sur la base d'une fonction donnée et renvoie le nombre d'éléments dans chaque groupe. Nous allons explorer comment cette fonction peut être utilisée pour mapper les valeurs d'un tableau à un nom de fonction ou de propriété et comment créer un objet pour compter les éléments dans chaque groupe à l'aide de `Array.prototype.reduce()`. Nous examinerons également plusieurs exemples pour comprendre comment utiliser cette fonction dans des scénarios réels.
