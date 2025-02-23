@@ -1,0 +1,53 @@
+# Mettre à jour une branche distante après avoir réécrit l'historique
+
+Lorsque vous réécrivez l'historique localement, vous créez un nouveau commit avec un hash SHA-1 différent. Cela signifie que l'historique des commits sur votre branche locale est différent de l'historique des commits sur la branche distante. Si vous essayez d'envoyer vos modifications vers la branche distante, Git refusera le push car il considérera que l'historique des commits a divergé. Pour résoudre ce problème, vous devez forcer une mise à jour de la branche distante.
+
+Pour terminer ce laboratoire, vous utiliserez le référentiel Git `git-playground` de votre compte GitHub, qui provient d'un fork de `https://github.com/labex-labs/git-playground.git`.
+
+1. Clonez le référentiel `git-playground` sur votre machine locale :
+
+```shell
+git clone https://github.com/your-username/git-playground.git
+```
+
+2. Mettez à jour un commit avec le message "Added file2.txt" en un commit avec le message "Update file2.txt" :
+
+```shell
+git commit --amend
+```
+
+3. Poussez les modifications de la branche locale vers le référentiel distant :
+
+```shell
+git push
+```
+
+4. Si vous ne pouvez pas pousser avec succès, poussez avec force :
+
+```shell
+git push -f origin master
+```
+
+Le drapeau `-f` force Git à mettre à jour la branche distante avec vos modifications, même si l'historique des commits a divergé.
+
+Voici le résultat final :
+
+```shell
+commit b8c530558ecd004156dd05ac7d22d8cf07b2c28e (HEAD -> master, origin/master, origin/HEAD)
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
+
+    Update file2.txt
+
+commit cf80005e40a3c661eb212fcea5fad06f8283f08f
+Author: Hang <huhuhang@users.noreply.github.com>
+Date:   Wed Apr 26 14:16:25 2023 +0800
+
+    Added file1.txt
+
+commit b00b9374a7c549d1af111aa777fdcc868d8a2a01
+Author: Hang <huhuhang@gmail.com>
+Date:   Wed Apr 26 14:16:00 2023 +0800
+
+    Initial commit
+```

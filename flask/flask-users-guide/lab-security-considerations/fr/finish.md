@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce laboratoire, nous avons exploré les considérations de sécurité importantes lors du développement d'applications web avec Flask. Nous avons abordé les mesures pour prévenir les attaques par injection de scripts croisés (Cross-Site Scripting - XSS) et par falsification de requêtes entre sites (Cross-Site Request Forgery - CSRF), ainsi que la sécurisation des réponses JSON et la définition d'en-têtes de sécurité et d'options de cookies. En suivant ces bonnes pratiques de sécurité, vous pouvez renforcer la sécurité de vos applications Flask et protéger les données des utilisateurs contre les vulnérabilités potentielles.

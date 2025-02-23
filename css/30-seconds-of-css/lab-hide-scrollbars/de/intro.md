@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir das Konzept des Ausblendens von Scrollbalken auf einem Element untersuchen, während es dennoch scrollbar bleibt, indem wir CSS verwenden. Wir werden die Eigenschaft `overflow: auto` verwenden, um das Scrollen zu aktivieren, und `scrollbar-width: none` um Scrollbalken in Firefox auszublenden, und `display: none` auf dem Pseudo-Element `::-webkit-scrollbar`, um Scrollbalken in WebKit-Browsern auszublenden. In diesem Lab erhalten Sie praktische Erfahrungen bei der Implementierung dieser CSS-Technik, um die Benutzererfahrung auf scrollbaren Elementen zu verbessern.

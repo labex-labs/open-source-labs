@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In diesem Tutorial haben Sie gelernt, wie Sie den Entwicklungsserver in Flask verwenden, um Ihre Flask-Anwendung während der lokalen Entwicklung auszuführen. Sie haben gelernt, wie Sie den Entwicklungsserver mit dem Flask-Befehlszeilenbefehl ausführen, den Debugmodus aktivieren, die Anwendungsdatei angeben und häufige Probleme wie "Address already in use" behandeln. Sie haben auch gelernt, wie Sie den Entwicklungsserver aus Python-Code starten. Mit dem Entwicklungsserver können Sie Ihre Flask-Anwendung leicht testen und debuggen, bevor Sie sie in der Produktion bereitstellen.

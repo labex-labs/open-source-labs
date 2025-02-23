@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir lernen, wie man mithilfe von CSS einen responsiven Container mit einem bestimmten Seitenverhältnis erstellt. Wir werden uns mit der benutzerdefinierten Eigenschaft `--aspect-ratio` und der Verwendung der `calc()`-Funktion zur Berechnung der Höhe des Containers vertraut machen. Außerdem werden wir lernen, wie man das Kindelement so einstellt, dass es das Seitenverhältnis beibehält, indem man die Eigenschaft `object-fit: cover` verwendet. Am Ende dieses Labs werden Sie ein besseres Verständnis dafür haben, wie man auf Ihren Webseiten visuell ansprechende und responsive Container erstellt.

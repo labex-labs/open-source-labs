@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de masquage des barre de défilement sur un élément tout en le laissant toujours défilable à l'aide de CSS. Nous utiliserons la propriété `overflow: auto` pour activer le défilement, et `scrollbar-width: none` pour masquer les barres de défilement sur Firefox, et `display: none` sur le pseudo-élément `::-webkit-scrollbar` pour masquer les barres de défilement sur les navigateurs WebKit. Ce laboratoire vous procurera une expérience pratique pour implémenter cette technique CSS afin d'améliorer l'expérience utilisateur sur les éléments défilables.

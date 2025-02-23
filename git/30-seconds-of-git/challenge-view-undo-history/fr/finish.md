@@ -1,0 +1,3 @@
+# Sommaire
+
+Dans ce défi, vous avez appris à consulter l'historique des annulations dans Git en utilisant la commande `git reflog`. Le journal de référence est un enregistrement de toutes les actions que vous avez entreprises dans votre référentiel, y compris les commits, les fusionnements, les rebases et les resets. En consultant le journal de référence, vous pouvez voir l'historique complet de toutes les modifications que vous avez apportées à votre référentiel, même si elles ne figurent pas dans l'historique des commits. Cela peut s'avérer particulièrement utile lorsque vous avez besoin d'annuler des modifications apportées à votre base de code.

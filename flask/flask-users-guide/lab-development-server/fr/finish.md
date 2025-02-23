@@ -1,0 +1,3 @@
+# Récapitulatif
+
+Dans ce tutoriel, vous avez appris à utiliser le serveur de développement dans Flask pour exécuter votre application Flask pendant le développement local. Vous avez appris à exécuter le serveur de développement avec la commande CLI Flask, à activer le mode débogage, à spécifier le fichier d'application et à résoudre des problèmes courants tels que "Adresse déjà utilisée". Vous avez également appris à démarrer le serveur de développement à partir du code Python. Avec le serveur de développement, vous pouvez facilement tester et déboguer votre application Flask avant de la déployer en production.

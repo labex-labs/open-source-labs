@@ -1,0 +1,3 @@
+# Einführung
+
+In diesem Lab werden wir lernen, wie man mit CSS einen gestaffelten Animationseffekt für eine Liste von Elementen erstellt. Wir werden die `opacity`- und `transform`-Eigenschaften verwenden, um die Elemente transparent zu machen und sie bis ganz nach rechts zu bewegen. Anschließend werden wir `transition-delay` und den `:checked`-Pseudo-Klassen-Selektor verwenden, um die Elemente in einem gestaffelten Muster erscheinen zu lassen und in den sichtbaren Bereich zu gleiten. Am Ende dieses Labs werden Sie in der Lage sein, visuell ansprechende Animationen für Ihre Webseiten zu erstellen.

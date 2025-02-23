@@ -1,0 +1,3 @@
+# Introduction
+
+Dans ce laboratoire, nous allons explorer le concept de défilement horizontal avec prise en charge des points d'arrêt en CSS. Le laboratoire vous guidera dans la création d'un conteneur horizontalement défilemable qui s'arrêtera sur des éléments lors du défilement. Vous apprendrez à utiliser la propriété `scroll-snap-type` et `scroll-snap-align` pour créer un effet de prise en charge des points d'arrêt et à contrôler l'alignement des points d'arrêt. À la fin du laboratoire, vous aurez une bonne compréhension de la manière de créer une disposition de défilement horizontal élégante et conviviale pour l'utilisateur.

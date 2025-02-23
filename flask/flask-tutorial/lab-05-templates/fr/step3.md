@@ -1,0 +1,18 @@
+# Modèle de connexion
+
+De manière similaire, nous allons créer un modèle pour la page de connexion. Ce modèle étendra également notre mise en page de base et complètera le contenu spécifique de cette page.
+
+```html
+<!-- flaskr/templates/auth/login.html -->
+{% extends 'base.html' %} {% block header %}
+<h1>{% block title %}Connexion{% endblock %}</h1>
+{% endblock %} {% block content %}
+<form method="post">
+  <label for="username">Nom d'utilisateur</label>
+  <input name="username" id="username" required />
+  <label for="password">Mot de passe</label>
+  <input type="password" name="password" id="password" required />
+  <input type="submit" value="Connexion" />
+</form>
+{% endblock %}
+```

@@ -232,6 +232,501 @@
           "title": "总结"
         }
       }
+    },
+    {
+      "lang": "es",
+      "title": "Agregar valor con imágenes de Docker personalizadas",
+      "description": "En este laboratorio, se basa en los conocimientos del laboratorio 1 donde se usaron comandos de Docker para ejecutar contenedores. Se creará una imagen de Docker personalizada a partir de un Dockerfile. Una vez que se construya la imagen, se la subirá a un registro central donde se puede extraer para ser desplegada en otros entornos. Además, se describirá brevemente las capas de imágenes y cómo Docker incorpora 'copiar al escribir' y el sistema de archivos union para almacenar eficientemente imágenes y ejecutar contenedores.",
+      "meta": {
+        "title": "Creación de imágenes de Docker | Desarrollo de aplicaciones de Python",
+        "description": "Aprenda a crear una imagen de Docker personalizada a partir de un Dockerfile, subirla a un registro y desplegarla en otros entornos. Explore las características eficientes de almacenamiento de imágenes y gestión de contenedores de Docker.",
+        "keywords": "Docker, Imagen de Docker, Dockerfile, Python, Flask, Desarrollo web"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Paso 1: Crear una aplicación de Python (sin usar Docker)",
+            "text": "es/step1.md",
+            "verify": [
+              {
+                "name": "Verificar si la aplicación de flask está en ejecución",
+                "file": "verify1-1.sh",
+                "hint": "Siga las instrucciones con cuidado."
+              }
+            ]
+          },
+          {
+            "title": "Paso 2: Crear y construir la imagen de Docker",
+            "text": "es/step2.md",
+            "verify": [
+              {
+                "name": "Verificar si se ha creado la imagen python-hello-world",
+                "file": "verify2-1.sh",
+                "hint": "Siga las instrucciones con cuidado."
+              }
+            ]
+          },
+          {
+            "title": "Paso 3: Ejecutar la imagen de Docker",
+            "text": "es/step3.md",
+            "verify": [
+              {
+                "name": "Verificar si el contenedor python-hello-world está en ejecución",
+                "file": "verify3-1.sh",
+                "hint": "Siga las instrucciones con cuidado."
+              }
+            ]
+          },
+          {
+            "title": "Paso 4: Subir a un registro central",
+            "text": "es/step4.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificación en este momento",
+                "file": "verify4-1.sh",
+                "hint": "Este paso no tiene verificación en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Paso 5: Implementar un cambio",
+            "text": "es/step5.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificación en este momento",
+                "file": "verify5-1.sh",
+                "hint": "Este paso no tiene verificación en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Paso 6: Comprender las capas de imágenes",
+            "text": "es/step6.md",
+            "verify": [
+              {
+                "name": "Este paso no tiene verificación en este momento",
+                "file": "verify6-1.sh",
+                "hint": "Este paso no tiene verificación en este momento"
+              }
+            ]
+          },
+          {
+            "title": "Paso 7: Limpiar",
+            "text": "es/step7.md",
+            "verify": [
+              {
+                "name": "Verificar que los contenedores estén detenidos y eliminados",
+                "file": "verify7-1.sh",
+                "hint": "Siga las instrucciones para completar los pasos."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "es/intro.md",
+          "title": "Introducción"
+        },
+        "finish": {
+          "text": "es/finish.md",
+          "title": "Resumen"
+        }
+      }
+    },
+    {
+      "lang": "fr",
+      "title": "Ajouter de la valeur avec des images Docker personnalisées",
+      "description": "Dans ce laboratoire, nous nous appuyons sur les connaissances acquises au laboratoire 1 où nous avons utilisé des commandes Docker pour exécuter des conteneurs. Nous allons créer une image Docker personnalisée à partir d'un Dockerfile. Une fois que nous aurons construit l'image, nous la pousserons vers un registre central où elle pourra être extraite pour être déployée sur d'autres environnements. Nous décrirons également brièvement les couches d'image et la manière dont Docker incorpore le 'copier lors de l'écriture' et le système de fichiers union pour stocker efficacement les images et exécuter les conteneurs.",
+      "meta": {
+        "title": "Création d'image Docker | Développement d'applications Python",
+        "description": "Découvrez comment créer une image Docker personnalisée à partir d'un Dockerfile, la pousser vers un registre et la déployer sur d'autres environnements. Explorez les fonctionnalités d'entreposage d'images et de gestion de conteneurs efficaces de Docker.",
+        "keywords": "Docker, Image Docker, Dockerfile, Python, Flask, Développement web"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Étape 1 : Créer une application Python (sans utiliser Docker)",
+            "text": "fr/step1.md",
+            "verify": [
+              {
+                "name": "Vérifiez si l'application Flask est en cours d'exécution",
+                "file": "verify1-1.sh",
+                "hint": "Veuillez suivre attentivement les instructions."
+              }
+            ]
+          },
+          {
+            "title": "Étape 2 : Créer et construire l'image Docker",
+            "text": "fr/step2.md",
+            "verify": [
+              {
+                "name": "Vérifiez si l'image python-hello-world a été créée",
+                "file": "verify2-1.sh",
+                "hint": "Veuillez suivre attentivement les instructions."
+              }
+            ]
+          },
+          {
+            "title": "Étape 3 : Exécuter l'image Docker",
+            "text": "fr/step3.md",
+            "verify": [
+              {
+                "name": "Vérifiez si le conteneur python-hello-world est en cours d'exécution",
+                "file": "verify3-1.sh",
+                "hint": "Veuillez suivre attentivement les instructions."
+              }
+            ]
+          },
+          {
+            "title": "Étape 4 : Pousser vers un registre central",
+            "text": "fr/step4.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify4-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Étape 5 : Déploiement d'un changement",
+            "text": "fr/step5.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify5-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Étape 6 : Comprendre les couches d'image",
+            "text": "fr/step6.md",
+            "verify": [
+              {
+                "name": "Cette étape n'a pas de vérification pour le moment",
+                "file": "verify6-1.sh",
+                "hint": "Cette étape n'a pas de vérification pour le moment"
+              }
+            ]
+          },
+          {
+            "title": "Étape 7 : Nettoyage",
+            "text": "fr/step7.md",
+            "verify": [
+              {
+                "name": "Vérifiez que les conteneurs sont arrêtés et supprimés",
+                "file": "verify7-1.sh",
+                "hint": "Veuillez suivre les instructions pour terminer les étapes."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "fr/intro.md",
+          "title": "Introduction"
+        },
+        "finish": {
+          "text": "fr/finish.md",
+          "title": "Résumé"
+        }
+      }
+    },
+    {
+      "lang": "de",
+      "title": "Wertschöpfung mit benutzerdefinierten Docker-Images",
+      "description": "In diesem Lab bauen wir auf unserem Wissen aus Lab 1 auf, in dem wir Docker-Befehle verwendet haben, um Container auszuführen. Wir werden ein benutzerdefiniertes Docker-Image erstellen, das aus einer Dockerfile gebaut wird. Nachdem wir das Image gebaut haben, werden wir es an einen zentralen Registrierungsdienst pushen, von dem es abgerufen werden kann, um in anderen Umgebungen bereitgestellt zu werden. Außerdem werden wir kurz die Image-Schichten beschreiben und erklären, wie Docker 'Copy-on-Write' und das Union-Dateisystem integriert, um Bilder effizient zu speichern und Container auszuführen.",
+      "meta": {
+        "title": "Docker-Image-Erstellung | Python-App-Entwicklung",
+        "description": "Lernen Sie, wie Sie ein benutzerdefiniertes Docker-Image aus einer Dockerfile erstellen, es an einen Registrierungsdienst pushen und es in anderen Umgebungen bereitstellen. Entdecken Sie die effizienten Image-Speicher- und Container-Verwaltungsfunktionen von Docker.",
+        "keywords": "Docker, Docker-Image, Dockerfile, Python, Flask, Webentwicklung"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Schritt 1: Erstellen einer Python-App (ohne Verwendung von Docker)",
+            "text": "de/step1.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob die Flask-App läuft",
+                "file": "verify1-1.sh",
+                "hint": "Bitte folgen Sie den Anweisungen genau."
+              }
+            ]
+          },
+          {
+            "title": "Schritt 2: Erstellen und Builden des Docker-Images",
+            "text": "de/step2.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob das python-hello-world-Image erstellt wurde",
+                "file": "verify2-1.sh",
+                "hint": "Bitte folgen Sie den Anweisungen genau."
+              }
+            ]
+          },
+          {
+            "title": "Schritt 3: Ausführen des Docker-Images",
+            "text": "de/step3.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob der python-hello-world-Container läuft",
+                "file": "verify3-1.sh",
+                "hint": "Bitte folgen Sie den Anweisungen genau."
+              }
+            ]
+          },
+          {
+            "title": "Schritt 4: Push an einen zentralen Registrierungsdienst",
+            "text": "de/step4.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify4-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Schritt 5: Implementieren einer Änderung",
+            "text": "de/step5.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify5-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Schritt 6: Das Verständnis von Image-Layern",
+            "text": "de/step6.md",
+            "verify": [
+              {
+                "name": "Dieser Schritt hat momentan keine Überprüfung",
+                "file": "verify6-1.sh",
+                "hint": "Dieser Schritt hat momentan keine Überprüfung"
+              }
+            ]
+          },
+          {
+            "title": "Schritt 7: Bereinigen",
+            "text": "de/step7.md",
+            "verify": [
+              {
+                "name": "Überprüfen, ob die Container gestoppt und entfernt wurden",
+                "file": "verify7-1.sh",
+                "hint": "Bitte folgen Sie den Anweisungen, um die Schritte abzuschließen."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "de/intro.md",
+          "title": "Einführung"
+        },
+        "finish": {
+          "text": "de/finish.md",
+          "title": "Zusammenfassung"
+        }
+      }
+    },
+    {
+      "lang": "ja",
+      "title": "カスタム Docker イメージで価値を追加する",
+      "description": "この実験では、コンテナを実行するために Docker コマンドを使用した実験 1 の知識を基にしています。Dockerfile から作成されたカスタム Docker イメージを作成します。イメージを作成したら、セントラル レジストリにプッシュし、他の環境で展開するためにプルできるようにします。また、イメージ レイヤーと、Docker が「書き込み時コピー」とユニオン ファイル システムをどのように組み込んでイメージを効率的に保存し、コンテナを実行するかについて簡単に説明します。",
+      "meta": {
+        "title": "Docker イメージ作成 | Python アプリケーション開発",
+        "description": "Dockerfile からカスタム Docker イメージを作成し、レジストリにプッシュし、他の環境で展開する方法を学びましょう。Docker の効率的なイメージ保存とコンテナ管理機能を探求しましょう。",
+        "keywords": "Docker、Docker イメージ、Dockerfile、Python、Flask、Web 開発"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "手順 1: Python アプリを作成する（Docker を使用せず）",
+            "text": "ja/step1.md",
+            "verify": [
+              {
+                "name": "flask アプリが実行されているか確認する",
+                "file": "verify1-1.sh",
+                "hint": "指示に注意深く従ってください。"
+              }
+            ]
+          },
+          {
+            "title": "手順 2: Docker イメージを作成してビルドする",
+            "text": "ja/step2.md",
+            "verify": [
+              {
+                "name": "python-hello-world イメージが作成されたか確認する",
+                "file": "verify2-1.sh",
+                "hint": "指示に注意深く従ってください。"
+              }
+            ]
+          },
+          {
+            "title": "手順 3: Docker イメージを実行する",
+            "text": "ja/step3.md",
+            "verify": [
+              {
+                "name": "python-hello-world コンテナが実行されているか確認する",
+                "file": "verify3-1.sh",
+                "hint": "指示に注意深く従ってください。"
+              }
+            ]
+          },
+          {
+            "title": "手順 4: セントラル レジストリにプッシュする",
+            "text": "ja/step4.md",
+            "verify": [
+              {
+                "name": "この手順では現在検証は行われていません",
+                "file": "verify4-1.sh",
+                "hint": "この手順では現在検証は行われていません"
+              }
+            ]
+          },
+          {
+            "title": "手順 5: 変更の展開",
+            "text": "ja/step5.md",
+            "verify": [
+              {
+                "name": "この手順では現在検証は行われていません",
+                "file": "verify5-1.sh",
+                "hint": "この手順では現在検証は行われていません"
+              }
+            ]
+          },
+          {
+            "title": "手順 6: イメージ レイヤーの理解",
+            "text": "ja/step6.md",
+            "verify": [
+              {
+                "name": "この手順では現在検証は行われていません",
+                "file": "verify6-1.sh",
+                "hint": "この手順では現在検証は行われていません"
+              }
+            ]
+          },
+          {
+            "title": "手順 7: クリーンアップ",
+            "text": "ja/step7.md",
+            "verify": [
+              {
+                "name": "コンテナが停止して削除されていることを確認する",
+                "file": "verify7-1.sh",
+                "hint": "手順を完了するために指示に従ってください。"
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ja/intro.md",
+          "title": "はじめに"
+        },
+        "finish": {
+          "text": "ja/finish.md",
+          "title": "まとめ"
+        }
+      }
+    },
+    {
+      "lang": "ru",
+      "title": "Добавление значения с помощью пользовательских Docker-образов",
+      "description": "В этой лабораторной работе мы будем основываться на знаниях, полученных в лабораторной работе 1, где мы использовали команды Docker для запуска контейнеров. Мы создадим пользовательский Docker-образ, построенный на основе Dockerfile. После сборки образа мы отправим его в центральный реестр, откуда его можно будет извлечь для развертывания на других средах. Также мы кратко опишем слои образов и то, как Docker интегрирует 'копирование при записи' и объединенную файловую систему для эффективного хранения образов и запуска контейнеров.",
+      "meta": {
+        "title": "Создание Docker-образа | Разработка Python-приложений",
+        "description": "Изучите, как создать пользовательский Docker-образ из Dockerfile, отправить его в реестр и развернуть на других средах. Изучите эффективные функции хранения образов и управления контейнерами Docker.",
+        "keywords": "Docker, Docker-образ, Dockerfile, Python, Flask, Веб-разработка"
+      },
+      "details": {
+        "steps": [
+          {
+            "title": "Шаг 1: Создать Python-приложение (без использования Docker)",
+            "text": "ru/step1.md",
+            "verify": [
+              {
+                "name": "Проверить, запущено ли приложение Flask",
+                "file": "verify1-1.sh",
+                "hint": "Пожалуйста, следуйте инструкциям внимательно."
+              }
+            ]
+          },
+          {
+            "title": "Шаг 2: Создать и собрать Docker-образ",
+            "text": "ru/step2.md",
+            "verify": [
+              {
+                "name": "Проверить, создан ли образ python-hello-world",
+                "file": "verify2-1.sh",
+                "hint": "Пожалуйста, следуйте инструкциям внимательно."
+              }
+            ]
+          },
+          {
+            "title": "Шаг 3: Запустить Docker-образ",
+            "text": "ru/step3.md",
+            "verify": [
+              {
+                "name": "Проверить, запущен ли контейнер python-hello-world",
+                "file": "verify3-1.sh",
+                "hint": "Пожалуйста, следуйте инструкциям внимательно."
+              }
+            ]
+          },
+          {
+            "title": "Шаг 4: Отправить в центральный реестр",
+            "text": "ru/step4.md",
+            "verify": [
+              {
+                "name": "На данный момент этот шаг не имеет проверки",
+                "file": "verify4-1.sh",
+                "hint": "На данный момент этот шаг не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Шаг 5: Развертывание изменения",
+            "text": "ru/step5.md",
+            "verify": [
+              {
+                "name": "На данный момент этот шаг не имеет проверки",
+                "file": "verify5-1.sh",
+                "hint": "На данный момент этот шаг не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Шаг 6: Понимание слоев образов",
+            "text": "ru/step6.md",
+            "verify": [
+              {
+                "name": "На данный момент этот шаг не имеет проверки",
+                "file": "verify6-1.sh",
+                "hint": "На данный момент этот шаг не имеет проверки"
+              }
+            ]
+          },
+          {
+            "title": "Шаг 7: Удаление ненужных файлов",
+            "text": "ru/step7.md",
+            "verify": [
+              {
+                "name": "Проверить, остановлены ли и удалены контейнеры",
+                "file": "verify7-1.sh",
+                "hint": "Пожалуйста, следуйте инструкциям для завершения шагов."
+              }
+            ]
+          }
+        ],
+        "intro": {
+          "text": "ru/intro.md",
+          "title": "Введение"
+        },
+        "finish": {
+          "text": "ru/finish.md",
+          "title": "Резюме"
+        }
+      }
     }
   ]
 }

@@ -1,0 +1,3 @@
+# Introducción
+
+En este laboratorio, exploraremos el concepto de ocultar las barras de desplazamiento en un elemento mientras sigue siendo desplazable utilizando CSS. Utilizaremos la propiedad `overflow: auto` para habilitar el desplazamiento, y `scrollbar-width: none` para ocultar las barras de desplazamiento en Firefox, y `display: none` en el pseudo-elemento `::-webkit-scrollbar` para ocultar las barras de desplazamiento en los navegadores WebKit. Este laboratorio proporcionará una experiencia práctica en la implementación de esta técnica CSS para mejorar la experiencia del usuario en los elementos desplazables.
