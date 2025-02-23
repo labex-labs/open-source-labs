@@ -1,0 +1,3 @@
+# Zusammenfassung
+
+In dieser Herausforderung hast du gelernt, wie du die "Rückgängigmachungs"-Geschichte in Git mithilfe des Befehls `git reflog` anzeigen kannst. Das Referenzprotokoll ist eine Aufzeichnung aller von dir in deinem Repository ausgeführten Aktionen, einschließlich von Commits, Merges, Rebases und Resets. Indem du das Referenzprotokoll anzeigst, kannst du eine vollständige Geschichte aller Änderungen sehen, die du an deinem Repository vorgenommen hast, auch wenn sie nicht im Commit-Verlauf erscheinen. Dies kann besonders nützlich sein, wenn du Änderungen rückgängig machen musst, die du an deiner Codebasis vorgenommen hast.
